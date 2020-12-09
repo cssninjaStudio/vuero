@@ -1,0 +1,17 @@
+{ 
+  "compilerOptions": {
+    "target": "ES2018",
+    "module": "esnext",
+    "strict": true,
+    "jsx": "preserve",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "isolatedModules": true,
+    "baseUrl": "./",
+    "paths": {
+      "@src/*": ["src/*"],
+      "@images/*": ["images/*"],
+    }
+  },
+}
