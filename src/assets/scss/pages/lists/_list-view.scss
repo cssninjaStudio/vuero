@@ -1,0 +1,1256 @@
+/*! _list-view.scss | Huro | Css ninja 2020-2021 */
+
+/*
+    1. List View Toolbar
+    2. List View V1
+    3. List View V1 Dark mode
+    4. List View V2
+    5. List View V2 Dark mode
+    6. List View V3
+    7. List View V3 Dark mode
+    8. List View V4
+    9. List View V4 Dark mode
+    10. Media Queries
+*/
+
+/* ==========================================================================
+1. List View Toolbar
+========================================================================== */
+
+.list-view-toolbar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    &.is-webapp {
+        padding-top: 30px;
+    }
+
+    &.is-reversed {
+        flex-direction: row-reverse;
+
+        .control {
+            margin-right: 0;
+            margin-left: auto;
+        }
+
+        .tabs-inner {
+            margin-right: 10px;
+            margin-left: 0;
+        }
+    }
+
+    .control {
+        margin-right: 10px;
+    }
+
+    .list-info {
+        span {
+            font-family: $font;
+            color: $light-text;
+        }
+    }
+
+    .buttons {
+        margin-left: auto;
+        margin-bottom: 0;
+
+        .h-button {
+            margin-bottom: 0;
+        }
+    }
+
+    .tabs-inner {
+        margin-left: auto;
+
+        .tabs {
+            margin-bottom: 0;
+            min-width: 170px;
+        }
+    }
+}
+
+/* ==========================================================================
+2. List View V1
+========================================================================== */
+
+.list-view {
+    &.list-view-v1 {
+        .list-view-item {
+            @extend .r-card;
+
+            margin-bottom: 16px;
+            padding: 16px;
+
+            .list-view-item-inner {
+                display: flex;
+                align-items: center;
+
+                .meta-left {
+                    margin-left: 16px;
+
+                    h3 {
+                        font-family: $font-alt;
+                        color: $dark-text;
+                        font-weight: 600;
+                        font-size: 1rem;
+                        line-height: 1;
+                    }
+
+                    > span:not(.tag) {
+                        font-size: .9rem;
+                        color: $light-text;
+
+                        svg {
+                            height: 12px;
+                            width: 12px;
+                        }
+                    }
+                }
+
+                .meta-right {
+                    margin-left: auto;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+
+                    .tags {
+                        margin-right: 30px;
+                        margin-bottom: 0;
+
+                        .tag {
+                            margin-bottom: 0;
+                        }
+                    }
+
+                    .stats {
+                        display: flex;
+                        align-items: center;
+                        margin-right: 30px;
+
+                        .stat {
+                            display: flex;
+                            align-items: center;
+                            flex-direction: column;
+                            text-align: center;
+                            color: $light-text;
+
+                            > span {
+                                font-family: $font;
+
+                                &:first-child {
+                                    font-size: 1.2rem;
+                                    font-weight: 600;
+                                    color: $dark-text;
+                                    line-height: 1.4;
+                                }
+
+                                &:nth-child(2) {
+                                    text-transform: uppercase;
+                                    font-family: $font-alt;
+                                    font-size: .75rem;
+                                }
+                            }
+
+                            svg {
+                                height: 16px;
+                                width: 16px;
+                            }
+
+                            i {
+                                font-size: 1.4rem;
+                            }
+                        }
+
+                        .separator {
+                            height: 25px;
+                            width: 2px;
+                            border-right: 1px solid darken($fade-grey, 3%);
+                            margin: 0 16px;
+                        }
+                    }
+
+                    .network {
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+                        min-width: 145px;
+
+                        > span {
+                            font-family: $font;
+                            font-size: .9rem;
+                            color: $light-text;
+                            margin-left: 6px;
+                        }
+                    }
+
+                    .dropdown {
+                        margin-left: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+3. List View V1 Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .list-view {
+            &.list-view-v1 {
+                .list-view-item {
+                    .list-view-item-inner {
+                        .meta-left {
+                            h3 {
+                                color: $dark-dark-text !important;
+                            }
+                        }
+
+                        .meta-right {
+                            .stats {
+                                .stat {
+                                    span {
+                                        &:first-child {
+                                            color: $dark-dark-text;
+                                        }
+                                    }
+                                }
+
+                                .separator {
+                                    border-color: lighten($dark-sidebar, 16%) !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+4. List View V2
+========================================================================== */
+
+.list-view {
+    &.list-view-v2 {
+        .list-view-item {
+            @extend .s-card;
+
+            margin-bottom: 16px;
+            padding: 16px;
+
+            &:hover {
+                box-shadow: $light-box-shadow;
+            }
+
+            .list-view-item-inner {
+                display: flex;
+
+                > img {
+                    display: block;
+                    min-height: 130px;
+                    max-height: 130px;
+                    min-width: 190px;
+                    max-width: 190px;
+                    object-fit: cover;
+                    border-radius: 4px;
+                }
+
+                .meta-left {
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 16px;
+
+                    h3 {
+                        font-family: $font-alt;
+                        color: $dark-text;
+                        font-weight: 600;
+                        font-size: 1.1rem;
+                        line-height: 1.5;
+
+                        .rating {
+                            margin-left: 12px;
+
+                            i {
+                                position: relative;
+                                top: -2px;
+                                font-size: 12px;
+                                color: darken($fade-grey, 4%);
+
+                                &.active {
+                                    color: #ffc43b;
+                                }
+                            }
+                        }
+                    }
+
+                    p {
+                        font-size: .95rem;
+                        color: $light-text;
+
+                        svg {
+                            height: 12px;
+                            width: 12px;
+                        }
+                    }
+
+                    > span {
+                        display: flex;
+                        align-items: center;
+                        margin-top: 10px;
+                        font-family: $font;
+                        font-size: .9rem;
+                        color: $primary;
+
+                        .icon-separator {
+                            font-size: 5px;
+                            color: $light-text;
+                            padding: 0 10px;
+                        }
+                    }
+
+                    .icon-list {
+                        margin-top: auto;
+                        display: flex;
+
+                        > span {
+                            display: flex;
+                            align-items: center;
+                            margin-right: 15px;
+
+                            span {
+                                font-size: .85rem;
+                                font-family: $font-alt;
+                                color: $dark-text;
+                            }
+
+                            i {
+                                font-size: 1.2rem;
+                                margin-right: 6px;
+                                color: $light-text;
+                            }
+                        }
+                    }
+                }
+
+                .meta-right {
+                    margin-left: auto;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+
+                    .buttons {
+                        margin-bottom: 0;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+5. List View V2 Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .list-view {
+            &.list-view-v2 {
+                .list-view-item {
+                    .list-view-item-inner {
+                        .meta-left {
+                            h3 {
+                                color: $dark-dark-text !important;
+
+                                .rating {
+                                    i:not(.active) {
+                                        color: darken($dark-sidebar, 2%);
+                                    }
+                                }
+                            }
+
+                            > span {
+                                color: $accent;
+                            }
+
+                            .icon-list {
+                                > span {
+                                    span {
+                                        color: $dark-dark-text;
+                                    }
+                                }
+                            }
+                        }
+
+                        .meta-right {
+                            .buttons {
+                                .button {
+                                    &:first-child {
+                                        background: lighten($dark-sidebar, 2%);
+                                        border-color: lighten($dark-sidebar, 8%);
+                                        color: $dark-dark-text;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+6. List View V3
+========================================================================== */
+
+.list-view {
+    &.list-view-v3 {
+        .list-view-item {
+            @extend .r-card;
+
+            margin-bottom: 16px;
+            padding: 16px;
+
+            .list-view-item-inner {
+                display: flex;
+                align-items: center;
+
+                > img {
+                    width: 100%;
+                    max-width: 60px;
+                    min-width: 60px;
+                    max-height: 60px;
+                    min-height: 60px;
+                    border-radius: 50%;
+                    border: 1px solid $fade-grey;
+                }
+
+                .meta-left {
+                    margin-left: 16px;
+
+                    h3 {
+                        font-family: $font-alt;
+                        color: $dark-text;
+                        font-weight: 500;
+                        font-size: 1.1rem;
+                        line-height: 1;
+                    }
+
+                    > span:not(.tag) {
+                        font-size: .9rem;
+                        color: $light-text;
+
+                        svg {
+                            position: relative;
+                            top: 1px;
+                            height: 12px;
+                            width: 12px;
+                        }
+
+                        .icon-separator {
+                            position: relative;
+                            top: -3px;
+                            font-size: 5px;
+                            color: $light-text;
+                            padding: 0 8px;
+                        }
+                    }
+                }
+
+                .meta-right {
+                    margin-left: auto;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+
+                    .buttons {
+                        margin-bottom: 0;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+7. List View V3 Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .list-view {
+            &.list-view-v3 {
+                .list-view-item {
+                    .list-view-item-inner {
+                        > img {
+                            border-color: lighten($dark-sidebar, 12%);
+                        }
+
+                        .meta-left {
+                            h3 {
+                                color: $dark-dark-text !important;
+                            }
+                        }
+
+                        .meta-right {
+                            .buttons {
+                                .button {
+                                    &:nth-child(2) {
+                                        background: lighten($dark-sidebar, 2%);
+                                        border-color: lighten($dark-sidebar, 8%);
+                                        color: $dark-dark-text;
+                                        transition: all .3s;
+
+                                        &:hover {
+                                            border-color: $accent;
+                                            color: $accent;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+8. List View V4
+========================================================================== */
+
+.list-view {
+    &.list-view-v4 {
+        .list-view-item {
+            @extend .r-card;
+
+            margin-bottom: 16px;
+            padding: 16px;
+
+            .list-view-item-inner {
+                display: flex;
+                align-items: center;
+
+                .pre-meta {
+                    margin-right: 16px;
+                    width: 160px;
+
+                    h3 {
+                        font-family: $font-alt;
+                        color: $dark-text;
+                        font-size: 1rem;
+                        font-weight: 600;
+                        max-width: 150px;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                    }
+                }
+
+                > img {
+                    width: 100%;
+                    max-width: 60px;
+                    min-width: 60px;
+                    max-height: 60px;
+                    min-height: 60px;
+                    border-radius: 50%;
+                    border: 1px solid $fade-grey;
+                }
+
+                .meta-left {
+                    margin-left: 16px;
+
+                    h3 {
+                        display: flex;
+                        align-items: center;
+                        font-family: $font-alt;
+                        font-weight: 600;
+                        color: $dark-text;
+                        font-size: .75rem;
+                        line-height: 1;
+
+                        .avatar {
+                            display: block;
+                            height: 18px;
+                            width: 18px;
+                            border-radius: 50%;
+                            margin-right: 6px;
+                        }
+                    }
+
+                    > span:not(.tag) {
+                        font-size: .9rem;
+                        color: $light-text;
+
+                        svg {
+                            position: relative;
+                            top: 1px;
+                            height: 12px;
+                            width: 12px;
+                        }
+
+                        .icon-separator {
+                            position: relative;
+                            top: -3px;
+                            font-size: 5px;
+                            color: $light-text;
+                            padding: 0 8px;
+                        }
+                    }
+                }
+
+                .meta-right {
+                    margin-left: auto;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+
+                    .network {
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+                        min-width: 145px;
+                        margin-right: 30px;
+
+                        > span {
+                            font-family: $font;
+                            font-size: .9rem;
+                            color: $light-text;
+                            margin-left: 6px;
+                        }
+                    }
+
+                    .buttons {
+                        margin-bottom: 0;
+                        margin-right: 10px;
+
+                        .button {
+                            margin-bottom: 0;
+
+                            &:nth-child(2) {
+                                transition: all .3s;
+
+                                &:hover {
+                                    background: $white;
+                                    border: 1px solid darken($fade-grey, 3%);
+                                    box-shadow: $light-box-shadow;
+                                    color: $danger;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+9. List View V4 Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .list-view {
+            &.list-view-v4 {
+                .list-view-item {
+                    .list-view-item-inner {
+                        .pre-meta {
+                            h3 {
+                                color: $dark-dark-text;
+                            }
+                        }
+
+                        > img {
+                            border-color: lighten($dark-sidebar, 12%);
+                        }
+
+                        .meta-left {
+                            h3 {
+                                color: $dark-dark-text !important;
+                            }
+                        }
+
+                        .meta-right {
+                            .buttons {
+                                .button {
+                                    &:nth-child(2) {
+                                        background: lighten($dark-sidebar, 2%);
+                                        border-color: lighten($dark-sidebar, 8%);
+                                        color: $dark-dark-text;
+                                        transition: all .3s;
+
+                                        &:hover {
+                                            border-color: $danger;
+                                            color: $danger;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+10. Media Queries
+========================================================================== */
+
+@media only screen and (max-width: 767px) {
+    .list-view-toolbar {
+        .list-info {
+            display: none;
+        }
+    }
+
+    .list-view {
+        &.list-view-v1 {
+            .list-view-item {
+                .list-view-item-inner {
+                    position: relative;
+                    flex-direction: column;
+
+                    .h-avatar {
+                        margin-bottom: 10px;
+                    }
+
+                    .meta-left {
+                        margin-left: 0;
+                    }
+
+                    .meta-right {
+                        flex-direction: column;
+                        margin-left: 0;
+
+                        .tags {
+                            margin: 10px 0;
+                        }
+
+                        .stats {
+                            margin: 10px 0;
+                        }
+
+                        .network {
+                            margin: 10px 0 0 0;
+                            justify-content: center;
+
+                            > span {
+                                display: none;
+                            }
+                        }
+
+                        .dropdown {
+                            position: absolute;
+                            top: 0px;
+                            right: 0px;
+                            margin-left: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.list-view-v2 {
+            .list-view-item {
+                padding: 20px;
+
+                .list-view-item-inner {
+                    flex-direction: column;
+
+                    > img {
+                        width: 100%;
+                        max-width: 100%;
+                        min-height: 160px;
+                        max-height: 160px;
+                        margin-bottom: 1rem;
+                    }
+
+                    .meta-left {
+                        margin-left: 0;
+
+                        > span {
+                            margin-bottom: 16px;
+                        }
+
+                        .icon-list {
+                            flex-wrap: wrap;
+
+                            > span {
+                                flex-direction: column;
+                                text-align: center;
+                                margin: 10px;
+                                width: calc(33.3% - 20px);
+
+                                i {
+                                    margin: 0;
+                                }
+                            }
+                        }
+                    }
+
+                    .meta-right {
+                        margin: 16px 0 0 0;
+
+                        .buttons {
+                            margin: 0;
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+
+                            .button {
+                                width: 48%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &.list-view-v3 {
+            .list-view-item {
+                position: relative;
+                padding: 20px;
+
+                .list-view-item-inner {
+                    flex-direction: column;
+
+                    > img {
+                        margin-bottom: 1rem;
+                    }
+
+                    .meta-left {
+                        margin-left: 0;
+
+                        h3 {
+                            text-align: center;
+                            margin-bottom: 6px;
+                        }
+
+                        > span {
+                            margin-bottom: 16px;
+                        }
+
+                        .icon-list {
+                            flex-wrap: wrap;
+
+                            > span {
+                                flex-direction: column;
+                                text-align: center;
+                                margin: 10px;
+                                width: calc(33.3% - 20px);
+
+                                i {
+                                    margin: 0;
+                                }
+                            }
+                        }
+                    }
+
+                    .meta-right {
+                        margin: 16px 0 0 0;
+                        width: 100%;
+
+                        .buttons {
+                            margin: 0;
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+
+                            .button {
+                                width: 100%;
+                                margin: 10px 0;
+
+                                &:first-child {
+                                    width: 100%;
+                                    max-width: 240px;
+                                    margin: 10px auto;
+                                }
+
+                                &:nth-child(2) {
+                                    position: absolute;
+                                    top: 10px;
+                                    right: 10px;
+                                    max-width: 35px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &.list-view-v4 {
+            .list-view-item {
+                position: relative;
+                padding: 20px;
+
+                .list-view-item-inner {
+                    flex-direction: column;
+
+                    .pre-meta {
+                        margin: 0 0 16px 0;
+
+                        h3 {
+                            text-align: center;
+                        }
+                    }
+
+                    > img {
+                        max-width: 90px;
+                        min-width: 90px;
+                        max-height: 90px;
+                        min-height: 90px;
+                        margin-bottom: 1rem;
+                    }
+
+                    .meta-left {
+                        margin-left: 0;
+
+                        h3 {
+                            justify-content: center;
+                            margin-bottom: 6px;
+                        }
+
+                        > span {
+                            margin-bottom: 16px;
+                        }
+
+                        .icon-list {
+                            flex-wrap: wrap;
+
+                            > span {
+                                flex-direction: column;
+                                text-align: center;
+                                margin: 10px;
+                                width: calc(33.3% - 20px);
+
+                                i {
+                                    margin: 0;
+                                }
+                            }
+                        }
+                    }
+
+                    .meta-right {
+                        margin: 16px 0 0 0;
+                        width: 100%;
+
+                        .network {
+                            justify-content: flex-start;
+                        }
+
+                        .buttons {
+                            margin: 0;
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+
+                            .button {
+                                width: 100%;
+                                margin: 10px 0;
+
+                                &:first-child {
+                                    width: 100%;
+                                    max-width: 240px;
+                                    margin: 10px auto;
+                                }
+
+                                &:nth-child(2) {
+                                    position: absolute;
+                                    top: 0;
+                                    right: 10px;
+                                    max-width: 35px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    .list-view-toolbar {
+        padding: 0 10px;
+    }
+
+    .list-view {
+        &.list-view-v1 {
+            display: flex;
+            flex-wrap: wrap;
+
+            .list-view-item {
+                margin: 10px;
+                width: calc(50% - 20px);
+
+                .list-view-item-inner {
+                    position: relative;
+                    flex-direction: column;
+
+                    .h-avatar {
+                        margin-bottom: 10px;
+                    }
+
+                    .meta-left {
+                        margin-left: 0;
+                    }
+
+                    .meta-right {
+                        flex-direction: column;
+                        margin-left: 0;
+
+                        .tags {
+                            margin: 10px 0;
+                        }
+
+                        .stats {
+                            margin: 10px 0;
+                        }
+
+                        .network {
+                            margin: 10px 0 0 0;
+                            justify-content: center;
+
+                            > span {
+                                display: none;
+                            }
+                        }
+
+                        .dropdown {
+                            position: absolute;
+                            top: 0px;
+                            right: 0px;
+                            margin-left: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.list-view-v2 {
+            .list-view-item {
+                .list-view-item-inner {
+                    position: relative;
+                    flex-direction: column;
+
+                    .h-avatar {
+                        margin-bottom: 10px;
+                    }
+
+                    .meta-left {
+                        margin-left: 0;
+                    }
+
+                    .meta-right {
+                        flex-direction: column;
+                        margin-left: 0;
+
+                        .tags {
+                            margin: 10px 0;
+                        }
+
+                        .stats {
+                            margin: 10px 0;
+                        }
+
+                        .network {
+                            margin: 10px 0 0 0;
+                            justify-content: center;
+
+                            > span {
+                                display: none;
+                            }
+                        }
+
+                        .dropdown {
+                            position: absolute;
+                            top: 0px;
+                            right: 0px;
+                            margin-left: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.list-view-v2 {
+            .list-view-inner {
+                display: flex;
+                flex-wrap: wrap;
+
+                .list-view-item {
+                    padding: 20px;
+                    margin: 10px;
+                    width: calc(50% - 20px);
+
+                    .list-view-item-inner {
+                        flex-direction: column;
+                        height: 100%;
+
+                        > img {
+                            width: 100%;
+                            max-width: 100%;
+                            min-height: 160px;
+                            max-height: 160px;
+                            margin-bottom: 1rem;
+                        }
+
+                        .meta-left {
+                            margin-left: 0;
+
+                            > span {
+                                margin-bottom: 16px;
+                            }
+
+                            .icon-list {
+                                flex-wrap: wrap;
+
+                                > span {
+                                    flex-direction: column;
+                                    text-align: center;
+                                    margin: 10px;
+                                    width: calc(33.3% - 20px);
+
+                                    i {
+                                        margin: 0;
+                                    }
+                                }
+                            }
+                        }
+
+                        .meta-right {
+                            margin: auto 0 0 0;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: flex-end;
+
+                            .buttons {
+                                margin: 16px 0 0 0;
+                                width: 100%;
+                                display: flex;
+                                justify-content: space-between;
+
+                                .button {
+                                    width: 48%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &.list-view-v4 {
+            .list-view-inner {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .list-view-item {
+                position: relative;
+                margin: 10px;
+                width: calc(50% - 20px);
+                padding: 20px;
+
+                .list-view-item-inner {
+                    flex-direction: column;
+
+                    .pre-meta {
+                        margin: 0 0 16px 0;
+
+                        h3 {
+                            margin-right: 0;
+                            text-align: center;
+                        }
+                    }
+
+                    > img {
+                        max-width: 90px;
+                        min-width: 90px;
+                        max-height: 90px;
+                        min-height: 90px;
+                        margin-bottom: 1rem;
+                    }
+
+                    .meta-left {
+                        margin-left: 0;
+
+                        h3 {
+                            justify-content: center;
+                            margin-bottom: 6px;
+                        }
+
+                        > span {
+                            margin-bottom: 16px;
+                        }
+
+                        .icon-list {
+                            flex-wrap: wrap;
+
+                            > span {
+                                flex-direction: column;
+                                text-align: center;
+                                margin: 10px;
+                                width: calc(33.3% - 20px);
+
+                                i {
+                                    margin: 0;
+                                }
+                            }
+                        }
+                    }
+
+                    .meta-right {
+                        margin: 16px 0 0 0;
+                        width: 100%;
+                        justify-content: space-between;
+
+                        .network {
+                            justify-content: flex-start;
+                            margin: 0;
+                        }
+
+                        .buttons {
+                            margin: 0;
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            margin: 0 0 0 16px;
+
+                            .button {
+                                width: 100%;
+
+                                //margin: 10px 0;
+
+                                &:first-child {
+                                    width: 100%;
+                                    max-width: 240px;
+                                    margin: 0 auto;
+                                }
+
+                                &:nth-child(2) {
+                                    position: absolute;
+                                    top: 10px;
+                                    right: 10px;
+                                    max-width: 35px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

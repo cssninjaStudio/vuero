@@ -1,0 +1,895 @@
+/*! _utility.scss | Huro | Css ninja 2020-2021 */
+
+/* ==========================================================================
+Utility Pages
+========================================================================== */
+
+/*
+    1. Confirm Account
+    2. Promotion Page
+    3. Status Page
+    4. Invoice
+    5. Invoice Dark mode
+    6. Error page
+    7. Media Queries
+*/
+
+/* ==========================================================================
+1. Confirm Account
+========================================================================== */
+
+.confirm-account-wrapper, .promotion-page-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 540px;
+    min-height: 560px;
+    margin: 0 auto;
+
+    .wrapper-inner {
+        .action-box {
+            @extend .s-card;
+
+            padding: 40px;
+
+            .box-content {
+                text-align: center;
+                font-family: $font;
+
+                img {
+                    display: block;
+                    width: 100%;
+                    max-width: 220px;
+                    margin: 0 auto 8px auto;
+
+                    &.is-larger {
+                        max-width: 300px;
+                    }
+                }
+
+                h3 {
+                    font-size: 1.1rem;
+                    font-family: $font-alt;
+                    font-weight: 600;
+                    max-width: 320px;
+                    margin: 0 auto 8px auto;
+
+                    span {
+                        color: $primary;
+                    }
+                }
+
+                p {
+                    font-size: .9rem;
+                }
+
+                .buttons {
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: center;
+                    padding-top: 30px;
+
+                    .button {
+                        margin: 0 4px;
+                        min-width: 180px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+2. Promotion Page
+========================================================================== */
+
+.promotion-page-wrapper {
+    max-width: 840px;
+
+    .wrapper-outer {
+        @extend .s-card;
+
+        display: flex;
+        padding: 0;
+
+        .wrapper-inner {
+            .action-box {
+                border: none;
+                background: none;
+                border-radius: 0;
+                border-right: 1px solid darken($fade-grey, 3%);
+
+                .price {
+                    text-align: center;
+                    padding-top: 8px;
+
+                    span {
+                        display: block;
+                        font-family: $font;
+
+                        &:first-child {
+                            font-size: 2.8rem;
+                            font-weight: 600;
+                            color: $dark-text;
+                            line-height: 1;
+
+                            &:before {
+                                position: relative;
+                                top: -12px;
+                                content: '$';
+                                font-size: 60%;
+                            }
+                        }
+
+                        &:nth-child(2) {
+                            font-size: .75rem;
+                            color: $light-text;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+            }
+        }
+
+        .side-wrapper {
+            flex-grow: 2;
+            padding: 40px;
+            min-width: 40%;
+
+            .side-inner {
+                .side-title {
+                    font-family: $font;
+                    margin-bottom: 16px;
+
+                    h3 {
+                        font-family: $font-alt;
+                        font-weight: 600;
+                        color: $dark-text;
+                    }
+
+                    p {
+                        font-size: .9rem;
+                    }
+                }
+
+                .action-list {
+                    .media-flex {
+                        .icon-wrap {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 32px;
+                            width: 32px;
+                            min-width: 32px;
+                            border-radius: 50%;
+                            background: $white;
+                            border: 1px solid darken($fade-grey, 3%);
+                            box-shadow: $light-box-shadow;
+                            color: $primary;
+
+                            svg {
+                                width: 16px;
+                                height: 16px;
+                                stroke-width: 3px;
+                            }
+                        }
+
+                        .flex-meta {
+                            span {
+                                font-weight: 400;
+                                font-size: .9rem;
+                            }
+
+                            p {
+                                font-size: .9rem;
+                                max-width: 240px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+3. Status Page
+========================================================================== */
+
+.status-page-wrapper {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 60px 16px 60px 16px;
+
+    .head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+
+        .logo {
+            display: block;
+            width: 50px;
+            min-width: 50px;
+            height: 50px;
+        }
+    }
+
+    .status-block {
+        background: $white;
+        margin-bottom: 40px;
+        border: 1px solid darken($fade-grey, 3%);
+        border-radius: 6px;
+
+        .status-header {
+            padding: 40px;
+
+            .indicator {
+                display: inline-block;
+                width: 15px;
+                height: 15px;
+                border-radius: 100%;
+                margin-right: 20px;
+                background: $success;
+            }
+
+            .title {
+                display: inline-block;
+                font-family: $font-alt;
+                font-weight: 600;
+                color: $dark-text;
+            }
+
+            .subtitle {
+                display: block;
+                margin-left: 35px;
+                color: $light-text;
+            }
+        }
+
+        .status-uptime {
+            border-top: 1px solid darken($fade-grey, 3%);
+            border-bottom: 1px solid darken($fade-grey, 3%);
+            padding: 16px 40px;
+            font-family: $font;
+
+            .title {
+                display: inline-block;
+                font-size: 14px;
+                font-family: $font-alt;
+                margin-bottom: 0;
+                font-weight: 500;
+                color: $light-text;
+            }
+
+            .uptime {
+                display: inline-block;
+                margin-left: 60px;
+                font-size: 14px;
+                color: $light-text;
+            }
+        }
+
+        .status-list {
+            padding: 40px;
+
+            .list-block {
+                display: flex;
+                align-items: center;
+
+                .icon-wrap {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 54px;
+                    width: 54px;
+                    min-width: 54px;
+                    border-radius: 50%;
+                    background: $white;
+                    border: 1px solid darken($fade-grey, 3%);
+                    box-shadow: $light-box-shadow;
+                    color: $primary;
+                    margin-right: 12px;
+
+                    img {
+                        display: block;
+                        max-width: 54px;
+                        border-radius: 50%;
+                    }
+                }
+
+                .progress-wrap {
+                    flex-grow: 2;
+
+                    .progress-wrap-inner {
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 4px;
+                    }
+                }
+            }
+
+            .label {
+                font-family: $font-alt;
+                font-size: .95rem;
+                font-weight: 600;
+                margin-bottom: 0;
+                line-height: 1.2;
+            }
+
+            p {
+                font-size: .9rem;
+                font-family: $font;
+            }
+
+            .amount {
+                position: relative;
+                top: -2px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 16px;
+                color: $light-text;
+                margin-left: auto;
+                height: 40px;
+                width: 40px;
+                border-radius: 12px;
+                border: 1px solid darken($fade-grey, 3%);
+                box-shadow: $light-box-shadow;
+
+                span {
+                    font-family: $font;
+                    color: $dark-text;
+                    font-weight: 600;
+                    font-size: .85rem;
+                }
+            }
+        }
+    }
+
+    .tweets-header {
+        display: flex;
+        align-items: center;
+        padding: 24px 40px;
+        border-bottom: 1px solid darken($fade-grey, 3%);
+
+        .icon i {
+            font-size: 1.6rem;
+            color: $twitter;
+        }
+
+        .username {
+            margin-left: 10px;
+            font-family: $font-alt;
+            font-size: .95rem;
+            font-weight: 600;
+            color: $dark-text;
+        }
+
+        .action-link {
+            margin-left: auto;
+        }
+    }
+
+    .status-tweets {
+        .updates {
+            padding: 20px 40px 40px 40px;
+
+            .update {
+                display: flex;
+                align-items: center;
+
+                &:not(:last-child) {
+                    margin-bottom: 30px;
+                }
+
+                .update-content {
+                    margin-left: 12px;
+
+                    .timestamp {
+                        color: $light-text;
+                    }
+
+                    .tweet {
+                        font-family: $font;
+                        color: $dark-text;
+                    }
+                }
+            }
+        }
+    }
+
+    .status-footer {
+        display: flex;
+        padding: 20px;
+
+        a {
+            font-family: $font;
+            color: darken($light-text, 8%);
+            padding: 0 10px;
+            transition: color .3s;
+
+            &:hover {
+                font-weight: 500;
+                color: $primary;
+            }
+        }
+
+        .copyright {
+            margin-left: auto;
+            font-family: $font;
+            color: $light-text;
+        }
+    }
+}
+
+/* ==========================================================================
+4. Invoice
+========================================================================== */
+
+.invoice-wrapper {
+    max-width: 740px;
+    margin: 0 auto;
+
+    &.is-webapp {
+        margin-top: 30px;
+    }
+
+    .invoice-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid darken($fade-grey, 4%);
+
+        .left {
+            h3 {
+                font-family: $font-alt;
+                font-size: 1.2rem;
+                font-weight: 600;
+                color: $dark-text;
+            }
+        }
+
+        .right {
+            .controls {
+                display: flex;
+
+                .action {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 32px;
+                    width: 32px;
+                    min-width: 32px;
+                    border-radius: 50%;
+                    color: $light-text;
+                    margin: 0 4px;
+                    transition: all .3s;
+
+                    &:hover {
+                        color: $dark-text;
+                        background: darken($fade-grey, 4%);
+                    }
+
+                    svg {
+                        height: 16px;
+                        width: 16px;
+                        stroke-width: 1.6px;
+                    }
+                }
+            }
+        }
+    }
+
+    .invoice-body {
+        .invoice-card {
+            @extend .s-card;
+
+            padding: 0;
+
+            .invoice-section {
+                padding: 40px;
+
+                &.is-flex {
+                    display: flex;
+                    align-items: center;
+
+                    .meta {
+                        margin-left: 16px;
+                        font-family: $font;
+
+                        h3 {
+                            font-family: $font-alt;
+                            font-size: 1.1rem;
+                            font-weight: 600;
+                            line-height: 1;
+                        }
+
+                        span {
+                            display: block;
+                            color: $light-text;
+                            font-weight: 400;
+                            font-size: .9rem;
+                        }
+                    }
+
+                    .end {
+                        margin-left: auto;
+                        text-align: right;
+
+                        &.is-left {
+                            text-align: left;
+                            max-width: 300px;
+
+                            p {
+                                padding-top: 4px;
+                                font-size: .95rem;
+                                line-height: 1.2;
+                            }
+                        }
+
+                        h3 {
+                            font-family: $font-alt;
+                            font-size: 1.1rem;
+                            font-weight: 600;
+                            line-height: 1;
+                        }
+
+                        span {
+                            display: block;
+                            color: $light-text;
+                            font-weight: 400;
+                            font-size: .9rem;
+                        }
+                    }
+                }
+
+                &.is-bordered {
+                    border-bottom: 1px solid darken($fade-grey, 3%);
+                }
+
+                .h-avatar {
+                    &.is-customer {
+                        border: 1.6px solid darken($fade-grey, 3%);
+                        border-radius: 50%;
+                        box-shadow: $light-box-shadow;
+                    }
+                }
+
+                .flex-table {
+                    &.sub-table {
+                        .flex-table-item {
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            margin-bottom: 0;
+                            min-height: 40px;
+                            border: none;
+
+                            .table-label {
+                                font-family: $font;
+                                text-transform: uppercase;
+                                font-size: .8rem;
+                                color: $light-text;
+                            }
+
+                            .table-total {
+                                font-family: $font;
+                                color: $dark-text;
+                                font-weight: 500;
+
+                                &.is-bigger {
+                                    font-size: 1.2rem;
+                                    font-weight: 600;
+                                }
+                            }
+                        }
+                    }
+
+                    .flex-table-header {
+                        span {
+                            &:not(:first-child) {
+                                justify-content: flex-end;
+                            }
+                        }
+                    }
+
+                    .flex-table-item {
+                        .flex-table-cell {
+                            &:not(:first-child) {
+                                justify-content: flex-end;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+5. Invoice Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .invoice-wrapper {
+            .invoice-header {
+                border-color: lighten($dark-sidebar, 20%);
+
+                .left {
+                    h3 {
+                        color: $dark-dark-text;
+                    }
+                }
+
+                .right {
+                    .controls {
+                        .action {
+                            border: 1px solid transparent;
+
+                            &:hover {
+                                background: lighten($dark-sidebar, 2%);
+                                border-color: $accent;
+                                color: $accent;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .invoice-section {
+                border-color: lighten($dark-sidebar, 12%) !important;
+
+                &.is-flex {
+                    .h-avatar {
+                        border-color: lighten($dark-sidebar, 12%) !important;
+                    }
+
+                    .meta, .end {
+                        h3 {
+                            color: $dark-dark-text;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+6. Error page
+========================================================================== */
+
+.error-container {
+    .error-wrapper {
+        max-width: 840px;
+        margin: 0 auto;
+        padding-top: 40px;
+
+        .error-inner {
+            position: relative;
+            max-width: 540px;
+            margin: 0 auto;
+
+            .bg-number {
+                font-family: $font;
+                position: absolute;
+                top: -58px;
+                left: -50px;
+                right: 0;
+                margin: 0 auto;
+                font-size: 28rem;
+                font-weight: 600;
+                opacity: .15;
+                z-index: 0;
+            }
+
+            img, h3, p, .button-wrap {
+                position: relative;
+                z-index: 1;
+            }
+
+            img {
+                display: block;
+                max-width: 100%;
+                margin: 0 auto;
+            }
+
+            h3 {
+                font-size: 1.5rem;
+                font-family: $font-alt;
+                color: $dark-text;
+                font-weight: 600;
+                margin-top: 10px;
+            }
+
+            p {
+                font-family: $font;
+                font-size: 1.1rem;
+                margin-bottom: 16px;
+            }
+
+            .button-wrap {
+                .button {
+                    min-width: 220px;
+                    min-height: 50px;
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+7. Media Queries
+========================================================================== */
+
+@media only screen and (max-width: 767px) {
+    .confirm-account-wrapper {
+        .wrapper-inner {
+            .action-box {
+                padding: 20px;
+
+                .box-content {
+                    .buttons {
+                        .button {
+                            min-width: 130px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .promotion-page-wrapper {
+        .wrapper-outer {
+            flex-direction: column;
+
+            .wrapper-inner {
+                .action-box {
+                    padding: 20px 20px 40px 20px;
+                    border-right: none;
+                    border-bottom: 1px solid darken($fade-grey, 3%);
+
+                    .box-content {
+                        .buttons {
+                            .button {
+                                min-width: 130px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .side-wrapper {
+                padding: 40px 20px;
+            }
+        }
+    }
+
+    .status-page-wrapper {
+        padding-top: 20px;
+
+        .status-block {
+            .status-header {
+                padding: 30px;
+            }
+
+            .status-uptime {
+                padding: 16px 30px;
+
+                .uptime {
+                    display: none;
+                }
+            }
+
+            .status-list {
+                padding: 30px;
+
+                .list-block {
+                    .icon-wrap {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .tweets-header {
+            padding: 24px 30px;
+        }
+
+        .status-tweets {
+            .updates {
+                padding: 20px 30px 30px 30px;
+
+                .update {
+                    .h-avatar {
+                        display: none;
+                    }
+
+                    .update-content {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+
+        .status-footer {
+            flex-direction: column;
+            align-items: center;
+
+            .copyright {
+                margin: 10px 0;
+            }
+        }
+    }
+
+    .invoice-wrapper {
+        .invoice-section {
+            &.is-flex {
+                flex-direction: column;
+                text-align: center;
+
+                .h-avatar {
+                    margin-bottom: 16px;
+                }
+
+                .meta {
+                    margin-left: 0 !important;
+                }
+
+                .end {
+                    margin: 16px auto 0 auto;
+                    text-align: center !important;
+                }
+            }
+
+            .flex-table {
+                &.sub-table {
+                    padding-top: 16px;
+
+                    .is-vhidden {
+                        display: none !important;
+                    }
+
+                    .flex-table-item:not(.is-vhidden) {
+                        flex-direction: revert !important;
+                    }
+                }
+
+                .flex-table-item {
+                    .flex-table-cell {
+                        &.is-grow {
+                            > span {
+                                margin-left: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .error-container {
+        .error-wrapper {
+            padding-top: 60px;
+
+            .error-inner {
+                padding: 10px;
+
+                .bg-number {
+                    top: -35px;
+                    left: -18px;
+                    right: 0;
+                    font-size: 13rem;
+                }
+
+                img {
+                    max-width: 345px;
+                }
+            }
+        }
+    }
+}

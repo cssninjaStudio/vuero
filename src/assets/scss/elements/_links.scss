@@ -1,0 +1,49 @@
+/*! _links.scss | Huro | Css ninja 2020-2021 */
+
+/*
+    1. Action Link
+    2. Action Link Dark Mode
+*/
+
+/* ==========================================================================
+1. Action Link
+========================================================================== */
+
+.action-link {
+    position: relative;
+    display: inline-block;
+    font-weight: 500;
+    color: $primary;
+    transition: opacity .3s;
+
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        border-bottom: 1.6px dotted $primary;
+    }
+
+    &:hover {
+        color: $primary;
+        opacity: .6;
+    }
+}
+
+/* ==========================================================================
+2. Action Link Dark Mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .action-link {
+            color: $accent;
+
+            &:after {
+                border-bottom-color: $accent;
+            }
+        }
+    }
+}

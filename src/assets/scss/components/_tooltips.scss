@@ -1,0 +1,918 @@
+/*! _tooltips.scss | Huro | Css ninja 2020-2021 */
+
+/*
+    1. CSS Tooltips
+    2. CSS Tooltips Dark mode
+*/
+
+/* ==========================================================================
+1. CSS Tooltips
+========================================================================== */
+
+[class*="hint--"] {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+[class*="hint--"]:before, [class*="hint--"]:after {
+    position: absolute;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1000000;
+    pointer-events: none;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    transition: 0.3s ease;
+    -webkit-transition-delay: 0ms;
+    -moz-transition-delay: 0ms;
+    transition-delay: 0ms;
+}
+
+[class*="hint--"]:hover:before, [class*="hint--"]:hover:after {
+    visibility: visible;
+    opacity: 1;
+}
+
+[class*="hint--"]:hover:before, [class*="hint--"]:hover:after {
+    -webkit-transition-delay: 100ms;
+    -moz-transition-delay: 100ms;
+    transition-delay: 100ms;
+}
+
+[class*="hint--"]:before {
+    content: '';
+    position: absolute;
+    background: transparent;
+    border: 6px solid transparent;
+    z-index: 1000001;
+}
+
+[class*="hint--"]:after {
+    background: #383838;
+    color: white;
+    padding: 8px 10px;
+    font-size: 12px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 12px;
+    white-space: nowrap;
+}
+
+[class*="hint--"][aria-label]:after {
+    content: attr(aria-label);
+}
+
+[class*="hint--"][data-hint]:after {
+    content: attr(data-hint);
+}
+
+[aria-label='']:before, [aria-label='']:after,
+[data-hint='']:before,
+[data-hint='']:after {
+    display: none !important;
+}
+
+//Tooltip arrows
+.hint--top-left:before {
+    border-top-color: #383838;
+}
+
+.hint--top-right:before {
+    border-top-color: #383838;
+}
+
+.hint--top:before {
+    border-top-color: #383838;
+}
+
+.hint--bottom-left:before {
+    border-bottom-color: #383838;
+}
+
+.hint--bottom-right:before {
+    border-bottom-color: #383838;
+}
+
+.hint--bottom:before {
+    border-bottom-color: #383838;
+}
+
+.hint--left:before {
+    border-left-color: #383838;
+}
+
+.hint--right:before {
+    border-right-color: #383838;
+}
+
+//Top placement
+.hint--top:before {
+    margin-bottom: -11px;
+}
+
+.hint--top:before, .hint--top:after {
+    bottom: 100%;
+    left: 50%;
+}
+
+.hint--top:before {
+    left: calc(50% - 6px);
+}
+
+.hint--top:after {
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.hint--top:hover:before {
+    -webkit-transform: translateY(-8px);
+    -moz-transform: translateY(-8px);
+    transform: translateY(-8px);
+}
+
+.hint--top:hover:after {
+    -webkit-transform: translateX(-50%) translateY(-8px);
+    -moz-transform: translateX(-50%) translateY(-8px);
+    transform: translateX(-50%) translateY(-8px);
+}
+
+//Bottom placement
+.hint--bottom:before {
+    margin-top: -11px;
+}
+
+.hint--bottom:before, .hint--bottom:after {
+    top: 100%;
+    left: 50%;
+}
+
+.hint--bottom:before {
+    left: calc(50% - 6px);
+}
+
+.hint--bottom:after {
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.hint--bottom:hover:before {
+    -webkit-transform: translateY(8px);
+    -moz-transform: translateY(8px);
+    transform: translateY(8px);
+}
+
+.hint--bottom:hover:after {
+    -webkit-transform: translateX(-50%) translateY(8px);
+    -moz-transform: translateX(-50%) translateY(8px);
+    transform: translateX(-50%) translateY(8px);
+}
+
+//Right placement
+.hint--right:before {
+    margin-left: -11px;
+    margin-bottom: -6px;
+}
+
+.hint--right:after {
+    margin-bottom: -14px;
+}
+
+.hint--right:before, .hint--right:after {
+    left: 100%;
+    bottom: 50%;
+}
+
+.hint--right:hover:before {
+    -webkit-transform: translateX(8px);
+    -moz-transform: translateX(8px);
+    transform: translateX(8px);
+}
+
+.hint--right:hover:after {
+    -webkit-transform: translateX(8px);
+    -moz-transform: translateX(8px);
+    transform: translateX(8px);
+}
+
+//Left placement
+.hint--left:before {
+    margin-right: -11px;
+    margin-bottom: -6px;
+}
+
+.hint--left:after {
+    margin-bottom: -14px;
+}
+
+.hint--left:before, .hint--left:after {
+    right: 100%;
+    bottom: 50%;
+}
+
+.hint--left:hover:before {
+    -webkit-transform: translateX(-8px);
+    -moz-transform: translateX(-8px);
+    transform: translateX(-8px);
+}
+
+.hint--left:hover:after {
+    -webkit-transform: translateX(-8px);
+    -moz-transform: translateX(-8px);
+    transform: translateX(-8px);
+}
+
+//Top left placement
+.hint--top-left:before {
+    margin-bottom: -11px;
+}
+
+.hint--top-left:before, .hint--top-left:after {
+    bottom: 100%;
+    left: 50%;
+}
+
+.hint--top-left:before {
+    left: calc(50% - 6px);
+}
+
+.hint--top-left:after {
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
+.hint--top-left:after {
+    margin-left: 12px;
+}
+
+.hint--top-left:hover:before {
+    -webkit-transform: translateY(-8px);
+    -moz-transform: translateY(-8px);
+    transform: translateY(-8px);
+}
+
+.hint--top-left:hover:after {
+    -webkit-transform: translateX(-100%) translateY(-8px);
+    -moz-transform: translateX(-100%) translateY(-8px);
+    transform: translateX(-100%) translateY(-8px);
+}
+
+//Top right placement
+.hint--top-right:before {
+    margin-bottom: -11px;
+}
+
+.hint--top-right:before, .hint--top-right:after {
+    bottom: 100%;
+    left: 50%;
+}
+
+.hint--top-right:before {
+    left: calc(50% - 6px);
+}
+
+.hint--top-right:after {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.hint--top-right:after {
+    margin-left: -12px;
+}
+
+.hint--top-right:hover:before {
+    -webkit-transform: translateY(-8px);
+    -moz-transform: translateY(-8px);
+    transform: translateY(-8px);
+}
+
+.hint--top-right:hover:after {
+    -webkit-transform: translateY(-8px);
+    -moz-transform: translateY(-8px);
+    transform: translateY(-8px);
+}
+
+//Bottom left placement
+.hint--bottom-left:before {
+    margin-top: -11px;
+}
+
+.hint--bottom-left:before, .hint--bottom-left:after {
+    top: 100%;
+    left: 50%;
+}
+
+.hint--bottom-left:before {
+    left: calc(50% - 6px);
+}
+
+.hint--bottom-left:after {
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
+.hint--bottom-left:after {
+    margin-left: 12px;
+}
+
+.hint--bottom-left:hover:before {
+    -webkit-transform: translateY(8px);
+    -moz-transform: translateY(8px);
+    transform: translateY(8px);
+}
+
+.hint--bottom-left:hover:after {
+    -webkit-transform: translateX(-100%) translateY(8px);
+    -moz-transform: translateX(-100%) translateY(8px);
+    transform: translateX(-100%) translateY(8px);
+}
+
+//Bottom right placement
+.hint--bottom-right:before {
+    margin-top: -11px;
+}
+
+.hint--bottom-right:before, .hint--bottom-right:after {
+    top: 100%;
+    left: 50%;
+}
+
+.hint--bottom-right:before {
+    left: calc(50% - 6px);
+}
+
+.hint--bottom-right:after {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.hint--bottom-right:after {
+    margin-left: -12px;
+}
+
+.hint--bottom-right:hover:before {
+    -webkit-transform: translateY(8px);
+    -moz-transform: translateY(8px);
+    transform: translateY(8px);
+}
+
+.hint--bottom-right:hover:after {
+    -webkit-transform: translateY(8px);
+    -moz-transform: translateY(8px);
+    transform: translateY(8px);
+}
+
+//Defines tooltip sizes.
+.hint--small:after,
+.hint--medium:after,
+.hint--large:after {
+    white-space: normal;
+    line-height: 1.4em;
+    word-wrap: break-word;
+}
+
+.hint--small:after {
+    width: 80px;
+}
+
+.hint--medium:after {
+    width: 150px;
+}
+
+.hint--large:after {
+    width: 300px;
+}
+
+//Defines a basic theme.
+[class*="hint--"] {
+    /**
+	 * tooltip body
+	 */
+}
+
+[class*="hint--"]:after {
+    box-shadow: $light-box-shadow;
+}
+
+//Defines a primary tooltip.
+.hint--primary:after {
+    background-color: $primary;
+}
+
+.hint--primary.hint--top-left:before {
+    border-top-color: $primary;
+}
+
+.hint--primary.hint--top-right:before {
+    border-top-color: $primary;
+}
+
+.hint--primary.hint--top:before {
+    border-top-color: $primary;
+}
+
+.hint--primary.hint--bottom-left:before {
+    border-bottom-color: $primary;
+}
+
+.hint--primary.hint--bottom-right:before {
+    border-bottom-color: $primary;
+}
+
+.hint--primary.hint--bottom:before {
+    border-bottom-color: $primary;
+}
+
+.hint--primary.hint--left:before {
+    border-left-color: $primary;
+}
+
+.hint--primary.hint--right:before {
+    border-right-color: $primary;
+}
+
+//Defines an error tooltip.
+.hint--error:after {
+    background-color: $danger;
+}
+
+.hint--error.hint--top-left:before {
+    border-top-color: $danger;
+}
+
+.hint--error.hint--top-right:before {
+    border-top-color: $danger;
+}
+
+.hint--error.hint--top:before {
+    border-top-color: $danger;
+}
+
+.hint--error.hint--bottom-left:before {
+    border-bottom-color: $danger;
+}
+
+.hint--error.hint--bottom-right:before {
+    border-bottom-color: $danger;
+}
+
+.hint--error.hint--bottom:before {
+    border-bottom-color: $danger;
+}
+
+.hint--error.hint--left:before {
+    border-left-color: $danger;
+}
+
+.hint--error.hint--right:before {
+    border-right-color: $danger;
+}
+
+//Defines a warning tooltip.
+.hint--warning:after {
+    background-color: $warning;
+}
+
+.hint--warning.hint--top-left:before {
+    border-top-color: $warning;
+}
+
+.hint--warning.hint--top-right:before {
+    border-top-color: $warning;
+}
+
+.hint--warning.hint--top:before {
+    border-top-color: $warning;
+}
+
+.hint--warning.hint--bottom-left:before {
+    border-bottom-color: $warning;
+}
+
+.hint--warning.hint--bottom-right:before {
+    border-bottom-color: $warning;
+}
+
+.hint--warning.hint--bottom:before {
+    border-bottom-color: $warning;
+}
+
+.hint--warning.hint--left:before {
+    border-left-color: $warning;
+}
+
+.hint--warning.hint--right:before {
+    border-right-color: $warning;
+}
+
+//Defines an info tooltip.
+.hint--info:after {
+    background-color: $info;
+}
+
+.hint--info.hint--top-left:before {
+    border-top-color: $info;
+}
+
+.hint--info.hint--top-right:before {
+    border-top-color: $info;
+}
+
+.hint--info.hint--top:before {
+    border-top-color: $info;
+}
+
+.hint--info.hint--bottom-left:before {
+    border-bottom-color: $info;
+}
+
+.hint--info.hint--bottom-right:before {
+    border-bottom-color: $info;
+}
+
+.hint--info.hint--bottom:before {
+    border-bottom-color: $info;
+}
+
+.hint--info.hint--left:before {
+    border-left-color: $info;
+}
+
+.hint--info.hint--right:before {
+    border-right-color: $info;
+}
+
+//Defines a success tooltip.
+.hint--success:after {
+    background-color: $success;
+}
+
+.hint--success.hint--top-left:before {
+    border-top-color: $success;
+}
+
+.hint--success.hint--top-right:before {
+    border-top-color: $success;
+}
+
+.hint--success.hint--top:before {
+    border-top-color: $success;
+}
+
+.hint--success.hint--bottom-left:before {
+    border-bottom-color: $success;
+}
+
+.hint--success.hint--bottom-right:before {
+    border-bottom-color: $success;
+}
+
+.hint--success.hint--bottom:before {
+    border-bottom-color: $success;
+}
+
+.hint--success.hint--left:before {
+    border-left-color: $success;
+}
+
+.hint--success.hint--right:before {
+    border-right-color: $success;
+}
+
+
+//Defines a light tooltip.
+.hint--light:after {
+    background-color: $white;
+    color: $dark-text !important;
+    box-shadow: 0px 5px 15px 0px rgba(39, 26, 54,0.15);
+}
+
+.hint--light.hint--top-left:before {
+    border-top-color: $white;
+}
+
+.hint--light.hint--top-right:before {
+    border-top-color: $white;
+}
+
+.hint--light.hint--top:before {
+    border-top-color: $white;
+}
+
+.hint--light.hint--bottom-left:before {
+    border-bottom-color: $white;
+}
+
+.hint--light.hint--bottom-right:before {
+    border-bottom-color: $white;
+}
+
+.hint--light.hint--bottom:before {
+    border-bottom-color: $white;
+}
+
+.hint--light.hint--left:before {
+    border-left-color: $white;
+}
+
+.hint--light.hint--right:before {
+    border-right-color: $white;
+}
+
+//Defines a bubble shape tooltip.
+.hint--bubble:after {
+    //background-color: $primary;
+    border-radius: 100px !important;
+    font-size: .6rem !important;
+    text-transform: uppercase !important;
+}
+
+.hint--bubble.hint--top-left:before {
+    display: none;
+}
+
+.hint--bubble.hint--top-right:before {
+    display: none;
+}
+
+.hint--bubble.hint--top:before {
+    display: none;
+}
+
+.hint--bubble.hint--bottom-left:before {
+    display: none;
+}
+
+.hint--bubble.hint--bottom-right:before {
+    display: none;
+}
+
+.hint--bubble.hint--bottom:before {
+    display: none;
+}
+
+.hint--bubble.hint--left:before {
+    display: none;
+}
+
+.hint--bubble.hint--right:before {
+    display: none;
+}
+
+//Defines a persisted tooltip which shows always.
+.hint--always:after, .hint--always:before {
+    opacity: 1;
+    visibility: visible;
+}
+
+.hint--always.hint--top:before {
+    -webkit-transform: translateY(-8px);
+    -moz-transform: translateY(-8px);
+    transform: translateY(-8px);
+}
+
+.hint--always.hint--top:after {
+    -webkit-transform: translateX(-50%) translateY(-8px);
+    -moz-transform: translateX(-50%) translateY(-8px);
+    transform: translateX(-50%) translateY(-8px);
+}
+
+.hint--always.hint--top-left:before {
+    -webkit-transform: translateY(-8px);
+    -moz-transform: translateY(-8px);
+    transform: translateY(-8px);
+}
+
+.hint--always.hint--top-left:after {
+    -webkit-transform: translateX(-100%) translateY(-8px);
+    -moz-transform: translateX(-100%) translateY(-8px);
+    transform: translateX(-100%) translateY(-8px);
+}
+
+.hint--always.hint--top-right:before {
+    -webkit-transform: translateY(-8px);
+    -moz-transform: translateY(-8px);
+    transform: translateY(-8px);
+}
+
+.hint--always.hint--top-right:after {
+    -webkit-transform: translateY(-8px);
+    -moz-transform: translateY(-8px);
+    transform: translateY(-8px);
+}
+
+.hint--always.hint--bottom:before {
+    -webkit-transform: translateY(8px);
+    -moz-transform: translateY(8px);
+    transform: translateY(8px);
+}
+
+.hint--always.hint--bottom:after {
+    -webkit-transform: translateX(-50%) translateY(8px);
+    -moz-transform: translateX(-50%) translateY(8px);
+    transform: translateX(-50%) translateY(8px);
+}
+
+.hint--always.hint--bottom-left:before {
+    -webkit-transform: translateY(8px);
+    -moz-transform: translateY(8px);
+    transform: translateY(8px);
+}
+
+.hint--always.hint--bottom-left:after {
+    -webkit-transform: translateX(-100%) translateY(8px);
+    -moz-transform: translateX(-100%) translateY(8px);
+    transform: translateX(-100%) translateY(8px);
+}
+
+.hint--always.hint--bottom-right:before {
+    -webkit-transform: translateY(8px);
+    -moz-transform: translateY(8px);
+    transform: translateY(8px);
+}
+
+.hint--always.hint--bottom-right:after {
+    -webkit-transform: translateY(8px);
+    -moz-transform: translateY(8px);
+    transform: translateY(8px);
+}
+
+.hint--always.hint--left:before {
+    -webkit-transform: translateX(-8px);
+    -moz-transform: translateX(-8px);
+    transform: translateX(-8px);
+}
+
+.hint--always.hint--left:after {
+    -webkit-transform: translateX(-8px);
+    -moz-transform: translateX(-8px);
+    transform: translateX(-8px);
+}
+
+.hint--always.hint--right:before {
+    -webkit-transform: translateX(8px);
+    -moz-transform: translateX(8px);
+    transform: translateX(8px);
+}
+
+.hint--always.hint--right:after {
+    -webkit-transform: translateX(8px);
+    -moz-transform: translateX(8px);
+    transform: translateX(8px);
+}
+
+//Defines slightly rounded corner tooltips.
+.hint--rounded:after {
+    border-radius: 4px;
+}
+
+//Defines various transition effects for the tooltips.
+.hint--no-animate:before, .hint--no-animate:after {
+    -webkit-transition-duration: 0ms;
+    -moz-transition-duration: 0ms;
+    transition-duration: 0ms;
+}
+
+.hint--bounce:before, .hint--bounce:after {
+    -webkit-transition: opacity 0.3s ease, visibility 0.3s ease, -webkit-transform 0.3s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+    -moz-transition: opacity 0.3s ease, visibility 0.3s ease, -moz-transform 0.3s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+}
+
+.hint--no-shadow:before, .hint--no-shadow:after {
+    text-shadow: initial;
+    box-shadow: initial;
+}
+
+
+/* ==========================================================================
+2. CSS Tooltips Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .hint--top-left:not(.hint--light):not(.hint--info):not(.hint--success):not(.hint--warning):not(.hint--error):not(.hint--bubble):not(.hint--primary) {
+            &:after {
+                background: darken($dark-sidebar, 4%) !important;
+            }
+
+            &:before {
+                border-top-color: darken($dark-sidebar, 4%);
+            }
+        }
+        
+        .hint--top-right:not(.hint--light):not(.hint--info):not(.hint--success):not(.hint--warning):not(.hint--error):not(.hint--bubble):not(.hint--primary) {
+            &:after {
+                background: darken($dark-sidebar, 4%) !important;
+            }
+            
+            &:before {
+                border-top-color: darken($dark-sidebar, 4%);
+            }
+        }
+        
+        .hint--top:not(.hint--light):not(.hint--info):not(.hint--success):not(.hint--warning):not(.hint--error):not(.hint--bubble):not(.hint--primary) {
+            &:after {
+                background: darken($dark-sidebar, 4%) !important;
+            }
+            
+            &:before {
+                border-top-color: darken($dark-sidebar, 4%);
+            }
+        }
+        
+        .hint--bottom-left:not(.hint--light):not(.hint--info):not(.hint--success):not(.hint--warning):not(.hint--error):not(.hint--bubble):not(.hint--primary) {
+            &:after {
+                background: darken($dark-sidebar, 4%) !important;
+            }
+            
+            &:before {
+                border-bottom-color: darken($dark-sidebar, 4%);
+            }
+        }
+        
+        .hint--bottom-right:not(.hint--light):not(.hint--info):not(.hint--success):not(.hint--warning):not(.hint--error):not(.hint--bubble):not(.hint--primary) {
+            &:after {
+                background: darken($dark-sidebar, 4%) !important;
+            }
+            
+            &:before {
+                border-bottom-color: darken($dark-sidebar, 4%);
+            }
+        }
+        
+        .hint--bottom:not(.hint--light):not(.hint--info):not(.hint--success):not(.hint--warning):not(.hint--error):not(.hint--bubble):not(.hint--primary) {
+            &:after {
+                background: darken($dark-sidebar, 4%) !important;
+            }
+            
+            &:before {
+                border-bottom-color: darken($dark-sidebar, 4%);
+            }
+        }
+        
+        .hint--left:not(.hint--light):not(.hint--info):not(.hint--success):not(.hint--warning):not(.hint--error):not(.hint--bubble):not(.hint--primary) {
+            &:after {
+                background: darken($dark-sidebar, 4%) !important;
+            }
+            
+            &:before {
+                border-left-color: darken($dark-sidebar, 4%);
+            }
+        }
+        
+        .hint--right:not(.hint--light):not(.hint--info):not(.hint--success):not(.hint--warning):not(.hint--error):not(.hint--bubble):not(.hint--primary) {
+            &:after {
+                background: darken($dark-sidebar, 4%) !important;
+            }
+            
+            &:before {
+                border-right-color: darken($dark-sidebar, 4%);
+            }
+        }
+
+        .hint--primary:after {
+            background-color: $accent;
+        }
+        
+        .hint--primary.hint--top-left:before {
+            border-top-color: $accent;
+        }
+        
+        .hint--primary.hint--top-right:before {
+            border-top-color: $accent;
+        }
+        
+        .hint--primary.hint--top:before {
+            border-top-color: $accent;
+        }
+        
+        .hint--primary.hint--bottom-left:before {
+            border-bottom-color: $accent;
+        }
+        
+        .hint--primary.hint--bottom-right:before {
+            border-bottom-color: $accent;
+        }
+        
+        .hint--primary.hint--bottom:before {
+            border-bottom-color: $accent;
+        }
+        
+        .hint--primary.hint--left:before {
+            border-left-color: $accent;
+        }
+        
+        .hint--primary.hint--right:before {
+            border-right-color: $accent;
+        }
+    }
+}

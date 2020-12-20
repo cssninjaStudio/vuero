@@ -1,0 +1,705 @@
+/*! _table.scss | Huro | Css ninja 2020-2021 */
+
+/*
+    1. Flex Table
+    2. Flex Table Dark mode
+    3. Table Pagination
+    4. Table Pagination Dark mode
+    5. Flex Table Advanced wrapper
+    6. Flex Table Advanced wrapper Dark mode
+    7. Bulma Table
+    8. Bulma Table Dark mode
+    9. Media Queries
+*/
+
+/* ==========================================================================
+1. Flex Table
+========================================================================== */
+
+.flex-table {
+    &.is-compact {
+        .flex-table-item {
+            margin-bottom: 0;
+            border-radius: 0;
+
+            &:not(:last-child) {
+                border-bottom: none;
+            }
+
+            &:nth-child(2) {
+                border-radius: 8px 8px 0 0;
+            }
+
+            &:last-child {
+                margin-bottom: 6px;
+                border-radius: 0 0 8px 8px;
+            }
+        }
+    }
+
+    .flex-table-header {
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+
+        span {
+            flex: 1 1 0px;
+            display: flex;
+            align-items: center;
+            font-size: .8rem;
+            font-weight: 600;
+            color: $muted-grey;
+            text-transform: uppercase;
+            padding: 0 10px 10px 10px;
+
+            &.is-checkbox {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 30px;
+                max-width: 30px;
+
+                .checkbox {
+                    padding: 0;
+
+                    > span {
+                        height: 22px;
+                    }
+                }
+            }
+
+            &.cell-center {
+                justify-content: center;
+            }
+
+            &.cell-end {
+                justify-content: flex-end;
+            }
+
+            &.is-grow {
+                flex-grow: 2;
+            }
+
+            &.is-grow-lg {
+                flex-grow: 3;
+            }
+        }
+    }
+
+    .flex-table-item {
+        display: flex;
+        align-items: stretch;
+        width: 100%;
+        min-height: 60px;
+        background: $white;
+        border-radius: 8px;
+        border: 1px solid darken($fade-grey, 3%);
+        padding: 8px;
+        margin-bottom: 6px;
+
+        &.is-row {
+            border: none;
+            background: transparent;
+        }
+
+        .flex-table-cell {
+            flex: 1 1 0px;
+            display: flex;
+            align-items: center;
+            padding: 0 10px;
+            font-family: $font;
+
+            &.is-grow {
+                flex-grow: 2;
+            }
+
+            &.cell-center {
+                justify-content: center;
+            }
+
+            &.cell-end {
+                justify-content: flex-end;
+
+                .button {
+                    &.has-dot {
+                        .dot {
+                            position: relative;
+                            top: 1px;
+                            font-size: 4px;
+                            margin: 0 6px;
+                        }
+                    }
+                }
+
+                .action-link {
+                    font-size: .9rem;
+                }
+            }
+
+            &.is-bold {
+                > span {
+                    font-family: $font-alt;
+                    font-size: .9rem;
+                    font-weight: 600;
+                }
+            }
+
+            &.is-checkbox {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 30px;
+                max-width: 30px;
+
+                .checkbox {
+                    padding: 0;
+                    margin-left: 4px;
+                }
+            }
+
+            &.is-user, &.is-media {
+                padding-left: 0;
+
+                &.is-grow {
+                    flex-grow: 2;
+                }
+
+                &.is-grow-lg {
+                    flex-grow: 3;
+                }
+
+                > div span:not(.avatar) {
+                    display: block;
+                    margin-left: 10px;
+                }
+
+                > div {
+                    line-height: 1.2;
+
+                    .item-name {
+                        font-family: $font-alt;
+                        font-size: .9rem;
+                        font-weight: 600;
+                        color: $dark;
+                    }
+
+                    .item-meta {
+                        color: $light-text;
+
+                        svg {
+                            position: relative;
+                            top: 2px;
+                            height: 14px;
+                            width: 14px;
+                            stroke-width: 1.6px;
+                            margin-right: 4px;
+                        }
+
+                        span {
+                            display: inline-block;
+                            margin-left: 0;
+                            font-size: .9rem;
+                        }
+
+                        .flex-media {
+                            margin-left: 10px;
+                            margin-top: 4px;
+
+                            .h-avatar {
+                                width: 26px !important;
+                                min-width: 26px !important;
+                                height: 26px !important;
+
+                                .avatar {
+                                    width: 26px !important;
+                                    min-width: 26px !important;
+                                    height: 26px !important;
+                                }
+                            }
+                        }
+
+                        .separator {
+                            padding: 0 8px;
+                        }
+                    }
+                }
+
+                .h-avatar {
+                    .avatar.is-fake {
+                        span {
+                            margin: 0;
+                        }
+                    }
+                }
+
+                .media {
+                    display: block;
+                    width: 100%;
+                    max-width: 130px;
+                    min-height: 95px;
+                    object-fit: cover;
+                    border-radius: 8px;
+                }
+
+                .cell-image {
+                    display: block;
+                    width: 100%;
+                    max-width: 80px;
+
+                    &.is-mini {
+                        max-width: 40px;
+                    }
+                }
+            }
+
+            .cell-icon {
+                margin-right: 4px;
+                color: $light-text;
+            }
+
+            .tag {
+                margin-bottom: 0 !important;
+                line-height: 1.8;
+                height: 1.8em;
+            }
+
+            .flex-media {
+                display: flex;
+                align-items: center;
+
+                .meta {
+                    margin-left: 6px;
+                    line-height: 1.3;
+
+                    span {
+                        display: block !important;
+                        font-size: .8rem;
+                        color: $light-text;
+                        font-family: $font;
+                    }
+                }
+            }
+
+            .dot-levels {
+                display: flex;
+                align-items: center;
+
+                .dot {
+                    font-size: 8px;
+                    color: lighten($light-text, 6%);
+                    margin: 0 6px;
+
+                    &.active {
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+2. Flex Table Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .flex-table {
+            .flex-table-item {
+                background: lighten($dark-sidebar, 6%);
+                border-color: lighten($dark-sidebar, 12%);
+
+                .flex-table-cell {
+                    &.is-user, &.is-media {
+                        .h-avatar {
+                            .badge {
+                                border-color: lighten($dark-sidebar, 6%) !important;
+                            }
+                        }
+                    }
+
+                    &.cell-end {
+                        .button {
+                            &.dark-outlined {
+                                &:hover {
+                                    border-color: $accent !important;
+                                    color: $accent !important;
+                                }
+                            }
+                        }
+                    }
+
+                    .dark-text {
+                        color: $dark-dark-text !important;
+                    }
+
+                    .avatar-stack {
+                        .h-avatar {
+                            border-color: lighten($dark-sidebar, 6%);
+
+                            .is-more {
+                                .inner {
+                                    border-color: lighten($dark-sidebar, 6%) !important;
+                                }
+                            }
+                        }
+                    }
+
+                    .dot-levels {
+                        .dot {
+                            &.active {
+                                color: $accent;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+3. Table Pagination
+========================================================================== */
+
+.flex-pagination {
+    padding: 12px 0;
+
+    .pagination-next, .pagination-previous {
+        background: $white;
+        min-width: 85px;
+
+        &.has-chevron {
+            min-width: 55px;
+
+            svg {
+                height: 16px;
+                width: 16px;
+                stroke-width: 3px;
+                stroke: $primary;
+            }
+        }
+    }
+
+    .pagination-list {
+        li {
+            .pagination-link {
+                background: $white;
+                font-family: $font;
+                font-size: .9em;
+
+                &.is-current {
+                    background: $primary;
+                    border-color: $primary;
+                    box-shadow: $primary-box-shadow;
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+4. Table Pagination Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .flex-pagination {
+            .pagination-next, .pagination-previous {
+                background: lighten($dark-sidebar, 2%);
+                border-color: lighten($dark-sidebar, 4%);
+                color: $dark-dark-text;
+
+                svg {
+                    stroke: $accent;
+                }
+            }
+
+            .pagination-list {
+                li {
+                    .pagination-link {
+                        background: lighten($dark-sidebar, 2%);
+                        border-color: lighten($dark-sidebar, 4%);
+                        color: $dark-dark-text;
+
+                        &.is-current {
+                            background: $accent;
+                            color: $smoke-white;
+                            border-color: $accent;
+                            box-shadow: $accent-box-shadow;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+5. Flex Table advanced wrapper
+========================================================================== */
+
+.flex-table-wrapper {
+    background: $white;
+    border: 1px solid darken($fade-grey, 3%);
+    border-radius: 8px;
+    padding: 20px;
+
+    .flex-table-toolbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+
+    .flex-table {
+        .flex-table-item {
+            margin-bottom: 0;
+            border-radius: 0;
+            border-left: none;
+            border-right: none;
+            border-top: none;
+
+            &:last-child {
+                margin-bottom: 6px;
+                border-bottom: none;
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+6. Flex Table advanced wrapper Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .flex-table-wrapper {
+            background: lighten($dark-sidebar, 6%);
+            border-color: lighten($dark-sidebar, 12%);
+        }
+    }
+}
+
+/* ==========================================================================
+7. Bulma Table
+========================================================================== */
+
+.demo-table {
+    margin-bottom: 3rem;
+}
+
+.table {
+    tbody {
+        th {
+            font-family: $font;
+            color: $dark-text;
+
+            &.is-media {
+                width: 40px;
+            }
+
+            &.is-end {
+                > div {
+                    display: flex;
+                    justify-content: flex-end;
+                }
+            }
+        }
+
+        td {
+            font-family: $font;
+            vertical-align: middle;
+
+            &:not(:first-child) {
+                color: $light-text;
+            }
+
+            &.is-media {
+                width: 40px;
+            }
+
+            &.is-end {
+                > div {
+                    display: flex;
+                    justify-content: flex-end;
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+8. Bulma Table Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .table {
+            background: lighten($dark-sidebar, 6%);
+            border-color: lighten($dark-sidebar, 12%);
+
+            &.is-hoverable {
+                tr:not(.is-selected) {
+                    &:hover {
+                        background: lighten($dark-sidebar, 9%);
+                    }
+                }
+            }
+
+            &.is-striped {
+                tr:not(.is-selected) {
+                    &:nth-child(even) {
+                        background: lighten($dark-sidebar, 9%);
+                    }
+                }
+            }
+
+            tbody {
+                th, td {
+                    border-color: lighten($dark-sidebar, 12%);
+                }
+
+                th {
+                    color: $dark-dark-text;
+                }
+
+                td {
+                    &:first-child {
+                        color: $dark-dark-text;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+9. Media Queries
+========================================================================== */
+
+@media (max-width: 767px) {
+    .flex-table-wrapper {
+        .flex-table-toolbar {
+            margin-bottom: 10px;
+
+            .left {
+                flex-grow: 2;
+            }
+
+            .right {
+                display: none;
+            }
+        }
+
+        .flex-table {
+            .flex-table-header {
+                .is-checkbox {
+                    display: none;
+                }
+            }
+
+            .flex-table-item {
+                padding-left: 0;
+                padding-right: 0;
+
+                .is-checkbox {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .flex-table {
+        .flex-table-header {
+            display: none;
+        }
+
+        .flex-table-cell {
+            position: relative;
+            margin-bottom: 12px;
+
+            &:before {
+                content: attr(data-th);
+                font-size: .9rem;
+                text-transform: uppercase;
+                font-weight: 500;
+                color: $muted-grey;
+            }
+
+            &.no-label-mobile {
+                &:before {
+                    display: none !important;
+                }
+            }
+
+            &.cell-end {
+                justify-content: flex-start !important;
+
+                .btn-group {
+                    margin-left: auto;
+                }
+            }
+
+            &.is-user {
+                span {
+                    font-size: 1.2rem;
+                }
+            }
+
+            > span, > .is-pushed-mobile {
+                margin-left: auto;
+
+                &.no-push {
+                    margin-left: 0 !important;
+                }
+            }
+        }
+
+        .flex-table-item {
+            flex-direction: column;
+            justify-content: center;
+            width: 100% !important;
+            padding: 20px;
+            margin-bottom: 16px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            > div {
+                border: none !important;
+            }
+        }
+    }
+
+    .pagination-next, .pagination-previous {
+        &.has-chevron {
+            min-width: 55px;
+            max-width: 55px;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    .flex-table {
+        .flex-table-cell {
+            &.is-user {
+                img {
+                    min-width: 50px;
+                }
+            }
+        }
+    }
+
+    .pagination-next, .pagination-previous {
+        &.has-chevron {
+            min-width: 55px;
+            max-width: 55px;
+        }
+    }
+
+    .pagination-next {
+        margin-right: auto;
+    }
+}

@@ -1,0 +1,589 @@
+/*! _grid-users.scss | Huro | Css ninja 2020-2021 */
+
+/*
+    1. Users Grid Toolbar
+    2. Users Grid V1 and V2 shared styles
+    3. Users Grid V2
+*/
+
+/* ==========================================================================
+1. Users Grid Toolbar
+========================================================================== */
+
+.user-grid-toolbar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    &.is-webapp {
+        padding-top: 30px;
+        margin: 0 auto 20px auto;
+
+        &.flex-list-v1 {
+            max-width: 880px;
+        }
+
+        &.flex-list-v2 {
+            max-width: 940px;
+        }
+    }
+
+    &.is-reversed {
+        flex-direction: row-reverse;
+
+        .control {
+            margin-right: 0;
+            margin-left: auto;
+        }
+
+        .tabs-inner {
+            margin-right: 10px;
+            margin-left: 0;
+        }
+    }
+
+    .control {
+        margin-right: 10px;
+    }
+
+    .list-info {
+        span {
+            font-family: $font;
+            color: $light-text;
+        }
+    }
+
+    .buttons {
+        margin-left: auto;
+        margin-bottom: 0;
+
+        .field, .h-button {
+            margin-bottom: 0;
+
+            .h-select {
+                min-width: 190px;
+            }
+        }
+    }
+
+    .tabs-inner {
+        margin-left: auto;
+
+        .tabs {
+            margin-bottom: 0;
+            min-width: 170px;
+        }
+    }
+}
+
+/* ==========================================================================
+2. Users Grid V1 and V2 shared styles
+========================================================================== */
+
+.user-grid {
+    &.user-grid-v1, &.user-grid-v2 {
+        .columns {
+            margin-left: -.5rem !important;
+            margin-right: -.5rem !important;
+            margin-top: -.5rem !important;
+        }
+
+        .column {
+            padding: .5rem !important;
+        }
+
+        .grid-item {
+            @extend .s-card;
+
+            text-align: center;
+
+            > .h-avatar {
+                display: block;
+                margin: 0 auto 4px auto;
+            }
+
+            h3 {
+                font-family: $font-alt;
+                font-size: 1.1rem;
+                font-weight: 600;
+                color: $dark-text;
+            }
+
+            p {
+                font-size: .85rem;
+            }
+
+            .people {
+                display: flex;
+                justify-content: center;
+                padding: 8px 0 30px 0;
+
+                .h-avatar {
+                    margin: 0 4px;
+                }
+            }
+
+            .buttons {
+                display: flex;
+                justify-content: space-between;
+
+                .button {
+                    width: calc(50% - 4px);
+                    color: $light-text;
+
+                    &:hover {
+                        border-color: darken($fade-grey, 4%);
+                        color: $primary;
+                        box-shadow: $light-box-shadow;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+2. Users Grid V2
+========================================================================== */
+
+.user-grid {
+    &.user-grid-v2 {
+        .grid-item-wrap {
+            border: 1px solid darken($fade-grey, 3%);
+            border-radius: 6px;
+            transition: all .3s;
+
+            .grid-item-head {
+                background: #fafafa;
+                border-radius: 6px 6px 0 0;
+                padding: 20px;
+
+                .flex-head {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-bottom: 12px;
+
+                    .meta {
+                        span {
+                            display: flex;
+
+                            &:first-child {
+                                font-family: $font-alt;
+                                font-weight: 600;
+                                font-size: .95rem;
+                                color: $dark-text;
+                            }
+
+                            &:nth-child(2) {
+                                font-size: .9rem;
+                                color: $light-text;
+                            }
+                        }
+                    }
+
+                    .status-icon {
+                        height: 28px;
+                        width: 28px;
+                        min-width: 28px;
+                        border-radius: 50%;
+                        border: 1px solid darken($fade-grey, 3%);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        &.is-success {
+                            background: $success;
+                            border-color: $success;
+                            color: $white;
+                        }
+
+                        &.is-warning {
+                            background: $h-orange;
+                            border-color: $h-orange;
+                            color: $white;
+                        }
+
+                        &.is-danger {
+                            background: $danger;
+                            border-color: $danger;
+                            color: $white;
+                        }
+
+                        i {
+                            font-size: 8px;
+                        }
+                    }
+                }
+
+                .buttons {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 0;
+
+                    .button, .h-button {
+                        width: calc(50% - 4px);
+                        color: $light-text;
+                        margin-bottom: 0;
+
+                        &:hover {
+                            border-color: darken($fade-grey, 4%);
+                            color: $primary;
+                            box-shadow: $light-box-shadow;
+                        }
+                    }
+                }
+            }
+
+            .grid-item {
+                border-top-left-radius: 0;
+                border-top-right-radius: 0;
+                border: none;
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+3. Users Grid V2 Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .user-grid {
+            &.user-grid-v2 {
+                .grid-item-wrap {
+                    border-color: lighten($dark-sidebar, 12%);
+
+                    .grid-item-head {
+                        background: lighten($dark-sidebar, 4%);
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+4. Users Grid V3
+========================================================================== */
+
+.user-grid {
+    &.user-grid-v3 {
+        .columns {
+            margin-left: -.5rem !important;
+            margin-right: -.5rem !important;
+            margin-top: -.5rem !important;
+        }
+
+        .column {
+            padding: .5rem !important;
+        }
+
+        .grid-item {
+            @extend .s-card;
+
+            text-align: center;
+
+            > .h-avatar {
+                display: block;
+                margin: 0 auto 4px auto;
+            }
+
+            h3 {
+                font-family: $font-alt;
+                font-size: 1.1rem;
+                font-weight: 600;
+                color: $dark-text;
+            }
+
+            p {
+                font-size: .85rem;
+                margin-bottom: 16px;
+            }
+
+            .icon-tabs-wrapper {
+                padding-bottom: 20px;
+
+                .icon-tabs {
+                    width: 100%;
+                    max-width: 180px;
+                    margin: 0 auto;
+                    border: 1px solid darken($fade-grey, 4%);
+                    border-radius: 8px;
+                    background: $white;
+                    box-shadow: $light-box-shadow;
+                    margin-bottom: 16px;
+
+                    .icon-tabs-inner {
+                        position: relative;
+                        display: flex;
+                        width: 100%;
+
+                        .tab-item {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 33.3%;
+                            color: $light-text;
+                            padding: 4px 8px;
+                            margin: 8px 0;
+
+                            &:nth-child(2) {
+                                border-left: 1px solid darken($fade-grey, 4%);
+                                border-right: 1px solid darken($fade-grey, 4%);
+                            }
+
+                            &.is-active {
+                                color: $primary;
+                            }
+
+                            &:first-child {
+                                &.is-active ~ .icon-tabs-naver {
+                                    margin-left: 0;
+                                }
+                            }
+
+                            &:nth-child(2) {
+                                &.is-active ~ .icon-tabs-naver {
+                                    margin-left: 33% !important;
+                                }
+                            }
+
+                            &:nth-child(3) {
+                                &.is-active ~ .icon-tabs-naver {
+                                    margin-left: 66.6%;
+                                }
+                            }
+
+                            svg {
+                                pointer-events: none;
+                                height: 16px;
+                                width: 16px;
+                                stroke-width: 1.6px;
+                            }
+                        }
+
+                        .icon-tabs-naver {
+                            position: absolute;
+                            bottom: -1px;
+                            left: 0;
+                            display: block;
+                            width: 33.3% !important;
+                            height: 2px;
+                            background: $primary;
+                            z-index: 1;
+                            transition: all .3s;
+                            border-radius: 12px;
+                        }
+                    }
+                }
+
+                .icon-tabs-content {
+                    display: none;
+                    animation: fadeInLeft .5s;
+                    padding-top: 16px;
+
+                    &.is-active {
+                        display: block;
+                    }
+                }
+
+                .chart-block {
+                    display: flex;
+                    justify-content: space-between;
+                    max-width: 165px;
+                    margin: 0 auto;
+
+                    .stats {
+                        span {
+                            display: block;
+
+                            &:first-child {
+                                font-family: $font;
+                                font-size: 1.8rem;
+                                color: $dark-text;
+                                font-weight: 700;
+                                line-height: 1;
+                            }
+
+                            &:nth-child(2) {
+                                font-family: $font-alt;
+                                color: $light-text;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .buttons {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 0;
+
+                .button, .h-button {
+                    width: calc(50% - 4px);
+                    color: $light-text;
+                    margin-bottom: 0;
+
+                    &:hover {
+                        border-color: darken($fade-grey, 4%);
+                        color: $primary;
+                        box-shadow: $light-box-shadow;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+5. Users Grid V3 Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .user-grid {
+            &.user-grid-v3 {
+                .grid-item {
+                    .icon-tabs-wrapper {
+                        .icon-tabs {
+                            background: lighten($dark-sidebar, 2%);
+                            border-color: lighten($dark-sidebar, 10%);
+
+                            .icon-tabs-inner {
+                                .tab-item {
+                                    border-color: lighten($dark-sidebar, 10%);
+
+                                    &.is-active {
+                                        color: $accent;
+                                    }
+                                }
+
+                                .icon-tabs-naver {
+                                    background: $accent;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+6. Users Grid V4
+========================================================================== */
+
+.user-grid {
+    &.user-grid-v4 {
+        .columns {
+            margin-left: -.5rem !important;
+            margin-right: -.5rem !important;
+            margin-top: -.5rem !important;
+        }
+
+        .column {
+            padding: .5rem !important;
+        }
+
+        .grid-item {
+            position: relative;
+            @extend .s-card;
+
+            text-align: center;
+
+            &:hover {
+                .button-wrap {
+                    > div {
+                        a {
+                            opacity: 1;
+                            pointer-events: all;
+                        }
+                    }
+                }
+            }
+
+            .dropdown {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                text-align: left;
+            }
+
+            > .h-avatar {
+                display: block;
+                margin: 0 auto 4px auto;
+            }
+
+            h3 {
+                font-family: $font-alt;
+                font-size: 1.1rem;
+                font-weight: 600;
+                color: $dark-text;
+            }
+
+            p {
+                font-size: .85rem;
+            }
+
+            .button-wrap {
+                margin: 20px 0 0 0;
+
+                .h-button {
+                    width: 100%;
+                    max-width: 140px;
+                    margin: 0 auto;
+                }
+
+                > div {
+                    margin: 6px 0 0 0;
+
+                    a {
+                        opacity: 0;
+                        pointer-events: none;
+                        color: $light-text;
+                        font-weight: 500;
+                        font-size: .9rem;
+                        transition: opacity .3s, color .3s;
+
+                        &:hover {
+                            color: $primary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+7. Media Queries
+========================================================================== */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    .user-grid {
+        &.user-grid-v1, &.user-grid-v2 {
+            .columns {
+                display: flex;
+
+                .column {
+                    min-width: 50% !important;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .user-grid {
+        &.user-grid-v1, &.user-grid-v2 {
+            .columns {
+                .column {
+                    min-width: 33.3% !important;
+                }
+            }
+        }
+    }
+}

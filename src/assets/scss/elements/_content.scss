@@ -1,0 +1,109 @@
+/*! _content.scss | Huro | Css ninja 2020-2021 */
+
+/*
+    1. Content
+    2. Content Dark mode
+*/
+
+/* ==========================================================================
+1. Content
+========================================================================== */
+
+.content {
+    ol, ul {
+        color: $dark-text;
+        font-family: $font;
+
+        &.is-light {
+            color: $light-text;
+        }
+    }
+
+    blockquote {
+        color: $light-text;
+
+        &.is-primary {
+            border-color: $primary;
+        }
+
+        &.is-success {
+            border-color: $success;
+        }
+
+        &.is-info {
+            border-color: $info;
+        }
+
+        &.is-warning {
+            border-color: $warning;
+        }
+
+        &.is-danger {
+            border-color: $danger;
+        }
+    }
+
+    table {
+        th {
+            color: $dark-text;
+            font-family: $font-alt;
+        }
+
+        td {
+            color: $light-text;
+        }
+    }
+}
+
+
+/* ==========================================================================
+2. Content Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .content {
+            ol, ul {
+                &:not(.is-light) {
+                    color: $dark-dark-text;
+                }
+            }
+
+            blockquote {
+                background: lighten($dark-sidebar, 10%);
+
+                &:not(.is-primary):not(.is-success):not(.is-info):not(.is-warning):not(.is-danger) {
+                    border-color: lighten($dark-sidebar, 2%);
+                }
+
+                &.is-primary {
+                    border-color: $accent;
+                }
+            }
+
+            table {
+                
+                th {
+                    color: $dark-dark-text;
+                    border-color: lighten($dark-sidebar, 14%);
+                }
+
+                td {
+                    border-color: lighten($dark-sidebar, 14%);
+                }
+            }
+        }
+
+        .is-divider, .is-divider-vertical {
+            border-color: lighten($dark-sidebar, 14%);
+
+            &:before {
+                border-color: lighten($dark-sidebar, 14%);
+            }
+
+            &:after {
+                background: lighten($dark-sidebar, 6%);
+            }
+        }
+    }
+}

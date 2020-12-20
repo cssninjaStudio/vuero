@@ -1,0 +1,612 @@
+/*! _grid-cards.scss | Huro | Css ninja 2020-2021 */
+
+/*
+    1. Card Grid Toolbar
+    2. Card Grid V1 
+*/
+
+/* ==========================================================================
+1. Card Grid Toolbar
+========================================================================== */
+
+.card-grid-toolbar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    &.is-webapp {
+        padding-top: 30px;
+        margin: 0 auto 20px auto;
+
+        &.flex-list-v1 {
+            max-width: 880px;
+        }
+
+        &.flex-list-v2 {
+            max-width: 940px;
+        }
+    }
+
+    &.is-reversed {
+        flex-direction: row-reverse;
+
+        .control {
+            margin-right: 0;
+            margin-left: auto;
+        }
+
+        .tabs-inner {
+            margin-right: 10px;
+            margin-left: 0;
+        }
+    }
+
+    .control {
+        margin-right: 10px;
+    }
+
+    .list-info {
+        span {
+            font-family: $font;
+            color: $light-text;
+        }
+    }
+
+    .buttons {
+        margin-left: auto;
+        margin-bottom: 0;
+
+        .field, .h-button {
+            margin-bottom: 0;
+
+            .h-select {
+                min-width: 190px;
+            }
+        }
+    }
+
+    .tabs-inner {
+        margin-left: auto;
+
+        .tabs {
+            margin-bottom: 0;
+            min-width: 170px;
+        }
+    }
+}
+
+/* ==========================================================================
+2. Card Grid V1 
+========================================================================== */
+
+.card-grid {
+    .columns {
+        margin-left: -.5rem !important;
+        margin-right: -.5rem !important;
+        margin-top: -.5rem !important;
+    }
+
+    .column {
+        padding: .5rem !important;
+    }
+}
+
+.card-grid {
+    &.card-grid-v1 {
+        .card-grid-item {
+            flex: 1;
+            display: inline-block;
+            width: 100%;
+            background-color: $white;
+            border-radius: 6px;
+            border: 1px solid darken($fade-grey, 3%);
+            transition: all .3s;
+
+            .card-grid-item-body {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 20px;
+                border-bottom: 1px solid darken($fade-grey, 3%);
+
+                .left {
+                    display: flex;
+                    align-items: center;
+
+                    .meta {
+                        margin-left: 12px;
+                        line-height: 1.3;
+
+                        span {
+                            display: block;
+
+                            &:first-child {
+                                font-size: 1.1rem;
+                                font-weight: 600;
+                                font-family: $font-alt;
+                                color: $dark-text;
+                            }
+
+                            &:nth-child(2) {
+                                font-family: $font;
+                                font-size: .85rem;
+                                color: $light-text;
+                            }
+                        }
+                    }
+                }
+
+                .right {
+                    .social-links {
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-end;
+
+                        .social-link {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            height: 32px;
+                            width: 32px;
+                            min-width: 32px;
+                            border-radius: 50%;
+                            border: 1px solid darken($fade-grey, 3%);
+                            margin: 0 4px;
+                            color: $primary;
+                            box-shadow: $light-box-shadow;
+                            transition: all .3s;
+
+                            &:hover {
+                                color: $white;
+                                background: $primary;
+                                border-color: $primary;
+                                box-shadow: $primary-box-shadow;
+                            }
+
+                            i {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .card-grid-item-footer {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 20px;
+
+                .left {
+                    flex-grow: 2;
+                    max-width: 50%;
+
+                    .progress-stats {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin-bottom: 8px;
+
+                        span {
+                            display: block;
+
+                            &:first-child {
+                                font-family: $font-alt;
+                                font-size: .9rem;
+                                font-weight: 600;
+                                color: $dark-text;
+                            }
+
+                            &:nth-child(2) {
+                                font-size: .9rem;
+                                color: $light-text;
+                            }
+                        }
+                    }
+
+                    .progress {
+                        margin-bottom: 0;
+                    }
+                }
+
+                .right {
+                    .h-button {
+                        color: $light-text;
+
+                        &:hover {
+                            border-color: $primary;
+                            background: $primary;
+                            color: $smoke-white;
+                            box-shadow: $primary-box-shadow;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+3. Card Grid V1 Dark mode 
+========================================================================== */
+
+body {
+    &.is-dark {
+        .card-grid {
+            &.card-grid-v1 {
+                .card-grid-item {
+                    background: lighten($dark-sidebar, 6%);
+                    border-color: lighten($dark-sidebar, 12%);
+
+                    .card-grid-item-body {
+                        border-color: lighten($dark-sidebar, 12%);
+
+                        .left {
+                            .h-avatar {
+                                .badge {
+                                    border-color: lighten($dark-sidebar, 6%);
+                                }
+                            }
+                        }
+
+                        .right {
+                            .social-links {
+                                .social-link {
+                                    background: lighten($dark-sidebar, 2%);
+                                    border-color: lighten($dark-sidebar, 12%);
+                                    color: $dark-dark-text;
+
+                                    &:hover {
+                                        border-color: $accent !important;
+                                        color: $accent !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .card-grid-item-footer {
+                        .right {
+                            .h-button {
+                                box-shadow: none !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+4. Card Grid V2 
+========================================================================== */
+
+.card-grid {
+    &.card-grid-v2 {
+        .card-grid-item {
+            .card {
+                border: 1px solid darken($fade-grey, 4%);
+                box-shadow: none;
+                border-radius: 6px;
+
+                .card-header {
+                    box-shadow: none;
+                    border-bottom: 1px solid darken($fade-grey, 4%);
+
+                    .card-header-title {
+                        display: flex;
+                        align-items: center;
+
+                        .meta {
+                            margin-left: 10px;
+                            line-height: 1.2;
+
+                            span {
+                                display: block;
+                                font-weight: 400;
+
+                                &:first-child {
+                                    font-family: $font-alt;
+                                    font-size: .95rem;
+                                    color: $dark-text;
+                                    font-weight: 600;
+                                }
+
+                                &:nth-child(2) {
+                                    font-size: .9rem;
+                                    color: $light-text;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .card-image {
+                    img {
+                        object-fit: cover;
+                    }
+                }
+
+                .card-content {
+                    border-top: 1px solid darken($fade-grey, 4%);
+                    padding: 1rem;
+
+                    .card-content-flex {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        .card-info {
+                            h3 {
+                                font-family: $font-alt;
+                                font-size: 1rem;
+                                color: $dark-text;
+                                font-weight: 600;
+                            }
+
+                            p {
+                                font-size: .9rem;
+
+                                svg {
+                                    position: relative;
+                                    top: 2px;
+                                    height: 14px;
+                                    width: 14px;
+                                    margin-right: 4px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .card-footer {
+                    a {
+                        font-family: $font;
+                        color: $light-text;
+                        padding: 1rem .75rem;
+                        transition: all .3s;
+
+                        &:hover {
+                            background: lighten($fade-grey, 4%);
+                            color: $primary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+5. Card Grid V2 Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .card-grid {
+            &.card-grid-v2 {
+                .card-grid-item {
+                    border-color: lighten($dark-sidebar, 12%);
+
+                    .card {
+                        background: lighten($dark-sidebar, 6%);
+                        border-color: lighten($dark-sidebar, 12%);
+
+                        .card-header {
+                            border-color: lighten($dark-sidebar, 12%);
+                        }
+
+                        .card-content {
+                            border-color: lighten($dark-sidebar, 12%);
+                        }
+
+                        .card-footer {
+                            border-color: lighten($dark-sidebar, 12%);
+
+                            a {
+                                border-color: lighten($dark-sidebar, 12%);
+
+                                &:hover {
+                                    background: lighten($dark-sidebar, 2%);
+                                    color: $accent;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+5. Card Grid V3 
+========================================================================== */
+
+.card-grid {
+    &.card-grid-v3 {
+        .card-grid-item {
+            @extend .s-card;
+
+            position: relative;
+            text-align: center;
+            padding: 30px;
+
+            .h-toggle {
+                position: absolute;
+                top: 28px;
+                right: 10px;
+                transform: scale(0.85);
+            }
+
+            > .h-avatar {
+                display: block;
+                margin: 0 auto 10px auto;
+                border-radius: 16px;
+
+                .avatar {
+                    object-fit: cover;
+                    border: 1px solid darken($fade-grey, 4%);
+                    box-shadow: $light-box-shadow;
+                }
+
+                .badge {
+                    bottom: 22px;
+                    right: -12px;
+                }
+            }
+
+            > h3 {
+                font-size: 1.1rem;
+                font-weight: 600;
+                font-family: $font-alt;
+                color: $dark-text;
+            }
+
+            > p {
+                font-size: .9rem;
+            }
+
+            .description {
+                padding: 12px 0;
+            }
+
+            .people {
+                display: flex;
+                justify-content: center;
+                padding: 8px 0 30px 0;
+
+                .h-avatar {
+                    margin: 0 4px;
+                }
+            }
+
+            .buttons {
+                display: flex;
+                justify-content: space-between;
+
+                .button {
+                    width: calc(50% - 4px);
+                    color: $light-text;
+
+                    &:hover {
+                        border-color: darken($fade-grey, 4%);
+                        color: $primary;
+                        box-shadow: $light-box-shadow;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+6. Card Grid V4 
+========================================================================== */
+
+.card-grid {
+    &.card-grid-v4 {
+        .card-grid-item {
+            @extend .s-card;
+
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            border-radius: 16px;
+            min-height: 300px;
+
+            &:hover {
+                box-shadow: $light-box-shadow;
+            }
+
+            > img {
+                display: block;
+                border-radius: 12px;
+                width: 100%;
+                height: 160px;
+                object-fit: cover;
+            }
+
+            .card-grid-item-content {
+                padding: 12px 5px;
+
+                h3 {
+                    font-family: $font-alt;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    color: $dark-text;
+                    line-height: 1.3;
+                }
+            }
+
+            .card-grid-item-footer {
+                display: flex;
+                align-items: center;
+                margin-top: auto;
+                padding: 0 5px 10px 5px;
+
+                .meta {
+                    margin-left: 8px;
+                    line-height: 1.2;
+
+                    span {
+                        display: block;
+                        font-weight: 400;
+
+                        &:first-child {
+                            font-family: $font-alt;
+                            font-size: .9rem;
+                            color: $dark-text;
+                            font-weight: 600;
+                        }
+
+                        &:nth-child(2) {
+                            font-family: $font;
+                            font-size: .85rem;
+                            color: $light-text;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .card-grid {
+        &.card-grid-v1 {
+            .card-grid-item {
+                .card-grid-item-body {
+                    flex-direction: column;
+
+                    .left {
+                        flex-direction: column;
+                        text-align: center;
+
+                        .meta {
+                            margin: 5px 0 20px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    .card-grid {
+        &.card-grid-v4 {
+
+            .columns {
+                display: flex;
+            }
+
+            .column {
+                width: 33.3%;
+                min-width: 33.3%;
+            }
+        }
+    }
+}

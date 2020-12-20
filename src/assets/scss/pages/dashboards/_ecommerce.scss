@@ -1,0 +1,132 @@
+/*! _ecommerce.scss | Huro | Css ninja 2020-2021 */
+
+/*
+    1. Ecommerce Dashboard V1
+    2. Ecommerce Dashboard V1 Dark mode
+*/
+
+/* ==========================================================================
+1. Ecommerce Dashboard V1
+========================================================================== */
+
+.ecommerce-dashboard {
+    &.ecommerce-dashboard-v1 {
+
+        .dashboard-header {
+            display: flex;
+            align-items: center;
+            font-family: $font;
+            margin-bottom: 30px;
+
+            .start {
+                margin-left: 12px;
+
+                h3 {
+                    font-family: $font-alt;
+                    font-weight: 600;
+                    font-size: 1.3rem;
+                    color: $dark-text;
+                }
+            }
+
+            .end {
+                margin-left: auto;
+                display: flex;
+                justify-content: flex-end;
+
+                .button {
+                    margin-left: 10px;
+                }
+            }
+        }
+
+        .dashboard-tile {
+            @extend .s-card;
+
+            font-family: $font;
+
+            .tile-head {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                h3 {
+                    font-family: $font-alt;
+                    color: $light-text;
+                    font-size: 1rem;
+                    font-weight: 500;
+                }
+            }
+
+            .dashboard-tile-inner {
+                display: flex;
+                align-items: center;
+
+                .left {
+                    margin-right: 20px;
+
+                    span {
+                        font-size: 1.5rem;
+                        font-weight: 600;
+                        color: $dark-text;
+                    }
+                }
+
+                .right {
+                    flex-grow: 2;
+                }
+            }
+        }
+
+        .table-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-family: $font;
+            margin: 20px 0;
+
+            h3 {
+                font-family: $font-alt;
+                font-size: 1.1rem;
+                font-weight: 700;
+                color: $dark-text;
+            }
+
+            .h-select {
+                .select-box {
+                    border: none;
+                    background: none;
+
+                    span {
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* ==========================================================================
+2. Media Queries
+========================================================================== */
+
+@media only screen and (max-width: 767px) {
+    .ecommerce-dashboard {
+        &.ecommerce-dashboard-v1 {
+            .dashboard-header {
+                text-align: center;
+                flex-direction: column;
+
+                .start {
+                    margin: 10px auto;
+                }
+
+                .end {
+                    margin: 0;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+}

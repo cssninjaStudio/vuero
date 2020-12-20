@@ -22,7 +22,7 @@ export default MediumFormModal
         <header class="modal-card-head">
           <h3>Horizontal Form</h3>
           <button class="h-modal-close ml-auto" aria-label="close">
-            <i data-feather="x"></i>
+            <Icon icon="feather:x" />
           </button>
         </header>
         <div class="modal-card-body">

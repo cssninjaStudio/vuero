@@ -22,14 +22,14 @@ export default LeftActionsModal
         <header class="modal-card-head">
           <h3>Did you know?</h3>
           <button class="h-modal-close ml-auto" aria-label="close">
-            <i data-feather="x"></i>
+            <Icon icon="feather:x" />
           </button>
         </header>
         <div class="modal-card-body">
           <div class="inner-content">
             <div class="section-placeholder">
               <div class="placeholder-content">
-                <img src="assets/img/placeholders/huro-1.svg" alt="" />
+                <img src="/src/assets/images/placeholders/huro-1.svg" alt="" />
                 <h3 class="dark-inverted">Go Premium</h3>
                 <p>Unlock more features and business tools by going premium</p>
               </div>

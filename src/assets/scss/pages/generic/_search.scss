@@ -1,0 +1,219 @@
+/*! _search.scss | Huro | Css ninja 2020-2021 */
+
+/* ==========================================================================
+Search UI Elements
+========================================================================== */
+
+/*
+    1. Search Results Page
+    2. Search Results Page Dark mode
+    3. Media Queries
+*/
+
+/* ==========================================================================
+1. Search Results Page
+========================================================================== */
+
+.search-results-wrapper {
+    &.is-webapp {
+        padding-top: 30px;
+    }
+
+    .search-results-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+
+        .control {
+            margin-right: 10px;
+        }
+
+        .search-info {
+            span {
+                font-family: $font;
+                color: $light-text;
+            }
+        }
+
+        .tabs-inner {
+            margin-left: auto;
+
+            .tabs {
+                margin-bottom: 0;
+                min-width: 280px;
+            }
+        }
+    }
+
+    .search-results-body {
+        .filter-box {
+            @extend .s-card;
+
+            margin-bottom: 16px;
+
+            h4 {
+                font-family: $font-alt;
+                font-weight: 600;
+                color: $dark-text;
+                margin-bottom: 10px;
+            }
+
+            .field {
+                margin-bottom: 0;
+
+                .control {
+                    display: flex;
+                    align-items: center;
+
+                    .checkbox {
+                        padding: .75em 0 .75em 0;
+                    }
+
+                    .control-end {
+                        margin-left: auto;
+                    }
+                }
+            }
+        }
+
+        .search-results-group {
+            padding-left: 30px;
+            margin-bottom: 20px;
+
+            .group-header {
+                display: flex;
+                align-items: center;
+                border-bottom: 1px solid darken($fade-grey, 6%);
+                padding: 0 0 12px 0;
+                margin-bottom: 12px;
+
+                .icon-wrap {
+                    height: 32px;
+                    width: 32px;
+                    min-width: 32px;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: 6px;
+                    background: $white;
+                    border: 1px solid $primary;
+                    color: $primary;
+
+                    svg {
+                        height: 14px;
+                        width: 14px;
+                    }
+                }
+
+                h4 {
+                    font-family: $font-alt;
+                    font-size: .8rem;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    color: $light-text;
+                }
+            }
+
+            .search-results-list {
+                padding: 10px 0;
+
+                .search-results-item {
+                    @extend .s-card;
+
+                    margin-bottom: 16px;
+
+                    > img {
+                        display: block;
+                        height: 50px;
+                        width: 50px;
+                        min-width: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+2. Search Results Page Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .search-results-wrapper {
+            .search-results-body {
+                .search-results-group {
+                    .group-header {
+                        border-color: lighten($dark-sidebar, 20%);
+
+                        .icon-wrap {
+                            background: lighten($dark-sidebar, 2%);
+                            border-color: $accent;
+                            color: $accent;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+3. Media Queries
+========================================================================== */
+
+@media only screen and (max-width: 767px) {
+
+    .search-results-wrapper {
+        .search-results-header {
+            flex-direction: column;
+
+            .control, .tabs-inner {
+                margin: 0;
+            }
+
+            .control {
+                width: 100%;
+                max-width: 280px;
+                margin: 0 auto;
+            }
+
+            .search-info {
+                padding: 10px 0;
+            }
+        }
+
+        .search-results-body {
+            .search-results-group {
+                padding-left: 0;
+            }
+        }
+    }
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+
+    .search-results-wrapper {
+        .search-results-body {
+            .search-results-group {
+                padding-left: 0;
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+    .search-results-wrapper {
+        .search-results-body {
+            .search-results-group {
+                padding-left: 10px;
+            }
+        }
+    }
+
+}

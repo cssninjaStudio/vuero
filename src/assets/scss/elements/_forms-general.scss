@@ -1,0 +1,1847 @@
+/*! _forms-general.scss | Huro | Css ninja 2020-2021 */
+
+/*
+    1. labels
+    2. Inputs and textareas
+    3. Radios
+    4. Fieldset | Field | Control
+    5. Fieldset | Field | Control Dark mode
+    6. Custom select
+    7. Autocomplete
+    8. Autocomplete Dark mode
+    9. Switch
+    10. Range input
+    11. File inputs
+    12. File inputs Dark mode
+    13. Filepond
+    14. Filepond Dark mode
+    15. Choices
+    16. Choices Dark mode
+*/
+
+/* ==========================================================================
+1. Labels
+========================================================================== */
+
+.form-label {
+    display: block;
+    margin-bottom: 4px;
+    font-size: .9rem;
+    font-weight: 500;
+    color: $dark-text;
+
+    &.is-smaller {
+        font-size: .8rem;
+        font-weight: 400;
+    }
+
+    &.is-narrow {
+        margin-bottom: 0;
+    }
+}
+
+.sub-label {
+    font-size: .8rem;
+    color: $muted-grey;
+}
+
+/* ==========================================================================
+2. Inputs and textareas
+========================================================================== */
+
+.input, .input:focus, .textarea, .textarea:focus {
+    box-shadow: none;
+}
+
+.input {
+    height: 38px;
+
+    //padding-bottom: 8px;
+    transition: all .3s;
+
+    &:focus {
+        border-color: darken($fade-grey, 4%);
+        box-shadow: $light-box-shadow;
+
+        &.is-primary-focus {
+            border-color: $primary !important;
+        }
+
+        &.is-success-focus {
+            border-color: $success !important;
+        }
+
+        &.is-info-focus {
+            border-color: $info !important;
+        }
+
+        &.is-warning-focus {
+            border-color: $warning !important;
+        }
+
+        &.is-danger-focus {
+            border-color: $danger !important;
+        }
+    }
+}
+
+.textarea {
+    transition: all .3s;
+
+    &:focus {
+        border-color: darken($fade-grey, 4%);
+        box-shadow: $light-box-shadow;
+
+        &.is-primary-focus {
+            border-color: $primary !important;
+        }
+
+        &.is-success-focus {
+            border-color: $success !important;
+        }
+
+        &.is-info-focus {
+            border-color: $info !important;
+        }
+
+        &.is-warning-focus {
+            border-color: $warning !important;
+        }
+
+        &.is-danger-focus {
+            border-color: $danger !important;
+        }
+    }
+}
+
+/* ==========================================================================
+3. Inputs and textareas dark-mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .input, .textarea {
+            background-color: lighten($dark-sidebar, 2%);
+            border-color: lighten($dark-sidebar, 4%);
+            color: $dark-dark-text;
+
+            &:hover {
+                border-color: lighten($dark-sidebar, 12%);
+            }
+
+            &:focus {
+                border-color: lighten($dark-sidebar, 8%);
+
+                + .form-icon svg {
+                    stroke: $accent !important;
+                }
+            }
+
+            &::-webkit-input-placeholder {
+                color: darken($accent-grey, 30%) !important;
+            }
+
+            &::-moz-placeholder {
+                color: darken($accent-grey, 30%) !important;
+            }
+
+            &:-ms-input-placeholder {
+                color: darken($accent-grey, 30%) !important;
+            }
+
+            &:-moz-placeholder {
+                color: darken($accent-grey, 30%) !important;
+            }
+
+            &.is-primary-focus {
+                &:focus {
+                    border-color: $accent !important;
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+3. Radios
+========================================================================== */
+
+.radio-list {
+    padding: 6px 4px;
+
+    li {
+        label {
+            position: relative;
+            display: block;
+
+            input {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                opacity: 0;
+                cursor: pointer;
+
+                &:checked + .k-radio {
+                    .radio-knob {
+                        border-color: $primary;
+
+                        .knob-inner {
+                            transform: scale(1);
+                        }
+                    }
+
+                    .label-text {
+                        color: $dark-text;
+                    }
+                }
+            }
+
+            span {
+                display: block;
+            }
+
+            .k-radio {
+                display: flex;
+                align-items: center;
+                padding: 8px 0;
+
+                .radio-knob {
+                    height: 20px;
+                    width: 20px;
+                    border: 1px solid $accent-grey;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .knob-inner {
+                        height: 8px;
+                        width: 8px;
+                        border-radius: 50%;
+                        background: $primary;
+                        transition: all .3s;
+                        transform: scale(0);
+                    }
+                }
+
+                .label-text {
+                    margin-left: 10px;
+                    color: $muted-grey;
+                    font-size: .9rem;
+                    font-weight: 500;
+                    line-height: 0;
+                    transition: color .3s;
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+4. Fieldset | Field | Controls
+========================================================================== */
+
+.form-fieldset {
+    padding: 20px 0;
+    max-width: 480px;
+    margin: 0 auto;
+
+    .fieldset-heading {
+        margin-bottom: 20px;
+
+        h4 {
+            font-family: $font-alt;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: .9rem;
+        }
+    }
+
+    .columns {
+        .column {
+            padding-top: .5rem;
+            padding-bottom: .5rem;
+        }
+    }
+}
+
+.select:not(.is-multiple):not(.is-loading)::after {
+    border-color: lighten($muted-grey, 14%);
+    border-width: 1.4px;
+}
+
+.select {
+    &.is-loading {
+        &:after {
+            right: 0.75em;
+            top: 0.75em;
+        }
+    }
+
+    + .icon {
+        svg {
+            height: 18px;
+            width: 18px;
+        }
+
+        .lnil, .lnir {
+            font-size: 16px;
+        }
+    }
+}
+
+select {
+    &:focus {
+        box-shadow: none !important;
+        border-color: darken($fade-grey, 6%) !important;
+    }
+}
+
+.field {
+    &.is-horizontal {
+        .field-label {
+            .label {
+                font-family: $font;
+                font-size: .9rem;
+                color: $light-text !important;
+                font-weight: 400;
+            }
+        }
+    }
+
+    &.has-addons, &.is-grouped {
+        .control {
+            .button {
+                height: 38px;
+            }
+
+            .select {
+                height: 38px;
+
+                &.currency-select {
+                    select {
+                        font-family: $font;
+                        font-weight: 600;
+                    }
+                }
+
+                select {
+                    height: 38px;
+                }
+            }
+        }
+    }
+
+    &.has-textarea-addon {
+        .textarea {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            border-bottom: none;
+            border-color: darken($fade-grey, 2%) !important;
+            box-shadow: $light-box-shadow;
+        }
+
+        .is-textarea-addon {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 12px 8px;
+            background: $white;
+            border-radius: 0 0 4px 4px;
+            border: 1px solid darken($fade-grey, 2%);
+            border-top: none;
+            box-shadow: $light-box-shadow;
+        }
+    }
+
+    > label {
+        font-family: $font;
+        font-size: .9rem;
+        color: $light-text !important;
+    }
+}
+
+.control {
+    &.is-loading {
+        &:after {
+            right: 0.75em;
+            top: 0.75em;
+        }
+    }
+
+    &.has-icon {
+        position: relative;
+
+        .form-icon {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 38px;
+            width: 38px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            svg {
+                height: 18px;
+                width: 18px;
+                stroke: $placeholder;
+                transition: all .3s;
+            }
+
+            .fas, .far, .fal, .fab {
+                color: $placeholder;
+                transition: all .3s;
+            }
+
+            .lnil, .lnir {
+                font-size: 1.2rem;
+                color: $placeholder;
+                transition: all .3s;
+            }
+        }
+
+        .input {
+            height: 38px;
+            padding-left: 38px;
+            transition: all .3s;
+
+            &:focus {
+                + .form-icon {
+                    svg {
+                        stroke: $primary;
+                    }
+
+                    .fas, .far, .fal, .fab {
+                        color: $primary;
+                    }
+
+                    .lnil, .lnir {
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    }
+
+    &.has-validation {
+        &.has-success {
+            input {
+                border-color: $success !important;
+                box-shadow: $light-box-shadow;
+                transition: all .3s;
+            }
+
+            .validation-icon.is-success, .form-icon {
+                opacity: 1 !important;
+
+                svg, .form-icon svg {
+                    stroke: $success !important;
+                }
+            }
+        }
+
+        &.has-error {
+            input {
+                border-color: $danger !important;
+                box-shadow: $light-box-shadow;
+            }
+
+            .validation-icon.is-error, .form-icon {
+                opacity: 1 !important;
+
+                svg, .form-icon svg {
+                    stroke: $danger !important;
+                }
+            }
+
+            .help-text span {
+                &.info {
+                    display: none;
+                }
+
+                &.error {
+                    display: block;
+                }
+            }
+        }
+
+        .input {
+            padding-right: 40px;
+        }
+
+        .validation-icon {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 38px;
+            width: 38px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: all .3s;
+
+            svg {
+                height: 18px;
+                width: 18px;
+                stroke: $placeholder;
+                transition: all .3s;
+            }
+        }
+    }
+
+    .help-text {
+        display: block;
+        color: $muted-grey;
+        margin-top: 10px;
+        font-size: .8rem;
+
+        span {
+            &.info {
+                display: block;
+            }
+
+            &.error {
+                display: none;
+                color: $danger;
+            }
+        }
+    }
+
+    .search-results {
+        position: absolute;
+        top: 64px;
+        left: 0;
+        width: 100%;
+        max-height: 285px;
+        overflow-y: auto;
+        background: $white;
+        opacity: 0;
+        border: 1px solid darken($fade-grey, 3%);
+        border-radius: 4px;
+        pointer-events: none;
+        transform: translateY(5px);
+        box-shadow: $light-box-shadow;
+        z-index: 10;
+        transition: all .3s;
+
+        &.is-active {
+            opacity: 1;
+            pointer-events: all;
+            transform: translateY(0);
+        }
+
+        .placeholder-wrap {
+            min-height: 240px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 20px;
+
+            .placeholder-content {
+                img {
+                    display: block;
+                    margin: 0 auto;
+                    max-width: 100px;
+                }
+
+                h3 {
+                    font-family: $font;
+                    font-weight: 600;
+                    color: $dark-text;
+                    padding: 0;
+                }
+
+                p {
+                    color: $light-text;
+                    font-size: .95rem;
+                    max-width: 420px;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        .search-result {
+            display: flex;
+            align-items: center;
+            padding: 12px;
+            transition: all .3s;
+
+            &:last-child {
+                border-bottom: none;
+            }
+
+            &:hover {
+                background: lighten($fade-grey, 4%);
+            }
+
+            .h-avatar {
+                .article {
+                    border-radius: 2px;
+                }
+            }
+
+            .meta {
+                margin-left: 12px;
+
+                span {
+                    display: block;
+                    line-height: 1.3;
+
+                    &:first-child {
+                        font-family: $font;
+                        font-weight: 500;
+                        font-size: .9rem;
+                        color: $dark-text;
+                    }
+
+                    &:nth-child(2) {
+                        font-size: .85rem;
+                        color: $light-text;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+5. Fieldset | Field | Controls Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .form-fieldset {
+            .fieldset-heading {
+                h4 {
+                    color: $dark-dark-text;
+                }
+            }
+        }
+
+        .field {
+            &.has-textarea-addon {
+                .textarea {
+                    border-color: lighten($dark-sidebar, 4%) !important;
+                }
+
+                .is-textarea-addon {
+                    background-color: lighten($dark-sidebar, 2%);
+                    border-color: lighten($dark-sidebar, 4%);
+                }
+            }
+        }
+
+        .control {
+            &.has-icon {
+                .input {
+                    &:focus {
+                        ~ .form-icon {
+                            svg {
+                                stroke: $accent;
+                            }
+
+                            .fas, .fal, .far, .fab, .lnir, .lnil {
+                                color: $accent;
+                            }
+                        }
+                    }
+                }
+
+                .form-icon {
+                    svg {
+                        stroke: darken($light-text, 5%);
+                    }
+
+                    .fas, .fal, .far, .fab, .lnir, .lnil {
+                        color: darken($light-text, 5%);
+                    }
+                }
+            }
+        }
+
+        .select {
+            &:not(.is-multiple):not(.is-loading) {
+                &:hover {
+                    &:after {
+                        border-color: $dark-dark-text !important;
+                    }
+                }
+            }
+
+            select {
+                background-color: lighten($dark-sidebar, 10%);
+                border-color: lighten($dark-sidebar, 12%) !important;
+                color: $dark-dark-text;
+            }
+        }
+
+        .search-results {
+            background: darken($dark-sidebar, 2%);
+            border-color: lighten($dark-sidebar, 4%) !important;
+
+            .search-result {
+                &:hover {
+                    background: lighten($dark-sidebar, 2%);
+                }
+
+                .meta {
+                    span {
+                        &:first-child {
+                            color: $dark-dark-text;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+6. Custom select
+========================================================================== */
+
+.custom-select-wrapper {
+    position: relative;
+    margin-bottom: 10px;
+
+    &.is-opened {
+        .custom-select {
+            border-color: $placeholder;
+        }
+
+        .select-drop {
+            opacity: 1;
+            transform: translateY(0);
+            pointer-events: all;
+        }
+
+        .select-caret {
+            transform: rotate(180deg);
+
+            svg {
+                stroke: $primary;
+            }
+        }
+    }
+
+    .custom-select {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid $fade-grey;
+        border-radius: 6px;
+        padding: 14px 16px;
+        cursor: pointer;
+        transition: all .3s;
+
+        &:hover {
+            border-color: $placeholder;
+        }
+
+        .selected-option {
+            .option-content {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+
+                .image {
+                    margin-right: 15px;
+
+                    img {
+                        height: 38px;
+                        width: 38px;
+                        border-radius: 50%;
+                    }
+                }
+
+                .option-text {
+                    span {
+                        display: block;
+
+                        &:first-child {
+                            font-size: 1rem;
+                            font-weight: 500;
+                            color: $primary;
+                        }
+
+                        &:nth-child(2) {
+                            font-size: .85rem;
+                            color: $muted-grey;
+                        }
+                    }
+                }
+            }
+        }
+
+        .select-caret {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 20px;
+            height: 20px;
+            transform: rotate(0);
+            transition: all .3s;
+
+            svg {
+                width: 20px;
+                height: 20px;
+                stroke: $muted-grey;
+            }
+        }
+    }
+
+    .select-drop {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: $white;
+        border: 1px solid $fade-grey;
+        border-radius: 6px;
+        margin-top: 10px;
+        padding: 5px 0;
+        box-shadow: 0px 5px 43px rgba(0, 0, 0, 0.18) !important;
+        z-index: 5;
+        opacity: 0;
+        transform: translateY(20px);
+        pointer-events: none;
+        transition: all .3s;
+
+        .inner {
+            position: relative;
+
+            .option-wrapper {
+                cursor: pointer;
+                border-bottom: 1px solid $fade-grey;
+
+                &:last-child {
+                    border-bottom: 0;
+                }
+
+                &:hover {
+                    background: #fafafa;
+                }
+
+                .option-content {
+                    padding: 10px;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+
+                    .image {
+                        margin-right: 15px;
+
+                        img {
+                            height: 32px;
+                            width: 32px;
+                            border-radius: 50%;
+                        }
+                    }
+
+                    .option-text {
+                        span {
+                            display: block;
+
+                            &:first-child {
+                                font-size: .9rem;
+                                font-weight: 500;
+                                color: $dark-text;
+                            }
+
+                            &:nth-child(2) {
+                                font-size: .75rem;
+                                color: $muted-grey;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+7. Autocomplete
+========================================================================== */
+
+.h-autocomplete {
+    .control {
+        position: relative;
+
+        .easy-autocomplete {
+            width: 100% !important;
+
+            input {
+                box-shadow: none;
+                color: $muted-grey;
+                transition: all .3s;
+            }
+
+            .template-wrapper {
+                display: flex !important;
+                justify-content: flex-start;
+                align-items: center;
+
+                .avatar-wrapper {
+                    position: relative;
+                    width: 40px !important;
+                    height: 40px !important;
+
+                    .autocpl-avatar {
+                        width: 40px !important;
+                        height: 40px !important;
+                        border-radius: 50% !important;
+                    }
+
+                    .avatar-badge {
+                        position: absolute;
+                        bottom: 0;
+                        right: -5px;
+                        width: 18px;
+                        height: 18px;
+                        border: 2px solid $white;
+                        border-radius: 50%;
+                    }
+                }
+
+                .entry-text {
+                    margin-left: 15px;
+
+                    span {
+                        font-size: 0.8rem;
+                        color: $title-grey;
+                    }
+                }
+            }
+        }
+    }
+
+    li {
+        height: auto !important;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        border-left: none !important;
+        border-right: none !important;
+    }
+
+    .easy-autocomplete-container {
+        top: 120% !important;
+        border: none !important;
+
+        ul {
+            border-radius: 4px !important;
+            box-shadow: -1px 3px 10px 0 rgba(0, 0, 0, 0.06) !important;
+        }
+    }
+}
+
+.is-autocomplete {
+    .control {
+        .easy-autocomplete {
+            width: 100% !important;
+
+            input {
+                box-shadow: none;
+
+                &:focus {
+                    box-shadow: $light-box-shadow;
+
+                    + .icon {
+                        color: $primary;
+                    }
+                }
+            }
+
+            .template-wrapper {
+                display: flex !important;
+                align-items: center;
+
+                .avatar-wrapper {
+                    position: relative;
+                    margin-right: 10px;
+
+                    .autocpl-avatar {
+                        width: 32px !important;
+                        height: 32px !important;
+                        border-radius: 50% !important;
+                    }
+
+                    .avatar-badge {
+                        position: absolute;
+                        bottom: 0;
+                        right: -2px;
+                        width: 16px;
+                        height: 16px;
+                        border: 1px solid $white;
+                        border-radius: 50%;
+                    }
+                }
+
+                .entry-text {
+                    color: $dark-text;
+                    line-height: 1.3;
+
+                    span {
+                        font-family: $font;
+                        display: block;
+
+                        &:first-child {
+                            font-family: $font-alt;
+                            font-size: .9rem;
+                            font-weight: 500;
+                            color: $dark-text;
+                        }
+
+                        &:nth-child(2) {
+                            font-size: .9rem;
+                            color: $light-text;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    li {
+        height: auto !important;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        border-left: none !important;
+        border-right: none !important;
+    }
+
+    .easy-autocomplete-container {
+        top: 120% !important;
+        border: none !important;
+
+        ul {
+            border-radius: 4px !important;
+            box-shadow: -1px 3px 10px 0 rgba(0, 0, 0, 0.06) !important;
+        }
+    }
+}
+
+/* ==========================================================================
+8. Autocomplete Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .is-autocomplete {
+            .easy-autocomplete-container {
+                > ul {
+                    background: $dark-sidebar;
+                    border-color: lighten($dark-sidebar, 8%);
+
+                    li {
+                        border-color: lighten($dark-sidebar, 8%);
+
+                        &.selected {
+                            background-color: lighten($dark-sidebar, 3%);
+                        }
+
+                        .eac-item {
+                            .template-wrapper {
+                                .entry-text {
+                                    color: $dark-text;
+
+                                    span {
+                                        &:first-child {
+                                            color: $dark-dark-text;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+9. Switch
+========================================================================== */
+
+.form-switch {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+
+    &.is-primary {
+        input {
+            &:checked + i {
+                background-color: $primary;
+            }
+        }
+    }
+
+    &.is-success {
+        input {
+            &:checked + i {
+                background-color: $success;
+            }
+        }
+    }
+
+    &.is-info {
+        input {
+            &:checked + i {
+                background-color: $info;
+            }
+        }
+    }
+
+    &.is-warning {
+        input {
+            &:checked + i {
+                background-color: $warning;
+            }
+        }
+    }
+
+    &.is-danger {
+        input {
+            &:checked + i {
+                background-color: $danger;
+            }
+        }
+    }
+
+    i {
+        position: relative;
+        display: inline-block;
+        width: 46px;
+        height: 26px;
+        background-color: #e6e6e6;
+        border-radius: 23px;
+        vertical-align: text-bottom;
+        transition: all 0.3s linear;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 42px;
+            height: 22px;
+            background-color: $white;
+            border-radius: 11px;
+            transform: translate3d(2px, 2px, 0) scale3d(1, 1, 1);
+            transition: all 0.25s linear;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 22px;
+            height: 22px;
+            background-color: $white;
+            border-radius: 11px;
+            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.24);
+            transform: translate3d(2px, 2px, 0);
+            transition: all 0.2s ease-in-out;
+        }
+    }
+
+    &:active {
+        i::after {
+            width: 28px;
+            transform: translate3d(2px, 2px, 0);
+        }
+
+        input {
+            &:checked + i::after {
+                transform: translate3d(16px, 2px, 0);
+            }
+        }
+    }
+
+    input {
+        position: absolute;
+        opacity: 0;
+        pointer-events: none;
+
+        &:checked + i {
+            background-color: $light-text;
+
+            &::before {
+                transform: translate3d(18px, 2px, 0) scale3d(0, 0, 0);
+            }
+
+            &::after {
+                transform: translate3d(22px, 2px, 0);
+            }
+        }
+    }
+
+    small {
+        color: $muted-grey;
+        position: relative;
+        top: -4px;
+    }
+}
+
+.switch-block {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+
+    .text {
+        margin-left: 6px;
+
+        span {
+            display: block;
+            position: relative;
+            top: -2px;
+            color: $light-text;
+        }
+    }
+}
+
+/* ==========================================================================
+14. Switch Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .form-switch {
+            &.is-primary {
+                input {
+                    &:checked + i {
+                        background-color: $accent !important;
+
+                        &:after {
+                            background: $white !important;
+                        }
+                    }
+                }
+            }
+
+            &.is-success {
+                input {
+                    &:checked + i {
+                        background-color: $success !important;
+
+                        &:after {
+                            background: $white !important;
+                        }
+                    }
+                }
+            }
+
+            &.is-info {
+                input {
+                    &:checked + i {
+                        background-color: $info !important;
+
+                        &:after {
+                            background: $white !important;
+                        }
+                    }
+                }
+            }
+
+            &.is-warning {
+                input {
+                    &:checked + i {
+                        background-color: $warning !important;
+
+                        &:after {
+                            background: $white !important;
+                        }
+                    }
+                }
+            }
+
+            &.is-danger {
+                input {
+                    &:checked + i {
+                        background-color: $danger !important;
+
+                        &:after {
+                            background: $white !important;
+                        }
+                    }
+                }
+            }
+
+            i {
+                background: $dark-sidebar !important;
+
+                &:before {
+                    background: $dark-sidebar !important;
+                }
+
+                &:after {
+                    background: lighten($dark-sidebar, 22%) !important;
+                }
+            }
+
+            input {
+                &:checked + i {
+                    &:after {
+                        background: lighten($dark-sidebar, 55%) !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+14. Thin Switch
+========================================================================== */
+
+.thin-switch {
+    display: block;
+    margin-left: 8px;
+
+    &.is-primary {
+        .input:checked ~ .slider {
+            background: lighten($primary, 20%);
+
+            &:after {
+                background: $primary;
+                border-color: $primary;
+            }
+        }
+    }
+
+    &.is-success {
+        .input:checked ~ .slider {
+            background: lighten($success, 20%);
+
+            &:after {
+                background: $success;
+                border-color: $success;
+            }
+        }
+    }
+
+    &.is-info {
+        .input:checked ~ .slider {
+            background: lighten($info, 20%);
+
+            &:after {
+                background: $info;
+                border-color: $info;
+            }
+        }
+    }
+
+    &.is-warning {
+        .input:checked ~ .slider {
+            background: lighten($warning, 20%);
+
+            &:after {
+                background: $warning;
+                border-color: $warning;
+            }
+        }
+    }
+
+    &.is-danger {
+        .input:checked ~ .slider {
+            background: lighten($danger, 20%);
+
+            &:after {
+                background: $danger;
+                border-color: $danger;
+            }
+        }
+    }
+
+    .slider {
+        position: relative;
+        display: inline-block;
+        height: 8px;
+        width: 32px;
+        border-radius: 8px;
+        cursor: pointer;
+        background: #c5c5c5;
+        transition: all .2s ease;
+
+        &:after {
+            background: #eeeeee;
+            position: absolute;
+            left: -8px;
+            top: (7px - 24px) / 2;
+            display: block;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            border: 1px solid transparent;
+            box-shadow: 0px 2px 2px rgba(#000, 0.2);
+            content: '';
+            transition: all .2s ease;
+        }
+    }
+
+    label {
+        margin-right: 7px;
+    }
+
+    .input {
+        display: none;
+
+        ~ .label {
+            margin-left: 8px;
+        }
+
+        &:checked ~ .slider {
+            &:after {
+                left: 32px - 24px + 8px;
+            }
+        }
+    }
+
+    .input:checked ~ .slider {
+        &:after {
+            background: $white;
+            border: 1px solid $fade-grey;
+        }
+    }
+}
+
+.thin-switch-block {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+
+    .text {
+        margin-left: 16px;
+
+        span {
+            display: block;
+            position: relative;
+            color: $light-text;
+        }
+    }
+}
+
+/* ==========================================================================
+14. Thin Switch Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .thin-switch {
+            &.is-primary {
+                .input:checked ~ .slider {
+                    background: lighten($accent, 20%);
+
+                    &:after {
+                        background: $accent;
+                        border-color: $accent;
+                    }
+                }
+            }
+
+            &.is-success {
+                .input:checked ~ .slider {
+                    &:after {
+                        background: $success;
+                        border-color: $success;
+                    }
+                }
+            }
+
+            &.is-info {
+                .input:checked ~ .slider {
+                    &:after {
+                        background: $info;
+                        border-color: $info;
+                    }
+                }
+            }
+
+            &.is-warning {
+                .input:checked ~ .slider {
+                    &:after {
+                        background: $warning;
+                        border-color: $warning;
+                    }
+                }
+            }
+
+            &.is-danger {
+                .input:checked ~ .slider {
+                    &:after {
+                        background: $danger;
+                        border-color: $danger;
+                    }
+                }
+            }
+
+            .slider {
+                background: $dark-sidebar;
+
+                &:after {
+                    background: lighten($dark-sidebar, 22%);
+                }
+            }
+
+            .input:checked ~ .slider {
+                &:after {
+                    background: lighten($dark-sidebar, 55%);
+                    border: lighten($dark-sidebar, 55%);
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+10. Range input
+========================================================================== */
+
+.range-slider {
+    position: relative;
+    width: 100%;
+    margin: 0 4px;
+
+    .slider-output {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 10px 0;
+
+        small {
+            font-size: .8rem;
+            color: $muted-grey;
+        }
+    }
+
+    .input-range {
+        -webkit-appearance: none;
+        width: 100%;
+        height: 5px;
+        border-radius: 5px;
+        background: #ccc;
+        outline: none;
+
+        &:focus {
+            &::-webkit-slider-thumb {
+                transform: scale(1.15);
+            }
+        }
+    }
+
+    .input-range::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: $primary;
+        cursor: pointer;
+        -webkit-transition: background .15s ease-in-out;
+        transition: background .15s ease-in-out;
+        -webkit-transition: transform .3s;
+        transition: transform .3s;
+        transform: scale(1);
+    }
+
+    .input-range::-webkit-slider-thumb:hover {
+        background: $primary;
+    }
+
+    .input-range:active::-moz-range-thumb {
+        background: $primary;
+    }
+
+    .input-range::-moz-range-thumb {
+        width: 16px;
+        height: 16px;
+        border: 0;
+        border-radius: 50%;
+        background: $primary;
+        cursor: pointer;
+        -webkit-transition: background-color .15s ease-in-out;
+        transition: background-color .15s ease-in-out;
+    }
+
+    .range-value {
+        display: block !important;
+        position: relative;
+        color: $primary;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 0 10px;
+    }
+
+    ::-moz-range-track {
+        background: #ccc;
+        border: 0;
+    }
+
+    input::-moz-focus-inner {
+        border: 0;
+    }
+}
+
+/* ==========================================================================
+11. File inputs
+========================================================================== */
+
+.file {
+    &.is-default {
+        &:hover {
+            .file-cta {
+                box-shadow: $light-box-shadow !important;
+            }
+        }
+
+        .file-cta {
+            background: $white;
+            border: 1px solid darken($fade-grey, 3%);
+            transition: all .3s;
+        }
+    }
+}
+
+/* ==========================================================================
+12. File inputs Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .file {
+            &:not(.is-primary):not(.is-success):not(.is-info):not(.is-warning):not(.is-danger) {
+                .file-cta {
+                    background: lighten($dark-sidebar, 10%);
+                    border-color: lighten($dark-sidebar, 12%);
+                    color: $dark-dark-text;
+                }
+            }
+
+            .file-name {
+                background-color: lighten($dark-sidebar, 2%);
+                border-color: lighten($dark-sidebar, 4%);
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+13. Filepond
+========================================================================== */
+
+.filepond-uploader {
+    &.is-two-grid {
+        .filepond--item {
+            width: calc(50% - .5em);
+        }
+    }
+
+    &.is-three-grid {
+        .filepond--item {
+            width: calc(33.3% - .5em);
+        }
+    }
+
+    .filepond--root {
+        border: 2px dashed darken($fade-grey, 4%);
+        border-radius: 4px;
+        min-height: 70px;
+        cursor: pointer;
+        transition: all .3s;
+    }
+}
+
+.filepond-profile-wrap, .filepond-square-wrap {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    max-height: 100px;
+    max-width: 100px;
+
+    &.is-tiny {
+        height: 68px;
+        width: 68px;
+        max-height: 68px;
+        max-width: 68px;
+
+        .lnil {
+            font-size: 1.8rem;
+        }
+    }
+
+    &.is-small {
+        height: 80px;
+        width: 80px;
+        max-height: 80px;
+        max-width: 80px;
+
+        .lnil {
+            font-size: 2rem;
+        }
+    }
+
+    &:hover {
+        .lnil {
+            color: $primary;
+        }
+
+        .filepond--root {
+            border-color: dashed darken($fade-grey, 6%);
+        }
+    }
+
+    .lnil {
+        pointer-events: none;
+        font-size: 2.4rem;
+        color: $light-text;
+        transition: color .3s;
+    }
+
+    .filepond--root {
+        border: 2px dashed darken($fade-grey, 4%);
+        cursor: pointer;
+        transition: all .3s;
+    }
+}
+
+.filepond-square-wrap {
+    .filepond--root {
+        border-radius: 4px;
+    }
+}
+
+/* ==========================================================================
+14. Filepond Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .filepond-uploader, .filepond-profile-wrap, .filepond-square-wrap {
+            &:hover {
+                .lnil {
+                    color: $accent;
+                }
+            }
+
+            .filepond--root {
+                border-color: lighten($dark-sidebar, 12%);
+            }
+
+            .filepond--drop-label {
+                background: lighten($dark-sidebar, 2%);
+
+                label {
+                    color: $dark-dark-text;
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+15. Choices
+========================================================================== */
+
+.choices {
+    &.is-focused {
+        .choices__inner {
+            border-color: darken($fade-grey, 3%);
+            box-shadow: $light-box-shadow;
+        }
+    }
+
+    .choices__inner {
+        border-radius: 6px;
+        transition: all .3s;
+
+        .choices__list {
+            .choices__item {
+                position: relative !important;
+                background-color: darken($fade-grey, 2%);
+                border-color: darken($fade-grey, 2%);
+                color: $dark-text;
+                font-family: $font;
+                padding: 4px 10px 5px 10px;
+
+                &:before {
+                    content: '\f00d';
+                    position: absolute;
+                    top: 4.5px;
+                    right: 14px;
+                    font-family: 'Font Awesome\ 5 Free';
+                    font-weight: 900;
+                    color: $light-text;
+                }
+
+                button {
+                    border: none;
+                    background-image: none;
+                    margin: 0 -4px 0 4px;
+                }
+            }
+        }
+    }
+
+    .choices__list--dropdown {
+        margin-top: 6px;
+        border-color: darken($fade-grey, 3%);
+        box-shadow: $light-box-shadow;
+
+        .choices__item--choice {
+            color: $light-text;
+        }
+    }
+}
+
+/* ==========================================================================
+16. Choices Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .choices {
+            &.is-focused {
+                .choices__inner {
+                    border-color: lighten($dark-sidebar, 8%);
+                }
+            }
+
+            .choices__inner {
+                background-color: lighten($dark-sidebar, 2%);
+                border-color: lighten($dark-sidebar, 4%);
+
+                input {
+                    background-color: lighten($dark-sidebar, 2%);
+                    color: $dark-dark-text;
+                }
+
+                .choices__list {
+                    .choices__item {
+                        background-color: lighten($dark-sidebar, 8%);
+                        border-color: lighten($dark-sidebar, 8%);
+                        color: $dark-dark-text;
+                    }
+                }
+            }
+
+            .choices__list--dropdown {
+                background-color: lighten($dark-sidebar, 2%);
+                border-color: lighten($dark-sidebar, 4%);
+
+                .choices__item {
+                    &.is-highlighted {
+                        background-color: darken($dark-sidebar, 2%);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 394 394" style="enable-background:new 0 0 394 394;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#E8E8E8;}
+	.st1{fill:#FDB300;}
+	.st2{fill:#EA6C00;}
+	.st3{fill:#FDAD00;}
+	.st4{fill:#FDD231;}
+	.st5{fill:#FEEEB7;}
+</style>
+<title>sketch-symbol</title>
+<desc>Created with Sketch.</desc>
+<circle class="st0" cx="197" cy="197" r="197"/>
+<g id="sketch-symbol">
+	<polygon id="Path" class="st1" points="106.3,75.1 197,65.5 287.7,75.1 358,169.4 197,356.9 36,169.4 	"/>
+	<g id="Group" transform="translate(0.000000, 126.881084)">
+		<polygon class="st2" points="101.2,42.5 197,230 36,42.5 		"/>
+		<polygon class="st2" points="292.8,42.5 197,230 358,42.5 		"/>
+		<polygon class="st3" points="101.2,42.5 292.8,42.5 197,230 		"/>
+	</g>
+	<g>
+		<polygon class="st4" points="197,65.5 106.3,75.1 101.2,169.4 		"/>
+		<polygon class="st4" points="197,65.5 287.7,75.1 292.8,169.4 		"/>
+		<polygon class="st3" points="358,169.4 287.7,75.1 292.8,169.4 		"/>
+		<polygon class="st3" points="36,169.4 106.3,75.1 101.2,169.4 		"/>
+		<polygon class="st5" points="197,65.5 101.2,169.4 292.8,169.4 		"/>
+	</g>
+</g>
+</svg>

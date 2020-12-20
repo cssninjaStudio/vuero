@@ -1,0 +1,219 @@
+/*! _tags.scss | Huro | Css ninja 2020-2021 */
+
+/*
+    1. Tags
+    2. Tags Dark mode
+*/
+
+/* ==========================================================================
+1. Tags
+========================================================================== */
+
+.tag:not(body) {
+    display: inline-block;
+    line-height: 2.3;
+    height: 2.4em;
+
+    &.is-rounded {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    &.is-curved {
+        padding-left: 0.85em;
+        padding-right: 0.85em;
+        line-height: 2.5;
+        height: 2.6em;
+        border-radius: 8px;
+    }
+
+    &.is-elevated {
+        box-shadow: $light-box-shadow;
+    }
+
+    &.is-solid {
+        background: $white;
+        border: 1px solid darken($fade-grey, 3%);
+        color: $light-text;
+    }
+
+    &.is-primary {
+        &.is-elevated {
+            box-shadow: $primary-box-shadow;
+        }
+
+        &.is-outlined {
+            background: none !important;
+            color: $primary;
+            border: 1px solid $primary;
+        }
+    }
+
+    &.is-success {
+        &.is-elevated {
+            box-shadow: $success-box-shadow;
+        }
+
+        &.is-outlined {
+            background: none !important;
+            color: $success;
+            border: 1px solid $success;
+        }
+    }
+
+    &.is-info {
+        &.is-elevated {
+            box-shadow: $info-box-shadow;
+        }
+
+        &.is-outlined {
+            background: none !important;
+            color: $info;
+            border: 1px solid $info;
+        }
+    }
+
+    &.is-warning {
+        &.is-elevated {
+            box-shadow: $warning-box-shadow;
+        }
+
+        &.is-outlined {
+            background: none !important;
+            color: $warning;
+            border: 1px solid $warning;
+        }
+    }
+
+    &.is-danger {
+        &.is-elevated {
+            box-shadow: $danger-box-shadow;
+        }
+
+        &.is-outlined {
+            background: none !important;
+            color: $danger;
+            border: 1px solid $danger;
+        }
+    }
+
+    &.is-secondary {
+        background: $secondary;
+        color: $white;
+
+        &.is-elevated {
+            box-shadow: $secondary-box-shadow;
+        }
+
+        &.is-outlined {
+            background: none !important;
+            color: $secondary;
+            border: 1px solid $secondary;
+        }
+    }
+
+    &.is-green {
+        background: $h-green;
+        color: $white;
+
+        &.is-elevated {
+            box-shadow: $green-box-shadow;
+        }
+
+        &.is-outlined {
+            background: none !important;
+            color: $h-green;
+            border: 1px solid $h-green;
+        }
+    }
+
+    &.is-blue {
+        background: $h-blue;
+        color: $white;
+
+        &.is-elevated {
+            box-shadow: $h-blue-box-shadow;
+        }
+
+        &.is-outlined {
+            background: none !important;
+            color: $h-blue;
+            border: 1px solid $h-blue;
+        }
+    }
+
+    &.is-green {
+        background: $h-green;
+        color: $white;
+
+        &.is-elevated {
+            box-shadow: $green-box-shadow;
+        }
+
+        &.is-outlined {
+            background: none !important;
+            color: $h-green;
+            border: 1px solid $h-green;
+        }
+    }
+
+    &.is-purple {
+        background: $h-purple;
+        color: $white;
+
+        &.is-elevated {
+            box-shadow: $h-purple-box-shadow;
+        }
+
+        &.is-outlined {
+            background: none !important;
+            color: $h-purple;
+            border: 1px solid $h-purple;
+        }
+    }
+
+    &.is-orange {
+        background: $h-orange;
+        color: $white;
+
+        &.is-elevated {
+            box-shadow: $h-orange-box-shadow;
+        }
+
+        &.is-outlined {
+            background: none !important;
+            color: $h-orange;
+            border: 1px solid $h-orange;
+        }
+    }
+}
+
+/* ==========================================================================
+2. Tags Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .tag {
+            &:not(.is-primary):not(.is-secondary):not(.is-success):not(.is-info):not(.is-warning):not(.is-danger):not(.is-orange):not(.is-green):not(.is-blue):not(.is-purple) {
+                background: lighten($dark-sidebar, 10%);
+                border-color: lighten($dark-sidebar, 10%);
+                color: $dark-dark-text;
+            }
+
+            &.is-primary {
+                background: $accent;
+
+                &.is-outlined {
+                    border-color: $accent;
+                    color: $accent;
+                }
+
+                &.is-light {
+                    background: lighten($accent, 22%);
+                    color: $accent;
+                }
+            }
+        }
+    }
+}

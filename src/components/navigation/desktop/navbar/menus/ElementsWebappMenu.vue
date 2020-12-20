@@ -39,21 +39,21 @@ export default ElementsWebappMenu
                     <a href="/elements-hub.html">
                       <i class="lnil lnil-home"></i>
                       <span>Elements Hub</span>
-                      <i data-feather="circle"></i>
+                      <Icon icon="feather:circle" />
                     </a>
                   </li>
                   <li>
                     <a href="/elements-colors.html">
                       <i class="lnil lnil-color-palette"></i>
                       <span>Colors</span>
-                      <i data-feather="circle"></i>
+                      <Icon icon="feather:circle" />
                     </a>
                   </li>
                   <li>
                     <a href="/elements-helpers.html">
                       <i class="lnil lnil-help"></i>
                       <span>Helpers</span>
-                      <i data-feather="circle"></i>
+                      <Icon icon="feather:circle" />
                     </a>
                   </li>
                 </ul>
@@ -64,25 +64,25 @@ export default ElementsWebappMenu
                   <li>
                     <a href="/elements-icons-lnil.html">
                       <span>Line Icons Light</span>
-                      <i data-feather="circle"></i>
+                      <Icon icon="feather:circle" />
                     </a>
                   </li>
                   <li>
                     <a href="/elements-icons-lnir.html">
                       <span>Line Icons Regular</span>
-                      <i data-feather="circle"></i>
+                      <Icon icon="feather:circle" />
                     </a>
                   </li>
                   <li>
                     <a href="/elements-icons-fa.html">
                       <span>Font Awesome 5</span>
-                      <i data-feather="circle"></i>
+                      <Icon icon="feather:circle" />
                     </a>
                   </li>
                   <li>
                     <a href="/elements-icons-feather.html">
                       <span>Feather Icons</span>
-                      <i data-feather="circle"></i>
+                      <Icon icon="feather:circle" />
                     </a>
                   </li>
                 </ul>
@@ -93,25 +93,25 @@ export default ElementsWebappMenu
                   <li>
                     <a href="/elements-buttons.html">
                       <span>Buttons</span>
-                      <i data-feather="circle"></i>
+                      <Icon icon="feather:circle" />
                     </a>
                   </li>
                   <li>
                     <a href="/elements-blocks.html">
                       <span>Blocks</span>
-                      <i data-feather="circle"></i>
+                      <Icon icon="feather:circle" />
                     </a>
                   </li>
                   <li>
                     <a href="/elements-content.html">
                       <span>Content</span>
-                      <i data-feather="circle"></i>
+                      <Icon icon="feather:circle" />
                     </a>
                   </li>
                   <li>
                     <a href="/elements-tags.html">
                       <span>Tags</span>
-                      <i data-feather="circle"></i>
+                      <Icon icon="feather:circle" />
                     </a>
                   </li>
                 </ul>
@@ -122,31 +122,31 @@ export default ElementsWebappMenu
                   <li>
                     <a href="/elements-cards-basic.html">
                       <span>Basic Cards</span>
-                      <i data-feather="circle"></i>
+                      <Icon icon="feather:circle" />
                     </a>
                   </li>
                   <li>
                     <a href="/elements-cards-advanced.html">
                       <span>Advanced Cards</span>
-                      <i data-feather="circle"></i>
+                      <Icon icon="feather:circle" />
                     </a>
                   </li>
                   <li>
                     <a href="/elements-cards-bulma.html">
                       <span>Bulma Cards</span>
-                      <i data-feather="circle"></i>
+                      <Icon icon="feather:circle" />
                     </a>
                   </li>
                   <li>
                     <a href="/elements-table.html">
                       <span>Table</span>
-                      <i data-feather="circle"></i>
+                      <Icon icon="feather:circle" />
                     </a>
                   </li>
                   <li>
                     <a href="/elements-tooltips.html">
                       <span>Tooltips</span>
-                      <i data-feather="circle"></i>
+                      <Icon icon="feather:circle" />
                     </a>
                   </li>
                 </ul>
@@ -166,19 +166,19 @@ export default ElementsWebappMenu
                   <li>
                     <a href="/elements-forms-inputs.html">
                       <span>Inputs</span>
-                      <i data-feather="circle"></i>
+                      <Icon icon="feather:circle" />
                     </a>
                   </li>
                   <li>
                     <a href="/elements-forms-addons.html">
                       <span>Input Addons</span>
-                      <i data-feather="circle"></i>
+                      <Icon icon="feather:circle" />
                     </a>
                   </li>
                   <li>
                     <a href="/elements-forms-textarea.html">
                       <span>Textarea</span>
-                      <i data-feather="circle"></i>
+                      <Icon icon="feather:circle" />
                     </a>
                   </li>
                 </ul>
@@ -189,19 +189,19 @@ export default ElementsWebappMenu
                   <li>
                     <a href="/elements-forms-selects.html">
                       <span>Regular</span>
-                      <i data-feather="circle"></i>
+                      <Icon icon="feather:circle" />
                     </a>
                   </li>
                   <li>
                     <a href="/elements-forms-custom.html">
                       <span>Custom</span>
-                      <i data-feather="circle"></i>
+                      <Icon icon="feather:circle" />
                     </a>
                   </li>
                   <li>
                     <a href="/elements-forms-file.html">
                       <span>File Input</span>
-                      <i data-feather="circle"></i>
+                      <Icon icon="feather:circle" />
                     </a>
                   </li>
                 </ul>
@@ -212,19 +212,19 @@ export default ElementsWebappMenu
                   <li>
                     <a href="/elements-forms-checkboxes.html">
                       <span>Checkboxes</span>
-                      <i data-feather="circle"></i>
+                      <Icon icon="feather:circle" />
                     </a>
                   </li>
                   <li>
                     <a href="/elements-forms-radios.html">
                       <span>Radio Buttons</span>
-                      <i data-feather="circle"></i>
+                      <Icon icon="feather:circle" />
                     </a>
                   </li>
                   <li>
                     <a href="/elements-forms-switch.html">
                       <span>Switches</span>
-                      <i data-feather="circle"></i>
+                      <Icon icon="feather:circle" />
                     </a>
                   </li>
                 </ul>
@@ -237,12 +237,12 @@ export default ElementsWebappMenu
                 >
                   <img
                     class="light-image"
-                    src="assets/img/icons/misc/buoy.svg"
+                    src="/src/assets/images/icons/misc/buoy.svg"
                     alt=""
                   />
                   <img
                     class="dark-image"
-                    src="assets/img/icons/misc/buoy-dark.svg"
+                    src="/src/assets/images/icons/misc/buoy-dark.svg"
                     alt=""
                   />
                   <h3>Support</h3>
@@ -254,12 +254,12 @@ export default ElementsWebappMenu
                 >
                   <img
                     class="light-image"
-                    src="assets/img/icons/misc/docs.svg"
+                    src="/src/assets/images/icons/misc/docs.svg"
                     alt=""
                   />
                   <img
                     class="dark-image"
-                    src="assets/img/icons/misc/docs-dark.svg"
+                    src="/src/assets/images/icons/misc/docs-dark.svg"
                     alt=""
                   />
                   <h3>Documentation</h3>

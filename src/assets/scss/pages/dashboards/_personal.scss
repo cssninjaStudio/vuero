@@ -1,0 +1,566 @@
+/*! _personal.scss | Huro | Css ninja 2020-2021 */
+
+/*
+    1. Personal Dashboard V1
+    2. Personal Dashboard V1 Dark mode
+    3. Personal Dashboard V2
+    4. Personal Dashboard V2 Dark mode
+    5. Media Queries
+*/
+
+/* ==========================================================================
+1. Personal Dashboard V1
+========================================================================== */
+
+.personal-dashboard {
+    &.is-webapp {
+        margin-top: 30px;
+    }
+
+    &.personal-dashboard-v1 {
+        .dashboard-header {
+            display: flex;
+            align-items: center;
+            font-family: $font;
+            margin-bottom: 30px;
+
+            .start {
+                margin-left: 12px;
+
+                h3 {
+                    font-family: $font-alt;
+                    font-weight: 600;
+                    font-size: 1.3rem;
+                    color: $dark-text;
+                }
+            }
+
+            .end {
+                margin-left: auto;
+                display: flex;
+                justify-content: flex-end;
+
+                .button {
+                    margin-left: 10px;
+                }
+            }
+        }
+
+        .dashboard-body {
+            .dashboard-card {
+                @extend .s-card;
+
+                font-family: $font;
+
+                > h4, .apexcharts-title-text {
+                    font-family: $font-alt;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    color: $dark-text;
+                    margin-bottom: 12px;
+                }
+
+                .quick-stats {
+                    .quick-stats-inner {
+                        display: flex;
+                        flex-wrap: wrap;
+                        margin-left: -8px;
+                        margin-right: -8px;
+
+                        .quick-stat {
+                            width: calc(50% - 16px);
+                            padding: 40px 20px;
+                            background: $widget-grey;
+                            margin: 8px;
+                            border-radius: 6px;
+                            transition: all .3s;
+
+                            .media-flex-center {
+                                .flex-meta {
+                                    span {
+                                        &:first-child {
+                                            font-size: 1.4rem;
+                                            font-weight: 600;
+                                            color: $dark-text;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .dashboard-card {
+                &.is-upgrade {
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: lighten($primary, 8%);
+                    border-color: lighten($primary, 8%);
+                    padding: 20px 40px;
+                    min-height: 320px;
+                    border-radius: 6px;
+                    box-shadow: $primary-box-shadow;
+
+                    .lnil, .lnir {
+                        position: absolute;
+                        bottom: 1rem;
+                        right: 1rem;
+                        font-size: 4rem;
+                        opacity: .3;
+                    }
+
+                    .cta-content {
+                        text-align: center;
+
+                        h4 {
+                            font-family: $font-alt;
+                            font-weight: 600;
+                            font-size: 1.2rem;
+                            color: $smoke-white;
+                            margin-bottom: 8px;
+                        }
+                    }
+
+                    .link {
+                        display: block;
+                        font-family: $font-alt;
+                        font-weight: 500;
+                        margin-top: .5rem;
+
+                        &:hover {
+                            color: $smoke-white;
+                            opacity: .6;
+                        }
+                    }
+                }
+            }
+
+            .dashboard-card {
+                &.is-gauge {
+                    position: relative;
+
+                    .people {
+                        position: absolute;
+                        top: 80px;
+                        left: 0;
+                        right: 0;
+                        margin: 0 auto;
+                        display: flex;
+                        justify-content: center;
+                        z-index: 5;
+
+                        .h-avatar {
+                            margin: 0 4px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+2. Personal Dashboard V1 Dark Mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .personal-dashboard {
+            &.personal-dashboard-v1 {
+                .dashboard-header {
+                    .start {
+                        h3 {
+                            color: $dark-dark-text;
+                        }
+                    }
+                }
+
+                .dashboard-body {
+                    .dashboard-card {
+                        &.is-upgrade {
+                            background: $accent;
+                            border-color: $accent;
+                            box-shadow: $accent-box-shadow;
+                        }
+
+                        .quick-stats {
+                            .quick-stats-inner {
+                                .quick-stat {
+                                    background: lighten($dark-sidebar, 2%);
+                                    border: 1px solid lighten($dark-sidebar, 12%);
+
+                                    .media-flex-center {
+                                        .flex-meta {
+                                            span {
+                                                &:first-child {
+                                                    color: $dark-dark-text;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+3. Personal Dashboard V2
+========================================================================== */
+
+.personal-dashboard {
+    &.personal-dashboard-v2 {
+        .dashboard-header {
+            @extend .s-card;
+
+            display: flex;
+            align-items: center;
+            padding: 30px;
+
+            .user-meta {
+                padding: 0 3rem;
+                border-right: 1px solid darken($fade-grey, 3%);
+
+                h3 {
+                    max-width: 180px;
+                }
+            }
+
+            .user-action {
+                padding: 0 3rem;
+            }
+
+            .cta {
+                position: relative;
+                flex-grow: 2;
+                max-width: 275px;
+                margin-left: auto;
+                background: lighten($primary, 8%);
+                padding: 20px;
+                border-radius: 6px;
+                box-shadow: $primary-box-shadow;
+
+                .lnil, .lnir {
+                    position: absolute;
+                    bottom: 1rem;
+                    right: 1rem;
+                    font-size: 4rem;
+                    opacity: .3;
+                }
+
+                .link {
+                    font-family: $font-alt;
+                    display: block;
+                    font-weight: 500;
+                    margin-top: .5rem;
+
+                    &:hover {
+                        color: $smoke-white;
+                        opacity: .6;
+                    }
+                }
+            }
+        }
+
+        .dashboard-card {
+            @extend .s-card;
+
+            padding: 30px;
+
+            &:not(:last-child) {
+                margin-bottom: 1.5rem;
+            }
+
+            .card-head {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 20px;
+
+                h3 {
+                    font-family: $font-alt;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    color: $dark-text;
+                    margin-bottom: 0;
+                }
+            }
+
+            .active-projects, .active-team, .active-list {
+                padding: 10px 0;
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+4. Personal Dashboard V2 Dark Mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .personal-dashboard {
+            &.personal-dashboard-v2 {
+                .home-header {
+                    .cta {
+                        background: lighten($accent, 2%);
+                        box-shadow: $accent-box-shadow;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+5. Personal Dashboard V3
+========================================================================== */
+
+.personal-dashboard {
+    &.personal-dashboard-v3 {
+        .columns {
+            &.is-flex-tablet-p {
+                .column {
+                    &.is-6 {
+                        min-width: 50%;
+                    }
+                }
+            }
+        }
+
+        .dashboard-card {
+            @extend .l-card;
+
+            font-family: $font;
+
+            &:not(:last-child) {
+                margin-bottom: 1.5rem;
+            }
+
+            &.is-welcome {
+                background: $widget-grey;
+                border: none;
+                padding: 40px;
+
+                .welcome-title {
+                    h3 {
+                        font-family: $font-alt;
+                        font-weight: 700;
+                        font-size: 2rem;
+                        color: $dark-text;
+                    }
+                }
+
+                .welcome-progress {
+                    display: flex;
+                    align-items: center;
+                    padding: 10px 0;
+
+                    .meta {
+                        margin-left: 16px;
+
+                        span {
+                            display: block;
+
+                            &:first-child {
+                                color: $light-text;
+                                font-size: .95rem;
+                            }
+
+                            &:nth-child(2) {
+                                font-family: $font-alt;
+                                font-size: 1.1rem;
+                                font-weight: 600;
+                                color: $dark-text;
+                            }
+                        }
+                    }
+                }
+
+                .button-wrap {
+                    .h-button {
+                        height: 44px;
+                        border-radius: 10px;
+                    }
+                }
+            }
+
+            &.is-interview {
+                &:not(:last-child) {
+                    margin-bottom: .75rem;
+                }
+
+                .flex-end {
+                    svg {
+                        height: 18px;
+                        width: 18px;
+                        stroke: $light-text;
+                    }
+                }
+            }
+        }
+
+        .picker-widget {
+            padding: 40px;
+            height: 317px;
+        }
+
+        .stats-wrapper {
+            display: flex;
+            flex-direction: column;
+            height: 280px;
+
+            .people {
+                margin-top: auto;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0 6px;
+
+                .left {
+                    span {
+                        display: block;
+                        font-family: $font;
+
+                        &:first-child {
+                            font-family: $font-alt;
+                            font-weight: 600;
+                            color: $dark-text;
+                        }
+
+                        &:nth-child(2) {
+                            font-size: .9rem;
+                            color: $light-text;
+
+                            a {
+                                font-weight: 500;
+                                color: $primary;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+6. Media Queries
+========================================================================== */
+
+@media only screen and (max-width: 767px) {
+    .personal-dashboard {
+        &.personal-dashboard-v1 {
+            .dashboard-header {
+                text-align: center;
+                flex-direction: column;
+
+                .start {
+                    margin: 10px auto;
+                }
+
+                .end {
+                    margin: 0;
+                    justify-content: space-between;
+                }
+            }
+
+            .dashboard-body {
+                .dashboard-card {
+                    .quick-stats {
+                        .quick-stats-inner {
+                            .quick-stat {
+                                padding: 20px;
+
+                                .media-flex-center {
+                                    flex-direction: column;
+
+                                    .flex-meta {
+                                        margin: 10px 0;
+                                        text-align: center;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &.personal-dashboard-v2 {
+            .dashboard-header {
+                flex-direction: column;
+                text-align: center;
+
+                .h-avatar {
+                    margin-bottom: 10px;
+                }
+
+                .user-meta {
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    border: none;
+                }
+
+                .user-action {
+                    padding-bottom: 30px;
+                }
+
+                .cta {
+                    margin-left: 0;
+                }
+            }
+
+            .active-projects {
+                .media-flex-center {
+                    .flex-end {
+                        .avatar-stack {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.personal-dashboard-v3 {
+            .stats-wrapper {
+                height: auto;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .personal-dashboard {
+        &.personal-dashboard-v1 {
+            .dashboard-body {
+                .dashboard-card {
+                    .quick-stats {
+                        .quick-stats-inner {
+                            .quick-stat {
+                                padding: 20px 20px;
+
+                                .media-flex-center {
+                                    flex-direction: column;
+
+                                    .flex-meta {
+                                        margin: 2px 0 0 0;
+                                        text-align: center;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

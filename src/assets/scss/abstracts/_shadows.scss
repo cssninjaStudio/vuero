@@ -1,0 +1,178 @@
+/*! _shadows.scss | Huro | Css ninja 2020-2021 */
+
+/*
+    1. Base Shadows
+    2. State Shadows
+    3. Stack Shadows
+    4. Brand Shadows
+    5. Additional Colors Shadows
+*/
+
+/* ==========================================================================
+1. Base Shadows
+========================================================================== */
+
+//Base shadow
+$base-shadow: rgba(0, 0, 0, 0.12);
+
+//Light
+$light-box-shadow: -1px 3px 10px 0 rgba(0, 0, 0, 0.06);
+$light-box-shadow-md: -1px 3px 10px 0 rgba(0, 0, 0, 0.12);
+
+//Primary
+$primary-shadow-from: rgba($primary, 0.42);
+$primary-shadow-to: rgba($primary, 0.2);
+$primary-box-shadow: 0 14px 26px -12px $primary-shadow-from, 0 4px 23px 0px $base-shadow, 0 8px 10px -5px $primary-shadow-to;
+
+//Secondary
+$secondary-shadow-from: rgba($secondary, 0.42);
+$secondary-shadow-to: rgba($secondary, 0.2);
+$secondary-box-shadow: 0 14px 26px -12px $secondary-shadow-from, 0 4px 23px 0px $base-shadow, 0 8px 10px -5px $secondary-shadow-to;
+
+//Accent
+$accent-shadow-from: rgba($accent, 0.42);
+$accent-shadow-to: rgba($accent, 0.2);
+$accent-box-shadow: 0 14px 26px -12px $accent-shadow-from, 0 4px 23px 0px $base-shadow, 0 8px 10px -5px $accent-shadow-to;
+
+
+/* ==========================================================================
+2. State Shadows
+========================================================================== */
+
+//Success
+$success-shadow-from: rgba($success, 0.42);
+$success-shadow-to: rgba($success, 0.2);
+$success-box-shadow: 0 14px 26px -12px $success-shadow-from, 0 4px 23px 0px $base-shadow, 0 8px 10px -5px $success-shadow-to !important;
+
+//Info
+$info-shadow-from: rgba($info, 0.42);
+$info-shadow-to: rgba($info, 0.2);
+$info-box-shadow: 0 14px 26px -12px $info-shadow-from, 0 4px 23px 0px $base-shadow, 0 8px 10px -5px $info-shadow-to !important;
+
+//Warning
+$warning-shadow-from: rgba($warning, 0.42);
+$warning-shadow-to: rgba($warning, 0.2);
+$warning-box-shadow: 0 14px 26px -12px $warning-shadow-from, 0 4px 23px 0px $base-shadow, 0 8px 10px -5px $warning-shadow-to !important;
+
+//Danger
+$danger-shadow-from: rgba($danger, 0.42);
+$danger-shadow-to: rgba($danger, 0.2);
+$danger-box-shadow: 0 14px 26px -12px $danger-shadow-from, 0 4px 23px 0px $base-shadow, 0 8px 10px -5px $danger-shadow-to !important;
+
+
+/* ==========================================================================
+3. Stack Shadows
+========================================================================== */
+
+//Javascript
+$js-shadow-from: rgba($javascript, 0.42);
+$js-shadow-to: rgba($javascript, 0.2);
+$js-box-shadow: 0 14px 26px -12px $js-shadow-from, 0 4px 23px 0px $base-shadow, 0 8px 10px -5px $js-shadow-to !important;
+
+//Angular
+$angular-shadow-from: rgba($angular, 0.42);
+$angular-shadow-to: rgba($angular, 0.2);
+$angular-box-shadow: 0 14px 26px -12px $angular-shadow-from, 0 4px 23px 0px $base-shadow, 0 8px 10px -5px $angular-shadow-to !important;
+
+//React
+$reactjs-shadow-from: rgba($reactjs, 0.42);
+$reactjs-shadow-to: rgba($reactjs, 0.2);
+$reactjs-box-shadow: 0 14px 26px -12px $reactjs-shadow-from, 0 4px 23px 0px $base-shadow, 0 8px 10px -5px $reactjs-shadow-to !important;
+
+//Android
+$android-shadow-from: rgba($android, 0.42);
+$android-shadow-to: rgba($android, 0.2);
+$android-box-shadow: 0 14px 26px -12px $android-shadow-from, 0 4px 23px 0px $base-shadow, 0 8px 10px -5px $android-shadow-to !important;
+
+//Swift
+$swift-shadow-from: rgba($swift, 0.42);
+$swift-shadow-to: rgba($swift, 0.2);
+$swift-box-shadow: 0 14px 26px -12px $swift-shadow-from, 0 4px 23px 0px $base-shadow, 0 8px 10px -5px $swift-shadow-to !important;
+
+//Wordpress
+$wordpress-shadow-from: rgba($wordpress, 0.42);
+$wordpress-shadow-to: rgba($wordpress, 0.2);
+$wordpress-box-shadow: 0 14px 26px -12px $wordpress-shadow-from, 0 4px 23px 0px $base-shadow, 0 8px 10px -5px $wordpress-shadow-to !important;
+
+//C#
+$csharp-shadow-from: rgba($csharp, 0.42);
+$csharp-shadow-to: rgba($csharp, 0.2);
+$csharp-box-shadow: 0 14px 26px -12px $csharp-shadow-from, 0 4px 23px 0px $base-shadow, 0 8px 10px -5px $csharp-shadow-to !important;
+
+
+/* ==========================================================================
+4. Brand Shadows
+========================================================================== */
+
+//Github
+$github-shadow-from: rgba($github, 0.42);
+$github-shadow-to: rgba($github, 0.2);
+$github-box-shadow: 0 14px 26px -12px $github-shadow-from, 0 4px 23px 0px $base-shadow, 0 8px 10px -5px $github-shadow-to !important;
+
+//Invision
+$invision-shadow-from: rgba($invision, 0.42);
+$invision-shadow-to: rgba($invision, 0.2);
+$invision-box-shadow: 0 14px 26px -12px $invision-shadow-from, 0 4px 23px 0px $base-shadow, 0 8px 10px -5px $invision-shadow-to !important;
+
+//Linkedin
+$linkedin-shadow-from: rgba($linkedin, 0.42);
+$linkedin-shadow-to: rgba($linkedin, 0.2);
+$linkedin-box-shadow: 0 14px 26px -12px $linkedin-shadow-from, 0 4px 23px 0px $base-shadow, 0 8px 10px -5px $linkedin-shadow-to !important;
+
+//Amazon
+$amazon-shadow-from: rgba($amazon, 0.42);
+$amazon-shadow-to: rgba($amazon, 0.2);
+$amazon-box-shadow: 0 14px 26px -12px $amazon-shadow-from, 0 4px 23px 0px $base-shadow, 0 8px 10px -5px $amazon-shadow-to !important;
+
+//Facebook
+$facebook-shadow-from: rgba($facebook, 0.42);
+$facebook-shadow-to: rgba($facebook, 0.2);
+$facebook-box-shadow: 0 14px 26px -12px $facebook-shadow-from, 0 4px 23px 0px $base-shadow, 0 8px 10px -5px $facebook-shadow-to !important;
+
+//Twitter
+$twitter-shadow-from: rgba($twitter, 0.42);
+$twitter-shadow-to: rgba($twitter, 0.2);
+$twitter-box-shadow: 0 14px 26px -12px $twitter-shadow-from, 0 4px 23px 0px $base-shadow, 0 8px 10px -5px $twitter-shadow-to !important;
+
+/* ==========================================================================
+5. Additional Colors Shadows
+========================================================================== */
+
+//Orange
+$orange-shadow-from: rgba($orange, 0.42);
+$orange-shadow-to: rgba($orange, 0.2);
+$orange-box-shadow: 0 14px 26px -12px $orange-shadow-from, 0 4px 23px 0px $base-shadow, 0 8px 10px -5px $orange-shadow-to !important;
+
+//Green
+$green-shadow-from: rgba($green, 0.42);
+$green-shadow-to: rgba($green, 0.2);
+$green-box-shadow: 0 14px 26px -12px $green-shadow-from, 0 4px 23px 0px $base-shadow, 0 8px 10px -5px $green-shadow-to !important;
+
+//h-blue
+$h-blue-shadow-from: rgba($h-blue, 0.42);
+$h-blue-shadow-to: rgba($h-blue, 0.2);
+$h-blue-box-shadow: 0 14px 26px -12px $h-blue-shadow-from, 0 4px 23px 0px $base-shadow, 0 8px 10px -5px $h-blue-shadow-to !important;
+
+//h-orange
+$h-orange-shadow-from: rgba($h-orange, 0.42);
+$h-orange-shadow-to: rgba($h-orange, 0.2);
+$h-orange-box-shadow: 0 14px 26px -12px $h-orange-shadow-from, 0 4px 23px 0px $base-shadow, 0 8px 10px -5px $h-orange-shadow-to !important;
+
+//h-green
+$h-green-shadow-from: rgba($h-green, 0.42);
+$h-green-shadow-to: rgba($h-green, 0.2);
+$h-green-box-shadow: 0 14px 26px -12px $h-green-shadow-from, 0 4px 23px 0px $base-shadow, 0 8px 10px -5px $h-green-shadow-to !important;
+
+//h-purple
+$h-purple-shadow-from: rgba($h-purple, 0.42);
+$h-purple-shadow-to: rgba($h-purple, 0.2);
+$h-purple-box-shadow: 0 14px 26px -12px $h-purple-shadow-from, 0 4px 23px 0px $base-shadow, 0 8px 10px -5px $h-purple-shadow-to !important;
+
+
+.has-light-shadow {
+    box-shadow: $light-box-shadow;
+
+    &.has-light-border {
+        border: 1px solid darken($fade-grey, 3%);
+    }
+}

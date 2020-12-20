@@ -1,0 +1,586 @@
+/*! _icons.scss | Huro | Css ninja 2020-2021 */
+
+/*
+    1. Icons
+    2. Icons Dark Mode
+*/
+
+/* ==========================================================================
+1. Icons
+========================================================================== */
+
+.icons {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+
+    .h-icon {
+        margin: 0 6px;
+    }
+}
+
+.h-icon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    min-width: 40px;
+    border-radius: 8px;
+    background: $fade-grey;
+    transition: all .3s;
+
+    &.is-small {
+        height: 32px;
+        width: 32px;
+        min-width: 32px;
+
+        .fas, .fab, .far, .fal {
+            font-size: 1rem;
+        }
+
+        .lnil, .lnir {
+            font-size: 1.2rem;
+        }
+
+        svg {
+            height: 16px;
+            width: 16px;
+            stroke-width: 1.4px;
+        }
+    }
+
+    &.is-medium {
+        height: 50px;
+        width: 50px;
+        min-width: 50px;
+
+        &.is-bordered {
+            border-width: 1.6px;
+        }
+
+        .fas, .fab, .far, .fal {
+            font-size: 1.5rem;
+        }
+
+        .lnil, .lnir {
+            font-size: 1.7rem;
+        }
+
+        svg {
+            height: 25px;
+            width: 25px;
+            stroke-width: 1.4px;
+        }
+    }
+
+    &.is-large {
+        height: 68px;
+        width: 68px;
+        min-width: 68px;
+
+        &.is-bordered {
+            border-width: 2px;
+        }
+
+        .fas, .fab, .far, .fal {
+            font-size: 2rem;
+        }
+
+        .lnil, .lnir {
+            font-size: 2.2rem;
+        }
+
+        svg {
+            height: 34px;
+            width: 34px;
+            stroke-width: 2px;
+        }
+    }
+
+    &.is-big {
+        height: 80px;
+        width: 80px;
+        min-width: 80px;
+
+        &.is-bordered {
+            border-width: 2px;
+        }
+
+        .fas, .fab, .far, .fal {
+            font-size: 2.4rem;
+        }
+
+        .lnil, .lnir {
+            font-size: 2.6rem;
+        }
+
+        svg {
+            height: 40px;
+            width: 40px;
+            stroke-width: 3px;
+        }
+    }
+
+    &.is-xl {
+        height: 100px;
+        width: 100px;
+        min-width: 100px;
+
+        &.is-bordered {
+            border-width: 2px;
+        }
+
+        .fas, .fab, .far, .fal {
+            font-size: 3rem;
+        }
+
+        .lnil, .lnir {
+            font-size: 3.4rem;
+        }
+
+        svg {
+            height: 50px;
+            width: 50px;
+            stroke-width: 3px;
+        }
+    }
+
+    &.is-rounded {
+        border-radius: 50%;
+    }
+
+    &.is-primary {
+        background: lighten($primary, 42%);
+
+        &.is-bordered {
+            border-color: $primary;
+        }
+
+        i {
+            color: $primary;
+        }
+
+        svg {
+            stroke: $primary;
+        }
+    }
+
+    &.is-secondary {
+        background: lighten($secondary, 42%);
+
+        &.is-bordered {
+            border-color: $secondary;
+        }
+
+        i {
+            color: $secondary;
+        }
+
+        svg {
+            stroke: $secondary;
+        }
+    }
+
+    &.is-accent {
+        background: lighten($accent, 36%);
+
+        &.is-bordered {
+            border-color: $accent;
+        }
+
+        i {
+            color: $accent;
+        }
+
+        svg {
+            stroke: $accent;
+        }
+    }
+
+    &.is-success {
+        background: lighten($success, 45%);
+
+        &.is-bordered {
+            border-color: $success;
+        }
+
+        i {
+            color: $success;
+        }
+
+        svg {
+            stroke: $success;
+        }
+    }
+
+    &.is-info {
+        background: lighten($info, 45%);
+
+        &.is-bordered {
+            border-color: $info;
+        }
+
+        i {
+            color: $info;
+        }
+
+        svg {
+            stroke: $info;
+        }
+    }
+
+    &.is-warning {
+        background: lighten($warning, 32%);
+
+        &.is-bordered {
+            border-color: $warning;
+        }
+
+        i {
+            color: $warning;
+        }
+
+        svg {
+            stroke: $warning;
+        }
+    }
+
+    &.is-danger {
+        background: lighten($danger, 36%);
+
+        &.is-bordered {
+            border-color: $danger;
+        }
+
+        i {
+            color: $danger;
+        }
+
+        svg {
+            stroke: $danger;
+        }
+    }
+
+    &.is-purple {
+        background: lighten($h-purple, 36%);
+
+        &.is-bordered {
+            border-color: $h-purple;
+        }
+
+        i {
+            color: $h-purple;
+        }
+
+        svg {
+            stroke: $h-purple;
+        }
+    }
+
+    &.is-blue {
+        background: lighten($h-blue, 34%);
+
+        &.is-bordered {
+            border-color: $h-blue;
+        }
+
+        i {
+            color: $h-blue;
+        }
+
+        svg {
+            stroke: $h-blue;
+        }
+    }
+
+    &.is-yellow {
+        background: lighten($h-yellow, 22%);
+
+        &.is-bordered {
+            border-color: $h-yellow;
+        }
+
+        i {
+            color: $h-yellow;
+        }
+
+        svg {
+            stroke: $h-yellow;
+        }
+    }
+
+    &.is-orange {
+        background: lighten($h-orange, 20%);
+
+        &.is-bordered {
+            border-color: $h-orange;
+        }
+
+        i {
+            color: $h-orange;
+        }
+
+        svg {
+            stroke: $h-orange;
+        }
+    }
+
+    &.is-green {
+        background: lighten($h-green, 23%);
+
+        &.is-bordered {
+            border-color: $h-green;
+        }
+
+        i {
+            color: $h-green;
+        }
+
+        svg {
+            stroke: $h-green;
+        }
+    }
+
+    &.is-red {
+        background: lighten($h-red, 38%);
+
+        &.is-bordered {
+            border-color: $h-red;
+        }
+
+        i {
+            color: $h-red;
+        }
+
+        svg {
+            stroke: $h-red;
+        }
+    }
+
+    &.is-bordered {
+        border: 1px solid $muted-grey;
+    }
+
+    .fas, .fab, .far, .fal {
+        font-size: 1.2rem;
+        color: $muted-grey;
+        transition: color .3s;
+    }
+
+    .lnil, .lnir {
+        font-size: 1.4rem;
+        color: $muted-grey;
+        transition: color .3s;
+    }
+
+    svg {
+        height: 20px;
+        width: 20px;
+        stroke-width: 1.4px;
+    }
+}
+
+/* ==========================================================================
+2. Icons Dark Mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .h-icon {
+            &.is-primary {
+                background: $accent;
+
+                &.is-bordered {
+                    border-color: $accent;
+                }
+
+                i {
+                    color: $white;
+                }
+
+                svg {
+                    stroke: $smoke-white;
+                }
+            }
+
+            &.is-accent {
+                background: $accent;
+
+                &.is-bordered {
+                    border-color: $accent;
+                }
+
+                i {
+                    color: $white;
+                }
+
+                svg {
+                    stroke: $smoke-white;
+                }
+            }
+
+            &.is-success {
+                background: $success;
+
+                &.is-bordered {
+                    border-color: $success;
+                }
+
+                i {
+                    color: $white;
+                }
+
+                svg {
+                    stroke: $smoke-white;
+                }
+            }
+
+            &.is-info {
+                background: $info;
+
+                &.is-bordered {
+                    border-color: $info;
+                }
+
+                i {
+                    color: $white;
+                }
+
+                svg {
+                    stroke: $smoke-white;
+                }
+            }
+
+            &.is-warning {
+                background: $warning;
+
+                &.is-bordered {
+                    border-color: $warning;
+                }
+
+                i {
+                    color: $white;
+                }
+
+                svg {
+                    stroke: $smoke-white;
+                }
+            }
+
+            &.is-danger {
+                background: $danger;
+
+                &.is-bordered {
+                    border-color: $danger;
+                }
+
+                i {
+                    color: $white;
+                }
+
+                svg {
+                    stroke: $smoke-white;
+                }
+            }
+
+            &.is-purple {
+                background: $h-purple;
+
+                &.is-bordered {
+                    border-color: $h-purple;
+                }
+
+                i {
+                    color: $white;
+                }
+
+                svg {
+                    stroke: $smoke-white;
+                }
+            }
+
+            &.is-blue {
+                background: $h-blue;
+
+                &.is-bordered {
+                    border-color: $h-blue;
+                }
+
+                i {
+                    color: $white;
+                }
+
+                svg {
+                    stroke: $smoke-white;
+                }
+            }
+
+            &.is-yellow {
+                background: $h-yellow;
+
+                &.is-bordered {
+                    border-color: $h-yellow;
+                }
+
+                i {
+                    color: $white;
+                }
+
+                svg {
+                    stroke: $smoke-white;
+                }
+            }
+
+            &.is-orange {
+                background: $h-orange;
+
+                &.is-bordered {
+                    border-color: $h-orange;
+                }
+
+                i {
+                    color: $white;
+                }
+
+                svg {
+                    stroke: $smoke-white;
+                }
+            }
+
+            &.is-green {
+                background: $h-green;
+
+                &.is-bordered {
+                    border-color: $h-green;
+                }
+
+                i {
+                    color: $white;
+                }
+
+                svg {
+                    stroke: $smoke-white;
+                }
+            }
+
+            &.is-red {
+                background: $h-red;
+
+                &.is-bordered {
+                    border-color: $h-red;
+                }
+
+                i {
+                    color: $white;
+                }
+
+                svg {
+                    stroke: $smoke-white;
+                }
+            }
+        }
+    }
+}
+

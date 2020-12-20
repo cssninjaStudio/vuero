@@ -1,0 +1,988 @@
+/*! _right-panel.scss | Huro | Css ninja 2020-2021 */
+
+/*
+    1. Right Panel Base
+    2. Right Panel Base Dark mode
+    3. Languages Panel
+    4. Languages Panel Dark mode
+    5. Activity Panel
+    6. Activity Panel Dark mode
+    7. Task Panel
+    8. Task Panel Dark Mode
+    9. Media Queries
+
+*/
+
+/* ==========================================================================
+1. Right Panel Base
+========================================================================== */
+
+.right-panel-wrapper {
+    &.is-active {
+        .panel-overlay {
+            opacity: .8;
+            pointer-events: all;
+        }
+
+        .right-panel {
+            transform: translateX(0);
+        }
+    }
+
+    &.is-left {
+        &.is-active {
+            .right-panel {
+                transform: translateX(0) !important;
+            }
+        }
+
+        .right-panel {
+            right: unset;
+            left: 0;
+            transform: translateX(-100%);
+        }
+    }
+
+    .panel-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $dark-sidebar;
+        opacity: 0;
+        pointer-events: none;
+        z-index: 101;
+        transition: all .3s;
+    }
+
+    .right-panel {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 360px;
+        height: 100%;
+        background: $white;
+        transform: translateX(100%);
+        z-index: 102;
+        transition: all .3s;
+
+        .right-panel-head {
+            position: relative;
+            height: 60px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+
+            h3 {
+                color: $muted-grey;
+                font-family: $font-alt;
+                font-size: 1.2rem;
+            }
+
+            > img {
+                max-width: 36px;
+            }
+
+            .close-panel {
+                height: 32px;
+                width: 32px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                transition: all .3s;
+
+                &:hover {
+                    background: $fade-grey;
+
+                    svg {
+                        stroke: $primary;
+                    }
+                }
+
+                svg {
+                    stroke: $light-text;
+                    height: 22px;
+                    width: 22px;
+                    transition: stroke .3s;
+                }
+            }
+        }
+
+        .right-panel-body {
+            position: relative;
+            height: calc(100% - 60px);
+            width: 100%;
+        }
+    }
+}
+
+/* ==========================================================================
+2. Right Panel Base Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .right-panel-wrapper {
+            .right-panel {
+                background: $dark-sidebar;
+
+                .right-panel-head {
+                    h3 {
+                        color: $dark-dark-text;
+                    }
+
+                    .close-panel {
+                        &:hover {
+                            background: lighten($dark-sidebar, 6%);
+
+                            svg {
+                                stroke: $accent;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+3. Languages Panel
+========================================================================== */
+
+.right-panel-wrapper {
+    &.is-languages {
+        .right-panel-head {
+            padding: 0 30px;
+        }
+
+        .right-panel-body {
+            .languages-boxes {
+                display: flex;
+                flex-wrap: wrap;
+                padding: 30px 0;
+
+                .language-box {
+                    margin: 8px 8px 16px 8px;
+                    width: calc(33.3% - 16px);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .language-option {
+                        position: relative;
+
+                        input {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            height: 100%;
+                            width: 100%;
+                            opacity: 0;
+                            cursor: pointer;
+                            z-index: 3;
+
+                            &:checked {
+                                + .language-option-inner {
+                                    border-color: $primary;
+
+                                    .indicator {
+                                        display: flex;
+                                    }
+                                }
+                            }
+                        }
+
+                        .language-option-inner {
+                            position: relative;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 55px;
+                            width: 55px;
+                            border-radius: 50%;
+                            border: 1.6px solid $fade-grey;
+                            background: $white;
+                            box-shadow: $light-box-shadow;
+                            transition: all .3s;
+
+                            img {
+                                display: block;
+                                width: 40px;
+                                min-width: 40px;
+                                height: 40px;
+                                border-radius: 50%;
+                            }
+
+                            .indicator {
+                                position: absolute;
+                                top: -4px;
+                                right: -4px;
+                                height: 26px;
+                                width: 26px;
+                                border-radius: 50%;
+                                display: none;
+                                justify-content: center;
+                                align-items: center;
+                                background: $primary;
+                                border: 3px solid $white;
+
+                                svg {
+                                    height: 10px;
+                                    width: 10px;
+                                    stroke-width: 3px;
+                                    stroke: $white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+
+            .img-wrap > img {
+                display: block;
+                max-width: 280px;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+4. Languages Panel Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .right-panel-wrapper {
+            &.is-languages {
+                .right-panel-body {
+                    .languages-boxes {
+                        .language-box {
+                            .language-option {
+                                input {
+                                    &:checked {
+                                        + .language-option-inner {
+                                            border-color: $accent;
+                                        }
+                                    }
+                                }
+
+                                .language-option-inner {
+                                    border-color: lighten($dark-sidebar, 12%);
+                                    background: $dark-sidebar;
+
+                                    .indicator {
+                                        background: $accent;
+                                        border-color: $dark-sidebar;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+5. Activity Panel
+========================================================================== */
+
+.right-panel-wrapper {
+    &.is-activity {
+        .right-panel {
+            .right-panel-head {
+                padding: 0 30px;
+            }
+
+            .right-panel-body {
+                padding: 0 30px;
+                height: calc(100% - 55px);
+
+                .team-card {
+                    @extend .s-card;
+
+                    display: flex !important;
+                    align-items: center;
+                    padding: 16px !important;
+                    margin-bottom: 16px;
+
+                    .meta {
+                        margin-left: 12px;
+
+                        span {
+                            display: block;
+
+                            &:first-child {
+                                color: $dark-text;
+                                font-weight: 500;
+                            }
+
+                            &:nth-child(2) {
+                                color: $light-text;
+                                font-size: .9rem;
+
+                                svg {
+                                    height: 12px;
+                                    width: 12px;
+                                    stroke-width: 1.4px;
+                                }
+                            }
+                        }
+                    }
+
+                    .link {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-left: auto;
+                        height: 34px;
+                        width: 34px;
+                        background: $white;
+                        border: 1px solid darken($fade-grey, 3%);
+                        border-radius: 50%;
+                        transition: all .3s;
+
+                        &:hover {
+                            border-color: $primary;
+                            box-shadow: $light-box-shadow;
+
+                            svg {
+                                stroke: $primary;
+                            }
+                        }
+
+                        svg {
+                            height: 16px;
+                            width: 16px;
+                            stroke: $light-text;
+                        }
+                    }
+                }
+
+                .project-card {
+                    @extend .s-card;
+
+                    padding: 16px !important;
+                    margin-bottom: 16px;
+
+                    .project-inner {
+                        display: flex;
+                        align-items: center;
+
+                        .project-avatar {
+                            display: block;
+                            height: 38px;
+                            width: 38px;
+                            border-radius: 12px;
+                        }
+
+                        .meta {
+                            margin-left: 12px;
+
+                            span {
+                                display: block;
+
+                                &:first-child {
+                                    color: $dark-text;
+                                    font-family: $font-alt;
+                                    font-size: .9rem;
+                                    font-weight: 600;
+                                }
+
+                                &:nth-child(2) {
+                                    font-family: $font;
+                                    color: $light-text;
+                                    font-size: .9rem;
+                                }
+                            }
+                        }
+
+                        .link {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin-left: auto;
+                            height: 34px;
+                            width: 34px;
+                            background: $white;
+                            border: 1px solid darken($fade-grey, 3%);
+                            border-radius: 50%;
+                            transition: all .3s;
+
+                            &:hover {
+                                border-color: $primary;
+                                box-shadow: $light-box-shadow;
+
+                                svg {
+                                    stroke: $primary;
+                                }
+                            }
+
+                            svg {
+                                height: 16px;
+                                width: 16px;
+                                stroke: $light-text;
+                            }
+                        }
+                    }
+
+                    .project-foot {
+                        margin-top: 12px;
+
+                        .progress {
+                            margin-bottom: 10px;
+                            margin-top: 18px;
+                        }
+
+                        .foot-stats {
+                            display: flex;
+                            align-items: flex-end;
+                            justify-content: space-between;
+
+                            span {
+                                font-family: $font;
+                                color: $light-text;
+                            }
+                        }
+                    }
+                }
+
+                .icon-timeline {
+                    margin-top: 30px;
+
+                    .timeline-item {
+                        position: relative;
+                        display: flex;
+                        padding-bottom: 30px;
+
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            top: 36px;
+                            left: 18px;
+                            width: 1px;
+                            height: calc(100% - 36px);
+                            border-left: 1px solid darken($fade-grey, 3%);
+                        }
+
+                        .timeline-icon {
+                            position: relative;
+                            height: 36px;
+                            width: 36px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background: $white;
+                            border: 1px solid darken($fade-grey, 3%);
+                            border-radius: 50%;
+                            color: $light-text;
+                            box-shadow: $light-box-shadow;
+
+                            &:after {
+                                content: '';
+                                position: absolute;
+                                top: 17px;
+                                left: 40px;
+                                width: 20px;
+                                height: 1px;
+                                border-top: 1px solid darken($fade-grey, 3%);
+                            }
+
+                            img {
+                                display: block;
+                                height: 28px;
+                                width: 28px;
+                                border-radius: 50%;
+                            }
+
+                            svg {
+                                height: 16px;
+                                width: 16px;
+                                stroke-width: 1.6px;
+                            }
+                        }
+
+                        .timeline-content {
+                            margin-left: 34px;
+                            line-height: 1.2;
+
+                            p {
+                                font-size: .95rem;
+                                font-family: $font-alt;
+                            }
+
+                            span {
+                                font-size: .85rem;
+                                color: $light-text;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .tabs-wrapper {
+                height: calc(100% - 60px);
+
+                .tabs-inner {
+                    .tabs {
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+6. Activity Panel Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .right-panel-wrapper {
+            &.is-activity {
+                .right-panel-body {
+                    .team-card, .project-card {
+                        background: lighten($dark-sidebar, 2%) !important;
+                        border-color: lighten($dark-sidebar, 8%) !important;
+                    }
+
+                    .team-card, .project-card .project-inner {
+                        .meta {
+                            span {
+                                &:first-child {
+                                    color: $dark-dark-text;
+                                }
+                            }
+                        }
+
+                        .link {
+                            background: lighten($dark-sidebar, 6%) !important;
+                            border-color: lighten($dark-sidebar, 12%) !important;
+
+                            &:hover {
+                                border-color: $accent !important;
+
+                                svg {
+                                    stroke: $accent !important;
+                                }
+                            }
+                        }
+                    }
+
+                    .icon-timeline {
+                        .timeline-item {
+                            &:after {
+                                border-color: lighten($dark-sidebar, 12%) !important;
+                            }
+
+                            .timeline-icon {
+                                background: lighten($dark-sidebar, 6%) !important;
+                                border-color: lighten($dark-sidebar, 12%) !important;
+
+                                &:after {
+                                    border-color: lighten($dark-sidebar, 12%) !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+7. Task Panel
+========================================================================== */
+
+.right-panel-wrapper {
+    &.is-task {
+        .right-panel {
+            width: 420px;
+
+            .right-panel-head {
+                padding: 0 30px;
+            }
+
+            .right-panel-body {
+                padding: 0 30px;
+
+                .task-group {
+                    margin-bottom: 20px;
+                    padding-bottom: 20px;
+                    border-bottom: 1.6px dashed darken($fade-grey, 3%);
+
+                    h3 {
+                        text-transform: uppercase;
+                        font-family: $font-alt;
+                        font-size: .8rem;
+                        font-weight: 600;
+                        color: $primary;
+                        margin-bottom: 10px;
+                    }
+
+                    h4 {
+                        font-family: $font-alt;
+                        font-size: 1rem;
+                        font-weight: 600;
+                        color: $dark-text;
+                        margin-bottom: 5px;
+                    }
+
+                    h5 {
+                        text-transform: uppercase;
+                        font-family: $font;
+                        font-size: .8rem;
+                        color: $light-text;
+                    }
+
+                    .task-description {
+                        margin-bottom: 20px;
+
+                        p {
+                            margin-bottom: 10px;
+                            font-size: .95rem;
+
+                            a {
+                                text-transform: uppercase;
+                                font-family: $font;
+                                font-weight: 600;
+                                font-size: .75rem;
+                                color: $light-text;
+                            }
+                        }
+                    }
+
+                    .task-participants {
+                        .participants-inner {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+
+                            button {
+                                height: 40px;
+                                width: 40px;
+                                border-right: 50%;
+                                background: none;
+                                border: 1.8px dashed $light-text;
+                                border-radius: 50%;
+                                color: $light-text;
+                                cursor: pointer;
+                                outline: none;
+                                padding: 0;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                transition: all .3s;
+
+                                &:hover {
+                                    border: 1.8px solid $primary;
+                                    color: $primary;
+                                }
+
+                                svg {
+                                    height: 18px;
+                                    width: 18px;
+                                }
+                            }
+                        }
+                    }
+
+                    .task-stats {
+                        display: flex;
+
+                        *:last-child {
+                            margin-left: auto;
+                        }
+
+                        .task-stat, a {
+                            display: flex;
+                            align-items: center;
+                            color: $light-text;
+
+                            span {
+                                margin-left: 3px;
+                            }
+
+                            svg {
+                                height: 18px;
+                                width: 18px;
+                            }
+                        }
+
+                        .task-stat {
+                            margin-right: 15px;
+                        }
+
+                        a {
+                            text-transform: uppercase;
+                            font-family: $font;
+                            font-weight: 600;
+                            font-size: .75rem;
+                            color: $primary;
+
+                            span {
+                                margin-left: 5px;
+                            }
+
+                            svg {
+                                height: 14px;
+                                width: 14px;
+                                stroke-width: 3px;
+                            }
+                        }
+                    }
+
+                    .task-files {
+                        .file-box {
+                            display: flex;
+                            align-items: center;
+                            padding: 8px;
+                            background: $white;
+                            border: 1px solid transparent;
+                            border-radius: 12px;
+                            cursor: pointer;
+                            transition: all .3s;
+
+                            &:hover {
+                                border-color: darken($fade-grey, 3%);
+                                box-shadow: $light-box-shadow;
+                            }
+
+                            img {
+                                display: block;
+                                width: 38px;
+                                min-width: 38px;
+                                height: 38px;
+                            }
+
+                            .meta {
+                                margin-left: 12px;
+                                line-height: 1.3;
+
+                                span {
+                                    display: block;
+
+                                    &:first-child {
+                                        font-family: $font-alt;
+                                        font-size: .9rem;
+                                        font-weight: 600;
+                                        color: $dark-text;
+                                    }
+
+                                    &:nth-child(2) {
+                                        font-size: .9rem;
+                                        color: $light-text;
+
+                                        i {
+                                            position: relative;
+                                            top: -3px;
+                                            font-size: .3rem;
+                                            color: $light-text;
+                                            margin: 0 4px;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .dropdown {
+                                margin-left: auto;
+                            }
+                        }
+                    }
+
+                    .has-textarea-addon {
+                        .control {
+                            .end {
+                                display: flex;
+                                align-items: center;
+
+                                .message-action {
+                                    height: 32px;
+                                    width: 32px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    color: $light-text;
+                                    border-radius: 50%;
+                                    border: 1px solid transparent;
+                                    transition: all .3s;
+
+                                    &:hover {
+                                        border-color: darken($fade-grey, 4%);
+                                        box-shadow: $light-box-shadow;
+                                        color: $primary;
+                                    }
+
+                                    svg {
+                                        height: 16px;
+                                        width: 16px;
+                                    }
+                                }
+
+                                .button {
+                                    margin-left: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+8. Task Panel Dark Mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .right-panel-wrapper {
+            &.is-task {
+                .right-panel {
+                    .right-panel-body {
+                        .task-group {
+                            border-color: lighten($dark-sidebar, 12%) !important;
+
+                            h3 {
+                                color: $accent;
+                            }
+
+                            h4 {
+                                color: $dark-dark-text;
+                            }
+
+                            .task-participants {
+                                .participants-inner {
+                                    .avatar-stack {
+                                        .h-avatar {
+                                            img {
+                                                border-color: $dark-sidebar;
+                                            }
+                                        }
+                                    }
+
+                                    button {
+                                        &:hover {
+                                            border-color: $accent;
+                                            color: $accent;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .task-stats {
+                                > a {
+                                    color: $accent;
+                                }
+                            }
+
+                            .task-files {
+                                .file-box {
+                                    background: $dark-sidebar !important;
+                                    border-color: $dark-sidebar !important;
+
+                                    .meta {
+                                        span {
+                                            &:first-child {
+                                                color: $dark-dark-text;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+9. Search Panel
+========================================================================== */
+
+.right-panel-wrapper {
+    &.is-search {
+        .right-panel {
+            width: 420px;
+
+            .right-panel-head {
+                padding: 0 30px;
+            }
+
+            .right-panel-body {
+                padding: 20px 30px;
+
+                .field {
+                    position: relative;
+                    margin-bottom: 30px;
+                    
+                    .control {
+                        .input {
+                            min-height: 48px;
+                            padding-left: 48px;
+                        }
+    
+                        .form-icon {
+                            height: 48px;
+                            width: 48px;
+                        }
+                    }
+                }
+
+                .recent {
+                    font-family: $font;
+                    margin-bottom: 30px;
+                    padding: 0 20px;
+
+                    h4 {
+                        text-transform: uppercase;
+                        font-size: .8rem;
+                        color: $light-text;
+                        margin-bottom: 12px;
+                    }
+
+                    .media-flex-center {
+                        .flex-meta {
+                            span {
+                                &:first-child {
+                                    font-weight: 500;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+10. Search Panel Dark mode
+========================================================================== */
+
+/* ==========================================================================
+11. Media Queries
+========================================================================== */
+
+@media only screen and (max-width: 767px) {
+    .right-panel-wrapper {
+        .right-panel {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+}

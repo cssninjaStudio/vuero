@@ -1,0 +1,296 @@
+/*! _pages-onboarding.scss | Huro | Css ninja 2020-2021 */
+
+/* ==========================================================================
+Onboarding Layouts
+========================================================================== */
+
+/*
+    1. Standard Onboarding
+    2. Standard Onboarding Dark mode
+    3. Onboarding V1
+*/
+
+/* ==========================================================================
+1. Standard Onboarding
+========================================================================== */
+
+.standard-onboarding {
+    padding: 20px 0;
+
+    &.is-webapp {
+        margin-top: 20px;
+    }
+
+    .title-wrap {
+        text-align: center;
+
+        h2 {
+            font-family: $font-alt;
+            font-weight: 600;
+            font-size: 1.4rem;
+            color: $dark-text;
+        }
+
+        p {
+            text-transform: uppercase;
+            font-family: $font;
+            font-size: .85rem;
+        }
+    }
+
+    .onboarding-wrap {
+        padding: 30px 0;
+
+        .onboarding-wrap-inner {
+            display: flex;
+            max-width: 880px;
+            margin: 0 auto;
+
+            .onboarding-card {
+                @extend .r-card;
+
+                margin: 8px;
+                width: calc(33.3% - 16px);
+                text-align: center;
+
+                > img {
+                    display: block;
+                    width: 100%;
+                    max-width: 140px;
+                    margin: 0 auto;
+                }
+
+                h3 {
+                    font-family: $font-alt;
+                    font-size: 1.1rem;
+                    font-weight: 600;
+                    color: $dark-text;
+                    margin-bottom: 12px;
+                }
+
+                p {
+                    font-family: $font;
+                    font-size: .95rem;
+                }
+
+                .button-wrap {
+                    text-align: center;
+                    padding: 30px 0 20px 0;
+
+                    .button {
+                        min-width: 140px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+2. Standard Onboarding Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .standard-onboarding {
+            .title-wrap {
+                h2 {
+                    color: $dark-dark-text;
+                }
+            }
+
+            .onboarding-wrap {
+                .onboarding-wrap-inner {
+                    .onboarding-card {
+                        h3 {
+                            color: $dark-dark-text;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+3. Onboarding V1
+========================================================================== */
+
+.onboarding-wrapper {
+
+    &.is-webapp {
+        margin-top: 40px;
+    }
+
+    .title-wrap {
+        text-align: center;
+
+        h2 {
+            font-family: $font-alt;
+            font-weight: 600;
+            font-size: 1.4rem;
+            color: $dark-text;
+        }
+
+        p {
+            text-transform: uppercase;
+            font-family: $font;
+            font-size: .85rem;
+        }
+    }
+
+    &.onboarding-v1 {
+        .onboarding-wrap {
+            padding: 30px 0;
+
+            .onboarding-wrap-inner {
+                display: flex;
+                max-width: 800px;
+                margin: 0 auto;
+
+                .onboarding-card {
+                    @extend .r-card;
+
+                    margin: 8px;
+                    width: calc(33.3% - 16px);
+                    text-align: center;
+                    padding: 0;
+                    overflow: hidden;
+
+                    > img {
+                        display: block;
+                        width: 100%;
+                        margin: 0 auto;
+                    }
+
+                    .onboarding-content {
+                        padding: 0 20px 30px 20px;
+
+                        h3 {
+                            font-family: $font-alt;
+                            font-size: 1.1rem;
+                            font-weight: 600;
+                            color: $dark-text;
+                            margin-bottom: 12px;
+                        }
+
+                        p {
+                            font-family: $font;
+                            font-size: .95rem;
+                        }
+
+                        .button-wrap {
+                            text-align: center;
+                            padding: 20px 0 0 0;
+
+                            .button {
+                                min-width: 140px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+3. Onboarding V2 and V4
+========================================================================== */
+
+.onboarding-wrapper {
+    &.onboarding-v2, &.onboarding-v4 {
+        .onboarding-wrap {
+            padding: 30px 0;
+
+            .onboarding-wrap-inner {
+                display: flex;
+                max-width: 760px;
+                margin: 0 auto;
+
+                .onboarding-card {
+                    @extend .r-card;
+
+                    margin: 8px;
+                    width: calc(33.3% - 16px);
+                    text-align: center;
+                    padding: 0;
+                    overflow: hidden;
+
+                    > img {
+                        display: block;
+                        width: 100%;
+                        margin: 0 auto;
+                    }
+
+                    .onboarding-content {
+                        padding: 0 20px 30px 20px;
+
+                        h3 {
+                            font-family: $font-alt;
+                            font-size: 1.1rem;
+                            font-weight: 600;
+                            color: $dark-text;
+                            margin-bottom: 12px;
+                        }
+
+                        p {
+                            font-family: $font;
+                            font-size: .95rem;
+                        }
+
+                        .button-wrap {
+                            text-align: center;
+                            padding: 20px 0 0 0;
+
+                            .button {
+                                min-width: 140px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* ==========================================================================
+6. Media Queries
+========================================================================== */
+
+@media only screen and (max-width: 767px) {
+    .standard-onboarding {
+        padding: 20px 0;
+
+        .title-wrap {
+            h2 {
+                max-width: 280px;
+                margin: 0 auto;
+            }
+        }
+
+        .onboarding-wrap {
+            .onboarding-wrap-inner {
+                flex-wrap: wrap;
+
+                .onboarding-card {
+                    width: calc(100% - 16px);
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    .standard-onboarding {
+        padding: 20px 0;
+
+        .title-wrap {
+            h2 {
+                max-width: 280px;
+                margin: 0 auto;
+            }
+        }
+    }
+}

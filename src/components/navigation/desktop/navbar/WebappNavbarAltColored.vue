@@ -21,44 +21,44 @@ export default WebappNavbarAltColored
         <a href="/" class="brand">
           <img
             class="light-image"
-            src="assets/img/logos/logo/logo-light.svg"
+            src="/src/assets/images/logos/logo/logo-light.svg"
             alt=""
           />
           <img
             class="dark-image"
-            src="assets/img/logos/logo/logo-light.svg"
+            src="/src/assets/images/logos/logo/logo-light.svg"
             alt=""
           />
         </a>
         <div class="separator"></div>
-        {{> projects-quick-dropdown}}
+        <ProjectsQuickDropdown />
         <h1 id="webapp-page-title" class="title is-5">Welcome</h1>
       </div>
       <div class="center">
         <div id="webapp-navbar-menu" class="centered-drops">
           <div class="centered-drop">
-            {{> navbar-dashboards-dropdown}}
+            <NavbarDashboardsDropdown />
           </div>
           <div class="centered-drop">
-            {{> navbar-layouts-dropdown}}
+            <NavbarLayoutsDropdown />
           </div>
           <div class="centered-drop">
-            {{> navbar-elements-dropdown}}
+            <NavbarElementsDropdown />
           </div>
           <div class="centered-drop">
-            {{> navbar-components-dropdown}}
+            <NavbarComponentsDropdown />
           </div>
           <div class="centered-button">
             <a href="/webapp-messaging-chat.html" class="button">
               <span class="icon is-small">
-                <i data-feather="message-circle"></i>
+                <Icon icon="feather:message-circle" />
               </span>
             </a>
           </div>
           <div class="centered-button centered-link-search">
             <button class="button">
               <span class="icon is-small">
-                <i data-feather="search"></i>
+                <Icon icon="feather:search" />
               </span>
             </button>
           </div>
@@ -72,10 +72,10 @@ export default WebappNavbarAltColored
                 placeholder="Search records..."
               />
               <div class="form-icon">
-                <i data-feather="search"></i>
+                <Icon icon="feather:search" />
               </div>
               <div id="webapp-navbar-search-close" class="form-icon is-right">
-                <i data-feather="x"></i>
+                <Icon icon="feather:x" />
               </div>
               <div class="search-results has-slimscroll"></div>
             </div>
@@ -83,13 +83,13 @@ export default WebappNavbarAltColored
         </div>
       </div>
       <div class="right">
-        {{> toolbar}}
+        <Toolbar />
         <div
           class="dropdown profile-dropdown dropdown-trigger is-spaced is-right"
         >
           <img
             src="https://via.placeholder.com/150x150"
-            data-demo-src="assets/img/avatars/photos/8.jpg"
+            data-demo-src="/src/assets/images/avatars/photos/8.jpg"
             alt=""
           />
           <span class="status-indicator"></span>
@@ -101,7 +101,7 @@ export default WebappNavbarAltColored
                   <img
                     class="avatar"
                     src="https://via.placeholder.com/150x150"
-                    data-demo-src="assets/img/avatars/photos/8.jpg"
+                    data-demo-src="/src/assets/images/avatars/photos/8.jpg"
                     alt=""
                   />
                 </div>
@@ -163,7 +163,7 @@ export default WebappNavbarAltColored
                   class="button h-button is-primary is-raised is-fullwidth logout-button"
                 >
                   <span class="icon is-small">
-                    <i data-feather="log-out"></i>
+                    <Icon icon="feather:log-out" />
                   </span>
                   <span>Logout</span>
                 </button>

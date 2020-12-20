@@ -1,0 +1,182 @@
+/*! _message.scss | Huro | Css ninja 2020-2021 */
+
+/*
+    1. Message
+    2. Message Dark mode
+*/
+
+/* ==========================================================================
+1. Message
+========================================================================== */
+
+.message {
+    position: relative;
+    border: 1px solid darken($fade-grey, 3%);
+    box-shadow: $light-box-shadow;
+    padding-right: 20px;
+
+    &.is-primary {
+        border-color: lighten($primary, 24%);
+
+        .delete {
+            &:before, &:after {
+                background-color: $primary;
+            }
+        }
+    }
+
+    &.is-info {
+        border-color: lighten($info, 24%);
+
+        .delete {
+            &:before, &:after {
+                background-color: $info;
+            }
+        }
+    }
+
+    &.is-success {
+        border-color: lighten($success, 24%);
+
+        .delete {
+            &:before, &:after {
+                background-color: $success;
+            }
+        }
+    }
+
+    &.is-warning {
+        border-color: lighten($warning, 24%);
+
+        .delete {
+            &:before, &:after {
+                background-color: $warning;
+            }
+        }
+    }
+
+    &.is-danger {
+        border-color: lighten($danger, 24%);
+
+        .delete {
+            &:before, &:after {
+                background-color: $danger;
+            }
+        }
+    }
+
+    .delete {
+        position: absolute;
+        background-color: transparent;
+        top: 6px;
+        right: 6px;
+
+        &:before {
+            height: 1px;
+            background-color: $light-text;
+        }
+
+        &:after {
+            width: 1px;
+            background-color: $light-text;
+        }
+    }
+
+    .message-body {
+        border: none;
+    }
+}
+
+/* ==========================================================================
+2. Message Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .message {
+            &:not(.is-primary):not(.is-info):not(.is-success):not(.is-warning):not(.is-danger) {
+                background-color: $dark-sidebar;
+                border-color: lighten($dark-sidebar, 3%);
+
+                .message-body {
+                    color: $light-text;
+                }
+            }
+
+            &.is-primary {
+                background: $accent;
+                border-color: $accent;
+
+                .message-body {
+                    color: $white;
+                }
+        
+                .delete {
+                    &:before, &:after {
+                        background-color: $white;
+                    }
+                }
+            }
+        
+            &.is-success {
+                background: $success;
+                border-color: $success;
+
+                .message-body {
+                    color: $white;
+                }
+        
+                .delete {
+                    &:before, &:after {
+                        background-color: $white;
+                    }
+                }
+            }
+
+            &.is-info {
+                background: $info;
+                border-color: $info;
+
+                .message-body {
+                    color: $white;
+                }
+        
+                .delete {
+                    &:before, &:after {
+                        background-color: $white;
+                    }
+                }
+            }
+
+            &.is-warning {
+                background: $warning;
+                border-color: $warning;
+
+                .message-body {
+                    color: $white;
+                }
+        
+                .delete {
+                    &:before, &:after {
+                        background-color: $white;
+                    }
+                }
+            }
+
+            &.is-danger {
+                background: $danger;
+                border-color: $danger;
+
+                .message-body {
+                    color: $white;
+                }
+        
+                .delete {
+                    &:before, &:after {
+                        background-color: $white;
+                    }
+                }
+            }
+        }
+    }
+}

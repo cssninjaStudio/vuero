@@ -1,0 +1,1099 @@
+/*! _banking.scss | Huro | Css ninja 2020-2021 */
+
+/*
+    1. Banking Dashboard V1
+    2. Banking Dashboard V2
+*/
+
+/* ==========================================================================
+1. Banking Dashboard V1
+========================================================================== */
+
+.banking-dashboard {
+    &.banking-dashboard-v1 {
+        .columns {
+            .column {
+                height: fit-content;
+            }
+        }
+
+        .dashboard-card {
+            @extend .s-card;
+
+            &:not(:last-child) {
+                margin-bottom: 1.5rem;
+            }
+
+            &.is-credit-cards {
+                padding: 0;
+
+                .title-wrap {
+                    padding: 20px 20px 10px 20px;
+                    margin-bottom: 0;
+                }
+
+                .card-block {
+                    .card-block-inner {
+                        display: flex;
+                        align-items: center;
+                        padding: 20px;
+
+                        &:not(:first-child) {
+                            border-top: 1.6px dashed darken($fade-grey, 4%);
+                        }
+
+                        .credit-card {
+                            position: relative;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            height: 80px;
+                            width: 120px;
+                            min-width: 120px;
+                            background: $fade-grey;
+                            border-radius: 10px;
+                            padding: 6px 10px 8px 10px;
+                            overflow: hidden;
+
+                            &.is-theme-1 {
+                                background: $primary;
+                                box-shadow: $primary-box-shadow;
+                            }
+
+                            &.is-theme-2 {
+                                background: $info;
+                                box-shadow: $info-box-shadow;
+                            }
+
+                            .top {
+                                .card-number {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+
+                                    span {
+                                        font-family: $font;
+                                        font-size: .8rem;
+                                        font-weight: 500;
+                                        color: $smoke-white;
+                                        display: block;
+                                    }
+
+                                    img {
+                                        display: block;
+                                        width: 100%;
+                                        max-width: 28px;
+                                    }
+                                }
+                            }
+
+                            .bottom {
+                                font-family: $font;
+                                font-size: .7rem;
+                                font-weight: 500;
+                                color: $smoke-white;
+                            }
+
+                            .shape {
+                                position: absolute;
+                                bottom: -10px;
+                                right: -10px;
+                                height: 46px;
+                                width: 46px;
+                                background: $white;
+                                border-radius: 50%;
+                                opacity: .15;
+                            }
+                        }
+
+                        .credit-card-meta {
+                            margin-left: 16px;
+
+                            span {
+                                display: block;
+                                font-family: $font;
+
+                                &:first-child {
+                                    font-size: .9rem;
+                                    color: $light-text;
+                                }
+
+                                &:nth-child(2) {
+                                    color: $dark-text;
+                                    font-size: 1.6rem;
+                                    font-weight: 600;
+                                    line-height: 1.2;
+                                }
+                            }
+                        }
+
+                        .credit-card-end {
+                            margin-left: auto;
+                        }
+                    }
+
+                    .info-block-inner {
+                        padding: 10px 20px 20px 20px;
+
+                        .title-wrap {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            padding: 0;
+                            margin-bottom: 12px;
+
+                            h3 {
+                                font-size: 1rem;
+                                color: $dark-text;
+                                font-weight: 500;
+                            }
+
+                            .action-link {
+                                font-size: .9rem;
+                            }
+                        }
+
+                        .info-block-line {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            padding: 6px 0;
+
+                            h4 {
+                                font-family: $font;
+                                font-weight: 500;
+                                color: $dark-text;
+                                font-size: .9rem;
+                                line-height: 2;
+                            }
+
+                            span {
+                                color: $light-text;
+                                font-size: .9rem;
+
+                                &.has-image {
+                                    display: flex;
+                                    justify-content: flex-end;
+                                    align-items: center;
+                                    flex-grow: 2;
+
+                                    img {
+                                        max-width: 28px;
+                                        margin-right: 6px;
+                                    }
+                                }
+
+                                i {
+                                    position: relative;
+                                    top: 0;
+                                    font-size: 10px;
+                                    margin-right: 8px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.is-contacts {
+                display: flex;
+                flex-direction: column;
+                height: 372px;
+
+                .people-wrap {
+                    .people {
+                        display: flex;
+                        padding: 10px 0;
+
+                        .h-avatar {
+                            margin: 0 4px;
+                        }
+                    }
+
+                    .actions {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        font-family: $font;
+                        padding: 0 4px;
+
+                        span {
+                            font-size: .9rem;
+                            color: $light-text;
+                        }
+
+                        a {
+                            color: $light-text;
+
+                            &:hover {
+                                color: $primary;
+                            }
+
+                            svg {
+                                height: 16px;
+                                width: 16px;
+                            }
+                        }
+                    }
+                }
+
+                .transfer-form {
+                    margin-top: auto;
+                }
+            }
+
+            &.is-transactions {
+                .transactions {
+                    padding: 10px 0;
+
+                    .media-flex-center {
+                        .flex-meta {
+                            span {
+                                &:nth-child(2) {
+                                    font-size: .85rem;
+                                }
+                            }
+                        }
+
+                        .flex-end {
+                            font-family: $font;
+                            font-size: 1rem;
+                            font-weight: 500;
+                            color: $dark-text;
+                        }
+                    }
+                }
+            }
+
+            &.is-income {
+                position: relative;
+
+                .field {
+                    position: absolute;
+                    top: 12px;
+                    right: 16px;
+                    z-index: 5;
+
+                    .h-select {
+                        .select-box {
+                            border-color: transparent;
+                        }
+                    }
+                }
+            }
+
+            > .title-wrap {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 12px;
+                font-family: $font;
+
+                h3 {
+                    font-family: $font-alt;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    color: $dark-text;
+                }
+
+                .title-meta {
+                    font-size: 1rem;
+                    font-weight: 500;
+                    color: $dark-text;
+                }
+
+                .action-link {
+                    font-size: .9rem;
+                }
+            }
+
+            .context-text {
+                font-size: .9rem;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .banking-dashboard {
+        &.banking-dashboard-v1 {
+            .dashboard-card {
+                &.is-credit-cards {
+                    .card-block {
+                        .card-block-inner {
+                            .credit-card {
+                                height: 67px;
+                                width: 100px;
+                                min-width: 100px;
+                            }
+
+                            .credit-card-meta {
+                                span {
+                                    &:nth-child(2) {
+                                        font-size: 1.3rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.is-contacts {
+                    height: 400px;
+                }
+
+                .context-text {
+                    font-size: .8rem;
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+2. Banking Dashboard V2
+========================================================================== */
+
+.banking-dashboard {
+    &.banking-dashboard-v2 {
+        .dashboard-card {
+            @extend .s-card;
+
+            &:not(:last-child) {
+                margin-bottom: 1.5rem;
+            }
+
+            &.is-card-panel {
+                &.is-grey {
+                    background: $widget-grey;
+                    border: none;
+                }
+
+                .columns {
+                    .column {
+                        &:first-child {
+                            .inner-box {
+                                border-right: 1px solid darken($fade-grey, 3%);
+                            }
+                        }
+                    }
+                }
+
+                .inner-box {
+                    position: relative;
+                    margin: 20px;
+                    height: calc(100% - 40px);
+
+                    .box-title {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin-bottom: 20px;
+
+                        h3 {
+                            font-family: $font-alt;
+                            font-size: 1.1rem;
+                            font-weight: 600;
+                            color: $dark-text;
+                        }
+
+                        .h-select {
+                            .select-box {
+                                border-color: transparent;
+                            }
+                        }
+                    }
+
+                    .cards-wrapper {
+                        display: flex;
+
+                        .controls {
+                            margin-right: 1.5rem;
+
+                            .button {
+                                .icon {
+                                    svg {
+                                        height: 20px;
+                                        width: 20px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .cards-carousel {
+                            max-width: 520px;
+
+                            .slick-dots {
+                                text-align: right;
+                                position: absolute;
+                                top: -45px;
+                                right: 0;
+                                height: auto;
+                                max-height: 30px;
+                                width: auto;
+
+                                li {
+                                    margin: 0;
+                                }
+                            }
+
+                            .cards-carousel-inner {
+                                margin-bottom: 0;
+
+                                .cards-carousel-item {
+                                    margin: 0 1.5rem 1.5rem 0;
+                                    outline: none !important;
+
+                                    &.slick-current {
+                                        .ccard {
+                                            background-image: linear-gradient(-225deg, darken($primary, 8%) 0%, darken($primary, 2%) 48%, lighten($primary, 12%) 100%);
+                                            box-shadow: $primary-box-shadow;
+
+                                            .shape {
+                                                opacity: 0.15;
+                                            }
+
+                                            .top {
+                                                img {
+                                                    &.active {
+                                                        display: block;
+                                                    }
+
+                                                    &.inactive, &.inactive.light-image {
+                                                        display: none !important;
+                                                    }
+                                                }
+                                            }
+
+                                            .bottom {
+                                                span {
+                                                    color: $smoke-white;
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    .ccard {
+                                        position: relative;
+                                        display: flex;
+                                        flex-direction: column;
+                                        font-family: $font;
+                                        width: 240px;
+                                        height: 144px;
+                                        border-radius: 14px;
+                                        background: $fade-grey;
+                                        padding: 18px;
+                                        margin: 0 auto;
+                                        overflow: hidden;
+                                        transition: all .3s;
+
+                                        .shape {
+                                            position: absolute;
+                                            bottom: -10px;
+                                            right: -10px;
+                                            height: 70px;
+                                            width: 70px;
+                                            background: $white;
+                                            border-radius: 50%;
+                                            opacity: 0;
+                                            transition: opacity .3s;
+                                        }
+
+                                        .top {
+                                            img {
+                                                display: block;
+                                                max-width: 35px;
+
+                                                &.active {
+                                                    display: none;
+                                                }
+
+                                                &.inactive {
+                                                    display: block;
+                                                }
+                                            }
+                                        }
+
+                                        .bottom {
+                                            margin-top: auto;
+
+                                            span {
+                                                display: block;
+                                                color: $dark-text;
+
+                                                &:first-child {
+                                                    font-weight: 600;
+                                                    font-size: 1.3rem;
+                                                }
+
+                                                &:nth-child(2) {
+                                                    font-size: .9rem;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .card-balance-wrap {
+                        display: flex;
+                        flex-direction: column;
+                        height: calc(100% - 60px);
+
+                        .card-balance {
+                            span {
+                                display: block;
+                                color: $primary;
+
+                                &:first-child {
+                                    font-weight: 700;
+                                    font-size: 2.4rem;
+                                }
+
+                                &:nth-child(2) {
+                                    font-size: 1rem;
+                                    font-weight: 500;
+                                }
+                            }
+                        }
+
+                        .card-balance-stats {
+                            margin-top: auto;
+                            display: flex;
+
+                            .card-balance-stat {
+                                width: 50%;
+                                font-family: $font;
+
+                                .stat-title {
+                                    color: $light-text;
+                                    margin-bottom: 6px;
+                                }
+
+                                .stat-block {
+                                    display: flex;
+                                    align-items: center;
+
+                                    .stat-icon {
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        height: 30px;
+                                        width: 30px;
+                                        border-radius: 50%;
+                                        background: lighten($fade-grey, 2%);
+
+                                        &.is-up {
+                                            transform: rotate(-45deg);
+
+                                            svg {
+                                                stroke: $h-green;
+                                            }
+                                        }
+
+                                        &.is-down {
+                                            transform: rotate(45deg);
+
+                                            svg {
+                                                stroke: $h-red;
+                                            }
+                                        }
+
+                                        svg {
+                                            height: 16px;
+                                            width: 16px;
+                                            stroke-width: 3px;
+                                        }
+                                    }
+
+                                    .stat-text {
+                                        margin-left: 12px;
+                                        font-family: $font;
+                                        font-weight: 600;
+                                        font-size: 1.1rem;
+                                        color: $dark-text;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .monthly-summary-wrap {
+                        .monthly-summary {
+                            padding: 0 20px;
+                            border: 1px solid darken($fade-grey, 5%);
+                            border-radius: 6px;
+
+                            .monthly-summary-item {
+                                padding: 20px 0;
+                                font-family: $font;
+
+                                &:first-child {
+                                    border-bottom: 1px solid darken($fade-grey, 5%);
+                                }
+
+                                span {
+                                    display: block;
+
+                                    &:first-child {
+                                        font-size: .85rem;
+                                        font-weight: 500;
+                                        color: $light-text;
+                                    }
+
+                                    &:nth-child(2) {
+                                        font-weight: 500;
+
+                                        &.is-income {
+                                            color: $h-green;
+                                        }
+
+                                        &.is-expense {
+                                            color: $h-red;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .chart-wrapper {
+                        position: relative;
+                        padding-right: 30px;
+
+                        .action-link {
+                            position: absolute;
+                            top: -42px;
+                            right: 45px;
+                        }
+                    }
+
+                    .transactions {
+                        padding: 10px 0;
+
+                        .media-flex-center {
+                            .flex-meta {
+                                span {
+                                    &:nth-child(2) {
+                                        font-size: .85rem;
+                                    }
+                                }
+                            }
+
+                            .flex-end {
+                                font-family: $font;
+                                font-size: 1rem;
+                                font-weight: 500;
+                                color: $dark-text;
+                            }
+                        }
+                    }
+
+                    .button-wrap {
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 20px 0 0 0;
+
+                        .button {
+                            max-width: 49%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+3. Banking Dashboard V2 Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .banking-dashboard {
+            &.banking-dashboard-v2 {
+                .dashboard-card {
+                    &.is-card-panel {
+                        background: lighten($dark-sidebar, 6%);
+
+                        .inner-box {
+                            border-color: lighten($dark-sidebar, 12%) !important;
+
+                            .box-title {
+                                h3 {
+                                    color: $dark-dark-text;
+                                }
+                            }
+
+                            .cards-carousel {
+                                .cards-carousel-inner {
+                                    .cards-carousel-item {
+                                        &.slick-current {
+                                            .ccard {
+                                                background-image: linear-gradient(-225deg, darken($accent, 8%) 0%, darken($accent, 2%) 48%, lighten($accent, 12%) 100%);
+                                                box-shadow: $accent-box-shadow;
+
+                                                .top {
+                                                    .inactive.dark-image {
+                                                        display: none !important;
+                                                    }
+                                                }
+                                            }
+                                        }
+
+                                        .ccard {
+                                            background: lighten($dark-sidebar, 2%);
+
+                                            .top {
+                                                .inactive.dark-image {
+                                                    display: block !important;
+                                                }
+                                            }
+
+                                            .bottom {
+                                                span {
+                                                    color: $dark-dark-text;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .card-balance-wrap {
+                                .card-balance {
+                                    span {
+                                        color: $accent;
+                                    }
+                                }
+
+                                .card-balance-stats {
+                                    .card-balance-stat {
+                                        .stat-block {
+                                            .stat-icon {
+                                                background: lighten($dark-sidebar, 2%);
+                                            }
+
+                                            .stat-text {
+                                                color: $dark-dark-text;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .monthly-summary-wrap {
+                                .monthly-summary {
+                                    border-color: lighten($dark-sidebar, 12%);
+                                    background: lighten($dark-sidebar, 4%);
+
+                                    .monthly-summary-item {
+                                        border-color: lighten($dark-sidebar, 12%);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+4. Banking Dashboard V3
+========================================================================== */
+
+.banking-dashboard {
+    &.banking-dashboard-v3 {
+        .dashboard-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-family: $font;
+            margin-bottom: 20px;
+
+            .left {
+                > span {
+                    color: $light-text;
+                }
+
+                .currency {
+                    .amount {
+                        position: relative;
+                        font-size: 2rem;
+                        font-weight: 600;
+                        color: $dark-text;
+
+                        &.is-positive {
+                            &:after {
+                                color: $h-green;
+                            }
+                        }
+
+                        &.is-negative {
+                            &:after {
+                                color: $h-red;
+                            }
+                        }
+
+                        &:after {
+                            content: '+3.4%';
+                            position: relative;
+                            top: -8px;
+                            right: -8px;
+                            font-size: 1.1rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .dashboard-tiles {
+            display: flex;
+            margin-left: -8px;
+            margin-right: -8px;
+            margin-top: -8px;
+            margin-bottom: 1rem;
+
+            .dashboard-tile {
+                @extend .s-card;
+
+                width: calc(33.3% - 16px);
+                margin: 8px;
+
+                span {
+                    display: block;
+                    font-family: $font;
+
+                    &:first-child {
+                        font-size: .9rem;
+                        color: $light-text;
+                        margin-bottom: 4px;
+                    }
+
+                    &:nth-child(2) {
+                        font-weight: 500;
+                        font-size: 1.2rem;
+                        color: $dark-text;
+                    }
+                }
+            }
+        }
+
+        .dashboard-card {
+            @extend .s-card;
+
+            &:not(:last-child) {
+                margin-bottom: 1.5rem;
+            }
+
+            &.is-side {
+                padding: 30px;
+            }
+
+            &.is-wallet {
+                img {
+                    display: block;
+                    max-width: 200px;
+                    margin: 0 auto;
+                }
+            }
+
+            .subheading-wrap {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 30px;
+
+                .subheading {
+                    font-family: $font-alt;
+                    font-weight: 600;
+                    font-size: .8rem;
+                    text-transform: uppercase;
+                    color: $dark-text;
+                }
+
+                .action-link {
+                    font-size: .9rem;
+                }
+            }
+
+            .currency-description {
+                padding: 10px 0 20px 0;
+            }
+
+            .button-wrap {
+                display: flex;
+                justify-content: space-between;
+
+                .button {
+                    width: 49%;
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+Media Queries
+========================================================================== */
+
+@media only screen and (max-width: 767px) {
+    .banking-dashboard {
+        &.banking-dashboard-v2 {
+            .dashboard-card {
+                &.is-card-panel {
+                    overflow: hidden;
+                    padding: 10px;
+
+                    .inner-box {
+                        border-right: none !important;
+
+                        .cards-wrapper {
+                            position: relative;
+                            margin-top: 30px;
+
+                            .controls {
+                                position: absolute;
+                                top: -68px;
+                                right: -8px;
+                                margin-right: 0;
+                            }
+                        }
+
+                        .card-balance-wrap {
+                            .card-balance {
+                                margin-bottom: 30px;
+                            }
+                        }
+
+                        .monthly-summary-wrap {
+                            margin-bottom: 60px;
+                        }
+
+                        .chart-wrapper {
+                            padding-right: 0;
+
+                            .action-link {
+                                top: -45px;
+                                right: 0px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &.banking-dashboard-v3 {
+            .dashboard-header {
+                flex-direction: column;
+
+                .left {
+                    margin-bottom: 1.5rem;
+                }
+            }
+
+            .dashboard-tiles {
+                flex-wrap: wrap;
+
+                .dashboard-tile {
+                    width: calc(100% - 16px) !important;
+                    min-width: calc(100% - 16px) !important;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    .banking-dashboard {
+        &.banking-dashboard-v2 {
+            .dashboard-card {
+                &.is-card-panel {
+                    .inner-box {
+                        border-right: none !important;
+
+                        .card-balance-wrap {
+                            .card-balance {
+                                margin-bottom: 30px;
+                            }
+                        }
+
+                        .monthly-summary-wrap {
+                            margin-bottom: 60px;
+                        }
+
+                        .chart-wrapper {
+                            padding-right: 0;
+
+                            .action-link {
+                                top: -45px;
+                                right: 0px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &.banking-dashboard-v3 {
+            .dashboard-tiles {
+                .dashboard-tile {
+                    span {
+                        &:nth-child(2) {
+                            font-size: 1.1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .banking-dashboard {
+        &.banking-dashboard-v2 {
+            .dashboard-card {
+                &.is-card-panel {
+                    .inner-box {
+                        .cards-carousel {
+                            margin-left: 30px;
+                            max-width: 400px !important;
+
+                            .cards-carousel-inner {
+                                .cards-carousel-item {
+                                    .ccard {
+                                        width: 180px !important;
+                                        height: 108px !important;
+                                    }
+                                }
+                            }
+                        }
+
+                        .card-balance-wrap {
+                            .card-balance {
+                                margin-bottom: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &.banking-dashboard-v3 {
+            .dashboard-tiles {
+                .dashboard-tile {
+                    span {
+                        &:nth-child(2) {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

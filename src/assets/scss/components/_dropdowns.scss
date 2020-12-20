@@ -1,0 +1,437 @@
+/*! _dropdowns.scss | Huro | Css ninja 2020-2021 */
+
+/*
+    1. Dropdown class
+    2. Dropdown Dark mode
+*/
+
+/* ==========================================================================
+1. Dropdown class
+========================================================================== */
+
+.dropdown {
+    &.is-dots {
+        &:hover, &.is-active {
+            .is-trigger {
+                background: lighten($fade-grey, 2%);
+
+                svg {
+                    stroke: darken($light-text, 4%);
+                }
+            }
+        }
+
+        .is-trigger {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all .3s;
+
+            svg {
+                height: 20px;
+                width: 20px;
+                stroke: $light-text;
+                stroke-width: 1.6px;
+                transition: stroke .3s;
+            }
+        }
+
+        .dropdown-menu {
+            margin-top: 6px;
+            padding-bottom: 0;
+            text-align: left;
+        }
+    }
+
+    &.is-modern {
+        &.is-active {
+            .caret {
+                transform: rotate(180deg);
+            }
+        }
+
+        .is-trigger .button {
+            padding-right: 0.75em;
+
+            .caret {
+                height: 22px;
+                width: 22px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: all .3s;
+                margin-left: 6px;
+
+                svg {
+                    height: 16px;
+                    width: 16px;
+                    stroke: $light-text;
+                }
+            }
+        }
+
+        .dropdown-menu {
+            margin-top: 6px;
+        }
+    }
+
+    &.is-spaced {
+        .dropdown-menu {
+            box-shadow: 0px 5px 16px rgba(0, 0, 0, 0.05);
+            border-color: $fade-grey;
+            padding-top: 0;
+            min-width: 260px;
+
+            &.has-margin {
+                margin-top: 10px;
+            }
+
+            .dropdown-content {
+                border: 1px solid $fade-grey;
+                box-shadow: none;
+            }
+        }
+
+        //Item
+        .dropdown-item {
+            padding-right: 1rem !important;
+            padding: 0.5rem 1rem;
+            font-size: .95rem;
+            color: $light-text;
+            transition: all .3s;
+
+            &:not(.is-button):hover, &:not(.is-button).is-active {
+                background: lighten($fade-grey, 3%);
+                color: $dark-text;
+            }
+
+            &.no-hover {
+                &:hover {
+                    background: $white;
+                }
+            }
+
+            &.is-media {
+                display: flex;
+                align-items: center;
+
+                &:hover, &.is-active {
+                    .icon {
+                        svg {
+                            stroke: $primary;
+                        }
+
+                        .lnir, .lnil {
+                            color: $primary;
+                        }
+                    }
+                }
+
+                .icon {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 28px;
+                    width: 28px;
+
+                    svg {
+                        height: 18px;
+                        width: 18px;
+                        transition: stroke .3s;
+                    }
+
+                    .lnir, .lnil {
+                        font-size: 16px;
+                        transition: color .3s;
+                    }
+                }
+
+                .item-img {
+                    display: block;
+                    height: 32px;
+                    width: 32px;
+                    border-radius: 6px;
+
+                    &.is-rounded {
+                        border-radius: 50%;
+                    }
+                }
+
+                .meta {
+                    margin-left: 10px;
+
+                    span {
+                        display: block;
+                        line-height: 1.3;
+
+                        &:first-child {
+                            font-family: $font-alt;
+                            font-size: .9rem;
+                            font-weight: 600;
+                            color: $dark-text;
+                        }
+
+                        &:nth-child(2) {
+                            font-family: $font;
+                            color: $light-text;
+                            font-size: .9rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .is-trigger {
+        .button {
+            font-family: $font;
+
+            &:focus {
+                box-shadow: none;
+                outline: none;
+                border-color: darken($fade-grey, 4%);
+                box-shadow: $light-box-shadow;
+            }
+        }
+    }
+
+    //Dropdown menu
+    .dropdown-menu {
+        .dropdown-item {
+            color: $light-text;
+
+            &:hover {
+                color: $dark-text;
+            }
+
+            //Child dropdown parent
+            &.has-child {
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-right: 1rem;
+
+                svg {
+                    height: 16px;
+                    width: 16px;
+                    stroke: $muted-grey;
+                }
+
+                //Child hover dropdown
+                .child-dropdown {
+                    position: absolute;
+                    right: -282px;
+                    top: 0;
+                    width: 280px;
+                    transition: all .3s;
+                    opacity: 0;
+                    transform: translateY(10px);
+                    pointer-events: none;
+
+                    //Inner
+                    .inner {
+                        position: relative;
+                        height: 100%;
+                        width: 100%;
+                        background: $white;
+                        border: 1px solid $accent-grey;
+                        border-radius: 6px;
+                        padding: 8px 0;
+
+                        //Kanban columns settings
+                        .column-setting {
+                            padding: 0 6px;
+                            display: flex;
+                            align-items: center;
+                            margin-bottom: 10px;
+
+                            label {
+                                transform: scale(0.7);
+                            }
+
+                            .text {
+                                span {
+                                    display: block;
+                                    font-size: .8rem;
+
+                                    &:first-child {
+                                        color: $dark-text;
+                                        font-weight: 500;
+                                    }
+
+                                    &:nth-child(2) {
+                                        color: $muted-grey;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                //Hover state
+                &:hover {
+                    .child-dropdown {
+                        opacity: 1;
+                        transform: translateY(0);
+                        pointer-events: all;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+2. Dropdown Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .toolbar-link {
+            &:hover {
+                background: lighten($dark-sidebar, 2%) !important;
+            }
+
+            svg {
+                stroke: $dark-dark-text;
+            }
+        }
+
+        .dropdown {
+            &.is-spaced {
+                &.is-dots {
+                    &:hover, &.is-active {
+                        .is-trigger {
+                            background: lighten($dark-sidebar, 2%) !important;
+
+                            svg {
+                                stroke: $dark-dark-text;
+                            }
+                        }
+                    }
+                }
+
+                .dropdown-menu {
+                    .dropdown-content {
+                        background: $dark-sidebar !important;
+                        border-color: lighten($dark-sidebar, 8%) !important;
+
+                        .heading {
+                            border-color: lighten($dark-sidebar, 8%) !important;
+
+                            &:hover, *:hover {
+                                background: $dark-sidebar !important;
+                            }
+
+                            .heading-right {
+                                .notification-link {
+                                    color: $accent !important;
+                                }
+                            }
+                        }
+
+                        .notification-list {
+                            li {
+                                .notification-item {
+                                    &:hover, *:hover {
+                                        background: $dark-sidebar !important;
+                                    }
+
+                                    .user-content {
+                                        .user-info {
+                                            color: $dark-dark-text !important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .is-media {
+                            &:hover {
+                                .icon {
+                                    svg {
+                                        stroke: $accent !important;
+                                    }
+
+                                    .lnir, .lnil {
+                                        color: $accent;
+                                    }
+                                }
+                            }
+
+                            .icon {
+                                svg {
+                                    stroke: $light-text;
+                                }
+
+                                .lnir, .lnil {
+                                    color: $light-text;
+                                }
+                            }
+
+                            .meta {
+                                span {
+                                    &:first-child {
+                                        color: $dark-dark-text;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .dropdown-menu {
+                .dropdown-content {
+                    background: $dark-sidebar;
+                    border-color: lighten($dark-sidebar, 8%) !important;
+
+                    .dropdown-item {
+                        color: $light-text;
+
+                        &.is-active {
+                            background: $accent !important;
+                        }
+                    }
+
+                    .dropdown-divider {
+                        background: lighten($dark-sidebar, 5%);
+                    }
+
+                    a:hover {
+                        background: lighten($dark-sidebar, 5%) !important;
+                    }
+                }
+            }
+        }
+
+        .child-dropdown {
+            .inner {
+                background: $dark-sidebar !important;
+                border-color: lighten($dark-sidebar, 4%) !important;
+
+                &:hover {
+                    background: $dark-sidebar !important;
+                    border-color: lighten($dark-sidebar, 4%) !important;
+                }
+
+                ul {
+                    li {
+                        .text {
+                            span {
+                                &:first-child {
+                                    color: $dark-dark-text !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

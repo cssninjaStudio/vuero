@@ -1,0 +1,122 @@
+/*! _video-player.scss | Huro | Css ninja 2020-2021 */
+
+/*
+    1. Video Player
+    2. Video Block
+*/
+
+/* ==========================================================================
+1. Video Player
+========================================================================== */
+
+.video-container {
+    position: relative;
+    padding-top: 56.25%;
+    margin: 0 auto;
+    background: $dark-sidebar;
+    border-radius: 2px;
+
+    .video-player, .media-player {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        border-radius: 2px;
+    }
+
+    .media-player {
+        .media-toolbar {
+            padding: 8px 16px;
+
+            .media-symbol {
+                height: 1.8em;
+                width: 1.8em;
+            }
+
+            .media-control {
+                border-radius: 50%;
+                padding: 8px;
+                cursor: pointer;
+                border: 1px solid transparent;
+                outline: none !important;
+                transition: all .3s;
+
+                &:hover {
+                    background: transparent;
+                    color: $primary;
+                }
+
+                &.media-play {
+                    .media-play-symbol {
+                        position: relative;
+                        left: 2px;
+                    }
+                } 
+
+                &.media-mute, &.media-unmute, &.media-download, &.media-fullscreen {
+                    .media-mute-symbol, .media-unmute-symbol, .media-download-symbol, .media-enterFullscreen-symbol, .media-leaveFullscreen-symbol {
+                        position: relative;
+                        left: 1px;
+                    }
+                } 
+            }
+
+            .media-current-time, .media-remaining-time {
+                padding: 0 10px 0 8px;
+                width: auto;
+            }
+
+            .media-slider {
+                .media-range {
+                    border-radius: 100px;
+
+                    .media-meter {
+                        border-radius: 100px;
+                        background: $primary;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* ==========================================================================
+2. Video Player Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .video-container {
+            .media-player {
+                .media-toolbar {
+                    padding: 8px 16px;
+        
+                    .media-control {
+                        color: $light-text;
+
+                        &:hover {
+                            background: transparent;
+                            color: $accent;
+                        }
+                    }
+                    
+                    .media-current-time, .media-remaining-time {
+                        color: $dark-dark-text;
+                    }
+
+                    .media-slider {
+                        .media-range {
+                            background: lighten($dark-sidebar, 2%);
+        
+                            .media-meter {
+                                background: $accent;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,103 @@
+/*! _lists.scss | Huro | Css ninja 2020-2021 */
+
+/*
+    1. User List
+    2. User List Dark mode
+*/
+
+/* ==========================================================================
+1. User List
+========================================================================== */
+
+.user-list {
+
+    li {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 6px 0;
+    }
+
+    .user-list-avatar img {
+        width: 40px;
+        height: 40px;
+        border-radius: 100px;
+    }
+
+    .user-list-info {
+        margin: 0 10px;
+
+        .name {
+            font-family: $font-alt;
+            font-size: .95rem;
+            font-weight: 600;
+            color: $dark-text;
+        }
+
+        .position {
+            font-family: $font;
+            font-size: 12px;
+            color: $light-text;
+        }
+    }
+
+    .user-list-status {
+        height: 10px;
+        width: 10px;
+        border-radius: 100px;
+        background: $fade-grey;
+        margin-left: auto;
+        margin-right: 1rem;
+
+        &.is-offline {
+            background: $fade-grey;
+        }
+
+        &.is-online {
+            background: $success;
+        }
+
+        &.is-busy {
+            background: $warning;
+        }
+    }
+
+    .user-list-icons {
+        display: flex;
+        justify-content: flex-end;
+        margin-left: auto;
+
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 32px;
+            width: 32px;
+            border-radius: 50%;
+            color: lighten($light-text, 15%);
+            font-size: .9rem;
+            transition: all .3s;
+
+            &:hover {
+                color: $light-text;
+                background: lighten($fade-grey, 3%);
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+2. User List Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .user-list {
+            .user-list-icons{
+                a:hover {
+                    background: lighten($dark-sidebar, 10%);
+                }
+            }
+        }
+    }
+}

@@ -24,7 +24,7 @@ export default NavbarLayoutsDropdown
       >
         <span>Layouts</span>
         <span class="caret">
-          <i data-feather="chevron-down"></i>
+          <Icon icon="feather:chevron-down" />
         </span>
       </button>
     </div>
@@ -61,7 +61,7 @@ export default NavbarLayoutsDropdown
         <div class="content-wrap is-hidden">
           <button class="button is-circle back-button">
             <span class="icon is-small">
-              <i data-feather="arrow-left"></i>
+              <Icon icon="feather:arrow-left" />
             </span>
           </button>
 
@@ -70,7 +70,7 @@ export default NavbarLayoutsDropdown
             <div class="column is-4">
               <div class="dropdown-item-group">
                 <h4 class="column-heading is-info">
-                  <i data-feather="circle"></i>
+                  <Icon icon="feather:circle" />
                   <span>List Views</span>
                 </h4>
 
@@ -126,7 +126,7 @@ export default NavbarLayoutsDropdown
             <div class="column is-4">
               <div class="dropdown-item-group">
                 <h4 class="column-heading is-green">
-                  <i data-feather="circle"></i>
+                  <Icon icon="feather:circle" />
                   <span>Flex Lists</span>
                 </h4>
 
@@ -171,7 +171,7 @@ export default NavbarLayoutsDropdown
             <div class="column is-4">
               <div class="dropdown-item-group">
                 <h4 class="column-heading is-orange">
-                  <i data-feather="circle"></i>
+                  <Icon icon="feather:circle" />
                   <span>Datatables</span>
                 </h4>
 
@@ -230,7 +230,7 @@ export default NavbarLayoutsDropdown
             <div class="column is-4">
               <div class="dropdown-item-group">
                 <h4 class="column-heading is-purple">
-                  <i data-feather="circle"></i>
+                  <Icon icon="feather:circle" />
                   <span>Cards</span>
                 </h4>
 
@@ -287,7 +287,7 @@ export default NavbarLayoutsDropdown
             <div class="column is-4">
               <div class="dropdown-item-group">
                 <h4 class="column-heading is-secondary">
-                  <i data-feather="circle"></i>
+                  <Icon icon="feather:circle" />
                   <span>Tiles</span>
                 </h4>
 
@@ -333,7 +333,7 @@ export default NavbarLayoutsDropdown
             <div class="column is-4">
               <div class="dropdown-item-group">
                 <h4 class="column-heading is-success">
-                  <i data-feather="circle"></i>
+                  <Icon icon="feather:circle" />
                   <span>Users</span>
                 </h4>
 
@@ -392,7 +392,7 @@ export default NavbarLayoutsDropdown
             <div class="column is-4">
               <div class="dropdown-item-group">
                 <h4 class="column-heading is-yellow">
-                  <i data-feather="circle"></i>
+                  <Icon icon="feather:circle" />
                   <span>Personal</span>
                 </h4>
 
@@ -449,7 +449,7 @@ export default NavbarLayoutsDropdown
             <div class="column is-4">
               <div class="dropdown-item-group">
                 <h4 class="column-heading is-primary">
-                  <i data-feather="circle"></i>
+                  <Icon icon="feather:circle" />
                   <span>Pages</span>
                 </h4>
 
@@ -532,7 +532,7 @@ export default NavbarLayoutsDropdown
             <div class="column is-4">
               <div class="dropdown-item-group">
                 <h4 class="column-heading is-success">
-                  <i data-feather="circle"></i>
+                  <Icon icon="feather:circle" />
                   <span>Projects</span>
                 </h4>
 
@@ -602,7 +602,7 @@ export default NavbarLayoutsDropdown
             <div class="column is-4">
               <div class="dropdown-item-group">
                 <h4 class="column-heading is-green">
-                  <i data-feather="circle"></i>
+                  <Icon icon="feather:circle" />
                   <span>Subpages</span>
                 </h4>
 
@@ -655,7 +655,7 @@ export default NavbarLayoutsDropdown
             <div class="column is-4">
               <div class="dropdown-item-group">
                 <h4 class="column-heading is-yellow">
-                  <i data-feather="circle"></i>
+                  <Icon icon="feather:circle" />
                   <span>Utility</span>
                 </h4>
 
@@ -711,7 +711,7 @@ export default NavbarLayoutsDropdown
             <div class="column is-4">
               <div class="dropdown-item-group">
                 <h4 class="column-heading is-secondary">
-                  <i data-feather="circle"></i>
+                  <Icon icon="feather:circle" />
                   <span>Onboarding</span>
                 </h4>
 
@@ -781,7 +781,7 @@ export default NavbarLayoutsDropdown
             <div class="column is-4">
               <div class="dropdown-item-group">
                 <h4 class="column-heading is-secondary">
-                  <i data-feather="circle"></i>
+                  <Icon icon="feather:circle" />
                   <span>Errors</span>
                 </h4>
 

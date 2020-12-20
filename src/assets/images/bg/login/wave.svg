@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.8;}
+	.st1{clip-path:url(#XMLID_8_);}
+	.st2{opacity:0.7;clip-path:url(#XMLID_9_);fill:#5D4394;}
+	.st3{clip-path:url(#XMLID_8_);fill:#5D4394;}
+</style>
+<g id="XMLID_6_" class="st0">
+	<defs>
+		<rect id="XMLID_5_" x="0" y="0" class="st0" width="400" height="400"/>
+	</defs>
+	<clipPath id="XMLID_8_">
+		<use xlink:href="#XMLID_5_"  style="overflow:visible;"/>
+	</clipPath>
+	<g id="XMLID_3_" class="st1">
+		<defs>
+			<rect id="XMLID_2_" width="400" height="400"/>
+		</defs>
+		<clipPath id="XMLID_9_">
+			<use xlink:href="#XMLID_2_"  style="overflow:visible;"/>
+		</clipPath>
+		<circle id="XMLID_1_" class="st2" cx="-369" cy="293" r="198.7"/>
+	</g>
+	<path id="XMLID_4_" class="st3" d="M0,0c0,0,135,49,168,175s21,222,232,225s-73,158-73,158l-435-54l-116-225L0,0z"/>
+</g>
+</svg>

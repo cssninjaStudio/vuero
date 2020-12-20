@@ -1,0 +1,609 @@
+/*! _layout.scss | Huro | Css ninja 2020-2021 */
+
+/*
+    1. App Layout
+    2. View Wrapper
+    3. Page Content
+    4. Page Title / Toolbar
+    5. Minimal Wrapper
+    6. Circular Menu
+    7. Circular Menu Dark mode
+    8. Media Queries
+*/
+
+/* ==========================================================================
+1. App layout
+========================================================================== */
+
+body {
+    background: $body-color;
+
+    &.opened {
+        background: $white;
+    }
+
+    &.is-fixed {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        overflow: hidden;
+    }
+
+    &.is-curved {
+        background: #f2f2f2;
+    }
+}
+
+.app-wrapper {
+    overflow: hidden;
+}
+
+.app-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    opacity: 0;
+    z-index: -1;
+    transition: opacity .3s;
+
+    &.is-active {
+        opacity: .8;
+        z-index: 9999;
+    }
+}
+
+.overlay-highlight {
+    position: relative;
+    z-index: 99999 !important;
+}
+
+/* ==========================================================================
+2. View Wrapper
+========================================================================== */
+
+.view-wrapper {
+    position: relative;
+    height: 100%;
+    min-height: 100vh;
+    width: calc(100% - 80px);
+    padding: 0 0 60px 0;
+    margin-left: 80px;
+    background: $background-grey;
+    background: #f2f2f2;
+    transition: all .3s;
+
+    &.is-pushed-full {
+        margin-left: 320px;
+        width: calc(100% - 320px);
+
+        .is-stuck {
+            margin-left: 320px;
+            width: calc(100% - 320px);
+        }
+    }
+
+    &.is-pushed-messages {
+        margin-left: 160px !important;
+        width: calc(100% - 160px) !important;
+    }
+
+    &.is-webapp {
+        padding-top: 80px;
+        margin-left: 0 !important;
+        width: 100% !important;
+
+        .is-stuck {
+            position: fixed;
+            top: 78px;
+            left: 0;
+            margin-left: 0;
+            width: 100%;
+            z-index: 69;
+
+            &.stuck-header {
+                padding-right: 20px !important;
+
+                .form-head-inner, .form-header-inner {
+                    max-width: 1240px;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        .has-webapp-spacing {
+            margin-top: 30px;
+        }
+    }
+
+    .is-stuck {
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin-left: 80px;
+        width: calc(100% - 80px);
+        z-index: 69;
+    }
+}
+
+/* ==========================================================================
+3. Page Content
+========================================================================== */
+
+.page-content-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .page-content {
+        padding: 0 40px;
+
+        &.is-relative {
+            position: relative;
+        }
+
+        &.kanban-content {
+            padding: 0 20px;
+        }
+
+        &.chat-content {
+            padding: 0 40px;
+        }
+
+        &.card-content {
+            padding: 0 20px;
+        }
+
+        &.waterfall-content {
+            overflow: hidden;
+        }
+
+        &.projects-content {
+            padding: 0 40px;
+        }
+    }
+}
+
+//Enable this setting if you want the dashboard to be larger
+@media only screen and (min-width: 1408px) {
+    .page-content-wrapper {
+        //max-width: 1380px;
+    }
+}
+
+/* ==========================================================================
+4. Page Title / Toolbar
+========================================================================== */
+
+.page-title {
+    position: relative;
+    height: 60px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    &.is-webapp {
+        display: none;
+        margin-bottom: 0;
+    }
+
+    .title-wrap {
+        margin-left: 1rem;
+
+        h1 {
+            text-align: left;
+            margin-bottom: 0;
+        }
+
+        p {
+            line-height: 1;
+            color: $light-text;
+            font-size: 1.1rem;
+        }
+    }
+}
+
+.toolbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+
+    .control {
+        min-width: 280px;
+        margin-right: 1rem;
+    }
+
+    .dark-mode {
+        transform: scale(0.55);
+    }
+
+    .toolbar-notifications {
+        margin: 0 4px;
+
+        .dropdown {
+            &:hover {
+                .is-trigger {
+                    background: $white;
+                    border-color: $fade-grey;
+                    border-radius: 50%;
+                    box-shadow: $light-box-shadow;
+                }
+            }
+
+            .is-trigger {
+                position: relative;
+                height: 34px;
+                width: 34px;
+
+                .new-indicator {
+                    position: absolute;
+                    top: 1px;
+                    right: 1px;
+                    display: block;
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                    background: $danger;
+                }
+            }
+
+            .dropdown-menu {
+                .dropdown-content {
+                    top: 2.5rem;
+                    line-height: 1.5;
+                    color: $dark-text;
+                    width: 20rem;
+                    background: $white;
+                    border-radius: 5px;
+                    box-shadow: $light-box-shadow;
+                    padding-top: 0;
+
+                    .heading {
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: space-between;
+                        padding: 1rem;
+                        border-bottom: 0.01rem solid #eee;
+                        margin-bottom: 0;
+
+                        .heading-left {
+                            h6 {
+                                font-size: .8rem;
+                                font-weight: 500;
+                                color: $light-text;
+                                line-height: 1.6;
+                            }
+                        }
+
+                        .heading-right {
+                            .notification-link {
+                                margin: 0.4rem 0;
+                                color: $primary;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+
+                    .notification-list {
+                        list-style-type: none;
+                        padding: 0.5rem 1rem;
+                        margin: 0;
+
+                        .notification-item {
+                            display: flex;
+                            padding: 0.65rem 0;
+
+                            .img-left {
+                                img {
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                    height: 2.25rem;
+                                    width: 2.25rem;
+                                    margin: 0 0.5rem 0 0;
+                                    border-radius: 50%;
+                                    max-width: 100%;
+                                }
+                            }
+
+                            .user-content {
+                                text-align: left;
+                                font-family: $font;
+
+                                .user-info {
+                                    color: $dark-text;
+                                    font-size: .95rem;
+
+                                    span {
+                                        font-weight: 500;
+                                    }
+                                }
+
+                                .time {
+                                    margin: 0;
+                                    font-size: .85rem;
+                                    color: $light-text;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .toolbar-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 34px;
+        width: 34px;
+        border-radius: 50%;
+        margin: 0 4px;
+        transition: all .3s;
+
+        &:hover {
+            background: $white;
+            border-color: $fade-grey;
+            box-shadow: $light-box-shadow;
+        }
+
+        svg {
+            height: 18px;
+            width: 18px;
+            stroke-width: 1.6px;
+            stroke: $light-text;
+            transition: stroke .3s;
+        }
+
+        img {
+            display: block;
+            height: 24px;
+            width: 24px;
+            min-width: 24px;
+            border-radius: 50%;
+        }
+    }
+}
+
+/* ==========================================================================
+5. Minimal Wrapper
+========================================================================== */
+
+.minimal-wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: $lighter-grey;
+    transition: all .3s;
+
+    &.light {
+        background: $white;
+    }
+
+    &.lighter {
+        background: $smoke-white;
+    }
+
+    &.darker {
+        background: #f2f2f2;
+    }
+
+    .minimal-wrap {
+        min-height: calc(100vh - 60px);
+    }
+}
+
+/* ==========================================================================
+6. Circular Menu
+========================================================================== */
+
+.circular-menu {
+    position: fixed;
+    top: .6em;
+    right: 1em;
+    z-index: 70;
+    transform: translateY(-80px);
+    pointer-events: none;
+    transition: transform .3s;
+
+    &.is-active {
+        pointer-events: all;
+        transform: translateY(0);
+    }
+
+    &.active {
+        &:after {
+            transform: scale3d(5.5, 5.5, 1);
+            transition-timing-function: cubic-bezier(0.68, 1.55, 0.265, 1);
+        }
+
+        .floating-btn {
+            box-shadow: 0 4px 8px 0 hsla(0, 0%, 0%, 0.3);
+
+            i {
+                &:first-child {
+                    display: none;
+                }
+
+                &:nth-child(2) {
+                    display: block;
+                }
+            }
+        }
+
+        .menu-item {
+            transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+            &:nth-child(1) {
+                transform: translate3d(-7em, -0.5em, 0);
+            }
+
+            &:nth-child(2) {
+                transform: translate3d(-6.25em, 3.25em, 0);
+            }
+
+            &:nth-child(3) {
+                transform: translate3d(-3.45em, 6.25em, 0);
+            }
+
+            &:nth-child(4) {
+                transform: translate3d(0.5em, 7em, 0);
+            }
+        }
+    }
+
+    &:after {
+        display: block;
+        content: ' ';
+        width: 3.5em;
+        height: 3.5em;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -2;
+        background-color: darken($primary, 5%);
+        box-shadow: $primary-box-shadow;
+        transition: all .3s ease;
+    }
+
+    .floating-btn {
+        display: block;
+        width: 3.5em;
+        height: 3.5em;
+        border-radius: 50%;
+        background-color: lighten($primary, 3%);
+        box-shadow: $primary-box-shadow;
+        color: $smoke-white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        outline: 0;
+
+        i {
+            font-size: .9rem;
+            transition: transform .2s;
+
+            &:first-child {
+                display: block;
+            }
+
+            &:nth-child(2) {
+                display: none;
+            }
+        }
+    }
+
+    .items-wrapper {
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu-item {
+        position: absolute;
+        top: .2em;
+        right: .2em;
+        z-index: -1;
+        display: block;
+        text-decoration: none;
+        color: hsl(0, 0%, 100%);
+        font-size: 1em;
+        width: 3em;
+        height: 3em;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 3;
+        background-color: hsla(0, 0%, 0%, 0.2);
+        transition: transform .3s ease, background-color .2s ease;
+
+        &:hover {
+            background-color: hsla(0, 0%, 0%, 0.3);
+        }
+
+        &.is-flex {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .dark-mode {
+                transform: scale(0.5);
+            }
+
+            > img {
+                display: block;
+                height: 24px;
+                width: 24px;
+                min-width: 24px;
+                border-radius: 50%;
+            }
+
+            svg {
+                height: 18px;
+                width: 18px;
+                stroke: $smoke-white;
+                stroke-width: 1.6px;
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+7. Circular Menu Dark Mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .circular-menu {
+            &:after {
+                background: darken($dark-sidebar, 2%);
+                box-shadow: 0 4px 8px 0 hsla(0, 0%, 0%, 0.3) !important;
+            }
+
+            &.active {
+                .floating-btn {
+                    box-shadow: 0 4px 8px 0 hsla(0, 0%, 0%, 0.3) !important;
+                }
+            }
+
+            .floating-btn {
+                background: lighten($dark-sidebar, 2%);
+                box-shadow: 0 4px 8px 0 hsla(0, 0%, 0%, 0.3) !important;
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+8. Media Queries
+========================================================================== */
+
+@media (max-width: 767px) {
+    .page-title {
+        .toolbar {
+            .control {
+                display: none;
+            }
+        }
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .page-content-wrapper {
+        .page-content {
+            padding: 0;
+        }
+    }
+
+    .page-title {
+        .title-wrap {
+            margin-left: 0;
+        }
+    }
+}

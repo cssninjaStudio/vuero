@@ -24,12 +24,12 @@ export default LandingNavigation
         <div class="brand-icon">
           <img
             class="light-image-l"
-            src="assets/img/logos/logo/logo.svg"
+            src="/src/assets/images/logos/logo/logo.svg"
             alt=""
           />
           <img
             class="dark-image-l"
-            src="assets/img/logos/logo/logo-light.svg"
+            src="/src/assets/images/logos/logo/logo-light.svg"
             alt=""
           />
         </div>
@@ -83,10 +83,10 @@ export default LandingNavigation
             <input id="navbar-night-toggle--daynight" type="checkbox" />
             <span class="toggler">
               <span class="dark">
-                <i data-feather="moon"></i>
+                <Icon icon="feather:moon" />
               </span>
               <span class="light">
-                <i data-feather="sun"></i>
+                <Icon icon="feather:sun" />
               </span>
             </span>
           </label>

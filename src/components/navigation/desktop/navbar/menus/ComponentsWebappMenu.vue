@@ -38,31 +38,31 @@ export default ComponentsWebappMenu
                   <li>
                     <a href="/components-avatars.html">
                       <span>Avatars</span>
-                      <i data-feather="circle"></i>
+                      <Icon icon="feather:circle" />
                     </a>
                   </li>
                   <li>
                     <a href="/components-accordion-basic.html">
                       <span>Accordion</span>
-                      <i data-feather="circle"></i>
+                      <Icon icon="feather:circle" />
                     </a>
                   </li>
                   <li>
                     <a href="/components-accordion-collapse.html">
                       <span>Collapse</span>
-                      <i data-feather="circle"></i>
+                      <Icon icon="feather:circle" />
                     </a>
                   </li>
                   <li>
                     <a href="/components-accordion-images.html">
                       <span>Image Accordion</span>
-                      <i data-feather="circle"></i>
+                      <Icon icon="feather:circle" />
                     </a>
                   </li>
                   <li>
                     <a href="/components-breadcrumb.html">
                       <span>Breadcrumb</span>
-                      <i data-feather="circle"></i>
+                      <Icon icon="feather:circle" />
                     </a>
                   </li>
                 </ul>
@@ -73,31 +73,31 @@ export default ComponentsWebappMenu
                   <li>
                     <a href="/components-loader.html">
                       <span>Loader</span>
-                      <i data-feather="circle"></i>
+                      <Icon icon="feather:circle" />
                     </a>
                   </li>
                   <li>
                     <a href="/components-dropdown.html">
                       <span>Dropdown</span>
-                      <i data-feather="circle"></i>
+                      <Icon icon="feather:circle" />
                     </a>
                   </li>
                   <li>
                     <a href="/components-modal.html">
                       <span>Modal Dialogs</span>
-                      <i data-feather="circle"></i>
+                      <Icon icon="feather:circle" />
                     </a>
                   </li>
                   <li>
                     <a href="/components-tabs-regular.html">
                       <span>Regular Tabs</span>
-                      <i data-feather="circle"></i>
+                      <Icon icon="feather:circle" />
                     </a>
                   </li>
                   <li>
                     <a href="/components-tabs-slider.html">
                       <span>Slider Tabs</span>
-                      <i data-feather="circle"></i>
+                      <Icon icon="feather:circle" />
                     </a>
                   </li>
                 </ul>
@@ -108,25 +108,25 @@ export default ComponentsWebappMenu
                   <li>
                     <a href="/components-icon-box.html">
                       <span>Icon Box</span>
-                      <i data-feather="circle"></i>
+                      <Icon icon="feather:circle" />
                     </a>
                   </li>
                   <li>
                     <a href="/components-messages.html">
                       <span>Message</span>
-                      <i data-feather="circle"></i>
+                      <Icon icon="feather:circle" />
                     </a>
                   </li>
                   <li>
                     <a href="/components-progress.html">
                       <span>Progress</span>
-                      <i data-feather="circle"></i>
+                      <Icon icon="feather:circle" />
                     </a>
                   </li>
                   <li>
                     <a href="/components-snacks.html">
                       <span>Snacks</span>
-                      <i data-feather="circle"></i>
+                      <Icon icon="feather:circle" />
                     </a>
                   </li>
                 </ul>
@@ -137,25 +137,25 @@ export default ComponentsWebappMenu
                   <li>
                     <a href="/components-table-flex.html">
                       <span>Base Table</span>
-                      <i data-feather="circle"></i>
+                      <Icon icon="feather:circle" />
                     </a>
                   </li>
                   <li>
                     <a href="/components-table-flex-compact.html">
                       <span>Compact Table</span>
-                      <i data-feather="circle"></i>
+                      <Icon icon="feather:circle" />
                     </a>
                   </li>
                   <li>
                     <a href="/components-table-flex-media.html">
                       <span>Media Table</span>
-                      <i data-feather="circle"></i>
+                      <Icon icon="feather:circle" />
                     </a>
                   </li>
                   <li>
                     <a href="/components-table-flex-advanced.html">
                       <span>Advanced Table</span>
-                      <i data-feather="circle"></i>
+                      <Icon icon="feather:circle" />
                     </a>
                   </li>
                 </ul>
@@ -174,25 +174,25 @@ export default ComponentsWebappMenu
                   <li>
                     <a href="/components-plugins-alertify.html">
                       <span>Alertify</span>
-                      <i data-feather="circle"></i>
+                      <Icon icon="feather:circle" />
                     </a>
                   </li>
                   <li>
                     <a href="/components-plugins-autocomplete.html">
                       <span>Autocomplete</span>
-                      <i data-feather="circle"></i>
+                      <Icon icon="feather:circle" />
                     </a>
                   </li>
                   <li>
                     <a href="/components-plugins-datepicker.html">
                       <span>Datepicker</span>
-                      <i data-feather="circle"></i>
+                      <Icon icon="feather:circle" />
                     </a>
                   </li>
                   <li>
                     <a href="/components-plugins-choices.html">
                       <span>Choices JS</span>
-                      <i data-feather="circle"></i>
+                      <Icon icon="feather:circle" />
                     </a>
                   </li>
                 </ul>
@@ -202,25 +202,25 @@ export default ComponentsWebappMenu
                   <li>
                     <a href="/components-plugins-filepond.html">
                       <span>Filepond</span>
-                      <i data-feather="circle"></i>
+                      <Icon icon="feather:circle" />
                     </a>
                   </li>
                   <li>
                     <a href="/components-plugins-lightgallery.html">
                       <span>Light Gallery</span>
-                      <i data-feather="circle"></i>
+                      <Icon icon="feather:circle" />
                     </a>
                   </li>
                   <li>
                     <a href="/components-plugins-videogallery.html">
                       <span>Video Gallery</span>
-                      <i data-feather="circle"></i>
+                      <Icon icon="feather:circle" />
                     </a>
                   </li>
                   <li>
                     <a href="/components-plugins-video-player.html">
                       <span>Video Player</span>
-                      <i data-feather="circle"></i>
+                      <Icon icon="feather:circle" />
                     </a>
                   </li>
                 </ul>
@@ -230,31 +230,31 @@ export default ComponentsWebappMenu
                   <li>
                     <a href="/components-plugins-toasts.html">
                       <span>Toast Messages</span>
-                      <i data-feather="circle"></i>
+                      <Icon icon="feather:circle" />
                     </a>
                   </li>
                   <li>
                     <a href="/components-plugins-webuipopover.html">
                       <span>WebUI Popovers</span>
-                      <i data-feather="circle"></i>
+                      <Icon icon="feather:circle" />
                     </a>
                   </li>
                   <li>
                     <a href="/components-plugins-nouislider.html">
                       <span>NoUI Slider</span>
-                      <i data-feather="circle"></i>
+                      <Icon icon="feather:circle" />
                     </a>
                   </li>
                   <li>
                     <a href="/components-plugins-editor-summernote.html">
                       <span>Summernote</span>
-                      <i data-feather="circle"></i>
+                      <Icon icon="feather:circle" />
                     </a>
                   </li>
                   <li>
                     <a href="/components-plugins-editor-sun.html">
                       <span>Sun Editor</span>
-                      <i data-feather="circle"></i>
+                      <Icon icon="feather:circle" />
                     </a>
                   </li>
                 </ul>
@@ -267,12 +267,12 @@ export default ComponentsWebappMenu
                 >
                   <img
                     class="light-image"
-                    src="assets/img/icons/misc/buoy.svg"
+                    src="/src/assets/images/icons/misc/buoy.svg"
                     alt=""
                   />
                   <img
                     class="dark-image"
-                    src="assets/img/icons/misc/buoy-dark.svg"
+                    src="/src/assets/images/icons/misc/buoy-dark.svg"
                     alt=""
                   />
                   <h3>Support</h3>
@@ -284,12 +284,12 @@ export default ComponentsWebappMenu
                 >
                   <img
                     class="light-image"
-                    src="assets/img/icons/misc/docs.svg"
+                    src="/src/assets/images/icons/misc/docs.svg"
                     alt=""
                   />
                   <img
                     class="dark-image"
-                    src="assets/img/icons/misc/docs-dark.svg"
+                    src="/src/assets/images/icons/misc/docs-dark.svg"
                     alt=""
                   />
                   <h3>Documentation</h3>

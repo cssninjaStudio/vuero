@@ -19,7 +19,7 @@ export default FlexTableContextMenu
     class="dropdown is-spaced is-dots is-right dropdown-trigger is-pushed-mobile"
   >
     <div class="is-trigger" aria-haspopup="true">
-      <i data-feather="more-vertical"></i>
+      <Icon icon="feather:more-vertical" />
     </div>
     <div class="dropdown-menu" role="menu">
       <div class="dropdown-content">

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 800 600" style="enable-background:new 0 0 800 600;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;stroke:#671CC9;stroke-width:5;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#671CC9;stroke-width:5;stroke-miterlimit:10;}
+	.st2{fill:#FFFFFF;stroke:#671CC9;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<path class="st0" d="M626.9,203.5h18.7c4.8,0,8.6,3.9,8.6,8.6v307c0,4.8-3.9,8.6-8.6,8.6H344.7c-4.8,0-8.6-3.9-8.6-8.6v-307
+	c0-4.8,3.9-8.6,8.6-8.6h233.7h9.2c0.4,0,0.7-0.2,1-0.5l12.3-17.3c0.5-0.7,1.5-0.7,2,0l10.8,16.7c0.2,0.3,0.6,0.5,1,0.5L626.9,203.5z
+	"/>
+<rect x="145.7" y="72.3" class="st0" width="508.5" height="85.5"/>
+<circle class="st0" cx="410" cy="290.2" r="29.2"/>
+<circle class="st0" cx="206.7" cy="115" r="19.2"/>
+<circle class="st0" cx="410" cy="367.9" r="29.2"/>
+<circle class="st0" cx="410" cy="445.5" r="29.2"/>
+<line class="st1" x1="468" y1="290.2" x2="600" y2="290.2"/>
+<line class="st1" x1="270.1" y1="115" x2="402.1" y2="115"/>
+<line class="st1" x1="468" y1="367.9" x2="600" y2="367.9"/>
+<line class="st1" x1="468" y1="445.5" x2="600" y2="445.5"/>
+<polyline class="st2" points="583.5,111.1 590.7,119 597,111.1 "/>
+</svg>

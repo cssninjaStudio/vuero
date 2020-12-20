@@ -1,0 +1,760 @@
+/*! _projects.scss | Huro | Css ninja 2020-2021 */
+
+/*
+    1. Projects Toolbar
+    2. Projects Grid
+    3. Projects Grid Dark mode
+*/
+
+/* ==========================================================================
+1. Projects Toolbar
+========================================================================== */
+
+.projects-toolbar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .avatar-stack {
+        margin-left: 16px;
+    }
+
+    .button {
+        margin-left: auto;
+        min-width: 140px;
+    }
+}
+
+/* ==========================================================================
+2. Projects Grid
+========================================================================== */
+
+.all-projects {
+    .section-heading {
+        font-family: $font-alt;
+        font-size: .85rem;
+        text-transform: uppercase;
+        color: $light-text;
+        margin-bottom: 1rem;
+    }
+
+    .project-grid {
+        margin-bottom: 1.5rem;
+
+        .project-grid-item {
+            @extend .s-card;
+
+            text-align: center;
+            box-shadow: none;
+
+            &:hover {
+                border-color: darken($fade-grey, 6%);
+                box-shadow: $light-box-shadow;
+
+                .project-avatar {
+                    filter: grayscale(0);
+                    opacity: 1;
+                }
+            }
+
+            .project-avatar {
+                display: block;
+                height: 40px;
+                width: 40px;
+                border-radius: 10px;
+                margin: 0 auto 10px auto;
+                filter: grayscale(1);
+                opacity: .6;
+                transition: all .3s;
+            }
+
+            h3 {
+                font-size: .95rem;
+                font-family: $font-alt;
+                font-weight: 600;
+                color: $dark-text;
+            }
+
+            p {
+                font-size: .9rem;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+3. Projects Grid dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .all-projects {
+            .project-grid {
+                .project-grid-item {
+                    h3 {
+                        color: $dark-dark-text;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+4. Projects Grid V2
+========================================================================== */
+
+.all-projects {
+    .all-projects-header {
+        display: flex;
+        padding: 20px;
+        background: $white;
+        border: 1px solid darken($fade-grey, 3%);
+        border-radius: 6px;
+        margin-bottom: 1.5rem;
+
+        .header-item {
+            width: 25%;
+            border-right: 1px solid darken($fade-grey, 3%);
+
+            &:last-child {
+                border-right: none;
+            }
+
+            .item-inner {
+                text-align: center;
+
+                .lnil, .lnir {
+                    font-size: 2.2rem;
+                    margin-bottom: 6px;
+                    color: $primary;
+                }
+
+                span {
+                    display: block;
+                    font-family: $font;
+                    font-weight: 600;
+                    font-size: 1.4rem;
+                    color: $dark-text;
+                }
+
+                p {
+                    font-family: $font-alt;
+                }
+            }
+        }
+    }
+
+    .projects-card-grid {
+        .grid-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 220px;
+            padding: 20px;
+            background: $white;
+            border: 1px solid darken($fade-grey, 3%);
+            border-radius: 6px;
+
+            .top-section {
+                .head {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 8px;
+
+                    h3 {
+                        font-size: 1rem;
+                        font-family: $font-alt;
+                        color: $dark-text;
+                        font-weight: 600;
+                    }
+                }
+
+                .body {
+                    p {
+                        font-family: $font;
+                        color: $light-text;
+                    }
+                }
+            }
+
+            .bottom-section {
+                display: flex;
+
+                .foot-block {
+                    margin-right: 30px;
+
+                    .heading {
+                        font-family: $font-alt;
+                        font-size: .75rem;
+                        color: darken($light-text, 22%);
+                    }
+
+                    > p {
+                        padding-top: 5px;
+                    }
+
+                    .developers {
+                        display: flex;
+
+                        .h-avatar {
+                            margin-right: 6px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+5. Projects Grid V2 dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .all-projects {
+            .all-projects-header {
+                background: lighten($dark-sidebar, 6%);
+                border-color: lighten($dark-sidebar, 12%);
+
+                .header-item {
+                    border-color: lighten($dark-sidebar, 18%);
+
+                    span {
+                        color: $dark-dark-text;
+                    }
+
+                    i {
+                        color: $accent !important;
+                    }
+                }
+            }
+
+            .projects-card-grid {
+                .grid-item {
+                    background: lighten($dark-sidebar, 6%);
+                    border-color: lighten($dark-sidebar, 12%);
+
+                    .top-section {
+                        .head {
+                            h3 {
+                                color: $dark-dark-text;
+                            }
+                        }
+                    }
+
+                    .bottom-section {
+                        .foot-block {
+                            .heading {
+                                color: darken($light-text, 12%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+5. Projects Grid V3
+========================================================================== */
+
+.all-projects {
+
+    &.is-webapp {
+        padding-top: 20px;
+    }
+    
+    .illustration-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+            display: block;
+            max-width: 260px;
+        }
+
+        .header-stats {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            flex-grow: 2;
+
+            .stats-inner {
+                display: flex;
+                align-items: center;
+                padding: 20px;
+                background: $white;
+                border: 1px solid darken($fade-grey, 3%);
+                border-radius: 6px;
+
+                .stat-item {
+                    text-align: center;
+                    margin: 0 20px;
+
+                    span {
+                        position: relative;
+                        display: block;
+                        font-family: $font;
+                        font-weight: 600;
+                        font-size: 2rem;
+                        color: $dark-text;
+                        line-height: 1;
+                        width: 75px;
+                        margin: 0 auto;
+
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            right: 6px;
+                            height: 8px;
+                            width: 8px;
+                            border-radius: 50%;
+                        }
+
+                        &.is-success {
+                            &:after {
+                                background: $success;
+                            }
+                        }
+
+                        &.is-info {
+                            &:after {
+                                background: $info;
+                            }
+                        }
+
+                        &.is-warning {
+                            &:after {
+                                background: $warning;
+                            }
+                        }
+
+                        &.is-primary {
+                            &:after {
+                                background: $primary;
+                            }
+                        }
+                    }
+
+                    p {
+                        font-family: $font-alt;
+                        font-size: .9rem;
+                        color: $light-text;
+                    }
+                }
+            }
+        }
+    }
+
+    .recent-projects {
+        padding: 20px 0;
+
+        .recent-heading {
+            font-family: $font-alt;
+            font-size: .8rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            color: $light-text;
+            margin-bottom: 1rem;
+        }
+
+        .project-box {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background: $white;
+            border: 1px solid darken($fade-grey, 3%);
+            border-radius: 8px;
+            transition: all .3s;
+
+            &:hover {
+                box-shadow: $light-box-shadow;
+            }
+
+            h3 {
+                font-family: $font-alt;
+                font-size: 1.1rem;
+                font-weight: 600;
+                color: $dark-text;
+                margin-left: 16px;
+                line-height: 1.2;
+            }
+        }
+    }
+
+    .project-minimal-grid {
+        .grid-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            h3 {
+                font-family: $font-alt;
+                font-size: 1.5rem;
+                font-weight: 700;
+                color: $dark-text;
+                margin-left: 16px;
+                line-height: 1.2;
+            }
+
+            .filter {
+                display: flex;
+                align-items: center;
+                background: $white;
+                padding: 8px 24px;
+                border-radius: 100px;
+
+                > span {
+                    font-family: $font-alt;
+                    font-size: .85rem;
+                    font-weight: 600;
+                    color: $dark-text;
+                    margin-right: 30px;
+                }
+
+                .h-select {
+                    .select-box {
+                        border: none;
+                    }
+                }
+            }
+        }
+
+        .grid-body {
+            padding: 20px 0;
+
+            .grid-item {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 26px;
+                background: $white;
+                border: 1px solid darken($fade-grey, 3%);
+                border-radius: 8px;
+                transition: all .3s;
+
+                &:hover {
+                    box-shadow: $light-box-shadow;
+
+                    .item-title {
+                        h3 {
+                            opacity: .6;
+                        }
+                    }
+                }
+
+                .item-head {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    font-family: $font;
+
+                    .type {
+                        text-transform: uppercase;
+                        color: $light-text;
+                        font-size: .8rem;
+                        font-weight: 600;
+                    }
+
+                    .status {
+                        text-transform: uppercase;
+                        font-size: .75rem;
+                        font-family: $font-alt;
+                        font-weight: 600;
+
+                        &.is-success {
+                            color: $success;
+                        }
+
+                        &.is-info {
+                            color: $info;
+                        }
+
+                        &.is-warning {
+                            color: $warning;
+                        }
+
+                        &.is-danger {
+                            color: $danger;
+                        }
+                    }
+                }
+
+                .item-title {
+                    padding: 40px 0 40px 0;
+
+                    h3 {
+                        font-family: $font-alt;
+                        font-size: 1.3rem;
+                        font-weight: 700;
+                        color: $dark-text;
+                        line-height: 1.2;
+                        margin-bottom: 8px;
+                        transition: all .3s;
+                    }
+                }
+
+                .item-description {
+                    p {
+                        font-size: 1rem;
+                    }
+
+                    .item-people {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding-top: 20px;
+
+                        .label {
+                            font-family: $font;
+                            color: $light-text;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+6. Projects Grid V3 dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .all-projects {
+            .illustration-header {
+                .header-stats {
+                    .stats-inner {
+                        background: lighten($dark-sidebar, 6%);
+                        border-color: lighten($dark-sidebar, 12%);
+
+                        .stat-item {
+                            span {
+                                color: $dark-dark-text;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .recent-projects {
+                .project-box {
+                    background: lighten($dark-sidebar, 6%);
+                    border-color: lighten($dark-sidebar, 12%);
+
+                    h3 {
+                        color: $dark-dark-text;
+                    }
+                }
+            }
+
+            .project-minimal-grid {
+                .grid-header {
+                    h3 {
+                        color: $dark-dark-text;
+                    }
+
+                    .filter {
+                        background: lighten($dark-sidebar, 1%) !important;
+                        border-color: lighten($dark-sidebar, 4%) !important;
+
+                        > span {
+                            color: $dark-dark-text;
+                        }
+                    }
+                }
+
+                .grid-body {
+                    .grid-item {
+                        background: lighten($dark-sidebar, 6%);
+                        border-color: lighten($dark-sidebar, 12%);
+
+                        .item-title {
+                            h3 {
+                                color: $dark-dark-text;
+                            }
+                        }
+
+                        .h-avatar {
+                            img {
+                                border-color: lighten($dark-sidebar, 6%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* ==========================================================================
+8. Media Queries
+========================================================================== */
+
+@media only screen and (max-width: 767px) {
+    .all-projects {
+        .projects-toolbar {
+            .avatar-stack {
+                display: none;
+            }
+
+            .h-button {
+                min-width: 110px;
+            }
+        }
+
+        .all-projects-header {
+            flex-direction: column;
+
+            .header-item {
+                width: 100%;
+                border-right: none;
+                border-bottom: 1px solid darken($fade-grey, 3%);
+                padding: 16px 0;
+
+                &:last-child {
+                    border-bottom: none;
+                }
+            }
+        }
+
+        .projects-card-grid {
+            .grid-item {
+                .bottom-section {
+                    flex-wrap: wrap;
+
+                    .foot-block {
+                        &:first-child {
+                            width: 100%;
+                            margin: 0;
+                            text-align: center;
+                            padding: 16px 0;
+
+                            .developers {
+                                justify-content: center;
+
+                                .h-avatar {
+                                    margin: 0 4px;
+                                }
+                            }
+                        }
+
+                        &:not(:first-child) {
+                            width: 33.3%;
+                            text-align: center;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        .illustration-header {
+            > img {
+                display: none !important;
+            }
+
+            .header-stats {
+                .stats-inner {
+                    flex-wrap: wrap;
+
+                    .stat-item {
+                        width: 50%;
+                        margin: 0;
+                        padding: 16px 0;
+                    }
+                }
+            }
+        }
+
+        .project-minimal-grid {
+            .grid-header {
+                .filter {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    
+    .all-projects {
+        .illustration-header {
+            > img {
+                display: none !important;
+            }
+
+            .header-stats {
+                .stats-inner {
+                    width: 100%;
+
+                    .stat-item {
+                        width: 25%;
+                    }
+                }
+            }
+        }
+
+        .project-minimal-grid {
+            .grid-body {
+                display: flex;
+
+                .column {
+                    min-width: 50%;
+                }
+            }
+        }
+    }
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+    .all-projects {
+        .illustration-header {
+            .header-stats {
+                .stats-inner {
+                    .stat-item {
+                        width: 25%;
+                    }
+                }
+            }
+        }
+
+        .recent-projects {
+            .project-box {
+                h3 {
+                    font-size: 1.1rem;
+                }
+            }
+        }
+
+        .project-minimal-grid {
+            .grid-body {
+                .grid-item {
+                    .item-title {
+                        padding: 30px 0;
+
+                        h3 {
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

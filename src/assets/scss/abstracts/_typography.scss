@@ -1,0 +1,184 @@
+/*! _typography.scss | Huro | Css ninja 2020-2021 */
+
+/*
+    1. Titles
+    2. Titles Dark mode
+    3. Typography Helpers
+*/
+
+/* ==========================================================================
+1. Titles
+========================================================================== */
+
+$font: 'Roboto', sans-serif;
+$font-alt: 'Montserrat', sans-serif;
+
+.title {
+    font-family: $font-alt;
+    color: $dark-text;
+
+    &.is-narrow {
+        margin-bottom: 0;
+    }
+
+    &.is-thin {
+        font-weight: 300;
+    }
+
+    &.is-heavy {
+        font-weight: 600;
+    }
+
+    &.is-bold {
+        font-weight: 700;
+    }
+
+    &.is-bolder {
+        font-weight: 800;
+    }
+}
+
+.subtitle {
+    font-family: $font;
+    color: $dark-text;
+
+    &.is-narrow {
+        margin-bottom: 0;
+    }
+
+    &.is-thin {
+        font-weight: 300;
+    }
+
+    &.is-heavy {
+        font-weight: 600;
+    }
+
+    &.is-bold {
+        font-weight: 700;
+    }
+
+    &.is-bolder {
+        font-weight: 800;
+    }
+}
+
+p {
+    font-family: $font;
+    font-weight: 300;
+    color: $light-text;
+
+    &.white-text {
+        color: $white;
+    }
+}
+
+div {
+    color: $dark-text;
+}
+
+var {
+    font-style: normal;
+}
+
+.font-size-base {
+    font-size: 1rem;
+}
+
+.has-dark-text {
+    color: $dark-text;
+}
+
+/* ==========================================================================
+2. Titles Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .title, .dark-inverted {
+            color: $dark-dark-text !important;
+        }
+
+        .subtitle {
+            color: $light-text;
+        }
+
+        a {
+            &.dark-inverted {
+                color: $accent !important;
+            }
+
+            &.dark-inverted-hover:hover {
+                color: $accent !important;
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+3. Typography Helpers
+========================================================================== */
+
+.is-font {
+    font-family: $font;
+}
+
+.is-font-alt {
+    font-family: $font-alt !important;
+}
+
+.is-weight-300 {
+    font-weight: 300 !important;
+}
+
+.is-weight-400 {
+    font-weight: 400 !important;
+}
+
+.is-weight-500 {
+    font-weight: 500 !important;
+}
+
+.is-weight-600 {
+    font-weight: 600 !important;
+}
+
+.is-weight-700 {
+    font-weight: 700 !important;
+}
+
+.is-weight-500 {
+    font-weight: 500 !important;
+}
+
+.is-weight-900 {
+    font-weight: 900 !important;
+}
+
+.rem-70 {
+    font-size: .7rem;
+}
+
+.rem-75 {
+    font-size: .75rem;
+}
+
+.rem-80 {
+    font-size: .8rem;
+}
+
+.rem-85 {
+    font-size: .85rem;
+}
+
+.rem-90 {
+    font-size: .9rem;
+}
+
+.rem-95 {
+    font-size: .95rem;
+}
+
+.rem-100 {
+    font-size: 1rem;
+}

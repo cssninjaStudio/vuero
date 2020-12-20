@@ -22,7 +22,7 @@ export default ActivityPanel
       <div class="right-panel-head">
         <h3>Activity</h3>
         <a class="close-panel">
-          <i data-feather="chevron-right"></i>
+          <Icon icon="feather:chevron-right" />
         </a>
       </div>
       <div class="tabs-wrapper is-triple-slider is-squared">
@@ -51,25 +51,25 @@ export default ActivityPanel
                 <img
                   class="avatar"
                   src="https://via.placeholder.com/150x150"
-                  data-demo-src="assets/img/avatars/photos/12.jpg"
+                  data-demo-src="/src/assets/images/avatars/photos/12.jpg"
                   alt=""
                 />
                 <img
                   class="badge"
                   src="https://via.placeholder.com/150x150"
-                  data-demo-src="assets/img/icons/flags/united-states-of-america.svg"
+                  data-demo-src="/src/assets/images/icons/flags/united-states-of-america.svg"
                   alt=""
                 />
               </div>
               <div class="meta">
                 <span>Joshua S.</span>
                 <span>
-                  <i data-feather="map-pin"></i>
+                  <Icon icon="feather:map-pin" />
                   Las Vegas, NV
                 </span>
               </div>
               <a class="link">
-                <i data-feather="arrow-right"></i>
+                <Icon icon="feather:arrow-right" />
               </a>
             </div>
 
@@ -79,25 +79,25 @@ export default ActivityPanel
                 <img
                   class="avatar"
                   src="https://via.placeholder.com/150x150"
-                  data-demo-src="assets/img/avatars/photos/25.jpg"
+                  data-demo-src="/src/assets/images/avatars/photos/25.jpg"
                   alt=""
                 />
                 <img
                   class="badge"
                   src="https://via.placeholder.com/150x150"
-                  data-demo-src="assets/img/icons/flags/united-states-of-america.svg"
+                  data-demo-src="/src/assets/images/icons/flags/united-states-of-america.svg"
                   alt=""
                 />
               </div>
               <div class="meta">
                 <span>Melany W.</span>
                 <span>
-                  <i data-feather="map-pin"></i>
+                  <Icon icon="feather:map-pin" />
                   San Jose, CA
                 </span>
               </div>
               <a class="link">
-                <i data-feather="arrow-right"></i>
+                <Icon icon="feather:arrow-right" />
               </a>
             </div>
 
@@ -107,25 +107,25 @@ export default ActivityPanel
                 <img
                   class="avatar"
                   src="https://via.placeholder.com/150x150"
-                  data-demo-src="assets/img/avatars/photos/18.jpg"
+                  data-demo-src="/src/assets/images/avatars/photos/18.jpg"
                   alt=""
                 />
                 <img
                   class="badge"
                   src="https://via.placeholder.com/150x150"
-                  data-demo-src="assets/img/icons/flags/united-states-of-america.svg"
+                  data-demo-src="/src/assets/images/icons/flags/united-states-of-america.svg"
                   alt=""
                 />
               </div>
               <div class="meta">
                 <span>Esteban C.</span>
                 <span>
-                  <i data-feather="map-pin"></i>
+                  <Icon icon="feather:map-pin" />
                   Miami, FL
                 </span>
               </div>
               <a class="link">
-                <i data-feather="arrow-right"></i>
+                <Icon icon="feather:arrow-right" />
               </a>
             </div>
 
@@ -135,25 +135,25 @@ export default ActivityPanel
                 <img
                   class="avatar"
                   src="https://via.placeholder.com/150x150"
-                  data-demo-src="assets/img/avatars/photos/13.jpg"
+                  data-demo-src="/src/assets/images/avatars/photos/13.jpg"
                   alt=""
                 />
                 <img
                   class="badge"
                   src="https://via.placeholder.com/150x150"
-                  data-demo-src="assets/img/icons/flags/united-states-of-america.svg"
+                  data-demo-src="/src/assets/images/icons/flags/united-states-of-america.svg"
                   alt=""
                 />
               </div>
               <div class="meta">
                 <span>Tara S.</span>
                 <span>
-                  <i data-feather="map-pin"></i>
+                  <Icon icon="feather:map-pin" />
                   New York, NY
                 </span>
               </div>
               <a class="link">
-                <i data-feather="arrow-right"></i>
+                <Icon icon="feather:arrow-right" />
               </a>
             </div>
           </div>
@@ -165,7 +165,7 @@ export default ActivityPanel
                 <img
                   class="project-avatar"
                   src="https://via.placeholder.com/150x150"
-                  data-demo-src="assets/img/icons/logos/slicer.svg"
+                  data-demo-src="/src/assets/images/icons/logos/slicer.svg"
                   alt=""
                 />
                 <div class="meta">
@@ -173,7 +173,7 @@ export default ActivityPanel
                   <span>getslicer.io</span>
                 </div>
                 <a class="link">
-                  <i data-feather="arrow-right"></i>
+                  <Icon icon="feather:arrow-right" />
                 </a>
               </div>
               <div class="project-foot">
@@ -192,7 +192,7 @@ export default ActivityPanel
                       <img
                         class="avatar"
                         src="https://via.placeholder.com/150x150"
-                        data-demo-src="assets/img/avatars/photos/7.jpg"
+                        data-demo-src="/src/assets/images/avatars/photos/7.jpg"
                         alt=""
                       />
                     </div>
@@ -200,7 +200,7 @@ export default ActivityPanel
                       <img
                         class="avatar"
                         src="https://via.placeholder.com/150x150"
-                        data-demo-src="assets/img/avatars/photos/5.jpg"
+                        data-demo-src="/src/assets/images/avatars/photos/5.jpg"
                         alt=""
                       />
                     </div>
@@ -208,7 +208,7 @@ export default ActivityPanel
                       <img
                         class="avatar"
                         src="https://via.placeholder.com/150x150"
-                        data-demo-src="assets/img/avatars/photos/8.jpg"
+                        data-demo-src="/src/assets/images/avatars/photos/8.jpg"
                         alt=""
                       />
                     </div>
@@ -223,7 +223,7 @@ export default ActivityPanel
                 <img
                   class="project-avatar"
                   src="https://via.placeholder.com/150x150"
-                  data-demo-src="assets/img/icons/logos/metamovies.svg"
+                  data-demo-src="/src/assets/images/icons/logos/metamovies.svg"
                   alt=""
                 />
                 <div class="meta">
@@ -231,7 +231,7 @@ export default ActivityPanel
                   <span>metamovies.co</span>
                 </div>
                 <a class="link">
-                  <i data-feather="arrow-right"></i>
+                  <Icon icon="feather:arrow-right" />
                 </a>
               </div>
               <div class="project-foot">
@@ -250,7 +250,7 @@ export default ActivityPanel
                       <img
                         class="avatar"
                         src="https://via.placeholder.com/150x150"
-                        data-demo-src="assets/img/avatars/photos/13.jpg"
+                        data-demo-src="/src/assets/images/avatars/photos/13.jpg"
                         alt=""
                       />
                     </div>
@@ -258,7 +258,7 @@ export default ActivityPanel
                       <img
                         class="avatar"
                         src="https://via.placeholder.com/150x150"
-                        data-demo-src="assets/img/avatars/photos/18.jpg"
+                        data-demo-src="/src/assets/images/avatars/photos/18.jpg"
                         alt=""
                       />
                     </div>
@@ -273,7 +273,7 @@ export default ActivityPanel
                 <img
                   class="project-avatar"
                   src="https://via.placeholder.com/150x150"
-                  data-demo-src="assets/img/icons/logos/fastpizza.svg"
+                  data-demo-src="/src/assets/images/icons/logos/fastpizza.svg"
                   alt=""
                 />
                 <div class="meta">
@@ -281,7 +281,7 @@ export default ActivityPanel
                   <span>fastpizza.com</span>
                 </div>
                 <a class="link">
-                  <i data-feather="arrow-right"></i>
+                  <Icon icon="feather:arrow-right" />
                 </a>
               </div>
               <div class="project-foot">
@@ -300,7 +300,7 @@ export default ActivityPanel
                       <img
                         class="avatar"
                         src="https://via.placeholder.com/150x150"
-                        data-demo-src="assets/img/avatars/photos/7.jpg"
+                        data-demo-src="/src/assets/images/avatars/photos/7.jpg"
                         alt=""
                       />
                     </div>
@@ -308,7 +308,7 @@ export default ActivityPanel
                       <img
                         class="avatar"
                         src="https://via.placeholder.com/150x150"
-                        data-demo-src="assets/img/avatars/photos/25.jpg"
+                        data-demo-src="/src/assets/images/avatars/photos/25.jpg"
                         alt=""
                       />
                     </div>
@@ -324,7 +324,7 @@ export default ActivityPanel
               <!--Timeline item-->
               <div class="timeline-item">
                 <div class="timeline-icon">
-                  <i data-feather="phone-call"></i>
+                  <Icon icon="feather:phone-call" />
                 </div>
                 <div class="timeline-content">
                   <p>Call Danny at Colby's</p>
@@ -337,7 +337,7 @@ export default ActivityPanel
                   <img
                     class="avatar"
                     src="https://via.placeholder.com/150x150"
-                    data-demo-src="assets/img/avatars/photos/7.jpg"
+                    data-demo-src="/src/assets/images/avatars/photos/7.jpg"
                     alt=""
                   />
                 </div>
@@ -349,7 +349,7 @@ export default ActivityPanel
               <!--Timeline item-->
               <div class="timeline-item">
                 <div class="timeline-icon">
-                  <i data-feather="message-circle"></i>
+                  <Icon icon="feather:message-circle" />
                 </div>
                 <div class="timeline-content">
                   <p>Answer Annie's message</p>
@@ -359,7 +359,7 @@ export default ActivityPanel
               <!--Timeline item-->
               <div class="timeline-item">
                 <div class="timeline-icon">
-                  <i data-feather="mail"></i>
+                  <Icon icon="feather:mail" />
                 </div>
                 <div class="timeline-content">
                   <p>Send new campaign</p>
@@ -369,7 +369,7 @@ export default ActivityPanel
               <!--Timeline item-->
               <div class="timeline-item">
                 <div class="timeline-icon">
-                  <i data-feather="smile"></i>
+                  <Icon icon="feather:smile" />
                 </div>
                 <div class="timeline-content">
                   <p>Project review</p>
@@ -379,7 +379,7 @@ export default ActivityPanel
               <!--Timeline item-->
               <div class="timeline-item">
                 <div class="timeline-icon">
-                  <i data-feather="phone-call"></i>
+                  <Icon icon="feather:phone-call" />
                 </div>
                 <div class="timeline-content">
                   <p>Call Trisha Jackson</p>
@@ -389,7 +389,7 @@ export default ActivityPanel
               <!--Timeline item-->
               <div class="timeline-item">
                 <div class="timeline-icon">
-                  <i data-feather="feather"></i>
+                  <Icon icon="feather:feather" />
                 </div>
                 <div class="timeline-content">
                   <p>Write proposal for Don</p>

@@ -1,0 +1,300 @@
+/*! _snacks.scss | Huro | Css ninja 2020-2021 */
+
+/*
+    1. Snacks
+    2. Snacks Dark mode
+*/
+
+/* ==========================================================================
+1. Snacks
+========================================================================== */
+
+.snacks {
+    display: flex;
+    flex-wrap: wrap;
+
+    .snack {
+        margin: 0 8px 16px 8px;
+    }
+}
+
+.snack {
+    display: inline-block;
+    background: lighten($fade-grey, 2%);
+    height: 38px;
+    width: auto;
+    border-radius: 500px;
+    border: 1px solid darken($fade-grey, 3%);
+    transition: all .3s;
+
+    &:hover {
+        box-shadow: $light-box-shadow;
+    }
+
+    &.is-white {
+        background: $white;
+    }
+
+    &.is-small {
+        height: 30px;
+
+        .snack-media {
+            height: 32px;
+            width: 32px;
+            margin-right: 4px;
+
+            &.is-icon {
+                height: 30px;
+                width: 30px;
+
+                svg {
+                    height: 15px;
+                    width: 15px;
+                }
+
+                .fas, .far, .fad, .fal, .fab {
+                    font-size: 13px;
+                }
+    
+                .lnil, .lnir {
+                    font-size: 16px;
+                }
+            }
+
+            img {
+                height: 30px;
+                width: 30px;
+            }
+        }
+
+        .snack-text {
+            font-size: .9rem;
+            top: -12px;
+        }
+
+        .snack-action {
+            top: -9px;
+            margin: 0 10px 0 6px;
+        }
+    }
+
+    .snack-media {
+        position: relative;
+        top: -1px;
+        height: 40px;
+        width: 40px;
+        display: inline-block;
+        margin-right: 6px;
+
+        &.is-icon {
+            position: relative;
+            left: -1px;
+            height: 38px;
+            width: 38px;
+            background: $white;
+            border: 1px solid darken($fade-grey, 3%);
+            border-radius: 50%;
+
+            &.is-solid {
+                .fas, .far, .fad, .fal, .fab, .lnil, .lnir {
+                    color: $white !important;
+                }
+            }
+
+            &.is-primary {
+                border-color: $primary;
+
+                &.is-solid {
+                    background: $primary;
+
+                    svg {
+                        stroke: $white;
+                    }
+                }
+
+                svg {
+                    stroke: $primary;
+                }
+
+                .fas, .far, .fad, .fal, .fab, .lnil, .lnir {
+                    color: $primary;
+                }
+            }
+
+            &.is-success {
+                border-color: $success;
+
+                &.is-solid {
+                    background: $success;
+
+                    svg {
+                        stroke: $white;
+                    }
+                }
+
+                svg {
+                    stroke: $success;
+                }
+
+                .fas, .far, .fad, .fal, .fab, .lnil, .lnir {
+                    color: $success;
+                }
+            }
+
+            &.is-info {
+                border-color: $info;
+
+                &.is-solid {
+                    background: $info;
+
+                    svg {
+                        stroke: $white;
+                    }
+                }
+
+                svg {
+                    stroke: $info;
+                }
+
+                .fas, .far, .fad, .fal, .fab, .lnil, .lnir {
+                    color: $info;
+                }
+            }
+
+            &.is-warning {
+                border-color: $warning;
+
+                &.is-solid {
+                    background: $warning;
+
+                    svg {
+                        stroke: $white;
+                    }
+                }
+
+                svg {
+                    stroke: $warning;
+                }
+
+                .fas, .far, .fad, .fal, .fab, .lnil, .lnir {
+                    color: $warning;
+                }
+            }
+
+            &.is-danger {
+                border-color: $danger;
+
+                &.is-solid {
+                    background: $danger;
+
+                    svg {
+                        stroke: $white;
+                    }
+                }
+
+                svg {
+                    stroke: $danger;
+                }
+
+                .fas, .far, .fad, .fal, .fab, .lnil, .lnir {
+                    color: $danger;
+                }
+            }
+
+            .snack-icon {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            svg {
+                height: 18px;
+                width: 18px;
+                stroke-width: 1.6px;
+                stroke: $light-text;
+            }
+
+            .fas, .far, .fad, .fal, .fab {
+                font-size: 15px;
+                color: $light-text;
+            }
+
+            .lnil, .lnir {
+                font-size: 18px;
+                color: $light-text;
+            }
+        }
+
+        img {
+            display: inline-block;
+            height: 38px;
+            width: 38px;
+            border-radius: 50%;
+        }
+    }
+
+    .snack-text {
+        display: inline-block;
+        position: relative;
+        top: -15px;
+        color: $dark-text;
+    }
+
+    .snack-action {
+        position: relative;
+        top: -12px;
+        display: inline-block;
+        margin: 0 16px 0 10px;
+        cursor: pointer;
+
+        svg {
+            height: 14px;
+            width: 14px;
+            stroke: $light-text;
+        }
+    }
+}
+
+
+/* ==========================================================================
+2. Snacks Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .snack {
+            background: lighten($dark-sidebar, 2%);
+            border-color: lighten($dark-sidebar, 4%);
+
+            .snack-media {
+                &.is-icon {
+                    &:not(.is-solid)  {
+                        background: lighten($dark-sidebar, 4%);
+                    }
+
+                    &.is-primary:not(.is-solid) {
+                        border-color: $accent;
+        
+                        svg {
+                            stroke: $accent;
+                        }
+        
+                        .fas, .far, .fad, .fab, .fal, .lnil, .lnir {
+                            color: $accent;
+                        }
+                    }
+
+                    &.is-primary.is-solid {
+                        background: $accent;
+                        border-color: $accent;
+                    }
+                }
+            }
+
+            .snack-text {
+                color: $dark-dark-text;
+            }
+        }
+    }
+}

@@ -1,0 +1,255 @@
+/*! _blocks.scss | Huro | Css ninja 2020-2021 */
+
+/*
+    1. Media Flex
+    2. Media Flex Center
+    3. Flex Blocks Dark mode
+    4. Media Flex responsive modifiers
+*/
+
+/* ==========================================================================
+1. Media Flex
+========================================================================== */
+
+.media-flex {
+    display: flex;
+    margin-bottom: 1rem;
+
+    &:last-child, &.no-margin {
+        margin-bottom: 0;
+    }
+
+    .flex-meta {
+        margin-left: 12px;
+        line-height: 1.3;
+
+        &.is-lighter {
+            span, > a {
+                &:first-child {
+                    font-weight: 400;
+                }
+            }
+        }
+
+        &.is-light {
+            span, > a {
+                &:first-child {
+                    font-weight: 500;
+                }
+            }
+        }
+
+        span, > a {
+            display: block;
+
+            &:first-child {
+                font-family: $font-alt;
+                color: $dark-text;
+                font-weight: 600;
+            }
+
+            &:nth-child(2) {
+                font-family: $font;
+                color: $light-text;
+                font-size: .9rem;
+            }
+        }
+
+        a:hover {
+            color: $primary;
+        }
+    }
+
+    .flex-end {
+        margin-left: auto;
+        display: flex;
+        justify-content: flex-end;
+
+        .end-action {
+            margin-left: 1rem;
+        }
+    }
+}
+
+/* ==========================================================================
+2. Media Flex Center
+========================================================================== */
+
+.media-flex-center {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    &:last-child, &.no-margin {
+        margin-bottom: 0;
+    }
+
+    .flex-meta {
+        margin-left: 12px;
+        line-height: 1.4;
+
+        &.is-lighter {
+            span, > a {
+                &:first-child {
+                    font-weight: 400;
+                }
+            }
+        }
+
+        &.is-light {
+            span, > a {
+                &:first-child {
+                    font-weight: 500;
+                }
+            }
+        }
+
+        span, > a {
+            display: block;
+
+            &:first-child {
+                font-family: $font-alt;
+                font-size: .95rem;
+                color: $dark-text;
+                font-weight: 600;
+            }
+
+            &:nth-child(2) {
+                font-family: $font;
+                color: $light-text;
+                font-size: .9rem;
+            }
+        }
+
+        a:hover {
+            color: $primary;
+        }
+    }
+
+    .flex-end {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        .end-action {
+            margin-left: 1rem;
+        }
+    }
+}
+
+/* ==========================================================================
+3. Flex Blocks Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .media-flex-center, .media-flex {
+            .flex-meta {
+                span, a {
+                    &:first-child {
+                        color: $dark-dark-text;
+                    }
+                }
+
+                a:hover {
+                    color: $accent;
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+4. Media Flex responsive modifiers
+========================================================================== */
+
+@media only screen and (max-width: 767px) {
+    .media-flex, .media-flex-center {
+        &.is-responsive-mobile {
+            flex-direction: column;
+            text-align: center;
+
+            .h-avatar, .h-icon {
+                display: block;
+                margin: 0 auto;
+            }
+
+            .flex-meta {
+                margin: 10px auto 16px auto;
+            }
+
+            .flex-end {
+                margin: 0 auto 10px auto;
+
+                .end-action {
+                    margin-left: 0;
+                }
+
+                .button {
+                    min-width: 140px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    .media-flex, .media-flex-center {
+        &.is-responsive-tablet-p {
+            flex-direction: column;
+            text-align: center;
+
+            .h-avatar, .h-icon {
+                display: block;
+                margin: 0 auto;
+            }
+
+            .flex-meta {
+                margin: 10px auto 16px auto;
+            }
+
+            .flex-end {
+                margin: 0 auto 10px auto;
+
+                .end-action {
+                    margin-left: 0;
+                }
+
+                .button {
+                    min-width: 140px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .media-flex, .media-flex-center {
+        &.is-responsive-tablet-l {
+            flex-direction: column;
+            text-align: center;
+
+            .h-avatar, .h-icon {
+                display: block;
+                margin: 0 auto;
+            }
+
+            .flex-meta {
+                margin: 10px auto 16px auto;
+            }
+
+            .flex-end {
+                margin: 0 auto 10px auto;
+
+                .end-action {
+                    margin-left: 0;
+                }
+
+                .button {
+                    min-width: 140px;
+                }
+            }
+        }
+    }
+}

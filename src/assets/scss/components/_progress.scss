@@ -1,0 +1,132 @@
+/*! _progress.scss | Huro | Css ninja 2020-2021 */
+
+/*
+    1. Progress Bar
+    
+*/
+
+/* ==========================================================================
+1. Progress Bar
+========================================================================== */
+
+.progress {
+    margin-bottom: 0;
+
+    &::-webkit-progress-value {
+        border-radius: 50px;
+    }
+
+    &::-moz-progress-bar {
+        border-radius: 50px;
+    }
+
+    &::-ms-fill {
+        border-radius: 50px;
+    }
+
+    &.is-smaller {
+        height: .5rem !important;
+    }
+
+    &.is-tiny {
+        height: .35rem !important;
+    }
+}
+
+
+/* ==========================================================================
+2. Progress Bar Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .progress {
+            background-color: $dark-sidebar;
+
+            &::-webkit-progress-bar {
+                background-color: $dark-sidebar;
+            }
+
+            &.is-primary {
+                &::-webkit-progress-value {
+                    background: $accent;
+                }
+            
+                &::-moz-progress-bar {
+                    background: $accent;
+                }
+            
+                &::-ms-fill {
+                    background: $accent;
+                }
+            }
+
+            &:indeterminate {
+                &.is-primary {
+                    background-color: $accent;
+                    background-image: linear-gradient(to right, $dark-sidebar 30%, $accent 30%);
+
+                    &::-webkit-progress-bar {
+                        background: transparent;
+                    }
+                
+                    &::-moz-progress-bar {
+                        background: transparent;
+                    }
+                }
+                
+                &.is-success {
+                    background-color: $success;
+                    background-image: linear-gradient(to right, $dark-sidebar 30%, $success 30%);
+
+                    &::-webkit-progress-bar {
+                        background: transparent;
+                    }
+                
+                    &::-moz-progress-bar {
+                        background: transparent;
+                    }
+                }
+
+                &.is-info {
+                    background-color: $info;
+                    background-image: linear-gradient(to right, $dark-sidebar 30%, $info 30%);
+
+                    &::-webkit-progress-bar {
+                        background: transparent;
+                    }
+                
+                    &::-moz-progress-bar {
+                        background: transparent;
+                    }
+                }
+
+                &.is-warning {
+                    background-color: $warning;
+                    background-image: linear-gradient(to right, $dark-sidebar 30%, $warning 30%);
+
+                    &::-webkit-progress-bar {
+                        background: transparent;
+                    }
+                
+                    &::-moz-progress-bar {
+                        background: transparent;
+                    }
+                }
+
+                &.is-danger {
+                    background-color: $danger;
+                    background-image: linear-gradient(to right, $dark-sidebar 30%, $danger 30%);
+
+                    &::-webkit-progress-bar {
+                        background: transparent;
+                    }
+                
+                    &::-moz-progress-bar {
+                        background: transparent;
+                    }
+                }
+            }
+        }
+    }
+}

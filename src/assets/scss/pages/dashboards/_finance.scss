@@ -1,0 +1,703 @@
+/*! _finance.scss | Huro | Css ninja 2020-2021 */
+
+/*
+    1. Analytics Dashboard
+    2. Analytics Dashboard Dark mode
+    1. Stock Dashboard
+    2. Stock Dashboard Dark mode
+    3. Media Queries
+*/
+
+/* ==========================================================================
+1. Analytics Dashboard
+========================================================================== */
+
+.finance-dashboard {
+    &.analytics-dashboard {
+        .dashboard-tile {
+            @extend .s-card;
+
+            font-family: $font;
+
+            .tile-head {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                h3 {
+                    font-family: $font-alt;
+                    color: $dark-text;
+                    font-weight: 600;
+                }
+            }
+
+            .tile-body {
+                font-size: 2rem;
+                padding: 4px 0 8px 0;
+
+                span {
+                    color: $dark-text;
+                    font-weight: 600;
+                }
+            }
+
+            .tile-foot {
+                span {
+                    &:first-child {
+                        font-weight: 500;
+
+                        svg {
+                            height: 16px;
+                            width: 16px;
+                            margin-right: 6px;
+                            stroke-width: 3px;
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        color: $light-text;
+                        font-size: .9rem;
+                    }
+                }
+            }
+        }
+
+        .dashboard-card {
+            @extend .s-card;
+
+            font-family: $font;
+            height: 100%;
+
+            .card-head {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 20px;
+
+                h3 {
+                    font-family: $font-alt;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    color: $dark-text;
+                }
+            }
+
+            .revenue-stats {
+                display: flex;
+
+                .revenue-stat {
+                    margin-right: 30px;
+                    font-family: $font;
+
+                    span {
+                        display: block;
+
+                        &:first-child {
+                            color: $light-text;
+                            font-size: .9rem;
+                        }
+
+                        &:nth-child(2) {
+                            color: $dark-text;
+                            font-size: 1.2rem;
+                            font-weight: 600;
+                        }
+
+                        &.current {
+                            color: $accent;
+                        }
+                    }
+                }
+            }
+
+            .radial-wrap {
+                display: flex;
+                flex-direction: column;
+                height: calc(100% - 44px);
+
+                .radial-stats {
+                    margin-top: auto;
+                    display: flex;
+                    padding-top: 20px;
+                    border-top: 1px solid darken($fade-grey, 3%);
+
+                    .radial-stat {
+                        width: 50%;
+                        text-align: center;
+
+                        &:first-child {
+                            border-right: 1px solid darken($fade-grey, 3%);
+                        }
+
+                        span {
+                            display: block;
+
+                            &:first-child {
+                                color: $light-text;
+                                font-size: .9rem;
+                            }
+
+                            &:nth-child(2) {
+                                color: $dark-text;
+                                font-size: 1.3rem;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .progress-block {
+                display: flex;
+                flex-direction: column;
+                height: calc(100% - 44px);
+                font-family: $font;
+
+                .value {
+                    font-size: 1.4rem;
+                    font-weight: 600;
+
+                    span {
+                        color: $dark-text;
+                    }
+                }
+
+                .progress {
+                    margin-bottom: 8px;
+                }
+
+                .progress-foot {
+                    span {
+                        &:first-child {
+                            font-weight: 500;
+
+                            svg {
+                                height: 16px;
+                                width: 16px;
+                                margin-right: 6px;
+                                stroke-width: 3px;
+                            }
+                        }
+
+                        &:nth-child(2) {
+                            color: $light-text;
+                            font-size: .9rem;
+                        }
+                    }
+                }
+
+                .circle-chart-wrapper {
+                    margin-top: auto;
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+3. Stock Dashboard
+========================================================================== */
+
+.finance-dashboard {
+    &.stock-dashboard {
+        .stock {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 40px;
+            padding: 5px 0;
+            margin: 5px 0;
+
+            .stock-logo {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                flex: 0;
+                margin-right: 10px;
+
+                &:before {
+                    content: '';
+                    width: 36px;
+                    height: 36px;
+                    transform: rotate(0);
+                    border-radius: 7px;
+                }
+
+                &.github:before, &.apple:before {
+                    background: $github;
+                    box-shadow: $github-box-shadow;
+                }
+
+                &.invision:before {
+                    background: $invision;
+                    box-shadow: $invision-box-shadow;
+                }
+
+                &.facebook:before, &.docker:before {
+                    background: $facebook;
+                    box-shadow: $facebook-box-shadow;
+                }
+
+                &.amazon:before {
+                    background: $amazon;
+                    box-shadow: $amazon-box-shadow;
+                }
+
+                &.twitter:before {
+                    background: $twitter;
+                    box-shadow: $twitter-box-shadow;
+                }
+
+                &.algolia:before {
+                    background: $accent;
+                    box-shadow: $accent-box-shadow;
+                }
+
+                &.snapchat:before {
+                    background: $primary;
+                    box-shadow: $primary-box-shadow;
+                }
+
+                i {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+
+            .stock-info {
+                margin-left: 5px;
+                flex: 1;
+                line-height: 1.2;
+
+                .stock-name {
+                    font-family: $font-alt;
+                    font-weight: 600;
+                    font-size: .9rem;
+                    color: $dark-text;
+                }
+
+                .stock-fullname {
+                    font-family: $font;
+                    color: $light-text;
+                }
+            }
+
+            .stock-value {
+                flex: 1;
+                font-weight: bold;
+                color: $light-text;
+                text-align: right;
+            }
+        }
+
+        .graph {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            padding: 20px;
+            background: $white;
+            border-radius: 10px;
+            box-shadow: $light-box-shadow;
+            border: 1px solid $fade-grey;
+
+            .dropdown {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+            }
+
+            > svg {
+                max-width: 100%;
+                min-height: 90px;
+                margin: 0 auto 16px auto;
+                display: block;
+
+                text {
+                    font-family: Roboto;
+                    font-weight: 700;
+                    font-size: 12px;
+                    font-style: normal;
+                }
+            }
+        }
+
+        .asset-category {
+            display: flex;
+            padding: 12px 0;
+
+            .category {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                cursor: pointer;
+
+                &:hover {
+                    .asset {
+                        .asset-logo {
+                            transform: translateY(-5px);
+
+                            &:before {
+                                border-color: $primary;
+                                box-shadow: $light-box-shadow;
+                            }
+
+                            i {
+                                color: $primary;
+                            }
+                        }
+                    }
+
+                    .asset-name {
+                        color: $primary;
+                    }
+                }
+
+                .asset {
+                    position: relative;
+                    display: flex;
+                    flex-direction: row;
+                    margin: 10px 0;
+
+                    .asset-logo {
+                        position: relative;
+                        display: flex;
+                        justify-content: center;
+                        flex: 0;
+                        transition: all .3s;
+
+                        &:before {
+                            content: '';
+                            width: 46px;
+                            height: 46px;
+                            background-color: $white;
+                            border: 1px solid $fade-grey;
+                            transform: rotate(45deg);
+                            border-radius: 10px;
+                            transition: all .3s;
+                        }
+
+                        i {
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            color: $light-text;
+                            font-size: 18px;
+                            transition: color .3s;
+                        }
+                    }
+                }
+
+                .asset-name {
+                    color: $dark-text;
+                    font-size: .9rem;
+                    font-family: $font-alt;
+                    font-weight: 600;
+                    transition: color .3s;
+                }
+            }
+        }
+
+        .stock-card {
+            @extend .r-card;
+
+            .action-bar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 20px;
+
+                h3 {
+                    font-family: $font-alt;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    color: $dark-text;
+                }
+            }
+
+            .stock {
+                margin: 8px 0;
+
+                .stock-logo {
+                    i {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+4. Stock Dashboard Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .finance-dashboard {
+            &.stock-dashboard {
+                .graph {
+                    background: lighten($dark-sidebar, 6%) !important;
+                    border-color: lighten($dark-sidebar, 12%) !important;
+                }
+
+                .stock {
+                    .stock-info {
+                        .stock-name {
+                            color: $dark-dark-text;
+                        }
+                    }
+                }
+
+                .asset-category {
+                    .category {
+                        &:hover {
+                            .asset {
+                                .asset-logo {
+                                    &:before {
+                                        border-color: $accent !important;
+
+                                        //box-shadow: $accent-box-shadow;
+                                   
+                                    }
+
+                                    i {
+                                        color: $accent;
+                                    }
+                                }
+                            }
+
+                            .asset-name {
+                                color: $accent;
+                            }
+                        }
+
+                        .asset {
+                            .asset-logo {
+                                &:before {
+                                    background: lighten($dark-sidebar, 6%) !important;
+                                    border-color: lighten($dark-sidebar, 12%) !important;
+                                }
+                            }
+                        }
+
+                        .asset-name {
+                            color: $dark-dark-text;
+                        }
+                    }
+                }
+
+                .stock-card {
+                    .action-bar {
+                        h3 {
+                            color: $dark-dark-text;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+5. Sales Dashboard
+========================================================================== */
+
+.finance-dashboard {
+    &.sales-dashboard {
+        .dashboard-header {
+            display: flex;
+            align-items: center;
+            font-family: $font;
+            margin-bottom: 30px;
+
+            .start {
+                margin-left: 12px;
+
+                h3 {
+                    font-family: $font-alt;
+                    font-weight: 600;
+                    font-size: 1.3rem;
+                    color: $dark-text;
+                }
+            }
+
+            .end {
+                margin-left: auto;
+                display: flex;
+                justify-content: flex-end;
+
+                .button {
+                    margin-left: 10px;
+                }
+            }
+        }
+
+        .spark-tiles {
+            .spark-tile {
+                @extend .s-card;
+
+                padding: 0;
+            }
+        }
+
+        .dashboard-card {
+            @extend .s-card;
+
+            &:not(:last-child) {
+                margin-bottom: 1.5rem;
+            }
+
+            &.flex-chart {
+                height: calc(50% - .75rem);
+            }
+
+            .card-head {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 20px;
+
+                h3 {
+                    font-family: $font-alt;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    color: $dark-text;
+                }
+            }
+
+            .revenue-stats {
+                display: flex;
+                margin-bottom: 10px;
+
+                .revenue-stat {
+                    margin-right: 30px;
+                    font-family: $font;
+
+                    span {
+                        display: block;
+
+                        &:first-child {
+                            color: $light-text;
+                            font-size: .9rem;
+                        }
+
+                        &:nth-child(2) {
+                            color: $dark-text;
+                            font-size: 1.2rem;
+                            font-weight: 600;
+                        }
+
+                        &.current {
+                            color: $accent;
+                        }
+                    }
+                }
+            }
+
+            .chart-media {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .meta {
+                    margin-right: 30px;
+                    align-items: center;
+                    font-family: $font;
+
+                    h4 {
+                        font-family: $font-alt;
+                        font-size: 1rem;
+                        font-weight: 600;
+                        color: $dark-text;
+                    }
+
+                    span {
+                        display: block;
+                        color: $dark-text;
+                        font-size: 1.2rem;
+                        font-weight: 600;
+                        margin-bottom: 8px;
+                    }
+
+                    p {
+                        font-size: .9rem;
+                    }
+                }
+
+                .chart-container {
+                    min-width: 110px;
+                }
+            }
+
+            .chart-group {
+                display: flex;
+
+                .group {
+                    text-align: center;
+                    width: 33.3%;
+
+                    .chart-container {
+                        margin-top: -5px;
+                    }
+
+                    span {
+                        display: block;
+                        margin-top: -25px;
+                        font-family: $font;
+                        color: $dark-text;
+                        font-weight: 600;
+                        font-size: 1.2rem;
+                    }
+
+                    p {
+                        font-size: .9rem;
+                    }
+                }
+            }
+        }
+
+        .widget {
+            min-height: 305px;
+        }
+    }
+}
+
+/* ==========================================================================
+5. Media Queries
+========================================================================== */
+
+@media only screen and (max-width: 767px) {
+    .finance-dashboard {
+        &.stock-dashboard {
+            .asset-category {
+                flex-wrap: wrap;
+
+                .category {
+                    min-width: 25% !important;
+                    margin-bottom: 12px !important;
+                }
+            }
+        }
+
+        &.sales-dashboard {
+            .dashboard-header {
+                text-align: center;
+                flex-direction: column;
+
+                .start {
+                    margin: 10px auto;
+                }
+
+                .end {
+                    margin: 0;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+}

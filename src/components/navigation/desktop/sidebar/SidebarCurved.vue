@@ -18,10 +18,14 @@ export default SidebarCurved
   <div class="main-sidebar is-curved">
     <div class="sidebar-brand">
       <a href="/">
-        <img class="light-image" src="assets/img/logos/logo/logo.svg" alt="" />
+        <img
+          class="light-image"
+          src="/src/assets/images/logos/logo/logo.svg"
+          alt=""
+        />
         <img
           class="dark-image"
-          src="assets/img/logos/logo/logo-light.svg"
+          src="/src/assets/images/logos/logo/logo-light.svg"
           alt=""
         />
       </a>
@@ -31,25 +35,25 @@ export default SidebarCurved
 
       <ul class="icon-menu">
         <!-- Activity -->
-        {{> sidebar-item-home}}
+        <SidebarItemHome />
         <!-- Layouts -->
-        {{> sidebar-item-layouts}}
+        <SidebarItemLayouts />
         <!-- Bounties -->
-        {{> sidebar-item-elements}}
+        <SidebarItemElements />
         <!-- Bugs -->
-        {{> sidebar-item-components}}
+        <SidebarItemComponents />
         <!-- Messaging -->
-        {{> sidebar-item-messaging}}
+        <SidebarItemMessaging />
       </ul>
 
       <!-- User account -->
       <ul class="bottom-menu">
         <!-- Notifications -->
-        {{> sidebar-item-search}}
+        <SidebarItemSearch />
         <!-- Wallet -->
-        {{> sidebar-item-settings}}
+        <SidebarItemSettings />
         <!-- Profile -->
-        {{> sidebar-item-profile}}
+        <SidebarItemProfile />
       </ul>
     </div>
   </div>

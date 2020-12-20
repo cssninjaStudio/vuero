@@ -1,17 +1,20 @@
 { 
   "compilerOptions": {
-    "target": "ES2018",
-    "module": "esnext",
+    "baseUrl": ".",
+    "module": "ESNext",
+    "target": "es2016",
+    "lib": ["DOM", "ESNext"],
     "strict": true,
-    "jsx": "preserve",
-    "moduleResolution": "node",
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "isolatedModules": true,
-    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "forceConsistentCasingInFileNames": true,
+    "plugins": [{ "name": "@vuedx/typescript-plugin-vue" }],
     "paths": {
       "@src/*": ["src/*"],
-      "@images/*": ["images/*"],
+      "@images/*": ["src/assets/images/*"],
     }
   },
 }

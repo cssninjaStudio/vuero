@@ -1,0 +1,1308 @@
+/*! _user-profile.scss | Huro | Css ninja 2020-2021 */
+
+/*
+    1. User Profile View
+    2. User Profile View Dark mode
+    3. User Profile Edit
+    4. User Profile Edit Dark mode
+    5. User Profile Settings
+*/
+
+/* ==========================================================================
+1. User Profile View
+========================================================================== */
+
+.profile-wrapper {
+    max-width: 1040px;
+    margin: 0 auto;
+
+    &.is-webapp {
+        margin-top: 30px;
+    }
+
+    .profile-header {
+        text-align: center;
+
+        > img {
+            display: block;
+            margin: 0 auto;
+            max-width: 300px;
+        }
+
+        .h-avatar {
+            margin: 0 auto 12px auto;
+        }
+
+        .anim-icon {
+            margin-bottom: 12px;
+        }
+
+        .title {
+            margin-bottom: 6px;
+        }
+
+        p {
+            font-size: 1rem;
+            max-width: 540px;
+            margin: 0 auto;
+            line-height: 1.3;
+        }
+
+        .profile-stats {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 12px 0;
+
+            .profile-stat {
+                display: flex;
+                align-items: center;
+                color: $light-text;
+                font-family: $font;
+
+                span {
+                    font-size: .9rem;
+                }
+
+                i {
+                    font-size: 1.2rem;
+                    margin-right: 6px;
+                }
+            }
+
+            .separator {
+                height: 25px;
+                width: 2px;
+                border-right: 1px solid darken($fade-grey, 6%);
+                margin: 0 10px;
+            }
+
+            .socials {
+                display: flex;
+                justify-content: center;
+
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 28px;
+                    width: 28px;
+                    background: $white;
+                    border: 1px solid darken($fade-grey, 6%);
+                    box-shadow: $light-box-shadow;
+                    border-radius: 50%;
+                    margin: 0 2px;
+                    transition: all .3s;
+
+                    &:hover {
+                        border-color: $primary;
+
+                        i {
+                            color: $primary;
+                        }
+                    }
+
+                    i {
+                        font-size: .9rem;
+                        color: $light-text;
+                        transition: color .3s;
+                    }
+                }
+            }
+        }
+    }
+
+    .profile-body {
+        padding: 10px 0 20px 0;
+
+        .profile-card {
+            @extend .s-card;
+
+            padding: 30px;
+
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+
+            .profile-card-section {
+                padding-bottom: 20px;
+
+                &:not(:last-child) {
+                    margin-bottom: 20px;
+                    border-bottom: 1px solid darken($fade-grey, 4%);
+                }
+
+                &.no-padding {
+                    padding-bottom: 0;
+                }
+
+                .section-title {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 12px;
+
+                    h4 {
+                        font-family: $font-alt;
+                        font-weight: 600;
+                        font-size: .8rem;
+                        text-transform: uppercase;
+                        color: $dark-text;
+                        margin-right: 6px;
+                    }
+
+                    i {
+                        color: $primary;
+                    }
+
+                    .action-link {
+                        position: relative;
+                        top: -2px;
+                        margin-left: auto;
+                        text-transform: uppercase;
+                        font-size: .8rem;
+                    }
+
+                    .control {
+                        margin-left: auto;
+
+                        .form-switch {
+                            transform: scale(0.8);
+                        }
+                    }
+                }
+
+                .section-content {
+                    .description {
+                        font-size: .95rem;
+                    }
+
+                    .experience-wrapper {
+                        display: flex;
+                        flex-wrap: wrap;
+                        margin-left: -8px;
+                        margin-right: -8px;
+
+                        .experience-item {
+                            display: flex;
+                            align-items: center;
+                            width: calc(50% - 16px);
+                            margin: 8px;
+
+                            img {
+                                display: block;
+                                width: 50px;
+                                min-width: 50px;
+                                height: 50px;
+                                border-radius: 50%;
+                                border: 1px solid darken($fade-grey, 4%);
+                            }
+
+                            .meta {
+                                margin-left: 10px;
+
+                                > span {
+                                    font-family: $font;
+                                    display: block;
+
+                                    &:first-child {
+                                        font-family: $font-alt;
+                                        font-weight: 600;
+                                        color: $dark-text;
+                                        font-size: .85rem;
+                                    }
+
+                                    &:nth-child(2), &:nth-child(3) {
+                                        font-size: .85rem;
+                                        color: $light-text;
+
+                                        i {
+                                            position: relative;
+                                            top: -2px;
+                                            font-size: 4px;
+                                            margin: 0 6px;
+                                        }
+                                    }
+
+                                    &:nth-child(3) {
+                                        color: $primary;
+                                    }
+
+                                    span {
+                                        display: inline-block;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .languages-wrapper {
+                        display: flex;
+                        flex-wrap: wrap;
+                        margin-left: -8px;
+                        margin-right: -8px;
+
+                        .languages-item {
+                            display: flex;
+                            align-items: center;
+                            width: calc(50% - 16px);
+                            margin: 8px;
+
+                            .icon-wrap {
+                                position: relative;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 50px;
+                                min-width: 50px;
+                                height: 50px;
+
+                                img {
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 50%;
+                                    transform: translate(-50%, -50%);
+                                    display: block;
+                                    width: 32px;
+                                    min-width: 32px;
+                                    height: 32px;
+                                    border-radius: 50%;
+                                    border: 1px solid darken($fade-grey, 4%);
+                                }
+                            }
+
+                            .meta {
+                                margin-left: 10px;
+
+                                > span {
+                                    display: block;
+                                    font-family: $font;
+
+                                    &:first-child {
+                                        font-family: $font-alt;
+                                        font-weight: 600;
+                                        color: $dark-text;
+                                        font-size: .9rem;
+                                    }
+
+                                    &:nth-child(2) {
+                                        font-size: .85rem;
+                                        color: $light-text;
+                                    }
+
+                                    span {
+                                        display: inline-block;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .skills-wrapper {
+                        .skills-item {
+                            display: flex;
+                            align-items: center;
+
+                            &:not(:last-child) {
+                                margin-bottom: 16px;
+                            }
+
+                            .icon-wrap {
+                                position: relative;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 42px;
+                                min-width: 42px;
+                                height: 42px;
+                                border-radius: 50%;
+                                border: 1px solid $primary;
+
+                                &.has-icon {
+                                    background: lighten($fade-grey, 2%);
+                                    border: 1px solid darken($fade-grey, 3%);
+                                    color: $light-text;
+
+                                    i {
+                                        font-size: 1.4rem;
+                                    }
+                                }
+
+                                img {
+                                    display: block;
+                                    width: 34px;
+                                    min-width: 34px;
+                                    height: 34px;
+                                    border-radius: 50%;
+                                    border: 1px solid darken($fade-grey, 4%);
+                                }
+
+                                .count {
+                                    position: absolute;
+                                    bottom: 0;
+                                    right: -4px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    width: 22px;
+                                    height: 22px;
+                                    border-radius: 50%;
+                                    background: $white;
+                                    border: 1px solid $primary;
+
+                                    span {
+                                        font-family: $font;
+                                        font-weight: 500;
+                                        font-size: .75rem;
+                                    }
+                                }
+                            }
+
+                            .skill-info {
+                                font-family: $font;
+                                margin-left: 12px;
+                                line-height: 1.3;
+
+                                span {
+                                    display: block;
+
+                                    &:first-child {
+                                        font-family: $font-alt;
+                                        font-weight: 600;
+                                        color: $dark-text;
+                                        font-size: .9rem;
+                                    }
+
+                                    &:nth-child(2) {
+                                        font-size: .9rem;
+                                        color: $light-text;
+                                    }
+                                }
+                            }
+
+                            .people {
+                                margin-left: auto;
+                                display: flex;
+                                justify-content: flex-end;
+
+                                .h-avatar {
+                                    margin: 0 4px;
+                                }
+                            }
+                        }
+                    }
+
+                    .recommendations-wrapper {
+                        display: flex;
+                        flex-wrap: wrap;
+                        margin-left: -8px;
+                        margin-right: -8px;
+
+                        .recommendations-item {
+                            width: calc(50% - 16px);
+                            margin: 8px;
+                            background: lighten($fade-grey, 3%);
+                            text-align: center;
+                            padding: 30px 20px;
+                            border-radius: 4px;
+
+                            > .h-avatar {
+                                display: block;
+                                margin: 0 auto 8px auto;
+                            }
+
+                            h3 {
+                                font-size: 1rem;
+                                font-family: $font-alt;
+                                font-weight: 600;
+                                color: $dark-text;
+                                margin-bottom: 8px;
+                            }
+
+                            p {
+                                font-size: .85rem;
+                                margin-bottom: 16px;
+                            }
+
+                            .meta {
+                                span {
+                                    display: block;
+
+                                    &:first-child {
+                                        font-weight: 600;
+                                        font-family: $font-alt;
+                                        color: $dark-text;
+                                        font-size: .95rem;
+                                        color: $primary;
+                                    }
+
+                                    &:nth-child(2) {
+                                        font-size: .9rem;
+                                        color: $light-text;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .network-notifications {
+                        h3 {
+                            font-family: $font-alt;
+                            font-size: .9rem;
+                            margin-bottom: 6px;
+                        }
+
+                        p {
+                            font-size: .9rem;
+                            max-width: 480px;
+                        }
+                    }
+
+                    .tools-wrapper {
+                        padding-top: 12px;
+
+                        .tools-item {
+                            display: flex;
+                            align-items: center;
+                            margin-bottom: 16px;
+
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+
+                            .icon-wrap {
+                                position: relative;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 50px;
+                                min-width: 50px;
+                                height: 50px;
+
+                                img {
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 50%;
+                                    transform: translate(-50%, -50%);
+                                    display: block;
+                                    width: 32px;
+                                    min-width: 32px;
+                                    height: 32px;
+                                    border-radius: 50%;
+                                    border: 1px solid darken($fade-grey, 4%);
+                                }
+                            }
+
+                            .meta {
+                                margin-left: 10px;
+
+                                > span {
+                                    display: block;
+                                    font-family: $font;
+
+                                    &:first-child {
+                                        font-family: $font-alt;
+                                        font-weight: 600;
+                                        color: $dark-text;
+                                        font-size: .9rem;
+                                    }
+
+                                    &:nth-child(2) {
+                                        font-size: .85rem;
+                                        color: $light-text;
+                                    }
+
+                                    span {
+                                        display: inline-block;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .people-wrapper {
+                        padding-top: 12px;
+
+                        .people-item {
+                            display: flex;
+                            align-items: center;
+                            margin-bottom: 16px;
+
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+
+                            .meta {
+                                margin-left: 10px;
+
+                                > span {
+                                    display: block;
+                                    font-family: $font;
+
+                                    &:first-child {
+                                        font-family: $font-alt;
+                                        font-weight: 600;
+                                        color: $dark-text;
+                                        font-size: .9rem;
+                                    }
+
+                                    &:nth-child(2) {
+                                        font-size: .85rem;
+                                        color: $light-text;
+                                    }
+
+                                    span {
+                                        display: inline-block;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .more-button {
+                        padding-top: 16px;
+
+                        .button {
+                            min-width: 180px;
+                            font-family: $font;
+                            text-transform: uppercase;
+                            font-size: .8rem;
+                            font-weight: 500;
+                            margin: 0 auto;
+                            color: $light-text;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+2. User Profile View Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .profile-wrapper {
+            .profile-header {
+                .h-avatar {
+                    .badge {
+                        border-color: lighten($dark-sidebar, 6%);
+                    }
+                }
+
+                .profile-stats {
+                    .separator {
+                        border-color: lighten($dark-sidebar, 20%);
+                    }
+
+                    .socials {
+                        a {
+                            background: lighten($dark-sidebar, 2%);
+                            border-color: lighten($dark-sidebar, 12%);
+
+                            &:hover {
+                                border-color: $accent;
+
+                                i {
+                                    color: $accent;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .profile-body {
+                .profile-card {
+                    .profile-card-section {
+                        border-color: lighten($dark-sidebar, 12%);
+
+                        .section-title {
+                            h4 {
+                                color: $dark-dark-text;
+                            }
+
+                            i {
+                                color: $accent;
+                            }
+                        }
+
+                        .section-content {
+                            .icon-wrap {
+                                > img {
+                                    border-color: lighten($dark-sidebar, 12%) !important;
+                                }
+                            }
+
+                            .experience-wrapper {
+                                .experience-item {
+                                    > img {
+                                        border-color: lighten($dark-sidebar, 12%);
+                                    }
+
+                                    .meta {
+                                        > span {
+                                            &:nth-child(3) {
+                                                color: $accent;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .skills-wrapper {
+                                .skills-item {
+                                    .icon-wrap {
+                                        border-color: $accent;
+
+                                        &.has-icon {
+                                            background: lighten($dark-sidebar, 2%);
+                                            border-color: lighten($dark-sidebar, 12%);
+                                        }
+                                    }
+
+                                    .people {
+                                        .h-avatar {
+                                            &:last-child {
+                                                .is-fake {
+                                                    background: lighten($dark-sidebar, 2%);
+                                                    border: 1px solid lighten($dark-sidebar, 12%);
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .recommendations-wrapper {
+                                .recommendations-item {
+                                    background: lighten($dark-sidebar, 2%);
+                                    border-color: lighten($dark-sidebar, 12%);
+
+                                    .meta {
+                                        span {
+                                            &:first-child {
+                                                color: $accent;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .more-button {
+                                .button {
+                                    background: lighten($dark-sidebar, 2%);
+                                    border-color: lighten($dark-sidebar, 12%);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+3. User Profile Edit
+========================================================================== */
+
+.account-wrapper {
+    padding-bottom: 60px;
+
+    &.is-webapp {
+        margin-top: 30px;
+    }
+
+    .account-box {
+        @extend .s-card;
+
+        &.is-navigation {
+            .media-flex-center {
+                padding-bottom: 20px;
+
+                .flex-meta {
+                    span {
+                        &:first-child {
+                            font-size: 1.3rem;
+                        }
+                    }
+                }
+            }
+
+            .account-menu {
+                .account-menu-item {
+                    display: flex;
+                    align-items: center;
+                    padding: 12px 16px;
+                    border: 1px solid transparent;
+                    border-radius: 8px;
+                    margin-bottom: 5px;
+                    transition: all .3s;
+
+                    &.is-active {
+                        box-shadow: $light-box-shadow;
+                        border-color: darken($fade-grey, 3%);
+
+                        span, i {
+                            color: $primary;
+                        }
+
+                        .end {
+                            display: block;
+                        }
+                    }
+
+                    &:not(.is-active) {
+                        &:hover {
+                            background: lighten($fade-grey, 3%);
+                        }
+                    }
+
+                    i {
+                        margin-right: 8px;
+                        font-size: 1.1rem;
+                        color: $light-text;
+
+                        &.fas, .fal, .far {
+                            font-size: .9rem;
+                        }
+                    }
+
+                    span {
+                        font-family: $font-alt;
+                        font-size: .95rem;
+                        color: $dark-text;
+                    }
+
+                    .end {
+                        margin-left: auto;
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        &.is-form {
+            padding: 0;
+
+            &.is-footerless {
+                padding-bottom: 20px;
+            }
+
+            .form-head, .form-foot {
+                padding: 12px 20px;
+
+                .form-head-inner, .form-foot-inner {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+            }
+
+            .form-head {
+                border-bottom: 1px solid darken($fade-grey, 3%);
+                transition: all .3s;
+
+                &.is-stuck {
+                    background: $white;
+                    padding-right: 80px;
+                    border-left: 1px solid darken($fade-grey, 3%);
+                }
+
+                .left {
+                    h3 {
+                        font-family: $font-alt;
+                        font-size: 1.2rem;
+                        line-height: 1.3;
+                    }
+
+                    p {
+                        font-size: .95rem;
+                    }
+                }
+            }
+
+            .form-foot {
+                border-top: 1px solid darken($fade-grey, 3%);
+            }
+
+            .form-body {
+                padding: 20px;
+
+                .fieldset {
+                    padding: 20px 0;
+                    max-width: 480px;
+                    margin: 0 auto;
+
+                    .fieldset-heading {
+                        margin-bottom: 20px;
+
+                        h4 {
+                            font-family: $font-alt;
+                            font-weight: 600;
+                            font-size: 1rem;
+                        }
+
+                        p {
+                            font-size: .9rem;
+                        }
+                    }
+
+                    .h-avatar {
+                        position: relative;
+                        display: block;
+                        margin: 0 auto;
+
+                        .edit-button {
+                            position: absolute;
+                            bottom: 0;
+                            right: 0;
+                        }
+                    }
+
+                    .setting-list {
+                        .setting-form {
+                            text-align: center;
+
+                            .filepond-profile-wrap {
+                                margin: 0 auto 10px auto !important;
+                            }
+                        }
+
+                        .setting-item {
+                            display: flex;
+                            align-items: center;
+                            margin-bottom: 24px;
+
+                            .icon-wrap {
+                                position: relative;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 50px;
+                                min-width: 50px;
+                                height: 50px;
+                                border-radius: 50%;
+                                background: lighten($fade-grey, 2%);
+                                border: 1px solid darken($fade-grey, 3%);
+                                color: $light-text;
+
+                                &.has-img {
+                                    border-color: $primary;
+
+                                    img {
+                                        width: 36px;
+                                        min-width: 36px;
+                                        height: 36px;
+                                    }
+                                }
+
+                                i {
+                                    font-size: 1.4rem;
+                                }
+                            }
+
+                            img {
+                                display: block;
+                                width: 50px;
+                                min-width: 50px;
+                                height: 50px;
+                                border-radius: 50%;
+                                border: 1px solid darken($fade-grey, 4%);
+                            }
+
+                            .meta {
+                                margin-left: 10px;
+
+                                > span {
+                                    font-family: $font;
+                                    display: block;
+
+                                    &:first-child {
+                                        font-family: $font-alt;
+                                        font-weight: 600;
+                                        color: $dark-text;
+                                        font-size: .9rem;
+                                    }
+
+                                    &:nth-child(2), &:nth-child(3) {
+                                        font-size: .85rem;
+                                        color: $light-text;
+
+                                        i {
+                                            position: relative;
+                                            top: -2px;
+                                            font-size: 4px;
+                                            margin: 0 6px;
+                                        }
+                                    }
+
+                                    &:nth-child(3) {
+                                        color: $primary;
+                                    }
+
+                                    span {
+                                        display: inline-block;
+                                    }
+                                }
+                            }
+
+                            .end {
+                                margin-left: auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+4. User Profile Edit Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .account-wrapper {
+            .account-box {
+                &.is-navigation {
+                    .account-menu {
+                        .account-menu-item {
+                            &.is-active {
+                                background: lighten($dark-sidebar, 8%);
+                                border-color: lighten($dark-sidebar, 12%);
+
+                                i, span {
+                                    color: $accent;
+                                }
+                            }
+
+                            &:not(.is-active) {
+                                &:hover {
+                                    background: lighten($dark-sidebar, 10%);
+                                }
+                            }
+
+                            span {
+                                color: $dark-dark-text;
+                            }
+                        }
+                    }
+                }
+
+                &.is-form {
+                    .form-head, .form-foot {
+                        border-color: lighten($dark-sidebar, 12%);
+                    }
+
+                    .form-head {
+                        &.is-stuck {
+                            background: $dark-sidebar;
+                            border-color: lighten($dark-sidebar, 6%);
+                        }
+
+                        .left {
+                            h3 {
+                                color: $dark-dark-text;
+                            }
+                        }
+                    }
+
+                    .form-body {
+                        .fieldset {
+                            .fieldset-heading {
+                                h4 {
+                                    color: $dark-dark-text;
+                                }
+                            }
+
+                            .setting-list {
+                                .setting-item {
+                                    > img, > .icon-wrap, > .icon-wrap img {
+                                        border-color: lighten($dark-sidebar, 12%);
+                                    }
+
+                                    > .icon-wrap {
+                                        background: lighten($dark-sidebar, 2%);
+                                    }
+
+                                    .meta {
+                                        > span {
+                                            &:nth-child(3) {
+                                                color: $accent;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+4. User Profile Settings
+========================================================================== */
+
+.profile-wrapper {
+    .profile-body {
+        .settings-section {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 880px;
+            margin: 0 auto;
+
+            .settings-box {
+                position: relative;
+                width: calc(20% - 16px);
+                background: $white;
+                text-align: center;
+                padding: 16px;
+                margin: 8px;
+                border-radius: 8px;
+                border: 1px solid darken($fade-grey, 3%);
+                transition: all .3s;
+                cursor: pointer;
+
+                &:hover {
+                    border-color: $primary;
+                    box-shadow: $light-box-shadow;
+
+                    .edit-icon {
+                        opacity: 1;
+                        pointer-events: all;
+                    }
+
+                    .icon-wrap {
+                        i {
+                            color: $primary;
+                        }
+                    }
+
+                    h3 {
+                        color: $primary;
+                    }
+                }
+
+                &.is-active {
+                    .icon-wrap {
+                        i {
+                            color: $primary;
+                        }
+                    }
+
+                    h3 {
+                        color: $primary;
+                    }
+                }
+
+                .edit-icon {
+                    position: absolute;
+                    top: 6px;
+                    left: 6px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 18px;
+                    width: 18px;
+                    border-radius: 50%;
+                    background: lighten($fade-grey, 3%);
+                    opacity: 0;
+                    pointer-events: none;
+                    transition: all .3s;
+
+                    i {
+                        font-size: .8rem;
+                    }
+                }
+
+                .icon-wrap {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 52px;
+                    width: 100%;
+
+                    i {
+                        font-size: 2.7rem;
+                        color: lighten($light-text, 12%);
+                        margin-bottom: 4px;
+                        transition: color .3s;
+                    }
+
+                    img {
+                        display: block;
+                        max-width: 90px;
+                    }
+                }
+
+                span {
+                    display: block;
+                    text-align: center;
+                    display: block;
+                    text-transform: uppercase;
+                    color: $light-text;
+                    font-family: $font-alt;
+                    font-size: .7rem;
+                    letter-spacing: 1px;
+                }
+
+                h3 {
+                    font-family: $font;
+                    font-size: .9rem;
+                    font-weight: 400;
+                    color: $light-text;
+                    transition: color .3s;
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+5. User Profile Settings Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .profile-wrapper {
+            .profile-body {
+                .settings-section {
+                    .settings-box {
+                        background: lighten($dark-sidebar, 6%);
+                        border-color: lighten($dark-sidebar, 12%);
+
+                        &:hover {
+                            border-color: $accent;
+
+                            h3 {
+                                color: $accent;
+                            }
+
+                            .icon-wrap i {
+                                color: $accent;
+                            }
+                        }
+
+                        &.is-active {
+                            h3 {
+                                color: $accent;
+                            }
+
+                            .icon-wrap i {
+                                color: $accent;
+                            }
+                        }
+
+                        .edit-icon {
+                            background: lighten($dark-sidebar, 2%);
+
+                            i {
+                                color: $accent;
+                            }
+                        }
+
+                        .icon-wrap {
+                            i {
+                                color: darken($light-text, 20%);
+
+                                &.is-solid {
+                                    color: $accent;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+7. Media Queries
+========================================================================== */
+
+@media only screen and (max-width: 767px) {
+    .profile-wrapper {
+        .profile-body {
+            .profile-card {
+                padding: 20px;
+
+                .profile-card-section {
+                    .section-content {
+                        .experience-wrapper, .languages-wrapper, .recommendations-wrapper {
+                            .experience-item, .languages-item, .recommendations-item {
+                                width: calc(100% - 16px);
+                            }
+                        }
+
+                        .skills-wrapper {
+                            .skills-item {
+                                .people {
+                                    .h-avatar {
+                                        &:not(:last-child) {
+                                            display: none !important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .settings-section {
+                .settings-box {
+                    width: calc(50% - 16px);
+                }
+            }
+        }
+    }
+
+    .account-wrapper {
+        .account-box {
+            &.is-form {
+                .form-head {
+                    .left {
+                        display: none;
+                    }
+
+                    .right {
+                        flex-grow: 2;
+
+                        .buttons {
+                            display: flex;
+                            justify-content: space-between;
+                            width: 100% !important;
+
+                            .button {
+                                width: calc(50% - 6px);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+
+    .profile-wrapper {
+        .profile-body {
+            .settings-section {
+                .settings-box {
+                    width: calc(25% - 16px);
+                }
+            }
+        }
+    }
+
+}

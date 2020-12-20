@@ -22,7 +22,7 @@ export default SidebarItemProfile
     >
       <img
         src="https://via.placeholder.com/150x150"
-        data-demo-src="assets/img/avatars/photos/8.jpg"
+        data-demo-src="/src/assets/images/avatars/photos/8.jpg"
         alt=""
       />
       <span class="status-indicator"></span>
@@ -34,7 +34,7 @@ export default SidebarItemProfile
               <img
                 class="avatar"
                 src="https://via.placeholder.com/150x150"
-                data-demo-src="assets/img/avatars/photos/8.jpg"
+                data-demo-src="/src/assets/images/avatars/photos/8.jpg"
                 alt=""
               />
             </div>
@@ -96,7 +96,7 @@ export default SidebarItemProfile
               class="button h-button is-primary is-raised is-fullwidth logout-button"
             >
               <span class="icon is-small">
-                <i data-feather="log-out"></i>
+                <Icon icon="feather:log-out" />
               </span>
               <span>Logout</span>
             </button>

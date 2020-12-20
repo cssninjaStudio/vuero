@@ -1,0 +1,51 @@
+/*! _dark.scss | Huro | Css ninja 2020-2021 */
+
+/*
+    1. Layout Dark mode
+*/
+
+/* ==========================================================================
+1. Layout Dark mode
+========================================================================== */
+
+html, body {
+    &.is-dark {
+        background: lighten($dark-sidebar, 10%);
+
+        &.is-chat-side-collapsed {
+            background: lighten($dark-sidebar, 5%) !important;
+        }
+
+        &.opened {
+            background: lighten($dark-sidebar, 5%);
+        }
+
+        .pageloader {
+            background: lighten($dark-sidebar, 10%);
+        }
+
+        .infraloader {
+            background: lighten($dark-sidebar, 15%) !important;
+        }
+
+        .page-title {
+            h1 {
+                color: lighten($accent-grey, 3%);
+            }
+        }
+
+        .menu-toggle i {
+            background: $accent;
+        }
+
+        .view-wrapper, .minimal-wrapper {
+            background: lighten($dark-sidebar, 10%);
+            border-color: lighten($dark-sidebar, 10%);
+        }
+
+        .zoom-overlay {
+            background: lighten($dark-sidebar, 10%);
+            border-color: lighten($dark-sidebar, 10%);
+        }
+    }
+}

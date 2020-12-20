@@ -1,0 +1,362 @@
+/*! _accordion.scss | Huro | Css ninja 2020-2021 */
+
+/*
+    1. Accordion
+    2. Accordion Dark mode
+    3. Collapse
+    4. Collapse Dark mode
+    5. Image Accordion
+*/
+
+/* ==========================================================================
+1. Accordion
+========================================================================== */
+
+.single-accordion {
+    background: $white;
+    background: $white;
+    margin: 0 auto;
+    box-shadow: $light-box-shadow;
+    border-radius: 6px;
+    overflow: hidden;
+
+    .accordion-header {
+        border-bottom: 1px solid #DDE0E7;
+        color: $dark-text;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: .95rem;
+        font-family: $font-alt;
+        padding: 1.5rem;
+
+        &:hover {
+            background: #F6F7F9;
+        }
+
+        &.is-active {
+            &:before {
+                background-color: $primary;
+            }
+        }
+
+        &:before {
+            content: '';
+            vertical-align: middle;
+            display: inline-block;
+            width: .75rem;
+            height: .75rem;
+            border-radius: 50%;
+            background-color: #B1B5BE;
+            margin-right: .75rem;
+        }
+    }
+
+    .accordion-content {
+        display: none;
+        border-bottom: 1px solid #DDE0E7;
+        background: #F6F7F9;
+        padding: 1.5rem;
+        color: $light-text;
+        font-family: $font;
+    }
+}
+
+/* ==========================================================================
+2. Accordion Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .single-accordion {
+            background: lighten($dark-sidebar, 4%);
+            border-color: lighten($dark-sidebar, 12%);
+
+            .accordion-header {
+                color: $dark-dark-text;
+                border-color: lighten($dark-sidebar, 12%);
+
+                &:hover {
+                    background: lighten($dark-sidebar, 6%);
+                }
+
+                &:before {
+                    background: $dark-sidebar;
+                }
+
+                &.is-active {
+                    &:before {
+                        background-color: $accent;
+                    }
+                }
+            }
+
+            .accordion-content {
+                background: $dark-sidebar;
+                border-color: lighten($dark-sidebar, 8%);
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+3. Collapse
+========================================================================== */
+
+.collapse {
+    @extend .s-card;
+
+    padding: 0;
+    margin-bottom: 1.5rem;
+
+    &.has-plus {
+        &.is-active {
+            .collapse-header {
+                .collapse-icon {
+                    transform: rotate(45deg);
+                }
+            }
+        }
+    }
+
+    &.has-chevron {
+        &.is-active {
+            .collapse-header {
+                .collapse-icon {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+
+    &.is-active {
+        .collapse-icon {
+            border-color: darken($fade-grey, 3%) !important;
+            box-shadow: $light-box-shadow;
+        }
+    }
+
+    .collapse-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 60px;
+        padding: 0 20px;
+        cursor: pointer;
+
+        h3 {
+            font-family: $font-alt;
+            font-size: .9rem;
+            font-weight: 600;
+            color: $dark-text;
+        }
+
+        .collapse-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30px;
+            width: 30px;
+            background: $white;
+            border-radius: 50%;
+            border: 1px solid transparent;
+            transition: all .3s;
+
+            svg {
+                height: 16px;
+                width: 16px;
+                stroke: $light-text;
+            }
+        }
+    }
+
+    .collapse-content {
+        display: none;
+        padding: 0 20px 20px 20px;
+        color: $light-text;
+        font-family: $font;
+
+        p:not(:last-child) {
+            margin-bottom: 12px;
+        }
+    }
+}
+
+/* ==========================================================================
+4. Collapse Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .collapse {
+            &.is-active {
+                .collapse-header {
+                    .collapse-icon {
+                        background: lighten($dark-sidebar, 2%);
+                        border-color: lighten($dark-sidebar, 4%) !important;
+                    }
+                }
+            }
+
+            .collapse-header {
+                h3 {
+                    color: $dark-dark-text;
+                }
+
+                .collapse-icon {
+                    background: lighten($dark-sidebar, 6%);
+                    border-color: lighten($dark-sidebar, 6%);
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+5. Image Accordion
+========================================================================== */
+
+$a-height: 250px;
+$text-offset: $a-height - 90;
+
+.image-accordion {
+    width: 100%;
+    max-width: 1080px;
+    height: $a-height;
+    overflow: hidden;
+    margin: 50px auto;
+
+    ul {
+        width: 100%;
+        display: table;
+        table-layout: fixed;
+        margin: 0;
+        padding: 0;
+
+        li {
+            display: table-cell;
+            vertical-align: bottom;
+            position: relative;
+            width: 16.666%; 
+            height: $a-height;
+            background-repeat: no-repeat;
+            background-position: center center;
+            transition: all 500ms ease;
+
+            div {
+                display: block;
+                overflow: hidden;
+                width: 100%;
+
+                a {
+                    display: block;
+                    height: $a-height;
+                    width: 100%;
+                    position: relative;
+                    z-index: 3;
+                    vertical-align: bottom;
+                    padding: 15px 20px;
+                    box-sizing: border-box;
+                    color: $white;
+                    text-decoration: none;
+                    font-family: Open Sans, sans-serif;
+                    transition: all 200ms ease;
+
+                    * {
+                        opacity: 0;
+                        margin: 0;
+                        width: 100%;
+                        text-overflow: ellipsis;
+                        position: relative;
+                        z-index: 5;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        -webkit-transform: translateX(-20px);
+                        transform: translateX(-20px);
+                        -webkit-transition: all 400ms ease;
+                        transition: all 400ms ease;
+                    }
+
+                    h2 {
+                        font-family: $font-alt;
+                        font-weight: 300;
+                        text-overflow: clip;
+                        font-size: 1.4rem;
+                        text-transform: uppercase;
+                        margin-bottom: 0;
+                        top: $text-offset;
+                    }
+
+                    p {
+                        top: $text-offset;
+                        font-size: 13.5px;
+                        color: $white;
+                    }
+                }
+            }
+        }
+
+        &:hover li,
+        &:focus-within li {
+            width: 8%;
+        }
+
+        li:focus {
+            outline: none;
+        }
+
+        &:hover li:hover,
+        li:focus,
+        &:focus-within li:focus {
+            width: 60%;
+
+            a {
+                background: rgba(0, 0, 0, 0.4);
+
+                * {
+                    opacity: 1;
+                    -webkit-transform: translateX(0);
+                    transform: translateX(0);
+                }
+            }
+        }
+
+        &:hover li {
+            width: 8% !important;
+
+            a * {
+                opacity: 0 !important;
+            }
+        }
+
+        &:hover li:hover {
+            width: 60% !important;
+
+            a {
+                background: rgba(0, 0, 0, 0.4);
+
+                * {
+                    opacity: 1 !important;
+                    -webkit-transform: translateX(0);
+                    transform: translateX(0);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .image-accordion {
+        height: auto;
+
+        ul, ul:hover {
+            li, li:hover {
+                position: relative;
+                display: table;
+                table-layout: fixed;
+                width: 100% !important;
+                -webkit-transition: none;
+                transition: none;
+            }
+        }
+    }
+}

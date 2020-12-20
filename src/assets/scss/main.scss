@@ -1,0 +1,119 @@
+/*! main.scss | Huro | Css ninja 2020-2021 */
+
+/* ==========================================================================
+SCSS Imports
+========================================================================== */
+
+@import '_overrides/initial-variables';
+@import '../../../node_modules/bulma/sass/utilities/functions';
+@import '_overrides/derived-variables';
+@import '../../../node_modules/bulma/sass/utilities/animations';
+@import '../../../node_modules/bulma/sass/utilities/mixins';
+@import '../../../node_modules/bulma/sass/utilities/controls';
+
+@import '../../../node_modules/bulma/sass/base/all';
+@import '../../../node_modules/bulma/sass/elements/all';
+@import '../../../node_modules/bulma/sass/form/all';
+@import '../../../node_modules/bulma/sass/components/all';
+@import '../../../node_modules/bulma/sass/grid/all';
+@import '../../../node_modules/bulma/sass/layout/all';
+@import '../../../node_modules/bulma/sass/helpers/all';
+// @import '../../../node_modules/bulma/sass/extensions/all';
+
+@import 'abstracts/variables';
+@import 'abstracts/brands';
+@import 'abstracts/shadows';
+@import 'abstracts/typography';
+@import 'abstracts/animations';
+@import 'abstracts/helpers';
+
+@import 'layout/pageloader';
+@import 'layout/layout';
+@import 'layout/navbar';
+@import 'layout/sidebar';
+@import 'layout/sidebar-panel';
+@import 'layout/sidebar-mobile';
+@import 'layout/right-panel';
+@import 'layout/utilities';
+
+@import 'elements/buttons';
+@import 'elements/blocks';
+@import 'elements/cards';
+@import 'elements/content';
+@import 'elements/forms-general';
+@import 'elements/forms-combos';
+@import 'elements/forms-checkboxes';
+@import 'elements/forms-slider';
+@import 'elements/icons';
+@import 'elements/links';
+@import 'elements/lists';
+@import 'elements/tags';
+
+@import 'components/accordion';
+@import 'components/breadcrumbs';
+@import 'components/datepicker';
+@import 'components/dropdowns';
+@import 'components/editors';
+@import 'components/modals';
+@import 'components/message';
+@import 'components/media';
+@import 'components/charts';
+@import 'components/loader';
+@import 'components/toggles';
+@import 'components/video-player';
+@import 'components/placeholders';
+@import 'components/popovers';
+@import 'components/progress';
+@import 'components/theme-switch';
+@import 'components/avatar';
+@import 'components/snacks';
+@import 'components/tabs';
+@import 'components/table';
+@import 'components/datatable';
+@import 'components/toasts';
+@import 'components/tooltips';
+@import 'components/timeline';
+@import 'components/circle-chart';
+
+@import 'pages/demo/landing';
+@import 'pages/dashboards/personal';
+@import 'pages/dashboards/finance';
+@import 'pages/dashboards/banking';
+@import 'pages/dashboards/business';
+@import 'pages/dashboards/lifestyle';
+@import 'pages/dashboards/ecommerce';
+@import 'pages/dashboards/apps';
+@import 'pages/dashboards/hub';
+@import 'pages/lists/list-view';
+@import 'pages/lists/list-flex';
+@import 'pages/grids/grid-users';
+@import 'pages/grids/grid-cards';
+@import 'pages/grids/grid-tiles';
+@import 'pages/demo/demo';
+@import 'pages/projects/board';
+@import 'pages/projects/projects';
+@import 'pages/projects/project';
+@import 'pages/messaging/messaging';
+@import 'pages/messaging/messaging-webapp';
+@import 'pages/auth/auth';
+@import 'pages/profile/_user-profile';
+@import 'pages/generic/onboarding';
+@import 'pages/generic/search';
+@import 'pages/generic/subpages';
+@import 'pages/generic/forms';
+@import 'pages/generic/utility';
+@import 'pages/generic/widgets';
+@import 'pages/generic/widgets-lists';
+@import 'pages/generic/widgets-stats';
+@import 'pages/generic/wizard';
+@import 'pages/generic/inbox';
+
+@import 'layout/responsive';
+
+@import 'abstracts/dark';
+
+// $slick-font-path: '/assets/fonts/';
+// $slick-loader-path: '/assets/fonts/';
+
+// @import '../../../node_modules/slick-carousel/slick/slick.scss';
+// @import '../../../node_modules/slick-carousel/slick/slick-theme.scss';

@@ -1,0 +1,248 @@
+/*! _modals.scss | Huro | Css ninja 2020-2021 */
+
+/*
+    1. Base Class
+    2. H Modal
+    3. H Modal Dark mode
+    4. Media queries
+*/
+
+/* ==========================================================================
+1. Base Class
+========================================================================== */
+
+.modal {
+    transition: all 0.5s;
+
+    &.is-big {
+        .modal-content {
+            width: 100%;
+            max-width: 840px;
+
+            .modal-card {
+                width: 100%;
+            }
+        }
+    }
+
+    &.is-large {
+        .modal-content {
+            width: 100%;
+            max-width: 720px;
+
+            .modal-card {
+                width: 100%;
+            }
+        }
+    }
+
+    &.is-medium {
+        .modal-content {
+            width: 100%;
+            max-width: 640px;
+
+            .modal-card {
+                width: 100%;
+            }
+        }
+    }
+
+    &.is-small {
+        .modal-content {
+            width: 100%;
+            max-width: 420px;
+
+            .modal-card {
+                width: 100%;
+            }
+        }
+    }
+
+    .modal-content {
+        transition: all 0.4s;
+    }
+}
+
+/* ==========================================================================
+2. H Modal
+========================================================================== */
+
+.h-modal {
+    &.is-active {
+        z-index: 100 !important;
+
+        .h-modal-close {
+            cursor: pointer;
+        }
+    }
+
+    .h-modal-card {
+        width: 100%;
+        background: $white;
+        border: 1px solid $fade-grey;
+        border-radius: 8px;
+        padding: 40px;
+    }
+
+    .modal-background {
+        background-color: rgba($dark-sidebar, 0.8);
+    }
+
+    .modal-content {
+        transform: scale(1) !important;
+        opacity: 1 !important;
+        max-width: 540px;
+        overflow-x: hidden;
+        animation: fadeInDown .5s;
+        margin: 0;
+        padding: 0 10px;
+
+        .modal-card {
+            max-width: 100%;
+            margin: 0 auto;
+
+            &.is-rounded {
+                border-radius: 12px;
+            }
+
+            .modal-card-head {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 15px 20px;
+                background: $white;
+                border-bottom-color: darken($fade-grey, 3%);
+
+                &.no-border {
+                    border-bottom-color: transparent;
+                }
+
+                h3 {
+                    font-family: $font-alt;
+                    color: $dark-text;
+                    font-weight: 600;
+                    font-size: 1rem;
+                }
+
+                .h-modal-close {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: none;
+                    border-color: transparent;
+                    width: 22px;
+                    height: 22px;
+                    padding: 0;
+                    outline: none !important;
+
+                    &:hover {
+                        svg {
+                            stroke: $primary;
+                        }
+                    }
+
+                    svg {
+                        width: 22px;
+                        height: 22px;
+                        stroke: $muted-grey;
+                    }
+                }
+            }
+
+            .modal-card-body {
+                .modal-form {
+                    padding: 10px 0 20px 0;
+                }
+            }
+
+            .modal-card-foot {
+                background-color: $white;
+                padding: 15px 20px;
+                border-top: 1px solid darken($fade-grey, 3%);
+
+                &.no-border {
+                    border-top-color: transparent;
+                }
+
+                &.is-start {
+                    justify-content: flex-start !important;
+                }
+
+                &.is-centered {
+                    justify-content: center !important;
+                }
+
+                &.is-end {
+                    justify-content: flex-end !important;
+                }
+
+                .h-button {
+                    min-width: 110px;
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+3. H Modal Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .h-modal {
+            .modal-background {
+                background: rgba(101, 101, 104, 0.8) !important;
+            }
+
+            .modal-content {
+                .modal-card {
+                    .modal-card-head {
+                        background: lighten($dark-sidebar, 6%) !important;
+                        border-color: lighten($dark-sidebar, 12%);
+
+                        h3 {
+                            color: $dark-dark-text;
+                        }
+
+                        .h-modal-close {
+                            &:hover {
+                                svg {
+                                    stroke: $accent;
+                                }
+                            }
+                        }
+                    }
+
+                    .modal-card-body {
+                        background: lighten($dark-sidebar, 6%) !important;
+                    }
+
+                    .modal-card-foot {
+                        background: lighten($dark-sidebar, 6%) !important;
+                        border-color: lighten($dark-sidebar, 12%);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* ==========================================================================
+4. Media queries
+========================================================================== */
+
+@media screen and (min-width: 769px) {
+    .modal.modal-lg {
+        .modal-card, .modal-content {
+            width: 800px !important;
+        }
+    }
+
+    .modal.modal-sm {
+        .modal-card, .modal-content {
+            width: 400px !important;
+        }
+    }
+}

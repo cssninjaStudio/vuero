@@ -17,11 +17,11 @@ export default LayoutsSidebar
 <template>
   <div id="layouts-sidebar" class="sidebar-panel is-generic">
     <div class="subpanel-header">
-      {{> projects-quick-dropdown}}
+      <ProjectsQuickDropdown />
 
       <h3 class="no-mb">Layouts</h3>
       <div class="panel-close">
-        <i data-feather="x"></i>
+        <Icon icon="feather:x" />
       </div>
     </div>
     <div class="inner" data-simplebar>

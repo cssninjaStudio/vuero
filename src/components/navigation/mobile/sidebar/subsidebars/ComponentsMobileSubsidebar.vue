@@ -37,17 +37,17 @@ export default ComponentsMobileSubsidebar
           <ul>
             <li>
               <a class="is-submenu" href="/components-accordion-basic.html"
-                ><i data-feather="circle"></i>Accordion</a
+                ><Icon icon="feather:circle" />Accordion</a
               >
             </li>
             <li>
               <a class="is-submenu" href="/components-accordion-collapse.html"
-                ><i data-feather="circle"></i>Collapse</a
+                ><Icon icon="feather:circle" />Collapse</a
               >
             </li>
             <li>
               <a class="is-submenu" href="/components-accordion-images.html"
-                ><i data-feather="circle"></i>Image Accordion</a
+                ><Icon icon="feather:circle" />Image Accordion</a
               >
             </li>
           </ul>
@@ -82,12 +82,12 @@ export default ComponentsMobileSubsidebar
           <ul>
             <li>
               <a class="is-submenu" href="/components-tabs-regular.html"
-                ><i data-feather="circle"></i>Regular Tabs</a
+                ><Icon icon="feather:circle" />Regular Tabs</a
               >
             </li>
             <li>
               <a class="is-submenu" href="/components-tabs-slider.html"
-                ><i data-feather="circle"></i>Slider Tabs</a
+                ><Icon icon="feather:circle" />Slider Tabs</a
               >
             </li>
           </ul>
@@ -101,22 +101,22 @@ export default ComponentsMobileSubsidebar
           <ul>
             <li>
               <a class="is-submenu" href="/components-table-flex.html"
-                ><i data-feather="circle"></i>Base Table</a
+                ><Icon icon="feather:circle" />Base Table</a
               >
             </li>
             <li>
               <a class="is-submenu" href="/components-table-flex-compact.html"
-                ><i data-feather="circle"></i>Compact Table</a
+                ><Icon icon="feather:circle" />Compact Table</a
               >
             </li>
             <li>
               <a class="is-submenu" href="/components-table-flex-media.html"
-                ><i data-feather="circle"></i>Media Table</a
+                ><Icon icon="feather:circle" />Media Table</a
               >
             </li>
             <li>
               <a class="is-submenu" href="/components-table-flex-advanced.html"
-                ><i data-feather="circle"></i>Advanced Table</a
+                ><Icon icon="feather:circle" />Advanced Table</a
               >
             </li>
           </ul>
@@ -134,57 +134,57 @@ export default ComponentsMobileSubsidebar
           <ul>
             <li>
               <a class="is-submenu" href="/components-plugins-alertify.html"
-                ><i data-feather="circle"></i>Alertify</a
+                ><Icon icon="feather:circle" />Alertify</a
               >
             </li>
             <li>
               <a class="is-submenu" href="/components-plugins-autocomplete.html"
-                ><i data-feather="circle"></i>Autocomplete</a
+                ><Icon icon="feather:circle" />Autocomplete</a
               >
             </li>
             <li>
               <a class="is-submenu" href="/components-plugins-pickaday.html"
-                ><i data-feather="circle"></i>Datepicker</a
+                ><Icon icon="feather:circle" />Datepicker</a
               >
             </li>
             <li>
               <a class="is-submenu" href="/components-plugins-choices.html"
-                ><i data-feather="circle"></i>ChoicesJs</a
+                ><Icon icon="feather:circle" />ChoicesJs</a
               >
             </li>
             <li>
               <a class="is-submenu" href="/components-plugins-nouislider.html"
-                ><i data-feather="circle"></i>NoUI Slider</a
+                ><Icon icon="feather:circle" />NoUI Slider</a
               >
             </li>
             <li>
               <a class="is-submenu" href="/components-plugins-filepond.html"
-                ><i data-feather="circle"></i>Filepond</a
+                ><Icon icon="feather:circle" />Filepond</a
               >
             </li>
             <li>
               <a class="is-submenu" href="/components-plugins-lightgallery.html"
-                ><i data-feather="circle"></i>Light Gallery</a
+                ><Icon icon="feather:circle" />Light Gallery</a
               >
             </li>
             <li>
               <a class="is-submenu" href="/components-plugins-videogallery.html"
-                ><i data-feather="circle"></i>Video Gallery</a
+                ><Icon icon="feather:circle" />Video Gallery</a
               >
             </li>
             <li>
               <a class="is-submenu" href="/components-plugins-video-player.html"
-                ><i data-feather="circle"></i>Video Player</a
+                ><Icon icon="feather:circle" />Video Player</a
               >
             </li>
             <li>
               <a class="is-submenu" href="/components-plugins-toasts.html"
-                ><i data-feather="circle"></i>Toasts</a
+                ><Icon icon="feather:circle" />Toasts</a
               >
             </li>
             <li>
               <a class="is-submenu" href="/components-plugins-webuipopover.html"
-                ><i data-feather="circle"></i>WebUI Popover</a
+                ><Icon icon="feather:circle" />WebUI Popover</a
               >
             </li>
           </ul>
@@ -200,12 +200,12 @@ export default ComponentsMobileSubsidebar
               <a
                 class="is-submenu"
                 href="/components-plugins-editor-summernote.html"
-                ><i data-feather="circle"></i>Summernote</a
+                ><Icon icon="feather:circle" />Summernote</a
               >
             </li>
             <li>
               <a class="is-submenu" href="/components-plugins-editor-sun.html"
-                ><i data-feather="circle"></i>Sun Editor</a
+                ><Icon icon="feather:circle" />Sun Editor</a
               >
             </li>
           </ul>

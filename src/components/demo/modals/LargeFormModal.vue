@@ -22,7 +22,7 @@ export default LargeFormModal
         <header class="modal-card-head">
           <h3>Create Project</h3>
           <button class="h-modal-close ml-auto" aria-label="close">
-            <i data-feather="x"></i>
+            <Icon icon="feather:x" />
           </button>
         </header>
         <div class="modal-card-body">
@@ -50,14 +50,14 @@ export default LargeFormModal
                           <div class="combo-item">
                             <img
                               src="https://via.placeholder.com/150x150"
-                              data-demo-src="assets/img/avatars/placeholder.jpg"
+                              data-demo-src="/src/assets/images/avatars/placeholder.jpg"
                               alt=""
                             />
                             <span class="selected-item">Add people</span>
                           </div>
                         </div>
                         <div class="box-chevron">
-                          <i data-feather="chevron-down"></i>
+                          <Icon icon="feather:chevron-down" />
                         </div>
                         <div class="box-dropdown">
                           <div class="dropdown-inner has-slimscroll">
@@ -66,65 +66,65 @@ export default LargeFormModal
                                 <span class="item-icon">
                                   <img
                                     src="https://via.placeholder.com/150x150"
-                                    data-demo-src="assets/img/avatars/photos/22.jpg"
+                                    data-demo-src="/src/assets/images/avatars/photos/22.jpg"
                                     alt=""
                                   />
                                 </span>
                                 <span class="item-name">Jimmy H.</span>
                                 <span class="checkmark">
-                                  <i data-feather="check"></i>
+                                  <Icon icon="feather:check" />
                                 </span>
                               </li>
                               <li>
                                 <span class="item-icon">
                                   <img
                                     src="https://via.placeholder.com/150x150"
-                                    data-demo-src="assets/img/avatars/photos/8.jpg"
+                                    data-demo-src="/src/assets/images/avatars/photos/8.jpg"
                                     alt=""
                                   />
                                 </span>
                                 <span class="item-name">Erik K.</span>
                                 <span class="checkmark">
-                                  <i data-feather="check"></i>
+                                  <Icon icon="feather:check" />
                                 </span>
                               </li>
                               <li>
                                 <span class="item-icon">
                                   <img
                                     src="https://via.placeholder.com/150x150"
-                                    data-demo-src="assets/img/avatars/photos/7.jpg"
+                                    data-demo-src="/src/assets/images/avatars/photos/7.jpg"
                                     alt=""
                                   />
                                 </span>
                                 <span class="item-name">Alice C.</span>
                                 <span class="checkmark">
-                                  <i data-feather="check"></i>
+                                  <Icon icon="feather:check" />
                                 </span>
                               </li>
                               <li>
                                 <span class="item-icon">
                                   <img
                                     src="https://via.placeholder.com/150x150"
-                                    data-demo-src="assets/img/avatars/photos/25.jpg"
+                                    data-demo-src="/src/assets/images/avatars/photos/25.jpg"
                                     alt=""
                                   />
                                 </span>
                                 <span class="item-name">Melany W.</span>
                                 <span class="checkmark">
-                                  <i data-feather="check"></i>
+                                  <Icon icon="feather:check" />
                                 </span>
                               </li>
                               <li>
                                 <span class="item-icon">
                                   <img
                                     src="https://via.placeholder.com/150x150"
-                                    data-demo-src="assets/img/avatars/photos/12.jpg"
+                                    data-demo-src="/src/assets/images/avatars/photos/12.jpg"
                                     alt=""
                                   />
                                 </span>
                                 <span class="item-name">Joshua S.</span>
                                 <span class="checkmark">
-                                  <i data-feather="check"></i>
+                                  <Icon icon="feather:check" />
                                 </span>
                               </li>
                             </ul>
@@ -143,7 +143,7 @@ export default LargeFormModal
                           <span>Select a type</span>
                         </div>
                         <div class="select-icon">
-                          <i data-feather="chevron-down"></i>
+                          <Icon icon="feather:chevron-down" />
                         </div>
                         <div class="select-drop has-slimscroll-sm">
                           <div class="drop-inner">

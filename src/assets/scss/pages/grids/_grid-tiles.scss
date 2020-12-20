@@ -1,0 +1,815 @@
+/*! _grid-tiles.scss | Huro | Css ninja 2020-2021 */
+
+/*
+    1. Tile Grid Toolbar
+    2. Tile Grid V1 
+*/
+
+/* ==========================================================================
+1. Tile Grid Toolbar
+========================================================================== */
+
+.tile-grid-toolbar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    &.is-webapp {
+        padding-top: 30px;
+        margin: 0 auto 20px auto;
+
+        &.flex-list-v1 {
+            max-width: 880px;
+        }
+
+        &.flex-list-v2 {
+            max-width: 940px;
+        }
+    }
+
+    &.is-reversed {
+        flex-direction: row-reverse;
+
+        .control {
+            margin-right: 0;
+            margin-left: auto;
+        }
+
+        .tabs-inner {
+            margin-right: 10px;
+            margin-left: 0;
+        }
+    }
+
+    .control {
+        margin-right: 10px;
+    }
+
+    .list-info {
+        span {
+            font-family: $font;
+            color: $light-text;
+        }
+    }
+
+    .buttons {
+        margin-left: auto;
+        margin-bottom: 0;
+
+        .field, .h-button {
+            margin-bottom: 0;
+
+            .h-select {
+                min-width: 190px;
+            }
+        }
+    }
+
+    .tabs-inner {
+        margin-left: auto;
+
+        .tabs {
+            margin-bottom: 0;
+            min-width: 170px;
+        }
+    }
+}
+
+/* ==========================================================================
+2. Tile Grid V1
+========================================================================== */
+
+.tile-grid {
+    .columns {
+        margin-left: -.5rem !important;
+        margin-right: -.5rem !important;
+        margin-top: -.5rem !important;
+    }
+
+    .column {
+        padding: .5rem !important;
+    }
+
+    &.tile-grid-v1 {
+        .tile-grid-item {
+            @extend .s-card;
+
+            border-radius: 14px;
+            padding: 16px;
+
+            .tile-grid-item-inner {
+                display: flex;
+                align-items: center;
+
+                .meta {
+                    margin-left: 10px;
+                    line-height: 1.2;
+
+                    span {
+                        display: block;
+                        font-family: $font;
+
+                        &:first-child {
+                            color: $dark-text;
+                            font-family: $font-alt;
+                            font-weight: 600;
+                            font-size: 1rem;
+                        }
+
+                        &:nth-child(2) {
+                            color: $light-text;
+                            font-size: .9rem;
+                        }
+                    }
+                }
+
+                .dropdown {
+                    position: relative;
+                    margin-left: auto;
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+3. Tile Grid V2
+========================================================================== */
+
+.tile-grid {
+    &.tile-grid-v2 {
+        .tile-grid-item {
+            @extend .s-card;
+
+            border-radius: 14px;
+            padding: 16px;
+            cursor: pointer;
+
+            &:hover {
+                border-color: $primary;
+                box-shadow: $light-box-shadow;
+            }
+
+            .tile-grid-item-inner {
+                display: flex;
+                align-items: center;
+
+                > img {
+                    display: block;
+                    width: 50px;
+                    height: 50px;
+                    min-width: 50px;
+                }
+
+                .meta {
+                    margin-left: 10px;
+                    line-height: 1.4;
+
+                    span {
+                        display: block;
+                        font-family: $font;
+
+                        &:first-child {
+                            color: $dark-text;
+                            font-family: $font-alt;
+                            font-weight: 600;
+                            font-size: 1rem;
+                        }
+
+                        &:nth-child(2) {
+                            display: flex;
+                            align-items: center;
+
+                            span {
+                                display: inline-block;
+                                color: $light-text;
+                                font-size: .8rem;
+                                font-weight: 400;
+                            }
+
+                            .icon-separator {
+                                position: relative;
+                                font-size: 4px;
+                                color: $light-text;
+                                padding: 0 6px;
+                            }
+                        }
+                    }
+                }
+
+                .dropdown {
+                    margin-left: auto;
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+4. Tile Grid V2 Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .tile-grid {
+            &.tile-grid-v2 {
+                .tile-grid-item {
+                    &:hover {
+                        border-color: $accent !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+4. Tile Grid V3
+========================================================================== */
+
+.tile-grid {
+    &.tile-grid-v3 {
+        .tile {
+            &.is-ancestor {
+                margin-left: -.5rem;
+                margin-right: -.5rem;
+                margin-top: -.5rem;
+            }
+
+            &.is-parent {
+                padding: .5rem;
+            }
+        }
+
+        .tile-grid-item {
+            @extend .s-card;
+
+            padding: 10px;
+            border-radius: 16px;
+
+            &.is-medium {
+                max-height: 132px;
+
+                .tile-grid-item-inner {
+                    display: flex;
+                    height: 100%;
+
+                    > img {
+                        display: block;
+                        border-radius: 12px;
+                        width: 100%;
+                        max-width: 110px;
+                        min-width: 110px;
+                        height: 100%;
+                        min-height: 110px;
+                        max-height: 110px;
+                        object-fit: cover;
+                    }
+
+                    .meta {
+                        margin-left: 12px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+
+                        .tile-title {
+                            h3 {
+                                font-family: $font;
+                                font-family: $font-alt;
+                                font-size: 1rem;
+                                font-weight: 600;
+                                color: $dark-text;
+                                line-height: 1.3;
+                            }
+                        }
+
+                        .tile-meta {
+                            display: flex;
+                            align-items: center;
+                            margin-top: auto;
+                            padding: 0 0 5px 0;
+
+                            .h-avatar {
+                                max-width: 26px;
+                                max-height: 26px;
+                                min-width: 26px;
+
+                                .avatar {
+                                    max-width: 26px;
+                                    max-height: 26px;
+                                    min-width: 26px;
+                                }
+                            }
+
+                            .meta-inner {
+                                margin-left: 8px;
+                                line-height: 1.2;
+
+                                span {
+                                    display: block;
+                                    font-weight: 400;
+
+                                    &:first-child {
+                                        color: $dark-text;
+                                        font-family: $font-alt;
+                                        font-size: .85rem;
+                                        font-weight: 600;
+                                    }
+
+                                    &:nth-child(2) {
+                                        font-size: .8rem;
+                                        font-family: $font;
+                                        color: $light-text;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.is-large {
+                .tile-grid-item-inner {
+                    display: flex;
+                    flex-direction: column;
+                    height: 100%;
+
+                    > img {
+                        display: block;
+                        border-radius: 12px;
+                        width: 100%;
+                        height: 180px;
+                        object-fit: cover;
+                    }
+
+                    .meta {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        flex: 1 1 0px;
+                        padding: 0 5px;
+
+                        .tile-title {
+                            padding-top: 10px;
+
+                            h3 {
+                                font-family: $font;
+                                font-size: 1.2rem;
+                                font-weight: 500;
+                                color: $dark-text;
+                                line-height: 1.1;
+                            }
+
+                            p {
+                                //display: none;
+                            }
+                        }
+
+                        .tile-meta {
+                            display: flex;
+                            align-items: center;
+                            margin-top: auto;
+                            padding: 0 0 5px 0;
+
+                            .h-avatar {
+                                max-width: 26px;
+                                max-height: 26px;
+                                min-width: 26px;
+
+                                .avatar {
+                                    max-width: 26px;
+                                    max-height: 26px;
+                                    min-width: 26px;
+                                }
+                            }
+
+                            .meta-inner {
+                                margin-left: 8px;
+                                line-height: 1.2;
+
+                                span {
+                                    display: block;
+                                    font-weight: 400;
+
+                                    &:first-child {
+                                        color: $dark-text;
+                                        font-size: .9rem;
+                                        font-weight: 500;
+                                    }
+
+                                    &:nth-child(2) {
+                                        font-size: .8rem;
+                                        color: $light-text;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.is-wide {
+                .tile-grid-item-inner {
+                    display: flex;
+                    height: 100%;
+
+                    > img {
+                        display: block;
+                        border-radius: 12px;
+                        width: 100%;
+                        max-width: 280px;
+                        height: 100%;
+                        min-height: 160px;
+                        object-fit: cover;
+                    }
+
+                    .meta {
+                        margin-left: 12px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+
+                        .tile-title {
+                            padding-top: 5px;
+
+                            h3 {
+                                font-family: $font;
+                                font-size: 1.3rem;
+                                font-weight: 500;
+                                color: $dark-text;
+                                line-height: 1.1;
+                            }
+
+                            p {
+                                color: $light-text;
+                                font-size: .95rem;
+                                padding-top: 5px;
+                            }
+                        }
+
+                        .tile-meta {
+                            display: flex;
+                            align-items: center;
+                            margin-top: auto;
+                            padding: 0 0 5px 0;
+
+                            .h-avatar {
+                                max-width: 26px;
+                                max-height: 26px;
+                                min-width: 26px;
+
+                                .avatar {
+                                    max-width: 26px;
+                                    max-height: 26px;
+                                    min-width: 26px;
+                                }
+                            }
+
+                            .meta-inner {
+                                margin-left: 8px;
+                                line-height: 1.2;
+
+                                span {
+                                    display: block;
+                                    font-weight: 400;
+
+                                    &:first-child {
+                                        color: $dark-text;
+                                        font-size: .9rem;
+                                        font-weight: 500;
+                                    }
+
+                                    &:nth-child(2) {
+                                        font-size: .8rem;
+                                        color: $light-text;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.is-tall {
+                .tile-grid-item-inner {
+                    display: flex;
+                    flex-direction: column;
+                    height: 100%;
+
+                    > img {
+                        display: block;
+                        border-radius: 12px;
+                        width: 100%;
+
+                        //max-width: 110px;
+                        height: 220px;
+                        object-fit: cover;
+                    }
+
+                    .meta {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        flex: 1 1 0px;
+                        padding: 0 5px;
+
+                        .tile-title {
+                            padding-top: 10px;
+
+                            h3 {
+                                font-family: $font;
+                                font-size: 1.2rem;
+                                font-weight: 500;
+                                color: $dark-text;
+                                line-height: 1.1;
+                            }
+
+                            p {
+                                color: $light-text;
+                                font-size: .95rem;
+                                padding-top: 5px;
+                            }
+                        }
+
+                        .tile-meta {
+                            display: flex;
+                            align-items: center;
+                            margin-top: auto;
+                            padding: 0 0 5px 0;
+
+                            .h-avatar {
+                                max-width: 26px;
+                                max-height: 26px;
+                                min-width: 26px;
+
+                                .avatar {
+                                    max-width: 26px;
+                                    max-height: 26px;
+                                    min-width: 26px;
+                                }
+                            }
+
+                            .meta-inner {
+                                margin-left: 8px;
+                                line-height: 1.2;
+
+                                span {
+                                    display: block;
+                                    font-weight: 400;
+
+                                    &:first-child {
+                                        color: $dark-text;
+                                        font-size: .9rem;
+                                        font-weight: 500;
+                                    }
+
+                                    &:nth-child(2) {
+                                        font-size: .8rem;
+                                        color: $light-text;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+7. Media Queries
+========================================================================== */
+
+@media only screen and (max-width: 767px) {
+    .tile-grid {
+        &.tile-grid-v3 {
+            .tile-grid-item {
+                max-height: 132px !important;
+
+                .tile-grid-item-inner {
+                    display: flex !important;
+                    flex-direction: row !important;
+                    height: 100% !important;
+
+                    > img {
+                        display: block !important;
+                        border-radius: 12px !important;
+                        width: 100% !important;
+                        max-width: 110px !important;
+                        min-width: 110px !important;
+                        height: 100% !important;
+                        min-height: 110px !important;
+                        max-height: 110px !important;
+                        object-fit: cover !important;
+                    }
+
+                    .meta {
+                        margin-left: 12px !important;
+                        display: flex !important;
+                        flex-direction: column !important;
+                        justify-content: space-between !important;
+
+                        .tile-title {
+                            h3 {
+                                font-family: $font !important;
+                                font-size: 1.1rem !important;
+                                font-weight: 500;
+                                color: $dark-text !important;
+                                line-height: 1.1 !important;
+                            }
+
+                            p {
+                                display: none !important;
+                            }
+                        }
+
+                        .tile-meta {
+                            display: flex !important;
+                            align-items: center !important;
+                            margin-top: auto !important;
+                            padding: 0 0 5px 0 !important;
+
+                            .h-avatar {
+                                max-width: 26px !important;
+                                max-height: 26px !important;
+                                min-width: 26px !important;
+
+                                .avatar {
+                                    max-width: 26px !important;
+                                    max-height: 26px !important;
+                                    min-width: 26px !important;
+                                }
+                            }
+
+                            .meta-inner {
+                                margin-left: 8px !important;
+                                line-height: 1.2 !important;
+
+                                span {
+                                    display: block !important;
+                                    font-weight: 400 !important;
+
+                                    &:first-child {
+                                        color: $dark-text !important;
+                                        font-size: .9rem !important;
+                                        font-weight: 500 !important;
+                                    }
+
+                                    &:nth-child(2) {
+                                        font-size: .8rem !important;
+                                        color: $light-text !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    .tile-grid {
+        &.tile-grid-v3 {
+            .tile-grid-item {
+                max-height: 132px !important;
+
+                .tile-grid-item-inner {
+                    display: flex !important;
+                    flex-direction: row !important;
+                    height: 100% !important;
+
+                    > img {
+                        display: block !important;
+                        border-radius: 12px !important;
+                        width: 100% !important;
+                        max-width: 110px !important;
+                        min-width: 110px !important;
+                        height: 100% !important;
+                        min-height: 110px !important;
+                        max-height: 110px !important;
+                        object-fit: cover !important;
+                    }
+
+                    .meta {
+                        margin-left: 12px !important;
+                        display: flex !important;
+                        flex-direction: column !important;
+                        justify-content: space-between !important;
+
+                        .tile-title {
+                            h3 {
+                                font-family: $font !important;
+                                font-size: 1.1rem !important;
+                                font-weight: 500;
+                                color: $dark-text !important;
+                                line-height: 1.1 !important;
+                            }
+
+                            p {
+                                display: block;
+                                max-width: 460px;
+                            }
+                        }
+
+                        .tile-meta {
+                            display: flex !important;
+                            align-items: center !important;
+                            margin-top: auto !important;
+                            padding: 0 0 5px 0 !important;
+
+                            .h-avatar {
+                                max-width: 26px !important;
+                                max-height: 26px !important;
+                                min-width: 26px !important;
+
+                                .avatar {
+                                    max-width: 26px !important;
+                                    max-height: 26px !important;
+                                    min-width: 26px !important;
+                                }
+                            }
+
+                            .meta-inner {
+                                margin-left: 8px !important;
+                                line-height: 1.2 !important;
+
+                                span {
+                                    display: block !important;
+                                    font-weight: 400 !important;
+
+                                    &:first-child {
+                                        color: $dark-text !important;
+                                        font-size: .9rem !important;
+                                        font-weight: 500 !important;
+                                    }
+
+                                    &:nth-child(2) {
+                                        font-size: .8rem !important;
+                                        color: $light-text !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .tile-grid {
+        &.tile-grid-v3 {
+            .tile-grid-item {
+
+                &.is-medium {
+                    .tile-grid-item-inner {
+                        .tile-title {
+                            h3 {
+                                font-size: 1rem !important;
+                            }
+                        }
+                    }
+                }
+
+                &.is-large {
+                    .tile-grid-item-inner {
+                        .tile-title {
+                            h3 {
+                                font-size: 1.1rem !important;
+                            }
+                        }
+                    }
+                }
+
+                &.is-tall {
+                    .tile-grid-item-inner {
+                        .tile-title {
+                            h3 {
+                                font-size: 1.2rem !important;
+                            }
+                        }
+                    }
+                }
+
+                &.is-wide {
+                    .tile-grid-item-inner {
+                        > img {
+                            max-width: 180px;
+                            min-height: 160px;
+                        }
+
+                        .tile-title {
+                            h3 {
+                                font-size: 1.2rem !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

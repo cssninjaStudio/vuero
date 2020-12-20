@@ -1,0 +1,535 @@
+/*! _sidebar.scss | Huro | Css ninja 2020-2021 */
+
+/*
+    1. Sidebar
+    2. Sidebar Dark mode
+*/
+
+/* ==========================================================================
+1. Sidebar
+========================================================================== */
+
+.main-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 80px;
+    background-color: #f9f9f9;
+    box-shadow: none;
+    z-index: 35;
+    transition: border-radius .3s;
+
+    &.is-bordered {
+        border-right: 1px solid $fade-grey !important;
+    }
+
+    &.is-open {
+        box-shadow: 2px 0px 2px 0px rgba(0, 0, 0, 0.02);
+    }
+
+    &.is-curved {
+        &:not(.is-bordered) {
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-right: 1px solid darken($fade-grey, 4%) !important;
+
+            .sidebar-brand {
+                border-top-right-radius: 20px;
+            }
+        }
+    }
+
+    &.is-colored {
+        background: $primary;
+        border-color: darken($primary, 2%);
+
+        .sidebar-inner {
+            .naver {
+                background: $white;
+            }
+
+            .icon-menu, .bottom-menu {
+                li {
+                    a {
+                        &:hover, &.is-active {
+                            .sidebar-svg {
+                                stroke: $smoke-white;
+                            }
+                        }
+
+                        .sidebar-svg {
+                            stroke: lighten($primary, 25%);
+                        }
+                    }
+                }
+
+                .profile-dropdown {
+                    .status-indicator {
+                        border-color: $primary;
+                    }
+                }
+            }
+        }
+    }
+
+    .sidebar-brand {
+        width: 80px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            margin-top: 5px;
+            width: 36px;
+            height: auto;
+        }
+    }
+
+    .sidebar-inner {
+        height: calc(100% - 60px);
+        width: 100%;
+        position: relative;
+
+        .naver {
+            position: absolute;
+            top: -150px;
+            left: 0;
+            height: 64px;
+            width: 4px;
+            border-radius: 100px;
+            background: $primary;
+            transition: all .3s;
+
+            &.is-search-results {
+                margin-top: 240px;
+            }
+
+            &.from-bottom {
+                top: unset !important;
+                bottom: -64px;
+                margin-top: 0 !important;
+            }
+        }
+
+        .icon-menu, .bottom-menu {
+            li {
+                position: relative;
+                width: 80px;
+                height: 64px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &.is-active {
+                    a svg {
+                        stroke: $primary;
+                    }
+                }
+
+                .is-messages-counter {
+                    position: absolute;
+                    top: 6px;
+                    right: 16px;
+                    display: block;
+                    line-height: 17px;
+                    background: $danger;
+                    color: $white;
+                    font-weight: 500;
+                    font-size: .6rem;
+                    border-radius: 100px;
+                    border: 1px solid $white;
+                    transform: scale(0.8);
+                }
+
+                a {
+                    display: block;
+                    position: relative;
+                    transform: rotate(0);
+                    opacity: 1;
+                    transition: all .3s;
+
+                    &:hover, &.is-selected {
+                        .sidebar-svg {
+                            stroke: $primary;
+                        }
+                    }
+
+                    .sidebar-svg {
+                        height: 20px;
+                        width: 20px;
+                        stroke: $title-grey;
+                        stroke-width: 1.6px;
+                        transition: all .3s;
+                    }
+
+                    /*.sidebar-icon {
+                        height: 28px;
+                        width: 28px;
+                        transition: all .3s;
+
+                        .path {
+                            fill: $title-grey;
+                            stroke: none;
+                        }
+
+                        &:hover, &.is-active {
+                            .path {
+                                fill: $primary;
+                            }
+                        }
+                    }*/
+
+                    &:hover svg, &.is-active svg {
+                        stroke: $primary;
+                    }
+
+                    &.is-opened {
+                        transform: rotate(360deg);
+                        opacity: 0;
+                    }
+
+                    &.is-inactive {
+                        transform: rotate(-360deg);
+                        opacity: 0;
+                    }
+
+                    /*&.is-selected {
+                        svg .path {
+                            fill: $primary;
+                        }
+                    }*/
+                }
+
+                /*#open-filters {
+                    svg {
+                        transform: rotate(0);
+                        transition: all .3s;
+                    }
+
+                    &:hover {
+                        svg {
+                            transform: rotate(145deg);
+                        }
+                    }
+                }*/
+            }
+        }
+
+        .bottom-menu {
+            position: absolute;
+            bottom: 0;
+            padding: 0;
+
+            li {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+
+                &.is-rotate {
+                    a:hover {
+                        animation: rotating 1s linear infinite;
+                    }
+                }
+
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .dropdown {
+                    position: relative;
+                    display: block;
+                    height: 48px;
+                    width: 48px !important;
+
+                    > img {
+                        height: 48px;
+                        width: 48px;
+                        border-radius: 50%;
+                        position: relative;
+                        z-index: 1;
+                    }
+
+                    .status-indicator {
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        width: 14px;
+                        height: 14px;
+                        border-radius: 50%;
+                        border: 2px solid $white;
+                        background: $success;
+                        z-index: 2;
+                    }
+                }
+            }
+
+            .profile-dropdown {
+                .dropdown-menu {
+                    bottom: 0;
+                    left: 145%;
+
+                    .dropdown-content {
+                        padding-top: 0;
+                        overflow: hidden;
+
+                        .dropdown-head {
+                            display: flex;
+                            align-items: center;
+                            padding: 20px 16px 20px 16px;
+                            margin-bottom: 12px;
+                            background: #fafafa;
+
+                            .meta {
+                                margin-left: 12px;
+                                font-family: $font;
+
+                                span {
+                                    display: block;
+
+                                    &:first-child {
+                                        font-size: 1.1rem;
+                                        font-weight: 500;
+                                        color: $dark-text;
+                                        line-height: 1.2;
+                                    }
+
+                                    &:nth-child(2) {
+                                        text-transform: uppercase;
+                                        color: $light-text;
+                                        font-size: .7rem;
+                                    }
+                                }
+                            }
+                        }
+
+                        .logout-button {
+                            svg {
+                                stroke: $smoke-white !important;
+                            }
+                        }
+                    }
+
+                    .dropdown-item {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        width: 100% !important;
+
+                        &:hover:not(.is-button) {
+                            background: lighten($fade-grey, 3%);
+                        }
+                    }
+
+                    .flex-item {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin: 0 15px;
+
+                        .toggle-title {
+                            font-size: .8rem;
+                            color: $muted-grey;
+
+                            &:hover {
+                                background: transparent !important;
+                            }
+                        }
+
+                        &:hover {
+                            background: transparent !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+2. Sidebar Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .main-sidebar:not(.is-colored) {
+            background: $dark-sidebar;
+
+            &.is-bordered {
+                border-right: 1px solid $dark-sidebar !important;
+            }
+
+            &.is-curved {
+                &:not(.is-bordered) {
+                    border-color: lighten($dark-sidebar, 16%) !important;
+                }
+            }
+
+            .naver {
+                background: $accent;
+            }
+
+            .icon-menu, .bottom-menu {
+                li {
+                    a {
+                        &.is-selected {
+                            svg {
+                                stroke: $accent !important;
+                            }
+
+                            .sidebar-icon .path {
+                                fill: $accent !important;
+                            }
+                        }
+
+                        &:hover {
+                            svg {
+                                stroke: $accent !important;
+                            }
+
+                            .sidebar-icon .path {
+                                fill: $accent !important;
+                            }
+                        }
+
+                        .sidebar-icon.is-active .path {
+                            fill: $accent !important;
+                        }
+                    }
+
+                    svg {
+                        stroke: lighten($accent-grey, 3%);
+                    }
+
+                    .status-indicator {
+                        border-color: $dark-sidebar !important;
+                    }
+                }
+            }
+
+            .profile-dropdown {
+                .dropdown-content {
+                    background: $dark-sidebar;
+
+                    .dropdown-head {
+                        background: lighten($dark-sidebar, 2%) !important;
+
+                        &:hover {
+                            background: lighten($dark-sidebar, 2%) !important;
+                        }
+
+                        .meta {
+                            &:hover {
+                                background: lighten($dark-sidebar, 2%) !important;
+                            }
+
+                            span {
+                                &:first-child {
+                                    color: $dark-dark-text !important;
+                                }
+                            }
+                        }
+                    }
+
+                    .dropdown-item {
+                        color: $white;
+
+                        &:not(.is-button):hover {
+                            background: lighten($dark-sidebar, 5%);
+                        }
+
+                        &.is-button {
+                            &:hover {
+                                background: lighten($dark-sidebar, 2%) !important;
+                            }
+                        }
+                    }
+
+                    .dropdown-divider {
+                        background: lighten($dark-sidebar, 5%);
+                    }
+                }
+            }
+
+            .sidebar-inner {
+                .icon-menu, .bottom-menu {
+                    li {
+                        a {
+                            &.is-active {
+                                svg {
+                                    stroke: $accent !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .main-sidebar {
+            &.is-colored {
+                background: darken($accent, 2%);
+                border-color: darken($accent, 2%) !important;
+
+                .sidebar-inner {
+                    .naver {
+                        opacity: .8;
+                    }
+
+                    .icon-menu, .bottom-menu {
+                        li {
+                            a {
+                                &:hover, &.is-active {
+                                    .sidebar-svg {
+                                        stroke: $smoke-white;
+                                        opacity: 1;
+                                    }
+                                }
+
+                                .sidebar-svg {
+                                    stroke: lighten($smoke-white, 2%);
+                                    opacity: .5;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .profile-dropdown {
+                    .status-indicator {
+                        border-color: darken($accent, 2%) !important;
+                    }
+
+                    .dropdown-menu {
+                        .dropdown-content {
+                            .dropdown-head {
+                                background: lighten($dark-sidebar, 2%) !important;
+
+                                &:hover {
+                                    background: lighten($dark-sidebar, 2%) !important;
+                                }
+
+                                .meta {
+                                    &:hover {
+                                        background: lighten($dark-sidebar, 2%) !important;
+                                    }
+
+                                    span {
+                                        &:first-child {
+                                            color: $dark-dark-text !important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

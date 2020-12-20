@@ -1,0 +1,537 @@
+/*! _tabs.scss | Huro | Css ninja 2020-2021 */
+
+/*
+    1. Tabs
+    2. Tabs Dark mode
+    3. Tab Content
+    4. Sliding tabs 2X
+    5. Sliding tabs 3X
+    6. Sliding tabs Dark mode
+*/
+
+/* ==========================================================================
+1. Tabs
+========================================================================== */
+
+.tabs {
+    margin-bottom: 20px;
+
+    &.is-toggle {
+        li {
+            &:first-child {
+                a {
+                    border-right: none;
+                }
+            }
+
+            &:last-child {
+                a {
+                    border-left: none;
+                }
+            }
+
+            &.is-active {
+                a {
+                    background: $primary;
+                    border-color: $primary;
+
+                    &:hover {
+                        color: $white;
+                    }
+                }
+            }
+
+            a {
+                transition: all .3s;
+
+                &:hover {
+                    border-color: #dbdbdb;
+                }
+            }
+        }
+    }
+
+    li {
+        &.is-active {
+            a {
+                border-bottom-color: $primary;
+                color: $primary;
+
+                &:hover {
+                    border-bottom-color: $primary;
+                    color: $primary;
+                }
+            }
+        }
+
+        a {
+            font-family: $font;
+            border-bottom-width: 2px;
+            color: $placeholder;
+            border-bottom-color: transparent;
+
+            &:hover {
+                color: $light-text;
+                border-bottom-color: transparent;
+            }
+
+            svg {
+                height: 16px;
+                width: 16px;
+                margin-right: 6px;
+            }
+
+            .fas, .fal, .far, .fad, .fab {
+                margin-right: 6px;
+            }
+
+            .lnil, .lnir {
+                font-size: 20px;
+                margin-right: 6px;
+            }
+
+            small {
+                margin-left: 5px;
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+2. Tabs Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .tabs {
+            &.is-boxed {
+                li {
+                    &.is-active {
+                        a, a:hover {
+                            background: lighten($dark-sidebar, 1%) !important;
+                        }
+                    }
+
+                    a {
+                        border-color: lighten($dark-sidebar, 16%) !important;
+
+                        &:hover {
+                            background: lighten($dark-sidebar, 4%) !important;
+                        }
+                    }
+                }
+            }
+
+            &.is-toggle {
+                li {
+                    &.is-active {
+                        a, a:hover {
+                            background: $accent !important;
+                            border-color: $accent;
+                            color: $white;
+                        }
+                    }
+
+                    a {
+                        border-color: lighten($dark-sidebar, 16%) !important;
+
+                        &:hover {
+                            background: lighten($dark-sidebar, 4%) !important;
+                        }
+                    }
+                }
+            }
+
+            ul {
+                border-bottom-color: lighten($dark-sidebar, 16%);
+            }
+
+            li {
+                &.is-active {
+                    a {
+                        border-bottom-color: $accent;
+                        color: $accent;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+3. Tab Content
+========================================================================== */
+
+.tab-content {
+    display: none;
+    animation-name: fadeInLeft;
+    animation-duration: 0.5s;
+
+    &.is-active {
+        display: block;
+
+        &.is-spaced {
+            margin-top: 10px !important;
+        }
+    }
+
+    &.is-spaced {
+        margin-top: 40px;
+    }
+
+    &.is-spaced-lg {
+        margin-top: 40px !important;
+    }
+}
+
+/* ==========================================================================
+4. Sliding tabs 2X
+========================================================================== */
+
+.tabs-wrapper, .tabs-wrapper-alt {
+    &.is-slider {
+        &.is-inverted {
+            .tabs {
+                background: $white;
+            }
+        }
+
+        &.is-squared {
+            .tabs, .tab-naver {
+                border-radius: 8px;
+            }
+        }
+
+        .tabs {
+            position: relative;
+            background: lighten($fade-grey, 2%);
+            border: 1px solid $fade-grey;
+            max-width: 185px;
+            height: 35px;
+            border-bottom: none;
+            border-radius: 500px;
+
+            ul {
+                border-bottom: none;
+
+                &.is-profile {
+                    li {
+                        a {
+                            color: $smoke-white !important;
+                        }
+
+                        &.is-active a {
+                            color: $dark-text !important;
+                        }
+                    }
+                }
+            }
+
+            li {
+                width: 50%;
+
+                a {
+                    color: $light-text;
+                    font-family: $font;
+                    height: 40px;
+                    border-bottom: none;
+                    position: relative;
+                    z-index: 5;
+
+                    span {
+                        position: relative;
+                        top: -1px;
+                        display: block;
+                    }
+                }
+
+                &.is-active a {
+                    color: $white;
+                    font-weight: 400;
+                }
+
+                &:first-child {
+                    &.is-active ~ .tab-naver {
+                        margin-left: 0;
+                    }
+                }
+
+                &:nth-child(2) {
+                    &.is-active ~ .tab-naver {
+                        margin-left: 50% !important;
+                    }
+                }
+            }
+        }
+
+        .tab-naver {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 50%;
+            height: 20px;
+            background: $primary;
+            z-index: 1;
+            position: absolute;
+            top: .5px;
+            left: 0;
+            display: block;
+            width: 50%;
+            height: 32px;
+            transition: all .3s;
+            z-index: 4;
+            border-radius: 50px;
+
+            &.is-profile {
+                background: $smoke-white !important;
+            }
+
+            &.is-active {
+                margin-left: 50%;
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+5. Sliding tabs 3X
+========================================================================== */
+
+.tabs-wrapper, .tabs-wrapper-alt {
+    &.is-triple-slider {
+        &.is-inverted {
+            .tabs {
+                background: $white;
+            }
+        }
+
+        &.is-squared {
+            .tabs, .tab-naver {
+                border-radius: 8px;
+            }
+        }
+
+        .tabs {
+            position: relative;
+            background: lighten($fade-grey, 2%);
+            border: 1px solid $fade-grey;
+            max-width: 280px;
+            height: 35px;
+            border-bottom: none;
+            border-radius: 500px;
+
+            ul {
+                border-bottom: none;
+
+                &.is-profile {
+                    li {
+                        a {
+                            color: $smoke-white !important;
+                        }
+
+                        &.is-active a {
+                            color: $dark-text !important;
+                        }
+                    }
+                }
+            }
+
+            li {
+                width: 33.3%;
+
+                a {
+                    color: $light-text;
+                    font-family: $font;
+                    font-weight: 400;
+                    height: 40px;
+                    border-bottom: none;
+                    position: relative;
+                    z-index: 5;
+
+                    span {
+                        position: relative;
+                        top: -1px;
+                        display: block;
+                    }
+                }
+
+                &.is-active a {
+                    color: $white;
+                    font-weight: 400;
+                }
+
+                &:first-child {
+                    &.is-active ~ .tab-naver {
+                        margin-left: 0;
+                    }
+                }
+
+                &:nth-child(2) {
+                    &.is-active ~ .tab-naver {
+                        margin-left: 33% !important;
+                    }
+                }
+
+                &:nth-child(3) {
+                    &.is-active ~ .tab-naver {
+                        margin-left: 66.6%;
+                    }
+                }
+            }
+        }
+
+        .tab-naver {
+            position: absolute;
+            top: .5px;
+            left: 0;
+            display: block;
+            width: 33.3% !important;
+            height: 20px;
+            background: $primary;
+            z-index: 1;
+            position: absolute;
+            left: 0;
+            display: block;
+            height: 32px;
+            transition: all .3s;
+            z-index: 4;
+            border-radius: 50px;
+
+            &.is-profile {
+                background: $smoke-white !important;
+            }
+
+            &.is-active {
+                margin-left: 48%;
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+6. Sliding tabs Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .tabs-wrapper {
+            &.is-slider, &.is-triple-slider {
+                &.is-inverted {
+                    .tabs {
+                        border: 1px solid lighten($dark-sidebar, 16%) !important;
+                        background: lighten($dark-sidebar, 2%) !important;
+                    }
+                }
+
+                .tabs {
+                    border: 1px solid lighten($dark-sidebar, 16%) !important;
+                    background: lighten($dark-sidebar, 2%) !important;
+
+                    .tab-naver {
+                        background: $accent !important;
+                    }
+
+                    ul {
+                        border: none;
+                    }
+
+                    li {
+                        &.is-active {
+                            a {
+                                color: $white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* ==========================================================================
+4. Vertical tabs
+========================================================================== */
+
+@media only screen and (max-width: 767px) {
+    .vertical-tabs-wrapper {
+        .tabs {
+            ul {
+                li {
+                    &.is-active {
+                        a {
+                            color: $primary;
+                            border-bottom-color: $primary;
+                        }
+                    }
+
+                    a {
+                        color: $light-text;
+                    }
+                }
+            }
+        }
+
+        .content-wrap {
+            .tab-content {
+                padding-top: 12px;
+                display: none;
+                animation: fadeInLeft .5s;
+
+                &.is-active {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .vertical-tabs-wrapper {
+        display: flex;
+
+        .tabs {
+            min-width: 25%;
+            max-width: 25%;
+            margin-right: 30px;
+
+            ul {
+                display: block;
+                text-align: left;
+                border-bottom-color: transparent !important;
+
+                li {
+                    display: block;
+
+                    &.is-active {
+                        a {
+                            color: $primary;
+                            border-right-color: $primary;
+                        }
+                    }
+
+                    a {
+                        display: block;
+                        border-bottom-color: transparent !important;
+                        border-right: 2px solid #dbdbdb;
+                        color: $light-text;
+                    }
+                }
+            }
+        }
+
+        .content-wrap {
+            flex-grow: 2;
+
+            .tab-content {
+                display: none;
+                animation: fadeInLeft .5s;
+
+                &.is-active {
+                    display: block;
+                }
+            }
+        }
+    }
+}

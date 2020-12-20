@@ -1,0 +1,1047 @@
+/*! _sidebar-panel.scss | Huro | Css ninja 2020-2021 */
+
+/*
+    1. Sidebar Panel
+    2. Sidebar Panel Dark mode
+    3. Generic Panel
+    4. Generic Panel Dark Mode
+    5. Messaging Sidebar
+    6. Messaging Sidebar Dark mode
+    7. Collapsed Messaging
+*/
+
+/* ==========================================================================
+1. Sidebar Panel
+========================================================================== */
+
+.sidebar-panel {
+    position: fixed;
+    top: 0;
+    left: 80px;
+    height: 100%;
+    width: 240px;
+    background: $white;
+    transform: translateX(-100%);
+    z-index: -1;
+    transition: all .3s;
+
+    &.is-active {
+        transform: translateX(0) !important;
+        z-index: 31;
+    }
+
+    .inner {
+        position: relative;
+        height: calc(100vh - 60px);
+        width: 240px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        background: $white;
+
+        &::-webkit-scrollbar {
+            width: 3px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            border-radius: 5px;
+            background: rgba(0, 0, 0, 0.2);
+        }
+    }
+}
+
+/* ==========================================================================
+2. Sidebar Panel Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .sidebar-panel {
+            background: lighten($dark-sidebar, 5%);
+            border-color: lighten($dark-sidebar, 5%) !important;
+
+            .panel-close {
+                svg {
+                    stroke: $muted-grey !important;
+                }
+            }
+
+            .subpanel-header {
+                background: lighten($dark-sidebar, 5%);
+            }
+
+            .inner {
+                background: lighten($dark-sidebar, 5%);
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+3. Generic Panel
+========================================================================== */
+
+.sidebar-panel {
+    &.is-generic {
+        .subpanel-header {
+            height: 60px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 0 20px;
+
+            .project-dropdown {
+                margin-right: 12px;
+                cursor: pointer !important;
+
+                > img {
+                    height: 32px;
+                    width: 32px;
+                    border-radius: 50%;
+                }
+
+                .dropdown-menu {
+                    margin-top: 12px;
+
+                    .dropdown-content {
+                        padding-top: 0;
+                        padding-bottom: 0;
+                        overflow: hidden;
+
+                        .dropdown-block {
+                            display: flex;
+                            align-items: center;
+                            padding: 16px;
+
+                            &:hover {
+                                background: lighten($fade-grey, 4%);
+                            }
+
+                            .meta {
+                                margin-left: 12px;
+                                font-family: $font;
+
+                                span {
+                                    display: block;
+
+                                    &:first-child {
+                                        font-size: .95rem;
+                                        font-weight: 500;
+                                        color: $dark-text;
+                                        line-height: 1.2;
+                                        max-width: 140px;
+                                        white-space: nowrap;
+                                        text-overflow: ellipsis;
+                                        overflow: hidden;
+                                    }
+
+                                    &:nth-child(2) {
+                                        //text-transform: uppercase;
+                                        color: $light-text;
+                                        font-size: .85rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            h3 {
+                font-family: $font-alt;
+                color: $light-text;
+                font-size: 1.3rem;
+            }
+
+            .panel-close {
+                margin-left: auto;
+                display: block;
+                width: 18px;
+                height: 18px;
+
+                svg {
+                    width: 18px;
+                    height: 18px;
+                }
+            }
+        }
+
+        .inner {
+            ul {
+                padding: 10px 0;
+            }
+
+            li {
+                height: 36px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                border-left: 2px solid transparent;
+                cursor: pointer;
+
+                &.is-active {
+                    a {
+                        font-weight: 500;
+                        color: $primary;
+                    }
+
+                    > a {
+                        font-weight: 600;
+                    }
+                }
+
+                &.divider {
+                    cursor: default;
+                    pointer-events: none;
+                    height: 10px;
+                    margin: 5px 20px 10px 20px;
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+                }
+
+                &.has-children {
+                    display: block;
+                    height: unset;
+                    min-height: 36px;
+                    margin-bottom: 4px;
+
+                    &.active {
+                        .collapse-wrap > a {
+                            color: $dark-text;
+                            font-weight: 600;
+
+                            svg {
+                                transform: rotate(90deg);
+                            }
+                        }
+                    }
+
+                    &:hover {
+                        .collapse-wrap > a {
+                            color: $dark-text;
+                        }
+                    }
+
+                    &.is-flex {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .tag {
+                            margin-left: auto;
+                            margin-right: 20px;
+                            border-radius: 100px;
+                            background: $danger;
+                            color: $white;
+                            font-size: .8rem;
+                            font-weight: 600;
+                        }
+                    }
+
+                    .collapse-wrap {
+                        display: flex;
+                        align-items: center;
+                        height: 100%;
+                        min-height: 36px;
+
+                        > a {
+                            font-family: $font-alt;
+                            display: flex;
+                            align-items: center;
+                            font-size: .9rem;
+                            font-weight: 500;
+                            color: $light-text;
+
+                            svg {
+                                position: relative;
+                                top: 1px;
+                                height: 18px;
+                                width: 18px;
+                                margin-left: auto;
+                                transform: rotate(0);
+                                stroke: $light-text;
+                                transition: all .3s;
+                            }
+                        }
+                    }
+
+                    ul {
+                        padding: 0px;
+                        display: none;
+
+                        li {
+                            height: 32px;
+                            font-family: $font;
+
+                            &.is-active {
+                                .is-submenu {
+                                    font-weight: 500;
+
+                                    svg {
+                                        display: block;
+                                    }
+                                }
+                            }
+
+                            .is-submenu {
+                                display: flex;
+                                font-weight: 400;
+                                font-family: $font;
+                                align-items: center;
+                                padding-left: 32px;
+                                font-size: .9rem;
+
+                                &.is-active {
+                                    font-weight: 500;
+                                    color: $primary;
+                                }
+
+                                .lnil, .lnir {
+                                    font-size: 1.2rem;
+                                    margin-right: 10px;
+                                }
+
+                                > span {
+                                    font-family: $font;
+                                }
+
+                                svg {
+                                    display: none;
+                                    height: 8px;
+                                    width: 8px;
+                                    max-width: 8px;
+                                    min-width: 8px;
+                                    stroke-width: 2px;
+                                    margin-right: 8px;
+
+                                    &.is-auto {
+                                        margin-left: auto;
+                                        height: 15px;
+                                        width: 15px;
+                                        max-width: 15px;
+                                        min-width: 15px;
+                                        stroke-width: 2px;
+                                        margin-right: 4px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                a {
+                    font-family: $font;
+                    display: block;
+                    width: 100%;
+                    padding: 0 20px;
+                    font-size: .95rem;
+                    color: $light-text;
+
+                    &:hover {
+                        color: $dark-text;
+                    }
+                }
+
+                > a {
+                    font-family: $font-alt;
+                    font-size: .9rem;
+                    font-weight: 500;
+                    color: $light-text;
+                }
+            }
+
+            .docked-action {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                height: 64px;
+                width: 100%;
+                padding: 0 26px 0 16px;
+                margin: 0;
+
+                &.has-search {
+                    bottom: 160px;
+                }
+
+                &.action-wrap {
+                    .button {
+                        height: 36px !important;
+
+                        svg {
+                            height: 16px;
+                            width: 16px;
+                            margin-right: 2px;
+                            margin-left: -2px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+4. Generic Panel Dark Mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .sidebar-panel {
+            &.is-generic {
+                .subpanel-header {
+                    .project-dropdown {
+                        .dropdown-menu {
+                            .dropdown-content {
+                                .dropdown-block {
+                                    background: lighten($dark-sidebar, 2%);
+
+                                    &:hover {
+                                        background: lighten($dark-sidebar, 5%) !important;
+                                    }
+
+                                    .meta {
+                                        span {
+                                            &:first-child {
+                                                color: $dark-dark-text !important;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .inner {
+                    ul {
+                        li {
+                            &.is-active {
+                                a {
+                                    color: $accent !important;
+                                }
+                            }
+
+                            &.has-children {
+                                &.active {
+                                    .collapse-wrap > a {
+                                        color: $smoke-white;
+                                    }
+                                }
+
+                                &:hover {
+                                    .collapse-wrap > a {
+                                        color: lighten($dark-dark-text, 14%);
+                                    }
+                                }
+                            }
+
+                            a {
+                                &:hover {
+                                    color: $dark-dark-text;
+                                }
+                            }
+
+                            .is-submenu {
+                                &:hover {
+                                    color: $accent;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+5. Messaging Sidebar
+========================================================================== */
+
+.sidebar-panel {
+    &.is-messages {
+        .messages-header {
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+
+            h3 {
+                color: $muted-grey;
+                font-size: 1.4rem;
+            }
+
+            .huro-hamburger {
+                position: relative;
+                top: 2px;
+            }
+        }
+
+        //Messages inner
+        .inner {
+            overflow-y: hidden !important;
+
+            #conversations-list {
+                position: relative;
+                height: 100%;
+                overflow-y: auto !important;
+
+                //Webkit scrollbar
+                &::-webkit-scrollbar {
+                    width: 3px;
+                }
+
+                &::-webkit-scrollbar-thumb {
+                    border-radius: 5px;
+                    background: rgba(0, 0, 0, 0.2);
+                }
+
+                li {
+                    .recipient-meta {
+                        span:nth-child(2) {
+                            max-width: 135px;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                        }
+                    }
+
+                    .group-message {
+                        max-width: 230px !important;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                    }
+                }
+            }
+
+            //New conversation
+            .is-new-conversation {
+                height: 60px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+                cursor: pointer;
+
+                .button {
+                    height: 36px !important;
+                    margin: 0 20px;
+
+                    svg {
+                        height: 16px;
+                        width: 16px;
+                        margin-right: 10px;
+                        margin-left: -10px;
+                    }
+                }
+            }
+
+            //New conversation section
+            .new-chat-sidebar {
+                overflow: auto;
+                height: 100%;
+
+                //Autocomplete
+                .is-autocomplete {
+                    justify-content: center;
+                    padding: 0 20px;
+
+                    &.is-active, &:hover {
+                        background: transparent !important;
+                    }
+
+                    //Control
+                    .control {
+                        position: relative;
+
+                        .icon {
+                            position: absolute;
+                            top: 7px;
+                            left: 7px;
+                            color: $placeholder;
+
+                            svg {
+                                width: 20px;
+                                height: 20px;
+                                transition: all .3s;
+                            }
+                        }
+
+                        //Input
+                        .easy-autocomplete {
+                            width: 100% !important;
+
+                            input {
+                                padding-left: 40px;
+                                background: $fade-grey;
+                                border: none;
+                                box-shadow: none;
+                                color: $muted-grey;
+                                transition: all .3s;
+
+                                &:focus {
+                                    background: $light-white;
+
+                                    + .icon {
+                                        color: $primary;
+                                    }
+                                }
+                            }
+
+                            //template
+                            .template-wrapper {
+                                display: flex !important;
+                                justify-content: flex-start;
+                                align-items: center;
+
+                                //avatar
+                                .avatar-wrapper {
+                                    position: relative;
+                                    width: 40px !important;
+                                    height: 40px !important;
+
+                                    .autocpl-avatar {
+                                        width: 40px !important;
+                                        height: 40px !important;
+                                        border-radius: 50% !important;
+                                    }
+
+                                    .avatar-badge {
+                                        position: absolute;
+                                        bottom: 0;
+                                        right: -5px;
+                                        width: 18px;
+                                        height: 18px;
+                                        border: 2px solid $white;
+                                        border-radius: 50%;
+                                    }
+                                }
+
+                                //text
+                                .entry-text {
+                                    margin-left: 15px;
+
+                                    span {
+                                        font-size: 0.8rem;
+                                        color: $title-grey;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    //List item
+                    li {
+                        height: auto !important;
+                        padding-top: 8px;
+                        padding-bottom: 8px;
+                        border-left: none !important;
+                        border-right: none !important;
+                    }
+
+                    //Container
+                    .easy-autocomplete-container {
+                        top: 120% !important;
+                        border: none !important;
+
+                        ul {
+                            border-radius: 4px !important;
+                            box-shadow: -1px 3px 10px 0 rgba(0, 0, 0, 0.06) !important;
+                        }
+                    }
+                }
+
+                //cancel button
+                .is-cancel {
+                    height: 80px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    button {
+                        height: 36px;
+                        margin: 0 20px;
+                    }
+                }
+            }
+
+            //Messages list
+            ul {
+                overflow: auto;
+                height: 100%;
+            }
+
+            //Conversation item
+            li {
+                position: relative;
+                height: 64px;
+
+                //height: 70px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                border-left: 2px solid transparent;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+                cursor: pointer;
+
+                &.is-active {
+                    border-left-color: $primary;
+                    background: lighten($primary, 51%);
+
+                    &:hover {
+                        background: lighten($primary, 51%);
+                    }
+                }
+
+                //conversation block
+                .recent-user {
+                    position: relative;
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    padding-left: 20px;
+                    cursor: pointer;
+
+                    //Avatar
+                    .user-container {
+                        position: relative;
+
+                        img {
+                            height: 36px;
+                            width: 36px;
+                            border-radius: 50%;
+                            display: block;
+
+                            &.is-user {
+                                min-width: 36px;
+                            }
+
+                            &.is-badge {
+                                display: block;
+                                position: absolute;
+                                right: -5px;
+                                bottom: 0;
+                                border-radius: 50%;
+                                border: 2px solid $white;
+                                height: 16px;
+                                width: 16px;
+                                border-radius: 50%;
+                            }
+                        }
+                    }
+
+                    .recipient-meta {
+                        margin-left: 10px;
+
+                        span {
+                            display: block;
+
+                            &:first-child {
+                                color: $dark-text;
+                                font-weight: 500;
+                                font-size: .9rem;
+                            }
+
+                            &:nth-child(2) {
+                                font-size: .75rem;
+                                color: $muted-grey;
+
+                                /*&.is-unread {
+                                    color: $dark-text;
+                                    font-weight: 500;
+                                }*/
+                            }
+                        }
+
+                        //Timstamp
+                        /*time {
+                            display: block;
+                            position: absolute;
+
+                            //top: 2px;
+                            top: -14px;
+                            right: 20px;
+                            font-size: .75rem;
+                            color: $muted-grey;
+                        }*/
+                    }
+                }
+
+                //user group
+                .user-group {
+                    position: relative;
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    margin-left: 20px;
+                    cursor: pointer;
+
+                    img {
+                        height: 36px;
+                        width: 36px;
+                        border: 3px solid $white;
+                        border-radius: 50%;
+                        display: block;
+
+                        &.is-user {
+                            min-width: 36px;
+                        }
+
+                        &:nth-child(2), &:nth-child(3), &:nth-child(4) {
+                            margin-left: -15px;
+                        }
+                    }
+
+                    //More Indicator
+                    .more-indicator {
+                        display: block;
+                        height: 36px;
+                        width: 36px;
+                        min-width: 36px;
+                        border-radius: 50%;
+                        background: $primary;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-left: -15px;
+                        border: 2px solid $white;
+
+                        span {
+                            display: block;
+                            color: $white;
+                            font-weight: 600;
+                            font-size: .8rem;
+                        }
+                    }
+                }
+
+                //Timestamp
+                time {
+                    display: block;
+                    position: absolute;
+                    top: 2px;
+                    right: 20px;
+                    font-size: .75rem;
+                    color: $muted-grey;
+                }
+
+                //Group message
+                .group-message {
+                    padding: 0 20px;
+                    margin-top: -20px;
+                    font-size: .75rem;
+                    color: $muted-grey;
+
+                    &.is-unread {
+                        color: $dark-text;
+                        font-weight: 500;
+                    }
+                }
+
+                //Conversation item hover state
+                &:hover {
+                    background: #fafafa;
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+6. Messaging Sidebar Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .sidebar-panel {
+            &.is-messages {
+                li {
+                    &.is-active {
+                        background: lighten($dark-sidebar, 10%) !important;
+
+                        &:hover {
+                            background: lighten($dark-sidebar, 10%) !important;
+                        }
+
+                        img, .more-indicator {
+                            border-color: lighten($dark-sidebar, 10%) !important;
+                        }
+                    }
+
+                    &:hover {
+                        background: lighten($dark-sidebar, 6%) !important;
+                    }
+
+                    img, .more-indicator {
+                        border-color: lighten($dark-sidebar, 6%) !important;
+                    }
+
+                    .more-indicator {
+                        background: $accent !important;
+                    }
+
+                    .recipient-meta {
+                        span {
+                            &:first-child {
+                                color: lighten($accent-grey, 6%) !important;
+                            }
+
+                            &.is-unread {
+                                color: lighten($accent-grey, 6%) !important;
+                            }
+                        }
+                    }
+                }
+
+                .start-conversation {
+                    background: $accent !important;
+                    border: 1px solid $accent !important;
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+7. Collapsed Messaging
+========================================================================== */
+
+.collapsed-messaging {
+    position: fixed;
+    top: 0;
+    left: 80px;
+    height: 100%;
+    width: 80px;
+    background-color: #f9f9f9;
+    box-shadow: none;
+    z-index: 34;
+    border-left: 1px solid $fade-grey;
+    transform: translateX(-100%);
+    transition: all .3s;
+
+    &.is-active {
+        transform: translateX(0);
+    }
+
+    .inner {
+        position: relative;
+        height: 100%;
+        width: 100%;
+
+        .collapsed-menu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60px;
+            width: 100%;
+        }
+
+        .collapsed-add {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 64px;
+            width: 100%;
+
+            .button {
+                height: 36px;
+                width: 36px;
+                border-radius: 50%;
+                padding: 4px;
+                transition: all .3s;
+
+                &:hover {
+                    box-shadow: $primary-box-shadow;
+                }
+
+                svg {
+                    height: 18px;
+                    width: 18px;
+                }
+            }
+        }
+
+        .collapsed-conversations {
+            height: calc(100vh - 80px);
+
+            li {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 64px;
+                border-left: 2px solid transparent;
+                transition: all .3s;
+                cursor: pointer;
+
+                &.is-active {
+                    border-left-color: $primary;
+                    background: lighten($primary, 51%);
+
+                    &:hover {
+                        background: lighten($primary, 51%);
+                    }
+                }
+
+                //Avatar
+                .user-container {
+                    position: relative;
+
+                    img {
+                        height: 36px;
+                        width: 36px;
+                        border-radius: 50%;
+                        display: block;
+
+                        &.is-user {
+                            min-width: 36px;
+                        }
+
+                        &.is-badge {
+                            display: block;
+                            position: absolute;
+                            right: -5px;
+                            bottom: 0;
+                            border-radius: 50%;
+                            border: 2px solid $white;
+                            height: 16px;
+                            width: 16px;
+                            border-radius: 50%;
+                        }
+                    }
+
+                    .is-count {
+                        display: block;
+                        position: absolute;
+                        right: -12px;
+                        bottom: -5px;
+                        border-radius: 50%;
+                        border: 2px solid $white;
+                        height: 28px;
+                        width: 28px;
+                        background: $primary;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        span {
+                            display: block;
+                            font-size: .7rem;
+                            font-size: 700;
+                            color: $smoke-white;
+
+                            &:before {
+                                content: '+';
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -22,7 +22,7 @@ export default StandardFormModal
         <header class="modal-card-head">
           <h3>Leave a Comment</h3>
           <button class="h-modal-close ml-auto" aria-label="close">
-            <i data-feather="x"></i>
+            <Icon icon="feather:x" />
           </button>
         </header>
         <div class="modal-card-body">

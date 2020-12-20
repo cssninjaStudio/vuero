@@ -22,17 +22,17 @@ export default WebappNavbarColored
         <a href="/" class="brand">
           <img
             class="light-image"
-            src="assets/img/logos/logo/logo-light.svg"
+            src="/src/assets/images/logos/logo/logo-light.svg"
             alt=""
           />
           <img
             class="dark-image"
-            src="assets/img/logos/logo/logo-light.svg"
+            src="/src/assets/images/logos/logo/logo-light.svg"
             alt=""
           />
         </a>
         <div class="separator"></div>
-        <!-- {{> projects-quick-dropdown}} -->
+        <!-- <ProjectsQuickDropdown /> -->
         <h1 id="webapp-page-title" class="title is-5">Welcome</h1>
       </div>
       <div class="center">
@@ -42,7 +42,7 @@ export default WebappNavbarColored
             class="centered-link centered-link-toggle"
             data-menu-id="dashboards-webapp-menu"
           >
-            <i data-feather="activity"></i>
+            <Icon icon="feather:activity" />
             <span>Dashboards</span>
           </a>
           <a
@@ -50,7 +50,7 @@ export default WebappNavbarColored
             class="centered-link centered-link-toggle"
             data-menu-id="layouts-webapp-menu"
           >
-            <i data-feather="grid"></i>
+            <Icon icon="feather:grid" />
             <span>Layouts</span>
           </a>
           <a
@@ -58,7 +58,7 @@ export default WebappNavbarColored
             class="centered-link centered-link-toggle"
             data-menu-id="elements-webapp-menu"
           >
-            <i data-feather="box"></i>
+            <Icon icon="feather:box" />
             <span>Elements</span>
           </a>
           <a
@@ -66,15 +66,15 @@ export default WebappNavbarColored
             class="centered-link centered-link-toggle"
             data-menu-id="components-webapp-menu"
           >
-            <i data-feather="cpu"></i>
+            <Icon icon="feather:cpu" />
             <span>Components</span>
           </a>
           <a href="/webapp-messaging-chat.html" class="centered-link">
-            <i data-feather="message-circle"></i>
+            <Icon icon="feather:message-circle" />
             <span>Chat</span>
           </a>
           <a class="centered-link centered-link-search">
-            <i data-feather="search"></i>
+            <Icon icon="feather:search" />
             <span>Search</span>
           </a>
         </div>
@@ -87,10 +87,10 @@ export default WebappNavbarColored
                 placeholder="Search records..."
               />
               <div class="form-icon">
-                <i data-feather="search"></i>
+                <Icon icon="feather:search" />
               </div>
               <div id="webapp-navbar-search-close" class="form-icon is-right">
-                <i data-feather="x"></i>
+                <Icon icon="feather:x" />
               </div>
               <div class="search-results has-slimscroll"></div>
             </div>
@@ -98,13 +98,13 @@ export default WebappNavbarColored
         </div>
       </div>
       <div class="right">
-        <!-- {{> toolbar}} -->
+        <!-- <Toolbar /> -->
         <div
           class="dropdown profile-dropdown dropdown-trigger is-spaced is-right"
         >
           <img
             src="https://via.placeholder.com/150x150"
-            data-demo-src="assets/img/avatars/photos/8.jpg"
+            data-demo-src="/src/assets/images/avatars/photos/8.jpg"
             alt=""
           />
           <span class="status-indicator"></span>
@@ -116,7 +116,7 @@ export default WebappNavbarColored
                   <img
                     class="avatar"
                     src="https://via.placeholder.com/150x150"
-                    data-demo-src="assets/img/avatars/photos/8.jpg"
+                    data-demo-src="/src/assets/images/avatars/photos/8.jpg"
                     alt=""
                   />
                 </div>
@@ -178,7 +178,7 @@ export default WebappNavbarColored
                   class="button h-button is-primary is-raised is-fullwidth logout-button"
                 >
                   <span class="icon is-small">
-                    <i data-feather="log-out"></i>
+                    <Icon icon="feather:log-out" />
                   </span>
                   <span>Logout</span>
                 </button>
@@ -192,15 +192,15 @@ export default WebappNavbarColored
 
   <div class="webapp-subnavbar">
     <!--src/partials/navbar/webapp/menus/-->
-    <!-- {{> dashboards-webapp-menu}} -->
+    <!-- <DashboardsWebappMenu /> -->
 
     <!--src/partials/navbar/webapp/menus/-->
-    <!-- {{> layouts-webapp-menu}} -->
+    <!-- <LayoutsWebappMenu /> -->
 
     <!--src/partials/navbar/webapp/menus/-->
-    <!-- {{> elements-webapp-menu}} -->
+    <!-- <ElementsWebappMenu /> -->
 
     <!--src/partials/navbar/webapp/menus/-->
-    <!-- {{> components-webapp-menu}} -->
+    <!-- <ComponentsWebappMenu /> -->
   </div>
 </template>

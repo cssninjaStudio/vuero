@@ -1,0 +1,125 @@
+/*! _pageloader.scss | Huro | Css ninja 2020-2021 */
+
+/*
+    1. Pageloader
+    2. Keyframes
+    3. Infraloader
+*/
+
+/* ==========================================================================
+1. Pageloader
+========================================================================== */
+
+.pageloader {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 80px;
+    width: calc(100% - 80px);
+    background-color: $fade-grey;
+    z-index: 999998;
+    opacity: 0;
+    transition: -webkit-opacity 0.35s ease-out;
+    transition: opacity 0.35s ease-out;
+    transition: opacity 0.35s ease-out, -webkit-transform 0.35s ease-out;
+    will-change: opacity;
+    pointer-events: none;
+
+    &.is-active {
+        opacity: 1;
+    }
+
+    &.is-full {
+        width: 100% !important;
+        left: 0 !important;
+    }
+
+    &::after, &::before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: block;
+        border-radius: 100%;
+        content: "";
+        z-index: 999999;
+    }
+
+    &::after {
+        margin-top: -100px;
+        margin-left: -100px;
+        width: 200px;
+        height: 200px;
+        background-color: rgba(255, 255, 255, 0.5);
+        border: 3px solid rgba(255, 255, 255, 0.75);
+        -webkit-animation: page-loader-inner 1.5s infinite ease-out;
+        animation: page-loader-inner 1.5s infinite ease-out;
+    }
+
+    &::before {
+        margin-top: -30px;
+        margin-left: -30px;
+        width: 60px;
+        height: 60px;
+        background-color: $white;
+        -webkit-animation: page-loader-outer 1.5s infinite ease-in;
+        animation: page-loader-outer 1.5s infinite ease-in;
+    }
+}
+
+/* ==========================================================================
+2. Keyframes
+========================================================================== */
+
+@keyframes page-loader-inner {
+    0%,40% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+@keyframes page-loader-outer {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    100%,40% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+/* ==========================================================================
+3. Infraloader
+========================================================================== */
+
+.infraloader {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 80px;
+    width: calc(100% - 80px);
+    background: $background-grey;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity .35s;
+
+    &.is-active {
+        opacity: 1;
+        z-index: 999997;
+    }
+
+    &.is-full {
+        width: 100% !important;
+        left: 0 !important;
+    }
+}

@@ -40,7 +40,7 @@ export default MessagesSidebar
           id="start-conversation"
           class="button h-button is-primary is-raised is-rounded is-fullwidth"
         >
-          <i data-feather="plus"></i>
+          <Icon icon="feather:plus" />
           <span>New Conversation</span>
         </button>
       </div>
@@ -56,7 +56,7 @@ export default MessagesSidebar
               <img
                 class="is-user"
                 src="https://via.placeholder.com/150x150"
-                data-demo-src="assets/img/avatars/photos/10.jpg"
+                data-demo-src="/src/assets/images/avatars/photos/10.jpg"
                 alt=""
               />
             </div>
@@ -76,7 +76,7 @@ export default MessagesSidebar
               <img
                 class="is-user"
                 src="https://via.placeholder.com/150x150"
-                data-demo-src="assets/img/avatars/photos/25.jpg"
+                data-demo-src="/src/assets/images/avatars/photos/25.jpg"
                 alt=""
               />
             </div>
@@ -96,7 +96,7 @@ export default MessagesSidebar
               <img
                 class="is-user"
                 src="https://via.placeholder.com/150x150"
-                data-demo-src="assets/img/avatars/photos/13.jpg"
+                data-demo-src="/src/assets/images/avatars/photos/13.jpg"
                 alt=""
               />
             </div>
@@ -116,7 +116,7 @@ export default MessagesSidebar
               <img
                 class="is-user"
                 src="https://via.placeholder.com/150x150"
-                data-demo-src="assets/img/avatars/photos/18.jpg"
+                data-demo-src="/src/assets/images/avatars/photos/18.jpg"
                 alt=""
               />
             </div>
@@ -136,7 +136,7 @@ export default MessagesSidebar
               <img
                 class="is-user"
                 src="https://via.placeholder.com/150x150"
-                data-demo-src="assets/img/avatars/photos/7.jpg"
+                data-demo-src="/src/assets/images/avatars/photos/7.jpg"
                 alt=""
               />
             </div>

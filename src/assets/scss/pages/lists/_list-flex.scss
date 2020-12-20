@@ -1,0 +1,86 @@
+/*! _list-flex.scss | Huro | Css ninja 2020-2021 */
+
+/*
+    1. List Flex Toolbar
+*/
+
+/* ==========================================================================
+1. List Flex Toolbar
+========================================================================== */
+
+.list-flex-toolbar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    &.is-webapp {
+        padding-top: 30px;
+        
+        margin: 0 auto 20px auto;
+
+        &.flex-list-v1 {
+            max-width: 880px;
+        }
+
+        &.flex-list-v2 {
+            max-width: 940px;
+        }
+    }
+
+    &.is-reversed {
+        flex-direction: row-reverse;
+
+        .control {
+            margin-right: 0;
+            margin-left: auto;
+        }
+
+        .tabs-inner {
+            margin-right: 10px;
+            margin-left: 0;
+        }
+    }
+
+    .control {
+        margin-right: 10px;
+    }
+
+    .list-info {
+        span {
+            font-family: $font;
+            color: $light-text;
+        }
+    }
+
+    .buttons {
+        margin-left: auto;
+        margin-bottom: 0;
+
+        .h-button {
+            margin-bottom: 0;
+        }
+    }
+
+    .tabs-inner {
+        margin-left: auto;
+
+        .tabs {
+            margin-bottom: 0;
+            min-width: 170px;
+        }
+    }
+}
+
+.flex-list-wrapper {
+    &.is-webapp {
+        margin: 0 auto;
+
+        &.flex-list-v1 {
+            max-width: 880px;
+        }
+
+        &.flex-list-v2 {
+            max-width: 940px;
+        }
+    }
+}

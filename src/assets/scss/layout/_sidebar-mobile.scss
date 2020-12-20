@@ -1,0 +1,664 @@
+/*! _sidebar-mobile.scss | Huro | Css ninja 2020-2021 */
+
+/*
+    1. Mobile Sidebar
+    2. Mobile Subsidebar
+    3. Mobile Subsidebar Dark mode
+*/
+
+/* ==========================================================================
+1. Mobile Sidebar
+========================================================================== */
+
+.mobile-main-sidebar {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    height: calc(100% - 60px);
+    width: 60px;
+    background: $white;
+    border-top: 1px solid $fade-grey;
+    border-right: 1px solid $fade-grey;
+    z-index: 100;
+    transform: translateX(-100%);
+    transition: all .3s;
+
+    &.is-active {
+        transform: translateX(0);
+    }
+
+    .inner {
+        height: 100%;
+        width: 100%;
+        position: relative;
+
+        .icon-side-menu, .bottom-icon-side-menu {
+            li {
+                width: 60px;
+                height: 60px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                a {
+                    display: block;
+                    position: relative;
+                    transform: rotate(0);
+                    opacity: 1;
+                    transition: all .3s;
+
+                    &:hover, &.is-active {
+                        > svg {
+                            stroke: $primary;
+                        }
+                    }
+
+                    > svg {
+                        stroke: $title-grey;
+                        height: 20px;
+                        width: 20px;
+                        stroke-width: 1.6px;
+                    }
+
+                    .sidebar-icon {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 24px;
+                        width: 24px;
+                        transition: all .3s;
+                    }
+
+                    &:hover svg, &.is-active svg {
+                        stroke: $primary;
+                    }
+
+                    &.is-opened {
+                        transform: rotate(360deg);
+                        opacity: 0;
+                    }
+
+                    &.is-inactive {
+                        transform: rotate(-360deg);
+                        opacity: 0;
+                    }
+
+                    &.is-selected {
+                        svg {
+                            stroke: $primary;
+                        }
+                    }
+                }
+
+                #open-filters {
+                    svg {
+                        transform: rotate(0);
+                        transition: all .3s;
+                    }
+
+                    &:hover {
+                        svg {
+                            transform: rotate(145deg);
+                        }
+                    }
+                }
+
+                &.is-active {
+                    a svg {
+                        stroke: $primary;
+                    }
+                }
+            }
+        }
+
+        .bottom-icon-side-menu {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+}
+
+/* ==========================================================================
+2. Mobile Subsidebar
+========================================================================== */
+
+.mobile-subsidebar {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    height: calc(100% - 60px);
+    width: 280px;
+    background: $white;
+    border-top: 1px solid $fade-grey;
+    border-right: 1px solid $fade-grey;
+    z-index: 99;
+    transform: translateX(-100%);
+    transition: all .3s;
+    transition-delay: .15s;
+
+    &.is-active {
+        transform: translateX(0);
+    }
+
+    .inner {
+        position: relative;
+        height: 100%;
+        width: calc(100% - 60px);
+        margin-left: 60px;
+
+        .sidebar-title {
+            height: 60px;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+
+            h3 {
+                font-family: $font-alt;
+                color: $muted-grey;
+                font-weight: 500;
+                font-size: 1.4rem;
+            }
+        }
+
+        .submenu {
+            height: calc(100% - 70px);
+            overflow-y: auto;
+            margin-top: 10px;
+            padding: 0 20px 20px 20px;
+
+            li {
+                &.is-active {
+                    a {
+                        color: $primary;
+                        font-weight: 500;
+                    }
+                }
+
+                &.has-children {
+                    display: block;
+                    height: unset;
+                    min-height: 36px;
+
+                    &.active {
+                        .collapse-wrap {
+                            a {
+                                color: $dark-text;
+                                font-weight: 600;
+
+                                svg {
+                                    transform: rotate(90deg);
+                                }
+                            }
+                        }
+                    }
+
+                    &.is-flex {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .tag {
+                            margin-left: auto;
+                            margin-right: 20px;
+                            border-radius: 100px;
+                            background: $danger;
+                            color: $white;
+                            font-size: .8rem;
+                            font-weight: 600;
+                        }
+                    }
+
+                    .collapse-wrap {
+                        display: flex;
+                        align-items: center;
+                        height: 100%;
+                        min-height: 36px;
+
+                        > a {
+                            font-family: $font-alt;
+                            display: flex;
+                            align-items: center;
+                            font-size: .9rem;
+                            font-weight: 500;
+                            color: $light-text;
+
+                            svg {
+                                position: relative;
+                                top: 1px;
+                                height: 18px;
+                                width: 18px;
+                                margin-left: auto;
+                                transform: rotate(0);
+                                transition: all .3s;
+                            }
+                        }
+                    }
+
+                    ul {
+                        padding: 0px;
+                        display: none;
+
+                        li {
+                            height: 32px;
+
+                            .is-submenu {
+                                display: flex;
+                                align-items: center;
+                                padding-left: 16px;
+                                font-size: .95rem;
+
+                                &.is-active {
+                                    font-weight: 500;
+                                    color: $primary;
+                                }
+
+                                i {
+                                    margin-right: 8px;
+                                }
+
+                                svg {
+                                    height: 8px;
+                                    width: 8px;
+                                    max-width: 8px;
+                                    min-width: 8px;
+                                    stroke-width: 2px;
+                                    margin-right: 8px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.divider {
+                    cursor: default;
+                    pointer-events: none;
+                    height: 10px;
+                    margin: 5px 0 10px 0;
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+                }
+
+                a {
+                    padding: 6px 0;
+                    width: 100%;
+                    display: block;
+                    color: $light-text;
+                }
+            }
+        }
+
+        .bottom-action {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 10px;
+
+            .button {
+                svg {
+                    height: 18px;
+                    width: 18px;
+                }
+            }
+        }
+    }
+
+    &.is-messaging {
+        ul {
+            overflow: auto;
+            height: 100%;
+        }
+
+        li {
+            position: relative;
+            height: 60px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            border-left: 2px solid transparent;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            cursor: pointer;
+
+            &.is-active {
+                border-left-color: $primary;
+                background: lighten($primary, 51%);
+
+                &:hover {
+                    background: lighten($primary, 51%);
+                }
+            }
+
+            .recent-user {
+                position: relative;
+                width: 100%;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                margin-left: 8px;
+                cursor: pointer;
+
+                .user-container {
+                    position: relative;
+
+                    img {
+                        height: 32px;
+                        width: 32px;
+                        border-radius: 50%;
+                        display: block;
+
+                        &.is-user {
+                            min-width: 32px;
+                        }
+
+                        &.is-badge {
+                            display: block;
+                            position: absolute;
+                            right: -5px;
+                            bottom: 0;
+                            border-radius: 50%;
+                            border: 2px solid $white;
+                            height: 16px;
+                            width: 16px;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+
+                .recipient-meta {
+                    margin: 0 15px;
+
+                    span {
+                        display: block;
+
+                        &:first-child {
+                            color: $dark-text;
+                            font-weight: 500;
+                            font-size: .9rem;
+                        }
+
+                        &:nth-child(2) {
+                            font-size: .75rem;
+                            color: $muted-grey;
+                        }
+                    }
+                }
+            }
+
+            .user-group {
+                position: relative;
+                width: 100%;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                margin-left: 8px;
+                cursor: pointer;
+
+                img {
+                    height: 32px;
+                    width: 32px;
+                    border: 2px solid $white;
+                    border-radius: 50%;
+                    display: block;
+
+                    &.is-user {
+                        min-width: 32px;
+                    }
+
+                    &:nth-child(2), &:nth-child(3), &:nth-child(4) {
+                        margin-left: -15px;
+                    }
+                }
+
+                .more-indicator {
+                    display: block;
+                    height: 36px;
+                    width: 36px;
+                    min-width: 36px;
+                    border-radius: 50%;
+                    background: $primary;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-left: -15px;
+                    border: 2px solid $white;
+
+                    span {
+                        display: block;
+                        color: $white;
+                        font-weight: 600;
+                        font-size: .8rem;
+                    }
+                }
+            }
+
+            time {
+                display: block;
+                position: absolute;
+                top: 2px;
+                right: 20px;
+                font-size: .75rem;
+                color: $muted-grey;
+            }
+
+            .group-message {
+                padding: 0 10px;
+                margin-top: -20px;
+                font-size: .75rem;
+                color: $muted-grey;
+                white-space: nowrap;
+                overflow: hidden;
+                max-width: 220px;
+                text-overflow: ellipsis;
+
+                &.is-unread {
+                    color: $dark-text;
+                    font-weight: 500;
+                }
+            }
+
+            &:hover {
+                background: #fafafa;
+            }
+        }
+    }
+
+    &.is-wallet {
+        .wallet-item {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            height: 80px;
+            width: 100%;
+            padding: 10px;
+            border-left: 2px solid transparent;
+            border-bottom: 1px solid $fade-grey;
+            opacity: 0.8;
+            cursor: pointer;
+
+            &.is-active {
+                opacity: 1;
+                background: lighten($primary, 51%);
+                border-left-color: $primary;
+
+                &.is-eth {
+                    .wallet-meta {
+                        small {
+                            color: $primary;
+                        }
+                    }
+                }
+
+                .currency-value {
+                    span {
+                        color: $dark-text;
+                    }
+                }
+            }
+
+            .currency-coin {
+                position: relative;
+                height: 30px;
+                width: 30px;
+
+                .kodr-coin-fill, .eth-coin-fill {
+                    height: 30px;
+                    width: 30px;
+                    transform: scale(1);
+                    transition: all .3s;
+
+                    .st9, .st10 {
+                        fill: $muted-grey;
+                    }
+                }
+            }
+
+            .wallet-meta {
+                margin-left: 10px;
+
+                span {
+                    display: block;
+                    font-size: 1rem;
+                    color: $muted-grey;
+
+                    small {
+                        font-size: .9rem;
+                        text-transform: uppercase;
+                        font-weight: 500;
+                    }
+                }
+
+                .currency-value {
+                    span {
+                        font-size: .75rem;
+                        font-weight: 500;
+                        color: $muted-grey !important;
+                    }
+                }
+            }
+
+            .button {
+                padding: .75rem;
+                height: 32px;
+                width: 32px;
+                padding: 0;
+                border-radius: 4px;
+            }
+        }
+
+        .buy-wrap {
+            padding: 16px;
+
+            .button {
+                .kodr-coin-fill {
+                    height: 24px;
+                    width: 24px;
+                    margin-right: 5px;
+                    margin-left: -5px;
+
+                    .path {
+                        fill: $smoke-white;
+                    }
+                }
+            }
+        }
+
+        .request-payout {
+            width: 100%;
+
+            .button {
+                height: 40px !important;
+                padding: 0 26px 0 26px;
+
+                &:hover {
+                    svg {
+                        fill: $white;
+                    }
+                }
+
+                svg {
+                    height: 24px;
+                    width: 24px;
+                    fill: $primary;
+                    margin-right: 5px;
+                    margin-left: -12px;
+                    transition: all .3s;
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+3. Mobile Subsidebar Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .mobile-main-sidebar {
+            background: darken($dark-sidebar, 6%);
+            border-color: lighten($dark-sidebar, 1%) !important;
+
+            .inner {
+                .icon-side-menu {
+                    li {
+                        a {
+                            &.is-active {
+                                svg {
+                                    stroke: $accent;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .mobile-subsidebar {
+            background: lighten($dark-sidebar, 2%);
+            border-color: lighten($dark-sidebar, 4%);
+
+            .submenu {
+                li {
+                    &.is-active {
+                        a {
+                            color: $accent !important;
+                        }
+                    }
+
+                    &.has-children {
+                        &.active {
+                            .collapse-wrap {
+                                > a {
+                                    color: $smoke-white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.is-messaging {
+                ul li {
+                    &.is-active {
+                        background: darken($dark-sidebar, 4%);
+                        border-left-color: $accent !important;
+                    }
+
+                    .recipient-meta {
+                        span {
+                            &:first-child, &.is-unread {
+                                color: $accent-grey !important;
+                            }
+                        }
+                    }
+
+                    .user-group {
+                        img, span {
+                            border-color: lighten($dark-sidebar, 2%) !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

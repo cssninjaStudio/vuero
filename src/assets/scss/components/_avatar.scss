@@ -1,0 +1,676 @@
+/*! _avatar.scss | Huro | Css ninja 2020-2021 */
+
+/*
+    1. Avatar
+    2. Avatar Dark Mode
+*/
+
+/* ==========================================================================
+1. Avatar
+========================================================================== */
+
+.h-avatar {
+    position: relative;
+    display: inline-block;
+    vertical-align: bottom;
+
+    &.has-dot {
+        &:after {
+            content: '';
+            position: absolute;
+            top: 1px;
+            right: 1px;
+            height: 12px;
+            width: 12px;
+            border-radius: 50%;
+            background: $success;
+            border: 1.8px solid $white;
+        }
+
+        &.has-dot-squared {
+            &:after {
+                top: -3px;
+                right: -3px;
+            }
+        }
+
+        &.dot-primary {
+            &:after {
+                background: $primary;
+            }
+        }
+
+        &.dot-info {
+            &:after {
+                background: $info;
+            }
+        }
+
+        &.dot-warning {
+            &:after {
+                background: $warning;
+            }
+        }
+
+        &.dot-danger {
+            &:after {
+                background: $danger;
+            }
+        }
+
+        &.dot-grey {
+            &:after {
+                background: $light-text;
+            }
+        }
+    }
+
+    .avatar {
+        width: 40px;
+        min-width: 40px;
+        height: 40px;
+        object-fit: cover;
+
+        &.is-squared {
+            border-radius: 10px !important;
+        }
+
+        &.is-fake {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: $fade-grey;
+            border-radius: 50%;
+
+            &.is-primary {
+                background: lighten($primary, 42%);
+
+                span {
+                    color: $primary;
+                }
+            }
+
+            &.is-accent {
+                background: lighten($accent, 36%);
+
+                span {
+                    color: $accent;
+                }
+            }
+
+            &.is-success {
+                background: lighten($success, 45%);
+
+                span {
+                    color: $success;
+                }
+            }
+
+            &.is-info {
+                background: lighten($info, 45%);
+
+                span {
+                    color: $info;
+                }
+            }
+
+            &.is-warning {
+                background: lighten($warning, 32%);
+
+                span {
+                    color: $warning;
+                }
+            }
+
+            &.is-danger {
+                background: lighten($danger, 36%);
+
+                span {
+                    color: $danger;
+                }
+            }
+
+            &.is-h-purple {
+                background: lighten($h-purple, 36%);
+
+                span {
+                    color: $h-purple;
+                }
+            }
+
+            &.is-h-orange {
+                background: lighten($h-orange, 18%);
+
+                span {
+                    color: $h-orange;
+                }
+            }
+
+            &.is-h-blue {
+                background: lighten($h-blue, 32%);
+
+                span {
+                    color: $h-blue;
+                }
+            }
+
+            &.is-h-red {
+                background: lighten($h-red, 38%);
+
+                span {
+                    color: $h-red;
+                }
+            }
+
+            &.is-h-green {
+                background: lighten($h-green, 22%);
+
+                span {
+                    color: $h-green;
+                }
+            }
+
+            &.is-h-yellow {
+                background: lighten($h-yellow, 22%);
+
+                span {
+                    color: darken($h-yellow, 8%);
+                }
+            }
+
+            span {
+                position: relative;
+
+                //top: -1px;
+                display: block;
+                font-size: 1rem;
+                font-weight: 500;
+                color: $muted-grey;
+            }
+        }
+
+        &.is-more {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+
+            .inner {
+                width: 40px;
+                min-width: 40px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                background: lighten($fade-grey, 2%);
+                border: 1px solid $fade-grey;
+
+                span {
+                    line-height: 1;
+                    position: relative;
+
+                    //top: -1px;
+                    left: -3px;
+                    display: block;
+                    font-size: .9rem;
+                    font-weight: 500;
+                    color: $light-text;
+                }
+            }
+        }
+    }
+
+    .badge {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 16px;
+        width: 16px;
+        border: 1px solid $white;
+    }
+
+    img {
+        display: block;
+        border-radius: 50%;
+    }
+
+    &.is-small {
+        max-width: 32px;
+        min-width: 32px;
+        max-height: 32px;
+
+        &.has-dot {
+            &:after {
+                content: '';
+                top: 0;
+                right: 0;
+                height: 8px;
+                width: 8px;
+                border-width: 1.4px;
+            }
+
+            &.has-dot-squared {
+                &:after {
+                    top: -2px;
+                    right: -2px;
+                }
+            }
+        }
+
+        .avatar {
+            width: 32px;
+            min-width: 32px;
+            height: 32px;
+
+            &.is-squared {
+                border-radius: 8px !important;
+            }
+
+            &.is-fake, &.is-more {
+                width: 32px;
+                min-width: 32px;
+                height: 32px;
+
+                .inner {
+                    width: 30px;
+                    min-width: 30px;
+                    height: 30px;
+                }
+
+                span {
+                    font-size: .85rem;
+                }
+            }
+        }
+
+        .badge {
+            border-width: 1px;
+            width: 12px;
+            height: 12px;
+        }
+    }
+
+    &.is-medium {
+        max-width: 50px;
+        min-width: 50px;
+
+        &.has-dot {
+            &:after {
+                content: '';
+                top: 1px;
+                right: 1px;
+                height: 12px;
+                width: 12px;
+                border-width: 2px;
+            }
+
+            &.has-dot-squared {
+                &:after {
+                    top: -3px;
+                    right: -3px;
+                }
+            }
+        }
+
+        .avatar {
+            width: 50px;
+            min-width: 50px;
+            height: 50px;
+
+            &.is-squared {
+                border-radius: 12px !important;
+            }
+
+            &.is-fake, &.is-more {
+                width: 50px;
+                min-width: 50px;
+                height: 50px;
+
+                .inner {
+                    width: 50px;
+                    min-width: 50px;
+                    height: 50px;
+                }
+
+                span {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+        .badge {
+            border-width: 2px;
+            height: 20px;
+            width: 20px;
+        }
+    }
+
+    &.is-large {
+        max-width: 68px;
+        min-width: 68px;
+
+        &.has-dot {
+            &:after {
+                content: '';
+                top: 4px;
+                right: 4px;
+                height: 14px;
+                width: 14px;
+                border-width: 2.6px;
+            }
+
+            &.has-dot-squared {
+                &:after {
+                    top: -4px;
+                    right: -1px;
+                }
+            }
+        }
+
+        .avatar {
+            width: 68px;
+            min-width: 68px;
+            height: 68px;
+
+            &.is-squared {
+                border-radius: 16px !important;
+            }
+
+            &.is-fake {
+                width: 68px;
+                min-width: 68px;
+                height: 68px;
+
+                span {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+
+        .badge {
+            border-width: 2px;
+            height: 24px;
+            width: 24px;
+        }
+    }
+
+    &.is-big {
+        max-width: 80px;
+        min-width: 80px;
+
+        &.has-dot {
+            &:after {
+                content: '';
+                top: 4px;
+                right: 4px;
+                height: 16px;
+                width: 16px;
+                border-width: 2.8px;
+            }
+
+            &.has-dot-squared {
+                &:after {
+                    top: -4px;
+                    right: -1px;
+                }
+            }
+        }
+
+        .avatar {
+            width: 80px;
+            min-width: 80px;
+            height: 80px;
+
+            &.is-squared {
+                border-radius: 18px !important;
+            }
+
+            &.is-fake {
+                width: 80px;
+                min-width: 80px;
+                height: 80px;
+
+                span {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+
+        .badge {
+            border-width: 2.4px;
+            height: 28px;
+            width: 28px;
+        }
+    }
+
+    &.is-xl {
+        max-width: 100px;
+        min-width: 100px;
+
+        &.has-dot {
+            &:after {
+                content: '';
+                top: 6px;
+                right: 5px;
+                height: 18px;
+                width: 18px;
+                border-width: 2.8px;
+            }
+
+            &.has-dot-squared {
+                &:after {
+                    top: -3px;
+                    right: -3px;
+                }
+            }
+        }
+
+        .avatar {
+            width: 100px;
+            min-width: 100px;
+            height: 100px;
+
+            &.is-squared {
+                border-radius: 22px !important;
+            }
+
+            &.is-fake {
+                width: 100px;
+                min-width: 100px;
+                height: 100px;
+
+                span {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+
+        .badge {
+            border-width: 3px;
+            height: 34px;
+            width: 34px;
+        }
+    }
+}
+
+.avatar-stack {
+    display: flex;
+
+    .h-avatar {
+        border-radius: 50%;
+
+        &.is-small {
+            border-radius: 50%;
+
+            &:not(:first-child) {
+                $var: 12;
+
+                @for $i from 1 through 99 {
+                    &:nth-child(#{$i}) {
+                        margin-left: -#{$var}px;
+                    }
+                }
+            }
+
+            img, .is-fake, .is-more .inner {
+                border: 2px solid $white;
+            }
+        }
+
+        &.is-medium {
+            border-radius: 50%;
+
+            &:not(:first-child) {
+                $var: 16;
+
+                @for $i from 1 through 99 {
+                    &:nth-child(#{$i}) {
+                        margin-left: -#{$var}px;
+                    }
+                }
+            }
+
+            img, .is-fake, .is-more .inner {
+                border: 4px solid $white;
+            }
+        }
+
+        &:not(:first-child) {
+            $var: 14;
+
+            @for $i from 1 through 99 {
+                &:nth-child(#{$i}) {
+                    margin-left: -#{$var}px;
+                }
+            }
+        }
+
+        img, .is-fake, .is-more .inner {
+            border: 2px solid $white;
+        }
+    }
+}
+
+/* ==========================================================================
+2. Avatar Dark Mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .h-avatar {
+            .avatar {
+                border-color: lighten($dark-sidebar, 6%);
+
+                &.is-fake {
+                    &.is-primary {
+                        background: $primary;
+
+                        span {
+                            color: $white;
+                        }
+                    }
+
+                    &.is-accent {
+                        background: $accent;
+
+                        span {
+                            color: $white;
+                        }
+                    }
+
+                    &.is-success {
+                        background: $success;
+
+                        span {
+                            color: $white;
+                        }
+                    }
+
+                    &.is-info {
+                        background: $info;
+
+                        span {
+                            color: $white;
+                        }
+                    }
+
+                    &.is-warning {
+                        background: $warning;
+
+                        span {
+                            color: $white;
+                        }
+                    }
+
+                    &.is-danger {
+                        background: $danger;
+
+                        span {
+                            color: $white;
+                        }
+                    }
+
+                    &.is-h-purple {
+                        background: $h-purple;
+
+                        span {
+                            color: $white;
+                        }
+                    }
+
+                    &.is-h-orange {
+                        background: $h-orange;
+
+                        span {
+                            color: $white;
+                        }
+                    }
+
+                    &.is-h-blue {
+                        background: $h-blue;
+
+                        span {
+                            color: $white;
+                        }
+                    }
+
+                    &.is-h-red {
+                        background: $h-red;
+
+                        span {
+                            color: $white;
+                        }
+                    }
+
+                    &.is-h-green {
+                        background: $h-green;
+
+                        span {
+                            color: $white;
+                        }
+                    }
+
+                    &.is-h-yellow {
+                        background: $h-yellow;
+
+                        span {
+                            color: $white;
+                        }
+                    }
+                }
+
+                &.is-more {
+                    .inner {
+                        background: lighten($dark-sidebar, 10%);
+                        border-color: darken($dark-sidebar, 2%);
+                    }
+                }
+
+                &.is-fake {
+                    border-color: lighten($dark-sidebar, 6%);
+                }
+            }
+        }
+    }
+}

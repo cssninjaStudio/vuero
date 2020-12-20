@@ -1,0 +1,805 @@
+/*! _checkboxes.scss | Huro | Css ninja 2020-2021 */
+
+/*
+    1. Animated Checkbox
+    2. Animated Checkbox Dark mode
+    3. Checkbox List
+    4. Regular Checkbox / Radio
+    5. Regular Checkbox / Radio Dark mode
+*/
+
+/* ==========================================================================
+1. Animated Checkbox
+========================================================================== */
+
+$curve: cubic-bezier(0.65, 0, 0.45, 1);
+
+.animated-checkbox {
+    position: relative;
+    height: 32px;
+    width: 32px;
+
+    &.is-purple {
+        .checkmark-circle {
+            stroke: $h-purple !important;
+        }
+
+        .checkmark {
+            box-shadow: inset 0px 0px 0px $h-purple !important;
+        }
+
+        .checkmark-check {
+            stroke: $h-purple !important;
+        }
+    }
+
+    &.is-info {
+        .checkmark-circle {
+            stroke: $info !important;
+        }
+
+        .checkmark {
+            box-shadow: inset 0px 0px 0px $info !important;
+        }
+
+        .checkmark-check {
+            stroke: $info !important;
+        }
+    }
+
+    &.is-success {
+        .checkmark-circle {
+            stroke: $success !important;
+        }
+
+        .checkmark {
+            box-shadow: inset 0px 0px 0px $success !important;
+        }
+
+        .checkmark-check {
+            stroke: $success !important;
+        }
+    }
+
+    &.is-warning {
+        .checkmark-circle {
+            stroke: $warning !important;
+        }
+
+        .checkmark {
+            box-shadow: inset 0px 0px 0px $warning !important;
+        }
+
+        .checkmark-check {
+            stroke: $warning !important;
+        }
+    }
+
+    &.is-danger {
+        .checkmark-circle {
+            stroke: $h-red !important;
+        }
+
+        .checkmark {
+            box-shadow: inset 0px 0px 0px $h-red !important;
+        }
+
+        .checkmark-check {
+            stroke: $h-red !important;
+        }
+    }
+
+    input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    .checkmark-wrap {
+        position: relative;
+        height: 32px;
+        width: 32px;
+
+        .shadow-circle {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 32px;
+            width: 32px;
+            border-radius: 50%;
+            border: 1px solid $placeholder;
+            z-index: 0;
+            opacity: 1;
+            transition: all .2s;
+
+            &.is-opaque {
+                opacity: 0;
+            }
+        }
+
+        .checkmark-circle {
+            height: 32px;
+            width: 32px;
+            stroke-dasharray: 166;
+            stroke-dashoffset: 166;
+            stroke-width: 2;
+            stroke-miterlimit: 10;
+            fill: none;
+            stroke: $primary;
+        }
+
+        //Checkmark
+        .checkmark {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: block;
+            stroke-width: 2;
+            stroke: $placeholder;
+            stroke-miterlimit: 10;
+            margin: 0 auto;
+            box-shadow: inset 0px 0px 0px $primary;
+        }
+
+        //Check symbol
+        .checkmark-check {
+            transform-origin: 50% 50%;
+            stroke-dasharray: 48;
+            stroke-dashoffset: 48;
+            stroke: $primary;
+        }
+    }
+
+    &.is-checked {
+        .checkmark-circle {
+            animation: stroke 0.6s $curve both;
+        }
+
+        .checkmark-check {
+            animation: stroke 0.3s $curve 0.8s both;
+        }
+    }
+
+    &.is-unchecked {
+        .checkmark-circle {
+            animation: reverseCircle 0.6s $curve 0.2s both;
+        }
+
+        .checkmark-check {
+            animation: reverseCheck 0.3s $curve 0.1s both;
+        }
+    }
+
+    //Keyframes
+    @keyframes stroke {
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
+
+    @keyframes reverseCircle {
+        from {
+            stroke-dashoffset: 0;
+        }
+
+        to {
+            stroke-dashoffset: 166;
+        }
+    }
+
+    @keyframes reverseCheck {
+        from {
+            stroke-dashoffset: 0;
+        }
+
+        to {
+            stroke-dashoffset: 48;
+        }
+    }
+}
+
+/* ==========================================================================
+2. Animated Checkbox Dark Mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .animated-checkbox {
+            .checkmark-wrap {
+                .checkmark-circle, .checkmark-check {
+                    stroke: $accent;
+                }
+
+                .shadow-circle {
+                    border-color: lighten($dark-sidebar, 20%);
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+3. Checkbox list
+========================================================================== */
+
+.checkboxes-list {
+    .list-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+        padding: 0;
+        border: none;
+
+        .animated-checkbox {
+            .checkmark-wrap {
+                position: relative;
+            }
+        }
+
+        .item-meta {
+            margin-left: 1rem;
+
+            span {
+                display: block;
+                line-height: 1.4;
+
+                &:first-child {
+                    font-family: $font-alt;
+                    font-size: .95rem;
+                    font-weight: 600;
+                    color: $dark-text;
+                }
+
+                &:nth-child(2) {
+                    font-family: $font;
+                    font-size: .9rem;
+                    color: $light-text;
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+4. Regular Checkbox / Radio
+========================================================================== */
+
+%controller {
+    position: relative;
+    cursor: pointer;
+    padding: 1em;
+
+    &::selection {
+        background: transparent;
+    }
+
+    input + span {
+        position: relative;
+        top: -1px;
+        background: $white;
+        content: "";
+        display: inline-block;
+        margin: 0 .5em 0 0;
+        padding: 0;
+        vertical-align: middle;
+        width: 1.4em;
+        height: 1.4em;
+        border: 1px solid darken($fade-grey, 8%);
+        transform: translate3d(0, 0, 0);
+        backface-visibility: hidden;
+
+        &::after {
+            content: "";
+            display: block;
+            transform: scale(0);
+            transition: transform .2s;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        &:hover input + span {
+            box-shadow: 0 2px 4px rgba(#000, 0.15);
+        }
+    }
+
+    input:active + span {
+        box-shadow: 0 4px 8px rgba(#000, 0.15);
+    }
+
+    input:focus + span {
+        //box-shadow: 0 0 0 3px lightblue;
+   
+    }
+
+    input:checked + span::after {
+        transform: translate(-50%, -50%) scale(1) !important;
+    }
+
+    input {
+        position: absolute;
+        cursor: pointer;
+        opacity: 0;
+        transition: all .3s;
+    }
+}
+
+.checkbox {
+    @extend %controller;
+
+    color: $light-text;
+
+    &:hover {
+        color: $light-text;
+    }
+
+    &.is-circle {
+        input + span {
+            border-radius: 50%;
+        }
+    }
+
+    &.is-solid {
+        input + span {
+            background: lighten($fade-grey, 3%);
+        }
+
+        &.is-primary {
+            input + span {
+                border-color: $primary;
+                background: $primary;
+
+                &:after {
+                    color: $white;
+                }
+            }
+        }
+
+        &.is-success {
+            input + span {
+                border-color: $success;
+                background: $success;
+
+                &:after {
+                    color: $white;
+                }
+            }
+        }
+
+        &.is-info {
+            input + span {
+                border-color: $info;
+                background: $info;
+
+                &:after {
+                    color: $white;
+                }
+            }
+        }
+
+        &.is-warning {
+            input + span {
+                border-color: $warning;
+                background: $warning;
+
+                &:after {
+                    color: $white;
+                }
+            }
+        }
+
+        &.is-danger {
+            input + span {
+                border-color: $danger;
+                background: $danger;
+
+                &:after {
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    &.is-outlined {
+        &.is-primary {
+            input:checked + span {
+                border-color: $primary;
+            }
+
+            input + span {
+                &:after {
+                    color: $primary;
+                }
+            }
+        }
+
+        &.is-success {
+            input:checked + span {
+                border-color: $success;
+            }
+
+            input + span {
+                &:after {
+                    color: $success;
+                }
+            }
+        }
+
+        &.is-info {
+            input:checked + span {
+                border-color: $info;
+            }
+
+            input + span {
+                &:after {
+                    color: $info;
+                }
+            }
+        }
+
+        &.is-warning {
+            input:checked + span {
+                border-color: $warning;
+            }
+
+            input + span {
+                &:after {
+                    color: $warning;
+                }
+            }
+        }
+
+        &.is-danger {
+            input:checked + span {
+                border-color: $danger;
+            }
+
+            input + span {
+                &:after {
+                    color: $danger;
+                }
+            }
+        }
+    }
+
+    input + span {
+        border-radius: 2px;
+        transition: all .3s;
+
+        &::after {
+            background-size: contain;
+            position: absolute;
+            top: 48%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            content: "\f00c";
+            font-family: 'Font Awesome\ 5 Free';
+            font-weight: 900;
+            font-size: .7rem;
+        }
+    }
+}
+
+.radio {
+    @extend %controller;
+
+    color: $light-text;
+
+    + .radio {
+        margin-left: 0 !important;
+    }
+
+    &:hover {
+        color: $light-text;
+    }
+
+    &.is-square {
+        input + span {
+            border-radius: 4px;
+        }
+    }
+
+    &.is-solid {
+        input + span {
+            background: lighten($fade-grey, 3%);
+        }
+
+        &.is-primary {
+            input + span {
+                border-color: $primary;
+                background: $primary;
+
+                &:after {
+                    color: $white;
+                }
+            }
+        }
+
+        &.is-success {
+            input + span {
+                border-color: $success;
+                background: $success;
+
+                &:after {
+                    color: $white;
+                }
+            }
+        }
+
+        &.is-info {
+            input + span {
+                border-color: $info;
+                background: $info;
+
+                &:after {
+                    color: $white;
+                }
+            }
+        }
+
+        &.is-warning {
+            input + span {
+                border-color: $warning;
+                background: $warning;
+
+                &:after {
+                    color: $white;
+                }
+            }
+        }
+
+        &.is-danger {
+            input + span {
+                border-color: $danger;
+                background: $danger;
+
+                &:after {
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    &.is-outlined {
+        &.is-primary {
+            input:checked + span {
+                border-color: $primary;
+            }
+
+            input + span {
+                &:after {
+                    color: $primary;
+                }
+            }
+        }
+
+        &.is-success {
+            input:checked + span {
+                border-color: $success;
+            }
+
+            input + span {
+                &:after {
+                    color: $success;
+                }
+            }
+        }
+
+        &.is-info {
+            input:checked + span {
+                border-color: $info;
+            }
+
+            input + span {
+                &:after {
+                    color: $info;
+                }
+            }
+        }
+
+        &.is-warning {
+            input:checked + span {
+                border-color: $warning;
+            }
+
+            input + span {
+                &:after {
+                    color: $warning;
+                }
+            }
+        }
+
+        &.is-danger {
+            input:checked + span {
+                border-color: $danger;
+            }
+
+            input + span {
+                &:after {
+                    color: $danger;
+                }
+            }
+        }
+    }
+
+    input + span {
+        border-radius: 100%;
+
+        &::after {
+            background-size: contain;
+            position: absolute;
+            top: 49%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            content: "\f111";
+            font-family: 'Font Awesome\ 5 Free';
+            font-weight: 900;
+            font-size: .6rem;
+        }
+    }
+
+    input:checked + span::after {}
+}
+
+/* ==========================================================================
+5. Regular Checkbox / Radio Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        %controller {
+            input + span {
+                background-color: lighten($dark-sidebar, 2%);
+                border-color: lighten($dark-sidebar, 4%);
+
+                &::after {
+                    color: $dark-dark-text;
+                }
+            }
+
+            input + span {
+                border-color: lighten($dark-sidebar, 16%);
+            }
+        }
+
+        .checkbox, .radio {
+            &.is-solid.is-primary {
+                input + span {
+                    background-color: $accent !important;
+                    border-color: $accent !important;
+                }
+            }
+
+            &.is-outlined.is-primary {
+                input:checked + span {
+                    border-color: $accent !important;
+
+                    &::after {
+                        color: $accent !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+6. H Toggle
+========================================================================== */
+
+.h-toggle {
+    margin: 0 auto;
+    width: 76px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+
+        &:checked ~ .toggler {
+            background: lighten($placeholder, 10%);
+            border-color: lighten($placeholder, 10%);
+
+            .active, .inactive {
+                transform: translateX(80%) rotate(360deg);
+            }
+
+            .active {
+                opacity: 1;
+            }
+
+            .inactive {
+                opacity: 0;
+            }
+        }
+    }
+
+    .toggler {
+        position: relative;
+        display: block;
+        height: 16px;
+        width: 50px;
+        border: 1.6px solid $placeholder;
+        border-radius: 100px;
+        transition: all .3s;
+
+        .active, .inactive {
+            position: absolute;
+            top: -14px;
+            left: -10px;
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            background: $white;
+            border: 1.6px solid transparent;
+            box-shadow: $light-box-shadow;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: translateX(0) rotate(0);
+            transition: all .3s ease;
+
+            i {
+                color: $white;
+                font-size: 18px;
+            }
+
+            svg {
+                height: 16px;
+                width: 16px;
+            }
+        }
+
+        .inactive {
+            background: $white;
+            border-color: $success;
+            color: $success;
+            opacity: 1;
+            z-index: 1;
+        }
+
+        .active {
+            background: $white;
+            border-color: $light-text;
+            color: $light-text;
+            opacity: 0;
+            z-index: 0;
+        }
+    }
+}
+
+/* ==========================================================================
+7. H Toggle Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .h-toggle {
+            input {
+                &:checked ~ .toggler {
+                    background: lighten($dark-sidebar, 2%);
+                }
+            }
+
+            .toggler {
+                border-color: lighten($dark-sidebar, 25%);
+
+                .active, .inactive {
+                    background: lighten($dark-sidebar, 2%);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,565 @@
+/*! _demo.scss | Huro | Css ninja 2020-2021 */
+
+/*
+    1. Demo Cards
+    2. Demo Card Dark mode
+    3. Code Highlight
+    4. Code Highlight Dark mode
+    5. Media Queries
+*/
+
+/* ==========================================================================
+1. Demo Card
+========================================================================== */
+
+.demo-card {
+    @extend .s-card;
+
+    position: relative;
+    margin-bottom: 1.5rem;
+
+    &.has-more-margin {
+        margin-bottom: 3rem;
+    }
+
+    &.has-margin-top {
+        margin-top: 3rem;
+    }
+
+    &.is-narrow {
+        margin-bottom: 0;
+    }
+
+    .demo-title {
+        h3 {
+            margin-bottom: .75rem;
+        }
+
+        p {
+            max-width: 540px;
+        }
+    }
+
+    .code-trigger {
+        position: absolute;
+        top: 16px;
+        right: 20px;
+        height: 36px;
+        width: 36px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        border: 1px solid darken($fade-grey, 3%);
+        box-shadow: $light-box-shadow;
+        transition: all .3s;
+
+        &:hover {
+            svg {
+                stroke: $dark-text;
+            }
+        }
+
+        &.is-active {
+            border-color: $primary;
+            transform: rotate(180deg);
+
+            svg {
+                stroke: $primary;
+
+                &.open {
+                    display: none !important;
+                }
+
+                &.close {
+                    display: block !important;
+                }
+            }
+        }
+
+        svg {
+            height: 16px;
+            width: 16px;
+            stroke: $light-text;
+            transition: stroke .3s;
+
+            &.open {
+                display: block !important;
+            }
+
+            &.close {
+                display: none !important;
+                opacity: 1 !important;
+            }
+        }
+    }
+
+    .card-inner {
+        &.no-padding {
+            padding: 0;
+        }
+
+        .buttons {
+            margin-bottom: 0;
+        }
+
+        .is-grouped-multiline, .tabs-wrapper, .progress, .message, .snacks, .filepond-uploader {
+            max-width: 540px;
+        }
+
+        .demo-icon-list {
+            display: flex;
+            flex-wrap: wrap;
+
+            //justify-content: center;
+
+            li {
+                width: 20%;
+                border-radius: .25em;
+                transition: background-color 0.2s;
+                user-select: none;
+                overflow: hidden;
+                text-align: center;
+                padding: 2rem 1rem;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: lighten($fade-grey, 5%);
+
+                    .lnil, .lnir, .fas, .fab {
+                        transform: scale(1.1);
+                        color: $primary;
+                    }
+
+                    svg {
+                        transform: scale(1.1);
+                        stroke: $primary;
+                    }
+                }
+            }
+
+            .lnil, .lnir, .fas, .fab {
+                color: $light-text;
+                font-size: 1.6rem;
+                transition: all .35s;
+            }
+
+            svg {
+                height: 20px;
+                width: 20px;
+                stroke-width: 1.8px;
+                stroke: $light-text;
+                transition: stroke .3s;
+            }
+
+            input, em, .icon-unicode {
+                display: none;
+            }
+
+            .icon.w-grid-2 {
+                padding: 4rem 0 !important;
+            }
+
+            .icon-name {
+                color: $light-text;
+            }
+        }
+
+        .field {
+            max-width: 540px;
+
+            &.demo-select {
+                max-width: 340px;
+            }
+        }
+    }
+
+    .highlight-block {
+        display: none;
+        margin-top: 20px;
+    }
+}
+
+.color-card {
+    @extend .s-card;
+
+    display: flex;
+    align-items: center;
+
+    .color-dot {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+
+        &.is-primary {
+            background: $primary;
+        }
+
+        &.is-accent {
+            background: $accent;
+        }
+
+        &.is-success {
+            background: $success;
+        }
+
+        &.is-info {
+            background: $info;
+        }
+
+        &.is-warning {
+            background: $warning;
+        }
+
+        &.is-danger {
+            background: $danger;
+        }
+
+        &.is-dark {
+            background: $dark-sidebar;
+        }
+
+        &.is-fade-grey {
+            background: $fade-grey;
+        }
+
+        &.is-muted-grey {
+            background: $muted-grey;
+        }
+
+        &.is-placeholder {
+            background: $placeholder;
+        }
+
+        &.is-dark-text {
+            background: $dark-text;
+        }
+
+        &.is-light-text {
+            background: $light-text;
+        }
+
+        &.is-h-purple {
+            background: $h-purple;
+        }
+
+        &.is-h-blue {
+            background: $h-blue;
+        }
+
+        &.is-h-green {
+            background: $h-green;
+        }
+
+        &.is-h-red {
+            background: $h-red;
+        }
+
+        &.is-h-yellow {
+            background: $h-yellow;
+        }
+
+        &.is-h-orange {
+            background: $h-orange;
+        }
+    }
+
+    .meta {
+        margin-left: 12px;
+
+        span {
+            display: block;
+            font-family: $font-alt;
+
+            &:first-child {
+                color: $dark-text;
+                font-weight: 600;
+            }
+
+            &:nth-child(2) {
+                font-size: .9rem;
+                color: $light-text;
+            }
+        }
+    }
+}
+
+.demo-s-card, .demo-r-card, .demo-l-card {
+    .title {
+        margin-bottom: 6px;
+    }
+}
+
+.demo-spacer {
+    padding-bottom: 100px;
+}
+
+.demo-editor-container {
+    max-width: 740px;
+    margin: 0 auto;
+}
+
+.helper-table {
+    .category, th {
+        width: 25%;
+        font-family: $font-alt;
+        font-weight: 600;
+        font-size: 1.05rem;
+    }
+
+    .name {
+        width: 25%;
+    }
+
+    .description {
+        width: 50%;
+    }
+}
+
+.demo-table {
+    .table {
+        th {
+            font-family: $font-alt;
+            font-weight: 600;
+            font-size: .9rem;
+        }
+    }
+}
+
+/* ==========================================================================
+2. Demo Card Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .demo-card {
+            .demo-title {
+                p {
+                    code {
+                        background-color: lighten($dark-sidebar, 6%) !important;
+                    }
+                }
+
+                .code-trigger {
+                    &:hover {
+                        svg {
+                            stroke: $light-text;
+                        }
+                    }
+
+                    &.is-active {
+                        border-color: $danger;
+
+                        svg {
+                            stroke: $danger;
+                        }
+                    }
+                }
+            }
+
+            .demo-icon-list {
+                li:hover {
+                    background-color: lighten($dark-sidebar, 10%) !important;
+
+                    .lnil, .lnir, .fas, .fab {
+                        color: $accent;
+                    }
+
+                    svg {
+                        stroke: $accent;
+                    }
+                }
+            }
+
+            .highlight {
+                background: lighten($dark-sidebar, 10%) !important;
+                border-color: lighten($dark-sidebar, 10%) !important;
+
+                pre {
+                    background: lighten($dark-sidebar, 10%) !important;
+                    border-color: lighten($dark-sidebar, 10%) !important;
+
+                    .hljs {
+                        background: lighten($dark-sidebar, 10%) !important;
+                        border-color: lighten($dark-sidebar, 10%) !important;
+                    }
+                }
+            }
+        }
+
+        .color-card {
+            .meta {
+                span {
+                    &:first-child {
+                        color: $dark-dark-text;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+3. Code Highlight
+========================================================================== */
+
+pre {
+    background-color: transparent !important;
+    color: unset;
+    font-size: 1em;
+    overflow-x: hidden;
+    padding: 0 !important;
+    white-space: pre;
+    word-wrap: normal;
+}
+
+.hljs {
+    display: block;
+    overflow-x: auto;
+    padding: 1.4rem;
+    background: $fade-grey;
+    color: $dark-text;
+}
+
+.hljs-name,
+.hljs-strong {
+    font-weight: bold;
+    color: $danger;
+}
+
+.hljs-code,
+.hljs-emphasis {
+    font-style: italic;
+}
+
+.hljs-tag {
+    color: #909090;
+}
+
+.hljs-variable,
+.hljs-template-variable,
+.hljs-selector-id,
+.hljs-selector-class {
+    color: #ade5fc;
+}
+
+.hljs-string,
+.hljs-bullet {
+    color: $primary;
+}
+
+.hljs-type,
+.hljs-title,
+.hljs-section,
+.hljs-attribute,
+.hljs-quote,
+.hljs-built_in,
+.hljs-builtin-name {
+    color: $danger;
+}
+
+.hljs-attr {
+    color: $info;
+}
+
+.hljs-number,
+.hljs-symbol,
+.hljs-bullet {
+    color: #d36363;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-literal {
+    color: $danger;
+}
+
+.hljs-comment,
+.hljs-deletion,
+.hljs-code {
+    color: #888;
+}
+
+.hljs-regexp,
+.hljs-link {
+    color: #c6b4f0;
+}
+
+.hljs-meta {
+    color: #fc9b9b;
+}
+
+.hljs-deletion {
+    background-color: #fc9b9b;
+    color: #333;
+}
+
+.hljs-addition {
+    background-color: #a2fca2;
+    color: #333;
+}
+
+.hljs a {
+    color: inherit;
+}
+
+.hljs a:focus,
+.hljs a:hover {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.highlight {
+    overflow: auto;
+    background: $fade-grey;
+    border-radius: 4px;
+}
+
+.highlight::-webkit-scrollbar {
+    width: 10px;
+}
+
+.highlight::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.code-highlight {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+code.hljs span {
+    font-family: Inconsolata, monospace !important;
+}
+
+/* ==========================================================================
+4. Code Highlight Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .hljs {
+            color: $smoke-white !important;
+        }
+
+        .hljs-string {
+            color: $success !important;
+        }
+    }
+}
+
+/* ==========================================================================
+6. Media Queries
+========================================================================== */
+
+@media only screen and (max-width: 767px) {
+    .demo-card {
+        .demo-title {
+            .code-trigger {
+                top: 10px;
+                right: 12px;
+            }
+        }
+    }
+}

@@ -1,0 +1,399 @@
+/*! _widgets-lists.scss | Huro | Css ninja 2020-2021 */
+
+/* ==========================================================================
+List Widgets Styles
+========================================================================== */
+
+/*
+    1. List Widget Base
+    2. List Widget V1
+    3. List Widget V2
+*/
+
+/* ==========================================================================
+1. List Widget Base
+========================================================================== */
+
+.list-widget {
+    @extend .l-card;
+
+    padding: 30px;
+
+    &:not(:last-child) {
+        margin-bottom: 1.5rem;
+    }
+
+    &.is-straight {
+        @extend .s-card;
+    }
+
+    &.tabbed-widget {
+        .widget-head {
+            .tabbed-controls {
+                position: relative;
+                display: flex;
+                min-width: 140px;
+                height: 32px;
+                background: darken($widget-grey, 2%);
+                font-family: $font;
+                border-radius: 8px;
+
+                .tabbed-control {
+                    position: relative;
+                    width: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: .9rem;
+                    color: $light-text;
+                    z-index: 1;
+
+                    &.is-active {
+                        color: $smoke-white;
+
+                        &:first-child {
+                            ~ .tabbed-naver {
+                                margin-left: 0;
+                            }
+                        }
+
+                        &:nth-child(2) {
+                            ~ .tabbed-naver {
+                                margin-left: 50%;
+                            }
+                        }
+                    }
+                }
+
+                .tabbed-naver {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 50%;
+                    height: 100%;
+                    border-radius: 8px;
+                    background: $primary;
+                    margin-left: 0;
+                    transition: all .3s;
+                    z-index: 0;
+                }
+            }
+        }
+
+        .inner-list-wrapper {
+            display: none;
+            animation: fadeInLeft .5s;
+
+            &.is-active {
+                display: block;
+            }
+        }
+    }
+
+    .widget-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 32px;
+        margin-bottom: 10px;
+
+        h3 {
+            color: $dark-text;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+    }
+
+    .inner-list {
+        padding: 10px 0;
+
+        .inner-list-item {
+            + .inner-list-item {
+                margin-top: 24px;
+            }
+        }
+    }
+}
+
+body {
+    &.is-dark {
+        .list-widget {
+            &.tabbed-widget {
+                .widget-head {
+                    .tabbed-controls {
+                        background: lighten($dark-sidebar, 3%);
+
+                        .tabbed-naver {
+                            background: $accent;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+2. List Widget V1
+========================================================================== */
+
+.list-widget {
+    &.list-widget-v1 {
+        .go-icon {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 36px;
+            width: 36px;
+            border-radius: 50%;
+            background: $widget-grey;
+            color: $light-text;
+
+            &:before {
+                content: attr(data-content);
+                position: absolute;
+                left: -45px;
+                font-family: $font;
+                font-size: .95rem;
+                font-weight: 500;
+            }
+
+            &.is-squared {
+                border-radius: 10px;
+            }
+
+            &.is-up {
+                &:before {
+                    color: $h-green;
+                }
+            }
+
+            &.is-down {
+                &:before {
+                    color: $h-red;
+                }
+            }
+
+            svg {
+                height: 16px;
+                width: 16px;
+                stroke-width: 3px;
+            }
+        }
+    }
+}
+
+body {
+    &.is-dark {
+        .list-widget {
+            &.list-widget-v1 {
+                .go-icon {
+                    background: lighten($dark-sidebar, 3%);
+                    border: 1px solid lighten($dark-sidebar, 12%);
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+2. List Widget V2
+========================================================================== */
+
+.list-widget {
+    &.list-widget-v2 {
+        .image-icon {
+            height: 40px;
+            width: 40px;
+        }
+    }
+}
+
+body {
+    &.is-dark {
+        .list-widget {
+            &.list-widget-v2 {}
+        }
+    }
+}
+
+/* ==========================================================================
+2. List Widget V3
+========================================================================== */
+
+.list-widget {
+    &.list-widget-v3 {
+        .icon-timeline {
+            .timeline-item {
+                position: relative;
+                display: flex;
+                padding-bottom: 30px;
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    top: 36px;
+                    left: 18px;
+                    width: 1px;
+                    height: calc(100% - 36px);
+                    border-left: 1px solid darken($fade-grey, 3%);
+                }
+
+                .timeline-icon {
+                    position: relative;
+                    height: 36px;
+                    width: 36px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: $white;
+                    border: 1px solid darken($fade-grey, 3%);
+                    border-radius: 50%;
+                    color: $light-text;
+                    box-shadow: $light-box-shadow;
+
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        top: 17px;
+                        left: 40px;
+                        width: 20px;
+                        height: 1px;
+                        border-top: 1px solid darken($fade-grey, 3%);
+                    }
+
+                    &.is-squared {
+                        border-radius: 10px;
+
+                        img {
+                            border-radius: 10px;
+                        }
+                    }
+
+                    &.is-primary {
+                        background: $primary;
+                        border-color: $primary;
+                        box-shadow: $primary-box-shadow;
+
+                        svg {
+                            stroke: $smoke-white;
+                        }
+                    }
+
+                    &.is-info {
+                        background: $info;
+                        border-color: $info;
+                        box-shadow: $info-box-shadow;
+
+                        svg {
+                            stroke: $smoke-white;
+                        }
+                    }
+
+                    &.is-success {
+                        background: $success;
+                        border-color: $success;
+                        box-shadow: $success-box-shadow;
+
+                        svg {
+                            stroke: $smoke-white;
+                        }
+                    }
+
+                    &.is-orange {
+                        background: $h-orange;
+                        border-color: $h-orange;
+                        box-shadow: $h-orange-box-shadow;
+
+                        svg {
+                            stroke: $smoke-white;
+                        }
+                    }
+
+                    &.is-yellow {
+                        background: $h-yellow;
+                        border-color: $h-yellow;
+
+                        svg {
+                            stroke: $smoke-white;
+                        }
+                    }
+
+                    img {
+                        display: block;
+                        height: 28px;
+                        width: 28px;
+                        border-radius: 50%;
+                    }
+
+                    svg {
+                        height: 16px;
+                        width: 16px;
+                        stroke-width: 1.6px;
+                    }
+                }
+
+                .timeline-content {
+                    margin-left: 34px;
+                    line-height: 1.2;
+
+                    span {
+                        font-size: .85rem;
+                        color: $light-text;
+                    }
+
+                    p {
+                        font-family: $font-alt;
+                        font-size: .95rem;
+                        font-weight: 500;
+                        color: $dark-text;
+                    }
+                }
+            }
+        }
+    }
+}
+
+body {
+    &.is-dark {
+        .list-widget {
+            &.list-widget-v3 {
+                .icon-timeline {
+                    .timeline-item {
+                        &:after {
+                            border-color: lighten($dark-sidebar, 12%) !important;
+                        }
+
+                        .timeline-icon:not(.is-primary):not(.is-info):not(.is-success):not(.is-orange):not(.is-yellow) {
+                            background: lighten($dark-sidebar, 3%) !important;
+                            border-color: lighten($dark-sidebar, 12%) !important;
+                        }
+
+                        .timeline-icon {
+                            &:after {
+                                border-color: lighten($dark-sidebar, 12%) !important;
+                            }
+
+                            &.is-primary {
+                                background: $accent;
+                                border-color: $accent;
+                                box-shadow: $accent-box-shadow;
+
+                                svg {
+                                    stroke: $smoke-white;
+                                }
+                            }
+                        }
+
+                        .timeline-content {
+                            p {
+                                color: $dark-dark-text;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

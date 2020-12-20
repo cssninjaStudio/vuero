@@ -1,0 +1,344 @@
+/*! _buttons.scss | Huro | Css ninja 2020-2021 */
+
+/*
+    1. H Action
+    2. H Action Dark mode 
+    3. H Button
+    4. H Button Dark mode
+*/
+
+/* ==========================================================================
+1. H Action
+========================================================================== */
+
+.button {
+    font-family: $font;
+    transition: all .3s;
+    
+    &.h-action {
+        padding: 8px 16px;
+        font-weight: 500;
+        font-size: .9rem;
+        line-height: 0;
+        border-radius: 3px;
+        background: $white;
+        color: $dark-text;
+        border: 1px solid $placeholder;
+        transition: all .3s;
+        cursor: pointer;
+
+        &.is-rounded {
+            border-radius: 500px;
+        }
+
+        &.is-hoverable {
+            &:hover {
+                border-color: $primary;
+                background: $primary;
+                color: $white;
+                box-shadow: $primary-box-shadow;
+            }
+        }
+
+        &.is-grey {
+            background: lighten($fade-grey, 2%);
+            border-color: lighten($fade-grey, 2%);
+            color: $muted-grey;
+        }
+
+        &.is-active {
+            background: $primary;
+            border-color: $primary;
+            color: $smoke-white;
+            box-shadow: $primary-box-shadow;
+        }
+    }
+}
+
+/* ==========================================================================
+2. H Action Dark Mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .button {
+            &.h-action {
+                background: lighten($dark-sidebar, 10%);
+                border-color: lighten($dark-sidebar, 12%);
+                color: $dark-dark-text;
+
+                &:hover {
+                    background: $accent;
+                    border-color: $accent;
+                    color: $smoke-white;
+                }
+
+                &.is-hoverable {
+                    &:hover {
+                        border-color: $accent !important;
+                        background: $accent !important;
+                        box-shadow: $accent-box-shadow !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+3. H Button
+========================================================================== */
+
+.button {
+    &.is-circle {
+        border-radius: 50%;
+    }
+
+    &.h-button {
+        padding: 8px 22px 8px 22px;
+        height: 38px;
+        line-height: 1.1;
+        font-size: .95rem;
+        font-family: $font;
+        transition: all .3s;
+
+        &:not([disabled]) {
+            cursor: pointer;
+        }
+
+        &:active, &:focus {
+            box-shadow: none !important;
+            outline: none !important;
+            border-color: darken($fade-grey, 2%);
+        }
+
+        &.is-bold {
+            font-weight: 500;
+        }
+
+        &.is-primary {
+            &.is-raised:hover {
+                opacity: .9;
+                box-shadow: $primary-box-shadow;
+            }
+
+            &.is-elevated {
+                box-shadow: $primary-box-shadow;
+            }
+        }
+
+        &.is-success {
+            &.is-raised:hover {
+                opacity: .9;
+                box-shadow: $success-box-shadow;
+            }
+
+            &.is-elevated {
+                box-shadow: $success-box-shadow;
+            }
+        }
+
+        &.is-info {
+            &.is-raised:hover {
+                opacity: .9;
+                box-shadow: $info-box-shadow;
+            }
+
+            &.is-elevated {
+                box-shadow: $info-box-shadow;
+            }
+        }
+
+        &.is-warning {
+            &.is-raised:hover {
+                opacity: .9;
+                box-shadow: $warning-box-shadow;
+            }
+
+            &.is-elevated {
+                box-shadow: $warning-box-shadow;
+            }
+        }
+
+        &.is-danger {
+            &.is-raised:hover {
+                opacity: .9;
+                box-shadow: $danger-box-shadow;
+            }
+
+            &.is-elevated {
+                box-shadow: $danger-box-shadow;
+            }
+        }
+
+        &.is-lower {
+            text-transform: none !important;
+            font-size: .9rem;
+        }
+
+        &.is-big {
+            height: 40px;
+        }
+
+        &.is-huge {
+            height: 50px;
+            width: 220px;
+        }
+    }
+
+    &.simple-action {
+        height: 32px;
+        padding: 0 24px;
+        line-height: 0;
+        border-radius: 100px;
+        font-size: .9rem;
+        font-weight: 500;
+        transition: all .3s;
+
+        &.is-purple {
+            background: $primary;
+            border-color: $primary;
+            color: $smoke-white;
+
+            &:hover {
+                opacity: .95;
+                box-shadow: $primary-box-shadow;
+                color: $smoke-white !important;
+            }
+        }
+
+        &.has-icon {
+            svg {
+                height: 16px;
+                width: 16px;
+            }
+        }
+
+        &:hover {
+            border-color: $primary;
+            color: $primary;
+        }
+
+        svg {
+            height: 18px;
+            width: 18px;
+        }
+    }
+
+    .icon {
+        svg {
+            height: 14px;
+            width: 14px;
+        }
+    }
+}
+
+/* ==========================================================================
+4. H Button Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .h-button {
+            &:not(.is-primary):not(.is-success):not(.is-info):not(.is-warning):not(.is-danger):not(.is-light):not(.is-white) {
+                background: lighten($dark-sidebar, 10%);
+                border-color: lighten($dark-sidebar, 12%);
+                color: $dark-dark-text;
+
+                &:hover {
+                    border-color: lighten($dark-sidebar, 18%);
+                }
+            }
+
+            &.is-primary {
+                border-color: $accent;
+                background: $accent;
+
+                &.is-raised:hover {
+                    box-shadow: $accent-box-shadow !important;
+                }
+
+                &.is-elevated {
+                    box-shadow: $accent-box-shadow !important;
+                }
+
+                &.is-outlined {
+                    background: transparent;
+                    border-color: $accent !important;
+                    color: $accent;
+
+                    &:hover {
+                        background: $accent !important;
+                        border-color: $accent !important;
+                        color: $white !important;
+                    }
+                }
+
+                &.is-light {
+                    background: lighten($accent, 25%) !important;
+                    color: $accent;
+                }
+            }
+
+            &.is-white {
+                background: lighten($dark-sidebar, 6%) !important;
+                border-color: $muted-grey !important;
+                color: $muted-grey !important;
+            }
+
+            &.is-dark-outlined {
+                background: lighten($dark-sidebar, 10%);
+                border-color: lighten($dark-sidebar, 12%);
+                color: $dark-dark-text;
+                
+                &:hover {
+                    border-color: $accent !important;
+                    color: $accent !important;
+                }
+            }
+        }
+
+        .button {
+            &:not(.is-primary):not(.is-success):not(.is-info):not(.is-warning):not(.is-danger):not(.is-light):not(.is-white) {
+                background: lighten($dark-sidebar, 10%);
+                border-color: lighten($dark-sidebar, 12%);
+                color: $dark-dark-text;
+
+                &:hover {
+                    border-color: lighten($dark-sidebar, 18%);
+                }
+            }
+
+            &.is-primary {
+                border-color: $accent;
+                background: $accent;
+            }
+
+            &.is-white {
+                background: lighten($dark-sidebar, 6%) !important;
+                border-color: $muted-grey !important;
+                color: $muted-grey !important;
+            }
+
+            &.is-dark-outlined {
+                background: lighten($dark-sidebar, 10%);
+                border-color: lighten($dark-sidebar, 12%);
+                color: $dark-dark-text;
+                
+                &:hover {
+                    border-color: $accent !important;
+                    color: $accent !important;
+                }
+            }
+
+            &.h-action {
+                &.is-active {
+                    background: $accent !important;
+                    border-color: $accent !important;
+                    box-shadow: $accent-box-shadow !important;
+                    color: $smoke-white !important;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,67 @@
+/*! _breadcrumbs.scss | Huro | Css Ninja 2020-2021 */
+
+/*
+    1. Breadcrumbs
+    2. Breadcrumbs Dark mode
+*/
+
+/* ==========================================================================
+1. Breadcrumbs
+========================================================================== */
+
+.breadcrumb {
+
+    &.is-narrow {
+        margin-bottom: 10px;
+    }
+
+    ul {
+        li {
+            a {
+                font-family: $font;
+                color: $light-text;
+
+                &:hover {
+                    color: $primary;
+                }
+
+                .icon {
+
+                    &.is-solo {
+                        svg {
+                            top: 2px;
+                        }
+                    }
+
+                    svg {
+                        position: relative;
+                        top: 0;
+                        height: 16px;
+                        min-width: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* ==========================================================================
+2. Breadcrumbs Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .breadcrumb {
+            ul {
+                li {
+                    a {
+                        &:hover {
+                            color: $accent;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

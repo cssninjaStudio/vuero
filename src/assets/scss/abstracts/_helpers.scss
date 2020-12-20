@@ -1,0 +1,137 @@
+/*! _helpers.scss | Huro | Css ninja 2020-2021 */
+
+/*
+    1. Spacing helpers
+    2. Color helpers
+    3. Dark helpers
+*/
+
+/* ==========================================================================
+1. Spacing helpers
+========================================================================== */
+
+$spaceamounts: 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 60, 70, 80, 90, 100;
+$sides: top, bottom, left, right;
+
+@each $space in $spaceamounts {
+    @each $side in $sides {
+        .m-#{str-slice($side, 0, 1)}-#{$space} {
+            margin-#{$side}: #{$space}px !important;
+        }
+
+        .p-#{str-slice($side, 0, 1)}-#{$space} {
+            padding-#{$side}: #{$space}px !important;
+        }
+    }
+}
+
+.no-padding-all {
+    padding: 0 !important;
+}
+
+.no-padding-top {
+    padding-top: 0 !important;
+}
+
+.no-padding-bottom {
+    padding-bottom : 0 !important;
+}
+
+.no-padding-left {
+    padding-left: 0 !important;
+}
+
+.no-padding-right {
+    padding-right: 0 !important;
+}
+
+.no-margin-all {
+    margin: 0 !important;
+}
+
+.no-margin-top {
+    margin-top: 0 !important;
+}
+
+.no-margin-bottom {
+    margin-bottom : 0 !important;
+}
+
+.no-margin-left {
+    margin-left: 0 !important;
+}
+
+.no-margin-right {
+    margin-right: 0 !important;
+}
+
+.has-fullheight {
+    height: 100%;
+}
+
+.has-fullwidth {
+    width: 100%;
+}
+
+/* ==========================================================================
+2. Color helpers
+========================================================================== */
+
+$colors: (primary: $primary, secondary: $secondary, accent: $accent, info: $info, success: $success, warning: $warning, danger: $danger, h-purple: $h-purple, h-blue: $h-blue, h-green: $h-green, h-orange: $h-orange, h-red: $h-red, h-yellow: $h-yellow, javascript: $javascript, angular: $angular, reactjs: $reactjs, android: $android, swift: $swift, vuejs: $vuejs, wordpress: $wordpress, csharp: $csharp, nodejs: $nodejs, html: $html, facebook: $facebook, twitter: $twitter, linkedin: $linkedin, tumblr: $tumblr, github: $github, dribbble: $dribbble, google-plus: $google-plus, youtube: $youtube, reddit: $reddit, invision: $invision, amazon: $amazon, instagram: $instagram);
+
+@mixin color-modifiers($attribute, $prefix) {
+    @each $name, $hex in $colors {
+        &#{$prefix}#{$name} {
+            #{$attribute}: $hex;
+        }
+    }
+}
+
+.text {
+    @include color-modifiers($attribute: "color", $prefix: "-");
+}
+
+.bg {
+    @include color-modifiers($attribute: "background", $prefix: "-");
+}
+
+/* ==========================================================================
+3. Dark helpers
+========================================================================== */
+
+body {
+    &.is-dark {
+
+        //Card border helper
+        .is-dark-card-bordered, .is-dark-bordered-12 {
+            border-color: lighten($dark-sidebar, 12%) !important;
+        }
+
+        //Primary Helper
+        .is-dark-primary {
+            color: $accent !important;
+        }
+
+        .is-dark-primary-hover:hover {
+            color: $accent !important;
+        }
+
+        //BG Helpers
+        .is-dark-bg-2 {
+            background: lighten($dark-sidebar, 2%) !important;
+        }
+
+        .is-dark-bg-3 {
+            background: lighten($dark-sidebar, 3%) !important;
+        }
+
+        .is-dark-bg-4 {
+            background: lighten($dark-sidebar, 4%) !important;
+        }
+
+        .is-dark-bg-6 {
+            background: lighten($dark-sidebar, 6%) !important;
+        }
+
+    }
+}

@@ -1,0 +1,1553 @@
+/*! _inbox.scss | Huro | Css ninja 2020-2021 */
+
+/* ==========================================================================
+Inbox Layouts
+========================================================================== */
+
+/*
+    1. Inbox V1
+*/
+
+/* ==========================================================================
+1. Inbox V1 Layout
+========================================================================== */
+
+.inbox-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    .wrapper-inner {
+        position: relative;
+        height: 100%;
+        width: 100%;
+
+        .inbox-sidebar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 20%;
+            background: $white;
+            border-right: 1px solid darken($fade-grey, 3%);
+
+            .header-area {
+                height: 80px;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 1px solid darken($fade-grey, 3%);
+                padding: 0 20px;
+
+                .inbox-title {
+                    display: flex;
+                    align-items: center;
+                    font-family: $font-alt;
+                    font-size: 1.4rem;
+                    font-weight: 600;
+                    color: $dark-text;
+                    width: 100%;
+                    max-width: 100%;
+
+                    .inbox-brand {
+                        margin-right: 16px;
+
+                        img {
+                            height: 40px;
+                            width: 40px;
+                            min-width: 40px;
+                        }
+                    }
+
+                    label {
+                        display: block;
+                        margin-left: auto;
+                        transform: scale(0.65);
+                    }
+                }
+
+                .inbox-close-sidebar-mobile {
+                    display: none;
+                }
+            }
+
+            .sidebar-inner {
+                position: relative;
+                width: 100%;
+                height: calc(100% - 80px);
+
+                .inner-menu {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    padding: 20px;
+                    width: 100%;
+
+                    .compose-button {
+                        height: 40px;
+                        line-height: 1.8;
+                        background: $primary;
+                        border-color: $primary;
+                        color: $smoke-white;
+                        font-weight: 500;
+                        font-family: $font;
+
+                        &:hover {
+                            opacity: .8;
+                            box-shadow: $primary-box-shadow;
+                        }
+                    }
+
+                    .inbox-menu {
+                        padding: 20px 0;
+
+                        ul {
+                            li {
+                                a {
+                                    font-family: $font;
+                                    display: flex;
+                                    align-items: center;
+                                    padding: 8px 12px;
+                                    border-radius: 100px;
+
+                                    &.is-active {
+                                        background: lighten($fade-grey, 3%);
+
+                                        span, i {
+                                            color: $dark-text;
+                                            font-weight: 500;
+                                        }
+
+                                        svg {
+                                            stroke: $primary;
+                                        }
+
+                                        .tag {
+                                            display: inline;
+                                        }
+                                    }
+
+                                    i {
+                                        color: $muted-grey;
+                                    }
+
+                                    svg {
+                                        height: 16px;
+                                        width: 16px;
+                                        stroke: $light-text;
+                                    }
+
+                                    span {
+                                        display: block;
+                                        padding: 0 20px;
+                                        color: $muted-grey;
+                                    }
+
+                                    .tag {
+                                        display: none;
+                                        margin-left: auto;
+                                        margin-bottom: 0;
+                                        font-size: .85rem;
+                                        height: 22px;
+                                        background: $secondary;
+                                        padding: 0 12px;
+                                        line-height: 1.8;
+                                        color: $smoke-white !important;
+                                        border-radius: 100px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .scroll-menu {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    height: calc(100% - 304px);
+                    width: 100%;
+                    border-top: 1px solid $fade-grey;
+                    overflow-y: auto;
+
+                    .title-wrap {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        height: 60px;
+                        padding: 0 20px;
+
+                        h3 {
+                            font-family: $font-alt;
+                            font-weight: 600;
+                            color: $dark-text;
+                        }
+
+                        .control {
+                            position: relative;
+                            flex-grow: 2;
+
+                            input {
+                                height: 32px;
+                                padding-left: 32px;
+                            }
+
+                            .form-icon {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                height: 32px;
+                                width: 32px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+
+                                i {
+                                    color: $placeholder;
+                                    transition: color .3s;
+                                }
+                            }
+                        }
+
+                        .button {
+                            height: 36px;
+                            width: 36px;
+                            border: none;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            &:hover {
+                                i {
+                                    color: $dark-text;
+                                }
+                            }
+
+                            i {
+                                color: $placeholder;
+                                transition: color .3s;
+
+                                &.material-icons {
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+
+                    .contact-list {
+                        position: relative;
+                        top: 0;
+                        width: 100%;
+                        height: calc(100% - 60px);
+                        overflow-y: auto;
+                        padding: 20px;
+
+                        .contact-block {
+                            display: flex;
+                            align-items: center;
+                            padding: 6px 8px;
+                            border-radius: 100px;
+                            margin-bottom: 6px;
+                            transition: all .3s;
+                            cursor: pointer;
+
+                            &:hover {
+                                background: lighten($fade-grey, 3%);
+                            }
+
+                            img {
+                                display: block;
+                                height: 32px;
+                                width: 32px;
+                                min-width: 32px;
+                                border-radius: 50%;
+                            }
+
+                            .contact-meta {
+                                margin-left: 12px;
+
+                                span {
+                                    display: block;
+                                    font-size: .9rem;
+
+                                    &:first-child {
+                                        font-family: $font-alt;
+                                        font-weight: 600;
+                                        color: $dark-text;
+                                    }
+
+                                    &:nth-child(2) {
+                                        font-family: $font;
+                                        color: $muted-grey;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .inbox-messages {
+            position: absolute;
+            top: 0;
+            left: 20%;
+            height: 100%;
+            width: 32%;
+            background: $white;
+            border-right: 1px solid darken($fade-grey, 3%);
+
+            .header-area {
+                height: 80px;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 1px solid darken($fade-grey, 3%);
+                padding: 0 20px;
+
+                .actions {
+                    display: flex;
+                    align-items: center;
+
+                    .inbox-search {
+                        position: relative;
+                        margin-right: 6px;
+
+                        input {
+                            height: 38px;
+                            min-width: 220px;
+                            padding-left: 42px;
+
+                            &:focus + .form-icon i {
+                                color: $dark-text;
+                            }
+                        }
+
+                        .form-icon {
+                            position: absolute;
+                            top: 1px;
+                            left: 4px;
+                            height: 38px;
+                            width: 38px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            i {
+                                color: $placeholder;
+                                transition: color .3s;
+                            }
+                        }
+                    }
+
+                    .mobile-menu-action {
+                        display: none;
+                    }
+                }
+            }
+
+            .messages-list {
+                position: relative;
+                height: calc(100% - 80px);
+                width: 100%;
+                overflow-y: auto;
+
+                .inbox-message {
+                    display: flex;
+                    align-items: stretch;
+                    border-bottom: 1px solid darken($fade-grey, 3%);
+                    padding: 20px;
+                    cursor: pointer;
+
+                    &.is-selected {
+                        background: lighten($fade-grey, 4%);
+                    }
+
+                    &.is-unread {
+                        b {
+                            font-weight: 600;
+                        }
+                    }
+
+                    b {
+                        font-weight: 400;
+                    }
+
+                    .message-meta {
+                        margin-left: 16px;
+
+                        span {
+                            display: block;
+
+                            &.name {
+                                font-family: $font-alt;
+                                font-weight: 500;
+                                color: $dark-text;
+                            }
+
+                            &.email {
+                                font-family: $font;
+                                font-size: .9rem;
+                                color: $light-text;
+                            }
+
+                            &.subject {
+                                font-family: $font;
+                                font-size: .95rem;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                max-width: 280px;
+                                text-overflow: ellipsis;
+                            }
+                        }
+                    }
+
+                    .pushed {
+                        margin-left: auto;
+                        color: $muted-grey;
+                        font-size: .9rem;
+                    }
+                }
+            }
+        }
+
+        .inbox-message-overlay {
+            position: absolute;
+            top: 0;
+            left: 52%;
+            height: 100%;
+            width: 48%;
+            z-index: -1;
+            opacity: 0;
+            background: $white;
+            transition: opacity .4s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &.is-active {
+                opacity: 1;
+                z-index: 1;
+            }
+
+            .loader {
+                position: relative;
+                height: 60px;
+                width: 60px;
+            }
+        }
+
+        .inbox-message-details {
+            position: absolute;
+            top: 0;
+            left: 52%;
+            height: 100%;
+            width: 48%;
+            transition: all .3s;
+
+            .header-area {
+                height: 80px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                border-bottom: 1px solid darken($fade-grey, 3%);
+                padding: 0 20px;
+                background: $white;
+
+                .sender-pic {
+                    display: block;
+                    height: 44px;
+                    width: 44px;
+                    min-width: 44px;
+                    border-radius: 50%;
+                }
+
+                .message-meta {
+                    margin-left: 12px;
+                    line-height: 1.3;
+
+                    span {
+                        display: block;
+                    }
+
+                    .message-title {
+                        font-family: $font-alt;
+                        font-weight: 600;
+                        font-size: 1.2rem;
+                        color: $dark-text;
+                    }
+
+                    .sender-email {
+                        font-family: $font;
+                        color: $light-text;
+                        font-size: .95rem;
+                    }
+                }
+
+                .attachments {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-left: auto;
+                    margin-right: 12px;
+                    font-size: 1.2rem;
+
+                    i {
+                        color: $light-text;
+                    }
+
+                    svg {
+                        stroke: $light-text;
+                        height: 16px;
+                        width: 16px;
+                    }
+
+                    span {
+                        font-family: $font;
+                        font-weight: 600;
+                        display: block;
+                        margin-left: 4px;
+                    }
+                }
+
+                .inbox-close-details-mobile {
+                    display: none;
+                }
+            }
+
+            .message-wrapper {
+                position: relative;
+                height: calc(100% - 80px);
+                width: 100%;
+                overflow-y: auto;
+                background: #f4f6fb;
+
+                .message-inner {
+                    padding: 20px;
+                    background: $white;
+                    border-bottom: 1px solid $fade-grey;
+
+                    .message-head {
+                        display: flex;
+                        align-items: center;
+                        padding-bottom: 16px;
+                        border-bottom: 1px solid $fade-grey;
+
+                        .info {
+                            span {
+                                display: block;
+
+                                &:first-child {
+                                    font-family: $font-alt;
+                                    font-size: .95rem;
+                                    font-weight: 600;
+                                    color: $dark-text;
+                                }
+
+                                &:nth-child(2) {
+                                    font-family: $font;
+                                    font-size: .9rem;
+                                    color: $light-text;
+                                }
+                            }
+                        }
+
+                        .message-actions {
+                            margin-left: auto;
+                            display: flex;
+                            align-items: center;
+                        }
+                    }
+
+                    .mail-content {
+                        padding: 40px 60px 30px 60px;
+                        font-family: 'Roboto', sans-serif;
+                    }
+                }
+
+                .attachments-list {
+                    padding: 0 60px 30px 60px;
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+
+                    .attachment {
+                        display: flex;
+                        align-items: center;
+                        padding: 6px 6px 6px 16px;
+                        margin: 0 6px 6px 6px;
+                        border: 1px solid $fade-grey;
+                        background: $white;
+                        border-radius: 100px;
+                        cursor: pointer;
+                        transition: all .3s;
+
+                        &:hover {
+                            border-color: $secondary;
+                            box-shadow: $light-box-shadow;
+
+                            .download-icon {
+                                transform: rotate(360deg);
+                                background: $secondary;
+                                border-color: $secondary;
+                                box-shadow: $secondary-box-shadow;
+
+                                i {
+                                    color: $white;
+                                }
+
+                                svg {
+                                    stroke: $white;
+                                }
+                            }
+                        }
+
+                        span {
+                            display: block;
+                            margin-right: 8px;
+                            font-size: .95rem;
+                            font-weight: 500;
+                            color: $dark-text;
+                            transition: all .3s;
+                        }
+
+                        .download-icon {
+                            height: 24px;
+                            width: 24px;
+                            border: 1px solid $fade-grey;
+                            border-radius: 50%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            transition: all .3s;
+
+                            i {
+                                font-size: 12px;
+                                transition: color .3s;
+                            }
+
+                            svg {
+                                height: 16px;
+                                width: 16px;
+                            }
+                        }
+                    }
+                }
+
+                .reply-box-wrap {
+                    position: relative;
+                    padding: 40px 30px 30px 30px;
+
+                    .reply-bubble {
+                        position: relative;
+                        padding: 20px;
+                        border: 1px solid darken($fade-grey, 5%);
+                        border-radius: 6px;
+                        background: $white;
+                        width: 100%;
+
+                        &:after, &:before {
+                            bottom: 100%;
+                            left: 6%;
+                            border: solid transparent;
+                            content: " ";
+                            height: 0;
+                            width: 0;
+                            position: absolute;
+                            pointer-events: none;
+                        }
+
+                        &:after {
+                            border-color: rgba(255, 255, 255, 0);
+                            border-bottom-color: #fff;
+                            border-width: 16px;
+                            margin-left: -16px;
+                        }
+
+                        &:before {
+                            border-color: rgba(237, 237, 237, 0);
+                            border-bottom-color: #e0e0e0;
+                            border-width: 17px;
+                            margin-left: -17px;
+                        }
+
+                        .reply-as {
+                            display: flex;
+                            align-items: center;
+
+                            img {
+                                display: block;
+                                height: 32px;
+                                width: 32px;
+                                border-radius: 50%;
+                            }
+
+                            .reply-details {
+                                margin-left: 12px;
+
+                                span {
+                                    display: block;
+
+                                    &:first-child {
+                                        color: $dark-text;
+                                        font-family: $font-alt;
+                                        font-weight: 600;
+                                    }
+
+                                    &:nth-child(2) {
+                                        font-family: $font;
+                                        color: $light-text;
+                                    }
+                                }
+                            }
+
+                            .dropdown {
+                                margin-left: auto;
+                            }
+                        }
+
+                        .control {
+                            position: relative;
+                            margin-top: 16px;
+
+                            .textarea {
+                                box-shadow: none;
+                                padding-bottom: 52px;
+                                border: none;
+                            }
+
+                            .button {
+                                position: absolute;
+                                height: 38px;
+                                bottom: 8px;
+                                right: 8px;
+                                background: $secondary;
+                                border-color: $secondary;
+                                color: $smoke-white;
+                                font-weight: 500;
+
+                                &:hover {
+                                    box-shadow: $secondary-box-shadow;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+1. Inbox V1 Layout Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .inbox-wrapper {
+            .wrapper-inner {
+                .inbox-sidebar {
+                    border-right: none;
+
+                    .header-area {
+                        background: $dark-sidebar;
+                        border-color: lighten($dark-sidebar, 12%);
+
+                        .inbox-title {
+                            color: $dark-dark-text;
+                        }
+                    }
+
+                    .sidebar-inner {
+                        background: lighten($dark-sidebar, 4%);
+                        border-color: lighten($dark-sidebar, 12%);
+
+                        .inner-menu {
+                            border-color: lighten($dark-sidebar, 12%);
+
+                            .compose-button {
+                                background: $accent !important;
+                                border-color: $accent !important;
+                                color: $smoke-white !important;
+
+                                &:hover {
+                                    box-shadow: $accent-box-shadow;
+                                }
+                            }
+
+                            .inbox-menu {
+                                ul li a {
+                                    &.is-active {
+                                        background: lighten($dark-sidebar, 8%);
+
+                                        span {
+                                            color: $smoke-white;
+                                        }
+
+                                        svg {
+                                            stroke: $accent;
+                                        }
+
+                                        .tag {
+                                            background: $secondary !important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .scroll-menu {
+                            border-color: lighten($dark-sidebar, 12%);
+
+                            .title-wrap {
+                                h3 {
+                                    color: $dark-dark-text;
+                                }
+
+                                .search-button, .cancel-search-button {
+                                    background: none !important;
+                                }
+                            }
+
+                            .contact-list {
+                                .contact-block {
+                                    &:hover {
+                                        background: lighten($dark-sidebar, 8%);
+                                    }
+
+                                    .contact-meta {
+                                        span {
+                                            &:first-child {
+                                                color: $dark-dark-text;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .inbox-messages {
+                    border-color: lighten($dark-sidebar, 12%);
+                    border-left: 1px solid lighten($dark-sidebar, 12%) !important;
+
+                    .header-area {
+                        background: $dark-sidebar;
+                        border-color: lighten($dark-sidebar, 12%);
+                    }
+
+                    .messages-list {
+                        background: lighten($dark-sidebar, 4%);
+
+                        .inbox-message {
+                            border-color: lighten($dark-sidebar, 12%);
+
+                            &.is-selected {
+                                background: lighten($dark-sidebar, 8%);
+                            }
+
+                            .message-meta {
+                                span {
+                                    &:first-child, &.subject {
+                                        color: $dark-dark-text;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .inbox-message-details {
+                    border-color: lighten($dark-sidebar, 12%);
+
+                    .header-area {
+                        background: $dark-sidebar;
+                        border-color: lighten($dark-sidebar, 12%);
+
+                        .message-meta {
+                            span {
+                                &:first-child {
+                                    color: $dark-dark-text;
+                                }
+                            }
+                        }
+
+                        .attachments {
+                            span {
+                                color: $dark-dark-text;
+                            }
+                        }
+                    }
+
+                    .message-wrapper {
+                        background: lighten($dark-sidebar, 14%);
+
+                        .message-inner {
+                            background: lighten($dark-sidebar, 4%);
+                            border-color: lighten($dark-sidebar, 12%);
+
+                            .message-head {
+                                border-color: lighten($dark-sidebar, 12%);
+
+                                .info {
+                                    span {
+                                        &:first-child {
+                                            color: $dark-dark-text;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .attachments-list {
+                                .attachment {
+                                    background: lighten($dark-sidebar, 2%);
+                                    border-color: lighten($dark-sidebar, 12%);
+
+                                    span {
+                                        color: $dark-dark-text;
+                                    }
+
+                                    .download-icon {
+                                        border-color: lighten($dark-sidebar, 8%);
+
+                                        svg {
+                                            stroke: $smoke-white;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .reply-box-wrap {
+                            .reply-bubble {
+                                background-color: lighten($dark-sidebar, 2%);
+                                border-color: lighten($dark-sidebar, 4%);
+
+                                &:before, &:after {
+                                    border-bottom-color: lighten($dark-sidebar, 2%) !important;
+                                }
+
+                                .reply-as {
+                                    .reply-details {
+                                        span {
+                                            &:first-child {
+                                                color: $dark-dark-text;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .control {
+                                    .button {
+                                        background: $secondary;
+                                        border-color: $secondary;
+                                        color: $smoke-white;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+1. Inbox action
+========================================================================== */
+
+.inbox-action {
+    height: 36px;
+    width: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: none;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    transition: all .3s;
+
+    &:hover {
+        border-color: darken($fade-grey, 4%);
+        box-shadow: $light-box-shadow;
+
+        svg {
+            stroke: $primary;
+        }
+    }
+
+    &.is-checked {
+        border-color: darken($fade-grey, 3%);
+        box-shadow: $light-box-shadow;
+    }
+
+    svg {
+        height: 16px;
+        width: 16px;
+        stroke-width: 1.6px;
+        stroke: $light-text;
+    }
+
+    i {
+        padding: 0;
+        transition: color .3s;
+    }
+}
+
+/* ==========================================================================
+1. Inbox action Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .inbox-action {
+            &:hover {
+                background: lighten($dark-sidebar, 2%);
+                border-color: lighten($dark-sidebar, 12%);
+
+                svg {
+                    stroke: $accent;
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+2. Dropdown
+========================================================================== */
+
+.inbox-dropdown {
+    div > .button {
+        height: 36px;
+        width: 36px;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: none !important;
+        border-radius: 50%;
+        background: transparent;
+        border: 1px solid transparent;
+
+        &:hover {
+            border-color: darken($fade-grey, 4%);
+            box-shadow: $light-box-shadow !important;
+        }
+
+        i {
+            padding: 0;
+        }
+
+        svg {
+            height: 16px;
+            width: 16px;
+            stroke: $light-text;
+        }
+    }
+
+    .dropdown-menu {
+        width: 180px;
+
+        .dropdown-item {
+            display: flex;
+            align-items: center;
+            font-size: 1rem;
+            font-family: $font;
+            margin-bottom: 4px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+
+            i {
+                color: $light-text;
+            }
+
+            svg {
+                height: 16px;
+                width: 16px;
+                stroke: $light-text;
+            }
+
+            span {
+                margin-left: 12px;
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+1. Dropdown Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .inbox-dropdown {
+            &:hover {
+                div > .button {
+                    background: lighten($dark-sidebar, 2%) !important;
+                    border-color: lighten($dark-sidebar, 12%) !important;
+                }
+            }
+
+            div > .button {
+                background: transparent !important;
+                border-color: transparent !important;
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+3. Compose Panel
+========================================================================== */
+
+.compose-panel {
+    position: fixed;
+    top: 65px;
+    right: 0;
+    height: calc(100% - 65px);
+    width: calc(48% - 40px);
+    background: $white;
+    border-left: 1px solid $fade-grey;
+    z-index: 10;
+    transform: translateX(100%);
+    transition: all .3s;
+
+    &.is-active {
+        transform: translateX(0);
+    }
+
+    .header-area {
+        height: 80px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid darken($fade-grey, 3%);
+        padding: 0 20px;
+
+        .panel-title {
+            font-family: $font;
+            font-size: 1.4rem;
+            color: $dark-text;
+        }
+
+        .dropdown {
+            margin-left: 6px;
+        }
+
+        .inbox-action {
+            margin-left: auto;
+        }
+    }
+
+    .panel-inner {
+        position: relative;
+        height: calc(100% - 80px);
+        width: 100%;
+        overflow-y: auto;
+        padding: 60px;
+
+        .field-wrap {
+            width: 100%;
+            margin-bottom: 20px;
+
+            .field {
+                position: relative;
+                display: flex;
+                align-items: center;
+
+                label {
+                    display: block;
+                    font-weight: 600;
+                    font-size: 1.1rem;
+                    text-align: right;
+                    color: $dark-text;
+                    margin-right: 20px;
+                    min-width: 60px;
+                }
+
+                .control {
+                    position: relative;
+                    width: 100%;
+
+                    .compose-input {
+                        height: 38px;
+                        font-size: 1.1rem;
+                    }
+
+                    .textarea {
+                        font-size: 1.1rem;
+                        box-shadow: none !important;
+                        padding-bottom: 54px;
+                    }
+
+                    .send-button {
+                        position: absolute;
+                        height: 38px;
+                        bottom: 8px;
+                        right: 8px;
+                        background: $secondary;
+                        border-color: $secondary;
+                        color: $smoke-white;
+                        font-weight: 500;
+
+                        &:hover {
+                            box-shadow: $secondary-box-shadow;
+                        }
+                    }
+
+                    .attach-button {
+                        position: absolute;
+                        height: 38px;
+                        width: 38px;
+                        bottom: 8px;
+                        left: 16px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background: $white;
+                        border: 1px solid darken($fade-grey, 3%);
+                        border-radius: 50%;
+                        transition: all .3s;
+
+                        &:hover {
+                            box-shadow: $light-box-shadow;
+                            border-color: $dark-text;
+                        }
+
+                        i {
+                            font-size: 16px;
+                            color: $dark-text;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+4. Media Queries
+========================================================================== */
+
+//Media queries
+@media (max-width: 767px) {
+    .inbox-hidden-mobile {
+        display: none !important;
+    }
+
+    .inbox-messages, .inbox-sidebar, .inbox-message-details, .inbox-message-overlay {
+        width: 100% !important;
+    }
+
+    .inbox-messages, .inbox-sidebar, .inbox-message-overlay {
+        left: 0 !important;
+    }
+
+    .inbox-sidebar {
+        transform: translateX(-100%);
+        z-index: 1 !important;
+        transition: all .3s !important;
+
+        &.mobile-active {
+            transform: translateX(0) !important;
+        }
+
+        .dropdown {
+            display: none !important;
+        }
+
+        .inbox-close-sidebar-mobile {
+            display: flex !important;
+        }
+    }
+
+    .inbox-messages {
+        .mobile-menu-action {
+            display: flex !important;
+
+            svg {
+                height: 22px;
+                width: 22px;
+            }
+        }
+
+        .check-all-action {
+            margin-right: 16px;
+        }
+
+        .inbox-message {
+            .pushed {
+                display: none;
+            }
+        }
+    }
+
+    .inbox-message-details {
+        left: 0 !important;
+        transform: translateX(100%);
+
+        &.mobile-active {
+            transform: translateX(0);
+        }
+
+        .header-area {
+            padding: 0 10px !important;
+
+            .sender-pic {
+                display: none !important;
+            }
+
+            .message-meta {
+                .message-title {
+                    font-size: 1rem !important;
+                }
+
+                .sender-email {
+                    font-size: .9rem !important;
+                }
+            }
+
+            .attachments {
+                font-size: 1rem !important;
+            }
+
+            .dropdown {
+                margin-left: auto !important;
+            }
+
+            .inbox-close-details-mobile {
+                display: flex !important;
+            }
+        }
+
+        .message-inner {
+            .message-head {
+                .info {
+                    font-size: .9rem;
+                }
+            }
+
+            .mail-content {
+                padding: 40px 20px 20px 20px !important;
+            }
+
+            .attachments-list {
+                .attachment {
+                    width: 100%;
+
+                    .download-icon {
+                        margin-left: auto !important;
+                    }
+                }
+            }
+        }
+
+        .reply-box-wrap {
+            padding-left: 10px !important;
+            padding-right: 10px !important;
+
+            .reply-bubble {
+                &:after, &:before {
+                    left: 16% !important;
+                }
+            }
+        }
+    }
+
+    .compose-panel {
+        width: 100% !important;
+
+        .panel-inner {
+            padding: 20px !important;
+
+            .field-wrap {
+                margin-bottom: 8px !important;
+
+                .field {
+                    display: block;
+
+                    label {
+                        text-align: left;
+                    }
+
+                    .textarea {
+                        max-height: 210px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Tablet portrait
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .inbox-hidden-mobile {
+        display: none !important;
+    }
+
+    .inbox-messages, .inbox-sidebar, .inbox-message-details, .inbox-message-overlay {
+        width: 100% !important;
+    }
+
+    .inbox-messages, .inbox-sidebar, .inbox-message-overlay {
+        left: 0 !important;
+    }
+
+    .inbox-sidebar {
+        transform: translateX(-100%);
+        z-index: 1 !important;
+        transition: all .3s !important;
+
+        &.mobile-active {
+            transform: translateX(0) !important;
+        }
+
+        .dropdown {
+            display: none !important;
+        }
+
+        .inbox-close-sidebar-mobile {
+            display: flex !important;
+        }
+    }
+
+    .inbox-messages {
+        .mobile-menu-action {
+            display: flex !important;
+        }
+    }
+
+    .inbox-message-details {
+        left: 0 !important;
+        transform: translateX(100%);
+
+        &.mobile-active {
+            transform: translateX(0);
+        }
+
+        .header-area {
+            padding: 0 10px !important;
+
+            .attachments {
+                font-size: 1rem !important;
+            }
+
+            .dropdown {
+                margin-left: auto !important;
+            }
+
+            .inbox-close-details-mobile {
+                display: flex !important;
+            }
+        }
+
+        .message-inner {
+            .message-head {
+                .info {
+                    font-size: .9rem;
+                }
+            }
+
+            .mail-content {
+                padding: 40px 20px 20px 20px !important;
+            }
+
+            .attachments-list {
+                .attachment {
+                    width: 100%;
+
+                    .download-icon {
+                        margin-left: auto !important;
+                    }
+                }
+            }
+        }
+
+        .reply-box-wrap {
+            padding-left: 10px !important;
+            padding-right: 10px !important;
+
+            .reply-bubble {
+                &:after, &:before {
+                    left: 5% !important;
+                }
+            }
+        }
+    }
+
+    .compose-panel {
+        width: calc(100% - 80px) !important;
+
+        .panel-inner {
+            padding: 60px !important;
+
+            .field-wrap {
+                margin-bottom: 8px !important;
+
+                .field {
+                    display: block;
+
+                    label {
+                        text-align: left;
+                    }
+
+                    .textarea {
+                        max-height: 210px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Tablet landscape
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .inbox-hidden-mobile {
+        display: none !important;
+    }
+
+    .inbox-sidebar {
+        width: 32% !important;
+        z-index: 1;
+    }
+
+    .inbox-messages {
+        width: 68% !important;
+        left: 32% !important;
+    }
+
+    .inbox-message-details, .inbox-message-overlay {
+        right: 0 !important;
+        left: unset !important;
+        width: 68% !important;
+        transform: translateX(100%);
+        transition: all .3s;
+
+        &.tablet-active {
+            transform: translateX(0) !important;
+        }
+    }
+
+    .inbox-message-details {
+        .header-area {
+            .dropdown {
+                margin-left: auto !important;
+            }
+
+            .inbox-close-details-mobile {
+                display: flex !important;
+            }
+        }
+    }
+
+    .compose-panel {
+        width: 63% !important;
+    }
+}

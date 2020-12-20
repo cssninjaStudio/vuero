@@ -1,0 +1,367 @@
+/*! _widgets-stats.scss | Huro | Css ninja 2020-2021 */
+
+/* ==========================================================================
+Stat Widgets Styles
+========================================================================== */
+
+/*
+    1. Stat Widget Base
+    2. Line / Area Chart Widget
+    3. Spark Tile Widget
+    4. Flex Stat Widget
+    5. Grouped Stat Widget
+    6. Followers Stat Widget
+*/
+
+/* ==========================================================================
+1. Stat Widget Base
+========================================================================== */
+
+.stat-widget {
+    @extend .l-card;
+
+    padding: 30px;
+    font-family: $font;
+
+    &.is-straight {
+        @extend .s-card;
+    }
+
+    .widget-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 32px;
+        margin-bottom: 10px;
+
+        h3 {
+            font-family: $font-alt;
+            font-size: 1rem;
+            font-weight: 600;
+            color: $dark-text;
+        }
+    }
+
+    .inner-list {
+        padding: 10px 0;
+
+        .inner-list-item {
+            + .inner-list-item {
+                margin-top: 24px;
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+2. Line / Area Chart Widget
+========================================================================== */
+
+.stat-widget {
+    &.line-stats-widget, &.area-stats-widget {
+        .line-stats, .area-stats {
+            display: flex;
+
+            .line-stat, .area-stat {
+                margin-right: 30px;
+                font-family: $font;
+
+                span {
+                    display: block;
+
+                    &:first-child {
+                        color: $light-text;
+                        font-size: .9rem;
+                    }
+
+                    &:nth-child(2) {
+                        color: $dark-text;
+                        font-size: 1.2rem;
+                        font-weight: 600;
+                    }
+
+                    &.current {
+                        color: $accent;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+3. Spark Tile Widget
+========================================================================== */
+
+.stat-widget {
+    &.spark-tile-widget {
+        padding: 0;
+    }
+}
+
+/* ==========================================================================
+4. Flex Stat Widget
+========================================================================== */
+
+.stat-widget {
+    &.flex-stat-widget {
+        .chart-media {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .meta {
+                margin-right: 30px;
+                align-items: center;
+                font-family: $font;
+
+                h4 {
+                    font-family: $font-alt;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    color: $dark-text;
+                }
+
+                span {
+                    display: block;
+                    color: $accent;
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                    margin-bottom: 8px;
+                }
+
+                p {
+                    font-size: .9rem;
+                }
+            }
+
+            .chart-container {
+                min-width: 110px;
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+5. Grouped Stat Widget
+========================================================================== */
+
+.stat-widget {
+    &.grouped-stat-widget {
+        .chart-group {
+            display: flex;
+
+            .group {
+                text-align: center;
+                width: 33.3%;
+
+                .chart-container {
+                    margin-top: -5px;
+
+                    &.is-gauge {
+                        margin-bottom: 30px;
+                    }
+                }
+
+                span {
+                    display: block;
+                    margin-top: -25px;
+                    font-family: $font;
+                    color: $dark-text;
+                    font-weight: 600;
+                    font-size: 1.2rem;
+                }
+
+                p {
+                    font-size: .9rem;
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+6. Followers Stat Widget
+========================================================================== */
+
+.stat-widget {
+    &.followers-stat-widget-v1 {
+        .follow-block {
+            display: flex;
+            align-items: center;
+
+            .follow-icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 50px;
+                width: 50px;
+                min-width: 50px;
+                border-radius: 50%;
+                background: $white;
+                color: $primary;
+                border: 1px solid darken($fade-grey, 3%);
+                box-shadow: $light-box-shadow;
+
+                &.is-squared {
+                    border-radius: 10px;
+                }
+
+                &.is-primary {
+                    background: $primary;
+                    border-color: $primary;
+                    box-shadow: $primary-box-shadow;
+                    color: $smoke-white;
+                }
+
+                svg {
+                    height: 18px;
+                    width: 18px;
+                }
+
+                i {
+                    font-size: 18px;
+                }
+            }
+
+            .follow-count {
+                margin-left: 12px;
+
+                span {
+                    display: block;
+
+                    &:first-child {
+                        font-family: $font-alt;
+                        font-size: 1.15rem;
+                        font-weight: 600;
+                        color: $dark-text;
+                    }
+
+                    &:nth-child(2) {
+                        font-size: .95rem;
+                        color: $light-text;
+                    }
+                }
+            }
+
+            .go-icon {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 36px;
+                width: 36px;
+                border-radius: 50%;
+                background: $widget-grey;
+                color: $light-text;
+                margin-left: auto;
+
+                &.is-squared {
+                    border-radius: 10px;
+                }
+
+                svg {
+                    height: 16px;
+                    width: 16px;
+                    stroke-width: 3px;
+                }
+            }
+        }
+    }
+}
+
+body {
+    &.is-dark {
+        .stat-widget {
+            &.followers-stat-widget-v1 {
+                .follow-block {
+                    .follow-icon:not(.is-primary) {
+                        background: lighten($dark-sidebar, 2%);
+                        border-color: lighten($dark-sidebar, 12%);
+                        color: $accent;
+                    }
+
+                    .follow-icon {
+                        &.is-primary {
+                            border-color: $accent;
+                            background: $accent;
+                        }
+                    }
+                }
+
+                .go-icon {
+                    background: lighten($dark-sidebar, 2%);
+                    border: 1px solid lighten($dark-sidebar, 12%);
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+7. Table Widget
+========================================================================== */
+
+.stat-widget {
+    &.table-widget-v1 {
+        .table {
+            margin-top: 1.5rem;
+
+            tbody {
+                tr, td {
+                    border: none;
+                }
+
+                tr {
+                    border-radius: 10px;
+                }
+
+                td {
+                    padding: 1em 0.75em;
+
+                    .double-line {
+                        line-height: 1.4;
+
+                        span {
+                            display: block;
+
+                            &:first-child {
+                                font-family: $font-alt;
+                                font-size: 1rem;
+                                font-weight: 600;
+                                color: $dark-text;
+                            }
+
+                            &:nth-child(2) {
+                                color: $light-text;
+                                font-size: .9rem;
+                            }
+                        }
+                    }
+
+                    .rating-wrap {
+                        text-align: right;
+
+                        span {
+                            color: $light-text;
+                        }
+
+                        .rating {
+                            i {
+                                color: darken($widget-grey, 8%);
+
+                                &.selected {
+                                    color: $h-yellow !important;
+                                }
+                            }
+                        }
+                    }
+
+                    .tag-wrap {
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+}

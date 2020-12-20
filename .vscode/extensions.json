@@ -6,5 +6,6 @@
     "syler.sass-indented",
     "stylelint.vscode-stylelint",
     "octref.vetur",
+    "antfu.iconify",
   ]
 }

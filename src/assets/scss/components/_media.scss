@@ -1,0 +1,113 @@
+/*! _media.scss | Huro | Css ninja 2020-2021 */
+
+/*
+    1. Light Gallery (Lightbox plugin)
+*/
+
+/* ==========================================================================
+1. Light Gallery (Lightbox plugin)
+========================================================================== */
+
+.light-gallery-wrap {
+    display: flex;
+    flex-wrap: wrap;
+
+    > a {
+        position: relative;
+        display: block;
+        margin: 8px;
+        max-width: calc(33.3% - 16px);
+        overflow: hidden;
+
+        &:hover {
+            .video-overlay {
+                background: rgba($dark-sidebar, 0.7);
+            }
+        }
+
+        .video-overlay {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background: rgba($dark-sidebar, .95);
+            background-size: cover;
+            border-radius: 18px;
+            transition: all .3s;
+            z-index: 1;
+        }
+
+        .video-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+
+            .button-inner {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: $primary;
+                color: $smoke-white;
+                height: 58px;
+                width: 58px;
+                border-radius: 50%;
+                z-index: 1;
+            }
+
+            &:after {
+                content: '';
+                position: absolute;
+                top: calc(50% - 12px);
+                left: calc(50% - 12px);
+                height: 24px;
+                width: 24px;
+                border-radius: 50%;
+                background: $primary;
+                animation: wave 1.6s infinite;
+                animation-duration: 2s;
+                transform-origin: center center;
+                z-index: 0;
+            }
+        }
+
+        img {
+            display: block;
+            border-radius: 18px;
+            width: 100%;
+            object-fit: cover;
+            height: 250px;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .light-gallery-wrap {
+        a {
+            max-width: calc(100% - 16px);
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    .light-gallery-wrap {
+        a {
+            max-width: calc(50% - 16px);
+
+            img {
+                height: 230px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .light-gallery-wrap {
+        a {
+            img {
+                height: 200px;
+            }
+        }
+    }
+}

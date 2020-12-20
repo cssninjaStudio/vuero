@@ -1,0 +1,318 @@
+/*! _charts.scss | Huro | Css Ninja 2020-2021 */
+
+/*
+    1. Apex Charts
+*/
+
+/* ==========================================================================
+1. Apex Charts
+========================================================================== */
+
+.apexcharts-title-text {
+    font-family: $font-alt !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    color: $dark-text;
+}
+
+.apexcharts-legend {
+    .apexcharts-legend-text {
+        font-family: $font !important;
+    }
+}
+
+.apexcharts-xaxis, .apexcharts-yaxis {
+    .apexcharts-xaxis-texts-g, .apexcharts-yaxis-texts-g {
+        .apexcharts-text {
+            font-family: $font !important;
+        }
+    }
+}
+
+.apexcharts-datalabels-group {
+    .apexcharts-text {
+        font-family: $font !important;
+        font-weight: 600;
+    }
+}
+
+body {
+    &.is-dark {
+        .apexcharts-title-text {
+            fill: $dark-dark-text !important;
+        }
+
+        .apexcharts-subtitle-text {
+            fill: $accent;
+        }
+
+        .apexcharts-yaxis {
+            .apexcharts-yaxis-texts-g {
+                .apexcharts-text, .apexcharts-yaxis-label {
+                    fill: $dark-dark-text;
+                }
+            }
+        }
+
+        .apexcharts-svg {
+            .apexcharts-inner, .apexcharts-graphical {
+                .apexcharts-xaxis {
+                    .apexcharts-xaxis-texts-g {
+                        .apexcharts-text, .apexcharts-xaxis-label {
+                            fill: $dark-dark-text;
+                        }
+                    }
+
+                    line {
+                        stroke: lighten($dark-sidebar, 12%);
+                    }
+                }
+
+                .apexcharts-grid {
+                    .apexcharts-gridlines-horizontal {
+                        .apexcharts-gridline {
+                            stroke: lighten($dark-sidebar, 12%);
+                        }
+                    }
+                }
+            }
+        }
+
+        .apexcharts-gridlines-vertical {
+            .apexcharts-gridline {
+                stroke: lighten($dark-sidebar, 12%);
+            }
+        }
+
+        .apexcharts-series-markers, .apexcharts-series-bubble {
+            .apexcharts-marker {
+                stroke: lighten($dark-sidebar, 2%);
+            }
+        }
+
+        .apexcharts-pie-area, .apexcharts-pie-slice-0 {
+            stroke: lighten($dark-sidebar, 12%);
+        }
+
+        .apexcharts-radialbar-area {
+            //stroke: lighten($dark-sidebar, 2%);
+       
+        }
+
+        .apexcharts-datalabels-group {
+            .apexcharts-text, .apexcharts-datalabel-value {
+                fill: $dark-dark-text;
+            }
+        }
+
+        .apexcharts-legend {
+            .apexcharts-legend-series {
+                .apexcharts-legend-text {
+                    color: $dark-dark-text !important;
+                }
+            }
+        }
+
+        .apexcharts-yaxis, .apexcharts-xaxis-inversed {
+            line {
+                stroke: lighten($dark-sidebar, 12%);
+            }
+        }
+
+        .apexcharts-radialbar-track, .apexcharts-track {
+            .apexcharts-radialbar-area {
+                stroke: lighten($dark-sidebar, 2%);
+            }
+        }
+
+        .apexcharts-radar-series, .apexcharts-plot-series {
+            > polygon, > line {
+                fill: none !important;
+                stroke: lighten($dark-sidebar, 12%);
+            }
+        }
+
+        .apexcharts-text, .apexcharts-yaxis-title-text {
+            fill: $dark-dark-text;
+            font-family: $font;
+            font-weight: 400;
+        }
+
+        .apexcharts-data-labels text {
+            fill: #fafafa;
+            font-family: $font;
+            font-weight: 400;
+        }
+
+        .apexcharts-bar-area {
+            stroke: lighten($dark-sidebar, 12%);
+        }
+
+        .apexcharts-slices {
+            .apexcharts-pie-label {
+                fill: #fafafa !important;
+            }
+        }
+
+        .apexcharts-tooltip {
+            box-shadow: 2px 2px 6px -4px $dark-sidebar !important;
+
+            &.apexcharts-theme-light {
+                border: 1px solid lighten($dark-sidebar, 12%);
+                background: lighten($dark-sidebar, 2%);
+                color: $dark-dark-text !important;
+
+                .apexcharts-tooltip-title {
+                    background: lighten($dark-sidebar, 2%);
+                    border-bottom: 1px solid lighten($dark-sidebar, 12%);
+                    color: $dark-dark-text;
+                }
+
+                .apexcharts-tooltip-text-value,
+                .apexcharts-tooltip-text-z-value,
+                .apexcharts-tooltip-series-group,
+                .apexcharts-tooltip-marker {
+                    color: $dark-dark-text !important;
+                }
+            }
+
+            * {
+                font-family: $font;
+                color: inherit;
+            }
+
+            .apexcharts-yaxistooltip-text {
+                color: $dark-dark-text !important;
+            }
+        }
+
+        .apexcharts-xaxistooltip {
+            border: 1px solid lighten($dark-sidebar, 12%);
+            background: lighten($dark-sidebar, 2%);
+            color: $dark-dark-text !important;
+
+            &.apexcharts-xaxistooltip-bottom:after {
+                border-bottom-color: lighten($dark-sidebar, 2%);
+            }
+
+            &.apexcharts-xaxistooltip-bottom:before {
+                border-bottom-color: lighten($dark-sidebar, 12%);
+            }
+
+            * {
+                font-family: $font;
+                color: inherit;
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+2. Billboard js
+========================================================================== */
+
+.bb-title {
+    font-family: $font-alt !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    color: $dark-text;
+}
+
+.bb-axis line, .bb-axis .domain {
+    stroke: darken($fade-grey, 4%);
+}
+
+.tick {
+    text tspan {
+        fill: darken($light-text, 5%);
+    }
+}
+
+body {
+    &.is-dark {
+        .bb-title {
+            fill: $dark-dark-text !important;
+        }
+
+        .bb-axis line, .bb-axis .domain {
+            stroke: lighten($dark-sidebar, 20%) !important;
+        }
+
+        .bb-legend {
+            .bb-legend-background rect {
+                fill: darken($dark-sidebar, 2%) !important;
+                stroke: lighten($dark-sidebar, 12%) !important;
+            }
+
+            .bb-legend-item {
+                text {
+                    fill: $dark-dark-text;
+                }
+            }
+        }
+
+        .bb-chart-arc path {
+            stroke: lighten($dark-sidebar, 12%) !important;
+        }
+
+        .bb-chart-arcs .bb-chart-arcs-background {
+            stroke: lighten($dark-sidebar, 10%) !important;
+            fill: darken($dark-sidebar, 2%) !important;
+        }
+
+        .bb-chart-arcs-title, .bb-gauge-value, .bb-axis text {
+            fill: $dark-dark-text;
+        }
+
+        .bb-tooltip {
+            border: 1px solid lighten($dark-sidebar, 10%) !important;
+
+            //background-color: #fff;
+
+            th {
+                border-color: lighten($dark-sidebar, 10%) !important;
+                background-color: darken($dark-sidebar, 2%) !important;
+                color: #fffdfd !important;
+                font-family: $font !important;
+                font-weight: 400 !important;
+
+                span {
+                    font-family: $font !important;
+                    font-weight: 400 !important;
+                    color: #fffdfd !important;
+                }
+            }
+
+            tr {
+                border-color: lighten($dark-sidebar, 10%) !important;
+            }
+
+            td {
+                background-color: darken($dark-sidebar, 2%) !important;
+                border-color: lighten($dark-sidebar, 10%) !important;
+                color: $light-text !important;
+
+                > span, > svg {
+                    color: #fffdfd !important;
+                    border-color: lighten($dark-sidebar, 10%) !important;
+                    fill: $white !important;
+                    stroke: $white !important;
+                }
+            }
+
+            .bb-tooltip-title {
+                color: #fffdfd !important;
+            }
+
+            .bb-tooltip-detail {
+                .bb-tooltip-name, .bb-tooltip-value {
+                    color: #fffdfd !important;
+
+                    span {
+                        color: #fffdfd !important;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -24,13 +24,16 @@ export default MessagingToolbar
     </div>
 
     <a class="toolbar-link right-panel-trigger" data-panel="languages-panel">
-      <img src="assets/img/icons/flags/united-states-of-america.svg" alt="" />
+      <img
+        src="/src/assets/images/icons/flags/united-states-of-america.svg"
+        alt=""
+      />
     </a>
 
     <div class="toolbar-notifications is-hidden-mobile">
       <div class="dropdown is-spaced is-dots is-right dropdown-trigger">
         <div class="is-trigger" aria-haspopup="true">
-          <i data-feather="bell"></i>
+          <Icon icon="feather:bell" />
           <span class="new-indicator pulsate"></span>
         </div>
         <div class="dropdown-menu" role="menu">
@@ -55,7 +58,7 @@ export default MessagingToolbar
                       class="user-photo"
                       alt=""
                       src="https://via.placeholder.com/150x150"
-                      data-demo-src="assets/img/avatars/photos/7.jpg"
+                      data-demo-src="/src/assets/images/avatars/photos/7.jpg"
                     />
                   </div>
                   <div class="user-content">
@@ -73,7 +76,7 @@ export default MessagingToolbar
                       class="user-photo"
                       alt=""
                       src="https://via.placeholder.com/150x150"
-                      data-demo-src="assets/img/avatars/photos/12.jpg"
+                      data-demo-src="/src/assets/images/avatars/photos/12.jpg"
                     />
                   </div>
                   <div class="user-content">
@@ -91,7 +94,7 @@ export default MessagingToolbar
                       class="user-photo"
                       alt=""
                       src="https://via.placeholder.com/150x150"
-                      data-demo-src="assets/img/avatars/photos/13.jpg"
+                      data-demo-src="/src/assets/images/avatars/photos/13.jpg"
                     />
                   </div>
                   <div class="user-content">
@@ -109,7 +112,7 @@ export default MessagingToolbar
                       class="user-photo"
                       alt=""
                       src="https://via.placeholder.com/150x150"
-                      data-demo-src="assets/img/avatars/photos/25.jpg"
+                      data-demo-src="/src/assets/images/avatars/photos/25.jpg"
                     />
                   </div>
                   <div class="user-content">
@@ -127,7 +130,7 @@ export default MessagingToolbar
     </div>
 
     <a id="hide-chat-side" class="toolbar-link">
-      <i data-feather="chevron-right"></i>
+      <Icon icon="feather:chevron-right" />
     </a>
   </div>
 </template>

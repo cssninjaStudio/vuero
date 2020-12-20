@@ -26,7 +26,7 @@ export default NavbarElementsDropdown
       >
         <span>Elements</span>
         <span class="caret">
-          <i data-feather="chevron-down"></i>
+          <Icon icon="feather:chevron-down" />
         </span>
       </button>
     </div>
@@ -62,7 +62,7 @@ export default NavbarElementsDropdown
         <div class="content-wrap is-hidden">
           <button class="button is-circle back-button">
             <span class="icon is-small">
-              <i data-feather="arrow-left"></i>
+              <Icon icon="feather:arrow-left" />
             </span>
           </button>
 
@@ -74,7 +74,7 @@ export default NavbarElementsDropdown
             <div class="column is-4">
               <div class="dropdown-item-group">
                 <h4 class="column-heading is-info">
-                  <i data-feather="circle"></i>
+                  <Icon icon="feather:circle" />
                   <span>General</span>
                 </h4>
 
@@ -160,7 +160,7 @@ export default NavbarElementsDropdown
             <div class="column is-4">
               <div class="dropdown-item-group">
                 <h4 class="column-heading is-green">
-                  <i data-feather="circle"></i>
+                  <Icon icon="feather:circle" />
                   <span>Basic UI</span>
                 </h4>
 
@@ -213,7 +213,7 @@ export default NavbarElementsDropdown
             <div class="column is-4">
               <div class="dropdown-item-group">
                 <h4 class="column-heading is-orange">
-                  <i data-feather="circle"></i>
+                  <Icon icon="feather:circle" />
                   <span>Advanced UI</span>
                 </h4>
 
@@ -283,7 +283,7 @@ export default NavbarElementsDropdown
             <div class="column is-4">
               <div class="dropdown-item-group">
                 <h4 class="column-heading is-purple">
-                  <i data-feather="circle"></i>
+                  <Icon icon="feather:circle" />
                   <span>Inputs</span>
                 </h4>
 
@@ -329,7 +329,7 @@ export default NavbarElementsDropdown
             <div class="column is-4">
               <div class="dropdown-item-group">
                 <h4 class="column-heading is-secondary">
-                  <i data-feather="circle"></i>
+                  <Icon icon="feather:circle" />
                   <span>Selects</span>
                 </h4>
 
@@ -375,7 +375,7 @@ export default NavbarElementsDropdown
             <div class="column is-4">
               <div class="dropdown-item-group">
                 <h4 class="column-heading is-success">
-                  <i data-feather="circle"></i>
+                  <Icon icon="feather:circle" />
                   <span>Toggles</span>
                 </h4>
 

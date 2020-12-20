@@ -1,0 +1,1061 @@
+/*! _messaging-webapp.scss | Huro | Css ninja 2020-2021 */
+
+/* ==========================================================================
+Messaging
+========================================================================== */
+
+/*
+    1. Variables / Wrapper / Header
+    2. Wrapper / Header Dark mode
+    3. Chat Conversations
+    4. Chat Conversations Dark mode
+    5. Chat messages
+    6. Chat Messages Dark mode
+    7. Chat Details
+    8. Chat Details Dark mode
+    9. Media Queries
+*/
+
+/* ==========================================================================
+1. Variables / Wrapper / Header
+========================================================================== */
+
+$theme-bg-color: $white;
+$input-bg: #f8f8fa;
+$input-chat-color: #a2a2a2;
+$border-color: #eef2f4;
+$body-color: #273346;
+$chat-text-bg: #f1f2f6;
+$msg-date: #c0c7d2;
+$msg-hover-bg: rgba(238, 242, 244, 0.4);
+$active-conversation-bg: linear-gradient(to right, rgba(238, 242, 244, 0.4) 0%, rgba(238, 242, 244, 0) 100%);
+$overlay-bg: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 65%, rgba(255, 255, 255, 1) 100%);
+$overlay-bg-dark: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba($dark-sidebar, 1) 65%, rgba($dark-sidebar, 1) 100%);
+
+
+.chat-app-wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: $theme-bg-color;
+    max-width: 1600px;
+    height: 100vh;
+    margin: 0 auto;
+    overflow: hidden;
+
+    .chat-app-header {
+        height: 80px;
+        min-height: 80px;
+        width: 100%;
+        border-bottom: 1px solid $border-color;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+
+        .logo {
+            width: 38px;
+            flex-shrink: 0;
+        }
+
+        .search-bar {
+            height: 80px;
+            flex-grow: 2;
+            z-index: 3;
+            position: relative;
+            margin-left: 280px;
+
+            .field {
+                height: 100%;
+                width: 100%;
+
+                .control {
+                    height: 100%;
+                    width: 100%;
+
+                    .form-icon {
+                        height: 80px;
+                        width: 80px;
+
+                        svg {
+                            height: 20px;
+                            width: 20px;
+                        }
+                    }
+
+                    .input {
+                        height: 100%;
+                        width: 100%;
+                        display: block;
+                        background-color: transparent;
+                        border: none;
+                        color: $body-color;
+                        font-family: $font;
+                        font-weight: 500;
+                        font-size: 15px;
+                        padding-left: 80px;
+                        padding-right: 80px;
+
+                        &:focus {
+                            box-shadow: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        .user-settings {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            margin-left: auto;
+            flex-shrink: 0;
+
+            & > * + * {
+                margin-left: 14px;
+            }
+
+            .user-dropdown {
+                .is-trigger {
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    cursor: pointer;
+
+                    .profile-avatar {
+                        position: relative;
+
+                        .avatar {
+                            display: block;
+                            width: 38px;
+                            height: 38px;
+                            border-radius: 50%;
+                        }
+
+                        .badge {
+                            position: absolute;
+                            right: -8px;
+                            bottom: 0;
+                            width: 20px;
+                            height: 20px;
+                            border: 2px solid $white;
+                            border-radius: 50%;
+                        }
+                    }
+
+                    svg {
+                        margin-left: 3px;
+                        width: 18px;
+                        height: 18px;
+                        stroke: $light-text;
+                        transition: all .3s;
+                    }
+                }
+
+                .dropdown-menu {
+                    top: 52px;
+                    border: 1px solid darken($fade-grey, 3%);
+                    box-shadow: $light-box-shadow;
+                    border-radius: 8px;
+                    padding-top: 0;
+                    width: 180px;
+                    overflow: hidden;
+
+                    .dropdown-item {
+                        display: flex;
+                        align-items: center;
+                        font-family: $font;
+                        font-size: .9rem;
+                        padding: 8px 12px;
+                        color: $light-text;
+
+                        svg {
+                            margin-right: 8px;
+                            height: 16px;
+                            width: 16px;
+                            stroke: $light-text;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+2. Wrapper / Header Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .chat-app-wrapper {
+            .chat-app-header {
+                background: darken($dark-sidebar, 2%);
+                border-color: lighten($dark-sidebar, 2%);
+
+                .search-bar {
+                    .field {
+                        .control {
+                            .input {
+                                color: $dark-dark-text;
+                            }
+                        }
+                    }
+                }
+
+                .user-settings {
+                    .user-dropdown {
+                        .dropdown-menu {
+                            border-color: lighten($dark-sidebar, 12%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+3. Chat Conversations
+========================================================================== */
+
+.chat-app-wrapper {
+    .wrapper {
+        width: 100%;
+        display: flex;
+        flex-grow: 1;
+        overflow: hidden;
+
+        .conversation-area {
+            border-right: 1px solid $border-color;
+            overflow-y: auto;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            width: 340px;
+            flex-shrink: 0;
+
+            .overlay {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                flex-shrink: 0;
+                background: $overlay-bg;
+                height: 80px;
+            }
+
+            .conversation {
+                display: flex;
+                align-items: center;
+                max-width: 100%;
+                padding: 20px;
+                cursor: pointer;
+                transition: 0.2s;
+                position: relative;
+
+                &:hover {
+                    background-color: $msg-hover-bg;
+                }
+
+                &.active {
+                    background: $active-conversation-bg;
+                    border-left: 4px solid $primary;
+
+                    .conversation-detail {
+                        .conversation-username {
+                            font-weight: 600;
+                        }
+                    }
+                }
+
+                .h-avatar {
+                    margin-right: 12px;
+                }
+
+                .conversation-detail {
+                    overflow: hidden;
+                    font-family: $font;
+
+                    .conversation-username {
+                        font-family: $font-alt;
+                        color: $dark-text;
+                        font-weight: 500;
+                        font-size: .95rem;
+                    }
+
+                    .conversation-content {
+                        font-weight: 500;
+                        font-size: .9rem;
+                        display: flex;
+
+                        .conversation-message {
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            color: $light-text;
+                            max-width: 170px;
+                        }
+
+                        .conversation-date {
+                            font-size: .9rem;
+                            color: $light-text;
+                            margin-left: 4px;
+
+                            &:before {
+                                content: "•";
+                                margin-right: 2px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+4. Chat Conversations Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .chat-app-wrapper {
+            .wrapper {
+                .conversation-area {
+                    background: lighten($dark-sidebar, 4%);
+                    border-color: lighten($dark-sidebar, 12%);
+
+                    .overlay {
+                        background: $overlay-bg-dark;
+                    }
+
+                    .conversation {
+                        &:hover {
+                            background: lighten($dark-sidebar, 6%);
+                        }
+
+                        &.active {
+                            background: lighten($dark-sidebar, 1%);
+                            border-color: $accent;
+                        }
+
+                        .conversation-detail {
+                            .conversation-username {
+                                color: $dark-dark-text;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+5. Chat messages
+========================================================================== */
+
+.chat-app-wrapper {
+    .wrapper {
+        .chat-area {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            min-height: calc(100vh - 80px);
+            overflow-y: auto;
+            overflow-x: hidden !important;
+            flex-grow: 1;
+
+            .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                flex-shrink: 0;
+                background: $overlay-bg;
+                height: 80px;
+            }
+
+            .chat-area-content {
+                display: none;
+                padding-bottom: 80px;
+                animation: fadeInLeft .5s;
+
+                &.is-active {
+                    display: block;
+                }
+            }
+
+            .chat-area-header {
+                display: flex;
+                position: sticky;
+                top: 0;
+                left: 0;
+                z-index: 2;
+                width: 100%;
+                align-items: center;
+                padding: 20px;
+                background: $white;
+
+                .trigger {
+                    padding: 8px;
+                    margin-right: 6px;
+                    border: none;
+                    background: none;
+                    outline: none;
+
+                    svg {
+                        height: 20px;
+                        width: 20px;
+                    }
+                }
+
+                .chat-area-group {
+                    flex-shrink: 0;
+                    display: flex;
+                    margin-left: auto;
+
+                    * {
+                        border: 2px solid $white;
+                    }
+
+                    * + * {
+                        margin-left: -5px;
+                    }
+
+                    > span {
+                        width: 32px;
+                        height: 32px;
+                        background-color: lighten($primary, 48%);
+                        color: $primary;
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: .9rem;
+                        font-weight: 500;
+
+                        span {
+                            position: relative;
+                            top: -1px;
+                            left: -1px;
+                            line-height: 1;
+                            display: block;
+                            text-align: center;
+                            margin: 0;
+                            border: none;
+                        }
+                    }
+                }
+
+                .chat-area-profile {
+                    width: 32px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+
+                .chat-area-title {
+                    font-size: 1.1rem;
+                    font-family: $font-alt;
+                    color: $dark-text;
+                    font-weight: 700;
+                }
+            }
+
+            .chat-area-main {
+                flex-grow: 1;
+
+                .chat-msg-img {
+                    height: 40px;
+                    width: 40px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+
+                .chat-msg-profile {
+                    flex-shrink: 0;
+                    margin-top: auto;
+                    margin-bottom: -20px;
+                    position: relative;
+                }
+
+                .chat-msg-date {
+                    position: absolute;
+                    left: calc(100% + 12px);
+                    bottom: 0;
+                    font-size: 12px;
+                    font-family: $font;
+                    font-weight: 500;
+                    color: $msg-date;
+                    white-space: nowrap;
+                }
+
+                .chat-msg {
+                    display: flex;
+                    padding: 0 20px 45px;
+
+                    .chat-msg-content {
+                        margin-left: 12px;
+                        max-width: 50%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                    }
+
+                    .chat-msg-text {
+                        background-color: $chat-text-bg;
+                        padding: 15px;
+                        border-radius: 20px 20px 20px 0;
+                        line-height: 1.5;
+                        font-family: $font;
+                        font-size: .95rem;
+                        font-weight: 500;
+
+                        + .chat-msg-text {
+                            margin-top: 10px;
+                        }
+                    }
+                }
+
+                .chat-msg-text {
+                    color: var(--chat-text-color);
+                }
+
+                .owner {
+                    flex-direction: row-reverse;
+
+                    .chat-msg-content {
+                        margin-left: 0;
+                        margin-right: 12px;
+                        align-items: flex-end;
+                    }
+
+                    .chat-msg-text {
+                        background-color: $primary;
+                        color: $white;
+                        border-radius: 20px 20px 0 20px;
+                    }
+
+                    .chat-msg-date {
+                        left: auto;
+                        right: calc(100% + 12px);
+                    }
+                }
+
+                .chat-msg-text img {
+                    max-width: 300px;
+                    border-radius: 10px;
+                    width: 100%;
+                }
+            }
+
+            .chat-area-footer {
+                display: flex;
+                border-top: 1px solid $border-color;
+                width: 100%;
+                padding: 10px 20px;
+                align-items: center;
+                background-color: $theme-bg-color;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                width: calc(100% - 680px);
+                overflow-x: hidden;
+                bottom: 0;
+                left: 0;
+
+                input {
+                    border: 1px solid transparent;
+                    outline: none;
+                    color: $body-color;
+                    background-color: $input-bg;
+                    padding: 12px;
+                    border-radius: 6px;
+                    font-size: 15px;
+                    margin: 0 12px;
+                    width: 100%;
+                    transition: all .3s;
+
+                    &::placeholder {
+                        color: $input-chat-color;
+                    }
+
+                    &:focus {
+                        background: $white;
+                        border-color: darken($fade-grey, 3%);
+                        box-shadow: $light-box-shadow;
+                    }
+                }
+
+                .add-content {
+                    &:hover {
+                        > div {
+                            .button {
+                                background: $fade-grey;
+
+                                svg {
+                                    stroke: $primary;
+                                }
+                            }
+                        }
+                    }
+
+                    > div {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 42px;
+                        height: 42px;
+                    }
+
+                    .button {
+                        width: 28px;
+                        height: 28px;
+                        border-radius: 50%;
+                        border: none;
+                        padding: 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        transition: all .3s;
+
+                        svg {
+                            stroke: $placeholder;
+                            stroke-width: 2px;
+                            height: 18px;
+                            width: 18px;
+                            transition: all .3s;
+                        }
+                    }
+
+                    .dropdown-content {
+                        a {
+                            display: flex;
+                            align-items: center;
+
+                            svg {
+                                height: 18px;
+                                width: 18px;
+                                stroke: $muted-grey;
+                            }
+
+                            .meta {
+                                margin-left: 12px;
+
+                                span {
+                                    display: block;
+
+                                    &:first-child {
+                                        font-size: .9rem;
+                                        font-weight: 500;
+                                        color: $dark-text;
+                                    }
+
+                                    &:nth-child(2) {
+                                        font-size: .9rem;
+                                        color: $muted-grey;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .add-emoji {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 28px;
+                    height: 42px;
+
+                    &:hover {
+                        .button {
+                            background: $fade-grey;
+
+                            svg {
+                                stroke: $primary;
+                            }
+                        }
+                    }
+
+                    .button {
+                        width: 28px;
+                        height: 28px;
+                        border-radius: 50%;
+                        border: none;
+                        padding: 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        transition: all .3s;
+
+                        svg {
+                            stroke: $placeholder;
+                            stroke-width: 2px;
+                            height: 18px;
+                            width: 18px;
+                            transition: all .3s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+6. Chat Messages Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .chat-app-wrapper {
+            .wrapper {
+                .chat-area {
+                    background: lighten($dark-sidebar, 10%);
+                    border-color: lighten($dark-sidebar, 12%);
+
+                    .chat-area-header {
+                        background: lighten($dark-sidebar, 10%);
+
+                        .trigger {
+                            svg {
+                                stroke: $dark-dark-text;
+                            }
+                        }
+
+                        .chat-area-title {
+                            color: $dark-dark-text;
+                        }
+
+                        .chat-area-group {
+                            img {
+                                border-color: lighten($dark-sidebar, 10%);
+                            }
+
+                            > span {
+                                border-color: lighten($dark-sidebar, 10%);
+                                color: darken($accent, 5%);
+                                background: lighten($accent, 20%);
+                            }
+                        }
+                    }
+
+                    .chat-area-main {
+                        .chat-msg {
+                            &.owner {
+                                .chat-msg-content {
+                                    .chat-msg-text {
+                                        background: darken($accent, 4%);
+                                        color: $smoke-white;
+                                    }
+                                }
+                            }
+
+                            .chat-msg-content {
+                                .chat-msg-text {
+                                    background: lighten($dark-sidebar, 6%);
+                                    color: $dark-dark-text;
+                                }
+                            }
+                        }
+                    }
+
+                    .chat-area-footer {
+                        background: lighten($dark-sidebar, 10%);
+                        border-color: lighten($dark-sidebar, 12%);
+
+                        .add-content .dropdown {
+                            &:hover {
+                                > div > .button {
+                                    background: lighten($dark-sidebar, 6%) !important;
+
+                                    svg {
+                                        stroke: $accent;
+                                    }
+                                }
+                            }
+
+                            .dropdown-menu {
+                                .dropdown-content {
+                                    .dropdown-item {
+                                        .meta span {
+                                            &:first-child {
+                                                color: $dark-dark-text;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .add-emoji {
+                            &:hover {
+                                .button {
+                                    background: lighten($dark-sidebar, 6%) !important;
+
+                                    svg {
+                                        stroke: $accent;
+                                    }
+                                }
+                            }
+                        }
+
+                        input {
+                            background: lighten($dark-sidebar, 6%);
+                            color: $dark-dark-text;
+
+                            &:focus {
+                                border-color: lighten($dark-sidebar, 12%);
+                                background: lighten($dark-sidebar, 4%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+7. Chat Details
+========================================================================== */
+
+.chat-app-wrapper {
+    .wrapper {
+        width: 100%;
+        display: flex;
+        flex-grow: 1;
+        overflow: hidden;
+
+        .detail-area {
+            width: 340px;
+            flex-shrink: 0;
+            border-left: 1px solid $border-color;
+            margin-left: auto;
+            padding: 30px 30px 0 30px;
+            display: flex;
+            flex-direction: column;
+            overflow: auto;
+            overflow-x: hidden;
+
+            .chat-side-content {
+                text-align: center;
+                transition: all .3s;
+                padding: 20px 10px;
+
+                .user-pic {
+                    position: relative;
+                    max-width: 68px;
+                    margin: 0 auto;
+                }
+
+                .user-name {
+                    margin-top: 10px;
+                    font-family: $font-alt;
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                    color: $dark-text;
+                }
+
+                .user-job-title {
+                    font-family: $font;
+                    color: $light-text;
+                }
+
+                .side-actions {
+                    padding: 12px 0;
+
+                    .button {
+                        color: $light-text;
+
+                        &:hover {
+                            box-shadow: $light-box-shadow;
+                        }
+                    }
+                }
+
+                .detail-photos {
+                    margin-top: 30px;
+                    text-align: center;
+                    padding: 0 12px;
+
+                    .detail-photo-title {
+                        display: flex;
+                        align-items: center;
+                        color: $light-text;
+                        font-weight: 400;
+                        font-size: 1rem;
+                        margin-bottom: 20px;
+                        color: $light-text;
+
+                        svg {
+                            width: 16px;
+                            margin-right: 8px;
+                        }
+                    }
+
+                    .detail-photo-grid {
+                        display: grid;
+                        grid-template-columns: repeat(4, 1fr);
+                        grid-column-gap: 6px;
+                        grid-row-gap: 6px;
+                        grid-template-rows: repeat(3, 60px);
+
+                        img {
+                            height: 100%;
+                            width: 100%;
+                            object-fit: cover;
+                            border-radius: 8px;
+                            object-position: center;
+                        }
+                    }
+
+                    .view-more {
+                        display: block;
+                        color: $primary;
+                        font-weight: 600;
+                        font-size: 15px;
+                        margin: 25px 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+8. Chat Details Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .chat-app-wrapper {
+            .wrapper {
+                .detail-area {
+                    background: lighten($dark-sidebar, 4%);
+                    border-color: lighten($dark-sidebar, 12%);
+
+                    .chat-side-content {
+                        .user-name {
+                            color: $dark-dark-text;
+                        }
+
+                        .detail-photos {
+                            .view-more {
+                                color: $accent;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+9. Media Queries
+========================================================================== */
+
+@media (max-width: 767px) {
+    .chat-app-wrapper {
+        .chat-app-header {
+            .search-bar {
+                display: none;
+            }
+        }
+
+        .wrapper {
+            .conversation-area {
+                position: fixed;
+                top: 0;
+                left: 0;
+                height: 100%;
+                background: $white;
+                z-index: 10;
+                transform: translateX(-100%);
+                transition: all .3s;
+
+                &.is-active {
+                    transform: translateX(0);
+                }
+            }
+
+            .chat-area {
+                .chat-area-main {
+                    .chat-msg {
+                        .chat-msg-content {
+                            max-width: 100%;
+                        }
+                    }
+                }
+
+                .chat-area-footer {
+                    width: 100%;
+                    padding: 10px;
+                }
+            }
+
+            .detail-area {
+                display: none !important;
+            }
+        }
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .chat-app-wrapper {
+        .chat-app-header {
+            .search-bar {
+                display: none;
+            }
+        }
+
+        .wrapper {
+            .conversation-area {
+                position: fixed;
+                top: 0;
+                left: 0;
+                height: 100%;
+                background: $white;
+                z-index: 10;
+                transform: translateX(-100%);
+                transition: all .3s;
+
+                &.is-active {
+                    transform: translateX(0);
+                }
+            }
+
+            .chat-area {
+                .chat-area-footer {
+                    position: fixed;
+                    width: 100%;
+                }
+            }
+
+            .detail-area {
+                display: none !important;
+            }
+        }
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .chat-app-wrapper {
+        .wrapper {
+            .detail-area {
+                display: none !important;
+            }
+
+            .chat-area {
+                .chat-area-footer {
+                    width: calc(100% - 340px);
+                    margin-left: 340px;
+                }
+            }
+        }
+    }
+}

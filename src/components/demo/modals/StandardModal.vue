@@ -22,7 +22,7 @@ export default StandardModal
         <header class="modal-card-head">
           <h3>Invitation</h3>
           <button class="h-modal-close ml-auto" aria-label="close">
-            <i data-feather="x"></i>
+            <Icon icon="feather:x" />
           </button>
         </header>
         <div class="modal-card-body">
@@ -33,13 +33,13 @@ export default StandardModal
                   <img
                     class="avatar"
                     src="https://via.placeholder.com/150x150"
-                    data-demo-src="assets/img/avatars/photos/22.jpg"
+                    data-demo-src="/src/assets/images/avatars/photos/22.jpg"
                     alt=""
                   />
                   <img
                     class="badge"
                     src="https://via.placeholder.com/150x150"
-                    data-demo-src="assets/img/icons/flags/united-states-of-america.svg"
+                    data-demo-src="/src/assets/images/icons/flags/united-states-of-america.svg"
                     alt=""
                   />
                 </div>

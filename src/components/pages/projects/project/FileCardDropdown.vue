@@ -1,0 +1,64 @@
+<script lang="ts">
+import { defineComponent } from 'vue'
+
+const FileCardDropdown = defineComponent({
+  name: 'FileCardDropdown',
+  components: {},
+  setup() {
+    // FileCardDropdown - Composition API
+
+    return {}
+  },
+})
+
+export default FileCardDropdown
+</script>
+
+<template>
+  <div class="dropdown is-spaced is-dots is-right dropdown-trigger end-action">
+    <div class="is-trigger" aria-haspopup="true">
+      <Icon icon="feather:more-vertical" />
+    </div>
+    <div class="dropdown-menu" role="menu">
+      <div class="dropdown-content">
+        <a href="#" class="dropdown-item is-media">
+          <div class="icon">
+            <i class="lnil lnil-cloud-download"></i>
+          </div>
+          <div class="meta">
+            <span>Download</span>
+            <span>Download this file</span>
+          </div>
+        </a>
+        <a href="#" class="dropdown-item is-media">
+          <div class="icon">
+            <i class="lnil lnil-checkmark-circle"></i>
+          </div>
+          <div class="meta">
+            <span>View Task</span>
+            <span>View related task</span>
+          </div>
+        </a>
+        <hr class="dropdown-divider" />
+        <a href="#" class="dropdown-item is-media">
+          <div class="icon">
+            <i class="lnil lnil-cloud-upload"></i>
+          </div>
+          <div class="meta">
+            <span>Update</span>
+            <span>Upload a new version</span>
+          </div>
+        </a>
+        <a href="#" class="dropdown-item is-media">
+          <div class="icon">
+            <i class="lnil lnil-trash-can-alt-1"></i>
+          </div>
+          <div class="meta">
+            <span>Delete</span>
+            <span>Delete this file</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</template>

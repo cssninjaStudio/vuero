@@ -1,0 +1,842 @@
+/*! _forms-combos.scss | Huro | Css ninja 2020-2021 */
+
+/*
+    1. H Select
+    2. H Select Dark mode
+    3. Combo Box
+    4. Combo Box Dark mode
+*/
+
+/* ==========================================================================
+1. H Select
+========================================================================== */
+
+.h-select {
+    width: 100%;
+    z-index: 3;
+
+    &.is-dropup {
+        .select-drop {
+            top: -180px;
+        }
+    }
+
+    &.is-active {
+        .select-drop {
+            opacity: 1;
+            transform: translateY(0);
+            pointer-events: all;
+        }
+
+        .select-icon {
+            transform: rotate(180deg);
+        }
+    }
+
+    &.has-media {
+        .select-drop {
+            min-height: 180px;
+            max-height: 180px;
+        }
+
+        .option-meta {
+            img {
+                max-height: 36px !important;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    &.is-rounded {
+        .select-box {
+            border-radius: 500px;
+            padding-left: 16px;
+        }
+
+        .select-icon {
+            right: 4px;
+        }
+    }
+
+    //select box
+    .select-box {
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding: 0 40px 0 10px;
+        height: 38px;
+        width: 100%;
+        border: 1px solid $accent-grey;
+        border-radius: 4px;
+        color: darken($accent-grey, 20%);
+        background: $white;
+        cursor: pointer;
+        transition: all .3s;
+
+        &:hover {
+            border-color: $fade-grey;
+        }
+
+        span {
+            font-family: $font;
+            font-size: .9rem;
+            position: relative;
+            top: 0;
+        }
+    }
+
+    .select-icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 38px;
+        height: 38px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all .3s;
+        transform: rotate(0);
+
+        svg {
+            height: 20px;
+            width: 20px;
+            stroke: darken($placeholder, 8%) !important;
+            transition: all .3s;
+        }
+    }
+
+    .select-drop {
+        position: absolute;
+        top: 40px;
+        left: 0;
+        width: 100%;
+        //min-height: 180px;
+        max-height: 180px;
+        overflow-y: auto;
+        background: $white;
+        border: 1px solid $fade-grey;
+        border-radius: 4px;
+        z-index: 5;
+        transition: all .3s;
+        opacity: 0;
+        transform: translateY(10px);
+        pointer-events: none;
+
+        .drop-inner {
+            position: relative;
+            height: 100%;
+            width: 100%;
+            background: $white;
+
+            .option-row {
+                position: relative;
+                display: flex;
+                background: $white;
+
+                &:hover {
+                    background: lighten($fade-grey, 3%);
+                }
+
+                input {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                    opacity: 0;
+                    cursor: pointer;
+
+                    &:checked + .option-meta {
+                        background: lighten($fade-grey, 4%);
+
+                        span {
+                            color: $dark-text;
+                        }
+
+                        svg {
+                            &.is-purple {
+                                stroke: $primary;
+                            }
+                        }
+                    }
+                }
+
+                .option-meta {
+                    padding: 12px;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+
+                    img {
+                        display: block;
+                        max-height: 20px;
+                    }
+
+                    svg {
+                        height: 20px;
+                        width: 20px;
+                        stroke: $placeholder;
+
+                        &.is-small {
+                            height: 14px;
+                            width: 14px;
+                        }
+                    }
+
+                    span {
+                        display: block;
+                        font-weight: 500;
+                        color: $muted-grey;
+                        font-size: .9rem;
+                        margin-left: 8px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+2. H Select Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .h-select {
+            .select-box {
+                background: lighten($dark-sidebar, 1%) !important;
+                border-color: lighten($dark-sidebar, 4%) !important;
+            }
+
+            .select-drop {
+                border-color: lighten($dark-sidebar, 4%) !important;
+                background: lighten($dark-sidebar, 1%) !important;
+
+                .drop-inner {
+                    background: lighten($dark-sidebar, 1%) !important;
+                }
+
+                .option-row {
+                    background: lighten($dark-sidebar, 1%) !important;
+                    border-color: lighten($dark-sidebar, 4%) !important;
+
+                    &:hover {
+                        background: lighten($dark-sidebar, 3%) !important;
+                    }
+
+                    input:checked + .option-meta {
+                        background: lighten($dark-sidebar, 4%) !important;
+
+                        span {
+                            color: $accent-grey !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* ==========================================================================
+3. Combo Box
+========================================================================== */
+
+.is-combo {
+    .combo-label {
+        font-family: $font;
+        font-size: .9rem;
+        color: $light-text;
+    }
+
+    .combo-box, .image-combo-box, .stacked-combo-box, .user-combo-box {
+        position: relative;
+        background: $white;
+        border: 1px solid $accent-grey;
+        border-radius: 4px;
+        height: 38px;
+        cursor: pointer;
+        transition: all .3s;
+
+        &.has-rounded-images {
+            .combo-item img, .item-icon img {
+                border-radius: 50% !important;
+            }
+        }
+
+        &.is-rounded {
+            border-radius: 500px;
+        }
+
+        .box-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .combo-item {
+                display: flex;
+                align-items: center;
+                height: 38px;
+                padding-left: 8px;
+
+                i {
+                    color: $light-text;
+                    font-size: 20px;
+                    margin: 0 8px;
+                }
+
+                .fa {
+                    font-size: 14px;
+
+                    &.is-green {
+                        color: $success;
+                    }
+
+                    &.is-blue {
+                        color: $info;
+                    }
+
+                    &.is-orange {
+                        color: $warning;
+                    }
+
+                    &.is-red {
+                        color: $danger;
+                    }
+                }
+
+                img {
+                    display: block;
+                    height: 22px;
+                    width: 22px;
+                    border-radius: 6px;
+                    object-fit: contain;
+                    margin-right: 8px;
+
+                    &.is-stacked {
+                        height: 26px;
+                        width: 26px;
+                        border: 2px solid $white;
+                        margin-right: 0 !important;
+
+                        &:not(:first-child) {
+                            $var: 9;
+
+                            @for $i from 1 through 5 {
+                                &:nth-child(#{$i}) {
+                                    margin-left: -#{$var}px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .avatar-container {
+                    position: relative;
+                    display: block;
+                    height: 26px;
+                    width: 26px;
+
+                    .avatar {
+                        display: block;
+                        height: 26px;
+                        width: 26px;
+                        border-radius: 50%;
+                    }
+
+                    .badge {
+                        position: absolute;
+                        bottom: 0;
+                        right: -6px;
+                        height: 16px;
+                        width: 16px;
+                        border-radius: 50%;
+                        border: 2px solid $white;
+                        margin: 0;
+                    }
+                }
+
+                span {
+                    display: block;
+                    color: $dark-text;
+                    font-size: .9rem;
+                    font-weight: 500;
+                    //margin-left: 8px;
+
+                    &.is-pushed {
+                        margin-left: 18px;
+                    }
+                }
+            }
+        }
+
+        .box-chevron {
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 36px;
+            width: 36px;
+
+            svg {
+                height: 18px;
+                width: 18px;
+                stroke: darken($placeholder, 8%) !important;
+                transform: rotate(0);
+                transition: all .3s;
+            }
+        }
+
+        .box-dropdown {
+            position: absolute;
+            top: 32px;
+            left: 0;
+            width: 100%;
+            z-index: 50;
+            opacity: 0;
+            transform: translateY(20px);
+            pointer-events: none;
+            transition: all .3s;
+
+            &.is-dropup {
+                top: -165px;
+                height: 148px;
+
+                .dropdown-inner {
+                    overflow-y: auto;
+                }
+            }
+
+            .dropdown-inner {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                background: $white;
+                border: 1px solid $accent-grey;
+                border-radius: 4px;
+                margin-top: 10px;
+                max-height: 190px;
+                overflow-y: auto;
+
+                ul {
+                    padding: 10px 0;
+
+                    li {
+                        padding: 6px 8px;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        width: 100%;
+
+                        &:hover {
+                            background: lighten($fade-grey, 2%);
+                        }
+
+                        &.is-active {
+                            .item-icon {
+                                i {
+                                    color: $primary;
+                                }
+
+                                .faded-img {
+                                    opacity: 1;
+                                }
+                            }
+
+                            span {
+                                color: $dark-text;
+                            }
+
+                            .checkmark {
+                                opacity: 1;
+                            }
+                        }
+
+                        .item-icon {
+                            position: relative;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 30px;
+                            width: 30px;
+                            margin-right: 8px;
+
+                            i {
+                                color: $muted-grey;
+                                font-size: 20px;
+                            }
+
+                            .fa {
+                                font-size: 16px;
+                                position: relative;
+                                top: 5px;
+
+                                &.is-green {
+                                    color: $success;
+                                }
+
+                                &.is-blue {
+                                    color: $info;
+                                }
+
+                                &.is-orange {
+                                    color: $warning;
+                                }
+
+                                &.is-red {
+                                    color: $danger;
+                                }
+                            }
+
+                            img {
+                                display: block;
+                                height: 22px;
+                                width: 22px;
+                                border-radius: 6px;
+                                object-fit: contain;
+                                transition: opacity .3s;
+
+                                &.faded-img {
+                                    opacity: .4;
+                                }
+                            }
+
+                            .avatar {
+                                display: block;
+                                height: 24px;
+                                width: 24px;
+                                border-radius: 50%;
+                            }
+
+                            .badge {
+                                position: absolute;
+                                bottom: 0;
+                                right: 0;
+                                height: 12px;
+                                width: 12px;
+                                border-radius: 50%;
+                                border: 2px solid $white;
+                            }
+                        }
+
+                        .checkmark {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 16px;
+                            width: 16px;
+                            margin-right: 8px;
+                            margin-left: auto;
+                            opacity: 0;
+                            transition: all .3s;
+
+                            svg {
+                                stroke: $primary;
+                                stroke-width: 3px;
+                                height: 14px;
+                                width: 14px;
+                            }
+                        }
+
+                        span {
+                            display: block;
+                            color: $muted-grey;
+                            font-size: .9rem;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.is-active {
+            //border-color: $primary;
+            box-shadow: $light-box-shadow;
+
+            .box-chevron svg {
+                transform: rotate(180deg);
+            }
+
+            .box-dropdown {
+                opacity: 1;
+                transform: translateY(0);
+                pointer-events: all;
+            }
+        }
+    }
+
+    .help-text {
+        font-size: .75rem;
+        color: $muted-grey;
+    }
+
+    .big-combo-box {
+        position: relative;
+        background: $white;
+        border: 1px solid $accent-grey;
+        border-radius: 4px;
+        height: 58px;
+        margin-top: 4px;
+        cursor: pointer;
+        transition: all .3s;
+
+        .box-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+
+            .combo-item {
+                display: flex;
+                align-items: center;
+                height: 58px;
+                padding-left: 8px;
+
+                i {
+                    color: $primary;
+                    font-size: 1.6rem;
+                }
+
+                .combo-text {
+                    margin-left: 16px;
+
+                    span {
+                        display: block;
+
+                        &:first-child {
+                            color: $dark-text;
+                            font-size: .9rem;
+                            font-weight: 500;
+                        }
+
+                        &:nth-child(2) {
+                            color: $muted-grey;
+                            font-size: .8rem;
+                            max-width: 330px;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+                    }
+                }
+            }
+        }
+
+        .box-chevron {
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 58px;
+            width: 58px;
+
+            svg {
+                height: 18px;
+                width: 18px;
+                stroke: $dark-text;
+                transform: rotate(0);
+                transition: all .3s;
+            }
+        }
+
+        .box-dropdown {
+            position: absolute;
+            top: 54px;
+            left: 0;
+            width: 100%;
+            z-index: 50;
+            opacity: 0;
+            transform: translateY(20px);
+            pointer-events: none;
+            transition: all .3s;
+
+            .dropdown-inner {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                background: $white;
+                border: 1px solid $accent-grey;
+                border-radius: 4px;
+                margin-top: 10px;
+                max-height: 190px;
+                overflow-y: auto;
+                overflow-x: hidden;
+
+                ul {
+                    padding: 10px 0;
+
+                    li {
+                        padding: 6px 8px;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        width: 100%;
+
+                        .item-icon {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 30px;
+                            width: 30px;
+                            min-height: 30px;
+                            min-width: 30px;
+                            margin-right: 16px;
+
+                            i {
+                                color: $muted-grey;
+                                font-size: 1.6rem;
+                            }
+                        }
+
+                        .item-name {
+                            span {
+                                display: block;
+
+                                &:first-child {
+                                    color: $dark-text;
+                                    font-size: .9rem;
+                                    font-weight: 500;
+                                }
+
+                                &:nth-child(2) {
+                                    color: $muted-grey;
+                                    font-size: .8rem;
+                                    white-space: nowrap;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                }
+                            }
+                        }
+
+                        &:hover {
+                            background: lighten($fade-grey, 2%);
+                        }
+
+                        &.is-active {
+                            .item-icon i {
+                                color: $primary;
+                            }
+
+                            span {
+                                color: $dark-text;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &.is-active {
+            border-color: $primary;
+
+            .box-chevron svg {
+                transform: rotate(180deg);
+            }
+
+            .box-dropdown {
+                opacity: 1;
+                transform: translateY(0);
+                pointer-events: all;
+            }
+        }
+    }
+}
+
+
+/* ==========================================================================
+4. Combo Box Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .is-combo {
+            .combo-box, .image-combo-box, .stacked-combo-box, .user-combo-box {
+                background: lighten($dark-sidebar, 1%) !important;
+                border-color: lighten($dark-sidebar, 4%) !important;
+
+                .box-inner {
+                    .combo-item {
+                        i {
+                            color: $accent !important;
+                        }
+
+                        img {
+                            border-color: darken($dark-sidebar, 2%) !important;
+                        }
+
+                        .selected-item {
+                            color: $accent-grey !important;
+                        }
+
+                        .combo-text {
+                            span {
+                                &:first-child {
+                                    color: darken($accent-grey, 8%) !important;
+                                }
+
+                                &:nth-child(2) {
+                                    color: darken($accent-grey, 35%) !important;
+                                }
+
+                                &.is-pushed {
+                                    color: $accent-grey !important;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .box-chevron svg {
+                    stroke: lighten($accent-grey, 5%) !important;
+                }
+
+                .box-dropdown {
+
+                    .dropdown-inner {
+                        background: darken($dark-sidebar, 4%) !important;
+                        border-color: darken($dark-sidebar, 4%);
+
+                        li {
+                            img {
+                                border-color: darken($dark-sidebar, 2%) !important;
+                            }
+
+                            &:hover {
+                                background: lighten($dark-sidebar, 2%) !important;
+                            }
+
+                            &.is-active {
+                                .item-icon i {
+                                    color: $accent !important;
+                                }
+
+                                .checkmark svg {
+                                    stroke: $accent !important;
+                                }
+                            }
+
+                            .item-name {
+                                span {
+                                    &:first-child {
+                                        color: darken($accent-grey, 8%) !important;
+                                    }
+
+                                    &:nth-child(2) {
+                                        color: darken($accent-grey, 35%) !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

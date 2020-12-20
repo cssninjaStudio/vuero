@@ -1,0 +1,245 @@
+/*! _editors.scss | Huro | Css Ninja 2020-2021 */
+
+/*
+    1. Summernote Editor    
+    2. Summernote Dark mode
+    3. Sun Editor Dark mode
+*/
+
+/* ==========================================================================
+1. Summernote Editor
+========================================================================== */
+
+.note-modal {
+    .note-modal-content {
+        .note-modal-header {
+            h4 {
+                font-family: $font;
+                font-size: 1.2rem !important;
+                font-weight: 500;
+                color: $dark-text;
+            }
+
+            .close {
+                outline: none !important;
+            }
+        }
+
+        .note-modal-body {
+            padding: 30px;
+
+            .form-group {
+                label {
+                    font-family: $font;
+                    font-size: 1rem;
+                    font-weight: 400;
+                    color: $light-text;
+                }
+            }
+        }
+
+        .note-modal-footer {
+            padding: 0 16px;
+            height: 70px;
+            background: darken($widget-grey, 2%);
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            .btn-primary {
+                height: 40px;
+                background: $primary;
+                padding-bottom: 8px;
+                opacity: 1;
+                min-width: 130px;
+                border-radius: 6px;
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+2. Summernote Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .note-editor {
+            .note-toolbar {
+                background: lighten($dark-sidebar, 2%);
+                border-color: lighten($dark-sidebar, 12%);
+
+                .note-btn-group {
+                    .note-btn {
+                        background: lighten($dark-sidebar, 4%);
+                        border-color: lighten($dark-sidebar, 12%);
+
+                        i, .note-icon-caret {
+                            color: $dark-dark-text;
+                        }
+                    }
+
+                    .note-dropdown-menu {
+                        background: darken($dark-sidebar, 2%);
+                        border-color: lighten($dark-sidebar, 8%);
+
+                        .note-dropdown-item {
+                            color: $light-text;
+
+                            &:hover {
+                                background: lighten($dark-sidebar, 1%);
+                            }
+                        }
+
+                        .note-dimension-display {
+                            color: $dark-dark-text;
+                        }
+                    }
+                }
+            }
+
+            .note-editable {
+                .table {
+                    tbody {
+                        td {
+                            border-color: lighten($dark-sidebar, 12%) !important;
+                        }
+                    }
+                }
+            }
+
+            .note-popover {
+                background: lighten($dark-sidebar, 2%);
+                border-color: lighten($dark-sidebar, 12%);
+
+                &.bottom {
+                    .note-popover-arrow:after {
+                        border-bottom-color: lighten($dark-sidebar, 2%);
+                    }
+                }
+
+                .note-btn-group {
+                    .note-btn {
+                        background: lighten($dark-sidebar, 4%);
+                        border-color: lighten($dark-sidebar, 12%);
+
+                        i, .note-icon-caret {
+                            color: $dark-dark-text;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.note-modal {
+    .note-modal-content {
+        border: none;
+
+        .note-modal-header {
+            background: lighten($dark-sidebar, 2%);
+            border-color: lighten($dark-sidebar, 12%);
+
+            h4 {
+                color: $dark-dark-text;
+            }
+
+            .close {
+                color: $dark-dark-text !important;
+
+                .note-icon-close {
+                    color: $dark-dark-text !important;
+                }
+            }
+        }
+
+        .note-modal-body {
+            background: lighten($dark-sidebar, 4%);
+
+            .form-group {
+                input {
+                    background: darken($dark-sidebar, 2%);
+                    border-color: lighten($dark-sidebar, 8%);
+                    color: $light-text;
+                    height: 38px;
+                    border-radius: 4px;
+                }
+            }
+        }
+
+        .note-modal-footer {
+            background: lighten($dark-sidebar, 2%);
+            border-color: lighten($dark-sidebar, 12%);
+
+            .btn-primary {
+                background: $accent;
+                border-color: $accent;
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+3. Sun Editor Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .sun-editor {
+            width: 100%;
+            border-color: lighten($dark-sidebar, 12%) !important;
+            background: darken($dark-sidebar, 2%);
+
+            .se-container {
+                .se-toolbar {
+                    background: darken($dark-sidebar, 2%);
+                    border-color: lighten($dark-sidebar, 12%);
+                    outline: none;
+
+                    &.se-toolbar-balloon {
+                        box-shadow: $light-box-shadow !important;
+
+                        .se-arrow.se-arrow-down:after {
+                            border-top-color: darken($dark-sidebar, 2%);
+                        }
+                    }
+
+                    .se-btn-tray {
+                        .se-btn-module {
+                            background: lighten($dark-sidebar, 4%);
+                            border-color: lighten($dark-sidebar, 12%);
+
+                            .se-menu-list {
+                                li {
+                                    button {
+                                        color: $dark-dark-text;
+
+                                        &:hover {
+                                            background: lighten($dark-sidebar, 2%);
+                                            border-color: lighten($dark-sidebar, 12%);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .se-wrapper {
+                    background: darken($dark-sidebar, 10%);
+
+                    .se-wrapper-inner {
+                        background: darken($dark-sidebar, 10%);
+                        color: $dark-dark-text;
+                    }
+                }
+
+                .se-resizing-bar {
+                    background: darken($dark-sidebar, 2%);
+                    border-color: lighten($dark-sidebar, 12%);
+                }
+            }
+        }
+    }
+}

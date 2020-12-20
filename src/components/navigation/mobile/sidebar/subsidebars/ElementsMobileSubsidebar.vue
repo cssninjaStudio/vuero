@@ -53,22 +53,22 @@ export default ElementsMobileSubsidebar
           <ul>
             <li>
               <a class="is-submenu" href="/elements-icons-lnil.html"
-                ><i data-feather="circle"></i>Line Icons Light</a
+                ><Icon icon="feather:circle" />Line Icons Light</a
               >
             </li>
             <li>
               <a class="is-submenu" href="/elements-icons-lnir.html"
-                ><i data-feather="circle"></i>Line Icons Regular</a
+                ><Icon icon="feather:circle" />Line Icons Regular</a
               >
             </li>
             <li>
               <a class="is-submenu" href="/elements-icons-fa.html"
-                ><i data-feather="circle"></i>Font Awesome 5</a
+                ><Icon icon="feather:circle" />Font Awesome 5</a
               >
             </li>
             <li>
               <a class="is-submenu" href="/elements-icons-feather.html"
-                ><i data-feather="circle"></i>Feather Icons</a
+                ><Icon icon="feather:circle" />Feather Icons</a
               >
             </li>
           </ul>
@@ -82,17 +82,17 @@ export default ElementsMobileSubsidebar
           <ul>
             <li>
               <a class="is-submenu" href="/elements-cards-basic.html"
-                ><i data-feather="circle"></i>Basic Cards</a
+                ><Icon icon="feather:circle" />Basic Cards</a
               >
             </li>
             <li>
               <a class="is-submenu" href="/elements-cards-advanced.html"
-                ><i data-feather="circle"></i>Advanced Cards</a
+                ><Icon icon="feather:circle" />Advanced Cards</a
               >
             </li>
             <li>
               <a class="is-submenu" href="/elements-cards-bulma.html"
-                ><i data-feather="circle"></i>Bulma Cards</a
+                ><Icon icon="feather:circle" />Bulma Cards</a
               >
             </li>
           </ul>
@@ -113,32 +113,32 @@ export default ElementsMobileSubsidebar
           <ul>
             <li>
               <a class="is-submenu" href="/elements-forms-inputs.html"
-                ><i data-feather="circle"></i>Inputs</a
+                ><Icon icon="feather:circle" />Inputs</a
               >
             </li>
             <li>
               <a class="is-submenu" href="/elements-forms-addons.html"
-                ><i data-feather="circle"></i>Input Addons</a
+                ><Icon icon="feather:circle" />Input Addons</a
               >
             </li>
             <li>
               <a class="is-submenu" href="/elements-forms-textarea.html"
-                ><i data-feather="circle"></i>Textarea</a
+                ><Icon icon="feather:circle" />Textarea</a
               >
             </li>
             <li>
               <a class="is-submenu" href="/elements-forms-selects.html"
-                ><i data-feather="circle"></i>Selects</a
+                ><Icon icon="feather:circle" />Selects</a
               >
             </li>
             <li>
               <a class="is-submenu" href="/elements-forms-custom.html"
-                ><i data-feather="circle"></i>Custom</a
+                ><Icon icon="feather:circle" />Custom</a
               >
             </li>
             <li>
               <a class="is-submenu" href="/elements-forms-file.html"
-                ><i data-feather="circle"></i>File Input</a
+                ><Icon icon="feather:circle" />File Input</a
               >
             </li>
           </ul>
@@ -152,17 +152,17 @@ export default ElementsMobileSubsidebar
           <ul>
             <li>
               <a class="is-submenu" href="/elements-forms-checkboxes.html"
-                ><i data-feather="circle"></i>Checkboxes</a
+                ><Icon icon="feather:circle" />Checkboxes</a
               >
             </li>
             <li>
               <a class="is-submenu" href="/elements-forms-radios.html"
-                ><i data-feather="circle"></i>Radios</a
+                ><Icon icon="feather:circle" />Radios</a
               >
             </li>
             <li>
               <a class="is-submenu" href="/elements-forms-switch.html"
-                ><i data-feather="circle"></i>Switches</a
+                ><Icon icon="feather:circle" />Switches</a
               >
             </li>
           </ul>

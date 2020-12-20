@@ -1,0 +1,757 @@
+/*! _forms.scss | Huro | Css ninja 2020-2021 */
+
+/* ==========================================================================
+Form Layouts
+========================================================================== */
+
+/*
+    1. Form Layout
+*/
+
+/* ==========================================================================
+1. Form Layout
+========================================================================== */
+
+.form-layout {
+    max-width: 740px;
+    margin: 0 auto;
+
+    &.is-webapp {
+        margin-top: 30px;
+    }
+
+    &.is-split {
+        max-width: 840px;
+
+        .form-outer {
+            .form-body {
+                padding: 0;
+
+                .form-section {
+                    display: flex;
+                    padding: 20px;
+
+                    &.is-grey {
+                        background: #fafafa;
+                    }
+
+                    .left, .right {
+                        padding: 20px 40px;
+                        width: 50%;
+
+                        h3 {
+                            font-family: $font-alt;
+                            font-weight: 600;
+                            font-size: .95rem;
+                            color: $dark-text;
+                            margin-bottom: 20px;
+                        }
+                    }
+
+                    .left {
+                        position: relative;
+                        border-right: 1px solid darken($fade-grey, 3%);
+
+                        .operator {
+                            position: absolute;
+                            top: 17px;
+                            right: -10px;
+                            text-transform: uppercase;
+                            font-family: $font;
+                            font-weight: 500;
+                            color: $dark-text;
+                            background: $white;
+                            padding: 4px 0;
+                        }
+                    }
+
+                    .radio-pills {
+                        display: flex;
+                        justify-content: space-between;
+
+                        .radio-pill {
+                            position: relative;
+
+                            input {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                height: 100%;
+                                width: 100%;
+                                opacity: 0;
+                                cursor: pointer;
+
+                                &:checked {
+                                    + .radio-pill-inner {
+                                        background: $primary;
+                                        border-color: $primary;
+                                        box-shadow: $primary-box-shadow;
+                                        color: $white;
+                                    }
+                                }
+                            }
+
+                            .radio-pill-inner {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 60px;
+                                height: 40px;
+                                background: $white;
+                                border: 1px solid darken($fade-grey, 3%);
+                                border-radius: 8px;
+                                font-family: $font;
+                                font-weight: 600;
+                                font-size: .9rem;
+                                transition: all .3s;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.is-separate {
+        max-width: 1040px;
+
+        .form-outer {
+            background: none;
+            border: none;
+
+            .form-body {
+                display: flex;
+
+                .form-section {
+                    flex-grow: 2;
+                    padding: 10px;
+                    width: 50%;
+
+                    .form-section-inner {
+                        @extend .s-card;
+
+                        padding: 40px;
+
+                        &.has-padding-bottom {
+                            padding-bottom: 60px;
+                            height: 100%;
+                        }
+
+                        > h3 {
+                            font-family: $font-alt;
+                            font-size: 1.2rem;
+                            font-weight: 600;
+                            color: $dark-text;
+                            margin-bottom: 30px;
+                        }
+
+                        .columns {
+                            .column {
+                                padding-top: .25rem;
+                                padding-bottom: .25rem;
+                            }
+                        }
+
+                        .radio-boxes {
+                            display: flex;
+                            justify-content: space-between;
+                            margin-left: -8px;
+                            margin-right: -8px;
+
+                            .radio-box {
+                                position: relative;
+                                width: calc(50% - 16px);
+                                margin: 8px;
+
+                                input {
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    height: 100%;
+                                    width: 100%;
+                                    opacity: 0;
+                                    cursor: pointer;
+
+                                    &:checked {
+                                        + .radio-box-inner {
+                                            background: $primary;
+                                            border-color: $primary;
+                                            box-shadow: $primary-box-shadow;
+
+                                            .fee, p {
+                                                color: $smoke-white;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .radio-box-inner {
+                                    background: $white;
+                                    border: 1px solid darken($fade-grey, 3%);
+                                    text-align: center;
+                                    border-radius: 4px;
+                                    font-family: $font;
+                                    font-weight: 600;
+                                    font-size: .9rem;
+                                    transition: all .3s;
+                                    padding: 30px 20px;
+
+                                    .fee {
+                                        font-family: $font;
+                                        font-weight: 700;
+                                        color: $dark-text;
+                                        font-size: 2.4rem;
+                                        line-height: 1;
+
+                                        span {
+                                            
+                                            &:after {
+                                                content: '$';
+                                                position: relative;
+                                                top: -10px;
+                                                font-size: 1.5rem;
+                                            }
+                                        }
+                                    }
+
+                                    p {
+                                        font-family: $font-alt;
+                                    }
+                                }
+                            }
+                        }
+
+                        .control {
+                            > p {
+                                padding-top: 12px;
+
+                                > span {
+                                    display: block;
+                                    font-size: .9rem;
+
+                                    span {
+                                        font-weight: 500;
+                                        color: $dark-text;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .form-section-outer {
+                        .checkboxes {
+                            padding: 16px 0;
+
+                            .checkbox {
+                                padding: 0;
+                                font-size: .9rem;
+                            }
+                        }
+
+                        .button-wrap {
+                            .button {
+                                min-height: 60px;
+                                font-size: 1.05rem;
+                                font-weight: 600;
+                                font-family: $font-alt;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.is-stacked {
+        .form-outer {
+            .form-body {
+                padding: 0;
+
+                .form-section {
+                    padding: 40px;
+                    border-bottom: 1px solid darken($fade-grey, 4%);
+
+                    &.is-grey {
+                        background: #fafafa;
+                    }
+
+                    .form-section-header {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        border-bottom: 1px solid darken($fade-grey, 4%);
+                        padding-bottom: 20px;
+                        margin-bottom: 30px;
+
+                        .left {
+                            h3 {
+                                font-family: $font-alt;
+                                font-weight: 600;
+                                color: $dark-text;
+                            }
+                        }
+                    }
+
+                    .form-section-inner {
+                        &.is-horizontal {
+                            max-width: 540px;
+                        }
+
+                        .field {
+                            &.is-horizontal {
+                                .field-label {
+                                    padding-top: 0.75em;
+                                }
+                            }
+                        }
+                    }
+
+                    .columns {
+                        .column {
+                            padding-top: .5rem;
+                            padding-bottom: .5rem;
+                        }
+                    }
+
+                    .field {
+                        .control {
+                            .checkbox {
+                                padding: 0;
+                                padding-right: 10px;
+                                font-size: .9rem;
+                            }
+                        }
+                    }
+
+                    .participants {
+                        display: flex;
+                        padding-bottom: 10px;
+
+                        .h-avatar {
+                            margin-right: 8px;
+                        }
+
+                        .add-participant {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 40px;
+                            width: 40px;
+                            min-width: 40px;
+                            border-radius: 50%;
+                            border: 1.6px dashed $light-text;
+                            color: $light-text;
+                            outline: none;
+                            padding: 0;
+                            background: none;
+                            margin-left: 4px;
+                            cursor: pointer;
+                            transition: all .3s;
+
+                            &:hover {
+                                border: 1.6px solid $primary;
+                                color: $primary;
+                            }
+
+                            svg {
+                                height: 16px;
+                                width: 16px;
+                            }
+                        }
+                    }
+
+                    .color-codes {
+                        display: flex;
+                        align-items: center;
+                        height: 38px;
+
+                        .color-code {
+                            height: 14px;
+                            width: 14px;
+                            border-radius: 50%;
+                            background: $white;
+                            margin-right: 10px;
+                            border: 3px solid $light-text;
+                            cursor: pointer;
+                            opacity: .6;
+                            transition: all .3s;
+
+                            &:hover {
+                                opacity: 1;
+                            }
+
+                            &.is-primary {
+                                border-color: $primary;
+                            }
+
+                            &.is-secondary {
+                                border-color: $secondary;
+                            }
+
+                            &.is-info {
+                                border-color: $info;
+                            }
+
+                            &.is-success {
+                                border-color: $success;
+                            }
+
+                            &.is-purple {
+                                border-color: $h-purple;
+                            }
+                        }
+                    }
+
+                    .add-link {
+                        display: inline-block;
+                        padding: 4px 0;
+                        font-family: $font;
+                        font-weight: 500;
+                        font-size: .9rem;
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    }
+
+    .form-outer {
+        @extend .s-card;
+
+        padding: 0;
+
+        .form-header {
+            padding: 12px 20px;
+            border-bottom: 1px solid darken($fade-grey, 3%);
+            transition: all .3s;
+
+            &.is-stuck {
+                background: $white;
+                padding-right: 80px;
+                border-left: 1px solid darken($fade-grey, 3%);
+            }
+
+            .form-header-inner {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .left {
+                h3 {
+                    font-family: $font-alt;
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                    line-height: 1.3;
+                }
+
+                p {
+                    font-size: .95rem;
+                }
+            }
+        }
+
+        .form-body {
+            padding: 20px 40px 40px 40px;
+        }
+    }
+}
+
+body {
+    &.is-dark {
+        .form-layout {
+            &.is-split {
+                .form-outer {
+                    .form-body {
+                        .form-section {
+                            &.is-grey {
+                                background: lighten($dark-sidebar, 4%) !important;
+                            }
+
+                            h3 {
+                                color: $dark-dark-text;
+                            }
+
+                            .left {
+                                border-color: lighten($dark-sidebar, 12%) !important;
+
+                                .operator {
+                                    background: lighten($dark-sidebar, 6%) !important;
+                                    color: $dark-dark-text;
+                                }
+
+                                .radio-pills {
+                                    .radio-pill {
+                                        input {
+                                            &:checked + .radio-pill-inner {
+                                                border-color: $accent;
+                                                background: $accent;
+                                                box-shadow: $accent-box-shadow;
+                                                color: $smoke-white;
+                                            }
+                                        }
+
+                                        .radio-pill-inner {
+                                            background: lighten($dark-sidebar, 2%);
+                                            border-color: lighten($dark-sidebar, 12%);
+                                            color: $dark-dark-text;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.is-separate {
+                .form-outer {
+                    background: none !important;
+
+                    .form-body {
+                        .form-section {
+                            .form-section-inner {
+                                > h3 {
+                                    color: $dark-dark-text;
+                                }
+
+                                .radio-boxes {
+                                    .radio-box {
+                                        input:checked + .radio-box-inner {
+                                            background: $accent;
+                                            border-color: $accent;
+                                            box-shadow: $accent-box-shadow;
+
+                                            .fee, p {
+                                                color: $smoke-white;
+                                            }
+                                        }
+
+                                        .radio-box-inner {
+                                            background: lighten($dark-sidebar, 2%);
+                                            border-color: lighten($dark-sidebar, 12%);
+
+                                            .fee {
+                                                color: $dark-dark-text;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.is-stacked {
+                .form-outer {
+                    .form-body {
+                        .form-section {
+                            border-color: lighten($dark-sidebar, 12%);
+
+                            &.is-grey {
+                                background: lighten($dark-sidebar, 4%);
+                            }
+
+                            .form-section-header {
+                                border-color: lighten($dark-sidebar, 12%);
+
+                                .left {
+                                    h3 {
+                                        color: $dark-dark-text;
+                                    }
+                                }
+                            }
+
+                            .form-section-inner {
+                                .add-link {
+                                    color: $accent;
+                                }
+
+                                .color-codes {
+                                    .color-code {
+                                        background: lighten($dark-sidebar, 6%);
+
+                                        &.is-primary {
+                                            border-color: $accent;
+                                        }
+                                    }
+                                }
+
+                                .participants {
+                                    .add-participant {
+                                        &:hover {
+                                            border: 1.6px solid $accent;
+                                            color: $accent;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .form-outer {
+                .form-header {
+                    border-color: lighten($dark-sidebar, 12%);
+
+                    &.is-stuck {
+                        background: $dark-sidebar;
+                        border-color: lighten($dark-sidebar, 6%);
+                    }
+
+                    .left {
+                        h3 {
+                            color: $dark-dark-text;
+                        }
+                    }
+                }
+
+                .form-body {
+                    .field {
+                        .control {
+                            .input, .textarea {
+                                &:focus {
+                                    border-color: $accent;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .form-layout {
+        &.is-split {
+            .form-outer {
+                .form-body {
+                    .form-section {
+                        flex-direction: column;
+                        padding-right: 0;
+                        padding-left: 0;
+
+                        .left, .right {
+                            width: 100%;
+                            padding-right: 30px;
+                            padding-left: 30px;
+                        }
+
+                        .left {
+                            border-right: none;
+                            border-bottom: 1px solid darken($fade-grey, 3%);
+                            padding-bottom: 40px;
+
+                            .operator {
+                                top: unset;
+                                bottom: -14px;
+                                left: 0;
+                                right: 0;
+                                margin: 0 auto;
+                                text-align: center;
+                                max-width: 60px;
+                            }
+                        }
+
+                        .right {
+                            padding-top: 30px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.is-separate {
+            .form-outer {
+                .form-body {
+                    padding-left: 0;
+                    padding-right: 0;
+                    flex-direction: column;
+
+                    .form-section {
+                        width: 100%;
+
+                        .form-section-inner {
+                            padding: 30px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.is-stacked {
+            .form-outer {
+                .form-body {
+                    .is-vhidden {
+                        display: none !important;
+                    }
+                }
+            }
+        }
+
+        .form-outer {
+            .form-header {
+                .form-header-inner {
+                    flex-direction: column;
+
+                    .left {
+                        text-align: center;
+                        margin-bottom: 12px;
+                    }
+
+                    .right {
+                        width: 100%;
+
+                        .buttons {
+                            display: flex;
+                            justify-content: space-between;
+                            margin: 0;
+
+                            .button {
+                                margin: 0;
+                                width: 49%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    .form-layout {
+        &.is-split {
+            .form-outer {
+                .form-body {
+                    .form-section {
+                        padding-right: 0;
+                        padding-left: 0;
+                    }
+                }
+            }
+        }
+
+        &.is-separate {
+            .form-outer {
+                .form-body {
+                    padding-left: 0;
+                    padding-right: 0;
+
+                    //flex-direction: column;
+
+                    .form-section {
+                        //width: 100%;
+
+                        .form-section-inner {
+                            padding: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

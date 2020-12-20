@@ -1,0 +1,2090 @@
+/*! _navbar.scss | Huro | Css ninja 2020-2021 */
+
+/*
+    1. Mobile Navbar
+    2. Mobile Navbar Dark mode
+    3. Webapp Navbar
+    4. Webapp Navbar Dark mode
+    5. Webapp Subnavbar
+*/
+
+/* ==========================================================================
+1. Mobile Navbar
+========================================================================== */
+
+.mobile-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.12);
+    transition: all .3s;
+
+    &.no-shadow {
+        box-shadow: none !important;
+    }
+
+    .navbar-brand {
+        .is-brand {
+            img {
+                position: relative;
+                height: 32px !important;
+                max-height: 32px !important;
+            }
+        }
+
+        .navbar-burger {
+            background: transparent !important;
+
+            &.is-active, &:hover {
+                background: transparent !important;
+            }
+        }
+
+        .user-dropdown {
+            margin-left: auto;
+            width: 32px;
+            height: 32px;
+
+            &.is-active {
+                svg {
+                    stroke: $muted-grey;
+                }
+            }
+
+            .is-trigger {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                cursor: pointer;
+
+                .profile-avatar {
+                    position: relative;
+                    min-width: 32px;
+                    min-height: 32px;
+
+                    .avatar {
+                        display: block;
+                        width: 32px;
+                        height: 32px;
+                        min-width: 32px;
+                        min-height: 32px;
+                        border-radius: 50%;
+                    }
+
+                    .badge {
+                        position: absolute;
+                        top: unset !important;
+                        right: -6px;
+                        bottom: -2px;
+                        width: 18px;
+                        min-width: 18px;
+                        height: 18px;
+                        max-height: 18px;
+                        border: 2px solid $white;
+                        border-radius: 50%;
+                    }
+                }
+
+                svg {
+                    margin-left: 3px;
+                    width: 22px;
+                    height: 22px;
+                    stroke: $dark-sidebar;
+                    transition: all .3s;
+                }
+            }
+
+            .dropdown-menu {
+                right: -12px;
+                margin-top: 20px;
+
+                .dropdown-content {
+                    padding-top: 0;
+                    overflow: hidden;
+
+                    .dropdown-head {
+                        display: flex;
+                        align-items: center;
+                        padding: 20px 16px 20px 16px;
+                        margin-bottom: 12px;
+                        background: #fafafa;
+
+                        .meta {
+                            margin-left: 12px;
+                            font-family: $font;
+
+                            span {
+                                display: block;
+
+                                &:first-child {
+                                    font-size: 1.1rem;
+                                    font-weight: 500;
+                                    color: $dark-text;
+                                    line-height: 1.2;
+                                }
+
+                                &:nth-child(2) {
+                                    text-transform: uppercase;
+                                    color: $light-text;
+                                    font-size: .7rem;
+                                }
+                            }
+                        }
+                    }
+
+                    .logout-button {
+                        svg {
+                            stroke: $smoke-white !important;
+                        }
+                    }
+                }
+
+                .dropdown-item {
+                    font-size: .9rem;
+                }
+            }
+
+            .flex-item {
+                display: flex !important;
+                justify-content: space-between;
+                align-items: center;
+                margin: 0 15px;
+
+                .toggler svg {
+                    stroke: $smoke-white !important;
+                }
+
+                .toggle-title {
+                    font-size: .8rem;
+                    color: $muted-grey;
+
+                    &:hover {
+                        background: transparent !important;
+                    }
+                }
+
+                &:hover {
+                    background: transparent !important;
+                }
+            }
+        }
+    }
+
+    .navbar-item {
+        &.has-icon {
+            padding: 0.75rem !important;
+            border-bottom: 1px solid $fade-grey;
+
+            &:last-child {
+                border-bottom: none !important;
+            }
+
+            svg {
+                stroke: $primary;
+            }
+
+            .sidebar-icon {
+                .path {
+                    fill: $primary;
+                }
+            }
+        }
+
+        &.is-sidebar-toggler {
+            svg {
+                stroke: $muted-grey !important;
+            }
+        }
+
+        &.is-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            span {
+                display: block;
+
+                &.menu-badge {
+                    color: $primary;
+                    width: 20px;
+                    height: 20px;
+                    border: 1px solid $primary;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 90%;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        &.is-notification {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 38px;
+            width: 38px;
+            transition: all .3s;
+            border-radius: 50%;
+            margin-right: 12px;
+
+            .navbar-link {
+                padding: 0;
+                display: block;
+                width: 18px;
+                height: 18px;
+            }
+
+            svg {
+                height: 18px;
+                width: 18px;
+                stroke: $muted-grey;
+                transition: all .3s;
+            }
+
+            .new-indicator {
+                position: absolute;
+                top: -9px;
+                right: -9px;
+                display: block;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background: $danger;
+            }
+
+            &:hover, &.is-active {
+                box-shadow: 0 3px 10px 4px rgba(0, 0, 0, 0.07);
+
+                svg {
+                    stroke: $primary;
+                }
+            }
+
+            .navbar-dropdown {
+                position: fixed;
+                padding-bottom: 15px;
+                top: 68px;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                width: 96%;
+
+                .title {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .count, .view-all {
+                        font-size: .8rem;
+                        color: $danger;
+                        text-transform: uppercase;
+                        font-weight: 500;
+                    }
+                }
+
+                .heading {
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                    padding: 1rem;
+                    border-bottom: 0.01rem solid $light-grey;
+
+                    .heading-left {
+                        h6 {
+                            font-size: .9rem;
+                            font-weight: 500;
+                            color: $light-text;
+                            line-height: 1.1;
+                        }
+                    }
+
+                    .heading-right {
+                        .notification-link {
+                            margin: 0.4rem 0;
+                            color: $primary;
+                            font-weight: 500;
+                        }
+                    }
+                }
+
+                .inner {
+                    position: relative;
+                    width: 100%;
+                    height: 264px;
+                    overflow: auto;
+
+                    .notification-list {
+                        list-style-type: none;
+                        padding: 0.5rem 1rem;
+                        margin: 0 0 0.5rem;
+
+                        .notification-item {
+                            display: flex;
+                            align-items: center;
+                            padding: 0.65rem 0;
+
+                            .img-left {
+                                img {
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                    height: 3rem;
+                                    max-height: 3rem;
+                                    width: 3rem;
+                                    margin: 0 0.5rem 0 0;
+                                    border-radius: 50%;
+                                    max-width: 100%;
+                                }
+                            }
+
+                            .user-content {
+                                text-align: left;
+
+                                .user-info {
+                                    color: $dark-text;
+                                    margin: 0.15rem 0 0;
+
+                                    span {
+                                        font-weight: 500;
+                                    }
+                                }
+
+                                .time {
+                                    margin: 0;
+                                    color: $light-text;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .navbar-burger {
+        margin-left: 0 !important;
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.02);
+        }
+
+        span {
+            background-color: $muted-grey;
+        }
+    }
+
+    .navbar-menu {
+        background: $white;
+
+        .navbar-item, .navbar-link {
+            color: $sidebar;
+        }
+
+        .navbar-link {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding-right: 10px !important;
+
+            &.is-active {
+                .link-chevron {
+                    transform: rotate(90deg);
+                }
+            }
+
+            img {
+                height: 36px;
+                width: 36px;
+                max-height: 36px !important;
+                border-radius: 50%;
+            }
+
+            svg {
+                height: 16px;
+                width: 16px;
+                stroke: $primary;
+            }
+
+            span {
+                margin: 0 10px;
+
+                &.is-heading {
+                    font-size: 12px;
+                    font-weight: 500;
+                    color: $sidebar;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                }
+
+                &.is-subheading {
+                    font-size: 10px;
+                    font-weight: 400;
+                    color: $muted-grey;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                }
+
+                &.is-block span {
+                    display: block;
+                }
+
+                &.link-chevron {
+                    margin-left: auto;
+                    height: 30px;
+                    width: 30px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transition: all .3s;
+                    transform: rotate(0);
+
+                    svg {
+                        height: 18px;
+                        width: 18px;
+                        stroke: $muted-grey;
+                    }
+                }
+            }
+
+            &:hover {
+                background: transparent !important;
+            }
+        }
+
+        .navbar-dropdown .navbar-item {
+            font-size: 95%;
+            padding: .75rem 1.5rem !important;
+            color: $muted-grey;
+
+            &.is-active, &:hover {
+                color: $primary;
+                background: lighten($placeholder, 16%);
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+2. Mobile Navbar Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .mobile-navbar {
+            background: $dark-sidebar;
+
+            .navbar-menu.is-active {
+                background: lighten($dark-sidebar, 3%);
+
+                .navbar-link {
+                    .is-heading {
+                        color: lighten($accent-grey, 10%);
+                    }
+
+                    svg {
+                        stroke: $accent;
+                    }
+                }
+
+                .navbar-item.has-icon {
+                    border-bottom-color: lighten($dark-sidebar, 10%) !important;
+                }
+
+                .navbar-dropdown .navbar-item {
+                    color: darken($accent-grey, 5%) !important;
+                }
+
+                .is-search .control {
+                    input {
+                        background: lighten($dark-sidebar, 10%) !important;
+                        border-color: lighten($dark-sidebar, 10%) !important;
+                        color: $accent-grey;
+
+                        &:focus {
+                            ~ span svg {
+                                stroke: $accent;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .is-notification {
+            &.is-active {
+                .navbar-link {
+                    svg {
+                        stroke: $accent !important;
+                    }
+                }
+            }
+
+            .navbar-dropdown {
+                background: $dark-sidebar !important;
+                border-color: $dark-sidebar !important;
+
+                .heading {
+                    border-color: lighten($dark-sidebar, 12%) !important;
+
+                    .heading-right {
+                        .notification-link {
+                            color: $accent !important;
+                        }
+                    }
+                }
+
+                .inner {
+                    .notification-list {
+                        li {
+                            .notification-item {
+                                .user-content {
+                                    p {
+                                        color: $dark-dark-text !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+3. Webapp Navbar
+========================================================================== */
+
+.webapp-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: $white;
+    transition: all .3s;
+    border-bottom: 1px solid $fade-grey;
+    z-index: 100;
+
+    &.is-transparent {
+        background: transparent;
+        box-shadow: none;
+        border-bottom-color: transparent;
+
+        &.is-solid, &.is-scrolled {
+            background: $white;
+            border-bottom-color: $fade-grey;
+        }
+
+        &.is-solid {
+            box-shadow: none !important;
+        }
+
+        &.is-scrolled {
+            box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.12);
+        }
+    }
+
+    &.is-colored {
+        background: $primary;
+        border-bottom-color: $primary;
+
+        .webapp-navbar-inner {
+            .left {
+                .separator {
+                    border-color: lighten($primary, 18%);
+                }
+
+                .title {
+                    color: $smoke-white;
+                }
+            }
+
+            .center {
+                .centered-links {
+                    .centered-link {
+                        &:hover {
+                            background: darken($primary, 6%);
+
+                            svg {
+                                stroke: $smoke-white;
+                            }
+
+                            span {
+                                color: $smoke-white;
+                            }
+                        }
+
+                        &.is-active {
+                            background: darken($primary, 12%);
+                            border-color: lighten($primary, 6%);
+
+                            &:hover {
+                                background: darken($primary, 12%);
+                            }
+
+                            svg {
+                                stroke: $smoke-white;
+                            }
+
+                            span {
+                                color: $smoke-white;
+                            }
+                        }
+
+                        svg {
+                            stroke: lighten($primary, 25%);
+                        }
+
+                        span {
+                            color: lighten($primary, 25%);
+                        }
+                    }
+                }
+
+                .centered-drops {
+                    .centered-drop {
+                        .dropdown {
+                            &:hover {
+                                .is-trigger {
+                                    .button {
+                                        background: darken($primary, 6%);
+                                        color: $smoke-white;
+                                    }
+                                }
+                            }
+
+                            &.is-active {
+                                .is-trigger {
+                                    .button {
+                                        background: darken($primary, 12%);
+                                        border-color: lighten($primary, 6%);
+                                    }
+                                }
+                            }
+
+                            .is-trigger {
+                                .button {
+                                    background: $primary;
+                                    color: lighten($primary, 45%);
+                                }
+                            }
+                        }
+                    }
+
+                    .centered-button {
+                        .button {
+                            background: $primary;
+                            color: lighten($primary, 45%);
+
+                            &:hover {
+                                background: darken($primary, 6%);
+                                color: $smoke-white;
+                            }
+                        }
+                    }
+                }
+
+                .centered-search {
+                    .field {
+                        .control {
+                            .input {
+                                background: darken($primary, 10%);
+                                border-color: darken($primary, 6%);
+                                color: $smoke-white;
+
+                                &::placeholder {
+                                    color: lighten($primary, 2%);
+                                }
+
+                                &:focus ~ .form-icon svg {
+                                    stroke: $smoke-white;
+                                }
+                            }
+
+                            .form-icon svg {
+                                stroke: lighten($primary, 6%);
+                            }
+                        }
+                    }
+                }
+            }
+
+            .right {
+                .toolbar {
+                    .toolbar-link {
+                        &:hover {
+                            background: darken($primary, 10%);
+                            border-color: darken($primary, 6%);
+                        }
+
+                        > svg {
+                            stroke: $smoke-white;
+                        }
+                    }
+
+                    .dropdown {
+                        &:hover {
+                            .is-trigger {
+                                background: darken($primary, 10%);
+                                border-color: darken($primary, 6%);
+                            }
+                        }
+
+                        .is-trigger svg {
+                            stroke: $smoke-white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .webapp-navbar-inner {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+
+        .left {
+            display: flex;
+            align-items: center;
+            width: 25%;
+
+            .brand {
+                display: flex;
+                align-items: center;
+
+                img {
+                    display: block;
+                    min-width: 38px;
+                    height: 38px;
+                }
+
+                span {
+                    font-family: $font;
+                    font-size: .95rem;
+                    color: $muted-grey;
+                    letter-spacing: 1px;
+                    max-width: 50px;
+                    line-height: 1.2;
+                    margin-left: 8px;
+                }
+            }
+
+            .separator {
+                height: 38px;
+                width: 2px;
+                border-right: 1px solid darken($fade-grey, 4%);
+                margin: 0 20px 0 16px;
+            }
+
+            .project-dropdown {
+                margin-right: 12px;
+                cursor: pointer !important;
+
+                > img {
+                    height: 32px;
+                    width: 32px;
+                    border-radius: 50%;
+                }
+
+                .dropdown-menu {
+                    margin-top: 28px;
+
+                    .dropdown-content {
+                        padding-top: 0;
+                        padding-bottom: 0;
+                        overflow: hidden;
+
+                        .dropdown-block {
+                            display: flex;
+                            align-items: center;
+                            padding: 16px;
+
+                            &:hover {
+                                background: lighten($fade-grey, 4%);
+                            }
+
+                            .meta {
+                                margin-left: 12px;
+                                font-family: $font;
+
+                                span {
+                                    display: block;
+
+                                    &:first-child {
+                                        font-size: .95rem;
+                                        font-weight: 500;
+                                        color: $dark-text;
+                                        line-height: 1.2;
+                                        max-width: 140px;
+                                        white-space: nowrap;
+                                        text-overflow: ellipsis;
+                                        overflow: hidden;
+                                    }
+
+                                    &:nth-child(2) {
+                                        //text-transform: uppercase;
+                                        color: $light-text;
+                                        font-size: .85rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-grow: 2;
+            width: 50%;
+
+            .centered-links {
+                display: flex;
+                width: 100%;
+                max-width: 580px;
+
+                .centered-link {
+                    flex: 1 1 0px;
+                    text-align: center;
+                    padding: 10px 0;
+                    border-radius: 8px;
+                    border: 1px solid transparent;
+                    margin: 0 4px;
+                    transition: all .3s;
+
+                    &:hover {
+                        background: lighten($fade-grey, 4%);
+                    }
+
+                    &.is-active {
+                        background: $white;
+                        border-color: darken($fade-grey, 3%);
+                        box-shadow: $light-box-shadow;
+
+                        &:hover {
+                            background: $white;
+                        }
+
+                        svg {
+                            stroke: $primary;
+                        }
+
+                        span {
+                            color: darken($primary, 8%);
+                        }
+                    }
+
+                    svg {
+                        height: 20px;
+                        width: 20px;
+                        stroke: lighten($light-text, 6%);
+                        stroke-width: 1.6px;
+                        transition: stroke .3s;
+                    }
+
+                    span {
+                        display: block;
+                        font-family: $font;
+                        font-size: .65rem;
+                        color: $muted-grey;
+                        text-transform: uppercase;
+                        transition: all .3s;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .centered-drops {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                max-width: 580px;
+
+                .centered-drop, .centered-button {
+                    flex: 1 1 0px;
+                    text-align: center;
+                    padding: 10px 0;
+                    border-radius: 8px;
+                    border: 1px solid transparent;
+                    margin: 0 4px;
+                    transition: all .3s;
+
+                    > .button {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 0;
+                        height: 40px;
+                        width: 40px;
+                        border: none;
+                        margin: 0 auto;
+                        box-shadow: none;
+                        border-radius: 50%;
+                        color: $light-text;
+                        transition: all .3s;
+
+                        &:hover {
+                            background: lighten($fade-grey, 3%);
+                            color: $primary;
+                        }
+
+                        svg {
+                            height: 20px;
+                            width: 20px;
+                            stroke-width: 1.6px;
+                        }
+                    }
+
+                    .dropdown {
+                        &:hover {
+                            .is-trigger {
+                                .button {
+                                    background: lighten($fade-grey, 3%);
+                                }
+                            }
+                        }
+
+                        &.is-active {
+                            .is-trigger {
+                                .button {
+                                    background: $white;
+                                    border-color: darken($fade-grey, 3%);
+                                    box-shadow: $light-box-shadow !important;
+                                }
+                            }
+                        }
+
+                        &.has-mega-dropdown {
+                            .dropdown-menu {
+                                width: 600px;
+
+                                .dropdown-content {
+                                    padding: 0;
+
+                                    .content-wrap {
+                                        position: relative;
+
+                                        &:hover {
+                                            .back-button {
+                                                opacity: 1;
+                                                pointer-events: all;
+                                            }
+                                        }
+
+                                        .back-button {
+                                            position: absolute;
+                                            top: 10px;
+                                            right: 10px;
+                                            opacity: 0;
+                                            pointer-events: none;
+                                            transition: all .3s;
+                                        }
+
+                                        .mega-menus {
+                                            display: none;
+                                            animation: fadeInLeft .5s;
+
+                                            &.is-active {
+                                                display: flex;
+                                            }
+                                        }
+                                    }
+
+                                    .category-selector {
+                                        padding: 20px 30px;
+                                        animation: fadeInLeft .5s;
+
+                                        .title-wrap {
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: space-between;
+                                            margin-bottom: 12px;
+
+                                            h4 {
+                                                font-family: $font-alt;
+                                                font-weight: 600;
+                                                color: $dark-text;
+                                            }
+                                        }
+
+                                        .category-selector-inner {
+                                            display: flex;
+                                            flex-wrap: wrap;
+                                            margin-left: -8px;
+                                            margin-right: -8px;
+
+                                            .category-item {
+                                                width: calc(20% - 16px);
+                                                margin: 8px;
+                                                text-align: center;
+                                                padding: 16px 12px;
+                                                background: $white;
+                                                border: 1px solid darken($fade-grey, 3%);
+                                                border-radius: 10px;
+                                                cursor: pointer;
+                                                transition: all .3s;
+
+                                                &:hover {
+                                                    box-shadow: $light-box-shadow;
+
+                                                    i {
+                                                        color: $primary;
+                                                    }
+
+                                                    span {
+                                                        color: $primary;
+                                                    }
+                                                }
+
+                                                i {
+                                                    color: $light-text;
+                                                    font-size: 1.6rem;
+                                                    margin-bottom: 10px;
+                                                }
+
+                                                span {
+                                                    display: block;
+                                                    text-transform: uppercase;
+                                                    font-size: .75rem;
+                                                    font-weight: 500;
+                                                    color: $dark-text;
+                                                }
+                                            }
+
+                                            .placeholder-image {
+                                                margin-left: auto;
+                                                max-width: 140px;
+                                                max-height: 100px;
+                                            }
+                                        }
+                                    }
+
+                                    .columns {
+                                        height: 100%;
+                                    }
+
+                                    .column {
+                                        padding-top: 0;
+                                        padding-bottom: 0;
+                                        padding-left: 1.5rem;
+                                        padding-right: 1.5rem;
+                                        height: 100%;
+                                    }
+
+                                    .dropdown-item-group {
+                                        &.has-margin-top {
+                                            margin-top: 20px;
+                                        }
+
+                                        .column-heading {
+                                            display: flex;
+                                            align-items: center;
+                                            font-family: $font;
+                                            font-size: .85rem;
+                                            font-weight: 600;
+                                            color: $dark-text;
+                                            text-transform: uppercase; 
+                                            padding: 20px;
+                                            border-bottom: 1px solid darken($fade-grey, 3%);
+
+                                            &.is-primary {
+                                                svg {
+                                                    stroke: $primary;
+                                                }
+                                            }
+
+                                            &.is-secondary {
+                                                svg {
+                                                    stroke: $secondary;
+                                                }
+                                            }
+
+                                            &.is-info {
+                                                svg {
+                                                    stroke: $info;
+                                                }
+                                            }
+
+                                            &.is-success {
+                                                svg {
+                                                    stroke: $success;
+                                                }
+                                            }
+
+                                            &.is-warning {
+                                                svg {
+                                                    stroke: $warning;
+                                                }
+                                            }
+
+                                            &.is-danger {
+                                                svg {
+                                                    stroke: $danger;
+                                                }
+                                            }
+
+                                            &.is-green {
+                                                svg {
+                                                    stroke: $h-green;
+                                                }
+                                            }
+
+                                            &.is-yellow {
+                                                svg {
+                                                    stroke: $h-yellow;
+                                                }
+                                            }
+
+                                            &.is-purple {
+                                                svg {
+                                                    stroke: $h-purple;
+                                                }
+                                            }
+
+                                            &.is-orange {
+                                                svg {
+                                                    stroke: $h-orange;
+                                                }
+                                            }
+
+                                            svg {
+                                                stroke-width: 3px;
+                                                height: 12px;
+                                                width: 12px;
+                                                margin-right: 6px;
+                                            }
+                                        }
+
+                                        .column-content {
+                                            padding: 10px 20px 20px 20px;
+                                            max-height: 240px;
+                                        }
+                                    }
+
+                                    .dropdown-item {
+                                        border: 1px solid transparent;
+                                        border-radius: 10px;
+                                        font-family: $font-alt;
+                                        font-size: .9rem;
+
+                                        &.is-media {
+                                            &:hover, &.is-active {
+                                                .meta {
+                                                    span {
+                                                        color: $dark-text;
+                                                    }
+                                                }
+                                            }
+
+                                            &.is-active {
+                                                background: $white;
+                                                border: 1px solid darken($fade-grey, 3%);
+                                                box-shadow: $light-box-shadow;
+                                            }
+
+                                            .meta {
+                                                margin-left: 6px;
+
+                                                span {
+                                                    font-weight: 500;
+                                                    font-size: .85rem;
+                                                    color: $light-text;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .is-trigger {
+                            .button {
+                                font-family: $font-alt;
+                                font-size: .9rem;
+                                color: $dark-text;
+                                min-height: 40px;
+                                border-color: transparent;
+                                transition: all .3s;
+                            }
+                        }
+
+                        .dropdown-menu {
+                            margin-top: 28px;
+                            text-align: left;
+                        }
+                    }
+                }
+
+                .centered-button {
+                    max-width: 50px;
+                }
+            }
+
+            .centered-search {
+                width: 100%;
+                max-width: 580px;
+
+                .field {
+                    margin-bottom: 0;
+
+                    .control {
+                        .form-icon {
+                            &.is-right {
+                                left: unset !important;
+                                right: 6px;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .right {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            width: 25%;
+
+            .toolbar {
+                .dropdown {
+                    .dropdown-menu {
+                        margin-top: 28px;
+                    }
+                }
+            }
+
+            .profile-dropdown {
+                > img {
+                    height: 32px;
+                    width: 32px;
+                    border-radius: 50%;
+                    margin: 0 4px;
+                    cursor: pointer;
+                }
+
+                .dropdown-menu {
+                    margin-top: 28px;
+
+                    .dropdown-content {
+                        padding-top: 0;
+                        overflow: hidden;
+
+                        .dropdown-head {
+                            display: flex;
+                            align-items: center;
+                            padding: 20px 16px 20px 16px;
+                            margin-bottom: 12px;
+                            background: #fafafa;
+
+                            .meta {
+                                margin-left: 12px;
+                                font-family: $font;
+
+                                span {
+                                    display: block;
+
+                                    &:first-child {
+                                        font-size: 1.1rem;
+                                        font-weight: 500;
+                                        color: $dark-text;
+                                        line-height: 1.2;
+                                    }
+
+                                    &:nth-child(2) {
+                                        text-transform: uppercase;
+                                        color: $light-text;
+                                        font-size: .7rem;
+                                    }
+                                }
+                            }
+                        }
+
+                        .logout-button {
+                            svg {
+                                stroke: $smoke-white !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+4. Webapp Navbar Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .webapp-navbar:not(.is-colored) {
+            background: darken($dark-sidebar, 2%);
+            border-color: lighten($dark-sidebar, 1%);
+
+            &.is-transparent {
+                background: transparent;
+                box-shadow: none;
+                border-bottom-color: transparent;
+
+                &.is-solid, &.is-scrolled {
+                    background: darken($dark-sidebar, 2%);
+                    border-color: lighten($dark-sidebar, 1%);
+                }
+            }
+
+            .webapp-navbar-inner {
+                .left {
+                    .separator {
+                        border-color: lighten($dark-sidebar, 12%);
+                    }
+
+                    .project-dropdown {
+                        .dropdown-menu {
+                            .dropdown-content {
+                                .dropdown-block {
+                                    background: lighten($dark-sidebar, 2%) !important;
+
+                                    &:hover {
+                                        background: lighten($dark-sidebar, 5%) !important;
+                                    }
+
+                                    .meta {
+                                        span {
+                                            &:first-child {
+                                                color: $dark-dark-text !important;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .center {
+                    .centered-links {
+                        .centered-link {
+                            &:hover {
+                                background: lighten($dark-sidebar, 3%);
+                            }
+
+                            &.is-active {
+                                background: lighten($dark-sidebar, 2%);
+                                border-color: lighten($dark-sidebar, 12%);
+
+                                &:hover {
+                                    background: lighten($dark-sidebar, 2%);
+                                }
+
+                                span {
+                                    color: $accent;
+                                }
+
+                                svg {
+                                    stroke: $accent;
+                                }
+                            }
+                        }
+                    }
+
+                    .centered-drops {
+                        .centered-drop {
+                            > .dropdown {
+                                &:hover {
+                                    .is-trigger {
+                                        .button {
+                                            background: lighten($dark-sidebar, 2%);
+                                            border-color: lighten($dark-sidebar, 2%);
+                                        }
+                                    }
+                                }
+
+                                &.is-active {
+                                    .is-trigger {
+                                        .button {
+                                            background: lighten($dark-sidebar, 2%);
+                                            border-color: lighten($dark-sidebar, 12%) !important;
+                                        }
+                                    }
+                                }
+
+                                &.has-mega-dropdown {
+                                    .dropdown-menu {
+                                        .dropdown-content {
+                                            .category-selector {
+                                                .title-wrap {
+                                                    h4 {
+                                                        color: $dark-dark-text;
+                                                    }
+                                                }
+
+                                                .category-selector-inner {
+                                                    .category-item {
+                                                        background: lighten($dark-sidebar, 4%);
+                                                        border-color: lighten($dark-sidebar, 12%);
+
+                                                        &:hover {
+                                                            i, span {
+                                                                color: $accent;
+                                                            }
+                                                        }
+
+                                                        span {
+                                                            color: $dark-dark-text;
+                                                        }
+                                                    }
+                                                }
+                                            }
+
+                                            .mega-menus {
+                                                .dropdown-item-group {
+                                                    .column-heading {
+                                                        color: $dark-dark-text;
+                                                        border-color: lighten($dark-sidebar, 12%);
+                                                    }
+
+                                                    .column-content {
+                                                        .is-media {
+                                                            &:hover {
+                                                                .meta {
+                                                                    span:first-child {
+                                                                        color: $smoke-white;
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .is-trigger {
+                                    .button {
+                                        background: transparent;
+                                        border: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .centered-button {
+                        > .button {
+                            background: transparent !important;
+                            border: none;
+
+                            &:hover {
+                                background: lighten($dark-sidebar, 3%) !important;
+                            }
+                        }
+                    }
+                }
+
+                .right {
+                    .profile-dropdown {
+                        .dropdown-menu {
+                            .dropdown-content {
+                                .dropdown-head {
+                                    background: lighten($dark-sidebar, 2%) !important;
+
+                                    &:hover {
+                                        background: lighten($dark-sidebar, 2%) !important;
+                                    }
+
+                                    .meta {
+                                        &:hover {
+                                            background: lighten($dark-sidebar, 2%) !important;
+                                        }
+
+                                        span {
+                                            &:first-child {
+                                                color: $dark-dark-text !important;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .webapp-navbar {
+            &.is-colored {
+                background: darken($accent, 2%);
+
+                .webapp-navbar-inner {
+                    .left {
+                        .separator {
+                            border-color: lighten($accent, 3%);
+                        }
+
+                        .title {
+                            color: $smoke-white !important;
+                        }
+                    }
+
+                    .center {
+                        .centered-links {
+                            .centered-link {
+                                &:hover {
+                                    background: darken($accent, 5%);
+
+                                    svg {
+                                        stroke: $smoke-white;
+                                    }
+
+                                    span {
+                                        color: $smoke-white;
+                                    }
+                                }
+
+                                &.is-active {
+                                    background: darken($accent, 8%);
+                                    border-color: darken($accent, 2%);
+
+                                    &:hover {
+                                        background: darken($accent, 8%);
+                                    }
+
+                                    svg {
+                                        stroke: $smoke-white;
+                                    }
+
+                                    span {
+                                        color: $smoke-white;
+                                    }
+                                }
+
+                                svg {
+                                    stroke: lighten($accent, 12%);
+                                }
+
+                                span {
+                                    color: lighten($accent, 12%);
+                                }
+                            }
+                        }
+
+                        .centered-drops {
+                            .centered-drop {
+                                .dropdown {
+                                    &:hover {
+                                        .is-trigger {
+                                            .button {
+                                                background: darken($accent, 8%);
+                                                border-color: darken($accent, 4%);
+                                                color: $smoke-white;
+                                            }
+                                        }
+                                    }
+
+                                    &.is-active {
+                                        .is-trigger {
+                                            .button {
+                                                background: darken($accent, 8%);
+                                                border-color: darken($accent, 6%);
+                                                color: $smoke-white;
+                                            }
+                                        }
+                                    }
+
+                                    &.has-mega-dropdown {
+                                        .dropdown-menu {
+                                            .dropdown-content {
+                                                .category-selector {
+                                                    .title-wrap {
+                                                        h4 {
+                                                            color: $dark-dark-text;
+                                                        }
+                                                    }
+
+                                                    .category-selector-inner {
+                                                        .category-item {
+                                                            background: lighten($dark-sidebar, 4%);
+                                                            border-color: lighten($dark-sidebar, 12%);
+
+                                                            &:hover {
+                                                                i, span {
+                                                                    color: $accent;
+                                                                }
+                                                            }
+
+                                                            span {
+                                                                color: $dark-dark-text;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+
+                                                .mega-menus {
+                                                    .dropdown-item-group {
+                                                        .column-heading {
+                                                            color: $dark-dark-text;
+                                                            border-color: lighten($dark-sidebar, 12%);
+                                                        }
+
+                                                        .column-content {
+                                                            .is-media {
+                                                                &:hover {
+                                                                    .meta {
+                                                                        span:first-child {
+                                                                            color: $smoke-white;
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    .is-trigger {
+                                        .button {
+                                            background: darken($accent, 2%);
+                                            border-color: darken($accent, 2%);
+                                            color: lighten($accent, 22%);
+
+                                            svg {
+                                                stroke: lighten($accent, 24%);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .centered-button {
+                                .button {
+                                    background: darken($accent, 2%) !important;
+                                    border-color: darken($accent, 2%) !important;
+                                    color: lighten($accent, 22%) !important;
+
+                                    &:hover {
+                                        background: darken($accent, 8%) !important;
+                                        color: $smoke-white !important;
+                                    }
+                                }
+                            }
+                        }
+
+                        .centered-search {
+                            .field {
+                                .control {
+                                    .input {
+                                        background: darken($accent, 10%);
+                                        border-color: darken($accent, 6%);
+                                        color: $smoke-white;
+
+                                        &::placeholder {
+                                            color: lighten($accent, 4%) !important;
+                                        }
+
+                                        &:focus ~ .form-icon svg {
+                                            stroke: $smoke-white !important;
+                                        }
+                                    }
+
+                                    .form-icon svg {
+                                        stroke: lighten($accent, 6%);
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .right {
+                        .toolbar {
+                            .toolbar-link {
+                                &:hover {
+                                    background: darken($accent, 10%) !important;
+                                    border-color: darken($accent, 6%) !important;
+                                }
+
+                                > svg {
+                                    stroke: $smoke-white;
+                                }
+                            }
+
+                            .dropdown {
+                                &:hover, &.is-active {
+                                    .is-trigger {
+                                        background: darken($accent, 10%) !important;
+                                        border-color: darken($accent, 6%) !important;
+                                    }
+                                }
+
+                                .is-trigger svg {
+                                    stroke: $smoke-white;
+                                }
+                            }
+                        }
+
+                        .profile-dropdown {
+                            .dropdown-menu {
+                                .dropdown-content {
+                                    .dropdown-head {
+                                        background: lighten($dark-sidebar, 2%) !important;
+
+                                        &:hover {
+                                            background: lighten($dark-sidebar, 2%) !important;
+                                        }
+
+                                        .meta {
+                                            &:hover {
+                                                background: lighten($dark-sidebar, 2%) !important;
+                                            }
+
+                                            span {
+                                                &:first-child {
+                                                    color: $dark-dark-text !important;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .webapp-subnavbar {
+            background: lighten($dark-sidebar, 2%);
+            border-color: lighten($dark-sidebar, 4%);
+
+            .webapp-subnavbar-inner {
+                .tabs {
+                    li {
+                        &.is-active {
+                            a {
+                                border-color: lighten($dark-sidebar, 12%);
+                                background: darken($dark-sidebar, 2%);
+                                color: $accent;
+                                opacity: 1;
+                            }
+
+                            &:hover {
+                                a {
+                                    background: darken($dark-sidebar, 2%);
+                                }
+                            }
+                        }
+
+                        &:hover {
+                            a {
+                                background: lighten($dark-sidebar, 8%);
+                            }
+                        }
+
+                        a {
+                            opacity: .6;
+                        }
+                    }
+                }
+
+                .tab-content {
+                    .tab-content-inner {
+                        .center {
+                            .column {
+                                border-color: lighten($dark-sidebar, 12%);
+                            }
+
+                            .column-heading {
+                                color: $dark-dark-text;
+                            }
+
+                            .column-placeholder {
+                                &:hover {
+                                    border-color: $accent;
+
+                                    h3 {
+                                        color: $accent;
+                                    }
+                                }
+
+                                h3 {
+                                    color: $dark-dark-text;
+                                }
+                            }
+
+                            ul {
+                                li {
+                                    &:hover {
+                                        a {
+                                            opacity: 1;
+                                            color: $accent;
+                                        }
+                                    }
+
+                                    &.is-active {
+                                        border-color: $accent;
+
+                                        a {
+                                            opacity: 1;
+                                            color: $accent;
+                                        }
+                                    }
+
+                                    a {
+                                        opacity: .6;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+5. Webapp Subnavbar
+========================================================================== */
+
+.webapp-subnavbar {
+    position: fixed;
+    width: 100%;
+    height: 0;
+    background: $white;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 99;
+    transform: translateY(10px);
+    border: 1px solid darken($fade-grey, 3%);
+    box-shadow: $light-box-shadow;
+    transition: all .3s;
+    max-width: 800px;
+    top: 85px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 6px;
+
+    &.is-active {
+        height: 320px;
+        opacity: 1;
+        pointer-events: all;
+        transform: translateY(0);
+    }
+
+    .webapp-subnavbar-inner {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        display: none;
+
+        &.is-active {
+            display: block;
+        }
+
+        .tabs {
+            margin: 0 auto 10px auto;
+
+            &.is-3 {
+                max-width: 410px;
+            }
+
+            &.is-2 {
+                max-width: 280px;
+            }
+
+            &.is-4 {
+                max-width: 460px;
+            }
+
+            ul {
+                display: flex;
+                border: none !important;
+                padding: 10px 0;
+
+                li {
+                    flex: 1 1 0px;
+
+                    &.is-active {
+                        a {
+                            font-weight: 600;
+                            color: $primary;
+                            background: $white;
+                            border-color: darken($fade-grey, 3%);
+                            box-shadow: $light-box-shadow;
+                        }
+
+                        &:hover {
+                            a {
+                                background: $white;
+                            }
+                        }
+                    }
+
+                    &:hover {
+                        a {
+                            background: lighten($fade-grey, 4%);
+                        }
+                    }
+
+                    a {
+                        text-transform: uppercase;
+                        font-family: $font-alt;
+                        font-size: .65rem;
+                        letter-spacing: 1px;
+                        padding: 10px 16px;
+                        border: 1px solid transparent;
+                        border-radius: 8px;
+                        margin: 0 10px;
+                        transition: all .3s;
+                    }
+                }
+            }
+        }
+
+        .tab-content {
+            padding: 0 20px;
+
+            .tab-content-inner {
+                display: flex;
+                align-items: stretch;
+                min-height: 220px;
+
+                .center {
+                    flex-grow: 2;
+                    max-width: 940px;
+                    max-height: 220px;
+                    margin: 0 auto;
+                    padding: 10px 20px 0 20px;
+
+                    .columns {
+                        height: 100%;
+                    }
+
+                    .column {
+                        padding-top: 0;
+                        padding-bottom: 0;
+                        padding-left: 1.5rem;
+                        padding-right: 1.5rem;
+                        height: 100%;
+
+                        &:not(:last-child) {
+                            border-right: 1px solid darken($fade-grey, 3%);
+                        }
+                    }
+
+                    .column-heading {
+                        font-family: $font-alt;
+                        font-size: .7rem;
+                        font-weight: 600;
+                        color: $dark-text;
+                        text-transform: uppercase;
+                        margin-bottom: 12px;
+                    }
+
+                    .column-placeholder {
+                        @extend .r-card;
+
+                        text-align: center;
+                        padding: 16px !important;
+                        margin-top: 4px;
+                        margin-bottom: 10px;
+
+                        &:hover {
+                            border-color: $primary;
+                            box-shadow: $light-box-shadow;
+
+                            h3 {
+                                color: $primary;
+                            }
+                        }
+
+                        > img {
+                            display: block;
+                            width: 100%;
+                            max-width: 34px;
+                            margin: 0 auto 6px auto;
+                        }
+
+                        h3 {
+                            font-family: $font-alt;
+                            font-size: .85rem;
+                            font-weight: 600;
+                            color: $dark-text;
+                            transition: color .3s;
+                        }
+                    }
+
+                    ul {
+                        li {
+                            transition: all .3s;
+                            margin-bottom: 6px;
+
+                            &:hover {
+                                a {
+                                    color: $primary;
+                                }
+                            }
+
+                            &.is-active {
+                                border-radius: 0;
+
+                                a {
+                                    color: darken($primary, 14%);
+
+                                    svg {
+                                        opacity: 1;
+                                        fill: $primary;
+                                    }
+                                }
+                            }
+
+                            a {
+                                display: flex;
+                                align-items: center;
+                                color: lighten($light-text, 5%);
+
+                                span {
+                                    font-family: $font;
+                                    font-size: .9rem;
+                                }
+
+                                .lnil, .lnir, .fas, .fal, .fab, .far {
+                                    margin-right: 10px;
+                                }
+
+                                svg {
+                                    opacity: 0;
+                                    position: relative;
+                                    top: 0;
+                                    margin-left: 12px;
+                                    height: 6px;
+                                    width: 6px;
+                                    stroke-width: 2px;
+                                    fill: $primary;
+                                    transition: all .3s;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,138 @@
+/*! _loader.scss | Huro | Css Ninja 2020-2021 */
+
+/*
+    1. Infinite Srcoll Loader
+    2. H Loader
+*/
+
+/* ==========================================================================
+1. Infinite Srcoll Loader
+========================================================================== */
+
+.infinite-scroll-loader {
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .3s;
+
+    &.is-active {
+        pointer-events: all;
+        opacity: 1;
+    }
+
+    .infinite-scroll-loader-inner {
+        height: 180px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        .loader {
+            height: 5rem;
+            width: 5rem;
+        }
+
+        .loader-end {
+            span {
+                font-family: $font;
+                color: $light-text;
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+2. H Loader
+========================================================================== */
+
+.has-loader {
+    position: relative;
+
+    &.has-loader-active {
+        overflow: hidden;
+
+        .h-loader-wrapper {
+            opacity: 1;
+            pointer-events: all;
+        }
+    }
+
+    .h-loader-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        background: $white;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity .3s;
+        z-index: 5;
+
+        .loader {
+            height: 3rem;
+            width: 3rem;
+
+            &.is-small {
+                height: 2rem;
+                width: 2rem;
+            }
+
+            &.is-large {
+                height: 5rem;
+                width: 5rem;
+            }
+
+            &.is-xl {
+                height: 7rem;
+                width: 7rem;
+            }
+        }
+    }
+}
+
+body {
+    &.is-dark {
+        .has-loader {
+            .h-loader-wrapper {
+                background: lighten($dark-sidebar, 6%);
+            }
+        }
+    }
+}
+
+
+
+$grey-lighter: hsl(0, 0%, 86%) !default;
+$radius-rounded: 290486px !default;
+
+@keyframes spinAroundLoader {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+@mixin loader {
+    animation: spinAroundLoader 500ms infinite linear;
+    border: 2px solid $grey-lighter;
+    border-radius: $radius-rounded;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    content: "";
+    display: block;
+    height: 1em;
+    position: relative;
+    width: 1em;
+}
+
+%loader {
+    @include loader;
+}

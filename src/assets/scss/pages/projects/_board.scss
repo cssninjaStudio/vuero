@@ -1,0 +1,552 @@
+/*! _board.scss | Huro | Css ninja 2020-2021 */
+
+/*
+    1. Kanban Toolbar
+    2. Kanban Layout
+    3. Kanban Card
+    4. Dragula
+    5. Kanban Board Dark mode
+    6. Media Queries
+*/
+
+/* ==========================================================================
+1. Kanban Toolbar
+========================================================================== */
+
+.kanban-toolbar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    &.is-webapp {
+        padding-top: 30px;
+    }
+
+    .avatar-stack {
+        margin-left: 16px;
+    }
+
+    .button {
+        margin-left: auto;
+    }
+}
+
+
+/* ==========================================================================
+2. Kanban Layout
+========================================================================== */
+
+.is-kanban-wrapper {
+    .column {
+        padding: 0.35rem !important;
+    }
+
+    .kanban-column {
+        padding: 6px;
+        background: #e3e4e5;
+        border-radius: 8px;
+        border: 1px solid #ddd;
+
+        .column-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            h3 {
+                margin-bottom: 0;
+                font-family: $font;
+                font-size: .85rem;
+                font-weight: 500;
+                text-transform: uppercase;
+                color: darken($light-text, 8%);
+            }
+
+            .input {
+                margin-right: 20px;
+            }
+
+            svg {
+                height: 18px;
+                width: 18px;
+                stroke: $dark-text;
+            }
+
+            .dropdown {
+                .is-trigger {
+                    height: 18px;
+                    width: 18px;
+                    cursor: pointer;
+
+                    svg {
+                        height: 18px;
+                        width: 18px;
+                        stroke: darken($light-text, 8%);
+                    }
+                }
+            }
+        }
+
+        .empty-state {
+            display: none;
+            margin: 30px auto 10px auto;
+            width: 150px;
+            height: auto;
+        }
+
+        .empty-text {
+            display: none;
+            text-align: center;
+            padding: 10px 10px 20px 10px;
+            font-size: .95rem;
+            color: $dark-text;
+
+            span {
+                display: block;
+            }
+
+            a {
+                line-height: 0.9;
+                margin-top: 10px;
+            }
+        }
+
+        .collapsed-content {
+            display: none;
+        }
+
+        &.is-empty {
+            .empty-state, .empty-text {
+                display: block !important;
+            }
+        }
+
+        &.is-collapsed {
+            width: 100%;
+            height: 500px;
+
+            .column-title, .kanban-card, .empty-state, .empty-text {
+                display: none !important;
+            }
+
+            .collapsed-content {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                .expand-button {
+                    margin-top: 20px;
+                    height: 46px;
+                    width: 46px;
+                    background: $white;
+                    border-radius: 50%;
+                    border: 1.4px solid $fade-grey;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transition: all .3s;
+                    cursor: pointer;
+
+                    svg {
+                        height: 18px;
+                        width: 18px;
+                        transition: all .3s;
+                        stroke: $muted-grey;
+                    }
+
+                    &:hover {
+                        border-color: $primary;
+
+                        svg {
+                            stroke: $primary;
+                        }
+                    }
+                }
+
+                .task-count {
+                    margin-top: 20px;
+                    height: 38px;
+                    width: 38px;
+                    background: $primary;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    span {
+                        display: block;
+                        font-size: .9rem;
+                        font-weight: 700;
+                        color: $smoke-white;
+                    }
+                }
+
+                .collapsed-text {
+                    position: absolute;
+                    bottom: 160px;
+                    min-width: 250px;
+                    font-size: 1rem;
+                    color: $dark-text;
+                    font-weight: 600;
+                    margin-left: -3px;
+                    transform: rotate(-90deg);
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+3. Kanban Card
+========================================================================== */
+
+.kanban-card {
+    width: 100%;
+    background: $white;
+    border-radius: 6px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    transition: all .4s;
+
+    &:hover {
+        box-shadow: 0px 5px 43px rgba(0, 0, 0, 0.18) !important;
+    }
+
+    &.is-new {
+        .new-avatar {
+            margin: 20px 0 10px 0;
+            width: 100%;
+
+            .avatar-wrapper {
+                position: relative;
+                width: 74px;
+                height: 74px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 auto;
+                border-radius: 50%;
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    top: calc(50% - 12px);
+                    left: calc(50% - 12px);
+                    height: 24px;
+                    width: 24px;
+                    border-radius: 50%;
+                    background: $white;
+                    animation: wave 1.6s infinite;
+                    animation-duration: 2s;
+                    transform-origin: center center;
+                    z-index: 0;
+                }
+
+                .task-owner {
+                    position: relative;
+                    display: block;
+                    width: 62px;
+                    height: 62px;
+                    border-radius: 50%;
+                    z-index: 2;
+                }
+
+                &.is-warning {
+                    border: 2px solid $warning;
+
+                    &:after {
+                        background: $warning;
+                    }
+                }
+
+                &.is-info {
+                    border: 2px solid $info;
+
+                    &:after {
+                        background: $info;
+                    }
+                }
+            }
+        }
+
+        .card-footer {
+            a {
+                font-size: .85rem;
+                font-weight: 500;
+                color: $light-text;
+            }
+        }
+    }
+
+    .card-body {
+        padding: 10px;
+
+        .kanban-card-stats {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            padding-top: 16px;
+
+            > span {
+                font-size: .9rem;
+                color: $light-text;
+
+                svg {
+                    position: relative;
+                    top: 2px;
+                    height: 14px;
+                    width: 14px;
+                    stroke-width: 1.6px;
+                }
+            }
+        }
+    }
+
+    .card-title {
+        font-size: .9rem;
+        font-family: $font-alt;
+        font-weight: 600;
+        color: $dark-text;
+    }
+
+    .spaced-card-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+}
+
+/* ==========================================================================
+4. Dragula
+========================================================================== */
+
+#kanban-1, #kanban-2, #kanban-3 {
+    .kanban-card {
+        //fallback if grab cursor is unsupported
+        cursor: move;
+        cursor: grab;
+        cursor: -moz-grab;
+        cursor: -webkit-grab;
+
+        //(Optional) Apply a "closed-hand" cursor during drag operation.
+        &:active {
+            cursor: grabbing;
+            cursor: -moz-grabbing;
+            cursor: -webkit-grabbing;
+        }
+    }
+}
+
+.gu-transit {
+    cursor: grabbing !important;
+    cursor: -moz-grabbing !important;
+    cursor: -webkit-grabbing !important;
+}
+
+.gu-mirror {
+    position: fixed;
+}
+
+
+/* ==========================================================================
+5. Kanban Board Dark mode
+========================================================================== */
+
+body {
+    &.is-dark {
+        .kanban-column {
+            background: lighten($dark-sidebar, 15%);
+            border-color: lighten($dark-sidebar, 15%);
+
+            .collapsed-content {
+                .expand-button {
+                    background: lighten($dark-sidebar, 6%) !important;
+                    border-color: lighten($dark-sidebar, 12%) !important;
+
+                    &:hover {
+                        svg {
+                            stroke: $accent !important;
+                        }
+                    }
+                }
+
+                .task-count {
+                    background: $accent !important;
+                    border-color: $accent !important;
+
+                    svg {
+                        stroke: $white !important;
+                    }
+                }
+
+                .collapsed-text {
+                    color: $dark-dark-text !important;
+                }
+            }
+
+            .column-title {
+                h3 {
+                    color: $light-white;
+                }
+
+                .is-trigger svg {
+                    stroke: $light-white !important;
+                }
+            }
+
+            .dropdown-content {
+                background: $dark-sidebar;
+
+                .dropdown-item {
+                    color: $white;
+                }
+
+                .dropdown-divider {
+                    background: lighten($dark-sidebar, 5%);
+                }
+
+                a:hover, div:hover {
+                    background: lighten($dark-sidebar, 5%) !important;
+                }
+            }
+
+            .empty-text {
+                color: $accent-grey;
+            }
+
+            .kanban-card, .gu-transit {
+                background: lighten($dark-sidebar, 6%) !important;
+                border-color: lighten($dark-sidebar, 6%) !important;
+
+                &.is-new {
+                    background: lighten($dark-sidebar, 6%);
+                    border-color: lighten($dark-sidebar, 6%);
+    
+                    .card-title {
+                        color: lighten($accent-grey, 2%);
+                    }
+    
+                    .card-footer, .card-footer-item {
+                        border-color: lighten($dark-sidebar, 20%);
+                        color: $light-white;
+                    }
+                }
+
+                .card-title {
+                    color: lighten($accent-grey, 2%);
+                }
+            }
+        }
+    }
+}
+
+
+/* ==========================================================================
+6. Media Queries
+========================================================================== */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+
+    .kanban-column {
+        padding: 20px !important;
+
+        .kanban-card {
+            .card-body {
+                padding: 20px 40px;
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+
+    .kanban-content {
+        padding: 0 10px !important;
+    }
+
+    .is-kanban-wrapper {
+        .column {
+            padding: 0.15rem !important;
+        }
+    }
+
+    .kanban-column {
+        .empty-state {
+            width: 130px !important;
+        }
+
+        .empty-text {
+            font-size: .7rem !important;
+        }
+
+        .kanban-card {
+            .card-title {
+                max-width: 152px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+
+            .bounty-meta {
+                .due-date {
+                    display: none;
+                }
+            }
+
+            .progress-block {
+                margin-top: 8px;
+
+                .spec-count {
+                    font-size: .5rem;
+                }
+            }
+
+            .avatar-group img {
+                height: 28px;
+                width: 28px;
+            }
+
+            .done-icon {
+                height: 18px;
+                width: 18px;
+
+                svg {
+                    height: 12px;
+                    width: 12px;
+                }
+            }
+
+            &.is-invitation {
+                .invitation-avatar {
+                    .avatar-wrapper {
+                        width: 58px;
+                        height: 58px;
+
+                        .bounty-owner {
+                            width: 44px;
+                            height: 44px;
+                        }
+
+                        .skill-badge {
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+                }
+
+                .card-footer-item {
+                    padding: .5rem;
+                    font-size: .7rem;
+                }
+
+                .time-left {
+                    .time-value {
+                        font-size: .5rem;
+                    }
+                }
+            }
+        }
+    }
+
+}

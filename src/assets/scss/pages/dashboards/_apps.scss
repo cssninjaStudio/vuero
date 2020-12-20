@@ -1,0 +1,681 @@
+/*! _apps.scss | Huro | Css ninja 2020-2021 */
+
+/*
+    1. Food Delivery Dashboard
+*/
+
+/* ==========================================================================
+1. Food Delivery Dashboard
+========================================================================== */
+
+.food-delivery-dashboard {
+    display: flex;
+
+    &.is-webapp {
+        margin-top: 30px;
+
+        > .right {
+            .sticky-panel {
+                height: calc(100% - 120px) !important;
+
+                &.is-stretched {
+                    height: calc(100% - 120px);
+                    top: 100px;
+                }
+            }
+        }
+    }
+
+    .left {
+        width: 70%;
+
+        .left-header {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-radius: 16px;
+            background: lighten($accent, 24%);
+            font-family: $font;
+
+            .header-image {
+                position: relative;
+                height: 150px;
+                width: 280px;
+
+                img {
+                    position: absolute;
+                    top: -40px;
+                    left: -30px;
+                    display: block;
+                }
+            }
+
+            .header-meta {
+                margin-left: 0px;
+                margin-bottom: 20px;
+
+                h3 {
+                    font-family: $font-alt;
+                    font-weight: 700;
+                    font-size: 1.6rem;
+                }
+
+                p {
+                    font-weight: 400;
+                    color: darken($primary, 14%);
+                    margin-bottom: 8px;
+                }
+
+                .action-link {
+                    span {
+                        font-size: .8rem;
+                        text-transform: uppercase;
+                        margin-right: 6px;
+                    }
+
+                    i {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+
+        .left-body {
+            .restaurants {
+                .restaurants-toolbar {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin: 20px 0;
+                    font-family: $font;
+
+                    .left {
+                        h3 {
+                            font-family: $font-alt;
+                            color: $dark-text;
+                            font-size: 1.3rem;
+                            font-weight: 600;
+                        }
+                    }
+
+                    .right {
+                        display: flex;
+                        justify-content: flex-end;
+                    }
+                }
+            }
+
+            .food-pills {
+                position: relative;
+
+                .food-pills-inner {
+
+                    .food-pill {
+                        display: flex;
+                        flex-direction: column;
+                        text-align: center;
+                        width: 80px;
+                        height: 170px;
+                        background: $white;
+                        border: 1px solid darken($fade-grey, 3%);
+                        border-radius: 500px;
+                        padding: 10px;
+                        margin: 0 10px;
+                        cursor: pointer;
+                        transition: all .3s;
+
+                        &.is-active {
+                            background: $primary;
+                            border-color: $primary;
+
+                            .food-pill-icon {
+                                border-color: $primary;
+                            }
+
+                            > span {
+                                color: $smoke-white;
+                            }
+                        }
+
+                        .food-pill-icon {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 60px;
+                            height: 80px;
+                            background: $white;
+                            border: 1px solid darken($fade-grey, 3%);
+                            border-radius: 500px;
+
+                            img {
+                                display: flex;
+                                height: 26px;
+                                width: 26px;
+                            }
+                        }
+
+                        span {
+                            font-family: $font;
+                            font-weight: 500;
+                            padding-top: 12px;
+                            transition: color .3s;
+                        }
+                    }
+                }
+
+                .slick-slide {
+                    &:focus {
+                        outline: none !important;
+                    }
+
+                    &.slick-current {
+                        background: $primary;
+                        border-color: $primary;
+
+                        .food-pill-icon {
+                            border-color: $primary;
+                        }
+
+                        > span {
+                            color: $smoke-white;
+                        }
+                    }
+                }
+
+                .slick-custom {
+                    &.is-prev {
+                        right: 30px;
+
+                        i {
+                            position: relative;
+                            left: -1px;
+                        }
+                    }
+
+                    &.is-next {
+                        right: 0;
+
+                        i {
+                            position: relative;
+                            right: -1px;
+                        }
+                    }
+                }
+
+                .slick-prev:before, .slick-next:before {
+                    color: $muted-grey;
+                }
+
+                .slick-custom {
+                    position: absolute;
+                    top: -50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid transparent;
+                    width: 30px;
+                    height: 30px;
+                    background: transparent;
+                    border-radius: 100px;
+                    cursor: pointer;
+                    color: $light-text;
+                    transition: all 0.3s;
+                    z-index: 25;
+
+                    svg {
+                        height: 16px;
+                        width: 16px;
+                        stroke: $primary;
+                        transition: all .3s;
+                    }
+
+                    &:hover {
+                        border-color: darken($fade-grey, 4%);
+                        background: $white;
+                        box-shadow: $light-box-shadow;
+                    }
+                }
+            }
+
+            .restaurants-list {
+                padding: 30px 0;
+
+                .restaurants-list-item {
+                    @extend .l-card;
+
+                    position: relative;
+                    padding: 0;
+                    border: none;
+                    background: none;
+
+                    .image-container {
+                        position: relative;
+
+                        > img {
+                            display: block;
+                            object-fit: cover;
+                            border-radius: 24px;
+                            min-height: 180px;
+                            max-height: 180px;
+                            width: 100%;
+                        }
+
+                        .timer {
+                            position: absolute;
+                            bottom: 10px;
+                            left: 10px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 50px;
+                            width: 50px;
+                            border-radius: 12px;
+                            background: $primary;
+                            border: 1px solid $primary;
+                            font-family: $font;
+                            text-align: center;
+
+                            span {
+                                display: block;
+
+                                &:first-child {
+                                    font-size: 1.3rem;
+                                    color: $smoke-white;
+                                    font-weight: 600;
+                                    line-height: 1;
+                                }
+
+                                &:nth-child(2) {
+                                    font-size: .7rem;
+                                    text-transform: uppercase;
+                                    color: lighten($primary, 40%);
+                                }
+                            }
+                        }
+                    }
+
+                    .meta-container {
+                        display: flex;
+                        align-items: center;
+                        padding: 5px 5px;
+
+                        .meta-icon {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 46px;
+                            min-width: 46px;
+                            height: 46px;
+                            max-height: 46px;
+                            background: $white;
+                            border: 1px solid darken($fade-grey, 3%);
+                            border-radius: 500px;
+
+                            img {
+                                display: flex;
+                                height: 22px;
+                                width: 22px;
+                            }
+                        }
+
+                        .meta-content {
+                            margin-left: 8px;
+                            font-family: $font;
+                            line-height: 1.3;
+
+                            h4 {
+                                font-family: $font-alt;
+                                font-weight: 600;
+                                font-size: 1rem;
+                                color: $dark-text;
+                            }
+
+                            p {
+                                display: flex;
+                                align-items: center;
+
+                                .fa-circle {
+                                    font-size: 5px;
+                                    margin: 0 10px;
+                                }
+
+                                .fa-star {
+                                    position: relative;
+                                    top: -1px;
+                                    font-size: 12px;
+                                    color: #fab82a;
+
+                                    + span {
+                                        color: $dark-text;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    > .right {
+        width: 30%;
+        padding: 0 0 0 20px;
+
+        .sticky-panel {
+            position: fixed;
+            height: calc(100% - 100px);
+            transition: all .3s;
+
+            &.is-stretched {
+                height: calc(100% - 30px);
+                top: 10px;
+            }
+
+            .icon-toolbar-widget {
+                width: 100%;
+            }
+
+            .side-section {
+                display: none;
+                animation: fadeInLeft .5s;
+
+                &.is-active {
+                    display: block;
+                }
+            }
+
+            .cart-widget {
+                height: calc(100% - 90px);
+
+                .section-placeholder {
+                    height: calc(100% - 160px);
+
+                    img {
+                        max-width: 90px;
+                        margin: 0 auto 10px auto;
+                    }
+                }
+
+                .cart-items {
+                    height: calc(100% - 160px);
+                    border-bottom: 1px solid darken($fade-grey, 3%);
+                    padding-bottom: 40px;
+                    overflow-y: auto;
+
+                    .cart-item {
+                        align-items: center;
+
+                        .price {
+                            margin: 0;
+                            font-size: .9rem;
+                            font-weight: 500;
+                        }
+                    }
+                }
+
+                .cart-button {
+                    .total {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 10px 5px;
+
+                        span {
+                            font-family: $font;
+                            margin: 0;
+
+                            &:first-child {
+                                font-size: 1rem;
+                                font-weight: 500;
+                                color: $light-text;
+                                text-transform: uppercase;
+                            }
+
+                            &:nth-child(2) {
+                                color: $dark-text;
+                                font-weight: 600;
+                                font-size: 1.4rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+body {
+    &.is-dark {
+        .food-delivery-dashboard {
+            .left {
+                .left-header {
+                    background: lighten($dark-sidebar, 2%) !important;
+
+                    .header-meta {
+                        h3 {
+                            color: $dark-dark-text;
+                        }
+
+                        p {
+                            color: $accent;
+                        }
+                    }
+                }
+
+                .left-body {
+                    .restaurants {
+                        .restaurants-toolbar {
+                            .left {
+                                h3 {
+                                    color: $dark-dark-text;
+                                }
+                            }
+                        }
+
+                        .food-pills {
+                            .food-pills-inner {
+                                .food-pill {
+                                    background: lighten($dark-sidebar, 2%) !important;
+                                    border-color: lighten($dark-sidebar, 12%) !important;
+
+                                    .food-pill-icon {
+                                        background: lighten($fade-grey, 3%);
+                                        border-color: lighten($fade-grey, 3%);
+                                    }
+
+                                    span {
+                                        color: $dark-dark-text;
+                                    }
+                                }
+
+                                .slick-slide {
+                                    &.slick-current {
+                                        background: $accent !important;
+                                        border-color: $accent !important;
+
+                                        .food-pill-icon {
+                                            border-color: $accent !important;
+                                        }
+
+                                        span {
+                                            color: $smoke-white;
+                                        }
+                                    }
+                                }
+
+                                .slick-custom {
+                                    &:hover {
+                                        border-color: lighten($dark-sidebar, 2%);
+                                        background: lighten($dark-sidebar, 2%);
+                                        box-shadow: $light-box-shadow;
+                                    }
+                                }
+                            }
+                        }
+
+                        .restaurants-list {
+                            .restaurants-list-item {
+                                background: none;
+                                border: none;
+
+                                .image-container {
+                                    .timer {
+                                        background: $accent;
+                                        border-color: $accent;
+
+                                        span {
+                                            &:nth-child(2) {
+                                                color: lighten($accent, 18%);
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .meta-container {
+                                    .meta-icon {
+                                        background: lighten($fade-grey, 3%);
+                                        border-color: lighten($fade-grey, 3%);
+                                    }
+
+                                    .meta-content {
+                                        h4 {
+                                            color: $dark-dark-text;
+                                        }
+
+                                        p {
+                                            .fa-star {
+                                                color: $accent;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .right {
+                .cart-widget {
+                    .cart-items {
+                        border-color: lighten($dark-sidebar, 12%) !important;
+                    }
+
+                    .cart-button {
+                        .total {
+                            span {
+                                &:first-child {
+                                    color: $light-text;
+                                }
+
+                                &:nth-child(2) {
+                                    color: $dark-dark-text;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .food-delivery-dashboard {
+        flex-direction: column;
+
+        .left, .right {
+            width: 100%;
+            padding: 0;
+        }
+
+        .left {
+            .left-header {
+                flex-direction: column;
+                text-align: center;
+
+                .header-image {
+                    img {
+                        left: 0;
+                    }
+                }
+            }
+
+            .restaurants-list {
+                .restaurants-list-item {
+                    .image-container {
+                        img {
+                            min-height: 220px !important;
+                            max-height: 220px !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        .right {
+            .sticky-panel {
+                position: static;
+                width: 100% !important;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    .food-delivery-dashboard {
+        flex-direction: column;
+
+        .left, .right {
+            width: 100%;
+            padding: 0;
+        }
+
+        .left {
+            .restaurants-list {
+                .columns {
+                    display: flex;
+
+                    .column {
+                        min-width: 50%;
+                    }
+                }
+
+                .restaurants-list-item {
+                    .image-container {
+                        img {
+                            min-height: 220px !important;
+                            max-height: 220px !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        .right {
+            .sticky-panel {
+                position: static;
+                width: 100% !important;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .food-delivery-dashboard {
+        .left {
+            .left-body {
+                .restaurants-list {
+                    .restaurants-list-item {
+                        .image-container {
+                            > img {
+                                min-height: 140px !important;
+                                max-height: 140px !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

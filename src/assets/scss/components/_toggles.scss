@@ -1,0 +1,164 @@
+/*! _toggles.scss | Huro | Css ninja 2020-2021 */
+
+/*
+    1. Sliding Switch
+    2. Special Checkbox
+*/
+
+/* ==========================================================================
+1. Sliding Switch
+========================================================================== */
+
+.sliding-toggle {
+    width: 86px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+
+        &:checked ~ .toggler {
+            border-color: $accent;
+
+            .dark, .light {
+                transform: translateX(100%) rotate(360deg);
+            }
+
+            .dark {
+                opacity: 1 !important;
+            }
+
+            .light {
+                opacity: 0 !important;
+            }
+        }
+    }
+
+    .toggler {
+        position: relative;
+        display: block;
+        height: 31px;
+        width: 53px;
+        border: 2px solid $primary;
+        border-radius: 100px;
+        transition: all .3s;
+
+        .dark, .light {
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            height: 22px;
+            width: 22px;
+            border-radius: 50%;
+            background: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: translateX(0) rotate(0);
+            transition: all .3s ease;
+
+            svg {
+                stroke: $white !important;
+                height: 14px !important;
+                width: 14px !important;
+                opacity: 1 !important;
+            }
+        }
+
+        .light {
+            background: $primary;
+            border-color: $primary;
+            opacity: 1;
+            z-index: 1;
+        }
+
+        .dark {
+            background: $accent;
+            border-color: $accent;
+            opacity: 0;
+            z-index: 0;
+
+            svg {
+                stroke: $white !important;
+            }
+        }
+    }
+}
+
+/* =====================================================
+2. Special Checkbox
+===================================================== */
+
+.special-checkbox {
+    position: relative;
+
+    label {
+        background-color: $white;
+        border: 1px solid $accent-grey;
+        border-radius: 50%;
+        cursor: pointer;
+        height: 28px;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 28px;
+
+        &:after {
+            border: 2px solid $white;
+            border-top: none;
+            border-right: none;
+            content: "";
+            height: 6px;
+            left: 7px;
+            opacity: 0;
+            position: absolute;
+            top: 8px;
+            transform: rotate(-45deg);
+            width: 12px;
+        }
+    }
+
+    input[type="checkbox"] {
+        visibility: hidden;
+    }
+
+    input[type="checkbox"]:checked + label {
+        background-color: $primary;
+        border-color: $primary;
+    }
+
+    input[type="checkbox"]:checked + label:after {
+        opacity: 1;
+    }
+
+    //Size modifier
+    &.is-small {
+        label {
+            height: 20px;
+            width: 20px;
+
+            &:after {
+                left: 4px;
+                top: 5px;
+                width: 11px;
+                height: 6px;
+                transform: rotate(-45deg) scale(0.8);
+            }
+        }
+
+        span {
+            position: relative;
+            top: -2px;
+            padding: 0 10px;
+            cursor: default;
+        }
+    }
+}
