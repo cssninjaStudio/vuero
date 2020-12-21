@@ -1,17 +1,17 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 
-const DefaultLayout = defineComponent({
-  name: 'DefaultLayout',
+const SidebarCurvedLayout = defineComponent({
+  name: 'SidebarCurvedLayout',
   inheritAttrs: false,
   setup() {
-    // DefaultLayout - Composition API
+    // SidebarCurvedLayout - Composition API
 
     return {}
   },
 })
 
-export default DefaultLayout
+export default SidebarCurvedLayout
 </script>
 
 <template>
@@ -23,7 +23,7 @@ export default DefaultLayout
 
   <CircularMenu />
 
-  <Sidebar />
+  <SidebarCurved />
   <LanguagesPanel />
   <ActivityPanel />
   <SearchPanel />

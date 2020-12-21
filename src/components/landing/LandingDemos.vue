@@ -41,15 +41,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-dashboards-personal-1.png"
+              src="/src/assets/images/photo/screenshots/admin-dashboards-personal-1.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-dashboards-personal-1-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-dashboards-personal-1-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -73,15 +73,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-dashboards-personal-2.png"
+              src="/src/assets/images/photo/screenshots/admin-dashboards-personal-2.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-dashboards-personal-2-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-dashboards-personal-2-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -105,15 +105,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-dashboards-personal-3.png"
+              src="/src/assets/images/photo/screenshots/admin-dashboards-personal-3.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-dashboards-personal-3-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-dashboards-personal-3-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -137,15 +137,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-dashboards-finance-1.png"
+              src="/src/assets/images/photo/screenshots/admin-dashboards-finance-1.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-dashboards-finance-1-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-dashboards-finance-1-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -169,15 +169,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-dashboards-finance-2.png"
+              src="/src/assets/images/photo/screenshots/admin-dashboards-finance-2.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-dashboards-finance-2-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-dashboards-finance-2-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -201,15 +201,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-dashboards-finance-3.png"
+              src="/src/assets/images/photo/screenshots/admin-dashboards-finance-3.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-dashboards-finance-3-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-dashboards-finance-3-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -233,15 +233,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-dashboards-banking-1.png"
+              src="/src/assets/images/photo/screenshots/admin-dashboards-banking-1.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-dashboards-banking-1-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-dashboards-banking-1-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -265,15 +265,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-dashboards-banking-2.png"
+              src="/src/assets/images/photo/screenshots/admin-dashboards-banking-2.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-dashboards-banking-2-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-dashboards-banking-2-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -297,15 +297,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-dashboards-banking-3.png"
+              src="/src/assets/images/photo/screenshots/admin-dashboards-banking-3.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-dashboards-banking-3-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-dashboards-banking-3-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -329,15 +329,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-dashboards-business-1.png"
+              src="/src/assets/images/photo/screenshots/admin-dashboards-business-1.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-dashboards-business-1-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-dashboards-business-1-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -361,15 +361,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-dashboards-business-2.png"
+              src="/src/assets/images/photo/screenshots/admin-dashboards-business-2.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-dashboards-business-2-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-dashboards-business-2-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -394,15 +394,15 @@ export default LandingDemos
             <span class="new-tag">New</span>
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-dashboards-business-3.png"
+              src="/src/assets/images/photo/screenshots/admin-dashboards-business-3.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-dashboards-business-3-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-dashboards-business-3-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -426,15 +426,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-dashboards-lifestyle-1.png"
+              src="/src/assets/images/photo/screenshots/admin-dashboards-lifestyle-1.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-dashboards-lifestyle-1-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-dashboards-lifestyle-1-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -458,15 +458,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-dashboards-lifestyle-2.png"
+              src="/src/assets/images/photo/screenshots/admin-dashboards-lifestyle-2.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-dashboards-lifestyle-2-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-dashboards-lifestyle-2-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -490,15 +490,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-dashboards-lifestyle-3.png"
+              src="/src/assets/images/photo/screenshots/admin-dashboards-lifestyle-3.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-dashboards-lifestyle-3-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-dashboards-lifestyle-3-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -523,15 +523,15 @@ export default LandingDemos
             <span class="new-tag">New</span>
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-dashboards-lifestyle-4.png"
+              src="/src/assets/images/photo/screenshots/admin-dashboards-lifestyle-4.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-dashboards-lifestyle-4-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-dashboards-lifestyle-4-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -555,15 +555,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-dashboards-ecommerce-1.png"
+              src="/src/assets/images/photo/screenshots/admin-dashboards-ecommerce-1.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-dashboards-ecommerce-1-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-dashboards-ecommerce-1-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -587,15 +587,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-dashboards-food.png"
+              src="/src/assets/images/photo/screenshots/admin-dashboards-food.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-dashboards-food-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-dashboards-food-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -619,15 +619,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-list-view-1.png"
+              src="/src/assets/images/photo/screenshots/admin-list-view-1.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-list-view-1-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-list-view-1-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -651,15 +651,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-list-view-2.png"
+              src="/src/assets/images/photo/screenshots/admin-list-view-2.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-list-view-2-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-list-view-2-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -683,15 +683,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-list-view-3.png"
+              src="/src/assets/images/photo/screenshots/admin-list-view-3.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-list-view-3-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-list-view-3-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -715,15 +715,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-list-view-4.png"
+              src="/src/assets/images/photo/screenshots/admin-list-view-4.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-list-view-4-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-list-view-4-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -747,15 +747,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-list-flex-1.png"
+              src="/src/assets/images/photo/screenshots/admin-list-flex-1.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-list-flex-1-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-list-flex-1-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -779,15 +779,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-list-flex-2.png"
+              src="/src/assets/images/photo/screenshots/admin-list-flex-2.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-list-flex-2-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-list-flex-2-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -811,15 +811,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-list-flex-3.png"
+              src="/src/assets/images/photo/screenshots/admin-list-flex-3.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-list-flex-3-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-list-flex-3-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -843,15 +843,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-list-datatable-1.png"
+              src="/src/assets/images/photo/screenshots/admin-list-datatable-1.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-list-datatable-1-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-list-datatable-1-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -875,15 +875,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-list-datatable-2.png"
+              src="/src/assets/images/photo/screenshots/admin-list-datatable-2.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-list-datatable-2-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-list-datatable-2-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -907,15 +907,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-list-datatable-3.png"
+              src="/src/assets/images/photo/screenshots/admin-list-datatable-3.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-list-datatable-3-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-list-datatable-3-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -939,15 +939,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-list-datatable-4.png"
+              src="/src/assets/images/photo/screenshots/admin-list-datatable-4.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-list-datatable-4-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-list-datatable-4-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -971,15 +971,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-grid-cards-1.png"
+              src="/src/assets/images/photo/screenshots/admin-grid-cards-1.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-grid-cards-1-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-grid-cards-1-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -1003,15 +1003,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-grid-cards-2.png"
+              src="/src/assets/images/photo/screenshots/admin-grid-cards-2.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-grid-cards-2-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-grid-cards-2-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -1035,15 +1035,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-grid-cards-3.png"
+              src="/src/assets/images/photo/screenshots/admin-grid-cards-3.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-grid-cards-3-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-grid-cards-3-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -1067,15 +1067,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-grid-cards-4.png"
+              src="/src/assets/images/photo/screenshots/admin-grid-cards-4.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-grid-cards-4-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-grid-cards-4-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -1099,15 +1099,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-grid-tiles-1.png"
+              src="/src/assets/images/photo/screenshots/admin-grid-tiles-1.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-grid-tiles-1-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-grid-tiles-1-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -1131,15 +1131,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-grid-tiles-2.png"
+              src="/src/assets/images/photo/screenshots/admin-grid-tiles-2.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-grid-tiles-2-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-grid-tiles-2-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -1163,15 +1163,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-grid-tiles-3.png"
+              src="/src/assets/images/photo/screenshots/admin-grid-tiles-3.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-grid-tiles-3-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-grid-tiles-3-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -1195,15 +1195,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-grid-users-1.png"
+              src="/src/assets/images/photo/screenshots/admin-grid-users-1.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-grid-users-1-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-grid-users-1-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -1227,15 +1227,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-grid-users-2.png"
+              src="/src/assets/images/photo/screenshots/admin-grid-users-2.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-grid-users-2-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-grid-users-2-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -1259,15 +1259,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-grid-users-3.png"
+              src="/src/assets/images/photo/screenshots/admin-grid-users-3.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-grid-users-3-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-grid-users-3-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -1291,15 +1291,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-grid-users-4.png"
+              src="/src/assets/images/photo/screenshots/admin-grid-users-4.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-grid-users-4-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-grid-users-4-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -1323,15 +1323,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-messaging-chat.png"
+              src="/src/assets/images/photo/screenshots/admin-messaging-chat.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-messaging-chat-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-messaging-chat-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -1355,15 +1355,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-profile-view.png"
+              src="/src/assets/images/photo/screenshots/admin-profile-view.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-profile-view-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-profile-view-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -1387,15 +1387,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-profile-edit-1.png"
+              src="/src/assets/images/photo/screenshots/admin-profile-edit-1.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-profile-edit-1-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-profile-edit-1-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -1419,15 +1419,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-profile-edit-2.png"
+              src="/src/assets/images/photo/screenshots/admin-profile-edit-2.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-profile-edit-2-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-profile-edit-2-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -1451,15 +1451,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-profile-edit-3.png"
+              src="/src/assets/images/photo/screenshots/admin-profile-edit-3.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-profile-edit-3-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-profile-edit-3-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -1483,15 +1483,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-profile-edit-4.png"
+              src="/src/assets/images/photo/screenshots/admin-profile-edit-4.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-profile-edit-4-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-profile-edit-4-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -1515,15 +1515,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-profile-notifications.png"
+              src="/src/assets/images/photo/screenshots/admin-profile-notifications.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-profile-notifications-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-profile-notifications-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -1547,15 +1547,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-profile-settings.png"
+              src="/src/assets/images/photo/screenshots/admin-profile-settings.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-profile-settings-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-profile-settings-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -1579,15 +1579,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-projects-projects.png"
+              src="/src/assets/images/photo/screenshots/admin-projects-projects.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-projects-projects-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-projects-projects-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -1611,15 +1611,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-projects-projects-2.png"
+              src="/src/assets/images/photo/screenshots/admin-projects-projects-2.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-projects-projects-2-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-projects-projects-2-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -1643,15 +1643,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-projects-projects-3.png"
+              src="/src/assets/images/photo/screenshots/admin-projects-projects-3.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-projects-projects-3-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-projects-projects-3-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -1675,15 +1675,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-projects-project.png"
+              src="/src/assets/images/photo/screenshots/admin-projects-project.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-projects-project-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-projects-project-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -1707,15 +1707,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-kanban-board.png"
+              src="/src/assets/images/photo/screenshots/admin-kanban-board.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-kanban-board-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-kanban-board-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -1739,15 +1739,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-search-results.png"
+              src="/src/assets/images/photo/screenshots/admin-search-results.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-search-results-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-search-results-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -1771,15 +1771,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-search-empty.png"
+              src="/src/assets/images/photo/screenshots/admin-search-empty.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-search-empty-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-search-empty-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -1803,15 +1803,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-saas-billing.png"
+              src="/src/assets/images/photo/screenshots/admin-saas-billing.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-saas-billing-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-saas-billing-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -1835,15 +1835,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-welcome.png"
+              src="/src/assets/images/photo/screenshots/admin-welcome.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-welcome-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-welcome-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -1867,15 +1867,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-action-page-1.png"
+              src="/src/assets/images/photo/screenshots/admin-action-page-1.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-action-page-1-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-action-page-1-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -1899,15 +1899,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-action-page-2.png"
+              src="/src/assets/images/photo/screenshots/admin-action-page-2.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-action-page-2-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-action-page-2-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -1931,15 +1931,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-utility-account-confirm.png"
+              src="/src/assets/images/photo/screenshots/admin-utility-account-confirm.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-utility-account-confirm-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-utility-account-confirm-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -1963,15 +1963,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-utility-promotion.png"
+              src="/src/assets/images/photo/screenshots/admin-utility-promotion.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-utility-promotion-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-utility-promotion-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -1995,15 +1995,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-utility-invoice.png"
+              src="/src/assets/images/photo/screenshots/admin-utility-invoice.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-utility-invoice-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-utility-invoice-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -2027,15 +2027,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-dashboards-widgets-ui.png"
+              src="/src/assets/images/photo/screenshots/admin-dashboards-widgets-ui.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-dashboards-widgets-ui-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-dashboards-widgets-ui-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -2059,15 +2059,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-dashboards-widgets-creative.png"
+              src="/src/assets/images/photo/screenshots/admin-dashboards-widgets-creative.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-dashboards-widgets-creative-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-dashboards-widgets-creative-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -2093,15 +2093,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-dashboards-widgets-list.png"
+              src="/src/assets/images/photo/screenshots/admin-dashboards-widgets-list.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-dashboards-widgets-list-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-dashboards-widgets-list-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -2125,15 +2125,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-dashboards-widgets-stats.png"
+              src="/src/assets/images/photo/screenshots/admin-dashboards-widgets-stats.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-dashboards-widgets-stats-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-dashboards-widgets-stats-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -2157,15 +2157,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-form-layouts-1.png"
+              src="/src/assets/images/photo/screenshots/admin-form-layouts-1.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-form-layouts-1-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-form-layouts-1-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -2189,15 +2189,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-form-layouts-2.png"
+              src="/src/assets/images/photo/screenshots/admin-form-layouts-2.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-form-layouts-2-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-form-layouts-2-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -2221,15 +2221,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-form-layouts-3.png"
+              src="/src/assets/images/photo/screenshots/admin-form-layouts-3.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-form-layouts-3-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-form-layouts-3-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -2253,15 +2253,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-form-layouts-4.png"
+              src="/src/assets/images/photo/screenshots/admin-form-layouts-4.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-form-layouts-4-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-form-layouts-4-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -2285,15 +2285,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-onboarding-page-1.png"
+              src="/src/assets/images/photo/screenshots/admin-onboarding-page-1.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-onboarding-page-1-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-onboarding-page-1-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -2317,15 +2317,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-onboarding-page-2.png"
+              src="/src/assets/images/photo/screenshots/admin-onboarding-page-2.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-onboarding-page-2-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-onboarding-page-2-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -2349,15 +2349,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-onboarding-page-3.png"
+              src="/src/assets/images/photo/screenshots/admin-onboarding-page-3.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-onboarding-page-3-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-onboarding-page-3-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -2381,15 +2381,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-onboarding-page-4.png"
+              src="/src/assets/images/photo/screenshots/admin-onboarding-page-4.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-onboarding-page-4-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-onboarding-page-4-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -2413,15 +2413,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-onboarding-page-5.png"
+              src="/src/assets/images/photo/screenshots/admin-onboarding-page-5.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-onboarding-page-5-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-onboarding-page-5-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -2467,15 +2467,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-dashboards-personal-1.png"
+              src="/src/assets/images/photo/screenshots/webapp-dashboards-personal-1.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-dashboards-personal-1-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-dashboards-personal-1-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -2499,15 +2499,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-dashboards-personal-2.png"
+              src="/src/assets/images/photo/screenshots/webapp-dashboards-personal-2.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-dashboards-personal-2-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-dashboards-personal-2-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -2531,15 +2531,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-dashboards-personal-3.png"
+              src="/src/assets/images/photo/screenshots/webapp-dashboards-personal-3.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-dashboards-personal-3-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-dashboards-personal-3-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -2563,15 +2563,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-dashboards-finance-1.png"
+              src="/src/assets/images/photo/screenshots/webapp-dashboards-finance-1.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-dashboards-finance-1-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-dashboards-finance-1-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -2595,15 +2595,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-dashboards-finance-2.png"
+              src="/src/assets/images/photo/screenshots/webapp-dashboards-finance-2.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-dashboards-finance-2-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-dashboards-finance-2-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -2627,15 +2627,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-dashboards-finance-3.png"
+              src="/src/assets/images/photo/screenshots/webapp-dashboards-finance-3.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-dashboards-finance-3-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-dashboards-finance-3-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -2659,15 +2659,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-dashboards-banking-1.png"
+              src="/src/assets/images/photo/screenshots/webapp-dashboards-banking-1.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-dashboards-banking-1-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-dashboards-banking-1-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -2691,15 +2691,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-dashboards-banking-2.png"
+              src="/src/assets/images/photo/screenshots/webapp-dashboards-banking-2.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-dashboards-banking-2-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-dashboards-banking-2-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -2723,15 +2723,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-dashboards-banking-3.png"
+              src="/src/assets/images/photo/screenshots/webapp-dashboards-banking-3.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-dashboards-banking-3-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-dashboards-banking-3-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -2755,15 +2755,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-dashboards-business-1.png"
+              src="/src/assets/images/photo/screenshots/webapp-dashboards-business-1.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-dashboards-business-1-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-dashboards-business-1-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -2787,15 +2787,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-dashboards-business-2.png"
+              src="/src/assets/images/photo/screenshots/webapp-dashboards-business-2.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-dashboards-business-2-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-dashboards-business-2-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -2820,15 +2820,15 @@ export default LandingDemos
             <span class="new-tag">New</span>
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-dashboards-business-3.png"
+              src="/src/assets/images/photo/screenshots/webapp-dashboards-business-3.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-dashboards-business-3-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-dashboards-business-3-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -2852,15 +2852,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-dashboards-lifestyle-1.png"
+              src="/src/assets/images/photo/screenshots/webapp-dashboards-lifestyle-1.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-dashboards-lifestyle-1-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-dashboards-lifestyle-1-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -2884,15 +2884,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-dashboards-lifestyle-2.png"
+              src="/src/assets/images/photo/screenshots/webapp-dashboards-lifestyle-2.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-dashboards-lifestyle-2-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-dashboards-lifestyle-2-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -2916,15 +2916,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-dashboards-lifestyle-3.png"
+              src="/src/assets/images/photo/screenshots/webapp-dashboards-lifestyle-3.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-dashboards-lifestyle-3-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-dashboards-lifestyle-3-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -2949,15 +2949,15 @@ export default LandingDemos
             <span class="new-tag">New</span>
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-dashboards-lifestyle-4.png"
+              src="/src/assets/images/photo/screenshots/webapp-dashboards-lifestyle-4.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-dashboards-lifestyle-4-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-dashboards-lifestyle-4-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -2981,15 +2981,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-dashboards-ecommerce-1.png"
+              src="/src/assets/images/photo/screenshots/webapp-dashboards-ecommerce-1.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-dashboards-ecommerce-1-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-dashboards-ecommerce-1-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -3013,15 +3013,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-dashboards-food.png"
+              src="/src/assets/images/photo/screenshots/webapp-dashboards-food.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-dashboards-food-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-dashboards-food-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -3045,15 +3045,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-profile-view.png"
+              src="/src/assets/images/photo/screenshots/webapp-profile-view.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-profile-view-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-profile-view-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -3077,15 +3077,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-list-view-1.png"
+              src="/src/assets/images/photo/screenshots/webapp-list-view-1.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-list-view-1-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-list-view-1-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -3109,15 +3109,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-list-view-2.png"
+              src="/src/assets/images/photo/screenshots/webapp-list-view-2.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-list-view-2-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-list-view-2-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -3141,15 +3141,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-list-view-3.png"
+              src="/src/assets/images/photo/screenshots/webapp-list-view-3.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-list-view-3-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-list-view-3-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -3173,15 +3173,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-list-view-4.png"
+              src="/src/assets/images/photo/screenshots/webapp-list-view-4.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-list-view-4-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-list-view-4-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -3205,15 +3205,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-list-flex-1.png"
+              src="/src/assets/images/photo/screenshots/webapp-list-flex-1.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-list-flex-1-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-list-flex-1-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -3237,15 +3237,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-list-flex-2.png"
+              src="/src/assets/images/photo/screenshots/webapp-list-flex-2.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-list-flex-2-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-list-flex-2-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -3269,15 +3269,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-list-flex-3.png"
+              src="/src/assets/images/photo/screenshots/webapp-list-flex-3.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-list-flex-3-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-list-flex-3-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -3301,15 +3301,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-list-datatable-1.png"
+              src="/src/assets/images/photo/screenshots/webapp-list-datatable-1.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-list-datatable-1-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-list-datatable-1-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -3333,15 +3333,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-list-datatable-2.png"
+              src="/src/assets/images/photo/screenshots/webapp-list-datatable-2.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-list-datatable-2-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-list-datatable-2-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -3365,15 +3365,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-list-datatable-3.png"
+              src="/src/assets/images/photo/screenshots/webapp-list-datatable-3.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-list-datatable-3-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-list-datatable-3-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -3397,15 +3397,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-list-datatable-4.png"
+              src="/src/assets/images/photo/screenshots/webapp-list-datatable-4.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-list-datatable-4-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-list-datatable-4-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -3429,15 +3429,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-grid-cards-1.png"
+              src="/src/assets/images/photo/screenshots/webapp-grid-cards-1.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-grid-cards-1-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-grid-cards-1-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -3461,15 +3461,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-grid-cards-2.png"
+              src="/src/assets/images/photo/screenshots/webapp-grid-cards-2.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-grid-cards-2-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-grid-cards-2-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -3493,15 +3493,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-grid-cards-3.png"
+              src="/src/assets/images/photo/screenshots/webapp-grid-cards-3.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-grid-cards-3-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-grid-cards-3-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -3525,15 +3525,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-grid-cards-4.png"
+              src="/src/assets/images/photo/screenshots/webapp-grid-cards-4.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-grid-cards-4-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-grid-cards-4-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -3557,15 +3557,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-grid-tiles-1.png"
+              src="/src/assets/images/photo/screenshots/webapp-grid-tiles-1.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-grid-tiles-1-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-grid-tiles-1-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -3589,15 +3589,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-grid-tiles-2.png"
+              src="/src/assets/images/photo/screenshots/webapp-grid-tiles-2.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-grid-tiles-2-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-grid-tiles-2-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -3621,15 +3621,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-grid-tiles-3.png"
+              src="/src/assets/images/photo/screenshots/webapp-grid-tiles-3.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-grid-tiles-3-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-grid-tiles-3-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -3653,15 +3653,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-grid-users-1.png"
+              src="/src/assets/images/photo/screenshots/webapp-grid-users-1.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-grid-users-1-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-grid-users-1-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -3685,15 +3685,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-grid-users-2.png"
+              src="/src/assets/images/photo/screenshots/webapp-grid-users-2.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-grid-users-2-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-grid-users-2-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -3717,15 +3717,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-grid-users-3.png"
+              src="/src/assets/images/photo/screenshots/webapp-grid-users-3.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-grid-users-3-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-grid-users-3-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -3749,15 +3749,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-grid-users-4.png"
+              src="/src/assets/images/photo/screenshots/webapp-grid-users-4.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-grid-users-4-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-grid-users-4-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -3781,15 +3781,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-messaging-chat.png"
+              src="/src/assets/images/photo/screenshots/webapp-messaging-chat.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-messaging-chat-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-messaging-chat-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -3813,15 +3813,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-profile-edit-1.png"
+              src="/src/assets/images/photo/screenshots/webapp-profile-edit-1.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-profile-edit-1-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-profile-edit-1-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -3845,15 +3845,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-profile-edit-2.png"
+              src="/src/assets/images/photo/screenshots/webapp-profile-edit-2.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-profile-edit-2-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-profile-edit-2-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -3877,15 +3877,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-profile-edit-3.png"
+              src="/src/assets/images/photo/screenshots/webapp-profile-edit-3.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-profile-edit-3-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-profile-edit-3-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -3909,15 +3909,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-profile-edit-4.png"
+              src="/src/assets/images/photo/screenshots/webapp-profile-edit-4.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-profile-edit-4-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-profile-edit-4-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -3941,15 +3941,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-profile-notifications.png"
+              src="/src/assets/images/photo/screenshots/webapp-profile-notifications.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-profile-notifications-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-profile-notifications-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -3973,15 +3973,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-profile-settings.png"
+              src="/src/assets/images/photo/screenshots/webapp-profile-settings.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-profile-settings-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-profile-settings-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -4005,15 +4005,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-projects-projects.png"
+              src="/src/assets/images/photo/screenshots/webapp-projects-projects.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-projects-projects-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-projects-projects-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -4037,15 +4037,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-projects-projects-2.png"
+              src="/src/assets/images/photo/screenshots/webapp-projects-projects-2.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-projects-projects-2-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-projects-projects-2-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -4069,15 +4069,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-projects-projects-3.png"
+              src="/src/assets/images/photo/screenshots/webapp-projects-projects-3.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-projects-projects-3-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-projects-projects-3-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -4101,15 +4101,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-projects-project.png"
+              src="/src/assets/images/photo/screenshots/webapp-projects-project.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-projects-project-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-projects-project-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -4133,15 +4133,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-kanban-board.png"
+              src="/src/assets/images/photo/screenshots/webapp-kanban-board.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-kanban-board-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-kanban-board-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -4165,15 +4165,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-search-results.png"
+              src="/src/assets/images/photo/screenshots/webapp-search-results.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-search-results-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-search-results-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -4197,15 +4197,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-search-empty.png"
+              src="/src/assets/images/photo/screenshots/webapp-search-empty.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-search-empty-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-search-empty-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -4229,15 +4229,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-saas-billing.png"
+              src="/src/assets/images/photo/screenshots/webapp-saas-billing.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-saas-billing-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-saas-billing-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -4261,15 +4261,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-welcome.png"
+              src="/src/assets/images/photo/screenshots/webapp-welcome.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-welcome-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-welcome-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -4293,15 +4293,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-action-page-1.png"
+              src="/src/assets/images/photo/screenshots/webapp-action-page-1.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-action-page-1-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-action-page-1-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -4325,15 +4325,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-action-page-2.png"
+              src="/src/assets/images/photo/screenshots/webapp-action-page-2.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-action-page-2-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-action-page-2-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -4357,15 +4357,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-utility-account-confirm.png"
+              src="/src/assets/images/photo/screenshots/webapp-utility-account-confirm.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-utility-account-confirm-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-utility-account-confirm-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -4389,15 +4389,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-utility-promotion.png"
+              src="/src/assets/images/photo/screenshots/webapp-utility-promotion.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-utility-promotion-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-utility-promotion-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -4421,15 +4421,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-utility-invoice.png"
+              src="/src/assets/images/photo/screenshots/webapp-utility-invoice.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-utility-invoice-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-utility-invoice-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -4453,15 +4453,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-dashboards-widgets-ui.png"
+              src="/src/assets/images/photo/screenshots/webapp-dashboards-widgets-ui.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-dashboards-widgets-ui-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-dashboards-widgets-ui-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -4485,15 +4485,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-dashboards-widgets-creative.png"
+              src="/src/assets/images/photo/screenshots/webapp-dashboards-widgets-creative.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-dashboards-widgets-creative-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-dashboards-widgets-creative-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -4519,15 +4519,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-dashboards-widgets-list.png"
+              src="/src/assets/images/photo/screenshots/webapp-dashboards-widgets-list.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-dashboards-widgets-list-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-dashboards-widgets-list-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -4551,15 +4551,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-dashboards-widgets-stats.png"
+              src="/src/assets/images/photo/screenshots/webapp-dashboards-widgets-stats.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-dashboards-widgets-stats-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-dashboards-widgets-stats-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -4585,15 +4585,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-form-layouts-1.png"
+              src="/src/assets/images/photo/screenshots/webapp-form-layouts-1.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-form-layouts-1-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-form-layouts-1-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -4617,15 +4617,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-form-layouts-2.png"
+              src="/src/assets/images/photo/screenshots/webapp-form-layouts-2.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-form-layouts-2-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-form-layouts-2-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -4649,15 +4649,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-form-layouts-3.png"
+              src="/src/assets/images/photo/screenshots/webapp-form-layouts-3.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-form-layouts-3-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-form-layouts-3-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -4681,15 +4681,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-form-layouts-4.png"
+              src="/src/assets/images/photo/screenshots/webapp-form-layouts-4.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-form-layouts-4-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-form-layouts-4-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -4713,15 +4713,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-onboarding-page-1.png"
+              src="/src/assets/images/photo/screenshots/webapp-onboarding-page-1.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-onboarding-page-1-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-onboarding-page-1-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -4745,15 +4745,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-onboarding-page-2.png"
+              src="/src/assets/images/photo/screenshots/webapp-onboarding-page-2.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-onboarding-page-2-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-onboarding-page-2-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -4777,15 +4777,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-onboarding-page-3.png"
+              src="/src/assets/images/photo/screenshots/webapp-onboarding-page-3.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-onboarding-page-3-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-onboarding-page-3-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -4809,15 +4809,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-onboarding-page-4.png"
+              src="/src/assets/images/photo/screenshots/webapp-onboarding-page-4.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-onboarding-page-4-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-onboarding-page-4-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -4841,15 +4841,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-onboarding-page-5.png"
+              src="/src/assets/images/photo/screenshots/webapp-onboarding-page-5.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-onboarding-page-5-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-onboarding-page-5-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -4896,15 +4896,15 @@ export default LandingDemos
             <span class="new-tag">New</span>
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/auth-login.png"
+              src="/src/assets/images/photo/screenshots/auth-login.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/auth-login-dark.png"
+              src="/src/assets/images/photo/screenshots/auth-login-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -4929,15 +4929,15 @@ export default LandingDemos
             <span class="new-tag">New</span>
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/auth-login-2.png"
+              src="/src/assets/images/photo/screenshots/auth-login-2.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/auth-login-2-dark.png"
+              src="/src/assets/images/photo/screenshots/auth-login-2-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -4962,15 +4962,15 @@ export default LandingDemos
             <span class="new-tag">New</span>
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/auth-login-3.png"
+              src="/src/assets/images/photo/screenshots/auth-login-3.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/auth-login-3-dark.png"
+              src="/src/assets/images/photo/screenshots/auth-login-3-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -4995,15 +4995,15 @@ export default LandingDemos
             <span class="new-tag">New</span>
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/auth-signup-2.png"
+              src="/src/assets/images/photo/screenshots/auth-signup-2.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/auth-signup-2-dark.png"
+              src="/src/assets/images/photo/screenshots/auth-signup-2-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -5028,15 +5028,15 @@ export default LandingDemos
             <span class="new-tag">New</span>
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/auth-signup-3.png"
+              src="/src/assets/images/photo/screenshots/auth-signup-3.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/auth-signup-3-dark.png"
+              src="/src/assets/images/photo/screenshots/auth-signup-3-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -5059,9 +5059,9 @@ export default LandingDemos
         <div class="column is-4 has-text-centered">
           <figure class="huro-demo-wrapper">
             <img
-              data-src="/src/assets/images/photo/screenshots/auth-signup.png"
+              src="/src/assets/images/photo/screenshots/auth-signup.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -5084,9 +5084,9 @@ export default LandingDemos
         <div class="column is-4 has-text-centered">
           <figure class="huro-demo-wrapper">
             <img
-              data-src="/src/assets/images/photo/screenshots/admin-utility-status.png"
+              src="/src/assets/images/photo/screenshots/admin-utility-status.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -5110,15 +5110,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-dashboards-apps-2.png"
+              src="/src/assets/images/photo/screenshots/admin-dashboards-apps-2.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-dashboards-apps-2-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-dashboards-apps-2-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -5142,15 +5142,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/project-wizard-step-1.png"
+              src="/src/assets/images/photo/screenshots/project-wizard-step-1.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/project-wizard-step-1-dark.png"
+              src="/src/assets/images/photo/screenshots/project-wizard-step-1-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -5174,15 +5174,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/project-wizard-step-2.png"
+              src="/src/assets/images/photo/screenshots/project-wizard-step-2.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/project-wizard-step-2-dark.png"
+              src="/src/assets/images/photo/screenshots/project-wizard-step-2-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -5206,15 +5206,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/project-wizard-step-3.png"
+              src="/src/assets/images/photo/screenshots/project-wizard-step-3.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/project-wizard-step-3-dark.png"
+              src="/src/assets/images/photo/screenshots/project-wizard-step-3-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -5238,15 +5238,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/project-wizard-step-4.png"
+              src="/src/assets/images/photo/screenshots/project-wizard-step-4.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/project-wizard-step-4-dark.png"
+              src="/src/assets/images/photo/screenshots/project-wizard-step-4-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -5270,15 +5270,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/project-wizard-step-5.png"
+              src="/src/assets/images/photo/screenshots/project-wizard-step-5.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/project-wizard-step-5-dark.png"
+              src="/src/assets/images/photo/screenshots/project-wizard-step-5-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -5302,15 +5302,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/project-wizard-step-6.png"
+              src="/src/assets/images/photo/screenshots/project-wizard-step-6.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/project-wizard-step-6-dark.png"
+              src="/src/assets/images/photo/screenshots/project-wizard-step-6-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -5334,15 +5334,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/project-wizard-step-7.png"
+              src="/src/assets/images/photo/screenshots/project-wizard-step-7.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/project-wizard-step-7-dark.png"
+              src="/src/assets/images/photo/screenshots/project-wizard-step-7-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -5366,15 +5366,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/project-wizard-step-8.png"
+              src="/src/assets/images/photo/screenshots/project-wizard-step-8.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/project-wizard-step-8-dark.png"
+              src="/src/assets/images/photo/screenshots/project-wizard-step-8-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -5397,9 +5397,9 @@ export default LandingDemos
         <div class="column is-4 has-text-centered">
           <figure class="huro-demo-wrapper">
             <img
-              data-src="/src/assets/images/photo/screenshots/error-page-1.png"
+              src="/src/assets/images/photo/screenshots/error-page-1.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -5422,9 +5422,9 @@ export default LandingDemos
         <div class="column is-4 has-text-centered">
           <figure class="huro-demo-wrapper">
             <img
-              data-src="/src/assets/images/photo/screenshots/error-page-2.png"
+              src="/src/assets/images/photo/screenshots/error-page-2.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -5447,9 +5447,9 @@ export default LandingDemos
         <div class="column is-4 has-text-centered">
           <figure class="huro-demo-wrapper">
             <img
-              data-src="/src/assets/images/photo/screenshots/error-page-3.png"
+              src="/src/assets/images/photo/screenshots/error-page-3.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -5472,9 +5472,9 @@ export default LandingDemos
         <div class="column is-4 has-text-centered">
           <figure class="huro-demo-wrapper">
             <img
-              data-src="/src/assets/images/photo/screenshots/error-page-4.png"
+              src="/src/assets/images/photo/screenshots/error-page-4.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -5497,9 +5497,9 @@ export default LandingDemos
         <div class="column is-4 has-text-centered">
           <figure class="huro-demo-wrapper">
             <img
-              data-src="/src/assets/images/photo/screenshots/error-page-5.png"
+              src="/src/assets/images/photo/screenshots/error-page-5.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -5545,15 +5545,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-blank-page-1.png"
+              src="/src/assets/images/photo/screenshots/admin-blank-page-1.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-blank-page-1-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-blank-page-1-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -5576,15 +5576,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-blank-page-2.png"
+              src="/src/assets/images/photo/screenshots/admin-blank-page-2.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-blank-page-2-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-blank-page-2-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -5607,15 +5607,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-blank-page-3.png"
+              src="/src/assets/images/photo/screenshots/admin-blank-page-3.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-blank-page-3-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-blank-page-3-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -5638,15 +5638,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-blank-page-4.png"
+              src="/src/assets/images/photo/screenshots/admin-blank-page-4.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/admin-blank-page-4-dark.png"
+              src="/src/assets/images/photo/screenshots/admin-blank-page-4-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -5669,15 +5669,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-blank-page-1.png"
+              src="/src/assets/images/photo/screenshots/webapp-blank-page-1.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-blank-page-1-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-blank-page-1-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -5700,15 +5700,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-blank-page-2.png"
+              src="/src/assets/images/photo/screenshots/webapp-blank-page-2.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-blank-page-2-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-blank-page-2-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -5731,15 +5731,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-blank-page-3.png"
+              src="/src/assets/images/photo/screenshots/webapp-blank-page-3.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-blank-page-3-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-blank-page-3-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -5762,15 +5762,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-blank-page-4.png"
+              src="/src/assets/images/photo/screenshots/webapp-blank-page-4.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-blank-page-4-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-blank-page-4-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">
@@ -5793,15 +5793,15 @@ export default LandingDemos
           <figure class="huro-demo-wrapper">
             <img
               class="light-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-blank-page-5.png"
+              src="/src/assets/images/photo/screenshots/webapp-blank-page-5.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              data-src="/src/assets/images/photo/screenshots/webapp-blank-page-5-dark.png"
+              src="/src/assets/images/photo/screenshots/webapp-blank-page-5-dark.png"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <div class="circle-overlay"></div>
             <div class="demo-info has-text-centered">

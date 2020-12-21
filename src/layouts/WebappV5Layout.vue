@@ -1,32 +1,28 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 
-const DefaultLayout = defineComponent({
-  name: 'DefaultLayout',
+const WebappV5Layout = defineComponent({
+  name: 'WebappV5Layout',
   inheritAttrs: false,
   setup() {
-    // DefaultLayout - Composition API
+    // WebappV5Layout - Composition API
 
     return {}
   },
 })
 
-export default DefaultLayout
+export default WebappV5Layout
 </script>
 
 <template>
   <div class="app-overlay"></div>
-  <Pageloader />
 
   <MobileNavbar />
   <MobileSidebarMain />
 
-  <CircularMenu />
-
-  <Sidebar />
+  <WebappNavbarAltColored />
   <LanguagesPanel />
   <ActivityPanel />
-  <SearchPanel />
 
   <slot></slot>
 </template>

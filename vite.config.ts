@@ -39,6 +39,9 @@ const config: UserConfig = {
       // as the `alias` changes the behavior of middlewares, you have to pass it to ViteComponents to do the resolving
       alias,
 
+      // relative paths to the directory to search for components.
+      dirs: ['src/components', 'src/layouts'],
+
       // // allow auto load markdown components under `./src/components/`
       // extensions: ['vue'],
 

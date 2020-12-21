@@ -1,21 +1,22 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 
-const DefaultLayout = defineComponent({
-  name: 'DefaultLayout',
+const SidebarColorCurvedLayout = defineComponent({
+  name: 'SidebarColorCurvedLayout',
   inheritAttrs: false,
   setup() {
-    // DefaultLayout - Composition API
+    // SidebarColorCurvedLayout - Composition API
 
     return {}
   },
 })
 
-export default DefaultLayout
+export default SidebarColorCurvedLayout
 </script>
 
 <template>
   <div class="app-overlay"></div>
+
   <Pageloader />
 
   <MobileNavbar />
@@ -23,7 +24,7 @@ export default DefaultLayout
 
   <CircularMenu />
 
-  <Sidebar />
+  <SidebarColorCurved />
   <LanguagesPanel />
   <ActivityPanel />
   <SearchPanel />

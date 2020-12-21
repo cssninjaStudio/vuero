@@ -1,32 +1,28 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 
-const DefaultLayout = defineComponent({
-  name: 'DefaultLayout',
+const WebappV4Layout = defineComponent({
+  name: 'WebappV4Layout',
   inheritAttrs: false,
   setup() {
-    // DefaultLayout - Composition API
+    // WebappV4Layout - Composition API
 
     return {}
   },
 })
 
-export default DefaultLayout
+export default WebappV4Layout
 </script>
 
 <template>
   <div class="app-overlay"></div>
-  <Pageloader />
 
   <MobileNavbar />
   <MobileSidebarMain />
 
-  <CircularMenu />
-
-  <Sidebar />
+  <WebappNavbarAlt />
   <LanguagesPanel />
   <ActivityPanel />
-  <SearchPanel />
 
   <slot></slot>
 </template>

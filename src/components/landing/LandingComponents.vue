@@ -25,13 +25,13 @@ export default LandingComponents
               class="light-image-l"
               src="/src/assets/images/icons/components/colors.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-l"
               src="/src/assets/images/icons/components/colors-dark.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
           </div>
           <div class="component-title">Colors</div>
@@ -45,13 +45,13 @@ export default LandingComponents
               class="light-image-l"
               src="/src/assets/images/icons/components/badges.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-l"
               src="/src/assets/images/icons/components/badges-dark.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
           </div>
           <div class="component-title">Tags & Badges</div>
@@ -65,13 +65,13 @@ export default LandingComponents
               class="light-image-l"
               src="/src/assets/images/icons/components/buttons.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-l"
               src="/src/assets/images/icons/components/buttons-dark.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
           </div>
           <div class="component-title">Buttons</div>
@@ -85,13 +85,13 @@ export default LandingComponents
               class="light-image-l"
               src="/src/assets/images/icons/components/blocks.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-l"
               src="/src/assets/images/icons/components/blocks-dark.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
           </div>
           <div class="component-title">Blocks</div>
@@ -105,13 +105,13 @@ export default LandingComponents
               class="light-image-l"
               src="/src/assets/images/icons/components/content.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-l"
               src="/src/assets/images/icons/components/content-dark.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
           </div>
           <div class="component-title">Content</div>
@@ -124,13 +124,13 @@ export default LandingComponents
               class="light-image-l"
               src="/src/assets/images/icons/components/font-awesome.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-l"
               src="/src/assets/images/icons/components/font-awesome-dark.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
           </div>
           <div class="component-title">Font Awesome</div>
@@ -148,13 +148,13 @@ export default LandingComponents
               class="light-image-l"
               src="/src/assets/images/icons/components/feather-icons.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-l"
               src="/src/assets/images/icons/components/feather-icons-dark.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
           </div>
           <div class="component-title">Feather Icons</div>
@@ -172,13 +172,13 @@ export default LandingComponents
               class="light-image-l"
               src="/src/assets/images/icons/components/line-icons2.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-l"
               src="/src/assets/images/icons/components/line-icons2-dark.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
           </div>
           <div class="component-title">Line Icons</div>
@@ -196,13 +196,13 @@ export default LandingComponents
               class="light-image-l"
               src="/src/assets/images/icons/components/line-icons.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-l"
               src="/src/assets/images/icons/components/line-icons-dark.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
           </div>
           <div class="component-title">Line Icons Light</div>
@@ -220,13 +220,13 @@ export default LandingComponents
               class="light-image-l"
               src="/src/assets/images/icons/components/cards.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-l"
               src="/src/assets/images/icons/components/cards-dark.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
           </div>
           <div class="component-title">Basic Cards</div>
@@ -244,13 +244,13 @@ export default LandingComponents
               class="light-image-l"
               src="/src/assets/images/icons/components/cards.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-l"
               src="/src/assets/images/icons/components/cards-dark.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
           </div>
           <div class="component-title">Advanced Cards</div>
@@ -268,13 +268,13 @@ export default LandingComponents
               class="light-image-l"
               src="/src/assets/images/icons/components/cards.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-l"
               src="/src/assets/images/icons/components/cards-dark.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
           </div>
           <div class="component-title">Bulma Cards</div>
@@ -288,13 +288,13 @@ export default LandingComponents
               class="light-image-l"
               src="/src/assets/images/icons/components/tables.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-l"
               src="/src/assets/images/icons/components/tables-dark.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
           </div>
           <div class="component-title">Tables</div>
@@ -308,13 +308,13 @@ export default LandingComponents
               class="light-image-l"
               src="/src/assets/images/icons/components/tooltip.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-l"
               src="/src/assets/images/icons/components/tooltip-dark.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
           </div>
           <div class="component-title">Tooltips</div>
@@ -338,13 +338,13 @@ export default LandingComponents
               class="light-image-l"
               src="/src/assets/images/icons/components/avatar.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-l"
               src="/src/assets/images/icons/components/avatar-dark.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
           </div>
           <div class="component-title">Avatars</div>
@@ -362,13 +362,13 @@ export default LandingComponents
               class="light-image-l"
               src="/src/assets/images/icons/components/accordion.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-l"
               src="/src/assets/images/icons/components/accordion-dark.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
           </div>
           <div class="component-title">Accordions</div>
@@ -386,13 +386,13 @@ export default LandingComponents
               class="light-image-l"
               src="/src/assets/images/icons/components/breadcrumb.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-l"
               src="/src/assets/images/icons/components/breadcrumb-dark.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
           </div>
           <div class="component-title">Breadcrumb</div>
@@ -410,13 +410,13 @@ export default LandingComponents
               class="light-image-l"
               src="/src/assets/images/icons/components/dropdowns.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-l"
               src="/src/assets/images/icons/components/dropdowns-dark.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
           </div>
           <div class="component-title">Dropdowns</div>
@@ -434,13 +434,13 @@ export default LandingComponents
               class="light-image-l"
               src="/src/assets/images/icons/components/icon-box.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-l"
               src="/src/assets/images/icons/components/icon-box-dark.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
           </div>
           <div class="component-title">Icon Box</div>
@@ -458,13 +458,13 @@ export default LandingComponents
               class="light-image-l"
               src="/src/assets/images/icons/components/messages.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-l"
               src="/src/assets/images/icons/components/messages-dark.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
           </div>
           <div class="component-title">Messages</div>
@@ -478,13 +478,13 @@ export default LandingComponents
               class="light-image-l"
               src="/src/assets/images/icons/components/modals.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-l"
               src="/src/assets/images/icons/components/modals-dark.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
           </div>
           <div class="component-title">Modals</div>
@@ -502,13 +502,13 @@ export default LandingComponents
               class="light-image-l"
               src="/src/assets/images/icons/components/progress.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-l"
               src="/src/assets/images/icons/components/progress-dark.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
           </div>
           <div class="component-title">Progress</div>
@@ -526,13 +526,13 @@ export default LandingComponents
               class="light-image-l"
               src="/src/assets/images/icons/components/tabs.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-l"
               src="/src/assets/images/icons/components/tabs-dark.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
           </div>
           <div class="component-title">Tabs</div>
@@ -550,13 +550,13 @@ export default LandingComponents
               class="light-image-l"
               src="/src/assets/images/icons/components/slider-tabs.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-l"
               src="/src/assets/images/icons/components/slider-tabs-dark.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
           </div>
           <div class="component-title">Slider Tabs</div>
@@ -574,13 +574,13 @@ export default LandingComponents
               class="light-image-l"
               src="/src/assets/images/icons/components/flex-tables.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-l"
               src="/src/assets/images/icons/components/flex-tables-dark.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
           </div>
           <div class="component-title">Flex Tables</div>
@@ -594,13 +594,13 @@ export default LandingComponents
               class="light-image-l"
               src="/src/assets/images/icons/components/snacks.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-l"
               src="/src/assets/images/icons/components/snacks-dark.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
           </div>
           <div class="component-title">Snacks</div>
@@ -623,13 +623,13 @@ export default LandingComponents
               class="light-image-l"
               src="/src/assets/images/icons/components/inputs.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-l"
               src="/src/assets/images/icons/components/inputs-dark.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
           </div>
           <div class="component-title">Inputs</div>
@@ -647,13 +647,13 @@ export default LandingComponents
               class="light-image-l"
               src="/src/assets/images/icons/components/inputs-addons.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-l"
               src="/src/assets/images/icons/components/inputs-addons-dark.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
           </div>
           <div class="component-title">Input Addons</div>
@@ -671,13 +671,13 @@ export default LandingComponents
               class="light-image-l"
               src="/src/assets/images/icons/components/textarea.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-l"
               src="/src/assets/images/icons/components/textarea-dark.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
           </div>
           <div class="component-title">Textarea</div>
@@ -695,13 +695,13 @@ export default LandingComponents
               class="light-image-l"
               src="/src/assets/images/icons/components/selects.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-l"
               src="/src/assets/images/icons/components/selects-dark.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
           </div>
           <div class="component-title">Selects</div>
@@ -719,13 +719,13 @@ export default LandingComponents
               class="light-image-l"
               src="/src/assets/images/icons/components/selects.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-l"
               src="/src/assets/images/icons/components/selects-dark.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
           </div>
           <div class="component-title">Custom</div>
@@ -743,13 +743,13 @@ export default LandingComponents
               class="light-image-l"
               src="/src/assets/images/icons/components/file-input.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-l"
               src="/src/assets/images/icons/components/file-input-dark.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
           </div>
           <div class="component-title">File Input</div>
@@ -767,13 +767,13 @@ export default LandingComponents
               class="light-image-l"
               src="/src/assets/images/icons/components/toggles.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-l"
               src="/src/assets/images/icons/components/toggles-dark.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
           </div>
           <div class="component-title">Checkboxes</div>
@@ -791,13 +791,13 @@ export default LandingComponents
               class="light-image-l"
               src="/src/assets/images/icons/components/toggles.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-l"
               src="/src/assets/images/icons/components/toggles-dark.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
           </div>
           <div class="component-title">Radio Buttons</div>
@@ -815,13 +815,13 @@ export default LandingComponents
               class="light-image-l"
               src="/src/assets/images/icons/components/switch.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-l"
               src="/src/assets/images/icons/components/switch-dark.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
           </div>
           <div class="component-title">Switch</div>
@@ -839,13 +839,13 @@ export default LandingComponents
               class="light-image-l"
               src="/src/assets/images/icons/components/forms.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-l"
               src="/src/assets/images/icons/components/forms-dark.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
           </div>
           <div class="component-title">Form Layout V1</div>
@@ -863,13 +863,13 @@ export default LandingComponents
               class="light-image-l"
               src="/src/assets/images/icons/components/forms.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-l"
               src="/src/assets/images/icons/components/forms-dark.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
           </div>
           <div class="component-title">Form Layout V2</div>
@@ -887,13 +887,13 @@ export default LandingComponents
               class="light-image-l"
               src="/src/assets/images/icons/components/forms.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-l"
               src="/src/assets/images/icons/components/forms-dark.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
           </div>
           <div class="component-title">Form Layout V3</div>
@@ -911,13 +911,13 @@ export default LandingComponents
               class="light-image-l"
               src="/src/assets/images/icons/components/forms.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-l"
               src="/src/assets/images/icons/components/forms-dark.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
           </div>
           <div class="component-title">Form Layout V4</div>
@@ -940,13 +940,13 @@ export default LandingComponents
               class="light-image-l"
               src="/src/assets/images/icons/components/alert.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-l"
               src="/src/assets/images/icons/components/alert-dark.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
           </div>
           <div class="component-title">Alertify</div>
@@ -964,13 +964,13 @@ export default LandingComponents
               class="light-image-l"
               src="/src/assets/images/icons/components/autocomplete.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-l"
               src="/src/assets/images/icons/components/autocomplete-dark.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
           </div>
           <div class="component-title">Autocomplete</div>
@@ -988,13 +988,13 @@ export default LandingComponents
               class="light-image-l"
               src="/src/assets/images/icons/components/datepicker.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-l"
               src="/src/assets/images/icons/components/datepicker-dark.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
           </div>
           <div class="component-title">Datepicker</div>
@@ -1012,13 +1012,13 @@ export default LandingComponents
               class="light-image-l"
               src="/src/assets/images/icons/components/tags-inputs.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-l"
               src="/src/assets/images/icons/components/tags-inputs-dark.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
           </div>
           <div class="component-title">Tags Input</div>
@@ -1036,13 +1036,13 @@ export default LandingComponents
               class="light-image-l"
               src="/src/assets/images/icons/components/slider.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-l"
               src="/src/assets/images/icons/components/slider-dark.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
           </div>
           <div class="component-title">Range Slider</div>
@@ -1060,13 +1060,13 @@ export default LandingComponents
               class="light-image-l"
               src="/src/assets/images/icons/components/file-input.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-l"
               src="/src/assets/images/icons/components/file-input-dark.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
           </div>
           <div class="component-title">Filepond</div>
@@ -1084,13 +1084,13 @@ export default LandingComponents
               class="light-image-l"
               src="/src/assets/images/icons/components/lightbox.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-l"
               src="/src/assets/images/icons/components/lightbox-dark.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
           </div>
           <div class="component-title">Light Gallery</div>
@@ -1108,13 +1108,13 @@ export default LandingComponents
               class="light-image-l"
               src="/src/assets/images/icons/components/video-gallery.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-l"
               src="/src/assets/images/icons/components/video-gallery-dark.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
           </div>
           <div class="component-title">Video Gallery</div>
@@ -1132,13 +1132,13 @@ export default LandingComponents
               class="light-image-l"
               src="/src/assets/images/icons/components/video.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-l"
               src="/src/assets/images/icons/components/video-dark.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
           </div>
           <div class="component-title">Video Player</div>
@@ -1156,13 +1156,13 @@ export default LandingComponents
               class="light-image-l"
               src="/src/assets/images/icons/components/toasts.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-l"
               src="/src/assets/images/icons/components/toasts-dark.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
           </div>
           <div class="component-title">Toasts</div>
@@ -1180,13 +1180,13 @@ export default LandingComponents
               class="light-image-l"
               src="/src/assets/images/icons/components/popover.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-l"
               src="/src/assets/images/icons/components/popover-dark.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
           </div>
           <div class="component-title">Popovers</div>
@@ -1204,13 +1204,13 @@ export default LandingComponents
               class="light-image-l"
               src="/src/assets/images/icons/components/summernote.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-l"
               src="/src/assets/images/icons/components/summernote-dark.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
           </div>
           <div class="component-title">Summernote</div>
@@ -1228,13 +1228,13 @@ export default LandingComponents
               class="light-image-l"
               src="/src/assets/images/icons/components/summernote.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
             <img
               class="dark-image-l"
               src="/src/assets/images/icons/components/summernote-dark.svg"
               alt=""
-              data-lazy-load
+              loading="lazy"
             />
           </div>
           <div class="component-title">Sun Editor</div>

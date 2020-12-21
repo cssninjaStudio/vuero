@@ -8,4 +8,4 @@ const app = createApp(App)
 installPlugins(app)
 
 // true for hydrate
-app.mount('#app', true)
+app.mount('#huro-app', true)
