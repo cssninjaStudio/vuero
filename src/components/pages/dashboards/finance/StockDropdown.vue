@@ -1,19 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const StockDropdown = defineComponent({
-  name: 'StockDropdown',
-  components: {},
-  setup() {
-    // StockDropdown - Composition API
-
-    return {}
-  },
-})
-
-export default StockDropdown
-</script>
-
 <template>
   <div class="dropdown is-spaced is-dots is-right dropdown-trigger">
     <div class="is-trigger" aria-haspopup="true">

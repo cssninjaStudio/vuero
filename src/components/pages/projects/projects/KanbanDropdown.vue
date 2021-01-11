@@ -1,19 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const KanbanDropdown = defineComponent({
-  name: 'KanbanDropdown',
-  components: {},
-  setup() {
-    // KanbanDropdown - Composition API
-
-    return {}
-  },
-})
-
-export default KanbanDropdown
-</script>
-
 <template>
   <div class="dropdown is-right dropdown-trigger">
     <div class="is-trigger" aria-haspopup="true">

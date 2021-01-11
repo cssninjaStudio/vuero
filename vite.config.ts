@@ -1,57 +1,67 @@
 import path from 'path'
-import { UserConfig } from 'vite'
+import Vue from '@vitejs/plugin-vue'
 import Voie from 'vite-plugin-voie'
-import PurgeIcons from 'vite-plugin-purge-icons'
 import ViteComponents from 'vite-plugin-components'
+import ViteFonts from 'vite-plugin-fonts'
+import PurgeIcons from 'vite-plugin-purge-icons'
+import type { UserConfig } from 'vite'
 
-const alias = {
-  '/@src/': path.resolve(__dirname, 'src'),
-  '/@images/': path.resolve(__dirname, 'assets/images'),
-}
+// const alias = [
+//   { find: '@src/', replacement: path.resolve(__dirname, 'src') },
+//   {
+//     find: '@images/',
+//     replacement: path.resolve(__dirname, 'src/assets/images'),
+//   },
+// ]
+
+const projectRootDir = path.resolve(__dirname)
 
 const config: UserConfig = {
-  // base: '/',
-  // optimizeDeps: {
-  //   include: ['dayjs/plugin/relativeTime', 'dayjs/locale/en-gb'],
-  // },
-  alias,
-  resolvers: [
+  alias: [
     {
-      alias(id: string) {
-        return id.replace(/^@(src|images)\//, '/@$1/') // add slash to particular id, then vite won't resolve it as a module
-      },
+      find: '/@src/',
+      replacement: `${path.resolve(projectRootDir, 'src')}/`,
+    },
+    {
+      find: '/@images/',
+      replacement: `${path.resolve(projectRootDir, 'src/assets/images')}/`,
     },
   ],
   plugins: [
+    Vue({
+      ssr: !!process.env.VITE_SSG,
+    }),
+
     // https://github.com/vamplate/vite-plugin-voie
     Voie({
-      // load index page sync and bundled with the landing page to improve first loading time.
-      // feel free to remove if you don't need it
-      // importMode(path: string) {
-      //   return path === '/src/pages/index.vue' ? 'sync' : 'async'
-      // },
-      // extensions: ['vue'],
+      importMode(path: string) {
+        return path === '/src/pages/index.vue' ? 'sync' : 'async'
+      },
     }),
 
     // https://github.com/antfu/vite-plugin-components
     ViteComponents({
-      // currently, vite does not provide an API for plugins to get the config https://github.com/vitejs/vite/issues/738
-      // as the `alias` changes the behavior of middlewares, you have to pass it to ViteComponents to do the resolving
-      alias,
-
-      // relative paths to the directory to search for components.
+      // alias,
       dirs: ['src/components', 'src/layouts'],
-
-      // // allow auto load markdown components under `./src/components/`
-      // extensions: ['vue'],
-
-      // // allow auto import and register components used in markdown
-      // customLoaderMatcher({ path }) {
-      //   return path.endsWith('.md')
-      // },
     }),
 
-    // https://github.com/antfu/purge-icons
+    // https://github.com/stafyniaksacha/vite-plugin-fonts
+    ViteFonts({
+      google: {
+        families: [
+          {
+            name: 'Montserrat',
+            styles: 'wght@500;600;700;800;900',
+          },
+          {
+            name: 'Roboto',
+            styles: 'wght@300,400,500,600,700',
+          },
+        ],
+      },
+    }),
+
+    // https://github.com/antfu/purge-icons/tree/main/packages/vite-plugin-purge-icons
     PurgeIcons(),
   ],
 }

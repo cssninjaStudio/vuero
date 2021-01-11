@@ -1,19 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const EditSettingItemDropdown = defineComponent({
-  name: 'EditSettingItemDropdown',
-  components: {},
-  setup() {
-    // EditSettingItemDropdown - Composition API
-
-    return {}
-  },
-})
-
-export default EditSettingItemDropdown
-</script>
-
 <template>
   <div
     class="dropdown is-spaced is-dots is-right dropdown-trigger is-pushed-mobile"

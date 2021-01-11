@@ -1,19 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const MessagesMobileSubsidebar = defineComponent({
-  name: 'MessagesMobileSubsidebar',
-  components: {},
-  setup() {
-    // MessagesMobileSubsidebar - Composition API
-
-    return {}
-  },
-})
-
-export default MessagesMobileSubsidebar
-</script>
-
 <template>
   <div class="mobile-subsidebar is-messaging">
     <div class="inner">

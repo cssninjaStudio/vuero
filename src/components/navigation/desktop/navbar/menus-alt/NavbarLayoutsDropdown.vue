@@ -1,19 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const NavbarLayoutsDropdown = defineComponent({
-  name: 'NavbarLayoutsDropdown',
-  components: {},
-  setup() {
-    // NavbarLayoutsDropdown - Composition API
-
-    return {}
-  },
-})
-
-export default NavbarLayoutsDropdown
-</script>
-
 <template>
   <div class="dropdown is-modern is-spaced dropdown-trigger has-mega-dropdown">
     <div class="is-trigger" aria-haspopup="true" aria-controls="dropdown-menu">
@@ -75,8 +59,8 @@ export default NavbarLayoutsDropdown
                 </h4>
 
                 <div class="column-content" data-simplebar>
-                  <a
-                    href="/webapp-list-view-1.html"
+                  <RouterLink
+                    :to="{ name: 'webapp-list-view-1' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -85,9 +69,9 @@ export default NavbarLayoutsDropdown
                     <div class="meta">
                       <span>List View V1</span>
                     </div>
-                  </a>
-                  <a
-                    href="/webapp-list-view-2.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-list-view-2' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -96,9 +80,9 @@ export default NavbarLayoutsDropdown
                     <div class="meta">
                       <span>List View V2</span>
                     </div>
-                  </a>
-                  <a
-                    href="/webapp-list-view-3.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-list-view-3' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -107,9 +91,9 @@ export default NavbarLayoutsDropdown
                     <div class="meta">
                       <span>List View V3</span>
                     </div>
-                  </a>
-                  <a
-                    href="/webapp-list-view-4.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-list-view-4' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -118,7 +102,7 @@ export default NavbarLayoutsDropdown
                     <div class="meta">
                       <span>List View V4</span>
                     </div>
-                  </a>
+                  </RouterLink>
                 </div>
               </div>
             </div>
@@ -131,8 +115,8 @@ export default NavbarLayoutsDropdown
                 </h4>
 
                 <div class="column-content" data-simplebar>
-                  <a
-                    href="/webapp-list-flex-2.html"
+                  <RouterLink
+                    :to="{ name: 'webapp-list-flex-2' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -141,9 +125,9 @@ export default NavbarLayoutsDropdown
                     <div class="meta">
                       <span>Flex List V2</span>
                     </div>
-                  </a>
-                  <a
-                    href="/webapp-list-flex-2.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-list-flex-2' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -152,9 +136,9 @@ export default NavbarLayoutsDropdown
                     <div class="meta">
                       <span>Flex List V2</span>
                     </div>
-                  </a>
-                  <a
-                    href="/webapp-list-flex-3.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-list-flex-3' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -163,7 +147,7 @@ export default NavbarLayoutsDropdown
                     <div class="meta">
                       <span>Flex List V3</span>
                     </div>
-                  </a>
+                  </RouterLink>
                 </div>
               </div>
             </div>
@@ -176,8 +160,8 @@ export default NavbarLayoutsDropdown
                 </h4>
 
                 <div class="column-content" data-simplebar>
-                  <a
-                    href="/webapp-list-datatable-1.html"
+                  <RouterLink
+                    :to="{ name: 'webapp-list-datatable-1' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -186,9 +170,9 @@ export default NavbarLayoutsDropdown
                     <div class="meta">
                       <span>Datatable V1</span>
                     </div>
-                  </a>
-                  <a
-                    href="/webapp-list-datatable-2.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-list-datatable-2' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -197,9 +181,9 @@ export default NavbarLayoutsDropdown
                     <div class="meta">
                       <span>Datatable V2</span>
                     </div>
-                  </a>
-                  <a
-                    href="/webapp-list-datatable-3.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-list-datatable-3' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -208,9 +192,9 @@ export default NavbarLayoutsDropdown
                     <div class="meta">
                       <span>Datatable V3</span>
                     </div>
-                  </a>
-                  <a
-                    href="/webapp-list-datatable-4.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-list-datatable-4' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -219,7 +203,7 @@ export default NavbarLayoutsDropdown
                     <div class="meta">
                       <span>Datatable V4</span>
                     </div>
-                  </a>
+                  </RouterLink>
                 </div>
               </div>
             </div>
@@ -235,8 +219,8 @@ export default NavbarLayoutsDropdown
                 </h4>
 
                 <div class="column-content">
-                  <a
-                    href="/webapp-grid-cards-1.html"
+                  <RouterLink
+                    :to="{ name: 'webapp-grid-cards-1' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -245,9 +229,9 @@ export default NavbarLayoutsDropdown
                     <div class="meta">
                       <span>Card Grid V1</span>
                     </div>
-                  </a>
-                  <a
-                    href="/webapp-grid-cards-2.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-grid-cards-2' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -256,9 +240,9 @@ export default NavbarLayoutsDropdown
                     <div class="meta">
                       <span>Card Grid V2</span>
                     </div>
-                  </a>
-                  <a
-                    href="/webapp-grid-cards-3.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-grid-cards-3' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -267,9 +251,9 @@ export default NavbarLayoutsDropdown
                     <div class="meta">
                       <span>Card Grid V3</span>
                     </div>
-                  </a>
-                  <a
-                    href="/webapp-grid-cards-4.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-grid-cards-4' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -278,7 +262,7 @@ export default NavbarLayoutsDropdown
                     <div class="meta">
                       <span>Card Grid V4</span>
                     </div>
-                  </a>
+                  </RouterLink>
                 </div>
               </div>
             </div>
@@ -292,8 +276,8 @@ export default NavbarLayoutsDropdown
                 </h4>
 
                 <div class="column-content">
-                  <a
-                    href="/webapp-grid-tiles-1.html"
+                  <RouterLink
+                    :to="{ name: 'webapp-grid-tiles-1' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -302,9 +286,9 @@ export default NavbarLayoutsDropdown
                     <div class="meta">
                       <span>Tile Grid V1</span>
                     </div>
-                  </a>
-                  <a
-                    href="/webapp-grid-tiles-2.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-grid-tiles-2' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -313,9 +297,9 @@ export default NavbarLayoutsDropdown
                     <div class="meta">
                       <span>Tile Grid V2</span>
                     </div>
-                  </a>
-                  <a
-                    href="/webapp-grid-tiles-3.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-grid-tiles-3' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -324,7 +308,7 @@ export default NavbarLayoutsDropdown
                     <div class="meta">
                       <span>Tile Grid V3</span>
                     </div>
-                  </a>
+                  </RouterLink>
                 </div>
               </div>
             </div>
@@ -338,8 +322,8 @@ export default NavbarLayoutsDropdown
                 </h4>
 
                 <div class="column-content">
-                  <a
-                    href="/webapp-grid-users-1.html"
+                  <RouterLink
+                    :to="{ name: 'webapp-grid-users-1' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -348,9 +332,9 @@ export default NavbarLayoutsDropdown
                     <div class="meta">
                       <span>User Grid V1</span>
                     </div>
-                  </a>
-                  <a
-                    href="/webapp-grid-users-2.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-grid-users-2' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -359,9 +343,9 @@ export default NavbarLayoutsDropdown
                     <div class="meta">
                       <span>User Grid V2</span>
                     </div>
-                  </a>
-                  <a
-                    href="/webapp-grid-users-3.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-grid-users-3' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -370,9 +354,9 @@ export default NavbarLayoutsDropdown
                     <div class="meta">
                       <span>User Grid V3</span>
                     </div>
-                  </a>
-                  <a
-                    href="/webapp-grid-users-4.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-grid-users-4' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -381,7 +365,7 @@ export default NavbarLayoutsDropdown
                     <div class="meta">
                       <span>User Grid V4</span>
                     </div>
-                  </a>
+                  </RouterLink>
                 </div>
               </div>
             </div>
@@ -397,8 +381,8 @@ export default NavbarLayoutsDropdown
                 </h4>
 
                 <div class="column-content" data-simplebar>
-                  <a
-                    href="/webapp-profile-view.html"
+                  <RouterLink
+                    :to="{ name: 'webapp-profile-view' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -407,9 +391,9 @@ export default NavbarLayoutsDropdown
                     <div class="meta">
                       <span>User Profile</span>
                     </div>
-                  </a>
-                  <a
-                    href="/webapp-profile-edit-1.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-profile-edit-1' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -418,9 +402,9 @@ export default NavbarLayoutsDropdown
                     <div class="meta">
                       <span>Edit Profile</span>
                     </div>
-                  </a>
-                  <a
-                    href="/webapp-profile-notifications.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-profile-notifications' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -429,9 +413,9 @@ export default NavbarLayoutsDropdown
                     <div class="meta">
                       <span>Notifications</span>
                     </div>
-                  </a>
-                  <a
-                    href="/webapp-profile-settings.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-profile-settings' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -440,7 +424,7 @@ export default NavbarLayoutsDropdown
                     <div class="meta">
                       <span>Settings</span>
                     </div>
-                  </a>
+                  </RouterLink>
                 </div>
               </div>
             </div>
@@ -454,56 +438,74 @@ export default NavbarLayoutsDropdown
                 </h4>
 
                 <div class="column-content" data-simplebar>
-                  <a href="/auth-login-1.html" class="dropdown-item is-media">
+                  <RouterLink
+                    :to="{ name: 'auth-login-1' }"
+                    class="dropdown-item is-media"
+                  >
                     <div class="icon">
                       <i class="lnil lnil-pointer-right"></i>
                     </div>
                     <div class="meta">
                       <span>Login v1</span>
                     </div>
-                  </a>
-                  <a href="/auth-login-2.html" class="dropdown-item is-media">
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'auth-login-2' }"
+                    class="dropdown-item is-media"
+                  >
                     <div class="icon">
                       <i class="lnil lnil-pointer-right"></i>
                     </div>
                     <div class="meta">
                       <span>Login v2</span>
                     </div>
-                  </a>
-                  <a href="/auth-login-3.html" class="dropdown-item is-media">
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'auth-login-3' }"
+                    class="dropdown-item is-media"
+                  >
                     <div class="icon">
                       <i class="lnil lnil-pointer-right"></i>
                     </div>
                     <div class="meta">
                       <span>Login v3</span>
                     </div>
-                  </a>
-                  <a href="/auth-signup-2.html" class="dropdown-item is-media">
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'auth-signup-2' }"
+                    class="dropdown-item is-media"
+                  >
                     <div class="icon">
                       <i class="lnil lnil-crown"></i>
                     </div>
                     <div class="meta">
                       <span>Signup v1</span>
                     </div>
-                  </a>
-                  <a href="/auth-signup-3.html" class="dropdown-item is-media">
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'auth-signup-3' }"
+                    class="dropdown-item is-media"
+                  >
                     <div class="icon">
                       <i class="lnil lnil-crown"></i>
                     </div>
                     <div class="meta">
                       <span>Signup v2</span>
                     </div>
-                  </a>
-                  <a href="/auth-signup-1.html" class="dropdown-item is-media">
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'auth-signup-1' }"
+                    class="dropdown-item is-media"
+                  >
                     <div class="icon">
                       <i class="lnil lnil-crown"></i>
                     </div>
                     <div class="meta">
                       <span>Signup Flow</span>
                     </div>
-                  </a>
-                  <a
-                    href="/webapp-search-results.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-search-results' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -512,9 +514,9 @@ export default NavbarLayoutsDropdown
                     <div class="meta">
                       <span>Search Results</span>
                     </div>
-                  </a>
-                  <a
-                    href="/webapp-search-empty.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-search-empty' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -523,7 +525,7 @@ export default NavbarLayoutsDropdown
                     <div class="meta">
                       <span>Empty Search</span>
                     </div>
-                  </a>
+                  </RouterLink>
                 </div>
               </div>
             </div>
@@ -537,8 +539,8 @@ export default NavbarLayoutsDropdown
                 </h4>
 
                 <div class="column-content" data-simplebar>
-                  <a
-                    href="/webapp-projects-projects.html"
+                  <RouterLink
+                    :to="{ name: 'webapp-projects-projects' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -547,9 +549,9 @@ export default NavbarLayoutsDropdown
                     <div class="meta">
                       <span>Projects V1</span>
                     </div>
-                  </a>
-                  <a
-                    href="/webapp-projects-projects-2.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-projects-projects-2' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -558,9 +560,9 @@ export default NavbarLayoutsDropdown
                     <div class="meta">
                       <span>Projects V2</span>
                     </div>
-                  </a>
-                  <a
-                    href="/webapp-projects-projects-3.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-projects-projects-3' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -569,9 +571,9 @@ export default NavbarLayoutsDropdown
                     <div class="meta">
                       <span>Projects V3</span>
                     </div>
-                  </a>
-                  <a
-                    href="/webapp-projects-project.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-projects-project' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -580,9 +582,9 @@ export default NavbarLayoutsDropdown
                     <div class="meta">
                       <span>Project Details</span>
                     </div>
-                  </a>
-                  <a
-                    href="/webapp-kanban-board.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-kanban-board' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -591,7 +593,7 @@ export default NavbarLayoutsDropdown
                     <div class="meta">
                       <span>Kanban Board</span>
                     </div>
-                  </a>
+                  </RouterLink>
                 </div>
               </div>
             </div>
@@ -607,8 +609,8 @@ export default NavbarLayoutsDropdown
                 </h4>
 
                 <div class="column-content" data-simplebar>
-                  <a
-                    href="/webapp-saas-billing.html"
+                  <RouterLink
+                    :to="{ name: 'webapp-saas-billing' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -617,17 +619,20 @@ export default NavbarLayoutsDropdown
                     <div class="meta">
                       <span>SaaS Billing</span>
                     </div>
-                  </a>
-                  <a href="/webapp-welcome.html" class="dropdown-item is-media">
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-welcome' }"
+                    class="dropdown-item is-media"
+                  >
                     <div class="icon">
                       <i class="lnil lnil-door-alt"></i>
                     </div>
                     <div class="meta">
                       <span>Welcome</span>
                     </div>
-                  </a>
-                  <a
-                    href="/webapp-action-page-1.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-action-page-1' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -636,9 +641,9 @@ export default NavbarLayoutsDropdown
                     <div class="meta">
                       <span>Action Page V1</span>
                     </div>
-                  </a>
-                  <a
-                    href="/webapp-action-page-2.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-action-page-2' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -647,7 +652,7 @@ export default NavbarLayoutsDropdown
                     <div class="meta">
                       <span>Action Page V2</span>
                     </div>
-                  </a>
+                  </RouterLink>
                 </div>
               </div>
             </div>
@@ -660,8 +665,8 @@ export default NavbarLayoutsDropdown
                 </h4>
 
                 <div class="column-content" data-simplebar>
-                  <a
-                    href="/webapp-utility-account-confirm.html"
+                  <RouterLink
+                    :to="{ name: 'webapp-utility-account-confirm' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -670,9 +675,9 @@ export default NavbarLayoutsDropdown
                     <div class="meta">
                       <span>Confirm Account</span>
                     </div>
-                  </a>
-                  <a
-                    href="/webapp-utility-promotion.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-utility-promotion' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -681,9 +686,9 @@ export default NavbarLayoutsDropdown
                     <div class="meta">
                       <span>Promotion Page</span>
                     </div>
-                  </a>
-                  <a
-                    href="/webapp-utility-invoice.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-utility-invoice' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -692,9 +697,9 @@ export default NavbarLayoutsDropdown
                     <div class="meta">
                       <span>Invoice</span>
                     </div>
-                  </a>
-                  <a
-                    href="/admin-utility-status.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'admin-utility-status' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -703,7 +708,7 @@ export default NavbarLayoutsDropdown
                     <div class="meta">
                       <span>App Status</span>
                     </div>
-                  </a>
+                  </RouterLink>
                 </div>
               </div>
             </div>
@@ -716,8 +721,8 @@ export default NavbarLayoutsDropdown
                 </h4>
 
                 <div class="column-content">
-                  <a
-                    href="/webapp-onboarding-page-1.html"
+                  <RouterLink
+                    :to="{ name: 'webapp-onboarding-page-1' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -726,9 +731,9 @@ export default NavbarLayoutsDropdown
                     <div class="meta">
                       <span>Onboarding V1</span>
                     </div>
-                  </a>
-                  <a
-                    href="/webapp-onboarding-page-2.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-onboarding-page-2' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -737,9 +742,9 @@ export default NavbarLayoutsDropdown
                     <div class="meta">
                       <span>Onboarding V2</span>
                     </div>
-                  </a>
-                  <a
-                    href="/webapp-onboarding-page-3.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-onboarding-page-3' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -748,9 +753,9 @@ export default NavbarLayoutsDropdown
                     <div class="meta">
                       <span>Onboarding V3</span>
                     </div>
-                  </a>
-                  <a
-                    href="/webapp-onboarding-page-4.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-onboarding-page-4' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -759,9 +764,9 @@ export default NavbarLayoutsDropdown
                     <div class="meta">
                       <span>Onboarding V4</span>
                     </div>
-                  </a>
-                  <a
-                    href="/webapp-onboarding-page-5.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-onboarding-page-5' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -770,7 +775,7 @@ export default NavbarLayoutsDropdown
                     <div class="meta">
                       <span>Onboarding V5</span>
                     </div>
-                  </a>
+                  </RouterLink>
                 </div>
               </div>
             </div>
@@ -786,46 +791,61 @@ export default NavbarLayoutsDropdown
                 </h4>
 
                 <div class="column-content" data-simplebar>
-                  <a href="/error-page-1.html" class="dropdown-item is-media">
+                  <RouterLink
+                    :to="{ name: 'error-page-1' }"
+                    class="dropdown-item is-media"
+                  >
                     <div class="icon">
                       <i class="lnil lnil-cross-circle"></i>
                     </div>
                     <div class="meta">
                       <span>Error Page V1</span>
                     </div>
-                  </a>
-                  <a href="/error-page-2.html" class="dropdown-item is-media">
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'error-page-2' }"
+                    class="dropdown-item is-media"
+                  >
                     <div class="icon">
                       <i class="lnil lnil-cross-circle"></i>
                     </div>
                     <div class="meta">
                       <span>Error Page V2</span>
                     </div>
-                  </a>
-                  <a href="/error-page-3.html" class="dropdown-item is-media">
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'error-page-3' }"
+                    class="dropdown-item is-media"
+                  >
                     <div class="icon">
                       <i class="lnil lnil-cross-circle"></i>
                     </div>
                     <div class="meta">
                       <span>Error Page V3</span>
                     </div>
-                  </a>
-                  <a href="/error-page-4.html" class="dropdown-item is-media">
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'error-page-4' }"
+                    class="dropdown-item is-media"
+                  >
                     <div class="icon">
                       <i class="lnil lnil-cross-circle"></i>
                     </div>
                     <div class="meta">
                       <span>Error Page V4</span>
                     </div>
-                  </a>
-                  <a href="/error-page-5.html" class="dropdown-item is-media">
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'error-page-5' }"
+                    class="dropdown-item is-media"
+                  >
                     <div class="icon">
                       <i class="lnil lnil-cross-circle"></i>
                     </div>
                     <div class="meta">
                       <span>Error Page V5</span>
                     </div>
-                  </a>
+                  </RouterLink>
                 </div>
               </div>
             </div>

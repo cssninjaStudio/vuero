@@ -1,42 +1,21 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-import {
-  ChevronLeftIcon,
-  SearchIcon,
-  ChromeIcon,
-  TvIcon,
-  TwitterIcon,
-} from '@zhuowenli/vue-feather-icons'
-
-const SearchPanel = defineComponent({
-  name: 'SearchPanel',
-  components: {
-    ChevronLeftIcon,
-    SearchIcon,
-    ChromeIcon,
-    TvIcon,
-    TwitterIcon,
-  },
-  setup() {
-    // SearchPanel - Composition API
-
-    return {}
-  },
-})
-
-export default SearchPanel
-</script>
-
 <template>
   <div id="search-panel" class="right-panel-wrapper is-search is-left">
     <div class="panel-overlay"></div>
 
     <div class="right-panel">
       <div class="right-panel-head">
-        <img class="light-image" src="/img/logos/logo/logo.svg" alt="" />
-        <img class="dark-image" src="/img/logos/logo/logo-light.svg" alt="" />
+        <img
+          class="light-image"
+          src="/src/assets/images/logos/logo/logo.svg"
+          alt=""
+        />
+        <img
+          class="dark-image"
+          src="/src/assets/images/logos/logo/logo-light.svg"
+          alt=""
+        />
         <a class="close-panel">
-          <ChevronLeftIcon />
+          <Icon icon="feather:chevron-left" />
         </a>
       </div>
       <div class="right-panel-body has-slimscroll">
@@ -48,7 +27,7 @@ export default SearchPanel
               placeholder="Search..."
             />
             <div class="form-icon">
-              <SearchIcon />
+              <Icon icon="feather:search" />
             </div>
             <div class="search-results has-slimscroll"></div>
           </div>
@@ -61,7 +40,7 @@ export default SearchPanel
               class="media-flex-center is-responsive-mobile is-responsive-tablet-p"
             >
               <div class="h-icon is-info is-rounded is-small">
-                <ChromeIcon />
+                <Icon icon="feather:chrome" />
               </div>
               <div class="flex-meta">
                 <span>Browser Support</span>
@@ -72,7 +51,7 @@ export default SearchPanel
               class="media-flex-center is-responsive-mobile is-responsive-tablet-p"
             >
               <div class="h-icon is-orange is-rounded is-small">
-                <TvIcon />
+                <Icon icon="feather:tv" />
               </div>
               <div class="flex-meta">
                 <span>Twitch API</span>
@@ -83,7 +62,7 @@ export default SearchPanel
               class="media-flex-center is-responsive-mobile is-responsive-tablet-p"
             >
               <div class="h-icon is-green is-rounded is-small">
-                <TwitterIcon />
+                <Icon icon="feather:twitter" />
               </div>
               <div class="flex-meta">
                 <span>Twitter Auth</span>
@@ -103,7 +82,7 @@ export default SearchPanel
                 <img
                   class="avatar"
                   src="https://via.placeholder.com/150x150"
-                  data-demo-src="/img/avatars/photos/7.jpg"
+                  data-demo-src="/src/assets/images/avatars/photos/7.jpg"
                   alt=""
                   data-user-popover="0"
                 />
@@ -120,7 +99,7 @@ export default SearchPanel
                 <img
                   class="avatar"
                   src="https://via.placeholder.com/150x150"
-                  data-demo-src="/img/avatars/photos/13.jpg"
+                  data-demo-src="/src/assets/images/avatars/photos/13.jpg"
                   alt=""
                   data-user-popover="6"
                 />
@@ -137,7 +116,7 @@ export default SearchPanel
                 <img
                   class="avatar"
                   src="https://via.placeholder.com/150x150"
-                  data-demo-src="/img/avatars/photos/22.jpg"
+                  data-demo-src="/src/assets/images/avatars/photos/22.jpg"
                   alt=""
                   data-user-popover="5"
                 />

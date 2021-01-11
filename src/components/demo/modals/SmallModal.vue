@@ -1,19 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const SmallModal = defineComponent({
-  name: 'SmallModal',
-  components: {},
-  setup() {
-    // SmallModal - Composition API
-
-    return {}
-  },
-})
-
-export default SmallModal
-</script>
-
 <template>
   <div id="demo-small-modal" class="modal h-modal is-small">
     <div class="modal-background h-modal-close"></div>

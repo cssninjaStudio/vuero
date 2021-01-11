@@ -1,19 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const NavbarElementsDropdown = defineComponent({
-  name: 'NavbarElementsDropdown',
-  components: {},
-  setup() {
-    // NavbarElementsDropdown - Composition API
-
-    return {}
-  },
-})
-
-export default NavbarElementsDropdown
-</script>
-
 <template>
   <div
     class="dropdown is-modern is-spaced dropdown-trigger has-mega-dropdown is-right"
@@ -79,16 +63,19 @@ export default NavbarElementsDropdown
                 </h4>
 
                 <div class="column-content" data-simplebar>
-                  <a href="/elements-hub.html" class="dropdown-item is-media">
+                  <RouterLink
+                    :to="{ name: 'elements-hub' }"
+                    class="dropdown-item is-media"
+                  >
                     <div class="icon">
                       <i class="lnil lnil-home"></i>
                     </div>
                     <div class="meta">
                       <span>Elements Hub</span>
                     </div>
-                  </a>
-                  <a
-                    href="/elements-colors.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'elements-colors' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -97,9 +84,9 @@ export default NavbarElementsDropdown
                     <div class="meta">
                       <span>Colors</span>
                     </div>
-                  </a>
-                  <a
-                    href="/elements-helpers.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'elements-helpers' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -108,9 +95,9 @@ export default NavbarElementsDropdown
                     <div class="meta">
                       <span>Helpers</span>
                     </div>
-                  </a>
-                  <a
-                    href="/elements-icons-lnil.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'elements-icons-lnil' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -119,9 +106,9 @@ export default NavbarElementsDropdown
                     <div class="meta">
                       <span>Line Icons L</span>
                     </div>
-                  </a>
-                  <a
-                    href="/elements-icons-lnir.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'elements-icons-lnir' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -130,9 +117,9 @@ export default NavbarElementsDropdown
                     <div class="meta">
                       <span>Line Icons R</span>
                     </div>
-                  </a>
-                  <a
-                    href="/elements-icons-fa.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'elements-icons-fa' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -141,9 +128,9 @@ export default NavbarElementsDropdown
                     <div class="meta">
                       <span>Font Awesome</span>
                     </div>
-                  </a>
-                  <a
-                    href="/elements-icons-feather.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'elements-icons-feather' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -152,7 +139,7 @@ export default NavbarElementsDropdown
                     <div class="meta">
                       <span>Feather Icons</span>
                     </div>
-                  </a>
+                  </RouterLink>
                 </div>
               </div>
             </div>
@@ -165,8 +152,8 @@ export default NavbarElementsDropdown
                 </h4>
 
                 <div class="column-content" data-simplebar>
-                  <a
-                    href="/elements-buttons.html"
+                  <RouterLink
+                    :to="{ name: 'elements-buttons' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -175,9 +162,9 @@ export default NavbarElementsDropdown
                     <div class="meta">
                       <span>Buttons</span>
                     </div>
-                  </a>
-                  <a
-                    href="/elements-blocks.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'elements-blocks' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -186,9 +173,9 @@ export default NavbarElementsDropdown
                     <div class="meta">
                       <span>Blocks</span>
                     </div>
-                  </a>
-                  <a
-                    href="/elements-content.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'elements-content' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -197,15 +184,18 @@ export default NavbarElementsDropdown
                     <div class="meta">
                       <span>Content</span>
                     </div>
-                  </a>
-                  <a href="/elements-tags.html" class="dropdown-item is-media">
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'elements-tags' }"
+                    class="dropdown-item is-media"
+                  >
                     <div class="icon">
                       <i class="lnil lnil-bookmark-alt"></i>
                     </div>
                     <div class="meta">
                       <span>Tags</span>
                     </div>
-                  </a>
+                  </RouterLink>
                 </div>
               </div>
             </div>
@@ -218,8 +208,8 @@ export default NavbarElementsDropdown
                 </h4>
 
                 <div class="column-content" data-simplebar>
-                  <a
-                    href="/elements-cards-basic.html"
+                  <RouterLink
+                    :to="{ name: 'elements-cards-basic' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -228,9 +218,9 @@ export default NavbarElementsDropdown
                     <div class="meta">
                       <span>Basic Cards</span>
                     </div>
-                  </a>
-                  <a
-                    href="/elements-cards-advanced.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'elements-cards-advanced' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -239,9 +229,9 @@ export default NavbarElementsDropdown
                     <div class="meta">
                       <span>Advanced Cards</span>
                     </div>
-                  </a>
-                  <a
-                    href="/elements-cards-bulma.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'elements-cards-bulma' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -250,9 +240,9 @@ export default NavbarElementsDropdown
                     <div class="meta">
                       <span>Bulma Cards</span>
                     </div>
-                  </a>
-                  <a
-                    href="/webapp-list-datatable-4.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-list-datatable-4' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -261,9 +251,9 @@ export default NavbarElementsDropdown
                     <div class="meta">
                       <span>Table</span>
                     </div>
-                  </a>
-                  <a
-                    href="/webapp-list-datatable-4.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-list-datatable-4' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -272,7 +262,7 @@ export default NavbarElementsDropdown
                     <div class="meta">
                       <span>Tooltips</span>
                     </div>
-                  </a>
+                  </RouterLink>
                 </div>
               </div>
             </div>
@@ -288,8 +278,8 @@ export default NavbarElementsDropdown
                 </h4>
 
                 <div class="column-content">
-                  <a
-                    href="/elements-forms-inputs.html"
+                  <RouterLink
+                    :to="{ name: 'elements-forms-inputs' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -298,9 +288,9 @@ export default NavbarElementsDropdown
                     <div class="meta">
                       <span>Inputs</span>
                     </div>
-                  </a>
-                  <a
-                    href="/elements-forms-addons.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'elements-forms-addons' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -309,9 +299,9 @@ export default NavbarElementsDropdown
                     <div class="meta">
                       <span>Input Addons</span>
                     </div>
-                  </a>
-                  <a
-                    href="/elements-forms-textarea.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'elements-forms-textarea' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -320,7 +310,7 @@ export default NavbarElementsDropdown
                     <div class="meta">
                       <span>Textarea</span>
                     </div>
-                  </a>
+                  </RouterLink>
                 </div>
               </div>
             </div>
@@ -334,8 +324,8 @@ export default NavbarElementsDropdown
                 </h4>
 
                 <div class="column-content">
-                  <a
-                    href="/elements-forms-selects.html"
+                  <RouterLink
+                    :to="{ name: 'elements-forms-selects' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -344,9 +334,9 @@ export default NavbarElementsDropdown
                     <div class="meta">
                       <span>Regular</span>
                     </div>
-                  </a>
-                  <a
-                    href="/elements-forms-custom.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'elements-forms-custom' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -355,9 +345,9 @@ export default NavbarElementsDropdown
                     <div class="meta">
                       <span>Custom</span>
                     </div>
-                  </a>
-                  <a
-                    href="/elements-forms-file.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'elements-forms-file' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -366,7 +356,7 @@ export default NavbarElementsDropdown
                     <div class="meta">
                       <span>File Input</span>
                     </div>
-                  </a>
+                  </RouterLink>
                 </div>
               </div>
             </div>
@@ -380,8 +370,8 @@ export default NavbarElementsDropdown
                 </h4>
 
                 <div class="column-content">
-                  <a
-                    href="/elements-forms-checkboxes.html"
+                  <RouterLink
+                    :to="{ name: 'elements-forms-checkboxes' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -390,9 +380,9 @@ export default NavbarElementsDropdown
                     <div class="meta">
                       <span>Checkboxes</span>
                     </div>
-                  </a>
-                  <a
-                    href="/elements-forms-radios.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'elements-forms-radios' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -401,9 +391,9 @@ export default NavbarElementsDropdown
                     <div class="meta">
                       <span>Radio Buttons</span>
                     </div>
-                  </a>
-                  <a
-                    href="/elements-forms-switch.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'elements-forms-switch' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -412,7 +402,7 @@ export default NavbarElementsDropdown
                     <div class="meta">
                       <span>Switch</span>
                     </div>
-                  </a>
+                  </RouterLink>
                 </div>
               </div>
             </div>

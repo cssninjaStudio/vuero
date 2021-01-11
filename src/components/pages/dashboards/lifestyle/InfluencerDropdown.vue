@@ -1,19 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const InfluencerDropdown = defineComponent({
-  name: 'InfluencerDropdown',
-  components: {},
-  setup() {
-    // InfluencerDropdown - Composition API
-
-    return {}
-  },
-})
-
-export default InfluencerDropdown
-</script>
-
 <template>
   <div class="dropdown is-spaced is-dots is-right dropdown-trigger end-action">
     <div class="is-trigger" aria-haspopup="true">

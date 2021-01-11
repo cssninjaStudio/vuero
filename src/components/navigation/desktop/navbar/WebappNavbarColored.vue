@@ -1,25 +1,8 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const WebappNavbarColored = defineComponent({
-  name: 'WebappNavbarColored',
-  components: {},
-  setup() {
-    // @ToCheck
-    // WebappNavbarColored - Composition API
-
-    return {}
-  },
-})
-
-export default WebappNavbarColored
-</script>
-
 <template>
   <div class="webapp-navbar is-colored">
     <div class="webapp-navbar-inner">
       <div class="left">
-        <a href="/" class="brand">
+        <RouterLink :to="{ name: 'index' }" class="brand">
           <img
             class="light-image"
             src="/src/assets/images/logos/logo/logo-light.svg"
@@ -30,7 +13,7 @@ export default WebappNavbarColored
             src="/src/assets/images/logos/logo/logo-light.svg"
             alt=""
           />
-        </a>
+        </RouterLink>
         <div class="separator"></div>
         <!-- <ProjectsQuickDropdown /> -->
         <h1 id="webapp-page-title" class="title is-5">Welcome</h1>
@@ -69,10 +52,13 @@ export default WebappNavbarColored
             <Icon icon="feather:cpu" />
             <span>Components</span>
           </a>
-          <a href="/webapp-messaging-chat.html" class="centered-link">
+          <RouterLink
+            :to="{ name: 'webapp-messaging-chat' }"
+            class="centered-link"
+          >
             <Icon icon="feather:message-circle" />
             <span>Chat</span>
-          </a>
+          </RouterLink>
           <a class="centered-link centered-link-search">
             <Icon icon="feather:search" />
             <span>Search</span>
@@ -125,7 +111,10 @@ export default WebappNavbarColored
                   <span>Product Manager</span>
                 </div>
               </div>
-              <a href="/admin-profile-view.html" class="dropdown-item is-media">
+              <RouterLink
+                :to="{ name: 'admin-profile-view' }"
+                class="dropdown-item is-media"
+              >
                 <div class="icon">
                   <i class="lnil lnil-user-alt"></i>
                 </div>
@@ -133,7 +122,7 @@ export default WebappNavbarColored
                   <span>Profile</span>
                   <span>View your profile</span>
                 </div>
-              </a>
+              </RouterLink>
               <a class="dropdown-item is-media layout-switcher">
                 <div class="icon">
                   <i class="lnil lnil-layout"></i>

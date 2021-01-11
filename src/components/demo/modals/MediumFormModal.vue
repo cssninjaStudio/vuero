@@ -1,19 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const MediumFormModal = defineComponent({
-  name: 'MediumFormModal',
-  components: {},
-  setup() {
-    // MediumFormModal - Composition API
-
-    return {}
-  },
-})
-
-export default MediumFormModal
-</script>
-
 <template>
   <div id="demo-medium-form-modal" class="modal h-modal is-medium">
     <div class="modal-background h-modal-close"></div>

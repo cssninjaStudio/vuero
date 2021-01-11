@@ -1,19 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const GraphDropdown = defineComponent({
-  name: 'GraphDropdown',
-  components: {},
-  setup() {
-    // GraphDropdown - Composition API
-
-    return {}
-  },
-})
-
-export default GraphDropdown
-</script>
-
 <template>
   <div class="dropdown is-spaced is-dots is-right dropdown-trigger">
     <div class="is-trigger" aria-haspopup="true">

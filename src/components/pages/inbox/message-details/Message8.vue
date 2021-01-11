@@ -1,19 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const Message8 = defineComponent({
-  name: 'Message8',
-  components: {},
-  setup() {
-    // Message8 - Composition API
-
-    return {}
-  },
-})
-
-export default Message8
-</script>
-
 <template>
   <!-- Message details -->
   <div id="message-8" class="inbox-message-details is-hidden">
@@ -95,9 +79,7 @@ export default Message8
           <p>Hi,</p>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            <a href="#" target="_blank"
-              >Nunc haec primum fortasse audientis servire debemus.</a
-            >
+            <a href="#">Nunc haec primum fortasse audientis servire debemus.</a>
             At iste non dolendi status non vocatur voluptas. Quae duo sunt, unum
             facit. Etiam beatissimum? Haec quo modo conveniant, non sane
             intellego. Duo Reges: constructio interrete.

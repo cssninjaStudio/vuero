@@ -1,19 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const FlightResultsDropdown = defineComponent({
-  name: 'FlightResultsDropdown',
-  components: {},
-  setup() {
-    // FlightResultsDropdown - Composition API
-
-    return {}
-  },
-})
-
-export default FlightResultsDropdown
-</script>
-
 <template>
   <div class="dropdown is-spaced is-dots is-right dropdown-trigger">
     <div class="is-trigger" aria-haspopup="true">

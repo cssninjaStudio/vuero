@@ -1,19 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const ElementsWebappMenu = defineComponent({
-  name: 'ElementsWebappMenu',
-  components: {},
-  setup() {
-    // ElementsWebappMenu - Composition API
-
-    return {}
-  },
-})
-
-export default ElementsWebappMenu
-</script>
-
 <template>
   <div id="elements-webapp-menu" class="webapp-subnavbar-inner tabs-wrapper">
     <div class="tabs-inner">
@@ -36,25 +20,25 @@ export default ElementsWebappMenu
                 <h4 class="column-heading">General</h4>
                 <ul>
                   <li>
-                    <a href="/elements-hub.html">
+                    <RouterLink :to="{ name: 'elements-hub' }">
                       <i class="lnil lnil-home"></i>
                       <span>Elements Hub</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/elements-colors.html">
+                    <RouterLink :to="{ name: 'elements-colors' }">
                       <i class="lnil lnil-color-palette"></i>
                       <span>Colors</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/elements-helpers.html">
+                    <RouterLink :to="{ name: 'elements-helpers' }">
                       <i class="lnil lnil-help"></i>
                       <span>Helpers</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                 </ul>
               </div>
@@ -62,28 +46,28 @@ export default ElementsWebappMenu
                 <h4 class="column-heading">Icons</h4>
                 <ul>
                   <li>
-                    <a href="/elements-icons-lnil.html">
+                    <RouterLink :to="{ name: 'elements-icons-lnil' }">
                       <span>Line Icons Light</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/elements-icons-lnir.html">
+                    <RouterLink :to="{ name: 'elements-icons-lnir' }">
                       <span>Line Icons Regular</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/elements-icons-fa.html">
+                    <RouterLink :to="{ name: 'elements-icons-fa' }">
                       <span>Font Awesome 5</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/elements-icons-feather.html">
+                    <RouterLink :to="{ name: 'elements-icons-feather' }">
                       <span>Feather Icons</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                 </ul>
               </div>
@@ -91,28 +75,28 @@ export default ElementsWebappMenu
                 <h4 class="column-heading">Base</h4>
                 <ul>
                   <li>
-                    <a href="/elements-buttons.html">
+                    <RouterLink :to="{ name: 'elements-buttons' }">
                       <span>Buttons</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/elements-blocks.html">
+                    <RouterLink :to="{ name: 'elements-blocks' }">
                       <span>Blocks</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/elements-content.html">
+                    <RouterLink :to="{ name: 'elements-content' }">
                       <span>Content</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/elements-tags.html">
+                    <RouterLink :to="{ name: 'elements-tags' }">
                       <span>Tags</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                 </ul>
               </div>
@@ -120,34 +104,34 @@ export default ElementsWebappMenu
                 <h4 class="column-heading">Advanced</h4>
                 <ul>
                   <li>
-                    <a href="/elements-cards-basic.html">
+                    <RouterLink :to="{ name: 'elements-cards-basic' }">
                       <span>Basic Cards</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/elements-cards-advanced.html">
+                    <RouterLink :to="{ name: 'elements-cards-advanced' }">
                       <span>Advanced Cards</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/elements-cards-bulma.html">
+                    <RouterLink :to="{ name: 'elements-cards-bulma' }">
                       <span>Bulma Cards</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/elements-table.html">
+                    <RouterLink :to="{ name: 'elements-table' }">
                       <span>Table</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/elements-tooltips.html">
+                    <RouterLink :to="{ name: 'elements-tooltips' }">
                       <span>Tooltips</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                 </ul>
               </div>
@@ -164,22 +148,22 @@ export default ElementsWebappMenu
                 <h4 class="column-heading">Input</h4>
                 <ul>
                   <li>
-                    <a href="/elements-forms-inputs.html">
+                    <RouterLink :to="{ name: 'elements-forms-inputs' }">
                       <span>Inputs</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/elements-forms-addons.html">
+                    <RouterLink :to="{ name: 'elements-forms-addons' }">
                       <span>Input Addons</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/elements-forms-textarea.html">
+                    <RouterLink :to="{ name: 'elements-forms-textarea' }">
                       <span>Textarea</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                 </ul>
               </div>
@@ -187,22 +171,22 @@ export default ElementsWebappMenu
                 <h4 class="column-heading">Selects</h4>
                 <ul>
                   <li>
-                    <a href="/elements-forms-selects.html">
+                    <RouterLink :to="{ name: 'elements-forms-selects' }">
                       <span>Regular</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/elements-forms-custom.html">
+                    <RouterLink :to="{ name: 'elements-forms-custom' }">
                       <span>Custom</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/elements-forms-file.html">
+                    <RouterLink :to="{ name: 'elements-forms-file' }">
                       <span>File Input</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                 </ul>
               </div>
@@ -210,31 +194,27 @@ export default ElementsWebappMenu
                 <h4 class="column-heading">Toggles</h4>
                 <ul>
                   <li>
-                    <a href="/elements-forms-checkboxes.html">
+                    <RouterLink :to="{ name: 'elements-forms-checkboxes' }">
                       <span>Checkboxes</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/elements-forms-radios.html">
+                    <RouterLink :to="{ name: 'elements-forms-radios' }">
                       <span>Radio Buttons</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/elements-forms-switch.html">
+                    <RouterLink :to="{ name: 'elements-forms-switch' }">
                       <span>Switches</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                 </ul>
               </div>
               <div class="column is-3">
-                <a
-                  href="https://cssninja.io"
-                  target="_blank"
-                  class="column-placeholder"
-                >
+                <a href="https://cssninja.io" class="column-placeholder">
                   <img
                     class="light-image"
                     src="/src/assets/images/icons/misc/buoy.svg"
@@ -249,7 +229,6 @@ export default ElementsWebappMenu
                 </a>
                 <a
                   href="https://docs.huro.cssninja.io"
-                  target="_blank"
                   class="column-placeholder"
                 >
                   <img

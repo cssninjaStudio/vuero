@@ -1,19 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const LandingFooter = defineComponent({
-  name: 'LandingFooter',
-  components: {},
-  setup() {
-    // LandingFooter - Composition API
-
-    return {}
-  },
-})
-
-export default LandingFooter
-</script>
-
 <template>
   <!-- Simple light footer -->
   <footer class="huro-footer">
@@ -30,10 +14,7 @@ export default LandingFooter
               class="button h-button is-primary is-rounded raised action-button"
               >Buy Huro</a
             >
-            <a
-              href="https://cssninja.io"
-              target="_blank"
-              class="button chat-button"
+            <a href="https://cssninja.io" class="button chat-button"
               >Chat with us</a
             >
           </div>

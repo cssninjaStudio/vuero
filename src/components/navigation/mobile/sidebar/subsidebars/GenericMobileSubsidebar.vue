@@ -1,19 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const GenericMobileSubsidebar = defineComponent({
-  name: 'GenericMobileSubsidebar',
-  components: {},
-  setup() {
-    // GenericMobileSubsidebar - Composition API
-
-    return {}
-  },
-})
-
-export default GenericMobileSubsidebar
-</script>
-
 <template>
   <div class="mobile-subsidebar">
     <div class="inner">
@@ -213,7 +197,7 @@ export default GenericMobileSubsidebar
         </li>
         <li class="divider"></li>
         <li>
-          <a href="/wizard-v1.html">Wizard</a>
+          <RouterLink :to="{ name: 'wizard-v1' }">Wizard</RouterLink>
         </li>
         <li class="divider"></li>
         <li class="has-children">

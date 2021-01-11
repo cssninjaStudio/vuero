@@ -1,19 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const CircleChart = defineComponent({
-  name: 'CircleChart',
-  components: {},
-  setup() {
-    // CircleChart - Composition API
-
-    return {}
-  },
-})
-
-export default CircleChart
-</script>
-
 <template>
   <svg
     class="circle-chart"

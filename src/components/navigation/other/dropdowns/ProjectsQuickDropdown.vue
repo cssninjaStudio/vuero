@@ -1,19 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const ProjectsQuickDropdown = defineComponent({
-  name: 'ProjectsQuickDropdown',
-  components: {},
-  setup() {
-    // ProjectsQuickDropdown - Composition API
-
-    return {}
-  },
-})
-
-export default ProjectsQuickDropdown
-</script>
-
 <template>
   <div class="dropdown project-dropdown dropdown-trigger is-spaced">
     <div class="h-avatar is-small">

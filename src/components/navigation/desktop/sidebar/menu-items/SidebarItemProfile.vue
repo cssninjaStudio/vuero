@@ -1,19 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const SidebarItemProfile = defineComponent({
-  name: 'SidebarItemProfile',
-  components: {},
-  setup() {
-    // SidebarItemProfile - Composition API
-
-    return {}
-  },
-})
-
-export default SidebarItemProfile
-</script>
-
 <template>
   <li id="user-menu">
     <div
@@ -43,7 +27,10 @@ export default SidebarItemProfile
               <span>Product Manager</span>
             </div>
           </div>
-          <a href="/admin-profile-view.html" class="dropdown-item is-media">
+          <RouterLink
+            :to="{ name: 'admin-profile-view' }"
+            class="dropdown-item is-media"
+          >
             <div class="icon">
               <i class="lnil lnil-user-alt"></i>
             </div>
@@ -51,7 +38,7 @@ export default SidebarItemProfile
               <span>Profile</span>
               <span>View your profile</span>
             </div>
-          </a>
+          </RouterLink>
           <a class="dropdown-item is-media layout-switcher">
             <div class="icon">
               <i class="lnil lnil-layout"></i>

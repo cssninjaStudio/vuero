@@ -1,19 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const MessagesSidebar = defineComponent({
-  name: 'MessagesSidebar',
-  components: {},
-  setup() {
-    // MessagesSidebar - Composition API
-
-    return {}
-  },
-})
-
-export default MessagesSidebar
-</script>
-
 <template>
   <div id="messages-sidebar" class="sidebar-panel is-messages">
     <div class="messages-header">

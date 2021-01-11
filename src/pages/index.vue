@@ -1,19 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const IndexPage = defineComponent({
-  name: 'IndexPage',
-  components: {},
-  setup() {
-    // IndexPage - Composition API
-
-    return {}
-  },
-})
-
-export default IndexPage
-</script>
-
 <template>
   <MinimalLightLayout>
     <div class="landing-page-wrapper">
@@ -170,10 +154,7 @@ export default IndexPage
                   class="button h-button is-primary is-rounded is-elevated action-button"
                   >Buy Now</a
                 >
-                <a
-                  href="https://cssninja.io"
-                  target="_blank"
-                  class="button chat-button"
+                <a href="https://cssninja.io" class="button chat-button"
                   >Chat with us</a
                 >
               </div>
@@ -315,7 +296,6 @@ export default IndexPage
                 >
                 <a
                   href="https://cssninja.io"
-                  target="_blank"
                   class="button chat-button is-secondary"
                   >Chat with us</a
                 >
@@ -535,7 +515,6 @@ export default IndexPage
               <h3>Exclusively on Envato Market</h3>
               <a
                 href="https://themeforest.net/item/huro-multipurpose-admin-and-webapp-ui-kit/28933249"
-                target="_blank"
                 class="custom-button"
               >
                 <img src="/src/assets/images/icons/logos/envato.svg" alt="" />

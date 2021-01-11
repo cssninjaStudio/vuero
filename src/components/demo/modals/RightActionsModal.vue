@@ -1,19 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const RightActionsModal = defineComponent({
-  name: 'RightActionsModal',
-  components: {},
-  setup() {
-    // RightActionsModal - Composition API
-
-    return {}
-  },
-})
-
-export default RightActionsModal
-</script>
-
 <template>
   <div id="demo-right-actions-modal" class="modal h-modal">
     <div class="modal-background h-modal-close"></div>

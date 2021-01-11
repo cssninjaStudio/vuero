@@ -1,19 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const MailboxPanel = defineComponent({
-  name: 'MailboxPanel',
-  components: {},
-  setup() {
-    // MailboxPanel - Composition API
-
-    return {}
-  },
-})
-
-export default MailboxPanel
-</script>
-
 <template>
   <!--Compose panel-->
   <div class="compose-panel">

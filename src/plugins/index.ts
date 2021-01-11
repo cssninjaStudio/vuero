@@ -1,11 +1,11 @@
-import { App } from 'vue'
-import installRouter from './router'
+import type { ViteSSGContext } from 'vite-ssg'
+import installNprogress from './nprogress'
 import installToast from './toast'
 import './icons'
-import './webfonts'
-import './scss'
 
-export default (app: App) => {
-  installRouter(app)
-  installToast(app)
+export default (context: ViteSSGContext) => {
+  if (context.isClient) {
+    installToast(context)
+    installNprogress(context)
+  }
 }

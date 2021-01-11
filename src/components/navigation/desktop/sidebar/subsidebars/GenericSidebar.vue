@@ -1,19 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const GenericSidebar = defineComponent({
-  name: 'GenericSidebar',
-  components: {},
-  setup() {
-    // GenericSidebar - Composition API
-
-    return {}
-  },
-})
-
-export default GenericSidebar
-</script>
-
 <template>
   <div id="home-sidebar" class="sidebar-panel is-generic">
     <div class="subpanel-header">
@@ -217,7 +201,7 @@ export default GenericSidebar
         </li>
         <li class="divider"></li>
         <li>
-          <a href="/wizard-v1.html">Wizard</a>
+          <RouterLink :to="{ name: 'wizard-v1' }">Wizard</RouterLink>
         </li>
         <li class="divider"></li>
         <li class="has-children">

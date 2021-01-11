@@ -1,19 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const LeftActionsModal = defineComponent({
-  name: 'LeftActionsModal',
-  components: {},
-  setup() {
-    // LeftActionsModal - Composition API
-
-    return {}
-  },
-})
-
-export default LeftActionsModal
-</script>
-
 <template>
   <div id="demo-left-actions-modal" class="modal h-modal">
     <div class="modal-background h-modal-close"></div>

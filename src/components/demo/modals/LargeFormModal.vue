@@ -1,19 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const LargeFormModal = defineComponent({
-  name: 'LargeFormModal',
-  components: {},
-  setup() {
-    // LargeFormModal - Composition API
-
-    return {}
-  },
-})
-
-export default LargeFormModal
-</script>
-
 <template>
   <div id="demo-large-form-modal" class="modal h-modal is-large">
     <div class="modal-background h-modal-close"></div>

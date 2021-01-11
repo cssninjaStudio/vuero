@@ -1,20 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const WebappNavbar = defineComponent({
-  name: 'WebappNavbar',
-  components: {},
-  setup() {
-    // @ToCheck
-    // WebappNavbar - Composition API
-
-    return {}
-  },
-})
-
-export default WebappNavbar
-</script>
-
 <template>
   <div class="webapp-navbar">
     <div class="webapp-navbar-inner">
@@ -69,10 +52,13 @@ export default WebappNavbar
             <Icon icon="feather:cpu" />
             <span>Components</span>
           </a>
-          <a href="/webapp-messaging-chat.html" class="centered-link">
+          <RouterLink
+            :to="{ name: 'webapp-messaging-chat' }"
+            class="centered-link"
+          >
             <Icon icon="feather:message-circle" />
             <span>Chat</span>
-          </a>
+          </RouterLink>
           <a class="centered-link centered-link-search">
             <Icon icon="feather:search" />
             <span>Search</span>
@@ -125,7 +111,10 @@ export default WebappNavbar
                   <span>Product Manager</span>
                 </div>
               </div>
-              <a href="/admin-profile-view.html" class="dropdown-item is-media">
+              <RouterLink
+                :to="{ name: 'admin-profile-view' }"
+                class="dropdown-item is-media"
+              >
                 <div class="icon">
                   <i class="lnil lnil-user-alt"></i>
                 </div>
@@ -133,7 +122,7 @@ export default WebappNavbar
                   <span>Profile</span>
                   <span>View your profile</span>
                 </div>
-              </a>
+              </RouterLink>
               <a class="dropdown-item is-media layout-switcher">
                 <div class="icon">
                   <i class="lnil lnil-layout"></i>

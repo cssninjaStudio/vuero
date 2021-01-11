@@ -1,25 +1,13 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const LandingComponents = defineComponent({
-  name: 'LandingComponents',
-  components: {},
-  setup() {
-    // LandingComponents - Composition API
-
-    return {}
-  },
-})
-
-export default LandingComponents
-</script>
-
 <template>
   <!--Elements-->
   <div id="demo-elements" class="tab-content has-text-left is-active">
     <div class="columns is-multiline">
       <div class="column is-3">
-        <a href="/elements-colors.html" target="_blank" class="component-box">
+        <RouterLink
+          :to="{ name: 'elements-colors' }"
+          target="_blank"
+          class="component-box"
+        >
           <div class="component">
             <img
               class="light-image-l"
@@ -35,11 +23,15 @@ export default LandingComponents
             />
           </div>
           <div class="component-title">Colors</div>
-        </a>
+        </RouterLink>
       </div>
 
       <div class="column is-3">
-        <a href="/elements-tags.html" target="_blank" class="component-box">
+        <RouterLink
+          :to="{ name: 'elements-tags' }"
+          target="_blank"
+          class="component-box"
+        >
           <div class="component">
             <img
               class="light-image-l"
@@ -55,11 +47,15 @@ export default LandingComponents
             />
           </div>
           <div class="component-title">Tags & Badges</div>
-        </a>
+        </RouterLink>
       </div>
 
       <div class="column is-3">
-        <a href="/elements-buttons.html" target="_blank" class="component-box">
+        <RouterLink
+          :to="{ name: 'elements-buttons' }"
+          target="_blank"
+          class="component-box"
+        >
           <div class="component">
             <img
               class="light-image-l"
@@ -75,11 +71,15 @@ export default LandingComponents
             />
           </div>
           <div class="component-title">Buttons</div>
-        </a>
+        </RouterLink>
       </div>
 
       <div class="column is-3">
-        <a href="/elements-blocks.html" target="_blank" class="component-box">
+        <RouterLink
+          :to="{ name: 'elements-blocks' }"
+          target="_blank"
+          class="component-box"
+        >
           <div class="component">
             <img
               class="light-image-l"
@@ -95,11 +95,15 @@ export default LandingComponents
             />
           </div>
           <div class="component-title">Blocks</div>
-        </a>
+        </RouterLink>
       </div>
 
       <div class="column is-3">
-        <a href="/elements-content.html" target="_blank" class="component-box">
+        <RouterLink
+          :to="{ name: 'elements-content' }"
+          target="_blank"
+          class="component-box"
+        >
           <div class="component">
             <img
               class="light-image-l"
@@ -115,10 +119,14 @@ export default LandingComponents
             />
           </div>
           <div class="component-title">Content</div>
-        </a>
+        </RouterLink>
       </div>
       <div class="column is-3">
-        <a href="/elements-icons-fa.html" target="_blank" class="component-box">
+        <RouterLink
+          :to="{ name: 'elements-icons-fa' }"
+          target="_blank"
+          class="component-box"
+        >
           <div class="component">
             <img
               class="light-image-l"
@@ -134,12 +142,12 @@ export default LandingComponents
             />
           </div>
           <div class="component-title">Font Awesome</div>
-        </a>
+        </RouterLink>
       </div>
 
       <div class="column is-3">
-        <a
-          href="/elements-icons-feather.html"
+        <RouterLink
+          :to="{ name: 'elements-icons-feather' }"
           target="_blank"
           class="component-box"
         >
@@ -158,12 +166,12 @@ export default LandingComponents
             />
           </div>
           <div class="component-title">Feather Icons</div>
-        </a>
+        </RouterLink>
       </div>
 
       <div class="column is-3">
-        <a
-          href="/elements-icons-lnir.html"
+        <RouterLink
+          :to="{ name: 'elements-icons-lnir' }"
           target="_blank"
           class="component-box"
         >
@@ -182,12 +190,12 @@ export default LandingComponents
             />
           </div>
           <div class="component-title">Line Icons</div>
-        </a>
+        </RouterLink>
       </div>
 
       <div class="column is-3">
-        <a
-          href="/elements-icons-lnil.html"
+        <RouterLink
+          :to="{ name: 'elements-icons-lnil' }"
           target="_blank"
           class="component-box"
         >
@@ -206,12 +214,12 @@ export default LandingComponents
             />
           </div>
           <div class="component-title">Line Icons Light</div>
-        </a>
+        </RouterLink>
       </div>
 
       <div class="column is-3">
-        <a
-          href="/elements-cards-basic.html"
+        <RouterLink
+          :to="{ name: 'elements-cards-basic' }"
           target="_blank"
           class="component-box"
         >
@@ -230,12 +238,12 @@ export default LandingComponents
             />
           </div>
           <div class="component-title">Basic Cards</div>
-        </a>
+        </RouterLink>
       </div>
 
       <div class="column is-3">
-        <a
-          href="/elements-cards-advanced.html"
+        <RouterLink
+          :to="{ name: 'elements-cards-advanced' }"
           target="_blank"
           class="component-box"
         >
@@ -254,12 +262,12 @@ export default LandingComponents
             />
           </div>
           <div class="component-title">Advanced Cards</div>
-        </a>
+        </RouterLink>
       </div>
 
       <div class="column is-3">
-        <a
-          href="/elements-cards-bulma.html"
+        <RouterLink
+          :to="{ name: 'elements-cards-bulma' }"
           target="_blank"
           class="component-box"
         >
@@ -278,11 +286,15 @@ export default LandingComponents
             />
           </div>
           <div class="component-title">Bulma Cards</div>
-        </a>
+        </RouterLink>
       </div>
 
       <div class="column is-3">
-        <a href="/elements-table.html" target="_blank" class="component-box">
+        <RouterLink
+          :to="{ name: 'elements-table' }"
+          target="_blank"
+          class="component-box"
+        >
           <div class="component">
             <img
               class="light-image-l"
@@ -298,11 +310,15 @@ export default LandingComponents
             />
           </div>
           <div class="component-title">Tables</div>
-        </a>
+        </RouterLink>
       </div>
 
       <div class="column is-3">
-        <a href="/elements-tooltips.html" target="_blank" class="component-box">
+        <RouterLink
+          :to="{ name: 'elements-tooltips' }"
+          target="_blank"
+          class="component-box"
+        >
           <div class="component">
             <img
               class="light-image-l"
@@ -318,7 +334,7 @@ export default LandingComponents
             />
           </div>
           <div class="component-title">Tooltips</div>
-        </a>
+        </RouterLink>
       </div>
     </div>
   </div>
@@ -328,8 +344,8 @@ export default LandingComponents
     <div class="columns is-multiline">
       <!--Item-->
       <div class="column is-3">
-        <a
-          href="/components-avatars.html"
+        <RouterLink
+          :to="{ name: 'components-avatars' }"
           target="_blank"
           class="component-box"
         >
@@ -348,12 +364,12 @@ export default LandingComponents
             />
           </div>
           <div class="component-title">Avatars</div>
-        </a>
+        </RouterLink>
       </div>
       <!--Item-->
       <div class="column is-3">
-        <a
-          href="/components-accordion-basic.html"
+        <RouterLink
+          :to="{ name: 'components-accordion-basic' }"
           target="_blank"
           class="component-box"
         >
@@ -372,12 +388,12 @@ export default LandingComponents
             />
           </div>
           <div class="component-title">Accordions</div>
-        </a>
+        </RouterLink>
       </div>
       <!--Item-->
       <div class="column is-3">
-        <a
-          href="/components-breadcrumb.html"
+        <RouterLink
+          :to="{ name: 'components-breadcrumb' }"
           target="_blank"
           class="component-box"
         >
@@ -396,12 +412,12 @@ export default LandingComponents
             />
           </div>
           <div class="component-title">Breadcrumb</div>
-        </a>
+        </RouterLink>
       </div>
 
       <div class="column is-3">
-        <a
-          href="/components-dropdown.html"
+        <RouterLink
+          :to="{ name: 'components-dropdown' }"
           target="_blank"
           class="component-box"
         >
@@ -420,12 +436,12 @@ export default LandingComponents
             />
           </div>
           <div class="component-title">Dropdowns</div>
-        </a>
+        </RouterLink>
       </div>
 
       <div class="column is-3">
-        <a
-          href="/components-icon-box.html"
+        <RouterLink
+          :to="{ name: 'components-icon-box' }"
           target="_blank"
           class="component-box"
         >
@@ -444,12 +460,12 @@ export default LandingComponents
             />
           </div>
           <div class="component-title">Icon Box</div>
-        </a>
+        </RouterLink>
       </div>
 
       <div class="column is-3">
-        <a
-          href="/components-messages.html"
+        <RouterLink
+          :to="{ name: 'components-messages' }"
           target="_blank"
           class="component-box"
         >
@@ -468,11 +484,15 @@ export default LandingComponents
             />
           </div>
           <div class="component-title">Messages</div>
-        </a>
+        </RouterLink>
       </div>
 
       <div class="column is-3">
-        <a href="/components-modal.html" target="_blank" class="component-box">
+        <RouterLink
+          :to="{ name: 'components-modal' }"
+          target="_blank"
+          class="component-box"
+        >
           <div class="component">
             <img
               class="light-image-l"
@@ -488,12 +508,12 @@ export default LandingComponents
             />
           </div>
           <div class="component-title">Modals</div>
-        </a>
+        </RouterLink>
       </div>
 
       <div class="column is-3">
-        <a
-          href="/components-progress.html"
+        <RouterLink
+          :to="{ name: 'components-progress' }"
           target="_blank"
           class="component-box"
         >
@@ -512,12 +532,12 @@ export default LandingComponents
             />
           </div>
           <div class="component-title">Progress</div>
-        </a>
+        </RouterLink>
       </div>
 
       <div class="column is-3">
-        <a
-          href="/components-tabs-regular.html"
+        <RouterLink
+          :to="{ name: 'components-tabs-regular' }"
           target="_blank"
           class="component-box"
         >
@@ -536,12 +556,12 @@ export default LandingComponents
             />
           </div>
           <div class="component-title">Tabs</div>
-        </a>
+        </RouterLink>
       </div>
 
       <div class="column is-3">
-        <a
-          href="/components-tabs-slider.html"
+        <RouterLink
+          :to="{ name: 'components-tabs-slider' }"
           target="_blank"
           class="component-box"
         >
@@ -560,12 +580,12 @@ export default LandingComponents
             />
           </div>
           <div class="component-title">Slider Tabs</div>
-        </a>
+        </RouterLink>
       </div>
 
       <div class="column is-3">
-        <a
-          href="/components-table-flex.html"
+        <RouterLink
+          :to="{ name: 'components-table-flex' }"
           target="_blank"
           class="component-box"
         >
@@ -584,11 +604,15 @@ export default LandingComponents
             />
           </div>
           <div class="component-title">Flex Tables</div>
-        </a>
+        </RouterLink>
       </div>
 
       <div class="column is-3">
-        <a href="/components-snacks.html" target="_blank" class="component-box">
+        <RouterLink
+          :to="{ name: 'components-snacks' }"
+          target="_blank"
+          class="component-box"
+        >
           <div class="component">
             <img
               class="light-image-l"
@@ -604,7 +628,7 @@ export default LandingComponents
             />
           </div>
           <div class="component-title">Snacks</div>
-        </a>
+        </RouterLink>
       </div>
     </div>
   </div>
@@ -613,8 +637,8 @@ export default LandingComponents
   <div id="demo-forms" class="tab-content has-text-left">
     <div class="columns is-multiline">
       <div class="column is-3">
-        <a
-          href="/elements-forms-inputs.html"
+        <RouterLink
+          :to="{ name: 'elements-forms-inputs' }"
           target="_blank"
           class="component-box"
         >
@@ -633,12 +657,12 @@ export default LandingComponents
             />
           </div>
           <div class="component-title">Inputs</div>
-        </a>
+        </RouterLink>
       </div>
 
       <div class="column is-3">
-        <a
-          href="/elements-forms-addons.html"
+        <RouterLink
+          :to="{ name: 'elements-forms-addons' }"
           target="_blank"
           class="component-box"
         >
@@ -657,12 +681,12 @@ export default LandingComponents
             />
           </div>
           <div class="component-title">Input Addons</div>
-        </a>
+        </RouterLink>
       </div>
 
       <div class="column is-3">
-        <a
-          href="/elements-forms-textarea.html"
+        <RouterLink
+          :to="{ name: 'elements-forms-textarea' }"
           target="_blank"
           class="component-box"
         >
@@ -681,12 +705,12 @@ export default LandingComponents
             />
           </div>
           <div class="component-title">Textarea</div>
-        </a>
+        </RouterLink>
       </div>
 
       <div class="column is-3">
-        <a
-          href="/elements-forms-custom.html"
+        <RouterLink
+          :to="{ name: 'elements-forms-custom' }"
           target="_blank"
           class="component-box"
         >
@@ -705,12 +729,12 @@ export default LandingComponents
             />
           </div>
           <div class="component-title">Selects</div>
-        </a>
+        </RouterLink>
       </div>
 
       <div class="column is-3">
-        <a
-          href="/elements-forms-selects.html"
+        <RouterLink
+          :to="{ name: 'elements-forms-selects' }"
           target="_blank"
           class="component-box"
         >
@@ -729,12 +753,12 @@ export default LandingComponents
             />
           </div>
           <div class="component-title">Custom</div>
-        </a>
+        </RouterLink>
       </div>
 
       <div class="column is-3">
-        <a
-          href="/elements-forms-file.html"
+        <RouterLink
+          :to="{ name: 'elements-forms-file' }"
           target="_blank"
           class="component-box"
         >
@@ -753,12 +777,12 @@ export default LandingComponents
             />
           </div>
           <div class="component-title">File Input</div>
-        </a>
+        </RouterLink>
       </div>
 
       <div class="column is-3">
-        <a
-          href="/elements-forms-checkboxes.html"
+        <RouterLink
+          :to="{ name: 'elements-forms-checkboxes' }"
           target="_blank"
           class="component-box"
         >
@@ -777,12 +801,12 @@ export default LandingComponents
             />
           </div>
           <div class="component-title">Checkboxes</div>
-        </a>
+        </RouterLink>
       </div>
 
       <div class="column is-3">
-        <a
-          href="/elements-forms-radios.html"
+        <RouterLink
+          :to="{ name: 'elements-forms-radios' }"
           target="_blank"
           class="component-box"
         >
@@ -801,12 +825,12 @@ export default LandingComponents
             />
           </div>
           <div class="component-title">Radio Buttons</div>
-        </a>
+        </RouterLink>
       </div>
 
       <div class="column is-3">
-        <a
-          href="/elements-forms-switch.html"
+        <RouterLink
+          :to="{ name: 'elements-forms-switch' }"
           target="_blank"
           class="component-box"
         >
@@ -825,12 +849,12 @@ export default LandingComponents
             />
           </div>
           <div class="component-title">Switch</div>
-        </a>
+        </RouterLink>
       </div>
 
       <div class="column is-3">
-        <a
-          href="/admin-form-layouts-1.html"
+        <RouterLink
+          :to="{ name: 'admin-form-layouts-1' }"
           target="_blank"
           class="component-box"
         >
@@ -849,12 +873,12 @@ export default LandingComponents
             />
           </div>
           <div class="component-title">Form Layout V1</div>
-        </a>
+        </RouterLink>
       </div>
 
       <div class="column is-3">
-        <a
-          href="/admin-form-layouts-2.html"
+        <RouterLink
+          :to="{ name: 'admin-form-layouts-2' }"
           target="_blank"
           class="component-box"
         >
@@ -873,12 +897,12 @@ export default LandingComponents
             />
           </div>
           <div class="component-title">Form Layout V2</div>
-        </a>
+        </RouterLink>
       </div>
 
       <div class="column is-3">
-        <a
-          href="/admin-form-layouts-3.html"
+        <RouterLink
+          :to="{ name: 'admin-form-layouts-3' }"
           target="_blank"
           class="component-box"
         >
@@ -897,12 +921,12 @@ export default LandingComponents
             />
           </div>
           <div class="component-title">Form Layout V3</div>
-        </a>
+        </RouterLink>
       </div>
 
       <div class="column is-3">
-        <a
-          href="/admin-form-layouts-4.html"
+        <RouterLink
+          :to="{ name: 'admin-form-layouts-4' }"
           target="_blank"
           class="component-box"
         >
@@ -921,7 +945,7 @@ export default LandingComponents
             />
           </div>
           <div class="component-title">Form Layout V4</div>
-        </a>
+        </RouterLink>
       </div>
     </div>
   </div>
@@ -930,8 +954,8 @@ export default LandingComponents
   <div id="plugins-sections" class="tab-content has-text-left">
     <div class="columns is-multiline">
       <div class="column is-3">
-        <a
-          href="/components-plugins-alertify.html"
+        <RouterLink
+          :to="{ name: 'components-plugins-alertify' }"
           target="_blank"
           class="component-box"
         >
@@ -950,12 +974,12 @@ export default LandingComponents
             />
           </div>
           <div class="component-title">Alertify</div>
-        </a>
+        </RouterLink>
       </div>
 
       <div class="column is-3">
-        <a
-          href="/components-plugins-autocomplete.html"
+        <RouterLink
+          :to="{ name: 'components-plugins-autocomplete' }"
           target="_blank"
           class="component-box"
         >
@@ -974,12 +998,12 @@ export default LandingComponents
             />
           </div>
           <div class="component-title">Autocomplete</div>
-        </a>
+        </RouterLink>
       </div>
 
       <div class="column is-3">
-        <a
-          href="/components-plugins-datepicker.html"
+        <RouterLink
+          :to="{ name: 'components-plugins-datepicker' }"
           target="_blank"
           class="component-box"
         >
@@ -998,12 +1022,12 @@ export default LandingComponents
             />
           </div>
           <div class="component-title">Datepicker</div>
-        </a>
+        </RouterLink>
       </div>
 
       <div class="column is-3">
-        <a
-          href="/components-plugins-choices.html"
+        <RouterLink
+          :to="{ name: 'components-plugins-choices' }"
           target="_blank"
           class="component-box"
         >
@@ -1022,12 +1046,12 @@ export default LandingComponents
             />
           </div>
           <div class="component-title">Tags Input</div>
-        </a>
+        </RouterLink>
       </div>
 
       <div class="column is-3">
-        <a
-          href="/components-plugins-nouislider.html"
+        <RouterLink
+          :to="{ name: 'components-plugins-nouislider' }"
           target="_blank"
           class="component-box"
         >
@@ -1046,12 +1070,12 @@ export default LandingComponents
             />
           </div>
           <div class="component-title">Range Slider</div>
-        </a>
+        </RouterLink>
       </div>
 
       <div class="column is-3">
-        <a
-          href="/components-plugins-filepond.html"
+        <RouterLink
+          :to="{ name: 'components-plugins-filepond' }"
           target="_blank"
           class="component-box"
         >
@@ -1070,12 +1094,12 @@ export default LandingComponents
             />
           </div>
           <div class="component-title">Filepond</div>
-        </a>
+        </RouterLink>
       </div>
 
       <div class="column is-3">
-        <a
-          href="/components-plugins-lightgallery.html"
+        <RouterLink
+          :to="{ name: 'components-plugins-lightgallery' }"
           target="_blank"
           class="component-box"
         >
@@ -1094,12 +1118,12 @@ export default LandingComponents
             />
           </div>
           <div class="component-title">Light Gallery</div>
-        </a>
+        </RouterLink>
       </div>
 
       <div class="column is-3">
-        <a
-          href="/components-plugins-videogallery.html"
+        <RouterLink
+          :to="{ name: 'components-plugins-videogallery' }"
           target="_blank"
           class="component-box"
         >
@@ -1118,12 +1142,12 @@ export default LandingComponents
             />
           </div>
           <div class="component-title">Video Gallery</div>
-        </a>
+        </RouterLink>
       </div>
 
       <div class="column is-3">
-        <a
-          href="/components-plugins-video-player.html"
+        <RouterLink
+          :to="{ name: 'components-plugins-video-player' }"
           target="_blank"
           class="component-box"
         >
@@ -1142,12 +1166,12 @@ export default LandingComponents
             />
           </div>
           <div class="component-title">Video Player</div>
-        </a>
+        </RouterLink>
       </div>
 
       <div class="column is-3">
-        <a
-          href="/components-plugins-toasts.html"
+        <RouterLink
+          :to="{ name: 'components-plugins-toasts' }"
           target="_blank"
           class="component-box"
         >
@@ -1166,12 +1190,12 @@ export default LandingComponents
             />
           </div>
           <div class="component-title">Toasts</div>
-        </a>
+        </RouterLink>
       </div>
 
       <div class="column is-3">
-        <a
-          href="/components-plugins-webuipopover.html"
+        <RouterLink
+          :to="{ name: 'components-plugins-webuipopover' }"
           target="_blank"
           class="component-box"
         >
@@ -1190,12 +1214,12 @@ export default LandingComponents
             />
           </div>
           <div class="component-title">Popovers</div>
-        </a>
+        </RouterLink>
       </div>
 
       <div class="column is-3">
-        <a
-          href="/components-plugins-editor-summernote.html"
+        <RouterLink
+          :to="{ name: 'components-plugins-editor-summernote' }"
           target="_blank"
           class="component-box"
         >
@@ -1214,12 +1238,12 @@ export default LandingComponents
             />
           </div>
           <div class="component-title">Summernote</div>
-        </a>
+        </RouterLink>
       </div>
 
       <div class="column is-3">
-        <a
-          href="/components-plugins-editor-sun.html"
+        <RouterLink
+          :to="{ name: 'components-plugins-editor-sun' }"
           target="_blank"
           class="component-box"
         >
@@ -1238,7 +1262,7 @@ export default LandingComponents
             />
           </div>
           <div class="component-title">Sun Editor</div>
-        </a>
+        </RouterLink>
       </div>
     </div>
   </div>

@@ -1,19 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const ComponentsMobileSubsidebar = defineComponent({
-  name: 'ComponentsMobileSubsidebar',
-  components: {},
-  setup() {
-    // ComponentsMobileSubsidebar - Composition API
-
-    return {}
-  },
-})
-
-export default ComponentsMobileSubsidebar
-</script>
-
 <template>
   <div class="mobile-subsidebar is-activity">
     <div class="inner">
@@ -23,10 +7,12 @@ export default ComponentsMobileSubsidebar
 
       <ul class="submenu">
         <li>
-          <a href="/components-hub.html">Components Hub</a>
+          <RouterLink :to="{ name: 'components-hub' }"
+            >Components Hub</RouterLink
+          >
         </li>
         <li>
-          <a href="/components-avatars.html">Avatars</a>
+          <RouterLink :to="{ name: 'components-avatars' }">Avatars</RouterLink>
         </li>
         <li class="has-children">
           <div class="collapse-wrap">
@@ -53,25 +39,33 @@ export default ComponentsMobileSubsidebar
           </ul>
         </li>
         <li>
-          <a href="/components-breadcrumb.html">Breadcrumb</a>
+          <RouterLink :to="{ name: 'components-breadcrumb' }"
+            >Breadcrumb</RouterLink
+          >
         </li>
         <li>
-          <a href="/components-dropdown.html">Dropdown</a>
+          <RouterLink :to="{ name: 'components-dropdown' }"
+            >Dropdown</RouterLink
+          >
         </li>
         <li>
-          <a href="/components-icon-box.html">Icon Box</a>
+          <RouterLink :to="{ name: 'components-icon-box' }"
+            >Icon Box</RouterLink
+          >
         </li>
         <li>
-          <a href="/components-loader.html">Loader</a>
+          <RouterLink :to="{ name: 'components-loader' }">Loader</RouterLink>
         </li>
         <li>
-          <a href="/components-messages.html">Message</a>
+          <RouterLink :to="{ name: 'components-messages' }">Message</RouterLink>
         </li>
         <li>
-          <a href="/components-modal.html">Modal</a>
+          <RouterLink :to="{ name: 'components-modal' }">Modal</RouterLink>
         </li>
         <li>
-          <a href="/components-progress.html">Progress</a>
+          <RouterLink :to="{ name: 'components-progress' }"
+            >Progress</RouterLink
+          >
         </li>
         <li class="has-children">
           <div class="collapse-wrap">
@@ -122,7 +116,7 @@ export default ComponentsMobileSubsidebar
           </ul>
         </li>
         <li>
-          <a href="/components-snacks.html">Snacks</a>
+          <RouterLink :to="{ name: 'components-snacks' }">Snacks</RouterLink>
         </li>
         <li class="divider"></li>
         <li class="has-children">

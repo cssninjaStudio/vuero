@@ -1,19 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const LandingDemos = defineComponent({
-  name: 'LandingDemos',
-  components: {},
-  setup() {
-    // LandingDemos - Composition API
-
-    return {}
-  },
-})
-
-export default LandingDemos
-</script>
-
 <template>
   <div class="huro-demos">
     <!--ADMIN-->
@@ -59,9 +43,9 @@ export default LandingDemos
                   <span>Personal 1</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-dashboards-personal-1.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-dashboards-personal-1' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -91,9 +75,9 @@ export default LandingDemos
                   <span>Personal 2</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-dashboards-personal-2.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-dashboards-personal-2' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -123,9 +107,9 @@ export default LandingDemos
                   <span>Personal 3</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-dashboards-personal-3.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-dashboards-personal-3' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -155,9 +139,9 @@ export default LandingDemos
                   <span>Finance 1</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-dashboards-finance-1.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-dashboards-finance-1' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -187,9 +171,9 @@ export default LandingDemos
                   <span>Finance 2</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-dashboards-finance-2.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-dashboards-finance-2' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -219,9 +203,9 @@ export default LandingDemos
                   <span>Finance 3</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-dashboards-finance-3.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-dashboards-finance-3' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -251,9 +235,9 @@ export default LandingDemos
                   <span>Banking 1</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-dashboards-banking-1.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-dashboards-banking-1' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -283,9 +267,9 @@ export default LandingDemos
                   <span>Banking 2</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-dashboards-banking-2.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-dashboards-banking-2' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -315,9 +299,9 @@ export default LandingDemos
                   <span>Banking 3</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-dashboards-banking-3.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-dashboards-banking-3' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -347,9 +331,9 @@ export default LandingDemos
                   <span>Business 1</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-dashboards-business-1.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-dashboards-business-1' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -379,9 +363,9 @@ export default LandingDemos
                   <span>Business 2</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-dashboards-business-2.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-dashboards-business-2' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -412,9 +396,9 @@ export default LandingDemos
                   <span>Business 3</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-dashboards-business-3.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-dashboards-business-3' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -444,9 +428,9 @@ export default LandingDemos
                   <span>Lifestyle 1</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-dashboards-lifestyle-1.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-dashboards-lifestyle-1' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -476,9 +460,9 @@ export default LandingDemos
                   <span>Lifestyle 2</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-dashboards-lifestyle-2.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-dashboards-lifestyle-2' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -508,9 +492,9 @@ export default LandingDemos
                   <span>Lifestyle 3</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-dashboards-lifestyle-3.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-dashboards-lifestyle-3' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -541,9 +525,9 @@ export default LandingDemos
                   <span>Lifestyle 4</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-dashboards-lifestyle-4.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-dashboards-lifestyle-4' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -573,9 +557,9 @@ export default LandingDemos
                   <span>Ecommerce 1</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-dashboards-ecommerce-1.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-dashboards-ecommerce-1' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -605,9 +589,9 @@ export default LandingDemos
                   <span>Food Delivery</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-dashboards-apps-1.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-dashboards-apps-1' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -637,9 +621,9 @@ export default LandingDemos
                   <span>List View 1</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-list-view-1.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-list-view-1' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -669,9 +653,9 @@ export default LandingDemos
                   <span>List View 2</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-list-view-2.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-list-view-2' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -701,9 +685,9 @@ export default LandingDemos
                   <span>List View 3</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-list-view-3.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-list-view-3' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -733,9 +717,9 @@ export default LandingDemos
                   <span>List View 4</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-list-view-4.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-list-view-4' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -765,9 +749,9 @@ export default LandingDemos
                   <span>Flex List 1</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-list-flex-1.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-list-flex-1' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -797,9 +781,9 @@ export default LandingDemos
                   <span>Flex List 2</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-list-flex-2.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-list-flex-2' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -829,9 +813,9 @@ export default LandingDemos
                   <span>Flex List 3</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-list-flex-3.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-list-flex-3' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -861,9 +845,9 @@ export default LandingDemos
                   <span>Datatable 1</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-list-datatable-1.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-list-datatable-1' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -893,9 +877,9 @@ export default LandingDemos
                   <span>Datatable 2</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-list-datatable-2.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-list-datatable-2' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -925,9 +909,9 @@ export default LandingDemos
                   <span>Datatable 3</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-list-datatable-3.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-list-datatable-3' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -957,9 +941,9 @@ export default LandingDemos
                   <span>Datatable 4</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-list-datatable-4.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-list-datatable-4' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -989,9 +973,9 @@ export default LandingDemos
                   <span>Card Grid 1</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-grid-cards-1.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-grid-cards-1' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -1021,9 +1005,9 @@ export default LandingDemos
                   <span>Card Grid 2</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-grid-cards-2.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-grid-cards-2' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -1053,9 +1037,9 @@ export default LandingDemos
                   <span>Card Grid 3</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-grid-cards-3.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-grid-cards-3' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -1085,9 +1069,9 @@ export default LandingDemos
                   <span>Card Grid 4</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-grid-cards-4.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-grid-cards-4' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -1117,9 +1101,9 @@ export default LandingDemos
                   <span>Tile Grid 1</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-grid-tiles-1.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-grid-tiles-1' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -1149,9 +1133,9 @@ export default LandingDemos
                   <span>Tile Grid 2</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-grid-tiles-2.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-grid-tiles-2' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -1181,9 +1165,9 @@ export default LandingDemos
                   <span>Tile Grid 3</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-grid-tiles-3.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-grid-tiles-3' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -1213,9 +1197,9 @@ export default LandingDemos
                   <span>User Grid 1</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-grid-users-1.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-grid-users-1' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -1245,9 +1229,9 @@ export default LandingDemos
                   <span>User Grid 2</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-grid-users-2.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-grid-users-2' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -1277,9 +1261,9 @@ export default LandingDemos
                   <span>User Grid 3</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-grid-users-3.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-grid-users-3' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -1309,9 +1293,9 @@ export default LandingDemos
                   <span>User Grid 4</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-grid-users-4.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-grid-users-4' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -1341,9 +1325,9 @@ export default LandingDemos
                   <span>Chat Messaging</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-messaging-chat.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-messaging-chat' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -1373,9 +1357,9 @@ export default LandingDemos
                   <span>User Profile</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-profile-view.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-profile-view' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -1405,9 +1389,9 @@ export default LandingDemos
                   <span>Edit Profile 1</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-profile-edit-1.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-profile-edit-1' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -1437,9 +1421,9 @@ export default LandingDemos
                   <span>Edit Profile 2</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-profile-edit-2.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-profile-edit-2' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -1469,9 +1453,9 @@ export default LandingDemos
                   <span>Edit Profile 3</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-profile-edit-3.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-profile-edit-3' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -1501,9 +1485,9 @@ export default LandingDemos
                   <span>Edit Profile 4</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-profile-edit-4.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-profile-edit-4' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -1533,9 +1517,9 @@ export default LandingDemos
                   <span>Notifications</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-profile-notifications.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-profile-notifications' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -1565,9 +1549,9 @@ export default LandingDemos
                   <span>Settings</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-profile-settings.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-profile-settings' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -1597,9 +1581,9 @@ export default LandingDemos
                   <span>Projects 1</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-projects-projects.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-projects-projects' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -1629,9 +1613,9 @@ export default LandingDemos
                   <span>Projects 2</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-projects-projects-2.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-projects-projects-2' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -1661,9 +1645,9 @@ export default LandingDemos
                   <span>Projects 3</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-projects-projects-3.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-projects-projects-3' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -1693,9 +1677,9 @@ export default LandingDemos
                   <span>Project Details</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-projects-project.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-projects-project' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -1725,9 +1709,9 @@ export default LandingDemos
                   <span>Kanban Board</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-kanban-board.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-kanban-board' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -1757,9 +1741,9 @@ export default LandingDemos
                   <span>Search Results</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-search-results.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-search-results' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -1789,9 +1773,9 @@ export default LandingDemos
                   <span>Empty Search</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-search-empty.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-search-empty' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -1821,9 +1805,9 @@ export default LandingDemos
                   <span>SaaS Billing</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-saas-billing.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-saas-billing' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -1853,9 +1837,9 @@ export default LandingDemos
                   <span>Welcome</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-welcome.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-welcome' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -1885,9 +1869,9 @@ export default LandingDemos
                   <span>Action Page 1</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-action-page-1.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-action-page-1' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -1917,9 +1901,9 @@ export default LandingDemos
                   <span>Action Page 2</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-action-page-2.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-action-page-2' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -1949,9 +1933,9 @@ export default LandingDemos
                   <span>Confirm Account</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-utility-account-confirm.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-utility-account-confirm' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -1981,9 +1965,9 @@ export default LandingDemos
                   <span>Promotion</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-utility-promotion.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-utility-promotion' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -2013,9 +1997,9 @@ export default LandingDemos
                   <span>Invoice</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-utility-invoice.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-utility-invoice' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -2045,9 +2029,9 @@ export default LandingDemos
                   <span>UI Widgets</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-dashboards-widgets-ui.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-dashboards-widgets-ui' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -2077,11 +2061,10 @@ export default LandingDemos
                   <span>Creative Widgets</span>
                 </div>
                 <div class="demo-link">
-                  <a
-                    href="/admin-dashboards-widgets-creative.html"
-                    target="_blank"
+                  <RouterLink
+                    :to="{ name: 'admin-dashboards-widgets-creative' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -2111,9 +2094,9 @@ export default LandingDemos
                   <span>List Widgets</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-dashboards-widgets-list.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-dashboards-widgets-list' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -2143,9 +2126,9 @@ export default LandingDemos
                   <span>Stat Widgets</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-dashboards-widgets-stats.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-dashboards-widgets-stats' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -2175,9 +2158,9 @@ export default LandingDemos
                   <span>Layout 1</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-form-layouts-1.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-form-layouts-1' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -2207,9 +2190,9 @@ export default LandingDemos
                   <span>Layout 2</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-form-layouts-2.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-form-layouts-2' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -2239,9 +2222,9 @@ export default LandingDemos
                   <span>Layout 3</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-form-layouts-3.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-form-layouts-3' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -2271,9 +2254,9 @@ export default LandingDemos
                   <span>Layout 4</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-form-layouts-4.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-form-layouts-4' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -2303,9 +2286,9 @@ export default LandingDemos
                   <span>Onboarding 1</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-onboarding-page-1.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-onboarding-page-1' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -2335,9 +2318,9 @@ export default LandingDemos
                   <span>Onboarding 2</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-onboarding-page-2.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-onboarding-page-2' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -2367,9 +2350,9 @@ export default LandingDemos
                   <span>Onboarding 3</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-onboarding-page-3.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-onboarding-page-3' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -2399,9 +2382,9 @@ export default LandingDemos
                   <span>Onboarding 4</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-onboarding-page-4.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-onboarding-page-4' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -2431,9 +2414,9 @@ export default LandingDemos
                   <span>Onboarding 5</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-onboarding-page-5.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-onboarding-page-5' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -2485,9 +2468,9 @@ export default LandingDemos
                   <span>Personal 1</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-dashboards-personal-1.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-dashboards-personal-1' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -2517,9 +2500,9 @@ export default LandingDemos
                   <span>Personal 2</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-dashboards-personal-2.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-dashboards-personal-2' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -2549,9 +2532,9 @@ export default LandingDemos
                   <span>Personal 3</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-dashboards-personal-3.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-dashboards-personal-3' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -2581,9 +2564,9 @@ export default LandingDemos
                   <span>Finance 1</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-dashboards-finance-1.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-dashboards-finance-1' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -2613,9 +2596,9 @@ export default LandingDemos
                   <span>Finance 2</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-dashboards-finance-2.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-dashboards-finance-2' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -2645,9 +2628,9 @@ export default LandingDemos
                   <span>Finance 3</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-dashboards-finance-3.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-dashboards-finance-3' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -2677,9 +2660,9 @@ export default LandingDemos
                   <span>Banking 1</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-dashboards-banking-1.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-dashboards-banking-1' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -2709,9 +2692,9 @@ export default LandingDemos
                   <span>Banking 2</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-dashboards-banking-2.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-dashboards-banking-2' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -2741,9 +2724,9 @@ export default LandingDemos
                   <span>Banking 3</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-dashboards-banking-3.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-dashboards-banking-3' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -2773,9 +2756,9 @@ export default LandingDemos
                   <span>Business 1</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-dashboards-business-1.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-dashboards-business-1' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -2805,9 +2788,9 @@ export default LandingDemos
                   <span>Business 2</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-dashboards-business-2.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-dashboards-business-2' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -2838,9 +2821,9 @@ export default LandingDemos
                   <span>Business 3</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-dashboards-business-3.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-dashboards-business-3' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -2870,9 +2853,9 @@ export default LandingDemos
                   <span>Lifestyle 1</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-dashboards-lifestyle-1.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-dashboards-lifestyle-1' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -2902,9 +2885,9 @@ export default LandingDemos
                   <span>Lifestyle 2</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-dashboards-lifestyle-2.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-dashboards-lifestyle-2' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -2934,9 +2917,9 @@ export default LandingDemos
                   <span>Lifestyle 3</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-dashboards-lifestyle-3.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-dashboards-lifestyle-3' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -2967,9 +2950,9 @@ export default LandingDemos
                   <span>Lifestyle 4</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-dashboards-lifestyle-4.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-dashboards-lifestyle-4' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -2999,9 +2982,9 @@ export default LandingDemos
                   <span>Ecommerce 1</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-dashboards-ecommerce-1.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-dashboards-ecommerce-1' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -3031,9 +3014,9 @@ export default LandingDemos
                   <span>Food Delivery</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-dashboards-apps-1.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-dashboards-apps-1' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -3063,9 +3046,9 @@ export default LandingDemos
                   <span>User Profile</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-profile-view.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-profile-view' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -3095,9 +3078,9 @@ export default LandingDemos
                   <span>List View 1</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-list-view-1.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-list-view-1' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -3127,9 +3110,9 @@ export default LandingDemos
                   <span>List View 2</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-list-view-2.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-list-view-2' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -3159,9 +3142,9 @@ export default LandingDemos
                   <span>List View 3</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-list-view-3.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-list-view-3' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -3191,9 +3174,9 @@ export default LandingDemos
                   <span>List View 4</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-list-view-4.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-list-view-4' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -3223,9 +3206,9 @@ export default LandingDemos
                   <span>Flex List 1</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-list-flex-1.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-list-flex-1' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -3255,9 +3238,9 @@ export default LandingDemos
                   <span>Flex List 2</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-list-flex-2.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-list-flex-2' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -3287,9 +3270,9 @@ export default LandingDemos
                   <span>Flex List 3</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-list-flex-3.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-list-flex-3' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -3319,9 +3302,9 @@ export default LandingDemos
                   <span>Datatable 1</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-list-datatable-1.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-list-datatable-1' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -3351,9 +3334,9 @@ export default LandingDemos
                   <span>Datatable 2</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-list-datatable-2.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-list-datatable-2' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -3383,9 +3366,9 @@ export default LandingDemos
                   <span>Datatable 3</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-list-datatable-3.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-list-datatable-3' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -3415,9 +3398,9 @@ export default LandingDemos
                   <span>Datatable 4</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-list-datatable-4.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-list-datatable-4' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -3447,9 +3430,9 @@ export default LandingDemos
                   <span>Card Grid 1</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-grid-cards-1.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-grid-cards-1' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -3479,9 +3462,9 @@ export default LandingDemos
                   <span>Card Grid 2</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-grid-cards-2.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-grid-cards-2' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -3511,9 +3494,9 @@ export default LandingDemos
                   <span>Card Grid 3</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-grid-cards-3.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-grid-cards-3' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -3543,9 +3526,9 @@ export default LandingDemos
                   <span>Card Grid 4</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-grid-cards-4.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-grid-cards-4' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -3575,9 +3558,9 @@ export default LandingDemos
                   <span>Tile Grid 1</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-grid-tiles-1.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-grid-tiles-1' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -3607,9 +3590,9 @@ export default LandingDemos
                   <span>Tile Grid 2</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-grid-tiles-2.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-grid-tiles-2' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -3639,9 +3622,9 @@ export default LandingDemos
                   <span>Tile Grid 3</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-grid-tiles-3.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-grid-tiles-3' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -3671,9 +3654,9 @@ export default LandingDemos
                   <span>User Grid 1</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-grid-users-1.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-grid-users-1' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -3703,9 +3686,9 @@ export default LandingDemos
                   <span>User Grid 2</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-grid-users-2.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-grid-users-2' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -3735,9 +3718,9 @@ export default LandingDemos
                   <span>User Grid 3</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-grid-users-3.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-grid-users-3' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -3767,9 +3750,9 @@ export default LandingDemos
                   <span>User Grid 4</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-grid-users-4.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-grid-users-4' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -3799,9 +3782,9 @@ export default LandingDemos
                   <span>Chat Messaging</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-messaging-chat.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-messaging-chat' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -3831,9 +3814,9 @@ export default LandingDemos
                   <span>Edit Profile 1</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-profile-edit-1.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-profile-edit-1' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -3863,9 +3846,9 @@ export default LandingDemos
                   <span>Edit Profile 2</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-profile-edit-2.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-profile-edit-2' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -3895,9 +3878,9 @@ export default LandingDemos
                   <span>Edit Profile 3</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-profile-edit-3.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-profile-edit-3' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -3927,9 +3910,9 @@ export default LandingDemos
                   <span>Edit Profile 4</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-profile-edit-4.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-profile-edit-4' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -3959,9 +3942,9 @@ export default LandingDemos
                   <span>Notifications</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-profile-notifications.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-profile-notifications' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -3991,9 +3974,9 @@ export default LandingDemos
                   <span>Settings</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-profile-settings.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-profile-settings' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -4023,9 +4006,9 @@ export default LandingDemos
                   <span>Projects 1</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-projects-projects.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-projects-projects' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -4055,9 +4038,9 @@ export default LandingDemos
                   <span>Projects 2</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-projects-projects-2.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-projects-projects-2' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -4087,9 +4070,9 @@ export default LandingDemos
                   <span>Projects 3</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-projects-projects-3.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-projects-projects-3' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -4119,9 +4102,9 @@ export default LandingDemos
                   <span>Project Details</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-projects-project.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-projects-project' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -4151,9 +4134,9 @@ export default LandingDemos
                   <span>Kanban Board</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-kanban-board.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-kanban-board' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -4183,9 +4166,9 @@ export default LandingDemos
                   <span>Search Results</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-search-results.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-search-results' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -4215,9 +4198,9 @@ export default LandingDemos
                   <span>Empty Search</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-search-empty.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-search-empty' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -4247,9 +4230,9 @@ export default LandingDemos
                   <span>SaaS Billing</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-saas-billing.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-saas-billing' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -4279,9 +4262,9 @@ export default LandingDemos
                   <span>Welcome</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-welcome.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-welcome' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -4311,9 +4294,9 @@ export default LandingDemos
                   <span>Action Page 1</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-action-page-1.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-action-page-1' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -4343,9 +4326,9 @@ export default LandingDemos
                   <span>Action Page 2</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-action-page-2.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-action-page-2' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -4375,9 +4358,9 @@ export default LandingDemos
                   <span>Confirm Account</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-utility-account-confirm.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-utility-account-confirm' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -4407,9 +4390,9 @@ export default LandingDemos
                   <span>Promotion</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-utility-promotion.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-utility-promotion' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -4439,9 +4422,9 @@ export default LandingDemos
                   <span>Invoice</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-utility-invoice.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-utility-invoice' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -4471,9 +4454,9 @@ export default LandingDemos
                   <span>UI Widgets</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-dashboards-widgets-ui.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-dashboards-widgets-ui' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -4503,11 +4486,10 @@ export default LandingDemos
                   <span>Creative Widgets</span>
                 </div>
                 <div class="demo-link">
-                  <a
-                    href="/webapp-dashboards-widgets-creative.html"
-                    target="_blank"
+                  <RouterLink
+                    :to="{ name: 'webapp-dashboards-widgets-creative' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -4537,9 +4519,9 @@ export default LandingDemos
                   <span>List Widgets</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-dashboards-widgets-list.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-dashboards-widgets-list' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -4569,11 +4551,9 @@ export default LandingDemos
                   <span>Stat Widgets</span>
                 </div>
                 <div class="demo-link">
-                  <a
-                    href="/webapp-dashboards-widgets-stats.html"
-                    target="_blank"
+                  <RouterLink :to="{ name: 'webapp-dashboards-widgets-stats' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -4603,9 +4583,9 @@ export default LandingDemos
                   <span>Layout 1</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-form-layouts-1.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-form-layouts-1' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -4635,9 +4615,9 @@ export default LandingDemos
                   <span>Layout 2</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-form-layouts-2.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-form-layouts-2' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -4667,9 +4647,9 @@ export default LandingDemos
                   <span>Layout 3</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-form-layouts-3.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-form-layouts-3' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -4699,9 +4679,9 @@ export default LandingDemos
                   <span>Layout 4</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-form-layouts-4.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-form-layouts-4' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -4731,9 +4711,9 @@ export default LandingDemos
                   <span>Onboarding 1</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-onboarding-page-1.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-onboarding-page-1' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -4763,9 +4743,9 @@ export default LandingDemos
                   <span>Onboarding 2</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-onboarding-page-2.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-onboarding-page-2' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -4795,9 +4775,9 @@ export default LandingDemos
                   <span>Onboarding 3</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-onboarding-page-3.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-onboarding-page-3' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -4827,9 +4807,9 @@ export default LandingDemos
                   <span>Onboarding 4</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-onboarding-page-4.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-onboarding-page-4' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -4859,9 +4839,9 @@ export default LandingDemos
                   <span>Onboarding 5</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-onboarding-page-5.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-onboarding-page-5' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -4914,9 +4894,9 @@ export default LandingDemos
                   <span>Login v1</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/auth-login-1.html" target="_blank"
+                  <RouterLink :to="{ name: 'auth-login-1' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -4947,9 +4927,9 @@ export default LandingDemos
                   <span>Login v2</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/auth-login-2.html" target="_blank"
+                  <RouterLink :to="{ name: 'auth-login-2' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -4980,9 +4960,9 @@ export default LandingDemos
                   <span>Login v3</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/auth-login-3.html" target="_blank"
+                  <RouterLink :to="{ name: 'auth-login-3' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -5013,9 +4993,9 @@ export default LandingDemos
                   <span>Signup v1</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/auth-signup-2.html" target="_blank"
+                  <RouterLink :to="{ name: 'auth-signup-2' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -5046,9 +5026,9 @@ export default LandingDemos
                   <span>Signup v3</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/auth-signup-3.html" target="_blank"
+                  <RouterLink :to="{ name: 'auth-signup-3' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -5071,9 +5051,9 @@ export default LandingDemos
                   <span>Signup Flow</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/auth-signup-1.html" target="_blank"
+                  <RouterLink :to="{ name: 'auth-signup-1' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -5096,9 +5076,9 @@ export default LandingDemos
                   <span>Status Page</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-utility-status.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-utility-status' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -5128,9 +5108,9 @@ export default LandingDemos
                   <span>Inbox UI V1</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-dashboards-apps-2.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-dashboards-apps-2' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -5160,9 +5140,9 @@ export default LandingDemos
                   <span>Wizard Step 1</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/wizard-v1.html" target="_blank"
+                  <RouterLink :to="{ name: 'wizard-v1' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -5192,9 +5172,9 @@ export default LandingDemos
                   <span>Wizard Step 2</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/wizard-v1.html" target="_blank"
+                  <RouterLink :to="{ name: 'wizard-v1' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -5224,9 +5204,9 @@ export default LandingDemos
                   <span>Wizard Step 3</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/wizard-v1.html" target="_blank"
+                  <RouterLink :to="{ name: 'wizard-v1' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -5256,9 +5236,9 @@ export default LandingDemos
                   <span>Wizard Step 4</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/wizard-v1.html" target="_blank"
+                  <RouterLink :to="{ name: 'wizard-v1' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -5288,9 +5268,9 @@ export default LandingDemos
                   <span>Wizard Step 5</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/wizard-v1.html" target="_blank"
+                  <RouterLink :to="{ name: 'wizard-v1' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -5320,9 +5300,9 @@ export default LandingDemos
                   <span>Wizard Step 6</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/wizard-v1.html" target="_blank"
+                  <RouterLink :to="{ name: 'wizard-v1' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -5352,9 +5332,9 @@ export default LandingDemos
                   <span>Wizard Step 7</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/wizard-v1.html" target="_blank"
+                  <RouterLink :to="{ name: 'wizard-v1' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -5384,9 +5364,9 @@ export default LandingDemos
                   <span>Wizard Step 8</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/wizard-v1.html" target="_blank"
+                  <RouterLink :to="{ name: 'wizard-v1' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -5409,9 +5389,9 @@ export default LandingDemos
                   <span>Error Page 1</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/error-page-1.html" target="_blank"
+                  <RouterLink :to="{ name: 'error-page-1' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -5434,9 +5414,9 @@ export default LandingDemos
                   <span>Error Page 2</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/error-page-2.html" target="_blank"
+                  <RouterLink :to="{ name: 'error-page-2' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -5459,9 +5439,9 @@ export default LandingDemos
                   <span>Error Page 3</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/error-page-3.html" target="_blank"
+                  <RouterLink :to="{ name: 'error-page-3' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -5484,9 +5464,9 @@ export default LandingDemos
                   <span>Error Page 4</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/error-page-4.html" target="_blank"
+                  <RouterLink :to="{ name: 'error-page-4' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -5509,9 +5489,9 @@ export default LandingDemos
                   <span>Error Page 5</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/error-page-5.html" target="_blank"
+                  <RouterLink :to="{ name: 'error-page-5' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -5563,9 +5543,9 @@ export default LandingDemos
                   <span>Regular Sidebar</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-blank-page-1.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-blank-page-1' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -5594,9 +5574,9 @@ export default LandingDemos
                   <span>Curved Sidebar</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-blank-page-2.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-blank-page-2' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -5625,9 +5605,9 @@ export default LandingDemos
                   <span>Colored Sidebar</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-blank-page-3.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-blank-page-3' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -5656,9 +5636,9 @@ export default LandingDemos
                   <span>Curved Colored Sidebar</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/admin-blank-page-4.html" target="_blank"
+                  <RouterLink :to="{ name: 'admin-blank-page-4' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -5687,9 +5667,9 @@ export default LandingDemos
                   <span>Standard Navbar</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-blank-page-1.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-blank-page-1' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -5718,9 +5698,9 @@ export default LandingDemos
                   <span>Fading Navbar</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-blank-page-2.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-blank-page-2' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -5749,9 +5729,9 @@ export default LandingDemos
                   <span>Colored Navbar</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-blank-page-3.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-blank-page-3' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -5780,9 +5760,9 @@ export default LandingDemos
                   <span>Dropdown Navbar</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-blank-page-4.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-blank-page-4' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>
@@ -5811,9 +5791,9 @@ export default LandingDemos
                   <span>Colored Dropdown Navbar</span>
                 </div>
                 <div class="demo-link">
-                  <a href="/webapp-blank-page-5.html" target="_blank"
+                  <RouterLink :to="{ name: 'webapp-blank-page-5' }"
                     >Go to demo <i class="fas fa-angle-right"></i
-                  ></a>
+                  ></RouterLink>
                 </div>
               </div>
             </div>

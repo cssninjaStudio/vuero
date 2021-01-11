@@ -1,19 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const CenteredActionsModal = defineComponent({
-  name: 'CenteredActionsModal',
-  components: {},
-  setup() {
-    // CenteredActionsModal - Composition API
-
-    return {}
-  },
-})
-
-export default CenteredActionsModal
-</script>
-
 <template>
   <div id="demo-centered-actions-modal" class="modal h-modal">
     <div class="modal-background h-modal-close"></div>

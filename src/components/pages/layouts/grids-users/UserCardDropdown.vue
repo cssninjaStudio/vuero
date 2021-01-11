@@ -1,19 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const UserCardDropdown = defineComponent({
-  name: 'UserCardDropdown',
-  components: {},
-  setup() {
-    // UserCardDropdown - Composition API
-
-    return {}
-  },
-})
-
-export default UserCardDropdown
-</script>
-
 <template>
   <div class="dropdown is-spaced is-dots is-right dropdown-trigger">
     <div class="is-trigger" aria-haspopup="true">

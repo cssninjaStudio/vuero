@@ -1,19 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const Message3 = defineComponent({
-  name: 'Message3',
-  components: {},
-  setup() {
-    // Message3 - Composition API
-
-    return {}
-  },
-})
-
-export default Message3
-</script>
-
 <template>
   <!-- Message details -->
   <div id="message-3" class="inbox-message-details is-hidden">

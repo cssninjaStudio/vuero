@@ -1,19 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const MessagingToolbar = defineComponent({
-  name: 'MessagingToolbar',
-  components: {},
-  setup() {
-    // MessagingToolbar - Composition API
-
-    return {}
-  },
-})
-
-export default MessagingToolbar
-</script>
-
 <template>
   <div class="toolbar ml-auto">
     <div class="toolbar-link">

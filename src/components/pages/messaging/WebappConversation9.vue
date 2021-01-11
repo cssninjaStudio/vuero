@@ -1,19 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const WebappConversation9 = defineComponent({
-  name: 'WebappConversation9',
-  components: {},
-  setup() {
-    // WebappConversation9 - Composition API
-
-    return {}
-  },
-})
-
-export default WebappConversation9
-</script>
-
 <template>
   <div id="webapp-conversation-9" class="chat-area-content">
     <div class="chat-area-header">

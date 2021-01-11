@@ -1,19 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const Message10 = defineComponent({
-  name: 'Message10',
-  components: {},
-  setup() {
-    // Message10 - Composition API
-
-    return {}
-  },
-})
-
-export default Message10
-</script>
-
 <template>
   <!-- Message details -->
   <div id="message-10" class="inbox-message-details is-hidden">
@@ -99,9 +83,7 @@ export default Message10
           </p>
           <p>
             Sedulo, inquam, faciam. Certe, nisi voluptatem tanti aestimaretis.
-            <a href="http://loripsum.net/" target="_blank"
-              >Recte, inquit, intellegis.</a
-            >
+            <a href="http://loripsum.net/">Recte, inquit, intellegis.</a>
             Ergo, inquit, tibi Q. Recte, inquit, intellegis.
           </p>
           <ul>

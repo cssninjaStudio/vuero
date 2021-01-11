@@ -1,26 +1,9 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-import { BellIcon } from '@zhuowenli/vue-feather-icons'
-
-const NotificationsWidgetMobile = defineComponent({
-  name: 'NotificationsWidgetMobile',
-  components: { BellIcon },
-  setup() {
-    // NotificationsWidgetMobile - Composition API
-
-    return {}
-  },
-})
-
-export default NotificationsWidgetMobile
-</script>
-
 <template>
   <div
     class="navbar-item has-dropdown is-notification is-hidden-tablet is-hidden-desktop"
   >
     <a class="navbar-link is-arrowless" href="javascript:void(0);">
-      <BellIcon />
+      <Icon icon="feather:bell" />
       <span class="new-indicator pulsate"></span>
     </a>
     <div class="navbar-dropdown is-boxed is-right">
@@ -41,7 +24,7 @@ export default NotificationsWidgetMobile
                   class="user-photo"
                   alt=""
                   src="https://via.placeholder.com/150x150"
-                  data-demo-src="/img/avatars/photos/7.jpg"
+                  data-demo-src="/src/assets/images/avatars/photos/7.jpg"
                 />
               </div>
               <div class="user-content">
@@ -59,7 +42,7 @@ export default NotificationsWidgetMobile
                   class="user-photo"
                   alt=""
                   src="https://via.placeholder.com/150x150"
-                  data-demo-src="/img/avatars/photos/12.jpg"
+                  data-demo-src="/src/assets/images/avatars/photos/12.jpg"
                 />
               </div>
               <div class="user-content">
@@ -77,7 +60,7 @@ export default NotificationsWidgetMobile
                   class="user-photo"
                   alt=""
                   src="https://via.placeholder.com/150x150"
-                  data-demo-src="/img/avatars/photos/13.jpg"
+                  data-demo-src="/src/assets/images/avatars/photos/13.jpg"
                 />
               </div>
               <div class="user-content">
@@ -95,7 +78,7 @@ export default NotificationsWidgetMobile
                   class="user-photo"
                   alt=""
                   src="https://via.placeholder.com/150x150"
-                  data-demo-src="/img/avatars/photos/25.jpg"
+                  data-demo-src="/src/assets/images/avatars/photos/25.jpg"
                 />
               </div>
               <div class="user-content">

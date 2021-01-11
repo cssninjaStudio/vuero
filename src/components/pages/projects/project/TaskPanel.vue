@@ -1,19 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const TaskPanel = defineComponent({
-  name: 'TaskPanel',
-  components: {},
-  setup() {
-    // TaskPanel - Composition API
-
-    return {}
-  },
-})
-
-export default TaskPanel
-</script>
-
 <template>
   <div id="task-panel" class="right-panel-wrapper is-task">
     <div class="panel-overlay"></div>

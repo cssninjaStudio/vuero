@@ -1,19 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const ElementsMobileSubsidebar = defineComponent({
-  name: 'ElementsMobileSubsidebar',
-  components: {},
-  setup() {
-    // ElementsMobileSubsidebar - Composition API
-
-    return {}
-  },
-})
-
-export default ElementsMobileSubsidebar
-</script>
-
 <template>
   <div class="mobile-subsidebar is-activity">
     <div class="inner">
@@ -23,25 +7,27 @@ export default ElementsMobileSubsidebar
 
       <ul class="submenu">
         <li>
-          <a href="/elements-hub.html">Elements Hub</a>
+          <RouterLink :to="{ name: 'elements-hub' }">Elements Hub</RouterLink>
         </li>
         <li>
-          <a href="/elements-colors.html">Colors</a>
+          <RouterLink :to="{ name: 'elements-colors' }">Colors</RouterLink>
         </li>
         <li>
-          <a href="/elements-helpers.html">Helpers</a>
+          <RouterLink :to="{ name: 'elements-helpers' }">Helpers</RouterLink>
         </li>
         <li>
-          <a href="/elements-buttons.html">Buttons</a>
+          <RouterLink :to="{ name: 'elements-buttons' }">Buttons</RouterLink>
         </li>
         <li>
-          <a href="/elements-blocks.html">Blocks</a>
+          <RouterLink :to="{ name: 'elements-blocks' }">Blocks</RouterLink>
         </li>
         <li>
-          <a href="/elements-content.html">Content</a>
+          <RouterLink :to="{ name: 'elements-content' }">Content</RouterLink>
         </li>
         <li>
-          <a href="/elements-tags.html">Tags & Badges</a>
+          <RouterLink :to="{ name: 'elements-tags' }"
+            >Tags &amp; Badges</RouterLink
+          >
         </li>
 
         <li class="has-children">
@@ -98,10 +84,10 @@ export default ElementsMobileSubsidebar
           </ul>
         </li>
         <li>
-          <a href="/elements-table.html">Table</a>
+          <RouterLink :to="{ name: 'elements-table' }">Table</RouterLink>
         </li>
         <li>
-          <a href="/elements-tooltips.html">Tooltips</a>
+          <RouterLink :to="{ name: 'elements-tooltips' }">Tooltips</RouterLink>
         </li>
         <li class="divider"></li>
         <li class="has-children">

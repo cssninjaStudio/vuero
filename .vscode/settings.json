@@ -9,7 +9,7 @@
   },
   "eslint.alwaysShowStatus": true,
   // "eslint.autoFixOnSave": true,
-  "eslint.packageManager": "yarn",
+  // "eslint.packageManager": "pnpm",
   "eslint.validate": [
     "javascript",
     "javascriptreact",
@@ -18,4 +18,8 @@
   "[vue]": {
     "editor.formatOnSave": false
   },
+  "vetur.experimental.templateInterpolationService": false,
+  "vetur.validation.interpolation": false,
+  "vetur.completion.tagCasing": "initial",
+  "vetur.completion.autoImport": true,
 }

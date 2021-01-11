@@ -1,19 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const FlexTableContextMenuAlt = defineComponent({
-  name: 'FlexTableContextMenuAlt',
-  components: {},
-  setup() {
-    // FlexTableContextMenuAlt - Composition API
-
-    return {}
-  },
-})
-
-export default FlexTableContextMenuAlt
-</script>
-
 <template>
   <div
     class="dropdown is-spaced is-dots is-right dropdown-trigger is-pushed-mobile"

@@ -1,19 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const CollapsedMessaging = defineComponent({
-  name: 'CollapsedMessaging',
-  components: {},
-  setup() {
-    // CollapsedMessaging - Composition API
-
-    return {}
-  },
-})
-
-export default CollapsedMessaging
-</script>
-
 <template>
   <div class="collapsed-messaging">
     <div class="inner">

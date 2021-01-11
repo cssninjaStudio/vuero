@@ -1,19 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const WizardV1Navigation = defineComponent({
-  name: 'WizardV1Navigation',
-  components: {},
-  setup() {
-    // WizardV1StepNavigation - Composition API
-
-    return {}
-  },
-})
-
-export default WizardV1Navigation
-</script>
-
 <template>
   <nav class="wizard-navigation">
     <a href="/" class="wizard-brand">

@@ -1,25 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-import { LogOutIcon } from '@zhuowenli/vue-feather-icons'
-
-import NotificationsWidgetMobile from '@src/components/navigation/mobile/widgets/NotificationsWidgetMobile.vue'
-
-const MobileNavbar = defineComponent({
-  name: 'MobileNavbar',
-  components: {
-    NotificationsWidgetMobile,
-    LogOutIcon,
-  },
-  setup() {
-    // MobileNavbar - Composition API
-
-    return {}
-  },
-})
-
-export default MobileNavbar
-</script>
-
 <template>
   <nav
     class="navbar mobile-navbar no-shadow is-hidden-desktop is-hidden-tablet"
@@ -38,8 +16,16 @@ export default MobileNavbar
         </div>
 
         <a class="navbar-item is-brand" href="index.html">
-          <img class="light-image" src="/img/logos/logo/logo.svg" alt="" />
-          <img class="dark-image" src="/img/logos/logo/logo-light.svg" alt="" />
+          <img
+            class="light-image"
+            src="/src/assets/images/logos/logo/logo.svg"
+            alt=""
+          />
+          <img
+            class="dark-image"
+            src="/src/assets/images/logos/logo/logo-light.svg"
+            alt=""
+          />
         </a>
 
         <div class="brand-end">
@@ -53,7 +39,7 @@ export default MobileNavbar
                 <img
                   class="avatar"
                   src="https://via.placeholder.com/150x150"
-                  data-demo-src="/img/avatars/photos/8.jpg"
+                  data-demo-src="/src/assets/images/avatars/photos/8.jpg"
                   alt=""
                 />
               </div>
@@ -65,7 +51,7 @@ export default MobileNavbar
                     <img
                       class="avatar"
                       src="https://via.placeholder.com/150x150"
-                      data-demo-src="/img/avatars/photos/8.jpg"
+                      data-demo-src="/src/assets/images/avatars/photos/8.jpg"
                       alt=""
                     />
                   </div>
@@ -127,7 +113,7 @@ export default MobileNavbar
                     class="button h-button is-primary is-raised is-fullwidth logout-button"
                   >
                     <span class="icon is-small">
-                      <LogOutIcon />
+                      <Icon icon="feather:log-out" />
                     </span>
                     <span>Logout</span>
                   </button>

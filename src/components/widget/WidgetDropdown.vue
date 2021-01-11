@@ -1,19 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const WidgetDropdown = defineComponent({
-  name: 'WidgetDropdown',
-  components: {},
-  setup() {
-    // WidgetDropdown - Composition API
-
-    return {}
-  },
-})
-
-export default WidgetDropdown
-</script>
-
 <template>
   <div
     class="dropdown is-spaced is-dots is-right dropdown-trigger is-pushed-mobile"

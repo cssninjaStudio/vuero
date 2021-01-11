@@ -1,19 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const ListViewV1Dropdown = defineComponent({
-  name: 'ListViewV1Dropdown',
-  components: {},
-  setup() {
-    // ListViewV1Dropdown - Composition API
-
-    return {}
-  },
-})
-
-export default ListViewV1Dropdown
-</script>
-
 <template>
   <div class="dropdown is-spaced is-dots is-right dropdown-trigger">
     <div class="is-trigger" aria-haspopup="true">

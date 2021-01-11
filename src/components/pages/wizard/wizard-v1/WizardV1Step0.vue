@@ -1,19 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const WizardV1Step0 = defineComponent({
-  name: 'WizardV1Step0',
-  components: {},
-  setup() {
-    // WizardV1Step0 - Composition API
-
-    return {}
-  },
-})
-
-export default WizardV1Step0
-</script>
-
 <template>
   <div class="step-content">
     <div class="step-title">

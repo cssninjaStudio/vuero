@@ -1,19 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const SidebarColor = defineComponent({
-  name: 'SidebarColor',
-  components: {},
-  setup() {
-    // SidebarColor - Composition API
-
-    return {}
-  },
-})
-
-export default SidebarColor
-</script>
-
 <template>
   <div class="main-sidebar is-colored">
     <div class="sidebar-brand">

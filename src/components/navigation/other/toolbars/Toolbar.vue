@@ -1,20 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-import { BellIcon, GridIcon } from '@zhuowenli/vue-feather-icons'
-
-const Toolbar = defineComponent({
-  name: 'Toolbar',
-  components: { BellIcon, GridIcon },
-  setup() {
-    // Toolbar - Composition API
-
-    return {}
-  },
-})
-
-export default Toolbar
-</script>
-
 <template>
   <div class="toolbar ml-auto">
     <div class="toolbar-link">
@@ -25,13 +8,16 @@ export default Toolbar
     </div>
 
     <a class="toolbar-link right-panel-trigger" data-panel="languages-panel">
-      <img src="/img/icons/flags/united-states-of-america.svg" alt="" />
+      <img
+        src="/src/assets/images/icons/flags/united-states-of-america.svg"
+        alt=""
+      />
     </a>
 
     <div class="toolbar-notifications is-hidden-mobile">
       <div class="dropdown is-spaced is-dots is-right dropdown-trigger">
         <div class="is-trigger" aria-haspopup="true">
-          <BellIcon />
+          <Icon icon="feather:bell" />
           <span class="new-indicator pulsate"></span>
         </div>
         <div class="dropdown-menu" role="menu">
@@ -56,7 +42,7 @@ export default Toolbar
                       class="user-photo"
                       alt=""
                       src="https://via.placeholder.com/150x150"
-                      data-demo-src="/img/avatars/photos/7.jpg"
+                      data-demo-src="/src/assets/images/avatars/photos/7.jpg"
                     />
                   </div>
                   <div class="user-content">
@@ -74,7 +60,7 @@ export default Toolbar
                       class="user-photo"
                       alt=""
                       src="https://via.placeholder.com/150x150"
-                      data-demo-src="/img/avatars/photos/12.jpg"
+                      data-demo-src="/src/assets/images/avatars/photos/12.jpg"
                     />
                   </div>
                   <div class="user-content">
@@ -92,7 +78,7 @@ export default Toolbar
                       class="user-photo"
                       alt=""
                       src="https://via.placeholder.com/150x150"
-                      data-demo-src="/img/avatars/photos/13.jpg"
+                      data-demo-src="/src/assets/images/avatars/photos/13.jpg"
                     />
                   </div>
                   <div class="user-content">
@@ -110,7 +96,7 @@ export default Toolbar
                       class="user-photo"
                       alt=""
                       src="https://via.placeholder.com/150x150"
-                      data-demo-src="/img/avatars/photos/25.jpg"
+                      data-demo-src="/src/assets/images/avatars/photos/25.jpg"
                     />
                   </div>
                   <div class="user-content">
@@ -128,7 +114,7 @@ export default Toolbar
     </div>
 
     <a class="toolbar-link right-panel-trigger" data-panel="activity-panel">
-      <GridIcon />
+      <Icon icon="feather:grid" />
     </a>
   </div>
 </template>

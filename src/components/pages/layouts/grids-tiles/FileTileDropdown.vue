@@ -1,19 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const FileTileDropdown = defineComponent({
-  name: 'FileTileDropdown',
-  components: {},
-  setup() {
-    // FileTileDropdown - Composition API
-
-    return {}
-  },
-})
-
-export default FileTileDropdown
-</script>
-
 <template>
   <div class="dropdown is-spaced is-dots is-right dropdown-trigger">
     <div class="is-trigger" aria-haspopup="true">

@@ -1,19 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const LandingNavigation = defineComponent({
-  name: 'LandingNavigation',
-  components: {},
-  setup() {
-    // LandingNavigation - Composition API
-
-    return {}
-  },
-})
-
-export default LandingNavigation
-</script>
-
 <template>
   <nav
     class="navbar is-fixed-top is-transparent is-docked"
@@ -52,7 +36,6 @@ export default LandingNavigation
         <div class="navbar-item">
           <a
             href="https://themeforest.net/item/huro-multipurpose-admin-and-webapp-ui-kit/28933249"
-            target="_blank"
             class="nav-link is-active"
             >Buy Now</a
           >
@@ -92,15 +75,17 @@ export default LandingNavigation
           </label>
         </div>
         <div class="navbar-item">
-          <a href="/auth-login.html" class="nav-link">Login</a>
+          <RouterLink :to="{ name: 'auth-login' }" class="nav-link"
+            >Login</RouterLink
+          >
         </div>
         <div class="navbar-item">
-          <a
-            href="/auth-signup.html"
+          <RouterLink
+            :to="{ name: 'auth-signup' }"
             class="button h-button is-rounded is-primary is-raised"
           >
             <strong>Sign up</strong>
-          </a>
+          </RouterLink>
         </div>
       </div>
     </div>

@@ -1,19 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const Message7 = defineComponent({
-  name: 'Message7',
-  components: {},
-  setup() {
-    // Message7 - Composition API
-
-    return {}
-  },
-})
-
-export default Message7
-</script>
-
 <template>
   <!-- Message details -->
   <div id="message-7" class="inbox-message-details is-hidden">
@@ -100,7 +84,7 @@ export default Message7
             beata tollitur. <mark>Quod quidem nobis non saepe contingit.</mark>
           </p>
           <p>
-            <a href="http://loripsum.net/" target="_blank"
+            <a href="http://loripsum.net/"
               >Illa tamen simplicia, vestra versuta.</a
             >
             Ea possunt paria non esse. Quid adiuvas? Praeclarae mortes sunt

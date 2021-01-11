@@ -2,8 +2,9 @@
   "compilerOptions": {
     "baseUrl": ".",
     "module": "ESNext",
-    "target": "es2016",
+    "target": "ESNext",
     "lib": ["DOM", "ESNext"],
+    "types": ["node"],
     "strict": true,
     "esModuleInterop": true,
     "incremental": true,
@@ -13,8 +14,8 @@
     "forceConsistentCasingInFileNames": true,
     "plugins": [{ "name": "@vuedx/typescript-plugin-vue" }],
     "paths": {
-      "@src/*": ["src/*"],
-      "@images/*": ["src/assets/images/*"],
+      "/@src/*": ["src/*"],
+      "/@images/*": ["src/assets/images/*"],
     }
   },
 }

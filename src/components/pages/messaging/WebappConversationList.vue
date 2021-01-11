@@ -1,19 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const WebappConversationList = defineComponent({
-  name: 'WebappConversationList',
-  components: {},
-  setup() {
-    // WebappConversationList - Composition API
-
-    return {}
-  },
-})
-
-export default WebappConversationList
-</script>
-
 <template>
   <!--Conversations list-->
   <div class="conversation-area" data-simplebar>

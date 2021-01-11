@@ -1,22 +1,12 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
+<script setup lang="ts">
+import { defineProps } from 'vue'
 
-const Icon = defineComponent({
-  name: 'Icon',
-  props: {
-    icon: {
-      type: String,
-      required: true,
-    },
-  },
-  setup() {
-    // Icon - Composition API
-
-    return {}
+const props = defineProps({
+  icon: {
+    type: String,
+    required: true,
   },
 })
-
-export default Icon
 </script>
 
 <template>

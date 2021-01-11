@@ -1,19 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const Sidebar = defineComponent({
-  name: 'Sidebar',
-  components: {},
-  setup() {
-    // Sidebar - Composition API
-
-    return {}
-  },
-})
-
-export default Sidebar
-</script>
-
 <template>
   <div class="main-sidebar">
     <div class="sidebar-brand">

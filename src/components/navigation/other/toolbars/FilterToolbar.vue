@@ -1,19 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const FilterToolbar = defineComponent({
-  name: 'FilterToolbar',
-  components: {},
-  setup() {
-    // FilterToolbar - Composition API
-
-    return {}
-  },
-})
-
-export default FilterToolbar
-</script>
-
 <template>
   <div class="toolbar ml-auto">
     <div class="control has-icon">

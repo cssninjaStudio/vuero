@@ -1,19 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const ActivityPanel = defineComponent({
-  name: 'ActivityPanel',
-  components: {},
-  setup() {
-    // ActivityPanel - Composition API
-
-    return {}
-  },
-})
-
-export default ActivityPanel
-</script>
-
 <template>
   <div id="activity-panel" class="right-panel-wrapper is-activity">
     <div class="panel-overlay"></div>

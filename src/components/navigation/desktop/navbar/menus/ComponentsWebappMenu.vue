@@ -1,19 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const ComponentsWebappMenu = defineComponent({
-  name: 'ComponentsWebappMenu',
-  components: {},
-  setup() {
-    // ComponentsWebappMenu - Composition API
-
-    return {}
-  },
-})
-
-export default ComponentsWebappMenu
-</script>
-
 <template>
   <div id="components-webapp-menu" class="webapp-subnavbar-inner tabs-wrapper">
     <div class="tabs-inner">
@@ -36,34 +20,34 @@ export default ComponentsWebappMenu
                 <h4 class="column-heading">General</h4>
                 <ul>
                   <li>
-                    <a href="/components-avatars.html">
+                    <RouterLink :to="{ name: 'components-avatars' }">
                       <span>Avatars</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/components-accordion-basic.html">
+                    <RouterLink :to="{ name: 'components-accordion-basic' }">
                       <span>Accordion</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/components-accordion-collapse.html">
+                    <RouterLink :to="{ name: 'components-accordion-collapse' }">
                       <span>Collapse</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/components-accordion-images.html">
+                    <RouterLink :to="{ name: 'components-accordion-images' }">
                       <span>Image Accordion</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/components-breadcrumb.html">
+                    <RouterLink :to="{ name: 'components-breadcrumb' }">
                       <span>Breadcrumb</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                 </ul>
               </div>
@@ -71,34 +55,34 @@ export default ComponentsWebappMenu
                 <h4 class="column-heading">Interaction</h4>
                 <ul>
                   <li>
-                    <a href="/components-loader.html">
+                    <RouterLink :to="{ name: 'components-loader' }">
                       <span>Loader</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/components-dropdown.html">
+                    <RouterLink :to="{ name: 'components-dropdown' }">
                       <span>Dropdown</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/components-modal.html">
+                    <RouterLink :to="{ name: 'components-modal' }">
                       <span>Modal Dialogs</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/components-tabs-regular.html">
+                    <RouterLink :to="{ name: 'components-tabs-regular' }">
                       <span>Regular Tabs</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/components-tabs-slider.html">
+                    <RouterLink :to="{ name: 'components-tabs-slider' }">
                       <span>Slider Tabs</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                 </ul>
               </div>
@@ -106,28 +90,28 @@ export default ComponentsWebappMenu
                 <h4 class="column-heading">Presentation</h4>
                 <ul>
                   <li>
-                    <a href="/components-icon-box.html">
+                    <RouterLink :to="{ name: 'components-icon-box' }">
                       <span>Icon Box</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/components-messages.html">
+                    <RouterLink :to="{ name: 'components-messages' }">
                       <span>Message</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/components-progress.html">
+                    <RouterLink :to="{ name: 'components-progress' }">
                       <span>Progress</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/components-snacks.html">
+                    <RouterLink :to="{ name: 'components-snacks' }">
                       <span>Snacks</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                 </ul>
               </div>
@@ -135,28 +119,30 @@ export default ComponentsWebappMenu
                 <h4 class="column-heading">Flex Table</h4>
                 <ul>
                   <li>
-                    <a href="/components-table-flex.html">
+                    <RouterLink :to="{ name: 'components-table-flex' }">
                       <span>Base Table</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/components-table-flex-compact.html">
+                    <RouterLink :to="{ name: 'components-table-flex-compact' }">
                       <span>Compact Table</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/components-table-flex-media.html">
+                    <RouterLink :to="{ name: 'components-table-flex-media' }">
                       <span>Media Table</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/components-table-flex-advanced.html">
+                    <RouterLink
+                      :to="{ name: 'components-table-flex-advanced' }"
+                    >
                       <span>Advanced Table</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                 </ul>
               </div>
@@ -172,99 +158,107 @@ export default ComponentsWebappMenu
               <div class="column is-3">
                 <ul>
                   <li>
-                    <a href="/components-plugins-alertify.html">
+                    <RouterLink :to="{ name: 'components-plugins-alertify' }">
                       <span>Alertify</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/components-plugins-autocomplete.html">
+                    <RouterLink
+                      :to="{ name: 'components-plugins-autocomplete' }"
+                    >
                       <span>Autocomplete</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/components-plugins-datepicker.html">
+                    <RouterLink :to="{ name: 'components-plugins-datepicker' }">
                       <span>Datepicker</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/components-plugins-choices.html">
+                    <RouterLink :to="{ name: 'components-plugins-choices' }">
                       <span>Choices JS</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                 </ul>
               </div>
               <div class="column is-3">
                 <ul>
                   <li>
-                    <a href="/components-plugins-filepond.html">
+                    <RouterLink :to="{ name: 'components-plugins-filepond' }">
                       <span>Filepond</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/components-plugins-lightgallery.html">
+                    <RouterLink
+                      :to="{ name: 'components-plugins-lightgallery' }"
+                    >
                       <span>Light Gallery</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/components-plugins-videogallery.html">
+                    <RouterLink
+                      :to="{ name: 'components-plugins-videogallery' }"
+                    >
                       <span>Video Gallery</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/components-plugins-video-player.html">
+                    <RouterLink
+                      :to="{ name: 'components-plugins-video-player' }"
+                    >
                       <span>Video Player</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                 </ul>
               </div>
               <div class="column is-3">
                 <ul>
                   <li>
-                    <a href="/components-plugins-toasts.html">
+                    <RouterLink :to="{ name: 'components-plugins-toasts' }">
                       <span>Toast Messages</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/components-plugins-webuipopover.html">
+                    <RouterLink
+                      :to="{ name: 'components-plugins-webuipopover' }"
+                    >
                       <span>WebUI Popovers</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/components-plugins-nouislider.html">
+                    <RouterLink :to="{ name: 'components-plugins-nouislider' }">
                       <span>NoUI Slider</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/components-plugins-editor-summernote.html">
+                    <RouterLink
+                      :to="{ name: 'components-plugins-editor-summernote' }"
+                    >
                       <span>Summernote</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/components-plugins-editor-sun.html">
+                    <RouterLink :to="{ name: 'components-plugins-editor-sun' }">
                       <span>Sun Editor</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                 </ul>
               </div>
               <div class="column is-3">
-                <a
-                  href="https://cssninja.io"
-                  target="_blank"
-                  class="column-placeholder"
-                >
+                <a href="https://cssninja.io" class="column-placeholder">
                   <img
                     class="light-image"
                     src="/src/assets/images/icons/misc/buoy.svg"
@@ -279,7 +273,6 @@ export default ComponentsWebappMenu
                 </a>
                 <a
                   href="https://docs.huro.cssninja.io"
-                  target="_blank"
                   class="column-placeholder"
                 >
                   <img

@@ -1,19 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const InboxMessagesList = defineComponent({
-  name: 'InboxMessagesList',
-  components: {},
-  setup() {
-    // InboxMessagesList - Composition API
-
-    return {}
-  },
-})
-
-export default InboxMessagesList
-</script>
-
 <template>
   <!--Message-->
   <div class="inbox-message is-unread" data-message="message-2">

@@ -1,19 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const NavbarDashboardsDropdown = defineComponent({
-  name: 'NavbarDashboardsDropdown',
-  components: {},
-  setup() {
-    // NavbarDashboardsDropdown - Composition API
-
-    return {}
-  },
-})
-
-export default NavbarDashboardsDropdown
-</script>
-  
 <template>
   <div class="dropdown is-modern is-spaced dropdown-trigger has-mega-dropdown">
     <div class="is-trigger" aria-haspopup="true" aria-controls="dropdown-menu">
@@ -77,8 +61,8 @@ export default NavbarDashboardsDropdown
                 </h4>
 
                 <div class="column-content" data-simplebar>
-                  <a
-                    href="/webapp-dashboards-personal-1.html"
+                  <RouterLink
+                    :to="{ name: 'webapp-dashboards-personal-1' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -87,9 +71,9 @@ export default NavbarDashboardsDropdown
                     <div class="meta">
                       <span>Personal V1</span>
                     </div>
-                  </a>
-                  <a
-                    href="/webapp-dashboards-personal-2.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-dashboards-personal-2' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -98,9 +82,9 @@ export default NavbarDashboardsDropdown
                     <div class="meta">
                       <span>Personal V2</span>
                     </div>
-                  </a>
-                  <a
-                    href="/webapp-dashboards-personal-3.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-dashboards-personal-3' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -109,9 +93,9 @@ export default NavbarDashboardsDropdown
                     <div class="meta">
                       <span>Personal V3</span>
                     </div>
-                  </a>
-                  <a
-                    href="/webapp-dashboards-lifestyle-1.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-dashboards-lifestyle-1' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -120,9 +104,9 @@ export default NavbarDashboardsDropdown
                     <div class="meta">
                       <span>Influencer</span>
                     </div>
-                  </a>
-                  <a
-                    href="/webapp-dashboards-lifestyle-2.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-dashboards-lifestyle-2' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -131,9 +115,9 @@ export default NavbarDashboardsDropdown
                     <div class="meta">
                       <span>Hobbies</span>
                     </div>
-                  </a>
-                  <a
-                    href="/webapp-dashboards-lifestyle-3.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-dashboards-lifestyle-3' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -142,9 +126,9 @@ export default NavbarDashboardsDropdown
                     <div class="meta">
                       <span>Health</span>
                     </div>
-                  </a>
-                  <a
-                    href="/webapp-dashboards-lifestyle-4.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-dashboards-lifestyle-4' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -153,7 +137,7 @@ export default NavbarDashboardsDropdown
                     <div class="meta">
                       <span>Writer</span>
                     </div>
-                  </a>
+                  </RouterLink>
                 </div>
               </div>
             </div>
@@ -166,8 +150,8 @@ export default NavbarDashboardsDropdown
                 </h4>
 
                 <div class="column-content" data-simplebar>
-                  <a
-                    href="/webapp-dashboards-finance-1.html"
+                  <RouterLink
+                    :to="{ name: 'webapp-dashboards-finance-1' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -176,9 +160,9 @@ export default NavbarDashboardsDropdown
                     <div class="meta">
                       <span>Analytics</span>
                     </div>
-                  </a>
-                  <a
-                    href="/webapp-dashboards-finance-2.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-dashboards-finance-2' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -187,9 +171,9 @@ export default NavbarDashboardsDropdown
                     <div class="meta">
                       <span>Stocks</span>
                     </div>
-                  </a>
-                  <a
-                    href="/webapp-dashboards-finance-3.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-dashboards-finance-3' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -198,9 +182,9 @@ export default NavbarDashboardsDropdown
                     <div class="meta">
                       <span>Sales</span>
                     </div>
-                  </a>
-                  <a
-                    href="/webapp-dashboards-banking-1.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-dashboards-banking-1' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -209,9 +193,9 @@ export default NavbarDashboardsDropdown
                     <div class="meta">
                       <span>Banking V1</span>
                     </div>
-                  </a>
-                  <a
-                    href="/webapp-dashboards-banking-2.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-dashboards-banking-2' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -220,9 +204,9 @@ export default NavbarDashboardsDropdown
                     <div class="meta">
                       <span>Banking V2</span>
                     </div>
-                  </a>
-                  <a
-                    href="/webapp-dashboards-banking-3.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-dashboards-banking-3' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -231,9 +215,9 @@ export default NavbarDashboardsDropdown
                     <div class="meta">
                       <span>Banking V3</span>
                     </div>
-                  </a>
-                  <a
-                    href="/webapp-dashboards-business-1.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-dashboards-business-1' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -242,9 +226,9 @@ export default NavbarDashboardsDropdown
                     <div class="meta">
                       <span>Flights Booking</span>
                     </div>
-                  </a>
-                  <a
-                    href="/webapp-dashboards-business-2.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-dashboards-business-2' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -253,9 +237,9 @@ export default NavbarDashboardsDropdown
                     <div class="meta">
                       <span>Company Board</span>
                     </div>
-                  </a>
-                  <a
-                    href="/webapp-dashboards-business-3.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-dashboards-business-3' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -264,7 +248,7 @@ export default NavbarDashboardsDropdown
                     <div class="meta">
                       <span>HR Board</span>
                     </div>
-                  </a>
+                  </RouterLink>
                 </div>
               </div>
             </div>
@@ -277,8 +261,8 @@ export default NavbarDashboardsDropdown
                 </h4>
 
                 <div class="column-content" data-simplebar>
-                  <a
-                    href="/webapp-dashboards-ecommerce-1.html"
+                  <RouterLink
+                    :to="{ name: 'webapp-dashboards-ecommerce-1' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -287,9 +271,9 @@ export default NavbarDashboardsDropdown
                     <div class="meta">
                       <span>Ecommerce V1</span>
                     </div>
-                  </a>
-                  <a
-                    href="/webapp-dashboards-apps-1.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-dashboards-apps-1' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -298,9 +282,9 @@ export default NavbarDashboardsDropdown
                     <div class="meta">
                       <span>Food delivery</span>
                     </div>
-                  </a>
-                  <a
-                    href="/webapp-dashboards-apps-2.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-dashboards-apps-2' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -309,9 +293,9 @@ export default NavbarDashboardsDropdown
                     <div class="meta">
                       <span>Inbox</span>
                     </div>
-                  </a>
-                  <a
-                    href="/admin-messaging-chat.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'admin-messaging-chat' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -320,9 +304,9 @@ export default NavbarDashboardsDropdown
                     <div class="meta">
                       <span>Messaging V1</span>
                     </div>
-                  </a>
-                  <a
-                    href="/webapp-messaging-chat.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-messaging-chat' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -331,7 +315,7 @@ export default NavbarDashboardsDropdown
                     <div class="meta">
                       <span>Messaging V2</span>
                     </div>
-                  </a>
+                  </RouterLink>
                 </div>
               </div>
             </div>
@@ -350,8 +334,8 @@ export default NavbarDashboardsDropdown
                 </h4>
 
                 <div class="column-content" data-simplebar="">
-                  <a
-                    href="admin-blank-page-1.html"
+                  <RouterLink
+                    :to="{ name: 'admin-blank-page-1' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -360,9 +344,9 @@ export default NavbarDashboardsDropdown
                     <div class="meta">
                       <span>Sidebar</span>
                     </div>
-                  </a>
-                  <a
-                    href="admin-blank-page-2.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'admin-blank-page-2' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -371,9 +355,9 @@ export default NavbarDashboardsDropdown
                     <div class="meta">
                       <span>Curved Sidebar</span>
                     </div>
-                  </a>
-                  <a
-                    href="admin-blank-page-3.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'admin-blank-page-3' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -382,9 +366,9 @@ export default NavbarDashboardsDropdown
                     <div class="meta">
                       <span>Colored Sidebar</span>
                     </div>
-                  </a>
-                  <a
-                    href="admin-blank-page-4.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'admin-blank-page-4' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -393,9 +377,9 @@ export default NavbarDashboardsDropdown
                     <div class="meta">
                       <span>Curved Colored</span>
                     </div>
-                  </a>
-                  <a
-                    href="webapp-blank-page-1.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-blank-page-1' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -404,9 +388,9 @@ export default NavbarDashboardsDropdown
                     <div class="meta">
                       <span>Navbar</span>
                     </div>
-                  </a>
-                  <a
-                    href="webapp-blank-page-2.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-blank-page-2' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -415,9 +399,9 @@ export default NavbarDashboardsDropdown
                     <div class="meta">
                       <span>Navbar Colored</span>
                     </div>
-                  </a>
-                  <a
-                    href="webapp-blank-page-3.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-blank-page-3' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -426,9 +410,9 @@ export default NavbarDashboardsDropdown
                     <div class="meta">
                       <span>Navbar Drop</span>
                     </div>
-                  </a>
-                  <a
-                    href="webapp-blank-page-4.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-blank-page-4' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -437,7 +421,7 @@ export default NavbarDashboardsDropdown
                     <div class="meta">
                       <span>Colored Drop</span>
                     </div>
-                  </a>
+                  </RouterLink>
                 </div>
               </div>
             </div>
@@ -451,8 +435,8 @@ export default NavbarDashboardsDropdown
                 </h4>
 
                 <div class="column-content" data-simplebar="">
-                  <a
-                    href="/webapp-dashboards-charts-apex.html"
+                  <RouterLink
+                    :to="{ name: 'webapp-dashboards-charts-apex' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -461,9 +445,9 @@ export default NavbarDashboardsDropdown
                     <div class="meta">
                       <span>Apex Charts</span>
                     </div>
-                  </a>
-                  <a
-                    href="/webapp-dashboards-charts-billboardjs.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-dashboards-charts-billboardjs' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -472,9 +456,9 @@ export default NavbarDashboardsDropdown
                     <div class="meta">
                       <span>Billboard JS</span>
                     </div>
-                  </a>
-                  <a
-                    href="/webapp-dashboards-widgets-ui.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-dashboards-widgets-ui' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -483,9 +467,9 @@ export default NavbarDashboardsDropdown
                     <div class="meta">
                       <span>UI Widgets</span>
                     </div>
-                  </a>
-                  <a
-                    href="/webapp-dashboards-widgets-creative.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-dashboards-widgets-creative' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -494,9 +478,9 @@ export default NavbarDashboardsDropdown
                     <div class="meta">
                       <span>Fancy Widgets</span>
                     </div>
-                  </a>
-                  <a
-                    href="/webapp-dashboards-widgets-list.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-dashboards-widgets-list' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -505,9 +489,9 @@ export default NavbarDashboardsDropdown
                     <div class="meta">
                       <span>List Widgets</span>
                     </div>
-                  </a>
-                  <a
-                    href="/webapp-dashboards-widgets-stats.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-dashboards-widgets-stats' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -516,7 +500,7 @@ export default NavbarDashboardsDropdown
                     <div class="meta">
                       <span>Stat Widgets</span>
                     </div>
-                  </a>
+                  </RouterLink>
                 </div>
               </div>
             </div>
@@ -530,16 +514,19 @@ export default NavbarDashboardsDropdown
                 </h4>
 
                 <div class="column-content">
-                  <a href="/wizard-v1.html" class="dropdown-item is-media">
+                  <RouterLink
+                    :to="{ name: 'wizard-v1' }"
+                    class="dropdown-item is-media"
+                  >
                     <div class="icon">
                       <i class="lnil lnil-timer"></i>
                     </div>
                     <div class="meta">
                       <span>Wizard V1</span>
                     </div>
-                  </a>
-                  <a
-                    href="/webapp-form-layouts-1.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-form-layouts-1' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -548,9 +535,9 @@ export default NavbarDashboardsDropdown
                     <div class="meta">
                       <span>Layout V1</span>
                     </div>
-                  </a>
-                  <a
-                    href="/webapp-form-layouts-2.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-form-layouts-2' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -559,9 +546,9 @@ export default NavbarDashboardsDropdown
                     <div class="meta">
                       <span>Layout V2</span>
                     </div>
-                  </a>
-                  <a
-                    href="/webapp-form-layouts-3.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-form-layouts-3' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -570,9 +557,9 @@ export default NavbarDashboardsDropdown
                     <div class="meta">
                       <span>Layout V3</span>
                     </div>
-                  </a>
-                  <a
-                    href="/webapp-form-layouts-4.html"
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-form-layouts-4' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -581,7 +568,7 @@ export default NavbarDashboardsDropdown
                     <div class="meta">
                       <span>Layout V4</span>
                     </div>
-                  </a>
+                  </RouterLink>
                 </div>
               </div>
             </div>

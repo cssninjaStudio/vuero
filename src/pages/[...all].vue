@@ -1,19 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const NotFoundPage = defineComponent({
-  name: 'NotFoundPage',
-  components: {},
-  setup() {
-    // NotFoundPage - Composition API
-
-    return {}
-  },
-})
-
-export default NotFoundPage
-</script>
-
 <template>
   <MinimalLayout>
     <div class="error-container">

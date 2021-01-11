@@ -1,19 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const LargeModal = defineComponent({
-  name: 'LargeModal',
-  components: {},
-  setup() {
-    // LargeModal - Composition API
-
-    return {}
-  },
-})
-
-export default LargeModal
-</script>
-
 <template>
   <div id="demo-large-modal" class="modal h-modal is-large">
     <div class="modal-background h-modal-close"></div>

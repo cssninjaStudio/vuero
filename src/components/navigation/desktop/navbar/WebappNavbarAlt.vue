@@ -1,19 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const WebappNavbarAlt = defineComponent({
-  name: 'WebappNavbarAlt',
-  components: {},
-  setup() {
-    // WebappNavbarAlt - Composition API
-
-    return {}
-  },
-})
-
-export default WebappNavbarAlt
-</script>
-
 <template>
   <div class="webapp-navbar">
     <div class="webapp-navbar-inner">
@@ -49,11 +33,11 @@ export default WebappNavbarAlt
             <NavbarComponentsDropdown />
           </div>
           <div class="centered-button">
-            <a href="/webapp-messaging-chat.html" class="button">
+            <RouterLink :to="{ name: 'webapp-messaging-chat' }" class="button">
               <span class="icon is-small">
                 <Icon icon="feather:message-circle" />
               </span>
-            </a>
+            </RouterLink>
           </div>
           <div class="centered-button centered-link-search">
             <button class="button">
@@ -110,7 +94,10 @@ export default WebappNavbarAlt
                   <span>Product Manager</span>
                 </div>
               </div>
-              <a href="/admin-profile-view.html" class="dropdown-item is-media">
+              <RouterLink
+                :to="{ name: 'admin-profile-view' }"
+                class="dropdown-item is-media"
+              >
                 <div class="icon">
                   <i class="lnil lnil-user-alt"></i>
                 </div>
@@ -118,7 +105,7 @@ export default WebappNavbarAlt
                   <span>Profile</span>
                   <span>View your profile</span>
                 </div>
-              </a>
+              </RouterLink>
               <a class="dropdown-item is-media layout-switcher">
                 <div class="icon">
                   <i class="lnil lnil-layout"></i>

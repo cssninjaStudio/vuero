@@ -1,19 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const SidebarCurved = defineComponent({
-  name: 'SidebarCurved',
-  components: {},
-  setup() {
-    // SidebarCurved - Composition API
-
-    return {}
-  },
-})
-
-export default SidebarCurved
-</script>
-
 <template>
   <div class="main-sidebar is-curved">
     <div class="sidebar-brand">

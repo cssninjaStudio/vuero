@@ -1,0 +1,18 @@
+{
+  "Vue 3 w/ Setup (experimental)": {
+    "scope": "vue",
+    "prefix": ["script setup", "<script setup"],
+    "description": "Vue 3 component with experimental <script setup>",
+    "body": [
+      "<script setup lang=\"ts\">",
+      "import { ref } from 'vue'",
+      "",
+      "const hello = ref('world')",
+      "</script>",
+      "",
+      "<template>",
+      "  <div>Hello {{ hello }}!</div>",
+      "</template>",
+    ],
+  },
+}

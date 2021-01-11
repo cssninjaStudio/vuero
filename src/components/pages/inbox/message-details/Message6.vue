@@ -1,19 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const Message6 = defineComponent({
-  name: 'Message6',
-  components: {},
-  setup() {
-    // Message6 - Composition API
-
-    return {}
-  },
-})
-
-export default Message6
-</script>
-
 <template>
   <!-- Message details -->
   <div id="message-6" class="inbox-message-details is-hidden">
@@ -109,15 +93,11 @@ export default Message6
             </li>
           </ul>
           <p>
-            <a href="http://loripsum.net/" target="_blank"
-              >Duo Reges: constructio interrete.</a
-            >
+            <a href="http://loripsum.net/">Duo Reges: constructio interrete.</a>
             Satis est ad hoc responsum. Primum in nostrane potestate est, quid
             meminerimus?
-            <a href="http://loripsum.net/" target="_blank">Nihil sane.</a>
-            <a href="http://loripsum.net/" target="_blank"
-              >Sit sane ista voluptas.</a
-            >
+            <a href="http://loripsum.net/">Nihil sane.</a>
+            <a href="http://loripsum.net/">Sit sane ista voluptas.</a>
           </p>
 
           <p>Let me know when you have time to read it.</p>

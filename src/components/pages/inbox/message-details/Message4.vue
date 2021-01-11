@@ -1,19 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const Message4 = defineComponent({
-  name: 'Message4',
-  components: {},
-  setup() {
-    // Message4 - Composition API
-
-    return {}
-  },
-})
-
-export default Message4
-</script>
-
 <template>
   <!-- Message details -->
   <div id="message-4" class="inbox-message-details is-hidden">
@@ -96,9 +80,7 @@ export default Message4
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nos
             commodius agimus. Si longus, levis;
-            <a href="#" target="_blank"
-              >Summum ením bonum exposuit vacuitatem doloris;</a
-            >
+            <a href="#">Summum ením bonum exposuit vacuitatem doloris;</a>
             Eadem fortitudinis ratio reperietur. Duo Reges: constructio
             interrete. Facile est hoc cernere in primis puerorum aetatulis.
           </p>

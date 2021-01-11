@@ -1,19 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const StandardModal = defineComponent({
-  name: 'StandardModal',
-  components: {},
-  setup() {
-    // StandardModal - Composition API
-
-    return {}
-  },
-})
-
-export default StandardModal
-</script>
-
 <template>
   <div id="demo-standard-modal" class="modal h-modal">
     <div class="modal-background h-modal-close"></div>

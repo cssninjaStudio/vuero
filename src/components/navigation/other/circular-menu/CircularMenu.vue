@@ -1,23 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-import { BellIcon, GridIcon } from '@zhuowenli/vue-feather-icons'
-
-const CircularMenu = defineComponent({
-  name: 'CircularMenu',
-  components: {
-    BellIcon,
-    GridIcon,
-  },
-  setup() {
-    // CircularMenu - Composition API
-
-    return {}
-  },
-})
-
-export default CircularMenu
-</script>
-
 <template>
   <div id="circular-menu" class="circular-menu">
     <a class="floating-btn">
@@ -36,13 +16,16 @@ export default CircularMenu
         class="menu-item is-flex right-panel-trigger"
         data-panel="languages-panel"
       >
-        <img src="/img/icons/flags/united-states-of-america.svg" alt="" />
+        <img
+          src="/src/assets/images/icons/flags/united-states-of-america.svg"
+          alt=""
+        />
       </a>
       <a class="menu-item is-flex">
-        <BellIcon />
+        <Icon icon="feather:bell" />
       </a>
       <a class="menu-item is-flex">
-        <GridIcon />
+        <Icon icon="feather:grid" />
       </a>
     </div>
   </div>

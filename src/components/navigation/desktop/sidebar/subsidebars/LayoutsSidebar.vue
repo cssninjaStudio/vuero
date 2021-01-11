@@ -1,19 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const LayoutsSidebar = defineComponent({
-  name: 'LayoutsSidebar',
-  components: {},
-  setup() {
-    // LayoutsSidebar - Composition API
-
-    return {}
-  },
-})
-
-export default LayoutsSidebar
-</script>
-
 <template>
   <div id="layouts-sidebar" class="sidebar-panel is-generic">
     <div class="subpanel-header">

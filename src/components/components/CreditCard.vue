@@ -1,19 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const CreditCard = defineComponent({
-  name: 'CreditCard',
-  components: {},
-  setup() {
-    // CreditCard - Composition API
-
-    return {}
-  },
-})
-
-export default CreditCard
-</script>
-
 <template>
   <div class="card-container preload">
     <div class="creditcard">

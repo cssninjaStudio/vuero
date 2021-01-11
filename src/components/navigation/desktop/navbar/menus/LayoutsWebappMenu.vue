@@ -1,19 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const LayoutsWebappMenu = defineComponent({
-  name: 'LayoutsWebappMenu',
-  components: {},
-  setup() {
-    // LayoutsWebappMenu - Composition API
-
-    return {}
-  },
-})
-
-export default LayoutsWebappMenu
-</script>
-
 <template>
   <div
     id="layouts-webapp-menu"
@@ -39,32 +23,32 @@ export default LayoutsWebappMenu
                 <h4 class="column-heading">Lists</h4>
                 <ul>
                   <li>
-                    <a href="/webapp-list-view-1.html">
+                    <RouterLink :to="{ name: 'webapp-list-view-1' }">
                       <i class="lnil lnil-list-alt"></i>
                       <span>List View V1</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/webapp-list-view-2.html">
+                    <RouterLink :to="{ name: 'webapp-list-view-2' }">
                       <i class="lnil lnil-list-alt"></i>
                       <span>List View V2</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/webapp-list-view-3.html">
+                    <RouterLink :to="{ name: 'webapp-list-view-3' }">
                       <i class="lnil lnil-list-alt"></i>
                       <span>List View V3</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/webapp-list-view-4.html">
+                    <RouterLink :to="{ name: 'webapp-list-view-4' }">
                       <i class="lnil lnil-list-alt"></i>
                       <span>List View V4</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                 </ul>
               </div>
@@ -72,25 +56,25 @@ export default LayoutsWebappMenu
                 <h4 class="column-heading">Flex Lists</h4>
                 <ul>
                   <li>
-                    <a href="/webapp-list-flex-1.html">
+                    <RouterLink :to="{ name: 'webapp-list-flex-1' }">
                       <i class="lnil lnil-list-alt-1"></i>
                       <span>Flex List V1</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/webapp-list-flex-2.html">
+                    <RouterLink :to="{ name: 'webapp-list-flex-2' }">
                       <i class="lnil lnil-list-alt-1"></i>
                       <span>Flex List V2</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/webapp-list-flex-3.html">
+                    <RouterLink :to="{ name: 'webapp-list-flex-3' }">
                       <i class="lnil lnil-list-alt-1"></i>
                       <span>Flex List V3</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                 </ul>
               </div>
@@ -98,41 +82,37 @@ export default LayoutsWebappMenu
                 <h4 class="column-heading">Datatables</h4>
                 <ul>
                   <li>
-                    <a href="/webapp-list-datatable-1.html">
+                    <RouterLink :to="{ name: 'webapp-list-datatable-1' }">
                       <i class="lnil lnil-layout-alt"></i>
                       <span>Datatable V1</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/webapp-list-datatable-2.html">
+                    <RouterLink :to="{ name: 'webapp-list-datatable-2' }">
                       <i class="lnil lnil-layout-alt"></i>
                       <span>Datatable V2</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/webapp-list-datatable-3.html">
+                    <RouterLink :to="{ name: 'webapp-list-datatable-3' }">
                       <i class="lnil lnil-layout-alt"></i>
                       <span>Datatable V3</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/webapp-list-datatable-4.html">
+                    <RouterLink :to="{ name: 'webapp-list-datatable-4' }">
                       <i class="lnil lnil-layout-alt"></i>
                       <span>Datatable V4</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                 </ul>
               </div>
               <div class="column is-3">
-                <a
-                  href="https://cssninja.io"
-                  target="_blank"
-                  class="column-placeholder"
-                >
+                <a href="https://cssninja.io" class="column-placeholder">
                   <img
                     class="light-image"
                     src="/src/assets/images/icons/misc/buoy.svg"
@@ -147,7 +127,6 @@ export default LayoutsWebappMenu
                 </a>
                 <a
                   href="https://docs.huro.cssninja.io"
-                  target="_blank"
                   class="column-placeholder"
                 >
                   <img
@@ -176,32 +155,32 @@ export default LayoutsWebappMenu
                 <h4 class="column-heading">Cards</h4>
                 <ul>
                   <li>
-                    <a href="/webapp-grid-cards-1.html">
+                    <RouterLink :to="{ name: 'webapp-grid-cards-1' }">
                       <i class="lnil lnil-grid-alt"></i>
                       <span>Card Grid V1</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/webapp-grid-cards-2.html">
+                    <RouterLink :to="{ name: 'webapp-grid-cards-2' }">
                       <i class="lnil lnil-grid-alt"></i>
                       <span>Card Grid V2</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/webapp-grid-cards-3.html">
+                    <RouterLink :to="{ name: 'webapp-grid-cards-3' }">
                       <i class="lnil lnil-grid-alt"></i>
                       <span>Card Grid V3</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/webapp-grid-cards-4.html">
+                    <RouterLink :to="{ name: 'webapp-grid-cards-4' }">
                       <i class="lnil lnil-grid-alt"></i>
                       <span>Card Grid V4</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                 </ul>
               </div>
@@ -209,25 +188,25 @@ export default LayoutsWebappMenu
                 <h4 class="column-heading">Tiles</h4>
                 <ul>
                   <li>
-                    <a href="/webapp-grid-tiles-1.html">
+                    <RouterLink :to="{ name: 'webapp-grid-tiles-1' }">
                       <i class="lnil lnil-layout-alt-2"></i>
                       <span>Tile Grid V1</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/webapp-grid-tiles-2.html">
+                    <RouterLink :to="{ name: 'webapp-grid-tiles-2' }">
                       <i class="lnil lnil-layout-alt-2"></i>
                       <span>Tile Grid V2</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/webapp-grid-tiles-3.html">
+                    <RouterLink :to="{ name: 'webapp-grid-tiles-3' }">
                       <i class="lnil lnil-layout-alt-2"></i>
                       <span>Tile Grid V3</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                 </ul>
               </div>
@@ -235,41 +214,37 @@ export default LayoutsWebappMenu
                 <h4 class="column-heading">Users</h4>
                 <ul>
                   <li>
-                    <a href="/webapp-grid-users-1.html">
+                    <RouterLink :to="{ name: 'webapp-grid-users-1' }">
                       <i class="lnil lnil-users-alt"></i>
                       <span>User Grid V1</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/webapp-grid-users-2.html">
+                    <RouterLink :to="{ name: 'webapp-grid-users-2' }">
                       <i class="lnil lnil-users-alt"></i>
                       <span>User Grid V2</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/webapp-grid-users-3.html">
+                    <RouterLink :to="{ name: 'webapp-grid-users-3' }">
                       <i class="lnil lnil-users-alt"></i>
                       <span>User Grid V3</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/webapp-grid-users-4.html">
+                    <RouterLink :to="{ name: 'webapp-grid-users-4' }">
                       <i class="lnil lnil-users-alt"></i>
                       <span>User Grid V4</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                 </ul>
               </div>
               <div class="column is-3">
-                <a
-                  href="https://cssninja.io"
-                  target="_blank"
-                  class="column-placeholder"
-                >
+                <a href="https://cssninja.io" class="column-placeholder">
                   <img
                     class="light-image"
                     src="/src/assets/images/icons/misc/buoy.svg"
@@ -284,7 +259,6 @@ export default LayoutsWebappMenu
                 </a>
                 <a
                   href="https://docs.huro.cssninja.io"
-                  target="_blank"
                   class="column-placeholder"
                 >
                   <img
@@ -313,32 +287,32 @@ export default LayoutsWebappMenu
                 <h4 class="column-heading">Personal</h4>
                 <ul>
                   <li>
-                    <a href="/webapp-profile-view.html">
+                    <RouterLink :to="{ name: 'webapp-profile-view' }">
                       <i class="lnil lnil-user-alt"></i>
                       <span>Profile</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/webapp-profile-edit-1.html">
+                    <RouterLink :to="{ name: 'webapp-profile-edit-1' }">
                       <i class="lnil lnil-pencil"></i>
                       <span>Edit Profile</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/webapp-profile-notifications.html">
+                    <RouterLink :to="{ name: 'webapp-profile-notifications' }">
                       <i class="lnil lnil-notification"></i>
                       <span>Notifications</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/webapp-profile-settings.html">
+                    <RouterLink :to="{ name: 'webapp-profile-settings' }">
                       <i class="lnil lnil-cog"></i>
                       <span>Settings</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                 </ul>
               </div>
@@ -346,46 +320,46 @@ export default LayoutsWebappMenu
                 <h4 class="column-heading">Pages</h4>
                 <ul>
                   <li>
-                    <a href="/auth-login-1.html">
+                    <RouterLink :to="{ name: 'auth-login-1' }">
                       <i class="lnil lnil-pointer-right"></i>
                       <span>Login v1</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/auth-login-2.html">
+                    <RouterLink :to="{ name: 'auth-login-2' }">
                       <i class="lnil lnil-pointer-right"></i>
                       <span>Login v2</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/auth-login-3.html">
+                    <RouterLink :to="{ name: 'auth-login-3' }">
                       <i class="lnil lnil-pointer-right"></i>
                       <span>Login v3</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/auth-signup-2.html">
+                    <RouterLink :to="{ name: 'auth-signup-2' }">
                       <i class="lnil lnil-crown"></i>
                       <span>Signup v1</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/auth-signup-3.html">
+                    <RouterLink :to="{ name: 'auth-signup-3' }">
                       <i class="lnil lnil-crown"></i>
                       <span>Signup v2</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/auth-signup-1.html">
+                    <RouterLink :to="{ name: 'auth-signup-1' }">
                       <i class="lnil lnil-crown"></i>
                       <span>Signup Flow</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                 </ul>
               </div>
@@ -393,46 +367,46 @@ export default LayoutsWebappMenu
                 <h4 class="column-heading">Subpages</h4>
                 <ul>
                   <li>
-                    <a href="/webapp-saas-billing.html">
+                    <RouterLink :to="{ name: 'webapp-saas-billing' }">
                       <i class="lnil lnil-credit-card"></i>
                       <span>Saas Billing</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/webapp-welcome.html">
+                    <RouterLink :to="{ name: 'webapp-welcome' }">
                       <i class="lnil lnil-door-alt"></i>
                       <span>Welcome</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/webapp-action-page-1.html">
+                    <RouterLink :to="{ name: 'webapp-action-page-1' }">
                       <i class="lnil lnil-thunderbolt"></i>
                       <span>Action Page V1</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/webapp-action-page-2.html">
+                    <RouterLink :to="{ name: 'webapp-action-page-2' }">
                       <i class="lnil lnil-thunderbolt"></i>
                       <span>Action Page V2</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/webapp-search-results.html">
+                    <RouterLink :to="{ name: 'webapp-search-results' }">
                       <i class="lnil lnil-search-alt"></i>
                       <span>Search Results</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/webapp-search-empty.html">
+                    <RouterLink :to="{ name: 'webapp-search-empty' }">
                       <i class="lnil lnil-search-alt"></i>
                       <span>Empty Search</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                 </ul>
               </div>
@@ -440,39 +414,39 @@ export default LayoutsWebappMenu
                 <h4 class="column-heading">Projects</h4>
                 <ul>
                   <li>
-                    <a href="/webapp-projects-projects.html">
+                    <RouterLink :to="{ name: 'webapp-projects-projects' }">
                       <i class="lnil lnil-grid-alt"></i>
                       <span>Projects V1</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/webapp-projects-projects-2.html">
+                    <RouterLink :to="{ name: 'webapp-projects-projects-2' }">
                       <i class="lnil lnil-grid-alt"></i>
                       <span>Projects V2</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/webapp-projects-projects-3.html">
+                    <RouterLink :to="{ name: 'webapp-projects-projects-3' }">
                       <i class="lnil lnil-grid-alt"></i>
                       <span>Projects V3</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/webapp-projects-project.html">
+                    <RouterLink :to="{ name: 'webapp-projects-project' }">
                       <i class="lnil lnil-layout"></i>
                       <span>Project Details</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/webapp-kanban-board.html">
+                    <RouterLink :to="{ name: 'webapp-kanban-board' }">
                       <i class="lnil lnil-layout-alt-1"></i>
                       <span>Project Board</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                 </ul>
               </div>
@@ -489,32 +463,34 @@ export default LayoutsWebappMenu
                 <h4 class="column-heading">Utility</h4>
                 <ul>
                   <li>
-                    <a href="/webapp-utility-account-confirm.html">
+                    <RouterLink
+                      :to="{ name: 'webapp-utility-account-confirm' }"
+                    >
                       <i class="lnil lnil-thunderbolt"></i>
                       <span>Confirm Account</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/webapp-utility-promotion.html">
+                    <RouterLink :to="{ name: 'webapp-utility-promotion' }">
                       <i class="lnil lnil-magnet"></i>
                       <span>Promotion Page</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/webapp-utility-invoice.html">
+                    <RouterLink :to="{ name: 'webapp-utility-invoice' }">
                       <i class="lnil lnil-calculator-alt"></i>
                       <span>Invoice</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/admin-utility-status.html">
+                    <RouterLink :to="{ name: 'admin-utility-status' }">
                       <i class="lnil lnil-checkmark-circle"></i>
                       <span>App Status</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                 </ul>
               </div>
@@ -522,39 +498,39 @@ export default LayoutsWebappMenu
                 <h4 class="column-heading">Onboarding</h4>
                 <ul>
                   <li>
-                    <a href="/webapp-onboarding-page-1.html">
+                    <RouterLink :to="{ name: 'webapp-onboarding-page-1' }">
                       <i class="lnil lnil-train"></i>
                       <span>Onboarding V1</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/webapp-onboarding-page-2.html">
+                    <RouterLink :to="{ name: 'webapp-onboarding-page-2' }">
                       <i class="lnil lnil-train-alt"></i>
                       <span>Onboarding V2</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/webapp-onboarding-page-3.html">
+                    <RouterLink :to="{ name: 'webapp-onboarding-page-3' }">
                       <i class="lnil lnil-car"></i>
                       <span>Onboarding V3</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/webapp-onboarding-page-4.html">
+                    <RouterLink :to="{ name: 'webapp-onboarding-page-4' }">
                       <i class="lnil lnil-car-alt"></i>
                       <span>Onboarding V4</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/webapp-onboarding-page-5.html">
+                    <RouterLink :to="{ name: 'webapp-onboarding-page-5' }">
                       <i class="lnil lnil-train-alt"></i>
                       <span>Onboarding V5</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                 </ul>
               </div>
@@ -562,48 +538,44 @@ export default LayoutsWebappMenu
                 <h4 class="column-heading">Error</h4>
                 <ul>
                   <li>
-                    <a href="/error-page-1.html">
+                    <RouterLink :to="{ name: 'error-page-1' }">
                       <i class="lnil lnil-cross-circle"></i>
                       <span>Error Page V1</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/error-page-2.html">
+                    <RouterLink :to="{ name: 'error-page-2' }">
                       <i class="lnil lnil-cross-circle"></i>
                       <span>Error Page V2</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/error-page-3.html">
+                    <RouterLink :to="{ name: 'error-page-3' }">
                       <i class="lnil lnil-cross-circle"></i>
                       <span>Error Page V3</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/error-page-4.html">
+                    <RouterLink :to="{ name: 'error-page-4' }">
                       <i class="lnil lnil-cross-circle"></i>
                       <span>Error Page V4</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                   <li>
-                    <a href="/error-page-5.html">
+                    <RouterLink :to="{ name: 'error-page-5' }">
                       <i class="lnil lnil-cross-circle"></i>
                       <span>Error Page V5</span>
                       <Icon icon="feather:circle" />
-                    </a>
+                    </RouterLink>
                   </li>
                 </ul>
               </div>
               <div class="column is-3">
-                <a
-                  href="https://cssninja.io"
-                  target="_blank"
-                  class="column-placeholder"
-                >
+                <a href="https://cssninja.io" class="column-placeholder">
                   <img
                     class="light-image"
                     src="/src/assets/images/icons/misc/buoy.svg"
@@ -618,7 +590,6 @@ export default LayoutsWebappMenu
                 </a>
                 <a
                   href="https://docs.huro.cssninja.io"
-                  target="_blank"
                   class="column-placeholder"
                 >
                   <img

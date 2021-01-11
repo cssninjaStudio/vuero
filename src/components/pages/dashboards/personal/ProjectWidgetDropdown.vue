@@ -1,19 +1,3 @@
-<<script lang="ts">
-import { defineComponent } from 'vue'
-
-const ProjectWidgetDropdown = defineComponent({
-  name: 'ProjectWidgetDropdown',
-  components: {},
-  setup() {
-    // ProjectWidgetDropdown - Composition API
-
-    return {}
-  },
-})
-
-export default ProjectWidgetDropdown
-</script>
-
 <template>
   <div class="dropdown is-spaced is-dots is-right dropdown-trigger end-action">
     <div class="is-trigger" aria-haspopup="true">

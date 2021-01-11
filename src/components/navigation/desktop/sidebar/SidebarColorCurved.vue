@@ -1,19 +1,3 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const SidebarColorCurved = defineComponent({
-  name: 'SidebarColorCurved',
-  components: {},
-  setup() {
-    // SidebarColorCurved - Composition API
-
-    return {}
-  },
-})
-
-export default SidebarColorCurved
-</script>
-
 <template>
   <div class="main-sidebar is-colored is-curved">
     <div class="sidebar-brand">

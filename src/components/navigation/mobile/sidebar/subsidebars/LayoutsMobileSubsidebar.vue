@@ -1,20 +1,4 @@
-  <script lang="ts">
-import { defineComponent } from 'vue'
-
-const LayoutsMobileSubsidebar = defineComponent({
-  name: 'LayoutsMobileSubsidebar',
-  components: {},
-  setup() {
-    // LayoutsMobileSubsidebar - Composition API
-
-    return {}
-  },
-})
-
-export default LayoutsMobileSubsidebar
-</script>
-  
-  <template>
+<template>
   <div class="mobile-subsidebar">
     <div class="inner">
       <div class="sidebar-title">
@@ -344,35 +328,35 @@ export default LayoutsMobileSubsidebar
               <a class="is-submenu" href="/admin-projects-projects.html">
                 <i class="lnil lnil-grid-alt"></i>
                 <span>Projects V1</span>
-                <i class="is-auto" data-feather="map-pin"></i>
+                <Icon class="is-auto" icon="feather:map-pin" />
               </a>
             </li>
             <li>
               <a class="is-submenu" href="/admin-projects-projects-2.html">
                 <i class="lnil lnil-grid-alt"></i>
                 <span>Projects V2</span>
-                <i class="is-auto" data-feather="map-pin"></i>
+                <Icon class="is-auto" icon="feather:map-pin" />
               </a>
             </li>
             <li>
               <a class="is-submenu" href="/admin-projects-projects-3.html">
                 <i class="lnil lnil-grid-alt"></i>
                 <span>Projects V3</span>
-                <i class="is-auto" data-feather="map-pin"></i>
+                <Icon class="is-auto" icon="feather:map-pin" />
               </a>
             </li>
             <li>
               <a class="is-submenu" href="/admin-projects-project.html">
                 <i class="lnil lnil-layout"></i>
                 <span>Project Details</span>
-                <i class="is-auto" data-feather="map-pin"></i>
+                <Icon class="is-auto" icon="feather:map-pin" />
               </a>
             </li>
             <li>
               <a class="is-submenu" href="/admin-kanban-board.html">
                 <i class="lnil lnil-layout-alt-1"></i>
                 <span>Kanban Board</span>
-                <i class="is-auto" data-feather="map-pin"></i>
+                <Icon class="is-auto" icon="feather:map-pin" />
               </a>
             </li>
           </ul>
