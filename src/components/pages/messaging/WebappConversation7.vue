@@ -11,7 +11,7 @@
         <img
           class="chat-area-profile"
           src="https://via.placeholder.com/150x150"
-          data-demo-src="/src/assets/images/avatars/photos/18.jpg"
+          data-demo-src="/@images/avatars/photos/18.jpg"
           alt=""
           data-user-popover="7"
         />
@@ -22,7 +22,7 @@
         <div class="chat-msg-profile">
           <img
             class="chat-msg-img"
-            src="/src/assets/images/avatars/photos/18.jpg"
+            src="/@images/avatars/photos/18.jpg"
             alt=""
             data-user-popover="7"
           />
@@ -35,21 +35,21 @@
           <div class="chat-msg-text">
             <img
               src="https://via.placeholder.com/400x300"
-              data-demo-src="/src/assets/images/photo/demo/apps/4.png"
+              data-demo-src="/@images/photo/demo/apps/4.png"
               alt=""
             />
           </div>
           <div class="chat-msg-text">
             <img
               src="https://via.placeholder.com/400x300"
-              data-demo-src="/src/assets/images/photo/demo/apps/7.png"
+              data-demo-src="/@images/photo/demo/apps/7.png"
               alt=""
             />
           </div>
           <div class="chat-msg-text">
             <img
               src="https://via.placeholder.com/400x300"
-              data-demo-src="/src/assets/images/photo/demo/apps/6.png"
+              data-demo-src="/@images/photo/demo/apps/6.png"
               alt=""
             />
           </div>
@@ -61,7 +61,7 @@
           <img
             class="chat-msg-img"
             src="https://via.placeholder.com/150x150"
-            data-demo-src="/src/assets/images/avatars/photos/8.jpg"
+            data-demo-src="/@images/avatars/photos/8.jpg"
             alt=""
             data-user-popover="3"
           />

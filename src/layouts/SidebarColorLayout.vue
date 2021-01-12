@@ -16,8 +16,7 @@ export default SidebarColorLayout
 
 <template>
   <div class="app-overlay"></div>
-
-  <Pageloader />
+  <!-- <Pageloader /> -->
 
   <MobileNavbar />
   <MobileSidebarMain />

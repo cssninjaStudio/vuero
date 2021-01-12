@@ -10,81 +10,86 @@
 ========================================================================== */
 
 .message {
-    position: relative;
-    border: 1px solid darken($fade-grey, 3%);
-    box-shadow: $light-box-shadow;
-    padding-right: 20px;
+  position: relative;
+  border: 1px solid darken($fade-grey, 3%);
+  box-shadow: $light-box-shadow;
+  padding-right: 20px;
 
-    &.is-primary {
-        border-color: lighten($primary, 24%);
-
-        .delete {
-            &:before, &:after {
-                background-color: $primary;
-            }
-        }
-    }
-
-    &.is-info {
-        border-color: lighten($info, 24%);
-
-        .delete {
-            &:before, &:after {
-                background-color: $info;
-            }
-        }
-    }
-
-    &.is-success {
-        border-color: lighten($success, 24%);
-
-        .delete {
-            &:before, &:after {
-                background-color: $success;
-            }
-        }
-    }
-
-    &.is-warning {
-        border-color: lighten($warning, 24%);
-
-        .delete {
-            &:before, &:after {
-                background-color: $warning;
-            }
-        }
-    }
-
-    &.is-danger {
-        border-color: lighten($danger, 24%);
-
-        .delete {
-            &:before, &:after {
-                background-color: $danger;
-            }
-        }
-    }
+  &.is-primary {
+    border-color: lighten($primary, 24%);
 
     .delete {
-        position: absolute;
-        background-color: transparent;
-        top: 6px;
-        right: 6px;
+      &:before,
+      &:after {
+        background-color: $primary;
+      }
+    }
+  }
 
-        &:before {
-            height: 1px;
-            background-color: $light-text;
-        }
+  &.is-info {
+    border-color: lighten($info, 24%);
 
-        &:after {
-            width: 1px;
-            background-color: $light-text;
-        }
+    .delete {
+      &:before,
+      &:after {
+        background-color: $info;
+      }
+    }
+  }
+
+  &.is-success {
+    border-color: lighten($success, 24%);
+
+    .delete {
+      &:before,
+      &:after {
+        background-color: $success;
+      }
+    }
+  }
+
+  &.is-warning {
+    border-color: lighten($warning, 24%);
+
+    .delete {
+      &:before,
+      &:after {
+        background-color: $warning;
+      }
+    }
+  }
+
+  &.is-danger {
+    border-color: lighten($danger, 24%);
+
+    .delete {
+      &:before,
+      &:after {
+        background-color: $danger;
+      }
+    }
+  }
+
+  .delete {
+    position: absolute;
+    background-color: transparent;
+    top: 6px;
+    right: 6px;
+
+    &:before {
+      height: 1px;
+      background-color: $light-text;
     }
 
-    .message-body {
-        border: none;
+    &:after {
+      width: 1px;
+      background-color: $light-text;
     }
+  }
+
+  .message-body {
+    border: none;
+  }
 }
 
 /* ==========================================================================
@@ -92,91 +97,96 @@
 ========================================================================== */
 
 body {
-    &.is-dark {
-        .message {
-            &:not(.is-primary):not(.is-info):not(.is-success):not(.is-warning):not(.is-danger) {
-                background-color: $dark-sidebar;
-                border-color: lighten($dark-sidebar, 3%);
+  &.is-dark {
+    .message {
+      &:not(.is-primary):not(.is-info):not(.is-success):not(.is-warning):not(.is-danger) {
+        background-color: $dark-sidebar;
+        border-color: lighten($dark-sidebar, 3%);
 
-                .message-body {
-                    color: $light-text;
-                }
-            }
-
-            &.is-primary {
-                background: $accent;
-                border-color: $accent;
-
-                .message-body {
-                    color: $white;
-                }
-        
-                .delete {
-                    &:before, &:after {
-                        background-color: $white;
-                    }
-                }
-            }
-        
-            &.is-success {
-                background: $success;
-                border-color: $success;
-
-                .message-body {
-                    color: $white;
-                }
-        
-                .delete {
-                    &:before, &:after {
-                        background-color: $white;
-                    }
-                }
-            }
-
-            &.is-info {
-                background: $info;
-                border-color: $info;
-
-                .message-body {
-                    color: $white;
-                }
-        
-                .delete {
-                    &:before, &:after {
-                        background-color: $white;
-                    }
-                }
-            }
-
-            &.is-warning {
-                background: $warning;
-                border-color: $warning;
-
-                .message-body {
-                    color: $white;
-                }
-        
-                .delete {
-                    &:before, &:after {
-                        background-color: $white;
-                    }
-                }
-            }
-
-            &.is-danger {
-                background: $danger;
-                border-color: $danger;
-
-                .message-body {
-                    color: $white;
-                }
-        
-                .delete {
-                    &:before, &:after {
-                        background-color: $white;
-                    }
-                }
-            }
+        .message-body {
+          color: $light-text;
         }
+      }
+
+      &.is-primary {
+        background: $accent;
+        border-color: $accent;
+
+        .message-body {
+          color: $white;
+        }
+
+        .delete {
+          &:before,
+          &:after {
+            background-color: $white;
+          }
+        }
+      }
+
+      &.is-success {
+        background: $success;
+        border-color: $success;
+
+        .message-body {
+          color: $white;
+        }
+
+        .delete {
+          &:before,
+          &:after {
+            background-color: $white;
+          }
+        }
+      }
+
+      &.is-info {
+        background: $info;
+        border-color: $info;
+
+        .message-body {
+          color: $white;
+        }
+
+        .delete {
+          &:before,
+          &:after {
+            background-color: $white;
+          }
+        }
+      }
+
+      &.is-warning {
+        background: $warning;
+        border-color: $warning;
+
+        .message-body {
+          color: $white;
+        }
+
+        .delete {
+          &:before,
+          &:after {
+            background-color: $white;
+          }
+        }
+      }
+
+      &.is-danger {
+        background: $danger;
+        border-color: $danger;
+
+        .message-body {
+          color: $white;
+        }
+
+        .delete {
+          &:before,
+          &:after {
+            background-color: $white;
+          }
+        }
+      }
     }
+  }
 }

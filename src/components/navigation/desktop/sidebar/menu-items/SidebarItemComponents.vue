@@ -1,7 +1,7 @@
 <template>
   <li>
-    <a id="components-sidebar-menu" href="components-hub.html">
+    <RouterLink id="components-sidebar-menu" :to="{ name: 'components-hub' }">
       <Icon class="sidebar-svg" icon="feather:cpu" />
-    </a>
+    </RouterLink>
   </li>
 </template>

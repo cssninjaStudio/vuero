@@ -46,14 +46,14 @@
                       <img
                         class="avatar"
                         src="https://via.placeholder.com/150x150"
-                        data-demo-src="/src/assets/images/avatars/photos/16.jpg"
+                        data-demo-src="/@images/avatars/photos/16.jpg"
                         alt=""
                         data-user-popover="16"
                       />
                       <img
                         class="badge"
                         src="https://via.placeholder.com/150x150"
-                        data-demo-src="/src/assets/images/photo/demo/apps/9.png"
+                        data-demo-src="/@images/photo/demo/apps/9.png"
                         alt=""
                       />
                     </div>
@@ -81,7 +81,7 @@
                           <img
                             class="avatar"
                             src="https://via.placeholder.com/150x150"
-                            data-demo-src="/src/assets/images/avatars/photos/21.jpg"
+                            data-demo-src="/@images/avatars/photos/21.jpg"
                             alt=""
                             data-user-popover="19"
                           />
@@ -98,7 +98,7 @@
                           <img
                             class="avatar"
                             src="https://via.placeholder.com/150x150"
-                            data-demo-src="/src/assets/images/avatars/photos/39.jpg"
+                            data-demo-src="/@images/avatars/photos/39.jpg"
                             alt=""
                             data-user-popover="33"
                           />

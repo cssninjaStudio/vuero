@@ -3,32 +3,44 @@
     <div class="inner">
       <ul class="icon-side-menu">
         <li>
-          <a
+          <RouterLink
             id="home-sidebar-menu-mobile"
-            href="/admin-dashboards-personal-1.html"
+            :to="{ name: 'admin-dashboards-personal-1' }"
           >
             <Icon icon="feather:activity" />
-          </a>
+          </RouterLink>
         </li>
         <li>
-          <a id="layouts-sidebar-menu-mobile" href="/admin-grid-users-1.html">
+          <RouterLink
+            id="layouts-sidebar-menu-mobile"
+            :to="{ name: 'admin-grid-users-1' }"
+          >
             <Icon icon="feather:grid" />
-          </a>
+          </RouterLink>
         </li>
         <li>
-          <a id="elements-sidebar-menu-mobile" href="/elements-hub.html">
+          <RouterLink
+            id="elements-sidebar-menu-mobile"
+            :to="{ name: 'elements-hub' }"
+          >
             <Icon icon="feather:box" />
-          </a>
+          </RouterLink>
         </li>
         <li>
-          <a id="components-sidebar-menu-mobile" href="/components-hub.html">
+          <RouterLink
+            id="components-sidebar-menu-mobile"
+            :to="{ name: 'components-hub' }"
+          >
             <Icon icon="feather:cpu" />
-          </a>
+          </RouterLink>
         </li>
         <li>
-          <a id="open-messages-mobile" href="/messaging-chat.html">
+          <RouterLink
+            id="open-messages-mobile"
+            :to="{ name: 'webapp-messaging-chat' }"
+          >
             <Icon icon="feather:message-circle" />
-          </a>
+          </RouterLink>
         </li>
       </ul>
 

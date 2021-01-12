@@ -13,7 +13,7 @@
           <div class="inner-content">
             <div class="section-placeholder">
               <div class="placeholder-content">
-                <img src="/src/assets/images/placeholders/huro-1.svg" alt="" />
+                <img src="/@images/placeholders/huro-1.svg" alt="" />
                 <h3 class="dark-inverted">Go Premium</h3>
                 <p>Unlock more features and business tools by going premium</p>
               </div>

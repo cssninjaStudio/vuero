@@ -34,7 +34,7 @@
             <img
               class="is-user"
               src="https://via.placeholder.com/150x150"
-              data-demo-src="/src/assets/images/avatars/photos/10.jpg"
+              data-demo-src="/@images/avatars/photos/10.jpg"
               alt=""
             />
           </div>
@@ -49,7 +49,7 @@
             <img
               class="is-user"
               src="https://via.placeholder.com/150x150"
-              data-demo-src="/src/assets/images/avatars/photos/25.jpg"
+              data-demo-src="/@images/avatars/photos/25.jpg"
               alt=""
             />
           </div>
@@ -64,7 +64,7 @@
             <img
               class="is-user"
               src="https://via.placeholder.com/150x150"
-              data-demo-src="/src/assets/images/avatars/photos/13.jpg"
+              data-demo-src="/@images/avatars/photos/13.jpg"
               alt=""
             />
           </div>
@@ -79,7 +79,7 @@
             <img
               class="is-user"
               src="https://via.placeholder.com/150x150"
-              data-demo-src="/src/assets/images/avatars/photos/18.jpg"
+              data-demo-src="/@images/avatars/photos/18.jpg"
               alt=""
             />
           </div>
@@ -94,7 +94,7 @@
             <img
               class="is-user"
               src="https://via.placeholder.com/150x150"
-              data-demo-src="/src/assets/images/avatars/photos/7.jpg"
+              data-demo-src="/@images/avatars/photos/7.jpg"
               alt=""
             />
           </div>

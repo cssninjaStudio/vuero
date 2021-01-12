@@ -17,13 +17,13 @@
                   <img
                     class="avatar"
                     src="https://via.placeholder.com/150x150"
-                    data-demo-src="/src/assets/images/avatars/photos/22.jpg"
+                    data-demo-src="/@images/avatars/photos/22.jpg"
                     alt=""
                   />
                   <img
                     class="badge"
                     src="https://via.placeholder.com/150x150"
-                    data-demo-src="/src/assets/images/icons/flags/united-states-of-america.svg"
+                    data-demo-src="/@images/icons/flags/united-states-of-america.svg"
                     alt=""
                   />
                 </div>

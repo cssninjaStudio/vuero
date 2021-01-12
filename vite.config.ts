@@ -55,7 +55,7 @@ const config: UserConfig = {
           },
           {
             name: 'Roboto',
-            styles: 'wght@300,400,500,600,700',
+            styles: 'wght@300;400;500;600;700',
           },
         ],
       },

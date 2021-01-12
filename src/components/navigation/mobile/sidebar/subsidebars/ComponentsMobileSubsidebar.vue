@@ -22,18 +22,24 @@
           </div>
           <ul>
             <li>
-              <a class="is-submenu" href="/components-accordion-basic.html"
-                ><Icon icon="feather:circle" />Accordion</a
+              <RouterLink
+                :to="{ name: 'components-accordion-basic' }"
+                class="is-submenu"
+                ><Icon icon="feather:circle" />Accordion</RouterLink
               >
             </li>
             <li>
-              <a class="is-submenu" href="/components-accordion-collapse.html"
-                ><Icon icon="feather:circle" />Collapse</a
+              <RouterLink
+                :to="{ name: 'components-accordion-collapse' }"
+                class="is-submenu"
+                ><Icon icon="feather:circle" />Collapse</RouterLink
               >
             </li>
             <li>
-              <a class="is-submenu" href="/components-accordion-images.html"
-                ><Icon icon="feather:circle" />Image Accordion</a
+              <RouterLink
+                :to="{ name: 'components-accordion-images' }"
+                class="is-submenu"
+                ><Icon icon="feather:circle" />Image Accordion</RouterLink
               >
             </li>
           </ul>
@@ -75,13 +81,17 @@
           </div>
           <ul>
             <li>
-              <a class="is-submenu" href="/components-tabs-regular.html"
-                ><Icon icon="feather:circle" />Regular Tabs</a
+              <RouterLink
+                :to="{ name: 'components-tabs-regular' }"
+                class="is-submenu"
+                ><Icon icon="feather:circle" />Regular Tabs</RouterLink
               >
             </li>
             <li>
-              <a class="is-submenu" href="/components-tabs-slider.html"
-                ><Icon icon="feather:circle" />Slider Tabs</a
+              <RouterLink
+                :to="{ name: 'components-tabs-slider' }"
+                class="is-submenu"
+                ><Icon icon="feather:circle" />Slider Tabs</RouterLink
               >
             </li>
           </ul>
@@ -94,23 +104,31 @@
           </div>
           <ul>
             <li>
-              <a class="is-submenu" href="/components-table-flex.html"
-                ><Icon icon="feather:circle" />Base Table</a
+              <RouterLink
+                :to="{ name: 'components-table-flex' }"
+                class="is-submenu"
+                ><Icon icon="feather:circle" />Base Table</RouterLink
               >
             </li>
             <li>
-              <a class="is-submenu" href="/components-table-flex-compact.html"
-                ><Icon icon="feather:circle" />Compact Table</a
+              <RouterLink
+                :to="{ name: 'components-table-flex-compact' }"
+                class="is-submenu"
+                ><Icon icon="feather:circle" />Compact Table</RouterLink
               >
             </li>
             <li>
-              <a class="is-submenu" href="/components-table-flex-media.html"
-                ><Icon icon="feather:circle" />Media Table</a
+              <RouterLink
+                :to="{ name: 'components-table-flex-media' }"
+                class="is-submenu"
+                ><Icon icon="feather:circle" />Media Table</RouterLink
               >
             </li>
             <li>
-              <a class="is-submenu" href="/components-table-flex-advanced.html"
-                ><Icon icon="feather:circle" />Advanced Table</a
+              <RouterLink
+                :to="{ name: 'components-table-flex-advanced' }"
+                class="is-submenu"
+                ><Icon icon="feather:circle" />Advanced Table</RouterLink
               >
             </li>
           </ul>
@@ -127,58 +145,80 @@
           </div>
           <ul>
             <li>
-              <a class="is-submenu" href="/components-plugins-alertify.html"
-                ><Icon icon="feather:circle" />Alertify</a
+              <RouterLink
+                :to="{ name: 'components-plugins-alertify' }"
+                class="is-submenu"
+                ><Icon icon="feather:circle" />Alertify</RouterLink
               >
             </li>
             <li>
-              <a class="is-submenu" href="/components-plugins-autocomplete.html"
-                ><Icon icon="feather:circle" />Autocomplete</a
+              <RouterLink
+                :to="{ name: 'components-plugins-autocomplete' }"
+                class="is-submenu"
+                ><Icon icon="feather:circle" />Autocomplete</RouterLink
               >
             </li>
             <li>
-              <a class="is-submenu" href="/components-plugins-pickaday.html"
-                ><Icon icon="feather:circle" />Datepicker</a
+              <RouterLink
+                :to="{ name: 'components-plugins-pickaday' }"
+                class="is-submenu"
+                ><Icon icon="feather:circle" />Datepicker</RouterLink
               >
             </li>
             <li>
-              <a class="is-submenu" href="/components-plugins-choices.html"
-                ><Icon icon="feather:circle" />ChoicesJs</a
+              <RouterLink
+                :to="{ name: 'components-plugins-choices' }"
+                class="is-submenu"
+                ><Icon icon="feather:circle" />ChoicesJs</RouterLink
               >
             </li>
             <li>
-              <a class="is-submenu" href="/components-plugins-nouislider.html"
-                ><Icon icon="feather:circle" />NoUI Slider</a
+              <RouterLink
+                :to="{ name: 'components-plugins-nouislider' }"
+                class="is-submenu"
+                ><Icon icon="feather:circle" />NoUI Slider</RouterLink
               >
             </li>
             <li>
-              <a class="is-submenu" href="/components-plugins-filepond.html"
-                ><Icon icon="feather:circle" />Filepond</a
+              <RouterLink
+                :to="{ name: 'components-plugins-filepond' }"
+                class="is-submenu"
+                ><Icon icon="feather:circle" />Filepond</RouterLink
               >
             </li>
             <li>
-              <a class="is-submenu" href="/components-plugins-lightgallery.html"
-                ><Icon icon="feather:circle" />Light Gallery</a
+              <RouterLink
+                :to="{ name: 'components-plugins-lightgallery' }"
+                class="is-submenu"
+                ><Icon icon="feather:circle" />Light Gallery</RouterLink
               >
             </li>
             <li>
-              <a class="is-submenu" href="/components-plugins-videogallery.html"
-                ><Icon icon="feather:circle" />Video Gallery</a
+              <RouterLink
+                :to="{ name: 'components-plugins-videogallery' }"
+                class="is-submenu"
+                ><Icon icon="feather:circle" />Video Gallery</RouterLink
               >
             </li>
             <li>
-              <a class="is-submenu" href="/components-plugins-video-player.html"
-                ><Icon icon="feather:circle" />Video Player</a
+              <RouterLink
+                :to="{ name: 'components-plugins-video-player' }"
+                class="is-submenu"
+                ><Icon icon="feather:circle" />Video Player</RouterLink
               >
             </li>
             <li>
-              <a class="is-submenu" href="/components-plugins-toasts.html"
-                ><Icon icon="feather:circle" />Toasts</a
+              <RouterLink
+                :to="{ name: 'components-plugins-toasts' }"
+                class="is-submenu"
+                ><Icon icon="feather:circle" />Toasts</RouterLink
               >
             </li>
             <li>
-              <a class="is-submenu" href="/components-plugins-webuipopover.html"
-                ><Icon icon="feather:circle" />WebUI Popover</a
+              <RouterLink
+                :to="{ name: 'components-plugins-webuipopover' }"
+                class="is-submenu"
+                ><Icon icon="feather:circle" />WebUI Popover</RouterLink
               >
             </li>
           </ul>
@@ -191,15 +231,17 @@
           </div>
           <ul>
             <li>
-              <a
+              <RouterLink
                 class="is-submenu"
-                href="/components-plugins-editor-summernote.html"
-                ><Icon icon="feather:circle" />Summernote</a
+                :to="{ name: 'components-plugins-editor-summernote' }"
+                ><Icon icon="feather:circle" />Summernote</RouterLink
               >
             </li>
             <li>
-              <a class="is-submenu" href="/components-plugins-editor-sun.html"
-                ><Icon icon="feather:circle" />Sun Editor</a
+              <RouterLink
+                :to="{ name: 'components-plugins-editor-sun' }"
+                class="is-submenu"
+                ><Icon icon="feather:circle" />Sun Editor</RouterLink
               >
             </li>
           </ul>

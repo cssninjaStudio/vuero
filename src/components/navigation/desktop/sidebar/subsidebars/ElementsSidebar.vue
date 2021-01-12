@@ -38,23 +38,29 @@
           </div>
           <ul>
             <li>
-              <a class="is-submenu" href="/elements-icons-lnil.html"
-                ><Icon icon="feather:circle" />Line Icons Light</a
+              <RouterLink
+                :to="{ name: 'elements-icons-lnil' }"
+                class="is-submenu"
+                ><Icon icon="feather:circle" />Line Icons Light</RouterLink
               >
             </li>
             <li>
-              <a class="is-submenu" href="/elements-icons-lnir.html"
-                ><Icon icon="feather:circle" />Line Icons Regular</a
+              <RouterLink
+                :to="{ name: 'elements-icons-lnir' }"
+                class="is-submenu"
+                ><Icon icon="feather:circle" />Line Icons Regular</RouterLink
               >
             </li>
             <li>
-              <a class="is-submenu" href="/elements-icons-fa.html"
-                ><Icon icon="feather:circle" />Font Awesome 5</a
+              <RouterLink :to="{ name: 'elements-icons-fa' }" class="is-submenu"
+                ><Icon icon="feather:circle" />Font Awesome 5</RouterLink
               >
             </li>
             <li>
-              <a class="is-submenu" href="/elements-icons-feather.html"
-                ><Icon icon="feather:circle" />Feather Icons</a
+              <RouterLink
+                :to="{ name: 'elements-icons-feather' }"
+                class="is-submenu"
+                ><Icon icon="feather:circle" />Feather Icons</RouterLink
               >
             </li>
           </ul>
@@ -67,18 +73,24 @@
           </div>
           <ul>
             <li>
-              <a class="is-submenu" href="/elements-cards-basic.html"
-                ><Icon icon="feather:circle" />Basic Cards</a
+              <RouterLink
+                :to="{ name: 'elements-cards-basic' }"
+                class="is-submenu"
+                ><Icon icon="feather:circle" />Basic Cards</RouterLink
               >
             </li>
             <li>
-              <a class="is-submenu" href="/elements-cards-advanced.html"
-                ><Icon icon="feather:circle" />Advanced Cards</a
+              <RouterLink
+                :to="{ name: 'elements-cards-advanced' }"
+                class="is-submenu"
+                ><Icon icon="feather:circle" />Advanced Cards</RouterLink
               >
             </li>
             <li>
-              <a class="is-submenu" href="/elements-cards-bulma.html"
-                ><Icon icon="feather:circle" />Bulma Cards</a
+              <RouterLink
+                :to="{ name: 'elements-cards-bulma' }"
+                class="is-submenu"
+                ><Icon icon="feather:circle" />Bulma Cards</RouterLink
               >
             </li>
           </ul>
@@ -98,33 +110,45 @@
           </div>
           <ul>
             <li>
-              <a class="is-submenu" href="/elements-forms-inputs.html"
-                ><Icon icon="feather:circle" />Inputs</a
+              <RouterLink
+                :to="{ name: 'elements-forms-inputs' }"
+                class="is-submenu"
+                ><Icon icon="feather:circle" />Inputs</RouterLink
               >
             </li>
             <li>
-              <a class="is-submenu" href="/elements-forms-addons.html"
-                ><Icon icon="feather:circle" />Input Addons</a
+              <RouterLink
+                :to="{ name: 'elements-forms-addons' }"
+                class="is-submenu"
+                ><Icon icon="feather:circle" />Input Addons</RouterLink
               >
             </li>
             <li>
-              <a class="is-submenu" href="/elements-forms-textarea.html"
-                ><Icon icon="feather:circle" />Textarea</a
+              <RouterLink
+                :to="{ name: 'elements-forms-textarea' }"
+                class="is-submenu"
+                ><Icon icon="feather:circle" />Textarea</RouterLink
               >
             </li>
             <li>
-              <a class="is-submenu" href="/elements-forms-selects.html"
-                ><Icon icon="feather:circle" />Selects</a
+              <RouterLink
+                :to="{ name: 'elements-forms-selects' }"
+                class="is-submenu"
+                ><Icon icon="feather:circle" />Selects</RouterLink
               >
             </li>
             <li>
-              <a class="is-submenu" href="/elements-forms-custom.html"
-                ><Icon icon="feather:circle" />Custom</a
+              <RouterLink
+                :to="{ name: 'elements-forms-custom' }"
+                class="is-submenu"
+                ><Icon icon="feather:circle" />Custom</RouterLink
               >
             </li>
             <li>
-              <a class="is-submenu" href="/elements-forms-file.html"
-                ><Icon icon="feather:circle" />File Input</a
+              <RouterLink
+                :to="{ name: 'elements-forms-file' }"
+                class="is-submenu"
+                ><Icon icon="feather:circle" />File Input</RouterLink
               >
             </li>
           </ul>
@@ -137,18 +161,24 @@
           </div>
           <ul>
             <li>
-              <a class="is-submenu" href="/elements-forms-checkboxes.html"
-                ><Icon icon="feather:circle" />Checkboxes</a
+              <RouterLink
+                :to="{ name: 'elements-forms-checkboxes' }"
+                class="is-submenu"
+                ><Icon icon="feather:circle" />Checkboxes</RouterLink
               >
             </li>
             <li>
-              <a class="is-submenu" href="/elements-forms-radios.html"
-                ><Icon icon="feather:circle" />Radios</a
+              <RouterLink
+                :to="{ name: 'elements-forms-radios' }"
+                class="is-submenu"
+                ><Icon icon="feather:circle" />Radios</RouterLink
               >
             </li>
             <li>
-              <a class="is-submenu" href="/elements-forms-switch.html"
-                ><Icon icon="feather:circle" />Switches</a
+              <RouterLink
+                :to="{ name: 'elements-forms-switch' }"
+                class="is-submenu"
+                ><Icon icon="feather:circle" />Switches</RouterLink
               >
             </li>
           </ul>

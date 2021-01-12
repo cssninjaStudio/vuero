@@ -3,21 +3,17 @@
   <div id="demo-elements" class="tab-content has-text-left is-active">
     <div class="columns is-multiline">
       <div class="column is-3">
-        <RouterLink
-          :to="{ name: 'elements-colors' }"
-          target="_blank"
-          class="component-box"
-        >
+        <RouterLink :to="{ name: 'elements-colors' }" class="component-box">
           <div class="component">
             <img
               class="light-image-l"
-              src="/src/assets/images/icons/components/colors.svg"
+              src="/@images/icons/components/colors.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/src/assets/images/icons/components/colors-dark.svg"
+              src="/@images/icons/components/colors-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -27,21 +23,17 @@
       </div>
 
       <div class="column is-3">
-        <RouterLink
-          :to="{ name: 'elements-tags' }"
-          target="_blank"
-          class="component-box"
-        >
+        <RouterLink :to="{ name: 'elements-tags' }" class="component-box">
           <div class="component">
             <img
               class="light-image-l"
-              src="/src/assets/images/icons/components/badges.svg"
+              src="/@images/icons/components/badges.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/src/assets/images/icons/components/badges-dark.svg"
+              src="/@images/icons/components/badges-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -51,21 +43,17 @@
       </div>
 
       <div class="column is-3">
-        <RouterLink
-          :to="{ name: 'elements-buttons' }"
-          target="_blank"
-          class="component-box"
-        >
+        <RouterLink :to="{ name: 'elements-buttons' }" class="component-box">
           <div class="component">
             <img
               class="light-image-l"
-              src="/src/assets/images/icons/components/buttons.svg"
+              src="/@images/icons/components/buttons.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/src/assets/images/icons/components/buttons-dark.svg"
+              src="/@images/icons/components/buttons-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -75,21 +63,17 @@
       </div>
 
       <div class="column is-3">
-        <RouterLink
-          :to="{ name: 'elements-blocks' }"
-          target="_blank"
-          class="component-box"
-        >
+        <RouterLink :to="{ name: 'elements-blocks' }" class="component-box">
           <div class="component">
             <img
               class="light-image-l"
-              src="/src/assets/images/icons/components/blocks.svg"
+              src="/@images/icons/components/blocks.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/src/assets/images/icons/components/blocks-dark.svg"
+              src="/@images/icons/components/blocks-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -99,21 +83,17 @@
       </div>
 
       <div class="column is-3">
-        <RouterLink
-          :to="{ name: 'elements-content' }"
-          target="_blank"
-          class="component-box"
-        >
+        <RouterLink :to="{ name: 'elements-content' }" class="component-box">
           <div class="component">
             <img
               class="light-image-l"
-              src="/src/assets/images/icons/components/content.svg"
+              src="/@images/icons/components/content.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/src/assets/images/icons/components/content-dark.svg"
+              src="/@images/icons/components/content-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -122,21 +102,17 @@
         </RouterLink>
       </div>
       <div class="column is-3">
-        <RouterLink
-          :to="{ name: 'elements-icons-fa' }"
-          target="_blank"
-          class="component-box"
-        >
+        <RouterLink :to="{ name: 'elements-icons-fa' }" class="component-box">
           <div class="component">
             <img
               class="light-image-l"
-              src="/src/assets/images/icons/components/font-awesome.svg"
+              src="/@images/icons/components/font-awesome.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/src/assets/images/icons/components/font-awesome-dark.svg"
+              src="/@images/icons/components/font-awesome-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -148,19 +124,18 @@
       <div class="column is-3">
         <RouterLink
           :to="{ name: 'elements-icons-feather' }"
-          target="_blank"
           class="component-box"
         >
           <div class="component">
             <img
               class="light-image-l"
-              src="/src/assets/images/icons/components/feather-icons.svg"
+              src="/@images/icons/components/feather-icons.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/src/assets/images/icons/components/feather-icons-dark.svg"
+              src="/@images/icons/components/feather-icons-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -170,21 +145,17 @@
       </div>
 
       <div class="column is-3">
-        <RouterLink
-          :to="{ name: 'elements-icons-lnir' }"
-          target="_blank"
-          class="component-box"
-        >
+        <RouterLink :to="{ name: 'elements-icons-lnir' }" class="component-box">
           <div class="component">
             <img
               class="light-image-l"
-              src="/src/assets/images/icons/components/line-icons2.svg"
+              src="/@images/icons/components/line-icons2.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/src/assets/images/icons/components/line-icons2-dark.svg"
+              src="/@images/icons/components/line-icons2-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -194,21 +165,17 @@
       </div>
 
       <div class="column is-3">
-        <RouterLink
-          :to="{ name: 'elements-icons-lnil' }"
-          target="_blank"
-          class="component-box"
-        >
+        <RouterLink :to="{ name: 'elements-icons-lnil' }" class="component-box">
           <div class="component">
             <img
               class="light-image-l"
-              src="/src/assets/images/icons/components/line-icons.svg"
+              src="/@images/icons/components/line-icons.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/src/assets/images/icons/components/line-icons-dark.svg"
+              src="/@images/icons/components/line-icons-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -220,19 +187,18 @@
       <div class="column is-3">
         <RouterLink
           :to="{ name: 'elements-cards-basic' }"
-          target="_blank"
           class="component-box"
         >
           <div class="component">
             <img
               class="light-image-l"
-              src="/src/assets/images/icons/components/cards.svg"
+              src="/@images/icons/components/cards.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/src/assets/images/icons/components/cards-dark.svg"
+              src="/@images/icons/components/cards-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -244,19 +210,18 @@
       <div class="column is-3">
         <RouterLink
           :to="{ name: 'elements-cards-advanced' }"
-          target="_blank"
           class="component-box"
         >
           <div class="component">
             <img
               class="light-image-l"
-              src="/src/assets/images/icons/components/cards.svg"
+              src="/@images/icons/components/cards.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/src/assets/images/icons/components/cards-dark.svg"
+              src="/@images/icons/components/cards-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -268,19 +233,18 @@
       <div class="column is-3">
         <RouterLink
           :to="{ name: 'elements-cards-bulma' }"
-          target="_blank"
           class="component-box"
         >
           <div class="component">
             <img
               class="light-image-l"
-              src="/src/assets/images/icons/components/cards.svg"
+              src="/@images/icons/components/cards.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/src/assets/images/icons/components/cards-dark.svg"
+              src="/@images/icons/components/cards-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -290,21 +254,17 @@
       </div>
 
       <div class="column is-3">
-        <RouterLink
-          :to="{ name: 'elements-table' }"
-          target="_blank"
-          class="component-box"
-        >
+        <RouterLink :to="{ name: 'elements-table' }" class="component-box">
           <div class="component">
             <img
               class="light-image-l"
-              src="/src/assets/images/icons/components/tables.svg"
+              src="/@images/icons/components/tables.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/src/assets/images/icons/components/tables-dark.svg"
+              src="/@images/icons/components/tables-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -314,21 +274,17 @@
       </div>
 
       <div class="column is-3">
-        <RouterLink
-          :to="{ name: 'elements-tooltips' }"
-          target="_blank"
-          class="component-box"
-        >
+        <RouterLink :to="{ name: 'elements-tooltips' }" class="component-box">
           <div class="component">
             <img
               class="light-image-l"
-              src="/src/assets/images/icons/components/tooltip.svg"
+              src="/@images/icons/components/tooltip.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/src/assets/images/icons/components/tooltip-dark.svg"
+              src="/@images/icons/components/tooltip-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -344,21 +300,17 @@
     <div class="columns is-multiline">
       <!--Item-->
       <div class="column is-3">
-        <RouterLink
-          :to="{ name: 'components-avatars' }"
-          target="_blank"
-          class="component-box"
-        >
+        <RouterLink :to="{ name: 'components-avatars' }" class="component-box">
           <div class="component">
             <img
               class="light-image-l"
-              src="/src/assets/images/icons/components/avatar.svg"
+              src="/@images/icons/components/avatar.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/src/assets/images/icons/components/avatar-dark.svg"
+              src="/@images/icons/components/avatar-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -370,19 +322,18 @@
       <div class="column is-3">
         <RouterLink
           :to="{ name: 'components-accordion-basic' }"
-          target="_blank"
           class="component-box"
         >
           <div class="component">
             <img
               class="light-image-l"
-              src="/src/assets/images/icons/components/accordion.svg"
+              src="/@images/icons/components/accordion.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/src/assets/images/icons/components/accordion-dark.svg"
+              src="/@images/icons/components/accordion-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -394,19 +345,18 @@
       <div class="column is-3">
         <RouterLink
           :to="{ name: 'components-breadcrumb' }"
-          target="_blank"
           class="component-box"
         >
           <div class="component">
             <img
               class="light-image-l"
-              src="/src/assets/images/icons/components/breadcrumb.svg"
+              src="/@images/icons/components/breadcrumb.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/src/assets/images/icons/components/breadcrumb-dark.svg"
+              src="/@images/icons/components/breadcrumb-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -416,21 +366,17 @@
       </div>
 
       <div class="column is-3">
-        <RouterLink
-          :to="{ name: 'components-dropdown' }"
-          target="_blank"
-          class="component-box"
-        >
+        <RouterLink :to="{ name: 'components-dropdown' }" class="component-box">
           <div class="component">
             <img
               class="light-image-l"
-              src="/src/assets/images/icons/components/dropdowns.svg"
+              src="/@images/icons/components/dropdowns.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/src/assets/images/icons/components/dropdowns-dark.svg"
+              src="/@images/icons/components/dropdowns-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -440,21 +386,17 @@
       </div>
 
       <div class="column is-3">
-        <RouterLink
-          :to="{ name: 'components-icon-box' }"
-          target="_blank"
-          class="component-box"
-        >
+        <RouterLink :to="{ name: 'components-icon-box' }" class="component-box">
           <div class="component">
             <img
               class="light-image-l"
-              src="/src/assets/images/icons/components/icon-box.svg"
+              src="/@images/icons/components/icon-box.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/src/assets/images/icons/components/icon-box-dark.svg"
+              src="/@images/icons/components/icon-box-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -464,21 +406,17 @@
       </div>
 
       <div class="column is-3">
-        <RouterLink
-          :to="{ name: 'components-messages' }"
-          target="_blank"
-          class="component-box"
-        >
+        <RouterLink :to="{ name: 'components-messages' }" class="component-box">
           <div class="component">
             <img
               class="light-image-l"
-              src="/src/assets/images/icons/components/messages.svg"
+              src="/@images/icons/components/messages.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/src/assets/images/icons/components/messages-dark.svg"
+              src="/@images/icons/components/messages-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -488,21 +426,17 @@
       </div>
 
       <div class="column is-3">
-        <RouterLink
-          :to="{ name: 'components-modal' }"
-          target="_blank"
-          class="component-box"
-        >
+        <RouterLink :to="{ name: 'components-modal' }" class="component-box">
           <div class="component">
             <img
               class="light-image-l"
-              src="/src/assets/images/icons/components/modals.svg"
+              src="/@images/icons/components/modals.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/src/assets/images/icons/components/modals-dark.svg"
+              src="/@images/icons/components/modals-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -512,21 +446,17 @@
       </div>
 
       <div class="column is-3">
-        <RouterLink
-          :to="{ name: 'components-progress' }"
-          target="_blank"
-          class="component-box"
-        >
+        <RouterLink :to="{ name: 'components-progress' }" class="component-box">
           <div class="component">
             <img
               class="light-image-l"
-              src="/src/assets/images/icons/components/progress.svg"
+              src="/@images/icons/components/progress.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/src/assets/images/icons/components/progress-dark.svg"
+              src="/@images/icons/components/progress-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -538,19 +468,18 @@
       <div class="column is-3">
         <RouterLink
           :to="{ name: 'components-tabs-regular' }"
-          target="_blank"
           class="component-box"
         >
           <div class="component">
             <img
               class="light-image-l"
-              src="/src/assets/images/icons/components/tabs.svg"
+              src="/@images/icons/components/tabs.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/src/assets/images/icons/components/tabs-dark.svg"
+              src="/@images/icons/components/tabs-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -562,19 +491,18 @@
       <div class="column is-3">
         <RouterLink
           :to="{ name: 'components-tabs-slider' }"
-          target="_blank"
           class="component-box"
         >
           <div class="component">
             <img
               class="light-image-l"
-              src="/src/assets/images/icons/components/slider-tabs.svg"
+              src="/@images/icons/components/slider-tabs.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/src/assets/images/icons/components/slider-tabs-dark.svg"
+              src="/@images/icons/components/slider-tabs-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -586,19 +514,18 @@
       <div class="column is-3">
         <RouterLink
           :to="{ name: 'components-table-flex' }"
-          target="_blank"
           class="component-box"
         >
           <div class="component">
             <img
               class="light-image-l"
-              src="/src/assets/images/icons/components/flex-tables.svg"
+              src="/@images/icons/components/flex-tables.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/src/assets/images/icons/components/flex-tables-dark.svg"
+              src="/@images/icons/components/flex-tables-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -608,21 +535,17 @@
       </div>
 
       <div class="column is-3">
-        <RouterLink
-          :to="{ name: 'components-snacks' }"
-          target="_blank"
-          class="component-box"
-        >
+        <RouterLink :to="{ name: 'components-snacks' }" class="component-box">
           <div class="component">
             <img
               class="light-image-l"
-              src="/src/assets/images/icons/components/snacks.svg"
+              src="/@images/icons/components/snacks.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/src/assets/images/icons/components/snacks-dark.svg"
+              src="/@images/icons/components/snacks-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -639,19 +562,18 @@
       <div class="column is-3">
         <RouterLink
           :to="{ name: 'elements-forms-inputs' }"
-          target="_blank"
           class="component-box"
         >
           <div class="component">
             <img
               class="light-image-l"
-              src="/src/assets/images/icons/components/inputs.svg"
+              src="/@images/icons/components/inputs.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/src/assets/images/icons/components/inputs-dark.svg"
+              src="/@images/icons/components/inputs-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -663,19 +585,18 @@
       <div class="column is-3">
         <RouterLink
           :to="{ name: 'elements-forms-addons' }"
-          target="_blank"
           class="component-box"
         >
           <div class="component">
             <img
               class="light-image-l"
-              src="/src/assets/images/icons/components/inputs-addons.svg"
+              src="/@images/icons/components/inputs-addons.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/src/assets/images/icons/components/inputs-addons-dark.svg"
+              src="/@images/icons/components/inputs-addons-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -687,19 +608,18 @@
       <div class="column is-3">
         <RouterLink
           :to="{ name: 'elements-forms-textarea' }"
-          target="_blank"
           class="component-box"
         >
           <div class="component">
             <img
               class="light-image-l"
-              src="/src/assets/images/icons/components/textarea.svg"
+              src="/@images/icons/components/textarea.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/src/assets/images/icons/components/textarea-dark.svg"
+              src="/@images/icons/components/textarea-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -711,19 +631,18 @@
       <div class="column is-3">
         <RouterLink
           :to="{ name: 'elements-forms-custom' }"
-          target="_blank"
           class="component-box"
         >
           <div class="component">
             <img
               class="light-image-l"
-              src="/src/assets/images/icons/components/selects.svg"
+              src="/@images/icons/components/selects.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/src/assets/images/icons/components/selects-dark.svg"
+              src="/@images/icons/components/selects-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -735,19 +654,18 @@
       <div class="column is-3">
         <RouterLink
           :to="{ name: 'elements-forms-selects' }"
-          target="_blank"
           class="component-box"
         >
           <div class="component">
             <img
               class="light-image-l"
-              src="/src/assets/images/icons/components/selects.svg"
+              src="/@images/icons/components/selects.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/src/assets/images/icons/components/selects-dark.svg"
+              src="/@images/icons/components/selects-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -757,21 +675,17 @@
       </div>
 
       <div class="column is-3">
-        <RouterLink
-          :to="{ name: 'elements-forms-file' }"
-          target="_blank"
-          class="component-box"
-        >
+        <RouterLink :to="{ name: 'elements-forms-file' }" class="component-box">
           <div class="component">
             <img
               class="light-image-l"
-              src="/src/assets/images/icons/components/file-input.svg"
+              src="/@images/icons/components/file-input.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/src/assets/images/icons/components/file-input-dark.svg"
+              src="/@images/icons/components/file-input-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -783,19 +697,18 @@
       <div class="column is-3">
         <RouterLink
           :to="{ name: 'elements-forms-checkboxes' }"
-          target="_blank"
           class="component-box"
         >
           <div class="component">
             <img
               class="light-image-l"
-              src="/src/assets/images/icons/components/toggles.svg"
+              src="/@images/icons/components/toggles.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/src/assets/images/icons/components/toggles-dark.svg"
+              src="/@images/icons/components/toggles-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -807,19 +720,18 @@
       <div class="column is-3">
         <RouterLink
           :to="{ name: 'elements-forms-radios' }"
-          target="_blank"
           class="component-box"
         >
           <div class="component">
             <img
               class="light-image-l"
-              src="/src/assets/images/icons/components/toggles.svg"
+              src="/@images/icons/components/toggles.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/src/assets/images/icons/components/toggles-dark.svg"
+              src="/@images/icons/components/toggles-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -831,19 +743,18 @@
       <div class="column is-3">
         <RouterLink
           :to="{ name: 'elements-forms-switch' }"
-          target="_blank"
           class="component-box"
         >
           <div class="component">
             <img
               class="light-image-l"
-              src="/src/assets/images/icons/components/switch.svg"
+              src="/@images/icons/components/switch.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/src/assets/images/icons/components/switch-dark.svg"
+              src="/@images/icons/components/switch-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -855,19 +766,18 @@
       <div class="column is-3">
         <RouterLink
           :to="{ name: 'admin-form-layouts-1' }"
-          target="_blank"
           class="component-box"
         >
           <div class="component">
             <img
               class="light-image-l"
-              src="/src/assets/images/icons/components/forms.svg"
+              src="/@images/icons/components/forms.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/src/assets/images/icons/components/forms-dark.svg"
+              src="/@images/icons/components/forms-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -879,19 +789,18 @@
       <div class="column is-3">
         <RouterLink
           :to="{ name: 'admin-form-layouts-2' }"
-          target="_blank"
           class="component-box"
         >
           <div class="component">
             <img
               class="light-image-l"
-              src="/src/assets/images/icons/components/forms.svg"
+              src="/@images/icons/components/forms.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/src/assets/images/icons/components/forms-dark.svg"
+              src="/@images/icons/components/forms-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -903,19 +812,18 @@
       <div class="column is-3">
         <RouterLink
           :to="{ name: 'admin-form-layouts-3' }"
-          target="_blank"
           class="component-box"
         >
           <div class="component">
             <img
               class="light-image-l"
-              src="/src/assets/images/icons/components/forms.svg"
+              src="/@images/icons/components/forms.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/src/assets/images/icons/components/forms-dark.svg"
+              src="/@images/icons/components/forms-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -927,19 +835,18 @@
       <div class="column is-3">
         <RouterLink
           :to="{ name: 'admin-form-layouts-4' }"
-          target="_blank"
           class="component-box"
         >
           <div class="component">
             <img
               class="light-image-l"
-              src="/src/assets/images/icons/components/forms.svg"
+              src="/@images/icons/components/forms.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/src/assets/images/icons/components/forms-dark.svg"
+              src="/@images/icons/components/forms-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -956,19 +863,18 @@
       <div class="column is-3">
         <RouterLink
           :to="{ name: 'components-plugins-alertify' }"
-          target="_blank"
           class="component-box"
         >
           <div class="component">
             <img
               class="light-image-l"
-              src="/src/assets/images/icons/components/alert.svg"
+              src="/@images/icons/components/alert.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/src/assets/images/icons/components/alert-dark.svg"
+              src="/@images/icons/components/alert-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -980,19 +886,18 @@
       <div class="column is-3">
         <RouterLink
           :to="{ name: 'components-plugins-autocomplete' }"
-          target="_blank"
           class="component-box"
         >
           <div class="component">
             <img
               class="light-image-l"
-              src="/src/assets/images/icons/components/autocomplete.svg"
+              src="/@images/icons/components/autocomplete.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/src/assets/images/icons/components/autocomplete-dark.svg"
+              src="/@images/icons/components/autocomplete-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -1004,19 +909,18 @@
       <div class="column is-3">
         <RouterLink
           :to="{ name: 'components-plugins-datepicker' }"
-          target="_blank"
           class="component-box"
         >
           <div class="component">
             <img
               class="light-image-l"
-              src="/src/assets/images/icons/components/datepicker.svg"
+              src="/@images/icons/components/datepicker.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/src/assets/images/icons/components/datepicker-dark.svg"
+              src="/@images/icons/components/datepicker-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -1028,19 +932,18 @@
       <div class="column is-3">
         <RouterLink
           :to="{ name: 'components-plugins-choices' }"
-          target="_blank"
           class="component-box"
         >
           <div class="component">
             <img
               class="light-image-l"
-              src="/src/assets/images/icons/components/tags-inputs.svg"
+              src="/@images/icons/components/tags-inputs.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/src/assets/images/icons/components/tags-inputs-dark.svg"
+              src="/@images/icons/components/tags-inputs-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -1052,19 +955,18 @@
       <div class="column is-3">
         <RouterLink
           :to="{ name: 'components-plugins-nouislider' }"
-          target="_blank"
           class="component-box"
         >
           <div class="component">
             <img
               class="light-image-l"
-              src="/src/assets/images/icons/components/slider.svg"
+              src="/@images/icons/components/slider.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/src/assets/images/icons/components/slider-dark.svg"
+              src="/@images/icons/components/slider-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -1076,19 +978,18 @@
       <div class="column is-3">
         <RouterLink
           :to="{ name: 'components-plugins-filepond' }"
-          target="_blank"
           class="component-box"
         >
           <div class="component">
             <img
               class="light-image-l"
-              src="/src/assets/images/icons/components/file-input.svg"
+              src="/@images/icons/components/file-input.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/src/assets/images/icons/components/file-input-dark.svg"
+              src="/@images/icons/components/file-input-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -1100,19 +1001,18 @@
       <div class="column is-3">
         <RouterLink
           :to="{ name: 'components-plugins-lightgallery' }"
-          target="_blank"
           class="component-box"
         >
           <div class="component">
             <img
               class="light-image-l"
-              src="/src/assets/images/icons/components/lightbox.svg"
+              src="/@images/icons/components/lightbox.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/src/assets/images/icons/components/lightbox-dark.svg"
+              src="/@images/icons/components/lightbox-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -1124,19 +1024,18 @@
       <div class="column is-3">
         <RouterLink
           :to="{ name: 'components-plugins-videogallery' }"
-          target="_blank"
           class="component-box"
         >
           <div class="component">
             <img
               class="light-image-l"
-              src="/src/assets/images/icons/components/video-gallery.svg"
+              src="/@images/icons/components/video-gallery.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/src/assets/images/icons/components/video-gallery-dark.svg"
+              src="/@images/icons/components/video-gallery-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -1148,19 +1047,18 @@
       <div class="column is-3">
         <RouterLink
           :to="{ name: 'components-plugins-video-player' }"
-          target="_blank"
           class="component-box"
         >
           <div class="component">
             <img
               class="light-image-l"
-              src="/src/assets/images/icons/components/video.svg"
+              src="/@images/icons/components/video.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/src/assets/images/icons/components/video-dark.svg"
+              src="/@images/icons/components/video-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -1172,19 +1070,18 @@
       <div class="column is-3">
         <RouterLink
           :to="{ name: 'components-plugins-toasts' }"
-          target="_blank"
           class="component-box"
         >
           <div class="component">
             <img
               class="light-image-l"
-              src="/src/assets/images/icons/components/toasts.svg"
+              src="/@images/icons/components/toasts.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/src/assets/images/icons/components/toasts-dark.svg"
+              src="/@images/icons/components/toasts-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -1196,19 +1093,18 @@
       <div class="column is-3">
         <RouterLink
           :to="{ name: 'components-plugins-webuipopover' }"
-          target="_blank"
           class="component-box"
         >
           <div class="component">
             <img
               class="light-image-l"
-              src="/src/assets/images/icons/components/popover.svg"
+              src="/@images/icons/components/popover.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/src/assets/images/icons/components/popover-dark.svg"
+              src="/@images/icons/components/popover-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -1220,19 +1116,18 @@
       <div class="column is-3">
         <RouterLink
           :to="{ name: 'components-plugins-editor-summernote' }"
-          target="_blank"
           class="component-box"
         >
           <div class="component">
             <img
               class="light-image-l"
-              src="/src/assets/images/icons/components/summernote.svg"
+              src="/@images/icons/components/summernote.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/src/assets/images/icons/components/summernote-dark.svg"
+              src="/@images/icons/components/summernote-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -1244,19 +1139,18 @@
       <div class="column is-3">
         <RouterLink
           :to="{ name: 'components-plugins-editor-sun' }"
-          target="_blank"
           class="component-box"
         >
           <div class="component">
             <img
               class="light-image-l"
-              src="/src/assets/images/icons/components/summernote.svg"
+              src="/@images/icons/components/summernote.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/src/assets/images/icons/components/summernote-dark.svg"
+              src="/@images/icons/components/summernote-dark.svg"
               alt=""
               loading="lazy"
             />

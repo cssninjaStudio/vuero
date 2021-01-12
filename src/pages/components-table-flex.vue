@@ -1,0 +1,332 @@
+<template>
+  <DefaultLayout>
+    <ComponentsSidebar />
+    <ComponentsMobileSubsidebar />
+
+    <!-- Content Wrapper -->
+    <div
+      id="huro-demo"
+      class="view-wrapper"
+      data-sidebar-open
+      data-naver-offset="342"
+      data-menu-item="#components-sidebar-menu"
+      data-mobile-item="#components-sidebar-menu-mobile"
+    >
+      <div class="page-content-wrapper">
+        <div class="page-content is-relative">
+          <div class="page-title has-text-centered">
+            <!-- Sidebar Trigger -->
+            <div
+              class="huro-hamburger nav-trigger push-resize"
+              data-sidebar="components-sidebar"
+            >
+              <span class="menu-toggle has-chevron">
+                <span class="icon-box-toggle">
+                  <span class="rotate">
+                    <i class="icon-line-top"></i>
+                    <i class="icon-line-center"></i>
+                    <i class="icon-line-bottom"></i>
+                  </span>
+                </span>
+              </span>
+            </div>
+
+            <div class="title-wrap">
+              <h1 class="title is-4">Flex Table</h1>
+            </div>
+
+            <Toolbar />
+          </div>
+
+          <div class="page-content-inner">
+            <nav
+              class="breadcrumb has-bullet-separator"
+              aria-label="breadcrumbs"
+            >
+              <ul>
+                <li>
+                  <RouterLink :to="{ name: 'index' }">
+                    <span class="icon is-small is-solo">
+                      <Icon icon="feather:home" />
+                    </span>
+                  </RouterLink>
+                </li>
+                <li>
+                  <RouterLink :to="{ name: 'components-hub' }">
+                    <span>Components</span>
+                  </RouterLink>
+                </li>
+                <li>
+                  <a>
+                    <span>Flex Table</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="columns">
+              <div class="column is-12">
+                <!--Flex Table-->
+                <div class="demo-card has-more-margin">
+                  <div class="demo-title">
+                    <h3 class="title is-thin is-5">Flex Table</h3>
+                    <p>
+                      Huro provides a custom table component called flex table.
+                      It looks like a table but is not a Html5 table. Instead,
+                      it uses the flexbox technology and is fully responsive.
+                      Check the markup for more details.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex-table">
+                  <!--Table header-->
+                  <div class="flex-table-header">
+                    <span>Company</span>
+                    <span>Type</span>
+                    <span>Industry</span>
+                    <span>Status</span>
+                    <span>Contacts</span>
+                    <span class="cell-end">Actions</span>
+                  </div>
+
+                  <!--Table item-->
+                  <div class="flex-table-item">
+                    <div class="flex-table-cell is-bold" data-th="Company">
+                      <span class="dark-text">Grubspot</span>
+                    </div>
+                    <div class="flex-table-cell" data-th="Type">
+                      <span class="light-text">New lead</span>
+                    </div>
+                    <div class="flex-table-cell" data-th="Industry">
+                      <span class="light-text">Software</span>
+                    </div>
+                    <div class="flex-table-cell" data-th="Status">
+                      <span class="tag is-success is-rounded">Active</span>
+                    </div>
+                    <div class="flex-table-cell" data-th="Contacts">
+                      <div class="avatar-stack is-pushed-mobile">
+                        <div class="h-avatar is-small">
+                          <img
+                            class="avatar"
+                            src="https://via.placeholder.com/150x150"
+                            data-demo-src="/@images/avatars/photos/25.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="h-avatar is-small">
+                          <span class="avatar is-fake is-info">
+                            <span>JD</span>
+                          </span>
+                        </div>
+                        <div class="h-avatar is-small">
+                          <img
+                            class="avatar"
+                            src="https://via.placeholder.com/150x150"
+                            data-demo-src="/@images/avatars/photos/8.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="h-avatar is-small">
+                          <span class="avatar is-more">
+                            <span class="inner">
+                              <span>+2</span>
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex-table-cell cell-end" data-th="Actions">
+                      <FlexTableContextMenu />
+                    </div>
+                  </div>
+
+                  <!--Table item-->
+                  <div class="flex-table-item">
+                    <div class="flex-table-cell is-bold" data-th="Company">
+                      <span class="dark-text">PhaseBit</span>
+                    </div>
+                    <div class="flex-table-cell" data-th="Type">
+                      <span class="light-text">Confirmed</span>
+                    </div>
+                    <div class="flex-table-cell" data-th="Industry">
+                      <span class="light-text">Cryptocurrency</span>
+                    </div>
+                    <div class="flex-table-cell" data-th="Status">
+                      <span class="tag is-info is-rounded">New</span>
+                    </div>
+                    <div class="flex-table-cell" data-th="Contacts">
+                      <div class="avatar-stack is-pushed-mobile">
+                        <div class="h-avatar is-small">
+                          <span class="avatar is-fake is-danger">
+                            <span>SC</span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex-table-cell cell-end" data-th="Actions">
+                      <FlexTableContextMenu />
+                    </div>
+                  </div>
+
+                  <!--Table item-->
+                  <div class="flex-table-item">
+                    <div class="flex-table-cell is-bold" data-th="Company">
+                      <span class="dark-text">Kokolint</span>
+                    </div>
+                    <div class="flex-table-cell" data-th="Type">
+                      <span class="light-text">New lead</span>
+                    </div>
+                    <div class="flex-table-cell" data-th="Industry">
+                      <span class="light-text">Software</span>
+                    </div>
+                    <div class="flex-table-cell" data-th="Status">
+                      <span class="tag is-success is-rounded">Active</span>
+                    </div>
+                    <div class="flex-table-cell" data-th="Contacts">
+                      <div class="avatar-stack is-pushed-mobile">
+                        <div class="h-avatar is-small">
+                          <span class="avatar is-fake is-success">
+                            <span>BT</span>
+                          </span>
+                        </div>
+                        <div class="h-avatar is-small">
+                          <img
+                            class="avatar"
+                            src="https://via.placeholder.com/150x150"
+                            data-demo-src="/@images/avatars/photos/7.jpg"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex-table-cell cell-end" data-th="Actions">
+                      <FlexTableContextMenu />
+                    </div>
+                  </div>
+
+                  <!--Table item-->
+                  <div class="flex-table-item">
+                    <div class="flex-table-cell is-bold" data-th="Company">
+                      <span class="dark-text">VScope X</span>
+                    </div>
+                    <div class="flex-table-cell" data-th="Type">
+                      <span class="light-text">Canceled</span>
+                    </div>
+                    <div class="flex-table-cell" data-th="Industry">
+                      <span class="light-text">Software</span>
+                    </div>
+                    <div class="flex-table-cell" data-th="Status">
+                      <span class="tag is-rounded">Disabled</span>
+                    </div>
+                    <div class="flex-table-cell" data-th="Contacts">
+                      <div class="avatar-stack is-pushed-mobile">
+                        <div class="h-avatar is-small">
+                          <img
+                            class="avatar"
+                            src="https://via.placeholder.com/150x150"
+                            data-demo-src="/@images/avatars/photos/13.jpg"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex-table-cell cell-end" data-th="Actions">
+                      <FlexTableContextMenu />
+                    </div>
+                  </div>
+
+                  <!--Table item-->
+                  <div class="flex-table-item">
+                    <div class="flex-table-cell is-bold" data-th="Company">
+                      <span class="dark-text">MediHelp</span>
+                    </div>
+                    <div class="flex-table-cell" data-th="Type">
+                      <span class="light-text">Confirmed</span>
+                    </div>
+                    <div class="flex-table-cell" data-th="Industry">
+                      <span class="light-text">Software</span>
+                    </div>
+                    <div class="flex-table-cell" data-th="Status">
+                      <span class="tag is-rounded is-danger">Suspended</span>
+                    </div>
+                    <div class="flex-table-cell" data-th="Contacts">
+                      <div class="avatar-stack is-pushed-mobile">
+                        <div class="h-avatar is-small">
+                          <img
+                            class="avatar"
+                            src="https://via.placeholder.com/150x150"
+                            data-demo-src="/@images/avatars/photos/25.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="h-avatar is-small">
+                          <img
+                            class="avatar"
+                            src="https://via.placeholder.com/150x150"
+                            data-demo-src="/@images/avatars/photos/11.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="h-avatar is-small">
+                          <img
+                            class="avatar"
+                            src="https://via.placeholder.com/150x150"
+                            data-demo-src="/@images/avatars/photos/5.jpg"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex-table-cell cell-end" data-th="Actions">
+                      <FlexTableContextMenu />
+                    </div>
+                  </div>
+                </div>
+
+                <!--Table Pagination-->
+                <nav
+                  class="flex-pagination pagination is-rounded"
+                  aria-label="pagination"
+                >
+                  <a class="pagination-previous">Previous</a>
+                  <a class="pagination-next">Next</a>
+                  <ul class="pagination-list">
+                    <li>
+                      <a class="pagination-link" aria-label="Goto page 1">1</a>
+                    </li>
+                    <li><span class="pagination-ellipsis">&hellip;</span></li>
+                    <li>
+                      <a class="pagination-link" aria-label="Goto page 45"
+                        >45</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="pagination-link is-current"
+                        aria-label="Page 46"
+                        aria-current="page"
+                        >46</a
+                      >
+                    </li>
+                    <li>
+                      <a class="pagination-link" aria-label="Goto page 47"
+                        >47</a
+                      >
+                    </li>
+                    <li><span class="pagination-ellipsis">&hellip;</span></li>
+                    <li>
+                      <a class="pagination-link" aria-label="Goto page 86"
+                        >86</a
+                      >
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </DefaultLayout>
+</template>

@@ -1,2 +1,2 @@
 // import main scss file
-import '@src/assets/scss/main.scss'
+import '/@src/assets/scss/main.scss'

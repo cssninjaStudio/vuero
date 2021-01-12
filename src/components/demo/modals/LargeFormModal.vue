@@ -34,7 +34,7 @@
                           <div class="combo-item">
                             <img
                               src="https://via.placeholder.com/150x150"
-                              data-demo-src="/src/assets/images/avatars/placeholder.jpg"
+                              data-demo-src="/@images/avatars/placeholder.jpg"
                               alt=""
                             />
                             <span class="selected-item">Add people</span>
@@ -50,7 +50,7 @@
                                 <span class="item-icon">
                                   <img
                                     src="https://via.placeholder.com/150x150"
-                                    data-demo-src="/src/assets/images/avatars/photos/22.jpg"
+                                    data-demo-src="/@images/avatars/photos/22.jpg"
                                     alt=""
                                   />
                                 </span>
@@ -63,7 +63,7 @@
                                 <span class="item-icon">
                                   <img
                                     src="https://via.placeholder.com/150x150"
-                                    data-demo-src="/src/assets/images/avatars/photos/8.jpg"
+                                    data-demo-src="/@images/avatars/photos/8.jpg"
                                     alt=""
                                   />
                                 </span>
@@ -76,7 +76,7 @@
                                 <span class="item-icon">
                                   <img
                                     src="https://via.placeholder.com/150x150"
-                                    data-demo-src="/src/assets/images/avatars/photos/7.jpg"
+                                    data-demo-src="/@images/avatars/photos/7.jpg"
                                     alt=""
                                   />
                                 </span>
@@ -89,7 +89,7 @@
                                 <span class="item-icon">
                                   <img
                                     src="https://via.placeholder.com/150x150"
-                                    data-demo-src="/src/assets/images/avatars/photos/25.jpg"
+                                    data-demo-src="/@images/avatars/photos/25.jpg"
                                     alt=""
                                   />
                                 </span>
@@ -102,7 +102,7 @@
                                 <span class="item-icon">
                                   <img
                                     src="https://via.placeholder.com/150x150"
-                                    data-demo-src="/src/assets/images/avatars/photos/12.jpg"
+                                    data-demo-src="/@images/avatars/photos/12.jpg"
                                     alt=""
                                   />
                                 </span>

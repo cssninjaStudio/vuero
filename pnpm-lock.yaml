@@ -17,6 +17,7 @@ devDependencies:
   '@typescript-eslint/parser': 4.13.0_eslint@7.17.0+typescript@4.1.3
   '@vitejs/plugin-vue': 1.0.5_@vue+compiler-sfc@3.0.5
   '@vue/compiler-sfc': 3.0.5_vue@3.0.5
+  '@vue/server-renderer': 3.0.5_vue@3.0.5
   '@vuedx/typecheck': 0.4.1
   '@vuedx/typescript-plugin-vue': 0.4.1
   cross-env: 7.0.3
@@ -35,10 +36,10 @@ devDependencies:
   typescript: 4.1.3
   vite: 2.0.0-beta.22
   vite-plugin-components: 0.6.6
-  vite-plugin-fonts: 0.1.3
+  vite-plugin-fonts: 0.1.5_vite@2.0.0-beta.22
   vite-plugin-purge-icons: 0.5.0_vite@2.0.0-beta.22
   vite-plugin-voie: 0.7.3_67a7197f13329dad98b45542d35d9b99
-  vite-ssg: 0.3.1_b18dc1185508d071664f3195a885a605
+  vite-ssg: 0.3.1_618fc64e11207884dfdaca3409904fbb
   voie-pages: 0.4.0_vue@3.0.5
 lockfileVersion: 5.2
 packages:
@@ -646,6 +647,16 @@ packages:
     dev: false
     resolution:
       integrity: sha512-iilX1KySeIzHHtErT6Y44db1rhWK5tAI0CiJIPr+SJoZ2jbjoOSE6ff/jfIQakchbm1d6jq6VtRVnp5xYdOXKA==
+  /@vue/server-renderer/3.0.5_vue@3.0.5:
+    dependencies:
+      '@vue/compiler-ssr': 3.0.5
+      '@vue/shared': 3.0.5
+      vue: 3.0.5
+    dev: true
+    peerDependencies:
+      vue: 3.0.5
+    resolution:
+      integrity: sha512-aB4TymBESEbCJ6A9HfeFpS3U9dC6dRa1zUqWHJqGlikqKr38n0VSYA3lNt0Qnkd6SFDSN6Kn5O34Ih3saMk9KA==
   /@vue/shared/3.0.0-rc.5:
     dev: true
     resolution:
@@ -3261,7 +3272,7 @@ packages:
       request-promise-core: 1.1.4_request@2.88.2
       stealthy-require: 1.1.1
       tough-cookie: 2.5.0
-    deprecated: 'request-promise-native has been deprecated because it extends the now deprecated request package, see https://github.com/request/request/issues/3142'
+    deprecated: request-promise-native has been deprecated because it extends the now deprecated request package, see https://github.com/request/request/issues/3142
     dev: true
     engines:
       node: '>=0.12.0'
@@ -3291,7 +3302,7 @@ packages:
       tough-cookie: 2.5.0
       tunnel-agent: 0.6.0
       uuid: 3.4.0
-    deprecated: 'request has been deprecated, see https://github.com/request/request/issues/3142'
+    deprecated: request has been deprecated, see https://github.com/request/request/issues/3142
     dev: true
     engines:
       node: '>= 6'
@@ -3996,12 +4007,14 @@ packages:
     dev: true
     resolution:
       integrity: sha512-tOcWm/2T+XUImJ8yFZb/i8dUWXNoraqDdKrBBpfbHGg3MES0T6AN1315iuKYHTG71fwKI0OGElw3S9B04ZUwPA==
-  /vite-plugin-fonts/0.1.3:
+  /vite-plugin-fonts/0.1.5_vite@2.0.0-beta.22:
     dependencies:
       vite: 2.0.0-beta.22
     dev: true
+    peerDependencies:
+      vite: ^2.0.0-beta.22
     resolution:
-      integrity: sha512-EZ3O050L6ak/KS7bMGKjckmG1ux+DJsdgV4dD3Z9eAUjOgLI/IySdIGbgmu83xyepnhzM6kqK+wYETNDT2eM9w==
+      integrity: sha512-yF9Q1OVRGijlgUe8VXkAEGon+3tIAfeFtzOFBUpSDp5OmMVFMwt40Jy/7qMbVmu9tAV1OeCAK1uaUZgjQE5QPg==
   /vite-plugin-purge-icons/0.5.0_vite@2.0.0-beta.22:
     dependencies:
       '@purge-icons/core': 0.5.0
@@ -4029,9 +4042,10 @@ packages:
       vue-router: ^4.0.0-beta.4
     resolution:
       integrity: sha512-OwAwziXPb8ywKHXfd9E1UXsEF2rRi4Dgb3F020s2lLWdtuY84xQH4JK84XwytFeht3TsexmJpVPHg2y17QdltQ==
-  /vite-ssg/0.3.1_b18dc1185508d071664f3195a885a605:
+  /vite-ssg/0.3.1_618fc64e11207884dfdaca3409904fbb:
     dependencies:
       '@vue/compiler-sfc': 3.0.5_vue@3.0.5
+      '@vue/server-renderer': 3.0.5_vue@3.0.5
       chalk: 4.1.0
       fs-extra: 9.0.1
       jsdom: 16.4.0
@@ -4301,6 +4315,7 @@ specifiers:
   '@typescript-eslint/parser': ^4.12.0
   '@vitejs/plugin-vue': ^1.0.4
   '@vue/compiler-sfc': ^3.0.5
+  '@vue/server-renderer': ^3.0.5
   '@vuedx/typecheck': ^0.4.1
   '@vuedx/typescript-plugin-vue': ^0.4.1
   '@vueuse/core': ^4.0.5
@@ -4324,7 +4339,7 @@ specifiers:
   typescript: ^4.1.3
   vite: ^2.0.0-beta.15
   vite-plugin-components: ^0.6.3
-  vite-plugin-fonts: ^0.1.3
+  vite-plugin-fonts: ^0.1.5
   vite-plugin-purge-icons: ^0.5.0
   vite-plugin-voie: ^0.7.3
   vite-ssg: ^0.3.1

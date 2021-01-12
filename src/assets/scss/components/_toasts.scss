@@ -10,18 +10,22 @@
 ========================================================================== */
 
 .notyf {
-    .notyf__toast {
-        .notyf__wrapper {
-            .notyf__icon {
-                .fas, .fal, .far, .fad, .fab {
-                    color: $white !important;
-                    font-size: 1.6rem !important;
-                }
-            }
-
-            .notyf__message {
-                color: $white !important;
-            }
+  .notyf__toast {
+    .notyf__wrapper {
+      .notyf__icon {
+        .fas,
+        .fal,
+        .far,
+        .fad,
+        .fab {
+          color: $white !important;
+          font-size: 1.6rem !important;
         }
+      }
+
+      .notyf__message {
+        color: $white !important;
+      }
     }
+  }
 }

@@ -16,7 +16,7 @@ export default SidebarCurvedLayout
 
 <template>
   <div class="app-overlay"></div>
-  <Pageloader />
+  <!-- <Pageloader /> -->
 
   <MobileNavbar />
   <MobileSidebarMain />

@@ -22,7 +22,7 @@
             id="customer-logo"
             class="avatar"
             src="https://via.placeholder.com/150x150"
-            data-demo-src="/src/assets/images/photo/demo/brands/airbnb.svg"
+            data-demo-src="/@images/photo/demo/brands/airbnb.svg"
             alt=""
           />
         </div>

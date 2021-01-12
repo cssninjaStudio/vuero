@@ -14,342 +14,346 @@
 ========================================================================== */
 
 .business-dashboard {
-    &.flights-dashboard {
-        .booking-bar-wrapper {
-            @extend .s-card;
+  &.flights-dashboard {
+    .booking-bar-wrapper {
+      @extend .s-card;
 
-            position: relative;
-            background: $primary;
-            border-color: $primary;
-            padding: 30px;
+      position: relative;
+      background: $primary;
+      border-color: $primary;
+      padding: 30px;
+      color: $white;
+      font-family: $font;
+      box-shadow: $primary-box-shadow;
+
+      .travel-illustration {
+        position: absolute;
+        bottom: 30px;
+        right: 30px;
+        max-width: 260px;
+      }
+
+      .booking-bar-info {
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+
+        .lnil {
+          font-size: 2.2rem;
+          color: $white;
+        }
+
+        .inner {
+          margin-left: 16px;
+
+          .booking-bar-heading {
+            font-family: $font-alt;
+            font-size: 1.4rem;
+            font-weight: 600;
+            line-height: 1.2;
             color: $white;
+          }
+
+          .booking-bar-sub-heading {
             font-family: $font;
-            box-shadow: $primary-box-shadow;
-
-            .travel-illustration {
-                position: absolute;
-                bottom: 30px;
-                right: 30px;
-                max-width: 260px;
-            }
-
-            .booking-bar-info {
-                display: flex;
-                align-items: center;
-                margin-bottom: 12px;
-
-                .lnil {
-                    font-size: 2.2rem;
-                    color: $white;
-                }
-
-                .inner {
-                    margin-left: 16px;
-
-                    .booking-bar-heading {
-                        font-family: $font-alt;
-                        font-size: 1.4rem;
-                        font-weight: 600;
-                        line-height: 1.2;
-                        color: $white;
-                    }
-
-                    .booking-bar-sub-heading {
-                        font-family: $font;
-                        font-weight: 500;
-                        font-size: 1.1rem;
-                        color: $white;
-                    }
-                }
-            }
-
-            .booking-bar {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-
-                .booking-bar-inputs {
-                    display: flex;
-                    align-items: center;
-
-                    .control:not(:last-of-type) {
-                        margin-right: 2rem;
-                    }
-
-                    .input {
-                        font-family: $font;
-                        color: $light-text;
-                    }
-                }
-            }
+            font-weight: 500;
+            font-size: 1.1rem;
+            color: $white;
+          }
         }
+      }
 
-        .flights-toolbar {
-            padding: 16px 0;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+      .booking-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
-            h3 {
-                font-family: $font;
-                font-weight: 600;
-                color: $dark-text;
-            }
+        .booking-bar-inputs {
+          display: flex;
+          align-items: center;
+
+          .control:not(:last-of-type) {
+            margin-right: 2rem;
+          }
+
+          .input {
+            font-family: $font;
+            color: $light-text;
+          }
         }
-
-        .flights-summary-wrapper {
-            .flight-summary {
-                @extend .s-card;
-
-                display: flex;
-                align-items: center;
-                border: 1px solid $fade-grey;
-                transition: all .3s;
-
-                &:hover {
-                    border-color: $primary;
-                }
-
-                &.is-featured {
-                    background: $primary;
-                    border-color: $primary;
-                    box-shadow: $primary-box-shadow;
-
-                    .flight-price {
-                        color: $white;
-                    }
-
-                    .meta {
-                        span {
-                            color: $white !important;
-                        }
-                    }
-                }
-
-                .flight-price {
-                    font-family: $font;
-                    font-size: 2rem;
-                    font-weight: 700;
-                    color: $primary;
-
-                    &:before {
-                        content: '$';
-                        position: relative;
-                        right: -4px;
-                        font-size: 1.2rem;
-                        font-weight: 700;
-                    }
-                }
-
-                .meta {
-                    margin-left: 16px;
-                    line-height: 1.3;
-
-                    span {
-                        display: block;
-
-                        &:first-child {
-                            font-family: $font-alt;
-                            color: $dark-text;
-                            font-size: .8rem;
-                            font-weight: 700;
-                            text-transform: uppercase;
-                        }
-
-                        &:nth-child(2) {
-                            font-family: $font;
-                            color: $light-text;
-                            font-size: .9rem;
-                        }
-                    }
-                }
-            }
-        }
-
-        .flights {
-            padding: 1.5rem 0;
-
-            .flight-card {
-                @extend .s-card;
-
-                display: flex;
-                align-items: center;
-                margin-bottom: 1.5rem;
-                box-shadow: none;
-
-                &:hover {
-                    box-shadow: $light-box-shadow;
-
-                    .route {
-                        .line {
-                            &:before, &:after {
-                                opacity: 1;
-                            }
-                        }
-                    }
-                }
-
-                > img {
-                    display: block;
-                    border-radius: 50%;
-                    max-width: 32px;
-                }
-
-                .start, .end {
-                    span {
-                        display: block;
-                        color: $dark-text;
-                        font-family: $font;
-
-                        &:first-child {
-                            font-family: $font-alt;
-                            font-weight: 600;
-                            color: $dark-text;
-                        }
-
-                        &:nth-child(2), &:nth-child(3) {
-                            font-family: $font;
-                            font-size: .9rem;
-                            color: $light-text;
-                        }
-                    }
-                }
-
-                .start {
-                    margin-left: 1rem;
-                }
-
-                .end {
-                    margin-left: auto;
-                    margin-right: 1.5rem;
-                }
-
-                .route {
-                    flex-grow: 2;
-                    display: flex;
-                    align-items: center;
-                    max-width: 320px;
-                    margin: 0 auto;
-                    padding: 0 1rem;
-
-                    .departure {
-                        height: 16px;
-                        width: 16px;
-                        border-radius: 50%;
-                        border: 1px solid $light-text;
-                    }
-
-                    .line {
-                        position: relative;
-                        flex-grow: 2;
-                        height: 1px;
-                        border-bottom: 1.6px dashed $light-text;
-
-                        &:before, &:after {
-                            opacity: 0;
-                            pointer-events: none;
-                            transition: all .3s;
-                        }
-
-                        &:before {
-                            content: '';
-                            position: absolute;
-                            top: -14px;
-                            left: 50%;
-                            right: 50%;
-                            height: 10px;
-                            width: 1px;
-                            border-right: 1px solid $light-text;
-                        }
-
-                        &:after {
-                            content: attr(data-content);
-                            position: absolute;
-                            top: -32px;
-                            left: 23%;
-                            width: 130px;
-                            font-size: .8rem;
-                            text-align: center;
-                            color: $light-text;
-                        }
-                    }
-
-                    .arrival {
-                        font-size: 1.8rem;
-                        transform: rotate(90deg);
-                        height: 26px;
-                        width: 26px;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-
-                        .lnil {
-                            position: relative;
-                            top: -4px;
-                            right: 5px;
-                            color: $light-text;
-                            margin-left: .75rem;
-                        }
-                    }
-                }
-
-                .flight-price {
-                    font-family: $font;
-                    font-size: 1.8rem;
-                    font-weight: 600;
-                    color: $light-text;
-
-                    &:before {
-                        content: '$';
-                        position: relative;
-                        top: -8px;
-                        right: -6px;
-                        font-size: 1.1rem;
-                        font-weight: 700;
-                    }
-                }
-            }
-        }
-
-        .company-card {
-            @extend .s-card;
-
-            padding: 30px;
-            margin-bottom: 1.5rem;
-
-            .h-avatar {
-                display: block;
-                margin: 0 auto;
-            }
-        }
-
-        .filters-card {
-            @extend .s-card;
-
-            padding: 30px;
-            margin-bottom: 1.5rem;
-
-            .checkboxes-list {
-                margin: 0;
-                padding: 20px 0 0 0;
-
-                .field {
-                    > h5 {
-                        font-family: $font-alt;
-                        font-weight: 600;
-                        font-size: .8rem;
-                        text-transform: uppercase;
-                        color: $dark-text;
-                        padding-bottom: 6px;
-                    }
-                }
-
-                .checkbox {
-                    padding: 8px 0;
-                }
-            }
-        }
+      }
     }
+
+    .flights-toolbar {
+      padding: 16px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      h3 {
+        font-family: $font;
+        font-weight: 600;
+        color: $dark-text;
+      }
+    }
+
+    .flights-summary-wrapper {
+      .flight-summary {
+        @extend .s-card;
+
+        display: flex;
+        align-items: center;
+        border: 1px solid $fade-grey;
+        transition: all 0.3s;
+
+        &:hover {
+          border-color: $primary;
+        }
+
+        &.is-featured {
+          background: $primary;
+          border-color: $primary;
+          box-shadow: $primary-box-shadow;
+
+          .flight-price {
+            color: $white;
+          }
+
+          .meta {
+            span {
+              color: $white !important;
+            }
+          }
+        }
+
+        .flight-price {
+          font-family: $font;
+          font-size: 2rem;
+          font-weight: 700;
+          color: $primary;
+
+          &:before {
+            content: '$';
+            position: relative;
+            right: -4px;
+            font-size: 1.2rem;
+            font-weight: 700;
+          }
+        }
+
+        .meta {
+          margin-left: 16px;
+          line-height: 1.3;
+
+          span {
+            display: block;
+
+            &:first-child {
+              font-family: $font-alt;
+              color: $dark-text;
+              font-size: 0.8rem;
+              font-weight: 700;
+              text-transform: uppercase;
+            }
+
+            &:nth-child(2) {
+              font-family: $font;
+              color: $light-text;
+              font-size: 0.9rem;
+            }
+          }
+        }
+      }
+    }
+
+    .flights {
+      padding: 1.5rem 0;
+
+      .flight-card {
+        @extend .s-card;
+
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.5rem;
+        box-shadow: none;
+
+        &:hover {
+          box-shadow: $light-box-shadow;
+
+          .route {
+            .line {
+              &:before,
+              &:after {
+                opacity: 1;
+              }
+            }
+          }
+        }
+
+        > img {
+          display: block;
+          border-radius: 50%;
+          max-width: 32px;
+        }
+
+        .start,
+        .end {
+          span {
+            display: block;
+            color: $dark-text;
+            font-family: $font;
+
+            &:first-child {
+              font-family: $font-alt;
+              font-weight: 600;
+              color: $dark-text;
+            }
+
+            &:nth-child(2),
+            &:nth-child(3) {
+              font-family: $font;
+              font-size: 0.9rem;
+              color: $light-text;
+            }
+          }
+        }
+
+        .start {
+          margin-left: 1rem;
+        }
+
+        .end {
+          margin-left: auto;
+          margin-right: 1.5rem;
+        }
+
+        .route {
+          flex-grow: 2;
+          display: flex;
+          align-items: center;
+          max-width: 320px;
+          margin: 0 auto;
+          padding: 0 1rem;
+
+          .departure {
+            height: 16px;
+            width: 16px;
+            border-radius: 50%;
+            border: 1px solid $light-text;
+          }
+
+          .line {
+            position: relative;
+            flex-grow: 2;
+            height: 1px;
+            border-bottom: 1.6px dashed $light-text;
+
+            &:before,
+            &:after {
+              opacity: 0;
+              pointer-events: none;
+              transition: all 0.3s;
+            }
+
+            &:before {
+              content: '';
+              position: absolute;
+              top: -14px;
+              left: 50%;
+              right: 50%;
+              height: 10px;
+              width: 1px;
+              border-right: 1px solid $light-text;
+            }
+
+            &:after {
+              content: attr(data-content);
+              position: absolute;
+              top: -32px;
+              left: 23%;
+              width: 130px;
+              font-size: 0.8rem;
+              text-align: center;
+              color: $light-text;
+            }
+          }
+
+          .arrival {
+            font-size: 1.8rem;
+            transform: rotate(90deg);
+            height: 26px;
+            width: 26px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .lnil {
+              position: relative;
+              top: -4px;
+              right: 5px;
+              color: $light-text;
+              margin-left: 0.75rem;
+            }
+          }
+        }
+
+        .flight-price {
+          font-family: $font;
+          font-size: 1.8rem;
+          font-weight: 600;
+          color: $light-text;
+
+          &:before {
+            content: '$';
+            position: relative;
+            top: -8px;
+            right: -6px;
+            font-size: 1.1rem;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+
+    .company-card {
+      @extend .s-card;
+
+      padding: 30px;
+      margin-bottom: 1.5rem;
+
+      .h-avatar {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+
+    .filters-card {
+      @extend .s-card;
+
+      padding: 30px;
+      margin-bottom: 1.5rem;
+
+      .checkboxes-list {
+        margin: 0;
+        padding: 20px 0 0 0;
+
+        .field {
+          > h5 {
+            font-family: $font-alt;
+            font-weight: 600;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            color: $dark-text;
+            padding-bottom: 6px;
+          }
+        }
+
+        .checkbox {
+          padding: 8px 0;
+        }
+      }
+    }
+  }
 }
 
 /* ==========================================================================
@@ -357,59 +361,60 @@
 ========================================================================== */
 
 body {
-    &.is-dark {
-        .business-dashboard {
-            &.flights-dashboard {
-                .booking-bar-wrapper {
-                    background: lighten($dark-sidebar, 4%);
-                    border-color: lighten($dark-sidebar, 12%);
-                    box-shadow: $light-box-shadow;
-                }
-
-                .flights-summary-wrapper {
-                    .flight-summary {
-                        &:hover {
-                            border-color: $accent !important;
-                        }
-
-                        &.is-featured {
-                            background: $accent !important;
-                            border-color: $accent !important;
-                            box-shadow: $accent-box-shadow !important;
-
-                            .flight-price {
-                                color: $white;
-                            }
-                        }
-
-                        .flight-price {
-                            color: $accent;
-                        }
-
-                        .meta {
-                            span {
-                                &:first-child {
-                                    color: $dark-dark-text;
-                                }
-                            }
-                        }
-                    }
-                }
-
-                .flights {
-                    .flight-card {
-                        .start, .end {
-                            span {
-                                &:first-child {
-                                    color: $dark-dark-text;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+  &.is-dark {
+    .business-dashboard {
+      &.flights-dashboard {
+        .booking-bar-wrapper {
+          background: lighten($dark-sidebar, 4%);
+          border-color: lighten($dark-sidebar, 12%);
+          box-shadow: $light-box-shadow;
         }
+
+        .flights-summary-wrapper {
+          .flight-summary {
+            &:hover {
+              border-color: $accent !important;
+            }
+
+            &.is-featured {
+              background: $accent !important;
+              border-color: $accent !important;
+              box-shadow: $accent-box-shadow !important;
+
+              .flight-price {
+                color: $white;
+              }
+            }
+
+            .flight-price {
+              color: $accent;
+            }
+
+            .meta {
+              span {
+                &:first-child {
+                  color: $dark-dark-text;
+                }
+              }
+            }
+          }
+        }
+
+        .flights {
+          .flight-card {
+            .start,
+            .end {
+              span {
+                &:first-child {
+                  color: $dark-dark-text;
+                }
+              }
+            }
+          }
+        }
+      }
     }
+  }
 }
 
 /* ==========================================================================
@@ -417,219 +422,220 @@ body {
 ========================================================================== */
 
 .business-dashboard {
-    &.company-dashboard {
-        .company-header {
-            display: flex;
-            padding: 20px;
-            background: $white;
-            border: 1px solid darken($fade-grey, 3%);
-            border-radius: 6px;
-            margin-bottom: 1.5rem;
+  &.company-dashboard {
+    .company-header {
+      display: flex;
+      padding: 20px;
+      background: $white;
+      border: 1px solid darken($fade-grey, 3%);
+      border-radius: 6px;
+      margin-bottom: 1.5rem;
 
-            .header-item {
-                width: 25%;
-                border-right: 1px solid darken($fade-grey, 3%);
+      .header-item {
+        width: 25%;
+        border-right: 1px solid darken($fade-grey, 3%);
 
-                &:last-child {
-                    border-right: none;
-                }
-
-                .item-inner {
-                    text-align: center;
-
-                    .lnil, .lnir {
-                        font-size: 1.8rem;
-                        margin-bottom: 6px;
-                        color: $primary;
-                    }
-
-                    span {
-                        display: block;
-                        font-family: $font;
-                        font-weight: 600;
-                        font-size: 1.6rem;
-                        color: $dark-text;
-                    }
-
-                    p {
-                        font-family: $font-alt;
-                        font-size: .95rem;
-                    }
-                }
-            }
+        &:last-child {
+          border-right: none;
         }
 
-        .widget {
-            height: 100%;
+        .item-inner {
+          text-align: center;
+
+          .lnil,
+          .lnir {
+            font-size: 1.8rem;
+            margin-bottom: 6px;
+            color: $primary;
+          }
+
+          span {
+            display: block;
+            font-family: $font;
+            font-weight: 600;
+            font-size: 1.6rem;
+            color: $dark-text;
+          }
+
+          p {
+            font-family: $font-alt;
+            font-size: 0.95rem;
+          }
         }
-
-        .dashboard-card {
-            @extend .s-card;
-
-            height: 100%;
-
-            &.is-company {
-                text-align: center;
-                padding: 30px;
-
-                .h-avatar {
-                    display: block;
-                    margin: 0 auto 10px auto;
-
-                    .button {
-                        position: absolute;
-                        bottom: 0;
-                        right: 0;
-                        max-width: 35px;
-                    }
-                }
-
-                > h3 {
-                    color: $dark-text;
-                    font-family: $font-alt;
-                    font-size: 1.2rem;
-                    font-weight: 600;
-                }
-
-                > p {
-                    font-size: .9rem;
-                }
-
-                .description {
-                    padding: 10px 0 0 0;
-                }
-
-                .company-stats {
-                    display: flex;
-                    padding-top: 20px;
-                    margin-top: 20px;
-                    border-top: 1px solid darken($fade-grey, 3%);
-
-                    .company-stat {
-                        width: 33.3%;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        text-align: center;
-
-                        span {
-                            display: block;
-                            font-family: $font;
-
-                            &:first-child {
-                                text-transform: uppercase;
-                                font-family: $font-alt;
-                                font-size: .75rem;
-                                color: $light-text;
-                            }
-
-                            &:nth-child(2) {
-                                color: $dark-text;
-                                font-size: 1.4rem;
-                                font-weight: 600;
-                            }
-                        }
-                    }
-                }
-            }
-
-            &.is-base-chart {
-                padding: 0;
-                display: flex;
-                flex-direction: column;
-
-                .content-box {
-                    padding: 30px;
-
-                    .revenue-stats {
-                        display: flex;
-                        padding-bottom: 20px;
-                        border-bottom: 1px solid darken($fade-grey, 3%);
-
-                        .revenue-stat {
-                            margin-right: 30px;
-                            font-family: $font;
-
-                            span {
-                                display: block;
-
-                                &:first-child {
-                                    text-transform: uppercase;
-                                    font-family: $font-alt;
-                                    font-size: .75rem;
-                                    color: $light-text;
-                                }
-
-                                &:nth-child(2) {
-                                    color: $dark-text;
-                                    font-size: 1.6rem;
-                                    font-weight: 600;
-                                }
-
-                                &.current {
-                                    color: $accent;
-                                }
-                            }
-                        }
-                    }
-                }
-
-                .chart-container {
-                    margin-top: auto;
-                }
-            }
-
-            &.is-tickets {
-                padding: 30px;
-
-                .ticket-list {
-                    padding: 10px 0;
-
-                    .media-flex {
-                        + .media-flex {
-                            margin-top: 20px;
-                            padding-top: 20px;
-                            border-top: 1px solid darken($fade-grey, 3%);
-                        }
-
-                        .flex-meta {
-                            span {
-                                &:nth-child(2) {
-                                    font-size: 1rem;
-                                    margin: 4px 0;
-                                    color: darken($light-text, 20%);
-                                    max-width: 430px;
-                                }
-
-                                &:nth-child(3) {
-                                    font-size: .9rem;
-                                    color: $light-text;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-
-            .card-head {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                margin-bottom: 20px;
-
-                h3 {
-                    font-family: $font-alt;
-                    font-size: 1rem;
-                    font-weight: 600;
-                    color: $dark-text;
-                }
-            }
-        }
-
-        .table-wrapper {
-            min-height: 0;
-        }
+      }
     }
+
+    .widget {
+      height: 100%;
+    }
+
+    .dashboard-card {
+      @extend .s-card;
+
+      height: 100%;
+
+      &.is-company {
+        text-align: center;
+        padding: 30px;
+
+        .h-avatar {
+          display: block;
+          margin: 0 auto 10px auto;
+
+          .button {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            max-width: 35px;
+          }
+        }
+
+        > h3 {
+          color: $dark-text;
+          font-family: $font-alt;
+          font-size: 1.2rem;
+          font-weight: 600;
+        }
+
+        > p {
+          font-size: 0.9rem;
+        }
+
+        .description {
+          padding: 10px 0 0 0;
+        }
+
+        .company-stats {
+          display: flex;
+          padding-top: 20px;
+          margin-top: 20px;
+          border-top: 1px solid darken($fade-grey, 3%);
+
+          .company-stat {
+            width: 33.3%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+
+            span {
+              display: block;
+              font-family: $font;
+
+              &:first-child {
+                text-transform: uppercase;
+                font-family: $font-alt;
+                font-size: 0.75rem;
+                color: $light-text;
+              }
+
+              &:nth-child(2) {
+                color: $dark-text;
+                font-size: 1.4rem;
+                font-weight: 600;
+              }
+            }
+          }
+        }
+      }
+
+      &.is-base-chart {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+
+        .content-box {
+          padding: 30px;
+
+          .revenue-stats {
+            display: flex;
+            padding-bottom: 20px;
+            border-bottom: 1px solid darken($fade-grey, 3%);
+
+            .revenue-stat {
+              margin-right: 30px;
+              font-family: $font;
+
+              span {
+                display: block;
+
+                &:first-child {
+                  text-transform: uppercase;
+                  font-family: $font-alt;
+                  font-size: 0.75rem;
+                  color: $light-text;
+                }
+
+                &:nth-child(2) {
+                  color: $dark-text;
+                  font-size: 1.6rem;
+                  font-weight: 600;
+                }
+
+                &.current {
+                  color: $accent;
+                }
+              }
+            }
+          }
+        }
+
+        .chart-container {
+          margin-top: auto;
+        }
+      }
+
+      &.is-tickets {
+        padding: 30px;
+
+        .ticket-list {
+          padding: 10px 0;
+
+          .media-flex {
+            + .media-flex {
+              margin-top: 20px;
+              padding-top: 20px;
+              border-top: 1px solid darken($fade-grey, 3%);
+            }
+
+            .flex-meta {
+              span {
+                &:nth-child(2) {
+                  font-size: 1rem;
+                  margin: 4px 0;
+                  color: darken($light-text, 20%);
+                  max-width: 430px;
+                }
+
+                &:nth-child(3) {
+                  font-size: 0.9rem;
+                  color: $light-text;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .card-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+
+        h3 {
+          font-family: $font-alt;
+          font-size: 1rem;
+          font-weight: 600;
+          color: $dark-text;
+        }
+      }
+    }
+
+    .table-wrapper {
+      min-height: 0;
+    }
+  }
 }
 
 /* ==========================================================================
@@ -637,208 +643,209 @@ body {
 ========================================================================== */
 
 .business-dashboard {
-    &.hr-dashboard {
-        .block-header {
-            display: flex;
-            padding: 10px;
-            border-radius: 16px;
-            padding: 50px;
-            background: $primary;
-            font-family: $font;
-            box-shadow: $primary-box-shadow;
+  &.hr-dashboard {
+    .block-header {
+      display: flex;
+      padding: 10px;
+      border-radius: 16px;
+      padding: 50px;
+      background: $primary;
+      font-family: $font;
+      box-shadow: $primary-box-shadow;
 
-            .left, .right {
-                width: 30%;
-            }
+      .left,
+      .right {
+        width: 30%;
+      }
 
-            .center {
-                display: flex;
-                flex-direction: column;
-                width: 40%;
-                padding-right: 30px;
-                margin-right: 30px;
-                border-right: 1px solid lighten($primary, 10%);
+      .center {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        padding-right: 30px;
+        margin-right: 30px;
+        border-right: 1px solid lighten($primary, 10%);
 
-                .block-text {
-                    margin-bottom: 16px;
-                }
-
-                .candidates {
-                    margin-top: auto;
-
-                    > .h-avatar {
-                        margin-right: 10px;
-                    }
-
-                    button {
-                        height: 40px;
-                        width: 40px;
-                        display: inline-flex;
-                        justify-content: center;
-                        align-items: center;
-                        border-radius: 10px;
-                        background: $white;
-                        color: $light-text;
-                        border: none;
-                        outline: none;
-                        cursor: pointer;
-                        transition: all .3s;
-
-                        svg {
-                            height: 18px;
-                            width: 18px;
-                        }
-                    }
-                }
-            }
-
-            .left {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                .current-user {
-                    .h-avatar {
-                        margin-bottom: 1rem;
-                    }
-
-                    h3 {
-                        font-family: $font-alt;
-                        font-weight: 700;
-                        font-size: 1.8rem;
-                        color: $white;
-                        line-height: 1.2;
-                    }
-                }
-            }
-
-            .right {
-                display: flex;
-                flex-direction: column;
-
-                .button {
-                    margin-top: auto;
-                }
-            }
-
-            .block-heading {
-                font-family: $font-alt;
-                font-weight: 600;
-                font-size: 1.1rem;
-                color: $white;
-                margin-bottom: 4px;
-            }
-
-            .block-text {
-                font-family: $font;
-                font-size: .9rem;
-                color: $white;
-                margin-bottom: 16px;
-            }
-
-            .header-meta {
-                margin-left: 0px;
-                padding-right: 30px;
-
-                h3 {
-                    color: $smoke-white;
-                    font-family: $font-alt;
-                    font-weight: 700;
-                    font-size: 1.3rem;
-                    max-width: 280px;
-                }
-
-                p {
-                    font-weight: 400;
-                    color: darken($smoke-white, 2%);
-                    margin-bottom: 16px;
-                    max-width: 320px;
-                }
-
-                .action-link {
-                    span {
-                        font-size: .8rem;
-                        text-transform: uppercase;
-                        margin-right: 6px;
-                    }
-
-                    i {
-                        font-size: 12px;
-                    }
-                }
-            }
+        .block-text {
+          margin-bottom: 16px;
         }
 
-        .feed-settings {
-            display: flex;
+        .candidates {
+          margin-top: auto;
+
+          > .h-avatar {
+            margin-right: 10px;
+          }
+
+          button {
+            height: 40px;
+            width: 40px;
+            display: inline-flex;
+            justify-content: center;
             align-items: center;
-            justify-content: space-between;
-            padding: 20px 0;
+            border-radius: 10px;
+            background: $white;
+            color: $light-text;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            transition: all 0.3s;
 
-            h3 {
-                font-family: $font-alt;
-                font-size: 1.1rem;
-                font-weight: 600;
-                color: $dark-text;
+            svg {
+              height: 18px;
+              width: 18px;
             }
+          }
+        }
+      }
 
-            .button {
-                font-size: .8rem;
-                border-radius: 8px;
-                margin-right: 4px;
+      .left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-                &.is-selected {
-                    background: $primary;
-                    color: $white;
-                    border-color: $primary;
-                    box-shadow: $primary-box-shadow;
-                }
-            }
+        .current-user {
+          .h-avatar {
+            margin-bottom: 1rem;
+          }
+
+          h3 {
+            font-family: $font-alt;
+            font-weight: 700;
+            font-size: 1.8rem;
+            color: $white;
+            line-height: 1.2;
+          }
+        }
+      }
+
+      .right {
+        display: flex;
+        flex-direction: column;
+
+        .button {
+          margin-top: auto;
+        }
+      }
+
+      .block-heading {
+        font-family: $font-alt;
+        font-weight: 600;
+        font-size: 1.1rem;
+        color: $white;
+        margin-bottom: 4px;
+      }
+
+      .block-text {
+        font-family: $font;
+        font-size: 0.9rem;
+        color: $white;
+        margin-bottom: 16px;
+      }
+
+      .header-meta {
+        margin-left: 0px;
+        padding-right: 30px;
+
+        h3 {
+          color: $smoke-white;
+          font-family: $font-alt;
+          font-weight: 700;
+          font-size: 1.3rem;
+          max-width: 280px;
         }
 
-        .side-text {
-            h3 {
-                font-family: $font-alt;
-                font-size: 1.1rem;
-                font-weight: 600;
-                color: $dark-text;
-                margin-bottom: 8px;
-            }
-
-            p {
-                font-size: .95rem;
-                margin-bottom: 8px;
-            }
-
-            .action-link {
-                font-size: .9rem;
-            }
+        p {
+          font-weight: 400;
+          color: darken($smoke-white, 2%);
+          margin-bottom: 16px;
+          max-width: 320px;
         }
 
-        .recent-rookies {
-            .recent-rookies-header {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                margin-bottom: 20px;
+        .action-link {
+          span {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            margin-right: 6px;
+          }
 
-                h3 {
-                    font-family: $font-alt;
-                    font-size: 1.1rem;
-                    font-weight: 600;
-                    color: $dark-text;
-                }
-            }
-
-            .user-grid {
-                &.user-grid-v4 {
-                    .grid-item {
-                        @extend .l-card;
-                    }
-                }
-            }
+          i {
+            font-size: 12px;
+          }
         }
+      }
     }
+
+    .feed-settings {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 0;
+
+      h3 {
+        font-family: $font-alt;
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: $dark-text;
+      }
+
+      .button {
+        font-size: 0.8rem;
+        border-radius: 8px;
+        margin-right: 4px;
+
+        &.is-selected {
+          background: $primary;
+          color: $white;
+          border-color: $primary;
+          box-shadow: $primary-box-shadow;
+        }
+      }
+    }
+
+    .side-text {
+      h3 {
+        font-family: $font-alt;
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: $dark-text;
+        margin-bottom: 8px;
+      }
+
+      p {
+        font-size: 0.95rem;
+        margin-bottom: 8px;
+      }
+
+      .action-link {
+        font-size: 0.9rem;
+      }
+    }
+
+    .recent-rookies {
+      .recent-rookies-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+
+        h3 {
+          font-family: $font-alt;
+          font-size: 1.1rem;
+          font-weight: 600;
+          color: $dark-text;
+        }
+      }
+
+      .user-grid {
+        &.user-grid-v4 {
+          .grid-item {
+            @extend .l-card;
+          }
+        }
+      }
+    }
+  }
 }
 
 /* ==========================================================================
@@ -846,47 +853,47 @@ body {
 ========================================================================== */
 
 body {
-    &.is-dark {
-        .business-dashboard {
-            &.hr-dashboard {
-                .block-header {
-                    background: $dark-sidebar;
-                    box-shadow: none;
+  &.is-dark {
+    .business-dashboard {
+      &.hr-dashboard {
+        .block-header {
+          background: $dark-sidebar;
+          box-shadow: none;
 
-                    .center {
-                        border-color: lighten($dark-sidebar, 10%);
+          .center {
+            border-color: lighten($dark-sidebar, 10%);
 
-                        .candidates {
-                            button {
-                                background: lighten($dark-sidebar, 10%);
-                                border: 1px solid transparent;
-                                transition: all .3s;
+            .candidates {
+              button {
+                background: lighten($dark-sidebar, 10%);
+                border: 1px solid transparent;
+                transition: all 0.3s;
 
-                                &:hover {
-                                    border-color: $accent;
+                &:hover {
+                  border-color: $accent;
 
-                                    svg {
-                                        stroke: $accent;
-                                    }
-                                }
-                            }
-                        }
-                    }
+                  svg {
+                    stroke: $accent;
+                  }
                 }
-
-                .feed-settings {
-                    .button {
-                        &.is-selected {
-                            background: $accent !important;
-                            border-color: $accent !important;
-                            box-shadow: $accent-box-shadow !important;
-                            color: $white !important;
-                        }
-                    }
-                }
+              }
             }
+          }
         }
+
+        .feed-settings {
+          .button {
+            &.is-selected {
+              background: $accent !important;
+              border-color: $accent !important;
+              box-shadow: $accent-box-shadow !important;
+              color: $white !important;
+            }
+          }
+        }
+      }
     }
+  }
 }
 
 /* ==========================================================================
@@ -894,214 +901,218 @@ body {
 ========================================================================== */
 
 @media only screen and (max-width: 767px) {
-    .business-dashboard {
-        &.flights-dashboard {
-            .booking-bar-wrapper {
-                .travel-illustration {
-                    position: static;
-                    margin-bottom: 20px;
-                }
-
-                .booking-bar {
-                    .booking-bar-inputs {
-                        flex-direction: column;
-                        width: 100%;
-
-                        .control {
-                            margin: 0 !important;
-                            width: 100% !important;
-
-                            &:first-child {
-                                margin-bottom: 1rem !important;
-                            }
-                        }
-                    }
-                }
-            }
-
-            .flights {
-                padding-bottom: 0;
-
-                .flight-card {
-                    flex-direction: column;
-
-                    &:last-child {
-                        margin-bottom: 0;
-                    }
-
-                    > img {
-                        max-width: 48px;
-                        margin-bottom: 12px;
-                    }
-
-                    .start, .end {
-                        text-align: center;
-                        margin: 10px auto;
-
-                        span {
-                            font-size: 1rem !important;
-                        }
-                    }
-
-                    .route {
-                        width: 100%;
-                        max-width: 100%;
-
-                        .line {
-                            &:before, &:after {
-                                display: none !important;
-                            }
-                        }
-                    }
-                }
-            }
+  .business-dashboard {
+    &.flights-dashboard {
+      .booking-bar-wrapper {
+        .travel-illustration {
+          position: static;
+          margin-bottom: 20px;
         }
 
-        &.company-dashboard {
-            .company-header {
-                flex-wrap: wrap;
+        .booking-bar {
+          .booking-bar-inputs {
+            flex-direction: column;
+            width: 100%;
 
-                .header-item {
-                    width: 50%;
-                    border-right: none;
-                    border: none;
-                    padding: 16px 0;
-                }
+            .control {
+              margin: 0 !important;
+              width: 100% !important;
+
+              &:first-child {
+                margin-bottom: 1rem !important;
+              }
             }
+          }
         }
+      }
 
-        &.hr-dashboard {
-            .block-header {
-                flex-direction: column;
-                padding: 30px;
+      .flights {
+        padding-bottom: 0;
 
-                .left, .center, .right {
-                    width: 100%;
-                }
+        .flight-card {
+          flex-direction: column;
 
-                .left {
-                    justify-content: flex-start;
-                    margin-bottom: 20px;
-                }
+          &:last-child {
+            margin-bottom: 0;
+          }
 
-                .center {
-                    padding-right: 0;
-                    margin-right: 0;
-                    border-right: none;
-                    margin-bottom: 20px;
-                }
+          > img {
+            max-width: 48px;
+            margin-bottom: 12px;
+          }
+
+          .start,
+          .end {
+            text-align: center;
+            margin: 10px auto;
+
+            span {
+              font-size: 1rem !important;
             }
+          }
 
-            .feed-settings {
-                flex-direction: column;
+          .route {
+            width: 100%;
+            max-width: 100%;
 
-                h3 {
-                    margin-bottom: 16px;
-                }
+            .line {
+              &:before,
+              &:after {
+                display: none !important;
+              }
             }
+          }
         }
+      }
     }
+
+    &.company-dashboard {
+      .company-header {
+        flex-wrap: wrap;
+
+        .header-item {
+          width: 50%;
+          border-right: none;
+          border: none;
+          padding: 16px 0;
+        }
+      }
+    }
+
+    &.hr-dashboard {
+      .block-header {
+        flex-direction: column;
+        padding: 30px;
+
+        .left,
+        .center,
+        .right {
+          width: 100%;
+        }
+
+        .left {
+          justify-content: flex-start;
+          margin-bottom: 20px;
+        }
+
+        .center {
+          padding-right: 0;
+          margin-right: 0;
+          border-right: none;
+          margin-bottom: 20px;
+        }
+      }
+
+      .feed-settings {
+        flex-direction: column;
+
+        h3 {
+          margin-bottom: 16px;
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-    .business-dashboard {
-        &.flights-dashboard {
-            .booking-bar-wrapper {
-                .travel-illustration {
-                    bottom: 30px;
-                    right: -25px;
-                    max-width: 215px;
-                }
-            }
-
-            .flights {
-                padding-bottom: 0;
-
-                .flight-card {
-                    &:last-child {
-                        margin-bottom: 0;
-                    }
-                }
-            }
+  .business-dashboard {
+    &.flights-dashboard {
+      .booking-bar-wrapper {
+        .travel-illustration {
+          bottom: 30px;
+          right: -25px;
+          max-width: 215px;
         }
+      }
 
-        &.hr-dashboard {
-            .block-header {
-                padding: 40px;
-            }
+      .flights {
+        padding-bottom: 0;
 
-            .side-text {
-                display: none;
-            }
+        .flight-card {
+          &:last-child {
+            margin-bottom: 0;
+          }
         }
+      }
     }
+
+    &.hr-dashboard {
+      .block-header {
+        padding: 40px;
+      }
+
+      .side-text {
+        display: none;
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    .business-dashboard {
-        &.flights-dashboard {
-            .booking-bar-wrapper {
-                .travel-illustration {
-                    bottom: 30px;
-                    right: -12px;
-                    max-width: 200px;
-                }
-            }
-
-            .flights-summary-wrapper {
-                .flight-summary {
-                    .flight-price {
-                        font-size: 2.2rem;
-                    }
-                }
-            }
+  .business-dashboard {
+    &.flights-dashboard {
+      .booking-bar-wrapper {
+        .travel-illustration {
+          bottom: 30px;
+          right: -12px;
+          max-width: 200px;
         }
+      }
 
-        &.hr-dashboard {
-            .block-header {
-                padding: 40px;
-    
-                .left {
-                    .current-user {
-                        h3 {
-                            font-size: 1.5rem;
-                        }
-                    }
-                }
-    
-                .center {
-                    .candidates {
-                        .h-avatar {
-                            &:nth-child(3) {
-                                display: none;
-                            }
-                        }
-                    }
-                }
-            }
-    
-            .column {
-                &.is-7 {
-                    &.is-offset-1 {
-                        margin-left: 2% !important;
-                        width: 64.33333% !important;
-                    }
-                }
-            }
+      .flights-summary-wrapper {
+        .flight-summary {
+          .flight-price {
+            font-size: 2.2rem;
+          }
         }
+      }
     }
+
+    &.hr-dashboard {
+      .block-header {
+        padding: 40px;
+
+        .left {
+          .current-user {
+            h3 {
+              font-size: 1.5rem;
+            }
+          }
+        }
+
+        .center {
+          .candidates {
+            .h-avatar {
+              &:nth-child(3) {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+
+      .column {
+        &.is-7 {
+          &.is-offset-1 {
+            margin-left: 2% !important;
+            width: 64.33333% !important;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 1300px) and (orientation: landscape) {
-    .business-dashboard {
-        &.flights-dashboard {
-            .flights-summary-wrapper {
-                .flight-summary {
-                    .flight-price {
-                        font-size: 2.2rem;
-                    }
-                }
-            }
+  .business-dashboard {
+    &.flights-dashboard {
+      .flights-summary-wrapper {
+        .flight-summary {
+          .flight-price {
+            font-size: 2.2rem;
+          }
         }
+      }
     }
+  }
 }

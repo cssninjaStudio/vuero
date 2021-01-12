@@ -5,7 +5,7 @@
       <img
         class="sender-pic"
         src="https://via.placeholder.com/150x150"
-        data-demo-src="/src/assets/images/avatars/photos/27.jpg"
+        data-demo-src="/@images/avatars/photos/27.jpg"
         alt=""
       />
       <div class="message-meta">
@@ -123,7 +123,7 @@
           <div class="reply-as">
             <img
               src="https://via.placeholder.com/150x150"
-              data-demo-src="/src/assets/images/avatars/photos/8.jpg"
+              data-demo-src="/@images/avatars/photos/8.jpg"
               alt=""
             />
             <div class="reply-details">

@@ -109,7 +109,7 @@
                         <img
                           class="avatar"
                           src="https://via.placeholder.com/150x150"
-                          data-demo-src="/src/assets/images/icons/cryptocurrencies/btc.svg"
+                          data-demo-src="/@images/icons/cryptocurrencies/btc.svg"
                           alt=""
                         />
                       </div>
@@ -152,7 +152,7 @@
                         <img
                           class="avatar"
                           src="https://via.placeholder.com/150x150"
-                          data-demo-src="/src/assets/images/avatars/photos/21.jpg"
+                          data-demo-src="/@images/avatars/photos/21.jpg"
                           alt=""
                           data-user-popover="19"
                         />
@@ -169,7 +169,7 @@
                         <img
                           class="avatar"
                           src="https://via.placeholder.com/150x150"
-                          data-demo-src="/src/assets/images/avatars/photos/7.jpg"
+                          data-demo-src="/@images/avatars/photos/7.jpg"
                           alt=""
                           data-user-popover="0"
                         />
@@ -186,7 +186,7 @@
                         <img
                           class="avatar"
                           src="https://via.placeholder.com/150x150"
-                          data-demo-src="/src/assets/images/avatars/photos/31.jpg"
+                          data-demo-src="/@images/avatars/photos/31.jpg"
                           alt=""
                           data-user-popover="27"
                         />
@@ -210,7 +210,7 @@
                         <img
                           class="avatar"
                           src="https://via.placeholder.com/150x150"
-                          data-demo-src="/src/assets/images/icons/cryptocurrencies/xmr.svg"
+                          data-demo-src="/@images/icons/cryptocurrencies/xmr.svg"
                           alt=""
                         />
                       </div>
@@ -232,7 +232,7 @@
                         <img
                           class="avatar"
                           src="https://via.placeholder.com/150x150"
-                          data-demo-src="/src/assets/images/icons/cryptocurrencies/ltc.svg"
+                          data-demo-src="/@images/icons/cryptocurrencies/ltc.svg"
                           alt=""
                         />
                       </div>
@@ -254,7 +254,7 @@
                         <img
                           class="avatar"
                           src="https://via.placeholder.com/150x150"
-                          data-demo-src="/src/assets/images/icons/cryptocurrencies/link.svg"
+                          data-demo-src="/@images/icons/cryptocurrencies/link.svg"
                           alt=""
                         />
                       </div>
@@ -276,7 +276,7 @@
                         <img
                           class="avatar"
                           src="https://via.placeholder.com/150x150"
-                          data-demo-src="/src/assets/images/icons/cryptocurrencies/bnb.svg"
+                          data-demo-src="/@images/icons/cryptocurrencies/bnb.svg"
                           alt=""
                         />
                       </div>

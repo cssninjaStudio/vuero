@@ -26,12 +26,12 @@
           <div class="p-t-10 p-b-10">
             <img
               class="small-footer-logo light-image-l"
-              src="/src/assets/images/logos/logo/logo.svg"
+              src="/@images/logos/logo/logo.svg"
               alt=""
             />
             <img
               class="small-footer-logo dark-image-l"
-              src="/src/assets/images/logos/logo/logo-light.svg"
+              src="/@images/logos/logo/logo-light.svg"
               alt=""
             />
             <div class="footer-description p-t-10 p-b-10">

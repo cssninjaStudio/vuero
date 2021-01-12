@@ -10,58 +10,55 @@
 ========================================================================== */
 
 .breadcrumb {
+  &.is-narrow {
+    margin-bottom: 10px;
+  }
 
-    &.is-narrow {
-        margin-bottom: 10px;
-    }
+  ul {
+    li {
+      a {
+        font-family: $font;
+        color: $light-text;
 
-    ul {
-        li {
-            a {
-                font-family: $font;
-                color: $light-text;
-
-                &:hover {
-                    color: $primary;
-                }
-
-                .icon {
-
-                    &.is-solo {
-                        svg {
-                            top: 2px;
-                        }
-                    }
-
-                    svg {
-                        position: relative;
-                        top: 0;
-                        height: 16px;
-                        min-width: 16px;
-                    }
-                }
-            }
+        &:hover {
+          color: $primary;
         }
-    }
-}
 
+        .icon {
+          &.is-solo {
+            svg {
+              top: 2px;
+            }
+          }
+
+          svg {
+            position: relative;
+            top: 0;
+            height: 16px;
+            min-width: 16px;
+          }
+        }
+      }
+    }
+  }
+}
 
 /* ==========================================================================
 2. Breadcrumbs Dark mode
 ========================================================================== */
 
 body {
-    &.is-dark {
-        .breadcrumb {
-            ul {
-                li {
-                    a {
-                        &:hover {
-                            color: $accent;
-                        }
-                    }
-                }
+  &.is-dark {
+    .breadcrumb {
+      ul {
+        li {
+          a {
+            &:hover {
+              color: $accent;
             }
+          }
         }
+      }
     }
+  }
 }

@@ -2,18 +2,14 @@
   <div class="webapp-navbar">
     <div class="webapp-navbar-inner">
       <div class="left">
-        <a href="/" class="brand">
-          <img
-            class="light-image"
-            src="/src/assets/images/logos/logo/logo.svg"
-            alt=""
-          />
+        <RouterLink :to="{ name: 'index' }" class="brand">
+          <img class="light-image" src="/@images/logos/logo/logo.svg" alt="" />
           <img
             class="dark-image"
-            src="/src/assets/images/logos/logo/logo-light.svg"
+            src="/@images/logos/logo/logo-light.svg"
             alt=""
           />
-        </a>
+        </RouterLink>
         <div class="separator"></div>
         <!-- <ProjectsQuickDropdown /> -->
         <h1 id="webapp-page-title" class="title is-5">Welcome</h1>
@@ -90,7 +86,7 @@
         >
           <img
             src="https://via.placeholder.com/150x150"
-            data-demo-src="/src/assets/images/avatars/photos/8.jpg"
+            data-demo-src="/@images/avatars/photos/8.jpg"
             alt=""
           />
           <span class="status-indicator"></span>
@@ -102,7 +98,7 @@
                   <img
                     class="avatar"
                     src="https://via.placeholder.com/150x150"
-                    data-demo-src="/src/assets/images/avatars/photos/8.jpg"
+                    data-demo-src="/@images/avatars/photos/8.jpg"
                     alt=""
                   />
                 </div>

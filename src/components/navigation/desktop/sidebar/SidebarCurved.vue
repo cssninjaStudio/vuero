@@ -1,15 +1,15 @@
 <template>
   <div class="main-sidebar is-curved">
     <div class="sidebar-brand">
-      <a href="/">
+      <RouterLink :to="{ name: 'index' }">
         <img
           class="light-image"
-          src="/src/assets/images/logos/logo/logo.svg"
+          src="/@images/logos/logo/logo.svg"
           alt=""
         />
         <img
           class="dark-image"
-          src="/src/assets/images/logos/logo/logo-light.svg"
+          src="/@images/logos/logo/logo-light.svg"
           alt=""
         />
       </a>

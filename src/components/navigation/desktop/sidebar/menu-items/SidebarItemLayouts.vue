@@ -1,7 +1,7 @@
 <template>
   <li>
-    <a id="layouts-sidebar-menu" href="/admin-grid-users-1.html">
+    <RouterLink id="layouts-sidebar-menu" :to="{ name: 'admin-grid-users-1' }">
       <Icon class="sidebar-svg" icon="feather:grid" />
-    </a>
+    </RouterLink>
   </li>
 </template>

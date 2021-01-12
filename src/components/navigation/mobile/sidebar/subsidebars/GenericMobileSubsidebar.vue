@@ -14,22 +14,31 @@
           </div>
           <ul>
             <li>
-              <a class="is-submenu" href="/admin-dashboards-personal-1.html">
+              <RouterLink
+                :to="{ name: 'admin-dashboards-personal-1' }"
+                class="is-submenu"
+              >
                 <i class="lnil lnil-analytics-alt-1"></i>
                 <span>Personal V1</span>
-              </a>
+              </RouterLink>
             </li>
             <li>
-              <a class="is-submenu" href="/admin-dashboards-personal-2.html">
+              <RouterLink
+                :to="{ name: 'admin-dashboards-personal-2' }"
+                class="is-submenu"
+              >
                 <i class="lnil lnil-pie-chart"></i>
                 <span>Personal V2</span>
-              </a>
+              </RouterLink>
             </li>
             <li>
-              <a class="is-submenu" href="/admin-dashboards-personal-3.html">
+              <RouterLink
+                :to="{ name: 'admin-dashboards-personal-3' }"
+                class="is-submenu"
+              >
                 <i class="lnil lnil-stats-up"></i>
                 <span>Personal V3</span>
-              </a>
+              </RouterLink>
             </li>
           </ul>
         </li>
@@ -41,22 +50,31 @@
           </div>
           <ul>
             <li>
-              <a class="is-submenu" href="/admin-dashboards-finance-1.html">
+              <RouterLink
+                :to="{ name: 'admin-dashboards-finance-1' }"
+                class="is-submenu"
+              >
                 <i class="lnil lnil-analytics-alt-1"></i>
                 <span>Analytics Dashboard</span>
-              </a>
+              </RouterLink>
             </li>
             <li>
-              <a class="is-submenu" href="/admin-dashboards-finance-2.html">
+              <RouterLink
+                :to="{ name: 'admin-dashboards-finance-2' }"
+                class="is-submenu"
+              >
                 <i class="lnil lnil-stats-up"></i>
                 <span>Stocks Dashboard</span>
-              </a>
+              </RouterLink>
             </li>
             <li>
-              <a class="is-submenu" href="/admin-dashboards-finance-3.html">
+              <RouterLink
+                :to="{ name: 'admin-dashboards-finance-3' }"
+                class="is-submenu"
+              >
                 <i class="lnil lnil-credit-card"></i>
                 <span>Sales Dashboard</span>
-              </a>
+              </RouterLink>
             </li>
           </ul>
         </li>
@@ -68,22 +86,31 @@
           </div>
           <ul>
             <li>
-              <a class="is-submenu" href="/admin-dashboards-banking-1.html">
+              <RouterLink
+                :to="{ name: 'admin-dashboards-banking-1' }"
+                class="is-submenu"
+              >
                 <i class="lnil lnil-bank"></i>
                 <span>Banking V1</span>
-              </a>
+              </RouterLink>
             </li>
             <li>
-              <a class="is-submenu" href="/admin-dashboards-banking-2.html">
+              <RouterLink
+                :to="{ name: 'admin-dashboards-banking-2' }"
+                class="is-submenu"
+              >
                 <i class="lnil lnil-bank"></i>
                 <span>Banking V2</span>
-              </a>
+              </RouterLink>
             </li>
             <li>
-              <a class="is-submenu" href="/admin-dashboards-banking-3.html">
+              <RouterLink
+                :to="{ name: 'admin-dashboards-banking-3' }"
+                class="is-submenu"
+              >
                 <i class="lnil lnil-bank"></i>
                 <span>Banking V3</span>
-              </a>
+              </RouterLink>
             </li>
           </ul>
         </li>
@@ -95,22 +122,31 @@
           </div>
           <ul>
             <li>
-              <a class="is-submenu" href="/admin-dashboards-business-1.html">
+              <RouterLink
+                :to="{ name: 'admin-dashboards-business-1' }"
+                class="is-submenu"
+              >
                 <i class="lnil lnil-plane-alt"></i>
                 <span>Flights Booking</span>
-              </a>
+              </RouterLink>
             </li>
             <li>
-              <a class="is-submenu" href="/admin-dashboards-business-2.html">
+              <RouterLink
+                :to="{ name: 'admin-dashboards-business-2' }"
+                class="is-submenu"
+              >
                 <i class="lnil lnil-apartment"></i>
                 <span>Company Board</span>
-              </a>
+              </RouterLink>
             </li>
             <li>
-              <a class="is-submenu" href="/admin-dashboards-business-3.html">
+              <RouterLink
+                :to="{ name: 'admin-dashboards-business-3' }"
+                class="is-submenu"
+              >
                 <i class="lnil lnil-users-alt"></i>
                 <span>HR Board</span>
-              </a>
+              </RouterLink>
             </li>
           </ul>
         </li>
@@ -122,28 +158,40 @@
           </div>
           <ul>
             <li>
-              <a class="is-submenu" href="/admin-dashboards-lifestyle-1.html">
+              <RouterLink
+                :to="{ name: 'admin-dashboards-lifestyle-1' }"
+                class="is-submenu"
+              >
                 <i class="lnil lnil-cardiology"></i>
                 <span>Influencer</span>
-              </a>
+              </RouterLink>
             </li>
             <li>
-              <a class="is-submenu" href="/admin-dashboards-lifestyle-2.html">
+              <RouterLink
+                :to="{ name: 'admin-dashboards-lifestyle-2' }"
+                class="is-submenu"
+              >
                 <i class="lnil lnil-cloud-sun"></i>
                 <span>Hobbies</span>
-              </a>
+              </RouterLink>
             </li>
             <li>
-              <a class="is-submenu" href="/admin-dashboards-lifestyle-3.html">
+              <RouterLink
+                :to="{ name: 'admin-dashboards-lifestyle-3' }"
+                class="is-submenu"
+              >
                 <i class="lnil lnil-hospital-alt-3"></i>
                 <span>Health</span>
-              </a>
+              </RouterLink>
             </li>
             <li>
-              <a class="is-submenu" href="/admin-dashboards-lifestyle-4.html">
+              <RouterLink
+                :to="{ name: 'admin-dashboards-lifestyle-4' }"
+                class="is-submenu"
+              >
                 <i class="lnil lnil-books"></i>
                 <span>Writer</span>
-              </a>
+              </RouterLink>
             </li>
           </ul>
         </li>
@@ -155,10 +203,13 @@
           </div>
           <ul>
             <li>
-              <a class="is-submenu" href="/admin-dashboards-ecommerce-1.html">
+              <RouterLink
+                :to="{ name: 'admin-dashboards-ecommerce-1' }"
+                class="is-submenu"
+              >
                 <i class="lnil lnil-cart"></i>
                 <span>Ecommerce V1</span>
-              </a>
+              </RouterLink>
             </li>
           </ul>
         </li>
@@ -170,28 +221,40 @@
           </div>
           <ul>
             <li>
-              <a class="is-submenu" href="/admin-dashboards-apps-1.html">
+              <RouterLink
+                :to="{ name: 'admin-dashboards-apps-1' }"
+                class="is-submenu"
+              >
                 <i class="lnil lnil-pizza"></i>
                 <span>Food Delivery</span>
-              </a>
+              </RouterLink>
             </li>
             <li>
-              <a class="is-submenu" href="/admin-dashboards-apps-2.html">
+              <RouterLink
+                :to="{ name: 'admin-dashboards-apps-2' }"
+                class="is-submenu"
+              >
                 <i class="lnil lnil-envelope"></i>
                 <span>Inbox</span>
-              </a>
+              </RouterLink>
             </li>
             <li>
-              <a class="is-submenu" href="/admin-messaging-chat.html">
+              <RouterLink
+                :to="{ name: 'admin-messaging-chat' }"
+                class="is-submenu"
+              >
                 <i class="lnil lnil-bubble"></i>
                 <span>Messaging V1</span>
-              </a>
+              </RouterLink>
             </li>
             <li>
-              <a class="is-submenu" href="/webapp-messaging-chat.html">
+              <RouterLink
+                :to="{ name: 'webapp-messaging-chat' }"
+                class="is-submenu"
+              >
                 <i class="lnil lnil-bubble"></i>
                 <span>Messaging V2</span>
-              </a>
+              </RouterLink>
             </li>
           </ul>
         </li>
@@ -208,19 +271,22 @@
           </div>
           <ul>
             <li>
-              <a class="is-submenu" href="/admin-dashboards-charts-apex.html">
+              <RouterLink
+                :to="{ name: 'admin-dashboards-charts-apex' }"
+                class="is-submenu"
+              >
                 <i class="lnil lnil-pie-chart-alt"></i>
                 <span>Apex Charts</span>
-              </a>
+              </RouterLink>
             </li>
             <li>
-              <a
+              <RouterLink
                 class="is-submenu"
-                href="/admin-dashboards-charts-billboardjs.html"
+                :to="{ name: 'admin-dashboards-charts-billboardsjs' }"
               >
                 <i class="lnil lnil-bar-chart"></i>
                 <span>Billboard JS</span>
-              </a>
+              </RouterLink>
             </li>
           </ul>
         </li>
@@ -232,31 +298,40 @@
           </div>
           <ul>
             <li>
-              <a class="is-submenu" href="/admin-dashboards-widgets-ui.html">
+              <RouterLink
+                :to="{ name: 'admin-dashboards-widgets-ui' }"
+                class="is-submenu"
+              >
                 <i class="lnil lnil-layout-alt-1"></i>
                 <span>UI Widgets</span>
-              </a>
+              </RouterLink>
             </li>
             <li>
               <a
                 class="is-submenu"
-                href="/admin-dashboards-widgets-creative.html"
+                :to="{ name: 'admin-dashboards-widgets-creative' }"
               >
                 <i class="lnil lnil-layout-alt-2"></i>
                 <span>Creative Widgets</span>
               </a>
             </li>
             <li>
-              <a class="is-submenu" href="/admin-dashboards-widgets-list.html">
+              <RouterLink
+                :to="{ name: 'admin-dashboards-widgets-list' }"
+                class="is-submenu"
+              >
                 <i class="lnil lnil-layout-alt-1"></i>
                 <span>List Widgets</span>
-              </a>
+              </RouterLink>
             </li>
             <li>
-              <a class="is-submenu" href="/admin-dashboards-widgets-stats.html">
+              <RouterLink
+                :to="{ name: 'admin-dashboards-widgets-stats' }"
+                class="is-submenu"
+              >
                 <i class="lnil lnil-layout-alt-2"></i>
                 <span>Stat Widgets</span>
-              </a>
+              </RouterLink>
             </li>
           </ul>
         </li>
@@ -268,28 +343,40 @@
           </div>
           <ul>
             <li>
-              <a class="is-submenu" href="/admin-form-layouts-1.html">
+              <RouterLink
+                :to="{ name: 'admin-form-layouts-1' }"
+                class="is-submenu"
+              >
                 <i class="lnil lnil-passport"></i>
                 <span>Form Layout V1</span>
-              </a>
+              </RouterLink>
             </li>
             <li>
-              <a class="is-submenu" href="/admin-form-layouts-2.html">
+              <RouterLink
+                :to="{ name: 'admin-form-layouts-2' }"
+                class="is-submenu"
+              >
                 <i class="lnil lnil-passport"></i>
                 <span>Form Layout V2</span>
-              </a>
+              </RouterLink>
             </li>
             <li>
-              <a class="is-submenu" href="/admin-form-layouts-3.html">
+              <RouterLink
+                :to="{ name: 'admin-form-layouts-3' }"
+                class="is-submenu"
+              >
                 <i class="lnil lnil-passport"></i>
                 <span>Form Layout V3</span>
-              </a>
+              </RouterLink>
             </li>
             <li>
-              <a class="is-submenu" href="/admin-form-layouts-4.html">
+              <RouterLink
+                :to="{ name: 'admin-form-layouts-4' }"
+                class="is-submenu"
+              >
                 <i class="lnil lnil-passport"></i>
                 <span>Form Layout V4</span>
-              </a>
+              </RouterLink>
             </li>
           </ul>
         </li>
@@ -301,58 +388,85 @@
           </div>
           <ul>
             <li>
-              <a class="is-submenu" href="admin-blank-page-1.html">
+              <RouterLink
+                :to="{ name: 'admin-blank-page-1' }"
+                class="is-submenu"
+              >
                 <i class="lnil lnil-layout"></i>
                 <span>Regular Sidebar</span>
-              </a>
+              </RouterLink>
             </li>
             <li>
-              <a class="is-submenu" href="admin-blank-page-2.html">
+              <RouterLink
+                :to="{ name: 'admin-blank-page-2' }"
+                class="is-submenu"
+              >
                 <i class="lnil lnil-layout"></i>
                 <span>Curved Sidebar</span>
-              </a>
+              </RouterLink>
             </li>
             <li>
-              <a class="is-submenu" href="admin-blank-page-3.html">
+              <RouterLink
+                :to="{ name: 'admin-blank-page-3' }"
+                class="is-submenu"
+              >
                 <i class="lnil lnil-layout"></i>
                 <span>Colored Sidebar</span>
-              </a>
+              </RouterLink>
             </li>
             <li>
-              <a class="is-submenu" href="admin-blank-page-4.html">
+              <RouterLink
+                :to="{ name: 'admin-blank-page-4' }"
+                class="is-submenu"
+              >
                 <i class="lnil lnil-layout"></i>
                 <span>Curved Colored</span>
-              </a>
+              </RouterLink>
             </li>
             <li>
-              <a class="is-submenu" href="webapp-blank-page-1.html">
+              <RouterLink
+                :to="{ name: 'webapp-blank-page-1' }"
+                class="is-submenu"
+              >
                 <i class="lnil lnil-layout-alt-1"></i>
                 <span>Regular Navbar</span>
-              </a>
+              </RouterLink>
             </li>
             <li>
-              <a class="is-submenu" href="webapp-blank-page-2.html">
+              <RouterLink
+                :to="{ name: 'webapp-blank-page-2' }"
+                class="is-submenu"
+              >
                 <i class="lnil lnil-layout-alt-1"></i>
                 <span>Fading Navbar</span>
-              </a>
+              </RouterLink>
             </li>
             <li>
-              <a class="is-submenu" href="webapp-blank-page-3.html">
+              <RouterLink
+                :to="{ name: 'webapp-blank-page-3' }"
+                class="is-submenu"
+              >
                 <i class="lnil lnil-layout-alt-1"></i>
                 <span>Colored Navbar</span>
-              </a>
+              </RouterLink>
             </li>
             <li>
-              <a class="is-submenu" href="webapp-blank-page-4.html">
+              <RouterLink
+                :to="{ name: 'webapp-blank-page-4' }"
+                class="is-submenu"
+              >
                 <i class="lnil lnil-layout-alt-1"></i>
                 <span>Dropdown Navbar</span>
-              </a>
+              </RouterLink>
             </li>
             <li>
-              <a class="is-submenu" href="webapp-blank-page-5.html">
+              <RouterLink
+                :to="{ name: 'webapp-blank-page-5' }"
+                class="is-submenu"
+              >
                 <i class="lnil lnil-layout-alt-1"></i>
                 <span>Colored Dropdown</span>
-              </a>
+              </RouterLink>
             </li>
           </ul>
         </li>

@@ -11,7 +11,7 @@
         <img
           class="chat-area-profile"
           src="https://via.placeholder.com/150x150"
-          data-demo-src="/src/assets/images/avatars/photos/7.jpg"
+          data-demo-src="/@images/avatars/photos/7.jpg"
           alt=""
           data-user-popover="0"
         />
@@ -23,7 +23,7 @@
           <img
             class="chat-msg-img"
             src="https://via.placeholder.com/150x150"
-            data-demo-src="/src/assets/images/avatars/photos/7.jpg"
+            data-demo-src="/@images/avatars/photos/7.jpg"
             alt=""
             data-user-popover="0"
           />
@@ -36,7 +36,7 @@
           <div class="chat-msg-text">
             <img
               src="https://via.placeholder.com/400X300"
-              data-demo-src="/src/assets/images/photo/demo/apps/11.png"
+              data-demo-src="/@images/photo/demo/apps/11.png"
               alt=""
             />
           </div>
@@ -46,7 +46,7 @@
           <div class="chat-msg-text">
             <img
               src="https://via.placeholder.com/400X300"
-              data-demo-src="/src/assets/images/photo/demo/apps/9.png"
+              data-demo-src="/@images/photo/demo/apps/9.png"
               alt=""
             />
           </div>
@@ -58,7 +58,7 @@
           <img
             class="chat-msg-img"
             src="https://via.placeholder.com/150x150"
-            data-demo-src="/src/assets/images/avatars/photos/8.jpg"
+            data-demo-src="/@images/avatars/photos/8.jpg"
             alt=""
             data-user-popover="3"
           />

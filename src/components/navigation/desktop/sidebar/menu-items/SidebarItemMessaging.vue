@@ -1,7 +1,7 @@
 <template>
   <li id="messages-menu">
-    <a id="open-messages" href="admin-messaging-chat.html">
+    <RouterLink id="open-messages" :to="{ name: 'admin-messaging-chat' }">
       <Icon class="sidebar-svg" icon="feather:message-circle" />
-    </a>
+    </RouterLink>
   </li>
 </template>

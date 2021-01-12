@@ -9,12 +9,12 @@
       <div class="placeholder-content">
         <img
           class="light-image"
-          src="/src/assets/images/illustrations/wizard/finish.svg"
+          src="/@images/illustrations/wizard/finish.svg"
           alt=""
         />
         <img
           class="dark-image"
-          src="/src/assets/images/illustrations/wizard/finish-dark.svg"
+          src="/@images/illustrations/wizard/finish-dark.svg"
           alt=""
         />
         <h3>Get ready for next steps.</h3>

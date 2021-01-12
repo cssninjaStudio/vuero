@@ -53,7 +53,7 @@
                               <img
                                 class="avatar is-squared"
                                 src="https://via.placeholder.com/150x150"
-                                data-demo-src="/src/assets/images/avatars/photos/8.jpg"
+                                data-demo-src="/@images/avatars/photos/8.jpg"
                                 alt=""
                               />
                             </div>
@@ -73,7 +73,7 @@
                               <img
                                 class="avatar is-squared"
                                 src="https://via.placeholder.com/150x150"
-                                data-demo-src="/src/assets/images/avatars/photos/13.jpg"
+                                data-demo-src="/@images/avatars/photos/13.jpg"
                                 alt=""
                               />
                             </a>
@@ -81,7 +81,7 @@
                               <img
                                 class="avatar is-squared"
                                 src="https://via.placeholder.com/150x150"
-                                data-demo-src="/src/assets/images/avatars/photos/32.jpg"
+                                data-demo-src="/@images/avatars/photos/32.jpg"
                                 alt=""
                               />
                             </a>
@@ -89,7 +89,7 @@
                               <img
                                 class="avatar is-squared"
                                 src="https://via.placeholder.com/150x150"
-                                data-demo-src="/src/assets/images/avatars/photos/9.jpg"
+                                data-demo-src="/@images/avatars/photos/9.jpg"
                                 alt=""
                               />
                             </a>
@@ -247,14 +247,14 @@
                                 <img
                                   class="avatar"
                                   src="https://via.placeholder.com/150x150"
-                                  data-demo-src="/src/assets/images/avatars/photos/13.jpg"
+                                  data-demo-src="/@images/avatars/photos/13.jpg"
                                   alt=""
                                   data-user-popover="6"
                                 />
                                 <img
                                   class="badge"
                                   src="https://via.placeholder.com/150x150"
-                                  data-demo-src="/src/assets/images/icons/stacks/illustrator.svg"
+                                  data-demo-src="/@images/icons/stacks/illustrator.svg"
                                   alt=""
                                 />
                               </div>
@@ -279,14 +279,14 @@
                                 <img
                                   class="avatar"
                                   src="https://via.placeholder.com/150x150"
-                                  data-demo-src="/src/assets/images/avatars/photos/37.jpg"
+                                  data-demo-src="/@images/avatars/photos/37.jpg"
                                   alt=""
                                   data-user-popover="31"
                                 />
                                 <img
                                   class="badge"
                                   src="https://via.placeholder.com/150x150"
-                                  data-demo-src="/src/assets/images/icons/flags/france.svg"
+                                  data-demo-src="/@images/icons/flags/france.svg"
                                   alt=""
                                 />
                               </div>
@@ -311,14 +311,14 @@
                                 <img
                                   class="avatar"
                                   src="https://via.placeholder.com/150x150"
-                                  data-demo-src="/src/assets/images/avatars/photos/25.jpg"
+                                  data-demo-src="/@images/avatars/photos/25.jpg"
                                   alt=""
                                   data-user-popover="4"
                                 />
                                 <img
                                   class="badge"
                                   src="https://via.placeholder.com/150x150"
-                                  data-demo-src="/src/assets/images/icons/stacks/js.svg"
+                                  data-demo-src="/@images/icons/stacks/js.svg"
                                   alt=""
                                 />
                               </div>

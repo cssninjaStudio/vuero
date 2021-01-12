@@ -12,7 +12,7 @@
         <img
           class="avatar"
           src="https://via.placeholder.com/150x150"
-          data-demo-src="/src/assets/images/avatars/photos/11.jpg"
+          data-demo-src="/@images/avatars/photos/11.jpg"
           alt=""
           data-user-popover="13"
         />
@@ -39,7 +39,7 @@
         <img
           class="avatar"
           src="https://via.placeholder.com/150x150"
-          data-demo-src="/src/assets/images/avatars/photos/39.jpg"
+          data-demo-src="/@images/avatars/photos/39.jpg"
           alt=""
           data-user-popover="33"
         />
@@ -90,7 +90,7 @@
         <img
           class="avatar"
           src="https://via.placeholder.com/150x150"
-          data-demo-src="/src/assets/images/avatars/photos/7.jpg"
+          data-demo-src="/@images/avatars/photos/7.jpg"
           alt=""
           data-user-popover="0"
         />
@@ -117,7 +117,7 @@
         <img
           class="avatar"
           src="https://via.placeholder.com/150x150"
-          data-demo-src="/src/assets/images/avatars/photos/23.jpg"
+          data-demo-src="/@images/avatars/photos/23.jpg"
           alt=""
           data-user-popover="21"
         />
@@ -144,7 +144,7 @@
         <img
           class="avatar"
           src="https://via.placeholder.com/150x150"
-          data-demo-src="/src/assets/images/avatars/photos/5.jpg"
+          data-demo-src="/@images/avatars/photos/5.jpg"
           alt=""
           data-user-popover="9"
         />
@@ -169,7 +169,7 @@
         <img
           class="avatar"
           src="https://via.placeholder.com/150x150"
-          data-demo-src="/src/assets/images/avatars/photos/18.jpg"
+          data-demo-src="/@images/avatars/photos/18.jpg"
           alt=""
           data-user-popover="7"
         />
@@ -194,7 +194,7 @@
         <img
           class="avatar"
           src="https://via.placeholder.com/150x150"
-          data-demo-src="/src/assets/images/avatars/photos/25.jpg"
+          data-demo-src="/@images/avatars/photos/25.jpg"
           alt=""
           data-user-popover="4"
         />
@@ -221,7 +221,7 @@
         <img
           class="avatar"
           src="https://via.placeholder.com/150x150"
-          data-demo-src="/src/assets/images/avatars/photos/22.jpg"
+          data-demo-src="/@images/avatars/photos/22.jpg"
           alt=""
           data-user-popover="5"
         />
@@ -246,7 +246,7 @@
         <img
           class="avatar"
           src="https://via.placeholder.com/150x150"
-          data-demo-src="/src/assets/images/avatars/photos/19.jpg"
+          data-demo-src="/@images/avatars/photos/19.jpg"
           alt=""
           data-user-popover="17"
         />
@@ -273,7 +273,7 @@
         <img
           class="avatar"
           src="https://via.placeholder.com/150x150"
-          data-demo-src="/src/assets/images/avatars/photos/13.jpg"
+          data-demo-src="/@images/avatars/photos/13.jpg"
           alt=""
           data-user-popover="6"
         />

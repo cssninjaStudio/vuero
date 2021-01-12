@@ -31,7 +31,7 @@
                   <img
                     class="avatar"
                     src="https://via.placeholder.com/150x150"
-                    data-demo-src="/src/assets/images/avatars/photos/7.jpg"
+                    data-demo-src="/@images/avatars/photos/7.jpg"
                     alt=""
                   />
                 </div>
@@ -39,7 +39,7 @@
                   <img
                     class="avatar"
                     src="https://via.placeholder.com/150x150"
-                    data-demo-src="/src/assets/images/avatars/photos/8.jpg"
+                    data-demo-src="/@images/avatars/photos/8.jpg"
                     alt=""
                   />
                 </div>
@@ -47,7 +47,7 @@
                   <img
                     class="avatar"
                     src="https://via.placeholder.com/150x150"
-                    data-demo-src="/src/assets/images/avatars/photos/5.jpg"
+                    data-demo-src="/@images/avatars/photos/5.jpg"
                     alt=""
                   />
                 </div>
@@ -86,7 +86,7 @@
           <h3>Files</h3>
           <div class="task-files">
             <div class="file-box">
-              <img src="/src/assets/images/icons/files/zip-format.svg" alt="" />
+              <img src="/@images/icons/files/zip-format.svg" alt="" />
               <div class="meta">
                 <span>Preliminary Sketches</span>
                 <span>3MB <i class="fas fa-circle"></i> 5 days ago</span>
@@ -94,7 +94,7 @@
               <FileCardDropdown />
             </div>
             <div class="file-box">
-              <img src="/src/assets/images/icons/files/sheet.svg" alt="" />
+              <img src="/@images/icons/files/sheet.svg" alt="" />
               <div class="meta">
                 <span>Project Budget</span>
                 <span>0.6MB <i class="fas fa-circle"></i> 8 days ago</span>
@@ -102,7 +102,7 @@
               <FileCardDropdown />
             </div>
             <div class="file-box">
-              <img src="/src/assets/images/icons/files/video.svg" alt="" />
+              <img src="/@images/icons/files/video.svg" alt="" />
               <div class="meta">
                 <span>POC Demo</span>
                 <span>8.75MB <i class="fas fa-circle"></i> 8 days ago</span>
@@ -129,7 +129,7 @@
                     <img
                       class="avatar"
                       src="https://via.placeholder.com/150x150"
-                      data-demo-src="/src/assets/images/avatars/photos/8.jpg"
+                      data-demo-src="/@images/avatars/photos/8.jpg"
                       alt=""
                     />
                   </div>

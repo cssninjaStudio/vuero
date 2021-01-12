@@ -35,13 +35,13 @@
                 <img
                   class="avatar"
                   src="https://via.placeholder.com/150x150"
-                  data-demo-src="/src/assets/images/avatars/photos/12.jpg"
+                  data-demo-src="/@images/avatars/photos/12.jpg"
                   alt=""
                 />
                 <img
                   class="badge"
                   src="https://via.placeholder.com/150x150"
-                  data-demo-src="/src/assets/images/icons/flags/united-states-of-america.svg"
+                  data-demo-src="/@images/icons/flags/united-states-of-america.svg"
                   alt=""
                 />
               </div>
@@ -63,13 +63,13 @@
                 <img
                   class="avatar"
                   src="https://via.placeholder.com/150x150"
-                  data-demo-src="/src/assets/images/avatars/photos/25.jpg"
+                  data-demo-src="/@images/avatars/photos/25.jpg"
                   alt=""
                 />
                 <img
                   class="badge"
                   src="https://via.placeholder.com/150x150"
-                  data-demo-src="/src/assets/images/icons/flags/united-states-of-america.svg"
+                  data-demo-src="/@images/icons/flags/united-states-of-america.svg"
                   alt=""
                 />
               </div>
@@ -91,13 +91,13 @@
                 <img
                   class="avatar"
                   src="https://via.placeholder.com/150x150"
-                  data-demo-src="/src/assets/images/avatars/photos/18.jpg"
+                  data-demo-src="/@images/avatars/photos/18.jpg"
                   alt=""
                 />
                 <img
                   class="badge"
                   src="https://via.placeholder.com/150x150"
-                  data-demo-src="/src/assets/images/icons/flags/united-states-of-america.svg"
+                  data-demo-src="/@images/icons/flags/united-states-of-america.svg"
                   alt=""
                 />
               </div>
@@ -119,13 +119,13 @@
                 <img
                   class="avatar"
                   src="https://via.placeholder.com/150x150"
-                  data-demo-src="/src/assets/images/avatars/photos/13.jpg"
+                  data-demo-src="/@images/avatars/photos/13.jpg"
                   alt=""
                 />
                 <img
                   class="badge"
                   src="https://via.placeholder.com/150x150"
-                  data-demo-src="/src/assets/images/icons/flags/united-states-of-america.svg"
+                  data-demo-src="/@images/icons/flags/united-states-of-america.svg"
                   alt=""
                 />
               </div>
@@ -149,7 +149,7 @@
                 <img
                   class="project-avatar"
                   src="https://via.placeholder.com/150x150"
-                  data-demo-src="/src/assets/images/icons/logos/slicer.svg"
+                  data-demo-src="/@images/icons/logos/slicer.svg"
                   alt=""
                 />
                 <div class="meta">
@@ -176,7 +176,7 @@
                       <img
                         class="avatar"
                         src="https://via.placeholder.com/150x150"
-                        data-demo-src="/src/assets/images/avatars/photos/7.jpg"
+                        data-demo-src="/@images/avatars/photos/7.jpg"
                         alt=""
                       />
                     </div>
@@ -184,7 +184,7 @@
                       <img
                         class="avatar"
                         src="https://via.placeholder.com/150x150"
-                        data-demo-src="/src/assets/images/avatars/photos/5.jpg"
+                        data-demo-src="/@images/avatars/photos/5.jpg"
                         alt=""
                       />
                     </div>
@@ -192,7 +192,7 @@
                       <img
                         class="avatar"
                         src="https://via.placeholder.com/150x150"
-                        data-demo-src="/src/assets/images/avatars/photos/8.jpg"
+                        data-demo-src="/@images/avatars/photos/8.jpg"
                         alt=""
                       />
                     </div>
@@ -207,7 +207,7 @@
                 <img
                   class="project-avatar"
                   src="https://via.placeholder.com/150x150"
-                  data-demo-src="/src/assets/images/icons/logos/metamovies.svg"
+                  data-demo-src="/@images/icons/logos/metamovies.svg"
                   alt=""
                 />
                 <div class="meta">
@@ -234,7 +234,7 @@
                       <img
                         class="avatar"
                         src="https://via.placeholder.com/150x150"
-                        data-demo-src="/src/assets/images/avatars/photos/13.jpg"
+                        data-demo-src="/@images/avatars/photos/13.jpg"
                         alt=""
                       />
                     </div>
@@ -242,7 +242,7 @@
                       <img
                         class="avatar"
                         src="https://via.placeholder.com/150x150"
-                        data-demo-src="/src/assets/images/avatars/photos/18.jpg"
+                        data-demo-src="/@images/avatars/photos/18.jpg"
                         alt=""
                       />
                     </div>
@@ -257,7 +257,7 @@
                 <img
                   class="project-avatar"
                   src="https://via.placeholder.com/150x150"
-                  data-demo-src="/src/assets/images/icons/logos/fastpizza.svg"
+                  data-demo-src="/@images/icons/logos/fastpizza.svg"
                   alt=""
                 />
                 <div class="meta">
@@ -284,7 +284,7 @@
                       <img
                         class="avatar"
                         src="https://via.placeholder.com/150x150"
-                        data-demo-src="/src/assets/images/avatars/photos/7.jpg"
+                        data-demo-src="/@images/avatars/photos/7.jpg"
                         alt=""
                       />
                     </div>
@@ -292,7 +292,7 @@
                       <img
                         class="avatar"
                         src="https://via.placeholder.com/150x150"
-                        data-demo-src="/src/assets/images/avatars/photos/25.jpg"
+                        data-demo-src="/@images/avatars/photos/25.jpg"
                         alt=""
                       />
                     </div>
@@ -321,7 +321,7 @@
                   <img
                     class="avatar"
                     src="https://via.placeholder.com/150x150"
-                    data-demo-src="/src/assets/images/avatars/photos/7.jpg"
+                    data-demo-src="/@images/avatars/photos/7.jpg"
                     alt=""
                   />
                 </div>

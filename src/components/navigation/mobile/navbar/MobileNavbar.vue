@@ -15,18 +15,14 @@
           </div>
         </div>
 
-        <a class="navbar-item is-brand" href="index.html">
-          <img
-            class="light-image"
-            src="/src/assets/images/logos/logo/logo.svg"
-            alt=""
-          />
+        <RouterLink :to="{ name: 'index' }" class="navbar-item is-brand">
+          <img class="light-image" src="/@images/logos/logo/logo.svg" alt="" />
           <img
             class="dark-image"
-            src="/src/assets/images/logos/logo/logo-light.svg"
+            src="/@images/logos/logo/logo-light.svg"
             alt=""
           />
-        </a>
+        </RouterLink>
 
         <div class="brand-end">
           <NotificationsWidgetMobile />
@@ -39,7 +35,7 @@
                 <img
                   class="avatar"
                   src="https://via.placeholder.com/150x150"
-                  data-demo-src="/src/assets/images/avatars/photos/8.jpg"
+                  data-demo-src="/@images/avatars/photos/8.jpg"
                   alt=""
                 />
               </div>
@@ -51,7 +47,7 @@
                     <img
                       class="avatar"
                       src="https://via.placeholder.com/150x150"
-                      data-demo-src="/src/assets/images/avatars/photos/8.jpg"
+                      data-demo-src="/@images/avatars/photos/8.jpg"
                       alt=""
                     />
                   </div>

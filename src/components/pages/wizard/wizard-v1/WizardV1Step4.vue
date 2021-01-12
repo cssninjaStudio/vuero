@@ -10,12 +10,12 @@
       <div class="placeholder-content">
         <img
           class="light-image is-rounded"
-          src="/src/assets/images/illustrations/wizard/team-placeholder.svg"
+          src="/@images/illustrations/wizard/team-placeholder.svg"
           alt=""
         />
         <img
           class="dark-image is-rounded"
-          src="/src/assets/images/illustrations/wizard/team-placeholder.svg"
+          src="/@images/illustrations/wizard/team-placeholder.svg"
           alt=""
         />
         <h3>Invite People</h3>
@@ -45,14 +45,14 @@
           <img
             class="avatar"
             src="https://via.placeholder.com/150x150"
-            data-demo-src="/src/assets/images/avatars/photos/8.jpg"
+            data-demo-src="/@images/avatars/photos/8.jpg"
             alt=""
             data-user-popover="3"
           />
           <img
             class="badge"
             src="https://via.placeholder.com/150x150"
-            data-demo-src="/src/assets/images/icons/flags/united-states-of-america.svg"
+            data-demo-src="/@images/icons/flags/united-states-of-america.svg"
             alt=""
           />
         </div>

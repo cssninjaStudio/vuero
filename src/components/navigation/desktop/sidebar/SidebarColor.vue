@@ -1,8 +1,8 @@
 <template>
   <div class="main-sidebar is-colored">
     <div class="sidebar-brand">
-      <a href="/">
-        <img src="/src/assets/images/logos/logo/logo-light.svg" alt="" />
+      <RouterLink :to="{ name: 'index' }">
+        <img src="/@images/logos/logo/logo-light.svg" alt="" />
       </a>
     </div>
     <div class="sidebar-inner">

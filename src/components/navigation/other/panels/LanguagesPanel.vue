@@ -16,7 +16,7 @@
               <input type="radio" name="language_selection" checked />
               <div class="language-option-inner">
                 <img
-                  src="/src/assets/images/icons/flags/united-states-of-america.svg"
+                  src="/@images/icons/flags/united-states-of-america.svg"
                   alt=""
                 />
                 <div class="indicator">
@@ -30,7 +30,7 @@
             <div class="language-option">
               <input type="radio" name="language_selection" />
               <div class="language-option-inner">
-                <img src="/src/assets/images/icons/flags/france.svg" alt="" />
+                <img src="/@images/icons/flags/france.svg" alt="" />
                 <div class="indicator">
                   <Icon icon="feather:check" />
                 </div>
@@ -42,7 +42,7 @@
             <div class="language-option">
               <input type="radio" name="language_selection" />
               <div class="language-option-inner">
-                <img src="/src/assets/images/icons/flags/spain.svg" alt="" />
+                <img src="/@images/icons/flags/spain.svg" alt="" />
                 <div class="indicator">
                   <Icon icon="feather:check" />
                 </div>
@@ -54,7 +54,7 @@
             <div class="language-option">
               <input type="radio" name="language_selection" />
               <div class="language-option-inner">
-                <img src="/src/assets/images/icons/flags/germany.svg" alt="" />
+                <img src="/@images/icons/flags/germany.svg" alt="" />
                 <div class="indicator">
                   <Icon icon="feather:check" />
                 </div>
@@ -66,7 +66,7 @@
             <div class="language-option">
               <input type="radio" name="language_selection" />
               <div class="language-option-inner">
-                <img src="/src/assets/images/icons/flags/mexico.svg" alt="" />
+                <img src="/@images/icons/flags/mexico.svg" alt="" />
                 <div class="indicator">
                   <Icon icon="feather:check" />
                 </div>
@@ -78,7 +78,7 @@
             <div class="language-option">
               <input type="radio" name="language_selection" />
               <div class="language-option-inner">
-                <img src="/src/assets/images/icons/flags/china.svg" alt="" />
+                <img src="/@images/icons/flags/china.svg" alt="" />
                 <div class="indicator">
                   <Icon icon="feather:check" />
                 </div>
@@ -90,12 +90,12 @@
         <div class="img-wrap has-text-centered">
           <img
             class="light-image"
-            src="/src/assets/images/illustrations/right-panel/languages.svg"
+            src="/@images/illustrations/right-panel/languages.svg"
             alt=""
           />
           <img
             class="dark-image"
-            src="/src/assets/images/illustrations/right-panel/languages-dark.svg"
+            src="/@images/illustrations/right-panel/languages-dark.svg"
             alt=""
           />
         </div>

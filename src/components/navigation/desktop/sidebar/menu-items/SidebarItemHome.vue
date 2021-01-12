@@ -1,7 +1,10 @@
 <template>
   <li>
-    <a id="home-sidebar-menu" href="/admin-dashboards-personal-1.html">
+    <RouterLink
+      id="home-sidebar-menu"
+      :to="{ name: 'admin-dashboards-personal-1' }"
+    >
       <Icon class="sidebar-svg" icon="feather:activity" />
-    </a>
+    </RouterLink>
   </li>
 </template>

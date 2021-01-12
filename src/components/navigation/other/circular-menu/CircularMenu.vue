@@ -17,7 +17,7 @@
         data-panel="languages-panel"
       >
         <img
-          src="/src/assets/images/icons/flags/united-states-of-america.svg"
+          src="/@images/icons/flags/united-states-of-america.svg"
           alt=""
         />
       </a>

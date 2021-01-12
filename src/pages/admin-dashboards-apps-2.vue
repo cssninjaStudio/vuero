@@ -7,15 +7,15 @@
           <!-- Header -->
           <div class="header-area">
             <div class="inbox-title">
-              <a href="/" class="inbox-brand">
+              <RouterLink :to="{ name: 'index' }" class="inbox-brand">
                 <img
                   class="light-image"
-                  src="/src/assets/images/logos/logo/logo.svg"
+                  src="/@images/logos/logo/logo.svg"
                   alt=""
                 />
                 <img
                   class="dark-image"
-                  src="/src/assets/images/logos/logo/logo-light.svg"
+                  src="/@images/logos/logo/logo-light.svg"
                   alt=""
                 />
               </a>
@@ -134,7 +134,7 @@
                 <div class="contact-block">
                   <img
                     src="https://via.placeholder.com/150x150"
-                    data-demo-src="/src/assets/images/avatars/photos/7.jpg"
+                    data-demo-src="/@images/avatars/photos/7.jpg"
                     alt=""
                   />
                   <div class="contact-meta">
@@ -146,7 +146,7 @@
                 <div class="contact-block">
                   <img
                     src="https://via.placeholder.com/150x150"
-                    data-demo-src="/src/assets/images/avatars/photos/25.jpg"
+                    data-demo-src="/@images/avatars/photos/25.jpg"
                     alt=""
                   />
                   <div class="contact-meta">
@@ -158,7 +158,7 @@
                 <div class="contact-block">
                   <img
                     src="https://via.placeholder.com/150x150"
-                    data-demo-src="/src/assets/images/avatars/photos/18.jpg"
+                    data-demo-src="/@images/avatars/photos/18.jpg"
                     alt=""
                   />
                   <div class="contact-meta">
@@ -170,7 +170,7 @@
                 <div class="contact-block">
                   <img
                     src="https://via.placeholder.com/150x150"
-                    data-demo-src="/src/assets/images/avatars/photos/32.jpg"
+                    data-demo-src="/@images/avatars/photos/32.jpg"
                     alt=""
                   />
                   <div class="contact-meta">
@@ -182,7 +182,7 @@
                 <div class="contact-block">
                   <img
                     src="https://via.placeholder.com/150x150"
-                    data-demo-src="/src/assets/images/avatars/photos/38.jpg"
+                    data-demo-src="/@images/avatars/photos/38.jpg"
                     alt=""
                   />
                   <div class="contact-meta">

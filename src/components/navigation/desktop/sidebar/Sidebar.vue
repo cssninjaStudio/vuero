@@ -1,18 +1,14 @@
 <template>
   <div class="main-sidebar">
     <div class="sidebar-brand">
-      <a href="/">
-        <img
-          class="light-image"
-          src="/src/assets/images/logos/logo/logo.svg"
-          alt=""
-        />
+      <RouterLink :to="{ name: 'index' }">
+        <img class="light-image" src="/@images/logos/logo/logo.svg" alt="" />
         <img
           class="dark-image"
-          src="/src/assets/images/logos/logo/logo-light.svg"
+          src="/@images/logos/logo/logo-light.svg"
           alt=""
         />
-      </a>
+      </RouterLink>
     </div>
     <div class="sidebar-inner">
       <div class="naver"></div>

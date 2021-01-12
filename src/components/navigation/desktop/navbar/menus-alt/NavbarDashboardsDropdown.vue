@@ -30,12 +30,12 @@
 
             <img
               class="placeholder-image light-image"
-              src="/assets/img/illustrations/components/plugins.svg"
+              src="/@images/illustrations/components/plugins.svg"
               alt=""
             />
             <img
               class="placeholder-image dark-image"
-              src="/assets/img/illustrations/components/plugins-dark.svg"
+              src="/@images/illustrations/components/plugins-dark.svg"
               alt=""
             />
           </div>

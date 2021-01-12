@@ -1,0 +1,506 @@
+<template>
+  <DefaultLayout>
+    <LayoutsSidebar />
+    <LayoutsMobileSubsidebar />
+
+    <!-- Content Wrapper -->
+    <div
+      id="grid-tiles"
+      class="view-wrapper"
+      data-naver-offset="214"
+      data-menu-item="#layouts-sidebar-menu"
+      data-mobile-item="#home-sidebar-menu-mobile"
+    >
+      <div class="page-content-wrapper">
+        <div class="page-content is-relative">
+          <div class="page-title has-text-centered">
+            <!-- Sidebar Trigger -->
+            <div
+              class="huro-hamburger nav-trigger push-resize"
+              data-sidebar="layouts-sidebar"
+            >
+              <span class="menu-toggle has-chevron">
+                <span class="icon-box-toggle">
+                  <span class="rotate">
+                    <i class="icon-line-top"></i>
+                    <i class="icon-line-center"></i>
+                    <i class="icon-line-bottom"></i>
+                  </span>
+                </span>
+              </span>
+            </div>
+
+            <div class="title-wrap">
+              <h1 class="title is-4">Tile Grid</h1>
+            </div>
+
+            <Toolbar />
+          </div>
+
+          <div class="tile-grid-toolbar">
+            <div class="control has-icon">
+              <input
+                class="input custom-text-filter"
+                placeholder="Search..."
+                data-filter-target=".column"
+              />
+              <div class="form-icon">
+                <Icon icon="feather:search" />
+              </div>
+            </div>
+
+            <div class="buttons">
+              <div class="field h-hidden-mobile">
+                <div class="control">
+                  <div class="h-select">
+                    <div class="select-box">
+                      <span>All Files</span>
+                    </div>
+                    <div class="select-icon">
+                      <Icon icon="feather:chevron-down" />
+                    </div>
+                    <div class="select-drop has-slimscroll-sm">
+                      <div class="drop-inner">
+                        <div class="option-row">
+                          <input type="radio" name="grid_filter" />
+                          <div class="option-meta">
+                            <span>Recently updated</span>
+                          </div>
+                        </div>
+                        <div class="option-row">
+                          <input type="radio" name="grid_filter" />
+                          <div class="option-meta">
+                            <span>My Files</span>
+                          </div>
+                        </div>
+                        <div class="option-row">
+                          <input type="radio" name="grid_filter" />
+                          <div class="option-meta">
+                            <span>Team Files</span>
+                          </div>
+                        </div>
+                        <div class="option-row">
+                          <input type="radio" name="grid_filter" />
+                          <div class="option-meta">
+                            <span>Deprecated</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="button h-button is-primary is-raised">
+                <span class="icon">
+                  <i class="fas fa-plus"></i>
+                </span>
+                <span>Add File</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="page-content-inner">
+            <div class="tile-grid tile-grid-v2">
+              <!--List Empty Search Placeholder -->
+              <div
+                class="page-placeholder custom-text-filter-placeholder is-hidden"
+              >
+                <div class="placeholder-content">
+                  <img
+                    class="light-image"
+                    src="/@images/illustrations/placeholders/search-4.svg"
+                    alt=""
+                  />
+                  <img
+                    class="dark-image"
+                    src="/@images/illustrations/placeholders/search-4-dark.svg"
+                    alt=""
+                  />
+                  <h3>We couldn't find any matching results.</h3>
+                  <p class="is-larger">
+                    Too bad. Looks like we couldn't find any matching results
+                    for the search terms you've entered. Please try different
+                    search terms or criteria.
+                  </p>
+                </div>
+              </div>
+
+              <!--Tile Grid v1-->
+              <div class="columns is-multiline">
+                <!--Grid item-->
+                <div class="column is-4">
+                  <div class="tile-grid-item">
+                    <div class="tile-grid-item-inner">
+                      <img
+                        src="https://via.placeholder.com/150x150"
+                        data-demo-src="/@images/icons/files/pdf.svg"
+                        alt=""
+                      />
+                      <div class="meta">
+                        <span class="dark-inverted">Company UX Guide</span>
+                        <span>
+                          <span>4.7 MB</span>
+                          <i class="fas fa-circle icon-separator"></i>
+                          <span>Updated 2 days ago</span>
+                        </span>
+                      </div>
+                      <FileTileDropdown />
+                    </div>
+                  </div>
+                </div>
+
+                <!--Grid item-->
+                <div class="column is-4">
+                  <div class="tile-grid-item">
+                    <div class="tile-grid-item-inner">
+                      <img
+                        src="https://via.placeholder.com/150x150"
+                        data-demo-src="/@images/icons/files/sheet.svg"
+                        alt=""
+                      />
+                      <div class="meta">
+                        <span class="dark-inverted">Tech Summit Expenses</span>
+                        <span>
+                          <span>34 KB</span>
+                          <i class="fas fa-circle icon-separator"></i>
+                          <span>Updated 1 week ago</span>
+                        </span>
+                      </div>
+                      <FileTileDropdown />
+                    </div>
+                  </div>
+                </div>
+
+                <!--Grid item-->
+                <div class="column is-4">
+                  <div class="tile-grid-item">
+                    <div class="tile-grid-item-inner">
+                      <img
+                        src="https://via.placeholder.com/150x150"
+                        data-demo-src="/@images/icons/files/doc-2.svg"
+                        alt=""
+                      />
+                      <div class="meta">
+                        <span class="dark-inverted">Project Outline</span>
+                        <span>
+                          <span>77 KB</span>
+                          <i class="fas fa-circle icon-separator"></i>
+                          <span>Updated 2 weeks ago</span>
+                        </span>
+                      </div>
+                      <FileTileDropdown />
+                    </div>
+                  </div>
+                </div>
+
+                <!--Grid item-->
+                <div class="column is-4">
+                  <div class="tile-grid-item">
+                    <div class="tile-grid-item-inner">
+                      <img
+                        src="https://via.placeholder.com/150x150"
+                        data-demo-src="/@images/icons/files/ppt.svg"
+                        alt=""
+                      />
+                      <div class="meta">
+                        <span class="dark-inverted">UX Presentation</span>
+                        <span>
+                          <span>2.3 MB</span>
+                          <i class="fas fa-circle icon-separator"></i>
+                          <span>Updated 4 days ago</span>
+                        </span>
+                      </div>
+                      <FileTileDropdown />
+                    </div>
+                  </div>
+                </div>
+
+                <!--Grid item-->
+                <div class="column is-4">
+                  <div class="tile-grid-item">
+                    <div class="tile-grid-item-inner">
+                      <img
+                        src="https://via.placeholder.com/150x150"
+                        data-demo-src="/@images/icons/files/ai.svg"
+                        alt=""
+                      />
+                      <div class="meta">
+                        <span class="dark-inverted"
+                          >Website Homepage Redesign</span
+                        >
+                        <span>
+                          <span>4.8 MB</span>
+                          <i class="fas fa-circle icon-separator"></i>
+                          <span>Updated 3 hours ago</span>
+                        </span>
+                      </div>
+                      <FileTileDropdown />
+                    </div>
+                  </div>
+                </div>
+
+                <!--Grid item-->
+                <div class="column is-4">
+                  <div class="tile-grid-item">
+                    <div class="tile-grid-item-inner">
+                      <img
+                        src="https://via.placeholder.com/150x150"
+                        data-demo-src="/@images/icons/files/doc-2.svg"
+                        alt=""
+                      />
+                      <div class="meta">
+                        <span class="dark-inverted"
+                          >UX Ramp Up for Interns</span
+                        >
+                        <span>
+                          <span>1.8 MB</span>
+                          <i class="fas fa-circle icon-separator"></i>
+                          <span>Updated 6 hours ago</span>
+                        </span>
+                      </div>
+                      <FileTileDropdown />
+                    </div>
+                  </div>
+                </div>
+
+                <!--Grid item-->
+                <div class="column is-4">
+                  <div class="tile-grid-item">
+                    <div class="tile-grid-item-inner">
+                      <img
+                        src="https://via.placeholder.com/150x150"
+                        data-demo-src="/@images/icons/files/pdf.svg"
+                        alt=""
+                      />
+                      <div class="meta">
+                        <span class="dark-inverted">2020 Projects Digest</span>
+                        <span>
+                          <span>8.9 MB</span>
+                          <i class="fas fa-circle icon-separator"></i>
+                          <span>Updated 2 days ago</span>
+                        </span>
+                      </div>
+                      <FileTileDropdown />
+                    </div>
+                  </div>
+                </div>
+
+                <!--Grid item-->
+                <div class="column is-4">
+                  <div class="tile-grid-item">
+                    <div class="tile-grid-item-inner">
+                      <img
+                        src="https://via.placeholder.com/150x150"
+                        data-demo-src="/@images/icons/files/doc-2.svg"
+                        alt=""
+                      />
+                      <div class="meta">
+                        <span class="dark-inverted"
+                          >Financial Report - 2020</span
+                        >
+                        <span>
+                          <span>1.2 MB</span>
+                          <i class="fas fa-circle icon-separator"></i>
+                          <span>Updated 2 months ago</span>
+                        </span>
+                      </div>
+                      <FileTileDropdown />
+                    </div>
+                  </div>
+                </div>
+
+                <!--Grid item-->
+                <div class="column is-4">
+                  <div class="tile-grid-item">
+                    <div class="tile-grid-item-inner">
+                      <img
+                        src="https://via.placeholder.com/150x150"
+                        data-demo-src="/@images/icons/files/sheet.svg"
+                        alt=""
+                      />
+                      <div class="meta">
+                        <span class="dark-inverted"
+                          >2020 Supplier Expenses</span
+                        >
+                        <span>
+                          <span>250 KB</span>
+                          <i class="fas fa-circle icon-separator"></i>
+                          <span>Updated 2 weeks ago</span>
+                        </span>
+                      </div>
+                      <FileTileDropdown />
+                    </div>
+                  </div>
+                </div>
+
+                <!--Grid item-->
+                <div class="column is-4">
+                  <div class="tile-grid-item">
+                    <div class="tile-grid-item-inner">
+                      <img
+                        src="https://via.placeholder.com/150x150"
+                        data-demo-src="/@images/icons/files/ai.svg"
+                        alt=""
+                      />
+                      <div class="meta">
+                        <span class="dark-inverted"
+                          >Website About Page Redesign</span
+                        >
+                        <span>
+                          <span>3.9 MB</span>
+                          <i class="fas fa-circle icon-separator"></i>
+                          <span>Updated 2 months ago</span>
+                        </span>
+                      </div>
+                      <FileTileDropdown />
+                    </div>
+                  </div>
+                </div>
+
+                <!--Grid item-->
+                <div class="column is-4">
+                  <div class="tile-grid-item">
+                    <div class="tile-grid-item-inner">
+                      <img
+                        src="https://via.placeholder.com/150x150"
+                        data-demo-src="/@images/icons/files/ai.svg"
+                        alt=""
+                      />
+                      <div class="meta">
+                        <span class="dark-inverted"
+                          >Website Pricing Page Redesign</span
+                        >
+                        <span>
+                          <span>2.6 MB</span>
+                          <i class="fas fa-circle icon-separator"></i>
+                          <span>Updated 2 months ago</span>
+                        </span>
+                      </div>
+                      <FileTileDropdown />
+                    </div>
+                  </div>
+                </div>
+
+                <!--Grid item-->
+                <div class="column is-4">
+                  <div class="tile-grid-item">
+                    <div class="tile-grid-item-inner">
+                      <img
+                        src="https://via.placeholder.com/150x150"
+                        data-demo-src="/@images/icons/files/doc-2.svg"
+                        alt=""
+                      />
+                      <div class="meta">
+                        <span class="dark-inverted"
+                          >Financial Report - 2019</span
+                        >
+                        <span>
+                          <span>1.1 MB</span>
+                          <i class="fas fa-circle icon-separator"></i>
+                          <span>Updated 8 months ago</span>
+                        </span>
+                      </div>
+                      <FileTileDropdown />
+                    </div>
+                  </div>
+                </div>
+
+                <!--Grid item-->
+                <div class="column is-4">
+                  <div class="tile-grid-item">
+                    <div class="tile-grid-item-inner">
+                      <img
+                        src="https://via.placeholder.com/150x150"
+                        data-demo-src="/@images/icons/files/sheet.svg"
+                        alt=""
+                      />
+                      <div class="meta">
+                        <span class="dark-inverted"
+                          >2019 Supplier Expenses</span
+                        >
+                        <span>
+                          <span>34 KB</span>
+                          <i class="fas fa-circle icon-separator"></i>
+                          <span>Updated 8 months ago</span>
+                        </span>
+                      </div>
+                      <FileTileDropdown />
+                    </div>
+                  </div>
+                </div>
+
+                <!--Grid item-->
+                <div class="column is-4">
+                  <div class="tile-grid-item">
+                    <div class="tile-grid-item-inner">
+                      <img
+                        src="https://via.placeholder.com/150x150"
+                        data-demo-src="/@images/icons/files/ai.svg"
+                        alt=""
+                      />
+                      <div class="meta">
+                        <span class="dark-inverted"
+                          >Website Contact Page Redesign</span
+                        >
+                        <span>
+                          <span>5.8 MB</span>
+                          <i class="fas fa-circle icon-separator"></i>
+                          <span>Updated 3 months ago</span>
+                        </span>
+                      </div>
+                      <FileTileDropdown />
+                    </div>
+                  </div>
+                </div>
+
+                <!--Grid item-->
+                <div class="column is-4">
+                  <div class="tile-grid-item">
+                    <div class="tile-grid-item-inner">
+                      <img
+                        src="https://via.placeholder.com/150x150"
+                        data-demo-src="/@images/icons/files/pdf.svg"
+                        alt=""
+                      />
+                      <div class="meta">
+                        <span class="dark-inverted">Company Brand Book</span>
+                        <span>
+                          <span>5.3 MB</span>
+                          <i class="fas fa-circle icon-separator"></i>
+                          <span>Updated 3 weeks ago</span>
+                        </span>
+                      </div>
+                      <FileTileDropdown />
+                    </div>
+                  </div>
+                </div>
+
+                <!--Grid item-->
+                <div class="column is-4">
+                  <div class="tile-grid-item">
+                    <div class="tile-grid-item-inner">
+                      <img
+                        src="https://via.placeholder.com/150x150"
+                        data-demo-src="/@images/icons/files/pdf.svg"
+                        alt=""
+                      />
+                      <div class="meta">
+                        <span class="dark-inverted">2019 Projects Digest</span>
+                        <span>
+                          <span>4.7 MB</span>
+                          <i class="fas fa-circle icon-separator"></i>
+                          <span>Updated 9 months ago</span>
+                        </span>
+                      </div>
+                      <FileTileDropdown />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </DefaultLayout>
+</template>

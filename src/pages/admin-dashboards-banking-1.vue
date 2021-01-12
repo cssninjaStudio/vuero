@@ -60,7 +60,7 @@
                             <div class="card-number">
                               <span>** 4628</span>
                               <img
-                                src="/src/assets/images/icons/dashboards/banking/visa-squared-white.svg"
+                                src="/@images/icons/dashboards/banking/visa-squared-white.svg"
                                 alt=""
                               />
                             </div>
@@ -98,7 +98,7 @@
                           <h4 class="dark-inverted">Type</h4>
                           <span class="has-image">
                             <img
-                              src="/src/assets/images/icons/dashboards/banking/visa-squared-color.svg"
+                              src="/@images/icons/dashboards/banking/visa-squared-color.svg"
                               alt=""
                             />
                             Credit card
@@ -112,7 +112,7 @@
                             <div class="card-number">
                               <span>** 2649</span>
                               <img
-                                src="/src/assets/images/icons/dashboards/banking/visa-squared-white.svg"
+                                src="/@images/icons/dashboards/banking/visa-squared-white.svg"
                                 alt=""
                               />
                             </div>
@@ -195,7 +195,7 @@
                                 <div class="combo-item">
                                   <img
                                     src="https://via.placeholder.com/150x150"
-                                    data-demo-src="/src/assets/images/avatars/photos/8.jpg"
+                                    data-demo-src="/@images/avatars/photos/8.jpg"
                                     alt=""
                                   />
                                   <span class="selected-item"
@@ -213,7 +213,7 @@
                                       <span class="item-icon">
                                         <img
                                           src="https://via.placeholder.com/150x150"
-                                          data-demo-src="/src/assets/images/icons/dashboards/banking/bank-1.svg"
+                                          data-demo-src="/@images/icons/dashboards/banking/bank-1.svg"
                                           alt=""
                                         />
                                       </span>
@@ -228,7 +228,7 @@
                                       <span class="item-icon">
                                         <img
                                           src="https://via.placeholder.com/150x150"
-                                          data-demo-src="/src/assets/images/icons/dashboards/banking/bank-2.svg"
+                                          data-demo-src="/@images/icons/dashboards/banking/bank-2.svg"
                                           alt=""
                                         />
                                       </span>
@@ -243,7 +243,7 @@
                                       <span class="item-icon">
                                         <img
                                           src="https://via.placeholder.com/150x150"
-                                          data-demo-src="/src/assets/images/icons/dashboards/banking/bank-3.svg"
+                                          data-demo-src="/@images/icons/dashboards/banking/bank-3.svg"
                                           alt=""
                                         />
                                       </span>
@@ -336,7 +336,7 @@
                               <img
                                 class="avatar"
                                 src="https://via.placeholder.com/150x150"
-                                data-demo-src="/src/assets/images/avatars/photos/18.jpg"
+                                data-demo-src="/@images/avatars/photos/18.jpg"
                                 alt=""
                                 data-user-popover="7"
                               />
@@ -353,7 +353,7 @@
                               <img
                                 class="avatar"
                                 src="https://via.placeholder.com/150x150"
-                                data-demo-src="/src/assets/images/avatars/photos/7.jpg"
+                                data-demo-src="/@images/avatars/photos/7.jpg"
                                 alt=""
                                 data-user-popover="0"
                               />
@@ -376,7 +376,7 @@
                                   <div class="combo-item">
                                     <img
                                       src="https://via.placeholder.com/150x150"
-                                      data-demo-src="/src/assets/images/avatars/photos/8.jpg"
+                                      data-demo-src="/@images/avatars/photos/8.jpg"
                                       alt=""
                                     />
                                     <span class="selected-item"
@@ -394,7 +394,7 @@
                                         <span class="item-icon">
                                           <img
                                             src="https://via.placeholder.com/150x150"
-                                            data-demo-src="/src/assets/images/icons/dashboards/banking/bank-1.svg"
+                                            data-demo-src="/@images/icons/dashboards/banking/bank-1.svg"
                                             alt=""
                                           />
                                         </span>
@@ -409,7 +409,7 @@
                                         <span class="item-icon">
                                           <img
                                             src="https://via.placeholder.com/150x150"
-                                            data-demo-src="/src/assets/images/icons/dashboards/banking/bank-2.svg"
+                                            data-demo-src="/@images/icons/dashboards/banking/bank-2.svg"
                                             alt=""
                                           />
                                         </span>
@@ -424,7 +424,7 @@
                                         <span class="item-icon">
                                           <img
                                             src="https://via.placeholder.com/150x150"
-                                            data-demo-src="/src/assets/images/icons/dashboards/banking/bank-3.svg"
+                                            data-demo-src="/@images/icons/dashboards/banking/bank-3.svg"
                                             alt=""
                                           />
                                         </span>

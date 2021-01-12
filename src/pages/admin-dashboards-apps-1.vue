@@ -44,7 +44,7 @@
                 <div class="left-header">
                   <div class="header-image">
                     <img
-                      src="/src/assets/images/illustrations/dashboards/food/header.svg"
+                      src="/@images/illustrations/dashboards/food/header.svg"
                       alt=""
                     />
                   </div>
@@ -74,7 +74,7 @@
                         <div class="food-pill">
                           <div class="food-pill-icon">
                             <img
-                              src="/src/assets/images/illustrations/dashboards/food/icon-1.svg"
+                              src="/@images/illustrations/dashboards/food/icon-1.svg"
                               alt=""
                             />
                           </div>
@@ -84,7 +84,7 @@
                         <div class="food-pill">
                           <div class="food-pill-icon">
                             <img
-                              src="/src/assets/images/illustrations/dashboards/food/icon-2.svg"
+                              src="/@images/illustrations/dashboards/food/icon-2.svg"
                               alt=""
                             />
                           </div>
@@ -94,7 +94,7 @@
                         <div class="food-pill">
                           <div class="food-pill-icon">
                             <img
-                              src="/src/assets/images/illustrations/dashboards/food/icon-3.svg"
+                              src="/@images/illustrations/dashboards/food/icon-3.svg"
                               alt=""
                             />
                           </div>
@@ -104,7 +104,7 @@
                         <div class="food-pill">
                           <div class="food-pill-icon">
                             <img
-                              src="/src/assets/images/illustrations/dashboards/food/icon-4.svg"
+                              src="/@images/illustrations/dashboards/food/icon-4.svg"
                               alt=""
                             />
                           </div>
@@ -114,7 +114,7 @@
                         <div class="food-pill">
                           <div class="food-pill-icon">
                             <img
-                              src="/src/assets/images/illustrations/dashboards/food/icon-5.svg"
+                              src="/@images/illustrations/dashboards/food/icon-5.svg"
                               alt=""
                             />
                           </div>
@@ -124,7 +124,7 @@
                         <div class="food-pill">
                           <div class="food-pill-icon">
                             <img
-                              src="/src/assets/images/illustrations/dashboards/food/icon-6.svg"
+                              src="/@images/illustrations/dashboards/food/icon-6.svg"
                               alt=""
                             />
                           </div>
@@ -134,7 +134,7 @@
                         <div class="food-pill">
                           <div class="food-pill-icon">
                             <img
-                              src="/src/assets/images/illustrations/dashboards/food/icon-7.svg"
+                              src="/@images/illustrations/dashboards/food/icon-7.svg"
                               alt=""
                             />
                           </div>
@@ -144,7 +144,7 @@
                         <div class="food-pill">
                           <div class="food-pill-icon">
                             <img
-                              src="/src/assets/images/illustrations/dashboards/food/icon-8.svg"
+                              src="/@images/illustrations/dashboards/food/icon-8.svg"
                               alt=""
                             />
                           </div>
@@ -154,7 +154,7 @@
                         <div class="food-pill">
                           <div class="food-pill-icon">
                             <img
-                              src="/src/assets/images/illustrations/dashboards/food/icon-9.svg"
+                              src="/@images/illustrations/dashboards/food/icon-9.svg"
                               alt=""
                             />
                           </div>
@@ -164,7 +164,7 @@
                         <div class="food-pill">
                           <div class="food-pill-icon">
                             <img
-                              src="/src/assets/images/illustrations/dashboards/food/icon-10.svg"
+                              src="/@images/illustrations/dashboards/food/icon-10.svg"
                               alt=""
                             />
                           </div>
@@ -174,7 +174,7 @@
                         <div class="food-pill">
                           <div class="food-pill-icon">
                             <img
-                              src="/src/assets/images/illustrations/dashboards/food/icon-11.svg"
+                              src="/@images/illustrations/dashboards/food/icon-11.svg"
                               alt=""
                             />
                           </div>
@@ -184,7 +184,7 @@
                         <div class="food-pill">
                           <div class="food-pill-icon">
                             <img
-                              src="/src/assets/images/illustrations/dashboards/food/icon-12.svg"
+                              src="/@images/illustrations/dashboards/food/icon-12.svg"
                               alt=""
                             />
                           </div>
@@ -194,7 +194,7 @@
                         <div class="food-pill">
                           <div class="food-pill-icon">
                             <img
-                              src="/src/assets/images/illustrations/dashboards/food/icon-13.svg"
+                              src="/@images/illustrations/dashboards/food/icon-13.svg"
                               alt=""
                             />
                           </div>
@@ -204,7 +204,7 @@
                         <div class="food-pill">
                           <div class="food-pill-icon">
                             <img
-                              src="/src/assets/images/illustrations/dashboards/food/icon-2.svg"
+                              src="/@images/illustrations/dashboards/food/icon-2.svg"
                               alt=""
                             />
                           </div>
@@ -214,7 +214,7 @@
                         <div class="food-pill">
                           <div class="food-pill-icon">
                             <img
-                              src="/src/assets/images/illustrations/dashboards/food/icon-3.svg"
+                              src="/@images/illustrations/dashboards/food/icon-3.svg"
                               alt=""
                             />
                           </div>
@@ -224,7 +224,7 @@
                         <div class="food-pill">
                           <div class="food-pill-icon">
                             <img
-                              src="/src/assets/images/illustrations/dashboards/food/icon-4.svg"
+                              src="/@images/illustrations/dashboards/food/icon-4.svg"
                               alt=""
                             />
                           </div>
@@ -234,7 +234,7 @@
                         <div class="food-pill">
                           <div class="food-pill-icon">
                             <img
-                              src="/src/assets/images/illustrations/dashboards/food/icon-5.svg"
+                              src="/@images/illustrations/dashboards/food/icon-5.svg"
                               alt=""
                             />
                           </div>
@@ -244,7 +244,7 @@
                         <div class="food-pill">
                           <div class="food-pill-icon">
                             <img
-                              src="/src/assets/images/illustrations/dashboards/food/icon-6.svg"
+                              src="/@images/illustrations/dashboards/food/icon-6.svg"
                               alt=""
                             />
                           </div>
@@ -254,7 +254,7 @@
                         <div class="food-pill">
                           <div class="food-pill-icon">
                             <img
-                              src="/src/assets/images/illustrations/dashboards/food/icon-7.svg"
+                              src="/@images/illustrations/dashboards/food/icon-7.svg"
                               alt=""
                             />
                           </div>
@@ -264,7 +264,7 @@
                         <div class="food-pill">
                           <div class="food-pill-icon">
                             <img
-                              src="/src/assets/images/illustrations/dashboards/food/icon-9.svg"
+                              src="/@images/illustrations/dashboards/food/icon-9.svg"
                               alt=""
                             />
                           </div>
@@ -274,7 +274,7 @@
                         <div class="food-pill">
                           <div class="food-pill-icon">
                             <img
-                              src="/src/assets/images/illustrations/dashboards/food/icon-10.svg"
+                              src="/@images/illustrations/dashboards/food/icon-10.svg"
                               alt=""
                             />
                           </div>
@@ -284,7 +284,7 @@
                         <div class="food-pill">
                           <div class="food-pill-icon">
                             <img
-                              src="/src/assets/images/illustrations/dashboards/food/icon-11.svg"
+                              src="/@images/illustrations/dashboards/food/icon-11.svg"
                               alt=""
                             />
                           </div>
@@ -294,7 +294,7 @@
                         <div class="food-pill">
                           <div class="food-pill-icon">
                             <img
-                              src="/src/assets/images/illustrations/dashboards/food/icon-12.svg"
+                              src="/@images/illustrations/dashboards/food/icon-12.svg"
                               alt=""
                             />
                           </div>
@@ -304,7 +304,7 @@
                         <div class="food-pill">
                           <div class="food-pill-icon">
                             <img
-                              src="/src/assets/images/illustrations/dashboards/food/icon-13.svg"
+                              src="/@images/illustrations/dashboards/food/icon-13.svg"
                               alt=""
                             />
                           </div>
@@ -321,7 +321,7 @@
                             <div class="image-container">
                               <img
                                 src="https://via.placeholder.com/800x450"
-                                data-demo-src="/src/assets/images/photo/demo/food/1.jpg"
+                                data-demo-src="/@images/photo/demo/food/1.jpg"
                                 alt=""
                               />
                               <div class="timer">
@@ -335,7 +335,7 @@
                               <div class="meta-icon">
                                 <img
                                   src="https://via.placeholder.com/800x450"
-                                  data-demo-src="/src/assets/images/illustrations/dashboards/food/icon-2.svg"
+                                  data-demo-src="/@images/illustrations/dashboards/food/icon-2.svg"
                                   alt=""
                                 />
                               </div>
@@ -359,7 +359,7 @@
                             <div class="image-container">
                               <img
                                 src="https://via.placeholder.com/800x450"
-                                data-demo-src="/src/assets/images/photo/demo/food/2.jpg"
+                                data-demo-src="/@images/photo/demo/food/2.jpg"
                                 alt=""
                               />
                               <div class="timer">
@@ -372,7 +372,7 @@
                             <div class="meta-container">
                               <div class="meta-icon">
                                 <img
-                                  src="/src/assets/images/illustrations/dashboards/food/icon-4.svg"
+                                  src="/@images/illustrations/dashboards/food/icon-4.svg"
                                   alt=""
                                 />
                               </div>
@@ -396,7 +396,7 @@
                             <div class="image-container">
                               <img
                                 src="https://via.placeholder.com/800x450"
-                                data-demo-src="/src/assets/images/photo/demo/food/3.jpg"
+                                data-demo-src="/@images/photo/demo/food/3.jpg"
                                 alt=""
                               />
                               <div class="timer">
@@ -409,7 +409,7 @@
                             <div class="meta-container">
                               <div class="meta-icon">
                                 <img
-                                  src="/src/assets/images/illustrations/dashboards/food/icon-9.svg"
+                                  src="/@images/illustrations/dashboards/food/icon-9.svg"
                                   alt=""
                                 />
                               </div>
@@ -433,7 +433,7 @@
                             <div class="image-container">
                               <img
                                 src="https://via.placeholder.com/800x450"
-                                data-demo-src="/src/assets/images/photo/demo/food/4.jpg"
+                                data-demo-src="/@images/photo/demo/food/4.jpg"
                                 alt=""
                               />
                               <div class="timer">
@@ -446,7 +446,7 @@
                             <div class="meta-container">
                               <div class="meta-icon">
                                 <img
-                                  src="/src/assets/images/illustrations/dashboards/food/icon-10.svg"
+                                  src="/@images/illustrations/dashboards/food/icon-10.svg"
                                   alt=""
                                 />
                               </div>
@@ -470,7 +470,7 @@
                             <div class="image-container">
                               <img
                                 src="https://via.placeholder.com/800x450"
-                                data-demo-src="/src/assets/images/photo/demo/food/5.jpg"
+                                data-demo-src="/@images/photo/demo/food/5.jpg"
                                 alt=""
                               />
                               <div class="timer">
@@ -483,7 +483,7 @@
                             <div class="meta-container">
                               <div class="meta-icon">
                                 <img
-                                  src="/src/assets/images/illustrations/dashboards/food/icon-10.svg"
+                                  src="/@images/illustrations/dashboards/food/icon-10.svg"
                                   alt=""
                                 />
                               </div>
@@ -507,7 +507,7 @@
                             <div class="image-container">
                               <img
                                 src="https://via.placeholder.com/800x450"
-                                data-demo-src="/src/assets/images/photo/demo/food/6.jpg"
+                                data-demo-src="/@images/photo/demo/food/6.jpg"
                                 alt=""
                               />
                               <div class="timer">
@@ -520,7 +520,7 @@
                             <div class="meta-container">
                               <div class="meta-icon">
                                 <img
-                                  src="/src/assets/images/illustrations/dashboards/food/icon-12.svg"
+                                  src="/@images/illustrations/dashboards/food/icon-12.svg"
                                   alt=""
                                 />
                               </div>
@@ -544,7 +544,7 @@
                             <div class="image-container">
                               <img
                                 src="https://via.placeholder.com/800x450"
-                                data-demo-src="/src/assets/images/photo/demo/food/7.jpg"
+                                data-demo-src="/@images/photo/demo/food/7.jpg"
                                 alt=""
                               />
                               <div class="timer">
@@ -557,7 +557,7 @@
                             <div class="meta-container">
                               <div class="meta-icon">
                                 <img
-                                  src="/src/assets/images/illustrations/dashboards/food/icon-7.svg"
+                                  src="/@images/illustrations/dashboards/food/icon-7.svg"
                                   alt=""
                                 />
                               </div>
@@ -581,7 +581,7 @@
                             <div class="image-container">
                               <img
                                 src="https://via.placeholder.com/800x450"
-                                data-demo-src="/src/assets/images/photo/demo/food/8.jpg"
+                                data-demo-src="/@images/photo/demo/food/8.jpg"
                                 alt=""
                               />
                               <div class="timer">
@@ -594,7 +594,7 @@
                             <div class="meta-container">
                               <div class="meta-icon">
                                 <img
-                                  src="/src/assets/images/illustrations/dashboards/food/icon-4.svg"
+                                  src="/@images/illustrations/dashboards/food/icon-4.svg"
                                   alt=""
                                 />
                               </div>
@@ -618,7 +618,7 @@
                             <div class="image-container">
                               <img
                                 src="https://via.placeholder.com/800x450"
-                                data-demo-src="/src/assets/images/photo/demo/food/9.jpg"
+                                data-demo-src="/@images/photo/demo/food/9.jpg"
                                 alt=""
                               />
                               <div class="timer">
@@ -631,7 +631,7 @@
                             <div class="meta-container">
                               <div class="meta-icon">
                                 <img
-                                  src="/src/assets/images/illustrations/dashboards/food/icon-13.svg"
+                                  src="/@images/illustrations/dashboards/food/icon-13.svg"
                                   alt=""
                                 />
                               </div>
@@ -655,7 +655,7 @@
                             <div class="image-container">
                               <img
                                 src="https://via.placeholder.com/800x450"
-                                data-demo-src="/src/assets/images/photo/demo/food/10.jpg"
+                                data-demo-src="/@images/photo/demo/food/10.jpg"
                                 alt=""
                               />
                               <div class="timer">
@@ -668,7 +668,7 @@
                             <div class="meta-container">
                               <div class="meta-icon">
                                 <img
-                                  src="/src/assets/images/illustrations/dashboards/food/icon-6.svg"
+                                  src="/@images/illustrations/dashboards/food/icon-6.svg"
                                   alt=""
                                 />
                               </div>
@@ -692,7 +692,7 @@
                             <div class="image-container">
                               <img
                                 src="https://via.placeholder.com/800x450"
-                                data-demo-src="/src/assets/images/photo/demo/food/11.jpg"
+                                data-demo-src="/@images/photo/demo/food/11.jpg"
                                 alt=""
                               />
                               <div class="timer">
@@ -705,7 +705,7 @@
                             <div class="meta-container">
                               <div class="meta-icon">
                                 <img
-                                  src="/src/assets/images/illustrations/dashboards/food/icon-4.svg"
+                                  src="/@images/illustrations/dashboards/food/icon-4.svg"
                                   alt=""
                                 />
                               </div>
@@ -729,7 +729,7 @@
                             <div class="image-container">
                               <img
                                 src="https://via.placeholder.com/800x450"
-                                data-demo-src="/src/assets/images/photo/demo/food/12.jpg"
+                                data-demo-src="/@images/photo/demo/food/12.jpg"
                                 alt=""
                               />
                               <div class="timer">
@@ -742,7 +742,7 @@
                             <div class="meta-container">
                               <div class="meta-icon">
                                 <img
-                                  src="/src/assets/images/illustrations/dashboards/food/icon-6.svg"
+                                  src="/@images/illustrations/dashboards/food/icon-6.svg"
                                   alt=""
                                 />
                               </div>
@@ -766,7 +766,7 @@
                             <div class="image-container">
                               <img
                                 src="https://via.placeholder.com/800x450"
-                                data-demo-src="/src/assets/images/photo/demo/food/13.jpg"
+                                data-demo-src="/@images/photo/demo/food/13.jpg"
                                 alt=""
                               />
                               <div class="timer">
@@ -779,7 +779,7 @@
                             <div class="meta-container">
                               <div class="meta-icon">
                                 <img
-                                  src="/src/assets/images/illustrations/dashboards/food/icon-8.svg"
+                                  src="/@images/illustrations/dashboards/food/icon-8.svg"
                                   alt=""
                                 />
                               </div>
@@ -803,7 +803,7 @@
                             <div class="image-container">
                               <img
                                 src="https://via.placeholder.com/800x450"
-                                data-demo-src="/src/assets/images/photo/demo/food/14.jpg"
+                                data-demo-src="/@images/photo/demo/food/14.jpg"
                                 alt=""
                               />
                               <div class="timer">
@@ -816,7 +816,7 @@
                             <div class="meta-container">
                               <div class="meta-icon">
                                 <img
-                                  src="/src/assets/images/illustrations/dashboards/food/icon-10.svg"
+                                  src="/@images/illustrations/dashboards/food/icon-10.svg"
                                   alt=""
                                 />
                               </div>
@@ -840,7 +840,7 @@
                             <div class="image-container">
                               <img
                                 src="https://via.placeholder.com/800x450"
-                                data-demo-src="/src/assets/images/photo/demo/food/15.jpg"
+                                data-demo-src="/@images/photo/demo/food/15.jpg"
                                 alt=""
                               />
                               <div class="timer">
@@ -853,7 +853,7 @@
                             <div class="meta-container">
                               <div class="meta-icon">
                                 <img
-                                  src="/src/assets/images/illustrations/dashboards/food/icon-10.svg"
+                                  src="/@images/illustrations/dashboards/food/icon-10.svg"
                                   alt=""
                                 />
                               </div>
@@ -877,7 +877,7 @@
                             <div class="image-container">
                               <img
                                 src="https://via.placeholder.com/800x450"
-                                data-demo-src="/src/assets/images/photo/demo/food/16.jpg"
+                                data-demo-src="/@images/photo/demo/food/16.jpg"
                                 alt=""
                               />
                               <div class="timer">
@@ -890,7 +890,7 @@
                             <div class="meta-container">
                               <div class="meta-icon">
                                 <img
-                                  src="/src/assets/images/illustrations/dashboards/food/icon-6.svg"
+                                  src="/@images/illustrations/dashboards/food/icon-6.svg"
                                   alt=""
                                 />
                               </div>
@@ -914,7 +914,7 @@
                             <div class="image-container">
                               <img
                                 src="https://via.placeholder.com/800x450"
-                                data-demo-src="/src/assets/images/photo/demo/food/17.jpg"
+                                data-demo-src="/@images/photo/demo/food/17.jpg"
                                 alt=""
                               />
                               <div class="timer">
@@ -927,7 +927,7 @@
                             <div class="meta-container">
                               <div class="meta-icon">
                                 <img
-                                  src="/src/assets/images/illustrations/dashboards/food/icon-4.svg"
+                                  src="/@images/illustrations/dashboards/food/icon-4.svg"
                                   alt=""
                                 />
                               </div>
@@ -951,7 +951,7 @@
                             <div class="image-container">
                               <img
                                 src="https://via.placeholder.com/800x450"
-                                data-demo-src="/src/assets/images/photo/demo/food/18.jpg"
+                                data-demo-src="/@images/photo/demo/food/18.jpg"
                                 alt=""
                               />
                               <div class="timer">
@@ -964,7 +964,7 @@
                             <div class="meta-container">
                               <div class="meta-icon">
                                 <img
-                                  src="/src/assets/images/illustrations/dashboards/food/icon-7.svg"
+                                  src="/@images/illustrations/dashboards/food/icon-7.svg"
                                   alt=""
                                 />
                               </div>
@@ -1033,7 +1033,7 @@
                     <div class="section-placeholder">
                       <div class="placeholder-content">
                         <img
-                          src="/src/assets/images/illustrations/dashboards/food/cart-placeholder.svg"
+                          src="/@images/illustrations/dashboards/food/cart-placeholder.svg"
                           alt=""
                         />
                         <h3 class="dark-inverted">No Items</h3>
@@ -1048,7 +1048,7 @@
                           <img
                             class="avatar is-squared"
                             src="https://via.placeholder.com/150x150"
-                            data-demo-src="/src/assets/images/photo/demo/food/1.jpg"
+                            data-demo-src="/@images/photo/demo/food/1.jpg"
                             alt=""
                           />
                         </div>
@@ -1062,7 +1062,7 @@
                           <img
                             class="avatar is-squared"
                             src="https://via.placeholder.com/150x150"
-                            data-demo-src="/src/assets/images/photo/demo/food/2.jpg"
+                            data-demo-src="/@images/photo/demo/food/2.jpg"
                             alt=""
                           />
                         </div>
@@ -1076,7 +1076,7 @@
                           <img
                             class="avatar is-squared"
                             src="https://via.placeholder.com/150x150"
-                            data-demo-src="/src/assets/images/photo/demo/food/3.jpg"
+                            data-demo-src="/@images/photo/demo/food/3.jpg"
                             alt=""
                           />
                         </div>
@@ -1142,7 +1142,7 @@
                     >
                       <img
                         class="main"
-                        src="/src/assets/images/illustrations/dashboards/food/widget.svg"
+                        src="/@images/illustrations/dashboards/food/widget.svg"
                         alt=""
                       />
                       <h3>You unlocked 2 new Achievements</h3>
@@ -1177,7 +1177,7 @@
                             <img
                               class="avatar is-squared"
                               src="https://via.placeholder.com/150x150"
-                              data-demo-src="/src/assets/images/avatars/photos/8.jpg"
+                              data-demo-src="/@images/avatars/photos/8.jpg"
                               alt=""
                               data-user-popover="3"
                             />

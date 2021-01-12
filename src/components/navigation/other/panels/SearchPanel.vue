@@ -6,12 +6,12 @@
       <div class="right-panel-head">
         <img
           class="light-image"
-          src="/src/assets/images/logos/logo/logo.svg"
+          src="/@images/logos/logo/logo.svg"
           alt=""
         />
         <img
           class="dark-image"
-          src="/src/assets/images/logos/logo/logo-light.svg"
+          src="/@images/logos/logo/logo-light.svg"
           alt=""
         />
         <a class="close-panel">
@@ -82,7 +82,7 @@
                 <img
                   class="avatar"
                   src="https://via.placeholder.com/150x150"
-                  data-demo-src="/src/assets/images/avatars/photos/7.jpg"
+                  data-demo-src="/@images/avatars/photos/7.jpg"
                   alt=""
                   data-user-popover="0"
                 />
@@ -99,7 +99,7 @@
                 <img
                   class="avatar"
                   src="https://via.placeholder.com/150x150"
-                  data-demo-src="/src/assets/images/avatars/photos/13.jpg"
+                  data-demo-src="/@images/avatars/photos/13.jpg"
                   alt=""
                   data-user-popover="6"
                 />
@@ -116,7 +116,7 @@
                 <img
                   class="avatar"
                   src="https://via.placeholder.com/150x150"
-                  data-demo-src="/src/assets/images/avatars/photos/22.jpg"
+                  data-demo-src="/@images/avatars/photos/22.jpg"
                   alt=""
                   data-user-popover="5"
                 />

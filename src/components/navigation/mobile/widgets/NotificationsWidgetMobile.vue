@@ -24,7 +24,7 @@
                   class="user-photo"
                   alt=""
                   src="https://via.placeholder.com/150x150"
-                  data-demo-src="/src/assets/images/avatars/photos/7.jpg"
+                  data-demo-src="/@images/avatars/photos/7.jpg"
                 />
               </div>
               <div class="user-content">
@@ -42,7 +42,7 @@
                   class="user-photo"
                   alt=""
                   src="https://via.placeholder.com/150x150"
-                  data-demo-src="/src/assets/images/avatars/photos/12.jpg"
+                  data-demo-src="/@images/avatars/photos/12.jpg"
                 />
               </div>
               <div class="user-content">
@@ -60,7 +60,7 @@
                   class="user-photo"
                   alt=""
                   src="https://via.placeholder.com/150x150"
-                  data-demo-src="/src/assets/images/avatars/photos/13.jpg"
+                  data-demo-src="/@images/avatars/photos/13.jpg"
                 />
               </div>
               <div class="user-content">
@@ -78,7 +78,7 @@
                   class="user-photo"
                   alt=""
                   src="https://via.placeholder.com/150x150"
-                  data-demo-src="/src/assets/images/avatars/photos/25.jpg"
+                  data-demo-src="/@images/avatars/photos/25.jpg"
                 />
               </div>
               <div class="user-content">

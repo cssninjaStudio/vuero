@@ -32,12 +32,12 @@
 
             <img
               class="placeholder-image light-image"
-              src="/assets/img/illustrations/components/buttons.svg"
+              src="/@images/illustrations/components/buttons.svg"
               alt=""
             />
             <img
               class="placeholder-image dark-image"
-              src="/assets/img/illustrations/components/buttons-dark.svg"
+              src="/@images/illustrations/components/buttons-dark.svg"
               alt=""
             />
           </div>

@@ -17,7 +17,7 @@
                   <img
                     class="avatar is-squared"
                     src="https://via.placeholder.com/150x150"
-                    data-demo-src="/src/assets/images/photo/demo/tools/illustrator.svg"
+                    data-demo-src="/@images/photo/demo/tools/illustrator.svg"
                     alt=""
                   />
                 </div>
@@ -45,7 +45,7 @@
                   <img
                     class="avatar is-squared"
                     src="https://via.placeholder.com/150x150"
-                    data-demo-src="/src/assets/images/photo/demo/tools/photoshop.svg"
+                    data-demo-src="/@images/photo/demo/tools/photoshop.svg"
                     alt=""
                   />
                 </div>
@@ -73,7 +73,7 @@
                   <img
                     class="avatar is-squared"
                     src="https://via.placeholder.com/150x150"
-                    data-demo-src="/src/assets/images/photo/demo/tools/xd.svg"
+                    data-demo-src="/@images/photo/demo/tools/xd.svg"
                     alt=""
                   />
                 </div>
@@ -101,7 +101,7 @@
                   <img
                     class="avatar is-squared"
                     src="https://via.placeholder.com/150x150"
-                    data-demo-src="/src/assets/images/photo/demo/tools/figma.svg"
+                    data-demo-src="/@images/photo/demo/tools/figma.svg"
                     alt=""
                   />
                 </div>
@@ -129,7 +129,7 @@
                   <img
                     class="avatar is-squared"
                     src="https://via.placeholder.com/150x150"
-                    data-demo-src="/src/assets/images/photo/demo/tools/invision.svg"
+                    data-demo-src="/@images/photo/demo/tools/invision.svg"
                     alt=""
                   />
                 </div>
@@ -157,7 +157,7 @@
                   <img
                     class="avatar is-squared"
                     src="https://via.placeholder.com/150x150"
-                    data-demo-src="/src/assets/images/photo/demo/tools/jira.svg"
+                    data-demo-src="/@images/photo/demo/tools/jira.svg"
                     alt=""
                   />
                 </div>
@@ -185,7 +185,7 @@
                   <img
                     class="avatar is-squared"
                     src="https://via.placeholder.com/150x150"
-                    data-demo-src="/src/assets/images/photo/demo/tools/taiga.svg"
+                    data-demo-src="/@images/photo/demo/tools/taiga.svg"
                     alt=""
                   />
                 </div>
@@ -213,7 +213,7 @@
                   <img
                     class="avatar is-squared"
                     src="https://via.placeholder.com/150x150"
-                    data-demo-src="/src/assets/images/photo/demo/tools/slack.svg"
+                    data-demo-src="/@images/photo/demo/tools/slack.svg"
                     alt=""
                   />
                 </div>
@@ -241,7 +241,7 @@
                   <img
                     class="avatar is-squared"
                     src="https://via.placeholder.com/150x150"
-                    data-demo-src="/src/assets/images/photo/demo/tools/asana.svg"
+                    data-demo-src="/@images/photo/demo/tools/asana.svg"
                     alt=""
                   />
                 </div>
@@ -269,7 +269,7 @@
                   <img
                     class="avatar is-squared"
                     src="https://via.placeholder.com/150x150"
-                    data-demo-src="/src/assets/images/photo/demo/tools/teamwork.svg"
+                    data-demo-src="/@images/photo/demo/tools/teamwork.svg"
                     alt=""
                   />
                 </div>
@@ -297,7 +297,7 @@
                   <img
                     class="avatar is-squared"
                     src="https://via.placeholder.com/150x150"
-                    data-demo-src="/src/assets/images/photo/demo/tools/github.svg"
+                    data-demo-src="/@images/photo/demo/tools/github.svg"
                     alt=""
                   />
                 </div>
@@ -325,7 +325,7 @@
                   <img
                     class="avatar is-squared"
                     src="https://via.placeholder.com/150x150"
-                    data-demo-src="/src/assets/images/photo/demo/tools/gitlab.svg"
+                    data-demo-src="/@images/photo/demo/tools/gitlab.svg"
                     alt=""
                   />
                 </div>

@@ -46,12 +46,12 @@
                   <div class="booking-bar-wrapper">
                     <img
                       class="travel-illustration light-image"
-                      src="/src/assets/images/illustrations/dashboards/flights/travel.svg"
+                      src="/@images/illustrations/dashboards/flights/travel.svg"
                       alt=""
                     />
                     <img
                       class="travel-illustration dark-image"
-                      src="/src/assets/images/illustrations/dashboards/flights/travel-dark.svg"
+                      src="/@images/illustrations/dashboards/flights/travel-dark.svg"
                       alt=""
                     />
                     <div class="booking-bar-info">
@@ -136,7 +136,7 @@
                     <!--Flight-->
                     <a class="flight-card">
                       <img
-                        src="/src/assets/images/illustrations/dashboards/flights/company1.svg"
+                        src="/@images/illustrations/dashboards/flights/company1.svg"
                         alt=""
                       />
                       <div class="start">
@@ -162,7 +162,7 @@
                     <!--Flight-->
                     <a class="flight-card">
                       <img
-                        src="/src/assets/images/illustrations/dashboards/flights/company2.svg"
+                        src="/@images/illustrations/dashboards/flights/company2.svg"
                         alt=""
                       />
                       <div class="start">
@@ -188,7 +188,7 @@
                     <!--Flight-->
                     <a class="flight-card">
                       <img
-                        src="/src/assets/images/illustrations/dashboards/flights/company1.svg"
+                        src="/@images/illustrations/dashboards/flights/company1.svg"
                         alt=""
                       />
                       <div class="start">
@@ -214,7 +214,7 @@
                     <!--Flight-->
                     <a class="flight-card">
                       <img
-                        src="/src/assets/images/illustrations/dashboards/flights/company3.svg"
+                        src="/@images/illustrations/dashboards/flights/company3.svg"
                         alt=""
                       />
                       <div class="start">
@@ -240,7 +240,7 @@
                     <!--Flight-->
                     <a class="flight-card">
                       <img
-                        src="/src/assets/images/illustrations/dashboards/flights/company1.svg"
+                        src="/@images/illustrations/dashboards/flights/company1.svg"
                         alt=""
                       />
                       <div class="start">

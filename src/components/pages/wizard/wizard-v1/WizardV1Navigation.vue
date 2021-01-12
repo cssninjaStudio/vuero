@@ -1,14 +1,14 @@
 <template>
   <nav class="wizard-navigation">
-    <a href="/" class="wizard-brand">
+    <RouterLink :to="{ name: 'index' }" class="wizard-brand">
       <img
         class="light-image"
-        src="/src/assets/images/logos/logo/logo.svg"
+        src="/@images/logos/logo/logo.svg"
         alt=""
       />
       <img
         class="dark-image"
-        src="/src/assets/images/logos/logo/logo-light.svg"
+        src="/@images/logos/logo/logo-light.svg"
         alt=""
       />
     </a>
@@ -91,7 +91,7 @@
           <img
             class="avatar"
             src="https://via.placeholder.com/150x150"
-            data-demo-src="/src/assets/images/avatars/photos/8.jpg"
+            data-demo-src="/@images/avatars/photos/8.jpg"
             alt=""
           />
         </div>

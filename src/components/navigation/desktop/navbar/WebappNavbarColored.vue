@@ -5,12 +5,12 @@
         <RouterLink :to="{ name: 'index' }" class="brand">
           <img
             class="light-image"
-            src="/src/assets/images/logos/logo/logo-light.svg"
+            src="/@images/logos/logo/logo-light.svg"
             alt=""
           />
           <img
             class="dark-image"
-            src="/src/assets/images/logos/logo/logo-light.svg"
+            src="/@images/logos/logo/logo-light.svg"
             alt=""
           />
         </RouterLink>
@@ -90,7 +90,7 @@
         >
           <img
             src="https://via.placeholder.com/150x150"
-            data-demo-src="/src/assets/images/avatars/photos/8.jpg"
+            data-demo-src="/@images/avatars/photos/8.jpg"
             alt=""
           />
           <span class="status-indicator"></span>
@@ -102,7 +102,7 @@
                   <img
                     class="avatar"
                     src="https://via.placeholder.com/150x150"
-                    data-demo-src="/src/assets/images/avatars/photos/8.jpg"
+                    data-demo-src="/@images/avatars/photos/8.jpg"
                     alt=""
                   />
                 </div>

@@ -68,17 +68,17 @@
                                 <div class="top">
                                   <img
                                     class="active"
-                                    src="/src/assets/images/icons/dashboards/banking/visa-text-white.svg"
+                                    src="/@images/icons/dashboards/banking/visa-text-white.svg"
                                     alt=""
                                   />
                                   <img
                                     class="light-image inactive"
-                                    src="/src/assets/images/icons/dashboards/banking/visa-text-dark.svg"
+                                    src="/@images/icons/dashboards/banking/visa-text-dark.svg"
                                     alt=""
                                   />
                                   <img
                                     class="dark-image inactive"
-                                    src="/src/assets/images/icons/dashboards/banking/visa-text-white.svg"
+                                    src="/@images/icons/dashboards/banking/visa-text-white.svg"
                                     alt=""
                                   />
                                 </div>
@@ -95,17 +95,17 @@
                                 <div class="top">
                                   <img
                                     class="active"
-                                    src="/src/assets/images/icons/dashboards/banking/visa-text-white.svg"
+                                    src="/@images/icons/dashboards/banking/visa-text-white.svg"
                                     alt=""
                                   />
                                   <img
                                     class="light-image inactive"
-                                    src="/src/assets/images/icons/dashboards/banking/visa-text-dark.svg"
+                                    src="/@images/icons/dashboards/banking/visa-text-dark.svg"
                                     alt=""
                                   />
                                   <img
                                     class="dark-image inactive"
-                                    src="/src/assets/images/icons/dashboards/banking/visa-text-white.svg"
+                                    src="/@images/icons/dashboards/banking/visa-text-white.svg"
                                     alt=""
                                   />
                                 </div>
@@ -122,17 +122,17 @@
                                 <div class="top">
                                   <img
                                     class="active"
-                                    src="/src/assets/images/icons/dashboards/banking/visa-text-white.svg"
+                                    src="/@images/icons/dashboards/banking/visa-text-white.svg"
                                     alt=""
                                   />
                                   <img
                                     class="light-image inactive"
-                                    src="/src/assets/images/icons/dashboards/banking/visa-text-dark.svg"
+                                    src="/@images/icons/dashboards/banking/visa-text-dark.svg"
                                     alt=""
                                   />
                                   <img
                                     class="dark-image inactive"
-                                    src="/src/assets/images/icons/dashboards/banking/visa-text-white.svg"
+                                    src="/@images/icons/dashboards/banking/visa-text-white.svg"
                                     alt=""
                                   />
                                 </div>
@@ -149,17 +149,17 @@
                                 <div class="top">
                                   <img
                                     class="active"
-                                    src="/src/assets/images/icons/dashboards/banking/visa-text-white.svg"
+                                    src="/@images/icons/dashboards/banking/visa-text-white.svg"
                                     alt=""
                                   />
                                   <img
                                     class="light-image inactive"
-                                    src="/src/assets/images/icons/dashboards/banking/visa-text-dark.svg"
+                                    src="/@images/icons/dashboards/banking/visa-text-dark.svg"
                                     alt=""
                                   />
                                   <img
                                     class="dark-image inactive"
-                                    src="/src/assets/images/icons/dashboards/banking/visa-text-white.svg"
+                                    src="/@images/icons/dashboards/banking/visa-text-white.svg"
                                     alt=""
                                   />
                                 </div>

@@ -78,13 +78,13 @@
                       <img
                         class="avatar light-image"
                         src="https://via.placeholder.com/150x150"
-                        data-demo-src="/src/assets/images/photo/demo/brands/udemy.svg"
+                        data-demo-src="/@images/photo/demo/brands/udemy.svg"
                         alt=""
                       />
                       <img
                         class="avatar dark-image"
                         src="https://via.placeholder.com/150x150"
-                        data-demo-src="/src/assets/images/photo/demo/brands/udemy-dark.svg"
+                        data-demo-src="/@images/photo/demo/brands/udemy-dark.svg"
                         alt=""
                       />
                       <button
@@ -325,7 +325,7 @@
                           <img
                             class="avatar"
                             src="https://via.placeholder.com/150x150"
-                            data-demo-src="/src/assets/images/avatars/photos/31.jpg"
+                            data-demo-src="/@images/avatars/photos/31.jpg"
                             alt=""
                             data-user-popover="27"
                           />
@@ -355,7 +355,7 @@
                           <img
                             class="avatar"
                             src="https://via.placeholder.com/150x150"
-                            data-demo-src="/src/assets/images/avatars/photos/23.jpg"
+                            data-demo-src="/@images/avatars/photos/23.jpg"
                             alt=""
                             data-user-popover="21"
                           />
@@ -384,7 +384,7 @@
                           <img
                             class="avatar"
                             src="https://via.placeholder.com/150x150"
-                            data-demo-src="/src/assets/images/avatars/photos/32.jpg"
+                            data-demo-src="/@images/avatars/photos/32.jpg"
                             alt=""
                             data-user-popover="28"
                           />
@@ -412,7 +412,7 @@
                           <img
                             class="avatar"
                             src="https://via.placeholder.com/150x150"
-                            data-demo-src="/src/assets/images/avatars/photos/13.jpg"
+                            data-demo-src="/@images/avatars/photos/13.jpg"
                             alt=""
                             data-user-popover="6"
                           />

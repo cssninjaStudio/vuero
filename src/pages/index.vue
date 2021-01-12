@@ -10,12 +10,12 @@
           <div class="header-inner">
             <img
               class="cut-circle light-image-l"
-              src="/src/assets/images/shapes/cut-circle.svg"
+              src="/@images/shapes/cut-circle.svg"
               alt=""
             />
             <img
               class="cut-circle dark-image-l"
-              src="/src/assets/images/shapes/cut-circle-dark.svg"
+              src="/@images/shapes/cut-circle-dark.svg"
               alt=""
             />
           </div>
@@ -46,12 +46,12 @@
 
             <img
               class="light-image-l hero-mockup"
-              src="/src/assets/images/illustrations/landing/app-1.png"
+              src="/@images/illustrations/landing/app-1.png"
               alt=""
             />
             <img
               class="dark-image-l hero-mockup"
-              src="/src/assets/images/illustrations/landing/app-1-dark.png"
+              src="/@images/illustrations/landing/app-1-dark.png"
               alt=""
             />
           </div>
@@ -66,19 +66,19 @@
           <!--Stacks-->
           <div class="stacks">
             <div class="stack">
-              <img src="/src/assets/images/icons/stacks/html5.svg" alt="" />
+              <img src="/@images/icons/stacks/html5.svg" alt="" />
             </div>
             <div class="stack">
-              <img src="/src/assets/images/icons/stacks/js.svg" alt="" />
+              <img src="/@images/icons/stacks/js.svg" alt="" />
             </div>
             <div class="stack">
-              <img src="/src/assets/images/icons/stacks/bulma.svg" alt="" />
+              <img src="/@images/icons/stacks/bulma.svg" alt="" />
             </div>
             <div class="stack">
-              <img src="/src/assets/images/icons/stacks/sass.svg" alt="" />
+              <img src="/@images/icons/stacks/sass.svg" alt="" />
             </div>
             <div class="stack">
-              <img src="/src/assets/images/icons/stacks/gulp.svg" alt="" />
+              <img src="/@images/icons/stacks/gulp.svg" alt="" />
             </div>
           </div>
 
@@ -190,12 +190,12 @@
             <div class="column is-6 has-text-centered">
               <img
                 class="light-image-l featured-image"
-                src="/src/assets/images/illustrations/landing/feature-1.png"
+                src="/@images/illustrations/landing/feature-1.png"
                 alt=""
               />
               <img
                 class="dark-image-l featured-image"
-                src="/src/assets/images/illustrations/landing/feature-1-dark.png"
+                src="/@images/illustrations/landing/feature-1-dark.png"
                 alt=""
               />
             </div>
@@ -219,12 +219,12 @@
             >
               <img
                 class="light-image-l featured-image"
-                src="/src/assets/images/illustrations/landing/feature-2.svg"
+                src="/@images/illustrations/landing/feature-2.svg"
                 alt=""
               />
               <img
                 class="dark-image-l featured-image"
-                src="/src/assets/images/illustrations/landing/feature-2-dark.svg"
+                src="/@images/illustrations/landing/feature-2-dark.svg"
                 alt=""
               />
             </div>
@@ -243,12 +243,12 @@
             <div class="column is-6 has-text-centered h-hidden-mobile">
               <img
                 class="light-image-l featured-image"
-                src="/src/assets/images/illustrations/landing/feature-2.svg"
+                src="/@images/illustrations/landing/feature-2.svg"
                 alt=""
               />
               <img
                 class="dark-image-l featured-image"
-                src="/src/assets/images/illustrations/landing/feature-2-dark.svg"
+                src="/@images/illustrations/landing/feature-2-dark.svg"
                 alt=""
               />
             </div>
@@ -258,12 +258,12 @@
             <div class="column is-6 has-text-centered">
               <img
                 class="light-image-l featured-image"
-                src="/src/assets/images/illustrations/landing/feature-3.svg"
+                src="/@images/illustrations/landing/feature-3.svg"
                 alt=""
               />
               <img
                 class="dark-image-l featured-image"
-                src="/src/assets/images/illustrations/landing/feature-3-dark.svg"
+                src="/@images/illustrations/landing/feature-3-dark.svg"
                 alt=""
               />
             </div>
@@ -412,12 +412,12 @@
               <div class="column is-5 is-offset-1 has-text-centered">
                 <img
                   class="light-image-l featured-image"
-                  src="/src/assets/images/illustrations/landing/feature-4.svg"
+                  src="/@images/illustrations/landing/feature-4.svg"
                   alt=""
                 />
                 <img
                   class="dark-image-l featured-image"
-                  src="/src/assets/images/illustrations/landing/feature-4-dark.svg"
+                  src="/@images/illustrations/landing/feature-4-dark.svg"
                   alt=""
                 />
               </div>
@@ -443,12 +443,12 @@
               >
                 <img
                   class="light-image-l featured-image"
-                  src="/src/assets/images/illustrations/landing/feature-5.svg"
+                  src="/@images/illustrations/landing/feature-5.svg"
                   alt=""
                 />
                 <img
                   class="dark-image-l featured-image"
-                  src="/src/assets/images/illustrations/landing/feature-5-dark.svg"
+                  src="/@images/illustrations/landing/feature-5-dark.svg"
                   alt=""
                 />
               </div>
@@ -469,12 +469,12 @@
               <div class="column is-5 has-text-centered h-hidden-mobile">
                 <img
                   class="light-image-l featured-image"
-                  src="/src/assets/images/illustrations/landing/feature-5.svg"
+                  src="/@images/illustrations/landing/feature-5.svg"
                   alt=""
                 />
                 <img
                   class="dark-image-l featured-image"
-                  src="/src/assets/images/illustrations/landing/feature-5-dark.svg"
+                  src="/@images/illustrations/landing/feature-5-dark.svg"
                   alt=""
                 />
               </div>
@@ -485,12 +485,12 @@
               <div class="column is-5 is-offset-1 has-text-centered">
                 <img
                   class="light-image-l featured-image"
-                  src="/src/assets/images/illustrations/landing/feature-6.svg"
+                  src="/@images/illustrations/landing/feature-6.svg"
                   alt=""
                 />
                 <img
                   class="dark-image-l featured-image"
-                  src="/src/assets/images/illustrations/landing/feature-6-dark.svg"
+                  src="/@images/illustrations/landing/feature-6-dark.svg"
                   alt=""
                 />
               </div>
@@ -517,7 +517,7 @@
                 href="https://themeforest.net/item/huro-multipurpose-admin-and-webapp-ui-kit/28933249"
                 class="custom-button"
               >
-                <img src="/src/assets/images/icons/logos/envato.svg" alt="" />
+                <img src="/@images/icons/logos/envato.svg" alt="" />
                 <span>Get It Now</span>
               </a>
             </div>

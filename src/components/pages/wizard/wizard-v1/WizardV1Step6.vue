@@ -81,7 +81,7 @@
                     id="project-preview-customer-logo"
                     class="avatar"
                     src="https://via.placeholder.com/150x150"
-                    data-demo-src="/src/assets/images/photo/demo/brands/airbnb.svg"
+                    data-demo-src="/@images/photo/demo/brands/airbnb.svg"
                     alt=""
                   />
                 </div>
@@ -162,7 +162,7 @@
                       <img
                         class="avatar"
                         src="https://via.placeholder.com/150x150"
-                        data-demo-src="/src/assets/images/avatars/photos/8.jpg"
+                        data-demo-src="/@images/avatars/photos/8.jpg"
                         alt=""
                         data-user-popover="3"
                       />
@@ -179,7 +179,7 @@
                       <img
                         class="avatar"
                         src="https://via.placeholder.com/150x150"
-                        data-demo-src="/src/assets/images/avatars/photos/7.jpg"
+                        data-demo-src="/@images/avatars/photos/7.jpg"
                         alt=""
                         data-user-popover="0"
                       />
@@ -196,7 +196,7 @@
                       <img
                         class="avatar"
                         src="https://via.placeholder.com/150x150"
-                        data-demo-src="/src/assets/images/avatars/photos/25.jpg"
+                        data-demo-src="/@images/avatars/photos/25.jpg"
                         alt=""
                         data-user-popover="4"
                       />
@@ -233,7 +233,7 @@
                       <img
                         class="avatar"
                         src="https://via.placeholder.com/150x150"
-                        data-demo-src="/src/assets/images/photo/demo/tools/illustrator.svg"
+                        data-demo-src="/@images/photo/demo/tools/illustrator.svg"
                         alt=""
                       />
                     </div>
@@ -249,7 +249,7 @@
                       <img
                         class="avatar"
                         src="https://via.placeholder.com/150x150"
-                        data-demo-src="/src/assets/images/photo/demo/tools/figma.svg"
+                        data-demo-src="/@images/photo/demo/tools/figma.svg"
                         alt=""
                       />
                     </div>
@@ -265,7 +265,7 @@
                       <img
                         class="avatar"
                         src="https://via.placeholder.com/150x150"
-                        data-demo-src="/src/assets/images/photo/demo/tools/taiga.svg"
+                        data-demo-src="/@images/photo/demo/tools/taiga.svg"
                         alt=""
                       />
                     </div>

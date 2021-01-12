@@ -8,12 +8,12 @@
         <div class="brand-icon">
           <img
             class="light-image-l"
-            src="/src/assets/images/logos/logo/logo.svg"
+            src="/@images/logos/logo/logo.svg"
             alt=""
           />
           <img
             class="dark-image-l"
-            src="/src/assets/images/logos/logo/logo-light.svg"
+            src="/@images/logos/logo/logo-light.svg"
             alt=""
           />
         </div>
@@ -75,13 +75,13 @@
           </label>
         </div>
         <div class="navbar-item">
-          <RouterLink :to="{ name: 'auth-login' }" class="nav-link"
+          <RouterLink :to="{ name: 'auth-login-1' }" class="nav-link"
             >Login</RouterLink
           >
         </div>
         <div class="navbar-item">
           <RouterLink
-            :to="{ name: 'auth-signup' }"
+            :to="{ name: 'auth-signup-1' }"
             class="button h-button is-rounded is-primary is-raised"
           >
             <strong>Sign up</strong>
