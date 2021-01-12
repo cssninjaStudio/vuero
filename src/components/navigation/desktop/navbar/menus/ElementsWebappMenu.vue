@@ -1,18 +1,30 @@
+<script setup lang="ts">
+import { ref } from 'vue'
+
+const activeTab = ref<'basic' | 'forms'>('basic')
+</script>
+
 <template>
   <div id="elements-webapp-menu" class="webapp-subnavbar-inner tabs-wrapper">
     <div class="tabs-inner">
       <div class="tabs is-centered is-2">
         <ul>
-          <li data-tab="elements-basic-pages-tab" class="is-active">
-            <a>Basic UI</a>
+          <li :class="[activeTab === 'basic' && 'is-active']">
+            <a @click="activeTab = 'basic'">Basic UI</a>
           </li>
-          <li data-tab="elements-forms-pages-tab"><a>Form Controls</a></li>
+          <li :class="[activeTab === 'forms' && 'is-active']">
+            <a @click="activeTab = 'forms'">Form Controls</a>
+          </li>
         </ul>
       </div>
     </div>
 
     <div class="container">
-      <div id="elements-basic-pages-tab" class="tab-content is-active">
+      <div
+        id="elements-basic-pages-tab"
+        class="tab-content"
+        :class="[activeTab === 'basic' && 'is-active']"
+      >
         <div class="tab-content-inner">
           <div class="center has-slimscroll">
             <div class="columns">
@@ -140,7 +152,11 @@
         </div>
       </div>
 
-      <div id="elements-forms-pages-tab" class="tab-content">
+      <div
+        id="elements-forms-pages-tab"
+        class="tab-content"
+        :class="[activeTab === 'forms' && 'is-active']"
+      >
         <div class="tab-content-inner">
           <div class="center has-slimscroll">
             <div class="columns">

@@ -1,11 +1,14 @@
 <script setup lang="ts">
 import { useTitle } from '@vueuse/core'
+import { ref } from 'vue'
 
 import { activePanel } from '/@src/composition/state/ui/activePanelState'
 import {
   activeSidebar,
   toggleSidebar,
 } from '/@src/composition/state/ui/activeSidebarState'
+
+const activeTab = ref<'project' | 'team' | 'tasks'>('projects')
 
 useTitle('Projects project - Admin - Vuero')
 </script>
@@ -58,21 +61,25 @@ useTitle('Projects project - Admin - Vuero')
               <div class="tabs-inner">
                 <div class="tabs">
                   <ul>
-                    <li data-tab="project-tab" class="is-active">
-                      <a><span>Project</span></a>
+                    <li :class="[activeTab === 'project' && 'is-active']">
+                      <a @click="activeTab = 'project'"><span>Project</span></a>
                     </li>
-                    <li data-tab="team-tab">
-                      <a><span>Team</span></a>
+                    <li :class="[activeTab === 'team' && 'is-active']">
+                      <a @click="activeTab = 'team'"><span>Team</span></a>
                     </li>
-                    <li data-tab="tasks-tab">
-                      <a><span>Tasks</span></a>
+                    <li :class="[activeTab === 'tasks' && 'is-active']">
+                      <a @click="activeTab = 'tasks'"><span>Tasks</span></a>
                     </li>
                     <li class="tab-naver"></li>
                   </ul>
                 </div>
               </div>
 
-              <div id="project-tab" class="tab-content is-active">
+              <div
+                id="project-tab"
+                class="tab-content"
+                :class="[activeTab === 'project' && 'is-active']"
+              >
                 <div class="columns project-details-inner">
                   <div class="column is-8">
                     <div class="project-details-card">
@@ -438,7 +445,11 @@ useTitle('Projects project - Admin - Vuero')
               </div>
 
               <!--Project Team-->
-              <div id="team-tab" class="tab-content">
+              <div
+                id="team-tab"
+                class="tab-content"
+                :class="[activeTab === 'team' && 'is-active']"
+              >
                 <div class="project-details-inner">
                   <div class="project-team-card">
                     <div class="columns is-multiline">
@@ -679,7 +690,11 @@ useTitle('Projects project - Admin - Vuero')
                 </div>
               </div>
 
-              <div id="tasks-tab" class="tab-content">
+              <div
+                id="tasks-tab"
+                class="tab-content"
+                :class="[activeTab === 'tasks' && 'is-active']"
+              >
                 <div class="project-details-inner">
                   <div class="task-grid">
                     <div class="grid-header">

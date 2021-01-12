@@ -1,5 +1,8 @@
 <script setup lang="ts">
+import { ref } from 'vue'
 import { activePanel } from '/@src/composition/state/ui/activePanelState'
+
+const activeTab = ref<'team' | 'projects' | 'schedule'>('team')
 </script>
 
 <template>
@@ -21,14 +24,14 @@ import { activePanel } from '/@src/composition/state/ui/activePanelState'
         <div class="tabs-inner">
           <div class="tabs">
             <ul>
-              <li data-tab="team-side-tab" class="is-active">
-                <a><span>Team</span></a>
+              <li :class="[activeTab === 'team' && 'is-active']">
+                <a @click="activeTab = 'team'"><span>Team</span></a>
               </li>
-              <li data-tab="projects-side-tab">
-                <a><span>Projects</span></a>
+              <li :class="[activeTab === 'projects' && 'is-active']">
+                <a @click="activeTab = 'projects'"><span>Projects</span></a>
               </li>
-              <li data-tab="schedule-side-tab">
-                <a><span>Schedule</span></a>
+              <li :class="[activeTab === 'schedule' && 'is-active']">
+                <a @click="activeTab = 'schedule'"><span>Schedule</span></a>
               </li>
               <li class="tab-naver"></li>
             </ul>
@@ -36,7 +39,11 @@ import { activePanel } from '/@src/composition/state/ui/activePanelState'
         </div>
 
         <div class="right-panel-body">
-          <div id="team-side-tab" class="tab-content is-active">
+          <div
+            id="team-side-tab"
+            class="tab-content"
+            :class="[activeTab === 'team' && 'is-active']"
+          >
             <!--Team Member-->
             <div class="team-card">
               <div class="h-avatar">
@@ -166,7 +173,11 @@ import { activePanel } from '/@src/composition/state/ui/activePanelState'
             </div>
           </div>
 
-          <div id="projects-side-tab" class="tab-content">
+          <div
+            id="projects-side-tab"
+            class="tab-content"
+            :class="[activeTab === 'projects' && 'is-active']"
+          >
             <!--Project-->
             <div class="project-card">
               <div class="project-inner">
@@ -353,7 +364,11 @@ import { activePanel } from '/@src/composition/state/ui/activePanelState'
             </div>
           </div>
 
-          <div id="schedule-side-tab" class="tab-content">
+          <div
+            id="schedule-side-tab"
+            class="tab-content"
+            :class="[activeTab === 'schedule' && 'is-active']"
+          >
             <!--Timeline-->
             <div class="icon-timeline">
               <!--Timeline item-->

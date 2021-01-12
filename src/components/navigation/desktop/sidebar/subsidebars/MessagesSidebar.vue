@@ -6,7 +6,11 @@ import {
 </script>
 
 <template>
-  <div id="messages-sidebar" class="sidebar-panel is-messages">
+  <div
+    id="messages-sidebar"
+    :class="[activeSidebar === 'messages' && 'is-active']"
+    class="sidebar-panel is-messages"
+  >
     <div class="messages-header">
       <h3 class="no-mb">Chat</h3>
 

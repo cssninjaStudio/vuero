@@ -1,7 +1,10 @@
 <script setup lang="ts">
 import { useTitle } from '@vueuse/core'
+import { ref } from 'vue'
 
 import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
+
+const activeTab = ref<'all' | 'people' | 'records'>('all')
 
 useTitle('Search Results - WebApp - Vuero')
 </script>
@@ -50,14 +53,16 @@ useTitle('Search Results - WebApp - Vuero')
                 <div class="tabs-inner">
                   <div class="tabs">
                     <ul>
-                      <li data-tab="all-items-tab" class="is-active">
-                        <a><span>All</span></a>
+                      <li :class="[activeTab === 'all' && 'is-active']">
+                        <a @click="activeTab = 'all'"><span>All</span></a>
                       </li>
-                      <li data-tab="people-items-tab">
-                        <a><span>People</span></a>
+                      <li :class="[activeTab === 'people' && 'is-active']">
+                        <a @click="activeTab = 'people'"><span>People</span></a>
                       </li>
-                      <li data-tab="records-items-tab">
-                        <a><span>Records</span></a>
+                      <li :class="[activeTab === 'records' && 'is-active']">
+                        <a @click="activeTab = 'records'"
+                          ><span>Records</span></a
+                        >
                       </li>
                       <li class="tab-naver"></li>
                     </ul>
@@ -243,7 +248,11 @@ useTitle('Search Results - WebApp - Vuero')
 
                   <!--Results-->
                   <div class="column is-8">
-                    <div id="all-items-tab" class="tab-content is-active">
+                    <div
+                      id="all-items-tab"
+                      class="tab-content"
+                      :class="[activeTab === 'all' && 'is-active']"
+                    >
                       <!--Search Results Group-->
                       <div class="search-results-group">
                         <div class="group-header">
@@ -773,7 +782,11 @@ useTitle('Search Results - WebApp - Vuero')
                       </div>
                     </div>
 
-                    <div id="people-items-tab" class="tab-content">
+                    <div
+                      id="people-items-tab"
+                      class="tab-content"
+                      :class="[activeTab === 'people' && 'is-active']"
+                    >
                       <!--Search Results Group-->
                       <div class="search-results-group">
                         <div class="search-results-list">
@@ -1040,7 +1053,11 @@ useTitle('Search Results - WebApp - Vuero')
                       </div>
                     </div>
 
-                    <div id="records-items-tab" class="tab-content">
+                    <div
+                      id="records-items-tab"
+                      class="tab-content"
+                      :class="[activeTab === 'record' && 'is-active']"
+                    >
                       <!--Search Results Group-->
                       <div class="search-results-group">
                         <div class="search-results-list">

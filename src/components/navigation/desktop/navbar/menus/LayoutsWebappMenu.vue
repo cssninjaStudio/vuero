@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import { ref } from 'vue'
+
+const activeTab = ref<'list' | 'grid' | 'app' | 'utility'>('list')
+</script>
+
 <template>
   <div
     id="layouts-webapp-menu"
@@ -6,16 +12,28 @@
     <div class="tabs-inner">
       <div class="tabs is-centered is-4">
         <ul>
-          <li data-tab="list-pages-tab" class="is-active"><a>List Views</a></li>
-          <li data-tab="grid-pages-tab"><a>Grid Views</a></li>
-          <li data-tab="app-pages-tab"><a>Pages</a></li>
-          <li data-tab="utility-pages-tab"><a>Utility</a></li>
+          <li :class="[activeTab === 'list' && 'is-active']">
+            <a @click="activeTab = 'list'">List Views</a>
+          </li>
+          <li :class="[activeTab === 'grid' && 'is-active']">
+            <a @click="activeTab = 'grid'">Grid Views</a>
+          </li>
+          <li :class="[activeTab === 'app' && 'is-active']">
+            <a @click="activeTab = 'app'">Pages</a>
+          </li>
+          <li :class="[activeTab === 'utility' && 'is-active']">
+            <a @click="activeTab = 'utility'">Utility</a>
+          </li>
         </ul>
       </div>
     </div>
 
     <div class="container">
-      <div id="list-pages-tab" class="tab-content is-active">
+      <div
+        id="list-pages-tab"
+        class="tab-content"
+        :class="[activeTab === 'list' && 'is-active']"
+      >
         <div class="tab-content-inner">
           <div class="center has-slimscroll">
             <div class="columns">
@@ -147,7 +165,11 @@
         </div>
       </div>
 
-      <div id="grid-pages-tab" class="tab-content">
+      <div
+        id="grid-pages-tab"
+        class="tab-content"
+        :class="[activeTab === 'grid' && 'is-active']"
+      >
         <div class="tab-content-inner">
           <div class="center has-slimscroll">
             <div class="columns">
@@ -279,7 +301,11 @@
         </div>
       </div>
 
-      <div id="app-pages-tab" class="tab-content">
+      <div
+        id="app-pages-tab"
+        class="tab-content"
+        :class="[activeTab === 'app' && 'is-active']"
+      >
         <div class="tab-content-inner">
           <div class="center has-slimscroll">
             <div class="columns">
@@ -455,7 +481,11 @@
         </div>
       </div>
 
-      <div id="utility-pages-tab" class="tab-content">
+      <div
+        id="utility-pages-tab"
+        class="tab-content"
+        :class="[activeTab === 'utility' && 'is-active']"
+      >
         <div class="tab-content-inner">
           <div class="center has-slimscroll">
             <div class="columns">

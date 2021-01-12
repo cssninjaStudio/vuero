@@ -1,7 +1,10 @@
 <script setup lang="ts">
 import { useTitle } from '@vueuse/core'
+import { ref } from 'vue'
 
 import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
+
+const activeTab = ref<'active' | 'closed'>('active')
 
 useTitle('List Flex 3 - WebApp - Vuero')
 </script>
@@ -47,11 +50,11 @@ useTitle('List Flex 3 - WebApp - Vuero')
             <div class="tabs-inner">
               <div class="tabs">
                 <ul>
-                  <li data-tab="active-items-tab" class="is-active">
-                    <a><span>Active</span></a>
+                  <li :class="[activeTab === 'active' && 'is-active']">
+                    <a @click="activeTab = 'active'"><span>Active</span></a>
                   </li>
-                  <li data-tab="inactive-items-tab">
-                    <a><span>Closed</span></a>
+                  <li :class="[activeTab === 'closed' && 'is-active']">
+                    <a @click="activeTab = 'closed'"><span>Closed</span></a>
                   </li>
                   <li class="tab-naver"></li>
                 </ul>
@@ -86,7 +89,11 @@ useTitle('List Flex 3 - WebApp - Vuero')
               </div>
 
               <!--Active Tab-->
-              <div id="active-items-tab" class="tab-content is-active">
+              <div
+                id="active-items-tab"
+                class="tab-content"
+                :class="[activeTab === 'active' && 'is-active']"
+              >
                 <div class="flex-table">
                   <!--Table header-->
                   <div class="flex-table-header" data-filter-hide>
@@ -802,7 +809,11 @@ useTitle('List Flex 3 - WebApp - Vuero')
               </div>
 
               <!--inactive Tab-->
-              <div id="inactive-items-tab" class="tab-content">
+              <div
+                id="inactive-items-tab"
+                class="tab-content"
+                :class="[activeTab === 'closed' && 'is-active']"
+              >
                 <!--Empty placeholder-->
                 <div class="page-placeholder">
                   <div class="placeholder-content">

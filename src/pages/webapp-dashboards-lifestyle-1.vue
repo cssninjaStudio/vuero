@@ -1,7 +1,10 @@
 <script setup lang="ts">
 import { useTitle } from '@vueuse/core'
+import { ref } from 'vue'
 
 import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
+
+const activeTab = ref<'overview' | 'content' | 'brands'>('overview')
 
 useTitle('Dashboards Lifestyle 1 - WebApp - Vuero')
 </script>
@@ -143,16 +146,24 @@ useTitle('Dashboards Lifestyle 1 - WebApp - Vuero')
                 <div class="tabs-inner">
                   <div class="tabs">
                     <ul>
-                      <li data-tab="overview-tab" class="is-active">
-                        <a>Overview</a>
+                      <li :class="[activeTab === 'overview' && 'is-active']">
+                        <a @click="activeTab = 'overview'">Overview</a>
                       </li>
-                      <li data-tab="content-tab"><a>Content</a></li>
-                      <li data-tab="brands-tab"><a>Brands</a></li>
+                      <li :class="[activeTab === 'content' && 'is-active']">
+                        <a @click="activeTab = 'content'">Content</a>
+                      </li>
+                      <li :class="[activeTab === 'brands' && 'is-active']">
+                        <a @click="activeTab = 'brands'">Brands</a>
+                      </li>
                     </ul>
                   </div>
                 </div>
 
-                <div id="overview-tab" class="tab-content is-active">
+                <div
+                  id="overview-tab"
+                  class="tab-content"
+                  :class="[activeTab === 'overview' && 'is-active']"
+                >
                   <div class="body-title">
                     <h3>Instagram Stats</h3>
                     <div class="field">
@@ -597,7 +608,11 @@ useTitle('Dashboards Lifestyle 1 - WebApp - Vuero')
                   </div>
                 </div>
 
-                <div id="content-tab" class="tab-content">
+                <div
+                  id="content-tab"
+                  class="tab-content"
+                  :class="[activeTab === 'content' && 'is-active']"
+                >
                   <div class="body-title">
                     <h3>Content Stats</h3>
                     <div class="field">
@@ -1348,7 +1363,11 @@ useTitle('Dashboards Lifestyle 1 - WebApp - Vuero')
                   </div>
                 </div>
 
-                <div id="brands-tab" class="tab-content">
+                <div
+                  id="brands-tab"
+                  class="tab-content"
+                  :class="[activeTab === 'brands' && 'is-active']"
+                >
                   <!--Empty Placeholder -->
                   <div class="page-placeholder">
                     <div class="placeholder-content">

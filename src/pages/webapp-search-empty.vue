@@ -1,7 +1,10 @@
 <script setup lang="ts">
 import { useTitle } from '@vueuse/core'
+import { ref } from 'vue'
 
 import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
+
+const activeTab = ref<'all' | 'people' | 'records'>('all')
 
 useTitle('Search Empty - WebApp - Vuero')
 </script>
@@ -50,14 +53,16 @@ useTitle('Search Empty - WebApp - Vuero')
                 <div class="tabs-inner">
                   <div class="tabs is-disabled">
                     <ul>
-                      <li data-tab="all-items-tab" class="is-active">
-                        <a><span>All</span></a>
+                      <li :class="[activeTab === 'all' && 'is-active']">
+                        <a @click="activeTab = 'all'"><span>All</span></a>
                       </li>
-                      <li data-tab="people-items-tab">
-                        <a><span>People</span></a>
+                      <li :class="[activeTab === 'people' && 'is-active']">
+                        <a @click="activeTab = 'people'"><span>People</span></a>
                       </li>
-                      <li data-tab="records-items-tab">
-                        <a><span>Records</span></a>
+                      <li :class="[activeTab === 'records' && 'is-active']">
+                        <a @click="activeTab = 'records'"
+                          ><span>Records</span></a
+                        >
                       </li>
                       <li class="tab-naver"></li>
                     </ul>

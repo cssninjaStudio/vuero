@@ -1,11 +1,16 @@
 <script setup lang="ts">
 import { useTitle } from '@vueuse/core'
-import { onMounted } from 'vue'
+import { onMounted, ref } from 'vue'
 
 import {
   activeSidebar,
   toggleSidebar,
 } from '/@src/composition/state/ui/activeSidebarState'
+
+const activeTab = ref<'team' | 'projects'>('team')
+const activeTab1 = ref<'team' | 'projects'>('team')
+const activeTab2 = ref<'team' | 'projects' | 'tasks'>('team')
+const activeTab3 = ref<'team' | 'projects' | 'tasks'>('team')
 
 onMounted(() => {
   activeSidebar.value = 'components'
@@ -105,18 +110,28 @@ useTitle('Components - Tabs Slider - Vuero')
                       <div class="tabs-inner">
                         <div class="tabs">
                           <ul>
-                            <li data-tab="team-tab" class="is-active">
-                              <a><span>Team</span></a>
+                            <li :class="[activeTab === 'team' && 'is-active']">
+                              <a @click="activeTab = 'team'"
+                                ><span>Team</span></a
+                              >
                             </li>
-                            <li data-tab="projects-tab">
-                              <a><span>Projects</span></a>
+                            <li
+                              :class="[activeTab === 'projects' && 'is-active']"
+                            >
+                              <a @click="activeTab = 'projects'"
+                                ><span>Projects</span></a
+                              >
                             </li>
                             <li class="tab-naver"></li>
                           </ul>
                         </div>
                       </div>
 
-                      <div id="team-tab" class="tab-content is-active">
+                      <div
+                        id="team-tab"
+                        class="tab-content"
+                        :class="[activeTab === 'team' && 'is-active']"
+                      >
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit. Quid iudicant sensus? Primum quid tu dicis
@@ -126,7 +141,11 @@ useTitle('Components - Tabs Slider - Vuero')
                         </p>
                       </div>
 
-                      <div id="projects-tab" class="tab-content">
+                      <div
+                        id="projects-tab"
+                        class="tab-content"
+                        :class="[activeTab === 'projects' && 'is-active']"
+                      >
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit. Quid iudicant sensus? Primum quid tu dicis
@@ -193,18 +212,30 @@ useTitle('Components - Tabs Slider - Vuero')
                       <div class="tabs-inner">
                         <div class="tabs">
                           <ul>
-                            <li data-tab="team-tab1" class="is-active">
-                              <a><span>Team</span></a>
+                            <li :class="[activeTab1 === 'team' && 'is-active']">
+                              <a @click="activeTab1 = 'team'"
+                                ><span>Team</span></a
+                              >
                             </li>
-                            <li data-tab="projects-tab1">
-                              <a><span>Projects</span></a>
+                            <li
+                              :class="[
+                                activeTab1 === 'projects' && 'is-active',
+                              ]"
+                            >
+                              <a @click="activeTab1 = 'projects'"
+                                ><span>Projects</span></a
+                              >
                             </li>
                             <li class="tab-naver"></li>
                           </ul>
                         </div>
                       </div>
 
-                      <div id="team-tab1" class="tab-content is-active">
+                      <div
+                        id="team-tab1"
+                        class="tab-content"
+                        :class="[activeTab1 === 'team' && 'is-active']"
+                      >
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit. Quid iudicant sensus? Primum quid tu dicis
@@ -214,7 +245,11 @@ useTitle('Components - Tabs Slider - Vuero')
                         </p>
                       </div>
 
-                      <div id="projects-tab1" class="tab-content">
+                      <div
+                        id="projects-tab1"
+                        class="tab-content"
+                        :class="[activeTab1 === 'projects' && 'is-active']"
+                      >
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit. Quid iudicant sensus? Primum quid tu dicis
@@ -278,21 +313,37 @@ useTitle('Components - Tabs Slider - Vuero')
                       <div class="tabs-inner">
                         <div class="tabs">
                           <ul>
-                            <li data-tab="team-tab2" class="is-active">
-                              <a><span>Team</span></a>
+                            <li :class="[activeTab2 === 'team' && 'is-active']">
+                              <a @click="activeTab2 = 'team'"
+                                ><span>Team</span></a
+                              >
                             </li>
-                            <li data-tab="projects-tab2">
-                              <a><span>Projects</span></a>
+                            <li
+                              :class="[
+                                activeTab2 === 'projects' && 'is-active',
+                              ]"
+                            >
+                              <a @click="activeTab2 = 'projects'"
+                                ><span>Projects</span></a
+                              >
                             </li>
-                            <li data-tab="tasks-tab2">
-                              <a><span>Tasks</span></a>
+                            <li
+                              :class="[activeTab2 === 'tasks' && 'is-active']"
+                            >
+                              <a @click="activeTab2 = 'tasks'"
+                                ><span>Tasks</span></a
+                              >
                             </li>
                             <li class="tab-naver"></li>
                           </ul>
                         </div>
                       </div>
 
-                      <div id="team-tab2" class="tab-content is-active">
+                      <div
+                        id="team-tab2"
+                        class="tab-content"
+                        :class="[activeTab2 === 'team' && 'is-active']"
+                      >
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit. Quid iudicant sensus? Primum quid tu dicis
@@ -302,7 +353,11 @@ useTitle('Components - Tabs Slider - Vuero')
                         </p>
                       </div>
 
-                      <div id="projects-tab2" class="tab-content">
+                      <div
+                        id="projects-tab2"
+                        class="tab-content"
+                        :class="[activeTab2 === 'projects' && 'is-active']"
+                      >
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit. Quid iudicant sensus? Primum quid tu dicis
@@ -312,7 +367,11 @@ useTitle('Components - Tabs Slider - Vuero')
                         </p>
                       </div>
 
-                      <div id="tasks-tab2" class="tab-content">
+                      <div
+                        id="team-tab2"
+                        class="tab-content"
+                        :class="[activeTab2 === 'tasks' && 'is-active']"
+                      >
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit. Quid iudicant sensus? Primum quid tu dicis
@@ -387,21 +446,37 @@ useTitle('Components - Tabs Slider - Vuero')
                       <div class="tabs-inner">
                         <div class="tabs">
                           <ul>
-                            <li data-tab="team-tab3" class="is-active">
-                              <a><span>Team</span></a>
+                            <li :class="[activeTab3 === 'team' && 'is-active']">
+                              <a @click="activeTab3 = 'team'"
+                                ><span>Team</span></a
+                              >
                             </li>
-                            <li data-tab="projects-tab3">
-                              <a><span>Projects</span></a>
+                            <li
+                              :class="[
+                                activeTab3 === 'projects' && 'is-active',
+                              ]"
+                            >
+                              <a @click="activeTab3 = 'projects'"
+                                ><span>Projects</span></a
+                              >
                             </li>
-                            <li data-tab="tasks-tab3">
-                              <a><span>Tasks</span></a>
+                            <li
+                              :class="[activeTab3 === 'tasks' && 'is-active']"
+                            >
+                              <a @click="activeTab3 = 'tasks'"
+                                ><span>Tasks</span></a
+                              >
                             </li>
                             <li class="tab-naver"></li>
                           </ul>
                         </div>
                       </div>
 
-                      <div id="team-tab3" class="tab-content is-active">
+                      <div
+                        id="team-tab3"
+                        class="tab-content"
+                        :class="[activeTab3 === 'team' && 'is-active']"
+                      >
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit. Quid iudicant sensus? Primum quid tu dicis
@@ -411,7 +486,11 @@ useTitle('Components - Tabs Slider - Vuero')
                         </p>
                       </div>
 
-                      <div id="projects-tab3" class="tab-content">
+                      <div
+                        id="projects-tab3"
+                        class="tab-content"
+                        :class="[activeTab3 === 'projects' && 'is-active']"
+                      >
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit. Quid iudicant sensus? Primum quid tu dicis
@@ -421,7 +500,11 @@ useTitle('Components - Tabs Slider - Vuero')
                         </p>
                       </div>
 
-                      <div id="tasks-tab3" class="tab-content">
+                      <div
+                        id="team-tab3"
+                        class="tab-content"
+                        :class="[activeTab3 === 'tasks' && 'is-active']"
+                      >
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit. Quid iudicant sensus? Primum quid tu dicis

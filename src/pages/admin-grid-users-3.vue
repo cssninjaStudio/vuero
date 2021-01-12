@@ -1,10 +1,13 @@
 <script setup lang="ts">
 import { useTitle } from '@vueuse/core'
+import { ref } from 'vue'
 
 import {
   activeSidebar,
   toggleSidebar,
 } from '/@src/composition/state/ui/activeSidebarState'
+
+const activeTab = ref<'all' | 'team'>('all')
 
 useTitle('Grid Users 3 - Admin - Vuero')
 </script>
@@ -69,11 +72,11 @@ useTitle('Grid Users 3 - Admin - Vuero')
             <div class="tabs-inner">
               <div class="tabs">
                 <ul>
-                  <li data-tab="active-items-tab" class="is-active">
-                    <a><span>All</span></a>
+                  <li :class="[activeTab === 'all' && 'is-active']">
+                    <a @click="activeTab = 'all'"><span>All</span></a>
                   </li>
-                  <li data-tab="inactive-items-tab">
-                    <a><span>Team</span></a>
+                  <li :class="[activeTab === 'team' && 'is-active']">
+                    <a @click="activeTab = 'team'"><span>Team</span></a>
                   </li>
                   <li class="tab-naver"></li>
                 </ul>
@@ -108,7 +111,11 @@ useTitle('Grid Users 3 - Admin - Vuero')
               </div>
 
               <!--Active Tab-->
-              <div id="active-items-tab" class="tab-content is-active">
+              <div
+                id="active-items-tab"
+                class="tab-content"
+                :class="[activeTab === 'all' && 'is-active']"
+              >
                 <div class="columns is-multiline">
                   <!--Grid item-->
                   <div class="column is-3">
@@ -1985,7 +1992,11 @@ useTitle('Grid Users 3 - Admin - Vuero')
               </div>
 
               <!--inactive Tab-->
-              <div id="inactive-items-tab" class="tab-content">
+              <div
+                id="inactive-items-tab"
+                class="tab-content"
+                :class="[activeTab === 'team' && 'is-active']"
+              >
                 <!--Empty placeholder-->
                 <div class="page-placeholder">
                   <div class="placeholder-content">

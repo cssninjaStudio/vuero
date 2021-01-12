@@ -1,7 +1,10 @@
 <script setup lang="ts">
 import { useTitle } from '@vueuse/core'
+import { ref } from 'vue'
 
 import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
+
+const activeTab = ref<'active' | 'inactive'>('active')
 
 useTitle('List View 2 - WebApp - Vuero')
 </script>
@@ -51,11 +54,11 @@ useTitle('List View 2 - WebApp - Vuero')
             <div class="tabs-inner">
               <div class="tabs">
                 <ul>
-                  <li data-tab="active-items-tab" class="is-active">
-                    <a><span>Active</span></a>
+                  <li :class="[activeTab === 'active' && 'is-active']">
+                    <a @click="activeTab = 'active'"><span>Active</span></a>
                   </li>
-                  <li data-tab="inactive-items-tab">
-                    <a><span>Inactive</span></a>
+                  <li :class="[activeTab === 'inactive' && 'is-active']">
+                    <a @click="activeTab = 'inactive'"><span>Inactive</span></a>
                   </li>
                   <li class="tab-naver"></li>
                 </ul>
@@ -91,7 +94,11 @@ useTitle('List View 2 - WebApp - Vuero')
               </div>
 
               <!--Active Tab-->
-              <div id="active-items-tab" class="tab-content is-active">
+              <div
+                id="active-items-tab"
+                class="tab-content"
+                :class="[activeTab === 'active' && 'is-active']"
+              >
                 <div class="list-view-inner">
                   <!--List Item-->
                   <div class="list-view-item">
@@ -717,7 +724,11 @@ useTitle('List View 2 - WebApp - Vuero')
               </div>
 
               <!--Inactive Tab-->
-              <div id="inactive-items-tab" class="tab-content">
+              <div
+                id="inactive-items-tab"
+                class="tab-content"
+                :class="[activeTab === 'inactive' && 'is-active']"
+              >
                 <div class="list-view-inner">
                   <!--Empty placeholder-->
                   <div class="page-placeholder custom-text-filter-placeholder">

@@ -1,11 +1,21 @@
 <script setup lang="ts">
 import { useTitle } from '@vueuse/core'
-import { onMounted } from 'vue'
+import { onMounted, ref } from 'vue'
 
 import {
   activeSidebar,
   toggleSidebar,
 } from '/@src/composition/state/ui/activeSidebarState'
+
+const activeTab = ref<'team' | 'projects' | 'tasks'>('team')
+const activeTab1 = ref<'team' | 'projects' | 'tasks'>('team')
+const activeTab2 = ref<'team' | 'projects' | 'tasks'>('team')
+const activeTab3 = ref<'team' | 'projects' | 'tasks'>('team')
+const activeTab4 = ref<'team' | 'projects' | 'tasks'>('team')
+const activeTab5 = ref<'team' | 'projects' | 'tasks'>('team')
+const activeTab6 = ref<'team' | 'projects' | 'tasks'>('team')
+const activeTab7 = ref<'team' | 'projects' | 'tasks'>('team')
+const activeTab8 = ref<'team' | 'projects' | 'tasks'>('team')
 
 onMounted(() => {
   activeSidebar.value = 'components'
@@ -105,16 +115,26 @@ useTitle('Components - Tabs Regular - Vuero')
                       <div class="tabs-inner">
                         <div class="tabs">
                           <ul>
-                            <li data-tab="team-tab" class="is-active">
-                              <a>Team</a>
+                            <li :class="[activeTab === 'team' && 'is-active']">
+                              <a @click="activeTab = 'team'">Team</a>
                             </li>
-                            <li data-tab="projects-tab"><a>Projects</a></li>
-                            <li data-tab="tasks-tab"><a>Tasks</a></li>
+                            <li
+                              :class="[activeTab === 'projects' && 'is-active']"
+                            >
+                              <a @click="activeTab = 'projects'">Projects</a>
+                            </li>
+                            <li :class="[activeTab === 'tasks' && 'is-active']">
+                              <a @click="activeTab = 'tasks'">Tasks</a>
+                            </li>
                           </ul>
                         </div>
                       </div>
 
-                      <div id="team-tab" class="tab-content is-active">
+                      <div
+                        id="team-tab"
+                        class="tab-content"
+                        :class="[activeTab === 'team' && 'is-active']"
+                      >
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit. Quid iudicant sensus? Primum quid tu dicis
@@ -124,7 +144,11 @@ useTitle('Components - Tabs Regular - Vuero')
                         </p>
                       </div>
 
-                      <div id="projects-tab" class="tab-content">
+                      <div
+                        id="projects-tab"
+                        class="tab-content"
+                        :class="[activeTab === 'projects' && 'is-active']"
+                      >
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit. Quid iudicant sensus? Primum quid tu dicis
@@ -134,7 +158,11 @@ useTitle('Components - Tabs Regular - Vuero')
                         </p>
                       </div>
 
-                      <div id="tasks-tab" class="tab-content">
+                      <div
+                        id="team-tab"
+                        class="tab-content"
+                        :class="[activeTab === 'tasks' && 'is-active']"
+                      >
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit. Quid iudicant sensus? Primum quid tu dicis
@@ -197,16 +225,30 @@ useTitle('Components - Tabs Regular - Vuero')
                       <div class="tabs-inner">
                         <div class="tabs is-centered">
                           <ul>
-                            <li data-tab="team-tab1" class="is-active">
-                              <a>Team</a>
+                            <li :class="[activeTab1 === 'team' && 'is-active']">
+                              <a @click="activeTab1 = 'team'">Team</a>
                             </li>
-                            <li data-tab="projects-tab1"><a>Projects</a></li>
-                            <li data-tab="tasks-tab1"><a>Tasks</a></li>
+                            <li
+                              :class="[
+                                activeTab1 === 'projects' && 'is-active',
+                              ]"
+                            >
+                              <a @click="activeTab1 = 'projects'">Projects</a>
+                            </li>
+                            <li
+                              :class="[activeTab1 === 'tasks' && 'is-active']"
+                            >
+                              <a @click="activeTab1 = 'tasks'">Tasks</a>
+                            </li>
                           </ul>
                         </div>
                       </div>
 
-                      <div id="team-tab1" class="tab-content is-active">
+                      <div
+                        id="team-tab1"
+                        class="tab-content"
+                        :class="[activeTab1 === 'team' && 'is-active']"
+                      >
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit. Quid iudicant sensus? Primum quid tu dicis
@@ -216,7 +258,11 @@ useTitle('Components - Tabs Regular - Vuero')
                         </p>
                       </div>
 
-                      <div id="projects-tab1" class="tab-content">
+                      <div
+                        id="projects-tab1"
+                        class="tab-content"
+                        :class="[activeTab1 === 'projects' && 'is-active']"
+                      >
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit. Quid iudicant sensus? Primum quid tu dicis
@@ -226,7 +272,11 @@ useTitle('Components - Tabs Regular - Vuero')
                         </p>
                       </div>
 
-                      <div id="tasks-tab1" class="tab-content">
+                      <div
+                        id="team-tab1"
+                        class="tab-content"
+                        :class="[activeTab1 === 'tasks' && 'is-active']"
+                      >
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit. Quid iudicant sensus? Primum quid tu dicis
@@ -289,16 +339,30 @@ useTitle('Components - Tabs Regular - Vuero')
                       <div class="tabs-inner">
                         <div class="tabs is-right">
                           <ul>
-                            <li data-tab="team-tab2" class="is-active">
-                              <a>Team</a>
+                            <li :class="[activeTab2 === 'team' && 'is-active']">
+                              <a @click="activeTab2 = 'team'">Team</a>
                             </li>
-                            <li data-tab="projects-tab2"><a>Projects</a></li>
-                            <li data-tab="tasks-tab2"><a>Tasks</a></li>
+                            <li
+                              :class="[
+                                activeTab2 === 'projects' && 'is-active',
+                              ]"
+                            >
+                              <a @click="activeTab2 = 'projects'">Projects</a>
+                            </li>
+                            <li
+                              :class="[activeTab2 === 'tasks' && 'is-active']"
+                            >
+                              <a @click="activeTab2 = 'tasks'">Tasks</a>
+                            </li>
                           </ul>
                         </div>
                       </div>
 
-                      <div id="team-tab2" class="tab-content is-active">
+                      <div
+                        id="team-tab2"
+                        class="tab-content"
+                        :class="[activeTab2 === 'team' && 'is-active']"
+                      >
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit. Quid iudicant sensus? Primum quid tu dicis
@@ -308,7 +372,11 @@ useTitle('Components - Tabs Regular - Vuero')
                         </p>
                       </div>
 
-                      <div id="projects-tab2" class="tab-content">
+                      <div
+                        id="projects-tab2"
+                        class="tab-content"
+                        :class="[activeTab2 === 'projects' && 'is-active']"
+                      >
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit. Quid iudicant sensus? Primum quid tu dicis
@@ -318,7 +386,11 @@ useTitle('Components - Tabs Regular - Vuero')
                         </p>
                       </div>
 
-                      <div id="tasks-tab2" class="tab-content">
+                      <div
+                        id="team-tab2"
+                        class="tab-content"
+                        :class="[activeTab2 === 'tasks' && 'is-active']"
+                      >
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit. Quid iudicant sensus? Primum quid tu dicis
@@ -379,20 +451,26 @@ useTitle('Components - Tabs Regular - Vuero')
                       <div class="tabs-inner">
                         <div class="tabs">
                           <ul>
-                            <li data-tab="team-tab3" class="is-active">
-                              <a>
+                            <li :class="[activeTab3 === 'team' && 'is-active']">
+                              <a @click="activeTab3 = 'team'">
                                 <Icon icon="feather:users" />
                                 <span>Team</span>
                               </a>
                             </li>
-                            <li data-tab="projects-tab3">
-                              <a>
+                            <li
+                              :class="[
+                                activeTab3 === 'projects' && 'is-active',
+                              ]"
+                            >
+                              <a @click="activeTab3 = 'projects'">
                                 <Icon icon="feather:box" />
                                 <span>Projects</span>
                               </a>
                             </li>
-                            <li data-tab="tasks-tab3">
-                              <a>
+                            <li
+                              :class="[activeTab3 === 'tasks' && 'is-active']"
+                            >
+                              <a @click="activeTab3 = 'tasks'">
                                 <Icon icon="feather:check" />
                                 <span>Tasks</span>
                               </a>
@@ -401,7 +479,11 @@ useTitle('Components - Tabs Regular - Vuero')
                         </div>
                       </div>
 
-                      <div id="team-tab3" class="tab-content is-active">
+                      <div
+                        id="team-tab3"
+                        class="tab-content"
+                        :class="[activeTab3 === 'team' && 'is-active']"
+                      >
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit. Quid iudicant sensus? Primum quid tu dicis
@@ -411,7 +493,11 @@ useTitle('Components - Tabs Regular - Vuero')
                         </p>
                       </div>
 
-                      <div id="projects-tab3" class="tab-content">
+                      <div
+                        id="projects-tab3"
+                        class="tab-content"
+                        :class="[activeTab3 === 'projects' && 'is-active']"
+                      >
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit. Quid iudicant sensus? Primum quid tu dicis
@@ -421,7 +507,11 @@ useTitle('Components - Tabs Regular - Vuero')
                         </p>
                       </div>
 
-                      <div id="tasks-tab3" class="tab-content">
+                      <div
+                        id="team-tab3"
+                        class="tab-content"
+                        :class="[activeTab3 === 'tasks' && 'is-active']"
+                      >
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit. Quid iudicant sensus? Primum quid tu dicis
@@ -497,20 +587,26 @@ useTitle('Components - Tabs Regular - Vuero')
                       <div class="tabs-inner">
                         <div class="tabs">
                           <ul>
-                            <li data-tab="team-tab4" class="is-active">
-                              <a>
+                            <li :class="[activeTab4 === 'team' && 'is-active']">
+                              <a @click="activeTab4 = 'team'">
                                 <Icon icon="fa-users" />
                                 <span>Team</span>
                               </a>
                             </li>
-                            <li data-tab="projects-tab4">
-                              <a>
+                            <li
+                              :class="[
+                                activeTab4 === 'projects' && 'is-active',
+                              ]"
+                            >
+                              <a @click="activeTab4 = 'projects'">
                                 <Icon icon="fa-umbrella" />
                                 <span>Projects</span>
                               </a>
                             </li>
-                            <li data-tab="tasks-tab4">
-                              <a>
+                            <li
+                              :class="[activeTab4 === 'tasks' && 'is-active']"
+                            >
+                              <a @click="activeTab4 = 'tasks'">
                                 <Icon icon="fa-tasks" />
                                 <span>Tasks</span>
                               </a>
@@ -519,7 +615,11 @@ useTitle('Components - Tabs Regular - Vuero')
                         </div>
                       </div>
 
-                      <div id="team-tab4" class="tab-content is-active">
+                      <div
+                        id="team-tab4"
+                        class="tab-content"
+                        :class="[activeTab4 === 'team' && 'is-active']"
+                      >
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit. Quid iudicant sensus? Primum quid tu dicis
@@ -529,7 +629,11 @@ useTitle('Components - Tabs Regular - Vuero')
                         </p>
                       </div>
 
-                      <div id="projects-tab4" class="tab-content">
+                      <div
+                        id="projects-tab4"
+                        class="tab-content"
+                        :class="[activeTab4 === 'projects' && 'is-active']"
+                      >
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit. Quid iudicant sensus? Primum quid tu dicis
@@ -539,7 +643,11 @@ useTitle('Components - Tabs Regular - Vuero')
                         </p>
                       </div>
 
-                      <div id="tasks-tab4" class="tab-content">
+                      <div
+                        id="team-tab4"
+                        class="tab-content"
+                        :class="[activeTab4 === 'tasks' && 'is-active']"
+                      >
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit. Quid iudicant sensus? Primum quid tu dicis
@@ -615,20 +723,26 @@ useTitle('Components - Tabs Regular - Vuero')
                       <div class="tabs-inner">
                         <div class="tabs">
                           <ul>
-                            <li data-tab="team-tab5" class="is-active">
-                              <a>
+                            <li :class="[activeTab5 === 'team' && 'is-active']">
+                              <a @click="activeTab5 = 'team'">
                                 <i class="lnil lnil-hierchy-alt"></i>
                                 <span>Team</span>
                               </a>
                             </li>
-                            <li data-tab="projects-tab5">
-                              <a>
+                            <li
+                              :class="[
+                                activeTab5 === 'projects' && 'is-active',
+                              ]"
+                            >
+                              <a @click="activeTab5 = 'projects'">
                                 <i class="lnil lnil-analytics-alt-1"></i>
                                 <span>Projects</span>
                               </a>
                             </li>
-                            <li data-tab="tasks-tab5">
-                              <a>
+                            <li
+                              :class="[activeTab5 === 'tasks' && 'is-active']"
+                            >
+                              <a @click="activeTab5 = 'tasks'">
                                 <i class="lnil lnil-licencse"></i>
                                 <span>Tasks</span>
                               </a>
@@ -637,7 +751,11 @@ useTitle('Components - Tabs Regular - Vuero')
                         </div>
                       </div>
 
-                      <div id="team-tab5" class="tab-content is-active">
+                      <div
+                        id="team-tab5"
+                        class="tab-content"
+                        :class="[activeTab5 === 'team' && 'is-active']"
+                      >
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit. Quid iudicant sensus? Primum quid tu dicis
@@ -647,7 +765,11 @@ useTitle('Components - Tabs Regular - Vuero')
                         </p>
                       </div>
 
-                      <div id="projects-tab5" class="tab-content">
+                      <div
+                        id="projects-tab5"
+                        class="tab-content"
+                        :class="[activeTab5 === 'projects' && 'is-active']"
+                      >
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit. Quid iudicant sensus? Primum quid tu dicis
@@ -657,7 +779,11 @@ useTitle('Components - Tabs Regular - Vuero')
                         </p>
                       </div>
 
-                      <div id="tasks-tab5" class="tab-content">
+                      <div
+                        id="team-tab5"
+                        class="tab-content"
+                        :class="[activeTab5 === 'tasks' && 'is-active']"
+                      >
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit. Quid iudicant sensus? Primum quid tu dicis
@@ -734,16 +860,30 @@ useTitle('Components - Tabs Regular - Vuero')
                       <div class="tabs-inner">
                         <div class="tabs is-boxed">
                           <ul>
-                            <li data-tab="team-tab6" class="is-active">
-                              <a>Team</a>
+                            <li :class="[activeTab6 === 'team' && 'is-active']">
+                              <a @click="activeTab6 = 'team'">Team</a>
                             </li>
-                            <li data-tab="projects-tab6"><a>Projects</a></li>
-                            <li data-tab="tasks-tab6"><a>Tasks</a></li>
+                            <li
+                              :class="[
+                                activeTab6 === 'projects' && 'is-active',
+                              ]"
+                            >
+                              <a @click="activeTab6 = 'projects'">Projects</a>
+                            </li>
+                            <li
+                              :class="[activeTab6 === 'tasks' && 'is-active']"
+                            >
+                              <a @click="activeTab6 = 'tasks'">Tasks</a>
+                            </li>
                           </ul>
                         </div>
                       </div>
 
-                      <div id="team-tab6" class="tab-content is-active">
+                      <div
+                        id="team-tab6"
+                        class="tab-content"
+                        :class="[activeTab6 === 'team' && 'is-active']"
+                      >
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit. Quid iudicant sensus? Primum quid tu dicis
@@ -753,7 +893,11 @@ useTitle('Components - Tabs Regular - Vuero')
                         </p>
                       </div>
 
-                      <div id="projects-tab6" class="tab-content">
+                      <div
+                        id="projects-tab6"
+                        class="tab-content"
+                        :class="[activeTab6 === 'projects' && 'is-active']"
+                      >
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit. Quid iudicant sensus? Primum quid tu dicis
@@ -763,7 +907,11 @@ useTitle('Components - Tabs Regular - Vuero')
                         </p>
                       </div>
 
-                      <div id="tasks-tab6" class="tab-content">
+                      <div
+                        id="team-tab6"
+                        class="tab-content"
+                        :class="[activeTab6 === 'tasks' && 'is-active']"
+                      >
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit. Quid iudicant sensus? Primum quid tu dicis
@@ -825,16 +973,30 @@ useTitle('Components - Tabs Regular - Vuero')
                       <div class="tabs-inner">
                         <div class="tabs is-toggle">
                           <ul>
-                            <li data-tab="team-tab7" class="is-active">
-                              <a>Team</a>
+                            <li :class="[activeTab7 === 'team' && 'is-active']">
+                              <a @click="activeTab7 = 'team'">Team</a>
                             </li>
-                            <li data-tab="projects-tab7"><a>Projects</a></li>
-                            <li data-tab="tasks-tab7"><a>Tasks</a></li>
+                            <li
+                              :class="[
+                                activeTab7 === 'projects' && 'is-active',
+                              ]"
+                            >
+                              <a @click="activeTab7 = 'projects'">Projects</a>
+                            </li>
+                            <li
+                              :class="[activeTab7 === 'tasks' && 'is-active']"
+                            >
+                              <a @click="activeTab7 = 'tasks'">Tasks</a>
+                            </li>
                           </ul>
                         </div>
                       </div>
 
-                      <div id="team-tab7" class="tab-content is-active">
+                      <div
+                        id="team-tab7"
+                        class="tab-content"
+                        :class="[activeTab7 === 'team' && 'is-active']"
+                      >
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit. Quid iudicant sensus? Primum quid tu dicis
@@ -844,7 +1006,11 @@ useTitle('Components - Tabs Regular - Vuero')
                         </p>
                       </div>
 
-                      <div id="projects-tab7" class="tab-content">
+                      <div
+                        id="projects-tab7"
+                        class="tab-content"
+                        :class="[activeTab7 === 'projects' && 'is-active']"
+                      >
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit. Quid iudicant sensus? Primum quid tu dicis
@@ -854,7 +1020,11 @@ useTitle('Components - Tabs Regular - Vuero')
                         </p>
                       </div>
 
-                      <div id="tasks-tab7" class="tab-content">
+                      <div
+                        id="team-tab7"
+                        class="tab-content"
+                        :class="[activeTab7 === 'tasks' && 'is-active']"
+                      >
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit. Quid iudicant sensus? Primum quid tu dicis
@@ -918,16 +1088,30 @@ useTitle('Components - Tabs Regular - Vuero')
                       <div class="tabs-inner">
                         <div class="tabs is-toggle is-toggle-rounded">
                           <ul>
-                            <li data-tab="team-tab8" class="is-active">
-                              <a>Team</a>
+                            <li :class="[activeTab8 === 'team' && 'is-active']">
+                              <a @click="activeTab8 = 'team'">Team</a>
                             </li>
-                            <li data-tab="projects-tab8"><a>Projects</a></li>
-                            <li data-tab="tasks-tab8"><a>Tasks</a></li>
+                            <li
+                              :class="[
+                                activeTab8 === 'projects' && 'is-active',
+                              ]"
+                            >
+                              <a @click="activeTab8 = 'projects'">Projects</a>
+                            </li>
+                            <li
+                              :class="[activeTab8 === 'tasks' && 'is-active']"
+                            >
+                              <a @click="activeTab8 = 'tasks'">Tasks</a>
+                            </li>
                           </ul>
                         </div>
                       </div>
 
-                      <div id="team-tab8" class="tab-content is-active">
+                      <div
+                        id="team-tab8"
+                        class="tab-content"
+                        :class="[activeTab8 === 'team' && 'is-active']"
+                      >
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit. Quid iudicant sensus? Primum quid tu dicis
@@ -937,7 +1121,11 @@ useTitle('Components - Tabs Regular - Vuero')
                         </p>
                       </div>
 
-                      <div id="projects-tab8" class="tab-content">
+                      <div
+                        id="projects-tab8"
+                        class="tab-content"
+                        :class="[activeTab8 === 'projects' && 'is-active']"
+                      >
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit. Quid iudicant sensus? Primum quid tu dicis
@@ -947,7 +1135,11 @@ useTitle('Components - Tabs Regular - Vuero')
                         </p>
                       </div>
 
-                      <div id="tasks-tab8" class="tab-content">
+                      <div
+                        id="team-tab8"
+                        class="tab-content"
+                        :class="[activeTab8 === 'tasks' && 'is-active']"
+                      >
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit. Quid iudicant sensus? Primum quid tu dicis

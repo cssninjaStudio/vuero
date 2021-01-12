@@ -1,10 +1,13 @@
 <script setup lang="ts">
 import { useTitle } from '@vueuse/core'
+import { ref } from 'vue'
 
 import {
   activeSidebar,
   toggleSidebar,
 } from '/@src/composition/state/ui/activeSidebarState'
+
+const activeTab = ref<'all' | 'saved'>('all')
 
 useTitle('List View 4 - Admin - Vuero')
 </script>
@@ -69,11 +72,11 @@ useTitle('List View 4 - Admin - Vuero')
             <div class="tabs-inner">
               <div class="tabs">
                 <ul>
-                  <li data-tab="active-items-tab" class="is-active">
-                    <a><span>All</span></a>
+                  <li :class="[activeTab === 'all' && 'is-active']">
+                    <a @click="activeTab = 'all'"><span>All</span></a>
                   </li>
-                  <li data-tab="inactive-items-tab">
-                    <a><span>Saved</span></a>
+                  <li :class="[activeTab === 'saved' && 'is-active']">
+                    <a @click="activeTab = 'saved'"><span>Saved</span></a>
                   </li>
                   <li class="tab-naver"></li>
                 </ul>
@@ -109,13 +112,17 @@ useTitle('List View 4 - Admin - Vuero')
               </div>
 
               <!--Active Tab-->
-              <div id="active-items-tab" class="tab-content is-active">
+              <div
+                id="active-items-tab"
+                class="tab-content"
+                :class="[activeTab === 'all' && 'is-active']"
+              >
                 <div class="list-view-inner">
                   <!--Item-->
                   <div class="list-view-item">
                     <div class="list-view-item-inner">
                       <div class="pre-meta">
-                        <h3 data-filter-match>Strawberry & Cream Cake</h3>
+                        <h3 data-filter-match>Strawberry &amp; Cream Cake</h3>
                       </div>
                       <img
                         class="avatar"
@@ -1203,7 +1210,11 @@ useTitle('List View 4 - Admin - Vuero')
               </div>
 
               <!--Inactive Tab-->
-              <div id="inactive-items-tab" class="tab-content">
+              <div
+                id="inactive-items-tab"
+                class="tab-content"
+                :class="[activeTab === 'saved' && 'is-active']"
+              >
                 <div class="list-view-inner">
                   <!--Empty placeholder-->
                   <div

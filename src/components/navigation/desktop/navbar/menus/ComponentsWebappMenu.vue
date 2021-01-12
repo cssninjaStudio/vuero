@@ -1,18 +1,30 @@
+<script setup lang="ts">
+import { ref } from 'vue'
+
+const activeTab = ref<'components' | 'plugins'>('components')
+</script>
+
 <template>
   <div id="components-webapp-menu" class="webapp-subnavbar-inner tabs-wrapper">
     <div class="tabs-inner">
       <div class="tabs is-centered is-2">
         <ul>
-          <li data-tab="components-basic-pages-tab" class="is-active">
-            <a>UI Components</a>
+          <li :class="[activeTab === 'components' && 'is-active']">
+            <a @click="activeTab = 'components'">UI Components</a>
           </li>
-          <li data-tab="components-plugins-pages-tab"><a>JS Plugins</a></li>
+          <li :class="[activeTab === 'plugins' && 'is-active']">
+            <a @click="activeTab = 'plugins'">JS Plugins</a>
+          </li>
         </ul>
       </div>
     </div>
 
     <div class="container">
-      <div id="components-basic-pages-tab" class="tab-content is-active">
+      <div
+        id="components-basic-pages-tab"
+        class="tab-content"
+        :class="[activeTab === 'components' && 'is-active']"
+      >
         <div class="tab-content-inner">
           <div class="center has-slimscroll">
             <div class="columns">
@@ -151,7 +163,11 @@
         </div>
       </div>
 
-      <div id="components-plugins-pages-tab" class="tab-content">
+      <div
+        id="components-plugins-pages-tab"
+        class="tab-content"
+        :class="[activeTab === 'plugins' && 'is-active']"
+      >
         <div class="tab-content-inner">
           <div class="center has-slimscroll">
             <div class="columns">

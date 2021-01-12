@@ -1,18 +1,30 @@
+<script setup lang="ts">
+import { ref } from 'vue'
+
+const activeTab = ref<'dashboards' | 'templates'>('dashboards')
+</script>
+
 <template>
   <div id="dashboards-webapp-menu" class="webapp-subnavbar-inner tabs-wrapper">
     <div class="tabs-inner">
       <div class="tabs is-centered is-3">
         <ul>
-          <li data-tab="dashboard-pages-tab" class="is-active">
-            <a>Dashboards</a>
+          <li :class="[activeTab === 'dashboards' && 'is-active']">
+            <a @click="activeTab = 'dashboards'">Dashboards</a>
           </li>
-          <li data-tab="templates-pages-tab"><a>Templates</a></li>
+          <li :class="[activeTab === 'templates' && 'is-active']">
+            <a @click="activeTab = 'templates'">Templates</a>
+          </li>
         </ul>
       </div>
     </div>
 
     <div class="container">
-      <div id="dashboard-pages-tab" class="tab-content is-active">
+      <div
+        id="dashboard-pages-tab"
+        class="tab-content"
+        :class="[activeTab === 'dashboards' && 'is-active']"
+      >
         <div class="tab-content-inner">
           <div class="center has-slimscroll">
             <div class="columns">
@@ -188,7 +200,11 @@
         </div>
       </div>
 
-      <div id="templates-pages-tab" class="tab-content">
+      <div
+        id="templates-pages-tab"
+        class="tab-content"
+        :class="[activeTab === 'templates' && 'is-active']"
+      >
         <div class="tab-content-inner">
           <div class="center has-slimscroll">
             <div class="columns">
