@@ -1,11 +1,180 @@
 <script setup lang="ts">
 import { useTitle } from '@vueuse/core'
-import { onMounted } from 'vue'
+import { onMounted, ref } from 'vue'
 
 import {
   activeSidebar,
   toggleSidebar,
 } from '/@src/composition/state/ui/activeSidebarState'
+
+const displayCode1 = ref(false)
+const code1 = `<!-- h-buttons -->
+<a class="button h-button">Button</a>
+<button class="button h-button is-bold">Button</button>
+<a class="button h-button is-rounded">Button</a>
+<button class="button h-button is-rounded is-bold">
+  Button
+</button>`
+
+const displayCode2 = ref(false)
+const code2 = `<!-- buttons styles -->
+<a class="button h-button is-primary">Primary</a>
+<a class="button h-button is-info">Info</a>
+<a class="button h-button is-success">Success</a>
+<a class="button h-button is-warning">Warning</a>
+<a class="button h-button is-danger">Danger</a>
+<a class="button h-button is-light">Light</a>
+<a class="button h-button is-white">White</a>`
+
+const displayCode3 = ref(false)
+const code3 = `<!-- buttons outlined -->
+<a class="button h-button is-primary is-outlined">Primary</a>
+<a class="button h-button is-info is-outlined">Info</a>
+<a class="button h-button is-success is-outlined">Success</a>
+<a class="button h-button is-warning is-outlined">Warning</a>
+<a class="button h-button is-danger is-outlined">Danger</a>`
+
+const displayCode4 = ref(false)
+const code4 = `<!-- buttons light -->
+<a class="button h-button is-primary is-light">Primary</a>
+<a class="button h-button is-info is-light">Info</a>
+<a class="button h-button is-success is-light">Success</a>
+<a class="button h-button is-warning is-light">Warning</a>
+<a class="button h-button is-danger is-light">Danger</a>`
+
+const displayCode5 = ref(false)
+const code5 = `<!-- buttons raised -->
+<a class="button h-button is-primary is-raised">Primary</a>
+<a class="button h-button is-info is-raised">Info</a>
+<a class="button h-button is-success is-raised">Success</a>
+<a class="button h-button is-warning is-elevated">Warning</a>
+<a class="button h-button is-danger is-elevated">Danger</a>`
+
+const displayCode6 = ref(false)
+const code6 = `<!-- buttons loading -->
+<a class="button h-button is-loading">Button</a>
+<a class="button h-button is-primary is-loading">Button</a>
+<a class="button h-button is-info is-loading">Button</a>
+<a class="button h-button is-success is-loading is-rounded">Button</a>
+<a class="button h-button is-warning is-loading is-rounded">Button</a>
+<a class="button h-button is-danger is-loading is-rounded">Button</a>`
+
+const displayCode7 = ref(false)
+const code7 = `<!-- buttons disabled -->
+<a class="button h-button is-primary is-disabled">Primary</a>
+<a class="button h-button is-info is-disabled">Info</a>
+<a class="button h-button is-success is-disabled">Success</a>
+<a class="button h-button is-warning is-disabled">Warning</a>
+<a class="button h-button is-danger is-disabled">Danger</a>`
+
+const displayCode8 = ref(false)
+const code8 = `<!-- buttons font awesome -->
+<button class="button h-button is-primary is-elevated">
+  <span class="icon">
+    <i class="fab fa-twitter"></i>
+  </span>
+  <span>Tweet Now</span>
+</button>
+<button class="button h-button is-success is-rounded is-elevated">
+  <span class="icon">
+    <i class="fas fa-check"></i>
+  </span>
+  <span>Save Changes</span>
+</button>
+<button class="button">
+  <span class="icon is-small">
+    <i class="fab fa-twitter"></i>
+  </span>
+</button>
+<button class="button is-primary is-circle is-elevated">
+  <span class="icon is-small">
+    <i class="fab fa-linkedin-in"></i>
+  </span>
+</button>`
+
+const displayCode9 = ref(false)
+const code9 = `<!-- buttons feather icons -->
+<button class="button h-button is-primary is-elevated">
+  <span class="icon">
+    <i data-feather="twitter"></i>
+  </span>
+  <span>Tweet Now</span>
+</button>
+<button class="button h-button is-danger is-rounded is-elevated">
+  <span class="icon">
+    <i data-feather="gitlab"></i>
+  </span>
+  <span>Commit Code</span>
+</button>
+<button class="button">
+  <span class="icon is-small">
+    <i data-feather="mail"></i>
+  </span>
+</button>
+<button class="button is-primary is-circle is-elevated">
+  <span class="icon is-small">
+    <i data-feather="message-square"></i>
+  </span>
+</button>`
+
+const displayCode10 = ref(false)
+const code10 = `<!-- buttons group -->
+<div class="buttons">
+  <button class="button h-button">
+    <span class="icon">
+      <i data-feather="eye"></i>
+    </span>
+    <span>View</span>
+  </button>
+  <button class="button h-button">
+    <span class="icon">
+      <i data-feather="edit-2"></i>
+    </span>
+    <span>Edit</span>
+  </button>
+  <button class="button h-button is-success is-elevated">
+    <span class="icon">
+      <i class="fas fa-check"></i>
+    </span>
+    <span>Approve</span>
+  </button>
+</div>`
+
+const displayCode11 = ref(false)
+const code11 = `<!-- buttons addons -->
+<div class="field has-addons">
+  <p class="control">
+    <button class="button h-button">
+      <span class="icon is-small">
+        <i class="fas fa-align-left"></i>
+      </span>
+      <span>Left</span>
+    </button>
+  </p>
+  <p class="control">
+    <button class="button h-button">
+      <span class="icon is-small">
+        <i class="fas fa-align-center"></i>
+      </span>
+      <span>Center</span>
+    </button>
+  </p>
+  <p class="control">
+    <button class="button h-button">
+      <span class="icon is-small">
+        <i class="fas fa-align-right"></i>
+      </span>
+      <span>Right</span>
+    </button>
+  </p>
+</div>`
+
+const displayCode12 = ref(false)
+const code12 = `<!-- buttons h-action -->
+<a class="button h-action">Button</a>
+<button class="button h-action is-rounded">Button</button>
+<a class="button h-action is-hoverable">Button</a>
+<button class="button h-action is-grey">Button</button>`
 
 onMounted(() => {
   activeSidebar.value = 'elements'
@@ -96,9 +265,21 @@ useTitle('Elements - Buttons - Vuero')
                       Basic modifiers such as <code>is-bold</code> and
                       <code>is-rounded</code> are available.
                     </p>
-                    <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                    <a
+                      class="code-trigger"
+                      :class="[displayCode1 && 'is-active']"
+                      @click="displayCode1 = !displayCode1"
+                    >
+                      <span
+                        v-show="displayCode1"
+                        class="iconify open"
+                        data-icon="feather:code"
+                      />
+                      <span
+                        v-show="!displayCode1"
+                        class="iconify close"
+                        data-icon="feather:x"
+                      />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -111,14 +292,12 @@ useTitle('Elements - Buttons - Vuero')
                       </button>
                     </div>
 
-                    <div class="highlight highlight-block">
-                      <pre><code class="code-highlight">
-&#x3C;a class=&#x22;button h-button&#x22;&#x3E;Button&#x3C;/a&#x3E;
-&#x3C;button class=&#x22;button h-button is-bold&#x22;&#x3E;Button&#x3C;/button&#x3E;
-&#x3C;a class=&#x22;button h-button is-rounded&#x22;&#x3E;Button&#x3C;/a&#x3E;
-&#x3C;button class=&#x22;button h-button is-rounded is-bold&#x22;&#x3E;Button&#x3C;/button&#x3E;
-</code></pre>
-                    </div>
+                    <HighlightJS
+                      v-if="displayCode1"
+                      lang="xml"
+                      class="highlight highlight-block"
+                      :code="code1"
+                    />
                   </div>
                 </div>
 
@@ -134,9 +313,21 @@ useTitle('Elements - Buttons - Vuero')
                       <code>is-warning</code>, <code>is-danger</code>,
                       <code>is-light</code>, <code>is-white</code>.
                     </p>
-                    <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                    <a
+                      class="code-trigger"
+                      :class="[displayCode2 && 'is-active']"
+                      @click="displayCode2 = !displayCode2"
+                    >
+                      <span
+                        v-show="displayCode2"
+                        class="iconify open"
+                        data-icon="feather:code"
+                      />
+                      <span
+                        v-show="!displayCode2"
+                        class="iconify close"
+                        data-icon="feather:x"
+                      />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -150,17 +341,12 @@ useTitle('Elements - Buttons - Vuero')
                       <a class="button h-button is-white">White</a>
                     </div>
 
-                    <div class="highlight highlight-block">
-                      <pre><code class="code-highlight">
-&#x3C;a class=&#x22;button h-button is-primary&#x22;&#x3E;Primary&#x3C;/a&#x3E;
-&#x3C;a class=&#x22;button h-button is-info&#x22;&#x3E;Info&#x3C;/a&#x3E;
-&#x3C;a class=&#x22;button h-button is-success&#x22;&#x3E;Success&#x3C;/a&#x3E;
-&#x3C;a class=&#x22;button h-button is-warning&#x22;&#x3E;Warning&#x3C;/a&#x3E;
-&#x3C;a class=&#x22;button h-button is-danger&#x22;&#x3E;Danger&#x3C;/a&#x3E;
-&#x3C;a class=&#x22;button h-button is-light&#x22;&#x3E;Light&#x3C;/a&#x3E;
-&#x3C;a class=&#x22;button h-button is-white&#x22;&#x3E;White&#x3C;/a&#x3E;
-</code></pre>
-                    </div>
+                    <HighlightJS
+                      v-if="displayCode2"
+                      lang="xml"
+                      class="highlight highlight-block"
+                      :code="code2"
+                    />
                   </div>
                 </div>
 
@@ -173,9 +359,21 @@ useTitle('Elements - Buttons - Vuero')
                       use the same markup that we have for solid buttons and add
                       the <code>is-light</code> modifier class.
                     </p>
-                    <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                    <a
+                      class="code-trigger"
+                      :class="[displayCode3 && 'is-active']"
+                      @click="displayCode3 = !displayCode3"
+                    >
+                      <span
+                        v-show="displayCode3"
+                        class="iconify open"
+                        data-icon="feather:code"
+                      />
+                      <span
+                        v-show="!displayCode3"
+                        class="iconify close"
+                        data-icon="feather:x"
+                      />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -187,15 +385,12 @@ useTitle('Elements - Buttons - Vuero')
                       <a class="button h-button is-danger is-light">Danger</a>
                     </div>
 
-                    <div class="highlight highlight-block">
-                      <pre><code class="code-highlight">
-&#x3C;a class=&#x22;button h-button is-primary is-light&#x22;&#x3E;Primary&#x3C;/a&#x3E;
-&#x3C;a class=&#x22;button h-button is-info is-light&#x22;&#x3E;Info&#x3C;/a&#x3E;
-&#x3C;a class=&#x22;button h-button is-success is-light&#x22;&#x3E;Success&#x3C;/a&#x3E;
-&#x3C;a class=&#x22;button h-button is-warning is-light&#x22;&#x3E;Warning&#x3C;/a&#x3E;
-&#x3C;a class=&#x22;button h-button is-danger is-light&#x22;&#x3E;Danger&#x3C;/a&#x3E;
-</code></pre>
-                    </div>
+                    <HighlightJS
+                      v-if="displayCode3"
+                      lang="xml"
+                      class="highlight highlight-block"
+                      :code="code3"
+                    />
                   </div>
                 </div>
 
@@ -208,9 +403,21 @@ useTitle('Elements - Buttons - Vuero')
                       that we have for solid buttons and add the
                       <code>is-outlined</code> modifier class.
                     </p>
-                    <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                    <a
+                      class="code-trigger"
+                      :class="[displayCode4 && 'is-active']"
+                      @click="displayCode4 = !displayCode4"
+                    >
+                      <span
+                        v-show="displayCode4"
+                        class="iconify open"
+                        data-icon="feather:code"
+                      />
+                      <span
+                        v-show="!displayCode4"
+                        class="iconify close"
+                        data-icon="feather:x"
+                      />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -230,15 +437,12 @@ useTitle('Elements - Buttons - Vuero')
                       >
                     </div>
 
-                    <div class="highlight highlight-block">
-                      <pre><code class="code-highlight">
-&#x3C;a class=&#x22;button h-button is-primary is-outlined&#x22;&#x3E;Primary&#x3C;/a&#x3E;
-&#x3C;a class=&#x22;button h-button is-info is-outlined&#x22;&#x3E;Info&#x3C;/a&#x3E;
-&#x3C;a class=&#x22;button h-button is-success is-outlined&#x22;&#x3E;Success&#x3C;/a&#x3E;
-&#x3C;a class=&#x22;button h-button is-warning is-outlined&#x22;&#x3E;Warning&#x3C;/a&#x3E;
-&#x3C;a class=&#x22;button h-button is-danger is-outlined&#x22;&#x3E;Danger&#x3C;/a&#x3E;
-</code></pre>
-                    </div>
+                    <HighlightJS
+                      v-if="displayCode4"
+                      lang="xml"
+                      class="highlight highlight-block"
+                      :code="code4"
+                    />
                   </div>
                 </div>
 
@@ -252,9 +456,21 @@ useTitle('Elements - Buttons - Vuero')
                       For a permanent elevation, add the
                       <code>is-elevated</code> modifier class.
                     </p>
-                    <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                    <a
+                      class="code-trigger"
+                      :class="[displayCode5 && 'is-active']"
+                      @click="displayCode5 = !displayCode5"
+                    >
+                      <span
+                        v-show="displayCode5"
+                        class="iconify open"
+                        data-icon="feather:code"
+                      />
+                      <span
+                        v-show="!displayCode5"
+                        class="iconify close"
+                        data-icon="feather:x"
+                      />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -274,15 +490,12 @@ useTitle('Elements - Buttons - Vuero')
                       >
                     </div>
 
-                    <div class="highlight highlight-block">
-                      <pre><code class="code-highlight">
-&#x3C;a class=&#x22;button h-button is-primary is-raised&#x22;&#x3E;Primary&#x3C;/a&#x3E;
-&#x3C;a class=&#x22;button h-button is-info is-raised&#x22;&#x3E;Info&#x3C;/a&#x3E;
-&#x3C;a class=&#x22;button h-button is-success is-raised&#x22;&#x3E;Success&#x3C;/a&#x3E;
-&#x3C;a class=&#x22;button h-button is-warning is-elevated&#x22;&#x3E;Warning&#x3C;/a&#x3E;
-&#x3C;a class=&#x22;button h-button is-danger is-elevated&#x22;&#x3E;Danger&#x3C;/a&#x3E;
-</code></pre>
-                    </div>
+                    <HighlightJS
+                      v-if="displayCode5"
+                      lang="xml"
+                      class="highlight highlight-block"
+                      :code="code5"
+                    />
                   </div>
                 </div>
 
@@ -295,9 +508,21 @@ useTitle('Elements - Buttons - Vuero')
                       loading spinner, add the <code>is-loading</code> modifier
                       class.
                     </p>
-                    <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                    <a
+                      class="code-trigger"
+                      :class="[displayCode6 && 'is-active']"
+                      @click="displayCode6 = !displayCode6"
+                    >
+                      <span
+                        v-show="displayCode6"
+                        class="iconify open"
+                        data-icon="feather:code"
+                      />
+                      <span
+                        v-show="!displayCode6"
+                        class="iconify close"
+                        data-icon="feather:x"
+                      />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -320,16 +545,12 @@ useTitle('Elements - Buttons - Vuero')
                       >
                     </div>
 
-                    <div class="highlight highlight-block">
-                      <pre><code class="code-highlight">
-&#x3C;a class=&#x22;button h-button is-loading&#x22;&#x3E;Button&#x3C;/a&#x3E;
-&#x3C;a class=&#x22;button h-button is-primary is-loading&#x22;&#x3E;Button&#x3C;/a&#x3E;
-&#x3C;a class=&#x22;button h-button is-info is-loading&#x22;&#x3E;Button&#x3C;/a&#x3E;
-&#x3C;a class=&#x22;button h-button is-success is-loading is-rounded&#x22;&#x3E;Button&#x3C;/a&#x3E;
-&#x3C;a class=&#x22;button h-button is-warning is-loading is-rounded&#x22;&#x3E;Button&#x3C;/a&#x3E;
-&#x3C;a class=&#x22;button h-button is-danger is-loading is-rounded&#x22;&#x3E;Button&#x3C;/a&#x3E;
-</code></pre>
-                    </div>
+                    <HighlightJS
+                      v-if="displayCode6"
+                      lang="xml"
+                      class="highlight highlight-block"
+                      :code="code6"
+                    />
                   </div>
                 </div>
 
@@ -342,9 +563,21 @@ useTitle('Elements - Buttons - Vuero')
                       disabled button, add the <code>disabled</code> html
                       attribute to the target button element.
                     </p>
-                    <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                    <a
+                      class="code-trigger"
+                      :class="[displayCode7 && 'is-active']"
+                      @click="displayCode7 = !displayCode7"
+                    >
+                      <span
+                        v-show="displayCode7"
+                        class="iconify open"
+                        data-icon="feather:code"
+                      />
+                      <span
+                        v-show="!displayCode7"
+                        class="iconify close"
+                        data-icon="feather:x"
+                      />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -364,15 +597,12 @@ useTitle('Elements - Buttons - Vuero')
                       >
                     </div>
 
-                    <div class="highlight highlight-block">
-                      <pre><code class="code-highlight">
-&#x3C;a class=&#x22;button h-button is-primary is-disabled&#x22;&#x3E;Primary&#x3C;/a&#x3E;
-&#x3C;a class=&#x22;button h-button is-info is-disabled&#x22;&#x3E;Info&#x3C;/a&#x3E;
-&#x3C;a class=&#x22;button h-button is-success is-disabled&#x22;&#x3E;Success&#x3C;/a&#x3E;
-&#x3C;a class=&#x22;button h-button is-warning is-disabled&#x22;&#x3E;Warning&#x3C;/a&#x3E;
-&#x3C;a class=&#x22;button h-button is-danger is-disabled&#x22;&#x3E;Danger&#x3C;/a&#x3E;
-</code></pre>
-                    </div>
+                    <HighlightJS
+                      v-if="displayCode7"
+                      lang="xml"
+                      class="highlight highlight-block"
+                      :code="code7"
+                    />
                   </div>
                 </div>
 
@@ -387,9 +617,21 @@ useTitle('Elements - Buttons - Vuero')
                       a single icon. Please refer to markup for detailed
                       examples.
                     </p>
-                    <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                    <a
+                      class="code-trigger"
+                      :class="[displayCode8 && 'is-active']"
+                      @click="displayCode8 = !displayCode8"
+                    >
+                      <span
+                        v-show="displayCode8"
+                        class="iconify open"
+                        data-icon="feather:code"
+                      />
+                      <span
+                        v-show="!displayCode8"
+                        class="iconify close"
+                        data-icon="feather:x"
+                      />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -420,32 +662,12 @@ useTitle('Elements - Buttons - Vuero')
                       </button>
                     </div>
 
-                    <div class="highlight highlight-block">
-                      <pre><code class="code-highlight">
-&#x3C;button class=&#x22;button h-button is-primary is-elevated&#x22;&#x3E;
-    &#x3C;span class=&#x22;icon&#x22;&#x3E;
-        &#x3C;i class=&#x22;fab fa-twitter&#x22;&#x3E;&#x3C;/i&#x3E;
-    &#x3C;/span&#x3E;
-    &#x3C;span&#x3E;Tweet Now&#x3C;/span&#x3E;
-&#x3C;/button&#x3E;
-&#x3C;button class=&#x22;button h-button is-success is-rounded is-elevated&#x22;&#x3E;
-    &#x3C;span class=&#x22;icon&#x22;&#x3E;
-        &#x3C;i class=&#x22;fas fa-check&#x22;&#x3E;&#x3C;/i&#x3E;
-    &#x3C;/span&#x3E;
-    &#x3C;span&#x3E;Save Changes&#x3C;/span&#x3E;
-&#x3C;/button&#x3E;
-&#x3C;button class=&#x22;button&#x22;&#x3E;
-    &#x3C;span class=&#x22;icon is-small&#x22;&#x3E;
-        &#x3C;i class=&#x22;fab fa-twitter&#x22;&#x3E;&#x3C;/i&#x3E;
-    &#x3C;/span&#x3E;
-&#x3C;/button&#x3E;
-&#x3C;button class=&#x22;button is-primary is-circle is-elevated&#x22;&#x3E;
-    &#x3C;span class=&#x22;icon is-small&#x22;&#x3E;
-        &#x3C;i class=&#x22;fab fa-linkedin-in&#x22;&#x3E;&#x3C;/i&#x3E;
-    &#x3C;/span&#x3E;
-&#x3C;/button&#x3E;
-</code></pre>
-                    </div>
+                    <HighlightJS
+                      v-if="displayCode8"
+                      lang="xml"
+                      class="highlight highlight-block"
+                      :code="code8"
+                    />
                   </div>
                 </div>
 
@@ -460,9 +682,21 @@ useTitle('Elements - Buttons - Vuero')
                       a single icon. Please refer to markup for detailed
                       examples.
                     </p>
-                    <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                    <a
+                      class="code-trigger"
+                      :class="[displayCode9 && 'is-active']"
+                      @click="displayCode9 = !displayCode9"
+                    >
+                      <span
+                        v-show="displayCode9"
+                        class="iconify open"
+                        data-icon="feather:code"
+                      />
+                      <span
+                        v-show="!displayCode9"
+                        class="iconify close"
+                        data-icon="feather:x"
+                      />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -493,32 +727,12 @@ useTitle('Elements - Buttons - Vuero')
                       </button>
                     </div>
 
-                    <div class="highlight highlight-block">
-                      <pre><code class="code-highlight">
-&#x3C;button class=&#x22;button h-button is-primary is-elevated&#x22;&#x3E;
-    &#x3C;span class=&#x22;icon&#x22;&#x3E;
-        &#x3C;i data-feather=&#x22;twitter&#x22;&#x3E;&#x3C;/i&#x3E;
-    &#x3C;/span&#x3E;
-    &#x3C;span&#x3E;Tweet Now&#x3C;/span&#x3E;
-&#x3C;/button&#x3E;
-&#x3C;button class=&#x22;button h-button is-danger is-rounded is-elevated&#x22;&#x3E;
-    &#x3C;span class=&#x22;icon&#x22;&#x3E;
-        &#x3C;i data-feather=&#x22;gitlab&#x22;&#x3E;&#x3C;/i&#x3E;
-    &#x3C;/span&#x3E;
-    &#x3C;span&#x3E;Commit Code&#x3C;/span&#x3E;
-&#x3C;/button&#x3E;
-&#x3C;button class=&#x22;button&#x22;&#x3E;
-    &#x3C;span class=&#x22;icon is-small&#x22;&#x3E;
-        &#x3C;i data-feather=&#x22;mail&#x22;&#x3E;&#x3C;/i&#x3E;
-    &#x3C;/span&#x3E;
-&#x3C;/button&#x3E;
-&#x3C;button class=&#x22;button is-primary is-circle is-elevated&#x22;&#x3E;
-    &#x3C;span class=&#x22;icon is-small&#x22;&#x3E;
-        &#x3C;i data-feather=&#x22;message-square&#x22;&#x3E;&#x3C;/i&#x3E;
-    &#x3C;/span&#x3E;
-&#x3C;/button&#x3E;
-</code></pre>
-                    </div>
+                    <HighlightJS
+                      v-if="displayCode9"
+                      lang="xml"
+                      class="highlight highlight-block"
+                      :code="code9"
+                    />
                   </div>
                 </div>
 
@@ -531,9 +745,21 @@ useTitle('Elements - Buttons - Vuero')
                       wrapping them inside a <code>buttons</code> element. You
                       can mix any button styles.
                     </p>
-                    <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                    <a
+                      class="code-trigger"
+                      :class="[displayCode10 && 'is-active']"
+                      @click="displayCode10 = !displayCode10"
+                    >
+                      <span
+                        v-show="displayCode10"
+                        class="iconify open"
+                        data-icon="feather:code"
+                      />
+                      <span
+                        v-show="!displayCode10"
+                        class="iconify close"
+                        data-icon="feather:x"
+                      />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -558,30 +784,12 @@ useTitle('Elements - Buttons - Vuero')
                       </button>
                     </div>
 
-                    <div class="highlight highlight-block">
-                      <pre><code class="code-highlight">
-&#x3C;div class=&#x22;buttons&#x22;&#x3E;
-    &#x3C;button class=&#x22;button h-button&#x22;&#x3E;
-        &#x3C;span class=&#x22;icon&#x22;&#x3E;
-            &#x3C;i data-feather=&#x22;eye&#x22;&#x3E;&#x3C;/i&#x3E;
-        &#x3C;/span&#x3E;
-        &#x3C;span&#x3E;View&#x3C;/span&#x3E;
-    &#x3C;/button&#x3E;
-    &#x3C;button class=&#x22;button h-button&#x22;&#x3E;
-        &#x3C;span class=&#x22;icon&#x22;&#x3E;
-            &#x3C;i data-feather=&#x22;edit-2&#x22;&#x3E;&#x3C;/i&#x3E;
-        &#x3C;/span&#x3E;
-        &#x3C;span&#x3E;Edit&#x3C;/span&#x3E;
-    &#x3C;/button&#x3E;
-    &#x3C;button class=&#x22;button h-button is-success is-elevated&#x22;&#x3E;
-        &#x3C;span class=&#x22;icon&#x22;&#x3E;
-            &#x3C;i class=&#x22;fas fa-check&#x22;&#x3E;&#x3C;/i&#x3E;
-        &#x3C;/span&#x3E;
-        &#x3C;span&#x3E;Approve&#x3C;/span&#x3E;
-    &#x3C;/button&#x3E;
-&#x3C;/div&#x3E;
-</code></pre>
-                    </div>
+                    <HighlightJS
+                      v-if="displayCode10"
+                      lang="xml"
+                      class="highlight highlight-block"
+                      :code="code10"
+                    />
                   </div>
                 </div>
 
@@ -594,9 +802,21 @@ useTitle('Elements - Buttons - Vuero')
                       block of buttons. This makes creating conmplex interfaces
                       much more easier. Refer to markup for a detailed example.
                     </p>
-                    <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                    <a
+                      class="code-trigger"
+                      :class="[displayCode11 && 'is-active']"
+                      @click="displayCode11 = !displayCode11"
+                    >
+                      <span
+                        v-show="displayCode11"
+                        class="iconify open"
+                        data-icon="feather:code"
+                      />
+                      <span
+                        v-show="!displayCode11"
+                        class="iconify close"
+                        data-icon="feather:x"
+                      />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -627,36 +847,12 @@ useTitle('Elements - Buttons - Vuero')
                       </p>
                     </div>
 
-                    <div class="highlight highlight-block">
-                      <pre><code class="code-highlight">
-&#x3C;div class=&#x22;field has-addons&#x22;&#x3E;
-    &#x3C;p class=&#x22;control&#x22;&#x3E;
-        &#x3C;button class=&#x22;button h-button&#x22;&#x3E;
-            &#x3C;span class=&#x22;icon is-small&#x22;&#x3E;
-                &#x3C;i class=&#x22;fas fa-align-left&#x22;&#x3E;&#x3C;/i&#x3E;
-            &#x3C;/span&#x3E;
-            &#x3C;span&#x3E;Left&#x3C;/span&#x3E;
-        &#x3C;/button&#x3E;
-    &#x3C;/p&#x3E;
-    &#x3C;p class=&#x22;control&#x22;&#x3E;
-        &#x3C;button class=&#x22;button h-button&#x22;&#x3E;
-            &#x3C;span class=&#x22;icon is-small&#x22;&#x3E;
-                &#x3C;i class=&#x22;fas fa-align-center&#x22;&#x3E;&#x3C;/i&#x3E;
-            &#x3C;/span&#x3E;
-            &#x3C;span&#x3E;Center&#x3C;/span&#x3E;
-        &#x3C;/button&#x3E;
-    &#x3C;/p&#x3E;
-    &#x3C;p class=&#x22;control&#x22;&#x3E;
-        &#x3C;button class=&#x22;button h-button&#x22;&#x3E;
-            &#x3C;span class=&#x22;icon is-small&#x22;&#x3E;
-                &#x3C;i class=&#x22;fas fa-align-right&#x22;&#x3E;&#x3C;/i&#x3E;
-            &#x3C;/span&#x3E;
-            &#x3C;span&#x3E;Right&#x3C;/span&#x3E;
-        &#x3C;/button&#x3E;
-    &#x3C;/p&#x3E;
-&#x3C;/div&#x3E;
-</code></pre>
-                    </div>
+                    <HighlightJS
+                      v-if="displayCode11"
+                      lang="xml"
+                      class="highlight highlight-block"
+                      :code="code11"
+                    />
                   </div>
                 </div>
 
@@ -670,9 +866,21 @@ useTitle('Elements - Buttons - Vuero')
                       modifiers like the H Button but is a solid alternative
                       when you want to use simple buttons.
                     </p>
-                    <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                    <a
+                      class="code-trigger"
+                      :class="[displayCode12 && 'is-active']"
+                      @click="displayCode12 = !displayCode12"
+                    >
+                      <span
+                        v-show="displayCode12"
+                        class="iconify open"
+                        data-icon="feather:code"
+                      />
+                      <span
+                        v-show="!displayCode12"
+                        class="iconify close"
+                        data-icon="feather:x"
+                      />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -683,14 +891,12 @@ useTitle('Elements - Buttons - Vuero')
                       <button class="button h-action is-grey">Button</button>
                     </div>
 
-                    <div class="highlight highlight-block">
-                      <pre><code class="code-highlight">
-&#x3C;a class=&#x22;button h-action&#x22;&#x3E;Button&#x3C;/a&#x3E;
-&#x3C;button class=&#x22;button h-action is-rounded&#x22;&#x3E;Button&#x3C;/button&#x3E;
-&#x3C;a class=&#x22;button h-action is-hoverable&#x22;&#x3E;Button&#x3C;/a&#x3E;
-&#x3C;button class=&#x22;button h-action is-grey&#x22;&#x3E;Button&#x3C;/button&#x3E;
-</code></pre>
-                    </div>
+                    <HighlightJS
+                      v-if="displayCode12"
+                      lang="xml"
+                      class="highlight highlight-block"
+                      :code="code12"
+                    />
                   </div>
                 </div>
               </div>
