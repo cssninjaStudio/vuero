@@ -26,7 +26,6 @@ export const isDark = computed({
 })
 
 export default function init() {
-  console.log('init dark mode', isDark)
   // update body classList when state changed
   watch(
     isDark,

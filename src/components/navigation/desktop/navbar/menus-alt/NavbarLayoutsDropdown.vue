@@ -631,7 +631,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'webapp-welcome' }"
+                    :to="{ name: 'webapp' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">

@@ -7,9 +7,7 @@
 
       <ul class="submenu">
         <li>
-          <RouterLink :to="{ name: 'components-hub' }"
-            >Components Hub</RouterLink
-          >
+          <RouterLink :to="{ name: 'components' }">Components Hub</RouterLink>
         </li>
         <li>
           <RouterLink :to="{ name: 'components-avatars' }">Avatars</RouterLink>

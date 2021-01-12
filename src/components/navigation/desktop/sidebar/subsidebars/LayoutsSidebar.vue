@@ -397,7 +397,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
               </RouterLink>
             </li>
             <li>
-              <RouterLink :to="{ name: 'admin-welcome' }" class="is-submenu">
+              <RouterLink :to="{ name: 'admin' }" class="is-submenu">
                 <i class="lnil lnil-door-alt"></i>
                 <span>Welcome</span>
               </RouterLink>

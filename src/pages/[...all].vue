@@ -17,8 +17,10 @@ useTitle('Action Page - Vuero')
             an administrator if the problem persists.
           </p>
           <div class="button-wrap">
-            <a class="button h-button is-primary is-elevated" onclick="goBack()"
-              >Take me Back</a
+            <RouterLink
+              :to="{ name: 'index' }"
+              class="button h-button is-primary is-elevated"
+              >Take me Back</RouterLink
             >
           </div>
         </div>

@@ -72,7 +72,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
 
                 <div class="column-content" data-simplebar>
                   <RouterLink
-                    :to="{ name: 'elements-hub' }"
+                    :to="{ name: 'elements' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">

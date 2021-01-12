@@ -1837,7 +1837,7 @@
                   <span>Welcome</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'admin-welcome' }"
+                  <RouterLink :to="{ name: 'admin' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -4262,7 +4262,7 @@
                   <span>Welcome</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-welcome' }"
+                  <RouterLink :to="{ name: 'webapp' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>

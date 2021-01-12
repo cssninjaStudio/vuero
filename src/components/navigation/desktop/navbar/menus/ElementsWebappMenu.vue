@@ -32,7 +32,7 @@ const activeTab = ref<'basic' | 'forms'>('basic')
                 <h4 class="column-heading">General</h4>
                 <ul>
                   <li>
-                    <RouterLink :to="{ name: 'elements-hub' }">
+                    <RouterLink :to="{ name: 'elements' }">
                       <i class="lnil lnil-home"></i>
                       <span>Elements Hub</span>
                       <Icon icon="feather:circle" />

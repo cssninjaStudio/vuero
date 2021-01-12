@@ -400,7 +400,7 @@ const activeTab = ref<'list' | 'grid' | 'app' | 'utility'>('list')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'webapp-welcome' }">
+                    <RouterLink :to="{ name: 'webapp' }">
                       <i class="lnil lnil-door-alt"></i>
                       <span>Welcome</span>
                       <Icon icon="feather:circle" />

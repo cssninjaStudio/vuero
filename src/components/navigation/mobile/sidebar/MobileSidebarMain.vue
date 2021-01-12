@@ -3,25 +3,19 @@
     <div class="inner">
       <ul class="icon-side-menu">
         <li>
-          <RouterLink
-            id="home-sidebar-menu-mobile"
-            :to="{ name: 'admin-dashboards-personal-1' }"
-          >
+          <RouterLink id="home-sidebar-menu-mobile" :to="{ name: 'admin' }">
             <Icon icon="feather:activity" />
           </RouterLink>
         </li>
         <li>
-          <RouterLink
-            id="layouts-sidebar-menu-mobile"
-            :to="{ name: 'admin-grid-users-1' }"
-          >
+          <RouterLink id="layouts-sidebar-menu-mobile" :to="{ name: 'webapp' }">
             <Icon icon="feather:grid" />
           </RouterLink>
         </li>
         <li>
           <RouterLink
             id="elements-sidebar-menu-mobile"
-            :to="{ name: 'elements-hub' }"
+            :to="{ name: 'elements' }"
           >
             <Icon icon="feather:box" />
           </RouterLink>
@@ -29,7 +23,7 @@
         <li>
           <RouterLink
             id="components-sidebar-menu-mobile"
-            :to="{ name: 'components-hub' }"
+            :to="{ name: 'components' }"
           >
             <Icon icon="feather:cpu" />
           </RouterLink>

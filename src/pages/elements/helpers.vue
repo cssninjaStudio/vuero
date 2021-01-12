@@ -1,0 +1,348 @@
+<script setup lang="ts">
+import { useTitle } from '@vueuse/core'
+import { onMounted } from 'vue'
+
+import {
+  activeSidebar,
+  toggleSidebar,
+} from '/@src/composition/state/ui/activeSidebarState'
+
+onMounted(() => {
+  activeSidebar.value = 'elements'
+})
+
+useTitle('Elements - Helpers - Vuero')
+</script>
+
+<template>
+  <DefaultLayout>
+    <ElementsSidebar />
+    <ElementsMobileSubsidebar />
+
+    <!-- Content Wrapper -->
+    <div
+      id="huro-demo"
+      class="view-wrapper"
+      :class="[activeSidebar !== 'none' && 'is-pushed-full']"
+      data-naver-offset="278"
+      data-menu-item="#elements-sidebar-menu"
+      data-mobile-item="#elements-sidebar-menu-mobile"
+    >
+      <div class="page-content-wrapper">
+        <div class="page-content is-relative">
+          <div class="page-title has-text-centered">
+            <!-- Sidebar Trigger -->
+            <div
+              class="huro-hamburger nav-trigger push-resize"
+              @click="toggleSidebar('elements')"
+            >
+              <span class="menu-toggle has-chevron">
+                <span
+                  :class="[activeSidebar !== 'none' && 'active']"
+                  class="icon-box-toggle"
+                >
+                  <span class="rotate">
+                    <i class="icon-line-top"></i>
+                    <i class="icon-line-center"></i>
+                    <i class="icon-line-bottom"></i>
+                  </span>
+                </span>
+              </span>
+            </div>
+
+            <div class="title-wrap">
+              <h1 class="title is-4">Helpers</h1>
+            </div>
+
+            <Toolbar />
+          </div>
+
+          <div class="page-content-inner">
+            <nav
+              class="breadcrumb has-bullet-separator"
+              aria-label="breadcrumbs"
+            >
+              <ul>
+                <li>
+                  <RouterLink :to="{ name: 'index' }">
+                    <span class="icon is-small is-solo">
+                      <Icon icon="feather:home" />
+                    </span>
+                  </RouterLink>
+                </li>
+                <li>
+                  <RouterLink :to="{ name: 'elements' }">
+                    <span>Elements</span>
+                  </RouterLink>
+                </li>
+                <li>
+                  <a>
+                    <span>Helpers</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="columns is-multiline">
+              <div class="column is-12">
+                <!--Theme Colors-->
+                <div class="demo-card">
+                  <div class="demo-title">
+                    <h3 class="title is-thin is-5">Helpers</h3>
+                    <p>
+                      Vuero provides some CSS helpers that can help you adding
+                      some styles without writing any CSS. Helpers have been
+                      keep short to avoid bloat and unused CSS.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="columns is-multiline">
+                  <div class="column is-12">
+                    <div class="s-card demo-table">
+                      <table
+                        class="table is-hoverable is-fullwidth helper-table"
+                      >
+                        <tbody>
+                          <tr>
+                            <th></th>
+                            <th>Helper</th>
+                            <th>Description</th>
+                          </tr>
+                          <tr>
+                            <td class="category"><b>Spacing</b></td>
+                            <td class="name">Margin (<code>m-*-*</code>)</td>
+                            <td class="description">
+                              Sets a margin on the target element following the
+                              <code>m-*-*</code> pattern, where the first
+                              <code>*</code> stands for directon
+                              (<code>t</code>, <code>b</code>,
+                              <code>l</code> and <code>r</code>) and the second
+                              one for pixel amount. Minimum and maximum pixel
+                              amounts are <code>5</code> and <code>100</code>.
+                            </td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td>Padding (<code>p-*-*</code>)</td>
+                            <td class="description">
+                              Sets a padding on the target element following the
+                              <code>p-*-*</code> pattern, where the first
+                              <code>*</code> stands for directon
+                              (<code>t</code>, <code>b</code>,
+                              <code>l</code> and <code>r</code>) and the second
+                              one for pixel amount. Minimum and maximum pixel
+                              amounts are <code>5</code> and <code>100</code>.
+                            </td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td>No Margin (<code>no-margin-*</code>)</td>
+                            <td class="description">
+                              Sets a margin on the target element following the
+                              <code>no-margin-*</code> pattern, where the first
+                              <code>*</code> stands for directon
+                              (<code>all</code>, <code>top</code>,
+                              <code>bottom</code>, <code>left</code> and
+                              <code>right</code>).
+                            </td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td>No Padding (<code>no-padding-*</code>)</td>
+                            <td class="description">
+                              Sets a padding on the target element following the
+                              <code>no-padding-*</code> pattern, where the first
+                              <code>*</code> stands for directon
+                              (<code>all</code>, <code>top</code>,
+                              <code>bottom</code>, <code>left</code> and
+                              <code>right</code>).
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="category"><b>Colors</b></td>
+                            <td class="name">Color (<code>color-*</code>)</td>
+                            <td class="description">
+                              Sets a color on the target element following the
+                              <code>color-*</code> pattern, where the first
+                              <code>*</code> stands for the color variable name.
+                              Check the Vuero colors to be able to use this
+                              helper properly.
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="category"><b></b></td>
+                            <td class="name">background (<code>bg-*</code>)</td>
+                            <td class="description">
+                              Sets a background color on the target element
+                              following the <code>color-*</code> pattern, where
+                              the first <code>*</code> stands for the color
+                              variable name. Check the Vuero colors to be able
+                              to use this helper properly.
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="category"><b>States</b></td>
+                            <td class="name">
+                              Hidden (<code>is-hidden</code>)
+                            </td>
+                            <td class="description">
+                              Sets the <code>display</code> property to
+                              <code>none</code> on the target element.
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="category"><b></b></td>
+                            <td class="name">
+                              V-Hidden (<code>is-vhidden</code>)
+                            </td>
+                            <td class="description">
+                              Sets the <code>visibility</code> property to
+                              <code>hidden</code> on the target element.
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="category"><b></b></td>
+                            <td class="name">
+                              Disabled (<code>is-disabled</code>)
+                            </td>
+                            <td class="description">
+                              Sets the <code>pointer-events</code> property to
+                              <code>none</code> on the target element and
+                              decreases its opacity.
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="category"><b>Scroll</b></td>
+                            <td class="name">
+                              Slimscroll (<code>has-slimscroll</code>)
+                            </td>
+                            <td class="description">
+                              Sets the <code>overflowY</code> property to
+                              <code>auto</code> on the target element and tweaks
+                              the webkit scrollbar.
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="category"><b>Dark Mode</b></td>
+                            <td class="name">Images</td>
+                            <td class="description">
+                              Toggle images between light mode and dark mode
+                              using the corresponding classes:
+                              <code>light-image</code> and
+                              <code>dark-image</code>. Displayed images will be
+                              displayed as <code>inline-block</code>. To display
+                              images as <code>block</code> use the
+                              <code>light-image-block</code> and
+                              <code>dark-image-block</code> classes instead.
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="category"><b></b></td>
+                            <td class="name">
+                              Dark Background (<code>is-dark-bg-*</code>)
+                            </td>
+                            <td class="description">
+                              Sets the <code>background-color</code> property to
+                              the specidifed value, where <code>*</code> is a
+                              percentage of the dark mode main color. Accepted
+                              values: 2, 3, 4, 6.
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="category"><b>Responsive</b></td>
+                            <td class="name">
+                              Hidden mobile (<code>h-hidden-mobile</code>)
+                            </td>
+                            <td class="description">
+                              Sets the <code>display</code> property to
+                              <code>none</code> on the target element when on a
+                              mobile display.
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="category"><b></b></td>
+                            <td class="name">
+                              Hidden tablet (<code>h-hidden-tablet-p</code>)
+                            </td>
+                            <td class="description">
+                              Sets the <code>display</code> property to
+                              <code>none</code> on the target element when on a
+                              tablet display in portrait mode.
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="category"><b></b></td>
+                            <td class="name">
+                              Hidden tablet (<code>h-hidden-tablet-l</code>)
+                            </td>
+                            <td class="description">
+                              Sets the <code>display</code> property to
+                              <code>none</code> on the target element when on a
+                              tablet display in landscape mode.
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="category"><b></b></td>
+                            <td class="name">
+                              Hidden desktop (<code>h-hidden-desktop</code>)
+                            </td>
+                            <td class="description">
+                              Sets the <code>display</code> property to
+                              <code>none</code> on the target element when on a
+                              desktop display.
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="category"><b>Typography</b></td>
+                            <td class="name">Font (<code>.is-font</code>)</td>
+                            <td class="description">
+                              Sets the <code>font-family</code> property to the
+                              <code>$font</code> variable value.
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="category"><b></b></td>
+                            <td class="name">
+                              Font Alt (<code>.is-font-alt</code>)
+                            </td>
+                            <td class="description">
+                              Sets the <code>font-family</code> property to the
+                              <code>$font-alt</code> variable value.
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="category"><b></b></td>
+                            <td class="name">
+                              Font Weight (<code>.is-weight-*</code>)
+                            </td>
+                            <td class="description">
+                              Sets the <code>font-weight</code> property to the
+                              specidifed value, where <code>*</code> is a value
+                              between 300 and 900.
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="category"><b></b></td>
+                            <td class="name">
+                              Font Size (<code>.rem-*</code>)
+                            </td>
+                            <td class="description">
+                              Sets the <code>font-size</code> property to the
+                              specidifed value, where <code>*</code> is a value
+                              between 70 and 100. Increments by 5.
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </DefaultLayout>
+</template>

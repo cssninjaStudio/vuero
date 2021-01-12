@@ -7,7 +7,7 @@
 
       <ul class="submenu">
         <li>
-          <RouterLink :to="{ name: 'elements-hub' }">Elements Hub</RouterLink>
+          <RouterLink :to="{ name: 'elements' }">Elements Hub</RouterLink>
         </li>
         <li>
           <RouterLink :to="{ name: 'elements-colors' }">Colors</RouterLink>

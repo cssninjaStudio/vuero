@@ -17,9 +17,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
     <div class="inner" data-simplebar>
       <ul>
         <li>
-          <RouterLink :to="{ name: 'components-hub' }"
-            >Components Hub</RouterLink
-          >
+          <RouterLink :to="{ name: 'components' }">Components Hub</RouterLink>
         </li>
         <li>
           <RouterLink :to="{ name: 'components-avatars' }">Avatars</RouterLink>

@@ -1,9 +1,6 @@
 <template>
   <li>
-    <RouterLink
-      id="home-sidebar-menu"
-      :to="{ name: 'admin-dashboards-personal-1' }"
-    >
+    <RouterLink id="home-sidebar-menu" :to="{ name: 'admin' }">
       <Icon class="sidebar-svg" icon="feather:activity" />
     </RouterLink>
   </li>
