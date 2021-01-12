@@ -589,7 +589,7 @@ useTitle('Components - Tabs Regular - Vuero')
                           <ul>
                             <li :class="[activeTab4 === 'team' && 'is-active']">
                               <a @click="activeTab4 = 'team'">
-                                <Icon icon="fa-users" />
+                                <i class="fas fa-users"></i>
                                 <span>Team</span>
                               </a>
                             </li>
@@ -599,7 +599,7 @@ useTitle('Components - Tabs Regular - Vuero')
                               ]"
                             >
                               <a @click="activeTab4 = 'projects'">
-                                <Icon icon="fa-umbrella" />
+                                <i class="fas fa-umbrella"></i>
                                 <span>Projects</span>
                               </a>
                             </li>
@@ -607,7 +607,7 @@ useTitle('Components - Tabs Regular - Vuero')
                               :class="[activeTab4 === 'tasks' && 'is-active']"
                             >
                               <a @click="activeTab4 = 'tasks'">
-                                <Icon icon="fa-tasks" />
+                                <i class="fas fa-tasks"></i>
                                 <span>Tasks</span>
                               </a>
                             </li>

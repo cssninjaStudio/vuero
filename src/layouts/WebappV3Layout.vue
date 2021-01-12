@@ -1,12 +1,14 @@
-<template inherit-attrs="false">
-  <div class="app-overlay"></div>
+<template>
+  <div>
+    <div class="app-overlay"></div>
 
-  <MobileNavbar />
-  <MobileSidebarMain />
+    <MobileNavbar />
+    <MobileSidebarMain />
 
-  <WebappNavbarColored />
-  <LanguagesPanel />
-  <ActivityPanel />
+    <WebappNavbarColored />
+    <LanguagesPanel />
+    <ActivityPanel />
 
-  <slot></slot>
+    <slot></slot>
+  </div>
 </template>

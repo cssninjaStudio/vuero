@@ -117,7 +117,7 @@ useTitle('Elements - Forms File - Vuero')
                             />
                             <span class="file-cta">
                               <span class="file-icon">
-                                <Icon icon="fa-cloud-upload-alt" />
+                                <i class="fas fa-cloud-upload-alt"></i>
                               </span>
                               <span class="file-label"> Choose a file… </span>
                             </span>
@@ -135,7 +135,7 @@ useTitle('Elements - Forms File - Vuero')
                             />
                             <span class="file-cta">
                               <span class="file-icon">
-                                <Icon icon="fa-cloud-upload-alt" />
+                                <i class="fas fa-cloud-upload-alt"></i>
                               </span>
                               <span class="file-label"> Choose a file… </span>
                             </span>

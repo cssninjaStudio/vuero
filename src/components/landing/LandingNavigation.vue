@@ -1,23 +1,33 @@
 <script setup lang="ts">
-import { useWindowScroll } from '@vueuse/core'
-import { computed } from 'vue'
+import { useWindowScroll, useMediaQuery } from '@vueuse/core'
+import { computed, ref, watch } from 'vue'
 
 import { isDark } from '/@src/composition/state/ui/darkModeState.ts'
 
+const isMobileNavOpen = ref(false)
+const isLargeScreen = useMediaQuery('(min-width: 1023px)')
+
 const { y } = useWindowScroll()
+
 const isScrolling = computed(() => {
   return y.value > 30
 })
+
+watch(isLargeScreen, () => {
+  if (isLargeScreen.value) {
+    isMobileNavOpen.value = false
+  }
+}, { immediate: true })
 </script>
 
 <template>
   <nav
     class="navbar is-fixed-top is-transparent"
-    :class="[!isScrolling && 'is-docked']"
+    :class="[!isScrolling && 'is-docked', isMobileNavOpen && 'is-solid']"
     aria-label="main navigation"
   >
     <div class="navbar-brand">
-      <a class="navbar-item" href="https://bulma.io">
+      <RouterLink :to="{ name: 'index' }" class="navbar-item">
         <div class="brand-icon">
           <img
             class="light-image-l"
@@ -30,13 +40,15 @@ const isScrolling = computed(() => {
             alt=""
           />
         </div>
-      </a>
+      </RouterLink>
 
       <a
         role="button"
+        :class="[isMobileNavOpen && 'is-active']"
         class="navbar-burger burger"
         aria-label="menu"
         aria-expanded="false"
+        @click="isMobileNavOpen = !isMobileNavOpen"
       >
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
@@ -44,7 +56,7 @@ const isScrolling = computed(() => {
       </a>
     </div>
 
-    <div class="navbar-menu">
+    <div class="navbar-menu" :class="[isMobileNavOpen && 'is-active']">
       <div class="navbar-start">
         <div class="navbar-item">
           <a

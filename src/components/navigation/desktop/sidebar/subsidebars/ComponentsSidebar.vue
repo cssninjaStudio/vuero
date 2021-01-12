@@ -25,7 +25,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Accordions <Icon icon="chevron-right"
+              >Accordions <Icon icon="feather:chevron-right"
             /></a>
           </div>
           <ul>
@@ -84,7 +84,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Tabs <Icon icon="chevron-right"
+              >Tabs <Icon icon="feather:chevron-right"
             /></a>
           </div>
           <ul>
@@ -107,7 +107,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Flex Table <Icon icon="chevron-right"
+              >Flex Table <Icon icon="feather:chevron-right"
             /></a>
           </div>
           <ul>
@@ -148,7 +148,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Plugins <Icon icon="chevron-right"
+              >Plugins <Icon icon="feather:chevron-right"
             /></a>
           </div>
           <ul>
@@ -234,7 +234,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Rich Text <Icon icon="chevron-right"
+              >Rich Text <Icon icon="feather:chevron-right"
             /></a>
           </div>
           <ul>

@@ -638,7 +638,7 @@ useTitle('Elements - Buttons - Vuero')
                     <div class="buttons">
                       <button class="button h-button is-primary is-elevated">
                         <span class="icon">
-                          <Icon icon="fa-twitter" />
+                          <i class="fas fa-twitter"></i>
                         </span>
                         <span>Tweet Now</span>
                       </button>
@@ -646,18 +646,18 @@ useTitle('Elements - Buttons - Vuero')
                         class="button h-button is-success is-rounded is-elevated"
                       >
                         <span class="icon">
-                          <Icon icon="fa-check" />
+                          <i class="fas fa-check"></i>
                         </span>
                         <span>Save Changes</span>
                       </button>
                       <button class="button">
                         <span class="icon is-small">
-                          <Icon icon="fa-twitter" />
+                          <i class="fas fa-twitter"></i>
                         </span>
                       </button>
                       <button class="button is-primary is-circle is-elevated">
                         <span class="icon is-small">
-                          <Icon icon="fa-linkedin-in" />
+                          <i class="fas fa-linkedin-in"></i>
                         </span>
                       </button>
                     </div>
@@ -778,7 +778,7 @@ useTitle('Elements - Buttons - Vuero')
                       </button>
                       <button class="button h-button is-success is-elevated">
                         <span class="icon">
-                          <Icon icon="fa-check" />
+                          <i class="fas fa-check"></i>
                         </span>
                         <span>Approve</span>
                       </button>
@@ -824,7 +824,7 @@ useTitle('Elements - Buttons - Vuero')
                       <p class="control">
                         <button class="button h-button">
                           <span class="icon is-small">
-                            <Icon icon="fa-align-left" />
+                            <i class="fas fa-align-left"></i>
                           </span>
                           <span>Left</span>
                         </button>
@@ -832,7 +832,7 @@ useTitle('Elements - Buttons - Vuero')
                       <p class="control">
                         <button class="button h-button">
                           <span class="icon is-small">
-                            <Icon icon="fa-align-center" />
+                            <i class="fas fa-align-center"></i>
                           </span>
                           <span>Center</span>
                         </button>
@@ -840,7 +840,7 @@ useTitle('Elements - Buttons - Vuero')
                       <p class="control">
                         <button class="button h-button">
                           <span class="icon is-small">
-                            <Icon icon="fa-align-right" />
+                            <i class="fas fa-align-right"></i>
                           </span>
                           <span>Right</span>
                         </button>

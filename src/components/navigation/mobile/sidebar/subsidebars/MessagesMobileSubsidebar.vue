@@ -1,5 +1,15 @@
+<script setup lang="ts">
+import { isMobileSidebarOpen } from '/@src/composition/state/ui/mobileSidebarState'
+import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
+</script>
+
 <template>
-  <div class="mobile-subsidebar is-messaging">
+  <div
+    :class="[
+      isMobileSidebarOpen && activeSidebar === 'messages' && 'is-active',
+    ]"
+    class="mobile-subsidebar is-messaging"
+  >
     <div class="inner">
       <div class="sidebar-title">
         <h3>Messages</h3>

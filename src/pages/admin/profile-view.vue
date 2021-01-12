@@ -142,7 +142,7 @@ useTitle('Profile View - Admin - Vuero')
                                 <span class="dark-inverted">Airbnb HQ</span>
                                 <span>
                                   <span>January 2018</span>
-                                  <Icon icon="fa-circle" />
+                                  <i class="fas fa-circle"></i>
                                   <span>October 2020</span>
                                 </span>
                                 <span>Product Manager</span>
@@ -161,7 +161,7 @@ useTitle('Profile View - Admin - Vuero')
                                 <span class="dark-inverted">Facebook</span>
                                 <span>
                                   <span>January 2018</span>
-                                  <Icon icon="fa-circle" />
+                                  <i class="fas fa-circle"></i>
                                   <span>October 2020</span>
                                 </span>
                                 <span>Product Manager</span>
@@ -180,7 +180,7 @@ useTitle('Profile View - Admin - Vuero')
                                 <span class="dark-inverted">Atlassian</span>
                                 <span>
                                   <span>January 2018</span>
-                                  <Icon icon="fa-circle" />
+                                  <i class="fas fa-circle"></i>
                                   <span>October 2020</span>
                                 </span>
                                 <span>Web Developer</span>
@@ -199,7 +199,7 @@ useTitle('Profile View - Admin - Vuero')
                                 <span class="dark-inverted">Github</span>
                                 <span>
                                   <span>January 2018</span>
-                                  <Icon icon="fa-circle" />
+                                  <i class="fas fa-circle"></i>
                                   <span>October 2020</span>
                                 </span>
                                 <span>Web Developer</span>

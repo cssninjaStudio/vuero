@@ -150,10 +150,10 @@ useTitle('List View 4 - Admin - Vuero')
                         <span>
                           <Icon icon="feather:archive" />
                           <span data-filter-match>Cakes</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <Icon icon="feather:clock" />
                           <span data-filter-match>1h 45m</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <Icon icon="feather:paperclip" />
                           <span data-filter-match>3 files</span>
                         </span>
@@ -238,10 +238,10 @@ useTitle('List View 4 - Admin - Vuero')
                         <span>
                           <Icon icon="feather:archive" />
                           <span data-filter-match>Cakes</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <Icon icon="feather:clock" />
                           <span data-filter-match>1h 15m</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <Icon icon="feather:paperclip" />
                           <span data-filter-match>2 files</span>
                         </span>
@@ -345,10 +345,10 @@ useTitle('List View 4 - Admin - Vuero')
                         <span>
                           <Icon icon="feather:archive" />
                           <span data-filter-match>Cakes</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <Icon icon="feather:clock" />
                           <span data-filter-match>2h</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <Icon icon="feather:paperclip" />
                           <span data-filter-match>4 files</span>
                         </span>
@@ -452,10 +452,10 @@ useTitle('List View 4 - Admin - Vuero')
                         <span>
                           <Icon icon="feather:archive" />
                           <span data-filter-match>Cakes</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <Icon icon="feather:clock" />
                           <span data-filter-match>3h 30m</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <Icon icon="feather:paperclip" />
                           <span data-filter-match>7 files</span>
                         </span>
@@ -560,10 +560,10 @@ useTitle('List View 4 - Admin - Vuero')
                         <span>
                           <Icon icon="feather:archive" />
                           <span data-filter-match>Waffles</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <Icon icon="feather:clock" />
                           <span data-filter-match>1h 00m</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <Icon icon="feather:paperclip" />
                           <span data-filter-match>2 files</span>
                         </span>
@@ -667,10 +667,10 @@ useTitle('List View 4 - Admin - Vuero')
                         <span>
                           <Icon icon="feather:archive" />
                           <span data-filter-match>Slices</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <Icon icon="feather:clock" />
                           <span data-filter-match>45m</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <Icon icon="feather:paperclip" />
                           <span data-filter-match>1 file</span>
                         </span>
@@ -774,10 +774,10 @@ useTitle('List View 4 - Admin - Vuero')
                         <span>
                           <Icon icon="feather:archive" />
                           <span data-filter-match>Donuts</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <Icon icon="feather:clock" />
                           <span data-filter-match>2h 15m</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <Icon icon="feather:paperclip" />
                           <span data-filter-match>2 files</span>
                         </span>
@@ -881,10 +881,10 @@ useTitle('List View 4 - Admin - Vuero')
                         <span>
                           <Icon icon="feather:archive" />
                           <span data-filter-match>Sandwiches</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <Icon icon="feather:clock" />
                           <span data-filter-match>15m</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <Icon icon="feather:paperclip" />
                           <span data-filter-match>1 file</span>
                         </span>
@@ -988,10 +988,10 @@ useTitle('List View 4 - Admin - Vuero')
                         <span>
                           <Icon icon="feather:archive" />
                           <span data-filter-match>Slices</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <Icon icon="feather:clock" />
                           <span data-filter-match>15m</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <Icon icon="feather:paperclip" />
                           <span data-filter-match>1 file</span>
                         </span>
@@ -1095,10 +1095,10 @@ useTitle('List View 4 - Admin - Vuero')
                         <span>
                           <Icon icon="feather:archive" />
                           <span data-filter-match>Slices</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <Icon icon="feather:clock" />
                           <span data-filter-match>1h 15m</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <Icon icon="feather:paperclip" />
                           <span data-filter-match>2 files</span>
                         </span>
@@ -1177,10 +1177,10 @@ useTitle('List View 4 - Admin - Vuero')
                   data-filter-hide
                 >
                   <a class="pagination-previous has-chevron"
-                    ><Icon icon="chevron-left"
+                    ><Icon icon="feather:chevron-left"
                   /></a>
                   <a class="pagination-next has-chevron"
-                    ><Icon icon="chevron-right"
+                    ><Icon icon="feather:chevron-right"
                   /></a>
                   <ul class="pagination-list">
                     <li>

@@ -60,7 +60,7 @@ useTitle('Dashboards Lifestyle 2 - WebApp - Vuero')
                         <a href="#" class="long-card-text-overlay">
                           <div class="top">
                             <span>Foot Trekks</span>
-                            <Icon icon="fa-running" />
+                            <i class="fas fa-running"></i>
                           </div>
                           <div class="bottom">
                             <span>28.3K</span>
@@ -119,7 +119,7 @@ useTitle('Dashboards Lifestyle 2 - WebApp - Vuero')
                         <a href="#" class="long-card-text-overlay">
                           <div class="top">
                             <span>Rafting Trips</span>
-                            <Icon icon="fa-ship" />
+                            <i class="fas fa-ship"></i>
                           </div>
                           <div class="bottom">
                             <span>8.1K</span>
@@ -179,7 +179,7 @@ useTitle('Dashboards Lifestyle 2 - WebApp - Vuero')
                         <a href="#" class="long-card-text-overlay">
                           <div class="top">
                             <span>Climbing</span>
-                            <Icon icon="fa-running" />
+                            <i class="fas fa-running"></i>
                           </div>
                           <div class="bottom">
                             <span>19.7K</span>
@@ -239,7 +239,7 @@ useTitle('Dashboards Lifestyle 2 - WebApp - Vuero')
                         <a href="#" class="long-card-text-overlay">
                           <div class="top">
                             <span>Biking</span>
-                            <Icon icon="fa-biking" />
+                            <i class="fas fa-biking"></i>
                           </div>
                           <div class="bottom">
                             <span>48.4K</span>
@@ -318,11 +318,11 @@ useTitle('Dashboards Lifestyle 2 - WebApp - Vuero')
                             </div>
                             <div class="flex-end">
                               <div class="rating">
-                                <Icon icon="fa-star selected" />
-                                <Icon icon="fa-star selected" />
-                                <Icon icon="fa-star selected" />
-                                <Icon icon="fa-star selected" />
-                                <Icon icon="fa-star selected" />
+                                <i class="fas fa-star selected"></i>
+                                <i class="fas fa-star selected"></i>
+                                <i class="fas fa-star selected"></i>
+                                <i class="fas fa-star selected"></i>
+                                <i class="fas fa-star selected"></i>
                               </div>
                               <div class="button is-circle">
                                 <span class="icon is-small">
@@ -349,11 +349,11 @@ useTitle('Dashboards Lifestyle 2 - WebApp - Vuero')
                             </div>
                             <div class="flex-end">
                               <div class="rating">
-                                <Icon icon="fa-star selected" />
-                                <Icon icon="fa-star selected" />
-                                <Icon icon="fa-star selected" />
-                                <Icon icon="fa-star selected" />
-                                <Icon icon="fa-star" />
+                                <i class="fas fa-star selected"></i>
+                                <i class="fas fa-star selected"></i>
+                                <i class="fas fa-star selected"></i>
+                                <i class="fas fa-star selected"></i>
+                                <i class="fas fa-star"></i>
                               </div>
                               <div class="button is-circle">
                                 <span class="icon is-small">
@@ -380,11 +380,11 @@ useTitle('Dashboards Lifestyle 2 - WebApp - Vuero')
                             </div>
                             <div class="flex-end">
                               <div class="rating">
-                                <Icon icon="fa-star selected" />
-                                <Icon icon="fa-star selected" />
-                                <Icon icon="fa-star selected" />
-                                <Icon icon="fa-star selected" />
-                                <Icon icon="fa-star selected" />
+                                <i class="fas fa-star selected"></i>
+                                <i class="fas fa-star selected"></i>
+                                <i class="fas fa-star selected"></i>
+                                <i class="fas fa-star selected"></i>
+                                <i class="fas fa-star selected"></i>
                               </div>
                               <div class="button is-circle">
                                 <span class="icon is-small">
@@ -411,11 +411,11 @@ useTitle('Dashboards Lifestyle 2 - WebApp - Vuero')
                             </div>
                             <div class="flex-end">
                               <div class="rating">
-                                <Icon icon="fa-star selected" />
-                                <Icon icon="fa-star selected" />
-                                <Icon icon="fa-star selected" />
-                                <Icon icon="fa-star selected" />
-                                <Icon icon="fa-star selected" />
+                                <i class="fas fa-star selected"></i>
+                                <i class="fas fa-star selected"></i>
+                                <i class="fas fa-star selected"></i>
+                                <i class="fas fa-star selected"></i>
+                                <i class="fas fa-star selected"></i>
                               </div>
                               <div class="button is-circle">
                                 <span class="icon is-small">
@@ -461,11 +461,11 @@ useTitle('Dashboards Lifestyle 2 - WebApp - Vuero')
                             </div>
                             <div class="flex-end">
                               <div class="rating">
-                                <Icon icon="fa-star selected" />
-                                <Icon icon="fa-star selected" />
-                                <Icon icon="fa-star selected" />
-                                <Icon icon="fa-star selected" />
-                                <Icon icon="fa-star selected" />
+                                <i class="fas fa-star selected"></i>
+                                <i class="fas fa-star selected"></i>
+                                <i class="fas fa-star selected"></i>
+                                <i class="fas fa-star selected"></i>
+                                <i class="fas fa-star selected"></i>
                               </div>
                               <div class="button is-circle">
                                 <span class="icon is-small">
@@ -492,11 +492,11 @@ useTitle('Dashboards Lifestyle 2 - WebApp - Vuero')
                             </div>
                             <div class="flex-end">
                               <div class="rating">
-                                <Icon icon="fa-star selected" />
-                                <Icon icon="fa-star selected" />
-                                <Icon icon="fa-star selected" />
-                                <Icon icon="fa-star selected" />
-                                <Icon icon="fa-star" />
+                                <i class="fas fa-star selected"></i>
+                                <i class="fas fa-star selected"></i>
+                                <i class="fas fa-star selected"></i>
+                                <i class="fas fa-star selected"></i>
+                                <i class="fas fa-star"></i>
                               </div>
                               <div class="button is-circle">
                                 <span class="icon is-small">
@@ -523,11 +523,11 @@ useTitle('Dashboards Lifestyle 2 - WebApp - Vuero')
                             </div>
                             <div class="flex-end">
                               <div class="rating">
-                                <Icon icon="fa-star selected" />
-                                <Icon icon="fa-star selected" />
-                                <Icon icon="fa-star selected" />
-                                <Icon icon="fa-star selected" />
-                                <Icon icon="fa-star selected" />
+                                <i class="fas fa-star selected"></i>
+                                <i class="fas fa-star selected"></i>
+                                <i class="fas fa-star selected"></i>
+                                <i class="fas fa-star selected"></i>
+                                <i class="fas fa-star selected"></i>
                               </div>
                               <div class="button is-circle">
                                 <span class="icon is-small">
@@ -554,11 +554,11 @@ useTitle('Dashboards Lifestyle 2 - WebApp - Vuero')
                             </div>
                             <div class="flex-end">
                               <div class="rating">
-                                <Icon icon="fa-star selected" />
-                                <Icon icon="fa-star selected" />
-                                <Icon icon="fa-star selected" />
-                                <Icon icon="fa-star selected" />
-                                <Icon icon="fa-star selected" />
+                                <i class="fas fa-star selected"></i>
+                                <i class="fas fa-star selected"></i>
+                                <i class="fas fa-star selected"></i>
+                                <i class="fas fa-star selected"></i>
+                                <i class="fas fa-star selected"></i>
                               </div>
                               <div class="button is-circle">
                                 <span class="icon is-small">
@@ -630,7 +630,7 @@ useTitle('Dashboards Lifestyle 2 - WebApp - Vuero')
                       <!--List Item-->
                       <div class="inner-list-item media-flex-center">
                         <div class="h-icon is-yellow">
-                          <Icon icon="fa-biking" />
+                          <i class="fas fa-biking"></i>
                         </div>
                         <div class="flex-meta is-light">
                           <a href="#">Biking</a>
@@ -640,7 +640,7 @@ useTitle('Dashboards Lifestyle 2 - WebApp - Vuero')
                       <!--List Item-->
                       <div class="inner-list-item media-flex-center">
                         <div class="h-icon is-orange">
-                          <Icon icon="fa-running" />
+                          <i class="fas fa-running"></i>
                         </div>
                         <div class="flex-meta is-light">
                           <a href="#">Running</a>
@@ -650,7 +650,7 @@ useTitle('Dashboards Lifestyle 2 - WebApp - Vuero')
                       <!--List Item-->
                       <div class="inner-list-item media-flex-center">
                         <div class="h-icon is-green">
-                          <Icon icon="fa-skiing" />
+                          <i class="fas fa-skiing"></i>
                         </div>
                         <div class="flex-meta is-light">
                           <a href="#">Skiing</a>
@@ -660,7 +660,7 @@ useTitle('Dashboards Lifestyle 2 - WebApp - Vuero')
                       <!--List Item-->
                       <div class="inner-list-item media-flex-center">
                         <div class="h-icon is-info">
-                          <Icon icon="fa-swimmer" />
+                          <i class="fas fa-swimmer"></i>
                         </div>
                         <div class="flex-meta is-light">
                           <a href="#">Swimming</a>
@@ -670,7 +670,7 @@ useTitle('Dashboards Lifestyle 2 - WebApp - Vuero')
                       <!--List Item-->
                       <div class="inner-list-item media-flex-center">
                         <div class="h-icon is-purple">
-                          <Icon icon="fa-dumbbell" />
+                          <i class="fas fa-dumbbell"></i>
                         </div>
                         <div class="flex-meta is-light">
                           <a href="#">Workout</a>

@@ -1,7 +1,9 @@
-<template inherit-attrs="false">
-  <div class="auth-wrapper">
-    <slot></slot>
-  </div>
+<template>
+  <div>
+    <div class="auth-wrapper">
+      <slot></slot>
+    </div>
 
-  <AuthScripts />
+    <AuthScripts />
+  </div>
 </template>

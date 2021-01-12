@@ -224,13 +224,13 @@ useTitle('Messaging chat - WebApp - Vuero')
             <div class="side-actions">
               <a class="button h-button is-rounded">
                 <span class="icon is-small">
-                  <Icon icon="fa-phone" />
+                  <i class="fas fa-phone"></i>
                 </span>
                 <span>Audio Call</span>
               </a>
               <a class="button h-button is-rounded">
                 <span class="icon is-small">
-                  <Icon icon="fa-video" />
+                  <i class="fas fa-video"></i>
                 </span>
                 <span>Video Call</span>
               </a>

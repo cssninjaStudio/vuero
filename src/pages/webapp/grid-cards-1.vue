@@ -91,7 +91,7 @@ useTitle('Grid Cards 1 - WebApp - Vuero')
               </div>
               <button class="button h-button is-primary is-raised">
                 <span class="icon">
-                  <Icon icon="fa-plus" />
+                  <i class="fas fa-plus"></i>
                 </span>
                 <span>Add User</span>
               </button>

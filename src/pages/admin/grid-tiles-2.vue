@@ -107,7 +107,7 @@ useTitle('Grid Tiles 2 - Admin - Vuero')
               </div>
               <button class="button h-button is-primary is-raised">
                 <span class="icon">
-                  <Icon icon="fa-plus" />
+                  <i class="fas fa-plus"></i>
                 </span>
                 <span>Add File</span>
               </button>
@@ -158,7 +158,7 @@ useTitle('Grid Tiles 2 - Admin - Vuero')
                         <span class="dark-inverted">Company UX Guide</span>
                         <span>
                           <span>4.7 MB</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <span>Updated 2 days ago</span>
                         </span>
                       </div>
@@ -183,7 +183,7 @@ useTitle('Grid Tiles 2 - Admin - Vuero')
                         <span class="dark-inverted">Tech Summit Expenses</span>
                         <span>
                           <span>34 KB</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <span>Updated 1 week ago</span>
                         </span>
                       </div>
@@ -208,7 +208,7 @@ useTitle('Grid Tiles 2 - Admin - Vuero')
                         <span class="dark-inverted">Project Outline</span>
                         <span>
                           <span>77 KB</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <span>Updated 2 weeks ago</span>
                         </span>
                       </div>
@@ -233,7 +233,7 @@ useTitle('Grid Tiles 2 - Admin - Vuero')
                         <span class="dark-inverted">UX Presentation</span>
                         <span>
                           <span>2.3 MB</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <span>Updated 4 days ago</span>
                         </span>
                       </div>
@@ -260,7 +260,7 @@ useTitle('Grid Tiles 2 - Admin - Vuero')
                         >
                         <span>
                           <span>4.8 MB</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <span>Updated 3 hours ago</span>
                         </span>
                       </div>
@@ -287,7 +287,7 @@ useTitle('Grid Tiles 2 - Admin - Vuero')
                         >
                         <span>
                           <span>1.8 MB</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <span>Updated 6 hours ago</span>
                         </span>
                       </div>
@@ -312,7 +312,7 @@ useTitle('Grid Tiles 2 - Admin - Vuero')
                         <span class="dark-inverted">2020 Projects Digest</span>
                         <span>
                           <span>8.9 MB</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <span>Updated 2 days ago</span>
                         </span>
                       </div>
@@ -339,7 +339,7 @@ useTitle('Grid Tiles 2 - Admin - Vuero')
                         >
                         <span>
                           <span>1.2 MB</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <span>Updated 2 months ago</span>
                         </span>
                       </div>
@@ -366,7 +366,7 @@ useTitle('Grid Tiles 2 - Admin - Vuero')
                         >
                         <span>
                           <span>250 KB</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <span>Updated 2 weeks ago</span>
                         </span>
                       </div>
@@ -393,7 +393,7 @@ useTitle('Grid Tiles 2 - Admin - Vuero')
                         >
                         <span>
                           <span>3.9 MB</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <span>Updated 2 months ago</span>
                         </span>
                       </div>
@@ -420,7 +420,7 @@ useTitle('Grid Tiles 2 - Admin - Vuero')
                         >
                         <span>
                           <span>2.6 MB</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <span>Updated 2 months ago</span>
                         </span>
                       </div>
@@ -447,7 +447,7 @@ useTitle('Grid Tiles 2 - Admin - Vuero')
                         >
                         <span>
                           <span>1.1 MB</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <span>Updated 8 months ago</span>
                         </span>
                       </div>
@@ -474,7 +474,7 @@ useTitle('Grid Tiles 2 - Admin - Vuero')
                         >
                         <span>
                           <span>34 KB</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <span>Updated 8 months ago</span>
                         </span>
                       </div>
@@ -501,7 +501,7 @@ useTitle('Grid Tiles 2 - Admin - Vuero')
                         >
                         <span>
                           <span>5.8 MB</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <span>Updated 3 months ago</span>
                         </span>
                       </div>
@@ -526,7 +526,7 @@ useTitle('Grid Tiles 2 - Admin - Vuero')
                         <span class="dark-inverted">Company Brand Book</span>
                         <span>
                           <span>5.3 MB</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <span>Updated 3 weeks ago</span>
                         </span>
                       </div>
@@ -551,7 +551,7 @@ useTitle('Grid Tiles 2 - Admin - Vuero')
                         <span class="dark-inverted">2019 Projects Digest</span>
                         <span>
                           <span>4.7 MB</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <span>Updated 9 months ago</span>
                         </span>
                       </div>

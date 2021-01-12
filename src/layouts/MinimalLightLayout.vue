@@ -1,4 +1,4 @@
-<template inherit-attrs="false">
+<template>
   <div class="minimal-wrapper light">
     <slot></slot>
   </div>

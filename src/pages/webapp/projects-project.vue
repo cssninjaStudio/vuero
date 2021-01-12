@@ -198,7 +198,7 @@ useTitle('Projects Project - WebApp - Vuero')
                               <div class="meta">
                                 <span>Preliminary Sketches</span>
                                 <span
-                                  >3MB <Icon icon="fa-circle" /> 5 days
+                                  >3MB <i class="fas fa-circle"></i> 5 days
                                   ago</span
                                 >
                               </div>
@@ -211,7 +211,7 @@ useTitle('Projects Project - WebApp - Vuero')
                               <div class="meta">
                                 <span>Project Scope</span>
                                 <span
-                                  >0.8MB <Icon icon="fa-circle" /> 7 days
+                                  >0.8MB <i class="fas fa-circle"></i> 7 days
                                   ago</span
                                 >
                               </div>
@@ -227,7 +227,7 @@ useTitle('Projects Project - WebApp - Vuero')
                               <div class="meta">
                                 <span>Project Presentation</span>
                                 <span
-                                  >2.4MB <Icon icon="fa-circle" /> 7 days
+                                  >2.4MB <i class="fas fa-circle"></i> 7 days
                                   ago</span
                                 >
                               </div>
@@ -243,7 +243,7 @@ useTitle('Projects Project - WebApp - Vuero')
                               <div class="meta">
                                 <span>Project Budget</span>
                                 <span
-                                  >0.6MB <Icon icon="fa-circle" /> 8 days
+                                  >0.6MB <i class="fas fa-circle"></i> 8 days
                                   ago</span
                                 >
                               </div>
@@ -256,7 +256,7 @@ useTitle('Projects Project - WebApp - Vuero')
                               <div class="meta">
                                 <span>Project Notes</span>
                                 <span
-                                  >0.4MB <Icon icon="fa-circle" /> 8 days
+                                  >0.4MB <i class="fas fa-circle"></i> 8 days
                                   ago</span
                                 >
                               </div>
@@ -272,7 +272,7 @@ useTitle('Projects Project - WebApp - Vuero')
                               <div class="meta">
                                 <span>POC Demo</span>
                                 <span
-                                  >8.75MB <Icon icon="fa-circle" /> 8 days
+                                  >8.75MB <i class="fas fa-circle"></i> 8 days
                                   ago</span
                                 >
                               </div>

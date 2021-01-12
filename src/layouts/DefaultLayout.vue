@@ -1,16 +1,18 @@
-<template inherit-attrs="false">
-  <div class="app-overlay"></div>
-  <!-- <Pageloader /> -->
+<template>
+  <div>
+    <div class="app-overlay"></div>
+    <!-- <Pageloader /> -->
 
-  <MobileNavbar />
-  <MobileSidebarMain />
+    <MobileNavbar />
+    <MobileSidebarMain />
 
-  <CircularMenu />
+    <CircularMenu />
 
-  <Sidebar />
-  <LanguagesPanel />
-  <ActivityPanel />
-  <SearchPanel />
+    <Sidebar />
+    <LanguagesPanel />
+    <ActivityPanel />
+    <SearchPanel />
 
-  <slot></slot>
+    <slot></slot>
+  </div>
 </template>

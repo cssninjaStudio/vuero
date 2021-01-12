@@ -108,11 +108,11 @@ useTitle('List View 2 - WebApp - Vuero')
                         <h3>
                           <span data-filter-match>1396 Redmond Street</span>
                           <span class="rating">
-                            <Icon icon="fa-star active" />
-                            <Icon icon="fa-star active" />
-                            <Icon icon="fa-star active" />
-                            <Icon icon="fa-star active" />
-                            <Icon icon="fa-star" />
+                            <i class="fas fa-star active"></i>
+                            <i class="fas fa-star active"></i>
+                            <i class="fas fa-star active"></i>
+                            <i class="fas fa-star active"></i>
+                            <i class="fas fa-star"></i>
                           </span>
                         </h3>
                         <p>
@@ -124,9 +124,9 @@ useTitle('List View 2 - WebApp - Vuero')
                         </p>
                         <span>
                           <span data-filter-match>5 rooms</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <span data-filter-match>3 beds</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <span data-filter-match>1 bathroom</span>
                         </span>
 
@@ -172,11 +172,11 @@ useTitle('List View 2 - WebApp - Vuero')
                         <h3>
                           <span data-filter-match>24 Mulberry Street</span>
                           <span class="rating">
-                            <Icon icon="fa-star active" />
-                            <Icon icon="fa-star active" />
-                            <Icon icon="fa-star active" />
-                            <Icon icon="fa-star active" />
-                            <Icon icon="fa-star active" />
+                            <i class="fas fa-star active"></i>
+                            <i class="fas fa-star active"></i>
+                            <i class="fas fa-star active"></i>
+                            <i class="fas fa-star active"></i>
+                            <i class="fas fa-star active"></i>
                           </span>
                         </h3>
                         <p>
@@ -187,9 +187,9 @@ useTitle('List View 2 - WebApp - Vuero')
                         </p>
                         <span>
                           <span data-filter-match>3 rooms</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <span data-filter-match>2 beds</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <span>1 bathroom</span>
                         </span>
 
@@ -227,11 +227,11 @@ useTitle('List View 2 - WebApp - Vuero')
                         <h3>
                           <span data-filter-match>62 John Walberg Ave</span>
                           <span class="rating">
-                            <Icon icon="fa-star active" />
-                            <Icon icon="fa-star active" />
-                            <Icon icon="fa-star active" />
-                            <Icon icon="fa-star active" />
-                            <Icon icon="fa-star active" />
+                            <i class="fas fa-star active"></i>
+                            <i class="fas fa-star active"></i>
+                            <i class="fas fa-star active"></i>
+                            <i class="fas fa-star active"></i>
+                            <i class="fas fa-star active"></i>
                           </span>
                         </h3>
                         <p>
@@ -243,9 +243,9 @@ useTitle('List View 2 - WebApp - Vuero')
                         </p>
                         <span>
                           <span data-filter-match>4 rooms</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <span data-filter-match>2 beds</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <span data-filter-match>2 bathroom</span>
                         </span>
 
@@ -291,11 +291,11 @@ useTitle('List View 2 - WebApp - Vuero')
                         <h3>
                           <span data-filter-match>48 Manhattan Ave</span>
                           <span class="rating">
-                            <Icon icon="fa-star active" />
-                            <Icon icon="fa-star active" />
-                            <Icon icon="fa-star active" />
-                            <Icon icon="fa-star active" />
-                            <Icon icon="fa-star active" />
+                            <i class="fas fa-star active"></i>
+                            <i class="fas fa-star active"></i>
+                            <i class="fas fa-star active"></i>
+                            <i class="fas fa-star active"></i>
+                            <i class="fas fa-star active"></i>
                           </span>
                         </h3>
                         <p>
@@ -306,9 +306,9 @@ useTitle('List View 2 - WebApp - Vuero')
                         </p>
                         <span>
                           <span data-filter-match>5 rooms</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <span data-filter-match>4 beds</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <span>3 bathrooms</span>
                         </span>
 
@@ -354,11 +354,11 @@ useTitle('List View 2 - WebApp - Vuero')
                         <h3>
                           <span data-filter-match>12 Charity Street</span>
                           <span class="rating">
-                            <Icon icon="fa-star active" />
-                            <Icon icon="fa-star active" />
-                            <Icon icon="fa-star active" />
-                            <Icon icon="fa-star active" />
-                            <Icon icon="fa-star" />
+                            <i class="fas fa-star active"></i>
+                            <i class="fas fa-star active"></i>
+                            <i class="fas fa-star active"></i>
+                            <i class="fas fa-star active"></i>
+                            <i class="fas fa-star"></i>
                           </span>
                         </h3>
                         <p>
@@ -370,9 +370,9 @@ useTitle('List View 2 - WebApp - Vuero')
                         </p>
                         <span>
                           <span data-filter-match>3 rooms</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <span data-filter-match>2 beds</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <span>1 bathroom</span>
                         </span>
 
@@ -410,11 +410,11 @@ useTitle('List View 2 - WebApp - Vuero')
                         <h3>
                           <span data-filter-match>23 Bakery Street</span>
                           <span class="rating">
-                            <Icon icon="fa-star active" />
-                            <Icon icon="fa-star active" />
-                            <Icon icon="fa-star active" />
-                            <Icon icon="fa-star active" />
-                            <Icon icon="fa-star active" />
+                            <i class="fas fa-star active"></i>
+                            <i class="fas fa-star active"></i>
+                            <i class="fas fa-star active"></i>
+                            <i class="fas fa-star active"></i>
+                            <i class="fas fa-star active"></i>
                           </span>
                         </h3>
                         <p>
@@ -425,9 +425,9 @@ useTitle('List View 2 - WebApp - Vuero')
                         </p>
                         <span>
                           <span data-filter-match>3 rooms</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <span data-filter-match>2 beds</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <span>1 bathroom</span>
                         </span>
 
@@ -473,11 +473,11 @@ useTitle('List View 2 - WebApp - Vuero')
                         <h3>
                           <span data-filter-match>1028 Pasadena Ave</span>
                           <span class="rating">
-                            <Icon icon="fa-star active" />
-                            <Icon icon="fa-star active" />
-                            <Icon icon="fa-star active" />
-                            <Icon icon="fa-star active" />
-                            <Icon icon="fa-star active" />
+                            <i class="fas fa-star active"></i>
+                            <i class="fas fa-star active"></i>
+                            <i class="fas fa-star active"></i>
+                            <i class="fas fa-star active"></i>
+                            <i class="fas fa-star active"></i>
                           </span>
                         </h3>
                         <p>
@@ -489,9 +489,9 @@ useTitle('List View 2 - WebApp - Vuero')
                         </p>
                         <span>
                           <span data-filter-match>7 rooms</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <span data-filter-match>5 beds</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <span>3 bathrooms</span>
                         </span>
 
@@ -537,11 +537,11 @@ useTitle('List View 2 - WebApp - Vuero')
                         <h3>
                           <span data-filter-match>54 Church Street</span>
                           <span class="rating">
-                            <Icon icon="fa-star active" />
-                            <Icon icon="fa-star active" />
-                            <Icon icon="fa-star active" />
-                            <Icon icon="fa-star active" />
-                            <Icon icon="fa-star active" />
+                            <i class="fas fa-star active"></i>
+                            <i class="fas fa-star active"></i>
+                            <i class="fas fa-star active"></i>
+                            <i class="fas fa-star active"></i>
+                            <i class="fas fa-star active"></i>
                           </span>
                         </h3>
                         <p>
@@ -552,9 +552,9 @@ useTitle('List View 2 - WebApp - Vuero')
                         </p>
                         <span>
                           <span data-filter-match>2 rooms</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <span data-filter-match>1 bed</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <span>1 bathroom</span>
                         </span>
 
@@ -596,11 +596,11 @@ useTitle('List View 2 - WebApp - Vuero')
                         <h3>
                           <span data-filter-match>112 Old City District</span>
                           <span class="rating">
-                            <Icon icon="fa-star active" />
-                            <Icon icon="fa-star active" />
-                            <Icon icon="fa-star active" />
-                            <Icon icon="fa-star active" />
-                            <Icon icon="fa-star active" />
+                            <i class="fas fa-star active"></i>
+                            <i class="fas fa-star active"></i>
+                            <i class="fas fa-star active"></i>
+                            <i class="fas fa-star active"></i>
+                            <i class="fas fa-star active"></i>
                           </span>
                         </h3>
                         <p>
@@ -612,9 +612,9 @@ useTitle('List View 2 - WebApp - Vuero')
                         </p>
                         <span>
                           <span data-filter-match>3 rooms</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <span data-filter-match>2 beds</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <span>1 bathroom</span>
                         </span>
 
@@ -656,11 +656,11 @@ useTitle('List View 2 - WebApp - Vuero')
                         <h3>
                           <span data-filter-match>51 St Leonard Street</span>
                           <span class="rating">
-                            <Icon icon="fa-star active" />
-                            <Icon icon="fa-star active" />
-                            <Icon icon="fa-star active" />
-                            <Icon icon="fa-star active" />
-                            <Icon icon="fa-star active" />
+                            <i class="fas fa-star active"></i>
+                            <i class="fas fa-star active"></i>
+                            <i class="fas fa-star active"></i>
+                            <i class="fas fa-star active"></i>
+                            <i class="fas fa-star active"></i>
                           </span>
                         </h3>
                         <p>
@@ -671,9 +671,9 @@ useTitle('List View 2 - WebApp - Vuero')
                         </p>
                         <span>
                           <span data-filter-match>4 rooms</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <span data-filter-match>2 beds</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <span>1 bathroom</span>
                         </span>
 

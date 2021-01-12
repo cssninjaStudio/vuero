@@ -275,7 +275,7 @@ useTitle('Dashboards Widgets Stats - WebApp - Vuero')
                     <h3 class="dark-inverted">Members</h3>
                     <button class="button h-button is-primary is-elevated">
                       <span class="icon is-small">
-                        <Icon icon="fa-plus" />
+                        <i class="fas fa-plus"></i>
                       </span>
                       <span>Add Member</span>
                     </button>
@@ -351,11 +351,11 @@ useTitle('Dashboards Widgets Stats - WebApp - Vuero')
                           <div class="rating-wrap">
                             <span>Rating</span>
                             <div class="rating">
-                              <Icon icon="fa-star selected" />
-                              <Icon icon="fa-star selected" />
-                              <Icon icon="fa-star selected" />
-                              <Icon icon="fa-star selected" />
-                              <Icon icon="fa-star selected" />
+                              <i class="fas fa-star selected"></i>
+                              <i class="fas fa-star selected"></i>
+                              <i class="fas fa-star selected"></i>
+                              <i class="fas fa-star selected"></i>
+                              <i class="fas fa-star selected"></i>
                             </div>
                           </div>
                         </td>
@@ -443,11 +443,11 @@ useTitle('Dashboards Widgets Stats - WebApp - Vuero')
                           <div class="rating-wrap">
                             <span>Rating</span>
                             <div class="rating">
-                              <Icon icon="fa-star selected" />
-                              <Icon icon="fa-star selected" />
-                              <Icon icon="fa-star selected" />
-                              <Icon icon="fa-star selected" />
-                              <Icon icon="fa-star" />
+                              <i class="fas fa-star selected"></i>
+                              <i class="fas fa-star selected"></i>
+                              <i class="fas fa-star selected"></i>
+                              <i class="fas fa-star selected"></i>
+                              <i class="fas fa-star"></i>
                             </div>
                           </div>
                         </td>
@@ -546,11 +546,11 @@ useTitle('Dashboards Widgets Stats - WebApp - Vuero')
                           <div class="rating-wrap">
                             <span>Rating</span>
                             <div class="rating">
-                              <Icon icon="fa-star selected" />
-                              <Icon icon="fa-star selected" />
-                              <Icon icon="fa-star selected" />
-                              <Icon icon="fa-star selected" />
-                              <Icon icon="fa-star selected" />
+                              <i class="fas fa-star selected"></i>
+                              <i class="fas fa-star selected"></i>
+                              <i class="fas fa-star selected"></i>
+                              <i class="fas fa-star selected"></i>
+                              <i class="fas fa-star selected"></i>
                             </div>
                           </div>
                         </td>
@@ -620,11 +620,11 @@ useTitle('Dashboards Widgets Stats - WebApp - Vuero')
                           <div class="rating-wrap">
                             <span>Rating</span>
                             <div class="rating">
-                              <Icon icon="fa-star selected" />
-                              <Icon icon="fa-star selected" />
-                              <Icon icon="fa-star selected" />
-                              <Icon icon="fa-star" />
-                              <Icon icon="fa-star" />
+                              <i class="fas fa-star selected"></i>
+                              <i class="fas fa-star selected"></i>
+                              <i class="fas fa-star selected"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
                             </div>
                           </div>
                         </td>
@@ -712,11 +712,11 @@ useTitle('Dashboards Widgets Stats - WebApp - Vuero')
                           <div class="rating-wrap">
                             <span>Rating</span>
                             <div class="rating">
-                              <Icon icon="fa-star selected" />
-                              <Icon icon="fa-star selected" />
-                              <Icon icon="fa-star selected" />
-                              <Icon icon="fa-star selected" />
-                              <Icon icon="fa-star selected" />
+                              <i class="fas fa-star selected"></i>
+                              <i class="fas fa-star selected"></i>
+                              <i class="fas fa-star selected"></i>
+                              <i class="fas fa-star selected"></i>
+                              <i class="fas fa-star selected"></i>
                             </div>
                           </div>
                         </td>
@@ -759,7 +759,7 @@ useTitle('Dashboards Widgets Stats - WebApp - Vuero')
                     <h3 class="dark-inverted">Members</h3>
                     <button class="button h-button is-primary is-elevated">
                       <span class="icon is-small">
-                        <Icon icon="fa-plus" />
+                        <i class="fas fa-plus"></i>
                       </span>
                       <span>Add Member</span>
                     </button>
@@ -835,11 +835,11 @@ useTitle('Dashboards Widgets Stats - WebApp - Vuero')
                           <div class="rating-wrap">
                             <span>Rating</span>
                             <div class="rating">
-                              <Icon icon="fa-star selected" />
-                              <Icon icon="fa-star selected" />
-                              <Icon icon="fa-star selected" />
-                              <Icon icon="fa-star selected" />
-                              <Icon icon="fa-star selected" />
+                              <i class="fas fa-star selected"></i>
+                              <i class="fas fa-star selected"></i>
+                              <i class="fas fa-star selected"></i>
+                              <i class="fas fa-star selected"></i>
+                              <i class="fas fa-star selected"></i>
                             </div>
                           </div>
                         </td>
@@ -927,11 +927,11 @@ useTitle('Dashboards Widgets Stats - WebApp - Vuero')
                           <div class="rating-wrap">
                             <span>Rating</span>
                             <div class="rating">
-                              <Icon icon="fa-star selected" />
-                              <Icon icon="fa-star selected" />
-                              <Icon icon="fa-star selected" />
-                              <Icon icon="fa-star selected" />
-                              <Icon icon="fa-star" />
+                              <i class="fas fa-star selected"></i>
+                              <i class="fas fa-star selected"></i>
+                              <i class="fas fa-star selected"></i>
+                              <i class="fas fa-star selected"></i>
+                              <i class="fas fa-star"></i>
                             </div>
                           </div>
                         </td>
@@ -1030,11 +1030,11 @@ useTitle('Dashboards Widgets Stats - WebApp - Vuero')
                           <div class="rating-wrap">
                             <span>Rating</span>
                             <div class="rating">
-                              <Icon icon="fa-star selected" />
-                              <Icon icon="fa-star selected" />
-                              <Icon icon="fa-star selected" />
-                              <Icon icon="fa-star selected" />
-                              <Icon icon="fa-star selected" />
+                              <i class="fas fa-star selected"></i>
+                              <i class="fas fa-star selected"></i>
+                              <i class="fas fa-star selected"></i>
+                              <i class="fas fa-star selected"></i>
+                              <i class="fas fa-star selected"></i>
                             </div>
                           </div>
                         </td>
@@ -1104,11 +1104,11 @@ useTitle('Dashboards Widgets Stats - WebApp - Vuero')
                           <div class="rating-wrap">
                             <span>Rating</span>
                             <div class="rating">
-                              <Icon icon="fa-star selected" />
-                              <Icon icon="fa-star selected" />
-                              <Icon icon="fa-star selected" />
-                              <Icon icon="fa-star" />
-                              <Icon icon="fa-star" />
+                              <i class="fas fa-star selected"></i>
+                              <i class="fas fa-star selected"></i>
+                              <i class="fas fa-star selected"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
                             </div>
                           </div>
                         </td>
@@ -1196,11 +1196,11 @@ useTitle('Dashboards Widgets Stats - WebApp - Vuero')
                           <div class="rating-wrap">
                             <span>Rating</span>
                             <div class="rating">
-                              <Icon icon="fa-star selected" />
-                              <Icon icon="fa-star selected" />
-                              <Icon icon="fa-star selected" />
-                              <Icon icon="fa-star selected" />
-                              <Icon icon="fa-star selected" />
+                              <i class="fas fa-star selected"></i>
+                              <i class="fas fa-star selected"></i>
+                              <i class="fas fa-star selected"></i>
+                              <i class="fas fa-star selected"></i>
+                              <i class="fas fa-star selected"></i>
                             </div>
                           </div>
                         </td>

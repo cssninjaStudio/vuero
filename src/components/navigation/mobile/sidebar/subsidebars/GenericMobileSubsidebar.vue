@@ -1,5 +1,13 @@
+<script setup lang="ts">
+import { isMobileSidebarOpen } from '/@src/composition/state/ui/mobileSidebarState'
+import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
+</script>
+
 <template>
-  <div class="mobile-subsidebar">
+  <div
+    :class="[isMobileSidebarOpen && activeSidebar === 'home' && 'is-active']"
+    class="mobile-subsidebar"
+  >
     <div class="inner">
       <div class="sidebar-title">
         <h3>Dashboards</h3>
@@ -9,7 +17,7 @@
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Personal <Icon icon="chevron-right"
+              >Personal <Icon icon="feather:chevron-right"
             /></a>
           </div>
           <ul>
@@ -45,7 +53,7 @@
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Finance <Icon icon="chevron-right"
+              >Finance <Icon icon="feather:chevron-right"
             /></a>
           </div>
           <ul>
@@ -81,7 +89,7 @@
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Banking <Icon icon="chevron-right"
+              >Banking <Icon icon="feather:chevron-right"
             /></a>
           </div>
           <ul>
@@ -117,7 +125,7 @@
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Business <Icon icon="chevron-right"
+              >Business <Icon icon="feather:chevron-right"
             /></a>
           </div>
           <ul>
@@ -153,7 +161,7 @@
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Lifestyle <Icon icon="chevron-right"
+              >Lifestyle <Icon icon="feather:chevron-right"
             /></a>
           </div>
           <ul>
@@ -198,7 +206,7 @@
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Ecommerce <Icon icon="chevron-right"
+              >Ecommerce <Icon icon="feather:chevron-right"
             /></a>
           </div>
           <ul>
@@ -216,7 +224,7 @@
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Apps <Icon icon="chevron-right"
+              >Apps <Icon icon="feather:chevron-right"
             /></a>
           </div>
           <ul>
@@ -266,7 +274,7 @@
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Charts <Icon icon="chevron-right"
+              >Charts <Icon icon="feather:chevron-right"
             /></a>
           </div>
           <ul>
@@ -293,7 +301,7 @@
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Widgets <Icon icon="chevron-right"
+              >Widgets <Icon icon="feather:chevron-right"
             /></a>
           </div>
           <ul>
@@ -338,7 +346,7 @@
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Form Layouts <Icon icon="chevron-right"
+              >Form Layouts <Icon icon="feather:chevron-right"
             /></a>
           </div>
           <ul>
@@ -383,7 +391,7 @@
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Starters <Icon icon="chevron-right"
+              >Starters <Icon icon="feather:chevron-right"
             /></a>
           </div>
           <ul>

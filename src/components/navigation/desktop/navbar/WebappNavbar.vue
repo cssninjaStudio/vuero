@@ -1,6 +1,19 @@
 <script setup lang="ts">
+import { watch } from 'vue'
+import { useRoute } from 'vue-router'
+
 import useDropdown from '/@src/composition/use/useDropdown'
+import { activeSubnav, toggleSubnav } from '/@src/composition/state/ui/webappNavState'
+
+const route = useRoute()
 const { dropdownElement, isOpen, open } = useDropdown()
+
+watch(
+  () => route.path,
+  () => {
+    activeSubnav.value = 'closed'
+  },
+)
 </script>
 
 <template>
@@ -20,35 +33,43 @@ const { dropdownElement, isOpen, open } = useDropdown()
         <h1 id="webapp-page-title" class="title is-5">Welcome</h1>
       </div>
       <div class="center">
-        <div id="webapp-navbar-menu" class="centered-links">
+        <div
+          id="webapp-navbar-menu"
+          class="centered-links"
+          :class="[activeSubnav === 'search' && 'is-hidden']"
+        >
           <a
             id="dashboards-navbar-menu"
+            :class="[activeSubnav === 'home' && 'is-active']"
             class="centered-link centered-link-toggle"
-            data-menu-id="dashboards-webapp-menu"
+            @click="toggleSubnav('home')"
           >
             <Icon icon="feather:activity" />
             <span>Dashboards</span>
           </a>
           <a
             id="layouts-navbar-menu"
+            :class="[activeSubnav === 'layouts' && 'is-active']"
             class="centered-link centered-link-toggle"
-            data-menu-id="layouts-webapp-menu"
+            @click="toggleSubnav('layouts')"
           >
             <Icon icon="feather:grid" />
             <span>Layouts</span>
           </a>
           <a
             id="elements-navbar-menu"
+            :class="[activeSubnav === 'elements' && 'is-active']"
             class="centered-link centered-link-toggle"
-            data-menu-id="elements-webapp-menu"
+            @click="toggleSubnav('elements')"
           >
             <Icon icon="feather:box" />
             <span>Elements</span>
           </a>
           <a
             id="components-navbar-menu"
+            :class="[activeSubnav === 'components' && 'is-active']"
             class="centered-link centered-link-toggle"
-            data-menu-id="components-webapp-menu"
+            @click="toggleSubnav('components')"
           >
             <Icon icon="feather:cpu" />
             <span>Components</span>
@@ -60,12 +81,19 @@ const { dropdownElement, isOpen, open } = useDropdown()
             <Icon icon="feather:message-circle" />
             <span>Chat</span>
           </RouterLink>
-          <a class="centered-link centered-link-search">
+          <a
+            class="centered-link centered-link-search"
+            @click="toggleSubnav('search')"
+          >
             <Icon icon="feather:search" />
             <span>Search</span>
           </a>
         </div>
-        <div id="webapp-navbar-search" class="centered-search is-hidden">
+        <div
+          id="webapp-navbar-search"
+          class="centered-search"
+          :class="[activeSubnav !== 'search' && 'is-hidden']"
+        >
           <div class="field">
             <div class="control has-icon">
               <input
@@ -76,7 +104,11 @@ const { dropdownElement, isOpen, open } = useDropdown()
               <div class="form-icon">
                 <Icon icon="feather:search" />
               </div>
-              <div id="webapp-navbar-search-close" class="form-icon is-right">
+              <div
+                id="webapp-navbar-search-close"
+                class="form-icon is-right"
+                @click="activeSubnav = 'closed'"
+              >
                 <Icon icon="feather:x" />
               </div>
               <div class="search-results has-slimscroll"></div>
@@ -185,17 +217,23 @@ const { dropdownElement, isOpen, open } = useDropdown()
     </div>
   </div>
 
-  <div class="webapp-subnavbar">
+  {{ activeSubnav }}
+  <div
+    :class="[
+      !(activeSubnav === 'closed' || activeSubnav === 'search') && 'is-active',
+    ]"
+    class="webapp-subnavbar"
+  >
     <!--src/partials/navbar/webapp/menus/-->
-    <!-- <DashboardsWebappMenu /> -->
+    <DashboardsWebappMenu />
 
     <!--src/partials/navbar/webapp/menus/-->
-    <!-- <LayoutsWebappMenu /> -->
+    <LayoutsWebappMenu />
 
     <!--src/partials/navbar/webapp/menus/-->
-    <!-- <ElementsWebappMenu /> -->
+    <ElementsWebappMenu />
 
     <!--src/partials/navbar/webapp/menus/-->
-    <!-- <ComponentsWebappMenu /> -->
+    <ComponentsWebappMenu />
   </div>
 </template>

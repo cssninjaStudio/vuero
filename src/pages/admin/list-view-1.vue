@@ -71,7 +71,7 @@ useTitle('List View 1 - Admin - Vuero')
             <div class="buttons">
               <button class="button h-button is-primary is-elevated">
                 <span class="icon">
-                  <Icon icon="fa-check" />
+                  <i class="fas fa-check"></i>
                 </span>
                 <span>Approve</span>
               </button>
@@ -1068,10 +1068,10 @@ useTitle('List View 1 - Admin - Vuero')
               data-filter-hide
             >
               <a class="pagination-previous has-chevron"
-                ><Icon icon="chevron-left"
+                ><Icon icon="feather:chevron-left"
               /></a>
               <a class="pagination-next has-chevron"
-                ><Icon icon="chevron-right"
+                ><Icon icon="feather:chevron-right"
               /></a>
               <ul class="pagination-list">
                 <li>

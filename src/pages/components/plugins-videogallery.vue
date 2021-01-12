@@ -161,7 +161,7 @@ lightGallery(document.getElementById(&#x27;videogallery&#x27;));
                 <div class="video-overlay"></div>
                 <div class="video-button">
                   <div class="button-inner">
-                    <Icon icon="fa-play" />
+                    <i class="fas fa-play"></i>
                   </div>
                 </div>
                 <img
@@ -179,7 +179,7 @@ lightGallery(document.getElementById(&#x27;videogallery&#x27;));
                 <div class="video-overlay"></div>
                 <div class="video-button">
                   <div class="button-inner">
-                    <Icon icon="fa-play" />
+                    <i class="fas fa-play"></i>
                   </div>
                 </div>
                 <img
@@ -197,7 +197,7 @@ lightGallery(document.getElementById(&#x27;videogallery&#x27;));
                 <div class="video-overlay"></div>
                 <div class="video-button">
                   <div class="button-inner">
-                    <Icon icon="fa-play" />
+                    <i class="fas fa-play"></i>
                   </div>
                 </div>
                 <img
@@ -215,7 +215,7 @@ lightGallery(document.getElementById(&#x27;videogallery&#x27;));
                 <div class="video-overlay"></div>
                 <div class="video-button">
                   <div class="button-inner">
-                    <Icon icon="fa-play" />
+                    <i class="fas fa-play"></i>
                   </div>
                 </div>
                 <img
@@ -233,7 +233,7 @@ lightGallery(document.getElementById(&#x27;videogallery&#x27;));
                 <div class="video-overlay"></div>
                 <div class="video-button">
                   <div class="button-inner">
-                    <Icon icon="fa-play" />
+                    <i class="fas fa-play"></i>
                   </div>
                 </div>
                 <img
@@ -251,7 +251,7 @@ lightGallery(document.getElementById(&#x27;videogallery&#x27;));
                 <div class="video-overlay"></div>
                 <div class="video-button">
                   <div class="button-inner">
-                    <Icon icon="fa-play" />
+                    <i class="fas fa-play"></i>
                   </div>
                 </div>
                 <img
@@ -269,7 +269,7 @@ lightGallery(document.getElementById(&#x27;videogallery&#x27;));
                 <div class="video-overlay"></div>
                 <div class="video-button">
                   <div class="button-inner">
-                    <Icon icon="fa-play" />
+                    <i class="fas fa-play"></i>
                   </div>
                 </div>
                 <img
@@ -287,7 +287,7 @@ lightGallery(document.getElementById(&#x27;videogallery&#x27;));
                 <div class="video-overlay"></div>
                 <div class="video-button">
                   <div class="button-inner">
-                    <Icon icon="fa-play" />
+                    <i class="fas fa-play"></i>
                   </div>
                 </div>
                 <img
@@ -305,7 +305,7 @@ lightGallery(document.getElementById(&#x27;videogallery&#x27;));
                 <div class="video-overlay"></div>
                 <div class="video-button">
                   <div class="button-inner">
-                    <Icon icon="fa-play" />
+                    <i class="fas fa-play"></i>
                   </div>
                 </div>
                 <img

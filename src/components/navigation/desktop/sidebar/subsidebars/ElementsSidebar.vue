@@ -41,7 +41,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Icons <Icon icon="chevron-right"
+              >Icons <Icon icon="feather:chevron-right"
             /></a>
           </div>
           <ul>
@@ -76,7 +76,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Cards <Icon icon="chevron-right"
+              >Cards <Icon icon="feather:chevron-right"
             /></a>
           </div>
           <ul>
@@ -113,7 +113,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Forms <Icon icon="chevron-right"
+              >Forms <Icon icon="feather:chevron-right"
             /></a>
           </div>
           <ul>
@@ -164,7 +164,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Toggles <Icon icon="chevron-right"
+              >Toggles <Icon icon="feather:chevron-right"
             /></a>
           </div>
           <ul>

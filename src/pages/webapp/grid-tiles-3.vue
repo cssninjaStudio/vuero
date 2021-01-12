@@ -85,7 +85,7 @@ useTitle('Grid Tiles 3 - WebApp - Vuero')
               </div>
               <button class="button h-button is-primary is-raised">
                 <span class="icon">
-                  <Icon icon="fa-plus" />
+                  <i class="fas fa-plus"></i>
                 </span>
                 <span>New Post</span>
               </button>

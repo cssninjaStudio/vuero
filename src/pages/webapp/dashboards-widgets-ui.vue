@@ -432,7 +432,7 @@ useTitle('Dashboards Widgets UI - WebApp - Vuero')
                       </div>
                       <div class="exerpt">
                         <h5>
-                          <Icon icon="fa-circle" />
+                          <i class="fas fa-circle"></i>
                           <span>Design Project</span>
                         </h5>
                         <p>

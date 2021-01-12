@@ -61,7 +61,7 @@ useTitle('Dashboards Lifestyle 1 - WebApp - Vuero')
                       <div class="username">
                         <h3>
                           <span>sweet_candy13</span>
-                          <Icon icon="fa-star" />
+                          <i class="fas fa-star"></i>
                         </h3>
                         <span>Clarissa Geller</span>
                       </div>
@@ -104,7 +104,7 @@ useTitle('Dashboards Lifestyle 1 - WebApp - Vuero')
                         data-pop-icon="fas fa-fire"
                         data-pop-iconbg="red"
                       >
-                        <Icon icon="fa-fire" />
+                        <i class="fas fa-fire"></i>
                       </div>
                       <div
                         class="meta-achievement is-primary"
@@ -117,7 +117,7 @@ useTitle('Dashboards Lifestyle 1 - WebApp - Vuero')
                         data-pop-icon="fas fa-medal"
                         data-pop-iconbg="primary"
                       >
-                        <Icon icon="fa-medal" />
+                        <i class="fas fa-medal"></i>
                       </div>
                       <div
                         class="meta-achievement is-yellow"
@@ -130,7 +130,7 @@ useTitle('Dashboards Lifestyle 1 - WebApp - Vuero')
                         data-pop-icon="fas fa-trophy"
                         data-pop-iconbg="yellow"
                       >
-                        <Icon icon="fa-trophy" />
+                        <i class="fas fa-trophy"></i>
                       </div>
                     </div>
                   </div>
@@ -250,7 +250,7 @@ useTitle('Dashboards Lifestyle 1 - WebApp - Vuero')
                         <div class="card-head">
                           <h4>Followers (30 days)</h4>
                           <div class="h-icon is-info is-rounded">
-                            <Icon icon="fa-users" />
+                            <i class="fas fa-users"></i>
                           </div>
                         </div>
                         <div class="card-metric">
@@ -273,7 +273,7 @@ useTitle('Dashboards Lifestyle 1 - WebApp - Vuero')
                         <div class="card-head">
                           <h4>Following (30 days)</h4>
                           <div class="h-icon is-yellow is-rounded">
-                            <Icon icon="fa-user-plus" />
+                            <i class="fas fa-user-plus"></i>
                           </div>
                         </div>
                         <div class="card-metric">
@@ -296,7 +296,7 @@ useTitle('Dashboards Lifestyle 1 - WebApp - Vuero')
                         <div class="card-head">
                           <h4>Likes (30 days)</h4>
                           <div class="h-icon is-red is-rounded">
-                            <Icon icon="fa-heart" />
+                            <i class="fas fa-heart"></i>
                           </div>
                         </div>
                         <div class="card-metric">
@@ -319,7 +319,7 @@ useTitle('Dashboards Lifestyle 1 - WebApp - Vuero')
                         <div class="card-head">
                           <h4>Comments (30 days)</h4>
                           <div class="h-icon is-yellow is-rounded">
-                            <Icon icon="fa-comment" />
+                            <i class="fas fa-comment"></i>
                           </div>
                         </div>
                         <div class="card-metric">
@@ -342,7 +342,7 @@ useTitle('Dashboards Lifestyle 1 - WebApp - Vuero')
                         <div class="card-head">
                           <h4>Profile Views (30 days)</h4>
                           <div class="h-icon is-success is-rounded">
-                            <Icon icon="fa-glasses" />
+                            <i class="fas fa-glasses"></i>
                           </div>
                         </div>
                         <div class="card-metric">
@@ -717,7 +717,7 @@ useTitle('Dashboards Lifestyle 1 - WebApp - Vuero')
                                 <div class="heatmap-row-item"></div>
                                 <div class="heatmap-row-item heat-1"></div>
                                 <div class="heatmap-row-item heat-3">
-                                  <Icon icon="fa-fire" />
+                                  <i class="fas fa-fire"></i>
                                 </div>
                                 <div class="heatmap-row-item"></div>
                                 <div class="heatmap-row-item"></div>
@@ -816,7 +816,7 @@ useTitle('Dashboards Lifestyle 1 - WebApp - Vuero')
                                 <div class="heatmap-row-item heat-2"></div>
                                 <div class="heatmap-row-item"></div>
                                 <div class="heatmap-row-item heat-3">
-                                  <Icon icon="fa-fire" />
+                                  <i class="fas fa-fire"></i>
                                 </div>
                                 <div class="heatmap-row-item"></div>
                                 <div class="heatmap-row-item"></div>
@@ -850,7 +850,7 @@ useTitle('Dashboards Lifestyle 1 - WebApp - Vuero')
                                 <div class="heatmap-row-item"></div>
                                 <div class="heatmap-row-item"></div>
                                 <div class="heatmap-row-item heat-3">
-                                  <Icon icon="fa-fire" />
+                                  <i class="fas fa-fire"></i>
                                 </div>
                                 <div class="heatmap-row-item heat-1"></div>
                                 <div class="heatmap-row-item"></div>
@@ -1013,7 +1013,7 @@ useTitle('Dashboards Lifestyle 1 - WebApp - Vuero')
                         <div class="card-head">
                           <h4>Post Day</h4>
                           <div class="h-icon is-green is-rounded">
-                            <Icon icon="fa-calendar-day" />
+                            <i class="fas fa-calendar-day"></i>
                           </div>
                         </div>
                         <div class="card-metric is-smaller">
@@ -1049,7 +1049,7 @@ useTitle('Dashboards Lifestyle 1 - WebApp - Vuero')
                         <div class="card-head">
                           <h4>Filters</h4>
                           <div class="h-icon is-orange is-rounded">
-                            <Icon icon="fa-camera" />
+                            <i class="fas fa-camera"></i>
                           </div>
                         </div>
                         <div class="card-metric is-smaller">
@@ -1155,7 +1155,7 @@ useTitle('Dashboards Lifestyle 1 - WebApp - Vuero')
                           <div class="post-stats">
                             <span>Most Liked Posts</span>
                             <div class="post-stat">
-                              <Icon icon="fa-heart text-h-red" />
+                              <i class="fas fa-heart text-h-red"></i>
                               <span class="count dark-inverted">15.9K</span>
                             </div>
                           </div>
@@ -1226,7 +1226,7 @@ useTitle('Dashboards Lifestyle 1 - WebApp - Vuero')
                           <div class="post-stats">
                             <span>Most Commented Posts</span>
                             <div class="post-stat">
-                              <Icon icon="fa-comment text-h-yellow" />
+                              <i class="fas fa-comment text-h-yellow"></i>
                               <span class="count dark-inverted">2.3K</span>
                             </div>
                           </div>
@@ -1297,7 +1297,7 @@ useTitle('Dashboards Lifestyle 1 - WebApp - Vuero')
                           <div class="post-stats">
                             <span>Most Engaging Posts</span>
                             <div class="post-stat">
-                              <Icon icon="fa-hand-paper text-h-green" />
+                              <i class="fas fa-hand-paper text-h-green"></i>
                               <span class="count dark-inverted">51.6%</span>
                             </div>
                           </div>

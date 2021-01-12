@@ -559,7 +559,7 @@ useTitle('Vuero - A complete Vue 3 design system')
       <!-- Back To Top Button -->
       <div id="backtotop">
         <a href="#">
-          <Icon icon="fa-angle-up" />
+          <i class="fas fa-angle-up"></i>
         </a>
       </div>
     </div>

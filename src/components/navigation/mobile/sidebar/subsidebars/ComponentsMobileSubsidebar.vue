@@ -1,5 +1,15 @@
+<script setup lang="ts">
+import { isMobileSidebarOpen } from '/@src/composition/state/ui/mobileSidebarState'
+import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
+</script>
+
 <template>
-  <div class="mobile-subsidebar is-activity">
+  <div
+    :class="[
+      isMobileSidebarOpen && activeSidebar === 'components' && 'is-active',
+    ]"
+    class="mobile-subsidebar is-activity"
+  >
     <div class="inner">
       <div class="sidebar-title">
         <h3>Components</h3>
@@ -15,7 +25,7 @@
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Accordions <Icon icon="chevron-right"
+              >Accordions <Icon icon="feather:chevron-right"
             /></a>
           </div>
           <ul>
@@ -74,7 +84,7 @@
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Tabs <Icon icon="chevron-right"
+              >Tabs <Icon icon="feather:chevron-right"
             /></a>
           </div>
           <ul>
@@ -97,7 +107,7 @@
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Flex Table <Icon icon="chevron-right"
+              >Flex Table <Icon icon="feather:chevron-right"
             /></a>
           </div>
           <ul>
@@ -138,7 +148,7 @@
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Plugins <Icon icon="chevron-right"
+              >Plugins <Icon icon="feather:chevron-right"
             /></a>
           </div>
           <ul>
@@ -224,7 +234,7 @@
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Rich Text <Icon icon="chevron-right"
+              >Rich Text <Icon icon="feather:chevron-right"
             /></a>
           </div>
           <ul>

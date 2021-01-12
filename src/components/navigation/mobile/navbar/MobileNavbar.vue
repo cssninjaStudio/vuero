@@ -1,5 +1,8 @@
 <script setup lang="ts">
+import { ref } from 'vue'
 import useDropdown from '/@src/composition/use/useDropdown'
+import { isMobileSidebarOpen } from '/@src/composition/state/ui/mobileSidebarState'
+
 const { dropdownElement, isOpen, open } = useDropdown()
 </script>
 
@@ -13,7 +16,11 @@ const { dropdownElement, isOpen, open } = useDropdown()
       <div class="navbar-brand">
         <!-- Mobile menu toggler icon -->
         <div class="brand-start">
-          <div class="navbar-burger">
+          <div
+            class="navbar-burger"
+            :class="[isMobileSidebarOpen && 'is-active']"
+            @click="isMobileSidebarOpen = !isMobileSidebarOpen"
+          >
             <span></span>
             <span></span>
             <span></span>

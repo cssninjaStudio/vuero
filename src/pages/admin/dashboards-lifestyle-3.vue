@@ -97,7 +97,7 @@ useTitle('Dashboard Lifestyle 3 - Admin - Vuero')
                   <div class="health-tile">
                     <div class="tile-head">
                       <div class="h-icon is-primary">
-                        <Icon icon="fa-tint" />
+                        <i class="fas fa-tint"></i>
                       </div>
                       <h4>
                         <span class="dark-inverted">114/90</span>
@@ -117,7 +117,7 @@ useTitle('Dashboard Lifestyle 3 - Admin - Vuero')
                   <div class="health-tile">
                     <div class="tile-head">
                       <div class="h-icon is-primary">
-                        <Icon icon="fa-heart" />
+                        <i class="fas fa-heart"></i>
                       </div>
                       <h4>
                         <span class="dark-inverted">112</span>
@@ -137,7 +137,7 @@ useTitle('Dashboard Lifestyle 3 - Admin - Vuero')
                   <div class="health-tile">
                     <div class="tile-head">
                       <div class="h-icon is-primary">
-                        <Icon icon="fa-pump-medical" />
+                        <i class="fas fa-pump-medical"></i>
                       </div>
                       <h4>
                         <span class="dark-inverted">12/14</span>
@@ -157,7 +157,7 @@ useTitle('Dashboard Lifestyle 3 - Admin - Vuero')
                   <div class="health-tile">
                     <div class="tile-head">
                       <div class="h-icon is-primary">
-                        <Icon icon="fa-weight" />
+                        <i class="fas fa-weight"></i>
                       </div>
                       <h4>
                         <span class="dark-inverted">60.4</span>

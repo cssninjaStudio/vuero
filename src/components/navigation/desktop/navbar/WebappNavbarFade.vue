@@ -1,6 +1,19 @@
 <script setup lang="ts">
+import { watch } from 'vue'
+import { useRoute } from 'vue-router'
+
 import useDropdown from '/@src/composition/use/useDropdown'
+import { activeSubnav, toggleSubnav } from '/@src/composition/state/ui/webappNavState'
+
+const route = useRoute()
 const { dropdownElement, isOpen, open } = useDropdown()
+
+watch(
+  () => route.path,
+  () => {
+    activeSubnav.value = 'closed'
+  },
+)
 </script>
 
 <template>
@@ -24,7 +37,8 @@ const { dropdownElement, isOpen, open } = useDropdown()
           <a
             id="dashboards-navbar-menu"
             class="centered-link centered-link-toggle"
-            data-menu-id="dashboards-webapp-menu"
+            :class="[activeSubnav === 'home' && 'is-active']"
+            @click="toggleSubnav('home')"
           >
             <Icon icon="feather:activity" />
             <span>Dashboards</span>
@@ -32,7 +46,8 @@ const { dropdownElement, isOpen, open } = useDropdown()
           <a
             id="layouts-navbar-menu"
             class="centered-link centered-link-toggle"
-            data-menu-id="layouts-webapp-menu"
+            :class="[activeSubnav === 'layouts' && 'is-active']"
+            @click="toggleSubnav('layouts')"
           >
             <Icon icon="feather:grid" />
             <span>Layouts</span>
@@ -40,7 +55,8 @@ const { dropdownElement, isOpen, open } = useDropdown()
           <a
             id="elements-navbar-menu"
             class="centered-link centered-link-toggle"
-            data-menu-id="elements-webapp-menu"
+            :class="[activeSubnav === 'elements' && 'is-active']"
+            @click="toggleSubnav('elements')"
           >
             <Icon icon="feather:box" />
             <span>Elements</span>
@@ -48,7 +64,8 @@ const { dropdownElement, isOpen, open } = useDropdown()
           <a
             id="components-navbar-menu"
             class="centered-link centered-link-toggle"
-            data-menu-id="components-webapp-menu"
+            :class="[activeSubnav === 'components' && 'is-active']"
+            @click="toggleSubnav('components')"
           >
             <Icon icon="feather:cpu" />
             <span>Components</span>
@@ -60,12 +77,19 @@ const { dropdownElement, isOpen, open } = useDropdown()
             <Icon icon="feather:message-circle" />
             <span>Chat</span>
           </RouterLink>
-          <a class="centered-link centered-link-search">
+          <a
+            class="centered-link centered-link-search"
+            @click="toggleSubnav('search')"
+          >
             <Icon icon="feather:search" />
             <span>Search</span>
           </a>
         </div>
-        <div id="webapp-navbar-search" class="centered-search is-hidden">
+        <div
+          id="webapp-navbar-search"
+          class="centered-search"
+          :class="[activeSubnav !== 'search' && 'is-hidden']"
+        >
           <div class="field">
             <div class="control has-icon">
               <input
@@ -76,7 +100,11 @@ const { dropdownElement, isOpen, open } = useDropdown()
               <div class="form-icon">
                 <Icon icon="feather:search" />
               </div>
-              <div id="webapp-navbar-search-close" class="form-icon is-right">
+              <div
+                id="webapp-navbar-search-close"
+                class="form-icon is-right"
+                @click="activeSubnav = 'closed'"
+              >
                 <Icon icon="feather:x" />
               </div>
             </div>
@@ -184,7 +212,12 @@ const { dropdownElement, isOpen, open } = useDropdown()
     </div>
   </div>
 
-  <div class="webapp-subnavbar">
+  <div
+    :class="[
+      activeSubnav !== 'closed' && activeSubnav !== 'search' && 'is-active',
+    ]"
+    class="webapp-subnavbar"
+  >
     <!--src/partials/navbar/webapp/menus/-->
     <DashboardsWebappMenu />
 

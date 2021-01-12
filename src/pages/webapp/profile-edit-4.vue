@@ -72,7 +72,7 @@ useTitle('Profile Edit 4 - WebApp - Vuero')
                         <i class="lnil lnil-user-alt"></i>
                         <span>General</span>
                         <span class="end">
-                          <Icon icon="fa-arrow-right" />
+                          <i class="fas fa-arrow-right"></i>
                         </span>
                       </RouterLink>
                       <RouterLink
@@ -82,7 +82,7 @@ useTitle('Profile Edit 4 - WebApp - Vuero')
                         <i class="lnil lnil-crown-alt"></i>
                         <span>Experience</span>
                         <span class="end">
-                          <Icon icon="fa-arrow-right" />
+                          <i class="fas fa-arrow-right"></i>
                         </span>
                       </RouterLink>
                       <RouterLink
@@ -92,7 +92,7 @@ useTitle('Profile Edit 4 - WebApp - Vuero')
                         <i class="lnil lnil-quill"></i>
                         <span>Skills</span>
                         <span class="end">
-                          <Icon icon="fa-arrow-right" />
+                          <i class="fas fa-arrow-right"></i>
                         </span>
                       </RouterLink>
                       <RouterLink
@@ -102,7 +102,7 @@ useTitle('Profile Edit 4 - WebApp - Vuero')
                         <i class="lnil lnil-cog"></i>
                         <span>Settings</span>
                         <span class="end">
-                          <Icon icon="fa-arrow-right" />
+                          <i class="fas fa-arrow-right"></i>
                         </span>
                       </RouterLink>
                     </div>

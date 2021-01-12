@@ -113,7 +113,7 @@ useTitle('Grid Users 2 - Admin - Vuero')
               </div>
               <button class="button h-button is-primary is-raised">
                 <span class="icon">
-                  <Icon icon="fa-plus" />
+                  <i class="fas fa-plus"></i>
                 </span>
                 <span>Add User</span>
               </button>
@@ -157,7 +157,7 @@ useTitle('Grid Users 2 - Admin - Vuero')
                           <span>37 tasks remaining</span>
                         </div>
                         <div class="status-icon is-success">
-                          <Icon icon="fa-check" />
+                          <i class="fas fa-check"></i>
                         </div>
                       </div>
                       <div class="buttons">
@@ -271,7 +271,7 @@ useTitle('Grid Users 2 - Admin - Vuero')
                           <span>59 tasks remaining</span>
                         </div>
                         <div class="status-icon is-warning">
-                          <Icon icon="fa-exclamation" />
+                          <i class="fas fa-exclamation"></i>
                         </div>
                       </div>
                       <div class="buttons">
@@ -377,7 +377,7 @@ useTitle('Grid Users 2 - Admin - Vuero')
                           <span>21 tasks remaining</span>
                         </div>
                         <div class="status-icon is-success">
-                          <Icon icon="fa-check" />
+                          <i class="fas fa-check"></i>
                         </div>
                       </div>
                       <div class="buttons">
@@ -483,7 +483,7 @@ useTitle('Grid Users 2 - Admin - Vuero')
                           <span>11 tasks remaining</span>
                         </div>
                         <div class="status-icon is-success">
-                          <Icon icon="fa-check" />
+                          <i class="fas fa-check"></i>
                         </div>
                       </div>
                       <div class="buttons">
@@ -581,7 +581,7 @@ useTitle('Grid Users 2 - Admin - Vuero')
                           <span>17 tasks remaining</span>
                         </div>
                         <div class="status-icon is-danger">
-                          <Icon icon="fa-times" />
+                          <i class="fas fa-times"></i>
                         </div>
                       </div>
                       <div class="buttons">
@@ -675,7 +675,7 @@ useTitle('Grid Users 2 - Admin - Vuero')
                           <span>14 tasks remaining</span>
                         </div>
                         <div class="status-icon is-success">
-                          <Icon icon="fa-check" />
+                          <i class="fas fa-check"></i>
                         </div>
                       </div>
                       <div class="buttons">
@@ -777,7 +777,7 @@ useTitle('Grid Users 2 - Admin - Vuero')
                           <span>18 tasks remaining</span>
                         </div>
                         <div class="status-icon is-success">
-                          <Icon icon="fa-check" />
+                          <i class="fas fa-check"></i>
                         </div>
                       </div>
                       <div class="buttons">
@@ -871,7 +871,7 @@ useTitle('Grid Users 2 - Admin - Vuero')
                           <span>27 tasks remaining</span>
                         </div>
                         <div class="status-icon is-success">
-                          <Icon icon="fa-check" />
+                          <i class="fas fa-check"></i>
                         </div>
                       </div>
                       <div class="buttons">
@@ -965,7 +965,7 @@ useTitle('Grid Users 2 - Admin - Vuero')
                           <span>31 tasks remaining</span>
                         </div>
                         <div class="status-icon is-success">
-                          <Icon icon="fa-check" />
+                          <i class="fas fa-check"></i>
                         </div>
                       </div>
                       <div class="buttons">
@@ -1079,7 +1079,7 @@ useTitle('Grid Users 2 - Admin - Vuero')
                           <span>9 tasks remaining</span>
                         </div>
                         <div class="status-icon is-success">
-                          <Icon icon="fa-check" />
+                          <i class="fas fa-check"></i>
                         </div>
                       </div>
                       <div class="buttons">
@@ -1185,7 +1185,7 @@ useTitle('Grid Users 2 - Admin - Vuero')
                           <span>22 tasks remaining</span>
                         </div>
                         <div class="status-icon is-success">
-                          <Icon icon="fa-check" />
+                          <i class="fas fa-check"></i>
                         </div>
                       </div>
                       <div class="buttons">
@@ -1279,7 +1279,7 @@ useTitle('Grid Users 2 - Admin - Vuero')
                           <span>43 tasks remaining</span>
                         </div>
                         <div class="status-icon is-warning">
-                          <Icon icon="fa-exclamation" />
+                          <i class="fas fa-exclamation"></i>
                         </div>
                       </div>
                       <div class="buttons">
@@ -1377,7 +1377,7 @@ useTitle('Grid Users 2 - Admin - Vuero')
                           <span>13 tasks remaining</span>
                         </div>
                         <div class="status-icon is-success">
-                          <Icon icon="fa-check" />
+                          <i class="fas fa-check"></i>
                         </div>
                       </div>
                       <div class="buttons">
@@ -1483,7 +1483,7 @@ useTitle('Grid Users 2 - Admin - Vuero')
                           <span>39 tasks remaining</span>
                         </div>
                         <div class="status-icon is-success">
-                          <Icon icon="fa-check" />
+                          <i class="fas fa-check"></i>
                         </div>
                       </div>
                       <div class="buttons">
@@ -1577,7 +1577,7 @@ useTitle('Grid Users 2 - Admin - Vuero')
                           <span>7 tasks remaining</span>
                         </div>
                         <div class="status-icon is-success">
-                          <Icon icon="fa-check" />
+                          <i class="fas fa-check"></i>
                         </div>
                       </div>
                       <div class="buttons">
@@ -1671,7 +1671,7 @@ useTitle('Grid Users 2 - Admin - Vuero')
                           <span>19 tasks remaining</span>
                         </div>
                         <div class="status-icon is-success">
-                          <Icon icon="fa-check" />
+                          <i class="fas fa-check"></i>
                         </div>
                       </div>
                       <div class="buttons">
@@ -1773,7 +1773,7 @@ useTitle('Grid Users 2 - Admin - Vuero')
                           <span>14 tasks remaining</span>
                         </div>
                         <div class="status-icon is-success">
-                          <Icon icon="fa-check" />
+                          <i class="fas fa-check"></i>
                         </div>
                       </div>
                       <div class="buttons">
@@ -1879,7 +1879,7 @@ useTitle('Grid Users 2 - Admin - Vuero')
                           <span>5 tasks remaining</span>
                         </div>
                         <div class="status-icon is-success">
-                          <Icon icon="fa-check" />
+                          <i class="fas fa-check"></i>
                         </div>
                       </div>
                       <div class="buttons">

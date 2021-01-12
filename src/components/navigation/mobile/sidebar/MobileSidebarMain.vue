@@ -1,5 +1,12 @@
+<script setup lang="ts">
+import { isMobileSidebarOpen } from '/@src/composition/state/ui/mobileSidebarState'
+</script>
+
 <template>
-  <div class="mobile-main-sidebar">
+  <div
+    :class="[isMobileSidebarOpen && 'is-active']"
+    class="mobile-main-sidebar"
+  >
     <div class="inner">
       <ul class="icon-side-menu">
         <li>

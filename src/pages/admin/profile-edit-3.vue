@@ -94,7 +94,7 @@ useTitle('Profile Edit 3 - Admin - Vuero')
                         <i class="lnil lnil-user-alt"></i>
                         <span>General</span>
                         <span class="end">
-                          <Icon icon="fa-arrow-right" />
+                          <i class="fas fa-arrow-right"></i>
                         </span>
                       </RouterLink>
                       <RouterLink
@@ -104,7 +104,7 @@ useTitle('Profile Edit 3 - Admin - Vuero')
                         <i class="lnil lnil-crown-alt"></i>
                         <span>Experience</span>
                         <span class="end">
-                          <Icon icon="fa-arrow-right" />
+                          <i class="fas fa-arrow-right"></i>
                         </span>
                       </RouterLink>
                       <RouterLink
@@ -114,7 +114,7 @@ useTitle('Profile Edit 3 - Admin - Vuero')
                         <i class="lnil lnil-quill"></i>
                         <span>Skills</span>
                         <span class="end">
-                          <Icon icon="fa-arrow-right" />
+                          <i class="fas fa-arrow-right"></i>
                         </span>
                       </RouterLink>
                       <RouterLink
@@ -124,7 +124,7 @@ useTitle('Profile Edit 3 - Admin - Vuero')
                         <i class="lnil lnil-cog"></i>
                         <span>Settings</span>
                         <span class="end">
-                          <Icon icon="fa-arrow-right" />
+                          <i class="fas fa-arrow-right"></i>
                         </span>
                       </RouterLink>
                     </div>
@@ -459,7 +459,7 @@ useTitle('Profile Edit 3 - Admin - Vuero')
                                 class="button h-button is-raised add-setting-item is-dark-outlined"
                               >
                                 <span class="icon">
-                                  <Icon icon="fa-plus" />
+                                  <i class="fas fa-plus"></i>
                                 </span>
                                 <span>Add</span>
                               </button>
@@ -746,7 +746,7 @@ useTitle('Profile Edit 3 - Admin - Vuero')
                                         class="button h-button is-primary is-raised is-fullwidth"
                                       >
                                         <span class="icon">
-                                          <Icon icon="fa-plus" />
+                                          <i class="fas fa-plus"></i>
                                         </span>
                                         <span>Add Skill</span>
                                       </button>
@@ -834,7 +834,7 @@ useTitle('Profile Edit 3 - Admin - Vuero')
                                 class="button h-button is-raised add-setting-item is-dark-outlined"
                               >
                                 <span class="icon">
-                                  <Icon icon="fa-plus" />
+                                  <i class="fas fa-plus"></i>
                                 </span>
                                 <span>Add</span>
                               </button>
@@ -1020,7 +1020,7 @@ useTitle('Profile Edit 3 - Admin - Vuero')
                                         class="button h-button is-primary is-raised is-fullwidth"
                                       >
                                         <span class="icon">
-                                          <Icon icon="fa-plus" />
+                                          <i class="fas fa-plus"></i>
                                         </span>
                                         <span>Add Tool</span>
                                       </button>
@@ -1108,7 +1108,7 @@ useTitle('Profile Edit 3 - Admin - Vuero')
                                 class="button h-button is-raised add-setting-item is-dark-outlined"
                               >
                                 <span class="icon">
-                                  <Icon icon="fa-plus" />
+                                  <i class="fas fa-plus"></i>
                                 </span>
                                 <span>Add</span>
                               </button>

@@ -68,7 +68,7 @@ useTitle('Dashboard Apps 1 - Admin - Vuero')
                     <p>$0 delivery fee for orders over $10 for 30 days</p>
                     <a class="action-link">
                       <span>Learn More</span>
-                      <Icon icon="fa-arrow-right" />
+                      <i class="fas fa-arrow-right"></i>
                     </a>
                   </div>
                 </div>
@@ -364,9 +364,9 @@ useTitle('Dashboard Apps 1 - Admin - Vuero')
                                 <h4>Mario's Place</h4>
                                 <p>
                                   <span>Pizza</span>
-                                  <Icon icon="fa-circle" />
+                                  <i class="fas fa-circle"></i>
                                   <span class="rating">
-                                    <Icon icon="fa-star" />
+                                    <i class="fas fa-star"></i>
                                     <span>4.9</span>
                                   </span>
                                 </p>
@@ -404,9 +404,9 @@ useTitle('Dashboard Apps 1 - Admin - Vuero')
                                 <h4>Jimmy's Downtown</h4>
                                 <p>
                                   <span>Fast</span>
-                                  <Icon icon="fa-circle" />
+                                  <i class="fas fa-circle"></i>
                                   <span class="rating">
-                                    <Icon icon="fa-star" />
+                                    <i class="fas fa-star"></i>
                                     <span>4.5</span>
                                   </span>
                                 </p>
@@ -444,9 +444,9 @@ useTitle('Dashboard Apps 1 - Admin - Vuero')
                                 <h4>Fruity Loops</h4>
                                 <p>
                                   <span>Fruits</span>
-                                  <Icon icon="fa-circle" />
+                                  <i class="fas fa-circle"></i>
                                   <span class="rating">
-                                    <Icon icon="fa-star" />
+                                    <i class="fas fa-star"></i>
                                     <span>4.8</span>
                                   </span>
                                 </p>
@@ -484,9 +484,9 @@ useTitle('Dashboard Apps 1 - Admin - Vuero')
                                 <h4>The Green Heaven</h4>
                                 <p>
                                   <span>Veggie</span>
-                                  <Icon icon="fa-circle" />
+                                  <i class="fas fa-circle"></i>
                                   <span class="rating">
-                                    <Icon icon="fa-star" />
+                                    <i class="fas fa-star"></i>
                                     <span>5.0</span>
                                   </span>
                                 </p>
@@ -524,9 +524,9 @@ useTitle('Dashboard Apps 1 - Admin - Vuero')
                                 <h4>Salad Bar</h4>
                                 <p>
                                   <span>Veggie</span>
-                                  <Icon icon="fa-circle" />
+                                  <i class="fas fa-circle"></i>
                                   <span class="rating">
-                                    <Icon icon="fa-star" />
+                                    <i class="fas fa-star"></i>
                                     <span>4.8</span>
                                   </span>
                                 </p>
@@ -564,9 +564,9 @@ useTitle('Dashboard Apps 1 - Admin - Vuero')
                                 <h4>Little Italy</h4>
                                 <p>
                                   <span>Pasta</span>
-                                  <Icon icon="fa-circle" />
+                                  <i class="fas fa-circle"></i>
                                   <span class="rating">
-                                    <Icon icon="fa-star" />
+                                    <i class="fas fa-star"></i>
                                     <span>1.1</span>
                                   </span>
                                 </p>
@@ -604,9 +604,9 @@ useTitle('Dashboard Apps 1 - Admin - Vuero')
                                 <h4>The Noodle Bar</h4>
                                 <p>
                                   <span>Thai</span>
-                                  <Icon icon="fa-circle" />
+                                  <i class="fas fa-circle"></i>
                                   <span class="rating">
-                                    <Icon icon="fa-star" />
+                                    <i class="fas fa-star"></i>
                                     <span>4.9</span>
                                   </span>
                                 </p>
@@ -644,9 +644,9 @@ useTitle('Dashboard Apps 1 - Admin - Vuero')
                                 <h4>Jerry's Epic Burger</h4>
                                 <p>
                                   <span>Fast</span>
-                                  <Icon icon="fa-circle" />
+                                  <i class="fas fa-circle"></i>
                                   <span class="rating">
-                                    <Icon icon="fa-star" />
+                                    <i class="fas fa-star"></i>
                                     <span>5.0</span>
                                   </span>
                                 </p>
@@ -684,9 +684,9 @@ useTitle('Dashboard Apps 1 - Admin - Vuero')
                                 <h4>Meals From The Sea</h4>
                                 <p>
                                   <span>Fish</span>
-                                  <Icon icon="fa-circle" />
+                                  <i class="fas fa-circle"></i>
                                   <span class="rating">
-                                    <Icon icon="fa-star" />
+                                    <i class="fas fa-star"></i>
                                     <span>4.7</span>
                                   </span>
                                 </p>
@@ -724,9 +724,9 @@ useTitle('Dashboard Apps 1 - Admin - Vuero')
                                 <h4>Delicious Little Things</h4>
                                 <p>
                                   <span>Cakes</span>
-                                  <Icon icon="fa-circle" />
+                                  <i class="fas fa-circle"></i>
                                   <span class="rating">
-                                    <Icon icon="fa-star" />
+                                    <i class="fas fa-star"></i>
                                     <span>5.0</span>
                                   </span>
                                 </p>
@@ -764,9 +764,9 @@ useTitle('Dashboard Apps 1 - Admin - Vuero')
                                 <h4>Pollos Hermanos</h4>
                                 <p>
                                   <span>Fast</span>
-                                  <Icon icon="fa-circle" />
+                                  <i class="fas fa-circle"></i>
                                   <span class="rating">
-                                    <Icon icon="fa-star" />
+                                    <i class="fas fa-star"></i>
                                     <span>5.0</span>
                                   </span>
                                 </p>
@@ -804,9 +804,9 @@ useTitle('Dashboard Apps 1 - Admin - Vuero')
                                 <h4>Iced & Delicious</h4>
                                 <p>
                                   <span>Cakes</span>
-                                  <Icon icon="fa-circle" />
+                                  <i class="fas fa-circle"></i>
                                   <span class="rating">
-                                    <Icon icon="fa-star" />
+                                    <i class="fas fa-star"></i>
                                     <span>4.2</span>
                                   </span>
                                 </p>
@@ -844,9 +844,9 @@ useTitle('Dashboard Apps 1 - Admin - Vuero')
                                 <h4>Osaka Sushi</h4>
                                 <p>
                                   <span>Sushi</span>
-                                  <Icon icon="fa-circle" />
+                                  <i class="fas fa-circle"></i>
                                   <span class="rating">
-                                    <Icon icon="fa-star" />
+                                    <i class="fas fa-star"></i>
                                     <span>4.9</span>
                                   </span>
                                 </p>
@@ -884,9 +884,9 @@ useTitle('Dashboard Apps 1 - Admin - Vuero')
                                 <h4>Quick Treats</h4>
                                 <p>
                                   <span>Veggie</span>
-                                  <Icon icon="fa-circle" />
+                                  <i class="fas fa-circle"></i>
                                   <span class="rating">
-                                    <Icon icon="fa-star" />
+                                    <i class="fas fa-star"></i>
                                     <span>3.8</span>
                                   </span>
                                 </p>
@@ -924,9 +924,9 @@ useTitle('Dashboard Apps 1 - Admin - Vuero')
                                 <h4>Sam' Dwich</h4>
                                 <p>
                                   <span>Veggie</span>
-                                  <Icon icon="fa-circle" />
+                                  <i class="fas fa-circle"></i>
                                   <span class="rating">
-                                    <Icon icon="fa-star" />
+                                    <i class="fas fa-star"></i>
                                     <span>4.5</span>
                                   </span>
                                 </p>
@@ -964,9 +964,9 @@ useTitle('Dashboard Apps 1 - Admin - Vuero')
                                 <h4>Sunchine Cookies</h4>
                                 <p>
                                   <span>Cakes</span>
-                                  <Icon icon="fa-circle" />
+                                  <i class="fas fa-circle"></i>
                                   <span class="rating">
-                                    <Icon icon="fa-star" />
+                                    <i class="fas fa-star"></i>
                                     <span>4.9</span>
                                   </span>
                                 </p>
@@ -1004,9 +1004,9 @@ useTitle('Dashboard Apps 1 - Admin - Vuero')
                                 <h4>O' Fried Chicken</h4>
                                 <p>
                                   <span>Fast</span>
-                                  <Icon icon="fa-circle" />
+                                  <i class="fas fa-circle"></i>
                                   <span class="rating">
-                                    <Icon icon="fa-star" />
+                                    <i class="fas fa-star"></i>
                                     <span>1.0</span>
                                   </span>
                                 </p>
@@ -1044,9 +1044,9 @@ useTitle('Dashboard Apps 1 - Admin - Vuero')
                                 <h4>Bangkok Woks</h4>
                                 <p>
                                   <span>Thai</span>
-                                  <Icon icon="fa-circle" />
+                                  <i class="fas fa-circle"></i>
                                   <span class="rating">
-                                    <Icon icon="fa-star" />
+                                    <i class="fas fa-star"></i>
                                     <span>4.5</span>
                                   </span>
                                 </p>

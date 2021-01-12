@@ -94,7 +94,7 @@ useTitle('Profile Edit 2 - Admin - Vuero')
                         <i class="lnil lnil-user-alt"></i>
                         <span>General</span>
                         <span class="end">
-                          <Icon icon="fa-arrow-right" />
+                          <i class="fas fa-arrow-right"></i>
                         </span>
                       </RouterLink>
                       <RouterLink
@@ -104,7 +104,7 @@ useTitle('Profile Edit 2 - Admin - Vuero')
                         <i class="lnil lnil-crown-alt"></i>
                         <span>Experience</span>
                         <span class="end">
-                          <Icon icon="fa-arrow-right" />
+                          <i class="fas fa-arrow-right"></i>
                         </span>
                       </RouterLink>
                       <RouterLink
@@ -114,7 +114,7 @@ useTitle('Profile Edit 2 - Admin - Vuero')
                         <i class="lnil lnil-quill"></i>
                         <span>Skills</span>
                         <span class="end">
-                          <Icon icon="fa-arrow-right" />
+                          <i class="fas fa-arrow-right"></i>
                         </span>
                       </RouterLink>
                       <RouterLink
@@ -124,7 +124,7 @@ useTitle('Profile Edit 2 - Admin - Vuero')
                         <i class="lnil lnil-cog"></i>
                         <span>Settings</span>
                         <span class="end">
-                          <Icon icon="fa-arrow-right" />
+                          <i class="fas fa-arrow-right"></i>
                         </span>
                       </RouterLink>
                     </div>
@@ -252,7 +252,7 @@ useTitle('Profile Edit 2 - Admin - Vuero')
                               <span class="dark-inverted">Airbnb HQ</span>
                               <span>
                                 <span>January 2018</span>
-                                <Icon icon="fa-circle" />
+                                <i class="fas fa-circle"></i>
                                 <span>October 2020</span>
                               </span>
                               <span>Product Manager</span>
@@ -276,7 +276,7 @@ useTitle('Profile Edit 2 - Admin - Vuero')
                               <span class="dark-inverted">Facebook</span>
                               <span>
                                 <span>January 2018</span>
-                                <Icon icon="fa-circle" />
+                                <i class="fas fa-circle"></i>
                                 <span>October 2020</span>
                               </span>
                               <span>Product Manager</span>
@@ -300,7 +300,7 @@ useTitle('Profile Edit 2 - Admin - Vuero')
                               <span class="dark-inverted">Atlassian</span>
                               <span>
                                 <span>January 2018</span>
-                                <Icon icon="fa-circle" />
+                                <i class="fas fa-circle"></i>
                                 <span>October 2020</span>
                               </span>
                               <span>Web Developer</span>
@@ -324,7 +324,7 @@ useTitle('Profile Edit 2 - Admin - Vuero')
                               <span class="dark-inverted">Github</span>
                               <span>
                                 <span>January 2018</span>
-                                <Icon icon="fa-circle" />
+                                <i class="fas fa-circle"></i>
                                 <span>October 2020</span>
                               </span>
                               <span>Web Developer</span>
@@ -348,7 +348,7 @@ useTitle('Profile Edit 2 - Admin - Vuero')
                               <span class="dark-inverted">Slack</span>
                               <span>
                                 <span>January 2018</span>
-                                <Icon icon="fa-circle" />
+                                <i class="fas fa-circle"></i>
                                 <span>October 2020</span>
                               </span>
                               <span>Web Developer</span>
@@ -372,7 +372,7 @@ useTitle('Profile Edit 2 - Admin - Vuero')
                               <span class="dark-inverted">Gitlab</span>
                               <span>
                                 <span>January 2018</span>
-                                <Icon icon="fa-circle" />
+                                <i class="fas fa-circle"></i>
                                 <span>October 2020</span>
                               </span>
                               <span>Web Developer</span>
@@ -396,7 +396,7 @@ useTitle('Profile Edit 2 - Admin - Vuero')
                                 class="button h-button is-raised add-setting-item is-dark-outlined"
                               >
                                 <span class="icon">
-                                  <Icon icon="fa-plus" />
+                                  <i class="fas fa-plus"></i>
                                 </span>
                                 <span>Add</span>
                               </button>

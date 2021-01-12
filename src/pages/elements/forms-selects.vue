@@ -210,7 +210,7 @@ useTitle('Elements - Forms Selects - Vuero')
                           </select>
                         </div>
                         <div class="icon is-small is-left">
-                          <Icon icon="fa-globe" />
+                          <i class="fas fa-globe"></i>
                         </div>
                       </div>
                     </div>

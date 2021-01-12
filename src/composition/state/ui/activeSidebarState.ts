@@ -23,22 +23,22 @@ export function toggleSidebar(sidebar: Sidebar) {
   }
 }
 
-export default function init() {
-  watch(
-    activeSidebar,
-    () => {
-      const wrappers = document.querySelectorAll('.view-wrapper')
+// export default function init() {
+watch(
+  activeSidebar,
+  () => {
+    const wrappers = document.querySelectorAll('.view-wrapper')
 
-      wrappers.forEach((wrapper) => {
-        if (activeSidebar.value === 'none') {
-          wrapper.classList.remove('is-pushed-full')
-        } else if (!wrapper.classList.contains('is-pushed-full')) {
-          wrapper.classList.add('is-pushed-full')
-        }
-      })
-    },
-    {
-      immediate: true,
-    }
-  )
-}
+    wrappers.forEach((wrapper) => {
+      if (activeSidebar.value === 'none') {
+        wrapper.classList.remove('is-pushed-full')
+      } else if (!wrapper.classList.contains('is-pushed-full')) {
+        wrapper.classList.add('is-pushed-full')
+      }
+    })
+  },
+  {
+    immediate: true,
+  }
+)
+// }

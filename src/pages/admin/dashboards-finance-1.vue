@@ -63,7 +63,7 @@ useTitle('Dashboard Finance 1 - Admin - Vuero')
                         <div class="tile-head">
                           <h3 class="dark-inverted">Transactions</h3>
                           <div class="h-icon is-primary is-rounded is-small">
-                            <Icon icon="fa-gem" />
+                            <i class="fas fa-gem"></i>
                           </div>
                         </div>
                         <div class="tile-body">
@@ -71,7 +71,7 @@ useTitle('Dashboard Finance 1 - Admin - Vuero')
                         </div>
                         <div class="tile-foot">
                           <span class="text-h-green"
-                            >+6.4% <Icon icon="trending-up"
+                            >+6.4% <Icon icon="feather:trending-up"
                           /></span>
                           <span>since last month</span>
                         </div>
@@ -83,7 +83,7 @@ useTitle('Dashboard Finance 1 - Admin - Vuero')
                         <div class="tile-head">
                           <h3 class="dark-inverted">Subscriptions</h3>
                           <div class="h-icon is-orange is-rounded is-small">
-                            <Icon icon="fa-user-plus" />
+                            <i class="fas fa-user-plus"></i>
                           </div>
                         </div>
                         <div class="tile-body">
@@ -91,7 +91,7 @@ useTitle('Dashboard Finance 1 - Admin - Vuero')
                         </div>
                         <div class="tile-foot">
                           <span class="text-h-red"
-                            >-2.1% <Icon icon="trending-down"
+                            >-2.1% <Icon icon="feather:trending-down"
                           /></span>
                           <span>going down</span>
                         </div>
@@ -103,7 +103,7 @@ useTitle('Dashboard Finance 1 - Admin - Vuero')
                         <div class="tile-head">
                           <h3 class="dark-inverted">Referals</h3>
                           <div class="h-icon is-green is-rounded is-small">
-                            <Icon icon="fa-bullhorn" />
+                            <i class="fas fa-bullhorn"></i>
                           </div>
                         </div>
                         <div class="tile-body">
@@ -111,7 +111,7 @@ useTitle('Dashboard Finance 1 - Admin - Vuero')
                         </div>
                         <div class="tile-foot">
                           <span class="text-h-green"
-                            >+4.2% <Icon icon="trending-up"
+                            >+4.2% <Icon icon="feather:trending-up"
                           /></span>
                           <span>going up</span>
                         </div>
@@ -178,7 +178,7 @@ useTitle('Dashboard Finance 1 - Admin - Vuero')
                           </progress>
                           <div class="progress-foot">
                             <span class="text-h-green"
-                              >+6.4% <Icon icon="trending-up"
+                              >+6.4% <Icon icon="feather:trending-up"
                             /></span>
                             <span>since last month</span>
                           </div>

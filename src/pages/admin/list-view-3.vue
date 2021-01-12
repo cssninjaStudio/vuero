@@ -137,10 +137,10 @@ useTitle('List View 3 - Admin - Vuero')
                         <span>
                           <Icon icon="feather:map-pin" />
                           <span data-filter-match>San Diego</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <Icon icon="feather:clock" />
                           <span data-filter-match>Full Time</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <Icon icon="feather:check-circle" />
                           <span data-filter-match>3 Years Exp.</span>
                         </span>
@@ -183,10 +183,10 @@ useTitle('List View 3 - Admin - Vuero')
                         <span>
                           <Icon icon="feather:map-pin" />
                           <span data-filter-match>Los Angeles</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <Icon icon="feather:clock" />
                           <span data-filter-match>Part Time</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <Icon icon="feather:check-circle" />
                           <span data-filter-match>2 Years Exp.</span>
                         </span>
@@ -229,10 +229,10 @@ useTitle('List View 3 - Admin - Vuero')
                         <span>
                           <Icon icon="feather:map-pin" />
                           <span data-filter-match>Los Angeles</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <Icon icon="feather:clock" />
                           <span data-filter-match>Full Time</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <Icon icon="feather:check-circle" />
                           <span data-filter-match>3 Years Exp.</span>
                         </span>
@@ -273,10 +273,10 @@ useTitle('List View 3 - Admin - Vuero')
                         <span>
                           <Icon icon="feather:map-pin" />
                           <span data-filter-match>Los Angeles</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <Icon icon="feather:clock" />
                           <span data-filter-match>Full Time</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <Icon icon="feather:check-circle" />
                           <span data-filter-match>10 Years Exp.</span>
                         </span>
@@ -319,10 +319,10 @@ useTitle('List View 3 - Admin - Vuero')
                         <span>
                           <Icon icon="feather:map-pin" />
                           <span data-filter-match>San Francisco</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <Icon icon="feather:clock" />
                           <span data-filter-match>Full Time</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <Icon icon="feather:check-circle" />
                           <span data-filter-match>5 Years Exp.</span>
                         </span>
@@ -365,10 +365,10 @@ useTitle('List View 3 - Admin - Vuero')
                         <span>
                           <Icon icon="feather:map-pin" />
                           <span data-filter-match>Pasadena</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <Icon icon="feather:clock" />
                           <span data-filter-match>Full Time</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <Icon icon="feather:check-circle" />
                           <span data-filter-match>4 Years Exp.</span>
                         </span>
@@ -411,10 +411,10 @@ useTitle('List View 3 - Admin - Vuero')
                         <span>
                           <Icon icon="feather:map-pin" />
                           <span data-filter-match>Los Angeles</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <Icon icon="feather:clock" />
                           <span data-filter-match>Full Time</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <Icon icon="feather:check-circle" />
                           <span data-filter-match>2 Years Exp.</span>
                         </span>
@@ -457,10 +457,10 @@ useTitle('List View 3 - Admin - Vuero')
                         <span>
                           <Icon icon="feather:map-pin" />
                           <span data-filter-match>Los Angeles</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <Icon icon="feather:clock" />
                           <span data-filter-match>Full Time</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <Icon icon="feather:check-circle" />
                           <span data-filter-match>4 Years Exp.</span>
                         </span>
@@ -503,10 +503,10 @@ useTitle('List View 3 - Admin - Vuero')
                         <span>
                           <Icon icon="feather:map-pin" />
                           <span data-filter-match>Melbourne</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <Icon icon="feather:clock" />
                           <span data-filter-match>Full Time</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <Icon icon="feather:check-circle" />
                           <span data-filter-match>10 Years Exp.</span>
                         </span>
@@ -549,10 +549,10 @@ useTitle('List View 3 - Admin - Vuero')
                         <span>
                           <Icon icon="feather:map-pin" />
                           <span data-filter-match>Los Angeles</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <Icon icon="feather:clock" />
                           <span data-filter-match>Part Time</span>
-                          <Icon icon="fa-circle icon-separator" />
+                          <i class="fas fa-circle icon-separator"></i>
                           <Icon icon="feather:check-circle" />
                           <span data-filter-match>1 Year Exp.</span>
                         </span>
@@ -583,10 +583,10 @@ useTitle('List View 3 - Admin - Vuero')
                   data-filter-hide
                 >
                   <a class="pagination-previous has-chevron"
-                    ><Icon icon="chevron-left"
+                    ><Icon icon="feather:chevron-left"
                   /></a>
                   <a class="pagination-next has-chevron"
-                    ><Icon icon="chevron-right"
+                    ><Icon icon="feather:chevron-right"
                   /></a>
                   <ul class="pagination-list">
                     <li>

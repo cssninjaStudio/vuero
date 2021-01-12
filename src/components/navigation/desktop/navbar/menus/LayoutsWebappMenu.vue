@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import { activeSubnav } from '/@src/composition/state/ui/webappNavState'
 
 const activeTab = ref<'list' | 'grid' | 'app' | 'utility'>('list')
 </script>
@@ -7,7 +8,8 @@ const activeTab = ref<'list' | 'grid' | 'app' | 'utility'>('list')
 <template>
   <div
     id="layouts-webapp-menu"
-    class="webapp-subnavbar-inner tabs-wrapper is-active"
+    :class="[activeSubnav === 'layouts' && 'is-active']"
+    class="webapp-subnavbar-inner tabs-wrapper"
   >
     <div class="tabs-inner">
       <div class="tabs is-centered is-4">

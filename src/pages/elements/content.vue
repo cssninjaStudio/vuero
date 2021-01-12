@@ -672,11 +672,11 @@ useTitle('Elements - Content - Vuero')
                           <tr>
                             <td>Superman</td>
                             <td>
-                              <Icon icon="fa-star warning-text" />
-                              <Icon icon="fa-star warning-text" />
-                              <Icon icon="fa-star warning-text" />
-                              <Icon icon="fa-star warning-text" />
-                              <Icon icon="fa-star warning-text" />
+                              <i class="fas fa-star warning-text"></i>
+                              <i class="fas fa-star warning-text"></i>
+                              <i class="fas fa-star warning-text"></i>
+                              <i class="fas fa-star warning-text"></i>
+                              <i class="fas fa-star warning-text"></i>
                             </td>
                             <td>
                               <span class="tag is-rounded is-success"
@@ -687,11 +687,11 @@ useTitle('Elements - Content - Vuero')
                           <tr>
                             <td>Batman</td>
                             <td>
-                              <Icon icon="fa-star warning-text" />
-                              <Icon icon="fa-star warning-text" />
-                              <Icon icon="fa-star warning-text" />
-                              <Icon icon="fa-star" />
-                              <Icon icon="fa-star" />
+                              <i class="fas fa-star warning-text"></i>
+                              <i class="fas fa-star warning-text"></i>
+                              <i class="fas fa-star warning-text"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
                             </td>
                             <td>
                               <span class="tag is-rounded">Unavailable</span>
@@ -700,11 +700,11 @@ useTitle('Elements - Content - Vuero')
                           <tr>
                             <td>Deadpool</td>
                             <td>
-                              <Icon icon="fa-star warning-text" />
-                              <Icon icon="fa-star warning-text" />
-                              <Icon icon="fa-star" />
-                              <Icon icon="fa-star" />
-                              <Icon icon="fa-star" />
+                              <i class="fas fa-star warning-text"></i>
+                              <i class="fas fa-star warning-text"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
                             </td>
                             <td>
                               <span class="tag is-rounded">Unavailable</span>
@@ -713,11 +713,11 @@ useTitle('Elements - Content - Vuero')
                           <tr>
                             <td>Spawn</td>
                             <td>
-                              <Icon icon="fa-star warning-text" />
-                              <Icon icon="fa-star warning-text" />
-                              <Icon icon="fa-star warning-text" />
-                              <Icon icon="fa-star warning-text" />
-                              <Icon icon="fa-star" />
+                              <i class="fas fa-star warning-text"></i>
+                              <i class="fas fa-star warning-text"></i>
+                              <i class="fas fa-star warning-text"></i>
+                              <i class="fas fa-star warning-text"></i>
+                              <i class="fas fa-star"></i>
                             </td>
                             <td>
                               <span class="tag is-rounded is-success"
@@ -728,11 +728,11 @@ useTitle('Elements - Content - Vuero')
                           <tr>
                             <td>Galactus</td>
                             <td>
-                              <Icon icon="fa-star warning-text" />
-                              <Icon icon="fa-star warning-text" />
-                              <Icon icon="fa-star warning-text" />
-                              <Icon icon="fa-star warning-text" />
-                              <Icon icon="fa-star warning-text" />
+                              <i class="fas fa-star warning-text"></i>
+                              <i class="fas fa-star warning-text"></i>
+                              <i class="fas fa-star warning-text"></i>
+                              <i class="fas fa-star warning-text"></i>
+                              <i class="fas fa-star warning-text"></i>
                             </td>
                             <td>
                               <span class="tag is-rounded">Unavailable</span>

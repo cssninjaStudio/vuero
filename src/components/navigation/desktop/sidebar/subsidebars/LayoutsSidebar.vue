@@ -21,7 +21,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Lists <Icon icon="chevron-right"
+              >Lists <Icon icon="feather:chevron-right"
             /></a>
           </div>
           <ul>
@@ -66,7 +66,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Flex Lists <Icon icon="chevron-right"
+              >Flex Lists <Icon icon="feather:chevron-right"
             /></a>
           </div>
           <ul>
@@ -102,7 +102,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Datatable <Icon icon="chevron-right"
+              >Datatable <Icon icon="feather:chevron-right"
             /></a>
           </div>
           <ul>
@@ -148,7 +148,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Card Grid <Icon icon="chevron-right"
+              >Card Grid <Icon icon="feather:chevron-right"
             /></a>
           </div>
           <ul>
@@ -193,7 +193,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Tile Grid <Icon icon="chevron-right"
+              >Tile Grid <Icon icon="feather:chevron-right"
             /></a>
           </div>
           <ul>
@@ -229,7 +229,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >User Grid <Icon icon="chevron-right"
+              >User Grid <Icon icon="feather:chevron-right"
             /></a>
           </div>
           <ul>
@@ -275,7 +275,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Personal <Icon icon="chevron-right"
+              >Personal <Icon icon="feather:chevron-right"
             /></a>
           </div>
           <ul>
@@ -320,7 +320,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Pages <Icon icon="chevron-right"
+              >Pages <Icon icon="feather:chevron-right"
             /></a>
           </div>
           <ul>
@@ -383,7 +383,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Subpages <Icon icon="chevron-right"
+              >Subpages <Icon icon="feather:chevron-right"
             /></a>
           </div>
           <ul>
@@ -425,7 +425,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Projects <Icon icon="chevron-right"
+              >Projects <Icon icon="feather:chevron-right"
             /></a>
           </div>
           <ul>
@@ -480,7 +480,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Utility <Icon icon="chevron-right"
+              >Utility <Icon icon="feather:chevron-right"
             /></a>
           </div>
           <ul>
@@ -525,7 +525,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Onboarding <Icon icon="chevron-right"
+              >Onboarding <Icon icon="feather:chevron-right"
             /></a>
           </div>
           <ul>
@@ -579,7 +579,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Error Pages <Icon icon="chevron-right"
+              >Error Pages <Icon icon="feather:chevron-right"
             /></a>
           </div>
           <ul>

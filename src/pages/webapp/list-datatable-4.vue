@@ -35,7 +35,7 @@ useTitle('List Datatable 4 - WebApp - Vuero')
               <p class="control">
                 <button class="button h-button">
                   <span class="icon is-small">
-                    <Icon icon="fa-download" />
+                    <i class="fas fa-download"></i>
                   </span>
                   <span>Download</span>
                 </button>
@@ -43,7 +43,7 @@ useTitle('List Datatable 4 - WebApp - Vuero')
               <p class="control">
                 <button class="button h-button">
                   <span class="icon is-small">
-                    <Icon icon="fa-upload" />
+                    <i class="fas fa-upload"></i>
                   </span>
                   <span>Update</span>
                 </button>
@@ -51,7 +51,7 @@ useTitle('List Datatable 4 - WebApp - Vuero')
               <p class="control">
                 <button class="button h-button">
                   <span class="icon is-small">
-                    <Icon icon="fa-times" />
+                    <i class="fas fa-times"></i>
                   </span>
                   <span>Remove</span>
                 </button>
@@ -61,7 +61,7 @@ useTitle('List Datatable 4 - WebApp - Vuero')
             <div class="buttons">
               <button class="button h-button is-primary is-elevated">
                 <span class="icon">
-                  <Icon icon="fa-upload" />
+                  <i class="fas fa-upload"></i>
                 </span>
                 <span>Upload File</span>
               </button>

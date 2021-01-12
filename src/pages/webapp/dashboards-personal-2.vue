@@ -367,8 +367,8 @@ useTitle('Dashboards Personal 2 - WebApp - Vuero')
                             <div class="position">UI/UX Designer</div>
                           </div>
                           <div class="user-list-icons">
-                            <a><Icon icon="fa-phone" /></a>
-                            <a><Icon icon="fa-video" /></a>
+                            <a><i class="fas fa-phone"></i></a>
+                            <a><i class="fas fa-video"></i></a>
                           </div>
                         </li>
                         <li>
@@ -385,8 +385,8 @@ useTitle('Dashboards Personal 2 - WebApp - Vuero')
                             <div class="position">UI/UX Designer</div>
                           </div>
                           <div class="user-list-icons">
-                            <a><Icon icon="fa-phone" /></a>
-                            <a><Icon icon="fa-video" /></a>
+                            <a><i class="fas fa-phone"></i></a>
+                            <a><i class="fas fa-video"></i></a>
                           </div>
                         </li>
                         <li>
@@ -406,8 +406,8 @@ useTitle('Dashboards Personal 2 - WebApp - Vuero')
                             <div class="position">UI/UX Designer</div>
                           </div>
                           <div class="user-list-icons">
-                            <a><Icon icon="fa-phone" /></a>
-                            <a><Icon icon="fa-video" /></a>
+                            <a><i class="fas fa-phone"></i></a>
+                            <a><i class="fas fa-video"></i></a>
                           </div>
                         </li>
                         <li>
@@ -424,8 +424,8 @@ useTitle('Dashboards Personal 2 - WebApp - Vuero')
                             <div class="position">Frontend developer</div>
                           </div>
                           <div class="user-list-icons">
-                            <a><Icon icon="fa-phone" /></a>
-                            <a><Icon icon="fa-video" /></a>
+                            <a><i class="fas fa-phone"></i></a>
+                            <a><i class="fas fa-video"></i></a>
                           </div>
                         </li>
                       </ul>

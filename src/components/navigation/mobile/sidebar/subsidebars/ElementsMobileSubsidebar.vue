@@ -1,5 +1,15 @@
+<script setup lang="ts">
+import { isMobileSidebarOpen } from '/@src/composition/state/ui/mobileSidebarState'
+import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
+</script>
+
 <template>
-  <div class="mobile-subsidebar is-activity">
+  <div
+    :class="[
+      isMobileSidebarOpen && activeSidebar === 'elements' && 'is-active',
+    ]"
+    class="mobile-subsidebar is-activity"
+  >
     <div class="inner">
       <div class="sidebar-title">
         <h3>Elements</h3>
@@ -33,7 +43,7 @@
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Icons <Icon icon="chevron-right"
+              >Icons <Icon icon="feather:chevron-right"
             /></a>
           </div>
           <ul>
@@ -68,7 +78,7 @@
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Cards <Icon icon="chevron-right"
+              >Cards <Icon icon="feather:chevron-right"
             /></a>
           </div>
           <ul>
@@ -105,7 +115,7 @@
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Forms <Icon icon="chevron-right"
+              >Forms <Icon icon="feather:chevron-right"
             /></a>
           </div>
           <ul>
@@ -156,7 +166,7 @@
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Toggles <Icon icon="chevron-right"
+              >Toggles <Icon icon="feather:chevron-right"
             /></a>
           </div>
           <ul>

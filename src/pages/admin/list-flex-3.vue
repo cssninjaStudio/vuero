@@ -181,17 +181,17 @@ useTitle('List Flex 3 - Admin - Vuero')
                       </div>
                       <div class="flex-table-cell" data-th="Difficulty">
                         <span class="dot-levels">
-                          <Icon icon="fa-circle dot active" />
-                          <Icon icon="fa-circle dot" />
-                          <Icon icon="fa-circle dot" />
-                          <Icon icon="fa-circle dot" />
-                          <Icon icon="fa-circle dot" />
+                          <i class="fas fa-circle dot active"></i>
+                          <i class="fas fa-circle dot"></i>
+                          <i class="fas fa-circle dot"></i>
+                          <i class="fas fa-circle dot"></i>
+                          <i class="fas fa-circle dot"></i>
                         </span>
                       </div>
                       <div class="flex-table-cell cell-end" data-th="Actions">
                         <a
                           class="button h-button has-dot dark-outlined is-pushed-mobile"
-                          >Purchase <Icon icon="fa-circle dot" /> $26</a
+                          >Purchase <i class="fas fa-circle dot"></i> $26</a
                         >
                       </div>
                     </div>
@@ -250,17 +250,17 @@ useTitle('List Flex 3 - Admin - Vuero')
                       </div>
                       <div class="flex-table-cell" data-th="Difficulty">
                         <span class="dot-levels">
-                          <Icon icon="fa-circle dot active" />
-                          <Icon icon="fa-circle dot active" />
-                          <Icon icon="fa-circle dot active" />
-                          <Icon icon="fa-circle dot active" />
-                          <Icon icon="fa-circle dot" />
+                          <i class="fas fa-circle dot active"></i>
+                          <i class="fas fa-circle dot active"></i>
+                          <i class="fas fa-circle dot active"></i>
+                          <i class="fas fa-circle dot active"></i>
+                          <i class="fas fa-circle dot"></i>
                         </span>
                       </div>
                       <div class="flex-table-cell cell-end" data-th="Actions">
                         <a
                           class="button h-button has-dot dark-outlined is-pushed-mobile"
-                          >Purchase <Icon icon="fa-circle dot" /> $12</a
+                          >Purchase <i class="fas fa-circle dot"></i> $12</a
                         >
                       </div>
                     </div>
@@ -319,17 +319,17 @@ useTitle('List Flex 3 - Admin - Vuero')
                       </div>
                       <div class="flex-table-cell" data-th="Difficulty">
                         <span class="dot-levels">
-                          <Icon icon="fa-circle dot active" />
-                          <Icon icon="fa-circle dot active" />
-                          <Icon icon="fa-circle dot" />
-                          <Icon icon="fa-circle dot" />
-                          <Icon icon="fa-circle dot" />
+                          <i class="fas fa-circle dot active"></i>
+                          <i class="fas fa-circle dot active"></i>
+                          <i class="fas fa-circle dot"></i>
+                          <i class="fas fa-circle dot"></i>
+                          <i class="fas fa-circle dot"></i>
                         </span>
                       </div>
                       <div class="flex-table-cell cell-end" data-th="Actions">
                         <a
                           class="button h-button has-dot dark-outlined is-pushed-mobile"
-                          >Purchase <Icon icon="fa-circle dot" /> $16</a
+                          >Purchase <i class="fas fa-circle dot"></i> $16</a
                         >
                       </div>
                     </div>
@@ -388,17 +388,17 @@ useTitle('List Flex 3 - Admin - Vuero')
                       </div>
                       <div class="flex-table-cell" data-th="Difficulty">
                         <span class="dot-levels">
-                          <Icon icon="fa-circle dot active" />
-                          <Icon icon="fa-circle dot active" />
-                          <Icon icon="fa-circle dot active" />
-                          <Icon icon="fa-circle dot" />
-                          <Icon icon="fa-circle dot" />
+                          <i class="fas fa-circle dot active"></i>
+                          <i class="fas fa-circle dot active"></i>
+                          <i class="fas fa-circle dot active"></i>
+                          <i class="fas fa-circle dot"></i>
+                          <i class="fas fa-circle dot"></i>
                         </span>
                       </div>
                       <div class="flex-table-cell cell-end" data-th="Actions">
                         <a
                           class="button h-button has-dot dark-outlined is-pushed-mobile"
-                          >Purchase <Icon icon="fa-circle dot" /> FREE</a
+                          >Purchase <i class="fas fa-circle dot"></i> FREE</a
                         >
                       </div>
                     </div>
@@ -457,17 +457,17 @@ useTitle('List Flex 3 - Admin - Vuero')
                       </div>
                       <div class="flex-table-cell" data-th="Difficulty">
                         <span class="dot-levels">
-                          <Icon icon="fa-circle dot active" />
-                          <Icon icon="fa-circle dot" />
-                          <Icon icon="fa-circle dot" />
-                          <Icon icon="fa-circle dot" />
-                          <Icon icon="fa-circle dot" />
+                          <i class="fas fa-circle dot active"></i>
+                          <i class="fas fa-circle dot"></i>
+                          <i class="fas fa-circle dot"></i>
+                          <i class="fas fa-circle dot"></i>
+                          <i class="fas fa-circle dot"></i>
                         </span>
                       </div>
                       <div class="flex-table-cell cell-end" data-th="Actions">
                         <a
                           class="button h-button has-dot dark-outlined is-pushed-mobile"
-                          >Purchase <Icon icon="fa-circle dot" /> $8</a
+                          >Purchase <i class="fas fa-circle dot"></i> $8</a
                         >
                       </div>
                     </div>
@@ -526,17 +526,17 @@ useTitle('List Flex 3 - Admin - Vuero')
                       </div>
                       <div class="flex-table-cell" data-th="Difficulty">
                         <span class="dot-levels">
-                          <Icon icon="fa-circle dot active" />
-                          <Icon icon="fa-circle dot active" />
-                          <Icon icon="fa-circle dot active" />
-                          <Icon icon="fa-circle dot active" />
-                          <Icon icon="fa-circle dot" />
+                          <i class="fas fa-circle dot active"></i>
+                          <i class="fas fa-circle dot active"></i>
+                          <i class="fas fa-circle dot active"></i>
+                          <i class="fas fa-circle dot active"></i>
+                          <i class="fas fa-circle dot"></i>
                         </span>
                       </div>
                       <div class="flex-table-cell cell-end" data-th="Actions">
                         <a
                           class="button h-button has-dot dark-outlined is-pushed-mobile"
-                          >Purchase <Icon icon="fa-circle dot" /> $25</a
+                          >Purchase <i class="fas fa-circle dot"></i> $25</a
                         >
                       </div>
                     </div>
@@ -595,17 +595,17 @@ useTitle('List Flex 3 - Admin - Vuero')
                       </div>
                       <div class="flex-table-cell" data-th="Difficulty">
                         <span class="dot-levels">
-                          <Icon icon="fa-circle dot active" />
-                          <Icon icon="fa-circle dot active" />
-                          <Icon icon="fa-circle dot active" />
-                          <Icon icon="fa-circle dot" />
-                          <Icon icon="fa-circle dot" />
+                          <i class="fas fa-circle dot active"></i>
+                          <i class="fas fa-circle dot active"></i>
+                          <i class="fas fa-circle dot active"></i>
+                          <i class="fas fa-circle dot"></i>
+                          <i class="fas fa-circle dot"></i>
                         </span>
                       </div>
                       <div class="flex-table-cell cell-end" data-th="Actions">
                         <a
                           class="button h-button has-dot dark-outlined is-pushed-mobile"
-                          >Purchase <Icon icon="fa-circle dot" /> $12</a
+                          >Purchase <i class="fas fa-circle dot"></i> $12</a
                         >
                       </div>
                     </div>
@@ -664,17 +664,17 @@ useTitle('List Flex 3 - Admin - Vuero')
                       </div>
                       <div class="flex-table-cell" data-th="Difficulty">
                         <span class="dot-levels">
-                          <Icon icon="fa-circle dot active" />
-                          <Icon icon="fa-circle dot active" />
-                          <Icon icon="fa-circle dot active" />
-                          <Icon icon="fa-circle dot active" />
-                          <Icon icon="fa-circle dot active" />
+                          <i class="fas fa-circle dot active"></i>
+                          <i class="fas fa-circle dot active"></i>
+                          <i class="fas fa-circle dot active"></i>
+                          <i class="fas fa-circle dot active"></i>
+                          <i class="fas fa-circle dot active"></i>
                         </span>
                       </div>
                       <div class="flex-table-cell cell-end" data-th="Actions">
                         <a
                           class="button h-button has-dot dark-outlined is-pushed-mobile"
-                          >Purchase <Icon icon="fa-circle dot" /> $34</a
+                          >Purchase <i class="fas fa-circle dot"></i> $34</a
                         >
                       </div>
                     </div>
@@ -733,17 +733,17 @@ useTitle('List Flex 3 - Admin - Vuero')
                       </div>
                       <div class="flex-table-cell" data-th="Difficulty">
                         <span class="dot-levels">
-                          <Icon icon="fa-circle dot active" />
-                          <Icon icon="fa-circle dot active" />
-                          <Icon icon="fa-circle dot active" />
-                          <Icon icon="fa-circle dot active" />
-                          <Icon icon="fa-circle dot" />
+                          <i class="fas fa-circle dot active"></i>
+                          <i class="fas fa-circle dot active"></i>
+                          <i class="fas fa-circle dot active"></i>
+                          <i class="fas fa-circle dot active"></i>
+                          <i class="fas fa-circle dot"></i>
                         </span>
                       </div>
                       <div class="flex-table-cell cell-end" data-th="Actions">
                         <a
                           class="button h-button has-dot dark-outlined is-pushed-mobile"
-                          >Purchase <Icon icon="fa-circle dot" /> $22</a
+                          >Purchase <i class="fas fa-circle dot"></i> $22</a
                         >
                       </div>
                     </div>
@@ -802,17 +802,17 @@ useTitle('List Flex 3 - Admin - Vuero')
                       </div>
                       <div class="flex-table-cell" data-th="Difficulty">
                         <span class="dot-levels">
-                          <Icon icon="fa-circle dot active" />
-                          <Icon icon="fa-circle dot active" />
-                          <Icon icon="fa-circle dot active" />
-                          <Icon icon="fa-circle dot active" />
-                          <Icon icon="fa-circle dot active" />
+                          <i class="fas fa-circle dot active"></i>
+                          <i class="fas fa-circle dot active"></i>
+                          <i class="fas fa-circle dot active"></i>
+                          <i class="fas fa-circle dot active"></i>
+                          <i class="fas fa-circle dot active"></i>
                         </span>
                       </div>
                       <div class="flex-table-cell cell-end" data-th="Actions">
                         <a
                           class="button h-button has-dot dark-outlined is-pushed-mobile"
-                          >Purchase <Icon icon="fa-circle dot" /> $35</a
+                          >Purchase <i class="fas fa-circle dot"></i> $35</a
                         >
                       </div>
                     </div>
@@ -826,10 +826,10 @@ useTitle('List Flex 3 - Admin - Vuero')
                   data-filter-hide
                 >
                   <a class="pagination-previous has-chevron"
-                    ><Icon icon="chevron-left"
+                    ><Icon icon="feather:chevron-left"
                   /></a>
                   <a class="pagination-next has-chevron"
-                    ><Icon icon="chevron-right"
+                    ><Icon icon="feather:chevron-right"
                   /></a>
                   <ul class="pagination-list">
                     <li>

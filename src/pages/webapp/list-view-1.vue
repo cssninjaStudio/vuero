@@ -49,7 +49,7 @@ useTitle('List View 1 - WebApp - Vuero')
             <div class="buttons">
               <button class="button h-button is-primary is-elevated">
                 <span class="icon">
-                  <Icon icon="fa-check" />
+                  <i class="fas fa-check"></i>
                 </span>
                 <span>Approve</span>
               </button>

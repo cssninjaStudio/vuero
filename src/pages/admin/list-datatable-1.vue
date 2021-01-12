@@ -57,7 +57,7 @@ useTitle('List Datatable 1 - Admin - Vuero')
               <p class="control">
                 <button class="button h-button">
                   <span class="icon is-small">
-                    <Icon icon="fa-check" />
+                    <i class="fas fa-check"></i>
                   </span>
                   <span>Promote</span>
                 </button>
@@ -65,7 +65,7 @@ useTitle('List Datatable 1 - Admin - Vuero')
               <p class="control">
                 <button class="button h-button">
                   <span class="icon is-small">
-                    <Icon icon="fa-times" />
+                    <i class="fas fa-times"></i>
                   </span>
                   <span>Delete</span>
                 </button>
@@ -73,7 +73,7 @@ useTitle('List Datatable 1 - Admin - Vuero')
               <p class="control">
                 <button class="button h-button">
                   <span class="icon is-small">
-                    <Icon icon="fa-arrow-right" />
+                    <i class="fas fa-arrow-right"></i>
                   </span>
                   <span>Transfer</span>
                 </button>
@@ -83,7 +83,7 @@ useTitle('List Datatable 1 - Admin - Vuero')
             <div class="buttons">
               <button class="button h-button is-primary is-elevated">
                 <span class="icon">
-                  <Icon icon="fa-plus" />
+                  <i class="fas fa-plus"></i>
                 </span>
                 <span>Add User</span>
               </button>
