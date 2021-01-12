@@ -1,5 +1,13 @@
+<script setup lang="ts">
+import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
+</script>
+
 <template>
-  <div id="elements-sidebar" class="sidebar-panel is-generic">
+  <div
+    id="elements-sidebar"
+    :class="[activeSidebar === 'elements' && 'is-active']"
+    class="sidebar-panel is-generic"
+  >
     <div class="subpanel-header">
       <h3 class="no-mb">Elements</h3>
       <div class="panel-close">

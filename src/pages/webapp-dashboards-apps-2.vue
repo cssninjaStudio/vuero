@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { useTitle } from '@vueuse/core'
 
+import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
+
 useTitle('Dashboards Apps 2 - WebApp - Vuero')
 </script>
 
@@ -12,6 +14,7 @@ useTitle('Dashboards Apps 2 - WebApp - Vuero')
     <div
       id="app-apex-charts"
       class="view-wrapper is-webapp"
+      :class="[activeSidebar !== 'none' && 'is-pushed-full']"
       data-page-title="Food Delivery"
       data-naver-offset="150"
       data-menu-item="#dashboards-navbar-menu"

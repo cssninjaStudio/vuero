@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { useTitle } from '@vueuse/core'
 
+import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
+
 useTitle('Dashboards Widgets Creative - WebApp - Vuero')
 </script>
 
@@ -12,6 +14,7 @@ useTitle('Dashboards Widgets Creative - WebApp - Vuero')
     <div
       id="app-widgets"
       class="view-wrapper is-webapp"
+      :class="[activeSidebar !== 'none' && 'is-pushed-full']"
       data-page-title="Widgets"
       data-naver-offset="150"
       data-menu-item="#dashboards-navbar-menu"

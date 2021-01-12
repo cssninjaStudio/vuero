@@ -1,7 +1,8 @@
 <script setup lang="ts">
-import { ref, reactive } from 'vue'
+import { ref, reactive, onMounted } from 'vue'
 import { useTitle } from '@vueuse/core'
 
+import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
 import useDropdown from '/@src/composition/use/useDropdown'
 
 const {
@@ -100,6 +101,10 @@ const {
   isOpen: isOpen16,
 } = useDropdown()
 
+onMounted(() => {
+  activeSidebar.value = 'components'
+})
+
 useTitle('Components - Dropdown - Vuero')
 </script>
 
@@ -112,7 +117,7 @@ useTitle('Components - Dropdown - Vuero')
     <div
       id="huro-demo"
       class="view-wrapper"
-      data-sidebar-open
+      :class="[activeSidebar !== 'none' && 'is-pushed-full']"
       data-naver-offset="342"
       data-menu-item="#components-sidebar-menu"
       data-mobile-item="#components-sidebar-menu-mobile"
@@ -123,10 +128,13 @@ useTitle('Components - Dropdown - Vuero')
             <!-- Sidebar Trigger -->
             <div
               class="huro-hamburger nav-trigger push-resize"
-              data-sidebar="components-sidebar"
+              @click="activeSidebar = 'components'"
             >
               <span class="menu-toggle has-chevron">
-                <span class="icon-box-toggle">
+                <span
+                  :class="[activeSidebar !== 'none' && 'active']"
+                  class="icon-box-toggle"
+                >
                   <span class="rotate">
                     <i class="icon-line-top"></i>
                     <i class="icon-line-center"></i>

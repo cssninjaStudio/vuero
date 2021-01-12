@@ -1,13 +1,23 @@
+<script setup lang="ts">
+import {
+  activeSidebar,
+  toggleSidebar,
+} from '/@src/composition/state/ui/activeSidebarState'
+</script>
+
 <template>
   <div class="collapsed-messaging">
     <div class="inner">
       <div class="collapsed-menu">
         <div
           class="huro-hamburger nav-trigger push-resize messages-push"
-          data-sidebar="messages-sidebar"
+          @click="toggleSidebar('messages')"
         >
           <span class="menu-toggle has-chevron">
-            <span class="icon-box-toggle">
+            <span
+              :class="[activeSidebar !== 'none' && 'active']"
+              class="icon-box-toggle"
+            >
               <span class="rotate">
                 <i class="icon-line-top"></i>
                 <i class="icon-line-center"></i>

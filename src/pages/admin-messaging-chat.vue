@@ -1,13 +1,18 @@
 <script setup lang="ts">
 import { useTitle } from '@vueuse/core'
+import { onMounted } from 'vue'
 
+import {
+  activeSidebar,
+  toggleSidebar,
+} from '/@src/composition/state/ui/activeSidebarState'
 import useDropdown from '/@src/composition/use/useDropdown'
 
-const {
-  dropdownElement,
-  isOpen,
-  open,
-} = useDropdown()
+const { dropdownElement, isOpen, open } = useDropdown()
+
+onMounted(() => {
+  activeSidebar.value = 'messages'
+})
 
 useTitle('Messaging chat - Admin - Vuero')
 </script>
@@ -21,7 +26,7 @@ useTitle('Messaging chat - Admin - Vuero')
     <div
       id="huro-messaging"
       class="view-wrapper"
-      data-sidebar-open
+      :class="[activeSidebar !== 'none' && 'is-pushed-full']"
       data-naver-offset="406"
       data-menu-item="#sidebar-bubble"
       data-mobile-item="#mobile-bubble"
@@ -31,10 +36,13 @@ useTitle('Messaging chat - Admin - Vuero')
           <div class="page-title has-text-centered is-hidden">
             <div
               class="huro-hamburger nav-trigger push-resize"
-              data-sidebar="messages-sidebar"
+              @click="toggleSidebar('messages')"
             >
               <span class="menu-toggle has-chevron">
-                <span class="icon-box-toggle">
+                <span
+                  :class="[activeSidebar !== 'none' && 'active']"
+                  class="icon-box-toggle"
+                >
                   <span class="rotate">
                     <i class="icon-line-top"></i>
                     <i class="icon-line-center"></i>

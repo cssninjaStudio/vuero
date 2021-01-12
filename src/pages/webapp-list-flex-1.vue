@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { useTitle } from '@vueuse/core'
 
+import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
+
 useTitle('List Flex 1 - WebApp - Vuero')
 </script>
 
@@ -12,6 +14,7 @@ useTitle('List Flex 1 - WebApp - Vuero')
     <div
       id="app-project"
       class="view-wrapper is-webapp"
+      :class="[activeSidebar !== 'none' && 'is-pushed-full']"
       data-page-title="Flex Lists"
       data-naver-offset="214"
       data-menu-item="#layouts-navbar-menu"

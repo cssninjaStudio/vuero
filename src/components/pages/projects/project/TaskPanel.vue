@@ -4,9 +4,9 @@ import { activePanel } from '/@src/composition/state/ui/activePanelState'
 
 <template>
   <div
-    v-if="activePanel === 'task'"
     id="task-panel"
-    class="right-panel-wrapper is-task is-active"
+    :class="[activePanel === 'task' && 'is-active']"
+    class="right-panel-wrapper is-task"
   >
     <div class="panel-overlay" @click="activePanel = 'none'"></div>
 

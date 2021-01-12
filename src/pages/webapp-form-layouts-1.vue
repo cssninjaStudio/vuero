@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { useTitle } from '@vueuse/core'
 
+import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
+
 useTitle('Form Layouts 1 - WebApp - Vuero')
 </script>
 
@@ -12,6 +14,7 @@ useTitle('Form Layouts 1 - WebApp - Vuero')
     <div
       id="app-onboarding"
       class="view-wrapper is-webapp"
+      :class="[activeSidebar !== 'none' && 'is-pushed-full']"
       data-page-title="Form Layouts"
       data-naver-offset="150"
       data-menu-item="#dashboards-navbar-menu"

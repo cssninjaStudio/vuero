@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { useTitle } from '@vueuse/core'
 
+import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
+
 useTitle('Blank Page 2 - WebApp - Vuero')
 </script>
 
@@ -12,6 +14,7 @@ useTitle('Blank Page 2 - WebApp - Vuero')
     <div
       id="app-onboarding"
       class="view-wrapper is-webapp"
+      :class="[activeSidebar !== 'none' && 'is-pushed-full']"
       data-page-title="Blank Template"
       data-naver-offset="214"
       data-menu-item="#layouts-navbar-menu"

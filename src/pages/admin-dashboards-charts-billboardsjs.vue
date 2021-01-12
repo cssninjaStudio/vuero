@@ -1,6 +1,11 @@
 <script setup lang="ts">
 import { useTitle } from '@vueuse/core'
 
+import {
+  activeSidebar,
+  toggleSidebar,
+} from '/@src/composition/state/ui/activeSidebarState'
+
 useTitle('Dashboard Charts BillboardJS - Admin - Vuero')
 </script>
 
@@ -13,6 +18,7 @@ useTitle('Dashboard Charts BillboardJS - Admin - Vuero')
     <div
       id="app-home"
       class="view-wrapper"
+      :class="[activeSidebar !== 'none' && 'is-pushed-full']"
       data-naver-offset="150"
       data-menu-item="#home-sidebar-menu"
       data-mobile-item="#home-sidebar-menu-mobile"
@@ -23,10 +29,13 @@ useTitle('Dashboard Charts BillboardJS - Admin - Vuero')
             <!-- Sidebar Trigger -->
             <div
               class="huro-hamburger nav-trigger push-resize"
-              data-sidebar="home-sidebar"
+              @click="toggleSidebar('home')"
             >
               <span class="menu-toggle has-chevron">
-                <span class="icon-box-toggle">
+                <span
+                  :class="[activeSidebar !== 'none' && 'active']"
+                  class="icon-box-toggle"
+                >
                   <span class="rotate">
                     <i class="icon-line-top"></i>
                     <i class="icon-line-center"></i>

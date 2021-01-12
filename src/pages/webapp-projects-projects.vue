@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { useTitle } from '@vueuse/core'
 
+import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
+
 useTitle('Projects Projects 1 - WebApp - Vuero')
 </script>
 
@@ -12,6 +14,7 @@ useTitle('Projects Projects 1 - WebApp - Vuero')
     <div
       id="app-projects"
       class="view-wrapper is-webapp"
+      :class="[activeSidebar !== 'none' && 'is-pushed-full']"
       data-page-title="Projects"
       data-naver-offset="214"
       data-menu-item="#layouts-navbar-menu"

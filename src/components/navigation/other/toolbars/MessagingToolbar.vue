@@ -3,11 +3,7 @@ import { isDark } from '/@src/composition/state/ui/darkModeState.ts'
 import { activePanel } from '/@src/composition/state/ui/activePanelState'
 import useDropdown from '/@src/composition/use/useDropdown'
 
-const {
-  dropdownElement,
-  isOpen,
-  open,
-} = useDropdown()
+const { dropdownElement, isOpen, open } = useDropdown()
 </script>
 
 <template>

@@ -1,5 +1,15 @@
 <script setup lang="ts">
 import { useTitle } from '@vueuse/core'
+import { onMounted } from 'vue'
+
+import {
+  activeSidebar,
+  toggleSidebar,
+} from '/@src/composition/state/ui/activeSidebarState'
+
+onMounted(() => {
+  activeSidebar.value = 'elements'
+})
 
 useTitle('Elements - Cards Bulma - Vuero')
 </script>
@@ -13,7 +23,7 @@ useTitle('Elements - Cards Bulma - Vuero')
     <div
       id="huro-demo"
       class="view-wrapper"
-      data-sidebar-open
+      :class="[activeSidebar !== 'none' && 'is-pushed-full']"
       data-naver-offset="278"
       data-menu-item="#elements-sidebar-menu"
       data-mobile-item="#elements-sidebar-menu-mobile"
@@ -24,10 +34,13 @@ useTitle('Elements - Cards Bulma - Vuero')
             <!-- Sidebar Trigger -->
             <div
               class="huro-hamburger nav-trigger push-resize"
-              data-sidebar="elements-sidebar"
+              @click="toggleSidebar('elements')"
             >
               <span class="menu-toggle has-chevron">
-                <span class="icon-box-toggle">
+                <span
+                  :class="[activeSidebar !== 'none' && 'active']"
+                  class="icon-box-toggle"
+                >
                   <span class="rotate">
                     <i class="icon-line-top"></i>
                     <i class="icon-line-center"></i>

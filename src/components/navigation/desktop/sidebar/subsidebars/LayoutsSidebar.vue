@@ -1,5 +1,13 @@
+<script setup lang="ts">
+import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
+</script>
+
 <template>
-  <div id="layouts-sidebar" class="sidebar-panel is-generic">
+  <div
+    id="layouts-sidebar"
+    :class="[activeSidebar === 'layouts' && 'is-active']"
+    class="sidebar-panel is-generic"
+  >
     <div class="subpanel-header">
       <ProjectsQuickDropdown />
 

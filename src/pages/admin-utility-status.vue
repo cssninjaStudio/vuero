@@ -10,9 +10,9 @@ useTitle('Utility Status - Admin - Vuero')
     <div class="status-page-wrapper">
       <!--Status header-->
       <div class="head">
-        <a class="logo" href="/">
+        <RouterLink :to="{ name: 'index' }" class="logo">
           <img src="/@images/logos/logo/logo.svg" alt="" />
-        </a>
+        </RouterLink>
         <a class="action-link" onclick="goBack()">Take me Back</a>
       </div>
 

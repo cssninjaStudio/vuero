@@ -3,6 +3,7 @@ import { useTitle } from '@vueuse/core'
 import { ref } from 'vue'
 
 import { activePanel } from '/@src/composition/state/ui/activePanelState'
+import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
 
 const activeTab = ref<'project' | 'team' | 'tasks'>('project')
 
@@ -17,6 +18,7 @@ useTitle('Projects Project - WebApp - Vuero')
     <div
       id="app-project"
       class="view-wrapper is-webapp"
+      :class="[activeSidebar !== 'none' && 'is-pushed-full']"
       data-page-title="Project"
       data-naver-offset="214"
       data-menu-item="#layouts-navbar-menu"

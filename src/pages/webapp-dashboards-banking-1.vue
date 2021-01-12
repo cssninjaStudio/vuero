@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { useTitle } from '@vueuse/core'
 
+import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
+
 useTitle('Dashboards Banking 1 - WebApp - Vuero')
 </script>
 
@@ -11,6 +13,7 @@ useTitle('Dashboards Banking 1 - WebApp - Vuero')
     <!-- Content Wrapper -->
     <div
       class="view-wrapper is-webapp"
+      :class="[activeSidebar !== 'none' && 'is-pushed-full']"
       data-page-title="Dashboard"
       data-naver-offset="150"
       data-menu-item="#dashboards-navbar-menu"

@@ -1,6 +1,11 @@
 <script setup lang="ts">
 import { useTitle } from '@vueuse/core'
 
+import {
+  activeSidebar,
+  toggleSidebar,
+} from '/@src/composition/state/ui/activeSidebarState'
+
 useTitle('Kanban Board - Admin - Vuero')
 </script>
 
@@ -13,6 +18,7 @@ useTitle('Kanban Board - Admin - Vuero')
     <div
       id="project-board"
       class="view-wrapper"
+      :class="[activeSidebar !== 'none' && 'is-pushed-full']"
       data-naver-offset="214"
       data-menu-item="#layouts-sidebar-menu"
       data-mobile-item="#mobile-check"
@@ -23,10 +29,13 @@ useTitle('Kanban Board - Admin - Vuero')
             <!-- Sidebar Trigger -->
             <div
               class="huro-hamburger nav-trigger push-resize"
-              data-sidebar="layouts-sidebar"
+              @click="toggleSidebar('layouts')"
             >
               <span class="menu-toggle has-chevron">
-                <span class="icon-box-toggle">
+                <span
+                  :class="[activeSidebar !== 'none' && 'active']"
+                  class="icon-box-toggle"
+                >
                   <span class="rotate">
                     <i class="icon-line-top"></i>
                     <i class="icon-line-center"></i>

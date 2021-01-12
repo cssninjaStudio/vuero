@@ -2,6 +2,10 @@
 import { useTitle } from '@vueuse/core'
 
 import { activePanel } from '/@src/composition/state/ui/activePanelState'
+import {
+  activeSidebar,
+  toggleSidebar,
+} from '/@src/composition/state/ui/activeSidebarState'
 
 useTitle('Projects project - Admin - Vuero')
 </script>
@@ -15,6 +19,7 @@ useTitle('Projects project - Admin - Vuero')
     <div
       id="app-project"
       class="view-wrapper"
+      :class="[activeSidebar !== 'none' && 'is-pushed-full']"
       data-naver-offset="214"
       data-menu-item="#layouts-sidebar-menu"
       data-mobile-item="#home-sidebar-menu-mobile"
@@ -25,10 +30,13 @@ useTitle('Projects project - Admin - Vuero')
             <!-- Sidebar Trigger -->
             <div
               class="huro-hamburger nav-trigger push-resize"
-              data-sidebar="layouts-sidebar"
+              @click="toggleSidebar('layouts')"
             >
               <span class="menu-toggle has-chevron">
-                <span class="icon-box-toggle">
+                <span
+                  :class="[activeSidebar !== 'none' && 'active']"
+                  class="icon-box-toggle"
+                >
                   <span class="rotate">
                     <i class="icon-line-top"></i>
                     <i class="icon-line-center"></i>

@@ -30,7 +30,7 @@ useTitle('Auth Login 1 - Vuero')
           </div>
         </div>
         <div class="column is-4 is-relative">
-          <a class="top-logo" href="/">
+          <RouterLink :to="{ name: 'index' }" class="top-logo">
             <img
               class="light-image"
               src="/@images/logos/logo/logo.svg"
@@ -41,7 +41,7 @@ useTitle('Auth Login 1 - Vuero')
               src="/@images/logos/logo/logo-light.svg"
               alt=""
             />
-          </a>
+          </RouterLink>
           <label class="dark-mode ml-auto">
             <input
               type="checkbox"
