@@ -2,6 +2,19 @@
 import { useTitle } from '@vueuse/core'
 
 import { isDark } from '/@src/composition/state/ui/darkModeState.ts'
+import useDropdown from '/@src/composition/use/useDropdown'
+
+const {
+  dropdownElement: dropdownElement1,
+  open: open1,
+  isOpen: isOpen1,
+} = useDropdown()
+
+const {
+  dropdownElement: dropdownElement2,
+  open: open2,
+  isOpen: isOpen2,
+} = useDropdown()
 
 useTitle('Dashboard Apps 2 - Admin - Vuero')
 </script>
@@ -42,9 +55,13 @@ useTitle('Dashboard Apps 2 - Admin - Vuero')
                 <span></span>
               </label>
             </div>
-            <div class="dropdown inbox-dropdown dropdown-trigger is-right">
+            <div
+              ref="dropdownElement1"
+              :class="[isOpen1 && 'is-active']"
+              class="dropdown inbox-dropdown dropdown-trigger is-right"
+            >
               <div>
-                <button class="button">
+                <button class="button" @click="open1">
                   <span class="icon is-small">
                     <Icon icon="feather:more-vertical" />
                   </span>
@@ -244,9 +261,13 @@ useTitle('Dashboard Apps 2 - Admin - Vuero')
                 </div>
               </div>
 
-              <div class="dropdown inbox-dropdown dropdown-trigger is-right">
+              <div
+                ref="dropdownElement2"
+                :class="[isOpen2 && 'is-active']"
+                class="dropdown inbox-dropdown dropdown-trigger is-right"
+              >
                 <div>
-                  <button class="button">
+                  <button class="button" @click="open2">
                     <span class="icon is-small">
                       <Icon icon="feather:more-vertical" />
                     </span>

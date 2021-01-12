@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { useTitle } from '@vueuse/core'
 
+import { activePanel } from '/@src/composition/state/ui/activePanelState'
+
 useTitle('Projects project - Admin - Vuero')
 </script>
 
@@ -724,11 +726,8 @@ useTitle('Projects project - Admin - Vuero')
                     <div class="columns is-multiline">
                       <!--Task-->
                       <div class="column is-4">
-                        <div
-                          class="task-card right-panel-trigger"
-                          data-panel="task-panel"
-                        >
-                          <a href="#" class="title-wrap">
+                        <div class="task-card right-panel-trigger">
+                          <a class="title-wrap" @click="activePanel = 'task'">
                             <h3>
                               Build a desktop and mobile landing page wireframe
                             </h3>
@@ -789,11 +788,8 @@ useTitle('Projects project - Admin - Vuero')
                       </div>
                       <!--Task-->
                       <div class="column is-4">
-                        <div
-                          class="task-card right-panel-trigger"
-                          data-panel="task-panel"
-                        >
-                          <a href="#" class="title-wrap">
+                        <div class="task-card right-panel-trigger">
+                          <a class="title-wrap" @click="activePanel = 'task'">
                             <h3>
                               Build a custom video player javascript library
                             </h3>
@@ -832,11 +828,8 @@ useTitle('Projects project - Admin - Vuero')
                       </div>
                       <!--Task-->
                       <div class="column is-4">
-                        <div
-                          class="task-card right-panel-trigger"
-                          data-panel="task-panel"
-                        >
-                          <a href="#" class="title-wrap">
+                        <div class="task-card right-panel-trigger">
+                          <a class="title-wrap" @click="activePanel = 'task'">
                             <h3>Develop a JWT authentication controller</h3>
                             <span>65%</span>
                           </a>
@@ -873,11 +866,8 @@ useTitle('Projects project - Admin - Vuero')
                       </div>
                       <!--Task-->
                       <div class="column is-4">
-                        <div
-                          class="task-card right-panel-trigger"
-                          data-panel="task-panel"
-                        >
-                          <a href="#" class="title-wrap">
+                        <div class="task-card right-panel-trigger">
+                          <a class="title-wrap" @click="activePanel = 'task'">
                             <h3>
                               Design custom illustrations for landing page
                             </h3>
@@ -927,11 +917,8 @@ useTitle('Projects project - Admin - Vuero')
                       </div>
                       <!--Task-->
                       <div class="column is-4">
-                        <div
-                          class="task-card right-panel-trigger"
-                          data-panel="task-panel"
-                        >
-                          <a href="#" class="title-wrap">
+                        <div class="task-card right-panel-trigger">
+                          <a class="title-wrap" @click="activePanel = 'task'">
                             <h3>Implement sign up with social media</h3>
                             <span>59%</span>
                           </a>
@@ -968,11 +955,8 @@ useTitle('Projects project - Admin - Vuero')
                       </div>
                       <!--Task-->
                       <div class="column is-4">
-                        <div
-                          class="task-card right-panel-trigger"
-                          data-panel="task-panel"
-                        >
-                          <a href="#" class="title-wrap">
+                        <div class="task-card right-panel-trigger">
+                          <a class="title-wrap" @click="activePanel = 'task'">
                             <h3>Implement user management API controller</h3>
                             <span>78%</span>
                           </a>
@@ -1020,11 +1004,8 @@ useTitle('Projects project - Admin - Vuero')
                       </div>
                       <!--Task-->
                       <div class="column is-4">
-                        <div
-                          class="task-card right-panel-trigger"
-                          data-panel="task-panel"
-                        >
-                          <a href="#" class="title-wrap">
+                        <div class="task-card right-panel-trigger">
+                          <a class="title-wrap" @click="activePanel = 'task'">
                             <h3>Implement job management API controller</h3>
                             <span>36%</span>
                           </a>
@@ -1072,11 +1053,8 @@ useTitle('Projects project - Admin - Vuero')
                       </div>
                       <!--Task-->
                       <div class="column is-4">
-                        <div
-                          class="task-card right-panel-trigger"
-                          data-panel="task-panel"
-                        >
-                          <a href="#" class="title-wrap">
+                        <div class="task-card right-panel-trigger">
+                          <a class="title-wrap" @click="activePanel = 'task'">
                             <h3>Review and refactor server side code</h3>
                             <span>49%</span>
                           </a>

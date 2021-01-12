@@ -9,8 +9,8 @@
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Personal <i data-feather="chevron-right"></i
-            ></a>
+              >Personal <Icon icon="chevron-right"
+            /></a>
           </div>
           <ul>
             <li>
@@ -45,8 +45,8 @@
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Finance <i data-feather="chevron-right"></i
-            ></a>
+              >Finance <Icon icon="chevron-right"
+            /></a>
           </div>
           <ul>
             <li>
@@ -81,8 +81,8 @@
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Banking <i data-feather="chevron-right"></i
-            ></a>
+              >Banking <Icon icon="chevron-right"
+            /></a>
           </div>
           <ul>
             <li>
@@ -117,8 +117,8 @@
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Business <i data-feather="chevron-right"></i
-            ></a>
+              >Business <Icon icon="chevron-right"
+            /></a>
           </div>
           <ul>
             <li>
@@ -153,8 +153,8 @@
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Lifestyle <i data-feather="chevron-right"></i
-            ></a>
+              >Lifestyle <Icon icon="chevron-right"
+            /></a>
           </div>
           <ul>
             <li>
@@ -198,8 +198,8 @@
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Ecommerce <i data-feather="chevron-right"></i
-            ></a>
+              >Ecommerce <Icon icon="chevron-right"
+            /></a>
           </div>
           <ul>
             <li>
@@ -216,8 +216,8 @@
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Apps <i data-feather="chevron-right"></i
-            ></a>
+              >Apps <Icon icon="chevron-right"
+            /></a>
           </div>
           <ul>
             <li>
@@ -266,8 +266,8 @@
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Charts <i data-feather="chevron-right"></i
-            ></a>
+              >Charts <Icon icon="chevron-right"
+            /></a>
           </div>
           <ul>
             <li>
@@ -293,8 +293,8 @@
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Widgets <i data-feather="chevron-right"></i
-            ></a>
+              >Widgets <Icon icon="chevron-right"
+            /></a>
           </div>
           <ul>
             <li>
@@ -338,8 +338,8 @@
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Form Layouts <i data-feather="chevron-right"></i
-            ></a>
+              >Form Layouts <Icon icon="chevron-right"
+            /></a>
           </div>
           <ul>
             <li>
@@ -383,8 +383,8 @@
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Starters <i data-feather="chevron-right"></i
-            ></a>
+              >Starters <Icon icon="chevron-right"
+            /></a>
           </div>
           <ul>
             <li>

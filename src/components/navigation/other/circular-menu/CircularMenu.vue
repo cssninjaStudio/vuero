@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { isDark } from '/@src/composition/state/ui/darkModeState.ts'
+import { activePanel } from '/@src/composition/state/ui/activePanelState'
 </script>
 
 <template>
@@ -26,7 +27,7 @@ import { isDark } from '/@src/composition/state/ui/darkModeState.ts'
       </div>
       <a
         class="menu-item is-flex right-panel-trigger"
-        data-panel="languages-panel"
+        @click="activePanel = 'languages'"
       >
         <img src="/@images/icons/flags/united-states-of-america.svg" alt="" />
       </a>

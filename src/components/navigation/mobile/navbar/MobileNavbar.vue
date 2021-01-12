@@ -1,3 +1,12 @@
+<script setup lang="ts">
+import useDropdown from '/@src/composition/use/useDropdown'
+const {
+  dropdownElement,
+  isOpen,
+  open,
+} = useDropdown()
+</script>
+
 <template>
   <nav
     class="navbar mobile-navbar no-shadow is-hidden-desktop is-hidden-tablet"
@@ -28,9 +37,11 @@
           <NotificationsWidgetMobile />
 
           <div
+            ref="dropdownElement"
+            :class="[isOpen && 'is-active']"
             class="dropdown is-right is-spaced dropdown-trigger user-dropdown"
           >
-            <div class="is-trigger" aria-haspopup="true">
+            <div class="is-trigger" aria-haspopup="true" @click="open">
               <div class="profile-avatar">
                 <img
                   class="avatar"

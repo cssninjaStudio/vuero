@@ -48,8 +48,8 @@ useTitle('Dashboards Finance 1 - WebApp - Vuero')
                         </div>
                         <div class="tile-foot">
                           <span class="text-h-green"
-                            >+6.4% <i data-feather="trending-up"></i
-                          ></span>
+                            >+6.4% <Icon icon="trending-up"
+                          /></span>
                           <span>since last month</span>
                         </div>
                       </div>
@@ -68,8 +68,8 @@ useTitle('Dashboards Finance 1 - WebApp - Vuero')
                         </div>
                         <div class="tile-foot">
                           <span class="text-h-red"
-                            >-2.1% <i data-feather="trending-down"></i
-                          ></span>
+                            >-2.1% <Icon icon="trending-down"
+                          /></span>
                           <span>going down</span>
                         </div>
                       </div>
@@ -88,8 +88,8 @@ useTitle('Dashboards Finance 1 - WebApp - Vuero')
                         </div>
                         <div class="tile-foot">
                           <span class="text-h-green"
-                            >+4.2% <i data-feather="trending-up"></i
-                          ></span>
+                            >+4.2% <Icon icon="trending-up"
+                          /></span>
                           <span>going up</span>
                         </div>
                       </div>
@@ -155,8 +155,8 @@ useTitle('Dashboards Finance 1 - WebApp - Vuero')
                           </progress>
                           <div class="progress-foot">
                             <span class="text-h-green"
-                              >+6.4% <i data-feather="trending-up"></i
-                            ></span>
+                              >+6.4% <Icon icon="trending-up"
+                            /></span>
                             <span>since last month</span>
                           </div>
 

@@ -720,11 +720,11 @@ useTitle('List View 2 - Admin - Vuero')
                   data-filter-hide
                 >
                   <a class="pagination-previous has-chevron"
-                    ><i data-feather="chevron-left"></i
-                  ></a>
+                    ><Icon icon="chevron-left"
+                  /></a>
                   <a class="pagination-next has-chevron"
-                    ><i data-feather="chevron-right"></i
-                  ></a>
+                    ><Icon icon="chevron-right"
+                  /></a>
                   <ul class="pagination-list">
                     <li>
                       <a class="pagination-link" aria-label="Goto page 1">1</a>

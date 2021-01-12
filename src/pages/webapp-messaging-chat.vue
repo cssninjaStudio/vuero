@@ -1,5 +1,18 @@
 <script setup lang="ts">
 import { useTitle } from '@vueuse/core'
+import useDropdown from '/@src/composition/use/useDropdown'
+
+const {
+  dropdownElement: dropdownElement1,
+  open: open1,
+  isOpen: isOpen1,
+} = useDropdown()
+
+const {
+  dropdownElement: dropdownElement2,
+  open: open2,
+  isOpen: isOpen2,
+} = useDropdown()
 
 useTitle('Messaging chat - WebApp - Vuero')
 </script>
@@ -42,8 +55,12 @@ useTitle('Messaging chat - WebApp - Vuero')
           <Toolbar />
 
           <!--User Menu-->
-          <div class="dropdown is-right dropdown-trigger user-dropdown">
-            <div class="is-trigger" aria-haspopup="true">
+          <div
+            ref="dropdownElement1"
+            :class="[isOpen1 && 'is-active']"
+            class="dropdown is-right dropdown-trigger user-dropdown"
+          >
+            <div class="is-trigger" aria-haspopup="true" @click="open1">
               <div class="profile-avatar">
                 <img
                   class="avatar"
@@ -130,9 +147,13 @@ useTitle('Messaging chat - WebApp - Vuero')
 
           <div class="chat-area-footer">
             <div class="add-content">
-              <div class="dropdown dropdown-trigger is-up">
+              <div
+                ref="dropdownElement2"
+                :class="[isOpen2 && 'is-active']"
+                class="dropdown dropdown-trigger is-up"
+              >
                 <div>
-                  <div class="button" aria-haspopup="true">
+                  <div class="button" aria-haspopup="true" @click="open2">
                     <Icon icon="feather:plus" />
                   </div>
                 </div>

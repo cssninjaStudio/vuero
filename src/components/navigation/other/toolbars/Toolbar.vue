@@ -1,5 +1,13 @@
 <script setup lang="ts">
 import { isDark } from '/@src/composition/state/ui/darkModeState.ts'
+import { activePanel } from '/@src/composition/state/ui/activePanelState'
+import useDropdown from '/@src/composition/use/useDropdown'
+
+const {
+  dropdownElement,
+  isOpen,
+  open,
+} = useDropdown()
 </script>
 
 <template>
@@ -19,13 +27,20 @@ import { isDark } from '/@src/composition/state/ui/darkModeState.ts'
       </label>
     </div>
 
-    <a class="toolbar-link right-panel-trigger" data-panel="languages-panel">
+    <a
+      class="toolbar-link right-panel-trigger"
+      @click="activePanel = 'languages'"
+    >
       <img src="/@images/icons/flags/united-states-of-america.svg" alt="" />
     </a>
 
     <div class="toolbar-notifications is-hidden-mobile">
-      <div class="dropdown is-spaced is-dots is-right dropdown-trigger">
-        <div class="is-trigger" aria-haspopup="true">
+      <div
+        ref="dropdownElement"
+        :class="[isOpen && 'is-active']"
+        class="dropdown is-spaced is-dots is-right dropdown-trigger"
+      >
+        <div class="is-trigger" aria-haspopup="true" @click="open">
           <Icon icon="feather:bell" />
           <span class="new-indicator pulsate"></span>
         </div>
@@ -134,7 +149,10 @@ import { isDark } from '/@src/composition/state/ui/darkModeState.ts'
       </div>
     </div>
 
-    <a class="toolbar-link right-panel-trigger" data-panel="activity-panel">
+    <a
+      class="toolbar-link right-panel-trigger"
+      @click="activePanel = 'activity'"
+    >
       <Icon icon="feather:grid" />
     </a>
   </div>

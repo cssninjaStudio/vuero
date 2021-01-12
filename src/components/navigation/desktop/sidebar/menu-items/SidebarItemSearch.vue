@@ -1,13 +1,17 @@
+<script setup lang="ts">
+import { activePanel } from '/@src/composition/state/ui/activePanelState'
+</script>
+
 <template>
-  <li class="right-panel-trigger" data-panel="search-panel">
-    <a id="open-search" href="javascript:void(0);"
-      ><i class="sidebar-svg" data-feather="search"></i
-    ></a>
+  <li class="right-panel-trigger">
+    <a id="open-search" @click="activePanel = 'search'"
+      ><Icon icon="search" class="sidebar-svg"
+    /></a>
     <a
       id="close-search"
-      href="javascript:void(0);"
       class="is-hidden is-inactive"
-      ><i class="sidebar-svg" data-feather="x"></i
-    ></a>
+      @click="activePanel = 'none'"
+      ><Icon icon="x" class="sidebar-svg"
+    /></a>
   </li>
 </template>

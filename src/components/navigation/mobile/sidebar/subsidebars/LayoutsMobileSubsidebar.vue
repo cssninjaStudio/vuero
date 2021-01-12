@@ -9,8 +9,8 @@
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Lists <i data-feather="chevron-right"></i
-            ></a>
+              >Lists <Icon icon="chevron-right"
+            /></a>
           </div>
           <ul>
             <li>
@@ -54,8 +54,8 @@
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Flex Lists <i data-feather="chevron-right"></i
-            ></a>
+              >Flex Lists <Icon icon="chevron-right"
+            /></a>
           </div>
           <ul>
             <li>
@@ -90,8 +90,8 @@
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Datatable <i data-feather="chevron-right"></i
-            ></a>
+              >Datatable <Icon icon="chevron-right"
+            /></a>
           </div>
           <ul>
             <li>
@@ -136,8 +136,8 @@
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Card Grid <i data-feather="chevron-right"></i
-            ></a>
+              >Card Grid <Icon icon="chevron-right"
+            /></a>
           </div>
           <ul>
             <li>
@@ -181,8 +181,8 @@
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Tile Grid <i data-feather="chevron-right"></i
-            ></a>
+              >Tile Grid <Icon icon="chevron-right"
+            /></a>
           </div>
           <ul>
             <li>
@@ -217,8 +217,8 @@
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >User Grid <i data-feather="chevron-right"></i
-            ></a>
+              >User Grid <Icon icon="chevron-right"
+            /></a>
           </div>
           <ul>
             <li>
@@ -263,8 +263,8 @@
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Personal <i data-feather="chevron-right"></i
-            ></a>
+              >Personal <Icon icon="chevron-right"
+            /></a>
           </div>
           <ul>
             <li>
@@ -308,8 +308,8 @@
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Pages <i data-feather="chevron-right"></i
-            ></a>
+              >Pages <Icon icon="chevron-right"
+            /></a>
           </div>
           <ul>
             <li>
@@ -371,8 +371,8 @@
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Subpages <i data-feather="chevron-right"></i
-            ></a>
+              >Subpages <Icon icon="chevron-right"
+            /></a>
           </div>
           <ul>
             <li>
@@ -413,8 +413,8 @@
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Projects <i data-feather="chevron-right"></i
-            ></a>
+              >Projects <Icon icon="chevron-right"
+            /></a>
           </div>
           <ul>
             <li>
@@ -473,8 +473,8 @@
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Utility <i data-feather="chevron-right"></i
-            ></a>
+              >Utility <Icon icon="chevron-right"
+            /></a>
           </div>
           <ul>
             <li>
@@ -518,8 +518,8 @@
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Onboarding <i data-feather="chevron-right"></i
-            ></a>
+              >Onboarding <Icon icon="chevron-right"
+            /></a>
           </div>
           <ul>
             <li>
@@ -572,8 +572,8 @@
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Error Pages <i data-feather="chevron-right"></i
-            ></a>
+              >Error Pages <Icon icon="chevron-right"
+            /></a>
           </div>
           <ul>
             <li>

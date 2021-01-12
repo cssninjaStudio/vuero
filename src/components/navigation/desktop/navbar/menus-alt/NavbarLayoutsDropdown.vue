@@ -1,10 +1,24 @@
+<script setup lang="ts">
+import useDropdown from '/@src/composition/use/useDropdown'
+const {
+  dropdownElement,
+  isOpen,
+  open,
+} = useDropdown()
+</script>
+
 <template>
-  <div class="dropdown is-modern is-spaced dropdown-trigger has-mega-dropdown">
+  <div
+    ref="dropdownElement"
+    :class="[isOpen && 'is-active']"
+    class="dropdown is-modern is-spaced dropdown-trigger has-mega-dropdown"
+  >
     <div class="is-trigger" aria-haspopup="true" aria-controls="dropdown-menu">
       <button
         class="button h-button is-rounded"
         aria-haspopup="true"
         aria-controls="dropdown-menu"
+        @click="open"
       >
         <span>Layouts</span>
         <span class="caret">

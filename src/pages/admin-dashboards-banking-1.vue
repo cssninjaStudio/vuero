@@ -387,8 +387,8 @@ useTitle('Dashboard Banking 1 - Admin - Vuero')
                           <div class="actions">
                             <span>See all Contacts</span>
                             <a class="is-dark-primary-hover"
-                              ><i data-feather="arrow-right"></i
-                            ></a>
+                              ><Icon icon="arrow-right"
+                            /></a>
                           </div>
                         </div>
 

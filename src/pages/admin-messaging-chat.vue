@@ -1,6 +1,14 @@
 <script setup lang="ts">
 import { useTitle } from '@vueuse/core'
 
+import useDropdown from '/@src/composition/use/useDropdown'
+
+const {
+  dropdownElement,
+  isOpen,
+  open,
+} = useDropdown()
+
 useTitle('Messaging chat - Admin - Vuero')
 </script>
 
@@ -270,9 +278,13 @@ useTitle('Messaging chat - Admin - Vuero')
             <div class="message-field-wrapper">
               <div class="control">
                 <div class="add-content">
-                  <div class="dropdown dropdown-trigger is-up">
+                  <div
+                    ref="dropdownElement"
+                    :class="[isOpen && 'is-active']"
+                    class="dropdown dropdown-trigger is-up"
+                  >
                     <div>
-                      <div class="button" aria-haspopup="true">
+                      <div class="button" aria-haspopup="true" @click="open">
                         <Icon icon="feather:plus" />
                       </div>
                     </div>

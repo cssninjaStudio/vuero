@@ -1,12 +1,25 @@
+<script setup lang="ts">
+import useDropdown from '/@src/composition/use/useDropdown'
+const {
+  dropdownElement,
+  isOpen,
+  open,
+} = useDropdown()
+</script>
+
 <template>
   <!--Compose panel-->
   <div class="compose-panel">
     <!-- Header -->
     <div class="header-area">
       <h2 class="panel-title">New Message</h2>
-      <div class="dropdown inbox-dropdown dropdown-trigger is-right">
+      <div
+        ref="dropdownElement"
+        :class="[isOpen && 'is-active']"
+        class="dropdown inbox-dropdown dropdown-trigger is-right"
+      >
         <div>
-          <button class="button">
+          <button class="button" @click="open">
             <span class="icon is-small">
               <i class="material-icons">keyboard_arrow_down</i>
             </span>

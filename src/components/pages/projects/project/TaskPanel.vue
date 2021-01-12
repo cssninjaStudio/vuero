@@ -1,11 +1,19 @@
+<script setup lang="ts">
+import { activePanel } from '/@src/composition/state/ui/activePanelState'
+</script>
+
 <template>
-  <div id="task-panel" class="right-panel-wrapper is-task">
-    <div class="panel-overlay"></div>
+  <div
+    v-if="activePanel === 'task'"
+    id="task-panel"
+    class="right-panel-wrapper is-task is-active"
+  >
+    <div class="panel-overlay" @click="activePanel = 'none'"></div>
 
     <div class="right-panel">
       <div class="right-panel-head">
         <h3>Task Details</h3>
-        <a class="close-panel">
+        <a class="close-panel" @click="activePanel = 'none'">
           <Icon icon="feather:chevron-right" />
         </a>
       </div>

@@ -1,3 +1,19 @@
+<script setup lang="ts">
+import useDropdown from '/@src/composition/use/useDropdown'
+
+const {
+  dropdownElement: dropdownElement1,
+  open: open1,
+  isOpen: isOpen1,
+} = useDropdown()
+
+const {
+  dropdownElement: dropdownElement2,
+  open: open2,
+  isOpen: isOpen2,
+} = useDropdown()
+</script>
+
 <template>
   <!-- Message details -->
   <div id="message-9" class="inbox-message-details is-hidden">
@@ -16,9 +32,13 @@
         <Icon icon="feather:paperclip" />
         <span>0</span>
       </div>
-      <div class="dropdown inbox-dropdown dropdown-trigger is-right">
+      <div
+        ref="dropdownElement1"
+        :class="[isOpen1 && 'is-active']"
+        class="dropdown inbox-dropdown dropdown-trigger is-right"
+      >
         <div>
-          <button class="button">
+          <button class="button" @click="open1">
             <span class="icon is-small">
               <Icon icon="feather:more-vertical" />
             </span>
@@ -110,9 +130,13 @@
               <span>Reply as</span>
               <span>erik@huro.io</span>
             </div>
-            <div class="dropdown inbox-dropdown dropdown-trigger is-right">
+            <div
+              ref="dropdownElement2"
+              :class="[isOpen2 && 'is-active']"
+              class="dropdown inbox-dropdown dropdown-trigger is-right"
+            >
               <div>
-                <button class="button">
+                <button class="button" @click="open2">
                   <span class="icon is-small">
                     <Icon icon="feather:more-vertical" />
                   </span>

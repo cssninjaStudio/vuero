@@ -1,6 +1,14 @@
+<script setup lang="ts">
+import { activePanel } from '/@src/composition/state/ui/activePanelState'
+</script>
+
 <template>
-  <div id="search-panel" class="right-panel-wrapper is-search is-left">
-    <div class="panel-overlay"></div>
+  <div
+    v-if="activePanel === 'search'"
+    id="search-panel"
+    class="right-panel-wrapper is-search is-left is-active"
+  >
+    <div class="panel-overlay" @click="activePanel = 'none'"></div>
 
     <div class="right-panel">
       <div class="right-panel-head">
@@ -10,7 +18,7 @@
           src="/@images/logos/logo/logo-light.svg"
           alt=""
         />
-        <a class="close-panel">
+        <a class="close-panel" @click="activePanel = 'none'">
           <Icon icon="feather:chevron-left" />
         </a>
       </div>

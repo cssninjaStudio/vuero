@@ -1,5 +1,18 @@
 <script setup lang="ts">
 import { isDark } from '/@src/composition/state/ui/darkModeState.ts'
+import useDropdown from '/@src/composition/use/useDropdown'
+
+const {
+  dropdownElement: dropdownElement1,
+  open: open1,
+  isOpen: isOpen1,
+} = useDropdown()
+
+const {
+  dropdownElement: dropdownElement2,
+  open: open2,
+  isOpen: isOpen2,
+} = useDropdown()
 </script>
 
 <template>
@@ -13,8 +26,12 @@ import { isDark } from '/@src/composition/state/ui/darkModeState.ts'
       <span class="title-wrap">Step 1: <span>Project Type</span></span>
     </div>
 
-    <div class="dropdown wizard-dropdown dropdown-trigger">
-      <div class="is-trigger">
+    <div
+      ref="dropdownElement1"
+      :class="[isOpen1 && 'is-active']"
+      class="dropdown wizard-dropdown dropdown-trigger"
+    >
+      <div class="is-trigger" @click="open1">
         <Icon icon="feather:chevron-down" />
       </div>
       <div id="wizard-navigation-dropdown" class="dropdown-menu" role="menu">
@@ -89,8 +106,12 @@ import { isDark } from '/@src/composition/state/ui/darkModeState.ts'
       </div>
     </div>
 
-    <div class="dropdown is-right dropdown-trigger user-dropdown">
-      <div class="is-trigger" aria-haspopup="true">
+    <div
+      ref="dropdownElement2"
+      :class="[isOpen2 && 'is-active']"
+      class="dropdown is-right dropdown-trigger user-dropdown"
+    >
+      <div class="is-trigger" aria-haspopup="true" @click="open2">
         <div class="profile-avatar">
           <img
             class="avatar"

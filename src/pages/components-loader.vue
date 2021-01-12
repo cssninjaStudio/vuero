@@ -1,5 +1,30 @@
 <script setup lang="ts">
 import { useTitle } from '@vueuse/core'
+import useDropdown from '/@src/composition/use/useDropdown'
+
+const {
+  dropdownElement: dropdownElement1,
+  open: open1,
+  isOpen: isOpen1,
+} = useDropdown()
+
+const {
+  dropdownElement: dropdownElement2,
+  open: open2,
+  isOpen: isOpen2,
+} = useDropdown()
+
+const {
+  dropdownElement: dropdownElement3,
+  open: open3,
+  isOpen: isOpen3,
+} = useDropdown()
+
+const {
+  dropdownElement: dropdownElement4,
+  open: open4,
+  isOpen: isOpen4,
+} = useDropdown()
 
 useTitle('Components - Loader - Vuero')
 </script>
@@ -154,9 +179,15 @@ $('.has-loader').addClass('has-loader-active');
                           </div>
                         </div>
                         <div
+                          ref="dropdownElement1"
+                          :class="[isOpen1 && 'is-active']"
                           class="dropdown is-spaced is-dots is-right dropdown-trigger is-up"
                         >
-                          <div class="is-trigger" aria-haspopup="true">
+                          <div
+                            class="is-trigger"
+                            aria-haspopup="true"
+                            @click="open1"
+                          >
                             <Icon icon="feather:more-vertical" />
                           </div>
                           <div class="dropdown-menu" role="menu">
@@ -247,9 +278,15 @@ $('.has-loader').addClass('has-loader-active');
                           </div>
                         </div>
                         <div
+                          ref="dropdownElement2"
+                          :class="[isOpen2 && 'is-active']"
                           class="dropdown is-spaced is-dots is-right dropdown-trigger is-up"
                         >
-                          <div class="is-trigger" aria-haspopup="true">
+                          <div
+                            class="is-trigger"
+                            aria-haspopup="true"
+                            @click="open2"
+                          >
                             <Icon icon="feather:more-vertical" />
                           </div>
                           <div class="dropdown-menu" role="menu">
@@ -340,9 +377,15 @@ $('.has-loader').addClass('has-loader-active');
                           </div>
                         </div>
                         <div
+                          ref="dropdownElement3"
+                          :class="[isOpen3 && 'is-active']"
                           class="dropdown is-spaced is-dots is-right dropdown-trigger is-up"
                         >
-                          <div class="is-trigger" aria-haspopup="true">
+                          <div
+                            class="is-trigger"
+                            aria-haspopup="true"
+                            @click="open3"
+                          >
                             <Icon icon="feather:more-vertical" />
                           </div>
                           <div class="dropdown-menu" role="menu">
@@ -433,9 +476,15 @@ $('.has-loader').addClass('has-loader-active');
                           </div>
                         </div>
                         <div
+                          ref="dropdownElement4"
+                          :class="[isOpen4 && 'is-active']"
                           class="dropdown is-spaced is-dots is-right dropdown-trigger is-up"
                         >
-                          <div class="is-trigger" aria-haspopup="true">
+                          <div
+                            class="is-trigger"
+                            aria-haspopup="true"
+                            @click="open4"
+                          >
                             <Icon icon="feather:more-vertical" />
                           </div>
                           <div class="dropdown-menu" role="menu">

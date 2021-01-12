@@ -1,13 +1,25 @@
+<script setup lang="ts">
+import useDropdown from '/@src/composition/use/useDropdown'
+const {
+  dropdownElement,
+  isOpen,
+  open,
+} = useDropdown()
+</script>
+
 <template>
   <li id="user-menu">
     <div
       id="profile-menu"
+      ref="dropdownElement"
+      :class="[isOpen && 'is-active']"
       class="dropdown profile-dropdown dropdown-trigger is-spaced is-up"
     >
       <img
         src="/@images/avatars/photos/8.jpg"
         alt=""
         @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+        @click="open"
       />
       <span class="status-indicator"></span>
 

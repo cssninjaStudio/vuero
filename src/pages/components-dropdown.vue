@@ -1,5 +1,104 @@
 <script setup lang="ts">
+import { ref, reactive } from 'vue'
 import { useTitle } from '@vueuse/core'
+
+import useDropdown from '/@src/composition/use/useDropdown'
+
+const {
+  dropdownElement: dropdownElement1,
+  open: open1,
+  isOpen: isOpen1,
+} = useDropdown()
+
+const {
+  dropdownElement: dropdownElement2,
+  open: open2,
+  isOpen: isOpen2,
+} = useDropdown()
+
+const {
+  dropdownElement: dropdownElement3,
+  open: open3,
+  isOpen: isOpen3,
+} = useDropdown()
+
+const {
+  dropdownElement: dropdownElement4,
+  open: open4,
+  isOpen: isOpen4,
+} = useDropdown()
+
+const {
+  dropdownElement: dropdownElement5,
+  open: open5,
+  isOpen: isOpen5,
+} = useDropdown()
+
+const {
+  dropdownElement: dropdownElement6,
+  open: open6,
+  isOpen: isOpen6,
+} = useDropdown()
+
+const {
+  dropdownElement: dropdownElement7,
+  open: open7,
+  isOpen: isOpen7,
+} = useDropdown()
+
+const {
+  dropdownElement: dropdownElement8,
+  open: open8,
+  isOpen: isOpen8,
+} = useDropdown()
+
+const {
+  dropdownElement: dropdownElement9,
+  open: open9,
+  isOpen: isOpen9,
+} = useDropdown()
+
+const {
+  dropdownElement: dropdownElement10,
+  open: open10,
+  isOpen: isOpen10,
+} = useDropdown()
+
+const {
+  dropdownElement: dropdownElement11,
+  open: open11,
+  isOpen: isOpen11,
+} = useDropdown()
+
+const {
+  dropdownElement: dropdownElement12,
+  open: open12,
+  isOpen: isOpen12,
+} = useDropdown()
+
+const {
+  dropdownElement: dropdownElement13,
+  open: open13,
+  isOpen: isOpen13,
+} = useDropdown()
+
+const {
+  dropdownElement: dropdownElement14,
+  open: open14,
+  isOpen: isOpen14,
+} = useDropdown()
+
+const {
+  dropdownElement: dropdownElement15,
+  open: open15,
+  isOpen: isOpen15,
+} = useDropdown()
+
+const {
+  dropdownElement: dropdownElement16,
+  open: open16,
+  isOpen: isOpen16,
+} = useDropdown()
 
 useTitle('Components - Dropdown - Vuero')
 </script>
@@ -93,8 +192,12 @@ useTitle('Components - Dropdown - Vuero')
                   <div class="card-inner">
                     <div class="field is-grouped">
                       <div class="control">
-                        <div class="dropdown dropdown-trigger">
-                          <div class="is-trigger">
+                        <div
+                          ref="dropdownElement1"
+                          :class="[isOpen1 && 'is-active']"
+                          class="dropdown dropdown-trigger"
+                        >
+                          <div class="is-trigger" @click="open1">
                             <button class="button" aria-haspopup="true">
                               <span>Dropdown button</span>
                               <span class="icon is-small">
@@ -129,8 +232,12 @@ useTitle('Components - Dropdown - Vuero')
                       </div>
 
                       <div class="control">
-                        <div class="dropdown dropdown-trigger is-right">
-                          <div class="is-trigger">
+                        <div
+                          ref="dropdownElement2"
+                          :class="[isOpen2 && 'is-active']"
+                          class="dropdown dropdown-trigger is-right"
+                        >
+                          <div class="is-trigger" @click="open2">
                             <button class="button" aria-haspopup="true">
                               <span>Dropdown button</span>
                               <span class="icon is-small">
@@ -165,8 +272,12 @@ useTitle('Components - Dropdown - Vuero')
                       </div>
 
                       <div class="control">
-                        <div class="dropdown dropdown-trigger is-right is-up">
-                          <div class="is-trigger">
+                        <div
+                          ref="dropdownElement3"
+                          :class="[isOpen3 && 'is-active']"
+                          class="dropdown dropdown-trigger is-right is-up"
+                        >
+                          <div class="is-trigger" @click="open3">
                             <button class="button" aria-haspopup="true">
                               <span>Dropdown button</span>
                               <span class="icon is-small">
@@ -321,8 +432,12 @@ useTitle('Components - Dropdown - Vuero')
                   <div class="card-inner">
                     <div class="field is-grouped">
                       <div class="control">
-                        <div class="dropdown dropdown-trigger">
-                          <div class="is-trigger">
+                        <div
+                          ref="dropdownElement4"
+                          :class="[isOpen4 && 'is-active']"
+                          class="dropdown dropdown-trigger"
+                        >
+                          <div class="is-trigger" @click="open4">
                             <button
                               class="button is-primary"
                               aria-haspopup="true"
@@ -360,8 +475,12 @@ useTitle('Components - Dropdown - Vuero')
                       </div>
 
                       <div class="control">
-                        <div class="dropdown dropdown-trigger is-right">
-                          <div class="is-trigger">
+                        <div
+                          ref="dropdownElement5"
+                          :class="[isOpen5 && 'is-active']"
+                          class="dropdown dropdown-trigger is-right"
+                        >
+                          <div class="is-trigger" @click="open5">
                             <button
                               class="button is-danger"
                               aria-haspopup="true"
@@ -488,8 +607,16 @@ useTitle('Components - Dropdown - Vuero')
                   <div class="card-inner">
                     <div class="field is-grouped">
                       <div class="control">
-                        <div class="dropdown is-dots dropdown-trigger">
-                          <div class="is-trigger" aria-haspopup="true">
+                        <div
+                          ref="dropdownElement6"
+                          :class="[isOpen6 && 'is-active']"
+                          class="dropdown is-dots dropdown-trigger"
+                        >
+                          <div
+                            class="is-trigger"
+                            aria-haspopup="true"
+                            @click="open6"
+                          >
                             <Icon icon="feather:more-vertical" />
                           </div>
                           <div class="dropdown-menu" role="menu">
@@ -514,8 +641,16 @@ useTitle('Components - Dropdown - Vuero')
                           </div>
                         </div>
 
-                        <div class="dropdown is-dots dropdown-trigger">
-                          <div class="is-trigger" aria-haspopup="true">
+                        <div
+                          ref="dropdownElement7"
+                          :class="[isOpen7 && 'is-active']"
+                          class="dropdown is-dots dropdown-trigger"
+                        >
+                          <div
+                            class="is-trigger"
+                            aria-haspopup="true"
+                            @click="open7"
+                          >
                             <Icon icon="feather:more-horizontal" />
                           </div>
                           <div class="dropdown-menu" role="menu">
@@ -540,8 +675,16 @@ useTitle('Components - Dropdown - Vuero')
                           </div>
                         </div>
 
-                        <div class="dropdown is-dots dropdown-trigger">
-                          <div class="is-trigger" aria-haspopup="true">
+                        <div
+                          ref="dropdownElement8"
+                          :class="[isOpen8 && 'is-active']"
+                          class="dropdown is-dots dropdown-trigger"
+                        >
+                          <div
+                            class="is-trigger"
+                            aria-haspopup="true"
+                            @click="open8"
+                          >
                             <Icon icon="feather:help-circle" />
                           </div>
                           <div class="dropdown-menu" role="menu">
@@ -620,8 +763,16 @@ useTitle('Components - Dropdown - Vuero')
                   <div class="card-inner">
                     <div class="field is-grouped">
                       <div class="control">
-                        <div class="dropdown is-modern dropdown-trigger">
-                          <div class="is-trigger" aria-haspopup="true">
+                        <div
+                          ref="dropdownElement9"
+                          :class="[isOpen9 && 'is-active']"
+                          class="dropdown is-modern dropdown-trigger"
+                        >
+                          <div
+                            class="is-trigger"
+                            aria-haspopup="true"
+                            @click="open9"
+                          >
                             <button class="button" aria-haspopup="true">
                               <span>Modern Drop</span>
                               <span class="caret">
@@ -654,9 +805,15 @@ useTitle('Components - Dropdown - Vuero')
 
                       <div class="control">
                         <div
+                          ref="dropdownElement10"
+                          :class="[isOpen10 && 'is-active']"
                           class="dropdown is-modern dropdown-trigger is-right"
                         >
-                          <div class="is-trigger" aria-haspopup="true">
+                          <div
+                            class="is-trigger"
+                            aria-haspopup="true"
+                            @click="open10"
+                          >
                             <button
                               class="button is-rounded"
                               aria-haspopup="true"
@@ -692,9 +849,15 @@ useTitle('Components - Dropdown - Vuero')
 
                       <div class="control">
                         <div
+                          ref="dropdownElement11"
+                          :class="[isOpen11 && 'is-active']"
                           class="dropdown is-modern dropdown-trigger is-up is-right"
                         >
-                          <div class="is-trigger" aria-haspopup="true">
+                          <div
+                            class="is-trigger"
+                            aria-haspopup="true"
+                            @click="open11"
+                          >
                             <button class="button" aria-haspopup="true">
                               <span>Modern Drop</span>
                               <span class="caret">
@@ -783,9 +946,15 @@ useTitle('Components - Dropdown - Vuero')
                     <div class="field is-grouped">
                       <div class="control">
                         <div
+                          ref="dropdownElement12"
+                          :class="[isOpen12 && 'is-active']"
                           class="dropdown is-modern is-spaced dropdown-trigger"
                         >
-                          <div class="is-trigger" aria-haspopup="true">
+                          <div
+                            class="is-trigger"
+                            aria-haspopup="true"
+                            @click="open12"
+                          >
                             <button class="button" aria-haspopup="true">
                               <span>Modern Drop</span>
                               <span class="caret">
@@ -839,9 +1008,15 @@ useTitle('Components - Dropdown - Vuero')
 
                       <div class="control">
                         <div
+                          ref="dropdownElement13"
+                          :class="[isOpen13 && 'is-active']"
                           class="dropdown is-modern is-spaced dropdown-trigger is-right"
                         >
-                          <div class="is-trigger" aria-haspopup="true">
+                          <div
+                            class="is-trigger"
+                            aria-haspopup="true"
+                            @click="open13"
+                          >
                             <button
                               class="button is-rounded"
                               aria-haspopup="true"
@@ -898,9 +1073,15 @@ useTitle('Components - Dropdown - Vuero')
 
                       <div class="control">
                         <div
+                          ref="dropdownElement14"
+                          :class="[isOpen14 && 'is-active']"
                           class="dropdown is-modern is-dots is-spaced dropdown-trigger is-right"
                         >
-                          <div class="is-trigger" aria-haspopup="true">
+                          <div
+                            class="is-trigger"
+                            aria-haspopup="true"
+                            @click="open14"
+                          >
                             <Icon icon="feather:more-horizontal" />
                           </div>
                           <div class="dropdown-menu" role="menu">
@@ -1029,9 +1210,15 @@ useTitle('Components - Dropdown - Vuero')
                     <div class="field is-grouped">
                       <div class="control">
                         <div
+                          ref="dropdownElement15"
+                          :class="[isOpen15 && 'is-active']"
                           class="dropdown is-modern is-spaced dropdown-trigger"
                         >
-                          <div class="is-trigger" aria-haspopup="true">
+                          <div
+                            class="is-trigger"
+                            aria-haspopup="true"
+                            @click="open15"
+                          >
                             <button class="button" aria-haspopup="true">
                               <span>Modern Drop</span>
                               <span class="caret">
@@ -1109,9 +1296,15 @@ useTitle('Components - Dropdown - Vuero')
 
                       <div class="control">
                         <div
+                          ref="dropdownElement16"
+                          :class="[isOpen16 && 'is-active']"
                           class="dropdown is-modern is-spaced dropdown-trigger is-right"
                         >
-                          <div class="is-trigger" aria-haspopup="true">
+                          <div
+                            class="is-trigger"
+                            aria-haspopup="true"
+                            @click="open16"
+                          >
                             <button
                               class="button is-rounded"
                               aria-haspopup="true"

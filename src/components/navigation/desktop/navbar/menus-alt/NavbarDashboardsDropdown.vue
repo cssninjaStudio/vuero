@@ -1,10 +1,24 @@
+<script setup lang="ts">
+import useDropdown from '/@src/composition/use/useDropdown'
+const {
+  dropdownElement,
+  isOpen,
+  open,
+} = useDropdown()
+</script>
+
 <template>
-  <div class="dropdown is-modern is-spaced dropdown-trigger has-mega-dropdown">
+  <div
+    ref="dropdownElement"
+    :class="[isOpen && 'is-active']"
+    class="dropdown is-modern is-spaced dropdown-trigger has-mega-dropdown"
+  >
     <div class="is-trigger" aria-haspopup="true" aria-controls="dropdown-menu">
       <button
         class="button h-button is-rounded"
         aria-haspopup="true"
         aria-controls="dropdown-menu"
+        @click="open"
       >
         <span>Dashboards</span>
         <span class="caret">
@@ -145,7 +159,7 @@
             <div class="column is-4">
               <div class="dropdown-item-group">
                 <h4 class="column-heading is-info">
-                  <i data-feather="circle" class="is-vhidden"></i>
+                  <Icon icon="circle" class="is-vhidden" />
                   <span class="is-vhidden">All Dashboards</span>
                 </h4>
 
@@ -256,7 +270,7 @@
             <div class="column is-4">
               <div class="dropdown-item-group">
                 <h4 class="column-heading is-info">
-                  <i data-feather="circle" class="is-vhidden"></i>
+                  <Icon icon="circle" class="is-vhidden" />
                   <span class="is-vhidden">All Dashboards</span>
                 </h4>
 

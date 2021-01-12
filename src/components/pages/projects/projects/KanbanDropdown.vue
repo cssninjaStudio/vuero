@@ -1,6 +1,19 @@
+<script setup lang="ts">
+import useDropdown from '/@src/composition/use/useDropdown'
+const {
+  dropdownElement,
+  isOpen,
+  open,
+} = useDropdown()
+</script>
+
 <template>
-  <div class="dropdown is-right dropdown-trigger">
-    <div class="is-trigger" aria-haspopup="true">
+  <div
+    ref="dropdownElement"
+    :class="[isOpen && 'is-active']"
+    class="dropdown is-right dropdown-trigger"
+  >
+    <div class="is-trigger" aria-haspopup="true" @click="open">
       <Icon icon="feather:more-vertical" />
     </div>
 

@@ -1,5 +1,10 @@
 <script setup lang="ts">
 import { useTitle } from '@vueuse/core'
+import { ref } from 'vue'
+
+import { activePanel } from '/@src/composition/state/ui/activePanelState'
+
+const activeTab = ref<'project' | 'team' | 'tasks'>('project')
 
 useTitle('Projects Project - WebApp - Vuero')
 </script>
@@ -32,21 +37,25 @@ useTitle('Projects Project - WebApp - Vuero')
               <div class="tabs-inner">
                 <div class="tabs">
                   <ul>
-                    <li data-tab="project-tab" class="is-active">
-                      <a><span>Project</span></a>
+                    <li :class="[activeTab === 'project' && 'is-active']">
+                      <a @click="activeTab = 'project'"><span>Project</span></a>
                     </li>
-                    <li data-tab="team-tab">
-                      <a><span>Team</span></a>
+                    <li :class="[activeTab === 'team' && 'is-active']">
+                      <a @click="activeTab = 'team'"><span>Team</span></a>
                     </li>
-                    <li data-tab="tasks-tab">
-                      <a><span>Tasks</span></a>
+                    <li :class="[activeTab === 'tasks' && 'is-active']">
+                      <a @click="activeTab = 'tasks'"><span>Tasks</span></a>
                     </li>
                     <li class="tab-naver"></li>
                   </ul>
                 </div>
               </div>
 
-              <div id="project-tab" class="tab-content is-active">
+              <div
+                id="project-tab"
+                class="tab-content"
+                :class="[activeTab === 'project' && 'is-active']"
+              >
                 <div class="columns project-details-inner">
                   <div class="column is-8">
                     <div class="project-details-card">
@@ -412,7 +421,11 @@ useTitle('Projects Project - WebApp - Vuero')
               </div>
 
               <!--Project Team-->
-              <div id="team-tab" class="tab-content">
+              <div
+                id="team-tab"
+                class="tab-content"
+                :class="[activeTab === 'team' && 'is-active']"
+              >
                 <div class="project-details-inner">
                   <div class="project-team-card">
                     <div class="columns is-multiline">
@@ -653,7 +666,11 @@ useTitle('Projects Project - WebApp - Vuero')
                 </div>
               </div>
 
-              <div id="tasks-tab" class="tab-content">
+              <div
+                id="tasks-tab"
+                class="tab-content"
+                :class="[activeTab === 'tasks' && 'is-active']"
+              >
                 <div class="project-details-inner">
                   <div class="task-grid">
                     <div class="grid-header">
@@ -710,9 +727,9 @@ useTitle('Projects Project - WebApp - Vuero')
                       <div class="column is-4">
                         <div
                           class="task-card right-panel-trigger"
-                          data-panel="task-panel"
+                          @click="activePanel = 'task'"
                         >
-                          <a href="#" class="title-wrap">
+                          <a class="title-wrap">
                             <h3>
                               Build a desktop and mobile landing page wireframe
                             </h3>
@@ -775,9 +792,9 @@ useTitle('Projects Project - WebApp - Vuero')
                       <div class="column is-4">
                         <div
                           class="task-card right-panel-trigger"
-                          data-panel="task-panel"
+                          @click="activePanel = 'task'"
                         >
-                          <a href="#" class="title-wrap">
+                          <a class="title-wrap">
                             <h3>
                               Build a custom video player javascript library
                             </h3>
@@ -818,9 +835,9 @@ useTitle('Projects Project - WebApp - Vuero')
                       <div class="column is-4">
                         <div
                           class="task-card right-panel-trigger"
-                          data-panel="task-panel"
+                          @click="activePanel = 'task'"
                         >
-                          <a href="#" class="title-wrap">
+                          <a class="title-wrap">
                             <h3>Develop a JWT authentication controller</h3>
                             <span>65%</span>
                           </a>
@@ -859,9 +876,9 @@ useTitle('Projects Project - WebApp - Vuero')
                       <div class="column is-4">
                         <div
                           class="task-card right-panel-trigger"
-                          data-panel="task-panel"
+                          @click="activePanel = 'task'"
                         >
-                          <a href="#" class="title-wrap">
+                          <a class="title-wrap">
                             <h3>
                               Design custom illustrations for landing page
                             </h3>
@@ -913,9 +930,9 @@ useTitle('Projects Project - WebApp - Vuero')
                       <div class="column is-4">
                         <div
                           class="task-card right-panel-trigger"
-                          data-panel="task-panel"
+                          @click="activePanel = 'task'"
                         >
-                          <a href="#" class="title-wrap">
+                          <a class="title-wrap">
                             <h3>Implement sign up with social media</h3>
                             <span>59%</span>
                           </a>
@@ -954,9 +971,9 @@ useTitle('Projects Project - WebApp - Vuero')
                       <div class="column is-4">
                         <div
                           class="task-card right-panel-trigger"
-                          data-panel="task-panel"
+                          @click="activePanel = 'task'"
                         >
-                          <a href="#" class="title-wrap">
+                          <a class="title-wrap">
                             <h3>Implement user management API controller</h3>
                             <span>78%</span>
                           </a>
@@ -1006,9 +1023,9 @@ useTitle('Projects Project - WebApp - Vuero')
                       <div class="column is-4">
                         <div
                           class="task-card right-panel-trigger"
-                          data-panel="task-panel"
+                          @click="activePanel = 'task'"
                         >
-                          <a href="#" class="title-wrap">
+                          <a class="title-wrap">
                             <h3>Implement job management API controller</h3>
                             <span>36%</span>
                           </a>
@@ -1058,9 +1075,9 @@ useTitle('Projects Project - WebApp - Vuero')
                       <div class="column is-4">
                         <div
                           class="task-card right-panel-trigger"
-                          data-panel="task-panel"
+                          @click="activePanel = 'task'"
                         >
-                          <a href="#" class="title-wrap">
+                          <a class="title-wrap">
                             <h3>Review and refactor server side code</h3>
                             <span>49%</span>
                           </a>

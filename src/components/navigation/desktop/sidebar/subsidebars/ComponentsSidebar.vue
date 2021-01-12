@@ -19,8 +19,8 @@
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Accordions <i data-feather="chevron-right"></i
-            ></a>
+              >Accordions <Icon icon="chevron-right"
+            /></a>
           </div>
           <ul>
             <li>
@@ -78,8 +78,8 @@
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Tabs <i data-feather="chevron-right"></i
-            ></a>
+              >Tabs <Icon icon="chevron-right"
+            /></a>
           </div>
           <ul>
             <li>
@@ -101,8 +101,8 @@
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Flex Table <i data-feather="chevron-right"></i
-            ></a>
+              >Flex Table <Icon icon="chevron-right"
+            /></a>
           </div>
           <ul>
             <li>
@@ -142,8 +142,8 @@
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Plugins <i data-feather="chevron-right"></i
-            ></a>
+              >Plugins <Icon icon="chevron-right"
+            /></a>
           </div>
           <ul>
             <li>
@@ -228,8 +228,8 @@
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Rich Text <i data-feather="chevron-right"></i
-            ></a>
+              >Rich Text <Icon icon="chevron-right"
+            /></a>
           </div>
           <ul>
             <li>

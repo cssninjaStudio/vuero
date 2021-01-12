@@ -33,8 +33,8 @@
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Icons <i data-feather="chevron-right"></i
-            ></a>
+              >Icons <Icon icon="chevron-right"
+            /></a>
           </div>
           <ul>
             <li>
@@ -68,8 +68,8 @@
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Cards <i data-feather="chevron-right"></i
-            ></a>
+              >Cards <Icon icon="chevron-right"
+            /></a>
           </div>
           <ul>
             <li>
@@ -105,8 +105,8 @@
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Forms <i data-feather="chevron-right"></i
-            ></a>
+              >Forms <Icon icon="chevron-right"
+            /></a>
           </div>
           <ul>
             <li>
@@ -156,8 +156,8 @@
         <li class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Toggles <i data-feather="chevron-right"></i
-            ></a>
+              >Toggles <Icon icon="chevron-right"
+            /></a>
           </div>
           <ul>
             <li>

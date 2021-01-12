@@ -1,3 +1,12 @@
+<script setup lang="ts">
+import useDropdown from '/@src/composition/use/useDropdown'
+const {
+  dropdownElement,
+  isOpen,
+  open,
+} = useDropdown()
+</script>
+
 <template>
   <div class="webapp-navbar">
     <div class="webapp-navbar-inner">
@@ -65,12 +74,15 @@
       <div class="right">
         <Toolbar />
         <div
+          ref="dropdownElement"
+          :class="[isOpen && 'is-active']"
           class="dropdown profile-dropdown dropdown-trigger is-spaced is-right"
         >
           <img
             src="/@images/avatars/photos/8.jpg"
             alt=""
             @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+            @click="open"
           />
           <span class="status-indicator"></span>
 
