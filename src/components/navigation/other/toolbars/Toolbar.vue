@@ -10,18 +10,18 @@ const { dropdownElement, isOpen, open } = useDropdown()
 
 const localFlagSrc = computed(() => {
   switch (locale.value) {
-    case 'fr': 
+    case 'fr':
       return '/@images/icons/flags/france.svg'
-    case 'es': 
+    case 'es':
       return '/@images/icons/flags/spain.svg'
-    case 'es-MX': 
+    case 'es-MX':
       return '/@images/icons/flags/mexico.svg'
-    case 'de': 
+    case 'de':
       return '/@images/icons/flags/germany.svg'
-    case 'zh-CN': 
+    case 'zh-CN':
       return '/@images/icons/flags/china.svg'
-    case 'en': 
-    default: 
+    case 'en':
+    default:
       return '/@images/icons/flags/united-states-of-america.svg'
   }
 

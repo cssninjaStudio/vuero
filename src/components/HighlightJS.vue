@@ -19,38 +19,38 @@ hljs.registerLanguage('json', json)
 hljs.registerLanguage('bash', bash)
 hljs.registerLanguage('markdown', markdown)
 hljs.registerLanguage('xml', xml)
-hljs.registerLanguage('vue', () => { 
+hljs.registerLanguage('vue', () => {
   return {
-    subLanguage: "xml",
+    subLanguage: 'xml',
     contains: [
-      hljs.COMMENT("<!--", "-->", {
+      hljs.COMMENT('<!--', '-->', {
         relevance: 10,
       }),
       {
         begin: /^(\s*)(<script>)/gm,
         end: /^(\s*)(<\/script>)/gm,
-        subLanguage: "javascript",
+        subLanguage: 'javascript',
         excludeBegin: true,
         excludeEnd: true,
       },
       {
         begin: /^(\s*)(<script lang=["']ts["']>)/gm,
         end: /^(\s*)(<\/script>)/gm,
-        subLanguage: "typescript",
+        subLanguage: 'typescript',
         excludeBegin: true,
         excludeEnd: true,
       },
       {
         begin: /^(\s*)(<style(\sscoped)?>)/gm,
         end: /^(\s*)(<\/style>)/gm,
-        subLanguage: "css",
+        subLanguage: 'css',
         excludeBegin: true,
         excludeEnd: true,
       },
       {
         begin: /^(\s*)(<style lang=["'](scss|sass)["'](\sscoped)?>)/gm,
         end: /^(\s*)(<\/style>)/gm,
-        subLanguage: "scss",
+        subLanguage: 'scss',
         excludeBegin: true,
         excludeEnd: true,
       },
@@ -64,8 +64,16 @@ const props = defineProps({
     required: true,
   },
   language: {
-    type: String as PropType<'auto' | 'typescript' | 'javascript' | 'scss' | 'json' | 'bash' | 'markdown'>,
-    default: 'auto'
+    type: String as PropType<
+      | 'auto'
+      | 'typescript'
+      | 'javascript'
+      | 'scss'
+      | 'json'
+      | 'bash'
+      | 'markdown'
+    >,
+    default: 'auto',
   },
 })
 const codeElement = ref<HTMLElement | null>(null)
@@ -83,15 +91,18 @@ const highlight = () => {
   }
 }
 
-watch(props, () => {
-  highlight()
-}, { immediate: true, deep: true })
+watch(
+  props,
+  () => {
+    highlight()
+  },
+  { immediate: true, deep: true }
+)
 
 onMounted(() => {
   highlight()
 })
 </script>
-
 
 <template>
   <div>

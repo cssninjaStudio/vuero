@@ -13,11 +13,15 @@ const isScrolling = computed(() => {
   return y.value > 30
 })
 
-watch(isLargeScreen, () => {
-  if (isLargeScreen.value) {
-    isMobileNavOpen.value = false
-  }
-}, { immediate: true })
+watch(
+  isLargeScreen,
+  () => {
+    if (isLargeScreen.value) {
+      isMobileNavOpen.value = false
+    }
+  },
+  { immediate: true }
+)
 </script>
 
 <template>

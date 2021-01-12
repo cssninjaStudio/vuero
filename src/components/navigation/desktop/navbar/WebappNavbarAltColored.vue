@@ -3,7 +3,10 @@ import { watch } from 'vue'
 import { useRoute } from 'vue-router'
 
 import useDropdown from '/@src/composition/use/useDropdown'
-import { activeSubnav, toggleSubnav } from '/@src/composition/state/ui/webappNavState'
+import {
+  activeSubnav,
+  toggleSubnav,
+} from '/@src/composition/state/ui/webappNavState'
 
 const route = useRoute()
 const { dropdownElement, isOpen, open } = useDropdown()
@@ -12,7 +15,7 @@ watch(
   () => route.path,
   () => {
     activeSubnav.value = 'closed'
-  },
+  }
 )
 </script>
 

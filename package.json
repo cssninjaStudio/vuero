@@ -10,7 +10,7 @@
     "build:typecheck": "tsc --noEmit",
     "build:ssg": "vite-ssg build",
     "lint": "run-s lint:js lint:style lint:prettier",
-    "lint:fix": "run-s lint:js:fix lint:style:fix lint:prettier:fix",
+    "lint:fix": "run-s build:typecheck lint:js:fix lint:style:fix lint:prettier:fix",
     "lint:prettier": "prettier --check \"./src/**/*.(js|ts|vue|css|scss|graphql|gql)\"",
     "lint:prettier:fix": "prettier --write \"./src/**/*.(js|ts|vue|css|scss|graphql|gql)\"",
     "lint:js": "eslint --ext .ts,.vue ./src",
