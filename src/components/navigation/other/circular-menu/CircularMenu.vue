@@ -1,13 +1,31 @@
 <script setup lang="ts">
+import { useWindowScroll } from '@vueuse/core'
+import { computed, ref } from 'vue'
+
 import { isDark } from '/@src/composition/state/ui/darkModeState.ts'
 import { activePanel } from '/@src/composition/state/ui/activePanelState'
+
+const isOpen = ref(false)
+const { y } = useWindowScroll()
+const isScrolling = computed(() => {
+  if (y.value <= 30) {
+    isOpen.value = false
+  }
+  
+  return y.value > 30
+})
+
 </script>
 
 <template>
-  <div id="circular-menu" class="circular-menu">
-    <a class="floating-btn">
-      <Icon icon="fa-bars" />
-      <Icon icon="fa-times" />
+  <div
+    id="circular-menu"
+    :class="[isScrolling && 'is-active', isOpen && 'active']"
+    class="circular-menu"
+  >
+    <a class="floating-btn" @click="isOpen = !isOpen">
+      <i class="fas fa-bars"></i>
+      <i class="fas fa-times"></i>
     </a>
 
     <div class="items-wrapper">
