@@ -3,10 +3,10 @@
 <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 800 600" style="enable-background:new 0 0 800 600;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#FFFFFF;stroke:#671CC9;stroke-width:5;stroke-miterlimit:10;}
+	.st0{fill:#FFFFFF;stroke:#41b883;stroke-width:5;stroke-miterlimit:10;}
 	.st1{fill:#EFEFEF;}
-	.st2{fill:none;stroke:#671CC9;stroke-width:5;stroke-miterlimit:10;}
-	.st3{fill:none;stroke:#671CC9;stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#41b883;stroke-width:5;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#41b883;stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;}
 </style>
 <path class="st0" d="M641.7,531.4H146.3c-1.3,0-2.3-1-2.3-2.3V70.9c0-1.3,1-2.3,2.3-2.3h507.4c1.3,0,2.3,1,2.3,2.3v446.2
 	C656,525.1,649.6,531.4,641.7,531.4z"/>

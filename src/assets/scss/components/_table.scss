@@ -379,7 +379,7 @@ body {
         height: 16px;
         width: 16px;
         stroke-width: 3px;
-        stroke: $primary;
+        color: $primary;
       }
     }
   }
@@ -415,7 +415,7 @@ body {
         color: $dark-dark-text;
 
         svg {
-          stroke: $accent;
+          color: $accent;
         }
       }
 

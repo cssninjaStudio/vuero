@@ -61,7 +61,7 @@ body {
 
       .panel-close {
         svg {
-          stroke: $muted-grey !important;
+          color: $muted-grey !important;
         }
       }
 
@@ -189,6 +189,15 @@ body {
           }
         }
 
+        a.router-link-active {
+          font-weight: 500;
+          color: $primary;
+        }
+
+        > a.router-link-active {
+          font-weight: 600;
+        }
+
         &.divider {
           cursor: default;
           pointer-events: none;
@@ -257,7 +266,7 @@ body {
                 width: 18px;
                 margin-left: auto;
                 transform: rotate(0);
-                stroke: $light-text;
+                color: $light-text;
                 transition: all 0.3s;
               }
             }
@@ -271,7 +280,8 @@ body {
               height: 32px;
               font-family: $font;
 
-              &.is-active {
+              &.is-active,
+              .router-link-active {
                 .is-submenu {
                   font-weight: 500;
 
@@ -289,7 +299,8 @@ body {
                 padding-left: 32px;
                 font-size: 0.9rem;
 
-                &.is-active {
+                &.is-active,
+                .router-link-active {
                   font-weight: 500;
                   color: $primary;
                 }
@@ -422,6 +433,10 @@ body {
                 a {
                   color: $accent !important;
                 }
+              }
+
+              a.router-link-active {
+                color: $accent !important;
               }
 
               &.has-children {

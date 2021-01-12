@@ -44,7 +44,7 @@ Messaging
     left: -1px;
     height: 20px;
     width: 20px;
-    stroke: $light-text;
+    color: $light-text;
   }
 }
 
@@ -121,7 +121,7 @@ Messaging
           svg {
             height: 18px;
             width: 18px;
-            stroke: $muted-grey;
+            color: $muted-grey;
           }
         }
 
@@ -551,7 +551,7 @@ Messaging
           top: 1px;
           height: 10px;
           width: 10px;
-          stroke: $white;
+          color: $white;
           margin-left: 3px;
         }
       }
@@ -606,7 +606,7 @@ Messaging
           top: 1px;
           height: 10px;
           width: 10px;
-          stroke: $dark-text;
+          color: $dark-text;
           margin-right: 3px;
         }
       }
@@ -775,14 +775,14 @@ Messaging
               background: $success;
 
               svg {
-                stroke: $smoke-white;
+                color: $smoke-white;
               }
             }
 
             svg {
               height: 18px;
               width: 18px;
-              stroke: $success;
+              color: $success;
               transition: all 0.3s;
             }
           }
@@ -869,7 +869,7 @@ Messaging
       svg {
         width: 16px;
         height: 16px;
-        stroke: $white;
+        color: $white;
       }
     }
 
@@ -969,7 +969,7 @@ Messaging
             background: $fade-grey;
 
             svg {
-              stroke: $primary;
+              color: $primary;
             }
           }
         }
@@ -995,7 +995,7 @@ Messaging
         transition: all 0.3s;
 
         svg {
-          stroke: $placeholder;
+          color: $placeholder;
           stroke-width: 2px;
           height: 18px;
           width: 18px;
@@ -1011,7 +1011,7 @@ Messaging
           svg {
             height: 18px;
             width: 18px;
-            stroke: $muted-grey;
+            color: $muted-grey;
           }
 
           .meta {
@@ -1052,7 +1052,7 @@ Messaging
           background: $fade-grey;
 
           svg {
-            stroke: $primary;
+            color: $primary;
           }
         }
       }
@@ -1069,7 +1069,7 @@ Messaging
         transition: all 0.3s;
 
         svg {
-          stroke: $placeholder;
+          color: $placeholder;
           stroke-width: 2px;
           height: 18px;
           width: 18px;
@@ -1242,7 +1242,7 @@ body {
           }
 
           svg {
-            stroke: darken($accent-grey, 30%) !important;
+            color: darken($accent-grey, 30%) !important;
           }
 
           .icon span {
@@ -1334,7 +1334,7 @@ body {
                 color: darken($accent-grey, 10%) !important;
 
                 svg {
-                  stroke: darken($accent-grey, 10%) !important;
+                  color: darken($accent-grey, 10%) !important;
                 }
               }
             }

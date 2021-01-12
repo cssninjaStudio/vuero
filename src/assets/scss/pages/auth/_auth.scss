@@ -211,7 +211,7 @@
                 height: 10px;
                 width: 10px;
                 stroke-width: 3px;
-                stroke: $white;
+                color: $white;
               }
             }
 
@@ -458,7 +458,7 @@ body {
       transition: all 0.3s ease;
 
       svg {
-        stroke: $white;
+        color: $white;
         height: 14px;
         width: 14px;
         stroke-width: 3px;
@@ -612,7 +612,7 @@ body {
           border-color: $primary;
 
           svg {
-            stroke: $primary;
+            color: $primary;
           }
         }
       }
@@ -623,7 +623,7 @@ body {
           border-color: $primary;
 
           svg {
-            stroke: $smoke-white;
+            color: $smoke-white;
           }
         }
       }
@@ -661,7 +661,7 @@ body {
       svg {
         height: 16px;
         width: 16px;
-        stroke: $muted-grey;
+        color: $muted-grey;
       }
     }
   }
@@ -808,7 +808,7 @@ body {
                 height: 10px;
                 width: 10px;
                 stroke-width: 3px;
-                stroke: $white !important;
+                color: $white !important;
               }
             }
 
@@ -1074,7 +1074,7 @@ body {
         svg {
           height: 16px;
           width: 16px;
-          stroke: $dark-text;
+          color: $dark-text;
         }
       }
     }
@@ -1175,7 +1175,7 @@ body {
     svg {
       height: 16px;
       width: 16px;
-      stroke: $primary;
+      color: $primary;
       transition: all 0.3s;
     }
 

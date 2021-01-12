@@ -17,7 +17,7 @@
         background: lighten($fade-grey, 2%);
 
         svg {
-          stroke: darken($light-text, 4%);
+          color: darken($light-text, 4%);
         }
       }
     }
@@ -35,7 +35,7 @@
       svg {
         height: 20px;
         width: 20px;
-        stroke: $light-text;
+        color: $light-text;
         stroke-width: 1.6px;
         transition: stroke 0.3s;
       }
@@ -70,7 +70,7 @@
         svg {
           height: 16px;
           width: 16px;
-          stroke: $light-text;
+          color: $light-text;
         }
       }
     }
@@ -124,7 +124,7 @@
         &.is-active {
           .icon {
             svg {
-              stroke: $primary;
+              color: $primary;
             }
 
             .lnir,
@@ -222,7 +222,7 @@
         svg {
           height: 16px;
           width: 16px;
-          stroke: $muted-grey;
+          color: $muted-grey;
         }
 
         //Child hover dropdown
@@ -301,7 +301,7 @@ body {
       }
 
       svg {
-        stroke: $dark-dark-text;
+        color: $dark-dark-text;
       }
     }
 
@@ -314,7 +314,7 @@ body {
               background: lighten($dark-sidebar, 2%) !important;
 
               svg {
-                stroke: $dark-dark-text;
+                color: $dark-dark-text;
               }
             }
           }
@@ -361,7 +361,7 @@ body {
               &:hover {
                 .icon {
                   svg {
-                    stroke: $accent !important;
+                    color: $accent !important;
                   }
 
                   .lnir,
@@ -373,7 +373,7 @@ body {
 
               .icon {
                 svg {
-                  stroke: $light-text;
+                  color: $light-text;
                 }
 
                 .lnir,

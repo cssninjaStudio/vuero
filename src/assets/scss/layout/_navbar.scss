@@ -51,7 +51,7 @@
 
       &.is-active {
         svg {
-          stroke: $muted-grey;
+          color: $muted-grey;
         }
       }
 
@@ -93,7 +93,7 @@
           margin-left: 3px;
           width: 22px;
           height: 22px;
-          stroke: $dark-sidebar;
+          color: $dark-sidebar;
           transition: all 0.3s;
         }
       }
@@ -138,7 +138,7 @@
 
           .logout-button {
             svg {
-              stroke: $smoke-white !important;
+              color: $smoke-white !important;
             }
           }
         }
@@ -155,7 +155,7 @@
         margin: 0 15px;
 
         .toggler svg {
-          stroke: $smoke-white !important;
+          color: $smoke-white !important;
         }
 
         .toggle-title {
@@ -184,7 +184,7 @@
       }
 
       svg {
-        stroke: $primary;
+        color: $primary;
       }
 
       .sidebar-icon {
@@ -196,7 +196,7 @@
 
     &.is-sidebar-toggler {
       svg {
-        stroke: $muted-grey !important;
+        color: $muted-grey !important;
       }
     }
 
@@ -244,7 +244,7 @@
       svg {
         height: 18px;
         width: 18px;
-        stroke: $muted-grey;
+        color: $muted-grey;
         transition: all 0.3s;
       }
 
@@ -264,7 +264,7 @@
         box-shadow: 0 3px 10px 4px rgba(0, 0, 0, 0.07);
 
         svg {
-          stroke: $primary;
+          color: $primary;
         }
       }
 
@@ -411,7 +411,7 @@
       svg {
         height: 16px;
         width: 16px;
-        stroke: $primary;
+        color: $primary;
       }
 
       span {
@@ -450,7 +450,7 @@
           svg {
             height: 18px;
             width: 18px;
-            stroke: $muted-grey;
+            color: $muted-grey;
           }
         }
       }
@@ -492,7 +492,7 @@ body {
           }
 
           svg {
-            stroke: $accent;
+            color: $accent;
           }
         }
 
@@ -512,7 +512,7 @@ body {
 
             &:focus {
               ~ span svg {
-                stroke: $accent;
+                color: $accent;
               }
             }
           }
@@ -524,7 +524,7 @@ body {
       &.is-active {
         .navbar-link {
           svg {
-            stroke: $accent !important;
+            color: $accent !important;
           }
         }
       }
@@ -618,7 +618,7 @@ body {
               background: darken($primary, 6%);
 
               svg {
-                stroke: $smoke-white;
+                color: $smoke-white;
               }
 
               span {
@@ -635,7 +635,7 @@ body {
               }
 
               svg {
-                stroke: $smoke-white;
+                color: $smoke-white;
               }
 
               span {
@@ -644,7 +644,7 @@ body {
             }
 
             svg {
-              stroke: lighten($primary, 25%);
+              color: lighten($primary, 25%);
             }
 
             span {
@@ -709,12 +709,12 @@ body {
                 }
 
                 &:focus ~ .form-icon svg {
-                  stroke: $smoke-white;
+                  color: $smoke-white;
                 }
               }
 
               .form-icon svg {
-                stroke: lighten($primary, 6%);
+                color: lighten($primary, 6%);
               }
             }
           }
@@ -730,7 +730,7 @@ body {
             }
 
             > svg {
-              stroke: $smoke-white;
+              color: $smoke-white;
             }
           }
 
@@ -743,7 +743,7 @@ body {
             }
 
             .is-trigger svg {
-              stroke: $smoke-white;
+              color: $smoke-white;
             }
           }
         }
@@ -885,7 +885,7 @@ body {
             }
 
             svg {
-              stroke: $primary;
+              color: $primary;
             }
 
             span {
@@ -896,7 +896,7 @@ body {
           svg {
             height: 20px;
             width: 20px;
-            stroke: lighten($light-text, 6%);
+            color: lighten($light-text, 6%);
             stroke-width: 1.6px;
             transition: stroke 0.3s;
           }
@@ -1109,61 +1109,61 @@ body {
 
                       &.is-primary {
                         svg {
-                          stroke: $primary;
+                          color: $primary;
                         }
                       }
 
                       &.is-secondary {
                         svg {
-                          stroke: $secondary;
+                          color: $secondary;
                         }
                       }
 
                       &.is-info {
                         svg {
-                          stroke: $info;
+                          color: $info;
                         }
                       }
 
                       &.is-success {
                         svg {
-                          stroke: $success;
+                          color: $success;
                         }
                       }
 
                       &.is-warning {
                         svg {
-                          stroke: $warning;
+                          color: $warning;
                         }
                       }
 
                       &.is-danger {
                         svg {
-                          stroke: $danger;
+                          color: $danger;
                         }
                       }
 
                       &.is-green {
                         svg {
-                          stroke: $h-green;
+                          color: $h-green;
                         }
                       }
 
                       &.is-yellow {
                         svg {
-                          stroke: $h-yellow;
+                          color: $h-yellow;
                         }
                       }
 
                       &.is-purple {
                         svg {
-                          stroke: $h-purple;
+                          color: $h-purple;
                         }
                       }
 
                       &.is-orange {
                         svg {
-                          stroke: $h-orange;
+                          color: $h-orange;
                         }
                       }
 
@@ -1323,7 +1323,7 @@ body {
 
             .logout-button {
               svg {
-                stroke: $smoke-white !important;
+                color: $smoke-white !important;
               }
             }
           }
@@ -1404,7 +1404,7 @@ body {
                 }
 
                 svg {
-                  stroke: $accent;
+                  color: $accent;
                 }
               }
             }
@@ -1558,7 +1558,7 @@ body {
                   background: darken($accent, 5%);
 
                   svg {
-                    stroke: $smoke-white;
+                    color: $smoke-white;
                   }
 
                   span {
@@ -1575,7 +1575,7 @@ body {
                   }
 
                   svg {
-                    stroke: $smoke-white;
+                    color: $smoke-white;
                   }
 
                   span {
@@ -1584,7 +1584,7 @@ body {
                 }
 
                 svg {
-                  stroke: lighten($accent, 12%);
+                  color: lighten($accent, 12%);
                 }
 
                 span {
@@ -1676,7 +1676,7 @@ body {
                       color: lighten($accent, 22%);
 
                       svg {
-                        stroke: lighten($accent, 24%);
+                        color: lighten($accent, 24%);
                       }
                     }
                   }
@@ -1710,12 +1710,12 @@ body {
                     }
 
                     &:focus ~ .form-icon svg {
-                      stroke: $smoke-white !important;
+                      color: $smoke-white !important;
                     }
                   }
 
                   .form-icon svg {
-                    stroke: lighten($accent, 6%);
+                    color: lighten($accent, 6%);
                   }
                 }
               }
@@ -1731,7 +1731,7 @@ body {
                 }
 
                 > svg {
-                  stroke: $smoke-white;
+                  color: $smoke-white;
                 }
               }
 
@@ -1745,7 +1745,7 @@ body {
                 }
 
                 .is-trigger svg {
-                  stroke: $smoke-white;
+                  color: $smoke-white;
                 }
               }
             }

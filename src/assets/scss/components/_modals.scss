@@ -137,14 +137,14 @@
 
           &:hover {
             svg {
-              stroke: $primary;
+              color: $primary;
             }
           }
 
           svg {
             width: 22px;
             height: 22px;
-            stroke: $muted-grey;
+            color: $muted-grey;
           }
         }
       }
@@ -208,7 +208,7 @@ body {
             .h-modal-close {
               &:hover {
                 svg {
-                  stroke: $accent;
+                  color: $accent;
                 }
               }
             }

@@ -596,7 +596,7 @@
                       transform: rotate(-45deg);
 
                       svg {
-                        stroke: $h-green;
+                        color: $h-green;
                       }
                     }
 
@@ -604,7 +604,7 @@
                       transform: rotate(45deg);
 
                       svg {
-                        stroke: $h-red;
+                        color: $h-red;
                       }
                     }
 

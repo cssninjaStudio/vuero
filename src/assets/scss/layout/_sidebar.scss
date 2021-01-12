@@ -56,12 +56,12 @@
             &:hover,
             &.is-active {
               .sidebar-svg {
-                stroke: $smoke-white;
+                color: $smoke-white;
               }
             }
 
             .sidebar-svg {
-              stroke: lighten($primary, 25%);
+              color: lighten($primary, 25%);
             }
           }
         }
@@ -125,9 +125,10 @@
         align-items: center;
         justify-content: center;
 
-        &.is-active {
-          a svg {
-            stroke: $primary;
+        &.is-active,
+        &.router-link-active {
+          svg {
+            color: $primary;
           }
         }
 
@@ -154,16 +155,17 @@
           transition: all 0.3s;
 
           &:hover,
-          &.is-selected {
+          &.is-selected,
+          &.router-link-active {
             .sidebar-svg {
-              stroke: $primary;
+              color: $primary;
             }
           }
 
           .sidebar-svg {
             height: 20px;
             width: 20px;
-            stroke: $title-grey;
+            color: $title-grey;
             stroke-width: 1.6px;
             transition: all 0.3s;
           }
@@ -175,7 +177,7 @@
 
                         .path {
                             fill: $title-grey;
-                            stroke: none;
+                            color: none;
                         }
 
                         &:hover, &.is-active {
@@ -186,8 +188,9 @@
                     } */
 
           &:hover svg,
-          &.is-active svg {
-            stroke: $primary;
+          &.is-active svg,
+          &.router-link-active svg {
+            color: $primary;
           }
 
           &.is-opened {
@@ -315,7 +318,7 @@
 
             .logout-button {
               svg {
-                stroke: $smoke-white !important;
+                color: $smoke-white !important;
               }
             }
           }
@@ -383,9 +386,10 @@ body {
       .bottom-menu {
         li {
           a {
-            &.is-selected {
+            &.is-selected,
+            &.router-link-active {
               svg {
-                stroke: $accent !important;
+                color: $accent !important;
               }
 
               .sidebar-icon .path {
@@ -395,7 +399,7 @@ body {
 
             &:hover {
               svg {
-                stroke: $accent !important;
+                color: $accent !important;
               }
 
               .sidebar-icon .path {
@@ -409,7 +413,7 @@ body {
           }
 
           svg {
-            stroke: lighten($accent-grey, 3%);
+            color: lighten($accent-grey, 3%);
           }
 
           .status-indicator {
@@ -469,7 +473,7 @@ body {
             a {
               &.is-active {
                 svg {
-                  stroke: $accent !important;
+                  color: $accent !important;
                 }
               }
             }
@@ -495,13 +499,13 @@ body {
                 &:hover,
                 &.is-active {
                   .sidebar-svg {
-                    stroke: $smoke-white;
+                    color: $smoke-white;
                     opacity: 1;
                   }
                 }
 
                 .sidebar-svg {
-                  stroke: lighten($smoke-white, 2%);
+                  color: lighten($smoke-white, 2%);
                   opacity: 0.5;
                 }
               }

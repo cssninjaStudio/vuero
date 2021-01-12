@@ -278,7 +278,7 @@ body {
             box-shadow: $primary-box-shadow;
 
             svg {
-              stroke: $smoke-white;
+              color: $smoke-white;
             }
           }
 
@@ -288,7 +288,7 @@ body {
             box-shadow: $info-box-shadow;
 
             svg {
-              stroke: $smoke-white;
+              color: $smoke-white;
             }
           }
 
@@ -298,7 +298,7 @@ body {
             box-shadow: $success-box-shadow;
 
             svg {
-              stroke: $smoke-white;
+              color: $smoke-white;
             }
           }
 
@@ -308,7 +308,7 @@ body {
             box-shadow: $h-orange-box-shadow;
 
             svg {
-              stroke: $smoke-white;
+              color: $smoke-white;
             }
           }
 
@@ -317,7 +317,7 @@ body {
             border-color: $h-yellow;
 
             svg {
-              stroke: $smoke-white;
+              color: $smoke-white;
             }
           }
 
@@ -382,7 +382,7 @@ body {
                 box-shadow: $accent-box-shadow;
 
                 svg {
-                  stroke: $smoke-white;
+                  color: $smoke-white;
                 }
               }
             }

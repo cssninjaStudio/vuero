@@ -123,7 +123,7 @@ Inbox Layouts
                     }
 
                     svg {
-                      stroke: $primary;
+                      color: $primary;
                     }
 
                     .tag {
@@ -138,7 +138,7 @@ Inbox Layouts
                   svg {
                     height: 16px;
                     width: 16px;
-                    stroke: $light-text;
+                    color: $light-text;
                   }
 
                   span {
@@ -502,7 +502,7 @@ Inbox Layouts
           }
 
           svg {
-            stroke: $light-text;
+            color: $light-text;
             height: 16px;
             width: 16px;
           }
@@ -602,7 +602,7 @@ Inbox Layouts
                 }
 
                 svg {
-                  stroke: $white;
+                  color: $white;
                 }
               }
             }
@@ -791,7 +791,7 @@ body {
                     }
 
                     svg {
-                      stroke: $accent;
+                      color: $accent;
                     }
 
                     .tag {
@@ -920,7 +920,7 @@ body {
                     border-color: lighten($dark-sidebar, 8%);
 
                     svg {
-                      stroke: $smoke-white;
+                      color: $smoke-white;
                     }
                   }
                 }
@@ -983,7 +983,7 @@ body {
     box-shadow: $light-box-shadow;
 
     svg {
-      stroke: $primary;
+      color: $primary;
     }
   }
 
@@ -996,7 +996,7 @@ body {
     height: 16px;
     width: 16px;
     stroke-width: 1.6px;
-    stroke: $light-text;
+    color: $light-text;
   }
 
   i {
@@ -1017,7 +1017,7 @@ body {
         border-color: lighten($dark-sidebar, 12%);
 
         svg {
-          stroke: $accent;
+          color: $accent;
         }
       }
     }
@@ -1053,7 +1053,7 @@ body {
     svg {
       height: 16px;
       width: 16px;
-      stroke: $light-text;
+      color: $light-text;
     }
   }
 
@@ -1076,7 +1076,7 @@ body {
       svg {
         height: 16px;
         width: 16px;
-        stroke: $light-text;
+        color: $light-text;
       }
 
       span {

@@ -68,7 +68,7 @@
       transition: all 0.3s ease;
 
       svg {
-        stroke: $white !important;
+        color: $white !important;
         height: 14px !important;
         width: 14px !important;
         opacity: 1 !important;
@@ -89,7 +89,7 @@
       z-index: 0;
 
       svg {
-        stroke: $white !important;
+        color: $white !important;
       }
     }
   }

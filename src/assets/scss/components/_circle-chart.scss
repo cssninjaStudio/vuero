@@ -12,25 +12,25 @@
 .circle-chart-wrapper {
   &.is-success {
     .circle-chart__circle {
-      stroke: $success;
+      color: $success;
     }
   }
 
   &.is-info {
     .circle-chart__circle {
-      stroke: $info;
+      color: $info;
     }
   }
 
   &.is-warning {
     .circle-chart__circle {
-      stroke: $warning;
+      color: $warning;
     }
   }
 
   &.is-danger {
     .circle-chart__circle {
-      stroke: $danger;
+      color: $danger;
     }
   }
 }
@@ -39,7 +39,7 @@
   animation: circle-chart-fill 2.4s reverse;
   transform: rotate(90deg);
   transform-origin: center;
-  stroke: $primary;
+  color: $primary;
   animation-timing-function: cubic-bezier(0.78, 0.59, 0.19, 0.33);
 }
 
@@ -48,7 +48,7 @@
 }
 
 .circle-chart__background {
-  stroke: #efefef;
+  color: #efefef;
 }
 
 @keyframes circle-chart-fill {
@@ -96,13 +96,13 @@ body {
     .circle-chart-wrapper {
       &:not(.is-success):not(.is-info):not(.is-warning):not(.is-danger) {
         .circle-chart__circle {
-          stroke: $accent;
+          color: $accent;
         }
       }
     }
 
     .circle-chart__background {
-      stroke: darken($dark-sidebar, 2%);
+      color: darken($dark-sidebar, 2%);
     }
   }
 }

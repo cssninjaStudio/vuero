@@ -119,12 +119,12 @@
           background: $primary;
 
           svg {
-            stroke: $white;
+            color: $white;
           }
         }
 
         svg {
-          stroke: $primary;
+          color: $primary;
         }
 
         .fas,
@@ -145,12 +145,12 @@
           background: $success;
 
           svg {
-            stroke: $white;
+            color: $white;
           }
         }
 
         svg {
-          stroke: $success;
+          color: $success;
         }
 
         .fas,
@@ -171,12 +171,12 @@
           background: $info;
 
           svg {
-            stroke: $white;
+            color: $white;
           }
         }
 
         svg {
-          stroke: $info;
+          color: $info;
         }
 
         .fas,
@@ -197,12 +197,12 @@
           background: $warning;
 
           svg {
-            stroke: $white;
+            color: $white;
           }
         }
 
         svg {
-          stroke: $warning;
+          color: $warning;
         }
 
         .fas,
@@ -223,12 +223,12 @@
           background: $danger;
 
           svg {
-            stroke: $white;
+            color: $white;
           }
         }
 
         svg {
-          stroke: $danger;
+          color: $danger;
         }
 
         .fas,
@@ -253,7 +253,7 @@
         height: 18px;
         width: 18px;
         stroke-width: 1.6px;
-        stroke: $light-text;
+        color: $light-text;
       }
 
       .fas,
@@ -297,7 +297,7 @@
     svg {
       height: 14px;
       width: 14px;
-      stroke: $light-text;
+      color: $light-text;
     }
   }
 }
@@ -322,7 +322,7 @@ body {
             border-color: $accent;
 
             svg {
-              stroke: $accent;
+              color: $accent;
             }
 
             .fas,

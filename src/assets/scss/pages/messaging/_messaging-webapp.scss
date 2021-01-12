@@ -158,7 +158,7 @@ $overlay-bg-dark: linear-gradient(
             margin-left: 3px;
             width: 18px;
             height: 18px;
-            stroke: $light-text;
+            color: $light-text;
             transition: all 0.3s;
           }
         }
@@ -184,7 +184,7 @@ $overlay-bg-dark: linear-gradient(
               margin-right: 8px;
               height: 16px;
               width: 16px;
-              stroke: $light-text;
+              color: $light-text;
             }
           }
         }
@@ -606,7 +606,7 @@ body {
                 background: $fade-grey;
 
                 svg {
-                  stroke: $primary;
+                  color: $primary;
                 }
               }
             }
@@ -632,7 +632,7 @@ body {
             transition: all 0.3s;
 
             svg {
-              stroke: $placeholder;
+              color: $placeholder;
               stroke-width: 2px;
               height: 18px;
               width: 18px;
@@ -648,7 +648,7 @@ body {
               svg {
                 height: 18px;
                 width: 18px;
-                stroke: $muted-grey;
+                color: $muted-grey;
               }
 
               .meta {
@@ -685,7 +685,7 @@ body {
               background: $fade-grey;
 
               svg {
-                stroke: $primary;
+                color: $primary;
               }
             }
           }
@@ -702,7 +702,7 @@ body {
             transition: all 0.3s;
 
             svg {
-              stroke: $placeholder;
+              color: $placeholder;
               stroke-width: 2px;
               height: 18px;
               width: 18px;
@@ -732,7 +732,7 @@ body {
 
             .trigger {
               svg {
-                stroke: $dark-dark-text;
+                color: $dark-dark-text;
               }
             }
 
@@ -783,7 +783,7 @@ body {
                   background: lighten($dark-sidebar, 6%) !important;
 
                   svg {
-                    stroke: $accent;
+                    color: $accent;
                   }
                 }
               }
@@ -807,7 +807,7 @@ body {
                   background: lighten($dark-sidebar, 6%) !important;
 
                   svg {
-                    stroke: $accent;
+                    color: $accent;
                   }
                 }
               }

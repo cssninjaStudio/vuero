@@ -21,7 +21,7 @@ $curve: cubic-bezier(0.65, 0, 0.45, 1);
 
   &.is-purple {
     .checkmark-circle {
-      stroke: $h-purple !important;
+      color: $h-purple !important;
     }
 
     .checkmark {
@@ -29,13 +29,13 @@ $curve: cubic-bezier(0.65, 0, 0.45, 1);
     }
 
     .checkmark-check {
-      stroke: $h-purple !important;
+      color: $h-purple !important;
     }
   }
 
   &.is-info {
     .checkmark-circle {
-      stroke: $info !important;
+      color: $info !important;
     }
 
     .checkmark {
@@ -43,13 +43,13 @@ $curve: cubic-bezier(0.65, 0, 0.45, 1);
     }
 
     .checkmark-check {
-      stroke: $info !important;
+      color: $info !important;
     }
   }
 
   &.is-success {
     .checkmark-circle {
-      stroke: $success !important;
+      color: $success !important;
     }
 
     .checkmark {
@@ -57,13 +57,13 @@ $curve: cubic-bezier(0.65, 0, 0.45, 1);
     }
 
     .checkmark-check {
-      stroke: $success !important;
+      color: $success !important;
     }
   }
 
   &.is-warning {
     .checkmark-circle {
-      stroke: $warning !important;
+      color: $warning !important;
     }
 
     .checkmark {
@@ -71,13 +71,13 @@ $curve: cubic-bezier(0.65, 0, 0.45, 1);
     }
 
     .checkmark-check {
-      stroke: $warning !important;
+      color: $warning !important;
     }
   }
 
   &.is-danger {
     .checkmark-circle {
-      stroke: $h-red !important;
+      color: $h-red !important;
     }
 
     .checkmark {
@@ -85,7 +85,7 @@ $curve: cubic-bezier(0.65, 0, 0.45, 1);
     }
 
     .checkmark-check {
-      stroke: $h-red !important;
+      color: $h-red !important;
     }
   }
 
@@ -130,7 +130,7 @@ $curve: cubic-bezier(0.65, 0, 0.45, 1);
       stroke-width: 2;
       stroke-miterlimit: 10;
       fill: none;
-      stroke: $primary;
+      color: $primary;
     }
 
     //Checkmark
@@ -140,7 +140,7 @@ $curve: cubic-bezier(0.65, 0, 0.45, 1);
       border-radius: 50%;
       display: block;
       stroke-width: 2;
-      stroke: $placeholder;
+      color: $placeholder;
       stroke-miterlimit: 10;
       margin: 0 auto;
       box-shadow: inset 0 0 0 $primary;
@@ -151,7 +151,7 @@ $curve: cubic-bezier(0.65, 0, 0.45, 1);
       transform-origin: 50% 50%;
       stroke-dasharray: 48;
       stroke-dashoffset: 48;
-      stroke: $primary;
+      color: $primary;
     }
   }
 
@@ -213,7 +213,7 @@ body {
       .checkmark-wrap {
         .checkmark-circle,
         .checkmark-check {
-          stroke: $accent;
+          color: $accent;
         }
 
         .shadow-circle {

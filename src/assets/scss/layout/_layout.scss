@@ -358,7 +358,7 @@ body {
       height: 18px;
       width: 18px;
       stroke-width: 1.6px;
-      stroke: $light-text;
+      color: $light-text;
       transition: stroke 0.3s;
     }
 
@@ -547,7 +547,7 @@ body {
       svg {
         height: 18px;
         width: 18px;
-        stroke: $smoke-white;
+        color: $smoke-white;
         stroke-width: 1.6px;
       }
     }

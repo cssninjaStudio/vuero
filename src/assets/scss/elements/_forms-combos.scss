@@ -100,7 +100,7 @@
     svg {
       height: 20px;
       width: 20px;
-      stroke: darken($placeholder, 8%) !important;
+      color: darken($placeholder, 8%) !important;
       transition: all 0.3s;
     }
   }
@@ -155,7 +155,7 @@
 
             svg {
               &.is-purple {
-                stroke: $primary;
+                color: $primary;
               }
             }
           }
@@ -175,7 +175,7 @@
           svg {
             height: 20px;
             width: 20px;
-            stroke: $placeholder;
+            color: $placeholder;
 
             &.is-small {
               height: 14px;
@@ -389,7 +389,7 @@ body {
       svg {
         height: 18px;
         width: 18px;
-        stroke: darken($placeholder, 8%) !important;
+        color: darken($placeholder, 8%) !important;
         transform: rotate(0);
         transition: all 0.3s;
       }
@@ -539,7 +539,7 @@ body {
               transition: all 0.3s;
 
               svg {
-                stroke: $primary;
+                color: $primary;
                 stroke-width: 3px;
                 height: 14px;
                 width: 14px;
@@ -643,7 +643,7 @@ body {
       svg {
         height: 18px;
         width: 18px;
-        stroke: $dark-text;
+        color: $dark-text;
         transform: rotate(0);
         transition: all 0.3s;
       }
@@ -799,7 +799,7 @@ body {
         }
 
         .box-chevron svg {
-          stroke: lighten($accent-grey, 5%) !important;
+          color: lighten($accent-grey, 5%) !important;
         }
 
         .box-dropdown {
@@ -822,7 +822,7 @@ body {
                 }
 
                 .checkmark svg {
-                  stroke: $accent !important;
+                  color: $accent !important;
                 }
               }
 

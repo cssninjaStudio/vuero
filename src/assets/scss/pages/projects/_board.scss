@@ -67,7 +67,7 @@
       svg {
         height: 18px;
         width: 18px;
-        stroke: $dark-text;
+        color: $dark-text;
       }
 
       .dropdown {
@@ -79,7 +79,7 @@
           svg {
             height: 18px;
             width: 18px;
-            stroke: darken($light-text, 8%);
+            color: darken($light-text, 8%);
           }
         }
       }
@@ -154,14 +154,14 @@
             height: 18px;
             width: 18px;
             transition: all 0.3s;
-            stroke: $muted-grey;
+            color: $muted-grey;
           }
 
           &:hover {
             border-color: $primary;
 
             svg {
-              stroke: $primary;
+              color: $primary;
             }
           }
         }
@@ -369,7 +369,7 @@ body {
 
           &:hover {
             svg {
-              stroke: $accent !important;
+              color: $accent !important;
             }
           }
         }
@@ -379,7 +379,7 @@ body {
           border-color: $accent !important;
 
           svg {
-            stroke: $white !important;
+            color: $white !important;
           }
         }
 
@@ -394,7 +394,7 @@ body {
         }
 
         .is-trigger svg {
-          stroke: $light-white !important;
+          color: $light-white !important;
         }
       }
 

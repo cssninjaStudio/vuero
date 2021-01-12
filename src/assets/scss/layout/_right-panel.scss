@@ -99,12 +99,12 @@
           background: $fade-grey;
 
           svg {
-            stroke: $primary;
+            color: $primary;
           }
         }
 
         svg {
-          stroke: $light-text;
+          color: $light-text;
           height: 22px;
           width: 22px;
           transition: stroke 0.3s;
@@ -140,7 +140,7 @@ body {
               background: lighten($dark-sidebar, 6%);
 
               svg {
-                stroke: $accent;
+                color: $accent;
               }
             }
           }
@@ -235,7 +235,7 @@ body {
                   height: 10px;
                   width: 10px;
                   stroke-width: 3px;
-                  stroke: $white;
+                  color: $white;
                 }
               }
             }
@@ -354,14 +354,14 @@ body {
               box-shadow: $light-box-shadow;
 
               svg {
-                stroke: $primary;
+                color: $primary;
               }
             }
 
             svg {
               height: 16px;
               width: 16px;
-              stroke: $light-text;
+              color: $light-text;
             }
           }
         }
@@ -421,14 +421,14 @@ body {
                 box-shadow: $light-box-shadow;
 
                 svg {
-                  stroke: $primary;
+                  color: $primary;
                 }
               }
 
               svg {
                 height: 16px;
                 width: 16px;
-                stroke: $light-text;
+                color: $light-text;
               }
             }
           }
@@ -574,7 +574,7 @@ body {
                 border-color: $accent !important;
 
                 svg {
-                  stroke: $accent !important;
+                  color: $accent !important;
                 }
               }
             }

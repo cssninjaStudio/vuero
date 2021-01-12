@@ -104,7 +104,7 @@
         svg {
           height: 18px;
           width: 18px;
-          stroke: $dark-text;
+          color: $dark-text;
           stroke-width: 1.3px;
 
           &.is-medium {
@@ -443,14 +443,14 @@ body {
           background: lighten($fade-grey, 3%);
 
           svg {
-            stroke: $light-text;
+            color: $light-text;
           }
         }
 
         svg {
           width: 16px;
           height: 16px;
-          stroke: $light-text;
+          color: $light-text;
         }
       }
     }
@@ -518,7 +518,7 @@ body {
           background: lighten($dark-sidebar, 6%) !important;
 
           svg {
-            stroke: $accent;
+            color: $accent;
           }
         }
       }

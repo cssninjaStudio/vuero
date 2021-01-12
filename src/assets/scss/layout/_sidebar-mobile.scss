@@ -51,12 +51,12 @@
           &:hover,
           &.is-active {
             > svg {
-              stroke: $primary;
+              color: $primary;
             }
           }
 
           > svg {
-            stroke: $title-grey;
+            color: $title-grey;
             height: 20px;
             width: 20px;
             stroke-width: 1.6px;
@@ -73,7 +73,7 @@
 
           &:hover svg,
           &.is-active svg {
-            stroke: $primary;
+            color: $primary;
           }
 
           &.is-opened {
@@ -86,9 +86,10 @@
             opacity: 0;
           }
 
-          &.is-selected {
+          &.is-selected,
+          &.router-link-active {
             svg {
-              stroke: $primary;
+              color: $primary;
             }
           }
         }
@@ -108,7 +109,7 @@
 
         &.is-active {
           a svg {
-            stroke: $primary;
+            color: $primary;
           }
         }
       }
@@ -608,7 +609,7 @@ body {
             a {
               &.is-active {
                 svg {
-                  stroke: $accent;
+                  color: $accent;
                 }
               }
             }
