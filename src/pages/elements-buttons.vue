@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import { useTitle } from '@vueuse/core'
+
+useTitle('Elements - Buttons - Vuero')
+</script>
+
 <template>
   <DefaultLayout>
     <ElementsSidebar />
@@ -377,7 +383,7 @@
                     <div class="buttons">
                       <button class="button h-button is-primary is-elevated">
                         <span class="icon">
-                          <i class="fab fa-twitter"></i>
+                          <Icon icon="fa-twitter" />
                         </span>
                         <span>Tweet Now</span>
                       </button>
@@ -385,18 +391,18 @@
                         class="button h-button is-success is-rounded is-elevated"
                       >
                         <span class="icon">
-                          <i class="fas fa-check"></i>
+                          <Icon icon="fa-check" />
                         </span>
                         <span>Save Changes</span>
                       </button>
                       <button class="button">
                         <span class="icon is-small">
-                          <i class="fab fa-twitter"></i>
+                          <Icon icon="fa-twitter" />
                         </span>
                       </button>
                       <button class="button is-primary is-circle is-elevated">
                         <span class="icon is-small">
-                          <i class="fab fa-linkedin-in"></i>
+                          <Icon icon="fa-linkedin-in" />
                         </span>
                       </button>
                     </div>
@@ -533,7 +539,7 @@
                       </button>
                       <button class="button h-button is-success is-elevated">
                         <span class="icon">
-                          <i class="fas fa-check"></i>
+                          <Icon icon="fa-check" />
                         </span>
                         <span>Approve</span>
                       </button>
@@ -585,7 +591,7 @@
                       <p class="control">
                         <button class="button h-button">
                           <span class="icon is-small">
-                            <i class="fas fa-align-left"></i>
+                            <Icon icon="fa-align-left" />
                           </span>
                           <span>Left</span>
                         </button>
@@ -593,7 +599,7 @@
                       <p class="control">
                         <button class="button h-button">
                           <span class="icon is-small">
-                            <i class="fas fa-align-center"></i>
+                            <Icon icon="fa-align-center" />
                           </span>
                           <span>Center</span>
                         </button>
@@ -601,7 +607,7 @@
                       <p class="control">
                         <button class="button h-button">
                           <span class="icon is-small">
-                            <i class="fas fa-align-right"></i>
+                            <Icon icon="fa-align-right" />
                           </span>
                           <span>Right</span>
                         </button>

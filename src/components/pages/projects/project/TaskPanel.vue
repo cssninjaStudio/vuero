@@ -95,7 +95,7 @@
               <img src="/@images/icons/files/zip-format.svg" alt="" />
               <div class="meta">
                 <span>Preliminary Sketches</span>
-                <span>3MB <i class="fas fa-circle"></i> 5 days ago</span>
+                <span>3MB <Icon icon="fa-circle" /> 5 days ago</span>
               </div>
               <FileCardDropdown />
             </div>
@@ -103,7 +103,7 @@
               <img src="/@images/icons/files/sheet.svg" alt="" />
               <div class="meta">
                 <span>Project Budget</span>
-                <span>0.6MB <i class="fas fa-circle"></i> 8 days ago</span>
+                <span>0.6MB <Icon icon="fa-circle" /> 8 days ago</span>
               </div>
               <FileCardDropdown />
             </div>
@@ -111,7 +111,7 @@
               <img src="/@images/icons/files/video.svg" alt="" />
               <div class="meta">
                 <span>POC Demo</span>
-                <span>8.75MB <i class="fas fa-circle"></i> 8 days ago</span>
+                <span>8.75MB <Icon icon="fa-circle" /> 8 days ago</span>
               </div>
               <FileCardDropdown />
             </div>

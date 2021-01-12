@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import { useTitle } from '@vueuse/core'
+
+useTitle('Auth Signup 1 - Vuero')
+</script>
+
 <template>
   <AuthLayout>
     <div class="signup-nav">

@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import { useTitle } from '@vueuse/core'
+
+useTitle('Messaging chat - Admin - Vuero')
+</script>
+
 <template>
   <DefaultLayout>
     <MessagesSidebar />
@@ -120,13 +126,13 @@
                   <div class="side-actions">
                     <a class="button h-button is-rounded">
                       <span class="icon is-small">
-                        <i class="fas fa-phone"></i>
+                        <Icon icon="fa-phone" />
                       </span>
                       <span>Audio Call</span>
                     </a>
                     <a class="button h-button is-rounded">
                       <span class="icon is-small">
-                        <i class="fas fa-video"></i>
+                        <Icon icon="fa-video" />
                       </span>
                       <span>Video Call</span>
                     </a>

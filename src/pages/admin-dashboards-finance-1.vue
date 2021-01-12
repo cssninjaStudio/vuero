@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import { useTitle } from '@vueuse/core'
+
+useTitle('Dashboard Finance 1 - Admin - Vuero')
+</script>
+
 <template>
   <DefaultLayout>
     <GenericSidebar />
@@ -48,7 +54,7 @@
                         <div class="tile-head">
                           <h3 class="dark-inverted">Transactions</h3>
                           <div class="h-icon is-primary is-rounded is-small">
-                            <i class="fas fa-gem"></i>
+                            <Icon icon="fa-gem" />
                           </div>
                         </div>
                         <div class="tile-body">
@@ -68,7 +74,7 @@
                         <div class="tile-head">
                           <h3 class="dark-inverted">Subscriptions</h3>
                           <div class="h-icon is-orange is-rounded is-small">
-                            <i class="fas fa-user-plus"></i>
+                            <Icon icon="fa-user-plus" />
                           </div>
                         </div>
                         <div class="tile-body">
@@ -88,7 +94,7 @@
                         <div class="tile-head">
                           <h3 class="dark-inverted">Referals</h3>
                           <div class="h-icon is-green is-rounded is-small">
-                            <i class="fas fa-bullhorn"></i>
+                            <Icon icon="fa-bullhorn" />
                           </div>
                         </div>
                         <div class="tile-body">

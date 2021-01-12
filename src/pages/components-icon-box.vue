@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import { useTitle } from '@vueuse/core'
+
+useTitle('Components - Icon Box - Vuero')
+</script>
+
 <template>
   <DefaultLayout>
     <ComponentsSidebar />
@@ -640,37 +646,37 @@
                   <div class="card-inner">
                     <div class="icons">
                       <div class="h-icon is-medium is-primary is-rounded">
-                        <i class="fas fa-atom"></i>
+                        <Icon icon="fa-atom" />
                       </div>
                       <div class="h-icon is-medium is-info is-rounded">
-                        <i class="fas fa-birthday-cake"></i>
+                        <Icon icon="fa-birthday-cake" />
                       </div>
                       <div class="h-icon is-medium is-success is-rounded">
-                        <i class="fas fa-leaf"></i>
+                        <Icon icon="fa-leaf" />
                       </div>
                       <div class="h-icon is-medium is-warning is-rounded">
-                        <i class="fas fa-bolt"></i>
+                        <Icon icon="fa-bolt" />
                       </div>
                       <div class="h-icon is-medium is-danger is-rounded">
-                        <i class="fas fa-ankh"></i>
+                        <Icon icon="fa-ankh" />
                       </div>
                       <div class="h-icon is-medium is-purple is-rounded">
-                        <i class="fas fa-bell"></i>
+                        <Icon icon="fa-bell" />
                       </div>
                       <div class="h-icon is-medium is-yellow is-rounded">
                         <i class="fab fa-bitcoin"></i>
                       </div>
                       <div class="h-icon is-medium is-orange is-rounded">
-                        <i class="fas fa-bowling-ball"></i>
+                        <Icon icon="fa-bowling-ball" />
                       </div>
                       <div class="h-icon is-medium is-green is-rounded">
-                        <i class="fas fa-fan"></i>
+                        <Icon icon="fa-fan" />
                       </div>
                       <div class="h-icon is-medium is-red is-rounded">
-                        <i class="fas fa-envelope-open"></i>
+                        <Icon icon="fa-envelope-open" />
                       </div>
                       <div class="h-icon is-medium is-blue is-rounded">
-                        <i class="fas fa-briefcase-medical"></i>
+                        <Icon icon="fa-briefcase-medical" />
                       </div>
                     </div>
 

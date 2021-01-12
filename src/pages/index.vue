@@ -1,11 +1,14 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import { useTitle } from '@vueuse/core'
 
 import { isDark } from '/@src/composition/state/ui/darkModeState.ts'
 
 const activeTab = ref<'elements' | 'components' | 'forms' | 'plugins'>(
   'elements'
 )
+
+useTitle('Vuero - A complete Vue 3 design system')
 </script>
 
 <template>
@@ -37,9 +40,14 @@ const activeTab = ref<'elements' | 'components' | 'forms' | 'plugins'>(
               <div class="night-toggle night-toggle--daynight">
                 <input
                   id="night-toggle--daynight"
-                  v-model="isDark"
                   type="checkbox"
                   class="night-toggle--checkbox"
+                  :checked="!isDark"
+                  @change="
+                    (event) => {
+                      isDark = !event.target.checked
+                    }
+                  "
                 />
                 <label class="night-toggle--btn" for="night-toggle--daynight"
                   ><span class="night-toggle--feature"></span
@@ -551,7 +559,7 @@ const activeTab = ref<'elements' | 'components' | 'forms' | 'plugins'>(
       <!-- Back To Top Button -->
       <div id="backtotop">
         <a href="#">
-          <i class="fas fa-angle-up"></i>
+          <Icon icon="fa-angle-up" />
         </a>
       </div>
     </div>

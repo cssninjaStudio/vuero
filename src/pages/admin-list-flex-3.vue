@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import { useTitle } from '@vueuse/core'
+
+useTitle('List Flex 3 - Admin - Vuero')
+</script>
+
 <template>
   <DefaultLayout>
     <LayoutsSidebar />
@@ -159,17 +165,17 @@
                       </div>
                       <div class="flex-table-cell" data-th="Difficulty">
                         <span class="dot-levels">
-                          <i class="fas fa-circle dot active"></i>
-                          <i class="fas fa-circle dot"></i>
-                          <i class="fas fa-circle dot"></i>
-                          <i class="fas fa-circle dot"></i>
-                          <i class="fas fa-circle dot"></i>
+                          <Icon icon="fa-circle dot active" />
+                          <Icon icon="fa-circle dot" />
+                          <Icon icon="fa-circle dot" />
+                          <Icon icon="fa-circle dot" />
+                          <Icon icon="fa-circle dot" />
                         </span>
                       </div>
                       <div class="flex-table-cell cell-end" data-th="Actions">
                         <a
                           class="button h-button has-dot dark-outlined is-pushed-mobile"
-                          >Purchase <i class="fas fa-circle dot"></i> $26</a
+                          >Purchase <Icon icon="fa-circle dot" /> $26</a
                         >
                       </div>
                     </div>
@@ -228,17 +234,17 @@
                       </div>
                       <div class="flex-table-cell" data-th="Difficulty">
                         <span class="dot-levels">
-                          <i class="fas fa-circle dot active"></i>
-                          <i class="fas fa-circle dot active"></i>
-                          <i class="fas fa-circle dot active"></i>
-                          <i class="fas fa-circle dot active"></i>
-                          <i class="fas fa-circle dot"></i>
+                          <Icon icon="fa-circle dot active" />
+                          <Icon icon="fa-circle dot active" />
+                          <Icon icon="fa-circle dot active" />
+                          <Icon icon="fa-circle dot active" />
+                          <Icon icon="fa-circle dot" />
                         </span>
                       </div>
                       <div class="flex-table-cell cell-end" data-th="Actions">
                         <a
                           class="button h-button has-dot dark-outlined is-pushed-mobile"
-                          >Purchase <i class="fas fa-circle dot"></i> $12</a
+                          >Purchase <Icon icon="fa-circle dot" /> $12</a
                         >
                       </div>
                     </div>
@@ -297,17 +303,17 @@
                       </div>
                       <div class="flex-table-cell" data-th="Difficulty">
                         <span class="dot-levels">
-                          <i class="fas fa-circle dot active"></i>
-                          <i class="fas fa-circle dot active"></i>
-                          <i class="fas fa-circle dot"></i>
-                          <i class="fas fa-circle dot"></i>
-                          <i class="fas fa-circle dot"></i>
+                          <Icon icon="fa-circle dot active" />
+                          <Icon icon="fa-circle dot active" />
+                          <Icon icon="fa-circle dot" />
+                          <Icon icon="fa-circle dot" />
+                          <Icon icon="fa-circle dot" />
                         </span>
                       </div>
                       <div class="flex-table-cell cell-end" data-th="Actions">
                         <a
                           class="button h-button has-dot dark-outlined is-pushed-mobile"
-                          >Purchase <i class="fas fa-circle dot"></i> $16</a
+                          >Purchase <Icon icon="fa-circle dot" /> $16</a
                         >
                       </div>
                     </div>
@@ -366,17 +372,17 @@
                       </div>
                       <div class="flex-table-cell" data-th="Difficulty">
                         <span class="dot-levels">
-                          <i class="fas fa-circle dot active"></i>
-                          <i class="fas fa-circle dot active"></i>
-                          <i class="fas fa-circle dot active"></i>
-                          <i class="fas fa-circle dot"></i>
-                          <i class="fas fa-circle dot"></i>
+                          <Icon icon="fa-circle dot active" />
+                          <Icon icon="fa-circle dot active" />
+                          <Icon icon="fa-circle dot active" />
+                          <Icon icon="fa-circle dot" />
+                          <Icon icon="fa-circle dot" />
                         </span>
                       </div>
                       <div class="flex-table-cell cell-end" data-th="Actions">
                         <a
                           class="button h-button has-dot dark-outlined is-pushed-mobile"
-                          >Purchase <i class="fas fa-circle dot"></i> FREE</a
+                          >Purchase <Icon icon="fa-circle dot" /> FREE</a
                         >
                       </div>
                     </div>
@@ -435,17 +441,17 @@
                       </div>
                       <div class="flex-table-cell" data-th="Difficulty">
                         <span class="dot-levels">
-                          <i class="fas fa-circle dot active"></i>
-                          <i class="fas fa-circle dot"></i>
-                          <i class="fas fa-circle dot"></i>
-                          <i class="fas fa-circle dot"></i>
-                          <i class="fas fa-circle dot"></i>
+                          <Icon icon="fa-circle dot active" />
+                          <Icon icon="fa-circle dot" />
+                          <Icon icon="fa-circle dot" />
+                          <Icon icon="fa-circle dot" />
+                          <Icon icon="fa-circle dot" />
                         </span>
                       </div>
                       <div class="flex-table-cell cell-end" data-th="Actions">
                         <a
                           class="button h-button has-dot dark-outlined is-pushed-mobile"
-                          >Purchase <i class="fas fa-circle dot"></i> $8</a
+                          >Purchase <Icon icon="fa-circle dot" /> $8</a
                         >
                       </div>
                     </div>
@@ -504,17 +510,17 @@
                       </div>
                       <div class="flex-table-cell" data-th="Difficulty">
                         <span class="dot-levels">
-                          <i class="fas fa-circle dot active"></i>
-                          <i class="fas fa-circle dot active"></i>
-                          <i class="fas fa-circle dot active"></i>
-                          <i class="fas fa-circle dot active"></i>
-                          <i class="fas fa-circle dot"></i>
+                          <Icon icon="fa-circle dot active" />
+                          <Icon icon="fa-circle dot active" />
+                          <Icon icon="fa-circle dot active" />
+                          <Icon icon="fa-circle dot active" />
+                          <Icon icon="fa-circle dot" />
                         </span>
                       </div>
                       <div class="flex-table-cell cell-end" data-th="Actions">
                         <a
                           class="button h-button has-dot dark-outlined is-pushed-mobile"
-                          >Purchase <i class="fas fa-circle dot"></i> $25</a
+                          >Purchase <Icon icon="fa-circle dot" /> $25</a
                         >
                       </div>
                     </div>
@@ -573,17 +579,17 @@
                       </div>
                       <div class="flex-table-cell" data-th="Difficulty">
                         <span class="dot-levels">
-                          <i class="fas fa-circle dot active"></i>
-                          <i class="fas fa-circle dot active"></i>
-                          <i class="fas fa-circle dot active"></i>
-                          <i class="fas fa-circle dot"></i>
-                          <i class="fas fa-circle dot"></i>
+                          <Icon icon="fa-circle dot active" />
+                          <Icon icon="fa-circle dot active" />
+                          <Icon icon="fa-circle dot active" />
+                          <Icon icon="fa-circle dot" />
+                          <Icon icon="fa-circle dot" />
                         </span>
                       </div>
                       <div class="flex-table-cell cell-end" data-th="Actions">
                         <a
                           class="button h-button has-dot dark-outlined is-pushed-mobile"
-                          >Purchase <i class="fas fa-circle dot"></i> $12</a
+                          >Purchase <Icon icon="fa-circle dot" /> $12</a
                         >
                       </div>
                     </div>
@@ -642,17 +648,17 @@
                       </div>
                       <div class="flex-table-cell" data-th="Difficulty">
                         <span class="dot-levels">
-                          <i class="fas fa-circle dot active"></i>
-                          <i class="fas fa-circle dot active"></i>
-                          <i class="fas fa-circle dot active"></i>
-                          <i class="fas fa-circle dot active"></i>
-                          <i class="fas fa-circle dot active"></i>
+                          <Icon icon="fa-circle dot active" />
+                          <Icon icon="fa-circle dot active" />
+                          <Icon icon="fa-circle dot active" />
+                          <Icon icon="fa-circle dot active" />
+                          <Icon icon="fa-circle dot active" />
                         </span>
                       </div>
                       <div class="flex-table-cell cell-end" data-th="Actions">
                         <a
                           class="button h-button has-dot dark-outlined is-pushed-mobile"
-                          >Purchase <i class="fas fa-circle dot"></i> $34</a
+                          >Purchase <Icon icon="fa-circle dot" /> $34</a
                         >
                       </div>
                     </div>
@@ -711,17 +717,17 @@
                       </div>
                       <div class="flex-table-cell" data-th="Difficulty">
                         <span class="dot-levels">
-                          <i class="fas fa-circle dot active"></i>
-                          <i class="fas fa-circle dot active"></i>
-                          <i class="fas fa-circle dot active"></i>
-                          <i class="fas fa-circle dot active"></i>
-                          <i class="fas fa-circle dot"></i>
+                          <Icon icon="fa-circle dot active" />
+                          <Icon icon="fa-circle dot active" />
+                          <Icon icon="fa-circle dot active" />
+                          <Icon icon="fa-circle dot active" />
+                          <Icon icon="fa-circle dot" />
                         </span>
                       </div>
                       <div class="flex-table-cell cell-end" data-th="Actions">
                         <a
                           class="button h-button has-dot dark-outlined is-pushed-mobile"
-                          >Purchase <i class="fas fa-circle dot"></i> $22</a
+                          >Purchase <Icon icon="fa-circle dot" /> $22</a
                         >
                       </div>
                     </div>
@@ -780,17 +786,17 @@
                       </div>
                       <div class="flex-table-cell" data-th="Difficulty">
                         <span class="dot-levels">
-                          <i class="fas fa-circle dot active"></i>
-                          <i class="fas fa-circle dot active"></i>
-                          <i class="fas fa-circle dot active"></i>
-                          <i class="fas fa-circle dot active"></i>
-                          <i class="fas fa-circle dot active"></i>
+                          <Icon icon="fa-circle dot active" />
+                          <Icon icon="fa-circle dot active" />
+                          <Icon icon="fa-circle dot active" />
+                          <Icon icon="fa-circle dot active" />
+                          <Icon icon="fa-circle dot active" />
                         </span>
                       </div>
                       <div class="flex-table-cell cell-end" data-th="Actions">
                         <a
                           class="button h-button has-dot dark-outlined is-pushed-mobile"
-                          >Purchase <i class="fas fa-circle dot"></i> $35</a
+                          >Purchase <Icon icon="fa-circle dot" /> $35</a
                         >
                       </div>
                     </div>

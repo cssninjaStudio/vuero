@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import { useTitle } from '@vueuse/core'
+
+useTitle('Dashboards Charts Apex - WebApp - Vuero')
+</script>
+
 <template>
   <WebappLayout>
     <GenericMobileSubsidebar />

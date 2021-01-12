@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import { useTitle } from '@vueuse/core'
+
+useTitle('Dashboard Banking 3 - Admin - Vuero')
+</script>
+
 <template>
   <DefaultLayout>
     <GenericSidebar />

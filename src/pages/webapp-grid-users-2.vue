@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import { useTitle } from '@vueuse/core'
+
+useTitle('Grid Users 2 - WebApp - Vuero')
+</script>
+
 <template>
   <WebappLayout>
     <LayoutsMobileSubsidebar />
@@ -82,7 +88,7 @@
               </div>
               <button class="button h-button is-primary is-raised">
                 <span class="icon">
-                  <i class="fas fa-plus"></i>
+                  <Icon icon="fa-plus" />
                 </span>
                 <span>Add User</span>
               </button>
@@ -126,7 +132,7 @@
                           <span>37 tasks remaining</span>
                         </div>
                         <div class="status-icon is-success">
-                          <i class="fas fa-check"></i>
+                          <Icon icon="fa-check" />
                         </div>
                       </div>
                       <div class="buttons">
@@ -240,7 +246,7 @@
                           <span>59 tasks remaining</span>
                         </div>
                         <div class="status-icon is-warning">
-                          <i class="fas fa-exclamation"></i>
+                          <Icon icon="fa-exclamation" />
                         </div>
                       </div>
                       <div class="buttons">
@@ -346,7 +352,7 @@
                           <span>21 tasks remaining</span>
                         </div>
                         <div class="status-icon is-success">
-                          <i class="fas fa-check"></i>
+                          <Icon icon="fa-check" />
                         </div>
                       </div>
                       <div class="buttons">
@@ -452,7 +458,7 @@
                           <span>11 tasks remaining</span>
                         </div>
                         <div class="status-icon is-success">
-                          <i class="fas fa-check"></i>
+                          <Icon icon="fa-check" />
                         </div>
                       </div>
                       <div class="buttons">
@@ -550,7 +556,7 @@
                           <span>17 tasks remaining</span>
                         </div>
                         <div class="status-icon is-danger">
-                          <i class="fas fa-times"></i>
+                          <Icon icon="fa-times" />
                         </div>
                       </div>
                       <div class="buttons">
@@ -644,7 +650,7 @@
                           <span>14 tasks remaining</span>
                         </div>
                         <div class="status-icon is-success">
-                          <i class="fas fa-check"></i>
+                          <Icon icon="fa-check" />
                         </div>
                       </div>
                       <div class="buttons">
@@ -746,7 +752,7 @@
                           <span>18 tasks remaining</span>
                         </div>
                         <div class="status-icon is-success">
-                          <i class="fas fa-check"></i>
+                          <Icon icon="fa-check" />
                         </div>
                       </div>
                       <div class="buttons">
@@ -840,7 +846,7 @@
                           <span>27 tasks remaining</span>
                         </div>
                         <div class="status-icon is-success">
-                          <i class="fas fa-check"></i>
+                          <Icon icon="fa-check" />
                         </div>
                       </div>
                       <div class="buttons">
@@ -934,7 +940,7 @@
                           <span>31 tasks remaining</span>
                         </div>
                         <div class="status-icon is-success">
-                          <i class="fas fa-check"></i>
+                          <Icon icon="fa-check" />
                         </div>
                       </div>
                       <div class="buttons">
@@ -1048,7 +1054,7 @@
                           <span>9 tasks remaining</span>
                         </div>
                         <div class="status-icon is-success">
-                          <i class="fas fa-check"></i>
+                          <Icon icon="fa-check" />
                         </div>
                       </div>
                       <div class="buttons">
@@ -1154,7 +1160,7 @@
                           <span>22 tasks remaining</span>
                         </div>
                         <div class="status-icon is-success">
-                          <i class="fas fa-check"></i>
+                          <Icon icon="fa-check" />
                         </div>
                       </div>
                       <div class="buttons">
@@ -1248,7 +1254,7 @@
                           <span>43 tasks remaining</span>
                         </div>
                         <div class="status-icon is-warning">
-                          <i class="fas fa-exclamation"></i>
+                          <Icon icon="fa-exclamation" />
                         </div>
                       </div>
                       <div class="buttons">
@@ -1346,7 +1352,7 @@
                           <span>13 tasks remaining</span>
                         </div>
                         <div class="status-icon is-success">
-                          <i class="fas fa-check"></i>
+                          <Icon icon="fa-check" />
                         </div>
                       </div>
                       <div class="buttons">
@@ -1452,7 +1458,7 @@
                           <span>39 tasks remaining</span>
                         </div>
                         <div class="status-icon is-success">
-                          <i class="fas fa-check"></i>
+                          <Icon icon="fa-check" />
                         </div>
                       </div>
                       <div class="buttons">
@@ -1546,7 +1552,7 @@
                           <span>7 tasks remaining</span>
                         </div>
                         <div class="status-icon is-success">
-                          <i class="fas fa-check"></i>
+                          <Icon icon="fa-check" />
                         </div>
                       </div>
                       <div class="buttons">
@@ -1640,7 +1646,7 @@
                           <span>19 tasks remaining</span>
                         </div>
                         <div class="status-icon is-success">
-                          <i class="fas fa-check"></i>
+                          <Icon icon="fa-check" />
                         </div>
                       </div>
                       <div class="buttons">
@@ -1742,7 +1748,7 @@
                           <span>14 tasks remaining</span>
                         </div>
                         <div class="status-icon is-success">
-                          <i class="fas fa-check"></i>
+                          <Icon icon="fa-check" />
                         </div>
                       </div>
                       <div class="buttons">
@@ -1848,7 +1854,7 @@
                           <span>5 tasks remaining</span>
                         </div>
                         <div class="status-icon is-success">
-                          <i class="fas fa-check"></i>
+                          <Icon icon="fa-check" />
                         </div>
                       </div>
                       <div class="buttons">

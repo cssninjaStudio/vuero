@@ -43,8 +43,7 @@
           <div>
             <span class="moto"
               >Designed and coded with
-              <i class="fa fa-heart text-danger p-l-5 p-r-5"></i> by CSS
-              Ninja.</span
+              <Icon icon="fa-heart" class="text-danger" /> by CSS Ninja.</span
             >
             <div class="social-links p-t-10 p-b-10">
               <a href="#">

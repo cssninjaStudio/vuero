@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import { useTitle } from '@vueuse/core'
+
+useTitle('Components - Plugins Videogallery - Vuero')
+</script>
+
 <template>
   <DefaultLayout>
     <ComponentsSidebar />
@@ -137,12 +143,12 @@ lightGallery(document.getElementById(&#x27;videogallery&#x27;));
             <div id="videogallery" class="light-gallery-wrap">
               <a
                 href="https://www.youtube.com/watch?v=4vtL0Tq13E8"
-                data-poster="assets/img/photo/video/poster/1.jpg"
+                data-poster="/@images/photo/video/poster/1.jpg"
               >
                 <div class="video-overlay"></div>
                 <div class="video-button">
                   <div class="button-inner">
-                    <i class="fas fa-play"></i>
+                    <Icon icon="fa-play" />
                   </div>
                 </div>
                 <img
@@ -155,12 +161,12 @@ lightGallery(document.getElementById(&#x27;videogallery&#x27;));
               </a>
               <a
                 href="https://www.youtube.com/watch?v=Ke90Tje7VS0"
-                data-poster="assets/img/photo/video/poster/2.jpg"
+                data-poster="/@images/photo/video/poster/2.jpg"
               >
                 <div class="video-overlay"></div>
                 <div class="video-button">
                   <div class="button-inner">
-                    <i class="fas fa-play"></i>
+                    <Icon icon="fa-play" />
                   </div>
                 </div>
                 <img
@@ -173,12 +179,12 @@ lightGallery(document.getElementById(&#x27;videogallery&#x27;));
               </a>
               <a
                 href="https://www.youtube.com/watch?v=nhBVL41-_Cw"
-                data-poster="assets/img/photo/video/poster/3.jpg"
+                data-poster="/@images/photo/video/poster/3.jpg"
               >
                 <div class="video-overlay"></div>
                 <div class="video-button">
                   <div class="button-inner">
-                    <i class="fas fa-play"></i>
+                    <Icon icon="fa-play" />
                   </div>
                 </div>
                 <img
@@ -191,12 +197,12 @@ lightGallery(document.getElementById(&#x27;videogallery&#x27;));
               </a>
               <a
                 href="https://www.youtube.com/watch?v=H0wHx_ID_vo&t=269s"
-                data-poster="assets/img/photo/video/poster/4.jpg"
+                data-poster="/@images/photo/video/poster/4.jpg"
               >
                 <div class="video-overlay"></div>
                 <div class="video-button">
                   <div class="button-inner">
-                    <i class="fas fa-play"></i>
+                    <Icon icon="fa-play" />
                   </div>
                 </div>
                 <img
@@ -209,12 +215,12 @@ lightGallery(document.getElementById(&#x27;videogallery&#x27;));
               </a>
               <a
                 href="https://www.youtube.com/watch?v=Ttf3CEsEwMQ"
-                data-poster="assets/img/photo/video/poster/5.jpg"
+                data-poster="/@images/photo/video/poster/5.jpg"
               >
                 <div class="video-overlay"></div>
                 <div class="video-button">
                   <div class="button-inner">
-                    <i class="fas fa-play"></i>
+                    <Icon icon="fa-play" />
                   </div>
                 </div>
                 <img
@@ -227,12 +233,12 @@ lightGallery(document.getElementById(&#x27;videogallery&#x27;));
               </a>
               <a
                 href="https://www.youtube.com/watch?v=roywYSEPSvc"
-                data-poster="assets/img/photo/video/poster/6.jpg"
+                data-poster="/@images/photo/video/poster/6.jpg"
               >
                 <div class="video-overlay"></div>
                 <div class="video-button">
                   <div class="button-inner">
-                    <i class="fas fa-play"></i>
+                    <Icon icon="fa-play" />
                   </div>
                 </div>
                 <img
@@ -245,12 +251,12 @@ lightGallery(document.getElementById(&#x27;videogallery&#x27;));
               </a>
               <a
                 href="https://www.youtube.com/watch?v=0PA69L88HeI"
-                data-poster="assets/img/photo/video/poster/7.jpg"
+                data-poster="/@images/photo/video/poster/7.jpg"
               >
                 <div class="video-overlay"></div>
                 <div class="video-button">
                   <div class="button-inner">
-                    <i class="fas fa-play"></i>
+                    <Icon icon="fa-play" />
                   </div>
                 </div>
                 <img
@@ -263,12 +269,12 @@ lightGallery(document.getElementById(&#x27;videogallery&#x27;));
               </a>
               <a
                 href="https://www.youtube.com/watch?v=3Vl8a3zYjiw"
-                data-poster="assets/img/photo/video/poster/8.jpg"
+                data-poster="/@images/photo/video/poster/8.jpg"
               >
                 <div class="video-overlay"></div>
                 <div class="video-button">
                   <div class="button-inner">
-                    <i class="fas fa-play"></i>
+                    <Icon icon="fa-play" />
                   </div>
                 </div>
                 <img
@@ -281,12 +287,12 @@ lightGallery(document.getElementById(&#x27;videogallery&#x27;));
               </a>
               <a
                 href="https://www.youtube.com/watch?v=VjXb3PRL9WI"
-                data-poster="assets/img/photo/video/poster/9.jpg"
+                data-poster="/@images/photo/video/poster/9.jpg"
               >
                 <div class="video-overlay"></div>
                 <div class="video-button">
                   <div class="button-inner">
-                    <i class="fas fa-play"></i>
+                    <Icon icon="fa-play" />
                   </div>
                 </div>
                 <img

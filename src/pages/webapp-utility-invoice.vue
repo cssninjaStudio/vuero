@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import { useTitle } from '@vueuse/core'
+
+useTitle('Utility Invoice - WebApp - Vuero')
+</script>
+
 <template>
   <WebappLayout>
     <LayoutsMobileSubsidebar />

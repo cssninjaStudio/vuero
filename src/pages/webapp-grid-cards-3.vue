@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import { useTitle } from '@vueuse/core'
+
+useTitle('Grid Cards 3 - WebApp - Vuero')
+</script>
+
 <template>
   <WebappLayout>
     <LayoutsMobileSubsidebar />
@@ -82,7 +88,7 @@
               </div>
               <button class="button h-button is-primary is-raised">
                 <span class="icon">
-                  <i class="fas fa-plus"></i>
+                  <Icon icon="fa-plus" />
                 </span>
                 <span>Add User</span>
               </button>

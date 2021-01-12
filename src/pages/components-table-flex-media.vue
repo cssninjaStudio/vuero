@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import { useTitle } from '@vueuse/core'
+
+useTitle('Components - Table Flex Media - Vuero')
+</script>
+
 <template>
   <DefaultLayout>
     <ComponentsSidebar />

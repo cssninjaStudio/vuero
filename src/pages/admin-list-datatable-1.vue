@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import { useTitle } from '@vueuse/core'
+
+useTitle('List Datatable 1 - Admin - Vuero')
+</script>
+
 <template>
   <DefaultLayout>
     <LayoutsSidebar />
@@ -42,7 +48,7 @@
               <p class="control">
                 <button class="button h-button">
                   <span class="icon is-small">
-                    <i class="fas fa-check"></i>
+                    <Icon icon="fa-check" />
                   </span>
                   <span>Promote</span>
                 </button>
@@ -50,7 +56,7 @@
               <p class="control">
                 <button class="button h-button">
                   <span class="icon is-small">
-                    <i class="fas fa-times"></i>
+                    <Icon icon="fa-times" />
                   </span>
                   <span>Delete</span>
                 </button>
@@ -58,7 +64,7 @@
               <p class="control">
                 <button class="button h-button">
                   <span class="icon is-small">
-                    <i class="fas fa-arrow-right"></i>
+                    <Icon icon="fa-arrow-right" />
                   </span>
                   <span>Transfer</span>
                 </button>
@@ -68,7 +74,7 @@
             <div class="buttons">
               <button class="button h-button is-primary is-elevated">
                 <span class="icon">
-                  <i class="fas fa-plus"></i>
+                  <Icon icon="fa-plus" />
                 </span>
                 <span>Add User</span>
               </button>

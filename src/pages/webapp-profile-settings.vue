@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import { useTitle } from '@vueuse/core'
+
+useTitle('Profile Settings - WebApp - Vuero')
+</script>
+
 <template>
   <WebappV2Layout>
     <LayoutsMobileSubsidebar />

@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import { useTitle } from '@vueuse/core'
+
+useTitle('Dashboard Apps 1 - Admin - Vuero')
+</script>
+
 <template>
   <DefaultLayout>
     <GenericSidebar />
@@ -53,7 +59,7 @@
                     <p>$0 delivery fee for orders over $10 for 30 days</p>
                     <a class="action-link">
                       <span>Learn More</span>
-                      <i class="fas fa-arrow-right"></i>
+                      <Icon icon="fa-arrow-right" />
                     </a>
                   </div>
                 </div>
@@ -349,9 +355,9 @@
                                 <h4>Mario's Place</h4>
                                 <p>
                                   <span>Pizza</span>
-                                  <i class="fas fa-circle"></i>
+                                  <Icon icon="fa-circle" />
                                   <span class="rating">
-                                    <i class="fas fa-star"></i>
+                                    <Icon icon="fa-star" />
                                     <span>4.9</span>
                                   </span>
                                 </p>
@@ -389,9 +395,9 @@
                                 <h4>Jimmy's Downtown</h4>
                                 <p>
                                   <span>Fast</span>
-                                  <i class="fas fa-circle"></i>
+                                  <Icon icon="fa-circle" />
                                   <span class="rating">
-                                    <i class="fas fa-star"></i>
+                                    <Icon icon="fa-star" />
                                     <span>4.5</span>
                                   </span>
                                 </p>
@@ -429,9 +435,9 @@
                                 <h4>Fruity Loops</h4>
                                 <p>
                                   <span>Fruits</span>
-                                  <i class="fas fa-circle"></i>
+                                  <Icon icon="fa-circle" />
                                   <span class="rating">
-                                    <i class="fas fa-star"></i>
+                                    <Icon icon="fa-star" />
                                     <span>4.8</span>
                                   </span>
                                 </p>
@@ -469,9 +475,9 @@
                                 <h4>The Green Heaven</h4>
                                 <p>
                                   <span>Veggie</span>
-                                  <i class="fas fa-circle"></i>
+                                  <Icon icon="fa-circle" />
                                   <span class="rating">
-                                    <i class="fas fa-star"></i>
+                                    <Icon icon="fa-star" />
                                     <span>5.0</span>
                                   </span>
                                 </p>
@@ -509,9 +515,9 @@
                                 <h4>Salad Bar</h4>
                                 <p>
                                   <span>Veggie</span>
-                                  <i class="fas fa-circle"></i>
+                                  <Icon icon="fa-circle" />
                                   <span class="rating">
-                                    <i class="fas fa-star"></i>
+                                    <Icon icon="fa-star" />
                                     <span>4.8</span>
                                   </span>
                                 </p>
@@ -549,9 +555,9 @@
                                 <h4>Little Italy</h4>
                                 <p>
                                   <span>Pasta</span>
-                                  <i class="fas fa-circle"></i>
+                                  <Icon icon="fa-circle" />
                                   <span class="rating">
-                                    <i class="fas fa-star"></i>
+                                    <Icon icon="fa-star" />
                                     <span>1.1</span>
                                   </span>
                                 </p>
@@ -589,9 +595,9 @@
                                 <h4>The Noodle Bar</h4>
                                 <p>
                                   <span>Thai</span>
-                                  <i class="fas fa-circle"></i>
+                                  <Icon icon="fa-circle" />
                                   <span class="rating">
-                                    <i class="fas fa-star"></i>
+                                    <Icon icon="fa-star" />
                                     <span>4.9</span>
                                   </span>
                                 </p>
@@ -629,9 +635,9 @@
                                 <h4>Jerry's Epic Burger</h4>
                                 <p>
                                   <span>Fast</span>
-                                  <i class="fas fa-circle"></i>
+                                  <Icon icon="fa-circle" />
                                   <span class="rating">
-                                    <i class="fas fa-star"></i>
+                                    <Icon icon="fa-star" />
                                     <span>5.0</span>
                                   </span>
                                 </p>
@@ -669,9 +675,9 @@
                                 <h4>Meals From The Sea</h4>
                                 <p>
                                   <span>Fish</span>
-                                  <i class="fas fa-circle"></i>
+                                  <Icon icon="fa-circle" />
                                   <span class="rating">
-                                    <i class="fas fa-star"></i>
+                                    <Icon icon="fa-star" />
                                     <span>4.7</span>
                                   </span>
                                 </p>
@@ -709,9 +715,9 @@
                                 <h4>Delicious Little Things</h4>
                                 <p>
                                   <span>Cakes</span>
-                                  <i class="fas fa-circle"></i>
+                                  <Icon icon="fa-circle" />
                                   <span class="rating">
-                                    <i class="fas fa-star"></i>
+                                    <Icon icon="fa-star" />
                                     <span>5.0</span>
                                   </span>
                                 </p>
@@ -749,9 +755,9 @@
                                 <h4>Pollos Hermanos</h4>
                                 <p>
                                   <span>Fast</span>
-                                  <i class="fas fa-circle"></i>
+                                  <Icon icon="fa-circle" />
                                   <span class="rating">
-                                    <i class="fas fa-star"></i>
+                                    <Icon icon="fa-star" />
                                     <span>5.0</span>
                                   </span>
                                 </p>
@@ -789,9 +795,9 @@
                                 <h4>Iced & Delicious</h4>
                                 <p>
                                   <span>Cakes</span>
-                                  <i class="fas fa-circle"></i>
+                                  <Icon icon="fa-circle" />
                                   <span class="rating">
-                                    <i class="fas fa-star"></i>
+                                    <Icon icon="fa-star" />
                                     <span>4.2</span>
                                   </span>
                                 </p>
@@ -829,9 +835,9 @@
                                 <h4>Osaka Sushi</h4>
                                 <p>
                                   <span>Sushi</span>
-                                  <i class="fas fa-circle"></i>
+                                  <Icon icon="fa-circle" />
                                   <span class="rating">
-                                    <i class="fas fa-star"></i>
+                                    <Icon icon="fa-star" />
                                     <span>4.9</span>
                                   </span>
                                 </p>
@@ -869,9 +875,9 @@
                                 <h4>Quick Treats</h4>
                                 <p>
                                   <span>Veggie</span>
-                                  <i class="fas fa-circle"></i>
+                                  <Icon icon="fa-circle" />
                                   <span class="rating">
-                                    <i class="fas fa-star"></i>
+                                    <Icon icon="fa-star" />
                                     <span>3.8</span>
                                   </span>
                                 </p>
@@ -909,9 +915,9 @@
                                 <h4>Sam' Dwich</h4>
                                 <p>
                                   <span>Veggie</span>
-                                  <i class="fas fa-circle"></i>
+                                  <Icon icon="fa-circle" />
                                   <span class="rating">
-                                    <i class="fas fa-star"></i>
+                                    <Icon icon="fa-star" />
                                     <span>4.5</span>
                                   </span>
                                 </p>
@@ -949,9 +955,9 @@
                                 <h4>Sunchine Cookies</h4>
                                 <p>
                                   <span>Cakes</span>
-                                  <i class="fas fa-circle"></i>
+                                  <Icon icon="fa-circle" />
                                   <span class="rating">
-                                    <i class="fas fa-star"></i>
+                                    <Icon icon="fa-star" />
                                     <span>4.9</span>
                                   </span>
                                 </p>
@@ -989,9 +995,9 @@
                                 <h4>O' Fried Chicken</h4>
                                 <p>
                                   <span>Fast</span>
-                                  <i class="fas fa-circle"></i>
+                                  <Icon icon="fa-circle" />
                                   <span class="rating">
-                                    <i class="fas fa-star"></i>
+                                    <Icon icon="fa-star" />
                                     <span>1.0</span>
                                   </span>
                                 </p>
@@ -1029,9 +1035,9 @@
                                 <h4>Bangkok Woks</h4>
                                 <p>
                                   <span>Thai</span>
-                                  <i class="fas fa-circle"></i>
+                                  <Icon icon="fa-circle" />
                                   <span class="rating">
-                                    <i class="fas fa-star"></i>
+                                    <Icon icon="fa-star" />
                                     <span>4.5</span>
                                   </span>
                                 </p>

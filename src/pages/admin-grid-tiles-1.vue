@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import { useTitle } from '@vueuse/core'
+
+useTitle('Grid Tiles 1 - Admin - Vuero')
+</script>
+
 <template>
   <DefaultLayout>
     <LayoutsSidebar />
@@ -98,7 +104,7 @@
               </div>
               <button class="button h-button is-primary is-raised">
                 <span class="icon">
-                  <i class="fas fa-plus"></i>
+                  <Icon icon="fa-plus" />
                 </span>
                 <span>Add User</span>
               </button>

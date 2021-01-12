@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import { useTitle } from '@vueuse/core'
+
+useTitle('List View 1 - WebApp - Vuero')
+</script>
+
 <template>
   <WebappLayout>
     <LayoutsMobileSubsidebar />
@@ -40,7 +46,7 @@
             <div class="buttons">
               <button class="button h-button is-primary is-elevated">
                 <span class="icon">
-                  <i class="fas fa-check"></i>
+                  <Icon icon="fa-check" />
                 </span>
                 <span>Approve</span>
               </button>

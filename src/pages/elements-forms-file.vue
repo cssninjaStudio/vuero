@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import { useTitle } from '@vueuse/core'
+
+useTitle('Elements - Forms File - Vuero')
+</script>
+
 <template>
   <DefaultLayout>
     <ElementsSidebar />
@@ -98,7 +104,7 @@
                             />
                             <span class="file-cta">
                               <span class="file-icon">
-                                <i class="fas fa-cloud-upload-alt"></i>
+                                <Icon icon="fa-cloud-upload-alt" />
                               </span>
                               <span class="file-label"> Choose a file… </span>
                             </span>
@@ -116,7 +122,7 @@
                             />
                             <span class="file-cta">
                               <span class="file-icon">
-                                <i class="fas fa-cloud-upload-alt"></i>
+                                <Icon icon="fa-cloud-upload-alt" />
                               </span>
                               <span class="file-label"> Choose a file… </span>
                             </span>

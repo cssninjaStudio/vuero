@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import { isDark } from '/@src/composition/state/ui/darkModeState.ts'
+</script>
+
 <template>
   <nav class="wizard-navigation">
     <RouterLink :to="{ name: 'index' }" class="wizard-brand">
@@ -71,7 +75,15 @@
     <div class="navbar-item is-dark-mode">
       <div class="navbar-icon">
         <label class="dark-mode">
-          <input type="checkbox" checked />
+          <input
+            type="checkbox"
+            :checked="!isDark"
+            @change="
+              (event) => {
+                isDark = !event.target.checked
+              }
+            "
+          />
           <span></span>
         </label>
       </div>

@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import { useTitle } from '@vueuse/core'
+
+useTitle('Dashboard Charts Apex - Admin - Vuero')
+</script>
+
 <template>
   <DefaultLayout>
     <GenericSidebar />

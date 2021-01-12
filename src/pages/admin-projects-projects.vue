@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import { useTitle } from '@vueuse/core'
+
+useTitle('Projects projects - Admin - Vuero')
+</script>
+
 <template>
   <DefaultLayout>
     <LayoutsSidebar />

@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import { useTitle } from '@vueuse/core'
+
+useTitle('Wizard V1 - Vuero')
+</script>
+
 <template>
   <MinimalLayout>
     <!--Wizard Navbar-->

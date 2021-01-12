@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import { useTitle } from '@vueuse/core'
+
+useTitle('List Datatable 2 - WebApp - Vuero')
+</script>
+
 <template>
   <WebappLayout>
     <LayoutsMobileSubsidebar />
@@ -26,7 +32,7 @@
               <p class="control">
                 <button class="button h-button">
                   <span class="icon is-small">
-                    <i class="fas fa-bolt"></i>
+                    <Icon icon="fa-bolt" />
                   </span>
                   <span>Disable</span>
                 </button>
@@ -34,7 +40,7 @@
               <p class="control">
                 <button class="button h-button">
                   <span class="icon is-small">
-                    <i class="fas fa-times"></i>
+                    <Icon icon="fa-times" />
                   </span>
                   <span>Delete</span>
                 </button>
@@ -42,7 +48,7 @@
               <p class="control">
                 <button class="button h-button">
                   <span class="icon is-small">
-                    <i class="fas fa-file"></i>
+                    <Icon icon="fa-file" />
                   </span>
                   <span>Report</span>
                 </button>
@@ -52,7 +58,7 @@
             <div class="buttons">
               <button class="button h-button is-primary is-elevated">
                 <span class="icon">
-                  <i class="fas fa-plus"></i>
+                  <Icon icon="fa-plus" />
                 </span>
                 <span>Add Product</span>
               </button>

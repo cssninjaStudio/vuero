@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import { useTitle } from '@vueuse/core'
+
+useTitle('Components - Tabs Regular - Vuero')
+</script>
+
 <template>
   <DefaultLayout>
     <ComponentsSidebar />
@@ -480,19 +486,19 @@
                           <ul>
                             <li data-tab="team-tab4" class="is-active">
                               <a>
-                                <i class="fas fa-users"></i>
+                                <Icon icon="fa-users" />
                                 <span>Team</span>
                               </a>
                             </li>
                             <li data-tab="projects-tab4">
                               <a>
-                                <i class="fas fa-umbrella"></i>
+                                <Icon icon="fa-umbrella" />
                                 <span>Projects</span>
                               </a>
                             </li>
                             <li data-tab="tasks-tab4">
                               <a>
-                                <i class="fas fa-tasks"></i>
+                                <Icon icon="fa-tasks" />
                                 <span>Tasks</span>
                               </a>
                             </li>

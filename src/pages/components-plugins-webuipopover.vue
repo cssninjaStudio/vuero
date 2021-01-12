@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import { useTitle } from '@vueuse/core'
+
+useTitle('Components - Plugins Webuipopover - Vuero')
+</script>
+
 <template>
   <DefaultLayout>
     <ComponentsSidebar />
@@ -357,7 +363,7 @@
                       data-pop-title="Alejandro B."
                       data-pop-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
                       data-pop-position="top"
-                      data-pop-avatar="assets/img/avatars/photos/39.jpg"
+                      data-pop-avatar="/@images/avatars/photos/39.jpg"
                     >
                       Hover Me
                     </button>
@@ -370,7 +376,7 @@
                       data-pop-title="Alice C."
                       data-pop-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
                       data-pop-position="top"
-                      data-pop-avatar="assets/img/avatars/photos/7.jpg"
+                      data-pop-avatar="/@images/avatars/photos/7.jpg"
                     >
                       Click Me
                     </button>

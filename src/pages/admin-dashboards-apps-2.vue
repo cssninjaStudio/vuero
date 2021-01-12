@@ -1,3 +1,11 @@
+<script setup lang="ts">
+import { useTitle } from '@vueuse/core'
+
+import { isDark } from '/@src/composition/state/ui/darkModeState.ts'
+
+useTitle('Dashboard Apps 2 - Admin - Vuero')
+</script>
+
 <template>
   <MinimalLayout>
     <div class="inbox-wrapper">
@@ -22,7 +30,15 @@
               <span>Inbox</span>
 
               <label class="dark-mode">
-                <input type="checkbox" checked />
+                <input
+                  type="checkbox"
+                  :checked="!isDark"
+                  @change="
+                    (event) => {
+                      isDark = !event.target.checked
+                    }
+                  "
+                />
                 <span></span>
               </label>
             </div>

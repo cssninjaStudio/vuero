@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import { useTitle } from '@vueuse/core'
+
+useTitle('Elements - Forms Selects - Vuero')
+</script>
+
 <template>
   <DefaultLayout>
     <ElementsSidebar />
@@ -191,7 +197,7 @@
                           </select>
                         </div>
                         <div class="icon is-small is-left">
-                          <i class="fas fa-globe"></i>
+                          <Icon icon="fa-globe" />
                         </div>
                       </div>
                     </div>

@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import { useTitle } from '@vueuse/core'
+
+useTitle('List View 2 - WebApp - Vuero')
+</script>
+
 <template>
   <WebappLayout>
     <LayoutsMobileSubsidebar />
@@ -92,11 +98,11 @@
                         <h3>
                           <span data-filter-match>1396 Redmond Street</span>
                           <span class="rating">
-                            <i class="fas fa-star active"></i>
-                            <i class="fas fa-star active"></i>
-                            <i class="fas fa-star active"></i>
-                            <i class="fas fa-star active"></i>
-                            <i class="fas fa-star"></i>
+                            <Icon icon="fa-star active" />
+                            <Icon icon="fa-star active" />
+                            <Icon icon="fa-star active" />
+                            <Icon icon="fa-star active" />
+                            <Icon icon="fa-star" />
                           </span>
                         </h3>
                         <p>
@@ -108,9 +114,9 @@
                         </p>
                         <span>
                           <span data-filter-match>5 rooms</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <span data-filter-match>3 beds</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <span data-filter-match>1 bathroom</span>
                         </span>
 
@@ -156,11 +162,11 @@
                         <h3>
                           <span data-filter-match>24 Mulberry Street</span>
                           <span class="rating">
-                            <i class="fas fa-star active"></i>
-                            <i class="fas fa-star active"></i>
-                            <i class="fas fa-star active"></i>
-                            <i class="fas fa-star active"></i>
-                            <i class="fas fa-star active"></i>
+                            <Icon icon="fa-star active" />
+                            <Icon icon="fa-star active" />
+                            <Icon icon="fa-star active" />
+                            <Icon icon="fa-star active" />
+                            <Icon icon="fa-star active" />
                           </span>
                         </h3>
                         <p>
@@ -171,9 +177,9 @@
                         </p>
                         <span>
                           <span data-filter-match>3 rooms</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <span data-filter-match>2 beds</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <span>1 bathroom</span>
                         </span>
 
@@ -211,11 +217,11 @@
                         <h3>
                           <span data-filter-match>62 John Walberg Ave</span>
                           <span class="rating">
-                            <i class="fas fa-star active"></i>
-                            <i class="fas fa-star active"></i>
-                            <i class="fas fa-star active"></i>
-                            <i class="fas fa-star active"></i>
-                            <i class="fas fa-star active"></i>
+                            <Icon icon="fa-star active" />
+                            <Icon icon="fa-star active" />
+                            <Icon icon="fa-star active" />
+                            <Icon icon="fa-star active" />
+                            <Icon icon="fa-star active" />
                           </span>
                         </h3>
                         <p>
@@ -227,9 +233,9 @@
                         </p>
                         <span>
                           <span data-filter-match>4 rooms</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <span data-filter-match>2 beds</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <span data-filter-match>2 bathroom</span>
                         </span>
 
@@ -275,11 +281,11 @@
                         <h3>
                           <span data-filter-match>48 Manhattan Ave</span>
                           <span class="rating">
-                            <i class="fas fa-star active"></i>
-                            <i class="fas fa-star active"></i>
-                            <i class="fas fa-star active"></i>
-                            <i class="fas fa-star active"></i>
-                            <i class="fas fa-star active"></i>
+                            <Icon icon="fa-star active" />
+                            <Icon icon="fa-star active" />
+                            <Icon icon="fa-star active" />
+                            <Icon icon="fa-star active" />
+                            <Icon icon="fa-star active" />
                           </span>
                         </h3>
                         <p>
@@ -290,9 +296,9 @@
                         </p>
                         <span>
                           <span data-filter-match>5 rooms</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <span data-filter-match>4 beds</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <span>3 bathrooms</span>
                         </span>
 
@@ -338,11 +344,11 @@
                         <h3>
                           <span data-filter-match>12 Charity Street</span>
                           <span class="rating">
-                            <i class="fas fa-star active"></i>
-                            <i class="fas fa-star active"></i>
-                            <i class="fas fa-star active"></i>
-                            <i class="fas fa-star active"></i>
-                            <i class="fas fa-star"></i>
+                            <Icon icon="fa-star active" />
+                            <Icon icon="fa-star active" />
+                            <Icon icon="fa-star active" />
+                            <Icon icon="fa-star active" />
+                            <Icon icon="fa-star" />
                           </span>
                         </h3>
                         <p>
@@ -354,9 +360,9 @@
                         </p>
                         <span>
                           <span data-filter-match>3 rooms</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <span data-filter-match>2 beds</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <span>1 bathroom</span>
                         </span>
 
@@ -394,11 +400,11 @@
                         <h3>
                           <span data-filter-match>23 Bakery Street</span>
                           <span class="rating">
-                            <i class="fas fa-star active"></i>
-                            <i class="fas fa-star active"></i>
-                            <i class="fas fa-star active"></i>
-                            <i class="fas fa-star active"></i>
-                            <i class="fas fa-star active"></i>
+                            <Icon icon="fa-star active" />
+                            <Icon icon="fa-star active" />
+                            <Icon icon="fa-star active" />
+                            <Icon icon="fa-star active" />
+                            <Icon icon="fa-star active" />
                           </span>
                         </h3>
                         <p>
@@ -409,9 +415,9 @@
                         </p>
                         <span>
                           <span data-filter-match>3 rooms</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <span data-filter-match>2 beds</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <span>1 bathroom</span>
                         </span>
 
@@ -457,11 +463,11 @@
                         <h3>
                           <span data-filter-match>1028 Pasadena Ave</span>
                           <span class="rating">
-                            <i class="fas fa-star active"></i>
-                            <i class="fas fa-star active"></i>
-                            <i class="fas fa-star active"></i>
-                            <i class="fas fa-star active"></i>
-                            <i class="fas fa-star active"></i>
+                            <Icon icon="fa-star active" />
+                            <Icon icon="fa-star active" />
+                            <Icon icon="fa-star active" />
+                            <Icon icon="fa-star active" />
+                            <Icon icon="fa-star active" />
                           </span>
                         </h3>
                         <p>
@@ -473,9 +479,9 @@
                         </p>
                         <span>
                           <span data-filter-match>7 rooms</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <span data-filter-match>5 beds</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <span>3 bathrooms</span>
                         </span>
 
@@ -521,11 +527,11 @@
                         <h3>
                           <span data-filter-match>54 Church Street</span>
                           <span class="rating">
-                            <i class="fas fa-star active"></i>
-                            <i class="fas fa-star active"></i>
-                            <i class="fas fa-star active"></i>
-                            <i class="fas fa-star active"></i>
-                            <i class="fas fa-star active"></i>
+                            <Icon icon="fa-star active" />
+                            <Icon icon="fa-star active" />
+                            <Icon icon="fa-star active" />
+                            <Icon icon="fa-star active" />
+                            <Icon icon="fa-star active" />
                           </span>
                         </h3>
                         <p>
@@ -536,9 +542,9 @@
                         </p>
                         <span>
                           <span data-filter-match>2 rooms</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <span data-filter-match>1 bed</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <span>1 bathroom</span>
                         </span>
 
@@ -580,11 +586,11 @@
                         <h3>
                           <span data-filter-match>112 Old City District</span>
                           <span class="rating">
-                            <i class="fas fa-star active"></i>
-                            <i class="fas fa-star active"></i>
-                            <i class="fas fa-star active"></i>
-                            <i class="fas fa-star active"></i>
-                            <i class="fas fa-star active"></i>
+                            <Icon icon="fa-star active" />
+                            <Icon icon="fa-star active" />
+                            <Icon icon="fa-star active" />
+                            <Icon icon="fa-star active" />
+                            <Icon icon="fa-star active" />
                           </span>
                         </h3>
                         <p>
@@ -596,9 +602,9 @@
                         </p>
                         <span>
                           <span data-filter-match>3 rooms</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <span data-filter-match>2 beds</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <span>1 bathroom</span>
                         </span>
 
@@ -640,11 +646,11 @@
                         <h3>
                           <span data-filter-match>51 St Leonard Street</span>
                           <span class="rating">
-                            <i class="fas fa-star active"></i>
-                            <i class="fas fa-star active"></i>
-                            <i class="fas fa-star active"></i>
-                            <i class="fas fa-star active"></i>
-                            <i class="fas fa-star active"></i>
+                            <Icon icon="fa-star active" />
+                            <Icon icon="fa-star active" />
+                            <Icon icon="fa-star active" />
+                            <Icon icon="fa-star active" />
+                            <Icon icon="fa-star active" />
                           </span>
                         </h3>
                         <p>
@@ -655,9 +661,9 @@
                         </p>
                         <span>
                           <span data-filter-match>4 rooms</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <span data-filter-match>2 beds</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <span>1 bathroom</span>
                         </span>
 

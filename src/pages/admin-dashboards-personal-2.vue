@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import { useTitle } from '@vueuse/core'
+
+useTitle('Dashboard Personal 2 - Admin - Vuero')
+</script>
+
 <template>
   <DefaultLayout>
     <GenericSidebar />
@@ -380,8 +386,8 @@
                             <div class="position">UI/UX Designer</div>
                           </div>
                           <div class="user-list-icons">
-                            <a><i class="fas fa-phone"></i></a>
-                            <a><i class="fas fa-video"></i></a>
+                            <a><Icon icon="fa-phone" /></a>
+                            <a><Icon icon="fa-video" /></a>
                           </div>
                         </li>
                         <li>
@@ -398,8 +404,8 @@
                             <div class="position">UI/UX Designer</div>
                           </div>
                           <div class="user-list-icons">
-                            <a><i class="fas fa-phone"></i></a>
-                            <a><i class="fas fa-video"></i></a>
+                            <a><Icon icon="fa-phone" /></a>
+                            <a><Icon icon="fa-video" /></a>
                           </div>
                         </li>
                         <li>
@@ -419,8 +425,8 @@
                             <div class="position">UI/UX Designer</div>
                           </div>
                           <div class="user-list-icons">
-                            <a><i class="fas fa-phone"></i></a>
-                            <a><i class="fas fa-video"></i></a>
+                            <a><Icon icon="fa-phone" /></a>
+                            <a><Icon icon="fa-video" /></a>
                           </div>
                         </li>
                         <li>
@@ -437,8 +443,8 @@
                             <div class="position">Frontend developer</div>
                           </div>
                           <div class="user-list-icons">
-                            <a><i class="fas fa-phone"></i></a>
-                            <a><i class="fas fa-video"></i></a>
+                            <a><Icon icon="fa-phone" /></a>
+                            <a><Icon icon="fa-video" /></a>
                           </div>
                         </li>
                       </ul>

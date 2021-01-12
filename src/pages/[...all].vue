@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import { useTitle } from '@vueuse/core'
+
+useTitle('Action Page - Vuero')
+</script>
+
 <template>
   <MinimalLayout>
     <div class="error-container">

@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import { useTitle } from '@vueuse/core'
+
+useTitle('Dashboards Widgets UI - WebApp - Vuero')
+</script>
+
 <template>
   <WebappLayout>
     <LayoutsMobileSubsidebar />
@@ -423,7 +429,7 @@
                       </div>
                       <div class="exerpt">
                         <h5>
-                          <i class="fas fa-circle"></i>
+                          <Icon icon="fa-circle" />
                           <span>Design Project</span>
                         </h5>
                         <p>

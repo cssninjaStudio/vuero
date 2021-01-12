@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import { useTitle } from '@vueuse/core'
+
+useTitle('List View 3 - WebApp - Vuero')
+</script>
+
 <template>
   <WebappLayout>
     <LayoutsMobileSubsidebar />
@@ -99,10 +105,10 @@
                         <span>
                           <Icon icon="feather:map-pin" />
                           <span data-filter-match>San Diego</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <Icon icon="feather:clock" />
                           <span data-filter-match>Full Time</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <Icon icon="feather:check-circle" />
                           <span data-filter-match>3 Years Exp.</span>
                         </span>
@@ -145,10 +151,10 @@
                         <span>
                           <Icon icon="feather:map-pin" />
                           <span data-filter-match>Los Angeles</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <Icon icon="feather:clock" />
                           <span data-filter-match>Part Time</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <Icon icon="feather:check-circle" />
                           <span data-filter-match>2 Years Exp.</span>
                         </span>
@@ -191,10 +197,10 @@
                         <span>
                           <Icon icon="feather:map-pin" />
                           <span data-filter-match>Los Angeles</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <Icon icon="feather:clock" />
                           <span data-filter-match>Full Time</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <Icon icon="feather:check-circle" />
                           <span data-filter-match>3 Years Exp.</span>
                         </span>
@@ -235,10 +241,10 @@
                         <span>
                           <Icon icon="feather:map-pin" />
                           <span data-filter-match>Los Angeles</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <Icon icon="feather:clock" />
                           <span data-filter-match>Full Time</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <Icon icon="feather:check-circle" />
                           <span data-filter-match>10 Years Exp.</span>
                         </span>
@@ -281,10 +287,10 @@
                         <span>
                           <Icon icon="feather:map-pin" />
                           <span data-filter-match>San Francisco</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <Icon icon="feather:clock" />
                           <span data-filter-match>Full Time</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <Icon icon="feather:check-circle" />
                           <span data-filter-match>5 Years Exp.</span>
                         </span>
@@ -327,10 +333,10 @@
                         <span>
                           <Icon icon="feather:map-pin" />
                           <span data-filter-match>Pasadena</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <Icon icon="feather:clock" />
                           <span data-filter-match>Full Time</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <Icon icon="feather:check-circle" />
                           <span data-filter-match>4 Years Exp.</span>
                         </span>
@@ -373,10 +379,10 @@
                         <span>
                           <Icon icon="feather:map-pin" />
                           <span data-filter-match>Los Angeles</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <Icon icon="feather:clock" />
                           <span data-filter-match>Full Time</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <Icon icon="feather:check-circle" />
                           <span data-filter-match>2 Years Exp.</span>
                         </span>
@@ -419,10 +425,10 @@
                         <span>
                           <Icon icon="feather:map-pin" />
                           <span data-filter-match>Los Angeles</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <Icon icon="feather:clock" />
                           <span data-filter-match>Full Time</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <Icon icon="feather:check-circle" />
                           <span data-filter-match>4 Years Exp.</span>
                         </span>
@@ -465,10 +471,10 @@
                         <span>
                           <Icon icon="feather:map-pin" />
                           <span data-filter-match>Melbourne</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <Icon icon="feather:clock" />
                           <span data-filter-match>Full Time</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <Icon icon="feather:check-circle" />
                           <span data-filter-match>10 Years Exp.</span>
                         </span>
@@ -511,10 +517,10 @@
                         <span>
                           <Icon icon="feather:map-pin" />
                           <span data-filter-match>Los Angeles</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <Icon icon="feather:clock" />
                           <span data-filter-match>Part Time</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <Icon icon="feather:check-circle" />
                           <span data-filter-match>1 Year Exp.</span>
                         </span>

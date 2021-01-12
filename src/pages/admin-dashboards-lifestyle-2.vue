@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import { useTitle } from '@vueuse/core'
+
+useTitle('Dashboard Lifestyle 2 - Admin - Vuero')
+</script>
+
 <template>
   <DefaultLayout>
     <GenericSidebar />
@@ -59,13 +65,13 @@
                       <div
                         class="long-card has-background-image"
                         data-background="https://via.placeholder.com/800x600"
-                        data-demo-background="assets/img/photo/demo/dashboards/lifestyle/1.jpg"
+                        data-demo-background="/@images/photo/demo/dashboards/lifestyle/1.jpg"
                       >
                         <div class="long-card-overlay"></div>
                         <a href="#" class="long-card-text-overlay">
                           <div class="top">
                             <span>Foot Trekks</span>
-                            <i class="fas fa-running"></i>
+                            <Icon icon="fa-running" />
                           </div>
                           <div class="bottom">
                             <span>28.3K</span>
@@ -73,7 +79,7 @@
                               <div class="h-avatar is-small">
                                 <img
                                   class="avatar"
-                                  src="assets/img/avatars/photos/12.jpg"
+                                  src="/@images/avatars/photos/12.jpg"
                                   alt=""
                                   data-user-popover="2"
                                   data-target="webuiPopover7"
@@ -86,7 +92,7 @@
                               <div class="h-avatar is-small">
                                 <img
                                   class="avatar"
-                                  src="assets/img/avatars/photos/22.jpg"
+                                  src="/@images/avatars/photos/22.jpg"
                                   alt=""
                                   data-user-popover="5"
                                   @error="
@@ -98,7 +104,7 @@
                               <div class="h-avatar is-small">
                                 <img
                                   class="avatar"
-                                  src="assets/img/avatars/photos/40.jpg"
+                                  src="/@images/avatars/photos/40.jpg"
                                   alt=""
                                   data-user-popover="11"
                                   @error="
@@ -118,13 +124,13 @@
                       <div
                         class="long-card has-background-image"
                         data-background="https://via.placeholder.com/800x600"
-                        data-demo-background="assets/img/photo/demo/dashboards/lifestyle/2.jpg"
+                        data-demo-background="/@images/photo/demo/dashboards/lifestyle/2.jpg"
                       >
                         <div class="long-card-overlay"></div>
                         <a href="#" class="long-card-text-overlay">
                           <div class="top">
                             <span>Rafting Trips</span>
-                            <i class="fas fa-ship"></i>
+                            <Icon icon="fa-ship" />
                           </div>
                           <div class="bottom">
                             <span>8.1K</span>
@@ -132,7 +138,7 @@
                               <div class="h-avatar is-small">
                                 <img
                                   class="avatar"
-                                  src="assets/img/avatars/photos/7.jpg"
+                                  src="/@images/avatars/photos/7.jpg"
                                   alt=""
                                   data-user-popover="0"
                                   data-target="webuiPopover32"
@@ -145,7 +151,7 @@
                               <div class="h-avatar is-small">
                                 <img
                                   class="avatar"
-                                  src="assets/img/avatars/photos/23.jpg"
+                                  src="/@images/avatars/photos/23.jpg"
                                   alt=""
                                   data-user-popover="21"
                                   data-target="webuiPopover0"
@@ -158,7 +164,7 @@
                               <div class="h-avatar is-small">
                                 <img
                                   class="avatar"
-                                  src="assets/img/avatars/photos/18.jpg"
+                                  src="/@images/avatars/photos/18.jpg"
                                   alt=""
                                   data-user-popover="7"
                                   @error="
@@ -178,13 +184,13 @@
                       <div
                         class="long-card has-background-image"
                         data-background="https://via.placeholder.com/800x600"
-                        data-demo-background="assets/img/photo/demo/dashboards/lifestyle/3.jpg"
+                        data-demo-background="/@images/photo/demo/dashboards/lifestyle/3.jpg"
                       >
                         <div class="long-card-overlay"></div>
                         <a href="#" class="long-card-text-overlay">
                           <div class="top">
                             <span>Climbing</span>
-                            <i class="fas fa-running"></i>
+                            <Icon icon="fa-running" />
                           </div>
                           <div class="bottom">
                             <span>19.7K</span>
@@ -192,7 +198,7 @@
                               <div class="h-avatar is-small">
                                 <img
                                   class="avatar"
-                                  src="assets/img/avatars/photos/32.jpg"
+                                  src="/@images/avatars/photos/32.jpg"
                                   alt=""
                                   data-user-popover="28"
                                   @error="
@@ -204,7 +210,7 @@
                               <div class="h-avatar is-small">
                                 <img
                                   class="avatar"
-                                  src="assets/img/avatars/photos/22.jpg"
+                                  src="/@images/avatars/photos/22.jpg"
                                   alt=""
                                   data-user-popover="20"
                                   data-target="webuiPopover8"
@@ -217,7 +223,7 @@
                               <div class="h-avatar is-small">
                                 <img
                                   class="avatar"
-                                  src="assets/img/avatars/photos/8.jpg"
+                                  src="/@images/avatars/photos/8.jpg"
                                   alt=""
                                   data-user-popover="3"
                                   data-target="webuiPopover32"
@@ -238,13 +244,13 @@
                       <div
                         class="long-card has-background-image"
                         data-background="https://via.placeholder.com/800x600"
-                        data-demo-background="assets/img/photo/demo/dashboards/lifestyle/4.jpg"
+                        data-demo-background="/@images/photo/demo/dashboards/lifestyle/4.jpg"
                       >
                         <div class="long-card-overlay"></div>
                         <a href="#" class="long-card-text-overlay">
                           <div class="top">
                             <span>Biking</span>
-                            <i class="fas fa-biking"></i>
+                            <Icon icon="fa-biking" />
                           </div>
                           <div class="bottom">
                             <span>48.4K</span>
@@ -252,7 +258,7 @@
                               <div class="h-avatar is-small">
                                 <img
                                   class="avatar"
-                                  src="assets/img/avatars/photos/27.jpg"
+                                  src="/@images/avatars/photos/27.jpg"
                                   alt=""
                                   data-user-popover="10"
                                   data-target="webuiPopover3"
@@ -265,7 +271,7 @@
                               <div class="h-avatar is-small">
                                 <img
                                   class="avatar"
-                                  src="assets/img/avatars/photos/16.jpg"
+                                  src="/@images/avatars/photos/16.jpg"
                                   alt=""
                                   data-user-popover="16"
                                   @error="
@@ -277,7 +283,7 @@
                               <div class="h-avatar is-small">
                                 <img
                                   class="avatar"
-                                  src="assets/img/avatars/photos/29.jpg"
+                                  src="/@images/avatars/photos/29.jpg"
                                   alt=""
                                   data-user-popover="25"
                                   @error="
@@ -309,7 +315,7 @@
                             <div class="h-avatar">
                               <img
                                 class="avatar is-squared"
-                                src="assets/img/photo/demo/dashboards/lifestyle/1.jpg"
+                                src="/@images/photo/demo/dashboards/lifestyle/1.jpg"
                                 alt=""
                                 @error="
                                   $event.target.src =
@@ -323,11 +329,11 @@
                             </div>
                             <div class="flex-end">
                               <div class="rating">
-                                <i class="fas fa-star selected"></i>
-                                <i class="fas fa-star selected"></i>
-                                <i class="fas fa-star selected"></i>
-                                <i class="fas fa-star selected"></i>
-                                <i class="fas fa-star selected"></i>
+                                <Icon icon="fa-star selected" />
+                                <Icon icon="fa-star selected" />
+                                <Icon icon="fa-star selected" />
+                                <Icon icon="fa-star selected" />
+                                <Icon icon="fa-star selected" />
                               </div>
                               <div class="button is-circle">
                                 <span class="icon is-small">
@@ -340,7 +346,7 @@
                             <div class="h-avatar">
                               <img
                                 class="avatar is-squared"
-                                src="assets/img/photo/demo/dashboards/lifestyle/2.jpg"
+                                src="/@images/photo/demo/dashboards/lifestyle/2.jpg"
                                 alt=""
                                 @error="
                                   $event.target.src =
@@ -354,11 +360,11 @@
                             </div>
                             <div class="flex-end">
                               <div class="rating">
-                                <i class="fas fa-star selected"></i>
-                                <i class="fas fa-star selected"></i>
-                                <i class="fas fa-star selected"></i>
-                                <i class="fas fa-star selected"></i>
-                                <i class="fas fa-star"></i>
+                                <Icon icon="fa-star selected" />
+                                <Icon icon="fa-star selected" />
+                                <Icon icon="fa-star selected" />
+                                <Icon icon="fa-star selected" />
+                                <Icon icon="fa-star" />
                               </div>
                               <div class="button is-circle">
                                 <span class="icon is-small">
@@ -371,7 +377,7 @@
                             <div class="h-avatar">
                               <img
                                 class="avatar is-squared"
-                                src="assets/img/photo/demo/dashboards/lifestyle/3.jpg"
+                                src="/@images/photo/demo/dashboards/lifestyle/3.jpg"
                                 alt=""
                                 @error="
                                   $event.target.src =
@@ -385,11 +391,11 @@
                             </div>
                             <div class="flex-end">
                               <div class="rating">
-                                <i class="fas fa-star selected"></i>
-                                <i class="fas fa-star selected"></i>
-                                <i class="fas fa-star selected"></i>
-                                <i class="fas fa-star selected"></i>
-                                <i class="fas fa-star selected"></i>
+                                <Icon icon="fa-star selected" />
+                                <Icon icon="fa-star selected" />
+                                <Icon icon="fa-star selected" />
+                                <Icon icon="fa-star selected" />
+                                <Icon icon="fa-star selected" />
                               </div>
                               <div class="button is-circle">
                                 <span class="icon is-small">
@@ -402,7 +408,7 @@
                             <div class="h-avatar">
                               <img
                                 class="avatar is-squared"
-                                src="assets/img/photo/demo/dashboards/lifestyle/4.jpg"
+                                src="/@images/photo/demo/dashboards/lifestyle/4.jpg"
                                 alt=""
                                 @error="
                                   $event.target.src =
@@ -416,11 +422,11 @@
                             </div>
                             <div class="flex-end">
                               <div class="rating">
-                                <i class="fas fa-star selected"></i>
-                                <i class="fas fa-star selected"></i>
-                                <i class="fas fa-star selected"></i>
-                                <i class="fas fa-star selected"></i>
-                                <i class="fas fa-star selected"></i>
+                                <Icon icon="fa-star selected" />
+                                <Icon icon="fa-star selected" />
+                                <Icon icon="fa-star selected" />
+                                <Icon icon="fa-star selected" />
+                                <Icon icon="fa-star selected" />
                               </div>
                               <div class="button is-circle">
                                 <span class="icon is-small">
@@ -452,7 +458,7 @@
                             <div class="h-avatar">
                               <img
                                 class="avatar is-squared"
-                                src="assets/img/photo/demo/dashboards/lifestyle/5.jpg"
+                                src="/@images/photo/demo/dashboards/lifestyle/5.jpg"
                                 alt=""
                                 @error="
                                   $event.target.src =
@@ -466,11 +472,11 @@
                             </div>
                             <div class="flex-end">
                               <div class="rating">
-                                <i class="fas fa-star selected"></i>
-                                <i class="fas fa-star selected"></i>
-                                <i class="fas fa-star selected"></i>
-                                <i class="fas fa-star selected"></i>
-                                <i class="fas fa-star selected"></i>
+                                <Icon icon="fa-star selected" />
+                                <Icon icon="fa-star selected" />
+                                <Icon icon="fa-star selected" />
+                                <Icon icon="fa-star selected" />
+                                <Icon icon="fa-star selected" />
                               </div>
                               <div class="button is-circle">
                                 <span class="icon is-small">
@@ -483,7 +489,7 @@
                             <div class="h-avatar">
                               <img
                                 class="avatar is-squared"
-                                src="assets/img/photo/demo/dashboards/lifestyle/6.jpg"
+                                src="/@images/photo/demo/dashboards/lifestyle/6.jpg"
                                 alt=""
                                 @error="
                                   $event.target.src =
@@ -497,11 +503,11 @@
                             </div>
                             <div class="flex-end">
                               <div class="rating">
-                                <i class="fas fa-star selected"></i>
-                                <i class="fas fa-star selected"></i>
-                                <i class="fas fa-star selected"></i>
-                                <i class="fas fa-star selected"></i>
-                                <i class="fas fa-star"></i>
+                                <Icon icon="fa-star selected" />
+                                <Icon icon="fa-star selected" />
+                                <Icon icon="fa-star selected" />
+                                <Icon icon="fa-star selected" />
+                                <Icon icon="fa-star" />
                               </div>
                               <div class="button is-circle">
                                 <span class="icon is-small">
@@ -514,7 +520,7 @@
                             <div class="h-avatar">
                               <img
                                 class="avatar is-squared"
-                                src="assets/img/photo/demo/dashboards/lifestyle/7.jpg"
+                                src="/@images/photo/demo/dashboards/lifestyle/7.jpg"
                                 alt=""
                                 @error="
                                   $event.target.src =
@@ -528,11 +534,11 @@
                             </div>
                             <div class="flex-end">
                               <div class="rating">
-                                <i class="fas fa-star selected"></i>
-                                <i class="fas fa-star selected"></i>
-                                <i class="fas fa-star selected"></i>
-                                <i class="fas fa-star selected"></i>
-                                <i class="fas fa-star selected"></i>
+                                <Icon icon="fa-star selected" />
+                                <Icon icon="fa-star selected" />
+                                <Icon icon="fa-star selected" />
+                                <Icon icon="fa-star selected" />
+                                <Icon icon="fa-star selected" />
                               </div>
                               <div class="button is-circle">
                                 <span class="icon is-small">
@@ -545,7 +551,7 @@
                             <div class="h-avatar">
                               <img
                                 class="avatar is-squared"
-                                src="assets/img/photo/demo/dashboards/lifestyle/8.jpg"
+                                src="/@images/photo/demo/dashboards/lifestyle/8.jpg"
                                 alt=""
                                 @error="
                                   $event.target.src =
@@ -559,11 +565,11 @@
                             </div>
                             <div class="flex-end">
                               <div class="rating">
-                                <i class="fas fa-star selected"></i>
-                                <i class="fas fa-star selected"></i>
-                                <i class="fas fa-star selected"></i>
-                                <i class="fas fa-star selected"></i>
-                                <i class="fas fa-star selected"></i>
+                                <Icon icon="fa-star selected" />
+                                <Icon icon="fa-star selected" />
+                                <Icon icon="fa-star selected" />
+                                <Icon icon="fa-star selected" />
+                                <Icon icon="fa-star selected" />
                               </div>
                               <div class="button is-circle">
                                 <span class="icon is-small">
@@ -635,7 +641,7 @@
                       <!--List Item-->
                       <div class="inner-list-item media-flex-center">
                         <div class="h-icon is-yellow">
-                          <i class="fas fa-biking"></i>
+                          <Icon icon="fa-biking" />
                         </div>
                         <div class="flex-meta is-light">
                           <a href="#">Biking</a>
@@ -645,7 +651,7 @@
                       <!--List Item-->
                       <div class="inner-list-item media-flex-center">
                         <div class="h-icon is-orange">
-                          <i class="fas fa-running"></i>
+                          <Icon icon="fa-running" />
                         </div>
                         <div class="flex-meta is-light">
                           <a href="#">Running</a>
@@ -655,7 +661,7 @@
                       <!--List Item-->
                       <div class="inner-list-item media-flex-center">
                         <div class="h-icon is-green">
-                          <i class="fas fa-skiing"></i>
+                          <Icon icon="fa-skiing" />
                         </div>
                         <div class="flex-meta is-light">
                           <a href="#">Skiing</a>
@@ -665,7 +671,7 @@
                       <!--List Item-->
                       <div class="inner-list-item media-flex-center">
                         <div class="h-icon is-info">
-                          <i class="fas fa-swimmer"></i>
+                          <Icon icon="fa-swimmer" />
                         </div>
                         <div class="flex-meta is-light">
                           <a href="#">Swimming</a>
@@ -675,7 +681,7 @@
                       <!--List Item-->
                       <div class="inner-list-item media-flex-center">
                         <div class="h-icon is-purple">
-                          <i class="fas fa-dumbbell"></i>
+                          <Icon icon="fa-dumbbell" />
                         </div>
                         <div class="flex-meta is-light">
                           <a href="#">Workout</a>

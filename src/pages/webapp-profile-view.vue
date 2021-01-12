@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import { useTitle } from '@vueuse/core'
+
+useTitle('Profile View - WebApp - Vuero')
+</script>
+
 <template>
   <WebappV2Layout>
     <LayoutsMobileSubsidebar />
@@ -109,7 +115,7 @@
                                 <span class="dark-inverted">Airbnb HQ</span>
                                 <span>
                                   <span>January 2018</span>
-                                  <i class="fas fa-circle"></i>
+                                  <Icon icon="fa-circle" />
                                   <span>October 2020</span>
                                 </span>
                                 <span>Product Manager</span>
@@ -128,7 +134,7 @@
                                 <span class="dark-inverted">Facebook</span>
                                 <span>
                                   <span>January 2018</span>
-                                  <i class="fas fa-circle"></i>
+                                  <Icon icon="fa-circle" />
                                   <span>October 2020</span>
                                 </span>
                                 <span>Product Manager</span>
@@ -147,7 +153,7 @@
                                 <span class="dark-inverted">Atlassian</span>
                                 <span>
                                   <span>January 2018</span>
-                                  <i class="fas fa-circle"></i>
+                                  <Icon icon="fa-circle" />
                                   <span>October 2020</span>
                                 </span>
                                 <span>Web Developer</span>
@@ -166,7 +172,7 @@
                                 <span class="dark-inverted">Github</span>
                                 <span>
                                   <span>January 2018</span>
-                                  <i class="fas fa-circle"></i>
+                                  <Icon icon="fa-circle" />
                                   <span>October 2020</span>
                                 </span>
                                 <span>Web Developer</span>

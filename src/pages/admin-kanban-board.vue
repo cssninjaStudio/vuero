@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import { useTitle } from '@vueuse/core'
+
+useTitle('Kanban Board - Admin - Vuero')
+</script>
+
 <template>
   <DefaultLayout>
     <LayoutsSidebar />
@@ -145,8 +151,8 @@
                 <img
                   class="empty-state theme-image"
                   src="/@images/illustrations/projects/board/new.svg"
-                  data-light="assets/img/illustrations/projects/board/new.svg"
-                  data-dark="assets/img/illustrations/projects/board/new-dark.svg"
+                  data-light="/@images/illustrations/projects/board/new.svg"
+                  data-dark="/@images/illustrations/projects/board/new-dark.svg"
                   alt=""
                 />
                 <p class="empty-text">
@@ -334,8 +340,8 @@
                   <img
                     class="empty-state theme-image"
                     src="/@images/illustrations/projects/board/progress.svg"
-                    data-light="assets/img/illustrations/projects/board/progress.svg"
-                    data-dark="assets/img/illustrations/projects/board/progress-dark.svg"
+                    data-light="/@images/illustrations/projects/board/progress.svg"
+                    data-dark="/@images/illustrations/projects/board/progress-dark.svg"
                     alt=""
                   />
                   <p class="empty-text">
@@ -402,8 +408,8 @@
                   <img
                     class="empty-state theme-image"
                     src="/@images/illustrations/projects/board/ready.svg"
-                    data-light="assets/img/illustrations/projects/board/ready.svg"
-                    data-dark="assets/img/illustrations/projects/board/ready-dark.svg"
+                    data-light="/@images/illustrations/projects/board/ready.svg"
+                    data-dark="/@images/illustrations/projects/board/ready-dark.svg"
                     alt=""
                   />
                   <p class="empty-text">
@@ -447,8 +453,8 @@
                   <img
                     class="empty-state theme-image"
                     src="/@images/illustrations/projects/board/test.svg"
-                    data-light="assets/img/illustrations/projects/board/test.svg"
-                    data-dark="assets/img/illustrations/projects/board/test-dark.svg"
+                    data-light="/@images/illustrations/projects/board/test.svg"
+                    data-dark="/@images/illustrations/projects/board/test-dark.svg"
                     alt=""
                   />
                   <p class="empty-text">
@@ -487,8 +493,8 @@
                 <img
                   class="empty-state theme-image"
                   src="/@images/illustrations/projects/board/complete.svg"
-                  data-light="assets/img/illustrations/projects/board/complete.svg"
-                  data-dark="assets/img/illustrations/projects/board/complete-dark.svg"
+                  data-light="/@images/illustrations/projects/board/complete.svg"
+                  data-dark="/@images/illustrations/projects/board/complete-dark.svg"
                   alt=""
                 />
                 <p class="empty-text">You have no completed bounties.</p>

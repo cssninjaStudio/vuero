@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import { useTitle } from '@vueuse/core'
+
+useTitle('Dashboard Lifestyle 3 - Admin - Vuero')
+</script>
+
 <template>
   <DefaultLayout>
     <GenericSidebar />
@@ -82,7 +88,7 @@
                   <div class="health-tile">
                     <div class="tile-head">
                       <div class="h-icon is-primary">
-                        <i class="fas fa-tint"></i>
+                        <Icon icon="fa-tint" />
                       </div>
                       <h4>
                         <span class="dark-inverted">114/90</span>
@@ -102,7 +108,7 @@
                   <div class="health-tile">
                     <div class="tile-head">
                       <div class="h-icon is-primary">
-                        <i class="fas fa-heart"></i>
+                        <Icon icon="fa-heart" />
                       </div>
                       <h4>
                         <span class="dark-inverted">112</span>
@@ -122,7 +128,7 @@
                   <div class="health-tile">
                     <div class="tile-head">
                       <div class="h-icon is-primary">
-                        <i class="fas fa-pump-medical"></i>
+                        <Icon icon="fa-pump-medical" />
                       </div>
                       <h4>
                         <span class="dark-inverted">12/14</span>
@@ -142,7 +148,7 @@
                   <div class="health-tile">
                     <div class="tile-head">
                       <div class="h-icon is-primary">
-                        <i class="fas fa-weight"></i>
+                        <Icon icon="fa-weight" />
                       </div>
                       <h4>
                         <span class="dark-inverted">60.4</span>

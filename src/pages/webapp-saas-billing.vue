@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import { useTitle } from '@vueuse/core'
+
+useTitle('Saas Billing - WebApp - Vuero')
+</script>
+
 <template>
   <WebappLayout>
     <LayoutsMobileSubsidebar />
@@ -37,8 +43,8 @@
                         data-projects="20"
                         data-storage="20GB"
                         data-addons="1"
-                        data-logo-light="assets/img/illustrations/pricing/huro-starter.svg"
-                        data-logo-dark="assets/img/illustrations/pricing/huro-starter-dark.svg"
+                        data-logo-light="/@images/illustrations/pricing/huro-starter.svg"
+                        data-logo-dark="/@images/illustrations/pricing/huro-starter-dark.svg"
                       >
                         <input type="radio" name="plan_selection" />
                         <div class="plan-inner">
@@ -60,8 +66,8 @@
                         data-projects="150"
                         data-storage="100GB"
                         data-addons="3"
-                        data-logo-light="assets/img/illustrations/pricing/huro-pro.svg"
-                        data-logo-dark="assets/img/illustrations/pricing/huro-pro-dark.svg"
+                        data-logo-light="/@images/illustrations/pricing/huro-pro.svg"
+                        data-logo-dark="/@images/illustrations/pricing/huro-pro-dark.svg"
                       >
                         <input type="radio" name="plan_selection" checked />
                         <div class="plan-inner">
@@ -86,8 +92,8 @@
                         data-projects="Unlimited"
                         data-storage="500GB"
                         data-addons="5"
-                        data-logo-light="assets/img/illustrations/pricing/huro-business.svg"
-                        data-logo-dark="assets/img/illustrations/pricing/huro-business-dark.svg"
+                        data-logo-light="/@images/illustrations/pricing/huro-business.svg"
+                        data-logo-dark="/@images/illustrations/pricing/huro-business-dark.svg"
                       >
                         <input type="radio" name="plan_selection" />
                         <div class="plan-inner">
@@ -112,8 +118,8 @@
                         data-projects="Unlimited"
                         data-storage="Unlimited"
                         data-addons="Unlimited"
-                        data-logo-light="assets/img/illustrations/pricing/huro-enterprise.svg"
-                        data-logo-dark="assets/img/illustrations/pricing/huro-enterprise-dark.svg"
+                        data-logo-light="/@images/illustrations/pricing/huro-enterprise.svg"
+                        data-logo-dark="/@images/illustrations/pricing/huro-enterprise-dark.svg"
                       >
                         <input type="radio" name="plan_selection" />
                         <div class="plan-inner">

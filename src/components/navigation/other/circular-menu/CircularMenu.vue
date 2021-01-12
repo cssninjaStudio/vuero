@@ -1,14 +1,26 @@
+<script setup lang="ts">
+import { isDark } from '/@src/composition/state/ui/darkModeState.ts'
+</script>
+
 <template>
   <div id="circular-menu" class="circular-menu">
     <a class="floating-btn">
-      <i class="fas fa-bars"></i>
-      <i class="fas fa-times"></i>
+      <Icon icon="fa-bars" />
+      <Icon icon="fa-times" />
     </a>
 
     <div class="items-wrapper">
       <div class="menu-item is-flex">
         <label class="dark-mode">
-          <input type="checkbox" checked />
+          <input
+            type="checkbox"
+            :checked="!isDark"
+            @change="
+              (event) => {
+                isDark = !event.target.checked
+              }
+            "
+          />
           <span></span>
         </label>
       </div>

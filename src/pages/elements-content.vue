@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import { useTitle } from '@vueuse/core'
+
+useTitle('Elements - Content - Vuero')
+</script>
+
 <template>
   <DefaultLayout>
     <ElementsSidebar />
@@ -653,11 +659,11 @@
                           <tr>
                             <td>Superman</td>
                             <td>
-                              <i class="fas fa-star warning-text"></i>
-                              <i class="fas fa-star warning-text"></i>
-                              <i class="fas fa-star warning-text"></i>
-                              <i class="fas fa-star warning-text"></i>
-                              <i class="fas fa-star warning-text"></i>
+                              <Icon icon="fa-star warning-text" />
+                              <Icon icon="fa-star warning-text" />
+                              <Icon icon="fa-star warning-text" />
+                              <Icon icon="fa-star warning-text" />
+                              <Icon icon="fa-star warning-text" />
                             </td>
                             <td>
                               <span class="tag is-rounded is-success"
@@ -668,11 +674,11 @@
                           <tr>
                             <td>Batman</td>
                             <td>
-                              <i class="fas fa-star warning-text"></i>
-                              <i class="fas fa-star warning-text"></i>
-                              <i class="fas fa-star warning-text"></i>
-                              <i class="fas fa-star"></i>
-                              <i class="fas fa-star"></i>
+                              <Icon icon="fa-star warning-text" />
+                              <Icon icon="fa-star warning-text" />
+                              <Icon icon="fa-star warning-text" />
+                              <Icon icon="fa-star" />
+                              <Icon icon="fa-star" />
                             </td>
                             <td>
                               <span class="tag is-rounded">Unavailable</span>
@@ -681,11 +687,11 @@
                           <tr>
                             <td>Deadpool</td>
                             <td>
-                              <i class="fas fa-star warning-text"></i>
-                              <i class="fas fa-star warning-text"></i>
-                              <i class="fas fa-star"></i>
-                              <i class="fas fa-star"></i>
-                              <i class="fas fa-star"></i>
+                              <Icon icon="fa-star warning-text" />
+                              <Icon icon="fa-star warning-text" />
+                              <Icon icon="fa-star" />
+                              <Icon icon="fa-star" />
+                              <Icon icon="fa-star" />
                             </td>
                             <td>
                               <span class="tag is-rounded">Unavailable</span>
@@ -694,11 +700,11 @@
                           <tr>
                             <td>Spawn</td>
                             <td>
-                              <i class="fas fa-star warning-text"></i>
-                              <i class="fas fa-star warning-text"></i>
-                              <i class="fas fa-star warning-text"></i>
-                              <i class="fas fa-star warning-text"></i>
-                              <i class="fas fa-star"></i>
+                              <Icon icon="fa-star warning-text" />
+                              <Icon icon="fa-star warning-text" />
+                              <Icon icon="fa-star warning-text" />
+                              <Icon icon="fa-star warning-text" />
+                              <Icon icon="fa-star" />
                             </td>
                             <td>
                               <span class="tag is-rounded is-success"
@@ -709,11 +715,11 @@
                           <tr>
                             <td>Galactus</td>
                             <td>
-                              <i class="fas fa-star warning-text"></i>
-                              <i class="fas fa-star warning-text"></i>
-                              <i class="fas fa-star warning-text"></i>
-                              <i class="fas fa-star warning-text"></i>
-                              <i class="fas fa-star warning-text"></i>
+                              <Icon icon="fa-star warning-text" />
+                              <Icon icon="fa-star warning-text" />
+                              <Icon icon="fa-star warning-text" />
+                              <Icon icon="fa-star warning-text" />
+                              <Icon icon="fa-star warning-text" />
                             </td>
                             <td>
                               <span class="tag is-rounded">Unavailable</span>

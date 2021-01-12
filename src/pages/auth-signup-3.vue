@@ -1,3 +1,11 @@
+<script setup lang="ts">
+import { useTitle } from '@vueuse/core'
+
+import { isDark } from '/@src/composition/state/ui/darkModeState.ts'
+
+useTitle('Auth Signup 3 - Vuero')
+</script>
+
 <template>
   <AuthLayout>
     <div class="auth-wrapper-inner is-single">
@@ -20,7 +28,15 @@
         </div>
         <div class="right">
           <label class="dark-mode ml-auto">
-            <input type="checkbox" checked />
+            <input
+              type="checkbox"
+              :checked="!isDark"
+              @change="
+                (event) => {
+                  isDark = !event.target.checked
+                }
+              "
+            />
             <span></span>
           </label>
         </div>

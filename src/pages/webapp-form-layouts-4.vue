@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import { useTitle } from '@vueuse/core'
+
+useTitle('Form Layouts 4 - WebApp - Vuero')
+</script>
+
 <template>
   <WebappLayout>
     <GenericMobileSubsidebar />

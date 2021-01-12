@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import { useTitle } from '@vueuse/core'
+
+useTitle('List Datatable 4 - WebApp - Vuero')
+</script>
+
 <template>
   <WebappLayout>
     <LayoutsMobileSubsidebar />
@@ -26,7 +32,7 @@
               <p class="control">
                 <button class="button h-button">
                   <span class="icon is-small">
-                    <i class="fas fa-download"></i>
+                    <Icon icon="fa-download" />
                   </span>
                   <span>Download</span>
                 </button>
@@ -34,7 +40,7 @@
               <p class="control">
                 <button class="button h-button">
                   <span class="icon is-small">
-                    <i class="fas fa-upload"></i>
+                    <Icon icon="fa-upload" />
                   </span>
                   <span>Update</span>
                 </button>
@@ -42,7 +48,7 @@
               <p class="control">
                 <button class="button h-button">
                   <span class="icon is-small">
-                    <i class="fas fa-times"></i>
+                    <Icon icon="fa-times" />
                   </span>
                   <span>Remove</span>
                 </button>
@@ -52,7 +58,7 @@
             <div class="buttons">
               <button class="button h-button is-primary is-elevated">
                 <span class="icon">
-                  <i class="fas fa-upload"></i>
+                  <Icon icon="fa-upload" />
                 </span>
                 <span>Upload File</span>
               </button>

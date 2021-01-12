@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import { useTitle } from '@vueuse/core'
+
+useTitle('Dashboards Business 1 - WebApp - Vuero')
+</script>
+
 <template>
   <WebappLayout>
     <GenericMobileSubsidebar />

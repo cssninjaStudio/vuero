@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import { useTitle } from '@vueuse/core'
+
+useTitle('List View 4 - Admin - Vuero')
+</script>
+
 <template>
   <DefaultLayout>
     <LayoutsSidebar />
@@ -128,10 +134,10 @@
                         <span>
                           <Icon icon="feather:archive" />
                           <span data-filter-match>Cakes</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <Icon icon="feather:clock" />
                           <span data-filter-match>1h 45m</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <Icon icon="feather:paperclip" />
                           <span data-filter-match>3 files</span>
                         </span>
@@ -216,10 +222,10 @@
                         <span>
                           <Icon icon="feather:archive" />
                           <span data-filter-match>Cakes</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <Icon icon="feather:clock" />
                           <span data-filter-match>1h 15m</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <Icon icon="feather:paperclip" />
                           <span data-filter-match>2 files</span>
                         </span>
@@ -323,10 +329,10 @@
                         <span>
                           <Icon icon="feather:archive" />
                           <span data-filter-match>Cakes</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <Icon icon="feather:clock" />
                           <span data-filter-match>2h</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <Icon icon="feather:paperclip" />
                           <span data-filter-match>4 files</span>
                         </span>
@@ -430,10 +436,10 @@
                         <span>
                           <Icon icon="feather:archive" />
                           <span data-filter-match>Cakes</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <Icon icon="feather:clock" />
                           <span data-filter-match>3h 30m</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <Icon icon="feather:paperclip" />
                           <span data-filter-match>7 files</span>
                         </span>
@@ -538,10 +544,10 @@
                         <span>
                           <Icon icon="feather:archive" />
                           <span data-filter-match>Waffles</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <Icon icon="feather:clock" />
                           <span data-filter-match>1h 00m</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <Icon icon="feather:paperclip" />
                           <span data-filter-match>2 files</span>
                         </span>
@@ -645,10 +651,10 @@
                         <span>
                           <Icon icon="feather:archive" />
                           <span data-filter-match>Slices</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <Icon icon="feather:clock" />
                           <span data-filter-match>45m</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <Icon icon="feather:paperclip" />
                           <span data-filter-match>1 file</span>
                         </span>
@@ -752,10 +758,10 @@
                         <span>
                           <Icon icon="feather:archive" />
                           <span data-filter-match>Donuts</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <Icon icon="feather:clock" />
                           <span data-filter-match>2h 15m</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <Icon icon="feather:paperclip" />
                           <span data-filter-match>2 files</span>
                         </span>
@@ -859,10 +865,10 @@
                         <span>
                           <Icon icon="feather:archive" />
                           <span data-filter-match>Sandwiches</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <Icon icon="feather:clock" />
                           <span data-filter-match>15m</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <Icon icon="feather:paperclip" />
                           <span data-filter-match>1 file</span>
                         </span>
@@ -966,10 +972,10 @@
                         <span>
                           <Icon icon="feather:archive" />
                           <span data-filter-match>Slices</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <Icon icon="feather:clock" />
                           <span data-filter-match>15m</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <Icon icon="feather:paperclip" />
                           <span data-filter-match>1 file</span>
                         </span>
@@ -1073,10 +1079,10 @@
                         <span>
                           <Icon icon="feather:archive" />
                           <span data-filter-match>Slices</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <Icon icon="feather:clock" />
                           <span data-filter-match>1h 15m</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <Icon icon="feather:paperclip" />
                           <span data-filter-match>2 files</span>
                         </span>

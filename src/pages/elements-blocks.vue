@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import { useTitle } from '@vueuse/core'
+
+useTitle('Elements - Blocks - Vuero')
+</script>
+
 <template>
   <DefaultLayout>
     <ElementsSidebar />

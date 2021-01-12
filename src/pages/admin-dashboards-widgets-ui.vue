@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import { useTitle } from '@vueuse/core'
+
+useTitle('Dashboard Widgets UI - Admin - Vuero')
+</script>
+
 <template>
   <DefaultLayout>
     <GenericSidebar />
@@ -438,7 +444,7 @@
                       </div>
                       <div class="exerpt">
                         <h5>
-                          <i class="fas fa-circle"></i>
+                          <Icon icon="fa-circle" />
                           <span>Design Project</span>
                         </h5>
                         <p>

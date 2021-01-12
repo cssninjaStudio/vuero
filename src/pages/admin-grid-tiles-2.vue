@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import { useTitle } from '@vueuse/core'
+
+useTitle('Grid Tiles 2 - Admin - Vuero')
+</script>
+
 <template>
   <DefaultLayout>
     <LayoutsSidebar />
@@ -92,7 +98,7 @@
               </div>
               <button class="button h-button is-primary is-raised">
                 <span class="icon">
-                  <i class="fas fa-plus"></i>
+                  <Icon icon="fa-plus" />
                 </span>
                 <span>Add File</span>
               </button>
@@ -143,7 +149,7 @@
                         <span class="dark-inverted">Company UX Guide</span>
                         <span>
                           <span>4.7 MB</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <span>Updated 2 days ago</span>
                         </span>
                       </div>
@@ -168,7 +174,7 @@
                         <span class="dark-inverted">Tech Summit Expenses</span>
                         <span>
                           <span>34 KB</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <span>Updated 1 week ago</span>
                         </span>
                       </div>
@@ -193,7 +199,7 @@
                         <span class="dark-inverted">Project Outline</span>
                         <span>
                           <span>77 KB</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <span>Updated 2 weeks ago</span>
                         </span>
                       </div>
@@ -218,7 +224,7 @@
                         <span class="dark-inverted">UX Presentation</span>
                         <span>
                           <span>2.3 MB</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <span>Updated 4 days ago</span>
                         </span>
                       </div>
@@ -245,7 +251,7 @@
                         >
                         <span>
                           <span>4.8 MB</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <span>Updated 3 hours ago</span>
                         </span>
                       </div>
@@ -272,7 +278,7 @@
                         >
                         <span>
                           <span>1.8 MB</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <span>Updated 6 hours ago</span>
                         </span>
                       </div>
@@ -297,7 +303,7 @@
                         <span class="dark-inverted">2020 Projects Digest</span>
                         <span>
                           <span>8.9 MB</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <span>Updated 2 days ago</span>
                         </span>
                       </div>
@@ -324,7 +330,7 @@
                         >
                         <span>
                           <span>1.2 MB</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <span>Updated 2 months ago</span>
                         </span>
                       </div>
@@ -351,7 +357,7 @@
                         >
                         <span>
                           <span>250 KB</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <span>Updated 2 weeks ago</span>
                         </span>
                       </div>
@@ -378,7 +384,7 @@
                         >
                         <span>
                           <span>3.9 MB</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <span>Updated 2 months ago</span>
                         </span>
                       </div>
@@ -405,7 +411,7 @@
                         >
                         <span>
                           <span>2.6 MB</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <span>Updated 2 months ago</span>
                         </span>
                       </div>
@@ -432,7 +438,7 @@
                         >
                         <span>
                           <span>1.1 MB</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <span>Updated 8 months ago</span>
                         </span>
                       </div>
@@ -459,7 +465,7 @@
                         >
                         <span>
                           <span>34 KB</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <span>Updated 8 months ago</span>
                         </span>
                       </div>
@@ -486,7 +492,7 @@
                         >
                         <span>
                           <span>5.8 MB</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <span>Updated 3 months ago</span>
                         </span>
                       </div>
@@ -511,7 +517,7 @@
                         <span class="dark-inverted">Company Brand Book</span>
                         <span>
                           <span>5.3 MB</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <span>Updated 3 weeks ago</span>
                         </span>
                       </div>
@@ -536,7 +542,7 @@
                         <span class="dark-inverted">2019 Projects Digest</span>
                         <span>
                           <span>4.7 MB</span>
-                          <i class="fas fa-circle icon-separator"></i>
+                          <Icon icon="fa-circle icon-separator" />
                           <span>Updated 9 months ago</span>
                         </span>
                       </div>

@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import { useTitle } from '@vueuse/core'
+
+useTitle('Dashboard Widgets Stats - Admin - Vuero')
+</script>
+
 <template>
   <DefaultLayout>
     <GenericSidebar />
@@ -281,7 +287,7 @@
                     <h3 class="dark-inverted">Members</h3>
                     <button class="button h-button is-primary is-elevated">
                       <span class="icon is-small">
-                        <i class="fas fa-plus"></i>
+                        <Icon icon="fa-plus" />
                       </span>
                       <span>Add Member</span>
                     </button>
@@ -357,11 +363,11 @@
                           <div class="rating-wrap">
                             <span>Rating</span>
                             <div class="rating">
-                              <i class="fas fa-star selected"></i>
-                              <i class="fas fa-star selected"></i>
-                              <i class="fas fa-star selected"></i>
-                              <i class="fas fa-star selected"></i>
-                              <i class="fas fa-star selected"></i>
+                              <Icon icon="fa-star selected" />
+                              <Icon icon="fa-star selected" />
+                              <Icon icon="fa-star selected" />
+                              <Icon icon="fa-star selected" />
+                              <Icon icon="fa-star selected" />
                             </div>
                           </div>
                         </td>
@@ -449,11 +455,11 @@
                           <div class="rating-wrap">
                             <span>Rating</span>
                             <div class="rating">
-                              <i class="fas fa-star selected"></i>
-                              <i class="fas fa-star selected"></i>
-                              <i class="fas fa-star selected"></i>
-                              <i class="fas fa-star selected"></i>
-                              <i class="fas fa-star"></i>
+                              <Icon icon="fa-star selected" />
+                              <Icon icon="fa-star selected" />
+                              <Icon icon="fa-star selected" />
+                              <Icon icon="fa-star selected" />
+                              <Icon icon="fa-star" />
                             </div>
                           </div>
                         </td>
@@ -552,11 +558,11 @@
                           <div class="rating-wrap">
                             <span>Rating</span>
                             <div class="rating">
-                              <i class="fas fa-star selected"></i>
-                              <i class="fas fa-star selected"></i>
-                              <i class="fas fa-star selected"></i>
-                              <i class="fas fa-star selected"></i>
-                              <i class="fas fa-star selected"></i>
+                              <Icon icon="fa-star selected" />
+                              <Icon icon="fa-star selected" />
+                              <Icon icon="fa-star selected" />
+                              <Icon icon="fa-star selected" />
+                              <Icon icon="fa-star selected" />
                             </div>
                           </div>
                         </td>
@@ -626,11 +632,11 @@
                           <div class="rating-wrap">
                             <span>Rating</span>
                             <div class="rating">
-                              <i class="fas fa-star selected"></i>
-                              <i class="fas fa-star selected"></i>
-                              <i class="fas fa-star selected"></i>
-                              <i class="fas fa-star"></i>
-                              <i class="fas fa-star"></i>
+                              <Icon icon="fa-star selected" />
+                              <Icon icon="fa-star selected" />
+                              <Icon icon="fa-star selected" />
+                              <Icon icon="fa-star" />
+                              <Icon icon="fa-star" />
                             </div>
                           </div>
                         </td>
@@ -718,11 +724,11 @@
                           <div class="rating-wrap">
                             <span>Rating</span>
                             <div class="rating">
-                              <i class="fas fa-star selected"></i>
-                              <i class="fas fa-star selected"></i>
-                              <i class="fas fa-star selected"></i>
-                              <i class="fas fa-star selected"></i>
-                              <i class="fas fa-star selected"></i>
+                              <Icon icon="fa-star selected" />
+                              <Icon icon="fa-star selected" />
+                              <Icon icon="fa-star selected" />
+                              <Icon icon="fa-star selected" />
+                              <Icon icon="fa-star selected" />
                             </div>
                           </div>
                         </td>
@@ -765,7 +771,7 @@
                     <h3 class="dark-inverted">Members</h3>
                     <button class="button h-button is-primary is-elevated">
                       <span class="icon is-small">
-                        <i class="fas fa-plus"></i>
+                        <Icon icon="fa-plus" />
                       </span>
                       <span>Add Member</span>
                     </button>
@@ -841,11 +847,11 @@
                           <div class="rating-wrap">
                             <span>Rating</span>
                             <div class="rating">
-                              <i class="fas fa-star selected"></i>
-                              <i class="fas fa-star selected"></i>
-                              <i class="fas fa-star selected"></i>
-                              <i class="fas fa-star selected"></i>
-                              <i class="fas fa-star selected"></i>
+                              <Icon icon="fa-star selected" />
+                              <Icon icon="fa-star selected" />
+                              <Icon icon="fa-star selected" />
+                              <Icon icon="fa-star selected" />
+                              <Icon icon="fa-star selected" />
                             </div>
                           </div>
                         </td>
@@ -933,11 +939,11 @@
                           <div class="rating-wrap">
                             <span>Rating</span>
                             <div class="rating">
-                              <i class="fas fa-star selected"></i>
-                              <i class="fas fa-star selected"></i>
-                              <i class="fas fa-star selected"></i>
-                              <i class="fas fa-star selected"></i>
-                              <i class="fas fa-star"></i>
+                              <Icon icon="fa-star selected" />
+                              <Icon icon="fa-star selected" />
+                              <Icon icon="fa-star selected" />
+                              <Icon icon="fa-star selected" />
+                              <Icon icon="fa-star" />
                             </div>
                           </div>
                         </td>
@@ -1036,11 +1042,11 @@
                           <div class="rating-wrap">
                             <span>Rating</span>
                             <div class="rating">
-                              <i class="fas fa-star selected"></i>
-                              <i class="fas fa-star selected"></i>
-                              <i class="fas fa-star selected"></i>
-                              <i class="fas fa-star selected"></i>
-                              <i class="fas fa-star selected"></i>
+                              <Icon icon="fa-star selected" />
+                              <Icon icon="fa-star selected" />
+                              <Icon icon="fa-star selected" />
+                              <Icon icon="fa-star selected" />
+                              <Icon icon="fa-star selected" />
                             </div>
                           </div>
                         </td>
@@ -1110,11 +1116,11 @@
                           <div class="rating-wrap">
                             <span>Rating</span>
                             <div class="rating">
-                              <i class="fas fa-star selected"></i>
-                              <i class="fas fa-star selected"></i>
-                              <i class="fas fa-star selected"></i>
-                              <i class="fas fa-star"></i>
-                              <i class="fas fa-star"></i>
+                              <Icon icon="fa-star selected" />
+                              <Icon icon="fa-star selected" />
+                              <Icon icon="fa-star selected" />
+                              <Icon icon="fa-star" />
+                              <Icon icon="fa-star" />
                             </div>
                           </div>
                         </td>
@@ -1202,11 +1208,11 @@
                           <div class="rating-wrap">
                             <span>Rating</span>
                             <div class="rating">
-                              <i class="fas fa-star selected"></i>
-                              <i class="fas fa-star selected"></i>
-                              <i class="fas fa-star selected"></i>
-                              <i class="fas fa-star selected"></i>
-                              <i class="fas fa-star selected"></i>
+                              <Icon icon="fa-star selected" />
+                              <Icon icon="fa-star selected" />
+                              <Icon icon="fa-star selected" />
+                              <Icon icon="fa-star selected" />
+                              <Icon icon="fa-star selected" />
                             </div>
                           </div>
                         </td>

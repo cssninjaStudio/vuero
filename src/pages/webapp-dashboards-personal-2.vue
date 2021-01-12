@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import { useTitle } from '@vueuse/core'
+
+useTitle('Dashboards Personal 2 - WebApp - Vuero')
+</script>
+
 <template>
   <WebappLayout>
     <GenericMobileSubsidebar />
@@ -358,8 +364,8 @@
                             <div class="position">UI/UX Designer</div>
                           </div>
                           <div class="user-list-icons">
-                            <a><i class="fas fa-phone"></i></a>
-                            <a><i class="fas fa-video"></i></a>
+                            <a><Icon icon="fa-phone" /></a>
+                            <a><Icon icon="fa-video" /></a>
                           </div>
                         </li>
                         <li>
@@ -376,8 +382,8 @@
                             <div class="position">UI/UX Designer</div>
                           </div>
                           <div class="user-list-icons">
-                            <a><i class="fas fa-phone"></i></a>
-                            <a><i class="fas fa-video"></i></a>
+                            <a><Icon icon="fa-phone" /></a>
+                            <a><Icon icon="fa-video" /></a>
                           </div>
                         </li>
                         <li>
@@ -397,8 +403,8 @@
                             <div class="position">UI/UX Designer</div>
                           </div>
                           <div class="user-list-icons">
-                            <a><i class="fas fa-phone"></i></a>
-                            <a><i class="fas fa-video"></i></a>
+                            <a><Icon icon="fa-phone" /></a>
+                            <a><Icon icon="fa-video" /></a>
                           </div>
                         </li>
                         <li>
@@ -415,8 +421,8 @@
                             <div class="position">Frontend developer</div>
                           </div>
                           <div class="user-list-icons">
-                            <a><i class="fas fa-phone"></i></a>
-                            <a><i class="fas fa-video"></i></a>
+                            <a><Icon icon="fa-phone" /></a>
+                            <a><Icon icon="fa-video" /></a>
                           </div>
                         </li>
                       </ul>

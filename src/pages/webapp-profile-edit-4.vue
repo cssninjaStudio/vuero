@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import { useTitle } from '@vueuse/core'
+
+useTitle('Profile Edit 4 - WebApp - Vuero')
+</script>
+
 <template>
   <WebappLayout>
     <LayoutsMobileSubsidebar />
@@ -63,7 +69,7 @@
                         <i class="lnil lnil-user-alt"></i>
                         <span>General</span>
                         <span class="end">
-                          <i class="fas fa-arrow-right"></i>
+                          <Icon icon="fa-arrow-right" />
                         </span>
                       </RouterLink>
                       <RouterLink
@@ -73,7 +79,7 @@
                         <i class="lnil lnil-crown-alt"></i>
                         <span>Experience</span>
                         <span class="end">
-                          <i class="fas fa-arrow-right"></i>
+                          <Icon icon="fa-arrow-right" />
                         </span>
                       </RouterLink>
                       <RouterLink
@@ -83,7 +89,7 @@
                         <i class="lnil lnil-quill"></i>
                         <span>Skills</span>
                         <span class="end">
-                          <i class="fas fa-arrow-right"></i>
+                          <Icon icon="fa-arrow-right" />
                         </span>
                       </RouterLink>
                       <RouterLink
@@ -93,7 +99,7 @@
                         <i class="lnil lnil-cog"></i>
                         <span>Settings</span>
                         <span class="end">
-                          <i class="fas fa-arrow-right"></i>
+                          <Icon icon="fa-arrow-right" />
                         </span>
                       </RouterLink>
                     </div>

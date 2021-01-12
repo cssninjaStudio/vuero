@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import { useTitle } from '@vueuse/core'
+
+useTitle('Profile Edit 3 - Admin - Vuero')
+</script>
+
 <template>
   <DefaultLayout>
     <LayoutsSidebar />
@@ -79,7 +85,7 @@
                         <i class="lnil lnil-user-alt"></i>
                         <span>General</span>
                         <span class="end">
-                          <i class="fas fa-arrow-right"></i>
+                          <Icon icon="fa-arrow-right" />
                         </span>
                       </RouterLink>
                       <RouterLink
@@ -89,7 +95,7 @@
                         <i class="lnil lnil-crown-alt"></i>
                         <span>Experience</span>
                         <span class="end">
-                          <i class="fas fa-arrow-right"></i>
+                          <Icon icon="fa-arrow-right" />
                         </span>
                       </RouterLink>
                       <RouterLink
@@ -99,7 +105,7 @@
                         <i class="lnil lnil-quill"></i>
                         <span>Skills</span>
                         <span class="end">
-                          <i class="fas fa-arrow-right"></i>
+                          <Icon icon="fa-arrow-right" />
                         </span>
                       </RouterLink>
                       <RouterLink
@@ -109,7 +115,7 @@
                         <i class="lnil lnil-cog"></i>
                         <span>Settings</span>
                         <span class="end">
-                          <i class="fas fa-arrow-right"></i>
+                          <Icon icon="fa-arrow-right" />
                         </span>
                       </RouterLink>
                     </div>
@@ -444,7 +450,7 @@
                                 class="button h-button is-raised add-setting-item is-dark-outlined"
                               >
                                 <span class="icon">
-                                  <i class="fas fa-plus"></i>
+                                  <Icon icon="fa-plus" />
                                 </span>
                                 <span>Add</span>
                               </button>
@@ -731,7 +737,7 @@
                                         class="button h-button is-primary is-raised is-fullwidth"
                                       >
                                         <span class="icon">
-                                          <i class="fas fa-plus"></i>
+                                          <Icon icon="fa-plus" />
                                         </span>
                                         <span>Add Skill</span>
                                       </button>
@@ -819,7 +825,7 @@
                                 class="button h-button is-raised add-setting-item is-dark-outlined"
                               >
                                 <span class="icon">
-                                  <i class="fas fa-plus"></i>
+                                  <Icon icon="fa-plus" />
                                 </span>
                                 <span>Add</span>
                               </button>
@@ -1005,7 +1011,7 @@
                                         class="button h-button is-primary is-raised is-fullwidth"
                                       >
                                         <span class="icon">
-                                          <i class="fas fa-plus"></i>
+                                          <Icon icon="fa-plus" />
                                         </span>
                                         <span>Add Tool</span>
                                       </button>
@@ -1093,7 +1099,7 @@
                                 class="button h-button is-raised add-setting-item is-dark-outlined"
                               >
                                 <span class="icon">
-                                  <i class="fas fa-plus"></i>
+                                  <Icon icon="fa-plus" />
                                 </span>
                                 <span>Add</span>
                               </button>

@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import { useTitle } from '@vueuse/core'
+
+useTitle('Blank Page 4 - WebApp - Vuero')
+</script>
+
 <template>
   <WebappV4Layout>
     <LayoutsMobileSubsidebar />
