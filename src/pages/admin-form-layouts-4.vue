@@ -190,11 +190,14 @@
                                 <div class="h-avatar">
                                   <img
                                     class="avatar"
-                                    src="https://via.placeholder.com/150x150"
-                                    data-demo-src="/@images/avatars/photos/8.jpg"
+                                    src="/@images/avatars/photos/8.jpg"
                                     alt=""
                                     data-user-popover="3"
                                     data-target="webuiPopover0"
+                                    @error="
+                                      $event.target.src =
+                                        'https://via.placeholder.com/150x150'
+                                    "
                                   />
                                 </div>
                                 <div class="h-avatar">
@@ -208,11 +211,14 @@
                                 <div class="h-avatar">
                                   <img
                                     class="avatar"
-                                    src="https://via.placeholder.com/150x150"
-                                    data-demo-src="/@images/avatars/photos/18.jpg"
+                                    src="/@images/avatars/photos/18.jpg"
                                     alt=""
                                     data-user-popover="7"
                                     data-target="webuiPopover2"
+                                    @error="
+                                      $event.target.src =
+                                        'https://via.placeholder.com/150x150'
+                                    "
                                   />
                                 </div>
                                 <div class="h-avatar">
@@ -226,10 +232,13 @@
                                 <div class="h-avatar">
                                   <img
                                     class="avatar"
-                                    src="https://via.placeholder.com/150x150"
-                                    data-demo-src="/@images/avatars/photos/7.jpg"
+                                    src="/@images/avatars/photos/7.jpg"
                                     alt=""
                                     data-user-popover="0"
+                                    @error="
+                                      $event.target.src =
+                                        'https://via.placeholder.com/150x150'
+                                    "
                                   />
                                 </div>
                                 <button class="add-participant">
@@ -446,9 +455,12 @@
                                       />
                                       <div class="option-meta">
                                         <img
-                                          src="https://via.placeholder.com/150x150"
-                                          data-demo-src="/@images/avatars/placeholder.jpg"
+                                          src="/@images/avatars/placeholder.jpg"
                                           alt=""
+                                          @error="
+                                            $event.target.src =
+                                              'https://via.placeholder.com/150x150'
+                                          "
                                         />
                                         <span>All</span>
                                       </div>
@@ -460,9 +472,12 @@
                                       />
                                       <div class="option-meta">
                                         <img
-                                          src="https://via.placeholder.com/150x150"
-                                          data-demo-src="/@images/avatars/photos/8.jpg"
+                                          src="/@images/avatars/photos/8.jpg"
                                           alt=""
+                                          @error="
+                                            $event.target.src =
+                                              'https://via.placeholder.com/150x150'
+                                          "
                                         />
                                         <span>Erik K.</span>
                                       </div>
@@ -474,9 +489,12 @@
                                       />
                                       <div class="option-meta">
                                         <img
-                                          src="https://via.placeholder.com/150x150"
-                                          data-demo-src="/@images/avatars/photos/12.jpg"
+                                          src="/@images/avatars/photos/12.jpg"
                                           alt=""
+                                          @error="
+                                            $event.target.src =
+                                              'https://via.placeholder.com/150x150'
+                                          "
                                         />
                                         <span>Joshua S.</span>
                                       </div>
@@ -488,9 +506,12 @@
                                       />
                                       <div class="option-meta">
                                         <img
-                                          src="https://via.placeholder.com/150x150"
-                                          data-demo-src="/@images/avatars/photos/25.jpg"
+                                          src="/@images/avatars/photos/25.jpg"
                                           alt=""
+                                          @error="
+                                            $event.target.src =
+                                              'https://via.placeholder.com/150x150'
+                                          "
                                         />
                                         <span>Melany W.</span>
                                       </div>
@@ -502,9 +523,12 @@
                                       />
                                       <div class="option-meta">
                                         <img
-                                          src="https://via.placeholder.com/150x150"
-                                          data-demo-src="/@images/avatars/photos/7.jpg"
+                                          src="/@images/avatars/photos/7.jpg"
                                           alt=""
+                                          @error="
+                                            $event.target.src =
+                                              'https://via.placeholder.com/150x150'
+                                          "
                                         />
                                         <span>Alice C.</span>
                                       </div>
@@ -516,9 +540,12 @@
                                       />
                                       <div class="option-meta">
                                         <img
-                                          src="https://via.placeholder.com/150x150"
-                                          data-demo-src="/@images/avatars/photos/18.jpg"
+                                          src="/@images/avatars/photos/18.jpg"
                                           alt=""
+                                          @error="
+                                            $event.target.src =
+                                              'https://via.placeholder.com/150x150'
+                                          "
                                         />
                                         <span>Esteban C.</span>
                                       </div>

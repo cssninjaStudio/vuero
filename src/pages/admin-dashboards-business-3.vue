@@ -52,9 +52,12 @@
                             <div class="h-avatar is-medium">
                               <img
                                 class="avatar is-squared"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/avatars/photos/8.jpg"
+                                src="/@images/avatars/photos/8.jpg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <h3>Welcome back, Erik.</h3>
@@ -72,25 +75,34 @@
                             <a class="h-avatar">
                               <img
                                 class="avatar is-squared"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/avatars/photos/13.jpg"
+                                src="/@images/avatars/photos/13.jpg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </a>
                             <a class="h-avatar">
                               <img
                                 class="avatar is-squared"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/avatars/photos/32.jpg"
+                                src="/@images/avatars/photos/32.jpg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </a>
                             <a class="h-avatar">
                               <img
                                 class="avatar is-squared"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/avatars/photos/9.jpg"
+                                src="/@images/avatars/photos/9.jpg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </a>
                             <button>
@@ -246,16 +258,22 @@
                               <div class="h-avatar is-large">
                                 <img
                                   class="avatar"
-                                  src="https://via.placeholder.com/150x150"
-                                  data-demo-src="/@images/avatars/photos/13.jpg"
+                                  src="/@images/avatars/photos/13.jpg"
                                   alt=""
                                   data-user-popover="6"
+                                  @error="
+                                    $event.target.src =
+                                      'https://via.placeholder.com/150x150'
+                                  "
                                 />
                                 <img
                                   class="badge"
-                                  src="https://via.placeholder.com/150x150"
-                                  data-demo-src="/@images/icons/stacks/illustrator.svg"
+                                  src="/@images/icons/stacks/illustrator.svg"
                                   alt=""
+                                  @error="
+                                    $event.target.src =
+                                      'https://via.placeholder.com/150x150'
+                                  "
                                 />
                               </div>
                               <h3 class="dark-inverted" data-filter-match>
@@ -278,16 +296,22 @@
                               <div class="h-avatar is-large">
                                 <img
                                   class="avatar"
-                                  src="https://via.placeholder.com/150x150"
-                                  data-demo-src="/@images/avatars/photos/37.jpg"
+                                  src="/@images/avatars/photos/37.jpg"
                                   alt=""
                                   data-user-popover="31"
+                                  @error="
+                                    $event.target.src =
+                                      'https://via.placeholder.com/150x150'
+                                  "
                                 />
                                 <img
                                   class="badge"
-                                  src="https://via.placeholder.com/150x150"
-                                  data-demo-src="/@images/icons/flags/france.svg"
+                                  src="/@images/icons/flags/france.svg"
                                   alt=""
+                                  @error="
+                                    $event.target.src =
+                                      'https://via.placeholder.com/150x150'
+                                  "
                                 />
                               </div>
                               <h3 class="dark-inverted" data-filter-match>
@@ -310,16 +334,22 @@
                               <div class="h-avatar is-large">
                                 <img
                                   class="avatar"
-                                  src="https://via.placeholder.com/150x150"
-                                  data-demo-src="/@images/avatars/photos/25.jpg"
+                                  src="/@images/avatars/photos/25.jpg"
                                   alt=""
                                   data-user-popover="4"
+                                  @error="
+                                    $event.target.src =
+                                      'https://via.placeholder.com/150x150'
+                                  "
                                 />
                                 <img
                                   class="badge"
-                                  src="https://via.placeholder.com/150x150"
-                                  data-demo-src="/@images/icons/stacks/js.svg"
+                                  src="/@images/icons/stacks/js.svg"
                                   alt=""
+                                  @error="
+                                    $event.target.src =
+                                      'https://via.placeholder.com/150x150'
+                                  "
                                 />
                               </div>
                               <h3 class="dark-inverted" data-filter-match>

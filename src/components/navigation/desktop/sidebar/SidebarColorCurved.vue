@@ -3,7 +3,7 @@
     <div class="sidebar-brand">
       <RouterLink :to="{ name: 'index' }">
         <img src="/@images/logos/logo/logo-light.svg" alt="" />
-      </a>
+      </RouterLink>
     </div>
     <div class="sidebar-inner">
       <div class="naver"></div>

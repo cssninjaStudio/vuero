@@ -1,4 +1,4 @@
-/*! _navbar.scss | Huro | Css ninja 2020-2021 */
+/*! _navbar.scss | Vuero | Css ninja 2020-2021 */
 
 /*
     1. Mobile Navbar
@@ -863,7 +863,7 @@ body {
         max-width: 580px;
 
         .centered-link {
-          flex: 1 1 0px;
+          flex: 1 1 0;
           text-align: center;
           padding: 10px 0;
           border-radius: 8px;
@@ -921,7 +921,7 @@ body {
 
         .centered-drop,
         .centered-button {
-          flex: 1 1 0px;
+          flex: 1 1 0;
           text-align: center;
           padding: 10px 0;
           border-radius: 8px;
@@ -1931,7 +1931,7 @@ body {
         padding: 10px 0;
 
         li {
-          flex: 1 1 0px;
+          flex: 1 1 0;
 
           &.is-active {
             a {

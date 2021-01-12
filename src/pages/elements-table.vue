@@ -76,7 +76,7 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Basic Table</h3>
                     <p>
-                      Huro provides a basic Html5 table powered by Bulma. You
+                      Vuero provides a basic Html5 table powered by Bulma. You
                       sinply have to add the <code>table</code> class to a html5
                       <code>table</code> element. You can also add the
                       <code>is-hoverable</code> class to highlight the rows on
@@ -153,7 +153,7 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Striped Table</h3>
                     <p>
-                      Huro provides a basic Html5 table powered by Bulma. You
+                      Vuero provides a basic Html5 table powered by Bulma. You
                       sinply have to add the <code>table</code> class to a html5
                       <code>table</code> element. You can also add the
                       <code>is-striped</code> to apply striped styles to the
@@ -230,7 +230,7 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Media Table</h3>
                     <p>
-                      Huro provides a basic Html5 table powered by Bulma. You
+                      Vuero provides a basic Html5 table powered by Bulma. You
                       sinply have to add the <code>table</code> class to a html5
                       <code>table</code> element. You can easily add media
                       elements like the huro avatars inside your table rows.
@@ -254,9 +254,12 @@
                         <div class="h-avatar">
                           <img
                             class="avatar"
-                            src="https://via.placeholder.com/150x150"
-                            data-demo-src="/@images/avatars/svg/8.gif"
+                            src="/@images/avatars/svg/8.gif"
                             alt=""
+                            @error="
+                              $event.target.src =
+                                'https://via.placeholder.com/150x150'
+                            "
                           />
                         </div>
                       </td>
@@ -274,9 +277,12 @@
                         <div class="h-avatar">
                           <img
                             class="avatar"
-                            src="https://via.placeholder.com/150x150"
-                            data-demo-src="/@images/avatars/svg/1.gif"
+                            src="/@images/avatars/svg/1.gif"
                             alt=""
+                            @error="
+                              $event.target.src =
+                                'https://via.placeholder.com/150x150'
+                            "
                           />
                         </div>
                       </td>
@@ -294,9 +300,12 @@
                         <div class="h-avatar">
                           <img
                             class="avatar"
-                            src="https://via.placeholder.com/150x150"
-                            data-demo-src="/@images/avatars/svg/4.gif"
+                            src="/@images/avatars/svg/4.gif"
                             alt=""
+                            @error="
+                              $event.target.src =
+                                'https://via.placeholder.com/150x150'
+                            "
                           />
                         </div>
                       </td>
@@ -331,9 +340,12 @@
                         <div class="h-avatar">
                           <img
                             class="avatar"
-                            src="https://via.placeholder.com/150x150"
-                            data-demo-src="/@images/avatars/svg/3.gif"
+                            src="/@images/avatars/svg/3.gif"
                             alt=""
+                            @error="
+                              $event.target.src =
+                                'https://via.placeholder.com/150x150'
+                            "
                           />
                         </div>
                       </td>

@@ -280,9 +280,12 @@
                           <div class="h-avatar is-medium">
                             <img
                               class="avatar is-squared"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/avatars/svg/8.gif"
+                              src="/@images/avatars/svg/8.gif"
                               alt=""
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                           </div>
                         </td>
@@ -303,25 +306,34 @@
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/icons/stacks/js.svg"
+                                src="/@images/icons/stacks/js.svg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/icons/stacks/html5.svg"
+                                src="/@images/icons/stacks/html5.svg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/icons/stacks/css3.svg"
+                                src="/@images/icons/stacks/css3.svg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                           </div>
@@ -371,9 +383,12 @@
                           <div class="h-avatar is-medium">
                             <img
                               class="avatar is-squared"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/avatars/svg/1.gif"
+                              src="/@images/avatars/svg/1.gif"
                               alt=""
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                           </div>
                         </td>
@@ -394,17 +409,23 @@
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/icons/stacks/reactjs.svg"
+                                src="/@images/icons/stacks/reactjs.svg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/icons/stacks/nodejs.svg"
+                                src="/@images/icons/stacks/nodejs.svg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                           </div>
@@ -454,9 +475,12 @@
                           <div class="h-avatar is-medium">
                             <img
                               class="avatar is-squared"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/avatars/svg/4.gif"
+                              src="/@images/avatars/svg/4.gif"
                               alt=""
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                           </div>
                         </td>
@@ -477,25 +501,34 @@
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/icons/stacks/csharp.svg"
+                                src="/@images/icons/stacks/csharp.svg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/icons/stacks/android.svg"
+                                src="/@images/icons/stacks/android.svg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/icons/stacks/laravel.svg"
+                                src="/@images/icons/stacks/laravel.svg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                           </div>
@@ -564,9 +597,12 @@
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/icons/stacks/illustrator.svg"
+                                src="/@images/icons/stacks/illustrator.svg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                           </div>
@@ -616,9 +652,12 @@
                           <div class="h-avatar is-medium">
                             <img
                               class="avatar is-squared"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/avatars/svg/3.gif"
+                              src="/@images/avatars/svg/3.gif"
                               alt=""
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                           </div>
                         </td>
@@ -639,17 +678,23 @@
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/icons/stacks/reactjs.svg"
+                                src="/@images/icons/stacks/reactjs.svg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/icons/stacks/vuejs.svg"
+                                src="/@images/icons/stacks/vuejs.svg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                           </div>
@@ -719,9 +764,12 @@
                           <div class="h-avatar is-medium">
                             <img
                               class="avatar"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/avatars/svg/8.gif"
+                              src="/@images/avatars/svg/8.gif"
                               alt=""
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                           </div>
                         </td>
@@ -742,25 +790,34 @@
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/icons/stacks/js.svg"
+                                src="/@images/icons/stacks/js.svg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/icons/stacks/html5.svg"
+                                src="/@images/icons/stacks/html5.svg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/icons/stacks/css3.svg"
+                                src="/@images/icons/stacks/css3.svg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                           </div>
@@ -810,9 +867,12 @@
                           <div class="h-avatar is-medium">
                             <img
                               class="avatar"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/avatars/svg/1.gif"
+                              src="/@images/avatars/svg/1.gif"
                               alt=""
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                           </div>
                         </td>
@@ -833,17 +893,23 @@
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/icons/stacks/reactjs.svg"
+                                src="/@images/icons/stacks/reactjs.svg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/icons/stacks/nodejs.svg"
+                                src="/@images/icons/stacks/nodejs.svg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                           </div>
@@ -893,9 +959,12 @@
                           <div class="h-avatar is-medium">
                             <img
                               class="avatar"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/avatars/svg/4.gif"
+                              src="/@images/avatars/svg/4.gif"
                               alt=""
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                           </div>
                         </td>
@@ -916,25 +985,34 @@
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/icons/stacks/csharp.svg"
+                                src="/@images/icons/stacks/csharp.svg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/icons/stacks/android.svg"
+                                src="/@images/icons/stacks/android.svg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/icons/stacks/laravel.svg"
+                                src="/@images/icons/stacks/laravel.svg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                           </div>
@@ -1003,9 +1081,12 @@
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/icons/stacks/illustrator.svg"
+                                src="/@images/icons/stacks/illustrator.svg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                           </div>
@@ -1055,9 +1136,12 @@
                           <div class="h-avatar is-medium">
                             <img
                               class="avatar"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/avatars/svg/3.gif"
+                              src="/@images/avatars/svg/3.gif"
                               alt=""
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                           </div>
                         </td>
@@ -1078,17 +1162,23 @@
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/icons/stacks/reactjs.svg"
+                                src="/@images/icons/stacks/reactjs.svg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/icons/stacks/vuejs.svg"
+                                src="/@images/icons/stacks/vuejs.svg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                           </div>

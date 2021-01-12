@@ -1,4 +1,4 @@
-/*! _pages-messaging.scss | Huro | Css ninja 2020-2021 */
+/*! _pages-messaging.scss | Vuero | Css ninja 2020-2021 */
 
 /* ==========================================================================
 Messaging
@@ -65,9 +65,9 @@ Messaging
     display: flex;
     min-height: 55px;
     align-items: center;
-    top: 0px;
-    left: 0px;
-    right: 0px;
+    top: 0;
+    left: 0;
+    right: 0;
     width: 100%;
     padding: 5px 10px;
     z-index: 2;
@@ -224,7 +224,6 @@ Messaging
       }
 
       .more-indicator {
-        display: block;
         height: 36px;
         width: 36px;
         border-radius: 50%;
@@ -314,7 +313,6 @@ Messaging
           position: absolute;
           right: -6px;
           bottom: 0;
-          border-radius: 50%;
           border: 3px solid $white;
           height: 34px;
           width: 34px;
@@ -354,7 +352,6 @@ Messaging
       .detail-photo-title {
         display: flex;
         align-items: center;
-        color: $light-text;
         font-weight: 400;
         font-size: 1rem;
         margin-bottom: 20px;
@@ -424,8 +421,8 @@ Messaging
         text-transform: uppercase;
         font-size: 0.8rem;
 
-        &:before,
-        &:after {
+        &::before,
+        &::after {
           top: 0.9em;
           width: 43%;
           border-top: 1px solid rgba(0, 0, 0, 0.1);
@@ -470,14 +467,13 @@ Messaging
     text-align: center;
     color: #c0c0c0;
     height: 20px;
-    text-shadow: 7px 0px 0px #e5e5e5, 6px 0px 0px #e5e5e5, 5px 0px 0px #e5e5e5,
-      4px 0px 0px #e5e5e5, 3px 0px 0px #e5e5e5, 2px 0px 0px #e5e5e5,
-      1px 0px 0px #e5e5e5, 1px 0px 0px #e5e5e5, 0px 0px 0px #e5e5e5,
-      -1px 0px 0px #e5e5e5, -2px 0px 0px #e5e5e5, -3px 0px 0px #e5e5e5,
-      -4px 0px 0px #e5e5e5, -5px 0px 0px #e5e5e5, -6px 0px 0px #e5e5e5,
-      -7px 0px 0px #e5e5e5;
-    box-shadow: inset 20px 0px 0px #e5e5e5, inset -20px 0px 0px #e5e5e5,
-      inset 0px -2px 0px #d7d7d7;
+    text-shadow: 7px 0 0 #e5e5e5, 6px 0 0 #e5e5e5, 5px 0 0 #e5e5e5,
+      4px 0 0 #e5e5e5, 3px 0 0 #e5e5e5, 2px 0 0 #e5e5e5, 1px 0 0 #e5e5e5,
+      1px 0 0 #e5e5e5, 0 0 0 #e5e5e5, -1px 0 0 #e5e5e5, -2px 0 0 #e5e5e5,
+      -3px 0 0 #e5e5e5, -4px 0 0 #e5e5e5, -5px 0 0 #e5e5e5, -6px 0 0 #e5e5e5,
+      -7px 0 0 #e5e5e5;
+    box-shadow: inset 20px 0 0 #e5e5e5, inset -20px 0 0 #e5e5e5,
+      inset 0 -2px 0 #d7d7d7;
     line-height: 38px;
     margin-top: 5px;
     margin-bottom: 20px;
@@ -498,7 +494,7 @@ Messaging
       .msg {
         border-radius: 6px;
 
-        &:after {
+        &::after {
           display: none;
         }
       }
@@ -628,7 +624,7 @@ Messaging
     .avatar {
       order: 2;
 
-      &:before {
+      &::before {
         display: none;
       }
     }
@@ -843,7 +839,7 @@ Messaging
       }
     }
 
-    &:after {
+    &::after {
       display: none;
     }
   }
@@ -894,7 +890,7 @@ Messaging
       }
     }
 
-    &:after {
+    &::after {
       display: none;
     }
   }
@@ -909,7 +905,7 @@ Messaging
     display: block;
     width: 450px;
     border-radius: 5px;
-    box-shadow: 0px 0px 3px #eee;
+    box-shadow: 0 0 3px #eee;
     transition: all 0.4s cubic-bezier(0.565, -0.26, 0.255, 1.41);
     cursor: default;
     -webkit-touch-callout: none;
@@ -1307,8 +1303,8 @@ body {
         .divider span {
           color: lighten($dark-sidebar, 22%) !important;
 
-          &:before,
-          &:after {
+          &::before,
+          &::after {
             border-color: lighten($dark-sidebar, 15%) !important;
           }
         }
@@ -1504,7 +1500,6 @@ body {
       }
 
       .chat-body {
-        padding-bottom: 60px;
         width: 100% !important;
         padding: 0 10px 40px 10px;
 
@@ -1582,7 +1577,6 @@ body {
       }
 
       .chat-body {
-        padding-bottom: 60px;
         width: 100% !important;
         padding: 0 10px 40px 10px;
 

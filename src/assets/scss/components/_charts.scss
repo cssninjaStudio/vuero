@@ -1,4 +1,4 @@
-/*! _charts.scss | Huro | Css Ninja 2020-2021 */
+/*! _charts.scss | Vuero | Css Ninja 2020-2021 */
 
 /*
     1. Apex Charts
@@ -203,11 +203,11 @@ body {
       background: lighten($dark-sidebar, 2%);
       color: $dark-dark-text !important;
 
-      &.apexcharts-xaxistooltip-bottom:after {
+      &.apexcharts-xaxistooltip-bottom::after {
         border-bottom-color: lighten($dark-sidebar, 2%);
       }
 
-      &.apexcharts-xaxistooltip-bottom:before {
+      &.apexcharts-xaxistooltip-bottom::before {
         border-bottom-color: lighten($dark-sidebar, 12%);
       }
 

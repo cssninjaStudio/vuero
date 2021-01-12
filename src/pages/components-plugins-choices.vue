@@ -76,7 +76,7 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Choices Input</h3>
                     <p>
-                      Huro is integrated with ChoicesJs, a performant vanilla
+                      Vuero is integrated with ChoicesJs, a performant vanilla
                       javascript tags input library. You can check the plugin
                       documentation on
                       <a href="https://github.com/jshjohnson/Choices">Github</a
@@ -85,8 +85,8 @@
                       shows how it works with an input element.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -128,7 +128,7 @@ var textRemove = new Choices(document.getElementById('choices-text-remove-button
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Choices Select</h3>
                     <p>
-                      Huro is integrated with ChoicesJs, a performant vanilla
+                      Vuero is integrated with ChoicesJs, a performant vanilla
                       javascript tags input library. You can check the plugin
                       documentation on
                       <a href="https://github.com/jshjohnson/Choices">Github</a
@@ -137,8 +137,8 @@ var textRemove = new Choices(document.getElementById('choices-text-remove-button
                       shows how it works with a select element.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">

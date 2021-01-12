@@ -1,6 +1,19 @@
+<script setup lang="ts">
+import { useWindowScroll } from '@vueuse/core'
+import { computed } from 'vue'
+
+import { isDark } from '/@src/composition/state/ui/darkModeState.ts'
+
+const { y } = useWindowScroll()
+const isScrolling = computed(() => {
+  return y.value > 30
+})
+</script>
+
 <template>
   <nav
-    class="navbar is-fixed-top is-transparent is-docked"
+    class="navbar is-fixed-top is-transparent"
+    :class="[!isScrolling && 'is-docked']"
     aria-label="main navigation"
   >
     <div class="navbar-brand">
@@ -63,7 +76,11 @@
       <div class="navbar-end">
         <div class="navbar-item is-theme-toggle">
           <label class="theme-toggle">
-            <input id="navbar-night-toggle--daynight" type="checkbox" />
+            <input
+              id="navbar-night-toggle--daynight"
+              v-model="isDark"
+              type="checkbox"
+            />
             <span class="toggler">
               <span class="dark">
                 <Icon icon="feather:moon" />

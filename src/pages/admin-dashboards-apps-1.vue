@@ -320,9 +320,12 @@
                           <div class="restaurants-list-item">
                             <div class="image-container">
                               <img
-                                src="https://via.placeholder.com/800x450"
-                                data-demo-src="/@images/photo/demo/food/1.jpg"
+                                src="/@images/photo/demo/food/1.jpg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/800x450'
+                                "
                               />
                               <div class="timer">
                                 <div>
@@ -334,9 +337,12 @@
                             <div class="meta-container">
                               <div class="meta-icon">
                                 <img
-                                  src="https://via.placeholder.com/800x450"
-                                  data-demo-src="/@images/illustrations/dashboards/food/icon-2.svg"
+                                  src="/@images/illustrations/dashboards/food/icon-2.svg"
                                   alt=""
+                                  @error="
+                                    $event.target.src =
+                                      'https://via.placeholder.com/800x450'
+                                  "
                                 />
                               </div>
                               <div class="meta-content">
@@ -358,9 +364,12 @@
                           <div class="restaurants-list-item">
                             <div class="image-container">
                               <img
-                                src="https://via.placeholder.com/800x450"
-                                data-demo-src="/@images/photo/demo/food/2.jpg"
+                                src="/@images/photo/demo/food/2.jpg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/800x450'
+                                "
                               />
                               <div class="timer">
                                 <div>
@@ -395,9 +404,12 @@
                           <div class="restaurants-list-item">
                             <div class="image-container">
                               <img
-                                src="https://via.placeholder.com/800x450"
-                                data-demo-src="/@images/photo/demo/food/3.jpg"
+                                src="/@images/photo/demo/food/3.jpg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/800x450'
+                                "
                               />
                               <div class="timer">
                                 <div>
@@ -432,9 +444,12 @@
                           <div class="restaurants-list-item">
                             <div class="image-container">
                               <img
-                                src="https://via.placeholder.com/800x450"
-                                data-demo-src="/@images/photo/demo/food/4.jpg"
+                                src="/@images/photo/demo/food/4.jpg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/800x450'
+                                "
                               />
                               <div class="timer">
                                 <div>
@@ -469,9 +484,12 @@
                           <div class="restaurants-list-item">
                             <div class="image-container">
                               <img
-                                src="https://via.placeholder.com/800x450"
-                                data-demo-src="/@images/photo/demo/food/5.jpg"
+                                src="/@images/photo/demo/food/5.jpg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/800x450'
+                                "
                               />
                               <div class="timer">
                                 <div>
@@ -506,9 +524,12 @@
                           <div class="restaurants-list-item">
                             <div class="image-container">
                               <img
-                                src="https://via.placeholder.com/800x450"
-                                data-demo-src="/@images/photo/demo/food/6.jpg"
+                                src="/@images/photo/demo/food/6.jpg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/800x450'
+                                "
                               />
                               <div class="timer">
                                 <div>
@@ -543,9 +564,12 @@
                           <div class="restaurants-list-item">
                             <div class="image-container">
                               <img
-                                src="https://via.placeholder.com/800x450"
-                                data-demo-src="/@images/photo/demo/food/7.jpg"
+                                src="/@images/photo/demo/food/7.jpg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/800x450'
+                                "
                               />
                               <div class="timer">
                                 <div>
@@ -580,9 +604,12 @@
                           <div class="restaurants-list-item">
                             <div class="image-container">
                               <img
-                                src="https://via.placeholder.com/800x450"
-                                data-demo-src="/@images/photo/demo/food/8.jpg"
+                                src="/@images/photo/demo/food/8.jpg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/800x450'
+                                "
                               />
                               <div class="timer">
                                 <div>
@@ -617,9 +644,12 @@
                           <div class="restaurants-list-item">
                             <div class="image-container">
                               <img
-                                src="https://via.placeholder.com/800x450"
-                                data-demo-src="/@images/photo/demo/food/9.jpg"
+                                src="/@images/photo/demo/food/9.jpg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/800x450'
+                                "
                               />
                               <div class="timer">
                                 <div>
@@ -654,9 +684,12 @@
                           <div class="restaurants-list-item">
                             <div class="image-container">
                               <img
-                                src="https://via.placeholder.com/800x450"
-                                data-demo-src="/@images/photo/demo/food/10.jpg"
+                                src="/@images/photo/demo/food/10.jpg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/800x450'
+                                "
                               />
                               <div class="timer">
                                 <div>
@@ -691,9 +724,12 @@
                           <div class="restaurants-list-item">
                             <div class="image-container">
                               <img
-                                src="https://via.placeholder.com/800x450"
-                                data-demo-src="/@images/photo/demo/food/11.jpg"
+                                src="/@images/photo/demo/food/11.jpg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/800x450'
+                                "
                               />
                               <div class="timer">
                                 <div>
@@ -728,9 +764,12 @@
                           <div class="restaurants-list-item">
                             <div class="image-container">
                               <img
-                                src="https://via.placeholder.com/800x450"
-                                data-demo-src="/@images/photo/demo/food/12.jpg"
+                                src="/@images/photo/demo/food/12.jpg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/800x450'
+                                "
                               />
                               <div class="timer">
                                 <div>
@@ -765,9 +804,12 @@
                           <div class="restaurants-list-item">
                             <div class="image-container">
                               <img
-                                src="https://via.placeholder.com/800x450"
-                                data-demo-src="/@images/photo/demo/food/13.jpg"
+                                src="/@images/photo/demo/food/13.jpg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/800x450'
+                                "
                               />
                               <div class="timer">
                                 <div>
@@ -802,9 +844,12 @@
                           <div class="restaurants-list-item">
                             <div class="image-container">
                               <img
-                                src="https://via.placeholder.com/800x450"
-                                data-demo-src="/@images/photo/demo/food/14.jpg"
+                                src="/@images/photo/demo/food/14.jpg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/800x450'
+                                "
                               />
                               <div class="timer">
                                 <div>
@@ -839,9 +884,12 @@
                           <div class="restaurants-list-item">
                             <div class="image-container">
                               <img
-                                src="https://via.placeholder.com/800x450"
-                                data-demo-src="/@images/photo/demo/food/15.jpg"
+                                src="/@images/photo/demo/food/15.jpg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/800x450'
+                                "
                               />
                               <div class="timer">
                                 <div>
@@ -876,9 +924,12 @@
                           <div class="restaurants-list-item">
                             <div class="image-container">
                               <img
-                                src="https://via.placeholder.com/800x450"
-                                data-demo-src="/@images/photo/demo/food/16.jpg"
+                                src="/@images/photo/demo/food/16.jpg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/800x450'
+                                "
                               />
                               <div class="timer">
                                 <div>
@@ -913,9 +964,12 @@
                           <div class="restaurants-list-item">
                             <div class="image-container">
                               <img
-                                src="https://via.placeholder.com/800x450"
-                                data-demo-src="/@images/photo/demo/food/17.jpg"
+                                src="/@images/photo/demo/food/17.jpg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/800x450'
+                                "
                               />
                               <div class="timer">
                                 <div>
@@ -950,9 +1004,12 @@
                           <div class="restaurants-list-item">
                             <div class="image-container">
                               <img
-                                src="https://via.placeholder.com/800x450"
-                                data-demo-src="/@images/photo/demo/food/18.jpg"
+                                src="/@images/photo/demo/food/18.jpg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/800x450'
+                                "
                               />
                               <div class="timer">
                                 <div>
@@ -1047,9 +1104,12 @@
                         <div class="h-avatar is-medium">
                           <img
                             class="avatar is-squared"
-                            src="https://via.placeholder.com/150x150"
-                            data-demo-src="/@images/photo/demo/food/1.jpg"
+                            src="/@images/photo/demo/food/1.jpg"
                             alt=""
+                            @error="
+                              $event.target.src =
+                                'https://via.placeholder.com/150x150'
+                            "
                           />
                         </div>
                         <div class="meta">
@@ -1061,9 +1121,12 @@
                         <div class="h-avatar is-medium">
                           <img
                             class="avatar is-squared"
-                            src="https://via.placeholder.com/150x150"
-                            data-demo-src="/@images/photo/demo/food/2.jpg"
+                            src="/@images/photo/demo/food/2.jpg"
                             alt=""
+                            @error="
+                              $event.target.src =
+                                'https://via.placeholder.com/150x150'
+                            "
                           />
                         </div>
                         <div class="meta">
@@ -1075,9 +1138,12 @@
                         <div class="h-avatar is-medium">
                           <img
                             class="avatar is-squared"
-                            src="https://via.placeholder.com/150x150"
-                            data-demo-src="/@images/photo/demo/food/3.jpg"
+                            src="/@images/photo/demo/food/3.jpg"
                             alt=""
+                            @error="
+                              $event.target.src =
+                                'https://via.placeholder.com/150x150'
+                            "
                           />
                         </div>
                         <div class="meta">
@@ -1176,17 +1242,20 @@
                           <div class="h-avatar is-medium">
                             <img
                               class="avatar is-squared"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/avatars/photos/8.jpg"
+                              src="/@images/avatars/photos/8.jpg"
                               alt=""
                               data-user-popover="3"
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                           </div>
                         </div>
                         <div class="right">
                           <h3>Erik K.</h3>
                           <div class="company">
-                            <span>Huro Ltd.</span>
+                            <span>Vuero Ltd.</span>
                             <p>Product Manager</p>
                           </div>
                           <div class="contact-info">

@@ -1,4 +1,4 @@
-/*! _finance.scss | Huro | Css ninja 2020-2021 */
+/*! _finance.scss | Vuero | Css ninja 2020-2021 */
 
 /*
     1. Analytics Dashboard
@@ -216,7 +216,7 @@
         flex: 0;
         margin-right: 10px;
 
-        &:before {
+        &::before {
           content: '';
           width: 36px;
           height: 36px;
@@ -224,39 +224,39 @@
           border-radius: 7px;
         }
 
-        &.github:before,
-        &.apple:before {
+        &.github::before,
+        &.apple::before {
           background: $github;
           box-shadow: $github-box-shadow;
         }
 
-        &.invision:before {
+        &.invision::before {
           background: $invision;
           box-shadow: $invision-box-shadow;
         }
 
-        &.facebook:before,
-        &.docker:before {
+        &.facebook::before,
+        &.docker::before {
           background: $facebook;
           box-shadow: $facebook-box-shadow;
         }
 
-        &.amazon:before {
+        &.amazon::before {
           background: $amazon;
           box-shadow: $amazon-box-shadow;
         }
 
-        &.twitter:before {
+        &.twitter::before {
           background: $twitter;
           box-shadow: $twitter-box-shadow;
         }
 
-        &.algolia:before {
+        &.algolia::before {
           background: $accent;
           box-shadow: $accent-box-shadow;
         }
 
-        &.snapchat:before {
+        &.snapchat::before {
           background: $primary;
           box-shadow: $primary-box-shadow;
         }
@@ -342,7 +342,7 @@
             .asset-logo {
               transform: translateY(-5px);
 
-              &:before {
+              &::before {
                 border-color: $primary;
                 box-shadow: $light-box-shadow;
               }
@@ -371,7 +371,7 @@
             flex: 0;
             transition: all 0.3s;
 
-            &:before {
+            &::before {
               content: '';
               width: 46px;
               height: 46px;
@@ -460,7 +460,7 @@ body {
             &:hover {
               .asset {
                 .asset-logo {
-                  &:before {
+                  &::before {
                     border-color: $accent !important;
 
                     //box-shadow: $accent-box-shadow;
@@ -479,7 +479,7 @@ body {
 
             .asset {
               .asset-logo {
-                &:before {
+                &::before {
                   background: lighten($dark-sidebar, 6%) !important;
                   border-color: lighten($dark-sidebar, 12%) !important;
                 }

@@ -71,7 +71,7 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Tags</h3>
                     <p>
-                      Huro offers a tag component than can be customized to fit
+                      Vuero offers a tag component than can be customized to fit
                       any needs. Tags can have multiple colors. Available
                       modifier classes are <code>is-primary</code>,
                       <code>is-info</code>, <code>is-success</code>,
@@ -80,8 +80,8 @@
                       <code>is-solid</code>.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
 
@@ -127,14 +127,14 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Rounded Tags</h3>
                     <p>
-                      Huro tags can have rounded edges. Use the
+                      Vuero tags can have rounded edges. Use the
                       <code>is-rounded</code> modifier class on a
                       <code>tag</code> element to apply a rounded style. See the
                       code examples for more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
 
@@ -180,14 +180,14 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Outlined Tags</h3>
                     <p>
-                      Huro tags can have an outlined style. Use the
+                      Vuero tags can have an outlined style. Use the
                       <code>is-outlined</code> modifier class on a
                       <code>tag</code> element to apply an outlined style. See
                       the code examples for more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
 
@@ -243,14 +243,14 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Light Colors</h3>
                     <p>
-                      Huro tags can have light background colors. Use the
+                      Vuero tags can have light background colors. Use the
                       <code>is-light</code> modifier class on a solid color
                       <code>tag</code> element to apply an light style. See the
                       code examples for more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
 
@@ -288,14 +288,14 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Elevated Tags</h3>
                     <p>
-                      Huro tags can be elevated. Use the
+                      Vuero tags can be elevated. Use the
                       <code>is-elevated</code> modifier class on a solid color
                       <code>tag</code> element to apply an elevated style. See
                       the code examples for more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
 
@@ -357,14 +357,14 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Tag Addons</h3>
                     <p>
-                      Huro tags can be merged into a single one to achieve addon
-                      styles. You can attach another tag or a delete button if
-                      you need to. See the code example for more details about
-                      usage.
+                      Vuero tags can be merged into a single one to achieve
+                      addon styles. You can attach another tag or a delete
+                      button if you need to. See the code example for more
+                      details about usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
 
@@ -398,13 +398,13 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Tag List</h3>
                     <p>
-                      Huro tag adons can be organized in an inline tag list. You
-                      can use it to build a custom tag input for example. See
-                      the code examples for more details about usage.
+                      Vuero tag adons can be organized in an inline tag list.
+                      You can use it to build a custom tag input for example.
+                      See the code examples for more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
 

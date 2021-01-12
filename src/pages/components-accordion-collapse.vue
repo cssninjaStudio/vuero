@@ -76,7 +76,7 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Collapse</h3>
                     <p>
-                      Huro provides a simple to use collapse component. There
+                      Vuero provides a simple to use collapse component. There
                       are 2 available variations that you can use to change the
                       collapse header icon. Add the <code>has-plus</code> class
                       to the <code>collapse-icon</code> element to use a plus
@@ -85,8 +85,8 @@
                       Check markup for more details.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner no-padding">

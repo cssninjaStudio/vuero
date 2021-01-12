@@ -58,17 +58,20 @@
                       <div class="h-avatar is-medium">
                         <img
                           class="avatar"
-                          src="https://via.placeholder.com/150x150"
-                          data-demo-src="/@images/avatars/photos/8.jpg"
+                          src="/@images/avatars/photos/8.jpg"
                           alt=""
                           data-user-popover="3"
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x150'
+                          "
                         />
                       </div>
                     </div>
                     <div class="right">
                       <h3>Erik K.</h3>
                       <div class="company">
-                        <span>Huro Ltd.</span>
+                        <span>Vuero Ltd.</span>
                         <p>Product Manager</p>
                       </div>
                       <div class="contact-info">
@@ -120,10 +123,13 @@
                       <div class="h-avatar">
                         <img
                           class="avatar is-squared"
-                          src="https://via.placeholder.com/150x150"
-                          data-demo-src="/@images/avatars/photos/26.jpg"
+                          src="/@images/avatars/photos/26.jpg"
                           alt=""
                           data-user-popover="23"
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x150'
+                          "
                         />
                       </div>
                       <div class="meta">
@@ -134,10 +140,13 @@
                       <div class="h-avatar">
                         <img
                           class="avatar is-squared"
-                          src="https://via.placeholder.com/150x150"
-                          data-demo-src="/@images/avatars/photos/7.jpg"
+                          src="/@images/avatars/photos/7.jpg"
                           alt=""
                           data-user-popover="0"
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x150'
+                          "
                         />
                       </div>
                       <div class="meta">
@@ -148,10 +157,13 @@
                       <div class="h-avatar">
                         <img
                           class="avatar is-squared"
-                          src="https://via.placeholder.com/150x150"
-                          data-demo-src="/@images/avatars/photos/8.jpg"
+                          src="/@images/avatars/photos/8.jpg"
                           alt=""
                           data-user-popover="3"
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x150'
+                          "
                         />
                       </div>
                       <div class="meta">
@@ -222,10 +234,13 @@
                       <div class="h-avatar">
                         <img
                           class="avatar"
-                          src="https://via.placeholder.com/150x150"
-                          data-demo-src="/@images/avatars/photos/26.jpg"
+                          src="/@images/avatars/photos/26.jpg"
                           alt=""
                           data-user-popover="23"
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x150'
+                          "
                         />
                       </div>
                       <div class="meta">
@@ -236,10 +251,13 @@
                       <div class="h-avatar">
                         <img
                           class="avatar"
-                          src="https://via.placeholder.com/150x150"
-                          data-demo-src="/@images/avatars/photos/7.jpg"
+                          src="/@images/avatars/photos/7.jpg"
                           alt=""
                           data-user-popover="0"
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x150'
+                          "
                         />
                       </div>
                       <div class="meta">
@@ -250,10 +268,13 @@
                       <div class="h-avatar">
                         <img
                           class="avatar"
-                          src="https://via.placeholder.com/150x150"
-                          data-demo-src="/@images/avatars/photos/8.jpg"
+                          src="/@images/avatars/photos/8.jpg"
                           alt=""
                           data-user-popover="3"
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x150'
+                          "
                         />
                       </div>
                       <div class="meta">
@@ -316,9 +337,12 @@
                       <div class="h-avatar is-large">
                         <img
                           class="avatar is-squared"
-                          src="https://via.placeholder.com/150x150"
-                          data-demo-src="https://fossil.scene7.com/is/image/FossilPartners/FTW4025_main?$sfcc_fos_large$"
+                          src="https://fossil.scene7.com/is/image/FossilPartners/FTW4025_main?$sfcc_fos_large$"
                           alt=""
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x150'
+                          "
                         />
                       </div>
                       <div class="meta">
@@ -330,9 +354,12 @@
                       <div class="h-avatar is-large">
                         <img
                           class="avatar is-squared"
-                          src="https://via.placeholder.com/150x150"
-                          data-demo-src="https://dyw7ncnq1en5l.cloudfront.net/optim/produits/1739/29391/fossil-q-founder_3ccf4c8115134000__450_400.jpg"
+                          src="https://dyw7ncnq1en5l.cloudfront.net/optim/produits/1739/29391/fossil-q-founder_3ccf4c8115134000__450_400.jpg"
                           alt=""
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x150'
+                          "
                         />
                       </div>
                       <div class="meta">
@@ -366,7 +393,7 @@
                   </div>
                   <div class="widget-content">
                     <p>
-                      Huro will be released very soon, probably around the end
+                      Vuero will be released very soon, probably around the end
                       of the year of the Christmas holidays.
                     </p>
                     <p class="hashtags">
@@ -398,17 +425,20 @@
                       <div class="h-avatar is-medium">
                         <img
                           class="avatar is-squared"
-                          src="https://via.placeholder.com/150x150"
-                          data-demo-src="/@images/avatars/photos/8.jpg"
+                          src="/@images/avatars/photos/8.jpg"
                           alt=""
                           data-user-popover="3"
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x150'
+                          "
                         />
                       </div>
                     </div>
                     <div class="right">
                       <h3>Erik K.</h3>
                       <div class="company">
-                        <span>Huro Ltd.</span>
+                        <span>Vuero Ltd.</span>
                         <p>Product Manager</p>
                       </div>
                       <div class="contact-info">
@@ -468,10 +498,13 @@
                       <div class="h-avatar">
                         <img
                           class="avatar is-squared"
-                          src="https://via.placeholder.com/150x150"
-                          data-demo-src="/@images/avatars/photos/26.jpg"
+                          src="/@images/avatars/photos/26.jpg"
                           alt=""
                           data-user-popover="23"
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x150'
+                          "
                         />
                       </div>
                       <div class="meta">
@@ -482,10 +515,13 @@
                       <div class="h-avatar">
                         <img
                           class="avatar is-squared"
-                          src="https://via.placeholder.com/150x150"
-                          data-demo-src="/@images/avatars/photos/7.jpg"
+                          src="/@images/avatars/photos/7.jpg"
                           alt=""
                           data-user-popover="0"
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x150'
+                          "
                         />
                       </div>
                       <div class="meta">
@@ -496,10 +532,13 @@
                       <div class="h-avatar">
                         <img
                           class="avatar is-squared"
-                          src="https://via.placeholder.com/150x150"
-                          data-demo-src="/@images/avatars/photos/8.jpg"
+                          src="/@images/avatars/photos/8.jpg"
                           alt=""
                           data-user-popover="3"
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x150'
+                          "
                         />
                       </div>
                       <div class="meta">
@@ -526,10 +565,13 @@
                       <div class="h-avatar">
                         <img
                           class="avatar"
-                          src="https://via.placeholder.com/150x150"
-                          data-demo-src="/@images/avatars/photos/26.jpg"
+                          src="/@images/avatars/photos/26.jpg"
                           alt=""
                           data-user-popover="23"
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x150'
+                          "
                         />
                       </div>
                       <div class="meta">
@@ -540,10 +582,13 @@
                       <div class="h-avatar">
                         <img
                           class="avatar"
-                          src="https://via.placeholder.com/150x150"
-                          data-demo-src="/@images/avatars/photos/7.jpg"
+                          src="/@images/avatars/photos/7.jpg"
                           alt=""
                           data-user-popover="0"
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x150'
+                          "
                         />
                       </div>
                       <div class="meta">
@@ -554,10 +599,13 @@
                       <div class="h-avatar">
                         <img
                           class="avatar"
-                          src="https://via.placeholder.com/150x150"
-                          data-demo-src="/@images/avatars/photos/8.jpg"
+                          src="/@images/avatars/photos/8.jpg"
                           alt=""
                           data-user-popover="3"
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x150'
+                          "
                         />
                       </div>
                       <div class="meta">
@@ -577,10 +625,13 @@
                     />
                     <img
                       class="badge"
-                      src="https://via.placeholder.com/150x150"
-                      data-demo-src="/@images/avatars/photos/7.jpg"
+                      src="/@images/avatars/photos/7.jpg"
                       alt=""
                       data-user-popover="0"
+                      @error="
+                        $event.target.src =
+                          'https://via.placeholder.com/150x150'
+                      "
                     />
                   </div>
                   <h3>Call Alice?</h3>

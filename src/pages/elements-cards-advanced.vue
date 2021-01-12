@@ -71,7 +71,7 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Advanced Cards</h3>
                     <p>
-                      All Huro basic cards have an advanced version that
+                      All Vuero basic cards have an advanced version that
                       features a card header, body, and footer, to display any
                       type of content. Card header and footer have both left and
                       right subsection where you can insert your UI elements.
@@ -89,16 +89,22 @@
                             <div class="h-avatar">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/avatars/photos/19.jpg"
+                                src="/@images/avatars/photos/19.jpg"
                                 alt=""
                                 data-user-popover="17"
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                               <img
                                 class="badge"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/icons/flags/germany.svg"
+                                src="/@images/icons/flags/germany.svg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="flex-meta">
@@ -112,29 +118,38 @@
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/avatars/photos/12.jpg"
+                                src="/@images/avatars/photos/12.jpg"
                                 alt=""
                                 data-user-popover="2"
                                 data-target="webuiPopover19"
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/avatars/photos/22.jpg"
+                                src="/@images/avatars/photos/22.jpg"
                                 alt=""
                                 data-user-popover="5"
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/avatars/photos/40.jpg"
+                                src="/@images/avatars/photos/40.jpg"
                                 alt=""
                                 data-user-popover="11"
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="h-avatar is-small">
@@ -205,16 +220,22 @@
                             <div class="h-avatar">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/avatars/photos/19.jpg"
+                                src="/@images/avatars/photos/19.jpg"
                                 alt=""
                                 data-user-popover="17"
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                               <img
                                 class="badge"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/icons/flags/germany.svg"
+                                src="/@images/icons/flags/germany.svg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="flex-meta">
@@ -228,29 +249,38 @@
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/avatars/photos/12.jpg"
+                                src="/@images/avatars/photos/12.jpg"
                                 alt=""
                                 data-user-popover="2"
                                 data-target="webuiPopover19"
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/avatars/photos/22.jpg"
+                                src="/@images/avatars/photos/22.jpg"
                                 alt=""
                                 data-user-popover="5"
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/avatars/photos/40.jpg"
+                                src="/@images/avatars/photos/40.jpg"
                                 alt=""
                                 data-user-popover="11"
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="h-avatar is-small">
@@ -291,16 +321,22 @@
                             <div class="h-avatar">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/avatars/photos/19.jpg"
+                                src="/@images/avatars/photos/19.jpg"
                                 alt=""
                                 data-user-popover="17"
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                               <img
                                 class="badge"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/icons/flags/germany.svg"
+                                src="/@images/icons/flags/germany.svg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="flex-meta">

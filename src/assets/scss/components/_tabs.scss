@@ -1,4 +1,4 @@
-/*! _tabs.scss | Huro | Css ninja 2020-2021 */
+/*! _tabs.scss | Vuero | Css ninja 2020-2021 */
 
 /*
     1. Tabs
@@ -274,19 +274,11 @@ body {
     }
 
     .tab-naver {
-      position: absolute;
-      top: 0;
       left: 0;
-      display: block;
-      width: 50%;
-      height: 20px;
       background: $primary;
-      z-index: 1;
       position: absolute;
       top: 0.5px;
-      left: 0;
       display: block;
-      width: 50%;
       height: 32px;
       transition: all 0.3s;
       z-index: 4;
@@ -398,12 +390,7 @@ body {
       left: 0;
       display: block;
       width: 33.3% !important;
-      height: 20px;
       background: $primary;
-      z-index: 1;
-      position: absolute;
-      left: 0;
-      display: block;
       height: 32px;
       transition: all 0.3s;
       z-index: 4;

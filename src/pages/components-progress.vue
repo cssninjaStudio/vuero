@@ -71,15 +71,15 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Progress Bars</h3>
                     <p>
-                      Huro provides a very versatile progress bar component that
-                      can be used almost anywhere, across a wide variety of
+                      Vuero provides a very versatile progress bar component
+                      that can be used almost anywhere, across a wide variety of
                       layouts. 3 size modifier classes are available:
                       <code>.is-small</code>, <code>.is-smaller</code> and
                       <code>.is-tiny</code>.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -124,14 +124,14 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Progress Bars</h3>
                     <p>
-                      Huro progress bars can also have different colors.
+                      Vuero progress bars can also have different colors.
                       Available modifier classes are: <code>.is-primary</code>,
                       <code>.is-success</code> <code>.is-info</code>,
                       <code>.is-warning</code>, and <code>.is-danger</code>.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -195,8 +195,8 @@
                       the rest.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">

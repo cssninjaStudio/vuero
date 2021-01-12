@@ -44,7 +44,7 @@
                         <div class="plan-inner">
                           <img src="/@images/logos/logo/logo.svg" alt="" />
                           <div class="meta">
-                            <span>Huro Starter</span>
+                            <span>Vuero Starter</span>
                             <span>Plan for starters</span>
                           </div>
                           <div class="checkmark">
@@ -70,7 +70,7 @@
                             alt=""
                           />
                           <div class="meta">
-                            <span>Huro Pro</span>
+                            <span>Vuero Pro</span>
                             <span>For professionals</span>
                           </div>
                           <div class="checkmark">
@@ -96,7 +96,7 @@
                             alt=""
                           />
                           <div class="meta">
-                            <span>Huro Business</span>
+                            <span>Vuero Business</span>
                             <span>For serious people</span>
                           </div>
                           <div class="checkmark">
@@ -122,7 +122,7 @@
                             alt=""
                           />
                           <div class="meta">
-                            <span>Huro Enterprise</span>
+                            <span>Vuero Enterprise</span>
                             <span>For big companies</span>
                           </div>
                           <div class="checkmark">
@@ -172,10 +172,10 @@
                       </div>
                       <div class="plan-summary">
                         <p>
-                          Huro has incredible features and each plan perfectly
+                          Vuero has incredible features and each plan perfectly
                           adapts to your company, wether it is a small business
-                          or a bigger one. Huro can also scale with you, as your
-                          business grows.
+                          or a bigger one. Vuero can also scale with you, as
+                          your business grows.
                         </p>
                         <div class="plan-features">
                           <div class="columns">
@@ -220,10 +220,13 @@
                       <div class="h-avatar">
                         <img
                           class="avatar"
-                          src="https://via.placeholder.com/150x150"
-                          data-demo-src="/@images/avatars/photos/8.jpg"
+                          src="/@images/avatars/photos/8.jpg"
                           alt=""
                           data-user-popover="3"
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x150'
+                          "
                         />
                       </div>
                       <div class="h-avatar">
@@ -237,10 +240,13 @@
                       <div class="h-avatar">
                         <img
                           class="avatar"
-                          src="https://via.placeholder.com/150x150"
-                          data-demo-src="/@images/avatars/photos/18.jpg"
+                          src="/@images/avatars/photos/18.jpg"
                           alt=""
                           data-user-popover="7"
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x150'
+                          "
                         />
                       </div>
                       <div class="h-avatar">
@@ -254,10 +260,13 @@
                       <div class="h-avatar">
                         <img
                           class="avatar"
-                          src="https://via.placeholder.com/150x150"
-                          data-demo-src="/@images/avatars/photos/7.jpg"
+                          src="/@images/avatars/photos/7.jpg"
                           alt=""
                           data-user-popover="0"
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x150'
+                          "
                         />
                       </div>
                       <button class="add-seat">

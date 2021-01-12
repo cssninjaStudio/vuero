@@ -76,7 +76,7 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Outlined Checkbox</h3>
                     <p>
-                      Huro provides default styled checkboxes in 2 main styles,
+                      Vuero provides default styled checkboxes in 2 main styles,
                       <code>outlined</code> and <code>solid</code>. Those
                       checkboxes also support all main colors. The available
                       modifiers are <code>is-primary</code>,
@@ -84,8 +84,8 @@
                       <code>is-warning</code>, <code>is-danger</code>.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -180,14 +180,14 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Outlined Circle</h3>
                     <p>
-                      Huro checkboxes can be circles instead of squares. Simply
+                      Vuero checkboxes can be circles instead of squares. Simply
                       add the <code>is-circle</code> modifier class to your
                       <code>checkbox</code> element. See the code example for
                       more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -288,7 +288,7 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Solid Checkbox</h3>
                     <p>
-                      Huro provides default styled checkboxes in 2 main styles,
+                      Vuero provides default styled checkboxes in 2 main styles,
                       <code>outlined</code> and <code>solid</code>. Those
                       checkboxes also support all main colors. The available
                       modifiers are <code>is-primary</code>,
@@ -296,8 +296,8 @@
                       <code>is-warning</code>, <code>is-danger</code>.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -392,14 +392,14 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Solid Circle</h3>
                     <p>
-                      Huro checkboxes can be circles instead of squares. Simply
+                      Vuero checkboxes can be circles instead of squares. Simply
                       add the <code>is-circle</code> modifier class to your
                       <code>checkbox</code> element. See the code example for
                       more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">

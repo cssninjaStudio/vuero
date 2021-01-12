@@ -46,20 +46,26 @@
                     <div class="h-avatar is-xl">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/svg/huro-1.svg"
+                        src="/@images/avatars/svg/huro-1.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                       <img
                         class="badge"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/photo/demo/misc/buoy.jpg"
+                        src="/@images/photo/demo/misc/buoy.jpg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
-                    <h3 class="title is-4 is-narrow is-thin">Huro Elements</h3>
+                    <h3 class="title is-4 is-narrow is-thin">Vuero Elements</h3>
                     <p class="light-text">
-                      This is the Huro elements library with detailed code
+                      This is the Vuero elements library with detailed code
                       examples.
                     </p>
                   </div>
@@ -74,7 +80,7 @@
                               Buttons
                             </h3>
                             <p class="light-text">
-                              Get familiar with the Huro button styles. Code
+                              Get familiar with the Vuero button styles. Code
                               examples included.
                             </p>
                           </div>
@@ -101,7 +107,7 @@
                           <div class="inner-content">
                             <h3 class="title is-5 is-narrow is-thin">Cards</h3>
                             <p class="light-text">
-                              Get familiar with the Huro card styles. Code
+                              Get familiar with the Vuero card styles. Code
                               examples included.
                             </p>
                           </div>
@@ -128,7 +134,7 @@
                           <div class="inner-content">
                             <h3 class="title is-5 is-narrow is-thin">Icons</h3>
                             <p class="light-text">
-                              Get familiar with the Huro icon libraries. Code
+                              Get familiar with the Vuero icon libraries. Code
                               examples included.
                             </p>
                           </div>
@@ -157,7 +163,7 @@
                               Content
                             </h3>
                             <p class="light-text">
-                              Get familiar with the Huro content styles. Code
+                              Get familiar with the Vuero content styles. Code
                               examples included.
                             </p>
                           </div>
@@ -184,7 +190,7 @@
                           <div class="inner-content">
                             <h3 class="title is-5 is-narrow is-thin">Forms</h3>
                             <p class="light-text">
-                              Get familiar with the Huro form elements. Code
+                              Get familiar with the Vuero form elements. Code
                               examples included.
                             </p>
                           </div>
@@ -213,8 +219,8 @@
                               Checkboxes
                             </h3>
                             <p class="light-text">
-                              Get familiar with the Huro checkboxes styles. Code
-                              examples included.
+                              Get familiar with the Vuero checkboxes styles.
+                              Code examples included.
                             </p>
                           </div>
                           <img
@@ -241,7 +247,7 @@
                           <div class="inner-content">
                             <h3 class="title is-5 is-narrow is-thin">Tags</h3>
                             <p class="light-text">
-                              Get familiar with the Huro tags styles. Code
+                              Get familiar with the Vuero tags styles. Code
                               examples included.
                             </p>
                           </div>
@@ -270,7 +276,7 @@
                               Switches
                             </h3>
                             <p class="light-text">
-                              Get familiar with the Huro switches styles. Code
+                              Get familiar with the Vuero switches styles. Code
                               examples included.
                             </p>
                           </div>

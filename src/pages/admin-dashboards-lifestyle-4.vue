@@ -101,9 +101,12 @@
                               <div class="h-avatar">
                                 <img
                                   class="avatar is-squared"
-                                  src="https://via.placeholder.com/150x150"
-                                  data-demo-src="/@images/avatars/photos/7.jpg"
+                                  src="/@images/avatars/photos/7.jpg"
                                   alt=""
+                                  @error="
+                                    $event.target.src =
+                                      'https://via.placeholder.com/150x150'
+                                  "
                                 />
                               </div>
                               <div class="flex-meta">
@@ -121,9 +124,12 @@
                               <div class="h-avatar">
                                 <img
                                   class="avatar is-squared"
-                                  src="https://via.placeholder.com/150x150"
-                                  data-demo-src="/@images/avatars/photos/21.jpg"
+                                  src="/@images/avatars/photos/21.jpg"
                                   alt=""
+                                  @error="
+                                    $event.target.src =
+                                      'https://via.placeholder.com/150x150'
+                                  "
                                 />
                               </div>
                               <div class="flex-meta">
@@ -141,9 +147,12 @@
                               <div class="h-avatar">
                                 <img
                                   class="avatar is-squared"
-                                  src="https://via.placeholder.com/150x150"
-                                  data-demo-src="/@images/avatars/photos/32.jpg"
+                                  src="/@images/avatars/photos/32.jpg"
                                   alt=""
+                                  @error="
+                                    $event.target.src =
+                                      'https://via.placeholder.com/150x150'
+                                  "
                                 />
                               </div>
                               <div class="flex-meta">
@@ -161,9 +170,12 @@
                               <div class="h-avatar">
                                 <img
                                   class="avatar is-squared"
-                                  src="https://via.placeholder.com/150x150"
-                                  data-demo-src="/@images/avatars/photos/38.jpg"
+                                  src="/@images/avatars/photos/38.jpg"
                                   alt=""
+                                  @error="
+                                    $event.target.src =
+                                      'https://via.placeholder.com/150x150'
+                                  "
                                 />
                               </div>
                               <div class="flex-meta">
@@ -258,9 +270,12 @@
                         <a class="articles-feed-item">
                           <div class="featured-image">
                             <img
-                              src="https://via.placeholder.com/800x600"
-                              data-demo-src="/@images/photo/demo/38.jpg"
+                              src="/@images/photo/demo/38.jpg"
                               alt=""
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/800x600'
+                              "
                             />
                           </div>
                           <div class="featured-content">
@@ -276,9 +291,12 @@
                               <div class="h-avatar is-small">
                                 <img
                                   class="avatar is-squared"
-                                  src="https://via.placeholder.com/150x150"
-                                  data-demo-src="/@images/avatars/photos/7.jpg"
+                                  src="/@images/avatars/photos/7.jpg"
                                   alt=""
+                                  @error="
+                                    $event.target.src =
+                                      'https://via.placeholder.com/150x150'
+                                  "
                                 />
                               </div>
                               <div class="flex-meta">
@@ -292,9 +310,12 @@
                         <a class="articles-feed-item">
                           <div class="featured-image">
                             <img
-                              src="https://via.placeholder.com/800x600"
-                              data-demo-src="/@images/photo/demo/37.jpg"
+                              src="/@images/photo/demo/37.jpg"
                               alt=""
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/800x600'
+                              "
                             />
                           </div>
                           <div class="featured-content">
@@ -310,9 +331,12 @@
                               <div class="h-avatar is-small">
                                 <img
                                   class="avatar is-squared"
-                                  src="https://via.placeholder.com/150x150"
-                                  data-demo-src="/@images/avatars/photos/5.jpg"
+                                  src="/@images/avatars/photos/5.jpg"
                                   alt=""
+                                  @error="
+                                    $event.target.src =
+                                      'https://via.placeholder.com/150x150'
+                                  "
                                 />
                               </div>
                               <div class="flex-meta">

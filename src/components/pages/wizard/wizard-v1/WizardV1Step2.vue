@@ -21,9 +21,9 @@
           <img
             id="customer-logo"
             class="avatar"
-            src="https://via.placeholder.com/150x150"
-            data-demo-src="/@images/photo/demo/brands/airbnb.svg"
+            src="/@images/photo/demo/brands/airbnb.svg"
             alt=""
+            @error="$event.target.src = 'https://via.placeholder.com/150x150'"
           />
         </div>
         <div class="flex-meta">

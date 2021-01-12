@@ -71,13 +71,13 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Basic Cards</h3>
                     <p>
-                      Huro cards are very versatile and can be used in any type
-                      of layout. Huro provides 3 main basic cards with the
+                      Vuero cards are very versatile and can be used in any type
+                      of layout. Vuero provides 3 main basic cards with the
                       following classes: <code>.s-card</code>,
                       <code>.r-card</code> and <code>.l-card</code>. The main
                       difference each one of those is the border radius, giving
                       a unique look and feel to each one of them. If you explore
-                      Huro SCSS code, you will notice that they serve as a base
+                      Vuero SCSS code, you will notice that they serve as a base
                       for numerous components, using the SCSS
                       <code>@extend</code> directive.
                     </p>
@@ -126,7 +126,7 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Elevated Cards</h3>
                     <p>
-                      Huro cards can be elevated and show a slight box shadow.
+                      Vuero cards can be elevated and show a slight box shadow.
                       To display elevated cards, simply add the
                       <code>is-raised</code> class to the target card element.
                     </p>
@@ -175,8 +175,8 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Colored Cards</h3>
                     <p>
-                      Huro cards can have colored backgrounds when you need them
-                      to. To display Available color modifiers are
+                      Vuero cards can have colored backgrounds when you need
+                      them to. To display Available color modifiers are
                       <code>.is-primary</code>, <code>.is-info</code>,
                       <code>.is-success</code>, <code>.is-warning</code> and
                       <code>.is-danger</code>.
@@ -256,7 +256,7 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Structured Cards</h3>
                     <p>
-                      Huro cards can have a small flex header where you can put
+                      Vuero cards can have a small flex header where you can put
                       come content. Reference the markup for more details about
                       usage.
                     </p>
@@ -273,16 +273,22 @@
                       <div class="h-avatar">
                         <img
                           class="avatar"
-                          src="https://via.placeholder.com/150x150"
-                          data-demo-src="/@images/avatars/photos/19.jpg"
+                          src="/@images/avatars/photos/19.jpg"
                           alt=""
                           data-user-popover="17"
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x150'
+                          "
                         />
                         <img
                           class="badge"
-                          src="https://via.placeholder.com/150x150"
-                          data-demo-src="/@images/icons/flags/germany.svg"
+                          src="/@images/icons/flags/germany.svg"
                           alt=""
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x150'
+                          "
                         />
                       </div>
                       <div class="flex-meta">
@@ -308,16 +314,22 @@
                       <div class="h-avatar">
                         <img
                           class="avatar"
-                          src="https://via.placeholder.com/150x150"
-                          data-demo-src="/@images/avatars/photos/19.jpg"
+                          src="/@images/avatars/photos/19.jpg"
                           alt=""
                           data-user-popover="17"
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x150'
+                          "
                         />
                         <img
                           class="badge"
-                          src="https://via.placeholder.com/150x150"
-                          data-demo-src="/@images/icons/flags/germany.svg"
+                          src="/@images/icons/flags/germany.svg"
                           alt=""
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x150'
+                          "
                         />
                       </div>
                       <div class="flex-meta">
@@ -343,16 +355,22 @@
                       <div class="h-avatar">
                         <img
                           class="avatar"
-                          src="https://via.placeholder.com/150x150"
-                          data-demo-src="/@images/avatars/photos/19.jpg"
+                          src="/@images/avatars/photos/19.jpg"
                           alt=""
                           data-user-popover="17"
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x150'
+                          "
                         />
                         <img
                           class="badge"
-                          src="https://via.placeholder.com/150x150"
-                          data-demo-src="/@images/icons/flags/germany.svg"
+                          src="/@images/icons/flags/germany.svg"
                           alt=""
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x150'
+                          "
                         />
                       </div>
                       <div class="flex-meta">

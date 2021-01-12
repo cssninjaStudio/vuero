@@ -165,17 +165,23 @@
                           <div class="h-avatar is-small">
                             <img
                               class="avatar"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/avatars/photos/13.jpg"
+                              src="/@images/avatars/photos/13.jpg"
                               alt=""
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                           </div>
                           <div class="h-avatar is-small">
                             <img
                               class="avatar"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/avatars/photos/11.jpg"
+                              src="/@images/avatars/photos/11.jpg"
                               alt=""
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                           </div>
                         </div>
@@ -213,41 +219,56 @@
                           <div class="h-avatar is-small">
                             <img
                               class="avatar"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/avatars/photos/7.jpg"
+                              src="/@images/avatars/photos/7.jpg"
                               alt=""
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                           </div>
                           <div class="h-avatar is-small">
                             <img
                               class="avatar"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/avatars/photos/9.jpg"
+                              src="/@images/avatars/photos/9.jpg"
                               alt=""
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                           </div>
                           <div class="h-avatar is-small">
                             <img
                               class="avatar"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/avatars/photos/12.jpg"
+                              src="/@images/avatars/photos/12.jpg"
                               alt=""
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                           </div>
                           <div class="h-avatar is-small">
                             <img
                               class="avatar"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/avatars/photos/8.jpg"
+                              src="/@images/avatars/photos/8.jpg"
                               alt=""
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                           </div>
                           <div class="h-avatar is-small">
                             <img
                               class="avatar"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/avatars/photos/25.jpg"
+                              src="/@images/avatars/photos/25.jpg"
                               alt=""
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                           </div>
                           <div class="h-avatar is-small">
@@ -293,9 +314,12 @@
                           <div class="h-avatar is-small">
                             <img
                               class="avatar"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/avatars/photos/14.jpg"
+                              src="/@images/avatars/photos/14.jpg"
                               alt=""
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                           </div>
                         </div>
@@ -333,33 +357,45 @@
                           <div class="h-avatar is-small">
                             <img
                               class="avatar"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/avatars/photos/8.jpg"
+                              src="/@images/avatars/photos/8.jpg"
                               alt=""
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                           </div>
                           <div class="h-avatar is-small">
                             <img
                               class="avatar"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/avatars/photos/22.jpg"
+                              src="/@images/avatars/photos/22.jpg"
                               alt=""
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                           </div>
                           <div class="h-avatar is-small">
                             <img
                               class="avatar"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/avatars/photos/10.jpg"
+                              src="/@images/avatars/photos/10.jpg"
                               alt=""
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                           </div>
                           <div class="h-avatar is-small">
                             <img
                               class="avatar"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/avatars/photos/26.jpg"
+                              src="/@images/avatars/photos/26.jpg"
                               alt=""
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                           </div>
                         </div>
@@ -399,33 +435,45 @@
                           <div class="h-avatar is-small">
                             <img
                               class="avatar"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/avatars/photos/13.jpg"
+                              src="/@images/avatars/photos/13.jpg"
                               alt=""
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                           </div>
                           <div class="h-avatar is-small">
                             <img
                               class="avatar"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/avatars/photos/11.jpg"
+                              src="/@images/avatars/photos/11.jpg"
                               alt=""
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                           </div>
                           <div class="h-avatar is-small">
                             <img
                               class="avatar"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/avatars/photos/8.jpg"
+                              src="/@images/avatars/photos/8.jpg"
                               alt=""
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                           </div>
                           <div class="h-avatar is-small">
                             <img
                               class="avatar"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/avatars/photos/22.jpg"
+                              src="/@images/avatars/photos/22.jpg"
                               alt=""
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                           </div>
                         </div>
@@ -464,17 +512,23 @@
                           <div class="h-avatar is-small">
                             <img
                               class="avatar"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/avatars/photos/13.jpg"
+                              src="/@images/avatars/photos/13.jpg"
                               alt=""
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                           </div>
                           <div class="h-avatar is-small">
                             <img
                               class="avatar"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/avatars/photos/11.jpg"
+                              src="/@images/avatars/photos/11.jpg"
                               alt=""
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                           </div>
                         </div>
@@ -512,33 +566,45 @@
                           <div class="h-avatar is-small">
                             <img
                               class="avatar"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/avatars/photos/13.jpg"
+                              src="/@images/avatars/photos/13.jpg"
                               alt=""
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                           </div>
                           <div class="h-avatar is-small">
                             <img
                               class="avatar"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/avatars/photos/16.jpg"
+                              src="/@images/avatars/photos/16.jpg"
                               alt=""
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                           </div>
                           <div class="h-avatar is-small">
                             <img
                               class="avatar"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/avatars/photos/10.jpg"
+                              src="/@images/avatars/photos/10.jpg"
                               alt=""
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                           </div>
                           <div class="h-avatar is-small">
                             <img
                               class="avatar"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/avatars/photos/9.jpg"
+                              src="/@images/avatars/photos/9.jpg"
                               alt=""
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                           </div>
                         </div>
@@ -576,25 +642,34 @@
                           <div class="h-avatar is-small">
                             <img
                               class="avatar"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/avatars/photos/22.jpg"
+                              src="/@images/avatars/photos/22.jpg"
                               alt=""
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                           </div>
                           <div class="h-avatar is-small">
                             <img
                               class="avatar"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/avatars/photos/10.jpg"
+                              src="/@images/avatars/photos/10.jpg"
                               alt=""
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                           </div>
                           <div class="h-avatar is-small">
                             <img
                               class="avatar"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/avatars/photos/26.jpg"
+                              src="/@images/avatars/photos/26.jpg"
                               alt=""
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                           </div>
                         </div>
@@ -632,25 +707,34 @@
                           <div class="h-avatar is-small">
                             <img
                               class="avatar"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/avatars/photos/14.jpg"
+                              src="/@images/avatars/photos/14.jpg"
                               alt=""
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                           </div>
                           <div class="h-avatar is-small">
                             <img
                               class="avatar"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/avatars/photos/16.jpg"
+                              src="/@images/avatars/photos/16.jpg"
                               alt=""
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                           </div>
                           <div class="h-avatar is-small">
                             <img
                               class="avatar"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/avatars/photos/10.jpg"
+                              src="/@images/avatars/photos/10.jpg"
                               alt=""
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                           </div>
                         </div>

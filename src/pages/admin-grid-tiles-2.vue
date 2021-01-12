@@ -132,9 +132,12 @@
                   <div class="tile-grid-item">
                     <div class="tile-grid-item-inner">
                       <img
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/icons/files/pdf.svg"
+                        src="/@images/icons/files/pdf.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                       <div class="meta">
                         <span class="dark-inverted">Company UX Guide</span>
@@ -154,9 +157,12 @@
                   <div class="tile-grid-item">
                     <div class="tile-grid-item-inner">
                       <img
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/icons/files/sheet.svg"
+                        src="/@images/icons/files/sheet.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                       <div class="meta">
                         <span class="dark-inverted">Tech Summit Expenses</span>
@@ -176,9 +182,12 @@
                   <div class="tile-grid-item">
                     <div class="tile-grid-item-inner">
                       <img
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/icons/files/doc-2.svg"
+                        src="/@images/icons/files/doc-2.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                       <div class="meta">
                         <span class="dark-inverted">Project Outline</span>
@@ -198,9 +207,12 @@
                   <div class="tile-grid-item">
                     <div class="tile-grid-item-inner">
                       <img
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/icons/files/ppt.svg"
+                        src="/@images/icons/files/ppt.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                       <div class="meta">
                         <span class="dark-inverted">UX Presentation</span>
@@ -220,9 +232,12 @@
                   <div class="tile-grid-item">
                     <div class="tile-grid-item-inner">
                       <img
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/icons/files/ai.svg"
+                        src="/@images/icons/files/ai.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                       <div class="meta">
                         <span class="dark-inverted"
@@ -244,9 +259,12 @@
                   <div class="tile-grid-item">
                     <div class="tile-grid-item-inner">
                       <img
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/icons/files/doc-2.svg"
+                        src="/@images/icons/files/doc-2.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                       <div class="meta">
                         <span class="dark-inverted"
@@ -268,9 +286,12 @@
                   <div class="tile-grid-item">
                     <div class="tile-grid-item-inner">
                       <img
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/icons/files/pdf.svg"
+                        src="/@images/icons/files/pdf.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                       <div class="meta">
                         <span class="dark-inverted">2020 Projects Digest</span>
@@ -290,9 +311,12 @@
                   <div class="tile-grid-item">
                     <div class="tile-grid-item-inner">
                       <img
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/icons/files/doc-2.svg"
+                        src="/@images/icons/files/doc-2.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                       <div class="meta">
                         <span class="dark-inverted"
@@ -314,9 +338,12 @@
                   <div class="tile-grid-item">
                     <div class="tile-grid-item-inner">
                       <img
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/icons/files/sheet.svg"
+                        src="/@images/icons/files/sheet.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                       <div class="meta">
                         <span class="dark-inverted"
@@ -338,9 +365,12 @@
                   <div class="tile-grid-item">
                     <div class="tile-grid-item-inner">
                       <img
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/icons/files/ai.svg"
+                        src="/@images/icons/files/ai.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                       <div class="meta">
                         <span class="dark-inverted"
@@ -362,9 +392,12 @@
                   <div class="tile-grid-item">
                     <div class="tile-grid-item-inner">
                       <img
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/icons/files/ai.svg"
+                        src="/@images/icons/files/ai.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                       <div class="meta">
                         <span class="dark-inverted"
@@ -386,9 +419,12 @@
                   <div class="tile-grid-item">
                     <div class="tile-grid-item-inner">
                       <img
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/icons/files/doc-2.svg"
+                        src="/@images/icons/files/doc-2.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                       <div class="meta">
                         <span class="dark-inverted"
@@ -410,9 +446,12 @@
                   <div class="tile-grid-item">
                     <div class="tile-grid-item-inner">
                       <img
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/icons/files/sheet.svg"
+                        src="/@images/icons/files/sheet.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                       <div class="meta">
                         <span class="dark-inverted"
@@ -434,9 +473,12 @@
                   <div class="tile-grid-item">
                     <div class="tile-grid-item-inner">
                       <img
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/icons/files/ai.svg"
+                        src="/@images/icons/files/ai.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                       <div class="meta">
                         <span class="dark-inverted"
@@ -458,9 +500,12 @@
                   <div class="tile-grid-item">
                     <div class="tile-grid-item-inner">
                       <img
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/icons/files/pdf.svg"
+                        src="/@images/icons/files/pdf.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                       <div class="meta">
                         <span class="dark-inverted">Company Brand Book</span>
@@ -480,9 +525,12 @@
                   <div class="tile-grid-item">
                     <div class="tile-grid-item-inner">
                       <img
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/icons/files/pdf.svg"
+                        src="/@images/icons/files/pdf.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                       <div class="meta">
                         <span class="dark-inverted">2019 Projects Digest</span>

@@ -1,4 +1,4 @@
-/*! _banking.scss | Huro | Css ninja 2020-2021 */
+/*! _banking.scss | Vuero | Css ninja 2020-2021 */
 
 /*
     1. Banking Dashboard V1
@@ -840,18 +840,18 @@ body {
             color: $dark-text;
 
             &.is-positive {
-              &:after {
+              &::after {
                 color: $h-green;
               }
             }
 
             &.is-negative {
-              &:after {
+              &::after {
                 color: $h-red;
               }
             }
 
-            &:after {
+            &::after {
               content: '+3.4%';
               position: relative;
               top: -8px;
@@ -991,7 +991,7 @@ Media Queries
 
               .action-link {
                 top: -45px;
-                right: 0px;
+                right: 0;
               }
             }
           }
@@ -1043,7 +1043,7 @@ Media Queries
 
               .action-link {
                 top: -45px;
-                right: 0px;
+                right: 0;
               }
             }
           }

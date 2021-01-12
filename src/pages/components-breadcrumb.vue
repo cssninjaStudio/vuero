@@ -71,7 +71,7 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Breadcrumb</h3>
                     <p>
-                      Huro provides a breadcrumb component that you can use to
+                      Vuero provides a breadcrumb component that you can use to
                       enhance your navigation experience. Default breadcrumb
                       items are seperated by a slash sign. You can use icons as
                       well with breadcrumb items. See markup for more details
@@ -81,8 +81,8 @@
                       <code>breadcrumb</code> element.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -202,8 +202,8 @@
                       details.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -329,8 +329,8 @@
                       details.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -456,8 +456,8 @@
                       details.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -583,8 +583,8 @@
                       more details.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">

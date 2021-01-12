@@ -10,10 +10,10 @@
       <div class="chat-area-group">
         <img
           class="chat-area-profile"
-          src="https://via.placeholder.com/150x150"
-          data-demo-src="/@images/avatars/photos/7.jpg"
+          src="/@images/avatars/photos/7.jpg"
           alt=""
           data-user-popover="0"
+          @error="$event.target.src = 'https://via.placeholder.com/150x150'"
         />
       </div>
     </div>
@@ -22,10 +22,10 @@
         <div class="chat-msg-profile">
           <img
             class="chat-msg-img"
-            src="https://via.placeholder.com/150x150"
-            data-demo-src="/@images/avatars/photos/7.jpg"
+            src="/@images/avatars/photos/7.jpg"
             alt=""
             data-user-popover="0"
+            @error="$event.target.src = 'https://via.placeholder.com/150x150'"
           />
           <div class="chat-msg-date">Sent at 10:11am</div>
         </div>
@@ -35,9 +35,9 @@
           </div>
           <div class="chat-msg-text">
             <img
-              src="https://via.placeholder.com/400X300"
-              data-demo-src="/@images/photo/demo/apps/11.png"
+              src="/@images/photo/demo/apps/11.png"
               alt=""
+              @error="$event.target.src = 'https://via.placeholder.com/400X300'"
             />
           </div>
           <div class="chat-msg-text">
@@ -45,9 +45,9 @@
           </div>
           <div class="chat-msg-text">
             <img
-              src="https://via.placeholder.com/400X300"
-              data-demo-src="/@images/photo/demo/apps/9.png"
+              src="/@images/photo/demo/apps/9.png"
               alt=""
+              @error="$event.target.src = 'https://via.placeholder.com/400X300'"
             />
           </div>
           <div class="chat-msg-text">I like the curves in this one.</div>
@@ -57,10 +57,10 @@
         <div class="chat-msg-profile">
           <img
             class="chat-msg-img"
-            src="https://via.placeholder.com/150x150"
-            data-demo-src="/@images/avatars/photos/8.jpg"
+            src="/@images/avatars/photos/8.jpg"
             alt=""
             data-user-popover="3"
+            @error="$event.target.src = 'https://via.placeholder.com/150x150'"
           />
           <div class="chat-msg-date">Sent at 10:44am</div>
         </div>

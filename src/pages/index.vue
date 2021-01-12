@@ -1,8 +1,18 @@
+<script setup lang="ts">
+import { ref } from 'vue'
+
+import { isDark } from '/@src/composition/state/ui/darkModeState.ts'
+
+const activeTab = ref<'elements' | 'components' | 'forms' | 'plugins'>(
+  'elements'
+)
+</script>
+
 <template>
   <MinimalLightLayout>
     <div class="landing-page-wrapper">
       <!-- Hero and Navbar -->
-      <div id="huro-landing" class="hero is-fullheight rounded-hero">
+      <div id="huro-landing" class="hero is-fullheight rounded-hero is-active">
         <!-- Navbar partial -->
         <LandingNavigation />
 
@@ -27,9 +37,9 @@
               <div class="night-toggle night-toggle--daynight">
                 <input
                   id="night-toggle--daynight"
+                  v-model="isDark"
                   type="checkbox"
                   class="night-toggle--checkbox"
-                  checked
                 />
                 <label class="night-toggle--btn" for="night-toggle--daynight"
                   ><span class="night-toggle--feature"></span
@@ -37,7 +47,7 @@
               </div>
             </div>
             <h1 class="title is-1 is-bold is-light is-bold">
-              The World Needs a <span>Huro</span>.
+              The World Needs a <span>Vuero</span>.
             </h1>
             <h3 class="subtitle is-4 is-light">
               Premium Webapp UI Kit.
@@ -45,11 +55,13 @@
             </h3>
 
             <img
+              v-if="!isDark"
               class="light-image-l hero-mockup"
               src="/@images/illustrations/landing/app-1.png"
               alt=""
             />
             <img
+              v-else
               class="dark-image-l hero-mockup"
               src="/@images/illustrations/landing/app-1-dark.png"
               alt=""
@@ -102,7 +114,7 @@
                 <i class="lnil lnil-display-alt"></i>
                 <h3>220+ Demos</h3>
                 <p>
-                  Huro ships with a huge number of demos to kickstart your
+                  Vuero ships with a huge number of demos to kickstart your
                   project.
                 </p>
               </div>
@@ -120,18 +132,19 @@
                 <i class="lnil lnil-code"></i>
                 <h3>Clean Code</h3>
                 <p>
-                  Huro's codebase is huge, but structured and easy to understand
+                  Vuero's codebase is huge, but structured and easy to
+                  understand
                 </p>
               </div>
               <div class="flex-cell">
                 <i class="lnil lnil-plug"></i>
                 <h3>Premium Icons</h3>
-                <p>Huro ships with the premium Line Icons set ($30 value).</p>
+                <p>Vuero ships with the premium Line Icons set ($30 value).</p>
               </div>
               <div class="flex-cell">
                 <i class="lnil lnil-mobile-alt-2"></i>
                 <h3>Fully Responsive</h3>
-                <p>Huro is built with Bulma 0.9, a mobile first framework</p>
+                <p>Vuero is built with Bulma 0.9, a mobile first framework</p>
               </div>
               <div class="flex-cell no-border-edge">
                 <i class="lnil lnil-file-name"></i>
@@ -144,7 +157,7 @@
           <!--CTA-->
           <div class="cta-block">
             <div class="head-text">
-              <h3>Buy Huro</h3>
+              <h3>Buy Vuero</h3>
               <p>Available on Envato Market</p>
             </div>
             <div class="head-action">
@@ -182,7 +195,7 @@
           <!--Title-->
           <div class="section-title has-text-centered">
             <h2 class="title is-2">Top Tier Product</h2>
-            <h4>Huro has been carefully handcrafted.</h4>
+            <h4>Vuero has been carefully handcrafted.</h4>
           </div>
 
           <!-- Feature -->
@@ -206,9 +219,10 @@
               <p
                 class="section-feature-description is-centered-tablet-portrait"
               >
-                Huro's UI has been carefully thought and designed, and is simply
-                one of the best you'll find on the market. It's visual power and
-                its modularity will let you build great apps seamlessly.
+                Vuero's UI has been carefully thought and designed, and is
+                simply one of the best you'll find on the market. It's visual
+                power and its modularity will let you build great apps
+                seamlessly.
               </p>
             </div>
           </div>
@@ -235,7 +249,7 @@
               <p
                 class="section-feature-description is-centered-tablet-portrait"
               >
-                Huro ships with a lot of svg illustrations representing various
+                Vuero ships with a lot of svg illustrations representing various
                 elements that can be used in a website, following very high
                 quality standards.
               </p>
@@ -274,9 +288,9 @@
               <p
                 class="section-feature-description is-centered-tablet-portrait"
               >
-                Huro ships with it's own component library based on the Bulma.io
-                CSS framework. Each component has been carefully handcrafted and
-                natively supports dark mode.
+                Vuero ships with it's own component library based on the
+                Bulma.io CSS framework. Each component has been carefully
+                handcrafted and natively supports dark mode.
               </p>
             </div>
           </div>
@@ -285,7 +299,7 @@
           <div class="cta-block no-border">
             <div class="head-text">
               <h3>Want to learn more?</h3>
-              <p>Check out the Huro documentation</p>
+              <p>Check out the Vuero documentation</p>
             </div>
             <div class="head-action">
               <div class="buttons">
@@ -312,7 +326,7 @@
               <!--Title-->
               <div class="section-title has-text-centered p-b-40">
                 <h2 class="title is-3">Reusable components</h2>
-                <h4>Huro ships with a full component library.</h4>
+                <h4>Vuero ships with a full component library.</h4>
               </div>
             </div>
           </div>
@@ -326,7 +340,7 @@
                 <div class="flex-meta">
                   <h4>Modular</h4>
                   <p>
-                    Huro uses a modular CSS structure leveraging the power of
+                    Vuero uses a modular CSS structure leveraging the power of
                     Sass. Each component family has it's own files and
                     encapsulated styles.
                   </p>
@@ -358,7 +372,7 @@
                 <div class="flex-meta">
                   <h4>Easy Theming</h4>
                   <p>
-                    Huro's components provide easy to use class based color
+                    Vuero's components provide easy to use class based color
                     variations and modifiers to help you write less CSS. Theming
                     is also very easy.
                   </p>
@@ -382,16 +396,22 @@
             <div class="vertical-tabs-wrapper">
               <div class="tabs">
                 <ul>
-                  <li data-tab="demo-elements" class="is-active">
-                    <a>Elements</a>
+                  <li :class="[activeTab === 'elements' && 'is-active']">
+                    <a @click="activeTab = 'elements'">Elements</a>
                   </li>
-                  <li data-tab="demo-components"><a>Components</a></li>
-                  <li data-tab="demo-forms"><a>Forms</a></li>
-                  <li data-tab="plugins-sections"><a>Plugins</a></li>
+                  <li :class="[activeTab === 'components' && 'is-active']">
+                    <a @click="activeTab = 'components'">Components</a>
+                  </li>
+                  <li :class="[activeTab === 'forms' && 'is-active']">
+                    <a @click="activeTab = 'forms'">Forms</a>
+                  </li>
+                  <li :class="[activeTab === 'plugins' && 'is-active']">
+                    <a @click="activeTab = 'plugins'">Plugins</a>
+                  </li>
                 </ul>
               </div>
               <div class="content-wrap">
-                <LandingComponents />
+                <LandingComponents :active-tab="activeTab" />
               </div>
             </div>
           </div>
@@ -402,7 +422,7 @@
         <div class="container">
           <!--Title-->
           <div class="section-title has-text-centered pt-40">
-            <h2 class="title is-3">3 More Reasons To Choose Huro</h2>
+            <h2 class="title is-3">3 More Reasons To Choose Vuero</h2>
             <h4>If you're not convinced yet, here's some more.</h4>
           </div>
 
@@ -428,10 +448,10 @@
                 <p
                   class="section-feature-description is-centered-tablet-portrait"
                 >
-                  Huro is a template that mainly focuses on UI. Of course you'll
-                  find some jQuery inside, but only for presentation purpose.
-                  We've reduced the javascript to it's minimum so you can focus
-                  on importing UI in your project.
+                  Vuero is a template that mainly focuses on UI. Of course
+                  you'll find some jQuery inside, but only for presentation
+                  purpose. We've reduced the javascript to it's minimum so you
+                  can focus on importing UI in your project.
                 </p>
               </div>
             </div>
@@ -459,7 +479,7 @@
                 <p
                   class="section-feature-description is-centered-tablet-portrait"
                 >
-                  Huro ships with a nodejs development server that will assist
+                  Vuero ships with a nodejs development server that will assist
                   you when customizing the template. Panini handles HTML
                   compilation while Gulp recompiles your SCSS and Javascript
                   code, and Browser Sync refreshes the page each time you hit
@@ -501,7 +521,7 @@
                 <p
                   class="section-feature-description is-centered-tablet-portrait"
                 >
-                  Huro's documentation will be a precious ally, as the template
+                  Vuero's documentation will be a precious ally, as the template
                   has a large codebase, and a lot of files. Read carefully the
                   docs, all you need to know for an optimal development
                   experience is there, even if you still are a beginner.

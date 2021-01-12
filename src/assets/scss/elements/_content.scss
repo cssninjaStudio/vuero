@@ -1,4 +1,4 @@
-/*! _content.scss | Huro | Css ninja 2020-2021 */
+/*! _content.scss | Vuero | Css ninja 2020-2021 */
 
 /*
     1. Content
@@ -98,11 +98,11 @@ body {
     .is-divider-vertical {
       border-color: lighten($dark-sidebar, 14%);
 
-      &:before {
+      &::before {
         border-color: lighten($dark-sidebar, 14%);
       }
 
-      &:after {
+      &::after {
         background: lighten($dark-sidebar, 6%);
       }
     }

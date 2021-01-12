@@ -195,17 +195,20 @@
                         <div class="h-avatar is-medium">
                           <img
                             class="avatar is-squared"
-                            src="https://via.placeholder.com/150x150"
-                            data-demo-src="/@images/avatars/photos/8.jpg"
+                            src="/@images/avatars/photos/8.jpg"
                             alt=""
                             data-user-popover="3"
+                            @error="
+                              $event.target.src =
+                                'https://via.placeholder.com/150x150'
+                            "
                           />
                         </div>
                       </div>
                       <div class="right">
                         <h3>Erik K.</h3>
                         <div class="company">
-                          <span>Huro Ltd.</span>
+                          <span>Vuero Ltd.</span>
                           <p>Product Manager</p>
                         </div>
                         <div class="contact-info">
@@ -318,25 +321,34 @@
                           <div class="h-avatar is-small">
                             <img
                               class="avatar"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/avatars/photos/7.jpg"
+                              src="/@images/avatars/photos/7.jpg"
                               alt=""
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                           </div>
                           <div class="h-avatar is-small">
                             <img
                               class="avatar"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/avatars/photos/8.jpg"
+                              src="/@images/avatars/photos/8.jpg"
                               alt=""
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                           </div>
                           <div class="h-avatar is-small">
                             <img
                               class="avatar"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/avatars/photos/5.jpg"
+                              src="/@images/avatars/photos/5.jpg"
                               alt=""
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                           </div>
                         </div>

@@ -71,13 +71,14 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Message</h3>
                     <p>
-                      Huro provides a component for messages that you can use in
-                      your forms, for instance. The default message is displayed
-                      on a grey background. Check the markup for more details.
+                      Vuero provides a component for messages that you can use
+                      in your forms, for instance. The default message is
+                      displayed on a grey background. Check the markup for more
+                      details.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -111,8 +112,8 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Message Colors</h3>
                     <p>
-                      Huro provides a component for messages that you can use in
-                      your forms, for instance. You can change message colors
+                      Vuero provides a component for messages that you can use
+                      in your forms, for instance. You can change message colors
                       with modifier classes. Available modifier classes are
                       <code>is-primary</code>, <code>is-info</code>,
                       <code>is-success</code>, <code>is-warning</code> and
@@ -120,8 +121,8 @@
                       usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">

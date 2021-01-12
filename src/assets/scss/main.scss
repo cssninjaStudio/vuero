@@ -1,10 +1,12 @@
-/*! main.scss | Huro | Css ninja 2020-2021 */
+/*! main.scss | Vuero | Css ninja 2020-2021 */
 
 /* ==========================================================================
 SCSS Imports
 ========================================================================== */
 
 @import 'nprogress/nprogress.css';
+@import 'vue-toastification/dist/index.css';
+@import '../line-icons-pro/line-icons-pro.css';
 
 @import './_overrides/initial-variables.sass';
 @import 'bulma/sass/utilities/functions.sass';
@@ -51,6 +53,7 @@ SCSS Imports
 @import './elements/_lists.scss';
 @import './elements/_tags.scss';
 
+@import './components/_nprogress.scss';
 @import './components/_accordion.scss';
 @import './components/_breadcrumbs.scss';
 @import './components/_datepicker.scss';

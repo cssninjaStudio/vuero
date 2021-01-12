@@ -80,8 +80,8 @@
                       markup for more details.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -308,8 +308,8 @@
                       documentation for full customization options.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -468,15 +468,15 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Context Menu</h3>
                     <p>
-                      Huro dropdowns can also be displayed as a context menu
+                      Vuero dropdowns can also be displayed as a context menu
                       holding a single icon. The icon can be whatever you want.
                       This dropdown will have the specific
                       <code>is-dots</code> class. Please refer to the markup for
                       more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -607,8 +607,8 @@
                       button modifiers still apply.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -769,8 +769,8 @@
                       markup in the code example.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -1015,8 +1015,8 @@
                       element.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -1038,9 +1038,12 @@
                               <a href="#" class="dropdown-item is-media">
                                 <img
                                   class="item-img"
-                                  src="https://via.placeholder.com/150x150"
-                                  data-demo-src="/@images/avatars/photos/8.jpg"
+                                  src="/@images/avatars/photos/8.jpg"
                                   alt=""
+                                  @error="
+                                    $event.target.src =
+                                      'https://via.placeholder.com/150x150'
+                                  "
                                 />
                                 <div class="meta">
                                   <span>Erik K.</span>
@@ -1050,9 +1053,12 @@
                               <a href="#" class="dropdown-item is-media">
                                 <img
                                   class="item-img"
-                                  src="https://via.placeholder.com/150x150"
-                                  data-demo-src="/@images/avatars/photos/7.jpg"
+                                  src="/@images/avatars/photos/7.jpg"
                                   alt=""
+                                  @error="
+                                    $event.target.src =
+                                      'https://via.placeholder.com/150x150'
+                                  "
                                 />
                                 <div class="meta">
                                   <span>Alice C.</span>
@@ -1062,9 +1068,12 @@
                               <a href="#" class="dropdown-item is-media">
                                 <img
                                   class="item-img"
-                                  src="https://via.placeholder.com/150x150"
-                                  data-demo-src="/@images/avatars/photos/25.jpg"
+                                  src="/@images/avatars/photos/25.jpg"
                                   alt=""
+                                  @error="
+                                    $event.target.src =
+                                      'https://via.placeholder.com/150x150'
+                                  "
                                 />
                                 <div class="meta">
                                   <span>Melany W.</span>
@@ -1075,9 +1084,12 @@
                               <a href="#" class="dropdown-item is-media">
                                 <img
                                   class="item-img"
-                                  src="https://via.placeholder.com/150x150"
-                                  data-demo-src="/@images/avatars/photos/9.jpg"
+                                  src="/@images/avatars/photos/9.jpg"
                                   alt=""
+                                  @error="
+                                    $event.target.src =
+                                      'https://via.placeholder.com/150x150'
+                                  "
                                 />
                                 <div class="meta">
                                   <span>Anna B</span>
@@ -1109,9 +1121,12 @@
                               <a href="#" class="dropdown-item is-media">
                                 <img
                                   class="item-img is-rounded"
-                                  src="https://via.placeholder.com/150x150"
-                                  data-demo-src="/@images/avatars/photos/8.jpg"
+                                  src="/@images/avatars/photos/8.jpg"
                                   alt=""
+                                  @error="
+                                    $event.target.src =
+                                      'https://via.placeholder.com/150x150'
+                                  "
                                 />
                                 <div class="meta">
                                   <span>Erik K.</span>
@@ -1121,9 +1136,12 @@
                               <a href="#" class="dropdown-item is-media">
                                 <img
                                   class="item-img is-rounded"
-                                  src="https://via.placeholder.com/150x150"
-                                  data-demo-src="/@images/avatars/photos/7.jpg"
+                                  src="/@images/avatars/photos/7.jpg"
                                   alt=""
+                                  @error="
+                                    $event.target.src =
+                                      'https://via.placeholder.com/150x150'
+                                  "
                                 />
                                 <div class="meta">
                                   <span>Alice C.</span>
@@ -1133,9 +1151,12 @@
                               <a href="#" class="dropdown-item is-media">
                                 <img
                                   class="item-img is-rounded"
-                                  src="https://via.placeholder.com/150x150"
-                                  data-demo-src="/@images/avatars/photos/25.jpg"
+                                  src="/@images/avatars/photos/25.jpg"
                                   alt=""
+                                  @error="
+                                    $event.target.src =
+                                      'https://via.placeholder.com/150x150'
+                                  "
                                 />
                                 <div class="meta">
                                   <span>Melany W.</span>
@@ -1146,9 +1167,12 @@
                               <a href="#" class="dropdown-item is-media">
                                 <img
                                   class="item-img is-rounded"
-                                  src="https://via.placeholder.com/150x150"
-                                  data-demo-src="/@images/avatars/photos/9.jpg"
+                                  src="/@images/avatars/photos/9.jpg"
                                   alt=""
+                                  @error="
+                                    $event.target.src =
+                                      'https://via.placeholder.com/150x150'
+                                  "
                                 />
                                 <div class="meta">
                                   <span>Anna B</span>
@@ -1176,21 +1200,21 @@
     &#x3C;div class=&#x22;dropdown-menu&#x22; role=&#x22;menu&#x22;&#x3E;
         &#x3C;div class=&#x22;dropdown-content&#x22;&#x3E;
             &#x3C;a href=&#x22;#&#x22; class=&#x22;dropdown-item is-media&#x22;&#x3E;
-                &#x3C;img class=&#x22;item-img&#x22; src=&#x22;https://via.placeholder.com/150x150&#x22;data-demo-src=&#x22;assets/img/avatars/svg/1.gif&#x22; alt=&#x22;&#x22;&#x3E;
+                &#x3C;img class=&#x22;item-img&#x22; src=&#x22;https://via.placeholder.com/150x150&#x22;src=&#x22;assets/img/avatars/svg/1.gif&#x22; alt=&#x22;&#x22;&#x3E;
                 &#x3C;div class=&#x22;meta&#x22;&#x3E;
                     &#x3C;span&#x3E;John Doe&#x3C;/span&#x3E;
                     &#x3C;span&#x3E;Island&#x3C;/span&#x3E;
                 &#x3C;/div&#x3E;
             &#x3C;/a&#x3E;
             &#x3C;a href=&#x22;#&#x22; class=&#x22;dropdown-item is-media&#x22;&#x3E;
-                &#x3C;img class=&#x22;item-img&#x22; src=&#x22;https://via.placeholder.com/150x150&#x22;data-demo-src=&#x22;assets/img/avatars/svg/1.gif&#x22; alt=&#x22;&#x22;&#x3E;
+                &#x3C;img class=&#x22;item-img&#x22; src=&#x22;https://via.placeholder.com/150x150&#x22;src=&#x22;assets/img/avatars/svg/1.gif&#x22; alt=&#x22;&#x22;&#x3E;
                 &#x3C;div class=&#x22;meta&#x22;&#x3E;
                     &#x3C;span&#x3E;Alex Miller&#x3C;/span&#x3E;
                     &#x3C;span&#x3E;England&#x3C;/span&#x3E;
                 &#x3C;/div&#x3E;
             &#x3C;/a&#x3E;
             &#x3C;a href=&#x22;#&#x22; class=&#x22;dropdown-item is-media&#x22;&#x3E;
-                &#x3C;img class=&#x22;item-img&#x22; src=&#x22;https://via.placeholder.com/150x150&#x22;data-demo-src=&#x22;assets/img/avatars/svg/1.gif&#x22; alt=&#x22;&#x22;&#x3E;
+                &#x3C;img class=&#x22;item-img&#x22; src=&#x22;https://via.placeholder.com/150x150&#x22;src=&#x22;assets/img/avatars/svg/1.gif&#x22; alt=&#x22;&#x22;&#x3E;
                 &#x3C;div class=&#x22;meta&#x22;&#x3E;
                     &#x3C;span&#x3E;Lana Davis&#x3C;/span&#x3E;
                     &#x3C;span&#x3E;Germany&#x3C;/span&#x3E;
@@ -1198,7 +1222,7 @@
             &#x3C;/a&#x3E;
             &#x3C;hr class=&#x22;dropdown-divider&#x22;&#x3E;
             &#x3C;a href=&#x22;#&#x22; class=&#x22;dropdown-item is-media&#x22;&#x3E;
-                &#x3C;img class=&#x22;item-img&#x22; src=&#x22;https://via.placeholder.com/150x150&#x22;data-demo-src=&#x22;assets/img/avatars/svg/1.gif&#x22; alt=&#x22;&#x22;&#x3E;
+                &#x3C;img class=&#x22;item-img&#x22; src=&#x22;https://via.placeholder.com/150x150&#x22;src=&#x22;assets/img/avatars/svg/1.gif&#x22; alt=&#x22;&#x22;&#x3E;
                 &#x3C;div class=&#x22;meta&#x22;&#x3E;
                     &#x3C;span&#x3E;Stephane Robert&#x3C;/span&#x3E;
                     &#x3C;span&#x3E;France&#x3C;/span&#x3E;

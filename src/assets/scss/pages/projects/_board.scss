@@ -1,4 +1,4 @@
-/*! _board.scss | Huro | Css ninja 2020-2021 */
+/*! _board.scss | Vuero | Css ninja 2020-2021 */
 
 /*
     1. Kanban Toolbar
@@ -212,7 +212,7 @@
   transition: all 0.4s;
 
   &:hover {
-    box-shadow: 0px 5px 43px rgba(0, 0, 0, 0.18) !important;
+    box-shadow: 0 5px 43px rgba(0, 0, 0, 0.18) !important;
   }
 
   &.is-new {
@@ -230,7 +230,7 @@
         margin: 0 auto;
         border-radius: 50%;
 
-        &:after {
+        &::after {
           content: '';
           position: absolute;
           top: calc(50% - 12px);
@@ -257,7 +257,7 @@
         &.is-warning {
           border: 2px solid $warning;
 
-          &:after {
+          &::after {
             background: $warning;
           }
         }
@@ -265,7 +265,7 @@
         &.is-info {
           border: 2px solid $info;
 
-          &:after {
+          &::after {
             background: $info;
           }
         }

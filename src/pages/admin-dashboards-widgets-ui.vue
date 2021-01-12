@@ -72,25 +72,34 @@
                         <div class="h-avatar is-small">
                           <img
                             class="avatar"
-                            src="https://via.placeholder.com/150x150"
-                            data-demo-src="/@images/avatars/photos/7.jpg"
+                            src="/@images/avatars/photos/7.jpg"
                             alt=""
+                            @error="
+                              $event.target.src =
+                                'https://via.placeholder.com/150x150'
+                            "
                           />
                         </div>
                         <div class="h-avatar is-small">
                           <img
                             class="avatar"
-                            src="https://via.placeholder.com/150x150"
-                            data-demo-src="/@images/avatars/photos/8.jpg"
+                            src="/@images/avatars/photos/8.jpg"
                             alt=""
+                            @error="
+                              $event.target.src =
+                                'https://via.placeholder.com/150x150'
+                            "
                           />
                         </div>
                         <div class="h-avatar is-small">
                           <img
                             class="avatar"
-                            src="https://via.placeholder.com/150x150"
-                            data-demo-src="/@images/avatars/photos/5.jpg"
+                            src="/@images/avatars/photos/5.jpg"
                             alt=""
+                            @error="
+                              $event.target.src =
+                                'https://via.placeholder.com/150x150'
+                            "
                           />
                         </div>
                       </div>
@@ -131,9 +140,12 @@
                 <div class="widget video-widget">
                   <div class="widget-content">
                     <img
-                      src="https://via.placeholder.com/400x300"
-                      data-demo-src="/@images/photo/demo/widgets/1.jpg"
+                      src="/@images/photo/demo/widgets/1.jpg"
                       alt=""
+                      @error="
+                        $event.target.src =
+                          'https://via.placeholder.com/400x300'
+                      "
                     />
                     <div class="widget-meta">
                       <Icon icon="feather:play-circle" />
@@ -383,9 +395,11 @@
                 <!--Widget-->
                 <div class="widget image-widget">
                   <img
-                    src="https://via.placeholder.com/400x300"
-                    data-demo-src="/@images/photo/demo/widgets/2.jpg"
+                    src="/@images/photo/demo/widgets/2.jpg"
                     alt=""
+                    @error="
+                      $event.target.src = 'https://via.placeholder.com/400x300'
+                    "
                   />
                   <div class="progress-wrap">
                     <progress class="progress is-primary is-tiny" max="100">
@@ -410,9 +424,12 @@
                         <div class="h-avatar">
                           <img
                             class="avatar"
-                            src="https://via.placeholder.com/150x150"
-                            data-demo-src="/@images/avatars/photos/7.jpg"
+                            src="/@images/avatars/photos/7.jpg"
                             alt=""
+                            @error="
+                              $event.target.src =
+                                'https://via.placeholder.com/150x150'
+                            "
                           />
                         </div>
                         <div class="meta">

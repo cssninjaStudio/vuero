@@ -5,9 +5,9 @@
       class="dropdown profile-dropdown dropdown-trigger is-spaced is-up"
     >
       <img
-        src="https://via.placeholder.com/150x150"
-        data-demo-src="/@images/avatars/photos/8.jpg"
+        src="/@images/avatars/photos/8.jpg"
         alt=""
+        @error="$event.target.src = 'https://via.placeholder.com/150x150'"
       />
       <span class="status-indicator"></span>
 
@@ -17,9 +17,11 @@
             <div class="h-avatar is-large">
               <img
                 class="avatar"
-                src="https://via.placeholder.com/150x150"
-                data-demo-src="/@images/avatars/photos/8.jpg"
+                src="/@images/avatars/photos/8.jpg"
                 alt=""
+                @error="
+                  $event.target.src = 'https://via.placeholder.com/150x150'
+                "
               />
             </div>
             <div class="meta">

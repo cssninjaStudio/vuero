@@ -1,4 +1,4 @@
-/*! _sidebar-panel.scss | Huro | Css ninja 2020-2021 */
+/*! _sidebar-panel.scss | Vuero | Css ninja 2020-2021 */
 
 /*
     1. Sidebar Panel
@@ -264,7 +264,7 @@ body {
           }
 
           ul {
-            padding: 0px;
+            padding: 0;
             display: none;
 
             li {
@@ -728,7 +728,6 @@ body {
                 position: absolute;
                 right: -5px;
                 bottom: 0;
-                border-radius: 50%;
                 border: 2px solid $white;
                 height: 16px;
                 width: 16px;
@@ -753,15 +752,16 @@ body {
                 font-size: 0.75rem;
                 color: $muted-grey;
 
-                /*&.is-unread {
+                /* &.is-unread {
                                     color: $dark-text;
                                     font-weight: 500;
-                                }*/
+                                } */
               }
             }
 
             //Timstamp
-            /*time {
+
+            /* time {
                             display: block;
                             position: absolute;
 
@@ -770,7 +770,7 @@ body {
                             right: 20px;
                             font-size: .75rem;
                             color: $muted-grey;
-                        }*/
+                        } */
           }
         }
 
@@ -804,7 +804,6 @@ body {
 
           //More Indicator
           .more-indicator {
-            display: block;
             height: 36px;
             width: 36px;
             min-width: 36px;
@@ -1013,7 +1012,6 @@ body {
               position: absolute;
               right: -5px;
               bottom: 0;
-              border-radius: 50%;
               border: 2px solid $white;
               height: 16px;
               width: 16px;
@@ -1022,7 +1020,6 @@ body {
           }
 
           .is-count {
-            display: block;
             position: absolute;
             right: -12px;
             bottom: -5px;
@@ -1041,7 +1038,7 @@ body {
               font-size: 700;
               color: $smoke-white;
 
-              &:before {
+              &::before {
                 content: '+';
               }
             }

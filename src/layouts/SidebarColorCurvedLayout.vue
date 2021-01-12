@@ -1,20 +1,4 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const SidebarColorCurvedLayout = defineComponent({
-  name: 'SidebarColorCurvedLayout',
-  inheritAttrs: false,
-  setup() {
-    // SidebarColorCurvedLayout - Composition API
-
-    return {}
-  },
-})
-
-export default SidebarColorCurvedLayout
-</script>
-
-<template>
+<template inherit-attrs="false">
   <div class="app-overlay"></div>
   <!-- <Pageloader /> -->
 

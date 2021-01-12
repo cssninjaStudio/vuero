@@ -85,9 +85,12 @@
                     <div class="list-view-item-inner">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/photo/demo/brands/airbnb.svg"
+                        src="/@images/photo/demo/brands/airbnb.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                       <div class="meta-left">
                         <h3 data-filter-match>
@@ -128,9 +131,12 @@
                     <div class="list-view-item-inner">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/photo/demo/brands/hubspot.svg"
+                        src="/@images/photo/demo/brands/hubspot.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                       <div class="meta-left">
                         <h3 data-filter-match>
@@ -171,9 +177,12 @@
                     <div class="list-view-item-inner">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/photo/demo/brands/slack.svg"
+                        src="/@images/photo/demo/brands/slack.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                       <div class="meta-left">
                         <h3 data-filter-match>
@@ -214,9 +223,12 @@
                     <div class="list-view-item-inner">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/photo/demo/brands/gitlab.svg"
+                        src="/@images/photo/demo/brands/gitlab.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                       <div class="meta-left">
                         <h3 data-filter-match>IT Team Senior DevOps Manager</h3>
@@ -255,9 +267,12 @@
                     <div class="list-view-item-inner">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/photo/demo/brands/google.svg"
+                        src="/@images/photo/demo/brands/google.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                       <div class="meta-left">
                         <h3 data-filter-match>
@@ -298,9 +313,12 @@
                     <div class="list-view-item-inner">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/photo/demo/brands/facebook.svg"
+                        src="/@images/photo/demo/brands/facebook.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                       <div class="meta-left">
                         <h3 data-filter-match>
@@ -341,9 +359,12 @@
                     <div class="list-view-item-inner">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/photo/demo/brands/tnw.svg"
+                        src="/@images/photo/demo/brands/tnw.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                       <div class="meta-left">
                         <h3 data-filter-match>
@@ -384,9 +405,12 @@
                     <div class="list-view-item-inner">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/photo/demo/brands/dribbble.svg"
+                        src="/@images/photo/demo/brands/dribbble.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                       <div class="meta-left">
                         <h3 data-filter-match>
@@ -427,9 +451,12 @@
                     <div class="list-view-item-inner">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/photo/demo/brands/atlassian.svg"
+                        src="/@images/photo/demo/brands/atlassian.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                       <div class="meta-left">
                         <h3 data-filter-match>
@@ -470,9 +497,12 @@
                     <div class="list-view-item-inner">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/photo/demo/brands/github.svg"
+                        src="/@images/photo/demo/brands/github.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                       <div class="meta-left">
                         <h3 data-filter-match>

@@ -1,4 +1,4 @@
-/*! _animations.scss | Huro | Css ninja 2020-2021 */
+/*! _animations.scss | Vuero | Css ninja 2020-2021 */
 
 /*
     1. Base Class
@@ -138,7 +138,7 @@
 
 .fadeInUp {
   opacity: 0;
-  -webkit-animation-name: fadeInUp;
+  -webkit-animation-name: fadeinup;
   animation-name: fadeInUp;
 }
 
@@ -179,7 +179,7 @@
 
 .fadeInDown {
   opacity: 0;
-  -webkit-animation-name: fadeInDown;
+  -webkit-animation-name: fadeindown;
   animation-name: fadeInDown;
 }
 
@@ -221,7 +221,7 @@
 
 .fadeInLeft {
   opacity: 0;
-  -webkit-animation-name: fadeInLeft;
+  -webkit-animation-name: fadeinleft;
   animation-name: fadeInLeft;
 }
 
@@ -250,14 +250,14 @@
 }
 
 .scaleIn {
-  -webkit-animation: scaleIn 0.5s;
+  -webkit-animation: scalein 0.5s;
   animation: scaleIn 0.5s;
   -webkit-animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
   animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .scaleInTooltip {
-  -webkit-animation: scaleIn 0.3s;
+  -webkit-animation: scalein 0.3s;
   animation: scaleIn 0.3s;
   -webkit-animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
   animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -288,14 +288,14 @@
 }
 
 .scaleOut {
-  -webkit-animation: scaleOut 0.5s;
+  -webkit-animation: scaleout 0.5s;
   animation: scaleOut 0.5s;
   -webkit-animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
   animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .scaleOutTooltip {
-  -webkit-animation: scaleOut 0.3s;
+  -webkit-animation: scaleout 0.3s;
   animation: scaleOut 0.3s;
   -webkit-animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
   animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -326,7 +326,7 @@
 }
 
 .scaleInCircle {
-  -webkit-animation: scaleInCircle 0.6s;
+  -webkit-animation: scaleincircle 0.6s;
   animation: scaleInCircle 0.6s;
   -webkit-animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
   animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -504,7 +504,7 @@
 }
 
 .translateLeft {
-  -webkit-animation-name: translateLeft;
+  -webkit-animation-name: translateleft;
   animation-name: translateLeft;
   -webkit-animation-duration: 0.3s;
   animation-duration: 0.3s;

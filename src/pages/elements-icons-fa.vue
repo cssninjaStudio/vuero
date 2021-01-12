@@ -71,14 +71,14 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Font Awesome 5</h3>
                     <p>
-                      Huro is bundled with the <code>Font Awesome 5</code> free
+                      Vuero is bundled with the <code>Font Awesome 5</code> free
                       version. Everyone likes Font Awesome icons and they are
                       widely used accross a large variety of websites. Please
                       refer to the code example for more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
 

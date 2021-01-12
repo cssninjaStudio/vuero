@@ -76,14 +76,14 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Select</h3>
                     <p>
-                      Huro provides default styles for the native Html
+                      Vuero provides default styles for the native Html
                       <code>select</code> element. There's an additional wrapper
                       for the styles to apply properly. Please refer to the code
                       example for more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -121,14 +121,14 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Rounded Select</h3>
                     <p>
-                      The Huro select can have rounded edges. Like other
+                      The Vuero select can have rounded edges. Like other
                       controls, simply add the <code>is-rounded</code> class to
                       the <code>select</code> wrapper element. Please refer to
                       the code example for more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -166,14 +166,14 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Font Awesome</h3>
                     <p>
-                      Huro selects can have icons attached to them. They work
+                      Vuero selects can have icons attached to them. They work
                       pretty well with Font Awesome icons. You can add an icon
                       element inside the select. Please refer to the code
                       example for more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -222,14 +222,14 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Line Icons</h3>
                     <p>
-                      Huro selects can have icons attached to them. They work
+                      Vuero selects can have icons attached to them. They work
                       pretty well with Feather icons. You can add an icon
                       element inside the select. Please refer to the code
                       example for more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -278,14 +278,14 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Feather Icons</h3>
                     <p>
-                      Huro selects can have icons attached to them. They work
+                      Vuero selects can have icons attached to them. They work
                       pretty well with Line Icons. You can add an icon element
                       inside the select. Please refer to the code example for
                       more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -340,8 +340,8 @@
                       example for more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">

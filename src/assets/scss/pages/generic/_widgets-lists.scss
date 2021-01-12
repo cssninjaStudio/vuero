@@ -1,4 +1,4 @@
-/*! _widgets-lists.scss | Huro | Css ninja 2020-2021 */
+/*! _widgets-lists.scss | Vuero | Css ninja 2020-2021 */
 
 /* ==========================================================================
 List Widgets Styles
@@ -150,7 +150,7 @@ body {
       background: $widget-grey;
       color: $light-text;
 
-      &:before {
+      &::before {
         content: attr(data-content);
         position: absolute;
         left: -45px;
@@ -164,13 +164,13 @@ body {
       }
 
       &.is-up {
-        &:before {
+        &::before {
           color: $h-green;
         }
       }
 
       &.is-down {
-        &:before {
+        &::before {
           color: $h-red;
         }
       }
@@ -231,7 +231,7 @@ body {
         display: flex;
         padding-bottom: 30px;
 
-        &:after {
+        &::after {
           content: '';
           position: absolute;
           top: 36px;
@@ -254,7 +254,7 @@ body {
           color: $light-text;
           box-shadow: $light-box-shadow;
 
-          &:after {
+          &::after {
             content: '';
             position: absolute;
             top: 17px;
@@ -362,7 +362,7 @@ body {
       &.list-widget-v3 {
         .icon-timeline {
           .timeline-item {
-            &:after {
+            &::after {
               border-color: lighten($dark-sidebar, 12%) !important;
             }
 
@@ -372,7 +372,7 @@ body {
             }
 
             .timeline-icon {
-              &:after {
+              &::after {
                 border-color: lighten($dark-sidebar, 12%) !important;
               }
 

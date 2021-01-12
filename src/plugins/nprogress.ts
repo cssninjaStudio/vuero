@@ -1,11 +1,13 @@
 import type { ViteSSGContext } from 'vite-ssg'
 import NProgress from 'nprogress'
 
-export default ({ router }: ViteSSGContext) => {
-  router.beforeEach(() => {
-    NProgress.start()
-  })
-  router.afterEach(() => {
-    NProgress.done()
-  })
+export default ({ router, isClient }: ViteSSGContext) => {
+  if (isClient) {
+    router.beforeEach(() => {
+      NProgress.start()
+    })
+    router.afterEach(() => {
+      NProgress.done()
+    })
+  }
 }

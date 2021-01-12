@@ -1,4 +1,4 @@
-/*! _user-profile.scss | Huro | Css ninja 2020-2021 */
+/*! _user-profile.scss | Vuero | Css ninja 2020-2021 */
 
 /*
     1. User Profile View
@@ -431,7 +431,6 @@
                   &:first-child {
                     font-weight: 600;
                     font-family: $font-alt;
-                    color: $dark-text;
                     font-size: 0.95rem;
                     color: $primary;
                   }
@@ -1154,7 +1153,6 @@ body {
         }
 
         span {
-          display: block;
           text-align: center;
           display: block;
           text-transform: uppercase;

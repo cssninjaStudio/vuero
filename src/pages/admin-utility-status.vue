@@ -30,9 +30,11 @@
           <div class="list-block">
             <div class="icon-wrap">
               <img
-                src="https://via.placeholder.com/150x150"
-                data-demo-src="/@images/photo/demo/animaticons/lightbulb.gif"
+                src="/@images/photo/demo/animaticons/lightbulb.gif"
                 alt=""
+                @error="
+                  $event.target.src = 'https://via.placeholder.com/150x150'
+                "
               />
             </div>
             <div class="progress-wrap">
@@ -58,9 +60,11 @@
           <div class="list-block api">
             <div class="icon-wrap">
               <img
-                src="https://via.placeholder.com/150x150"
-                data-demo-src="/@images/photo/demo/animaticons/image.gif"
+                src="/@images/photo/demo/animaticons/image.gif"
                 alt=""
+                @error="
+                  $event.target.src = 'https://via.placeholder.com/150x150'
+                "
               />
             </div>
             <div class="progress-wrap">
@@ -86,9 +90,11 @@
           <div class="list-block">
             <div class="icon-wrap">
               <img
-                src="https://via.placeholder.com/150x150"
-                data-demo-src="/@images/photo/demo/animaticons/search.gif"
+                src="/@images/photo/demo/animaticons/search.gif"
                 alt=""
+                @error="
+                  $event.target.src = 'https://via.placeholder.com/150x150'
+                "
               />
             </div>
             <div class="progress-wrap">
@@ -114,9 +120,11 @@
           <div class="list-block">
             <div class="icon-wrap">
               <img
-                src="https://via.placeholder.com/150x150"
-                data-demo-src="/@images/photo/demo/animaticons/diamond.gif"
+                src="/@images/photo/demo/animaticons/diamond.gif"
                 alt=""
+                @error="
+                  $event.target.src = 'https://via.placeholder.com/150x150'
+                "
               />
             </div>
             <div class="progress-wrap">
@@ -142,9 +150,11 @@
           <div class="list-block api">
             <div class="icon-wrap">
               <img
-                src="https://via.placeholder.com/150x150"
-                data-demo-src="/@images/photo/demo/animaticons/chart.gif"
+                src="/@images/photo/demo/animaticons/chart.gif"
                 alt=""
+                @error="
+                  $event.target.src = 'https://via.placeholder.com/150x150'
+                "
               />
             </div>
             <div class="progress-wrap">
@@ -170,9 +180,11 @@
           <div class="list-block api">
             <div class="icon-wrap">
               <img
-                src="https://via.placeholder.com/150x150"
-                data-demo-src="/@images/photo/demo/animaticons/rocket.gif"
+                src="/@images/photo/demo/animaticons/rocket.gif"
                 alt=""
+                @error="
+                  $event.target.src = 'https://via.placeholder.com/150x150'
+                "
               />
             </div>
             <div class="progress-wrap">
@@ -198,9 +210,11 @@
           <div class="list-block">
             <div class="icon-wrap">
               <img
-                src="https://via.placeholder.com/150x150"
-                data-demo-src="/@images/photo/demo/animaticons/check.gif"
+                src="/@images/photo/demo/animaticons/check.gif"
                 alt=""
+                @error="
+                  $event.target.src = 'https://via.placeholder.com/150x150'
+                "
               />
             </div>
             <div class="progress-wrap">
@@ -240,15 +254,19 @@
               <div class="h-avatar">
                 <img
                   class="avatar"
-                  src="https://via.placeholder.com/150x150"
-                  data-demo-src="/@images/logos/logo/hanzo.svg"
+                  src="/@images/logos/logo/hanzo.svg"
                   alt=""
+                  @error="
+                    $event.target.src = 'https://via.placeholder.com/150x150'
+                  "
                 />
                 <img
                   class="badge"
-                  src="https://via.placeholder.com/150x150"
-                  data-demo-src="/@images/icons/stacks/html5.svg"
+                  src="/@images/icons/stacks/html5.svg"
                   alt=""
+                  @error="
+                    $event.target.src = 'https://via.placeholder.com/150x150'
+                  "
                 />
               </div>
               <div class="update-content">
@@ -264,15 +282,19 @@
               <div class="h-avatar">
                 <img
                   class="avatar"
-                  src="https://via.placeholder.com/150x150"
-                  data-demo-src="/@images/logos/logo/hanzo.svg"
+                  src="/@images/logos/logo/hanzo.svg"
                   alt=""
+                  @error="
+                    $event.target.src = 'https://via.placeholder.com/150x150'
+                  "
                 />
                 <img
                   class="badge"
-                  src="https://via.placeholder.com/150x150"
-                  data-demo-src="/@images/icons/stacks/html5.svg"
+                  src="/@images/icons/stacks/html5.svg"
                   alt=""
+                  @error="
+                    $event.target.src = 'https://via.placeholder.com/150x150'
+                  "
                 />
               </div>
               <div class="update-content">

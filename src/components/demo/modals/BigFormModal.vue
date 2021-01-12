@@ -33,9 +33,12 @@
                         <div class="box-inner">
                           <div class="combo-item">
                             <img
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/avatars/placeholder.jpg"
+                              src="/@images/avatars/placeholder.jpg"
                               alt=""
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                             <span class="selected-item">Add people</span>
                           </div>
@@ -49,9 +52,12 @@
                               <li>
                                 <span class="item-icon">
                                   <img
-                                    src="https://via.placeholder.com/150x150"
-                                    data-demo-src="/@images/avatars/photos/22.jpg"
+                                    src="/@images/avatars/photos/22.jpg"
                                     alt=""
+                                    @error="
+                                      $event.target.src =
+                                        'https://via.placeholder.com/150x150'
+                                    "
                                   />
                                 </span>
                                 <span class="item-name">Jimmy H.</span>
@@ -62,9 +68,12 @@
                               <li>
                                 <span class="item-icon">
                                   <img
-                                    src="https://via.placeholder.com/150x150"
-                                    data-demo-src="/@images/avatars/photos/8.jpg"
+                                    src="/@images/avatars/photos/8.jpg"
                                     alt=""
+                                    @error="
+                                      $event.target.src =
+                                        'https://via.placeholder.com/150x150'
+                                    "
                                   />
                                 </span>
                                 <span class="item-name">Erik K.</span>
@@ -75,9 +84,12 @@
                               <li>
                                 <span class="item-icon">
                                   <img
-                                    src="https://via.placeholder.com/150x150"
-                                    data-demo-src="/@images/avatars/photos/7.jpg"
+                                    src="/@images/avatars/photos/7.jpg"
                                     alt=""
+                                    @error="
+                                      $event.target.src =
+                                        'https://via.placeholder.com/150x150'
+                                    "
                                   />
                                 </span>
                                 <span class="item-name">Alice C.</span>
@@ -88,9 +100,12 @@
                               <li>
                                 <span class="item-icon">
                                   <img
-                                    src="https://via.placeholder.com/150x150"
-                                    data-demo-src="/@images/avatars/photos/25.jpg"
+                                    src="/@images/avatars/photos/25.jpg"
                                     alt=""
+                                    @error="
+                                      $event.target.src =
+                                        'https://via.placeholder.com/150x150'
+                                    "
                                   />
                                 </span>
                                 <span class="item-name">Melany W.</span>
@@ -101,9 +116,12 @@
                               <li>
                                 <span class="item-icon">
                                   <img
-                                    src="https://via.placeholder.com/150x150"
-                                    data-demo-src="/@images/avatars/photos/12.jpg"
+                                    src="/@images/avatars/photos/12.jpg"
                                     alt=""
+                                    @error="
+                                      $event.target.src =
+                                        'https://via.placeholder.com/150x150'
+                                    "
                                   />
                                 </span>
                                 <span class="item-name">Joshua S.</span>

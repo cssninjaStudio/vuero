@@ -63,7 +63,7 @@
             <div id="signup-step-1" class="columns signup-columns">
               <div class="column is-4 is-offset-1">
                 <h1 id="main-signup-title" class="title is-3 signup-title">
-                  Become a Huro
+                  Become a Vuero
                 </h1>
                 <h2 id="main-signup-subtitle" class="subtitle signup-subtitle">
                   And simply join an unmatched design experience.
@@ -216,108 +216,144 @@
                   <div class="carousel-item">
                     <div class="image-wrapper">
                       <img
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/svg/huro-1.svg"
+                        src="/@images/avatars/svg/huro-1.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                   </div>
                   <div class="carousel-item">
                     <div class="image-wrapper">
                       <img
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/svg/huro-2.svg"
+                        src="/@images/avatars/svg/huro-2.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                   </div>
                   <div class="carousel-item">
                     <div class="image-wrapper">
                       <img
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/svg/huro-3.svg"
+                        src="/@images/avatars/svg/huro-3.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                   </div>
                   <div class="carousel-item">
                     <div class="image-wrapper">
                       <img
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/svg/huro-4.svg"
+                        src="/@images/avatars/svg/huro-4.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                   </div>
                   <div class="carousel-item">
                     <div class="image-wrapper">
                       <img
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/svg/huro-5.svg"
+                        src="/@images/avatars/svg/huro-5.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                   </div>
                   <div class="carousel-item">
                     <div class="image-wrapper">
                       <img
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/svg/huro-6.svg"
+                        src="/@images/avatars/svg/huro-6.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                   </div>
                   <div class="carousel-item">
                     <div class="image-wrapper">
                       <img
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/svg/huro-7.svg"
+                        src="/@images/avatars/svg/huro-7.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                   </div>
                   <div class="carousel-item">
                     <div class="image-wrapper">
                       <img
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/svg/huro-8.svg"
+                        src="/@images/avatars/svg/huro-8.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                   </div>
                   <div class="carousel-item">
                     <div class="image-wrapper">
                       <img
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/svg/huro-9.svg"
+                        src="/@images/avatars/svg/huro-9.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                   </div>
                   <div class="carousel-item">
                     <div class="image-wrapper">
                       <img
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/svg/huro-10.svg"
+                        src="/@images/avatars/svg/huro-10.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                   </div>
                   <div class="carousel-item">
                     <div class="image-wrapper">
                       <img
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/svg/huro-11.svg"
+                        src="/@images/avatars/svg/huro-11.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                   </div>
                   <div class="carousel-item">
                     <div class="image-wrapper">
                       <img
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/svg/huro-12.svg"
+                        src="/@images/avatars/svg/huro-12.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                   </div>
@@ -341,7 +377,7 @@
                   Pick a username
                 </h1>
                 <h2 class="subtitle signup-subtitle has-text-centered">
-                  Your username is how others will find you on Huro so pick a
+                  Your username is how others will find you on Vuero so pick a
                   good one. You can change it later.
                 </h2>
                 <form class="signup-form">

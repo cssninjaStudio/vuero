@@ -93,9 +93,12 @@
                                 <div class="box-inner">
                                   <div class="combo-item">
                                     <img
-                                      src="https://via.placeholder.com/150x150"
-                                      data-demo-src="/@images/icons/flags/united-states-of-america.svg"
+                                      src="/@images/icons/flags/united-states-of-america.svg"
                                       alt=""
+                                      @error="
+                                        $event.target.src =
+                                          'https://via.placeholder.com/150x150'
+                                      "
                                     />
                                     <span class="selected-item"
                                       >Select a country</span
@@ -111,9 +114,12 @@
                                       <li>
                                         <span class="item-icon">
                                           <img
-                                            src="https://via.placeholder.com/150x150"
-                                            data-demo-src="/@images/icons/flags/united-states-of-america.svg"
+                                            src="/@images/icons/flags/united-states-of-america.svg"
                                             alt=""
+                                            @error="
+                                              $event.target.src =
+                                                'https://via.placeholder.com/150x150'
+                                            "
                                           />
                                         </span>
                                         <span class="item-name"
@@ -126,9 +132,12 @@
                                       <li>
                                         <span class="item-icon">
                                           <img
-                                            src="https://via.placeholder.com/150x150"
-                                            data-demo-src="/@images/icons/flags/germany.svg"
+                                            src="/@images/icons/flags/germany.svg"
                                             alt=""
+                                            @error="
+                                              $event.target.src =
+                                                'https://via.placeholder.com/150x150'
+                                            "
                                           />
                                         </span>
                                         <span class="item-name">Germany</span>
@@ -139,9 +148,12 @@
                                       <li>
                                         <span class="item-icon">
                                           <img
-                                            src="https://via.placeholder.com/150x150"
-                                            data-demo-src="/@images/icons/flags/france.svg"
+                                            src="/@images/icons/flags/france.svg"
                                             alt=""
+                                            @error="
+                                              $event.target.src =
+                                                'https://via.placeholder.com/150x150'
+                                            "
                                           />
                                         </span>
                                         <span class="item-name">France</span>
@@ -152,9 +164,12 @@
                                       <li>
                                         <span class="item-icon">
                                           <img
-                                            src="https://via.placeholder.com/150x150"
-                                            data-demo-src="/@images/icons/flags/england.svg"
+                                            src="/@images/icons/flags/england.svg"
                                             alt=""
+                                            @error="
+                                              $event.target.src =
+                                                'https://via.placeholder.com/150x150'
+                                            "
                                           />
                                         </span>
                                         <span class="item-name">England</span>

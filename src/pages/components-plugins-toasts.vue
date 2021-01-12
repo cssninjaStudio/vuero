@@ -76,7 +76,7 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Success Toast</h3>
                     <p>
-                      Huro is integrated with Notyf, a dead simple vanilla
+                      Vuero is integrated with Notyf, a dead simple vanilla
                       javascript toasting library. You can check the plugin
                       documentation on
                       <a href="https://github.com/caroso1222/notyf">Github</a>.
@@ -101,7 +101,7 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Error Toast</h3>
                     <p>
-                      Huro is integrated with Notyf, a dead simple vanilla
+                      Vuero is integrated with Notyf, a dead simple vanilla
                       javascript toasting library. You can check the plugin
                       documentation on
                       <a href="https://github.com/caroso1222/notyf">Github</a>.
@@ -126,7 +126,7 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Info Toast</h3>
                     <p>
-                      Huro is integrated with Notyf, a dead simple vanilla
+                      Vuero is integrated with Notyf, a dead simple vanilla
                       javascript toasting library. You can check the plugin
                       documentation on
                       <a href="https://github.com/caroso1222/notyf">Github</a>.
@@ -151,7 +151,7 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Warning Toast</h3>
                     <p>
-                      Huro is integrated with Notyf, a dead simple vanilla
+                      Vuero is integrated with Notyf, a dead simple vanilla
                       javascript toasting library. You can check the plugin
                       documentation on
                       <a href="https://github.com/caroso1222/notyf">Github</a>.
@@ -176,7 +176,7 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Primary Toast</h3>
                     <p>
-                      Huro is integrated with Notyf, a dead simple vanilla
+                      Vuero is integrated with Notyf, a dead simple vanilla
                       javascript toasting library. You can check the plugin
                       documentation on
                       <a href="https://github.com/caroso1222/notyf">Github</a>.
@@ -201,7 +201,7 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Purple Toast</h3>
                     <p>
-                      Huro is integrated with Notyf, a dead simple vanilla
+                      Vuero is integrated with Notyf, a dead simple vanilla
                       javascript toasting library. You can check the plugin
                       documentation on
                       <a href="https://github.com/caroso1222/notyf">Github</a>.
@@ -226,7 +226,7 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Blue Toast</h3>
                     <p>
-                      Huro is integrated with Notyf, a dead simple vanilla
+                      Vuero is integrated with Notyf, a dead simple vanilla
                       javascript toasting library. You can check the plugin
                       documentation on
                       <a href="https://github.com/caroso1222/notyf">Github</a>.
@@ -251,7 +251,7 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Green Toast</h3>
                     <p>
-                      Huro is integrated with Notyf, a dead simple vanilla
+                      Vuero is integrated with Notyf, a dead simple vanilla
                       javascript toasting library. You can check the plugin
                       documentation on
                       <a href="https://github.com/caroso1222/notyf">Github</a>.
@@ -276,7 +276,7 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Orange Toast</h3>
                     <p>
-                      Huro is integrated with Notyf, a dead simple vanilla
+                      Vuero is integrated with Notyf, a dead simple vanilla
                       javascript toasting library. You can check the plugin
                       documentation on
                       <a href="https://github.com/caroso1222/notyf">Github</a>.

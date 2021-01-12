@@ -79,8 +79,8 @@
                       <code>is-light</code> modifier to change the text color.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -138,8 +138,8 @@
                       <code>type="i"</code>.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -240,8 +240,8 @@
                       <code>is-bolder</code> modifier classes.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -421,8 +421,8 @@
                       number between 4 and 6.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -475,7 +475,7 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Blockquote</h3>
                     <p>
-                      Huro provides <code>blockquote</code> html element
+                      Vuero provides <code>blockquote</code> html element
                       styling. Wrap your <code>blockquote</code> element inside
                       a <code>div</code> with the <code>content</code> class.
                       Blockquotes can have different colors. Available color
@@ -484,8 +484,8 @@
                       <code>is-warning</code>, <code>is-danger</code>.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -545,15 +545,15 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Divider</h3>
                     <p>
-                      Huro provides dividers for your textual content. You can
+                      Vuero provides dividers for your textual content. You can
                       use horizontal and vertical dividers by passing the
                       divider text as a <code>data-content</code> html
                       attribute. See the code example for more details about
                       usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -631,12 +631,12 @@
                       You can also use the <code>content</code> class to wrap an
                       html <code>table</code>
                       element to apply minimum styles to your table UI. Please
-                      refer to the Huro components section to find more advanced
-                      table examples and layouts.
+                      refer to the Vuero components section to find more
+                      advanced table examples and layouts.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">

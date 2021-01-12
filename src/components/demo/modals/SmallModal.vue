@@ -16,15 +16,19 @@
                 <div class="h-avatar is-xl">
                   <img
                     class="avatar"
-                    src="https://via.placeholder.com/150x150"
-                    data-demo-src="/@images/avatars/photos/22.jpg"
+                    src="/@images/avatars/photos/22.jpg"
                     alt=""
+                    @error="
+                      $event.target.src = 'https://via.placeholder.com/150x150'
+                    "
                   />
                   <img
                     class="badge"
-                    src="https://via.placeholder.com/150x150"
-                    data-demo-src="/@images/icons/flags/united-states-of-america.svg"
+                    src="/@images/icons/flags/united-states-of-america.svg"
                     alt=""
+                    @error="
+                      $event.target.src = 'https://via.placeholder.com/150x150'
+                    "
                   />
                 </div>
                 <h3 class="dark-inverted">You were invited</h3>

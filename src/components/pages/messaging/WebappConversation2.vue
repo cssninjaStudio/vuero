@@ -10,10 +10,10 @@
       <div class="chat-area-group">
         <img
           class="chat-area-profile"
-          src="https://via.placeholder.com/150x150"
-          data-demo-src="/@images/avatars/photos/39.jpg"
+          src="/@images/avatars/photos/39.jpg"
           alt=""
           data-user-popover="33"
+          @error="$event.target.src = 'https://via.placeholder.com/150x150'"
         />
       </div>
     </div>
@@ -22,10 +22,10 @@
         <div class="chat-msg-profile">
           <img
             class="chat-msg-img"
-            src="https://via.placeholder.com/150x150"
-            data-demo-src="/@images/avatars/photos/39.jpg"
+            src="/@images/avatars/photos/39.jpg"
             alt=""
             data-user-popover="33"
+            @error="$event.target.src = 'https://via.placeholder.com/150x150'"
           />
           <div class="chat-msg-date">Sent at 9:34am</div>
         </div>
@@ -35,9 +35,9 @@
           </div>
           <div class="chat-msg-text">
             <img
-              src="https://via.placeholder.com/400x300"
-              data-demo-src="/@images/photo/demo/apps/12.jpg"
+              src="/@images/photo/demo/apps/12.jpg"
               alt=""
+              @error="$event.target.src = 'https://via.placeholder.com/400x300'"
             />
           </div>
           <div class="chat-msg-text">
@@ -53,10 +53,10 @@
         <div class="chat-msg-profile">
           <img
             class="chat-msg-img"
-            src="https://via.placeholder.com/150x150"
-            data-demo-src="/@images/avatars/photos/8.jpg"
+            src="/@images/avatars/photos/8.jpg"
             alt=""
             data-user-popover="3"
+            @error="$event.target.src = 'https://via.placeholder.com/150x150'"
           />
           <div class="chat-msg-date">Sent at 9:42am</div>
         </div>
@@ -71,10 +71,10 @@
         <div class="chat-msg-profile">
           <img
             class="chat-msg-img"
-            src="https://via.placeholder.com/150x150"
-            data-demo-src="/@images/avatars/photos/39.jpg"
+            src="/@images/avatars/photos/39.jpg"
             alt=""
             data-user-popover="33"
+            @error="$event.target.src = 'https://via.placeholder.com/150x150'"
           />
           <div class="chat-msg-date">Sent at 9:43am</div>
         </div>
@@ -92,10 +92,10 @@
         <div class="chat-msg-profile">
           <img
             class="chat-msg-img"
-            src="https://via.placeholder.com/150x150"
-            data-demo-src="/@images/avatars/photos/8.jpg"
+            src="/@images/avatars/photos/8.jpg"
             alt=""
             data-user-popover="3"
+            @error="$event.target.src = 'https://via.placeholder.com/150x150'"
           />
           <div class="chat-msg-date">Sent at 9:43am</div>
         </div>

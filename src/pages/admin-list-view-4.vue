@@ -104,18 +104,24 @@
                       </div>
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/illustrations/list-views/cake-1.svg"
+                        src="/@images/illustrations/list-views/cake-1.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                       <div class="meta-left">
                         <h3 data-filter-match>
                           <img
                             class="avatar"
-                            src="https://via.placeholder.com/150x150"
-                            data-demo-src="/@images/avatars/photos/7.jpg"
+                            src="/@images/avatars/photos/7.jpg"
                             alt=""
                             data-user-popover="0"
+                            @error="
+                              $event.target.src =
+                                'https://via.placeholder.com/150x150'
+                            "
                           />
                           <span>by Alice C.</span>
                         </h3>
@@ -136,19 +142,25 @@
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/avatars/photos/9.jpg"
+                                src="/@images/avatars/photos/9.jpg"
                                 alt=""
                                 data-user-popover="1"
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/avatars/photos/8.jpg"
+                                src="/@images/avatars/photos/8.jpg"
                                 alt=""
                                 data-user-popover="3"
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                           </div>
@@ -180,18 +192,24 @@
                       </div>
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/illustrations/list-views/cake-2.svg"
+                        src="/@images/illustrations/list-views/cake-2.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                       <div class="meta-left">
                         <h3 data-filter-match>
                           <img
                             class="avatar"
-                            src="https://via.placeholder.com/150x150"
-                            data-demo-src="/@images/avatars/photos/22.jpg"
+                            src="/@images/avatars/photos/22.jpg"
                             alt=""
                             data-user-popover="5"
+                            @error="
+                              $event.target.src =
+                                'https://via.placeholder.com/150x150'
+                            "
                           />
                           <span>by Jimmy H.</span>
                         </h3>
@@ -212,28 +230,37 @@
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/avatars/photos/12.jpg"
+                                src="/@images/avatars/photos/12.jpg"
                                 alt=""
                                 data-user-popover="2"
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/avatars/photos/27.jpg"
+                                src="/@images/avatars/photos/27.jpg"
                                 alt=""
                                 data-user-popover="10"
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/avatars/photos/40.jpg"
+                                src="/@images/avatars/photos/40.jpg"
                                 alt=""
                                 data-user-popover="11"
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="h-avatar is-small">
@@ -272,18 +299,24 @@
                       </div>
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/illustrations/list-views/cake-3.svg"
+                        src="/@images/illustrations/list-views/cake-3.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                       <div class="meta-left">
                         <h3 data-filter-match>
                           <img
                             class="avatar"
-                            src="https://via.placeholder.com/150x150"
-                            data-demo-src="/@images/avatars/photos/15.jpg"
+                            src="/@images/avatars/photos/15.jpg"
                             alt=""
                             data-user-popover="15"
+                            @error="
+                              $event.target.src =
+                                'https://via.placeholder.com/150x150'
+                            "
                           />
                           <span>by Hilde V.</span>
                         </h3>
@@ -304,28 +337,37 @@
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/avatars/photos/19.jpg"
+                                src="/@images/avatars/photos/19.jpg"
                                 alt=""
                                 data-user-popover="17"
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/avatars/photos/24.jpg"
+                                src="/@images/avatars/photos/24.jpg"
                                 alt=""
                                 data-user-popover="22"
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/avatars/photos/34.jpg"
+                                src="/@images/avatars/photos/34.jpg"
                                 alt=""
                                 data-user-popover="12"
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="h-avatar is-small">
@@ -364,18 +406,24 @@
                       </div>
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/illustrations/list-views/cake-4.svg"
+                        src="/@images/illustrations/list-views/cake-4.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                       <div class="meta-left">
                         <h3 data-filter-match>
                           <img
                             class="avatar"
-                            src="https://via.placeholder.com/150x150"
-                            data-demo-src="/@images/avatars/photos/26.jpg"
+                            src="/@images/avatars/photos/26.jpg"
                             alt=""
                             data-user-popover="23"
+                            @error="
+                              $event.target.src =
+                                'https://via.placeholder.com/150x150'
+                            "
                           />
                           <span>by Courtney W.</span>
                         </h3>
@@ -396,28 +444,37 @@
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/avatars/photos/32.jpg"
+                                src="/@images/avatars/photos/32.jpg"
                                 alt=""
                                 data-user-popover="28"
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/avatars/photos/30.jpg"
+                                src="/@images/avatars/photos/30.jpg"
                                 alt=""
                                 data-user-popover="26"
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/avatars/photos/29.jpg"
+                                src="/@images/avatars/photos/29.jpg"
                                 alt=""
                                 data-user-popover="25"
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="h-avatar is-small">
@@ -456,19 +513,25 @@
                       </div>
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/illustrations/list-views/cake-5.svg"
+                        src="/@images/illustrations/list-views/cake-5.svg"
                         alt=""
                         data-user-popover="14"
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                       <div class="meta-left">
                         <h3 data-filter-match>
                           <img
                             class="avatar"
-                            src="https://via.placeholder.com/150x150"
-                            data-demo-src="/@images/avatars/photos/14.jpg"
+                            src="/@images/avatars/photos/14.jpg"
                             alt=""
                             data-user-popover="14"
+                            @error="
+                              $event.target.src =
+                                'https://via.placeholder.com/150x150'
+                            "
                           />
                           <span>by Ryan B.</span>
                         </h3>
@@ -489,28 +552,37 @@
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/avatars/photos/8.jpg"
+                                src="/@images/avatars/photos/8.jpg"
                                 alt=""
                                 data-user-popover="3"
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/avatars/photos/9.jpg"
+                                src="/@images/avatars/photos/9.jpg"
                                 alt=""
                                 data-user-popover="1"
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/avatars/photos/13.jpg"
+                                src="/@images/avatars/photos/13.jpg"
                                 alt=""
                                 data-user-popover="6"
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="h-avatar is-small">
@@ -549,18 +621,24 @@
                       </div>
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/illustrations/list-views/cake-6.svg"
+                        src="/@images/illustrations/list-views/cake-6.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                       <div class="meta-left">
                         <h3 data-filter-match>
                           <img
                             class="avatar"
-                            src="https://via.placeholder.com/150x150"
-                            data-demo-src="/@images/avatars/photos/7.jpg"
+                            src="/@images/avatars/photos/7.jpg"
                             alt=""
                             data-user-popover="0"
+                            @error="
+                              $event.target.src =
+                                'https://via.placeholder.com/150x150'
+                            "
                           />
                           <span>by Alice C.</span>
                         </h3>
@@ -581,28 +659,37 @@
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/avatars/photos/18.jpg"
+                                src="/@images/avatars/photos/18.jpg"
                                 alt=""
                                 data-user-popover="7"
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/avatars/photos/25.jpg"
+                                src="/@images/avatars/photos/25.jpg"
                                 alt=""
                                 data-user-popover="4"
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/avatars/photos/22.jpg"
+                                src="/@images/avatars/photos/22.jpg"
                                 alt=""
                                 data-user-popover="20"
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="h-avatar is-small">
@@ -641,18 +728,24 @@
                       </div>
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/illustrations/list-views/cake-7.svg"
+                        src="/@images/illustrations/list-views/cake-7.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                       <div class="meta-left">
                         <h3 data-filter-match>
                           <img
                             class="avatar"
-                            src="https://via.placeholder.com/150x150"
-                            data-demo-src="/@images/avatars/photos/21.jpg"
+                            src="/@images/avatars/photos/21.jpg"
                             alt=""
                             data-user-popover="19"
+                            @error="
+                              $event.target.src =
+                                'https://via.placeholder.com/150x150'
+                            "
                           />
                           <span>by Elizabeth F.</span>
                         </h3>
@@ -673,28 +766,37 @@
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/avatars/photos/5.jpg"
+                                src="/@images/avatars/photos/5.jpg"
                                 alt=""
                                 data-user-popover="9"
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/avatars/photos/18.jpg"
+                                src="/@images/avatars/photos/18.jpg"
                                 alt=""
                                 data-user-popover="7"
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/avatars/photos/25.jpg"
+                                src="/@images/avatars/photos/25.jpg"
                                 alt=""
                                 data-user-popover="4"
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="h-avatar is-small">
@@ -733,18 +835,24 @@
                       </div>
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/illustrations/list-views/cake-8.svg"
+                        src="/@images/illustrations/list-views/cake-8.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                       <div class="meta-left">
                         <h3 data-filter-match>
                           <img
                             class="avatar"
-                            src="https://via.placeholder.com/150x150"
-                            data-demo-src="/@images/avatars/photos/12.jpg"
+                            src="/@images/avatars/photos/12.jpg"
                             alt=""
                             data-user-popover="2"
+                            @error="
+                              $event.target.src =
+                                'https://via.placeholder.com/150x150'
+                            "
                           />
                           <span>by Joshua S.</span>
                         </h3>
@@ -765,28 +873,37 @@
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/avatars/photos/19.jpg"
+                                src="/@images/avatars/photos/19.jpg"
                                 alt=""
                                 data-user-popover="17"
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/avatars/photos/28.jpg"
+                                src="/@images/avatars/photos/28.jpg"
                                 alt=""
                                 data-user-popover="24"
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/avatars/photos/36.jpg"
+                                src="/@images/avatars/photos/36.jpg"
                                 alt=""
                                 data-user-popover="30"
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="h-avatar is-small">
@@ -825,18 +942,24 @@
                       </div>
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/illustrations/list-views/cake-9.svg"
+                        src="/@images/illustrations/list-views/cake-9.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                       <div class="meta-left">
                         <h3 data-filter-match>
                           <img
                             class="avatar"
-                            src="https://via.placeholder.com/150x150"
-                            data-demo-src="/@images/avatars/photos/12.jpg"
+                            src="/@images/avatars/photos/12.jpg"
                             alt=""
                             data-user-popover="2"
+                            @error="
+                              $event.target.src =
+                                'https://via.placeholder.com/150x150'
+                            "
                           />
                           <span>by Joshua S.</span>
                         </h3>
@@ -857,28 +980,37 @@
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/avatars/photos/5.jpg"
+                                src="/@images/avatars/photos/5.jpg"
                                 alt=""
                                 data-user-popover="9"
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/avatars/photos/31.jpg"
+                                src="/@images/avatars/photos/31.jpg"
                                 alt=""
                                 data-user-popover="27"
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/avatars/photos/16.jpg"
+                                src="/@images/avatars/photos/16.jpg"
                                 alt=""
                                 data-user-popover="16"
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="h-avatar is-small">
@@ -917,18 +1049,24 @@
                       </div>
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/illustrations/list-views/cake-10.svg"
+                        src="/@images/illustrations/list-views/cake-10.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                       <div class="meta-left">
                         <h3 data-filter-match>
                           <img
                             class="avatar"
-                            src="https://via.placeholder.com/150x150"
-                            data-demo-src="/@images/avatars/photos/11.jpg"
+                            src="/@images/avatars/photos/11.jpg"
                             alt=""
                             data-user-popover="13"
+                            @error="
+                              $event.target.src =
+                                'https://via.placeholder.com/150x150'
+                            "
                           />
                           <span>by Kelly M.</span>
                         </h3>
@@ -949,28 +1087,37 @@
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/avatars/photos/24.jpg"
+                                src="/@images/avatars/photos/24.jpg"
                                 alt=""
                                 data-user-popover="22"
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/avatars/photos/23.jpg"
+                                src="/@images/avatars/photos/23.jpg"
                                 alt=""
                                 data-user-popover="23"
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/avatars/photos/13.jpg"
+                                src="/@images/avatars/photos/13.jpg"
                                 alt=""
                                 data-user-popover="6"
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="h-avatar is-small">

@@ -1,4 +1,4 @@
-/*! _inbox.scss | Huro | Css ninja 2020-2021 */
+/*! _inbox.scss | Vuero | Css ninja 2020-2021 */
 
 /* ==========================================================================
 Inbox Layouts
@@ -651,8 +651,8 @@ Inbox Layouts
             background: $white;
             width: 100%;
 
-            &:after,
-            &:before {
+            &::after,
+            &::before {
               bottom: 100%;
               left: 6%;
               border: solid transparent;
@@ -663,14 +663,14 @@ Inbox Layouts
               pointer-events: none;
             }
 
-            &:after {
+            &::after {
               border-color: rgba(255, 255, 255, 0);
               border-bottom-color: #fff;
               border-width: 16px;
               margin-left: -16px;
             }
 
-            &:before {
+            &::before {
               border-color: rgba(237, 237, 237, 0);
               border-bottom-color: #e0e0e0;
               border-width: 17px;
@@ -932,8 +932,8 @@ body {
                 background-color: lighten($dark-sidebar, 2%);
                 border-color: lighten($dark-sidebar, 4%);
 
-                &:before,
-                &:after {
+                &::before,
+                &::after {
                   border-bottom-color: lighten($dark-sidebar, 2%) !important;
                 }
 
@@ -1364,8 +1364,8 @@ body {
       padding-right: 10px !important;
 
       .reply-bubble {
-        &:after,
-        &:before {
+        &::after,
+        &::before {
           left: 16% !important;
         }
       }
@@ -1491,8 +1491,8 @@ body {
       padding-right: 10px !important;
 
       .reply-bubble {
-        &:after,
-        &:before {
+        &::after,
+        &::before {
           left: 5% !important;
         }
       }

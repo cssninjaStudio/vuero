@@ -71,11 +71,11 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Quick Cards</h3>
                     <p>
-                      Huro also features classic Bulma cards, but with a
-                      particular Huro flavour. Simply add the
+                      Vuero also features classic Bulma cards, but with a
+                      particular Vuero flavour. Simply add the
                       <code>h-card</code> class to a Bulma
                       <code>card</code> element to leverage the styles provided
-                      by Huro.
+                      by Vuero.
                     </p>
                   </div>
                 </div>
@@ -97,10 +97,13 @@
                           <div class="h-avatar is-medium">
                             <img
                               class="avatar is-squared"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/avatars/photos/19.jpg"
+                              src="/@images/avatars/photos/19.jpg"
                               alt=""
                               data-user-popover="17"
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                           </div>
                           <div class="flex-meta">
@@ -139,10 +142,13 @@
                           <div class="h-avatar is-medium">
                             <img
                               class="avatar is-squared"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/avatars/photos/5.jpg"
+                              src="/@images/avatars/photos/5.jpg"
                               alt=""
                               data-user-popover="9"
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                           </div>
                           <div class="flex-meta">
@@ -181,10 +187,13 @@
                           <div class="h-avatar is-medium">
                             <img
                               class="avatar is-squared"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/avatars/photos/36.jpg"
+                              src="/@images/avatars/photos/36.jpg"
                               alt=""
                               data-user-popover="30"
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                           </div>
                           <div class="flex-meta">
@@ -214,11 +223,11 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Full Cards</h3>
                     <p>
-                      Huro also features classic Bulma cards, but with a
-                      particular Huro flavour. Simply add the
+                      Vuero also features classic Bulma cards, but with a
+                      particular Vuero flavour. Simply add the
                       <code>h-card</code> class to a Bulma
                       <code>card</code> element to leverage the styles provided
-                      by Huro.
+                      by Vuero.
                     </p>
                   </div>
                 </div>
@@ -230,9 +239,12 @@
                       <div class="card-image">
                         <figure class="image is-4by3">
                           <img
-                            src="https://via.placeholder.com/1280x960"
-                            data-demo-src="/@images/photo/demo/apps/1.jpg"
+                            src="/@images/photo/demo/apps/1.jpg"
                             alt=""
+                            @error="
+                              $event.target.src =
+                                'https://via.placeholder.com/1280x960'
+                            "
                           />
                         </figure>
                       </div>
@@ -241,16 +253,22 @@
                           <div class="h-avatar is-medium">
                             <img
                               class="avatar"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/avatars/photos/19.jpg"
+                              src="/@images/avatars/photos/19.jpg"
                               alt=""
                               data-user-popover="17"
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                             <img
                               class="badge"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/icons/flags/germany.svg"
+                              src="/@images/icons/flags/germany.svg"
                               alt=""
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                           </div>
                           <div class="flex-meta">
@@ -278,9 +296,12 @@
                       <div class="card-image">
                         <figure class="image is-4by3">
                           <img
-                            src="https://via.placeholder.com/1280x960"
-                            data-demo-src="/@images/photo/demo/apps/2.png"
+                            src="/@images/photo/demo/apps/2.png"
                             alt=""
+                            @error="
+                              $event.target.src =
+                                'https://via.placeholder.com/1280x960'
+                            "
                           />
                         </figure>
                       </div>
@@ -289,16 +310,22 @@
                           <div class="h-avatar is-medium">
                             <img
                               class="avatar"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/avatars/photos/23.jpg"
+                              src="/@images/avatars/photos/23.jpg"
                               alt=""
                               data-user-popover="21"
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                             <img
                               class="badge"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/icons/flags/united-states-of-america.svg"
+                              src="/@images/icons/flags/united-states-of-america.svg"
                               alt=""
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                           </div>
                           <div class="flex-meta">
@@ -326,9 +353,12 @@
                       <div class="card-image">
                         <figure class="image is-4by3">
                           <img
-                            src="https://via.placeholder.com/1280x960"
-                            data-demo-src="/@images/photo/demo/apps/7.png"
+                            src="/@images/photo/demo/apps/7.png"
                             alt=""
+                            @error="
+                              $event.target.src =
+                                'https://via.placeholder.com/1280x960'
+                            "
                           />
                         </figure>
                       </div>
@@ -337,16 +367,22 @@
                           <div class="h-avatar is-medium">
                             <img
                               class="avatar"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/avatars/photos/12.jpg"
+                              src="/@images/avatars/photos/12.jpg"
                               alt=""
                               data-user-popover="2"
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                             <img
                               class="badge"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/icons/flags/united-states-of-america.svg"
+                              src="/@images/icons/flags/united-states-of-america.svg"
                               alt=""
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                           </div>
                           <div class="flex-meta">

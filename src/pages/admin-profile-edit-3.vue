@@ -48,15 +48,21 @@
                       <div class="h-avatar is-large">
                         <img
                           class="avatar"
-                          src="https://via.placeholder.com/150x150"
-                          data-demo-src="/@images/avatars/photos/8.jpg"
+                          src="/@images/avatars/photos/8.jpg"
                           alt=""
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x150'
+                          "
                         />
                         <img
                           class="badge"
-                          src="https://via.placeholder.com/150x150"
-                          data-demo-src="/@images/icons/flags/united-states-of-america.svg"
+                          src="/@images/icons/flags/united-states-of-america.svg"
                           alt=""
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x150'
+                          "
                         />
                       </div>
                       <div class="flex-meta">
@@ -163,9 +169,12 @@
                                         <div class="box-inner">
                                           <div class="combo-item">
                                             <img
-                                              src="https://via.placeholder.com/150x150"
-                                              data-demo-src="/@images/icons/flags/united-states-of-america.svg"
+                                              src="/@images/icons/flags/united-states-of-america.svg"
                                               alt=""
+                                              @error="
+                                                $event.target.src =
+                                                  'https://via.placeholder.com/150x150'
+                                              "
                                             />
                                             <span class="selected-item"
                                               >Select a language</span
@@ -341,9 +350,12 @@
                           <div class="setting-item">
                             <div class="icon-wrap has-img">
                               <img
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/icons/flags/united-states-of-america.svg"
+                                src="/@images/icons/flags/united-states-of-america.svg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="meta">
@@ -359,9 +371,12 @@
                           <div class="setting-item">
                             <div class="icon-wrap has-img">
                               <img
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/icons/flags/france.svg"
+                                src="/@images/icons/flags/france.svg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="meta">
@@ -377,9 +392,12 @@
                           <div class="setting-item">
                             <div class="icon-wrap has-img">
                               <img
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/icons/flags/germany.svg"
+                                src="/@images/icons/flags/germany.svg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="meta">
@@ -395,9 +413,12 @@
                           <div class="setting-item">
                             <div class="icon-wrap has-img">
                               <img
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/icons/flags/spain.svg"
+                                src="/@images/icons/flags/spain.svg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="meta">
@@ -454,9 +475,12 @@
                                         <div class="box-inner">
                                           <div class="combo-item">
                                             <img
-                                              src="https://via.placeholder.com/150x150"
-                                              data-demo-src="/@images/icons/stacks/html5.svg"
+                                              src="/@images/icons/stacks/html5.svg"
                                               alt=""
+                                              @error="
+                                                $event.target.src =
+                                                  'https://via.placeholder.com/150x150'
+                                              "
                                             />
                                             <span class="selected-item"
                                               >Select a Skill</span
@@ -722,9 +746,12 @@
                           <div class="setting-item">
                             <div class="icon-wrap has-img">
                               <img
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/icons/stacks/js.svg"
+                                src="/@images/icons/stacks/js.svg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="meta">
@@ -740,9 +767,12 @@
                           <div class="setting-item">
                             <div class="icon-wrap has-img">
                               <img
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/icons/stacks/html5.svg"
+                                src="/@images/icons/stacks/html5.svg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="meta">
@@ -758,9 +788,12 @@
                           <div class="setting-item">
                             <div class="icon-wrap has-img">
                               <img
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/icons/stacks/css3.svg"
+                                src="/@images/icons/stacks/css3.svg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="meta">
@@ -817,9 +850,12 @@
                                         <div class="box-inner">
                                           <div class="combo-item">
                                             <img
-                                              src="https://via.placeholder.com/150x150"
-                                              data-demo-src="/@images/icons/stacks/illustrator.svg"
+                                              src="/@images/icons/stacks/illustrator.svg"
                                               alt=""
+                                              @error="
+                                                $event.target.src =
+                                                  'https://via.placeholder.com/150x150'
+                                              "
                                             />
                                             <span class="selected-item"
                                               >Select a Tool</span
@@ -984,9 +1020,12 @@
                           <div class="setting-item">
                             <div class="icon-wrap has-img">
                               <img
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/icons/stacks/illustrator.svg"
+                                src="/@images/icons/stacks/illustrator.svg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="meta">
@@ -1002,9 +1041,12 @@
                           <div class="setting-item">
                             <div class="icon-wrap has-img">
                               <img
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/photo/demo/brands/jira.svg"
+                                src="/@images/photo/demo/brands/jira.svg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="meta">
@@ -1020,9 +1062,12 @@
                           <div class="setting-item">
                             <div class="icon-wrap has-img">
                               <img
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/photo/demo/brands/office.svg"
+                                src="/@images/photo/demo/brands/office.svg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="meta">

@@ -1,4 +1,4 @@
-/*! _message.scss | Huro | Css ninja 2020-2021 */
+/*! _message.scss | Vuero | Css ninja 2020-2021 */
 
 /*
     1. Message
@@ -19,8 +19,8 @@
     border-color: lighten($primary, 24%);
 
     .delete {
-      &:before,
-      &:after {
+      &::before,
+      &::after {
         background-color: $primary;
       }
     }
@@ -30,8 +30,8 @@
     border-color: lighten($info, 24%);
 
     .delete {
-      &:before,
-      &:after {
+      &::before,
+      &::after {
         background-color: $info;
       }
     }
@@ -41,8 +41,8 @@
     border-color: lighten($success, 24%);
 
     .delete {
-      &:before,
-      &:after {
+      &::before,
+      &::after {
         background-color: $success;
       }
     }
@@ -52,8 +52,8 @@
     border-color: lighten($warning, 24%);
 
     .delete {
-      &:before,
-      &:after {
+      &::before,
+      &::after {
         background-color: $warning;
       }
     }
@@ -63,8 +63,8 @@
     border-color: lighten($danger, 24%);
 
     .delete {
-      &:before,
-      &:after {
+      &::before,
+      &::after {
         background-color: $danger;
       }
     }
@@ -76,12 +76,12 @@
     top: 6px;
     right: 6px;
 
-    &:before {
+    &::before {
       height: 1px;
       background-color: $light-text;
     }
 
-    &:after {
+    &::after {
       width: 1px;
       background-color: $light-text;
     }
@@ -117,8 +117,8 @@ body {
         }
 
         .delete {
-          &:before,
-          &:after {
+          &::before,
+          &::after {
             background-color: $white;
           }
         }
@@ -133,8 +133,8 @@ body {
         }
 
         .delete {
-          &:before,
-          &:after {
+          &::before,
+          &::after {
             background-color: $white;
           }
         }
@@ -149,8 +149,8 @@ body {
         }
 
         .delete {
-          &:before,
-          &:after {
+          &::before,
+          &::after {
             background-color: $white;
           }
         }
@@ -165,8 +165,8 @@ body {
         }
 
         .delete {
-          &:before,
-          &:after {
+          &::before,
+          &::after {
             background-color: $white;
           }
         }
@@ -181,8 +181,8 @@ body {
         }
 
         .delete {
-          &:before,
-          &:after {
+          &::before,
+          &::after {
             background-color: $white;
           }
         }

@@ -1,4 +1,4 @@
-/*! _projects.scss | Huro | Css ninja 2020-2021 */
+/*! _projects.scss | Vuero | Css ninja 2020-2021 */
 
 /*
     1. Projects Toolbar
@@ -308,7 +308,7 @@ body {
             width: 75px;
             margin: 0 auto;
 
-            &:after {
+            &::after {
               content: '';
               position: absolute;
               top: 0;
@@ -319,25 +319,25 @@ body {
             }
 
             &.is-success {
-              &:after {
+              &::after {
                 background: $success;
               }
             }
 
             &.is-info {
-              &:after {
+              &::after {
                 background: $info;
               }
             }
 
             &.is-warning {
-              &:after {
+              &::after {
                 background: $warning;
               }
             }
 
             &.is-primary {
-              &:after {
+              &::after {
                 background: $primary;
               }
             }

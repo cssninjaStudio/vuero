@@ -1,4 +1,4 @@
-/*! _popovers.scss | Huro | Css ninja 2020-2021 */
+/*! _popovers.scss | Vuero | Css ninja 2020-2021 */
 
 /*
     1. Web UI Popover
@@ -13,7 +13,7 @@
 ========================================================================== */
 
 .webui-popover {
-  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 10px 4px !important;
+  box-shadow: rgba(0, 0, 0, 0.04) 0 3px 10px 4px !important;
   background: $white !important;
   color: $dark-text !important;
   margin-top: -20px !important;
@@ -31,7 +31,7 @@
   &.top-right > .webui-arrow {
     border-right-color: transparent !important;
 
-    &:after {
+    &::after {
       border-top-color: $white !important;
     }
   }
@@ -48,7 +48,7 @@
     border-top-color: transparent !important;
     border-right-color: transparent !important;
 
-    &:after {
+    &::after {
       border-top-color: transparent !important;
     }
   }
@@ -138,7 +138,7 @@ body {
           border-top-color: transparent !important;
           border-right-color: $dark-sidebar !important;
 
-          &:after {
+          &::after {
             border-right-color: $dark-sidebar !important;
           }
         }
@@ -146,7 +146,7 @@ body {
 
       &.left {
         .webui-arrow {
-          &:after {
+          &::after {
             border-left-color: $dark-sidebar !important;
           }
         }
@@ -154,7 +154,7 @@ body {
 
       &.bottom {
         .webui-arrow {
-          &:after {
+          &::after {
             border-bottom-color: $dark-sidebar !important;
           }
         }
@@ -163,7 +163,7 @@ body {
       &.bottom-right,
       &.bottom-left {
         .webui-arrow {
-          &:after {
+          &::after {
             border-bottom-color: $dark-sidebar !important;
           }
         }
@@ -171,7 +171,7 @@ body {
 
       &.top-right {
         .webui-arrow {
-          &:after {
+          &::after {
             border-top-color: $dark-sidebar !important;
           }
         }

@@ -5,14 +5,14 @@
       <div class="footer-head">
         <div class="head-text">
           <h3>Ready to get started?</h3>
-          <p>Get your Huro copy now</p>
+          <p>Get your Vuero copy now</p>
         </div>
         <div class="head-action">
           <div class="buttons">
             <a
               href="https://themeforest.net/item/huro-multipurpose-admin-and-webapp-ui-kit/28933249"
               class="button h-button is-primary is-rounded raised action-button"
-              >Buy Huro</a
+              >Buy Vuero</a
             >
             <a href="https://cssninja.io" class="button chat-button"
               >Chat with us</a
@@ -35,7 +35,7 @@
               alt=""
             />
             <div class="footer-description p-t-10 p-b-10">
-              Huro is built for developers and designers. It's modular approach
+              Vuero is built for developers and designers. It's modular approach
               lets you create awesome webapps with incredible layouts and
               elements.
             </div>
@@ -71,7 +71,7 @@
             <!-- Column -->
             <div class="column">
               <ul class="footer-column">
-                <li class="column-header">Huro</li>
+                <li class="column-header">Vuero</li>
                 <li class="column-item"><a href="#">Home</a></li>
                 <li class="column-item"><a href="#">Pricing</a></li>
                 <li class="column-item"><a href="#">Get started</a></li>

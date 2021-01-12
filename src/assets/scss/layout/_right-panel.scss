@@ -1,4 +1,4 @@
-/*! _right-panel.scss | Huro | Css ninja 2020-2021 */
+/*! _right-panel.scss | Vuero | Css ninja 2020-2021 */
 
 /*
     1. Right Panel Base
@@ -462,7 +462,7 @@ body {
             display: flex;
             padding-bottom: 30px;
 
-            &:after {
+            &::after {
               content: '';
               position: absolute;
               top: 36px;
@@ -485,7 +485,7 @@ body {
               color: $light-text;
               box-shadow: $light-box-shadow;
 
-              &:after {
+              &::after {
                 content: '';
                 position: absolute;
                 top: 17px;
@@ -582,7 +582,7 @@ body {
 
           .icon-timeline {
             .timeline-item {
-              &:after {
+              &::after {
                 border-color: lighten($dark-sidebar, 12%) !important;
               }
 
@@ -590,7 +590,7 @@ body {
                 background: lighten($dark-sidebar, 6%) !important;
                 border-color: lighten($dark-sidebar, 12%) !important;
 
-                &:after {
+                &::after {
                   border-color: lighten($dark-sidebar, 12%) !important;
                 }
               }

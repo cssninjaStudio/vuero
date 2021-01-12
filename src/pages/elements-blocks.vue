@@ -71,14 +71,14 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Media Flex</h3>
                     <p>
-                      Huro provides a versatile and very flexible flex media
+                      Vuero provides a versatile and very flexible flex media
                       element. Simply create and element with the following
                       markup. Please note that this version does not have
                       horizontal alignment. Check the markup for more details.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -89,9 +89,12 @@
                             <div class="h-avatar">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/avatars/photos/9.jpg"
+                                src="/@images/avatars/photos/9.jpg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="flex-meta">
@@ -130,15 +133,15 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">With Icon</h3>
                     <p>
-                      Huro provides a versatile and very flexible flex media
+                      Vuero provides a versatile and very flexible flex media
                       element. The avatar can be replaced with an icon or any
                       sort of element. Please note that this version does not
                       have horizontal alignment. Check the markup for more
                       details.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -189,14 +192,14 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Media Flex Center</h3>
                     <p>
-                      Huro provides a versatile and very flexible flex media
+                      Vuero provides a versatile and very flexible flex media
                       element. Simply create and element with the following
                       markup. Please note that this version has horizontal
                       alignment. Check the markup for more details.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -207,9 +210,12 @@
                             <div class="h-avatar">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/avatars/photos/9.jpg"
+                                src="/@images/avatars/photos/9.jpg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="flex-meta">
@@ -248,15 +254,15 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">With Icon</h3>
                     <p>
-                      Huro provides a versatile and very flexible flex media
+                      Vuero provides a versatile and very flexible flex media
                       element. The avatar can be replaced with an icon or any
                       sort of element. Please note that this version does not
                       have horizontal alignment. Check the markup for more
                       details.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -317,8 +323,8 @@
                       to see it in action.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -329,9 +335,12 @@
                             <div class="h-avatar">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/avatars/photos/9.jpg"
+                                src="/@images/avatars/photos/9.jpg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="flex-meta">
@@ -385,8 +394,8 @@
                       to see it in action.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">

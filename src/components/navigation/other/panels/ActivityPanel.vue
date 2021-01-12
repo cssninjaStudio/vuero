@@ -34,15 +34,19 @@
               <div class="h-avatar">
                 <img
                   class="avatar"
-                  src="https://via.placeholder.com/150x150"
-                  data-demo-src="/@images/avatars/photos/12.jpg"
+                  src="/@images/avatars/photos/12.jpg"
                   alt=""
+                  @error="
+                    $event.target.src = 'https://via.placeholder.com/150x150'
+                  "
                 />
                 <img
                   class="badge"
-                  src="https://via.placeholder.com/150x150"
-                  data-demo-src="/@images/icons/flags/united-states-of-america.svg"
+                  src="/@images/icons/flags/united-states-of-america.svg"
                   alt=""
+                  @error="
+                    $event.target.src = 'https://via.placeholder.com/150x150'
+                  "
                 />
               </div>
               <div class="meta">
@@ -62,15 +66,19 @@
               <div class="h-avatar">
                 <img
                   class="avatar"
-                  src="https://via.placeholder.com/150x150"
-                  data-demo-src="/@images/avatars/photos/25.jpg"
+                  src="/@images/avatars/photos/25.jpg"
                   alt=""
+                  @error="
+                    $event.target.src = 'https://via.placeholder.com/150x150'
+                  "
                 />
                 <img
                   class="badge"
-                  src="https://via.placeholder.com/150x150"
-                  data-demo-src="/@images/icons/flags/united-states-of-america.svg"
+                  src="/@images/icons/flags/united-states-of-america.svg"
                   alt=""
+                  @error="
+                    $event.target.src = 'https://via.placeholder.com/150x150'
+                  "
                 />
               </div>
               <div class="meta">
@@ -90,15 +98,19 @@
               <div class="h-avatar">
                 <img
                   class="avatar"
-                  src="https://via.placeholder.com/150x150"
-                  data-demo-src="/@images/avatars/photos/18.jpg"
+                  src="/@images/avatars/photos/18.jpg"
                   alt=""
+                  @error="
+                    $event.target.src = 'https://via.placeholder.com/150x150'
+                  "
                 />
                 <img
                   class="badge"
-                  src="https://via.placeholder.com/150x150"
-                  data-demo-src="/@images/icons/flags/united-states-of-america.svg"
+                  src="/@images/icons/flags/united-states-of-america.svg"
                   alt=""
+                  @error="
+                    $event.target.src = 'https://via.placeholder.com/150x150'
+                  "
                 />
               </div>
               <div class="meta">
@@ -118,15 +130,19 @@
               <div class="h-avatar">
                 <img
                   class="avatar"
-                  src="https://via.placeholder.com/150x150"
-                  data-demo-src="/@images/avatars/photos/13.jpg"
+                  src="/@images/avatars/photos/13.jpg"
                   alt=""
+                  @error="
+                    $event.target.src = 'https://via.placeholder.com/150x150'
+                  "
                 />
                 <img
                   class="badge"
-                  src="https://via.placeholder.com/150x150"
-                  data-demo-src="/@images/icons/flags/united-states-of-america.svg"
+                  src="/@images/icons/flags/united-states-of-america.svg"
                   alt=""
+                  @error="
+                    $event.target.src = 'https://via.placeholder.com/150x150'
+                  "
                 />
               </div>
               <div class="meta">
@@ -148,9 +164,11 @@
               <div class="project-inner">
                 <img
                   class="project-avatar"
-                  src="https://via.placeholder.com/150x150"
-                  data-demo-src="/@images/icons/logos/slicer.svg"
+                  src="/@images/icons/logos/slicer.svg"
                   alt=""
+                  @error="
+                    $event.target.src = 'https://via.placeholder.com/150x150'
+                  "
                 />
                 <div class="meta">
                   <span>The slicer project</span>
@@ -175,25 +193,34 @@
                     <div class="h-avatar is-small">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/7.jpg"
+                        src="/@images/avatars/photos/7.jpg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                     <div class="h-avatar is-small">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/5.jpg"
+                        src="/@images/avatars/photos/5.jpg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                     <div class="h-avatar is-small">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/8.jpg"
+                        src="/@images/avatars/photos/8.jpg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                   </div>
@@ -206,9 +233,11 @@
               <div class="project-inner">
                 <img
                   class="project-avatar"
-                  src="https://via.placeholder.com/150x150"
-                  data-demo-src="/@images/icons/logos/metamovies.svg"
+                  src="/@images/icons/logos/metamovies.svg"
                   alt=""
+                  @error="
+                    $event.target.src = 'https://via.placeholder.com/150x150'
+                  "
                 />
                 <div class="meta">
                   <span>Metamovies reworked</span>
@@ -233,17 +262,23 @@
                     <div class="h-avatar is-small">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/13.jpg"
+                        src="/@images/avatars/photos/13.jpg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                     <div class="h-avatar is-small">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/18.jpg"
+                        src="/@images/avatars/photos/18.jpg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                   </div>
@@ -256,9 +291,11 @@
               <div class="project-inner">
                 <img
                   class="project-avatar"
-                  src="https://via.placeholder.com/150x150"
-                  data-demo-src="/@images/icons/logos/fastpizza.svg"
+                  src="/@images/icons/logos/fastpizza.svg"
                   alt=""
+                  @error="
+                    $event.target.src = 'https://via.placeholder.com/150x150'
+                  "
                 />
                 <div class="meta">
                   <span>Fast Pizza redesign</span>
@@ -283,17 +320,23 @@
                     <div class="h-avatar is-small">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/7.jpg"
+                        src="/@images/avatars/photos/7.jpg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                     <div class="h-avatar is-small">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/25.jpg"
+                        src="/@images/avatars/photos/25.jpg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                   </div>
@@ -320,9 +363,11 @@
                 <div class="timeline-icon">
                   <img
                     class="avatar"
-                    src="https://via.placeholder.com/150x150"
-                    data-demo-src="/@images/avatars/photos/7.jpg"
+                    src="/@images/avatars/photos/7.jpg"
                     alt=""
+                    @error="
+                      $event.target.src = 'https://via.placeholder.com/150x150'
+                    "
                   />
                 </div>
                 <div class="timeline-content">

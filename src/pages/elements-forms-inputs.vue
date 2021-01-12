@@ -76,7 +76,7 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Input</h3>
                     <p>
-                      Huro provides elegant form controls with minimum styling.
+                      Vuero provides elegant form controls with minimum styling.
                       You can use regular inputs by adding the
                       <code>input</code> class to a html
                       <code>input</code> element. It's better to wrap inputs
@@ -84,8 +84,8 @@
                       consistency.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -123,8 +123,8 @@
                       about usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -164,8 +164,8 @@
                       details about usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -205,8 +205,8 @@
                       <code>is-danger-focus</code>.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -273,14 +273,14 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Font Awesome</h3>
                     <p>
-                      Huro inputs are fully compatible with Font Awesome 5
+                      Vuero inputs are fully compatible with Font Awesome 5
                       icons. make sure to add a <code>form-icon</code> element
                       inside you wrapping <code>control</code> element. See the
                       code example for more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -317,14 +317,14 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Line Icons</h3>
                     <p>
-                      Huro inputs are fully compatible with Line Icons. make
+                      Vuero inputs are fully compatible with Line Icons. make
                       sure to add a <code>form-icon</code> element inside you
                       wrapping <code>control</code> element. See the code
                       example for more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -361,14 +361,14 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Feather Icons</h3>
                     <p>
-                      Huro inputs are fully compatible with Feather Icons. make
+                      Vuero inputs are fully compatible with Feather Icons. make
                       sure to add a <code>form-icon</code> element inside you
                       wrapping <code>control</code> element. See the code
                       example for more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -410,8 +410,8 @@
                       wrapping <code>control</code> element.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -447,8 +447,8 @@
                       the target <code>input</code> element.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -480,14 +480,14 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Validation</h3>
                     <p>
-                      Huro offers input validation styles to go with any type of
-                      form validation library you could use in your project.
+                      Vuero offers input validation styles to go with any type
+                      of form validation library you could use in your project.
                       It's CSS based only and gives you a lot of freedom. See
                       the code examples for more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -576,14 +576,14 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Validation Rounded</h3>
                     <p>
-                      Huro offers input validation styles to go with any type of
-                      form validation library you could use in your project.
+                      Vuero offers input validation styles to go with any type
+                      of form validation library you could use in your project.
                       It's CSS based only and gives you a lot of freedom. See
                       the code examples for more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">

@@ -76,7 +76,7 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Filepond</h3>
                     <p>
-                      Huro is integrated with Filepond, a performant vanilla
+                      Vuero is integrated with Filepond, a performant vanilla
                       javascript uploader library. You can check the plugin
                       documentation on
                       <a href="https://github.com/pqina/filepond">Github</a>.
@@ -86,8 +86,8 @@
                       item row.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -136,7 +136,7 @@ FilePond.create(
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Filepond Two Grid</h3>
                     <p>
-                      Huro is integrated with Filepond, a performant vanilla
+                      Vuero is integrated with Filepond, a performant vanilla
                       javascript uploader library. You can check the plugin
                       documentation on
                       <a href="https://github.com/pqina/filepond">Github</a>.
@@ -146,8 +146,8 @@ FilePond.create(
                       row.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -189,7 +189,7 @@ FilePond.create(
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Filepond Three Grid</h3>
                     <p>
-                      Huro is integrated with Filepond, a performant vanilla
+                      Vuero is integrated with Filepond, a performant vanilla
                       javascript uploader library. You can check the plugin
                       documentation on
                       <a href="https://github.com/pqina/filepond">Github</a>.
@@ -199,8 +199,8 @@ FilePond.create(
                       row.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -242,7 +242,7 @@ FilePond.create(
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Profile Filepond</h3>
                     <p>
-                      Huro is integrated with Filepond, a performant vanilla
+                      Vuero is integrated with Filepond, a performant vanilla
                       javascript uploader library. You can check the plugin
                       documentation on
                       <a href="https://github.com/pqina/filepond">Github</a>.
@@ -251,8 +251,8 @@ FilePond.create(
                       example is fit for profile image upload (1:1 ratio).
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -327,7 +327,7 @@ FilePond.create(
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Square Filepond</h3>
                     <p>
-                      Huro is integrated with Notyf, a dead simple vanilla
+                      Vuero is integrated with Notyf, a dead simple vanilla
                       javascript toasting library. You can check the plugin
                       documentation on
                       <a href="https://github.com/caroso1222/notyf">Github</a>.
@@ -336,8 +336,8 @@ FilePond.create(
                       toast is one the 2 notyf default toasts.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">

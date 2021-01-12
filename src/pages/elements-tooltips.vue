@@ -71,7 +71,7 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Default Tooltip</h3>
                     <p>
-                      Huro offers a very simple versatile and CSS only tooltip.
+                      Vuero offers a very simple versatile and CSS only tooltip.
                       The example below is the default and basic version. There
                       are 6 default positions: <code>hint--top-left</code>,
                       <code>hint--top</code>, <code>hint--top-right</code>,
@@ -80,8 +80,8 @@
                       controlled via the <code>data-hint</code> attribute.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
 
@@ -135,14 +135,14 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Light Tooltip</h3>
                     <p>
-                      Huro offers a very simple versatile and CSS only tooltip.
+                      Vuero offers a very simple versatile and CSS only tooltip.
                       The example below is the light version. Reference default
                       tooltips to learn more about placement options. To use the
                       light tooltip, add the <code>hint--light</code> class.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
 
@@ -196,15 +196,15 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Tooltip Colors</h3>
                     <p>
-                      Huro tooltips can have different colors that can be
+                      Vuero tooltips can have different colors that can be
                       changed with a simple CSS class. Available color classes
                       are: <code>hint--light</code>, <code>hint--primary</code>,
                       <code>hint--info</code>, <code>hint--success</code>,
                       <code>hint--warning</code> and <code>hint--error</code>.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
 
@@ -264,15 +264,15 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Tooltip Shapes</h3>
                     <p>
-                      Huro tooltips can have different shapes, based oon what
+                      Vuero tooltips can have different shapes, based oon what
                       you need in your design. Available shape classes are:
                       <code>hint--rounded</code> and <code>hint--bubble</code>.
                       Note that the bubble tooltip has uppercase set by default
                       ans doesn't have a tooltip arrow.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
 

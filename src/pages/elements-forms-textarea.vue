@@ -82,8 +82,8 @@
                       textarea natively supports dark mode.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -124,8 +124,8 @@
                       <code>is-danger-focus</code>.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -227,8 +227,8 @@
                       code example for more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -265,8 +265,8 @@
                       target textarea element.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -305,8 +305,8 @@
                       usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -324,9 +324,12 @@
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/avatars/photos/12.jpg"
+                                src="/@images/avatars/photos/12.jpg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="h-avatar is-small">
@@ -337,9 +340,12 @@
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/avatars/photos/7.jpg"
+                                src="/@images/avatars/photos/7.jpg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                           </div>

@@ -94,16 +94,22 @@
                   <div class="user-pic">
                     <img
                       id="user-details-image"
-                      src="https://via.placeholder.com/150x150"
-                      data-demo-src="/@images/avatars/photos/10.jpg"
+                      src="/@images/avatars/photos/10.jpg"
                       alt=""
+                      @error="
+                        $event.target.src =
+                          'https://via.placeholder.com/150x150'
+                      "
                     />
                     <img
                       id="user-details-badge"
                       class="is-badge"
-                      src="https://via.placeholder.com/150x150"
-                      data-demo-src="/@images/icons/flags/united-states-of-america.svg"
+                      src="/@images/icons/flags/united-states-of-america.svg"
                       alt=""
+                      @error="
+                        $event.target.src =
+                          'https://via.placeholder.com/150x150'
+                      "
                     />
                   </div>
                   <h4 id="user-details-name" class="user-name">Henry G.</h4>
@@ -153,64 +159,100 @@
                     </div>
                     <div class="detail-photo-grid">
                       <img
-                        src="https://via.placeholder.com/1600x900"
-                        data-demo-src="/@images/photo/demo/demo-apps/1.jpg"
+                        src="/@images/photo/demo/demo-apps/1.jpg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/1600x900'
+                        "
                       />
                       <img
-                        src="https://via.placeholder.com/1600x900"
-                        data-demo-src="/@images/photo/demo/demo-apps/2.jpg"
+                        src="/@images/photo/demo/demo-apps/2.jpg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/1600x900'
+                        "
                       />
                       <img
-                        src="https://via.placeholder.com/1600x900"
-                        data-demo-src="/@images/photo/demo/demo-apps/3.jpg"
+                        src="/@images/photo/demo/demo-apps/3.jpg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/1600x900'
+                        "
                       />
                       <img
-                        src="https://via.placeholder.com/1600x900"
-                        data-demo-src="/@images/photo/demo/demo-apps/4.jpg"
+                        src="/@images/photo/demo/demo-apps/4.jpg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/1600x900'
+                        "
                       />
                       <img
-                        src="https://via.placeholder.com/1600x900"
-                        data-demo-src="/@images/photo/demo/demo-apps/5.jpg"
+                        src="/@images/photo/demo/demo-apps/5.jpg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/1600x900'
+                        "
                       />
                       <img
-                        src="https://via.placeholder.com/1600x900"
-                        data-demo-src="/@images/photo/demo/demo-apps/6.jpg"
+                        src="/@images/photo/demo/demo-apps/6.jpg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/1600x900'
+                        "
                       />
                       <img
-                        src="https://via.placeholder.com/1600x900"
-                        data-demo-src="/@images/photo/demo/demo-apps/7.jpg"
+                        src="/@images/photo/demo/demo-apps/7.jpg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/1600x900'
+                        "
                       />
                       <img
-                        src="https://via.placeholder.com/1600x900"
-                        data-demo-src="/@images/photo/demo/demo-apps/8.jpg"
+                        src="/@images/photo/demo/demo-apps/8.jpg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/1600x900'
+                        "
                       />
                       <img
-                        src="https://via.placeholder.com/1600x900"
-                        data-demo-src="/@images/photo/demo/demo-apps/9.jpg"
+                        src="/@images/photo/demo/demo-apps/9.jpg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/1600x900'
+                        "
                       />
                       <img
-                        src="https://via.placeholder.com/1600x900"
-                        data-demo-src="/@images/photo/demo/demo-apps/10.jpg"
+                        src="/@images/photo/demo/demo-apps/10.jpg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/1600x900'
+                        "
                       />
                       <img
-                        src="https://via.placeholder.com/1600x900"
-                        data-demo-src="/@images/photo/demo/demo-apps/11.jpg"
+                        src="/@images/photo/demo/demo-apps/11.jpg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/1600x900'
+                        "
                       />
                       <img
-                        src="https://via.placeholder.com/1600x900"
-                        data-demo-src="/@images/photo/demo/demo-apps/12.jpg"
+                        src="/@images/photo/demo/demo-apps/12.jpg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/1600x900'
+                        "
                       />
                     </div>
                     <a class="view-more">View More</a>
@@ -301,9 +343,11 @@
           >
             <div class="caption">
               <img
-                src="https://via.placeholder.com/150x150"
-                data-demo-src="/@images/illustrations/messages/empty-placeholder.svg"
+                src="/@images/illustrations/messages/empty-placeholder.svg"
                 alt=""
+                @error="
+                  $event.target.src = 'https://via.placeholder.com/150x150'
+                "
               />
               <div class="text">
                 <h3>Nothing to show</h3>

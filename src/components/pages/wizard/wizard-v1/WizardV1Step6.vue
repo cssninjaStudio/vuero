@@ -18,8 +18,8 @@
           <img
             id="project-preview-logo"
             class="avatar is-hidden"
-            src="https://via.placeholder.com/150x150"
             alt=""
+            @error="$event.target.src = 'https://via.placeholder.com/150x150'"
           />
           <a class="edit-icon" data-step-edit="1">
             <i class="lnil lnil-pencil"></i>
@@ -80,9 +80,11 @@
                   <img
                     id="project-preview-customer-logo"
                     class="avatar"
-                    src="https://via.placeholder.com/150x150"
-                    data-demo-src="/@images/photo/demo/brands/airbnb.svg"
+                    src="/@images/photo/demo/brands/airbnb.svg"
                     alt=""
+                    @error="
+                      $event.target.src = 'https://via.placeholder.com/150x150'
+                    "
                   />
                 </div>
                 <div class="flex-meta">
@@ -161,10 +163,13 @@
                     <div class="h-avatar">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/8.jpg"
+                        src="/@images/avatars/photos/8.jpg"
                         alt=""
                         data-user-popover="3"
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                     <div class="flex-meta">
@@ -178,10 +183,13 @@
                     <div class="h-avatar">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/7.jpg"
+                        src="/@images/avatars/photos/7.jpg"
                         alt=""
                         data-user-popover="0"
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                     <div class="flex-meta">
@@ -195,10 +203,13 @@
                     <div class="h-avatar">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/25.jpg"
+                        src="/@images/avatars/photos/25.jpg"
                         alt=""
                         data-user-popover="4"
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                     <div class="flex-meta">
@@ -232,9 +243,12 @@
                     <div class="h-avatar is-small">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/photo/demo/tools/illustrator.svg"
+                        src="/@images/photo/demo/tools/illustrator.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                     <div class="flex-meta">
@@ -248,9 +262,12 @@
                     <div class="h-avatar is-small">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/photo/demo/tools/figma.svg"
+                        src="/@images/photo/demo/tools/figma.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                     <div class="flex-meta">
@@ -264,9 +281,12 @@
                     <div class="h-avatar is-small">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/photo/demo/tools/taiga.svg"
+                        src="/@images/photo/demo/tools/taiga.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                     <div class="flex-meta">

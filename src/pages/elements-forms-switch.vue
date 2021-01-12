@@ -76,17 +76,18 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Switch</h3>
                     <p>
-                      Huro provides nicely styled switch checkboxes when you
-                      need to display such control in yoour forms. Huro switches
-                      have several color modififers. Available modifiers are
+                      Vuero provides nicely styled switch checkboxes when you
+                      need to display such control in yoour forms. Vuero
+                      switches have several color modififers. Available
+                      modifiers are
                       <code>is-primary</code>, <code>is-success</code>,
                       <code>is-info</code> <code>is-warning</code>,
                       <code>is-danger</code>. Please refer to the markup for
                       more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -189,17 +190,17 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Thin Switch</h3>
                     <p>
-                      Huro also provides thin switch checkboxes when you need to
-                      display such control in yoour forms. Huro switches have
-                      several color modififers. Available modifiers are
+                      Vuero also provides thin switch checkboxes when you need
+                      to display such control in yoour forms. Vuero switches
+                      have several color modififers. Available modifiers are
                       <code>is-primary</code>, <code>is-success</code>,
                       <code>is-info</code> <code>is-warning</code>,
                       <code>is-danger</code>. Please refer to the markup for
                       more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -337,8 +338,8 @@
                       more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -379,8 +380,8 @@
                       more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">

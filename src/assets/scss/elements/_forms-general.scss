@@ -1,4 +1,4 @@
-/*! _forms-general.scss | Huro | Css ninja 2020-2021 */
+/*! _forms-general.scss | Vuero | Css ninja 2020-2021 */
 
 /*
     1. labels
@@ -280,7 +280,7 @@ body {
 
 .select {
   &.is-loading {
-    &:after {
+    &::after {
       right: 0.75em;
       top: 0.75em;
     }
@@ -374,7 +374,7 @@ select {
 
 .control {
   &.is-loading {
-    &:after {
+    &::after {
       right: 0.75em;
       top: 0.75em;
     }
@@ -697,7 +697,7 @@ body {
     .select {
       &:not(.is-multiple):not(.is-loading) {
         &:hover {
-          &:after {
+          &::after {
             border-color: $dark-dark-text !important;
           }
         }
@@ -835,7 +835,7 @@ body {
     border-radius: 6px;
     margin-top: 10px;
     padding: 5px 0;
-    box-shadow: 0px 5px 43px rgba(0, 0, 0, 0.18) !important;
+    box-shadow: 0 5px 43px rgba(0, 0, 0, 0.18) !important;
     z-index: 5;
     opacity: 0;
     transform: translateY(20px);
@@ -1248,7 +1248,7 @@ body {
           &:checked + i {
             background-color: $accent !important;
 
-            &:after {
+            &::after {
               background: $white !important;
             }
           }
@@ -1260,7 +1260,7 @@ body {
           &:checked + i {
             background-color: $success !important;
 
-            &:after {
+            &::after {
               background: $white !important;
             }
           }
@@ -1272,7 +1272,7 @@ body {
           &:checked + i {
             background-color: $info !important;
 
-            &:after {
+            &::after {
               background: $white !important;
             }
           }
@@ -1284,7 +1284,7 @@ body {
           &:checked + i {
             background-color: $warning !important;
 
-            &:after {
+            &::after {
               background: $white !important;
             }
           }
@@ -1296,7 +1296,7 @@ body {
           &:checked + i {
             background-color: $danger !important;
 
-            &:after {
+            &::after {
               background: $white !important;
             }
           }
@@ -1306,18 +1306,18 @@ body {
       i {
         background: $dark-sidebar !important;
 
-        &:before {
+        &::before {
           background: $dark-sidebar !important;
         }
 
-        &:after {
+        &::after {
           background: lighten($dark-sidebar, 22%) !important;
         }
       }
 
       input {
         &:checked + i {
-          &:after {
+          &::after {
             background: lighten($dark-sidebar, 55%) !important;
           }
         }
@@ -1338,7 +1338,7 @@ body {
     .input:checked ~ .slider {
       background: lighten($primary, 20%);
 
-      &:after {
+      &::after {
         background: $primary;
         border-color: $primary;
       }
@@ -1349,7 +1349,7 @@ body {
     .input:checked ~ .slider {
       background: lighten($success, 20%);
 
-      &:after {
+      &::after {
         background: $success;
         border-color: $success;
       }
@@ -1360,7 +1360,7 @@ body {
     .input:checked ~ .slider {
       background: lighten($info, 20%);
 
-      &:after {
+      &::after {
         background: $info;
         border-color: $info;
       }
@@ -1371,7 +1371,7 @@ body {
     .input:checked ~ .slider {
       background: lighten($warning, 20%);
 
-      &:after {
+      &::after {
         background: $warning;
         border-color: $warning;
       }
@@ -1382,7 +1382,7 @@ body {
     .input:checked ~ .slider {
       background: lighten($danger, 20%);
 
-      &:after {
+      &::after {
         background: $danger;
         border-color: $danger;
       }
@@ -1399,8 +1399,8 @@ body {
     background: #c5c5c5;
     transition: all 0.2s ease;
 
-    &:after {
-      background: #eeeeee;
+    &::after {
+      background: #eee;
       position: absolute;
       left: -8px;
       top: (7px - 24px) / 2;
@@ -1409,7 +1409,7 @@ body {
       height: 24px;
       border-radius: 50%;
       border: 1px solid transparent;
-      box-shadow: 0px 2px 2px rgba(#000, 0.2);
+      box-shadow: 0 2px 2px rgba(#000, 0.2);
       content: '';
       transition: all 0.2s ease;
     }
@@ -1427,14 +1427,14 @@ body {
     }
 
     &:checked ~ .slider {
-      &:after {
+      &::after {
         left: 32px - 24px + 8px;
       }
     }
   }
 
   .input:checked ~ .slider {
-    &:after {
+    &::after {
       background: $white;
       border: 1px solid $fade-grey;
     }
@@ -1468,7 +1468,7 @@ body {
         .input:checked ~ .slider {
           background: lighten($accent, 20%);
 
-          &:after {
+          &::after {
             background: $accent;
             border-color: $accent;
           }
@@ -1477,7 +1477,7 @@ body {
 
       &.is-success {
         .input:checked ~ .slider {
-          &:after {
+          &::after {
             background: $success;
             border-color: $success;
           }
@@ -1486,7 +1486,7 @@ body {
 
       &.is-info {
         .input:checked ~ .slider {
-          &:after {
+          &::after {
             background: $info;
             border-color: $info;
           }
@@ -1495,7 +1495,7 @@ body {
 
       &.is-warning {
         .input:checked ~ .slider {
-          &:after {
+          &::after {
             background: $warning;
             border-color: $warning;
           }
@@ -1504,7 +1504,7 @@ body {
 
       &.is-danger {
         .input:checked ~ .slider {
-          &:after {
+          &::after {
             background: $danger;
             border-color: $danger;
           }
@@ -1514,13 +1514,13 @@ body {
       .slider {
         background: $dark-sidebar;
 
-        &:after {
+        &::after {
           background: lighten($dark-sidebar, 22%);
         }
       }
 
       .input:checked ~ .slider {
-        &:after {
+        &::after {
           background: lighten($dark-sidebar, 55%);
           border: lighten($dark-sidebar, 55%);
         }
@@ -1573,8 +1573,6 @@ body {
     border-radius: 50%;
     background: $primary;
     cursor: pointer;
-    -webkit-transition: background 0.15s ease-in-out;
-    transition: background 0.15s ease-in-out;
     -webkit-transition: transform 0.3s;
     transition: transform 0.3s;
     transform: scale(1);
@@ -1802,7 +1800,7 @@ body {
         font-family: $font;
         padding: 4px 10px 5px 10px;
 
-        &:before {
+        &::before {
           content: '\f00d';
           position: absolute;
           top: 4.5px;

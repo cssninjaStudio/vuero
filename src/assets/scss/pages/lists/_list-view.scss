@@ -1,4 +1,4 @@
-/*! _list-view.scss | Huro | Css ninja 2020-2021 */
+/*! _list-view.scss | Vuero | Css ninja 2020-2021 */
 
 /*
     1. List View Toolbar
@@ -752,8 +752,8 @@ body {
 
             .dropdown {
               position: absolute;
-              top: 0px;
-              right: 0px;
+              top: 0;
+              right: 0;
               margin-left: 0;
             }
           }
@@ -1030,8 +1030,8 @@ body {
 
             .dropdown {
               position: absolute;
-              top: 0px;
-              right: 0px;
+              top: 0;
+              right: 0;
               margin-left: 0;
             }
           }
@@ -1076,8 +1076,8 @@ body {
 
             .dropdown {
               position: absolute;
-              top: 0px;
-              right: 0px;
+              top: 0;
+              right: 0;
               margin-left: 0;
             }
           }
@@ -1223,7 +1223,6 @@ body {
             }
 
             .buttons {
-              margin: 0;
               width: 100%;
               display: flex;
               justify-content: space-between;

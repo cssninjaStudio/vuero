@@ -17,9 +17,11 @@
             <div class="user-container">
               <img
                 class="is-user"
-                src="https://via.placeholder.com/150x150"
-                data-demo-src="/@images/avatars/photos/10.jpg"
+                src="/@images/avatars/photos/10.jpg"
                 alt=""
+                @error="
+                  $event.target.src = 'https://via.placeholder.com/150x150'
+                "
               />
             </div>
             <div class="recipient-meta">
@@ -38,9 +40,11 @@
             <div class="user-container">
               <img
                 class="is-user"
-                src="https://via.placeholder.com/150x150"
-                data-demo-src="/@images/avatars/photos/25.jpg"
+                src="/@images/avatars/photos/25.jpg"
                 alt=""
+                @error="
+                  $event.target.src = 'https://via.placeholder.com/150x150'
+                "
               />
             </div>
             <div class="recipient-meta">
@@ -60,9 +64,11 @@
             <div class="user-container">
               <img
                 class="is-user"
-                src="https://via.placeholder.com/150x150"
-                data-demo-src="/@images/avatars/photos/13.jpg"
+                src="/@images/avatars/photos/13.jpg"
                 alt=""
+                @error="
+                  $event.target.src = 'https://via.placeholder.com/150x150'
+                "
               />
             </div>
             <div class="recipient-meta">
@@ -81,9 +87,11 @@
             <div class="user-container">
               <img
                 class="is-user"
-                src="https://via.placeholder.com/150x150"
-                data-demo-src="/@images/avatars/photos/18.jpg"
+                src="/@images/avatars/photos/18.jpg"
                 alt=""
+                @error="
+                  $event.target.src = 'https://via.placeholder.com/150x150'
+                "
               />
             </div>
             <div class="recipient-meta">
@@ -101,9 +109,11 @@
             <div class="user-container">
               <img
                 class="is-user"
-                src="https://via.placeholder.com/150x150"
-                data-demo-src="/@images/avatars/photos/7.jpg"
+                src="/@images/avatars/photos/7.jpg"
                 alt=""
+                @error="
+                  $event.target.src = 'https://via.placeholder.com/150x150'
+                "
               />
             </div>
             <div class="recipient-meta">

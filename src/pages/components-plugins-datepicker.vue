@@ -87,8 +87,8 @@
                       for more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -133,8 +133,8 @@ bulmaCalendar.attach('#bulma-datepicker-7', {
                       for more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -185,8 +185,8 @@ bulmaCalendar.attach('#bulma-datepicker-1', {
                       for more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -241,8 +241,8 @@ bulmaCalendar.attach('#bulma-datepicker-2', {
                       for more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -296,8 +296,8 @@ bulmaCalendar.attach('#bulma-datepicker-3', {
                       for more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -347,8 +347,8 @@ bulmaCalendar.attach('#bulma-datepicker-4', {
                       for more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -398,8 +398,8 @@ bulmaCalendar.attach('#bulma-datepicker-5', {
                       for more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -438,7 +438,7 @@ bulmaCalendar.attach('#bulma-datepicker-6', {
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Pickaday Datepicker</h3>
                     <p>
-                      Huro is integrated with Pikaday, a performant vanilla
+                      Vuero is integrated with Pikaday, a performant vanilla
                       javascript datepicker library. You can check the plugin
                       documentation on
                       <a href="https://github.com/Pikaday/Pikaday">Github</a>.
@@ -447,8 +447,8 @@ bulmaCalendar.attach('#bulma-datepicker-6', {
                       example shows you how to use it.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">

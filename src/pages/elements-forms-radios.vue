@@ -76,7 +76,7 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Outlined Radio</h3>
                     <p>
-                      Huro provides default styled radio buttons in 2 main
+                      Vuero provides default styled radio buttons in 2 main
                       styles, <code>outlined</code> and <code>solid</code>.
                       Those checkboxes also support all main colors. The
                       available modifiers are <code>is-primary</code>,
@@ -84,8 +84,8 @@
                       <code>is-warning</code>, <code>is-danger</code>.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -180,14 +180,14 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Outlined Square</h3>
                     <p>
-                      Huro radio buttons can be squares instead of circles.
+                      Vuero radio buttons can be squares instead of circles.
                       Simply add the <code>is-square</code> modifier class to
                       your <code>radio</code> element. See the code example for
                       more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -283,7 +283,7 @@
                     <h3 class="title is-thin is-5">Solid Radio</h3>
                     <p></p>
                     <p>
-                      Huro provides default styled radio buttons in 2 main
+                      Vuero provides default styled radio buttons in 2 main
                       styles, <code>outlined</code> and <code>solid</code>.
                       Those checkboxes also support all main colors. The
                       available modifiers are <code>is-primary</code>,
@@ -291,8 +291,8 @@
                       <code>is-warning</code>, <code>is-danger</code>.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -387,14 +387,14 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Solid Square</h3>
                     <p>
-                      Huro radio buttons can be squares instead of circles.
+                      Vuero radio buttons can be squares instead of circles.
                       Simply add the <code>is-square</code> modifier class to
                       your <code>radio</code> element. See the code example for
                       more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">

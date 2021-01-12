@@ -1,6 +1,22 @@
+<script setup lang="ts">
+import type { PropType } from 'vue'
+import { defineProps } from 'vue'
+
+const props = defineProps({
+  activeTab: {
+    type: String as PropType<'elements' | 'components' | 'forms' | 'plugins'>,
+    default: 'elements',
+  },
+})
+</script>
+
 <template>
   <!--Elements-->
-  <div id="demo-elements" class="tab-content has-text-left is-active">
+  <div
+    id="demo-elements"
+    :class="[activeTab === 'elements' && 'is-active']"
+    class="tab-content has-text-left"
+  >
     <div class="columns is-multiline">
       <div class="column is-3">
         <RouterLink :to="{ name: 'elements-colors' }" class="component-box">
@@ -296,7 +312,11 @@
   </div>
 
   <!--Components-->
-  <div id="demo-components" class="tab-content has-text-left">
+  <div
+    id="demo-components"
+    :class="[activeTab === 'components' && 'is-active']"
+    class="tab-content has-text-left"
+  >
     <div class="columns is-multiline">
       <!--Item-->
       <div class="column is-3">
@@ -557,7 +577,11 @@
   </div>
 
   <!--Forms-->
-  <div id="demo-forms" class="tab-content has-text-left">
+  <div
+    id="demo-forms"
+    :class="[activeTab === 'forms' && 'is-active']"
+    class="tab-content has-text-left"
+  >
     <div class="columns is-multiline">
       <div class="column is-3">
         <RouterLink
@@ -858,7 +882,11 @@
   </div>
 
   <!--Sections-->
-  <div id="plugins-sections" class="tab-content has-text-left">
+  <div
+    id="plugins-sections"
+    :class="[activeTab === 'plugins' && 'is-active']"
+    class="tab-content has-text-left"
+  >
     <div class="columns is-multiline">
       <div class="column is-3">
         <RouterLink

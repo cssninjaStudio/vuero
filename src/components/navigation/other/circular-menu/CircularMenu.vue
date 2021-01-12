@@ -16,10 +16,7 @@
         class="menu-item is-flex right-panel-trigger"
         data-panel="languages-panel"
       >
-        <img
-          src="/@images/icons/flags/united-states-of-america.svg"
-          alt=""
-        />
+        <img src="/@images/icons/flags/united-states-of-america.svg" alt="" />
       </a>
       <a class="menu-item is-flex">
         <Icon icon="feather:bell" />

@@ -50,49 +50,61 @@
                 <div class="h-avatar is-small">
                   <img
                     class="avatar"
-                    src="https://via.placeholder.com/150x150"
-                    data-demo-src="/@images/avatars/photos/7.jpg"
+                    src="/@images/avatars/photos/7.jpg"
                     alt=""
+                    @error="
+                      $event.target.src = 'https://via.placeholder.com/150x150'
+                    "
                   />
                 </div>
                 <div class="h-avatar is-small">
                   <img
                     class="avatar"
-                    src="https://via.placeholder.com/150x150"
-                    data-demo-src="/@images/avatars/photos/9.jpg"
+                    src="/@images/avatars/photos/9.jpg"
                     alt=""
+                    @error="
+                      $event.target.src = 'https://via.placeholder.com/150x150'
+                    "
                   />
                 </div>
                 <div class="h-avatar is-small">
                   <img
                     class="avatar"
-                    src="https://via.placeholder.com/150x150"
-                    data-demo-src="/@images/avatars/photos/12.jpg"
+                    src="/@images/avatars/photos/12.jpg"
                     alt=""
+                    @error="
+                      $event.target.src = 'https://via.placeholder.com/150x150'
+                    "
                   />
                 </div>
                 <div class="h-avatar is-small">
                   <img
                     class="avatar"
-                    src="https://via.placeholder.com/150x150"
-                    data-demo-src="/@images/avatars/photos/8.jpg"
+                    src="/@images/avatars/photos/8.jpg"
                     alt=""
+                    @error="
+                      $event.target.src = 'https://via.placeholder.com/150x150'
+                    "
                   />
                 </div>
                 <div class="h-avatar is-small">
                   <img
                     class="avatar"
-                    src="https://via.placeholder.com/150x150"
-                    data-demo-src="/@images/avatars/photos/25.jpg"
+                    src="/@images/avatars/photos/25.jpg"
                     alt=""
+                    @error="
+                      $event.target.src = 'https://via.placeholder.com/150x150'
+                    "
                   />
                 </div>
                 <div class="h-avatar is-small">
                   <img
                     class="avatar"
-                    src="https://via.placeholder.com/150x150"
-                    data-demo-src="/@images/avatars/photos/22.jpg"
+                    src="/@images/avatars/photos/22.jpg"
                     alt=""
+                    @error="
+                      $event.target.src = 'https://via.placeholder.com/150x150'
+                    "
                   />
                 </div>
               </div>
@@ -215,9 +227,12 @@
                           <span class="avatar is-fake is-primary">
                             <img
                               class="avatar"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/avatars/photos/7.jpg"
+                              src="/@images/avatars/photos/7.jpg"
                               alt=""
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                           </span>
                         </div>
@@ -225,9 +240,12 @@
                           <span class="avatar is-fake is-success">
                             <img
                               class="avatar"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/avatars/photos/8.jpg"
+                              src="/@images/avatars/photos/8.jpg"
                               alt=""
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                           </span>
                         </div>
@@ -280,9 +298,12 @@
                           <span class="avatar is-fake is-primary">
                             <img
                               class="avatar"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/avatars/photos/25.jpg"
+                              src="/@images/avatars/photos/25.jpg"
                               alt=""
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                           </span>
                         </div>
@@ -329,9 +350,12 @@
                           <span class="avatar is-fake is-primary">
                             <img
                               class="avatar"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/avatars/photos/7.jpg"
+                              src="/@images/avatars/photos/7.jpg"
                               alt=""
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                           </span>
                         </div>
@@ -339,9 +363,12 @@
                           <span class="avatar is-fake is-success">
                             <img
                               class="avatar"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/avatars/photos/23.jpg"
+                              src="/@images/avatars/photos/23.jpg"
                               alt=""
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                           </span>
                         </div>
@@ -390,9 +417,12 @@
                           <span class="avatar is-fake is-primary">
                             <img
                               class="avatar"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/avatars/photos/11.jpg"
+                              src="/@images/avatars/photos/11.jpg"
                               alt=""
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                           </span>
                         </div>
@@ -445,9 +475,12 @@
                           <span class="avatar is-fake is-primary">
                             <img
                               class="avatar"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/avatars/photos/12.jpg"
+                              src="/@images/avatars/photos/12.jpg"
                               alt=""
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                           </span>
                         </div>
@@ -494,9 +527,12 @@
                           <span class="avatar is-fake is-primary">
                             <img
                               class="avatar"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/avatars/photos/24.jpg"
+                              src="/@images/avatars/photos/24.jpg"
                               alt=""
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                           </span>
                         </div>
@@ -504,9 +540,12 @@
                           <span class="avatar is-fake is-success">
                             <img
                               class="avatar"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/avatars/photos/18.jpg"
+                              src="/@images/avatars/photos/18.jpg"
                               alt=""
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                           </span>
                         </div>
@@ -514,9 +553,12 @@
                           <span class="avatar is-fake is-success">
                             <img
                               class="avatar"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/avatars/photos/16.jpg"
+                              src="/@images/avatars/photos/16.jpg"
                               alt=""
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                           </span>
                         </div>
@@ -615,9 +657,12 @@
                           <span class="avatar">
                             <img
                               class="avatar"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/avatars/photos/25.jpg"
+                              src="/@images/avatars/photos/25.jpg"
                               alt=""
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                           </span>
                         </div>

@@ -1,4 +1,4 @@
-/*! _tooltips.scss | Huro | Css ninja 2020-2021 */
+/*! _tooltips.scss | Vuero | Css ninja 2020-2021 */
 
 /*
     1. CSS Tooltips
@@ -15,8 +15,8 @@
   cursor: pointer;
 }
 
-[class*='hint--']:before,
-[class*='hint--']:after {
+[class*='hint--']::before,
+[class*='hint--']::after {
   position: absolute;
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
@@ -33,20 +33,20 @@
   transition-delay: 0ms;
 }
 
-[class*='hint--']:hover:before,
-[class*='hint--']:hover:after {
+[class*='hint--']:hover::before,
+[class*='hint--']:hover::after {
   visibility: visible;
   opacity: 1;
 }
 
-[class*='hint--']:hover:before,
-[class*='hint--']:hover:after {
+[class*='hint--']:hover::before,
+[class*='hint--']:hover::after {
   -webkit-transition-delay: 100ms;
   -moz-transition-delay: 100ms;
   transition-delay: 100ms;
 }
 
-[class*='hint--']:before {
+[class*='hint--']::before {
   content: '';
   position: absolute;
   background: transparent;
@@ -54,7 +54,7 @@
   z-index: 1000001;
 }
 
-[class*='hint--']:after {
+[class*='hint--']::after {
   background: #383838;
   color: white;
   padding: 8px 10px;
@@ -64,342 +64,342 @@
   white-space: nowrap;
 }
 
-[class*='hint--'][aria-label]:after {
+[class*='hint--'][aria-label]::after {
   content: attr(aria-label);
 }
 
-[class*='hint--'][data-hint]:after {
+[class*='hint--'][data-hint]::after {
   content: attr(data-hint);
 }
 
-[aria-label='']:before,
-[aria-label='']:after,
-[data-hint='']:before,
-[data-hint='']:after {
+[aria-label='']::before,
+[aria-label='']::after,
+[data-hint='']::before,
+[data-hint='']::after {
   display: none !important;
 }
 
 //Tooltip arrows
-.hint--top-left:before {
+.hint--top-left::before {
   border-top-color: #383838;
 }
 
-.hint--top-right:before {
+.hint--top-right::before {
   border-top-color: #383838;
 }
 
-.hint--top:before {
+.hint--top::before {
   border-top-color: #383838;
 }
 
-.hint--bottom-left:before {
+.hint--bottom-left::before {
   border-bottom-color: #383838;
 }
 
-.hint--bottom-right:before {
+.hint--bottom-right::before {
   border-bottom-color: #383838;
 }
 
-.hint--bottom:before {
+.hint--bottom::before {
   border-bottom-color: #383838;
 }
 
-.hint--left:before {
+.hint--left::before {
   border-left-color: #383838;
 }
 
-.hint--right:before {
+.hint--right::before {
   border-right-color: #383838;
 }
 
 //Top placement
-.hint--top:before {
+.hint--top::before {
   margin-bottom: -11px;
 }
 
-.hint--top:before,
-.hint--top:after {
+.hint--top::before,
+.hint--top::after {
   bottom: 100%;
   left: 50%;
 }
 
-.hint--top:before {
+.hint--top::before {
   left: calc(50% - 6px);
 }
 
-.hint--top:after {
+.hint--top::after {
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 
-.hint--top:hover:before {
+.hint--top:hover::before {
   -webkit-transform: translateY(-8px);
   -moz-transform: translateY(-8px);
   transform: translateY(-8px);
 }
 
-.hint--top:hover:after {
+.hint--top:hover::after {
   -webkit-transform: translateX(-50%) translateY(-8px);
   -moz-transform: translateX(-50%) translateY(-8px);
   transform: translateX(-50%) translateY(-8px);
 }
 
 //Bottom placement
-.hint--bottom:before {
+.hint--bottom::before {
   margin-top: -11px;
 }
 
-.hint--bottom:before,
-.hint--bottom:after {
+.hint--bottom::before,
+.hint--bottom::after {
   top: 100%;
   left: 50%;
 }
 
-.hint--bottom:before {
+.hint--bottom::before {
   left: calc(50% - 6px);
 }
 
-.hint--bottom:after {
+.hint--bottom::after {
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 
-.hint--bottom:hover:before {
+.hint--bottom:hover::before {
   -webkit-transform: translateY(8px);
   -moz-transform: translateY(8px);
   transform: translateY(8px);
 }
 
-.hint--bottom:hover:after {
+.hint--bottom:hover::after {
   -webkit-transform: translateX(-50%) translateY(8px);
   -moz-transform: translateX(-50%) translateY(8px);
   transform: translateX(-50%) translateY(8px);
 }
 
 //Right placement
-.hint--right:before {
+.hint--right::before {
   margin-left: -11px;
   margin-bottom: -6px;
 }
 
-.hint--right:after {
+.hint--right::after {
   margin-bottom: -14px;
 }
 
-.hint--right:before,
-.hint--right:after {
+.hint--right::before,
+.hint--right::after {
   left: 100%;
   bottom: 50%;
 }
 
-.hint--right:hover:before {
+.hint--right:hover::before {
   -webkit-transform: translateX(8px);
   -moz-transform: translateX(8px);
   transform: translateX(8px);
 }
 
-.hint--right:hover:after {
+.hint--right:hover::after {
   -webkit-transform: translateX(8px);
   -moz-transform: translateX(8px);
   transform: translateX(8px);
 }
 
 //Left placement
-.hint--left:before {
+.hint--left::before {
   margin-right: -11px;
   margin-bottom: -6px;
 }
 
-.hint--left:after {
+.hint--left::after {
   margin-bottom: -14px;
 }
 
-.hint--left:before,
-.hint--left:after {
+.hint--left::before,
+.hint--left::after {
   right: 100%;
   bottom: 50%;
 }
 
-.hint--left:hover:before {
+.hint--left:hover::before {
   -webkit-transform: translateX(-8px);
   -moz-transform: translateX(-8px);
   transform: translateX(-8px);
 }
 
-.hint--left:hover:after {
+.hint--left:hover::after {
   -webkit-transform: translateX(-8px);
   -moz-transform: translateX(-8px);
   transform: translateX(-8px);
 }
 
 //Top left placement
-.hint--top-left:before {
+.hint--top-left::before {
   margin-bottom: -11px;
 }
 
-.hint--top-left:before,
-.hint--top-left:after {
+.hint--top-left::before,
+.hint--top-left::after {
   bottom: 100%;
   left: 50%;
 }
 
-.hint--top-left:before {
+.hint--top-left::before {
   left: calc(50% - 6px);
 }
 
-.hint--top-left:after {
+.hint--top-left::after {
   -webkit-transform: translateX(-100%);
   -moz-transform: translateX(-100%);
   transform: translateX(-100%);
 }
 
-.hint--top-left:after {
+.hint--top-left::after {
   margin-left: 12px;
 }
 
-.hint--top-left:hover:before {
+.hint--top-left:hover::before {
   -webkit-transform: translateY(-8px);
   -moz-transform: translateY(-8px);
   transform: translateY(-8px);
 }
 
-.hint--top-left:hover:after {
+.hint--top-left:hover::after {
   -webkit-transform: translateX(-100%) translateY(-8px);
   -moz-transform: translateX(-100%) translateY(-8px);
   transform: translateX(-100%) translateY(-8px);
 }
 
 //Top right placement
-.hint--top-right:before {
+.hint--top-right::before {
   margin-bottom: -11px;
 }
 
-.hint--top-right:before,
-.hint--top-right:after {
+.hint--top-right::before,
+.hint--top-right::after {
   bottom: 100%;
   left: 50%;
 }
 
-.hint--top-right:before {
+.hint--top-right::before {
   left: calc(50% - 6px);
 }
 
-.hint--top-right:after {
+.hint--top-right::after {
   -webkit-transform: translateX(0);
   -moz-transform: translateX(0);
   transform: translateX(0);
 }
 
-.hint--top-right:after {
+.hint--top-right::after {
   margin-left: -12px;
 }
 
-.hint--top-right:hover:before {
+.hint--top-right:hover::before {
   -webkit-transform: translateY(-8px);
   -moz-transform: translateY(-8px);
   transform: translateY(-8px);
 }
 
-.hint--top-right:hover:after {
+.hint--top-right:hover::after {
   -webkit-transform: translateY(-8px);
   -moz-transform: translateY(-8px);
   transform: translateY(-8px);
 }
 
 //Bottom left placement
-.hint--bottom-left:before {
+.hint--bottom-left::before {
   margin-top: -11px;
 }
 
-.hint--bottom-left:before,
-.hint--bottom-left:after {
+.hint--bottom-left::before,
+.hint--bottom-left::after {
   top: 100%;
   left: 50%;
 }
 
-.hint--bottom-left:before {
+.hint--bottom-left::before {
   left: calc(50% - 6px);
 }
 
-.hint--bottom-left:after {
+.hint--bottom-left::after {
   -webkit-transform: translateX(-100%);
   -moz-transform: translateX(-100%);
   transform: translateX(-100%);
 }
 
-.hint--bottom-left:after {
+.hint--bottom-left::after {
   margin-left: 12px;
 }
 
-.hint--bottom-left:hover:before {
+.hint--bottom-left:hover::before {
   -webkit-transform: translateY(8px);
   -moz-transform: translateY(8px);
   transform: translateY(8px);
 }
 
-.hint--bottom-left:hover:after {
+.hint--bottom-left:hover::after {
   -webkit-transform: translateX(-100%) translateY(8px);
   -moz-transform: translateX(-100%) translateY(8px);
   transform: translateX(-100%) translateY(8px);
 }
 
 //Bottom right placement
-.hint--bottom-right:before {
+.hint--bottom-right::before {
   margin-top: -11px;
 }
 
-.hint--bottom-right:before,
-.hint--bottom-right:after {
+.hint--bottom-right::before,
+.hint--bottom-right::after {
   top: 100%;
   left: 50%;
 }
 
-.hint--bottom-right:before {
+.hint--bottom-right::before {
   left: calc(50% - 6px);
 }
 
-.hint--bottom-right:after {
+.hint--bottom-right::after {
   -webkit-transform: translateX(0);
   -moz-transform: translateX(0);
   transform: translateX(0);
 }
 
-.hint--bottom-right:after {
+.hint--bottom-right::after {
   margin-left: -12px;
 }
 
-.hint--bottom-right:hover:before {
+.hint--bottom-right:hover::before {
   -webkit-transform: translateY(8px);
   -moz-transform: translateY(8px);
   transform: translateY(8px);
 }
 
-.hint--bottom-right:hover:after {
+.hint--bottom-right:hover::after {
   -webkit-transform: translateY(8px);
   -moz-transform: translateY(8px);
   transform: translateY(8px);
 }
 
 //Defines tooltip sizes.
-.hint--small:after,
-.hint--medium:after,
-.hint--large:after {
+.hint--small::after,
+.hint--medium::after,
+.hint--large::after {
   white-space: normal;
   line-height: 1.4em;
   word-wrap: break-word;
 }
 
-.hint--small:after {
+.hint--small::after {
   width: 80px;
 }
 
-.hint--medium:after {
+.hint--medium::after {
   width: 150px;
 }
 
-.hint--large:after {
+.hint--large::after {
   width: 300px;
 }
 
@@ -410,392 +410,392 @@
 	 */
 }
 
-[class*='hint--']:after {
+[class*='hint--']::after {
   box-shadow: $light-box-shadow;
 }
 
 //Defines a primary tooltip.
-.hint--primary:after {
+.hint--primary::after {
   background-color: $primary;
 }
 
-.hint--primary.hint--top-left:before {
+.hint--primary.hint--top-left::before {
   border-top-color: $primary;
 }
 
-.hint--primary.hint--top-right:before {
+.hint--primary.hint--top-right::before {
   border-top-color: $primary;
 }
 
-.hint--primary.hint--top:before {
+.hint--primary.hint--top::before {
   border-top-color: $primary;
 }
 
-.hint--primary.hint--bottom-left:before {
+.hint--primary.hint--bottom-left::before {
   border-bottom-color: $primary;
 }
 
-.hint--primary.hint--bottom-right:before {
+.hint--primary.hint--bottom-right::before {
   border-bottom-color: $primary;
 }
 
-.hint--primary.hint--bottom:before {
+.hint--primary.hint--bottom::before {
   border-bottom-color: $primary;
 }
 
-.hint--primary.hint--left:before {
+.hint--primary.hint--left::before {
   border-left-color: $primary;
 }
 
-.hint--primary.hint--right:before {
+.hint--primary.hint--right::before {
   border-right-color: $primary;
 }
 
 //Defines an error tooltip.
-.hint--error:after {
+.hint--error::after {
   background-color: $danger;
 }
 
-.hint--error.hint--top-left:before {
+.hint--error.hint--top-left::before {
   border-top-color: $danger;
 }
 
-.hint--error.hint--top-right:before {
+.hint--error.hint--top-right::before {
   border-top-color: $danger;
 }
 
-.hint--error.hint--top:before {
+.hint--error.hint--top::before {
   border-top-color: $danger;
 }
 
-.hint--error.hint--bottom-left:before {
+.hint--error.hint--bottom-left::before {
   border-bottom-color: $danger;
 }
 
-.hint--error.hint--bottom-right:before {
+.hint--error.hint--bottom-right::before {
   border-bottom-color: $danger;
 }
 
-.hint--error.hint--bottom:before {
+.hint--error.hint--bottom::before {
   border-bottom-color: $danger;
 }
 
-.hint--error.hint--left:before {
+.hint--error.hint--left::before {
   border-left-color: $danger;
 }
 
-.hint--error.hint--right:before {
+.hint--error.hint--right::before {
   border-right-color: $danger;
 }
 
 //Defines a warning tooltip.
-.hint--warning:after {
+.hint--warning::after {
   background-color: $warning;
 }
 
-.hint--warning.hint--top-left:before {
+.hint--warning.hint--top-left::before {
   border-top-color: $warning;
 }
 
-.hint--warning.hint--top-right:before {
+.hint--warning.hint--top-right::before {
   border-top-color: $warning;
 }
 
-.hint--warning.hint--top:before {
+.hint--warning.hint--top::before {
   border-top-color: $warning;
 }
 
-.hint--warning.hint--bottom-left:before {
+.hint--warning.hint--bottom-left::before {
   border-bottom-color: $warning;
 }
 
-.hint--warning.hint--bottom-right:before {
+.hint--warning.hint--bottom-right::before {
   border-bottom-color: $warning;
 }
 
-.hint--warning.hint--bottom:before {
+.hint--warning.hint--bottom::before {
   border-bottom-color: $warning;
 }
 
-.hint--warning.hint--left:before {
+.hint--warning.hint--left::before {
   border-left-color: $warning;
 }
 
-.hint--warning.hint--right:before {
+.hint--warning.hint--right::before {
   border-right-color: $warning;
 }
 
 //Defines an info tooltip.
-.hint--info:after {
+.hint--info::after {
   background-color: $info;
 }
 
-.hint--info.hint--top-left:before {
+.hint--info.hint--top-left::before {
   border-top-color: $info;
 }
 
-.hint--info.hint--top-right:before {
+.hint--info.hint--top-right::before {
   border-top-color: $info;
 }
 
-.hint--info.hint--top:before {
+.hint--info.hint--top::before {
   border-top-color: $info;
 }
 
-.hint--info.hint--bottom-left:before {
+.hint--info.hint--bottom-left::before {
   border-bottom-color: $info;
 }
 
-.hint--info.hint--bottom-right:before {
+.hint--info.hint--bottom-right::before {
   border-bottom-color: $info;
 }
 
-.hint--info.hint--bottom:before {
+.hint--info.hint--bottom::before {
   border-bottom-color: $info;
 }
 
-.hint--info.hint--left:before {
+.hint--info.hint--left::before {
   border-left-color: $info;
 }
 
-.hint--info.hint--right:before {
+.hint--info.hint--right::before {
   border-right-color: $info;
 }
 
 //Defines a success tooltip.
-.hint--success:after {
+.hint--success::after {
   background-color: $success;
 }
 
-.hint--success.hint--top-left:before {
+.hint--success.hint--top-left::before {
   border-top-color: $success;
 }
 
-.hint--success.hint--top-right:before {
+.hint--success.hint--top-right::before {
   border-top-color: $success;
 }
 
-.hint--success.hint--top:before {
+.hint--success.hint--top::before {
   border-top-color: $success;
 }
 
-.hint--success.hint--bottom-left:before {
+.hint--success.hint--bottom-left::before {
   border-bottom-color: $success;
 }
 
-.hint--success.hint--bottom-right:before {
+.hint--success.hint--bottom-right::before {
   border-bottom-color: $success;
 }
 
-.hint--success.hint--bottom:before {
+.hint--success.hint--bottom::before {
   border-bottom-color: $success;
 }
 
-.hint--success.hint--left:before {
+.hint--success.hint--left::before {
   border-left-color: $success;
 }
 
-.hint--success.hint--right:before {
+.hint--success.hint--right::before {
   border-right-color: $success;
 }
 
 //Defines a light tooltip.
-.hint--light:after {
+.hint--light::after {
   background-color: $white;
   color: $dark-text !important;
-  box-shadow: 0px 5px 15px 0px rgba(39, 26, 54, 0.15);
+  box-shadow: 0 5px 15px 0 rgba(39, 26, 54, 0.15);
 }
 
-.hint--light.hint--top-left:before {
+.hint--light.hint--top-left::before {
   border-top-color: $white;
 }
 
-.hint--light.hint--top-right:before {
+.hint--light.hint--top-right::before {
   border-top-color: $white;
 }
 
-.hint--light.hint--top:before {
+.hint--light.hint--top::before {
   border-top-color: $white;
 }
 
-.hint--light.hint--bottom-left:before {
+.hint--light.hint--bottom-left::before {
   border-bottom-color: $white;
 }
 
-.hint--light.hint--bottom-right:before {
+.hint--light.hint--bottom-right::before {
   border-bottom-color: $white;
 }
 
-.hint--light.hint--bottom:before {
+.hint--light.hint--bottom::before {
   border-bottom-color: $white;
 }
 
-.hint--light.hint--left:before {
+.hint--light.hint--left::before {
   border-left-color: $white;
 }
 
-.hint--light.hint--right:before {
+.hint--light.hint--right::before {
   border-right-color: $white;
 }
 
 //Defines a bubble shape tooltip.
-.hint--bubble:after {
+.hint--bubble::after {
   //background-color: $primary;
   border-radius: 100px !important;
   font-size: 0.6rem !important;
   text-transform: uppercase !important;
 }
 
-.hint--bubble.hint--top-left:before {
+.hint--bubble.hint--top-left::before {
   display: none;
 }
 
-.hint--bubble.hint--top-right:before {
+.hint--bubble.hint--top-right::before {
   display: none;
 }
 
-.hint--bubble.hint--top:before {
+.hint--bubble.hint--top::before {
   display: none;
 }
 
-.hint--bubble.hint--bottom-left:before {
+.hint--bubble.hint--bottom-left::before {
   display: none;
 }
 
-.hint--bubble.hint--bottom-right:before {
+.hint--bubble.hint--bottom-right::before {
   display: none;
 }
 
-.hint--bubble.hint--bottom:before {
+.hint--bubble.hint--bottom::before {
   display: none;
 }
 
-.hint--bubble.hint--left:before {
+.hint--bubble.hint--left::before {
   display: none;
 }
 
-.hint--bubble.hint--right:before {
+.hint--bubble.hint--right::before {
   display: none;
 }
 
 //Defines a persisted tooltip which shows always.
-.hint--always:after,
-.hint--always:before {
+.hint--always::after,
+.hint--always::before {
   opacity: 1;
   visibility: visible;
 }
 
-.hint--always.hint--top:before {
+.hint--always.hint--top::before {
   -webkit-transform: translateY(-8px);
   -moz-transform: translateY(-8px);
   transform: translateY(-8px);
 }
 
-.hint--always.hint--top:after {
+.hint--always.hint--top::after {
   -webkit-transform: translateX(-50%) translateY(-8px);
   -moz-transform: translateX(-50%) translateY(-8px);
   transform: translateX(-50%) translateY(-8px);
 }
 
-.hint--always.hint--top-left:before {
+.hint--always.hint--top-left::before {
   -webkit-transform: translateY(-8px);
   -moz-transform: translateY(-8px);
   transform: translateY(-8px);
 }
 
-.hint--always.hint--top-left:after {
+.hint--always.hint--top-left::after {
   -webkit-transform: translateX(-100%) translateY(-8px);
   -moz-transform: translateX(-100%) translateY(-8px);
   transform: translateX(-100%) translateY(-8px);
 }
 
-.hint--always.hint--top-right:before {
+.hint--always.hint--top-right::before {
   -webkit-transform: translateY(-8px);
   -moz-transform: translateY(-8px);
   transform: translateY(-8px);
 }
 
-.hint--always.hint--top-right:after {
+.hint--always.hint--top-right::after {
   -webkit-transform: translateY(-8px);
   -moz-transform: translateY(-8px);
   transform: translateY(-8px);
 }
 
-.hint--always.hint--bottom:before {
+.hint--always.hint--bottom::before {
   -webkit-transform: translateY(8px);
   -moz-transform: translateY(8px);
   transform: translateY(8px);
 }
 
-.hint--always.hint--bottom:after {
+.hint--always.hint--bottom::after {
   -webkit-transform: translateX(-50%) translateY(8px);
   -moz-transform: translateX(-50%) translateY(8px);
   transform: translateX(-50%) translateY(8px);
 }
 
-.hint--always.hint--bottom-left:before {
+.hint--always.hint--bottom-left::before {
   -webkit-transform: translateY(8px);
   -moz-transform: translateY(8px);
   transform: translateY(8px);
 }
 
-.hint--always.hint--bottom-left:after {
+.hint--always.hint--bottom-left::after {
   -webkit-transform: translateX(-100%) translateY(8px);
   -moz-transform: translateX(-100%) translateY(8px);
   transform: translateX(-100%) translateY(8px);
 }
 
-.hint--always.hint--bottom-right:before {
+.hint--always.hint--bottom-right::before {
   -webkit-transform: translateY(8px);
   -moz-transform: translateY(8px);
   transform: translateY(8px);
 }
 
-.hint--always.hint--bottom-right:after {
+.hint--always.hint--bottom-right::after {
   -webkit-transform: translateY(8px);
   -moz-transform: translateY(8px);
   transform: translateY(8px);
 }
 
-.hint--always.hint--left:before {
+.hint--always.hint--left::before {
   -webkit-transform: translateX(-8px);
   -moz-transform: translateX(-8px);
   transform: translateX(-8px);
 }
 
-.hint--always.hint--left:after {
+.hint--always.hint--left::after {
   -webkit-transform: translateX(-8px);
   -moz-transform: translateX(-8px);
   transform: translateX(-8px);
 }
 
-.hint--always.hint--right:before {
+.hint--always.hint--right::before {
   -webkit-transform: translateX(8px);
   -moz-transform: translateX(8px);
   transform: translateX(8px);
 }
 
-.hint--always.hint--right:after {
+.hint--always.hint--right::after {
   -webkit-transform: translateX(8px);
   -moz-transform: translateX(8px);
   transform: translateX(8px);
 }
 
 //Defines slightly rounded corner tooltips.
-.hint--rounded:after {
+.hint--rounded::after {
   border-radius: 4px;
 }
 
 //Defines various transition effects for the tooltips.
-.hint--no-animate:before,
-.hint--no-animate:after {
+.hint--no-animate::before,
+.hint--no-animate::after {
   -webkit-transition-duration: 0ms;
   -moz-transition-duration: 0ms;
   transition-duration: 0ms;
 }
 
-.hint--bounce:before,
-.hint--bounce:after {
+.hint--bounce::before,
+.hint--bounce::after {
   -webkit-transition: opacity 0.3s ease, visibility 0.3s ease,
     -webkit-transform 0.3s cubic-bezier(0.71, 1.7, 0.77, 1.24);
   -moz-transition: opacity 0.3s ease, visibility 0.3s ease,
@@ -804,8 +804,8 @@
     transform 0.3s cubic-bezier(0.71, 1.7, 0.77, 1.24);
 }
 
-.hint--no-shadow:before,
-.hint--no-shadow:after {
+.hint--no-shadow::before,
+.hint--no-shadow::after {
   text-shadow: initial;
   box-shadow: initial;
 }
@@ -817,118 +817,118 @@
 body {
   &.is-dark {
     .hint--top-left:not(.hint--light):not(.hint--info):not(.hint--success):not(.hint--warning):not(.hint--error):not(.hint--bubble):not(.hint--primary) {
-      &:after {
+      &::after {
         background: darken($dark-sidebar, 4%) !important;
       }
 
-      &:before {
+      &::before {
         border-top-color: darken($dark-sidebar, 4%);
       }
     }
 
     .hint--top-right:not(.hint--light):not(.hint--info):not(.hint--success):not(.hint--warning):not(.hint--error):not(.hint--bubble):not(.hint--primary) {
-      &:after {
+      &::after {
         background: darken($dark-sidebar, 4%) !important;
       }
 
-      &:before {
+      &::before {
         border-top-color: darken($dark-sidebar, 4%);
       }
     }
 
     .hint--top:not(.hint--light):not(.hint--info):not(.hint--success):not(.hint--warning):not(.hint--error):not(.hint--bubble):not(.hint--primary) {
-      &:after {
+      &::after {
         background: darken($dark-sidebar, 4%) !important;
       }
 
-      &:before {
+      &::before {
         border-top-color: darken($dark-sidebar, 4%);
       }
     }
 
     .hint--bottom-left:not(.hint--light):not(.hint--info):not(.hint--success):not(.hint--warning):not(.hint--error):not(.hint--bubble):not(.hint--primary) {
-      &:after {
+      &::after {
         background: darken($dark-sidebar, 4%) !important;
       }
 
-      &:before {
+      &::before {
         border-bottom-color: darken($dark-sidebar, 4%);
       }
     }
 
     .hint--bottom-right:not(.hint--light):not(.hint--info):not(.hint--success):not(.hint--warning):not(.hint--error):not(.hint--bubble):not(.hint--primary) {
-      &:after {
+      &::after {
         background: darken($dark-sidebar, 4%) !important;
       }
 
-      &:before {
+      &::before {
         border-bottom-color: darken($dark-sidebar, 4%);
       }
     }
 
     .hint--bottom:not(.hint--light):not(.hint--info):not(.hint--success):not(.hint--warning):not(.hint--error):not(.hint--bubble):not(.hint--primary) {
-      &:after {
+      &::after {
         background: darken($dark-sidebar, 4%) !important;
       }
 
-      &:before {
+      &::before {
         border-bottom-color: darken($dark-sidebar, 4%);
       }
     }
 
     .hint--left:not(.hint--light):not(.hint--info):not(.hint--success):not(.hint--warning):not(.hint--error):not(.hint--bubble):not(.hint--primary) {
-      &:after {
+      &::after {
         background: darken($dark-sidebar, 4%) !important;
       }
 
-      &:before {
+      &::before {
         border-left-color: darken($dark-sidebar, 4%);
       }
     }
 
     .hint--right:not(.hint--light):not(.hint--info):not(.hint--success):not(.hint--warning):not(.hint--error):not(.hint--bubble):not(.hint--primary) {
-      &:after {
+      &::after {
         background: darken($dark-sidebar, 4%) !important;
       }
 
-      &:before {
+      &::before {
         border-right-color: darken($dark-sidebar, 4%);
       }
     }
 
-    .hint--primary:after {
+    .hint--primary::after {
       background-color: $accent;
     }
 
-    .hint--primary.hint--top-left:before {
+    .hint--primary.hint--top-left::before {
       border-top-color: $accent;
     }
 
-    .hint--primary.hint--top-right:before {
+    .hint--primary.hint--top-right::before {
       border-top-color: $accent;
     }
 
-    .hint--primary.hint--top:before {
+    .hint--primary.hint--top::before {
       border-top-color: $accent;
     }
 
-    .hint--primary.hint--bottom-left:before {
+    .hint--primary.hint--bottom-left::before {
       border-bottom-color: $accent;
     }
 
-    .hint--primary.hint--bottom-right:before {
+    .hint--primary.hint--bottom-right::before {
       border-bottom-color: $accent;
     }
 
-    .hint--primary.hint--bottom:before {
+    .hint--primary.hint--bottom::before {
       border-bottom-color: $accent;
     }
 
-    .hint--primary.hint--left:before {
+    .hint--primary.hint--left::before {
       border-left-color: $accent;
     }
 
-    .hint--primary.hint--right:before {
+    .hint--primary.hint--right::before {
       border-right-color: $accent;
     }
   }

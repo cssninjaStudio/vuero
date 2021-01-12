@@ -51,10 +51,13 @@
                     <div class="h-avatar is-large">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/13.jpg"
+                        src="/@images/avatars/photos/13.jpg"
                         alt=""
                         data-user-popover="6"
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                     <div class="meta">
@@ -72,9 +75,12 @@
                     <div class="h-avatar is-customer is-large">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/photo/demo/brands/airbnb.svg"
+                        src="/@images/photo/demo/brands/airbnb.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                     <div class="meta">

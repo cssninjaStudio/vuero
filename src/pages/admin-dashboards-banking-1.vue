@@ -194,9 +194,12 @@
                               <div class="box-inner">
                                 <div class="combo-item">
                                   <img
-                                    src="https://via.placeholder.com/150x150"
-                                    data-demo-src="/@images/avatars/photos/8.jpg"
+                                    src="/@images/avatars/photos/8.jpg"
                                     alt=""
+                                    @error="
+                                      $event.target.src =
+                                        'https://via.placeholder.com/150x150'
+                                    "
                                   />
                                   <span class="selected-item"
                                     >Select an account</span
@@ -212,9 +215,12 @@
                                     <li>
                                       <span class="item-icon">
                                         <img
-                                          src="https://via.placeholder.com/150x150"
-                                          data-demo-src="/@images/icons/dashboards/banking/bank-1.svg"
+                                          src="/@images/icons/dashboards/banking/bank-1.svg"
                                           alt=""
+                                          @error="
+                                            $event.target.src =
+                                              'https://via.placeholder.com/150x150'
+                                          "
                                         />
                                       </span>
                                       <span class="item-name"
@@ -227,9 +233,12 @@
                                     <li>
                                       <span class="item-icon">
                                         <img
-                                          src="https://via.placeholder.com/150x150"
-                                          data-demo-src="/@images/icons/dashboards/banking/bank-2.svg"
+                                          src="/@images/icons/dashboards/banking/bank-2.svg"
                                           alt=""
+                                          @error="
+                                            $event.target.src =
+                                              'https://via.placeholder.com/150x150'
+                                          "
                                         />
                                       </span>
                                       <span class="item-name"
@@ -242,9 +251,12 @@
                                     <li>
                                       <span class="item-icon">
                                         <img
-                                          src="https://via.placeholder.com/150x150"
-                                          data-demo-src="/@images/icons/dashboards/banking/bank-3.svg"
+                                          src="/@images/icons/dashboards/banking/bank-3.svg"
                                           alt=""
+                                          @error="
+                                            $event.target.src =
+                                              'https://via.placeholder.com/150x150'
+                                          "
                                         />
                                       </span>
                                       <span class="item-name"
@@ -301,7 +313,7 @@
                           </progress>
                         </div>
                         <p class="context-text">
-                          This is your Huro customer level. Reach out higher
+                          This is your Vuero customer level. Reach out higher
                           levels to unlock achievements, special gifts, and
                           more.
                         </p>
@@ -335,10 +347,13 @@
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/avatars/photos/18.jpg"
+                                src="/@images/avatars/photos/18.jpg"
                                 alt=""
                                 data-user-popover="7"
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="h-avatar is-small">
@@ -352,10 +367,13 @@
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/avatars/photos/7.jpg"
+                                src="/@images/avatars/photos/7.jpg"
                                 alt=""
                                 data-user-popover="0"
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                           </div>
@@ -375,9 +393,12 @@
                                 <div class="box-inner">
                                   <div class="combo-item">
                                     <img
-                                      src="https://via.placeholder.com/150x150"
-                                      data-demo-src="/@images/avatars/photos/8.jpg"
+                                      src="/@images/avatars/photos/8.jpg"
                                       alt=""
+                                      @error="
+                                        $event.target.src =
+                                          'https://via.placeholder.com/150x150'
+                                      "
                                     />
                                     <span class="selected-item"
                                       >Select an account</span
@@ -393,9 +414,12 @@
                                       <li>
                                         <span class="item-icon">
                                           <img
-                                            src="https://via.placeholder.com/150x150"
-                                            data-demo-src="/@images/icons/dashboards/banking/bank-1.svg"
+                                            src="/@images/icons/dashboards/banking/bank-1.svg"
                                             alt=""
+                                            @error="
+                                              $event.target.src =
+                                                'https://via.placeholder.com/150x150'
+                                            "
                                           />
                                         </span>
                                         <span class="item-name"
@@ -408,9 +432,12 @@
                                       <li>
                                         <span class="item-icon">
                                           <img
-                                            src="https://via.placeholder.com/150x150"
-                                            data-demo-src="/@images/icons/dashboards/banking/bank-2.svg"
+                                            src="/@images/icons/dashboards/banking/bank-2.svg"
                                             alt=""
+                                            @error="
+                                              $event.target.src =
+                                                'https://via.placeholder.com/150x150'
+                                            "
                                           />
                                         </span>
                                         <span class="item-name"
@@ -423,9 +450,12 @@
                                       <li>
                                         <span class="item-icon">
                                           <img
-                                            src="https://via.placeholder.com/150x150"
-                                            data-demo-src="/@images/icons/dashboards/banking/bank-3.svg"
+                                            src="/@images/icons/dashboards/banking/bank-3.svg"
                                             alt=""
+                                            @error="
+                                              $event.target.src =
+                                                'https://via.placeholder.com/150x150'
+                                            "
                                           />
                                         </span>
                                         <span class="item-name"

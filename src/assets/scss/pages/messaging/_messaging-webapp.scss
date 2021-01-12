@@ -1,4 +1,4 @@
-/*! _messaging-webapp.scss | Huro | Css ninja 2020-2021 */
+/*! _messaging-webapp.scss | Vuero | Css ninja 2020-2021 */
 
 /* ==========================================================================
 Messaging
@@ -314,7 +314,7 @@ body {
               color: $light-text;
               margin-left: 4px;
 
-              &:before {
+              &::before {
                 content: '•';
                 margin-right: 2px;
               }
@@ -565,13 +565,10 @@ body {
       .chat-area-footer {
         display: flex;
         border-top: 1px solid $border-color;
-        width: 100%;
         padding: 10px 20px;
         align-items: center;
         background-color: $theme-bg-color;
         position: fixed;
-        bottom: 0;
-        left: 0;
         right: 0;
         margin: 0 auto;
         width: calc(100% - 680px);
@@ -898,7 +895,6 @@ body {
           .detail-photo-title {
             display: flex;
             align-items: center;
-            color: $light-text;
             font-weight: 400;
             font-size: 1rem;
             margin-bottom: 20px;

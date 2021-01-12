@@ -41,7 +41,7 @@
             <div class="standard-onboarding">
               <div class="title-wrap">
                 <p>Looks like you're new here</p>
-                <h2>Welcome to Huro. What would you like to do?</h2>
+                <h2>Welcome to Vuero. What would you like to do?</h2>
               </div>
 
               <div class="onboarding-wrap">

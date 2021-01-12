@@ -160,7 +160,7 @@
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'components-plugins-pickaday' }"
+                :to="{ name: 'components-plugins-datepicker' }"
                 class="is-submenu"
                 ><Icon icon="feather:circle" />Datepicker</RouterLink
               >

@@ -76,7 +76,7 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Video Player</h3>
                     <p>
-                      Huro ships with this dead simple, yet solid and
+                      Vuero ships with this dead simple, yet solid and
                       customizable vanilla JS video player. You can change the
                       controls as you'd like and easily customize the styles.
                       We've provided an example below with player toolbar
@@ -85,8 +85,8 @@
                       <a href="https://jonneal.dev/media-player/">here</a>.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner no-padding">

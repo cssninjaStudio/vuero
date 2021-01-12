@@ -1,4 +1,4 @@
-/*! _sidebar-mobile.scss | Huro | Css ninja 2020-2021 */
+/*! _sidebar-mobile.scss | Vuero | Css ninja 2020-2021 */
 
 /*
     1. Mobile Sidebar
@@ -239,7 +239,7 @@
           }
 
           ul {
-            padding: 0px;
+            padding: 0;
             display: none;
 
             li {
@@ -358,7 +358,6 @@
               position: absolute;
               right: -5px;
               bottom: 0;
-              border-radius: 50%;
               border: 2px solid $white;
               height: 16px;
               width: 16px;
@@ -415,7 +414,6 @@
         }
 
         .more-indicator {
-          display: block;
           height: 36px;
           width: 36px;
           min-width: 36px;
@@ -544,7 +542,6 @@
       }
 
       .button {
-        padding: 0.75rem;
         height: 32px;
         width: 32px;
         padding: 0;

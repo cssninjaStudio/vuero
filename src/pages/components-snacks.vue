@@ -71,7 +71,7 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Snacks</h3>
                     <p>
-                      Huro provides a special component called snacks. You can
+                      Vuero provides a special component called snacks. You can
                       use it to display serial data or tag like structured data.
                       Default Snacks have a greyish background color. You can
                       attach any icon in the closing section. The following
@@ -79,8 +79,8 @@
                       markup for more details.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -89,9 +89,12 @@
                         <div class="snack-media">
                           <img
                             class="avatar"
-                            src="https://via.placeholder.com/150x150"
-                            data-demo-src="/@images/photo/demo/misc/buoy.jpg"
+                            src="/@images/photo/demo/misc/buoy.jpg"
                             alt=""
+                            @error="
+                              $event.target.src =
+                                'https://via.placeholder.com/150x150'
+                            "
                           />
                         </div>
                         <span class="snack-text">Support</span>
@@ -104,9 +107,12 @@
                         <div class="snack-media">
                           <img
                             class="avatar"
-                            src="https://via.placeholder.com/150x150"
-                            data-demo-src="/@images/icons/logos/metamovies.svg"
+                            src="/@images/icons/logos/metamovies.svg"
                             alt=""
+                            @error="
+                              $event.target.src =
+                                'https://via.placeholder.com/150x150'
+                            "
                           />
                         </div>
                         <span class="snack-text">Metamovies</span>
@@ -119,9 +125,12 @@
                         <div class="snack-media">
                           <img
                             class="avatar"
-                            src="https://via.placeholder.com/150x150"
-                            data-demo-src="/@images/avatars/photos/7.jpg"
+                            src="/@images/avatars/photos/7.jpg"
                             alt=""
+                            @error="
+                              $event.target.src =
+                                'https://via.placeholder.com/150x150'
+                            "
                           />
                         </div>
                         <span class="snack-text">Corporate</span>
@@ -134,9 +143,12 @@
                         <div class="snack-media">
                           <img
                             class="avatar"
-                            src="https://via.placeholder.com/150x150"
-                            data-demo-src="/@images/icons/flags/united-states-of-america.svg"
+                            src="/@images/icons/flags/united-states-of-america.svg"
                             alt=""
+                            @error="
+                              $event.target.src =
+                                'https://via.placeholder.com/150x150'
+                            "
                           />
                         </div>
                         <span class="snack-text">English</span>
@@ -149,9 +161,12 @@
                         <div class="snack-media">
                           <img
                             class="avatar"
-                            src="https://via.placeholder.com/150x150"
-                            data-demo-src="/@images/icons/logos/slicer.svg"
+                            src="/@images/icons/logos/slicer.svg"
                             alt=""
+                            @error="
+                              $event.target.src =
+                                'https://via.placeholder.com/150x150'
+                            "
                           />
                         </div>
                         <span class="snack-text">Slicer</span>
@@ -224,7 +239,7 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">White Snacks</h3>
                     <p>
-                      Huro provides a special component called snacks. You can
+                      Vuero provides a special component called snacks. You can
                       use it to display serial data or tag like structured data.
                       Whereas default Snacks have a greyish background color,
                       you can make them white by using the
@@ -233,8 +248,8 @@
                       use snacks with images. Check the markup for more details.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -243,9 +258,12 @@
                         <div class="snack-media">
                           <img
                             class="avatar"
-                            src="https://via.placeholder.com/150x150"
-                            data-demo-src="/@images/photo/demo/misc/buoy.jpg"
+                            src="/@images/photo/demo/misc/buoy.jpg"
                             alt=""
+                            @error="
+                              $event.target.src =
+                                'https://via.placeholder.com/150x150'
+                            "
                           />
                         </div>
                         <span class="snack-text">Support</span>
@@ -258,9 +276,12 @@
                         <div class="snack-media">
                           <img
                             class="avatar"
-                            src="https://via.placeholder.com/150x150"
-                            data-demo-src="/@images/icons/logos/metamovies.svg"
+                            src="/@images/icons/logos/metamovies.svg"
                             alt=""
+                            @error="
+                              $event.target.src =
+                                'https://via.placeholder.com/150x150'
+                            "
                           />
                         </div>
                         <span class="snack-text">Metamovies</span>
@@ -273,9 +294,12 @@
                         <div class="snack-media">
                           <img
                             class="avatar"
-                            src="https://via.placeholder.com/150x150"
-                            data-demo-src="/@images/avatars/photos/25.jpg"
+                            src="/@images/avatars/photos/25.jpg"
                             alt=""
+                            @error="
+                              $event.target.src =
+                                'https://via.placeholder.com/150x150'
+                            "
                           />
                         </div>
                         <span class="snack-text">Corporate</span>
@@ -288,9 +312,12 @@
                         <div class="snack-media">
                           <img
                             class="avatar"
-                            src="https://via.placeholder.com/150x150"
-                            data-demo-src="/@images/icons/flags/united-states-of-america.svg"
+                            src="/@images/icons/flags/united-states-of-america.svg"
                             alt=""
+                            @error="
+                              $event.target.src =
+                                'https://via.placeholder.com/150x150'
+                            "
                           />
                         </div>
                         <span class="snack-text">English</span>
@@ -303,9 +330,12 @@
                         <div class="snack-media">
                           <img
                             class="avatar"
-                            src="https://via.placeholder.com/150x150"
-                            data-demo-src="/@images/icons/logos/slicer.svg"
+                            src="/@images/icons/logos/slicer.svg"
                             alt=""
+                            @error="
+                              $event.target.src =
+                                'https://via.placeholder.com/150x150'
+                            "
                           />
                         </div>
                         <span class="snack-text">Slicer</span>
@@ -387,8 +417,8 @@
                       <code>is-danger</code>. Check the markup for more details.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -408,7 +438,7 @@
 
                       <div class="snack">
                         <div class="snack-media is-icon is-primary">
-                          <i class="snack-icon" data-feather="smile"></i>
+                          <Icon icon="feather:smile" class="snack-icon" />
                         </div>
                         <span class="snack-text">Emotions</span>
                         <span class="snack-action">
@@ -418,7 +448,7 @@
 
                       <div class="snack is-white">
                         <div class="snack-media is-icon is-success">
-                          <i class="snack-icon" data-feather="life-buoy"></i>
+                          <Icon icon="feather:life-buoy" class="snack-icon" />
                         </div>
                         <span class="snack-text">Support</span>
                         <span class="snack-action">
@@ -428,7 +458,7 @@
 
                       <div class="snack">
                         <div class="snack-media is-icon is-info">
-                          <i class="snack-icon" data-feather="briefcase"></i>
+                          <Icon icon="feather:briefcase" class="snack-icon" />
                         </div>
                         <span class="snack-text">Business</span>
                         <span class="snack-action">
@@ -451,7 +481,7 @@
 
                       <div class="snack is-white">
                         <div class="snack-media is-icon is-danger">
-                          <i class="snack-icon" data-feather="thermometer"></i>
+                          <Icon icon="feather:thermometer" class="snack-icon" />
                         </div>
                         <span class="snack-text">Heath</span>
                         <span class="snack-action">
@@ -544,15 +574,15 @@
                       markup for more details.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
                     <div class="snacks">
                       <div class="snack">
                         <div class="snack-media is-icon is-primary is-solid">
-                          <i class="snack-icon" data-feather="smile"></i>
+                          <Icon icon="feather:smile" class="snack-icon" />
                         </div>
                         <span class="snack-text">Emotions</span>
                         <span class="snack-action">
@@ -562,7 +592,7 @@
 
                       <div class="snack is-white">
                         <div class="snack-media is-icon is-success is-solid">
-                          <i class="snack-icon" data-feather="life-buoy"></i>
+                          <Icon icon="feather:life-buoy" class="snack-icon" />
                         </div>
                         <span class="snack-text">Support</span>
                         <span class="snack-action">
@@ -572,7 +602,7 @@
 
                       <div class="snack">
                         <div class="snack-media is-icon is-info is-solid">
-                          <i class="snack-icon" data-feather="briefcase"></i>
+                          <Icon icon="feather:briefcase" class="snack-icon" />
                         </div>
                         <span class="snack-text">Business</span>
                         <span class="snack-action">
@@ -595,7 +625,7 @@
 
                       <div class="snack is-white">
                         <div class="snack-media is-icon is-danger is-solid">
-                          <i class="snack-icon" data-feather="thermometer"></i>
+                          <Icon icon="feather:thermometer" class="snack-icon" />
                         </div>
                         <span class="snack-text">Heath</span>
                         <span class="snack-action">
@@ -676,8 +706,8 @@
                       <code>is-danger</code>. Check the markup for more details.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -827,8 +857,8 @@
                       markup for more details.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -956,8 +986,8 @@
                       <code>is-danger</code>. Check the markup for more details.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -1107,8 +1137,8 @@
                       markup for more details.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -1233,8 +1263,8 @@
                       <code>snack</code> element.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -1243,9 +1273,12 @@
                         <div class="snack-media">
                           <img
                             class="avatar"
-                            src="https://via.placeholder.com/150x150"
-                            data-demo-src="/@images/photo/demo/misc/buoy.jpg"
+                            src="/@images/photo/demo/misc/buoy.jpg"
                             alt=""
+                            @error="
+                              $event.target.src =
+                                'https://via.placeholder.com/150x150'
+                            "
                           />
                         </div>
                         <span class="snack-text">Support</span>
@@ -1258,9 +1291,12 @@
                         <div class="snack-media">
                           <img
                             class="avatar"
-                            src="https://via.placeholder.com/150x150"
-                            data-demo-src="/@images/icons/logos/metamovies.svg"
+                            src="/@images/icons/logos/metamovies.svg"
                             alt=""
+                            @error="
+                              $event.target.src =
+                                'https://via.placeholder.com/150x150'
+                            "
                           />
                         </div>
                         <span class="snack-text">Metamovies</span>
@@ -1273,9 +1309,12 @@
                         <div class="snack-media">
                           <img
                             class="avatar"
-                            src="https://via.placeholder.com/150x150"
-                            data-demo-src="/@images/avatars/photos/18.jpg"
+                            src="/@images/avatars/photos/18.jpg"
                             alt=""
+                            @error="
+                              $event.target.src =
+                                'https://via.placeholder.com/150x150'
+                            "
                           />
                         </div>
                         <span class="snack-text">Corporate</span>
@@ -1288,9 +1327,12 @@
                         <div class="snack-media">
                           <img
                             class="avatar"
-                            src="https://via.placeholder.com/150x150"
-                            data-demo-src="/@images/icons/flags/united-states-of-america.svg"
+                            src="/@images/icons/flags/united-states-of-america.svg"
                             alt=""
+                            @error="
+                              $event.target.src =
+                                'https://via.placeholder.com/150x150'
+                            "
                           />
                         </div>
                         <span class="snack-text">English</span>
@@ -1303,9 +1345,12 @@
                         <div class="snack-media">
                           <img
                             class="avatar"
-                            src="https://via.placeholder.com/150x150"
-                            data-demo-src="/@images/icons/logos/slicer.svg"
+                            src="/@images/icons/logos/slicer.svg"
                             alt=""
+                            @error="
+                              $event.target.src =
+                                'https://via.placeholder.com/150x150'
+                            "
                           />
                         </div>
                         <span class="snack-text">Slicer</span>
@@ -1384,15 +1429,15 @@
                       <code>snack</code> element.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
                     <div class="snacks">
                       <div class="snack is-small">
                         <div class="snack-media is-icon is-primary">
-                          <i class="snack-icon" data-feather="smile"></i>
+                          <Icon icon="feather:smile" class="snack-icon" />
                         </div>
                         <span class="snack-text">Emotions</span>
                         <span class="snack-action">
@@ -1402,7 +1447,7 @@
 
                       <div class="snack is-white is-small">
                         <div class="snack-media is-icon is-success is-solid">
-                          <i class="snack-icon" data-feather="life-buoy"></i>
+                          <Icon icon="feather:life-buoy" class="snack-icon" />
                         </div>
                         <span class="snack-text">Support</span>
                         <span class="snack-action">
@@ -1412,7 +1457,7 @@
 
                       <div class="snack is-small">
                         <div class="snack-media is-icon is-info">
-                          <i class="snack-icon" data-feather="briefcase"></i>
+                          <Icon icon="feather:briefcase" class="snack-icon" />
                         </div>
                         <span class="snack-text">Business</span>
                         <span class="snack-action">
@@ -1435,7 +1480,7 @@
 
                       <div class="snack is-white is-small">
                         <div class="snack-media is-icon is-danger">
-                          <i class="snack-icon" data-feather="thermometer"></i>
+                          <Icon icon="feather:thermometer" class="snack-icon" />
                         </div>
                         <span class="snack-text">Heath</span>
                         <span class="snack-action">

@@ -71,14 +71,14 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Tabs</h3>
                     <p>
-                      Huro provides styled navigation tabs that you can use to
+                      Vuero provides styled navigation tabs that you can use to
                       build nice looking and optimized layouts. Tabs work with a
                       javascript implementation. Check the markup for more
                       details.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -162,15 +162,15 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Centered Tabs</h3>
                     <p>
-                      Huro provides styled navigation tabs that you can use to
+                      Vuero provides styled navigation tabs that you can use to
                       build nice looking and optimized layouts. Tabs work with a
                       javascript implementation. Use the
                       <code>is-centered</code> class to center align the tabs.
                       Check the markup for more details.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -254,15 +254,15 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Right Tabs</h3>
                     <p>
-                      Huro provides styled navigation tabs that you can use to
+                      Vuero provides styled navigation tabs that you can use to
                       build nice looking and optimized layouts. Use the
                       <code>is-right</code> class to center align the tabs on
                       the right. Tabs work with a javascript implementation.
                       Check the markup for more details.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -351,8 +351,8 @@
                       add the icons you want. Check the markup for more details.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -469,8 +469,8 @@
                       add the icons you want. Check the markup for more details.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -587,8 +587,8 @@
                       the icons you want. Check the markup for more details.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -706,8 +706,8 @@
                       more details.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -797,8 +797,8 @@
                       for more details.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -890,8 +890,8 @@
                       details.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">

@@ -76,7 +76,7 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Video Gallery</h3>
                     <p>
-                      Huro is integrated with LightgalleryJs, a performant
+                      Vuero is integrated with LightgalleryJs, a performant
                       vanilla javascript lightbox library. You can check the
                       plugin documentation on
                       <a href="https://github.com/sachinchoolur/lightgallery.js"
@@ -87,8 +87,8 @@
                       also with Vimeo.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner no-padding">
@@ -146,9 +146,11 @@ lightGallery(document.getElementById(&#x27;videogallery&#x27;));
                   </div>
                 </div>
                 <img
-                  src="https://via.placeholder.com/800x600"
-                  data-demo-src="/@images/photo/video/poster/1.jpg"
+                  src="/@images/photo/video/poster/1.jpg"
                   alt=""
+                  @error="
+                    $event.target.src = 'https://via.placeholder.com/800x600'
+                  "
                 />
               </a>
               <a
@@ -162,9 +164,11 @@ lightGallery(document.getElementById(&#x27;videogallery&#x27;));
                   </div>
                 </div>
                 <img
-                  src="https://via.placeholder.com/800x600"
-                  data-demo-src="/@images/photo/video/poster/2.jpg"
+                  src="/@images/photo/video/poster/2.jpg"
                   alt=""
+                  @error="
+                    $event.target.src = 'https://via.placeholder.com/800x600'
+                  "
                 />
               </a>
               <a
@@ -178,9 +182,11 @@ lightGallery(document.getElementById(&#x27;videogallery&#x27;));
                   </div>
                 </div>
                 <img
-                  src="https://via.placeholder.com/800x600"
-                  data-demo-src="/@images/photo/video/poster/3.jpg"
+                  src="/@images/photo/video/poster/3.jpg"
                   alt=""
+                  @error="
+                    $event.target.src = 'https://via.placeholder.com/800x600'
+                  "
                 />
               </a>
               <a
@@ -194,9 +200,11 @@ lightGallery(document.getElementById(&#x27;videogallery&#x27;));
                   </div>
                 </div>
                 <img
-                  src="https://via.placeholder.com/800x600"
-                  data-demo-src="/@images/photo/video/poster/4.jpg"
+                  src="/@images/photo/video/poster/4.jpg"
                   alt=""
+                  @error="
+                    $event.target.src = 'https://via.placeholder.com/800x600'
+                  "
                 />
               </a>
               <a
@@ -210,9 +218,11 @@ lightGallery(document.getElementById(&#x27;videogallery&#x27;));
                   </div>
                 </div>
                 <img
-                  src="https://via.placeholder.com/800x600"
-                  data-demo-src="/@images/photo/video/poster/5.jpg"
+                  src="/@images/photo/video/poster/5.jpg"
                   alt=""
+                  @error="
+                    $event.target.src = 'https://via.placeholder.com/800x600'
+                  "
                 />
               </a>
               <a
@@ -226,9 +236,11 @@ lightGallery(document.getElementById(&#x27;videogallery&#x27;));
                   </div>
                 </div>
                 <img
-                  src="https://via.placeholder.com/800x600"
-                  data-demo-src="/@images/photo/video/poster/6.jpg"
+                  src="/@images/photo/video/poster/6.jpg"
                   alt=""
+                  @error="
+                    $event.target.src = 'https://via.placeholder.com/800x600'
+                  "
                 />
               </a>
               <a
@@ -242,9 +254,11 @@ lightGallery(document.getElementById(&#x27;videogallery&#x27;));
                   </div>
                 </div>
                 <img
-                  src="https://via.placeholder.com/800x600"
-                  data-demo-src="/@images/photo/video/poster/7.jpg"
+                  src="/@images/photo/video/poster/7.jpg"
                   alt=""
+                  @error="
+                    $event.target.src = 'https://via.placeholder.com/800x600'
+                  "
                 />
               </a>
               <a
@@ -258,9 +272,11 @@ lightGallery(document.getElementById(&#x27;videogallery&#x27;));
                   </div>
                 </div>
                 <img
-                  src="https://via.placeholder.com/800x600"
-                  data-demo-src="/@images/photo/video/poster/8.jpg"
+                  src="/@images/photo/video/poster/8.jpg"
                   alt=""
+                  @error="
+                    $event.target.src = 'https://via.placeholder.com/800x600'
+                  "
                 />
               </a>
               <a
@@ -274,9 +290,11 @@ lightGallery(document.getElementById(&#x27;videogallery&#x27;));
                   </div>
                 </div>
                 <img
-                  src="https://via.placeholder.com/800x600"
-                  data-demo-src="/@images/photo/video/poster/9.jpg"
+                  src="/@images/photo/video/poster/9.jpg"
                   alt=""
+                  @error="
+                    $event.target.src = 'https://via.placeholder.com/800x600'
+                  "
                 />
               </a>
             </div>

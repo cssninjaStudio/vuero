@@ -76,21 +76,21 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Text Popover</h3>
                     <p>
-                      Huro popovers are a custom implementation of WebUIPopover.
-                      You don't have to write any javascript code, just use the
-                      popover attributes to set your content. The text popover
-                      needs the <code>data-toggle="popover"</code> to be
-                      initilized properly. Check the code example to review the
-                      supported attributes.You can check the plugin
-                      documentation on
+                      Vuero popovers are a custom implementation of
+                      WebUIPopover. You don't have to write any javascript code,
+                      just use the popover attributes to set your content. The
+                      text popover needs the
+                      <code>data-toggle="popover"</code> to be initilized
+                      properly. Check the code example to review the supported
+                      attributes.You can check the plugin documentation on
                       <a href="https://github.com/sandywalker/webui-popover"
                         >Github</a
                       >. You can also access the javascript code by visiting the
                       <code>assets/js/popover.js</code> file.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -145,7 +145,7 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Popover Position</h3>
                     <p>
-                      Huro popovers support multiple positionning options. Not
+                      Vuero popovers support multiple positionning options. Not
                       that auto positionning is verry reliable and performant.
                       Here are all the possible values: auto, top, right,
                       bottom, left,top-right, top-left, bottom-right,
@@ -153,8 +153,8 @@
                       horizontal, and vertical.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -344,8 +344,8 @@
                       <code>assets/js/popover.js</code> file.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -414,8 +414,8 @@
                       <code>assets/js/popover.js</code> file.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -540,54 +540,69 @@
                       <code>assets/js/popover.js</code> file.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
                     <div class="h-avatar is-medium">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/7.jpg"
+                        src="/@images/avatars/photos/7.jpg"
                         alt=""
                         data-user-popover="0"
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                     <div class="h-avatar is-medium">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/9.jpg"
+                        src="/@images/avatars/photos/9.jpg"
                         alt=""
                         data-user-popover="1"
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                     <div class="h-avatar is-medium">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/12.jpg"
+                        src="/@images/avatars/photos/12.jpg"
                         alt=""
                         data-user-popover="2"
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                     <div class="h-avatar is-medium">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/8.jpg"
+                        src="/@images/avatars/photos/8.jpg"
                         alt=""
                         data-user-popover="3"
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                     <div class="h-avatar is-medium">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/25.jpg"
+                        src="/@images/avatars/photos/25.jpg"
                         alt=""
                         data-user-popover="4"
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
 

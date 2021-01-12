@@ -76,7 +76,7 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Summernote Editor</h3>
                     <p>
-                      Huro ships with Summernote Editor, a nice and easily
+                      Vuero ships with Summernote Editor, a nice and easily
                       customizable jQuery rich text editor
                       <a
                         href="https://summernote.org/getting-started/#without-bootstrap"
@@ -85,8 +85,8 @@
                       looking at our other integrated editor, sun editor.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner no-padding">

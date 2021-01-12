@@ -76,15 +76,15 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Standard Editor</h3>
                     <p>
-                      Huro ships with Sun Editor, a solid vanilla js rich text
+                      Vuero ships with Sun Editor, a solid vanilla js rich text
                       editor alternative. You can read more on sun editor and
                       all the vailable customization options
                       <a href="https://github.com/JiHong88/SunEditor">here</a>.
                       The example below shows a standard sun editor instance.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner no-padding">
@@ -127,8 +127,8 @@ const editor = SUNEDITOR.create((document.getElementById(&#x27;sun-editor&#x27;)
                       about usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner no-padding">

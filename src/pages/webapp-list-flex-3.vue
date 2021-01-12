@@ -94,9 +94,12 @@
                       <div class="flex-table-cell is-media is-grow-lg">
                         <img
                           class="media"
-                          src="https://via.placeholder.com/150x110"
-                          data-demo-src="/@images/photo/demo/courses/1.jpg"
+                          src="/@images/photo/demo/courses/1.jpg"
                           alt=""
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x110'
+                          "
                         />
                         <div>
                           <span
@@ -109,10 +112,13 @@
                               <div class="h-avatar is-small">
                                 <img
                                   class="avatar"
-                                  src="https://via.placeholder.com/150x150"
-                                  data-demo-src="/@images/avatars/photos/8.jpg"
+                                  src="/@images/avatars/photos/8.jpg"
                                   alt=""
                                   data-user-popover="3"
+                                  @error="
+                                    $event.target.src =
+                                      'https://via.placeholder.com/150x150'
+                                  "
                                 />
                               </div>
                               <div class="meta">
@@ -157,9 +163,12 @@
                       <div class="flex-table-cell is-media is-grow-lg">
                         <img
                           class="media"
-                          src="https://via.placeholder.com/150x110"
-                          data-demo-src="/@images/photo/demo/courses/2.png"
+                          src="/@images/photo/demo/courses/2.png"
                           alt=""
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x110'
+                          "
                         />
                         <div>
                           <span
@@ -172,10 +181,13 @@
                               <div class="h-avatar is-small">
                                 <img
                                   class="avatar"
-                                  src="https://via.placeholder.com/150x150"
-                                  data-demo-src="/@images/avatars/photos/12.jpg"
+                                  src="/@images/avatars/photos/12.jpg"
                                   alt=""
                                   data-user-popover="2"
+                                  @error="
+                                    $event.target.src =
+                                      'https://via.placeholder.com/150x150'
+                                  "
                                 />
                               </div>
                               <div class="meta">
@@ -220,9 +232,12 @@
                       <div class="flex-table-cell is-media is-grow-lg">
                         <img
                           class="media"
-                          src="https://via.placeholder.com/150x110"
-                          data-demo-src="/@images/photo/demo/courses/3.jpg"
+                          src="/@images/photo/demo/courses/3.jpg"
                           alt=""
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x110'
+                          "
                         />
                         <div>
                           <span
@@ -235,10 +250,13 @@
                               <div class="h-avatar is-small">
                                 <img
                                   class="avatar"
-                                  src="https://via.placeholder.com/150x150"
-                                  data-demo-src="/@images/avatars/photos/5.jpg"
+                                  src="/@images/avatars/photos/5.jpg"
                                   alt=""
                                   data-user-popover="9"
+                                  @error="
+                                    $event.target.src =
+                                      'https://via.placeholder.com/150x150'
+                                  "
                                 />
                               </div>
                               <div class="meta">
@@ -283,9 +301,12 @@
                       <div class="flex-table-cell is-media is-grow-lg">
                         <img
                           class="media"
-                          src="https://via.placeholder.com/150x110"
-                          data-demo-src="/@images/photo/demo/courses/4.png"
+                          src="/@images/photo/demo/courses/4.png"
                           alt=""
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x110'
+                          "
                         />
                         <div>
                           <span
@@ -298,10 +319,13 @@
                               <div class="h-avatar is-small">
                                 <img
                                   class="avatar"
-                                  src="https://via.placeholder.com/150x150"
-                                  data-demo-src="/@images/avatars/photos/18.jpg"
+                                  src="/@images/avatars/photos/18.jpg"
                                   alt=""
                                   data-user-popover="7"
+                                  @error="
+                                    $event.target.src =
+                                      'https://via.placeholder.com/150x150'
+                                  "
                                 />
                               </div>
                               <div class="meta">
@@ -346,9 +370,12 @@
                       <div class="flex-table-cell is-media is-grow-lg">
                         <img
                           class="media"
-                          src="https://via.placeholder.com/150x110"
-                          data-demo-src="/@images/photo/demo/courses/5.jpeg"
+                          src="/@images/photo/demo/courses/5.jpeg"
                           alt=""
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x110'
+                          "
                         />
                         <div>
                           <span
@@ -361,10 +388,13 @@
                               <div class="h-avatar is-small">
                                 <img
                                   class="avatar"
-                                  src="https://via.placeholder.com/150x150"
-                                  data-demo-src="/@images/avatars/photos/18.jpg"
+                                  src="/@images/avatars/photos/18.jpg"
                                   alt=""
                                   data-user-popover="7"
+                                  @error="
+                                    $event.target.src =
+                                      'https://via.placeholder.com/150x150'
+                                  "
                                 />
                               </div>
                               <div class="meta">
@@ -409,9 +439,12 @@
                       <div class="flex-table-cell is-media is-grow-lg">
                         <img
                           class="media"
-                          src="https://via.placeholder.com/150x110"
-                          data-demo-src="/@images/photo/demo/courses/6.jpg"
+                          src="/@images/photo/demo/courses/6.jpg"
                           alt=""
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x110'
+                          "
                         />
                         <div>
                           <span
@@ -424,10 +457,13 @@
                               <div class="h-avatar is-small">
                                 <img
                                   class="avatar"
-                                  src="https://via.placeholder.com/150x150"
-                                  data-demo-src="/@images/avatars/photos/30.jpg"
+                                  src="/@images/avatars/photos/30.jpg"
                                   alt=""
                                   data-user-popover="26"
+                                  @error="
+                                    $event.target.src =
+                                      'https://via.placeholder.com/150x150'
+                                  "
                                 />
                               </div>
                               <div class="meta">
@@ -472,9 +508,12 @@
                       <div class="flex-table-cell is-media is-grow-lg">
                         <img
                           class="media"
-                          src="https://via.placeholder.com/150x110"
-                          data-demo-src="/@images/photo/demo/courses/7.png"
+                          src="/@images/photo/demo/courses/7.png"
                           alt=""
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x110'
+                          "
                         />
                         <div>
                           <span
@@ -487,10 +526,13 @@
                               <div class="h-avatar is-small">
                                 <img
                                   class="avatar"
-                                  src="https://via.placeholder.com/150x150"
-                                  data-demo-src="/@images/avatars/photos/38.jpg"
+                                  src="/@images/avatars/photos/38.jpg"
                                   alt=""
                                   data-user-popover="32"
+                                  @error="
+                                    $event.target.src =
+                                      'https://via.placeholder.com/150x150'
+                                  "
                                 />
                               </div>
                               <div class="meta">
@@ -535,9 +577,12 @@
                       <div class="flex-table-cell is-media is-grow-lg">
                         <img
                           class="media"
-                          src="https://via.placeholder.com/150x110"
-                          data-demo-src="/@images/photo/demo/courses/9.jpg"
+                          src="/@images/photo/demo/courses/9.jpg"
                           alt=""
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x110'
+                          "
                         />
                         <div>
                           <span
@@ -550,10 +595,13 @@
                               <div class="h-avatar is-small">
                                 <img
                                   class="avatar"
-                                  src="https://via.placeholder.com/150x150"
-                                  data-demo-src="/@images/avatars/photos/30.jpg"
+                                  src="/@images/avatars/photos/30.jpg"
                                   alt=""
                                   data-user-popover="26"
+                                  @error="
+                                    $event.target.src =
+                                      'https://via.placeholder.com/150x150'
+                                  "
                                 />
                               </div>
                               <div class="meta">
@@ -598,9 +646,12 @@
                       <div class="flex-table-cell is-media is-grow-lg">
                         <img
                           class="media"
-                          src="https://via.placeholder.com/150x110"
-                          data-demo-src="/@images/photo/demo/courses/11.jpg"
+                          src="/@images/photo/demo/courses/11.jpg"
                           alt=""
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x110'
+                          "
                         />
                         <div>
                           <span
@@ -613,10 +664,13 @@
                               <div class="h-avatar is-small">
                                 <img
                                   class="avatar"
-                                  src="https://via.placeholder.com/150x150"
-                                  data-demo-src="/@images/avatars/photos/34.jpg"
+                                  src="/@images/avatars/photos/34.jpg"
                                   alt=""
                                   data-user-popover="12"
+                                  @error="
+                                    $event.target.src =
+                                      'https://via.placeholder.com/150x150'
+                                  "
                                 />
                               </div>
                               <div class="meta">
@@ -661,9 +715,12 @@
                       <div class="flex-table-cell is-media is-grow-lg">
                         <img
                           class="media"
-                          src="https://via.placeholder.com/150x110"
-                          data-demo-src="/@images/photo/demo/courses/12.jpg"
+                          src="/@images/photo/demo/courses/12.jpg"
                           alt=""
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x110'
+                          "
                         />
                         <div>
                           <span
@@ -676,10 +733,13 @@
                               <div class="h-avatar is-small">
                                 <img
                                   class="avatar"
-                                  src="https://via.placeholder.com/150x150"
-                                  data-demo-src="/@images/avatars/photos/30.jpg"
+                                  src="/@images/avatars/photos/30.jpg"
                                   alt=""
                                   data-user-popover="26"
+                                  @error="
+                                    $event.target.src =
+                                      'https://via.placeholder.com/150x150'
+                                  "
                                 />
                               </div>
                               <div class="meta">

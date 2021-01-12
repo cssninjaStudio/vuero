@@ -71,9 +71,9 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Theme Colors</h3>
                     <p>
-                      Huro uses predefined SCSS color variables that you can use
-                      if you are using the gulp project or another setup that
-                      includes Sass compilation. SCSS variables are very
+                      Vuero uses predefined SCSS color variables that you can
+                      use if you are using the gulp project or another setup
+                      that includes Sass compilation. SCSS variables are very
                       helpful, as you only need to change the variable value to
                       be able to change a color accross the hole theme. Also,
                       please note that <code>$accent</code> variable is never

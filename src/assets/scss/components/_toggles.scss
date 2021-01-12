@@ -1,4 +1,4 @@
-/*! _toggles.scss | Huro | Css ninja 2020-2021 */
+/*! _toggles.scss | Vuero | Css ninja 2020-2021 */
 
 /*
     1. Sliding Switch
@@ -113,7 +113,7 @@
     top: 0;
     width: 28px;
 
-    &:after {
+    &::after {
       border: 2px solid $white;
       border-top: none;
       border-right: none;
@@ -137,7 +137,7 @@
     border-color: $primary;
   }
 
-  input[type='checkbox']:checked + label:after {
+  input[type='checkbox']:checked + label::after {
     opacity: 1;
   }
 
@@ -147,7 +147,7 @@
       height: 20px;
       width: 20px;
 
-      &:after {
+      &::after {
         left: 4px;
         top: 5px;
         width: 11px;

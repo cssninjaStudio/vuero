@@ -138,28 +138,37 @@
                               <div class="h-avatar">
                                 <img
                                   class="avatar"
-                                  src="https://via.placeholder.com/150x150"
-                                  data-demo-src="/@images/avatars/photos/5.jpg"
+                                  src="/@images/avatars/photos/5.jpg"
                                   alt=""
                                   data-user-popover="9"
+                                  @error="
+                                    $event.target.src =
+                                      'https://via.placeholder.com/150x150'
+                                  "
                                 />
                               </div>
                               <div class="h-avatar">
                                 <img
                                   class="avatar"
-                                  src="https://via.placeholder.com/150x150"
-                                  data-demo-src="/@images/avatars/photos/18.jpg"
+                                  src="/@images/avatars/photos/18.jpg"
                                   alt=""
                                   data-user-popover="7"
+                                  @error="
+                                    $event.target.src =
+                                      'https://via.placeholder.com/150x150'
+                                  "
                                 />
                               </div>
                               <div class="h-avatar">
                                 <img
                                   class="avatar"
-                                  src="https://via.placeholder.com/150x150"
-                                  data-demo-src="/@images/avatars/photos/26.jpg"
+                                  src="/@images/avatars/photos/26.jpg"
                                   alt=""
                                   data-user-popover="23"
+                                  @error="
+                                    $event.target.src =
+                                      'https://via.placeholder.com/150x150'
+                                  "
                                 />
                               </div>
                               <div class="h-avatar">
@@ -279,10 +288,13 @@
                       <div class="h-avatar">
                         <img
                           class="avatar"
-                          src="https://via.placeholder.com/150x150"
-                          data-demo-src="/@images/avatars/photos/32.jpg"
+                          src="/@images/avatars/photos/32.jpg"
                           data-user-popover="28"
                           alt=""
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x150'
+                          "
                         />
                       </div>
                       <div class="flex-meta">
@@ -299,10 +311,13 @@
                       <div class="h-avatar">
                         <img
                           class="avatar"
-                          src="https://via.placeholder.com/150x150"
-                          data-demo-src="/@images/avatars/photos/19.jpg"
+                          src="/@images/avatars/photos/19.jpg"
                           data-user-popover="17"
                           alt=""
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x150'
+                          "
                         />
                       </div>
                       <div class="flex-meta">
@@ -319,10 +334,13 @@
                       <div class="h-avatar">
                         <img
                           class="avatar"
-                          src="https://via.placeholder.com/150x150"
-                          data-demo-src="/@images/avatars/photos/12.jpg"
+                          src="/@images/avatars/photos/12.jpg"
                           data-user-popover="2"
                           alt=""
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x150'
+                          "
                         />
                       </div>
                       <div class="flex-meta">

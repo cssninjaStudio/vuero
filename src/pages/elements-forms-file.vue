@@ -76,14 +76,14 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">File Input</h3>
                     <p>
-                      Huro provides default styles for file inputs, in case you
+                      Vuero provides default styles for file inputs, in case you
                       need a control to upload a single file in your forms. File
                       inputs can look like upload buttons. Please refer to
                       markup for more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -238,14 +238,14 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Boxed File Input</h3>
                     <p>
-                      Huro file inputs can have a boxed style. You just need to
+                      Vuero file inputs can have a boxed style. You just need to
                       add the <code>is-boxed</code> class to your
                       <code>file</code> element to apply this style. Please
                       refer to markup for more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -373,8 +373,8 @@
                       refer to markup for more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -440,8 +440,8 @@
                       refer to markup for more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">

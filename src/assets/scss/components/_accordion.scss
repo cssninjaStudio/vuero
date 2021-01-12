@@ -1,4 +1,4 @@
-/*! _accordion.scss | Huro | Css ninja 2020-2021 */
+/*! _accordion.scss | Vuero | Css ninja 2020-2021 */
 
 /*
     1. Accordion
@@ -13,7 +13,6 @@
 ========================================================================== */
 
 .single-accordion {
-  background: $white;
   background: $white;
   margin: 0 auto;
   box-shadow: $light-box-shadow;
@@ -34,12 +33,12 @@
     }
 
     &.is-active {
-      &:before {
+      &::before {
         background-color: $primary;
       }
     }
 
-    &:before {
+    &::before {
       content: '';
       vertical-align: middle;
       display: inline-block;
@@ -79,12 +78,12 @@ body {
           background: lighten($dark-sidebar, 6%);
         }
 
-        &:before {
+        &::before {
           background: $dark-sidebar;
         }
 
         &.is-active {
-          &:before {
+          &::before {
             background-color: $accent;
           }
         }

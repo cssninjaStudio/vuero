@@ -1,17 +1,9 @@
 <template>
   <nav class="wizard-navigation">
     <RouterLink :to="{ name: 'index' }" class="wizard-brand">
-      <img
-        class="light-image"
-        src="/@images/logos/logo/logo.svg"
-        alt=""
-      />
-      <img
-        class="dark-image"
-        src="/@images/logos/logo/logo-light.svg"
-        alt=""
-      />
-    </a>
+      <img class="light-image" src="/@images/logos/logo/logo.svg" alt="" />
+      <img class="dark-image" src="/@images/logos/logo/logo-light.svg" alt="" />
+    </RouterLink>
 
     <div class="navbar-item is-wizard-title">
       <span class="title-wrap">Step 1: <span>Project Type</span></span>
@@ -90,9 +82,9 @@
         <div class="profile-avatar">
           <img
             class="avatar"
-            src="https://via.placeholder.com/150x150"
-            data-demo-src="/@images/avatars/photos/8.jpg"
+            src="/@images/avatars/photos/8.jpg"
             alt=""
+            @error="$event.target.src = 'https://via.placeholder.com/150x150'"
           />
         </div>
         <Icon icon="feather:chevron-down" />

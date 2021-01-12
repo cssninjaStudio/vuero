@@ -1,4 +1,4 @@
-/*! _links.scss | Huro | Css ninja 2020-2021 */
+/*! _links.scss | Vuero | Css ninja 2020-2021 */
 
 /*
     1. Action Link
@@ -16,7 +16,7 @@
   color: $primary;
   transition: opacity 0.3s;
 
-  &:after {
+  &::after {
     content: '';
     position: absolute;
     bottom: -4px;
@@ -41,7 +41,7 @@ body {
     .action-link {
       color: $accent;
 
-      &:after {
+      &::after {
         border-bottom-color: $accent;
       }
     }

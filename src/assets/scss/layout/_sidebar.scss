@@ -1,4 +1,4 @@
-/*! _sidebar.scss | Huro | Css ninja 2020-2021 */
+/*! _sidebar.scss | Vuero | Css ninja 2020-2021 */
 
 /*
     1. Sidebar
@@ -25,7 +25,7 @@
   }
 
   &.is-open {
-    box-shadow: 2px 0px 2px 0px rgba(0, 0, 0, 0.02);
+    box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.02);
   }
 
   &.is-curved {
@@ -168,7 +168,7 @@
             transition: all 0.3s;
           }
 
-          /*.sidebar-icon {
+          /* .sidebar-icon {
                         height: 28px;
                         width: 28px;
                         transition: all .3s;
@@ -183,7 +183,7 @@
                                 fill: $primary;
                             }
                         }
-                    }*/
+                    } */
 
           &:hover svg,
           &.is-active svg {
@@ -200,14 +200,14 @@
             opacity: 0;
           }
 
-          /*&.is-selected {
+          /* &.is-selected {
                         svg .path {
                             fill: $primary;
                         }
-                    }*/
+                    } */
         }
 
-        /*#open-filters {
+        /* #open-filters {
                     svg {
                         transform: rotate(0);
                         transition: all .3s;
@@ -218,7 +218,7 @@
                             transform: rotate(145deg);
                         }
                     }
-                }*/
+                } */
       }
     }
 

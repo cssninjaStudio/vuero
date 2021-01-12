@@ -71,7 +71,7 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Loader</h3>
                     <p class="m-b-20">
-                      Huro ships with a dead simple and versatile loader. This
+                      Vuero ships with a dead simple and versatile loader. This
                       loader is mostly CSS based and gets activated by toggling
                       a class on the parent with Javascript. The main loader
                       parent wrapper class adds the
@@ -90,8 +90,8 @@
                     </button>
 
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                     <div class="highlight highlight-block">
                       <pre><code class="code-highlight">
@@ -124,16 +124,22 @@ $('.has-loader').addClass('has-loader-active');
                           <div class="h-avatar">
                             <img
                               class="avatar"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/avatars/photos/19.jpg"
+                              src="/@images/avatars/photos/19.jpg"
                               alt=""
                               data-user-popover="17"
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                             <img
                               class="badge"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/icons/flags/germany.svg"
+                              src="/@images/icons/flags/germany.svg"
                               alt=""
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                           </div>
                           <div class="flex-meta">
@@ -211,16 +217,22 @@ $('.has-loader').addClass('has-loader-active');
                           <div class="h-avatar">
                             <img
                               class="avatar"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/avatars/photos/19.jpg"
+                              src="/@images/avatars/photos/19.jpg"
                               alt=""
                               data-user-popover="17"
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                             <img
                               class="badge"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/icons/flags/germany.svg"
+                              src="/@images/icons/flags/germany.svg"
                               alt=""
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                           </div>
                           <div class="flex-meta">
@@ -298,16 +310,22 @@ $('.has-loader').addClass('has-loader-active');
                           <div class="h-avatar">
                             <img
                               class="avatar"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/avatars/photos/19.jpg"
+                              src="/@images/avatars/photos/19.jpg"
                               alt=""
                               data-user-popover="17"
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                             <img
                               class="badge"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/icons/flags/germany.svg"
+                              src="/@images/icons/flags/germany.svg"
                               alt=""
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                           </div>
                           <div class="flex-meta">
@@ -385,16 +403,22 @@ $('.has-loader').addClass('has-loader-active');
                           <div class="h-avatar">
                             <img
                               class="avatar"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/avatars/photos/19.jpg"
+                              src="/@images/avatars/photos/19.jpg"
                               alt=""
                               data-user-popover="17"
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                             <img
                               class="badge"
-                              src="https://via.placeholder.com/150x150"
-                              data-demo-src="/@images/icons/flags/germany.svg"
+                              src="/@images/icons/flags/germany.svg"
                               alt=""
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/150x150'
+                              "
                             />
                           </div>
                           <div class="flex-meta">

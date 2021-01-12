@@ -1,4 +1,4 @@
-/*! _wizard.scss | Huro | Css ninja 2020-2021 */
+/*! _wizard.scss | Vuero | Css ninja 2020-2021 */
 
 /* ==========================================================================
 Wizard Styles
@@ -660,7 +660,7 @@ body {
           display: flex;
           justify-content: center;
           align-items: center;
-          flex: 1 1 0px;
+          flex: 1 1 0;
 
           .budget-item-inner {
             display: flex;
@@ -887,7 +887,7 @@ body {
               display: flex;
               justify-content: center;
               align-items: center;
-              flex: 1 1 0px;
+              flex: 1 1 0;
 
               .inner-action {
                 display: flex;
@@ -1016,7 +1016,6 @@ body {
             .preview {
               img {
                 height: 50px;
-                min-width: 50px;
                 max-width: 50px;
                 min-width: 50px;
                 border-radius: 50%;
@@ -1101,8 +1100,8 @@ body {
               .delete {
                 display: none;
 
-                &:before,
-                &:after {
+                &::before,
+                &::after {
                   display: none !important;
                 }
               }

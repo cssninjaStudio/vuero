@@ -71,15 +71,15 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">H-Button</h3>
                     <p>
-                      Huro provides it's own subset of Bulma buttons. Use the
+                      Vuero provides it's own subset of Bulma buttons. Use the
                       <code>h-button</code> class with a Bulma native
-                      <code>button</code> class to start using Huro buttons.
+                      <code>button</code> class to start using Vuero buttons.
                       Basic modifiers such as <code>is-bold</code> and
                       <code>is-rounded</code> are available.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -108,7 +108,7 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Solid Colors</h3>
                     <p>
-                      Huro buttons can have solid colors. You can use the same
+                      Vuero buttons can have solid colors. You can use the same
                       classes that are offered by the Bulma Framework. Available
                       color classes are <code>is-primary</code>,
                       <code>is-info</code>, <code>is-success</code>,
@@ -116,8 +116,8 @@
                       <code>is-light</code>, <code>is-white</code>.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -155,8 +155,8 @@
                       the <code>is-light</code> modifier class.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -185,13 +185,13 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Outlined Colors</h3>
                     <p>
-                      Huro Buttons can be outlined. Simply use the same markup
+                      Vuero Buttons can be outlined. Simply use the same markup
                       that we have for solid buttons and add the
                       <code>is-outlined</code> modifier class.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -228,14 +228,14 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Elevation</h3>
                     <p>
-                      Huro buttons can handle elevation. For a hover triggered
+                      Vuero buttons can handle elevation. For a hover triggered
                       elevation, add the <code>is-raised</code> modifier class.
                       For a permanent elevation, add the
                       <code>is-elevated</code> modifier class.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -272,13 +272,13 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Loading</h3>
                     <p>
-                      Huro buttons can be shown in a loading state. To show a
+                      Vuero buttons can be shown in a loading state. To show a
                       loading spinner, add the <code>is-loading</code> modifier
                       class.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -319,13 +319,13 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Disabled</h3>
                     <p>
-                      Huro buttons can be shown in a disabled state. To show a
+                      Vuero buttons can be shown in a disabled state. To show a
                       disabled button, add the <code>disabled</code> html
                       attribute to the target button element.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -362,15 +362,15 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Font Awesome</h3>
                     <p>
-                      Huro buttons work well with Font Awesome Icons. Add an
+                      Vuero buttons work well with Font Awesome Icons. Add an
                       <code>icon</code> element inside the button to handle
                       icons. You can also create square and circle buttons with
                       a single icon. Please refer to markup for detailed
                       examples.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -435,15 +435,15 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Feather Icons</h3>
                     <p>
-                      Huro buttons work well with Feather Icons. Add an
+                      Vuero buttons work well with Feather Icons. Add an
                       <code>icon</code> element inside the button to handle
                       icons. You can also create square and circle buttons with
                       a single icon. Please refer to markup for detailed
                       examples.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -513,8 +513,8 @@
                       can mix any button styles.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -571,13 +571,13 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Addons</h3>
                     <p>
-                      Huro buttons can be grouped together in an addon styled
+                      Vuero buttons can be grouped together in an addon styled
                       block of buttons. This makes creating conmplex interfaces
                       much more easier. Refer to markup for a detailed example.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -646,14 +646,14 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">H-Action</h3>
                     <p>
-                      Huro also provides a simple button called
+                      Vuero also provides a simple button called
                       <code>h-action</code>. it doesn't come up with a lot of
                       modifiers like the H Button but is a solid alternative
                       when you want to use simple buttons.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">

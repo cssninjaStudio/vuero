@@ -48,15 +48,21 @@
                       <div class="h-avatar is-large">
                         <img
                           class="avatar"
-                          src="https://via.placeholder.com/150x150"
-                          data-demo-src="/@images/avatars/photos/8.jpg"
+                          src="/@images/avatars/photos/8.jpg"
                           alt=""
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x150'
+                          "
                         />
                         <img
                           class="badge"
-                          src="https://via.placeholder.com/150x150"
-                          data-demo-src="/@images/icons/flags/united-states-of-america.svg"
+                          src="/@images/icons/flags/united-states-of-america.svg"
                           alt=""
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x150'
+                          "
                         />
                       </div>
                       <div class="flex-meta">

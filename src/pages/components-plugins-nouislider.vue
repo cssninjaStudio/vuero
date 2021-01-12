@@ -76,18 +76,19 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Horizontal Slider</h3>
                     <p>
-                      Huro feature NoUI Slider, a powerful and versatile vanilla
-                      js range slider library, with orientation and multiple
-                      handle support. NoUI sliders can have 3 sizes, the default
-                      and 2 smaller ones. Check the code example for more
-                      details about usage.You can check the plugin documentation
+                      Vuero feature NoUI Slider, a powerful and versatile
+                      vanilla js range slider library, with orientation and
+                      multiple handle support. NoUI sliders can have 3 sizes,
+                      the default and 2 smaller ones. Check the code example for
+                      more details about usage.You can check the plugin
+                      documentation
                       <a href="https://refreshless.com/nouislider/">here</a>.
                       You can also access the javascript code by visiting the
                       <code>assets/js/popover.js</code> file.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -168,8 +169,8 @@ for (var i = 0; i &lt; sliders.length; i++) {
                       sizing options as horizontal sliders.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -242,8 +243,8 @@ for (var i = 0; i &lt; sliders.length; i++) {
                       required markup and Javascript.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -292,8 +293,8 @@ noUiSlider.create(sliderRange, {
                       markup and Javascript.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -403,8 +404,8 @@ for (var i = 0; i &lt; sliders.length; i++) {
                       learn more about the required markup and Javascript.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -524,8 +525,8 @@ for (var i = 0; i &lt; sliders.length; i++) {
                       required markup and Javascript.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">

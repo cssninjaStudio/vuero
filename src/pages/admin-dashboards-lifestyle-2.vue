@@ -73,29 +73,38 @@
                               <div class="h-avatar is-small">
                                 <img
                                   class="avatar"
-                                  src="https://via.placeholder.com/150x150"
-                                  data-demo-src="assets/img/avatars/photos/12.jpg"
+                                  src="assets/img/avatars/photos/12.jpg"
                                   alt=""
                                   data-user-popover="2"
                                   data-target="webuiPopover7"
+                                  @error="
+                                    $event.target.src =
+                                      'https://via.placeholder.com/150x150'
+                                  "
                                 />
                               </div>
                               <div class="h-avatar is-small">
                                 <img
                                   class="avatar"
-                                  src="https://via.placeholder.com/150x150"
-                                  data-demo-src="assets/img/avatars/photos/22.jpg"
+                                  src="assets/img/avatars/photos/22.jpg"
                                   alt=""
                                   data-user-popover="5"
+                                  @error="
+                                    $event.target.src =
+                                      'https://via.placeholder.com/150x150'
+                                  "
                                 />
                               </div>
                               <div class="h-avatar is-small">
                                 <img
                                   class="avatar"
-                                  src="https://via.placeholder.com/150x150"
-                                  data-demo-src="assets/img/avatars/photos/40.jpg"
+                                  src="assets/img/avatars/photos/40.jpg"
                                   alt=""
                                   data-user-popover="11"
+                                  @error="
+                                    $event.target.src =
+                                      'https://via.placeholder.com/150x150'
+                                  "
                                 />
                               </div>
                             </div>
@@ -123,30 +132,39 @@
                               <div class="h-avatar is-small">
                                 <img
                                   class="avatar"
-                                  src="https://via.placeholder.com/150x150"
-                                  data-demo-src="assets/img/avatars/photos/7.jpg"
+                                  src="assets/img/avatars/photos/7.jpg"
                                   alt=""
                                   data-user-popover="0"
                                   data-target="webuiPopover32"
+                                  @error="
+                                    $event.target.src =
+                                      'https://via.placeholder.com/150x150'
+                                  "
                                 />
                               </div>
                               <div class="h-avatar is-small">
                                 <img
                                   class="avatar"
-                                  src="https://via.placeholder.com/150x150"
-                                  data-demo-src="assets/img/avatars/photos/23.jpg"
+                                  src="assets/img/avatars/photos/23.jpg"
                                   alt=""
                                   data-user-popover="21"
                                   data-target="webuiPopover0"
+                                  @error="
+                                    $event.target.src =
+                                      'https://via.placeholder.com/150x150'
+                                  "
                                 />
                               </div>
                               <div class="h-avatar is-small">
                                 <img
                                   class="avatar"
-                                  src="https://via.placeholder.com/150x150"
-                                  data-demo-src="assets/img/avatars/photos/18.jpg"
+                                  src="assets/img/avatars/photos/18.jpg"
                                   alt=""
                                   data-user-popover="7"
+                                  @error="
+                                    $event.target.src =
+                                      'https://via.placeholder.com/150x150'
+                                  "
                                 />
                               </div>
                             </div>
@@ -174,30 +192,39 @@
                               <div class="h-avatar is-small">
                                 <img
                                   class="avatar"
-                                  src="https://via.placeholder.com/150x150"
-                                  data-demo-src="assets/img/avatars/photos/32.jpg"
+                                  src="assets/img/avatars/photos/32.jpg"
                                   alt=""
                                   data-user-popover="28"
+                                  @error="
+                                    $event.target.src =
+                                      'https://via.placeholder.com/150x150'
+                                  "
                                 />
                               </div>
                               <div class="h-avatar is-small">
                                 <img
                                   class="avatar"
-                                  src="https://via.placeholder.com/150x150"
-                                  data-demo-src="assets/img/avatars/photos/22.jpg"
+                                  src="assets/img/avatars/photos/22.jpg"
                                   alt=""
                                   data-user-popover="20"
                                   data-target="webuiPopover8"
+                                  @error="
+                                    $event.target.src =
+                                      'https://via.placeholder.com/150x150'
+                                  "
                                 />
                               </div>
                               <div class="h-avatar is-small">
                                 <img
                                   class="avatar"
-                                  src="https://via.placeholder.com/150x150"
-                                  data-demo-src="assets/img/avatars/photos/8.jpg"
+                                  src="assets/img/avatars/photos/8.jpg"
                                   alt=""
                                   data-user-popover="3"
                                   data-target="webuiPopover32"
+                                  @error="
+                                    $event.target.src =
+                                      'https://via.placeholder.com/150x150'
+                                  "
                                 />
                               </div>
                             </div>
@@ -225,29 +252,38 @@
                               <div class="h-avatar is-small">
                                 <img
                                   class="avatar"
-                                  src="https://via.placeholder.com/150x150"
-                                  data-demo-src="assets/img/avatars/photos/27.jpg"
+                                  src="assets/img/avatars/photos/27.jpg"
                                   alt=""
                                   data-user-popover="10"
                                   data-target="webuiPopover3"
+                                  @error="
+                                    $event.target.src =
+                                      'https://via.placeholder.com/150x150'
+                                  "
                                 />
                               </div>
                               <div class="h-avatar is-small">
                                 <img
                                   class="avatar"
-                                  src="https://via.placeholder.com/150x150"
-                                  data-demo-src="assets/img/avatars/photos/16.jpg"
+                                  src="assets/img/avatars/photos/16.jpg"
                                   alt=""
                                   data-user-popover="16"
+                                  @error="
+                                    $event.target.src =
+                                      'https://via.placeholder.com/150x150'
+                                  "
                                 />
                               </div>
                               <div class="h-avatar is-small">
                                 <img
                                   class="avatar"
-                                  src="https://via.placeholder.com/150x150"
-                                  data-demo-src="assets/img/avatars/photos/29.jpg"
+                                  src="assets/img/avatars/photos/29.jpg"
                                   alt=""
                                   data-user-popover="25"
+                                  @error="
+                                    $event.target.src =
+                                      'https://via.placeholder.com/150x150'
+                                  "
                                 />
                               </div>
                             </div>
@@ -273,9 +309,12 @@
                             <div class="h-avatar">
                               <img
                                 class="avatar is-squared"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="assets/img/photo/demo/dashboards/lifestyle/1.jpg"
+                                src="assets/img/photo/demo/dashboards/lifestyle/1.jpg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="flex-meta">
@@ -292,7 +331,7 @@
                               </div>
                               <div class="button is-circle">
                                 <span class="icon is-small">
-                                  <i data-feather="arrow-right"></i>
+                                  <Icon icon="feather:arrow-right" />
                                 </span>
                               </div>
                             </div>
@@ -301,9 +340,12 @@
                             <div class="h-avatar">
                               <img
                                 class="avatar is-squared"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="assets/img/photo/demo/dashboards/lifestyle/2.jpg"
+                                src="assets/img/photo/demo/dashboards/lifestyle/2.jpg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="flex-meta">
@@ -320,7 +362,7 @@
                               </div>
                               <div class="button is-circle">
                                 <span class="icon is-small">
-                                  <i data-feather="arrow-right"></i>
+                                  <Icon icon="feather:arrow-right" />
                                 </span>
                               </div>
                             </div>
@@ -329,9 +371,12 @@
                             <div class="h-avatar">
                               <img
                                 class="avatar is-squared"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="assets/img/photo/demo/dashboards/lifestyle/3.jpg"
+                                src="assets/img/photo/demo/dashboards/lifestyle/3.jpg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="flex-meta">
@@ -348,7 +393,7 @@
                               </div>
                               <div class="button is-circle">
                                 <span class="icon is-small">
-                                  <i data-feather="arrow-right"></i>
+                                  <Icon icon="feather:arrow-right" />
                                 </span>
                               </div>
                             </div>
@@ -357,9 +402,12 @@
                             <div class="h-avatar">
                               <img
                                 class="avatar is-squared"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="assets/img/photo/demo/dashboards/lifestyle/4.jpg"
+                                src="assets/img/photo/demo/dashboards/lifestyle/4.jpg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="flex-meta">
@@ -376,7 +424,7 @@
                               </div>
                               <div class="button is-circle">
                                 <span class="icon is-small">
-                                  <i data-feather="arrow-right"></i>
+                                  <Icon icon="feather:arrow-right" />
                                 </span>
                               </div>
                             </div>
@@ -404,9 +452,12 @@
                             <div class="h-avatar">
                               <img
                                 class="avatar is-squared"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="assets/img/photo/demo/dashboards/lifestyle/5.jpg"
+                                src="assets/img/photo/demo/dashboards/lifestyle/5.jpg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="flex-meta">
@@ -423,7 +474,7 @@
                               </div>
                               <div class="button is-circle">
                                 <span class="icon is-small">
-                                  <i data-feather="arrow-right"></i>
+                                  <Icon icon="feather:arrow-right" />
                                 </span>
                               </div>
                             </div>
@@ -432,9 +483,12 @@
                             <div class="h-avatar">
                               <img
                                 class="avatar is-squared"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="assets/img/photo/demo/dashboards/lifestyle/6.jpg"
+                                src="assets/img/photo/demo/dashboards/lifestyle/6.jpg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="flex-meta">
@@ -451,7 +505,7 @@
                               </div>
                               <div class="button is-circle">
                                 <span class="icon is-small">
-                                  <i data-feather="arrow-right"></i>
+                                  <Icon icon="feather:arrow-right" />
                                 </span>
                               </div>
                             </div>
@@ -460,9 +514,12 @@
                             <div class="h-avatar">
                               <img
                                 class="avatar is-squared"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="assets/img/photo/demo/dashboards/lifestyle/7.jpg"
+                                src="assets/img/photo/demo/dashboards/lifestyle/7.jpg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="flex-meta">
@@ -479,7 +536,7 @@
                               </div>
                               <div class="button is-circle">
                                 <span class="icon is-small">
-                                  <i data-feather="arrow-right"></i>
+                                  <Icon icon="feather:arrow-right" />
                                 </span>
                               </div>
                             </div>
@@ -488,9 +545,12 @@
                             <div class="h-avatar">
                               <img
                                 class="avatar is-squared"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="assets/img/photo/demo/dashboards/lifestyle/8.jpg"
+                                src="assets/img/photo/demo/dashboards/lifestyle/8.jpg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="flex-meta">
@@ -507,7 +567,7 @@
                               </div>
                               <div class="button is-circle">
                                 <span class="icon is-small">
-                                  <i data-feather="arrow-right"></i>
+                                  <Icon icon="feather:arrow-right" />
                                 </span>
                               </div>
                             </div>
@@ -529,7 +589,7 @@
                           placeholder="Search..."
                         />
                         <button class="search-button">
-                          <i data-feather="search"></i>
+                          <Icon icon="feather:search" />
                         </button>
                       </div>
 
@@ -549,7 +609,7 @@
                       </div>
                       <div class="right">
                         <a class="right-icon has-indicator">
-                          <i data-feather="message-square"></i>
+                          <Icon icon="feather:message-square" />
                         </a>
                       </div>
                     </div>

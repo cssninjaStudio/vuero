@@ -71,7 +71,7 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Icon Box</h3>
                     <p>
-                      Huro icon boxes let you display icons in a fancy and
+                      Vuero icon boxes let you display icons in a fancy and
                       colore way. Box sizes can be controled with css classes.
                       Available modifier classes are <code>is-small</code>,
                       <code>is-medium</code>, <code>is-large</code>,
@@ -79,8 +79,8 @@
                       more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -135,7 +135,7 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Box Colors</h3>
                     <p>
-                      Huro icon boxes let you display icons in a fancy and
+                      Vuero icon boxes let you display icons in a fancy and
                       colore way. Box sizes can be controled with css classes.
                       You can change the box colors by using one of the
                       following classes: <code>is-primary</code>,
@@ -147,8 +147,8 @@
                       more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -233,7 +233,7 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Squared Border</h3>
                     <p>
-                      Huro icon boxes let you display icons in a fancy and
+                      Vuero icon boxes let you display icons in a fancy and
                       colore way. Box sizes can be controled with css classes.
                       You can add a colored border around the box by adding the
                       <code>is-bordered</code> class to the
@@ -241,8 +241,8 @@
                       about usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -327,7 +327,7 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Rounded Box</h3>
                     <p>
-                      Huro icon boxes let you display icons in a fancy and
+                      Vuero icon boxes let you display icons in a fancy and
                       colore way. Box sizes can be controled with css classes.
                       You can make the box rounded by adding the
                       <code>is-rounded</code> class to the
@@ -335,8 +335,8 @@
                       about usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -421,7 +421,7 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Rounded Border</h3>
                     <p>
-                      Huro icon boxes let you display icons in a fancy and
+                      Vuero icon boxes let you display icons in a fancy and
                       colore way. Box sizes can be controled with css classes.
                       You can add a colored border around the box by adding the
                       <code>is-bordered</code> class to the
@@ -429,8 +429,8 @@
                       about usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -537,13 +537,13 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Feather Icons</h3>
                     <p>
-                      Huro icon boxes work also very well with Feather Icons
+                      Vuero icon boxes work also very well with Feather Icons
                       icon set. Use the same markup and just replace the
                       existing icons with some from Feather Icons.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -628,13 +628,13 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Font Awesome</h3>
                     <p>
-                      Huro icon boxes work also very well with Font Awesome icon
-                      set. Use the same markup and just replace the existing
-                      icons with some from Font Awesome.
+                      Vuero icon boxes work also very well with Font Awesome
+                      icon set. Use the same markup and just replace the
+                      existing icons with some from Font Awesome.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">

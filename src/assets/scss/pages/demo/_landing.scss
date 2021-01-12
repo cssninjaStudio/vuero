@@ -1,4 +1,4 @@
-/*! _landing.scss | Huro | Css ninja 2020-2021 */
+/*! _landing.scss | Vuero | Css ninja 2020-2021 */
 
 /*
     1. Landing page defaults
@@ -50,8 +50,10 @@ $landing-dark-2: #191c2b;
   .dark-image-block-l {
     display: none !important;
   }
+}
 
-  &.is-dark {
+.is-dark {
+  .landing-page-wrapper {
     background: $landing-dark-1;
 
     .light-image-l {
@@ -179,7 +181,7 @@ $landing-dark-2: #191c2b;
           color: $light-text;
           text-transform: capitalize;
 
-          &:before {
+          &::before {
             content: '';
             position: absolute;
             top: -4px;
@@ -207,7 +209,7 @@ $landing-dark-2: #191c2b;
           &.is-active {
             color: $dark-text;
 
-            &:before {
+            &::before {
               -webkit-transform-origin: left center;
               -ms-transform-origin: left center;
               transform-origin: left center;
@@ -218,7 +220,7 @@ $landing-dark-2: #191c2b;
           }
 
           &.active {
-            &:before {
+            &::before {
               background: $primary;
             }
           }
@@ -321,8 +323,8 @@ $landing-dark-2: #191c2b;
 3. Navigation Dark mode
 ========================================================================== */
 
-.landing-page-wrapper {
-  &.is-dark {
+.is-dark {
+  .landing-page-wrapper {
     .navbar {
       &:not(.is-docked) {
         background: lighten($landing-dark-1, 8%);
@@ -370,7 +372,7 @@ $landing-dark-2: #191c2b;
             color: $accent;
           }
 
-          &:before {
+          &::before {
             background: $accent;
           }
         }
@@ -438,7 +440,7 @@ $landing-dark-2: #191c2b;
         .hero-body {
           .hero-mockup {
             transform: translateY(0);
-            opacity: 1;
+            // opacity: 1;
             pointer-events: all;
           }
         }
@@ -479,7 +481,7 @@ $landing-dark-2: #191c2b;
           max-width: 740px;
           margin: 0 auto;
           transform: translateY(10px);
-          opacity: 0;
+          // opacity: 0;
           border-radius: 12px;
           box-shadow: $light-box-shadow;
           pointer-events: none;
@@ -535,8 +537,8 @@ $landing-dark-2: #191c2b;
 5. Hero Dark mode
 ========================================================================== */
 
-.landing-page-wrapper {
-  &.is-dark {
+.is-dark {
+  .landing-page-wrapper {
     .hero {
       .absolute-header {
         background-color: $landing-dark-2;
@@ -646,8 +648,8 @@ $landing-dark-2: #191c2b;
 8. Boxed Features Dark mode
 ========================================================================== */
 
-.landing-page-wrapper {
-  &.is-dark {
+.is-dark {
+  .landing-page-wrapper {
     .stacks {
       .stack {
         background: lighten($landing-dark-2, 8%);
@@ -720,8 +722,8 @@ $landing-dark-2: #191c2b;
 10. Sections Dark mode
 ========================================================================== */
 
-.landing-page-wrapper {
-  &.is-dark {
+.is-dark {
+  .landing-page-wrapper {
     .section {
       &.section-focus {
         background: lighten($landing-dark-1, 2%);
@@ -808,8 +810,8 @@ $landing-dark-2: #191c2b;
 12. CTA block Dark mode
 ========================================================================== */
 
-.landing-page-wrapper {
-  &.is-dark {
+.is-dark {
+  .landing-page-wrapper {
     .cta-block {
       border-color: lighten($landing-dark-2, 4%);
 
@@ -903,7 +905,7 @@ $landing-dark-2: #191c2b;
     }
   }
 
-  &:after {
+  &::after {
     @extend %loader;
 
     position: absolute !important;
@@ -916,7 +918,7 @@ $landing-dark-2: #191c2b;
   }
 
   &.loaded {
-    &:after {
+    &::after {
       display: none !important;
     }
   }
@@ -971,7 +973,6 @@ $landing-dark-2: #191c2b;
     font-family: $font;
     font-size: 1.5rem;
     font-weight: 600;
-    padding-bottom: 0;
     opacity: 0;
     margin-bottom: 12px;
     padding-bottom: 12px;
@@ -1100,8 +1101,8 @@ $landing-dark-2: #191c2b;
 14. Demos Dark mode
 ========================================================================== */
 
-.landing-page-wrapper {
-  &.is-dark {
+.is-dark {
+  .landing-page-wrapper {
     .huro-demos {
       .demo-section {
         .demo-section-title {
@@ -1309,8 +1310,8 @@ $landing-dark-2: #191c2b;
 16. Footer Dark mode
 ========================================================================== */
 
-.landing-page-wrapper {
-  &.is-dark {
+.is-dark {
+  .landing-page-wrapper {
     .huro-footer {
       background: lighten($landing-dark-1, 8%);
 
@@ -1409,13 +1410,13 @@ $landing-dark-2: #191c2b;
   .night-toggle--checkbox,
   .night-toggle--feature {
     &,
-    &:before,
-    &:after {
+    &::before,
+    &::after {
       transition: all 250ms ease-in;
     }
 
-    &:before,
-    &:after {
+    &::before,
+    &::after {
       content: '';
       display: block;
     }
@@ -1448,7 +1449,7 @@ $landing-dark-2: #191c2b;
       border-radius: $toggleHeight;
 
       //toggle button
-      &:before {
+      &::before {
         position: absolute;
         top: 2px;
         left: 4px;
@@ -1465,12 +1466,12 @@ $landing-dark-2: #191c2b;
       background-color: $bgColor--night;
 
       //toggle button
-      &:before {
+      &::before {
         background-color: $toggleBtn-bgColor--night;
         border: $borderWidth solid $toggleBtn-borderColor--night;
       }
 
-      &:after {
+      &::after {
         position: absolute;
         top: 62%;
         left: $toggleWidth - $toggleBtnRadius - $borderWidth * 2 - 20px;
@@ -1545,7 +1546,7 @@ $landing-dark-2: #191c2b;
         rgba(255, 255, 255, 0.1) 5px 38px 0 1px;
       animation: starry_star 5s ease-in-out infinite;
 
-      &:before {
+      &::before {
         position: absolute;
         top: -2px;
         left: -25px;
@@ -1566,13 +1567,13 @@ $landing-dark-2: #191c2b;
         background-color: $bgColor--day;
         border: $borderWidth solid $borderColor--day;
 
-        &:before {
+        &::before {
           left: $toggleWidth - $toggleBtnRadius - $borderWidth * 2 - 4px;
           background-color: $toggleBtn-bgColor--day;
           border: $borderWidth solid $toggleBtn-borderColor--day;
         }
 
-        &:after {
+        &::after {
           opacity: 100;
           animation-name: bounceIn;
           animation-duration: 0.6s;
@@ -1589,7 +1590,7 @@ $landing-dark-2: #191c2b;
             rgba(255, 255, 255, 0.1) 5px 38px 0 -3px;
           animation: none;
 
-          &:before {
+          &::before {
             left: 25px;
             transform: rotate(70deg);
           }

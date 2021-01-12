@@ -1,4 +1,4 @@
-/*! _apps.scss | Huro | Css ninja 2020-2021 */
+/*! _apps.scss | Vuero | Css ninja 2020-2021 */
 
 /*
     1. Food Delivery Dashboard
@@ -51,7 +51,7 @@
       }
 
       .header-meta {
-        margin-left: 0px;
+        margin-left: 0;
         margin-bottom: 20px;
 
         h3 {
@@ -201,8 +201,8 @@
           }
         }
 
-        .slick-prev:before,
-        .slick-next:before {
+        .slick-prev::before,
+        .slick-next::before {
           color: $muted-grey;
         }
 

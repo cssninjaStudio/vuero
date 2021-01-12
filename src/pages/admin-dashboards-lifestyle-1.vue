@@ -45,9 +45,12 @@
                 <div class="dashboard-header">
                   <div class="avatar-container">
                     <img
-                      src="https://via.placeholder.com/150x150"
-                      data-demo-src="/@images/photo/demo/faces/girl1.jpg"
+                      src="/@images/photo/demo/faces/girl1.jpg"
                       alt=""
+                      @error="
+                        $event.target.src =
+                          'https://via.placeholder.com/150x150'
+                      "
                     />
                     <button class="button is-circle">
                       <span class="icon is-small">
@@ -668,9 +671,12 @@
                           <div class="heatmap-title">
                             <div class="title-avatar">
                               <img
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/photo/demo/faces/girl1.jpg"
+                                src="/@images/photo/demo/faces/girl1.jpg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                             </div>
                             <div class="title-meta">
@@ -1147,9 +1153,12 @@
                         <div class="card-image">
                           <figure class="image is-4by3">
                             <img
-                              src="https://via.placeholder.com/1280x960"
-                              data-demo-src="/@images/photo/demo/30.jpg"
+                              src="/@images/photo/demo/30.jpg"
                               alt=""
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/1280x960'
+                              "
                             />
                           </figure>
                         </div>
@@ -1157,30 +1166,42 @@
                           <div class="post-group">
                             <a>
                               <img
-                                src="https://via.placeholder.com/1280x960"
-                                data-demo-src="/@images/photo/demo/33.jpg"
+                                src="/@images/photo/demo/33.jpg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/1280x960'
+                                "
                               />
                             </a>
                             <a>
                               <img
-                                src="https://via.placeholder.com/1280x960"
-                                data-demo-src="/@images/photo/demo/34.jpg"
+                                src="/@images/photo/demo/34.jpg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/1280x960'
+                                "
                               />
                             </a>
                             <a>
                               <img
-                                src="https://via.placeholder.com/1280x960"
-                                data-demo-src="/@images/photo/demo/35.jpeg"
+                                src="/@images/photo/demo/35.jpeg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/1280x960'
+                                "
                               />
                             </a>
                             <a>
                               <img
-                                src="https://via.placeholder.com/1280x960"
-                                data-demo-src="/@images/photo/demo/36.jpg"
+                                src="/@images/photo/demo/36.jpg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/1280x960'
+                                "
                               />
                             </a>
                           </div>
@@ -1203,9 +1224,12 @@
                         <div class="card-image">
                           <figure class="image is-4by3">
                             <img
-                              src="https://via.placeholder.com/1280x960"
-                              data-demo-src="/@images/photo/demo/31.png"
+                              src="/@images/photo/demo/31.png"
                               alt=""
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/1280x960'
+                              "
                             />
                           </figure>
                         </div>
@@ -1213,30 +1237,42 @@
                           <div class="post-group">
                             <a>
                               <img
-                                src="https://via.placeholder.com/1280x960"
-                                data-demo-src="/@images/photo/demo/33.jpg"
+                                src="/@images/photo/demo/33.jpg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/1280x960'
+                                "
                               />
                             </a>
                             <a>
                               <img
-                                src="https://via.placeholder.com/1280x960"
-                                data-demo-src="/@images/photo/demo/34.jpg"
+                                src="/@images/photo/demo/34.jpg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/1280x960'
+                                "
                               />
                             </a>
                             <a>
                               <img
-                                src="https://via.placeholder.com/1280x960"
-                                data-demo-src="/@images/photo/demo/35.jpeg"
+                                src="/@images/photo/demo/35.jpeg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/1280x960'
+                                "
                               />
                             </a>
                             <a>
                               <img
-                                src="https://via.placeholder.com/1280x960"
-                                data-demo-src="/@images/photo/demo/36.jpg"
+                                src="/@images/photo/demo/36.jpg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/1280x960'
+                                "
                               />
                             </a>
                           </div>
@@ -1259,9 +1295,12 @@
                         <div class="card-image">
                           <figure class="image is-4by3">
                             <img
-                              src="https://via.placeholder.com/1280x960"
-                              data-demo-src="/@images/photo/demo/32.jpg"
+                              src="/@images/photo/demo/32.jpg"
                               alt=""
+                              @error="
+                                $event.target.src =
+                                  'https://via.placeholder.com/1280x960'
+                              "
                             />
                           </figure>
                         </div>
@@ -1269,30 +1308,42 @@
                           <div class="post-group">
                             <a>
                               <img
-                                src="https://via.placeholder.com/1280x960"
-                                data-demo-src="/@images/photo/demo/33.jpg"
+                                src="/@images/photo/demo/33.jpg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/1280x960'
+                                "
                               />
                             </a>
                             <a>
                               <img
-                                src="https://via.placeholder.com/1280x960"
-                                data-demo-src="/@images/photo/demo/34.jpg"
+                                src="/@images/photo/demo/34.jpg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/1280x960'
+                                "
                               />
                             </a>
                             <a>
                               <img
-                                src="https://via.placeholder.com/1280x960"
-                                data-demo-src="/@images/photo/demo/35.jpeg"
+                                src="/@images/photo/demo/35.jpeg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/1280x960'
+                                "
                               />
                             </a>
                             <a>
                               <img
-                                src="https://via.placeholder.com/1280x960"
-                                data-demo-src="/@images/photo/demo/36.jpg"
+                                src="/@images/photo/demo/36.jpg"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/1280x960'
+                                "
                               />
                             </a>
                           </div>

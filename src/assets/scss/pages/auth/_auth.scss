@@ -1,4 +1,4 @@
-/*! _auth.scss | Huro | Css ninja 2020-2021 */
+/*! _auth.scss | Vuero | Css ninja 2020-2021 */
 
 /*
     1. Login page
@@ -1091,7 +1091,7 @@ body {
   }
 
   .carousel-item {
-    margin: 0 10x;
+    margin: 0 10px;
   }
 
   .image-wrapper {
@@ -1151,8 +1151,8 @@ body {
     bottom: -60px !important;
   }
 
-  .slick-prev:before,
-  .slick-next:before {
+  .slick-prev::before,
+  .slick-next::before {
     color: $muted-grey;
   }
 

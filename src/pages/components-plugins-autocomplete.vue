@@ -76,7 +76,7 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Simple Autocomplete</h3>
                     <p>
-                      Huro is integrated with EasyAutocomplete, a nice jQuery
+                      Vuero is integrated with EasyAutocomplete, a nice jQuery
                       automplete library. You can check the plugin documentation
                       on
                       <a href="http://github.com/pawelczak/EasyAutocomplete"
@@ -86,8 +86,8 @@
                       shows how it works with a simple result template.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -161,7 +161,7 @@ $("#autocomplete-demo-simple").easyAutocomplete(demoSimpleOptions);
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Subtext Autocomplete</h3>
                     <p>
-                      Huro is integrated with EasyAutocomplete, a nice jQuery
+                      Vuero is integrated with EasyAutocomplete, a nice jQuery
                       automplete library. You can check the plugin documentation
                       on
                       <a href="http://github.com/pawelczak/EasyAutocomplete"
@@ -171,8 +171,8 @@ $("#autocomplete-demo-simple").easyAutocomplete(demoSimpleOptions);
                       shows how it works with a subtitle result template.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -247,7 +247,7 @@ $("#autocomplete-demo-subtext").easyAutocomplete(demoSubtextOptions);
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Advanced Autocomplete</h3>
                     <p>
-                      Huro is integrated with EasyAutocomplete, a nice jQuery
+                      Vuero is integrated with EasyAutocomplete, a nice jQuery
                       automplete library. You can check the plugin documentation
                       on
                       <a href="http://github.com/pawelczak/EasyAutocomplete"
@@ -257,8 +257,8 @@ $("#autocomplete-demo-subtext").easyAutocomplete(demoSubtextOptions);
                       shows how it works with an advanced result template.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">

@@ -1,4 +1,4 @@
-/*! _grid-tiles.scss | Huro | Css ninja 2020-2021 */
+/*! _grid-tiles.scss | Vuero | Css ninja 2020-2021 */
 
 /*
     1. Tile Grid Toolbar
@@ -347,7 +347,7 @@ body {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            flex: 1 1 0px;
+            flex: 1 1 0;
             padding: 0 5px;
 
             .tile-title {
@@ -511,7 +511,7 @@ body {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            flex: 1 1 0px;
+            flex: 1 1 0;
             padding: 0 5px;
 
             .tile-title {

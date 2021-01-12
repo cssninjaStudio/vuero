@@ -1,20 +1,4 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-const WebappV2Layout = defineComponent({
-  name: 'WebappV2Layout',
-  inheritAttrs: false,
-  setup() {
-    // WebappV2Layout - Composition API
-
-    return {}
-  },
-})
-
-export default WebappV2Layout
-</script>
-
-<template>
+<template inherit-attrs="false">
   <div class="app-overlay"></div>
 
   <MobileNavbar />

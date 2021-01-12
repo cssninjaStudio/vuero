@@ -76,15 +76,15 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">H Select</h3>
                     <p>
-                      Huro also provides from scratch form controls like this H
+                      Vuero also provides from scratch form controls like this H
                       Select, in replacement of the native <code>select</code>.
                       It is controled with a mix of CSS and javascript and plays
                       quite nicely with modern designs. Please refer to the code
                       examples for more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -199,8 +199,8 @@
                       code example for more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -316,8 +316,8 @@
                       for more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -336,9 +336,12 @@
                                 <input type="radio" name="hero_select" />
                                 <div class="option-meta">
                                   <img
-                                    src="https://via.placeholder.com/150x150"
-                                    data-demo-src="/@images/avatars/photos/8.jpg"
+                                    src="/@images/avatars/photos/8.jpg"
                                     alt=""
+                                    @error="
+                                      $event.target.src =
+                                        'https://via.placeholder.com/150x150'
+                                    "
                                   />
                                   <span>Erik K.</span>
                                 </div>
@@ -347,9 +350,12 @@
                                 <input type="radio" name="hero_select" />
                                 <div class="option-meta">
                                   <img
-                                    src="https://via.placeholder.com/150x150"
-                                    data-demo-src="/@images/avatars/photos/12.jpg"
+                                    src="/@images/avatars/photos/12.jpg"
                                     alt=""
+                                    @error="
+                                      $event.target.src =
+                                        'https://via.placeholder.com/150x150'
+                                    "
                                   />
                                   <span>Joshua S.</span>
                                 </div>
@@ -358,9 +364,12 @@
                                 <input type="radio" name="hero_select" />
                                 <div class="option-meta">
                                   <img
-                                    src="https://via.placeholder.com/150x150"
-                                    data-demo-src="/@images/avatars/photos/25.jpg"
+                                    src="/@images/avatars/photos/25.jpg"
                                     alt=""
+                                    @error="
+                                      $event.target.src =
+                                        'https://via.placeholder.com/150x150'
+                                    "
                                   />
                                   <span>Melany W.</span>
                                 </div>
@@ -369,9 +378,12 @@
                                 <input type="radio" name="hero_select" />
                                 <div class="option-meta">
                                   <img
-                                    src="https://via.placeholder.com/150x150"
-                                    data-demo-src="/@images/avatars/photos/7.jpg"
+                                    src="/@images/avatars/photos/7.jpg"
                                     alt=""
+                                    @error="
+                                      $event.target.src =
+                                        'https://via.placeholder.com/150x150'
+                                    "
                                   />
                                   <span>Alice C.</span>
                                 </div>
@@ -380,9 +392,12 @@
                                 <input type="radio" name="hero_select" />
                                 <div class="option-meta">
                                   <img
-                                    src="https://via.placeholder.com/150x150"
-                                    data-demo-src="/@images/avatars/photos/18.jpg"
+                                    src="/@images/avatars/photos/18.jpg"
                                     alt=""
+                                    @error="
+                                      $event.target.src =
+                                        'https://via.placeholder.com/150x150'
+                                    "
                                   />
                                   <span>Esteban C.</span>
                                 </div>
@@ -463,8 +478,8 @@
                       example for more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -483,9 +498,12 @@
                                 <input type="radio" name="hero_select" />
                                 <div class="option-meta">
                                   <img
-                                    src="https://via.placeholder.com/150x150"
-                                    data-demo-src="/@images/avatars/photos/8.jpg"
+                                    src="/@images/avatars/photos/8.jpg"
                                     alt=""
+                                    @error="
+                                      $event.target.src =
+                                        'https://via.placeholder.com/150x150'
+                                    "
                                   />
                                   <span>Erik K.</span>
                                 </div>
@@ -494,9 +512,12 @@
                                 <input type="radio" name="hero_select" />
                                 <div class="option-meta">
                                   <img
-                                    src="https://via.placeholder.com/150x150"
-                                    data-demo-src="/@images/avatars/photos/12.jpg"
+                                    src="/@images/avatars/photos/12.jpg"
                                     alt=""
+                                    @error="
+                                      $event.target.src =
+                                        'https://via.placeholder.com/150x150'
+                                    "
                                   />
                                   <span>Joshua S.</span>
                                 </div>
@@ -505,9 +526,12 @@
                                 <input type="radio" name="hero_select" />
                                 <div class="option-meta">
                                   <img
-                                    src="https://via.placeholder.com/150x150"
-                                    data-demo-src="/@images/avatars/photos/25.jpg"
+                                    src="/@images/avatars/photos/25.jpg"
                                     alt=""
+                                    @error="
+                                      $event.target.src =
+                                        'https://via.placeholder.com/150x150'
+                                    "
                                   />
                                   <span>Melany W.</span>
                                 </div>
@@ -516,9 +540,12 @@
                                 <input type="radio" name="hero_select" />
                                 <div class="option-meta">
                                   <img
-                                    src="https://via.placeholder.com/150x150"
-                                    data-demo-src="/@images/avatars/photos/7.jpg"
+                                    src="/@images/avatars/photos/7.jpg"
                                     alt=""
+                                    @error="
+                                      $event.target.src =
+                                        'https://via.placeholder.com/150x150'
+                                    "
                                   />
                                   <span>Alice C.</span>
                                 </div>
@@ -527,9 +554,12 @@
                                 <input type="radio" name="hero_select" />
                                 <div class="option-meta">
                                   <img
-                                    src="https://via.placeholder.com/150x150"
-                                    data-demo-src="/@images/avatars/photos/18.jpg"
+                                    src="/@images/avatars/photos/18.jpg"
                                     alt=""
+                                    @error="
+                                      $event.target.src =
+                                        'https://via.placeholder.com/150x150'
+                                    "
                                   />
                                   <span>Esteban C.</span>
                                 </div>
@@ -603,14 +633,14 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Basic Combo</h3>
                     <p>
-                      Huro provides built in icon and image combo boxes in
+                      Vuero provides built in icon and image combo boxes in
                       replacement of the native html5 <code>select</code>. This
                       element requires javascript to work properly. Please refer
                       to the code example for more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -743,15 +773,15 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Rounded Combo</h3>
                     <p>
-                      Like other form controls, the Huro combo box can have
+                      Like other form controls, the Vuero combo box can have
                       rounded edges. To apply this style, simply add the
                       <code>is-rounded</code> class to the target
                       <code>combo-box</code> element. See the code example for
                       more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -884,14 +914,14 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Square Image Combo</h3>
                     <p>
-                      Instead of the regular icons, Huro combo boxes can have
+                      Instead of the regular icons, Vuero combo boxes can have
                       images instead. The markup is slightly different from the
                       regular combo box. Please refer to the markup for more
                       details about usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -902,9 +932,12 @@
                           <div class="box-inner">
                             <div class="combo-item">
                               <img
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/photo/demo/misc/code.png"
+                                src="/@images/photo/demo/misc/code.png"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                               <span class="selected-item"
                                 >Select a language</span
@@ -920,9 +953,12 @@
                                 <li>
                                   <span class="item-icon">
                                     <img
-                                      src="https://via.placeholder.com/150x150"
-                                      data-demo-src="/@images/icons/stacks/js.svg"
+                                      src="/@images/icons/stacks/js.svg"
                                       alt=""
+                                      @error="
+                                        $event.target.src =
+                                          'https://via.placeholder.com/150x150'
+                                      "
                                     />
                                   </span>
                                   <span class="item-name">Javascript</span>
@@ -933,9 +969,12 @@
                                 <li>
                                   <span class="item-icon">
                                     <img
-                                      src="https://via.placeholder.com/150x150"
-                                      data-demo-src="/@images/icons/stacks/angular.svg"
+                                      src="/@images/icons/stacks/angular.svg"
                                       alt=""
+                                      @error="
+                                        $event.target.src =
+                                          'https://via.placeholder.com/150x150'
+                                      "
                                     />
                                   </span>
                                   <span class="item-name">Angular</span>
@@ -946,9 +985,12 @@
                                 <li>
                                   <span class="item-icon">
                                     <img
-                                      src="https://via.placeholder.com/150x150"
-                                      data-demo-src="/@images/icons/stacks/html5.svg"
+                                      src="/@images/icons/stacks/html5.svg"
                                       alt=""
+                                      @error="
+                                        $event.target.src =
+                                          'https://via.placeholder.com/150x150'
+                                      "
                                     />
                                   </span>
                                   <span class="item-name">Html5</span>
@@ -959,9 +1001,12 @@
                                 <li>
                                   <span class="item-icon">
                                     <img
-                                      src="https://via.placeholder.com/150x150"
-                                      data-demo-src="/@images/icons/stacks/android.svg"
+                                      src="/@images/icons/stacks/android.svg"
                                       alt=""
+                                      @error="
+                                        $event.target.src =
+                                          'https://via.placeholder.com/150x150'
+                                      "
                                     />
                                   </span>
                                   <span class="item-name">Android</span>
@@ -1053,8 +1098,8 @@
                       details about usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -1065,9 +1110,12 @@
                           <div class="box-inner">
                             <div class="combo-item">
                               <img
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/photo/demo/misc/code.png"
+                                src="/@images/photo/demo/misc/code.png"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                               <span class="selected-item"
                                 >Select a language</span
@@ -1083,9 +1131,12 @@
                                 <li>
                                   <span class="item-icon">
                                     <img
-                                      src="https://via.placeholder.com/150x150"
-                                      data-demo-src="/@images/icons/stacks/js.svg"
+                                      src="/@images/icons/stacks/js.svg"
                                       alt=""
+                                      @error="
+                                        $event.target.src =
+                                          'https://via.placeholder.com/150x150'
+                                      "
                                     />
                                   </span>
                                   <span class="item-name">Javascript</span>
@@ -1096,9 +1147,12 @@
                                 <li>
                                   <span class="item-icon">
                                     <img
-                                      src="https://via.placeholder.com/150x150"
-                                      data-demo-src="/@images/icons/stacks/angular.svg"
+                                      src="/@images/icons/stacks/angular.svg"
                                       alt=""
+                                      @error="
+                                        $event.target.src =
+                                          'https://via.placeholder.com/150x150'
+                                      "
                                     />
                                   </span>
                                   <span class="item-name">Angular</span>
@@ -1109,9 +1163,12 @@
                                 <li>
                                   <span class="item-icon">
                                     <img
-                                      src="https://via.placeholder.com/150x150"
-                                      data-demo-src="/@images/icons/stacks/html5.svg"
+                                      src="/@images/icons/stacks/html5.svg"
                                       alt=""
+                                      @error="
+                                        $event.target.src =
+                                          'https://via.placeholder.com/150x150'
+                                      "
                                     />
                                   </span>
                                   <span class="item-name">Html5</span>
@@ -1122,9 +1179,12 @@
                                 <li>
                                   <span class="item-icon">
                                     <img
-                                      src="https://via.placeholder.com/150x150"
-                                      data-demo-src="/@images/icons/stacks/android.svg"
+                                      src="/@images/icons/stacks/android.svg"
                                       alt=""
+                                      @error="
+                                        $event.target.src =
+                                          'https://via.placeholder.com/150x150'
+                                      "
                                     />
                                   </span>
                                   <span class="item-name">Android</span>
@@ -1147,7 +1207,7 @@
         &#x3C;div class=&#x22;image-combo-box has-rounded-images&#x22;&#x3E;
             &#x3C;div class=&#x22;box-inner&#x22;&#x3E;
                 &#x3C;div class=&#x22;combo-item&#x22;&#x3E;
-                    &#x3C;img src=&#x22;https://via.placeholder.com/150x150&#x22; data-demo-src=&#x22;assets/img/photo/demo/misc/code.png&#x22; alt=&#x22;&#x22;&#x3E;
+                    &#x3C;img src=&#x22;https://via.placeholder.com/150x150&#x22; src=&#x22;assets/img/photo/demo/misc/code.png&#x22; alt=&#x22;&#x22;&#x3E;
                     &#x3C;span class=&#x22;selected-item&#x22;&#x3E;Select a language&#x3C;/span&#x3E;
                 &#x3C;/div&#x3E;
             &#x3C;/div&#x3E;
@@ -1215,8 +1275,8 @@
                       Please refer to the markup for more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -1228,9 +1288,12 @@
                             <div class="combo-item">
                               <img
                                 id="skill-placeholder"
-                                src="https://via.placeholder.com/150x150"
-                                data-demo-src="/@images/photo/demo/misc/code.png"
+                                src="/@images/photo/demo/misc/code.png"
                                 alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
                               />
                               <span class="selected-item"
                                 >Select one or more languages</span
@@ -1246,9 +1309,12 @@
                                 <li data-skill="javascript-skill">
                                   <span class="item-icon">
                                     <img
-                                      src="https://via.placeholder.com/150x150"
-                                      data-demo-src="/@images/icons/stacks/js.svg"
+                                      src="/@images/icons/stacks/js.svg"
                                       alt=""
+                                      @error="
+                                        $event.target.src =
+                                          'https://via.placeholder.com/150x150'
+                                      "
                                     />
                                   </span>
                                   <span class="item-name">Javascript</span>
@@ -1259,9 +1325,12 @@
                                 <li data-skill="angular-skill">
                                   <span class="item-icon">
                                     <img
-                                      src="https://via.placeholder.com/150x150"
-                                      data-demo-src="/@images/icons/stacks/angular.svg"
+                                      src="/@images/icons/stacks/angular.svg"
                                       alt=""
+                                      @error="
+                                        $event.target.src =
+                                          'https://via.placeholder.com/150x150'
+                                      "
                                     />
                                   </span>
                                   <span class="item-name">Angular</span>
@@ -1272,9 +1341,12 @@
                                 <li data-skill="reactjs-skill">
                                   <span class="item-icon">
                                     <img
-                                      src="https://via.placeholder.com/150x150"
-                                      data-demo-src="/@images/icons/stacks/reactjs.svg"
+                                      src="/@images/icons/stacks/reactjs.svg"
                                       alt=""
+                                      @error="
+                                        $event.target.src =
+                                          'https://via.placeholder.com/150x150'
+                                      "
                                     />
                                   </span>
                                   <span class="item-name">Reactjs</span>
@@ -1285,9 +1357,12 @@
                                 <li data-skill="vuejs-skill">
                                   <span class="item-icon">
                                     <img
-                                      src="https://via.placeholder.com/150x150"
-                                      data-demo-src="/@images/icons/stacks/vuejs.svg"
+                                      src="/@images/icons/stacks/vuejs.svg"
                                       alt=""
+                                      @error="
+                                        $event.target.src =
+                                          'https://via.placeholder.com/150x150'
+                                      "
                                     />
                                   </span>
                                   <span class="item-name">Vuejs</span>
@@ -1298,9 +1373,12 @@
                                 <li data-skill="nodejs-skill">
                                   <span class="item-icon">
                                     <img
-                                      src="https://via.placeholder.com/150x150"
-                                      data-demo-src="/@images/icons/stacks/nodejs.svg"
+                                      src="/@images/icons/stacks/nodejs.svg"
                                       alt=""
+                                      @error="
+                                        $event.target.src =
+                                          'https://via.placeholder.com/150x150'
+                                      "
                                     />
                                   </span>
                                   <span class="item-name">Nodejs</span>
@@ -1311,9 +1389,12 @@
                                 <li data-skill="android-skill">
                                   <span class="item-icon">
                                     <img
-                                      src="https://via.placeholder.com/150x150"
-                                      data-demo-src="/@images/icons/stacks/android.svg"
+                                      src="/@images/icons/stacks/android.svg"
                                       alt=""
+                                      @error="
+                                        $event.target.src =
+                                          'https://via.placeholder.com/150x150'
+                                      "
                                     />
                                   </span>
                                   <span class="item-name">Android</span>
@@ -1324,9 +1405,12 @@
                                 <li data-skill="swift-skill">
                                   <span class="item-icon">
                                     <img
-                                      src="https://via.placeholder.com/150x150"
-                                      data-demo-src="/@images/icons/stacks/swift.svg"
+                                      src="/@images/icons/stacks/swift.svg"
                                       alt=""
+                                      @error="
+                                        $event.target.src =
+                                          'https://via.placeholder.com/150x150'
+                                      "
                                     />
                                   </span>
                                   <span class="item-name">Swift</span>
@@ -1337,9 +1421,12 @@
                                 <li data-skill="wordpress-skill">
                                   <span class="item-icon">
                                     <img
-                                      src="https://via.placeholder.com/150x150"
-                                      data-demo-src="/@images/icons/stacks/wordpress.svg"
+                                      src="/@images/icons/stacks/wordpress.svg"
                                       alt=""
+                                      @error="
+                                        $event.target.src =
+                                          'https://via.placeholder.com/150x150'
+                                      "
                                     />
                                   </span>
                                   <span class="item-name">WordPress</span>
@@ -1350,9 +1437,12 @@
                                 <li data-skill="laravel-skill">
                                   <span class="item-icon">
                                     <img
-                                      src="https://via.placeholder.com/150x150"
-                                      data-demo-src="/@images/icons/stacks/laravel.svg"
+                                      src="/@images/icons/stacks/laravel.svg"
                                       alt=""
+                                      @error="
+                                        $event.target.src =
+                                          'https://via.placeholder.com/150x150'
+                                      "
                                     />
                                   </span>
                                   <span class="item-name">Laravel</span>
@@ -1488,8 +1578,8 @@
                       to the markup for more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -1502,15 +1592,21 @@
                               <div class="avatar-container">
                                 <img
                                   class="avatar"
-                                  src="https://via.placeholder.com/150x150"
-                                  data-demo-src="/@images/avatars/placeholder.jpg"
+                                  src="/@images/avatars/placeholder.jpg"
                                   alt=""
+                                  @error="
+                                    $event.target.src =
+                                      'https://via.placeholder.com/150x150'
+                                  "
                                 />
                                 <img
                                   class="badge"
-                                  src="https://via.placeholder.com/150x150"
-                                  data-demo-src="/@images/icons/flags/united-states-of-america.svg"
+                                  src="/@images/icons/flags/united-states-of-america.svg"
                                   alt=""
+                                  @error="
+                                    $event.target.src =
+                                      'https://via.placeholder.com/150x150'
+                                  "
                                 />
                               </div>
                               <span class="selected-item is-pushed"
@@ -1528,15 +1624,21 @@
                                   <span class="item-icon">
                                     <img
                                       class="avatar"
-                                      src="https://via.placeholder.com/150x150"
-                                      data-demo-src="/@images/avatars/photos/22.jpg"
+                                      src="/@images/avatars/photos/22.jpg"
                                       alt=""
+                                      @error="
+                                        $event.target.src =
+                                          'https://via.placeholder.com/150x150'
+                                      "
                                     />
                                     <img
                                       class="badge"
-                                      src="https://via.placeholder.com/150x150"
-                                      data-demo-src="/@images/icons/flags/united-states-of-america.svg"
+                                      src="/@images/icons/flags/united-states-of-america.svg"
                                       alt=""
+                                      @error="
+                                        $event.target.src =
+                                          'https://via.placeholder.com/150x150'
+                                      "
                                     />
                                   </span>
                                   <span class="item-name">Jimmy H.</span>
@@ -1548,15 +1650,21 @@
                                   <span class="item-icon">
                                     <img
                                       class="avatar"
-                                      src="https://via.placeholder.com/150x150"
-                                      data-demo-src="/@images/avatars/photos/7.jpg"
+                                      src="/@images/avatars/photos/7.jpg"
                                       alt=""
+                                      @error="
+                                        $event.target.src =
+                                          'https://via.placeholder.com/150x150'
+                                      "
                                     />
                                     <img
                                       class="badge"
-                                      src="https://via.placeholder.com/150x150"
-                                      data-demo-src="/@images/icons/flags/united-states-of-america.svg"
+                                      src="/@images/icons/flags/united-states-of-america.svg"
                                       alt=""
+                                      @error="
+                                        $event.target.src =
+                                          'https://via.placeholder.com/150x150'
+                                      "
                                     />
                                   </span>
                                   <span class="item-name">Alice C.</span>
@@ -1568,15 +1676,21 @@
                                   <span class="item-icon">
                                     <img
                                       class="avatar"
-                                      src="https://via.placeholder.com/150x150"
-                                      data-demo-src="/@images/avatars/photos/8.jpg"
+                                      src="/@images/avatars/photos/8.jpg"
                                       alt=""
+                                      @error="
+                                        $event.target.src =
+                                          'https://via.placeholder.com/150x150'
+                                      "
                                     />
                                     <img
                                       class="badge"
-                                      src="https://via.placeholder.com/150x150"
-                                      data-demo-src="/@images/icons/flags/united-states-of-america.svg"
+                                      src="/@images/icons/flags/united-states-of-america.svg"
                                       alt=""
+                                      @error="
+                                        $event.target.src =
+                                          'https://via.placeholder.com/150x150'
+                                      "
                                     />
                                   </span>
                                   <span class="item-name">Erik K.</span>
@@ -1588,15 +1702,21 @@
                                   <span class="item-icon">
                                     <img
                                       class="avatar"
-                                      src="https://via.placeholder.com/150x150"
-                                      data-demo-src="/@images/avatars/photos/12.jpg"
+                                      src="/@images/avatars/photos/12.jpg"
                                       alt=""
+                                      @error="
+                                        $event.target.src =
+                                          'https://via.placeholder.com/150x150'
+                                      "
                                     />
                                     <img
                                       class="badge"
-                                      src="https://via.placeholder.com/150x150"
-                                      data-demo-src="/@images/icons/flags/united-states-of-america.svg"
+                                      src="/@images/icons/flags/united-states-of-america.svg"
                                       alt=""
+                                      @error="
+                                        $event.target.src =
+                                          'https://via.placeholder.com/150x150'
+                                      "
                                     />
                                   </span>
                                   <span class="item-name">Joshua S.</span>
@@ -1608,15 +1728,21 @@
                                   <span class="item-icon">
                                     <img
                                       class="avatar"
-                                      src="https://via.placeholder.com/150x150"
-                                      data-demo-src="/@images/avatars/photos/25.jpg"
+                                      src="/@images/avatars/photos/25.jpg"
                                       alt=""
+                                      @error="
+                                        $event.target.src =
+                                          'https://via.placeholder.com/150x150'
+                                      "
                                     />
                                     <img
                                       class="badge"
-                                      src="https://via.placeholder.com/150x150"
-                                      data-demo-src="/@images/icons/flags/united-states-of-america.svg"
+                                      src="/@images/icons/flags/united-states-of-america.svg"
                                       alt=""
+                                      @error="
+                                        $event.target.src =
+                                          'https://via.placeholder.com/150x150'
+                                      "
                                     />
                                   </span>
                                   <span class="item-name">Melany W.</span>
@@ -1640,7 +1766,7 @@
             &#x3C;div class=&#x22;box-inner&#x22;&#x3E;
                 &#x3C;div class=&#x22;combo-item&#x22;&#x3E;
                     &#x3C;div class=&#x22;avatar-container&#x22;&#x3E;
-                        &#x3C;img class=&#x22;avatar&#x22; src=&#x22;https://via.placeholder.com/150x150&#x22; data-demo-src=&#x22;assets/img/avatars/placeholder.jpg&#x22; alt&#x3E;
+                        &#x3C;img class=&#x22;avatar&#x22; src=&#x22;https://via.placeholder.com/150x150&#x22; src=&#x22;assets/img/avatars/placeholder.jpg&#x22; alt&#x3E;
                         &#x3C;img class=&#x22;badge&#x22; src=&#x22;assets/img/icons/flags/united-states-of-america.svg&#x22; alt&#x3E;
                     &#x3C;/div&#x3E;
                     &#x3C;span class=&#x22;selected-item is-pushed&#x22;&#x3E;Select a user&#x3C;/span&#x3E;

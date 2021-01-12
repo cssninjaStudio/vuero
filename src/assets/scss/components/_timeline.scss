@@ -1,4 +1,4 @@
-/*! _timeline.scss | Huro | Css ninja 2020-2021 */
+/*! _timeline.scss | Vuero | Css ninja 2020-2021 */
 
 /*
     1. Timeline
@@ -24,7 +24,7 @@
         align-items: center;
         margin-bottom: 10px;
 
-        &:before {
+        &::before {
           content: '';
           position: absolute;
           top: 46px;
@@ -36,7 +36,7 @@
         }
 
         &:last-child {
-          &:before {
+          &::before {
             display: none;
           }
         }
@@ -191,7 +191,7 @@ body {
       .timeline-wrapper-inner {
         .timeline-container {
           .timeline-item {
-            &:before {
+            &::before {
               background: lighten($dark-sidebar, 20%);
             }
 
@@ -242,7 +242,7 @@ body {
         .timeline-item {
           flex-direction: column;
 
-          &:before {
+          &::before {
             display: none;
           }
 
@@ -277,7 +277,7 @@ body {
         .timeline-item {
           flex-direction: column;
 
-          &:before {
+          &::before {
             display: none;
           }
 

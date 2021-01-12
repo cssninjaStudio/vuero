@@ -260,19 +260,19 @@
                                   <div class="option-row">
                                     <input type="radio" name="product_demo" />
                                     <div class="option-meta">
-                                      <span>Huro Starter</span>
+                                      <span>Vuero Starter</span>
                                     </div>
                                   </div>
                                   <div class="option-row">
                                     <input type="radio" name="product_demo" />
                                     <div class="option-meta">
-                                      <span>Huro Pro</span>
+                                      <span>Vuero Pro</span>
                                     </div>
                                   </div>
                                   <div class="option-row">
                                     <input type="radio" name="product_demo" />
                                     <div class="option-meta">
-                                      <span>Huro Business</span>
+                                      <span>Vuero Business</span>
                                     </div>
                                   </div>
                                 </div>

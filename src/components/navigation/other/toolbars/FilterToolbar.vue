@@ -41,8 +41,11 @@
                     <img
                       class="user-photo"
                       alt=""
-                      src="https://via.placeholder.com/150x150"
-                      data-demo-src="/@images/avatars/photos/7.jpg"
+                      src="/@images/avatars/photos/7.jpg"
+                      @error="
+                        $event.target.src =
+                          'https://via.placeholder.com/150x150'
+                      "
                     />
                   </div>
                   <div class="user-content">
@@ -59,8 +62,11 @@
                     <img
                       class="user-photo"
                       alt=""
-                      src="https://via.placeholder.com/150x150"
-                      data-demo-src="/@images/avatars/photos/12.jpg"
+                      src="/@images/avatars/photos/12.jpg"
+                      @error="
+                        $event.target.src =
+                          'https://via.placeholder.com/150x150'
+                      "
                     />
                   </div>
                   <div class="user-content">
@@ -77,8 +83,11 @@
                     <img
                       class="user-photo"
                       alt=""
-                      src="https://via.placeholder.com/150x150"
-                      data-demo-src="/@images/avatars/photos/13.jpg"
+                      src="/@images/avatars/photos/13.jpg"
+                      @error="
+                        $event.target.src =
+                          'https://via.placeholder.com/150x150'
+                      "
                     />
                   </div>
                   <div class="user-content">
@@ -95,8 +104,11 @@
                     <img
                       class="user-photo"
                       alt=""
-                      src="https://via.placeholder.com/150x150"
-                      data-demo-src="/@images/avatars/photos/25.jpg"
+                      src="/@images/avatars/photos/25.jpg"
+                      @error="
+                        $event.target.src =
+                          'https://via.placeholder.com/150x150'
+                      "
                     />
                   </div>
                   <div class="user-content">

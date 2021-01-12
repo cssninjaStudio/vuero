@@ -122,16 +122,22 @@
                     <div class="h-avatar is-big">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/13.jpg"
+                        src="/@images/avatars/photos/13.jpg"
                         alt=""
                         data-user-popover="6"
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                       <img
                         class="badge"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/icons/stacks/illustrator.svg"
+                        src="/@images/icons/stacks/illustrator.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                     <h3 class="dark-inverted" data-filter-match>
@@ -150,10 +156,13 @@
                       <div class="h-avatar is-small">
                         <img
                           class="avatar"
-                          src="https://via.placeholder.com/150x150"
-                          data-demo-src="/@images/avatars/photos/18.jpg"
+                          src="/@images/avatars/photos/18.jpg"
                           alt=""
                           data-user-popover="7"
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x150'
+                          "
                         />
                       </div>
                       <div class="h-avatar is-small">
@@ -167,10 +176,13 @@
                       <div class="h-avatar is-small">
                         <img
                           class="avatar"
-                          src="https://via.placeholder.com/150x150"
-                          data-demo-src="/@images/avatars/photos/7.jpg"
+                          src="/@images/avatars/photos/7.jpg"
                           alt=""
                           data-user-popover="0"
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x150'
+                          "
                         />
                       </div>
                     </div>
@@ -197,16 +209,22 @@
                     <div class="h-avatar is-big">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/37.jpg"
+                        src="/@images/avatars/photos/37.jpg"
                         alt=""
                         data-user-popover="31"
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                       <img
                         class="badge"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/icons/flags/france.svg"
+                        src="/@images/icons/flags/france.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                     <h3 class="dark-inverted" data-filter-match>
@@ -217,10 +235,13 @@
                       <div class="h-avatar is-small">
                         <img
                           class="avatar"
-                          src="https://via.placeholder.com/150x150"
-                          data-demo-src="/@images/avatars/photos/21.jpg"
+                          src="/@images/avatars/photos/21.jpg"
                           alt=""
                           data-user-popover="19"
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x150'
+                          "
                         />
                       </div>
                       <div class="h-avatar is-small">
@@ -234,10 +255,13 @@
                       <div class="h-avatar is-small">
                         <img
                           class="avatar"
-                          src="https://via.placeholder.com/150x150"
-                          data-demo-src="/@images/avatars/photos/39.jpg"
+                          src="/@images/avatars/photos/39.jpg"
                           alt=""
                           data-user-popover="33"
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x150'
+                          "
                         />
                       </div>
                     </div>
@@ -264,16 +288,22 @@
                     <div class="h-avatar is-big">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/25.jpg"
+                        src="/@images/avatars/photos/25.jpg"
                         alt=""
                         data-user-popover="4"
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                       <img
                         class="badge"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/icons/stacks/js.svg"
+                        src="/@images/icons/stacks/js.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                     <h3 class="dark-inverted" data-filter-match>
@@ -284,10 +314,13 @@
                       <div class="h-avatar is-small">
                         <img
                           class="avatar"
-                          src="https://via.placeholder.com/150x150"
-                          data-demo-src="/@images/avatars/photos/21.jpg"
+                          src="/@images/avatars/photos/21.jpg"
                           alt=""
                           data-user-popover="19"
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x150'
+                          "
                         />
                       </div>
                       <div class="h-avatar is-small">
@@ -301,10 +334,13 @@
                       <div class="h-avatar is-small">
                         <img
                           class="avatar"
-                          src="https://via.placeholder.com/150x150"
-                          data-demo-src="/@images/avatars/photos/39.jpg"
+                          src="/@images/avatars/photos/39.jpg"
                           alt=""
                           data-user-popover="33"
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x150'
+                          "
                         />
                       </div>
                     </div>
@@ -331,16 +367,22 @@
                     <div class="h-avatar is-big">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/29.jpg"
+                        src="/@images/avatars/photos/29.jpg"
                         alt=""
                         data-user-popover="25"
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                       <img
                         class="badge"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/icons/stacks/python.svg"
+                        src="/@images/icons/stacks/python.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                     <h3 class="dark-inverted" data-filter-match>
@@ -351,19 +393,25 @@
                       <div class="h-avatar is-small">
                         <img
                           class="avatar"
-                          src="https://via.placeholder.com/150x150"
-                          data-demo-src="/@images/avatars/photos/28.jpg"
+                          src="/@images/avatars/photos/28.jpg"
                           alt=""
                           data-user-popover="24"
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x150'
+                          "
                         />
                       </div>
                       <div class="h-avatar is-small">
                         <img
                           class="avatar"
-                          src="https://via.placeholder.com/150x150"
-                          data-demo-src="/@images/avatars/photos/33.jpg"
+                          src="/@images/avatars/photos/33.jpg"
                           alt=""
                           data-user-popover="29"
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x150'
+                          "
                         />
                       </div>
                     </div>
@@ -390,16 +438,22 @@
                     <div class="h-avatar is-big">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/39.jpg"
+                        src="/@images/avatars/photos/39.jpg"
                         alt=""
                         data-user-popover="33"
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                       <img
                         class="badge"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/icons/stacks/python.svg"
+                        src="/@images/icons/stacks/python.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                     <h3 class="dark-inverted" data-filter-match>
@@ -418,10 +472,13 @@
                       <div class="h-avatar is-small">
                         <img
                           class="avatar"
-                          src="https://via.placeholder.com/150x150"
-                          data-demo-src="/@images/avatars/photos/23.jpg"
+                          src="/@images/avatars/photos/23.jpg"
                           alt=""
                           data-user-popover="21"
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x150'
+                          "
                         />
                       </div>
                     </div>
@@ -448,16 +505,22 @@
                     <div class="h-avatar is-big">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/40.jpg"
+                        src="/@images/avatars/photos/40.jpg"
                         alt=""
                         data-user-popover="11"
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                       <img
                         class="badge"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/icons/stacks/android.svg"
+                        src="/@images/icons/stacks/android.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                     <h3 class="dark-inverted" data-filter-match>
@@ -476,10 +539,13 @@
                       <div class="h-avatar is-small">
                         <img
                           class="avatar"
-                          src="https://via.placeholder.com/150x150"
-                          data-demo-src="/@images/avatars/photos/18.jpg"
+                          src="/@images/avatars/photos/18.jpg"
                           alt=""
                           data-user-popover="7"
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x150'
+                          "
                         />
                       </div>
                       <div class="h-avatar is-small">
@@ -514,16 +580,22 @@
                     <div class="h-avatar is-big">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/19.jpg"
+                        src="/@images/avatars/photos/19.jpg"
                         alt=""
                         data-user-popover="17"
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                       <img
                         class="badge"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/icons/flags/germany.svg"
+                        src="/@images/icons/flags/germany.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                     <h3 class="dark-inverted" data-filter-match>
@@ -542,10 +614,13 @@
                       <div class="h-avatar is-small">
                         <img
                           class="avatar"
-                          src="https://via.placeholder.com/150x150"
-                          data-demo-src="/@images/avatars/photos/27.jpg"
+                          src="/@images/avatars/photos/27.jpg"
                           alt=""
                           data-user-popover="10"
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x150'
+                          "
                         />
                       </div>
                     </div>
@@ -572,16 +647,22 @@
                     <div class="h-avatar is-big">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/9.jpg"
+                        src="/@images/avatars/photos/9.jpg"
                         alt=""
                         data-user-popover="1"
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                       <img
                         class="badge"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/icons/stacks/photoshop.svg"
+                        src="/@images/icons/stacks/photoshop.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                     <h3 class="dark-inverted" data-filter-match>Anna Baker</h3>
@@ -598,10 +679,13 @@
                       <div class="h-avatar is-small">
                         <img
                           class="avatar"
-                          src="https://via.placeholder.com/150x150"
-                          data-demo-src="/@images/avatars/photos/23.jpg"
+                          src="/@images/avatars/photos/23.jpg"
                           alt=""
                           data-user-popover="21"
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x150'
+                          "
                         />
                       </div>
                     </div>
@@ -628,16 +712,22 @@
                     <div class="h-avatar is-big">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/5.jpg"
+                        src="/@images/avatars/photos/5.jpg"
                         alt=""
                         data-user-popover="9"
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                       <img
                         class="badge"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/icons/flags/united-states-of-america.svg"
+                        src="/@images/icons/flags/united-states-of-america.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                     <h3 class="dark-inverted" data-filter-match>
@@ -656,10 +746,13 @@
                       <div class="h-avatar is-small">
                         <img
                           class="avatar"
-                          src="https://via.placeholder.com/150x150"
-                          data-demo-src="/@images/avatars/photos/18.jpg"
+                          src="/@images/avatars/photos/18.jpg"
                           alt=""
                           data-user-popover="7"
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x150'
+                          "
                         />
                       </div>
                       <div class="h-avatar is-small">
@@ -673,10 +766,13 @@
                       <div class="h-avatar is-small">
                         <img
                           class="avatar"
-                          src="https://via.placeholder.com/150x150"
-                          data-demo-src="/@images/avatars/photos/7.jpg"
+                          src="/@images/avatars/photos/7.jpg"
                           alt=""
                           data-user-popover="0"
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x150'
+                          "
                         />
                       </div>
                     </div>
@@ -703,16 +799,22 @@
                     <div class="h-avatar is-big">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/32.jpg"
+                        src="/@images/avatars/photos/32.jpg"
                         alt=""
                         data-user-popover="28"
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                       <img
                         class="badge"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/icons/flags/united-states-of-america.svg"
+                        src="/@images/icons/flags/united-states-of-america.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                     <h3 class="dark-inverted" data-filter-match>
@@ -723,10 +825,13 @@
                       <div class="h-avatar is-small">
                         <img
                           class="avatar"
-                          src="https://via.placeholder.com/150x150"
-                          data-demo-src="/@images/avatars/photos/21.jpg"
+                          src="/@images/avatars/photos/21.jpg"
                           alt=""
                           data-user-popover="19"
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x150'
+                          "
                         />
                       </div>
                       <div class="h-avatar is-small">
@@ -740,10 +845,13 @@
                       <div class="h-avatar is-small">
                         <img
                           class="avatar"
-                          src="https://via.placeholder.com/150x150"
-                          data-demo-src="/@images/avatars/photos/39.jpg"
+                          src="/@images/avatars/photos/39.jpg"
                           alt=""
                           data-user-popover="33"
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x150'
+                          "
                         />
                       </div>
                     </div>
@@ -770,16 +878,22 @@
                     <div class="h-avatar is-big">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/36.jpg"
+                        src="/@images/avatars/photos/36.jpg"
                         alt=""
                         data-user-popover="30"
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                       <img
                         class="badge"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/icons/stacks/reactjs.svg"
+                        src="/@images/icons/stacks/reactjs.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                     <h3 class="dark-inverted" data-filter-match>
@@ -798,10 +912,13 @@
                       <div class="h-avatar is-small">
                         <img
                           class="avatar"
-                          src="https://via.placeholder.com/150x150"
-                          data-demo-src="/@images/avatars/photos/31.jpg"
+                          src="/@images/avatars/photos/31.jpg"
                           alt=""
                           data-user-popover="27"
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x150'
+                          "
                         />
                       </div>
                     </div>
@@ -828,16 +945,22 @@
                     <div class="h-avatar is-big">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/38.jpg"
+                        src="/@images/avatars/photos/38.jpg"
                         alt=""
                         data-user-popover="32"
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                       <img
                         class="badge"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/icons/stacks/vuejs.svg"
+                        src="/@images/icons/stacks/vuejs.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                     <h3 class="dark-inverted" data-filter-match>
@@ -848,19 +971,25 @@
                       <div class="h-avatar is-small">
                         <img
                           class="avatar"
-                          src="https://via.placeholder.com/150x150"
-                          data-demo-src="/@images/avatars/photos/33.jpg"
+                          src="/@images/avatars/photos/33.jpg"
                           alt=""
                           data-user-popover="29"
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x150'
+                          "
                         />
                       </div>
                       <div class="h-avatar is-small">
                         <img
                           class="avatar"
-                          src="https://via.placeholder.com/150x150"
-                          data-demo-src="/@images/avatars/photos/26.jpg"
+                          src="/@images/avatars/photos/26.jpg"
                           alt=""
                           data-user-popover="23"
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x150'
+                          "
                         />
                       </div>
                     </div>
@@ -887,16 +1016,22 @@
                     <div class="h-avatar is-big">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/26.jpg"
+                        src="/@images/avatars/photos/26.jpg"
                         alt=""
                         data-user-popover="23"
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                       <img
                         class="badge"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/icons/stacks/html5.svg"
+                        src="/@images/icons/stacks/html5.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                     <h3 class="dark-inverted" data-filter-match>
@@ -907,10 +1042,13 @@
                       <div class="h-avatar is-small">
                         <img
                           class="avatar"
-                          src="https://via.placeholder.com/150x150"
-                          data-demo-src="/@images/avatars/photos/21.jpg"
+                          src="/@images/avatars/photos/21.jpg"
                           alt=""
                           data-user-popover="19"
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x150'
+                          "
                         />
                       </div>
                       <div class="h-avatar is-small">
@@ -924,10 +1062,13 @@
                       <div class="h-avatar is-small">
                         <img
                           class="avatar"
-                          src="https://via.placeholder.com/150x150"
-                          data-demo-src="/@images/avatars/photos/39.jpg"
+                          src="/@images/avatars/photos/39.jpg"
                           alt=""
                           data-user-popover="33"
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x150'
+                          "
                         />
                       </div>
                     </div>
@@ -954,16 +1095,22 @@
                     <div class="h-avatar is-big">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/16.jpg"
+                        src="/@images/avatars/photos/16.jpg"
                         alt=""
                         data-user-popover="16"
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                       <img
                         class="badge"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/icons/flags/united-states-of-america.svg"
+                        src="/@images/icons/flags/united-states-of-america.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                     <h3 class="dark-inverted" data-filter-match>
@@ -974,10 +1121,13 @@
                       <div class="h-avatar is-small">
                         <img
                           class="avatar"
-                          src="https://via.placeholder.com/150x150"
-                          data-demo-src="/@images/avatars/photos/14.jpg"
+                          src="/@images/avatars/photos/14.jpg"
                           alt=""
                           data-user-popover="14"
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x150'
+                          "
                         />
                       </div>
                       <div class="h-avatar is-small">
@@ -1012,16 +1162,22 @@
                     <div class="h-avatar is-big">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/23.jpg"
+                        src="/@images/avatars/photos/23.jpg"
                         alt=""
                         data-user-popover="21"
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                       <img
                         class="badge"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/icons/flags/united-states-of-america.svg"
+                        src="/@images/icons/flags/united-states-of-america.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                     <h3 class="dark-inverted" data-filter-match>
@@ -1040,10 +1196,13 @@
                       <div class="h-avatar is-small">
                         <img
                           class="avatar"
-                          src="https://via.placeholder.com/150x150"
-                          data-demo-src="/@images/avatars/photos/34.jpg"
+                          src="/@images/avatars/photos/34.jpg"
                           alt=""
                           data-user-popover="12"
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x150'
+                          "
                         />
                       </div>
                     </div>
@@ -1070,16 +1229,22 @@
                     <div class="h-avatar is-big">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/28.jpg"
+                        src="/@images/avatars/photos/28.jpg"
                         alt=""
                         data-user-popover="24"
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                       <img
                         class="badge"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/icons/stacks/angular.svg"
+                        src="/@images/icons/stacks/angular.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                     <h3 class="dark-inverted" data-filter-match>
@@ -1098,10 +1263,13 @@
                       <div class="h-avatar is-small">
                         <img
                           class="avatar"
-                          src="https://via.placeholder.com/150x150"
-                          data-demo-src="/@images/avatars/photos/18.jpg"
+                          src="/@images/avatars/photos/18.jpg"
                           alt=""
                           data-user-popover="7"
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x150'
+                          "
                         />
                       </div>
                       <div class="h-avatar is-small">
@@ -1136,16 +1304,22 @@
                     <div class="h-avatar is-big">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/7.jpg"
+                        src="/@images/avatars/photos/7.jpg"
                         alt=""
                         data-user-popover="0"
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                       <img
                         class="badge"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/icons/stacks/csharp.svg"
+                        src="/@images/icons/stacks/csharp.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                     <h3 class="dark-inverted" data-filter-match>
@@ -1156,10 +1330,13 @@
                       <div class="h-avatar is-small">
                         <img
                           class="avatar"
-                          src="https://via.placeholder.com/150x150"
-                          data-demo-src="/@images/avatars/photos/25.jpg"
+                          src="/@images/avatars/photos/25.jpg"
                           alt=""
                           data-user-popover="4"
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x150'
+                          "
                         />
                       </div>
                       <div class="h-avatar is-small">
@@ -1173,10 +1350,13 @@
                       <div class="h-avatar is-small">
                         <img
                           class="avatar"
-                          src="https://via.placeholder.com/150x150"
-                          data-demo-src="/@images/avatars/photos/12.jpg"
+                          src="/@images/avatars/photos/12.jpg"
                           alt=""
                           data-user-popover="2"
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x150'
+                          "
                         />
                       </div>
                     </div>
@@ -1203,16 +1383,22 @@
                     <div class="h-avatar is-big">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/22.jpg"
+                        src="/@images/avatars/photos/22.jpg"
                         alt=""
                         data-user-popover="20"
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                       <img
                         class="badge"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/icons/flags/united-states-of-america.svg"
+                        src="/@images/icons/flags/united-states-of-america.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                     <h3 class="dark-inverted" data-filter-match>

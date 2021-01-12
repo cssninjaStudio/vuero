@@ -97,8 +97,10 @@
             <div class="preview">
               <img
                 data-dz-thumbnail
-                src="https://via.placeholder.com/150x150"
                 alt=""
+                @error="
+                  $event.target.src = 'https://via.placeholder.com/150x150'
+                "
               />
             </div>
             <div class="list-item-meta">

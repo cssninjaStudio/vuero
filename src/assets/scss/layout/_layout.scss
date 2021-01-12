@@ -1,4 +1,4 @@
-/*! _layout.scss | Huro | Css ninja 2020-2021 */
+/*! _layout.scss | Vuero | Css ninja 2020-2021 */
 
 /*
     1. App Layout
@@ -419,7 +419,7 @@ body {
   }
 
   &.active {
-    &:after {
+    &::after {
       transform: scale3d(5.5, 5.5, 1);
       transition-timing-function: cubic-bezier(0.68, 1.55, 0.265, 1);
     }
@@ -459,7 +459,7 @@ body {
     }
   }
 
-  &:after {
+  &::after {
     display: block;
     content: ' ';
     width: 3.5em;
@@ -475,7 +475,6 @@ body {
   }
 
   .floating-btn {
-    display: block;
     width: 3.5em;
     height: 3.5em;
     border-radius: 50%;
@@ -562,7 +561,7 @@ body {
 body {
   &.is-dark {
     .circular-menu {
-      &:after {
+      &::after {
         background: darken($dark-sidebar, 2%);
         box-shadow: 0 4px 8px 0 hsla(0, 0%, 0%, 0.3) !important;
       }

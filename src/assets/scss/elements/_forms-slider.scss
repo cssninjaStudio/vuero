@@ -1,4 +1,4 @@
-/*! _forms-slider.scss | Huro | Css ninja 2020-2021 */
+/*! _forms-slider.scss | Vuero | Css ninja 2020-2021 */
 
 /*
     1. NoUI Slider
@@ -23,7 +23,7 @@
       background: $info;
       color: $smoke-white;
 
-      &:after {
+      &::after {
         background: $info;
       }
     }
@@ -38,7 +38,7 @@
       background: $success;
       color: $smoke-white;
 
-      &:after {
+      &::after {
         background: $success;
       }
     }
@@ -53,7 +53,7 @@
       background: $warning;
       color: $smoke-white;
 
-      &:after {
+      &::after {
         background: $warning;
       }
     }
@@ -68,7 +68,7 @@
       background: $danger;
       color: $smoke-white;
 
-      &:after {
+      &::after {
         background: $danger;
       }
     }
@@ -104,13 +104,13 @@
       height: 22px;
       top: -6px;
 
-      &:before {
+      &::before {
         height: 10px;
         top: 5px;
         left: 8px;
       }
 
-      &:after {
+      &::after {
         height: 10px;
         top: 5px;
         left: 11px;
@@ -132,13 +132,13 @@
       height: 18px;
       top: -6px;
 
-      &:before {
+      &::before {
         height: 10px;
         top: 3px;
         left: 6px;
       }
 
-      &:after {
+      &::after {
         height: 10px;
         top: 3px;
         left: 9px;
@@ -150,11 +150,11 @@
     width: 28px;
     height: 28px;
 
-    &:before {
+    &::before {
       left: 11px;
     }
 
-    &:after {
+    &::after {
       left: 16px;
     }
   }
@@ -163,7 +163,7 @@
     background: $primary;
     color: $smoke-white;
 
-    &:after {
+    &::after {
       background: $primary;
     }
   }
@@ -186,13 +186,13 @@
       height: 22px;
       top: -6px;
 
-      &:before {
+      &::before {
         width: 10px !important;
         top: 7px !important;
         left: 6px !important;
       }
 
-      &:after {
+      &::after {
         width: 10px !important;
         top: 11px !important;
         left: 6px !important;
@@ -214,13 +214,13 @@
       height: 18px;
       top: -6px;
 
-      &:before {
+      &::before {
         width: 8px !important;
         top: 6px !important;
         left: 4px !important;
       }
 
-      &:after {
+      &::after {
         width: 8px !important;
         top: 9px !important;
         left: 4px !important;
@@ -232,12 +232,12 @@
     width: 28px;
     height: 28px;
 
-    &:before {
+    &::before {
       left: 7px;
       top: 10px;
     }
 
-    &:after {
+    &::after {
       left: 7px;
       top: 15px;
     }
@@ -271,7 +271,7 @@
     transition: all 0.3s;
     padding: 0;
 
-    &:after {
+    &::after {
       content: '';
       position: absolute;
       top: -1px;
@@ -308,7 +308,7 @@ body {
         .noUi-tooltip {
           background: $info;
 
-          &:after {
+          &::after {
             background: $info;
           }
         }
@@ -322,7 +322,7 @@ body {
         .noUi-tooltip {
           background: $success;
 
-          &:after {
+          &::after {
             background: $success;
           }
         }
@@ -336,7 +336,7 @@ body {
         .noUi-tooltip {
           background: $warning;
 
-          &:after {
+          &::after {
             background: $warning;
           }
         }
@@ -350,7 +350,7 @@ body {
         .noUi-tooltip {
           background: $danger;
 
-          &:after {
+          &::after {
             background: $danger;
           }
         }
@@ -368,8 +368,8 @@ body {
         background: $dark-sidebar;
         border-color: lighten($dark-sidebar, 12%);
 
-        &:before,
-        &:after {
+        &::before,
+        &::after {
           background: lighten($dark-sidebar, 20%);
         }
       }
@@ -377,7 +377,7 @@ body {
       .noUi-tooltip {
         background: $accent;
 
-        &:after {
+        &::after {
           background: $accent;
         }
       }

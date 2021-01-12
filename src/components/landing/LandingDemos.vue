@@ -22,7 +22,7 @@
       <div class="columns is-multiline">
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-dashboards-personal-1.png"
@@ -54,7 +54,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-dashboards-personal-2.png"
@@ -86,7 +86,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-dashboards-personal-3.png"
@@ -118,7 +118,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-dashboards-finance-1.png"
@@ -150,7 +150,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-dashboards-finance-2.png"
@@ -182,7 +182,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-dashboards-finance-3.png"
@@ -214,7 +214,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-dashboards-banking-1.png"
@@ -246,7 +246,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-dashboards-banking-2.png"
@@ -278,7 +278,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-dashboards-banking-3.png"
@@ -310,7 +310,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-dashboards-business-1.png"
@@ -342,7 +342,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-dashboards-business-2.png"
@@ -374,7 +374,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <span class="new-tag">New</span>
             <img
               class="light-image-block-l"
@@ -407,7 +407,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-dashboards-lifestyle-1.png"
@@ -439,7 +439,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-dashboards-lifestyle-2.png"
@@ -471,7 +471,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-dashboards-lifestyle-3.png"
@@ -503,7 +503,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <span class="new-tag">New</span>
             <img
               class="light-image-block-l"
@@ -536,7 +536,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-dashboards-ecommerce-1.png"
@@ -568,7 +568,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-dashboards-food.png"
@@ -600,7 +600,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-list-view-1.png"
@@ -632,7 +632,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-list-view-2.png"
@@ -664,7 +664,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-list-view-3.png"
@@ -696,7 +696,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-list-view-4.png"
@@ -728,7 +728,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-list-flex-1.png"
@@ -760,7 +760,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-list-flex-2.png"
@@ -792,7 +792,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-list-flex-3.png"
@@ -824,7 +824,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-list-datatable-1.png"
@@ -856,7 +856,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-list-datatable-2.png"
@@ -888,7 +888,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-list-datatable-3.png"
@@ -920,7 +920,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-list-datatable-4.png"
@@ -952,7 +952,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-grid-cards-1.png"
@@ -984,7 +984,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-grid-cards-2.png"
@@ -1016,7 +1016,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-grid-cards-3.png"
@@ -1048,7 +1048,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-grid-cards-4.png"
@@ -1080,7 +1080,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-grid-tiles-1.png"
@@ -1112,7 +1112,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-grid-tiles-2.png"
@@ -1144,7 +1144,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-grid-tiles-3.png"
@@ -1176,7 +1176,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-grid-users-1.png"
@@ -1208,7 +1208,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-grid-users-2.png"
@@ -1240,7 +1240,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-grid-users-3.png"
@@ -1272,7 +1272,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-grid-users-4.png"
@@ -1304,7 +1304,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-messaging-chat.png"
@@ -1336,7 +1336,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-profile-view.png"
@@ -1368,7 +1368,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-profile-edit-1.png"
@@ -1400,7 +1400,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-profile-edit-2.png"
@@ -1432,7 +1432,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-profile-edit-3.png"
@@ -1464,7 +1464,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-profile-edit-4.png"
@@ -1496,7 +1496,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-profile-notifications.png"
@@ -1528,7 +1528,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-profile-settings.png"
@@ -1560,7 +1560,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-projects-projects.png"
@@ -1592,7 +1592,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-projects-projects-2.png"
@@ -1624,7 +1624,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-projects-projects-3.png"
@@ -1656,7 +1656,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-projects-project.png"
@@ -1688,7 +1688,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-kanban-board.png"
@@ -1720,7 +1720,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-search-results.png"
@@ -1752,7 +1752,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-search-empty.png"
@@ -1784,7 +1784,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-saas-billing.png"
@@ -1816,7 +1816,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-welcome.png"
@@ -1848,7 +1848,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-action-page-1.png"
@@ -1880,7 +1880,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-action-page-2.png"
@@ -1912,7 +1912,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-utility-account-confirm.png"
@@ -1944,7 +1944,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-utility-promotion.png"
@@ -1976,7 +1976,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-utility-invoice.png"
@@ -2008,7 +2008,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-dashboards-widgets-ui.png"
@@ -2040,7 +2040,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-dashboards-widgets-creative.png"
@@ -2073,7 +2073,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-dashboards-widgets-list.png"
@@ -2105,7 +2105,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-dashboards-widgets-stats.png"
@@ -2137,7 +2137,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-form-layouts-1.png"
@@ -2169,7 +2169,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-form-layouts-2.png"
@@ -2201,7 +2201,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-form-layouts-3.png"
@@ -2233,7 +2233,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-form-layouts-4.png"
@@ -2265,7 +2265,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-onboarding-page-1.png"
@@ -2297,7 +2297,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-onboarding-page-2.png"
@@ -2329,7 +2329,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-onboarding-page-3.png"
@@ -2361,7 +2361,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-onboarding-page-4.png"
@@ -2393,7 +2393,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-onboarding-page-5.png"
@@ -2447,7 +2447,7 @@
       <div class="columns is-multiline">
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-dashboards-personal-1.png"
@@ -2479,7 +2479,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-dashboards-personal-2.png"
@@ -2511,7 +2511,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-dashboards-personal-3.png"
@@ -2543,7 +2543,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-dashboards-finance-1.png"
@@ -2575,7 +2575,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-dashboards-finance-2.png"
@@ -2607,7 +2607,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-dashboards-finance-3.png"
@@ -2639,7 +2639,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-dashboards-banking-1.png"
@@ -2671,7 +2671,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-dashboards-banking-2.png"
@@ -2703,7 +2703,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-dashboards-banking-3.png"
@@ -2735,7 +2735,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-dashboards-business-1.png"
@@ -2767,7 +2767,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-dashboards-business-2.png"
@@ -2799,7 +2799,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <span class="new-tag">New</span>
             <img
               class="light-image-block-l"
@@ -2832,7 +2832,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-dashboards-lifestyle-1.png"
@@ -2864,7 +2864,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-dashboards-lifestyle-2.png"
@@ -2896,7 +2896,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-dashboards-lifestyle-3.png"
@@ -2928,7 +2928,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <span class="new-tag">New</span>
             <img
               class="light-image-block-l"
@@ -2961,7 +2961,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-dashboards-ecommerce-1.png"
@@ -2993,7 +2993,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-dashboards-food.png"
@@ -3025,7 +3025,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-profile-view.png"
@@ -3057,7 +3057,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-list-view-1.png"
@@ -3089,7 +3089,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-list-view-2.png"
@@ -3121,7 +3121,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-list-view-3.png"
@@ -3153,7 +3153,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-list-view-4.png"
@@ -3185,7 +3185,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-list-flex-1.png"
@@ -3217,7 +3217,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-list-flex-2.png"
@@ -3249,7 +3249,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-list-flex-3.png"
@@ -3281,7 +3281,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-list-datatable-1.png"
@@ -3313,7 +3313,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-list-datatable-2.png"
@@ -3345,7 +3345,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-list-datatable-3.png"
@@ -3377,7 +3377,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-list-datatable-4.png"
@@ -3409,7 +3409,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-grid-cards-1.png"
@@ -3441,7 +3441,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-grid-cards-2.png"
@@ -3473,7 +3473,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-grid-cards-3.png"
@@ -3505,7 +3505,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-grid-cards-4.png"
@@ -3537,7 +3537,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-grid-tiles-1.png"
@@ -3569,7 +3569,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-grid-tiles-2.png"
@@ -3601,7 +3601,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-grid-tiles-3.png"
@@ -3633,7 +3633,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-grid-users-1.png"
@@ -3665,7 +3665,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-grid-users-2.png"
@@ -3697,7 +3697,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-grid-users-3.png"
@@ -3729,7 +3729,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-grid-users-4.png"
@@ -3761,7 +3761,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-messaging-chat.png"
@@ -3793,7 +3793,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-profile-edit-1.png"
@@ -3825,7 +3825,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-profile-edit-2.png"
@@ -3857,7 +3857,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-profile-edit-3.png"
@@ -3889,7 +3889,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-profile-edit-4.png"
@@ -3921,7 +3921,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-profile-notifications.png"
@@ -3953,7 +3953,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-profile-settings.png"
@@ -3985,7 +3985,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-projects-projects.png"
@@ -4017,7 +4017,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-projects-projects-2.png"
@@ -4049,7 +4049,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-projects-projects-3.png"
@@ -4081,7 +4081,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-projects-project.png"
@@ -4113,7 +4113,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-kanban-board.png"
@@ -4145,7 +4145,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-search-results.png"
@@ -4177,7 +4177,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-search-empty.png"
@@ -4209,7 +4209,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-saas-billing.png"
@@ -4241,7 +4241,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-welcome.png"
@@ -4273,7 +4273,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-action-page-1.png"
@@ -4305,7 +4305,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-action-page-2.png"
@@ -4337,7 +4337,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-utility-account-confirm.png"
@@ -4369,7 +4369,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-utility-promotion.png"
@@ -4401,7 +4401,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-utility-invoice.png"
@@ -4433,7 +4433,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-dashboards-widgets-ui.png"
@@ -4465,7 +4465,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-dashboards-widgets-creative.png"
@@ -4498,7 +4498,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-dashboards-widgets-list.png"
@@ -4530,7 +4530,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-dashboards-widgets-stats.png"
@@ -4562,7 +4562,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-form-layouts-1.png"
@@ -4594,7 +4594,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-form-layouts-2.png"
@@ -4626,7 +4626,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-form-layouts-3.png"
@@ -4658,7 +4658,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-form-layouts-4.png"
@@ -4690,7 +4690,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-onboarding-page-1.png"
@@ -4722,7 +4722,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-onboarding-page-2.png"
@@ -4754,7 +4754,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-onboarding-page-3.png"
@@ -4786,7 +4786,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-onboarding-page-4.png"
@@ -4818,7 +4818,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-onboarding-page-5.png"
@@ -4872,7 +4872,7 @@
       <div class="columns is-multiline">
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <span class="new-tag">New</span>
             <img
               class="light-image-block-l"
@@ -4905,7 +4905,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <span class="new-tag">New</span>
             <img
               class="light-image-block-l"
@@ -4938,7 +4938,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <span class="new-tag">New</span>
             <img
               class="light-image-block-l"
@@ -4971,7 +4971,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <span class="new-tag">New</span>
             <img
               class="light-image-block-l"
@@ -5004,7 +5004,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <span class="new-tag">New</span>
             <img
               class="light-image-block-l"
@@ -5037,7 +5037,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               src="/@images/photo/screenshots/auth-signup.png"
               alt=""
@@ -5062,7 +5062,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               src="/@images/photo/screenshots/admin-utility-status.png"
               alt=""
@@ -5087,7 +5087,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-dashboards-apps-2.png"
@@ -5119,7 +5119,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/project-wizard-step-1.png"
@@ -5151,7 +5151,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/project-wizard-step-2.png"
@@ -5183,7 +5183,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/project-wizard-step-3.png"
@@ -5215,7 +5215,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/project-wizard-step-4.png"
@@ -5247,7 +5247,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/project-wizard-step-5.png"
@@ -5279,7 +5279,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/project-wizard-step-6.png"
@@ -5311,7 +5311,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/project-wizard-step-7.png"
@@ -5343,7 +5343,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/project-wizard-step-8.png"
@@ -5375,7 +5375,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               src="/@images/photo/screenshots/error-page-1.png"
               alt=""
@@ -5400,7 +5400,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               src="/@images/photo/screenshots/error-page-2.png"
               alt=""
@@ -5425,7 +5425,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               src="/@images/photo/screenshots/error-page-3.png"
               alt=""
@@ -5450,7 +5450,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               src="/@images/photo/screenshots/error-page-4.png"
               alt=""
@@ -5475,7 +5475,7 @@
 
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               src="/@images/photo/screenshots/error-page-5.png"
               alt=""
@@ -5522,7 +5522,7 @@
       <div class="columns is-multiline">
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-blank-page-1.png"
@@ -5553,7 +5553,7 @@
         </div>
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-blank-page-2.png"
@@ -5584,7 +5584,7 @@
         </div>
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-blank-page-3.png"
@@ -5615,7 +5615,7 @@
         </div>
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/admin-blank-page-4.png"
@@ -5646,7 +5646,7 @@
         </div>
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-blank-page-1.png"
@@ -5677,7 +5677,7 @@
         </div>
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-blank-page-2.png"
@@ -5708,7 +5708,7 @@
         </div>
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-blank-page-3.png"
@@ -5739,7 +5739,7 @@
         </div>
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-blank-page-4.png"
@@ -5770,7 +5770,7 @@
         </div>
         <!-- Demo item -->
         <div class="column is-4 has-text-centered">
-          <figure class="huro-demo-wrapper">
+          <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               src="/@images/photo/screenshots/webapp-blank-page-5.png"

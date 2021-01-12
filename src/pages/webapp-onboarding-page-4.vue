@@ -27,7 +27,7 @@
               <div class="title-wrap">
                 <p>Looks like you're new here</p>
                 <h2 class="dark-inverted">
-                  Welcome to Huro. What would you like to do?
+                  Welcome to Vuero. What would you like to do?
                 </h2>
               </div>
 

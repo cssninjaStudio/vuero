@@ -71,7 +71,7 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Avatar</h3>
                     <p>
-                      Huro Avatars are rounded images used for media and
+                      Vuero Avatars are rounded images used for media and
                       personal pages. Avatar sizes can be controled with css
                       classes. Available modifier classes are
                       <code>is-small</code>, <code>is-medium</code>,
@@ -79,57 +79,75 @@
                       <code>is-xl</code>. See code for more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
                     <div class="h-avatar is-small">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/7.jpg"
+                        src="/@images/avatars/photos/7.jpg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                     <div class="h-avatar">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/8.jpg"
+                        src="/@images/avatars/photos/8.jpg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                     <div class="h-avatar is-medium">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/11.jpg"
+                        src="/@images/avatars/photos/11.jpg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                     <div class="h-avatar is-large">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/21.jpg"
+                        src="/@images/avatars/photos/21.jpg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                     <div class="h-avatar is-big">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/13.jpg"
+                        src="/@images/avatars/photos/13.jpg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                     <div class="h-avatar is-xl">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/5.jpg"
+                        src="/@images/avatars/photos/5.jpg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
 
@@ -169,57 +187,75 @@
                       about usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
                     <div class="h-avatar is-small">
                       <img
                         class="avatar is-squared"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/7.jpg"
+                        src="/@images/avatars/photos/7.jpg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                     <div class="h-avatar">
                       <img
                         class="avatar is-squared"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/8.jpg"
+                        src="/@images/avatars/photos/8.jpg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                     <div class="h-avatar is-medium">
                       <img
                         class="avatar is-squared"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/11.jpg"
+                        src="/@images/avatars/photos/11.jpg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                     <div class="h-avatar is-large">
                       <img
                         class="avatar is-squared"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/21.jpg"
+                        src="/@images/avatars/photos/21.jpg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                     <div class="h-avatar is-big">
                       <img
                         class="avatar is-squared"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/13.jpg"
+                        src="/@images/avatars/photos/13.jpg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                     <div class="h-avatar is-xl">
                       <img
                         class="avatar is-squared"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/5.jpg"
+                        src="/@images/avatars/photos/5.jpg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
 
@@ -260,57 +296,75 @@
                       element. See code for more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
                     <div class="h-avatar is-small has-dot">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/7.jpg"
+                        src="/@images/avatars/photos/7.jpg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                     <div class="h-avatar has-dot">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/8.jpg"
+                        src="/@images/avatars/photos/8.jpg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                     <div class="h-avatar is-medium has-dot">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/11.jpg"
+                        src="/@images/avatars/photos/11.jpg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                     <div class="h-avatar is-large has-dot">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/21.jpg"
+                        src="/@images/avatars/photos/21.jpg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                     <div class="h-avatar is-big has-dot">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/13.jpg"
+                        src="/@images/avatars/photos/13.jpg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                     <div class="h-avatar is-xl has-dot">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/5.jpg"
+                        src="/@images/avatars/photos/5.jpg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
 
@@ -352,57 +406,75 @@
                       details about usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
                     <div class="h-avatar is-small has-dot has-dot-squared">
                       <img
                         class="avatar is-squared"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/7.jpg"
+                        src="/@images/avatars/photos/7.jpg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                     <div class="h-avatar has-dot has-dot-squared">
                       <img
                         class="avatar is-squared"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/8.jpg"
+                        src="/@images/avatars/photos/8.jpg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                     <div class="h-avatar is-medium has-dot has-dot-squared">
                       <img
                         class="avatar is-squared"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/11.jpg"
+                        src="/@images/avatars/photos/11.jpg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                     <div class="h-avatar is-large has-dot has-dot-squared">
                       <img
                         class="avatar is-squared"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/21.jpg"
+                        src="/@images/avatars/photos/21.jpg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                     <div class="h-avatar is-big has-dot has-dot-squared">
                       <img
                         class="avatar is-squared"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/13.jpg"
+                        src="/@images/avatars/photos/13.jpg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                     <div class="h-avatar is-xl has-dot has-dot-squared">
                       <img
                         class="avatar is-squared"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/5.jpg"
+                        src="/@images/avatars/photos/5.jpg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
 
@@ -443,57 +515,75 @@
                       code for more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
                     <div class="h-avatar is-medium has-dot">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/7.jpg"
+                        src="/@images/avatars/photos/7.jpg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                     <div class="h-avatar is-medium has-dot dot-primary">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/8.jpg"
+                        src="/@images/avatars/photos/8.jpg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                     <div class="h-avatar is-medium has-dot dot-info">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/11.jpg"
+                        src="/@images/avatars/photos/11.jpg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                     <div class="h-avatar is-medium has-dot dot-warning">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/21.jpg"
+                        src="/@images/avatars/photos/21.jpg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                     <div class="h-avatar is-medium has-dot dot-danger">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/13.jpg"
+                        src="/@images/avatars/photos/13.jpg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                     <div class="h-avatar is-medium has-dot dot-grey">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/5.jpg"
+                        src="/@images/avatars/photos/5.jpg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
 
@@ -527,99 +617,135 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Avatar Badges</h3>
                     <p>
-                      Huro avatars can have badge images attached to them.
+                      Vuero avatars can have badge images attached to them.
                       Simply add a 1:1 ratio image with the
                       <code>badge</code> class inside an
                       <code>h-avatar</code> element.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
                     <div class="h-avatar is-small">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/7.jpg"
+                        src="/@images/avatars/photos/7.jpg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                       <img
                         class="badge"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/icons/flags/united-states-of-america.svg"
+                        src="/@images/icons/flags/united-states-of-america.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                     <div class="h-avatar">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/8.jpg"
+                        src="/@images/avatars/photos/8.jpg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                       <img
                         class="badge"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/icons/flags/united-states-of-america.svg"
+                        src="/@images/icons/flags/united-states-of-america.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                     <div class="h-avatar is-medium">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/11.jpg"
+                        src="/@images/avatars/photos/11.jpg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                       <img
                         class="badge"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/icons/flags/united-states-of-america.svg"
+                        src="/@images/icons/flags/united-states-of-america.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                     <div class="h-avatar is-large">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/21.jpg"
+                        src="/@images/avatars/photos/21.jpg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                       <img
                         class="badge"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/icons/flags/united-states-of-america.svg"
+                        src="/@images/icons/flags/united-states-of-america.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                     <div class="h-avatar is-big">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/13.jpg"
+                        src="/@images/avatars/photos/13.jpg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                       <img
                         class="badge"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/icons/flags/united-states-of-america.svg"
+                        src="/@images/icons/flags/united-states-of-america.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
                     <div class="h-avatar is-xl">
                       <img
                         class="avatar"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/avatars/photos/5.jpg"
+                        src="/@images/avatars/photos/5.jpg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                       <img
                         class="badge"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/icons/flags/united-states-of-america.svg"
+                        src="/@images/icons/flags/united-states-of-america.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                     </div>
 
@@ -666,8 +792,8 @@
                   more details about usage.
                 </p>
                 <a class="code-trigger">
-                  <i class="open" data-feather="code"></i>
-                  <i class="close" data-feather="x"></i>
+                  <Icon icon="feather:code" class="open" />
+                  <Icon icon="feather:x" class="close" />
                 </a>
               </div>
               <div class="card-inner">
@@ -750,8 +876,8 @@
                   usage.
                 </p>
                 <a class="code-trigger">
-                  <i class="open" data-feather="code"></i>
-                  <i class="close" data-feather="x"></i>
+                  <Icon icon="feather:code" class="open" />
+                  <Icon icon="feather:x" class="close" />
                 </a>
               </div>
               <div class="card-inner">
@@ -833,8 +959,8 @@
                   badges. See the code examples for more details about usage.
                 </p>
                 <a class="code-trigger">
-                  <i class="open" data-feather="code"></i>
-                  <i class="close" data-feather="x"></i>
+                  <Icon icon="feather:code" class="open" />
+                  <Icon icon="feather:x" class="close" />
                 </a>
               </div>
               <div class="card-inner">
@@ -844,9 +970,11 @@
                   </span>
                   <img
                     class="badge"
-                    src="https://via.placeholder.com/150x150"
-                    data-demo-src="/@images/icons/flags/united-states-of-america.svg"
+                    src="/@images/icons/flags/united-states-of-america.svg"
                     alt=""
+                    @error="
+                      $event.target.src = 'https://via.placeholder.com/150x150'
+                    "
                   />
                 </div>
                 <div class="h-avatar">
@@ -855,9 +983,11 @@
                   </span>
                   <img
                     class="badge"
-                    src="https://via.placeholder.com/150x150"
-                    data-demo-src="/@images/icons/flags/united-states-of-america.svg"
+                    src="/@images/icons/flags/united-states-of-america.svg"
                     alt=""
+                    @error="
+                      $event.target.src = 'https://via.placeholder.com/150x150'
+                    "
                   />
                 </div>
                 <div class="h-avatar is-medium">
@@ -866,9 +996,11 @@
                   </span>
                   <img
                     class="badge"
-                    src="https://via.placeholder.com/150x150"
-                    data-demo-src="/@images/icons/flags/united-states-of-america.svg"
+                    src="/@images/icons/flags/united-states-of-america.svg"
                     alt=""
+                    @error="
+                      $event.target.src = 'https://via.placeholder.com/150x150'
+                    "
                   />
                 </div>
                 <div class="h-avatar is-large">
@@ -877,9 +1009,11 @@
                   </span>
                   <img
                     class="badge"
-                    src="https://via.placeholder.com/150x150"
-                    data-demo-src="/@images/icons/flags/united-states-of-america.svg"
+                    src="/@images/icons/flags/united-states-of-america.svg"
                     alt=""
+                    @error="
+                      $event.target.src = 'https://via.placeholder.com/150x150'
+                    "
                   />
                 </div>
                 <div class="h-avatar is-big">
@@ -888,9 +1022,11 @@
                   </span>
                   <img
                     class="badge"
-                    src="https://via.placeholder.com/150x150"
-                    data-demo-src="/@images/icons/flags/united-states-of-america.svg"
+                    src="/@images/icons/flags/united-states-of-america.svg"
                     alt=""
+                    @error="
+                      $event.target.src = 'https://via.placeholder.com/150x150'
+                    "
                   />
                 </div>
                 <div class="h-avatar is-xl">
@@ -899,9 +1035,11 @@
                   </span>
                   <img
                     class="badge"
-                    src="https://via.placeholder.com/150x150"
-                    data-demo-src="/@images/icons/flags/united-states-of-america.svg"
+                    src="/@images/icons/flags/united-states-of-america.svg"
                     alt=""
+                    @error="
+                      $event.target.src = 'https://via.placeholder.com/150x150'
+                    "
                   />
                 </div>
 
@@ -963,8 +1101,8 @@
                   mode.
                 </p>
                 <a class="code-trigger">
-                  <i class="open" data-feather="code"></i>
-                  <i class="close" data-feather="x"></i>
+                  <Icon icon="feather:code" class="open" />
+                  <Icon icon="feather:x" class="close" />
                 </a>
               </div>
               <div class="card-inner">
@@ -1108,8 +1246,8 @@
                   mode.
                 </p>
                 <a class="code-trigger">
-                  <i class="open" data-feather="code"></i>
-                  <i class="close" data-feather="x"></i>
+                  <Icon icon="feather:code" class="open" />
+                  <Icon icon="feather:x" class="close" />
                 </a>
               </div>
               <div class="card-inner">
@@ -1246,14 +1384,14 @@
               <div class="demo-title">
                 <h3 class="title is-thin is-5">Small Stack</h3>
                 <p>
-                  Huro avatars can be stacked in an slighlty overlaping line.
+                  Vuero avatars can be stacked in an slighlty overlaping line.
                   Simply wrap your avatars inside an
                   <code>avatar-stack</code> element. You can only use small,
                   standard and medium avatars.
                 </p>
                 <a class="code-trigger">
-                  <i class="open" data-feather="code"></i>
-                  <i class="close" data-feather="x"></i>
+                  <Icon icon="feather:code" class="open" />
+                  <Icon icon="feather:x" class="close" />
                 </a>
               </div>
               <div class="card-inner">
@@ -1261,9 +1399,12 @@
                   <div class="h-avatar is-small">
                     <img
                       class="avatar"
-                      src="https://via.placeholder.com/150x150"
-                      data-demo-src="/@images/avatars/photos/7.jpg"
+                      src="/@images/avatars/photos/7.jpg"
                       alt=""
+                      @error="
+                        $event.target.src =
+                          'https://via.placeholder.com/150x150'
+                      "
                     />
                   </div>
                   <div class="h-avatar is-small">
@@ -1274,17 +1415,23 @@
                   <div class="h-avatar is-small">
                     <img
                       class="avatar"
-                      src="https://via.placeholder.com/150x150"
-                      data-demo-src="/@images/avatars/photos/8.jpg"
+                      src="/@images/avatars/photos/8.jpg"
                       alt=""
+                      @error="
+                        $event.target.src =
+                          'https://via.placeholder.com/150x150'
+                      "
                     />
                   </div>
                   <div class="h-avatar is-small">
                     <img
                       class="avatar"
-                      src="https://via.placeholder.com/150x150"
-                      data-demo-src="/@images/avatars/photos/5.jpg"
+                      src="/@images/avatars/photos/5.jpg"
                       alt=""
+                      @error="
+                        $event.target.src =
+                          'https://via.placeholder.com/150x150'
+                      "
                     />
                   </div>
                   <div class="h-avatar is-small">
@@ -1344,14 +1491,14 @@
               <div class="demo-title">
                 <h3 class="title is-thin is-5">Standard Stack</h3>
                 <p>
-                  Huro avatars can be stacked in an slighlty overlaping line.
+                  Vuero avatars can be stacked in an slighlty overlaping line.
                   Simply wrap your avatars inside an
                   <code>avatar-stack</code> element. You can only use small,
                   standard and medium avatars.
                 </p>
                 <a class="code-trigger">
-                  <i class="open" data-feather="code"></i>
-                  <i class="close" data-feather="x"></i>
+                  <Icon icon="feather:code" class="open" />
+                  <Icon icon="feather:x" class="close" />
                 </a>
               </div>
               <div class="card-inner">
@@ -1359,9 +1506,12 @@
                   <div class="h-avatar">
                     <img
                       class="avatar"
-                      src="https://via.placeholder.com/150x150"
-                      data-demo-src="/@images/avatars/photos/11.jpg"
+                      src="/@images/avatars/photos/11.jpg"
                       alt=""
+                      @error="
+                        $event.target.src =
+                          'https://via.placeholder.com/150x150'
+                      "
                     />
                   </div>
                   <div class="h-avatar">
@@ -1372,17 +1522,23 @@
                   <div class="h-avatar">
                     <img
                       class="avatar"
-                      src="https://via.placeholder.com/150x150"
-                      data-demo-src="/@images/avatars/photos/18.jpg"
+                      src="/@images/avatars/photos/18.jpg"
                       alt=""
+                      @error="
+                        $event.target.src =
+                          'https://via.placeholder.com/150x150'
+                      "
                     />
                   </div>
                   <div class="h-avatar">
                     <img
                       class="avatar"
-                      src="https://via.placeholder.com/150x150"
-                      data-demo-src="/@images/avatars/photos/24.jpg"
+                      src="/@images/avatars/photos/24.jpg"
                       alt=""
+                      @error="
+                        $event.target.src =
+                          'https://via.placeholder.com/150x150'
+                      "
                     />
                   </div>
                   <div class="h-avatar">
@@ -1442,14 +1598,14 @@
               <div class="demo-title">
                 <h3 class="title is-thin is-5">Medium Stack</h3>
                 <p>
-                  Huro avatars can be stacked in an slighlty overlaping line.
+                  Vuero avatars can be stacked in an slighlty overlaping line.
                   Simply wrap your avatars inside an
                   <code>avatar-stack</code> element. You can only use small,
                   standard and medium avatars.
                 </p>
                 <a class="code-trigger">
-                  <i class="open" data-feather="code"></i>
-                  <i class="close" data-feather="x"></i>
+                  <Icon icon="feather:code" class="open" />
+                  <Icon icon="feather:x" class="close" />
                 </a>
               </div>
               <div class="card-inner">
@@ -1457,9 +1613,12 @@
                   <div class="h-avatar is-medium">
                     <img
                       class="avatar"
-                      src="https://via.placeholder.com/150x150"
-                      data-demo-src="/@images/avatars/photos/24.jpg"
+                      src="/@images/avatars/photos/24.jpg"
                       alt=""
+                      @error="
+                        $event.target.src =
+                          'https://via.placeholder.com/150x150'
+                      "
                     />
                   </div>
                   <div class="h-avatar is-medium">
@@ -1470,17 +1629,23 @@
                   <div class="h-avatar is-medium">
                     <img
                       class="avatar"
-                      src="https://via.placeholder.com/150x150"
-                      data-demo-src="/@images/avatars/photos/13.jpg"
+                      src="/@images/avatars/photos/13.jpg"
                       alt=""
+                      @error="
+                        $event.target.src =
+                          'https://via.placeholder.com/150x150'
+                      "
                     />
                   </div>
                   <div class="h-avatar is-medium">
                     <img
                       class="avatar"
-                      src="https://via.placeholder.com/150x150"
-                      data-demo-src="/@images/avatars/photos/8.jpg"
+                      src="/@images/avatars/photos/8.jpg"
                       alt=""
+                      @error="
+                        $event.target.src =
+                          'https://via.placeholder.com/150x150'
+                      "
                     />
                   </div>
                   <div class="h-avatar is-medium">

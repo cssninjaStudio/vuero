@@ -1,4 +1,4 @@
-/*! _widgets.scss | Huro | Css ninja 2020-2021 */
+/*! _widgets.scss | Vuero | Css ninja 2020-2021 */
 
 /* ==========================================================================
 Widget Styles
@@ -68,7 +68,7 @@ Widget Styles
       transition: all 0.3s;
 
       &.has-indicator {
-        &:after {
+        &::after {
           content: '';
           position: absolute;
           top: 3px;
@@ -130,7 +130,7 @@ body {
       .right {
         .right-icon {
           &.has-indicator {
-            &:after {
+            &::after {
               border-color: lighten($dark-sidebar, 6%);
             }
           }
@@ -178,7 +178,7 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      flex: 1 1 0px;
+      flex: 1 1 0;
 
       .inner-icon {
         display: flex;
@@ -1174,7 +1174,7 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      flex: 1 1 0px;
+      flex: 1 1 0;
 
       .inner-button {
         display: flex;
@@ -1335,7 +1335,6 @@ body {
       min-width: 36px;
       border-radius: 50%;
       color: lighten($light-text, 12%);
-      transition: all 0.3s;
       margin: 0 6px;
       border: 1px solid darken($fade-grey, 3%);
       box-shadow: $light-box-shadow;

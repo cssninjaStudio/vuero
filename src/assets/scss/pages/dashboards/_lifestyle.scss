@@ -1,4 +1,4 @@
-/*! _lifestyle.scss | Huro | Css ninja 2020-2021 */
+/*! _lifestyle.scss | Vuero | Css ninja 2020-2021 */
 
 /*
     1. Lifestyle Dashboard V1
@@ -451,7 +451,7 @@
 
             .heatmap-row-item {
               margin: 5px;
-              flex: 1 1 0px;
+              flex: 1 1 0;
               display: flex;
               justify-content: center;
               align-items: center;
@@ -843,7 +843,7 @@ body {
       }
 
       .header-meta {
-        margin-left: 0px;
+        margin-left: 0;
 
         h3 {
           color: $smoke-white;
@@ -1005,7 +1005,7 @@ body {
       }
 
       .header-meta {
-        margin-left: 0px;
+        margin-left: 0;
         padding-right: 30px;
 
         h3 {
@@ -1045,6 +1045,7 @@ body {
 
       .writing-stat {
         @extend .l-card;
+
         margin: 8px;
         width: calc(33.3% - 16px);
         padding: 12px;
@@ -1073,6 +1074,7 @@ body {
 
     .featured-authors {
       @extend .l-card;
+
       padding: 20px;
 
       .featured-authors-header {
@@ -1114,6 +1116,7 @@ body {
 
     .updates {
       @extend .l-card;
+
       padding: 20px;
       margin-top: 8px;
 
@@ -1418,7 +1421,7 @@ body {
             width: 100%;
             max-width: 260px;
             margin: 0 auto;
-            top: 0px;
+            top: 0;
             margin-top: -75px;
           }
         }
@@ -1465,7 +1468,7 @@ body {
             width: 100%;
             max-width: 260px;
             margin: 0 auto;
-            top: 0px;
+            top: 0;
             left: 0;
             margin-top: -34px;
           }

@@ -76,7 +76,7 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Accordion</h3>
                     <p>
-                      Huro provides an accordion component with enough styling
+                      Vuero provides an accordion component with enough styling
                       to be able to use it as is, out of the box. You have the
                       choice between a regular accordion, which means that each
                       item can be openened separately, and an exclusive
@@ -87,8 +87,8 @@
                       details.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner no-padding">

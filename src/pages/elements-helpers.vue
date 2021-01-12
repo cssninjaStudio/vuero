@@ -71,7 +71,7 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Helpers</h3>
                     <p>
-                      Huro provides some CSS helpers that can help you adding
+                      Vuero provides some CSS helpers that can help you adding
                       some styles without writing any CSS. Helpers have been
                       keep short to avoid bloat and unused CSS.
                     </p>
@@ -147,7 +147,7 @@
                               Sets a color on the target element following the
                               <code>color-*</code> pattern, where the first
                               <code>*</code> stands for the color variable name.
-                              Check the Huro colors to be able to use this
+                              Check the Vuero colors to be able to use this
                               helper properly.
                             </td>
                           </tr>
@@ -158,8 +158,8 @@
                               Sets a background color on the target element
                               following the <code>color-*</code> pattern, where
                               the first <code>*</code> stands for the color
-                              variable name. Check the Huro colors to be able to
-                              use this helper properly.
+                              variable name. Check the Vuero colors to be able
+                              to use this helper properly.
                             </td>
                           </tr>
                           <tr>

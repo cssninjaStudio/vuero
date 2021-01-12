@@ -18,7 +18,7 @@
                   src="/@images/logos/logo/logo-light.svg"
                   alt=""
                 />
-              </a>
+              </RouterLink>
               <span>Inbox</span>
 
               <label class="dark-mode">
@@ -133,9 +133,11 @@
                 <!--Contact-->
                 <div class="contact-block">
                   <img
-                    src="https://via.placeholder.com/150x150"
-                    data-demo-src="/@images/avatars/photos/7.jpg"
+                    src="/@images/avatars/photos/7.jpg"
                     alt=""
+                    @error="
+                      $event.target.src = 'https://via.placeholder.com/150x150'
+                    "
                   />
                   <div class="contact-meta">
                     <span>Alice Carasca</span>
@@ -145,9 +147,11 @@
                 <!--Contact-->
                 <div class="contact-block">
                   <img
-                    src="https://via.placeholder.com/150x150"
-                    data-demo-src="/@images/avatars/photos/25.jpg"
+                    src="/@images/avatars/photos/25.jpg"
                     alt=""
+                    @error="
+                      $event.target.src = 'https://via.placeholder.com/150x150'
+                    "
                   />
                   <div class="contact-meta">
                     <span>Melany Wallace</span>
@@ -157,9 +161,11 @@
                 <!--Contact-->
                 <div class="contact-block">
                   <img
-                    src="https://via.placeholder.com/150x150"
-                    data-demo-src="/@images/avatars/photos/18.jpg"
+                    src="/@images/avatars/photos/18.jpg"
                     alt=""
+                    @error="
+                      $event.target.src = 'https://via.placeholder.com/150x150'
+                    "
                   />
                   <div class="contact-meta">
                     <span>Esteban Castellanos</span>
@@ -169,9 +175,11 @@
                 <!--Contact-->
                 <div class="contact-block">
                   <img
-                    src="https://via.placeholder.com/150x150"
-                    data-demo-src="/@images/avatars/photos/32.jpg"
+                    src="/@images/avatars/photos/32.jpg"
                     alt=""
+                    @error="
+                      $event.target.src = 'https://via.placeholder.com/150x150'
+                    "
                   />
                   <div class="contact-meta">
                     <span>Jonathan Krugger</span>
@@ -181,9 +189,11 @@
                 <!--Contact-->
                 <div class="contact-block">
                   <img
-                    src="https://via.placeholder.com/150x150"
-                    data-demo-src="/@images/avatars/photos/38.jpg"
+                    src="/@images/avatars/photos/38.jpg"
                     alt=""
+                    @error="
+                      $event.target.src = 'https://via.placeholder.com/150x150'
+                    "
                   />
                   <div class="contact-meta">
                     <span>Christie Dallas</span>

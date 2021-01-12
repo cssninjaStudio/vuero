@@ -1,4 +1,4 @@
-/*! _table.scss | Huro | Css ninja 2020-2021 */
+/*! _table.scss | Vuero | Css ninja 2020-2021 */
 
 /*
     1. Flex Table
@@ -43,7 +43,7 @@
     padding: 0 10px;
 
     span {
-      flex: 1 1 0px;
+      flex: 1 1 0;
       display: flex;
       align-items: center;
       font-size: 0.8rem;
@@ -103,7 +103,7 @@
     }
 
     .flex-table-cell {
-      flex: 1 1 0px;
+      flex: 1 1 0;
       display: flex;
       align-items: center;
       padding: 0 10px;
@@ -624,7 +624,7 @@ body {
       position: relative;
       margin-bottom: 12px;
 
-      &:before {
+      &::before {
         content: attr(data-th);
         font-size: 0.9rem;
         text-transform: uppercase;
@@ -633,7 +633,7 @@ body {
       }
 
       &.no-label-mobile {
-        &:before {
+        &::before {
           display: none !important;
         }
       }

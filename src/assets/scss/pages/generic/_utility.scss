@@ -1,4 +1,4 @@
-/*! _utility.scss | Huro | Css ninja 2020-2021 */
+/*! _utility.scss | Vuero | Css ninja 2020-2021 */
 
 /* ==========================================================================
 Utility Pages
@@ -115,7 +115,7 @@ Utility Pages
               color: $dark-text;
               line-height: 1;
 
-              &:before {
+              &::before {
                 position: relative;
                 top: -12px;
                 content: '$';

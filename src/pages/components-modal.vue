@@ -71,7 +71,7 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">H Modal</h3>
                     <p>
-                      Huro provides a custom modal implementation. Use the
+                      Vuero provides a custom modal implementation. Use the
                       existing modal markup and paste it into your page to try
                       it. Use the <code>is-start</code>,
                       <code>is-centered</code>, <code>is-end</code> classes on
@@ -79,8 +79,8 @@
                       actions alignment.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -144,7 +144,7 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Modal Sizes</h3>
                     <p>
-                      Huro provides a custom modal implementation. Use the
+                      Vuero provides a custom modal implementation. Use the
                       existing modal markup and paste it into your page to try
                       it. Use the <code>is-small</code>, <code>is-medium</code>,
                       <code>is-large</code> and <code>is-big</code> classes on
@@ -188,7 +188,7 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Modal Forms</h3>
                     <p>
-                      Huro provides a custom modal implementation. Use the
+                      Vuero provides a custom modal implementation. Use the
                       existing modal markup and paste it into your page to try
                       it. Modals work pretty well with form elements. Check the
                       below examples to get some inspiration about how you can

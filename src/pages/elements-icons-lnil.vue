@@ -71,14 +71,14 @@
                   <div class="demo-title">
                     <h3 class="title is-thin is-5">Line Icons Light</h3>
                     <p>
-                      Huro is bundled with the <code>Line Icons</code> premium
+                      Vuero is bundled with the <code>Line Icons</code> premium
                       icon set. This set offers 1000 high quality premium
                       handcrafted icons. Please refer to the code example for
                       more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <i class="open" data-feather="code"></i>
-                      <i class="close" data-feather="x"></i>
+                      <Icon icon="feather:code" class="open" />
+                      <Icon icon="feather:x" class="close" />
                     </a>
                   </div>
 

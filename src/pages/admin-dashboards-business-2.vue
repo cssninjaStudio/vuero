@@ -77,15 +77,21 @@
                     <div class="h-avatar is-big">
                       <img
                         class="avatar light-image"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/photo/demo/brands/udemy.svg"
+                        src="/@images/photo/demo/brands/udemy.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                       <img
                         class="avatar dark-image"
-                        src="https://via.placeholder.com/150x150"
-                        data-demo-src="/@images/photo/demo/brands/udemy-dark.svg"
+                        src="/@images/photo/demo/brands/udemy-dark.svg"
                         alt=""
+                        @error="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
                       />
                       <button
                         class="button icon-button is-circle is-dark-outlined"
@@ -324,10 +330,13 @@
                         <div class="h-avatar is-medium">
                           <img
                             class="avatar"
-                            src="https://via.placeholder.com/150x150"
-                            data-demo-src="/@images/avatars/photos/31.jpg"
+                            src="/@images/avatars/photos/31.jpg"
                             alt=""
                             data-user-popover="27"
+                            @error="
+                              $event.target.src =
+                                'https://via.placeholder.com/150x150'
+                            "
                           />
                         </div>
                         <div class="flex-meta">
@@ -354,10 +363,13 @@
                         <div class="h-avatar is-medium">
                           <img
                             class="avatar"
-                            src="https://via.placeholder.com/150x150"
-                            data-demo-src="/@images/avatars/photos/23.jpg"
+                            src="/@images/avatars/photos/23.jpg"
                             alt=""
                             data-user-popover="21"
+                            @error="
+                              $event.target.src =
+                                'https://via.placeholder.com/150x150'
+                            "
                           />
                         </div>
                         <div class="flex-meta">
@@ -383,10 +395,13 @@
                         <div class="h-avatar is-medium">
                           <img
                             class="avatar"
-                            src="https://via.placeholder.com/150x150"
-                            data-demo-src="/@images/avatars/photos/32.jpg"
+                            src="/@images/avatars/photos/32.jpg"
                             alt=""
                             data-user-popover="28"
+                            @error="
+                              $event.target.src =
+                                'https://via.placeholder.com/150x150'
+                            "
                           />
                         </div>
                         <div class="flex-meta">
@@ -411,10 +426,13 @@
                         <div class="h-avatar is-medium">
                           <img
                             class="avatar"
-                            src="https://via.placeholder.com/150x150"
-                            data-demo-src="/@images/avatars/photos/13.jpg"
+                            src="/@images/avatars/photos/13.jpg"
                             alt=""
                             data-user-popover="6"
+                            @error="
+                              $event.target.src =
+                                'https://via.placeholder.com/150x150'
+                            "
                           />
                         </div>
                         <div class="flex-meta">

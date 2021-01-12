@@ -4,9 +4,9 @@
     <div class="header-area">
       <img
         class="sender-pic"
-        src="https://via.placeholder.com/150x150"
-        data-demo-src="/@images/avatars/photos/11.jpg"
+        src="/@images/avatars/photos/11.jpg"
         alt=""
+        @error="$event.target.src = 'https://via.placeholder.com/150x150'"
       />
       <div class="message-meta">
         <span class="message-title">Hop in for the next project review</span>
@@ -121,9 +121,9 @@
         <div class="reply-bubble">
           <div class="reply-as">
             <img
-              src="https://via.placeholder.com/150x150"
-              data-demo-src="/@images/avatars/photos/8.jpg"
+              src="/@images/avatars/photos/8.jpg"
               alt=""
+              @error="$event.target.src = 'https://via.placeholder.com/150x150'"
             />
             <div class="reply-details">
               <span>Reply as</span>
