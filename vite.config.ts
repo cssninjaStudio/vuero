@@ -4,6 +4,7 @@ import Voie from 'vite-plugin-voie'
 import ViteComponents from 'vite-plugin-components'
 import ViteFonts from 'vite-plugin-fonts'
 import PurgeIcons from 'vite-plugin-purge-icons'
+import VueI18n from '@intlify/vite-plugin-vue-i18n'
 import type { UserConfig } from 'vite'
 
 // const alias = [
@@ -80,6 +81,11 @@ const config: UserConfig = {
 
     // https://github.com/antfu/purge-icons/tree/main/packages/vite-plugin-purge-icons
     PurgeIcons(),
+
+    // https://github.com/intlify/vite-plugin-vue-i18n
+    VueI18n({
+      include: [path.resolve(__dirname, 'locales/**')],
+    }),
   ],
 }
 

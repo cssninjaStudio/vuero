@@ -2,8 +2,31 @@
 import { isDark } from '/@src/composition/state/ui/darkModeState.ts'
 import { activePanel } from '/@src/composition/state/ui/activePanelState'
 import useDropdown from '/@src/composition/use/useDropdown'
+import { useI18n } from 'vue-i18n'
+import { computed } from 'vue'
 
+const { locale } = useI18n()
 const { dropdownElement, isOpen, open } = useDropdown()
+
+const localFlagSrc = computed(() => {
+  switch (locale.value) {
+    case 'fr': 
+      return '/@images/icons/flags/france.svg'
+    case 'es': 
+      return '/@images/icons/flags/spain.svg'
+    case 'es-MX': 
+      return '/@images/icons/flags/mexico.svg'
+    case 'de': 
+      return '/@images/icons/flags/germany.svg'
+    case 'zh-CN': 
+      return '/@images/icons/flags/china.svg'
+    case 'en': 
+    default: 
+      return '/@images/icons/flags/united-states-of-america.svg'
+  }
+
+  return '/@images/icons/flags/united-states-of-america.svg'
+})
 </script>
 
 <template>
@@ -27,7 +50,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
       class="toolbar-link right-panel-trigger"
       @click="activePanel = 'languages'"
     >
-      <img src="/@images/icons/flags/united-states-of-america.svg" alt="" />
+      <img :src="localFlagSrc" alt="" />
     </a>
 
     <div class="toolbar-notifications is-hidden-mobile">

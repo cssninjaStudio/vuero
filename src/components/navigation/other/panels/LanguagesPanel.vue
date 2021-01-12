@@ -1,5 +1,8 @@
 <script setup lang="ts">
 import { activePanel } from '/@src/composition/state/ui/activePanelState'
+import { useI18n } from 'vue-i18n'
+
+const { locale, t } = useI18n()
 </script>
 
 <template>
@@ -12,7 +15,7 @@ import { activePanel } from '/@src/composition/state/ui/activePanelState'
 
     <div class="right-panel">
       <div class="right-panel-head">
-        <h3>Select Language</h3>
+        <h3>{{ t('select-language') }}</h3>
         <a class="close-panel" @click="activePanel = 'none'">
           <Icon icon="feather:chevron-right" />
         </a>
@@ -21,7 +24,13 @@ import { activePanel } from '/@src/composition/state/ui/activePanelState'
         <div class="languages-boxes">
           <div class="language-box">
             <div class="language-option">
-              <input type="radio" name="language_selection" checked />
+              <input
+                v-model="locale"
+                type="radio"
+                name="language_selection"
+                value="en"
+                checked
+              />
               <div class="language-option-inner">
                 <img
                   src="/@images/icons/flags/united-states-of-america.svg"
@@ -36,7 +45,12 @@ import { activePanel } from '/@src/composition/state/ui/activePanelState'
 
           <div class="language-box">
             <div class="language-option">
-              <input type="radio" name="language_selection" />
+              <input
+                v-model="locale"
+                type="radio"
+                name="language_selection"
+                value="fr"
+              />
               <div class="language-option-inner">
                 <img src="/@images/icons/flags/france.svg" alt="" />
                 <div class="indicator">
@@ -48,7 +62,12 @@ import { activePanel } from '/@src/composition/state/ui/activePanelState'
 
           <div class="language-box">
             <div class="language-option">
-              <input type="radio" name="language_selection" />
+              <input
+                v-model="locale"
+                type="radio"
+                name="language_selection"
+                value="es"
+              />
               <div class="language-option-inner">
                 <img src="/@images/icons/flags/spain.svg" alt="" />
                 <div class="indicator">
@@ -60,7 +79,12 @@ import { activePanel } from '/@src/composition/state/ui/activePanelState'
 
           <div class="language-box">
             <div class="language-option">
-              <input type="radio" name="language_selection" />
+              <input
+                v-model="locale"
+                type="radio"
+                name="language_selection"
+                value="de"
+              />
               <div class="language-option-inner">
                 <img src="/@images/icons/flags/germany.svg" alt="" />
                 <div class="indicator">
@@ -72,7 +96,12 @@ import { activePanel } from '/@src/composition/state/ui/activePanelState'
 
           <div class="language-box">
             <div class="language-option">
-              <input type="radio" name="language_selection" />
+              <input
+                v-model="locale"
+                type="radio"
+                name="language_selection"
+                value="es-MX"
+              />
               <div class="language-option-inner">
                 <img src="/@images/icons/flags/mexico.svg" alt="" />
                 <div class="indicator">
@@ -84,7 +113,12 @@ import { activePanel } from '/@src/composition/state/ui/activePanelState'
 
           <div class="language-box">
             <div class="language-option">
-              <input type="radio" name="language_selection" />
+              <input
+                v-model="locale"
+                type="radio"
+                name="language_selection"
+                value="zh-CN"
+              />
               <div class="language-option-inner">
                 <img src="/@images/icons/flags/china.svg" alt="" />
                 <div class="indicator">
