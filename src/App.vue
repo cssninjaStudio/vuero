@@ -11,7 +11,6 @@ watch(i18n.locale, () => {
 })
 </script>
 
-
 <template>
   <RouterView v-slot="{ Component }">
     <transition name="fade" mode="out-in">

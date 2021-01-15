@@ -400,4 +400,3 @@ useTitle('Messaging chat - Admin - Vuero')
 @import '../../assets/scss/abstracts/_variables.scss';
 @import '../../assets/scss/pages/messaging/_messaging.scss';
 </style>
-

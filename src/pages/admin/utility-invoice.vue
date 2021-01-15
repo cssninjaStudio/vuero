@@ -305,4 +305,3 @@ useTitle('Utility Invoice - Admin - Vuero')
 @import '../../assets/scss/abstracts/_mixins.scss';
 @import '../../assets/scss/pages/generic/_utility.scss';
 </style>
-

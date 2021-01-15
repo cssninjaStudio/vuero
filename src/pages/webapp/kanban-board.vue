@@ -611,4 +611,3 @@ useTitle('Kanban Board - WebApp - Vuero')
 @import '../../assets/scss/abstracts/_variables.scss';
 @import '../../assets/scss/pages/projects/_board.scss';
 </style>
-

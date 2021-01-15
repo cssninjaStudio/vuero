@@ -660,4 +660,3 @@ useTitle('List View 3 - Admin - Vuero')
 @import '../../assets/scss/abstracts/_mixins.scss';
 @import '../../assets/scss/pages/lists/_list-view.scss';
 </style>
-

@@ -32,4 +32,3 @@ useTitle('Error Page 1 - Vuero')
 @import '../../assets/scss/abstracts/_mixins.scss';
 @import '../../assets/scss/pages/generic/_utility.scss';
 </style>
-
