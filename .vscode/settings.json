@@ -22,4 +22,9 @@
   "vetur.validation.interpolation": false,
   "vetur.completion.tagCasing": "initial",
   "vetur.completion.autoImport": true,
+  "i18n-ally.localesPaths": [
+    "src/locales",
+    "src/assets/images/illustrations/messages",
+    "src/components/pages/inbox/messages"
+  ],
 }

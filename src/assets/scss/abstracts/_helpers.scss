@@ -3,15 +3,13 @@
 /*
     1. Spacing helpers
     2. Color helpers
-    3. Dark helpers
+    3. Shadow helpers
+    4. Dark helpers
 */
 
 /* ==========================================================================
 1. Spacing helpers
 ========================================================================== */
-
-$spaceamounts: 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 60, 70, 80, 90, 100;
-$sides: top, bottom, left, right;
 
 @each $space in $spaceamounts {
   @each $side in $sides {
@@ -77,46 +75,8 @@ $sides: top, bottom, left, right;
 2. Color helpers
 ========================================================================== */
 
-$colors: (
-  primary: $primary,
-  secondary: $secondary,
-  accent: $accent,
-  info: $info,
-  success: $success,
-  warning: $warning,
-  danger: $danger,
-  h-purple: $h-purple,
-  h-blue: $h-blue,
-  h-green: $h-green,
-  h-orange: $h-orange,
-  h-red: $h-red,
-  h-yellow: $h-yellow,
-  javascript: $javascript,
-  angular: $angular,
-  reactjs: $reactjs,
-  android: $android,
-  swift: $swift,
-  vuejs: $vuejs,
-  wordpress: $wordpress,
-  csharp: $csharp,
-  nodejs: $nodejs,
-  html: $html,
-  facebook: $facebook,
-  twitter: $twitter,
-  linkedin: $linkedin,
-  tumblr: $tumblr,
-  github: $github,
-  dribbble: $dribbble,
-  google-plus: $google-plus,
-  youtube: $youtube,
-  reddit: $reddit,
-  invision: $invision,
-  amazon: $amazon,
-  instagram: $instagram,
-);
-
 @mixin color-modifiers($attribute, $prefix) {
-  @each $name, $hex in $colors {
+  @each $name, $hex in $vuero-colors {
     &#{$prefix}#{$name} {
       #{$attribute}: $hex;
     }
@@ -131,8 +91,20 @@ $colors: (
   @include color-modifiers($attribute: 'background', $prefix: '-');
 }
 
+// /* ==========================================================================
+// 3. Shadow helpers
+// ========================================================================== */
+
+.has-light-shadow {
+  box-shadow: $light-box-shadow;
+
+  &.has-light-border {
+    border: 1px solid darken($fade-grey, 3%);
+  }
+}
+
 /* ==========================================================================
-3. Dark helpers
+4. Dark helpers
 ========================================================================== */
 
 body {

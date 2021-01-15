@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { watch } from 'vue'
+import { computed, watch } from 'vue'
 import { useRoute } from 'vue-router'
 
 import useDropdown from '/@src/composition/use/useDropdown'
@@ -7,9 +7,16 @@ import {
   activeSubnav,
   toggleSubnav,
 } from '/@src/composition/state/ui/webappNavState'
+import { useWindowScroll } from '@vueuse/core'
 
 const route = useRoute()
 const { dropdownElement, isOpen, open } = useDropdown()
+
+const { y } = useWindowScroll()
+
+const isScrolling = computed(() => {
+  return y.value > 30
+})
 
 watch(
   () => route.path,
@@ -20,7 +27,7 @@ watch(
 </script>
 
 <template>
-  <div class="webapp-navbar">
+  <div :class="[isScrolling && 'is-scrolled']" class="webapp-navbar">
     <div class="webapp-navbar-inner">
       <div class="left">
         <RouterLink :to="{ name: 'index' }" class="brand">

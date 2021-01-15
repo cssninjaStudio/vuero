@@ -9,25 +9,10 @@ SCSS Imports
 @import '../font-awesome-v5/index.css';
 @import '../line-icons-pro/index.css';
 
-@import './_overrides/initial-variables.sass';
-@import 'bulma/sass/utilities/functions.sass';
-@import './_overrides/derived-variables.sass';
-@import 'bulma/sass/utilities/animations.sass';
-@import 'bulma/sass/utilities/mixins.sass';
-@import 'bulma/sass/utilities/controls.sass';
-
-@import 'bulma/sass/base/all.sass';
-@import 'bulma/sass/elements/all.sass';
-@import 'bulma/sass/form/all.sass';
-@import 'bulma/sass/components/all.sass';
-@import 'bulma/sass/grid/all.sass';
-@import 'bulma/sass/layout/all.sass';
-@import 'bulma/sass/helpers/all.sass';
-// @import 'bulma/sass/extensions/all';
-
 @import './abstracts/_variables.scss';
-@import './abstracts/_brands.scss';
-@import './abstracts/_shadows.scss';
+
+@import 'bulma/bulma.sass';
+
 @import './abstracts/_typography.scss';
 @import './abstracts/_animations.scss';
 @import './abstracts/_helpers.scss';
@@ -101,7 +86,7 @@ SCSS Imports
 @import './pages/projects/_project.scss';
 @import './pages/messaging/_messaging.scss';
 @import './pages/messaging/_messaging-webapp.scss';
-@import './pages/auth/_auth.scss';
+// @import './pages/auth/_auth.scss';
 @import './pages/profile/_user-profile.scss';
 @import './pages/generic/_onboarding.scss';
 @import './pages/generic/_search.scss';

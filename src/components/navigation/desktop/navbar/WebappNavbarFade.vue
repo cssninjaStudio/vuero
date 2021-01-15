@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { watch } from 'vue'
+import { useWindowScroll } from '@vueuse/core'
+import { computed, watch } from 'vue'
 import { useRoute } from 'vue-router'
 
 import useDropdown from '/@src/composition/use/useDropdown'
@@ -11,6 +12,12 @@ import {
 const route = useRoute()
 const { dropdownElement, isOpen, open } = useDropdown()
 
+const { y } = useWindowScroll()
+
+const isScrolling = computed(() => {
+  return y.value > 30
+})
+
 watch(
   () => route.path,
   () => {
@@ -20,7 +27,7 @@ watch(
 </script>
 
 <template>
-  <div class="webapp-navbar is-transparent">
+  <div :class="[isScrolling && 'is-scrolled']" class="webapp-navbar is-transparent">
     <div class="webapp-navbar-inner">
       <div class="left">
         <RouterLink :to="{ name: 'index' }" class="brand">

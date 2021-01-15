@@ -38,7 +38,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
           <RouterLink :to="{ name: 'elements-tags' }">Tags & Badges</RouterLink>
         </li>
 
-        <li class="has-children">
+        <li class="has-children" >
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
               >Icons <Icon icon="feather:chevron-right"
@@ -73,7 +73,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
             </li>
           </ul>
         </li>
-        <li class="has-children">
+        <li class="has-children" >
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
               >Cards <Icon icon="feather:chevron-right"
@@ -110,7 +110,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
           <RouterLink :to="{ name: 'elements-tooltips' }">Tooltips</RouterLink>
         </li>
         <li class="divider"></li>
-        <li class="has-children">
+        <li class="has-children" >
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
               >Forms <Icon icon="feather:chevron-right"
@@ -161,7 +161,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
             </li>
           </ul>
         </li>
-        <li class="has-children">
+        <li class="has-children" >
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
               >Toggles <Icon icon="feather:chevron-right"

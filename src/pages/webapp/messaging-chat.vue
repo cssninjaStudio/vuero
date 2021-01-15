@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useTitle } from '@vueuse/core'
+
 import useDropdown from '/@src/composition/use/useDropdown'
 
 const {
