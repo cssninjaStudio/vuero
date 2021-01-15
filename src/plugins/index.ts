@@ -12,5 +12,5 @@ export default (context: ViteSSGContext) => {
   installNprogress(context)
   installI18n(context)
 
-  installDirectives(context.app)
+  installDirectives(context)
 }

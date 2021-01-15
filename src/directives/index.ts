@@ -1,6 +1,6 @@
-import type { App } from 'vue'
+import type { ViteSSGContext } from 'vite-ssg'
 import hasChildren from './has-children'
 
-export default function installDirectives(app: App) {
+export default function installDirectives({ app }: ViteSSGContext) {
   hasChildren(app)
 }
