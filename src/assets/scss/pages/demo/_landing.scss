@@ -27,9 +27,6 @@
 1. Defaults
 ========================================================================== */
 
-$landing-dark-1: #0c0e14;
-$landing-dark-2: #191c2b;
-
 .landing-page-wrapper {
   .container {
     max-width: 1140px;
@@ -601,7 +598,7 @@ $landing-dark-2: #191c2b;
 
 .boxed-features {
   .flex-card {
-    @extend .l-card;
+    @include vuero-l-card();
 
     padding: 30px;
     display: flex;
@@ -640,6 +637,14 @@ $landing-dark-2: #191c2b;
         max-width: 200px;
         margin: 0 auto;
       }
+    }
+  }
+}
+
+.is-dark {
+  .boxed-features {
+    .flex-card {
+      @include vuero-card--dark();
     }
   }
 }
@@ -906,7 +911,7 @@ $landing-dark-2: #191c2b;
   }
 
   &::after {
-    @extend %loader;
+    // @extend %loader;
 
     position: absolute !important;
     top: 40%;

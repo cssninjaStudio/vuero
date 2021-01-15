@@ -145,10 +145,10 @@ body {
 ========================================================================== */
 
 .gauge-widget {
-  @extend .l-card;
+  @include vuero-l-card();
 
   &.is-straight {
-    @extend .s-card;
+    @include vuero-s-card();
   }
 
   text-align: center;
@@ -163,10 +163,10 @@ body {
 ========================================================================== */
 
 .icon-toolbar-widget {
-  @extend .l-card;
+  @include vuero-l-card();
 
   &.is-straight {
-    @extend .s-card;
+    @include vuero-s-card();
   }
 
   padding: 16px;
@@ -237,10 +237,10 @@ body {
 ========================================================================== */
 
 .text-widget {
-  @extend .l-card;
+  @include vuero-l-card();
 
   &.is-straight {
-    @extend .s-card;
+    @include vuero-s-card();
   }
 
   .widget-content {
@@ -290,10 +290,10 @@ body {
 ========================================================================== */
 
 .tags-widget {
-  @extend .l-card;
+  @include vuero-l-card();
 
   &.is-straight {
-    @extend .s-card;
+    @include vuero-s-card();
   }
 
   .widget-content {
@@ -315,7 +315,7 @@ body {
     margin-right: -6px;
 
     .calendar-square {
-      @extend .l-card;
+      @include vuero-l-card();
 
       flex: 1;
       margin: 6px;
@@ -368,10 +368,10 @@ body {
 ========================================================================== */
 
 .image-widget {
-  @extend .l-card;
+  @include vuero-l-card();
 
   &.is-straight {
-    @extend .s-card;
+    @include vuero-s-card();
   }
 
   position: relative;
@@ -421,10 +421,10 @@ body {
 ========================================================================== */
 
 .list-widget {
-  @extend .l-card;
+  @include vuero-l-card();
 
   &.is-straight {
-    @extend .s-card;
+    @include vuero-s-card();
   }
 
   ul {
@@ -468,10 +468,10 @@ body {
 ========================================================================== */
 
 .picker-widget {
-  @extend .l-card;
+  @include vuero-l-card();
 
   &.is-straight {
-    @extend .s-card;
+    @include vuero-s-card();
   }
 
   .calendar {
@@ -545,10 +545,10 @@ body {
 ========================================================================== */
 
 .stats-widget {
-  @extend .l-card;
+  @include vuero-l-card();
 
   &.is-straight {
-    @extend .s-card;
+    @include vuero-s-card();
   }
 
   padding: 20px 0 0 0;
@@ -606,10 +606,10 @@ body {
 ========================================================================== */
 
 .search-widget {
-  @extend .l-card;
+  @include vuero-l-card();
 
   &.is-straight {
-    @extend .s-card;
+    @include vuero-s-card();
   }
 
   .field {
@@ -700,10 +700,10 @@ body {
 ========================================================================== */
 
 .icon-list-widget {
-  @extend .l-card;
+  @include vuero-l-card();
 
   &.is-straight {
-    @extend .s-card;
+    @include vuero-s-card();
   }
 
   .icon-list {
@@ -794,10 +794,10 @@ body {
 ========================================================================== */
 
 .video-widget {
-  @extend .l-card;
+  @include vuero-l-card();
 
   &.is-straight {
-    @extend .s-card;
+    @include vuero-s-card();
   }
 
   padding: 10px;
@@ -876,10 +876,10 @@ body {
 ========================================================================== */
 
 .inbox-widget {
-  @extend .l-card;
+  @include vuero-l-card();
 
   &.is-straight {
-    @extend .s-card;
+    @include vuero-s-card();
   }
 
   .sender-block {
@@ -976,10 +976,10 @@ body {
 
 .illustration-widget {
   &.illustration-widget-v1 {
-    @extend .l-card;
+    @include vuero-l-card();
 
     &.is-straight {
-      @extend .s-card;
+      @include vuero-s-card();
     }
 
     padding: 40px 30px;
@@ -1028,10 +1028,10 @@ body {
   }
 
   &.illustration-widget-v2 {
-    @extend .l-card;
+    @include vuero-l-card();
 
     &.is-straight {
-      @extend .s-card;
+      @include vuero-s-card();
     }
 
     padding: 16px;
@@ -1054,10 +1054,10 @@ body {
   }
 
   &.illustration-widget-v3 {
-    @extend .l-card;
+    @include vuero-l-card();
 
     &.is-straight {
-      @extend .s-card;
+      @include vuero-s-card();
     }
 
     padding: 24px;
@@ -1099,10 +1099,10 @@ body {
 ========================================================================== */
 
 .creative-list-widget {
-  @extend .l-card;
+  @include vuero-l-card();
 
   &.is-straight {
-    @extend .s-card;
+    @include vuero-s-card();
   }
 
   .creative-list {
@@ -1159,10 +1159,10 @@ body {
 ========================================================================== */
 
 .social-buttons-widget {
-  @extend .l-card;
+  @include vuero-l-card();
 
   &.is-straight {
-    @extend .s-card;
+    @include vuero-s-card();
   }
 
   padding: 16px;
@@ -1278,10 +1278,10 @@ body {
 ========================================================================== */
 
 .call-widget {
-  @extend .l-card;
+  @include vuero-l-card();
 
   &.is-straight {
-    @extend .s-card;
+    @include vuero-s-card();
   }
 
   padding: 40px 30px;
@@ -1390,10 +1390,10 @@ body {
 ========================================================================== */
 
 .avatar-list-widget {
-  @extend .l-card;
+  @include vuero-l-card();
 
   &.is-straight {
-    @extend .s-card;
+    @include vuero-s-card();
   }
 
   padding: 14px;
@@ -1504,10 +1504,10 @@ body {
 ========================================================================== */
 
 .contact-widget {
-  @extend .l-card;
+  @include vuero-l-card();
 
   &.is-straight {
-    @extend .s-card;
+    @include vuero-s-card();
   }
 
   &.is-reversed {
@@ -1618,10 +1618,10 @@ body {
 ========================================================================== */
 
 .followers-widget {
-  @extend .l-card;
+  @include vuero-l-card();
 
   &.is-straight {
-    @extend .s-card;
+    @include vuero-s-card();
   }
 
   .channels {
@@ -1686,10 +1686,10 @@ body {
 ========================================================================== */
 
 .cart-widget {
-  @extend .l-card;
+  @include vuero-l-card();
 
   &.is-straight {
-    @extend .s-card;
+    @include vuero-s-card();
   }
 
   .cart-items {

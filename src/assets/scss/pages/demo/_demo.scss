@@ -13,7 +13,7 @@
 ========================================================================== */
 
 .demo-card {
-  @extend .s-card;
+  @include vuero-s-card();
 
   position: relative;
   margin-bottom: 1.5rem;
@@ -193,7 +193,7 @@
 }
 
 .color-card {
-  @extend .s-card;
+  @include vuero-s-card();
 
   display: flex;
   align-items: center;
@@ -348,6 +348,8 @@
 body {
   &.is-dark {
     .demo-card {
+      @include vuero-card--dark();
+
       .demo-title {
         p {
           code {

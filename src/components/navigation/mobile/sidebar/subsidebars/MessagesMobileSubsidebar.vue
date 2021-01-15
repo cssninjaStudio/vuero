@@ -136,3 +136,8 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
     </div>
   </div>
 </template>
+
+<style lang="scss">
+@import '../../../../../assets/scss/abstracts/_variables.scss';
+@import '../../../../../assets/scss/layout/_sidebar-mobile.scss';
+</style>

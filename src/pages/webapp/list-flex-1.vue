@@ -934,3 +934,8 @@ useTitle('List Flex 1 - WebApp - Vuero')
     </div>
   </WebappLayout>
 </template>
+
+<style lang="scss">
+@import '../../assets/scss/abstracts/_variables.scss';
+@import '../../assets/scss/pages/lists/_list-flex.scss';
+</style>

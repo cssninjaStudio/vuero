@@ -605,3 +605,9 @@ useTitle('List View 3 - WebApp - Vuero')
     </div>
   </WebappLayout>
 </template>
+
+<style lang="scss">
+@import '../../assets/scss/abstracts/_variables.scss';
+@import '../../assets/scss/abstracts/_mixins.scss';
+@import '../../assets/scss/pages/lists/_list-view.scss';
+</style>

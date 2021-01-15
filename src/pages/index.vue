@@ -565,3 +565,10 @@ useTitle('Vuero - A complete Vue 3 design system')
     </div>
   </MinimalLightLayout>
 </template>
+
+
+<style lang="scss">
+@import '../assets/scss/abstracts/_variables.scss';
+@import '../assets/scss/abstracts/_mixins.scss';
+@import '../assets/scss/pages/demo/_landing.scss';
+</style>

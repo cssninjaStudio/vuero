@@ -10,6 +10,7 @@ SCSS Imports
 @import '../line-icons-pro/index.css';
 
 @import './abstracts/_variables.scss';
+@import './abstracts/_mixins.scss';
 
 @import 'bulma/bulma.sass';
 
@@ -17,13 +18,7 @@ SCSS Imports
 @import './abstracts/_animations.scss';
 @import './abstracts/_helpers.scss';
 
-@import './layout/_pageloader.scss';
 @import './layout/_layout.scss';
-@import './layout/_navbar.scss';
-@import './layout/_sidebar.scss';
-@import './layout/_sidebar-panel.scss';
-@import './layout/_sidebar-mobile.scss';
-@import './layout/_right-panel.scss';
 @import './layout/_utilities.scss';
 
 @import './elements/_buttons.scss';
@@ -66,38 +61,8 @@ SCSS Imports
 @import './components/_timeline.scss';
 @import './components/_circle-chart.scss';
 
-@import './pages/demo/_landing.scss';
 @import './pages/demo/_demo.scss';
-@import './pages/dashboards/_personal.scss';
-@import './pages/dashboards/_finance.scss';
-@import './pages/dashboards/_banking.scss';
-@import './pages/dashboards/_business.scss';
-@import './pages/dashboards/_lifestyle.scss';
-@import './pages/dashboards/_ecommerce.scss';
-@import './pages/dashboards/_apps.scss';
-@import './pages/dashboards/_hub.scss';
-@import './pages/lists/_list-view.scss';
-@import './pages/lists/_list-flex.scss';
-@import './pages/grids/_grid-users.scss';
-@import './pages/grids/_grid-cards.scss';
-@import './pages/grids/_grid-tiles.scss';
-@import './pages/projects/_board.scss';
-@import './pages/projects/_projects.scss';
-@import './pages/projects/_project.scss';
-@import './pages/messaging/_messaging.scss';
-@import './pages/messaging/_messaging-webapp.scss';
-// @import './pages/auth/_auth.scss';
-@import './pages/profile/_user-profile.scss';
-@import './pages/generic/_onboarding.scss';
-@import './pages/generic/_search.scss';
-@import './pages/generic/_subpages.scss';
-@import './pages/generic/_forms.scss';
-@import './pages/generic/_utility.scss';
 @import './pages/generic/_widgets.scss';
-@import './pages/generic/_widgets-lists.scss';
-@import './pages/generic/_widgets-stats.scss';
-@import './pages/generic/_wizard.scss';
-@import './pages/generic/_inbox.scss';
 
 @import './layout/_responsive.scss';
 

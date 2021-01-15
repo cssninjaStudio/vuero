@@ -316,3 +316,9 @@ const activeTab = ref<'components' | 'plugins'>('components')
     </div>
   </div>
 </template>
+
+<style lang="scss">
+@import '../../../../../assets/scss/abstracts/_variables.scss';
+@import '../../../../../assets/scss/abstracts/_mixins.scss';
+@import '../../../../../assets/scss/layout/_navbar.scss';
+</style>

@@ -349,3 +349,8 @@ useTitle('Messaging chat - WebApp - Vuero')
     </div>
   </MinimalLayout>
 </template>
+
+<style lang="scss">
+@import '../../assets/scss/abstracts/_variables.scss';
+@import '../../assets/scss/pages/messaging/_messaging-webapp.scss';
+</style>

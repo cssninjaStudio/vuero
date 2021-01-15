@@ -93,7 +93,7 @@
 
   &.tile-grid-v1 {
     .tile-grid-item {
-      @extend .s-card;
+      @include vuero-s-card();
 
       border-radius: 14px;
       padding: 16px;
@@ -140,7 +140,7 @@
 .tile-grid {
   &.tile-grid-v2 {
     .tile-grid-item {
-      @extend .s-card;
+      @include vuero-s-card();
 
       border-radius: 14px;
       padding: 16px;
@@ -243,7 +243,7 @@ body {
     }
 
     .tile-grid-item {
-      @extend .s-card;
+      @include vuero-s-card();
 
       padding: 10px;
       border-radius: 16px;

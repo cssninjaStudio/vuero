@@ -116,7 +116,7 @@
     padding: 10px 0 20px 0;
 
     .profile-card {
-      @extend .s-card;
+      @include vuero-s-card();
 
       padding: 30px;
 
@@ -716,7 +716,7 @@ body {
   }
 
   .account-box {
-    @extend .s-card;
+    @include vuero-s-card();
 
     &.is-navigation {
       .media-flex-center {

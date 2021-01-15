@@ -93,9 +93,9 @@
         }
 
         .content-wrap {
-          flex-grow: 2;
+          @include vuero-s-card();
 
-          @extend .s-card;
+          flex-grow: 2;
 
           .content-box {
             display: flex;
@@ -196,6 +196,8 @@ body {
             }
 
             .content-wrap {
+              @include vuero-card--dark();
+
               .content-box {
                 .status {
                   background: lighten($dark-sidebar, 20%);

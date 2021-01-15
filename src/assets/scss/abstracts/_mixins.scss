@@ -1,0 +1,290 @@
+@mixin vuero-card() {
+  &.has-margin-bottom {
+    margin-bottom: 1.5rem;
+  }
+
+  &.is-flat {
+    box-shadow: none;
+  }
+
+  &.is-raised {
+    box-shadow: $light-box-shadow;
+  }
+
+  &.is-primary {
+    background: $primary;
+    border-color: $primary;
+
+    .title,
+    .subtitle,
+    h1,
+    h2,
+    h3,
+    h4,
+    p {
+      color: $smoke-white !important;
+    }
+  }
+
+  &.is-secondary {
+    background: $secondary !important;
+    border-color: $secondary !important;
+
+    .title,
+    .subtitle,
+    h1,
+    h2,
+    h3,
+    h4,
+    p {
+      color: $smoke-white !important;
+    }
+  }
+
+  &.is-info {
+    background: $info !important;
+    border-color: $info !important;
+
+    .title,
+    .subtitle,
+    h1,
+    h2,
+    h3,
+    h4,
+    p {
+      color: $smoke-white !important;
+    }
+  }
+
+  &.is-success {
+    background: $success !important;
+    border-color: $success !important;
+
+    .title,
+    .subtitle,
+    h1,
+    h2,
+    h3,
+    h4,
+    p {
+      color: $smoke-white !important;
+    }
+  }
+
+  &.is-warning {
+    background: $warning !important;
+    border-color: $warning !important;
+
+    .title,
+    .subtitle,
+    h1,
+    h2,
+    h3,
+    h4,
+    p {
+      color: $smoke-white !important;
+    }
+  }
+
+  &.is-danger {
+    background: $danger !important;
+    border-color: $danger !important;
+
+    .title,
+    .subtitle,
+    h1,
+    h2,
+    h3,
+    h4,
+    p {
+      color: $smoke-white !important;
+    }
+  }
+
+  .card-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .left,
+    .right {
+      display: flex;
+      align-items: center;
+    }
+
+    .left {
+      .title {
+        font-size: 1.2rem;
+        font-weight: 500;
+      }
+    }
+
+    .right {
+      justify-content: flex-end;
+    }
+  }
+
+  .card-inner {
+    padding-top: 1.75rem;
+  }
+}
+
+@mixin vuero-card--dark() {
+  background: lighten($dark-sidebar, 6%);
+  border-color: lighten($dark-sidebar, 12%);
+
+  &.is-primary {
+    background: $accent;
+    border-color: $accent;
+  }
+
+  .h-avatar {
+    img {
+      border-color: lighten($dark-sidebar, 6%) !important;
+    }
+  }
+
+  .avatar-stack {
+    .h-avatar {
+      border-color: lighten($dark-sidebar, 6%) !important;
+
+      .avatar {
+        &.is-more {
+          .inner {
+            border-color: lighten($dark-sidebar, 6%) !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin vuero-card--advanced() {
+  flex: 1;
+  display: inline-block;
+  width: 100%;
+  background-color: $white;
+  border: 1px solid darken($fade-grey, 3%);
+  transition: all 0.3s;
+
+  .card-head,
+  .card-foot {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .left {
+      display: flex;
+      align-items: center;
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+  }
+
+  .card-head {
+    border-bottom: 1px solid darken($fade-grey, 3%);
+  }
+
+  .card-foot {
+    border-top: 1px solid darken($fade-grey, 3%);
+  }
+
+  .card-body {
+    padding: 20px;
+  }
+}
+
+@mixin vuero-h-card() {
+  box-shadow: none;
+  border-radius: 4px;
+  border: 1px solid darken($fade-grey, 3%);
+
+  .card-header {
+    box-shadow: none;
+
+    .card-header-title {
+      font-family: $font-alt;
+      font-weight: 600;
+    }
+  }
+
+  .card-image {
+    img {
+      object-fit: cover;
+    }
+  }
+
+  .card-footer {
+    a {
+      font-family: $font;
+      color: $light-text;
+    }
+  }
+}
+
+@mixin vuero-h-card--dark() {
+  background: lighten($dark-sidebar, 6%);
+  border-color: lighten($dark-sidebar, 12%);
+
+  .card-header {
+    .card-header-title {
+      color: $dark-dark-text;
+    }
+  }
+
+  .card-footer {
+    border-color: lighten($dark-sidebar, 12%);
+
+    a {
+      border-color: lighten($dark-sidebar, 12%);
+    }
+  }
+
+  .h-avatar {
+    .badge {
+      border-color: lighten($dark-sidebar, 6%);
+    }
+  }
+}
+
+@mixin vuero-r-card() {
+  @include vuero-card();
+
+  flex: 1;
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+  background-color: $white;
+  border-radius: 10px;
+  border: 1px solid darken($fade-grey, 3%);
+  transition: all 0.3s;
+}
+@mixin vuero-s-card() {
+  @include vuero-card();
+
+  flex: 1;
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+  background-color: $white;
+  border-radius: 6px;
+  border: 1px solid darken($fade-grey, 3%);
+  transition: all 0.3s;
+}
+@mixin vuero-l-card() {
+  @include vuero-card();
+
+  flex: 1;
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+  background-color: $white;
+  border-radius: 16px;
+  border: 1px solid darken($fade-grey, 3%);
+  transition: all 0.3s;
+}

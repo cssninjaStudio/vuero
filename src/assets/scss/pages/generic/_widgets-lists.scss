@@ -15,7 +15,7 @@ List Widgets Styles
 ========================================================================== */
 
 .list-widget {
-  @extend .l-card;
+  @include vuero-l-card();
 
   padding: 30px;
 
@@ -24,7 +24,7 @@ List Widgets Styles
   }
 
   &.is-straight {
-    @extend .s-card;
+    @include vuero-s-card();
   }
 
   &.tabbed-widget {

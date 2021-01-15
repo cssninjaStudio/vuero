@@ -428,7 +428,7 @@ body {
 .card-grid {
   &.card-grid-v3 {
     .card-grid-item {
-      @extend .s-card;
+      @include vuero-s-card();
 
       position: relative;
       text-align: center;
@@ -509,7 +509,7 @@ body {
 .card-grid {
   &.card-grid-v4 {
     .card-grid-item {
-      @extend .s-card;
+      @include vuero-s-card();
 
       display: flex;
       flex-direction: column;

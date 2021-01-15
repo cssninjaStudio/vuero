@@ -364,7 +364,7 @@ body {
       margin: 0 auto;
 
       .wizard-card {
-        @extend .l-card;
+        @include vuero-l-card();
 
         text-align: center;
         background: none;
@@ -877,7 +877,7 @@ body {
 
         .left {
           .uploader-actions {
-            @extend .l-card;
+            @include vuero-l-card();
 
             display: flex;
             padding: 10px 16px;
@@ -1617,7 +1617,7 @@ body {
         .edit-box {
           position: relative;
 
-          @extend .l-card;
+          @include vuero-l-card();
 
           &:hover {
             border-color: $primary;

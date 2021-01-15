@@ -42,7 +42,7 @@
     margin-bottom: 1.5rem;
 
     .project-grid-item {
-      @extend .s-card;
+      @include vuero-s-card();
 
       text-align: center;
       box-shadow: none;

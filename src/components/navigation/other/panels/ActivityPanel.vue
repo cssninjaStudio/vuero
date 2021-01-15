@@ -455,3 +455,9 @@ const activeTab = ref<'team' | 'projects' | 'schedule'>('team')
     </div>
   </div>
 </template>
+
+<style lang="scss">
+@import '../../../../assets/scss/abstracts/_variables.scss';
+@import '../../../../assets/scss/abstracts/_mixins.scss';
+@import '../../../../assets/scss/layout/_right-panel.scss';
+</style>

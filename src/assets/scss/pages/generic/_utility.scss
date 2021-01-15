@@ -30,7 +30,7 @@ Utility Pages
 
   .wrapper-inner {
     .action-box {
-      @extend .s-card;
+      @include vuero-s-card();
 
       padding: 40px;
 
@@ -89,7 +89,7 @@ Utility Pages
   max-width: 840px;
 
   .wrapper-outer {
-    @extend .s-card;
+    @include vuero-s-card();
 
     display: flex;
     padding: 0;
@@ -487,7 +487,7 @@ Utility Pages
 
   .invoice-body {
     .invoice-card {
-      @extend .s-card;
+      @include vuero-s-card();
 
       padding: 0;
 

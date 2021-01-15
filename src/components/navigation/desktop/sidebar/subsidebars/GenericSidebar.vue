@@ -18,7 +18,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
     </div>
     <div class="inner" data-simplebar>
       <ul>
-        <li class="has-children" >
+        <li v-has-children class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
               >Personal <Icon icon="feather:chevron-right"
@@ -54,7 +54,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
             </li>
           </ul>
         </li>
-        <li class="has-children" >
+        <li v-has-children class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
               >Finance <Icon icon="feather:chevron-right"
@@ -90,7 +90,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
             </li>
           </ul>
         </li>
-        <li class="has-children" >
+        <li v-has-children class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
               >Banking <Icon icon="feather:chevron-right"
@@ -126,7 +126,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
             </li>
           </ul>
         </li>
-        <li class="has-children" >
+        <li v-has-children class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
               >Business <Icon icon="feather:chevron-right"
@@ -162,7 +162,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
             </li>
           </ul>
         </li>
-        <li class="has-children" >
+        <li v-has-children class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
               >Lifestyle <Icon icon="feather:chevron-right"
@@ -207,7 +207,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
             </li>
           </ul>
         </li>
-        <li class="has-children" >
+        <li v-has-children class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
               >Ecommerce <Icon icon="feather:chevron-right"
@@ -225,7 +225,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
             </li>
           </ul>
         </li>
-        <li class="has-children" >
+        <li v-has-children class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
               >Apps <Icon icon="feather:chevron-right"
@@ -275,7 +275,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
           <RouterLink :to="{ name: 'wizard-v1' }">Wizard</RouterLink>
         </li>
         <li class="divider"></li>
-        <li class="has-children" >
+        <li v-has-children class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
               >Charts <Icon icon="feather:chevron-right"
@@ -302,7 +302,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
             </li>
           </ul>
         </li>
-        <li class="has-children" >
+        <li v-has-children class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
               >Widgets <Icon icon="feather:chevron-right"
@@ -347,7 +347,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
             </li>
           </ul>
         </li>
-        <li class="has-children" >
+        <li v-has-children class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
               >Form Layouts <Icon icon="feather:chevron-right"
@@ -392,7 +392,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
             </li>
           </ul>
         </li>
-        <li class="has-children" >
+        <li v-has-children class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
               >Starters <Icon icon="feather:chevron-right"
@@ -486,3 +486,8 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
     </div>
   </div>
 </template>
+
+<style lang="scss">
+@import '../../../../../assets/scss/abstracts/_variables.scss';
+@import '../../../../../assets/scss/layout/_sidebar-panel.scss';
+</style>

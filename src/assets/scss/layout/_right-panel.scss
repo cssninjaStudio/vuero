@@ -306,7 +306,7 @@ body {
         height: calc(100% - 55px);
 
         .team-card {
-          @extend .s-card;
+          @include vuero-s-card();
 
           display: flex !important;
           align-items: center;
@@ -367,7 +367,7 @@ body {
         }
 
         .project-card {
-          @extend .s-card;
+          @include vuero-s-card();
 
           padding: 16px !important;
           margin-bottom: 16px;
@@ -552,6 +552,8 @@ body {
         .right-panel-body {
           .team-card,
           .project-card {
+            @include vuero-card--dark();
+
             background: lighten($dark-sidebar, 2%) !important;
             border-color: lighten($dark-sidebar, 8%) !important;
           }

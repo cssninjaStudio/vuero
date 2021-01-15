@@ -16,7 +16,7 @@
 .business-dashboard {
   &.flights-dashboard {
     .booking-bar-wrapper {
-      @extend .s-card;
+      @include vuero-s-card();
 
       position: relative;
       background: $primary;
@@ -99,7 +99,7 @@
 
     .flights-summary-wrapper {
       .flight-summary {
-        @extend .s-card;
+        @include vuero-s-card();
 
         display: flex;
         align-items: center;
@@ -170,7 +170,7 @@
       padding: 1.5rem 0;
 
       .flight-card {
-        @extend .s-card;
+        @include vuero-s-card();
 
         display: flex;
         align-items: center;
@@ -316,7 +316,7 @@
     }
 
     .company-card {
-      @extend .s-card;
+      @include vuero-s-card();
 
       padding: 30px;
       margin-bottom: 1.5rem;
@@ -328,7 +328,7 @@
     }
 
     .filters-card {
-      @extend .s-card;
+      @include vuero-s-card();
 
       padding: 30px;
       margin-bottom: 1.5rem;
@@ -365,6 +365,8 @@ body {
     .business-dashboard {
       &.flights-dashboard {
         .booking-bar-wrapper {
+          @include vuero-card--dark();
+
           background: lighten($dark-sidebar, 4%);
           border-color: lighten($dark-sidebar, 12%);
           box-shadow: $light-box-shadow;
@@ -372,6 +374,8 @@ body {
 
         .flights-summary-wrapper {
           .flight-summary {
+            @include vuero-card--dark();
+
             &:hover {
               border-color: $accent !important;
             }
@@ -402,6 +406,8 @@ body {
 
         .flights {
           .flight-card {
+            @include vuero-card--dark();
+
             .start,
             .end {
               span {
@@ -411,6 +417,11 @@ body {
               }
             }
           }
+        }
+
+        .company-card,
+        .filters-card {
+          @include vuero-card--dark();
         }
       }
     }
@@ -470,7 +481,7 @@ body {
     }
 
     .dashboard-card {
-      @extend .s-card;
+      @include vuero-s-card();
 
       height: 100%;
 
@@ -634,6 +645,16 @@ body {
 
     .table-wrapper {
       min-height: 0;
+    }
+  }
+}
+
+.is-dark {
+  .business-dashboard {
+    &.company-dashboard {
+      .dashboard-card {
+        @include vuero-card--dark();
+      }
     }
   }
 }
@@ -839,7 +860,7 @@ body {
       .user-grid {
         &.user-grid-v4 {
           .grid-item {
-            @extend .l-card;
+            @include vuero-l-card();
           }
         }
       }
@@ -887,6 +908,16 @@ body {
               border-color: $accent !important;
               box-shadow: $accent-box-shadow !important;
               color: $white !important;
+            }
+          }
+        }
+
+        .recent-rookies {
+          .user-grid {
+            &.user-grid-v4 {
+              .grid-item {
+                @include vuero-card--dark();
+              }
             }
           }
         }

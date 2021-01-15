@@ -22,7 +22,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         <li>
           <RouterLink :to="{ name: 'components-avatars' }">Avatars</RouterLink>
         </li>
-        <li class="has-children" >
+        <li v-has-children class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
               >Accordions <Icon icon="feather:chevron-right"
@@ -81,7 +81,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
             >Progress</RouterLink
           >
         </li>
-        <li class="has-children" >
+        <li v-has-children class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
               >Tabs <Icon icon="feather:chevron-right"
@@ -104,7 +104,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
             </li>
           </ul>
         </li>
-        <li class="has-children" >
+        <li v-has-children class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
               >Flex Table <Icon icon="feather:chevron-right"
@@ -145,7 +145,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
           <RouterLink :to="{ name: 'components-snacks' }">Snacks</RouterLink>
         </li>
         <li class="divider"></li>
-        <li class="has-children" >
+        <li v-has-children class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
               >Plugins <Icon icon="feather:chevron-right"
@@ -231,7 +231,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
             </li>
           </ul>
         </li>
-        <li class="has-children" >
+        <li v-has-children class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
               >Rich Text <Icon icon="feather:chevron-right"
@@ -258,3 +258,8 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
     </div>
   </div>
 </template>
+
+<style lang="scss">
+@import '../../../../../assets/scss/abstracts/_variables.scss';
+@import '../../../../../assets/scss/layout/_sidebar-panel.scss';
+</style>

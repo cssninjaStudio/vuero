@@ -1438,3 +1438,9 @@ useTitle('Grid Cards 2 - Admin - Vuero')
     </div>
   </DefaultLayout>
 </template>
+
+<style lang="scss">
+@import '../../assets/scss/abstracts/_variables.scss';
+@import '../../assets/scss/abstracts/_mixins.scss';
+@import '../../assets/scss/pages/grids/_grid-cards.scss';
+</style>

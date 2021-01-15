@@ -452,3 +452,8 @@ useTitle('Components - Hub - Vuero')
     </div>
   </DefaultLayout>
 </template>
+
+<style lang="scss">
+@import '../../assets/scss/abstracts/_variables.scss';
+@import '../../assets/scss/pages/dashboards/_hub.scss';
+</style>

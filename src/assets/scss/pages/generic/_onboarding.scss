@@ -47,7 +47,7 @@ Onboarding Layouts
       margin: 0 auto;
 
       .onboarding-card {
-        @extend .r-card;
+        @include vuero-r-card();
 
         margin: 8px;
         width: calc(33.3% - 16px);
@@ -102,6 +102,8 @@ body {
       .onboarding-wrap {
         .onboarding-wrap-inner {
           .onboarding-card {
+            @include vuero-card--dark();
+
             h3 {
               color: $dark-dark-text;
             }
@@ -148,7 +150,7 @@ body {
         margin: 0 auto;
 
         .onboarding-card {
-          @extend .r-card;
+          @include vuero-r-card();
 
           margin: 8px;
           width: calc(33.3% - 16px);
@@ -209,7 +211,7 @@ body {
         margin: 0 auto;
 
         .onboarding-card {
-          @extend .r-card;
+          @include vuero-r-card();
 
           margin: 8px;
           width: calc(33.3% - 16px);

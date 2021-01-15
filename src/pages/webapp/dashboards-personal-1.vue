@@ -202,3 +202,9 @@ useTitle('Dashboards Personal 1 - WebApp - Vuero')
     </div>
   </WebappLayout>
 </template>
+
+<style lang="scss">
+@import '../../assets/scss/abstracts/_variables.scss';
+@import '../../assets/scss/abstracts/_mixins.scss';
+@import '../../assets/scss/pages/dashboards/_personal.scss';
+</style>

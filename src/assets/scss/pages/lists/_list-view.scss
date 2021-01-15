@@ -77,7 +77,7 @@
 .list-view {
   &.list-view-v1 {
     .list-view-item {
-      @extend .r-card;
+      @include vuero-r-card();
 
       margin-bottom: 16px;
       padding: 16px;
@@ -238,7 +238,7 @@ body {
 .list-view {
   &.list-view-v2 {
     .list-view-item {
-      @extend .s-card;
+      @include vuero-s-card();
 
       margin-bottom: 16px;
       padding: 16px;
@@ -412,7 +412,7 @@ body {
 .list-view {
   &.list-view-v3 {
     .list-view-item {
-      @extend .r-card;
+      @include vuero-r-card();
 
       margin-bottom: 16px;
       padding: 16px;
@@ -530,7 +530,7 @@ body {
 .list-view {
   &.list-view-v4 {
     .list-view-item {
-      @extend .r-card;
+      @include vuero-r-card();
 
       margin-bottom: 16px;
       padding: 16px;

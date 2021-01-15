@@ -79,7 +79,7 @@ Subpages UI Elements
           }
 
           .plan-inner {
-            @extend .s-card;
+            @include vuero-s-card();
 
             width: 100%;
             flex: 0;
@@ -232,7 +232,7 @@ Subpages UI Elements
       width: 50%;
 
       .option-block {
-        @extend .s-card;
+        @include vuero-s-card();
 
         margin-bottom: 20px;
 
@@ -889,7 +889,7 @@ body {
 
     .wrapper-inner {
       .action-box {
-        @extend .s-card;
+        @include vuero-s-card();
 
         padding: 40px;
 
@@ -980,7 +980,7 @@ body {
     max-width: 840px;
 
     .wrapper-outer {
-      @extend .s-card;
+      @include vuero-s-card();
 
       display: flex;
       padding: 0;

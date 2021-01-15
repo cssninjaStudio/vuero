@@ -40,7 +40,7 @@
     }
 
     .dashboard-tile {
-      @extend .s-card;
+      @include vuero-s-card();
 
       font-family: $font;
 

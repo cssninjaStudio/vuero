@@ -18,7 +18,7 @@
     }
 
     .dashboard-card {
-      @extend .s-card;
+      @include vuero-s-card();
 
       &:not(:last-child) {
         margin-bottom: 1.5rem;
@@ -315,6 +315,16 @@
   }
 }
 
+.is-dark {
+  .banking-dashboard {
+    &.banking-dashboard-v1 {
+      .dashboard-card {
+        @include vuero-card--dark();
+      }
+    }
+  }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .banking-dashboard {
     &.banking-dashboard-v1 {
@@ -358,7 +368,7 @@
 .banking-dashboard {
   &.banking-dashboard-v2 {
     .dashboard-card {
-      @extend .s-card;
+      @include vuero-s-card();
 
       &:not(:last-child) {
         margin-bottom: 1.5rem;
@@ -722,6 +732,8 @@ body {
     .banking-dashboard {
       &.banking-dashboard-v2 {
         .dashboard-card {
+          @include vuero-card--dark();
+
           &.is-card-panel {
             background: lighten($dark-sidebar, 6%);
 
@@ -871,7 +883,7 @@ body {
       margin-bottom: 1rem;
 
       .dashboard-tile {
-        @extend .s-card;
+        @include vuero-s-card();
 
         width: calc(33.3% - 16px);
         margin: 8px;
@@ -896,7 +908,7 @@ body {
     }
 
     .dashboard-card {
-      @extend .s-card;
+      @include vuero-s-card();
 
       &:not(:last-child) {
         margin-bottom: 1.5rem;
@@ -944,6 +956,16 @@ body {
         .button {
           width: 49%;
         }
+      }
+    }
+  }
+}
+
+.is-dark {
+  .banking-dashboard {
+    &.banking-dashboard-v3 {
+      .dashboard-card {
+        @include vuero-card--dark();
       }
     }
   }

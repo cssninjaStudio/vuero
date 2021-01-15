@@ -129,7 +129,7 @@ Form Layouts
           width: 50%;
 
           .form-section-inner {
-            @extend .s-card;
+            @include vuero-s-card();
 
             padding: 40px;
 
@@ -417,7 +417,7 @@ Form Layouts
   }
 
   .form-outer {
-    @extend .s-card;
+    @include vuero-s-card();
 
     padding: 0;
 

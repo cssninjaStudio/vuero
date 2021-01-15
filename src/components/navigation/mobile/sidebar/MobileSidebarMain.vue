@@ -60,3 +60,10 @@ import { isMobileSidebarOpen } from '/@src/composition/state/ui/mobileSidebarSta
     </div>
   </div>
 </template>
+
+
+<style lang="scss">
+@import '../../../../assets/scss/abstracts/_variables.scss';
+@import '../../../../assets/scss/layout/_sidebar.scss';
+@import '../../../../assets/scss/layout/_sidebar-mobile.scss';
+</style>

@@ -27,7 +27,10 @@ watch(
 </script>
 
 <template>
-  <div :class="[isScrolling && 'is-scrolled']" class="webapp-navbar is-transparent">
+  <div
+    :class="[isScrolling && 'is-scrolled']"
+    class="webapp-navbar is-transparent"
+  >
     <div class="webapp-navbar-inner">
       <div class="left">
         <RouterLink :to="{ name: 'index' }" class="brand">
@@ -241,3 +244,9 @@ watch(
     <ComponentsWebappMenu />
   </div>
 </template>
+
+<style lang="scss">
+@import '../../../../assets/scss/abstracts/_variables.scss';
+@import '../../../../assets/scss/abstracts/_mixins.scss';
+@import '../../../../assets/scss/layout/_navbar.scss';
+</style>

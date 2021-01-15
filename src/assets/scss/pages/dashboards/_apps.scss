@@ -241,7 +241,7 @@
         padding: 30px 0;
 
         .restaurants-list-item {
-          @extend .l-card;
+          @include vuero-l-card();
 
           position: relative;
           padding: 0;
@@ -515,6 +515,8 @@ body {
 
             .restaurants-list {
               .restaurants-list-item {
+                @include vuero-card--dark();
+
                 background: none;
                 border: none;
 

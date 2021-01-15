@@ -188,3 +188,9 @@ useTitle('Profile Settings - WebApp - Vuero')
     </div>
   </WebappV2Layout>
 </template>
+
+<style lang="scss">
+@import '../../assets/scss/abstracts/_variables.scss';
+@import '../../assets/scss/abstracts/_mixins.scss';
+@import '../../assets/scss/pages/profile/_user-profile.scss';
+</style>

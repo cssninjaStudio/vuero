@@ -47,7 +47,7 @@ Search UI Elements
 
   .search-results-body {
     .filter-box {
-      @extend .s-card;
+      @include vuero-s-card();
 
       margin-bottom: 16px;
 
@@ -119,7 +119,7 @@ Search UI Elements
         padding: 10px 0;
 
         .search-results-item {
-          @extend .s-card;
+          @include vuero-s-card();
 
           margin-bottom: 16px;
 

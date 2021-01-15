@@ -899,3 +899,8 @@ useTitle('List Flex 3 - Admin - Vuero')
     </div>
   </DefaultLayout>
 </template>
+
+<style lang="scss">
+@import '../../assets/scss/abstracts/_variables.scss';
+@import '../../assets/scss/pages/lists/_list-flex.scss';
+</style>

@@ -48,7 +48,7 @@
 
     .dashboard-body {
       .dashboard-card {
-        @extend .s-card;
+        @include vuero-s-card();
 
         font-family: $font;
 
@@ -220,7 +220,7 @@ body {
 .personal-dashboard {
   &.personal-dashboard-v2 {
     .dashboard-header {
-      @extend .s-card;
+      @include vuero-s-card();
 
       display: flex;
       align-items: center;
@@ -273,7 +273,7 @@ body {
     }
 
     .dashboard-card {
-      @extend .s-card;
+      @include vuero-s-card();
 
       padding: 30px;
 
@@ -341,7 +341,7 @@ body {
     }
 
     .dashboard-card {
-      @extend .l-card;
+      @include vuero-l-card();
 
       font-family: $font;
 
