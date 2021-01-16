@@ -189,13 +189,16 @@ body {
           }
         }
 
-        a.router-link-active {
-          font-weight: 500;
+        > a.router-link-active {
+          font-weight: 600;
           color: $primary;
         }
 
-        > a.router-link-active {
-          font-weight: 600;
+        &.has-children {
+          .is-submenu.router-link-active {
+            font-weight: 500;
+            color: $primary;
+          }
         }
 
         &.divider {
@@ -250,7 +253,7 @@ body {
 
           .collapse-wrap {
             display: flex;
-            align-items: center;
+            align-items: stretch;
             height: 100%;
             min-height: 36px;
 

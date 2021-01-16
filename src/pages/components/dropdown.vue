@@ -105,6 +105,59 @@ onMounted(() => {
   activeSidebar.value = 'components'
 })
 
+const displayCode1 = ref(false)
+const code1 = `<!-- basic dropdown -->
+<script setup lang="ts">
+import useDropdown from '/@src/composition/use/useDropdown'
+
+const {
+  dropdownElement,
+  open,
+  isOpen,
+} = useDropdown()
+\<\/script>
+
+<template>
+  <div 
+    ref="dropdownElement"
+    :class="[isOpen && 'is-active']"
+    class="dropdown dropdown-trigger"
+  >
+    <div class="is-trigger" @click="open">
+      <button 
+        class="button" 
+        aria-haspopup="true"
+        aria-controls="my-dropdown-menu"
+      >
+        <span>Dropdown button</span>
+        <span class="icon is-small">
+          <i class="fas fa-angle-down" aria-hidden="true"></i>
+        </span>
+      </button>
+    </div>
+    <div id="my-dropdown-menu" class="dropdown-menu" role="menu">
+      <div class="dropdown-content">
+        <a href="#" class="dropdown-item font-size-base">
+          Dropdown item
+        </a>
+        <a class="dropdown-item font-size-base">
+          Other dropdown item
+        </a>
+        <a href="#" class="dropdown-item font-size-base is-active">
+          Active dropdown item
+        </a>
+        <a href="#" class="dropdown-item font-size-base">
+          Other dropdown item
+        </a>
+        <hr class="dropdown-divider">
+        <a href="#" class="dropdown-item font-size-base">
+          With a divider
+        </a>
+      </div>
+    </div>
+  </div>
+</template>`
+
 useTitle('Components - Dropdown - Vuero')
 </script>
 
@@ -192,9 +245,21 @@ useTitle('Components - Dropdown - Vuero')
                       <code>is-up</code> class to make it a dropup. Refer to the
                       markup for more details.
                     </p>
-                    <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                    <a
+                      class="code-trigger"
+                      :class="[displayCode1 && 'is-active']"
+                      @click="displayCode1 = !displayCode1"
+                    >
+                      <span
+                        v-show="displayCode1"
+                        class="iconify open"
+                        data-icon="feather:code"
+                      />
+                      <span
+                        v-show="!displayCode1"
+                        class="iconify close"
+                        data-icon="feather:x"
+                      />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -224,7 +289,10 @@ useTitle('Components - Dropdown - Vuero')
                               <a class="dropdown-item font-size-base">
                                 Other dropdown item
                               </a>
-                              <a href="#" class="dropdown-item font-size-base">
+                              <a
+                                href="#"
+                                class="dropdown-item font-size-base is-active"
+                              >
                                 Active dropdown item
                               </a>
                               <a href="#" class="dropdown-item font-size-base">
@@ -264,7 +332,10 @@ useTitle('Components - Dropdown - Vuero')
                               <a class="dropdown-item font-size-base">
                                 Other dropdown item
                               </a>
-                              <a href="#" class="dropdown-item font-size-base">
+                              <a
+                                href="#"
+                                class="dropdown-item font-size-base is-active"
+                              >
                                 Active dropdown item
                               </a>
                               <a href="#" class="dropdown-item font-size-base">
@@ -304,7 +375,10 @@ useTitle('Components - Dropdown - Vuero')
                               <a class="dropdown-item font-size-base">
                                 Other dropdown item
                               </a>
-                              <a href="#" class="dropdown-item font-size-base">
+                              <a
+                                href="#"
+                                class="dropdown-item font-size-base is-active"
+                              >
                                 Active dropdown item
                               </a>
                               <a href="#" class="dropdown-item font-size-base">
@@ -320,105 +394,12 @@ useTitle('Components - Dropdown - Vuero')
                       </div>
                     </div>
 
-                    <div class="highlight highlight-block">
-                      <pre><code class="code-highlight">
-&#x3C;div class=&#x22;dropdown dropdown-trigger&#x22;&#x3E;
-    &#x3C;div class=&#x22;is-trigger&#x22;&#x3E;
-        &#x3C;button class=&#x22;button&#x22; aria-haspopup=&#x22;true&#x22;
-            aria-controls=&#x22;dropdown-menu&#x22;&#x3E;
-            &#x3C;span&#x3E;Dropdown button&#x3C;/span&#x3E;
-            &#x3C;span class=&#x22;icon is-small&#x22;&#x3E;
-                &#x3C;i class=&#x22;fas fa-angle-down&#x22; aria-hidden=&#x22;true&#x22;&#x3E;&#x3C;/i&#x3E;
-            &#x3C;/span&#x3E;
-        &#x3C;/button&#x3E;
-    &#x3C;/div&#x3E;
-    &#x3C;div class=&#x22;dropdown-menu&#x22; id=&#x22;dropdown-menu&#x22; role=&#x22;menu&#x22;&#x3E;
-        &#x3C;div class=&#x22;dropdown-content&#x22;&#x3E;
-            &#x3C;a href=&#x22;#&#x22; class=&#x22;dropdown-item font-size-base&#x22;&#x3E;
-                Dropdown item
-            &#x3C;/a&#x3E;
-            &#x3C;a class=&#x22;dropdown-item font-size-base&#x22;&#x3E;
-                Other dropdown item
-            &#x3C;/a&#x3E;
-            &#x3C;a href=&#x22;#&#x22; class=&#x22;dropdown-item font-size-base&#x22;&#x3E;
-                Active dropdown item
-            &#x3C;/a&#x3E;
-            &#x3C;a href=&#x22;#&#x22; class=&#x22;dropdown-item font-size-base&#x22;&#x3E;
-                Other dropdown item
-            &#x3C;/a&#x3E;
-            &#x3C;hr class=&#x22;dropdown-divider&#x22;&#x3E;
-            &#x3C;a href=&#x22;#&#x22; class=&#x22;dropdown-item font-size-base&#x22;&#x3E;
-                With a divider
-            &#x3C;/a&#x3E;
-        &#x3C;/div&#x3E;
-    &#x3C;/div&#x3E;
-&#x3C;/div&#x3E;
-
-&#x3C;div class=&#x22;dropdown dropdown-trigger is-right&#x22;&#x3E;
-    &#x3C;div class=&#x22;is-trigger&#x22;&#x3E;
-        &#x3C;button class=&#x22;button&#x22; aria-haspopup=&#x22;true&#x22;
-            aria-controls=&#x22;dropdown-menu&#x22;&#x3E;
-            &#x3C;span&#x3E;Dropdown button&#x3C;/span&#x3E;
-            &#x3C;span class=&#x22;icon is-small&#x22;&#x3E;
-                &#x3C;i class=&#x22;fas fa-angle-down&#x22; aria-hidden=&#x22;true&#x22;&#x3E;&#x3C;/i&#x3E;
-            &#x3C;/span&#x3E;
-        &#x3C;/button&#x3E;
-    &#x3C;/div&#x3E;
-    &#x3C;div class=&#x22;dropdown-menu&#x22; id=&#x22;dropdown-menu&#x22; role=&#x22;menu&#x22;&#x3E;
-        &#x3C;div class=&#x22;dropdown-content&#x22;&#x3E;
-            &#x3C;a href=&#x22;#&#x22; class=&#x22;dropdown-item font-size-base&#x22;&#x3E;
-                Dropdown item
-            &#x3C;/a&#x3E;
-            &#x3C;a class=&#x22;dropdown-item font-size-base&#x22;&#x3E;
-                Other dropdown item
-            &#x3C;/a&#x3E;
-            &#x3C;a href=&#x22;#&#x22; class=&#x22;dropdown-item font-size-base&#x22;&#x3E;
-                Active dropdown item
-            &#x3C;/a&#x3E;
-            &#x3C;a href=&#x22;#&#x22; class=&#x22;dropdown-item font-size-base&#x22;&#x3E;
-                Other dropdown item
-            &#x3C;/a&#x3E;
-            &#x3C;hr class=&#x22;dropdown-divider&#x22;&#x3E;
-            &#x3C;a href=&#x22;#&#x22; class=&#x22;dropdown-item font-size-base&#x22;&#x3E;
-                With a divider
-            &#x3C;/a&#x3E;
-        &#x3C;/div&#x3E;
-    &#x3C;/div&#x3E;
-&#x3C;/div&#x3E;
-
-&#x3C;div class=&#x22;dropdown dropdown-trigger is-right is-up&#x22;&#x3E;
-    &#x3C;div class=&#x22;is-trigger&#x22;&#x3E;
-        &#x3C;button class=&#x22;button&#x22; aria-haspopup=&#x22;true&#x22;
-            aria-controls=&#x22;dropdown-menu&#x22;&#x3E;
-            &#x3C;span&#x3E;Dropdown button&#x3C;/span&#x3E;
-            &#x3C;span class=&#x22;icon is-small&#x22;&#x3E;
-                &#x3C;i class=&#x22;fas fa-angle-down&#x22; aria-hidden=&#x22;true&#x22;&#x3E;&#x3C;/i&#x3E;
-            &#x3C;/span&#x3E;
-        &#x3C;/button&#x3E;
-    &#x3C;/div&#x3E;
-    &#x3C;div class=&#x22;dropdown-menu&#x22; id=&#x22;dropdown-menu&#x22; role=&#x22;menu&#x22;&#x3E;
-        &#x3C;div class=&#x22;dropdown-content&#x22;&#x3E;
-            &#x3C;a href=&#x22;#&#x22; class=&#x22;dropdown-item font-size-base&#x22;&#x3E;
-                Dropdown item
-            &#x3C;/a&#x3E;
-            &#x3C;a class=&#x22;dropdown-item font-size-base&#x22;&#x3E;
-                Other dropdown item
-            &#x3C;/a&#x3E;
-            &#x3C;a href=&#x22;#&#x22; class=&#x22;dropdown-item font-size-base&#x22;&#x3E;
-                Active dropdown item
-            &#x3C;/a&#x3E;
-            &#x3C;a href=&#x22;#&#x22; class=&#x22;dropdown-item font-size-base&#x22;&#x3E;
-                Other dropdown item
-            &#x3C;/a&#x3E;
-            &#x3C;hr class=&#x22;dropdown-divider&#x22;&#x3E;
-            &#x3C;a href=&#x22;#&#x22; class=&#x22;dropdown-item font-size-base&#x22;&#x3E;
-                With a divider
-            &#x3C;/a&#x3E;
-        &#x3C;/div&#x3E;
-    &#x3C;/div&#x3E;
-&#x3C;/div&#x3E;
-</code></pre>
-                    </div>
+                    <HighlightJS
+                      v-if="displayCode1"
+                      lang="vue"
+                      class="highlight highlight-block"
+                      :code="code1"
+                    />
                   </div>
                 </div>
 
@@ -467,7 +448,10 @@ useTitle('Components - Dropdown - Vuero')
                               <a class="dropdown-item font-size-base">
                                 Other dropdown item
                               </a>
-                              <a href="#" class="dropdown-item font-size-base">
+                              <a
+                                href="#"
+                                class="dropdown-item font-size-base is-active"
+                              >
                                 Active dropdown item
                               </a>
                               <a href="#" class="dropdown-item font-size-base">
@@ -510,7 +494,10 @@ useTitle('Components - Dropdown - Vuero')
                               <a class="dropdown-item font-size-base">
                                 Other dropdown item
                               </a>
-                              <a href="#" class="dropdown-item font-size-base">
+                              <a
+                                href="#"
+                                class="dropdown-item font-size-base is-active"
+                              >
                                 Active dropdown item
                               </a>
                               <a href="#" class="dropdown-item font-size-base">
@@ -635,7 +622,10 @@ useTitle('Components - Dropdown - Vuero')
                               <a class="dropdown-item font-size-base">
                                 Other dropdown item
                               </a>
-                              <a href="#" class="dropdown-item font-size-base">
+                              <a
+                                href="#"
+                                class="dropdown-item font-size-base is-active"
+                              >
                                 Active dropdown item
                               </a>
                               <a href="#" class="dropdown-item font-size-base">
@@ -669,7 +659,10 @@ useTitle('Components - Dropdown - Vuero')
                               <a class="dropdown-item font-size-base">
                                 Other dropdown item
                               </a>
-                              <a href="#" class="dropdown-item font-size-base">
+                              <a
+                                href="#"
+                                class="dropdown-item font-size-base is-active"
+                              >
                                 Active dropdown item
                               </a>
                               <a href="#" class="dropdown-item font-size-base">
@@ -703,7 +696,10 @@ useTitle('Components - Dropdown - Vuero')
                               <a class="dropdown-item font-size-base">
                                 Other dropdown item
                               </a>
-                              <a href="#" class="dropdown-item font-size-base">
+                              <a
+                                href="#"
+                                class="dropdown-item font-size-base is-active"
+                              >
                                 Active dropdown item
                               </a>
                               <a href="#" class="dropdown-item font-size-base">
@@ -796,7 +792,10 @@ useTitle('Components - Dropdown - Vuero')
                               <a class="dropdown-item font-size-base">
                                 Other dropdown item
                               </a>
-                              <a href="#" class="dropdown-item font-size-base">
+                              <a
+                                href="#"
+                                class="dropdown-item font-size-base is-active"
+                              >
                                 Active dropdown item
                               </a>
                               <a href="#" class="dropdown-item font-size-base">
@@ -840,7 +839,10 @@ useTitle('Components - Dropdown - Vuero')
                               <a class="dropdown-item font-size-base">
                                 Other dropdown item
                               </a>
-                              <a href="#" class="dropdown-item font-size-base">
+                              <a
+                                href="#"
+                                class="dropdown-item font-size-base is-active"
+                              >
                                 Active dropdown item
                               </a>
                               <a href="#" class="dropdown-item font-size-base">
@@ -881,7 +883,10 @@ useTitle('Components - Dropdown - Vuero')
                               <a class="dropdown-item font-size-base">
                                 Other dropdown item
                               </a>
-                              <a href="#" class="dropdown-item font-size-base">
+                              <a
+                                href="#"
+                                class="dropdown-item font-size-base is-active"
+                              >
                                 Active dropdown item
                               </a>
                               <a href="#" class="dropdown-item font-size-base">

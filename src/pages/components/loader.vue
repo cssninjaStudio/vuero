@@ -32,6 +32,10 @@ const {
   isOpen: isOpen4,
 } = useDropdown()
 
+const toggleLoaders = () => {
+  document.querySelectorAll('.has-loader').forEach(el => el.classList.toggle('has-loader-active'))
+}
+
 onMounted(() => {
   activeSidebar.value = 'components'
 })
@@ -129,6 +133,7 @@ useTitle('Components - Loader - Vuero')
                     <button
                       id="show-demo-loaders"
                       class="button h-button is-primary is-elevated"
+                      @click="toggleLoaders"
                     >
                       Show Loaders
                     </button>
@@ -140,7 +145,9 @@ useTitle('Components - Loader - Vuero')
                     <div class="highlight highlight-block">
                       <pre><code class="code-highlight">
 //Javascript
-$('.has-loader').addClass('has-loader-active');
+document
+  .querySelectorAll('.has-loader')
+  .forEach(el => el.classList.toggle('has-loader-active'))
 
 //Markup
 &#x3C;!--Parent element who will contain the loader--&#x3E;

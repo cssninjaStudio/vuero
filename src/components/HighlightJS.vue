@@ -34,7 +34,28 @@ hljs.registerLanguage('vue', () => {
         excludeEnd: true,
       },
       {
+        begin: /^(\s*)(<script setup>)/gm,
+        end: /^(\s*)(<\/script>)/gm,
+        subLanguage: 'javascript',
+        excludeBegin: true,
+        excludeEnd: true,
+      },
+      {
         begin: /^(\s*)(<script lang=["']ts["']>)/gm,
+        end: /^(\s*)(<\/script>)/gm,
+        subLanguage: 'typescript',
+        excludeBegin: true,
+        excludeEnd: true,
+      },
+      {
+        begin: / [:|@]([a-z]+)="/gm,
+        end: /"/gm,
+        subLanguage: 'typescript',
+        excludeBegin: true,
+        excludeEnd: true,
+      },
+      {
+        begin: /^(\s*)(<script setup lang=["']ts["']>)/gm,
         end: /^(\s*)(<\/script>)/gm,
         subLanguage: 'typescript',
         excludeBegin: true,

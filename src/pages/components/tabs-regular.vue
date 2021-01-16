@@ -21,6 +21,49 @@ onMounted(() => {
   activeSidebar.value = 'components'
 })
 
+const displayCode1 = ref(false)
+const code1 = `<!-- basic tab -->
+<script setup lang="ts">
+import { ref } from 'vue'
+
+type Tabs = 'team' | 'projects' | 'tasks'
+const activeTab = ref<Tabs>('team')
+\<\/script>
+
+<template>
+  <div class="tabs-wrapper">
+    <div class="tabs-inner">
+      <div class="tabs">
+        <ul>
+          <li :class="[activeTab === 'team' && 'is-active']">
+            <a @click="activeTab = 'team'">Team</a>
+          </li>
+          <li :class="[activeTab === 'projects' && 'is-active']">
+            <a @click="activeTab = 'projects'">Projects</a>
+          </li>
+          <li :class="[activeTab === 'tasks' && 'is-active']">
+            <a @click="activeTab = 'tasks'">Tasks</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+      
+
+    <div class="tab-content" :class="[activeTab === 'team' && 'is-active']">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid iudicant sensus? Primum quid tu dicis breve? Etiam beatissimum? Ne discipulum abducam, times. Quae diligentissime contra Aristonem dicuntur a Chryippo. Duo Reges: constructio interrete.</p>
+    </div>
+
+    <div class="tab-content" :class="[activeTab === 'projects' && 'is-active']">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid iudicant sensus? Primum quid tu dicis breve? Etiam beatissimum? Ne discipulum abducam, times. Quae diligentissime contra Aristonem dicuntur a Chryippo. Duo Reges: constructio interrete.</p>
+    </div>
+
+    <div class="tab-content" :class="[activeTab === 'tasks' && 'is-active']">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid iudicant sensus? Primum quid tu dicis breve? Etiam beatissimum? Ne discipulum abducam, times. Quae diligentissime contra Aristonem dicuntur a Chryippo. Duo Reges: constructio interrete.</p>
+    </div>
+  </div>
+</template>`
+
+
 useTitle('Components - Tabs Regular - Vuero')
 </script>
 
@@ -105,9 +148,21 @@ useTitle('Components - Tabs Regular - Vuero')
                       javascript implementation. Check the markup for more
                       details.
                     </p>
-                    <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                    <a
+                      class="code-trigger"
+                      :class="[displayCode1 && 'is-active']"
+                      @click="displayCode1 = !displayCode1"
+                    >
+                      <Icon
+                        v-show="displayCode1"
+                        icon="feather:code"
+                        class="open"
+                      />
+                      <Icon
+                        v-show="!displayCode1"
+                        icon="feather:x"
+                        class="close"
+                      />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -173,34 +228,12 @@ useTitle('Components - Tabs Regular - Vuero')
                       </div>
                     </div>
 
-                    <div class="highlight highlight-block">
-                      <pre><code class="code-highlight">
-&#x3C;div class=&#x22;tabs-wrapper&#x22;&#x3E;
-    &#x3C;div class=&#x22;tabs-inner&#x22;&#x3E;
-        &#x3C;div class=&#x22;tabs&#x22;&#x3E;
-            &#x3C;ul&#x3E;
-                &#x3C;li data-tab=&#x22;team-tab&#x22; class=&#x22;is-active&#x22;&#x3E;&#x3C;a&#x3E;Team&#x3C;/a&#x3E;&#x3C;/li&#x3E;
-                &#x3C;li data-tab=&#x22;projects-tab&#x22;&#x3E;&#x3C;a&#x3E;Projects&#x3C;/a&#x3E;&#x3C;/li&#x3E;
-                &#x3C;li data-tab=&#x22;tasks-tab&#x22;&#x3E;&#x3C;a&#x3E;Tasks&#x3C;/a&#x3E;&#x3C;/li&#x3E;
-            &#x3C;/ul&#x3E;
-        &#x3C;/div&#x3E;
-    &#x3C;/div&#x3E;
-    
-
-    &#x3C;div id=&#x22;team-tab&#x22; class=&#x22;tab-content is-active&#x22;&#x3E;
-        &#x3C;p&#x3E;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid iudicant sensus? Primum quid tu dicis breve? Etiam beatissimum? Ne discipulum abducam, times. Quae diligentissime contra Aristonem dicuntur a Chryippo. Duo Reges: constructio interrete.&#x3C;/p&#x3E;
-    &#x3C;/div&#x3E;
-
-    &#x3C;div id=&#x22;projects-tab&#x22; class=&#x22;tab-content&#x22;&#x3E;
-        &#x3C;p&#x3E;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid iudicant sensus? Primum quid tu dicis breve? Etiam beatissimum? Ne discipulum abducam, times. Quae diligentissime contra Aristonem dicuntur a Chryippo. Duo Reges: constructio interrete.&#x3C;/p&#x3E;
-    &#x3C;/div&#x3E;
-
-    &#x3C;div id=&#x22;tasks-tab&#x22; class=&#x22;tab-content&#x22;&#x3E;
-        &#x3C;p&#x3E;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid iudicant sensus? Primum quid tu dicis breve? Etiam beatissimum? Ne discipulum abducam, times. Quae diligentissime contra Aristonem dicuntur a Chryippo. Duo Reges: constructio interrete.&#x3C;/p&#x3E;
-    &#x3C;/div&#x3E;
-&#x3C;/div&#x3E;
-</code></pre>
-                    </div>
+                    <HighlightJS
+                      v-if="displayCode1"
+                      lang="vue"
+                      class="highlight highlight-block"
+                      :code="code1"
+                    />
                   </div>
                 </div>
 
