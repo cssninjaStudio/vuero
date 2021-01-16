@@ -245,6 +245,7 @@ body {
 .bb-axis line,
 .bb-axis .domain {
   color: darken($fade-grey, 4%);
+  stroke: darken($fade-grey, 4%);
 }
 
 .tick {
@@ -262,12 +263,14 @@ body {
     .bb-axis line,
     .bb-axis .domain {
       color: lighten($dark-sidebar, 20%) !important;
+      stroke: lighten($dark-sidebar, 20%) !important;
     }
 
     .bb-legend {
       .bb-legend-background rect {
         fill: darken($dark-sidebar, 2%) !important;
         color: lighten($dark-sidebar, 12%) !important;
+        stroke: lighten($dark-sidebar, 12%) !important;
       }
 
       .bb-legend-item {
@@ -279,11 +282,13 @@ body {
 
     .bb-chart-arc path {
       color: lighten($dark-sidebar, 12%) !important;
+      stroke: lighten($dark-sidebar, 12%) !important;
     }
 
     .bb-chart-arcs .bb-chart-arcs-background {
       color: lighten($dark-sidebar, 10%) !important;
       fill: darken($dark-sidebar, 2%) !important;
+      stroke: darken($dark-sidebar, 2%) !important;
     }
 
     .bb-chart-arcs-title,

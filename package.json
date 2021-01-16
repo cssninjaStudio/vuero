@@ -22,6 +22,7 @@
     "@iconify/iconify": "1.0.7",
     "@vueuse/core": "4.0.5",
     "apexcharts": "^3.23.1",
+    "billboard.js": "^2.1.4",
     "bulma": "0.9.1",
     "dayjs": "1.10.3",
     "highlight.js": "10.5.0",

@@ -1,8 +1,16 @@
+<script setup lang="ts">
+import { genericLinedata } from '/@src/composition/state/charts/bbGeneric/genericLine'
+</script>
+
 <template>
   <div class="columns is-multiline">
     <div class="column is-6">
       <div class="s-card">
-        <div id="billboardjs-chart-1"></div>
+        <GenericBillboardLine
+          :height="280"
+          :spacing="20"
+          :data="genericLinedata"
+        />
       </div>
     </div>
     <div class="column is-6">

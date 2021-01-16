@@ -5,6 +5,7 @@ import { revenueOptions } from '/@src/composition/state/charts/custom/revenueAre
 import { salesRevenuesRadialOptions } from '/@src/composition/state/charts/custom/salesRevenueRadialChart'  
 import { radialGroup1Options, radialGroup2Options, radialGroup3Options } from '/@src/composition/state/charts/custom/salesRadialGroupChart'
 import { barData, barData2, salesBarOptions } from '/@src/composition/state/charts/custom/salesBarChart'  
+import { personalScoreGaugeData } from '/@src/composition/state/charts/bbCustom/personalScoreGauge'
 
 onMounted(async () => {
   setTimeout(() => {
@@ -213,6 +214,11 @@ onMounted(async () => {
             </div>
             <div class="gauge-wrap">
               <div id="gauge-holder" class="gauge-holder"></div>
+              <BillboardGaugeChart
+                :height="120"
+                :spacing="20"
+                :data="personalScoreGaugeData"
+              />
             </div>
             <div class="widget-content">
               <p>Your score has been calculated based on the latest metrics</p>
