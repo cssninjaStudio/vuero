@@ -20,7 +20,7 @@ import {  options1,
           options20,  
           options21, 
           options22, 
-          options23 } from '/@src/composition/state/chartOptions'
+          options23 } from '/@src/composition/state/charts/generic/chartOptions'
 </script>
 
 <template>

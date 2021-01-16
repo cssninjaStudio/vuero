@@ -1,8 +1,8 @@
 import moment from 'moment'
 
 import { themeColors } from '/@src/composition/state/themeColors'
-import { dataSeries } from '/@src/composition/state/dataSeries'
-import { series } from '/@src/composition/state/series'
+import { dataSeries } from '/@src/composition/state/charts/data/dataSeries'
+import { series } from '/@src/composition/state/charts/data/series'
 
 export const options1 = {
   series: [
