@@ -64,6 +64,7 @@
     "vite-plugin-components": "0.6.1",
     "vite-plugin-fonts": "0.1.5",
     "vite-plugin-purge-icons": "0.5.0",
+    "vite-plugin-pwa": "^0.3.7",
     "vite-plugin-voie": "npm:@antfu/vite-plugin-voie@0.7.1",
     "vite-ssg": "0.3.1",
     "voie-pages": "0.4.0",

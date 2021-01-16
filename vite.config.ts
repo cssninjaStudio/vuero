@@ -1,3 +1,4 @@
+import type { UserConfig } from 'vite'
 import path from 'path'
 import Vue from '@vitejs/plugin-vue'
 import Voie from 'vite-plugin-voie'
@@ -5,7 +6,7 @@ import ViteComponents from 'vite-plugin-components'
 import ViteFonts from 'vite-plugin-fonts'
 import PurgeIcons from 'vite-plugin-purge-icons'
 import VueI18n from '@intlify/vite-plugin-vue-i18n'
-import type { UserConfig } from 'vite'
+import { VitePWA } from 'vite-plugin-pwa'
 
 // const alias = [
 //   { find: '@src/', replacement: path.resolve(__dirname, 'src') },
@@ -64,7 +65,7 @@ const config: UserConfig = {
       google: {
         families: [
           {
-            name: 'Inconsolata',
+            name: 'Fira Code',
             styles: 'wght@400;600',
           },
           {
@@ -85,6 +86,27 @@ const config: UserConfig = {
     // https://github.com/intlify/vite-plugin-vue-i18n
     VueI18n({
       include: [path.resolve(projectRootDir, 'src/locales/**')],
+    }),
+
+    // https://github.com/antfu/vite-plugin-pwa
+    VitePWA({
+      manifest: {
+        display: 'standalone',
+        theme_color: '#fff',
+        background_color: '#fff',
+        icons: [
+          {
+            src: '/icons/android-chrome-192x192.png',
+            sizes: '192x192',
+            type: 'image/png',
+          },
+          {
+            src: '/icons/android-chrome-512x512.png',
+            sizes: '512x512',
+            type: 'image/png',
+          },
+        ],
+      },
     }),
   ],
 }

@@ -788,8 +788,6 @@ body {
     padding-top: 20px;
 
     .status-block {
-      @include vuero-card--dark();
-
       .status-header {
         padding: 30px;
       }

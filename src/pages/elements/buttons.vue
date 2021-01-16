@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import type { Ref } from 'vue'
 import { useTitle } from '@vueuse/core'
 import { onMounted, ref } from 'vue'
 
@@ -7,174 +8,13 @@ import {
   toggleSidebar,
 } from '/@src/composition/state/ui/activeSidebarState'
 
-const displayCode1 = ref(false)
-const code1 = `<!-- h-buttons -->
-<a class="button h-button">Button</a>
-<button class="button h-button is-bold">Button</button>
-<a class="button h-button is-rounded">Button</a>
-<button class="button h-button is-rounded is-bold">
-  Button
-</button>`
+import * as examples from './buttons.examples'
 
-const displayCode2 = ref(false)
-const code2 = `<!-- buttons styles -->
-<a class="button h-button is-primary">Primary</a>
-<a class="button h-button is-info">Info</a>
-<a class="button h-button is-success">Success</a>
-<a class="button h-button is-warning">Warning</a>
-<a class="button h-button is-danger">Danger</a>
-<a class="button h-button is-light">Light</a>
-<a class="button h-button is-white">White</a>`
-
-const displayCode3 = ref(false)
-const code3 = `<!-- buttons outlined -->
-<a class="button h-button is-primary is-outlined">Primary</a>
-<a class="button h-button is-info is-outlined">Info</a>
-<a class="button h-button is-success is-outlined">Success</a>
-<a class="button h-button is-warning is-outlined">Warning</a>
-<a class="button h-button is-danger is-outlined">Danger</a>`
-
-const displayCode4 = ref(false)
-const code4 = `<!-- buttons light -->
-<a class="button h-button is-primary is-light">Primary</a>
-<a class="button h-button is-info is-light">Info</a>
-<a class="button h-button is-success is-light">Success</a>
-<a class="button h-button is-warning is-light">Warning</a>
-<a class="button h-button is-danger is-light">Danger</a>`
-
-const displayCode5 = ref(false)
-const code5 = `<!-- buttons raised -->
-<a class="button h-button is-primary is-raised">Primary</a>
-<a class="button h-button is-info is-raised">Info</a>
-<a class="button h-button is-success is-raised">Success</a>
-<a class="button h-button is-warning is-elevated">Warning</a>
-<a class="button h-button is-danger is-elevated">Danger</a>`
-
-const displayCode6 = ref(false)
-const code6 = `<!-- buttons loading -->
-<a class="button h-button is-loading">Button</a>
-<a class="button h-button is-primary is-loading">Button</a>
-<a class="button h-button is-info is-loading">Button</a>
-<a class="button h-button is-success is-loading is-rounded">Button</a>
-<a class="button h-button is-warning is-loading is-rounded">Button</a>
-<a class="button h-button is-danger is-loading is-rounded">Button</a>`
-
-const displayCode7 = ref(false)
-const code7 = `<!-- buttons disabled -->
-<a class="button h-button is-primary is-disabled">Primary</a>
-<a class="button h-button is-info is-disabled">Info</a>
-<a class="button h-button is-success is-disabled">Success</a>
-<a class="button h-button is-warning is-disabled">Warning</a>
-<a class="button h-button is-danger is-disabled">Danger</a>`
-
-const displayCode8 = ref(false)
-const code8 = `<!-- buttons font awesome -->
-<button class="button h-button is-primary is-elevated">
-  <span class="icon">
-    <i class="fab fa-twitter"></i>
-  </span>
-  <span>Tweet Now</span>
-</button>
-<button class="button h-button is-success is-rounded is-elevated">
-  <span class="icon">
-    <i class="fas fa-check"></i>
-  </span>
-  <span>Save Changes</span>
-</button>
-<button class="button">
-  <span class="icon is-small">
-    <i class="fab fa-twitter"></i>
-  </span>
-</button>
-<button class="button is-primary is-circle is-elevated">
-  <span class="icon is-small">
-    <i class="fab fa-linkedin-in"></i>
-  </span>
-</button>`
-
-const displayCode9 = ref(false)
-const code9 = `<!-- buttons feather icons -->
-<button class="button h-button is-primary is-elevated">
-  <span class="icon">
-    <i data-feather="twitter"></i>
-  </span>
-  <span>Tweet Now</span>
-</button>
-<button class="button h-button is-danger is-rounded is-elevated">
-  <span class="icon">
-    <i data-feather="gitlab"></i>
-  </span>
-  <span>Commit Code</span>
-</button>
-<button class="button">
-  <span class="icon is-small">
-    <i data-feather="mail"></i>
-  </span>
-</button>
-<button class="button is-primary is-circle is-elevated">
-  <span class="icon is-small">
-    <i data-feather="message-square"></i>
-  </span>
-</button>`
-
-const displayCode10 = ref(false)
-const code10 = `<!-- buttons group -->
-<div class="buttons">
-  <button class="button h-button">
-    <span class="icon">
-      <i data-feather="eye"></i>
-    </span>
-    <span>View</span>
-  </button>
-  <button class="button h-button">
-    <span class="icon">
-      <i data-feather="edit-2"></i>
-    </span>
-    <span>Edit</span>
-  </button>
-  <button class="button h-button is-success is-elevated">
-    <span class="icon">
-      <i class="fas fa-check"></i>
-    </span>
-    <span>Approve</span>
-  </button>
-</div>`
-
-const displayCode11 = ref(false)
-const code11 = `<!-- buttons addons -->
-<div class="field has-addons">
-  <p class="control">
-    <button class="button h-button">
-      <span class="icon is-small">
-        <i class="fas fa-align-left"></i>
-      </span>
-      <span>Left</span>
-    </button>
-  </p>
-  <p class="control">
-    <button class="button h-button">
-      <span class="icon is-small">
-        <i class="fas fa-align-center"></i>
-      </span>
-      <span>Center</span>
-    </button>
-  </p>
-  <p class="control">
-    <button class="button h-button">
-      <span class="icon is-small">
-        <i class="fas fa-align-right"></i>
-      </span>
-      <span>Right</span>
-    </button>
-  </p>
-</div>`
-
-const displayCode12 = ref(false)
-const code12 = `<!-- buttons h-action -->
-<a class="button h-action">Button</a>
-<button class="button h-action is-rounded">Button</button>
-<a class="button h-action is-hoverable">Button</a>
-<button class="button h-action is-grey">Button</button>`
+const examplesIds = Object.keys(examples)
+const display = ref<any>({})
+for (const id of examplesIds) {
+  display[id] = false
+}
 
 onMounted(() => {
   activeSidebar.value = 'elements'
@@ -267,16 +107,16 @@ useTitle('Elements - Buttons - Vuero')
                     </p>
                     <a
                       class="code-trigger"
-                      :class="[displayCode1 && 'is-active']"
-                      @click="displayCode1 = !displayCode1"
+                      :class="[display.simpleButton && 'is-active']"
+                      @click="display.simpleButton = !display.simpleButton"
                     >
                       <span
-                        v-show="displayCode1"
+                        v-show="display.simpleButton"
                         class="iconify open"
                         data-icon="feather:code"
                       />
                       <span
-                        v-show="!displayCode1"
+                        v-show="!display.simpleButton"
                         class="iconify close"
                         data-icon="feather:x"
                       />
@@ -293,10 +133,9 @@ useTitle('Elements - Buttons - Vuero')
                     </div>
 
                     <HighlightJS
-                      v-if="displayCode1"
-                      lang="xml"
-                      class="highlight highlight-block"
-                      :code="code1"
+                      v-if="display.simpleButton"
+                      language="vue"
+                      :code="examples.simpleButton"
                     />
                   </div>
                 </div>
@@ -315,16 +154,16 @@ useTitle('Elements - Buttons - Vuero')
                     </p>
                     <a
                       class="code-trigger"
-                      :class="[displayCode2 && 'is-active']"
-                      @click="displayCode2 = !displayCode2"
+                      :class="[display.solidButton && 'is-active']"
+                      @click="display.solidButton = !display.solidButton"
                     >
                       <span
-                        v-show="displayCode2"
+                        v-show="display.solidButton"
                         class="iconify open"
                         data-icon="feather:code"
                       />
                       <span
-                        v-show="!displayCode2"
+                        v-show="!display.solidButton"
                         class="iconify close"
                         data-icon="feather:x"
                       />
@@ -342,10 +181,10 @@ useTitle('Elements - Buttons - Vuero')
                     </div>
 
                     <HighlightJS
-                      v-if="displayCode2"
-                      lang="xml"
+                      v-if="display.solidButton"
+                      language="vue"
                       class="highlight highlight-block"
-                      :code="code2"
+                      :code="examples.solidButton"
                     />
                   </div>
                 </div>
@@ -361,16 +200,16 @@ useTitle('Elements - Buttons - Vuero')
                     </p>
                     <a
                       class="code-trigger"
-                      :class="[displayCode3 && 'is-active']"
-                      @click="displayCode3 = !displayCode3"
+                      :class="[display.lightButton && 'is-active']"
+                      @click="display.lightButton = !display.lightButton"
                     >
                       <span
-                        v-show="displayCode3"
+                        v-show="display.lightButton"
                         class="iconify open"
                         data-icon="feather:code"
                       />
                       <span
-                        v-show="!displayCode3"
+                        v-show="!display.lightButton"
                         class="iconify close"
                         data-icon="feather:x"
                       />
@@ -386,10 +225,10 @@ useTitle('Elements - Buttons - Vuero')
                     </div>
 
                     <HighlightJS
-                      v-if="displayCode3"
-                      lang="xml"
+                      v-if="display.lightButton"
+                      language="vue"
                       class="highlight highlight-block"
-                      :code="code3"
+                      :code="examples.lightButton"
                     />
                   </div>
                 </div>
@@ -405,16 +244,16 @@ useTitle('Elements - Buttons - Vuero')
                     </p>
                     <a
                       class="code-trigger"
-                      :class="[displayCode4 && 'is-active']"
-                      @click="displayCode4 = !displayCode4"
+                      :class="[display.outlinedButton && 'is-active']"
+                      @click="display.outlinedButton = !display.outlinedButton"
                     >
                       <span
-                        v-show="displayCode4"
+                        v-show="display.outlinedButton"
                         class="iconify open"
                         data-icon="feather:code"
                       />
                       <span
-                        v-show="!displayCode4"
+                        v-show="!display.outlinedButton"
                         class="iconify close"
                         data-icon="feather:x"
                       />
@@ -438,10 +277,10 @@ useTitle('Elements - Buttons - Vuero')
                     </div>
 
                     <HighlightJS
-                      v-if="displayCode4"
-                      lang="xml"
+                      v-if="display.outlinedButton"
+                      language="vue"
                       class="highlight highlight-block"
-                      :code="code4"
+                      :code="examples.outlinedButton"
                     />
                   </div>
                 </div>
@@ -458,16 +297,16 @@ useTitle('Elements - Buttons - Vuero')
                     </p>
                     <a
                       class="code-trigger"
-                      :class="[displayCode5 && 'is-active']"
-                      @click="displayCode5 = !displayCode5"
+                      :class="[display.raisedButton && 'is-active']"
+                      @click="display.raisedButton = !display.raisedButton"
                     >
                       <span
-                        v-show="displayCode5"
+                        v-show="display.raisedButton"
                         class="iconify open"
                         data-icon="feather:code"
                       />
                       <span
-                        v-show="!displayCode5"
+                        v-show="!display.raisedButton"
                         class="iconify close"
                         data-icon="feather:x"
                       />
@@ -491,10 +330,10 @@ useTitle('Elements - Buttons - Vuero')
                     </div>
 
                     <HighlightJS
-                      v-if="displayCode5"
-                      lang="xml"
+                      v-if="display.raisedButton"
+                      language="vue"
                       class="highlight highlight-block"
-                      :code="code5"
+                      :code="examples.raisedButton"
                     />
                   </div>
                 </div>
@@ -510,16 +349,16 @@ useTitle('Elements - Buttons - Vuero')
                     </p>
                     <a
                       class="code-trigger"
-                      :class="[displayCode6 && 'is-active']"
-                      @click="displayCode6 = !displayCode6"
+                      :class="[display.loadingButton && 'is-active']"
+                      @click="display.loadingButton = !display.loadingButton"
                     >
                       <span
-                        v-show="displayCode6"
+                        v-show="display.loadingButton"
                         class="iconify open"
                         data-icon="feather:code"
                       />
                       <span
-                        v-show="!displayCode6"
+                        v-show="!display.loadingButton"
                         class="iconify close"
                         data-icon="feather:x"
                       />
@@ -546,10 +385,10 @@ useTitle('Elements - Buttons - Vuero')
                     </div>
 
                     <HighlightJS
-                      v-if="displayCode6"
-                      lang="xml"
+                      v-if="display.loadingButton"
+                      language="vue"
                       class="highlight highlight-block"
-                      :code="code6"
+                      :code="examples.loadingButton"
                     />
                   </div>
                 </div>
@@ -565,16 +404,16 @@ useTitle('Elements - Buttons - Vuero')
                     </p>
                     <a
                       class="code-trigger"
-                      :class="[displayCode7 && 'is-active']"
-                      @click="displayCode7 = !displayCode7"
+                      :class="[display.disabledButton && 'is-active']"
+                      @click="display.disabledButton = !display.disabledButton"
                     >
                       <span
-                        v-show="displayCode7"
+                        v-show="display.disabledButton"
                         class="iconify open"
                         data-icon="feather:code"
                       />
                       <span
-                        v-show="!displayCode7"
+                        v-show="!display.disabledButton"
                         class="iconify close"
                         data-icon="feather:x"
                       />
@@ -598,10 +437,10 @@ useTitle('Elements - Buttons - Vuero')
                     </div>
 
                     <HighlightJS
-                      v-if="displayCode7"
-                      lang="xml"
+                      v-if="display.disabledButton"
+                      language="vue"
                       class="highlight highlight-block"
-                      :code="code7"
+                      :code="examples.disabledButton"
                     />
                   </div>
                 </div>
@@ -619,16 +458,18 @@ useTitle('Elements - Buttons - Vuero')
                     </p>
                     <a
                       class="code-trigger"
-                      :class="[displayCode8 && 'is-active']"
-                      @click="displayCode8 = !displayCode8"
+                      :class="[display.fontAwesomeButton && 'is-active']"
+                      @click="
+                        display.fontAwesomeButton = !display.fontAwesomeButton
+                      "
                     >
                       <span
-                        v-show="displayCode8"
+                        v-show="display.fontAwesomeButton"
                         class="iconify open"
                         data-icon="feather:code"
                       />
                       <span
-                        v-show="!displayCode8"
+                        v-show="!display.fontAwesomeButton"
                         class="iconify close"
                         data-icon="feather:x"
                       />
@@ -638,7 +479,7 @@ useTitle('Elements - Buttons - Vuero')
                     <div class="buttons">
                       <button class="button h-button is-primary is-elevated">
                         <span class="icon">
-                          <i class="fas fa-twitter"></i>
+                          <i class="fab fa-twitter"></i>
                         </span>
                         <span>Tweet Now</span>
                       </button>
@@ -652,21 +493,21 @@ useTitle('Elements - Buttons - Vuero')
                       </button>
                       <button class="button">
                         <span class="icon is-small">
-                          <i class="fas fa-twitter"></i>
+                          <i class="fab fa-twitter"></i>
                         </span>
                       </button>
                       <button class="button is-primary is-circle is-elevated">
                         <span class="icon is-small">
-                          <i class="fas fa-linkedin-in"></i>
+                          <i class="fab fa-linkedin-in"></i>
                         </span>
                       </button>
                     </div>
 
                     <HighlightJS
-                      v-if="displayCode8"
-                      lang="xml"
+                      v-if="display.fontAwesomeButton"
+                      language="vue"
                       class="highlight highlight-block"
-                      :code="code8"
+                      :code="examples.fontAwesomeButton"
                     />
                   </div>
                 </div>
@@ -684,16 +525,16 @@ useTitle('Elements - Buttons - Vuero')
                     </p>
                     <a
                       class="code-trigger"
-                      :class="[displayCode9 && 'is-active']"
-                      @click="displayCode9 = !displayCode9"
+                      :class="[display.featherButton && 'is-active']"
+                      @click="display.featherButton = !display.featherButton"
                     >
                       <span
-                        v-show="displayCode9"
+                        v-show="display.featherButton"
                         class="iconify open"
                         data-icon="feather:code"
                       />
                       <span
-                        v-show="!displayCode9"
+                        v-show="!display.featherButton"
                         class="iconify close"
                         data-icon="feather:x"
                       />
@@ -728,10 +569,10 @@ useTitle('Elements - Buttons - Vuero')
                     </div>
 
                     <HighlightJS
-                      v-if="displayCode9"
-                      lang="xml"
+                      v-if="display.featherButton"
+                      language="vue"
                       class="highlight highlight-block"
-                      :code="code9"
+                      :code="examples.featherButton"
                     />
                   </div>
                 </div>
@@ -747,16 +588,16 @@ useTitle('Elements - Buttons - Vuero')
                     </p>
                     <a
                       class="code-trigger"
-                      :class="[displayCode10 && 'is-active']"
-                      @click="displayCode10 = !displayCode10"
+                      :class="[display.groupButton && 'is-active']"
+                      @click="display.groupButton = !display.groupButton"
                     >
                       <span
-                        v-show="displayCode10"
+                        v-show="display.groupButton"
                         class="iconify open"
                         data-icon="feather:code"
                       />
                       <span
-                        v-show="!displayCode10"
+                        v-show="!display.groupButton"
                         class="iconify close"
                         data-icon="feather:x"
                       />
@@ -785,10 +626,10 @@ useTitle('Elements - Buttons - Vuero')
                     </div>
 
                     <HighlightJS
-                      v-if="displayCode10"
-                      lang="xml"
+                      v-if="display.groupButton"
+                      language="vue"
                       class="highlight highlight-block"
-                      :code="code10"
+                      :code="examples.groupButton"
                     />
                   </div>
                 </div>
@@ -804,16 +645,16 @@ useTitle('Elements - Buttons - Vuero')
                     </p>
                     <a
                       class="code-trigger"
-                      :class="[displayCode11 && 'is-active']"
-                      @click="displayCode11 = !displayCode11"
+                      :class="[display.addonsButton && 'is-active']"
+                      @click="display.addonsButton = !display.addonsButton"
                     >
                       <span
-                        v-show="displayCode11"
+                        v-show="display.addonsButton"
                         class="iconify open"
                         data-icon="feather:code"
                       />
                       <span
-                        v-show="!displayCode11"
+                        v-show="!display.addonsButton"
                         class="iconify close"
                         data-icon="feather:x"
                       />
@@ -848,10 +689,10 @@ useTitle('Elements - Buttons - Vuero')
                     </div>
 
                     <HighlightJS
-                      v-if="displayCode11"
-                      lang="xml"
+                      v-if="display.addonsButton"
+                      language="vue"
                       class="highlight highlight-block"
-                      :code="code11"
+                      :code="examples.addonsButton"
                     />
                   </div>
                 </div>
@@ -868,16 +709,16 @@ useTitle('Elements - Buttons - Vuero')
                     </p>
                     <a
                       class="code-trigger"
-                      :class="[displayCode12 && 'is-active']"
-                      @click="displayCode12 = !displayCode12"
+                      :class="[display.actionButton && 'is-active']"
+                      @click="display.actionButton = !display.actionButton"
                     >
                       <span
-                        v-show="displayCode12"
+                        v-show="display.actionButton"
                         class="iconify open"
                         data-icon="feather:code"
                       />
                       <span
-                        v-show="!displayCode12"
+                        v-show="!display.actionButton"
                         class="iconify close"
                         data-icon="feather:x"
                       />
@@ -892,10 +733,10 @@ useTitle('Elements - Buttons - Vuero')
                     </div>
 
                     <HighlightJS
-                      v-if="displayCode12"
-                      lang="xml"
+                      v-if="display.actionButton"
+                      language="vue"
                       class="highlight highlight-block"
-                      :code="code12"
+                      :code="examples.actionButton"
                     />
                   </div>
                 </div>

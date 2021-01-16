@@ -353,7 +353,9 @@ body {
       .demo-title {
         p {
           code {
-            background-color: lighten($dark-sidebar, 6%) !important;
+            // background-color: lighten($dark-sidebar, 6%) !important;
+            color: #81a2be;
+            background-color: #3b3b41;
           }
         }
 
@@ -435,140 +437,13 @@ pre {
   word-wrap: normal;
 }
 
-.hljs {
-  display: block;
-  overflow-x: auto;
-  padding: 1.4rem;
-  background: $fade-grey;
-  color: $dark-text;
-}
-
-.hljs-name,
-.hljs-strong {
-  font-weight: bold;
-  color: $danger;
-}
-
-.hljs-code,
-.hljs-emphasis {
-  font-style: italic;
-}
-
-.hljs-tag {
-  color: #909090;
-}
-
-.hljs-variable,
-.hljs-template-variable,
-.hljs-selector-id,
-.hljs-selector-class {
-  color: #ade5fc;
-}
-
-.hljs-string,
-.hljs-bullet {
-  color: $primary;
-}
-
-.hljs-type,
-.hljs-title,
-.hljs-section,
-.hljs-attribute,
-.hljs-quote,
-.hljs-built_in,
-.hljs-builtin-name {
-  color: $danger;
-}
-
-.hljs-attr {
-  color: $info;
-}
-
-.hljs-number,
-.hljs-symbol,
-.hljs-bullet {
-  color: #d36363;
-}
-
-.hljs-keyword,
-.hljs-selector-tag,
-.hljs-literal {
-  color: $danger;
-}
-
-.hljs-comment,
-.hljs-deletion,
-.hljs-code {
-  color: #888;
-}
-
-.hljs-regexp,
-.hljs-link {
-  color: #c6b4f0;
-}
-
-.hljs-meta {
-  color: #fc9b9b;
-}
-
-.hljs-deletion {
-  background-color: #fc9b9b;
-  color: #333;
-}
-
-.hljs-addition {
-  background-color: #a2fca2;
-  color: #333;
-}
-
-.hljs a {
-  color: inherit;
-}
-
-.hljs a:focus,
-.hljs a:hover {
-  color: inherit;
-  text-decoration: underline;
-}
-
-.highlight {
-  overflow: auto;
-  background: $fade-grey;
-  border-radius: 4px;
-}
-
-.highlight::-webkit-scrollbar {
-  width: 10px;
-}
-
-.highlight::-webkit-scrollbar-thumb {
-  border-radius: 5px;
-  background: rgba(0, 0, 0, 0.2);
-}
-
-.code-highlight {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-code.hljs span {
-  font-family: Inconsolata, monospace !important;
-}
-
 /* ==========================================================================
 4. Code Highlight Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .hljs {
-      color: $smoke-white !important;
-    }
-
-    .hljs-string {
-      color: $success !important;
-    }
-  }
+code {
+  font-family: 'Fira Code', monospace;
+  font-size: 13px;
 }
 
 /* ==========================================================================

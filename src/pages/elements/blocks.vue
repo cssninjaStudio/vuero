@@ -1,11 +1,19 @@
 <script setup lang="ts">
 import { useTitle } from '@vueuse/core'
-import { onMounted } from 'vue'
+import { onMounted, ref } from 'vue'
 
 import {
   activeSidebar,
   toggleSidebar,
 } from '/@src/composition/state/ui/activeSidebarState'
+
+import * as examples from './blocks.examples'
+
+const examplesIds = Object.keys(examples)
+const display = ref<any>({})
+for (const id of examplesIds) {
+  display[id] = false
+}
 
 onMounted(() => {
   activeSidebar.value = 'elements'
@@ -95,9 +103,21 @@ useTitle('Elements - Blocks - Vuero')
                       markup. Please note that this version does not have
                       horizontal alignment. Check the markup for more details.
                     </p>
-                    <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                    <a
+                      class="code-trigger"
+                      :class="[display.mediaFlexBlock && 'is-active']"
+                      @click="display.mediaFlexBlock = !display.mediaFlexBlock"
+                    >
+                      <span
+                        v-show="display.mediaFlexBlock"
+                        class="iconify open"
+                        data-icon="feather:code"
+                      />
+                      <span
+                        v-show="!display.mediaFlexBlock"
+                        class="iconify close"
+                        data-icon="feather:x"
+                      />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -128,22 +148,11 @@ useTitle('Elements - Blocks - Vuero')
                       </div>
                     </div>
 
-                    <div class="highlight highlight-block">
-                      <pre><code class="code-highlight">
-&#x3C;div class=&#x22;media-flex&#x22;&#x3E;
-    &#x3C;div class=&#x22;h-avatar is-medium&#x22;&#x3E;
-        &#x3C;img class=&#x22;avatar&#x22; src=&#x22;https://via.placeholder.com/150x150&#x22; alt=&#x22;&#x22;&#x3E;
-    &#x3C;/div&#x3E;
-    &#x3C;div class=&#x22;flex-meta&#x22;&#x3E;
-        &#x3C;span&#x3E;Anna B.&#x3C;/span&#x3E;
-        &#x3C;span&#x3E;UX Designer&#x3C;/span&#x3E;
-    &#x3C;/div&#x3E;
-    &#x3C;div class=&#x22;flex-end&#x22;&#x3E;
-        &#x3C;!--Your action here (dropdown, button etc...)--&#x3E;                                              
-    &#x3C;/div&#x3E;
-&#x3C;/div&#x3E;
-</code></pre>
-                    </div>
+                    <HighlightJS
+                      v-if="display.mediaFlexBlock"
+                      language="vue"
+                      :code="examples.mediaFlexBlock"
+                    />
                   </div>
                 </div>
 
@@ -158,9 +167,23 @@ useTitle('Elements - Blocks - Vuero')
                       have horizontal alignment. Check the markup for more
                       details.
                     </p>
-                    <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                    <a
+                      class="code-trigger"
+                      :class="[display.mediaFlexIconBlock && 'is-active']"
+                      @click="
+                        display.mediaFlexIconBlock = !display.mediaFlexIconBlock
+                      "
+                    >
+                      <span
+                        v-show="display.mediaFlexIconBlock"
+                        class="iconify open"
+                        data-icon="feather:code"
+                      />
+                      <span
+                        v-show="!display.mediaFlexIconBlock"
+                        class="iconify close"
+                        data-icon="feather:x"
+                      />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -187,22 +210,11 @@ useTitle('Elements - Blocks - Vuero')
                       </div>
                     </div>
 
-                    <div class="highlight highlight-block">
-                      <pre><code class="code-highlight">
-&#x3C;div class=&#x22;media-flex&#x22;&#x3E;
-    &#x3C;div class=&#x22;h-icon is-success is-rounded&#x22;&#x3E;
-        &#x3C;i data-feather=&#x22;clock&#x22;&#x3E;&#x3C;/i&#x3E;
-    &#x3C;/div&#x3E;
-    &#x3C;div class=&#x22;flex-meta&#x22;&#x3E;
-        &#x3C;span&#x3E;Team Tasks&#x3C;/span&#x3E;
-        &#x3C;span&#x3E;View all tasks&#x3C;/span&#x3E;
-    &#x3C;/div&#x3E;
-    &#x3C;div class=&#x22;flex-end&#x22;&#x3E;
-        &#x3C;!--Your action here (dropdown, button etc...)--&#x3E;                                              
-    &#x3C;/div&#x3E;
-&#x3C;/div&#x3E;
-</code></pre>
-                    </div>
+                    <HighlightJS
+                      v-if="display.mediaFlexIconBlock"
+                      language="vue"
+                      :code="examples.mediaFlexIconBlock"
+                    />
                   </div>
                 </div>
 
@@ -216,9 +228,23 @@ useTitle('Elements - Blocks - Vuero')
                       markup. Please note that this version has horizontal
                       alignment. Check the markup for more details.
                     </p>
-                    <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                    <a
+                      class="code-trigger"
+                      :class="[display.mediaFlexCenterBlock && 'is-active']"
+                      @click="
+                        display.mediaFlexCenterBlock = !display.mediaFlexCenterBlock
+                      "
+                    >
+                      <span
+                        v-show="display.mediaFlexCenterBlock"
+                        class="iconify open"
+                        data-icon="feather:code"
+                      />
+                      <span
+                        v-show="!display.mediaFlexCenterBlock"
+                        class="iconify close"
+                        data-icon="feather:x"
+                      />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -249,22 +275,11 @@ useTitle('Elements - Blocks - Vuero')
                       </div>
                     </div>
 
-                    <div class="highlight highlight-block">
-                      <pre><code class="code-highlight">
-&#x3C;div class=&#x22;media-flex-center&#x22;&#x3E;
-    &#x3C;div class=&#x22;h-avatar is-medium&#x22;&#x3E;
-        &#x3C;img class=&#x22;avatar&#x22; src=&#x22;https://via.placeholder.com/150x150&#x22; alt=&#x22;&#x22;&#x3E;
-    &#x3C;/div&#x3E;
-    &#x3C;div class=&#x22;flex-meta&#x22;&#x3E;
-        &#x3C;span&#x3E;Anna B.&#x3C;/span&#x3E;
-        &#x3C;span&#x3E;UX Designer&#x3C;/span&#x3E;
-    &#x3C;/div&#x3E;
-    &#x3C;div class=&#x22;flex-end&#x22;&#x3E;
-        &#x3C;!--Your action here (dropdown, button etc...)--&#x3E;                                              
-    &#x3C;/div&#x3E;
-&#x3C;/div&#x3E;
-</code></pre>
-                    </div>
+                    <HighlightJS
+                      v-if="display.mediaFlexCenterBlock"
+                      language="vue"
+                      :code="examples.mediaFlexCenterBlock"
+                    />
                   </div>
                 </div>
 
@@ -279,9 +294,23 @@ useTitle('Elements - Blocks - Vuero')
                       have horizontal alignment. Check the markup for more
                       details.
                     </p>
-                    <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                    <a
+                      class="code-trigger"
+                      :class="[display.mediaFlexCenterIconBlock && 'is-active']"
+                      @click="
+                        display.mediaFlexCenterIconBlock = !display.mediaFlexCenterIconBlock
+                      "
+                    >
+                      <span
+                        v-show="display.mediaFlexCenterIconBlock"
+                        class="iconify open"
+                        data-icon="feather:code"
+                      />
+                      <span
+                        v-show="!display.mediaFlexCenterIconBlock"
+                        class="iconify close"
+                        data-icon="feather:x"
+                      />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -308,22 +337,11 @@ useTitle('Elements - Blocks - Vuero')
                       </div>
                     </div>
 
-                    <div class="highlight highlight-block">
-                      <pre><code class="code-highlight">
-&#x3C;div class=&#x22;media-flex-center&#x22;&#x3E;
-    &#x3C;div class=&#x22;h-icon is-info is-rounded&#x22;&#x3E;
-        &#x3C;i data-feather=&#x22;chrome&#x22;&#x3E;&#x3C;/i&#x3E;
-    &#x3C;/div&#x3E;
-    &#x3C;div class=&#x22;flex-meta&#x22;&#x3E;
-        &#x3C;span&#x3E;Browser Support&#x3C;/span&#x3E;
-        &#x3C;span&#x3E;View browser support&#x3C;/span&#x3E;
-    &#x3C;/div&#x3E;
-    &#x3C;div class=&#x22;flex-end&#x22;&#x3E;
-        &#x3C;!--Your action here (dropdown, button etc...)--&#x3E;                                              
-    &#x3C;/div&#x3E;
-&#x3C;/div&#x3E;
-</code></pre>
-                    </div>
+                    <HighlightJS
+                      v-if="display.mediaFlexCenterIconBlock"
+                      language="vue"
+                      :code="examples.mediaFlexCenterIconBlock"
+                    />
                   </div>
                 </div>
 
@@ -341,9 +359,25 @@ useTitle('Elements - Blocks - Vuero')
                       <code>media-flex-center</code> element. Resize your screen
                       to see it in action.
                     </p>
-                    <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                    <a
+                      class="code-trigger"
+                      :class="[
+                        display.mediaFlexCenterMobileBlock && 'is-active',
+                      ]"
+                      @click="
+                        display.mediaFlexCenterMobileBlock = !display.mediaFlexCenterMobileBlock
+                      "
+                    >
+                      <span
+                        v-show="display.mediaFlexCenterMobileBlock"
+                        class="iconify open"
+                        data-icon="feather:code"
+                      />
+                      <span
+                        v-show="!display.mediaFlexCenterMobileBlock"
+                        class="iconify close"
+                        data-icon="feather:x"
+                      />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -378,22 +412,11 @@ useTitle('Elements - Blocks - Vuero')
                       </div>
                     </div>
 
-                    <div class="highlight highlight-block">
-                      <pre><code class="code-highlight">
-&#x3C;div class=&#x22;media-flex-center is-responsive-mobile&#x22;&#x3E;
-    &#x3C;div class=&#x22;h-avatar is-medium&#x22;&#x3E;
-        &#x3C;img class=&#x22;avatar&#x22; src=&#x22;https://via.placeholder.com/150x150&#x22; alt=&#x22;&#x22;&#x3E;
-    &#x3C;/div&#x3E;
-    &#x3C;div class=&#x22;flex-meta&#x22;&#x3E;
-        &#x3C;span&#x3E;Anna B.&#x3C;/span&#x3E;
-        &#x3C;span&#x3E;UX Designer&#x3C;/span&#x3E;
-    &#x3C;/div&#x3E;
-    &#x3C;div class=&#x22;flex-end&#x22;&#x3E;
-        &#x3C;!--Your action here (dropdown, button etc...)--&#x3E;                                              
-    &#x3C;/div&#x3E;
-&#x3C;/div&#x3E;
-</code></pre>
-                    </div>
+                    <HighlightJS
+                      v-if="display.mediaFlexCenterMobileBlock"
+                      language="vue"
+                      :code="examples.mediaFlexCenterMobileBlock"
+                    />
                   </div>
                 </div>
 
@@ -412,9 +435,25 @@ useTitle('Elements - Blocks - Vuero')
                       <code>media-flex-center</code> element. Resize your screen
                       to see it in action.
                     </p>
-                    <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                    <a
+                      class="code-trigger"
+                      :class="[
+                        display.mediaFlexCenterTabletBlock && 'is-active',
+                      ]"
+                      @click="
+                        display.mediaFlexCenterTabletBlock = !display.mediaFlexCenterTabletBlock
+                      "
+                    >
+                      <span
+                        v-show="display.mediaFlexCenterTabletBlock"
+                        class="iconify open"
+                        data-icon="feather:code"
+                      />
+                      <span
+                        v-show="!display.mediaFlexCenterTabletBlock"
+                        class="iconify close"
+                        data-icon="feather:x"
+                      />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -443,22 +482,11 @@ useTitle('Elements - Blocks - Vuero')
                       </div>
                     </div>
 
-                    <div class="highlight highlight-block">
-                      <pre><code class="code-highlight">
-&#x3C;div class=&#x22;media-flex-center is-responsive-mobile is-responsive-tablet-p&#x22;&#x3E;
-    &#x3C;div class=&#x22;h-icon is-info is-rounded&#x22;&#x3E;
-        &#x3C;i data-feather=&#x22;chrome&#x22;&#x3E;&#x3C;/i&#x3E;
-    &#x3C;/div&#x3E;
-    &#x3C;div class=&#x22;flex-meta&#x22;&#x3E;
-        &#x3C;span&#x3E;Browser Support&#x3C;/span&#x3E;
-        &#x3C;span&#x3E;View browser support&#x3C;/span&#x3E;
-    &#x3C;/div&#x3E;
-    &#x3C;div class=&#x22;flex-end&#x22;&#x3E;
-        &#x3C;!--Your action here (dropdown, button etc...)--&#x3E;                                              
-    &#x3C;/div&#x3E;
-&#x3C;/div&#x3E;
-</code></pre>
-                    </div>
+                    <HighlightJS
+                      v-if="display.mediaFlexCenterTabletBlock"
+                      language="vue"
+                      :code="examples.mediaFlexCenterTabletBlock"
+                    />
                   </div>
                 </div>
               </div>
