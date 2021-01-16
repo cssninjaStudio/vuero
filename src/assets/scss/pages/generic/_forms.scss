@@ -512,6 +512,8 @@ body {
           .form-body {
             .form-section {
               .form-section-inner {
+                @include vuero-card--dark();
+
                 > h3 {
                   color: $dark-dark-text;
                 }
@@ -595,6 +597,8 @@ body {
       }
 
       .form-outer {
+        @include vuero-card--dark();
+
         .form-header {
           border-color: lighten($dark-sidebar, 12%);
 

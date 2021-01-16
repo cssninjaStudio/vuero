@@ -596,6 +596,8 @@ body {
         }
 
         .overview-card {
+          @include vuero-card--dark();
+
           .card-metric,
           .metric .metric {
             color: $dark-dark-text;
@@ -812,6 +814,23 @@ body {
     }
   }
 }
+.is-dark {
+  .lifestyle-dashboard {
+    &.lifestyle-dashboard-v2 {
+      .long-card {
+        @include vuero-card--dark();
+      }
+
+      .dashboard-list {
+        .inner-list {
+          .media-flex-center {
+            @include vuero-card--dark();
+          }
+        }
+      }
+    }
+  }
+}
 
 /* ==========================================================================
 4. Lifestyle Dashboard V3
@@ -970,6 +989,16 @@ body {
             font-weight: 500;
           }
         }
+      }
+    }
+  }
+}
+
+.is-dark {
+  .lifestyle-dashboard {
+    &.lifestyle-dashboard-v3 {
+      .dashboard-card {
+        @include vuero-card--dark();
       }
     }
   }
@@ -1280,6 +1309,17 @@ body {
         .illustration-header-2 {
           background: $dark-sidebar;
           box-shadow: none;
+        }
+
+        .writing-stats {
+          .writing-stat {
+            @include vuero-card--dark();
+          }
+        }
+
+        .updates,
+        .featured-authors {
+          @include vuero-card--dark();
         }
 
         .articles-feed {
