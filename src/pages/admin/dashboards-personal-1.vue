@@ -8,7 +8,7 @@ import {
 } from '/@src/composition/state/ui/activeSidebarState'
 
 onMounted(() => {
-  activeSidebar.value = 'home'
+  activeSidebar.value = 'none'
 })
 
 useTitle('Dashboard Personal 1 - Admin - Vuero')
