@@ -21,14 +21,17 @@
   "dependencies": {
     "@iconify/iconify": "1.0.7",
     "@vueuse/core": "4.0.5",
+    "apexcharts": "^3.23.1",
     "axios": "0.21.1",
     "bulma": "0.9.1",
     "dayjs": "1.10.3",
     "highlight.js": "10.5.0",
+    "moment": "^2.29.1",
     "nprogress": "0.2.0",
     "vue": "3.0.5",
     "vue-i18n": "9.0.0-rc.2",
-    "vue-toastification": "2.0.0-rc.1"
+    "vue-toastification": "2.0.0-rc.1",
+    "vue3-apexcharts": "^1.1.1"
   },
   "devDependencies": {
     "@iconify/json": "1.1.284",

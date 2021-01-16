@@ -158,6 +158,12 @@ body {
   }
 }
 
+.is-dark {
+  .gauge-widget {
+    @include vuero-card--dark();
+  }
+}
+
 /* ==========================================================================
 3. Icon Toolbar Widget
 ========================================================================== */
@@ -268,6 +274,8 @@ body {
 body {
   &.is-dark {
     .text-widget {
+      @include vuero-card--dark();
+
       .widget-content {
         p {
           span {
@@ -520,6 +528,8 @@ body {
 body {
   &.is-dark {
     .picker-widget {
+      @include vuero-card--dark();
+
       .calendar {
         color: $dark-dark-text;
 
@@ -673,6 +683,8 @@ body {
 body {
   &.is-dark {
     .search-widget {
+      @include vuero-card--dark();
+
       .field {
         .control {
           .input {
@@ -1588,6 +1600,8 @@ body {
 body {
   &.is-dark {
     .contact-widget {
+      @include vuero-card--dark();
+
       .widget-content {
         border-color: lighten($dark-sidebar, 12%);
 

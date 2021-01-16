@@ -2,6 +2,218 @@
 import { useTitle } from '@vueuse/core'
 
 import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
+import { themeColors } from '/@src/composition/state/themeColors'
+
+//Revenue Chart
+const revenueOptions = {
+  series: [
+    {
+      name: 'Revenue',
+      data: [10835, 40214, 36257, 51411, 45697, 61221, 65295, 91512, 75648],
+    },
+  ],
+  chart: {
+    height: 250,
+    type: 'line',
+    zoom: {
+      enabled: false,
+    },
+    toolbar: {
+      show: false,
+    },
+  },
+  colors: [themeColors.accent],
+  dataLabels: {
+    enabled: false,
+  },
+  stroke: {
+    width: [2, 2, 2],
+    curve: 'smooth',
+  },
+  grid: {
+    row: {
+      colors: ['transparent', 'transparent'], // takes an array which will be repeated on columns
+      opacity: 0.5,
+    },
+  },
+  xaxis: {
+    categories: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct'],
+  },
+  tooltip: {
+    y: {
+      formatter: function (val: string) {
+        return '$' + val
+      },
+    },
+  },
+}
+
+//Gauge goal chart
+const gaugeOptions = {
+  series: [57, 86],
+  chart: {
+    height: 220,
+    type: 'radialBar',
+    offsetY: -10,
+  },
+  colors: [themeColors.accent, themeColors.purple],
+  plotOptions: {
+    radialBar: {
+      startAngle: -135,
+      endAngle: 135,
+      inverseOrder: true,
+      dataLabels: {
+        show: true,
+        name: {
+          show: true,
+          fontSize: '14px',
+          fontWeight: 500,
+          offsetY: -10,
+        },
+        value: {
+          show: true,
+          fontWeight: 600,
+          color: themeColors.lightText,
+          fontSize: '16px',
+          offsetY: -5,
+        },
+        total: {
+          show: true,
+          fontSize: '14px',
+          fontWeight: 500,
+          color: themeColors.lightText,
+        },
+      },
+      hollow: {
+        margin: 15,
+        size: '75%',
+      },
+      track: {
+        strokeWidth: '100%',
+      },
+    },
+  },
+
+  stroke: {
+    lineCap: 'round',
+  },
+  labels: ['Efficiency', 'Productivity'],
+}
+
+//Profit bar chart
+const series = [
+  {
+    name: 'Net Profit',
+    data: [44, 55, 57, 56, 61, 58, 63, 60, 66],
+  },
+  {
+    name: 'Revenue',
+    data: [76, 85, 101, 98, 87, 105, 91, 114, 94],
+  },
+  {
+    name: 'Free Cash Flow',
+    data: [35, 41, 36, 26, 45, 48, 52, 53, 41],
+  },
+].map((s) => {
+  return {
+    name: s.name,
+    data: s.data.map((d) => {
+      return d - 70
+    }),
+  }
+})
+
+const barOptions = {
+  chart: {
+    height: 250,
+    type: 'bar',
+    toolbar: {
+      show: false,
+    },
+  },
+  colors: [
+    themeColors.accent,
+    themeColors.purple,
+    themeColors.orange,
+  ],
+  legend: {
+    position: 'top',
+  },
+  plotOptions: {
+    bar: {
+      horizontal: false,
+      endingShape: 'rounded',
+      columnWidth: '55%',
+    },
+  },
+  dataLabels: {
+    enabled: false,
+  },
+  stroke: {
+    show: true,
+    width: 2,
+    colors: ['transparent'],
+  },
+  series: series,
+  xaxis: {
+    categories: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct'],
+  },
+  yaxis: {
+    labels: {
+      formatter: function (val: string) {
+        return val + 70
+      },
+    },
+  },
+  fill: {
+    opacity: 1,
+  },
+  tooltip: {
+    y: {
+      formatter: function (val: string) {
+        return val + 70
+      },
+    },
+  },
+}
+
+//Growth radial chart
+const optionsCircle = {
+  series: [65],
+  chart: {
+    height: 160,
+    type: 'radialBar',
+    toolbar: {
+      show: false,
+    },
+  },
+  colors: [themeColors.purple],
+  plotOptions: {
+    radialBar: {
+      hollow: {
+        size: '75%',
+      },
+      dataLabels: {
+        show: true,
+        name: {
+          show: true,
+          fontSize: '14px',
+          fontWeight: 500,
+          offsetY: -10,
+          color: themeColors.lightText,
+        },
+        value: {
+          show: true,
+          fontWeight: 600,
+          color: themeColors.purple,
+          fontSize: '16px',
+          offsetY: -5,
+        },
+      },
+    },
+  },
+  labels: ['Growth'],
+}
 
 useTitle('Dashboards Finance 1 - WebApp - Vuero')
 </script>
@@ -113,7 +325,13 @@ useTitle('Dashboards Finance 1 - WebApp - Vuero')
                             <span class="dark-inverted">$91,512.18</span>
                           </div>
                         </div>
-                        <div id="revenue-chart"></div>
+                        <apexchart
+                          id="revenue-chart"
+                          :height="revenueOptions.chart.height"
+                          :type="revenueOptions.chart.type"
+                          :series="revenueOptions.series"
+                          :options="revenueOptions"
+                        ></apexchart>
                       </div>
                     </div>
                     <!--Dashboard Card-->
@@ -124,7 +342,13 @@ useTitle('Dashboards Finance 1 - WebApp - Vuero')
                         </div>
 
                         <div class="radial-wrap">
-                          <div id="goal-gauge"></div>
+                          <apexchart
+                            id="goal-gauge"
+                            :height="gaugeOptions.chart.height"
+                            :type="gaugeOptions.chart.type"
+                            :series="gaugeOptions.series"
+                            :options="gaugeOptions"
+                          ></apexchart>
                           <div class="radial-stats is-dark-bordered-12">
                             <div class="radial-stat is-dark-bordered-12">
                               <span>Completed</span>
@@ -163,10 +387,14 @@ useTitle('Dashboards Finance 1 - WebApp - Vuero')
                             <span>since last month</span>
                           </div>
 
-                          <div
+                          <apexchart
                             id="radial-circle"
                             class="circle-chart-wrapper"
-                          ></div>
+                            :height="optionsCircle.chart.height"
+                            :type="optionsCircle.chart.type"
+                            :series="optionsCircle.series"
+                            :options="optionsCircle"
+                          ></apexchart>
                         </div>
                       </div>
                     </div>
@@ -176,7 +404,13 @@ useTitle('Dashboards Finance 1 - WebApp - Vuero')
                         <div class="card-head">
                           <h3 class="dark-inverted">Profit</h3>
                         </div>
-                        <div id="profit-chart"></div>
+                        <apexchart
+                          id="profit-chart"
+                          :height="barOptions.chart.height"
+                          :type="barOptions.chart.type"
+                          :series="barOptions.series"
+                          :options="barOptions"
+                        ></apexchart>
                       </div>
                     </div>
                   </div>

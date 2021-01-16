@@ -1,11 +1,19 @@
 <script setup lang="ts">
 import { useTitle } from '@vueuse/core'
-import { onMounted } from 'vue'
+import { onMounted, ref } from 'vue'
 
 import {
   activeSidebar,
   toggleSidebar,
 } from '/@src/composition/state/ui/activeSidebarState'
+
+import * as examples from './tags.examples'
+
+const examplesIds = Object.keys(examples)
+const display = ref<any>({})
+for (const id of examplesIds) {
+  display[id] = false
+}
 
 onMounted(() => {
   activeSidebar.value = 'elements'
@@ -51,7 +59,7 @@ useTitle('Elements - Tags - Vuero')
             </div>
 
             <div class="title-wrap">
-              <h1 class="title is-4">Tags & Badges</h1>
+              <h1 class="title is-4">Tags &amp; Badges</h1>
             </div>
 
             <Toolbar />
@@ -98,9 +106,21 @@ useTitle('Elements - Tags - Vuero')
                       <code>is-light</code>, <code>is-white</code>,
                       <code>is-solid</code>.
                     </p>
-                    <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                    <a
+                      class="code-trigger"
+                      :class="[display.colorsTags && 'is-active']"
+                      @click="display.colorsTags = !display.colorsTags"
+                    >
+                      <span
+                        v-show="display.colorsTags"
+                        class="iconify open"
+                        data-icon="feather:code"
+                      />
+                      <span
+                        v-show="!display.colorsTags"
+                        class="iconify close"
+                        data-icon="feather:x"
+                      />
                     </a>
                   </div>
 
@@ -121,23 +141,11 @@ useTitle('Elements - Tags - Vuero')
                       <span class="tag is-purple">Purple</span>
                     </div>
 
-                    <div class="highlight highlight-block">
-                      <pre><code class="code-highlight">
-&#x3C;span class=&#x22;tag&#x22;&#x3E;Default&#x3C;/span&#x3E;
-&#x3C;span class=&#x22;tag is-light&#x22;&#x3E;Light&#x3C;/span&#x3E;
-&#x3C;span class=&#x22;tag is-white&#x22;&#x3E;White&#x3C;/span&#x3E;
-&#x3C;span class=&#x22;tag is-solid&#x22;&#x3E;Solid&#x3C;/span&#x3E;
-&#x3C;span class=&#x22;tag is-primary&#x22;&#x3E;Primary&#x3C;/span&#x3E;
-&#x3C;span class=&#x22;tag is-info&#x22;&#x3E;Info&#x3C;/span&#x3E;
-&#x3C;span class=&#x22;tag is-success&#x22;&#x3E;Success&#x3C;/span&#x3E;
-&#x3C;span class=&#x22;tag is-warning&#x22;&#x3E;Warning&#x3C;/span&#x3E;
-&#x3C;span class=&#x22;tag is-danger&#x22;&#x3E;Danger&#x3C;/span&#x3E;
-&#x3C;span class=&#x22;tag is-orange&#x22;&#x3E;Orange&#x3C;/span&#x3E;
-&#x3C;span class=&#x22;tag is-blue&#x22;&#x3E;Blue&#x3C;/span&#x3E;
-&#x3C;span class=&#x22;tag is-green&#x22;&#x3E;Green&#x3C;/span&#x3E;
-&#x3C;span class=&#x22;tag is-purple&#x22;&#x3E;Purple&#x3C;/span&#x3E;
-</code></pre>
-                    </div>
+                    <HighlightJS
+                      v-if="display.colorsTags"
+                      language="vue"
+                      :code="examples.colorsTags"
+                    />
                   </div>
                 </div>
 
@@ -151,9 +159,21 @@ useTitle('Elements - Tags - Vuero')
                       <code>tag</code> element to apply a rounded style. See the
                       code examples for more details about usage.
                     </p>
-                    <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                    <a
+                      class="code-trigger"
+                      :class="[display.roundedTags && 'is-active']"
+                      @click="display.roundedTags = !display.roundedTags"
+                    >
+                      <span
+                        v-show="display.roundedTags"
+                        class="iconify open"
+                        data-icon="feather:code"
+                      />
+                      <span
+                        v-show="!display.roundedTags"
+                        class="iconify close"
+                        data-icon="feather:x"
+                      />
                     </a>
                   </div>
 
@@ -174,23 +194,11 @@ useTitle('Elements - Tags - Vuero')
                       <span class="tag is-rounded is-purple">Purple</span>
                     </div>
 
-                    <div class="highlight highlight-block">
-                      <pre><code class="code-highlight">
-&#x3C;span class=&#x22;tag is-rounded&#x22;&#x3E;Default&#x3C;/span&#x3E;
-&#x3C;span class=&#x22;tag is-rounded is-light&#x22;&#x3E;Light&#x3C;/span&#x3E;
-&#x3C;span class=&#x22;tag is-rounded is-white&#x22;&#x3E;White&#x3C;/span&#x3E;
-&#x3C;span class=&#x22;tag is-rounded is-solid&#x22;&#x3E;Solid&#x3C;/span&#x3E;
-&#x3C;span class=&#x22;tag is-rounded is-primary&#x22;&#x3E;Primary&#x3C;/span&#x3E;
-&#x3C;span class=&#x22;tag is-rounded is-info&#x22;&#x3E;Info&#x3C;/span&#x3E;
-&#x3C;span class=&#x22;tag is-rounded is-success&#x22;&#x3E;Success&#x3C;/span&#x3E;
-&#x3C;span class=&#x22;tag is-rounded is-warning&#x22;&#x3E;Warning&#x3C;/span&#x3E;
-&#x3C;span class=&#x22;tag is-rounded is-danger&#x22;&#x3E;Danger&#x3C;/span&#x3E;
-&#x3C;span class=&#x22;tag is-rounded is-orange&#x22;&#x3E;Orange&#x3C;/span&#x3E;
-&#x3C;span class=&#x22;tag is-rounded is-blue&#x22;&#x3E;Blue&#x3C;/span&#x3E;
-&#x3C;span class=&#x22;tag is-rounded is-green&#x22;&#x3E;Green&#x3C;/span&#x3E;
-&#x3C;span class=&#x22;tag is-rounded is-purple&#x22;&#x3E;Purple&#x3C;/span&#x3E;
-</code></pre>
-                    </div>
+                    <HighlightJS
+                      v-if="display.roundedTags"
+                      language="vue"
+                      :code="examples.roundedTags"
+                    />
                   </div>
                 </div>
 
@@ -204,9 +212,21 @@ useTitle('Elements - Tags - Vuero')
                       <code>tag</code> element to apply an outlined style. See
                       the code examples for more details about usage.
                     </p>
-                    <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                    <a
+                      class="code-trigger"
+                      :class="[display.outlinedTags && 'is-active']"
+                      @click="display.outlinedTags = !display.outlinedTags"
+                    >
+                      <span
+                        v-show="display.outlinedTags"
+                        class="iconify open"
+                        data-icon="feather:code"
+                      />
+                      <span
+                        v-show="!display.outlinedTags"
+                        class="iconify close"
+                        data-icon="feather:x"
+                      />
                     </a>
                   </div>
 
@@ -241,19 +261,11 @@ useTitle('Elements - Tags - Vuero')
                       >
                     </div>
 
-                    <div class="highlight highlight-block">
-                      <pre><code class="code-highlight">
-&#x3C;span class=&#x22;tag is-rounded is-primary is-outlined&#x22;&#x3E;Primary&#x3C;/span&#x3E;
-&#x3C;span class=&#x22;tag is-rounded is-info is-outlined&#x22;&#x3E;Info&#x3C;/span&#x3E;
-&#x3C;span class=&#x22;tag is-rounded is-success is-outlined&#x22;&#x3E;Success&#x3C;/span&#x3E;
-&#x3C;span class=&#x22;tag is-rounded is-warning is-outlined&#x22;&#x3E;Warning&#x3C;/span&#x3E;
-&#x3C;span class=&#x22;tag is-rounded is-danger is-outlined&#x22;&#x3E;Danger&#x3C;/span&#x3E;
-&#x3C;span class=&#x22;tag is-rounded is-orange is-outlined&#x22;&#x3E;Orange&#x3C;/span&#x3E;
-&#x3C;span class=&#x22;tag is-rounded is-blue is-outlined&#x22;&#x3E;Blue&#x3C;/span&#x3E;
-&#x3C;span class=&#x22;tag is-rounded is-green is-outlined&#x22;&#x3E;Green&#x3C;/span&#x3E;
-&#x3C;span class=&#x22;tag is-rounded is-purple is-outlined&#x22;&#x3E;Purple&#x3C;/span&#x3E;
-</code></pre>
-                    </div>
+                    <HighlightJS
+                      v-if="display.outlinedTags"
+                      language="vue"
+                      :code="examples.outlinedTags"
+                    />
                   </div>
                 </div>
 
@@ -267,9 +279,21 @@ useTitle('Elements - Tags - Vuero')
                       <code>tag</code> element to apply an light style. See the
                       code examples for more details about usage.
                     </p>
-                    <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                    <a
+                      class="code-trigger"
+                      :class="[display.lightTags && 'is-active']"
+                      @click="display.lightTags = !display.lightTags"
+                    >
+                      <span
+                        v-show="display.lightTags"
+                        class="iconify open"
+                        data-icon="feather:code"
+                      />
+                      <span
+                        v-show="!display.lightTags"
+                        class="iconify close"
+                        data-icon="feather:x"
+                      />
                     </a>
                   </div>
 
@@ -290,15 +314,11 @@ useTitle('Elements - Tags - Vuero')
                       >
                     </div>
 
-                    <div class="highlight highlight-block">
-                      <pre><code class="code-highlight">
-&#x3C;span class=&#x22;tag is-rounded is-primary is-light&#x22;&#x3E;Primary&#x3C;/span&#x3E;
-&#x3C;span class=&#x22;tag is-rounded is-info is-light&#x22;&#x3E;Info&#x3C;/span&#x3E;
-&#x3C;span class=&#x22;tag is-rounded is-success is-light&#x22;&#x3E;Success&#x3C;/span&#x3E;
-&#x3C;span class=&#x22;tag is-rounded is-warning is-light&#x22;&#x3E;Warning&#x3C;/span&#x3E;
-&#x3C;span class=&#x22;tag is-rounded is-danger is-light&#x22;&#x3E;Danger&#x3C;/span&#x3E;
-</code></pre>
-                    </div>
+                    <HighlightJS
+                      v-if="display.lightTags"
+                      language="vue"
+                      :code="examples.lightTags"
+                    />
                   </div>
                 </div>
 
@@ -312,9 +332,21 @@ useTitle('Elements - Tags - Vuero')
                       <code>tag</code> element to apply an elevated style. See
                       the code examples for more details about usage.
                     </p>
-                    <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                    <a
+                      class="code-trigger"
+                      :class="[display.elevatedTags && 'is-active']"
+                      @click="display.elevatedTags = !display.elevatedTags"
+                    >
+                      <span
+                        v-show="display.elevatedTags"
+                        class="iconify open"
+                        data-icon="feather:code"
+                      />
+                      <span
+                        v-show="!display.elevatedTags"
+                        class="iconify close"
+                        data-icon="feather:x"
+                      />
                     </a>
                   </div>
 
@@ -353,21 +385,11 @@ useTitle('Elements - Tags - Vuero')
                       >
                     </div>
 
-                    <div class="highlight highlight-block">
-                      <pre><code class="code-highlight">
-&#x3C;span class=&#x22;tag is-rounded is-elevated&#x22;&#x3E;Default&#x3C;/span&#x3E;
-&#x3C;span class=&#x22;tag is-rounded is-solid is-elevated&#x22;&#x3E;Solid&#x3C;/span&#x3E;
-&#x3C;span class=&#x22;tag is-rounded is-primary is-elevated&#x22;&#x3E;Primary&#x3C;/span&#x3E;
-&#x3C;span class=&#x22;tag is-rounded is-info is-elevated&#x22;&#x3E;Info&#x3C;/span&#x3E;
-&#x3C;span class=&#x22;tag is-rounded is-success is-elevated&#x22;&#x3E;Success&#x3C;/span&#x3E;
-&#x3C;span class=&#x22;tag is-rounded is-warning is-elevated&#x22;&#x3E;Warning&#x3C;/span&#x3E;
-&#x3C;span class=&#x22;tag is-rounded is-danger is-elevated&#x22;&#x3E;Danger&#x3C;/span&#x3E;
-&#x3C;span class=&#x22;tag is-rounded is-orange is-elevated&#x22;&#x3E;Orange&#x3C;/span&#x3E;
-&#x3C;span class=&#x22;tag is-rounded is-blue is-elevated&#x22;&#x3E;Blue&#x3C;/span&#x3E;
-&#x3C;span class=&#x22;tag is-rounded is-green is-elevated&#x22;&#x3E;Green&#x3C;/span&#x3E;
-&#x3C;span class=&#x22;tag is-rounded is-purple is-elevated&#x22;&#x3E;Purple&#x3C;/span&#x3E;
-</code></pre>
-                    </div>
+                    <HighlightJS
+                      v-if="display.elevatedTags"
+                      language="vue"
+                      :code="examples.elevatedTags"
+                    />
                   </div>
                 </div>
 
@@ -381,9 +403,21 @@ useTitle('Elements - Tags - Vuero')
                       button if you need to. See the code example for more
                       details about usage.
                     </p>
-                    <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                    <a
+                      class="code-trigger"
+                      :class="[display.addonsTags && 'is-active']"
+                      @click="display.addonsTags = !display.addonsTags"
+                    >
+                      <span
+                        v-show="display.addonsTags"
+                        class="iconify open"
+                        data-icon="feather:code"
+                      />
+                      <span
+                        v-show="!display.addonsTags"
+                        class="iconify close"
+                        data-icon="feather:x"
+                      />
                     </a>
                   </div>
 
@@ -397,18 +431,11 @@ useTitle('Elements - Tags - Vuero')
                       <a class="tag is-delete"></a>
                     </div>
 
-                    <div class="highlight highlight-block">
-                      <pre><code class="code-highlight">
-&#x3C;div class=&#x22;tags has-addons&#x22;&#x3E;
-    &#x3C;span class=&#x22;tag&#x22;&#x3E;Package&#x3C;/span&#x3E;
-    &#x3C;span class=&#x22;tag is-primary&#x22;&#x3E;Bulma&#x3C;/span&#x3E;
-&#x3C;/div&#x3E;
-&#x3C;div class=&#x22;tags has-addons&#x22;&#x3E;
-    &#x3C;span class=&#x22;tag is-primary&#x22;&#x3E;John Maynard&#x3C;/span&#x3E;
-    &#x3C;a class=&#x22;tag is-delete&#x22;&#x3E;&#x3C;/a&#x3E;
-&#x3C;/div&#x3E;
-</code></pre>
-                    </div>
+                    <HighlightJS
+                      v-if="display.addonsTags"
+                      language="vue"
+                      :code="examples.addonsTags"
+                    />
                   </div>
                 </div>
 
@@ -421,9 +448,21 @@ useTitle('Elements - Tags - Vuero')
                       You can use it to build a custom tag input for example.
                       See the code examples for more details about usage.
                     </p>
-                    <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                    <a
+                      class="code-trigger"
+                      :class="[display.listTags && 'is-active']"
+                      @click="display.listTags = !display.listTags"
+                    >
+                      <span
+                        v-show="display.listTags"
+                        class="iconify open"
+                        data-icon="feather:code"
+                      />
+                      <span
+                        v-show="!display.listTags"
+                        class="iconify close"
+                        data-icon="feather:x"
+                      />
                     </a>
                   </div>
 
@@ -479,60 +518,11 @@ useTitle('Elements - Tags - Vuero')
                       </div>
                     </div>
 
-                    <div class="highlight highlight-block">
-                      <pre><code class="code-highlight">
-&#x3C;div class=&#x22;field is-grouped is-grouped-multiline&#x22;&#x3E;
-    &#x3C;div class=&#x22;control&#x22;&#x3E;
-        &#x3C;div class=&#x22;tags has-addons&#x22;&#x3E;
-            &#x3C;a class=&#x22;tag is-warning&#x22;&#x3E;javascript&#x3C;/a&#x3E;
-            &#x3C;a class=&#x22;tag is-delete&#x22;&#x3E;&#x3C;/a&#x3E;
-        &#x3C;/div&#x3E;
-    &#x3C;/div&#x3E;
-
-    &#x3C;div class=&#x22;control&#x22;&#x3E;
-        &#x3C;div class=&#x22;tags has-addons&#x22;&#x3E;
-            &#x3C;a class=&#x22;tag is-danger&#x22;&#x3E;CSS&#x3C;/a&#x3E;
-            &#x3C;a class=&#x22;tag is-delete&#x22;&#x3E;&#x3C;/a&#x3E;
-        &#x3C;/div&#x3E;
-    &#x3C;/div&#x3E;
-
-    &#x3C;div class=&#x22;control&#x22;&#x3E;
-        &#x3C;div class=&#x22;tags has-addons&#x22;&#x3E;
-            &#x3C;a class=&#x22;tag is-info&#x22;&#x3E;React&#x3C;/a&#x3E;
-            &#x3C;a class=&#x22;tag is-delete&#x22;&#x3E;&#x3C;/a&#x3E;
-        &#x3C;/div&#x3E;
-    &#x3C;/div&#x3E;
-
-    &#x3C;div class=&#x22;control&#x22;&#x3E;
-        &#x3C;div class=&#x22;tags has-addons&#x22;&#x3E;
-            &#x3C;a class=&#x22;tag is-success&#x22;&#x3E;Nodejs&#x3C;/a&#x3E;
-            &#x3C;a class=&#x22;tag is-delete&#x22;&#x3E;&#x3C;/a&#x3E;
-        &#x3C;/div&#x3E;
-    &#x3C;/div&#x3E;
-
-    &#x3C;div class=&#x22;control&#x22;&#x3E;
-        &#x3C;div class=&#x22;tags has-addons&#x22;&#x3E;
-            &#x3C;a class=&#x22;tag is-dark&#x22;&#x3E;Deno&#x3C;/a&#x3E;
-            &#x3C;a class=&#x22;tag is-delete&#x22;&#x3E;&#x3C;/a&#x3E;
-        &#x3C;/div&#x3E;
-    &#x3C;/div&#x3E;
-
-    &#x3C;div class=&#x22;control&#x22;&#x3E;
-        &#x3C;div class=&#x22;tags has-addons&#x22;&#x3E;
-            &#x3C;a class=&#x22;tag is-info&#x22;&#x3E;Docker&#x3C;/a&#x3E;
-            &#x3C;a class=&#x22;tag is-delete&#x22;&#x3E;&#x3C;/a&#x3E;
-        &#x3C;/div&#x3E;
-    &#x3C;/div&#x3E;
-
-    &#x3C;div class=&#x22;control&#x22;&#x3E;
-        &#x3C;div class=&#x22;tags has-addons&#x22;&#x3E;
-            &#x3C;a class=&#x22;tag is-primary&#x22;&#x3E;Kubernetes&#x3C;/a&#x3E;
-            &#x3C;a class=&#x22;tag is-delete&#x22;&#x3E;&#x3C;/a&#x3E;
-        &#x3C;/div&#x3E;
-    &#x3C;/div&#x3E;
-&#x3C;/div&#x3E;
-</code></pre>
-                    </div>
+                    <HighlightJS
+                      v-if="display.listTags"
+                      language="vue"
+                      :code="examples.listTags"
+                    />
                   </div>
                 </div>
               </div>
