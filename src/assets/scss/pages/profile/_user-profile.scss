@@ -615,6 +615,8 @@ body {
 
       .profile-body {
         .profile-card {
+          @include vuero-card--dark();
+
           .profile-card-section {
             border-color: lighten($dark-sidebar, 12%);
 
@@ -974,6 +976,8 @@ body {
   &.is-dark {
     .account-wrapper {
       .account-box {
+        @include vuero-card--dark();
+
         &.is-navigation {
           .account-menu {
             .account-menu-item {

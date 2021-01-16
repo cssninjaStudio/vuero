@@ -408,6 +408,8 @@ body {
     }
 
     .color-card {
+      @include vuero-card--dark();
+
       .meta {
         span {
           &:first-child {

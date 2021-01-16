@@ -315,6 +315,8 @@ body {
     .project-details {
       .project-details-inner {
         .project-details-card {
+          @include vuero-card--dark();
+
           .card-head {
             .title-wrap {
               h3 {
@@ -361,6 +363,8 @@ body {
         }
 
         .side-card {
+          @include vuero-card--dark();
+
           h4 {
             color: $accent;
           }

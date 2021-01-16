@@ -256,6 +256,22 @@ body {
   }
 }
 
+.is-dark {
+  .onboarding-wrapper {
+    &.onboarding-v1,
+    &.onboarding-v2,
+    &.onboarding-v4 {
+      .onboarding-wrap {
+        .onboarding-wrap-inner {
+          .onboarding-card {
+            @include vuero-card--dark();
+          }
+        }
+      }
+    }
+  }
+}
+
 /* ==========================================================================
 6. Media Queries
 ========================================================================== */

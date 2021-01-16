@@ -574,6 +574,17 @@ body {
   }
 }
 
+.is-dark {
+  .card-grid {
+    &.card-grid-v3,
+    &.card-grid-v4 {
+      .card-grid-item {
+        @include vuero-card--dark();
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .card-grid {
     &.card-grid-v1 {

@@ -254,6 +254,10 @@
 body {
   &.is-dark {
     .user-grid {
+      .grid-item {
+        @include vuero-card--dark();
+      }
+
       &.user-grid-v2 {
         .grid-item-wrap {
           border-color: lighten($dark-sidebar, 12%);

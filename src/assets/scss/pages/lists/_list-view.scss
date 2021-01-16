@@ -202,6 +202,8 @@ body {
     .list-view {
       &.list-view-v1 {
         .list-view-item {
+          @include vuero-card--dark();
+
           .list-view-item-inner {
             .meta-left {
               h3 {
@@ -362,6 +364,8 @@ body {
     .list-view {
       &.list-view-v2 {
         .list-view-item {
+          @include vuero-card--dark();
+
           .list-view-item-inner {
             .meta-left {
               h3 {
@@ -488,6 +492,8 @@ body {
     .list-view {
       &.list-view-v3 {
         .list-view-item {
+          @include vuero-card--dark();
+
           .list-view-item-inner {
             > img {
               border-color: lighten($dark-sidebar, 12%);
@@ -662,6 +668,8 @@ body {
     .list-view {
       &.list-view-v4 {
         .list-view-item {
+          @include vuero-card--dark();
+
           .list-view-item-inner {
             .pre-meta {
               h3 {

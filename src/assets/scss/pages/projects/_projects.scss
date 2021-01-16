@@ -92,6 +92,8 @@ body {
     .all-projects {
       .project-grid {
         .project-grid-item {
+          @include vuero-card--dark();
+
           h3 {
             color: $dark-dark-text;
           }

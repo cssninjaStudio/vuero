@@ -691,6 +691,8 @@ body {
       .billing-options-wrapper {
         .left {
           .option-block {
+            @include vuero-card--dark();
+
             .block-header {
               h3 {
                 color: $dark-dark-text;
@@ -1050,6 +1052,33 @@ body {
             }
           }
         }
+      }
+    }
+  }
+}
+
+.is-dark {
+  .promotion-page-wrapper,
+  .confirm-account-wrapper {
+    .wrapper-inner {
+      .action-box {
+        @include vuero-card--dark();
+      }
+    }
+    .wrapper-outer {
+      @include vuero-card--dark();
+    }
+  }
+  .action-page-wrapper {
+    &.action-page-v1,
+    &.action-page-v2 {
+      .wrapper-inner {
+        .action-box {
+          @include vuero-card--dark();
+        }
+      }
+      .wrapper-outer {
+        @include vuero-card--dark();
       }
     }
   }
