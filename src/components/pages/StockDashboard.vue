@@ -35,12 +35,12 @@
               <stop
                 offset="0%"
                 stop-opacity="1"
-                style="stop-color: rgb(113, 5, 255)"
+                style="stop-color: rgb(65, 184, 131)"
               ></stop>
               <stop
                 offset="100%"
                 stop-opacity="1"
-                style="stop-color: rgb(229, 209, 255)"
+                style="stop-color: rgb(182, 240, 214)"
               ></stop>
             </linearGradient>
             <path
@@ -55,12 +55,12 @@
             ></path>
             <path
               d="M 206.649 17.218 C 206.649 15.739 207.85 14.538 209.328 14.538 C 210.807 14.538 212.008 15.739 212.008 17.218 C 212.008 18.696 210.807 19.897 209.328 19.897 C 207.85 19.897 206.649 18.696 206.649 17.218 Z"
-              fill="rgb(197, 153, 255)"
+              fill="rgb(65, 184, 131)"
             ></path>
             <text
               transform="matrix(1,0,0,1,195,5)"
               stroke="none"
-              fill="rgb(113, 5, 255)"
+              fill="rgb(65, 184, 131)"
             >
               +14%
             </text>

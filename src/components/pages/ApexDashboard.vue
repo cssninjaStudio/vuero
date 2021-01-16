@@ -1815,7 +1815,7 @@ const options1 = {
       show: false,
     },
   },
-  colors: [themeColors.accent],
+  colors: [themeColors.green],
   dataLabels: {
     enabled: false,
   },
@@ -1862,7 +1862,7 @@ const options2 = {
       show: false,
     },
   },
-  colors: [themeColors.accent, themeColors.secondary, themeColors.orange],
+  colors: [themeColors.accent, themeColors.info, themeColors.green],
   dataLabels: {
     enabled: false,
   },
@@ -1955,7 +1955,7 @@ const options4 = {
     width: [2, 2, 2],
     curve: 'stepline',
   },
-  colors: [themeColors.accent],
+  colors: [themeColors.green],
   dataLabels: {
     enabled: false,
   },
@@ -2010,7 +2010,7 @@ const options5 = {
     width: [2, 2, 2],
     curve: 'straight',
   },
-  colors: [themeColors.accent],
+  colors: [themeColors.green],
   title: {
     text: 'Area Chart',
     align: 'left',
@@ -2045,7 +2045,7 @@ const options6 = {
       show: false,
     },
   },
-  colors: [themeColors.accent, themeColors.secondary, themeColors.orange],
+  colors: [themeColors.green, themeColors.info, themeColors.purple],
   title: {
     text: 'Multiple Area',
     align: 'left',
@@ -2172,7 +2172,7 @@ const options7 = {
       },
     },
   },
-  colors: [themeColors.accent, themeColors.secondary, themeColors.orange],
+  colors: [themeColors.accent, themeColors.info, themeColors.green],
   title: {
     text: 'Multiple Areas',
     align: 'left',
@@ -2273,7 +2273,7 @@ const options8 = {
       },
     },
   },
-  colors: [themeColors.accent, themeColors.secondary, themeColors.orange],
+  colors: [themeColors.green, themeColors.secondary, themeColors.orange],
   title: {
     text: 'Bar Chart',
     align: 'left',
@@ -2311,8 +2311,8 @@ const options9 = {
   },
   colors: [
     themeColors.accent,
-    themeColors.secondary,
-    themeColors.orange,
+    themeColors.info,
+    themeColors.green,
     themeColors.purple,
   ],
   dataLabels: {
@@ -2382,10 +2382,10 @@ const options10 = {
   },
   colors: [
     themeColors.accent,
-    themeColors.secondary,
-    themeColors.orange,
-    themeColors.purple,
+    themeColors.info,
     themeColors.green,
+    themeColors.purple,
+    themeColors.orange,
   ],
   responsive: [
     {
@@ -2479,7 +2479,7 @@ const options11 = {
   },
   colors: [
     themeColors.accent,
-    themeColors.secondary,
+    themeColors.green,
     themeColors.orange,
     themeColors.purple,
     themeColors.green,
@@ -2516,10 +2516,6 @@ const options12 = {
     },
   },
   colors: [
-    themeColors.accent,
-    themeColors.secondary,
-    themeColors.orange,
-    themeColors.purple,
     themeColors.green,
   ],
   plotOptions: {
@@ -2569,9 +2565,7 @@ const options13 = {
     },
   },
   colors: [
-    themeColors.accent,
-    themeColors.secondary,
-    themeColors.orange,
+    themeColors.info,
     themeColors.green,
   ],
   title: {
@@ -2626,7 +2620,7 @@ const options14 = {
             new Date('2019-03-04').getTime(),
             new Date('2019-03-08').getTime(),
           ],
-          fillColor: themeColors.secondary,
+          fillColor: themeColors.info,
         },
         {
           x: 'Coding',
@@ -2634,7 +2628,7 @@ const options14 = {
             new Date('2019-03-07').getTime(),
             new Date('2019-03-10').getTime(),
           ],
-          fillColor: themeColors.orange,
+          fillColor: themeColors.green,
         },
         {
           x: 'Testing',
@@ -2642,7 +2636,7 @@ const options14 = {
             new Date('2019-03-08').getTime(),
             new Date('2019-03-12').getTime(),
           ],
-          fillColor: themeColors.info,
+          fillColor: themeColors.purple,
         },
         {
           x: 'Deployment',
@@ -2650,7 +2644,7 @@ const options14 = {
             new Date('2019-03-12').getTime(),
             new Date('2019-03-17').getTime(),
           ],
-          fillColor: themeColors.purple,
+          fillColor: themeColors.orange,
         },
       ],
     },
@@ -2668,10 +2662,10 @@ const options14 = {
   },
   colors: [
     themeColors.accent,
-    themeColors.secondary,
-    themeColors.orange,
-    themeColors.purple,
+    themeColors.info,
     themeColors.green,
+    themeColors.purple,
+    themeColors.orange,
   ],
   plotOptions: {
     bar: {
@@ -2769,10 +2763,10 @@ const options15 = {
   },
   colors: [
     themeColors.accent,
-    themeColors.secondary,
-    themeColors.orange,
-    themeColors.purple,
+    themeColors.info,
     themeColors.green,
+    themeColors.purple,
+    themeColors.orange,
   ],
   dataLabels: {
     enabled: false,
@@ -2887,10 +2881,10 @@ const options16 = {
   },
   colors: [
     themeColors.accent,
-    themeColors.secondary,
-    themeColors.orange,
-    themeColors.purple,
     themeColors.info,
+    themeColors.green,
+    themeColors.purple,
+    themeColors.orange,
   ],
   dataLabels: {
     enabled: false,
@@ -2927,10 +2921,10 @@ const options17 = {
   },
   colors: [
     themeColors.accent,
-    themeColors.secondary,
-    themeColors.orange,
     themeColors.info,
+    themeColors.green,
     themeColors.purple,
+    themeColors.orange,
   ],
   labels: ['Team A', 'Team B', 'Team C', 'Team D', 'Team E'],
   responsive: [
@@ -2967,10 +2961,10 @@ const options18 = {
   labels: ['Team A', 'Team B', 'Team C', 'Team D', 'Team E'],
   colors: [
     themeColors.accent,
-    themeColors.secondary,
-    themeColors.orange,
-    themeColors.purple,
     themeColors.info,
+    themeColors.green,
+    themeColors.purple,
+    themeColors.orange,
   ],
   responsive: [
     {
@@ -3007,10 +3001,10 @@ const options19 = {
   },
   colors: [
     themeColors.accent,
-    themeColors.secondary,
-    themeColors.orange,
-    themeColors.purple,
     themeColors.info,
+    themeColors.green,
+    themeColors.purple,
+    themeColors.orange,
   ],
   plotOptions: {
     radialBar: {
@@ -3036,10 +3030,10 @@ const options20 = {
   },
   colors: [
     themeColors.accent,
-    themeColors.secondary,
-    themeColors.orange,
-    themeColors.purple,
     themeColors.info,
+    themeColors.green,
+    themeColors.purple,
+    themeColors.orange,
   ],
   plotOptions: {
     radialBar: {
@@ -3079,10 +3073,10 @@ const options21 = {
   },
   colors: [
     themeColors.accent,
-    themeColors.secondary,
-    themeColors.orange,
-    themeColors.purple,
     themeColors.info,
+    themeColors.green,
+    themeColors.purple,
+    themeColors.orange,
   ],
   plotOptions: {
     radialBar: {
@@ -3140,10 +3134,10 @@ const options22 = {
   },
   colors: [
     themeColors.accent,
-    themeColors.secondary,
-    themeColors.orange,
-    themeColors.purple,
     themeColors.info,
+    themeColors.green,
+    themeColors.purple,
+    themeColors.orange,
   ],
   plotOptions: {
     radialBar: {
@@ -3207,10 +3201,10 @@ const options23 = {
   },
   colors: [
     themeColors.accent,
-    themeColors.secondary,
-    themeColors.orange,
-    themeColors.purple,
     themeColors.info,
+    themeColors.green,
+    themeColors.purple,
+    themeColors.orange,
   ],
   title: {
     text: 'Radar Chart',

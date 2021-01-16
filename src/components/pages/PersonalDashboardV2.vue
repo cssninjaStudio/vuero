@@ -24,7 +24,7 @@ const completionOptions = {
       show: false,
     },
   },
-  colors: [themeColors.accent, themeColors.info, themeColors.orange],
+  colors: [themeColors.accent, themeColors.info, themeColors.green],
   legend: {
     position: 'top',
   },
@@ -85,7 +85,7 @@ const barOptions = {
       show: false,
     },
   },
-  colors: [themeColors.accent, themeColors.purple, themeColors.orange],
+  colors: [themeColors.accent, themeColors.purple, themeColors.green],
   legend: {
     position: 'top',
   },

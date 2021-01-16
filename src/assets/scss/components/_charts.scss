@@ -74,6 +74,7 @@ body {
 
           line {
             color: lighten($dark-sidebar, 12%) !important;
+            stroke: lighten($dark-sidebar, 12%) !important;
           }
         }
 
@@ -99,12 +100,14 @@ body {
     .apexcharts-series-bubble {
       .apexcharts-marker {
         color: lighten($dark-sidebar, 2%);
+        stroke: lighten($dark-sidebar, 2%);
       }
     }
 
     .apexcharts-pie-area,
     .apexcharts-pie-slice-0 {
       color: lighten($dark-sidebar, 12%);
+      stroke: lighten($dark-sidebar, 12%);
     }
 
     .apexcharts-radialbar-area {
@@ -130,6 +133,7 @@ body {
     .apexcharts-xaxis-inversed {
       line {
         color: lighten($dark-sidebar, 12%);
+        stroke: lighten($dark-sidebar, 12%);
       }
     }
 
@@ -147,6 +151,7 @@ body {
       > line {
         fill: none !important;
         color: lighten($dark-sidebar, 12%);
+        stroke: lighten($dark-sidebar, 12%);
       }
     }
 

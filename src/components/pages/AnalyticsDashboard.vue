@@ -19,7 +19,7 @@ const revenueOptions = {
       show: false,
     },
   },
-  colors: [themeColors.accent],
+  colors: [themeColors.green],
   dataLabels: {
     enabled: false,
   },
@@ -53,7 +53,7 @@ const gaugeOptions = {
     type: 'radialBar',
     offsetY: -10,
   },
-  colors: [themeColors.accent, themeColors.purple],
+  colors: [themeColors.accent, themeColors.green],
   plotOptions: {
     radialBar: {
       startAngle: -135,
@@ -128,7 +128,7 @@ const barOptions = {
       show: false,
     },
   },
-  colors: [themeColors.accent, themeColors.purple, themeColors.orange],
+  colors: [themeColors.accent, themeColors.purple, themeColors.green],
   legend: {
     position: 'top',
   },
@@ -180,7 +180,7 @@ const optionsCircle = {
       show: false,
     },
   },
-  colors: [themeColors.purple],
+  colors: [themeColors.accent],
   plotOptions: {
     radialBar: {
       hollow: {

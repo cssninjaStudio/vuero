@@ -23,7 +23,7 @@ const customersOptions = {
       show: false,
     },
   },
-  colors: [themeColors.accent, themeColors.info, themeColors.orange],
+  colors: [themeColors.accent, themeColors.info, themeColors.green],
   title: {
     text: 'Customers',
     align: 'left',
