@@ -838,6 +838,7 @@
 
             &.chat-button {
               color: $accent;
+              background: none !important;
             }
           }
         }
@@ -1346,6 +1347,7 @@
 
               &.chat-button {
                 color: $accent;
+                background: none !important;
               }
             }
           }
@@ -1439,8 +1441,8 @@
   $toggleBtn-bgColor--night: #fff;
   $toggleBtn-borderColor--night: #e3e3c7;
 
-  $bgColor--day: lighten($accent, 18%);
-  $borderColor--day: lighten($accent, 14%);
+  $bgColor--day: lighten(#797bf2, 18%);
+  $borderColor--day: lighten(#797bf2, 14%);
   $toggleBtn-bgColor--day: #ffdf6d;
   $toggleBtn-borderColor--day: #e1c348;
 

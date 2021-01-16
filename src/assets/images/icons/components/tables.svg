@@ -3,11 +3,10 @@
 <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 800 600" style="enable-background:new 0 0 800 600;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#FFFFFF;stroke:#41b883;stroke-width:5;stroke-miterlimit:10;}
+	.st0{fill:#FFFFFF;stroke:#41B883;stroke-width:5;stroke-miterlimit:10;}
 	.st1{fill:#EFEFEF;}
 	.st2{fill:#F6F6F6;}
-	.st3{fill:none;stroke:#41b883;stroke-width:5;stroke-miterlimit:10;}
-	.st4{fill:none;stroke:#7F00FF;stroke-width:5;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#41B883;stroke-width:5;stroke-miterlimit:10;}
 </style>
 <g>
 	<path class="st0" d="M530.7,464.4H73.2c-6.7,0-12.2-5.5-12.2-12.2v-300c0-6.7,5.5-12.2,12.2-12.2h457.5c6.7,0,12.2,5.5,12.2,12.2
@@ -20,7 +19,7 @@
 	<rect id="XMLID_29_" x="87.4" y="285" class="st1" width="87.8" height="19"/>
 	<rect id="XMLID_28_" x="195.7" y="285" class="st2" width="144.1" height="19"/>
 	<rect id="XMLID_27_" x="360.2" y="285" class="st2" width="144.1" height="19"/>
-	<line class="st4" x1="61" y1="324.9" x2="542.9" y2="324.9"/>
+	<line class="st3" x1="61" y1="324.9" x2="542.9" y2="324.9"/>
 	<rect id="XMLID_26_" x="87.4" y="352.1" class="st1" width="87.8" height="19"/>
 	<rect id="XMLID_25_" x="195.7" y="352.1" class="st2" width="144.1" height="19"/>
 	<rect id="XMLID_24_" x="360.2" y="352.1" class="st2" width="144.1" height="19"/>
