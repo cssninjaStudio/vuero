@@ -518,7 +518,7 @@ const activeTab = ref<'list' | 'grid' | 'app' | 'utility'>('list')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'admin-utility-status' }">
+                    <RouterLink :to="{ name: 'status' }">
                       <i class="lnil lnil-checkmark-circle"></i>
                       <span>App Status</span>
                       <Icon icon="feather:circle" />

@@ -512,10 +512,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
               </RouterLink>
             </li>
             <li>
-              <RouterLink
-                :to="{ name: 'admin-utility-status' }"
-                class="is-submenu"
-              >
+              <RouterLink :to="{ name: 'status' }" class="is-submenu">
                 <i class="lnil lnil-checkmark-circle"></i>
                 <span>App Status</span>
               </RouterLink>

@@ -344,6 +344,6 @@ useTitle('Dashboard Apps 2 - Admin - Vuero')
 </template>
 
 <style lang="scss">
-@import '../../assets/scss/abstracts/_variables.scss';
-@import '../../assets/scss/pages/generic/_inbox.scss';
+@import '../assets/scss/abstracts/_variables.scss';
+@import '../assets/scss/pages/generic/_inbox.scss';
 </style>

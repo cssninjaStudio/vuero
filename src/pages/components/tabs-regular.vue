@@ -63,7 +63,6 @@ const activeTab = ref<Tabs>('team')
   </div>
 </template>`
 
-
 useTitle('Components - Tabs Regular - Vuero')
 </script>
 

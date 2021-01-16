@@ -62,7 +62,7 @@ watch(
             <NavbarComponentsDropdown />
           </div>
           <div class="centered-button">
-            <RouterLink :to="{ name: 'webapp-messaging-chat' }" class="button">
+            <RouterLink :to="{ name: 'messaging-v2' }" class="button">
               <span class="icon is-small">
                 <Icon icon="feather:message-circle" />
               </span>

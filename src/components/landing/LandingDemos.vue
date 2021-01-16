@@ -1325,7 +1325,7 @@
                   <span>Chat Messaging</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'admin-messaging-chat' }"
+                  <RouterLink :to="{ name: 'messaging-v1' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -3782,7 +3782,7 @@
                   <span>Chat Messaging</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-messaging-chat' }"
+                  <RouterLink :to="{ name: 'messaging-v2' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -5076,7 +5076,7 @@
                   <span>Status Page</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'admin-utility-status' }"
+                  <RouterLink :to="{ name: 'status' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -5108,7 +5108,7 @@
                   <span>Inbox UI V1</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'admin-dashboards-apps-2' }"
+                  <RouterLink :to="{ name: 'inbox' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>

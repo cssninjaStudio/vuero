@@ -1,0 +1,600 @@
+<script setup lang="ts">
+import { themeColors } from '/@src/composition/state/themeColors'
+
+//Revenue Chart
+const revenueOptions = {
+  series: [
+    {
+      name: 'Revenue',
+      data: [10835, 40214, 36257, 51411, 45697, 61221, 65295, 91512, 75648],
+    },
+  ],
+  chart: {
+    height: 250,
+    type: 'line',
+    zoom: {
+      enabled: false,
+    },
+    toolbar: {
+      show: false,
+    },
+  },
+  colors: [themeColors.accent],
+  dataLabels: {
+    enabled: false,
+  },
+  stroke: {
+    width: [2, 2, 2],
+    curve: 'smooth',
+  },
+  grid: {
+    row: {
+      colors: ['transparent', 'transparent'], // takes an array which will be repeated on columns
+      opacity: 0.5,
+    },
+  },
+  xaxis: {
+    categories: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct'],
+  },
+  tooltip: {
+    y: {
+      formatter: function (val: string) {
+        return '$' + val
+      },
+    },
+  },
+}
+
+//Gauge goal chart
+const gaugeOptions = {
+  series: [57, 86],
+  chart: {
+    height: 220,
+    type: 'radialBar',
+    offsetY: -10,
+  },
+  colors: [themeColors.accent, themeColors.purple],
+  plotOptions: {
+    radialBar: {
+      startAngle: -135,
+      endAngle: 135,
+      inverseOrder: true,
+      dataLabels: {
+        show: true,
+        name: {
+          show: true,
+          fontSize: '14px',
+          fontWeight: 500,
+          offsetY: -10,
+        },
+        value: {
+          show: true,
+          fontWeight: 600,
+          color: themeColors.lightText,
+          fontSize: '16px',
+          offsetY: -5,
+        },
+        total: {
+          show: true,
+          fontSize: '14px',
+          fontWeight: 500,
+          color: themeColors.lightText,
+        },
+      },
+      hollow: {
+        margin: 15,
+        size: '75%',
+      },
+      track: {
+        strokeWidth: '100%',
+      },
+    },
+  },
+
+  stroke: {
+    lineCap: 'round',
+  },
+  labels: ['Efficiency', 'Productivity'],
+}
+
+//Profit bar chart
+const series = [
+  {
+    name: 'Net Profit',
+    data: [44, 55, 57, 56, 61, 58, 63, 60, 66],
+  },
+  {
+    name: 'Revenue',
+    data: [76, 85, 101, 98, 87, 105, 91, 114, 94],
+  },
+  {
+    name: 'Free Cash Flow',
+    data: [35, 41, 36, 26, 45, 48, 52, 53, 41],
+  },
+].map((s) => {
+  return {
+    name: s.name,
+    data: s.data.map((d) => {
+      return d - 70
+    }),
+  }
+})
+
+const barOptions = {
+  chart: {
+    height: 250,
+    type: 'bar',
+    toolbar: {
+      show: false,
+    },
+  },
+  colors: [themeColors.accent, themeColors.purple, themeColors.orange],
+  legend: {
+    position: 'top',
+  },
+  plotOptions: {
+    bar: {
+      horizontal: false,
+      endingShape: 'rounded',
+      columnWidth: '55%',
+    },
+  },
+  dataLabels: {
+    enabled: false,
+  },
+  stroke: {
+    show: true,
+    width: 2,
+    colors: ['transparent'],
+  },
+  series: series,
+  xaxis: {
+    categories: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct'],
+  },
+  yaxis: {
+    labels: {
+      formatter: function (val: string) {
+        return val + 70
+      },
+    },
+  },
+  fill: {
+    opacity: 1,
+  },
+  tooltip: {
+    y: {
+      formatter: function (val: string) {
+        return val + 70
+      },
+    },
+  },
+}
+
+//Growth radial chart
+const optionsCircle = {
+  series: [65],
+  chart: {
+    height: 160,
+    type: 'radialBar',
+    toolbar: {
+      show: false,
+    },
+  },
+  colors: [themeColors.purple],
+  plotOptions: {
+    radialBar: {
+      hollow: {
+        size: '75%',
+      },
+      dataLabels: {
+        show: true,
+        name: {
+          show: true,
+          fontSize: '14px',
+          fontWeight: 500,
+          offsetY: -10,
+          color: themeColors.lightText,
+        },
+        value: {
+          show: true,
+          fontWeight: 600,
+          color: themeColors.purple,
+          fontSize: '16px',
+          offsetY: -5,
+        },
+      },
+    },
+  },
+  labels: ['Growth'],
+}
+</script>
+
+<template>
+  <!--Finance Dashboard V1-->
+  <div class="finance-dashboard analytics-dashboard">
+    <div class="columns">
+      <div class="column is-9">
+        <div class="columns is-multiline">
+          <!--Dashboard Tile-->
+          <div class="column is-4">
+            <div class="dashboard-tile">
+              <div class="tile-head">
+                <h3 class="dark-inverted">Transactions</h3>
+                <div class="h-icon is-primary is-rounded is-small">
+                  <i class="fas fa-gem"></i>
+                </div>
+              </div>
+              <div class="tile-body">
+                <span class="dark-inverted">8,637</span>
+              </div>
+              <div class="tile-foot">
+                <span class="text-h-green"
+                  >+6.4% <Icon icon="feather:trending-up"
+                /></span>
+                <span>since last month</span>
+              </div>
+            </div>
+          </div>
+          <!--Dashboard Tile-->
+          <div class="column is-4">
+            <div class="dashboard-tile">
+              <div class="tile-head">
+                <h3 class="dark-inverted">Subscriptions</h3>
+                <div class="h-icon is-orange is-rounded is-small">
+                  <i class="fas fa-user-plus"></i>
+                </div>
+              </div>
+              <div class="tile-body">
+                <span class="dark-inverted">1,378</span>
+              </div>
+              <div class="tile-foot">
+                <span class="text-h-red"
+                  >-2.1% <Icon icon="feather:trending-down"
+                /></span>
+                <span>going down</span>
+              </div>
+            </div>
+          </div>
+          <!--Dashboard Tile-->
+          <div class="column is-4">
+            <div class="dashboard-tile">
+              <div class="tile-head">
+                <h3 class="dark-inverted">Referals</h3>
+                <div class="h-icon is-green is-rounded is-small">
+                  <i class="fas fa-bullhorn"></i>
+                </div>
+              </div>
+              <div class="tile-body">
+                <span class="dark-inverted">1,911</span>
+              </div>
+              <div class="tile-foot">
+                <span class="text-h-green"
+                  >+4.2% <Icon icon="feather:trending-up"
+                /></span>
+                <span>going up</span>
+              </div>
+            </div>
+          </div>
+          <!--Dashboard Card-->
+          <div class="column is-8">
+            <div class="dashboard-card">
+              <div class="card-head">
+                <h3 class="dark-inverted">Revenue</h3>
+              </div>
+              <div class="revenue-stats">
+                <div class="revenue-stat">
+                  <span>This Month</span>
+                  <span class="current">$75,648.43</span>
+                </div>
+                <div class="revenue-stat">
+                  <span>Last Month</span>
+                  <span class="dark-inverted">$91,512.18</span>
+                </div>
+              </div>
+              <apexchart
+                id="revenue-chart"
+                :height="revenueOptions.chart.height"
+                :type="revenueOptions.chart.type"
+                :series="revenueOptions.series"
+                :options="revenueOptions"
+              ></apexchart>
+            </div>
+          </div>
+          <!--Dashboard Card-->
+          <div class="column is-4">
+            <div class="dashboard-card">
+              <div class="card-head">
+                <h3 class="dark-inverted">Goal Overview</h3>
+              </div>
+
+              <div class="radial-wrap">
+                <apexchart
+                  id="goal-gauge"
+                  :height="gaugeOptions.chart.height"
+                  :type="gaugeOptions.chart.type"
+                  :series="gaugeOptions.series"
+                  :options="gaugeOptions"
+                ></apexchart>
+                <div class="radial-stats is-dark-bordered-12">
+                  <div class="radial-stat is-dark-bordered-12">
+                    <span>Completed</span>
+                    <span class="dark-inverted">1,223</span>
+                  </div>
+                  <div class="radial-stat">
+                    <span>In Progress</span>
+                    <span class="dark-inverted">467</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Dashboard Card-->
+          <div class="column is-4">
+            <div class="dashboard-card">
+              <div class="card-head">
+                <h3 class="dark-inverted">Sales</h3>
+              </div>
+
+              <div class="progress-block">
+                <div class="value">
+                  <span class="dark-inverted">78%</span>
+                </div>
+                <progress
+                  class="progress is-primary is-tiny"
+                  value="78"
+                  max="100"
+                >
+                  78%
+                </progress>
+                <div class="progress-foot">
+                  <span class="text-h-green"
+                    >+6.4% <Icon icon="feather:trending-up"
+                  /></span>
+                  <span>since last month</span>
+                </div>
+
+                <apexchart
+                  id="radial-circle"
+                  class="circle-chart-wrapper"
+                  :height="optionsCircle.chart.height"
+                  :type="optionsCircle.chart.type"
+                  :series="optionsCircle.series"
+                  :options="optionsCircle"
+                ></apexchart>
+              </div>
+            </div>
+          </div>
+          <!--Dashboard Card-->
+          <div class="column is-8">
+            <div class="dashboard-card">
+              <div class="card-head">
+                <h3 class="dark-inverted">Profit</h3>
+              </div>
+              <apexchart
+                id="profit-chart"
+                :height="barOptions.chart.height"
+                :type="barOptions.chart.type"
+                :series="barOptions.series"
+                :options="barOptions"
+              ></apexchart>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="column is-3">
+        <!--Widget-->
+        <div class="widget contact-widget is-reversed is-straight">
+          <div class="widget-content">
+            <div class="left">
+              <div class="h-avatar is-medium">
+                <img
+                  class="avatar is-squared"
+                  src="/@images/avatars/photos/8.jpg"
+                  alt=""
+                  data-user-popover="3"
+                  @error="
+                    $event.target.src = 'https://via.placeholder.com/150x150'
+                  "
+                />
+              </div>
+            </div>
+            <div class="right">
+              <h3>Erik K.</h3>
+              <div class="company">
+                <span>Vuero Ltd.</span>
+                <p>Product Manager</p>
+              </div>
+              <div class="contact-info">
+                <span>
+                  <Icon icon="feather:map-pin" />
+                  <span>Los Angeles, CA</span>
+                </span>
+                <span>
+                  <Icon icon="feather:phone" />
+                  <span>+1 444-5156</span>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <p class="email">erikkovalsky@huro.io</p>
+        </div>
+        <!--Widget-->
+        <div class="widget picker-widget is-straight">
+          <div class="widget-toolbar">
+            <div class="left">
+              <a class="action-icon">
+                <Icon icon="feather:chevron-left" />
+              </a>
+            </div>
+            <div class="center">
+              <h3>October 2020</h3>
+            </div>
+            <div class="right">
+              <a class="action-icon">
+                <Icon icon="feather:chevron-right" />
+              </a>
+            </div>
+          </div>
+          <table class="calendar">
+            <thead>
+              <tr>
+                <td>Mon</td>
+                <td>Tue</td>
+                <td>Wed</td>
+                <td>Thu</td>
+                <td>Fri</td>
+                <td>Sat</td>
+                <td>Sun</td>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="prev-month">29</td>
+                <td class="prev-month">30</td>
+                <td class="prev-month">31</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+              </tr>
+
+              <tr>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+              </tr>
+
+              <tr>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td class="current-day">18</td>
+              </tr>
+
+              <tr>
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+                <td>24</td>
+                <td>25</td>
+              </tr>
+
+              <tr>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+                <td>29</td>
+                <td>30</td>
+                <td>31</td>
+                <td class="next-month">1</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!--Widget-->
+        <div class="widget text-widget is-straight">
+          <div class="widget-toolbar">
+            <div class="left">
+              <h3>New Followers</h3>
+            </div>
+            <div class="right">
+              <div class="avatar-stack">
+                <div class="h-avatar is-small">
+                  <img
+                    class="avatar"
+                    src="/@images/avatars/photos/7.jpg"
+                    alt=""
+                    @error="
+                      $event.target.src = 'https://via.placeholder.com/150x150'
+                    "
+                  />
+                </div>
+                <div class="h-avatar is-small">
+                  <img
+                    class="avatar"
+                    src="/@images/avatars/photos/8.jpg"
+                    alt=""
+                    @error="
+                      $event.target.src = 'https://via.placeholder.com/150x150'
+                    "
+                  />
+                </div>
+                <div class="h-avatar is-small">
+                  <img
+                    class="avatar"
+                    src="/@images/avatars/photos/5.jpg"
+                    alt=""
+                    @error="
+                      $event.target.src = 'https://via.placeholder.com/150x150'
+                    "
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="widget-content">
+            <p>
+              Great News! <span>Alice</span>, <span>Erik</span> and
+              <span>Mary</span> are now following you. Take some time to look at
+              their profile.
+            </p>
+          </div>
+        </div>
+
+        <!--Widget-->
+        <div class="widget list-widget is-straight">
+          <div class="widget-toolbar">
+            <div class="left">
+              <h3>Notifications</h3>
+            </div>
+            <div class="right">
+              <WidgetDropdown />
+            </div>
+          </div>
+          <div class="widget-content">
+            <ul>
+              <li>
+                <a>
+                  <span>Personal</span>
+                  <span class="tag is-rounded">4</span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <span>Business</span>
+                  <span class="tag is-rounded">9</span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <span>Family</span>
+                  <span class="tag is-rounded">2</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<style lang="scss">
+@import '../../assets/scss/abstracts/_variables.scss';
+@import '../../assets/scss/abstracts/_mixins.scss';
+@import '../../assets/scss/pages/dashboards/_finance.scss';
+@import '../../assets/scss/pages/generic/_widgets-lists.scss';
+</style>

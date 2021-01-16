@@ -185,14 +185,14 @@ const activeTab = ref<'dashboards' | 'templates'>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'admin-messaging-chat' }">
+                    <RouterLink :to="{ name: 'messaging-v1' }">
                       <i class="lnil lnil-bubble"></i>
                       <span>Messaging V1</span>
                       <Icon icon="feather:circle" />
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'webapp-messaging-chat' }">
+                    <RouterLink :to="{ name: 'messaging-v2' }">
                       <i class="lnil lnil-bubble"></i>
                       <span>Messaging V2</span>
                       <Icon icon="feather:circle" />

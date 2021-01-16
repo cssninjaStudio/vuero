@@ -31,99 +31,10 @@ useTitle('Onboarding Page 5 - WebApp - Vuero')
           </div>
 
           <div class="page-content-inner">
-            <!--Onboarding-->
-            <div class="standard-onboarding is-webapp">
-              <div class="title-wrap">
-                <p>Looks like you're new here</p>
-                <h2>Welcome to Vuero. What would you like to do?</h2>
-              </div>
-
-              <div class="onboarding-wrap">
-                <div class="onboarding-wrap-inner">
-                  <!--Card-->
-                  <div class="onboarding-card">
-                    <img
-                      class="light-image"
-                      src="/@images/illustrations/onboarding/set6-1.svg"
-                      alt=""
-                    />
-                    <img
-                      class="dark-image"
-                      src="/@images/illustrations/onboarding/set6-1-dark.svg"
-                      alt=""
-                    />
-                    <h3>Configure Shop</h3>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Recte dicis; Ita enim vivunt quidam, ut eorum vita
-                      refellatur oratio. Sed tament.
-                    </p>
-                    <div class="button-wrap">
-                      <a class="button h-button is-primary is-elevated"
-                        >Configure</a
-                      >
-                    </div>
-                  </div>
-                  <!--Card-->
-                  <div class="onboarding-card">
-                    <img
-                      class="light-image"
-                      src="/@images/illustrations/onboarding/set6-2.svg"
-                      alt=""
-                    />
-                    <img
-                      class="dark-image"
-                      src="/@images/illustrations/onboarding/set6-2-dark.svg"
-                      alt=""
-                    />
-                    <h3>Configure Warehouse</h3>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Recte dicis; Ita enim vivunt quidam, ut eorum vita
-                      refellatur oratio. Sed tament.
-                    </p>
-                    <div class="button-wrap">
-                      <a class="button h-button is-primary is-elevated"
-                        >Configure</a
-                      >
-                    </div>
-                  </div>
-                  <!--Card-->
-                  <div class="onboarding-card">
-                    <img
-                      class="light-image"
-                      src="/@images/illustrations/onboarding/set6-3.svg"
-                      alt=""
-                    />
-                    <img
-                      class="dark-image"
-                      src="/@images/illustrations/onboarding/set6-3-dark.svg"
-                      alt=""
-                    />
-                    <h3>Manage Products</h3>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Recte dicis; Ita enim vivunt quidam, ut eorum vita
-                      refellatur oratio. Sed tament.
-                    </p>
-                    <div class="button-wrap">
-                      <a class="button h-button is-primary is-elevated"
-                        >Manage</a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <OnboardingV5 class="is-webapp" />
           </div>
         </div>
       </div>
     </div>
   </WebappLayout>
 </template>
-
-<style lang="scss">
-@import '../../assets/scss/abstracts/_variables.scss';
-@import '../../assets/scss/abstracts/_mixins.scss';
-@import '../../assets/scss/pages/generic/_onboarding.scss';
-</style>
