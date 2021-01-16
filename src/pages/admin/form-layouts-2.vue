@@ -52,7 +52,7 @@ useTitle('Form Layouts 2 - Admin - Vuero')
           </div>
 
           <div class="page-content-inner">
-            <FormLayoutsSplit />
+            <FormLayoutSplit />
           </div>
         </div>
       </div>

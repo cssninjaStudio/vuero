@@ -1,8 +1,19 @@
+<script setup lang="ts">
+import { useWindowScroll } from '@vueuse/core'
+import { computed } from 'vue'
+
+const { y } = useWindowScroll()
+
+const isStuck = computed(() => {
+  return y.value > 30
+})
+</script>
+
 <template>
   <!--Form Layout 2-->
   <div class="form-layout is-split">
     <div class="form-outer">
-      <div class="form-header stuck-header">
+      <div :class="[isStuck && 'is-stuck']" class="form-header stuck-header">
         <div class="form-header-inner">
           <div class="left">
             <h3>Request Payout</h3>

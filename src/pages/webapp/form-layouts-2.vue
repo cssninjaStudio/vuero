@@ -31,7 +31,7 @@ useTitle('Form Layouts 2 - WebApp - Vuero')
           </div>
 
           <div class="page-content-inner">
-            <FormLayoutsSplit class="is-webapp" />
+            <FormLayoutSplit class="is-webapp" />
           </div>
         </div>
       </div>

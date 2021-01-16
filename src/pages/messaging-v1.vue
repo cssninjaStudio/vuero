@@ -369,7 +369,7 @@ useTitle('Messaging chat - Admin - Vuero')
           >
             <div class="caption">
               <img
-                src="/@images/illustrations/messages/empty-placeholder.svg"
+                src="/@images/illustrations/placeholders/having-coffee.svg"
                 alt=""
                 @error="
                   $event.target.src = 'https://via.placeholder.com/150x150'
