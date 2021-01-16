@@ -684,7 +684,7 @@ body {
 .is-dark {
   .finance-dashboard {
     &.sales-dashboard {
-      .spark-tiles,
+      .spark-tile,
       .dashboard-card {
         @include vuero-card--dark();
       }

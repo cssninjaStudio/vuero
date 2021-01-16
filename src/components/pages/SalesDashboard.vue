@@ -1,3 +1,585 @@
+<script setup lang="ts">
+import { onMounted, reactive, ref } from 'vue'
+import { themeColors } from '/@src/composition/state/themeColors'
+import axios from 'axios'
+
+//Array Utility
+const randomizeArray = function (arg: number[]) {
+  let array = arg.slice()
+  let currentIndex = array.length,
+    temporaryValue,
+    randomIndex
+
+  while (0 !== currentIndex) {
+    randomIndex = Math.floor(Math.random() * currentIndex)
+    currentIndex -= 1
+
+    temporaryValue = array[currentIndex]
+    array[currentIndex] = array[randomIndex]
+    array[randomIndex] = temporaryValue
+  }
+
+  return array
+}
+
+// data for the sparklines that appear below header area
+const sparklineData = [
+  472,
+  454,
+  547,
+  385,
+  562,
+  247,
+  652,
+  318,
+  379,
+  391,
+  622,
+  515,
+  355,
+  415,
+  358,
+  271,
+  932,
+  534,
+  615,
+  278,
+  546,
+  435,
+  192,
+  465,
+]
+
+//Spark 1
+const spark1 = {
+  chart: {
+    id: 'sparkline1',
+    group: 'sparklines',
+    type: 'area',
+    height: 130,
+    sparkline: {
+      enabled: true,
+    },
+  },
+  colors: [themeColors.orange],
+  stroke: {
+    width: [2],
+    curve: 'straight',
+  },
+  fill: {
+    opacity: 1,
+  },
+  series: [
+    {
+      name: 'Total Sales',
+      data: randomizeArray(sparklineData),
+    },
+  ],
+  labels: [...Array(24).keys()].map((n) => `2020-10-0${n + 1}`),
+  yaxis: {
+    min: 0,
+  },
+  xaxis: {
+    type: 'datetime',
+  },
+  title: {
+    text: 'Total Sales',
+    offsetX: 5,
+    style: {
+      fontSize: '24px',
+      cssClass: 'apexcharts-yaxis-title',
+      color: themeColors.lightText,
+    },
+  },
+  subtitle: {
+    text: '9,374',
+    offsetX: 5,
+    style: {
+      fontSize: '24px',
+      fontWeight: '600',
+      cssClass: 'apexcharts-yaxis-title',
+    },
+  },
+}
+
+//Spark 2
+const spark2 = {
+  chart: {
+    id: 'sparkline2',
+    group: 'sparklines',
+    type: 'area',
+    height: 130,
+    sparkline: {
+      enabled: true,
+    },
+  },
+  colors: [themeColors.info],
+  stroke: {
+    width: [2],
+    curve: 'straight',
+  },
+  fill: {
+    opacity: 1,
+  },
+  series: [
+    {
+      name: 'Total Profit',
+      data: randomizeArray(sparklineData),
+    },
+  ],
+  labels: [...Array(24).keys()].map((n) => `2020-10-0${n + 1}`),
+  yaxis: {
+    min: 0,
+  },
+  xaxis: {
+    type: 'datetime',
+  },
+  title: {
+    text: 'Total Profit',
+    offsetX: 5,
+    style: {
+      fontSize: '24px',
+      cssClass: 'apexcharts-yaxis-title',
+      color: themeColors.lightText,
+    },
+  },
+  subtitle: {
+    text: '$24,273.31',
+    offsetX: 5,
+    style: {
+      fontSize: '24px',
+      fontWeight: '600',
+      cssClass: 'apexcharts-yaxis-title',
+    },
+  },
+}
+
+//Spark 3
+const spark3 = {
+  chart: {
+    id: 'sparkline3',
+    group: 'sparklines',
+    type: 'area',
+    height: 130,
+    sparkline: {
+      enabled: true,
+    },
+  },
+  colors: [themeColors.accent],
+  stroke: {
+    width: [2],
+    curve: 'straight',
+  },
+  fill: {
+    opacity: 1,
+  },
+  series: [
+    {
+      name: 'Total Orders',
+      data: randomizeArray(sparklineData),
+    },
+  ],
+  labels: [...Array(24).keys()].map((n) => `2020-10-0${n + 1}`),
+  xaxis: {
+    type: 'datetime',
+  },
+  yaxis: {
+    min: 0,
+  },
+  title: {
+    text: 'Total Orders',
+    offsetX: 5,
+    style: {
+      fontSize: '24px',
+      cssClass: 'apexcharts-yaxis-title',
+      color: themeColors.lightText,
+    },
+  },
+  subtitle: {
+    text: '4,361',
+    offsetX: 5,
+    style: {
+      fontSize: '24px',
+      fontWeight: '600',
+      cssClass: 'apexcharts-yaxis-title',
+    },
+  },
+}
+
+//Spark 4
+const spark4 = {
+  chart: {
+    id: 'sparkline3',
+    group: 'sparklines',
+    type: 'area',
+    height: 130,
+    sparkline: {
+      enabled: true,
+    },
+  },
+  colors: [themeColors.green],
+  stroke: {
+    width: [2],
+    curve: 'straight',
+  },
+  fill: {
+    opacity: 1,
+  },
+  series: [
+    {
+      name: 'Consolidated Profit',
+      data: randomizeArray(sparklineData),
+    },
+  ],
+  labels: [...Array(24).keys()].map((n) => `2020-10-0${n + 1}`),
+  xaxis: {
+    type: 'datetime',
+  },
+  yaxis: {
+    min: 0,
+  },
+  title: {
+    text: 'Consolidated Profit',
+    offsetX: 5,
+    style: {
+      fontSize: '24px',
+      cssClass: 'apexcharts-yaxis-title',
+      color: themeColors.lightText,
+    },
+  },
+  subtitle: {
+    text: '$16,264.37',
+    offsetX: 5,
+    style: {
+      fontSize: '24px',
+      fontWeight: '600',
+      cssClass: 'apexcharts-yaxis-title',
+    },
+  },
+}
+
+//Revenue Chart
+const revenueOptions = {
+  series: [
+    {
+      name: 'Returning',
+      data: [318.42, 407.16, 284.12, 517.0, 452.45, 1209.34, 1010.11],
+    },
+    {
+      name: 'Newcomers',
+      data: [112.42, 324.45, 457.5, 312.75, 342.45, 527.56, 414.75],
+    },
+    {
+      name: 'Abandonned',
+      data: [787.89, 534.46, 365.78, 107.45, 145.78, 54.42, 27.12],
+    },
+  ],
+  chart: {
+    height: 250,
+    type: 'area',
+    offsetY: -10,
+    toolbar: {
+      show: false,
+    },
+  },
+  colors: [themeColors.accent, themeColors.info, themeColors.orange],
+  legend: {
+    position: 'bottom',
+    horizontalAlign: 'center',
+    show: false,
+  },
+  dataLabels: {
+    enabled: false,
+  },
+  stroke: {
+    width: [2, 2, 2],
+    curve: 'smooth',
+  },
+  xaxis: {
+    type: 'datetime',
+    categories: [
+      '2020-09-19T00:00:00.000Z',
+      '2020-09-20T01:30:00.000Z',
+      '2020-09-21T02:30:00.000Z',
+      '2020-09-22T03:30:00.000Z',
+      '2020-09-23T04:30:00.000Z',
+      '2020-09-24T05:30:00.000Z',
+      '2020-09-25T06:30:00.000Z',
+    ],
+  },
+  tooltip: {
+    x: {
+      format: 'dd/MM/yy HH:mm',
+    },
+    y: {
+      formatter: function (val: number) {
+        return '$' + val
+      },
+    },
+  },
+}
+
+//Sales Revenue Chart
+const optionsCircle = {
+  series: [65],
+  chart: {
+    height: 130,
+    type: 'radialBar',
+    toolbar: {
+      show: false,
+    },
+  },
+  colors: [themeColors.purple],
+  plotOptions: {
+    radialBar: {
+      hollow: {
+        size: '75%',
+      },
+      dataLabels: {
+        show: true,
+        name: {
+          show: false,
+          fontSize: '12px',
+          fontWeight: 400,
+          offsetY: 5,
+          color: themeColors.lightText,
+        },
+        value: {
+          show: true,
+          fontWeight: 600,
+          fontFamily: 'Roboto, sans-serif',
+          color: themeColors.purple,
+          fontSize: '16px',
+          offsetY: 5,
+        },
+      },
+    },
+  },
+  labels: ['Progress'],
+}
+
+//Small Radial 1
+const radialGroup1Options = {
+  series: [31],
+  chart: {
+    height: 80,
+    type: 'radialBar',
+    offsetY: -10,
+    toolbar: {
+      show: false,
+    },
+  },
+  colors: [themeColors.info],
+  plotOptions: {
+    radialBar: {
+      hollow: {
+        size: '35%',
+      },
+      dataLabels: {
+        show: false,
+      },
+    },
+  },
+  labels: [''],
+}
+
+//Small Radial 2
+const radialGroup2Options = {
+  series: [53],
+  chart: {
+    height: 80,
+    type: 'radialBar',
+    offsetY: -10,
+    toolbar: {
+      show: false,
+    },
+  },
+  colors: [themeColors.orange],
+  plotOptions: {
+    radialBar: {
+      hollow: {
+        size: '35%',
+      },
+      dataLabels: {
+        show: false,
+      },
+    },
+  },
+  labels: [''],
+}
+
+//Small Radial 3
+const radialGroup3Options = {
+  series: [84],
+  chart: {
+    height: 80,
+    type: 'radialBar',
+    offsetY: -10,
+    toolbar: {
+      show: false,
+    },
+  },
+  colors: [themeColors.green],
+  plotOptions: {
+    radialBar: {
+      hollow: {
+        size: '35%',
+      },
+      dataLabels: {
+        show: false,
+      },
+    },
+  },
+  labels: [''],
+}
+
+//Bar Chart
+const barData = [
+  {
+    x: 'Jan',
+    y: 322,
+  },
+  {
+    x: 'Feb',
+    y: 459,
+  },
+  {
+    x: 'Mar',
+    y: 212,
+  },
+  {
+    x: 'Apr',
+    y: 345,
+  },
+  {
+    x: 'May',
+    y: 111,
+  },
+  {
+    x: 'Jun',
+    y: 189,
+  },
+  {
+    x: 'Jul',
+    y: 498,
+  },
+  {
+    x: 'Aug',
+    y: 612,
+  },
+  {
+    x: 'Sep',
+    y: 451,
+  },
+  {
+    x: 'Oct',
+    y: 248,
+  },
+  {
+    x: 'Nov',
+    y: 306,
+  },
+  {
+    x: 'Dec',
+    y: 366,
+  },
+]
+
+const barData2 = [
+  {
+    x: 'Jan',
+    y: 25,
+  },
+  {
+    x: 'Feb',
+    y: 49,
+  },
+  {
+    x: 'Mar',
+    y: 36,
+  },
+  {
+    x: 'Apr',
+    y: 84,
+  },
+  {
+    x: 'May',
+    y: 64,
+  },
+  {
+    x: 'Jun',
+    y: 131,
+  },
+  {
+    x: 'Jul',
+    y: 48,
+  },
+  {
+    x: 'Aug',
+    y: 144,
+  },
+  {
+    x: 'Sep',
+    y: 96,
+  },
+  {
+    x: 'Oct',
+    y: 11,
+  },
+  {
+    x: 'Nov',
+    y: 31,
+  },
+  {
+    x: 'Dec',
+    y: 8,
+  },
+]
+
+const barOptions: any = reactive({
+  series: [],
+  chart: {
+    height: 205,
+    type: 'bar',
+    toolbar: {
+      show: false,
+    },
+  },
+  colors: [themeColors.accent, themeColors.orange],
+  dataLabels: {
+    enabled: false,
+  },
+  noData: {
+    text: 'Loading...',
+  },
+  xaxis: {
+    type: 'category',
+    tickPlacement: 'on',
+    labels: {
+      rotate: -45,
+      rotateAlways: true,
+    },
+  },
+})
+
+onMounted(async () => {
+  setTimeout(() => {
+    barOptions.series = [{
+      name: "Orders",
+      data: barData,
+    }]
+  }, 1000)
+
+  setTimeout(() => {
+    barOptions.series = [...barOptions.series, {
+      name: "Abandonned",
+      data: barData2,
+    }]
+  }, 2500)
+})
+
+</script>
+
 <template>
   <!--Finance Dashboard V3-->
   <div class="finance-dashboard sales-dashboard">
@@ -27,22 +609,46 @@
       <div class="columns is-multiline">
         <div class="column is-3">
           <div class="spark-tile">
-            <div id="spark1"></div>
+            <apexchart
+              id="spark1"
+              :height="spark1.chart.height"
+              :type="spark1.chart.type"
+              :series="spark1.series"
+              :options="spark1"
+            ></apexchart>
           </div>
         </div>
         <div class="column is-3">
           <div class="spark-tile">
-            <div id="spark2"></div>
+            <apexchart
+              id="spark2"
+              :height="spark2.chart.height"
+              :type="spark2.chart.type"
+              :series="spark2.series"
+              :options="spark2"
+            ></apexchart>
           </div>
         </div>
         <div class="column is-3">
           <div class="spark-tile">
-            <div id="spark3"></div>
+            <apexchart
+              id="spark3"
+              :height="spark3.chart.height"
+              :type="spark3.chart.type"
+              :series="spark3.series"
+              :options="spark3"
+            ></apexchart>
           </div>
         </div>
         <div class="column is-3">
           <div class="spark-tile">
-            <div id="spark4"></div>
+            <apexchart
+              id="spark4"
+              :height="spark4.chart.height"
+              :type="spark4.chart.type"
+              :series="spark4.series"
+              :options="spark4"
+            ></apexchart>
           </div>
         </div>
         <div class="column is-7">
@@ -64,7 +670,13 @@
                 <span class="dark-inverted">$91,512.18</span>
               </div>
             </div>
-            <div id="revenue-chart"></div>
+            <apexchart
+              id="revenue-chart"
+              :height="revenueOptions.chart.height"
+              :type="revenueOptions.chart.type"
+              :series="revenueOptions.series"
+              :options="revenueOptions"
+            ></apexchart>
           </div>
         </div>
         <div class="column is-5">
@@ -80,7 +692,13 @@
                 </p>
               </div>
               <div class="chart-container">
-                <div id="radial-circle"></div>
+                <apexchart
+                  id="radial-circle"
+                  :height="optionsCircle.chart.height"
+                  :type="optionsCircle.chart.type"
+                  :series="optionsCircle.series"
+                  :options="optionsCircle"
+                ></apexchart>
               </div>
             </div>
           </div>
@@ -92,7 +710,13 @@
               <div class="group">
                 <div class="group-content">
                   <div class="chart-container">
-                    <div id="group-radial-1"></div>
+                    <apexchart
+                      id="group-radial-1"
+                      :height="radialGroup1Options.chart.height"
+                      :type="radialGroup1Options.chart.type"
+                      :series="radialGroup1Options.series"
+                      :options="radialGroup1Options"
+                    ></apexchart>
                   </div>
                   <span class="dark-inverted">264</span>
                   <p>New Deals</p>
@@ -101,7 +725,13 @@
               <div class="group">
                 <div class="group-content">
                   <div class="chart-container">
-                    <div id="group-radial-2"></div>
+                    <apexchart
+                      id="group-radial-2"
+                      :height="radialGroup2Options.chart.height"
+                      :type="radialGroup2Options.chart.type"
+                      :series="radialGroup2Options.series"
+                      :options="radialGroup2Options"
+                    ></apexchart>
                   </div>
                   <span class="dark-inverted">1,203</span>
                   <p>Proposals</p>
@@ -110,7 +740,13 @@
               <div class="group">
                 <div class="group-content">
                   <div class="chart-container">
-                    <div id="group-radial-3"></div>
+                    <apexchart
+                      id="group-radial-3"
+                      :height="radialGroup3Options.chart.height"
+                      :type="radialGroup3Options.chart.type"
+                      :series="radialGroup3Options.series"
+                      :options="radialGroup3Options"
+                    ></apexchart>
                   </div>
                   <span class="dark-inverted">3,078</span>
                   <p>Closed Deals</p>
@@ -144,7 +780,13 @@
             <div class="card-head">
               <h3 class="dark-inverted">Orders Summary</h3>
             </div>
-            <div id="bar-chart"></div>
+            <apexchart
+              id="bar-chart"
+              :height="barOptions.chart.height"
+              :type="barOptions.chart.type"
+              :series="barOptions.series"
+              :options="barOptions"
+            ></apexchart>
           </div>
         </div>
         <div class="column is-3">
