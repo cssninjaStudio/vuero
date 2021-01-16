@@ -964,6 +964,12 @@ body {
 .is-dark {
   .banking-dashboard {
     &.banking-dashboard-v3 {
+      .dashboard-tiles {
+        .dashboard-tile {
+          @include vuero-card--dark();
+        }
+      }
+
       .dashboard-card {
         @include vuero-card--dark();
       }
