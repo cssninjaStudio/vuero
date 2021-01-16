@@ -3,9 +3,9 @@
 <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 800 600" style="enable-background:new 0 0 800 600;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#FFFFFF;stroke:#41b883;stroke-width:5;stroke-miterlimit:10;}
+	.st0{fill:#FFFFFF;stroke:#41B883;stroke-width:5;stroke-miterlimit:10;}
 	.st1{fill:#EFEFEF;}
-	.st2{fill:none;stroke:#7F00FF;stroke-width:5;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#41B883;stroke-width:5;stroke-miterlimit:10;}
 </style>
 <g>
 	<g>
@@ -32,7 +32,7 @@
 		<rect id="XMLID_5_" x="264.2" y="314" class="st1" width="262.7" height="22.6"/>
 		<rect id="XMLID_1_" x="264.2" y="358" class="st1" width="262.7" height="22.6"/>
 		<rect id="XMLID_2_" x="264.2" y="402" class="st1" width="262.7" height="22.6"/>
-		<line class="st0" x1="220.5" y1="270" x2="579.3" y2="270"/>
+		<line class="st2" x1="220.5" y1="270" x2="579.3" y2="270"/>
 		<g>
 			<polygon class="st0" points="324.9,229.8 371.9,189.1 391.9,209.5 433.9,164.1 474.9,229.8 			"/>
 			<circle class="st0" cx="371" cy="153.3" r="14.1"/>

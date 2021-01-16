@@ -3,9 +3,9 @@
 <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 800 600" style="enable-background:new 0 0 800 600;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#FFFFFF;stroke:#41b883;stroke-width:5;stroke-miterlimit:10;}
+	.st0{fill:#FFFFFF;stroke:#41B883;stroke-width:5;stroke-miterlimit:10;}
 	.st1{fill:#EFEFEF;}
-	.st2{fill:#671CC9;}
+	.st2{fill:#41B883;}
 </style>
 <path class="st0" d="M593.8,550.5H206.4c-5.9,0-10.7-4.8-10.7-10.7V60.2c0-5.9,4.8-10.7,10.7-10.7h387.2c5.9,0,10.7,4.8,10.7,10.7
 	v479.7C604.4,545.7,599.6,550.5,593.8,550.5z"/>

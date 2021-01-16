@@ -3,11 +3,11 @@
 <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 800 600" style="enable-background:new 0 0 800 600;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#323236;stroke:#797BF2;stroke-width:5;stroke-miterlimit:10;}
+	.st0{fill:#323236;stroke:#41B883;stroke-width:5;stroke-miterlimit:10;}
 	.st1{fill:#585868;}
 </style>
 <path class="st0" d="M685.1,475.6H114.9c-6.9,0-12.6-5.6-12.6-12.6V136.9c0-6.9,5.6-12.6,12.6-12.6h570.2c6.9,0,12.6,5.6,12.6,12.6
-	v326.1C697.6,470,692,475.6,685.1,475.6z"/>
+	V463C697.6,470,692,475.6,685.1,475.6z"/>
 <rect id="XMLID_5_" x="153.1" y="251.9" class="st1" width="314.7" height="22.9"/>
 <rect id="XMLID_1_" x="153.1" y="288.8" class="st1" width="228" height="22.9"/>
 <rect id="XMLID_2_" x="153.1" y="325.6" class="st1" width="421.9" height="22.9"/>
