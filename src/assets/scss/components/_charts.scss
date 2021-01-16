@@ -40,6 +40,10 @@
 
 body {
   &.is-dark {
+    .apexcharts-ycrosshairs {
+      stroke: lighten($dark-sidebar, 12%) !important;
+    }
+
     .apexcharts-title-text {
       fill: $dark-dark-text !important;
     }
@@ -69,7 +73,7 @@ body {
           }
 
           line {
-            color: lighten($dark-sidebar, 12%);
+            color: lighten($dark-sidebar, 12%) !important;
           }
         }
 
@@ -77,6 +81,7 @@ body {
           .apexcharts-gridlines-horizontal {
             .apexcharts-gridline {
               color: lighten($dark-sidebar, 12%);
+              stroke: lighten($dark-sidebar, 12%);
             }
           }
         }
@@ -86,6 +91,7 @@ body {
     .apexcharts-gridlines-vertical {
       .apexcharts-gridline {
         color: lighten($dark-sidebar, 12%);
+        stroke: lighten($dark-sidebar, 12%);
       }
     }
 
@@ -131,6 +137,7 @@ body {
     .apexcharts-track {
       .apexcharts-radialbar-area {
         color: lighten($dark-sidebar, 2%);
+        stroke: lighten($dark-sidebar, 2%);
       }
     }
 
