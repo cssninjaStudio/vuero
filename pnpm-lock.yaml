@@ -2,7 +2,6 @@ dependencies:
   '@iconify/iconify': 1.0.7
   '@vueuse/core': 4.0.5_vue@3.0.5
   apexcharts: 3.23.1
-  axios: 0.21.1
   bulma: 0.9.1
   dayjs: 1.10.3
   highlight.js: 10.5.0
@@ -26,6 +25,7 @@ devDependencies:
   '@vue/server-renderer': 3.0.5_vue@3.0.5
   '@vuedx/typecheck': 0.5.0
   '@vuedx/typescript-plugin-vue': 0.5.0
+  axios: 0.21.1
   cross-env: 7.0.3
   eslint: 7.17.0
   eslint-config-prettier: 7.1.0_eslint@7.17.0
@@ -1923,7 +1923,7 @@ packages:
   /axios/0.21.1:
     dependencies:
       follow-redirects: 1.13.1
-    dev: false
+    dev: true
     resolution:
       integrity: sha512-dKQiRHxGD9PPRIUNIWvZhPTPpl1rf/OxTYKsqKUDjBwYylTvV7SjSHJb9ratfyzM6wCdLCOYLzs73qpg5c4iGA==
   /axios/0.21.1_debug@4.3.2:
@@ -2838,7 +2838,7 @@ packages:
     resolution:
       integrity: sha512-tW+UkmtNg/jv9CSofAKvgVcO7c2URjhTdW1ZTkcAritblu8tajiYy7YisnIflEwtKssCtOxpnBRoCB7iap0/TA==
   /follow-redirects/1.13.1:
-    dev: false
+    dev: true
     engines:
       node: '>=4.0'
     peerDependencies:
