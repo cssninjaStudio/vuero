@@ -178,7 +178,7 @@ const activeTab = ref<'dashboards' | 'templates'>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'webapp-dashboards-apps-2' }">
+                    <RouterLink :to="{ name: 'inbox' }">
                       <i class="lnil lnil-envelope"></i>
                       <span>Inbox</span>
                       <Icon icon="feather:circle" />

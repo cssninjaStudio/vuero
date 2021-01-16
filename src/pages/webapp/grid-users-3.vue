@@ -63,7 +63,7 @@ useTitle('Grid Users 3 - WebApp - Vuero')
           </div>
 
           <div class="page-content-inner is-webapp">
-            <UsersGridV3 />
+            <UsersGridV3 :active-tab="activeTab" />
           </div>
         </div>
       </div>

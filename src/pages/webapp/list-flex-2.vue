@@ -63,7 +63,7 @@ useTitle('List Flex 2 - WebApp - Vuero')
           </div>
 
           <div class="page-content-inner is-webapp">
-            <FlexListV2 class="is-webapp" :active-tab="active - tab" />
+            <FlexListV2 class="is-webapp" :active-tab="activeTab" />
           </div>
         </div>
       </div>

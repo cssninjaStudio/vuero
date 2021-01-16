@@ -1802,6 +1802,17 @@ body {
               }
             }
 
+            .router-link-exact-active {
+              border-color: lighten($dark-sidebar, 12%);
+              background: darken($dark-sidebar, 2%);
+              color: $accent;
+              opacity: 1;
+
+              &:hover {
+                background: darken($dark-sidebar, 2%);
+              }
+            }
+
             &:hover {
               a {
                 background: lighten($dark-sidebar, 8%);
@@ -2064,6 +2075,15 @@ body {
                     opacity: 1;
                     fill: $primary;
                   }
+                }
+              }
+
+              .router-link-exact-active {
+                color: darken($primary, 14%);
+
+                svg {
+                  opacity: 1;
+                  fill: $primary;
                 }
               }
 

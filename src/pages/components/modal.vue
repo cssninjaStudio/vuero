@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useTitle } from '@vueuse/core'
-import { onMounted } from 'vue'
+import { onMounted, ref } from 'vue'
 
 import {
   activeSidebar,
@@ -10,6 +10,20 @@ import {
 onMounted(() => {
   activeSidebar.value = 'components'
 })
+
+const leftActionsOpen = ref(false)
+const centeredActionsOpen = ref(false)
+const rightActionsOpen = ref(false)
+const smallOpen = ref(false)
+const standardOpen = ref(false)
+const mediumOpen = ref(false)
+const largeOpen = ref(false)
+const bigOpen = ref(false)
+const smallFormOpen = ref(false)
+const standardFormOpen = ref(false)
+const mediumFormOpen = ref(false)
+const largeFormOpen = ref(false)
+const bigFormOpen = ref(false)
 
 useTitle('Components - Modal - Vuero')
 </script>
@@ -106,17 +120,17 @@ useTitle('Components - Modal - Vuero')
                     <div class="buttons">
                       <a
                         class="button h-button is-rounded h-modal-trigger"
-                        data-modal="demo-left-actions-modal"
+                        @click="leftActionsOpen = true"
                         >Left Actions</a
                       >
                       <a
                         class="button h-button is-rounded h-modal-trigger"
-                        data-modal="demo-centered-actions-modal"
+                        @click="centeredActionsOpen = true"
                         >Centered Actions</a
                       >
                       <a
                         class="button h-button is-rounded h-modal-trigger"
-                        data-modal="demo-right-actions-modal"
+                        @click="rightActionsOpen = true"
                         >Right Actions</a
                       >
                     </div>
@@ -175,27 +189,27 @@ useTitle('Components - Modal - Vuero')
                     <div class="buttons">
                       <a
                         class="button h-button is-rounded h-modal-trigger"
-                        data-modal="demo-small-modal"
+                        @click="smallOpen = true"
                         >Small Modal</a
                       >
                       <a
                         class="button h-button is-rounded h-modal-trigger"
-                        data-modal="demo-standard-modal"
+                        @click="standardOpen = true"
                         >Standard Modal</a
                       >
                       <a
                         class="button h-button is-rounded h-modal-trigger"
-                        data-modal="demo-medium-modal"
+                        @click="mediumOpen = true"
                         >Medium Modal</a
                       >
                       <a
                         class="button h-button is-rounded h-modal-trigger"
-                        data-modal="demo-large-modal"
+                        @click="largeOpen = true"
                         >Large Modal</a
                       >
                       <a
                         class="button h-button is-rounded h-modal-trigger"
-                        data-modal="demo-big-modal"
+                        @click="bigOpen = true"
                         >Big Modal</a
                       >
                     </div>
@@ -218,27 +232,27 @@ useTitle('Components - Modal - Vuero')
                     <div class="buttons">
                       <a
                         class="button h-button is-rounded h-modal-trigger"
-                        data-modal="demo-small-form-modal"
+                        @click="smallFormOpen = true"
                         >Small Modal</a
                       >
                       <a
                         class="button h-button is-rounded h-modal-trigger"
-                        data-modal="demo-standard-form-modal"
+                        @click="standardFormOpen = true"
                         >Standard Modal</a
                       >
                       <a
                         class="button h-button is-rounded h-modal-trigger"
-                        data-modal="demo-medium-form-modal"
+                        @click="mediumFormOpen = true"
                         >Medium Modal</a
                       >
                       <a
                         class="button h-button is-rounded h-modal-trigger"
-                        data-modal="demo-large-form-modal"
+                        @click="largeFormOpen = true"
                         >Large Modal</a
                       >
                       <a
                         class="button h-button is-rounded h-modal-trigger"
-                        data-modal="demo-big-form-modal"
+                        @click="bigFormOpen = true"
                         >Big Modal</a
                       >
                     </div>
@@ -251,20 +265,32 @@ useTitle('Components - Modal - Vuero')
       </div>
     </div>
 
-    <DemoLeftActionsModal />
-    <DemoCenteredActionsModal />
-    <DemoRightActionsModal />
+    <LeftActionsModal
+      :open="leftActionsOpen"
+      @close="leftActionsOpen = false"
+    />
+    <CenteredActionsModal
+      :open="centeredActionsOpen"
+      @close="centeredActionsOpen = false"
+    />
+    <RightActionsModal
+      :open="rightActionsOpen"
+      @close="rightActionsOpen = false"
+    />
 
-    <DemoSmallModal />
-    <DemoStandardModal />
-    <DemoMediumModal />
-    <DemoLargeModal />
-    <DemoBigModal />
+    <SmallModal :open="smallOpen" @close="smallOpen = false" />
+    <StandardModal :open="standardOpen" @close="standardOpen = false" />
+    <MediumModal :open="mediumOpen" @close="mediumOpen = false" />
+    <LargeModal :open="largeOpen" @close="largeOpen = false" />
+    <BigModal :open="bigOpen" @close="bigOpen = false" />
 
-    <DemoSmallFormModal />
-    <DemoStandardFormModal />
-    <DemoMediumFormModal />
-    <DemoLargeFormModal />
-    <DemoBigFormModal />
+    <SmallFormModal :open="smallFormOpen" @close="smallFormOpen = false" />
+    <StandardFormModal
+      :open="standardFormOpen"
+      @close="standardFormOpen = false"
+    />
+    <MediumFormModal :open="mediumFormOpen" @close="mediumFormOpen = false" />
+    <LargeFormModal :open="largeFormOpen" @close="largeFormOpen = false" />
+    <BigFormModal :open="bigFormOpen" @close="bigFormOpen = false" />
   </DefaultLayout>
 </template>

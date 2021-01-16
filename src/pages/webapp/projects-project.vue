@@ -5,8 +5,6 @@ import { ref } from 'vue'
 import { activePanel } from '/@src/composition/state/ui/activePanelState'
 import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
 
-const activeTab = ref<'project' | 'team' | 'tasks'>('project')
-
 useTitle('Projects Project - WebApp - Vuero')
 </script>
 
@@ -34,10 +32,7 @@ useTitle('Projects Project - WebApp - Vuero')
             <Toolbar />
           </div>
 
-          <ProjectViewV1
-            :active-tab="activeTab"
-            class="page-content-inner is-webapp"
-          />
+          <ProjectViewV1 class="page-content-inner is-webapp" />
         </div>
       </div>
     </div>

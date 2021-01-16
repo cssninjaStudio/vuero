@@ -1,11 +1,33 @@
+<script setup lang="ts">
+import { defineProps, defineEmit } from 'vue'
+
+const props = defineProps({
+  open: {
+    type: Boolean,
+    default: false,
+  },
+})
+const emit = defineEmit([
+  'close'
+])
+</script>
+
 <template>
-  <div id="demo-medium-modal" class="modal h-modal is-medium">
-    <div class="modal-background h-modal-close"></div>
+  <div
+    id="demo-medium-modal"
+    :class="[open && 'is-active']"
+    class="modal h-modal is-medium"
+  >
+    <div class="modal-background h-modal-close" @click="emit('close')"></div>
     <div class="modal-content">
       <div class="modal-card">
         <header class="modal-card-head">
           <h3>Invitation</h3>
-          <button class="h-modal-close ml-auto" aria-label="close">
+          <button
+            class="h-modal-close ml-auto"
+            aria-label="close"
+            @click="emit('close')"
+          >
             <Icon icon="feather:x" />
           </button>
         </header>
@@ -32,13 +54,19 @@
                   />
                 </div>
                 <h3 class="dark-inverted">You were invited</h3>
-                <p>Jimmy H. invited you to join the Heartman & Sons project.</p>
+                <p>
+                  Jimmy H. invited you to join the Heartman &amp; Sons project.
+                </p>
               </div>
             </div>
           </div>
         </div>
         <div class="modal-card-foot is-centered">
-          <a class="button h-button is-rounded h-modal-close">Decline</a>
+          <a
+            class="button h-button is-rounded h-modal-close"
+            @click="emit('close')"
+            >Decline</a
+          >
           <a class="button h-button is-primary is-raised is-rounded">Accept</a>
         </div>
       </div>

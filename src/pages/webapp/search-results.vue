@@ -4,8 +4,6 @@ import { ref } from 'vue'
 
 import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
 
-const activeTab = ref<'all' | 'people' | 'records'>('all')
-
 useTitle('Search Results - WebApp - Vuero')
 </script>
 

@@ -7,8 +7,6 @@ import {
   toggleSidebar,
 } from '/@src/composition/state/ui/activeSidebarState'
 
-const activeTab = ref<'all' | 'people' | 'records'>('all')
-
 useTitle('Search Results - Admin - Vuero')
 </script>
 

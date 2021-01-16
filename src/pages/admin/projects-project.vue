@@ -8,8 +8,6 @@ import {
   toggleSidebar,
 } from '/@src/composition/state/ui/activeSidebarState'
 
-const activeTab = ref<'project' | 'team' | 'tasks'>('project')
-
 useTitle('Projects project - Admin - Vuero')
 </script>
 
@@ -56,7 +54,7 @@ useTitle('Projects project - Admin - Vuero')
             <Toolbar />
           </div>
 
-          <ProjectViewV1 :active-tab="activeTab" class="page-content-inner" />
+          <ProjectViewV1 class="page-content-inner" />
         </div>
       </div>
     </div>
