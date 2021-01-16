@@ -36,10 +36,7 @@ import { isMobileSidebarOpen } from '/@src/composition/state/ui/mobileSidebarSta
           </RouterLink>
         </li>
         <li>
-          <RouterLink
-            id="open-messages-mobile"
-            :to="{ name: 'webapp-messaging-chat' }"
-          >
+          <RouterLink id="open-messages-mobile" :to="{ name: 'messaging-v2' }">
             <Icon icon="feather:message-circle" />
           </RouterLink>
         </li>

@@ -709,7 +709,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'admin-utility-status' }"
+                    :to="{ name: 'status' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">

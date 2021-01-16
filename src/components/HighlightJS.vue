@@ -80,7 +80,7 @@ hljs.registerLanguage('vue', () => {
 })
 
 hljs.registerAliases('html', {
-  languageName: 'xml'
+  languageName: 'xml',
 })
 
 const props = defineProps({

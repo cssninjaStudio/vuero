@@ -33,7 +33,9 @@ const {
 } = useDropdown()
 
 const toggleLoaders = () => {
-  document.querySelectorAll('.has-loader').forEach(el => el.classList.toggle('has-loader-active'))
+  document
+    .querySelectorAll('.has-loader')
+    .forEach((el) => el.classList.toggle('has-loader-active'))
 }
 
 onMounted(() => {

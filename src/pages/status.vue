@@ -329,7 +329,7 @@ useTitle('Utility Status - Admin - Vuero')
 </template>
 
 <style lang="scss">
-@import '../../assets/scss/abstracts/_variables.scss';
-@import '../../assets/scss/abstracts/_mixins.scss';
-@import '../../assets/scss/pages/generic/_utility.scss';
+@import '../assets/scss/abstracts/_variables.scss';
+@import '../assets/scss/abstracts/_mixins.scss';
+@import '../assets/scss/pages/generic/_utility.scss';
 </style>

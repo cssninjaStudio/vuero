@@ -22,7 +22,6 @@ const otherLayoutLink = computed(() => {
 
 const { y } = useWindowScroll()
 
-
 const isScrolling = computed(() => {
   return y.value > 30
 })
@@ -92,10 +91,7 @@ watch(
             <Icon icon="feather:cpu" />
             <span>Components</span>
           </a>
-          <RouterLink
-            :to="{ name: 'webapp-messaging-chat' }"
-            class="centered-link"
-          >
+          <RouterLink :to="{ name: 'messaging-v2' }" class="centered-link">
             <Icon icon="feather:message-circle" />
             <span>Chat</span>
           </RouterLink>

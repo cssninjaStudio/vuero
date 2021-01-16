@@ -305,7 +305,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'admin-messaging-chat' }"
+                    :to="{ name: 'messaging-v1' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -316,7 +316,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'webapp-messaging-chat' }"
+                    :to="{ name: 'messaging-v2' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">

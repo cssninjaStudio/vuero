@@ -242,28 +242,19 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
               </RouterLink>
             </li>
             <li>
-              <RouterLink
-                :to="{ name: 'admin-dashboards-apps-2' }"
-                class="is-submenu"
-              >
+              <RouterLink :to="{ name: 'inbox' }" class="is-submenu">
                 <i class="lnil lnil-envelope"></i>
                 <span>Inbox</span>
               </RouterLink>
             </li>
             <li>
-              <RouterLink
-                :to="{ name: 'admin-messaging-chat' }"
-                class="is-submenu"
-              >
+              <RouterLink :to="{ name: 'messaging-v1' }" class="is-submenu">
                 <i class="lnil lnil-bubble"></i>
                 <span>Messaging V1</span>
               </RouterLink>
             </li>
             <li>
-              <RouterLink
-                :to="{ name: 'webapp-messaging-chat' }"
-                class="is-submenu"
-              >
+              <RouterLink :to="{ name: 'messaging-v2' }" class="is-submenu">
                 <i class="lnil lnil-bubble"></i>
                 <span>Messaging V2</span>
               </RouterLink>
