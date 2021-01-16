@@ -388,4 +388,5 @@ const activeTab = ref<'dashboards' | 'templates'>('dashboards')
 @import '../../../../../assets/scss/abstracts/_variables.scss';
 @import '../../../../../assets/scss/abstracts/_mixins.scss';
 @import '../../../../../assets/scss/layout/_navbar.scss';
+@import '../../../../../assets/scss/layout/_responsive.scss';
 </style>

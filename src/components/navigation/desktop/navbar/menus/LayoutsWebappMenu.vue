@@ -649,4 +649,5 @@ const activeTab = ref<'list' | 'grid' | 'app' | 'utility'>('list')
 @import '../../../../../assets/scss/abstracts/_variables.scss';
 @import '../../../../../assets/scss/abstracts/_mixins.scss';
 @import '../../../../../assets/scss/layout/_navbar.scss';
+@import '../../../../../assets/scss/layout/_responsive.scss';
 </style>
