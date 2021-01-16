@@ -11,14 +11,14 @@
 	.st4{fill:#3F3D56;}
 	.st5{opacity:0.1;}
 	.st6{fill:#819BC1;}
-	.st7{fill:#797BF2;}
+	.st7{fill:#62CC9A;}
 	.st8{fill:url(#SVGID_1_);}
 	.st9{fill:#2F2E41;}
 	.st10{fill:#FBBEBE;}
 	.st11{fill:#AFC4E2;}
 	.st12{fill:#C8DBFB;}
 	.st13{fill:#55536E;}
-	.st14{fill:#E62965;}
+	.st14{fill:#797BF2;}
 </style>
 <title>timeline</title>
 <path class="st0" d="M490.5,203.9c45.6-8,98.6-6.6,155.7,0c-11.6-65.7-12.1-130.1,0-192.9H490.5C479,74.8,479,140.1,490.5,203.9z"/>
@@ -41,9 +41,9 @@
 	C856.1,395.1,897.4,445.7,928.8,502.5z"/>
 <path class="st0" d="M930.8,494.5c-40.4,22.6-80.6,57.1-120.7,98.3c-32.5-58.3-72.7-108.5-121.8-149.6L809,344.9
 	C858.1,387.1,899.4,437.7,930.8,494.5z"/>
-<rect x="723.5" y="380.8" transform="matrix(0.7755 -0.6314 0.6314 0.7755 -77.4803 561.4313)" class="st1" width="54.2" height="17.8"/>
-<rect x="744.1" y="434.7" transform="matrix(0.7755 -0.6314 0.6314 0.7755 -100.6993 599.1832)" class="st7" width="96" height="13"/>
-<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="961.0909" y1="524.226" x2="961.0909" y2="195.8416" gradientTransform="matrix(0.9992 -4.030618e-02 4.030618e-02 0.9992 -125.3449 272.1119)">
+<rect x="723.6" y="380.8" transform="matrix(0.7755 -0.6314 0.6314 0.7755 -77.5138 561.4561)" class="st1" width="54.2" height="17.8"/>
+<rect x="744.1" y="434.7" transform="matrix(0.7755 -0.6314 0.6314 0.7755 -100.7081 599.2068)" class="st7" width="96" height="13"/>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="966.9761" y1="267.5323" x2="966.9761" y2="595.9167" gradientTransform="matrix(0.9992 -4.030618e-02 -4.030618e-02 -0.9992 -99.3126 1063.4741)">
 	<stop  offset="0" style="stop-color:#808080;stop-opacity:0.25"/>
 	<stop  offset="0.54" style="stop-color:#808080;stop-opacity:0.12"/>
 	<stop  offset="1" style="stop-color:#808080;stop-opacity:0.1"/>
