@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { onMounted, reactive, ref } from 'vue'
 import { themeColors } from '/@src/composition/state/themeColors'
-import axios from 'axios'
 
 //Array Utility
 const randomizeArray = function (arg: number[]) {
