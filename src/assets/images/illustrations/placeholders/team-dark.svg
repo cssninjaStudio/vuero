@@ -3,11 +3,11 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 750 500" style="enable-background:new 0 0 750 500;" xml:space="preserve">
 <style type="text/css">
-	.st0{opacity:0.1;fill:#E0E0E0;}
+	.st0{opacity:0.1;fill:#E0E0E0;enable-background:new    ;}
 	.st1{opacity:0.1;}
 	.st2{fill:#E0E0E0;}
 	.st3{fill:#EBEBEB;}
-	.st4{opacity:0.1;fill:#FAFAFA;}
+	.st4{opacity:0.1;fill:#FAFAFA;enable-background:new    ;}
 	.st5{fill:none;}
 	.st6{fill:#F5F5F5;}
 	.st7{fill:#FFFFFF;}
@@ -15,7 +15,7 @@
 	.st9{display:none;}
 	.st10{display:inline;fill:#EBEBEB;}
 	.st11{fill:#263238;}
-	.st12{fill:#797AED;}
+	.st12{fill:#62CC9A;}
 	.st13{fill:#AA6550;}
 	.st14{fill:#723C31;}
 	.st15{fill:#455A64;}
@@ -5886,7 +5886,7 @@
 		<g>
 			<g>
 				
-					<rect x="249.7" y="303.4" transform="matrix(0.966 -0.2587 0.2587 0.966 -79.3182 77.3374)" class="st15" width="9" height="73.3"/>
+					<rect x="249.7" y="303.4" transform="matrix(0.966 -0.2587 0.2587 0.966 -79.3178 77.337)" class="st15" width="9" height="73.3"/>
 			</g>
 		</g>
 	</g>

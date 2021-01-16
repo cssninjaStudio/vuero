@@ -9,7 +9,7 @@
 	.st3{fill:#F5F5F5;}
 	.st4{display:none;}
 	.st5{display:inline;fill:#EBEBEB;}
-	.st6{fill:#5027BD;}
+	.st6{fill:#62CC9A;}
 	.st7{fill:#263238;}
 	.st8{fill:#FFFFFF;}
 	.st9{fill:#C69481;}
@@ -352,7 +352,7 @@
 						<g>
 							<g>
 								
-									<rect x="408.3" y="53.9" transform="matrix(1 -5.365796e-03 5.365796e-03 1 -0.3911 2.2137)" class="st2" width="8.1" height="40.2"/>
+									<rect x="408.3" y="53.9" transform="matrix(1 -5.365719e-03 5.365719e-03 1 -0.3911 2.2137)" class="st2" width="8.1" height="40.2"/>
 							</g>
 						</g>
 					</g>
@@ -367,7 +367,7 @@
 							<g>
 								<g>
 									
-										<rect x="338.4" y="54.1" transform="matrix(1 -5.350026e-03 5.350026e-03 1 -0.3438 1.8673)" class="st0" width="20.9" height="22.2"/>
+										<rect x="338.4" y="54.1" transform="matrix(1 -5.349949e-03 5.349949e-03 1 -0.3438 1.8673)" class="st0" width="20.9" height="22.2"/>
 								</g>
 							</g>
 						</g>
@@ -381,7 +381,7 @@
 							<g>
 								<g>
 									
-										<rect x="359.2" y="53.9" transform="matrix(1 -5.349975e-03 5.349975e-03 1 -0.3425 1.9786)" class="st3" width="20.9" height="22.2"/>
+										<rect x="359.2" y="53.9" transform="matrix(1 -5.349899e-03 5.349899e-03 1 -0.3425 1.9785)" class="st3" width="20.9" height="22.2"/>
 								</g>
 							</g>
 						</g>
@@ -413,7 +413,7 @@
 							<g>
 								<g>
 									
-										<rect x="325.3" y="75.9" transform="matrix(1 -5.357285e-03 5.357285e-03 1 -0.4502 1.8458)" class="st0" width="38" height="18.1"/>
+										<rect x="325.3" y="75.9" transform="matrix(1 -5.357208e-03 5.357208e-03 1 -0.4502 1.8457)" class="st0" width="38" height="18.1"/>
 								</g>
 							</g>
 						</g>
@@ -427,7 +427,7 @@
 							<g>
 								<g>
 									
-										<rect x="363.1" y="75.7" transform="matrix(1 -5.359934e-03 5.359934e-03 1 -0.4488 2.0493)" class="st3" width="38" height="18.1"/>
+										<rect x="363.1" y="75.7" transform="matrix(1 -5.359857e-03 5.359857e-03 1 -0.4488 2.0492)" class="st3" width="38" height="18.1"/>
 								</g>
 							</g>
 						</g>
@@ -493,7 +493,7 @@
 						<g>
 							<g>
 								
-									<rect x="416.2" y="38.9" transform="matrix(1 -5.353405e-03 5.353405e-03 1 -0.35 2.2508)" class="st0" width="8.1" height="55.2"/>
+									<rect x="416.2" y="38.9" transform="matrix(1 -5.353328e-03 5.353328e-03 1 -0.35 2.2507)" class="st0" width="8.1" height="55.2"/>
 							</g>
 						</g>
 					</g>
@@ -508,7 +508,7 @@
 							<g>
 								<g>
 									
-										<rect x="424.3" y="49.2" transform="matrix(1 -5.367271e-03 5.367271e-03 1 -0.3781 2.3119)" class="st3" width="12.5" height="44.8"/>
+										<rect x="424.3" y="49.2" transform="matrix(1 -5.367194e-03 5.367194e-03 1 -0.3781 2.3119)" class="st3" width="12.5" height="44.8"/>
 								</g>
 							</g>
 						</g>
