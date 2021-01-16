@@ -5,6 +5,133 @@ import {
   activeSidebar,
   toggleSidebar,
 } from '/@src/composition/state/ui/activeSidebarState'
+import { themeColors } from '/@src/composition/state/themeColors'
+
+//task completion chart
+const completionOptions = {
+  series: [
+    {
+      name: 'Pending',
+      data: [31, 40, 28, 51, 42, 109, 100],
+    },
+    {
+      name: 'Completed',
+      data: [11, 32, 45, 32, 34, 52, 41],
+    },
+    {
+      name: 'Blocked',
+      data: [78, 53, 36, 10, 14, 5, 2],
+    },
+  ],
+  chart: {
+    height: 295,
+    type: 'area',
+    toolbar: {
+      show: false,
+    },
+  },
+  colors: [themeColors.accent, themeColors.info, themeColors.orange],
+  legend: {
+    position: 'top',
+  },
+  dataLabels: {
+    enabled: false,
+  },
+  stroke: {
+    width: [2, 2, 2],
+    curve: 'smooth',
+  },
+  xaxis: {
+    type: 'datetime',
+    categories: [
+      '2020-09-19T00:00:00.000Z',
+      '2020-09-20T01:30:00.000Z',
+      '2020-09-21T02:30:00.000Z',
+      '2020-09-22T03:30:00.000Z',
+      '2020-09-23T04:30:00.000Z',
+      '2020-09-24T05:30:00.000Z',
+      '2020-09-25T06:30:00.000Z',
+    ],
+  },
+  tooltip: {
+    x: {
+      format: 'dd/MM/yy HH:mm',
+    },
+  },
+}
+
+//Team efficiency chart
+const series = [
+  {
+    name: 'Design',
+    data: [44, 55, 57, 56, 61, 58, 63, 60, 66],
+  },
+  {
+    name: 'Development',
+    data: [76, 85, 101, 98, 87, 105, 91, 114, 94],
+  },
+  {
+    name: 'Management',
+    data: [35, 41, 36, 26, 45, 48, 52, 53, 41],
+  },
+].map((s) => {
+  return {
+    name: s.name,
+    data: s.data.map((d) => {
+      return d - 70
+    }),
+  }
+})
+
+const barOptions = {
+  chart: {
+    height: 250,
+    type: 'bar',
+    toolbar: {
+      show: false,
+    },
+  },
+  colors: [themeColors.accent, themeColors.purple, themeColors.orange],
+  legend: {
+    position: 'top',
+  },
+  plotOptions: {
+    bar: {
+      horizontal: false,
+      endingShape: 'rounded',
+      columnWidth: '55%',
+    },
+  },
+  dataLabels: {
+    enabled: false,
+  },
+  stroke: {
+    show: true,
+    width: 2,
+    colors: ['transparent'],
+  },
+  series: series,
+  xaxis: {
+    categories: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct'],
+  },
+  yaxis: {
+    labels: {
+      formatter: function (val: string) {
+        return val + 70
+      },
+    },
+  },
+  fill: {
+    opacity: 1,
+  },
+  tooltip: {
+    y: {
+      formatter: function (val: string) {
+        return val + 'hrs'
+      },
+    },
+  },
+}
 
 useTitle('Dashboard Personal 2 - Admin - Vuero')
 </script>
@@ -358,7 +485,13 @@ useTitle('Dashboard Personal 2 - Admin - Vuero')
                       <h3 class="dark-inverted">Task Completion</h3>
                       <a class="action-link">Reports</a>
                     </div>
-                    <div id="completion-chart"></div>
+                    <apexchart
+                      id="completion-chart"
+                      :height="completionOptions.chart.height"
+                      :type="completionOptions.chart.type"
+                      :series="completionOptions.series"
+                      :options="completionOptions"
+                    ></apexchart>
                   </div>
 
                   <div class="dashboard-card">
@@ -366,7 +499,13 @@ useTitle('Dashboard Personal 2 - Admin - Vuero')
                       <h3 class="dark-inverted">Team Efficiency</h3>
                       <a class="action-link">Reports</a>
                     </div>
-                    <div id="efficiency-chart"></div>
+                    <apexchart
+                      id="efficiency-chart"
+                      :height="barOptions.chart.height"
+                      :type="barOptions.chart.type"
+                      :series="barOptions.series"
+                      :options="barOptions"
+                    ></apexchart>
                   </div>
                 </div>
 

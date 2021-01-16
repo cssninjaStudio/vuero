@@ -182,6 +182,8 @@ body {
 
         .dashboard-body {
           .dashboard-card {
+            @include vuero-card--dark();
+
             &.is-upgrade {
               background: $accent;
               border-color: $accent;
@@ -313,6 +315,11 @@ body {
   &.is-dark {
     .personal-dashboard {
       &.personal-dashboard-v2 {
+        .dashboard-header,
+        .dashboard-card {
+          @include vuero-card--dark();
+        }
+
         .home-header {
           .cta {
             background: lighten($accent, 2%);
@@ -451,6 +458,16 @@ body {
             }
           }
         }
+      }
+    }
+  }
+}
+
+.is-dark {
+  .personal-dashboard {
+    &.personal-dashboard-v3 {
+      .dashboard-card {
+        @include vuero-card--dark();
       }
     }
   }

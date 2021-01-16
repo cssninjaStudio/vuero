@@ -1,14 +1,17 @@
 dependencies:
   '@iconify/iconify': 1.0.7
   '@vueuse/core': 4.0.5_vue@3.0.5
+  apexcharts: 3.23.1
   axios: 0.21.1
   bulma: 0.9.1
   dayjs: 1.10.3
   highlight.js: 10.5.0
+  moment: 2.29.1
   nprogress: 0.2.0
   vue: 3.0.5
   vue-i18n: 9.0.0-rc.2_vue@3.0.5
   vue-toastification: 2.0.0-rc.1_vue@3.0.5
+  vue3-apexcharts: 1.1.1_apexcharts@3.23.1+vue@3.0.5
 devDependencies:
   '@iconify/json': 1.1.284
   '@intlify/vite-plugin-vue-i18n': 1.0.0-beta.12_rollup@2.36.1
@@ -1839,6 +1842,17 @@ packages:
       node: '>= 8'
     resolution:
       integrity: sha512-mM8522psRCqzV+6LhomX5wgp25YVibjh8Wj23I5RPkPppSVSjyKD2A2mBJmWGa+KN7f2D6LNh9jkBCeyLktzjg==
+  /apexcharts/3.23.1:
+    dependencies:
+      svg.draggable.js: 2.2.2
+      svg.easing.js: 2.0.0
+      svg.filter.js: 2.0.2
+      svg.pathmorphing.js: 0.1.3
+      svg.resize.js: 1.4.3
+      svg.select.js: 3.0.1
+    dev: false
+    resolution:
+      integrity: sha512-7fRpquXp725BUew5OO1mJWk16/IJPCUl0l8SjhISnAhAtbTaM9PnXPSmN2BvKO4RcT457CzMM7MCG5UokiTwcA==
   /argparse/1.0.10:
     dependencies:
       sprintf-js: 1.0.3
@@ -3767,6 +3781,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==
+  /moment/2.29.1:
+    dev: false
+    resolution:
+      integrity: sha512-kHmoybcPV8Sqy59DwNDY3Jefr64lK/by/da0ViFcuA4DH0vQg5Q6Ze5VimxkfQNSC+Mls/Kx53s7TjP1RhFEDQ==
   /ms/2.1.2:
     dev: true
     resolution:
@@ -4989,6 +5007,67 @@ packages:
     dev: true
     resolution:
       integrity: sha1-WPcc7jvVGbWdSyqEO2x95krAR2Q=
+  /svg.draggable.js/2.2.2:
+    dependencies:
+      svg.js: 2.7.1
+    dev: false
+    engines:
+      node: '>= 0.8.0'
+    resolution:
+      integrity: sha512-JzNHBc2fLQMzYCZ90KZHN2ohXL0BQJGQimK1kGk6AvSeibuKcIdDX9Kr0dT9+UJ5O8nYA0RB839Lhvk4CY4MZw==
+  /svg.easing.js/2.0.0:
+    dependencies:
+      svg.js: 2.7.1
+    dev: false
+    engines:
+      node: '>= 0.8.0'
+    resolution:
+      integrity: sha1-iqmUawqOJ4V6XEChDrpAkeVpHxI=
+  /svg.filter.js/2.0.2:
+    dependencies:
+      svg.js: 2.7.1
+    dev: false
+    engines:
+      node: '>= 0.8.0'
+    resolution:
+      integrity: sha1-kQCOFROJ3ZIwd5/L5uLJo2LRwgM=
+  /svg.js/2.7.1:
+    dev: false
+    resolution:
+      integrity: sha512-ycbxpizEQktk3FYvn/8BH+6/EuWXg7ZpQREJvgacqn46gIddG24tNNe4Son6omdXCnSOaApnpZw6MPCBA1dODA==
+  /svg.pathmorphing.js/0.1.3:
+    dependencies:
+      svg.js: 2.7.1
+    dev: false
+    engines:
+      node: '>= 0.8.0'
+    resolution:
+      integrity: sha512-49HWI9X4XQR/JG1qXkSDV8xViuTLIWm/B/7YuQELV5KMOPtXjiwH4XPJvr/ghEDibmLQ9Oc22dpWpG0vUDDNww==
+  /svg.resize.js/1.4.3:
+    dependencies:
+      svg.js: 2.7.1
+      svg.select.js: 2.1.2
+    dev: false
+    engines:
+      node: '>= 0.8.0'
+    resolution:
+      integrity: sha512-9k5sXJuPKp+mVzXNvxz7U0uC9oVMQrrf7cFsETznzUDDm0x8+77dtZkWdMfRlmbkEEYvUn9btKuZ3n41oNA+uw==
+  /svg.select.js/2.1.2:
+    dependencies:
+      svg.js: 2.7.1
+    dev: false
+    engines:
+      node: '>= 0.8.0'
+    resolution:
+      integrity: sha512-tH6ABEyJsAOVAhwcCjF8mw4crjXSI1aa7j2VQR8ZuJ37H2MBUbyeqYr5nEO7sSN3cy9AR9DUwNg0t/962HlDbQ==
+  /svg.select.js/3.0.1:
+    dependencies:
+      svg.js: 2.7.1
+    dev: false
+    engines:
+      node: '>= 0.8.0'
+    resolution:
+      integrity: sha512-h5IS/hKkuVCbKSieR9uQCj9w+zLHoPh+ce19bBYyqF53g6mnPB8sAtIbe1s9dh2S2fCmYX2xel1Ln3PJBbK4kw==
   /symbol-tree/3.2.4:
     dev: true
     resolution:
@@ -5472,6 +5551,16 @@ packages:
     dev: false
     resolution:
       integrity: sha512-TfaprOmtsAfhQau7WsomXZ8d9op/dkQLNIq8qPV3A0Vxs6GR5E+c1rfJS1SDkXRQj+dFyfnec7+U0Be1huiScg==
+  /vue3-apexcharts/1.1.1_apexcharts@3.23.1+vue@3.0.5:
+    dependencies:
+      apexcharts: 3.23.1
+      vue: 3.0.5
+    dev: false
+    peerDependencies:
+      apexcharts: '> 3.0.0'
+      vue: '> 3.0.0'
+    resolution:
+      integrity: sha512-SKU0W8g7hkkAAm+fJAaw8HpkFgO1HaWA1zpKVskF/9LmySTVOsrHqldxOikglnSAiig93KBHQhcinStusHz8Cw==
   /w3c-hr-time/1.0.2:
     dependencies:
       browser-process-hrtime: 1.0.0
@@ -5804,6 +5893,7 @@ specifiers:
   '@vuedx/typecheck': 0.5.0
   '@vuedx/typescript-plugin-vue': 0.5.0
   '@vueuse/core': 4.0.5
+  apexcharts: ^3.23.1
   axios: 0.21.1
   bulma: 0.9.1
   cross-env: 7.0.3
@@ -5813,6 +5903,7 @@ specifiers:
   eslint-plugin-prettier-vue: 3.0.0-alpha.2
   eslint-plugin-vue: 7.4.1
   highlight.js: 10.5.0
+  moment: ^2.29.1
   npm-run-all: 4.1.5
   nprogress: 0.2.0
   prettier: 2.2.1
@@ -5837,3 +5928,4 @@ specifiers:
   vue-i18n: 9.0.0-rc.2
   vue-router: 4.0.2
   vue-toastification: 2.0.0-rc.1
+  vue3-apexcharts: ^1.1.1

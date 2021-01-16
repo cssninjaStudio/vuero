@@ -1,11 +1,19 @@
 <script setup lang="ts">
 import { useTitle } from '@vueuse/core'
-import { onMounted } from 'vue'
+import { onMounted, ref } from 'vue'
 
 import {
   activeSidebar,
   toggleSidebar,
 } from '/@src/composition/state/ui/activeSidebarState'
+
+import * as examples from './icons-feater.examples'
+
+const examplesIds = Object.keys(examples)
+const display = ref<any>({})
+for (const id of examplesIds) {
+  display[id] = false
+}
 
 onMounted(() => {
   activeSidebar.value = 'elements'
@@ -96,20 +104,31 @@ useTitle('Elements - Icons Feather - Vuero')
                       accross a large variety of websites. Please refer to the
                       code example for more details about usage.
                     </p>
-                    <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                    <a
+                      class="code-trigger"
+                      :class="[display.featherIcons && 'is-active']"
+                      @click="display.featherIcons = !display.featherIcons"
+                    >
+                      <span
+                        v-show="display.featherIcons"
+                        class="iconify open"
+                        data-icon="feather:code"
+                      />
+                      <span
+                        v-show="!display.featherIcons"
+                        class="iconify close"
+                        data-icon="feather:x"
+                      />
                     </a>
                   </div>
 
                   <div class="card-inner">
                     <div class="highlight highlight-block">
-                      <pre><code class="code-highlight">
-&#x3C;!--Feather icon usage (html) --&#x3E;
-&#x3C;i data-feather=&#x22;activity&#x22;&#x3E;&#x3C;/i&#x3E;
-&#x3C;!--Feather icon usage (js) --&#x3E;
-&#x3C;script&#x3E; feather.replace(); &#x3C;/script&#x3E;
-</code></pre>
+                      <HighlightJS
+                        v-if="display.featherIcons"
+                        language="vue"
+                        :code="examples.featherIcons"
+                      />
                     </div>
 
                     <ul class="demo-icon-list">

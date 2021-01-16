@@ -1,11 +1,19 @@
 <script setup lang="ts">
 import { useTitle } from '@vueuse/core'
-import { onMounted } from 'vue'
+import { onMounted, ref } from 'vue'
 
 import {
   activeSidebar,
   toggleSidebar,
 } from '/@src/composition/state/ui/activeSidebarState'
+
+import * as examples from './content.examples'
+
+const examplesIds = Object.keys(examples)
+const display = ref<any>({})
+for (const id of examplesIds) {
+  display[id] = false
+}
 
 onMounted(() => {
   activeSidebar.value = 'elements'
@@ -97,9 +105,21 @@ useTitle('Elements - Content - Vuero')
                       <code>content</code> class. Lists can also have the
                       <code>is-light</code> modifier to change the text color.
                     </p>
-                    <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                    <a
+                      class="code-trigger"
+                      :class="[display.unorderedLists && 'is-active']"
+                      @click="display.unorderedLists = !display.unorderedLists"
+                    >
+                      <span
+                        v-show="display.unorderedLists"
+                        class="iconify open"
+                        data-icon="feather:code"
+                      />
+                      <span
+                        v-show="!display.unorderedLists"
+                        class="iconify close"
+                        data-icon="feather:x"
+                      />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -124,22 +144,11 @@ useTitle('Elements - Content - Vuero')
                       </div>
                     </div>
 
-                    <div class="highlight highlight-block">
-                      <pre><code class="code-highlight">
-&#x3C;div class=&#x22;content&#x22;&#x3E;
-    &#x3C;ul&#x3E;
-        &#x3C;li&#x3E;Coffee&#x3C;/li&#x3E;
-        &#x3C;li&#x3E;Tea&#x3C;/li&#x3E;
-        &#x3C;li&#x3E;Milk&#x3C;/li&#x3E;
-    &#x3C;/ul&#x3E;
-    &#x3C;ul class=&#x22;is-light&#x22;&#x3E;
-        &#x3C;li&#x3E;Coffee&#x3C;/li&#x3E;
-        &#x3C;li&#x3E;Tea&#x3C;/li&#x3E;
-        &#x3C;li&#x3E;Milk&#x3C;/li&#x3E;
-    &#x3C;/ul&#x3E;
-&#x3C;/div&#x3E;
-</code></pre>
-                    </div>
+                    <HighlightJS
+                      v-if="display.unorderedLists"
+                      language="vue"
+                      :code="examples.unorderedLists"
+                    />
                   </div>
                 </div>
 
@@ -156,9 +165,21 @@ useTitle('Elements - Content - Vuero')
                       <code>type="a"</code>, <code>type="I"</code>,
                       <code>type="i"</code>.
                     </p>
-                    <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                    <a
+                      class="code-trigger"
+                      :class="[display.orderedLists && 'is-active']"
+                      @click="display.orderedLists = !display.orderedLists"
+                    >
+                      <span
+                        v-show="display.orderedLists"
+                        class="iconify open"
+                        data-icon="feather:code"
+                      />
+                      <span
+                        v-show="!display.orderedLists"
+                        class="iconify close"
+                        data-icon="feather:x"
+                      />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -210,37 +231,11 @@ useTitle('Elements - Content - Vuero')
                       </div>
                     </div>
 
-                    <div class="highlight highlight-block">
-                      <pre><code class="code-highlight">
-&#x3C;div class=&#x22;content&#x22;&#x3E;
-    &#x3C;ol type=&#x22;1&#x22;&#x3E;
-        &#x3C;li&#x3E;Coffee&#x3C;/li&#x3E;
-        &#x3C;li&#x3E;Tea&#x3C;/li&#x3E;
-        &#x3C;li&#x3E;Milk&#x3C;/li&#x3E;
-    &#x3C;/ol&#x3E;
-    &#x3C;ol type=&#x22;A&#x22;&#x3E;
-        &#x3C;li&#x3E;Coffee&#x3C;/li&#x3E;
-        &#x3C;li&#x3E;Tea&#x3C;/li&#x3E;
-        &#x3C;li&#x3E;Milk&#x3C;/li&#x3E;
-    &#x3C;/ol&#x3E;
-    &#x3C;ol type=&#x22;a&#x22;&#x3E;
-        &#x3C;li&#x3E;Coffee&#x3C;/li&#x3E;
-        &#x3C;li&#x3E;Tea&#x3C;/li&#x3E;
-        &#x3C;li&#x3E;Milk&#x3C;/li&#x3E;
-    &#x3C;/ol&#x3E;
-    &#x3C;ol type=&#x22;I&#x22;&#x3E;
-        &#x3C;li&#x3E;Coffee&#x3C;/li&#x3E;
-        &#x3C;li&#x3E;Tea&#x3C;/li&#x3E;
-        &#x3C;li&#x3E;Milk&#x3C;/li&#x3E;
-    &#x3C;/ol&#x3E;
-    &#x3C;ol type=&#x22;i&#x22;&#x3E;
-        &#x3C;li&#x3E;Coffee&#x3C;/li&#x3E;
-        &#x3C;li&#x3E;Tea&#x3C;/li&#x3E;
-        &#x3C;li&#x3E;Milk&#x3C;/li&#x3E;
-    &#x3C;/ol&#x3E;
-&#x3C;/div&#x3E;
-</code></pre>
-                    </div>
+                    <HighlightJS
+                      v-if="display.orderedLists"
+                      language="vue"
+                      :code="examples.orderedLists"
+                    />
                   </div>
                 </div>
 
@@ -258,9 +253,21 @@ useTitle('Elements - Content - Vuero')
                       <code>is-bold</code> or bolder using the
                       <code>is-bolder</code> modifier classes.
                     </p>
-                    <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                    <a
+                      class="code-trigger"
+                      :class="[display.title && 'is-active']"
+                      @click="display.title = !display.title"
+                    >
+                      <span
+                        v-show="display.title"
+                        class="iconify open"
+                        data-icon="feather:code"
+                      />
+                      <span
+                        v-show="!display.title"
+                        class="iconify close"
+                        data-icon="feather:x"
+                      />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -355,76 +362,11 @@ useTitle('Elements - Content - Vuero')
                       </div>
                     </div>
 
-                    <div class="highlight highlight-block">
-                      <pre><code class="code-highlight">
-&#x3C;div class=&#x22;columns is-multiline&#x22;&#x3E;
-    &#x3C;div class=&#x22;column is-3&#x22;&#x3E;
-        &#x3C;h1 class=&#x22;title is-3 is-narrow&#x22;&#x3E;This is a title&#x3C;/h1&#x3E;
-        &#x3C;p&#x3E;This is a huge title&#x3C;/p&#x3E;
-    &#x3C;/div&#x3E;
-    &#x3C;div class=&#x22;column is-3&#x22;&#x3E;
-        &#x3C;h2 class=&#x22;title is-4 is-narrow&#x22;&#x3E;This is a title&#x3C;/h2&#x3E;
-        &#x3C;p&#x3E;This is a big title&#x3C;/p&#x3E;
-    &#x3C;/div&#x3E;
-    &#x3C;div class=&#x22;column is-3&#x22;&#x3E;
-        &#x3C;h2 class=&#x22;title is-5 is-narrow&#x22;&#x3E;This is a title&#x3C;/h2&#x3E;
-        &#x3C;p&#x3E;This is a medium title&#x3C;/p&#x3E;
-    &#x3C;/div&#x3E;
-    &#x3C;div class=&#x22;column is-3&#x22;&#x3E;
-        &#x3C;h2 class=&#x22;title is-6 is-narrow&#x22;&#x3E;This is a title&#x3C;/h2&#x3E;
-        &#x3C;p&#x3E;This is a smaller title&#x3C;/p&#x3E;
-    &#x3C;/div&#x3E;
-    &#x3C;div class=&#x22;column is-3&#x22;&#x3E;
-        &#x3C;h1 class=&#x22;title is-3 is-narrow is-bold&#x22;&#x3E;This is a title&#x3C;/h1&#x3E;
-        &#x3C;p&#x3E;This is a huge bold title&#x3C;/p&#x3E;
-    &#x3C;/div&#x3E;
-    &#x3C;div class=&#x22;column is-3&#x22;&#x3E;
-        &#x3C;h2 class=&#x22;title is-4 is-narrow is-bold&#x22;&#x3E;This is a title&#x3C;/h2&#x3E;
-        &#x3C;p&#x3E;This is a big bold title&#x3C;/p&#x3E;
-    &#x3C;/div&#x3E;
-    &#x3C;div class=&#x22;column is-3&#x22;&#x3E;
-        &#x3C;h2 class=&#x22;title is-5 is-narrow is-bold&#x22;&#x3E;This is a title&#x3C;/h2&#x3E;
-        &#x3C;p&#x3E;This is a medium bold title&#x3C;/p&#x3E;
-    &#x3C;/div&#x3E;
-    &#x3C;div class=&#x22;column is-3&#x22;&#x3E;
-        &#x3C;h2 class=&#x22;title is-6 is-narrow is-bold&#x22;&#x3E;This is a title&#x3C;/h2&#x3E;
-        &#x3C;p&#x3E;This is a smaller bold title&#x3C;/p&#x3E;
-    &#x3C;/div&#x3E;
-    &#x3C;div class=&#x22;column is-3&#x22;&#x3E;
-        &#x3C;h1 class=&#x22;title is-3 is-narrow is-bolder&#x22;&#x3E;This is a title&#x3C;/h1&#x3E;
-        &#x3C;p&#x3E;This is a huge bolder title&#x3C;/p&#x3E;
-    &#x3C;/div&#x3E;
-    &#x3C;div class=&#x22;column is-3&#x22;&#x3E;
-        &#x3C;h2 class=&#x22;title is-4 is-narrow is-bolder&#x22;&#x3E;This is a title&#x3C;/h2&#x3E;
-        &#x3C;p&#x3E;This is a big bolder title&#x3C;/p&#x3E;
-    &#x3C;/div&#x3E;
-    &#x3C;div class=&#x22;column is-3&#x22;&#x3E;
-        &#x3C;h2 class=&#x22;title is-5 is-narrow is-bolder&#x22;&#x3E;This is a title&#x3C;/h2&#x3E;
-        &#x3C;p&#x3E;This is a medium bolder title&#x3C;/p&#x3E;
-    &#x3C;/div&#x3E;
-    &#x3C;div class=&#x22;column is-3&#x22;&#x3E;
-        &#x3C;h2 class=&#x22;title is-6 is-narrow is-bolder&#x22;&#x3E;This is a title&#x3C;/h2&#x3E;
-        &#x3C;p&#x3E;This is a smaller bolder title&#x3C;/p&#x3E;
-    &#x3C;/div&#x3E;
-    &#x3C;div class=&#x22;column is-3&#x22;&#x3E;
-        &#x3C;h1 class=&#x22;title is-3 is-narrow is-thin&#x22;&#x3E;This is a title&#x3C;/h1&#x3E;
-        &#x3C;p&#x3E;This is a huge thin title&#x3C;/p&#x3E;
-    &#x3C;/div&#x3E;
-    &#x3C;div class=&#x22;column is-3&#x22;&#x3E;
-        &#x3C;h2 class=&#x22;title is-4 is-narrow is-thin&#x22;&#x3E;This is a title&#x3C;/h2&#x3E;
-        &#x3C;p&#x3E;This is a big thin title&#x3C;/p&#x3E;
-    &#x3C;/div&#x3E;
-    &#x3C;div class=&#x22;column is-3&#x22;&#x3E;
-        &#x3C;h2 class=&#x22;title is-5 is-narrow is-thin&#x22;&#x3E;This is a title&#x3C;/h2&#x3E;
-        &#x3C;p&#x3E;This is a medium thin title&#x3C;/p&#x3E;
-    &#x3C;/div&#x3E;
-    &#x3C;div class=&#x22;column is-3&#x22;&#x3E;
-        &#x3C;h2 class=&#x22;title is-6 is-narrow is-thin&#x22;&#x3E;This is a title&#x3C;/h2&#x3E;
-        &#x3C;p&#x3E;This is a smaller thin title&#x3C;/p&#x3E;
-    &#x3C;/div&#x3E;
-&#x3C;/div&#x3E;
-</code></pre>
-                    </div>
+                    <HighlightJS
+                      v-if="display.title"
+                      language="vue"
+                      :code="examples.title"
+                    />
                   </div>
                 </div>
 
@@ -439,9 +381,21 @@ useTitle('Elements - Content - Vuero')
                       patter <code>is-*</code> where <code>*</code> represents a
                       number between 4 and 6.
                     </p>
-                    <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                    <a
+                      class="code-trigger"
+                      :class="[display.subtitle && 'is-active']"
+                      @click="display.subtitle = !display.subtitle"
+                    >
+                      <span
+                        v-show="display.subtitle"
+                        class="iconify open"
+                        data-icon="feather:code"
+                      />
+                      <span
+                        v-show="!display.subtitle"
+                        class="iconify close"
+                        data-icon="feather:x"
+                      />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -464,28 +418,11 @@ useTitle('Elements - Content - Vuero')
                       </div>
                     </div>
 
-                    <div class="highlight highlight-block">
-                      <pre><code class="code-highlight">
-&#x3C;div class=&#x22;columns&#x22;&#x3E;
-    &#x3C;div class=&#x22;column is-3&#x22;&#x3E;
-        &#x3C;h1 class=&#x22;title is-3&#x22;&#x3E;This is a title&#x3C;/h1&#x3E;
-        &#x3C;p class=&#x22;subtitle is-4&#x22;&#x3E;This is a huge subtitle&#x3C;/p&#x3E;
-    &#x3C;/div&#x3E;
-    &#x3C;div class=&#x22;column is-3&#x22;&#x3E;
-        &#x3C;h2 class=&#x22;title is-4&#x22;&#x3E;This is a title&#x3C;/h2&#x3E;
-        &#x3C;p class=&#x22;subtitle is-4&#x22;&#x3E;This is a big subtitle&#x3C;/p&#x3E;
-    &#x3C;/div&#x3E;
-    &#x3C;div class=&#x22;column is-3&#x22;&#x3E;
-        &#x3C;h2 class=&#x22;title is-5&#x22;&#x3E;This is a title&#x3C;/h2&#x3E;
-        &#x3C;p class=&#x22;subtitle is-5&#x22;&#x3E;This is a medium subtitle&#x3C;/p&#x3E;
-    &#x3C;/div&#x3E;
-    &#x3C;div class=&#x22;column is-3&#x22;&#x3E;
-        &#x3C;h2 class=&#x22;title is-6&#x22;&#x3E;This is a title&#x3C;/h2&#x3E;
-        &#x3C;p class=&#x22;subtitle is-6&#x22;&#x3E;This is a smaller subtitle&#x3C;/p&#x3E;
-    &#x3C;/div&#x3E;
-&#x3C;/div&#x3E;
-</code></pre>
-                    </div>
+                    <HighlightJS
+                      v-if="display.subtitle"
+                      language="vue"
+                      :code="examples.subtitle"
+                    />
                   </div>
                 </div>
 
@@ -502,9 +439,21 @@ useTitle('Elements - Content - Vuero')
                       <code>is-success</code>, <code>is-info</code>,
                       <code>is-warning</code>, <code>is-danger</code>.
                     </p>
-                    <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                    <a
+                      class="code-trigger"
+                      :class="[display.blockquote && 'is-active']"
+                      @click="display.blockquote = !display.blockquote"
+                    >
+                      <span
+                        v-show="display.blockquote"
+                        class="iconify open"
+                        data-icon="feather:code"
+                      />
+                      <span
+                        v-show="!display.blockquote"
+                        class="iconify close"
+                        data-icon="feather:x"
+                      />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -541,21 +490,11 @@ useTitle('Elements - Content - Vuero')
                       </blockquote>
                     </div>
 
-                    <div class="highlight highlight-block">
-                      <pre><code class="code-highlight">
-&#x3C;div class=&#x22;content&#x22;&#x3E;
-    &#x3C;blockquote&#x3E;
-        &#x3C;p&#x3E;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ergo, inquit, tibi Q. Est enim effectrix multarum et magnarum voluptatum. Equidem, sed audistine modo de Carneade? Dici enim nihil potest verius. Praeteritis, inquit, gaudeo. Aliter autem vobis placet.&#x3C;/p&#x3E;
-    &#x3C;/blockquote&#x3E;
-    &#x3C;blockquote class=&#x22;is-primary&#x22;&#x3E;
-        &#x3C;p&#x3E;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ergo, inquit, tibi Q. Est enim effectrix multarum et magnarum voluptatum. Equidem, sed audistine modo de Carneade? Dici enim nihil potest verius. Praeteritis, inquit, gaudeo. Aliter autem vobis placet.&#x3C;/p&#x3E;
-    &#x3C;/blockquote&#x3E;
-    &#x3C;blockquote class=&#x22;is-success&#x22;&#x3E;
-        &#x3C;p&#x3E;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ergo, inquit, tibi Q. Est enim effectrix multarum et magnarum voluptatum. Equidem, sed audistine modo de Carneade? Dici enim nihil potest verius. Praeteritis, inquit, gaudeo. Aliter autem vobis placet.&#x3C;/p&#x3E;
-    &#x3C;/blockquote&#x3E;
-&#x3C;/div&#x3E;
-</code></pre>
-                    </div>
+                    <HighlightJS
+                      v-if="display.blockquote"
+                      language="vue"
+                      :code="examples.blockquote"
+                    />
                   </div>
                 </div>
 
@@ -570,9 +509,21 @@ useTitle('Elements - Content - Vuero')
                       attribute. See the code example for more details about
                       usage.
                     </p>
-                    <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                    <a
+                      class="code-trigger"
+                      :class="[display.divider && 'is-active']"
+                      @click="display.divider = !display.divider"
+                    >
+                      <span
+                        v-show="display.divider"
+                        class="iconify open"
+                        data-icon="feather:code"
+                      />
+                      <span
+                        v-show="!display.divider"
+                        class="iconify close"
+                        data-icon="feather:x"
+                      />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -616,29 +567,11 @@ useTitle('Elements - Content - Vuero')
                       </div>
                     </div>
 
-                    <div class="highlight highlight-block">
-                      <pre><code class="code-highlight">
-&#x3C;div class=&#x22;content&#x22;&#x3E;
-    &#x3C;p&#x3E;Ut venenatis, nisl scelerisque sollicitudin fermentum, quam libero hendrerit ipsum, ut blandit
-        est tellus sit amet turpis.&#x3C;/p&#x3E;
-    &#x3C;div class=&#x22;is-divider&#x22; data-content=&#x22;OR&#x22;&#x3E;&#x3C;/div&#x3E;
-    &#x3C;p&#x3E;Ut venenatis, nisl scelerisque sollicitudin fermentum, quam libero hendrerit ipsum, ut blandit
-        est tellus sit amet turpis.&#x3C;/p&#x3E;
-&#x3C;/div&#x3E;
-
-&#x3C;div class=&#x22;columns&#x22;&#x3E;
-    &#x3C;div class=&#x22;column&#x22;&#x3E;
-        &#x3C;p&#x3E;Ut venenatis, nisl scelerisque sollicitudin fermentum, quam libero hendrerit ipsum, ut
-            blandit est tellus sit amet turpis.&#x3C;/p&#x3E;
-    &#x3C;/div&#x3E;
-    &#x3C;div class=&#x22;is-divider-vertical&#x22; data-content=&#x22;OR&#x22;&#x3E;&#x3C;/div&#x3E;
-    &#x3C;div class=&#x22;column&#x22;&#x3E;
-        &#x3C;p&#x3E;Ut venenatis, nisl scelerisque sollicitudin fermentum, quam libero hendrerit ipsum, ut
-            blandit est tellus sit amet turpis.&#x3C;/p&#x3E;
-    &#x3C;/div&#x3E;
-&#x3C;/div&#x3E;
-</code></pre>
-                    </div>
+                    <HighlightJS
+                      v-if="display.divider"
+                      language="vue"
+                      :code="examples.divider"
+                    />
                   </div>
                 </div>
 
@@ -653,9 +586,21 @@ useTitle('Elements - Content - Vuero')
                       refer to the Vuero components section to find more
                       advanced table examples and layouts.
                     </p>
-                    <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                    <a
+                      class="code-trigger"
+                      :class="[display.contentTable && 'is-active']"
+                      @click="display.contentTable = !display.contentTable"
+                    >
+                      <span
+                        v-show="display.contentTable"
+                        class="iconify open"
+                        data-icon="feather:code"
+                      />
+                      <span
+                        v-show="!display.contentTable"
+                        class="iconify close"
+                        data-icon="feather:x"
+                      />
                     </a>
                   </div>
                   <div class="card-inner">
@@ -742,88 +687,11 @@ useTitle('Elements - Content - Vuero')
                       </table>
                     </div>
 
-                    <div class="highlight highlight-block">
-                      <pre><code class="code-highlight">
-&#x3C;div class=&#x22;content&#x22;&#x3E;
-    &#x3C;table&#x3E;
-        &#x3C;thead&#x3E;
-            &#x3C;tr&#x3E;
-                &#x3C;th&#x3E;Heroes&#x3C;/th&#x3E;
-                &#x3C;th&#x3E;Power&#x3C;/th&#x3E;
-                &#x3C;th&#x3E;Availability&#x3C;/th&#x3E;
-            &#x3C;/tr&#x3E;
-        &#x3C;/thead&#x3E;
-        &#x3C;tbody&#x3E;
-            &#x3C;tr&#x3E;
-                &#x3C;td&#x3E;Superman&#x3C;/td&#x3E;
-                &#x3C;td&#x3E;
-                    &#x3C;i class=&#x22;fas fa-star warning-text&#x22;&#x3E;&#x3C;/i&#x3E;
-                    &#x3C;i class=&#x22;fas fa-star warning-text&#x22;&#x3E;&#x3C;/i&#x3E;
-                    &#x3C;i class=&#x22;fas fa-star warning-text&#x22;&#x3E;&#x3C;/i&#x3E;
-                    &#x3C;i class=&#x22;fas fa-star warning-text&#x22;&#x3E;&#x3C;/i&#x3E;
-                    &#x3C;i class=&#x22;fas fa-star warning-text&#x22;&#x3E;&#x3C;/i&#x3E;
-                &#x3C;/td&#x3E;
-                &#x3C;td&#x3E;
-                    &#x3C;span class=&#x22;tag is-rounded is-success&#x22;&#x3E;Available&#x3C;/span&#x3E;
-                &#x3C;/td&#x3E;
-            &#x3C;/tr&#x3E;
-            &#x3C;tr&#x3E;
-                &#x3C;td&#x3E;Batman&#x3C;/td&#x3E;
-                &#x3C;td&#x3E;
-                    &#x3C;i class=&#x22;fas fa-star warning-text&#x22;&#x3E;&#x3C;/i&#x3E;
-                    &#x3C;i class=&#x22;fas fa-star warning-text&#x22;&#x3E;&#x3C;/i&#x3E;
-                    &#x3C;i class=&#x22;fas fa-star warning-text&#x22;&#x3E;&#x3C;/i&#x3E;
-                    &#x3C;i class=&#x22;fas fa-star&#x22;&#x3E;&#x3C;/i&#x3E;
-                    &#x3C;i class=&#x22;fas fa-star&#x22;&#x3E;&#x3C;/i&#x3E;
-                &#x3C;/td&#x3E;
-                &#x3C;td&#x3E;
-                    &#x3C;span class=&#x22;tag is-rounded&#x22;&#x3E;Unavailable&#x3C;/span&#x3E;
-                &#x3C;/td&#x3E;
-            &#x3C;/tr&#x3E;
-            &#x3C;tr&#x3E;
-                &#x3C;td&#x3E;Deadpool&#x3C;/td&#x3E;
-                &#x3C;td&#x3E;
-                    &#x3C;i class=&#x22;fas fa-star warning-text&#x22;&#x3E;&#x3C;/i&#x3E;
-                    &#x3C;i class=&#x22;fas fa-star warning-text&#x22;&#x3E;&#x3C;/i&#x3E;
-                    &#x3C;i class=&#x22;fas fa-star&#x22;&#x3E;&#x3C;/i&#x3E;
-                    &#x3C;i class=&#x22;fas fa-star&#x22;&#x3E;&#x3C;/i&#x3E;
-                    &#x3C;i class=&#x22;fas fa-star&#x22;&#x3E;&#x3C;/i&#x3E;
-                &#x3C;/td&#x3E;
-                &#x3C;td&#x3E;
-                    &#x3C;span class=&#x22;tag is-rounded&#x22;&#x3E;Unavailable&#x3C;/span&#x3E;
-                &#x3C;/td&#x3E;
-            &#x3C;/tr&#x3E;
-            &#x3C;tr&#x3E;
-                &#x3C;td&#x3E;Spawn&#x3C;/td&#x3E;
-                &#x3C;td&#x3E;
-                    &#x3C;i class=&#x22;fas fa-star warning-text&#x22;&#x3E;&#x3C;/i&#x3E;
-                    &#x3C;i class=&#x22;fas fa-star warning-text&#x22;&#x3E;&#x3C;/i&#x3E;
-                    &#x3C;i class=&#x22;fas fa-star warning-text&#x22;&#x3E;&#x3C;/i&#x3E;
-                    &#x3C;i class=&#x22;fas fa-star warning-text&#x22;&#x3E;&#x3C;/i&#x3E;
-                    &#x3C;i class=&#x22;fas fa-star&#x22;&#x3E;&#x3C;/i&#x3E;
-                &#x3C;/td&#x3E;
-                &#x3C;td&#x3E;
-                    &#x3C;span class=&#x22;tag is-rounded is-success&#x22;&#x3E;Available&#x3C;/span&#x3E;
-                &#x3C;/td&#x3E;
-            &#x3C;/tr&#x3E;
-            &#x3C;tr&#x3E;
-                &#x3C;td&#x3E;Galactus&#x3C;/td&#x3E;
-                &#x3C;td&#x3E;
-                    &#x3C;i class=&#x22;fas fa-star warning-text&#x22;&#x3E;&#x3C;/i&#x3E;
-                    &#x3C;i class=&#x22;fas fa-star warning-text&#x22;&#x3E;&#x3C;/i&#x3E;
-                    &#x3C;i class=&#x22;fas fa-star warning-text&#x22;&#x3E;&#x3C;/i&#x3E;
-                    &#x3C;i class=&#x22;fas fa-star warning-text&#x22;&#x3E;&#x3C;/i&#x3E;
-                    &#x3C;i class=&#x22;fas fa-star warning-text&#x22;&#x3E;&#x3C;/i&#x3E;
-                &#x3C;/td&#x3E;
-                &#x3C;td&#x3E;
-                    &#x3C;span class=&#x22;tag is-rounded&#x22;&#x3E;Unavailable&#x3C;/span&#x3E;
-                &#x3C;/td&#x3E;
-            &#x3C;/tr&#x3E;
-        &#x3C;/tbody&#x3E;
-    &#x3C;/table&#x3E;
-&#x3C;/div&#x3E;
-</code></pre>
-                    </div>
+                    <HighlightJS
+                      v-if="display.contentTable"
+                      language="vue"
+                      :code="examples.contentTable"
+                    />
                   </div>
                 </div>
               </div>

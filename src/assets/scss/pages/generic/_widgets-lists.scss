@@ -118,6 +118,8 @@ List Widgets Styles
 body {
   &.is-dark {
     .list-widget {
+      @include vuero-card--dark();
+
       &.tabbed-widget {
         .widget-head {
           .tabbed-controls {

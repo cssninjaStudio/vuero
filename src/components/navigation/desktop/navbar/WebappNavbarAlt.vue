@@ -17,6 +17,13 @@ const { y } = useWindowScroll()
 const isScrolling = computed(() => {
   return y.value > 30
 })
+const otherLayoutLink = computed(() => {
+  if (route.fullPath.startsWith('/admin')) {
+    return route.fullPath.replace('admin', 'webapp')
+  } else {
+    return route.fullPath.replace('webapp', 'admin')
+  }
+})
 
 watch(
   () => route.path,
@@ -135,7 +142,10 @@ watch(
                   <span>View your profile</span>
                 </div>
               </RouterLink>
-              <a class="dropdown-item is-media layout-switcher">
+              <RouterLink
+                :to="otherLayoutLink"
+                class="dropdown-item is-media layout-switcher"
+              >
                 <div class="icon">
                   <i class="lnil lnil-layout"></i>
                 </div>
@@ -143,7 +153,7 @@ watch(
                   <span>Layout</span>
                   <span>Switch to admin/webapp</span>
                 </div>
-              </a>
+              </RouterLink>
               <hr class="dropdown-divider" />
               <a href="#" class="dropdown-item is-media">
                 <div class="icon">
