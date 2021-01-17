@@ -1,12 +1,16 @@
 <script setup lang="ts">
 import { useTitle } from '@vueuse/core'
-import { ref } from 'vue'
+import { onMounted, ref } from 'vue'
 
 import { activePanel } from '/@src/composition/state/ui/activePanelState'
 import {
   activeSidebar,
   toggleSidebar,
 } from '/@src/composition/state/ui/activeSidebarState'
+
+onMounted(() => {
+  activeSidebar.value = 'none'
+})
 
 useTitle('Projects project - Admin - Vuero')
 </script>

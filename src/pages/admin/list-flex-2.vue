@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useTitle } from '@vueuse/core'
-import { ref } from 'vue'
+import { onMounted, ref } from 'vue'
 
 import {
   activeSidebar,
@@ -8,6 +8,10 @@ import {
 } from '/@src/composition/state/ui/activeSidebarState'
 
 const activeTab = ref<'active' | 'closed'>('active')
+
+onMounted(() => {
+  activeSidebar.value = 'none'
+})
 
 useTitle('List Flex 2 - Admin - Vuero')
 </script>

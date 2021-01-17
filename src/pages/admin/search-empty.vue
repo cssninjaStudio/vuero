@@ -1,11 +1,15 @@
 <script setup lang="ts">
 import { useTitle } from '@vueuse/core'
-import { ref } from 'vue'
+import { onMounted, ref } from 'vue'
 
 import {
   activeSidebar,
   toggleSidebar,
 } from '/@src/composition/state/ui/activeSidebarState'
+
+onMounted(() => {
+  activeSidebar.value = 'none'
+})
 
 useTitle('Search Empty - Admin - Vuero')
 </script>

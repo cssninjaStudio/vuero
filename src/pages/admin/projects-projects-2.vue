@@ -1,10 +1,15 @@
 <script setup lang="ts">
 import { useTitle } from '@vueuse/core'
+import { onMounted } from 'vue'
 
 import {
   activeSidebar,
   toggleSidebar,
 } from '/@src/composition/state/ui/activeSidebarState'
+
+onMounted(() => {
+  activeSidebar.value = 'none'
+})
 
 useTitle('Projects projects 2 - Admin - Vuero')
 </script>
