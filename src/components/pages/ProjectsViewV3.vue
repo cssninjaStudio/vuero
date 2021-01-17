@@ -39,24 +39,24 @@
       <div class="columns">
         <div class="column is-4">
           <a class="project-box">
-            <div class="circle-chart-wrapper is-success" data-completion="55">
-              <CircleChart />
+            <div class="circle-chart-wrapper is-success">
+              <CircleChart :value="55" />
             </div>
             <h3>Customer Management Dashboard</h3>
           </a>
         </div>
         <div class="column is-4">
           <a class="project-box">
-            <div class="circle-chart-wrapper is-danger" data-completion="80">
-              <CircleChart />
+            <div class="circle-chart-wrapper is-danger">
+              <CircleChart :value="80" />
             </div>
             <h3>CandyBar Website and App Redesign</h3>
           </a>
         </div>
         <div class="column is-4">
           <a class="project-box">
-            <div class="circle-chart-wrapper is-info" data-completion="28">
-              <CircleChart />
+            <div class="circle-chart-wrapper is-info">
+              <CircleChart :value="28" />
             </div>
             <h3>Marketing and Investment Platform</h3>
           </a>

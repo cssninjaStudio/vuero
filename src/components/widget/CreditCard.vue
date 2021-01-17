@@ -1,6 +1,41 @@
+<script setup lang="ts">
+import { computed, defineEmit, defineProps, ref } from 'vue'
+
+const props = defineProps({
+  number: {
+    type: String,
+    default: '0123 4567 8910 1112',
+  },
+  name: {
+    type: String,
+    default: 'JOHN DOE',
+  },
+  expiry: {
+    type: String,
+    default: '01/23',
+  },
+  cvc: {
+    type: String,
+    default: '985',
+  },
+  flipped: {
+    type: Boolean,
+    default: false
+  }
+})
+
+const emit = defineEmit(['flip'])
+
+const nameUppercase = computed(() => props.name.toUpperCase())
+</script>
+
 <template>
-  <div class="card-container preload">
-    <div class="creditcard">
+  <div class="card-container">
+    <div
+      :class="[flipped && 'flipped']"
+      class="creditcard"
+      @click="emit('flip')"
+    >
       <div class="front">
         <div id="ccsingle"></div>
         <svg
@@ -36,14 +71,14 @@
               transform="matrix(1 0 0 1 60.106 295.0121)"
               class="st2 st3 st4"
             >
-              0123 4567 8910 1112
+              {{ number || '1234 1234 1234 1234' }}
             </text>
             <text
               id="svgname"
               transform="matrix(1 0 0 1 54.1064 428.1723)"
               class="st2 st5 st6"
             >
-              JOHN DOE
+              {{ nameUppercase || 'JOHN DOE' }}
             </text>
             <text
               transform="matrix(1 0 0 1 54.1074 389.8793)"
@@ -66,7 +101,7 @@
                 transform="matrix(1 0 0 1 574.4219 433.8095)"
                 class="st2 st5 st9"
               >
-                01/23
+                {{ expiry || '01/30' }}
               </text>
               <text
                 transform="matrix(1 0 0 1 479.3848 417.0097)"
@@ -209,7 +244,7 @@
               transform="matrix(1 0 0 1 621.999 227.2734)"
               class="st6 st7"
             >
-              985
+              {{ cvc || '123' }}
             </text>
             <g class="st8">
               <text
@@ -226,7 +261,7 @@
               transform="matrix(1 0 0 1 59.5073 228.6099)"
               class="st12 st13"
             >
-              John Doe
+              {{ name || 'John Doe' }}
             </text>
           </g>
         </svg>

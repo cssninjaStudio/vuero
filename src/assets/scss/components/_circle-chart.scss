@@ -13,24 +13,28 @@
   &.is-success {
     .circle-chart__circle {
       color: $success;
+      stroke: $success;
     }
   }
 
   &.is-info {
     .circle-chart__circle {
       color: $info;
+      stroke: $success;
     }
   }
 
   &.is-warning {
     .circle-chart__circle {
       color: $warning;
+      stroke: $success;
     }
   }
 
   &.is-danger {
     .circle-chart__circle {
       color: $danger;
+      stroke: $success;
     }
   }
 }
@@ -40,6 +44,7 @@
   transform: rotate(90deg);
   transform-origin: center;
   color: $primary;
+  stroke: $primary;
   animation-timing-function: cubic-bezier(0.78, 0.59, 0.19, 0.33);
 }
 
@@ -49,6 +54,7 @@
 
 .circle-chart__background {
   color: #efefef;
+  stroke: #efefef;
 }
 
 @keyframes circle-chart-fill {
@@ -97,12 +103,14 @@ body {
       &:not(.is-success):not(.is-info):not(.is-warning):not(.is-danger) {
         .circle-chart__circle {
           color: $accent;
+          stroke: $accent;
         }
       }
     }
 
     .circle-chart__background {
       color: darken($dark-sidebar, 2%);
+      stroke: darken($dark-sidebar, 2%);
     }
   }
 }

@@ -20,7 +20,7 @@ import {  options1,
           options20,  
           options21, 
           options22, 
-          options23 } from '/@src/composition/state/charts/generic/chartOptions'
+          options23 } from '/@src/composition/state/charts/apexcharts/demo/chartOptions'
 </script>
 
 <template>

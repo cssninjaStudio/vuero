@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { completionOptions } from '/@src/composition/state/charts/custom/taskCompletionChart'
-import { barOptions } from '/@src/composition/state/charts/custom/teamEfficiencyChart'
+import { completionOptions } from '/@src/composition/state/charts/apexcharts/examples/taskCompletionChart'
+import { barOptions } from '/@src/composition/state/charts/apexcharts/examples/teamEfficiencyChart'
 </script>
 
 <template>

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { expensesOptions } from '/@src/composition/state/charts/custom/expensesAreaChart'  
+import { expensesOptions } from '/@src/composition/state/charts/apexcharts/examples/expensesAreaChart'  
 </script>
 
 <template>

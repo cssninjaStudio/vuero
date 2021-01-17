@@ -1,8 +1,9 @@
 import moment from 'moment'
 
 import { themeColors } from '/@src/composition/state/themeColors'
-import { dataSeries } from '/@src/composition/state/charts/data/dataSeries'
-import { series } from '/@src/composition/state/charts/data/series'
+import * as formatters from '../formatters'
+import { dataSeries } from '../data/dataSeries'
+import { series } from '../data/series'
 
 export const options1 = {
   series: [
@@ -119,23 +120,17 @@ export const options2 = {
     y: [
       {
         title: {
-          formatter: function (val: string) {
-            return val + ' (mins)'
-          },
+          formatter: formatters.asMinutes,
         },
       },
       {
         title: {
-          formatter: function (val: string) {
-            return val + ' per session'
-          },
+          formatter: formatters.perSession,
         },
       },
       {
         title: {
-          formatter: function (val: string) {
-            return val
-          },
+          formatter: formatters.toString,
         },
       },
     ],
@@ -357,9 +352,7 @@ export const options7 = {
         colors: '#8e8da4',
       },
       offsetX: 0,
-      formatter: function (val: number) {
-        return (val / 1000000).toFixed(2)
-      },
+      formatter: formatters.toFixed(2, 1000000),
     },
     axisBorder: {
       show: false,
@@ -376,9 +369,7 @@ export const options7 = {
     labels: {
       rotate: -15,
       rotateAlways: true,
-      formatter: function (val: number, timestamp: string | number) {
-        return moment(new Date(timestamp)).format('DD MMM YYYY')
-      },
+      formatter: formatters.toDate('DD MMM YYYY'),
     },
   },
   colors: [themeColors.accent, themeColors.info, themeColors.green],
@@ -422,9 +413,7 @@ export const options8 = {
   },
   dataLabels: {
     enabled: true,
-    formatter: function (val: string) {
-      return val + '%'
-    },
+    formatter: formatters.asPercent,
     offsetY: -20,
     style: {
       fontSize: '12px',
@@ -478,9 +467,7 @@ export const options8 = {
     },
     labels: {
       show: false,
-      formatter: function (val: string) {
-        return val + '%'
-      },
+      formatter: formatters.asPercent,
     },
   },
   colors: [themeColors.green, themeColors.secondary, themeColors.orange],
@@ -554,9 +541,7 @@ export const options9 = {
   },
   tooltip: {
     y: {
-      formatter: function (val: string) {
-        return '$ ' + val + 'K'
-      },
+      formatter: formatters.asKDollar,
     },
   },
 }
@@ -1301,9 +1286,7 @@ export const options21 = {
           offsetY: 76,
           fontSize: '22px',
           color: undefined,
-          formatter: function (val: string) {
-            return val + '%'
-          },
+          formatter: formatters.asPercent,
         },
       },
     },

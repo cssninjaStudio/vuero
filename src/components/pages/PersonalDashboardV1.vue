@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { customersOptions } from '/@src/composition/state/charts/custom/customersChart'
-import { teamGaugeOptions } from '/@src/composition/state/charts/custom/teamGaugeChart'
-import { profitChartOptions } from '/@src/composition/state/charts/custom/profitChart'
+import { customersOptions } from '/@src/composition/state/charts/apexcharts/examples/customersChart'
+import { teamGaugeOptions } from '/@src/composition/state/charts/apexcharts/examples/teamGaugeChart'
+import { profitChartOptions } from '/@src/composition/state/charts/apexcharts/examples/profitChart'
 </script>
 
 <template>

@@ -1,11 +1,11 @@
 <script setup lang="ts">
 import { onMounted, reactive, ref } from 'vue'
-import { spark1, spark2, spark3, spark4 } from '/@src/composition/state/charts/custom/salesSparksChart'  
-import { revenueOptions } from '/@src/composition/state/charts/custom/revenueAreaChart'  
-import { salesRevenuesRadialOptions } from '/@src/composition/state/charts/custom/salesRevenueRadialChart'  
-import { radialGroup1Options, radialGroup2Options, radialGroup3Options } from '/@src/composition/state/charts/custom/salesRadialGroupChart'
-import { barData, barData2, salesBarOptions } from '/@src/composition/state/charts/custom/salesBarChart'  
-import { personalScoreGaugeData } from '/@src/composition/state/charts/bbCustom/personalScoreGauge'
+import { spark1, spark2, spark3, spark4 } from '/@src/composition/state/charts/apexcharts/examples/salesSparksChart'  
+import { revenueOptions } from '/@src/composition/state/charts/apexcharts/examples/revenueAreaChart'  
+import { salesRevenuesRadialOptions } from '/@src/composition/state/charts/apexcharts/examples/salesRevenueRadialChart'  
+import { radialGroup1Options, radialGroup2Options, radialGroup3Options } from '/@src/composition/state/charts/apexcharts/examples/salesRadialGroupChart'
+import { barData, barData2, salesBarOptions } from '/@src/composition/state/charts/apexcharts/examples/salesBarChart'  
+import { personalScoreGaugeOptions, onPersonalScoreGaugeReady } from '/@src/composition/state/charts/billboardjs/examples/personalScoreGauge'
 
 onMounted(async () => {
   setTimeout(() => {
@@ -214,10 +214,9 @@ onMounted(async () => {
             </div>
             <div class="gauge-wrap">
               <div id="gauge-holder" class="gauge-holder"></div>
-              <BillboardGaugeChart
-                :height="120"
-                :spacing="20"
-                :data="personalScoreGaugeData"
+              <BillboardJS
+                :options="personalScoreGaugeOptions"
+                @ready="onPersonalScoreGaugeReady"
               />
             </div>
             <div class="widget-content">

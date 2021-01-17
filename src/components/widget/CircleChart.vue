@@ -1,3 +1,14 @@
+<script setup lang="ts">
+import { defineProps } from 'vue'
+
+const props = defineProps({
+  value: {
+    type: Number,
+    required: true,
+  },
+})
+</script>
+
 <template>
   <svg
     class="circle-chart"
@@ -17,7 +28,7 @@
     <circle
       class="circle-chart__circle"
       stroke-width="5"
-      stroke-dasharray="75,100"
+      :stroke-dasharray="`${value},100`"
       stroke-linecap="round"
       fill="none"
       cx="50%"

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { interviewsOptions } from '/@src/composition/state/charts/custom/interviewsChart'
+import { interviewsOptions } from '/@src/composition/state/charts/apexcharts/examples/interviewsChart'
 </script>
 
 <template>

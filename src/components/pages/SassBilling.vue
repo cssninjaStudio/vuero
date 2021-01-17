@@ -1,3 +1,15 @@
+<script setup lang="ts">
+import { reactive, ref } from 'vue'
+
+const isCardFlipped = ref(false)
+const cardInfo = reactive({
+  number: '',
+  name: '',
+  cvc: '',
+  expiry: '',
+})
+</script>
+
 <template>
   <!--SaaS Billing-->
   <div class="saas-billing-wrapper">
@@ -283,7 +295,14 @@
             <span id="generatecard">Randomize</span>
           </div>
 
-          <CreditCard />
+          <CreditCard
+            :flipped="isCardFlipped"
+            :name="cardInfo.name"
+            :number="cardInfo.number"
+            :cvc="cardInfo.cvc"
+            :expiry="cardInfo.expiry"
+            @flip="isCardFlipped = !isCardFlipped"
+          />
 
           <div class="form-container">
             <div class="columns is-multiline">
@@ -293,10 +312,12 @@
                   <div class="control">
                     <input
                       id="name"
+                      v-model="cardInfo.name"
                       class="input"
                       maxlength="20"
                       type="text"
                       placeholder="The name on the card"
+                      @focus="isCardFlipped = false"
                     />
                   </div>
                 </div>
@@ -307,10 +328,12 @@
                   <div class="control">
                     <input
                       id="cardnumber"
+                      v-model="cardInfo.number"
                       class="input"
                       type="text"
                       pattern="[0-9]*"
                       placeholder="Credit card number"
+                      @focus="isCardFlipped = false"
                     />
                     <svg
                       id="ccicon"
@@ -331,10 +354,12 @@
                   <div class="control">
                     <input
                       id="expirationdate"
+                      v-model="cardInfo.expiry"
                       class="input"
                       type="text"
                       pattern="[0-9]*"
                       placeholder="MM / YY"
+                      @focus="isCardFlipped = false"
                     />
                   </div>
                 </div>
@@ -345,10 +370,12 @@
                   <div class="control">
                     <input
                       id="securitycode"
+                      v-model="cardInfo.cvc"
                       class="input"
                       type="text"
                       pattern="[0-9]*"
                       placeholder="3 digits code"
+                      @focus="isCardFlipped = true"
                     />
                   </div>
                 </div>
