@@ -1,6 +1,9 @@
 <script setup lang="ts">
+import { ref } from 'vue'
 import { completionOptions } from '/@src/composition/state/charts/apexcharts/examples/taskCompletionChart'
 import { barOptions } from '/@src/composition/state/charts/apexcharts/examples/teamEfficiencyChart'
+
+const acheck1 = ref(true)
 </script>
 
 <template>
@@ -413,7 +416,7 @@ import { barOptions } from '/@src/composition/state/charts/apexcharts/examples/t
               <!-- List item -->
               <div class="list-item">
                 <!-- Animated checkbox-->
-                <div class="animated-checkbox">
+                <!--div class="animated-checkbox">
                   <input type="checkbox" />
                   <div class="checkmark-wrap">
                     <div class="shadow-circle"></div>
@@ -436,7 +439,8 @@ import { barOptions } from '/@src/composition/state/charts/apexcharts/examples/t
                       />
                     </svg>
                   </div>
-                </div>
+                </div-->
+                <AnimatedCheckbox v-model:checked="acheck1" />
                 <div class="item-meta">
                   <span class="dark-inverted">Call Mr. Markstrom</span>
                   <span>Review the project initial wireframes</span>
