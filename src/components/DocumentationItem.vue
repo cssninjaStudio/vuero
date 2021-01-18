@@ -50,13 +50,30 @@ const displayCode = ref(false)
 
 
 <style lang="scss" scoped>
-::v-deep(h3) {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.25rem;
-  font-weight: 300;
-  margin-bottom: 0.75rem;
-  color: #283252;
-  line-height: 1.125;
+@import '../assets/scss/abstracts/_variables.scss';
+@import '../assets/scss/abstracts/_mixins.scss';
+
+.demo-card {
+  .demo-title {
+    ::v-deep(h3) {
+      font-family: $font-alt;
+      font-size: 1.25rem;
+      font-weight: 300;
+      margin-bottom: 0.75rem;
+      color: $dark-text;
+      line-height: 1.125;
+    }
+  }
+}
+
+.is-dark {
+  .demo-card {
+    .demo-title {
+      ::v-deep(h3) {
+        color: $dark-dark-text;
+      }
+    }
+  }
 }
 
 .demo-code-wrapper {
