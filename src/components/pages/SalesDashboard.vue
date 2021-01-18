@@ -244,7 +244,7 @@ onMounted(async () => {
             <div class="widget-toolbar">
               <div class="left">
                 <a class="action-icon">
-                  <Icon icon="feather:chevron-left" />
+                  <i class="iconify" data-icon="feather:chevron-left"></i>
                 </a>
               </div>
               <div class="center">
@@ -252,7 +252,7 @@ onMounted(async () => {
               </div>
               <div class="right">
                 <a class="action-icon">
-                  <Icon icon="feather:chevron-right" />
+                  <i class="iconify" data-icon="feather:chevron-right"></i>
                 </a>
               </div>
             </div>

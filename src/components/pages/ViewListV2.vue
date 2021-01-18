@@ -58,7 +58,7 @@ const props = defineProps({
                 </span>
               </h3>
               <p>
-                <Icon icon="feather:map-pin" />
+                <i class="iconify" data-icon="feather:map-pin"></i>
                 <span data-filter-match
                   >1396 Redmond Street, Apartment 12, Suite H 102, Los Angeles,
                   CA</span
@@ -120,7 +120,7 @@ const props = defineProps({
                 </span>
               </h3>
               <p>
-                <Icon icon="feather:map-pin" />
+                <i class="iconify" data-icon="feather:map-pin"></i>
                 <span data-filter-match
                   >24 Mulberry Street, Suite 43, New York, NY</span
                 >
@@ -173,7 +173,7 @@ const props = defineProps({
                 </span>
               </h3>
               <p>
-                <Icon icon="feather:map-pin" />
+                <i class="iconify" data-icon="feather:map-pin"></i>
                 <span data-filter-match
                   >62 John Walberg Avenue, Apartment 10, Suite 24, Los Angeles,
                   CA</span
@@ -235,7 +235,7 @@ const props = defineProps({
                 </span>
               </h3>
               <p>
-                <Icon icon="feather:map-pin" />
+                <i class="iconify" data-icon="feather:map-pin"></i>
                 <span data-filter-match
                   >48 Manhattan Avenue, Suite G12, New York, NY</span
                 >
@@ -296,7 +296,7 @@ const props = defineProps({
                 </span>
               </h3>
               <p>
-                <Icon icon="feather:map-pin" />
+                <i class="iconify" data-icon="feather:map-pin"></i>
                 <span data-filter-match
                   >12 Charity Street, Apartment 49, Brooklynn, NY</span
                 >
@@ -349,7 +349,7 @@ const props = defineProps({
                 </span>
               </h3>
               <p>
-                <Icon icon="feather:map-pin" />
+                <i class="iconify" data-icon="feather:map-pin"></i>
                 <span data-filter-match
                   >23 Bakery Street, Suite 121, New York, NY</span
                 >
@@ -410,7 +410,7 @@ const props = defineProps({
                 </span>
               </h3>
               <p>
-                <Icon icon="feather:map-pin" />
+                <i class="iconify" data-icon="feather:map-pin"></i>
                 <span data-filter-match
                   >1028 Pasadena Avenue, Suite F 24, Los Angeles, CA</span
                 >
@@ -471,7 +471,7 @@ const props = defineProps({
                 </span>
               </h3>
               <p>
-                <Icon icon="feather:map-pin" />
+                <i class="iconify" data-icon="feather:map-pin"></i>
                 <span data-filter-match
                   >54 Church Street, Apartment 2, New York, NY</span
                 >
@@ -528,7 +528,7 @@ const props = defineProps({
                 </span>
               </h3>
               <p>
-                <Icon icon="feather:map-pin" />
+                <i class="iconify" data-icon="feather:map-pin"></i>
                 <span data-filter-match
                   >112 Old City District, Apartment 5 Suite 42, New York,
                   NY</span
@@ -586,7 +586,7 @@ const props = defineProps({
                 </span>
               </h3>
               <p>
-                <Icon icon="feather:map-pin" />
+                <i class="iconify" data-icon="feather:map-pin"></i>
                 <span data-filter-match
                   >51 St Leonard Street, Suite 23, New York, NY</span
                 >

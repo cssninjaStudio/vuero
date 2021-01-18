@@ -72,7 +72,7 @@ useTitle('Messaging chat - Admin - Vuero')
                     <span>To:</span>
                   </div>
                   <div class="hide">
-                    <Icon icon="feather:x" />
+                    <i class="iconify" data-icon="feather:x"></i>
                   </div>
                 </div>
               </div>
@@ -293,13 +293,13 @@ useTitle('Messaging chat - Admin - Vuero')
                   >
                     <div>
                       <div class="button" aria-haspopup="true" @click="open">
-                        <Icon icon="feather:plus" />
+                        <i class="iconify" data-icon="feather:plus"></i>
                       </div>
                     </div>
                     <div class="dropdown-menu" role="menu">
                       <div class="dropdown-content">
                         <a class="dropdown-item">
-                          <Icon icon="feather:video" />
+                          <i class="iconify" data-icon="feather:video"></i>
                           <div class="meta">
                             <span>Video</span>
                             <span>Embed a video</span>
@@ -309,7 +309,7 @@ useTitle('Messaging chat - Admin - Vuero')
                           href="#"
                           class="dropdown-item kill-drop h-modal-trigger"
                         >
-                          <Icon icon="feather:image" />
+                          <i class="iconify" data-icon="feather:image"></i>
                           <div class="meta">
                             <span>Images</span>
                             <span>Upload pictures</span>
@@ -319,7 +319,7 @@ useTitle('Messaging chat - Admin - Vuero')
                           href="#"
                           class="dropdown-item kill-drop h-modal-trigger"
                         >
-                          <Icon icon="feather:link" />
+                          <i class="iconify" data-icon="feather:link"></i>
                           <div class="meta">
                             <span>Link</span>
                             <span>Post a link</span>
@@ -330,7 +330,7 @@ useTitle('Messaging chat - Admin - Vuero')
                           href="#"
                           class="dropdown-item kill-drop h-modal-trigger"
                         >
-                          <Icon icon="feather:file" />
+                          <i class="iconify" data-icon="feather:file"></i>
                           <div class="meta">
                             <span>File</span>
                             <span>Upload a file</span>
@@ -342,7 +342,7 @@ useTitle('Messaging chat - Admin - Vuero')
                 </div>
                 <div class="add-emoji">
                   <div class="button">
-                    <Icon icon="feather:smile" />
+                    <i class="iconify" data-icon="feather:smile"></i>
                   </div>
                 </div>
                 <input
@@ -391,7 +391,7 @@ useTitle('Messaging chat - Admin - Vuero')
     </div>
 
     <a class="chat-side-fab">
-      <Icon icon="feather:chevron-left" />
+      <i class="iconify" data-icon="feather:chevron-left"></i>
     </a>
   </DefaultLayout>
 </template>

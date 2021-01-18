@@ -38,7 +38,7 @@ useTitle('List View 1 - WebApp - Vuero')
                 data-filter-target=".list-view-item"
               />
               <div class="form-icon">
-                <Icon icon="feather:search" />
+                <i class="iconify" data-icon="feather:search"></i>
               </div>
             </div>
 

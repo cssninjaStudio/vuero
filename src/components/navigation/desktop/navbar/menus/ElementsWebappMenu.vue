@@ -40,21 +40,21 @@ const activeTab = ref<'basic' | 'forms'>('basic')
                     <RouterLink :to="{ name: 'elements' }">
                       <i class="lnil lnil-home"></i>
                       <span>Elements Hub</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-colors' }">
                       <i class="lnil lnil-color-palette"></i>
                       <span>Colors</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-helpers' }">
                       <i class="lnil lnil-help"></i>
                       <span>Helpers</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                 </ul>
@@ -65,25 +65,25 @@ const activeTab = ref<'basic' | 'forms'>('basic')
                   <li>
                     <RouterLink :to="{ name: 'elements-icons-lnil' }">
                       <span>Line Icons Light</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-icons-lnir' }">
                       <span>Line Icons Regular</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-icons-fa' }">
                       <span>Font Awesome 5</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-icons-feather' }">
                       <span>Feather Icons</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                 </ul>
@@ -94,25 +94,25 @@ const activeTab = ref<'basic' | 'forms'>('basic')
                   <li>
                     <RouterLink :to="{ name: 'elements-buttons' }">
                       <span>Buttons</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-blocks' }">
                       <span>Blocks</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-content' }">
                       <span>Content</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-tags' }">
                       <span>Tags</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                 </ul>
@@ -123,31 +123,31 @@ const activeTab = ref<'basic' | 'forms'>('basic')
                   <li>
                     <RouterLink :to="{ name: 'elements-cards-basic' }">
                       <span>Basic Cards</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-cards-advanced' }">
                       <span>Advanced Cards</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-cards-bulma' }">
                       <span>Bulma Cards</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-table' }">
                       <span>Table</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-tooltips' }">
                       <span>Tooltips</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                 </ul>
@@ -171,19 +171,19 @@ const activeTab = ref<'basic' | 'forms'>('basic')
                   <li>
                     <RouterLink :to="{ name: 'elements-forms-inputs' }">
                       <span>Inputs</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-forms-addons' }">
                       <span>Input Addons</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-forms-textarea' }">
                       <span>Textarea</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                 </ul>
@@ -194,19 +194,19 @@ const activeTab = ref<'basic' | 'forms'>('basic')
                   <li>
                     <RouterLink :to="{ name: 'elements-forms-selects' }">
                       <span>Regular</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-forms-custom' }">
                       <span>Custom</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-forms-file' }">
                       <span>File Input</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                 </ul>
@@ -217,19 +217,19 @@ const activeTab = ref<'basic' | 'forms'>('basic')
                   <li>
                     <RouterLink :to="{ name: 'elements-forms-checkboxes' }">
                       <span>Checkboxes</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-forms-radios' }">
                       <span>Radio Buttons</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-forms-switch' }">
                       <span>Switches</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                 </ul>

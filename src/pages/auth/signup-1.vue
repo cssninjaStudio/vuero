@@ -19,7 +19,7 @@ useTitle('Auth Signup 1 - Vuero')
         <div class="steps-container">
           <!--div class="step-icon is-active" data-progress="10" data-step="signup-step-1">
                 <div class="inner">
-                    <Icon icon="feather:home" />
+                    <i class="iconify" data-icon="feather:home"></i>
                 </div>
                 <span class="step-label">Sign up</span>
             </div-->
@@ -29,7 +29,7 @@ useTitle('Auth Signup 1 - Vuero')
             data-step="signup-step-2"
           >
             <div class="inner">
-              <Icon icon="feather:user" />
+              <i class="iconify" data-icon="feather:user"></i>
             </div>
             <span class="step-label">Profile Pic</span>
           </div>
@@ -39,13 +39,13 @@ useTitle('Auth Signup 1 - Vuero')
             data-step="signup-step-3"
           >
             <div class="inner">
-              <Icon icon="feather:shield" />
+              <i class="iconify" data-icon="feather:shield"></i>
             </div>
             <span class="step-label">Account</span>
           </div>
           <div class="step-icon is-inactive" data-progress="98">
             <div class="inner">
-              <Icon icon="feather:check" />
+              <i class="iconify" data-icon="feather:check"></i>
             </div>
             <span class="step-label">Done</span>
           </div>
@@ -86,12 +86,12 @@ useTitle('Auth Signup 1 - Vuero')
                           <div class="auth-label">First Name</div>
                           <div class="validation-icon is-success">
                             <div class="icon-wrapper">
-                              <Icon icon="feather:check" />
+                              <i class="iconify" data-icon="feather:check"></i>
                             </div>
                           </div>
                           <div class="validation-icon is-error">
                             <div class="icon-wrapper">
-                              <Icon icon="feather:x" />
+                              <i class="iconify" data-icon="feather:x"></i>
                             </div>
                           </div>
                         </div>
@@ -105,12 +105,12 @@ useTitle('Auth Signup 1 - Vuero')
                           <div class="auth-label">Last Name</div>
                           <div class="validation-icon is-success">
                             <div class="icon-wrapper">
-                              <Icon icon="feather:check" />
+                              <i class="iconify" data-icon="feather:check"></i>
                             </div>
                           </div>
                           <div class="validation-icon is-error">
                             <div class="icon-wrapper">
-                              <Icon icon="feather:x" />
+                              <i class="iconify" data-icon="feather:x"></i>
                             </div>
                           </div>
                         </div>
@@ -124,12 +124,12 @@ useTitle('Auth Signup 1 - Vuero')
                           <div class="auth-label">Email Address</div>
                           <div class="validation-icon is-success">
                             <div class="icon-wrapper">
-                              <Icon icon="feather:check" />
+                              <i class="iconify" data-icon="feather:check"></i>
                             </div>
                           </div>
                           <div class="validation-icon is-error">
                             <div class="icon-wrapper">
-                              <Icon icon="feather:x" />
+                              <i class="iconify" data-icon="feather:x"></i>
                             </div>
                           </div>
                         </div>
@@ -206,7 +206,7 @@ useTitle('Auth Signup 1 - Vuero')
                         role="button"
                         data-modal="upload-modal"
                       >
-                        <Icon icon="feather:plus" />
+                        <i class="iconify" data-icon="feather:plus"></i>
                       </div>
                     </div>
                   </div>
@@ -397,12 +397,12 @@ useTitle('Auth Signup 1 - Vuero')
                         <div class="auth-label">Username</div>
                         <div class="validation-icon is-success">
                           <div class="icon-wrapper">
-                            <Icon icon="feather:check" />
+                            <i class="iconify" data-icon="feather:check"></i>
                           </div>
                         </div>
                         <div class="validation-icon is-error">
                           <div class="icon-wrapper">
-                            <Icon icon="feather:x" />
+                            <i class="iconify" data-icon="feather:x"></i>
                           </div>
                         </div>
                       </div>
@@ -416,12 +416,12 @@ useTitle('Auth Signup 1 - Vuero')
                         <div class="auth-label">Password</div>
                         <div class="validation-icon is-success">
                           <div class="icon-wrapper">
-                            <Icon icon="feather:check" />
+                            <i class="iconify" data-icon="feather:check"></i>
                           </div>
                         </div>
                         <div class="validation-icon is-error">
                           <div class="icon-wrapper">
-                            <Icon icon="feather:x" />
+                            <i class="iconify" data-icon="feather:x"></i>
                           </div>
                         </div>
                       </div>
@@ -435,12 +435,12 @@ useTitle('Auth Signup 1 - Vuero')
                         <div class="auth-label">Confirm Password</div>
                         <div class="validation-icon is-success">
                           <div class="icon-wrapper">
-                            <Icon icon="feather:check" />
+                            <i class="iconify" data-icon="feather:check"></i>
                           </div>
                         </div>
                         <div class="validation-icon is-error">
                           <div class="icon-wrapper">
-                            <Icon icon="feather:x" />
+                            <i class="iconify" data-icon="feather:x"></i>
                           </div>
                         </div>
                       </div>

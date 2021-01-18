@@ -18,7 +18,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
       >
         <span>Components</span>
         <span class="caret">
-          <Icon icon="feather:chevron-down" />
+          <i class="iconify" data-icon="feather:chevron-down"></i>
         </span>
       </button>
     </div>
@@ -54,7 +54,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
         <div class="content-wrap is-hidden">
           <button class="button is-circle back-button">
             <span class="icon is-small">
-              <Icon icon="feather:arrow-left" />
+              <i class="iconify" data-icon="feather:arrow-left"></i>
             </span>
           </button>
 
@@ -66,7 +66,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
             <div class="column is-4">
               <div class="dropdown-item-group">
                 <h4 class="column-heading is-info">
-                  <Icon icon="feather:circle" />
+                  <i class="iconify" data-icon="feather:circle"></i>
                   <span>General</span>
                 </h4>
 
@@ -133,7 +133,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
             <div class="column is-4">
               <div class="dropdown-item-group">
                 <h4 class="column-heading is-green">
-                  <Icon icon="feather:circle" />
+                  <i class="iconify" data-icon="feather:circle"></i>
                   <span>Interaction</span>
                 </h4>
 
@@ -200,7 +200,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
             <div class="column is-4">
               <div class="dropdown-item-group">
                 <h4 class="column-heading is-orange">
-                  <Icon icon="feather:circle" />
+                  <i class="iconify" data-icon="feather:circle"></i>
                   <span>Presentation</span>
                 </h4>
 
@@ -306,7 +306,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
             <div class="column is-4">
               <div class="dropdown-item-group">
                 <h4 class="column-heading is-purple">
-                  <Icon icon="feather:circle" />
+                  <i class="iconify" data-icon="feather:circle"></i>
                   <span>Plugins</span>
                 </h4>
 
@@ -363,7 +363,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
             <div class="column is-4">
               <div class="dropdown-item-group">
                 <h4 class="column-heading is-secondary">
-                  <Icon icon="feather:circle" />
+                  <i class="iconify" data-icon="feather:circle"></i>
                   <span>Plugins</span>
                 </h4>
 
@@ -420,7 +420,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
             <div class="column is-4">
               <div class="dropdown-item-group">
                 <h4 class="column-heading is-success">
-                  <Icon icon="feather:circle" />
+                  <i class="iconify" data-icon="feather:circle"></i>
                   <span>Plugins</span>
                 </h4>
 

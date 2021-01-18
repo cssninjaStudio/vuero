@@ -99,10 +99,10 @@ watch(
             />
             <span class="toggler">
               <span class="dark">
-                <Icon icon="feather:moon" />
+                <i class="iconify" data-icon="feather:moon"></i>
               </span>
               <span class="light">
-                <Icon icon="feather:sun" />
+                <i class="iconify" data-icon="feather:sun"></i>
               </span>
             </span>
           </label>

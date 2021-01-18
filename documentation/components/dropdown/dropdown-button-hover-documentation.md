@@ -1,16 +1,24 @@
-### Context Menu
+### Hover buttons
 
-Vuero `BaseDropdown` can also be displayed as a context menu holding a single icon. The icon can be whatever you want. This dropdown will have the specific `dots` attribute.  
+Vuero `BaseDropdown` can also be opened on hover action or any custom event.  
 _Please refer to the markup for more details about usage._
 
 <!--code-->
 
 ```vue {3-7}
 <template>
-  <BaseDropdown dots>
-    <template #button="{ open }">
-      <button class="is-trigger" @click="open" >
-        <i class="iconify" data-icon="feather:more-vertical"></i>
+  <BaseDropdown>
+    <template #button="{ open, close, toggle, isOpen }">
+      <button
+        class="is-trigger button"
+        @mouseenter="open"
+        @touch="toggle"
+      >
+        <span>Hover me!</span>
+        <span class="icon is-small">
+          <Icon v-if="!isOpen" icon="fa:angle-down" />
+          <Icon v-else icon="fa:angle-up" />
+        </span>
       </button>
     </template>
 
@@ -28,16 +36,23 @@ _Please refer to the markup for more details about usage._
 
 <!--/code-->
 
-
 <!--example-->
 
 <div class="field is-grouped">
   <div class="control">
-    <BaseDropdown title="Primary button" dots>
-      <template #button="slotProps">
-        <a class="is-trigger" @click="slotProps.open" >
-          <i class="iconify" data-icon="feather:more-horizontal"></i>
-        </a>
+    <BaseDropdown>
+      <template #button="{ open, close, toggle, isOpen }">
+        <button
+          class="is-trigger button"
+          @mouseenter="open"
+          @touch="toggle"
+        >
+          <span>Hover me!</span>
+          <span class="icon is-small">
+            <Icon v-if="!isOpen" icon="fa:angle-down" />
+            <Icon v-else icon="fa:angle-up" />
+          </span>
+        </button>
       </template>
       <template #content>
         <a href="#" class="dropdown-item"> Dropdown item </a>
@@ -51,29 +66,18 @@ _Please refer to the markup for more details about usage._
   </div>
 
   <div class="control">
-    <BaseDropdown title="Primary button" dots>
-      <template #button="slotProps">
-        <a class="is-trigger" @click="slotProps.open" >
-          <i class="iconify" data-icon="feather:more-vertical"></i>
-        </a>
-      </template>
-      <template #content>
-        <a href="#" class="dropdown-item"> Dropdown item </a>
-        <a href="#" class="dropdown-item"> Other dropdown item </a>
-        <a href="#" class="dropdown-item is-active"> Active dropdown item </a>
-        <a href="#" class="dropdown-item"> Other dropdown item </a>
-        <hr class="dropdown-divider" />
-        <a href="#" class="dropdown-item"> With a divider </a>
-      </template>
-    </BaseDropdown>
-  </div>
-
-  <div class="control">
-    <BaseDropdown title="Primary button" dots up>
-      <template #button="slotProps">
-        <a class="is-trigger" @click="slotProps.open" >
-          <i class="iconify" data-icon="feather:help-circle"></i>
-        </a>
+    <BaseDropdown title="Primary button" up>
+      <template #button="{ open, close, toggle, isOpen }">
+        <button
+          class="is-trigger button"
+          @mouseenter="open"
+          @touch="toggle"
+        >
+          <span class="icon is-small">
+            <i class="iconify" data-icon="feather:help-circle"></i>
+          </span>
+          <span>Hover me!</span>
+        </button>
       </template>
       <template #content>
         <a href="#" class="dropdown-item"> Dropdown item </a>
@@ -86,6 +90,5 @@ _Please refer to the markup for more details about usage._
     </BaseDropdown>
   </div>
 </div>
-
 
 <!--/example-->

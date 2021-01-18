@@ -97,7 +97,7 @@ useTitle('Components - Loader - Vuero')
                 <li>
                   <RouterLink :to="{ name: 'index' }">
                     <span class="icon is-small is-solo">
-                      <Icon icon="feather:home" />
+                      <i class="iconify" data-icon="feather:home"></i>
                     </span>
                   </RouterLink>
                 </li>
@@ -141,8 +141,8 @@ useTitle('Components - Loader - Vuero')
                     </button>
 
                     <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                      <i class="iconify open" data-icon="feather:code"></i>
+                      <i class="iconify close" data-icon="feather:x"></i>
                     </a>
                     <div class="highlight highlight-block">
                       <pre><code class="code-highlight">
@@ -210,7 +210,10 @@ document
                             aria-haspopup="true"
                             @click="open1"
                           >
-                            <Icon icon="feather:more-vertical" />
+                            <i
+                              class="iconify"
+                              data-icon="feather:more-vertical"
+                            ></i>
                           </div>
                           <div class="dropdown-menu" role="menu">
                             <div class="dropdown-content">
@@ -309,7 +312,10 @@ document
                             aria-haspopup="true"
                             @click="open2"
                           >
-                            <Icon icon="feather:more-vertical" />
+                            <i
+                              class="iconify"
+                              data-icon="feather:more-vertical"
+                            ></i>
                           </div>
                           <div class="dropdown-menu" role="menu">
                             <div class="dropdown-content">
@@ -408,7 +414,10 @@ document
                             aria-haspopup="true"
                             @click="open3"
                           >
-                            <Icon icon="feather:more-vertical" />
+                            <i
+                              class="iconify"
+                              data-icon="feather:more-vertical"
+                            ></i>
                           </div>
                           <div class="dropdown-menu" role="menu">
                             <div class="dropdown-content">
@@ -507,7 +516,10 @@ document
                             aria-haspopup="true"
                             @click="open4"
                           >
-                            <Icon icon="feather:more-vertical" />
+                            <i
+                              class="iconify"
+                              data-icon="feather:more-vertical"
+                            ></i>
                           </div>
                           <div class="dropdown-menu" role="menu">
                             <div class="dropdown-content">

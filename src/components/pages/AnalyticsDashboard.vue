@@ -203,11 +203,11 @@ import { optionsCircle } from '/@src/composition/state/charts/apexcharts/example
               </div>
               <div class="contact-info">
                 <span>
-                  <Icon icon="feather:map-pin" />
+                  <i class="iconify" data-icon="feather:map-pin"></i>
                   <span>Los Angeles, CA</span>
                 </span>
                 <span>
-                  <Icon icon="feather:phone" />
+                  <i class="iconify" data-icon="feather:phone"></i>
                   <span>+1 444-5156</span>
                 </span>
               </div>
@@ -221,7 +221,7 @@ import { optionsCircle } from '/@src/composition/state/charts/apexcharts/example
           <div class="widget-toolbar">
             <div class="left">
               <a class="action-icon">
-                <Icon icon="feather:chevron-left" />
+                <i class="iconify" data-icon="feather:chevron-left"></i>
               </a>
             </div>
             <div class="center">
@@ -229,7 +229,7 @@ import { optionsCircle } from '/@src/composition/state/charts/apexcharts/example
             </div>
             <div class="right">
               <a class="action-icon">
-                <Icon icon="feather:chevron-right" />
+                <i class="iconify" data-icon="feather:chevron-right"></i>
               </a>
             </div>
           </div>

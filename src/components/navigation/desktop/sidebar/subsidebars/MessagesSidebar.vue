@@ -38,7 +38,7 @@ import {
           id="start-conversation"
           class="button h-button is-primary is-raised is-rounded is-fullwidth"
         >
-          <Icon icon="feather:plus" />
+          <i class="iconify" data-icon="feather:plus"></i>
           <span>New Conversation</span>
         </button>
       </div>

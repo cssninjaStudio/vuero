@@ -51,26 +51,30 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
               <RouterLink
                 :to="{ name: 'elements-icons-lnil' }"
                 class="is-submenu"
-                ><Icon icon="feather:circle" />Line Icons Light</RouterLink
+                ><i class="iconify" data-icon="feather:circle"></i>Line Icons
+                Light</RouterLink
               >
             </li>
             <li>
               <RouterLink
                 :to="{ name: 'elements-icons-lnir' }"
                 class="is-submenu"
-                ><Icon icon="feather:circle" />Line Icons Regular</RouterLink
+                ><i class="iconify" data-icon="feather:circle"></i>Line Icons
+                Regular</RouterLink
               >
             </li>
             <li>
               <RouterLink :to="{ name: 'elements-icons-fa' }" class="is-submenu"
-                ><Icon icon="feather:circle" />Font Awesome 5</RouterLink
+                ><i class="iconify" data-icon="feather:circle"></i>Font Awesome
+                5</RouterLink
               >
             </li>
             <li>
               <RouterLink
                 :to="{ name: 'elements-icons-feather' }"
                 class="is-submenu"
-                ><Icon icon="feather:circle" />Feather Icons</RouterLink
+                ><i class="iconify" data-icon="feather:circle"></i>Feather
+                Icons</RouterLink
               >
             </li>
           </ul>
@@ -86,21 +90,24 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
               <RouterLink
                 :to="{ name: 'elements-cards-basic' }"
                 class="is-submenu"
-                ><Icon icon="feather:circle" />Basic Cards</RouterLink
+                ><i class="iconify" data-icon="feather:circle"></i>Basic
+                Cards</RouterLink
               >
             </li>
             <li>
               <RouterLink
                 :to="{ name: 'elements-cards-advanced' }"
                 class="is-submenu"
-                ><Icon icon="feather:circle" />Advanced Cards</RouterLink
+                ><i class="iconify" data-icon="feather:circle"></i>Advanced
+                Cards</RouterLink
               >
             </li>
             <li>
               <RouterLink
                 :to="{ name: 'elements-cards-bulma' }"
                 class="is-submenu"
-                ><Icon icon="feather:circle" />Bulma Cards</RouterLink
+                ><i class="iconify" data-icon="feather:circle"></i>Bulma
+                Cards</RouterLink
               >
             </li>
           </ul>
@@ -123,42 +130,48 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
               <RouterLink
                 :to="{ name: 'elements-forms-inputs' }"
                 class="is-submenu"
-                ><Icon icon="feather:circle" />Inputs</RouterLink
+                ><i class="iconify" data-icon="feather:circle"></i
+                >Inputs</RouterLink
               >
             </li>
             <li>
               <RouterLink
                 :to="{ name: 'elements-forms-addons' }"
                 class="is-submenu"
-                ><Icon icon="feather:circle" />Input Addons</RouterLink
+                ><i class="iconify" data-icon="feather:circle"></i>Input
+                Addons</RouterLink
               >
             </li>
             <li>
               <RouterLink
                 :to="{ name: 'elements-forms-textarea' }"
                 class="is-submenu"
-                ><Icon icon="feather:circle" />Textarea</RouterLink
+                ><i class="iconify" data-icon="feather:circle"></i
+                >Textarea</RouterLink
               >
             </li>
             <li>
               <RouterLink
                 :to="{ name: 'elements-forms-selects' }"
                 class="is-submenu"
-                ><Icon icon="feather:circle" />Selects</RouterLink
+                ><i class="iconify" data-icon="feather:circle"></i
+                >Selects</RouterLink
               >
             </li>
             <li>
               <RouterLink
                 :to="{ name: 'elements-forms-custom' }"
                 class="is-submenu"
-                ><Icon icon="feather:circle" />Custom</RouterLink
+                ><i class="iconify" data-icon="feather:circle"></i
+                >Custom</RouterLink
               >
             </li>
             <li>
               <RouterLink
                 :to="{ name: 'elements-forms-file' }"
                 class="is-submenu"
-                ><Icon icon="feather:circle" />File Input</RouterLink
+                ><i class="iconify" data-icon="feather:circle"></i>File
+                Input</RouterLink
               >
             </li>
           </ul>
@@ -174,21 +187,24 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
               <RouterLink
                 :to="{ name: 'elements-forms-checkboxes' }"
                 class="is-submenu"
-                ><Icon icon="feather:circle" />Checkboxes</RouterLink
+                ><i class="iconify" data-icon="feather:circle"></i
+                >Checkboxes</RouterLink
               >
             </li>
             <li>
               <RouterLink
                 :to="{ name: 'elements-forms-radios' }"
                 class="is-submenu"
-                ><Icon icon="feather:circle" />Radios</RouterLink
+                ><i class="iconify" data-icon="feather:circle"></i
+                >Radios</RouterLink
               >
             </li>
             <li>
               <RouterLink
                 :to="{ name: 'elements-forms-switch' }"
                 class="is-submenu"
-                ><Icon icon="feather:circle" />Switches</RouterLink
+                ><i class="iconify" data-icon="feather:circle"></i
+                >Switches</RouterLink
               >
             </li>
           </ul>

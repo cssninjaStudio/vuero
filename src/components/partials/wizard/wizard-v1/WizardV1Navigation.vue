@@ -32,7 +32,7 @@ const {
       class="dropdown wizard-dropdown dropdown-trigger"
     >
       <div class="is-trigger" @click="open1">
-        <Icon icon="feather:chevron-down" />
+        <i class="iconify" data-icon="feather:chevron-down"></i>
       </div>
       <div id="wizard-navigation-dropdown" class="dropdown-menu" role="menu">
         <div class="dropdown-content">
@@ -120,7 +120,7 @@ const {
             @error="$event.target.src = 'https://via.placeholder.com/150x150'"
           />
         </div>
-        <Icon icon="feather:chevron-down" />
+        <i class="iconify" data-icon="feather:chevron-down"></i>
       </div>
       <div class="dropdown-menu" role="menu">
         <div class="dropdown-content">
@@ -128,24 +128,24 @@ const {
             <p class="is-size-7 dark-inverted">Erik Kovalsky</p>
           </div>
           <a href="#" class="dropdown-item">
-            <Icon icon="feather:user" />
+            <i class="iconify" data-icon="feather:user"></i>
             <span>Profile</span>
           </a>
           <a class="dropdown-item">
-            <Icon icon="feather:edit-2" />
+            <i class="iconify" data-icon="feather:edit-2"></i>
             <span>Edit Profile</span>
           </a>
           <a class="dropdown-item">
-            <Icon icon="feather:box" />
+            <i class="iconify" data-icon="feather:box"></i>
             <span>Projects</span>
           </a>
           <a class="dropdown-item">
-            <Icon icon="feather:settings" />
+            <i class="iconify" data-icon="feather:settings"></i>
             <span>Settings</span>
           </a>
           <hr class="dropdown-divider" />
           <a href="#" class="dropdown-item">
-            <Icon icon="feather:log-out" />
+            <i class="iconify" data-icon="feather:log-out"></i>
             <span>Sign Out</span>
           </a>
         </div>

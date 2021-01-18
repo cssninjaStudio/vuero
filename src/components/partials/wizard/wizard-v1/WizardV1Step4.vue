@@ -37,7 +37,7 @@
               placeholder="Search teammates..."
             />
             <div class="form-icon">
-              <Icon icon="feather:search" />
+              <i class="iconify" data-icon="feather:search"></i>
             </div>
           </div>
         </div>

@@ -139,7 +139,10 @@
                                 </div>
                               </div>
                               <div class="box-chevron">
-                                <Icon icon="feather:chevron-down" />
+                                <i
+                                  class="iconify"
+                                  data-icon="feather:chevron-down"
+                                ></i>
                               </div>
                               <div class="box-dropdown">
                                 <div class="dropdown-inner has-slimscroll">
@@ -153,7 +156,10 @@
                                       </span>
                                       <span class="item-name">English</span>
                                       <span class="checkmark">
-                                        <Icon icon="feather:check" />
+                                        <i
+                                          class="iconify"
+                                          data-icon="feather:check"
+                                        ></i>
                                       </span>
                                     </li>
                                     <li>
@@ -165,7 +171,10 @@
                                       </span>
                                       <span class="item-name">French</span>
                                       <span class="checkmark">
-                                        <Icon icon="feather:check" />
+                                        <i
+                                          class="iconify"
+                                          data-icon="feather:check"
+                                        ></i>
                                       </span>
                                     </li>
                                     <li>
@@ -177,7 +186,10 @@
                                       </span>
                                       <span class="item-name">German</span>
                                       <span class="checkmark">
-                                        <Icon icon="feather:check" />
+                                        <i
+                                          class="iconify"
+                                          data-icon="feather:check"
+                                        ></i>
                                       </span>
                                     </li>
                                     <li>
@@ -189,7 +201,10 @@
                                       </span>
                                       <span class="item-name">Spanish</span>
                                       <span class="checkmark">
-                                        <Icon icon="feather:check" />
+                                        <i
+                                          class="iconify"
+                                          data-icon="feather:check"
+                                        ></i>
                                       </span>
                                     </li>
                                   </ul>
@@ -207,7 +222,10 @@
                                 <span>Select a Level</span>
                               </div>
                               <div class="select-icon">
-                                <Icon icon="feather:chevron-down" />
+                                <i
+                                  class="iconify"
+                                  data-icon="feather:chevron-down"
+                                ></i>
                               </div>
                               <div class="select-drop has-slimscroll-sm">
                                 <div class="drop-inner">
@@ -271,7 +289,10 @@
                               placeholder="Write a quick comment..."
                             />
                             <div class="form-icon">
-                              <Icon icon="feather:message-circle" />
+                              <i
+                                class="iconify"
+                                data-icon="feather:message-circle"
+                              ></i>
                             </div>
                           </div>
                         </div>
@@ -431,7 +452,10 @@
                                 </div>
                               </div>
                               <div class="box-chevron">
-                                <Icon icon="feather:chevron-down" />
+                                <i
+                                  class="iconify"
+                                  data-icon="feather:chevron-down"
+                                ></i>
                               </div>
                               <div class="box-dropdown">
                                 <div class="dropdown-inner has-slimscroll">
@@ -445,7 +469,10 @@
                                       </span>
                                       <span class="item-name">Html5</span>
                                       <span class="checkmark">
-                                        <Icon icon="feather:check" />
+                                        <i
+                                          class="iconify"
+                                          data-icon="feather:check"
+                                        ></i>
                                       </span>
                                     </li>
                                     <li>
@@ -457,7 +484,10 @@
                                       </span>
                                       <span class="item-name">CSS3</span>
                                       <span class="checkmark">
-                                        <Icon icon="feather:check" />
+                                        <i
+                                          class="iconify"
+                                          data-icon="feather:check"
+                                        ></i>
                                       </span>
                                     </li>
                                     <li>
@@ -469,7 +499,10 @@
                                       </span>
                                       <span class="item-name">Javascript</span>
                                       <span class="checkmark">
-                                        <Icon icon="feather:check" />
+                                        <i
+                                          class="iconify"
+                                          data-icon="feather:check"
+                                        ></i>
                                       </span>
                                     </li>
                                     <li>
@@ -481,7 +514,10 @@
                                       </span>
                                       <span class="item-name">ReactJs</span>
                                       <span class="checkmark">
-                                        <Icon icon="feather:check" />
+                                        <i
+                                          class="iconify"
+                                          data-icon="feather:check"
+                                        ></i>
                                       </span>
                                     </li>
                                     <li>
@@ -493,7 +529,10 @@
                                       </span>
                                       <span class="item-name">Angular</span>
                                       <span class="checkmark">
-                                        <Icon icon="feather:check" />
+                                        <i
+                                          class="iconify"
+                                          data-icon="feather:check"
+                                        ></i>
                                       </span>
                                     </li>
                                     <li>
@@ -505,7 +544,10 @@
                                       </span>
                                       <span class="item-name">VueJs</span>
                                       <span class="checkmark">
-                                        <Icon icon="feather:check" />
+                                        <i
+                                          class="iconify"
+                                          data-icon="feather:check"
+                                        ></i>
                                       </span>
                                     </li>
                                     <li>
@@ -517,7 +559,10 @@
                                       </span>
                                       <span class="item-name">NodeJs</span>
                                       <span class="checkmark">
-                                        <Icon icon="feather:check" />
+                                        <i
+                                          class="iconify"
+                                          data-icon="feather:check"
+                                        ></i>
                                       </span>
                                     </li>
                                     <li>
@@ -529,7 +574,10 @@
                                       </span>
                                       <span class="item-name">C#</span>
                                       <span class="checkmark">
-                                        <Icon icon="feather:check" />
+                                        <i
+                                          class="iconify"
+                                          data-icon="feather:check"
+                                        ></i>
                                       </span>
                                     </li>
                                   </ul>
@@ -547,7 +595,10 @@
                                 <span>Years of Exp.</span>
                               </div>
                               <div class="select-icon">
-                                <Icon icon="feather:chevron-down" />
+                                <i
+                                  class="iconify"
+                                  data-icon="feather:chevron-down"
+                                ></i>
                               </div>
                               <div class="select-drop has-slimscroll-sm">
                                 <div class="drop-inner">
@@ -784,7 +835,10 @@
                                 </div>
                               </div>
                               <div class="box-chevron">
-                                <Icon icon="feather:chevron-down" />
+                                <i
+                                  class="iconify"
+                                  data-icon="feather:chevron-down"
+                                ></i>
                               </div>
                               <div class="box-dropdown">
                                 <div class="dropdown-inner has-slimscroll">
@@ -798,7 +852,10 @@
                                       </span>
                                       <span class="item-name">Illustrator</span>
                                       <span class="checkmark">
-                                        <Icon icon="feather:check" />
+                                        <i
+                                          class="iconify"
+                                          data-icon="feather:check"
+                                        ></i>
                                       </span>
                                     </li>
                                     <li>
@@ -810,7 +867,10 @@
                                       </span>
                                       <span class="item-name">Photoshop</span>
                                       <span class="checkmark">
-                                        <Icon icon="feather:check" />
+                                        <i
+                                          class="iconify"
+                                          data-icon="feather:check"
+                                        ></i>
                                       </span>
                                     </li>
                                     <li>
@@ -824,7 +884,10 @@
                                         >Jira Software</span
                                       >
                                       <span class="checkmark">
-                                        <Icon icon="feather:check" />
+                                        <i
+                                          class="iconify"
+                                          data-icon="feather:check"
+                                        ></i>
                                       </span>
                                     </li>
                                     <li>
@@ -836,7 +899,10 @@
                                       </span>
                                       <span class="item-name">MS Office</span>
                                       <span class="checkmark">
-                                        <Icon icon="feather:check" />
+                                        <i
+                                          class="iconify"
+                                          data-icon="feather:check"
+                                        ></i>
                                       </span>
                                     </li>
                                   </ul>
@@ -854,7 +920,10 @@
                                 <span>Select Level</span>
                               </div>
                               <div class="select-icon">
-                                <Icon icon="feather:chevron-down" />
+                                <i
+                                  class="iconify"
+                                  data-icon="feather:chevron-down"
+                                ></i>
                               </div>
                               <div class="select-drop has-slimscroll-sm">
                                 <div class="drop-inner">

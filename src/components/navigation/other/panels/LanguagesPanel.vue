@@ -17,7 +17,7 @@ const { locale, t } = useI18n()
       <div class="right-panel-head">
         <h3>{{ t('select-language') }}</h3>
         <a class="close-panel" @click="activePanel = 'none'">
-          <Icon icon="feather:chevron-right" />
+          <i class="iconify" data-icon="feather:chevron-right"></i>
         </a>
       </div>
       <div class="right-panel-body has-slimscroll">
@@ -37,7 +37,7 @@ const { locale, t } = useI18n()
                   alt=""
                 />
                 <div class="indicator">
-                  <Icon icon="feather:check" />
+                  <i class="iconify" data-icon="feather:check"></i>
                 </div>
               </div>
             </div>
@@ -54,7 +54,7 @@ const { locale, t } = useI18n()
               <div class="language-option-inner">
                 <img src="/@images/icons/flags/france.svg" alt="" />
                 <div class="indicator">
-                  <Icon icon="feather:check" />
+                  <i class="iconify" data-icon="feather:check"></i>
                 </div>
               </div>
             </div>
@@ -71,7 +71,7 @@ const { locale, t } = useI18n()
               <div class="language-option-inner">
                 <img src="/@images/icons/flags/spain.svg" alt="" />
                 <div class="indicator">
-                  <Icon icon="feather:check" />
+                  <i class="iconify" data-icon="feather:check"></i>
                 </div>
               </div>
             </div>
@@ -88,7 +88,7 @@ const { locale, t } = useI18n()
               <div class="language-option-inner">
                 <img src="/@images/icons/flags/germany.svg" alt="" />
                 <div class="indicator">
-                  <Icon icon="feather:check" />
+                  <i class="iconify" data-icon="feather:check"></i>
                 </div>
               </div>
             </div>
@@ -105,7 +105,7 @@ const { locale, t } = useI18n()
               <div class="language-option-inner">
                 <img src="/@images/icons/flags/mexico.svg" alt="" />
                 <div class="indicator">
-                  <Icon icon="feather:check" />
+                  <i class="iconify" data-icon="feather:check"></i>
                 </div>
               </div>
             </div>
@@ -122,7 +122,7 @@ const { locale, t } = useI18n()
               <div class="language-option-inner">
                 <img src="/@images/icons/flags/china.svg" alt="" />
                 <div class="indicator">
-                  <Icon icon="feather:check" />
+                  <i class="iconify" data-icon="feather:check"></i>
                 </div>
               </div>
             </div>

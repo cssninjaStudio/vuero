@@ -14,7 +14,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
         placeholder="Filter icons..."
       />
       <div class="form-icon">
-        <Icon icon="feather:search" />
+        <i class="iconify" data-icon="feather:search"></i>
       </div>
     </div>
 
@@ -40,7 +40,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
         class="dropdown is-spaced is-dots is-right dropdown-trigger"
       >
         <div class="is-trigger" aria-haspopup="true" @click="open">
-          <Icon icon="feather:bell" />
+          <i class="iconify" data-icon="feather:bell"></i>
           <span class="new-indicator pulsate"></span>
         </div>
         <div class="dropdown-menu" role="menu">
@@ -145,7 +145,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
     </div>
 
     <a class="toolbar-link">
-      <Icon icon="feather:grid" />
+      <i class="iconify" data-icon="feather:grid"></i>
     </a>
   </div>
 </template>

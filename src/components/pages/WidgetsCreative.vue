@@ -45,11 +45,11 @@
             </div>
             <div class="contact-info">
               <span>
-                <Icon icon="feather:map-pin" />
+                <i class="iconify" data-icon="feather:map-pin"></i>
                 <span>Los Angeles, CA</span>
               </span>
               <span>
-                <Icon icon="feather:phone" />
+                <i class="iconify" data-icon="feather:phone"></i>
                 <span>+1 444-5156</span>
               </span>
             </div>
@@ -72,7 +72,7 @@
           <div class="control">
             <input type="text" class="input" placeholder="Search..." />
             <button class="search-button">
-              <Icon icon="feather:search" />
+              <i class="iconify" data-icon="feather:search"></i>
             </button>
           </div>
         </div>
@@ -169,7 +169,7 @@
           <div class="control">
             <input type="text" class="input" placeholder="Search..." />
             <button class="search-button">
-              <Icon icon="feather:search" />
+              <i class="iconify" data-icon="feather:search"></i>
             </button>
           </div>
         </div>
@@ -326,7 +326,7 @@
           </div>
           <div class="right">
             <a class="right-icon has-indicator">
-              <Icon icon="feather:twitter" />
+              <i class="iconify" data-icon="feather:twitter"></i>
             </a>
           </div>
         </div>
@@ -374,11 +374,11 @@
             </div>
             <div class="contact-info">
               <span>
-                <Icon icon="feather:map-pin" />
+                <i class="iconify" data-icon="feather:map-pin"></i>
                 <span>Los Angeles, CA</span>
               </span>
               <span>
-                <Icon icon="feather:phone" />
+                <i class="iconify" data-icon="feather:phone"></i>
                 <span>+1 444-5156</span>
               </span>
             </div>
@@ -555,13 +555,13 @@
         <h3>Call Alice?</h3>
         <div class="actions">
           <a class="action">
-            <Icon icon="feather:message-square" />
+            <i class="iconify" data-icon="feather:message-square"></i>
           </a>
           <a class="action">
-            <Icon icon="feather:phone" />
+            <i class="iconify" data-icon="feather:phone"></i>
           </a>
           <a class="action">
-            <Icon icon="feather:video" />
+            <i class="iconify" data-icon="feather:video"></i>
           </a>
         </div>
       </div>

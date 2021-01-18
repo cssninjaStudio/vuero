@@ -21,7 +21,7 @@
                 </p>
                 <button class="button h-button is-light is-outlined">
                   <span class="icon is-small">
-                    <Icon icon="feather:plus" />
+                    <i class="iconify" data-icon="feather:plus"></i>
                   </span>
                   <span>New Article</span>
                 </button>

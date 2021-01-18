@@ -66,7 +66,7 @@ useTitle('Components - Breadcrumb - Vuero')
                 <li>
                   <RouterLink :to="{ name: 'index' }">
                     <span class="icon is-small is-solo">
-                      <Icon icon="feather:home" />
+                      <i class="iconify" data-icon="feather:home"></i>
                     </span>
                   </RouterLink>
                 </li>
@@ -100,8 +100,8 @@ useTitle('Components - Breadcrumb - Vuero')
                       <code>breadcrumb</code> element.
                     </p>
                     <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                      <i class="iconify open" data-icon="feather:code"></i>
+                      <i class="iconify close" data-icon="feather:x"></i>
                     </a>
                   </div>
                   <div class="card-inner">
@@ -130,7 +130,10 @@ useTitle('Components - Breadcrumb - Vuero')
                         <li>
                           <a href="#">
                             <span class="icon is-small">
-                              <Icon icon="feather:shopping-cart" />
+                              <i
+                                class="iconify"
+                                data-icon="feather:shopping-cart"
+                              ></i>
                             </span>
                             <span>Catalogue</span>
                           </a>
@@ -138,7 +141,7 @@ useTitle('Components - Breadcrumb - Vuero')
                         <li>
                           <a href="#">
                             <span class="icon is-small">
-                              <Icon icon="feather:cpu" />
+                              <i class="iconify" data-icon="feather:cpu"></i>
                             </span>
                             <span>Computers</span>
                           </a>
@@ -146,7 +149,10 @@ useTitle('Components - Breadcrumb - Vuero')
                         <li>
                           <a href="#">
                             <span class="icon is-small">
-                              <Icon icon="feather:monitor" />
+                              <i
+                                class="iconify"
+                                data-icon="feather:monitor"
+                              ></i>
                             </span>
                             <span>Monitors</span>
                           </a>
@@ -221,8 +227,8 @@ useTitle('Components - Breadcrumb - Vuero')
                       details.
                     </p>
                     <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                      <i class="iconify open" data-icon="feather:code"></i>
+                      <i class="iconify close" data-icon="feather:x"></i>
                     </a>
                   </div>
                   <div class="card-inner">
@@ -257,7 +263,10 @@ useTitle('Components - Breadcrumb - Vuero')
                         <li>
                           <a href="#">
                             <span class="icon is-small">
-                              <Icon icon="feather:shopping-cart" />
+                              <i
+                                class="iconify"
+                                data-icon="feather:shopping-cart"
+                              ></i>
                             </span>
                             <span>Catalogue</span>
                           </a>
@@ -265,7 +274,7 @@ useTitle('Components - Breadcrumb - Vuero')
                         <li>
                           <a href="#">
                             <span class="icon is-small">
-                              <Icon icon="feather:cpu" />
+                              <i class="iconify" data-icon="feather:cpu"></i>
                             </span>
                             <span>Computers</span>
                           </a>
@@ -273,7 +282,10 @@ useTitle('Components - Breadcrumb - Vuero')
                         <li>
                           <a href="#">
                             <span class="icon is-small">
-                              <Icon icon="feather:monitor" />
+                              <i
+                                class="iconify"
+                                data-icon="feather:monitor"
+                              ></i>
                             </span>
                             <span>Monitors</span>
                           </a>
@@ -348,8 +360,8 @@ useTitle('Components - Breadcrumb - Vuero')
                       details.
                     </p>
                     <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                      <i class="iconify open" data-icon="feather:code"></i>
+                      <i class="iconify close" data-icon="feather:x"></i>
                     </a>
                   </div>
                   <div class="card-inner">
@@ -384,7 +396,10 @@ useTitle('Components - Breadcrumb - Vuero')
                         <li>
                           <a href="#">
                             <span class="icon is-small">
-                              <Icon icon="feather:shopping-cart" />
+                              <i
+                                class="iconify"
+                                data-icon="feather:shopping-cart"
+                              ></i>
                             </span>
                             <span>Catalogue</span>
                           </a>
@@ -392,7 +407,7 @@ useTitle('Components - Breadcrumb - Vuero')
                         <li>
                           <a href="#">
                             <span class="icon is-small">
-                              <Icon icon="feather:cpu" />
+                              <i class="iconify" data-icon="feather:cpu"></i>
                             </span>
                             <span>Computers</span>
                           </a>
@@ -400,7 +415,10 @@ useTitle('Components - Breadcrumb - Vuero')
                         <li>
                           <a href="#">
                             <span class="icon is-small">
-                              <Icon icon="feather:monitor" />
+                              <i
+                                class="iconify"
+                                data-icon="feather:monitor"
+                              ></i>
                             </span>
                             <span>Monitors</span>
                           </a>
@@ -475,8 +493,8 @@ useTitle('Components - Breadcrumb - Vuero')
                       details.
                     </p>
                     <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                      <i class="iconify open" data-icon="feather:code"></i>
+                      <i class="iconify close" data-icon="feather:x"></i>
                     </a>
                   </div>
                   <div class="card-inner">
@@ -511,7 +529,10 @@ useTitle('Components - Breadcrumb - Vuero')
                         <li>
                           <a href="#">
                             <span class="icon is-small">
-                              <Icon icon="feather:shopping-cart" />
+                              <i
+                                class="iconify"
+                                data-icon="feather:shopping-cart"
+                              ></i>
                             </span>
                             <span>Catalogue</span>
                           </a>
@@ -519,7 +540,7 @@ useTitle('Components - Breadcrumb - Vuero')
                         <li>
                           <a href="#">
                             <span class="icon is-small">
-                              <Icon icon="feather:cpu" />
+                              <i class="iconify" data-icon="feather:cpu"></i>
                             </span>
                             <span>Computers</span>
                           </a>
@@ -527,7 +548,10 @@ useTitle('Components - Breadcrumb - Vuero')
                         <li>
                           <a href="#">
                             <span class="icon is-small">
-                              <Icon icon="feather:monitor" />
+                              <i
+                                class="iconify"
+                                data-icon="feather:monitor"
+                              ></i>
                             </span>
                             <span>Monitors</span>
                           </a>
@@ -602,8 +626,8 @@ useTitle('Components - Breadcrumb - Vuero')
                       more details.
                     </p>
                     <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                      <i class="iconify open" data-icon="feather:code"></i>
+                      <i class="iconify close" data-icon="feather:x"></i>
                     </a>
                   </div>
                   <div class="card-inner">
@@ -638,7 +662,10 @@ useTitle('Components - Breadcrumb - Vuero')
                         <li>
                           <a href="#">
                             <span class="icon is-small">
-                              <Icon icon="feather:shopping-cart" />
+                              <i
+                                class="iconify"
+                                data-icon="feather:shopping-cart"
+                              ></i>
                             </span>
                             <span>Catalogue</span>
                           </a>
@@ -646,7 +673,7 @@ useTitle('Components - Breadcrumb - Vuero')
                         <li>
                           <a href="#">
                             <span class="icon is-small">
-                              <Icon icon="feather:cpu" />
+                              <i class="iconify" data-icon="feather:cpu"></i>
                             </span>
                             <span>Computers</span>
                           </a>
@@ -654,7 +681,10 @@ useTitle('Components - Breadcrumb - Vuero')
                         <li>
                           <a href="#">
                             <span class="icon is-small">
-                              <Icon icon="feather:monitor" />
+                              <i
+                                class="iconify"
+                                data-icon="feather:monitor"
+                              ></i>
                             </span>
                             <span>Monitors</span>
                           </a>

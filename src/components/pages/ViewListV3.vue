@@ -54,13 +54,13 @@ const props = defineProps({
             <div class="meta-left">
               <h3 data-filter-match>Node JS Fullstack Developer wanted 👌</h3>
               <span>
-                <Icon icon="feather:map-pin" />
+                <i class="iconify" data-icon="feather:map-pin"></i>
                 <span data-filter-match>San Diego</span>
                 <i class="fas fa-circle icon-separator"></i>
-                <Icon icon="feather:clock" />
+                <i class="iconify" data-icon="feather:clock"></i>
                 <span data-filter-match>Full Time</span>
                 <i class="fas fa-circle icon-separator"></i>
-                <Icon icon="feather:check-circle" />
+                <i class="iconify" data-icon="feather:check-circle"></i>
                 <span data-filter-match>3 Years Exp.</span>
               </span>
             </div>
@@ -74,7 +74,7 @@ const props = defineProps({
                   data-hint="Save"
                 >
                   <span class="icon is-small">
-                    <Icon icon="feather:bookmark" />
+                    <i class="iconify" data-icon="feather:bookmark"></i>
                   </span>
                 </button>
               </div>
@@ -96,13 +96,13 @@ const props = defineProps({
                 Project Manager for React Native Project
               </h3>
               <span>
-                <Icon icon="feather:map-pin" />
+                <i class="iconify" data-icon="feather:map-pin"></i>
                 <span data-filter-match>Los Angeles</span>
                 <i class="fas fa-circle icon-separator"></i>
-                <Icon icon="feather:clock" />
+                <i class="iconify" data-icon="feather:clock"></i>
                 <span data-filter-match>Part Time</span>
                 <i class="fas fa-circle icon-separator"></i>
-                <Icon icon="feather:check-circle" />
+                <i class="iconify" data-icon="feather:check-circle"></i>
                 <span data-filter-match>2 Years Exp.</span>
               </span>
             </div>
@@ -116,7 +116,7 @@ const props = defineProps({
                   data-hint="Save"
                 >
                   <span class="icon is-small">
-                    <Icon icon="feather:bookmark" />
+                    <i class="iconify" data-icon="feather:bookmark"></i>
                   </span>
                 </button>
               </div>
@@ -138,13 +138,13 @@ const props = defineProps({
                 UI/UX Designer to Consolidate the UX Team 💪💪
               </h3>
               <span>
-                <Icon icon="feather:map-pin" />
+                <i class="iconify" data-icon="feather:map-pin"></i>
                 <span data-filter-match>Los Angeles</span>
                 <i class="fas fa-circle icon-separator"></i>
-                <Icon icon="feather:clock" />
+                <i class="iconify" data-icon="feather:clock"></i>
                 <span data-filter-match>Full Time</span>
                 <i class="fas fa-circle icon-separator"></i>
-                <Icon icon="feather:check-circle" />
+                <i class="iconify" data-icon="feather:check-circle"></i>
                 <span data-filter-match>3 Years Exp.</span>
               </span>
             </div>
@@ -158,7 +158,7 @@ const props = defineProps({
                   data-hint="Save"
                 >
                   <span class="icon is-small">
-                    <Icon icon="feather:bookmark" />
+                    <i class="iconify" data-icon="feather:bookmark"></i>
                   </span>
                 </button>
               </div>
@@ -178,13 +178,13 @@ const props = defineProps({
             <div class="meta-left">
               <h3 data-filter-match>IT Team Senior DevOps Manager</h3>
               <span>
-                <Icon icon="feather:map-pin" />
+                <i class="iconify" data-icon="feather:map-pin"></i>
                 <span data-filter-match>Los Angeles</span>
                 <i class="fas fa-circle icon-separator"></i>
-                <Icon icon="feather:clock" />
+                <i class="iconify" data-icon="feather:clock"></i>
                 <span data-filter-match>Full Time</span>
                 <i class="fas fa-circle icon-separator"></i>
-                <Icon icon="feather:check-circle" />
+                <i class="iconify" data-icon="feather:check-circle"></i>
                 <span data-filter-match>10 Years Exp.</span>
               </span>
             </div>
@@ -198,7 +198,7 @@ const props = defineProps({
                   data-hint="Save"
                 >
                   <span class="icon is-small">
-                    <Icon icon="feather:bookmark" />
+                    <i class="iconify" data-icon="feather:bookmark"></i>
                   </span>
                 </button>
               </div>
@@ -220,13 +220,13 @@ const props = defineProps({
                 Fullstack Developer With Solid MongoDB Skills
               </h3>
               <span>
-                <Icon icon="feather:map-pin" />
+                <i class="iconify" data-icon="feather:map-pin"></i>
                 <span data-filter-match>San Francisco</span>
                 <i class="fas fa-circle icon-separator"></i>
-                <Icon icon="feather:clock" />
+                <i class="iconify" data-icon="feather:clock"></i>
                 <span data-filter-match>Full Time</span>
                 <i class="fas fa-circle icon-separator"></i>
-                <Icon icon="feather:check-circle" />
+                <i class="iconify" data-icon="feather:check-circle"></i>
                 <span data-filter-match>5 Years Exp.</span>
               </span>
             </div>
@@ -240,7 +240,7 @@ const props = defineProps({
                   data-hint="Save"
                 >
                   <span class="icon is-small">
-                    <Icon icon="feather:bookmark" />
+                    <i class="iconify" data-icon="feather:bookmark"></i>
                   </span>
                 </button>
               </div>
@@ -262,13 +262,13 @@ const props = defineProps({
                 Fullstack Javascript and Node JS Developer
               </h3>
               <span>
-                <Icon icon="feather:map-pin" />
+                <i class="iconify" data-icon="feather:map-pin"></i>
                 <span data-filter-match>Pasadena</span>
                 <i class="fas fa-circle icon-separator"></i>
-                <Icon icon="feather:clock" />
+                <i class="iconify" data-icon="feather:clock"></i>
                 <span data-filter-match>Full Time</span>
                 <i class="fas fa-circle icon-separator"></i>
-                <Icon icon="feather:check-circle" />
+                <i class="iconify" data-icon="feather:check-circle"></i>
                 <span data-filter-match>4 Years Exp.</span>
               </span>
             </div>
@@ -282,7 +282,7 @@ const props = defineProps({
                   data-hint="Save"
                 >
                   <span class="icon is-small">
-                    <Icon icon="feather:bookmark" />
+                    <i class="iconify" data-icon="feather:bookmark"></i>
                   </span>
                 </button>
               </div>
@@ -302,13 +302,13 @@ const props = defineProps({
             <div class="meta-left">
               <h3 data-filter-match>Product Owner for React Native Project</h3>
               <span>
-                <Icon icon="feather:map-pin" />
+                <i class="iconify" data-icon="feather:map-pin"></i>
                 <span data-filter-match>Los Angeles</span>
                 <i class="fas fa-circle icon-separator"></i>
-                <Icon icon="feather:clock" />
+                <i class="iconify" data-icon="feather:clock"></i>
                 <span data-filter-match>Full Time</span>
                 <i class="fas fa-circle icon-separator"></i>
-                <Icon icon="feather:check-circle" />
+                <i class="iconify" data-icon="feather:check-circle"></i>
                 <span data-filter-match>2 Years Exp.</span>
               </span>
             </div>
@@ -322,7 +322,7 @@ const props = defineProps({
                   data-hint="Save"
                 >
                   <span class="icon is-small">
-                    <Icon icon="feather:bookmark" />
+                    <i class="iconify" data-icon="feather:bookmark"></i>
                   </span>
                 </button>
               </div>
@@ -344,13 +344,13 @@ const props = defineProps({
                 UI/UX Designer With Html5 and Sass Skills 👍
               </h3>
               <span>
-                <Icon icon="feather:map-pin" />
+                <i class="iconify" data-icon="feather:map-pin"></i>
                 <span data-filter-match>Los Angeles</span>
                 <i class="fas fa-circle icon-separator"></i>
-                <Icon icon="feather:clock" />
+                <i class="iconify" data-icon="feather:clock"></i>
                 <span data-filter-match>Full Time</span>
                 <i class="fas fa-circle icon-separator"></i>
-                <Icon icon="feather:check-circle" />
+                <i class="iconify" data-icon="feather:check-circle"></i>
                 <span data-filter-match>4 Years Exp.</span>
               </span>
             </div>
@@ -364,7 +364,7 @@ const props = defineProps({
                   data-hint="Save"
                 >
                   <span class="icon is-small">
-                    <Icon icon="feather:bookmark" />
+                    <i class="iconify" data-icon="feather:bookmark"></i>
                   </span>
                 </button>
               </div>
@@ -384,13 +384,13 @@ const props = defineProps({
             <div class="meta-left">
               <h3 data-filter-match>Experienced Senior UX Team Manager</h3>
               <span>
-                <Icon icon="feather:map-pin" />
+                <i class="iconify" data-icon="feather:map-pin"></i>
                 <span data-filter-match>Melbourne</span>
                 <i class="fas fa-circle icon-separator"></i>
-                <Icon icon="feather:clock" />
+                <i class="iconify" data-icon="feather:clock"></i>
                 <span data-filter-match>Full Time</span>
                 <i class="fas fa-circle icon-separator"></i>
-                <Icon icon="feather:check-circle" />
+                <i class="iconify" data-icon="feather:check-circle"></i>
                 <span data-filter-match>10 Years Exp.</span>
               </span>
             </div>
@@ -404,7 +404,7 @@ const props = defineProps({
                   data-hint="Save"
                 >
                   <span class="icon is-small">
-                    <Icon icon="feather:bookmark" />
+                    <i class="iconify" data-icon="feather:bookmark"></i>
                   </span>
                 </button>
               </div>
@@ -426,13 +426,13 @@ const props = defineProps({
                 Fullstack Javascript and Node JS Developer
               </h3>
               <span>
-                <Icon icon="feather:map-pin" />
+                <i class="iconify" data-icon="feather:map-pin"></i>
                 <span data-filter-match>Los Angeles</span>
                 <i class="fas fa-circle icon-separator"></i>
-                <Icon icon="feather:clock" />
+                <i class="iconify" data-icon="feather:clock"></i>
                 <span data-filter-match>Part Time</span>
                 <i class="fas fa-circle icon-separator"></i>
-                <Icon icon="feather:check-circle" />
+                <i class="iconify" data-icon="feather:check-circle"></i>
                 <span data-filter-match>1 Year Exp.</span>
               </span>
             </div>
@@ -446,7 +446,7 @@ const props = defineProps({
                   data-hint="Save"
                 >
                   <span class="icon is-small">
-                    <Icon icon="feather:bookmark" />
+                    <i class="iconify" data-icon="feather:bookmark"></i>
                   </span>
                 </button>
               </div>

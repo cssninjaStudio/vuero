@@ -19,7 +19,7 @@ import { activePanel } from '/@src/composition/state/ui/activePanelState'
           alt=""
         />
         <a class="close-panel" @click="activePanel = 'none'">
-          <Icon icon="feather:chevron-left" />
+          <i class="iconify" data-icon="feather:chevron-left"></i>
         </a>
       </div>
       <div class="right-panel-body has-slimscroll">
@@ -31,7 +31,7 @@ import { activePanel } from '/@src/composition/state/ui/activePanelState'
               placeholder="Search..."
             />
             <div class="form-icon">
-              <Icon icon="feather:search" />
+              <i class="iconify" data-icon="feather:search"></i>
             </div>
             <div class="search-results has-slimscroll"></div>
           </div>
@@ -44,7 +44,7 @@ import { activePanel } from '/@src/composition/state/ui/activePanelState'
               class="media-flex-center is-responsive-mobile is-responsive-tablet-p"
             >
               <div class="h-icon is-info is-rounded is-small">
-                <Icon icon="feather:chrome" />
+                <i class="iconify" data-icon="feather:chrome"></i>
               </div>
               <div class="flex-meta">
                 <span>Browser Support</span>
@@ -55,7 +55,7 @@ import { activePanel } from '/@src/composition/state/ui/activePanelState'
               class="media-flex-center is-responsive-mobile is-responsive-tablet-p"
             >
               <div class="h-icon is-orange is-rounded is-small">
-                <Icon icon="feather:tv" />
+                <i class="iconify" data-icon="feather:tv"></i>
               </div>
               <div class="flex-meta">
                 <span>Twitch API</span>
@@ -66,7 +66,7 @@ import { activePanel } from '/@src/composition/state/ui/activePanelState'
               class="media-flex-center is-responsive-mobile is-responsive-tablet-p"
             >
               <div class="h-icon is-green is-rounded is-small">
-                <Icon icon="feather:twitter" />
+                <i class="iconify" data-icon="feather:twitter"></i>
               </div>
               <div class="flex-meta">
                 <span>Twitter Auth</span>

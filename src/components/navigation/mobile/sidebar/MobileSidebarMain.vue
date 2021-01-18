@@ -11,12 +11,12 @@ import { isMobileSidebarOpen } from '/@src/composition/state/ui/mobileSidebarSta
       <ul class="icon-side-menu">
         <li>
           <RouterLink id="home-sidebar-menu-mobile" :to="{ name: 'admin' }">
-            <Icon icon="feather:activity" />
+            <i class="iconify" data-icon="feather:activity"></i>
           </RouterLink>
         </li>
         <li>
           <RouterLink id="layouts-sidebar-menu-mobile" :to="{ name: 'webapp' }">
-            <Icon icon="feather:grid" />
+            <i class="iconify" data-icon="feather:grid"></i>
           </RouterLink>
         </li>
         <li>
@@ -24,7 +24,7 @@ import { isMobileSidebarOpen } from '/@src/composition/state/ui/mobileSidebarSta
             id="elements-sidebar-menu-mobile"
             :to="{ name: 'elements' }"
           >
-            <Icon icon="feather:box" />
+            <i class="iconify" data-icon="feather:box"></i>
           </RouterLink>
         </li>
         <li>
@@ -32,12 +32,12 @@ import { isMobileSidebarOpen } from '/@src/composition/state/ui/mobileSidebarSta
             id="components-sidebar-menu-mobile"
             :to="{ name: 'components' }"
           >
-            <Icon icon="feather:cpu" />
+            <i class="iconify" data-icon="feather:cpu"></i>
           </RouterLink>
         </li>
         <li>
           <RouterLink id="open-messages-mobile" :to="{ name: 'messaging-v2' }">
-            <Icon icon="feather:message-circle" />
+            <i class="iconify" data-icon="feather:message-circle"></i>
           </RouterLink>
         </li>
       </ul>
@@ -45,12 +45,12 @@ import { isMobileSidebarOpen } from '/@src/composition/state/ui/mobileSidebarSta
       <ul class="bottom-icon-side-menu">
         <li>
           <a href="#">
-            <Icon icon="feather:search" />
+            <i class="iconify" data-icon="feather:search"></i>
           </a>
         </li>
         <li>
           <a href="#">
-            <Icon icon="feather:settings" />
+            <i class="iconify" data-icon="feather:settings"></i>
           </a>
         </li>
       </ul>

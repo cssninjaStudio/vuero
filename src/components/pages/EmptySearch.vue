@@ -11,7 +11,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
       <div class="control has-icon">
         <input class="input" placeholder="Search again..." />
         <div class="form-icon">
-          <Icon icon="feather:search" />
+          <i class="iconify" data-icon="feather:search"></i>
         </div>
       </div>
 

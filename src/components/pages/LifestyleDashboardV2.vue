@@ -291,7 +291,7 @@
                     </div>
                     <div class="button is-circle">
                       <span class="icon is-small">
-                        <Icon icon="feather:arrow-right" />
+                        <i class="iconify" data-icon="feather:arrow-right"></i>
                       </span>
                     </div>
                   </div>
@@ -322,7 +322,7 @@
                     </div>
                     <div class="button is-circle">
                       <span class="icon is-small">
-                        <Icon icon="feather:arrow-right" />
+                        <i class="iconify" data-icon="feather:arrow-right"></i>
                       </span>
                     </div>
                   </div>
@@ -353,7 +353,7 @@
                     </div>
                     <div class="button is-circle">
                       <span class="icon is-small">
-                        <Icon icon="feather:arrow-right" />
+                        <i class="iconify" data-icon="feather:arrow-right"></i>
                       </span>
                     </div>
                   </div>
@@ -384,7 +384,7 @@
                     </div>
                     <div class="button is-circle">
                       <span class="icon is-small">
-                        <Icon icon="feather:arrow-right" />
+                        <i class="iconify" data-icon="feather:arrow-right"></i>
                       </span>
                     </div>
                   </div>
@@ -432,7 +432,7 @@
                     </div>
                     <div class="button is-circle">
                       <span class="icon is-small">
-                        <Icon icon="feather:arrow-right" />
+                        <i class="iconify" data-icon="feather:arrow-right"></i>
                       </span>
                     </div>
                   </div>
@@ -463,7 +463,7 @@
                     </div>
                     <div class="button is-circle">
                       <span class="icon is-small">
-                        <Icon icon="feather:arrow-right" />
+                        <i class="iconify" data-icon="feather:arrow-right"></i>
                       </span>
                     </div>
                   </div>
@@ -494,7 +494,7 @@
                     </div>
                     <div class="button is-circle">
                       <span class="icon is-small">
-                        <Icon icon="feather:arrow-right" />
+                        <i class="iconify" data-icon="feather:arrow-right"></i>
                       </span>
                     </div>
                   </div>
@@ -525,7 +525,7 @@
                     </div>
                     <div class="button is-circle">
                       <span class="icon is-small">
-                        <Icon icon="feather:arrow-right" />
+                        <i class="iconify" data-icon="feather:arrow-right"></i>
                       </span>
                     </div>
                   </div>
@@ -543,7 +543,7 @@
             <div class="control">
               <input type="text" class="input" placeholder="Search..." />
               <button class="search-button">
-                <Icon icon="feather:search" />
+                <i class="iconify" data-icon="feather:search"></i>
               </button>
             </div>
 
@@ -563,7 +563,7 @@
             </div>
             <div class="right">
               <a class="right-icon has-indicator">
-                <Icon icon="feather:message-square" />
+                <i class="iconify" data-icon="feather:message-square"></i>
               </a>
             </div>
           </div>

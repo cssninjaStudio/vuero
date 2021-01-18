@@ -66,7 +66,7 @@ useTitle('Components - Plugins Filepond - Vuero')
                 <li>
                   <RouterLink :to="{ name: 'index' }">
                     <span class="icon is-small is-solo">
-                      <Icon icon="feather:home" />
+                      <i class="iconify" data-icon="feather:home"></i>
                     </span>
                   </RouterLink>
                 </li>
@@ -105,8 +105,8 @@ useTitle('Components - Plugins Filepond - Vuero')
                       item row.
                     </p>
                     <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                      <i class="iconify open" data-icon="feather:code"></i>
+                      <i class="iconify close" data-icon="feather:x"></i>
                     </a>
                   </div>
                   <div class="card-inner">
@@ -165,8 +165,8 @@ FilePond.create(
                       row.
                     </p>
                     <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                      <i class="iconify open" data-icon="feather:code"></i>
+                      <i class="iconify close" data-icon="feather:x"></i>
                     </a>
                   </div>
                   <div class="card-inner">
@@ -218,8 +218,8 @@ FilePond.create(
                       row.
                     </p>
                     <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                      <i class="iconify open" data-icon="feather:code"></i>
+                      <i class="iconify close" data-icon="feather:x"></i>
                     </a>
                   </div>
                   <div class="card-inner">
@@ -270,8 +270,8 @@ FilePond.create(
                       example is fit for profile image upload (1:1 ratio).
                     </p>
                     <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                      <i class="iconify open" data-icon="feather:code"></i>
+                      <i class="iconify close" data-icon="feather:x"></i>
                     </a>
                   </div>
                   <div class="card-inner">
@@ -355,8 +355,8 @@ FilePond.create(
                       toast is one the 2 notyf default toasts.
                     </p>
                     <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                      <i class="iconify open" data-icon="feather:code"></i>
+                      <i class="iconify close" data-icon="feather:x"></i>
                     </a>
                   </div>
                   <div class="card-inner">

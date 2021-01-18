@@ -41,7 +41,7 @@ import { interviewsOptions } from '/@src/composition/state/charts/apexcharts/exa
                   <div class="dashboard-card">
                     <div class="media-flex-center">
                       <div class="h-icon is-info is-rounded">
-                        <Icon icon="feather:clock" />
+                        <i class="iconify" data-icon="feather:clock"></i>
                       </div>
                       <div class="flex-meta">
                         <span>62K</span>
@@ -54,7 +54,7 @@ import { interviewsOptions } from '/@src/composition/state/charts/apexcharts/exa
                   <div class="dashboard-card">
                     <div class="media-flex-center">
                       <div class="h-icon is-purple is-rounded">
-                        <Icon icon="feather:radio" />
+                        <i class="iconify" data-icon="feather:radio"></i>
                       </div>
                       <div class="flex-meta">
                         <span>263</span>
@@ -67,7 +67,7 @@ import { interviewsOptions } from '/@src/composition/state/charts/apexcharts/exa
                   <div class="dashboard-card">
                     <div class="media-flex-center">
                       <div class="h-icon is-green is-rounded">
-                        <Icon icon="feather:user-check" />
+                        <i class="iconify" data-icon="feather:user-check"></i>
                       </div>
                       <div class="flex-meta">
                         <span>49</span>
@@ -80,7 +80,7 @@ import { interviewsOptions } from '/@src/composition/state/charts/apexcharts/exa
                   <div class="dashboard-card">
                     <div class="media-flex-center">
                       <div class="h-icon is-orange is-rounded">
-                        <Icon icon="feather:frown" />
+                        <i class="iconify" data-icon="feather:frown"></i>
                       </div>
                       <div class="flex-meta">
                         <span>214</span>
@@ -176,7 +176,7 @@ import { interviewsOptions } from '/@src/composition/state/charts/apexcharts/exa
           <div class="widget-toolbar">
             <div class="left">
               <a class="action-icon">
-                <Icon icon="feather:chevron-left" />
+                <i class="iconify" data-icon="feather:chevron-left"></i>
               </a>
             </div>
             <div class="center">
@@ -184,7 +184,7 @@ import { interviewsOptions } from '/@src/composition/state/charts/apexcharts/exa
             </div>
             <div class="right">
               <a class="action-icon">
-                <Icon icon="feather:chevron-right" />
+                <i class="iconify" data-icon="feather:chevron-right"></i>
               </a>
             </div>
           </div>
@@ -273,7 +273,7 @@ import { interviewsOptions } from '/@src/composition/state/charts/apexcharts/exa
               <span>08:00 - 09:00</span>
             </div>
             <div class="flex-end">
-              <Icon icon="feather:chevron-right" />
+              <i class="iconify" data-icon="feather:chevron-right"></i>
             </div>
           </div>
         </a>
@@ -295,7 +295,7 @@ import { interviewsOptions } from '/@src/composition/state/charts/apexcharts/exa
               <span>10:30 - 11:00</span>
             </div>
             <div class="flex-end">
-              <Icon icon="feather:chevron-right" />
+              <i class="iconify" data-icon="feather:chevron-right"></i>
             </div>
           </div>
         </a>
@@ -317,7 +317,7 @@ import { interviewsOptions } from '/@src/composition/state/charts/apexcharts/exa
               <span>02:30 - 03:00</span>
             </div>
             <div class="flex-end">
-              <Icon icon="feather:chevron-right" />
+              <i class="iconify" data-icon="feather:chevron-right"></i>
             </div>
           </div>
         </a>

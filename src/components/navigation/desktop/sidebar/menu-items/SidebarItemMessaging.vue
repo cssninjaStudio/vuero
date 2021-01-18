@@ -1,7 +1,7 @@
 <template>
   <li id="messages-menu">
     <RouterLink id="open-messages" :to="{ name: 'messaging-v1' }">
-      <Icon class="sidebar-svg" icon="feather:message-circle" />
+      <i class="iconify sidebar-svg" data-icon="feather:message-circle"></i>
     </RouterLink>
   </li>
 </template>

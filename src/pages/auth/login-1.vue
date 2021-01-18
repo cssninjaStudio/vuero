@@ -78,12 +78,12 @@ useTitle('Auth Login 1 - Vuero')
                   </div>
                   <div class="validation-icon is-success">
                     <div class="icon-wrapper">
-                      <Icon icon="feather:check" />
+                      <i class="iconify" data-icon="feather:check"></i>
                     </div>
                   </div>
                   <div class="validation-icon is-error">
                     <div class="icon-wrapper">
-                      <Icon icon="feather:x" />
+                      <i class="iconify" data-icon="feather:x"></i>
                     </div>
                   </div>
                 </div>
@@ -100,10 +100,10 @@ useTitle('Auth Login 1 - Vuero')
                     <input type="checkbox" />
                     <span class="toggler">
                       <span class="active">
-                        <Icon icon="feather:check" />
+                        <i class="iconify" data-icon="feather:check"></i>
                       </span>
                       <span class="inactive">
-                        <Icon icon="feather:circle" />
+                        <i class="iconify" data-icon="feather:circle"></i>
                       </span>
                     </span>
                   </label>
@@ -143,12 +143,12 @@ useTitle('Auth Login 1 - Vuero')
                   </div>
                   <div class="validation-icon is-success">
                     <div class="icon-wrapper">
-                      <Icon icon="feather:check" />
+                      <i class="iconify" data-icon="feather:check"></i>
                     </div>
                   </div>
                   <div class="validation-icon is-error">
                     <div class="icon-wrapper">
-                      <Icon icon="feather:x" />
+                      <i class="iconify" data-icon="feather:x"></i>
                     </div>
                   </div>
                 </div>

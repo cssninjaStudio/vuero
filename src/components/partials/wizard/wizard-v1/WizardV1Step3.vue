@@ -36,7 +36,7 @@
                 class="inner-action fileinput-button hint--bubble hint--primary hint--top"
                 data-hint="Add Files"
               >
-                <Icon icon="feather:plus" />
+                <i class="iconify" data-icon="feather:plus"></i>
               </span>
             </div>
             <div class="uploader-action">
@@ -45,7 +45,7 @@
                 class="inner-action start hint--bubble hint--primary hint--top"
                 data-hint="Upload All"
               >
-                <Icon icon="feather:upload" />
+                <i class="iconify" data-icon="feather:upload"></i>
               </button>
             </div>
             <div class="uploader-action">
@@ -54,7 +54,7 @@
                 class="inner-action cancel hint--bubble hint--primary hint--top"
                 data-hint="Remove All"
               >
-                <Icon icon="feather:x" />
+                <i class="iconify" data-icon="feather:x"></i>
               </button>
             </div>
           </div>
@@ -127,17 +127,17 @@
                 class="list-item-action start hint--bubble hint--primary hint--top"
                 data-hint="Upload File"
               >
-                <Icon icon="feather:play" />
+                <i class="iconify" data-icon="feather:play"></i>
               </button>
               <button
                 data-dz-remove
                 class="list-item-action cancel hint--bubble hint--primary hint--top"
                 data-hint="Cancel"
               >
-                <Icon icon="feather:arrow-left" />
+                <i class="iconify" data-icon="feather:arrow-left"></i>
               </button>
               <button data-dz-remove class="list-item-action delete">
-                <Icon icon="feather:trash-2" />
+                <i class="iconify" data-icon="feather:trash-2"></i>
               </button>
             </div>
           </div>

@@ -69,7 +69,7 @@ useTitle('List Flex 2 - Admin - Vuero')
                 data-filter-target=".flex-table-item"
               />
               <div class="form-icon">
-                <Icon icon="feather:search" />
+                <i class="iconify" data-icon="feather:search"></i>
               </div>
             </div>
 

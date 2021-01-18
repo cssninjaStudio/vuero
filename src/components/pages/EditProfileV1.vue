@@ -132,12 +132,12 @@
                 </div>
                 <button class="button is-circle edit-button is-edit">
                   <span class="icon is-small">
-                    <Icon icon="feather:edit-2" />
+                    <i class="iconify" data-icon="feather:edit-2"></i>
                   </span>
                 </button>
                 <button class="button is-circle edit-button is-back is-hidden">
                   <span class="icon is-small">
-                    <Icon icon="feather:arrow-left" />
+                    <i class="iconify" data-icon="feather:arrow-left"></i>
                   </span>
                 </button>
               </div>
@@ -160,7 +160,7 @@
                         placeholder="First Name"
                       />
                       <div class="form-icon">
-                        <Icon icon="feather:user" />
+                        <i class="iconify" data-icon="feather:user"></i>
                       </div>
                     </div>
                   </div>
@@ -175,7 +175,7 @@
                         placeholder="Last Name"
                       />
                       <div class="form-icon">
-                        <Icon icon="feather:user" />
+                        <i class="iconify" data-icon="feather:user"></i>
                       </div>
                     </div>
                   </div>
@@ -190,7 +190,7 @@
                         placeholder="Job Title"
                       />
                       <div class="form-icon">
-                        <Icon icon="feather:briefcase" />
+                        <i class="iconify" data-icon="feather:briefcase"></i>
                       </div>
                     </div>
                   </div>
@@ -201,7 +201,7 @@
                     <div class="control has-icon">
                       <input type="text" class="input" placeholder="Location" />
                       <div class="form-icon">
-                        <Icon icon="feather:map-pin" />
+                        <i class="iconify" data-icon="feather:map-pin"></i>
                       </div>
                     </div>
                   </div>
@@ -237,7 +237,10 @@
                           <span>Experience</span>
                         </div>
                         <div class="select-icon">
-                          <Icon icon="feather:chevron-down" />
+                          <i
+                            class="iconify"
+                            data-icon="feather:chevron-down"
+                          ></i>
                         </div>
                         <div class="select-drop has-slimscroll-sm">
                           <div class="drop-inner">
@@ -286,7 +289,10 @@
                           <span>Is this your first job?</span>
                         </div>
                         <div class="select-icon">
-                          <Icon icon="feather:chevron-down" />
+                          <i
+                            class="iconify"
+                            data-icon="feather:chevron-down"
+                          ></i>
                         </div>
                         <div class="select-drop has-slimscroll-sm">
                           <div class="drop-inner">
@@ -317,7 +323,10 @@
                           <span>Are you flexible?</span>
                         </div>
                         <div class="select-icon">
-                          <Icon icon="feather:chevron-down" />
+                          <i
+                            class="iconify"
+                            data-icon="feather:chevron-down"
+                          ></i>
                         </div>
                         <div class="select-drop has-slimscroll-sm">
                           <div class="drop-inner">
@@ -348,7 +357,10 @@
                           <span>Do you work remotely?</span>
                         </div>
                         <div class="select-icon">
-                          <Icon icon="feather:chevron-down" />
+                          <i
+                            class="iconify"
+                            data-icon="feather:chevron-down"
+                          ></i>
                         </div>
                         <div class="select-drop has-slimscroll-sm">
                           <div class="drop-inner">

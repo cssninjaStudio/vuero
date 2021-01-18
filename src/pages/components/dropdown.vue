@@ -59,7 +59,7 @@ useTitle('Components - Dropdown - Vuero')
                 <li>
                   <RouterLink :to="{ name: 'index' }">
                     <span class="icon is-small is-solo">
-                      <Icon icon="feather:home" />
+                      <i class="iconify" data-icon="feather:home"></i>
                     </span>
                   </RouterLink>
                 </li>
@@ -86,6 +86,9 @@ useTitle('Components - Dropdown - Vuero')
 
                 <!--Dropdown-->
                 <DropdownButtonSlotDocumentation />
+
+                <!--Dropdown-->
+                <DropdownButtonHoverDocumentation />
 
                 <!--Dropdown-->
                 <DropdownModernDocumentation />

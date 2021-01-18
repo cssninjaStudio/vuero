@@ -35,7 +35,7 @@
                   value=""
                 />
                 <div class="form-icon">
-                  <Icon icon="feather:calendar" />
+                  <i class="iconify" data-icon="feather:calendar"></i>
                 </div>
               </div>
               <div class="control has-icon">
@@ -46,7 +46,7 @@
                   value=""
                 />
                 <div class="form-icon">
-                  <Icon icon="feather:calendar" />
+                  <i class="iconify" data-icon="feather:calendar"></i>
                 </div>
               </div>
             </div>
@@ -231,7 +231,7 @@
             <div class="control">
               <input type="text" class="input" placeholder="Search..." />
               <button class="search-button">
-                <Icon icon="feather:search" />
+                <i class="iconify" data-icon="feather:search"></i>
               </button>
             </div>
 
@@ -248,7 +248,7 @@
           <div class="widget-toolbar">
             <div class="left">
               <a class="action-icon">
-                <Icon icon="feather:chevron-left" />
+                <i class="iconify" data-icon="feather:chevron-left"></i>
               </a>
             </div>
             <div class="center">
@@ -256,7 +256,7 @@
             </div>
             <div class="right">
               <a class="action-icon">
-                <Icon icon="feather:chevron-right" />
+                <i class="iconify" data-icon="feather:chevron-right"></i>
               </a>
             </div>
           </div>

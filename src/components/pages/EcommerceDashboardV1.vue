@@ -30,7 +30,7 @@
           <div class="tile-head">
             <h3>Total Sales</h3>
             <div class="h-icon is-info is-rounded">
-              <Icon icon="feather:gift" />
+              <i class="iconify" data-icon="feather:gift"></i>
             </div>
           </div>
           <div class="dashboard-tile-inner">
@@ -50,7 +50,7 @@
           <div class="tile-head">
             <h3>Total Income</h3>
             <div class="h-icon is-purple is-rounded">
-              <Icon icon="feather:dollar-sign" />
+              <i class="iconify" data-icon="feather:dollar-sign"></i>
             </div>
           </div>
           <div class="dashboard-tile-inner">
@@ -70,7 +70,7 @@
           <div class="tile-head">
             <h3>New Orders</h3>
             <div class="h-icon is-green is-rounded">
-              <Icon icon="feather:box" />
+              <i class="iconify" data-icon="feather:box"></i>
             </div>
           </div>
           <div class="dashboard-tile-inner">
@@ -90,7 +90,7 @@
           <div class="tile-head">
             <h3>Abandonned</h3>
             <div class="h-icon is-orange is-rounded">
-              <Icon icon="feather:shopping-cart" />
+              <i class="iconify" data-icon="feather:shopping-cart"></i>
             </div>
           </div>
           <div class="dashboard-tile-inner">
@@ -276,7 +276,7 @@
                   <span>Last 30 days</span>
                 </div>
                 <div class="select-icon">
-                  <Icon icon="feather:chevron-down" />
+                  <i class="iconify" data-icon="feather:chevron-down"></i>
                 </div>
                 <div class="select-drop has-slimscroll-sm">
                   <div class="drop-inner">

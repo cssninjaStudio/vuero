@@ -77,7 +77,7 @@
           <div class="control">
             <input type="text" class="input" placeholder="Search..." />
             <button class="search-button">
-              <Icon icon="feather:search" />
+              <i class="iconify" data-icon="feather:search"></i>
             </button>
           </div>
 
@@ -98,10 +98,10 @@
             @error="$event.target.src = 'https://via.placeholder.com/400x300'"
           />
           <div class="widget-meta">
-            <Icon icon="feather:play-circle" />
+            <i class="iconify" data-icon="feather:play-circle"></i>
             <h4>A nice and short little movie</h4>
             <span class="views">
-              <Icon icon="feather:eye" />
+              <i class="iconify" data-icon="feather:eye"></i>
               <span>38,274</span>
             </span>
           </div>
@@ -132,22 +132,22 @@
         <div class="icon-toolbar">
           <div class="toolbar-icon">
             <a class="inner-icon is-active">
-              <Icon icon="feather:activity" />
+              <i class="iconify" data-icon="feather:activity"></i>
             </a>
           </div>
           <div class="toolbar-icon">
             <a class="inner-icon">
-              <Icon icon="feather:search" />
+              <i class="iconify" data-icon="feather:search"></i>
             </a>
           </div>
           <div class="toolbar-icon">
             <a class="inner-icon">
-              <Icon icon="feather:file-text" />
+              <i class="iconify" data-icon="feather:file-text"></i>
             </a>
           </div>
           <div class="toolbar-icon">
             <a class="inner-icon">
-              <Icon icon="feather:home" />
+              <i class="iconify" data-icon="feather:home"></i>
             </a>
           </div>
         </div>
@@ -188,7 +188,7 @@
         <div class="widget-toolbar">
           <div class="left">
             <a class="action-icon">
-              <Icon icon="feather:chevron-left" />
+              <i class="iconify" data-icon="feather:chevron-left"></i>
             </a>
           </div>
           <div class="center">
@@ -196,7 +196,7 @@
           </div>
           <div class="right">
             <a class="action-icon">
-              <Icon icon="feather:chevron-right" />
+              <i class="iconify" data-icon="feather:chevron-right"></i>
             </a>
           </div>
         </div>
@@ -272,7 +272,7 @@
         <div class="icon-list">
           <div class="icon-list-item">
             <div class="icon-wrap">
-              <Icon icon="feather:circle" />
+              <i class="iconify" data-icon="feather:circle"></i>
             </div>
             <div class="item-meta">
               <span>Global</span>
@@ -280,7 +280,7 @@
           </div>
           <div class="icon-list-item">
             <div class="icon-wrap">
-              <Icon icon="feather:briefcase" />
+              <i class="iconify" data-icon="feather:briefcase"></i>
             </div>
             <div class="item-meta">
               <span>Business</span>
@@ -288,7 +288,7 @@
           </div>
           <div class="icon-list-item">
             <div class="icon-wrap">
-              <Icon icon="feather:play" />
+              <i class="iconify" data-icon="feather:play"></i>
             </div>
             <div class="item-meta">
               <span>Entertainment</span>
@@ -296,7 +296,7 @@
           </div>
           <div class="icon-list-item">
             <div class="icon-wrap">
-              <Icon icon="feather:feather" />
+              <i class="iconify" data-icon="feather:feather"></i>
             </div>
             <div class="item-meta">
               <span>Design</span>
@@ -304,7 +304,7 @@
           </div>
           <div class="icon-list-item">
             <div class="icon-wrap">
-              <Icon icon="feather:file" />
+              <i class="iconify" data-icon="feather:file"></i>
             </div>
             <div class="item-meta">
               <span>Documents</span>
@@ -324,7 +324,7 @@
           </div>
           <div class="right">
             <a class="right-icon has-indicator">
-              <Icon icon="feather:bell" />
+              <i class="iconify" data-icon="feather:bell"></i>
             </a>
           </div>
         </div>
@@ -462,7 +462,9 @@
         <div class="widget-content">
           <div class="has-text-centered">
             <div class="stat-number">
-              <span>$1638,42 <Icon icon="feather:trending-up" /></span>
+              <span
+                >$1638,42 <i class="iconify" data-icon="feather:trending-up"></i
+              ></span>
               <span>Earned from Sales</span>
             </div>
           </div>
@@ -478,7 +480,7 @@
           </div>
           <div class="right">
             <a class="right-icon has-indicator">
-              <Icon icon="feather:message-square" />
+              <i class="iconify" data-icon="feather:message-square"></i>
             </a>
           </div>
         </div>

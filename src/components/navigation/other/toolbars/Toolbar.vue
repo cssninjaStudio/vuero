@@ -60,7 +60,7 @@ const localFlagSrc = computed(() => {
         class="dropdown is-spaced is-dots is-right dropdown-trigger"
       >
         <div class="is-trigger" aria-haspopup="true" @click="open">
-          <Icon icon="feather:bell" />
+          <i class="iconify" data-icon="feather:bell"></i>
           <span class="new-indicator pulsate"></span>
         </div>
         <div class="dropdown-menu" role="menu">
@@ -172,7 +172,7 @@ const localFlagSrc = computed(() => {
       class="toolbar-link right-panel-trigger"
       @click="activePanel = 'activity'"
     >
-      <Icon icon="feather:grid" />
+      <i class="iconify" data-icon="feather:grid"></i>
     </a>
   </div>
 </template>

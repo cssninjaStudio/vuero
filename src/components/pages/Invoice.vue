@@ -8,16 +8,16 @@
       <div class="right">
         <div class="controls">
           <a class="action">
-            <Icon icon="feather:printer" />
+            <i class="iconify" data-icon="feather:printer"></i>
           </a>
           <a class="action">
-            <Icon icon="feather:download-cloud" />
+            <i class="iconify" data-icon="feather:download-cloud"></i>
           </a>
           <a class="action">
-            <Icon icon="feather:mail" />
+            <i class="iconify" data-icon="feather:mail"></i>
           </a>
           <a class="action">
-            <Icon icon="feather:arrow-left" />
+            <i class="iconify" data-icon="feather:arrow-left"></i>
           </a>
         </div>
       </div>

@@ -31,7 +31,7 @@
       <div class="control has-icon">
         <input class="input" placeholder="Search..." />
         <div class="form-icon">
-          <Icon icon="feather:search" />
+          <i class="iconify" data-icon="feather:search"></i>
         </div>
       </div>
 
@@ -99,7 +99,7 @@
           <!-- Collapsed content -->
           <div class="collapsed-content">
             <div class="expand-button">
-              <Icon icon="feather:plus" />
+              <i class="iconify" data-icon="feather:plus"></i>
             </div>
             <div class="task-count">
               <span>2</span>
@@ -181,7 +181,7 @@
           <!-- Collapsed content -->
           <div class="collapsed-content">
             <div class="expand-button">
-              <Icon icon="feather:plus" />
+              <i class="iconify" data-icon="feather:plus"></i>
             </div>
             <div class="task-count">
               <span>3</span>
@@ -204,7 +204,7 @@
                 <h4 class="card-title">Implement the users REST API</h4>
                 <div class="kanban-card-stats">
                   <span>
-                    <Icon icon="feather:clock" />
+                    <i class="iconify" data-icon="feather:clock"></i>
                     3 days
                   </span>
                   <div class="avatar-stack">
@@ -251,7 +251,7 @@
                 <h4 class="card-title">Review project wireframes</h4>
                 <div class="kanban-card-stats">
                   <span>
-                    <Icon icon="feather:clock" />
+                    <i class="iconify" data-icon="feather:clock"></i>
                     1 week
                   </span>
                   <div class="avatar-stack">
@@ -276,7 +276,7 @@
                 <h4 class="card-title">Implement new footer in all pages</h4>
                 <div class="kanban-card-stats">
                   <span>
-                    <Icon icon="feather:clock" />
+                    <i class="iconify" data-icon="feather:clock"></i>
                     5 days
                   </span>
                   <div class="avatar-stack">
@@ -316,7 +316,7 @@
           <!-- Collapsed content -->
           <div class="collapsed-content">
             <div class="expand-button">
-              <Icon icon="feather:plus" />
+              <i class="iconify" data-icon="feather:plus"></i>
             </div>
             <div class="task-count">
               <span>1</span>
@@ -339,7 +339,7 @@
                 <h4 class="card-title">Implement the projects REST API</h4>
                 <div class="kanban-card-stats">
                   <span>
-                    <Icon icon="feather:clock" />
+                    <i class="iconify" data-icon="feather:clock"></i>
                     2 days
                   </span>
                   <div class="avatar-stack">
@@ -384,7 +384,7 @@
           <!-- Collapsed content -->
           <div class="collapsed-content">
             <div class="expand-button">
-              <Icon icon="feather:plus" />
+              <i class="iconify" data-icon="feather:plus"></i>
             </div>
             <div class="task-count">
               <span>0</span>
@@ -419,7 +419,7 @@
           <!-- Collapsed content -->
           <div class="collapsed-content">
             <div class="expand-button">
-              <Icon icon="feather:plus" />
+              <i class="iconify" data-icon="feather:plus"></i>
             </div>
             <div class="task-count">
               <span>4</span>
@@ -451,7 +451,7 @@
               <h4 class="card-title">Landing page redesign</h4>
               <div class="kanban-card-stats">
                 <span>
-                  <Icon icon="feather:clock" />
+                  <i class="iconify" data-icon="feather:clock"></i>
                   On time
                 </span>
                 <div class="avatar-stack">
@@ -476,7 +476,7 @@
               <h4 class="card-title">Projects REST API Implementation</h4>
               <div class="kanban-card-stats">
                 <span>
-                  <Icon icon="feather:clock" />
+                  <i class="iconify" data-icon="feather:clock"></i>
                   On time
                 </span>
                 <div class="avatar-stack">
@@ -512,7 +512,7 @@
               <h4 class="card-title">Database replication setup</h4>
               <div class="kanban-card-stats">
                 <span>
-                  <Icon icon="feather:clock" />
+                  <i class="iconify" data-icon="feather:clock"></i>
                   On time
                 </span>
                 <div class="avatar-stack">
@@ -537,7 +537,7 @@
               <h4 class="card-title">Firebase demo application setup</h4>
               <div class="kanban-card-stats">
                 <span>
-                  <Icon icon="feather:clock" />
+                  <i class="iconify" data-icon="feather:clock"></i>
                   On time
                 </span>
                 <div class="avatar-stack">

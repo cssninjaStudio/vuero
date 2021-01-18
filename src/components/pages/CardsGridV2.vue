@@ -68,7 +68,8 @@
                     Delivery App Project
                   </h3>
                   <p data-filter-match>
-                    <Icon icon="feather:calendar" />August 2020
+                    <i class="iconify" data-icon="feather:calendar"></i>August
+                    2020
                   </p>
                 </div>
                 <div class="avatar-stack">
@@ -163,7 +164,8 @@
                     Health and Fitness Dashboard
                   </h3>
                   <p data-filter-match>
-                    <Icon icon="feather:calendar" />October 2020
+                    <i class="iconify" data-icon="feather:calendar"></i>October
+                    2020
                   </p>
                 </div>
                 <div class="avatar-stack">
@@ -246,7 +248,8 @@
                     Learning Tracker Dashboard
                   </h3>
                   <p data-filter-match>
-                    <Icon icon="feather:calendar" />September 2020
+                    <i class="iconify" data-icon="feather:calendar"></i
+                    >September 2020
                   </p>
                 </div>
                 <div class="avatar-stack">
@@ -317,7 +320,8 @@
                     Banking and Finance Dashboard
                   </h3>
                   <p data-filter-match>
-                    <Icon icon="feather:calendar" />October 2020
+                    <i class="iconify" data-icon="feather:calendar"></i>October
+                    2020
                   </p>
                 </div>
                 <div class="avatar-stack">
@@ -400,7 +404,8 @@
                     Resume Management Mobile App
                   </h3>
                   <p data-filter-match>
-                    <Icon icon="feather:calendar" />October 2020
+                    <i class="iconify" data-icon="feather:calendar"></i>October
+                    2020
                   </p>
                 </div>
                 <div class="avatar-stack">
@@ -483,7 +488,8 @@
                     Banking Landing Page
                   </h3>
                   <p data-filter-match>
-                    <Icon icon="feather:calendar" />December 2020
+                    <i class="iconify" data-icon="feather:calendar"></i>December
+                    2020
                   </p>
                 </div>
                 <div class="avatar-stack">
@@ -578,7 +584,8 @@
                     Learning App Design
                   </h3>
                   <p data-filter-match>
-                    <Icon icon="feather:calendar" />November 2020
+                    <i class="iconify" data-icon="feather:calendar"></i>November
+                    2020
                   </p>
                 </div>
                 <div class="avatar-stack">
@@ -649,7 +656,8 @@
                     Educational App Design
                   </h3>
                   <p data-filter-match>
-                    <Icon icon="feather:calendar" />November 2020
+                    <i class="iconify" data-icon="feather:calendar"></i>November
+                    2020
                   </p>
                 </div>
                 <div class="avatar-stack">
@@ -744,7 +752,8 @@
                     Banking Solution Website
                   </h3>
                   <p data-filter-match>
-                    <Icon icon="feather:calendar" />October 2020
+                    <i class="iconify" data-icon="feather:calendar"></i>October
+                    2020
                   </p>
                 </div>
                 <div class="avatar-stack">
@@ -827,7 +836,8 @@
                     HR Webapp Design
                   </h3>
                   <p data-filter-match>
-                    <Icon icon="feather:calendar" />August 2020
+                    <i class="iconify" data-icon="feather:calendar"></i>August
+                    2020
                   </p>
                 </div>
                 <div class="avatar-stack">
@@ -910,7 +920,8 @@
                     Ice Cream Delivery Dashboard
                   </h3>
                   <p data-filter-match>
-                    <Icon icon="feather:calendar" />January 2021
+                    <i class="iconify" data-icon="feather:calendar"></i>January
+                    2021
                   </p>
                 </div>
                 <div class="avatar-stack">
@@ -981,7 +992,8 @@
                     Mobile App Landing Page
                   </h3>
                   <p data-filter-match>
-                    <Icon icon="feather:calendar" />October 2020
+                    <i class="iconify" data-icon="feather:calendar"></i>October
+                    2020
                   </p>
                 </div>
                 <div class="avatar-stack">
@@ -1048,7 +1060,8 @@
                     Web Marketing Landing Page
                   </h3>
                   <p data-filter-match>
-                    <Icon icon="feather:calendar" />November 2020
+                    <i class="iconify" data-icon="feather:calendar"></i>November
+                    2020
                   </p>
                 </div>
                 <div class="avatar-stack">
@@ -1143,7 +1156,8 @@
                     Startup Landing Page
                   </h3>
                   <p data-filter-match>
-                    <Icon icon="feather:calendar" />November 2020
+                    <i class="iconify" data-icon="feather:calendar"></i>November
+                    2020
                   </p>
                 </div>
                 <div class="avatar-stack">
@@ -1216,7 +1230,8 @@
                     Expense Management System
                   </h3>
                   <p data-filter-match>
-                    <Icon icon="feather:calendar" />January 2021
+                    <i class="iconify" data-icon="feather:calendar"></i>January
+                    2021
                   </p>
                 </div>
                 <div class="avatar-stack">

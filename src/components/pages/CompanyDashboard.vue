@@ -50,7 +50,7 @@
             />
             <button class="button icon-button is-circle is-dark-outlined">
               <span class="icon is-small">
-                <Icon icon="feather:plus" />
+                <i class="iconify" data-icon="feather:plus"></i>
               </span>
             </button>
           </div>
@@ -185,7 +185,7 @@
           <div class="widget-toolbar">
             <div class="left">
               <a class="action-icon">
-                <Icon icon="feather:chevron-left" />
+                <i class="iconify" data-icon="feather:chevron-left"></i>
               </a>
             </div>
             <div class="center">
@@ -193,7 +193,7 @@
             </div>
             <div class="right">
               <a class="action-icon">
-                <Icon icon="feather:chevron-right" />
+                <i class="iconify" data-icon="feather:chevron-right"></i>
               </a>
             </div>
           </div>

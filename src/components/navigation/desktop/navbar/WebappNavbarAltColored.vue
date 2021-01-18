@@ -64,14 +64,14 @@ watch(
           <div class="centered-button">
             <RouterLink :to="{ name: 'messaging-v2' }" class="button">
               <span class="icon is-small">
-                <Icon icon="feather:message-circle" />
+                <i class="iconify" data-icon="feather:message-circle"></i>
               </span>
             </RouterLink>
           </div>
           <div class="centered-button centered-link-search">
             <button class="button">
               <span class="icon is-small">
-                <Icon icon="feather:search" />
+                <i class="iconify" data-icon="feather:search"></i>
               </span>
             </button>
           </div>
@@ -85,10 +85,10 @@ watch(
                 placeholder="Search records..."
               />
               <div class="form-icon">
-                <Icon icon="feather:search" />
+                <i class="iconify" data-icon="feather:search"></i>
               </div>
               <div id="webapp-navbar-search-close" class="form-icon is-right">
-                <Icon icon="feather:x" />
+                <i class="iconify" data-icon="feather:x"></i>
               </div>
               <div class="search-results has-slimscroll"></div>
             </div>
@@ -187,7 +187,7 @@ watch(
                   class="button h-button is-primary is-raised is-fullwidth logout-button"
                 >
                   <span class="icon is-small">
-                    <Icon icon="feather:log-out" />
+                    <i class="iconify" data-icon="feather:log-out"></i>
                   </span>
                   <span>Logout</span>
                 </button>

@@ -206,7 +206,7 @@ import { popularityGaugeOptions } from '/@src/composition/state/charts/apexchart
             <div class="flex-end">
               <button class="button is-circle is-dark-outlined">
                 <span class="icon is-small">
-                  <Icon icon="feather:plus" />
+                  <i class="iconify" data-icon="feather:plus"></i>
                 </span>
               </button>
             </div>
@@ -230,7 +230,7 @@ import { popularityGaugeOptions } from '/@src/composition/state/charts/apexchart
             <div class="flex-end">
               <button class="button is-circle is-dark-outlined">
                 <span class="icon is-small">
-                  <Icon icon="feather:plus" />
+                  <i class="iconify" data-icon="feather:plus"></i>
                 </span>
               </button>
             </div>
@@ -254,7 +254,7 @@ import { popularityGaugeOptions } from '/@src/composition/state/charts/apexchart
             <div class="flex-end">
               <button class="button is-circle is-dark-outlined">
                 <span class="icon is-small">
-                  <Icon icon="feather:plus" />
+                  <i class="iconify" data-icon="feather:plus"></i>
                 </span>
               </button>
             </div>
@@ -278,7 +278,7 @@ import { popularityGaugeOptions } from '/@src/composition/state/charts/apexchart
             <div class="flex-end">
               <button class="button is-circle is-dark-outlined">
                 <span class="icon is-small">
-                  <Icon icon="feather:plus" />
+                  <i class="iconify" data-icon="feather:plus"></i>
                 </span>
               </button>
             </div>

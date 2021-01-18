@@ -31,10 +31,10 @@
             <input type="checkbox" />
             <span class="toggler">
               <span class="active">
-                <Icon icon="feather:lock" />
+                <i class="iconify" data-icon="feather:lock"></i>
               </span>
               <span class="inactive">
-                <Icon icon="feather:check" />
+                <i class="iconify" data-icon="feather:check"></i>
               </span>
             </span>
           </label>
@@ -97,13 +97,13 @@
           <div class="buttons">
             <button class="button h-button is-dark-outlined">
               <span class="icon">
-                <Icon icon="feather:eye" />
+                <i class="iconify" data-icon="feather:eye"></i>
               </span>
               <span>View</span>
             </button>
             <button class="button h-button is-dark-outlined">
               <span class="icon">
-                <Icon icon="feather:edit-2" />
+                <i class="iconify" data-icon="feather:edit-2"></i>
               </span>
               <span>Edit</span>
             </button>
@@ -170,13 +170,13 @@
           <div class="buttons">
             <button class="button h-button is-dark-outlined">
               <span class="icon">
-                <Icon icon="feather:eye" />
+                <i class="iconify" data-icon="feather:eye"></i>
               </span>
               <span>View</span>
             </button>
             <button class="button h-button is-dark-outlined">
               <span class="icon">
-                <Icon icon="feather:edit-2" />
+                <i class="iconify" data-icon="feather:edit-2"></i>
               </span>
               <span>Edit</span>
             </button>
@@ -191,10 +191,10 @@
             <input type="checkbox" checked />
             <span class="toggler">
               <span class="active">
-                <Icon icon="feather:lock" />
+                <i class="iconify" data-icon="feather:lock"></i>
               </span>
               <span class="inactive">
-                <Icon icon="feather:check" />
+                <i class="iconify" data-icon="feather:check"></i>
               </span>
             </span>
           </label>
@@ -254,13 +254,13 @@
           <div class="buttons">
             <button class="button h-button is-dark-outlined">
               <span class="icon">
-                <Icon icon="feather:eye" />
+                <i class="iconify" data-icon="feather:eye"></i>
               </span>
               <span>View</span>
             </button>
             <button class="button h-button is-dark-outlined">
               <span class="icon">
-                <Icon icon="feather:edit-2" />
+                <i class="iconify" data-icon="feather:edit-2"></i>
               </span>
               <span>Edit</span>
             </button>
@@ -322,13 +322,13 @@
           <div class="buttons">
             <button class="button h-button is-dark-outlined">
               <span class="icon">
-                <Icon icon="feather:eye" />
+                <i class="iconify" data-icon="feather:eye"></i>
               </span>
               <span>View</span>
             </button>
             <button class="button h-button is-dark-outlined">
               <span class="icon">
-                <Icon icon="feather:edit-2" />
+                <i class="iconify" data-icon="feather:edit-2"></i>
               </span>
               <span>Edit</span>
             </button>
@@ -343,10 +343,10 @@
             <input type="checkbox" />
             <span class="toggler">
               <span class="active">
-                <Icon icon="feather:lock" />
+                <i class="iconify" data-icon="feather:lock"></i>
               </span>
               <span class="inactive">
-                <Icon icon="feather:check" />
+                <i class="iconify" data-icon="feather:check"></i>
               </span>
             </span>
           </label>
@@ -395,13 +395,13 @@
           <div class="buttons">
             <button class="button h-button is-dark-outlined">
               <span class="icon">
-                <Icon icon="feather:eye" />
+                <i class="iconify" data-icon="feather:eye"></i>
               </span>
               <span>View</span>
             </button>
             <button class="button h-button is-dark-outlined">
               <span class="icon">
-                <Icon icon="feather:edit-2" />
+                <i class="iconify" data-icon="feather:edit-2"></i>
               </span>
               <span>Edit</span>
             </button>
@@ -460,13 +460,13 @@
           <div class="buttons">
             <button class="button h-button is-dark-outlined">
               <span class="icon">
-                <Icon icon="feather:eye" />
+                <i class="iconify" data-icon="feather:eye"></i>
               </span>
               <span>View</span>
             </button>
             <button class="button h-button is-dark-outlined">
               <span class="icon">
-                <Icon icon="feather:edit-2" />
+                <i class="iconify" data-icon="feather:edit-2"></i>
               </span>
               <span>Edit</span>
             </button>
@@ -520,13 +520,13 @@
           <div class="buttons">
             <button class="button h-button is-dark-outlined">
               <span class="icon">
-                <Icon icon="feather:eye" />
+                <i class="iconify" data-icon="feather:eye"></i>
               </span>
               <span>View</span>
             </button>
             <button class="button h-button is-dark-outlined">
               <span class="icon">
-                <Icon icon="feather:edit-2" />
+                <i class="iconify" data-icon="feather:edit-2"></i>
               </span>
               <span>Edit</span>
             </button>
@@ -582,13 +582,13 @@
           <div class="buttons">
             <button class="button h-button is-dark-outlined">
               <span class="icon">
-                <Icon icon="feather:eye" />
+                <i class="iconify" data-icon="feather:eye"></i>
               </span>
               <span>View</span>
             </button>
             <button class="button h-button is-dark-outlined">
               <span class="icon">
-                <Icon icon="feather:edit-2" />
+                <i class="iconify" data-icon="feather:edit-2"></i>
               </span>
               <span>Edit</span>
             </button>
@@ -644,13 +644,13 @@
           <div class="buttons">
             <button class="button h-button is-dark-outlined">
               <span class="icon">
-                <Icon icon="feather:eye" />
+                <i class="iconify" data-icon="feather:eye"></i>
               </span>
               <span>View</span>
             </button>
             <button class="button h-button is-dark-outlined">
               <span class="icon">
-                <Icon icon="feather:edit-2" />
+                <i class="iconify" data-icon="feather:edit-2"></i>
               </span>
               <span>Edit</span>
             </button>
@@ -704,13 +704,13 @@
           <div class="buttons">
             <button class="button h-button is-dark-outlined">
               <span class="icon">
-                <Icon icon="feather:eye" />
+                <i class="iconify" data-icon="feather:eye"></i>
               </span>
               <span>View</span>
             </button>
             <button class="button h-button is-dark-outlined">
               <span class="icon">
-                <Icon icon="feather:edit-2" />
+                <i class="iconify" data-icon="feather:edit-2"></i>
               </span>
               <span>Edit</span>
             </button>
@@ -782,13 +782,13 @@
           <div class="buttons">
             <button class="button h-button is-dark-outlined">
               <span class="icon">
-                <Icon icon="feather:eye" />
+                <i class="iconify" data-icon="feather:eye"></i>
               </span>
               <span>View</span>
             </button>
             <button class="button h-button is-dark-outlined">
               <span class="icon">
-                <Icon icon="feather:edit-2" />
+                <i class="iconify" data-icon="feather:edit-2"></i>
               </span>
               <span>Edit</span>
             </button>
@@ -855,13 +855,13 @@
           <div class="buttons">
             <button class="button h-button is-dark-outlined">
               <span class="icon">
-                <Icon icon="feather:eye" />
+                <i class="iconify" data-icon="feather:eye"></i>
               </span>
               <span>View</span>
             </button>
             <button class="button h-button is-dark-outlined">
               <span class="icon">
-                <Icon icon="feather:edit-2" />
+                <i class="iconify" data-icon="feather:edit-2"></i>
               </span>
               <span>Edit</span>
             </button>
@@ -917,13 +917,13 @@
           <div class="buttons">
             <button class="button h-button is-dark-outlined">
               <span class="icon">
-                <Icon icon="feather:eye" />
+                <i class="iconify" data-icon="feather:eye"></i>
               </span>
               <span>View</span>
             </button>
             <button class="button h-button is-dark-outlined">
               <span class="icon">
-                <Icon icon="feather:edit-2" />
+                <i class="iconify" data-icon="feather:edit-2"></i>
               </span>
               <span>Edit</span>
             </button>
@@ -983,13 +983,13 @@
           <div class="buttons">
             <button class="button h-button is-dark-outlined">
               <span class="icon">
-                <Icon icon="feather:eye" />
+                <i class="iconify" data-icon="feather:eye"></i>
               </span>
               <span>View</span>
             </button>
             <button class="button h-button is-dark-outlined">
               <span class="icon">
-                <Icon icon="feather:edit-2" />
+                <i class="iconify" data-icon="feather:edit-2"></i>
               </span>
               <span>Edit</span>
             </button>
@@ -1056,13 +1056,13 @@
           <div class="buttons">
             <button class="button h-button is-dark-outlined">
               <span class="icon">
-                <Icon icon="feather:eye" />
+                <i class="iconify" data-icon="feather:eye"></i>
               </span>
               <span>View</span>
             </button>
             <button class="button h-button is-dark-outlined">
               <span class="icon">
-                <Icon icon="feather:edit-2" />
+                <i class="iconify" data-icon="feather:edit-2"></i>
               </span>
               <span>Edit</span>
             </button>

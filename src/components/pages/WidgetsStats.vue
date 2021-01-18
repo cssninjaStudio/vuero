@@ -194,7 +194,7 @@
             <span>Based on your latest stats</span>
           </div>
           <a href="#" class="go-icon">
-            <Icon icon="feather:chevron-right" />
+            <i class="iconify" data-icon="feather:chevron-right"></i>
           </a>
         </div>
       </div>
@@ -212,7 +212,7 @@
             <span>Based on your latest stats</span>
           </div>
           <a href="#" class="go-icon is-squared">
-            <Icon icon="feather:chevron-right" />
+            <i class="iconify" data-icon="feather:chevron-right"></i>
           </a>
         </div>
       </div>
@@ -230,7 +230,7 @@
             <span>Based on your latest stats</span>
           </div>
           <a href="#" class="go-icon">
-            <Icon icon="feather:chevron-right" />
+            <i class="iconify" data-icon="feather:chevron-right"></i>
           </a>
         </div>
       </div>
@@ -335,17 +335,17 @@
                 <div class="buttons">
                   <button class="button is-dark-outlined">
                     <span class="icon is-small">
-                      <Icon icon="feather:edit-2" />
+                      <i class="iconify" data-icon="feather:edit-2"></i>
                     </span>
                   </button>
                   <button class="button is-dark-outlined">
                     <span class="icon is-small">
-                      <Icon icon="feather:eye" />
+                      <i class="iconify" data-icon="feather:eye"></i>
                     </span>
                   </button>
                   <button class="button is-dark-outlined">
                     <span class="icon is-small">
-                      <Icon icon="feather:trash-2" />
+                      <i class="iconify" data-icon="feather:trash-2"></i>
                     </span>
                   </button>
                 </div>
@@ -424,17 +424,17 @@
                 <div class="buttons">
                   <button class="button is-dark-outlined">
                     <span class="icon is-small">
-                      <Icon icon="feather:edit-2" />
+                      <i class="iconify" data-icon="feather:edit-2"></i>
                     </span>
                   </button>
                   <button class="button is-dark-outlined">
                     <span class="icon is-small">
-                      <Icon icon="feather:eye" />
+                      <i class="iconify" data-icon="feather:eye"></i>
                     </span>
                   </button>
                   <button class="button is-dark-outlined">
                     <span class="icon is-small">
-                      <Icon icon="feather:trash-2" />
+                      <i class="iconify" data-icon="feather:trash-2"></i>
                     </span>
                   </button>
                 </div>
@@ -524,17 +524,17 @@
                 <div class="buttons">
                   <button class="button is-dark-outlined">
                     <span class="icon is-small">
-                      <Icon icon="feather:edit-2" />
+                      <i class="iconify" data-icon="feather:edit-2"></i>
                     </span>
                   </button>
                   <button class="button is-dark-outlined">
                     <span class="icon is-small">
-                      <Icon icon="feather:eye" />
+                      <i class="iconify" data-icon="feather:eye"></i>
                     </span>
                   </button>
                   <button class="button is-dark-outlined">
                     <span class="icon is-small">
-                      <Icon icon="feather:trash-2" />
+                      <i class="iconify" data-icon="feather:trash-2"></i>
                     </span>
                   </button>
                 </div>
@@ -596,17 +596,17 @@
                 <div class="buttons">
                   <button class="button is-dark-outlined">
                     <span class="icon is-small">
-                      <Icon icon="feather:edit-2" />
+                      <i class="iconify" data-icon="feather:edit-2"></i>
                     </span>
                   </button>
                   <button class="button is-dark-outlined">
                     <span class="icon is-small">
-                      <Icon icon="feather:eye" />
+                      <i class="iconify" data-icon="feather:eye"></i>
                     </span>
                   </button>
                   <button class="button is-dark-outlined">
                     <span class="icon is-small">
-                      <Icon icon="feather:trash-2" />
+                      <i class="iconify" data-icon="feather:trash-2"></i>
                     </span>
                   </button>
                 </div>
@@ -685,17 +685,17 @@
                 <div class="buttons">
                   <button class="button is-dark-outlined">
                     <span class="icon is-small">
-                      <Icon icon="feather:edit-2" />
+                      <i class="iconify" data-icon="feather:edit-2"></i>
                     </span>
                   </button>
                   <button class="button is-dark-outlined">
                     <span class="icon is-small">
-                      <Icon icon="feather:eye" />
+                      <i class="iconify" data-icon="feather:eye"></i>
                     </span>
                   </button>
                   <button class="button is-dark-outlined">
                     <span class="icon is-small">
-                      <Icon icon="feather:trash-2" />
+                      <i class="iconify" data-icon="feather:trash-2"></i>
                     </span>
                   </button>
                 </div>
@@ -807,17 +807,17 @@
                 <div class="buttons">
                   <button class="button is-dark-outlined is-circle">
                     <span class="icon is-small">
-                      <Icon icon="feather:edit-2" />
+                      <i class="iconify" data-icon="feather:edit-2"></i>
                     </span>
                   </button>
                   <button class="button is-dark-outlined is-circle">
                     <span class="icon is-small">
-                      <Icon icon="feather:eye" />
+                      <i class="iconify" data-icon="feather:eye"></i>
                     </span>
                   </button>
                   <button class="button is-dark-outlined is-circle">
                     <span class="icon is-small">
-                      <Icon icon="feather:trash-2" />
+                      <i class="iconify" data-icon="feather:trash-2"></i>
                     </span>
                   </button>
                 </div>
@@ -898,17 +898,17 @@
                 <div class="buttons">
                   <button class="button is-dark-outlined is-circle">
                     <span class="icon is-small">
-                      <Icon icon="feather:edit-2" />
+                      <i class="iconify" data-icon="feather:edit-2"></i>
                     </span>
                   </button>
                   <button class="button is-dark-outlined is-circle">
                     <span class="icon is-small">
-                      <Icon icon="feather:eye" />
+                      <i class="iconify" data-icon="feather:eye"></i>
                     </span>
                   </button>
                   <button class="button is-dark-outlined is-circle">
                     <span class="icon is-small">
-                      <Icon icon="feather:trash-2" />
+                      <i class="iconify" data-icon="feather:trash-2"></i>
                     </span>
                   </button>
                 </div>
@@ -1000,17 +1000,17 @@
                 <div class="buttons">
                   <button class="button is-dark-outlined is-circle">
                     <span class="icon is-small">
-                      <Icon icon="feather:edit-2" />
+                      <i class="iconify" data-icon="feather:edit-2"></i>
                     </span>
                   </button>
                   <button class="button is-dark-outlined is-circle">
                     <span class="icon is-small">
-                      <Icon icon="feather:eye" />
+                      <i class="iconify" data-icon="feather:eye"></i>
                     </span>
                   </button>
                   <button class="button is-dark-outlined is-circle">
                     <span class="icon is-small">
-                      <Icon icon="feather:trash-2" />
+                      <i class="iconify" data-icon="feather:trash-2"></i>
                     </span>
                   </button>
                 </div>
@@ -1074,17 +1074,17 @@
                 <div class="buttons">
                   <button class="button is-dark-outlined is-circle">
                     <span class="icon is-small">
-                      <Icon icon="feather:edit-2" />
+                      <i class="iconify" data-icon="feather:edit-2"></i>
                     </span>
                   </button>
                   <button class="button is-dark-outlined is-circle">
                     <span class="icon is-small">
-                      <Icon icon="feather:eye" />
+                      <i class="iconify" data-icon="feather:eye"></i>
                     </span>
                   </button>
                   <button class="button is-dark-outlined is-circle">
                     <span class="icon is-small">
-                      <Icon icon="feather:trash-2" />
+                      <i class="iconify" data-icon="feather:trash-2"></i>
                     </span>
                   </button>
                 </div>
@@ -1165,17 +1165,17 @@
                 <div class="buttons">
                   <button class="button is-dark-outlined is-circle">
                     <span class="icon is-small">
-                      <Icon icon="feather:edit-2" />
+                      <i class="iconify" data-icon="feather:edit-2"></i>
                     </span>
                   </button>
                   <button class="button is-dark-outlined is-circle">
                     <span class="icon is-small">
-                      <Icon icon="feather:eye" />
+                      <i class="iconify" data-icon="feather:eye"></i>
                     </span>
                   </button>
                   <button class="button is-dark-outlined is-circle">
                     <span class="icon is-small">
-                      <Icon icon="feather:trash-2" />
+                      <i class="iconify" data-icon="feather:trash-2"></i>
                     </span>
                   </button>
                 </div>

@@ -124,7 +124,7 @@
                         placeholder="Old Password"
                       />
                       <div class="form-icon">
-                        <Icon icon="feather:unlock" />
+                        <i class="iconify" data-icon="feather:unlock"></i>
                       </div>
                     </div>
                   </div>
@@ -139,7 +139,7 @@
                         placeholder="New Password"
                       />
                       <div class="form-icon">
-                        <Icon icon="feather:lock" />
+                        <i class="iconify" data-icon="feather:lock"></i>
                       </div>
                     </div>
                   </div>
@@ -154,7 +154,7 @@
                         placeholder="Repeat New Password"
                       />
                       <div class="form-icon">
-                        <Icon icon="feather:lock" />
+                        <i class="iconify" data-icon="feather:lock"></i>
                       </div>
                     </div>
                   </div>
@@ -196,7 +196,7 @@
                         placeholder="Phone Number"
                       />
                       <div class="form-icon">
-                        <Icon icon="feather:smartphone" />
+                        <i class="iconify" data-icon="feather:smartphone"></i>
                       </div>
                     </div>
                   </div>

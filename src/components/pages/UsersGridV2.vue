@@ -39,13 +39,13 @@
             <div class="buttons">
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:check-circle" />
+                  <i class="iconify" data-icon="feather:check-circle"></i>
                 </span>
                 <span>Tasks</span>
               </button>
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:file" />
+                  <i class="iconify" data-icon="feather:file"></i>
                 </span>
                 <span>Files</span>
               </button>
@@ -110,13 +110,13 @@
             <div class="buttons">
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:user" />
+                  <i class="iconify" data-icon="feather:user"></i>
                 </span>
                 <span>Profile</span>
               </button>
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:message-circle" />
+                  <i class="iconify" data-icon="feather:message-circle"></i>
                 </span>
                 <span>Talk</span>
               </button>
@@ -141,13 +141,13 @@
             <div class="buttons">
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:check-circle" />
+                  <i class="iconify" data-icon="feather:check-circle"></i>
                 </span>
                 <span>Tasks</span>
               </button>
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:file" />
+                  <i class="iconify" data-icon="feather:file"></i>
                 </span>
                 <span>Files</span>
               </button>
@@ -207,13 +207,13 @@
             <div class="buttons">
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:user" />
+                  <i class="iconify" data-icon="feather:user"></i>
                 </span>
                 <span>Profile</span>
               </button>
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:message-circle" />
+                  <i class="iconify" data-icon="feather:message-circle"></i>
                 </span>
                 <span>Talk</span>
               </button>
@@ -238,13 +238,13 @@
             <div class="buttons">
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:check-circle" />
+                  <i class="iconify" data-icon="feather:check-circle"></i>
                 </span>
                 <span>Tasks</span>
               </button>
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:file" />
+                  <i class="iconify" data-icon="feather:file"></i>
                 </span>
                 <span>Files</span>
               </button>
@@ -304,13 +304,13 @@
             <div class="buttons">
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:user" />
+                  <i class="iconify" data-icon="feather:user"></i>
                 </span>
                 <span>Profile</span>
               </button>
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:message-circle" />
+                  <i class="iconify" data-icon="feather:message-circle"></i>
                 </span>
                 <span>Talk</span>
               </button>
@@ -335,13 +335,13 @@
             <div class="buttons">
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:check-circle" />
+                  <i class="iconify" data-icon="feather:check-circle"></i>
                 </span>
                 <span>Tasks</span>
               </button>
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:file" />
+                  <i class="iconify" data-icon="feather:file"></i>
                 </span>
                 <span>Files</span>
               </button>
@@ -396,13 +396,13 @@
             <div class="buttons">
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:user" />
+                  <i class="iconify" data-icon="feather:user"></i>
                 </span>
                 <span>Profile</span>
               </button>
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:message-circle" />
+                  <i class="iconify" data-icon="feather:message-circle"></i>
                 </span>
                 <span>Talk</span>
               </button>
@@ -427,13 +427,13 @@
             <div class="buttons">
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:check-circle" />
+                  <i class="iconify" data-icon="feather:check-circle"></i>
                 </span>
                 <span>Tasks</span>
               </button>
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:file" />
+                  <i class="iconify" data-icon="feather:file"></i>
                 </span>
                 <span>Files</span>
               </button>
@@ -482,13 +482,13 @@
             <div class="buttons">
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:user" />
+                  <i class="iconify" data-icon="feather:user"></i>
                 </span>
                 <span>Profile</span>
               </button>
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:message-circle" />
+                  <i class="iconify" data-icon="feather:message-circle"></i>
                 </span>
                 <span>Talk</span>
               </button>
@@ -513,13 +513,13 @@
             <div class="buttons">
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:check-circle" />
+                  <i class="iconify" data-icon="feather:check-circle"></i>
                 </span>
                 <span>Tasks</span>
               </button>
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:file" />
+                  <i class="iconify" data-icon="feather:file"></i>
                 </span>
                 <span>Files</span>
               </button>
@@ -573,13 +573,13 @@
             <div class="buttons">
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:user" />
+                  <i class="iconify" data-icon="feather:user"></i>
                 </span>
                 <span>Profile</span>
               </button>
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:message-circle" />
+                  <i class="iconify" data-icon="feather:message-circle"></i>
                 </span>
                 <span>Talk</span>
               </button>
@@ -604,13 +604,13 @@
             <div class="buttons">
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:check-circle" />
+                  <i class="iconify" data-icon="feather:check-circle"></i>
                 </span>
                 <span>Tasks</span>
               </button>
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:file" />
+                  <i class="iconify" data-icon="feather:file"></i>
                 </span>
                 <span>Files</span>
               </button>
@@ -659,13 +659,13 @@
             <div class="buttons">
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:user" />
+                  <i class="iconify" data-icon="feather:user"></i>
                 </span>
                 <span>Profile</span>
               </button>
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:message-circle" />
+                  <i class="iconify" data-icon="feather:message-circle"></i>
                 </span>
                 <span>Talk</span>
               </button>
@@ -690,13 +690,13 @@
             <div class="buttons">
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:check-circle" />
+                  <i class="iconify" data-icon="feather:check-circle"></i>
                 </span>
                 <span>Tasks</span>
               </button>
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:file" />
+                  <i class="iconify" data-icon="feather:file"></i>
                 </span>
                 <span>Files</span>
               </button>
@@ -745,13 +745,13 @@
             <div class="buttons">
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:user" />
+                  <i class="iconify" data-icon="feather:user"></i>
                 </span>
                 <span>Profile</span>
               </button>
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:message-circle" />
+                  <i class="iconify" data-icon="feather:message-circle"></i>
                 </span>
                 <span>Talk</span>
               </button>
@@ -776,13 +776,13 @@
             <div class="buttons">
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:check-circle" />
+                  <i class="iconify" data-icon="feather:check-circle"></i>
                 </span>
                 <span>Tasks</span>
               </button>
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:file" />
+                  <i class="iconify" data-icon="feather:file"></i>
                 </span>
                 <span>Files</span>
               </button>
@@ -847,13 +847,13 @@
             <div class="buttons">
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:user" />
+                  <i class="iconify" data-icon="feather:user"></i>
                 </span>
                 <span>Profile</span>
               </button>
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:message-circle" />
+                  <i class="iconify" data-icon="feather:message-circle"></i>
                 </span>
                 <span>Talk</span>
               </button>
@@ -878,13 +878,13 @@
             <div class="buttons">
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:check-circle" />
+                  <i class="iconify" data-icon="feather:check-circle"></i>
                 </span>
                 <span>Tasks</span>
               </button>
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:file" />
+                  <i class="iconify" data-icon="feather:file"></i>
                 </span>
                 <span>Files</span>
               </button>
@@ -944,13 +944,13 @@
             <div class="buttons">
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:user" />
+                  <i class="iconify" data-icon="feather:user"></i>
                 </span>
                 <span>Profile</span>
               </button>
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:message-circle" />
+                  <i class="iconify" data-icon="feather:message-circle"></i>
                 </span>
                 <span>Talk</span>
               </button>
@@ -975,13 +975,13 @@
             <div class="buttons">
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:check-circle" />
+                  <i class="iconify" data-icon="feather:check-circle"></i>
                 </span>
                 <span>Tasks</span>
               </button>
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:file" />
+                  <i class="iconify" data-icon="feather:file"></i>
                 </span>
                 <span>Files</span>
               </button>
@@ -1030,13 +1030,13 @@
             <div class="buttons">
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:user" />
+                  <i class="iconify" data-icon="feather:user"></i>
                 </span>
                 <span>Profile</span>
               </button>
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:message-circle" />
+                  <i class="iconify" data-icon="feather:message-circle"></i>
                 </span>
                 <span>Talk</span>
               </button>
@@ -1061,13 +1061,13 @@
             <div class="buttons">
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:check-circle" />
+                  <i class="iconify" data-icon="feather:check-circle"></i>
                 </span>
                 <span>Tasks</span>
               </button>
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:file" />
+                  <i class="iconify" data-icon="feather:file"></i>
                 </span>
                 <span>Files</span>
               </button>
@@ -1122,13 +1122,13 @@
             <div class="buttons">
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:user" />
+                  <i class="iconify" data-icon="feather:user"></i>
                 </span>
                 <span>Profile</span>
               </button>
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:message-circle" />
+                  <i class="iconify" data-icon="feather:message-circle"></i>
                 </span>
                 <span>Talk</span>
               </button>
@@ -1153,13 +1153,13 @@
             <div class="buttons">
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:check-circle" />
+                  <i class="iconify" data-icon="feather:check-circle"></i>
                 </span>
                 <span>Tasks</span>
               </button>
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:file" />
+                  <i class="iconify" data-icon="feather:file"></i>
                 </span>
                 <span>Files</span>
               </button>
@@ -1219,13 +1219,13 @@
             <div class="buttons">
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:user" />
+                  <i class="iconify" data-icon="feather:user"></i>
                 </span>
                 <span>Profile</span>
               </button>
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:message-circle" />
+                  <i class="iconify" data-icon="feather:message-circle"></i>
                 </span>
                 <span>Talk</span>
               </button>
@@ -1250,13 +1250,13 @@
             <div class="buttons">
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:check-circle" />
+                  <i class="iconify" data-icon="feather:check-circle"></i>
                 </span>
                 <span>Tasks</span>
               </button>
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:file" />
+                  <i class="iconify" data-icon="feather:file"></i>
                 </span>
                 <span>Files</span>
               </button>
@@ -1305,13 +1305,13 @@
             <div class="buttons">
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:user" />
+                  <i class="iconify" data-icon="feather:user"></i>
                 </span>
                 <span>Profile</span>
               </button>
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:message-circle" />
+                  <i class="iconify" data-icon="feather:message-circle"></i>
                 </span>
                 <span>Talk</span>
               </button>
@@ -1336,13 +1336,13 @@
             <div class="buttons">
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:check-circle" />
+                  <i class="iconify" data-icon="feather:check-circle"></i>
                 </span>
                 <span>Tasks</span>
               </button>
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:file" />
+                  <i class="iconify" data-icon="feather:file"></i>
                 </span>
                 <span>Files</span>
               </button>
@@ -1391,13 +1391,13 @@
             <div class="buttons">
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:user" />
+                  <i class="iconify" data-icon="feather:user"></i>
                 </span>
                 <span>Profile</span>
               </button>
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:message-circle" />
+                  <i class="iconify" data-icon="feather:message-circle"></i>
                 </span>
                 <span>Talk</span>
               </button>
@@ -1422,13 +1422,13 @@
             <div class="buttons">
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:check-circle" />
+                  <i class="iconify" data-icon="feather:check-circle"></i>
                 </span>
                 <span>Tasks</span>
               </button>
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:file" />
+                  <i class="iconify" data-icon="feather:file"></i>
                 </span>
                 <span>Files</span>
               </button>
@@ -1482,13 +1482,13 @@
             <div class="buttons">
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:user" />
+                  <i class="iconify" data-icon="feather:user"></i>
                 </span>
                 <span>Profile</span>
               </button>
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:message-circle" />
+                  <i class="iconify" data-icon="feather:message-circle"></i>
                 </span>
                 <span>Talk</span>
               </button>
@@ -1513,13 +1513,13 @@
             <div class="buttons">
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:check-circle" />
+                  <i class="iconify" data-icon="feather:check-circle"></i>
                 </span>
                 <span>Tasks</span>
               </button>
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:file" />
+                  <i class="iconify" data-icon="feather:file"></i>
                 </span>
                 <span>Files</span>
               </button>
@@ -1579,13 +1579,13 @@
             <div class="buttons">
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:user" />
+                  <i class="iconify" data-icon="feather:user"></i>
                 </span>
                 <span>Profile</span>
               </button>
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:message-circle" />
+                  <i class="iconify" data-icon="feather:message-circle"></i>
                 </span>
                 <span>Talk</span>
               </button>
@@ -1610,13 +1610,13 @@
             <div class="buttons">
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:check-circle" />
+                  <i class="iconify" data-icon="feather:check-circle"></i>
                 </span>
                 <span>Tasks</span>
               </button>
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:file" />
+                  <i class="iconify" data-icon="feather:file"></i>
                 </span>
                 <span>Files</span>
               </button>
@@ -1659,13 +1659,13 @@
             <div class="buttons">
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:user" />
+                  <i class="iconify" data-icon="feather:user"></i>
                 </span>
                 <span>Profile</span>
               </button>
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:message-circle" />
+                  <i class="iconify" data-icon="feather:message-circle"></i>
                 </span>
                 <span>Talk</span>
               </button>

@@ -71,7 +71,8 @@ const props = defineProps({
                 >
                 <span class="item-meta">
                   <span data-filter-match
-                    ><Icon icon="feather:clock" />3 months</span
+                    ><i class="iconify" data-icon="feather:clock"></i>3
+                    months</span
                   >
                 </span>
               </div>
@@ -147,7 +148,8 @@ const props = defineProps({
                 >
                 <span class="item-meta">
                   <span data-filter-match
-                    ><Icon icon="feather:clock" />2 months</span
+                    ><i class="iconify" data-icon="feather:clock"></i>2
+                    months</span
                   >
                 </span>
               </div>
@@ -194,7 +196,8 @@ const props = defineProps({
                 >
                 <span class="item-meta">
                   <span data-filter-match
-                    ><Icon icon="feather:clock" />6 months</span
+                    ><i class="iconify" data-icon="feather:clock"></i>6
+                    months</span
                   >
                 </span>
               </div>
@@ -273,7 +276,8 @@ const props = defineProps({
                 >
                 <span class="item-meta">
                   <span data-filter-match
-                    ><Icon icon="feather:clock" />1 month</span
+                    ><i class="iconify" data-icon="feather:clock"></i>1
+                    month</span
                   >
                 </span>
               </div>
@@ -342,7 +346,8 @@ const props = defineProps({
                 >
                 <span class="item-meta">
                   <span data-filter-match
-                    ><Icon icon="feather:clock" />3 weeks</span
+                    ><i class="iconify" data-icon="feather:clock"></i>3
+                    weeks</span
                   >
                 </span>
               </div>
@@ -395,7 +400,8 @@ const props = defineProps({
                 >
                 <span class="item-meta">
                   <span data-filter-match
-                    ><Icon icon="feather:clock" />3 months</span
+                    ><i class="iconify" data-icon="feather:clock"></i>3
+                    months</span
                   >
                 </span>
               </div>
@@ -459,7 +465,8 @@ const props = defineProps({
                 >
                 <span class="item-meta">
                   <span data-filter-match
-                    ><Icon icon="feather:clock" />5 months</span
+                    ><i class="iconify" data-icon="feather:clock"></i>5
+                    months</span
                   >
                 </span>
               </div>
@@ -541,7 +548,8 @@ const props = defineProps({
                 >
                 <span class="item-meta">
                   <span data-filter-match
-                    ><Icon icon="feather:clock" />2 months</span
+                    ><i class="iconify" data-icon="feather:clock"></i>2
+                    months</span
                   >
                 </span>
               </div>
@@ -616,7 +624,8 @@ const props = defineProps({
                 >
                 <span class="item-meta">
                   <span data-filter-match
-                    ><Icon icon="feather:clock" />2 weeks</span
+                    ><i class="iconify" data-icon="feather:clock"></i>2
+                    weeks</span
                   >
                 </span>
               </div>
@@ -669,7 +678,8 @@ const props = defineProps({
                 >
                 <span class="item-meta">
                   <span data-filter-match
-                    ><Icon icon="feather:clock" />5 months</span
+                    ><i class="iconify" data-icon="feather:clock"></i>5
+                    months</span
                   >
                 </span>
               </div>

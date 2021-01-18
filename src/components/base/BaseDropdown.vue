@@ -32,11 +32,13 @@ const props = defineProps({
 const {
   dropdownElement,
   open,
+  close,
+  toggle,
   isOpen,
 } = useDropdown()
 </script>
 
-<template>
+<template inherit-attrs="false">
   <div
     ref="dropdownElement"
     :class="[
@@ -49,8 +51,15 @@ const {
     ]"
     class="dropdown dropdown-trigger"
   >
-    <slot name="button" :title="title" :open="open" :is-open="isOpen">
-      <button v-bind="$attrs" class="is-trigger button" @click="open">
+    <slot
+      name="button"
+      :title="title"
+      :open="open"
+      :close="close"
+      :toggle="toggle"
+      :is-open="isOpen"
+    >
+      <button v-bind="$attrs" class="is-trigger button" @click="toggle">
         <span v-if="title">{{ title }}</span>
         <span :class="[!modern && 'icon is-small', modern && 'caret']">
           <Icon v-if="!isOpen" icon="fa:angle-down" />

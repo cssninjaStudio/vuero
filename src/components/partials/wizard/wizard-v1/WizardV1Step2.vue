@@ -12,7 +12,7 @@
         <div class="control has-icon">
           <input id="customers-search" class="input" placeholder="search..." />
           <div class="form-icon">
-            <Icon icon="feather:search" />
+            <i class="iconify" data-icon="feather:search"></i>
           </div>
         </div>
       </div>
@@ -33,7 +33,7 @@
         <div class="flex-end">
           <button id="remove-customer" class="button is-circle">
             <span class="icon is-small">
-              <Icon icon="feather:x" />
+              <i class="iconify" data-icon="feather:x"></i>
             </span>
           </button>
         </div>
@@ -45,7 +45,7 @@
       <div class="project-dates-inner">
         <div class="project-date">
           <div class="date-icon">
-            <Icon icon="feather:map-pin" />
+            <i class="iconify" data-icon="feather:map-pin"></i>
           </div>
           <div class="control">
             <input
@@ -58,7 +58,7 @@
         <div class="separator"></div>
         <div class="project-date">
           <div class="date-icon">
-            <Icon icon="feather:flag" />
+            <i class="iconify" data-icon="feather:flag"></i>
           </div>
           <div class="control">
             <input

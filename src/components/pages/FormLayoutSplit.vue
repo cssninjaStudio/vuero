@@ -80,7 +80,7 @@ const isStuck = computed(() => {
               <div class="control has-icon">
                 <input class="input" placeholder="Amount..." />
                 <div class="form-icon">
-                  <Icon icon="feather:dollar-sign" />
+                  <i class="iconify" data-icon="feather:dollar-sign"></i>
                 </div>
               </div>
             </div>
@@ -94,7 +94,7 @@ const isStuck = computed(() => {
               <div class="control has-icon">
                 <input class="input" placeholder="First Name *" />
                 <div class="form-icon">
-                  <Icon icon="feather:user" />
+                  <i class="iconify" data-icon="feather:user"></i>
                 </div>
               </div>
             </div>
@@ -102,7 +102,7 @@ const isStuck = computed(() => {
               <div class="control has-icon">
                 <input class="input" placeholder="Last Name *" />
                 <div class="form-icon">
-                  <Icon icon="feather:user" />
+                  <i class="iconify" data-icon="feather:user"></i>
                 </div>
               </div>
             </div>
@@ -110,7 +110,7 @@ const isStuck = computed(() => {
               <div class="control has-icon">
                 <input class="input" placeholder="Email Address *" />
                 <div class="form-icon">
-                  <Icon icon="feather:mail" />
+                  <i class="iconify" data-icon="feather:mail"></i>
                 </div>
               </div>
             </div>
@@ -118,7 +118,7 @@ const isStuck = computed(() => {
               <div class="control has-icon">
                 <input class="input" placeholder="Phone Number *" />
                 <div class="form-icon">
-                  <Icon icon="feather:phone" />
+                  <i class="iconify" data-icon="feather:phone"></i>
                 </div>
               </div>
             </div>
@@ -133,7 +133,7 @@ const isStuck = computed(() => {
                     <span>Bank Account</span>
                   </div>
                   <div class="select-icon">
-                    <Icon icon="feather:chevron-down" />
+                    <i class="iconify" data-icon="feather:chevron-down"></i>
                   </div>
                   <div class="select-drop has-slimscroll-sm">
                     <div class="drop-inner">
@@ -162,7 +162,7 @@ const isStuck = computed(() => {
                     <span>Transfer Fees</span>
                   </div>
                   <div class="select-icon">
-                    <Icon icon="feather:chevron-down" />
+                    <i class="iconify" data-icon="feather:chevron-down"></i>
                   </div>
                   <div class="select-drop has-slimscroll-sm">
                     <div class="drop-inner">

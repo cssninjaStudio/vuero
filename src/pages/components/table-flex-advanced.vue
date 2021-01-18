@@ -66,7 +66,7 @@ useTitle('Components - Table Flex Advanced - Vuero')
                 <li>
                   <RouterLink :to="{ name: 'index' }">
                     <span class="icon is-small is-solo">
-                      <Icon icon="feather:home" />
+                      <i class="iconify" data-icon="feather:home"></i>
                     </span>
                   </RouterLink>
                 </li>
@@ -108,7 +108,7 @@ useTitle('Components - Table Flex Advanced - Vuero')
                           placeholder="Filter..."
                         />
                         <div class="form-icon">
-                          <Icon icon="feather:search" />
+                          <i class="iconify" data-icon="feather:search"></i>
                         </div>
                       </div>
                     </div>
@@ -120,7 +120,10 @@ useTitle('Components - Table Flex Advanced - Vuero')
                             <span>10 results per page</span>
                           </div>
                           <div class="select-icon">
-                            <Icon icon="feather:chevron-down" />
+                            <i
+                              class="iconify"
+                              data-icon="feather:chevron-down"
+                            ></i>
                           </div>
                           <div class="select-drop has-slimscroll-sm">
                             <div class="drop-inner">

@@ -66,7 +66,7 @@ useTitle('Components - Icon Box - Vuero')
                 <li>
                   <RouterLink :to="{ name: 'index' }">
                     <span class="icon is-small is-solo">
-                      <Icon icon="feather:home" />
+                      <i class="iconify" data-icon="feather:home"></i>
                     </span>
                   </RouterLink>
                 </li>
@@ -98,8 +98,8 @@ useTitle('Components - Icon Box - Vuero')
                       more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                      <i class="iconify open" data-icon="feather:code"></i>
+                      <i class="iconify close" data-icon="feather:x"></i>
                     </a>
                   </div>
                   <div class="card-inner">
@@ -166,8 +166,8 @@ useTitle('Components - Icon Box - Vuero')
                       more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                      <i class="iconify open" data-icon="feather:code"></i>
+                      <i class="iconify close" data-icon="feather:x"></i>
                     </a>
                   </div>
                   <div class="card-inner">
@@ -260,8 +260,8 @@ useTitle('Components - Icon Box - Vuero')
                       about usage.
                     </p>
                     <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                      <i class="iconify open" data-icon="feather:code"></i>
+                      <i class="iconify close" data-icon="feather:x"></i>
                     </a>
                   </div>
                   <div class="card-inner">
@@ -354,8 +354,8 @@ useTitle('Components - Icon Box - Vuero')
                       about usage.
                     </p>
                     <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                      <i class="iconify open" data-icon="feather:code"></i>
+                      <i class="iconify close" data-icon="feather:x"></i>
                     </a>
                   </div>
                   <div class="card-inner">
@@ -448,8 +448,8 @@ useTitle('Components - Icon Box - Vuero')
                       about usage.
                     </p>
                     <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                      <i class="iconify open" data-icon="feather:code"></i>
+                      <i class="iconify close" data-icon="feather:x"></i>
                     </a>
                   </div>
                   <div class="card-inner">
@@ -561,44 +561,44 @@ useTitle('Components - Icon Box - Vuero')
                       existing icons with some from Feather Icons.
                     </p>
                     <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                      <i class="iconify open" data-icon="feather:code"></i>
+                      <i class="iconify close" data-icon="feather:x"></i>
                     </a>
                   </div>
                   <div class="card-inner">
                     <div class="icons">
                       <div class="h-icon is-medium is-primary is-rounded">
-                        <Icon icon="feather:award" />
+                        <i class="iconify" data-icon="feather:award"></i>
                       </div>
                       <div class="h-icon is-medium is-info is-rounded">
-                        <Icon icon="feather:chrome" />
+                        <i class="iconify" data-icon="feather:chrome"></i>
                       </div>
                       <div class="h-icon is-medium is-success is-rounded">
-                        <Icon icon="feather:clock" />
+                        <i class="iconify" data-icon="feather:clock"></i>
                       </div>
                       <div class="h-icon is-medium is-warning is-rounded">
-                        <Icon icon="feather:coffee" />
+                        <i class="iconify" data-icon="feather:coffee"></i>
                       </div>
                       <div class="h-icon is-medium is-danger is-rounded">
-                        <Icon icon="feather:home" />
+                        <i class="iconify" data-icon="feather:home"></i>
                       </div>
                       <div class="h-icon is-medium is-purple is-rounded">
-                        <Icon icon="feather:lock" />
+                        <i class="iconify" data-icon="feather:lock"></i>
                       </div>
                       <div class="h-icon is-medium is-yellow is-rounded">
-                        <Icon icon="feather:moon" />
+                        <i class="iconify" data-icon="feather:moon"></i>
                       </div>
                       <div class="h-icon is-medium is-orange is-rounded">
-                        <Icon icon="feather:phone" />
+                        <i class="iconify" data-icon="feather:phone"></i>
                       </div>
                       <div class="h-icon is-medium is-green is-rounded">
-                        <Icon icon="feather:paperclip" />
+                        <i class="iconify" data-icon="feather:paperclip"></i>
                       </div>
                       <div class="h-icon is-medium is-red is-rounded">
-                        <Icon icon="feather:smile" />
+                        <i class="iconify" data-icon="feather:smile"></i>
                       </div>
                       <div class="h-icon is-medium is-blue is-rounded">
-                        <Icon icon="feather:shield" />
+                        <i class="iconify" data-icon="feather:shield"></i>
                       </div>
                     </div>
 
@@ -652,8 +652,8 @@ useTitle('Components - Icon Box - Vuero')
                       existing icons with some from Font Awesome.
                     </p>
                     <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                      <i class="iconify open" data-icon="feather:code"></i>
+                      <i class="iconify close" data-icon="feather:x"></i>
                     </a>
                   </div>
                   <div class="card-inner">

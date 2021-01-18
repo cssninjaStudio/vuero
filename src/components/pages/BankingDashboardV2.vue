@@ -19,7 +19,7 @@ import { expensesOptions } from '/@src/composition/state/charts/apexcharts/examp
               <div class="controls">
                 <button class="button is-large">
                   <span class="icon is-medium">
-                    <Icon icon="feather:plus" />
+                    <i class="iconify" data-icon="feather:plus"></i>
                   </span>
                 </button>
               </div>
@@ -213,7 +213,7 @@ import { expensesOptions } from '/@src/composition/state/charts/apexcharts/examp
                   </div>
                   <div class="stat-block">
                     <div class="stat-icon is-up">
-                      <Icon icon="feather:arrow-right" />
+                      <i class="iconify" data-icon="feather:arrow-right"></i>
                     </div>
                     <div class="stat-text">
                       <span>+ 2,324.12</span>
@@ -226,7 +226,7 @@ import { expensesOptions } from '/@src/composition/state/charts/apexcharts/examp
                   </div>
                   <div class="stat-block">
                     <div class="stat-icon is-down">
-                      <Icon icon="feather:arrow-right" />
+                      <i class="iconify" data-icon="feather:arrow-right"></i>
                     </div>
                     <div class="stat-text">
                       <span>+ 518.41</span>

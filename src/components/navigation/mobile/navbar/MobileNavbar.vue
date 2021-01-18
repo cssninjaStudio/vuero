@@ -141,7 +141,7 @@ const otherLayoutLink = computed(() => {
                     class="button h-button is-primary is-raised is-fullwidth logout-button"
                   >
                     <span class="icon is-small">
-                      <Icon icon="feather:log-out" />
+                      <i class="iconify" data-icon="feather:log-out"></i>
                     </span>
                     <span>Logout</span>
                   </button>

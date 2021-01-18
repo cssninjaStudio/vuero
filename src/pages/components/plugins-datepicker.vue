@@ -66,7 +66,7 @@ useTitle('Components - Plugins Datepicker - Vuero')
                 <li>
                   <RouterLink :to="{ name: 'index' }">
                     <span class="icon is-small is-solo">
-                      <Icon icon="feather:home" />
+                      <i class="iconify" data-icon="feather:home"></i>
                     </span>
                   </RouterLink>
                 </li>
@@ -106,8 +106,8 @@ useTitle('Components - Plugins Datepicker - Vuero')
                       for more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                      <i class="iconify open" data-icon="feather:code"></i>
+                      <i class="iconify close" data-icon="feather:x"></i>
                     </a>
                   </div>
                   <div class="card-inner">
@@ -152,8 +152,8 @@ bulmaCalendar.attach('#bulma-datepicker-7', {
                       for more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                      <i class="iconify open" data-icon="feather:code"></i>
+                      <i class="iconify close" data-icon="feather:x"></i>
                     </a>
                   </div>
                   <div class="card-inner">
@@ -204,8 +204,8 @@ bulmaCalendar.attach('#bulma-datepicker-1', {
                       for more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                      <i class="iconify open" data-icon="feather:code"></i>
+                      <i class="iconify close" data-icon="feather:x"></i>
                     </a>
                   </div>
                   <div class="card-inner">
@@ -260,8 +260,8 @@ bulmaCalendar.attach('#bulma-datepicker-2', {
                       for more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                      <i class="iconify open" data-icon="feather:code"></i>
+                      <i class="iconify close" data-icon="feather:x"></i>
                     </a>
                   </div>
                   <div class="card-inner">
@@ -315,8 +315,8 @@ bulmaCalendar.attach('#bulma-datepicker-3', {
                       for more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                      <i class="iconify open" data-icon="feather:code"></i>
+                      <i class="iconify close" data-icon="feather:x"></i>
                     </a>
                   </div>
                   <div class="card-inner">
@@ -366,8 +366,8 @@ bulmaCalendar.attach('#bulma-datepicker-4', {
                       for more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                      <i class="iconify open" data-icon="feather:code"></i>
+                      <i class="iconify close" data-icon="feather:x"></i>
                     </a>
                   </div>
                   <div class="card-inner">
@@ -417,8 +417,8 @@ bulmaCalendar.attach('#bulma-datepicker-5', {
                       for more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                      <i class="iconify open" data-icon="feather:code"></i>
+                      <i class="iconify close" data-icon="feather:x"></i>
                     </a>
                   </div>
                   <div class="card-inner">
@@ -466,8 +466,8 @@ bulmaCalendar.attach('#bulma-datepicker-6', {
                       example shows you how to use it.
                     </p>
                     <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                      <i class="iconify open" data-icon="feather:code"></i>
+                      <i class="iconify close" data-icon="feather:x"></i>
                     </a>
                   </div>
                   <div class="card-inner">
@@ -479,7 +479,7 @@ bulmaCalendar.attach('#bulma-datepicker-6', {
                           placeholder="select a date"
                         />
                         <div class="form-icon">
-                          <Icon icon="feather:calendar" />
+                          <i class="iconify" data-icon="feather:calendar"></i>
                         </div>
                       </div>
                     </div>

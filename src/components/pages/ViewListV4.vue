@@ -68,13 +68,13 @@ const props = defineProps({
                 <span>by Alice C.</span>
               </h3>
               <span>
-                <Icon icon="feather:archive" />
+                <i class="iconify" data-icon="feather:archive"></i>
                 <span data-filter-match>Cakes</span>
                 <i class="fas fa-circle icon-separator"></i>
-                <Icon icon="feather:clock" />
+                <i class="iconify" data-icon="feather:clock"></i>
                 <span data-filter-match>1h 45m</span>
                 <i class="fas fa-circle icon-separator"></i>
-                <Icon icon="feather:paperclip" />
+                <i class="iconify" data-icon="feather:paperclip"></i>
                 <span data-filter-match>3 files</span>
               </span>
             </div>
@@ -117,7 +117,7 @@ const props = defineProps({
                   data-hint="Save"
                 >
                   <span class="icon is-small">
-                    <Icon icon="feather:heart" />
+                    <i class="iconify" data-icon="feather:heart"></i>
                   </span>
                 </button>
               </div>
@@ -151,13 +151,13 @@ const props = defineProps({
                 <span>by Jimmy H.</span>
               </h3>
               <span>
-                <Icon icon="feather:archive" />
+                <i class="iconify" data-icon="feather:archive"></i>
                 <span data-filter-match>Cakes</span>
                 <i class="fas fa-circle icon-separator"></i>
-                <Icon icon="feather:clock" />
+                <i class="iconify" data-icon="feather:clock"></i>
                 <span data-filter-match>1h 15m</span>
                 <i class="fas fa-circle icon-separator"></i>
-                <Icon icon="feather:paperclip" />
+                <i class="iconify" data-icon="feather:paperclip"></i>
                 <span data-filter-match>2 files</span>
               </span>
             </div>
@@ -219,7 +219,7 @@ const props = defineProps({
                   data-hint="Save"
                 >
                   <span class="icon is-small">
-                    <Icon icon="feather:heart" />
+                    <i class="iconify" data-icon="feather:heart"></i>
                   </span>
                 </button>
               </div>
@@ -253,13 +253,13 @@ const props = defineProps({
                 <span>by Hilde V.</span>
               </h3>
               <span>
-                <Icon icon="feather:archive" />
+                <i class="iconify" data-icon="feather:archive"></i>
                 <span data-filter-match>Cakes</span>
                 <i class="fas fa-circle icon-separator"></i>
-                <Icon icon="feather:clock" />
+                <i class="iconify" data-icon="feather:clock"></i>
                 <span data-filter-match>2h</span>
                 <i class="fas fa-circle icon-separator"></i>
-                <Icon icon="feather:paperclip" />
+                <i class="iconify" data-icon="feather:paperclip"></i>
                 <span data-filter-match>4 files</span>
               </span>
             </div>
@@ -321,7 +321,7 @@ const props = defineProps({
                   data-hint="Save"
                 >
                   <span class="icon is-small">
-                    <Icon icon="feather:heart" />
+                    <i class="iconify" data-icon="feather:heart"></i>
                   </span>
                 </button>
               </div>
@@ -355,13 +355,13 @@ const props = defineProps({
                 <span>by Courtney W.</span>
               </h3>
               <span>
-                <Icon icon="feather:archive" />
+                <i class="iconify" data-icon="feather:archive"></i>
                 <span data-filter-match>Cakes</span>
                 <i class="fas fa-circle icon-separator"></i>
-                <Icon icon="feather:clock" />
+                <i class="iconify" data-icon="feather:clock"></i>
                 <span data-filter-match>3h 30m</span>
                 <i class="fas fa-circle icon-separator"></i>
-                <Icon icon="feather:paperclip" />
+                <i class="iconify" data-icon="feather:paperclip"></i>
                 <span data-filter-match>7 files</span>
               </span>
             </div>
@@ -423,7 +423,7 @@ const props = defineProps({
                   data-hint="Save"
                 >
                   <span class="icon is-small">
-                    <Icon icon="feather:heart" />
+                    <i class="iconify" data-icon="feather:heart"></i>
                   </span>
                 </button>
               </div>
@@ -458,13 +458,13 @@ const props = defineProps({
                 <span>by Ryan B.</span>
               </h3>
               <span>
-                <Icon icon="feather:archive" />
+                <i class="iconify" data-icon="feather:archive"></i>
                 <span data-filter-match>Waffles</span>
                 <i class="fas fa-circle icon-separator"></i>
-                <Icon icon="feather:clock" />
+                <i class="iconify" data-icon="feather:clock"></i>
                 <span data-filter-match>1h 00m</span>
                 <i class="fas fa-circle icon-separator"></i>
-                <Icon icon="feather:paperclip" />
+                <i class="iconify" data-icon="feather:paperclip"></i>
                 <span data-filter-match>2 files</span>
               </span>
             </div>
@@ -526,7 +526,7 @@ const props = defineProps({
                   data-hint="Save"
                 >
                   <span class="icon is-small">
-                    <Icon icon="feather:heart" />
+                    <i class="iconify" data-icon="feather:heart"></i>
                   </span>
                 </button>
               </div>
@@ -560,13 +560,13 @@ const props = defineProps({
                 <span>by Alice C.</span>
               </h3>
               <span>
-                <Icon icon="feather:archive" />
+                <i class="iconify" data-icon="feather:archive"></i>
                 <span data-filter-match>Slices</span>
                 <i class="fas fa-circle icon-separator"></i>
-                <Icon icon="feather:clock" />
+                <i class="iconify" data-icon="feather:clock"></i>
                 <span data-filter-match>45m</span>
                 <i class="fas fa-circle icon-separator"></i>
-                <Icon icon="feather:paperclip" />
+                <i class="iconify" data-icon="feather:paperclip"></i>
                 <span data-filter-match>1 file</span>
               </span>
             </div>
@@ -628,7 +628,7 @@ const props = defineProps({
                   data-hint="Save"
                 >
                   <span class="icon is-small">
-                    <Icon icon="feather:heart" />
+                    <i class="iconify" data-icon="feather:heart"></i>
                   </span>
                 </button>
               </div>
@@ -662,13 +662,13 @@ const props = defineProps({
                 <span>by Elizabeth F.</span>
               </h3>
               <span>
-                <Icon icon="feather:archive" />
+                <i class="iconify" data-icon="feather:archive"></i>
                 <span data-filter-match>Donuts</span>
                 <i class="fas fa-circle icon-separator"></i>
-                <Icon icon="feather:clock" />
+                <i class="iconify" data-icon="feather:clock"></i>
                 <span data-filter-match>2h 15m</span>
                 <i class="fas fa-circle icon-separator"></i>
-                <Icon icon="feather:paperclip" />
+                <i class="iconify" data-icon="feather:paperclip"></i>
                 <span data-filter-match>2 files</span>
               </span>
             </div>
@@ -730,7 +730,7 @@ const props = defineProps({
                   data-hint="Save"
                 >
                   <span class="icon is-small">
-                    <Icon icon="feather:heart" />
+                    <i class="iconify" data-icon="feather:heart"></i>
                   </span>
                 </button>
               </div>
@@ -764,13 +764,13 @@ const props = defineProps({
                 <span>by Joshua S.</span>
               </h3>
               <span>
-                <Icon icon="feather:archive" />
+                <i class="iconify" data-icon="feather:archive"></i>
                 <span data-filter-match>Sandwiches</span>
                 <i class="fas fa-circle icon-separator"></i>
-                <Icon icon="feather:clock" />
+                <i class="iconify" data-icon="feather:clock"></i>
                 <span data-filter-match>15m</span>
                 <i class="fas fa-circle icon-separator"></i>
-                <Icon icon="feather:paperclip" />
+                <i class="iconify" data-icon="feather:paperclip"></i>
                 <span data-filter-match>1 file</span>
               </span>
             </div>
@@ -832,7 +832,7 @@ const props = defineProps({
                   data-hint="Save"
                 >
                   <span class="icon is-small">
-                    <Icon icon="feather:heart" />
+                    <i class="iconify" data-icon="feather:heart"></i>
                   </span>
                 </button>
               </div>
@@ -866,13 +866,13 @@ const props = defineProps({
                 <span>by Joshua S.</span>
               </h3>
               <span>
-                <Icon icon="feather:archive" />
+                <i class="iconify" data-icon="feather:archive"></i>
                 <span data-filter-match>Slices</span>
                 <i class="fas fa-circle icon-separator"></i>
-                <Icon icon="feather:clock" />
+                <i class="iconify" data-icon="feather:clock"></i>
                 <span data-filter-match>15m</span>
                 <i class="fas fa-circle icon-separator"></i>
-                <Icon icon="feather:paperclip" />
+                <i class="iconify" data-icon="feather:paperclip"></i>
                 <span data-filter-match>1 file</span>
               </span>
             </div>
@@ -934,7 +934,7 @@ const props = defineProps({
                   data-hint="Save"
                 >
                   <span class="icon is-small">
-                    <Icon icon="feather:heart" />
+                    <i class="iconify" data-icon="feather:heart"></i>
                   </span>
                 </button>
               </div>
@@ -968,13 +968,13 @@ const props = defineProps({
                 <span>by Kelly M.</span>
               </h3>
               <span>
-                <Icon icon="feather:archive" />
+                <i class="iconify" data-icon="feather:archive"></i>
                 <span data-filter-match>Slices</span>
                 <i class="fas fa-circle icon-separator"></i>
-                <Icon icon="feather:clock" />
+                <i class="iconify" data-icon="feather:clock"></i>
                 <span data-filter-match>1h 15m</span>
                 <i class="fas fa-circle icon-separator"></i>
-                <Icon icon="feather:paperclip" />
+                <i class="iconify" data-icon="feather:paperclip"></i>
                 <span data-filter-match>2 files</span>
               </span>
             </div>
@@ -1036,7 +1036,7 @@ const props = defineProps({
                   data-hint="Save"
                 >
                   <span class="icon is-small">
-                    <Icon icon="feather:heart" />
+                    <i class="iconify" data-icon="feather:heart"></i>
                   </span>
                 </button>
               </div>
