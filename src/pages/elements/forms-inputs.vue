@@ -91,44 +91,7 @@ useTitle('Elements - Forms Inputs - Vuero')
             <div class="columns">
               <div class="column is-12">
                 <!--Input-->
-                <div class="demo-card">
-                  <div class="demo-title">
-                    <h3 class="title is-thin is-5">Input</h3>
-                    <p>
-                      Vuero provides elegant form controls with minimum styling.
-                      You can use regular inputs by adding the
-                      <code>input</code> class to a html
-                      <code>input</code> element. It's better to wrap inputs
-                      inside a <code>field</code> and a <code>control</code> for
-                      consistency.
-                    </p>
-                    <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
-                    </a>
-                  </div>
-                  <div class="card-inner">
-                    <div class="field">
-                      <div class="control">
-                        <input
-                          type="text"
-                          class="input"
-                          placeholder="Username"
-                        />
-                      </div>
-                    </div>
-
-                    <div class="highlight highlight-block">
-                      <pre><code class="code-highlight">
-&#x3C;div class=&#x22;field&#x22;&#x3E;
-    &#x3C;div class=&#x22;control&#x22;&#x3E;
-        &#x3C;input type=&#x22;text&#x22; class=&#x22;input&#x22; placeholder=&#x22;Username&#x22;&#x3E;
-    &#x3C;/div&#x3E;
-&#x3C;/div&#x3E;
-</code></pre>
-                    </div>
-                  </div>
-                </div>
+                <InputBasicDocumentation />
 
                 <!--Help Text-->
                 <div class="demo-card">

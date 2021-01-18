@@ -110,59 +110,7 @@ useTitle('Elements - Buttons - Vuero')
                 <ButtonElevatedDocumentation />
 
                 <!--Loading Buttons-->
-                <div class="demo-card">
-                  <div class="demo-title">
-                    <h3 class="title is-thin is-5">Loading</h3>
-                    <p>
-                      Vuero buttons can be shown in a loading state. To show a
-                      loading spinner, add the <code>is-loading</code> modifier
-                      class.
-                    </p>
-                    <a
-                      class="code-trigger"
-                      :class="[display.loadingButton && 'is-active']"
-                      @click="display.loadingButton = !display.loadingButton"
-                    >
-                      <span
-                        v-show="display.loadingButton"
-                        class="iconify open"
-                        data-icon="feather:code"
-                      />
-                      <span
-                        v-show="!display.loadingButton"
-                        class="iconify close"
-                        data-icon="feather:x"
-                      />
-                    </a>
-                  </div>
-                  <div class="card-inner">
-                    <div class="buttons">
-                      <a class="button h-button is-loading">Button</a>
-                      <a class="button h-button is-primary is-loading"
-                        >Button</a
-                      >
-                      <a class="button h-button is-info is-loading">Button</a>
-                      <a
-                        class="button h-button is-success is-loading is-rounded"
-                        >Button</a
-                      >
-                      <a
-                        class="button h-button is-warning is-loading is-rounded"
-                        >Button</a
-                      >
-                      <a class="button h-button is-danger is-loading is-rounded"
-                        >Button</a
-                      >
-                    </div>
-
-                    <HighlightJS
-                      v-if="display.loadingButton"
-                      language="vue"
-                      class="highlight highlight-block"
-                      :code="examples.loadingButton"
-                    />
-                  </div>
-                </div>
+                <ButtonLoadingDocumentation />
 
                 <!--Disabled Buttons-->
                 <div class="demo-card">

@@ -23,11 +23,11 @@ Simply use the same markup that we have for solid buttons and add the `is-light`
 <!--example-->
 
 <div class="buttons">
-  <a class="button h-button is-primary is-light">Primary</a>
-  <a class="button h-button is-info is-light">Info</a>
-  <a class="button h-button is-success is-light">Success</a>
-  <a class="button h-button is-warning is-light">Warning</a>
-  <a class="button h-button is-danger is-light">Danger</a>
+  <a class="button h-button is-primary is-light" @click="clickMe">Primary</a>
+  <a class="button h-button is-info is-light" @click="clickMe">Info</a>
+  <a class="button h-button is-success is-light" @click="clickMe">Success</a>
+  <a class="button h-button is-warning is-light" @click="clickMe">Warning</a>
+  <a class="button h-button is-danger is-light" @click="clickMe">Danger</a>
 </div>
 
 <!--/example-->
