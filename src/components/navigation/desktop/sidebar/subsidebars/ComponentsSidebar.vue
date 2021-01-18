@@ -25,7 +25,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         <li v-has-children class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Accordions <Icon icon="feather:chevron-right"
+              >Accordions <i class="iconify" data-icon="feather:chevron-right"
             /></a>
           </div>
           <ul>
@@ -87,7 +87,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         <li v-has-children class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Tabs <Icon icon="feather:chevron-right"
+              >Tabs <i class="iconify" data-icon="feather:chevron-right"
             /></a>
           </div>
           <ul>
@@ -112,7 +112,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         <li v-has-children class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Flex Table <Icon icon="feather:chevron-right"
+              >Flex Table <i class="iconify" data-icon="feather:chevron-right"
             /></a>
           </div>
           <ul>
@@ -157,7 +157,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         <li v-has-children class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Plugins <Icon icon="feather:chevron-right"
+              >Plugins <i class="iconify" data-icon="feather:chevron-right"
             /></a>
           </div>
           <ul>
@@ -254,7 +254,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         <li v-has-children class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Rich Text <Icon icon="feather:chevron-right"
+              >Rich Text <i class="iconify" data-icon="feather:chevron-right"
             /></a>
           </div>
           <ul>

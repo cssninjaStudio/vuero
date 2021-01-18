@@ -25,7 +25,7 @@ import { optionsCircle } from '/@src/composition/state/charts/apexcharts/example
               </div>
               <div class="tile-foot">
                 <span class="text-h-green"
-                  >+6.4% <Icon icon="feather:trending-up"
+                  >+6.4% <i class="iconify" data-icon="feather:trending-up"
                 /></span>
                 <span>since last month</span>
               </div>
@@ -45,7 +45,7 @@ import { optionsCircle } from '/@src/composition/state/charts/apexcharts/example
               </div>
               <div class="tile-foot">
                 <span class="text-h-red"
-                  >-2.1% <Icon icon="feather:trending-down"
+                  >-2.1% <i class="iconify" data-icon="feather:trending-down"
                 /></span>
                 <span>going down</span>
               </div>
@@ -65,7 +65,7 @@ import { optionsCircle } from '/@src/composition/state/charts/apexcharts/example
               </div>
               <div class="tile-foot">
                 <span class="text-h-green"
-                  >+4.2% <Icon icon="feather:trending-up"
+                  >+4.2% <i class="iconify" data-icon="feather:trending-up"
                 /></span>
                 <span>going up</span>
               </div>
@@ -144,7 +144,7 @@ import { optionsCircle } from '/@src/composition/state/charts/apexcharts/example
                 </progress>
                 <div class="progress-foot">
                   <span class="text-h-green"
-                    >+6.4% <Icon icon="feather:trending-up"
+                    >+6.4% <i class="iconify" data-icon="feather:trending-up"
                   /></span>
                   <span>since last month</span>
                 </div>
