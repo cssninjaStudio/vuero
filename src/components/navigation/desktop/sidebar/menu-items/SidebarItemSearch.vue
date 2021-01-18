@@ -5,13 +5,13 @@ import { activePanel } from '/@src/composition/state/ui/activePanelState'
 <template>
   <li class="right-panel-trigger">
     <a id="open-search" @click="activePanel = 'search'"
-      ><Icon icon="feather-search" class="sidebar-svg"
+      ><i class="iconify sidebar-svg" data-icon="feather-search"
     /></a>
     <a
       id="close-search"
       class="is-hidden is-inactive"
       @click="activePanel = 'none'"
-      ><Icon icon="feather-x" class="sidebar-svg"
+      ><i class="iconify sidebar-svg" data-icon="feather-x"
     /></a>
   </li>
 </template>

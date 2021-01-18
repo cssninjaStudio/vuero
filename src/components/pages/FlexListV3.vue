@@ -652,10 +652,10 @@ const props = defineProps({
         data-filter-hide
       >
         <a class="pagination-previous has-chevron"
-          ><Icon icon="feather:chevron-left"
+          ><i class="iconify" data-icon="feather:chevron-left"
         /></a>
         <a class="pagination-next has-chevron"
-          ><Icon icon="feather:chevron-right"
+          ><i class="iconify" data-icon="feather:chevron-right"
         /></a>
         <ul class="pagination-list">
           <li>

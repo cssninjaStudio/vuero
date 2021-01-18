@@ -332,7 +332,7 @@ import { incomeOptions } from '/@src/composition/state/charts/apexcharts/example
                 <div class="actions">
                   <span>See all Contacts</span>
                   <a class="is-dark-primary-hover"
-                    ><Icon icon="feather:arrow-right"
+                    ><i class="iconify" data-icon="feather:arrow-right"
                   /></a>
                 </div>
               </div>

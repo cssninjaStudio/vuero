@@ -21,7 +21,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         <li v-has-children class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Lists <Icon icon="feather:chevron-right"
+              >Lists <i class="iconify" data-icon="feather:chevron-right"
             /></a>
           </div>
           <ul>
@@ -66,7 +66,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         <li v-has-children class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Flex Lists <Icon icon="feather:chevron-right"
+              >Flex Lists <i class="iconify" data-icon="feather:chevron-right"
             /></a>
           </div>
           <ul>
@@ -102,7 +102,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         <li v-has-children class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Datatable <Icon icon="feather:chevron-right"
+              >Datatable <i class="iconify" data-icon="feather:chevron-right"
             /></a>
           </div>
           <ul>
@@ -148,7 +148,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         <li v-has-children class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Card Grid <Icon icon="feather:chevron-right"
+              >Card Grid <i class="iconify" data-icon="feather:chevron-right"
             /></a>
           </div>
           <ul>
@@ -193,7 +193,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         <li v-has-children class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Tile Grid <Icon icon="feather:chevron-right"
+              >Tile Grid <i class="iconify" data-icon="feather:chevron-right"
             /></a>
           </div>
           <ul>
@@ -229,7 +229,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         <li v-has-children class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >User Grid <Icon icon="feather:chevron-right"
+              >User Grid <i class="iconify" data-icon="feather:chevron-right"
             /></a>
           </div>
           <ul>
@@ -275,7 +275,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         <li v-has-children class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Personal <Icon icon="feather:chevron-right"
+              >Personal <i class="iconify" data-icon="feather:chevron-right"
             /></a>
           </div>
           <ul>
@@ -320,7 +320,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         <li v-has-children class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Pages <Icon icon="feather:chevron-right"
+              >Pages <i class="iconify" data-icon="feather:chevron-right"
             /></a>
           </div>
           <ul>
@@ -383,7 +383,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         <li v-has-children class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Subpages <Icon icon="feather:chevron-right"
+              >Subpages <i class="iconify" data-icon="feather:chevron-right"
             /></a>
           </div>
           <ul>
@@ -425,7 +425,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         <li v-has-children class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Projects <Icon icon="feather:chevron-right"
+              >Projects <i class="iconify" data-icon="feather:chevron-right"
             /></a>
           </div>
           <ul>
@@ -480,7 +480,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         <li v-has-children class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Utility <Icon icon="feather:chevron-right"
+              >Utility <i class="iconify" data-icon="feather:chevron-right"
             /></a>
           </div>
           <ul>
@@ -522,7 +522,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         <li v-has-children class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Onboarding <Icon icon="feather:chevron-right"
+              >Onboarding <i class="iconify" data-icon="feather:chevron-right"
             /></a>
           </div>
           <ul>
@@ -576,7 +576,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         <li v-has-children class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Error Pages <Icon icon="feather:chevron-right"
+              >Error Pages <i class="iconify" data-icon="feather:chevron-right"
             /></a>
           </div>
           <ul>
