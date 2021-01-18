@@ -10,7 +10,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
     class="dropdown is-right dropdown-trigger"
   >
     <div class="is-trigger" aria-haspopup="true" @click="open">
-      <Icon icon="feather:more-vertical" />
+      <i class="iconify" data-icon="feather:more-vertical"></i>
     </div>
 
     <div class="dropdown-menu" role="menu">
@@ -20,7 +20,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
         <hr class="dropdown-divider" />
         <div class="dropdown-item has-child">
           Settings
-          <Icon icon="feather:chevron-right" />
+          <i class="iconify" data-icon="feather:chevron-right"></i>
           <div class="child-dropdown">
             <div class="inner">
               <ul>

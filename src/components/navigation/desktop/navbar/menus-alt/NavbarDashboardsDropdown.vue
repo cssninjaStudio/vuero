@@ -18,7 +18,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
       >
         <span>Dashboards</span>
         <span class="caret">
-          <Icon icon="feather:chevron-down" />
+          <i class="iconify" data-icon="feather:chevron-down"></i>
         </span>
       </button>
     </div>
@@ -54,7 +54,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
         <div class="content-wrap is-hidden">
           <button class="button is-circle back-button">
             <span class="icon is-small">
-              <Icon icon="feather:arrow-left" />
+              <i class="iconify" data-icon="feather:arrow-left"></i>
             </span>
           </button>
 
@@ -66,7 +66,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
             <div class="column is-4">
               <div class="dropdown-item-group">
                 <h4 class="column-heading is-info">
-                  <Icon icon="feather:circle" />
+                  <i class="iconify" data-icon="feather:circle"></i>
                   <span>All Dashboards</span>
                 </h4>
 
@@ -155,7 +155,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
             <div class="column is-4">
               <div class="dropdown-item-group">
                 <h4 class="column-heading is-info">
-                  <Icon icon="circle" class="is-vhidden" />
+                  <i class="iconify is-vhidden" data-icon="circle"></i>
                   <span class="is-vhidden">All Dashboards</span>
                 </h4>
 
@@ -266,7 +266,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
             <div class="column is-4">
               <div class="dropdown-item-group">
                 <h4 class="column-heading is-info">
-                  <Icon icon="circle" class="is-vhidden" />
+                  <i class="iconify is-vhidden" data-icon="circle"></i>
                   <span class="is-vhidden">All Dashboards</span>
                 </h4>
 
@@ -339,7 +339,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
             <div class="column is-4">
               <div class="dropdown-item-group">
                 <h4 class="column-heading is-purple">
-                  <Icon icon="feather:circle" />
+                  <i class="iconify" data-icon="feather:circle"></i>
                   <span>Navigation</span>
                 </h4>
 
@@ -440,7 +440,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
             <div class="column is-4">
               <div class="dropdown-item-group">
                 <h4 class="column-heading is-secondary">
-                  <Icon icon="feather:circle" />
+                  <i class="iconify" data-icon="feather:circle"></i>
                   <span>Widgets</span>
                 </h4>
 
@@ -519,7 +519,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
             <div class="column is-4">
               <div class="dropdown-item-group">
                 <h4 class="column-heading is-success">
-                  <Icon icon="feather:circle" />
+                  <i class="iconify" data-icon="feather:circle"></i>
                   <span>Forms</span>
                 </h4>
 

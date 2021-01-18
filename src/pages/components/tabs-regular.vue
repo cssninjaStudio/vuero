@@ -118,7 +118,7 @@ useTitle('Components - Tabs Regular - Vuero')
                 <li>
                   <RouterLink :to="{ name: 'index' }">
                     <span class="icon is-small is-solo">
-                      <Icon icon="feather:home" />
+                      <i class="iconify" data-icon="feather:home"></i>
                     </span>
                   </RouterLink>
                 </li>
@@ -248,8 +248,8 @@ useTitle('Components - Tabs Regular - Vuero')
                       Check the markup for more details.
                     </p>
                     <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                      <i class="iconify open" data-icon="feather:code"></i>
+                      <i class="iconify close" data-icon="feather:x"></i>
                     </a>
                   </div>
                   <div class="card-inner">
@@ -362,8 +362,8 @@ useTitle('Components - Tabs Regular - Vuero')
                       Check the markup for more details.
                     </p>
                     <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                      <i class="iconify open" data-icon="feather:code"></i>
+                      <i class="iconify close" data-icon="feather:x"></i>
                     </a>
                   </div>
                   <div class="card-inner">
@@ -474,8 +474,8 @@ useTitle('Components - Tabs Regular - Vuero')
                       add the icons you want. Check the markup for more details.
                     </p>
                     <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                      <i class="iconify open" data-icon="feather:code"></i>
+                      <i class="iconify close" data-icon="feather:x"></i>
                     </a>
                   </div>
                   <div class="card-inner">
@@ -485,7 +485,10 @@ useTitle('Components - Tabs Regular - Vuero')
                           <ul>
                             <li :class="[activeTab3 === 'team' && 'is-active']">
                               <a @click="activeTab3 = 'team'">
-                                <Icon icon="feather:users" />
+                                <i
+                                  class="iconify"
+                                  data-icon="feather:users"
+                                ></i>
                                 <span>Team</span>
                               </a>
                             </li>
@@ -495,7 +498,7 @@ useTitle('Components - Tabs Regular - Vuero')
                               ]"
                             >
                               <a @click="activeTab3 = 'projects'">
-                                <Icon icon="feather:box" />
+                                <i class="iconify" data-icon="feather:box"></i>
                                 <span>Projects</span>
                               </a>
                             </li>
@@ -503,7 +506,10 @@ useTitle('Components - Tabs Regular - Vuero')
                               :class="[activeTab3 === 'tasks' && 'is-active']"
                             >
                               <a @click="activeTab3 = 'tasks'">
-                                <Icon icon="feather:check" />
+                                <i
+                                  class="iconify"
+                                  data-icon="feather:check"
+                                ></i>
                                 <span>Tasks</span>
                               </a>
                             </li>
@@ -610,8 +616,8 @@ useTitle('Components - Tabs Regular - Vuero')
                       add the icons you want. Check the markup for more details.
                     </p>
                     <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                      <i class="iconify open" data-icon="feather:code"></i>
+                      <i class="iconify close" data-icon="feather:x"></i>
                     </a>
                   </div>
                   <div class="card-inner">
@@ -746,8 +752,8 @@ useTitle('Components - Tabs Regular - Vuero')
                       the icons you want. Check the markup for more details.
                     </p>
                     <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                      <i class="iconify open" data-icon="feather:code"></i>
+                      <i class="iconify close" data-icon="feather:x"></i>
                     </a>
                   </div>
                   <div class="card-inner">
@@ -883,8 +889,8 @@ useTitle('Components - Tabs Regular - Vuero')
                       more details.
                     </p>
                     <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                      <i class="iconify open" data-icon="feather:code"></i>
+                      <i class="iconify close" data-icon="feather:x"></i>
                     </a>
                   </div>
                   <div class="card-inner">
@@ -996,8 +1002,8 @@ useTitle('Components - Tabs Regular - Vuero')
                       for more details.
                     </p>
                     <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                      <i class="iconify open" data-icon="feather:code"></i>
+                      <i class="iconify close" data-icon="feather:x"></i>
                     </a>
                   </div>
                   <div class="card-inner">
@@ -1111,8 +1117,8 @@ useTitle('Components - Tabs Regular - Vuero')
                       details.
                     </p>
                     <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                      <i class="iconify open" data-icon="feather:code"></i>
+                      <i class="iconify close" data-icon="feather:x"></i>
                     </a>
                   </div>
                   <div class="card-inner">

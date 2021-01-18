@@ -66,7 +66,7 @@ useTitle('Elements - Forms Selects - Vuero')
                 <li>
                   <RouterLink :to="{ name: 'index' }">
                     <span class="icon is-small is-solo">
-                      <Icon icon="feather:home" />
+                      <i class="iconify" data-icon="feather:home"></i>
                     </span>
                   </RouterLink>
                 </li>
@@ -101,8 +101,8 @@ useTitle('Elements - Forms Selects - Vuero')
                       example for more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                      <i class="iconify open" data-icon="feather:code"></i>
+                      <i class="iconify close" data-icon="feather:x"></i>
                     </a>
                   </div>
                   <div class="card-inner">
@@ -146,8 +146,8 @@ useTitle('Elements - Forms Selects - Vuero')
                       the code example for more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                      <i class="iconify open" data-icon="feather:code"></i>
+                      <i class="iconify close" data-icon="feather:x"></i>
                     </a>
                   </div>
                   <div class="card-inner">
@@ -191,8 +191,8 @@ useTitle('Elements - Forms Selects - Vuero')
                       example for more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                      <i class="iconify open" data-icon="feather:code"></i>
+                      <i class="iconify close" data-icon="feather:x"></i>
                     </a>
                   </div>
                   <div class="card-inner">
@@ -247,8 +247,8 @@ useTitle('Elements - Forms Selects - Vuero')
                       example for more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                      <i class="iconify open" data-icon="feather:code"></i>
+                      <i class="iconify close" data-icon="feather:x"></i>
                     </a>
                   </div>
                   <div class="card-inner">
@@ -303,8 +303,8 @@ useTitle('Elements - Forms Selects - Vuero')
                       more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                      <i class="iconify open" data-icon="feather:code"></i>
+                      <i class="iconify close" data-icon="feather:x"></i>
                     </a>
                   </div>
                   <div class="card-inner">
@@ -322,7 +322,7 @@ useTitle('Elements - Forms Selects - Vuero')
                           </select>
                         </div>
                         <div class="icon is-small is-left">
-                          <Icon icon="feather:globe" />
+                          <i class="iconify" data-icon="feather:globe"></i>
                         </div>
                       </div>
                     </div>
@@ -359,8 +359,8 @@ useTitle('Elements - Forms Selects - Vuero')
                       example for more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                      <i class="iconify open" data-icon="feather:code"></i>
+                      <i class="iconify close" data-icon="feather:x"></i>
                     </a>
                   </div>
                   <div class="card-inner">

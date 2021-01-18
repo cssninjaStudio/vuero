@@ -13,7 +13,7 @@
                   <div class="control has-icon">
                     <input type="text" class="input" placeholder="" />
                     <div class="form-icon">
-                      <Icon icon="feather:user" />
+                      <i class="iconify" data-icon="feather:user"></i>
                     </div>
                   </div>
                 </div>
@@ -24,7 +24,7 @@
                   <div class="control has-icon">
                     <input type="text" class="input" placeholder="" />
                     <div class="form-icon">
-                      <Icon icon="feather:user" />
+                      <i class="iconify" data-icon="feather:user"></i>
                     </div>
                   </div>
                 </div>
@@ -35,7 +35,7 @@
                   <div class="control has-icon">
                     <input type="text" class="input" placeholder="" />
                     <div class="form-icon">
-                      <Icon icon="feather:mail" />
+                      <i class="iconify" data-icon="feather:mail"></i>
                     </div>
                   </div>
                 </div>
@@ -46,7 +46,7 @@
                   <div class="control has-icon">
                     <input type="text" class="input" placeholder="" />
                     <div class="form-icon">
-                      <Icon icon="feather:map-pin" />
+                      <i class="iconify" data-icon="feather:map-pin"></i>
                     </div>
                   </div>
                 </div>
@@ -57,7 +57,7 @@
                   <div class="control has-icon">
                     <input type="text" class="input" placeholder="" />
                     <div class="form-icon">
-                      <Icon icon="feather:map-pin" />
+                      <i class="iconify" data-icon="feather:map-pin"></i>
                     </div>
                   </div>
                 </div>
@@ -81,7 +81,7 @@
                         </div>
                       </div>
                       <div class="box-chevron">
-                        <Icon icon="feather:chevron-down" />
+                        <i class="iconify" data-icon="feather:chevron-down"></i>
                       </div>
                       <div class="box-dropdown">
                         <div class="dropdown-inner has-slimscroll">
@@ -99,7 +99,10 @@
                               </span>
                               <span class="item-name">United States</span>
                               <span class="checkmark">
-                                <Icon icon="feather:check" />
+                                <i
+                                  class="iconify"
+                                  data-icon="feather:check"
+                                ></i>
                               </span>
                             </li>
                             <li>
@@ -115,7 +118,10 @@
                               </span>
                               <span class="item-name">Germany</span>
                               <span class="checkmark">
-                                <Icon icon="feather:check" />
+                                <i
+                                  class="iconify"
+                                  data-icon="feather:check"
+                                ></i>
                               </span>
                             </li>
                             <li>
@@ -131,7 +137,10 @@
                               </span>
                               <span class="item-name">France</span>
                               <span class="checkmark">
-                                <Icon icon="feather:check" />
+                                <i
+                                  class="iconify"
+                                  data-icon="feather:check"
+                                ></i>
                               </span>
                             </li>
                             <li>
@@ -147,7 +156,10 @@
                               </span>
                               <span class="item-name">England</span>
                               <span class="checkmark">
-                                <Icon icon="feather:check" />
+                                <i
+                                  class="iconify"
+                                  data-icon="feather:check"
+                                ></i>
                               </span>
                             </li>
                           </ul>
@@ -163,7 +175,7 @@
                   <div class="control has-icon">
                     <input type="text" class="input" placeholder="" />
                     <div class="form-icon">
-                      <Icon icon="feather:phone" />
+                      <i class="iconify" data-icon="feather:phone"></i>
                     </div>
                   </div>
                 </div>

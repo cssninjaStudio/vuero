@@ -46,28 +46,28 @@ const activeTab = ref<'list' | 'grid' | 'app' | 'utility'>('list')
                     <RouterLink :to="{ name: 'webapp-list-view-1' }">
                       <i class="lnil lnil-list-alt"></i>
                       <span>List View V1</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'webapp-list-view-2' }">
                       <i class="lnil lnil-list-alt"></i>
                       <span>List View V2</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'webapp-list-view-3' }">
                       <i class="lnil lnil-list-alt"></i>
                       <span>List View V3</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'webapp-list-view-4' }">
                       <i class="lnil lnil-list-alt"></i>
                       <span>List View V4</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                 </ul>
@@ -79,21 +79,21 @@ const activeTab = ref<'list' | 'grid' | 'app' | 'utility'>('list')
                     <RouterLink :to="{ name: 'webapp-list-flex-1' }">
                       <i class="lnil lnil-list-alt-1"></i>
                       <span>Flex List V1</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'webapp-list-flex-2' }">
                       <i class="lnil lnil-list-alt-1"></i>
                       <span>Flex List V2</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'webapp-list-flex-3' }">
                       <i class="lnil lnil-list-alt-1"></i>
                       <span>Flex List V3</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                 </ul>
@@ -105,28 +105,28 @@ const activeTab = ref<'list' | 'grid' | 'app' | 'utility'>('list')
                     <RouterLink :to="{ name: 'webapp-list-datatable-1' }">
                       <i class="lnil lnil-layout-alt"></i>
                       <span>Datatable V1</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'webapp-list-datatable-2' }">
                       <i class="lnil lnil-layout-alt"></i>
                       <span>Datatable V2</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'webapp-list-datatable-3' }">
                       <i class="lnil lnil-layout-alt"></i>
                       <span>Datatable V3</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'webapp-list-datatable-4' }">
                       <i class="lnil lnil-layout-alt"></i>
                       <span>Datatable V4</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                 </ul>
@@ -182,28 +182,28 @@ const activeTab = ref<'list' | 'grid' | 'app' | 'utility'>('list')
                     <RouterLink :to="{ name: 'webapp-grid-cards-1' }">
                       <i class="lnil lnil-grid-alt"></i>
                       <span>Card Grid V1</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'webapp-grid-cards-2' }">
                       <i class="lnil lnil-grid-alt"></i>
                       <span>Card Grid V2</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'webapp-grid-cards-3' }">
                       <i class="lnil lnil-grid-alt"></i>
                       <span>Card Grid V3</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'webapp-grid-cards-4' }">
                       <i class="lnil lnil-grid-alt"></i>
                       <span>Card Grid V4</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                 </ul>
@@ -215,21 +215,21 @@ const activeTab = ref<'list' | 'grid' | 'app' | 'utility'>('list')
                     <RouterLink :to="{ name: 'webapp-grid-tiles-1' }">
                       <i class="lnil lnil-layout-alt-2"></i>
                       <span>Tile Grid V1</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'webapp-grid-tiles-2' }">
                       <i class="lnil lnil-layout-alt-2"></i>
                       <span>Tile Grid V2</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'webapp-grid-tiles-3' }">
                       <i class="lnil lnil-layout-alt-2"></i>
                       <span>Tile Grid V3</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                 </ul>
@@ -241,28 +241,28 @@ const activeTab = ref<'list' | 'grid' | 'app' | 'utility'>('list')
                     <RouterLink :to="{ name: 'webapp-grid-users-1' }">
                       <i class="lnil lnil-users-alt"></i>
                       <span>User Grid V1</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'webapp-grid-users-2' }">
                       <i class="lnil lnil-users-alt"></i>
                       <span>User Grid V2</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'webapp-grid-users-3' }">
                       <i class="lnil lnil-users-alt"></i>
                       <span>User Grid V3</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'webapp-grid-users-4' }">
                       <i class="lnil lnil-users-alt"></i>
                       <span>User Grid V4</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                 </ul>
@@ -318,28 +318,28 @@ const activeTab = ref<'list' | 'grid' | 'app' | 'utility'>('list')
                     <RouterLink :to="{ name: 'webapp-profile-view' }">
                       <i class="lnil lnil-user-alt"></i>
                       <span>Profile</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'webapp-profile-edit-1' }">
                       <i class="lnil lnil-pencil"></i>
                       <span>Edit Profile</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'webapp-profile-notifications' }">
                       <i class="lnil lnil-notification"></i>
                       <span>Notifications</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'webapp-profile-settings' }">
                       <i class="lnil lnil-cog"></i>
                       <span>Settings</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                 </ul>
@@ -351,42 +351,42 @@ const activeTab = ref<'list' | 'grid' | 'app' | 'utility'>('list')
                     <RouterLink :to="{ name: 'auth-login-1' }">
                       <i class="lnil lnil-pointer-right"></i>
                       <span>Login v1</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'auth-login-2' }">
                       <i class="lnil lnil-pointer-right"></i>
                       <span>Login v2</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'auth-login-3' }">
                       <i class="lnil lnil-pointer-right"></i>
                       <span>Login v3</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'auth-signup-2' }">
                       <i class="lnil lnil-crown"></i>
                       <span>Signup v1</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'auth-signup-3' }">
                       <i class="lnil lnil-crown"></i>
                       <span>Signup v2</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'auth-signup-1' }">
                       <i class="lnil lnil-crown"></i>
                       <span>Signup Flow</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                 </ul>
@@ -398,42 +398,42 @@ const activeTab = ref<'list' | 'grid' | 'app' | 'utility'>('list')
                     <RouterLink :to="{ name: 'webapp-saas-billing' }">
                       <i class="lnil lnil-credit-card"></i>
                       <span>Saas Billing</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'webapp' }">
                       <i class="lnil lnil-door-alt"></i>
                       <span>Welcome</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'webapp-action-page-1' }">
                       <i class="lnil lnil-thunderbolt"></i>
                       <span>Action Page V1</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'webapp-action-page-2' }">
                       <i class="lnil lnil-thunderbolt"></i>
                       <span>Action Page V2</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'webapp-search-results' }">
                       <i class="lnil lnil-search-alt"></i>
                       <span>Search Results</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'webapp-search-empty' }">
                       <i class="lnil lnil-search-alt"></i>
                       <span>Empty Search</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                 </ul>
@@ -445,35 +445,35 @@ const activeTab = ref<'list' | 'grid' | 'app' | 'utility'>('list')
                     <RouterLink :to="{ name: 'webapp-projects-projects' }">
                       <i class="lnil lnil-grid-alt"></i>
                       <span>Projects V1</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'webapp-projects-projects-2' }">
                       <i class="lnil lnil-grid-alt"></i>
                       <span>Projects V2</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'webapp-projects-projects-3' }">
                       <i class="lnil lnil-grid-alt"></i>
                       <span>Projects V3</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'webapp-projects-project' }">
                       <i class="lnil lnil-layout"></i>
                       <span>Project Details</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'webapp-kanban-board' }">
                       <i class="lnil lnil-layout-alt-1"></i>
                       <span>Project Board</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                 </ul>
@@ -500,28 +500,28 @@ const activeTab = ref<'list' | 'grid' | 'app' | 'utility'>('list')
                     >
                       <i class="lnil lnil-thunderbolt"></i>
                       <span>Confirm Account</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'webapp-utility-promotion' }">
                       <i class="lnil lnil-magnet"></i>
                       <span>Promotion Page</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'webapp-utility-invoice' }">
                       <i class="lnil lnil-calculator-alt"></i>
                       <span>Invoice</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'status' }">
                       <i class="lnil lnil-checkmark-circle"></i>
                       <span>App Status</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                 </ul>
@@ -533,35 +533,35 @@ const activeTab = ref<'list' | 'grid' | 'app' | 'utility'>('list')
                     <RouterLink :to="{ name: 'webapp-onboarding-page-1' }">
                       <i class="lnil lnil-train"></i>
                       <span>Onboarding V1</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'webapp-onboarding-page-2' }">
                       <i class="lnil lnil-train-alt"></i>
                       <span>Onboarding V2</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'webapp-onboarding-page-3' }">
                       <i class="lnil lnil-car"></i>
                       <span>Onboarding V3</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'webapp-onboarding-page-4' }">
                       <i class="lnil lnil-car-alt"></i>
                       <span>Onboarding V4</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'webapp-onboarding-page-5' }">
                       <i class="lnil lnil-train-alt"></i>
                       <span>Onboarding V5</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                 </ul>
@@ -573,35 +573,35 @@ const activeTab = ref<'list' | 'grid' | 'app' | 'utility'>('list')
                     <RouterLink :to="{ name: 'error-page-1' }">
                       <i class="lnil lnil-cross-circle"></i>
                       <span>Error Page V1</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'error-page-2' }">
                       <i class="lnil lnil-cross-circle"></i>
                       <span>Error Page V2</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'error-page-3' }">
                       <i class="lnil lnil-cross-circle"></i>
                       <span>Error Page V3</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'error-page-4' }">
                       <i class="lnil lnil-cross-circle"></i>
                       <span>Error Page V4</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'error-page-5' }">
                       <i class="lnil lnil-cross-circle"></i>
                       <span>Error Page V5</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                 </ul>

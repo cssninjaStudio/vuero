@@ -13,7 +13,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
 
       <h3 class="no-mb">Dashboards</h3>
       <div class="panel-close">
-        <Icon icon="feather:x" />
+        <i class="iconify" data-icon="feather:x"></i>
       </div>
     </div>
     <div class="inner" data-simplebar>

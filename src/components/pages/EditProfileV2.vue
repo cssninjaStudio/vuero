@@ -148,7 +148,7 @@
                               placeholder="Company Name"
                             />
                             <div class="form-icon">
-                              <Icon icon="feather:box" />
+                              <i class="iconify" data-icon="feather:box"></i>
                             </div>
                           </div>
                         </div>
@@ -162,7 +162,10 @@
                               placeholder="Job Title"
                             />
                             <div class="form-icon">
-                              <Icon icon="feather:briefcase" />
+                              <i
+                                class="iconify"
+                                data-icon="feather:briefcase"
+                              ></i>
                             </div>
                           </div>
                         </div>

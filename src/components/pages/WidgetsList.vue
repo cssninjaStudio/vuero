@@ -29,7 +29,7 @@
             </div>
             <div class="flex-end">
               <a href="#" class="go-icon is-up" data-content="+18%">
-                <Icon icon="feather:chevron-right" />
+                <i class="iconify" data-icon="feather:chevron-right"></i>
               </a>
             </div>
           </div>
@@ -52,7 +52,7 @@
             </div>
             <div class="flex-end">
               <a href="#" class="go-icon is-up" data-content="+22%">
-                <Icon icon="feather:chevron-right" />
+                <i class="iconify" data-icon="feather:chevron-right"></i>
               </a>
             </div>
           </div>
@@ -75,7 +75,7 @@
             </div>
             <div class="flex-end">
               <a href="#" class="go-icon is-down" data-content="-12%">
-                <Icon icon="feather:chevron-right" />
+                <i class="iconify" data-icon="feather:chevron-right"></i>
               </a>
             </div>
           </div>
@@ -98,7 +98,7 @@
             </div>
             <div class="flex-end">
               <a href="#" class="go-icon is-up" data-content="+32%">
-                <Icon icon="feather:chevron-right" />
+                <i class="iconify" data-icon="feather:chevron-right"></i>
               </a>
             </div>
           </div>
@@ -121,7 +121,7 @@
             </div>
             <div class="flex-end">
               <a href="#" class="go-icon is-down" data-content="-4%">
-                <Icon icon="feather:chevron-right" />
+                <i class="iconify" data-icon="feather:chevron-right"></i>
               </a>
             </div>
           </div>
@@ -144,7 +144,7 @@
             </div>
             <div class="flex-end">
               <a href="#" class="go-icon is-up" data-content="+32%">
-                <Icon icon="feather:chevron-right" />
+                <i class="iconify" data-icon="feather:chevron-right"></i>
               </a>
             </div>
           </div>
@@ -180,7 +180,7 @@
             </div>
             <div class="flex-end">
               <a href="#" class="go-icon is-squared is-up" data-content="+18%">
-                <Icon icon="feather:chevron-right" />
+                <i class="iconify" data-icon="feather:chevron-right"></i>
               </a>
             </div>
           </div>
@@ -203,7 +203,7 @@
             </div>
             <div class="flex-end">
               <a href="#" class="go-icon is-squared is-up" data-content="+22%">
-                <Icon icon="feather:chevron-right" />
+                <i class="iconify" data-icon="feather:chevron-right"></i>
               </a>
             </div>
           </div>
@@ -230,7 +230,7 @@
                 class="go-icon is-squared is-down"
                 data-content="-12%"
               >
-                <Icon icon="feather:chevron-right" />
+                <i class="iconify" data-icon="feather:chevron-right"></i>
               </a>
             </div>
           </div>
@@ -253,7 +253,7 @@
             </div>
             <div class="flex-end">
               <a href="#" class="go-icon is-squared is-up" data-content="+32%">
-                <Icon icon="feather:chevron-right" />
+                <i class="iconify" data-icon="feather:chevron-right"></i>
               </a>
             </div>
           </div>
@@ -276,7 +276,7 @@
             </div>
             <div class="flex-end">
               <a href="#" class="go-icon is-squared is-down" data-content="-4%">
-                <Icon icon="feather:chevron-right" />
+                <i class="iconify" data-icon="feather:chevron-right"></i>
               </a>
             </div>
           </div>
@@ -299,7 +299,7 @@
             </div>
             <div class="flex-end">
               <a href="#" class="go-icon is-squared is-up" data-content="+32%">
-                <Icon icon="feather:chevron-right" />
+                <i class="iconify" data-icon="feather:chevron-right"></i>
               </a>
             </div>
           </div>
@@ -1259,7 +1259,7 @@
           <!--List Item-->
           <div class="inner-list-item media-flex-center">
             <div class="h-icon is-info is-rounded">
-              <Icon icon="feather:chrome" />
+              <i class="iconify" data-icon="feather:chrome"></i>
             </div>
             <div class="flex-meta is-light">
               <a href="#">Browsers</a>
@@ -1314,7 +1314,7 @@
           <!--List Item-->
           <div class="inner-list-item media-flex-center">
             <div class="h-icon is-green is-rounded">
-              <Icon icon="feather:wind" />
+              <i class="iconify" data-icon="feather:wind"></i>
             </div>
             <div class="flex-meta is-light">
               <a href="#">Natural Ecosystems</a>
@@ -1351,7 +1351,7 @@
           <!--List Item-->
           <div class="inner-list-item media-flex-center">
             <div class="h-icon is-orange is-rounded">
-              <Icon icon="feather:cpu" />
+              <i class="iconify" data-icon="feather:cpu"></i>
             </div>
             <div class="flex-meta is-light">
               <a href="#">Computer chips</a>
@@ -1389,7 +1389,7 @@
           <!--List Item-->
           <div class="inner-list-item media-flex-center">
             <div class="h-icon is-purple is-rounded">
-              <Icon icon="feather:music" />
+              <i class="iconify" data-icon="feather:music"></i>
             </div>
             <div class="flex-meta is-light">
               <a href="#">Modal Improvisation</a>
@@ -1445,7 +1445,7 @@
           <!--List Item-->
           <div class="inner-list-item media-flex-center">
             <div class="h-icon is-yellow is-rounded">
-              <Icon icon="feather:monitor" />
+              <i class="iconify" data-icon="feather:monitor"></i>
             </div>
             <div class="flex-meta is-light">
               <a href="#">Old Movies</a>
@@ -1482,7 +1482,7 @@
           <!--List Item-->
           <div class="inner-list-item media-flex-center">
             <div class="h-icon is-purple is-rounded">
-              <Icon icon="feather:github" />
+              <i class="iconify" data-icon="feather:github"></i>
             </div>
             <div class="flex-meta is-light">
               <a href="#">Git Management</a>
@@ -1550,7 +1550,7 @@
           <!--List Item-->
           <div class="inner-list-item media-flex-center">
             <div class="h-icon is-info">
-              <Icon icon="feather:chrome" />
+              <i class="iconify" data-icon="feather:chrome"></i>
             </div>
             <div class="flex-meta is-light">
               <a href="#">Browsers</a>
@@ -1605,7 +1605,7 @@
           <!--List Item-->
           <div class="inner-list-item media-flex-center">
             <div class="h-icon is-green">
-              <Icon icon="feather:wind" />
+              <i class="iconify" data-icon="feather:wind"></i>
             </div>
             <div class="flex-meta is-light">
               <a href="#">Natural Ecosystems</a>
@@ -1642,7 +1642,7 @@
           <!--List Item-->
           <div class="inner-list-item media-flex-center">
             <div class="h-icon is-orange">
-              <Icon icon="feather:cpu" />
+              <i class="iconify" data-icon="feather:cpu"></i>
             </div>
             <div class="flex-meta is-light">
               <a href="#">Computer chips</a>
@@ -1680,7 +1680,7 @@
           <!--List Item-->
           <div class="inner-list-item media-flex-center">
             <div class="h-icon is-purple">
-              <Icon icon="feather:music" />
+              <i class="iconify" data-icon="feather:music"></i>
             </div>
             <div class="flex-meta is-light">
               <a href="#">Modal Improvisation</a>
@@ -1736,7 +1736,7 @@
           <!--List Item-->
           <div class="inner-list-item media-flex-center">
             <div class="h-icon is-yellow">
-              <Icon icon="feather:monitor" />
+              <i class="iconify" data-icon="feather:monitor"></i>
             </div>
             <div class="flex-meta is-light">
               <a href="#">Old Movies</a>
@@ -1773,7 +1773,7 @@
           <!--List Item-->
           <div class="inner-list-item media-flex-center">
             <div class="h-icon is-purple">
-              <Icon icon="feather:github" />
+              <i class="iconify" data-icon="feather:github"></i>
             </div>
             <div class="flex-meta is-light">
               <a href="#">Git Management</a>
@@ -1850,7 +1850,7 @@
             <!--List Item-->
             <div class="inner-list-item media-flex-center">
               <div class="h-icon is-info is-rounded">
-                <Icon icon="feather:chrome" />
+                <i class="iconify" data-icon="feather:chrome"></i>
               </div>
               <div class="flex-meta is-light">
                 <a href="#">Browsers</a>
@@ -1908,7 +1908,7 @@
             <!--List Item-->
             <div class="inner-list-item media-flex-center">
               <div class="h-icon is-green is-rounded">
-                <Icon icon="feather:wind" />
+                <i class="iconify" data-icon="feather:wind"></i>
               </div>
               <div class="flex-meta is-light">
                 <a href="#">Natural Ecosystems</a>
@@ -1947,7 +1947,7 @@
             <!--List Item-->
             <div class="inner-list-item media-flex-center">
               <div class="h-icon is-orange is-rounded">
-                <Icon icon="feather:cpu" />
+                <i class="iconify" data-icon="feather:cpu"></i>
               </div>
               <div class="flex-meta is-light">
                 <a href="#">Computer chips</a>
@@ -1987,7 +1987,7 @@
             <!--List Item-->
             <div class="inner-list-item media-flex-center">
               <div class="h-icon is-purple is-rounded">
-                <Icon icon="feather:music" />
+                <i class="iconify" data-icon="feather:music"></i>
               </div>
               <div class="flex-meta is-light">
                 <a href="#">Modal Improvisation</a>
@@ -2046,7 +2046,7 @@
             <!--List Item-->
             <div class="inner-list-item media-flex-center">
               <div class="h-icon is-yellow is-rounded">
-                <Icon icon="feather:monitor" />
+                <i class="iconify" data-icon="feather:monitor"></i>
               </div>
               <div class="flex-meta is-light">
                 <a href="#">Old Movies</a>
@@ -2085,7 +2085,7 @@
             <!--List Item-->
             <div class="inner-list-item media-flex-center">
               <div class="h-icon is-purple is-rounded">
-                <Icon icon="feather:github" />
+                <i class="iconify" data-icon="feather:github"></i>
               </div>
               <div class="flex-meta is-light">
                 <a href="#">Git Management</a>
@@ -2147,7 +2147,7 @@
             <!--List Item-->
             <div class="inner-list-item media-flex-center">
               <div class="h-icon is-info">
-                <Icon icon="feather:chrome" />
+                <i class="iconify" data-icon="feather:chrome"></i>
               </div>
               <div class="flex-meta is-light">
                 <a href="#">Browsers</a>
@@ -2205,7 +2205,7 @@
             <!--List Item-->
             <div class="inner-list-item media-flex-center">
               <div class="h-icon is-green">
-                <Icon icon="feather:wind" />
+                <i class="iconify" data-icon="feather:wind"></i>
               </div>
               <div class="flex-meta is-light">
                 <a href="#">Natural Ecosystems</a>
@@ -2244,7 +2244,7 @@
             <!--List Item-->
             <div class="inner-list-item media-flex-center">
               <div class="h-icon is-orange">
-                <Icon icon="feather:cpu" />
+                <i class="iconify" data-icon="feather:cpu"></i>
               </div>
               <div class="flex-meta is-light">
                 <a href="#">Computer chips</a>
@@ -2284,7 +2284,7 @@
             <!--List Item-->
             <div class="inner-list-item media-flex-center">
               <div class="h-icon is-purple">
-                <Icon icon="feather:music" />
+                <i class="iconify" data-icon="feather:music"></i>
               </div>
               <div class="flex-meta is-light">
                 <a href="#">Modal Improvisation</a>
@@ -2343,7 +2343,7 @@
             <!--List Item-->
             <div class="inner-list-item media-flex-center">
               <div class="h-icon is-yellow">
-                <Icon icon="feather:monitor" />
+                <i class="iconify" data-icon="feather:monitor"></i>
               </div>
               <div class="flex-meta is-light">
                 <a href="#">Old Movies</a>
@@ -2382,7 +2382,7 @@
             <!--List Item-->
             <div class="inner-list-item media-flex-center">
               <div class="h-icon is-purple">
-                <Icon icon="feather:github" />
+                <i class="iconify" data-icon="feather:github"></i>
               </div>
               <div class="flex-meta is-light">
                 <a href="#">Git Management</a>
@@ -2455,7 +2455,7 @@
             <!--Timeline item-->
             <div class="timeline-item">
               <div class="timeline-icon">
-                <Icon icon="feather:phone-call" />
+                <i class="iconify" data-icon="feather:phone-call"></i>
               </div>
               <div class="timeline-content">
                 <p>Call Danny at Colby's</p>
@@ -2482,7 +2482,7 @@
             <!--Timeline item-->
             <div class="timeline-item">
               <div class="timeline-icon">
-                <Icon icon="feather:message-circle" />
+                <i class="iconify" data-icon="feather:message-circle"></i>
               </div>
               <div class="timeline-content">
                 <p>Answer Annie's message</p>
@@ -2492,7 +2492,7 @@
             <!--Timeline item-->
             <div class="timeline-item">
               <div class="timeline-icon">
-                <Icon icon="feather:mail" />
+                <i class="iconify" data-icon="feather:mail"></i>
               </div>
               <div class="timeline-content">
                 <p>Send new campaign</p>
@@ -2502,7 +2502,7 @@
             <!--Timeline item-->
             <div class="timeline-item">
               <div class="timeline-icon">
-                <Icon icon="feather:smile" />
+                <i class="iconify" data-icon="feather:smile"></i>
               </div>
               <div class="timeline-content">
                 <p>Project review</p>
@@ -2512,7 +2512,7 @@
             <!--Timeline item-->
             <div class="timeline-item">
               <div class="timeline-icon">
-                <Icon icon="feather:phone-call" />
+                <i class="iconify" data-icon="feather:phone-call"></i>
               </div>
               <div class="timeline-content">
                 <p>Call Trisha Jackson</p>
@@ -2522,7 +2522,7 @@
             <!--Timeline item-->
             <div class="timeline-item">
               <div class="timeline-icon">
-                <Icon icon="feather:feather" />
+                <i class="iconify" data-icon="feather:feather"></i>
               </div>
               <div class="timeline-content">
                 <p>Write proposal for Don</p>
@@ -2547,7 +2547,7 @@
             <!--Timeline item-->
             <div class="timeline-item">
               <div class="timeline-icon is-squared">
-                <Icon icon="feather:phone-call" />
+                <i class="iconify" data-icon="feather:phone-call"></i>
               </div>
               <div class="timeline-content">
                 <p>Call Danny at Colby's</p>
@@ -2574,7 +2574,7 @@
             <!--Timeline item-->
             <div class="timeline-item">
               <div class="timeline-icon is-squared">
-                <Icon icon="feather:message-circle" />
+                <i class="iconify" data-icon="feather:message-circle"></i>
               </div>
               <div class="timeline-content">
                 <p>Answer Annie's message</p>
@@ -2584,7 +2584,7 @@
             <!--Timeline item-->
             <div class="timeline-item">
               <div class="timeline-icon is-squared">
-                <Icon icon="feather:mail" />
+                <i class="iconify" data-icon="feather:mail"></i>
               </div>
               <div class="timeline-content">
                 <p>Send new campaign</p>
@@ -2594,7 +2594,7 @@
             <!--Timeline item-->
             <div class="timeline-item">
               <div class="timeline-icon is-squared">
-                <Icon icon="feather:smile" />
+                <i class="iconify" data-icon="feather:smile"></i>
               </div>
               <div class="timeline-content">
                 <p>Project review</p>
@@ -2604,7 +2604,7 @@
             <!--Timeline item-->
             <div class="timeline-item">
               <div class="timeline-icon is-squared">
-                <Icon icon="feather:phone-call" />
+                <i class="iconify" data-icon="feather:phone-call"></i>
               </div>
               <div class="timeline-content">
                 <p>Call Trisha Jackson</p>
@@ -2614,7 +2614,7 @@
             <!--Timeline item-->
             <div class="timeline-item">
               <div class="timeline-icon is-squared">
-                <Icon icon="feather:feather" />
+                <i class="iconify" data-icon="feather:feather"></i>
               </div>
               <div class="timeline-content">
                 <p>Write proposal for Don</p>
@@ -2639,7 +2639,7 @@
             <!--Timeline item-->
             <div class="timeline-item">
               <div class="timeline-icon is-squared is-primary">
-                <Icon icon="feather:phone-call" />
+                <i class="iconify" data-icon="feather:phone-call"></i>
               </div>
               <div class="timeline-content">
                 <p>Call Danny at Colby's</p>
@@ -2666,7 +2666,7 @@
             <!--Timeline item-->
             <div class="timeline-item">
               <div class="timeline-icon is-squared is-info">
-                <Icon icon="feather:message-circle" />
+                <i class="iconify" data-icon="feather:message-circle"></i>
               </div>
               <div class="timeline-content">
                 <p>Answer Annie's message</p>
@@ -2676,7 +2676,7 @@
             <!--Timeline item-->
             <div class="timeline-item">
               <div class="timeline-icon is-squared is-success">
-                <Icon icon="feather:mail" />
+                <i class="iconify" data-icon="feather:mail"></i>
               </div>
               <div class="timeline-content">
                 <p>Send new campaign</p>
@@ -2686,7 +2686,7 @@
             <!--Timeline item-->
             <div class="timeline-item">
               <div class="timeline-icon is-squared is-purple">
-                <Icon icon="feather:smile" />
+                <i class="iconify" data-icon="feather:smile"></i>
               </div>
               <div class="timeline-content">
                 <p>Project review</p>
@@ -2696,7 +2696,7 @@
             <!--Timeline item-->
             <div class="timeline-item">
               <div class="timeline-icon is-squared is-orange">
-                <Icon icon="feather:phone-call" />
+                <i class="iconify" data-icon="feather:phone-call"></i>
               </div>
               <div class="timeline-content">
                 <p>Call Trisha Jackson</p>
@@ -2706,7 +2706,7 @@
             <!--Timeline item-->
             <div class="timeline-item">
               <div class="timeline-icon is-squared is-yellow">
-                <Icon icon="feather:feather" />
+                <i class="iconify" data-icon="feather:feather"></i>
               </div>
               <div class="timeline-content">
                 <p>Write proposal for Don</p>

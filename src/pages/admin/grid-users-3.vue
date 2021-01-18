@@ -69,7 +69,7 @@ useTitle('Grid Users 3 - Admin - Vuero')
                 data-filter-target=".column"
               />
               <div class="form-icon">
-                <Icon icon="feather:search" />
+                <i class="iconify" data-icon="feather:search"></i>
               </div>
             </div>
 

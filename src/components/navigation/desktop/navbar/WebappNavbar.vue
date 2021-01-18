@@ -62,7 +62,7 @@ watch(
             class="centered-link centered-link-toggle"
             @click="toggleSubnav('home')"
           >
-            <Icon icon="feather:activity" />
+            <i class="iconify" data-icon="feather:activity"></i>
             <span>Dashboards</span>
           </a>
           <a
@@ -71,7 +71,7 @@ watch(
             class="centered-link centered-link-toggle"
             @click="toggleSubnav('layouts')"
           >
-            <Icon icon="feather:grid" />
+            <i class="iconify" data-icon="feather:grid"></i>
             <span>Layouts</span>
           </a>
           <a
@@ -80,7 +80,7 @@ watch(
             class="centered-link centered-link-toggle"
             @click="toggleSubnav('elements')"
           >
-            <Icon icon="feather:box" />
+            <i class="iconify" data-icon="feather:box"></i>
             <span>Elements</span>
           </a>
           <a
@@ -89,18 +89,18 @@ watch(
             class="centered-link centered-link-toggle"
             @click="toggleSubnav('components')"
           >
-            <Icon icon="feather:cpu" />
+            <i class="iconify" data-icon="feather:cpu"></i>
             <span>Components</span>
           </a>
           <RouterLink :to="{ name: 'messaging-v2' }" class="centered-link">
-            <Icon icon="feather:message-circle" />
+            <i class="iconify" data-icon="feather:message-circle"></i>
             <span>Chat</span>
           </RouterLink>
           <a
             class="centered-link centered-link-search"
             @click="toggleSubnav('search')"
           >
-            <Icon icon="feather:search" />
+            <i class="iconify" data-icon="feather:search"></i>
             <span>Search</span>
           </a>
         </div>
@@ -117,14 +117,14 @@ watch(
                 placeholder="Search records..."
               />
               <div class="form-icon">
-                <Icon icon="feather:search" />
+                <i class="iconify" data-icon="feather:search"></i>
               </div>
               <div
                 id="webapp-navbar-search-close"
                 class="form-icon is-right"
                 @click="activeSubnav = 'closed'"
               >
-                <Icon icon="feather:x" />
+                <i class="iconify" data-icon="feather:x"></i>
               </div>
               <div class="search-results has-slimscroll"></div>
             </div>
@@ -223,7 +223,7 @@ watch(
                   class="button h-button is-primary is-raised is-fullwidth logout-button"
                 >
                   <span class="icon is-small">
-                    <Icon icon="feather:log-out" />
+                    <i class="iconify" data-icon="feather:log-out"></i>
                   </span>
                   <span>Logout</span>
                 </button>

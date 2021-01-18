@@ -4,7 +4,7 @@
       <button
         class="trigger conversations-mobile-trigger h-only-mobile h-only-tablet-p h-only-tablet-l"
       >
-        <Icon icon="feather:menu" />
+        <i class="iconify" data-icon="feather:menu"></i>
       </button>
       <div class="chat-area-title">Kelly M.</div>
       <div class="chat-area-group">

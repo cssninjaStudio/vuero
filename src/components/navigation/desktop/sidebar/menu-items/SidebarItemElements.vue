@@ -1,7 +1,7 @@
 <template>
   <li>
     <RouterLink id="elements-sidebar-menu" :to="{ name: 'elements' }">
-      <Icon class="sidebar-svg" icon="feather:box" />
+      <i class="iconify sidebar-svg" data-icon="feather:box"></i>
     </RouterLink>
   </li>
 </template>

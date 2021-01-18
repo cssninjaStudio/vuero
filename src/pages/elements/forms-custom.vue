@@ -66,7 +66,7 @@ useTitle('Elements - Forms Custom - Vuero')
                 <li>
                   <RouterLink :to="{ name: 'index' }">
                     <span class="icon is-small is-solo">
-                      <Icon icon="feather:home" />
+                      <i class="iconify" data-icon="feather:home"></i>
                     </span>
                   </RouterLink>
                 </li>
@@ -102,8 +102,8 @@ useTitle('Elements - Forms Custom - Vuero')
                       examples for more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                      <i class="iconify open" data-icon="feather:code"></i>
+                      <i class="iconify close" data-icon="feather:x"></i>
                     </a>
                   </div>
                   <div class="card-inner">
@@ -114,7 +114,10 @@ useTitle('Elements - Forms Custom - Vuero')
                             <span>Select a Hero</span>
                           </div>
                           <div class="select-icon">
-                            <Icon icon="feather:chevron-down" />
+                            <i
+                              class="iconify"
+                              data-icon="feather:chevron-down"
+                            ></i>
                           </div>
                           <div class="select-drop has-slimscroll-sm">
                             <div class="drop-inner">
@@ -218,8 +221,8 @@ useTitle('Elements - Forms Custom - Vuero')
                       code example for more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                      <i class="iconify open" data-icon="feather:code"></i>
+                      <i class="iconify close" data-icon="feather:x"></i>
                     </a>
                   </div>
                   <div class="card-inner">
@@ -230,7 +233,10 @@ useTitle('Elements - Forms Custom - Vuero')
                             <span>Select a Hero</span>
                           </div>
                           <div class="select-icon">
-                            <Icon icon="feather:chevron-down" />
+                            <i
+                              class="iconify"
+                              data-icon="feather:chevron-down"
+                            ></i>
                           </div>
                           <div class="select-drop has-slimscroll-sm">
                             <div class="drop-inner">
@@ -335,8 +341,8 @@ useTitle('Elements - Forms Custom - Vuero')
                       for more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                      <i class="iconify open" data-icon="feather:code"></i>
+                      <i class="iconify close" data-icon="feather:x"></i>
                     </a>
                   </div>
                   <div class="card-inner">
@@ -347,7 +353,10 @@ useTitle('Elements - Forms Custom - Vuero')
                             <span>Select a friend</span>
                           </div>
                           <div class="select-icon">
-                            <Icon icon="feather:chevron-down" />
+                            <i
+                              class="iconify"
+                              data-icon="feather:chevron-down"
+                            ></i>
                           </div>
                           <div class="select-drop has-slimscroll-sm">
                             <div class="drop-inner">
@@ -497,8 +506,8 @@ useTitle('Elements - Forms Custom - Vuero')
                       example for more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                      <i class="iconify open" data-icon="feather:code"></i>
+                      <i class="iconify close" data-icon="feather:x"></i>
                     </a>
                   </div>
                   <div class="card-inner">
@@ -509,7 +518,10 @@ useTitle('Elements - Forms Custom - Vuero')
                             <span>Select a friend</span>
                           </div>
                           <div class="select-icon">
-                            <Icon icon="feather:chevron-down" />
+                            <i
+                              class="iconify"
+                              data-icon="feather:chevron-down"
+                            ></i>
                           </div>
                           <div class="select-drop has-slimscroll-sm">
                             <div class="drop-inner">
@@ -658,8 +670,8 @@ useTitle('Elements - Forms Custom - Vuero')
                       to the code example for more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                      <i class="iconify open" data-icon="feather:code"></i>
+                      <i class="iconify close" data-icon="feather:x"></i>
                     </a>
                   </div>
                   <div class="card-inner">
@@ -674,7 +686,10 @@ useTitle('Elements - Forms Custom - Vuero')
                             </div>
                           </div>
                           <div class="box-chevron">
-                            <Icon icon="feather:chevron-down" />
+                            <i
+                              class="iconify"
+                              data-icon="feather:chevron-down"
+                            ></i>
                           </div>
                           <div class="box-dropdown">
                             <div class="dropdown-inner has-slimscroll">
@@ -685,7 +700,10 @@ useTitle('Elements - Forms Custom - Vuero')
                                   </span>
                                   <span class="item-name">Ambulance</span>
                                   <span class="checkmark">
-                                    <Icon icon="feather:check" />
+                                    <i
+                                      class="iconify"
+                                      data-icon="feather:check"
+                                    ></i>
                                   </span>
                                 </li>
                                 <li>
@@ -694,7 +712,10 @@ useTitle('Elements - Forms Custom - Vuero')
                                   </span>
                                   <span class="item-name">First Aid</span>
                                   <span class="checkmark">
-                                    <Icon icon="feather:check" />
+                                    <i
+                                      class="iconify"
+                                      data-icon="feather:check"
+                                    ></i>
                                   </span>
                                 </li>
                                 <li class="is-active">
@@ -703,7 +724,10 @@ useTitle('Elements - Forms Custom - Vuero')
                                   </span>
                                   <span class="item-name">Medicine</span>
                                   <span class="checkmark">
-                                    <Icon icon="feather:check" />
+                                    <i
+                                      class="iconify"
+                                      data-icon="feather:check"
+                                    ></i>
                                   </span>
                                 </li>
                                 <li>
@@ -712,7 +736,10 @@ useTitle('Elements - Forms Custom - Vuero')
                                   </span>
                                   <span class="item-name">Hospital</span>
                                   <span class="checkmark">
-                                    <Icon icon="feather:check" />
+                                    <i
+                                      class="iconify"
+                                      data-icon="feather:check"
+                                    ></i>
                                   </span>
                                 </li>
                               </ul>
@@ -799,8 +826,8 @@ useTitle('Elements - Forms Custom - Vuero')
                       more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                      <i class="iconify open" data-icon="feather:code"></i>
+                      <i class="iconify close" data-icon="feather:x"></i>
                     </a>
                   </div>
                   <div class="card-inner">
@@ -815,7 +842,10 @@ useTitle('Elements - Forms Custom - Vuero')
                             </div>
                           </div>
                           <div class="box-chevron">
-                            <Icon icon="feather:chevron-down" />
+                            <i
+                              class="iconify"
+                              data-icon="feather:chevron-down"
+                            ></i>
                           </div>
                           <div class="box-dropdown">
                             <div class="dropdown-inner has-slimscroll">
@@ -826,7 +856,10 @@ useTitle('Elements - Forms Custom - Vuero')
                                   </span>
                                   <span class="item-name">Ambulance</span>
                                   <span class="checkmark">
-                                    <Icon icon="feather:check" />
+                                    <i
+                                      class="iconify"
+                                      data-icon="feather:check"
+                                    ></i>
                                   </span>
                                 </li>
                                 <li>
@@ -835,7 +868,10 @@ useTitle('Elements - Forms Custom - Vuero')
                                   </span>
                                   <span class="item-name">First Aid</span>
                                   <span class="checkmark">
-                                    <Icon icon="feather:check" />
+                                    <i
+                                      class="iconify"
+                                      data-icon="feather:check"
+                                    ></i>
                                   </span>
                                 </li>
                                 <li class="is-active">
@@ -844,7 +880,10 @@ useTitle('Elements - Forms Custom - Vuero')
                                   </span>
                                   <span class="item-name">Medicine</span>
                                   <span class="checkmark">
-                                    <Icon icon="feather:check" />
+                                    <i
+                                      class="iconify"
+                                      data-icon="feather:check"
+                                    ></i>
                                   </span>
                                 </li>
                                 <li>
@@ -853,7 +892,10 @@ useTitle('Elements - Forms Custom - Vuero')
                                   </span>
                                   <span class="item-name">Hospital</span>
                                   <span class="checkmark">
-                                    <Icon icon="feather:check" />
+                                    <i
+                                      class="iconify"
+                                      data-icon="feather:check"
+                                    ></i>
                                   </span>
                                 </li>
                               </ul>
@@ -939,8 +981,8 @@ useTitle('Elements - Forms Custom - Vuero')
                       details about usage.
                     </p>
                     <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                      <i class="iconify open" data-icon="feather:code"></i>
+                      <i class="iconify close" data-icon="feather:x"></i>
                     </a>
                   </div>
                   <div class="card-inner">
@@ -964,7 +1006,10 @@ useTitle('Elements - Forms Custom - Vuero')
                             </div>
                           </div>
                           <div class="box-chevron">
-                            <Icon icon="feather:chevron-down" />
+                            <i
+                              class="iconify"
+                              data-icon="feather:chevron-down"
+                            ></i>
                           </div>
                           <div class="box-dropdown">
                             <div class="dropdown-inner has-slimscroll">
@@ -982,7 +1027,10 @@ useTitle('Elements - Forms Custom - Vuero')
                                   </span>
                                   <span class="item-name">Javascript</span>
                                   <span class="checkmark">
-                                    <Icon icon="feather:check" />
+                                    <i
+                                      class="iconify"
+                                      data-icon="feather:check"
+                                    ></i>
                                   </span>
                                 </li>
                                 <li>
@@ -998,7 +1046,10 @@ useTitle('Elements - Forms Custom - Vuero')
                                   </span>
                                   <span class="item-name">Angular</span>
                                   <span class="checkmark">
-                                    <Icon icon="feather:check" />
+                                    <i
+                                      class="iconify"
+                                      data-icon="feather:check"
+                                    ></i>
                                   </span>
                                 </li>
                                 <li>
@@ -1014,7 +1065,10 @@ useTitle('Elements - Forms Custom - Vuero')
                                   </span>
                                   <span class="item-name">Html5</span>
                                   <span class="checkmark">
-                                    <Icon icon="feather:check" />
+                                    <i
+                                      class="iconify"
+                                      data-icon="feather:check"
+                                    ></i>
                                   </span>
                                 </li>
                                 <li>
@@ -1030,7 +1084,10 @@ useTitle('Elements - Forms Custom - Vuero')
                                   </span>
                                   <span class="item-name">Android</span>
                                   <span class="checkmark">
-                                    <Icon icon="feather:check" />
+                                    <i
+                                      class="iconify"
+                                      data-icon="feather:check"
+                                    ></i>
                                   </span>
                                 </li>
                               </ul>
@@ -1117,8 +1174,8 @@ useTitle('Elements - Forms Custom - Vuero')
                       details about usage.
                     </p>
                     <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                      <i class="iconify open" data-icon="feather:code"></i>
+                      <i class="iconify close" data-icon="feather:x"></i>
                     </a>
                   </div>
                   <div class="card-inner">
@@ -1142,7 +1199,10 @@ useTitle('Elements - Forms Custom - Vuero')
                             </div>
                           </div>
                           <div class="box-chevron">
-                            <Icon icon="feather:chevron-down" />
+                            <i
+                              class="iconify"
+                              data-icon="feather:chevron-down"
+                            ></i>
                           </div>
                           <div class="box-dropdown">
                             <div class="dropdown-inner has-slimscroll">
@@ -1160,7 +1220,10 @@ useTitle('Elements - Forms Custom - Vuero')
                                   </span>
                                   <span class="item-name">Javascript</span>
                                   <span class="checkmark">
-                                    <Icon icon="feather:check" />
+                                    <i
+                                      class="iconify"
+                                      data-icon="feather:check"
+                                    ></i>
                                   </span>
                                 </li>
                                 <li>
@@ -1176,7 +1239,10 @@ useTitle('Elements - Forms Custom - Vuero')
                                   </span>
                                   <span class="item-name">Angular</span>
                                   <span class="checkmark">
-                                    <Icon icon="feather:check" />
+                                    <i
+                                      class="iconify"
+                                      data-icon="feather:check"
+                                    ></i>
                                   </span>
                                 </li>
                                 <li>
@@ -1192,7 +1258,10 @@ useTitle('Elements - Forms Custom - Vuero')
                                   </span>
                                   <span class="item-name">Html5</span>
                                   <span class="checkmark">
-                                    <Icon icon="feather:check" />
+                                    <i
+                                      class="iconify"
+                                      data-icon="feather:check"
+                                    ></i>
                                   </span>
                                 </li>
                                 <li>
@@ -1208,7 +1277,10 @@ useTitle('Elements - Forms Custom - Vuero')
                                   </span>
                                   <span class="item-name">Android</span>
                                   <span class="checkmark">
-                                    <Icon icon="feather:check" />
+                                    <i
+                                      class="iconify"
+                                      data-icon="feather:check"
+                                    ></i>
                                   </span>
                                 </li>
                               </ul>
@@ -1294,8 +1366,8 @@ useTitle('Elements - Forms Custom - Vuero')
                       Please refer to the markup for more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                      <i class="iconify open" data-icon="feather:code"></i>
+                      <i class="iconify close" data-icon="feather:x"></i>
                     </a>
                   </div>
                   <div class="card-inner">
@@ -1320,7 +1392,10 @@ useTitle('Elements - Forms Custom - Vuero')
                             </div>
                           </div>
                           <div class="box-chevron">
-                            <Icon icon="feather:chevron-down" />
+                            <i
+                              class="iconify"
+                              data-icon="feather:chevron-down"
+                            ></i>
                           </div>
                           <div class="box-dropdown">
                             <div class="dropdown-inner has-slimscroll">
@@ -1338,7 +1413,10 @@ useTitle('Elements - Forms Custom - Vuero')
                                   </span>
                                   <span class="item-name">Javascript</span>
                                   <span class="checkmark">
-                                    <Icon icon="feather:check" />
+                                    <i
+                                      class="iconify"
+                                      data-icon="feather:check"
+                                    ></i>
                                   </span>
                                 </li>
                                 <li data-skill="angular-skill">
@@ -1354,7 +1432,10 @@ useTitle('Elements - Forms Custom - Vuero')
                                   </span>
                                   <span class="item-name">Angular</span>
                                   <span class="checkmark">
-                                    <Icon icon="feather:check" />
+                                    <i
+                                      class="iconify"
+                                      data-icon="feather:check"
+                                    ></i>
                                   </span>
                                 </li>
                                 <li data-skill="reactjs-skill">
@@ -1370,7 +1451,10 @@ useTitle('Elements - Forms Custom - Vuero')
                                   </span>
                                   <span class="item-name">Reactjs</span>
                                   <span class="checkmark">
-                                    <Icon icon="feather:check" />
+                                    <i
+                                      class="iconify"
+                                      data-icon="feather:check"
+                                    ></i>
                                   </span>
                                 </li>
                                 <li data-skill="vuejs-skill">
@@ -1386,7 +1470,10 @@ useTitle('Elements - Forms Custom - Vuero')
                                   </span>
                                   <span class="item-name">Vuejs</span>
                                   <span class="checkmark">
-                                    <Icon icon="feather:check" />
+                                    <i
+                                      class="iconify"
+                                      data-icon="feather:check"
+                                    ></i>
                                   </span>
                                 </li>
                                 <li data-skill="nodejs-skill">
@@ -1402,7 +1489,10 @@ useTitle('Elements - Forms Custom - Vuero')
                                   </span>
                                   <span class="item-name">Nodejs</span>
                                   <span class="checkmark">
-                                    <Icon icon="feather:check" />
+                                    <i
+                                      class="iconify"
+                                      data-icon="feather:check"
+                                    ></i>
                                   </span>
                                 </li>
                                 <li data-skill="android-skill">
@@ -1418,7 +1508,10 @@ useTitle('Elements - Forms Custom - Vuero')
                                   </span>
                                   <span class="item-name">Android</span>
                                   <span class="checkmark">
-                                    <Icon icon="feather:check" />
+                                    <i
+                                      class="iconify"
+                                      data-icon="feather:check"
+                                    ></i>
                                   </span>
                                 </li>
                                 <li data-skill="swift-skill">
@@ -1434,7 +1527,10 @@ useTitle('Elements - Forms Custom - Vuero')
                                   </span>
                                   <span class="item-name">Swift</span>
                                   <span class="checkmark">
-                                    <Icon icon="feather:check" />
+                                    <i
+                                      class="iconify"
+                                      data-icon="feather:check"
+                                    ></i>
                                   </span>
                                 </li>
                                 <li data-skill="wordpress-skill">
@@ -1450,7 +1546,10 @@ useTitle('Elements - Forms Custom - Vuero')
                                   </span>
                                   <span class="item-name">WordPress</span>
                                   <span class="checkmark">
-                                    <Icon icon="feather:check" />
+                                    <i
+                                      class="iconify"
+                                      data-icon="feather:check"
+                                    ></i>
                                   </span>
                                 </li>
                                 <li data-skill="laravel-skill">
@@ -1466,7 +1565,10 @@ useTitle('Elements - Forms Custom - Vuero')
                                   </span>
                                   <span class="item-name">Laravel</span>
                                   <span class="checkmark">
-                                    <Icon icon="feather:check" />
+                                    <i
+                                      class="iconify"
+                                      data-icon="feather:check"
+                                    ></i>
                                   </span>
                                 </li>
                               </ul>
@@ -1597,8 +1699,8 @@ useTitle('Elements - Forms Custom - Vuero')
                       to the markup for more details about usage.
                     </p>
                     <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                      <i class="iconify open" data-icon="feather:code"></i>
+                      <i class="iconify close" data-icon="feather:x"></i>
                     </a>
                   </div>
                   <div class="card-inner">
@@ -1634,7 +1736,10 @@ useTitle('Elements - Forms Custom - Vuero')
                             </div>
                           </div>
                           <div class="box-chevron">
-                            <Icon icon="feather:chevron-down" />
+                            <i
+                              class="iconify"
+                              data-icon="feather:chevron-down"
+                            ></i>
                           </div>
                           <div class="box-dropdown">
                             <div class="dropdown-inner has-slimscroll">
@@ -1662,7 +1767,10 @@ useTitle('Elements - Forms Custom - Vuero')
                                   </span>
                                   <span class="item-name">Jimmy H.</span>
                                   <span class="checkmark">
-                                    <Icon icon="feather:check" />
+                                    <i
+                                      class="iconify"
+                                      data-icon="feather:check"
+                                    ></i>
                                   </span>
                                 </li>
                                 <li>
@@ -1688,7 +1796,10 @@ useTitle('Elements - Forms Custom - Vuero')
                                   </span>
                                   <span class="item-name">Alice C.</span>
                                   <span class="checkmark">
-                                    <Icon icon="feather:check" />
+                                    <i
+                                      class="iconify"
+                                      data-icon="feather:check"
+                                    ></i>
                                   </span>
                                 </li>
                                 <li>
@@ -1714,7 +1825,10 @@ useTitle('Elements - Forms Custom - Vuero')
                                   </span>
                                   <span class="item-name">Erik K.</span>
                                   <span class="checkmark">
-                                    <Icon icon="feather:check" />
+                                    <i
+                                      class="iconify"
+                                      data-icon="feather:check"
+                                    ></i>
                                   </span>
                                 </li>
                                 <li>
@@ -1740,7 +1854,10 @@ useTitle('Elements - Forms Custom - Vuero')
                                   </span>
                                   <span class="item-name">Joshua S.</span>
                                   <span class="checkmark">
-                                    <Icon icon="feather:check" />
+                                    <i
+                                      class="iconify"
+                                      data-icon="feather:check"
+                                    ></i>
                                   </span>
                                 </li>
                                 <li>
@@ -1766,7 +1883,10 @@ useTitle('Elements - Forms Custom - Vuero')
                                   </span>
                                   <span class="item-name">Melany W.</span>
                                   <span class="checkmark">
-                                    <Icon icon="feather:check" />
+                                    <i
+                                      class="iconify"
+                                      data-icon="feather:check"
+                                    ></i>
                                   </span>
                                 </li>
                               </ul>

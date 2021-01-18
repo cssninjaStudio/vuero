@@ -29,7 +29,7 @@ const emit = defineEmit([
             aria-label="close"
             @click="emit('close')"
           >
-            <Icon icon="feather:x" />
+            <i class="iconify" data-icon="feather:x"></i>
           </button>
         </header>
         <div class="modal-card-body">
@@ -67,7 +67,10 @@ const emit = defineEmit([
                           </div>
                         </div>
                         <div class="box-chevron">
-                          <Icon icon="feather:chevron-down" />
+                          <i
+                            class="iconify"
+                            data-icon="feather:chevron-down"
+                          ></i>
                         </div>
                         <div class="box-dropdown">
                           <div class="dropdown-inner has-slimscroll">
@@ -85,7 +88,10 @@ const emit = defineEmit([
                                 </span>
                                 <span class="item-name">Jimmy H.</span>
                                 <span class="checkmark">
-                                  <Icon icon="feather:check" />
+                                  <i
+                                    class="iconify"
+                                    data-icon="feather:check"
+                                  ></i>
                                 </span>
                               </li>
                               <li>
@@ -101,7 +107,10 @@ const emit = defineEmit([
                                 </span>
                                 <span class="item-name">Erik K.</span>
                                 <span class="checkmark">
-                                  <Icon icon="feather:check" />
+                                  <i
+                                    class="iconify"
+                                    data-icon="feather:check"
+                                  ></i>
                                 </span>
                               </li>
                               <li>
@@ -117,7 +126,10 @@ const emit = defineEmit([
                                 </span>
                                 <span class="item-name">Alice C.</span>
                                 <span class="checkmark">
-                                  <Icon icon="feather:check" />
+                                  <i
+                                    class="iconify"
+                                    data-icon="feather:check"
+                                  ></i>
                                 </span>
                               </li>
                               <li>
@@ -133,7 +145,10 @@ const emit = defineEmit([
                                 </span>
                                 <span class="item-name">Melany W.</span>
                                 <span class="checkmark">
-                                  <Icon icon="feather:check" />
+                                  <i
+                                    class="iconify"
+                                    data-icon="feather:check"
+                                  ></i>
                                 </span>
                               </li>
                               <li>
@@ -149,7 +164,10 @@ const emit = defineEmit([
                                 </span>
                                 <span class="item-name">Joshua S.</span>
                                 <span class="checkmark">
-                                  <Icon icon="feather:check" />
+                                  <i
+                                    class="iconify"
+                                    data-icon="feather:check"
+                                  ></i>
                                 </span>
                               </li>
                             </ul>
@@ -168,7 +186,10 @@ const emit = defineEmit([
                           <span>Select a type</span>
                         </div>
                         <div class="select-icon">
-                          <Icon icon="feather:chevron-down" />
+                          <i
+                            class="iconify"
+                            data-icon="feather:chevron-down"
+                          ></i>
                         </div>
                         <div class="select-drop has-slimscroll-sm">
                           <div class="drop-inner">

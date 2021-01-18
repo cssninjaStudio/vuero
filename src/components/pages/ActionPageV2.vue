@@ -97,7 +97,7 @@
               <div
                 class="icon-wrap is-dark-primary is-dark-bg-3 is-dark-card-bordered"
               >
-                <Icon icon="feather:check" />
+                <i class="iconify" data-icon="feather:check"></i>
               </div>
               <div class="flex-meta">
                 <span>Project Summary</span>
@@ -110,7 +110,7 @@
               <div
                 class="icon-wrap is-dark-primary is-dark-bg-3 is-dark-card-bordered"
               >
-                <Icon icon="feather:check" />
+                <i class="iconify" data-icon="feather:check"></i>
               </div>
               <div class="flex-meta">
                 <span>UI Review</span>
@@ -121,7 +121,7 @@
               <div
                 class="icon-wrap is-dark-primary is-dark-bg-3 is-dark-card-bordered"
               >
-                <Icon icon="feather:check" />
+                <i class="iconify" data-icon="feather:check"></i>
               </div>
               <div class="flex-meta">
                 <span>Schedule</span>

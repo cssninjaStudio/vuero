@@ -11,7 +11,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
     <div class="subpanel-header">
       <h3 class="no-mb">Components</h3>
       <div class="panel-close">
-        <Icon icon="feather:x" />
+        <i class="iconify" data-icon="feather:x"></i>
       </div>
     </div>
     <div class="inner" data-simplebar>
@@ -33,21 +33,24 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
               <RouterLink
                 :to="{ name: 'components-accordion-basic' }"
                 class="is-submenu"
-                ><Icon icon="feather:circle" />Accordion</RouterLink
+                ><i class="iconify" data-icon="feather:circle"></i
+                >Accordion</RouterLink
               >
             </li>
             <li>
               <RouterLink
                 :to="{ name: 'components-accordion-collapse' }"
                 class="is-submenu"
-                ><Icon icon="feather:circle" />Collapse</RouterLink
+                ><i class="iconify" data-icon="feather:circle"></i
+                >Collapse</RouterLink
               >
             </li>
             <li>
               <RouterLink
                 :to="{ name: 'components-accordion-images' }"
                 class="is-submenu"
-                ><Icon icon="feather:circle" />Image Accordion</RouterLink
+                ><i class="iconify" data-icon="feather:circle"></i>Image
+                Accordion</RouterLink
               >
             </li>
           </ul>
@@ -92,14 +95,16 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
               <RouterLink
                 :to="{ name: 'components-tabs-regular' }"
                 class="is-submenu"
-                ><Icon icon="feather:circle" />Regular Tabs</RouterLink
+                ><i class="iconify" data-icon="feather:circle"></i>Regular
+                Tabs</RouterLink
               >
             </li>
             <li>
               <RouterLink
                 :to="{ name: 'components-tabs-slider' }"
                 class="is-submenu"
-                ><Icon icon="feather:circle" />Slider Tabs</RouterLink
+                ><i class="iconify" data-icon="feather:circle"></i>Slider
+                Tabs</RouterLink
               >
             </li>
           </ul>
@@ -115,28 +120,32 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
               <RouterLink
                 :to="{ name: 'components-table-flex' }"
                 class="is-submenu"
-                ><Icon icon="feather:circle" />Base Table</RouterLink
+                ><i class="iconify" data-icon="feather:circle"></i>Base
+                Table</RouterLink
               >
             </li>
             <li>
               <RouterLink
                 :to="{ name: 'components-table-flex-compact' }"
                 class="is-submenu"
-                ><Icon icon="feather:circle" />Compact Table</RouterLink
+                ><i class="iconify" data-icon="feather:circle"></i>Compact
+                Table</RouterLink
               >
             </li>
             <li>
               <RouterLink
                 :to="{ name: 'components-table-flex-media' }"
                 class="is-submenu"
-                ><Icon icon="feather:circle" />Media Table</RouterLink
+                ><i class="iconify" data-icon="feather:circle"></i>Media
+                Table</RouterLink
               >
             </li>
             <li>
               <RouterLink
                 :to="{ name: 'components-table-flex-advanced' }"
                 class="is-submenu"
-                ><Icon icon="feather:circle" />Advanced Table</RouterLink
+                ><i class="iconify" data-icon="feather:circle"></i>Advanced
+                Table</RouterLink
               >
             </li>
           </ul>
@@ -156,77 +165,88 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
               <RouterLink
                 :to="{ name: 'components-plugins-alertify' }"
                 class="is-submenu"
-                ><Icon icon="feather:circle" />Alertify</RouterLink
+                ><i class="iconify" data-icon="feather:circle"></i
+                >Alertify</RouterLink
               >
             </li>
             <li>
               <RouterLink
                 :to="{ name: 'components-plugins-autocomplete' }"
                 class="is-submenu"
-                ><Icon icon="feather:circle" />Autocomplete</RouterLink
+                ><i class="iconify" data-icon="feather:circle"></i
+                >Autocomplete</RouterLink
               >
             </li>
             <li>
               <RouterLink
                 :to="{ name: 'components-plugins-datepicker' }"
                 class="is-submenu"
-                ><Icon icon="feather:circle" />Datepicker</RouterLink
+                ><i class="iconify" data-icon="feather:circle"></i
+                >Datepicker</RouterLink
               >
             </li>
             <li>
               <RouterLink
                 :to="{ name: 'components-plugins-choices' }"
                 class="is-submenu"
-                ><Icon icon="feather:circle" />ChoicesJs</RouterLink
+                ><i class="iconify" data-icon="feather:circle"></i
+                >ChoicesJs</RouterLink
               >
             </li>
             <li>
               <RouterLink
                 :to="{ name: 'components-plugins-nouislider' }"
                 class="is-submenu"
-                ><Icon icon="feather:circle" />NoUI Slider</RouterLink
+                ><i class="iconify" data-icon="feather:circle"></i>NoUI
+                Slider</RouterLink
               >
             </li>
             <li>
               <RouterLink
                 :to="{ name: 'components-plugins-filepond' }"
                 class="is-submenu"
-                ><Icon icon="feather:circle" />Filepond</RouterLink
+                ><i class="iconify" data-icon="feather:circle"></i
+                >Filepond</RouterLink
               >
             </li>
             <li>
               <RouterLink
                 :to="{ name: 'components-plugins-lightgallery' }"
                 class="is-submenu"
-                ><Icon icon="feather:circle" />Light Gallery</RouterLink
+                ><i class="iconify" data-icon="feather:circle"></i>Light
+                Gallery</RouterLink
               >
             </li>
             <li>
               <RouterLink
                 :to="{ name: 'components-plugins-videogallery' }"
                 class="is-submenu"
-                ><Icon icon="feather:circle" />Video Gallery</RouterLink
+                ><i class="iconify" data-icon="feather:circle"></i>Video
+                Gallery</RouterLink
               >
             </li>
             <li>
               <RouterLink
                 :to="{ name: 'components-plugins-video-player' }"
                 class="is-submenu"
-                ><Icon icon="feather:circle" />Video Player</RouterLink
+                ><i class="iconify" data-icon="feather:circle"></i>Video
+                Player</RouterLink
               >
             </li>
             <li>
               <RouterLink
                 :to="{ name: 'components-plugins-toasts' }"
                 class="is-submenu"
-                ><Icon icon="feather:circle" />Toasts</RouterLink
+                ><i class="iconify" data-icon="feather:circle"></i
+                >Toasts</RouterLink
               >
             </li>
             <li>
               <RouterLink
                 :to="{ name: 'components-plugins-webuipopover' }"
                 class="is-submenu"
-                ><Icon icon="feather:circle" />WebUI Popover</RouterLink
+                ><i class="iconify" data-icon="feather:circle"></i>WebUI
+                Popover</RouterLink
               >
             </li>
           </ul>
@@ -242,14 +262,16 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
               <RouterLink
                 class="is-submenu"
                 :to="{ name: 'components-plugins-editor-summernote' }"
-                ><Icon icon="feather:circle" />Summernote</RouterLink
+                ><i class="iconify" data-icon="feather:circle"></i
+                >Summernote</RouterLink
               >
             </li>
             <li>
               <RouterLink
                 :to="{ name: 'components-plugins-editor-sun' }"
                 class="is-submenu"
-                ><Icon icon="feather:circle" />Sun Editor</RouterLink
+                ><i class="iconify" data-icon="feather:circle"></i>Sun
+                Editor</RouterLink
               >
             </li>
           </ul>

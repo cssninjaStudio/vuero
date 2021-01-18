@@ -65,7 +65,7 @@ useTitle('Grid Tiles 3 - Admin - Vuero')
                 data-filter-target=".is-child"
               />
               <div class="form-icon">
-                <Icon icon="feather:search" />
+                <i class="iconify" data-icon="feather:search"></i>
               </div>
             </div>
 
@@ -77,7 +77,7 @@ useTitle('Grid Tiles 3 - Admin - Vuero')
                       <span>All Posts</span>
                     </div>
                     <div class="select-icon">
-                      <Icon icon="feather:chevron-down" />
+                      <i class="iconify" data-icon="feather:chevron-down"></i>
                     </div>
                     <div class="select-drop has-slimscroll-sm">
                       <div class="drop-inner">

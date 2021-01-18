@@ -6,7 +6,7 @@ import ViteComponents from 'vite-plugin-components'
 import ViteFonts from 'vite-plugin-fonts'
 import PurgeIcons from 'vite-plugin-purge-icons'
 import VueI18n from '@intlify/vite-plugin-vue-i18n'
-import Markdown from 'vite-plugin-md'
+import Markdown from './vite-plugins/vite-plugin-md'
 import MarkdownPrismVue from './vite-plugins/markdown-it-prism-vue'
 import { VitePWA } from 'vite-plugin-pwa'
 

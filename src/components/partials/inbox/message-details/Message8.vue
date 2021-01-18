@@ -31,7 +31,7 @@ const {
         <span class="sender-email">&lt;edouard@huro.io&gt;</span>
       </div>
       <div class="attachments inbox-hidden-mobile">
-        <Icon icon="feather:paperclip" />
+        <i class="iconify" data-icon="feather:paperclip"></i>
         <span>1</span>
       </div>
       <div
@@ -42,30 +42,30 @@ const {
         <div>
           <button class="button" @click="open1">
             <span class="icon is-small">
-              <Icon icon="feather:more-vertical" />
+              <i class="iconify" data-icon="feather:more-vertical"></i>
             </span>
           </button>
         </div>
         <div class="dropdown-menu">
           <div class="dropdown-content">
             <a class="dropdown-item">
-              <Icon icon="feather:bookmark" />
+              <i class="iconify" data-icon="feather:bookmark"></i>
               <span>Bookmark</span>
             </a>
             <a class="dropdown-item">
-              <Icon icon="feather:share-2" />
+              <i class="iconify" data-icon="feather:share-2"></i>
               <span>Share message</span>
             </a>
             <hr class="dropdown-divider" />
             <a class="dropdown-item">
-              <Icon icon="feather:thumbs-down" />
+              <i class="iconify" data-icon="feather:thumbs-down"></i>
               <span>Mark as spam</span>
             </a>
           </div>
         </div>
       </div>
       <a class="inbox-action inbox-close-details-mobile">
-        <Icon icon="feather:x" />
+        <i class="iconify" data-icon="feather:x"></i>
       </a>
     </div>
     <!--Message-->
@@ -78,19 +78,19 @@ const {
           </div>
           <div class="message-actions">
             <a class="inbox-action">
-              <Icon icon="feather:corner-up-left" />
+              <i class="iconify" data-icon="feather:corner-up-left"></i>
             </a>
             <a class="inbox-action">
-              <Icon icon="feather:file-text" />
+              <i class="iconify" data-icon="feather:file-text"></i>
             </a>
             <a class="inbox-action">
-              <Icon icon="feather:tag" />
+              <i class="iconify" data-icon="feather:tag"></i>
             </a>
             <a class="inbox-action">
-              <Icon icon="feather:message-circle" />
+              <i class="iconify" data-icon="feather:message-circle"></i>
             </a>
             <a class="inbox-action">
-              <Icon icon="feather:lock" />
+              <i class="iconify" data-icon="feather:lock"></i>
             </a>
           </div>
         </div>
@@ -120,7 +120,7 @@ const {
           <div class="attachment">
             <span>report.pdf</span>
             <div class="download-icon">
-              <Icon icon="feather:arrow-down" />
+              <i class="iconify" data-icon="feather:arrow-down"></i>
             </div>
           </div>
         </div>
@@ -147,22 +147,22 @@ const {
               <div>
                 <button class="button" @click="open2">
                   <span class="icon is-small">
-                    <Icon icon="feather:more-vertical" />
+                    <i class="iconify" data-icon="feather:more-vertical"></i>
                   </span>
                 </button>
               </div>
               <div class="dropdown-menu">
                 <div class="dropdown-content">
                   <a class="dropdown-item">
-                    <Icon icon="feather:refresh-cw" />
+                    <i class="iconify" data-icon="feather:refresh-cw"></i>
                     <span>Reset</span>
                   </a>
                   <a class="dropdown-item">
-                    <Icon icon="feather:align-left" />
+                    <i class="iconify" data-icon="feather:align-left"></i>
                     <span>Spelling</span>
                   </a>
                   <a class="dropdown-item">
-                    <Icon icon="feather:at-sign" />
+                    <i class="iconify" data-icon="feather:at-sign"></i>
                     <span>Mention</span>
                   </a>
                 </div>

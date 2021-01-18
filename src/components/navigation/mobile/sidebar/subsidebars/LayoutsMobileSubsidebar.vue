@@ -432,7 +432,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
               >
                 <i class="lnil lnil-grid-alt"></i>
                 <span>Projects V1</span>
-                <Icon class="is-auto" icon="feather:map-pin" />
+                <i class="iconify is-auto" data-icon="feather:map-pin"></i>
               </RouterLink>
             </li>
             <li>
@@ -442,7 +442,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
               >
                 <i class="lnil lnil-grid-alt"></i>
                 <span>Projects V2</span>
-                <Icon class="is-auto" icon="feather:map-pin" />
+                <i class="iconify is-auto" data-icon="feather:map-pin"></i>
               </RouterLink>
             </li>
             <li>
@@ -452,7 +452,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
               >
                 <i class="lnil lnil-grid-alt"></i>
                 <span>Projects V3</span>
-                <Icon class="is-auto" icon="feather:map-pin" />
+                <i class="iconify is-auto" data-icon="feather:map-pin"></i>
               </RouterLink>
             </li>
             <li>
@@ -462,7 +462,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
               >
                 <i class="lnil lnil-layout"></i>
                 <span>Project Details</span>
-                <Icon class="is-auto" icon="feather:map-pin" />
+                <i class="iconify is-auto" data-icon="feather:map-pin"></i>
               </RouterLink>
             </li>
             <li>
@@ -472,7 +472,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
               >
                 <i class="lnil lnil-layout-alt-1"></i>
                 <span>Kanban Board</span>
-                <Icon class="is-auto" icon="feather:map-pin" />
+                <i class="iconify is-auto" data-icon="feather:map-pin"></i>
               </RouterLink>
             </li>
           </ul>

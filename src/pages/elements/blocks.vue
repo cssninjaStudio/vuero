@@ -74,7 +74,7 @@ useTitle('Elements - Blocks - Vuero')
                 <li>
                   <RouterLink :to="{ name: 'index' }">
                     <span class="icon is-small is-solo">
-                      <Icon icon="feather:home" />
+                      <i class="iconify" data-icon="feather:home"></i>
                     </span>
                   </RouterLink>
                 </li>
@@ -192,7 +192,7 @@ useTitle('Elements - Blocks - Vuero')
                         <div class="l-card">
                           <div class="media-flex">
                             <div class="h-icon is-success is-rounded">
-                              <Icon icon="feather:clock" />
+                              <i class="iconify" data-icon="feather:clock"></i>
                             </div>
                             <div class="flex-meta">
                               <span>Team Tasks</span>
@@ -319,7 +319,7 @@ useTitle('Elements - Blocks - Vuero')
                         <div class="l-card">
                           <div class="media-flex-center">
                             <div class="h-icon is-medium is-info is-rounded">
-                              <Icon icon="feather:chrome" />
+                              <i class="iconify" data-icon="feather:chrome"></i>
                             </div>
                             <div class="flex-meta">
                               <span>Browser Support</span>
@@ -464,7 +464,7 @@ useTitle('Elements - Blocks - Vuero')
                             class="media-flex-center is-responsive-mobile is-responsive-tablet-p"
                           >
                             <div class="h-icon is-medium is-info is-rounded">
-                              <Icon icon="feather:chrome" />
+                              <i class="iconify" data-icon="feather:chrome"></i>
                             </div>
                             <div class="flex-meta">
                               <span>Browser Support</span>

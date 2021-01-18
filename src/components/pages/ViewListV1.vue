@@ -44,7 +44,7 @@
           <div class="meta-left">
             <h3 data-filter-match>Mary Lebowski</h3>
             <span>
-              <Icon icon="feather:map-pin" />
+              <i class="iconify" data-icon="feather:map-pin"></i>
               <span data-filter-match>San Diego, CA</span>
             </span>
           </div>
@@ -124,7 +124,7 @@
           <div class="meta-left">
             <h3 data-filter-match>Daniel Redbird</h3>
             <span>
-              <Icon icon="feather:map-pin" />
+              <i class="iconify" data-icon="feather:map-pin"></i>
               <span data-filter-match>Toronto, Canada</span>
             </span>
           </div>
@@ -226,7 +226,7 @@
           <div class="meta-left">
             <h3 data-filter-match>Erik Kovalsky</h3>
             <span>
-              <Icon icon="feather:map-pin" />
+              <i class="iconify" data-icon="feather:map-pin"></i>
               <span data-filter-match>New York, NY</span>
             </span>
           </div>
@@ -306,7 +306,7 @@
           <div class="meta-left">
             <h3 data-filter-match>Jeanne Marchand</h3>
             <span>
-              <Icon icon="feather:map-pin" />
+              <i class="iconify" data-icon="feather:map-pin"></i>
               <span data-filter-match>Paris, France</span>
             </span>
           </div>
@@ -404,7 +404,7 @@
           <div class="meta-left">
             <h3 data-filter-match>Carmen Escudero</h3>
             <span>
-              <Icon icon="feather:map-pin" />
+              <i class="iconify" data-icon="feather:map-pin"></i>
               <span data-filter-match>Madrid, Spain</span>
             </span>
           </div>
@@ -477,7 +477,7 @@
           <div class="meta-left">
             <h3 data-filter-match>Anna Baker</h3>
             <span>
-              <Icon icon="feather:map-pin" />
+              <i class="iconify" data-icon="feather:map-pin"></i>
               <span data-filter-match>San Francisco, CA</span>
             </span>
           </div>
@@ -561,7 +561,7 @@
           <div class="meta-left">
             <h3 data-filter-match>Esteban Castellanos</h3>
             <span>
-              <Icon icon="feather:map-pin" />
+              <i class="iconify" data-icon="feather:map-pin"></i>
               <span data-filter-match>Miami, FL</span>
             </span>
           </div>
@@ -663,7 +663,7 @@
           <div class="meta-left">
             <h3 data-filter-match>Henry Grobstone</h3>
             <span>
-              <Icon icon="feather:map-pin" />
+              <i class="iconify" data-icon="feather:map-pin"></i>
               <span data-filter-match>Miami, FL</span>
             </span>
           </div>
@@ -747,7 +747,7 @@
           <div class="meta-left">
             <h3 data-filter-match>Melany Wallace</h3>
             <span>
-              <Icon icon="feather:map-pin" />
+              <i class="iconify" data-icon="feather:map-pin"></i>
               <span data-filter-match>San Jose, CA</span>
             </span>
           </div>
@@ -849,7 +849,7 @@
           <div class="meta-left">
             <h3 data-filter-match>Alice Carasca</h3>
             <span>
-              <Icon icon="feather:map-pin" />
+              <i class="iconify" data-icon="feather:map-pin"></i>
               <span data-filter-match>San Diego, CA</span>
             </span>
           </div>

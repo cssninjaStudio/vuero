@@ -71,10 +71,10 @@ const localFlagSrc = computed(() => {
         <img :src="localFlagSrc" alt="" />
       </a>
       <a class="menu-item is-flex">
-        <Icon icon="feather:bell" />
+        <i class="iconify" data-icon="feather:bell"></i>
       </a>
       <a class="menu-item is-flex">
-        <Icon icon="feather:grid" />
+        <i class="iconify" data-icon="feather:grid"></i>
       </a>
     </div>
   </div>

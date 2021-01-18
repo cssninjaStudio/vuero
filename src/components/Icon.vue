@@ -10,5 +10,5 @@ const props = defineProps({
 </script>
 
 <template>
-  <span class="iconify" :data-icon="icon" />
+  <span><i class="iconify" :data-icon="icon"></i></span>
 </template>

@@ -5,24 +5,30 @@ Available modifier classes are `is-small`, `is-medium`, `is-large`, `is-big` and
 
 <!--code-->
 
-```vue {7-10}
+```vue {2-4}
 <template>
+  <div class="h-avatar is-small">
+    <img class="avatar" src="/@images/avatars/photos/7.jpg" alt="" />
+  </div>
   <div class="h-avatar">
-    <img
-      class="avatar"
-      src="/@images/avatars/photos/8.jpg"
-      alt=""
-      @error="
-        $event.target.src =
-          'https://via.placeholder.com/150x150'
-      "
-    />
+    <img class="avatar" src="/@images/avatars/photos/8.jpg" alt="" />
+  </div>
+  <div class="h-avatar is-medium">
+    <img class="avatar" src="/@images/avatars/photos/11.jpg" alt="" />
+  </div>
+  <div class="h-avatar is-large">
+    <img class="avatar" src="/@images/avatars/photos/21.jpg" alt="" />
+  </div>
+  <div class="h-avatar is-big">
+    <img class="avatar" src="/@images/avatars/photos/13.jpg" alt="" />
+  </div>
+  <div class="h-avatar is-xl">
+    <img class="avatar" src="/@images/avatars/photos/5.jpg" alt="" />
   </div>
 </template>
 ```
 
 <!--/code-->
-
 
 <!--example-->
 
@@ -33,7 +39,7 @@ Available modifier classes are `is-small`, `is-medium`, `is-large`, `is-big` and
     alt=""
     @error="
       $event.target.src =
-        'https://via.placeholder.com/150x150'
+        'https://via.placeholder.com/32x32'
     "
   />
 </div>
@@ -44,7 +50,7 @@ Available modifier classes are `is-small`, `is-medium`, `is-large`, `is-big` and
     alt=""
     @error="
       $event.target.src =
-        'https://via.placeholder.com/150x150'
+        'https://via.placeholder.com/40x40'
     "
   />
 </div>
@@ -55,7 +61,7 @@ Available modifier classes are `is-small`, `is-medium`, `is-large`, `is-big` and
     alt=""
     @error="
       $event.target.src =
-        'https://via.placeholder.com/150x150'
+        'https://via.placeholder.com/50x50'
     "
   />
 </div>
@@ -66,7 +72,7 @@ Available modifier classes are `is-small`, `is-medium`, `is-large`, `is-big` and
     alt=""
     @error="
       $event.target.src =
-        'https://via.placeholder.com/150x150'
+        'https://via.placeholder.com/68x68'
     "
   />
 </div>
@@ -77,7 +83,7 @@ Available modifier classes are `is-small`, `is-medium`, `is-large`, `is-big` and
     alt=""
     @error="
       $event.target.src =
-        'https://via.placeholder.com/150x150'
+        'https://via.placeholder.com/80x80'
     "
   />
 </div>
@@ -88,10 +94,9 @@ Available modifier classes are `is-small`, `is-medium`, `is-large`, `is-big` and
     alt=""
     @error="
       $event.target.src =
-        'https://via.placeholder.com/150x150'
+        'https://via.placeholder.com/100x100'
     "
   />
 </div>
-
 
 <!--/example-->

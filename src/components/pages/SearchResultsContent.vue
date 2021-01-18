@@ -11,7 +11,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
       <div class="control has-icon">
         <input class="input" placeholder="Search again..." />
         <div class="form-icon">
-          <Icon icon="feather:search" />
+          <i class="iconify" data-icon="feather:search"></i>
         </div>
       </div>
 
@@ -224,7 +224,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
             <div class="search-results-group">
               <div class="group-header">
                 <div class="icon-wrap">
-                  <Icon icon="feather:user" />
+                  <i class="iconify" data-icon="feather:user"></i>
                 </div>
                 <h4>People</h4>
               </div>
@@ -482,7 +482,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
             <div class="search-results-group">
               <div class="group-header">
                 <div class="icon-wrap">
-                  <Icon icon="feather:file-text" />
+                  <i class="iconify" data-icon="feather:file-text"></i>
                 </div>
                 <h4>Records</h4>
               </div>

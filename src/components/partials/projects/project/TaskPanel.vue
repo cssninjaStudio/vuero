@@ -14,7 +14,7 @@ import { activePanel } from '/@src/composition/state/ui/activePanelState'
       <div class="right-panel-head">
         <h3>Task Details</h3>
         <a class="close-panel" @click="activePanel = 'none'">
-          <Icon icon="feather:chevron-right" />
+          <i class="iconify" data-icon="feather:chevron-right"></i>
         </a>
       </div>
       <div class="right-panel-body has-slimscroll" data-simplebar>
@@ -68,7 +68,7 @@ import { activePanel } from '/@src/composition/state/ui/activePanelState'
               </div>
 
               <button>
-                <Icon icon="feather:plus" />
+                <i class="iconify" data-icon="feather:plus"></i>
               </button>
             </div>
           </div>
@@ -78,19 +78,19 @@ import { activePanel } from '/@src/composition/state/ui/activePanelState'
           <h3>Statistics</h3>
           <div class="task-stats">
             <div class="task-stat">
-              <Icon icon="feather:clock" />
+              <i class="iconify" data-icon="feather:clock"></i>
               <span>5 days</span>
             </div>
             <div class="task-stat">
-              <Icon icon="feather:file" />
+              <i class="iconify" data-icon="feather:file"></i>
               <span>3 files</span>
             </div>
             <div class="task-stat">
-              <Icon icon="feather:message-circle" />
+              <i class="iconify" data-icon="feather:message-circle"></i>
               <span>54</span>
             </div>
             <a>
-              <Icon icon="feather:plus" />
+              <i class="iconify" data-icon="feather:plus"></i>
               <span>Add Checklist</span>
             </a>
           </div>
@@ -153,9 +153,15 @@ import { activePanel } from '/@src/composition/state/ui/activePanelState'
                 </div>
               </div>
               <div class="end">
-                <a class="message-action"><Icon icon="feather:smile" /></a>
-                <a class="message-action"><Icon icon="feather:at-sign" /></a>
-                <a class="message-action"><Icon icon="feather:paperclip" /></a>
+                <a class="message-action"
+                  ><i class="iconify" data-icon="feather:smile"></i
+                ></a>
+                <a class="message-action"
+                  ><i class="iconify" data-icon="feather:at-sign"></i
+                ></a>
+                <a class="message-action"
+                  ><i class="iconify" data-icon="feather:paperclip"></i
+                ></a>
                 <a class="button h-button is-primary is-bold is-raised">Send</a>
               </div>
             </div>

@@ -4,7 +4,7 @@
       id="home-sidebar-menu"
       :to="{ name: 'admin-dashboards-personal-1' }"
     >
-      <Icon class="sidebar-svg" icon="feather:activity" />
+      <i class="iconify sidebar-svg" data-icon="feather:activity"></i>
     </RouterLink>
   </li>
 </template>

@@ -66,7 +66,7 @@ useTitle('Components - Plugins Autocomplete - Vuero')
                 <li>
                   <RouterLink :to="{ name: 'index' }">
                     <span class="icon is-small is-solo">
-                      <Icon icon="feather:home" />
+                      <i class="iconify" data-icon="feather:home"></i>
                     </span>
                   </RouterLink>
                 </li>
@@ -105,8 +105,8 @@ useTitle('Components - Plugins Autocomplete - Vuero')
                       shows how it works with a simple result template.
                     </p>
                     <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                      <i class="iconify open" data-icon="feather:code"></i>
+                      <i class="iconify close" data-icon="feather:x"></i>
                     </a>
                   </div>
                   <div class="card-inner">
@@ -119,7 +119,7 @@ useTitle('Components - Plugins Autocomplete - Vuero')
                           placeholder="Search people..."
                         />
                         <div class="form-icon">
-                          <Icon icon="feather:search" />
+                          <i class="iconify" data-icon="feather:search"></i>
                         </div>
                       </div>
                     </div>
@@ -190,8 +190,8 @@ $("#autocomplete-demo-simple").easyAutocomplete(demoSimpleOptions);
                       shows how it works with a subtitle result template.
                     </p>
                     <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                      <i class="iconify open" data-icon="feather:code"></i>
+                      <i class="iconify close" data-icon="feather:x"></i>
                     </a>
                   </div>
                   <div class="card-inner">
@@ -204,7 +204,7 @@ $("#autocomplete-demo-simple").easyAutocomplete(demoSimpleOptions);
                           placeholder="Search people..."
                         />
                         <div class="form-icon">
-                          <Icon icon="feather:search" />
+                          <i class="iconify" data-icon="feather:search"></i>
                         </div>
                       </div>
                     </div>
@@ -276,8 +276,8 @@ $("#autocomplete-demo-subtext").easyAutocomplete(demoSubtextOptions);
                       shows how it works with an advanced result template.
                     </p>
                     <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                      <i class="iconify open" data-icon="feather:code"></i>
+                      <i class="iconify close" data-icon="feather:x"></i>
                     </a>
                   </div>
                   <div class="card-inner">
@@ -290,7 +290,7 @@ $("#autocomplete-demo-subtext").easyAutocomplete(demoSubtextOptions);
                           placeholder="Search people..."
                         />
                         <div class="form-icon">
-                          <Icon icon="feather:search" />
+                          <i class="iconify" data-icon="feather:search"></i>
                         </div>
                       </div>
                     </div>

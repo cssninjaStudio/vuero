@@ -23,7 +23,7 @@ const props = defineProps({
           />
           <button class="button is-circle">
             <span class="icon is-small">
-              <Icon icon="feather:plus" />
+              <i class="iconify" data-icon="feather:plus"></i>
             </span>
           </button>
         </div>
@@ -143,7 +143,7 @@ const props = defineProps({
                   <span>Last 30 days</span>
                 </div>
                 <div class="select-icon">
-                  <Icon icon="feather:chevron-down" />
+                  <i class="iconify" data-icon="feather:chevron-down"></i>
                 </div>
                 <div class="select-drop has-slimscroll-sm">
                   <div class="drop-inner">
@@ -193,7 +193,10 @@ const props = defineProps({
               </div>
               <div class="card-foot is-down">
                 <span>
-                  <span><Icon icon="feather:arrow-right" /> -0.4%</span>
+                  <span
+                    ><i class="iconify" data-icon="feather:arrow-right"></i>
+                    -0.4%</span
+                  >
                   less than usual.
                 </span>
               </div>
@@ -214,7 +217,10 @@ const props = defineProps({
               </div>
               <div class="card-foot is-up">
                 <span>
-                  <span><Icon icon="feather:arrow-right" /> 22.7%</span>
+                  <span
+                    ><i class="iconify" data-icon="feather:arrow-right"></i>
+                    22.7%</span
+                  >
                   follower growth.
                 </span>
               </div>
@@ -235,7 +241,10 @@ const props = defineProps({
               </div>
               <div class="card-foot is-up">
                 <span>
-                  <span><Icon icon="feather:arrow-right" /> 1.4%</span>
+                  <span
+                    ><i class="iconify" data-icon="feather:arrow-right"></i>
+                    1.4%</span
+                  >
                   following growth.
                 </span>
               </div>
@@ -256,7 +265,10 @@ const props = defineProps({
               </div>
               <div class="card-foot is-up">
                 <span>
-                  <span><Icon icon="feather:arrow-right" /> 3.6%</span>
+                  <span
+                    ><i class="iconify" data-icon="feather:arrow-right"></i>
+                    3.6%</span
+                  >
                   likes growth.
                 </span>
               </div>
@@ -277,7 +289,10 @@ const props = defineProps({
               </div>
               <div class="card-foot is-down">
                 <span>
-                  <span><Icon icon="feather:arrow-right" /> -1.1%</span>
+                  <span
+                    ><i class="iconify" data-icon="feather:arrow-right"></i>
+                    -1.1%</span
+                  >
                   less than usual.
                 </span>
               </div>
@@ -298,7 +313,10 @@ const props = defineProps({
               </div>
               <div class="card-foot is-up">
                 <span>
-                  <span><Icon icon="feather:arrow-right" /> 22.7%</span>
+                  <span
+                    ><i class="iconify" data-icon="feather:arrow-right"></i>
+                    22.7%</span
+                  >
                   more profile views.
                 </span>
               </div>
@@ -479,7 +497,13 @@ const props = defineProps({
                     </div>
                     <div class="metric-foot is-up">
                       <span>
-                        <span><Icon icon="feather:arrow-right" /> +0.4%</span>
+                        <span
+                          ><i
+                            class="iconify"
+                            data-icon="feather:arrow-right"
+                          ></i>
+                          +0.4%</span
+                        >
                         more than usual.
                       </span>
                     </div>
@@ -496,7 +520,13 @@ const props = defineProps({
                     </div>
                     <div class="metric-foot is-up">
                       <span>
-                        <span><Icon icon="feather:arrow-right" /> +24.8%</span>
+                        <span
+                          ><i
+                            class="iconify"
+                            data-icon="feather:arrow-right"
+                          ></i>
+                          +24.8%</span
+                        >
                         more than usual.
                       </span>
                     </div>
@@ -513,7 +543,13 @@ const props = defineProps({
                     </div>
                     <div class="metric-foot is-down">
                       <span>
-                        <span><Icon icon="feather:arrow-right" /> -1.8%</span>
+                        <span
+                          ><i
+                            class="iconify"
+                            data-icon="feather:arrow-right"
+                          ></i>
+                          -1.8%</span
+                        >
                         less than usual.
                       </span>
                     </div>
@@ -530,7 +566,13 @@ const props = defineProps({
                     </div>
                     <div class="metric-foot is-up">
                       <span>
-                        <span><Icon icon="feather:arrow-right" /> +5.8%</span>
+                        <span
+                          ><i
+                            class="iconify"
+                            data-icon="feather:arrow-right"
+                          ></i>
+                          +5.8%</span
+                        >
                         more than usual.
                       </span>
                     </div>
@@ -556,7 +598,7 @@ const props = defineProps({
                   <span>Last 30 days</span>
                 </div>
                 <div class="select-icon">
-                  <Icon icon="feather:chevron-down" />
+                  <i class="iconify" data-icon="feather:chevron-down"></i>
                 </div>
                 <div class="select-drop has-slimscroll-sm">
                   <div class="drop-inner">
@@ -997,7 +1039,13 @@ const props = defineProps({
                     </div>
                     <div class="metric-foot is-up">
                       <span>
-                        <span><Icon icon="feather:arrow-right" /> +0.8%</span>
+                        <span
+                          ><i
+                            class="iconify"
+                            data-icon="feather:arrow-right"
+                          ></i>
+                          +0.8%</span
+                        >
                         more than usual.
                       </span>
                     </div>
@@ -1014,7 +1062,13 @@ const props = defineProps({
                     </div>
                     <div class="metric-foot is-down">
                       <span>
-                        <span><Icon icon="feather:arrow-right" /> -0.2%</span>
+                        <span
+                          ><i
+                            class="iconify"
+                            data-icon="feather:arrow-right"
+                          ></i>
+                          -0.2%</span
+                        >
                         less than ususal.
                       </span>
                     </div>
@@ -1031,7 +1085,13 @@ const props = defineProps({
                     </div>
                     <div class="metric-foot is-up">
                       <span>
-                        <span><Icon icon="feather:arrow-right" /> +1.2%</span>
+                        <span
+                          ><i
+                            class="iconify"
+                            data-icon="feather:arrow-right"
+                          ></i>
+                          +1.2%</span
+                        >
                         more than ususal.
                       </span>
                     </div>
@@ -1048,7 +1108,13 @@ const props = defineProps({
                     </div>
                     <div class="metric-foot is-up">
                       <span>
-                        <span><Icon icon="feather:arrow-right" /> +4.2%</span>
+                        <span
+                          ><i
+                            class="iconify"
+                            data-icon="feather:arrow-right"
+                          ></i>
+                          +4.2%</span
+                        >
                         more than ususal.
                       </span>
                     </div>

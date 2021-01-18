@@ -63,33 +63,33 @@ useTitle('Dashboard Apps 2 - Admin - Vuero')
               <div>
                 <button class="button" @click="open1">
                   <span class="icon is-small">
-                    <Icon icon="feather:more-vertical" />
+                    <i class="iconify" data-icon="feather:more-vertical"></i>
                   </span>
                 </button>
               </div>
               <div class="dropdown-menu">
                 <div class="dropdown-content">
                   <a class="dropdown-item">
-                    <Icon icon="feather:refresh-cw" />
+                    <i class="iconify" data-icon="feather:refresh-cw"></i>
                     <span>Refresh</span>
                   </a>
                   <a class="dropdown-item">
-                    <Icon icon="feather:bell" />
+                    <i class="iconify" data-icon="feather:bell"></i>
                     <span>Notifications</span>
                   </a>
                   <a class="dropdown-item">
-                    <Icon icon="feather:user-plus" />
+                    <i class="iconify" data-icon="feather:user-plus"></i>
                     <span>Invite People</span>
                   </a>
                   <a class="dropdown-item">
-                    <Icon icon="feather:settings" />
+                    <i class="iconify" data-icon="feather:settings"></i>
                     <span>Settings</span>
                   </a>
                 </div>
               </div>
             </div>
             <a class="inbox-action inbox-close-sidebar-mobile">
-              <Icon icon="feather:x" />
+              <i class="iconify" data-icon="feather:x"></i>
             </a>
           </div>
           <!--Inner-->
@@ -101,35 +101,35 @@ useTitle('Dashboard Apps 2 - Admin - Vuero')
                 <ul>
                   <li>
                     <a class="is-active">
-                      <Icon icon="feather:mail" />
+                      <i class="iconify" data-icon="feather:mail"></i>
                       <span>Inbox</span>
                       <span class="tag">24</span>
                     </a>
                   </li>
                   <li>
                     <a>
-                      <Icon icon="feather:file-text" />
+                      <i class="iconify" data-icon="feather:file-text"></i>
                       <span>Drafts</span>
                       <span class="tag">2</span>
                     </a>
                   </li>
                   <li>
                     <a>
-                      <Icon icon="feather:send" />
+                      <i class="iconify" data-icon="feather:send"></i>
                       <span>Sent</span>
                       <span class="tag">7</span>
                     </a>
                   </li>
                   <li>
                     <a>
-                      <Icon icon="feather:trash-2" />
+                      <i class="iconify" data-icon="feather:trash-2"></i>
                       <span>Trash</span>
                       <span class="tag">18</span>
                     </a>
                   </li>
                   <li>
                     <a>
-                      <Icon icon="feather:alert-octagon" />
+                      <i class="iconify" data-icon="feather:alert-octagon"></i>
                       <span>Spam</span>
                       <span class="tag">29</span>
                     </a>
@@ -148,17 +148,17 @@ useTitle('Dashboard Apps 2 - Admin - Vuero')
                     placeholder="Search Contacts..."
                   />
                   <div class="form-icon">
-                    <Icon icon="feather:search" />
+                    <i class="iconify" data-icon="feather:search"></i>
                   </div>
                 </div>
                 <a class="button search-button">
                   <span class="icon is-small">
-                    <Icon icon="feather:search" />
+                    <i class="iconify" data-icon="feather:search"></i>
                   </span>
                 </a>
                 <a class="button cancel-search-button is-hidden">
                   <span class="icon is-small">
-                    <Icon icon="feather:x" />
+                    <i class="iconify" data-icon="feather:x"></i>
                   </span>
                 </a>
               </div>
@@ -243,10 +243,10 @@ useTitle('Dashboard Apps 2 - Admin - Vuero')
           <div class="header-area">
             <div class="actions">
               <a class="inbox-action mobile-menu-action">
-                <Icon icon="feather:chevron-right" />
+                <i class="iconify" data-icon="feather:chevron-right"></i>
               </a>
               <a class="inbox-action check-all-action">
-                <Icon icon="feather:check" />
+                <i class="iconify" data-icon="feather:check"></i>
               </a>
             </div>
             <div class="actions">
@@ -257,7 +257,7 @@ useTitle('Dashboard Apps 2 - Admin - Vuero')
                   placeholder="Search Inbox..."
                 />
                 <div class="form-icon">
-                  <Icon icon="feather:search" />
+                  <i class="iconify" data-icon="feather:search"></i>
                 </div>
               </div>
 
@@ -269,27 +269,27 @@ useTitle('Dashboard Apps 2 - Admin - Vuero')
                 <div>
                   <button class="button" @click="open2">
                     <span class="icon is-small">
-                      <Icon icon="feather:more-vertical" />
+                      <i class="iconify" data-icon="feather:more-vertical"></i>
                     </span>
                   </button>
                 </div>
                 <div class="dropdown-menu">
                   <div class="dropdown-content">
                     <a class="dropdown-item">
-                      <Icon icon="feather:check" />
+                      <i class="iconify" data-icon="feather:check"></i>
                       <span>Mark all as read</span>
                     </a>
                     <a class="dropdown-item">
-                      <Icon icon="feather:eye-off" />
+                      <i class="iconify" data-icon="feather:eye-off"></i>
                       <span>Hide read</span>
                     </a>
                     <hr class="dropdown-divider" />
                     <a class="dropdown-item">
-                      <Icon icon="feather:calendar" />
+                      <i class="iconify" data-icon="feather:calendar"></i>
                       <span>Sort by date</span>
                     </a>
                     <a class="dropdown-item">
-                      <Icon icon="feather:user" />
+                      <i class="iconify" data-icon="feather:user"></i>
                       <span>Sort by user</span>
                     </a>
                   </div>

@@ -66,7 +66,7 @@ useTitle('Components - Snacks - Vuero')
                 <li>
                   <RouterLink :to="{ name: 'index' }">
                     <span class="icon is-small is-solo">
-                      <Icon icon="feather:home" />
+                      <i class="iconify" data-icon="feather:home"></i>
                     </span>
                   </RouterLink>
                 </li>
@@ -98,8 +98,8 @@ useTitle('Components - Snacks - Vuero')
                       markup for more details.
                     </p>
                     <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                      <i class="iconify open" data-icon="feather:code"></i>
+                      <i class="iconify close" data-icon="feather:x"></i>
                     </a>
                   </div>
                   <div class="card-inner">
@@ -118,7 +118,7 @@ useTitle('Components - Snacks - Vuero')
                         </div>
                         <span class="snack-text">Support</span>
                         <span class="snack-action">
-                          <Icon icon="feather:x" />
+                          <i class="iconify" data-icon="feather:x"></i>
                         </span>
                       </div>
 
@@ -136,7 +136,7 @@ useTitle('Components - Snacks - Vuero')
                         </div>
                         <span class="snack-text">Metamovies</span>
                         <span class="snack-action">
-                          <Icon icon="feather:x" />
+                          <i class="iconify" data-icon="feather:x"></i>
                         </span>
                       </div>
 
@@ -154,7 +154,7 @@ useTitle('Components - Snacks - Vuero')
                         </div>
                         <span class="snack-text">Corporate</span>
                         <span class="snack-action">
-                          <Icon icon="feather:x" />
+                          <i class="iconify" data-icon="feather:x"></i>
                         </span>
                       </div>
 
@@ -172,7 +172,7 @@ useTitle('Components - Snacks - Vuero')
                         </div>
                         <span class="snack-text">English</span>
                         <span class="snack-action">
-                          <Icon icon="feather:x" />
+                          <i class="iconify" data-icon="feather:x"></i>
                         </span>
                       </div>
 
@@ -190,7 +190,7 @@ useTitle('Components - Snacks - Vuero')
                         </div>
                         <span class="snack-text">Slicer</span>
                         <span class="snack-action">
-                          <Icon icon="feather:x" />
+                          <i class="iconify" data-icon="feather:x"></i>
                         </span>
                       </div>
                     </div>
@@ -267,8 +267,8 @@ useTitle('Components - Snacks - Vuero')
                       use snacks with images. Check the markup for more details.
                     </p>
                     <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                      <i class="iconify open" data-icon="feather:code"></i>
+                      <i class="iconify close" data-icon="feather:x"></i>
                     </a>
                   </div>
                   <div class="card-inner">
@@ -287,7 +287,7 @@ useTitle('Components - Snacks - Vuero')
                         </div>
                         <span class="snack-text">Support</span>
                         <span class="snack-action">
-                          <Icon icon="feather:plus" />
+                          <i class="iconify" data-icon="feather:plus"></i>
                         </span>
                       </div>
 
@@ -305,7 +305,7 @@ useTitle('Components - Snacks - Vuero')
                         </div>
                         <span class="snack-text">Metamovies</span>
                         <span class="snack-action">
-                          <Icon icon="feather:plus" />
+                          <i class="iconify" data-icon="feather:plus"></i>
                         </span>
                       </div>
 
@@ -323,7 +323,7 @@ useTitle('Components - Snacks - Vuero')
                         </div>
                         <span class="snack-text">Corporate</span>
                         <span class="snack-action">
-                          <Icon icon="feather:plus" />
+                          <i class="iconify" data-icon="feather:plus"></i>
                         </span>
                       </div>
 
@@ -341,7 +341,7 @@ useTitle('Components - Snacks - Vuero')
                         </div>
                         <span class="snack-text">English</span>
                         <span class="snack-action">
-                          <Icon icon="feather:plus" />
+                          <i class="iconify" data-icon="feather:plus"></i>
                         </span>
                       </div>
 
@@ -359,7 +359,7 @@ useTitle('Components - Snacks - Vuero')
                         </div>
                         <span class="snack-text">Slicer</span>
                         <span class="snack-action">
-                          <Icon icon="feather:plus" />
+                          <i class="iconify" data-icon="feather:plus"></i>
                         </span>
                       </div>
                     </div>
@@ -436,8 +436,8 @@ useTitle('Components - Snacks - Vuero')
                       <code>is-danger</code>. Check the markup for more details.
                     </p>
                     <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                      <i class="iconify open" data-icon="feather:code"></i>
+                      <i class="iconify close" data-icon="feather:x"></i>
                     </a>
                   </div>
                   <div class="card-inner">
@@ -451,37 +451,46 @@ useTitle('Components - Snacks - Vuero')
                         </div>
                         <span class="snack-text">Shopping</span>
                         <span class="snack-action">
-                          <Icon icon="feather:plus" />
+                          <i class="iconify" data-icon="feather:plus"></i>
                         </span>
                       </div>
 
                       <div class="snack">
                         <div class="snack-media is-icon is-primary">
-                          <Icon icon="feather:smile" class="snack-icon" />
+                          <i
+                            class="iconify snack-icon"
+                            data-icon="feather:smile"
+                          ></i>
                         </div>
                         <span class="snack-text">Emotions</span>
                         <span class="snack-action">
-                          <Icon icon="feather:x" />
+                          <i class="iconify" data-icon="feather:x"></i>
                         </span>
                       </div>
 
                       <div class="snack is-white">
                         <div class="snack-media is-icon is-success">
-                          <Icon icon="feather:life-buoy" class="snack-icon" />
+                          <i
+                            class="iconify snack-icon"
+                            data-icon="feather:life-buoy"
+                          ></i>
                         </div>
                         <span class="snack-text">Support</span>
                         <span class="snack-action">
-                          <Icon icon="feather:plus" />
+                          <i class="iconify" data-icon="feather:plus"></i>
                         </span>
                       </div>
 
                       <div class="snack">
                         <div class="snack-media is-icon is-info">
-                          <Icon icon="feather:briefcase" class="snack-icon" />
+                          <i
+                            class="iconify snack-icon"
+                            data-icon="feather:briefcase"
+                          ></i>
                         </div>
                         <span class="snack-text">Business</span>
                         <span class="snack-action">
-                          <Icon icon="feather:x" />
+                          <i class="iconify" data-icon="feather:x"></i>
                         </span>
                       </div>
 
@@ -494,17 +503,20 @@ useTitle('Components - Snacks - Vuero')
                         </div>
                         <span class="snack-text">Warning</span>
                         <span class="snack-action">
-                          <Icon icon="feather:plus" />
+                          <i class="iconify" data-icon="feather:plus"></i>
                         </span>
                       </div>
 
                       <div class="snack is-white">
                         <div class="snack-media is-icon is-danger">
-                          <Icon icon="feather:thermometer" class="snack-icon" />
+                          <i
+                            class="iconify snack-icon"
+                            data-icon="feather:thermometer"
+                          ></i>
                         </div>
                         <span class="snack-text">Heath</span>
                         <span class="snack-action">
-                          <Icon icon="feather:plus" />
+                          <i class="iconify" data-icon="feather:plus"></i>
                         </span>
                       </div>
                     </div>
@@ -593,39 +605,48 @@ useTitle('Components - Snacks - Vuero')
                       markup for more details.
                     </p>
                     <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                      <i class="iconify open" data-icon="feather:code"></i>
+                      <i class="iconify close" data-icon="feather:x"></i>
                     </a>
                   </div>
                   <div class="card-inner">
                     <div class="snacks">
                       <div class="snack">
                         <div class="snack-media is-icon is-primary is-solid">
-                          <Icon icon="feather:smile" class="snack-icon" />
+                          <i
+                            class="iconify snack-icon"
+                            data-icon="feather:smile"
+                          ></i>
                         </div>
                         <span class="snack-text">Emotions</span>
                         <span class="snack-action">
-                          <Icon icon="feather:x" />
+                          <i class="iconify" data-icon="feather:x"></i>
                         </span>
                       </div>
 
                       <div class="snack is-white">
                         <div class="snack-media is-icon is-success is-solid">
-                          <Icon icon="feather:life-buoy" class="snack-icon" />
+                          <i
+                            class="iconify snack-icon"
+                            data-icon="feather:life-buoy"
+                          ></i>
                         </div>
                         <span class="snack-text">Support</span>
                         <span class="snack-action">
-                          <Icon icon="feather:plus" />
+                          <i class="iconify" data-icon="feather:plus"></i>
                         </span>
                       </div>
 
                       <div class="snack">
                         <div class="snack-media is-icon is-info is-solid">
-                          <Icon icon="feather:briefcase" class="snack-icon" />
+                          <i
+                            class="iconify snack-icon"
+                            data-icon="feather:briefcase"
+                          ></i>
                         </div>
                         <span class="snack-text">Business</span>
                         <span class="snack-action">
-                          <Icon icon="feather:x" />
+                          <i class="iconify" data-icon="feather:x"></i>
                         </span>
                       </div>
 
@@ -638,17 +659,20 @@ useTitle('Components - Snacks - Vuero')
                         </div>
                         <span class="snack-text">Warning</span>
                         <span class="snack-action">
-                          <Icon icon="feather:plus" />
+                          <i class="iconify" data-icon="feather:plus"></i>
                         </span>
                       </div>
 
                       <div class="snack is-white">
                         <div class="snack-media is-icon is-danger is-solid">
-                          <Icon icon="feather:thermometer" class="snack-icon" />
+                          <i
+                            class="iconify snack-icon"
+                            data-icon="feather:thermometer"
+                          ></i>
                         </div>
                         <span class="snack-text">Heath</span>
                         <span class="snack-action">
-                          <Icon icon="feather:plus" />
+                          <i class="iconify" data-icon="feather:plus"></i>
                         </span>
                       </div>
                     </div>
@@ -725,8 +749,8 @@ useTitle('Components - Snacks - Vuero')
                       <code>is-danger</code>. Check the markup for more details.
                     </p>
                     <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                      <i class="iconify open" data-icon="feather:code"></i>
+                      <i class="iconify close" data-icon="feather:x"></i>
                     </a>
                   </div>
                   <div class="card-inner">
@@ -737,7 +761,7 @@ useTitle('Components - Snacks - Vuero')
                         </div>
                         <span class="snack-text">Shopping</span>
                         <span class="snack-action">
-                          <Icon icon="feather:plus" />
+                          <i class="iconify" data-icon="feather:plus"></i>
                         </span>
                       </div>
 
@@ -747,7 +771,7 @@ useTitle('Components - Snacks - Vuero')
                         </div>
                         <span class="snack-text">Emotions</span>
                         <span class="snack-action">
-                          <Icon icon="feather:x" />
+                          <i class="iconify" data-icon="feather:x"></i>
                         </span>
                       </div>
 
@@ -757,7 +781,7 @@ useTitle('Components - Snacks - Vuero')
                         </div>
                         <span class="snack-text">Support</span>
                         <span class="snack-action">
-                          <Icon icon="feather:plus" />
+                          <i class="iconify" data-icon="feather:plus"></i>
                         </span>
                       </div>
 
@@ -767,7 +791,7 @@ useTitle('Components - Snacks - Vuero')
                         </div>
                         <span class="snack-text">Business</span>
                         <span class="snack-action">
-                          <Icon icon="feather:x" />
+                          <i class="iconify" data-icon="feather:x"></i>
                         </span>
                       </div>
 
@@ -777,7 +801,7 @@ useTitle('Components - Snacks - Vuero')
                         </div>
                         <span class="snack-text">Warning</span>
                         <span class="snack-action">
-                          <Icon icon="feather:plus" />
+                          <i class="iconify" data-icon="feather:plus"></i>
                         </span>
                       </div>
 
@@ -787,7 +811,7 @@ useTitle('Components - Snacks - Vuero')
                         </div>
                         <span class="snack-text">Heath</span>
                         <span class="snack-action">
-                          <Icon icon="feather:plus" />
+                          <i class="iconify" data-icon="feather:plus"></i>
                         </span>
                       </div>
                     </div>
@@ -876,8 +900,8 @@ useTitle('Components - Snacks - Vuero')
                       markup for more details.
                     </p>
                     <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                      <i class="iconify open" data-icon="feather:code"></i>
+                      <i class="iconify close" data-icon="feather:x"></i>
                     </a>
                   </div>
                   <div class="card-inner">
@@ -888,7 +912,7 @@ useTitle('Components - Snacks - Vuero')
                         </div>
                         <span class="snack-text">Emotions</span>
                         <span class="snack-action">
-                          <Icon icon="feather:x" />
+                          <i class="iconify" data-icon="feather:x"></i>
                         </span>
                       </div>
 
@@ -898,7 +922,7 @@ useTitle('Components - Snacks - Vuero')
                         </div>
                         <span class="snack-text">Support</span>
                         <span class="snack-action">
-                          <Icon icon="feather:plus" />
+                          <i class="iconify" data-icon="feather:plus"></i>
                         </span>
                       </div>
 
@@ -908,7 +932,7 @@ useTitle('Components - Snacks - Vuero')
                         </div>
                         <span class="snack-text">Business</span>
                         <span class="snack-action">
-                          <Icon icon="feather:x" />
+                          <i class="iconify" data-icon="feather:x"></i>
                         </span>
                       </div>
 
@@ -918,7 +942,7 @@ useTitle('Components - Snacks - Vuero')
                         </div>
                         <span class="snack-text">Warning</span>
                         <span class="snack-action">
-                          <Icon icon="feather:plus" />
+                          <i class="iconify" data-icon="feather:plus"></i>
                         </span>
                       </div>
 
@@ -928,7 +952,7 @@ useTitle('Components - Snacks - Vuero')
                         </div>
                         <span class="snack-text">Heath</span>
                         <span class="snack-action">
-                          <Icon icon="feather:plus" />
+                          <i class="iconify" data-icon="feather:plus"></i>
                         </span>
                       </div>
                     </div>
@@ -1005,8 +1029,8 @@ useTitle('Components - Snacks - Vuero')
                       <code>is-danger</code>. Check the markup for more details.
                     </p>
                     <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                      <i class="iconify open" data-icon="feather:code"></i>
+                      <i class="iconify close" data-icon="feather:x"></i>
                     </a>
                   </div>
                   <div class="card-inner">
@@ -1017,7 +1041,7 @@ useTitle('Components - Snacks - Vuero')
                         </div>
                         <span class="snack-text">Shopping</span>
                         <span class="snack-action">
-                          <Icon icon="feather:plus" />
+                          <i class="iconify" data-icon="feather:plus"></i>
                         </span>
                       </div>
 
@@ -1027,7 +1051,7 @@ useTitle('Components - Snacks - Vuero')
                         </div>
                         <span class="snack-text">Emotions</span>
                         <span class="snack-action">
-                          <Icon icon="feather:x" />
+                          <i class="iconify" data-icon="feather:x"></i>
                         </span>
                       </div>
 
@@ -1037,7 +1061,7 @@ useTitle('Components - Snacks - Vuero')
                         </div>
                         <span class="snack-text">Support</span>
                         <span class="snack-action">
-                          <Icon icon="feather:plus" />
+                          <i class="iconify" data-icon="feather:plus"></i>
                         </span>
                       </div>
 
@@ -1047,7 +1071,7 @@ useTitle('Components - Snacks - Vuero')
                         </div>
                         <span class="snack-text">Business</span>
                         <span class="snack-action">
-                          <Icon icon="feather:x" />
+                          <i class="iconify" data-icon="feather:x"></i>
                         </span>
                       </div>
 
@@ -1057,7 +1081,7 @@ useTitle('Components - Snacks - Vuero')
                         </div>
                         <span class="snack-text">Warning</span>
                         <span class="snack-action">
-                          <Icon icon="feather:plus" />
+                          <i class="iconify" data-icon="feather:plus"></i>
                         </span>
                       </div>
 
@@ -1067,7 +1091,7 @@ useTitle('Components - Snacks - Vuero')
                         </div>
                         <span class="snack-text">Heath</span>
                         <span class="snack-action">
-                          <Icon icon="feather:plus" />
+                          <i class="iconify" data-icon="feather:plus"></i>
                         </span>
                       </div>
                     </div>
@@ -1156,8 +1180,8 @@ useTitle('Components - Snacks - Vuero')
                       markup for more details.
                     </p>
                     <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                      <i class="iconify open" data-icon="feather:code"></i>
+                      <i class="iconify close" data-icon="feather:x"></i>
                     </a>
                   </div>
                   <div class="card-inner">
@@ -1168,7 +1192,7 @@ useTitle('Components - Snacks - Vuero')
                         </div>
                         <span class="snack-text">Emotions</span>
                         <span class="snack-action">
-                          <Icon icon="feather:x" />
+                          <i class="iconify" data-icon="feather:x"></i>
                         </span>
                       </div>
 
@@ -1178,7 +1202,7 @@ useTitle('Components - Snacks - Vuero')
                         </div>
                         <span class="snack-text">Support</span>
                         <span class="snack-action">
-                          <Icon icon="feather:plus" />
+                          <i class="iconify" data-icon="feather:plus"></i>
                         </span>
                       </div>
 
@@ -1188,7 +1212,7 @@ useTitle('Components - Snacks - Vuero')
                         </div>
                         <span class="snack-text">Business</span>
                         <span class="snack-action">
-                          <Icon icon="feather:x" />
+                          <i class="iconify" data-icon="feather:x"></i>
                         </span>
                       </div>
 
@@ -1198,7 +1222,7 @@ useTitle('Components - Snacks - Vuero')
                         </div>
                         <span class="snack-text">Warning</span>
                         <span class="snack-action">
-                          <Icon icon="feather:plus" />
+                          <i class="iconify" data-icon="feather:plus"></i>
                         </span>
                       </div>
 
@@ -1208,7 +1232,7 @@ useTitle('Components - Snacks - Vuero')
                         </div>
                         <span class="snack-text">Heath</span>
                         <span class="snack-action">
-                          <Icon icon="feather:plus" />
+                          <i class="iconify" data-icon="feather:plus"></i>
                         </span>
                       </div>
                     </div>
@@ -1282,8 +1306,8 @@ useTitle('Components - Snacks - Vuero')
                       <code>snack</code> element.
                     </p>
                     <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                      <i class="iconify open" data-icon="feather:code"></i>
+                      <i class="iconify close" data-icon="feather:x"></i>
                     </a>
                   </div>
                   <div class="card-inner">
@@ -1302,7 +1326,7 @@ useTitle('Components - Snacks - Vuero')
                         </div>
                         <span class="snack-text">Support</span>
                         <span class="snack-action">
-                          <Icon icon="feather:plus" />
+                          <i class="iconify" data-icon="feather:plus"></i>
                         </span>
                       </div>
 
@@ -1320,7 +1344,7 @@ useTitle('Components - Snacks - Vuero')
                         </div>
                         <span class="snack-text">Metamovies</span>
                         <span class="snack-action">
-                          <Icon icon="feather:x" />
+                          <i class="iconify" data-icon="feather:x"></i>
                         </span>
                       </div>
 
@@ -1338,7 +1362,7 @@ useTitle('Components - Snacks - Vuero')
                         </div>
                         <span class="snack-text">Corporate</span>
                         <span class="snack-action">
-                          <Icon icon="feather:plus" />
+                          <i class="iconify" data-icon="feather:plus"></i>
                         </span>
                       </div>
 
@@ -1356,7 +1380,7 @@ useTitle('Components - Snacks - Vuero')
                         </div>
                         <span class="snack-text">English</span>
                         <span class="snack-action">
-                          <Icon icon="feather:x" />
+                          <i class="iconify" data-icon="feather:x"></i>
                         </span>
                       </div>
 
@@ -1374,7 +1398,7 @@ useTitle('Components - Snacks - Vuero')
                         </div>
                         <span class="snack-text">Slicer</span>
                         <span class="snack-action">
-                          <Icon icon="feather:plus" />
+                          <i class="iconify" data-icon="feather:plus"></i>
                         </span>
                       </div>
                     </div>
@@ -1448,39 +1472,48 @@ useTitle('Components - Snacks - Vuero')
                       <code>snack</code> element.
                     </p>
                     <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                      <i class="iconify open" data-icon="feather:code"></i>
+                      <i class="iconify close" data-icon="feather:x"></i>
                     </a>
                   </div>
                   <div class="card-inner">
                     <div class="snacks">
                       <div class="snack is-small">
                         <div class="snack-media is-icon is-primary">
-                          <Icon icon="feather:smile" class="snack-icon" />
+                          <i
+                            class="iconify snack-icon"
+                            data-icon="feather:smile"
+                          ></i>
                         </div>
                         <span class="snack-text">Emotions</span>
                         <span class="snack-action">
-                          <Icon icon="feather:x" />
+                          <i class="iconify" data-icon="feather:x"></i>
                         </span>
                       </div>
 
                       <div class="snack is-white is-small">
                         <div class="snack-media is-icon is-success is-solid">
-                          <Icon icon="feather:life-buoy" class="snack-icon" />
+                          <i
+                            class="iconify snack-icon"
+                            data-icon="feather:life-buoy"
+                          ></i>
                         </div>
                         <span class="snack-text">Support</span>
                         <span class="snack-action">
-                          <Icon icon="feather:plus" />
+                          <i class="iconify" data-icon="feather:plus"></i>
                         </span>
                       </div>
 
                       <div class="snack is-small">
                         <div class="snack-media is-icon is-info">
-                          <Icon icon="feather:briefcase" class="snack-icon" />
+                          <i
+                            class="iconify snack-icon"
+                            data-icon="feather:briefcase"
+                          ></i>
                         </div>
                         <span class="snack-text">Business</span>
                         <span class="snack-action">
-                          <Icon icon="feather:x" />
+                          <i class="iconify" data-icon="feather:x"></i>
                         </span>
                       </div>
 
@@ -1493,17 +1526,20 @@ useTitle('Components - Snacks - Vuero')
                         </div>
                         <span class="snack-text">Warning</span>
                         <span class="snack-action">
-                          <Icon icon="feather:plus" />
+                          <i class="iconify" data-icon="feather:plus"></i>
                         </span>
                       </div>
 
                       <div class="snack is-white is-small">
                         <div class="snack-media is-icon is-danger">
-                          <Icon icon="feather:thermometer" class="snack-icon" />
+                          <i
+                            class="iconify snack-icon"
+                            data-icon="feather:thermometer"
+                          ></i>
                         </div>
                         <span class="snack-text">Heath</span>
                         <span class="snack-action">
-                          <Icon icon="feather:plus" />
+                          <i class="iconify" data-icon="feather:plus"></i>
                         </span>
                       </div>
                     </div>

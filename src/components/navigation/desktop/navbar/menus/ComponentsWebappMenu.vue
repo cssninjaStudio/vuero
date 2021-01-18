@@ -39,31 +39,31 @@ const activeTab = ref<'components' | 'plugins'>('components')
                   <li>
                     <RouterLink :to="{ name: 'components-avatars' }">
                       <span>Avatars</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'components-accordion-basic' }">
                       <span>Accordion</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'components-accordion-collapse' }">
                       <span>Collapse</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'components-accordion-images' }">
                       <span>Image Accordion</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'components-breadcrumb' }">
                       <span>Breadcrumb</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                 </ul>
@@ -74,31 +74,31 @@ const activeTab = ref<'components' | 'plugins'>('components')
                   <li>
                     <RouterLink :to="{ name: 'components-loader' }">
                       <span>Loader</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'components-dropdown' }">
                       <span>Dropdown</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'components-modal' }">
                       <span>Modal Dialogs</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'components-tabs-regular' }">
                       <span>Regular Tabs</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'components-tabs-slider' }">
                       <span>Slider Tabs</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                 </ul>
@@ -109,25 +109,25 @@ const activeTab = ref<'components' | 'plugins'>('components')
                   <li>
                     <RouterLink :to="{ name: 'components-icon-box' }">
                       <span>Icon Box</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'components-messages' }">
                       <span>Message</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'components-progress' }">
                       <span>Progress</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'components-snacks' }">
                       <span>Snacks</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                 </ul>
@@ -138,19 +138,19 @@ const activeTab = ref<'components' | 'plugins'>('components')
                   <li>
                     <RouterLink :to="{ name: 'components-table-flex' }">
                       <span>Base Table</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'components-table-flex-compact' }">
                       <span>Compact Table</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'components-table-flex-media' }">
                       <span>Media Table</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
@@ -158,7 +158,7 @@ const activeTab = ref<'components' | 'plugins'>('components')
                       :to="{ name: 'components-table-flex-advanced' }"
                     >
                       <span>Advanced Table</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                 </ul>
@@ -181,7 +181,7 @@ const activeTab = ref<'components' | 'plugins'>('components')
                   <li>
                     <RouterLink :to="{ name: 'components-plugins-alertify' }">
                       <span>Alertify</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
@@ -189,19 +189,19 @@ const activeTab = ref<'components' | 'plugins'>('components')
                       :to="{ name: 'components-plugins-autocomplete' }"
                     >
                       <span>Autocomplete</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'components-plugins-datepicker' }">
                       <span>Datepicker</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'components-plugins-choices' }">
                       <span>Choices JS</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                 </ul>
@@ -211,7 +211,7 @@ const activeTab = ref<'components' | 'plugins'>('components')
                   <li>
                     <RouterLink :to="{ name: 'components-plugins-filepond' }">
                       <span>Filepond</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
@@ -219,7 +219,7 @@ const activeTab = ref<'components' | 'plugins'>('components')
                       :to="{ name: 'components-plugins-lightgallery' }"
                     >
                       <span>Light Gallery</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
@@ -227,7 +227,7 @@ const activeTab = ref<'components' | 'plugins'>('components')
                       :to="{ name: 'components-plugins-videogallery' }"
                     >
                       <span>Video Gallery</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
@@ -235,7 +235,7 @@ const activeTab = ref<'components' | 'plugins'>('components')
                       :to="{ name: 'components-plugins-video-player' }"
                     >
                       <span>Video Player</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                 </ul>
@@ -245,7 +245,7 @@ const activeTab = ref<'components' | 'plugins'>('components')
                   <li>
                     <RouterLink :to="{ name: 'components-plugins-toasts' }">
                       <span>Toast Messages</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
@@ -253,13 +253,13 @@ const activeTab = ref<'components' | 'plugins'>('components')
                       :to="{ name: 'components-plugins-webuipopover' }"
                     >
                       <span>WebUI Popovers</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'components-plugins-nouislider' }">
                       <span>NoUI Slider</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
@@ -267,13 +267,13 @@ const activeTab = ref<'components' | 'plugins'>('components')
                       :to="{ name: 'components-plugins-editor-summernote' }"
                     >
                       <span>Summernote</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'components-plugins-editor-sun' }">
                       <span>Sun Editor</span>
-                      <Icon icon="feather:circle" />
+                      <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                 </ul>

@@ -75,7 +75,7 @@
                 <span>Shipping Soon</span>
               </div>
               <div class="select-icon">
-                <Icon icon="feather:chevron-down" />
+                <i class="iconify" data-icon="feather:chevron-down"></i>
               </div>
               <div class="select-drop has-slimscroll-sm">
                 <div class="drop-inner">

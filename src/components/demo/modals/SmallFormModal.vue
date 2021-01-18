@@ -28,7 +28,7 @@ const emit = defineEmit([
             aria-label="close"
             @click="emit('close')"
           >
-            <Icon icon="feather:x" />
+            <i class="iconify" data-icon="feather:x"></i>
           </button>
         </header>
         <div class="modal-card-body">

@@ -37,7 +37,7 @@ const cardInfo = reactive({
                   <span>Plan for starters</span>
                 </div>
                 <div class="checkmark">
-                  <Icon icon="feather:check" />
+                  <i class="iconify" data-icon="feather:check"></i>
                 </div>
               </div>
             </div>
@@ -60,7 +60,7 @@ const cardInfo = reactive({
                   <span>For professionals</span>
                 </div>
                 <div class="checkmark">
-                  <Icon icon="feather:check" />
+                  <i class="iconify" data-icon="feather:check"></i>
                 </div>
               </div>
             </div>
@@ -83,7 +83,7 @@ const cardInfo = reactive({
                   <span>For serious people</span>
                 </div>
                 <div class="checkmark">
-                  <Icon icon="feather:check" />
+                  <i class="iconify" data-icon="feather:check"></i>
                 </div>
               </div>
             </div>
@@ -106,7 +106,7 @@ const cardInfo = reactive({
                   <span>For big companies</span>
                 </div>
                 <div class="checkmark">
-                  <Icon icon="feather:check" />
+                  <i class="iconify" data-icon="feather:check"></i>
                 </div>
               </div>
             </div>
@@ -232,7 +232,7 @@ const cardInfo = reactive({
               />
             </div>
             <button class="add-seat">
-              <Icon icon="feather:plus" />
+              <i class="iconify" data-icon="feather:plus"></i>
             </button>
           </div>
         </div>

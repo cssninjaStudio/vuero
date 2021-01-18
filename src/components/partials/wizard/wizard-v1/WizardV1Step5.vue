@@ -29,7 +29,7 @@
                 </div>
                 <div class="flex-end">
                   <div class="checkmark">
-                    <Icon icon="feather:check" />
+                    <i class="iconify" data-icon="feather:check"></i>
                   </div>
                 </div>
               </div>
@@ -59,7 +59,7 @@
                 </div>
                 <div class="flex-end">
                   <div class="checkmark">
-                    <Icon icon="feather:check" />
+                    <i class="iconify" data-icon="feather:check"></i>
                   </div>
                 </div>
               </div>
@@ -89,7 +89,7 @@
                 </div>
                 <div class="flex-end">
                   <div class="checkmark">
-                    <Icon icon="feather:check" />
+                    <i class="iconify" data-icon="feather:check"></i>
                   </div>
                 </div>
               </div>
@@ -119,7 +119,7 @@
                 </div>
                 <div class="flex-end">
                   <div class="checkmark">
-                    <Icon icon="feather:check" />
+                    <i class="iconify" data-icon="feather:check"></i>
                   </div>
                 </div>
               </div>
@@ -149,7 +149,7 @@
                 </div>
                 <div class="flex-end">
                   <div class="checkmark">
-                    <Icon icon="feather:check" />
+                    <i class="iconify" data-icon="feather:check"></i>
                   </div>
                 </div>
               </div>
@@ -179,7 +179,7 @@
                 </div>
                 <div class="flex-end">
                   <div class="checkmark">
-                    <Icon icon="feather:check" />
+                    <i class="iconify" data-icon="feather:check"></i>
                   </div>
                 </div>
               </div>
@@ -209,7 +209,7 @@
                 </div>
                 <div class="flex-end">
                   <div class="checkmark">
-                    <Icon icon="feather:check" />
+                    <i class="iconify" data-icon="feather:check"></i>
                   </div>
                 </div>
               </div>
@@ -239,7 +239,7 @@
                 </div>
                 <div class="flex-end">
                   <div class="checkmark">
-                    <Icon icon="feather:check" />
+                    <i class="iconify" data-icon="feather:check"></i>
                   </div>
                 </div>
               </div>
@@ -269,7 +269,7 @@
                 </div>
                 <div class="flex-end">
                   <div class="checkmark">
-                    <Icon icon="feather:check" />
+                    <i class="iconify" data-icon="feather:check"></i>
                   </div>
                 </div>
               </div>
@@ -299,7 +299,7 @@
                 </div>
                 <div class="flex-end">
                   <div class="checkmark">
-                    <Icon icon="feather:check" />
+                    <i class="iconify" data-icon="feather:check"></i>
                   </div>
                 </div>
               </div>
@@ -329,7 +329,7 @@
                 </div>
                 <div class="flex-end">
                   <div class="checkmark">
-                    <Icon icon="feather:check" />
+                    <i class="iconify" data-icon="feather:check"></i>
                   </div>
                 </div>
               </div>
@@ -359,7 +359,7 @@
                 </div>
                 <div class="flex-end">
                   <div class="checkmark">
-                    <Icon icon="feather:check" />
+                    <i class="iconify" data-icon="feather:check"></i>
                   </div>
                 </div>
               </div>

@@ -1010,22 +1010,22 @@
           <div class="icon-toolbar">
             <div class="toolbar-icon">
               <a class="inner-icon is-active" data-section="cart-section">
-                <Icon icon="feather:shopping-cart" />
+                <i class="iconify" data-icon="feather:shopping-cart"></i>
               </a>
             </div>
             <div class="toolbar-icon">
               <a class="inner-icon" data-section="activity-section">
-                <Icon icon="feather:activity" />
+                <i class="iconify" data-icon="feather:activity"></i>
               </a>
             </div>
             <div class="toolbar-icon">
               <a class="inner-icon" data-section="address-section">
-                <Icon icon="feather:map-pin" />
+                <i class="iconify" data-icon="feather:map-pin"></i>
               </a>
             </div>
             <div class="toolbar-icon">
               <a class="inner-icon" data-section="settings-section">
-                <Icon icon="feather:settings" />
+                <i class="iconify" data-icon="feather:settings"></i>
               </a>
             </div>
           </div>
@@ -1202,11 +1202,11 @@
                 </div>
                 <div class="contact-info">
                   <span>
-                    <Icon icon="feather:map-pin" />
+                    <i class="iconify" data-icon="feather:map-pin"></i>
                     <span>Los Angeles, CA</span>
                   </span>
                   <span>
-                    <Icon icon="feather:phone" />
+                    <i class="iconify" data-icon="feather:phone"></i>
                     <span>+1 444-5156</span>
                   </span>
                 </div>
@@ -1230,7 +1230,7 @@
             <div class="icon-list">
               <div class="icon-list-item">
                 <div class="icon-wrap">
-                  <Icon icon="feather:circle" />
+                  <i class="iconify" data-icon="feather:circle"></i>
                 </div>
                 <div class="item-meta">
                   <span>Global</span>
@@ -1238,7 +1238,7 @@
               </div>
               <div class="icon-list-item">
                 <div class="icon-wrap">
-                  <Icon icon="feather:user" />
+                  <i class="iconify" data-icon="feather:user"></i>
                 </div>
                 <div class="item-meta">
                   <span>Profile</span>
@@ -1246,7 +1246,7 @@
               </div>
               <div class="icon-list-item">
                 <div class="icon-wrap">
-                  <Icon icon="feather:credit-card" />
+                  <i class="iconify" data-icon="feather:credit-card"></i>
                 </div>
                 <div class="item-meta">
                   <span>Payments</span>
@@ -1254,7 +1254,7 @@
               </div>
               <div class="icon-list-item">
                 <div class="icon-wrap">
-                  <Icon icon="feather:clock" />
+                  <i class="iconify" data-icon="feather:clock"></i>
                 </div>
                 <div class="item-meta">
                   <span>History</span>
@@ -1262,7 +1262,7 @@
               </div>
               <div class="icon-list-item">
                 <div class="icon-wrap">
-                  <Icon icon="feather:file" />
+                  <i class="iconify" data-icon="feather:file"></i>
                 </div>
                 <div class="item-meta">
                   <span>Invoices</span>

@@ -10,7 +10,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
     class="dropdown is-spaced is-dots is-right dropdown-trigger is-pushed-mobile"
   >
     <div class="is-trigger" aria-haspopup="true" @click="open">
-      <Icon icon="feather:more-vertical" />
+      <i class="iconify" data-icon="feather:more-vertical"></i>
     </div>
     <div class="dropdown-menu" role="menu">
       <div class="dropdown-content">

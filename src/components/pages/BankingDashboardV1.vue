@@ -13,7 +13,7 @@ import { incomeOptions } from '/@src/composition/state/charts/apexcharts/example
             <h3 class="dark-inverted">My Cards</h3>
             <button class="button is-circle is-dark-outlined">
               <span class="icon is-small">
-                <Icon icon="feather:plus" />
+                <i class="iconify" data-icon="feather:plus"></i>
               </span>
             </button>
           </div>
@@ -168,7 +168,7 @@ import { incomeOptions } from '/@src/composition/state/charts/apexcharts/example
                       </div>
                     </div>
                     <div class="box-chevron">
-                      <Icon icon="feather:chevron-down" />
+                      <i class="iconify" data-icon="feather:chevron-down"></i>
                     </div>
                     <div class="box-dropdown">
                       <div class="dropdown-inner has-slimscroll">
@@ -186,7 +186,7 @@ import { incomeOptions } from '/@src/composition/state/charts/apexcharts/example
                             </span>
                             <span class="item-name">4156 1000 56565 17</span>
                             <span class="checkmark">
-                              <Icon icon="feather:check" />
+                              <i class="iconify" data-icon="feather:check"></i>
                             </span>
                           </li>
                           <li>
@@ -202,7 +202,7 @@ import { incomeOptions } from '/@src/composition/state/charts/apexcharts/example
                             </span>
                             <span class="item-name">2247 2427 89975 12</span>
                             <span class="checkmark">
-                              <Icon icon="feather:check" />
+                              <i class="iconify" data-icon="feather:check"></i>
                             </span>
                           </li>
                           <li>
@@ -218,7 +218,7 @@ import { incomeOptions } from '/@src/composition/state/charts/apexcharts/example
                             </span>
                             <span class="item-name">2247 2427 89975 12</span>
                             <span class="checkmark">
-                              <Icon icon="feather:check" />
+                              <i class="iconify" data-icon="feather:check"></i>
                             </span>
                           </li>
                         </ul>
@@ -355,7 +355,7 @@ import { incomeOptions } from '/@src/composition/state/charts/apexcharts/example
                         </div>
                       </div>
                       <div class="box-chevron">
-                        <Icon icon="feather:chevron-down" />
+                        <i class="iconify" data-icon="feather:chevron-down"></i>
                       </div>
                       <div class="box-dropdown">
                         <div class="dropdown-inner has-slimscroll">
@@ -373,7 +373,10 @@ import { incomeOptions } from '/@src/composition/state/charts/apexcharts/example
                               </span>
                               <span class="item-name">4156 1000 56565 17</span>
                               <span class="checkmark">
-                                <Icon icon="feather:check" />
+                                <i
+                                  class="iconify"
+                                  data-icon="feather:check"
+                                ></i>
                               </span>
                             </li>
                             <li>
@@ -389,7 +392,10 @@ import { incomeOptions } from '/@src/composition/state/charts/apexcharts/example
                               </span>
                               <span class="item-name">2247 2427 89975 12</span>
                               <span class="checkmark">
-                                <Icon icon="feather:check" />
+                                <i
+                                  class="iconify"
+                                  data-icon="feather:check"
+                                ></i>
                               </span>
                             </li>
                             <li>
@@ -405,7 +411,10 @@ import { incomeOptions } from '/@src/composition/state/charts/apexcharts/example
                               </span>
                               <span class="item-name">2247 2427 89975 12</span>
                               <span class="checkmark">
-                                <Icon icon="feather:check" />
+                                <i
+                                  class="iconify"
+                                  data-icon="feather:check"
+                                ></i>
                               </span>
                             </li>
                           </ul>
@@ -461,7 +470,7 @@ import { incomeOptions } from '/@src/composition/state/charts/apexcharts/example
                       <span>Last 10 days</span>
                     </div>
                     <div class="select-icon">
-                      <Icon icon="feather:chevron-down" />
+                      <i class="iconify" data-icon="feather:chevron-down"></i>
                     </div>
                     <div class="select-drop has-slimscroll-sm">
                       <div class="drop-inner">

@@ -48,7 +48,7 @@ const isStuck = computed(() => {
                     placeholder="What is this meeting about?"
                   />
                   <div class="form-icon">
-                    <Icon icon="feather:slack" />
+                    <i class="iconify" data-icon="feather:slack"></i>
                   </div>
                 </div>
               </div>
@@ -63,7 +63,7 @@ const isStuck = computed(() => {
                     placeholder="Start Date"
                   />
                   <div class="form-icon">
-                    <Icon icon="feather:calendar" />
+                    <i class="iconify" data-icon="feather:calendar"></i>
                   </div>
                 </div>
               </div>
@@ -78,7 +78,7 @@ const isStuck = computed(() => {
                     placeholder="End Date"
                   />
                   <div class="form-icon">
-                    <Icon icon="feather:calendar" />
+                    <i class="iconify" data-icon="feather:calendar"></i>
                   </div>
                 </div>
               </div>
@@ -94,7 +94,7 @@ const isStuck = computed(() => {
                     class="input form-timepicker"
                   />
                   <div class="chevron">
-                    <Icon icon="feather:chevron-down" />
+                    <i class="iconify" data-icon="feather:chevron-down"></i>
                   </div>
                 </div>
               </div>
@@ -110,7 +110,7 @@ const isStuck = computed(() => {
                     class="input form-timepicker"
                   />
                   <div class="chevron">
-                    <Icon icon="feather:chevron-down" />
+                    <i class="iconify" data-icon="feather:chevron-down"></i>
                   </div>
                 </div>
               </div>
@@ -209,7 +209,7 @@ const isStuck = computed(() => {
                         />
                       </div>
                       <button class="add-participant">
-                        <Icon icon="feather:plus" />
+                        <i class="iconify" data-icon="feather:plus"></i>
                       </button>
                     </div>
                   </div>
@@ -230,7 +230,7 @@ const isStuck = computed(() => {
                       placeholder="e.g. Conference room"
                     />
                     <div class="form-icon">
-                      <Icon icon="feather:map-pin" />
+                      <i class="iconify" data-icon="feather:map-pin"></i>
                     </div>
                   </div>
                 </div>
@@ -249,7 +249,7 @@ const isStuck = computed(() => {
                       placeholder="https://zoom.com/m/156546"
                     />
                     <div class="form-icon">
-                      <Icon icon="feather:video" />
+                      <i class="iconify" data-icon="feather:video"></i>
                     </div>
                   </div>
                 </div>
@@ -267,7 +267,7 @@ const isStuck = computed(() => {
                         <span>Pick a calendar</span>
                       </div>
                       <div class="select-icon">
-                        <Icon icon="feather:chevron-down" />
+                        <i class="iconify" data-icon="feather:chevron-down"></i>
                       </div>
                       <div class="select-drop has-slimscroll-sm">
                         <div class="drop-inner">
@@ -348,7 +348,7 @@ const isStuck = computed(() => {
                         <span>Select a channel</span>
                       </div>
                       <div class="select-icon">
-                        <Icon icon="feather:chevron-down" />
+                        <i class="iconify" data-icon="feather:chevron-down"></i>
                       </div>
                       <div class="select-drop has-slimscroll-sm">
                         <div class="drop-inner">
@@ -389,7 +389,7 @@ const isStuck = computed(() => {
                         <span>All</span>
                       </div>
                       <div class="select-icon">
-                        <Icon icon="feather:chevron-down" />
+                        <i class="iconify" data-icon="feather:chevron-down"></i>
                       </div>
                       <div class="select-drop has-slimscroll-sm">
                         <div class="drop-inner">

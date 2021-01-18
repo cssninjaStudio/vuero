@@ -90,7 +90,7 @@ useTitle('Auth Login 2 - Vuero')
                               placeholder="Username"
                             />
                             <span class="form-icon">
-                              <Icon icon="feather:user" />
+                              <i class="iconify" data-icon="feather:user"></i>
                             </span>
                           </div>
                         </div>
@@ -103,7 +103,7 @@ useTitle('Auth Login 2 - Vuero')
                               placeholder="Password"
                             />
                             <span class="form-icon">
-                              <Icon icon="feather:lock" />
+                              <i class="iconify" data-icon="feather:lock"></i>
                             </span>
                           </div>
                         </div>

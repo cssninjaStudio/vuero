@@ -29,7 +29,7 @@ import {
       </div>
       <div class="collapsed-add">
         <a class="button collapse-add-button is-primary">
-          <Icon icon="feather:plus" />
+          <i class="iconify" data-icon="feather:plus"></i>
         </a>
       </div>
       <ul class="collapsed-conversations">

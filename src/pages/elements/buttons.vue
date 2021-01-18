@@ -75,7 +75,7 @@ useTitle('Elements - Buttons - Vuero')
                 <li>
                   <RouterLink :to="{ name: 'index' }">
                     <span class="icon is-small is-solo">
-                      <Icon icon="feather:home" />
+                      <i class="iconify" data-icon="feather:home"></i>
                     </span>
                   </RouterLink>
                 </li>
@@ -110,59 +110,7 @@ useTitle('Elements - Buttons - Vuero')
                 <ButtonElevatedDocumentation />
 
                 <!--Loading Buttons-->
-                <div class="demo-card">
-                  <div class="demo-title">
-                    <h3 class="title is-thin is-5">Loading</h3>
-                    <p>
-                      Vuero buttons can be shown in a loading state. To show a
-                      loading spinner, add the <code>is-loading</code> modifier
-                      class.
-                    </p>
-                    <a
-                      class="code-trigger"
-                      :class="[display.loadingButton && 'is-active']"
-                      @click="display.loadingButton = !display.loadingButton"
-                    >
-                      <span
-                        v-show="display.loadingButton"
-                        class="iconify open"
-                        data-icon="feather:code"
-                      />
-                      <span
-                        v-show="!display.loadingButton"
-                        class="iconify close"
-                        data-icon="feather:x"
-                      />
-                    </a>
-                  </div>
-                  <div class="card-inner">
-                    <div class="buttons">
-                      <a class="button h-button is-loading">Button</a>
-                      <a class="button h-button is-primary is-loading"
-                        >Button</a
-                      >
-                      <a class="button h-button is-info is-loading">Button</a>
-                      <a
-                        class="button h-button is-success is-loading is-rounded"
-                        >Button</a
-                      >
-                      <a
-                        class="button h-button is-warning is-loading is-rounded"
-                        >Button</a
-                      >
-                      <a class="button h-button is-danger is-loading is-rounded"
-                        >Button</a
-                      >
-                    </div>
-
-                    <HighlightJS
-                      v-if="display.loadingButton"
-                      language="vue"
-                      class="highlight highlight-block"
-                      :code="examples.loadingButton"
-                    />
-                  </div>
-                </div>
+                <ButtonLoadingDocumentation />
 
                 <!--Disabled Buttons-->
                 <div class="demo-card">
@@ -315,7 +263,7 @@ useTitle('Elements - Buttons - Vuero')
                     <div class="buttons">
                       <button class="button h-button is-primary is-elevated">
                         <span class="icon">
-                          <Icon icon="feather:twitter" />
+                          <i class="iconify" data-icon="feather:twitter"></i>
                         </span>
                         <span>Tweet Now</span>
                       </button>
@@ -323,18 +271,21 @@ useTitle('Elements - Buttons - Vuero')
                         class="button h-button is-danger is-rounded is-elevated"
                       >
                         <span class="icon">
-                          <Icon icon="feather:gitlab" />
+                          <i class="iconify" data-icon="feather:gitlab"></i>
                         </span>
                         <span>Commit Code</span>
                       </button>
                       <button class="button">
                         <span class="icon is-small">
-                          <Icon icon="feather:mail" />
+                          <i class="iconify" data-icon="feather:mail"></i>
                         </span>
                       </button>
                       <button class="button is-primary is-circle is-elevated">
                         <span class="icon is-small">
-                          <Icon icon="feather:message-square" />
+                          <i
+                            class="iconify"
+                            data-icon="feather:message-square"
+                          ></i>
                         </span>
                       </button>
                     </div>
@@ -378,13 +329,13 @@ useTitle('Elements - Buttons - Vuero')
                     <div class="buttons">
                       <button class="button h-button">
                         <span class="icon">
-                          <Icon icon="feather:eye" />
+                          <i class="iconify" data-icon="feather:eye"></i>
                         </span>
                         <span>View</span>
                       </button>
                       <button class="button h-button">
                         <span class="icon">
-                          <Icon icon="feather:edit-2" />
+                          <i class="iconify" data-icon="feather:edit-2"></i>
                         </span>
                         <span>Edit</span>
                       </button>

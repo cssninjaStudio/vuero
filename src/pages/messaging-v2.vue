@@ -43,7 +43,7 @@ useTitle('Messaging chat - WebApp - Vuero')
                 placeholder="Search..."
               />
               <div class="form-icon">
-                <Icon icon="feather:search" />
+                <i class="iconify" data-icon="feather:search"></i>
               </div>
               <div class="search-results has-slimscroll"></div>
             </div>
@@ -72,7 +72,7 @@ useTitle('Messaging chat - WebApp - Vuero')
                   "
                 />
               </div>
-              <Icon icon="feather:chevron-down" />
+              <i class="iconify" data-icon="feather:chevron-down"></i>
             </div>
             <div class="dropdown-menu" role="menu">
               <div class="dropdown-content">
@@ -80,24 +80,24 @@ useTitle('Messaging chat - WebApp - Vuero')
                   <p class="is-size-7">Erik Kovalsky</p>
                 </div>
                 <a href="#" class="dropdown-item">
-                  <Icon icon="feather:user" />
+                  <i class="iconify" data-icon="feather:user"></i>
                   <span>Profile</span>
                 </a>
                 <a class="dropdown-item">
-                  <Icon icon="feather:edit-2" />
+                  <i class="iconify" data-icon="feather:edit-2"></i>
                   <span>Edit Profile</span>
                 </a>
                 <a class="dropdown-item">
-                  <Icon icon="feather:box" />
+                  <i class="iconify" data-icon="feather:box"></i>
                   <span>Projects</span>
                 </a>
                 <a class="dropdown-item">
-                  <Icon icon="feather:settings" />
+                  <i class="iconify" data-icon="feather:settings"></i>
                   <span>Settings</span>
                 </a>
                 <hr class="dropdown-divider" />
                 <a href="#" class="dropdown-item">
-                  <Icon icon="feather:log-out" />
+                  <i class="iconify" data-icon="feather:log-out"></i>
                   <span>Sign Out</span>
                 </a>
               </div>
@@ -155,27 +155,27 @@ useTitle('Messaging chat - WebApp - Vuero')
               >
                 <div>
                   <div class="button" aria-haspopup="true" @click="open2">
-                    <Icon icon="feather:plus" />
+                    <i class="iconify" data-icon="feather:plus"></i>
                   </div>
                 </div>
                 <div class="dropdown-menu" role="menu">
                   <div class="dropdown-content">
                     <a class="dropdown-item">
-                      <Icon icon="feather:video" />
+                      <i class="iconify" data-icon="feather:video"></i>
                       <div class="meta">
                         <span>Video</span>
                         <span>Embed a video</span>
                       </div>
                     </a>
                     <a href="#" class="dropdown-item kill-drop h-modal-trigger">
-                      <Icon icon="feather:image" />
+                      <i class="iconify" data-icon="feather:image"></i>
                       <div class="meta">
                         <span>Images</span>
                         <span>Upload pictures</span>
                       </div>
                     </a>
                     <a href="#" class="dropdown-item kill-drop h-modal-trigger">
-                      <Icon icon="feather:link" />
+                      <i class="iconify" data-icon="feather:link"></i>
                       <div class="meta">
                         <span>Link</span>
                         <span>Post a link</span>
@@ -183,7 +183,7 @@ useTitle('Messaging chat - WebApp - Vuero')
                     </a>
                     <hr class="dropdown-divider" />
                     <a href="#" class="dropdown-item kill-drop h-modal-trigger">
-                      <Icon icon="feather:file" />
+                      <i class="iconify" data-icon="feather:file"></i>
                       <div class="meta">
                         <span>File</span>
                         <span>Upload a file</span>
@@ -195,7 +195,7 @@ useTitle('Messaging chat - WebApp - Vuero')
             </div>
             <div class="add-emoji">
               <div class="button">
-                <Icon icon="feather:smile" />
+                <i class="iconify" data-icon="feather:smile"></i>
               </div>
             </div>
             <input type="text" placeholder="Type something here..." />

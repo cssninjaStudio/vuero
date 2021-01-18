@@ -66,7 +66,7 @@ useTitle('Components - Accordion Collapse - Vuero')
                 <li>
                   <RouterLink :to="{ name: 'index' }">
                     <span class="icon is-small is-solo">
-                      <Icon icon="feather:home" />
+                      <i class="iconify" data-icon="feather:home"></i>
                     </span>
                   </RouterLink>
                 </li>
@@ -104,8 +104,8 @@ useTitle('Components - Accordion Collapse - Vuero')
                       Check markup for more details.
                     </p>
                     <a class="code-trigger">
-                      <Icon icon="feather:code" class="open" />
-                      <Icon icon="feather:x" class="close" />
+                      <i class="iconify open" data-icon="feather:code"></i>
+                      <i class="iconify close" data-icon="feather:x"></i>
                     </a>
                   </div>
                   <div class="card-inner no-padding">
@@ -149,7 +149,7 @@ useTitle('Components - Accordion Collapse - Vuero')
                   <div class="collapse-header">
                     <h3>Plus Item 1</h3>
                     <div class="collapse-icon">
-                      <Icon icon="feather:plus" />
+                      <i class="iconify" data-icon="feather:plus"></i>
                     </div>
                   </div>
                   <div class="collapse-content">
@@ -175,7 +175,7 @@ useTitle('Components - Accordion Collapse - Vuero')
                   <div class="collapse-header">
                     <h3>Plus Item 2</h3>
                     <div class="collapse-icon">
-                      <Icon icon="feather:plus" />
+                      <i class="iconify" data-icon="feather:plus"></i>
                     </div>
                   </div>
                   <div class="collapse-content">
@@ -201,7 +201,7 @@ useTitle('Components - Accordion Collapse - Vuero')
                   <div class="collapse-header">
                     <h3>Plus Item 3</h3>
                     <div class="collapse-icon">
-                      <Icon icon="feather:plus" />
+                      <i class="iconify" data-icon="feather:plus"></i>
                     </div>
                   </div>
                   <div class="collapse-content">
@@ -229,7 +229,7 @@ useTitle('Components - Accordion Collapse - Vuero')
                   <div class="collapse-header">
                     <h3>Chevron Item 1</h3>
                     <div class="collapse-icon">
-                      <Icon icon="feather:chevron-down" />
+                      <i class="iconify" data-icon="feather:chevron-down"></i>
                     </div>
                   </div>
                   <div class="collapse-content">
@@ -255,7 +255,7 @@ useTitle('Components - Accordion Collapse - Vuero')
                   <div class="collapse-header">
                     <h3>Chevron Item 2</h3>
                     <div class="collapse-icon">
-                      <Icon icon="feather:chevron-down" />
+                      <i class="iconify" data-icon="feather:chevron-down"></i>
                     </div>
                   </div>
                   <div class="collapse-content">
@@ -281,7 +281,7 @@ useTitle('Components - Accordion Collapse - Vuero')
                   <div class="collapse-header">
                     <h3>Chevron Item 3</h3>
                     <div class="collapse-icon">
-                      <Icon icon="feather:chevron-down" />
+                      <i class="iconify" data-icon="feather:chevron-down"></i>
                     </div>
                   </div>
                   <div class="collapse-content">

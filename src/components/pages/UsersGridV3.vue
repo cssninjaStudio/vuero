@@ -72,13 +72,13 @@ const props = defineProps({
                     data-target-section="subsection-1"
                     class="tab-item is-active"
                   >
-                    <Icon icon="feather:activity" />
+                    <i class="iconify" data-icon="feather:activity"></i>
                   </a>
                   <a data-target-section="subsection-2" class="tab-item">
-                    <Icon icon="feather:briefcase" />
+                    <i class="iconify" data-icon="feather:briefcase"></i>
                   </a>
                   <a data-target-section="subsection-3" class="tab-item">
-                    <Icon icon="feather:check-circle" />
+                    <i class="iconify" data-icon="feather:check-circle"></i>
                   </a>
                   <div class="icon-tabs-naver"></div>
                 </div>
@@ -119,13 +119,13 @@ const props = defineProps({
             <div class="buttons">
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:check" />
+                  <i class="iconify" data-icon="feather:check"></i>
                 </span>
                 <span>Hire</span>
               </button>
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:message-circle" />
+                  <i class="iconify" data-icon="feather:message-circle"></i>
                 </span>
                 <span>Talk</span>
               </button>
@@ -164,13 +164,13 @@ const props = defineProps({
                     data-target-section="subsection-1"
                     class="tab-item is-active"
                   >
-                    <Icon icon="feather:activity" />
+                    <i class="iconify" data-icon="feather:activity"></i>
                   </a>
                   <a data-target-section="subsection-2" class="tab-item">
-                    <Icon icon="feather:briefcase" />
+                    <i class="iconify" data-icon="feather:briefcase"></i>
                   </a>
                   <a data-target-section="subsection-3" class="tab-item">
-                    <Icon icon="feather:check-circle" />
+                    <i class="iconify" data-icon="feather:check-circle"></i>
                   </a>
                   <div class="icon-tabs-naver"></div>
                 </div>
@@ -211,13 +211,13 @@ const props = defineProps({
             <div class="buttons">
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:check" />
+                  <i class="iconify" data-icon="feather:check"></i>
                 </span>
                 <span>Hire</span>
               </button>
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:message-circle" />
+                  <i class="iconify" data-icon="feather:message-circle"></i>
                 </span>
                 <span>Talk</span>
               </button>
@@ -256,13 +256,13 @@ const props = defineProps({
                     data-target-section="subsection-1"
                     class="tab-item is-active"
                   >
-                    <Icon icon="feather:activity" />
+                    <i class="iconify" data-icon="feather:activity"></i>
                   </a>
                   <a data-target-section="subsection-2" class="tab-item">
-                    <Icon icon="feather:briefcase" />
+                    <i class="iconify" data-icon="feather:briefcase"></i>
                   </a>
                   <a data-target-section="subsection-3" class="tab-item">
-                    <Icon icon="feather:check-circle" />
+                    <i class="iconify" data-icon="feather:check-circle"></i>
                   </a>
                   <div class="icon-tabs-naver"></div>
                 </div>
@@ -303,13 +303,13 @@ const props = defineProps({
             <div class="buttons">
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:check" />
+                  <i class="iconify" data-icon="feather:check"></i>
                 </span>
                 <span>Hire</span>
               </button>
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:message-circle" />
+                  <i class="iconify" data-icon="feather:message-circle"></i>
                 </span>
                 <span>Talk</span>
               </button>
@@ -348,13 +348,13 @@ const props = defineProps({
                     data-target-section="subsection-1"
                     class="tab-item is-active"
                   >
-                    <Icon icon="feather:activity" />
+                    <i class="iconify" data-icon="feather:activity"></i>
                   </a>
                   <a data-target-section="subsection-2" class="tab-item">
-                    <Icon icon="feather:briefcase" />
+                    <i class="iconify" data-icon="feather:briefcase"></i>
                   </a>
                   <a data-target-section="subsection-3" class="tab-item">
-                    <Icon icon="feather:check-circle" />
+                    <i class="iconify" data-icon="feather:check-circle"></i>
                   </a>
                   <div class="icon-tabs-naver"></div>
                 </div>
@@ -395,13 +395,13 @@ const props = defineProps({
             <div class="buttons">
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:check" />
+                  <i class="iconify" data-icon="feather:check"></i>
                 </span>
                 <span>Hire</span>
               </button>
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:message-circle" />
+                  <i class="iconify" data-icon="feather:message-circle"></i>
                 </span>
                 <span>Talk</span>
               </button>
@@ -440,13 +440,13 @@ const props = defineProps({
                     data-target-section="subsection-1"
                     class="tab-item is-active"
                   >
-                    <Icon icon="feather:activity" />
+                    <i class="iconify" data-icon="feather:activity"></i>
                   </a>
                   <a data-target-section="subsection-2" class="tab-item">
-                    <Icon icon="feather:briefcase" />
+                    <i class="iconify" data-icon="feather:briefcase"></i>
                   </a>
                   <a data-target-section="subsection-3" class="tab-item">
-                    <Icon icon="feather:check-circle" />
+                    <i class="iconify" data-icon="feather:check-circle"></i>
                   </a>
                   <div class="icon-tabs-naver"></div>
                 </div>
@@ -487,13 +487,13 @@ const props = defineProps({
             <div class="buttons">
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:check" />
+                  <i class="iconify" data-icon="feather:check"></i>
                 </span>
                 <span>Hire</span>
               </button>
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:message-circle" />
+                  <i class="iconify" data-icon="feather:message-circle"></i>
                 </span>
                 <span>Talk</span>
               </button>
@@ -532,13 +532,13 @@ const props = defineProps({
                     data-target-section="subsection-1"
                     class="tab-item is-active"
                   >
-                    <Icon icon="feather:activity" />
+                    <i class="iconify" data-icon="feather:activity"></i>
                   </a>
                   <a data-target-section="subsection-2" class="tab-item">
-                    <Icon icon="feather:briefcase" />
+                    <i class="iconify" data-icon="feather:briefcase"></i>
                   </a>
                   <a data-target-section="subsection-3" class="tab-item">
-                    <Icon icon="feather:check-circle" />
+                    <i class="iconify" data-icon="feather:check-circle"></i>
                   </a>
                   <div class="icon-tabs-naver"></div>
                 </div>
@@ -579,13 +579,13 @@ const props = defineProps({
             <div class="buttons">
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:check" />
+                  <i class="iconify" data-icon="feather:check"></i>
                 </span>
                 <span>Hire</span>
               </button>
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:message-circle" />
+                  <i class="iconify" data-icon="feather:message-circle"></i>
                 </span>
                 <span>Talk</span>
               </button>
@@ -624,13 +624,13 @@ const props = defineProps({
                     data-target-section="subsection-1"
                     class="tab-item is-active"
                   >
-                    <Icon icon="feather:activity" />
+                    <i class="iconify" data-icon="feather:activity"></i>
                   </a>
                   <a data-target-section="subsection-2" class="tab-item">
-                    <Icon icon="feather:briefcase" />
+                    <i class="iconify" data-icon="feather:briefcase"></i>
                   </a>
                   <a data-target-section="subsection-3" class="tab-item">
-                    <Icon icon="feather:check-circle" />
+                    <i class="iconify" data-icon="feather:check-circle"></i>
                   </a>
                   <div class="icon-tabs-naver"></div>
                 </div>
@@ -671,13 +671,13 @@ const props = defineProps({
             <div class="buttons">
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:check" />
+                  <i class="iconify" data-icon="feather:check"></i>
                 </span>
                 <span>Hire</span>
               </button>
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:message-circle" />
+                  <i class="iconify" data-icon="feather:message-circle"></i>
                 </span>
                 <span>Talk</span>
               </button>
@@ -716,13 +716,13 @@ const props = defineProps({
                     data-target-section="subsection-1"
                     class="tab-item is-active"
                   >
-                    <Icon icon="feather:activity" />
+                    <i class="iconify" data-icon="feather:activity"></i>
                   </a>
                   <a data-target-section="subsection-2" class="tab-item">
-                    <Icon icon="feather:briefcase" />
+                    <i class="iconify" data-icon="feather:briefcase"></i>
                   </a>
                   <a data-target-section="subsection-3" class="tab-item">
-                    <Icon icon="feather:check-circle" />
+                    <i class="iconify" data-icon="feather:check-circle"></i>
                   </a>
                   <div class="icon-tabs-naver"></div>
                 </div>
@@ -763,13 +763,13 @@ const props = defineProps({
             <div class="buttons">
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:check" />
+                  <i class="iconify" data-icon="feather:check"></i>
                 </span>
                 <span>Hire</span>
               </button>
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:message-circle" />
+                  <i class="iconify" data-icon="feather:message-circle"></i>
                 </span>
                 <span>Talk</span>
               </button>
@@ -808,13 +808,13 @@ const props = defineProps({
                     data-target-section="subsection-1"
                     class="tab-item is-active"
                   >
-                    <Icon icon="feather:activity" />
+                    <i class="iconify" data-icon="feather:activity"></i>
                   </a>
                   <a data-target-section="subsection-2" class="tab-item">
-                    <Icon icon="feather:briefcase" />
+                    <i class="iconify" data-icon="feather:briefcase"></i>
                   </a>
                   <a data-target-section="subsection-3" class="tab-item">
-                    <Icon icon="feather:check-circle" />
+                    <i class="iconify" data-icon="feather:check-circle"></i>
                   </a>
                   <div class="icon-tabs-naver"></div>
                 </div>
@@ -855,13 +855,13 @@ const props = defineProps({
             <div class="buttons">
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:check" />
+                  <i class="iconify" data-icon="feather:check"></i>
                 </span>
                 <span>Hire</span>
               </button>
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:message-circle" />
+                  <i class="iconify" data-icon="feather:message-circle"></i>
                 </span>
                 <span>Talk</span>
               </button>
@@ -900,13 +900,13 @@ const props = defineProps({
                     data-target-section="subsection-1"
                     class="tab-item is-active"
                   >
-                    <Icon icon="feather:activity" />
+                    <i class="iconify" data-icon="feather:activity"></i>
                   </a>
                   <a data-target-section="subsection-2" class="tab-item">
-                    <Icon icon="feather:briefcase" />
+                    <i class="iconify" data-icon="feather:briefcase"></i>
                   </a>
                   <a data-target-section="subsection-3" class="tab-item">
-                    <Icon icon="feather:check-circle" />
+                    <i class="iconify" data-icon="feather:check-circle"></i>
                   </a>
                   <div class="icon-tabs-naver"></div>
                 </div>
@@ -947,13 +947,13 @@ const props = defineProps({
             <div class="buttons">
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:check" />
+                  <i class="iconify" data-icon="feather:check"></i>
                 </span>
                 <span>Hire</span>
               </button>
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:message-circle" />
+                  <i class="iconify" data-icon="feather:message-circle"></i>
                 </span>
                 <span>Talk</span>
               </button>
@@ -992,13 +992,13 @@ const props = defineProps({
                     data-target-section="subsection-1"
                     class="tab-item is-active"
                   >
-                    <Icon icon="feather:activity" />
+                    <i class="iconify" data-icon="feather:activity"></i>
                   </a>
                   <a data-target-section="subsection-2" class="tab-item">
-                    <Icon icon="feather:briefcase" />
+                    <i class="iconify" data-icon="feather:briefcase"></i>
                   </a>
                   <a data-target-section="subsection-3" class="tab-item">
-                    <Icon icon="feather:check-circle" />
+                    <i class="iconify" data-icon="feather:check-circle"></i>
                   </a>
                   <div class="icon-tabs-naver"></div>
                 </div>
@@ -1039,13 +1039,13 @@ const props = defineProps({
             <div class="buttons">
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:check" />
+                  <i class="iconify" data-icon="feather:check"></i>
                 </span>
                 <span>Hire</span>
               </button>
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:message-circle" />
+                  <i class="iconify" data-icon="feather:message-circle"></i>
                 </span>
                 <span>Talk</span>
               </button>
@@ -1084,13 +1084,13 @@ const props = defineProps({
                     data-target-section="subsection-1"
                     class="tab-item is-active"
                   >
-                    <Icon icon="feather:activity" />
+                    <i class="iconify" data-icon="feather:activity"></i>
                   </a>
                   <a data-target-section="subsection-2" class="tab-item">
-                    <Icon icon="feather:briefcase" />
+                    <i class="iconify" data-icon="feather:briefcase"></i>
                   </a>
                   <a data-target-section="subsection-3" class="tab-item">
-                    <Icon icon="feather:check-circle" />
+                    <i class="iconify" data-icon="feather:check-circle"></i>
                   </a>
                   <div class="icon-tabs-naver"></div>
                 </div>
@@ -1131,13 +1131,13 @@ const props = defineProps({
             <div class="buttons">
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:check" />
+                  <i class="iconify" data-icon="feather:check"></i>
                 </span>
                 <span>Hire</span>
               </button>
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:message-circle" />
+                  <i class="iconify" data-icon="feather:message-circle"></i>
                 </span>
                 <span>Talk</span>
               </button>
@@ -1176,13 +1176,13 @@ const props = defineProps({
                     data-target-section="subsection-1"
                     class="tab-item is-active"
                   >
-                    <Icon icon="feather:activity" />
+                    <i class="iconify" data-icon="feather:activity"></i>
                   </a>
                   <a data-target-section="subsection-2" class="tab-item">
-                    <Icon icon="feather:briefcase" />
+                    <i class="iconify" data-icon="feather:briefcase"></i>
                   </a>
                   <a data-target-section="subsection-3" class="tab-item">
-                    <Icon icon="feather:check-circle" />
+                    <i class="iconify" data-icon="feather:check-circle"></i>
                   </a>
                   <div class="icon-tabs-naver"></div>
                 </div>
@@ -1223,13 +1223,13 @@ const props = defineProps({
             <div class="buttons">
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:check" />
+                  <i class="iconify" data-icon="feather:check"></i>
                 </span>
                 <span>Hire</span>
               </button>
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:message-circle" />
+                  <i class="iconify" data-icon="feather:message-circle"></i>
                 </span>
                 <span>Talk</span>
               </button>
@@ -1268,13 +1268,13 @@ const props = defineProps({
                     data-target-section="subsection-1"
                     class="tab-item is-active"
                   >
-                    <Icon icon="feather:activity" />
+                    <i class="iconify" data-icon="feather:activity"></i>
                   </a>
                   <a data-target-section="subsection-2" class="tab-item">
-                    <Icon icon="feather:briefcase" />
+                    <i class="iconify" data-icon="feather:briefcase"></i>
                   </a>
                   <a data-target-section="subsection-3" class="tab-item">
-                    <Icon icon="feather:check-circle" />
+                    <i class="iconify" data-icon="feather:check-circle"></i>
                   </a>
                   <div class="icon-tabs-naver"></div>
                 </div>
@@ -1315,13 +1315,13 @@ const props = defineProps({
             <div class="buttons">
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:check" />
+                  <i class="iconify" data-icon="feather:check"></i>
                 </span>
                 <span>Hire</span>
               </button>
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:message-circle" />
+                  <i class="iconify" data-icon="feather:message-circle"></i>
                 </span>
                 <span>Talk</span>
               </button>
@@ -1360,13 +1360,13 @@ const props = defineProps({
                     data-target-section="subsection-1"
                     class="tab-item is-active"
                   >
-                    <Icon icon="feather:activity" />
+                    <i class="iconify" data-icon="feather:activity"></i>
                   </a>
                   <a data-target-section="subsection-2" class="tab-item">
-                    <Icon icon="feather:briefcase" />
+                    <i class="iconify" data-icon="feather:briefcase"></i>
                   </a>
                   <a data-target-section="subsection-3" class="tab-item">
-                    <Icon icon="feather:check-circle" />
+                    <i class="iconify" data-icon="feather:check-circle"></i>
                   </a>
                   <div class="icon-tabs-naver"></div>
                 </div>
@@ -1407,13 +1407,13 @@ const props = defineProps({
             <div class="buttons">
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:check" />
+                  <i class="iconify" data-icon="feather:check"></i>
                 </span>
                 <span>Hire</span>
               </button>
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:message-circle" />
+                  <i class="iconify" data-icon="feather:message-circle"></i>
                 </span>
                 <span>Talk</span>
               </button>
@@ -1452,13 +1452,13 @@ const props = defineProps({
                     data-target-section="subsection-1"
                     class="tab-item is-active"
                   >
-                    <Icon icon="feather:activity" />
+                    <i class="iconify" data-icon="feather:activity"></i>
                   </a>
                   <a data-target-section="subsection-2" class="tab-item">
-                    <Icon icon="feather:briefcase" />
+                    <i class="iconify" data-icon="feather:briefcase"></i>
                   </a>
                   <a data-target-section="subsection-3" class="tab-item">
-                    <Icon icon="feather:check-circle" />
+                    <i class="iconify" data-icon="feather:check-circle"></i>
                   </a>
                   <div class="icon-tabs-naver"></div>
                 </div>
@@ -1499,13 +1499,13 @@ const props = defineProps({
             <div class="buttons">
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:check" />
+                  <i class="iconify" data-icon="feather:check"></i>
                 </span>
                 <span>Hire</span>
               </button>
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:message-circle" />
+                  <i class="iconify" data-icon="feather:message-circle"></i>
                 </span>
                 <span>Talk</span>
               </button>
@@ -1544,13 +1544,13 @@ const props = defineProps({
                     data-target-section="subsection-1"
                     class="tab-item is-active"
                   >
-                    <Icon icon="feather:activity" />
+                    <i class="iconify" data-icon="feather:activity"></i>
                   </a>
                   <a data-target-section="subsection-2" class="tab-item">
-                    <Icon icon="feather:briefcase" />
+                    <i class="iconify" data-icon="feather:briefcase"></i>
                   </a>
                   <a data-target-section="subsection-3" class="tab-item">
-                    <Icon icon="feather:check-circle" />
+                    <i class="iconify" data-icon="feather:check-circle"></i>
                   </a>
                   <div class="icon-tabs-naver"></div>
                 </div>
@@ -1591,13 +1591,13 @@ const props = defineProps({
             <div class="buttons">
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:check" />
+                  <i class="iconify" data-icon="feather:check"></i>
                 </span>
                 <span>Hire</span>
               </button>
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:message-circle" />
+                  <i class="iconify" data-icon="feather:message-circle"></i>
                 </span>
                 <span>Talk</span>
               </button>
@@ -1636,13 +1636,13 @@ const props = defineProps({
                     data-target-section="subsection-1"
                     class="tab-item is-active"
                   >
-                    <Icon icon="feather:activity" />
+                    <i class="iconify" data-icon="feather:activity"></i>
                   </a>
                   <a data-target-section="subsection-2" class="tab-item">
-                    <Icon icon="feather:briefcase" />
+                    <i class="iconify" data-icon="feather:briefcase"></i>
                   </a>
                   <a data-target-section="subsection-3" class="tab-item">
-                    <Icon icon="feather:check-circle" />
+                    <i class="iconify" data-icon="feather:check-circle"></i>
                   </a>
                   <div class="icon-tabs-naver"></div>
                 </div>
@@ -1683,13 +1683,13 @@ const props = defineProps({
             <div class="buttons">
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:check" />
+                  <i class="iconify" data-icon="feather:check"></i>
                 </span>
                 <span>Hire</span>
               </button>
               <button class="button h-button is-dark-outlined">
                 <span class="icon">
-                  <Icon icon="feather:message-circle" />
+                  <i class="iconify" data-icon="feather:message-circle"></i>
                 </span>
                 <span>Talk</span>
               </button>

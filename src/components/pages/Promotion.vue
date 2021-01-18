@@ -44,7 +44,7 @@
               <div
                 class="icon-wrap is-dark-primary is-dark-bg-3 is-dark-card-bordered"
               >
-                <Icon icon="feather:check" />
+                <i class="iconify" data-icon="feather:check"></i>
               </div>
               <div class="flex-meta">
                 <span>Includes 8 team seats</span>
@@ -58,7 +58,7 @@
               <div
                 class="icon-wrap is-dark-primary is-dark-bg-3 is-dark-card-bordered"
               >
-                <Icon icon="feather:check" />
+                <i class="iconify" data-icon="feather:check"></i>
               </div>
               <div class="flex-meta">
                 <span>Integrations</span>
@@ -72,7 +72,7 @@
               <div
                 class="icon-wrap is-dark-primary is-dark-bg-3 is-dark-card-bordered"
               >
-                <Icon icon="feather:check" />
+                <i class="iconify" data-icon="feather:check"></i>
               </div>
               <div class="flex-meta">
                 <span>Scale</span>
