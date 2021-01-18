@@ -6,6 +6,8 @@ import ViteComponents from 'vite-plugin-components'
 import ViteFonts from 'vite-plugin-fonts'
 import PurgeIcons from 'vite-plugin-purge-icons'
 import VueI18n from '@intlify/vite-plugin-vue-i18n'
+import Markdown from 'vite-plugin-md'
+import MarkdownPrismVue from './vite-plugins/markdown-it-prism-vue'
 import { VitePWA } from 'vite-plugin-pwa'
 
 // const alias = [
@@ -54,10 +56,34 @@ const config: UserConfig = {
       },
     }),
 
+    // https://github.com/antfu/vite-plugin-md
+    Markdown({
+      markdownItOptions: {
+        html: true,
+        linkify: true,
+        typographer: true,
+      },
+      wrapperClasses: '',
+      wrapperComponent: 'DocumentationItem',
+      transforms: {
+        after(sfc) {
+          return sfc
+            .replace('<!--code-->', '<template #code>')
+            .replace('<!--/code-->', '</template>')
+            .replace('<!--example-->', '<template #example>')
+            .replace('<!--/example-->', '</template>')
+        },
+      },
+      markdownItSetup(md) {
+        md.use(MarkdownPrismVue)
+      },
+    }),
+
     // https://github.com/antfu/vite-plugin-components
     ViteComponents({
-      // alias,
-      dirs: ['src/components', 'src/layouts'],
+      extensions: ['vue', 'md'],
+      dirs: ['documentation', 'src/components', 'src/layouts'],
+      customLoaderMatcher: (path) => path.endsWith('.md'),
     }),
 
     // https://github.com/stafyniaksacha/vite-plugin-fonts

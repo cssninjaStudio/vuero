@@ -86,16 +86,7 @@ useTitle('Elements - Helpers - Vuero')
             <div class="columns is-multiline">
               <div class="column is-12">
                 <!--Theme Colors-->
-                <div class="demo-card">
-                  <div class="demo-title">
-                    <h3 class="title is-thin is-5">Helpers</h3>
-                    <p>
-                      Vuero provides some CSS helpers that can help you adding
-                      some styles without writing any CSS. Helpers have been
-                      keep short to avoid bloat and unused CSS.
-                    </p>
-                  </div>
-                </div>
+                <HelpersDocumentation />
 
                 <div class="columns is-multiline">
                   <div class="column is-12">

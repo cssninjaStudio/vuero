@@ -86,22 +86,7 @@ useTitle('Elements - Colors - Vuero')
             <div class="columns is-multiline">
               <div class="column is-12">
                 <!--Theme Colors-->
-                <div class="demo-card">
-                  <div class="demo-title">
-                    <h3 class="title is-thin is-5">Theme Colors</h3>
-                    <p>
-                      Vuero uses predefined SCSS color variables that you can
-                      use if you are using the gulp project or another setup
-                      that includes Sass compilation. SCSS variables are very
-                      helpful, as you only need to change the variable value to
-                      be able to change a color accross the hole theme. Also,
-                      please note that <code>$accent</code> variable is never
-                      directly used. It acts as counterpart of the
-                      <code>$primary</code> color when you turn the dark mode
-                      on.
-                    </p>
-                  </div>
-                </div>
+                <ColorsDocumentation />
 
                 <div class="columns is-multiline">
                   <div class="column is-4">

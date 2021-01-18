@@ -1,0 +1,92 @@
+<script setup lang="ts">
+import { defineProps, ref } from 'vue'
+
+const props = defineProps({
+  frontmatter: {
+    type: Object
+  }
+})
+
+const displayCode = ref(false)
+</script>
+
+<template>
+  <div class="demo-card">
+    <div class="demo-title">
+      <slot></slot>
+
+      <a
+        v-if="!frontmatter.disable_code"
+        class="code-trigger"
+        :class="[displayCode && 'is-active']"
+        @click="displayCode = !displayCode"
+      >
+        <span
+          v-show="displayCode"
+          class="iconify open"
+          data-icon="feather:code"
+        />
+        <span
+          v-show="!displayCode"
+          class="iconify close"
+          data-icon="feather:x"
+        />
+      </a>
+    </div>
+    <div
+      v-if="!frontmatter.disable_code || !frontmatter.disable_example"
+      class="card-inner"
+    >
+      <div v-if="!frontmatter.disable_code" class="demo-example">
+        <slot name="example"></slot>
+      </div>
+
+      <div
+        v-if="!frontmatter.disable_code && displayCode"
+        class="demo-code-wrapper"
+      >
+        <div class="demo-code">
+          <slot name="code"></slot>
+        </div>
+        <div v-if="frontmatter.state" class="demo-state">
+          <pre>{{ frontmatter.state }}</pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+
+<style lang="scss" scoped>
+::v-deep(h3) {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin-bottom: 0.75rem;
+  color: #283252;
+  line-height: 1.125;
+}
+
+.demo-code-wrapper {
+  display: flex;
+  margin-top: 2rem;
+
+  .demo-code {
+    flex-grow: 1;
+  }
+  .demo-state {
+    flex-grow: 1;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      top: 0.6em;
+      right: 1em;
+      z-index: 2;
+      font-size: 0.8rem;
+      color: #888;
+      content: 'state';
+    }
+  }
+}
+</style>

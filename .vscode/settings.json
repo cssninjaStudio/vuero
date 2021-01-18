@@ -18,6 +18,9 @@
   "[vue]": {
     "editor.formatOnSave": false
   },
+  "[markdown]": {
+    "editor.formatOnSave": false,
+  },
   "vetur.experimental.templateInterpolationService": false,
   "vetur.validation.interpolation": false,
   "vetur.completion.tagCasing": "initial",
