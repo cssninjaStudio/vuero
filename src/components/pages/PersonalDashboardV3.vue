@@ -329,5 +329,146 @@ import { interviewsOptions } from '/@src/composition/state/charts/apexcharts/exa
 <style lang="scss">
 @import '../../assets/scss/abstracts/_variables.scss';
 @import '../../assets/scss/abstracts/_mixins.scss';
-@import '../../assets/scss/pages/dashboards/_personal.scss';
+
+.personal-dashboard-v3 {
+  .columns {
+    &.is-flex-tablet-p {
+      .column {
+        &.is-6 {
+          min-width: 50%;
+        }
+      }
+    }
+  }
+
+  .dashboard-card {
+    @include vuero-l-card();
+
+    font-family: $font;
+
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+
+    &.is-welcome {
+      background: $widget-grey;
+      border: none;
+      padding: 40px;
+
+      .welcome-title {
+        h3 {
+          font-family: $font-alt;
+          font-weight: 700;
+          font-size: 2rem;
+          color: $dark-text;
+        }
+      }
+
+      .welcome-progress {
+        display: flex;
+        align-items: center;
+        padding: 10px 0;
+
+        .meta {
+          margin-left: 16px;
+
+          span {
+            display: block;
+
+            &:first-child {
+              color: $light-text;
+              font-size: 0.95rem;
+            }
+
+            &:nth-child(2) {
+              font-family: $font-alt;
+              font-size: 1.1rem;
+              font-weight: 600;
+              color: $dark-text;
+            }
+          }
+        }
+      }
+
+      .button-wrap {
+        .h-button {
+          height: 44px;
+          border-radius: 10px;
+        }
+      }
+    }
+
+    &.is-interview {
+      &:not(:last-child) {
+        margin-bottom: 0.75rem;
+      }
+
+      .flex-end {
+        svg {
+          height: 18px;
+          width: 18px;
+          color: $light-text;
+        }
+      }
+    }
+  }
+
+  .picker-widget {
+    padding: 40px;
+    height: 317px;
+  }
+
+  .stats-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 280px;
+
+    .people {
+      margin-top: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 6px;
+
+      .left {
+        span {
+          display: block;
+          font-family: $font;
+
+          &:first-child {
+            font-family: $font-alt;
+            font-weight: 600;
+            color: $dark-text;
+          }
+
+          &:nth-child(2) {
+            font-size: 0.9rem;
+            color: $light-text;
+
+            a {
+              font-weight: 500;
+              color: $primary;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.is-dark {
+  .personal-dashboard-v3 {
+    .dashboard-card {
+      @include vuero-card--dark();
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .personal-dashboard-v3 {
+    .stats-wrapper {
+      height: auto;
+    }
+  }
+}
 </style>

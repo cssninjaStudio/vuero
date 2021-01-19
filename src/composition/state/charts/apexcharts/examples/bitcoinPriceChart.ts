@@ -72,7 +72,7 @@ export const bitcoinChartOptions = {
       opacity: 0.06,
     },
   },
-  colors: [themeColors.accent, themeColors.orange, themeColors.green],
+  colors: [themeColors.green, themeColors.accent, themeColors.green],
   stroke: {
     curve: 'smooth',
     width: 3,

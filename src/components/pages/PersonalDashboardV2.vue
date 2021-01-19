@@ -3,7 +3,10 @@ import { ref } from 'vue'
 import { completionOptions } from '/@src/composition/state/charts/apexcharts/examples/taskCompletionChart'
 import { barOptions } from '/@src/composition/state/charts/apexcharts/examples/teamEfficiencyChart'
 
-const acheck1 = ref(true)
+const democheck1 = ref(false)
+const democheck2 = ref(true)
+const democheck3 = ref(false)
+const democheck4 = ref(false)
 </script>
 
 <template>
@@ -119,7 +122,53 @@ const acheck1 = ref(true)
                   </div>
                 </div>
 
-                <ProjectWidgetDropdown />
+                <BaseDropdown dots right spaced classes="end-action">
+                  <template #button="{ open }">
+                    <button class="is-trigger" @click="open">
+                      <i class="iconify" data-icon="feather:more-vertical"></i>
+                    </button>
+                  </template>
+
+                  <template #content>
+                    <a href="#" class="dropdown-item is-media">
+                      <div class="icon">
+                        <i class="lnil lnil-whiteboard-alt-2"></i>
+                      </div>
+                      <div class="meta">
+                        <span>View</span>
+                        <span>View project board</span>
+                      </div>
+                    </a>
+                    <a href="#" class="dropdown-item is-media">
+                      <div class="icon">
+                        <i class="lnil lnil-pencil"></i>
+                      </div>
+                      <div class="meta">
+                        <span>Edit</span>
+                        <span>Edit project</span>
+                      </div>
+                    </a>
+                    <hr class="dropdown-divider" />
+                    <a href="#" class="dropdown-item is-media">
+                      <div class="icon">
+                        <i class="lnil lnil-checkmark-circle"></i>
+                      </div>
+                      <div class="meta">
+                        <span>Tasks</span>
+                        <span>View pending tasks</span>
+                      </div>
+                    </a>
+                    <a href="#" class="dropdown-item is-media">
+                      <div class="icon">
+                        <i class="lnil lnil-hierchy-alt"></i>
+                      </div>
+                      <div class="meta">
+                        <span>Team</span>
+                        <span>View project team</span>
+                      </div>
+                    </a>
+                  </template>
+                </BaseDropdown>
               </div>
             </div>
             <!--Project-->
@@ -176,7 +225,53 @@ const acheck1 = ref(true)
                   </div>
                 </div>
 
-                <ProjectWidgetDropdown />
+                <BaseDropdown dots right spaced classes="end-action">
+                  <template #button="{ open }">
+                    <button class="is-trigger" @click="open">
+                      <i class="iconify" data-icon="feather:more-vertical"></i>
+                    </button>
+                  </template>
+
+                  <template #content>
+                    <a href="#" class="dropdown-item is-media">
+                      <div class="icon">
+                        <i class="lnil lnil-whiteboard-alt-2"></i>
+                      </div>
+                      <div class="meta">
+                        <span>View</span>
+                        <span>View project board</span>
+                      </div>
+                    </a>
+                    <a href="#" class="dropdown-item is-media">
+                      <div class="icon">
+                        <i class="lnil lnil-pencil"></i>
+                      </div>
+                      <div class="meta">
+                        <span>Edit</span>
+                        <span>Edit project</span>
+                      </div>
+                    </a>
+                    <hr class="dropdown-divider" />
+                    <a href="#" class="dropdown-item is-media">
+                      <div class="icon">
+                        <i class="lnil lnil-checkmark-circle"></i>
+                      </div>
+                      <div class="meta">
+                        <span>Tasks</span>
+                        <span>View pending tasks</span>
+                      </div>
+                    </a>
+                    <a href="#" class="dropdown-item is-media">
+                      <div class="icon">
+                        <i class="lnil lnil-hierchy-alt"></i>
+                      </div>
+                      <div class="meta">
+                        <span>Team</span>
+                        <span>View project team</span>
+                      </div>
+                    </a>
+                  </template>
+                </BaseDropdown>
               </div>
             </div>
             <!--Project-->
@@ -217,7 +312,53 @@ const acheck1 = ref(true)
                   </div>
                 </div>
 
-                <ProjectWidgetDropdown />
+                <BaseDropdown dots right spaced classes="end-action">
+                  <template #button="{ open }">
+                    <button class="is-trigger" @click="open">
+                      <i class="iconify" data-icon="feather:more-vertical"></i>
+                    </button>
+                  </template>
+
+                  <template #content>
+                    <a href="#" class="dropdown-item is-media">
+                      <div class="icon">
+                        <i class="lnil lnil-whiteboard-alt-2"></i>
+                      </div>
+                      <div class="meta">
+                        <span>View</span>
+                        <span>View project board</span>
+                      </div>
+                    </a>
+                    <a href="#" class="dropdown-item is-media">
+                      <div class="icon">
+                        <i class="lnil lnil-pencil"></i>
+                      </div>
+                      <div class="meta">
+                        <span>Edit</span>
+                        <span>Edit project</span>
+                      </div>
+                    </a>
+                    <hr class="dropdown-divider" />
+                    <a href="#" class="dropdown-item is-media">
+                      <div class="icon">
+                        <i class="lnil lnil-checkmark-circle"></i>
+                      </div>
+                      <div class="meta">
+                        <span>Tasks</span>
+                        <span>View pending tasks</span>
+                      </div>
+                    </a>
+                    <a href="#" class="dropdown-item is-media">
+                      <div class="icon">
+                        <i class="lnil lnil-hierchy-alt"></i>
+                      </div>
+                      <div class="meta">
+                        <span>Team</span>
+                        <span>View project team</span>
+                      </div>
+                    </a>
+                  </template>
+                </BaseDropdown>
               </div>
             </div>
             <!--Project-->
@@ -286,7 +427,53 @@ const acheck1 = ref(true)
                   </div>
                 </div>
 
-                <ProjectWidgetDropdown />
+                <BaseDropdown dots right spaced classes="end-action">
+                  <template #button="{ open }">
+                    <button class="is-trigger" @click="open">
+                      <i class="iconify" data-icon="feather:more-vertical"></i>
+                    </button>
+                  </template>
+
+                  <template #content>
+                    <a href="#" class="dropdown-item is-media">
+                      <div class="icon">
+                        <i class="lnil lnil-whiteboard-alt-2"></i>
+                      </div>
+                      <div class="meta">
+                        <span>View</span>
+                        <span>View project board</span>
+                      </div>
+                    </a>
+                    <a href="#" class="dropdown-item is-media">
+                      <div class="icon">
+                        <i class="lnil lnil-pencil"></i>
+                      </div>
+                      <div class="meta">
+                        <span>Edit</span>
+                        <span>Edit project</span>
+                      </div>
+                    </a>
+                    <hr class="dropdown-divider" />
+                    <a href="#" class="dropdown-item is-media">
+                      <div class="icon">
+                        <i class="lnil lnil-checkmark-circle"></i>
+                      </div>
+                      <div class="meta">
+                        <span>Tasks</span>
+                        <span>View pending tasks</span>
+                      </div>
+                    </a>
+                    <a href="#" class="dropdown-item is-media">
+                      <div class="icon">
+                        <i class="lnil lnil-hierchy-alt"></i>
+                      </div>
+                      <div class="meta">
+                        <span>Team</span>
+                        <span>View project team</span>
+                      </div>
+                    </a>
+                  </template>
+                </BaseDropdown>
               </div>
             </div>
           </div>
@@ -416,31 +603,7 @@ const acheck1 = ref(true)
               <!-- List item -->
               <div class="list-item">
                 <!-- Animated checkbox-->
-                <!--div class="animated-checkbox">
-                  <input type="checkbox" />
-                  <div class="checkmark-wrap">
-                    <div class="shadow-circle"></div>
-                    <svg
-                      class="checkmark"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 52 52"
-                    >
-                      <circle
-                        class="checkmark-circle"
-                        cx="26"
-                        cy="26"
-                        r="25"
-                        fill="none"
-                      />
-                      <path
-                        class="checkmark-check"
-                        fill="none"
-                        d="M14.1 27.2l7.1 7.2 16.7-16.8"
-                      />
-                    </svg>
-                  </div>
-                </div-->
-                <AnimatedCheckbox v-model:checked="acheck1" />
+                <AnimatedCheckbox v-model:checked="democheck1" />
                 <div class="item-meta">
                   <span class="dark-inverted">Call Mr. Markstrom</span>
                   <span>Review the project initial wireframes</span>
@@ -449,30 +612,7 @@ const acheck1 = ref(true)
               <!-- List item -->
               <div class="list-item">
                 <!-- Animated checkbox-->
-                <div class="animated-checkbox is-checked">
-                  <input type="checkbox" />
-                  <div class="checkmark-wrap">
-                    <div class="shadow-circle"></div>
-                    <svg
-                      class="checkmark"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 52 52"
-                    >
-                      <circle
-                        class="checkmark-circle"
-                        cx="26"
-                        cy="26"
-                        r="25"
-                        fill="none"
-                      />
-                      <path
-                        class="checkmark-check"
-                        fill="none"
-                        d="M14.1 27.2l7.1 7.2 16.7-16.8"
-                      />
-                    </svg>
-                  </div>
-                </div>
+                <AnimatedCheckbox v-model:checked="democheck2" />
                 <div class="item-meta">
                   <span class="dark-inverted">Finish wireframes</span>
                   <span>Make all requested changes and publish</span>
@@ -481,30 +621,7 @@ const acheck1 = ref(true)
               <!-- List item -->
               <div class="list-item">
                 <!-- Animated checkbox-->
-                <div class="animated-checkbox">
-                  <input type="checkbox" />
-                  <div class="checkmark-wrap">
-                    <div class="shadow-circle"></div>
-                    <svg
-                      class="checkmark"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 52 52"
-                    >
-                      <circle
-                        class="checkmark-circle"
-                        cx="26"
-                        cy="26"
-                        r="25"
-                        fill="none"
-                      />
-                      <path
-                        class="checkmark-check"
-                        fill="none"
-                        d="M14.1 27.2l7.1 7.2 16.7-16.8"
-                      />
-                    </svg>
-                  </div>
-                </div>
+                <AnimatedCheckbox v-model:checked="democheck3" />
                 <div class="item-meta">
                   <span class="dark-inverted">Update timesheets</span>
                   <span>Update all the team timesheets</span>
@@ -513,30 +630,7 @@ const acheck1 = ref(true)
               <!-- List item -->
               <div class="list-item">
                 <!-- Animated checkbox-->
-                <div class="animated-checkbox">
-                  <input type="checkbox" />
-                  <div class="checkmark-wrap">
-                    <div class="shadow-circle"></div>
-                    <svg
-                      class="checkmark"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 52 52"
-                    >
-                      <circle
-                        class="checkmark-circle"
-                        cx="26"
-                        cy="26"
-                        r="25"
-                        fill="none"
-                      />
-                      <path
-                        class="checkmark-check"
-                        fill="none"
-                        d="M14.1 27.2l7.1 7.2 16.7-16.8"
-                      />
-                    </svg>
-                  </div>
-                </div>
+                <AnimatedCheckbox v-model:checked="democheck4" />
                 <div class="item-meta">
                   <span class="dark-inverted">Request payout</span>
                   <span>send project invoice to client</span>
@@ -573,5 +667,145 @@ const acheck1 = ref(true)
 <style lang="scss">
 @import '../../assets/scss/abstracts/_variables.scss';
 @import '../../assets/scss/abstracts/_mixins.scss';
-@import '../../assets/scss/pages/dashboards/_personal.scss';
+
+.personal-dashboard-v2 {
+  .dashboard-header {
+    @include vuero-s-card();
+
+    display: flex;
+    align-items: center;
+    padding: 30px;
+
+    .user-meta {
+      padding: 0 3rem;
+      border-right: 1px solid darken($fade-grey, 3%);
+
+      h3 {
+        max-width: 180px;
+      }
+    }
+
+    .user-action {
+      padding: 0 3rem;
+    }
+
+    .cta {
+      position: relative;
+      flex-grow: 2;
+      max-width: 275px;
+      margin-left: auto;
+      background: lighten($primary, 8%);
+      padding: 20px;
+      border-radius: 6px;
+      box-shadow: $primary-box-shadow;
+
+      .lnil,
+      .lnir {
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+        font-size: 4rem;
+        opacity: 0.3;
+      }
+
+      .link {
+        font-family: $font-alt;
+        display: block;
+        font-weight: 500;
+        margin-top: 0.5rem;
+
+        &:hover {
+          color: $smoke-white;
+          opacity: 0.6;
+        }
+      }
+    }
+  }
+
+  .dashboard-card {
+    @include vuero-s-card();
+
+    padding: 30px;
+
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+
+    .card-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+
+      h3 {
+        font-family: $font-alt;
+        font-size: 1rem;
+        font-weight: 600;
+        color: $dark-text;
+        margin-bottom: 0;
+      }
+    }
+
+    .active-projects,
+    .active-team,
+    .active-list {
+      padding: 10px 0;
+    }
+  }
+}
+
+body {
+  &.is-dark {
+    .personal-dashboard-v2 {
+      .dashboard-header,
+      .dashboard-card {
+        @include vuero-card--dark();
+      }
+
+      .home-header {
+        .cta {
+          background: lighten($accent, 2%);
+          box-shadow: $accent-box-shadow;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .personal-dashboard-v2 {
+    .dashboard-header {
+      flex-direction: column;
+      text-align: center;
+
+      .h-avatar {
+        margin-bottom: 10px;
+      }
+
+      .user-meta {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border: none;
+      }
+
+      .user-action {
+        padding-bottom: 30px;
+      }
+
+      .cta {
+        margin-left: 0;
+      }
+    }
+
+    .active-projects {
+      .media-flex-center {
+        .flex-end {
+          .avatar-stack {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
 </style>

@@ -6,6 +6,10 @@ const props = defineProps({
     type: Boolean,
     default: false,
   },
+  color: {
+    type: String,
+    default: ''
+  }
 })
 
 const emit = defineEmit(['update:checked'])
@@ -19,7 +23,6 @@ const handleClick = () => {
 
 const updateCheckbox = () => {
   if (element.value && innerElement.value) {
-    console.log(props.checked, element.value)
     if (props.checked) {
       element.value.classList.add('is-checked')
       innerElement.value.classList.add('is-opaque')
@@ -44,7 +47,11 @@ watch(() => {
 </script>
 
 <template>
-  <div ref="element" class="animated-checkbox">
+  <div
+    ref="element"
+    class="animated-checkbox"
+    :class="[props.color && 'is-' + props.color]"
+  >
     <input type="checkbox" :checked="checked" @change="handleClick" />
     <div class="checkmark-wrap">
       <div ref="innerElement" class="shadow-circle"></div>
@@ -78,6 +85,7 @@ $curve: cubic-bezier(0.65, 0, 0.45, 1);
   &.is-purple {
     .checkmark-circle {
       color: $h-purple !important;
+      stroke: $h-purple !important;
     }
 
     .checkmark {
@@ -86,12 +94,14 @@ $curve: cubic-bezier(0.65, 0, 0.45, 1);
 
     .checkmark-check {
       color: $h-purple !important;
+      stroke: $h-purple !important;
     }
   }
 
   &.is-info {
     .checkmark-circle {
       color: $info !important;
+      stroke: $info !important;
     }
 
     .checkmark {
@@ -100,12 +110,14 @@ $curve: cubic-bezier(0.65, 0, 0.45, 1);
 
     .checkmark-check {
       color: $info !important;
+      stroke: $info !important;
     }
   }
 
   &.is-success {
     .checkmark-circle {
       color: $success !important;
+      stroke: $success !important;
     }
 
     .checkmark {
@@ -114,12 +126,14 @@ $curve: cubic-bezier(0.65, 0, 0.45, 1);
 
     .checkmark-check {
       color: $success !important;
+      stroke: $success !important;
     }
   }
 
   &.is-warning {
     .checkmark-circle {
       color: $warning !important;
+      stroke: $warning !important;
     }
 
     .checkmark {
@@ -128,12 +142,14 @@ $curve: cubic-bezier(0.65, 0, 0.45, 1);
 
     .checkmark-check {
       color: $warning !important;
+      stroke: $warning !important;
     }
   }
 
   &.is-danger {
     .checkmark-circle {
       color: $h-red !important;
+      stroke: $h-red !important;
     }
 
     .checkmark {
@@ -142,6 +158,7 @@ $curve: cubic-bezier(0.65, 0, 0.45, 1);
 
     .checkmark-check {
       color: $h-red !important;
+      stroke: $h-red !important;
     }
   }
 
