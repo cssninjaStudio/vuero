@@ -29,10 +29,7 @@ const toggleTabs = () => {
 </script>
 
 <template>
-  <div
-    class="list-widget list-widget-v2 tabbed-widget"
-    :class="[straight && 'is-straight']"
-  >
+  <div class="list-widget tabbed-widget" :class="[straight && 'is-straight']">
     <div class="widget-head">
       <h3 class="dark-inverted">{{ props.title }}</h3>
       <div class="tabbed-controls">

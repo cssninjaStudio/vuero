@@ -15,7 +15,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="list-widget list-widget-v1" :class="[straight && 'is-straight']">
+  <div class="list-widget" :class="[straight && 'is-straight']">
     <div class="widget-head">
       <h3 class="dark-inverted">{{ props.title }}</h3>
       <ListWidgetMainDropdown />
