@@ -14,6 +14,5 @@ export default (app: App) => {
   installRouter(app)
   installI18n(app)
   installApexCharts(app)
-  installApexCharts(app)
   installDirectives(app)
 }
