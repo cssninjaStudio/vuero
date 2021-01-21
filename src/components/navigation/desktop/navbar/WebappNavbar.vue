@@ -47,7 +47,7 @@ watch(
           />
         </RouterLink>
         <div class="separator"></div>
-        <!-- <ProjectsQuickDropdown /> -->
+        <ProjectsQuickDropdown />
         <h1 id="webapp-page-title" class="title is-5">Welcome</h1>
       </div>
       <div class="center">
@@ -132,7 +132,7 @@ watch(
         </div>
       </div>
       <div class="right">
-        <!-- <Toolbar /> -->
+        <Toolbar />
         <div
           ref="dropdownElement"
           :class="[isOpen && 'is-active']"
