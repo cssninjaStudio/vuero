@@ -10,11 +10,15 @@ const props = defineProps({
     type: Boolean,
     default: false,
   },
+  straight: {
+    type: Boolean,
+    default: false,
+  },
 })
 </script>
 
 <template>
-  <div class="widget avatar-list-widget">
+  <div class="widget avatar-list-widget" :class="[straight && 'is-straight']">
     <div class="field">
       <div class="control">
         <input type="text" class="input" placeholder="Search..." />

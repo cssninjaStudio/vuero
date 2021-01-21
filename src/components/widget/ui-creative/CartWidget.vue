@@ -6,11 +6,15 @@ const props = defineProps({
     type: Array,
     required: true,
   },
+  straight: {
+    type: Boolean,
+    default: false,
+  },
 })
 </script>
 
 <template>
-  <div class="cart-widget">
+  <div class="cart-widget" :class="[straight && 'is-straight']">
     <div class="widget-toolbar">
       <div class="left">
         <h3>Your Cart</h3>
