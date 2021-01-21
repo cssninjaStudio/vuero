@@ -468,7 +468,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'webapp-dashboards-widgets-ui' }"
+                    :to="{ name: 'webapp-dashboards-widgets-sample-ui' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -479,7 +479,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'webapp-dashboards-widgets-creative' }"
+                    :to="{ name: 'webapp-dashboards-widgets-sample-creative' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -490,7 +490,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'webapp-dashboards-widgets-list' }"
+                    :to="{ name: 'webapp-dashboards-widgets-sample-list' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -501,7 +501,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'webapp-dashboards-widgets-stats' }"
+                    :to="{ name: 'webapp-dashboards-widgets-sample-stats' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">

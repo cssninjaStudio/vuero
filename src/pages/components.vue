@@ -49,4 +49,11 @@ onMounted(() => {
   transform: translateY(-300px);
   opacity: 0;
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .translatey-enter-active,
+  .translatey-leave-active {
+    transition: none;
+  }
+}
 </style>

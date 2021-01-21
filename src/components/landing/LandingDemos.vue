@@ -4467,7 +4467,8 @@
                   <span>UI Widgets</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-dashboards-widgets-ui' }"
+                  <RouterLink
+                    :to="{ name: 'webapp-dashboards-widgets-sample-ui' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -4500,7 +4501,7 @@
                 </div>
                 <div class="demo-link">
                   <RouterLink
-                    :to="{ name: 'webapp-dashboards-widgets-creative' }"
+                    :to="{ name: 'webapp-dashboards-widgets-sample-creative' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -4532,7 +4533,8 @@
                   <span>List Widgets</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-dashboards-widgets-list' }"
+                  <RouterLink
+                    :to="{ name: 'webapp-dashboards-widgets-sample-list' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -4564,7 +4566,8 @@
                   <span>Stat Widgets</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-dashboards-widgets-stats' }"
+                  <RouterLink
+                    :to="{ name: 'webapp-dashboards-widgets-sample-stats' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>

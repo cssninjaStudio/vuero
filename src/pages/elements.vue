@@ -45,4 +45,11 @@ onMounted(() => {
 .fade-fast-leave-to {
   opacity: 0;
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-fast-enter-active,
+  .fade-fast-leave-active {
+    transition: none;
+  }
+}
 </style>

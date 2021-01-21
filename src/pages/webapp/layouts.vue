@@ -58,4 +58,11 @@ watch(
   transform: translateX(-300px);
   opacity: 0;
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .translatex-enter-active,
+  .translatex-leave-active {
+    transition: none;
+  }
+}
 </style>
