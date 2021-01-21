@@ -32,12 +32,12 @@ useHead({
               <RouterLink :to="{ name: 'index' }">
                 <img
                   class="top-logo light-image"
-                  src="/@images/logos/logo/logo.svg"
+                  src="/images/logos/logo/logo.svg"
                   alt=""
                 />
                 <img
                   class="top-logo dark-image"
-                  src="/@images/logos/logo/logo-light.svg"
+                  src="/images/logos/logo/logo-light.svg"
                   alt=""
                 />
               </RouterLink>
@@ -147,12 +147,12 @@ useHead({
               <div class="column is-10 is-offset-1">
                 <img
                   class="light-image has-light-shadow has-light-border"
-                  src="/@images/illustrations/apps/huro-banking-light.png"
+                  src="/images/illustrations/apps/huro-banking-light.png"
                   alt=""
                 />
                 <img
                   class="dark-image has-light-shadow"
-                  src="/@images/illustrations/apps/huro-banking-dark.png"
+                  src="/images/illustrations/apps/huro-banking-dark.png"
                   alt=""
                 />
               </div>

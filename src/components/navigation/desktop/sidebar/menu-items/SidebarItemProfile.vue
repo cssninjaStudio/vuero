@@ -22,7 +22,7 @@ const otherLayoutLink = computed(() => {
       class="dropdown profile-dropdown dropdown-trigger is-spaced is-up"
     >
       <img
-        src="/@images/avatars/photos/8.jpg"
+        src="/images/avatars/photos/8.jpg"
         alt=""
         @error="$event.target.src = 'https://via.placeholder.com/150x150'"
         @click="open"
@@ -35,7 +35,7 @@ const otherLayoutLink = computed(() => {
             <div class="h-avatar is-large">
               <img
                 class="avatar"
-                src="/@images/avatars/photos/8.jpg"
+                src="/images/avatars/photos/8.jpg"
                 alt=""
                 @error="
                   $event.target.src = 'https://via.placeholder.com/150x150'

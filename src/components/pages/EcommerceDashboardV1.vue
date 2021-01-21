@@ -6,7 +6,7 @@
       <div class="h-avatar is-large">
         <img
           class="avatar"
-          src="/@images/avatars/photos/8.jpg"
+          src="/images/avatars/photos/8.jpg"
           alt=""
           @error="$event.target.src = 'https://via.placeholder.com/150x150'"
         />
@@ -328,7 +328,7 @@
               <div class="h-avatar is-medium">
                 <img
                   class="avatar is-squared"
-                  src="/@images/avatars/photos/8.jpg"
+                  src="/images/avatars/photos/8.jpg"
                   alt=""
                   @error="
                     $event.target.src = 'https://via.placeholder.com/150x150'
@@ -369,7 +369,7 @@
               <div class="h-avatar is-medium">
                 <img
                   class="avatar is-squared"
-                  src="/@images/avatars/photos/22.jpg"
+                  src="/images/avatars/photos/22.jpg"
                   alt=""
                   @error="
                     $event.target.src = 'https://via.placeholder.com/150x150'
@@ -410,7 +410,7 @@
               <div class="h-avatar is-medium">
                 <img
                   class="avatar is-squared"
-                  src="/@images/avatars/photos/25.jpg"
+                  src="/images/avatars/photos/25.jpg"
                   alt=""
                   @error="
                     $event.target.src = 'https://via.placeholder.com/150x150'
@@ -451,7 +451,7 @@
               <div class="h-avatar is-medium">
                 <img
                   class="avatar is-squared"
-                  src="/@images/avatars/photos/12.jpg"
+                  src="/images/avatars/photos/12.jpg"
                   alt=""
                   @error="
                     $event.target.src = 'https://via.placeholder.com/150x150'
@@ -492,7 +492,7 @@
               <div class="h-avatar is-medium">
                 <img
                   class="avatar is-squared"
-                  src="/@images/avatars/photos/13.jpg"
+                  src="/images/avatars/photos/13.jpg"
                   alt=""
                   @error="
                     $event.target.src = 'https://via.placeholder.com/150x150'

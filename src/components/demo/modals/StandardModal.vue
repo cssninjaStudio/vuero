@@ -36,7 +36,7 @@ const emit = defineEmit(['close'])
                 <div class="h-avatar is-xl">
                   <img
                     class="avatar"
-                    src="/@images/avatars/photos/22.jpg"
+                    src="/images/avatars/photos/22.jpg"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/150x150'
@@ -44,7 +44,7 @@ const emit = defineEmit(['close'])
                   />
                   <img
                     class="badge"
-                    src="/@images/icons/flags/united-states-of-america.svg"
+                    src="/images/icons/flags/united-states-of-america.svg"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/150x150'

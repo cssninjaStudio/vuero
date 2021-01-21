@@ -92,7 +92,7 @@ import { popularityGaugeOptions } from '/@src/composition/state/charts/apexchart
             <div class="h-avatar">
               <img
                 class="avatar"
-                src="/@images/icons/cryptocurrencies/btc.svg"
+                src="/images/icons/cryptocurrencies/btc.svg"
                 alt=""
                 @error="
                   $event.target.src = 'https://via.placeholder.com/150x150'
@@ -134,7 +134,7 @@ import { popularityGaugeOptions } from '/@src/composition/state/charts/apexchart
             <div class="h-avatar">
               <img
                 class="avatar"
-                src="/@images/avatars/photos/21.jpg"
+                src="/images/avatars/photos/21.jpg"
                 alt=""
                 data-user-popover="19"
                 @error="
@@ -150,7 +150,7 @@ import { popularityGaugeOptions } from '/@src/composition/state/charts/apexchart
             <div class="h-avatar">
               <img
                 class="avatar"
-                src="/@images/avatars/photos/7.jpg"
+                src="/images/avatars/photos/7.jpg"
                 alt=""
                 data-user-popover="0"
                 @error="
@@ -166,7 +166,7 @@ import { popularityGaugeOptions } from '/@src/composition/state/charts/apexchart
             <div class="h-avatar">
               <img
                 class="avatar"
-                src="/@images/avatars/photos/31.jpg"
+                src="/images/avatars/photos/31.jpg"
                 alt=""
                 data-user-popover="27"
                 @error="
@@ -192,7 +192,7 @@ import { popularityGaugeOptions } from '/@src/composition/state/charts/apexchart
             <div class="h-avatar is-small">
               <img
                 class="avatar"
-                src="/@images/icons/cryptocurrencies/xmr.svg"
+                src="/images/icons/cryptocurrencies/xmr.svg"
                 alt=""
                 @error="
                   $event.target.src = 'https://via.placeholder.com/150x150'
@@ -216,7 +216,7 @@ import { popularityGaugeOptions } from '/@src/composition/state/charts/apexchart
             <div class="h-avatar is-small">
               <img
                 class="avatar"
-                src="/@images/icons/cryptocurrencies/ltc.svg"
+                src="/images/icons/cryptocurrencies/ltc.svg"
                 alt=""
                 @error="
                   $event.target.src = 'https://via.placeholder.com/150x150'
@@ -240,7 +240,7 @@ import { popularityGaugeOptions } from '/@src/composition/state/charts/apexchart
             <div class="h-avatar is-small">
               <img
                 class="avatar"
-                src="/@images/icons/cryptocurrencies/link.svg"
+                src="/images/icons/cryptocurrencies/link.svg"
                 alt=""
                 @error="
                   $event.target.src = 'https://via.placeholder.com/150x150'
@@ -264,7 +264,7 @@ import { popularityGaugeOptions } from '/@src/composition/state/charts/apexchart
             <div class="h-avatar is-small">
               <img
                 class="avatar"
-                src="/@images/icons/cryptocurrencies/bnb.svg"
+                src="/images/icons/cryptocurrencies/bnb.svg"
                 alt=""
                 @error="
                   $event.target.src = 'https://via.placeholder.com/150x150'

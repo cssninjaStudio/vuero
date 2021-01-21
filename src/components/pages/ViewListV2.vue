@@ -18,12 +18,12 @@ const props = defineProps({
       <div class="placeholder-content">
         <img
           class="light-image"
-          src="/@images/illustrations/placeholders/search-2.svg"
+          src="/images/illustrations/placeholders/search-2.svg"
           alt=""
         />
         <img
           class="dark-image"
-          src="/@images/illustrations/placeholders/search-2-dark.svg"
+          src="/images/illustrations/placeholders/search-2-dark.svg"
           alt=""
         />
         <h3>We couldn't find any matching results.</h3>
@@ -45,7 +45,7 @@ const props = defineProps({
         <!--List Item-->
         <div class="list-view-item">
           <div class="list-view-item-inner">
-            <img src="/@images/photo/demo/1.jpg" alt="" />
+            <img src="/images/photo/demo/1.jpg" alt="" />
             <div class="meta-left">
               <h3>
                 <span data-filter-match>1396 Redmond Street</span>
@@ -107,7 +107,7 @@ const props = defineProps({
         <!--List Item-->
         <div class="list-view-item">
           <div class="list-view-item-inner">
-            <img src="/@images/photo/demo/2.jpg" alt="" />
+            <img src="/images/photo/demo/2.jpg" alt="" />
             <div class="meta-left">
               <h3>
                 <span data-filter-match>24 Mulberry Street</span>
@@ -160,7 +160,7 @@ const props = defineProps({
         <!--List Item-->
         <div class="list-view-item">
           <div class="list-view-item-inner">
-            <img src="/@images/photo/demo/3.jpg" alt="" />
+            <img src="/images/photo/demo/3.jpg" alt="" />
             <div class="meta-left">
               <h3>
                 <span data-filter-match>62 John Walberg Ave</span>
@@ -222,7 +222,7 @@ const props = defineProps({
         <!--List Item-->
         <div class="list-view-item">
           <div class="list-view-item-inner">
-            <img src="/@images/photo/demo/4.jpg" alt="" />
+            <img src="/images/photo/demo/4.jpg" alt="" />
             <div class="meta-left">
               <h3>
                 <span data-filter-match>48 Manhattan Ave</span>
@@ -283,7 +283,7 @@ const props = defineProps({
         <!--List Item-->
         <div class="list-view-item">
           <div class="list-view-item-inner">
-            <img src="/@images/photo/demo/5.jpg" alt="" />
+            <img src="/images/photo/demo/5.jpg" alt="" />
             <div class="meta-left">
               <h3>
                 <span data-filter-match>12 Charity Street</span>
@@ -336,7 +336,7 @@ const props = defineProps({
         <!--List Item-->
         <div class="list-view-item">
           <div class="list-view-item-inner">
-            <img src="/@images/photo/demo/6.jpg" alt="" />
+            <img src="/images/photo/demo/6.jpg" alt="" />
             <div class="meta-left">
               <h3>
                 <span data-filter-match>23 Bakery Street</span>
@@ -397,7 +397,7 @@ const props = defineProps({
         <!--List Item-->
         <div class="list-view-item">
           <div class="list-view-item-inner">
-            <img src="/@images/photo/demo/7.jpg" alt="" />
+            <img src="/images/photo/demo/7.jpg" alt="" />
             <div class="meta-left">
               <h3>
                 <span data-filter-match>1028 Pasadena Ave</span>
@@ -458,7 +458,7 @@ const props = defineProps({
         <!--List Item-->
         <div class="list-view-item">
           <div class="list-view-item-inner">
-            <img src="/@images/photo/demo/8.jpg" alt="" />
+            <img src="/images/photo/demo/8.jpg" alt="" />
             <div class="meta-left">
               <h3>
                 <span data-filter-match>54 Church Street</span>
@@ -515,7 +515,7 @@ const props = defineProps({
         <!--List Item-->
         <div class="list-view-item">
           <div class="list-view-item-inner">
-            <img src="/@images/photo/demo/9.jpg" alt="" />
+            <img src="/images/photo/demo/9.jpg" alt="" />
             <div class="meta-left">
               <h3>
                 <span data-filter-match>112 Old City District</span>
@@ -573,7 +573,7 @@ const props = defineProps({
         <!--List Item-->
         <div class="list-view-item">
           <div class="list-view-item-inner">
-            <img src="/@images/photo/demo/10.jpg" alt="" />
+            <img src="/images/photo/demo/10.jpg" alt="" />
             <div class="meta-left">
               <h3>
                 <span data-filter-match>51 St Leonard Street</span>
@@ -682,12 +682,12 @@ const props = defineProps({
           <div class="placeholder-content">
             <img
               class="light-image"
-              src="/@images/illustrations/placeholders/having-coffee.svg"
+              src="/images/illustrations/placeholders/having-coffee.svg"
               alt=""
             />
             <img
               class="dark-image"
-              src="/@images/illustrations/placeholders/having-coffee-dark.svg"
+              src="/images/illustrations/placeholders/having-coffee-dark.svg"
               alt=""
             />
             <h3>There are no inactive properties.</h3>

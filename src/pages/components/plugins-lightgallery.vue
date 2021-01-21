@@ -157,10 +157,10 @@ lightGallery(document.getElementById(&#x27;lightgallery&#x27;));
             <div id="lightgallery" class="light-gallery-wrap">
               <a
                 href="https://via.placeholder.com/1600x900"
-                data-demo-href="/@images/photo/demo/apps/1.jpg"
+                data-demo-href="/images/photo/demo/apps/1.jpg"
               >
                 <img
-                  src="/@images/photo/demo/apps/1.jpg"
+                  src="/images/photo/demo/apps/1.jpg"
                   alt=""
                   @error="
                     $event.target.src = 'https://via.placeholder.com/1600x900'
@@ -169,10 +169,10 @@ lightGallery(document.getElementById(&#x27;lightgallery&#x27;));
               </a>
               <a
                 href="https://via.placeholder.com/1600x900"
-                data-demo-href="/@images/photo/demo/apps/2.png"
+                data-demo-href="/images/photo/demo/apps/2.png"
               >
                 <img
-                  src="/@images/photo/demo/apps/2.png"
+                  src="/images/photo/demo/apps/2.png"
                   alt=""
                   @error="
                     $event.target.src = 'https://via.placeholder.com/1600x900'
@@ -181,10 +181,10 @@ lightGallery(document.getElementById(&#x27;lightgallery&#x27;));
               </a>
               <a
                 href="https://via.placeholder.com/1600x900"
-                data-demo-href="/@images/photo/demo/apps/3.png"
+                data-demo-href="/images/photo/demo/apps/3.png"
               >
                 <img
-                  src="/@images/photo/demo/apps/3.png"
+                  src="/images/photo/demo/apps/3.png"
                   alt=""
                   @error="
                     $event.target.src = 'https://via.placeholder.com/1600x900'
@@ -193,10 +193,10 @@ lightGallery(document.getElementById(&#x27;lightgallery&#x27;));
               </a>
               <a
                 href="https://via.placeholder.com/1600x900"
-                data-demo-href="/@images/photo/demo/apps/4.png"
+                data-demo-href="/images/photo/demo/apps/4.png"
               >
                 <img
-                  src="/@images/photo/demo/apps/4.png"
+                  src="/images/photo/demo/apps/4.png"
                   alt=""
                   @error="
                     $event.target.src = 'https://via.placeholder.com/1600x900'
@@ -205,10 +205,10 @@ lightGallery(document.getElementById(&#x27;lightgallery&#x27;));
               </a>
               <a
                 href="https://via.placeholder.com/1600x900"
-                data-demo-href="/@images/photo/demo/apps/5.png"
+                data-demo-href="/images/photo/demo/apps/5.png"
               >
                 <img
-                  src="/@images/photo/demo/apps/5.png"
+                  src="/images/photo/demo/apps/5.png"
                   alt=""
                   @error="
                     $event.target.src = 'https://via.placeholder.com/1600x900'
@@ -217,10 +217,10 @@ lightGallery(document.getElementById(&#x27;lightgallery&#x27;));
               </a>
               <a
                 href="https://via.placeholder.com/1600x900"
-                data-demo-href="/@images/photo/demo/apps/6.png"
+                data-demo-href="/images/photo/demo/apps/6.png"
               >
                 <img
-                  src="/@images/photo/demo/apps/6.png"
+                  src="/images/photo/demo/apps/6.png"
                   alt=""
                   @error="
                     $event.target.src = 'https://via.placeholder.com/1600x900'
@@ -229,10 +229,10 @@ lightGallery(document.getElementById(&#x27;lightgallery&#x27;));
               </a>
               <a
                 href="https://via.placeholder.com/1600x900"
-                data-demo-href="/@images/photo/demo/apps/7.png"
+                data-demo-href="/images/photo/demo/apps/7.png"
               >
                 <img
-                  src="/@images/photo/demo/apps/7.png"
+                  src="/images/photo/demo/apps/7.png"
                   alt=""
                   @error="
                     $event.target.src = 'https://via.placeholder.com/1600x900'
@@ -241,10 +241,10 @@ lightGallery(document.getElementById(&#x27;lightgallery&#x27;));
               </a>
               <a
                 href="https://via.placeholder.com/1600x900"
-                data-demo-href="/@images/photo/demo/apps/8.png"
+                data-demo-href="/images/photo/demo/apps/8.png"
               >
                 <img
-                  src="/@images/photo/demo/apps/8.png"
+                  src="/images/photo/demo/apps/8.png"
                   alt=""
                   @error="
                     $event.target.src = 'https://via.placeholder.com/1600x900'
@@ -253,10 +253,10 @@ lightGallery(document.getElementById(&#x27;lightgallery&#x27;));
               </a>
               <a
                 href="https://via.placeholder.com/1600x900"
-                data-demo-href="/@images/photo/demo/apps/9.png"
+                data-demo-href="/images/photo/demo/apps/9.png"
               >
                 <img
-                  src="/@images/photo/demo/apps/9.png"
+                  src="/images/photo/demo/apps/9.png"
                   alt=""
                   @error="
                     $event.target.src = 'https://via.placeholder.com/1600x900'

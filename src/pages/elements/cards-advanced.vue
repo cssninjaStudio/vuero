@@ -110,7 +110,7 @@ useHead({
                             <div class="h-avatar">
                               <img
                                 class="avatar"
-                                src="/@images/avatars/photos/19.jpg"
+                                src="/images/avatars/photos/19.jpg"
                                 alt=""
                                 data-user-popover="17"
                                 @error="
@@ -120,7 +120,7 @@ useHead({
                               />
                               <img
                                 class="badge"
-                                src="/@images/icons/flags/germany.svg"
+                                src="/images/icons/flags/germany.svg"
                                 alt=""
                                 @error="
                                   $event.target.src =
@@ -139,7 +139,7 @@ useHead({
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="/@images/avatars/photos/12.jpg"
+                                src="/images/avatars/photos/12.jpg"
                                 alt=""
                                 data-user-popover="2"
                                 data-target="webuiPopover19"
@@ -152,7 +152,7 @@ useHead({
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="/@images/avatars/photos/22.jpg"
+                                src="/images/avatars/photos/22.jpg"
                                 alt=""
                                 data-user-popover="5"
                                 @error="
@@ -164,7 +164,7 @@ useHead({
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="/@images/avatars/photos/40.jpg"
+                                src="/images/avatars/photos/40.jpg"
                                 alt=""
                                 data-user-popover="11"
                                 @error="
@@ -241,7 +241,7 @@ useHead({
                             <div class="h-avatar">
                               <img
                                 class="avatar"
-                                src="/@images/avatars/photos/19.jpg"
+                                src="/images/avatars/photos/19.jpg"
                                 alt=""
                                 data-user-popover="17"
                                 @error="
@@ -251,7 +251,7 @@ useHead({
                               />
                               <img
                                 class="badge"
-                                src="/@images/icons/flags/germany.svg"
+                                src="/images/icons/flags/germany.svg"
                                 alt=""
                                 @error="
                                   $event.target.src =
@@ -270,7 +270,7 @@ useHead({
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="/@images/avatars/photos/12.jpg"
+                                src="/images/avatars/photos/12.jpg"
                                 alt=""
                                 data-user-popover="2"
                                 data-target="webuiPopover19"
@@ -283,7 +283,7 @@ useHead({
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="/@images/avatars/photos/22.jpg"
+                                src="/images/avatars/photos/22.jpg"
                                 alt=""
                                 data-user-popover="5"
                                 @error="
@@ -295,7 +295,7 @@ useHead({
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="/@images/avatars/photos/40.jpg"
+                                src="/images/avatars/photos/40.jpg"
                                 alt=""
                                 data-user-popover="11"
                                 @error="
@@ -342,7 +342,7 @@ useHead({
                             <div class="h-avatar">
                               <img
                                 class="avatar"
-                                src="/@images/avatars/photos/19.jpg"
+                                src="/images/avatars/photos/19.jpg"
                                 alt=""
                                 data-user-popover="17"
                                 @error="
@@ -352,7 +352,7 @@ useHead({
                               />
                               <img
                                 class="badge"
-                                src="/@images/icons/flags/germany.svg"
+                                src="/images/icons/flags/germany.svg"
                                 alt=""
                                 @error="
                                   $event.target.src =

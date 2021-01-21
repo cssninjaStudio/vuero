@@ -298,7 +298,7 @@ const activeTab = ref<'dashboards' | 'templates'>('dashboards')
                   </li>
                   <li>
                     <RouterLink
-                      :to="{ name: 'webapp-dashboards-charts-billboardjs' }"
+                      :to="{ name: 'webapp-dashboards-charts-billboardsjs' }"
                     >
                       <i class="lnil lnil-bar-chart"></i>
                       <span>Billboard JS</span>

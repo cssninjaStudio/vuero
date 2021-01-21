@@ -10,7 +10,7 @@
       <div class="chat-area-group">
         <img
           class="chat-area-profile"
-          src="/@images/avatars/photos/13.jpg"
+          src="/images/avatars/photos/13.jpg"
           alt=""
           data-user-popover="6"
           @error="$event.target.src = 'https://via.placeholder.com/150x150'"
@@ -22,7 +22,7 @@
         <div class="chat-msg-profile">
           <img
             class="chat-msg-img"
-            src="/@images/avatars/photos/13.jpg"
+            src="/images/avatars/photos/13.jpg"
             alt=""
             data-user-popover="6"
             @error="$event.target.src = 'https://via.placeholder.com/150x150'"
@@ -33,21 +33,21 @@
           <div class="chat-msg-text">Here are some screenshots.</div>
           <div class="chat-msg-text">
             <img
-              src="/@images/photo/demo/apps/15.png"
+              src="/images/photo/demo/apps/15.png"
               alt=""
               @error="$event.target.src = 'https://via.placeholder.com/400x300'"
             />
           </div>
           <div class="chat-msg-text">
             <img
-              src="/@images/photo/demo/apps/9.png"
+              src="/images/photo/demo/apps/9.png"
               alt=""
               @error="$event.target.src = 'https://via.placeholder.com/400x300'"
             />
           </div>
           <div class="chat-msg-text">
             <img
-              src="/@images/photo/demo/apps/7.png"
+              src="/images/photo/demo/apps/7.png"
               alt=""
               @error="$event.target.src = 'https://via.placeholder.com/400x300'"
             />
@@ -59,7 +59,7 @@
         <div class="chat-msg-profile">
           <img
             class="chat-msg-img"
-            src="/@images/avatars/photos/8.jpg"
+            src="/images/avatars/photos/8.jpg"
             alt=""
             data-user-popover="3"
             @error="$event.target.src = 'https://via.placeholder.com/150x150'"

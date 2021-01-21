@@ -9,7 +9,7 @@
             <div class="illustration-header-2">
               <div class="header-image">
                 <img
-                  src="/@images/illustrations/dashboards/lifestyle/reading.svg"
+                  src="/images/illustrations/dashboards/lifestyle/reading.svg"
                   alt=""
                 />
               </div>
@@ -63,7 +63,7 @@
                     <div class="h-avatar">
                       <img
                         class="avatar is-squared"
-                        src="/@images/avatars/photos/7.jpg"
+                        src="/images/avatars/photos/7.jpg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -86,7 +86,7 @@
                     <div class="h-avatar">
                       <img
                         class="avatar is-squared"
-                        src="/@images/avatars/photos/21.jpg"
+                        src="/images/avatars/photos/21.jpg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -109,7 +109,7 @@
                     <div class="h-avatar">
                       <img
                         class="avatar is-squared"
-                        src="/@images/avatars/photos/32.jpg"
+                        src="/images/avatars/photos/32.jpg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -132,7 +132,7 @@
                     <div class="h-avatar">
                       <img
                         class="avatar is-squared"
-                        src="/@images/avatars/photos/38.jpg"
+                        src="/images/avatars/photos/38.jpg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -232,7 +232,7 @@
               <a class="articles-feed-item">
                 <div class="featured-image">
                   <img
-                    src="/@images/photo/demo/38.jpg"
+                    src="/images/photo/demo/38.jpg"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/800x600'
@@ -247,7 +247,7 @@
                     <div class="h-avatar is-small">
                       <img
                         class="avatar is-squared"
-                        src="/@images/avatars/photos/7.jpg"
+                        src="/images/avatars/photos/7.jpg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -266,7 +266,7 @@
               <a class="articles-feed-item">
                 <div class="featured-image">
                   <img
-                    src="/@images/photo/demo/37.jpg"
+                    src="/images/photo/demo/37.jpg"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/800x600'
@@ -281,7 +281,7 @@
                     <div class="h-avatar is-small">
                       <img
                         class="avatar is-squared"
-                        src="/@images/avatars/photos/5.jpg"
+                        src="/images/avatars/photos/5.jpg"
                         alt=""
                         @error="
                           $event.target.src =

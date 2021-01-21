@@ -90,12 +90,12 @@ useHead({
                 <li class="no-messages is-hidden">
                   <img
                     class="light-image"
-                    src="/@images/illustrations/placeholders/search-4.svg"
+                    src="/images/illustrations/placeholders/search-4.svg"
                     alt=""
                   />
                   <img
                     class="dark-image"
-                    src="/@images/illustrations/placeholders/search-4-dark.svg"
+                    src="/images/illustrations/placeholders/search-4-dark.svg"
                     alt=""
                   />
                   <div class="text">
@@ -118,7 +118,7 @@ useHead({
                   <div class="user-pic">
                     <img
                       id="user-details-image"
-                      src="/@images/avatars/photos/10.jpg"
+                      src="/images/avatars/photos/10.jpg"
                       alt=""
                       @error="
                         $event.target.src =
@@ -128,7 +128,7 @@ useHead({
                     <img
                       id="user-details-badge"
                       class="is-badge"
-                      src="/@images/icons/flags/united-states-of-america.svg"
+                      src="/images/icons/flags/united-states-of-america.svg"
                       alt=""
                       @error="
                         $event.target.src =
@@ -183,7 +183,7 @@ useHead({
                     </div>
                     <div class="detail-photo-grid">
                       <img
-                        src="/@images/photo/demo/demo-apps/1.jpg"
+                        src="/images/photo/demo/demo-apps/1.jpg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -191,7 +191,7 @@ useHead({
                         "
                       />
                       <img
-                        src="/@images/photo/demo/demo-apps/2.jpg"
+                        src="/images/photo/demo/demo-apps/2.jpg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -199,7 +199,7 @@ useHead({
                         "
                       />
                       <img
-                        src="/@images/photo/demo/demo-apps/3.jpg"
+                        src="/images/photo/demo/demo-apps/3.jpg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -207,7 +207,7 @@ useHead({
                         "
                       />
                       <img
-                        src="/@images/photo/demo/demo-apps/4.jpg"
+                        src="/images/photo/demo/demo-apps/4.jpg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -215,7 +215,7 @@ useHead({
                         "
                       />
                       <img
-                        src="/@images/photo/demo/demo-apps/5.jpg"
+                        src="/images/photo/demo/demo-apps/5.jpg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -223,7 +223,7 @@ useHead({
                         "
                       />
                       <img
-                        src="/@images/photo/demo/demo-apps/6.jpg"
+                        src="/images/photo/demo/demo-apps/6.jpg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -231,7 +231,7 @@ useHead({
                         "
                       />
                       <img
-                        src="/@images/photo/demo/demo-apps/7.jpg"
+                        src="/images/photo/demo/demo-apps/7.jpg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -239,7 +239,7 @@ useHead({
                         "
                       />
                       <img
-                        src="/@images/photo/demo/demo-apps/8.jpg"
+                        src="/images/photo/demo/demo-apps/8.jpg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -247,7 +247,7 @@ useHead({
                         "
                       />
                       <img
-                        src="/@images/photo/demo/demo-apps/9.jpg"
+                        src="/images/photo/demo/demo-apps/9.jpg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -255,7 +255,7 @@ useHead({
                         "
                       />
                       <img
-                        src="/@images/photo/demo/demo-apps/10.jpg"
+                        src="/images/photo/demo/demo-apps/10.jpg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -263,7 +263,7 @@ useHead({
                         "
                       />
                       <img
-                        src="/@images/photo/demo/demo-apps/11.jpg"
+                        src="/images/photo/demo/demo-apps/11.jpg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -271,7 +271,7 @@ useHead({
                         "
                       />
                       <img
-                        src="/@images/photo/demo/demo-apps/12.jpg"
+                        src="/images/photo/demo/demo-apps/12.jpg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -361,7 +361,7 @@ useHead({
               </div>
 
               <div class="typing-indicator">
-                <img src="/@images/icons/typing.gif" alt="" />
+                <img src="/images/icons/typing.gif" alt="" />
               </div>
             </div>
           </div>
@@ -371,7 +371,7 @@ useHead({
           >
             <div class="caption">
               <img
-                src="/@images/illustrations/placeholders/having-coffee.svg"
+                src="/images/illustrations/placeholders/having-coffee.svg"
                 alt=""
                 @error="
                   $event.target.src = 'https://via.placeholder.com/150x150'

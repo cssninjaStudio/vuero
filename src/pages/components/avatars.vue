@@ -112,7 +112,7 @@ useHead({
                     <div class="h-avatar is-small">
                       <img
                         class="avatar is-squared"
-                        src="/@images/avatars/photos/7.jpg"
+                        src="/images/avatars/photos/7.jpg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -123,7 +123,7 @@ useHead({
                     <div class="h-avatar">
                       <img
                         class="avatar is-squared"
-                        src="/@images/avatars/photos/8.jpg"
+                        src="/images/avatars/photos/8.jpg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -134,7 +134,7 @@ useHead({
                     <div class="h-avatar is-medium">
                       <img
                         class="avatar is-squared"
-                        src="/@images/avatars/photos/11.jpg"
+                        src="/images/avatars/photos/11.jpg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -145,7 +145,7 @@ useHead({
                     <div class="h-avatar is-large">
                       <img
                         class="avatar is-squared"
-                        src="/@images/avatars/photos/21.jpg"
+                        src="/images/avatars/photos/21.jpg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -156,7 +156,7 @@ useHead({
                     <div class="h-avatar is-big">
                       <img
                         class="avatar is-squared"
-                        src="/@images/avatars/photos/13.jpg"
+                        src="/images/avatars/photos/13.jpg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -167,7 +167,7 @@ useHead({
                     <div class="h-avatar is-xl">
                       <img
                         class="avatar is-squared"
-                        src="/@images/avatars/photos/5.jpg"
+                        src="/images/avatars/photos/5.jpg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -221,7 +221,7 @@ useHead({
                     <div class="h-avatar is-small has-dot">
                       <img
                         class="avatar"
-                        src="/@images/avatars/photos/7.jpg"
+                        src="/images/avatars/photos/7.jpg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -232,7 +232,7 @@ useHead({
                     <div class="h-avatar has-dot">
                       <img
                         class="avatar"
-                        src="/@images/avatars/photos/8.jpg"
+                        src="/images/avatars/photos/8.jpg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -243,7 +243,7 @@ useHead({
                     <div class="h-avatar is-medium has-dot">
                       <img
                         class="avatar"
-                        src="/@images/avatars/photos/11.jpg"
+                        src="/images/avatars/photos/11.jpg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -254,7 +254,7 @@ useHead({
                     <div class="h-avatar is-large has-dot">
                       <img
                         class="avatar"
-                        src="/@images/avatars/photos/21.jpg"
+                        src="/images/avatars/photos/21.jpg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -265,7 +265,7 @@ useHead({
                     <div class="h-avatar is-big has-dot">
                       <img
                         class="avatar"
-                        src="/@images/avatars/photos/13.jpg"
+                        src="/images/avatars/photos/13.jpg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -276,7 +276,7 @@ useHead({
                     <div class="h-avatar is-xl has-dot">
                       <img
                         class="avatar"
-                        src="/@images/avatars/photos/5.jpg"
+                        src="/images/avatars/photos/5.jpg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -331,7 +331,7 @@ useHead({
                     <div class="h-avatar is-small has-dot has-dot-squared">
                       <img
                         class="avatar is-squared"
-                        src="/@images/avatars/photos/7.jpg"
+                        src="/images/avatars/photos/7.jpg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -342,7 +342,7 @@ useHead({
                     <div class="h-avatar has-dot has-dot-squared">
                       <img
                         class="avatar is-squared"
-                        src="/@images/avatars/photos/8.jpg"
+                        src="/images/avatars/photos/8.jpg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -353,7 +353,7 @@ useHead({
                     <div class="h-avatar is-medium has-dot has-dot-squared">
                       <img
                         class="avatar is-squared"
-                        src="/@images/avatars/photos/11.jpg"
+                        src="/images/avatars/photos/11.jpg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -364,7 +364,7 @@ useHead({
                     <div class="h-avatar is-large has-dot has-dot-squared">
                       <img
                         class="avatar is-squared"
-                        src="/@images/avatars/photos/21.jpg"
+                        src="/images/avatars/photos/21.jpg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -375,7 +375,7 @@ useHead({
                     <div class="h-avatar is-big has-dot has-dot-squared">
                       <img
                         class="avatar is-squared"
-                        src="/@images/avatars/photos/13.jpg"
+                        src="/images/avatars/photos/13.jpg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -386,7 +386,7 @@ useHead({
                     <div class="h-avatar is-xl has-dot has-dot-squared">
                       <img
                         class="avatar is-squared"
-                        src="/@images/avatars/photos/5.jpg"
+                        src="/images/avatars/photos/5.jpg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -440,7 +440,7 @@ useHead({
                     <div class="h-avatar is-medium has-dot">
                       <img
                         class="avatar"
-                        src="/@images/avatars/photos/7.jpg"
+                        src="/images/avatars/photos/7.jpg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -451,7 +451,7 @@ useHead({
                     <div class="h-avatar is-medium has-dot dot-primary">
                       <img
                         class="avatar"
-                        src="/@images/avatars/photos/8.jpg"
+                        src="/images/avatars/photos/8.jpg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -462,7 +462,7 @@ useHead({
                     <div class="h-avatar is-medium has-dot dot-info">
                       <img
                         class="avatar"
-                        src="/@images/avatars/photos/11.jpg"
+                        src="/images/avatars/photos/11.jpg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -473,7 +473,7 @@ useHead({
                     <div class="h-avatar is-medium has-dot dot-warning">
                       <img
                         class="avatar"
-                        src="/@images/avatars/photos/21.jpg"
+                        src="/images/avatars/photos/21.jpg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -484,7 +484,7 @@ useHead({
                     <div class="h-avatar is-medium has-dot dot-danger">
                       <img
                         class="avatar"
-                        src="/@images/avatars/photos/13.jpg"
+                        src="/images/avatars/photos/13.jpg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -495,7 +495,7 @@ useHead({
                     <div class="h-avatar is-medium has-dot dot-grey">
                       <img
                         class="avatar"
-                        src="/@images/avatars/photos/5.jpg"
+                        src="/images/avatars/photos/5.jpg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -548,7 +548,7 @@ useHead({
                     <div class="h-avatar is-small">
                       <img
                         class="avatar"
-                        src="/@images/avatars/photos/7.jpg"
+                        src="/images/avatars/photos/7.jpg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -557,7 +557,7 @@ useHead({
                       />
                       <img
                         class="badge"
-                        src="/@images/icons/flags/united-states-of-america.svg"
+                        src="/images/icons/flags/united-states-of-america.svg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -568,7 +568,7 @@ useHead({
                     <div class="h-avatar">
                       <img
                         class="avatar"
-                        src="/@images/avatars/photos/8.jpg"
+                        src="/images/avatars/photos/8.jpg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -577,7 +577,7 @@ useHead({
                       />
                       <img
                         class="badge"
-                        src="/@images/icons/flags/united-states-of-america.svg"
+                        src="/images/icons/flags/united-states-of-america.svg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -588,7 +588,7 @@ useHead({
                     <div class="h-avatar is-medium">
                       <img
                         class="avatar"
-                        src="/@images/avatars/photos/11.jpg"
+                        src="/images/avatars/photos/11.jpg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -597,7 +597,7 @@ useHead({
                       />
                       <img
                         class="badge"
-                        src="/@images/icons/flags/united-states-of-america.svg"
+                        src="/images/icons/flags/united-states-of-america.svg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -608,7 +608,7 @@ useHead({
                     <div class="h-avatar is-large">
                       <img
                         class="avatar"
-                        src="/@images/avatars/photos/21.jpg"
+                        src="/images/avatars/photos/21.jpg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -617,7 +617,7 @@ useHead({
                       />
                       <img
                         class="badge"
-                        src="/@images/icons/flags/united-states-of-america.svg"
+                        src="/images/icons/flags/united-states-of-america.svg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -628,7 +628,7 @@ useHead({
                     <div class="h-avatar is-big">
                       <img
                         class="avatar"
-                        src="/@images/avatars/photos/13.jpg"
+                        src="/images/avatars/photos/13.jpg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -637,7 +637,7 @@ useHead({
                       />
                       <img
                         class="badge"
-                        src="/@images/icons/flags/united-states-of-america.svg"
+                        src="/images/icons/flags/united-states-of-america.svg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -648,7 +648,7 @@ useHead({
                     <div class="h-avatar is-xl">
                       <img
                         class="avatar"
-                        src="/@images/avatars/photos/5.jpg"
+                        src="/images/avatars/photos/5.jpg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -657,7 +657,7 @@ useHead({
                       />
                       <img
                         class="badge"
-                        src="/@images/icons/flags/united-states-of-america.svg"
+                        src="/images/icons/flags/united-states-of-america.svg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -887,7 +887,7 @@ useHead({
                   </span>
                   <img
                     class="badge"
-                    src="/@images/icons/flags/united-states-of-america.svg"
+                    src="/images/icons/flags/united-states-of-america.svg"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/150x150'
@@ -900,7 +900,7 @@ useHead({
                   </span>
                   <img
                     class="badge"
-                    src="/@images/icons/flags/united-states-of-america.svg"
+                    src="/images/icons/flags/united-states-of-america.svg"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/150x150'
@@ -913,7 +913,7 @@ useHead({
                   </span>
                   <img
                     class="badge"
-                    src="/@images/icons/flags/united-states-of-america.svg"
+                    src="/images/icons/flags/united-states-of-america.svg"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/150x150'
@@ -926,7 +926,7 @@ useHead({
                   </span>
                   <img
                     class="badge"
-                    src="/@images/icons/flags/united-states-of-america.svg"
+                    src="/images/icons/flags/united-states-of-america.svg"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/150x150'
@@ -939,7 +939,7 @@ useHead({
                   </span>
                   <img
                     class="badge"
-                    src="/@images/icons/flags/united-states-of-america.svg"
+                    src="/images/icons/flags/united-states-of-america.svg"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/150x150'
@@ -952,7 +952,7 @@ useHead({
                   </span>
                   <img
                     class="badge"
-                    src="/@images/icons/flags/united-states-of-america.svg"
+                    src="/images/icons/flags/united-states-of-america.svg"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/150x150'
@@ -1316,7 +1316,7 @@ useHead({
                   <div class="h-avatar is-small">
                     <img
                       class="avatar"
-                      src="/@images/avatars/photos/7.jpg"
+                      src="/images/avatars/photos/7.jpg"
                       alt=""
                       @error="
                         $event.target.src =
@@ -1332,7 +1332,7 @@ useHead({
                   <div class="h-avatar is-small">
                     <img
                       class="avatar"
-                      src="/@images/avatars/photos/8.jpg"
+                      src="/images/avatars/photos/8.jpg"
                       alt=""
                       @error="
                         $event.target.src =
@@ -1343,7 +1343,7 @@ useHead({
                   <div class="h-avatar is-small">
                     <img
                       class="avatar"
-                      src="/@images/avatars/photos/5.jpg"
+                      src="/images/avatars/photos/5.jpg"
                       alt=""
                       @error="
                         $event.target.src =
@@ -1423,7 +1423,7 @@ useHead({
                   <div class="h-avatar">
                     <img
                       class="avatar"
-                      src="/@images/avatars/photos/11.jpg"
+                      src="/images/avatars/photos/11.jpg"
                       alt=""
                       @error="
                         $event.target.src =
@@ -1439,7 +1439,7 @@ useHead({
                   <div class="h-avatar">
                     <img
                       class="avatar"
-                      src="/@images/avatars/photos/18.jpg"
+                      src="/images/avatars/photos/18.jpg"
                       alt=""
                       @error="
                         $event.target.src =
@@ -1450,7 +1450,7 @@ useHead({
                   <div class="h-avatar">
                     <img
                       class="avatar"
-                      src="/@images/avatars/photos/24.jpg"
+                      src="/images/avatars/photos/24.jpg"
                       alt=""
                       @error="
                         $event.target.src =
@@ -1530,7 +1530,7 @@ useHead({
                   <div class="h-avatar is-medium">
                     <img
                       class="avatar"
-                      src="/@images/avatars/photos/24.jpg"
+                      src="/images/avatars/photos/24.jpg"
                       alt=""
                       @error="
                         $event.target.src =
@@ -1546,7 +1546,7 @@ useHead({
                   <div class="h-avatar is-medium">
                     <img
                       class="avatar"
-                      src="/@images/avatars/photos/13.jpg"
+                      src="/images/avatars/photos/13.jpg"
                       alt=""
                       @error="
                         $event.target.src =
@@ -1557,7 +1557,7 @@ useHead({
                   <div class="h-avatar is-medium">
                     <img
                       class="avatar"
-                      src="/@images/avatars/photos/8.jpg"
+                      src="/images/avatars/photos/8.jpg"
                       alt=""
                       @error="
                         $event.target.src =

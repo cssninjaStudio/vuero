@@ -53,7 +53,7 @@ const emit = defineEmit(['close'])
                         <div class="box-inner">
                           <div class="combo-item">
                             <img
-                              src="/@images/avatars/placeholder.jpg"
+                              src="/images/avatars/placeholder.jpg"
                               alt=""
                               @error="
                                 $event.target.src =
@@ -75,7 +75,7 @@ const emit = defineEmit(['close'])
                               <li>
                                 <span class="item-icon">
                                   <img
-                                    src="/@images/avatars/photos/22.jpg"
+                                    src="/images/avatars/photos/22.jpg"
                                     alt=""
                                     @error="
                                       $event.target.src =
@@ -94,7 +94,7 @@ const emit = defineEmit(['close'])
                               <li>
                                 <span class="item-icon">
                                   <img
-                                    src="/@images/avatars/photos/8.jpg"
+                                    src="/images/avatars/photos/8.jpg"
                                     alt=""
                                     @error="
                                       $event.target.src =
@@ -113,7 +113,7 @@ const emit = defineEmit(['close'])
                               <li>
                                 <span class="item-icon">
                                   <img
-                                    src="/@images/avatars/photos/7.jpg"
+                                    src="/images/avatars/photos/7.jpg"
                                     alt=""
                                     @error="
                                       $event.target.src =
@@ -132,7 +132,7 @@ const emit = defineEmit(['close'])
                               <li>
                                 <span class="item-icon">
                                   <img
-                                    src="/@images/avatars/photos/25.jpg"
+                                    src="/images/avatars/photos/25.jpg"
                                     alt=""
                                     @error="
                                       $event.target.src =
@@ -151,7 +151,7 @@ const emit = defineEmit(['close'])
                               <li>
                                 <span class="item-icon">
                                   <img
-                                    src="/@images/avatars/photos/12.jpg"
+                                    src="/images/avatars/photos/12.jpg"
                                     alt=""
                                     @error="
                                       $event.target.src =

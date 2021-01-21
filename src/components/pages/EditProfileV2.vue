@@ -9,7 +9,7 @@
             <div class="h-avatar is-large">
               <img
                 class="avatar"
-                src="/@images/avatars/photos/8.jpg"
+                src="/images/avatars/photos/8.jpg"
                 alt=""
                 @error="
                   $event.target.src = 'https://via.placeholder.com/150x150'
@@ -17,7 +17,7 @@
               />
               <img
                 class="badge"
-                src="/@images/icons/flags/united-states-of-america.svg"
+                src="/images/icons/flags/united-states-of-america.svg"
                 alt=""
                 @error="
                   $event.target.src = 'https://via.placeholder.com/150x150'
@@ -188,7 +188,7 @@
                 <!--Experience Item-->
                 <div class="setting-item">
                   <img
-                    src="/@images/photo/demo/brands/airbnb.svg"
+                    src="/images/photo/demo/brands/airbnb.svg"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/150x150'
@@ -211,7 +211,7 @@
                 <!--Experience Item-->
                 <div class="setting-item">
                   <img
-                    src="/@images/photo/demo/brands/facebook.svg"
+                    src="/images/photo/demo/brands/facebook.svg"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/150x150'
@@ -234,7 +234,7 @@
                 <!--Experience Item-->
                 <div class="setting-item">
                   <img
-                    src="/@images/photo/demo/brands/atlassian.svg"
+                    src="/images/photo/demo/brands/atlassian.svg"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/150x150'
@@ -257,7 +257,7 @@
                 <!--Experience Item-->
                 <div class="setting-item">
                   <img
-                    src="/@images/photo/demo/brands/github.svg"
+                    src="/images/photo/demo/brands/github.svg"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/150x150'
@@ -280,7 +280,7 @@
                 <!--Experience Item-->
                 <div class="setting-item">
                   <img
-                    src="/@images/photo/demo/brands/slack.svg"
+                    src="/images/photo/demo/brands/slack.svg"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/150x150'
@@ -303,7 +303,7 @@
                 <!--Experience Item-->
                 <div class="setting-item">
                   <img
-                    src="/@images/photo/demo/brands/gitlab.svg"
+                    src="/images/photo/demo/brands/gitlab.svg"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/150x150'

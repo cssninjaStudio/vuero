@@ -13,7 +13,7 @@
                   <div class="h-avatar is-medium">
                     <img
                       class="avatar is-squared"
-                      src="/@images/avatars/photos/8.jpg"
+                      src="/images/avatars/photos/8.jpg"
                       alt=""
                       @error="
                         $event.target.src =
@@ -36,7 +36,7 @@
                   <a class="h-avatar">
                     <img
                       class="avatar is-squared"
-                      src="/@images/avatars/photos/13.jpg"
+                      src="/images/avatars/photos/13.jpg"
                       alt=""
                       @error="
                         $event.target.src =
@@ -47,7 +47,7 @@
                   <a class="h-avatar">
                     <img
                       class="avatar is-squared"
-                      src="/@images/avatars/photos/32.jpg"
+                      src="/images/avatars/photos/32.jpg"
                       alt=""
                       @error="
                         $event.target.src =
@@ -58,7 +58,7 @@
                   <a class="h-avatar">
                     <img
                       class="avatar is-squared"
-                      src="/@images/avatars/photos/9.jpg"
+                      src="/images/avatars/photos/9.jpg"
                       alt=""
                       @error="
                         $event.target.src =
@@ -195,7 +195,7 @@
                     <div class="h-avatar is-large">
                       <img
                         class="avatar"
-                        src="/@images/avatars/photos/13.jpg"
+                        src="/images/avatars/photos/13.jpg"
                         alt=""
                         data-user-popover="6"
                         @error="
@@ -205,7 +205,7 @@
                       />
                       <img
                         class="badge"
-                        src="/@images/icons/stacks/illustrator.svg"
+                        src="/images/icons/stacks/illustrator.svg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -231,7 +231,7 @@
                     <div class="h-avatar is-large">
                       <img
                         class="avatar"
-                        src="/@images/avatars/photos/37.jpg"
+                        src="/images/avatars/photos/37.jpg"
                         alt=""
                         data-user-popover="31"
                         @error="
@@ -241,7 +241,7 @@
                       />
                       <img
                         class="badge"
-                        src="/@images/icons/flags/france.svg"
+                        src="/images/icons/flags/france.svg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -267,7 +267,7 @@
                     <div class="h-avatar is-large">
                       <img
                         class="avatar"
-                        src="/@images/avatars/photos/25.jpg"
+                        src="/images/avatars/photos/25.jpg"
                         alt=""
                         data-user-popover="4"
                         @error="
@@ -277,7 +277,7 @@
                       />
                       <img
                         class="badge"
-                        src="/@images/icons/stacks/js.svg"
+                        src="/images/icons/stacks/js.svg"
                         alt=""
                         @error="
                           $event.target.src =

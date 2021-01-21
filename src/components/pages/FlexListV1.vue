@@ -5,12 +5,12 @@
       <div class="placeholder-content">
         <img
           class="light-image"
-          src="/@images/illustrations/placeholders/search-4.svg"
+          src="/images/illustrations/placeholders/search-4.svg"
           alt=""
         />
         <img
           class="dark-image"
-          src="/@images/illustrations/placeholders/search-4-dark.svg"
+          src="/images/illustrations/placeholders/search-4-dark.svg"
           alt=""
         />
         <h3>We couldn't find any matching results.</h3>
@@ -40,7 +40,7 @@
             <div class="h-avatar is-medium">
               <img
                 class="avatar"
-                src="/@images/avatars/photos/8.jpg"
+                src="/images/avatars/photos/8.jpg"
                 alt=""
                 data-user-popover="3"
                 @error="
@@ -49,7 +49,7 @@
               />
               <img
                 class="badge"
-                src="/@images/icons/flags/united-states-of-america.svg"
+                src="/images/icons/flags/united-states-of-america.svg"
                 alt=""
                 @error="
                   $event.target.src = 'https://via.placeholder.com/150x150'
@@ -81,7 +81,7 @@
               <div class="h-avatar is-small">
                 <img
                   class="avatar"
-                  src="/@images/avatars/photos/7.jpg"
+                  src="/images/avatars/photos/7.jpg"
                   alt=""
                   data-user-popover="0"
                   @error="
@@ -97,7 +97,7 @@
               <div class="h-avatar is-small">
                 <img
                   class="avatar"
-                  src="/@images/avatars/photos/27.jpg"
+                  src="/images/avatars/photos/27.jpg"
                   alt=""
                   data-user-popover="10"
                   @error="
@@ -125,7 +125,7 @@
             <div class="h-avatar is-medium">
               <img
                 class="avatar"
-                src="/@images/avatars/photos/22.jpg"
+                src="/images/avatars/photos/22.jpg"
                 alt=""
                 data-user-popover="5"
                 @error="
@@ -134,7 +134,7 @@
               />
               <img
                 class="badge"
-                src="/@images/icons/flags/united-states-of-america.svg"
+                src="/images/icons/flags/united-states-of-america.svg"
                 alt=""
                 @error="
                   $event.target.src = 'https://via.placeholder.com/150x150'
@@ -179,7 +179,7 @@
             <div class="h-avatar is-medium">
               <img
                 class="avatar"
-                src="/@images/avatars/photos/19.jpg"
+                src="/images/avatars/photos/19.jpg"
                 alt=""
                 data-user-popover="17"
                 @error="
@@ -188,7 +188,7 @@
               />
               <img
                 class="badge"
-                src="/@images/icons/flags/germany.svg"
+                src="/images/icons/flags/germany.svg"
                 alt=""
                 @error="
                   $event.target.src = 'https://via.placeholder.com/150x150'
@@ -220,7 +220,7 @@
               <div class="h-avatar is-small">
                 <img
                   class="avatar"
-                  src="/@images/avatars/photos/25.jpg"
+                  src="/images/avatars/photos/25.jpg"
                   alt=""
                   data-user-popover="4"
                   @error="
@@ -236,7 +236,7 @@
               <div class="h-avatar is-small">
                 <img
                   class="avatar"
-                  src="/@images/avatars/photos/19.jpg"
+                  src="/images/avatars/photos/19.jpg"
                   alt=""
                   data-user-popover="17"
                   @error="
@@ -264,7 +264,7 @@
             <div class="h-avatar is-medium">
               <img
                 class="avatar"
-                src="/@images/avatars/photos/25.jpg"
+                src="/images/avatars/photos/25.jpg"
                 alt=""
                 data-user-popover="4"
                 @error="
@@ -273,7 +273,7 @@
               />
               <img
                 class="badge"
-                src="/@images/icons/flags/united-states-of-america.svg"
+                src="/images/icons/flags/united-states-of-america.svg"
                 alt=""
                 @error="
                   $event.target.src = 'https://via.placeholder.com/150x150'
@@ -315,7 +315,7 @@
               <div class="h-avatar is-small">
                 <img
                   class="avatar"
-                  src="/@images/avatars/photos/19.jpg"
+                  src="/images/avatars/photos/19.jpg"
                   alt=""
                   data-user-popover="17"
                   @error="
@@ -336,7 +336,7 @@
             <div class="h-avatar is-medium">
               <img
                 class="avatar"
-                src="/@images/avatars/photos/12.jpg"
+                src="/images/avatars/photos/12.jpg"
                 alt=""
                 data-user-popover="2"
                 @error="
@@ -345,7 +345,7 @@
               />
               <img
                 class="badge"
-                src="/@images/icons/flags/united-states-of-america.svg"
+                src="/images/icons/flags/united-states-of-america.svg"
                 alt=""
                 @error="
                   $event.target.src = 'https://via.placeholder.com/150x150'
@@ -375,7 +375,7 @@
               <div class="h-avatar is-small">
                 <img
                   class="avatar"
-                  src="/@images/avatars/photos/18.jpg"
+                  src="/images/avatars/photos/18.jpg"
                   alt=""
                   data-user-popover="7"
                   @error="
@@ -396,7 +396,7 @@
             <div class="h-avatar is-medium">
               <img
                 class="avatar"
-                src="/@images/avatars/photos/30.jpg"
+                src="/images/avatars/photos/30.jpg"
                 alt=""
                 data-user-popover="26"
                 @error="
@@ -405,7 +405,7 @@
               />
               <img
                 class="badge"
-                src="/@images/icons/flags/france.svg"
+                src="/images/icons/flags/france.svg"
                 alt=""
                 @error="
                   $event.target.src = 'https://via.placeholder.com/150x150'
@@ -435,7 +435,7 @@
               <div class="h-avatar is-small">
                 <img
                   class="avatar"
-                  src="/@images/avatars/photos/36.jpg"
+                  src="/images/avatars/photos/36.jpg"
                   alt=""
                   data-user-popover="30"
                   @error="
@@ -446,7 +446,7 @@
               <div class="h-avatar is-small">
                 <img
                   class="avatar"
-                  src="/@images/avatars/photos/24.jpg"
+                  src="/images/avatars/photos/24.jpg"
                   alt=""
                   data-user-popover="22"
                   @error="
@@ -467,7 +467,7 @@
             <div class="h-avatar is-medium">
               <img
                 class="avatar"
-                src="/@images/avatars/photos/13.jpg"
+                src="/images/avatars/photos/13.jpg"
                 alt=""
                 data-user-popover="6"
                 @error="
@@ -476,7 +476,7 @@
               />
               <img
                 class="badge"
-                src="/@images/icons/flags/united-states-of-america.svg"
+                src="/images/icons/flags/united-states-of-america.svg"
                 alt=""
                 @error="
                   $event.target.src = 'https://via.placeholder.com/150x150'
@@ -508,7 +508,7 @@
               <div class="h-avatar is-small">
                 <img
                   class="avatar"
-                  src="/@images/avatars/photos/25.jpg"
+                  src="/images/avatars/photos/25.jpg"
                   alt=""
                   data-user-popover="4"
                   @error="
@@ -519,7 +519,7 @@
               <div class="h-avatar is-small">
                 <img
                   class="avatar"
-                  src="/@images/avatars/photos/11.jpg"
+                  src="/images/avatars/photos/11.jpg"
                   alt=""
                   data-user-popover="13"
                   @error="
@@ -530,7 +530,7 @@
               <div class="h-avatar is-small">
                 <img
                   class="avatar"
-                  src="/@images/avatars/photos/5.jpg"
+                  src="/images/avatars/photos/5.jpg"
                   alt=""
                   data-user-popover="9"
                   @error="
@@ -558,7 +558,7 @@
             <div class="h-avatar is-medium">
               <img
                 class="avatar"
-                src="/@images/avatars/photos/11.jpg"
+                src="/images/avatars/photos/11.jpg"
                 alt=""
                 data-user-popover="13"
                 @error="
@@ -567,7 +567,7 @@
               />
               <img
                 class="badge"
-                src="/@images/icons/flags/england.svg"
+                src="/images/icons/flags/england.svg"
                 alt=""
                 @error="
                   $event.target.src = 'https://via.placeholder.com/150x150'
@@ -599,7 +599,7 @@
               <div class="h-avatar is-small">
                 <img
                   class="avatar"
-                  src="/@images/avatars/photos/25.jpg"
+                  src="/images/avatars/photos/25.jpg"
                   alt=""
                   data-user-popover="4"
                   @error="
@@ -610,7 +610,7 @@
               <div class="h-avatar is-small">
                 <img
                   class="avatar"
-                  src="/@images/avatars/photos/13.jpg"
+                  src="/images/avatars/photos/13.jpg"
                   alt=""
                   data-user-popover="6"
                   @error="
@@ -621,7 +621,7 @@
               <div class="h-avatar is-small">
                 <img
                   class="avatar"
-                  src="/@images/avatars/photos/5.jpg"
+                  src="/images/avatars/photos/5.jpg"
                   alt=""
                   data-user-popover="9"
                   @error="
@@ -645,7 +645,7 @@
               </span>
               <img
                 class="badge"
-                src="/@images/icons/flags/united-states-of-america.svg"
+                src="/images/icons/flags/united-states-of-america.svg"
                 alt=""
                 @error="
                   $event.target.src = 'https://via.placeholder.com/150x150'
@@ -675,7 +675,7 @@
               <div class="h-avatar is-small">
                 <img
                   class="avatar"
-                  src="/@images/avatars/photos/25.jpg"
+                  src="/images/avatars/photos/25.jpg"
                   alt=""
                   data-user-popover="4"
                   @error="
@@ -696,7 +696,7 @@
             <div class="h-avatar is-medium">
               <img
                 class="avatar"
-                src="/@images/avatars/photos/26.jpg"
+                src="/images/avatars/photos/26.jpg"
                 alt=""
                 data-user-popover="23"
                 @error="
@@ -705,7 +705,7 @@
               />
               <img
                 class="badge"
-                src="/@images/icons/flags/australia.svg"
+                src="/images/icons/flags/australia.svg"
                 alt=""
                 @error="
                   $event.target.src = 'https://via.placeholder.com/150x150'
@@ -737,7 +737,7 @@
               <div class="h-avatar is-small">
                 <img
                   class="avatar"
-                  src="/@images/avatars/photos/7.jpg"
+                  src="/images/avatars/photos/7.jpg"
                   alt=""
                   data-user-popover="0"
                   @error="
@@ -753,7 +753,7 @@
               <div class="h-avatar is-small">
                 <img
                   class="avatar"
-                  src="/@images/avatars/photos/27.jpg"
+                  src="/images/avatars/photos/27.jpg"
                   alt=""
                   data-user-popover="10"
                   @error="

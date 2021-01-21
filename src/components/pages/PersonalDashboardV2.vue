@@ -18,13 +18,13 @@ const democheck4 = ref(false)
           <div class="h-avatar is-xl">
             <img
               class="avatar"
-              src="/@images/avatars/photos/8.jpg"
+              src="/images/avatars/photos/8.jpg"
               alt=""
               @error="$event.target.src = 'https://via.placeholder.com/150x150'"
             />
             <img
               class="badge"
-              src="/@images/icons/flags/united-states-of-america.svg"
+              src="/images/icons/flags/united-states-of-america.svg"
               alt=""
             />
           </div>
@@ -61,7 +61,7 @@ const democheck4 = ref(false)
               <div class="h-avatar is-medium">
                 <img
                   class="avatar is-squared"
-                  src="/@images/photo/demo/apps/1.jpg"
+                  src="/images/photo/demo/apps/1.jpg"
                   alt=""
                   @error="
                     $event.target.src = 'https://via.placeholder.com/150x150'
@@ -69,7 +69,7 @@ const democheck4 = ref(false)
                 />
                 <img
                   class="badge"
-                  src="/@images/icons/stacks/illustrator.svg"
+                  src="/images/icons/stacks/illustrator.svg"
                   alt=""
                   @error="
                     $event.target.src = 'https://via.placeholder.com/150x150'
@@ -87,7 +87,7 @@ const democheck4 = ref(false)
                   <div class="h-avatar is-small">
                     <img
                       class="avatar"
-                      src="/@images/avatars/photos/18.jpg"
+                      src="/images/avatars/photos/18.jpg"
                       alt=""
                       data-user-popover="7"
                       @error="
@@ -99,7 +99,7 @@ const democheck4 = ref(false)
                   <div class="h-avatar is-small">
                     <img
                       class="avatar"
-                      src="/@images/avatars/photos/16.jpg"
+                      src="/images/avatars/photos/16.jpg"
                       alt=""
                       data-user-popover="16"
                       @error="
@@ -111,7 +111,7 @@ const democheck4 = ref(false)
                   <div class="h-avatar is-small">
                     <img
                       class="avatar"
-                      src="/@images/avatars/photos/23.jpg"
+                      src="/images/avatars/photos/23.jpg"
                       alt=""
                       data-user-popover="21"
                       @error="
@@ -176,7 +176,7 @@ const democheck4 = ref(false)
               <div class="h-avatar is-medium">
                 <img
                   class="avatar is-squared"
-                  src="/@images/photo/demo/apps/2.png"
+                  src="/images/photo/demo/apps/2.png"
                   alt=""
                   @error="
                     $event.target.src = 'https://via.placeholder.com/150x150'
@@ -184,7 +184,7 @@ const democheck4 = ref(false)
                 />
                 <img
                   class="badge"
-                  src="/@images/icons/stacks/reactjs.svg"
+                  src="/images/icons/stacks/reactjs.svg"
                   alt=""
                   @error="
                     $event.target.src = 'https://via.placeholder.com/150x150'
@@ -202,7 +202,7 @@ const democheck4 = ref(false)
                   <div class="h-avatar is-small">
                     <img
                       class="avatar"
-                      src="/@images/avatars/photos/21.jpg"
+                      src="/images/avatars/photos/21.jpg"
                       alt=""
                       data-user-popover="19"
                       @error="
@@ -214,7 +214,7 @@ const democheck4 = ref(false)
                   <div class="h-avatar is-small">
                     <img
                       class="avatar"
-                      src="/@images/avatars/photos/32.jpg"
+                      src="/images/avatars/photos/32.jpg"
                       alt=""
                       data-user-popover="28"
                       @error="
@@ -279,7 +279,7 @@ const democheck4 = ref(false)
               <div class="h-avatar is-medium">
                 <img
                   class="avatar is-squared"
-                  src="/@images/photo/demo/apps/3.png"
+                  src="/images/photo/demo/apps/3.png"
                   alt=""
                   @error="
                     $event.target.src = 'https://via.placeholder.com/150x150'
@@ -287,7 +287,7 @@ const democheck4 = ref(false)
                 />
                 <img
                   class="badge"
-                  src="/@images/icons/stacks/angular.svg"
+                  src="/images/icons/stacks/angular.svg"
                   alt=""
                   @error="
                     $event.target.src = 'https://via.placeholder.com/150x150'
@@ -366,7 +366,7 @@ const democheck4 = ref(false)
               <div class="h-avatar is-medium">
                 <img
                   class="avatar is-squared"
-                  src="/@images/photo/demo/apps/4.png"
+                  src="/images/photo/demo/apps/4.png"
                   alt=""
                   @error="
                     $event.target.src = 'https://via.placeholder.com/150x150'
@@ -374,7 +374,7 @@ const democheck4 = ref(false)
                 />
                 <img
                   class="badge"
-                  src="/@images/icons/stacks/js.svg"
+                  src="/images/icons/stacks/js.svg"
                   alt=""
                   @error="
                     $event.target.src = 'https://via.placeholder.com/150x150'
@@ -392,7 +392,7 @@ const democheck4 = ref(false)
                   <div class="h-avatar is-small">
                     <img
                       class="avatar"
-                      src="/@images/avatars/photos/13.jpg"
+                      src="/images/avatars/photos/13.jpg"
                       alt=""
                       data-user-popover="6"
                       @error="
@@ -404,7 +404,7 @@ const democheck4 = ref(false)
                   <div class="h-avatar is-small">
                     <img
                       class="avatar"
-                      src="/@images/avatars/photos/25.jpg"
+                      src="/images/avatars/photos/25.jpg"
                       alt=""
                       data-user-popover="4"
                       @error="
@@ -416,7 +416,7 @@ const democheck4 = ref(false)
                   <div class="h-avatar is-small">
                     <img
                       class="avatar"
-                      src="/@images/avatars/photos/38.jpg"
+                      src="/images/avatars/photos/38.jpg"
                       alt=""
                       data-user-popover="32"
                       @error="
@@ -520,7 +520,7 @@ const democheck4 = ref(false)
                 <div class="h-avatar">
                   <img
                     class="avatar"
-                    src="/@images/avatars/photos/18.jpg"
+                    src="/images/avatars/photos/18.jpg"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/150x150'
@@ -558,7 +558,7 @@ const democheck4 = ref(false)
                 <div class="h-avatar">
                   <img
                     class="avatar"
-                    src="/@images/avatars/photos/13.jpg"
+                    src="/images/avatars/photos/13.jpg"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/150x150'
@@ -645,12 +645,12 @@ const democheck4 = ref(false)
             <div class="placeholder-content">
               <img
                 class="light-image"
-                src="/@images/illustrations/placeholders/chart-guy.svg"
+                src="/images/illustrations/placeholders/chart-guy.svg"
                 alt=""
               />
               <img
                 class="dark-image"
-                src="/@images/illustrations/placeholders/chart-guy-dark.svg"
+                src="/images/illustrations/placeholders/chart-guy-dark.svg"
                 alt=""
               />
               <h3 class="dark-inverted">Go Premium</h3>

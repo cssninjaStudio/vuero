@@ -5,12 +5,12 @@
       <div class="placeholder-content">
         <img
           class="light-image"
-          src="/@images/illustrations/placeholders/search-4.svg"
+          src="/images/illustrations/placeholders/search-4.svg"
           alt=""
         />
         <img
           class="dark-image"
-          src="/@images/illustrations/placeholders/search-4-dark.svg"
+          src="/images/illustrations/placeholders/search-4-dark.svg"
           alt=""
         />
         <h3>We couldn't find any matching results.</h3>
@@ -29,7 +29,7 @@
         <div class="tile-grid-item">
           <div class="tile-grid-item-inner">
             <img
-              src="/@images/icons/files/pdf.svg"
+              src="/images/icons/files/pdf.svg"
               alt=""
               @error="$event.target.src = 'https://via.placeholder.com/150x150'"
             />
@@ -51,7 +51,7 @@
         <div class="tile-grid-item">
           <div class="tile-grid-item-inner">
             <img
-              src="/@images/icons/files/sheet.svg"
+              src="/images/icons/files/sheet.svg"
               alt=""
               @error="$event.target.src = 'https://via.placeholder.com/150x150'"
             />
@@ -73,7 +73,7 @@
         <div class="tile-grid-item">
           <div class="tile-grid-item-inner">
             <img
-              src="/@images/icons/files/doc-2.svg"
+              src="/images/icons/files/doc-2.svg"
               alt=""
               @error="$event.target.src = 'https://via.placeholder.com/150x150'"
             />
@@ -95,7 +95,7 @@
         <div class="tile-grid-item">
           <div class="tile-grid-item-inner">
             <img
-              src="/@images/icons/files/ppt.svg"
+              src="/images/icons/files/ppt.svg"
               alt=""
               @error="$event.target.src = 'https://via.placeholder.com/150x150'"
             />
@@ -117,7 +117,7 @@
         <div class="tile-grid-item">
           <div class="tile-grid-item-inner">
             <img
-              src="/@images/icons/files/ai.svg"
+              src="/images/icons/files/ai.svg"
               alt=""
               @error="$event.target.src = 'https://via.placeholder.com/150x150'"
             />
@@ -139,7 +139,7 @@
         <div class="tile-grid-item">
           <div class="tile-grid-item-inner">
             <img
-              src="/@images/icons/files/doc-2.svg"
+              src="/images/icons/files/doc-2.svg"
               alt=""
               @error="$event.target.src = 'https://via.placeholder.com/150x150'"
             />
@@ -161,7 +161,7 @@
         <div class="tile-grid-item">
           <div class="tile-grid-item-inner">
             <img
-              src="/@images/icons/files/pdf.svg"
+              src="/images/icons/files/pdf.svg"
               alt=""
               @error="$event.target.src = 'https://via.placeholder.com/150x150'"
             />
@@ -183,7 +183,7 @@
         <div class="tile-grid-item">
           <div class="tile-grid-item-inner">
             <img
-              src="/@images/icons/files/doc-2.svg"
+              src="/images/icons/files/doc-2.svg"
               alt=""
               @error="$event.target.src = 'https://via.placeholder.com/150x150'"
             />
@@ -205,7 +205,7 @@
         <div class="tile-grid-item">
           <div class="tile-grid-item-inner">
             <img
-              src="/@images/icons/files/sheet.svg"
+              src="/images/icons/files/sheet.svg"
               alt=""
               @error="$event.target.src = 'https://via.placeholder.com/150x150'"
             />
@@ -227,7 +227,7 @@
         <div class="tile-grid-item">
           <div class="tile-grid-item-inner">
             <img
-              src="/@images/icons/files/ai.svg"
+              src="/images/icons/files/ai.svg"
               alt=""
               @error="$event.target.src = 'https://via.placeholder.com/150x150'"
             />
@@ -249,7 +249,7 @@
         <div class="tile-grid-item">
           <div class="tile-grid-item-inner">
             <img
-              src="/@images/icons/files/ai.svg"
+              src="/images/icons/files/ai.svg"
               alt=""
               @error="$event.target.src = 'https://via.placeholder.com/150x150'"
             />
@@ -271,7 +271,7 @@
         <div class="tile-grid-item">
           <div class="tile-grid-item-inner">
             <img
-              src="/@images/icons/files/doc-2.svg"
+              src="/images/icons/files/doc-2.svg"
               alt=""
               @error="$event.target.src = 'https://via.placeholder.com/150x150'"
             />
@@ -293,7 +293,7 @@
         <div class="tile-grid-item">
           <div class="tile-grid-item-inner">
             <img
-              src="/@images/icons/files/sheet.svg"
+              src="/images/icons/files/sheet.svg"
               alt=""
               @error="$event.target.src = 'https://via.placeholder.com/150x150'"
             />
@@ -315,7 +315,7 @@
         <div class="tile-grid-item">
           <div class="tile-grid-item-inner">
             <img
-              src="/@images/icons/files/ai.svg"
+              src="/images/icons/files/ai.svg"
               alt=""
               @error="$event.target.src = 'https://via.placeholder.com/150x150'"
             />
@@ -337,7 +337,7 @@
         <div class="tile-grid-item">
           <div class="tile-grid-item-inner">
             <img
-              src="/@images/icons/files/pdf.svg"
+              src="/images/icons/files/pdf.svg"
               alt=""
               @error="$event.target.src = 'https://via.placeholder.com/150x150'"
             />
@@ -359,7 +359,7 @@
         <div class="tile-grid-item">
           <div class="tile-grid-item-inner">
             <img
-              src="/@images/icons/files/pdf.svg"
+              src="/images/icons/files/pdf.svg"
               alt=""
               @error="$event.target.src = 'https://via.placeholder.com/150x150'"
             />

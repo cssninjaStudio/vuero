@@ -366,7 +366,7 @@ useHead({
                                 <input type="radio" name="hero_select" />
                                 <div class="option-meta">
                                   <img
-                                    src="/@images/avatars/photos/8.jpg"
+                                    src="/images/avatars/photos/8.jpg"
                                     alt=""
                                     @error="
                                       $event.target.src =
@@ -380,7 +380,7 @@ useHead({
                                 <input type="radio" name="hero_select" />
                                 <div class="option-meta">
                                   <img
-                                    src="/@images/avatars/photos/12.jpg"
+                                    src="/images/avatars/photos/12.jpg"
                                     alt=""
                                     @error="
                                       $event.target.src =
@@ -394,7 +394,7 @@ useHead({
                                 <input type="radio" name="hero_select" />
                                 <div class="option-meta">
                                   <img
-                                    src="/@images/avatars/photos/25.jpg"
+                                    src="/images/avatars/photos/25.jpg"
                                     alt=""
                                     @error="
                                       $event.target.src =
@@ -408,7 +408,7 @@ useHead({
                                 <input type="radio" name="hero_select" />
                                 <div class="option-meta">
                                   <img
-                                    src="/@images/avatars/photos/7.jpg"
+                                    src="/images/avatars/photos/7.jpg"
                                     alt=""
                                     @error="
                                       $event.target.src =
@@ -422,7 +422,7 @@ useHead({
                                 <input type="radio" name="hero_select" />
                                 <div class="option-meta">
                                   <img
-                                    src="/@images/avatars/photos/18.jpg"
+                                    src="/images/avatars/photos/18.jpg"
                                     alt=""
                                     @error="
                                       $event.target.src =
@@ -531,7 +531,7 @@ useHead({
                                 <input type="radio" name="hero_select" />
                                 <div class="option-meta">
                                   <img
-                                    src="/@images/avatars/photos/8.jpg"
+                                    src="/images/avatars/photos/8.jpg"
                                     alt=""
                                     @error="
                                       $event.target.src =
@@ -545,7 +545,7 @@ useHead({
                                 <input type="radio" name="hero_select" />
                                 <div class="option-meta">
                                   <img
-                                    src="/@images/avatars/photos/12.jpg"
+                                    src="/images/avatars/photos/12.jpg"
                                     alt=""
                                     @error="
                                       $event.target.src =
@@ -559,7 +559,7 @@ useHead({
                                 <input type="radio" name="hero_select" />
                                 <div class="option-meta">
                                   <img
-                                    src="/@images/avatars/photos/25.jpg"
+                                    src="/images/avatars/photos/25.jpg"
                                     alt=""
                                     @error="
                                       $event.target.src =
@@ -573,7 +573,7 @@ useHead({
                                 <input type="radio" name="hero_select" />
                                 <div class="option-meta">
                                   <img
-                                    src="/@images/avatars/photos/7.jpg"
+                                    src="/images/avatars/photos/7.jpg"
                                     alt=""
                                     @error="
                                       $event.target.src =
@@ -587,7 +587,7 @@ useHead({
                                 <input type="radio" name="hero_select" />
                                 <div class="option-meta">
                                   <img
-                                    src="/@images/avatars/photos/18.jpg"
+                                    src="/images/avatars/photos/18.jpg"
                                     alt=""
                                     @error="
                                       $event.target.src =
@@ -995,7 +995,7 @@ useHead({
                           <div class="box-inner">
                             <div class="combo-item">
                               <img
-                                src="/@images/photo/demo/misc/code.png"
+                                src="/images/photo/demo/misc/code.png"
                                 alt=""
                                 @error="
                                   $event.target.src =
@@ -1019,7 +1019,7 @@ useHead({
                                 <li>
                                   <span class="item-icon">
                                     <img
-                                      src="/@images/icons/stacks/js.svg"
+                                      src="/images/icons/stacks/js.svg"
                                       alt=""
                                       @error="
                                         $event.target.src =
@@ -1038,7 +1038,7 @@ useHead({
                                 <li>
                                   <span class="item-icon">
                                     <img
-                                      src="/@images/icons/stacks/angular.svg"
+                                      src="/images/icons/stacks/angular.svg"
                                       alt=""
                                       @error="
                                         $event.target.src =
@@ -1057,7 +1057,7 @@ useHead({
                                 <li>
                                   <span class="item-icon">
                                     <img
-                                      src="/@images/icons/stacks/html5.svg"
+                                      src="/images/icons/stacks/html5.svg"
                                       alt=""
                                       @error="
                                         $event.target.src =
@@ -1076,7 +1076,7 @@ useHead({
                                 <li>
                                   <span class="item-icon">
                                     <img
-                                      src="/@images/icons/stacks/android.svg"
+                                      src="/images/icons/stacks/android.svg"
                                       alt=""
                                       @error="
                                         $event.target.src =
@@ -1188,7 +1188,7 @@ useHead({
                           <div class="box-inner">
                             <div class="combo-item">
                               <img
-                                src="/@images/photo/demo/misc/code.png"
+                                src="/images/photo/demo/misc/code.png"
                                 alt=""
                                 @error="
                                   $event.target.src =
@@ -1212,7 +1212,7 @@ useHead({
                                 <li>
                                   <span class="item-icon">
                                     <img
-                                      src="/@images/icons/stacks/js.svg"
+                                      src="/images/icons/stacks/js.svg"
                                       alt=""
                                       @error="
                                         $event.target.src =
@@ -1231,7 +1231,7 @@ useHead({
                                 <li>
                                   <span class="item-icon">
                                     <img
-                                      src="/@images/icons/stacks/angular.svg"
+                                      src="/images/icons/stacks/angular.svg"
                                       alt=""
                                       @error="
                                         $event.target.src =
@@ -1250,7 +1250,7 @@ useHead({
                                 <li>
                                   <span class="item-icon">
                                     <img
-                                      src="/@images/icons/stacks/html5.svg"
+                                      src="/images/icons/stacks/html5.svg"
                                       alt=""
                                       @error="
                                         $event.target.src =
@@ -1269,7 +1269,7 @@ useHead({
                                 <li>
                                   <span class="item-icon">
                                     <img
-                                      src="/@images/icons/stacks/android.svg"
+                                      src="/images/icons/stacks/android.svg"
                                       alt=""
                                       @error="
                                         $event.target.src =
@@ -1381,7 +1381,7 @@ useHead({
                             <div class="combo-item">
                               <img
                                 id="skill-placeholder"
-                                src="/@images/photo/demo/misc/code.png"
+                                src="/images/photo/demo/misc/code.png"
                                 alt=""
                                 @error="
                                   $event.target.src =
@@ -1405,7 +1405,7 @@ useHead({
                                 <li data-skill="javascript-skill">
                                   <span class="item-icon">
                                     <img
-                                      src="/@images/icons/stacks/js.svg"
+                                      src="/images/icons/stacks/js.svg"
                                       alt=""
                                       @error="
                                         $event.target.src =
@@ -1424,7 +1424,7 @@ useHead({
                                 <li data-skill="angular-skill">
                                   <span class="item-icon">
                                     <img
-                                      src="/@images/icons/stacks/angular.svg"
+                                      src="/images/icons/stacks/angular.svg"
                                       alt=""
                                       @error="
                                         $event.target.src =
@@ -1443,7 +1443,7 @@ useHead({
                                 <li data-skill="reactjs-skill">
                                   <span class="item-icon">
                                     <img
-                                      src="/@images/icons/stacks/reactjs.svg"
+                                      src="/images/icons/stacks/reactjs.svg"
                                       alt=""
                                       @error="
                                         $event.target.src =
@@ -1462,7 +1462,7 @@ useHead({
                                 <li data-skill="vuejs-skill">
                                   <span class="item-icon">
                                     <img
-                                      src="/@images/icons/stacks/vuejs.svg"
+                                      src="/images/icons/stacks/vuejs.svg"
                                       alt=""
                                       @error="
                                         $event.target.src =
@@ -1481,7 +1481,7 @@ useHead({
                                 <li data-skill="nodejs-skill">
                                   <span class="item-icon">
                                     <img
-                                      src="/@images/icons/stacks/nodejs.svg"
+                                      src="/images/icons/stacks/nodejs.svg"
                                       alt=""
                                       @error="
                                         $event.target.src =
@@ -1500,7 +1500,7 @@ useHead({
                                 <li data-skill="android-skill">
                                   <span class="item-icon">
                                     <img
-                                      src="/@images/icons/stacks/android.svg"
+                                      src="/images/icons/stacks/android.svg"
                                       alt=""
                                       @error="
                                         $event.target.src =
@@ -1519,7 +1519,7 @@ useHead({
                                 <li data-skill="swift-skill">
                                   <span class="item-icon">
                                     <img
-                                      src="/@images/icons/stacks/swift.svg"
+                                      src="/images/icons/stacks/swift.svg"
                                       alt=""
                                       @error="
                                         $event.target.src =
@@ -1538,7 +1538,7 @@ useHead({
                                 <li data-skill="wordpress-skill">
                                   <span class="item-icon">
                                     <img
-                                      src="/@images/icons/stacks/wordpress.svg"
+                                      src="/images/icons/stacks/wordpress.svg"
                                       alt=""
                                       @error="
                                         $event.target.src =
@@ -1557,7 +1557,7 @@ useHead({
                                 <li data-skill="laravel-skill">
                                   <span class="item-icon">
                                     <img
-                                      src="/@images/icons/stacks/laravel.svg"
+                                      src="/images/icons/stacks/laravel.svg"
                                       alt=""
                                       @error="
                                         $event.target.src =
@@ -1715,7 +1715,7 @@ useHead({
                               <div class="avatar-container">
                                 <img
                                   class="avatar"
-                                  src="/@images/avatars/placeholder.jpg"
+                                  src="/images/avatars/placeholder.jpg"
                                   alt=""
                                   @error="
                                     $event.target.src =
@@ -1724,7 +1724,7 @@ useHead({
                                 />
                                 <img
                                   class="badge"
-                                  src="/@images/icons/flags/united-states-of-america.svg"
+                                  src="/images/icons/flags/united-states-of-america.svg"
                                   alt=""
                                   @error="
                                     $event.target.src =
@@ -1750,7 +1750,7 @@ useHead({
                                   <span class="item-icon">
                                     <img
                                       class="avatar"
-                                      src="/@images/avatars/photos/22.jpg"
+                                      src="/images/avatars/photos/22.jpg"
                                       alt=""
                                       @error="
                                         $event.target.src =
@@ -1759,7 +1759,7 @@ useHead({
                                     />
                                     <img
                                       class="badge"
-                                      src="/@images/icons/flags/united-states-of-america.svg"
+                                      src="/images/icons/flags/united-states-of-america.svg"
                                       alt=""
                                       @error="
                                         $event.target.src =
@@ -1779,7 +1779,7 @@ useHead({
                                   <span class="item-icon">
                                     <img
                                       class="avatar"
-                                      src="/@images/avatars/photos/7.jpg"
+                                      src="/images/avatars/photos/7.jpg"
                                       alt=""
                                       @error="
                                         $event.target.src =
@@ -1788,7 +1788,7 @@ useHead({
                                     />
                                     <img
                                       class="badge"
-                                      src="/@images/icons/flags/united-states-of-america.svg"
+                                      src="/images/icons/flags/united-states-of-america.svg"
                                       alt=""
                                       @error="
                                         $event.target.src =
@@ -1808,7 +1808,7 @@ useHead({
                                   <span class="item-icon">
                                     <img
                                       class="avatar"
-                                      src="/@images/avatars/photos/8.jpg"
+                                      src="/images/avatars/photos/8.jpg"
                                       alt=""
                                       @error="
                                         $event.target.src =
@@ -1817,7 +1817,7 @@ useHead({
                                     />
                                     <img
                                       class="badge"
-                                      src="/@images/icons/flags/united-states-of-america.svg"
+                                      src="/images/icons/flags/united-states-of-america.svg"
                                       alt=""
                                       @error="
                                         $event.target.src =
@@ -1837,7 +1837,7 @@ useHead({
                                   <span class="item-icon">
                                     <img
                                       class="avatar"
-                                      src="/@images/avatars/photos/12.jpg"
+                                      src="/images/avatars/photos/12.jpg"
                                       alt=""
                                       @error="
                                         $event.target.src =
@@ -1846,7 +1846,7 @@ useHead({
                                     />
                                     <img
                                       class="badge"
-                                      src="/@images/icons/flags/united-states-of-america.svg"
+                                      src="/images/icons/flags/united-states-of-america.svg"
                                       alt=""
                                       @error="
                                         $event.target.src =
@@ -1866,7 +1866,7 @@ useHead({
                                   <span class="item-icon">
                                     <img
                                       class="avatar"
-                                      src="/@images/avatars/photos/25.jpg"
+                                      src="/images/avatars/photos/25.jpg"
                                       alt=""
                                       @error="
                                         $event.target.src =
@@ -1875,7 +1875,7 @@ useHead({
                                     />
                                     <img
                                       class="badge"
-                                      src="/@images/icons/flags/united-states-of-america.svg"
+                                      src="/images/icons/flags/united-states-of-america.svg"
                                       alt=""
                                       @error="
                                         $event.target.src =

@@ -12,7 +12,7 @@
         <div class="h-avatar is-small">
           <img
             class="avatar"
-            src="/@images/avatars/photos/7.jpg"
+            src="/images/avatars/photos/7.jpg"
             alt=""
             @error="$event.target.src = 'https://via.placeholder.com/150x150'"
           />
@@ -20,7 +20,7 @@
         <div class="h-avatar is-small">
           <img
             class="avatar"
-            src="/@images/avatars/photos/9.jpg"
+            src="/images/avatars/photos/9.jpg"
             alt=""
             @error="$event.target.src = 'https://via.placeholder.com/150x150'"
           />
@@ -28,7 +28,7 @@
         <div class="h-avatar is-small">
           <img
             class="avatar"
-            src="/@images/avatars/photos/12.jpg"
+            src="/images/avatars/photos/12.jpg"
             alt=""
             @error="$event.target.src = 'https://via.placeholder.com/150x150'"
           />
@@ -36,7 +36,7 @@
         <div class="h-avatar is-small">
           <img
             class="avatar"
-            src="/@images/avatars/photos/8.jpg"
+            src="/images/avatars/photos/8.jpg"
             alt=""
             @error="$event.target.src = 'https://via.placeholder.com/150x150'"
           />
@@ -44,7 +44,7 @@
         <div class="h-avatar is-small">
           <img
             class="avatar"
-            src="/@images/avatars/photos/25.jpg"
+            src="/images/avatars/photos/25.jpg"
             alt=""
             @error="$event.target.src = 'https://via.placeholder.com/150x150'"
           />
@@ -52,7 +52,7 @@
         <div class="h-avatar is-small">
           <img
             class="avatar"
-            src="/@images/avatars/photos/22.jpg"
+            src="/images/avatars/photos/22.jpg"
             alt=""
             @error="$event.target.src = 'https://via.placeholder.com/150x150'"
           />
@@ -71,7 +71,7 @@
         <a class="project-grid-item">
           <img
             class="project-avatar"
-            src="/@images/icons/logos/slicer.svg"
+            src="/images/icons/logos/slicer.svg"
             alt=""
             @error="$event.target.src = 'https://via.placeholder.com/150x150'"
           />
@@ -87,7 +87,7 @@
         <a class="project-grid-item">
           <img
             class="project-avatar"
-            src="/@images/icons/logos/metamovies.svg"
+            src="/images/icons/logos/metamovies.svg"
             alt=""
             @error="$event.target.src = 'https://via.placeholder.com/150x150'"
           />
@@ -103,7 +103,7 @@
         <a class="project-grid-item">
           <img
             class="project-avatar"
-            src="/@images/illustrations/dashboards/flights/company1.svg"
+            src="/images/illustrations/dashboards/flights/company1.svg"
             alt=""
             @error="$event.target.src = 'https://via.placeholder.com/150x150'"
           />
@@ -119,7 +119,7 @@
         <a class="project-grid-item">
           <img
             class="project-avatar"
-            src="/@images/icons/logos/fastpizza.svg"
+            src="/images/icons/logos/fastpizza.svg"
             alt=""
             @error="$event.target.src = 'https://via.placeholder.com/150x150'"
           />
@@ -135,7 +135,7 @@
         <a class="project-grid-item">
           <img
             class="project-avatar"
-            src="/@images/icons/logos/drop.svg"
+            src="/images/icons/logos/drop.svg"
             alt=""
             @error="$event.target.src = 'https://via.placeholder.com/150x150'"
           />
@@ -180,7 +180,7 @@
                 <div class="h-avatar is-small">
                   <img
                     class="avatar"
-                    src="/@images/avatars/photos/7.jpg"
+                    src="/images/avatars/photos/7.jpg"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/150x150'
@@ -195,7 +195,7 @@
                 <div class="h-avatar is-small">
                   <img
                     class="avatar"
-                    src="/@images/avatars/photos/12.jpg"
+                    src="/images/avatars/photos/12.jpg"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/150x150'
@@ -268,7 +268,7 @@
                 <div class="h-avatar is-small">
                   <img
                     class="avatar"
-                    src="/@images/avatars/photos/8.jpg"
+                    src="/images/avatars/photos/8.jpg"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/150x150'
@@ -301,7 +301,7 @@
                 <div class="h-avatar is-small">
                   <img
                     class="avatar"
-                    src="/@images/avatars/photos/13.jpg"
+                    src="/images/avatars/photos/13.jpg"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/150x150'
@@ -334,7 +334,7 @@
                 <div class="h-avatar is-small">
                   <img
                     class="avatar"
-                    src="/@images/avatars/photos/11.jpg"
+                    src="/images/avatars/photos/11.jpg"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/150x150'
@@ -344,7 +344,7 @@
                 <div class="h-avatar is-small">
                   <img
                     class="avatar"
-                    src="/@images/avatars/photos/16.jpg"
+                    src="/images/avatars/photos/16.jpg"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/150x150'
@@ -354,7 +354,7 @@
                 <div class="h-avatar is-small">
                   <img
                     class="avatar"
-                    src="/@images/avatars/photos/19.jpg"
+                    src="/images/avatars/photos/19.jpg"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/150x150'

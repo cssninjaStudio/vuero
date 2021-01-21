@@ -12,7 +12,7 @@ useHead({
       <div class="error-wrapper">
         <div class="error-inner has-text-centered">
           <div class="bg-number">404</div>
-          <img src="/@images/illustrations/placeholders/error-2.svg" alt="" />
+          <img src="/images/illustrations/placeholders/error-2.svg" alt="" />
           <h3>We couldn't find that page</h3>
           <p>
             Looks like we couldn't find that page. Please try again or contact

@@ -135,12 +135,12 @@ const activeTab = ref<'list' | 'grid' | 'app' | 'utility'>('list')
                 <a href="https://cssninja.io" class="column-placeholder">
                   <img
                     class="light-image"
-                    src="/@images/icons/misc/buoy.svg"
+                    src="/images/icons/misc/buoy.svg"
                     alt=""
                   />
                   <img
                     class="dark-image"
-                    src="/@images/icons/misc/buoy-dark.svg"
+                    src="/images/icons/misc/buoy-dark.svg"
                     alt=""
                   />
                   <h3>Support</h3>
@@ -151,12 +151,12 @@ const activeTab = ref<'list' | 'grid' | 'app' | 'utility'>('list')
                 >
                   <img
                     class="light-image"
-                    src="/@images/icons/misc/docs.svg"
+                    src="/images/icons/misc/docs.svg"
                     alt=""
                   />
                   <img
                     class="dark-image"
-                    src="/@images/icons/misc/docs-dark.svg"
+                    src="/images/icons/misc/docs-dark.svg"
                     alt=""
                   />
                   <h3>Documentation</h3>
@@ -271,12 +271,12 @@ const activeTab = ref<'list' | 'grid' | 'app' | 'utility'>('list')
                 <a href="https://cssninja.io" class="column-placeholder">
                   <img
                     class="light-image"
-                    src="/@images/icons/misc/buoy.svg"
+                    src="/images/icons/misc/buoy.svg"
                     alt=""
                   />
                   <img
                     class="dark-image"
-                    src="/@images/icons/misc/buoy-dark.svg"
+                    src="/images/icons/misc/buoy-dark.svg"
                     alt=""
                   />
                   <h3>Support</h3>
@@ -287,12 +287,12 @@ const activeTab = ref<'list' | 'grid' | 'app' | 'utility'>('list')
                 >
                   <img
                     class="light-image"
-                    src="/@images/icons/misc/docs.svg"
+                    src="/images/icons/misc/docs.svg"
                     alt=""
                   />
                   <img
                     class="dark-image"
-                    src="/@images/icons/misc/docs-dark.svg"
+                    src="/images/icons/misc/docs-dark.svg"
                     alt=""
                   />
                   <h3>Documentation</h3>
@@ -610,12 +610,12 @@ const activeTab = ref<'list' | 'grid' | 'app' | 'utility'>('list')
                 <a href="https://cssninja.io" class="column-placeholder">
                   <img
                     class="light-image"
-                    src="/@images/icons/misc/buoy.svg"
+                    src="/images/icons/misc/buoy.svg"
                     alt=""
                   />
                   <img
                     class="dark-image"
-                    src="/@images/icons/misc/buoy-dark.svg"
+                    src="/images/icons/misc/buoy-dark.svg"
                     alt=""
                   />
                   <h3>Support</h3>
@@ -626,12 +626,12 @@ const activeTab = ref<'list' | 'grid' | 'app' | 'utility'>('list')
                 >
                   <img
                     class="light-image"
-                    src="/@images/icons/misc/docs.svg"
+                    src="/images/icons/misc/docs.svg"
                     alt=""
                   />
                   <img
                     class="dark-image"
-                    src="/@images/icons/misc/docs-dark.svg"
+                    src="/images/icons/misc/docs-dark.svg"
                     alt=""
                   />
                   <h3>Documentation</h3>

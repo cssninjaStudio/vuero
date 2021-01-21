@@ -38,7 +38,7 @@ import { activePanel } from '/@src/composition/state/ui/activePanelState'
                 <div class="h-avatar">
                   <img
                     class="avatar"
-                    src="/@images/avatars/photos/7.jpg"
+                    src="/images/avatars/photos/7.jpg"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/150x150'
@@ -48,7 +48,7 @@ import { activePanel } from '/@src/composition/state/ui/activePanelState'
                 <div class="h-avatar">
                   <img
                     class="avatar"
-                    src="/@images/avatars/photos/8.jpg"
+                    src="/images/avatars/photos/8.jpg"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/150x150'
@@ -58,7 +58,7 @@ import { activePanel } from '/@src/composition/state/ui/activePanelState'
                 <div class="h-avatar">
                   <img
                     class="avatar"
-                    src="/@images/avatars/photos/5.jpg"
+                    src="/images/avatars/photos/5.jpg"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/150x150'
@@ -100,7 +100,7 @@ import { activePanel } from '/@src/composition/state/ui/activePanelState'
           <h3>Files</h3>
           <div class="task-files">
             <div class="file-box">
-              <img src="/@images/icons/files/zip-format.svg" alt="" />
+              <img src="/images/icons/files/zip-format.svg" alt="" />
               <div class="meta">
                 <span>Preliminary Sketches</span>
                 <span>3MB <i class="fas fa-circle"></i> 5 days ago</span>
@@ -108,7 +108,7 @@ import { activePanel } from '/@src/composition/state/ui/activePanelState'
               <FileCardDropdown />
             </div>
             <div class="file-box">
-              <img src="/@images/icons/files/sheet.svg" alt="" />
+              <img src="/images/icons/files/sheet.svg" alt="" />
               <div class="meta">
                 <span>Project Budget</span>
                 <span>0.6MB <i class="fas fa-circle"></i> 8 days ago</span>
@@ -116,7 +116,7 @@ import { activePanel } from '/@src/composition/state/ui/activePanelState'
               <FileCardDropdown />
             </div>
             <div class="file-box">
-              <img src="/@images/icons/files/video.svg" alt="" />
+              <img src="/images/icons/files/video.svg" alt="" />
               <div class="meta">
                 <span>POC Demo</span>
                 <span>8.75MB <i class="fas fa-circle"></i> 8 days ago</span>
@@ -142,7 +142,7 @@ import { activePanel } from '/@src/composition/state/ui/activePanelState'
                   <div class="h-avatar is-small">
                     <img
                       class="avatar"
-                      src="/@images/avatars/photos/8.jpg"
+                      src="/images/avatars/photos/8.jpg"
                       alt=""
                       @error="
                         $event.target.src =

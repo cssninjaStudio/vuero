@@ -80,7 +80,7 @@
                   <img
                     id="project-preview-customer-logo"
                     class="avatar"
-                    src="/@images/photo/demo/brands/airbnb.svg"
+                    src="/images/photo/demo/brands/airbnb.svg"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/150x150'
@@ -163,7 +163,7 @@
                     <div class="h-avatar">
                       <img
                         class="avatar"
-                        src="/@images/avatars/photos/8.jpg"
+                        src="/images/avatars/photos/8.jpg"
                         alt=""
                         data-user-popover="3"
                         @error="
@@ -183,7 +183,7 @@
                     <div class="h-avatar">
                       <img
                         class="avatar"
-                        src="/@images/avatars/photos/7.jpg"
+                        src="/images/avatars/photos/7.jpg"
                         alt=""
                         data-user-popover="0"
                         @error="
@@ -203,7 +203,7 @@
                     <div class="h-avatar">
                       <img
                         class="avatar"
-                        src="/@images/avatars/photos/25.jpg"
+                        src="/images/avatars/photos/25.jpg"
                         alt=""
                         data-user-popover="4"
                         @error="
@@ -243,7 +243,7 @@
                     <div class="h-avatar is-small">
                       <img
                         class="avatar"
-                        src="/@images/photo/demo/tools/illustrator.svg"
+                        src="/images/photo/demo/tools/illustrator.svg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -262,7 +262,7 @@
                     <div class="h-avatar is-small">
                       <img
                         class="avatar"
-                        src="/@images/photo/demo/tools/figma.svg"
+                        src="/images/photo/demo/tools/figma.svg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -281,7 +281,7 @@
                     <div class="h-avatar is-small">
                       <img
                         class="avatar"
-                        src="/@images/photo/demo/tools/taiga.svg"
+                        src="/images/photo/demo/tools/taiga.svg"
                         alt=""
                         @error="
                           $event.target.src =

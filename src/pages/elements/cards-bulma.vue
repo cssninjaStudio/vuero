@@ -118,7 +118,7 @@ useHead({
                           <div class="h-avatar is-medium">
                             <img
                               class="avatar is-squared"
-                              src="/@images/avatars/photos/19.jpg"
+                              src="/images/avatars/photos/19.jpg"
                               alt=""
                               data-user-popover="17"
                               @error="
@@ -163,7 +163,7 @@ useHead({
                           <div class="h-avatar is-medium">
                             <img
                               class="avatar is-squared"
-                              src="/@images/avatars/photos/5.jpg"
+                              src="/images/avatars/photos/5.jpg"
                               alt=""
                               data-user-popover="9"
                               @error="
@@ -208,7 +208,7 @@ useHead({
                           <div class="h-avatar is-medium">
                             <img
                               class="avatar is-squared"
-                              src="/@images/avatars/photos/36.jpg"
+                              src="/images/avatars/photos/36.jpg"
                               alt=""
                               data-user-popover="30"
                               @error="
@@ -260,7 +260,7 @@ useHead({
                       <div class="card-image">
                         <figure class="image is-4by3">
                           <img
-                            src="/@images/photo/demo/apps/1.jpg"
+                            src="/images/photo/demo/apps/1.jpg"
                             alt=""
                             @error="
                               $event.target.src =
@@ -274,7 +274,7 @@ useHead({
                           <div class="h-avatar is-medium">
                             <img
                               class="avatar"
-                              src="/@images/avatars/photos/19.jpg"
+                              src="/images/avatars/photos/19.jpg"
                               alt=""
                               data-user-popover="17"
                               @error="
@@ -284,7 +284,7 @@ useHead({
                             />
                             <img
                               class="badge"
-                              src="/@images/icons/flags/germany.svg"
+                              src="/images/icons/flags/germany.svg"
                               alt=""
                               @error="
                                 $event.target.src =
@@ -317,7 +317,7 @@ useHead({
                       <div class="card-image">
                         <figure class="image is-4by3">
                           <img
-                            src="/@images/photo/demo/apps/2.png"
+                            src="/images/photo/demo/apps/2.png"
                             alt=""
                             @error="
                               $event.target.src =
@@ -331,7 +331,7 @@ useHead({
                           <div class="h-avatar is-medium">
                             <img
                               class="avatar"
-                              src="/@images/avatars/photos/23.jpg"
+                              src="/images/avatars/photos/23.jpg"
                               alt=""
                               data-user-popover="21"
                               @error="
@@ -341,7 +341,7 @@ useHead({
                             />
                             <img
                               class="badge"
-                              src="/@images/icons/flags/united-states-of-america.svg"
+                              src="/images/icons/flags/united-states-of-america.svg"
                               alt=""
                               @error="
                                 $event.target.src =
@@ -374,7 +374,7 @@ useHead({
                       <div class="card-image">
                         <figure class="image is-4by3">
                           <img
-                            src="/@images/photo/demo/apps/7.png"
+                            src="/images/photo/demo/apps/7.png"
                             alt=""
                             @error="
                               $event.target.src =
@@ -388,7 +388,7 @@ useHead({
                           <div class="h-avatar is-medium">
                             <img
                               class="avatar"
-                              src="/@images/avatars/photos/12.jpg"
+                              src="/images/avatars/photos/12.jpg"
                               alt=""
                               data-user-popover="2"
                               @error="
@@ -398,7 +398,7 @@ useHead({
                             />
                             <img
                               class="badge"
-                              src="/@images/icons/flags/united-states-of-america.svg"
+                              src="/images/icons/flags/united-states-of-america.svg"
                               alt=""
                               @error="
                                 $event.target.src =

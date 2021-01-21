@@ -31,12 +31,12 @@
       <div class="placeholder-content">
         <img
           class="light-image"
-          src="/@images/illustrations/placeholders/search-4.svg"
+          src="/images/illustrations/placeholders/search-4.svg"
           alt=""
         />
         <img
           class="dark-image"
-          src="/@images/illustrations/placeholders/search-4-dark.svg"
+          src="/images/illustrations/placeholders/search-4-dark.svg"
           alt=""
         />
         <h3 class="dark-inverted">No data to show</h3>

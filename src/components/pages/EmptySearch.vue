@@ -43,12 +43,12 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
         <div class="placeholder-content">
           <img
             class="light-image"
-            src="/@images/illustrations/placeholders/search-7.svg"
+            src="/images/illustrations/placeholders/search-7.svg"
             alt=""
           />
           <img
             class="dark-image"
-            src="/@images/illustrations/placeholders/search-7-dark.svg"
+            src="/images/illustrations/placeholders/search-7-dark.svg"
             alt=""
           />
           <h3>We couldn't find any matching results.</h3>

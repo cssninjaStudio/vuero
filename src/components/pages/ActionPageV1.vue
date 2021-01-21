@@ -7,14 +7,14 @@
           <div class="h-avatar is-big">
             <img
               class="avatar"
-              src="/@images/avatars/photos/16.jpg"
+              src="/images/avatars/photos/16.jpg"
               alt=""
               data-user-popover="16"
               @error="$event.target.src = 'https://via.placeholder.com/150x150'"
             />
             <img
               class="badge"
-              src="/@images/photo/demo/apps/9.png"
+              src="/images/photo/demo/apps/9.png"
               alt=""
               @error="$event.target.src = 'https://via.placeholder.com/150x150'"
             />
@@ -38,7 +38,7 @@
               <div class="h-avatar is-small">
                 <img
                   class="avatar"
-                  src="/@images/avatars/photos/21.jpg"
+                  src="/images/avatars/photos/21.jpg"
                   alt=""
                   data-user-popover="19"
                   @error="
@@ -54,7 +54,7 @@
               <div class="h-avatar is-small">
                 <img
                   class="avatar"
-                  src="/@images/avatars/photos/39.jpg"
+                  src="/images/avatars/photos/39.jpg"
                   alt=""
                   data-user-popover="33"
                   @error="

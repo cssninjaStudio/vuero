@@ -38,13 +38,13 @@
           <div class="h-avatar is-big">
             <img
               class="avatar light-image"
-              src="/@images/photo/demo/brands/udemy.svg"
+              src="/images/photo/demo/brands/udemy.svg"
               alt=""
               @error="$event.target.src = 'https://via.placeholder.com/150x150'"
             />
             <img
               class="avatar dark-image"
-              src="/@images/photo/demo/brands/udemy-dark.svg"
+              src="/images/photo/demo/brands/udemy-dark.svg"
               alt=""
               @error="$event.target.src = 'https://via.placeholder.com/150x150'"
             />
@@ -278,7 +278,7 @@
               <div class="h-avatar is-medium">
                 <img
                   class="avatar"
-                  src="/@images/avatars/photos/31.jpg"
+                  src="/images/avatars/photos/31.jpg"
                   alt=""
                   data-user-popover="27"
                   @error="
@@ -305,7 +305,7 @@
               <div class="h-avatar is-medium">
                 <img
                   class="avatar"
-                  src="/@images/avatars/photos/23.jpg"
+                  src="/images/avatars/photos/23.jpg"
                   alt=""
                   data-user-popover="21"
                   @error="
@@ -333,7 +333,7 @@
               <div class="h-avatar is-medium">
                 <img
                   class="avatar"
-                  src="/@images/avatars/photos/32.jpg"
+                  src="/images/avatars/photos/32.jpg"
                   alt=""
                   data-user-popover="28"
                   @error="
@@ -360,7 +360,7 @@
               <div class="h-avatar is-medium">
                 <img
                   class="avatar"
-                  src="/@images/avatars/photos/13.jpg"
+                  src="/images/avatars/photos/13.jpg"
                   alt=""
                   data-user-popover="6"
                   @error="

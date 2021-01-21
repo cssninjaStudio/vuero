@@ -5,15 +5,15 @@
       <!--Widget-->
       <div class="widget illustration-widget illustration-widget-v1">
         <div class="img-container">
-          <img class="main" src="/@images/illustrations/widgets/1.svg" alt="" />
+          <img class="main" src="/images/illustrations/widgets/1.svg" alt="" />
           <img
             class="badge badge-1"
-            src="/@images/illustrations/widgets/2.svg"
+            src="/images/illustrations/widgets/2.svg"
             alt=""
           />
           <img
             class="badge badge-2"
-            src="/@images/illustrations/widgets/3.svg"
+            src="/images/illustrations/widgets/3.svg"
             alt=""
           />
         </div>
@@ -28,7 +28,7 @@
             <div class="h-avatar is-medium">
               <img
                 class="avatar"
-                src="/@images/avatars/photos/8.jpg"
+                src="/images/avatars/photos/8.jpg"
                 alt=""
                 data-user-popover="3"
                 @error="
@@ -61,7 +61,7 @@
 
       <!--Widget-->
       <div class="widget illustration-widget illustration-widget-v2">
-        <img class="main" src="/@images/illustrations/widgets/7.svg" alt="" />
+        <img class="main" src="/images/illustrations/widgets/7.svg" alt="" />
         <h3>You unlocked 2 new Achievements</h3>
         <p>Congrats, your efforts have been rewarded. Keep up like this!</p>
       </div>
@@ -81,7 +81,7 @@
             <div class="h-avatar">
               <img
                 class="avatar is-squared"
-                src="/@images/avatars/photos/26.jpg"
+                src="/images/avatars/photos/26.jpg"
                 alt=""
                 data-user-popover="23"
                 @error="
@@ -97,7 +97,7 @@
             <div class="h-avatar">
               <img
                 class="avatar is-squared"
-                src="/@images/avatars/photos/7.jpg"
+                src="/images/avatars/photos/7.jpg"
                 alt=""
                 data-user-popover="0"
                 @error="
@@ -113,7 +113,7 @@
             <div class="h-avatar">
               <img
                 class="avatar is-squared"
-                src="/@images/avatars/photos/8.jpg"
+                src="/images/avatars/photos/8.jpg"
                 alt=""
                 data-user-popover="3"
                 @error="
@@ -132,7 +132,7 @@
     <div class="column is-3">
       <!--Widget-->
       <div class="widget illustration-widget illustration-widget-v2">
-        <img class="main" src="/@images/illustrations/widgets/4.svg" alt="" />
+        <img class="main" src="/images/illustrations/widgets/4.svg" alt="" />
         <h3>You unlocked 2 new Achievements</h3>
         <p>Congrats, your efforts have been rewarded. Keep up like this!</p>
       </div>
@@ -178,7 +178,7 @@
             <div class="h-avatar">
               <img
                 class="avatar"
-                src="/@images/avatars/photos/26.jpg"
+                src="/images/avatars/photos/26.jpg"
                 alt=""
                 data-user-popover="23"
                 @error="
@@ -194,7 +194,7 @@
             <div class="h-avatar">
               <img
                 class="avatar"
-                src="/@images/avatars/photos/7.jpg"
+                src="/images/avatars/photos/7.jpg"
                 alt=""
                 data-user-popover="0"
                 @error="
@@ -210,7 +210,7 @@
             <div class="h-avatar">
               <img
                 class="avatar"
-                src="/@images/avatars/photos/8.jpg"
+                src="/images/avatars/photos/8.jpg"
                 alt=""
                 data-user-popover="3"
                 @error="
@@ -345,7 +345,7 @@
 
       <!--Widget-->
       <div class="widget illustration-widget illustration-widget-v3">
-        <img class="main" src="/@images/illustrations/widgets/5.svg" alt="" />
+        <img class="main" src="/images/illustrations/widgets/5.svg" alt="" />
         <h3>You unlocked 2 new Achievements</h3>
         <p>Congrats, your efforts have been rewarded. Keep up like this!</p>
       </div>
@@ -357,7 +357,7 @@
             <div class="h-avatar is-medium">
               <img
                 class="avatar is-squared"
-                src="/@images/avatars/photos/8.jpg"
+                src="/images/avatars/photos/8.jpg"
                 alt=""
                 data-user-popover="3"
                 @error="
@@ -429,7 +429,7 @@
             <div class="h-avatar">
               <img
                 class="avatar is-squared"
-                src="/@images/avatars/photos/26.jpg"
+                src="/images/avatars/photos/26.jpg"
                 alt=""
                 data-user-popover="23"
                 @error="
@@ -445,7 +445,7 @@
             <div class="h-avatar">
               <img
                 class="avatar is-squared"
-                src="/@images/avatars/photos/7.jpg"
+                src="/images/avatars/photos/7.jpg"
                 alt=""
                 data-user-popover="0"
                 @error="
@@ -461,7 +461,7 @@
             <div class="h-avatar">
               <img
                 class="avatar is-squared"
-                src="/@images/avatars/photos/8.jpg"
+                src="/images/avatars/photos/8.jpg"
                 alt=""
                 data-user-popover="3"
                 @error="
@@ -493,7 +493,7 @@
             <div class="h-avatar">
               <img
                 class="avatar"
-                src="/@images/avatars/photos/26.jpg"
+                src="/images/avatars/photos/26.jpg"
                 alt=""
                 data-user-popover="23"
                 @error="
@@ -509,7 +509,7 @@
             <div class="h-avatar">
               <img
                 class="avatar"
-                src="/@images/avatars/photos/7.jpg"
+                src="/images/avatars/photos/7.jpg"
                 alt=""
                 data-user-popover="0"
                 @error="
@@ -525,7 +525,7 @@
             <div class="h-avatar">
               <img
                 class="avatar"
-                src="/@images/avatars/photos/8.jpg"
+                src="/images/avatars/photos/8.jpg"
                 alt=""
                 data-user-popover="3"
                 @error="
@@ -543,10 +543,10 @@
       <!--Widget-->
       <div class="widget call-widget">
         <div class="img-container">
-          <img class="main" src="/@images/illustrations/widgets/6.svg" alt="" />
+          <img class="main" src="/images/illustrations/widgets/6.svg" alt="" />
           <img
             class="badge"
-            src="/@images/avatars/photos/7.jpg"
+            src="/images/avatars/photos/7.jpg"
             alt=""
             data-user-popover="0"
             @error="$event.target.src = 'https://via.placeholder.com/150x150'"
@@ -568,7 +568,7 @@
 
       <!--Widget-->
       <div class="widget illustration-widget illustration-widget-v2">
-        <img class="main" src="/@images/illustrations/widgets/8.svg" alt="" />
+        <img class="main" src="/images/illustrations/widgets/8.svg" alt="" />
         <h3>You unlocked 2 new Achievements</h3>
         <p>Congrats, your efforts have been rewarded. Keep up like this!</p>
       </div>

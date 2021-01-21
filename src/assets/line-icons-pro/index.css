@@ -6,12 +6,12 @@ Generated using nucleoapp.com
 -------------------------------- */
 @font-face {
   font-family: 'LineIconsPro Light';
-  src: url('/fonts/LineIconsPro Light.eot');
-  src: url('/fonts/LineIconsPro Light.eot') format('embedded-opentype'),
-    url('/fonts/LineIconsPro Light.woff2') format('woff2'),
-    url('/fonts/LineIconsPro Light.woff') format('woff'),
-    url('/fonts/LineIconsPro Light.ttf') format('truetype'),
-    url('/fonts/LineIconsPro Light.svg') format('svg');
+  src: url('/fonts/LineIconsProLight.eot');
+  src: url('/fonts/LineIconsProLight.eot') format('embedded-opentype'),
+    url('/fonts/LineIconsProLight.woff2') format('woff2'),
+    url('/fonts/LineIconsProLight.woff') format('woff'),
+    url('/fonts/LineIconsProLight.ttf') format('truetype'),
+    url('/fonts/LineIconsProLight.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }

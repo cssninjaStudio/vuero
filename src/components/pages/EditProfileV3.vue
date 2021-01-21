@@ -9,7 +9,7 @@
             <div class="h-avatar is-large">
               <img
                 class="avatar"
-                src="/@images/avatars/photos/8.jpg"
+                src="/images/avatars/photos/8.jpg"
                 alt=""
                 @error="
                   $event.target.src = 'https://via.placeholder.com/150x150'
@@ -17,7 +17,7 @@
               />
               <img
                 class="badge"
-                src="/@images/icons/flags/united-states-of-america.svg"
+                src="/images/icons/flags/united-states-of-america.svg"
                 alt=""
                 @error="
                   $event.target.src = 'https://via.placeholder.com/150x150'
@@ -126,7 +126,7 @@
                               <div class="box-inner">
                                 <div class="combo-item">
                                   <img
-                                    src="/@images/icons/flags/united-states-of-america.svg"
+                                    src="/images/icons/flags/united-states-of-america.svg"
                                     alt=""
                                     @error="
                                       $event.target.src =
@@ -150,7 +150,7 @@
                                     <li>
                                       <span class="item-icon">
                                         <img
-                                          src="/@images/icons/flags/united-states-of-america.svg"
+                                          src="/images/icons/flags/united-states-of-america.svg"
                                           alt=""
                                         />
                                       </span>
@@ -165,7 +165,7 @@
                                     <li>
                                       <span class="item-icon">
                                         <img
-                                          src="/@images/icons/flags/france.svg"
+                                          src="/images/icons/flags/france.svg"
                                           alt=""
                                         />
                                       </span>
@@ -180,7 +180,7 @@
                                     <li>
                                       <span class="item-icon">
                                         <img
-                                          src="/@images/icons/flags/germany.svg"
+                                          src="/images/icons/flags/germany.svg"
                                           alt=""
                                         />
                                       </span>
@@ -195,7 +195,7 @@
                                     <li>
                                       <span class="item-icon">
                                         <img
-                                          src="/@images/icons/flags/spain.svg"
+                                          src="/images/icons/flags/spain.svg"
                                           alt=""
                                         />
                                       </span>
@@ -316,7 +316,7 @@
                 <div class="setting-item">
                   <div class="icon-wrap has-img">
                     <img
-                      src="/@images/icons/flags/united-states-of-america.svg"
+                      src="/images/icons/flags/united-states-of-america.svg"
                       alt=""
                       @error="
                         $event.target.src =
@@ -337,7 +337,7 @@
                 <div class="setting-item">
                   <div class="icon-wrap has-img">
                     <img
-                      src="/@images/icons/flags/france.svg"
+                      src="/images/icons/flags/france.svg"
                       alt=""
                       @error="
                         $event.target.src =
@@ -358,7 +358,7 @@
                 <div class="setting-item">
                   <div class="icon-wrap has-img">
                     <img
-                      src="/@images/icons/flags/germany.svg"
+                      src="/images/icons/flags/germany.svg"
                       alt=""
                       @error="
                         $event.target.src =
@@ -379,7 +379,7 @@
                 <div class="setting-item">
                   <div class="icon-wrap has-img">
                     <img
-                      src="/@images/icons/flags/spain.svg"
+                      src="/images/icons/flags/spain.svg"
                       alt=""
                       @error="
                         $event.target.src =
@@ -439,7 +439,7 @@
                               <div class="box-inner">
                                 <div class="combo-item">
                                   <img
-                                    src="/@images/icons/stacks/html5.svg"
+                                    src="/images/icons/stacks/html5.svg"
                                     alt=""
                                     @error="
                                       $event.target.src =
@@ -463,7 +463,7 @@
                                     <li>
                                       <span class="item-icon">
                                         <img
-                                          src="/@images/icons/stacks/html5.svg"
+                                          src="/images/icons/stacks/html5.svg"
                                           alt=""
                                         />
                                       </span>
@@ -478,7 +478,7 @@
                                     <li>
                                       <span class="item-icon">
                                         <img
-                                          src="/@images/icons/stacks/css3.svg"
+                                          src="/images/icons/stacks/css3.svg"
                                           alt=""
                                         />
                                       </span>
@@ -493,7 +493,7 @@
                                     <li>
                                       <span class="item-icon">
                                         <img
-                                          src="/@images/icons/stacks/js.svg"
+                                          src="/images/icons/stacks/js.svg"
                                           alt=""
                                         />
                                       </span>
@@ -508,7 +508,7 @@
                                     <li>
                                       <span class="item-icon">
                                         <img
-                                          src="/@images/icons/stacks/reactjs.svg"
+                                          src="/images/icons/stacks/reactjs.svg"
                                           alt=""
                                         />
                                       </span>
@@ -523,7 +523,7 @@
                                     <li>
                                       <span class="item-icon">
                                         <img
-                                          src="/@images/icons/stacks/angular.svg"
+                                          src="/images/icons/stacks/angular.svg"
                                           alt=""
                                         />
                                       </span>
@@ -538,7 +538,7 @@
                                     <li>
                                       <span class="item-icon">
                                         <img
-                                          src="/@images/icons/stacks/vuejs.svg"
+                                          src="/images/icons/stacks/vuejs.svg"
                                           alt=""
                                         />
                                       </span>
@@ -553,7 +553,7 @@
                                     <li>
                                       <span class="item-icon">
                                         <img
-                                          src="/@images/icons/stacks/nodejs.svg"
+                                          src="/images/icons/stacks/nodejs.svg"
                                           alt=""
                                         />
                                       </span>
@@ -568,7 +568,7 @@
                                     <li>
                                       <span class="item-icon">
                                         <img
-                                          src="/@images/icons/stacks/csharp.svg"
+                                          src="/images/icons/stacks/csharp.svg"
                                           alt=""
                                         />
                                       </span>
@@ -720,7 +720,7 @@
                 <div class="setting-item">
                   <div class="icon-wrap has-img">
                     <img
-                      src="/@images/icons/stacks/js.svg"
+                      src="/images/icons/stacks/js.svg"
                       alt=""
                       @error="
                         $event.target.src =
@@ -741,7 +741,7 @@
                 <div class="setting-item">
                   <div class="icon-wrap has-img">
                     <img
-                      src="/@images/icons/stacks/html5.svg"
+                      src="/images/icons/stacks/html5.svg"
                       alt=""
                       @error="
                         $event.target.src =
@@ -762,7 +762,7 @@
                 <div class="setting-item">
                   <div class="icon-wrap has-img">
                     <img
-                      src="/@images/icons/stacks/css3.svg"
+                      src="/images/icons/stacks/css3.svg"
                       alt=""
                       @error="
                         $event.target.src =
@@ -822,7 +822,7 @@
                               <div class="box-inner">
                                 <div class="combo-item">
                                   <img
-                                    src="/@images/icons/stacks/illustrator.svg"
+                                    src="/images/icons/stacks/illustrator.svg"
                                     alt=""
                                     @error="
                                       $event.target.src =
@@ -846,7 +846,7 @@
                                     <li>
                                       <span class="item-icon">
                                         <img
-                                          src="/@images/icons/stacks/illustrator.svg"
+                                          src="/images/icons/stacks/illustrator.svg"
                                           alt=""
                                         />
                                       </span>
@@ -861,7 +861,7 @@
                                     <li>
                                       <span class="item-icon">
                                         <img
-                                          src="/@images/icons/stacks/photoshop.svg"
+                                          src="/images/icons/stacks/photoshop.svg"
                                           alt=""
                                         />
                                       </span>
@@ -876,7 +876,7 @@
                                     <li>
                                       <span class="item-icon">
                                         <img
-                                          src="/@images/photo/demo/brands/jira.svg"
+                                          src="/images/photo/demo/brands/jira.svg"
                                           alt=""
                                         />
                                       </span>
@@ -893,7 +893,7 @@
                                     <li>
                                       <span class="item-icon">
                                         <img
-                                          src="/@images/photo/demo/brands/office.svg"
+                                          src="/images/photo/demo/brands/office.svg"
                                           alt=""
                                         />
                                       </span>
@@ -1000,7 +1000,7 @@
                 <div class="setting-item">
                   <div class="icon-wrap has-img">
                     <img
-                      src="/@images/icons/stacks/illustrator.svg"
+                      src="/images/icons/stacks/illustrator.svg"
                       alt=""
                       @error="
                         $event.target.src =
@@ -1021,7 +1021,7 @@
                 <div class="setting-item">
                   <div class="icon-wrap has-img">
                     <img
-                      src="/@images/photo/demo/brands/jira.svg"
+                      src="/images/photo/demo/brands/jira.svg"
                       alt=""
                       @error="
                         $event.target.src =
@@ -1042,7 +1042,7 @@
                 <div class="setting-item">
                   <div class="icon-wrap has-img">
                     <img
-                      src="/@images/photo/demo/brands/office.svg"
+                      src="/images/photo/demo/brands/office.svg"
                       alt=""
                       @error="
                         $event.target.src =

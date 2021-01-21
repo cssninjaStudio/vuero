@@ -10,12 +10,12 @@
       <div class="placeholder-content">
         <img
           class="light-image is-rounded"
-          src="/@images/illustrations/wizard/team-placeholder.svg"
+          src="/images/illustrations/wizard/team-placeholder.svg"
           alt=""
         />
         <img
           class="dark-image is-rounded"
-          src="/@images/illustrations/wizard/team-placeholder.svg"
+          src="/images/illustrations/wizard/team-placeholder.svg"
           alt=""
         />
         <h3>Invite People</h3>
@@ -44,14 +44,14 @@
         <div class="h-avatar is-big">
           <img
             class="avatar"
-            src="/@images/avatars/photos/8.jpg"
+            src="/images/avatars/photos/8.jpg"
             alt=""
             data-user-popover="3"
             @error="$event.target.src = 'https://via.placeholder.com/150x150'"
           />
           <img
             class="badge"
-            src="/@images/icons/flags/united-states-of-america.svg"
+            src="/images/icons/flags/united-states-of-america.svg"
             alt=""
             @error="$event.target.src = 'https://via.placeholder.com/150x150'"
           />

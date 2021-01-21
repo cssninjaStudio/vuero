@@ -6,12 +6,12 @@
         <div class="box-content">
           <img
             class="light-image"
-            src="/@images/illustrations/placeholders/launch.svg"
+            src="/images/illustrations/placeholders/launch.svg"
             alt=""
           />
           <img
             class="dark-image"
-            src="/@images/illustrations/placeholders/launch-dark.svg"
+            src="/images/illustrations/placeholders/launch-dark.svg"
             alt=""
           />
           <h3 class="dark-inverted">Please confirm your account</h3>

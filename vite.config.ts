@@ -17,10 +17,6 @@ const config: UserConfig = {
       find: '/@src/',
       replacement: `${path.resolve(projectRootDir, 'src')}/`,
     },
-    {
-      find: '/@images/',
-      replacement: `${path.resolve(projectRootDir, 'src/assets/images')}/`,
-    },
   ],
   optimizeDeps: {
     include: [

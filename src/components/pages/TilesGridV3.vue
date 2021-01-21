@@ -5,12 +5,12 @@
       <div class="placeholder-content">
         <img
           class="light-image"
-          src="/@images/illustrations/placeholders/search-6.svg"
+          src="/images/illustrations/placeholders/search-6.svg"
           alt=""
         />
         <img
           class="dark-image"
-          src="/@images/illustrations/placeholders/search-6-dark.svg"
+          src="/images/illustrations/placeholders/search-6-dark.svg"
           alt=""
         />
         <h3>We couldn't find any matching results.</h3>
@@ -28,7 +28,7 @@
         <a href="#" class="tile is-child tile-grid-item is-medium">
           <div class="tile-grid-item-inner">
             <img
-              src="/@images/photo/demo/11.jpg"
+              src="/images/photo/demo/11.jpg"
               alt=""
               @error="$event.target.src = 'https://via.placeholder.com/400x300'"
             />
@@ -46,7 +46,7 @@
                 <div class="h-avatar is-small">
                   <img
                     class="avatar"
-                    src="/@images/avatars/photos/39.jpg"
+                    src="/images/avatars/photos/39.jpg"
                     alt=""
                     data-user-popover="33"
                     @error="
@@ -69,7 +69,7 @@
         <a href="#" class="tile is-child tile-grid-item is-medium">
           <div class="tile-grid-item-inner">
             <img
-              src="/@images/photo/demo/12.jpg"
+              src="/images/photo/demo/12.jpg"
               alt=""
               @error="$event.target.src = 'https://via.placeholder.com/400x300'"
             />
@@ -87,7 +87,7 @@
                 <div class="h-avatar is-small">
                   <img
                     class="avatar"
-                    src="/@images/avatars/photos/15.jpg"
+                    src="/images/avatars/photos/15.jpg"
                     alt=""
                     data-user-popover="15"
                     @error="
@@ -108,7 +108,7 @@
         <a href="#" class="tile is-child tile-grid-item is-medium">
           <div class="tile-grid-item-inner">
             <img
-              src="/@images/photo/demo/13.jpg"
+              src="/images/photo/demo/13.jpg"
               alt=""
               @error="$event.target.src = 'https://via.placeholder.com/400x300'"
             />
@@ -126,7 +126,7 @@
                 <div class="h-avatar is-small">
                   <img
                     class="avatar"
-                    src="/@images/avatars/photos/24.jpg"
+                    src="/images/avatars/photos/24.jpg"
                     alt=""
                     data-user-popover="22"
                     @error="
@@ -154,7 +154,7 @@
             <a href="#" class="tile is-child tile-grid-item is-medium">
               <div class="tile-grid-item-inner">
                 <img
-                  src="/@images/photo/demo/14.jpg"
+                  src="/images/photo/demo/14.jpg"
                   alt=""
                   @error="
                     $event.target.src = 'https://via.placeholder.com/400x300'
@@ -174,7 +174,7 @@
                     <div class="h-avatar is-small">
                       <img
                         class="avatar"
-                        src="/@images/avatars/photos/27.jpg"
+                        src="/images/avatars/photos/27.jpg"
                         alt=""
                         data-user-popover="10"
                         @error="
@@ -196,7 +196,7 @@
             <a href="#" class="tile is-child tile-grid-item is-medium">
               <div class="tile-grid-item-inner">
                 <img
-                  src="/@images/photo/demo/15.jpg"
+                  src="/images/photo/demo/15.jpg"
                   alt=""
                   @error="
                     $event.target.src = 'https://via.placeholder.com/400x300'
@@ -216,7 +216,7 @@
                     <div class="h-avatar is-small">
                       <img
                         class="avatar"
-                        src="/@images/avatars/photos/10.jpg"
+                        src="/images/avatars/photos/10.jpg"
                         alt=""
                         data-user-popover="8"
                         @error="
@@ -240,7 +240,7 @@
             <a href="#" class="tile is-child tile-grid-item is-large">
               <div class="tile-grid-item-inner">
                 <img
-                  src="/@images/photo/demo/16.jpg"
+                  src="/images/photo/demo/16.jpg"
                   alt=""
                   @error="
                     $event.target.src = 'https://via.placeholder.com/400x300'
@@ -260,7 +260,7 @@
                     <div class="h-avatar is-small">
                       <img
                         class="avatar"
-                        src="/@images/avatars/photos/22.jpg"
+                        src="/images/avatars/photos/22.jpg"
                         alt=""
                         data-user-popover="5"
                         @error="
@@ -285,7 +285,7 @@
           <a href="#" class="tile is-child tile-grid-item is-wide">
             <div class="tile-grid-item-inner">
               <img
-                src="/@images/photo/demo/18.jpg"
+                src="/images/photo/demo/18.jpg"
                 alt=""
                 @error="
                   $event.target.src = 'https://via.placeholder.com/400x300'
@@ -309,7 +309,7 @@
                   <div class="h-avatar is-small">
                     <img
                       class="avatar"
-                      src="/@images/avatars/photos/16.jpg"
+                      src="/images/avatars/photos/16.jpg"
                       alt=""
                       data-user-popover="16"
                       @error="
@@ -334,7 +334,7 @@
         <a href="#" class="tile is-child tile-grid-item is-tall">
           <div class="tile-grid-item-inner">
             <img
-              src="/@images/photo/demo/19.jpg"
+              src="/images/photo/demo/19.jpg"
               alt=""
               @error="$event.target.src = 'https://via.placeholder.com/400x300'"
             />
@@ -356,7 +356,7 @@
                 <div class="h-avatar is-small">
                   <img
                     class="avatar"
-                    src="/@images/avatars/photos/26.jpg"
+                    src="/images/avatars/photos/26.jpg"
                     alt=""
                     data-user-popover="23"
                     @error="
@@ -382,7 +382,7 @@
         <a href="#" class="tile is-child tile-grid-item is-wide">
           <div class="tile-grid-item-inner">
             <img
-              src="/@images/photo/demo/20.jpg"
+              src="/images/photo/demo/20.jpg"
               alt=""
               @error="$event.target.src = 'https://via.placeholder.com/400x300'"
             />
@@ -400,7 +400,7 @@
                 <div class="h-avatar is-small">
                   <img
                     class="avatar"
-                    src="/@images/avatars/photos/8.jpg"
+                    src="/images/avatars/photos/8.jpg"
                     alt=""
                     data-user-popover="3"
                     @error="
@@ -421,7 +421,7 @@
         <a href="#" class="tile is-child tile-grid-item is-wide">
           <div class="tile-grid-item-inner">
             <img
-              src="/@images/photo/demo/23.jpg"
+              src="/images/photo/demo/23.jpg"
               alt=""
               @error="$event.target.src = 'https://via.placeholder.com/400x300'"
             />
@@ -439,7 +439,7 @@
                 <div class="h-avatar is-small">
                   <img
                     class="avatar"
-                    src="/@images/avatars/photos/40.jpg"
+                    src="/images/avatars/photos/40.jpg"
                     alt=""
                     data-user-popover="11"
                     @error="
@@ -463,7 +463,7 @@
         <a href="#" class="tile is-child tile-grid-item is-medium">
           <div class="tile-grid-item-inner">
             <img
-              src="/@images/photo/demo/22.jpg"
+              src="/images/photo/demo/22.jpg"
               alt=""
               @error="$event.target.src = 'https://via.placeholder.com/400x300'"
             />
@@ -481,7 +481,7 @@
                 <div class="h-avatar is-small">
                   <img
                     class="avatar"
-                    src="/@images/avatars/photos/9.jpg"
+                    src="/images/avatars/photos/9.jpg"
                     alt=""
                     data-user-popover="1"
                     @error="
@@ -502,7 +502,7 @@
         <a href="#" class="tile is-child tile-grid-item is-medium">
           <div class="tile-grid-item-inner">
             <img
-              src="/@images/photo/demo/24.jpg"
+              src="/images/photo/demo/24.jpg"
               alt=""
               @error="$event.target.src = 'https://via.placeholder.com/400x300'"
             />
@@ -520,7 +520,7 @@
                 <div class="h-avatar is-small">
                   <img
                     class="avatar"
-                    src="/@images/avatars/photos/19.jpg"
+                    src="/images/avatars/photos/19.jpg"
                     alt=""
                     data-user-popover="17"
                     @error="
@@ -541,7 +541,7 @@
         <a href="#" class="tile is-child tile-grid-item is-medium">
           <div class="tile-grid-item-inner">
             <img
-              src="/@images/photo/demo/27.jpg"
+              src="/images/photo/demo/27.jpg"
               alt=""
               @error="$event.target.src = 'https://via.placeholder.com/400x300'"
             />
@@ -559,7 +559,7 @@
                 <div class="h-avatar is-small">
                   <img
                     class="avatar"
-                    src="/@images/avatars/photos/33.jpg"
+                    src="/images/avatars/photos/33.jpg"
                     alt=""
                     data-user-popover="29"
                     @error="

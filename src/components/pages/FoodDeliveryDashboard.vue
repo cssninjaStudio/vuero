@@ -5,7 +5,7 @@
     <div class="left">
       <div class="left-header">
         <div class="header-image">
-          <img src="/@images/illustrations/dashboards/food/header.svg" alt="" />
+          <img src="/images/illustrations/dashboards/food/header.svg" alt="" />
         </div>
         <div class="header-meta">
           <h3>$0 delivery for 30 days! 🎉</h3>
@@ -33,7 +33,7 @@
               <div class="food-pill">
                 <div class="food-pill-icon">
                   <img
-                    src="/@images/illustrations/dashboards/food/icon-1.svg"
+                    src="/images/illustrations/dashboards/food/icon-1.svg"
                     alt=""
                   />
                 </div>
@@ -43,7 +43,7 @@
               <div class="food-pill">
                 <div class="food-pill-icon">
                   <img
-                    src="/@images/illustrations/dashboards/food/icon-2.svg"
+                    src="/images/illustrations/dashboards/food/icon-2.svg"
                     alt=""
                   />
                 </div>
@@ -53,7 +53,7 @@
               <div class="food-pill">
                 <div class="food-pill-icon">
                   <img
-                    src="/@images/illustrations/dashboards/food/icon-3.svg"
+                    src="/images/illustrations/dashboards/food/icon-3.svg"
                     alt=""
                   />
                 </div>
@@ -63,7 +63,7 @@
               <div class="food-pill">
                 <div class="food-pill-icon">
                   <img
-                    src="/@images/illustrations/dashboards/food/icon-4.svg"
+                    src="/images/illustrations/dashboards/food/icon-4.svg"
                     alt=""
                   />
                 </div>
@@ -73,7 +73,7 @@
               <div class="food-pill">
                 <div class="food-pill-icon">
                   <img
-                    src="/@images/illustrations/dashboards/food/icon-5.svg"
+                    src="/images/illustrations/dashboards/food/icon-5.svg"
                     alt=""
                   />
                 </div>
@@ -83,7 +83,7 @@
               <div class="food-pill">
                 <div class="food-pill-icon">
                   <img
-                    src="/@images/illustrations/dashboards/food/icon-6.svg"
+                    src="/images/illustrations/dashboards/food/icon-6.svg"
                     alt=""
                   />
                 </div>
@@ -93,7 +93,7 @@
               <div class="food-pill">
                 <div class="food-pill-icon">
                   <img
-                    src="/@images/illustrations/dashboards/food/icon-7.svg"
+                    src="/images/illustrations/dashboards/food/icon-7.svg"
                     alt=""
                   />
                 </div>
@@ -103,7 +103,7 @@
               <div class="food-pill">
                 <div class="food-pill-icon">
                   <img
-                    src="/@images/illustrations/dashboards/food/icon-8.svg"
+                    src="/images/illustrations/dashboards/food/icon-8.svg"
                     alt=""
                   />
                 </div>
@@ -113,7 +113,7 @@
               <div class="food-pill">
                 <div class="food-pill-icon">
                   <img
-                    src="/@images/illustrations/dashboards/food/icon-9.svg"
+                    src="/images/illustrations/dashboards/food/icon-9.svg"
                     alt=""
                   />
                 </div>
@@ -123,7 +123,7 @@
               <div class="food-pill">
                 <div class="food-pill-icon">
                   <img
-                    src="/@images/illustrations/dashboards/food/icon-10.svg"
+                    src="/images/illustrations/dashboards/food/icon-10.svg"
                     alt=""
                   />
                 </div>
@@ -133,7 +133,7 @@
               <div class="food-pill">
                 <div class="food-pill-icon">
                   <img
-                    src="/@images/illustrations/dashboards/food/icon-11.svg"
+                    src="/images/illustrations/dashboards/food/icon-11.svg"
                     alt=""
                   />
                 </div>
@@ -143,7 +143,7 @@
               <div class="food-pill">
                 <div class="food-pill-icon">
                   <img
-                    src="/@images/illustrations/dashboards/food/icon-12.svg"
+                    src="/images/illustrations/dashboards/food/icon-12.svg"
                     alt=""
                   />
                 </div>
@@ -153,7 +153,7 @@
               <div class="food-pill">
                 <div class="food-pill-icon">
                   <img
-                    src="/@images/illustrations/dashboards/food/icon-13.svg"
+                    src="/images/illustrations/dashboards/food/icon-13.svg"
                     alt=""
                   />
                 </div>
@@ -163,7 +163,7 @@
               <div class="food-pill">
                 <div class="food-pill-icon">
                   <img
-                    src="/@images/illustrations/dashboards/food/icon-2.svg"
+                    src="/images/illustrations/dashboards/food/icon-2.svg"
                     alt=""
                   />
                 </div>
@@ -173,7 +173,7 @@
               <div class="food-pill">
                 <div class="food-pill-icon">
                   <img
-                    src="/@images/illustrations/dashboards/food/icon-3.svg"
+                    src="/images/illustrations/dashboards/food/icon-3.svg"
                     alt=""
                   />
                 </div>
@@ -183,7 +183,7 @@
               <div class="food-pill">
                 <div class="food-pill-icon">
                   <img
-                    src="/@images/illustrations/dashboards/food/icon-4.svg"
+                    src="/images/illustrations/dashboards/food/icon-4.svg"
                     alt=""
                   />
                 </div>
@@ -193,7 +193,7 @@
               <div class="food-pill">
                 <div class="food-pill-icon">
                   <img
-                    src="/@images/illustrations/dashboards/food/icon-5.svg"
+                    src="/images/illustrations/dashboards/food/icon-5.svg"
                     alt=""
                   />
                 </div>
@@ -203,7 +203,7 @@
               <div class="food-pill">
                 <div class="food-pill-icon">
                   <img
-                    src="/@images/illustrations/dashboards/food/icon-6.svg"
+                    src="/images/illustrations/dashboards/food/icon-6.svg"
                     alt=""
                   />
                 </div>
@@ -213,7 +213,7 @@
               <div class="food-pill">
                 <div class="food-pill-icon">
                   <img
-                    src="/@images/illustrations/dashboards/food/icon-7.svg"
+                    src="/images/illustrations/dashboards/food/icon-7.svg"
                     alt=""
                   />
                 </div>
@@ -223,7 +223,7 @@
               <div class="food-pill">
                 <div class="food-pill-icon">
                   <img
-                    src="/@images/illustrations/dashboards/food/icon-9.svg"
+                    src="/images/illustrations/dashboards/food/icon-9.svg"
                     alt=""
                   />
                 </div>
@@ -233,7 +233,7 @@
               <div class="food-pill">
                 <div class="food-pill-icon">
                   <img
-                    src="/@images/illustrations/dashboards/food/icon-10.svg"
+                    src="/images/illustrations/dashboards/food/icon-10.svg"
                     alt=""
                   />
                 </div>
@@ -243,7 +243,7 @@
               <div class="food-pill">
                 <div class="food-pill-icon">
                   <img
-                    src="/@images/illustrations/dashboards/food/icon-11.svg"
+                    src="/images/illustrations/dashboards/food/icon-11.svg"
                     alt=""
                   />
                 </div>
@@ -253,7 +253,7 @@
               <div class="food-pill">
                 <div class="food-pill-icon">
                   <img
-                    src="/@images/illustrations/dashboards/food/icon-12.svg"
+                    src="/images/illustrations/dashboards/food/icon-12.svg"
                     alt=""
                   />
                 </div>
@@ -263,7 +263,7 @@
               <div class="food-pill">
                 <div class="food-pill-icon">
                   <img
-                    src="/@images/illustrations/dashboards/food/icon-13.svg"
+                    src="/images/illustrations/dashboards/food/icon-13.svg"
                     alt=""
                   />
                 </div>
@@ -279,7 +279,7 @@
                 <div class="restaurants-list-item">
                   <div class="image-container">
                     <img
-                      src="/@images/photo/demo/food/1.jpg"
+                      src="/images/photo/demo/food/1.jpg"
                       alt=""
                       @error="
                         $event.target.src =
@@ -296,7 +296,7 @@
                   <div class="meta-container">
                     <div class="meta-icon">
                       <img
-                        src="/@images/illustrations/dashboards/food/icon-2.svg"
+                        src="/images/illustrations/dashboards/food/icon-2.svg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -323,7 +323,7 @@
                 <div class="restaurants-list-item">
                   <div class="image-container">
                     <img
-                      src="/@images/photo/demo/food/2.jpg"
+                      src="/images/photo/demo/food/2.jpg"
                       alt=""
                       @error="
                         $event.target.src =
@@ -340,7 +340,7 @@
                   <div class="meta-container">
                     <div class="meta-icon">
                       <img
-                        src="/@images/illustrations/dashboards/food/icon-4.svg"
+                        src="/images/illustrations/dashboards/food/icon-4.svg"
                         alt=""
                       />
                     </div>
@@ -363,7 +363,7 @@
                 <div class="restaurants-list-item">
                   <div class="image-container">
                     <img
-                      src="/@images/photo/demo/food/3.jpg"
+                      src="/images/photo/demo/food/3.jpg"
                       alt=""
                       @error="
                         $event.target.src =
@@ -380,7 +380,7 @@
                   <div class="meta-container">
                     <div class="meta-icon">
                       <img
-                        src="/@images/illustrations/dashboards/food/icon-9.svg"
+                        src="/images/illustrations/dashboards/food/icon-9.svg"
                         alt=""
                       />
                     </div>
@@ -403,7 +403,7 @@
                 <div class="restaurants-list-item">
                   <div class="image-container">
                     <img
-                      src="/@images/photo/demo/food/4.jpg"
+                      src="/images/photo/demo/food/4.jpg"
                       alt=""
                       @error="
                         $event.target.src =
@@ -420,7 +420,7 @@
                   <div class="meta-container">
                     <div class="meta-icon">
                       <img
-                        src="/@images/illustrations/dashboards/food/icon-10.svg"
+                        src="/images/illustrations/dashboards/food/icon-10.svg"
                         alt=""
                       />
                     </div>
@@ -443,7 +443,7 @@
                 <div class="restaurants-list-item">
                   <div class="image-container">
                     <img
-                      src="/@images/photo/demo/food/5.jpg"
+                      src="/images/photo/demo/food/5.jpg"
                       alt=""
                       @error="
                         $event.target.src =
@@ -460,7 +460,7 @@
                   <div class="meta-container">
                     <div class="meta-icon">
                       <img
-                        src="/@images/illustrations/dashboards/food/icon-10.svg"
+                        src="/images/illustrations/dashboards/food/icon-10.svg"
                         alt=""
                       />
                     </div>
@@ -483,7 +483,7 @@
                 <div class="restaurants-list-item">
                   <div class="image-container">
                     <img
-                      src="/@images/photo/demo/food/6.jpg"
+                      src="/images/photo/demo/food/6.jpg"
                       alt=""
                       @error="
                         $event.target.src =
@@ -500,7 +500,7 @@
                   <div class="meta-container">
                     <div class="meta-icon">
                       <img
-                        src="/@images/illustrations/dashboards/food/icon-12.svg"
+                        src="/images/illustrations/dashboards/food/icon-12.svg"
                         alt=""
                       />
                     </div>
@@ -523,7 +523,7 @@
                 <div class="restaurants-list-item">
                   <div class="image-container">
                     <img
-                      src="/@images/photo/demo/food/7.jpg"
+                      src="/images/photo/demo/food/7.jpg"
                       alt=""
                       @error="
                         $event.target.src =
@@ -540,7 +540,7 @@
                   <div class="meta-container">
                     <div class="meta-icon">
                       <img
-                        src="/@images/illustrations/dashboards/food/icon-7.svg"
+                        src="/images/illustrations/dashboards/food/icon-7.svg"
                         alt=""
                       />
                     </div>
@@ -563,7 +563,7 @@
                 <div class="restaurants-list-item">
                   <div class="image-container">
                     <img
-                      src="/@images/photo/demo/food/8.jpg"
+                      src="/images/photo/demo/food/8.jpg"
                       alt=""
                       @error="
                         $event.target.src =
@@ -580,7 +580,7 @@
                   <div class="meta-container">
                     <div class="meta-icon">
                       <img
-                        src="/@images/illustrations/dashboards/food/icon-4.svg"
+                        src="/images/illustrations/dashboards/food/icon-4.svg"
                         alt=""
                       />
                     </div>
@@ -603,7 +603,7 @@
                 <div class="restaurants-list-item">
                   <div class="image-container">
                     <img
-                      src="/@images/photo/demo/food/9.jpg"
+                      src="/images/photo/demo/food/9.jpg"
                       alt=""
                       @error="
                         $event.target.src =
@@ -620,7 +620,7 @@
                   <div class="meta-container">
                     <div class="meta-icon">
                       <img
-                        src="/@images/illustrations/dashboards/food/icon-13.svg"
+                        src="/images/illustrations/dashboards/food/icon-13.svg"
                         alt=""
                       />
                     </div>
@@ -643,7 +643,7 @@
                 <div class="restaurants-list-item">
                   <div class="image-container">
                     <img
-                      src="/@images/photo/demo/food/10.jpg"
+                      src="/images/photo/demo/food/10.jpg"
                       alt=""
                       @error="
                         $event.target.src =
@@ -660,7 +660,7 @@
                   <div class="meta-container">
                     <div class="meta-icon">
                       <img
-                        src="/@images/illustrations/dashboards/food/icon-6.svg"
+                        src="/images/illustrations/dashboards/food/icon-6.svg"
                         alt=""
                       />
                     </div>
@@ -683,7 +683,7 @@
                 <div class="restaurants-list-item">
                   <div class="image-container">
                     <img
-                      src="/@images/photo/demo/food/11.jpg"
+                      src="/images/photo/demo/food/11.jpg"
                       alt=""
                       @error="
                         $event.target.src =
@@ -700,7 +700,7 @@
                   <div class="meta-container">
                     <div class="meta-icon">
                       <img
-                        src="/@images/illustrations/dashboards/food/icon-4.svg"
+                        src="/images/illustrations/dashboards/food/icon-4.svg"
                         alt=""
                       />
                     </div>
@@ -723,7 +723,7 @@
                 <div class="restaurants-list-item">
                   <div class="image-container">
                     <img
-                      src="/@images/photo/demo/food/12.jpg"
+                      src="/images/photo/demo/food/12.jpg"
                       alt=""
                       @error="
                         $event.target.src =
@@ -740,7 +740,7 @@
                   <div class="meta-container">
                     <div class="meta-icon">
                       <img
-                        src="/@images/illustrations/dashboards/food/icon-6.svg"
+                        src="/images/illustrations/dashboards/food/icon-6.svg"
                         alt=""
                       />
                     </div>
@@ -763,7 +763,7 @@
                 <div class="restaurants-list-item">
                   <div class="image-container">
                     <img
-                      src="/@images/photo/demo/food/13.jpg"
+                      src="/images/photo/demo/food/13.jpg"
                       alt=""
                       @error="
                         $event.target.src =
@@ -780,7 +780,7 @@
                   <div class="meta-container">
                     <div class="meta-icon">
                       <img
-                        src="/@images/illustrations/dashboards/food/icon-8.svg"
+                        src="/images/illustrations/dashboards/food/icon-8.svg"
                         alt=""
                       />
                     </div>
@@ -803,7 +803,7 @@
                 <div class="restaurants-list-item">
                   <div class="image-container">
                     <img
-                      src="/@images/photo/demo/food/14.jpg"
+                      src="/images/photo/demo/food/14.jpg"
                       alt=""
                       @error="
                         $event.target.src =
@@ -820,7 +820,7 @@
                   <div class="meta-container">
                     <div class="meta-icon">
                       <img
-                        src="/@images/illustrations/dashboards/food/icon-10.svg"
+                        src="/images/illustrations/dashboards/food/icon-10.svg"
                         alt=""
                       />
                     </div>
@@ -843,7 +843,7 @@
                 <div class="restaurants-list-item">
                   <div class="image-container">
                     <img
-                      src="/@images/photo/demo/food/15.jpg"
+                      src="/images/photo/demo/food/15.jpg"
                       alt=""
                       @error="
                         $event.target.src =
@@ -860,7 +860,7 @@
                   <div class="meta-container">
                     <div class="meta-icon">
                       <img
-                        src="/@images/illustrations/dashboards/food/icon-10.svg"
+                        src="/images/illustrations/dashboards/food/icon-10.svg"
                         alt=""
                       />
                     </div>
@@ -883,7 +883,7 @@
                 <div class="restaurants-list-item">
                   <div class="image-container">
                     <img
-                      src="/@images/photo/demo/food/16.jpg"
+                      src="/images/photo/demo/food/16.jpg"
                       alt=""
                       @error="
                         $event.target.src =
@@ -900,7 +900,7 @@
                   <div class="meta-container">
                     <div class="meta-icon">
                       <img
-                        src="/@images/illustrations/dashboards/food/icon-6.svg"
+                        src="/images/illustrations/dashboards/food/icon-6.svg"
                         alt=""
                       />
                     </div>
@@ -923,7 +923,7 @@
                 <div class="restaurants-list-item">
                   <div class="image-container">
                     <img
-                      src="/@images/photo/demo/food/17.jpg"
+                      src="/images/photo/demo/food/17.jpg"
                       alt=""
                       @error="
                         $event.target.src =
@@ -940,7 +940,7 @@
                   <div class="meta-container">
                     <div class="meta-icon">
                       <img
-                        src="/@images/illustrations/dashboards/food/icon-4.svg"
+                        src="/images/illustrations/dashboards/food/icon-4.svg"
                         alt=""
                       />
                     </div>
@@ -963,7 +963,7 @@
                 <div class="restaurants-list-item">
                   <div class="image-container">
                     <img
-                      src="/@images/photo/demo/food/18.jpg"
+                      src="/images/photo/demo/food/18.jpg"
                       alt=""
                       @error="
                         $event.target.src =
@@ -980,7 +980,7 @@
                   <div class="meta-container">
                     <div class="meta-icon">
                       <img
-                        src="/@images/illustrations/dashboards/food/icon-7.svg"
+                        src="/images/illustrations/dashboards/food/icon-7.svg"
                         alt=""
                       />
                     </div>
@@ -1043,7 +1043,7 @@
           <div class="section-placeholder">
             <div class="placeholder-content">
               <img
-                src="/@images/illustrations/dashboards/food/cart-placeholder.svg"
+                src="/images/illustrations/dashboards/food/cart-placeholder.svg"
                 alt=""
               />
               <h3 class="dark-inverted">No Items</h3>
@@ -1055,7 +1055,7 @@
               <div class="h-avatar is-medium">
                 <img
                   class="avatar is-squared"
-                  src="/@images/photo/demo/food/1.jpg"
+                  src="/images/photo/demo/food/1.jpg"
                   alt=""
                   @error="
                     $event.target.src = 'https://via.placeholder.com/150x150'
@@ -1071,7 +1071,7 @@
               <div class="h-avatar is-medium">
                 <img
                   class="avatar is-squared"
-                  src="/@images/photo/demo/food/2.jpg"
+                  src="/images/photo/demo/food/2.jpg"
                   alt=""
                   @error="
                     $event.target.src = 'https://via.placeholder.com/150x150'
@@ -1087,7 +1087,7 @@
               <div class="h-avatar is-medium">
                 <img
                   class="avatar is-squared"
-                  src="/@images/photo/demo/food/3.jpg"
+                  src="/images/photo/demo/food/3.jpg"
                   alt=""
                   @error="
                     $event.target.src = 'https://via.placeholder.com/150x150'
@@ -1154,7 +1154,7 @@
           <div class="widget illustration-widget illustration-widget-v2">
             <img
               class="main"
-              src="/@images/illustrations/dashboards/food/widget.svg"
+              src="/images/illustrations/dashboards/food/widget.svg"
               alt=""
             />
             <h3>You unlocked 2 new Achievements</h3>
@@ -1185,7 +1185,7 @@
                 <div class="h-avatar is-medium">
                   <img
                     class="avatar is-squared"
-                    src="/@images/avatars/photos/8.jpg"
+                    src="/images/avatars/photos/8.jpg"
                     alt=""
                     data-user-popover="3"
                     @error="

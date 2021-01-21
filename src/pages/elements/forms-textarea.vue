@@ -345,7 +345,7 @@ useHead({
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="/@images/avatars/photos/12.jpg"
+                                src="/images/avatars/photos/12.jpg"
                                 alt=""
                                 @error="
                                   $event.target.src =
@@ -361,7 +361,7 @@ useHead({
                             <div class="h-avatar is-small">
                               <img
                                 class="avatar"
-                                src="/@images/avatars/photos/7.jpg"
+                                src="/images/avatars/photos/7.jpg"
                                 alt=""
                                 @error="
                                   $event.target.src =

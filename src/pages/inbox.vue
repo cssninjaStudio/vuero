@@ -33,12 +33,12 @@ useHead({
               <RouterLink :to="{ name: 'index' }" class="inbox-brand">
                 <img
                   class="light-image"
-                  src="/@images/logos/logo/logo.svg"
+                  src="/images/logos/logo/logo.svg"
                   alt=""
                 />
                 <img
                   class="dark-image"
-                  src="/@images/logos/logo/logo-light.svg"
+                  src="/images/logos/logo/logo-light.svg"
                   alt=""
                 />
               </RouterLink>
@@ -168,7 +168,7 @@ useHead({
                 <!--Contact-->
                 <div class="contact-block">
                   <img
-                    src="/@images/avatars/photos/7.jpg"
+                    src="/images/avatars/photos/7.jpg"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/150x150'
@@ -182,7 +182,7 @@ useHead({
                 <!--Contact-->
                 <div class="contact-block">
                   <img
-                    src="/@images/avatars/photos/25.jpg"
+                    src="/images/avatars/photos/25.jpg"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/150x150'
@@ -196,7 +196,7 @@ useHead({
                 <!--Contact-->
                 <div class="contact-block">
                   <img
-                    src="/@images/avatars/photos/18.jpg"
+                    src="/images/avatars/photos/18.jpg"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/150x150'
@@ -210,7 +210,7 @@ useHead({
                 <!--Contact-->
                 <div class="contact-block">
                   <img
-                    src="/@images/avatars/photos/32.jpg"
+                    src="/images/avatars/photos/32.jpg"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/150x150'
@@ -224,7 +224,7 @@ useHead({
                 <!--Contact-->
                 <div class="contact-block">
                   <img
-                    src="/@images/avatars/photos/38.jpg"
+                    src="/images/avatars/photos/38.jpg"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/150x150'

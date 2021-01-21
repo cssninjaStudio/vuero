@@ -275,7 +275,7 @@ useHead({
                         <div class="h-avatar">
                           <img
                             class="avatar"
-                            src="/@images/avatars/svg/8.gif"
+                            src="/images/avatars/svg/8.gif"
                             alt=""
                             @error="
                               $event.target.src =
@@ -298,7 +298,7 @@ useHead({
                         <div class="h-avatar">
                           <img
                             class="avatar"
-                            src="/@images/avatars/svg/1.gif"
+                            src="/images/avatars/svg/1.gif"
                             alt=""
                             @error="
                               $event.target.src =
@@ -321,7 +321,7 @@ useHead({
                         <div class="h-avatar">
                           <img
                             class="avatar"
-                            src="/@images/avatars/svg/4.gif"
+                            src="/images/avatars/svg/4.gif"
                             alt=""
                             @error="
                               $event.target.src =
@@ -361,7 +361,7 @@ useHead({
                         <div class="h-avatar">
                           <img
                             class="avatar"
-                            src="/@images/avatars/svg/3.gif"
+                            src="/images/avatars/svg/3.gif"
                             alt=""
                             @error="
                               $event.target.src =

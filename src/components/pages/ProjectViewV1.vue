@@ -60,7 +60,7 @@ const props = defineProps({
                   <div class="h-avatar">
                     <img
                       class="avatar"
-                      src="/@images/avatars/photos/7.jpg"
+                      src="/images/avatars/photos/7.jpg"
                       alt=""
                       data-user-popover="0"
                       @error="
@@ -72,7 +72,7 @@ const props = defineProps({
                   <div class="h-avatar">
                     <img
                       class="avatar"
-                      src="/@images/avatars/photos/9.jpg"
+                      src="/images/avatars/photos/9.jpg"
                       alt=""
                       data-user-popover="1"
                       @error="
@@ -84,7 +84,7 @@ const props = defineProps({
                   <div class="h-avatar">
                     <img
                       class="avatar"
-                      src="/@images/avatars/photos/12.jpg"
+                      src="/images/avatars/photos/12.jpg"
                       alt=""
                       data-user-popover="2"
                       @error="
@@ -96,7 +96,7 @@ const props = defineProps({
                   <div class="h-avatar">
                     <img
                       class="avatar"
-                      src="/@images/avatars/photos/8.jpg"
+                      src="/images/avatars/photos/8.jpg"
                       alt=""
                       data-user-popover="3"
                       @error="
@@ -108,7 +108,7 @@ const props = defineProps({
                   <div class="h-avatar">
                     <img
                       class="avatar"
-                      src="/@images/avatars/photos/25.jpg"
+                      src="/images/avatars/photos/25.jpg"
                       alt=""
                       data-user-popover="4"
                       @error="
@@ -167,7 +167,7 @@ const props = defineProps({
                 <div class="columns is-multiline">
                   <div class="column is-6">
                     <div class="file-box">
-                      <img src="/@images/icons/files/zip-format.svg" alt="" />
+                      <img src="/images/icons/files/zip-format.svg" alt="" />
                       <div class="meta">
                         <span>Preliminary Sketches</span>
                         <span
@@ -179,7 +179,7 @@ const props = defineProps({
                   </div>
                   <div class="column is-6">
                     <div class="file-box">
-                      <img src="/@images/icons/files/pdf.svg" alt="" />
+                      <img src="/images/icons/files/pdf.svg" alt="" />
                       <div class="meta">
                         <span>Project Scope</span>
                         <span
@@ -191,7 +191,7 @@ const props = defineProps({
                   </div>
                   <div class="column is-6">
                     <div class="file-box">
-                      <img src="/@images/icons/files/presentation.svg" alt="" />
+                      <img src="/images/icons/files/presentation.svg" alt="" />
                       <div class="meta">
                         <span>Project Presentation</span>
                         <span
@@ -203,7 +203,7 @@ const props = defineProps({
                   </div>
                   <div class="column is-6">
                     <div class="file-box">
-                      <img src="/@images/icons/files/sheet.svg" alt="" />
+                      <img src="/images/icons/files/sheet.svg" alt="" />
                       <div class="meta">
                         <span>Project Budget</span>
                         <span
@@ -215,7 +215,7 @@ const props = defineProps({
                   </div>
                   <div class="column is-6">
                     <div class="file-box">
-                      <img src="/@images/icons/files/doc.svg" alt="" />
+                      <img src="/images/icons/files/doc.svg" alt="" />
                       <div class="meta">
                         <span>Project Notes</span>
                         <span
@@ -227,7 +227,7 @@ const props = defineProps({
                   </div>
                   <div class="column is-6">
                     <div class="file-box">
-                      <img src="/@images/icons/files/video.svg" alt="" />
+                      <img src="/images/icons/files/video.svg" alt="" />
                       <div class="meta">
                         <span>POC Demo</span>
                         <span
@@ -250,7 +250,7 @@ const props = defineProps({
                 <div class="h-avatar is-small">
                   <img
                     class="avatar"
-                    src="/@images/icons/stacks/sketch.svg"
+                    src="/images/icons/stacks/sketch.svg"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/150x150'
@@ -266,7 +266,7 @@ const props = defineProps({
                 <div class="h-avatar is-small">
                   <img
                     class="avatar"
-                    src="/@images/icons/stacks/illustrator.svg"
+                    src="/images/icons/stacks/illustrator.svg"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/150x150'
@@ -282,7 +282,7 @@ const props = defineProps({
                 <div class="h-avatar is-small">
                   <img
                     class="avatar"
-                    src="/@images/icons/stacks/photoshop.svg"
+                    src="/images/icons/stacks/photoshop.svg"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/150x150'
@@ -303,7 +303,7 @@ const props = defineProps({
                 <div class="h-avatar is-small">
                   <img
                     class="avatar"
-                    src="/@images/icons/stacks/html5.svg"
+                    src="/images/icons/stacks/html5.svg"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/150x150'
@@ -319,7 +319,7 @@ const props = defineProps({
                 <div class="h-avatar is-small">
                   <img
                     class="avatar"
-                    src="/@images/icons/stacks/css3.svg"
+                    src="/images/icons/stacks/css3.svg"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/150x150'
@@ -335,7 +335,7 @@ const props = defineProps({
                 <div class="h-avatar is-small">
                   <img
                     class="avatar"
-                    src="/@images/icons/stacks/vuejs.svg"
+                    src="/images/icons/stacks/vuejs.svg"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/150x150'
@@ -356,7 +356,7 @@ const props = defineProps({
                 <div class="h-avatar is-small">
                   <img
                     class="avatar"
-                    src="/@images/illustrations/dashboards/flights/company1.svg"
+                    src="/images/illustrations/dashboards/flights/company1.svg"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/150x150'
@@ -388,7 +388,7 @@ const props = defineProps({
                   <div class="h-avatar is-medium">
                     <img
                       class="avatar"
-                      src="/@images/avatars/photos/7.jpg"
+                      src="/images/avatars/photos/7.jpg"
                       alt=""
                       @error="
                         $event.target.src =
@@ -416,7 +416,7 @@ const props = defineProps({
                   <div class="h-avatar is-medium">
                     <img
                       class="avatar"
-                      src="/@images/avatars/photos/9.jpg"
+                      src="/images/avatars/photos/9.jpg"
                       alt=""
                       @error="
                         $event.target.src =
@@ -444,7 +444,7 @@ const props = defineProps({
                   <div class="h-avatar is-medium">
                     <img
                       class="avatar"
-                      src="/@images/avatars/photos/12.jpg"
+                      src="/images/avatars/photos/12.jpg"
                       alt=""
                       @error="
                         $event.target.src =
@@ -472,7 +472,7 @@ const props = defineProps({
                   <div class="h-avatar is-medium">
                     <img
                       class="avatar"
-                      src="/@images/avatars/photos/8.jpg"
+                      src="/images/avatars/photos/8.jpg"
                       alt=""
                       @error="
                         $event.target.src =
@@ -500,7 +500,7 @@ const props = defineProps({
                   <div class="h-avatar is-medium">
                     <img
                       class="avatar"
-                      src="/@images/avatars/photos/25.jpg"
+                      src="/images/avatars/photos/25.jpg"
                       alt=""
                       @error="
                         $event.target.src =
@@ -528,7 +528,7 @@ const props = defineProps({
                   <div class="h-avatar is-medium">
                     <img
                       class="avatar"
-                      src="/@images/avatars/photos/13.jpg"
+                      src="/images/avatars/photos/13.jpg"
                       alt=""
                       @error="
                         $event.target.src =
@@ -556,7 +556,7 @@ const props = defineProps({
                   <div class="h-avatar is-medium">
                     <img
                       class="avatar"
-                      src="/@images/avatars/photos/18.jpg"
+                      src="/images/avatars/photos/18.jpg"
                       alt=""
                       @error="
                         $event.target.src =
@@ -584,7 +584,7 @@ const props = defineProps({
                   <div class="h-avatar is-medium">
                     <img
                       class="avatar"
-                      src="/@images/avatars/photos/5.jpg"
+                      src="/images/avatars/photos/5.jpg"
                       alt=""
                       @error="
                         $event.target.src =
@@ -677,7 +677,7 @@ const props = defineProps({
                         <div class="h-avatar is-small">
                           <img
                             class="avatar"
-                            src="/@images/avatars/photos/7.jpg"
+                            src="/images/avatars/photos/7.jpg"
                             alt=""
                             @error="
                               $event.target.src =
@@ -688,7 +688,7 @@ const props = defineProps({
                         <div class="h-avatar is-small">
                           <img
                             class="avatar"
-                            src="/@images/avatars/photos/8.jpg"
+                            src="/images/avatars/photos/8.jpg"
                             alt=""
                             @error="
                               $event.target.src =
@@ -699,7 +699,7 @@ const props = defineProps({
                         <div class="h-avatar is-small">
                           <img
                             class="avatar"
-                            src="/@images/avatars/photos/5.jpg"
+                            src="/images/avatars/photos/5.jpg"
                             alt=""
                             @error="
                               $event.target.src =
@@ -737,7 +737,7 @@ const props = defineProps({
                         <div class="h-avatar is-small">
                           <img
                             class="avatar"
-                            src="/@images/avatars/photos/12.jpg"
+                            src="/images/avatars/photos/12.jpg"
                             alt=""
                             @error="
                               $event.target.src =
@@ -775,7 +775,7 @@ const props = defineProps({
                         <div class="h-avatar is-small">
                           <img
                             class="avatar"
-                            src="/@images/avatars/photos/12.jpg"
+                            src="/images/avatars/photos/12.jpg"
                             alt=""
                             @error="
                               $event.target.src =
@@ -813,7 +813,7 @@ const props = defineProps({
                         <div class="h-avatar is-small">
                           <img
                             class="avatar"
-                            src="/@images/avatars/photos/5.jpg"
+                            src="/images/avatars/photos/5.jpg"
                             alt=""
                             @error="
                               $event.target.src =
@@ -824,7 +824,7 @@ const props = defineProps({
                         <div class="h-avatar is-small">
                           <img
                             class="avatar"
-                            src="/@images/avatars/photos/7.jpg"
+                            src="/images/avatars/photos/7.jpg"
                             alt=""
                             @error="
                               $event.target.src =
@@ -862,7 +862,7 @@ const props = defineProps({
                         <div class="h-avatar is-small">
                           <img
                             class="avatar"
-                            src="/@images/avatars/photos/25.jpg"
+                            src="/images/avatars/photos/25.jpg"
                             alt=""
                             @error="
                               $event.target.src =
@@ -897,7 +897,7 @@ const props = defineProps({
                         <div class="h-avatar is-small">
                           <img
                             class="avatar"
-                            src="/@images/avatars/photos/25.jpg"
+                            src="/images/avatars/photos/25.jpg"
                             alt=""
                             @error="
                               $event.target.src =
@@ -908,7 +908,7 @@ const props = defineProps({
                         <div class="h-avatar is-small">
                           <img
                             class="avatar"
-                            src="/@images/avatars/photos/12.jpg"
+                            src="/images/avatars/photos/12.jpg"
                             alt=""
                             @error="
                               $event.target.src =
@@ -946,7 +946,7 @@ const props = defineProps({
                         <div class="h-avatar is-small">
                           <img
                             class="avatar"
-                            src="/@images/avatars/photos/25.jpg"
+                            src="/images/avatars/photos/25.jpg"
                             alt=""
                             @error="
                               $event.target.src =
@@ -957,7 +957,7 @@ const props = defineProps({
                         <div class="h-avatar is-small">
                           <img
                             class="avatar"
-                            src="/@images/avatars/photos/12.jpg"
+                            src="/images/avatars/photos/12.jpg"
                             alt=""
                             @error="
                               $event.target.src =
@@ -995,7 +995,7 @@ const props = defineProps({
                         <div class="h-avatar is-small">
                           <img
                             class="avatar"
-                            src="/@images/avatars/photos/25.jpg"
+                            src="/images/avatars/photos/25.jpg"
                             alt=""
                             @error="
                               $event.target.src =
@@ -1006,7 +1006,7 @@ const props = defineProps({
                         <div class="h-avatar is-small">
                           <img
                             class="avatar"
-                            src="/@images/avatars/photos/12.jpg"
+                            src="/images/avatars/photos/12.jpg"
                             alt=""
                             @error="
                               $event.target.src =

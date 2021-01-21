@@ -28,7 +28,7 @@
           <div class="h-avatar is-large">
             <img
               class="avatar"
-              src="/@images/avatars/photos/13.jpg"
+              src="/images/avatars/photos/13.jpg"
               alt=""
               data-user-popover="6"
               @error="$event.target.src = 'https://via.placeholder.com/150x150'"
@@ -49,7 +49,7 @@
           <div class="h-avatar is-customer is-large">
             <img
               class="avatar"
-              src="/@images/photo/demo/brands/airbnb.svg"
+              src="/images/photo/demo/brands/airbnb.svg"
               alt=""
               @error="$event.target.src = 'https://via.placeholder.com/150x150'"
             />

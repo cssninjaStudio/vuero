@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 800 600" style="enable-background:new 0 0 800 600;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#323236;stroke:#41B883;stroke-width:5;stroke-miterlimit:10;}
+	.st1{fill:#585868;}
+	.st2{fill:none;stroke:#41B883;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<path class="st0" d="M618.2,193.2H181.8c-2.6,0-4.8-2.1-4.8-4.8V76.6c0-2.6,2.1-4.8,4.8-4.8h436.5c2.6,0,4.8,2.1,4.8,4.8v111.8
+	C623,191,620.9,193.2,618.2,193.2z"/>
+<path class="st0" d="M618.2,360.7H181.8c-2.6,0-4.8-2.1-4.8-4.8V244.1c0-2.6,2.1-4.8,4.8-4.8h436.5c2.6,0,4.8,2.1,4.8,4.8v111.8
+	C623,358.5,620.9,360.7,618.2,360.7z"/>
+<path class="st0" d="M618.2,528.2H181.8c-2.6,0-4.8-2.1-4.8-4.8V411.6c0-2.6,2.1-4.8,4.8-4.8h436.5c2.6,0,4.8,2.1,4.8,4.8v111.8
+	C623,526,620.9,528.2,618.2,528.2z"/>
+<rect x="207" y="98" class="st1" width="111" height="17"/>
+<rect x="207" y="129.2" class="st1" width="353" height="17"/>
+<rect x="207" y="153.8" class="st1" width="232.3" height="17"/>
+<rect x="207" y="263.6" class="st1" width="111" height="17"/>
+<rect x="207" y="294.8" class="st1" width="353" height="17"/>
+<rect x="207" y="319.4" class="st1" width="232.3" height="17"/>
+<rect x="207" y="429.2" class="st1" width="111" height="17"/>
+<rect x="207" y="460.3" class="st1" width="353" height="17"/>
+<rect x="207" y="485" class="st1" width="232.3" height="17"/>
+<g>
+	<line class="st2" x1="606.5" y1="84.7" x2="597.5" y2="93.8"/>
+	<line class="st2" x1="606.5" y1="93.8" x2="597.5" y2="84.7"/>
+</g>
+<g>
+	<line class="st2" x1="606.5" y1="254.5" x2="597.5" y2="263.6"/>
+	<line class="st2" x1="606.5" y1="263.6" x2="597.5" y2="254.5"/>
+</g>
+<g>
+	<line class="st2" x1="606.5" y1="424.2" x2="597.5" y2="433.4"/>
+	<line class="st2" x1="606.5" y1="433.4" x2="597.5" y2="424.2"/>
+</g>
+</svg>

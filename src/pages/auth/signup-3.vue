@@ -18,12 +18,12 @@ useHead({
           <RouterLink :to="{ name: 'index' }" class="header-item">
             <img
               class="light-image"
-              src="/@images/logos/logo/logo.svg"
+              src="/images/logos/logo/logo.svg"
               alt=""
             />
             <img
               class="dark-image"
-              src="/@images/logos/logo/logo-light.svg"
+              src="/images/logos/logo/logo-light.svg"
               alt=""
             />
           </RouterLink>

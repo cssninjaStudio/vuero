@@ -110,7 +110,7 @@ useHead({
                         <div class="snack-media">
                           <img
                             class="avatar"
-                            src="/@images/photo/demo/misc/buoy.jpg"
+                            src="/images/photo/demo/misc/buoy.jpg"
                             alt=""
                             @error="
                               $event.target.src =
@@ -128,7 +128,7 @@ useHead({
                         <div class="snack-media">
                           <img
                             class="avatar"
-                            src="/@images/icons/logos/metamovies.svg"
+                            src="/images/icons/logos/metamovies.svg"
                             alt=""
                             @error="
                               $event.target.src =
@@ -146,7 +146,7 @@ useHead({
                         <div class="snack-media">
                           <img
                             class="avatar"
-                            src="/@images/avatars/photos/7.jpg"
+                            src="/images/avatars/photos/7.jpg"
                             alt=""
                             @error="
                               $event.target.src =
@@ -164,7 +164,7 @@ useHead({
                         <div class="snack-media">
                           <img
                             class="avatar"
-                            src="/@images/icons/flags/united-states-of-america.svg"
+                            src="/images/icons/flags/united-states-of-america.svg"
                             alt=""
                             @error="
                               $event.target.src =
@@ -182,7 +182,7 @@ useHead({
                         <div class="snack-media">
                           <img
                             class="avatar"
-                            src="/@images/icons/logos/slicer.svg"
+                            src="/images/icons/logos/slicer.svg"
                             alt=""
                             @error="
                               $event.target.src =
@@ -279,7 +279,7 @@ useHead({
                         <div class="snack-media">
                           <img
                             class="avatar"
-                            src="/@images/photo/demo/misc/buoy.jpg"
+                            src="/images/photo/demo/misc/buoy.jpg"
                             alt=""
                             @error="
                               $event.target.src =
@@ -297,7 +297,7 @@ useHead({
                         <div class="snack-media">
                           <img
                             class="avatar"
-                            src="/@images/icons/logos/metamovies.svg"
+                            src="/images/icons/logos/metamovies.svg"
                             alt=""
                             @error="
                               $event.target.src =
@@ -315,7 +315,7 @@ useHead({
                         <div class="snack-media">
                           <img
                             class="avatar"
-                            src="/@images/avatars/photos/25.jpg"
+                            src="/images/avatars/photos/25.jpg"
                             alt=""
                             @error="
                               $event.target.src =
@@ -333,7 +333,7 @@ useHead({
                         <div class="snack-media">
                           <img
                             class="avatar"
-                            src="/@images/icons/flags/united-states-of-america.svg"
+                            src="/images/icons/flags/united-states-of-america.svg"
                             alt=""
                             @error="
                               $event.target.src =
@@ -351,7 +351,7 @@ useHead({
                         <div class="snack-media">
                           <img
                             class="avatar"
-                            src="/@images/icons/logos/slicer.svg"
+                            src="/images/icons/logos/slicer.svg"
                             alt=""
                             @error="
                               $event.target.src =
@@ -1318,7 +1318,7 @@ useHead({
                         <div class="snack-media">
                           <img
                             class="avatar"
-                            src="/@images/photo/demo/misc/buoy.jpg"
+                            src="/images/photo/demo/misc/buoy.jpg"
                             alt=""
                             @error="
                               $event.target.src =
@@ -1336,7 +1336,7 @@ useHead({
                         <div class="snack-media">
                           <img
                             class="avatar"
-                            src="/@images/icons/logos/metamovies.svg"
+                            src="/images/icons/logos/metamovies.svg"
                             alt=""
                             @error="
                               $event.target.src =
@@ -1354,7 +1354,7 @@ useHead({
                         <div class="snack-media">
                           <img
                             class="avatar"
-                            src="/@images/avatars/photos/18.jpg"
+                            src="/images/avatars/photos/18.jpg"
                             alt=""
                             @error="
                               $event.target.src =
@@ -1372,7 +1372,7 @@ useHead({
                         <div class="snack-media">
                           <img
                             class="avatar"
-                            src="/@images/icons/flags/united-states-of-america.svg"
+                            src="/images/icons/flags/united-states-of-america.svg"
                             alt=""
                             @error="
                               $event.target.src =
@@ -1390,7 +1390,7 @@ useHead({
                         <div class="snack-media">
                           <img
                             class="avatar"
-                            src="/@images/icons/logos/slicer.svg"
+                            src="/images/icons/logos/slicer.svg"
                             alt=""
                             @error="
                               $event.target.src =

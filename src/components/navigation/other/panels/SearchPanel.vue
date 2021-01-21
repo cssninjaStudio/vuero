@@ -12,10 +12,10 @@ import { activePanel } from '/@src/composition/state/ui/activePanelState'
 
     <div class="right-panel">
       <div class="right-panel-head">
-        <img class="light-image" src="/@images/logos/logo/logo.svg" alt="" />
+        <img class="light-image" src="/images/logos/logo/logo.svg" alt="" />
         <img
           class="dark-image"
-          src="/@images/logos/logo/logo-light.svg"
+          src="/images/logos/logo/logo-light.svg"
           alt=""
         />
         <a class="close-panel" @click="activePanel = 'none'">
@@ -85,7 +85,7 @@ import { activePanel } from '/@src/composition/state/ui/activePanelState'
               <div class="h-avatar is-small">
                 <img
                   class="avatar"
-                  src="/@images/avatars/photos/7.jpg"
+                  src="/images/avatars/photos/7.jpg"
                   alt=""
                   data-user-popover="0"
                   @error="
@@ -104,7 +104,7 @@ import { activePanel } from '/@src/composition/state/ui/activePanelState'
               <div class="h-avatar is-small">
                 <img
                   class="avatar"
-                  src="/@images/avatars/photos/13.jpg"
+                  src="/images/avatars/photos/13.jpg"
                   alt=""
                   data-user-popover="6"
                   @error="
@@ -123,7 +123,7 @@ import { activePanel } from '/@src/composition/state/ui/activePanelState'
               <div class="h-avatar is-small">
                 <img
                   class="avatar"
-                  src="/@images/avatars/photos/22.jpg"
+                  src="/images/avatars/photos/22.jpg"
                   alt=""
                   data-user-popover="5"
                   @error="

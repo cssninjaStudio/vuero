@@ -80,7 +80,7 @@ import { trendWidgetChartOptions } from '/@src/composition/state/charts/apexchar
       <UIWidget class="video-widget">
         <template #body>
           <UIWidgetMovie
-            picture="/@images/photo/demo/widgets/1.jpg"
+            picture="/images/photo/demo/widgets/1.jpg"
             views="38,274"
           />
         </template>
@@ -227,7 +227,7 @@ import { trendWidgetChartOptions } from '/@src/composition/state/charts/apexchar
       <UIWidget class="image-widget">
         <template #body>
           <img
-            src="/@images/photo/demo/widgets/2.jpg"
+            src="/images/photo/demo/widgets/2.jpg"
             alt=""
             @error="$event.target.src = 'https://via.placeholder.com/400x300'"
           />

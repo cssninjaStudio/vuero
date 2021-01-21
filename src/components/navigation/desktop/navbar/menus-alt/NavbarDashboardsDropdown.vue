@@ -40,12 +40,12 @@ const { dropdownElement, isOpen, open } = useDropdown()
 
             <img
               class="placeholder-image light-image"
-              src="/@images/illustrations/components/plugins.svg"
+              src="/images/illustrations/components/plugins.svg"
               alt=""
             />
             <img
               class="placeholder-image dark-image"
-              src="/@images/illustrations/components/plugins-dark.svg"
+              src="/images/illustrations/components/plugins-dark.svg"
               alt=""
             />
           </div>
@@ -457,7 +457,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'webapp-dashboards-charts-billboardjs' }"
+                    :to="{ name: 'webapp-dashboards-charts-billboardsjs' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">

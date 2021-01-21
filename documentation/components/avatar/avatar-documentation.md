@@ -8,22 +8,22 @@ Available modifier classes are `is-small`, `is-medium`, `is-large`, `is-big` and
 ```vue {2-4}
 <template>
   <div class="h-avatar is-small">
-    <img class="avatar" src="/@images/avatars/photos/7.jpg" alt="" />
+    <img class="avatar" src="/images/avatars/photos/7.jpg" alt="" />
   </div>
   <div class="h-avatar">
-    <img class="avatar" src="/@images/avatars/photos/8.jpg" alt="" />
+    <img class="avatar" src="/images/avatars/photos/8.jpg" alt="" />
   </div>
   <div class="h-avatar is-medium">
-    <img class="avatar" src="/@images/avatars/photos/11.jpg" alt="" />
+    <img class="avatar" src="/images/avatars/photos/11.jpg" alt="" />
   </div>
   <div class="h-avatar is-large">
-    <img class="avatar" src="/@images/avatars/photos/21.jpg" alt="" />
+    <img class="avatar" src="/images/avatars/photos/21.jpg" alt="" />
   </div>
   <div class="h-avatar is-big">
-    <img class="avatar" src="/@images/avatars/photos/13.jpg" alt="" />
+    <img class="avatar" src="/images/avatars/photos/13.jpg" alt="" />
   </div>
   <div class="h-avatar is-xl">
-    <img class="avatar" src="/@images/avatars/photos/5.jpg" alt="" />
+    <img class="avatar" src="/images/avatars/photos/5.jpg" alt="" />
   </div>
 </template>
 ```
@@ -35,7 +35,7 @@ Available modifier classes are `is-small`, `is-medium`, `is-large`, `is-big` and
 <div class="h-avatar is-small">
   <img
     class="avatar"
-    src="/@images/avatars/photos/7.jpg"
+    src="/images/avatars/photos/7.jpg"
     alt=""
     @error="
       $event.target.src =
@@ -46,7 +46,7 @@ Available modifier classes are `is-small`, `is-medium`, `is-large`, `is-big` and
 <div class="h-avatar">
   <img
     class="avatar"
-    src="/@images/avatars/photos/8.jpg"
+    src="/images/avatars/photos/8.jpg"
     alt=""
     @error="
       $event.target.src =
@@ -57,7 +57,7 @@ Available modifier classes are `is-small`, `is-medium`, `is-large`, `is-big` and
 <div class="h-avatar is-medium">
   <img
     class="avatar"
-    src="/@images/avatars/photos/11.jpg"
+    src="/images/avatars/photos/11.jpg"
     alt=""
     @error="
       $event.target.src =
@@ -68,7 +68,7 @@ Available modifier classes are `is-small`, `is-medium`, `is-large`, `is-big` and
 <div class="h-avatar is-large">
   <img
     class="avatar"
-    src="/@images/avatars/photos/21.jpg"
+    src="/images/avatars/photos/21.jpg"
     alt=""
     @error="
       $event.target.src =
@@ -79,7 +79,7 @@ Available modifier classes are `is-small`, `is-medium`, `is-large`, `is-big` and
 <div class="h-avatar is-big">
   <img
     class="avatar"
-    src="/@images/avatars/photos/13.jpg"
+    src="/images/avatars/photos/13.jpg"
     alt=""
     @error="
       $event.target.src =
@@ -90,7 +90,7 @@ Available modifier classes are `is-small`, `is-medium`, `is-large`, `is-big` and
 <div class="h-avatar is-xl">
   <img
     class="avatar"
-    src="/@images/avatars/photos/5.jpg"
+    src="/images/avatars/photos/5.jpg"
     alt=""
     @error="
       $event.target.src =

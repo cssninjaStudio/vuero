@@ -179,7 +179,7 @@ document
                           <div class="h-avatar">
                             <img
                               class="avatar"
-                              src="/@images/avatars/photos/19.jpg"
+                              src="/images/avatars/photos/19.jpg"
                               alt=""
                               data-user-popover="17"
                               @error="
@@ -189,7 +189,7 @@ document
                             />
                             <img
                               class="badge"
-                              src="/@images/icons/flags/germany.svg"
+                              src="/images/icons/flags/germany.svg"
                               alt=""
                               @error="
                                 $event.target.src =
@@ -281,7 +281,7 @@ document
                           <div class="h-avatar">
                             <img
                               class="avatar"
-                              src="/@images/avatars/photos/19.jpg"
+                              src="/images/avatars/photos/19.jpg"
                               alt=""
                               data-user-popover="17"
                               @error="
@@ -291,7 +291,7 @@ document
                             />
                             <img
                               class="badge"
-                              src="/@images/icons/flags/germany.svg"
+                              src="/images/icons/flags/germany.svg"
                               alt=""
                               @error="
                                 $event.target.src =
@@ -383,7 +383,7 @@ document
                           <div class="h-avatar">
                             <img
                               class="avatar"
-                              src="/@images/avatars/photos/19.jpg"
+                              src="/images/avatars/photos/19.jpg"
                               alt=""
                               data-user-popover="17"
                               @error="
@@ -393,7 +393,7 @@ document
                             />
                             <img
                               class="badge"
-                              src="/@images/icons/flags/germany.svg"
+                              src="/images/icons/flags/germany.svg"
                               alt=""
                               @error="
                                 $event.target.src =
@@ -485,7 +485,7 @@ document
                           <div class="h-avatar">
                             <img
                               class="avatar"
-                              src="/@images/avatars/photos/19.jpg"
+                              src="/images/avatars/photos/19.jpg"
                               alt=""
                               data-user-popover="17"
                               @error="
@@ -495,7 +495,7 @@ document
                             />
                             <img
                               class="badge"
-                              src="/@images/icons/flags/germany.svg"
+                              src="/images/icons/flags/germany.svg"
                               alt=""
                               @error="
                                 $event.target.src =

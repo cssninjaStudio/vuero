@@ -16,7 +16,7 @@
               <div class="h-avatar">
                 <img
                   class="avatar"
-                  src="/@images/avatars/photos/13.jpg"
+                  src="/images/avatars/photos/13.jpg"
                   alt=""
                   data-user-popover="6"
                   @error="
@@ -37,7 +37,7 @@
                 <div class="h-avatar is-small">
                   <img
                     class="avatar"
-                    src="/@images/avatars/photos/8.jpg"
+                    src="/images/avatars/photos/8.jpg"
                     alt=""
                     data-user-popover="3"
                     @error="
@@ -62,7 +62,7 @@
               <div class="h-avatar">
                 <img
                   class="avatar"
-                  src="/@images/avatars/photos/23.jpg"
+                  src="/images/avatars/photos/23.jpg"
                   alt=""
                   data-user-popover="21"
                   @error="
@@ -95,7 +95,7 @@
               <div class="h-avatar">
                 <img
                   class="avatar"
-                  src="/@images/avatars/photos/5.jpg"
+                  src="/images/avatars/photos/5.jpg"
                   alt=""
                   data-user-popover="9"
                   @error="
@@ -124,7 +124,7 @@
                 <div class="h-avatar is-small">
                   <img
                     class="avatar"
-                    src="/@images/avatars/photos/18.jpg"
+                    src="/images/avatars/photos/18.jpg"
                     alt=""
                     data-user-popover="7"
                     @error="
@@ -154,7 +154,7 @@
               <div class="h-avatar">
                 <img
                   class="avatar"
-                  src="/@images/avatars/photos/12.jpg"
+                  src="/images/avatars/photos/12.jpg"
                   alt=""
                   data-user-popover="2"
                   @error="
@@ -190,7 +190,7 @@
               <div class="h-avatar">
                 <img
                   class="avatar"
-                  src="/@images/avatars/photos/26.jpg"
+                  src="/images/avatars/photos/26.jpg"
                   alt=""
                   data-user-popover="23"
                   @error="
@@ -211,7 +211,7 @@
                 <div class="h-avatar is-small">
                   <img
                     class="avatar is-squared"
-                    src="/@images/photo/demo/apps/5.png"
+                    src="/images/photo/demo/apps/5.png"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/150x150'
@@ -221,7 +221,7 @@
                 <div class="h-avatar is-small">
                   <img
                     class="avatar is-squared"
-                    src="/@images/photo/demo/apps/8.png"
+                    src="/images/photo/demo/apps/8.png"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/150x150'
@@ -245,7 +245,7 @@
               <div class="h-avatar">
                 <img
                   class="avatar"
-                  src="/@images/avatars/photos/31.jpg"
+                  src="/images/avatars/photos/31.jpg"
                   alt=""
                   data-user-popover="27"
                   @error="
@@ -266,7 +266,7 @@
                 <div class="h-avatar is-small">
                   <img
                     class="avatar"
-                    src="/@images/avatars/photos/8.jpg"
+                    src="/images/avatars/photos/8.jpg"
                     alt=""
                     data-user-popover="3"
                     @error="
@@ -291,7 +291,7 @@
               <div class="h-avatar">
                 <img
                   class="avatar"
-                  src="/@images/avatars/photos/13.jpg"
+                  src="/images/avatars/photos/13.jpg"
                   alt=""
                   data-user-popover="6"
                   @error="
@@ -324,7 +324,7 @@
               <div class="h-avatar">
                 <img
                   class="avatar"
-                  src="/@images/avatars/photos/25.jpg"
+                  src="/images/avatars/photos/25.jpg"
                   alt=""
                   data-user-popover="4"
                   @error="

@@ -294,7 +294,7 @@ useHead({
                       <div class="h-avatar">
                         <img
                           class="avatar"
-                          src="/@images/avatars/photos/19.jpg"
+                          src="/images/avatars/photos/19.jpg"
                           alt=""
                           data-user-popover="17"
                           @error="
@@ -304,7 +304,7 @@ useHead({
                         />
                         <img
                           class="badge"
-                          src="/@images/icons/flags/germany.svg"
+                          src="/images/icons/flags/germany.svg"
                           alt=""
                           @error="
                             $event.target.src =
@@ -335,7 +335,7 @@ useHead({
                       <div class="h-avatar">
                         <img
                           class="avatar"
-                          src="/@images/avatars/photos/19.jpg"
+                          src="/images/avatars/photos/19.jpg"
                           alt=""
                           data-user-popover="17"
                           @error="
@@ -345,7 +345,7 @@ useHead({
                         />
                         <img
                           class="badge"
-                          src="/@images/icons/flags/germany.svg"
+                          src="/images/icons/flags/germany.svg"
                           alt=""
                           @error="
                             $event.target.src =
@@ -376,7 +376,7 @@ useHead({
                       <div class="h-avatar">
                         <img
                           class="avatar"
-                          src="/@images/avatars/photos/19.jpg"
+                          src="/images/avatars/photos/19.jpg"
                           alt=""
                           data-user-popover="17"
                           @error="
@@ -386,7 +386,7 @@ useHead({
                         />
                         <img
                           class="badge"
-                          src="/@images/icons/flags/germany.svg"
+                          src="/images/icons/flags/germany.svg"
                           alt=""
                           @error="
                             $event.target.src =

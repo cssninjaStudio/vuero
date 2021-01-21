@@ -17,12 +17,12 @@ const props = defineProps({
       <div class="placeholder-content">
         <img
           class="light-image"
-          src="/@images/illustrations/placeholders/search-4.svg"
+          src="/images/illustrations/placeholders/search-4.svg"
           alt=""
         />
         <img
           class="dark-image"
-          src="/@images/illustrations/placeholders/search-4-dark.svg"
+          src="/images/illustrations/placeholders/search-4-dark.svg"
           alt=""
         />
         <h3>We couldn't find any matching results.</h3>
@@ -58,7 +58,7 @@ const props = defineProps({
               <div class="h-avatar">
                 <img
                   class="avatar"
-                  src="/@images/photo/demo/abstracts/1.png"
+                  src="/images/photo/demo/abstracts/1.png"
                   alt=""
                   @error="
                     $event.target.src = 'https://via.placeholder.com/150x150'
@@ -91,7 +91,7 @@ const props = defineProps({
                 <div class="h-avatar is-small">
                   <img
                     class="avatar"
-                    src="/@images/avatars/photos/7.jpg"
+                    src="/images/avatars/photos/7.jpg"
                     alt=""
                     data-user-popover="0"
                     @error="
@@ -107,7 +107,7 @@ const props = defineProps({
                 <div class="h-avatar is-small">
                   <img
                     class="avatar"
-                    src="/@images/avatars/photos/27.jpg"
+                    src="/images/avatars/photos/27.jpg"
                     alt=""
                     data-user-popover="10"
                     @error="
@@ -135,7 +135,7 @@ const props = defineProps({
               <div class="h-avatar">
                 <img
                   class="avatar"
-                  src="/@images/photo/demo/abstracts/3.png"
+                  src="/images/photo/demo/abstracts/3.png"
                   alt=""
                   @error="
                     $event.target.src = 'https://via.placeholder.com/150x150'
@@ -183,7 +183,7 @@ const props = defineProps({
               <div class="h-avatar">
                 <img
                   class="avatar"
-                  src="/@images/photo/demo/abstracts/2.png"
+                  src="/images/photo/demo/abstracts/2.png"
                   alt=""
                   @error="
                     $event.target.src = 'https://via.placeholder.com/150x150'
@@ -216,7 +216,7 @@ const props = defineProps({
                 <div class="h-avatar is-small">
                   <img
                     class="avatar"
-                    src="/@images/avatars/photos/25.jpg"
+                    src="/images/avatars/photos/25.jpg"
                     alt=""
                     data-user-popover="4"
                     @error="
@@ -235,7 +235,7 @@ const props = defineProps({
                 <div class="h-avatar is-small">
                   <img
                     class="avatar"
-                    src="/@images/avatars/photos/19.jpg"
+                    src="/images/avatars/photos/19.jpg"
                     alt=""
                     data-user-popover="17"
                     @error="
@@ -263,7 +263,7 @@ const props = defineProps({
               <div class="h-avatar">
                 <img
                   class="avatar"
-                  src="/@images/photo/demo/abstracts/4.png"
+                  src="/images/photo/demo/abstracts/4.png"
                   alt=""
                   @error="
                     $event.target.src = 'https://via.placeholder.com/150x150'
@@ -312,7 +312,7 @@ const props = defineProps({
                 <div class="h-avatar is-small">
                   <img
                     class="avatar"
-                    src="/@images/avatars/photos/19.jpg"
+                    src="/images/avatars/photos/19.jpg"
                     alt=""
                     data-user-popover="17"
                     @error="
@@ -333,7 +333,7 @@ const props = defineProps({
               <div class="h-avatar">
                 <img
                   class="avatar"
-                  src="/@images/photo/demo/abstracts/6.png"
+                  src="/images/photo/demo/abstracts/6.png"
                   alt=""
                   @error="
                     $event.target.src = 'https://via.placeholder.com/150x150'
@@ -366,7 +366,7 @@ const props = defineProps({
                 <div class="h-avatar is-small">
                   <img
                     class="avatar"
-                    src="/@images/avatars/photos/18.jpg"
+                    src="/images/avatars/photos/18.jpg"
                     alt=""
                     data-user-popover="7"
                     @error="
@@ -387,7 +387,7 @@ const props = defineProps({
               <div class="h-avatar">
                 <img
                   class="avatar"
-                  src="/@images/photo/demo/abstracts/5.png"
+                  src="/images/photo/demo/abstracts/5.png"
                   alt=""
                   @error="
                     $event.target.src = 'https://via.placeholder.com/150x150'
@@ -420,7 +420,7 @@ const props = defineProps({
                 <div class="h-avatar is-small">
                   <img
                     class="avatar"
-                    src="/@images/avatars/photos/36.jpg"
+                    src="/images/avatars/photos/36.jpg"
                     alt=""
                     data-user-popover="30"
                     @error="
@@ -431,7 +431,7 @@ const props = defineProps({
                 <div class="h-avatar is-small">
                   <img
                     class="avatar"
-                    src="/@images/avatars/photos/24.jpg"
+                    src="/images/avatars/photos/24.jpg"
                     alt=""
                     data-user-popover="22"
                     @error="
@@ -452,7 +452,7 @@ const props = defineProps({
               <div class="h-avatar">
                 <img
                   class="avatar"
-                  src="/@images/photo/demo/abstracts/7.png"
+                  src="/images/photo/demo/abstracts/7.png"
                   alt=""
                   @error="
                     $event.target.src = 'https://via.placeholder.com/150x150'
@@ -485,7 +485,7 @@ const props = defineProps({
                 <div class="h-avatar is-small">
                   <img
                     class="avatar"
-                    src="/@images/avatars/photos/25.jpg"
+                    src="/images/avatars/photos/25.jpg"
                     alt=""
                     data-user-popover="4"
                     @error="
@@ -496,7 +496,7 @@ const props = defineProps({
                 <div class="h-avatar is-small">
                   <img
                     class="avatar"
-                    src="/@images/avatars/photos/11.jpg"
+                    src="/images/avatars/photos/11.jpg"
                     alt=""
                     data-user-popover="13"
                     @error="
@@ -507,7 +507,7 @@ const props = defineProps({
                 <div class="h-avatar is-small">
                   <img
                     class="avatar"
-                    src="/@images/avatars/photos/5.jpg"
+                    src="/images/avatars/photos/5.jpg"
                     alt=""
                     data-user-popover="9"
                     @error="
@@ -535,7 +535,7 @@ const props = defineProps({
               <div class="h-avatar">
                 <img
                   class="avatar"
-                  src="/@images/photo/demo/abstracts/8.png"
+                  src="/images/photo/demo/abstracts/8.png"
                   alt=""
                   @error="
                     $event.target.src = 'https://via.placeholder.com/150x150'
@@ -568,7 +568,7 @@ const props = defineProps({
                 <div class="h-avatar is-small">
                   <img
                     class="avatar"
-                    src="/@images/avatars/photos/25.jpg"
+                    src="/images/avatars/photos/25.jpg"
                     alt=""
                     data-user-popover="4"
                     @error="
@@ -579,7 +579,7 @@ const props = defineProps({
                 <div class="h-avatar is-small">
                   <img
                     class="avatar"
-                    src="/@images/avatars/photos/13.jpg"
+                    src="/images/avatars/photos/13.jpg"
                     alt=""
                     data-user-popover="6"
                     @error="
@@ -590,7 +590,7 @@ const props = defineProps({
                 <div class="h-avatar is-small">
                   <img
                     class="avatar"
-                    src="/@images/avatars/photos/5.jpg"
+                    src="/images/avatars/photos/5.jpg"
                     alt=""
                     data-user-popover="9"
                     @error="
@@ -611,7 +611,7 @@ const props = defineProps({
               <div class="h-avatar">
                 <img
                   class="avatar"
-                  src="/@images/photo/demo/abstracts/9.png"
+                  src="/images/photo/demo/abstracts/9.png"
                   alt=""
                   @error="
                     $event.target.src = 'https://via.placeholder.com/150x150'
@@ -644,7 +644,7 @@ const props = defineProps({
                 <div class="h-avatar is-small">
                   <img
                     class="avatar"
-                    src="/@images/avatars/photos/25.jpg"
+                    src="/images/avatars/photos/25.jpg"
                     alt=""
                     data-user-popover="4"
                     @error="
@@ -665,7 +665,7 @@ const props = defineProps({
               <div class="h-avatar">
                 <img
                   class="avatar"
-                  src="/@images/photo/demo/abstracts/10.png"
+                  src="/images/photo/demo/abstracts/10.png"
                   alt=""
                   @error="
                     $event.target.src = 'https://via.placeholder.com/150x150'
@@ -698,7 +698,7 @@ const props = defineProps({
                 <div class="h-avatar is-small">
                   <img
                     class="avatar"
-                    src="/@images/avatars/photos/7.jpg"
+                    src="/images/avatars/photos/7.jpg"
                     alt=""
                     data-user-popover="0"
                     @error="
@@ -714,7 +714,7 @@ const props = defineProps({
                 <div class="h-avatar is-small">
                   <img
                     class="avatar"
-                    src="/@images/avatars/photos/27.jpg"
+                    src="/images/avatars/photos/27.jpg"
                     alt=""
                     data-user-popover="10"
                     @error="
@@ -788,12 +788,12 @@ const props = defineProps({
         <div class="placeholder-content">
           <img
             class="light-image is-larger"
-            src="/@images/illustrations/placeholders/projects.svg"
+            src="/images/illustrations/placeholders/projects.svg"
             alt=""
           />
           <img
             class="dark-image is-larger"
-            src="/@images/illustrations/placeholders/projects-dark.svg"
+            src="/images/illustrations/placeholders/projects-dark.svg"
             alt=""
           />
           <h3>No closed projects.</h3>

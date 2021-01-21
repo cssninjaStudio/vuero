@@ -16,7 +16,7 @@
                 <div class="h-avatar">
                   <img
                     class="avatar is-squared"
-                    src="/@images/photo/demo/tools/illustrator.svg"
+                    src="/images/photo/demo/tools/illustrator.svg"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/150x150'
@@ -46,7 +46,7 @@
                 <div class="h-avatar">
                   <img
                     class="avatar is-squared"
-                    src="/@images/photo/demo/tools/photoshop.svg"
+                    src="/images/photo/demo/tools/photoshop.svg"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/150x150'
@@ -76,7 +76,7 @@
                 <div class="h-avatar">
                   <img
                     class="avatar is-squared"
-                    src="/@images/photo/demo/tools/xd.svg"
+                    src="/images/photo/demo/tools/xd.svg"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/150x150'
@@ -106,7 +106,7 @@
                 <div class="h-avatar">
                   <img
                     class="avatar is-squared"
-                    src="/@images/photo/demo/tools/figma.svg"
+                    src="/images/photo/demo/tools/figma.svg"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/150x150'
@@ -136,7 +136,7 @@
                 <div class="h-avatar">
                   <img
                     class="avatar is-squared"
-                    src="/@images/photo/demo/tools/invision.svg"
+                    src="/images/photo/demo/tools/invision.svg"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/150x150'
@@ -166,7 +166,7 @@
                 <div class="h-avatar">
                   <img
                     class="avatar is-squared"
-                    src="/@images/photo/demo/tools/jira.svg"
+                    src="/images/photo/demo/tools/jira.svg"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/150x150'
@@ -196,7 +196,7 @@
                 <div class="h-avatar">
                   <img
                     class="avatar is-squared"
-                    src="/@images/photo/demo/tools/taiga.svg"
+                    src="/images/photo/demo/tools/taiga.svg"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/150x150'
@@ -226,7 +226,7 @@
                 <div class="h-avatar">
                   <img
                     class="avatar is-squared"
-                    src="/@images/photo/demo/tools/slack.svg"
+                    src="/images/photo/demo/tools/slack.svg"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/150x150'
@@ -256,7 +256,7 @@
                 <div class="h-avatar">
                   <img
                     class="avatar is-squared"
-                    src="/@images/photo/demo/tools/asana.svg"
+                    src="/images/photo/demo/tools/asana.svg"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/150x150'
@@ -286,7 +286,7 @@
                 <div class="h-avatar">
                   <img
                     class="avatar is-squared"
-                    src="/@images/photo/demo/tools/teamwork.svg"
+                    src="/images/photo/demo/tools/teamwork.svg"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/150x150'
@@ -316,7 +316,7 @@
                 <div class="h-avatar">
                   <img
                     class="avatar is-squared"
-                    src="/@images/photo/demo/tools/github.svg"
+                    src="/images/photo/demo/tools/github.svg"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/150x150'
@@ -346,7 +346,7 @@
                 <div class="h-avatar">
                   <img
                     class="avatar is-squared"
-                    src="/@images/photo/demo/tools/gitlab.svg"
+                    src="/images/photo/demo/tools/gitlab.svg"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/150x150'

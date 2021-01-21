@@ -11,7 +11,7 @@ useHead({
     <div class="signup-nav">
       <div class="signup-nav-inner">
         <RouterLink :to="{ name: 'index' }" class="logo">
-          <img src="/@images/logos/logo/logo.svg" alt="" />
+          <img src="/images/logos/logo/logo.svg" alt="" />
         </RouterLink>
       </div>
     </div>
@@ -62,7 +62,7 @@ useHead({
         </div>
       </div>
 
-      <img class="card-bg" src="/@images/bg/signup/huro-signup.png" alt="" />
+      <img class="card-bg" src="/images/bg/signup/huro-signup.png" alt="" />
 
       <div class="hero is-fullheight">
         <div class="hero-body">
@@ -202,7 +202,7 @@ useHead({
                   </h2>
                   <div class="picture-selector">
                     <div class="image-container">
-                      <img src="/@images/avatars/svg/huro-1.svg" alt="" />
+                      <img src="/images/avatars/svg/huro-1.svg" alt="" />
                       <div
                         class="upload-button modal-trigger"
                         role="button"
@@ -224,7 +224,7 @@ useHead({
                   <div class="carousel-item">
                     <div class="image-wrapper">
                       <img
-                        src="/@images/avatars/svg/huro-1.svg"
+                        src="/images/avatars/svg/huro-1.svg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -236,7 +236,7 @@ useHead({
                   <div class="carousel-item">
                     <div class="image-wrapper">
                       <img
-                        src="/@images/avatars/svg/huro-2.svg"
+                        src="/images/avatars/svg/huro-2.svg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -248,7 +248,7 @@ useHead({
                   <div class="carousel-item">
                     <div class="image-wrapper">
                       <img
-                        src="/@images/avatars/svg/huro-3.svg"
+                        src="/images/avatars/svg/huro-3.svg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -260,7 +260,7 @@ useHead({
                   <div class="carousel-item">
                     <div class="image-wrapper">
                       <img
-                        src="/@images/avatars/svg/huro-4.svg"
+                        src="/images/avatars/svg/huro-4.svg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -272,7 +272,7 @@ useHead({
                   <div class="carousel-item">
                     <div class="image-wrapper">
                       <img
-                        src="/@images/avatars/svg/huro-5.svg"
+                        src="/images/avatars/svg/huro-5.svg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -284,7 +284,7 @@ useHead({
                   <div class="carousel-item">
                     <div class="image-wrapper">
                       <img
-                        src="/@images/avatars/svg/huro-6.svg"
+                        src="/images/avatars/svg/huro-6.svg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -296,7 +296,7 @@ useHead({
                   <div class="carousel-item">
                     <div class="image-wrapper">
                       <img
-                        src="/@images/avatars/svg/huro-7.svg"
+                        src="/images/avatars/svg/huro-7.svg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -308,7 +308,7 @@ useHead({
                   <div class="carousel-item">
                     <div class="image-wrapper">
                       <img
-                        src="/@images/avatars/svg/huro-8.svg"
+                        src="/images/avatars/svg/huro-8.svg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -320,7 +320,7 @@ useHead({
                   <div class="carousel-item">
                     <div class="image-wrapper">
                       <img
-                        src="/@images/avatars/svg/huro-9.svg"
+                        src="/images/avatars/svg/huro-9.svg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -332,7 +332,7 @@ useHead({
                   <div class="carousel-item">
                     <div class="image-wrapper">
                       <img
-                        src="/@images/avatars/svg/huro-10.svg"
+                        src="/images/avatars/svg/huro-10.svg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -344,7 +344,7 @@ useHead({
                   <div class="carousel-item">
                     <div class="image-wrapper">
                       <img
-                        src="/@images/avatars/svg/huro-11.svg"
+                        src="/images/avatars/svg/huro-11.svg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -356,7 +356,7 @@ useHead({
                   <div class="carousel-item">
                     <div class="image-wrapper">
                       <img
-                        src="/@images/avatars/svg/huro-12.svg"
+                        src="/images/avatars/svg/huro-12.svg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -485,7 +485,7 @@ useHead({
       <div class="modal-content">
         <div class="h-modal">
           <div class="modal-heading">
-            <img src="/@images/logos/logo/logo-light.svg" alt="" />
+            <img src="/images/logos/logo/logo-light.svg" alt="" />
             <h2 class="subtitle is-6 is-light has-text-centered">
               Upload and crop your picture
             </h2>

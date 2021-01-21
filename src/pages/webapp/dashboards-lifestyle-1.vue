@@ -4,6 +4,8 @@ import { ref } from 'vue'
 
 import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
 
+const activeTab = ref<'overview' | 'content' | 'brands'>('overview')
+
 useHead({
   title: 'Dashboards Lifestyle 1 - WebApp - Vuero',
 })
@@ -35,7 +37,10 @@ useHead({
           </div>
 
           <div class="page-content-inner is-webapp">
-            <LifestyleDashboardV1 class="has-webapp-spacing" />
+            <LifestyleDashboardV1
+              :active-tab="activeTab"
+              class="has-webapp-spacing"
+            />
           </div>
         </div>
       </div>

@@ -23,13 +23,13 @@ const props = defineProps({
           <div class="component">
             <img
               class="light-image-l"
-              src="/@images/icons/components/colors.svg"
+              src="/images/icons/components/colors.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/@images/icons/components/colors-dark.svg"
+              src="/images/icons/components/colors-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -43,13 +43,13 @@ const props = defineProps({
           <div class="component">
             <img
               class="light-image-l"
-              src="/@images/icons/components/badges.svg"
+              src="/images/icons/components/badges.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/@images/icons/components/badges-dark.svg"
+              src="/images/icons/components/badges-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -63,13 +63,13 @@ const props = defineProps({
           <div class="component">
             <img
               class="light-image-l"
-              src="/@images/icons/components/buttons.svg"
+              src="/images/icons/components/buttons.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/@images/icons/components/buttons-dark.svg"
+              src="/images/icons/components/buttons-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -83,13 +83,13 @@ const props = defineProps({
           <div class="component">
             <img
               class="light-image-l"
-              src="/@images/icons/components/blocks.svg"
+              src="/images/icons/components/blocks.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/@images/icons/components/blocks-dark.svg"
+              src="/images/icons/components/blocks-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -103,13 +103,13 @@ const props = defineProps({
           <div class="component">
             <img
               class="light-image-l"
-              src="/@images/icons/components/content.svg"
+              src="/images/icons/components/content.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/@images/icons/components/content-dark.svg"
+              src="/images/icons/components/content-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -122,13 +122,13 @@ const props = defineProps({
           <div class="component">
             <img
               class="light-image-l"
-              src="/@images/icons/components/font-awesome.svg"
+              src="/images/icons/components/font-awesome.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/@images/icons/components/font-awesome-dark.svg"
+              src="/images/icons/components/font-awesome-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -145,13 +145,13 @@ const props = defineProps({
           <div class="component">
             <img
               class="light-image-l"
-              src="/@images/icons/components/feather-icons.svg"
+              src="/images/icons/components/feather-icons.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/@images/icons/components/feather-icons-dark.svg"
+              src="/images/icons/components/feather-icons-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -165,13 +165,13 @@ const props = defineProps({
           <div class="component">
             <img
               class="light-image-l"
-              src="/@images/icons/components/line-icons2.svg"
+              src="/images/icons/components/line-icons2.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/@images/icons/components/line-icons2-dark.svg"
+              src="/images/icons/components/line-icons2-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -185,13 +185,13 @@ const props = defineProps({
           <div class="component">
             <img
               class="light-image-l"
-              src="/@images/icons/components/line-icons.svg"
+              src="/images/icons/components/line-icons.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/@images/icons/components/line-icons-dark.svg"
+              src="/images/icons/components/line-icons-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -208,13 +208,13 @@ const props = defineProps({
           <div class="component">
             <img
               class="light-image-l"
-              src="/@images/icons/components/cards.svg"
+              src="/images/icons/components/cards.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/@images/icons/components/cards-dark.svg"
+              src="/images/icons/components/cards-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -231,13 +231,13 @@ const props = defineProps({
           <div class="component">
             <img
               class="light-image-l"
-              src="/@images/icons/components/cards.svg"
+              src="/images/icons/components/cards.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/@images/icons/components/cards-dark.svg"
+              src="/images/icons/components/cards-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -254,13 +254,13 @@ const props = defineProps({
           <div class="component">
             <img
               class="light-image-l"
-              src="/@images/icons/components/cards.svg"
+              src="/images/icons/components/cards.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/@images/icons/components/cards-dark.svg"
+              src="/images/icons/components/cards-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -274,13 +274,13 @@ const props = defineProps({
           <div class="component">
             <img
               class="light-image-l"
-              src="/@images/icons/components/tables.svg"
+              src="/images/icons/components/tables.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/@images/icons/components/tables-dark.svg"
+              src="/images/icons/components/tables-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -294,13 +294,13 @@ const props = defineProps({
           <div class="component">
             <img
               class="light-image-l"
-              src="/@images/icons/components/tooltip.svg"
+              src="/images/icons/components/tooltip.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/@images/icons/components/tooltip-dark.svg"
+              src="/images/icons/components/tooltip-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -324,13 +324,13 @@ const props = defineProps({
           <div class="component">
             <img
               class="light-image-l"
-              src="/@images/icons/components/avatar.svg"
+              src="/images/icons/components/avatar.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/@images/icons/components/avatar-dark.svg"
+              src="/images/icons/components/avatar-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -347,13 +347,13 @@ const props = defineProps({
           <div class="component">
             <img
               class="light-image-l"
-              src="/@images/icons/components/accordion.svg"
+              src="/images/icons/components/accordion.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/@images/icons/components/accordion-dark.svg"
+              src="/images/icons/components/accordion-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -370,13 +370,13 @@ const props = defineProps({
           <div class="component">
             <img
               class="light-image-l"
-              src="/@images/icons/components/breadcrumb.svg"
+              src="/images/icons/components/breadcrumb.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/@images/icons/components/breadcrumb-dark.svg"
+              src="/images/icons/components/breadcrumb-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -390,13 +390,13 @@ const props = defineProps({
           <div class="component">
             <img
               class="light-image-l"
-              src="/@images/icons/components/dropdowns.svg"
+              src="/images/icons/components/dropdowns.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/@images/icons/components/dropdowns-dark.svg"
+              src="/images/icons/components/dropdowns-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -410,13 +410,13 @@ const props = defineProps({
           <div class="component">
             <img
               class="light-image-l"
-              src="/@images/icons/components/icon-box.svg"
+              src="/images/icons/components/icon-box.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/@images/icons/components/icon-box-dark.svg"
+              src="/images/icons/components/icon-box-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -430,13 +430,13 @@ const props = defineProps({
           <div class="component">
             <img
               class="light-image-l"
-              src="/@images/icons/components/messages.svg"
+              src="/images/icons/components/messages.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/@images/icons/components/messages-dark.svg"
+              src="/images/icons/components/messages-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -450,13 +450,13 @@ const props = defineProps({
           <div class="component">
             <img
               class="light-image-l"
-              src="/@images/icons/components/modals.svg"
+              src="/images/icons/components/modals.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/@images/icons/components/modals-dark.svg"
+              src="/images/icons/components/modals-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -470,13 +470,13 @@ const props = defineProps({
           <div class="component">
             <img
               class="light-image-l"
-              src="/@images/icons/components/progress.svg"
+              src="/images/icons/components/progress.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/@images/icons/components/progress-dark.svg"
+              src="/images/icons/components/progress-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -493,13 +493,13 @@ const props = defineProps({
           <div class="component">
             <img
               class="light-image-l"
-              src="/@images/icons/components/tabs.svg"
+              src="/images/icons/components/tabs.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/@images/icons/components/tabs-dark.svg"
+              src="/images/icons/components/tabs-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -516,13 +516,13 @@ const props = defineProps({
           <div class="component">
             <img
               class="light-image-l"
-              src="/@images/icons/components/slider-tabs.svg"
+              src="/images/icons/components/slider-tabs.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/@images/icons/components/slider-tabs-dark.svg"
+              src="/images/icons/components/slider-tabs-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -539,13 +539,13 @@ const props = defineProps({
           <div class="component">
             <img
               class="light-image-l"
-              src="/@images/icons/components/flex-tables.svg"
+              src="/images/icons/components/flex-tables.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/@images/icons/components/flex-tables-dark.svg"
+              src="/images/icons/components/flex-tables-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -559,13 +559,13 @@ const props = defineProps({
           <div class="component">
             <img
               class="light-image-l"
-              src="/@images/icons/components/snacks.svg"
+              src="/images/icons/components/snacks.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/@images/icons/components/snacks-dark.svg"
+              src="/images/icons/components/snacks-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -591,13 +591,13 @@ const props = defineProps({
           <div class="component">
             <img
               class="light-image-l"
-              src="/@images/icons/components/inputs.svg"
+              src="/images/icons/components/inputs.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/@images/icons/components/inputs-dark.svg"
+              src="/images/icons/components/inputs-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -614,13 +614,13 @@ const props = defineProps({
           <div class="component">
             <img
               class="light-image-l"
-              src="/@images/icons/components/inputs-addons.svg"
+              src="/images/icons/components/inputs-addons.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/@images/icons/components/inputs-addons-dark.svg"
+              src="/images/icons/components/inputs-addons-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -637,13 +637,13 @@ const props = defineProps({
           <div class="component">
             <img
               class="light-image-l"
-              src="/@images/icons/components/textarea.svg"
+              src="/images/icons/components/textarea.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/@images/icons/components/textarea-dark.svg"
+              src="/images/icons/components/textarea-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -660,13 +660,13 @@ const props = defineProps({
           <div class="component">
             <img
               class="light-image-l"
-              src="/@images/icons/components/selects.svg"
+              src="/images/icons/components/selects.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/@images/icons/components/selects-dark.svg"
+              src="/images/icons/components/selects-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -683,13 +683,13 @@ const props = defineProps({
           <div class="component">
             <img
               class="light-image-l"
-              src="/@images/icons/components/selects.svg"
+              src="/images/icons/components/selects.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/@images/icons/components/selects-dark.svg"
+              src="/images/icons/components/selects-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -703,13 +703,13 @@ const props = defineProps({
           <div class="component">
             <img
               class="light-image-l"
-              src="/@images/icons/components/file-input.svg"
+              src="/images/icons/components/file-input.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/@images/icons/components/file-input-dark.svg"
+              src="/images/icons/components/file-input-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -726,13 +726,13 @@ const props = defineProps({
           <div class="component">
             <img
               class="light-image-l"
-              src="/@images/icons/components/toggles.svg"
+              src="/images/icons/components/toggles.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/@images/icons/components/toggles-dark.svg"
+              src="/images/icons/components/toggles-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -749,13 +749,13 @@ const props = defineProps({
           <div class="component">
             <img
               class="light-image-l"
-              src="/@images/icons/components/toggles.svg"
+              src="/images/icons/components/toggles.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/@images/icons/components/toggles-dark.svg"
+              src="/images/icons/components/toggles-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -772,13 +772,13 @@ const props = defineProps({
           <div class="component">
             <img
               class="light-image-l"
-              src="/@images/icons/components/switch.svg"
+              src="/images/icons/components/switch.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/@images/icons/components/switch-dark.svg"
+              src="/images/icons/components/switch-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -795,13 +795,13 @@ const props = defineProps({
           <div class="component">
             <img
               class="light-image-l"
-              src="/@images/icons/components/forms.svg"
+              src="/images/icons/components/forms.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/@images/icons/components/forms-dark.svg"
+              src="/images/icons/components/forms-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -818,13 +818,13 @@ const props = defineProps({
           <div class="component">
             <img
               class="light-image-l"
-              src="/@images/icons/components/forms.svg"
+              src="/images/icons/components/forms.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/@images/icons/components/forms-dark.svg"
+              src="/images/icons/components/forms-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -841,13 +841,13 @@ const props = defineProps({
           <div class="component">
             <img
               class="light-image-l"
-              src="/@images/icons/components/forms.svg"
+              src="/images/icons/components/forms.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/@images/icons/components/forms-dark.svg"
+              src="/images/icons/components/forms-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -864,13 +864,13 @@ const props = defineProps({
           <div class="component">
             <img
               class="light-image-l"
-              src="/@images/icons/components/forms.svg"
+              src="/images/icons/components/forms.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/@images/icons/components/forms-dark.svg"
+              src="/images/icons/components/forms-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -896,13 +896,13 @@ const props = defineProps({
           <div class="component">
             <img
               class="light-image-l"
-              src="/@images/icons/components/alert.svg"
+              src="/images/icons/components/alert.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/@images/icons/components/alert-dark.svg"
+              src="/images/icons/components/alert-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -919,13 +919,13 @@ const props = defineProps({
           <div class="component">
             <img
               class="light-image-l"
-              src="/@images/icons/components/autocomplete.svg"
+              src="/images/icons/components/autocomplete.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/@images/icons/components/autocomplete-dark.svg"
+              src="/images/icons/components/autocomplete-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -942,13 +942,13 @@ const props = defineProps({
           <div class="component">
             <img
               class="light-image-l"
-              src="/@images/icons/components/datepicker.svg"
+              src="/images/icons/components/datepicker.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/@images/icons/components/datepicker-dark.svg"
+              src="/images/icons/components/datepicker-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -965,13 +965,13 @@ const props = defineProps({
           <div class="component">
             <img
               class="light-image-l"
-              src="/@images/icons/components/tags-inputs.svg"
+              src="/images/icons/components/tags-inputs.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/@images/icons/components/tags-inputs-dark.svg"
+              src="/images/icons/components/tags-inputs-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -988,13 +988,13 @@ const props = defineProps({
           <div class="component">
             <img
               class="light-image-l"
-              src="/@images/icons/components/slider.svg"
+              src="/images/icons/components/slider.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/@images/icons/components/slider-dark.svg"
+              src="/images/icons/components/slider-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -1011,13 +1011,13 @@ const props = defineProps({
           <div class="component">
             <img
               class="light-image-l"
-              src="/@images/icons/components/file-input.svg"
+              src="/images/icons/components/file-input.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/@images/icons/components/file-input-dark.svg"
+              src="/images/icons/components/file-input-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -1034,13 +1034,13 @@ const props = defineProps({
           <div class="component">
             <img
               class="light-image-l"
-              src="/@images/icons/components/lightbox.svg"
+              src="/images/icons/components/lightbox.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/@images/icons/components/lightbox-dark.svg"
+              src="/images/icons/components/lightbox-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -1057,13 +1057,13 @@ const props = defineProps({
           <div class="component">
             <img
               class="light-image-l"
-              src="/@images/icons/components/video-gallery.svg"
+              src="/images/icons/components/video-gallery.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/@images/icons/components/video-gallery-dark.svg"
+              src="/images/icons/components/video-gallery-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -1080,13 +1080,13 @@ const props = defineProps({
           <div class="component">
             <img
               class="light-image-l"
-              src="/@images/icons/components/video.svg"
+              src="/images/icons/components/video.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/@images/icons/components/video-dark.svg"
+              src="/images/icons/components/video-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -1103,13 +1103,13 @@ const props = defineProps({
           <div class="component">
             <img
               class="light-image-l"
-              src="/@images/icons/components/toasts.svg"
+              src="/images/icons/components/toasts.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/@images/icons/components/toasts-dark.svg"
+              src="/images/icons/components/toasts-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -1126,13 +1126,13 @@ const props = defineProps({
           <div class="component">
             <img
               class="light-image-l"
-              src="/@images/icons/components/popover.svg"
+              src="/images/icons/components/popover.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/@images/icons/components/popover-dark.svg"
+              src="/images/icons/components/popover-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -1149,13 +1149,13 @@ const props = defineProps({
           <div class="component">
             <img
               class="light-image-l"
-              src="/@images/icons/components/summernote.svg"
+              src="/images/icons/components/summernote.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/@images/icons/components/summernote-dark.svg"
+              src="/images/icons/components/summernote-dark.svg"
               alt=""
               loading="lazy"
             />
@@ -1172,13 +1172,13 @@ const props = defineProps({
           <div class="component">
             <img
               class="light-image-l"
-              src="/@images/icons/components/summernote.svg"
+              src="/images/icons/components/summernote.svg"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-l"
-              src="/@images/icons/components/summernote-dark.svg"
+              src="/images/icons/components/summernote-dark.svg"
               alt=""
               loading="lazy"
             />

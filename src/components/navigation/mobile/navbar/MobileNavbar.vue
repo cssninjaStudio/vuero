@@ -38,10 +38,10 @@ const otherLayoutLink = computed(() => {
         </div>
 
         <RouterLink :to="{ name: 'index' }" class="navbar-item is-brand">
-          <img class="light-image" src="/@images/logos/logo/logo.svg" alt="" />
+          <img class="light-image" src="/images/logos/logo/logo.svg" alt="" />
           <img
             class="dark-image"
-            src="/@images/logos/logo/logo-light.svg"
+            src="/images/logos/logo/logo-light.svg"
             alt=""
           />
         </RouterLink>
@@ -58,7 +58,7 @@ const otherLayoutLink = computed(() => {
               <div class="profile-avatar">
                 <img
                   class="avatar"
-                  src="/@images/avatars/photos/8.jpg"
+                  src="/images/avatars/photos/8.jpg"
                   alt=""
                   @error="
                     $event.target.src = 'https://via.placeholder.com/150x150'
@@ -72,7 +72,7 @@ const otherLayoutLink = computed(() => {
                   <div class="h-avatar is-large">
                     <img
                       class="avatar"
-                      src="/@images/avatars/photos/8.jpg"
+                      src="/images/avatars/photos/8.jpg"
                       alt=""
                       @error="
                         $event.target.src =

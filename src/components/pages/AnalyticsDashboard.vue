@@ -186,7 +186,7 @@ import { optionsCircle } from '/@src/composition/state/charts/apexcharts/example
               <div class="h-avatar is-medium">
                 <img
                   class="avatar is-squared"
-                  src="/@images/avatars/photos/8.jpg"
+                  src="/images/avatars/photos/8.jpg"
                   alt=""
                   data-user-popover="3"
                   @error="
@@ -311,7 +311,7 @@ import { optionsCircle } from '/@src/composition/state/charts/apexcharts/example
                 <div class="h-avatar is-small">
                   <img
                     class="avatar"
-                    src="/@images/avatars/photos/7.jpg"
+                    src="/images/avatars/photos/7.jpg"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/150x150'
@@ -321,7 +321,7 @@ import { optionsCircle } from '/@src/composition/state/charts/apexcharts/example
                 <div class="h-avatar is-small">
                   <img
                     class="avatar"
-                    src="/@images/avatars/photos/8.jpg"
+                    src="/images/avatars/photos/8.jpg"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/150x150'
@@ -331,7 +331,7 @@ import { optionsCircle } from '/@src/composition/state/charts/apexcharts/example
                 <div class="h-avatar is-small">
                   <img
                     class="avatar"
-                    src="/@images/avatars/photos/5.jpg"
+                    src="/images/avatars/photos/5.jpg"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/150x150'

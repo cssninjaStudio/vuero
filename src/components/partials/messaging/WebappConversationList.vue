@@ -11,7 +11,7 @@
       <div class="h-avatar">
         <img
           class="avatar"
-          src="/@images/avatars/photos/11.jpg"
+          src="/images/avatars/photos/11.jpg"
           alt=""
           data-user-popover="13"
           @error="$event.target.src = 'https://via.placeholder.com/150x150'"
@@ -38,7 +38,7 @@
       <div class="h-avatar">
         <img
           class="avatar"
-          src="/@images/avatars/photos/39.jpg"
+          src="/images/avatars/photos/39.jpg"
           alt=""
           data-user-popover="33"
           @error="$event.target.src = 'https://via.placeholder.com/150x150'"
@@ -89,7 +89,7 @@
       <div class="h-avatar">
         <img
           class="avatar"
-          src="/@images/avatars/photos/7.jpg"
+          src="/images/avatars/photos/7.jpg"
           alt=""
           data-user-popover="0"
           @error="$event.target.src = 'https://via.placeholder.com/150x150'"
@@ -116,7 +116,7 @@
       <div class="h-avatar">
         <img
           class="avatar"
-          src="/@images/avatars/photos/23.jpg"
+          src="/images/avatars/photos/23.jpg"
           alt=""
           data-user-popover="21"
           @error="$event.target.src = 'https://via.placeholder.com/150x150'"
@@ -143,7 +143,7 @@
       <div class="h-avatar">
         <img
           class="avatar"
-          src="/@images/avatars/photos/5.jpg"
+          src="/images/avatars/photos/5.jpg"
           alt=""
           data-user-popover="9"
           @error="$event.target.src = 'https://via.placeholder.com/150x150'"
@@ -168,7 +168,7 @@
       <div class="h-avatar">
         <img
           class="avatar"
-          src="/@images/avatars/photos/18.jpg"
+          src="/images/avatars/photos/18.jpg"
           alt=""
           data-user-popover="7"
           @error="$event.target.src = 'https://via.placeholder.com/150x150'"
@@ -193,7 +193,7 @@
       <div class="h-avatar">
         <img
           class="avatar"
-          src="/@images/avatars/photos/25.jpg"
+          src="/images/avatars/photos/25.jpg"
           alt=""
           data-user-popover="4"
           @error="$event.target.src = 'https://via.placeholder.com/150x150'"
@@ -220,7 +220,7 @@
       <div class="h-avatar">
         <img
           class="avatar"
-          src="/@images/avatars/photos/22.jpg"
+          src="/images/avatars/photos/22.jpg"
           alt=""
           data-user-popover="5"
           @error="$event.target.src = 'https://via.placeholder.com/150x150'"
@@ -245,7 +245,7 @@
       <div class="h-avatar">
         <img
           class="avatar"
-          src="/@images/avatars/photos/19.jpg"
+          src="/images/avatars/photos/19.jpg"
           alt=""
           data-user-popover="17"
           @error="$event.target.src = 'https://via.placeholder.com/150x150'"
@@ -272,7 +272,7 @@
       <div class="h-avatar">
         <img
           class="avatar"
-          src="/@images/avatars/photos/13.jpg"
+          src="/images/avatars/photos/13.jpg"
           alt=""
           data-user-popover="6"
           @error="$event.target.src = 'https://via.placeholder.com/150x150'"

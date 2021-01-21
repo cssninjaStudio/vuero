@@ -104,7 +104,7 @@ import { interviewsOptions } from '/@src/composition/state/charts/apexcharts/exa
                     <div class="h-avatar">
                       <img
                         class="avatar"
-                        src="/@images/avatars/photos/5.jpg"
+                        src="/images/avatars/photos/5.jpg"
                         alt=""
                         data-user-popover="9"
                         @error="
@@ -116,7 +116,7 @@ import { interviewsOptions } from '/@src/composition/state/charts/apexcharts/exa
                     <div class="h-avatar">
                       <img
                         class="avatar"
-                        src="/@images/avatars/photos/18.jpg"
+                        src="/images/avatars/photos/18.jpg"
                         alt=""
                         data-user-popover="7"
                         @error="
@@ -128,7 +128,7 @@ import { interviewsOptions } from '/@src/composition/state/charts/apexcharts/exa
                     <div class="h-avatar">
                       <img
                         class="avatar"
-                        src="/@images/avatars/photos/26.jpg"
+                        src="/images/avatars/photos/26.jpg"
                         alt=""
                         data-user-popover="23"
                         @error="
@@ -152,7 +152,7 @@ import { interviewsOptions } from '/@src/composition/state/charts/apexcharts/exa
 
           <div class="column is-6 h-hidden-mobile h-hidden-tablet-p">
             <img
-              src="/@images/illustrations/dashboards/personal/interviews.svg"
+              src="/images/illustrations/dashboards/personal/interviews.svg"
               alt=""
             />
           </div>
@@ -260,7 +260,7 @@ import { interviewsOptions } from '/@src/composition/state/charts/apexcharts/exa
             <div class="h-avatar">
               <img
                 class="avatar"
-                src="/@images/avatars/photos/32.jpg"
+                src="/images/avatars/photos/32.jpg"
                 data-user-popover="28"
                 alt=""
                 @error="
@@ -282,7 +282,7 @@ import { interviewsOptions } from '/@src/composition/state/charts/apexcharts/exa
             <div class="h-avatar">
               <img
                 class="avatar"
-                src="/@images/avatars/photos/19.jpg"
+                src="/images/avatars/photos/19.jpg"
                 data-user-popover="17"
                 alt=""
                 @error="
@@ -304,7 +304,7 @@ import { interviewsOptions } from '/@src/composition/state/charts/apexcharts/exa
             <div class="h-avatar">
               <img
                 class="avatar"
-                src="/@images/avatars/photos/12.jpg"
+                src="/images/avatars/photos/12.jpg"
                 data-user-popover="2"
                 alt=""
                 @error="

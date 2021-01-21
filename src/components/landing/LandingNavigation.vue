@@ -35,12 +35,12 @@ watch(
         <div class="brand-icon">
           <img
             class="light-image-l"
-            src="/@images/logos/logo/logo.svg"
+            src="/images/logos/logo/logo.svg"
             alt=""
           />
           <img
             class="dark-image-l"
-            src="/@images/logos/logo/logo-light.svg"
+            src="/images/logos/logo/logo-light.svg"
             alt=""
           />
         </div>

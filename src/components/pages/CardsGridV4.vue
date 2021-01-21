@@ -5,12 +5,12 @@
       <div class="placeholder-content">
         <img
           class="light-image"
-          src="/@images/illustrations/placeholders/search-4.svg"
+          src="/images/illustrations/placeholders/search-4.svg"
           alt=""
         />
         <img
           class="dark-image"
-          src="/@images/illustrations/placeholders/search-4-dark.svg"
+          src="/images/illustrations/placeholders/search-4-dark.svg"
           alt=""
         />
         <h3>We couldn't find any matching results.</h3>
@@ -27,7 +27,7 @@
       <div class="column is-3">
         <a href="#" class="card-grid-item">
           <img
-            src="/@images/photo/demo/11.jpg"
+            src="/images/photo/demo/11.jpg"
             alt=""
             @error="$event.target.src = 'https://via.placeholder.com/400x300'"
           />
@@ -40,7 +40,7 @@
             <div class="h-avatar is-small">
               <img
                 class="avatar"
-                src="/@images/avatars/photos/39.jpg"
+                src="/images/avatars/photos/39.jpg"
                 alt=""
                 data-user-popover="33"
                 @error="
@@ -60,7 +60,7 @@
       <div class="column is-3">
         <a href="#" class="card-grid-item">
           <img
-            src="/@images/photo/demo/12.jpg"
+            src="/images/photo/demo/12.jpg"
             alt=""
             @error="$event.target.src = 'https://via.placeholder.com/400x300'"
           />
@@ -73,7 +73,7 @@
             <div class="h-avatar is-small">
               <img
                 class="avatar"
-                src="/@images/avatars/photos/15.jpg"
+                src="/images/avatars/photos/15.jpg"
                 alt=""
                 data-user-popover="15"
                 @error="
@@ -93,7 +93,7 @@
       <div class="column is-3">
         <a href="#" class="card-grid-item">
           <img
-            src="/@images/photo/demo/13.jpg"
+            src="/images/photo/demo/13.jpg"
             alt=""
             @error="$event.target.src = 'https://via.placeholder.com/400x300'"
           />
@@ -106,7 +106,7 @@
             <div class="h-avatar is-small">
               <img
                 class="avatar"
-                src="/@images/avatars/photos/24.jpg"
+                src="/images/avatars/photos/24.jpg"
                 alt=""
                 data-user-popover="22"
                 @error="
@@ -126,7 +126,7 @@
       <div class="column is-3">
         <a href="#" class="card-grid-item">
           <img
-            src="/@images/photo/demo/14.jpg"
+            src="/images/photo/demo/14.jpg"
             alt=""
             @error="$event.target.src = 'https://via.placeholder.com/400x300'"
           />
@@ -139,7 +139,7 @@
             <div class="h-avatar is-small">
               <img
                 class="avatar"
-                src="/@images/avatars/photos/27.jpg"
+                src="/images/avatars/photos/27.jpg"
                 alt=""
                 data-user-popover="10"
                 @error="
@@ -159,7 +159,7 @@
       <div class="column is-3">
         <a href="#" class="card-grid-item">
           <img
-            src="/@images/photo/demo/15.jpg"
+            src="/images/photo/demo/15.jpg"
             alt=""
             @error="$event.target.src = 'https://via.placeholder.com/400x300'"
           />
@@ -172,7 +172,7 @@
             <div class="h-avatar is-small">
               <img
                 class="avatar"
-                src="/@images/avatars/photos/10.jpg"
+                src="/images/avatars/photos/10.jpg"
                 alt=""
                 data-user-popover="8"
                 @error="
@@ -192,7 +192,7 @@
       <div class="column is-3">
         <a href="#" class="card-grid-item">
           <img
-            src="/@images/photo/demo/17.jpg"
+            src="/images/photo/demo/17.jpg"
             alt=""
             @error="$event.target.src = 'https://via.placeholder.com/400x300'"
           />
@@ -205,7 +205,7 @@
             <div class="h-avatar is-small">
               <img
                 class="avatar"
-                src="/@images/avatars/photos/22.jpg"
+                src="/images/avatars/photos/22.jpg"
                 alt=""
                 data-user-popover="5"
                 @error="
@@ -225,7 +225,7 @@
       <div class="column is-3">
         <a href="#" class="card-grid-item">
           <img
-            src="/@images/photo/demo/18.jpg"
+            src="/images/photo/demo/18.jpg"
             alt=""
             @error="$event.target.src = 'https://via.placeholder.com/400x300'"
           />
@@ -238,7 +238,7 @@
             <div class="h-avatar is-small">
               <img
                 class="avatar"
-                src="/@images/avatars/photos/16.jpg"
+                src="/images/avatars/photos/16.jpg"
                 alt=""
                 data-user-popover="16"
                 @error="
@@ -258,7 +258,7 @@
       <div class="column is-3">
         <a href="#" class="card-grid-item">
           <img
-            src="/@images/photo/demo/19.jpg"
+            src="/images/photo/demo/19.jpg"
             alt=""
             @error="$event.target.src = 'https://via.placeholder.com/400x300'"
           />
@@ -271,7 +271,7 @@
             <div class="h-avatar is-small">
               <img
                 class="avatar"
-                src="/@images/avatars/photos/26.jpg"
+                src="/images/avatars/photos/26.jpg"
                 alt=""
                 data-user-popover="23"
                 @error="
@@ -291,7 +291,7 @@
       <div class="column is-3">
         <a href="#" class="card-grid-item">
           <img
-            src="/@images/photo/demo/20.jpg"
+            src="/images/photo/demo/20.jpg"
             alt=""
             @error="$event.target.src = 'https://via.placeholder.com/400x300'"
           />
@@ -304,7 +304,7 @@
             <div class="h-avatar is-small">
               <img
                 class="avatar"
-                src="/@images/avatars/photos/8.jpg"
+                src="/images/avatars/photos/8.jpg"
                 alt=""
                 data-user-popover="3"
                 @error="
@@ -324,7 +324,7 @@
       <div class="column is-3">
         <a href="#" class="card-grid-item">
           <img
-            src="/@images/photo/demo/21.jpg"
+            src="/images/photo/demo/21.jpg"
             alt=""
             @error="$event.target.src = 'https://via.placeholder.com/400x300'"
           />
@@ -337,7 +337,7 @@
             <div class="h-avatar is-small">
               <img
                 class="avatar"
-                src="/@images/avatars/photos/14.jpg"
+                src="/images/avatars/photos/14.jpg"
                 alt=""
                 data-user-popover="14"
                 @error="
@@ -357,7 +357,7 @@
       <div class="column is-3">
         <a href="#" class="card-grid-item">
           <img
-            src="/@images/photo/demo/22.jpg"
+            src="/images/photo/demo/22.jpg"
             alt=""
             @error="$event.target.src = 'https://via.placeholder.com/400x300'"
           />
@@ -370,7 +370,7 @@
             <div class="h-avatar is-small">
               <img
                 class="avatar"
-                src="/@images/avatars/photos/9.jpg"
+                src="/images/avatars/photos/9.jpg"
                 alt=""
                 data-user-popover="1"
                 @error="
@@ -390,7 +390,7 @@
       <div class="column is-3">
         <a href="#" class="card-grid-item">
           <img
-            src="/@images/photo/demo/23.jpg"
+            src="/images/photo/demo/23.jpg"
             alt=""
             @error="$event.target.src = 'https://via.placeholder.com/400x300'"
           />
@@ -401,7 +401,7 @@
             <div class="h-avatar is-small">
               <img
                 class="avatar"
-                src="/@images/avatars/photos/40.jpg"
+                src="/images/avatars/photos/40.jpg"
                 alt=""
                 data-user-popover="11"
                 @error="
@@ -421,7 +421,7 @@
       <div class="column is-3">
         <a href="#" class="card-grid-item">
           <img
-            src="/@images/photo/demo/24.jpg"
+            src="/images/photo/demo/24.jpg"
             alt=""
             @error="$event.target.src = 'https://via.placeholder.com/400x300'"
           />
@@ -434,7 +434,7 @@
             <div class="h-avatar is-small">
               <img
                 class="avatar"
-                src="/@images/avatars/photos/19.jpg"
+                src="/images/avatars/photos/19.jpg"
                 alt=""
                 data-user-popover="17"
                 @error="
@@ -454,7 +454,7 @@
       <div class="column is-3">
         <a href="#" class="card-grid-item">
           <img
-            src="/@images/photo/demo/25.jpg"
+            src="/images/photo/demo/25.jpg"
             alt=""
             @error="$event.target.src = 'https://via.placeholder.com/400x300'"
           />
@@ -467,7 +467,7 @@
             <div class="h-avatar is-small">
               <img
                 class="avatar"
-                src="/@images/avatars/photos/28.jpg"
+                src="/images/avatars/photos/28.jpg"
                 alt=""
                 data-user-popover="24"
                 @error="
@@ -487,7 +487,7 @@
       <div class="column is-3">
         <a href="#" class="card-grid-item">
           <img
-            src="/@images/photo/demo/26.jpg"
+            src="/images/photo/demo/26.jpg"
             alt=""
             @error="$event.target.src = 'https://via.placeholder.com/400x300'"
           />
@@ -500,7 +500,7 @@
             <div class="h-avatar is-small">
               <img
                 class="avatar"
-                src="/@images/avatars/photos/5.jpg"
+                src="/images/avatars/photos/5.jpg"
                 alt=""
                 data-user-popover="9"
                 @error="
@@ -520,7 +520,7 @@
       <div class="column is-3">
         <a href="#" class="card-grid-item">
           <img
-            src="/@images/photo/demo/27.jpg"
+            src="/images/photo/demo/27.jpg"
             alt=""
             @error="$event.target.src = 'https://via.placeholder.com/400x300'"
           />
@@ -533,7 +533,7 @@
             <div class="h-avatar is-small">
               <img
                 class="avatar"
-                src="/@images/avatars/photos/33.jpg"
+                src="/images/avatars/photos/33.jpg"
                 alt=""
                 data-user-popover="29"
                 @error="
@@ -553,7 +553,7 @@
       <div class="column is-3">
         <a href="#" class="card-grid-item">
           <img
-            src="/@images/photo/demo/28.jpg"
+            src="/images/photo/demo/28.jpg"
             alt=""
             @error="$event.target.src = 'https://via.placeholder.com/400x300'"
           />
@@ -566,7 +566,7 @@
             <div class="h-avatar is-small">
               <img
                 class="avatar"
-                src="/@images/avatars/photos/33.jpg"
+                src="/images/avatars/photos/33.jpg"
                 alt=""
                 data-user-popover="29"
                 @error="
@@ -586,7 +586,7 @@
       <div class="column is-3">
         <a href="#" class="card-grid-item">
           <img
-            src="/@images/photo/demo/29.jpg"
+            src="/images/photo/demo/29.jpg"
             alt=""
             @error="$event.target.src = 'https://via.placeholder.com/400x300'"
           />
@@ -599,7 +599,7 @@
             <div class="h-avatar is-small">
               <img
                 class="avatar"
-                src="/@images/avatars/photos/31.jpg"
+                src="/images/avatars/photos/31.jpg"
                 alt=""
                 data-user-popover="27"
                 @error="

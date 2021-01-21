@@ -15,7 +15,6 @@
     "plugins": [{ "name": "@vuedx/typescript-plugin-vue" }],
     "paths": {
       "/@src/*": ["src/*"],
-      "/@images/*": ["src/assets/images/*"],
     }
   },
 }

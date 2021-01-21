@@ -70,7 +70,7 @@
                       <div class="box-inner">
                         <div class="combo-item">
                           <img
-                            src="/@images/icons/flags/united-states-of-america.svg"
+                            src="/images/icons/flags/united-states-of-america.svg"
                             alt=""
                             @error="
                               $event.target.src =
@@ -89,7 +89,7 @@
                             <li>
                               <span class="item-icon">
                                 <img
-                                  src="/@images/icons/flags/united-states-of-america.svg"
+                                  src="/images/icons/flags/united-states-of-america.svg"
                                   alt=""
                                   @error="
                                     $event.target.src =
@@ -108,7 +108,7 @@
                             <li>
                               <span class="item-icon">
                                 <img
-                                  src="/@images/icons/flags/germany.svg"
+                                  src="/images/icons/flags/germany.svg"
                                   alt=""
                                   @error="
                                     $event.target.src =
@@ -127,7 +127,7 @@
                             <li>
                               <span class="item-icon">
                                 <img
-                                  src="/@images/icons/flags/france.svg"
+                                  src="/images/icons/flags/france.svg"
                                   alt=""
                                   @error="
                                     $event.target.src =
@@ -146,7 +146,7 @@
                             <li>
                               <span class="item-icon">
                                 <img
-                                  src="/@images/icons/flags/england.svg"
+                                  src="/images/icons/flags/england.svg"
                                   alt=""
                                   @error="
                                     $event.target.src =

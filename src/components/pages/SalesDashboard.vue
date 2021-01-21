@@ -53,7 +53,7 @@ onMounted(async () => {
       <div class="h-avatar is-large">
         <img
           class="avatar"
-          src="/@images/avatars/photos/8.jpg"
+          src="/images/avatars/photos/8.jpg"
           alt=""
           @error="$event.target.src = 'https://via.placeholder.com/150x150'"
         />

@@ -26,7 +26,7 @@ import { incomeOptions } from '/@src/composition/state/charts/apexcharts/example
                   <div class="card-number">
                     <span>** 4628</span>
                     <img
-                      src="/@images/icons/dashboards/banking/visa-squared-white.svg"
+                      src="/images/icons/dashboards/banking/visa-squared-white.svg"
                       alt=""
                     />
                   </div>
@@ -61,7 +61,7 @@ import { incomeOptions } from '/@src/composition/state/charts/apexcharts/example
                 <h4 class="dark-inverted">Type</h4>
                 <span class="has-image">
                   <img
-                    src="/@images/icons/dashboards/banking/visa-squared-color.svg"
+                    src="/images/icons/dashboards/banking/visa-squared-color.svg"
                     alt=""
                   />
                   Credit card
@@ -75,7 +75,7 @@ import { incomeOptions } from '/@src/composition/state/charts/apexcharts/example
                   <div class="card-number">
                     <span>** 2649</span>
                     <img
-                      src="/@images/icons/dashboards/banking/visa-squared-white.svg"
+                      src="/images/icons/dashboards/banking/visa-squared-white.svg"
                       alt=""
                     />
                   </div>
@@ -157,7 +157,7 @@ import { incomeOptions } from '/@src/composition/state/charts/apexcharts/example
                     <div class="box-inner">
                       <div class="combo-item">
                         <img
-                          src="/@images/avatars/photos/8.jpg"
+                          src="/images/avatars/photos/8.jpg"
                           alt=""
                           @error="
                             $event.target.src =
@@ -176,7 +176,7 @@ import { incomeOptions } from '/@src/composition/state/charts/apexcharts/example
                           <li>
                             <span class="item-icon">
                               <img
-                                src="/@images/icons/dashboards/banking/bank-1.svg"
+                                src="/images/icons/dashboards/banking/bank-1.svg"
                                 alt=""
                                 @error="
                                   $event.target.src =
@@ -192,7 +192,7 @@ import { incomeOptions } from '/@src/composition/state/charts/apexcharts/example
                           <li>
                             <span class="item-icon">
                               <img
-                                src="/@images/icons/dashboards/banking/bank-2.svg"
+                                src="/images/icons/dashboards/banking/bank-2.svg"
                                 alt=""
                                 @error="
                                   $event.target.src =
@@ -208,7 +208,7 @@ import { incomeOptions } from '/@src/composition/state/charts/apexcharts/example
                           <li>
                             <span class="item-icon">
                               <img
-                                src="/@images/icons/dashboards/banking/bank-3.svg"
+                                src="/images/icons/dashboards/banking/bank-3.svg"
                                 alt=""
                                 @error="
                                   $event.target.src =
@@ -301,7 +301,7 @@ import { incomeOptions } from '/@src/composition/state/charts/apexcharts/example
                   <div class="h-avatar is-small">
                     <img
                       class="avatar"
-                      src="/@images/avatars/photos/18.jpg"
+                      src="/images/avatars/photos/18.jpg"
                       alt=""
                       data-user-popover="7"
                       @error="
@@ -318,7 +318,7 @@ import { incomeOptions } from '/@src/composition/state/charts/apexcharts/example
                   <div class="h-avatar is-small">
                     <img
                       class="avatar"
-                      src="/@images/avatars/photos/7.jpg"
+                      src="/images/avatars/photos/7.jpg"
                       alt=""
                       data-user-popover="0"
                       @error="
@@ -344,7 +344,7 @@ import { incomeOptions } from '/@src/composition/state/charts/apexcharts/example
                       <div class="box-inner">
                         <div class="combo-item">
                           <img
-                            src="/@images/avatars/photos/8.jpg"
+                            src="/images/avatars/photos/8.jpg"
                             alt=""
                             @error="
                               $event.target.src =
@@ -363,7 +363,7 @@ import { incomeOptions } from '/@src/composition/state/charts/apexcharts/example
                             <li>
                               <span class="item-icon">
                                 <img
-                                  src="/@images/icons/dashboards/banking/bank-1.svg"
+                                  src="/images/icons/dashboards/banking/bank-1.svg"
                                   alt=""
                                   @error="
                                     $event.target.src =
@@ -382,7 +382,7 @@ import { incomeOptions } from '/@src/composition/state/charts/apexcharts/example
                             <li>
                               <span class="item-icon">
                                 <img
-                                  src="/@images/icons/dashboards/banking/bank-2.svg"
+                                  src="/images/icons/dashboards/banking/bank-2.svg"
                                   alt=""
                                   @error="
                                     $event.target.src =
@@ -401,7 +401,7 @@ import { incomeOptions } from '/@src/composition/state/charts/apexcharts/example
                             <li>
                               <span class="item-icon">
                                 <img
-                                  src="/@images/icons/dashboards/banking/bank-3.svg"
+                                  src="/images/icons/dashboards/banking/bank-3.svg"
                                   alt=""
                                   @error="
                                     $event.target.src =

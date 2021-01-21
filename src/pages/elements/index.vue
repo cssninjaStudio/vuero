@@ -67,7 +67,7 @@ useHead({
                     <div class="h-avatar is-xl">
                       <img
                         class="avatar"
-                        src="/@images/avatars/svg/huro-1.svg"
+                        src="/images/avatars/svg/huro-1.svg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -76,7 +76,7 @@ useHead({
                       />
                       <img
                         class="badge"
-                        src="/@images/photo/demo/misc/buoy.jpg"
+                        src="/images/photo/demo/misc/buoy.jpg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -107,12 +107,12 @@ useHead({
                           </div>
                           <img
                             class="light-image"
-                            src="/@images/illustrations/components/buttons.svg"
+                            src="/images/illustrations/components/buttons.svg"
                             alt=""
                           />
                           <img
                             class="dark-image"
-                            src="/@images/illustrations/components/buttons-dark.svg"
+                            src="/images/illustrations/components/buttons-dark.svg"
                             alt=""
                           />
                         </div>
@@ -134,12 +134,12 @@ useHead({
                           </div>
                           <img
                             class="light-image"
-                            src="/@images/illustrations/components/cards.svg"
+                            src="/images/illustrations/components/cards.svg"
                             alt=""
                           />
                           <img
                             class="dark-image"
-                            src="/@images/illustrations/components/cards-dark.svg"
+                            src="/images/illustrations/components/cards-dark.svg"
                             alt=""
                           />
                         </div>
@@ -161,12 +161,12 @@ useHead({
                           </div>
                           <img
                             class="light-image"
-                            src="/@images/illustrations/components/icons.svg"
+                            src="/images/illustrations/components/icons.svg"
                             alt=""
                           />
                           <img
                             class="dark-image"
-                            src="/@images/illustrations/components/icons-dark.svg"
+                            src="/images/illustrations/components/icons-dark.svg"
                             alt=""
                           />
                         </div>
@@ -190,12 +190,12 @@ useHead({
                           </div>
                           <img
                             class="light-image"
-                            src="/@images/illustrations/components/lists.svg"
+                            src="/images/illustrations/components/lists.svg"
                             alt=""
                           />
                           <img
                             class="dark-image"
-                            src="/@images/illustrations/components/lists-dark.svg"
+                            src="/images/illustrations/components/lists-dark.svg"
                             alt=""
                           />
                         </div>
@@ -217,12 +217,12 @@ useHead({
                           </div>
                           <img
                             class="light-image"
-                            src="/@images/illustrations/components/forms.svg"
+                            src="/images/illustrations/components/forms.svg"
                             alt=""
                           />
                           <img
                             class="dark-image"
-                            src="/@images/illustrations/components/forms-dark.svg"
+                            src="/images/illustrations/components/forms-dark.svg"
                             alt=""
                           />
                         </div>
@@ -246,12 +246,12 @@ useHead({
                           </div>
                           <img
                             class="light-image"
-                            src="/@images/illustrations/components/checkboxes.svg"
+                            src="/images/illustrations/components/checkboxes.svg"
                             alt=""
                           />
                           <img
                             class="dark-image"
-                            src="/@images/illustrations/components/checkboxes-dark.svg"
+                            src="/images/illustrations/components/checkboxes-dark.svg"
                             alt=""
                           />
                         </div>
@@ -274,12 +274,12 @@ useHead({
                           </div>
                           <img
                             class="light-image"
-                            src="/@images/illustrations/components/tags.svg"
+                            src="/images/illustrations/components/tags.svg"
                             alt=""
                           />
                           <img
                             class="dark-image"
-                            src="/@images/illustrations/components/tags-dark.svg"
+                            src="/images/illustrations/components/tags-dark.svg"
                             alt=""
                           />
                         </div>
@@ -303,12 +303,12 @@ useHead({
                           </div>
                           <img
                             class="light-image"
-                            src="/@images/illustrations/components/switches.svg"
+                            src="/images/illustrations/components/switches.svg"
                             alt=""
                           />
                           <img
                             class="dark-image"
-                            src="/@images/illustrations/components/switches-dark.svg"
+                            src="/images/illustrations/components/switches-dark.svg"
                             alt=""
                           />
                         </div>

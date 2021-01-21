@@ -11,12 +11,12 @@
         <div class="onboarding-card">
           <img
             class="light-image"
-            src="/@images/illustrations/onboarding/set4-1.svg"
+            src="/images/illustrations/onboarding/set4-1.svg"
             alt=""
           />
           <img
             class="dark-image"
-            src="/@images/illustrations/onboarding/set4-1-dark.svg"
+            src="/images/illustrations/onboarding/set4-1-dark.svg"
             alt=""
           />
           <h3>Explore Workboard</h3>
@@ -33,12 +33,12 @@
         <div class="onboarding-card">
           <img
             class="light-image"
-            src="/@images/illustrations/onboarding/set4-2.svg"
+            src="/images/illustrations/onboarding/set4-2.svg"
             alt=""
           />
           <img
             class="dark-image"
-            src="/@images/illustrations/onboarding/set4-2-dark.svg"
+            src="/images/illustrations/onboarding/set4-2-dark.svg"
             alt=""
           />
           <h3>Add some Tasks</h3>
@@ -55,12 +55,12 @@
         <div class="onboarding-card">
           <img
             class="light-image"
-            src="/@images/illustrations/onboarding/set4-3.svg"
+            src="/images/illustrations/onboarding/set4-3.svg"
             alt=""
           />
           <img
             class="dark-image"
-            src="/@images/illustrations/onboarding/set4-3-dark.svg"
+            src="/images/illustrations/onboarding/set4-3-dark.svg"
             alt=""
           />
           <h3>Browse Wiki</h3>

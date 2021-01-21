@@ -236,7 +236,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                     <div class="h-avatar is-medium">
                       <img
                         class="avatar"
-                        src="/@images/avatars/photos/7.jpg"
+                        src="/images/avatars/photos/7.jpg"
                         alt=""
                         data-user-popover="0"
                         @error="
@@ -246,7 +246,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                       />
                       <img
                         class="badge"
-                        src="/@images/icons/flags/united-states-of-america.svg"
+                        src="/images/icons/flags/united-states-of-america.svg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -271,7 +271,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                     <div class="h-avatar is-medium">
                       <img
                         class="avatar"
-                        src="/@images/avatars/photos/5.jpg"
+                        src="/images/avatars/photos/5.jpg"
                         alt=""
                         data-user-popover="9"
                         @error="
@@ -281,7 +281,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                       />
                       <img
                         class="badge"
-                        src="/@images/icons/flags/united-states-of-america.svg"
+                        src="/images/icons/flags/united-states-of-america.svg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -306,7 +306,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                     <div class="h-avatar is-medium">
                       <img
                         class="avatar"
-                        src="/@images/avatars/photos/14.jpg"
+                        src="/images/avatars/photos/14.jpg"
                         alt=""
                         data-user-popover="14"
                         @error="
@@ -316,7 +316,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                       />
                       <img
                         class="badge"
-                        src="/@images/icons/flags/england.svg"
+                        src="/images/icons/flags/england.svg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -341,7 +341,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                     <div class="h-avatar is-medium">
                       <img
                         class="avatar"
-                        src="/@images/avatars/photos/23.jpg"
+                        src="/images/avatars/photos/23.jpg"
                         alt=""
                         data-user-popover="21"
                         @error="
@@ -351,7 +351,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                       />
                       <img
                         class="badge"
-                        src="/@images/icons/flags/united-states-of-america.svg"
+                        src="/images/icons/flags/united-states-of-america.svg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -376,7 +376,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                     <div class="h-avatar is-medium">
                       <img
                         class="avatar"
-                        src="/@images/avatars/photos/32.jpg"
+                        src="/images/avatars/photos/32.jpg"
                         alt=""
                         data-user-popover="28"
                         @error="
@@ -386,7 +386,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                       />
                       <img
                         class="badge"
-                        src="/@images/icons/flags/united-states-of-america.svg"
+                        src="/images/icons/flags/united-states-of-america.svg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -411,7 +411,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                     <div class="h-avatar is-medium">
                       <img
                         class="avatar"
-                        src="/@images/avatars/photos/39.jpg"
+                        src="/images/avatars/photos/39.jpg"
                         alt=""
                         data-user-popover="33"
                         @error="
@@ -421,7 +421,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                       />
                       <img
                         class="badge"
-                        src="/@images/icons/flags/united-states-of-america.svg"
+                        src="/images/icons/flags/united-states-of-america.svg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -446,7 +446,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                     <div class="h-avatar is-medium">
                       <img
                         class="avatar"
-                        src="/@images/avatars/photos/19.jpg"
+                        src="/images/avatars/photos/19.jpg"
                         alt=""
                         data-user-popover="17"
                         @error="
@@ -456,7 +456,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                       />
                       <img
                         class="badge"
-                        src="/@images/icons/flags/germany.svg"
+                        src="/images/icons/flags/germany.svg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -494,7 +494,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                     <div class="h-avatar is-medium">
                       <img
                         class="avatar"
-                        src="/@images/photo/demo/apps/1.jpg"
+                        src="/images/photo/demo/apps/1.jpg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -519,7 +519,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                     <div class="h-avatar is-medium">
                       <img
                         class="avatar"
-                        src="/@images/photo/demo/apps/2.png"
+                        src="/images/photo/demo/apps/2.png"
                         alt=""
                         @error="
                           $event.target.src =
@@ -544,7 +544,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                     <div class="h-avatar is-medium">
                       <img
                         class="avatar is-squared"
-                        src="/@images/icons/files/sheet.svg"
+                        src="/images/icons/files/sheet.svg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -569,7 +569,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                     <div class="h-avatar is-medium">
                       <img
                         class="avatar"
-                        src="/@images/photo/demo/apps/3.png"
+                        src="/images/photo/demo/apps/3.png"
                         alt=""
                         @error="
                           $event.target.src =
@@ -594,7 +594,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                     <div class="h-avatar is-medium">
                       <img
                         class="avatar"
-                        src="/@images/photo/demo/apps/4.png"
+                        src="/images/photo/demo/apps/4.png"
                         alt=""
                         @error="
                           $event.target.src =
@@ -619,7 +619,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                     <div class="h-avatar is-medium">
                       <img
                         class="avatar is-squared"
-                        src="/@images/icons/files/doc-2.svg"
+                        src="/images/icons/files/doc-2.svg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -644,7 +644,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                     <div class="h-avatar is-medium">
                       <img
                         class="avatar is-squared"
-                        src="/@images/icons/files/pdf.svg"
+                        src="/images/icons/files/pdf.svg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -669,7 +669,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                     <div class="h-avatar is-medium">
                       <img
                         class="avatar"
-                        src="/@images/photo/demo/apps/5.png"
+                        src="/images/photo/demo/apps/5.png"
                         alt=""
                         @error="
                           $event.target.src =
@@ -694,7 +694,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                     <div class="h-avatar is-medium">
                       <img
                         class="avatar is-squared"
-                        src="/@images/icons/files/ai.svg"
+                        src="/images/icons/files/ai.svg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -731,7 +731,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                     <div class="h-avatar is-medium">
                       <img
                         class="avatar"
-                        src="/@images/avatars/photos/7.jpg"
+                        src="/images/avatars/photos/7.jpg"
                         alt=""
                         data-user-popover="0"
                         @error="
@@ -741,7 +741,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                       />
                       <img
                         class="badge"
-                        src="/@images/icons/flags/united-states-of-america.svg"
+                        src="/images/icons/flags/united-states-of-america.svg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -766,7 +766,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                     <div class="h-avatar is-medium">
                       <img
                         class="avatar"
-                        src="/@images/avatars/photos/5.jpg"
+                        src="/images/avatars/photos/5.jpg"
                         alt=""
                         data-user-popover="9"
                         @error="
@@ -776,7 +776,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                       />
                       <img
                         class="badge"
-                        src="/@images/icons/flags/united-states-of-america.svg"
+                        src="/images/icons/flags/united-states-of-america.svg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -801,7 +801,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                     <div class="h-avatar is-medium">
                       <img
                         class="avatar"
-                        src="/@images/avatars/photos/14.jpg"
+                        src="/images/avatars/photos/14.jpg"
                         alt=""
                         data-user-popover="14"
                         @error="
@@ -811,7 +811,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                       />
                       <img
                         class="badge"
-                        src="/@images/icons/flags/england.svg"
+                        src="/images/icons/flags/england.svg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -836,7 +836,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                     <div class="h-avatar is-medium">
                       <img
                         class="avatar"
-                        src="/@images/avatars/photos/23.jpg"
+                        src="/images/avatars/photos/23.jpg"
                         alt=""
                         data-user-popover="21"
                         @error="
@@ -846,7 +846,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                       />
                       <img
                         class="badge"
-                        src="/@images/icons/flags/united-states-of-america.svg"
+                        src="/images/icons/flags/united-states-of-america.svg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -871,7 +871,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                     <div class="h-avatar is-medium">
                       <img
                         class="avatar"
-                        src="/@images/avatars/photos/32.jpg"
+                        src="/images/avatars/photos/32.jpg"
                         alt=""
                         data-user-popover="28"
                         @error="
@@ -881,7 +881,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                       />
                       <img
                         class="badge"
-                        src="/@images/icons/flags/united-states-of-america.svg"
+                        src="/images/icons/flags/united-states-of-america.svg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -906,7 +906,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                     <div class="h-avatar is-medium">
                       <img
                         class="avatar"
-                        src="/@images/avatars/photos/39.jpg"
+                        src="/images/avatars/photos/39.jpg"
                         alt=""
                         data-user-popover="33"
                         @error="
@@ -916,7 +916,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                       />
                       <img
                         class="badge"
-                        src="/@images/icons/flags/united-states-of-america.svg"
+                        src="/images/icons/flags/united-states-of-america.svg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -941,7 +941,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                     <div class="h-avatar is-medium">
                       <img
                         class="avatar"
-                        src="/@images/avatars/photos/19.jpg"
+                        src="/images/avatars/photos/19.jpg"
                         alt=""
                         data-user-popover="17"
                         @error="
@@ -951,7 +951,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                       />
                       <img
                         class="badge"
-                        src="/@images/icons/flags/germany.svg"
+                        src="/images/icons/flags/germany.svg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -988,7 +988,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                     <div class="h-avatar is-medium">
                       <img
                         class="avatar"
-                        src="/@images/photo/demo/apps/1.jpg"
+                        src="/images/photo/demo/apps/1.jpg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -1013,7 +1013,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                     <div class="h-avatar is-medium">
                       <img
                         class="avatar"
-                        src="/@images/photo/demo/apps/2.png"
+                        src="/images/photo/demo/apps/2.png"
                         alt=""
                         @error="
                           $event.target.src =
@@ -1038,7 +1038,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                     <div class="h-avatar is-medium">
                       <img
                         class="avatar is-squared"
-                        src="/@images/icons/files/sheet.svg"
+                        src="/images/icons/files/sheet.svg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -1063,7 +1063,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                     <div class="h-avatar is-medium">
                       <img
                         class="avatar"
-                        src="/@images/photo/demo/apps/3.png"
+                        src="/images/photo/demo/apps/3.png"
                         alt=""
                         @error="
                           $event.target.src =
@@ -1088,7 +1088,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                     <div class="h-avatar is-medium">
                       <img
                         class="avatar"
-                        src="/@images/photo/demo/apps/4.png"
+                        src="/images/photo/demo/apps/4.png"
                         alt=""
                         @error="
                           $event.target.src =
@@ -1113,7 +1113,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                     <div class="h-avatar is-medium">
                       <img
                         class="avatar is-squared"
-                        src="/@images/icons/files/doc-2.svg"
+                        src="/images/icons/files/doc-2.svg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -1138,7 +1138,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                     <div class="h-avatar is-medium">
                       <img
                         class="avatar is-squared"
-                        src="/@images/icons/files/pdf.svg"
+                        src="/images/icons/files/pdf.svg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -1163,7 +1163,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                     <div class="h-avatar is-medium">
                       <img
                         class="avatar"
-                        src="/@images/photo/demo/apps/5.png"
+                        src="/images/photo/demo/apps/5.png"
                         alt=""
                         @error="
                           $event.target.src =
@@ -1188,7 +1188,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                     <div class="h-avatar is-medium">
                       <img
                         class="avatar is-squared"
-                        src="/@images/icons/files/ai.svg"
+                        src="/images/icons/files/ai.svg"
                         alt=""
                         @error="
                           $event.target.src =

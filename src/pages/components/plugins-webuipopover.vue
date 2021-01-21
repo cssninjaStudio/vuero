@@ -378,7 +378,7 @@ useHead({
                       data-pop-title="Alejandro B."
                       data-pop-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
                       data-pop-position="top"
-                      data-pop-avatar="/@images/avatars/photos/39.jpg"
+                      data-pop-avatar="/images/avatars/photos/39.jpg"
                     >
                       Hover Me
                     </button>
@@ -391,7 +391,7 @@ useHead({
                       data-pop-title="Alice C."
                       data-pop-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
                       data-pop-position="top"
-                      data-pop-avatar="/@images/avatars/photos/7.jpg"
+                      data-pop-avatar="/images/avatars/photos/7.jpg"
                     >
                       Click Me
                     </button>
@@ -569,7 +569,7 @@ useHead({
                     <div class="h-avatar is-medium">
                       <img
                         class="avatar"
-                        src="/@images/avatars/photos/7.jpg"
+                        src="/images/avatars/photos/7.jpg"
                         alt=""
                         data-user-popover="0"
                         @error="
@@ -581,7 +581,7 @@ useHead({
                     <div class="h-avatar is-medium">
                       <img
                         class="avatar"
-                        src="/@images/avatars/photos/9.jpg"
+                        src="/images/avatars/photos/9.jpg"
                         alt=""
                         data-user-popover="1"
                         @error="
@@ -593,7 +593,7 @@ useHead({
                     <div class="h-avatar is-medium">
                       <img
                         class="avatar"
-                        src="/@images/avatars/photos/12.jpg"
+                        src="/images/avatars/photos/12.jpg"
                         alt=""
                         data-user-popover="2"
                         @error="
@@ -605,7 +605,7 @@ useHead({
                     <div class="h-avatar is-medium">
                       <img
                         class="avatar"
-                        src="/@images/avatars/photos/8.jpg"
+                        src="/images/avatars/photos/8.jpg"
                         alt=""
                         data-user-popover="3"
                         @error="
@@ -617,7 +617,7 @@ useHead({
                     <div class="h-avatar is-medium">
                       <img
                         class="avatar"
-                        src="/@images/avatars/photos/25.jpg"
+                        src="/images/avatars/photos/25.jpg"
                         alt=""
                         data-user-popover="4"
                         @error="

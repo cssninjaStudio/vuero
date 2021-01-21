@@ -20,7 +20,7 @@ const {
     <div class="header-area">
       <img
         class="sender-pic"
-        src="/@images/avatars/photos/28.jpg"
+        src="/images/avatars/photos/28.jpg"
         alt=""
         @error="$event.target.src = 'https://via.placeholder.com/150x150'"
       />
@@ -131,7 +131,7 @@ const {
         <div class="reply-bubble">
           <div class="reply-as">
             <img
-              src="/@images/avatars/photos/8.jpg"
+              src="/images/avatars/photos/8.jpg"
               alt=""
               @error="$event.target.src = 'https://via.placeholder.com/150x150'"
             />

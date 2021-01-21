@@ -2,7 +2,7 @@
   <div class="main-sidebar is-colored">
     <div class="sidebar-brand">
       <RouterLink :to="{ name: 'index' }">
-        <img src="/@images/logos/logo/logo-light.svg" alt="" />
+        <img src="/images/logos/logo/logo-light.svg" alt="" />
       </RouterLink>
     </div>
     <div class="sidebar-inner">

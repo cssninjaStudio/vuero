@@ -39,7 +39,7 @@
         <div class="h-avatar is-small">
           <img
             class="avatar"
-            src="/@images/avatars/photos/7.jpg"
+            src="/images/avatars/photos/7.jpg"
             alt=""
             @error="$event.target.src = 'https://via.placeholder.com/150x150'"
           />
@@ -47,7 +47,7 @@
         <div class="h-avatar is-small">
           <img
             class="avatar"
-            src="/@images/avatars/photos/9.jpg"
+            src="/images/avatars/photos/9.jpg"
             alt=""
             @error="$event.target.src = 'https://via.placeholder.com/150x150'"
           />
@@ -55,7 +55,7 @@
         <div class="h-avatar is-small">
           <img
             class="avatar"
-            src="/@images/avatars/photos/12.jpg"
+            src="/images/avatars/photos/12.jpg"
             alt=""
             @error="$event.target.src = 'https://via.placeholder.com/150x150'"
           />
@@ -63,7 +63,7 @@
         <div class="h-avatar is-small">
           <img
             class="avatar"
-            src="/@images/avatars/photos/8.jpg"
+            src="/images/avatars/photos/8.jpg"
             alt=""
             @error="$event.target.src = 'https://via.placeholder.com/150x150'"
           />
@@ -71,7 +71,7 @@
         <div class="h-avatar is-small">
           <img
             class="avatar"
-            src="/@images/avatars/photos/25.jpg"
+            src="/images/avatars/photos/25.jpg"
             alt=""
             @error="$event.target.src = 'https://via.placeholder.com/150x150'"
           />
@@ -79,7 +79,7 @@
         <div class="h-avatar is-small">
           <img
             class="avatar"
-            src="/@images/avatars/photos/22.jpg"
+            src="/images/avatars/photos/22.jpg"
             alt=""
             @error="$event.target.src = 'https://via.placeholder.com/150x150'"
           />
@@ -119,9 +119,9 @@
           <!-- Empty state image / text -->
           <img
             class="empty-state theme-image"
-            src="/@images/illustrations/projects/board/new.svg"
-            data-light="/@images/illustrations/projects/board/new.svg"
-            data-dark="/@images/illustrations/projects/board/new-dark.svg"
+            src="/images/illustrations/projects/board/new.svg"
+            data-light="/images/illustrations/projects/board/new.svg"
+            data-dark="/images/illustrations/projects/board/new-dark.svg"
             alt=""
           />
           <p class="empty-text">There are no new tasks to approve for now.</p>
@@ -135,7 +135,7 @@
                 <div class="avatar-wrapper is-warning">
                   <img
                     class="task-owner"
-                    src="/@images/avatars/photos/7.jpg"
+                    src="/images/avatars/photos/7.jpg"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/150x150'
@@ -159,7 +159,7 @@
                 <div class="avatar-wrapper is-info">
                   <img
                     class="task-owner"
-                    src="/@images/avatars/photos/8.jpg"
+                    src="/images/avatars/photos/8.jpg"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/150x150'
@@ -211,7 +211,7 @@
                     <div class="h-avatar is-small">
                       <img
                         class="avatar"
-                        src="/@images/avatars/photos/12.jpg"
+                        src="/images/avatars/photos/12.jpg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -222,7 +222,7 @@
                     <div class="h-avatar is-small">
                       <img
                         class="avatar"
-                        src="/@images/avatars/photos/26.jpg"
+                        src="/images/avatars/photos/26.jpg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -233,7 +233,7 @@
                     <div class="h-avatar is-small">
                       <img
                         class="avatar"
-                        src="/@images/avatars/photos/19.jpg"
+                        src="/images/avatars/photos/19.jpg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -258,7 +258,7 @@
                     <div class="h-avatar is-small">
                       <img
                         class="avatar"
-                        src="/@images/avatars/photos/13.jpg"
+                        src="/images/avatars/photos/13.jpg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -283,7 +283,7 @@
                     <div class="h-avatar is-small">
                       <img
                         class="avatar"
-                        src="/@images/avatars/photos/16.jpg"
+                        src="/images/avatars/photos/16.jpg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -299,9 +299,9 @@
             <!-- Empty state image / text -->
             <img
               class="empty-state theme-image"
-              src="/@images/illustrations/projects/board/progress.svg"
-              data-light="/@images/illustrations/projects/board/progress.svg"
-              data-dark="/@images/illustrations/projects/board/progress-dark.svg"
+              src="/images/illustrations/projects/board/progress.svg"
+              data-light="/images/illustrations/projects/board/progress.svg"
+              data-dark="/images/illustrations/projects/board/progress-dark.svg"
               alt=""
             />
             <p class="empty-text">
@@ -346,7 +346,7 @@
                     <div class="h-avatar is-small">
                       <img
                         class="avatar"
-                        src="/@images/avatars/photos/8.jpg"
+                        src="/images/avatars/photos/8.jpg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -362,9 +362,9 @@
             <!-- Empty state image / text -->
             <img
               class="empty-state theme-image"
-              src="/@images/illustrations/projects/board/ready.svg"
-              data-light="/@images/illustrations/projects/board/ready.svg"
-              data-dark="/@images/illustrations/projects/board/ready-dark.svg"
+              src="/images/illustrations/projects/board/ready.svg"
+              data-light="/images/illustrations/projects/board/ready.svg"
+              data-dark="/images/illustrations/projects/board/ready-dark.svg"
               alt=""
             />
             <p class="empty-text">
@@ -404,9 +404,9 @@
             <!-- Empty state image / text -->
             <img
               class="empty-state theme-image"
-              src="/@images/illustrations/projects/board/test.svg"
-              data-light="/@images/illustrations/projects/board/test.svg"
-              data-dark="/@images/illustrations/projects/board/test-dark.svg"
+              src="/images/illustrations/projects/board/test.svg"
+              data-light="/images/illustrations/projects/board/test.svg"
+              data-dark="/images/illustrations/projects/board/test-dark.svg"
               alt=""
             />
             <p class="empty-text">No tasks are being reviewed at the moment.</p>
@@ -439,9 +439,9 @@
           <!-- Empty state image / text -->
           <img
             class="empty-state theme-image"
-            src="/@images/illustrations/projects/board/complete.svg"
-            data-light="/@images/illustrations/projects/board/complete.svg"
-            data-dark="/@images/illustrations/projects/board/complete-dark.svg"
+            src="/images/illustrations/projects/board/complete.svg"
+            data-light="/images/illustrations/projects/board/complete.svg"
+            data-dark="/images/illustrations/projects/board/complete-dark.svg"
             alt=""
           />
           <p class="empty-text">You have no completed bounties.</p>
@@ -458,7 +458,7 @@
                   <div class="h-avatar is-small">
                     <img
                       class="avatar"
-                      src="/@images/avatars/photos/12.jpg"
+                      src="/images/avatars/photos/12.jpg"
                       alt=""
                       @error="
                         $event.target.src =
@@ -483,7 +483,7 @@
                   <div class="h-avatar is-small">
                     <img
                       class="avatar"
-                      src="/@images/avatars/photos/18.jpg"
+                      src="/images/avatars/photos/18.jpg"
                       alt=""
                       @error="
                         $event.target.src =
@@ -494,7 +494,7 @@
                   <div class="h-avatar is-small">
                     <img
                       class="avatar"
-                      src="/@images/avatars/photos/9.jpg"
+                      src="/images/avatars/photos/9.jpg"
                       alt=""
                       @error="
                         $event.target.src =
@@ -519,7 +519,7 @@
                   <div class="h-avatar is-small">
                     <img
                       class="avatar"
-                      src="/@images/avatars/photos/13.jpg"
+                      src="/images/avatars/photos/13.jpg"
                       alt=""
                       @error="
                         $event.target.src =
@@ -544,7 +544,7 @@
                   <div class="h-avatar is-small">
                     <img
                       class="avatar"
-                      src="/@images/avatars/photos/16.jpg"
+                      src="/images/avatars/photos/16.jpg"
                       alt=""
                       @error="
                         $event.target.src =

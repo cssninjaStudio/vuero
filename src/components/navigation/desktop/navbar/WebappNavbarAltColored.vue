@@ -34,12 +34,12 @@ watch(
         <RouterLink :to="{ name: 'index' }" class="brand">
           <img
             class="light-image"
-            src="/@images/logos/logo/logo-light.svg"
+            src="/images/logos/logo/logo-light.svg"
             alt=""
           />
           <img
             class="dark-image"
-            src="/@images/logos/logo/logo-light.svg"
+            src="/images/logos/logo/logo-light.svg"
             alt=""
           />
         </RouterLink>
@@ -103,7 +103,7 @@ watch(
           class="dropdown profile-dropdown dropdown-trigger is-spaced is-right"
         >
           <img
-            src="/@images/avatars/photos/8.jpg"
+            src="/images/avatars/photos/8.jpg"
             alt=""
             @error="$event.target.src = 'https://via.placeholder.com/150x150'"
             @click="open"
@@ -116,7 +116,7 @@ watch(
                 <div class="h-avatar is-large">
                   <img
                     class="avatar"
-                    src="/@images/avatars/photos/8.jpg"
+                    src="/images/avatars/photos/8.jpg"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/150x150'

@@ -4,7 +4,7 @@
     <div class="illustration-header">
       <div class="header-image">
         <img
-          src="/@images/illustrations/dashboards/lifestyle/doctor.svg"
+          src="/images/illustrations/dashboards/lifestyle/doctor.svg"
           alt=""
         />
       </div>
@@ -327,7 +327,7 @@
                 <div class="h-avatar is-small">
                   <img
                     class="avatar"
-                    src="/@images/avatars/photos/7.jpg"
+                    src="/images/avatars/photos/7.jpg"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/150x150'
@@ -337,7 +337,7 @@
                 <div class="h-avatar is-small">
                   <img
                     class="avatar"
-                    src="/@images/avatars/photos/8.jpg"
+                    src="/images/avatars/photos/8.jpg"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/150x150'
@@ -347,7 +347,7 @@
                 <div class="h-avatar is-small">
                   <img
                     class="avatar"
-                    src="/@images/avatars/photos/5.jpg"
+                    src="/images/avatars/photos/5.jpg"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/150x150'

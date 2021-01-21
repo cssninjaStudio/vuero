@@ -15,7 +15,7 @@ const props = defineProps({
   picture: {
     type: String,
     required: true,
-    default: '/@images/avatars/photos/7.jpg',
+    default: '/images/avatars/photos/7.jpg',
   },
   time: {
     type: String,

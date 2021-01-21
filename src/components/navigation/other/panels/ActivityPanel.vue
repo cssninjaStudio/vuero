@@ -49,7 +49,7 @@ const activeTab = ref<'team' | 'projects' | 'schedule'>('team')
               <div class="h-avatar">
                 <img
                   class="avatar"
-                  src="/@images/avatars/photos/12.jpg"
+                  src="/images/avatars/photos/12.jpg"
                   alt=""
                   @error="
                     $event.target.src = 'https://via.placeholder.com/150x150'
@@ -57,7 +57,7 @@ const activeTab = ref<'team' | 'projects' | 'schedule'>('team')
                 />
                 <img
                   class="badge"
-                  src="/@images/icons/flags/united-states-of-america.svg"
+                  src="/images/icons/flags/united-states-of-america.svg"
                   alt=""
                   @error="
                     $event.target.src = 'https://via.placeholder.com/150x150'
@@ -81,7 +81,7 @@ const activeTab = ref<'team' | 'projects' | 'schedule'>('team')
               <div class="h-avatar">
                 <img
                   class="avatar"
-                  src="/@images/avatars/photos/25.jpg"
+                  src="/images/avatars/photos/25.jpg"
                   alt=""
                   @error="
                     $event.target.src = 'https://via.placeholder.com/150x150'
@@ -89,7 +89,7 @@ const activeTab = ref<'team' | 'projects' | 'schedule'>('team')
                 />
                 <img
                   class="badge"
-                  src="/@images/icons/flags/united-states-of-america.svg"
+                  src="/images/icons/flags/united-states-of-america.svg"
                   alt=""
                   @error="
                     $event.target.src = 'https://via.placeholder.com/150x150'
@@ -113,7 +113,7 @@ const activeTab = ref<'team' | 'projects' | 'schedule'>('team')
               <div class="h-avatar">
                 <img
                   class="avatar"
-                  src="/@images/avatars/photos/18.jpg"
+                  src="/images/avatars/photos/18.jpg"
                   alt=""
                   @error="
                     $event.target.src = 'https://via.placeholder.com/150x150'
@@ -121,7 +121,7 @@ const activeTab = ref<'team' | 'projects' | 'schedule'>('team')
                 />
                 <img
                   class="badge"
-                  src="/@images/icons/flags/united-states-of-america.svg"
+                  src="/images/icons/flags/united-states-of-america.svg"
                   alt=""
                   @error="
                     $event.target.src = 'https://via.placeholder.com/150x150'
@@ -145,7 +145,7 @@ const activeTab = ref<'team' | 'projects' | 'schedule'>('team')
               <div class="h-avatar">
                 <img
                   class="avatar"
-                  src="/@images/avatars/photos/13.jpg"
+                  src="/images/avatars/photos/13.jpg"
                   alt=""
                   @error="
                     $event.target.src = 'https://via.placeholder.com/150x150'
@@ -153,7 +153,7 @@ const activeTab = ref<'team' | 'projects' | 'schedule'>('team')
                 />
                 <img
                   class="badge"
-                  src="/@images/icons/flags/united-states-of-america.svg"
+                  src="/images/icons/flags/united-states-of-america.svg"
                   alt=""
                   @error="
                     $event.target.src = 'https://via.placeholder.com/150x150'
@@ -183,7 +183,7 @@ const activeTab = ref<'team' | 'projects' | 'schedule'>('team')
               <div class="project-inner">
                 <img
                   class="project-avatar"
-                  src="/@images/icons/logos/slicer.svg"
+                  src="/images/icons/logos/slicer.svg"
                   alt=""
                   @error="
                     $event.target.src = 'https://via.placeholder.com/150x150'
@@ -212,7 +212,7 @@ const activeTab = ref<'team' | 'projects' | 'schedule'>('team')
                     <div class="h-avatar is-small">
                       <img
                         class="avatar"
-                        src="/@images/avatars/photos/7.jpg"
+                        src="/images/avatars/photos/7.jpg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -223,7 +223,7 @@ const activeTab = ref<'team' | 'projects' | 'schedule'>('team')
                     <div class="h-avatar is-small">
                       <img
                         class="avatar"
-                        src="/@images/avatars/photos/5.jpg"
+                        src="/images/avatars/photos/5.jpg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -234,7 +234,7 @@ const activeTab = ref<'team' | 'projects' | 'schedule'>('team')
                     <div class="h-avatar is-small">
                       <img
                         class="avatar"
-                        src="/@images/avatars/photos/8.jpg"
+                        src="/images/avatars/photos/8.jpg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -252,7 +252,7 @@ const activeTab = ref<'team' | 'projects' | 'schedule'>('team')
               <div class="project-inner">
                 <img
                   class="project-avatar"
-                  src="/@images/icons/logos/metamovies.svg"
+                  src="/images/icons/logos/metamovies.svg"
                   alt=""
                   @error="
                     $event.target.src = 'https://via.placeholder.com/150x150'
@@ -281,7 +281,7 @@ const activeTab = ref<'team' | 'projects' | 'schedule'>('team')
                     <div class="h-avatar is-small">
                       <img
                         class="avatar"
-                        src="/@images/avatars/photos/13.jpg"
+                        src="/images/avatars/photos/13.jpg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -292,7 +292,7 @@ const activeTab = ref<'team' | 'projects' | 'schedule'>('team')
                     <div class="h-avatar is-small">
                       <img
                         class="avatar"
-                        src="/@images/avatars/photos/18.jpg"
+                        src="/images/avatars/photos/18.jpg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -310,7 +310,7 @@ const activeTab = ref<'team' | 'projects' | 'schedule'>('team')
               <div class="project-inner">
                 <img
                   class="project-avatar"
-                  src="/@images/icons/logos/fastpizza.svg"
+                  src="/images/icons/logos/fastpizza.svg"
                   alt=""
                   @error="
                     $event.target.src = 'https://via.placeholder.com/150x150'
@@ -339,7 +339,7 @@ const activeTab = ref<'team' | 'projects' | 'schedule'>('team')
                     <div class="h-avatar is-small">
                       <img
                         class="avatar"
-                        src="/@images/avatars/photos/7.jpg"
+                        src="/images/avatars/photos/7.jpg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -350,7 +350,7 @@ const activeTab = ref<'team' | 'projects' | 'schedule'>('team')
                     <div class="h-avatar is-small">
                       <img
                         class="avatar"
-                        src="/@images/avatars/photos/25.jpg"
+                        src="/images/avatars/photos/25.jpg"
                         alt=""
                         @error="
                           $event.target.src =
@@ -386,7 +386,7 @@ const activeTab = ref<'team' | 'projects' | 'schedule'>('team')
                 <div class="timeline-icon">
                   <img
                     class="avatar"
-                    src="/@images/avatars/photos/7.jpg"
+                    src="/images/avatars/photos/7.jpg"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/150x150'

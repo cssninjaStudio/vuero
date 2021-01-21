@@ -33,7 +33,7 @@ const { locale, t } = useI18n()
               />
               <div class="language-option-inner">
                 <img
-                  src="/@images/icons/flags/united-states-of-america.svg"
+                  src="/images/icons/flags/united-states-of-america.svg"
                   alt=""
                 />
                 <div class="indicator">
@@ -52,7 +52,7 @@ const { locale, t } = useI18n()
                 value="fr"
               />
               <div class="language-option-inner">
-                <img src="/@images/icons/flags/france.svg" alt="" />
+                <img src="/images/icons/flags/france.svg" alt="" />
                 <div class="indicator">
                   <i class="iconify" data-icon="feather:check"></i>
                 </div>
@@ -69,7 +69,7 @@ const { locale, t } = useI18n()
                 value="es"
               />
               <div class="language-option-inner">
-                <img src="/@images/icons/flags/spain.svg" alt="" />
+                <img src="/images/icons/flags/spain.svg" alt="" />
                 <div class="indicator">
                   <i class="iconify" data-icon="feather:check"></i>
                 </div>
@@ -86,7 +86,7 @@ const { locale, t } = useI18n()
                 value="de"
               />
               <div class="language-option-inner">
-                <img src="/@images/icons/flags/germany.svg" alt="" />
+                <img src="/images/icons/flags/germany.svg" alt="" />
                 <div class="indicator">
                   <i class="iconify" data-icon="feather:check"></i>
                 </div>
@@ -103,7 +103,7 @@ const { locale, t } = useI18n()
                 value="es-MX"
               />
               <div class="language-option-inner">
-                <img src="/@images/icons/flags/mexico.svg" alt="" />
+                <img src="/images/icons/flags/mexico.svg" alt="" />
                 <div class="indicator">
                   <i class="iconify" data-icon="feather:check"></i>
                 </div>
@@ -120,7 +120,7 @@ const { locale, t } = useI18n()
                 value="zh-CN"
               />
               <div class="language-option-inner">
-                <img src="/@images/icons/flags/china.svg" alt="" />
+                <img src="/images/icons/flags/china.svg" alt="" />
                 <div class="indicator">
                   <i class="iconify" data-icon="feather:check"></i>
                 </div>
@@ -132,12 +132,12 @@ const { locale, t } = useI18n()
         <div class="img-wrap has-text-centered">
           <img
             class="light-image"
-            src="/@images/illustrations/right-panel/languages.svg"
+            src="/images/illustrations/right-panel/languages.svg"
             alt=""
           />
           <img
             class="dark-image"
-            src="/@images/illustrations/right-panel/languages-dark.svg"
+            src="/images/illustrations/right-panel/languages-dark.svg"
             alt=""
           />
         </div>

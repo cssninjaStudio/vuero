@@ -11,7 +11,7 @@ useHead({
     <div class="error-container">
       <div class="error-wrapper">
         <div class="error-inner has-text-centered">
-          <img src="/@images/illustrations/placeholders/error-3.svg" alt="" />
+          <img src="/images/illustrations/placeholders/error-3.svg" alt="" />
           <h3>We couldn't find that page</h3>
           <p>
             Looks like we couldn't find that page. Please try again or contact

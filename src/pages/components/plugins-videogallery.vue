@@ -158,7 +158,7 @@ lightGallery(document.getElementById(&#x27;videogallery&#x27;));
             <div id="videogallery" class="light-gallery-wrap">
               <a
                 href="https://www.youtube.com/watch?v=4vtL0Tq13E8"
-                data-poster="/@images/photo/video/poster/1.jpg"
+                data-poster="/images/photo/video/poster/1.jpg"
               >
                 <div class="video-overlay"></div>
                 <div class="video-button">
@@ -167,7 +167,7 @@ lightGallery(document.getElementById(&#x27;videogallery&#x27;));
                   </div>
                 </div>
                 <img
-                  src="/@images/photo/video/poster/1.jpg"
+                  src="/images/photo/video/poster/1.jpg"
                   alt=""
                   @error="
                     $event.target.src = 'https://via.placeholder.com/800x600'
@@ -176,7 +176,7 @@ lightGallery(document.getElementById(&#x27;videogallery&#x27;));
               </a>
               <a
                 href="https://www.youtube.com/watch?v=Ke90Tje7VS0"
-                data-poster="/@images/photo/video/poster/2.jpg"
+                data-poster="/images/photo/video/poster/2.jpg"
               >
                 <div class="video-overlay"></div>
                 <div class="video-button">
@@ -185,7 +185,7 @@ lightGallery(document.getElementById(&#x27;videogallery&#x27;));
                   </div>
                 </div>
                 <img
-                  src="/@images/photo/video/poster/2.jpg"
+                  src="/images/photo/video/poster/2.jpg"
                   alt=""
                   @error="
                     $event.target.src = 'https://via.placeholder.com/800x600'
@@ -194,7 +194,7 @@ lightGallery(document.getElementById(&#x27;videogallery&#x27;));
               </a>
               <a
                 href="https://www.youtube.com/watch?v=nhBVL41-_Cw"
-                data-poster="/@images/photo/video/poster/3.jpg"
+                data-poster="/images/photo/video/poster/3.jpg"
               >
                 <div class="video-overlay"></div>
                 <div class="video-button">
@@ -203,7 +203,7 @@ lightGallery(document.getElementById(&#x27;videogallery&#x27;));
                   </div>
                 </div>
                 <img
-                  src="/@images/photo/video/poster/3.jpg"
+                  src="/images/photo/video/poster/3.jpg"
                   alt=""
                   @error="
                     $event.target.src = 'https://via.placeholder.com/800x600'
@@ -212,7 +212,7 @@ lightGallery(document.getElementById(&#x27;videogallery&#x27;));
               </a>
               <a
                 href="https://www.youtube.com/watch?v=H0wHx_ID_vo&t=269s"
-                data-poster="/@images/photo/video/poster/4.jpg"
+                data-poster="/images/photo/video/poster/4.jpg"
               >
                 <div class="video-overlay"></div>
                 <div class="video-button">
@@ -221,7 +221,7 @@ lightGallery(document.getElementById(&#x27;videogallery&#x27;));
                   </div>
                 </div>
                 <img
-                  src="/@images/photo/video/poster/4.jpg"
+                  src="/images/photo/video/poster/4.jpg"
                   alt=""
                   @error="
                     $event.target.src = 'https://via.placeholder.com/800x600'
@@ -230,7 +230,7 @@ lightGallery(document.getElementById(&#x27;videogallery&#x27;));
               </a>
               <a
                 href="https://www.youtube.com/watch?v=Ttf3CEsEwMQ"
-                data-poster="/@images/photo/video/poster/5.jpg"
+                data-poster="/images/photo/video/poster/5.jpg"
               >
                 <div class="video-overlay"></div>
                 <div class="video-button">
@@ -239,7 +239,7 @@ lightGallery(document.getElementById(&#x27;videogallery&#x27;));
                   </div>
                 </div>
                 <img
-                  src="/@images/photo/video/poster/5.jpg"
+                  src="/images/photo/video/poster/5.jpg"
                   alt=""
                   @error="
                     $event.target.src = 'https://via.placeholder.com/800x600'
@@ -248,7 +248,7 @@ lightGallery(document.getElementById(&#x27;videogallery&#x27;));
               </a>
               <a
                 href="https://www.youtube.com/watch?v=roywYSEPSvc"
-                data-poster="/@images/photo/video/poster/6.jpg"
+                data-poster="/images/photo/video/poster/6.jpg"
               >
                 <div class="video-overlay"></div>
                 <div class="video-button">
@@ -257,7 +257,7 @@ lightGallery(document.getElementById(&#x27;videogallery&#x27;));
                   </div>
                 </div>
                 <img
-                  src="/@images/photo/video/poster/6.jpg"
+                  src="/images/photo/video/poster/6.jpg"
                   alt=""
                   @error="
                     $event.target.src = 'https://via.placeholder.com/800x600'
@@ -266,7 +266,7 @@ lightGallery(document.getElementById(&#x27;videogallery&#x27;));
               </a>
               <a
                 href="https://www.youtube.com/watch?v=0PA69L88HeI"
-                data-poster="/@images/photo/video/poster/7.jpg"
+                data-poster="/images/photo/video/poster/7.jpg"
               >
                 <div class="video-overlay"></div>
                 <div class="video-button">
@@ -275,7 +275,7 @@ lightGallery(document.getElementById(&#x27;videogallery&#x27;));
                   </div>
                 </div>
                 <img
-                  src="/@images/photo/video/poster/7.jpg"
+                  src="/images/photo/video/poster/7.jpg"
                   alt=""
                   @error="
                     $event.target.src = 'https://via.placeholder.com/800x600'
@@ -284,7 +284,7 @@ lightGallery(document.getElementById(&#x27;videogallery&#x27;));
               </a>
               <a
                 href="https://www.youtube.com/watch?v=3Vl8a3zYjiw"
-                data-poster="/@images/photo/video/poster/8.jpg"
+                data-poster="/images/photo/video/poster/8.jpg"
               >
                 <div class="video-overlay"></div>
                 <div class="video-button">
@@ -293,7 +293,7 @@ lightGallery(document.getElementById(&#x27;videogallery&#x27;));
                   </div>
                 </div>
                 <img
-                  src="/@images/photo/video/poster/8.jpg"
+                  src="/images/photo/video/poster/8.jpg"
                   alt=""
                   @error="
                     $event.target.src = 'https://via.placeholder.com/800x600'
@@ -302,7 +302,7 @@ lightGallery(document.getElementById(&#x27;videogallery&#x27;));
               </a>
               <a
                 href="https://www.youtube.com/watch?v=VjXb3PRL9WI"
-                data-poster="/@images/photo/video/poster/9.jpg"
+                data-poster="/images/photo/video/poster/9.jpg"
               >
                 <div class="video-overlay"></div>
                 <div class="video-button">
@@ -311,7 +311,7 @@ lightGallery(document.getElementById(&#x27;videogallery&#x27;));
                   </div>
                 </div>
                 <img
-                  src="/@images/photo/video/poster/9.jpg"
+                  src="/images/photo/video/poster/9.jpg"
                   alt=""
                   @error="
                     $event.target.src = 'https://via.placeholder.com/800x600'

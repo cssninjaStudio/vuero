@@ -22,7 +22,7 @@ useHead({
                   <div class="column">
                     <img
                       class="hero-image"
-                      src="/@images/illustrations/login/station.svg"
+                      src="/images/illustrations/login/station.svg"
                       alt=""
                     />
                   </div>
@@ -35,12 +35,12 @@ useHead({
           <RouterLink :to="{ name: 'index' }" class="top-logo">
             <img
               class="light-image"
-              src="/@images/logos/logo/logo.svg"
+              src="/images/logos/logo/logo.svg"
               alt=""
             />
             <img
               class="dark-image"
-              src="/@images/logos/logo/logo-light.svg"
+              src="/images/logos/logo/logo-light.svg"
               alt=""
             />
           </RouterLink>
