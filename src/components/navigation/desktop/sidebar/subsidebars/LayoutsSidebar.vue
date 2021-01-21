@@ -26,17 +26,14 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
           </div>
           <ul>
             <li>
-              <RouterLink
-                :to="{ name: 'admin-list-view-1' }"
-                class="is-submenu"
-              >
+              <RouterLink :to="{ name: 'admin-layouts' }" class="is-submenu">
                 <i class="lnil lnil-list-alt"></i>
                 <span>List View V1</span>
               </RouterLink>
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-list-view-2' }"
+                :to="{ name: 'admin-layouts-list-view-2' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-list-alt"></i>
@@ -45,7 +42,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-list-view-3' }"
+                :to="{ name: 'admin-layouts-list-view-3' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-list-alt"></i>
@@ -54,7 +51,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-list-view-4' }"
+                :to="{ name: 'admin-layouts-list-view-4' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-list-alt"></i>
@@ -72,7 +69,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
           <ul>
             <li>
               <RouterLink
-                :to="{ name: 'admin-list-flex-1' }"
+                :to="{ name: 'admin-layouts-list-flex-1' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-list-alt-1"></i>
@@ -81,7 +78,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-list-flex-2' }"
+                :to="{ name: 'admin-layouts-list-flex-2' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-list-alt-1"></i>
@@ -90,7 +87,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-list-flex-3' }"
+                :to="{ name: 'admin-layouts-list-flex-3' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-list-alt-1"></i>
@@ -108,7 +105,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
           <ul>
             <li>
               <RouterLink
-                :to="{ name: 'admin-list-datatable-1' }"
+                :to="{ name: 'admin-layouts-list-datatable-1' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-layout-alt"></i>
@@ -117,7 +114,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-list-datatable-2' }"
+                :to="{ name: 'admin-layouts-list-datatable-2' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-layout-alt"></i>
@@ -126,7 +123,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-list-datatable-3' }"
+                :to="{ name: 'admin-layouts-list-datatable-3' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-layout-alt"></i>
@@ -135,7 +132,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-list-datatable-4' }"
+                :to="{ name: 'admin-layouts-list-datatable-4' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-layout-alt"></i>
@@ -154,7 +151,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
           <ul>
             <li>
               <RouterLink
-                :to="{ name: 'admin-grid-cards-1' }"
+                :to="{ name: 'admin-layouts-grid-cards-1' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-grid-alt"></i>
@@ -163,7 +160,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-grid-cards-2' }"
+                :to="{ name: 'admin-layouts-grid-cards-2' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-grid-alt"></i>
@@ -172,7 +169,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-grid-cards-3' }"
+                :to="{ name: 'admin-layouts-grid-cards-3' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-grid-alt"></i>
@@ -181,7 +178,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-grid-cards-4' }"
+                :to="{ name: 'admin-layouts-grid-cards-4' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-grid-alt"></i>
@@ -199,7 +196,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
           <ul>
             <li>
               <RouterLink
-                :to="{ name: 'admin-grid-tiles-1' }"
+                :to="{ name: 'admin-layouts-grid-tiles-1' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-layout-alt-2"></i>
@@ -208,7 +205,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-grid-tiles-2' }"
+                :to="{ name: 'admin-layouts-grid-tiles-2' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-layout-alt-2"></i>
@@ -217,7 +214,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-grid-tiles-3' }"
+                :to="{ name: 'admin-layouts-grid-tiles-3' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-layout-alt-2"></i>
@@ -234,17 +231,14 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
           </div>
           <ul>
             <li>
-              <RouterLink
-                :to="{ name: 'admin-grid-users-1' }"
-                class="is-submenu"
-              >
+              <RouterLink :to="{ name: 'admin-layouts' }" class="is-submenu">
                 <i class="lnil lnil-users-alt"></i>
                 <span>User Grid V1</span>
               </RouterLink>
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-grid-users-2' }"
+                :to="{ name: 'admin-layouts-grid-users-2' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-users-alt"></i>
@@ -253,7 +247,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-grid-users-3' }"
+                :to="{ name: 'admin-layouts-grid-users-3' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-users-alt"></i>
@@ -262,7 +256,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-grid-users-4' }"
+                :to="{ name: 'admin-layouts-grid-users-4' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-users-alt"></i>
@@ -281,7 +275,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
           <ul>
             <li>
               <RouterLink
-                :to="{ name: 'admin-profile-view' }"
+                :to="{ name: 'admin-layouts-profile-view' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-user-alt"></i>
@@ -290,7 +284,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-profile-edit-1' }"
+                :to="{ name: 'admin-layouts-profile-edit-1' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-pencil"></i>
@@ -299,7 +293,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-profile-notifications' }"
+                :to="{ name: 'admin-layouts-profile-notifications' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-notification"></i>
@@ -308,7 +302,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-profile-settings' }"
+                :to="{ name: 'admin-layouts-profile-settings' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-cog"></i>
@@ -362,7 +356,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-search-results' }"
+                :to="{ name: 'admin-layouts-search-results' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-search-alt"></i>
@@ -371,7 +365,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-search-empty' }"
+                :to="{ name: 'admin-layouts-search-empty' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-search-alt"></i>
@@ -389,7 +383,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
           <ul>
             <li>
               <RouterLink
-                :to="{ name: 'admin-saas-billing' }"
+                :to="{ name: 'admin-layouts-saas-billing' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-credit-card"></i>
@@ -397,14 +391,17 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
               </RouterLink>
             </li>
             <li>
-              <RouterLink :to="{ name: 'admin' }" class="is-submenu">
+              <RouterLink
+                :to="{ name: 'admin-layouts-onboarding-welcome' }"
+                class="is-submenu"
+              >
                 <i class="lnil lnil-door-alt"></i>
                 <span>Welcome</span>
               </RouterLink>
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-action-page-1' }"
+                :to="{ name: 'admin-layouts-action-page-1' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-thunderbolt"></i>
@@ -413,7 +410,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-action-page-2' }"
+                :to="{ name: 'admin-layouts-action-page-2' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-thunderbolt"></i>
@@ -431,7 +428,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
           <ul>
             <li>
               <RouterLink
-                :to="{ name: 'admin-projects-projects' }"
+                :to="{ name: 'admin-layouts-projects-projects' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-grid-alt"></i>
@@ -440,7 +437,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-projects-projects-2' }"
+                :to="{ name: 'admin-layouts-projects-projects-2' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-grid-alt"></i>
@@ -449,7 +446,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-projects-projects-3' }"
+                :to="{ name: 'admin-layouts-projects-projects-3' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-grid-alt"></i>
@@ -458,7 +455,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-projects-project' }"
+                :to="{ name: 'admin-layouts-projects-project' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-layout"></i>
@@ -467,7 +464,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-kanban-board' }"
+                :to="{ name: 'admin-layouts-kanban-board' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-layout-alt-1"></i>
@@ -486,7 +483,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
           <ul>
             <li>
               <RouterLink
-                :to="{ name: 'admin-utility-account-confirm' }"
+                :to="{ name: 'admin-layouts-utility-account-confirm' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-thunderbolt"></i>
@@ -495,7 +492,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-utility-promotion' }"
+                :to="{ name: 'admin-layouts-utility-promotion' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-magnet"></i>
@@ -504,7 +501,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-utility-invoice' }"
+                :to="{ name: 'admin-layouts-utility-invoice' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-calculator-alt"></i>
@@ -528,7 +525,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
           <ul>
             <li>
               <RouterLink
-                :to="{ name: 'admin-onboarding-page-1' }"
+                :to="{ name: 'admin-layouts-onboarding-page-1' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-train"></i>
@@ -537,7 +534,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-onboarding-page-2' }"
+                :to="{ name: 'admin-layouts-onboarding-page-2' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-train-alt"></i>
@@ -546,7 +543,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-onboarding-page-3' }"
+                :to="{ name: 'admin-layouts-onboarding-page-3' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-car"></i>
@@ -555,7 +552,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-onboarding-page-4' }"
+                :to="{ name: 'admin-layouts-onboarding-page-4' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-car-alt"></i>
@@ -564,7 +561,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-onboarding-page-5' }"
+                :to="{ name: 'admin-layouts-onboarding-page-5' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-train"></i>

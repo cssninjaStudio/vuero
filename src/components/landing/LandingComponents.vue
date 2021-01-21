@@ -789,7 +789,7 @@ const props = defineProps({
 
       <div class="column is-3">
         <RouterLink
-          :to="{ name: 'admin-form-layouts-1' }"
+          :to="{ name: 'admin-layouts-form-layouts-1' }"
           class="component-box"
         >
           <div class="component">
@@ -812,7 +812,7 @@ const props = defineProps({
 
       <div class="column is-3">
         <RouterLink
-          :to="{ name: 'admin-form-layouts-2' }"
+          :to="{ name: 'admin-layouts-form-layouts-2' }"
           class="component-box"
         >
           <div class="component">
@@ -835,7 +835,7 @@ const props = defineProps({
 
       <div class="column is-3">
         <RouterLink
-          :to="{ name: 'admin-form-layouts-3' }"
+          :to="{ name: 'admin-layouts-form-layouts-3' }"
           class="component-box"
         >
           <div class="component">
@@ -858,7 +858,7 @@ const props = defineProps({
 
       <div class="column is-3">
         <RouterLink
-          :to="{ name: 'admin-form-layouts-4' }"
+          :to="{ name: 'admin-layouts-form-layouts-4' }"
           class="component-box"
         >
           <div class="component">

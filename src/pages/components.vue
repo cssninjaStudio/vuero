@@ -18,7 +18,6 @@ onMounted(() => {
 
     <!-- Content Wrapper -->
     <div
-      id="huro-demo"
       class="view-wrapper"
       :class="[activeSidebar !== 'none' && 'is-pushed-full']"
     >
@@ -35,7 +34,7 @@ onMounted(() => {
   </DefaultLayout>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .translatey-enter-active,
 .translatey-leave-active {
   transform: translateY(0);

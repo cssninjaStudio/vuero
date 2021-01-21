@@ -158,7 +158,7 @@ watch(
                 </div>
               </div>
               <RouterLink
-                :to="{ name: 'admin-profile-view' }"
+                :to="{ name: 'admin-layouts-profile-view' }"
                 class="dropdown-item is-media"
               >
                 <div class="icon">

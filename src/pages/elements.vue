@@ -19,7 +19,6 @@ onMounted(() => {
 
     <!-- Content Wrapper -->
     <div
-      id="huro-demo"
       class="view-wrapper"
       :class="[activeSidebar !== 'none' && 'is-pushed-full']"
     >

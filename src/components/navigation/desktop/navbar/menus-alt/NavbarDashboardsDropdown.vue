@@ -345,7 +345,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
 
                 <div class="column-content" data-simplebar="">
                   <RouterLink
-                    :to="{ name: 'admin-blank-page-1' }"
+                    :to="{ name: 'admin-layouts-blank-page-1' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -356,7 +356,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'admin-blank-page-2' }"
+                    :to="{ name: 'admin-layouts-blank-page-2' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -367,7 +367,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'admin-blank-page-3' }"
+                    :to="{ name: 'admin-layouts-blank-page-3' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -378,7 +378,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'admin-blank-page-4' }"
+                    :to="{ name: 'admin-layouts-blank-page-4' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">

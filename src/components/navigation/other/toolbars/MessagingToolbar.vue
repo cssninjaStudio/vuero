@@ -73,7 +73,7 @@ const localFlagSrc = computed(() => {
               <div class="heading-right">
                 <RouterLink
                   class="notification-link"
-                  :to="{ name: 'admin-profile-notifications' }"
+                  :to="{ name: 'admin-layouts-profile-notifications' }"
                   >See all</RouterLink
                 >
               </div>

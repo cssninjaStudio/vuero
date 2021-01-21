@@ -1,0 +1,48 @@
+<script setup lang="ts">
+import { useHead } from '@vueuse/head'
+import { onMounted, ref } from 'vue'
+
+import { activePanel } from '/@src/composition/state/ui/activePanelState'
+import {
+  activeSidebar,
+  toggleSidebar,
+} from '/@src/composition/state/ui/activeSidebarState'
+
+useHead({
+  title: 'Projects project - Admin - Vuero',
+})
+</script>
+
+<template>
+  <div>
+    <div class="page-title has-text-centered">
+      <!-- Sidebar Trigger -->
+      <div
+        class="huro-hamburger nav-trigger push-resize"
+        @click="toggleSidebar('layouts')"
+      >
+        <span class="menu-toggle has-chevron">
+          <span
+            :class="[activeSidebar !== 'none' && 'active']"
+            class="icon-box-toggle"
+          >
+            <span class="rotate">
+              <i class="icon-line-top"></i>
+              <i class="icon-line-center"></i>
+              <i class="icon-line-bottom"></i>
+            </span>
+          </span>
+        </span>
+      </div>
+
+      <div class="title-wrap">
+        <h1 class="title is-4">Project</h1>
+      </div>
+
+      <Toolbar />
+    </div>
+
+    <ProjectViewV1 class="page-content-inner" />
+    <!-- <TaskPanel /> -->
+  </div>
+</template>
