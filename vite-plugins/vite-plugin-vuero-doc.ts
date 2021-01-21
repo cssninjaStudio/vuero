@@ -110,7 +110,7 @@ function VitePluginVueroDoc(options: Options = {}): Plugin {
   let config: ResolvedConfig | undefined
 
   return {
-    name: 'vite-plugin-md',
+    name: 'vite-plugin-vuero-doc',
     enforce: 'pre',
     configResolved(_config) {
       config = _config
