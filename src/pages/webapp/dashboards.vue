@@ -9,7 +9,10 @@ import WebappV4Layout from '/@src/layouts/WebappV4Layout.vue'
 import WebappV5Layout from '/@src/layouts/WebappV5Layout.vue'
 
 import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
-import { webappLayout } from '/@src/composition/state/ui/webappLayoutState'
+import {
+  webappLayout,
+  webappLayoutId,
+} from '/@src/composition/state/ui/webappLayoutState'
 
 const route = useRoute()
 
@@ -26,7 +29,7 @@ watch(
 </script>
 
 <template>
-  <component :is="webappLayout">
+  <component :is="webappLayout" :class="[webappLayoutId]">
     <GenericMobileSubsidebar />
 
     <!-- Content Wrapper -->

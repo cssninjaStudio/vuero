@@ -23,11 +23,13 @@
   background: $white;
   transform: translateX(-100%);
   z-index: -1;
-  transition: all 0.3s;
+  transition: transform 0.3s ease-in, opacity 0.3s ease-in;
+  opacity: 0;
 
   &.is-active {
     transform: translateX(0) !important;
     z-index: 31;
+    opacity: 1;
   }
 
   .inner {

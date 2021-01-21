@@ -2,10 +2,11 @@
 import { onMounted, watch } from 'vue'
 import { useRoute } from 'vue-router'
 
+import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
 import {
-  activeSidebar,
-  toggleSidebar,
-} from '/@src/composition/state/ui/activeSidebarState'
+  adminLayout,
+  adminLayoutId,
+} from '/@src/composition/state/ui/adminLayoutState'
 
 const route = useRoute()
 
@@ -22,7 +23,7 @@ watch(
 </script>
 
 <template>
-  <DefaultLayout>
+  <component :is="adminLayout" :class="[adminLayoutId]">
     <GenericSidebar />
     <GenericMobileSubsidebar />
 
@@ -41,7 +42,7 @@ watch(
         </div>
       </div>
     </div>
-  </DefaultLayout>
+  </component>
 </template>
 
 <style lang="scss" scoped>

@@ -23,6 +23,7 @@
 
       <!-- User account -->
       <ul class="bottom-menu">
+        <SidebarItemLayoutDropdown />
         <!-- Notifications -->
         <SidebarItemSearch />
         <!-- Wallet -->
