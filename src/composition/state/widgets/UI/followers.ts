@@ -17,3 +17,21 @@ export const followersList = ref([
     name: 'Mary',
   },
 ])
+
+export const followersStats = ref([
+  {
+    id: 0,
+    icon: 'fab fa-facebook-f',
+    count: '22K',
+  },
+  {
+    id: 1,
+    icon: 'fab fa-twitter',
+    count: '38K',
+  },
+  {
+    id: 2,
+    icon: 'fab fa-instagram',
+    count: '5K',
+  },
+])
