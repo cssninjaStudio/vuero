@@ -48,7 +48,7 @@
             <div class="profile-card-section">
               <div class="section-title">
                 <h4>About Me</h4>
-                <RouterLink :to="{ name: 'admin-profile-edit-1' }"
+                <RouterLink :to="{ name: 'admin-layouts-profile-edit-1' }"
                   ><i class="lnil lnil-pencil"></i
                 ></RouterLink>
               </div>
@@ -155,7 +155,7 @@
             <div class="profile-card-section">
               <div class="section-title">
                 <h4>Languages</h4>
-                <RouterLink :to="{ name: 'admin-profile-edit-2' }"
+                <RouterLink :to="{ name: 'admin-layouts-profile-edit-2' }"
                   ><i class="lnil lnil-pencil"></i
                 ></RouterLink>
               </div>
@@ -237,7 +237,7 @@
             <div class="profile-card-section">
               <div class="section-title">
                 <h4>Skills</h4>
-                <RouterLink :to="{ name: 'admin-profile-edit-2' }"
+                <RouterLink :to="{ name: 'admin-layouts-profile-edit-2' }"
                   ><i class="lnil lnil-pencil"></i
                 ></RouterLink>
               </div>
@@ -630,7 +630,7 @@
             <div class="profile-card-section no-padding">
               <div class="section-title">
                 <h4>Tools</h4>
-                <RouterLink :to="{ name: 'admin-profile-edit-2' }"
+                <RouterLink :to="{ name: 'admin-layouts-profile-edit-2' }"
                   ><i class="lnil lnil-pencil"></i
                 ></RouterLink>
                 <a class="action-link">View All</a>

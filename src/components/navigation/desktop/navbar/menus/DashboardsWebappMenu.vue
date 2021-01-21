@@ -217,28 +217,28 @@ const activeTab = ref<'dashboards' | 'templates'>('dashboards')
                 <h4 class="column-heading">Sidebars</h4>
                 <ul>
                   <li>
-                    <RouterLink :to="{ name: 'admin-blank-page-1' }">
+                    <RouterLink :to="{ name: 'admin-layouts-blank-page-1' }">
                       <i class="lnil lnil-layout"></i>
                       <span>Regular Sidebar</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'admin-blank-page-2' }">
+                    <RouterLink :to="{ name: 'admin-layouts-blank-page-2' }">
                       <i class="lnil lnil-layout"></i>
                       <span>Curved Sidebar</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'admin-blank-page-3' }">
+                    <RouterLink :to="{ name: 'admin-layouts-blank-page-3' }">
                       <i class="lnil lnil-layout"></i>
                       <span>Colored Sidebar</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'admin-blank-page-4' }">
+                    <RouterLink :to="{ name: 'admin-layouts-blank-page-4' }">
                       <i class="lnil lnil-layout"></i>
                       <span>Curved Colored</span>
                       <i class="iconify" data-icon="feather:circle"></i>

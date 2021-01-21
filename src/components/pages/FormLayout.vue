@@ -21,7 +21,7 @@ const isStuck = computed(() => {
           <div class="right">
             <div class="buttons">
               <RouterLink
-                :to="{ name: 'admin-profile-view' }"
+                :to="{ name: 'admin-layouts-profile-view' }"
                 class="button h-button is-light is-dark-outlined"
               >
                 <span class="icon">

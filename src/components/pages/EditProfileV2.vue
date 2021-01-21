@@ -32,7 +32,7 @@
 
           <div class="account-menu">
             <RouterLink
-              :to="{ name: 'admin-profile-edit-1' }"
+              :to="{ name: 'admin-layouts-profile-edit-1' }"
               class="account-menu-item"
             >
               <i class="lnil lnil-user-alt"></i>
@@ -42,7 +42,7 @@
               </span>
             </RouterLink>
             <RouterLink
-              :to="{ name: 'admin-profile-edit-2' }"
+              :to="{ name: 'admin-layouts-profile-edit-2' }"
               class="account-menu-item is-active"
             >
               <i class="lnil lnil-crown-alt"></i>
@@ -52,7 +52,7 @@
               </span>
             </RouterLink>
             <RouterLink
-              :to="{ name: 'admin-profile-edit-3' }"
+              :to="{ name: 'admin-layouts-profile-edit-3' }"
               class="account-menu-item"
             >
               <i class="lnil lnil-quill"></i>
@@ -62,7 +62,7 @@
               </span>
             </RouterLink>
             <RouterLink
-              :to="{ name: 'admin-profile-edit-4' }"
+              :to="{ name: 'admin-layouts-profile-edit-4' }"
               class="account-menu-item"
             >
               <i class="lnil lnil-cog"></i>
@@ -87,7 +87,7 @@
               <div class="right">
                 <div class="buttons">
                   <RouterLink
-                    :to="{ name: 'admin-profile-view' }"
+                    :to="{ name: 'admin-layouts-profile-view' }"
                     class="button h-button is-light is-dark-outlined"
                   >
                     <span class="icon">

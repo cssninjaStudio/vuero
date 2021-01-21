@@ -10,7 +10,10 @@ import { isMobileSidebarOpen } from '/@src/composition/state/ui/mobileSidebarSta
     <div class="inner">
       <ul class="icon-side-menu">
         <li>
-          <RouterLink id="home-sidebar-menu-mobile" :to="{ name: 'admin' }">
+          <RouterLink
+            id="home-sidebar-menu-mobile"
+            :to="{ name: 'admin-dashboards' }"
+          >
             <i class="iconify" data-icon="feather:activity"></i>
           </RouterLink>
         </li>
