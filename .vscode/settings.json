@@ -2,10 +2,10 @@
   "css.validate": false,
   "less.validate": false,
   "scss.validate": false,
-  "editor.formatOnSave": false,
+  "editor.formatOnSave": true,
   "vetur.validation.template": false,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": false
+    "source.fixAll.eslint": true
   },
   "eslint.alwaysShowStatus": true,
   // "eslint.autoFixOnSave": true,
@@ -16,7 +16,7 @@
     "vue"
   ],
   "[vue]": {
-    "editor.formatOnSave": false
+    "editor.formatOnSave": true
   },
   "[markdown]": {
     "editor.formatOnSave": false,
