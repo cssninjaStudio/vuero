@@ -17,254 +17,234 @@ useHead({
 </script>
 
 <template>
-  <DefaultLayout>
-    <ElementsSidebar />
-    <ElementsMobileSubsidebar />
+  <div>
+    <div class="page-title has-text-centered">
+      <!-- Sidebar Trigger -->
+      <div
+        class="huro-hamburger nav-trigger push-resize"
+        @click="toggleSidebar('elements')"
+      >
+        <span class="menu-toggle has-chevron">
+          <span
+            :class="[activeSidebar !== 'none' && 'active']"
+            class="icon-box-toggle"
+          >
+            <span class="rotate">
+              <i class="icon-line-top"></i>
+              <i class="icon-line-center"></i>
+              <i class="icon-line-bottom"></i>
+            </span>
+          </span>
+        </span>
+      </div>
 
-    <!-- Content Wrapper -->
-    <div
-      id="huro-demo"
-      class="view-wrapper"
-      :class="[activeSidebar !== 'none' && 'is-pushed-full']"
-      data-naver-offset="278"
-      data-menu-item="#elements-sidebar-menu"
-      data-mobile-item="#elements-sidebar-menu-mobile"
-    >
-      <div class="page-content-wrapper">
-        <div class="page-content is-relative">
-          <div class="page-title has-text-centered">
-            <!-- Sidebar Trigger -->
-            <div
-              class="huro-hamburger nav-trigger push-resize"
-              @click="toggleSidebar('elements')"
-            >
-              <span class="menu-toggle has-chevron">
-                <span
-                  :class="[activeSidebar !== 'none' && 'active']"
-                  class="icon-box-toggle"
-                >
-                  <span class="rotate">
-                    <i class="icon-line-top"></i>
-                    <i class="icon-line-center"></i>
-                    <i class="icon-line-bottom"></i>
-                  </span>
-                </span>
+      <div class="title-wrap">
+        <h1 class="title is-4">Theme Colors</h1>
+      </div>
+
+      <Toolbar />
+    </div>
+
+    <div class="page-content-inner">
+      <nav class="breadcrumb has-bullet-separator" aria-label="breadcrumbs">
+        <ul>
+          <li>
+            <RouterLink :to="{ name: 'index' }">
+              <span class="icon is-small is-solo">
+                <i class="iconify" data-icon="feather:home"></i>
               </span>
+            </RouterLink>
+          </li>
+          <li>
+            <RouterLink :to="{ name: 'elements' }">
+              <span>Elements</span>
+            </RouterLink>
+          </li>
+          <li>
+            <a>
+              <span>Theme Colors</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="columns is-multiline">
+        <div class="column is-12">
+          <!--Theme Colors-->
+          <ColorsDocumentation />
+
+          <div class="columns is-multiline">
+            <div class="column is-4">
+              <div class="color-card">
+                <div class="color-dot is-primary"></div>
+                <div class="meta">
+                  <span>$primary</span>
+                  <span>#37105ff</span>
+                </div>
+              </div>
+            </div>
+            <div class="column is-4">
+              <div class="color-card">
+                <div class="color-dot is-accent"></div>
+                <div class="meta">
+                  <span>$accent</span>
+                  <span>#797bf2</span>
+                </div>
+              </div>
+            </div>
+            <div class="column is-4">
+              <div class="color-card">
+                <div class="color-dot is-info"></div>
+                <div class="meta">
+                  <span>$info</span>
+                  <span>#039BE5</span>
+                </div>
+              </div>
+            </div>
+            <div class="column is-4">
+              <div class="color-card">
+                <div class="color-dot is-success"></div>
+                <div class="meta">
+                  <span>$success</span>
+                  <span>#06d6a0</span>
+                </div>
+              </div>
+            </div>
+            <div class="column is-4">
+              <div class="color-card">
+                <div class="color-dot is-warning"></div>
+                <div class="meta">
+                  <span>$warning</span>
+                  <span>#faae42</span>
+                </div>
+              </div>
+            </div>
+            <div class="column is-4">
+              <div class="color-card">
+                <div class="color-dot is-danger"></div>
+                <div class="meta">
+                  <span>$danger</span>
+                  <span>#e62965</span>
+                </div>
+              </div>
             </div>
 
-            <div class="title-wrap">
-              <h1 class="title is-4">Theme Colors</h1>
+            <div class="column is-4">
+              <div class="color-card">
+                <div class="color-dot is-h-purple"></div>
+                <div class="meta">
+                  <span>$h-purple</span>
+                  <span>#8269B2</span>
+                </div>
+              </div>
             </div>
 
-            <Toolbar />
-          </div>
+            <div class="column is-4">
+              <div class="color-card">
+                <div class="color-dot is-h-blue"></div>
+                <div class="meta">
+                  <span>$h-blue</span>
+                  <span>#37C3FF</span>
+                </div>
+              </div>
+            </div>
 
-          <div class="page-content-inner">
-            <nav
-              class="breadcrumb has-bullet-separator"
-              aria-label="breadcrumbs"
-            >
-              <ul>
-                <li>
-                  <RouterLink :to="{ name: 'index' }">
-                    <span class="icon is-small is-solo">
-                      <i class="iconify" data-icon="feather:home"></i>
-                    </span>
-                  </RouterLink>
-                </li>
-                <li>
-                  <RouterLink :to="{ name: 'elements' }">
-                    <span>Elements</span>
-                  </RouterLink>
-                </li>
-                <li>
-                  <a>
-                    <span>Theme Colors</span>
-                  </a>
-                </li>
-              </ul>
-            </nav>
+            <div class="column is-4">
+              <div class="color-card">
+                <div class="color-dot is-h-green"></div>
+                <div class="meta">
+                  <span>$h-green</span>
+                  <span>#93E088</span>
+                </div>
+              </div>
+            </div>
 
-            <div class="columns is-multiline">
-              <div class="column is-12">
-                <!--Theme Colors-->
-                <ColorsDocumentation />
+            <div class="column is-4">
+              <div class="color-card">
+                <div class="color-dot is-h-orange"></div>
+                <div class="meta">
+                  <span>$h-orange</span>
+                  <span>#FFA981</span>
+                </div>
+              </div>
+            </div>
 
-                <div class="columns is-multiline">
-                  <div class="column is-4">
-                    <div class="color-card">
-                      <div class="color-dot is-primary"></div>
-                      <div class="meta">
-                        <span>$primary</span>
-                        <span>#37105ff</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="column is-4">
-                    <div class="color-card">
-                      <div class="color-dot is-accent"></div>
-                      <div class="meta">
-                        <span>$accent</span>
-                        <span>#797bf2</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="column is-4">
-                    <div class="color-card">
-                      <div class="color-dot is-info"></div>
-                      <div class="meta">
-                        <span>$info</span>
-                        <span>#039BE5</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="column is-4">
-                    <div class="color-card">
-                      <div class="color-dot is-success"></div>
-                      <div class="meta">
-                        <span>$success</span>
-                        <span>#06d6a0</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="column is-4">
-                    <div class="color-card">
-                      <div class="color-dot is-warning"></div>
-                      <div class="meta">
-                        <span>$warning</span>
-                        <span>#faae42</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="column is-4">
-                    <div class="color-card">
-                      <div class="color-dot is-danger"></div>
-                      <div class="meta">
-                        <span>$danger</span>
-                        <span>#e62965</span>
-                      </div>
-                    </div>
-                  </div>
+            <div class="column is-4">
+              <div class="color-card">
+                <div class="color-dot is-h-red"></div>
+                <div class="meta">
+                  <span>$h-red</span>
+                  <span>#F92B60</span>
+                </div>
+              </div>
+            </div>
 
-                  <div class="column is-4">
-                    <div class="color-card">
-                      <div class="color-dot is-h-purple"></div>
-                      <div class="meta">
-                        <span>$h-purple</span>
-                        <span>#8269B2</span>
-                      </div>
-                    </div>
-                  </div>
+            <div class="column is-4">
+              <div class="color-card">
+                <div class="color-dot is-h-yellow"></div>
+                <div class="meta">
+                  <span>$h-yellow</span>
+                  <span>#FFD66E</span>
+                </div>
+              </div>
+            </div>
 
-                  <div class="column is-4">
-                    <div class="color-card">
-                      <div class="color-dot is-h-blue"></div>
-                      <div class="meta">
-                        <span>$h-blue</span>
-                        <span>#37C3FF</span>
-                      </div>
-                    </div>
-                  </div>
+            <div class="column is-4">
+              <div class="color-card">
+                <div class="color-dot is-fade-grey"></div>
+                <div class="meta">
+                  <span>$fade-grey</span>
+                  <span>#ededed</span>
+                </div>
+              </div>
+            </div>
 
-                  <div class="column is-4">
-                    <div class="color-card">
-                      <div class="color-dot is-h-green"></div>
-                      <div class="meta">
-                        <span>$h-green</span>
-                        <span>#93E088</span>
-                      </div>
-                    </div>
-                  </div>
+            <div class="column is-4">
+              <div class="color-card">
+                <div class="color-dot is-dark-text"></div>
+                <div class="meta">
+                  <span>$dark-text</span>
+                  <span>#283252</span>
+                </div>
+              </div>
+            </div>
 
-                  <div class="column is-4">
-                    <div class="color-card">
-                      <div class="color-dot is-h-orange"></div>
-                      <div class="meta">
-                        <span>$h-orange</span>
-                        <span>#FFA981</span>
-                      </div>
-                    </div>
-                  </div>
+            <div class="column is-4">
+              <div class="color-card">
+                <div class="color-dot is-light-text"></div>
+                <div class="meta">
+                  <span>$light-text</span>
+                  <span>#a2a5b9</span>
+                </div>
+              </div>
+            </div>
 
-                  <div class="column is-4">
-                    <div class="color-card">
-                      <div class="color-dot is-h-red"></div>
-                      <div class="meta">
-                        <span>$h-red</span>
-                        <span>#F92B60</span>
-                      </div>
-                    </div>
-                  </div>
+            <div class="column is-4">
+              <div class="color-card">
+                <div class="color-dot is-muted-grey"></div>
+                <div class="meta">
+                  <span>$muted-grey</span>
+                  <span>#999</span>
+                </div>
+              </div>
+            </div>
 
-                  <div class="column is-4">
-                    <div class="color-card">
-                      <div class="color-dot is-h-yellow"></div>
-                      <div class="meta">
-                        <span>$h-yellow</span>
-                        <span>#FFD66E</span>
-                      </div>
-                    </div>
-                  </div>
+            <div class="column is-4">
+              <div class="color-card">
+                <div class="color-dot is-placeholder"></div>
+                <div class="meta">
+                  <span>$placeholder</span>
+                  <span>#cecece</span>
+                </div>
+              </div>
+            </div>
 
-                  <div class="column is-4">
-                    <div class="color-card">
-                      <div class="color-dot is-fade-grey"></div>
-                      <div class="meta">
-                        <span>$fade-grey</span>
-                        <span>#ededed</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="column is-4">
-                    <div class="color-card">
-                      <div class="color-dot is-dark-text"></div>
-                      <div class="meta">
-                        <span>$dark-text</span>
-                        <span>#283252</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="column is-4">
-                    <div class="color-card">
-                      <div class="color-dot is-light-text"></div>
-                      <div class="meta">
-                        <span>$light-text</span>
-                        <span>#a2a5b9</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="column is-4">
-                    <div class="color-card">
-                      <div class="color-dot is-muted-grey"></div>
-                      <div class="meta">
-                        <span>$muted-grey</span>
-                        <span>#999</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="column is-4">
-                    <div class="color-card">
-                      <div class="color-dot is-placeholder"></div>
-                      <div class="meta">
-                        <span>$placeholder</span>
-                        <span>#cecece</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="column is-4">
-                    <div class="color-card">
-                      <div class="color-dot is-dark"></div>
-                      <div class="meta">
-                        <span>$dark-sidebar</span>
-                        <span>#232326</span>
-                      </div>
-                    </div>
-                  </div>
+            <div class="column is-4">
+              <div class="color-card">
+                <div class="color-dot is-dark"></div>
+                <div class="meta">
+                  <span>$dark-sidebar</span>
+                  <span>#232326</span>
                 </div>
               </div>
             </div>
@@ -272,5 +252,5 @@ useHead({
         </div>
       </div>
     </div>
-  </DefaultLayout>
+  </div>
 </template>

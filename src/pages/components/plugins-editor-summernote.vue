@@ -17,102 +17,85 @@ useHead({
 </script>
 
 <template>
-  <DefaultLayout>
-    <ComponentsSidebar />
-    <ComponentsMobileSubsidebar />
+  <div class="page-content is-relative">
+    <div class="page-title has-text-centered">
+      <!-- Sidebar Trigger -->
+      <div
+        class="huro-hamburger nav-trigger push-resize"
+        @click="toggleSidebar('components')"
+      >
+        <span class="menu-toggle has-chevron">
+          <span
+            :class="[activeSidebar !== 'none' && 'active']"
+            class="icon-box-toggle"
+          >
+            <span class="rotate">
+              <i class="icon-line-top"></i>
+              <i class="icon-line-center"></i>
+              <i class="icon-line-bottom"></i>
+            </span>
+          </span>
+        </span>
+      </div>
 
-    <!-- Content Wrapper -->
-    <div
-      id="huro-demo"
-      class="view-wrapper"
-      :class="[activeSidebar !== 'none' && 'is-pushed-full']"
-      data-naver-offset="342"
-      data-menu-item="#components-sidebar-menu"
-      data-mobile-item="#components-sidebar-menu-mobile"
-    >
-      <div class="page-content-wrapper">
-        <div class="page-content is-relative">
-          <div class="page-title has-text-centered">
-            <!-- Sidebar Trigger -->
-            <div
-              class="huro-hamburger nav-trigger push-resize"
-              @click="toggleSidebar('components')"
-            >
-              <span class="menu-toggle has-chevron">
-                <span
-                  :class="[activeSidebar !== 'none' && 'active']"
-                  class="icon-box-toggle"
-                >
-                  <span class="rotate">
-                    <i class="icon-line-top"></i>
-                    <i class="icon-line-center"></i>
-                    <i class="icon-line-bottom"></i>
-                  </span>
-                </span>
+      <div class="title-wrap">
+        <h1 class="title is-4">Summernote</h1>
+      </div>
+
+      <Toolbar />
+    </div>
+
+    <div class="page-content-inner">
+      <nav class="breadcrumb has-bullet-separator" aria-label="breadcrumbs">
+        <ul>
+          <li>
+            <RouterLink :to="{ name: 'index' }">
+              <span class="icon is-small is-solo">
+                <i class="iconify" data-icon="feather:home"></i>
               </span>
+            </RouterLink>
+          </li>
+          <li>
+            <RouterLink :to="{ name: 'elements' }">
+              <span>Components</span>
+            </RouterLink>
+          </li>
+          <li>
+            <a>
+              <span>Plugins</span>
+            </a>
+          </li>
+          <li>
+            <a>
+              <span>Summernote</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="columns is-multiline">
+        <div class="column is-12">
+          <!--Summernote Editor-->
+          <div class="demo-card">
+            <div class="demo-title">
+              <h3 class="title is-thin is-5">Summernote Editor</h3>
+              <p>
+                Vuero ships with Summernote Editor, a nice and easily
+                customizable jQuery rich text editor
+                <a
+                  href="https://summernote.org/getting-started/#without-bootstrap"
+                  >here</a
+                >. If you need a vanilla js editor, please consider looking at
+                our other integrated editor, sun editor.
+              </p>
+              <a class="code-trigger">
+                <i class="iconify open" data-icon="feather:code"></i>
+                <i class="iconify close" data-icon="feather:x"></i>
+              </a>
             </div>
-
-            <div class="title-wrap">
-              <h1 class="title is-4">Summernote</h1>
-            </div>
-
-            <Toolbar />
-          </div>
-
-          <div class="page-content-inner">
-            <nav
-              class="breadcrumb has-bullet-separator"
-              aria-label="breadcrumbs"
-            >
-              <ul>
-                <li>
-                  <RouterLink :to="{ name: 'index' }">
-                    <span class="icon is-small is-solo">
-                      <i class="iconify" data-icon="feather:home"></i>
-                    </span>
-                  </RouterLink>
-                </li>
-                <li>
-                  <RouterLink :to="{ name: 'elements' }">
-                    <span>Components</span>
-                  </RouterLink>
-                </li>
-                <li>
-                  <a>
-                    <span>Plugins</span>
-                  </a>
-                </li>
-                <li>
-                  <a>
-                    <span>Summernote</span>
-                  </a>
-                </li>
-              </ul>
-            </nav>
-
-            <div class="columns is-multiline">
-              <div class="column is-12">
-                <!--Summernote Editor-->
-                <div class="demo-card">
-                  <div class="demo-title">
-                    <h3 class="title is-thin is-5">Summernote Editor</h3>
-                    <p>
-                      Vuero ships with Summernote Editor, a nice and easily
-                      customizable jQuery rich text editor
-                      <a
-                        href="https://summernote.org/getting-started/#without-bootstrap"
-                        >here</a
-                      >. If you need a vanilla js editor, please consider
-                      looking at our other integrated editor, sun editor.
-                    </p>
-                    <a class="code-trigger">
-                      <i class="iconify open" data-icon="feather:code"></i>
-                      <i class="iconify close" data-icon="feather:x"></i>
-                    </a>
-                  </div>
-                  <div class="card-inner no-padding">
-                    <div class="highlight highlight-block">
-                      <pre><code class="code-highlight">
+            <div class="card-inner no-padding">
+              <div class="highlight highlight-block">
+                <pre><code class="code-highlight">
 //JS CODE
 $('#summernote').summernote({
     placeholder: 'Hello stand alone ui',
@@ -134,20 +117,17 @@ $('#summernote').summernote({
 //MARKUP
 &#x3C;div id=&#x22;summernote&#x22;&#x3E;&#x3C;/div&#x3E;
 </code></pre>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="p-t-20 p-b-20">
-                  <div class="demo-editor-container">
-                    <div id="summernote"></div>
-                  </div>
-                </div>
               </div>
+            </div>
+          </div>
+
+          <div class="p-t-20 p-b-20">
+            <div class="demo-editor-container">
+              <div id="summernote"></div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </DefaultLayout>
+  </div>
 </template>

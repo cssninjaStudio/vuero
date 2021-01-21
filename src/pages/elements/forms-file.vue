@@ -17,176 +17,140 @@ useHead({
 </script>
 
 <template>
-  <DefaultLayout>
-    <ElementsSidebar />
-    <ElementsMobileSubsidebar />
+  <div>
+    <div class="page-title has-text-centered">
+      <!-- Sidebar Trigger -->
+      <div
+        class="huro-hamburger nav-trigger push-resize"
+        @click="toggleSidebar('elements')"
+      >
+        <span class="menu-toggle has-chevron">
+          <span
+            :class="[activeSidebar !== 'none' && 'active']"
+            class="icon-box-toggle"
+          >
+            <span class="rotate">
+              <i class="icon-line-top"></i>
+              <i class="icon-line-center"></i>
+              <i class="icon-line-bottom"></i>
+            </span>
+          </span>
+        </span>
+      </div>
 
-    <!-- Content Wrapper -->
-    <div
-      id="huro-demo"
-      class="view-wrapper"
-      :class="[activeSidebar !== 'none' && 'is-pushed-full']"
-      data-naver-offset="278"
-      data-menu-item="#elements-sidebar-menu"
-      data-mobile-item="#elements-sidebar-menu-mobile"
-    >
-      <div class="page-content-wrapper">
-        <div class="page-content is-relative">
-          <div class="page-title has-text-centered">
-            <!-- Sidebar Trigger -->
-            <div
-              class="huro-hamburger nav-trigger push-resize"
-              @click="toggleSidebar('elements')"
-            >
-              <span class="menu-toggle has-chevron">
-                <span
-                  :class="[activeSidebar !== 'none' && 'active']"
-                  class="icon-box-toggle"
-                >
-                  <span class="rotate">
-                    <i class="icon-line-top"></i>
-                    <i class="icon-line-center"></i>
-                    <i class="icon-line-bottom"></i>
-                  </span>
-                </span>
+      <div class="title-wrap">
+        <h1 class="title is-4">File Input</h1>
+      </div>
+
+      <Toolbar />
+    </div>
+
+    <div class="page-content-inner">
+      <nav class="breadcrumb has-bullet-separator" aria-label="breadcrumbs">
+        <ul>
+          <li>
+            <RouterLink :to="{ name: 'index' }">
+              <span class="icon is-small is-solo">
+                <i class="iconify" data-icon="feather:home"></i>
               </span>
+            </RouterLink>
+          </li>
+          <li>
+            <RouterLink :to="{ name: 'elements' }">
+              <span>Elements</span>
+            </RouterLink>
+          </li>
+          <li>
+            <a>
+              <span>Forms</span>
+            </a>
+          </li>
+          <li>
+            <a>
+              <span>File</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="columns">
+        <div class="column is-12">
+          <!--File input button-->
+          <div class="demo-card">
+            <div class="demo-title">
+              <h3 class="title is-thin is-5">File Input</h3>
+              <p>
+                Vuero provides default styles for file inputs, in case you need
+                a control to upload a single file in your forms. File inputs can
+                look like upload buttons. Please refer to markup for more
+                details about usage.
+              </p>
+              <a class="code-trigger">
+                <i class="iconify open" data-icon="feather:code"></i>
+                <i class="iconify close" data-icon="feather:x"></i>
+              </a>
             </div>
-
-            <div class="title-wrap">
-              <h1 class="title is-4">File Input</h1>
-            </div>
-
-            <Toolbar />
-          </div>
-
-          <div class="page-content-inner">
-            <nav
-              class="breadcrumb has-bullet-separator"
-              aria-label="breadcrumbs"
-            >
-              <ul>
-                <li>
-                  <RouterLink :to="{ name: 'index' }">
-                    <span class="icon is-small is-solo">
-                      <i class="iconify" data-icon="feather:home"></i>
-                    </span>
-                  </RouterLink>
-                </li>
-                <li>
-                  <RouterLink :to="{ name: 'elements' }">
-                    <span>Elements</span>
-                  </RouterLink>
-                </li>
-                <li>
-                  <a>
-                    <span>Forms</span>
-                  </a>
-                </li>
-                <li>
-                  <a>
-                    <span>File</span>
-                  </a>
-                </li>
-              </ul>
-            </nav>
-
-            <div class="columns">
-              <div class="column is-12">
-                <!--File input button-->
-                <div class="demo-card">
-                  <div class="demo-title">
-                    <h3 class="title is-thin is-5">File Input</h3>
-                    <p>
-                      Vuero provides default styles for file inputs, in case you
-                      need a control to upload a single file in your forms. File
-                      inputs can look like upload buttons. Please refer to
-                      markup for more details about usage.
-                    </p>
-                    <a class="code-trigger">
-                      <i class="iconify open" data-icon="feather:code"></i>
-                      <i class="iconify close" data-icon="feather:x"></i>
-                    </a>
+            <div class="card-inner">
+              <div class="field is-grouped">
+                <div class="control">
+                  <div class="file">
+                    <label class="file-label">
+                      <input class="file-input" type="file" name="resume" />
+                      <span class="file-cta">
+                        <span class="file-icon">
+                          <i class="fas fa-cloud-upload-alt"></i>
+                        </span>
+                        <span class="file-label"> Choose a file… </span>
+                      </span>
+                    </label>
                   </div>
-                  <div class="card-inner">
-                    <div class="field is-grouped">
-                      <div class="control">
-                        <div class="file">
-                          <label class="file-label">
-                            <input
-                              class="file-input"
-                              type="file"
-                              name="resume"
-                            />
-                            <span class="file-cta">
-                              <span class="file-icon">
-                                <i class="fas fa-cloud-upload-alt"></i>
-                              </span>
-                              <span class="file-label"> Choose a file… </span>
-                            </span>
-                          </label>
-                        </div>
-                      </div>
+                </div>
 
-                      <div class="control">
-                        <div class="file is-default">
-                          <label class="file-label">
-                            <input
-                              class="file-input"
-                              type="file"
-                              name="resume"
-                            />
-                            <span class="file-cta">
-                              <span class="file-icon">
-                                <i class="fas fa-cloud-upload-alt"></i>
-                              </span>
-                              <span class="file-label"> Choose a file… </span>
-                            </span>
-                          </label>
-                        </div>
-                      </div>
+                <div class="control">
+                  <div class="file is-default">
+                    <label class="file-label">
+                      <input class="file-input" type="file" name="resume" />
+                      <span class="file-cta">
+                        <span class="file-icon">
+                          <i class="fas fa-cloud-upload-alt"></i>
+                        </span>
+                        <span class="file-label"> Choose a file… </span>
+                      </span>
+                    </label>
+                  </div>
+                </div>
 
-                      <div class="control">
-                        <div class="file is-primary">
-                          <label class="file-label">
-                            <input
-                              class="file-input"
-                              type="file"
-                              name="resume"
-                            />
-                            <span class="file-cta">
-                              <span class="file-icon">
-                                <i
-                                  class="iconify"
-                                  data-icon="feather:upload"
-                                ></i>
-                              </span>
-                              <span class="file-label"> Choose a file… </span>
-                            </span>
-                          </label>
-                        </div>
-                      </div>
+                <div class="control">
+                  <div class="file is-primary">
+                    <label class="file-label">
+                      <input class="file-input" type="file" name="resume" />
+                      <span class="file-cta">
+                        <span class="file-icon">
+                          <i class="iconify" data-icon="feather:upload"></i>
+                        </span>
+                        <span class="file-label"> Choose a file… </span>
+                      </span>
+                    </label>
+                  </div>
+                </div>
 
-                      <div class="control">
-                        <div class="file is-success">
-                          <label class="file-label">
-                            <input
-                              class="file-input"
-                              type="file"
-                              name="resume"
-                            />
-                            <span class="file-cta">
-                              <span class="file-icon">
-                                <i class="lnil lnil-lg lnil-cloud-upload"></i>
-                              </span>
-                              <span class="file-label"> Choose a file… </span>
-                            </span>
-                          </label>
-                        </div>
-                      </div>
-                    </div>
+                <div class="control">
+                  <div class="file is-success">
+                    <label class="file-label">
+                      <input class="file-input" type="file" name="resume" />
+                      <span class="file-cta">
+                        <span class="file-icon">
+                          <i class="lnil lnil-lg lnil-cloud-upload"></i>
+                        </span>
+                        <span class="file-label"> Choose a file… </span>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+              </div>
 
-                    <div class="highlight highlight-block">
-                      <pre><code class="code-highlight">
+              <div class="highlight highlight-block">
+                <pre><code class="code-highlight">
 &#x3C;div class=&#x22;field is-grouped&#x22;&#x3E;
     &#x3C;div class=&#x22;control&#x22;&#x3E;
         &#x3C;div class=&#x22;file&#x22;&#x3E;
@@ -253,84 +217,72 @@ useHead({
     &#x3C;/div&#x3E;
 &#x3C;/div&#x3E;
 </code></pre>
-                    </div>
+              </div>
+            </div>
+          </div>
+
+          <!--File input button-->
+          <div class="demo-card">
+            <div class="demo-title">
+              <h3 class="title is-thin is-5">Boxed File Input</h3>
+              <p>
+                Vuero file inputs can have a boxed style. You just need to add
+                the <code>is-boxed</code> class to your
+                <code>file</code> element to apply this style. Please refer to
+                markup for more details about usage.
+              </p>
+              <a class="code-trigger">
+                <i class="iconify open" data-icon="feather:code"></i>
+                <i class="iconify close" data-icon="feather:x"></i>
+              </a>
+            </div>
+            <div class="card-inner">
+              <div class="field is-grouped">
+                <div class="control">
+                  <div class="file is-boxed">
+                    <label class="file-label">
+                      <input class="file-input" type="file" name="resume" />
+                      <span class="file-cta">
+                        <span class="file-icon">
+                          <i class="lnil lnil-32 lnil-cloud-upload"></i>
+                        </span>
+                        <span class="file-label"> Choose a file… </span>
+                      </span>
+                    </label>
                   </div>
                 </div>
 
-                <!--File input button-->
-                <div class="demo-card">
-                  <div class="demo-title">
-                    <h3 class="title is-thin is-5">Boxed File Input</h3>
-                    <p>
-                      Vuero file inputs can have a boxed style. You just need to
-                      add the <code>is-boxed</code> class to your
-                      <code>file</code> element to apply this style. Please
-                      refer to markup for more details about usage.
-                    </p>
-                    <a class="code-trigger">
-                      <i class="iconify open" data-icon="feather:code"></i>
-                      <i class="iconify close" data-icon="feather:x"></i>
-                    </a>
+                <div class="control">
+                  <div class="file is-boxed is-default">
+                    <label class="file-label">
+                      <input class="file-input" type="file" name="resume" />
+                      <span class="file-cta">
+                        <span class="file-icon">
+                          <i class="lnil lnil-32 lnil-cloud-upload"></i>
+                        </span>
+                        <span class="file-label"> Choose a file… </span>
+                      </span>
+                    </label>
                   </div>
-                  <div class="card-inner">
-                    <div class="field is-grouped">
-                      <div class="control">
-                        <div class="file is-boxed">
-                          <label class="file-label">
-                            <input
-                              class="file-input"
-                              type="file"
-                              name="resume"
-                            />
-                            <span class="file-cta">
-                              <span class="file-icon">
-                                <i class="lnil lnil-32 lnil-cloud-upload"></i>
-                              </span>
-                              <span class="file-label"> Choose a file… </span>
-                            </span>
-                          </label>
-                        </div>
-                      </div>
+                </div>
 
-                      <div class="control">
-                        <div class="file is-boxed is-default">
-                          <label class="file-label">
-                            <input
-                              class="file-input"
-                              type="file"
-                              name="resume"
-                            />
-                            <span class="file-cta">
-                              <span class="file-icon">
-                                <i class="lnil lnil-32 lnil-cloud-upload"></i>
-                              </span>
-                              <span class="file-label"> Choose a file… </span>
-                            </span>
-                          </label>
-                        </div>
-                      </div>
+                <div class="control">
+                  <div class="file is-boxed is-primary">
+                    <label class="file-label">
+                      <input class="file-input" type="file" name="resume" />
+                      <span class="file-cta">
+                        <span class="file-icon">
+                          <i class="lnil lnil-32 lnil-cloud-upload"></i>
+                        </span>
+                        <span class="file-label"> Choose a file… </span>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+              </div>
 
-                      <div class="control">
-                        <div class="file is-boxed is-primary">
-                          <label class="file-label">
-                            <input
-                              class="file-input"
-                              type="file"
-                              name="resume"
-                            />
-                            <span class="file-cta">
-                              <span class="file-icon">
-                                <i class="lnil lnil-32 lnil-cloud-upload"></i>
-                              </span>
-                              <span class="file-label"> Choose a file… </span>
-                            </span>
-                          </label>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="highlight highlight-block">
-                      <pre><code class="code-highlight">
+              <div class="highlight highlight-block">
+                <pre><code class="code-highlight">
 &#x3C;div class=&#x22;field is-grouped&#x22;&#x3E;
     &#x3C;div class=&#x22;control&#x22;&#x3E;
         &#x3C;div class=&#x22;file is-boxed&#x22;&#x3E;
@@ -381,52 +333,48 @@ useHead({
     &#x3C;/div&#x3E;
 &#x3C;/div&#x3E;
 </code></pre>
-                    </div>
+              </div>
+            </div>
+          </div>
+
+          <!--File input button-->
+          <div class="demo-card">
+            <div class="demo-title">
+              <h3 class="title is-thin is-5">File Name</h3>
+              <p>
+                File inputs can show an additional area to display the selected
+                file name. You just need to add the
+                <code>has-name</code> class to your <code>file</code> element to
+                apply this style. Please refer to markup for more details about
+                usage.
+              </p>
+              <a class="code-trigger">
+                <i class="iconify open" data-icon="feather:code"></i>
+                <i class="iconify close" data-icon="feather:x"></i>
+              </a>
+            </div>
+            <div class="card-inner">
+              <div class="field is-grouped">
+                <div class="control">
+                  <div class="file has-name is-fullwidth">
+                    <label class="file-label">
+                      <input class="file-input" type="file" name="resume" />
+                      <span class="file-cta">
+                        <span class="file-icon">
+                          <i class="lnil lnil-lg lnil-cloud-upload"></i>
+                        </span>
+                        <span class="file-label"> Choose a file… </span>
+                      </span>
+                      <span class="file-name light-text">
+                        22082020_project_budget.xls
+                      </span>
+                    </label>
                   </div>
                 </div>
+              </div>
 
-                <!--File input button-->
-                <div class="demo-card">
-                  <div class="demo-title">
-                    <h3 class="title is-thin is-5">File Name</h3>
-                    <p>
-                      File inputs can show an additional area to display the
-                      selected file name. You just need to add the
-                      <code>has-name</code> class to your
-                      <code>file</code> element to apply this style. Please
-                      refer to markup for more details about usage.
-                    </p>
-                    <a class="code-trigger">
-                      <i class="iconify open" data-icon="feather:code"></i>
-                      <i class="iconify close" data-icon="feather:x"></i>
-                    </a>
-                  </div>
-                  <div class="card-inner">
-                    <div class="field is-grouped">
-                      <div class="control">
-                        <div class="file has-name is-fullwidth">
-                          <label class="file-label">
-                            <input
-                              class="file-input"
-                              type="file"
-                              name="resume"
-                            />
-                            <span class="file-cta">
-                              <span class="file-icon">
-                                <i class="lnil lnil-lg lnil-cloud-upload"></i>
-                              </span>
-                              <span class="file-label"> Choose a file… </span>
-                            </span>
-                            <span class="file-name light-text">
-                              22082020_project_budget.xls
-                            </span>
-                          </label>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="highlight highlight-block">
-                      <pre><code class="code-highlight">
+              <div class="highlight highlight-block">
+                <pre><code class="code-highlight">
 &#x3C;div class=&#x22;field is-grouped&#x22;&#x3E;
     &#x3C;div class=&#x22;control&#x22;&#x3E;
         &#x3C;div class=&#x22;file has-name is-fullwidth&#x22;&#x3E;
@@ -448,52 +396,48 @@ useHead({
     &#x3C;/div&#x3E;
 &#x3C;/div&#x3E;
 </code></pre>
-                    </div>
+              </div>
+            </div>
+          </div>
+
+          <!--File input button-->
+          <div class="demo-card">
+            <div class="demo-title">
+              <h3 class="title is-thin is-5">Right File Name</h3>
+              <p>
+                File inputs can show an additional area to display the selected
+                file name, on the right. You just need to add the
+                <code>has-name</code> and <code>is-right</code> classes to your
+                <code>file</code> element to apply this style. Please refer to
+                markup for more details about usage.
+              </p>
+              <a class="code-trigger">
+                <i class="iconify open" data-icon="feather:code"></i>
+                <i class="iconify close" data-icon="feather:x"></i>
+              </a>
+            </div>
+            <div class="card-inner">
+              <div class="field is-grouped">
+                <div class="control">
+                  <div class="file has-name is-fullwidth is-right">
+                    <label class="file-label">
+                      <input class="file-input" type="file" name="resume" />
+                      <span class="file-cta">
+                        <span class="file-icon">
+                          <i class="lnil lnil-lg lnil-cloud-upload"></i>
+                        </span>
+                        <span class="file-label"> Choose a file… </span>
+                      </span>
+                      <span class="file-name light-text">
+                        22082020_project_budget.xls
+                      </span>
+                    </label>
                   </div>
                 </div>
+              </div>
 
-                <!--File input button-->
-                <div class="demo-card">
-                  <div class="demo-title">
-                    <h3 class="title is-thin is-5">Right File Name</h3>
-                    <p>
-                      File inputs can show an additional area to display the
-                      selected file name, on the right. You just need to add the
-                      <code>has-name</code> and <code>is-right</code> classes to
-                      your <code>file</code> element to apply this style. Please
-                      refer to markup for more details about usage.
-                    </p>
-                    <a class="code-trigger">
-                      <i class="iconify open" data-icon="feather:code"></i>
-                      <i class="iconify close" data-icon="feather:x"></i>
-                    </a>
-                  </div>
-                  <div class="card-inner">
-                    <div class="field is-grouped">
-                      <div class="control">
-                        <div class="file has-name is-fullwidth is-right">
-                          <label class="file-label">
-                            <input
-                              class="file-input"
-                              type="file"
-                              name="resume"
-                            />
-                            <span class="file-cta">
-                              <span class="file-icon">
-                                <i class="lnil lnil-lg lnil-cloud-upload"></i>
-                              </span>
-                              <span class="file-label"> Choose a file… </span>
-                            </span>
-                            <span class="file-name light-text">
-                              22082020_project_budget.xls
-                            </span>
-                          </label>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="highlight highlight-block">
-                      <pre><code class="code-highlight">
+              <div class="highlight highlight-block">
+                <pre><code class="code-highlight">
 &#x3C;div class=&#x22;field is-grouped&#x22;&#x3E;
     &#x3C;div class=&#x22;control&#x22;&#x3E;
         &#x3C;div class=&#x22;file has-name is-fullwidth is-right&#x22;&#x3E;
@@ -515,14 +459,11 @@ useHead({
     &#x3C;/div&#x3E;
 &#x3C;/div&#x3E;
 </code></pre>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </DefaultLayout>
+  </div>
 </template>
