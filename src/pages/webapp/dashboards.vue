@@ -1,28 +1,32 @@
 <script setup lang="ts">
-import { onMounted, watch } from 'vue'
+import { onMounted, watch, ref } from 'vue'
 import { useRoute } from 'vue-router'
 
-import {
-  activeSidebar,
-  toggleSidebar,
-} from '/@src/composition/state/ui/activeSidebarState'
+import WebappLayout from '/@src/layouts/WebappLayout.vue'
+import WebappV2Layout from '/@src/layouts/WebappV2Layout.vue'
+import WebappV3Layout from '/@src/layouts/WebappV3Layout.vue'
+import WebappV4Layout from '/@src/layouts/WebappV4Layout.vue'
+import WebappV5Layout from '/@src/layouts/WebappV5Layout.vue'
 
-// const route = useRoute()
+import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
+import { webappLayout } from '/@src/composition/state/ui/webappLayoutState'
 
-// onMounted(() => {
-//   activeSidebar.value = 'none'
-// })
+const route = useRoute()
 
-// watch(
-//   () => route.path,
-//   () => {
-//     activeSidebar.value = 'none'
-//   }
-// )
+onMounted(() => {
+  activeSidebar.value = 'none'
+})
+
+watch(
+  () => route.path,
+  () => {
+    activeSidebar.value = 'none'
+  }
+)
 </script>
 
 <template>
-  <WebappLayout>
+  <component :is="webappLayout">
     <GenericMobileSubsidebar />
 
     <!-- Content Wrapper -->
@@ -40,7 +44,7 @@ import {
         </div>
       </div>
     </div>
-  </WebappLayout>
+  </component>
 </template>
 
 <style lang="scss" scoped>
