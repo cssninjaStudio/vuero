@@ -2,10 +2,10 @@
 import { defineProps } from 'vue'
 
 const props = defineProps({
-    notifications: {
-        type: Array,
-        required: true,
-    },
+  notifications: {
+    type: Array,
+    required: true,
+  },
 })
 </script>
 

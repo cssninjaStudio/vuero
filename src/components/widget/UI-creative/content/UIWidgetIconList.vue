@@ -2,10 +2,10 @@
 import { defineProps } from 'vue'
 
 const props = defineProps({
-    list: {
-        type: Array,
-        required: true,
-    },
+  list: {
+    type: Array,
+    required: true,
+  },
 })
 </script>
 

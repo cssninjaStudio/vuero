@@ -20,8 +20,8 @@ const props = defineProps({
   },
   flipped: {
     type: Boolean,
-    default: false
-  }
+    default: false,
+  },
 })
 
 const emit = defineEmit(['flip'])
