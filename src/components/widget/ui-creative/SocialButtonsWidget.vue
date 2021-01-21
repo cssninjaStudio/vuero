@@ -14,11 +14,18 @@ const props = defineProps({
     type: Boolean,
     default: false,
   },
+  straight: {
+    type: Boolean,
+    default: false,
+  },
 })
 </script>
 
 <template>
-  <div class="widget social-buttons-widget">
+  <div
+    class="widget social-buttons-widget"
+    :class="[straight && 'is-straight']"
+  >
     <div class="social-buttons">
       <div
         v-for="(button, index) in buttons"

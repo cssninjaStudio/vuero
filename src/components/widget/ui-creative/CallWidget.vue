@@ -14,11 +14,15 @@ const props = defineProps({
     type: String,
     required: true,
   },
+  straight: {
+    type: Boolean,
+    default: false,
+  },
 })
 </script>
 
 <template>
-  <div class="widget call-widget">
+  <div class="widget call-widget" :class="[straight && 'is-straight']">
     <div class="img-container">
       <img class="main" :src="props.picture" alt="" />
       <img

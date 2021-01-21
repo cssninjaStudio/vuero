@@ -1,49 +1,83 @@
+<script setup lang="ts">
+import {
+  spark1,
+  spark2,
+  spark3,
+  spark4,
+} from '/@src/composition/state/charts/apexcharts/examples/salesSparksChart'
+import { revenueOptions } from '/@src/composition/state/charts/apexcharts/examples/revenueAreaChart'
+</script>
+
 <template>
   <!--Stat Widgets-->
   <div class="columns is-multiline">
     <!--Spark Tile Widgets-->
     <div class="column is-3">
-      <div class="stat-widget spark-tile-widget is-straight">
-        <div id="widget-spark-1"></div>
-      </div>
+      <SparkStatWidget straight>
+        <apexchart
+          id="widget-spark1"
+          :height="spark1.chart.height"
+          :type="spark1.chart.type"
+          :series="spark1.series"
+          :options="spark1"
+        ></apexchart>
+      </SparkStatWidget>
     </div>
 
     <div class="column is-3">
-      <div class="stat-widget spark-tile-widget is-straight">
-        <div id="widget-spark-2"></div>
-      </div>
+      <SparkStatWidget straight>
+        <apexchart
+          id="widget-spark2"
+          :height="spark2.chart.height"
+          :type="spark2.chart.type"
+          :series="spark2.series"
+          :options="spark2"
+        ></apexchart>
+      </SparkStatWidget>
     </div>
 
     <div class="column is-3">
-      <div class="stat-widget spark-tile-widget is-straight">
-        <div id="widget-spark-3"></div>
-      </div>
+      <SparkStatWidget straight>
+        <apexchart
+          id="widget-spark3"
+          :height="spark3.chart.height"
+          :type="spark3.chart.type"
+          :series="spark3.series"
+          :options="spark3"
+        ></apexchart>
+      </SparkStatWidget>
     </div>
 
     <div class="column is-3">
-      <div class="stat-widget spark-tile-widget is-straight">
-        <div id="widget-spark-4"></div>
-      </div>
+      <SparkStatWidget straight>
+        <apexchart
+          id="widget-spark4"
+          :height="spark4.chart.height"
+          :type="spark4.chart.type"
+          :series="spark4.series"
+          :options="spark4"
+        ></apexchart>
+      </SparkStatWidget>
     </div>
 
     <!--Line Stats Widget-->
     <div class="column is-6">
-      <div class="stat-widget line-stats-widget is-straight">
-        <div class="widget-head">
-          <h3 class="dark-inverted">Revenue</h3>
-        </div>
-        <div class="line-stats">
-          <div class="line-stat">
-            <span>This Month</span>
-            <span class="current">$75,648.43</span>
-          </div>
-          <div class="line-stat">
-            <span>Last Month</span>
-            <span class="dark-inverted">$91,512.18</span>
-          </div>
-        </div>
-        <div id="line-stats-widget-chart"></div>
-      </div>
+      <LineStatWidget
+        title="Revenue"
+        current-label="This Month"
+        current-value="$75,648.43"
+        previous-label="Last Month"
+        previous-value="$91,512.18"
+        straight
+      >
+        <apexchart
+          id="line-stats-widget-chart"
+          :height="revenueOptions.chart.height"
+          :type="revenueOptions.chart.type"
+          :series="revenueOptions.series"
+          :options="revenueOptions"
+        ></apexchart>
+      </LineStatWidget>
     </div>
 
     <!--Line Stats Widget-->
