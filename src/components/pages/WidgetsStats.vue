@@ -19,6 +19,7 @@ import {
   widgetGaugeGroup2Options,
   widgetGaugeGroup3Options,
 } from '/@src/composition/state/charts/apexcharts/examples/groupedRadialCharts'
+import { memberList } from '/@src/composition/state/widgets/table/memberList'
 </script>
 
 <template>
@@ -216,60 +217,29 @@ import {
 
     <!--Followers Stat Widget-->
     <div class="column is-4">
-      <div class="stat-widget followers-stat-widget-v1 is-straight">
-        <div class="follow-block">
-          <div class="follow-icon">
-            <i class="fab fa-twitter"></i>
-          </div>
-          <div class="follow-count">
-            <span class="dark-inverted">138K Followers</span>
-            <span>Based on your latest stats</span>
-          </div>
-          <a href="#" class="go-icon">
-            <i class="iconify" data-icon="feather:chevron-right"></i>
-          </a>
-        </div>
-      </div>
+      <SocialStatWidget icon="fab fa-twitter" value="138K" straight />
     </div>
 
     <!--Followers Stat Widget-->
     <div class="column is-4">
-      <div class="stat-widget followers-stat-widget-v1 is-straight">
-        <div class="follow-block">
-          <div class="follow-icon is-squared">
-            <i class="fab fa-twitter"></i>
-          </div>
-          <div class="follow-count">
-            <span class="dark-inverted">138K Followers</span>
-            <span>Based on your latest stats</span>
-          </div>
-          <a href="#" class="go-icon is-squared">
-            <i class="iconify" data-icon="feather:chevron-right"></i>
-          </a>
-        </div>
-      </div>
+      <SocialStatWidget icon="fab fa-twitter" value="138K" straight squared />
     </div>
 
     <!--Followers Stat Widget-->
     <div class="column is-4">
-      <div class="stat-widget followers-stat-widget-v1 is-straight">
-        <div class="follow-block">
-          <div class="follow-icon is-primary">
-            <i class="fab fa-twitter"></i>
-          </div>
-          <div class="follow-count">
-            <span class="dark-inverted">138K Followers</span>
-            <span>Based on your latest stats</span>
-          </div>
-          <a href="#" class="go-icon">
-            <i class="iconify" data-icon="feather:chevron-right"></i>
-          </a>
-        </div>
-      </div>
+      <SocialStatWidget icon="fab fa-twitter" value="138K" straight colored />
     </div>
 
     <!--Table Widget-->
     <div class="column is-12">
+      <TableWidget
+        title="Members"
+        action-label="Add Member"
+        :data="memberList"
+        straight
+      />
+    </div>
+    <div class="column is-12 is-hidden">
       <div class="stat-widget table-widget-v1 is-straight">
         <div class="widget-head">
           <h3 class="dark-inverted">Members</h3>

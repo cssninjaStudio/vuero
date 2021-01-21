@@ -3,7 +3,7 @@ import { themeColors } from '/@src/composition/state/themeColors'
 export const flexRadialChartCircleOptions = {
   series: [65],
   chart: {
-    height: 130,
+    height: 150,
     type: 'radialBar',
     offsetX: -10,
     toolbar: {

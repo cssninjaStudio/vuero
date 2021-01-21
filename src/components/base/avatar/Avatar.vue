@@ -50,7 +50,7 @@ const props = defineProps({
       alt=""
       @error="$event.target.src = 'https://via.placeholder.com/150x150'"
     />
-    <span v-else class="avatar is-fake">
+    <span v-else class="avatar is-fake" :class="[squared && 'is-squared']">
       <span>{{ props.initials }}</span>
     </span>
     <img

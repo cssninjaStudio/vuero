@@ -3,7 +3,7 @@ import { themeColors } from '/@src/composition/state/themeColors'
 export const flexRadialChartStripesOptions = {
   series: [65],
   chart: {
-    height: 160,
+    height: 180,
     type: 'radialBar',
     offsetX: -15,
     offsetY: -10,

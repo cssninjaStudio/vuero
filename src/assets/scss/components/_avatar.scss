@@ -180,11 +180,10 @@
 
       span {
         position: relative;
-
-        //top: -1px;
         display: block;
         font-size: 1rem;
         font-weight: 500;
+        text-transform: uppercase;
         color: $muted-grey;
       }
     }
