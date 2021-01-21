@@ -8,8 +8,8 @@ const props = defineProps({
   },
   color: {
     type: String,
-    default: ''
-  }
+    default: '',
+  },
 })
 
 const emit = defineEmit(['update:checked'])

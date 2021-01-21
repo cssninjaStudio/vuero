@@ -2,19 +2,19 @@
 import { defineProps } from 'vue'
 
 const props = defineProps({
-    avatars: {
-        type: Array,
-        required: true,
-        default: []
-    },
-    limit: {
-        type: Number,
-        default: 5
-    },
-    size: {
-        type: String,
-        default: ''
-    }
+  avatars: {
+    type: Array,
+    required: true,
+    default: [],
+  },
+  limit: {
+    type: Number,
+    default: 5,
+  },
+  size: {
+    type: String,
+    default: '',
+  },
 })
 </script>
 

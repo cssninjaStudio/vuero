@@ -30,16 +30,10 @@ const props = defineProps({
   spaced: {
     type: Boolean,
     default: false,
-  }
+  },
 })
 
-const {
-  dropdownElement,
-  open,
-  close,
-  toggle,
-  isOpen,
-} = useDropdown()
+const { dropdownElement, open, close, toggle, isOpen } = useDropdown()
 </script>
 
 <template inherit-attrs="false">

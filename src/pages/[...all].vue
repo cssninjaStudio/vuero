@@ -17,8 +17,8 @@ useHead({
     {
       name: 'robots',
       content: 'noindex',
-    }
-  ]
+    },
+  ],
 })
 </script>
 

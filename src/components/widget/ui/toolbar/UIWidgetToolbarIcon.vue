@@ -5,11 +5,11 @@ const props = defineProps({
   title: {
     type: String,
     required: true,
-    default: 'UI Widget'
+    default: 'UI Widget',
   },
   icon: {
     type: String,
-    default: 'feather:bell'
+    default: 'feather:bell',
   },
 })
 </script>

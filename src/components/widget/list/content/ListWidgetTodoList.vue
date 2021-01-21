@@ -2,15 +2,15 @@
 import { defineProps } from 'vue'
 
 const props = defineProps({
-    todos: {
-        type: Array,
-        required: true,
-        default: []
-    },
-    color: {
-        type: String,
-        default: ''
-    }
+  todos: {
+    type: Array,
+    required: true,
+    default: [],
+  },
+  color: {
+    type: String,
+    default: '',
+  },
 })
 </script>
 

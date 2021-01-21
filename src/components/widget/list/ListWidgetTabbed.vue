@@ -5,26 +5,26 @@ const props = defineProps({
   title: {
     type: String,
     required: true,
-    default: 'List Widget'
+    default: 'List Widget',
   },
   labels: {
     type: Array,
-    default: ['Recent', 'Popular']
+    default: ['Recent', 'Popular'],
   },
   straight: {
-      type: Boolean,
-      default: false
+    type: Boolean,
+    default: false,
   },
   toggled: {
-      type: Boolean,
-      default: false
-  }
+    type: Boolean,
+    default: false,
+  },
 })
 
 let state = ref(props.toggled)
 
 const toggleTabs = () => {
-    state.value = !state.value
+  state.value = !state.value
 }
 </script>
 

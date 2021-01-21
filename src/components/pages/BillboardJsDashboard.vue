@@ -1,5 +1,8 @@
 <script setup lang="ts">
-import { genericLineOptions, onGenericLineReady } from '/@src/composition/state/charts/billboardjs/demo/genericLine'
+import {
+  genericLineOptions,
+  onGenericLineReady,
+} from '/@src/composition/state/charts/billboardjs/demo/genericLine'
 </script>
 
 <template>

@@ -1,6 +1,14 @@
 <script setup lang="ts">
-import { todoList1, todoList2, todoList3, todoList4 } from '/@src/composition/state/widgets/list/todoList'
-import { fileList1, fileList2 } from '/@src/composition/state/widgets/list/fileList'
+import {
+  todoList1,
+  todoList2,
+  todoList3,
+  todoList4,
+} from '/@src/composition/state/widgets/list/todoList'
+import {
+  fileList1,
+  fileList2,
+} from '/@src/composition/state/widgets/list/fileList'
 import { userList } from '/@src/composition/state/widgets/list/userList'
 import { topicList } from '/@src/composition/state/widgets/list/topicList'
 import { timeline } from '/@src/composition/state/widgets/list/timeline'

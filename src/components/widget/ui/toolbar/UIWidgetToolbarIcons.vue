@@ -1,16 +1,16 @@
 <script setup lang="ts">
-    import { defineProps } from 'vue'
+import { defineProps } from 'vue'
 
-    const props = defineProps({
-        tabs: {
-            type: Array,
-            required: true
-        },
-        currentTab: {
-            type: Number,
-            default: 0
-        }
-    })
+const props = defineProps({
+  tabs: {
+    type: Array,
+    required: true,
+  },
+  currentTab: {
+    type: Number,
+    default: 0,
+  },
+})
 </script>
 
 <template>

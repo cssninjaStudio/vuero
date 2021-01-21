@@ -2,15 +2,15 @@
 import { defineProps } from 'vue'
 
 const props = defineProps({
-    users: {
-        type: Array,
-        required: true,
-        default: []
-    },
-    squared: {
-        type: Boolean,
-        default: false
-    }
+  users: {
+    type: Array,
+    required: true,
+    default: [],
+  },
+  squared: {
+    type: Boolean,
+    default: false,
+  },
 })
 </script>
 

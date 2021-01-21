@@ -2,15 +2,15 @@
 import { defineProps } from 'vue'
 
 const props = defineProps({
-    topics: {
-        type: Array,
-        required: true,
-        default: []
-    },
-    rounded: {
-        type: Boolean,
-        default: false
-    }
+  topics: {
+    type: Array,
+    required: true,
+    default: [],
+  },
+  rounded: {
+    type: Boolean,
+    default: false,
+  },
 })
 </script>
 

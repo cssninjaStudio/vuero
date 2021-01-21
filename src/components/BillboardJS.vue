@@ -9,7 +9,7 @@ const props = defineProps({
   },
 })
 const emit = defineEmit(['ready'])
-const element = ref<HTMLElement | null>(null);
+const element = ref<HTMLElement | null>(null)
 
 onMounted(() => {
   if (element.value) {
@@ -17,19 +17,18 @@ onMounted(() => {
       const billboard = bb.generate({
         ...props.options,
         bindto: element.value,
-      });
+      })
       emit('ready', billboard)
     } catch (error) {
       console.log(error)
     }
   }
-});
+})
 </script>
 
 <template>
   <div ref="element"></div>
 </template>
-
 
 <style lang="scss">
 @import 'billboard.js/src/scss/billboard.scss';

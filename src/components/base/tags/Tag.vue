@@ -2,35 +2,35 @@
 import { defineProps } from 'vue'
 
 const props = defineProps({
-    label: {
-        type: String,
-        required: true,
-        default: 'Label'
-    },
-     color: {
-        type: String,
-        default: ''
-    },
-    light: {
-        type: Boolean,
-        default: false
-    },
-    rounded: {
-        type: Boolean,
-        default: false
-    },
-    curved: {
-        type: Boolean,
-        default: false
-    },
-    outlined: {
-        type: Boolean,
-        default: false
-    },
-    elevated: {
-        type: Boolean,
-        default: false
-    },
+  label: {
+    type: String,
+    required: true,
+    default: 'Label',
+  },
+  color: {
+    type: String,
+    default: '',
+  },
+  light: {
+    type: Boolean,
+    default: false,
+  },
+  rounded: {
+    type: Boolean,
+    default: false,
+  },
+  curved: {
+    type: Boolean,
+    default: false,
+  },
+  outlined: {
+    type: Boolean,
+    default: false,
+  },
+  elevated: {
+    type: Boolean,
+    default: false,
+  },
 })
 </script>
 

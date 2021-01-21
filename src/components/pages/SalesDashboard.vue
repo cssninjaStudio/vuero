@@ -1,28 +1,48 @@
 <script setup lang="ts">
 import { onMounted, reactive, ref } from 'vue'
-import { spark1, spark2, spark3, spark4 } from '/@src/composition/state/charts/apexcharts/examples/salesSparksChart'  
-import { revenueOptions } from '/@src/composition/state/charts/apexcharts/examples/revenueAreaChart'  
-import { salesRevenuesRadialOptions } from '/@src/composition/state/charts/apexcharts/examples/salesRevenueRadialChart'  
-import { radialGroup1Options, radialGroup2Options, radialGroup3Options } from '/@src/composition/state/charts/apexcharts/examples/salesRadialGroupChart'
-import { barData, barData2, salesBarOptions } from '/@src/composition/state/charts/apexcharts/examples/salesBarChart'  
-import { personalScoreGaugeOptions, onPersonalScoreGaugeReady } from '/@src/composition/state/charts/billboardjs/examples/personalScoreGauge'
+import {
+  spark1,
+  spark2,
+  spark3,
+  spark4,
+} from '/@src/composition/state/charts/apexcharts/examples/salesSparksChart'
+import { revenueOptions } from '/@src/composition/state/charts/apexcharts/examples/revenueAreaChart'
+import { salesRevenuesRadialOptions } from '/@src/composition/state/charts/apexcharts/examples/salesRevenueRadialChart'
+import {
+  radialGroup1Options,
+  radialGroup2Options,
+  radialGroup3Options,
+} from '/@src/composition/state/charts/apexcharts/examples/salesRadialGroupChart'
+import {
+  barData,
+  barData2,
+  salesBarOptions,
+} from '/@src/composition/state/charts/apexcharts/examples/salesBarChart'
+import {
+  personalScoreGaugeOptions,
+  onPersonalScoreGaugeReady,
+} from '/@src/composition/state/charts/billboardjs/examples/personalScoreGauge'
 
 onMounted(async () => {
   setTimeout(() => {
-    salesBarOptions.series = [{
-      name: "Orders",
-      data: barData,
-    }]
+    salesBarOptions.series = [
+      {
+        name: 'Orders',
+        data: barData,
+      },
+    ]
   }, 1000)
 
   setTimeout(() => {
-    salesBarOptions.series = [...salesBarOptions.series, {
-      name: "Abandonned",
-      data: barData2,
-    }]
+    salesBarOptions.series = [
+      ...salesBarOptions.series,
+      {
+        name: 'Abandonned',
+        data: barData2,
+      },
+    ]
   }, 2500)
 })
-
 </script>
 
 <template>

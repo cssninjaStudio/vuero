@@ -2,11 +2,11 @@
 import { defineProps } from 'vue'
 
 const props = defineProps({
-    files: {
-        type: Array,
-        required: true,
-        default: []
-    },
+  files: {
+    type: Array,
+    required: true,
+    default: [],
+  },
 })
 </script>
 

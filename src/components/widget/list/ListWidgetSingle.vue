@@ -5,12 +5,12 @@ const props = defineProps({
   title: {
     type: String,
     required: true,
-    default: 'List Widget'
+    default: 'List Widget',
   },
   straight: {
-      type: Boolean,
-      default: false
-  }
+    type: Boolean,
+    default: false,
+  },
 })
 </script>
 

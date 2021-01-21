@@ -1,12 +1,15 @@
 <script setup lang="ts">
-  import { personalScoreGaugeOptions, onPersonalScoreGaugeReady } from '/@src/composition/state/charts/billboardjs/examples/personalScoreGauge'
-  import { followersList } from '/@src/composition/state/widgets/UI/followers'
-  import { tagList1, tagList2 } from '/@src/composition/state/widgets/UI/tagList'
-  import { tabs } from '/@src/composition/state/widgets/UI/tabList'
-  import { days } from '/@src/composition/state/widgets/UI/dayList'
-  import { iconList } from '/@src/composition/state/widgets/UI/menuList'
-  import { notifications } from '/@src/composition/state/widgets/UI/notificationList'
-  import { trendWidgetChartOptions } from '/@src/composition/state/charts/apexcharts/examples/trendWidgetChart'
+import {
+  personalScoreGaugeOptions,
+  onPersonalScoreGaugeReady,
+} from '/@src/composition/state/charts/billboardjs/examples/personalScoreGauge'
+import { followersList } from '/@src/composition/state/widgets/UI/followers'
+import { tagList1, tagList2 } from '/@src/composition/state/widgets/UI/tagList'
+import { tabs } from '/@src/composition/state/widgets/UI/tabList'
+import { days } from '/@src/composition/state/widgets/UI/dayList'
+import { iconList } from '/@src/composition/state/widgets/UI/menuList'
+import { notifications } from '/@src/composition/state/widgets/UI/notificationList'
+import { trendWidgetChartOptions } from '/@src/composition/state/charts/apexcharts/examples/trendWidgetChart'
 </script>
 
 <template>

@@ -3,8 +3,8 @@ import { defineProps, ref } from 'vue'
 
 const props = defineProps({
   frontmatter: {
-    type: Object
-  }
+    type: Object,
+  },
 })
 
 const displayCode = ref(false)
@@ -47,7 +47,6 @@ const displayCode = ref(false)
     </div>
   </div>
 </template>
-
 
 <style lang="scss" scoped>
 @import '../assets/scss/abstracts/_variables.scss';

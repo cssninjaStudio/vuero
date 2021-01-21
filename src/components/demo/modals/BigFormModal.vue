@@ -7,10 +7,7 @@ const props = defineProps({
     default: false,
   },
 })
-const emit = defineEmit([
-  'close'
-])
-
+const emit = defineEmit(['close'])
 </script>
 
 <template>
