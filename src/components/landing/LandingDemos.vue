@@ -2476,7 +2476,7 @@
                   <span>Personal 1</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-dashboards-personal-1' }"
+                  <RouterLink :to="{ name: 'webapp-dashboards' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -2572,7 +2572,7 @@
                   <span>Finance 1</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-dashboards-finance-1' }"
+                  <RouterLink :to="{ name: 'webapp-dashboards-analytics' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -2604,7 +2604,7 @@
                   <span>Finance 2</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-dashboards-finance-2' }"
+                  <RouterLink :to="{ name: 'webapp-dashboards-stocks' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -2636,7 +2636,7 @@
                   <span>Finance 3</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-dashboards-finance-3' }"
+                  <RouterLink :to="{ name: 'webapp-dashboards-sales' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -2764,7 +2764,7 @@
                   <span>Business 1</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-dashboards-business-1' }"
+                  <RouterLink :to="{ name: 'webapp-dashboards-flights' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -2796,7 +2796,7 @@
                   <span>Business 2</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-dashboards-business-2' }"
+                  <RouterLink :to="{ name: 'webapp-dashboards-company' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -2829,7 +2829,8 @@
                   <span>Business 3</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-dashboards-business-3' }"
+                  <RouterLink
+                    :to="{ name: 'webapp-dashboards-human-ressources' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -2861,7 +2862,7 @@
                   <span>Lifestyle 1</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-dashboards-lifestyle-1' }"
+                  <RouterLink :to="{ name: 'webapp-dashboards-influencer' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -2893,7 +2894,7 @@
                   <span>Lifestyle 2</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-dashboards-lifestyle-2' }"
+                  <RouterLink :to="{ name: 'webapp-dashboards-hobbies' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -2925,7 +2926,7 @@
                   <span>Lifestyle 3</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-dashboards-lifestyle-3' }"
+                  <RouterLink :to="{ name: 'webapp-dashboards-health' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -2958,7 +2959,7 @@
                   <span>Lifestyle 4</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-dashboards-lifestyle-4' }"
+                  <RouterLink :to="{ name: 'webapp-dashboards-writer' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -3022,7 +3023,7 @@
                   <span>Food Delivery</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-dashboards-apps-1' }"
+                  <RouterLink :to="{ name: 'webapp-dashboards-food-delivery' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -3054,7 +3055,7 @@
                   <span>User Profile</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-profile-view' }"
+                  <RouterLink :to="{ name: 'webapp-layouts-profile-view' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -3086,7 +3087,7 @@
                   <span>List View 1</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-list-view-1' }"
+                  <RouterLink :to="{ name: 'webapp-layouts-list-view-1' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -3118,7 +3119,7 @@
                   <span>List View 2</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-list-view-2' }"
+                  <RouterLink :to="{ name: 'webapp-layouts-list-view-2' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -3150,7 +3151,7 @@
                   <span>List View 3</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-list-view-3' }"
+                  <RouterLink :to="{ name: 'webapp-layouts-list-view-3' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -3182,7 +3183,7 @@
                   <span>List View 4</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-list-view-4' }"
+                  <RouterLink :to="{ name: 'webapp-layouts-list-view-4' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -3214,7 +3215,7 @@
                   <span>Flex List 1</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-list-flex-1' }"
+                  <RouterLink :to="{ name: 'webapp-layouts-list-flex-1' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -3246,7 +3247,7 @@
                   <span>Flex List 2</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-list-flex-2' }"
+                  <RouterLink :to="{ name: 'webapp-layouts-list-flex-2' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -3278,7 +3279,7 @@
                   <span>Flex List 3</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-list-flex-3' }"
+                  <RouterLink :to="{ name: 'webapp-layouts-list-flex-3' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -3310,7 +3311,7 @@
                   <span>Datatable 1</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-list-datatable-1' }"
+                  <RouterLink :to="{ name: 'webapp-layouts-list-datatable-1' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -3342,7 +3343,7 @@
                   <span>Datatable 2</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-list-datatable-2' }"
+                  <RouterLink :to="{ name: 'webapp-layouts-list-datatable-2' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -3374,7 +3375,7 @@
                   <span>Datatable 3</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-list-datatable-3' }"
+                  <RouterLink :to="{ name: 'webapp-layouts-list-datatable-3' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -3406,7 +3407,7 @@
                   <span>Datatable 4</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-list-datatable-4' }"
+                  <RouterLink :to="{ name: 'webapp-layouts-list-datatable-4' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -3438,7 +3439,7 @@
                   <span>Card Grid 1</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-grid-cards-1' }"
+                  <RouterLink :to="{ name: 'webapp-layouts-grid-cards-1' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -3470,7 +3471,7 @@
                   <span>Card Grid 2</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-grid-cards-2' }"
+                  <RouterLink :to="{ name: 'webapp-layouts-grid-cards-2' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -3502,7 +3503,7 @@
                   <span>Card Grid 3</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-grid-cards-3' }"
+                  <RouterLink :to="{ name: 'webapp-layouts-grid-cards-3' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -3534,7 +3535,7 @@
                   <span>Card Grid 4</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-grid-cards-4' }"
+                  <RouterLink :to="{ name: 'webapp-layouts-grid-cards-4' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -3566,7 +3567,7 @@
                   <span>Tile Grid 1</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-grid-tiles-1' }"
+                  <RouterLink :to="{ name: 'webapp-layouts-grid-tiles-1' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -3598,7 +3599,7 @@
                   <span>Tile Grid 2</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-grid-tiles-2' }"
+                  <RouterLink :to="{ name: 'webapp-layouts-grid-tiles-2' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -3630,7 +3631,7 @@
                   <span>Tile Grid 3</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-grid-tiles-3' }"
+                  <RouterLink :to="{ name: 'webapp-layouts-grid-tiles-3' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -3662,7 +3663,7 @@
                   <span>User Grid 1</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-grid-users-1' }"
+                  <RouterLink :to="{ name: 'webapp-layouts-grid-users-1' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -3694,7 +3695,7 @@
                   <span>User Grid 2</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-grid-users-2' }"
+                  <RouterLink :to="{ name: 'webapp-layouts-grid-users-2' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -3726,7 +3727,7 @@
                   <span>User Grid 3</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-grid-users-3' }"
+                  <RouterLink :to="{ name: 'webapp-layouts-grid-users-3' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -3758,7 +3759,7 @@
                   <span>User Grid 4</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-grid-users-4' }"
+                  <RouterLink :to="{ name: 'webapp-layouts-grid-users-4' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -3822,7 +3823,7 @@
                   <span>Edit Profile 1</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-profile-edit-1' }"
+                  <RouterLink :to="{ name: 'webapp-layouts-profile-edit-1' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -3854,7 +3855,7 @@
                   <span>Edit Profile 2</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-profile-edit-2' }"
+                  <RouterLink :to="{ name: 'webapp-layouts-profile-edit-2' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -3886,7 +3887,7 @@
                   <span>Edit Profile 3</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-profile-edit-3' }"
+                  <RouterLink :to="{ name: 'webapp-layouts-profile-edit-3' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -3918,7 +3919,7 @@
                   <span>Edit Profile 4</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-profile-edit-4' }"
+                  <RouterLink :to="{ name: 'webapp-layouts-profile-edit-4' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -3950,7 +3951,8 @@
                   <span>Notifications</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-profile-notifications' }"
+                  <RouterLink
+                    :to="{ name: 'webapp-layouts-profile-notifications' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -3982,7 +3984,7 @@
                   <span>Settings</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-profile-settings' }"
+                  <RouterLink :to="{ name: 'webapp-layouts-profile-settings' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -4014,7 +4016,7 @@
                   <span>Projects 1</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-projects-projects' }"
+                  <RouterLink :to="{ name: 'webapp-layouts-projects-projects' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -4046,7 +4048,8 @@
                   <span>Projects 2</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-projects-projects-2' }"
+                  <RouterLink
+                    :to="{ name: 'webapp-layouts-projects-projects-2' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -4078,7 +4081,8 @@
                   <span>Projects 3</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-projects-projects-3' }"
+                  <RouterLink
+                    :to="{ name: 'webapp-layouts-projects-projects-3' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -4110,7 +4114,7 @@
                   <span>Project Details</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-projects-project' }"
+                  <RouterLink :to="{ name: 'webapp-layouts-projects-project' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -4142,7 +4146,7 @@
                   <span>Kanban Board</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-kanban-board' }"
+                  <RouterLink :to="{ name: 'webapp-layouts-kanban-board' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -4174,7 +4178,7 @@
                   <span>Search Results</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-search-results' }"
+                  <RouterLink :to="{ name: 'webapp-layouts-search-results' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -4206,7 +4210,7 @@
                   <span>Empty Search</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-search-empty' }"
+                  <RouterLink :to="{ name: 'webapp-layouts-search-empty' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -4238,7 +4242,7 @@
                   <span>SaaS Billing</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-saas-billing' }"
+                  <RouterLink :to="{ name: 'webapp-layouts-saas-billing' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -4302,7 +4306,7 @@
                   <span>Action Page 1</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-action-page-1' }"
+                  <RouterLink :to="{ name: 'webapp-layouts-action-page-1' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -4334,7 +4338,7 @@
                   <span>Action Page 2</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-action-page-2' }"
+                  <RouterLink :to="{ name: 'webapp-layouts-action-page-2' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -4366,7 +4370,8 @@
                   <span>Confirm Account</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-utility-account-confirm' }"
+                  <RouterLink
+                    :to="{ name: 'webapp-layouts-utility-account-confirm' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -4398,7 +4403,7 @@
                   <span>Promotion</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-utility-promotion' }"
+                  <RouterLink :to="{ name: 'webapp-layouts-utility-promotion' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -4430,7 +4435,7 @@
                   <span>Invoice</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-utility-invoice' }"
+                  <RouterLink :to="{ name: 'webapp-layouts-utility-invoice' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -4591,7 +4596,7 @@
                   <span>Layout 1</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-form-layouts-1' }"
+                  <RouterLink :to="{ name: 'webapp-layouts-form-layouts-1' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -4623,7 +4628,7 @@
                   <span>Layout 2</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-form-layouts-2' }"
+                  <RouterLink :to="{ name: 'webapp-layouts-form-layouts-2' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -4655,7 +4660,7 @@
                   <span>Layout 3</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-form-layouts-3' }"
+                  <RouterLink :to="{ name: 'webapp-layouts-form-layouts-3' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -4687,7 +4692,7 @@
                   <span>Layout 4</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-form-layouts-4' }"
+                  <RouterLink :to="{ name: 'webapp-layouts-form-layouts-4' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -4719,7 +4724,7 @@
                   <span>Onboarding 1</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-onboarding-page-1' }"
+                  <RouterLink :to="{ name: 'webapp-layouts-onboarding-page-1' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -4751,7 +4756,7 @@
                   <span>Onboarding 2</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-onboarding-page-2' }"
+                  <RouterLink :to="{ name: 'webapp-layouts-onboarding-page-2' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -4783,7 +4788,7 @@
                   <span>Onboarding 3</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-onboarding-page-3' }"
+                  <RouterLink :to="{ name: 'webapp-layouts-onboarding-page-3' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -4815,7 +4820,7 @@
                   <span>Onboarding 4</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-onboarding-page-4' }"
+                  <RouterLink :to="{ name: 'webapp-layouts-onboarding-page-4' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -4847,7 +4852,7 @@
                   <span>Onboarding 5</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-onboarding-page-5' }"
+                  <RouterLink :to="{ name: 'webapp-layouts-onboarding-page-5' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -5675,7 +5680,7 @@
                   <span>Standard Navbar</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-blank-page-1' }"
+                  <RouterLink :to="{ name: 'webapp-layouts-blank-page-1' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -5706,7 +5711,7 @@
                   <span>Fading Navbar</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-blank-page-2' }"
+                  <RouterLink :to="{ name: 'webapp-layouts-blank-page-2' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -5737,7 +5742,7 @@
                   <span>Colored Navbar</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-blank-page-3' }"
+                  <RouterLink :to="{ name: 'webapp-layouts-blank-page-3' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -5768,7 +5773,7 @@
                   <span>Dropdown Navbar</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-blank-page-4' }"
+                  <RouterLink :to="{ name: 'webapp-layouts-blank-page-4' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -5799,7 +5804,7 @@
                   <span>Colored Dropdown Navbar</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-blank-page-5' }"
+                  <RouterLink :to="{ name: 'webapp-layouts-blank-page-5' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>

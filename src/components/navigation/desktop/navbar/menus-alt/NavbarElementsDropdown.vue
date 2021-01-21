@@ -250,7 +250,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'webapp-list-datatable-4' }"
+                    :to="{ name: 'webapp-layouts-list-datatable-4' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -261,7 +261,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'webapp-list-datatable-4' }"
+                    :to="{ name: 'webapp-layouts-list-datatable-4' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
