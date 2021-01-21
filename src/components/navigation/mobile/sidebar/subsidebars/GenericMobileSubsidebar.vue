@@ -422,7 +422,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'webapp-blank-page-1' }"
+                :to="{ name: 'webapp-layouts-blank-page-1' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-layout-alt-1"></i>
@@ -431,7 +431,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'webapp-blank-page-2' }"
+                :to="{ name: 'webapp-layouts-blank-page-2' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-layout-alt-1"></i>
@@ -440,7 +440,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'webapp-blank-page-3' }"
+                :to="{ name: 'webapp-layouts-blank-page-3' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-layout-alt-1"></i>
@@ -449,7 +449,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'webapp-blank-page-4' }"
+                :to="{ name: 'webapp-layouts-blank-page-4' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-layout-alt-1"></i>
@@ -458,7 +458,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'webapp-blank-page-5' }"
+                :to="{ name: 'webapp-layouts-blank-page-5' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-layout-alt-1"></i>

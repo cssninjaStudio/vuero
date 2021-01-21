@@ -72,7 +72,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
 
                 <div class="column-content" data-simplebar>
                   <RouterLink
-                    :to="{ name: 'webapp-dashboards-personal-1' }"
+                    :to="{ name: 'webapp-dashboards' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -105,7 +105,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'webapp-dashboards-lifestyle-1' }"
+                    :to="{ name: 'webapp-dashboards-influencer' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -116,7 +116,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'webapp-dashboards-lifestyle-2' }"
+                    :to="{ name: 'webapp-dashboards-hobbies' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -127,7 +127,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'webapp-dashboards-lifestyle-3' }"
+                    :to="{ name: 'webapp-dashboards-health' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -138,7 +138,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'webapp-dashboards-lifestyle-4' }"
+                    :to="{ name: 'webapp-dashboards-writer' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -161,7 +161,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
 
                 <div class="column-content" data-simplebar>
                   <RouterLink
-                    :to="{ name: 'webapp-dashboards-finance-1' }"
+                    :to="{ name: 'webapp-dashboards-analytics' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -172,7 +172,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'webapp-dashboards-finance-2' }"
+                    :to="{ name: 'webapp-dashboards-stocks' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -183,7 +183,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'webapp-dashboards-finance-3' }"
+                    :to="{ name: 'webapp-dashboards-sales' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -227,7 +227,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'webapp-dashboards-business-1' }"
+                    :to="{ name: 'webapp-dashboards-flights' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -238,7 +238,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'webapp-dashboards-business-2' }"
+                    :to="{ name: 'webapp-dashboards-company' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -249,7 +249,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'webapp-dashboards-business-3' }"
+                    :to="{ name: 'webapp-dashboards-human-ressources' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -283,7 +283,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'webapp-dashboards-apps-1' }"
+                    :to="{ name: 'webapp-dashboards-food-delivery' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -389,7 +389,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'webapp-blank-page-1' }"
+                    :to="{ name: 'webapp-layouts-blank-page-1' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -400,7 +400,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'webapp-blank-page-2' }"
+                    :to="{ name: 'webapp-layouts-blank-page-2' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -411,7 +411,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'webapp-blank-page-3' }"
+                    :to="{ name: 'webapp-layouts-blank-page-3' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -422,7 +422,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'webapp-blank-page-4' }"
+                    :to="{ name: 'webapp-layouts-blank-page-4' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -536,7 +536,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'webapp-form-layouts-1' }"
+                    :to="{ name: 'webapp-layouts-form-layouts-1' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -547,7 +547,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'webapp-form-layouts-2' }"
+                    :to="{ name: 'webapp-layouts-form-layouts-2' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -558,7 +558,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'webapp-form-layouts-3' }"
+                    :to="{ name: 'webapp-layouts-form-layouts-3' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -569,7 +569,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'webapp-form-layouts-4' }"
+                    :to="{ name: 'webapp-layouts-form-layouts-4' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">

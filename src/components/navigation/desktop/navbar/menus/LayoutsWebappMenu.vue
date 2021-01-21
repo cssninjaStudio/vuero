@@ -43,28 +43,28 @@ const activeTab = ref<'list' | 'grid' | 'app' | 'utility'>('list')
                 <h4 class="column-heading">Lists</h4>
                 <ul>
                   <li>
-                    <RouterLink :to="{ name: 'webapp-list-view-1' }">
+                    <RouterLink :to="{ name: 'webapp-layouts-list-view-1' }">
                       <i class="lnil lnil-list-alt"></i>
                       <span>List View V1</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'webapp-list-view-2' }">
+                    <RouterLink :to="{ name: 'webapp-layouts-list-view-2' }">
                       <i class="lnil lnil-list-alt"></i>
                       <span>List View V2</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'webapp-list-view-3' }">
+                    <RouterLink :to="{ name: 'webapp-layouts-list-view-3' }">
                       <i class="lnil lnil-list-alt"></i>
                       <span>List View V3</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'webapp-list-view-4' }">
+                    <RouterLink :to="{ name: 'webapp-layouts-list-view-4' }">
                       <i class="lnil lnil-list-alt"></i>
                       <span>List View V4</span>
                       <i class="iconify" data-icon="feather:circle"></i>
@@ -76,21 +76,21 @@ const activeTab = ref<'list' | 'grid' | 'app' | 'utility'>('list')
                 <h4 class="column-heading">Flex Lists</h4>
                 <ul>
                   <li>
-                    <RouterLink :to="{ name: 'webapp-list-flex-1' }">
+                    <RouterLink :to="{ name: 'webapp-layouts-list-flex-1' }">
                       <i class="lnil lnil-list-alt-1"></i>
                       <span>Flex List V1</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'webapp-list-flex-2' }">
+                    <RouterLink :to="{ name: 'webapp-layouts-list-flex-2' }">
                       <i class="lnil lnil-list-alt-1"></i>
                       <span>Flex List V2</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'webapp-list-flex-3' }">
+                    <RouterLink :to="{ name: 'webapp-layouts-list-flex-3' }">
                       <i class="lnil lnil-list-alt-1"></i>
                       <span>Flex List V3</span>
                       <i class="iconify" data-icon="feather:circle"></i>
@@ -102,28 +102,36 @@ const activeTab = ref<'list' | 'grid' | 'app' | 'utility'>('list')
                 <h4 class="column-heading">Datatables</h4>
                 <ul>
                   <li>
-                    <RouterLink :to="{ name: 'webapp-list-datatable-1' }">
+                    <RouterLink
+                      :to="{ name: 'webapp-layouts-list-datatable-1' }"
+                    >
                       <i class="lnil lnil-layout-alt"></i>
                       <span>Datatable V1</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'webapp-list-datatable-2' }">
+                    <RouterLink
+                      :to="{ name: 'webapp-layouts-list-datatable-2' }"
+                    >
                       <i class="lnil lnil-layout-alt"></i>
                       <span>Datatable V2</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'webapp-list-datatable-3' }">
+                    <RouterLink
+                      :to="{ name: 'webapp-layouts-list-datatable-3' }"
+                    >
                       <i class="lnil lnil-layout-alt"></i>
                       <span>Datatable V3</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'webapp-list-datatable-4' }">
+                    <RouterLink
+                      :to="{ name: 'webapp-layouts-list-datatable-4' }"
+                    >
                       <i class="lnil lnil-layout-alt"></i>
                       <span>Datatable V4</span>
                       <i class="iconify" data-icon="feather:circle"></i>
@@ -179,28 +187,28 @@ const activeTab = ref<'list' | 'grid' | 'app' | 'utility'>('list')
                 <h4 class="column-heading">Cards</h4>
                 <ul>
                   <li>
-                    <RouterLink :to="{ name: 'webapp-grid-cards-1' }">
+                    <RouterLink :to="{ name: 'webapp-layouts-grid-cards-1' }">
                       <i class="lnil lnil-grid-alt"></i>
                       <span>Card Grid V1</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'webapp-grid-cards-2' }">
+                    <RouterLink :to="{ name: 'webapp-layouts-grid-cards-2' }">
                       <i class="lnil lnil-grid-alt"></i>
                       <span>Card Grid V2</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'webapp-grid-cards-3' }">
+                    <RouterLink :to="{ name: 'webapp-layouts-grid-cards-3' }">
                       <i class="lnil lnil-grid-alt"></i>
                       <span>Card Grid V3</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'webapp-grid-cards-4' }">
+                    <RouterLink :to="{ name: 'webapp-layouts-grid-cards-4' }">
                       <i class="lnil lnil-grid-alt"></i>
                       <span>Card Grid V4</span>
                       <i class="iconify" data-icon="feather:circle"></i>
@@ -212,21 +220,21 @@ const activeTab = ref<'list' | 'grid' | 'app' | 'utility'>('list')
                 <h4 class="column-heading">Tiles</h4>
                 <ul>
                   <li>
-                    <RouterLink :to="{ name: 'webapp-grid-tiles-1' }">
+                    <RouterLink :to="{ name: 'webapp-layouts-grid-tiles-1' }">
                       <i class="lnil lnil-layout-alt-2"></i>
                       <span>Tile Grid V1</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'webapp-grid-tiles-2' }">
+                    <RouterLink :to="{ name: 'webapp-layouts-grid-tiles-2' }">
                       <i class="lnil lnil-layout-alt-2"></i>
                       <span>Tile Grid V2</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'webapp-grid-tiles-3' }">
+                    <RouterLink :to="{ name: 'webapp-layouts-grid-tiles-3' }">
                       <i class="lnil lnil-layout-alt-2"></i>
                       <span>Tile Grid V3</span>
                       <i class="iconify" data-icon="feather:circle"></i>
@@ -238,28 +246,28 @@ const activeTab = ref<'list' | 'grid' | 'app' | 'utility'>('list')
                 <h4 class="column-heading">Users</h4>
                 <ul>
                   <li>
-                    <RouterLink :to="{ name: 'webapp-grid-users-1' }">
+                    <RouterLink :to="{ name: 'webapp-layouts-grid-users-1' }">
                       <i class="lnil lnil-users-alt"></i>
                       <span>User Grid V1</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'webapp-grid-users-2' }">
+                    <RouterLink :to="{ name: 'webapp-layouts-grid-users-2' }">
                       <i class="lnil lnil-users-alt"></i>
                       <span>User Grid V2</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'webapp-grid-users-3' }">
+                    <RouterLink :to="{ name: 'webapp-layouts-grid-users-3' }">
                       <i class="lnil lnil-users-alt"></i>
                       <span>User Grid V3</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'webapp-grid-users-4' }">
+                    <RouterLink :to="{ name: 'webapp-layouts-grid-users-4' }">
                       <i class="lnil lnil-users-alt"></i>
                       <span>User Grid V4</span>
                       <i class="iconify" data-icon="feather:circle"></i>
@@ -315,28 +323,32 @@ const activeTab = ref<'list' | 'grid' | 'app' | 'utility'>('list')
                 <h4 class="column-heading">Personal</h4>
                 <ul>
                   <li>
-                    <RouterLink :to="{ name: 'webapp-profile-view' }">
+                    <RouterLink :to="{ name: 'webapp-layouts-profile-view' }">
                       <i class="lnil lnil-user-alt"></i>
                       <span>Profile</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'webapp-profile-edit-1' }">
+                    <RouterLink :to="{ name: 'webapp-layouts-profile-edit-1' }">
                       <i class="lnil lnil-pencil"></i>
                       <span>Edit Profile</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'webapp-profile-notifications' }">
+                    <RouterLink
+                      :to="{ name: 'webapp-layouts-profile-notifications' }"
+                    >
                       <i class="lnil lnil-notification"></i>
                       <span>Notifications</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'webapp-profile-settings' }">
+                    <RouterLink
+                      :to="{ name: 'webapp-layouts-profile-settings' }"
+                    >
                       <i class="lnil lnil-cog"></i>
                       <span>Settings</span>
                       <i class="iconify" data-icon="feather:circle"></i>
@@ -395,7 +407,7 @@ const activeTab = ref<'list' | 'grid' | 'app' | 'utility'>('list')
                 <h4 class="column-heading">Subpages</h4>
                 <ul>
                   <li>
-                    <RouterLink :to="{ name: 'webapp-saas-billing' }">
+                    <RouterLink :to="{ name: 'webapp-layouts-saas-billing' }">
                       <i class="lnil lnil-credit-card"></i>
                       <span>Saas Billing</span>
                       <i class="iconify" data-icon="feather:circle"></i>
@@ -409,28 +421,28 @@ const activeTab = ref<'list' | 'grid' | 'app' | 'utility'>('list')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'webapp-action-page-1' }">
+                    <RouterLink :to="{ name: 'webapp-layouts-action-page-1' }">
                       <i class="lnil lnil-thunderbolt"></i>
                       <span>Action Page V1</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'webapp-action-page-2' }">
+                    <RouterLink :to="{ name: 'webapp-layouts-action-page-2' }">
                       <i class="lnil lnil-thunderbolt"></i>
                       <span>Action Page V2</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'webapp-search-results' }">
+                    <RouterLink :to="{ name: 'webapp-layouts-search-results' }">
                       <i class="lnil lnil-search-alt"></i>
                       <span>Search Results</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'webapp-search-empty' }">
+                    <RouterLink :to="{ name: 'webapp-layouts-search-empty' }">
                       <i class="lnil lnil-search-alt"></i>
                       <span>Empty Search</span>
                       <i class="iconify" data-icon="feather:circle"></i>
@@ -442,35 +454,43 @@ const activeTab = ref<'list' | 'grid' | 'app' | 'utility'>('list')
                 <h4 class="column-heading">Projects</h4>
                 <ul>
                   <li>
-                    <RouterLink :to="{ name: 'webapp-projects-projects' }">
+                    <RouterLink
+                      :to="{ name: 'webapp-layouts-projects-projects' }"
+                    >
                       <i class="lnil lnil-grid-alt"></i>
                       <span>Projects V1</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'webapp-projects-projects-2' }">
+                    <RouterLink
+                      :to="{ name: 'webapp-layouts-projects-projects-2' }"
+                    >
                       <i class="lnil lnil-grid-alt"></i>
                       <span>Projects V2</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'webapp-projects-projects-3' }">
+                    <RouterLink
+                      :to="{ name: 'webapp-layouts-projects-projects-3' }"
+                    >
                       <i class="lnil lnil-grid-alt"></i>
                       <span>Projects V3</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'webapp-projects-project' }">
+                    <RouterLink
+                      :to="{ name: 'webapp-layouts-projects-project' }"
+                    >
                       <i class="lnil lnil-layout"></i>
                       <span>Project Details</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'webapp-kanban-board' }">
+                    <RouterLink :to="{ name: 'webapp-layouts-kanban-board' }">
                       <i class="lnil lnil-layout-alt-1"></i>
                       <span>Project Board</span>
                       <i class="iconify" data-icon="feather:circle"></i>
@@ -496,7 +516,7 @@ const activeTab = ref<'list' | 'grid' | 'app' | 'utility'>('list')
                 <ul>
                   <li>
                     <RouterLink
-                      :to="{ name: 'webapp-utility-account-confirm' }"
+                      :to="{ name: 'webapp-layouts-utility-account-confirm' }"
                     >
                       <i class="lnil lnil-thunderbolt"></i>
                       <span>Confirm Account</span>
@@ -504,14 +524,18 @@ const activeTab = ref<'list' | 'grid' | 'app' | 'utility'>('list')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'webapp-utility-promotion' }">
+                    <RouterLink
+                      :to="{ name: 'webapp-layouts-utility-promotion' }"
+                    >
                       <i class="lnil lnil-magnet"></i>
                       <span>Promotion Page</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'webapp-utility-invoice' }">
+                    <RouterLink
+                      :to="{ name: 'webapp-layouts-utility-invoice' }"
+                    >
                       <i class="lnil lnil-calculator-alt"></i>
                       <span>Invoice</span>
                       <i class="iconify" data-icon="feather:circle"></i>
@@ -530,35 +554,45 @@ const activeTab = ref<'list' | 'grid' | 'app' | 'utility'>('list')
                 <h4 class="column-heading">Onboarding</h4>
                 <ul>
                   <li>
-                    <RouterLink :to="{ name: 'webapp-onboarding-page-1' }">
+                    <RouterLink
+                      :to="{ name: 'webapp-layouts-onboarding-page-1' }"
+                    >
                       <i class="lnil lnil-train"></i>
                       <span>Onboarding V1</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'webapp-onboarding-page-2' }">
+                    <RouterLink
+                      :to="{ name: 'webapp-layouts-onboarding-page-2' }"
+                    >
                       <i class="lnil lnil-train-alt"></i>
                       <span>Onboarding V2</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'webapp-onboarding-page-3' }">
+                    <RouterLink
+                      :to="{ name: 'webapp-layouts-onboarding-page-3' }"
+                    >
                       <i class="lnil lnil-car"></i>
                       <span>Onboarding V3</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'webapp-onboarding-page-4' }">
+                    <RouterLink
+                      :to="{ name: 'webapp-layouts-onboarding-page-4' }"
+                    >
                       <i class="lnil lnil-car-alt"></i>
                       <span>Onboarding V4</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'webapp-onboarding-page-5' }">
+                    <RouterLink
+                      :to="{ name: 'webapp-layouts-onboarding-page-5' }"
+                    >
                       <i class="lnil lnil-train-alt"></i>
                       <span>Onboarding V5</span>
                       <i class="iconify" data-icon="feather:circle"></i>
