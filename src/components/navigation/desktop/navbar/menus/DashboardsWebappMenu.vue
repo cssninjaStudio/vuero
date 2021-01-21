@@ -310,7 +310,9 @@ const activeTab = ref<'dashboards' | 'templates'>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'webapp-dashboards-widgets-ui' }">
+                    <RouterLink
+                      :to="{ name: 'webapp-dashboards-widgets-sample-ui' }"
+                    >
                       <i class="lnil lnil-layout-alt-1"></i>
                       <span>UI Widgets</span>
                       <i class="iconify" data-icon="feather:circle"></i>
@@ -318,7 +320,9 @@ const activeTab = ref<'dashboards' | 'templates'>('dashboards')
                   </li>
                   <li>
                     <RouterLink
-                      :to="{ name: 'webapp-dashboards-widgets-creative' }"
+                      :to="{
+                        name: 'webapp-dashboards-widgets-sample-creative',
+                      }"
                     >
                       <i class="lnil lnil-layout-alt-2"></i>
                       <span>Creative Widgets</span>
@@ -327,7 +331,7 @@ const activeTab = ref<'dashboards' | 'templates'>('dashboards')
                   </li>
                   <li>
                     <RouterLink
-                      :to="{ name: 'webapp-dashboards-widgets-list' }"
+                      :to="{ name: 'webapp-dashboards-widgets-sample-list' }"
                     >
                       <i class="lnil lnil-layout-alt-1"></i>
                       <span>List Widgets</span>
@@ -336,7 +340,7 @@ const activeTab = ref<'dashboards' | 'templates'>('dashboards')
                   </li>
                   <li>
                     <RouterLink
-                      :to="{ name: 'webapp-dashboards-widgets-stats' }"
+                      :to="{ name: 'webapp-dashboards-widgets-sample-stats' }"
                     >
                       <i class="lnil lnil-layout-alt-1"></i>
                       <span>Stat Widgets</span>

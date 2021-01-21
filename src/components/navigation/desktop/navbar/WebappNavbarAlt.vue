@@ -99,6 +99,8 @@ watch(
       </div>
       <div class="right">
         <Toolbar />
+        <WebappLayoutDropdown />
+
         <div
           ref="dropdownElement"
           :class="[isOpen && 'is-active']"

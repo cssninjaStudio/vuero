@@ -1,0 +1,48 @@
+<script setup lang="ts">
+import {
+  adminLayoutId,
+  setLayout,
+} from '/@src/composition/state/ui/adminLayoutState'
+</script>
+
+<template>
+  <li>
+    <BaseDropdown dots>
+      <template #button="{ open }">
+        <button class="is-trigger" @click="open">
+          <i class="iconify sidebar-svg" data-icon="feather:help-circle"></i>
+        </button>
+      </template>
+      <template #content>
+        <a
+          href="#"
+          :class="[adminLayoutId === 'sidebar-default' && 'is-active']"
+          class="dropdown-item"
+          @click="setLayout('sidebar-default')"
+          >Default Sidebar</a
+        >
+        <a
+          href="#"
+          :class="[adminLayoutId === 'sidebar-curved' && 'is-active']"
+          class="dropdown-item"
+          @click="setLayout('sidebar-curved')"
+          >Curved Sidebar</a
+        >
+        <a
+          href="#"
+          :class="[adminLayoutId === 'sidebar-color' && 'is-active']"
+          class="dropdown-item"
+          @click="setLayout('sidebar-color')"
+          >Colored Sidebar</a
+        >
+        <a
+          href="#"
+          :class="[adminLayoutId === 'sidebar-color-curved' && 'is-active']"
+          class="dropdown-item"
+          @click="setLayout('sidebar-color-curved')"
+          >Colored &amp; Surved Sidebar</a
+        >
+      </template>
+    </BaseDropdown>
+  </li>
+</template>

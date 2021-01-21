@@ -2,10 +2,11 @@
 import { onMounted, watch } from 'vue'
 import { useRoute } from 'vue-router'
 
+import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
 import {
-  activeSidebar,
-  toggleSidebar,
-} from '/@src/composition/state/ui/activeSidebarState'
+  adminLayout,
+  adminLayoutId,
+} from '/@src/composition/state/ui/adminLayoutState'
 
 const route = useRoute()
 
@@ -22,7 +23,7 @@ watch(
 </script>
 
 <template>
-  <DefaultLayout>
+  <component :is="adminLayout" :class="[adminLayoutId]">
     <LayoutsSidebar />
     <LayoutsMobileSubsidebar />
 
@@ -34,29 +35,49 @@ watch(
       <div class="page-content-wrapper">
         <div class="page-content is-relative">
           <RouterView v-slot="{ Component }">
-            <transition name="translatex" mode="in-out">
+            <transition name="translatex" mode="out-in">
               <component :is="Component" />
             </transition>
           </RouterView>
         </div>
       </div>
     </div>
-  </DefaultLayout>
+  </component>
 </template>
 
 <style lang="scss" scoped>
-.translatex-enter-active,
+.translatex-enter-active {
+  animation: translatex-in 0.2s cubic-bezier(0.25, 1, 0.5, 1);
+}
 .translatex-leave-active {
-  transform: translateX(0);
-  transition: transform 0.25s ease-out, opacity 0.25s ease-out;
+  animation: translatex-out 0.2s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
-.translatex-enter-from {
-  transform: translateX(10px);
-  opacity: 0;
+@keyframes translatex-in {
+  0% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
-.translatex-leave-to {
-  transform: translateX(-300px);
-  opacity: 0;
+@keyframes translatex-out {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(500px);
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .translatex-enter-active,
+  .translatex-leave-active {
+    transition: none;
+  }
 }
 </style>

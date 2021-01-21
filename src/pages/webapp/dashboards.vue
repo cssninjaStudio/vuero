@@ -1,28 +1,35 @@
 <script setup lang="ts">
-import { onMounted, watch } from 'vue'
+import { onMounted, watch, ref } from 'vue'
 import { useRoute } from 'vue-router'
 
+import WebappLayout from '/@src/layouts/WebappLayout.vue'
+import WebappV2Layout from '/@src/layouts/WebappV2Layout.vue'
+import WebappV3Layout from '/@src/layouts/WebappV3Layout.vue'
+import WebappV4Layout from '/@src/layouts/WebappV4Layout.vue'
+import WebappV5Layout from '/@src/layouts/WebappV5Layout.vue'
+
+import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
 import {
-  activeSidebar,
-  toggleSidebar,
-} from '/@src/composition/state/ui/activeSidebarState'
+  webappLayout,
+  webappLayoutId,
+} from '/@src/composition/state/ui/webappLayoutState'
 
-// const route = useRoute()
+const route = useRoute()
 
-// onMounted(() => {
-//   activeSidebar.value = 'none'
-// })
+onMounted(() => {
+  activeSidebar.value = 'none'
+})
 
-// watch(
-//   () => route.path,
-//   () => {
-//     activeSidebar.value = 'none'
-//   }
-// )
+watch(
+  () => route.path,
+  () => {
+    activeSidebar.value = 'none'
+  }
+)
 </script>
 
 <template>
-  <WebappLayout>
+  <component :is="webappLayout" :class="[webappLayoutId]">
     <GenericMobileSubsidebar />
 
     <!-- Content Wrapper -->
@@ -40,7 +47,7 @@ import {
         </div>
       </div>
     </div>
-  </WebappLayout>
+  </component>
 </template>
 
 <style lang="scss" scoped>
@@ -52,5 +59,12 @@ import {
 .fade-fast-enter-from,
 .fade-fast-leave-to {
   opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-fast-enter-active,
+  .fade-fast-leave-active {
+    transition: none;
+  }
 }
 </style>

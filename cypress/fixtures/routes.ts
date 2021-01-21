@@ -1,4 +1,5 @@
-export const waitTimeout = 800
+export const waitTimeout = 600
+export const disableTimersAndAnimations = true
 
 export const minimal = [
   {
@@ -74,7 +75,7 @@ export const auth = [
   },
 ]
 
-const app = [
+const layouts = [
   {
     name: 'Action Page V1',
     path: '/action-page-1',
@@ -82,102 +83,6 @@ const app = [
   {
     name: 'Action Page V2',
     path: '/action-page-2',
-  },
-  {
-    name: 'Dashboards Apps V1',
-    path: '/dashboards-apps-1',
-  },
-  {
-    name: 'Dashboards Banking V1',
-    path: '/dashboards-banking-1',
-  },
-  {
-    name: 'Dashboards Banking V2',
-    path: '/dashboards-banking-2',
-  },
-  {
-    name: 'Dashboards Banking V3',
-    path: '/dashboards-banking-3',
-  },
-  {
-    name: 'Dashboards Business V1',
-    path: '/dashboards-business-1',
-  },
-  {
-    name: 'Dashboards Business V2',
-    path: '/dashboards-business-2',
-  },
-  {
-    name: 'Dashboards Business V3',
-    path: '/dashboards-business-3',
-  },
-  {
-    name: 'Dashboards Charts Apex',
-    path: '/dashboards-charts-apex',
-  },
-  {
-    name: 'Dashboards Charts BillboardsJS',
-    path: '/dashboards-charts-billboardsjs',
-  },
-  {
-    name: 'Dashboards Ecommerce V1',
-    path: '/dashboards-ecommerce-1',
-  },
-  {
-    name: 'Dashboards Finance V1',
-    path: '/dashboards-finance-1',
-  },
-  {
-    name: 'Dashboards Finance V2',
-    path: '/dashboards-finance-2',
-  },
-  {
-    name: 'Dashboards Finance V3',
-    path: '/dashboards-finance-3',
-  },
-  {
-    name: 'Dashboards Lifestyle V1',
-    path: '/dashboards-lifestyle-1',
-  },
-  {
-    name: 'Dashboards Lifestyle V2',
-    path: '/dashboards-lifestyle-2',
-  },
-  {
-    name: 'Dashboards Lifestyle V3',
-    path: '/dashboards-lifestyle-3',
-  },
-  {
-    name: 'Dashboards Lifestyle V4',
-    path: '/dashboards-lifestyle-4',
-  },
-  {
-    name: 'Dashboards Personal V1',
-    path: '/dashboards-personal-1',
-  },
-  {
-    name: 'Dashboards Personal V2',
-    path: '/dashboards-personal-2',
-  },
-  {
-    name: 'Dashboards Personal V3',
-    path: '/dashboards-personal-3',
-  },
-  {
-    name: 'Dashboards widgets creative',
-    path: '/dashboards-widgets-creative',
-  },
-  {
-    name: 'Dashboards widgets list',
-    path: '/dashboards-widgets-list',
-  },
-  {
-    name: 'Dashboards widgets stats',
-    path: '/dashboards-widgets-stats',
-  },
-  {
-    name: 'Dashboards widgets ui',
-    path: '/dashboards-widgets-ui',
   },
   {
     name: 'Form V1',
@@ -241,7 +146,7 @@ const app = [
   },
   {
     name: 'Onboarding Standard',
-    path: '/',
+    path: '/onboarding-welcome',
   },
   {
     name: 'Kanban Board',
@@ -276,8 +181,8 @@ const app = [
     path: '/list-flex-3',
   },
   {
-    name: 'List View V1',
-    path: '/list-view-1',
+    name: 'Homepage (List View V1)',
+    path: '/',
   },
   {
     name: 'List View V2',
@@ -381,22 +286,135 @@ const app = [
   },
 ]
 
+const dashboards = [
+  {
+    name: 'Food Delivery',
+    path: '/food-delivery',
+  },
+  {
+    name: 'Banking V1',
+    path: '/banking-1',
+  },
+  {
+    name: 'Banking V2',
+    path: '/banking-2',
+  },
+  {
+    name: 'Banking V3',
+    path: '/banking-3',
+  },
+  {
+    name: 'Flights',
+    path: '/flights',
+  },
+  {
+    name: 'Company',
+    path: '/company',
+  },
+  {
+    name: 'Human Ressources',
+    path: '/human-ressources',
+  },
+  {
+    name: 'Charts Apex',
+    path: '/charts-apex',
+  },
+  {
+    name: 'Charts BillboardsJS',
+    path: '/charts-billboardsjs',
+  },
+  {
+    name: 'Ecommerce V1',
+    path: '/ecommerce-1',
+  },
+  {
+    name: 'Analytics',
+    path: '/analytics',
+  },
+  {
+    name: 'Stocks',
+    path: '/stocks',
+  },
+  {
+    name: 'Sales',
+    path: '/sales',
+  },
+  {
+    name: 'Influencer',
+    path: '/influencer',
+  },
+  {
+    name: 'Hobbies',
+    path: '/hobbies',
+  },
+  {
+    name: 'Health',
+    path: '/health',
+  },
+  {
+    name: 'Writer',
+    path: '/writer',
+  },
+  {
+    name: 'Homepage (Personal V1)',
+    path: '/',
+  },
+  {
+    name: 'Personal V2',
+    path: '/personal-2',
+  },
+  {
+    name: 'Personal V3',
+    path: '/personal-3',
+  },
+  {
+    name: 'Widgets Creative',
+    path: '/widgets-sample-creative',
+  },
+  {
+    name: 'Widgets List',
+    path: '/widgets-sample-list',
+  },
+  {
+    name: 'Widgets Stats',
+    path: '/widgets-sample-stats',
+  },
+  {
+    name: 'Widgets UI',
+    path: '/widgets-sample-ui',
+  },
+]
+
 export const admin = [
   {
     name: 'Messaging V1',
     path: '/messaging-v1',
   },
-  ...app.map((item) => {
+  ...layouts.map((item) => {
     return {
-      name: `${item.name} - Admin Layout`,
-      path: `/admin${item.path}`,
+      name: `${item.name} - Layout Admin`,
+      path: `/admin/layouts${item.path}`,
+    }
+  }),
+  ...dashboards.map((item) => {
+    return {
+      name: `${item.name} - Dashboard Admin`,
+      path: `/admin/dashboards${item.path}`,
     }
   }),
 ]
 
-export const webapp = app.map((item) => {
-  return {
-    name: `${item.name} - Webapp Layout`,
-    path: `/webapp${item.path}`,
-  }
-})
+export const webapp = [
+  ...layouts.map((item) => {
+    return {
+      name: `${item.name} - Layout Webapp`,
+      path: `/webapp/layouts${item.path}`,
+    }
+  }),
+  ...dashboards.map((item) => {
+    return {
+      name: `${item.name} - Dashboard Webapp`,
+      path: `/webapp/dashboards${item.path}`,
+    }
+  }),
+]
