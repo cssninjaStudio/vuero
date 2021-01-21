@@ -2,6 +2,9 @@ import type { App } from 'vue'
 
 export default function hasChildren(app: App) {
   app.directive('has-children', {
+    getSSRProps(binding, vnode) {
+      return {}
+    },
     mounted(el: HTMLElement) {
       const link = el.querySelector<HTMLElement>('.parent-link')
       const content = el.querySelector<HTMLElement>('ul')

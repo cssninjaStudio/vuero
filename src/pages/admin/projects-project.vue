@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useTitle } from '@vueuse/core'
+import { useHead } from '@vueuse/head'
 import { onMounted, ref } from 'vue'
 
 import { activePanel } from '/@src/composition/state/ui/activePanelState'
@@ -12,7 +12,9 @@ onMounted(() => {
   activeSidebar.value = 'none'
 })
 
-useTitle('Projects project - Admin - Vuero')
+useHead({
+  title: 'Projects project - Admin - Vuero',
+})
 </script>
 
 <template>

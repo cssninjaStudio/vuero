@@ -1,12 +1,14 @@
 <script setup lang="ts">
-import { useTitle } from '@vueuse/core'
+import { useHead } from '@vueuse/head'
 import { ref } from 'vue'
 
 import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
 
 const activeTab = ref<'all' | 'team'>('all')
 
-useTitle('Grid Users 3 - WebApp - Vuero')
+useHead({
+  title: 'Grid Users 3 - WebApp - Vuero',
+})
 </script>
 
 <template>

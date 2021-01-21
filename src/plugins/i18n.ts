@@ -1,4 +1,4 @@
-import type { ViteSSGContext } from 'vite-ssg'
+import type { App } from 'vue'
 import { useStorage } from '@vueuse/core'
 import { createI18n } from 'vue-i18n'
 
@@ -10,8 +10,8 @@ import es from '/@src/locales/es.json'
 import de from '/@src/locales/de.json'
 import esMx from '/@src/locales/es-MX.json'
 
-export default ({ app }: ViteSSGContext) => {
-  const defaultLocale = useStorage('locale', navigator.language || 'en')
+export default (app: App) => {
+  const defaultLocale = useStorage('locale', navigator?.language || 'en')
 
   const i18n = createI18n({
     locale: defaultLocale.value,

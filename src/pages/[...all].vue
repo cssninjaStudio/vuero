@@ -1,7 +1,9 @@
 <script setup lang="ts">
-import { useTitle } from '@vueuse/core'
+import { useHead } from '@vueuse/head'
 
-useTitle('Action Page - Vuero')
+useHead({
+  title: 'Action Page - Vuero',
+})
 </script>
 
 <template>

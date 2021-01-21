@@ -1,9 +1,11 @@
 <script setup lang="ts">
-import { useTitle } from '@vueuse/core'
+import { useHead } from '@vueuse/head'
 
 import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
 
-useTitle('Profile Settings - WebApp - Vuero')
+useHead({
+  title: 'Profile Settings - WebApp - Vuero',
+})
 </script>
 
 <template>

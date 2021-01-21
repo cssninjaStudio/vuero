@@ -1,9 +1,11 @@
 <script setup lang="ts">
-import { useTitle } from '@vueuse/core'
+import { useHead } from '@vueuse/head'
 
 import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
 
-useTitle('Dashboards Lifestyle 4 - WebApp - Vuero')
+useHead({
+  title: 'Dashboards Lifestyle 4 - WebApp - Vuero',
+})
 </script>
 
 <template>

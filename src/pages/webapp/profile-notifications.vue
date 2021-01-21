@@ -1,9 +1,11 @@
 <script setup lang="ts">
-import { useTitle } from '@vueuse/core'
+import { useHead } from '@vueuse/head'
 
 import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
 
-useTitle('Profile Notification - WebApp - Vuero')
+useHead({
+  title: 'Profile Notification - WebApp - Vuero',
+})
 </script>
 
 <template>

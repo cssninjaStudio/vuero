@@ -1,7 +1,9 @@
 <script setup lang="ts">
-import { useTitle } from '@vueuse/core'
+import { useHead } from '@vueuse/head'
 
-useTitle('Error Page 5 - Vuero')
+useHead({
+  title: 'Error Page 5 - Vuero',
+})
 </script>
 
 <template>

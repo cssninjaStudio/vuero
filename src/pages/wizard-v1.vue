@@ -1,7 +1,9 @@
 <script setup lang="ts">
-import { useTitle } from '@vueuse/core'
+import { useHead } from '@vueuse/head'
 
-useTitle('Wizard V1 - Vuero')
+useHead({
+  title: 'Wizard V1 - Vuero',
+})
 </script>
 
 <template>

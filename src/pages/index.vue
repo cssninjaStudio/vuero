@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { useTitle } from '@vueuse/core'
+import { useHead } from '@vueuse/head'
 
 import { isDark } from '/@src/composition/state/ui/darkModeState.ts'
 
@@ -8,7 +8,9 @@ const activeTab = ref<'elements' | 'components' | 'forms' | 'plugins'>(
   'elements'
 )
 
-useTitle('Vuero - A complete Vue 3 design system')
+useHead({
+  title: 'Vuero - A complete Vue 3 design system',
+})
 </script>
 
 <template>

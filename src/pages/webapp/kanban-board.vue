@@ -1,9 +1,11 @@
 <script setup lang="ts">
-import { useTitle } from '@vueuse/core'
+import { useHead } from '@vueuse/head'
 
 import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
 
-useTitle('Kanban Board - WebApp - Vuero')
+useHead({
+  title: 'Kanban Board - WebApp - Vuero',
+})
 </script>
 
 <template>

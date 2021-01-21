@@ -1,12 +1,14 @@
 <script setup lang="ts">
-import { useTitle } from '@vueuse/core'
+import { useHead } from '@vueuse/head'
 import { ref } from 'vue'
 
 import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
 
 const activeTab = ref<'active' | 'closed'>('active')
 
-useTitle('List Flex 2 - WebApp - Vuero')
+useHead({
+  title: 'List Flex 2 - WebApp - Vuero',
+})
 </script>
 
 <template>

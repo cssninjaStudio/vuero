@@ -1,8 +1,6 @@
-import type { ViteSSGContext } from 'vite-ssg'
+import type { App } from 'vue'
 import Toast from 'vue-toastification'
 
-export default ({ app, isClient }: ViteSSGContext) => {
-  if (isClient) {
-    app.use(Toast)
-  }
+export default (app: App) => {
+  app.use(Toast)
 }

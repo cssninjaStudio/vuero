@@ -1,10 +1,12 @@
 <script setup lang="ts">
-import { useTitle } from '@vueuse/core'
+import { useHead } from '@vueuse/head'
 import { ref } from 'vue'
 
 import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
 
-useTitle('Search Results - WebApp - Vuero')
+useHead({
+  title: 'Search Results - WebApp - Vuero',
+})
 </script>
 
 <template>

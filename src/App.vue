@@ -4,7 +4,7 @@ import { watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 
 const i18n = useI18n()
-const defaultLocale = useStorage('locale', navigator.language || 'en')
+const defaultLocale = useStorage('locale', (navigator && navigator.language) || 'en')
 
 watch(i18n.locale, () => {
   defaultLocale.value = i18n.locale.value

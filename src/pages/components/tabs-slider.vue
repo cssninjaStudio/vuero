@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useTitle } from '@vueuse/core'
+import { useHead } from '@vueuse/head'
 import { onMounted, ref } from 'vue'
 
 import {
@@ -16,7 +16,9 @@ onMounted(() => {
   activeSidebar.value = 'components'
 })
 
-useTitle('Components - Tabs Slider - Vuero')
+useHead({
+  title: 'Components - Tabs Slider - Vuero',
+})
 </script>
 
 <template>

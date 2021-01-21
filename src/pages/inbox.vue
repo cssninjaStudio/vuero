@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useTitle } from '@vueuse/core'
+import { useHead } from '@vueuse/head'
 
 import { isDark } from '/@src/composition/state/ui/darkModeState.ts'
 import useDropdown from '/@src/composition/use/useDropdown'
@@ -16,7 +16,9 @@ const {
   isOpen: isOpen2,
 } = useDropdown()
 
-useTitle('Dashboard Apps 2 - Admin - Vuero')
+useHead({
+  title: 'Dashboard Apps 2 - Admin - Vuero',
+})
 </script>
 
 <template>

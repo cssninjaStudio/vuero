@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useTitle } from '@vueuse/core'
+import { useHead } from '@vueuse/head'
 
 import useDropdown from '/@src/composition/use/useDropdown'
 
@@ -15,7 +15,9 @@ const {
   isOpen: isOpen2,
 } = useDropdown()
 
-useTitle('Messaging chat - WebApp - Vuero')
+useHead({
+  title: 'Messaging chat - WebApp - Vuero',
+})
 </script>
 
 <template>

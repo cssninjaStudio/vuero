@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useTitle } from '@vueuse/core'
+import { useHead } from '@vueuse/head'
 import { onMounted } from 'vue'
 
 import {
@@ -11,7 +11,9 @@ onMounted(() => {
   activeSidebar.value = 'elements'
 })
 
-useTitle('Elements - Forms Textarea - Vuero')
+useHead({
+  title: 'Elements - Forms Textarea - Vuero',
+})
 </script>
 
 <template>

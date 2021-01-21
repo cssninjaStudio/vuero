@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useTitle } from '@vueuse/core'
+import { useHead } from '@vueuse/head'
 import { onMounted, ref } from 'vue'
 
 import {
@@ -25,7 +25,9 @@ const mediumFormOpen = ref(false)
 const largeFormOpen = ref(false)
 const bigFormOpen = ref(false)
 
-useTitle('Components - Modal - Vuero')
+useHead({
+  title: 'Components - Modal - Vuero',
+})
 </script>
 
 <template>

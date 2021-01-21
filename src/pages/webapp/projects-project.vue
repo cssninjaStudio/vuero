@@ -1,11 +1,13 @@
 <script setup lang="ts">
-import { useTitle } from '@vueuse/core'
+import { useHead } from '@vueuse/head'
 import { ref } from 'vue'
 
 import { activePanel } from '/@src/composition/state/ui/activePanelState'
 import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
 
-useTitle('Projects Project - WebApp - Vuero')
+useHead({
+  title: 'Projects Project - WebApp - Vuero',
+})
 </script>
 
 <template>

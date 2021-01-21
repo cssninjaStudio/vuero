@@ -1,7 +1,10 @@
-  
 # Ignore artifacts:
 build
+dist
 coverage
+node_modules
+.vite-ssg-dist
+public
 
 # Ignore all HTML files:
 *.html

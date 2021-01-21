@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useTitle } from '@vueuse/core'
+import { useHead } from '@vueuse/head'
 import { onMounted, ref } from 'vue'
 
 import {
@@ -63,7 +63,9 @@ const activeTab = ref<Tabs>('team')
   </div>
 </template>`
 
-useTitle('Components - Tabs Regular - Vuero')
+useHead({
+  title: 'Components - Tabs Regular - Vuero',
+})
 </script>
 
 <template>

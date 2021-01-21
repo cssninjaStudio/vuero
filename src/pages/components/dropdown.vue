@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import { ref, reactive, onMounted } from 'vue'
-import { useTitle } from '@vueuse/core'
+import { useHead } from '@vueuse/head'
 
 import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
 
-useTitle('Components - Dropdown - Vuero')
+useHead({
+  title: 'Components - Dropdown - Vuero',
+})
 </script>
 
 <template>

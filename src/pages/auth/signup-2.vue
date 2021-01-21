@@ -1,9 +1,11 @@
 <script setup lang="ts">
-import { useTitle } from '@vueuse/core'
+import { useHead } from '@vueuse/head'
 
 import { isDark } from '/@src/composition/state/ui/darkModeState.ts'
 
-useTitle('Auth Signup 2 - Vuero')
+useHead({
+  title: 'Auth Signup 2 - Vuero',
+})
 </script>
 
 <template>

@@ -2,6 +2,7 @@ import type { Plugin, ResolvedConfig } from 'vite'
 import MarkdownIt from 'markdown-it'
 import matter from 'gray-matter'
 import { compileTemplate } from '@vue/compiler-sfc'
+import MarkdownPrismVue from './markdown-it-prism-vue'
 
 interface Options {
   /**
@@ -54,7 +55,7 @@ function parseId(id: string) {
   else return id.slice(0, index)
 }
 
-function VitePluginMarkdown(options: Options = {}): Plugin {
+function VitePluginVueroDoc(options: Options = {}): Plugin {
   const resolved: ResolvedOptions = Object.assign(
     {
       markdownItOptions: {},
@@ -63,6 +64,27 @@ function VitePluginMarkdown(options: Options = {}): Plugin {
       wrapperClasses: 'markdown-body',
       wrapperComponent: null,
       transforms: {},
+    },
+    {
+      markdownItOptions: {
+        html: true,
+        linkify: true,
+        typographer: true,
+      },
+      wrapperClasses: '',
+      wrapperComponent: 'DocumentationItem',
+      transforms: {
+        after(sfc: string) {
+          return sfc
+            .replace('<!--code-->', '<template #code>')
+            .replace('<!--/code-->', '</template>')
+            .replace('<!--example-->', '<template #example>')
+            .replace('<!--/example-->', '</template>')
+        },
+      },
+      markdownItSetup(md: MarkdownIt) {
+        md.use(MarkdownPrismVue)
+      },
     },
     options
   )
@@ -123,6 +145,8 @@ function VitePluginMarkdown(options: Options = {}): Plugin {
         reset() { this.frontmatter = ${JSON.stringify(frontmatter)}; },
         clickMe(event) { 
           const text = event.target.innerText; 
+          if (text === 'Clicked!') return;
+          
           event.target.innerText = 'Clicked!'; 
           this.timeout(() => {
             event.target.innerText = text;
@@ -142,4 +166,4 @@ function VitePluginMarkdown(options: Options = {}): Plugin {
   }
 }
 
-export default VitePluginMarkdown
+export default VitePluginVueroDoc
