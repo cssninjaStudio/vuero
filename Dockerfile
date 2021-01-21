@@ -2,11 +2,10 @@ FROM bitnami/node:14 AS build
 WORKDIR /app
 
 COPY package.json ./
-COPY yarn.lock ./
-RUN yarn
+RUN CYPRESS_INSTALL_BINARY=0 npm install --unsafe-perm=true
 
 COPY . .
-RUN yarn build
+RUN npm run build
 
 
 FROM bitnami/nginx:1.19 AS prod

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="webapp-layout">
     <div class="app-overlay"></div>
 
     <MobileNavbar />

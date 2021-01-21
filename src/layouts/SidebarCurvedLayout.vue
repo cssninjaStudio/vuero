@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="default-layout">
     <div class="app-overlay"></div>
     <!-- <Pageloader /> -->
 
