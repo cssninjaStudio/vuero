@@ -10,6 +10,10 @@ const props = defineProps({
     type: Boolean,
     default: false,
   },
+  circled: {
+    type: Boolean,
+    default: false,
+  },
 })
 </script>
 
@@ -20,6 +24,7 @@ const props = defineProps({
         :picture="row.picture"
         :initials="row.initials"
         size="medium"
+        :color="row.color"
         :squared="squared"
       />
     </td>
@@ -73,17 +78,26 @@ const props = defineProps({
     </td>
     <td class="is-end">
       <div class="buttons">
-        <button class="button is-dark-outlined">
+        <button
+          class="button is-dark-outlined"
+          :class="[circled && 'is-circle']"
+        >
           <span class="icon is-small">
             <i class="iconify" data-icon="feather:edit-2"></i>
           </span>
         </button>
-        <button class="button is-dark-outlined">
+        <button
+          class="button is-dark-outlined"
+          :class="[circled && 'is-circle']"
+        >
           <span class="icon is-small">
             <i class="iconify" data-icon="feather:eye"></i>
           </span>
         </button>
-        <button class="button is-dark-outlined">
+        <button
+          class="button is-dark-outlined"
+          :class="[circled && 'is-circle']"
+        >
           <span class="icon is-small">
             <i class="iconify" data-icon="feather:trash-2"></i>
           </span>

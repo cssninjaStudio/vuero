@@ -14,6 +14,14 @@ const props = defineProps({
     type: Boolean,
     default: false,
   },
+  squared: {
+    type: Boolean,
+    default: false,
+  },
+  circled: {
+    type: Boolean,
+    default: false,
+  },
   data: {
     type: Array,
     required: true,
@@ -35,7 +43,11 @@ const props = defineProps({
 
     <table class="table is-hoverable is-fullwidth">
       <tbody>
-        <TableWidgetRowMembers :rows="props.data" squared />
+        <TableWidgetRowMembers
+          :rows="props.data"
+          :squared="squared"
+          :circled="circled"
+        />
       </tbody>
     </table>
   </div>

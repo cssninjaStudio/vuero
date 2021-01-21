@@ -6,6 +6,7 @@ export const memberList = ref([
     picture: '/images/avatars/svg/8.gif',
     name: 'Tina Dasilva',
     initials: 'td',
+    color: 'info',
     membership: 'Apr 2019',
     income: '7,854.32',
     skills: [
@@ -30,6 +31,7 @@ export const memberList = ref([
     picture: '/images/avatars/svg/1.gif',
     name: 'John Wistmus',
     initials: 'jw',
+    color: 'info',
     membership: 'Jun 2018',
     income: '5,435.49',
     skills: [
@@ -50,6 +52,7 @@ export const memberList = ref([
     picture: '/images/avatars/svg/4.gif',
     name: 'Sam Watson',
     initials: 'sw',
+    color: 'info',
     membership: 'Jun 2020',
     income: '824.67',
     skills: [
@@ -74,6 +77,7 @@ export const memberList = ref([
     picture: null,
     name: 'Jolaine Joestar',
     initials: 'jj',
+    color: 'info',
     membership: 'Feb 2020',
     income: '261.12',
     skills: [
@@ -90,6 +94,7 @@ export const memberList = ref([
     picture: '/images/avatars/svg/3.gif',
     name: 'Anders Jensen',
     initials: 'aj',
+    color: 'info',
     membership: 'Nov 2020',
     income: '4,231.67',
     skills: [
