@@ -3980,12 +3980,12 @@ Author: lineicons.com
 -------------------------------- */
 @font-face {
   font-family: 'LineIconsPro Regular';
-  src: url('/fonts/LineIconsPro Regular.eot');
-  src: url('/fonts/LineIconsPro Regular.eot') format('embedded-opentype'),
-    url('/fonts/LineIconsPro Regular.woff2') format('woff2'),
-    url('/fonts/LineIconsPro Regular.woff') format('woff'),
-    url('/fonts/LineIconsPro Regular.ttf') format('truetype'),
-    url('/fonts/LineIconsPro Regular.svg') format('svg');
+  src: url('/fonts/LineIconsProRegular.eot');
+  src: url('/fonts/LineIconsProRegular.eot') format('embedded-opentype'),
+    url('/fonts/LineIconsProRegular.woff2') format('woff2'),
+    url('/fonts/LineIconsProRegular.woff') format('woff'),
+    url('/fonts/LineIconsProRegular.ttf') format('truetype'),
+    url('/fonts/LineIconsProRegular.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }

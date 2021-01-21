@@ -72,6 +72,9 @@ export const spark1 = {
   labels: [...Array(24).keys()].map((n) => `2020-10-0${n + 1}`),
   yaxis: {
     min: 0,
+    labels: {
+      minWidth: 100,
+    },
   },
   xaxis: {
     type: 'datetime',
@@ -123,6 +126,9 @@ export const spark2 = {
   labels: [...Array(24).keys()].map((n) => `2020-10-0${n + 1}`),
   yaxis: {
     min: 0,
+    labels: {
+      minWidth: 100,
+    },
   },
   xaxis: {
     type: 'datetime',
@@ -177,6 +183,9 @@ export const spark3 = {
   },
   yaxis: {
     min: 0,
+    labels: {
+      minWidth: 100,
+    },
   },
   title: {
     text: 'Total Orders',
@@ -228,6 +237,9 @@ export const spark4 = {
   },
   yaxis: {
     min: 0,
+    labels: {
+      minWidth: 100,
+    },
   },
   title: {
     text: 'Consolidated Profit',
