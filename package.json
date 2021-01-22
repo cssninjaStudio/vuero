@@ -2,7 +2,7 @@
   "name": "vuero",
   "version": "0.0.1-dev",
   "private": "true",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "run-s build:*",
