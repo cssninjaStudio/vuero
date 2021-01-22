@@ -72,6 +72,13 @@ onMounted(() => {
 
 .toc {
   position: fixed;
+  transition: opacity 0.3s ease;
+  opacity: 0.6;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
 }
 
 .toc-title {
