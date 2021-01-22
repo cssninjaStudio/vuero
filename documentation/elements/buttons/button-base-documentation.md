@@ -3,7 +3,7 @@ state:
   clicked: 0
 ---
 
-### Basic usage
+### Basic usagee
 
 Vuero provides it's own subset of Bulma buttons. Use the `h-button` class with a Bulma native `button` class to start using Vuero buttons.  
 
