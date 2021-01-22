@@ -7,13 +7,17 @@
  * @license MIT
  */
 
-div[class*='language-'] {
+.demo-code div[class*='language-'] {
   position: relative;
   background: whitesmoke;
   border-radius: 0.75rem;
 }
 
-.is-dark div[class*='language-'] {
+.demo-state pre {
+  border-radius: 0.75rem;
+}
+
+.is-dark .demo-code div[class*='language-'] {
   background: #1a1a1f;
   color: #c0c0d1;
 }
@@ -46,7 +50,7 @@ div[class*='language-'] {
 
 /* Line numbers mode */
 
-div[class*='language-'].line-numbers-mode {
+.demo-code div[class*='language-'].line-numbers-mode {
   padding-left: 3.5rem;
 }
 
@@ -169,7 +173,7 @@ div[class*='language-'].line-numbers-mode {
 }
 
 code[class*='language-'],
-div[class*='language-'] pre {
+.demo-code div[class*='language-'] pre {
   color: #575963;
   background: none;
   font-family: 'Fira Code', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono',
@@ -185,27 +189,27 @@ div[class*='language-'] pre {
   font-size: 13px;
 }
 
-div[class*='language-'] pre {
+.demo-code div[class*='language-'] pre {
   position: relative;
   z-index: 1;
 }
 
-div[class*='language-'] pre::-moz-selection,
-div[class*='language-'] pre ::-moz-selection,
+.demo-code div[class*='language-'] pre::-moz-selection,
+.demo-code div[class*='language-'] pre ::-moz-selection,
 code[class*='language-']::-moz-selection,
 code[class*='language-'] ::-moz-selection {
   background: #ebebeb;
 }
 
-div[class*='language-'] pre::selection,
-div[class*='language-'] pre ::selection,
+.demo-code div[class*='language-'] pre::selection,
+.demo-code div[class*='language-'] pre ::selection,
 code[class*='language-']::selection,
 code[class*='language-'] ::selection {
   background: #ebebeb;
 }
 
 /* Code blocks */
-div[class*='language-'] pre {
+.demo-code div[class*='language-'] pre {
   padding: 1em;
   overflow: auto;
 }

@@ -34,6 +34,8 @@ const onTocClick = (id?: string) => {
 onMounted(() => {
   if (route.hash) {
     VueScrollTo.scrollTo(route.hash, 0, { offset: -30 })
+  } else {
+    VueScrollTo.scrollTo('#app', 0, { offset: -30 })
   }
 })
 </script>
