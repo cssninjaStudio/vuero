@@ -5,6 +5,10 @@ const props = defineProps({
   frontmatter: {
     type: Object,
   },
+  componentData: {
+    type: Array,
+    required: false,
+  },
 })
 
 const displayCode = ref(false)
@@ -71,6 +75,11 @@ const displayCode = ref(false)
       ::v-deep(h3) {
         color: $dark-dark-text;
       }
+
+      ::v-deep(code) {
+        background: lighten($dark-sidebar, 6%) !important;
+        color: $primary;
+      }
     }
   }
 }
@@ -85,6 +94,7 @@ const displayCode = ref(false)
   .demo-state {
     flex-grow: 1;
     position: relative;
+    margin-left: 1.5rem;
 
     &::before {
       position: absolute;
@@ -95,6 +105,23 @@ const displayCode = ref(false)
       color: #888;
       content: 'state';
     }
+  }
+}
+
+.is-dark {
+  .demo-state {
+    pre {
+      background: #1a1a1f;
+      border-radius: 0.75rem;
+      color: #c0c0d1;
+    }
+  }
+}
+
+//Adjustments
+.demo-example {
+  > .h-avatar {
+    margin: 0 0.15rem;
   }
 }
 </style>

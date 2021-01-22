@@ -360,6 +360,7 @@ body {
         }
 
         .code-trigger {
+          border-color: lighten($dark-sidebar, 14%);
           &:hover {
             svg {
               color: $light-text;
@@ -367,10 +368,11 @@ body {
           }
 
           &.is-active {
-            border-color: $danger;
+            border-color: lighten($dark-sidebar, 16%);
+            background: lighten($dark-sidebar, 12%);
 
             svg {
-              color: $danger;
+              color: $primary;
             }
           }
         }

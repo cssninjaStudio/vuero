@@ -1,22 +1,17 @@
-### Fallback Avatar
+### Fallback avatar
 
-Vuero Avatars are rounded images used for media and personal pages. Avatar sizes can be controled with css classes.  
-Available modifier classes are `is-small`, `is-medium`, `is-large`, `is-big` and `is-xl`. See code for more details about usage.
+Vuero Avatars automatically fall back to a placeholder when no valid URL is provided for the `picture` prop.
 
 <!--code-->
 
 ```vue {7-9}
 <template>
-  <div class="h-avatar">
-    <img
-      class="avatar"
-      src="/non-existing-image.png"
-      alt="avatar"
-      @error.once="
-        $event.target.src = 'https://via.placeholder.com/150x150'
-      "
-    />
-  </div>
+  <Avatar picture="no-file.jpg" size="small" />
+  <Avatar picture="no-file.jpg" />
+  <Avatar picture="no-file.jpg" size="medium" />
+  <Avatar picture="no-file.jpg" size="large" />
+  <Avatar picture="no-file.jpg" size="big" />
+  <Avatar picture="no-file.jpg" size="xl" />
 </template>
 ```
 
@@ -25,16 +20,12 @@ Available modifier classes are `is-small`, `is-medium`, `is-large`, `is-big` and
 
 <!--example-->
 
-<div class="h-avatar is-large">
-  <div class="h-avatar">
-    <img
-      class="avatar"
-      src="/non-existing-image.png"
-      alt="avatar"
-      @error.once="$event.target.src = 'https://via.placeholder.com/68x68'"
-    />
-  </div>
-</div>
+<Avatar picture="no-file.jpg" size="small" />
+<Avatar picture="no-file.jpg" />
+<Avatar picture="no-file.jpg" size="medium" />
+<Avatar picture="no-file.jpg" size="large" />
+<Avatar picture="no-file.jpg" size="big" />
+<Avatar picture="no-file.jpg" size="xl" />
 
 
 <!--/example-->

@@ -40,7 +40,12 @@ const props = defineProps({
 <template>
   <div
     class="h-avatar"
-    :class="[props.size && 'is-' + props.size, props.dot && 'has-dot']"
+    :class="[
+      props.size && 'is-' + props.size,
+      props.dot && 'has-dot',
+      props.dotColor && `dot-${dotColor}`,
+      squared && dot && 'has-dot-squared',
+    ]"
   >
     <img
       v-if="picture"

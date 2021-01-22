@@ -6,7 +6,6 @@ dependencies:
   billboard.js: 2.1.4
   bulma: 0.9.1
   dayjs: 1.10.3
-  highlight.js: 10.5.0
   markdown-it-emoji: 2.0.0
   moment: 2.29.1
   nprogress: 0.2.0
@@ -3874,6 +3873,7 @@ packages:
     resolution:
       integrity: sha512-WdZTbAByD+pHfl/g9QSsBIIwy8IT+EsPiKDs0KNX+zSHhdDLFKdZu0BQHljvO+0QI/BasbMSUa8wYNCZTvhslg==
   /highlight.js/10.5.0:
+    dev: true
     resolution:
       integrity: sha512-xTmvd9HiIHR6L53TMC7TKolEj65zG1XU+Onr8oi86mYa+nLcIbxTTWkpW7CsEwv/vK7u1zb8alZIMLDqqN6KTw==
   /hosted-git-info/2.8.8:
@@ -7223,7 +7223,6 @@ specifiers:
   eslint-plugin-prettier-vue: 3.0.0-alpha.2
   eslint-plugin-vue: 7.4.1
   gray-matter: ^4.0.2
-  highlight.js: 10.5.0
   markdown-it: ^12.0.4
   markdown-it-emoji: ^2.0.0
   moment: ^2.29.1

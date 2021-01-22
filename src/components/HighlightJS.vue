@@ -47,7 +47,6 @@ const props = defineProps({
 }
 .language-name {
   padding: 10px 20px;
-  background-color: #f1f0f0;
   color: #727373;
 
   &::before {
