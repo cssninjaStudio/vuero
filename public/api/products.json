@@ -1,0 +1,26 @@
+[
+  { 
+    "id": "huro-1", 
+    "name": "Huro", 
+    "covers": "/uploads/products/huro.jpg",
+    "price": 27
+  },
+  { 
+    "id": "vuro-1", 
+    "name": "Vuro", 
+    "covers": "/uploads/products/vuro.jpg",
+    "price": 29
+  },
+  { 
+    "id": "dashkit-1", 
+    "name": "Dashkit", 
+    "covers": "/uploads/products/daskit.jpg",
+    "price": 30
+  },
+  { 
+    "id": "moebius-1", 
+    "name": "Moebius", 
+    "covers": "/uploads/products/daskit.jpg",
+    "price": 10
+  }
+]

@@ -2,10 +2,13 @@
 import { useHead } from '@vueuse/head'
 import { onMounted } from 'vue'
 
+import useMakrdownToc from '/@src/composition/use/useMarkdownToc'
 import {
   activeSidebar,
   toggleSidebar,
 } from '/@src/composition/state/ui/activeSidebarState'
+
+const { markdownContainer, toc } = useMakrdownToc()
 
 onMounted(() => {
   activeSidebar.value = 'elements'
@@ -74,7 +77,11 @@ useHead({
       </nav>
 
       <div class="columns">
-        <div class="column is-12">
+        <div
+          ref="markdownContainer"
+          :class="[toc.length > 0 ? 'is-10' : 'is-12']"
+          class="column"
+        >
           <!--Input-->
           <InputBasicDocumentation />
 
@@ -618,6 +625,10 @@ useHead({
               </div>
             </div>
           </div>
+        </div>
+
+        <div v-if="toc.length" class="column is-2">
+          <DocumentationToc :toc="toc" />
         </div>
       </div>
     </div>

@@ -12,6 +12,7 @@ dependencies:
   vue: 3.0.5
   vue-i18n: 9.0.0-rc.2_vue@3.0.5
   vue-router: 4.0.3_vue@3.0.5
+  vue-scrollto: 2.20.0
   vue-toastification: 2.0.0-rc.1_vue@3.0.5
   vue3-apexcharts: 1.1.1_apexcharts@3.23.1+vue@3.0.5
 devDependencies:
@@ -40,6 +41,7 @@ devDependencies:
   eslint-plugin-vue: 7.4.1_eslint@7.18.0
   gray-matter: 4.0.2
   markdown-it: 12.0.4
+  markdown-it-anchor: 7.0.0_markdown-it@12.0.4
   npm-run-all: 4.1.5
   prettier: 2.2.1
   prismjs: 1.23.0
@@ -2251,6 +2253,10 @@ packages:
     dev: true
     resolution:
       integrity: sha1-pDAdOJtqQ/m2f/PKEaP2Y342Dp4=
+  /bezier-easing/2.1.0:
+    dev: false
+    resolution:
+      integrity: sha1-wE3+i5JtbsrKGBPWn/F5t8ICXYY=
   /big.js/5.2.2:
     dev: true
     resolution:
@@ -4610,6 +4616,14 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-glc9y00wgtwcDmp7GaE/0b0OnxpNJsVf3ael/An6Fe2Q51LLwN1er6sdomLRzz5h0+yMpiYLhWYF5R7HeqVd4g==
+  /markdown-it-anchor/7.0.0_markdown-it@12.0.4:
+    dependencies:
+      markdown-it: 12.0.4
+    dev: true
+    peerDependencies:
+      markdown-it: '*'
+    resolution:
+      integrity: sha512-7n4ZT58WUoejDDPvk5bxdu/f+BIvRILxs29kPn3YDFJ9tejwOv9Ipw8VpqxXarMjflwYxqpFIYx7whGbLO62nA==
   /markdown-it-emoji/2.0.0:
     dev: false
     resolution:
@@ -6833,6 +6847,12 @@ packages:
       vue: ^3.0.0
     resolution:
       integrity: sha512-AD1OjtVPyQHTSpoRsEGfPpxRQwhAhxcacOYO3zJ3KNkYP/r09mileSp6kdMQKhZWP2cFsPR3E2M3PZguSN5/ww==
+  /vue-scrollto/2.20.0:
+    dependencies:
+      bezier-easing: 2.1.0
+    dev: false
+    resolution:
+      integrity: sha512-7i+AGKJTThZnMEkhIPgrZjyAX+fXV7/rGdg+CV283uZZwCxwiMXaBLTmIc5RTA4uwGnT+E6eJle3mXQfM2OD3A==
   /vue-toastification/2.0.0-rc.1_vue@3.0.5:
     dependencies:
       vue: 3.0.5
@@ -7224,6 +7244,7 @@ specifiers:
   eslint-plugin-vue: 7.4.1
   gray-matter: ^4.0.2
   markdown-it: ^12.0.4
+  markdown-it-anchor: ^7.0.0
   markdown-it-emoji: ^2.0.0
   moment: ^2.29.1
   npm-run-all: 4.1.5
@@ -7252,5 +7273,6 @@ specifiers:
   vue: 3.0.5
   vue-i18n: 9.0.0-rc.2
   vue-router: 4.0.3
+  vue-scrollto: ^2.20.0
   vue-toastification: 2.0.0-rc.1
   vue3-apexcharts: ^1.1.1

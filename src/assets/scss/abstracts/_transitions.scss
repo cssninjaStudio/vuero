@@ -1,0 +1,106 @@
+/* ==========================================================================
+1. fade-fast
+========================================================================== */
+
+.fade-fast-enter-active,
+.fade-fast-leave-active {
+  transition: opacity 0.2s ease;
+}
+
+.fade-fast-enter-from,
+.fade-fast-leave-to {
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-fast-enter-active,
+  .fade-fast-leave-active {
+    transition: none;
+  }
+}
+
+/* ==========================================================================
+2. fade-slow
+========================================================================== */
+
+.fade-slow-enter-active,
+.fade-slow-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-slow-enter-from,
+.fade-slow-leave-to {
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-slow-enter-active,
+  .fade-slow-leave-active {
+    transition: none;
+  }
+}
+
+/* ==========================================================================
+3. translate-page-y
+========================================================================== */
+
+.translate-page-y-enter-active,
+.translate-page-y-leave-active {
+  transform: translateY(0);
+  transition: transform 0.25s ease-out, opacity 0.25s ease-out;
+}
+
+.translate-page-y-enter-from {
+  transform: translateY(10px);
+  opacity: 0;
+}
+.translate-page-y-leave-to {
+  transform: translateY(-300px);
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .translate-page-y-enter-active,
+  .translate-page-y-leave-active {
+    transition: none;
+  }
+}
+
+/* ==========================================================================
+4. translate-page-x
+========================================================================== */
+
+.translate-page-x-enter-active {
+  animation: translate-page-x-in 0.2s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.translate-page-x-leave-active {
+  animation: translate-page-x-out 0.2s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@keyframes translate-page-x-in {
+  0% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes translate-page-x-out {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(500px);
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .translate-page-x-enter-active,
+  .translate-page-x-leave-active {
+    transition: none;
+  }
+}

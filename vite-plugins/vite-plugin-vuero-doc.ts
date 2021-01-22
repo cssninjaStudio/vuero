@@ -83,6 +83,11 @@ function VitePluginVueroDoc(options: Options = {}): Plugin {
         },
       },
       markdownItSetup(md: MarkdownIt) {
+        md.use(require('markdown-it-anchor'), {
+          // permalink: true,
+          // permalinkBefore: true,
+          // permalinkSymbol: '⚝',
+        })
         md.use(MarkdownPrismVue)
       },
     },
@@ -144,12 +149,23 @@ function VitePluginVueroDoc(options: Options = {}): Plugin {
         timeout(cb, t = 1000) { setTimeout(cb, t); },
         reset() { this.frontmatter = ${JSON.stringify(frontmatter)}; },
         clickMe(event) { 
-          const text = event.target.innerText; 
+          const text = event.currentTarget.innerText; 
           if (text === 'Clicked!') return;
           
-          event.target.innerText = 'Clicked!'; 
+          event.currentTarget.innerText = 'Clicked!'; 
           this.timeout(() => {
-            event.target.innerText = text;
+            event.currentTarget.innerText = text;
+          })
+        },
+        clickMyText(event) { 
+          const inner = event.currentTarget.querySelector('.text');
+          if (!inner) return;
+          const text = inner.innerText; 
+          if (text === 'Clicked!') return;
+          
+          inner.innerText = 'Clicked!'; 
+          this.timeout(() => {
+            inner.innerText = text;
           })
         },
       }`
