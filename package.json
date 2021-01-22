@@ -4,6 +4,9 @@
   "private": "true",
   "license": "MIT",
   "scripts": {
+    "postinstall": "husky install",
+    "pre-commit": "lint-staged",
+    "commit-msg": "node scripts/verifyCommit.js",
     "dev": "vite",
     "build": "run-s build:*",
     "build:clean": "rimraf dist",
@@ -61,6 +64,7 @@
     "eslint-plugin-prettier-vue": "3.0.0-alpha.2",
     "eslint-plugin-vue": "7.4.1",
     "gray-matter": "^4.0.2",
+    "husky": "^5.0.6",
     "lint-staged": "^10.5.3",
     "markdown-it": "^12.0.4",
     "markdown-it-anchor": "^7.0.0",
@@ -87,10 +91,6 @@
     "vite-ssg": "0.4.1",
     "voie-pages": "^0.4.0",
     "yorkie": "^2.0.0"
-  },
-  "gitHooks": {
-    "pre-commit": "lint-staged",
-    "commit-msg": "node scripts/verifyCommit.js"
   },
   "lint-staged": {
     "*.ts": [
