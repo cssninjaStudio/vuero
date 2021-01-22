@@ -78,330 +78,160 @@ useHead({
             <div class="hub-body">
               <div class="body-inner">
                 <!--Component-->
-                <div class="hub-card">
-                  <div class="hub-card-body">
-                    <div class="inner-content">
-                      <h3 class="title is-5 is-narrow is-thin">Avatars</h3>
-                      <p class="light-text">
-                        Get familiar with the Vuero avatar styles. Code examples
-                        included.
-                      </p>
-                    </div>
-                    <img
-                      class="light-image"
-                      src="/images/illustrations/components/avatar.svg"
-                      alt=""
-                    />
-                    <img
-                      class="dark-image"
-                      src="/images/illustrations/components/avatar-dark.svg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="hub-card-foot">
-                    <RouterLink :to="{ name: 'components-avatars' }"
-                      >Get Started</RouterLink
-                    >
-                  </div>
-                </div>
+                <HubCard
+                  title="Avatars"
+                  content="Get familiar with the Vuero avatar styles. Code examples
+                        included."
+                  light="/images/illustrations/components/avatar.svg"
+                  dark="/images/illustrations/components/avatar-dark.svg"
+                >
+                  <RouterLink :to="{ name: 'components-avatars' }"
+                    >Get Started</RouterLink
+                  >
+                </HubCard>
+
                 <!--Component-->
-                <div class="hub-card">
-                  <div class="hub-card-body">
-                    <div class="inner-content">
-                      <h3 class="title is-5 is-narrow is-thin">Accordions</h3>
-                      <p class="light-text">
-                        Get familiar with the Vuero accordion styles. Code
-                        examples included.
-                      </p>
-                    </div>
-                    <img
-                      class="light-image"
-                      src="/images/illustrations/components/accordion.svg"
-                      alt=""
-                    />
-                    <img
-                      class="dark-image"
-                      src="/images/illustrations/components/accordion-dark.svg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="hub-card-foot">
-                    <RouterLink :to="{ name: 'components-accordion-basic' }"
-                      >Get Started</RouterLink
-                    >
-                  </div>
-                </div>
+                <HubCard
+                  title="Accordions"
+                  content="Get familiar with the Vuero accordion styles. Code
+                        examples included."
+                  light="/images/illustrations/components/accordion.svg"
+                  dark="/images/illustrations/components/accordion-dark.svg"
+                >
+                  <RouterLink :to="{ name: 'components-accordion-basic' }"
+                    >Get Started</RouterLink
+                  >
+                </HubCard>
+
                 <!--Component-->
-                <div class="hub-card">
-                  <div class="hub-card-body">
-                    <div class="inner-content">
-                      <h3 class="title is-5 is-narrow is-thin">Breadcrumbs</h3>
-                      <p class="light-text">
-                        Get familiar with the Vuero breadcrumb styles. Code
-                        examples included.
-                      </p>
-                    </div>
-                    <img
-                      class="light-image"
-                      src="/images/illustrations/components/breadcrumb.svg"
-                      alt=""
-                    />
-                    <img
-                      class="dark-image"
-                      src="/images/illustrations/components/breadcrumb-dark.svg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="hub-card-foot">
-                    <RouterLink :to="{ name: 'components-breadcrumb' }"
-                      >Get Started</RouterLink
-                    >
-                  </div>
-                </div>
+                <HubCard
+                  title="Breadcrumbs"
+                  content="Get familiar with the Vuero breadcrumb styles. Code
+                        examples included."
+                  light="/images/illustrations/components/breadcrumb.svg"
+                  dark="/images/illustrations/components/breadcrumb-dark.svg"
+                >
+                  <RouterLink :to="{ name: 'components-breadcrumb' }"
+                    >Get Started</RouterLink
+                  >
+                </HubCard>
+
                 <!--Component-->
-                <div class="hub-card">
-                  <div class="hub-card-body">
-                    <div class="inner-content">
-                      <h3 class="title is-5 is-narrow is-thin">Dropdowns</h3>
-                      <p class="light-text">
-                        Get familiar with the Vuero dropdown styles. Code
-                        examples included.
-                      </p>
-                    </div>
-                    <img
-                      class="light-image"
-                      src="/images/illustrations/components/dropdown.svg"
-                      alt=""
-                    />
-                    <img
-                      class="dark-image"
-                      src="/images/illustrations/components/dropdown-dark.svg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="hub-card-foot">
-                    <RouterLink :to="{ name: 'components-dropdown' }"
-                      >Get Started</RouterLink
-                    >
-                  </div>
-                </div>
+                <HubCard
+                  title="Dropdowns"
+                  content="Get familiar with the Vuero dropdown styles. Code
+                        examples included."
+                  light="/images/illustrations/components/dropdown.svg"
+                  dark="/images/illustrations/components/dropdown-dark.svg"
+                >
+                  <RouterLink :to="{ name: 'components-dropdown' }"
+                    >Get Started</RouterLink
+                  >
+                </HubCard>
+
                 <!--Component-->
-                <div class="hub-card">
-                  <div class="hub-card-body">
-                    <div class="inner-content">
-                      <h3 class="title is-5 is-narrow is-thin">Icon Box</h3>
-                      <p class="light-text">
-                        Get familiar with the Vuero icon boxes styles. Code
-                        examples included.
-                      </p>
-                    </div>
-                    <img
-                      class="light-image"
-                      src="/images/illustrations/components/icon-box.svg"
-                      alt=""
-                    />
-                    <img
-                      class="dark-image"
-                      src="/images/illustrations/components/icon-box-dark.svg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="hub-card-foot">
-                    <RouterLink :to="{ name: 'components-icon-box' }"
-                      >Get Started</RouterLink
-                    >
-                  </div>
-                </div>
+                <HubCard
+                  title="Icon Box"
+                  content="Get familiar with the Vuero icon boxes styles. Code
+                        examples included."
+                  light="/images/illustrations/components/icon-box.svg"
+                  dark="/images/illustrations/components/icon-box-dark.svg"
+                >
+                  <RouterLink :to="{ name: 'components-icon-box' }"
+                    >Get Started</RouterLink
+                  >
+                </HubCard>
+
                 <!--Component-->
-                <div class="hub-card">
-                  <div class="hub-card-body">
-                    <div class="inner-content">
-                      <h3 class="title is-5 is-narrow is-thin">Messages</h3>
-                      <p class="light-text">
-                        Get familiar with the Vuero messages styles. Code
-                        examples included.
-                      </p>
-                    </div>
-                    <img
-                      class="light-image"
-                      src="/images/illustrations/components/message.svg"
-                      alt=""
-                    />
-                    <img
-                      class="dark-image"
-                      src="/images/illustrations/components/message-dark.svg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="hub-card-foot">
-                    <RouterLink :to="{ name: 'components-messages' }"
-                      >Get Started</RouterLink
-                    >
-                  </div>
-                </div>
+                <HubCard
+                  title="Messages"
+                  content="Get familiar with the Vuero messages styles. Code
+                        examples included."
+                  light="/images/illustrations/components/message.svg"
+                  dark="/images/illustrations/components/message-dark.svg"
+                >
+                  <RouterLink :to="{ name: 'components-messages' }"
+                    >Get Started</RouterLink
+                  >
+                </HubCard>
+
                 <!--Component-->
-                <div class="hub-card">
-                  <div class="hub-card-body">
-                    <div class="inner-content">
-                      <h3 class="title is-5 is-narrow is-thin">Modals</h3>
-                      <p class="light-text">
-                        Get familiar with the Vuero modal styles. Code examples
-                        included.
-                      </p>
-                    </div>
-                    <img
-                      class="light-image"
-                      src="/images/illustrations/components/modal.svg"
-                      alt=""
-                    />
-                    <img
-                      class="dark-image"
-                      src="/images/illustrations/components/modal-dark.svg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="hub-card-foot">
-                    <RouterLink :to="{ name: 'components-modal' }"
-                      >Get Started</RouterLink
-                    >
-                  </div>
-                </div>
+                <HubCard
+                  title="Modals"
+                  content="Get familiar with the Vuero modal styles. Code examples
+                        included."
+                  light="/images/illustrations/components/modal.svg"
+                  dark="/images/illustrations/components/modal-dark.svg"
+                >
+                  <RouterLink :to="{ name: 'components-modal' }"
+                    >Get Started</RouterLink
+                  >
+                </HubCard>
+
                 <!--Component-->
-                <div class="hub-card">
-                  <div class="hub-card-body">
-                    <div class="inner-content">
-                      <h3 class="title is-5 is-narrow is-thin">Progress</h3>
-                      <p class="light-text">
-                        Get familiar with the Vuero progress bar styles. Code
-                        examples included.
-                      </p>
-                    </div>
-                    <img
-                      class="light-image"
-                      src="/images/illustrations/components/progress.svg"
-                      alt=""
-                    />
-                    <img
-                      class="dark-image"
-                      src="/images/illustrations/components/progress-dark.svg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="hub-card-foot">
-                    <RouterLink :to="{ name: 'components-progress' }"
-                      >Get Started</RouterLink
-                    >
-                  </div>
-                </div>
+                <HubCard
+                  title="Progress"
+                  content="Get familiar with the Vuero progress bar styles. Code
+                        examples included."
+                  light="/images/illustrations/components/progress.svg"
+                  dark="/images/illustrations/components/progress-dark.svg"
+                >
+                  <RouterLink :to="{ name: 'components-progress' }"
+                    >Get Started</RouterLink
+                  >
+                </HubCard>
+
                 <!--Component-->
-                <div class="hub-card">
-                  <div class="hub-card-body">
-                    <div class="inner-content">
-                      <h3 class="title is-5 is-narrow is-thin">Tabs</h3>
-                      <p class="light-text">
-                        Get familiar with the Vuero nav tabs styles. Code
-                        examples included.
-                      </p>
-                    </div>
-                    <img
-                      class="light-image"
-                      src="/images/illustrations/components/tabs.svg"
-                      alt=""
-                    />
-                    <img
-                      class="dark-image"
-                      src="/images/illustrations/components/tabs-dark.svg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="hub-card-foot">
-                    <RouterLink :to="{ name: 'components-tabs-regular' }"
-                      >Get Started</RouterLink
-                    >
-                  </div>
-                </div>
+                <HubCard
+                  title="Tabs"
+                  content="Get familiar with the Vuero nav tabs styles. Code
+                        examples included."
+                  light="/images/illustrations/components/tabs.svg"
+                  dark="/images/illustrations/components/tabs-dark.svg"
+                >
+                  <RouterLink :to="{ name: 'components-tabs-regular' }"
+                    >Get Started</RouterLink
+                  >
+                </HubCard>
+
                 <!--Component-->
-                <div class="hub-card">
-                  <div class="hub-card-body">
-                    <div class="inner-content">
-                      <h3 class="title is-5 is-narrow is-thin">Flex Table</h3>
-                      <p class="light-text">
-                        Get familiar with the Vuero flex table styles. Code
-                        examples included.
-                      </p>
-                    </div>
-                    <img
-                      class="light-image"
-                      src="/images/illustrations/components/table.svg"
-                      alt=""
-                    />
-                    <img
-                      class="dark-image"
-                      src="/images/illustrations/components/table-dark.svg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="hub-card-foot">
-                    <RouterLink :to="{ name: 'components-table-flex' }"
-                      >Get Started</RouterLink
-                    >
-                  </div>
-                </div>
+                <HubCard
+                  title="Flex Table"
+                  content="Get familiar with the Vuero flex table styles. Code
+                        examples included."
+                  light="/images/illustrations/components/table.svg"
+                  dark="/images/illustrations/components/table-dark.svg"
+                >
+                  <RouterLink :to="{ name: 'components-table-flex' }"
+                    >Get Started</RouterLink
+                  >
+                </HubCard>
+
                 <!--Component-->
-                <div class="hub-card">
-                  <div class="hub-card-body">
-                    <div class="inner-content">
-                      <h3 class="title is-5 is-narrow is-thin">Snacks</h3>
-                      <p class="light-text">
-                        Get familiar with the Vuero snacks styles. Code examples
-                        included.
-                      </p>
-                    </div>
-                    <img
-                      class="light-image"
-                      src="/images/illustrations/components/snacks.svg"
-                      alt=""
-                    />
-                    <img
-                      class="dark-image"
-                      src="/images/illustrations/components/snacks-dark.svg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="hub-card-foot">
-                    <RouterLink :to="{ name: 'components-snacks' }"
-                      >Get Started</RouterLink
-                    >
-                  </div>
-                </div>
+                <HubCard
+                  title="Snacks"
+                  content="Get familiar with the Vuero snacks styles. Code examples
+                        included."
+                  light="/images/illustrations/components/snacks.svg"
+                  dark="/images/illustrations/components/snacks-dark.svg"
+                >
+                  <RouterLink :to="{ name: 'components-snacks' }"
+                    >Get Started</RouterLink
+                  >
+                </HubCard>
+
                 <!--Component-->
-                <div class="hub-card">
-                  <div class="hub-card-body">
-                    <div class="inner-content">
-                      <h3 class="title is-5 is-narrow is-thin">Plugins</h3>
-                      <p class="light-text">
-                        Get familiar with the Vuero plugins. Code examples
-                        included.
-                      </p>
-                    </div>
-                    <img
-                      class="light-image"
-                      src="/images/illustrations/components/plugins.svg"
-                      alt=""
-                    />
-                    <img
-                      class="dark-image"
-                      src="/images/illustrations/components/plugins-dark.svg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="hub-card-foot">
-                    <RouterLink
-                      :to="{ name: 'components-plugins-autocomplete' }"
-                      >Get Started</RouterLink
-                    >
-                  </div>
-                </div>
+                <HubCard
+                  title="Plugins"
+                  content="Get familiar with the Vuero plugins. Code examples
+                        included."
+                  light="/images/illustrations/components/plugins.svg"
+                  dark="/images/illustrations/components/plugins-dark.svg"
+                >
+                  <RouterLink :to="{ name: 'components-plugins-autocomplete' }"
+                    >Get Started</RouterLink
+                  >
+                </HubCard>
               </div>
             </div>
 

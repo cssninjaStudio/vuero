@@ -7,6 +7,11 @@ import {
   toggleSidebar,
 } from '/@src/composition/state/ui/activeSidebarState'
 
+import {
+  accordionSimpleData,
+  accordionExclusiveData,
+} from '/@src/composition/state/documentation/components/accordion'
+
 onMounted(() => {
   activeSidebar.value = 'components'
 })
@@ -75,109 +80,15 @@ useHead({
       <div class="columns is-multiline">
         <div class="column is-12">
           <!--Accordion-->
-          <div class="demo-card">
-            <div class="demo-title">
-              <h3 class="title is-thin is-5">Accordion</h3>
-              <p>
-                Vuero provides an accordion component with enough styling to be
-                able to use it as is, out of the box. You have the choice
-                between a regular accordion, which means that each item can be
-                openened separately, and an exclusive accordion, meaning that
-                only one item can be expanded at a time. To make an accordion
-                exclusive, just add the
-                <code>is-exclusive</code> class to the target
-                <code>accordion</code> element. Check the markup for more
-                details.
-              </p>
-              <a class="code-trigger">
-                <i class="iconify open" data-icon="feather:code"></i>
-                <i class="iconify close" data-icon="feather:x"></i>
-              </a>
-            </div>
-            <div class="card-inner no-padding">
-              <div class="highlight highlight-block">
-                <pre><code class="code-highlight">
-&#x3C;div class=&#x22;single-accordion&#x22;&#x3E;
-    &#x3C;div class=&#x22;accordion-header&#x22;&#x3E;Accordion Item 1&#x3C;/div&#x3E;
-    &#x3C;div class=&#x22;accordion-content&#x22;&#x3E;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.&#x3C;/div&#x3E;
-
-    &#x3C;div class=&#x22;accordion-header&#x22;&#x3E;Accordion Item 2&#x3C;/div&#x3E;
-    &#x3C;div class=&#x22;accordion-content&#x22;&#x3E;Et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.&#x3C;/div&#x3E;
-
-    &#x3C;div class=&#x22;accordion-header&#x22;&#x3E;Accordion Item 3&#x3C;/div&#x3E;
-    &#x3C;div class=&#x22;accordion-content&#x22;&#x3E;Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur.&#x3C;/div&#x3E;
-&#x3C;/div&#x3E;
-
-&#x3C;div class=&#x22;single-accordion is-exclusive&#x22;&#x3E;
-    &#x3C;div class=&#x22;accordion-header&#x22;&#x3E;Exclusive Item 1&#x3C;/div&#x3E;
-    &#x3C;div class=&#x22;accordion-content&#x22;&#x3E;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.&#x3C;/div&#x3E;
-
-    &#x3C;div class=&#x22;accordion-header&#x22;&#x3E;Exclusive Item 2&#x3C;/div&#x3E;
-    &#x3C;div class=&#x22;accordion-content&#x22;&#x3E;Et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.&#x3C;/div&#x3E;
-
-    &#x3C;div class=&#x22;accordion-header&#x22;&#x3E;Exclusive Item 3&#x3C;/div&#x3E;
-    &#x3C;div class=&#x22;accordion-content&#x22;&#x3E;Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur.&#x3C;/div&#x3E;
-&#x3C;/div&#x3E;
-</code></pre>
-              </div>
-            </div>
-          </div>
+          <AccordionDefaultDocumentation />
         </div>
 
         <div class="column is-6">
-          <div class="single-accordion">
-            <div class="accordion-header">Accordion Item 1</div>
-            <div class="accordion-content">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo.
-            </div>
-
-            <div class="accordion-header">Accordion Item 2</div>
-            <div class="accordion-content">
-              Et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
-              ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
-              sed quia consequuntur magni dolores eos qui ratione voluptatem
-              sequi nesciunt.
-            </div>
-
-            <div class="accordion-header">Accordion Item 3</div>
-            <div class="accordion-content">
-              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-              aut fugit, sed quia consequuntur magni dolores eos qui ratione
-              voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
-              ipsum quia dolor sit amet, consectetur.
-            </div>
-          </div>
+          <AccordionSimple :items="accordionSimpleData" />
         </div>
 
         <div class="column is-6">
-          <div class="single-accordion is-exclusive">
-            <div class="accordion-header">Exclusive Item 1</div>
-            <div class="accordion-content">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo.
-            </div>
-
-            <div class="accordion-header">Exclusive Item 2</div>
-            <div class="accordion-content">
-              Et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
-              ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
-              sed quia consequuntur magni dolores eos qui ratione voluptatem
-              sequi nesciunt.
-            </div>
-
-            <div class="accordion-header">Exclusive Item 3</div>
-            <div class="accordion-content">
-              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-              aut fugit, sed quia consequuntur magni dolores eos qui ratione
-              voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
-              ipsum quia dolor sit amet, consectetur.
-            </div>
-          </div>
+          <AccordionExclusive :items="accordionExclusiveData" />
         </div>
       </div>
     </div>

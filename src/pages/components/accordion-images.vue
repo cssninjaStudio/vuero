@@ -7,6 +7,8 @@ import {
   toggleSidebar,
 } from '/@src/composition/state/ui/activeSidebarState'
 
+import { accordionImagesData } from '/@src/composition/state/documentation/components/accordion'
+
 onMounted(() => {
   activeSidebar.value = 'components'
 })
@@ -76,174 +78,10 @@ useHead({
       <div class="columns is-multiline">
         <div class="column is-12">
           <!--Image Accordion-->
-          <div class="demo-card">
-            <div class="demo-title">
-              <h3 class="title is-thin is-5">Image Accordion</h3>
-              <p>
-                A nice experimental and playful CSS only image accordion. Can be
-                used for many purposes. Background images are added with js, so
-                you don't have to change any CSS. Images simply stack on mobile.
-                Check markup for more details about usage.
-              </p>
-              <a class="code-trigger">
-                <i class="iconify open" data-icon="feather:code"></i>
-                <i class="iconify close" data-icon="feather:x"></i>
-              </a>
-            </div>
-            <div class="card-inner no-padding">
-              <div class="highlight highlight-block">
-                <pre><code class="code-highlight">
-&#x3C;div class=&#x22;image-accordion&#x22;&#x3E;
-    &#x3C;ul&#x3E;
-        &#x3C;li class=&#x22;has-background-image&#x22; tabindex=&#x22;1&#x22; data-background=&#x22;https://via.placeholder.com/800x600&#x22;&#x3E;
-            &#x3C;div&#x3E;
-                &#x3C;a&#x3E;
-                    &#x3C;h2&#x3E;Office Part I&#x3C;/h2&#x3E;
-                    &#x3C;p&#x3E;Lorem ipsum dolor sit amet, consectetur adipiscing elit&#x3C;/p&#x3E;
-                &#x3C;/a&#x3E;
-            &#x3C;/div&#x3E;
-        &#x3C;/li&#x3E;
-        &#x3C;li class=&#x22;has-background-image&#x22; tabindex=&#x22;2&#x22; data-background=&#x22;https://via.placeholder.com/800x600&#x22;&#x3E;
-            &#x3C;div&#x3E;
-                &#x3C;a&#x3E;
-                    &#x3C;h2&#x3E;Office Part II&#x3C;/h2&#x3E;
-                    &#x3C;p&#x3E;Lorem ipsum dolor sit amet, consectetur adipiscing elit&#x3C;/p&#x3E;
-                &#x3C;/a&#x3E;
-            &#x3C;/div&#x3E;
-        &#x3C;/li&#x3E;
-        &#x3C;li class=&#x22;has-background-image&#x22; tabindex=&#x22;3&#x22; data-background=&#x22;https://via.placeholder.com/800x600&#x22;&#x3E;
-            &#x3C;div&#x3E;
-                &#x3C;a&#x3E;
-                    &#x3C;h2&#x3E;12 Great Landscapes&#x3C;/h2&#x3E;
-                    &#x3C;p&#x3E;Lorem ipsum dolor sit amet, consectetur adipiscing elit&#x3C;/p&#x3E;
-                &#x3C;/a&#x3E;
-            &#x3C;/div&#x3E;
-        &#x3C;/li&#x3E;
-        &#x3C;li class=&#x22;has-background-image&#x22; tabindex=&#x22;4&#x22; data-background=&#x22;https://via.placeholder.com/800x600&#x22;&#x3E;
-            &#x3C;div&#x3E;
-                &#x3C;a&#x3E;
-                    &#x3C;h2&#x3E;Team Meetup&#x3C;/h2&#x3E;
-                    &#x3C;p&#x3E;Lorem ipsum dolor sit amet, consectetur adipiscing elit&#x3C;/p&#x3E;
-                &#x3C;/a&#x3E;
-            &#x3C;/div&#x3E;
-        &#x3C;/li&#x3E;
-        &#x3C;li class=&#x22;has-background-image&#x22; tabindex=&#x22;5&#x22; data-background=&#x22;https://via.placeholder.com/800x600&#x22;&#x3E;
-            &#x3C;div&#x3E;
-                &#x3C;a&#x3E;
-                    &#x3C;h2&#x3E;Purple Shades&#x3C;/h2&#x3E;
-                    &#x3C;p&#x3E;Lorem ipsum dolor sit amet, consectetur adipiscing elit&#x3C;/p&#x3E;
-                &#x3C;/a&#x3E;
-            &#x3C;/div&#x3E;
-        &#x3C;/li&#x3E;
-        &#x3C;li class=&#x22;has-background-image&#x22; tabindex=&#x22;6&#x22; data-background=&#x22;https://via.placeholder.com/800x600&#x22;&#x3E;
-            &#x3C;div&#x3E;
-                &#x3C;a&#x3E;
-                    &#x3C;h2&#x3E;Blue Note&#x3C;/h2&#x3E;
-                    &#x3C;p&#x3E;Lorem ipsum dolor sit amet, consectetur adipiscing elit&#x3C;/p&#x3E;
-                &#x3C;/a&#x3E;
-            &#x3C;/div&#x3E;
-        &#x3C;/li&#x3E;
-    &#x3C;/ul&#x3E;
-&#x3C;/div&#x3E;
-</code></pre>
-              </div>
-            </div>
-          </div>
-
-          <div class="image-accordion">
-            <ul>
-              <li
-                class="has-background-image"
-                tabindex="1"
-                data-background="https://via.placeholder.com/800x600"
-                data-demo-background="https://source.unsplash.com/FV3GConVSss/1600x900"
-              >
-                <div>
-                  <a>
-                    <h2>Office Part I</h2>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                    </p>
-                  </a>
-                </div>
-              </li>
-              <li
-                class="has-background-image"
-                tabindex="2"
-                data-background="https://via.placeholder.com/800x600"
-                data-demo-background="https://source.unsplash.com/rRiAzFkJPMo/1600x900"
-              >
-                <div>
-                  <a>
-                    <h2>Office Part II</h2>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                    </p>
-                  </a>
-                </div>
-              </li>
-              <li
-                class="has-background-image"
-                tabindex="3"
-                data-background="https://via.placeholder.com/800x600"
-                data-demo-background="https://source.unsplash.com/tvleqH3p1os/1600x900"
-              >
-                <div>
-                  <a>
-                    <h2>12 Great Landscapes</h2>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                    </p>
-                  </a>
-                </div>
-              </li>
-              <li
-                class="has-background-image"
-                tabindex="4"
-                data-background="https://via.placeholder.com/800x600"
-                data-demo-background="https://source.unsplash.com/-Xv7k95vOFA/1600x900"
-              >
-                <div>
-                  <a>
-                    <h2>Team Meetup</h2>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                    </p>
-                  </a>
-                </div>
-              </li>
-              <li
-                class="has-background-image"
-                tabindex="5"
-                data-background="https://via.placeholder.com/800x600"
-                data-demo-background="https://source.unsplash.com/F6NvgzU3RfM/1600x900"
-              >
-                <div>
-                  <a>
-                    <h2>Purple Shades</h2>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                    </p>
-                  </a>
-                </div>
-              </li>
-              <li
-                class="has-background-image"
-                tabindex="6"
-                data-background="https://via.placeholder.com/800x600"
-                data-demo-background="https://source.unsplash.com/5E5N49RWtbA/1600x900"
-              >
-                <div>
-                  <a>
-                    <h2>Blue Note</h2>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                    </p>
-                  </a>
-                </div>
-              </li>
-            </ul>
-          </div>
+          <AccordionImageDocumentation />
+        </div>
+        <div class="column is-12">
+          <AccordionImage :items="accordionImagesData" />
         </div>
       </div>
     </div>

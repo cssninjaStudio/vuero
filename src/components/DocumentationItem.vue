@@ -80,6 +80,11 @@ const displayCode = ref(false)
         background: lighten($dark-sidebar, 6%) !important;
         color: $primary;
       }
+
+      ::v-deep(strong) {
+        color: $white;
+        font-weight: 400;
+      }
     }
   }
 }

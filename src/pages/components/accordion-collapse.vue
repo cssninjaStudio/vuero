@@ -7,6 +7,11 @@ import {
   toggleSidebar,
 } from '/@src/composition/state/ui/activeSidebarState'
 
+import {
+  collapsePlusData,
+  collapseChevronData,
+} from '/@src/composition/state/documentation/components/accordion'
+
 onMounted(() => {
   activeSidebar.value = 'components'
 })
@@ -76,217 +81,15 @@ useHead({
       <div class="columns is-multiline">
         <div class="column is-12">
           <!--Collapse-->
-          <div class="demo-card">
-            <div class="demo-title">
-              <h3 class="title is-thin is-5">Collapse</h3>
-              <p>
-                Vuero provides a simple to use collapse component. There are 2
-                available variations that you can use to change the collapse
-                header icon. Add the <code>has-plus</code> class to the
-                <code>collapse-icon</code> element to use a plus icon. Add the
-                <code>has-chevron</code> class to the
-                <code>collapse-icon</code> element to use a chevron icon. Check
-                markup for more details.
-              </p>
-              <a class="code-trigger">
-                <i class="iconify open" data-icon="feather:code"></i>
-                <i class="iconify close" data-icon="feather:x"></i>
-              </a>
-            </div>
-            <div class="card-inner no-padding">
-              <div class="highlight highlight-block">
-                <pre><code class="code-highlight">
-&#x3C;div class=&#x22;collapse has-plus&#x22;&#x3E;
-    &#x3C;div class=&#x22;collapse-header&#x22;&#x3E;
-        &#x3C;h3&#x3E;Plus Item 1&#x3C;/h3&#x3E;
-        &#x3C;div class=&#x22;collapse-icon&#x22;&#x3E;
-            &#x3C;i data-feather=&#x22;plus&#x22;&#x3E;&#x3C;/i&#x3E;
-        &#x3C;/div&#x3E;
-    &#x3C;/div&#x3E;
-    &#x3C;div class=&#x22;collapse-content&#x22;&#x3E;
-        &#x3C;p&#x3E;Lorem ipsum dolor sit amet, consectetur adipiscing elit. At multis malis affectus. Sed quid sentiat, non videtis. Sumenda potius quam expetenda. Quacumque enim ingredimur, in aliqua historia vestigium ponimus. Duarum enim vitarum nobis erunt instituta capienda. Cupiditates non Epicuri divisione finiebat, sed sua satietate.&#x3C;/p&#x3E;
-
-        &#x3C;p&#x3E;Duo Reges: constructio interrete. Quid est igitur, inquit, quod requiras? Quid ergo attinet gloriose loqui, nisi constanter loquare? Collige omnia, quae soletis: Praesidium amicorum. Non igitur bene.&#x3C;/p&#x3E;
-    &#x3C;/div&#x3E;
-&#x3C;/div&#x3E;
-
-&#x3C;div class=&#x22;collapse has-chevron&#x22;&#x3E;
-    &#x3C;div class=&#x22;collapse-header&#x22;&#x3E;
-        &#x3C;h3&#x3E;Chevron Item 2&#x3C;/h3&#x3E;
-        &#x3C;div class=&#x22;collapse-icon&#x22;&#x3E;
-            &#x3C;i data-feather=&#x22;chevron-down&#x22;&#x3E;&#x3C;/i&#x3E;
-        &#x3C;/div&#x3E;
-    &#x3C;/div&#x3E;
-    &#x3C;div class=&#x22;collapse-content&#x22;&#x3E;
-        &#x3C;p&#x3E;Lorem ipsum dolor sit amet, consectetur adipiscing elit. At multis malis affectus. Sed quid sentiat, non videtis. Sumenda potius quam expetenda. Quacumque enim ingredimur, in aliqua historia vestigium ponimus. Duarum enim vitarum nobis erunt instituta capienda. Cupiditates non Epicuri divisione finiebat, sed sua satietate.&#x3C;/p&#x3E;
-
-        &#x3C;p&#x3E;Duo Reges: constructio interrete. Quid est igitur, inquit, quod requiras? Quid ergo attinet gloriose loqui, nisi constanter loquare? Collige omnia, quae soletis: Praesidium amicorum. Non igitur bene.&#x3C;/p&#x3E;
-    &#x3C;/div&#x3E;
-&#x3C;/div&#x3E;
-</code></pre>
-              </div>
-            </div>
-          </div>
+          <AccordionCollapseDocumentation />
         </div>
 
         <div class="column is-6">
-          <div class="collapse has-plus">
-            <div class="collapse-header">
-              <h3>Plus Item 1</h3>
-              <div class="collapse-icon">
-                <i class="iconify" data-icon="feather:plus"></i>
-              </div>
-            </div>
-            <div class="collapse-content">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. At
-                multis malis affectus. Sed quid sentiat, non videtis. Sumenda
-                potius quam expetenda. Quacumque enim ingredimur, in aliqua
-                historia vestigium ponimus. Duarum enim vitarum nobis erunt
-                instituta capienda. Cupiditates non Epicuri divisione finiebat,
-                sed sua satietate.
-              </p>
-
-              <p>
-                Duo Reges: constructio interrete. Quid est igitur, inquit, quod
-                requiras? Quid ergo attinet gloriose loqui, nisi constanter
-                loquare? Collige omnia, quae soletis: Praesidium amicorum. Non
-                igitur bene.
-              </p>
-            </div>
-          </div>
-
-          <div class="collapse has-plus">
-            <div class="collapse-header">
-              <h3>Plus Item 2</h3>
-              <div class="collapse-icon">
-                <i class="iconify" data-icon="feather:plus"></i>
-              </div>
-            </div>
-            <div class="collapse-content">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. At
-                multis malis affectus. Sed quid sentiat, non videtis. Sumenda
-                potius quam expetenda. Quacumque enim ingredimur, in aliqua
-                historia vestigium ponimus. Duarum enim vitarum nobis erunt
-                instituta capienda. Cupiditates non Epicuri divisione finiebat,
-                sed sua satietate.
-              </p>
-
-              <p>
-                Duo Reges: constructio interrete. Quid est igitur, inquit, quod
-                requiras? Quid ergo attinet gloriose loqui, nisi constanter
-                loquare? Collige omnia, quae soletis: Praesidium amicorum. Non
-                igitur bene.
-              </p>
-            </div>
-          </div>
-
-          <div class="collapse has-plus">
-            <div class="collapse-header">
-              <h3>Plus Item 3</h3>
-              <div class="collapse-icon">
-                <i class="iconify" data-icon="feather:plus"></i>
-              </div>
-            </div>
-            <div class="collapse-content">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. At
-                multis malis affectus. Sed quid sentiat, non videtis. Sumenda
-                potius quam expetenda. Quacumque enim ingredimur, in aliqua
-                historia vestigium ponimus. Duarum enim vitarum nobis erunt
-                instituta capienda. Cupiditates non Epicuri divisione finiebat,
-                sed sua satietate.
-              </p>
-
-              <p>
-                Duo Reges: constructio interrete. Quid est igitur, inquit, quod
-                requiras? Quid ergo attinet gloriose loqui, nisi constanter
-                loquare? Collige omnia, quae soletis: Praesidium amicorum. Non
-                igitur bene.
-              </p>
-            </div>
-          </div>
+          <CollapsePlus :items="collapsePlusData" />
         </div>
 
         <div class="column is-6">
-          <div class="collapse has-chevron">
-            <div class="collapse-header">
-              <h3>Chevron Item 1</h3>
-              <div class="collapse-icon">
-                <i class="iconify" data-icon="feather:chevron-down"></i>
-              </div>
-            </div>
-            <div class="collapse-content">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. At
-                multis malis affectus. Sed quid sentiat, non videtis. Sumenda
-                potius quam expetenda. Quacumque enim ingredimur, in aliqua
-                historia vestigium ponimus. Duarum enim vitarum nobis erunt
-                instituta capienda. Cupiditates non Epicuri divisione finiebat,
-                sed sua satietate.
-              </p>
-
-              <p>
-                Duo Reges: constructio interrete. Quid est igitur, inquit, quod
-                requiras? Quid ergo attinet gloriose loqui, nisi constanter
-                loquare? Collige omnia, quae soletis: Praesidium amicorum. Non
-                igitur bene.
-              </p>
-            </div>
-          </div>
-
-          <div class="collapse has-chevron">
-            <div class="collapse-header">
-              <h3>Chevron Item 2</h3>
-              <div class="collapse-icon">
-                <i class="iconify" data-icon="feather:chevron-down"></i>
-              </div>
-            </div>
-            <div class="collapse-content">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. At
-                multis malis affectus. Sed quid sentiat, non videtis. Sumenda
-                potius quam expetenda. Quacumque enim ingredimur, in aliqua
-                historia vestigium ponimus. Duarum enim vitarum nobis erunt
-                instituta capienda. Cupiditates non Epicuri divisione finiebat,
-                sed sua satietate.
-              </p>
-
-              <p>
-                Duo Reges: constructio interrete. Quid est igitur, inquit, quod
-                requiras? Quid ergo attinet gloriose loqui, nisi constanter
-                loquare? Collige omnia, quae soletis: Praesidium amicorum. Non
-                igitur bene.
-              </p>
-            </div>
-          </div>
-
-          <div class="collapse has-chevron">
-            <div class="collapse-header">
-              <h3>Chevron Item 3</h3>
-              <div class="collapse-icon">
-                <i class="iconify" data-icon="feather:chevron-down"></i>
-              </div>
-            </div>
-            <div class="collapse-content">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. At
-                multis malis affectus. Sed quid sentiat, non videtis. Sumenda
-                potius quam expetenda. Quacumque enim ingredimur, in aliqua
-                historia vestigium ponimus. Duarum enim vitarum nobis erunt
-                instituta capienda. Cupiditates non Epicuri divisione finiebat,
-                sed sua satietate.
-              </p>
-
-              <p>
-                Duo Reges: constructio interrete. Quid est igitur, inquit, quod
-                requiras? Quid ergo attinet gloriose loqui, nisi constanter
-                loquare? Collige omnia, quae soletis: Praesidium amicorum. Non
-                igitur bene.
-              </p>
-            </div>
-          </div>
+          <CollapseChevron :items="collapseChevronData" />
         </div>
       </div>
     </div>
