@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { PropType } from 'vue'
-import { computed, defineProps } from 'vue'
+import { computed, defineProps, onMounted } from 'vue'
 import { useRoute } from 'vue-router'
 import VueScrollTo from 'vue-scrollto'
 
@@ -30,6 +30,12 @@ const isActiveAnchor = computed(() => {
 const onTocClick = (id?: string) => {
   VueScrollTo.scrollTo(id ? `#${id}` : '#app', 500, { offset: -30 })
 }
+
+onMounted(() => {
+  if (route.hash) {
+    VueScrollTo.scrollTo(route.hash, 0, { offset: -30 })
+  }
+})
 </script>
 
 <template>
