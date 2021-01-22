@@ -1,4 +1,4 @@
-### H-Action
+### H-Action Alternative
 
 Vuero also provides a simple button called `h-action`. it doesn't come up with a lot of modifiers like the `H-Button` but is a solid alternative when you want to use simple buttons.
 

@@ -61,6 +61,7 @@
     "eslint-plugin-prettier-vue": "3.0.0-alpha.2",
     "eslint-plugin-vue": "7.4.1",
     "gray-matter": "^4.0.2",
+    "lint-staged": "^10.5.3",
     "markdown-it": "^12.0.4",
     "markdown-it-anchor": "^7.0.0",
     "npm-run-all": "4.1.5",
@@ -84,6 +85,25 @@
     "vite-plugin-pwa": "^0.3.9",
     "vite-plugin-voie": "^0.7.3",
     "vite-ssg": "0.4.1",
-    "voie-pages": "^0.4.0"
+    "voie-pages": "^0.4.0",
+    "yorkie": "^2.0.0"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged",
+    "commit-msg": "node scripts/verifyCommit.js"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "eslint",
+      "prettier --write"
+    ],
+    "*.scss": [
+      "stylelint",
+      "prettier --write"
+    ],
+    "*.vue": [
+      "eslint",
+      "prettier --write"
+    ]
   }
 }

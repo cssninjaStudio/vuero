@@ -3,7 +3,7 @@ state:
   disabled: true
 ---
 
-### Disabled Button
+### Disabled State
 
 Vuero buttons can be shown in a disabled state. To show a disabled button, add the `disabled` html attribute to the target button element.
 
