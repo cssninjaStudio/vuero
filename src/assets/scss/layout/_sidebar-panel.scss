@@ -191,13 +191,13 @@ body {
           }
         }
 
-        > a.router-link-active {
+        > a.router-link-exact-active {
           font-weight: 600;
           color: $primary;
         }
 
         &.has-children {
-          .is-submenu.router-link-active {
+          .is-submenu.router-link-exact-active {
             font-weight: 500;
             color: $primary;
           }
