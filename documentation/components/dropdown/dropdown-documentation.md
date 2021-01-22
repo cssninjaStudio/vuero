@@ -1,8 +1,6 @@
 ### Dropdown
 
-You can use a `BaseDropdown` to display a menu that will hold your options. You can change the menu orientation.  
-Use the `right` attribute on the component to align it to the right instead of left, which is the default. Use the `up` atribute to make it a dropup.  
-_Refer to the markup for more details._
+You can use a `<BaseDropdown />` component to display a menu that will hold your options. pass the `right` prop to the component to align it to the right instead of left, which is the default. Use the `up` prop to make it a dropup.
 
 <!--code-->
 

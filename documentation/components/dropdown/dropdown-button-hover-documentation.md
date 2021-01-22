@@ -1,7 +1,6 @@
 ### Hover buttons
 
-Vuero `BaseDropdown` can also be opened on hover action or any custom event.  
-_Please refer to the markup for more details about usage._
+Vuero's `<BaseDropdown />` component can also be opened on hover or after any custom event. Please refer to the markup for more details about usage.
 
 <!--code-->
 
@@ -15,7 +14,7 @@ _Please refer to the markup for more details about usage._
         @touch="toggle"
       >
         <span>Hover me!</span>
-        <span class="icon is-small">
+        <span class="base-caret">
           <Icon v-if="!isOpen" icon="fa:angle-down" />
           <Icon v-else icon="fa:angle-up" />
         </span>
@@ -48,7 +47,7 @@ _Please refer to the markup for more details about usage._
           @touch="toggle"
         >
           <span>Hover me!</span>
-          <span class="icon is-small">
+          <span class="base-caret">
             <Icon v-if="!isOpen" icon="fa:angle-down" />
             <Icon v-else icon="fa:angle-up" />
           </span>

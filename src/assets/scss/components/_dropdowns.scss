@@ -191,13 +191,21 @@
   }
 
   .is-trigger {
-    .button {
+    &.button {
       font-family: $font;
 
       &:focus {
         outline: none;
         border-color: darken($fade-grey, 4%);
         box-shadow: $light-box-shadow;
+      }
+
+      .base-caret {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 16px;
+        width: 16px;
       }
     }
   }
@@ -206,9 +214,15 @@
   .dropdown-menu {
     .dropdown-item {
       color: $light-text;
+      font-family: $font;
 
       &:hover {
         color: $dark-text;
+      }
+
+      &.is-active {
+        background: lighten($fade-grey, 3%);
+        //color: $white;
       }
 
       //Child dropdown parent
@@ -306,16 +320,15 @@ body {
     }
 
     .dropdown {
-      &.is-spaced {
-        &.is-dots {
-          &:hover,
-          &.is-active {
-            .is-trigger {
-              background: lighten($dark-sidebar, 2%) !important;
+      &.is-spaced,
+      &.is-dots {
+        &:hover,
+        &.is-active {
+          .is-trigger {
+            background: lighten($dark-sidebar, 2%) !important;
 
-              svg {
-                color: $dark-dark-text;
-              }
+            svg {
+              color: $dark-dark-text;
             }
           }
         }
@@ -371,6 +384,23 @@ body {
                 }
               }
 
+              &.is-active {
+                .icon {
+                  svg {
+                    color: $white !important;
+                  }
+
+                  .lnir,
+                  .lnil {
+                    color: $white;
+                  }
+                }
+
+                .meta span {
+                  color: $white !important;
+                }
+              }
+
               .icon {
                 svg {
                   color: $light-text;
@@ -403,7 +433,8 @@ body {
             color: $light-text;
 
             &.is-active {
-              background: $accent !important;
+              background: lighten($dark-sidebar, 2%) !important;
+              //color: $white !important;
             }
           }
 

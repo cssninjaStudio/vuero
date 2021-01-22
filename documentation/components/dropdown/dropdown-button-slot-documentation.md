@@ -1,7 +1,6 @@
 ### Context Menu
 
-Vuero `BaseDropdown` can also be displayed as a context menu holding a single icon. The icon can be whatever you want. This dropdown will have the specific `dots` attribute.  
-_Please refer to the markup for more details about usage._
+Vuero's `<BaseDropdown />` component can also be displayed as a context menu holding a single icon. The icon can be whatever you want. This dropdown has the specific `dots` prop set. Please refer to the markup for more details about usage.
 
 <!--code-->
 

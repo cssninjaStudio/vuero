@@ -1,7 +1,6 @@
 ### Menu with Icons
 
-`BaseDropdown` menus can have icons and more structured content. You can use them to display any type of information or options.  
-Use the `spaced` attribute with the provided markup in the code example.
+`<BaseDropdown />` menu items can have icons and a more structured layout. Use the `spaced` prop with the provided markup in the code example.
 
 <!--code-->
 

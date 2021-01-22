@@ -60,7 +60,7 @@ const { dropdownElement, open, close, toggle, isOpen } = useDropdown()
     >
       <button v-bind="$attrs" class="is-trigger button" @click="toggle">
         <span v-if="title">{{ title }}</span>
-        <span :class="[!modern && 'icon is-small', modern && 'caret']">
+        <span :class="[!modern && 'base-caret', modern && 'base-caret']">
           <Icon v-if="!isOpen" icon="fa:angle-down" />
           <Icon v-else icon="fa:angle-up" />
         </span>
@@ -72,7 +72,7 @@ const { dropdownElement, open, close, toggle, isOpen } = useDropdown()
         <slot name="content">
           <a href="#" class="dropdown-item"> Dropdown item </a>
           <a href="#" class="dropdown-item"> Other dropdown item </a>
-          <a href="#" class="dropdown-item is-active"> Active dropdown item </a>
+          <a href="#" class="dropdown-item"> Active dropdown item </a>
           <a href="#" class="dropdown-item"> Other dropdown item </a>
           <hr class="dropdown-divider" />
           <a href="#" class="dropdown-item"> With a divider </a>
@@ -146,6 +146,14 @@ const { dropdownElement, open, close, toggle, isOpen } = useDropdown()
         align-items: center;
         transition: all 0.3s;
         margin-left: 6px;
+
+        > span span {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 16px;
+          width: 16px;
+        }
 
         svg {
           height: 16px;
@@ -271,7 +279,7 @@ const { dropdownElement, open, close, toggle, isOpen } = useDropdown()
   }
 
   .is-trigger {
-    .button {
+    &.button {
       font-family: $font;
 
       &:focus {
@@ -279,6 +287,29 @@ const { dropdownElement, open, close, toggle, isOpen } = useDropdown()
         border-color: darken($fade-grey, 4%);
         box-shadow: $light-box-shadow;
       }
+
+      &:focus:not(:active) {
+        box-shadow: none !important;
+      }
+    }
+  }
+
+  .base-caret {
+    position: relative;
+    top: -3px;
+    margin-left: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 16px;
+    width: 16px;
+
+    > span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 16px;
+      width: 16px;
     }
   }
 
@@ -382,16 +413,15 @@ body {
     }
 
     .dropdown {
-      &.is-spaced {
-        &.is-dots {
-          &:hover,
-          &.is-active {
-            .is-trigger {
-              background: lighten($dark-sidebar, 2%) !important;
+      &.is-spaced,
+      &.is-dots {
+        &:hover,
+        &.is-active {
+          .is-trigger {
+            background: lighten($dark-sidebar, 2%) !important;
 
-              svg {
-                color: $dark-dark-text;
-              }
+            svg {
+              color: $dark-dark-text;
             }
           }
         }
@@ -476,10 +506,12 @@ body {
           border-color: lighten($dark-sidebar, 8%) !important;
 
           .dropdown-item {
+            font-family: $font;
             color: $light-text;
 
             &.is-active {
-              background: $accent !important;
+              background: lighten($dark-sidebar, 2%) !important;
+              //color: $white !important;
             }
           }
 

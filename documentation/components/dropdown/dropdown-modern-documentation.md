@@ -1,7 +1,6 @@
 ### Modern Dropdown
 
-If you add in some specific markup, `BaseDropdown` buttons can be enhanced into modern dropdowns with an animated caret icon.  
-Use the `modern` attribute on the component along with the specific markup that is provided in the code example. All button modifiers still apply.
+If you add in some specific markup, `<BaseDropdown />` buttons can be enhanced into modern dropdowns with an animated caret icon. Use the `modern` prop on the component.
 
 <!--code-->
 

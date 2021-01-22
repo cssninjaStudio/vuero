@@ -1,7 +1,6 @@
 ### Menu with Images
 
-`BaseDropdown` menus can have images and more structured content. You can use them to display any type of information or options.  
-Use the `spaced` attribute with the provided markup in the code example. The inner images can be made rounded by adding the `is-rounded` class to the image element.
+`<BaseDropdown />` menus items can have images and more original layout. Use the `spaced` prop with the provided markup in the code example. The inner images can be be made rounded by adding the `is-rounded` class to the image element.
 
 <!--code-->
 

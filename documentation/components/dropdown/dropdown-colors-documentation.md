@@ -1,7 +1,6 @@
 ### Dropdown Colors
 
-You can use all the available color classes on the `BaseDropdown` components, like `is-primary` or `is-danger` for instance.  
-_Refer to the button documentation for full customization options._
+You can use all the available color classes on the `<BaseDropdown />` component, like `is-primary` or `is-info` for instance. Refer to the button documentation for full customization options.
 
 <!--code-->
 
@@ -40,7 +39,7 @@ _Refer to the button documentation for full customization options._
   </div>
 
   <div class="control">
-    <BaseDropdown title="Danger button" class="is-danger">
+    <BaseDropdown title="Danger button" class="is-info">
       <template #content>
         <a href="#" class="dropdown-item"> Dropdown item </a>
         <a href="#" class="dropdown-item"> Other dropdown item </a>
