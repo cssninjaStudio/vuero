@@ -56,10 +56,12 @@ onMounted(() => {
           >{{ item.title }}</a
         >
       </li>
+      <li>
+        <a class="back-to-top" href="#" @click="() => onTocClick()">
+          <span>Back To Top</span>
+        </a>
+      </li>
     </ul>
-    <a class="back-to-top" href="#" @click="() => onTocClick()">
-      <span>Back To Top</span>
-    </a>
   </div>
 </template>
 
@@ -139,19 +141,8 @@ a {
 }
 
 .back-to-top {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin-top: 1.5rem;
-  padding: 0.75rem 0;
-  font-family: $font;
-  border-radius: 0.75rem;
-  transition: all 0.3s;
-
-  &:hover {
-    background: $white;
-  }
+  font-size: 0.75rem;
+  text-transform: uppercase;
 }
 
 .is-dark {
@@ -167,12 +158,6 @@ a {
     &:focus:not(.is-active),
     &:hover:not(.is-active) {
       color: $white;
-    }
-  }
-
-  .back-to-top {
-    &:hover {
-      background: lighten($dark-sidebar, 2%);
     }
   }
 }

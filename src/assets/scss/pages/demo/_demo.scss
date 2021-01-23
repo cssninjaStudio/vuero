@@ -355,6 +355,10 @@
     @include vuero-card--dark();
 
     .demo-title {
+      h3 {
+        color: $dark-dark-text;
+      }
+
       p {
         // code {
         //   // background-color: lighten($dark-sidebar, 6%) !important;
