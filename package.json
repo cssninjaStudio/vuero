@@ -5,8 +5,8 @@
   "license": "MIT",
   "scripts": {
     "postinstall": "husky install",
-    "pre-commit": "lint-staged",
-    "commit-msg": "node scripts/verifyCommit.js",
+    "precommit": "run-s precommit:*",
+    "precommit:lint-staged": "lint-staged",
     "dev": "vite",
     "build": "run-s build:*",
     "build:clean": "rimraf dist",
@@ -57,6 +57,7 @@
     "@vuedx/typescript-plugin-vue": "0.6.0",
     "autoprefixer": "^10.2.3",
     "axios": "0.21.1",
+    "chalk": "^4.1.0",
     "cross-env": "7.0.3",
     "cypress": "^6.3.0",
     "eslint": "7.18.0",

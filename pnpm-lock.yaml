@@ -33,6 +33,7 @@ devDependencies:
   '@vuedx/typescript-plugin-vue': 0.6.0
   autoprefixer: 10.2.3
   axios: 0.21.1
+  chalk: 4.1.0
   cross-env: 7.0.3
   cypress: 6.3.0
   eslint: 7.18.0
@@ -40,6 +41,7 @@ devDependencies:
   eslint-plugin-prettier-vue: 3.0.0-alpha.2_vue@3.0.5
   eslint-plugin-vue: 7.4.1_eslint@7.18.0
   gray-matter: 4.0.2
+  husky: 5.0.6
   lint-staged: 10.5.3
   markdown-it: 12.0.4
   markdown-it-anchor: 7.0.0_markdown-it@12.0.4
@@ -4031,6 +4033,13 @@ packages:
       node: '>=8.12.0'
     resolution:
       integrity: sha512-SEQu7vl8KjNL2eoGBLF3+wAjpsNfA9XMlXAYj/3EdaNfAlxKthD1xjEQfGOUhllCGGJVNY34bRr6lPINhNjyZw==
+  /husky/5.0.6:
+    dev: true
+    engines:
+      node: '>= 10'
+    hasBin: true
+    resolution:
+      integrity: sha512-SM+evfvcHT3rAYJKvPlatz3L5RqzgeM6xIvDjhs8VuhKj6iKqFDOt/Ov8sPjvWuE4FDB385gJBwWXRj7G3c1hg==
   /iconv-lite/0.4.24:
     dependencies:
       safer-buffer: 2.1.2
@@ -7502,6 +7511,7 @@ specifiers:
   axios: 0.21.1
   billboard.js: ^2.1.4
   bulma: 0.9.1
+  chalk: ^4.1.0
   cross-env: 7.0.3
   cypress: ^6.3.0
   dayjs: 1.10.3
@@ -7510,6 +7520,7 @@ specifiers:
   eslint-plugin-prettier-vue: 3.0.0-alpha.2
   eslint-plugin-vue: 7.4.1
   gray-matter: ^4.0.2
+  husky: ^5.0.6
   lint-staged: ^10.5.3
   markdown-it: ^12.0.4
   markdown-it-anchor: ^7.0.0
