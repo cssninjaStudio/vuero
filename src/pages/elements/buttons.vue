@@ -8,14 +8,6 @@ import {
   toggleSidebar,
 } from '/@src/composition/state/ui/activeSidebarState'
 
-import * as examples from './buttons.examples'
-
-const examplesIds = Object.keys(examples)
-const display = ref<any>({})
-for (const id of examplesIds) {
-  display[id] = false
-}
-
 const { markdownContainer, toc } = useMakrdownToc()
 
 onMounted(() => {
