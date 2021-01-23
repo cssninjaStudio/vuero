@@ -104,3 +104,55 @@
     transition: none;
   }
 }
+
+/* ==========================================================================
+5. list
+========================================================================== */
+
+.list-item {
+  display: inline-block;
+  margin-right: 10px;
+}
+.list-enter-active,
+.list-leave-active {
+  transition: all 1s ease;
+}
+.list-enter-from,
+.list-leave-to {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .list-enter-active,
+  .list-leave-active {
+    transition: none;
+  }
+}
+
+/* ==========================================================================
+6. list-complete
+========================================================================== */
+
+.list-complete-item {
+  transition: all 0.8s ease;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.list-complete-enter-from,
+.list-complete-leave-to {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.list-complete-leave-active {
+  position: absolute;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .list-complete-enter-active,
+  .list-complete-leave-active {
+    transition: none;
+  }
+}

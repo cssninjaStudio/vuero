@@ -13,6 +13,10 @@ useHead({
 
 <template>
   <div>
+    <teleport to="[data-teleport-bg]">
+      <div class="lifestyle-dashboard-bg is-webapp"></div>
+    </teleport>
+
     <!-- <div class="lifestyle-dashboard-bg"></div> -->
     <div class="page-title has-text-centered is-webapp">
       <div class="title-wrap">

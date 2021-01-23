@@ -1,6 +1,7 @@
 import { reactive } from 'vue'
 import { themeColors } from '/@src/composition/state/themeColors'
 
+//Bar Chart
 export const barData = [
   {
     x: 'Jan',
@@ -103,16 +104,16 @@ export const barData2 = [
   },
 ]
 
-export const salesBarOptions = reactive<any>({
+export const usersBarOptions = reactive<any>({
   series: [],
   chart: {
-    height: 205,
+    height: 235,
     type: 'bar',
     toolbar: {
       show: false,
     },
   },
-  colors: [themeColors.accent, themeColors.green],
+  colors: [themeColors.accent, themeColors.orange],
   dataLabels: {
     enabled: false,
   },

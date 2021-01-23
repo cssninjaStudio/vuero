@@ -126,7 +126,7 @@
         justify-content: center;
 
         &.is-active,
-        &.router-link-exact-active {
+        &.router-link-active {
           svg {
             color: $primary;
           }
@@ -156,7 +156,7 @@
 
           &:hover,
           &.is-selected,
-          &.router-link-exact-active {
+          &.router-link-active {
             .sidebar-svg {
               color: $primary;
             }

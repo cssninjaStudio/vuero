@@ -70,7 +70,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
 
                 <div class="column-content" data-simplebar>
                   <RouterLink
-                    :to="{ name: 'webapp-layouts-list-view-1' }"
+                    :to="{ name: 'webapp-layouts' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">

@@ -3088,7 +3088,7 @@
                   <span>List View 1</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-layouts-list-view-1' }"
+                  <RouterLink :to="{ name: 'webapp-layouts' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>

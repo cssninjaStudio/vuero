@@ -43,7 +43,7 @@ const activeTab = ref<'list' | 'grid' | 'app' | 'utility'>('list')
                 <h4 class="column-heading">Lists</h4>
                 <ul>
                   <li>
-                    <RouterLink :to="{ name: 'webapp-layouts-list-view-1' }">
+                    <RouterLink :to="{ name: 'webapp-layouts' }">
                       <i class="lnil lnil-list-alt"></i>
                       <span>List View V1</span>
                       <i class="iconify" data-icon="feather:circle"></i>

@@ -41,34 +41,6 @@ useHead({
       <Toolbar />
     </div>
 
-    <div class="list-view-toolbar">
-      <div class="control has-icon">
-        <input
-          class="input custom-text-filter"
-          placeholder="Search..."
-          data-filter-target=".list-view-item"
-        />
-        <div class="form-icon">
-          <i class="iconify" data-icon="feather:search"></i>
-        </div>
-      </div>
-
-      <div class="list-info">
-        <span>55 records found</span>
-      </div>
-
-      <div class="buttons">
-        <button class="button h-button is-primary is-elevated">
-          <span class="icon">
-            <i class="fas fa-check"></i>
-          </span>
-          <span>Approve</span>
-        </button>
-      </div>
-    </div>
-
-    <div class="page-content-inner">
-      <ViewListV1 />
-    </div>
+    <ViewListV1 />
   </div>
 </template>
