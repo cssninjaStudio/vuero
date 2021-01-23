@@ -149,12 +149,12 @@ function VitePluginVueroDoc(options: Options = {}): Plugin {
         timeout(cb, t = 1000) { setTimeout(cb, t); },
         reset() { this.frontmatter = ${JSON.stringify(frontmatter)}; },
         clickMe(event) { 
-          const text = event.currentTarget.innerText; 
+          const text = event.target.innerText; 
           if (text === 'Clicked!') return;
           
-          event.currentTarget.innerText = 'Clicked!'; 
+          event.target.innerText = 'Clicked!'; 
           this.timeout(() => {
-            event.currentTarget.innerText = text;
+            event.target.innerText = text;
           })
         },
         clickMyText(event) { 

@@ -47,7 +47,7 @@ Vuero buttons can be grouped together in an addon styled block of buttons. This 
 <div class="buttons">
   <div class="field has-addons">
     <p class="control">
-      <button class="button h-button" class="clickMyText">
+      <button class="button h-button" @click="clickMyText">
         <span class="icon is-small">
           <i class="fas fa-align-left"></i>
         </span>
@@ -55,7 +55,7 @@ Vuero buttons can be grouped together in an addon styled block of buttons. This 
       </button>
     </p>
     <p class="control">
-      <button class="button h-button" class="clickMyText">
+      <button class="button h-button" @click="clickMyText">
         <span class="icon is-small">
           <i class="fas fa-align-center"></i>
         </span>
@@ -63,7 +63,7 @@ Vuero buttons can be grouped together in an addon styled block of buttons. This 
       </button>
     </p>
     <p class="control">
-      <button class="button h-button" class="clickMyText">
+      <button class="button h-button" @click="clickMyText">
         <span class="icon is-small">
           <i class="fas fa-align-right"></i>
         </span>
