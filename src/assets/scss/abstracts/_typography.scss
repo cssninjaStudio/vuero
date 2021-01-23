@@ -124,7 +124,7 @@ code {
   }
 
   code {
-    background: #1a1a1f;
+    background: lighten($dark-sidebar, 6%);
     color: $accent;
   }
 

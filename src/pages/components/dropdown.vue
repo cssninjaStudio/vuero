@@ -67,7 +67,7 @@ useHead({
       <div class="columns">
         <div
           ref="markdownContainer"
-          :class="[toc.length > 0 ? 'is-10' : 'is-12']"
+          :class="[toc.length > 0 ? 'is-9' : 'is-12']"
           class="column"
         >
           <!--Dropdown-->
@@ -94,7 +94,7 @@ useHead({
           <!--Artificial Spacing-->
           <div class="demo-spacer"></div>
         </div>
-        <div v-if="toc.length" class="column is-2">
+        <div v-if="toc.length" class="column is-3">
           <DocumentationToc :toc="toc" />
         </div>
       </div>

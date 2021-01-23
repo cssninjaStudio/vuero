@@ -42,7 +42,7 @@ onMounted(() => {
 
 <template>
   <div class="toc">
-    <strong class="toc-title">Table of content</strong>
+    <strong class="toc-title">Contents</strong>
     <ul>
       <li
         v-for="item of toc"
@@ -56,13 +56,10 @@ onMounted(() => {
           >{{ item.title }}</a
         >
       </li>
-      <li>
-        <a href="#" @click="() => onTocClick()"
-          ><span class="iconify" data-icon="ic:baseline-arrow-upward"></span>
-          top</a
-        >
-      </li>
     </ul>
+    <a class="back-to-top" href="#" @click="() => onTocClick()">
+      <span>Back To Top</span>
+    </a>
   </div>
 </template>
 
@@ -72,6 +69,8 @@ onMounted(() => {
 
 .toc {
   position: fixed;
+  display: block;
+  padding-left: 2rem;
   transition: opacity 0.3s ease;
   opacity: 0.6;
 
@@ -82,9 +81,34 @@ onMounted(() => {
 }
 
 .toc-title {
-  color: $muted-grey;
+  font-family: $font-alt;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: $dark-text;
   padding-bottom: 4px;
+  margin-bottom: 1.25rem;
   display: block;
+}
+
+ul {
+  border-left: 1px solid darken($fade-grey, 6%);
+
+  li {
+    padding: 0.25rem 0;
+
+    a {
+      position: relative;
+      left: -2px;
+      font-family: $font;
+      border-left: 3px solid transparent;
+      padding: 0.5rem 1.25rem;
+
+      &.is-active {
+        font-weight: 500;
+        border-color: $primary;
+      }
+    }
+  }
 }
 
 .toc-level-4 {
@@ -102,18 +126,54 @@ onMounted(() => {
 }
 
 a {
-  color: $title-grey;
+  color: $light-text;
 
-  &.is-active,
-  &:focus,
-  &:hover {
+  &.is-active {
     color: $primary;
+  }
+
+  &:focus:not(.is-active),
+  &:hover:not(.is-active) {
+    color: $dark-text;
+  }
+}
+
+.back-to-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 1.5rem;
+  padding: 0.75rem 0;
+  font-family: $font;
+  border-radius: 0.75rem;
+  transition: all 0.3s;
+
+  &:hover {
+    background: $white;
   }
 }
 
 .is-dark {
   .toc-title {
     color: $dark-dark-text;
+  }
+
+  ul {
+    border-color: lighten($dark-sidebar, 22%);
+  }
+
+  a {
+    &:focus:not(.is-active),
+    &:hover:not(.is-active) {
+      color: $white;
+    }
+  }
+
+  .back-to-top {
+    &:hover {
+      background: lighten($dark-sidebar, 2%);
+    }
   }
 }
 </style>

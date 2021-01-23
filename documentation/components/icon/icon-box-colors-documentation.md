@@ -1,4 +1,4 @@
-### Icon box colors
+### Box colors
 
 The Vuero `<IconBox />` component can have different colors. You can change the color by passing a value to the `color` prop. Available values are: `primary`, `info`, `success`, `warning`, `danger`, `purple`, `yellow`, `orange`, `green`, `red`, or `blue`.
 
@@ -6,39 +6,39 @@ The Vuero `<IconBox />` component can have different colors. You can change the 
 
 ```vue {2-4}
 <template>
-    <IconBox size="medium" color="primary">
-        <i class="lnil lnil-vector-pen"></i>
-    </IconBox>
-    <IconBox size="medium" color="info">
-        <i class="lnil lnil-vector-pen"></i>
-    </IconBox>
-    <IconBox size="medium" color="success">
-        <i class="lnil lnil-vector-pen"></i>
-    </IconBox>
-    <IconBox size="medium" color="warning">
-        <i class="lnil lnil-vector-pen"></i>
-    </IconBox>
-    <IconBox size="medium" color="danger">
-        <i class="lnil lnil-vector-pen"></i>
-    </IconBox>
-    <IconBox size="medium" color="purple">
-        <i class="lnil lnil-vector-pen"></i>
-    </IconBox>
-    <IconBox size="medium" color="yellow">
-        <i class="lnil lnil-vector-pen"></i>
-    </IconBox>
-    <IconBox size="medium" color="orange">
-        <i class="lnil lnil-vector-pen"></i>
-    </IconBox>
-    <IconBox size="medium" color="green">
-        <i class="lnil lnil-vector-pen"></i>
-    </IconBox>
-    <IconBox size="medium" color="red">
-        <i class="lnil lnil-vector-pen"></i>
-    </IconBox>
-    <IconBox size="medium" color="blue">
-        <i class="lnil lnil-vector-pen"></i>
-    </IconBox>
+  <IconBox size="medium" color="primary">
+    <i class="lnil lnil-vector-pen"></i>
+  </IconBox>
+  <IconBox size="medium" color="info">
+    <i class="lnil lnil-vector-pen"></i>
+  </IconBox>
+  <IconBox size="medium" color="success">
+    <i class="lnil lnil-vector-pen"></i>
+  </IconBox>
+  <IconBox size="medium" color="warning">
+    <i class="lnil lnil-vector-pen"></i>
+  </IconBox>
+  <IconBox size="medium" color="danger">
+    <i class="lnil lnil-vector-pen"></i>
+  </IconBox>
+  <IconBox size="medium" color="purple">
+    <i class="lnil lnil-vector-pen"></i>
+  </IconBox>
+  <IconBox size="medium" color="yellow">
+    <i class="lnil lnil-vector-pen"></i>
+  </IconBox>
+  <IconBox size="medium" color="orange">
+    <i class="lnil lnil-vector-pen"></i>
+  </IconBox>
+  <IconBox size="medium" color="green">
+    <i class="lnil lnil-vector-pen"></i>
+  </IconBox>
+  <IconBox size="medium" color="red">
+    <i class="lnil lnil-vector-pen"></i>
+  </IconBox>
+  <IconBox size="medium" color="blue">
+    <i class="lnil lnil-vector-pen"></i>
+  </IconBox>
 </template>
 ```
 
