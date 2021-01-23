@@ -86,6 +86,10 @@ var {
   color: $dark-text;
 }
 
+code {
+  white-space: pre;
+}
+
 /* ==========================================================================
 2. Titles Dark mode
 ========================================================================== */
@@ -117,6 +121,15 @@ var {
   h5,
   h6 {
     color: $dark-dark-text;
+  }
+
+  code {
+    background: #1a1a1f;
+    color: $accent;
+  }
+
+  strong {
+    color: $white;
   }
 }
 

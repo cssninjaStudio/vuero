@@ -659,6 +659,22 @@ var {
 14. Dark mode images
 ========================================================================== */
 
+.light-image {
+  display: inline-block !important;
+}
+
+.dark-image {
+  display: none !important;
+}
+
+.light-image-block {
+  display: block;
+}
+
+.dark-image-block {
+  display: none;
+}
+
 .is-dark {
   .light-image {
     display: none !important;
@@ -674,22 +690,6 @@ var {
 
   .dark-image-block {
     display: block !important;
-  }
-
-  .light-image {
-    display: inline-block !important;
-  }
-
-  .dark-image {
-    display: none !important;
-  }
-
-  .light-image-block {
-    display: block;
-  }
-
-  .dark-image-block {
-    display: none;
   }
 }
 

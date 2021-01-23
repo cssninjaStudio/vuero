@@ -48,17 +48,19 @@ watch(
         </RouterLink>
         <div class="separator"></div>
         <ProjectsQuickDropdown />
-        <h1 id="webapp-page-title" class="title is-5">Welcome</h1>
+        <h1 class="title is-5">Welcome</h1>
       </div>
       <div class="center">
         <div
-          id="webapp-navbar-menu"
           class="centered-links"
           :class="[activeSubnav === 'search' && 'is-hidden']"
         >
           <a
-            id="dashboards-navbar-menu"
-            :class="[activeSubnav === 'home' && 'is-active']"
+            :class="[
+              (activeSubnav === 'home' ||
+                route.path.startsWith('/webapp/dashboards')) &&
+                'is-active',
+            ]"
             class="centered-link centered-link-toggle"
             @click="toggleSubnav('home')"
           >
@@ -66,8 +68,11 @@ watch(
             <span>Dashboards</span>
           </a>
           <a
-            id="layouts-navbar-menu"
-            :class="[activeSubnav === 'layouts' && 'is-active']"
+            :class="[
+              (activeSubnav === 'layouts' ||
+                route.path.startsWith('/webapp/layouts')) &&
+                'is-active',
+            ]"
             class="centered-link centered-link-toggle"
             @click="toggleSubnav('layouts')"
           >
@@ -75,7 +80,6 @@ watch(
             <span>Layouts</span>
           </a>
           <a
-            id="elements-navbar-menu"
             :class="[activeSubnav === 'elements' && 'is-active']"
             class="centered-link centered-link-toggle"
             @click="toggleSubnav('elements')"
@@ -84,7 +88,6 @@ watch(
             <span>Elements</span>
           </a>
           <a
-            id="components-navbar-menu"
             :class="[activeSubnav === 'components' && 'is-active']"
             class="centered-link centered-link-toggle"
             @click="toggleSubnav('components')"
@@ -105,7 +108,6 @@ watch(
           </a>
         </div>
         <div
-          id="webapp-navbar-search"
           class="centered-search"
           :class="[activeSubnav !== 'search' && 'is-hidden']"
         >
@@ -119,11 +121,7 @@ watch(
               <div class="form-icon">
                 <i class="iconify" data-icon="feather:search"></i>
               </div>
-              <div
-                id="webapp-navbar-search-close"
-                class="form-icon is-right"
-                @click="activeSubnav = 'closed'"
-              >
+              <div class="form-icon is-right" @click="activeSubnav = 'closed'">
                 <i class="iconify" data-icon="feather:x"></i>
               </div>
               <div class="search-results has-slimscroll"></div>

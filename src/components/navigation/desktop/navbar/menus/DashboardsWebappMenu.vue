@@ -7,7 +7,6 @@ const activeTab = ref<'dashboards' | 'templates'>('dashboards')
 
 <template>
   <div
-    id="dashboards-webapp-menu"
     :class="[activeSubnav === 'home' && 'is-active']"
     class="webapp-subnavbar-inner tabs-wrapper"
   >
@@ -26,7 +25,6 @@ const activeTab = ref<'dashboards' | 'templates'>('dashboards')
 
     <div class="container">
       <div
-        id="dashboard-pages-tab"
         class="tab-content"
         :class="[activeTab === 'dashboards' && 'is-active']"
       >
@@ -210,7 +208,6 @@ const activeTab = ref<'dashboards' | 'templates'>('dashboards')
       </div>
 
       <div
-        id="templates-pages-tab"
         class="tab-content"
         :class="[activeTab === 'templates' && 'is-active']"
       >

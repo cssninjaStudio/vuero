@@ -82,12 +82,8 @@ useHead({
 
             <div class="chat-body-wrap">
               <!-- Chat Body -->
-              <ol
-                id="chat-body"
-                class="chat-body"
-                data-conversation-body="conversation1"
-              >
-                <li class="no-messages is-hidden">
+              <ol id="chat-body" class="chat-body">
+                <li class="no-messages">
                   <img
                     class="light-image"
                     src="/images/illustrations/placeholders/search-4.svg"

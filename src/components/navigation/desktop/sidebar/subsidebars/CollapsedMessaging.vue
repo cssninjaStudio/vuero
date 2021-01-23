@@ -6,7 +6,10 @@ import {
 </script>
 
 <template>
-  <div class="collapsed-messaging">
+  <div
+    :class="[activeSidebar !== 'messages' && 'is-active']"
+    class="collapsed-messaging"
+  >
     <div class="inner">
       <div class="collapsed-menu">
         <div

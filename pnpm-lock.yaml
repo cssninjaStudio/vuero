@@ -5,10 +5,11 @@ dependencies:
   apexcharts: 3.23.1
   billboard.js: 2.1.4
   bulma: 0.9.1
-  dayjs: 1.10.3
   markdown-it-emoji: 2.0.0
   moment: 2.29.1
   nprogress: 0.2.0
+  simplebar: 6.0.0-beta.9
+  simplebar-vue: 1.6.0_vue@3.0.5
   vue: 3.0.5
   vue-i18n: 9.0.0-rc.2_vue@3.0.5
   vue-router: 4.0.3_vue@3.0.5
@@ -16,7 +17,7 @@ dependencies:
   vue-toastification: 2.0.0-rc.1_vue@3.0.5
   vue3-apexcharts: 1.1.1_apexcharts@3.23.1+vue@3.0.5
 devDependencies:
-  '@iconify/json': 1.1.289
+  '@iconify/json': 1.1.290
   '@intlify/vite-plugin-vue-i18n': 1.0.0-beta.12_rollup@2.38.0
   '@purge-icons/generated': 0.5.2
   '@types/markdown-it': 12.0.1
@@ -26,7 +27,7 @@ devDependencies:
   '@types/simplebar': 5.1.1
   '@typescript-eslint/eslint-plugin': 4.14.0_980e7d90d2d08155204a38366bd3b934
   '@typescript-eslint/parser': 4.14.0_eslint@7.18.0+typescript@4.1.3
-  '@vitejs/plugin-vue': 1.1.0_@vue+compiler-sfc@3.0.5
+  '@vitejs/plugin-vue': 1.1.1_@vue+compiler-sfc@3.0.5
   '@vue/compiler-sfc': 3.0.5_vue@3.0.5
   '@vue/server-renderer': 3.0.5_vue@3.0.5
   '@vuedx/typecheck': 0.6.0
@@ -39,7 +40,7 @@ devDependencies:
   eslint: 7.18.0
   eslint-config-prettier: 7.2.0_eslint@7.18.0
   eslint-plugin-prettier-vue: 3.0.0-alpha.2_vue@3.0.5
-  eslint-plugin-vue: 7.4.1_eslint@7.18.0
+  eslint-plugin-vue: 7.5.0_eslint@7.18.0
   gray-matter: 4.0.2
   husky: 5.0.6
   lint-staged: 10.5.3
@@ -51,21 +52,20 @@ devDependencies:
   rimraf: 3.0.2
   rollup: 2.38.0
   sass: 1.32.5
-  simplebar: 6.0.0-beta.9
   stylelint: 13.9.0
   stylelint-config-prettier: 8.0.2_stylelint@13.9.0
   stylelint-config-standard: 20.0.0_stylelint@13.9.0
   stylelint-scss: 3.18.0_stylelint@13.9.0
   typescript: 4.1.3
-  vite: 2.0.0-beta.35
+  vite: 2.0.0-beta.44
   vite-plugin-components: 0.6.6
-  vite-plugin-fonts: 0.1.5_vite@2.0.0-beta.35
-  vite-plugin-md: 0.4.1_vite@2.0.0-beta.35
+  vite-plugin-fonts: 0.1.5_vite@2.0.0-beta.44
+  vite-plugin-md: 0.4.1_vite@2.0.0-beta.44
   vite-plugin-pages: 0.1.7_vue@3.0.5
-  vite-plugin-purge-icons: 0.5.2_vite@2.0.0-beta.35
-  vite-plugin-pwa: 0.3.9
-  vite-plugin-voie: 0.7.3_27f7a3105d3644b16830a7aa2d2010f0
-  vite-ssg: 0.4.1_03c565c87c45009742312717860d5a53
+  vite-plugin-purge-icons: 0.5.2_vite@2.0.0-beta.44
+  vite-plugin-pwa: 0.3.10
+  vite-plugin-voie: 0.7.3_17efadfebdbd5c30d100343398be7fbd
+  vite-ssg: 0.4.1_9195eb4a8880478bc242442ad41b7c64
   voie-pages: 0.4.0_vue@3.0.5
   yorkie: 2.0.0
 lockfileVersion: 5.2
@@ -954,7 +954,6 @@ packages:
   /@babel/runtime/7.12.5:
     dependencies:
       regenerator-runtime: 0.13.7
-    dev: true
     resolution:
       integrity: sha512-plcc+hbExy3McchJCEQG3knOsuh3HH+Prx1P6cLIkET/0dLuQDEnrT+s27Axgc9bqfsmNUNHfscgMUdBpC9xfg==
   /@babel/template/7.12.7:
@@ -1118,10 +1117,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-pXvLXqLPQsjpDY4qbbyh5cPEtakTfWfQCAo6SdYNhYQzat+/0fbeEhScryqaketNAG0bT4/+deKezkJZTvbuSg==
-  /@iconify/json/1.1.289:
+  /@iconify/json/1.1.290:
     dev: true
     resolution:
-      integrity: sha512-KZBT4ypgNiCHzfUxqutisZGU3Bs14xX+/YPAGY6yt0/xTld+CB8W5w8mZMdPfjZHsdygYnR1iHNEJfAuR9BkKg==
+      integrity: sha512-CZkFvzNvAk56No7gWldVCDrh+tz8zmCA0bBH0UDf4APVFwxofR/Ri7vPWB1Lj9fTiMlavYYGkz0oTIWYTH+CyQ==
   /@intlify/cli/0.1.3:
     dependencies:
       '@intlify/core': 9.0.0-beta.16
@@ -1716,7 +1715,7 @@ packages:
       node: ^8.10.0 || ^10.13.0 || >=11.10.1
     resolution:
       integrity: sha512-MeHHzUyRI50DuiPgV9+LxcM52FCJFYjJiWHtXlbyC27b80mfOwKeiKI+MHOTEpcpfmoPFm/vvQS88bYIx6PZTA==
-  /@vitejs/plugin-vue/1.1.0_@vue+compiler-sfc@3.0.5:
+  /@vitejs/plugin-vue/1.1.1_@vue+compiler-sfc@3.0.5:
     dependencies:
       '@vue/compiler-sfc': 3.0.5_vue@3.0.5
     dev: true
@@ -1725,7 +1724,7 @@ packages:
     peerDependencies:
       '@vue/compiler-sfc': ^3.0.4
     resolution:
-      integrity: sha512-ExlAt3nb3PB31jV9AgRZSMoGd+aQRU53fc/seghV8/l0JCzaX2mqlgpG8iytWkRxbBPgtAx4TpCPdiVKnTFT/A==
+      integrity: sha512-Oia369l4L4Wd6hW0paQ1OUsPbGHd85KQllismua65C45xMu40og5lzGreSuGEtW+6yB0I5FyLrC7tk5yCucHwA==
   /@vue/compiler-core/3.0.0-rc.5:
     dependencies:
       '@babel/parser': 7.12.11
@@ -2400,7 +2399,7 @@ packages:
     resolution:
       integrity: sha512-L28STB170nwWS63UjtlEOE3dldQApaJXZkOI1uMFfzf3rRuPegHaHesyee+YxQ+W6SvRDQV6UrdOdRiR153wJg==
   /can-use-dom/0.1.0:
-    dev: true
+    dev: false
     resolution:
       integrity: sha1-IsxKNKCrxDlQ9CxkEQJKP2NmtFo=
   /caniuse-lite/1.0.30001179:
@@ -2701,6 +2700,11 @@ packages:
     dev: true
     resolution:
       integrity: sha512-1sCb0wBXnBIL16pfFG1Gkvei6UzvKyTNYpiC41yrdjEv0UoJoq9E/abTMzyYJ6JpTkAj15dLjbqifIzEBDVvog==
+  /core-js/3.8.3:
+    dev: false
+    requiresBuild: true
+    resolution:
+      integrity: sha512-KPYXeVZYemC2TkNEkX/01I+7yd+nX3KddKwZ1Ww7SKWdI2wQprSgLmrTddT8nw92AjEklTsPBoSdQBhbI1bQ6Q==
   /core-util-is/1.0.2:
     dev: true
     resolution:
@@ -2986,10 +2990,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-hBSVCvSmWC+QypYObzwGOd9wqdDpOt+0wl0KbU+R+uuZBS1jN8VsD1ss3irQDknRj5NvxiTF6oj/nDRnN/UQNw==
-  /dayjs/1.10.3:
-    dev: false
-    resolution:
-      integrity: sha512-/2fdLN987N8Ki7Id8BUN2nhuiRyxTLumQnSQf9CNncFCyqFsSKb9TNhzRYcC8K8eJSJOKvbvkImo/MKKhNi4iw==
   /de-indent/1.0.2:
     dev: true
     resolution:
@@ -3301,7 +3301,7 @@ packages:
       vue: '*'
     resolution:
       integrity: sha512-BisvxytJAANvbele4VNj/vOi1aygD38offE6ow6KYinLP/x3qwtbeQDRtftHAC7NeoGcPN3rcOmPvHFh6DRVtQ==
-  /eslint-plugin-vue/7.4.1_eslint@7.18.0:
+  /eslint-plugin-vue/7.5.0_eslint@7.18.0:
     dependencies:
       eslint: 7.18.0
       eslint-utils: 2.1.0
@@ -3314,7 +3314,7 @@ packages:
     peerDependencies:
       eslint: ^6.2.0 || ^7.0.0
     resolution:
-      integrity: sha512-W/xPNHYIkGJphLUM2UIYYGKbRw3BcDoMIPY9lu1TTa2YLiZoxurddfnmOP+UOVywxb5vi438ejzwvKdZqydtIw==
+      integrity: sha512-QnMMTcyV8PLxBz7QQNAwISSEs6LYk2LJvGlxalXvpCtfKnqo7qcY0aZTIxPe8QOnHd7WCwiMZLOJzg6A03T0Gw==
   /eslint-scope/5.1.1:
     dependencies:
       esrecurse: 4.3.0
@@ -4674,13 +4674,21 @@ packages:
     resolution:
       integrity: sha512-t7hw9pI+WvuwNJXwk5zVHpyhIqzg2qTlklJOf0mVxGSbe3Fp2VieZcduNYjaLDoy6p9uGpQEGWG87WpMKlNq8g==
   /lodash-es/4.17.20:
-    dev: true
+    dev: false
     resolution:
       integrity: sha512-JD1COMZsq8maT6mnuz1UMV0jvYD0E0aUsSOdrr1/nAG3dhqQXwRRgeW0cSqH1U43INKcqxaiVIQNOUDld7gRDA==
   /lodash.camelcase/4.3.0:
     dev: true
     resolution:
       integrity: sha1-soqmKIorn8ZRA1x3EfZathkDMaY=
+  /lodash.debounce/4.0.8:
+    dev: false
+    resolution:
+      integrity: sha1-gteb/zCmfEAF/9XiUVMArZyk168=
+  /lodash.memoize/4.1.2:
+    dev: false
+    resolution:
+      integrity: sha1-vMbEmkKihA7Zl/Mj6tpezRguC/4=
   /lodash.once/4.1.1:
     dev: true
     resolution:
@@ -4689,6 +4697,10 @@ packages:
     dev: true
     resolution:
       integrity: sha1-7dFMgk4sycHgsKG0K7UhBRakJDg=
+  /lodash.throttle/4.1.1:
+    dev: false
+    resolution:
+      integrity: sha1-wj6RtxAkKscMN/HhzaknTMOb8vQ=
   /lodash/4.17.20:
     resolution:
       integrity: sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==
@@ -5693,7 +5705,6 @@ packages:
     resolution:
       integrity: sha512-zrceR/XhGYU/d/opr2EKO7aRHUeiBI8qjtfHqADTwZd6Szfy16la6kqD0MIUs5z5hx6AaKa+PixpPrR289+I0A==
   /regenerator-runtime/0.13.7:
-    dev: true
     resolution:
       integrity: sha512-a54FxoJDIr27pgf7IgeQGxmqUNYrcV338lf/6gH456HZ/PhX+5BcwHXG9ajESmwe6WRO0tAzRUrRmNONWgkrew==
   /regenerator-transform/0.14.5:
@@ -5829,6 +5840,10 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-Xf0nWe6RseziFMu+Ap9biiUbmplq6S9/p+7w7YXP/JBHhrUDDUhwa+vANyubuqfZWTveU//DYVGsDG7RKL/vEw==
+  /resize-observer-polyfill/1.5.1:
+    dev: false
+    resolution:
+      integrity: sha512-LwZrotdHOo12nQuZlHEmtuXdqGoOD0OhaxopaNFxWzInpEgaLWoVuAMbTzixuosCx2nEG58ngzW3vxdWoxIgdg==
   /resolve-from/4.0.0:
     dev: true
     engines:
@@ -6047,15 +6062,36 @@ packages:
       '@babel/runtime': 7.12.5
       can-use-dom: 0.1.0
       lodash-es: 4.17.20
-    dev: true
+    dev: false
     resolution:
       integrity: sha512-QkVyus6srcqAWRpdAdcqaWuZP6z3Fd/Ot+QCyvb7Pnt2hZyZHglHcYVXmoDB4hKdJuZfDe1/G/0a4o+Qhzxw4Q==
+  /simplebar-vue/1.6.0_vue@3.0.5:
+    dependencies:
+      core-js: 3.8.3
+      simplebar: 5.3.0
+      vue: 3.0.5
+    dev: false
+    peerDependencies:
+      vue: ^2.5.17
+    resolution:
+      integrity: sha512-O43JuN0eeI2kfspm+BME8DmfFKLkiOYRaMlGoTOExjiUHVrrGdXnyxRjewCWCSTfBTKy4tACv+mdrYfVxLZdBQ==
+  /simplebar/5.3.0:
+    dependencies:
+      can-use-dom: 0.1.0
+      core-js: 3.8.3
+      lodash.debounce: 4.0.8
+      lodash.memoize: 4.1.2
+      lodash.throttle: 4.1.1
+      resize-observer-polyfill: 1.5.1
+    dev: false
+    resolution:
+      integrity: sha512-LgrGdIWpwHLLlI9HqfnGql62H/iZlF0KDZ7w3ZNbd2ZLwh9NKsODLHPzQgUlqQ8aZe7Y6/1xJMXK1PU5e810+w==
   /simplebar/6.0.0-beta.9:
     dependencies:
       '@babel/runtime': 7.12.5
       can-use-dom: 0.1.0
       simplebar-core: 1.0.6
-    dev: true
+    dev: false
     resolution:
       integrity: sha512-+lsTT2mSOzyKetF+OFyiV/M0xFn3riNECHUmRJiw4acxLFxmYkVthf9m3XYLz2dMLIQuaytH9k6M31ewQlia3g==
   /slash/3.0.0:
@@ -6926,19 +6962,19 @@ packages:
     dev: true
     resolution:
       integrity: sha512-tOcWm/2T+XUImJ8yFZb/i8dUWXNoraqDdKrBBpfbHGg3MES0T6AN1315iuKYHTG71fwKI0OGElw3S9B04ZUwPA==
-  /vite-plugin-fonts/0.1.5_vite@2.0.0-beta.35:
+  /vite-plugin-fonts/0.1.5_vite@2.0.0-beta.44:
     dependencies:
-      vite: 2.0.0-beta.35
+      vite: 2.0.0-beta.44
     dev: true
     peerDependencies:
       vite: ^2.0.0-beta.22
     resolution:
       integrity: sha512-yF9Q1OVRGijlgUe8VXkAEGon+3tIAfeFtzOFBUpSDp5OmMVFMwt40Jy/7qMbVmu9tAV1OeCAK1uaUZgjQE5QPg==
-  /vite-plugin-md/0.4.1_vite@2.0.0-beta.35:
+  /vite-plugin-md/0.4.1_vite@2.0.0-beta.44:
     dependencies:
       gray-matter: 4.0.2
       markdown-it: 12.0.4
-      vite: 2.0.0-beta.35
+      vite: 2.0.0-beta.44
     dev: true
     peerDependencies:
       vite: ^2.0.0-beta.1
@@ -6957,12 +6993,12 @@ packages:
       vue: ^3.0.0
     resolution:
       integrity: sha512-/IBAEAX4w4EoLzQpK+hf0D66HUn2lBSZJmLedSKXVykbKCMf9VGME4hlynT91RKMa0AXKYdcXwQJM3xmbyjxdw==
-  /vite-plugin-purge-icons/0.5.2_vite@2.0.0-beta.35:
+  /vite-plugin-purge-icons/0.5.2_vite@2.0.0-beta.44:
     dependencies:
       '@purge-icons/core': 0.5.2
       '@purge-icons/generated': 0.5.2
       rollup-plugin-purge-icons: 0.5.2
-      vite: 2.0.0-beta.35
+      vite: 2.0.0-beta.44
     dev: true
     engines:
       node: '>= 12'
@@ -6970,7 +7006,7 @@ packages:
       vite: ^2.0.0-beta.3
     resolution:
       integrity: sha512-6YsH7FBYmYIOFzmt4TEuAUIypTdLKLqo3BUQt8McR8qKbgWHhkvnXaEHS1rLCowqSYSKKcqhGVuHg5x13VwTpw==
-  /vite-plugin-pwa/0.3.9:
+  /vite-plugin-pwa/0.3.10:
     dependencies:
       debug: 4.3.2
       fast-glob: 3.2.5
@@ -6978,12 +7014,12 @@ packages:
       workbox-build: 6.0.2
     dev: true
     resolution:
-      integrity: sha512-7UwG/jmBBzmmwFllc6fUmEpXyMYlBZsLBpjBfteHPp4lVptNrXVRT6Ou/ggVjPK2vlJqlh3GzvSo1sCNUxecgw==
-  /vite-plugin-voie/0.7.3_27f7a3105d3644b16830a7aa2d2010f0:
+      integrity: sha512-UMvOTsTQumIy1yJ7imIEsjdealbeOzc30PjNK1By4aEuRUHCI2kJ7Mmh8xUbLJWSLVaUfIKIG1zguk5cpmD3SQ==
+  /vite-plugin-voie/0.7.3_17efadfebdbd5c30d100343398be7fbd:
     dependencies:
       fast-glob: 3.2.5
       glob-to-regexp: 0.4.1
-      vite: 2.0.0-beta.35
+      vite: 2.0.0-beta.44
       voie-pages: 0.4.0_vue@3.0.5
       vue-router: 4.0.3_vue@3.0.5
     dev: true
@@ -6993,7 +7029,7 @@ packages:
       vue-router: ^4.0.0-beta.4
     resolution:
       integrity: sha512-OwAwziXPb8ywKHXfd9E1UXsEF2rRi4Dgb3F020s2lLWdtuY84xQH4JK84XwytFeht3TsexmJpVPHg2y17QdltQ==
-  /vite-ssg/0.4.1_03c565c87c45009742312717860d5a53:
+  /vite-ssg/0.4.1_9195eb4a8880478bc242442ad41b7c64:
     dependencies:
       '@vue/compiler-sfc': 3.0.5_vue@3.0.5
       '@vue/server-renderer': 3.0.5_vue@3.0.5
@@ -7001,7 +7037,7 @@ packages:
       chalk: 4.1.0
       fs-extra: 9.1.0
       jsdom: 16.4.0
-      vite: 2.0.0-beta.35
+      vite: 2.0.0-beta.44
       vue: 3.0.5
       vue-router: 4.0.3_vue@3.0.5
       yargs: 16.2.0
@@ -7017,7 +7053,7 @@ packages:
       vue-router: ^4.0.1
     resolution:
       integrity: sha512-/RyTOXeEGgLVuy/RChz0acE5aNRyieYqy34VqlF+TVTsEG0t/KZD9u6Ma7VmytcQ+8n3PZh91vTs/XR9pzWOLA==
-  /vite/2.0.0-beta.35:
+  /vite/2.0.0-beta.44:
     dependencies:
       esbuild: 0.8.34
       postcss: 8.2.4
@@ -7030,7 +7066,7 @@ packages:
     optionalDependencies:
       fsevents: 2.1.3
     resolution:
-      integrity: sha512-22+MuR3fvy5GmGdjIXHXcUbfVS8P2DK8C2wdcDcdZnugCTd+4XySF2xeRt+VFPyhqq+/KSbdOuA2r47F+VMwig==
+      integrity: sha512-NTzmP7HEKDg3J5r3I22f87jK3ugPVEU81BQ8hWn3hNWU0msCziUlj7aHwItSUEbQA+ymqO3TBO2fN7Aa+OKckQ==
   /voie-pages/0.4.0_vue@3.0.5:
     dependencies:
       vue-router: 4.0.3_vue@3.0.5
@@ -7489,7 +7525,7 @@ packages:
       integrity: sha512-V50KMwwzqJV0NpZIZFwfOD5/lyny3WlSzRiXgA0G7VUnRlqttta1L6UQIHzd6EuBY/cHGfwTIck7w1yH6Q5zUw==
 specifiers:
   '@iconify/iconify': 1.0.7
-  '@iconify/json': 1.1.289
+  '@iconify/json': 1.1.290
   '@intlify/vite-plugin-vue-i18n': 1.0.0-beta.12
   '@purge-icons/generated': ^0.5.2
   '@types/markdown-it': ^12.0.1
@@ -7499,7 +7535,7 @@ specifiers:
   '@types/simplebar': 5.1.1
   '@typescript-eslint/eslint-plugin': 4.14.0
   '@typescript-eslint/parser': 4.14.0
-  '@vitejs/plugin-vue': 1.1.0
+  '@vitejs/plugin-vue': 1.1.1
   '@vue/compiler-sfc': 3.0.5
   '@vue/server-renderer': 3.0.5
   '@vuedx/typecheck': 0.6.0
@@ -7514,11 +7550,10 @@ specifiers:
   chalk: ^4.1.0
   cross-env: 7.0.3
   cypress: ^6.3.0
-  dayjs: 1.10.3
   eslint: 7.18.0
   eslint-config-prettier: 7.2.0
   eslint-plugin-prettier-vue: 3.0.0-alpha.2
-  eslint-plugin-vue: 7.4.1
+  eslint-plugin-vue: 7.5.0
   gray-matter: ^4.0.2
   husky: ^5.0.6
   lint-staged: ^10.5.3
@@ -7534,18 +7569,19 @@ specifiers:
   rollup: ^2.37.1
   sass: 1.32.5
   simplebar: 6.0.0-beta.9
+  simplebar-vue: ^1.6.0
   stylelint: 13.9.0
   stylelint-config-prettier: 8.0.2
   stylelint-config-standard: 20.0.0
   stylelint-scss: 3.18.0
   typescript: 4.1.3
-  vite: 2.0.0-beta.35
+  vite: 2.0.0-beta.44
   vite-plugin-components: 0.6.6
   vite-plugin-fonts: 0.1.5
   vite-plugin-md: ^0.4.0
   vite-plugin-pages: ^0.1.4
   vite-plugin-purge-icons: 0.5.2
-  vite-plugin-pwa: ^0.3.9
+  vite-plugin-pwa: ^0.3.10
   vite-plugin-voie: ^0.7.3
   vite-ssg: 0.4.1
   voie-pages: ^0.4.0

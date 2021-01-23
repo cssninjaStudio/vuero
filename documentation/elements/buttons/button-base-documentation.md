@@ -13,8 +13,6 @@ Basic modifiers such as `is-bold` and `is-rounded` are available.
 
 > this is a hint
 
-> toto
-
 <!--code-->
 
 ```vue

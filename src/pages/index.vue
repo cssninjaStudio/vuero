@@ -65,13 +65,11 @@ useHead({
             </h3>
 
             <img
-              v-if="!isDark"
               class="light-image-l hero-mockup"
               src="/images/illustrations/landing/app-1.png"
               alt=""
             />
             <img
-              v-else
               class="dark-image-l hero-mockup"
               src="/images/illustrations/landing/app-1-dark.png"
               alt=""
