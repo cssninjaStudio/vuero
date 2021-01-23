@@ -814,122 +814,120 @@
 2. CSS Tooltips Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .hint--top-left:not(.hint--light):not(.hint--info):not(.hint--success):not(.hint--warning):not(.hint--error):not(.hint--bubble):not(.hint--primary) {
-      &::after {
-        background: darken($dark-sidebar, 4%) !important;
-      }
-
-      &::before {
-        border-top-color: darken($dark-sidebar, 4%);
-      }
+.is-dark {
+  .hint--top-left:not(.hint--light):not(.hint--info):not(.hint--success):not(.hint--warning):not(.hint--error):not(.hint--bubble):not(.hint--primary) {
+    &::after {
+      background: darken($dark-sidebar, 4%) !important;
     }
 
-    .hint--top-right:not(.hint--light):not(.hint--info):not(.hint--success):not(.hint--warning):not(.hint--error):not(.hint--bubble):not(.hint--primary) {
-      &::after {
-        background: darken($dark-sidebar, 4%) !important;
-      }
+    &::before {
+      border-top-color: darken($dark-sidebar, 4%);
+    }
+  }
 
-      &::before {
-        border-top-color: darken($dark-sidebar, 4%);
-      }
+  .hint--top-right:not(.hint--light):not(.hint--info):not(.hint--success):not(.hint--warning):not(.hint--error):not(.hint--bubble):not(.hint--primary) {
+    &::after {
+      background: darken($dark-sidebar, 4%) !important;
     }
 
-    .hint--top:not(.hint--light):not(.hint--info):not(.hint--success):not(.hint--warning):not(.hint--error):not(.hint--bubble):not(.hint--primary) {
-      &::after {
-        background: darken($dark-sidebar, 4%) !important;
-      }
+    &::before {
+      border-top-color: darken($dark-sidebar, 4%);
+    }
+  }
 
-      &::before {
-        border-top-color: darken($dark-sidebar, 4%);
-      }
+  .hint--top:not(.hint--light):not(.hint--info):not(.hint--success):not(.hint--warning):not(.hint--error):not(.hint--bubble):not(.hint--primary) {
+    &::after {
+      background: darken($dark-sidebar, 4%) !important;
     }
 
-    .hint--bottom-left:not(.hint--light):not(.hint--info):not(.hint--success):not(.hint--warning):not(.hint--error):not(.hint--bubble):not(.hint--primary) {
-      &::after {
-        background: darken($dark-sidebar, 4%) !important;
-      }
+    &::before {
+      border-top-color: darken($dark-sidebar, 4%);
+    }
+  }
 
-      &::before {
-        border-bottom-color: darken($dark-sidebar, 4%);
-      }
+  .hint--bottom-left:not(.hint--light):not(.hint--info):not(.hint--success):not(.hint--warning):not(.hint--error):not(.hint--bubble):not(.hint--primary) {
+    &::after {
+      background: darken($dark-sidebar, 4%) !important;
     }
 
-    .hint--bottom-right:not(.hint--light):not(.hint--info):not(.hint--success):not(.hint--warning):not(.hint--error):not(.hint--bubble):not(.hint--primary) {
-      &::after {
-        background: darken($dark-sidebar, 4%) !important;
-      }
+    &::before {
+      border-bottom-color: darken($dark-sidebar, 4%);
+    }
+  }
 
-      &::before {
-        border-bottom-color: darken($dark-sidebar, 4%);
-      }
+  .hint--bottom-right:not(.hint--light):not(.hint--info):not(.hint--success):not(.hint--warning):not(.hint--error):not(.hint--bubble):not(.hint--primary) {
+    &::after {
+      background: darken($dark-sidebar, 4%) !important;
     }
 
-    .hint--bottom:not(.hint--light):not(.hint--info):not(.hint--success):not(.hint--warning):not(.hint--error):not(.hint--bubble):not(.hint--primary) {
-      &::after {
-        background: darken($dark-sidebar, 4%) !important;
-      }
+    &::before {
+      border-bottom-color: darken($dark-sidebar, 4%);
+    }
+  }
 
-      &::before {
-        border-bottom-color: darken($dark-sidebar, 4%);
-      }
+  .hint--bottom:not(.hint--light):not(.hint--info):not(.hint--success):not(.hint--warning):not(.hint--error):not(.hint--bubble):not(.hint--primary) {
+    &::after {
+      background: darken($dark-sidebar, 4%) !important;
     }
 
-    .hint--left:not(.hint--light):not(.hint--info):not(.hint--success):not(.hint--warning):not(.hint--error):not(.hint--bubble):not(.hint--primary) {
-      &::after {
-        background: darken($dark-sidebar, 4%) !important;
-      }
+    &::before {
+      border-bottom-color: darken($dark-sidebar, 4%);
+    }
+  }
 
-      &::before {
-        border-left-color: darken($dark-sidebar, 4%);
-      }
+  .hint--left:not(.hint--light):not(.hint--info):not(.hint--success):not(.hint--warning):not(.hint--error):not(.hint--bubble):not(.hint--primary) {
+    &::after {
+      background: darken($dark-sidebar, 4%) !important;
     }
 
-    .hint--right:not(.hint--light):not(.hint--info):not(.hint--success):not(.hint--warning):not(.hint--error):not(.hint--bubble):not(.hint--primary) {
-      &::after {
-        background: darken($dark-sidebar, 4%) !important;
-      }
+    &::before {
+      border-left-color: darken($dark-sidebar, 4%);
+    }
+  }
 
-      &::before {
-        border-right-color: darken($dark-sidebar, 4%);
-      }
+  .hint--right:not(.hint--light):not(.hint--info):not(.hint--success):not(.hint--warning):not(.hint--error):not(.hint--bubble):not(.hint--primary) {
+    &::after {
+      background: darken($dark-sidebar, 4%) !important;
     }
 
-    .hint--primary::after {
-      background-color: $accent;
+    &::before {
+      border-right-color: darken($dark-sidebar, 4%);
     }
+  }
 
-    .hint--primary.hint--top-left::before {
-      border-top-color: $accent;
-    }
+  .hint--primary::after {
+    background-color: $accent;
+  }
 
-    .hint--primary.hint--top-right::before {
-      border-top-color: $accent;
-    }
+  .hint--primary.hint--top-left::before {
+    border-top-color: $accent;
+  }
 
-    .hint--primary.hint--top::before {
-      border-top-color: $accent;
-    }
+  .hint--primary.hint--top-right::before {
+    border-top-color: $accent;
+  }
 
-    .hint--primary.hint--bottom-left::before {
-      border-bottom-color: $accent;
-    }
+  .hint--primary.hint--top::before {
+    border-top-color: $accent;
+  }
 
-    .hint--primary.hint--bottom-right::before {
-      border-bottom-color: $accent;
-    }
+  .hint--primary.hint--bottom-left::before {
+    border-bottom-color: $accent;
+  }
 
-    .hint--primary.hint--bottom::before {
-      border-bottom-color: $accent;
-    }
+  .hint--primary.hint--bottom-right::before {
+    border-bottom-color: $accent;
+  }
 
-    .hint--primary.hint--left::before {
-      border-left-color: $accent;
-    }
+  .hint--primary.hint--bottom::before {
+    border-bottom-color: $accent;
+  }
 
-    .hint--primary.hint--right::before {
-      border-right-color: $accent;
-    }
+  .hint--primary.hint--left::before {
+    border-left-color: $accent;
+  }
+
+  .hint--primary.hint--right::before {
+    border-right-color: $accent;
   }
 }

@@ -449,67 +449,65 @@
 4. Stock Dashboard Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .finance-dashboard {
-      &.stock-dashboard {
-        .graph {
-          background: lighten($dark-sidebar, 6%) !important;
-          border-color: lighten($dark-sidebar, 12%) !important;
-        }
+.is-dark {
+  .finance-dashboard {
+    &.stock-dashboard {
+      .graph {
+        background: lighten($dark-sidebar, 6%) !important;
+        border-color: lighten($dark-sidebar, 12%) !important;
+      }
 
-        .stock {
-          .stock-info {
-            .stock-name {
-              color: $dark-dark-text;
-            }
+      .stock {
+        .stock-info {
+          .stock-name {
+            color: $dark-dark-text;
           }
         }
+      }
 
-        .asset-category {
-          .category {
-            &:hover {
-              .asset {
-                .asset-logo {
-                  &::before {
-                    border-color: $accent !important;
-
-                    //box-shadow: $accent-box-shadow;
-                  }
-
-                  i {
-                    color: $accent;
-                  }
-                }
-              }
-
-              .asset-name {
-                color: $accent;
-              }
-            }
-
+      .asset-category {
+        .category {
+          &:hover {
             .asset {
               .asset-logo {
                 &::before {
-                  background: lighten($dark-sidebar, 6%) !important;
-                  border-color: lighten($dark-sidebar, 12%) !important;
+                  border-color: $accent !important;
+
+                  //box-shadow: $accent-box-shadow;
+                }
+
+                i {
+                  color: $accent;
                 }
               }
             }
 
             .asset-name {
-              color: $dark-dark-text;
+              color: $accent;
             }
           }
-        }
 
-        .stock-card {
-          @include vuero-card--dark();
-
-          .action-bar {
-            h3 {
-              color: $dark-dark-text;
+          .asset {
+            .asset-logo {
+              &::before {
+                background: lighten($dark-sidebar, 6%) !important;
+                border-color: lighten($dark-sidebar, 12%) !important;
+              }
             }
+          }
+
+          .asset-name {
+            color: $dark-dark-text;
+          }
+        }
+      }
+
+      .stock-card {
+        @include vuero-card--dark();
+
+        .action-bar {
+          h3 {
+            color: $dark-dark-text;
           }
         }
       }

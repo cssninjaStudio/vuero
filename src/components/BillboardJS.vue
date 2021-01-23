@@ -8,6 +8,7 @@ const props = defineProps({
     required: true,
   },
 })
+
 const emit = defineEmit(['ready'])
 const element = ref<HTMLElement | null>(null)
 

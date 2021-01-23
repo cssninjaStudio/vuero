@@ -94,34 +94,32 @@
 2. Video Player Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .video-container {
-      .media-player {
-        .media-toolbar {
-          padding: 8px 16px;
+.is-dark {
+  .video-container {
+    .media-player {
+      .media-toolbar {
+        padding: 8px 16px;
 
-          .media-control {
-            color: $light-text;
+        .media-control {
+          color: $light-text;
 
-            &:hover {
-              background: transparent;
-              color: $accent;
-            }
+          &:hover {
+            background: transparent;
+            color: $accent;
           }
+        }
 
-          .media-current-time,
-          .media-remaining-time {
-            color: $dark-dark-text;
-          }
+        .media-current-time,
+        .media-remaining-time {
+          color: $dark-dark-text;
+        }
 
-          .media-slider {
-            .media-range {
-              background: lighten($dark-sidebar, 2%);
+        .media-slider {
+          .media-range {
+            background: lighten($dark-sidebar, 2%);
 
-              .media-meter {
-                background: $accent;
-              }
+            .media-meter {
+              background: $accent;
             }
           }
         }

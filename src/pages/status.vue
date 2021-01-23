@@ -334,4 +334,293 @@ useHead({
 @import '../assets/scss/abstracts/_variables.scss';
 @import '../assets/scss/abstracts/_mixins.scss';
 @import '../assets/scss/pages/generic/_utility.scss';
+
+/* ==========================================================================
+3. Status Page
+========================================================================== */
+
+.status-page-wrapper {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 60px 16px 60px 16px;
+
+  .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    .logo {
+      display: block;
+      width: 50px;
+      min-width: 50px;
+      height: 50px;
+    }
+  }
+
+  .status-block {
+    background: $white;
+    margin-bottom: 40px;
+    border: 1px solid darken($fade-grey, 3%);
+    border-radius: 6px;
+
+    .status-header {
+      padding: 40px;
+
+      .indicator {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        margin-right: 20px;
+        background: $success;
+      }
+
+      .title {
+        display: inline-block;
+        font-family: $font-alt;
+        font-weight: 600;
+        color: $dark-text;
+      }
+
+      .subtitle {
+        display: block;
+        margin-left: 35px;
+        color: $light-text;
+      }
+    }
+
+    .status-uptime {
+      border-top: 1px solid darken($fade-grey, 3%);
+      border-bottom: 1px solid darken($fade-grey, 3%);
+      padding: 16px 40px;
+      font-family: $font;
+
+      .title {
+        display: inline-block;
+        font-size: 14px;
+        font-family: $font-alt;
+        margin-bottom: 0;
+        font-weight: 500;
+        color: $light-text;
+      }
+
+      .uptime {
+        display: inline-block;
+        margin-left: 60px;
+        font-size: 14px;
+        color: $light-text;
+      }
+    }
+
+    .status-list {
+      padding: 40px;
+
+      .list-block {
+        display: flex;
+        align-items: center;
+
+        .icon-wrap {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 54px;
+          width: 54px;
+          min-width: 54px;
+          border-radius: 50%;
+          background: $white;
+          border: 1px solid darken($fade-grey, 3%);
+          box-shadow: $light-box-shadow;
+          color: $primary;
+          margin-right: 12px;
+
+          img {
+            display: block;
+            max-width: 54px;
+            border-radius: 50%;
+          }
+        }
+
+        .progress-wrap {
+          flex-grow: 2;
+
+          .progress-wrap-inner {
+            display: flex;
+            align-items: center;
+            margin-bottom: 4px;
+          }
+        }
+      }
+
+      .label {
+        font-family: $font-alt;
+        font-size: 0.95rem;
+        font-weight: 600;
+        margin-bottom: 0;
+        line-height: 1.2;
+      }
+
+      p {
+        font-size: 0.9rem;
+        font-family: $font;
+      }
+
+      .amount {
+        position: relative;
+        top: -2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        color: $light-text;
+        margin-left: auto;
+        height: 40px;
+        width: 40px;
+        border-radius: 12px;
+        border: 1px solid darken($fade-grey, 3%);
+        box-shadow: $light-box-shadow;
+
+        span {
+          font-family: $font;
+          color: $dark-text;
+          font-weight: 600;
+          font-size: 0.85rem;
+        }
+      }
+    }
+  }
+
+  .tweets-header {
+    display: flex;
+    align-items: center;
+    padding: 24px 40px;
+    border-bottom: 1px solid darken($fade-grey, 3%);
+
+    .icon i {
+      font-size: 1.6rem;
+      color: $twitter;
+    }
+
+    .username {
+      margin-left: 10px;
+      font-family: $font-alt;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: $dark-text;
+    }
+
+    .action-link {
+      margin-left: auto;
+    }
+  }
+
+  .status-tweets {
+    .updates {
+      padding: 20px 40px 40px 40px;
+
+      .update {
+        display: flex;
+        align-items: center;
+
+        &:not(:last-child) {
+          margin-bottom: 30px;
+        }
+
+        .update-content {
+          margin-left: 12px;
+
+          .timestamp {
+            color: $light-text;
+          }
+
+          .tweet {
+            font-family: $font;
+            color: $dark-text;
+          }
+        }
+      }
+    }
+  }
+
+  .status-footer {
+    display: flex;
+    padding: 20px;
+
+    a {
+      font-family: $font;
+      color: darken($light-text, 8%);
+      padding: 0 10px;
+      transition: color 0.3s;
+
+      &:hover {
+        font-weight: 500;
+        color: $primary;
+      }
+    }
+
+    .copyright {
+      margin-left: auto;
+      font-family: $font;
+      color: $light-text;
+    }
+  }
+}
+@media only screen and (max-width: 767px) {
+  .status-page-wrapper {
+    padding-top: 20px;
+
+    .status-block {
+      .status-header {
+        padding: 30px;
+      }
+
+      .status-uptime {
+        padding: 16px 30px;
+
+        .uptime {
+          display: none;
+        }
+      }
+
+      .status-list {
+        padding: 30px;
+
+        .list-block {
+          .icon-wrap {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .tweets-header {
+      padding: 24px 30px;
+    }
+
+    .status-tweets {
+      .updates {
+        padding: 20px 30px 30px 30px;
+
+        .update {
+          .h-avatar {
+            display: none;
+          }
+
+          .update-content {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+
+    .status-footer {
+      flex-direction: column;
+      align-items: center;
+
+      .copyright {
+        margin: 10px 0;
+      }
+    }
+  }
+}
 </style>

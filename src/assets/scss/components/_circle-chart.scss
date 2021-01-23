@@ -59,6 +59,7 @@
 
 @keyframes circle-chart-fill {
   50% {
+    stroke-dasharray: 0 0;
   }
 
   100% {
@@ -97,20 +98,18 @@
 2. Circle Chart Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .circle-chart-wrapper {
-      &:not(.is-success):not(.is-info):not(.is-warning):not(.is-danger) {
-        .circle-chart__circle {
-          color: $accent;
-          stroke: $accent;
-        }
+.is-dark {
+  .circle-chart-wrapper {
+    &:not(.is-success):not(.is-info):not(.is-warning):not(.is-danger) {
+      .circle-chart__circle {
+        color: $accent;
+        stroke: $accent;
       }
     }
+  }
 
-    .circle-chart__background {
-      color: darken($dark-sidebar, 2%);
-      stroke: darken($dark-sidebar, 2%);
-    }
+  .circle-chart__background {
+    color: darken($dark-sidebar, 2%);
+    stroke: darken($dark-sidebar, 2%);
   }
 }

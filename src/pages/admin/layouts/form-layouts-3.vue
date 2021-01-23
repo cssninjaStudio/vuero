@@ -18,7 +18,7 @@ useHead({
       <!-- Sidebar Trigger -->
       <div
         class="huro-hamburger nav-trigger push-resize"
-        @click="toggleSidebar('home')"
+        @click="toggleSidebar('layouts')"
       >
         <span class="menu-toggle has-chevron">
           <span

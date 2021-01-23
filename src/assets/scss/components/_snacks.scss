@@ -306,46 +306,44 @@
 2. Snacks Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .snack {
-      background: lighten($dark-sidebar, 2%);
-      border-color: lighten($dark-sidebar, 4%);
+.is-dark {
+  .snack {
+    background: lighten($dark-sidebar, 2%);
+    border-color: lighten($dark-sidebar, 4%);
 
-      .snack-media {
-        &.is-icon {
-          &:not(.is-solid) {
-            background: lighten($dark-sidebar, 4%);
+    .snack-media {
+      &.is-icon {
+        &:not(.is-solid) {
+          background: lighten($dark-sidebar, 4%);
+        }
+
+        &.is-primary:not(.is-solid) {
+          border-color: $accent;
+
+          svg {
+            color: $accent;
           }
 
-          &.is-primary:not(.is-solid) {
-            border-color: $accent;
-
-            svg {
-              color: $accent;
-            }
-
-            .fas,
-            .far,
-            .fad,
-            .fab,
-            .fal,
-            .lnil,
-            .lnir {
-              color: $accent;
-            }
-          }
-
-          &.is-primary.is-solid {
-            background: $accent;
-            border-color: $accent;
+          .fas,
+          .far,
+          .fad,
+          .fab,
+          .fal,
+          .lnil,
+          .lnir {
+            color: $accent;
           }
         }
-      }
 
-      .snack-text {
-        color: $dark-dark-text;
+        &.is-primary.is-solid {
+          background: $accent;
+          border-color: $accent;
+        }
       }
+    }
+
+    .snack-text {
+      color: $dark-dark-text;
     }
   }
 }

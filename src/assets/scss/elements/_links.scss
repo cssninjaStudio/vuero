@@ -36,14 +36,12 @@
 2. Action Link Dark Mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .action-link {
-      color: $accent;
+.is-dark {
+  .action-link {
+    color: $accent;
 
-      &::after {
-        border-bottom-color: $accent;
-      }
+    &::after {
+      border-bottom-color: $accent;
     }
   }
 }

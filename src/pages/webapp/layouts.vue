@@ -34,7 +34,7 @@ watch(
       <div class="page-content-wrapper">
         <div class="page-content is-relative">
           <RouterView v-slot="{ Component }">
-            <transition name="translatex" mode="out-in">
+            <transition name="translate-page-x" mode="out-in">
               <component :is="Component" />
             </transition>
           </RouterView>
@@ -43,27 +43,3 @@ watch(
     </div>
   </component>
 </template>
-
-<style lang="scss" scoped>
-.translatex-enter-active,
-.translatex-leave-active {
-  transform: translateX(0);
-  transition: transform 0.25s ease-out, opacity 0.25s ease-out;
-}
-
-.translatex-enter-from {
-  transform: translateX(10px);
-  opacity: 0;
-}
-.translatex-leave-to {
-  transform: translateX(-300px);
-  opacity: 0;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .translatex-enter-active,
-  .translatex-leave-active {
-    transition: none;
-  }
-}
-</style>

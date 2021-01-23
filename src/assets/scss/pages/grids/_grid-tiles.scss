@@ -133,6 +133,14 @@
   }
 }
 
+.is-dark {
+  .tile-grid {
+    .tile-grid-item {
+      @include vuero-card--dark();
+    }
+  }
+}
+
 /* ==========================================================================
 3. Tile Grid V2
 ========================================================================== */
@@ -210,14 +218,13 @@
 4. Tile Grid V2 Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .tile-grid {
-      &.tile-grid-v2 {
-        .tile-grid-item {
-          &:hover {
-            border-color: $accent !important;
-          }
+.is-dark {
+  .tile-grid {
+    &.tile-grid-v2 {
+      .tile-grid-item {
+        @include vuero-card--dark();
+        &:hover {
+          border-color: $accent !important;
         }
       }
     }
@@ -573,6 +580,16 @@ body {
             }
           }
         }
+      }
+    }
+  }
+}
+
+.is-dark {
+  .tile-grid {
+    &.tile-grid-v3 {
+      .tile-grid-item {
+        @include vuero-card--dark();
       }
     }
   }

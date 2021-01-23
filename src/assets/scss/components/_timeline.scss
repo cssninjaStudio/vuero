@@ -185,34 +185,32 @@
 2. Timeline Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .timeline-wrapper {
-      .timeline-wrapper-inner {
-        .timeline-container {
-          .timeline-item {
-            &::before {
-              background: lighten($dark-sidebar, 20%);
-            }
+.is-dark {
+  .timeline-wrapper {
+    .timeline-wrapper-inner {
+      .timeline-container {
+        .timeline-item {
+          &::before {
+            background: lighten($dark-sidebar, 20%);
+          }
 
-            .content-wrap {
-              @include vuero-card--dark();
+          .content-wrap {
+            @include vuero-card--dark();
 
-              .content-box {
-                .status {
-                  background: lighten($dark-sidebar, 20%);
-                }
+            .content-box {
+              .status {
+                background: lighten($dark-sidebar, 20%);
+              }
 
-                .box-text {
-                  .meta-text {
-                    p {
-                      span {
-                        color: $dark-dark-text;
-                      }
+              .box-text {
+                .meta-text {
+                  p {
+                    span {
+                      color: $dark-dark-text;
+                    }
 
-                      a {
-                        color: $accent;
-                      }
+                    a {
+                      color: $accent;
                     }
                   }
                 }
@@ -220,11 +218,11 @@ body {
             }
           }
         }
+      }
 
-        .load-more-wrap {
-          .button {
-            background: lighten($dark-sidebar, 2%) !important;
-          }
+      .load-more-wrap {
+        .button {
+          background: lighten($dark-sidebar, 2%) !important;
         }
       }
     }

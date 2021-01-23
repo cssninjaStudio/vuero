@@ -1583,7 +1583,8 @@
                   <span>Projects 1</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'admin-layouts-projects-projects' }"
+                  <RouterLink
+                    :to="{ name: 'admin-layouts-projects-projects-1' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -1681,7 +1682,7 @@
                   <span>Project Details</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'admin-layouts-projects-project' }"
+                  <RouterLink :to="{ name: 'admin-layouts-projects-details' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -4016,7 +4017,8 @@
                   <span>Projects 1</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-layouts-projects-projects' }"
+                  <RouterLink
+                    :to="{ name: 'webapp-layouts-projects-projects-1' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -4114,7 +4116,7 @@
                   <span>Project Details</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-layouts-projects-project' }"
+                  <RouterLink :to="{ name: 'webapp-layouts-projects-details' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>

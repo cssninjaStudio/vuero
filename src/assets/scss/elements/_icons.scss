@@ -410,199 +410,197 @@
 2. Icons Dark Mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .h-icon {
-      &.is-primary {
-        background: $accent;
+.is-dark {
+  .h-icon {
+    &.is-primary {
+      background: $accent;
 
-        &.is-bordered {
-          border-color: $accent;
-        }
-
-        i {
-          color: $white;
-        }
-
-        svg {
-          color: $smoke-white;
-        }
+      &.is-bordered {
+        border-color: $accent;
       }
 
-      &.is-accent {
-        background: $accent;
-
-        &.is-bordered {
-          border-color: $accent;
-        }
-
-        i {
-          color: $white;
-        }
-
-        svg {
-          color: $smoke-white;
-        }
+      i {
+        color: $white;
       }
 
-      &.is-success {
-        background: $success;
+      svg {
+        color: $smoke-white;
+      }
+    }
 
-        &.is-bordered {
-          border-color: $success;
-        }
+    &.is-accent {
+      background: $accent;
 
-        i {
-          color: $white;
-        }
-
-        svg {
-          color: $smoke-white;
-        }
+      &.is-bordered {
+        border-color: $accent;
       }
 
-      &.is-info {
-        background: $info;
-
-        &.is-bordered {
-          border-color: $info;
-        }
-
-        i {
-          color: $white;
-        }
-
-        svg {
-          color: $smoke-white;
-        }
+      i {
+        color: $white;
       }
 
-      &.is-warning {
-        background: $warning;
+      svg {
+        color: $smoke-white;
+      }
+    }
 
-        &.is-bordered {
-          border-color: $warning;
-        }
+    &.is-success {
+      background: $success;
 
-        i {
-          color: $white;
-        }
-
-        svg {
-          color: $smoke-white;
-        }
+      &.is-bordered {
+        border-color: $success;
       }
 
-      &.is-danger {
-        background: $danger;
-
-        &.is-bordered {
-          border-color: $danger;
-        }
-
-        i {
-          color: $white;
-        }
-
-        svg {
-          color: $smoke-white;
-        }
+      i {
+        color: $white;
       }
 
-      &.is-purple {
-        background: $h-purple;
+      svg {
+        color: $smoke-white;
+      }
+    }
 
-        &.is-bordered {
-          border-color: $h-purple;
-        }
+    &.is-info {
+      background: $info;
 
-        i {
-          color: $white;
-        }
-
-        svg {
-          color: $smoke-white;
-        }
+      &.is-bordered {
+        border-color: $info;
       }
 
-      &.is-blue {
-        background: $h-blue;
-
-        &.is-bordered {
-          border-color: $h-blue;
-        }
-
-        i {
-          color: $white;
-        }
-
-        svg {
-          color: $smoke-white;
-        }
+      i {
+        color: $white;
       }
 
-      &.is-yellow {
-        background: $h-yellow;
+      svg {
+        color: $smoke-white;
+      }
+    }
 
-        &.is-bordered {
-          border-color: $h-yellow;
-        }
+    &.is-warning {
+      background: $warning;
 
-        i {
-          color: $white;
-        }
-
-        svg {
-          color: $smoke-white;
-        }
+      &.is-bordered {
+        border-color: $warning;
       }
 
-      &.is-orange {
-        background: $h-orange;
-
-        &.is-bordered {
-          border-color: $h-orange;
-        }
-
-        i {
-          color: $white;
-        }
-
-        svg {
-          color: $smoke-white;
-        }
+      i {
+        color: $white;
       }
 
-      &.is-green {
-        background: $h-green;
+      svg {
+        color: $smoke-white;
+      }
+    }
 
-        &.is-bordered {
-          border-color: $h-green;
-        }
+    &.is-danger {
+      background: $danger;
 
-        i {
-          color: $white;
-        }
-
-        svg {
-          color: $smoke-white;
-        }
+      &.is-bordered {
+        border-color: $danger;
       }
 
-      &.is-red {
-        background: $h-red;
+      i {
+        color: $white;
+      }
 
-        &.is-bordered {
-          border-color: $h-red;
-        }
+      svg {
+        color: $smoke-white;
+      }
+    }
 
-        i {
-          color: $white;
-        }
+    &.is-purple {
+      background: $h-purple;
 
-        svg {
-          color: $smoke-white;
-        }
+      &.is-bordered {
+        border-color: $h-purple;
+      }
+
+      i {
+        color: $white;
+      }
+
+      svg {
+        color: $smoke-white;
+      }
+    }
+
+    &.is-blue {
+      background: $h-blue;
+
+      &.is-bordered {
+        border-color: $h-blue;
+      }
+
+      i {
+        color: $white;
+      }
+
+      svg {
+        color: $smoke-white;
+      }
+    }
+
+    &.is-yellow {
+      background: $h-yellow;
+
+      &.is-bordered {
+        border-color: $h-yellow;
+      }
+
+      i {
+        color: $white;
+      }
+
+      svg {
+        color: $smoke-white;
+      }
+    }
+
+    &.is-orange {
+      background: $h-orange;
+
+      &.is-bordered {
+        border-color: $h-orange;
+      }
+
+      i {
+        color: $white;
+      }
+
+      svg {
+        color: $smoke-white;
+      }
+    }
+
+    &.is-green {
+      background: $h-green;
+
+      &.is-bordered {
+        border-color: $h-green;
+      }
+
+      i {
+        color: $white;
+      }
+
+      svg {
+        color: $smoke-white;
+      }
+    }
+
+    &.is-red {
+      background: $h-red;
+
+      &.is-bordered {
+        border-color: $h-red;
+      }
+
+      i {
+        color: $white;
+      }
+
+      svg {
+        color: $smoke-white;
       }
     }
   }

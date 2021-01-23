@@ -207,8 +207,7 @@
 2. Animated Checkbox Dark Mode
 ========================================================================== */
 
-/* body {
-  &.is-dark {
+/* .is-dark {
     .animated-checkbox {
       .checkmark-wrap {
         .checkmark-circle,
@@ -641,48 +640,43 @@
       font-size: 0.6rem;
     }
   }
-
-  input:checked + span::after {
-  }
 }
 
 /* ==========================================================================
 5. Regular Checkbox / Radio Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    %controller {
-      input + span {
-        background-color: lighten($dark-sidebar, 2%);
-        border-color: lighten($dark-sidebar, 4%);
+.is-dark {
+  %controller {
+    input + span {
+      background-color: lighten($dark-sidebar, 2%);
+      border-color: lighten($dark-sidebar, 4%);
 
-        &::after {
-          color: $dark-dark-text;
-        }
-      }
-
-      input + span {
-        border-color: lighten($dark-sidebar, 16%);
+      &::after {
+        color: $dark-dark-text;
       }
     }
 
-    .checkbox,
-    .radio {
-      &.is-solid.is-primary {
-        input + span {
-          background-color: $accent !important;
-          border-color: $accent !important;
-        }
+    input + span {
+      border-color: lighten($dark-sidebar, 16%);
+    }
+  }
+
+  .checkbox,
+  .radio {
+    &.is-solid.is-primary {
+      input + span {
+        background-color: $accent !important;
+        border-color: $accent !important;
       }
+    }
 
-      &.is-outlined.is-primary {
-        input:checked + span {
-          border-color: $accent !important;
+    &.is-outlined.is-primary {
+      input:checked + span {
+        border-color: $accent !important;
 
-          &::after {
-            color: $accent !important;
-          }
+        &::after {
+          color: $accent !important;
         }
       }
     }
@@ -788,22 +782,20 @@ body {
 7. H Toggle Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .h-toggle {
-      input {
-        &:checked ~ .toggler {
-          background: lighten($dark-sidebar, 2%);
-        }
+.is-dark {
+  .h-toggle {
+    input {
+      &:checked ~ .toggler {
+        background: lighten($dark-sidebar, 2%);
       }
+    }
 
-      .toggler {
-        border-color: lighten($dark-sidebar, 25%);
+    .toggler {
+      border-color: lighten($dark-sidebar, 25%);
 
-        .active,
-        .inactive {
-          background: lighten($dark-sidebar, 2%);
-        }
+      .active,
+      .inactive {
+        background: lighten($dark-sidebar, 2%);
       }
     }
   }

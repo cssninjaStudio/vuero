@@ -455,7 +455,7 @@ const activeTab = ref<'list' | 'grid' | 'app' | 'utility'>('list')
                 <ul>
                   <li>
                     <RouterLink
-                      :to="{ name: 'webapp-layouts-projects-projects' }"
+                      :to="{ name: 'webapp-layouts-projects-projects-1' }"
                     >
                       <i class="lnil lnil-grid-alt"></i>
                       <span>Projects V1</span>
@@ -482,7 +482,7 @@ const activeTab = ref<'list' | 'grid' | 'app' | 'utility'>('list')
                   </li>
                   <li>
                     <RouterLink
-                      :to="{ name: 'webapp-layouts-projects-project' }"
+                      :to="{ name: 'webapp-layouts-projects-details' }"
                     >
                       <i class="lnil lnil-layout"></i>
                       <span>Project Details</span>

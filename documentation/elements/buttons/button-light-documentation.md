@@ -1,4 +1,4 @@
-### Light Button
+### Light Colors
 
 Solid buttons are available in lighter versions. 
 Simply use the same markup that we have for solid buttons and add the `is-light` modifier class.

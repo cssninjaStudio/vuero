@@ -7,25 +7,6 @@
 */
 
 /* ==========================================================================
-1. Projects Toolbar
-========================================================================== */
-
-.projects-toolbar {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-
-  .avatar-stack {
-    margin-left: 16px;
-  }
-
-  .button {
-    margin-left: auto;
-    min-width: 140px;
-  }
-}
-
-/* ==========================================================================
 2. Projects Grid
 ========================================================================== */
 
@@ -87,16 +68,14 @@
 3. Projects Grid dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .all-projects {
-      .project-grid {
-        .project-grid-item {
-          @include vuero-card--dark();
+.is-dark {
+  .all-projects {
+    .project-grid {
+      .project-grid-item {
+        @include vuero-card--dark();
 
-          h3 {
-            color: $dark-dark-text;
-          }
+        h3 {
+          color: $dark-dark-text;
         }
       }
     }
@@ -216,44 +195,42 @@ body {
 5. Projects Grid V2 dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .all-projects {
-      .all-projects-header {
+.is-dark {
+  .all-projects {
+    .all-projects-header {
+      background: lighten($dark-sidebar, 6%);
+      border-color: lighten($dark-sidebar, 12%);
+
+      .header-item {
+        border-color: lighten($dark-sidebar, 18%);
+
+        span {
+          color: $dark-dark-text;
+        }
+
+        i {
+          color: $accent !important;
+        }
+      }
+    }
+
+    .projects-card-grid {
+      .grid-item {
         background: lighten($dark-sidebar, 6%);
         border-color: lighten($dark-sidebar, 12%);
 
-        .header-item {
-          border-color: lighten($dark-sidebar, 18%);
-
-          span {
-            color: $dark-dark-text;
-          }
-
-          i {
-            color: $accent !important;
-          }
-        }
-      }
-
-      .projects-card-grid {
-        .grid-item {
-          background: lighten($dark-sidebar, 6%);
-          border-color: lighten($dark-sidebar, 12%);
-
-          .top-section {
-            .head {
-              h3 {
-                color: $dark-dark-text;
-              }
+        .top-section {
+          .head {
+            h3 {
+              color: $dark-dark-text;
             }
           }
+        }
 
-          .bottom-section {
-            .foot-block {
-              .heading {
-                color: darken($light-text, 12%);
-              }
+        .bottom-section {
+          .foot-block {
+            .heading {
+              color: darken($light-text, 12%);
             }
           }
         }
@@ -530,66 +507,64 @@ body {
 6. Projects Grid V3 dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .all-projects {
-      .illustration-header {
-        .header-stats {
-          .stats-inner {
-            background: lighten($dark-sidebar, 6%);
-            border-color: lighten($dark-sidebar, 12%);
-
-            .stat-item {
-              span {
-                color: $dark-dark-text;
-              }
-            }
-          }
-        }
-      }
-
-      .recent-projects {
-        .project-box {
+.is-dark {
+  .all-projects {
+    .illustration-header {
+      .header-stats {
+        .stats-inner {
           background: lighten($dark-sidebar, 6%);
           border-color: lighten($dark-sidebar, 12%);
 
-          h3 {
-            color: $dark-dark-text;
-          }
-        }
-      }
-
-      .project-minimal-grid {
-        .grid-header {
-          h3 {
-            color: $dark-dark-text;
-          }
-
-          .filter {
-            background: lighten($dark-sidebar, 1%) !important;
-            border-color: lighten($dark-sidebar, 4%) !important;
-
-            > span {
+          .stat-item {
+            span {
               color: $dark-dark-text;
             }
           }
         }
+      }
+    }
 
-        .grid-body {
-          .grid-item {
-            background: lighten($dark-sidebar, 6%);
-            border-color: lighten($dark-sidebar, 12%);
+    .recent-projects {
+      .project-box {
+        background: lighten($dark-sidebar, 6%);
+        border-color: lighten($dark-sidebar, 12%);
 
-            .item-title {
-              h3 {
-                color: $dark-dark-text;
-              }
+        h3 {
+          color: $dark-dark-text;
+        }
+      }
+    }
+
+    .project-minimal-grid {
+      .grid-header {
+        h3 {
+          color: $dark-dark-text;
+        }
+
+        .filter {
+          background: lighten($dark-sidebar, 1%) !important;
+          border-color: lighten($dark-sidebar, 4%) !important;
+
+          > span {
+            color: $dark-dark-text;
+          }
+        }
+      }
+
+      .grid-body {
+        .grid-item {
+          background: lighten($dark-sidebar, 6%);
+          border-color: lighten($dark-sidebar, 12%);
+
+          .item-title {
+            h3 {
+              color: $dark-dark-text;
             }
+          }
 
-            .h-avatar {
-              img {
-                border-color: lighten($dark-sidebar, 6%);
-              }
+          .h-avatar {
+            img {
+              border-color: lighten($dark-sidebar, 6%);
             }
           }
         }
@@ -604,16 +579,6 @@ body {
 
 @media only screen and (max-width: 767px) {
   .all-projects {
-    .projects-toolbar {
-      .avatar-stack {
-        display: none;
-      }
-
-      .h-button {
-        min-width: 110px;
-      }
-    }
-
     .all-projects-header {
       flex-direction: column;
 

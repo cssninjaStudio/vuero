@@ -7,9 +7,16 @@ import {
   activeSubnav,
   toggleSubnav,
 } from '/@src/composition/state/ui/webappNavState'
+import { useWindowScroll } from '@vueuse/core'
 
 const route = useRoute()
 const { dropdownElement, isOpen, open } = useDropdown()
+
+const { y } = useWindowScroll()
+
+const isScrolling = computed(() => {
+  return y.value > 30
+})
 
 const otherLayoutLink = computed(() => {
   if (route.fullPath.startsWith('/admin')) {
@@ -28,7 +35,7 @@ watch(
 </script>
 
 <template>
-  <div class="webapp-navbar is-colored">
+  <div :class="[isScrolling && 'is-scrolled']" class="webapp-navbar is-colored">
     <div class="webapp-navbar-inner">
       <div class="left">
         <RouterLink :to="{ name: 'index' }" class="brand">

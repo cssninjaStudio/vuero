@@ -42,7 +42,7 @@ useHead({
       <Toolbar />
     </div>
 
-    <ProjectViewV1 class="page-content-inner" />
+    <ProjectDetailsV1 class="page-content-inner" />
     <!-- <TaskPanel /> -->
   </div>
 </template>

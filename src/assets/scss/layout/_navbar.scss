@@ -9,559 +9,6 @@
 */
 
 /* ==========================================================================
-1. Mobile Navbar
-========================================================================== */
-
-.mobile-navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: none;
-  width: 100%;
-  z-index: 100;
-  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.12);
-  transition: all 0.3s;
-
-  &.no-shadow {
-    box-shadow: none !important;
-  }
-
-  .navbar-brand {
-    .is-brand {
-      img {
-        position: relative;
-        height: 32px !important;
-        max-height: 32px !important;
-      }
-    }
-
-    .navbar-burger {
-      background: transparent !important;
-
-      &.is-active,
-      &:hover {
-        background: transparent !important;
-      }
-    }
-
-    .user-dropdown {
-      margin-left: auto;
-      width: 32px;
-      height: 32px;
-
-      &.is-active {
-        svg {
-          color: $muted-grey;
-        }
-      }
-
-      .is-trigger {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        cursor: pointer;
-
-        .profile-avatar {
-          position: relative;
-          min-width: 32px;
-          min-height: 32px;
-
-          .avatar {
-            display: block;
-            width: 32px;
-            height: 32px;
-            min-width: 32px;
-            min-height: 32px;
-            border-radius: 50%;
-          }
-
-          .badge {
-            position: absolute;
-            top: unset !important;
-            right: -6px;
-            bottom: -2px;
-            width: 18px;
-            min-width: 18px;
-            height: 18px;
-            max-height: 18px;
-            border: 2px solid $white;
-            border-radius: 50%;
-          }
-        }
-
-        svg {
-          margin-left: 3px;
-          width: 22px;
-          height: 22px;
-          color: $dark-sidebar;
-          transition: all 0.3s;
-        }
-      }
-
-      .dropdown-menu {
-        right: -12px;
-        margin-top: 20px;
-
-        .dropdown-content {
-          padding-top: 0;
-          overflow: hidden;
-
-          .dropdown-head {
-            display: flex;
-            align-items: center;
-            padding: 20px 16px 20px 16px;
-            margin-bottom: 12px;
-            background: #fafafa;
-
-            .meta {
-              margin-left: 12px;
-              font-family: $font;
-
-              span {
-                display: block;
-
-                &:first-child {
-                  font-size: 1.1rem;
-                  font-weight: 500;
-                  color: $dark-text;
-                  line-height: 1.2;
-                }
-
-                &:nth-child(2) {
-                  text-transform: uppercase;
-                  color: $light-text;
-                  font-size: 0.7rem;
-                }
-              }
-            }
-          }
-
-          .logout-button {
-            svg {
-              color: $smoke-white !important;
-            }
-          }
-        }
-
-        .dropdown-item {
-          font-size: 0.9rem;
-        }
-      }
-
-      .flex-item {
-        display: flex !important;
-        justify-content: space-between;
-        align-items: center;
-        margin: 0 15px;
-
-        .toggler svg {
-          color: $smoke-white !important;
-        }
-
-        .toggle-title {
-          font-size: 0.8rem;
-          color: $muted-grey;
-
-          &:hover {
-            background: transparent !important;
-          }
-        }
-
-        &:hover {
-          background: transparent !important;
-        }
-      }
-    }
-  }
-
-  .navbar-item {
-    &.has-icon {
-      padding: 0.75rem !important;
-      border-bottom: 1px solid $fade-grey;
-
-      &:last-child {
-        border-bottom: none !important;
-      }
-
-      svg {
-        color: $primary;
-      }
-
-      .sidebar-icon {
-        .path {
-          fill: $primary;
-        }
-      }
-    }
-
-    &.is-sidebar-toggler {
-      svg {
-        color: $muted-grey !important;
-      }
-    }
-
-    &.is-flex {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
-      span {
-        display: block;
-
-        &.menu-badge {
-          color: $primary;
-          width: 20px;
-          height: 20px;
-          border: 1px solid $primary;
-          border-radius: 50%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          font-size: 90%;
-          font-weight: 500;
-        }
-      }
-    }
-
-    &.is-notification {
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 38px;
-      width: 38px;
-      transition: all 0.3s;
-      border-radius: 50%;
-      margin-right: 12px;
-
-      .navbar-link {
-        padding: 0;
-        display: block;
-        width: 18px;
-        height: 18px;
-      }
-
-      svg {
-        height: 18px;
-        width: 18px;
-        color: $muted-grey;
-        transition: all 0.3s;
-      }
-
-      .new-indicator {
-        position: absolute;
-        top: -9px;
-        right: -9px;
-        display: block;
-        width: 8px;
-        height: 8px;
-        border-radius: 50%;
-        background: $danger;
-      }
-
-      &:hover,
-      &.is-active {
-        box-shadow: 0 3px 10px 4px rgba(0, 0, 0, 0.07);
-
-        svg {
-          color: $primary;
-        }
-      }
-
-      .navbar-dropdown {
-        position: fixed;
-        padding-bottom: 15px;
-        top: 68px;
-        left: 0;
-        right: 0;
-        margin: 0 auto;
-        width: 96%;
-
-        .title {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-
-          .count,
-          .view-all {
-            font-size: 0.8rem;
-            color: $danger;
-            text-transform: uppercase;
-            font-weight: 500;
-          }
-        }
-
-        .heading {
-          display: flex;
-          align-items: flex-start;
-          justify-content: space-between;
-          padding: 1rem;
-          border-bottom: 0.01rem solid $light-grey;
-
-          .heading-left {
-            h6 {
-              font-size: 0.9rem;
-              font-weight: 500;
-              color: $light-text;
-              line-height: 1.1;
-            }
-          }
-
-          .heading-right {
-            .notification-link {
-              margin: 0.4rem 0;
-              color: $primary;
-              font-weight: 500;
-            }
-          }
-        }
-
-        .inner {
-          position: relative;
-          width: 100%;
-          height: 264px;
-          overflow: auto;
-
-          .notification-list {
-            list-style-type: none;
-            padding: 0.5rem 1rem;
-            margin: 0 0 0.5rem;
-
-            .notification-item {
-              display: flex;
-              align-items: center;
-              padding: 0.65rem 0;
-
-              .img-left {
-                img {
-                  display: inline-block;
-                  vertical-align: middle;
-                  height: 3rem;
-                  max-height: 3rem;
-                  width: 3rem;
-                  margin: 0 0.5rem 0 0;
-                  border-radius: 50%;
-                  max-width: 100%;
-                }
-              }
-
-              .user-content {
-                text-align: left;
-
-                .user-info {
-                  color: $dark-text;
-                  margin: 0.15rem 0 0;
-
-                  span {
-                    font-weight: 500;
-                  }
-                }
-
-                .time {
-                  margin: 0;
-                  color: $light-text;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-
-  .navbar-burger {
-    margin-left: 0 !important;
-
-    &:hover {
-      background-color: rgba(0, 0, 0, 0.02);
-    }
-
-    span {
-      background-color: $muted-grey;
-    }
-  }
-
-  .navbar-menu {
-    background: $white;
-
-    .navbar-item,
-    .navbar-link {
-      color: $sidebar;
-    }
-
-    .navbar-link {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      padding-right: 10px !important;
-
-      &.is-active {
-        .link-chevron {
-          transform: rotate(90deg) !important;
-        }
-      }
-
-      img {
-        height: 36px;
-        width: 36px;
-        max-height: 36px !important;
-        border-radius: 50%;
-      }
-
-      svg {
-        height: 16px;
-        width: 16px;
-        color: $primary;
-      }
-
-      span {
-        margin: 0 10px;
-
-        &.is-heading {
-          font-size: 12px;
-          font-weight: 500;
-          color: $sidebar;
-          letter-spacing: 1px;
-          text-transform: uppercase;
-        }
-
-        &.is-subheading {
-          font-size: 10px;
-          font-weight: 400;
-          color: $muted-grey;
-          letter-spacing: 1px;
-          text-transform: uppercase;
-        }
-
-        &.is-block span {
-          display: block;
-        }
-
-        &.link-chevron {
-          margin-left: auto;
-          height: 30px;
-          width: 30px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          transition: all 0.3s;
-          transform: rotate(0);
-
-          svg {
-            height: 18px;
-            width: 18px;
-            color: $muted-grey;
-          }
-        }
-      }
-
-      &:hover {
-        background: transparent !important;
-      }
-    }
-
-    .navbar-dropdown .navbar-item {
-      font-size: 95%;
-      padding: 0.75rem 1.5rem !important;
-      color: $muted-grey;
-
-      &.is-active,
-      &:hover {
-        color: $primary;
-        background: lighten($placeholder, 16%);
-      }
-    }
-  }
-}
-
-/* ==========================================================================
-2. Mobile Navbar Dark mode
-========================================================================== */
-
-body {
-  &.is-dark {
-    .mobile-navbar {
-      background: $dark-sidebar;
-
-      .navbar-menu.is-active {
-        background: lighten($dark-sidebar, 3%);
-
-        .navbar-link {
-          .is-heading {
-            color: lighten($accent-grey, 10%);
-          }
-
-          svg {
-            color: $accent;
-          }
-        }
-
-        .navbar-item.has-icon {
-          border-bottom-color: lighten($dark-sidebar, 10%) !important;
-        }
-
-        .navbar-dropdown .navbar-item {
-          color: darken($accent-grey, 5%) !important;
-        }
-
-        .is-search .control {
-          input {
-            background: lighten($dark-sidebar, 10%) !important;
-            border-color: lighten($dark-sidebar, 10%) !important;
-            color: $accent-grey;
-
-            &:focus {
-              ~ span svg {
-                color: $accent;
-              }
-            }
-          }
-        }
-      }
-    }
-
-    .is-notification {
-      &.is-active {
-        .navbar-link {
-          svg {
-            color: $accent !important;
-          }
-        }
-      }
-
-      .navbar-dropdown {
-        background: $dark-sidebar !important;
-        border-color: $dark-sidebar !important;
-
-        .heading {
-          border-color: lighten($dark-sidebar, 12%) !important;
-
-          .heading-right {
-            .notification-link {
-              color: $accent !important;
-            }
-          }
-        }
-
-        .inner {
-          .notification-list {
-            li {
-              .notification-item {
-                .user-content {
-                  p {
-                    color: $dark-dark-text !important;
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-/* ==========================================================================
 3. Webapp Navbar
 ========================================================================== */
 
@@ -1337,50 +784,216 @@ body {
 4. Webapp Navbar Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .webapp-navbar:not(.is-colored) {
-      background: darken($dark-sidebar, 2%);
-      border-color: lighten($dark-sidebar, 1%);
+.is-dark {
+  .webapp-navbar:not(.is-colored) {
+    background: darken($dark-sidebar, 2%);
+    border-color: lighten($dark-sidebar, 1%);
 
-      &.is-transparent {
-        background: transparent;
-        box-shadow: none;
-        border-bottom-color: transparent;
+    &.is-transparent {
+      background: transparent;
+      box-shadow: none;
+      border-bottom-color: transparent;
 
-        &.is-solid,
-        &.is-scrolled {
-          background: darken($dark-sidebar, 2%);
-          border-color: lighten($dark-sidebar, 1%);
-        }
+      &.is-solid,
+      &.is-scrolled {
+        background: darken($dark-sidebar, 2%);
+        border-color: lighten($dark-sidebar, 1%);
       }
+    }
 
-      .webapp-navbar-inner {
-        .left {
-          .separator {
-            border-color: lighten($dark-sidebar, 12%);
-          }
+    .webapp-navbar-inner {
+      .left {
+        .separator {
+          border-color: lighten($dark-sidebar, 12%);
+        }
 
-          .project-dropdown {
-            .dropdown-menu {
-              .dropdown-content {
-                .dropdown-block {
-                  background: lighten($dark-sidebar, 2%) !important;
+        .project-dropdown {
+          .dropdown-menu {
+            .dropdown-content {
+              .dropdown-block {
+                background: lighten($dark-sidebar, 2%) !important;
 
-                  &:hover {
-                    background: lighten($dark-sidebar, 5%) !important;
-                  }
+                &:hover {
+                  background: lighten($dark-sidebar, 5%) !important;
+                }
 
-                  .meta {
-                    span {
-                      &:first-child {
-                        color: $dark-dark-text !important;
-                      }
+                .meta {
+                  span {
+                    &:first-child {
+                      color: $dark-dark-text !important;
                     }
                   }
                 }
               }
             }
+          }
+        }
+      }
+
+      .center {
+        .centered-links {
+          .centered-link {
+            &:hover {
+              background: lighten($dark-sidebar, 3%);
+            }
+
+            &.is-active {
+              background: lighten($dark-sidebar, 2%);
+              border-color: lighten($dark-sidebar, 12%);
+
+              &:hover {
+                background: lighten($dark-sidebar, 2%);
+              }
+
+              span {
+                color: $accent;
+              }
+
+              svg {
+                color: $accent;
+              }
+            }
+          }
+        }
+
+        .centered-drops {
+          .centered-drop {
+            > .dropdown {
+              &:hover {
+                .is-trigger {
+                  .button {
+                    background: lighten($dark-sidebar, 2%);
+                    border-color: lighten($dark-sidebar, 2%);
+                  }
+                }
+              }
+
+              &.is-active {
+                .is-trigger {
+                  .button {
+                    background: lighten($dark-sidebar, 2%);
+                    border-color: lighten($dark-sidebar, 12%) !important;
+                  }
+                }
+              }
+
+              &.has-mega-dropdown {
+                .dropdown-menu {
+                  .dropdown-content {
+                    .category-selector {
+                      .title-wrap {
+                        h4 {
+                          color: $dark-dark-text;
+                        }
+                      }
+
+                      .category-selector-inner {
+                        .category-item {
+                          background: lighten($dark-sidebar, 4%);
+                          border-color: lighten($dark-sidebar, 12%);
+
+                          &:hover {
+                            i,
+                            span {
+                              color: $accent;
+                            }
+                          }
+
+                          span {
+                            color: $dark-dark-text;
+                          }
+                        }
+                      }
+                    }
+
+                    .mega-menus {
+                      .dropdown-item-group {
+                        .column-heading {
+                          color: $dark-dark-text;
+                          border-color: lighten($dark-sidebar, 12%);
+                        }
+
+                        .column-content {
+                          .is-media {
+                            &:hover {
+                              .meta {
+                                span:first-child {
+                                  color: $smoke-white;
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+
+              .is-trigger {
+                .button {
+                  background: transparent;
+                  border: none;
+                }
+              }
+            }
+          }
+        }
+
+        .centered-button {
+          > .button {
+            background: transparent !important;
+            border: none;
+
+            &:hover {
+              background: lighten($dark-sidebar, 3%) !important;
+            }
+          }
+        }
+      }
+
+      .right {
+        .profile-dropdown {
+          .dropdown-menu {
+            .dropdown-content {
+              .dropdown-head {
+                background: lighten($dark-sidebar, 2%) !important;
+
+                &:hover {
+                  background: lighten($dark-sidebar, 2%) !important;
+                }
+
+                .meta {
+                  &:hover {
+                    background: lighten($dark-sidebar, 2%) !important;
+                  }
+
+                  span {
+                    &:first-child {
+                      color: $dark-dark-text !important;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .webapp-navbar {
+    &.is-colored {
+      background: darken($accent, 2%);
+
+      .webapp-navbar-inner {
+        .left {
+          .separator {
+            border-color: lighten($accent, 3%);
+          }
+
+          .title {
+            color: $smoke-white !important;
           }
         }
 
@@ -1388,36 +1001,53 @@ body {
           .centered-links {
             .centered-link {
               &:hover {
-                background: lighten($dark-sidebar, 3%);
-              }
+                background: darken($accent, 5%);
 
-              &.is-active {
-                background: lighten($dark-sidebar, 2%);
-                border-color: lighten($dark-sidebar, 12%);
-
-                &:hover {
-                  background: lighten($dark-sidebar, 2%);
+                svg {
+                  color: $smoke-white;
                 }
 
                 span {
-                  color: $accent;
+                  color: $smoke-white;
+                }
+              }
+
+              &.is-active {
+                background: darken($accent, 8%);
+                border-color: darken($accent, 2%);
+
+                &:hover {
+                  background: darken($accent, 8%);
                 }
 
                 svg {
-                  color: $accent;
+                  color: $smoke-white;
                 }
+
+                span {
+                  color: $smoke-white;
+                }
+              }
+
+              svg {
+                color: lighten($accent, 12%);
+              }
+
+              span {
+                color: lighten($accent, 12%);
               }
             }
           }
 
           .centered-drops {
             .centered-drop {
-              > .dropdown {
+              .dropdown {
                 &:hover {
                   .is-trigger {
                     .button {
-                      background: lighten($dark-sidebar, 2%);
-                      border-color: lighten($dark-sidebar, 2%);
+                      background: darken($accent, 8%);
+                      border-color: darken($accent, 4%);
+                      color: $smoke-white;
                     }
                   }
                 }
@@ -1425,8 +1055,9 @@ body {
                 &.is-active {
                   .is-trigger {
                     .button {
-                      background: lighten($dark-sidebar, 2%);
-                      border-color: lighten($dark-sidebar, 12%) !important;
+                      background: darken($accent, 8%);
+                      border-color: darken($accent, 6%);
+                      color: $smoke-white;
                     }
                   }
                 }
@@ -1486,27 +1117,85 @@ body {
 
                 .is-trigger {
                   .button {
-                    background: transparent;
-                    border: none;
+                    background: darken($accent, 2%);
+                    border-color: darken($accent, 2%);
+                    color: lighten($accent, 22%);
+
+                    svg {
+                      color: lighten($accent, 24%);
+                    }
                   }
+                }
+              }
+            }
+
+            .centered-button {
+              .button {
+                background: darken($accent, 2%) !important;
+                border-color: darken($accent, 2%) !important;
+                color: lighten($accent, 22%) !important;
+
+                &:hover {
+                  background: darken($accent, 8%) !important;
+                  color: $smoke-white !important;
                 }
               }
             }
           }
 
-          .centered-button {
-            > .button {
-              background: transparent !important;
-              border: none;
+          .centered-search {
+            .field {
+              .control {
+                .input {
+                  background: darken($accent, 10%);
+                  border-color: darken($accent, 6%);
+                  color: $smoke-white;
 
-              &:hover {
-                background: lighten($dark-sidebar, 3%) !important;
+                  &::placeholder {
+                    color: lighten($accent, 4%) !important;
+                  }
+
+                  &:focus ~ .form-icon svg {
+                    color: $smoke-white !important;
+                  }
+                }
+
+                .form-icon svg {
+                  color: lighten($accent, 6%);
+                }
               }
             }
           }
         }
 
         .right {
+          .toolbar {
+            .toolbar-link {
+              &:hover {
+                background: darken($accent, 10%) !important;
+                border-color: darken($accent, 6%) !important;
+              }
+
+              > svg {
+                color: $smoke-white;
+              }
+            }
+
+            .dropdown {
+              &:hover,
+              &.is-active {
+                .is-trigger {
+                  background: darken($accent, 10%) !important;
+                  border-color: darken($accent, 6%) !important;
+                }
+              }
+
+              .is-trigger svg {
+                color: $smoke-white;
+              }
+            }
+          }
+
           .profile-dropdown {
             .dropdown-menu {
               .dropdown-content {
@@ -1535,342 +1224,98 @@ body {
         }
       }
     }
+  }
 
-    .webapp-navbar {
-      &.is-colored {
-        background: darken($accent, 2%);
+  .webapp-subnavbar {
+    background: lighten($dark-sidebar, 2%);
+    border-color: lighten($dark-sidebar, 4%);
 
-        .webapp-navbar-inner {
-          .left {
-            .separator {
-              border-color: lighten($accent, 3%);
-            }
-
-            .title {
-              color: $smoke-white !important;
-            }
-          }
-
-          .center {
-            .centered-links {
-              .centered-link {
-                &:hover {
-                  background: darken($accent, 5%);
-
-                  svg {
-                    color: $smoke-white;
-                  }
-
-                  span {
-                    color: $smoke-white;
-                  }
-                }
-
-                &.is-active {
-                  background: darken($accent, 8%);
-                  border-color: darken($accent, 2%);
-
-                  &:hover {
-                    background: darken($accent, 8%);
-                  }
-
-                  svg {
-                    color: $smoke-white;
-                  }
-
-                  span {
-                    color: $smoke-white;
-                  }
-                }
-
-                svg {
-                  color: lighten($accent, 12%);
-                }
-
-                span {
-                  color: lighten($accent, 12%);
-                }
-              }
-            }
-
-            .centered-drops {
-              .centered-drop {
-                .dropdown {
-                  &:hover {
-                    .is-trigger {
-                      .button {
-                        background: darken($accent, 8%);
-                        border-color: darken($accent, 4%);
-                        color: $smoke-white;
-                      }
-                    }
-                  }
-
-                  &.is-active {
-                    .is-trigger {
-                      .button {
-                        background: darken($accent, 8%);
-                        border-color: darken($accent, 6%);
-                        color: $smoke-white;
-                      }
-                    }
-                  }
-
-                  &.has-mega-dropdown {
-                    .dropdown-menu {
-                      .dropdown-content {
-                        .category-selector {
-                          .title-wrap {
-                            h4 {
-                              color: $dark-dark-text;
-                            }
-                          }
-
-                          .category-selector-inner {
-                            .category-item {
-                              background: lighten($dark-sidebar, 4%);
-                              border-color: lighten($dark-sidebar, 12%);
-
-                              &:hover {
-                                i,
-                                span {
-                                  color: $accent;
-                                }
-                              }
-
-                              span {
-                                color: $dark-dark-text;
-                              }
-                            }
-                          }
-                        }
-
-                        .mega-menus {
-                          .dropdown-item-group {
-                            .column-heading {
-                              color: $dark-dark-text;
-                              border-color: lighten($dark-sidebar, 12%);
-                            }
-
-                            .column-content {
-                              .is-media {
-                                &:hover {
-                                  .meta {
-                                    span:first-child {
-                                      color: $smoke-white;
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-
-                  .is-trigger {
-                    .button {
-                      background: darken($accent, 2%);
-                      border-color: darken($accent, 2%);
-                      color: lighten($accent, 22%);
-
-                      svg {
-                        color: lighten($accent, 24%);
-                      }
-                    }
-                  }
-                }
-              }
-
-              .centered-button {
-                .button {
-                  background: darken($accent, 2%) !important;
-                  border-color: darken($accent, 2%) !important;
-                  color: lighten($accent, 22%) !important;
-
-                  &:hover {
-                    background: darken($accent, 8%) !important;
-                    color: $smoke-white !important;
-                  }
-                }
-              }
-            }
-
-            .centered-search {
-              .field {
-                .control {
-                  .input {
-                    background: darken($accent, 10%);
-                    border-color: darken($accent, 6%);
-                    color: $smoke-white;
-
-                    &::placeholder {
-                      color: lighten($accent, 4%) !important;
-                    }
-
-                    &:focus ~ .form-icon svg {
-                      color: $smoke-white !important;
-                    }
-                  }
-
-                  .form-icon svg {
-                    color: lighten($accent, 6%);
-                  }
-                }
-              }
-            }
-          }
-
-          .right {
-            .toolbar {
-              .toolbar-link {
-                &:hover {
-                  background: darken($accent, 10%) !important;
-                  border-color: darken($accent, 6%) !important;
-                }
-
-                > svg {
-                  color: $smoke-white;
-                }
-              }
-
-              .dropdown {
-                &:hover,
-                &.is-active {
-                  .is-trigger {
-                    background: darken($accent, 10%) !important;
-                    border-color: darken($accent, 6%) !important;
-                  }
-                }
-
-                .is-trigger svg {
-                  color: $smoke-white;
-                }
-              }
-            }
-
-            .profile-dropdown {
-              .dropdown-menu {
-                .dropdown-content {
-                  .dropdown-head {
-                    background: lighten($dark-sidebar, 2%) !important;
-
-                    &:hover {
-                      background: lighten($dark-sidebar, 2%) !important;
-                    }
-
-                    .meta {
-                      &:hover {
-                        background: lighten($dark-sidebar, 2%) !important;
-                      }
-
-                      span {
-                        &:first-child {
-                          color: $dark-dark-text !important;
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-
-    .webapp-subnavbar {
-      background: lighten($dark-sidebar, 2%);
-      border-color: lighten($dark-sidebar, 4%);
-
-      .webapp-subnavbar-inner {
-        .tabs {
-          li {
-            &.is-active {
-              a {
-                border-color: lighten($dark-sidebar, 12%);
-                background: darken($dark-sidebar, 2%);
-                color: $accent;
-                opacity: 1;
-              }
-
-              &:hover {
-                a {
-                  background: darken($dark-sidebar, 2%);
-                }
-              }
-            }
-
-            .router-link-exact-active {
+    .webapp-subnavbar-inner {
+      .tabs {
+        li {
+          &.is-active {
+            a {
               border-color: lighten($dark-sidebar, 12%);
               background: darken($dark-sidebar, 2%);
               color: $accent;
               opacity: 1;
-
-              &:hover {
-                background: darken($dark-sidebar, 2%);
-              }
             }
 
             &:hover {
               a {
-                background: lighten($dark-sidebar, 8%);
+                background: darken($dark-sidebar, 2%);
               }
-            }
-
-            a {
-              opacity: 0.6;
             }
           }
-        }
 
-        .tab-content {
-          .tab-content-inner {
-            .center {
-              .column {
-                border-color: lighten($dark-sidebar, 12%);
+          .router-link-exact-active {
+            border-color: lighten($dark-sidebar, 12%);
+            background: darken($dark-sidebar, 2%);
+            color: $accent;
+            opacity: 1;
+
+            &:hover {
+              background: darken($dark-sidebar, 2%);
+            }
+          }
+
+          &:hover {
+            a {
+              background: lighten($dark-sidebar, 8%);
+            }
+          }
+
+          a {
+            opacity: 0.6;
+          }
+        }
+      }
+
+      .tab-content {
+        .tab-content-inner {
+          .center {
+            .column {
+              border-color: lighten($dark-sidebar, 12%);
+            }
+
+            .column-heading {
+              color: $dark-dark-text;
+            }
+
+            .column-placeholder {
+              &:hover {
+                border-color: $accent;
+
+                h3 {
+                  color: $accent;
+                }
               }
 
-              .column-heading {
+              h3 {
                 color: $dark-dark-text;
               }
+            }
 
-              .column-placeholder {
+            ul {
+              li {
                 &:hover {
-                  border-color: $accent;
-
-                  h3 {
+                  a {
+                    opacity: 1;
                     color: $accent;
                   }
                 }
 
-                h3 {
-                  color: $dark-dark-text;
-                }
-              }
-
-              ul {
-                li {
-                  &:hover {
-                    a {
-                      opacity: 1;
-                      color: $accent;
-                    }
-                  }
-
-                  &.is-active {
-                    border-color: $accent;
-
-                    a {
-                      opacity: 1;
-                      color: $accent;
-                    }
-                  }
+                &.is-active {
+                  border-color: $accent;
 
                   a {
-                    opacity: 0.6;
+                    opacity: 1;
+                    color: $accent;
                   }
+                }
+
+                a {
+                  opacity: 0.6;
                 }
               }
             }

@@ -1,11 +1,7 @@
 <script setup lang="ts">
-import { useHead } from '@vueuse/head'
 import { onMounted } from 'vue'
 
-import {
-  activeSidebar,
-  toggleSidebar,
-} from '/@src/composition/state/ui/activeSidebarState'
+import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
 
 onMounted(() => {
   activeSidebar.value = 'elements'
@@ -34,22 +30,3 @@ onMounted(() => {
     </div>
   </DefaultLayout>
 </template>
-
-<style lang="scss" scoped>
-.fade-fast-enter-active,
-.fade-fast-leave-active {
-  transition: opacity 0.2s ease;
-}
-
-.fade-fast-enter-from,
-.fade-fast-leave-to {
-  opacity: 0;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .fade-fast-enter-active,
-  .fade-fast-leave-active {
-    transition: none;
-  }
-}
-</style>

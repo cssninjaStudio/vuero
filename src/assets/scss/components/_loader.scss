@@ -95,12 +95,10 @@
   }
 }
 
-body {
-  &.is-dark {
-    .has-loader {
-      .h-loader-wrapper {
-        background: lighten($dark-sidebar, 6%);
-      }
+.is-dark {
+  .has-loader {
+    .h-loader-wrapper {
+      background: lighten($dark-sidebar, 6%);
     }
   }
 }

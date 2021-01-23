@@ -201,5 +201,292 @@
 <style lang="scss">
 @import '../../assets/scss/abstracts/_variables.scss';
 @import '../../assets/scss/abstracts/_mixins.scss';
-@import '../../assets/scss/pages/generic/_utility.scss';
+
+/* ==========================================================================
+4. Invoice
+========================================================================== */
+
+.invoice-wrapper {
+  max-width: 740px;
+  margin: 0 auto;
+
+  &.is-webapp {
+    margin-top: 30px;
+  }
+
+  .invoice-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid darken($fade-grey, 4%);
+
+    .left {
+      h3 {
+        font-family: $font-alt;
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: $dark-text;
+      }
+    }
+
+    .right {
+      .controls {
+        display: flex;
+
+        .action {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 32px;
+          width: 32px;
+          min-width: 32px;
+          border-radius: 50%;
+          color: $light-text;
+          margin: 0 4px;
+          transition: all 0.3s;
+
+          &:hover {
+            color: $dark-text;
+            background: darken($fade-grey, 4%);
+          }
+
+          svg {
+            height: 16px;
+            width: 16px;
+            stroke-width: 1.6px;
+          }
+        }
+      }
+    }
+  }
+
+  .invoice-body {
+    .invoice-card {
+      @include vuero-s-card();
+
+      padding: 0;
+
+      .invoice-section {
+        padding: 40px;
+
+        &.is-flex {
+          display: flex;
+          align-items: center;
+
+          .meta {
+            margin-left: 16px;
+            font-family: $font;
+
+            h3 {
+              font-family: $font-alt;
+              font-size: 1.1rem;
+              font-weight: 600;
+              line-height: 1;
+            }
+
+            span {
+              display: block;
+              color: $light-text;
+              font-weight: 400;
+              font-size: 0.9rem;
+            }
+          }
+
+          .end {
+            margin-left: auto;
+            text-align: right;
+
+            &.is-left {
+              text-align: left;
+              max-width: 300px;
+
+              p {
+                padding-top: 4px;
+                font-size: 0.95rem;
+                line-height: 1.2;
+              }
+            }
+
+            h3 {
+              font-family: $font-alt;
+              font-size: 1.1rem;
+              font-weight: 600;
+              line-height: 1;
+            }
+
+            span {
+              display: block;
+              color: $light-text;
+              font-weight: 400;
+              font-size: 0.9rem;
+            }
+          }
+        }
+
+        &.is-bordered {
+          border-bottom: 1px solid darken($fade-grey, 3%);
+        }
+
+        .h-avatar {
+          &.is-customer {
+            border: 1.6px solid darken($fade-grey, 3%);
+            border-radius: 50%;
+            box-shadow: $light-box-shadow;
+          }
+        }
+
+        .flex-table {
+          &.sub-table {
+            .flex-table-item {
+              padding-top: 0;
+              padding-bottom: 0;
+              margin-bottom: 0;
+              min-height: 40px;
+              border: none;
+
+              .table-label {
+                font-family: $font;
+                text-transform: uppercase;
+                font-size: 0.8rem;
+                color: $light-text;
+              }
+
+              .table-total {
+                font-family: $font;
+                color: $dark-text;
+                font-weight: 500;
+
+                &.is-bigger {
+                  font-size: 1.2rem;
+                  font-weight: 600;
+                }
+              }
+            }
+          }
+
+          .flex-table-header {
+            span {
+              &:not(:first-child) {
+                justify-content: flex-end;
+              }
+            }
+          }
+
+          .flex-table-item {
+            .flex-table-cell {
+              &:not(:first-child) {
+                justify-content: flex-end;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+5. Invoice Dark mode
+========================================================================== */
+
+.is-dark {
+  .invoice-wrapper {
+    .invoice-header {
+      border-color: lighten($dark-sidebar, 20%);
+
+      .left {
+        h3 {
+          color: $dark-dark-text;
+        }
+      }
+
+      .right {
+        .controls {
+          .action {
+            border: 1px solid transparent;
+
+            &:hover {
+              background: lighten($dark-sidebar, 2%);
+              border-color: $accent;
+              color: $accent;
+            }
+          }
+        }
+      }
+    }
+
+    .invoice-body {
+      .invoice-card {
+        @include vuero-card--dark();
+      }
+    }
+
+    .invoice-section {
+      border-color: lighten($dark-sidebar, 12%) !important;
+
+      &.is-flex {
+        .h-avatar {
+          border-color: lighten($dark-sidebar, 12%) !important;
+        }
+
+        .meta,
+        .end {
+          h3 {
+            color: $dark-dark-text;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .invoice-wrapper {
+    .invoice-section {
+      &.is-flex {
+        flex-direction: column;
+        text-align: center;
+
+        .h-avatar {
+          margin-bottom: 16px;
+        }
+
+        .meta {
+          margin-left: 0 !important;
+        }
+
+        .end {
+          margin: 16px auto 0 auto;
+          text-align: center !important;
+        }
+      }
+
+      .flex-table {
+        &.sub-table {
+          padding-top: 16px;
+
+          .is-vhidden {
+            display: none !important;
+          }
+
+          .flex-table-item:not(.is-vhidden) {
+            flex-direction: revert !important;
+          }
+        }
+
+        .flex-table-item {
+          .flex-table-cell {
+            &.is-grow {
+              > span {
+                margin-left: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 </style>

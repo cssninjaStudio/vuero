@@ -7,123 +7,6 @@
 */
 
 /* ==========================================================================
-1. Mobile Sidebar
-========================================================================== */
-
-.mobile-main-sidebar {
-  position: fixed;
-  top: 60px;
-  left: 0;
-  height: calc(100% - 60px);
-  width: 60px;
-  background: $white;
-  border-top: 1px solid $fade-grey;
-  border-right: 1px solid $fade-grey;
-  z-index: 100;
-  transform: translateX(-100%);
-  transition: all 0.3s;
-
-  &.is-active {
-    transform: translateX(0);
-  }
-
-  .inner {
-    height: 100%;
-    width: 100%;
-    position: relative;
-
-    .icon-side-menu,
-    .bottom-icon-side-menu {
-      li {
-        width: 60px;
-        height: 60px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        a {
-          display: block;
-          position: relative;
-          transform: rotate(0);
-          opacity: 1;
-          transition: all 0.3s;
-
-          &:hover,
-          &.is-active {
-            > svg {
-              color: $primary;
-            }
-          }
-
-          > svg {
-            color: $title-grey;
-            height: 20px;
-            width: 20px;
-            stroke-width: 1.6px;
-          }
-
-          .sidebar-icon {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 24px;
-            width: 24px;
-            transition: all 0.3s;
-          }
-
-          &:hover svg,
-          &.is-active svg {
-            color: $primary;
-          }
-
-          &.is-opened {
-            transform: rotate(360deg);
-            opacity: 0;
-          }
-
-          &.is-inactive {
-            transform: rotate(-360deg);
-            opacity: 0;
-          }
-
-          &.is-selected,
-          &.router-link-active {
-            svg {
-              color: $primary;
-            }
-          }
-        }
-
-        #open-filters {
-          svg {
-            transform: rotate(0);
-            transition: all 0.3s;
-          }
-
-          &:hover {
-            svg {
-              transform: rotate(145deg);
-            }
-          }
-        }
-
-        &.is-active {
-          a svg {
-            color: $primary;
-          }
-        }
-      }
-    }
-
-    .bottom-icon-side-menu {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-    }
-  }
-}
-
-/* ==========================================================================
 2. Mobile Subsidebar
 ========================================================================== */
 
@@ -597,20 +480,24 @@
 3. Mobile Subsidebar Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .mobile-main-sidebar {
-      background: darken($dark-sidebar, 6%);
-      border-color: lighten($dark-sidebar, 1%) !important;
+.is-dark {
+  .mobile-subsidebar {
+    background: lighten($dark-sidebar, 2%);
+    border-color: lighten($dark-sidebar, 4%);
 
-      .inner {
-        .icon-side-menu {
-          li {
-            a {
-              &.is-active {
-                svg {
-                  color: $accent;
-                }
+    .submenu {
+      li {
+        &.is-active {
+          a {
+            color: $accent !important;
+          }
+        }
+
+        &.has-children {
+          &.active {
+            .collapse-wrap {
+              > a {
+                color: $smoke-white;
               }
             }
           }
@@ -618,51 +505,26 @@ body {
       }
     }
 
-    .mobile-subsidebar {
-      background: lighten($dark-sidebar, 2%);
-      border-color: lighten($dark-sidebar, 4%);
+    &.is-messaging {
+      ul li {
+        &.is-active {
+          background: darken($dark-sidebar, 4%);
+          border-left-color: $accent !important;
+        }
 
-      .submenu {
-        li {
-          &.is-active {
-            a {
-              color: $accent !important;
-            }
-          }
-
-          &.has-children {
-            &.active {
-              .collapse-wrap {
-                > a {
-                  color: $smoke-white;
-                }
-              }
+        .recipient-meta {
+          span {
+            &:first-child,
+            &.is-unread {
+              color: $accent-grey !important;
             }
           }
         }
-      }
 
-      &.is-messaging {
-        ul li {
-          &.is-active {
-            background: darken($dark-sidebar, 4%);
-            border-left-color: $accent !important;
-          }
-
-          .recipient-meta {
-            span {
-              &:first-child,
-              &.is-unread {
-                color: $accent-grey !important;
-              }
-            }
-          }
-
-          .user-group {
-            img,
-            span {
-              border-color: lighten($dark-sidebar, 2%) !important;
-            }
+        .user-group {
+          img,
+          span {
+            border-color: lighten($dark-sidebar, 2%) !important;
           }
         }
       }

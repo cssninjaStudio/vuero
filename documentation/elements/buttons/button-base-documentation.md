@@ -3,12 +3,15 @@ state:
   clicked: 0
 ---
 
-### H-Button
+### Basic usage
 
-Vuero provides it's own subset of Bulma buttons. Use the `h-button` class with a Bulma native `button` class to start using Vuero buttons.  
+Vuero provides it's own subset of Bulma buttons. Use the `h-button` class with a Bulma native `button` class to start using Vuero buttons.
+
+#### Modifiers
+
 Basic modifiers such as `is-bold` and `is-rounded` are available.
 
-> toto
+> this is a hint
 
 <!--code-->
 
@@ -20,14 +23,24 @@ const clicked = ref(0)
 </script>
 
 <template>
-  <a class="button h-button" @click="clicked++">
+  <!-- use on native <button> tag -->
+  <button class="button h-button" @click="clicked++">
+    clicked: {{ clicked }}
+  </button>
+
+  <!-- or on <a> tag -->
+  <a href="#" class="button h-button" @click.prevent="clicked++">
     clicked: {{ clicked }}
   </a>
+
+  <!-- or on <router-link> component -->
+  <RouterLink :to="{ name: 'index' }" class="button h-button">
+    clicked: {{ clicked }}
+  </RouterLink>
 </template>
 ```
 
 <!--/code-->
-
 
 <!--example-->
 

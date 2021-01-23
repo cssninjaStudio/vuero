@@ -86,30 +86,50 @@ var {
   color: $dark-text;
 }
 
+code {
+  white-space: pre;
+}
+
 /* ==========================================================================
 2. Titles Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .title,
-    .dark-inverted {
-      color: $dark-dark-text !important;
+.is-dark {
+  .title,
+  .dark-inverted {
+    color: $dark-dark-text !important;
+  }
+
+  .subtitle {
+    color: $light-text;
+  }
+
+  a {
+    &.dark-inverted {
+      color: $accent !important;
     }
 
-    .subtitle {
-      color: $light-text;
+    &.dark-inverted-hover:hover {
+      color: $accent !important;
     }
+  }
 
-    a {
-      &.dark-inverted {
-        color: $accent !important;
-      }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $dark-dark-text;
+  }
 
-      &.dark-inverted-hover:hover {
-        color: $accent !important;
-      }
-    }
+  code {
+    background: #1a1a1f;
+    color: $accent;
+  }
+
+  strong {
+    color: $white;
   }
 }
 

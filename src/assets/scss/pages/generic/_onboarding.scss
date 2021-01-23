@@ -90,23 +90,21 @@ Onboarding Layouts
 2. Standard Onboarding Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .standard-onboarding {
-      .title-wrap {
-        h2 {
-          color: $dark-dark-text;
-        }
+.is-dark {
+  .standard-onboarding {
+    .title-wrap {
+      h2 {
+        color: $dark-dark-text;
       }
+    }
 
-      .onboarding-wrap {
-        .onboarding-wrap-inner {
-          .onboarding-card {
-            @include vuero-card--dark();
+    .onboarding-wrap {
+      .onboarding-wrap-inner {
+        .onboarding-card {
+          @include vuero-card--dark();
 
-            h3 {
-              color: $dark-dark-text;
-            }
+          h3 {
+            color: $dark-dark-text;
           }
         }
       }

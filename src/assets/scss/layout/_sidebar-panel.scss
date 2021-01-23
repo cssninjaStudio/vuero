@@ -55,25 +55,23 @@
 2. Sidebar Panel Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .sidebar-panel {
+.is-dark {
+  .sidebar-panel {
+    background: lighten($dark-sidebar, 5%);
+    border-color: lighten($dark-sidebar, 5%) !important;
+
+    .panel-close {
+      svg {
+        color: $muted-grey !important;
+      }
+    }
+
+    .subpanel-header {
       background: lighten($dark-sidebar, 5%);
-      border-color: lighten($dark-sidebar, 5%) !important;
+    }
 
-      .panel-close {
-        svg {
-          color: $muted-grey !important;
-        }
-      }
-
-      .subpanel-header {
-        background: lighten($dark-sidebar, 5%);
-      }
-
-      .inner {
-        background: lighten($dark-sidebar, 5%);
-      }
+    .inner {
+      background: lighten($dark-sidebar, 5%);
     }
   }
 }
@@ -191,13 +189,13 @@ body {
           }
         }
 
-        > a.router-link-active {
+        > a.router-link-exact-active {
           font-weight: 600;
           color: $primary;
         }
 
         &.has-children {
-          .is-submenu.router-link-active {
+          .is-submenu.router-link-exact-active {
             font-weight: 500;
             color: $primary;
           }
@@ -291,7 +289,7 @@ body {
               font-family: $font;
 
               &.is-active,
-              .router-link-active {
+              .router-link-exact-active {
                 .is-submenu {
                   font-weight: 500;
 
@@ -310,7 +308,7 @@ body {
                 font-size: 0.9rem;
 
                 &.is-active,
-                .router-link-active {
+                .router-link-exact-active {
                   font-weight: 500;
                   color: $primary;
                 }
@@ -408,26 +406,24 @@ body {
 4. Generic Panel Dark Mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .sidebar-panel {
-      &.is-generic {
-        .subpanel-header {
-          .project-dropdown {
-            .dropdown-menu {
-              .dropdown-content {
-                .dropdown-block {
-                  background: lighten($dark-sidebar, 2%);
+.is-dark {
+  .sidebar-panel {
+    &.is-generic {
+      .subpanel-header {
+        .project-dropdown {
+          .dropdown-menu {
+            .dropdown-content {
+              .dropdown-block {
+                background: lighten($dark-sidebar, 2%);
 
-                  &:hover {
-                    background: lighten($dark-sidebar, 5%) !important;
-                  }
+                &:hover {
+                  background: lighten($dark-sidebar, 5%) !important;
+                }
 
-                  .meta {
-                    span {
-                      &:first-child {
-                        color: $dark-dark-text !important;
-                      }
+                .meta {
+                  span {
+                    &:first-child {
+                      color: $dark-dark-text !important;
                     }
                   }
                 }
@@ -435,44 +431,44 @@ body {
             }
           }
         }
+      }
 
-        .inner {
-          ul {
-            li {
-              &.is-active {
-                a {
-                  color: $accent !important;
-                }
-              }
-
-              a.router-link-active {
+      .inner {
+        ul {
+          li {
+            &.is-active {
+              a {
                 color: $accent !important;
               }
+            }
 
-              &.has-children {
-                &.active {
-                  .collapse-wrap > a {
-                    color: $smoke-white;
-                  }
-                }
+            a.router-link-exact-active {
+              color: $accent !important;
+            }
 
-                &:hover {
-                  .collapse-wrap > a {
-                    color: lighten($dark-dark-text, 14%);
-                  }
+            &.has-children {
+              &.active {
+                .collapse-wrap > a {
+                  color: $smoke-white;
                 }
               }
 
-              a {
-                &:hover {
-                  color: $dark-dark-text;
+              &:hover {
+                .collapse-wrap > a {
+                  color: lighten($dark-dark-text, 14%);
                 }
               }
+            }
 
-              .is-submenu {
-                &:hover {
-                  color: $accent;
-                }
+            a {
+              &:hover {
+                color: $dark-dark-text;
+              }
+            }
+
+            .is-submenu {
+              &:hover {
+                color: $accent;
               }
             }
           }
@@ -885,54 +881,52 @@ body {
 6. Messaging Sidebar Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .sidebar-panel {
-      &.is-messages {
-        li {
-          &.is-active {
-            background: lighten($dark-sidebar, 10%) !important;
-
-            &:hover {
-              background: lighten($dark-sidebar, 10%) !important;
-            }
-
-            img,
-            .more-indicator {
-              border-color: lighten($dark-sidebar, 10%) !important;
-            }
-          }
+.is-dark {
+  .sidebar-panel {
+    &.is-messages {
+      li {
+        &.is-active {
+          background: lighten($dark-sidebar, 10%) !important;
 
           &:hover {
-            background: lighten($dark-sidebar, 6%) !important;
+            background: lighten($dark-sidebar, 10%) !important;
           }
 
           img,
           .more-indicator {
-            border-color: lighten($dark-sidebar, 6%) !important;
+            border-color: lighten($dark-sidebar, 10%) !important;
           }
+        }
 
-          .more-indicator {
-            background: $accent !important;
-          }
+        &:hover {
+          background: lighten($dark-sidebar, 6%) !important;
+        }
 
-          .recipient-meta {
-            span {
-              &:first-child {
-                color: lighten($accent-grey, 6%) !important;
-              }
+        img,
+        .more-indicator {
+          border-color: lighten($dark-sidebar, 6%) !important;
+        }
 
-              &.is-unread {
-                color: lighten($accent-grey, 6%) !important;
-              }
+        .more-indicator {
+          background: $accent !important;
+        }
+
+        .recipient-meta {
+          span {
+            &:first-child {
+              color: lighten($accent-grey, 6%) !important;
+            }
+
+            &.is-unread {
+              color: lighten($accent-grey, 6%) !important;
             }
           }
         }
+      }
 
-        .start-conversation {
-          background: $accent !important;
-          border: 1px solid $accent !important;
-        }
+      .start-conversation {
+        background: $accent !important;
+        border: 1px solid $accent !important;
       }
     }
   }

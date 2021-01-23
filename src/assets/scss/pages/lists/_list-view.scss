@@ -197,33 +197,31 @@
 3. List View V1 Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .list-view {
-      &.list-view-v1 {
-        .list-view-item {
-          @include vuero-card--dark();
+.is-dark {
+  .list-view {
+    &.list-view-v1 {
+      .list-view-item {
+        @include vuero-card--dark();
 
-          .list-view-item-inner {
-            .meta-left {
-              h3 {
-                color: $dark-dark-text !important;
-              }
+        .list-view-item-inner {
+          .meta-left {
+            h3 {
+              color: $dark-dark-text !important;
             }
+          }
 
-            .meta-right {
-              .stats {
-                .stat {
-                  span {
-                    &:first-child {
-                      color: $dark-dark-text;
-                    }
+          .meta-right {
+            .stats {
+              .stat {
+                span {
+                  &:first-child {
+                    color: $dark-dark-text;
                   }
                 }
+              }
 
-                .separator {
-                  border-color: lighten($dark-sidebar, 16%) !important;
-                }
+              .separator {
+                border-color: lighten($dark-sidebar, 16%) !important;
               }
             }
           }
@@ -359,46 +357,44 @@ body {
 5. List View V2 Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .list-view {
-      &.list-view-v2 {
-        .list-view-item {
-          @include vuero-card--dark();
+.is-dark {
+  .list-view {
+    &.list-view-v2 {
+      .list-view-item {
+        @include vuero-card--dark();
 
-          .list-view-item-inner {
-            .meta-left {
-              h3 {
-                color: $dark-dark-text !important;
+        .list-view-item-inner {
+          .meta-left {
+            h3 {
+              color: $dark-dark-text !important;
 
-                .rating {
-                  i:not(.active) {
-                    color: darken($dark-sidebar, 2%);
-                  }
-                }
-              }
-
-              > span {
-                color: $accent;
-              }
-
-              .icon-list {
-                > span {
-                  span {
-                    color: $dark-dark-text;
-                  }
+              .rating {
+                i:not(.active) {
+                  color: darken($dark-sidebar, 2%);
                 }
               }
             }
 
-            .meta-right {
-              .buttons {
-                .button {
-                  &:first-child {
-                    background: lighten($dark-sidebar, 2%);
-                    border-color: lighten($dark-sidebar, 8%);
-                    color: $dark-dark-text;
-                  }
+            > span {
+              color: $accent;
+            }
+
+            .icon-list {
+              > span {
+                span {
+                  color: $dark-dark-text;
+                }
+              }
+            }
+          }
+
+          .meta-right {
+            .buttons {
+              .button {
+                &:first-child {
+                  background: lighten($dark-sidebar, 2%);
+                  border-color: lighten($dark-sidebar, 8%);
+                  color: $dark-dark-text;
                 }
               }
             }
@@ -487,37 +483,35 @@ body {
 7. List View V3 Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .list-view {
-      &.list-view-v3 {
-        .list-view-item {
-          @include vuero-card--dark();
+.is-dark {
+  .list-view {
+    &.list-view-v3 {
+      .list-view-item {
+        @include vuero-card--dark();
 
-          .list-view-item-inner {
-            > img {
-              border-color: lighten($dark-sidebar, 12%);
+        .list-view-item-inner {
+          > img {
+            border-color: lighten($dark-sidebar, 12%);
+          }
+
+          .meta-left {
+            h3 {
+              color: $dark-dark-text !important;
             }
+          }
 
-            .meta-left {
-              h3 {
-                color: $dark-dark-text !important;
-              }
-            }
+          .meta-right {
+            .buttons {
+              .button {
+                &:nth-child(2) {
+                  background: lighten($dark-sidebar, 2%);
+                  border-color: lighten($dark-sidebar, 8%);
+                  color: $dark-dark-text;
+                  transition: all 0.3s;
 
-            .meta-right {
-              .buttons {
-                .button {
-                  &:nth-child(2) {
-                    background: lighten($dark-sidebar, 2%);
-                    border-color: lighten($dark-sidebar, 8%);
-                    color: $dark-dark-text;
-                    transition: all 0.3s;
-
-                    &:hover {
-                      border-color: $accent;
-                      color: $accent;
-                    }
+                  &:hover {
+                    border-color: $accent;
+                    color: $accent;
                   }
                 }
               }
@@ -663,43 +657,41 @@ body {
 9. List View V4 Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .list-view {
-      &.list-view-v4 {
-        .list-view-item {
-          @include vuero-card--dark();
+.is-dark {
+  .list-view {
+    &.list-view-v4 {
+      .list-view-item {
+        @include vuero-card--dark();
 
-          .list-view-item-inner {
-            .pre-meta {
-              h3 {
-                color: $dark-dark-text;
-              }
+        .list-view-item-inner {
+          .pre-meta {
+            h3 {
+              color: $dark-dark-text;
             }
+          }
 
-            > img {
-              border-color: lighten($dark-sidebar, 12%);
+          > img {
+            border-color: lighten($dark-sidebar, 12%);
+          }
+
+          .meta-left {
+            h3 {
+              color: $dark-dark-text !important;
             }
+          }
 
-            .meta-left {
-              h3 {
-                color: $dark-dark-text !important;
-              }
-            }
+          .meta-right {
+            .buttons {
+              .button {
+                &:nth-child(2) {
+                  background: lighten($dark-sidebar, 2%);
+                  border-color: lighten($dark-sidebar, 8%);
+                  color: $dark-dark-text;
+                  transition: all 0.3s;
 
-            .meta-right {
-              .buttons {
-                .button {
-                  &:nth-child(2) {
-                    background: lighten($dark-sidebar, 2%);
-                    border-color: lighten($dark-sidebar, 8%);
-                    color: $dark-dark-text;
-                    transition: all 0.3s;
-
-                    &:hover {
-                      border-color: $danger;
-                      color: $danger;
-                    }
+                  &:hover {
+                    border-color: $danger;
+                    color: $danger;
                   }
                 }
               }

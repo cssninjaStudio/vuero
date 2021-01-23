@@ -108,13 +108,11 @@
   }
 }
 
-body {
-  &.is-dark {
-    .page-placeholder {
-      .placeholder-content {
-        h3 {
-          color: $dark-dark-text;
-        }
+.is-dark {
+  .page-placeholder {
+    .placeholder-content {
+      h3 {
+        color: $dark-dark-text;
       }
     }
   }

@@ -14,9 +14,11 @@ SCSS Imports
 @import './abstracts/_mixins.scss';
 
 @import 'bulma/bulma.sass';
+@import '../extensions/_all.sass';
 
 @import './abstracts/_typography.scss';
 @import './abstracts/_animations.scss';
+@import './abstracts/_transitions.scss';
 @import './abstracts/_helpers.scss';
 
 @import './layout/_layout.scss';

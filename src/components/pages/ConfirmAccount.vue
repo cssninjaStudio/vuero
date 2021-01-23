@@ -35,5 +35,88 @@
 <style lang="scss">
 @import '../../assets/scss/abstracts/_variables.scss';
 @import '../../assets/scss/abstracts/_mixins.scss';
-@import '../../assets/scss/pages/generic/_utility.scss';
+
+/* ==========================================================================
+1. Confirm Account
+========================================================================== */
+
+.confirm-account-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 540px;
+  min-height: 560px;
+  margin: 0 auto;
+
+  .wrapper-inner {
+    .action-box {
+      @include vuero-s-card();
+
+      padding: 40px;
+
+      .box-content {
+        text-align: center;
+        font-family: $font;
+
+        img {
+          display: block;
+          width: 100%;
+          max-width: 220px;
+          margin: 0 auto 8px auto;
+
+          &.is-larger {
+            max-width: 300px;
+          }
+        }
+
+        h3 {
+          font-size: 1.1rem;
+          font-family: $font-alt;
+          font-weight: 600;
+          max-width: 320px;
+          margin: 0 auto 8px auto;
+
+          span {
+            color: $primary;
+          }
+        }
+
+        p {
+          font-size: 0.9rem;
+        }
+
+        .buttons {
+          margin: 0 auto;
+          display: flex;
+          justify-content: center;
+          padding-top: 30px;
+
+          .button {
+            margin: 0 4px;
+            min-width: 180px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .confirm-account-wrapper {
+    .wrapper-inner {
+      .action-box {
+        padding: 20px;
+
+        .box-content {
+          .buttons {
+            .button {
+              min-width: 130px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 </style>

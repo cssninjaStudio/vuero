@@ -4,8 +4,8 @@ import { defineProps } from 'vue'
 
 const props = defineProps({
   activeTab: {
-    type: String as PropType<'overview' | 'content' | 'brands'>,
-    required: true,
+    type: String as PropType<'all' | 'team'>,
+    default: 'all',
   },
 })
 </script>

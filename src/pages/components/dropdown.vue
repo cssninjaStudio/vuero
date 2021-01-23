@@ -2,7 +2,10 @@
 import { ref, reactive, onMounted } from 'vue'
 import { useHead } from '@vueuse/head'
 
+import useMakrdownToc from '/@src/composition/use/useMarkdownToc'
 import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
+
+const { markdownContainer, toc } = useMakrdownToc()
 
 useHead({
   title: 'Components - Dropdown - Vuero',
@@ -62,7 +65,11 @@ useHead({
       </nav>
 
       <div class="columns">
-        <div class="column is-12">
+        <div
+          ref="markdownContainer"
+          :class="[toc.length > 0 ? 'is-10' : 'is-12']"
+          class="column"
+        >
           <!--Dropdown-->
           <DropdownDocumentation />
 
@@ -86,6 +93,9 @@ useHead({
 
           <!--Artificial Spacing-->
           <div class="demo-spacer"></div>
+        </div>
+        <div v-if="toc.length" class="column is-2">
+          <DocumentationToc :toc="toc" />
         </div>
       </div>
     </div>

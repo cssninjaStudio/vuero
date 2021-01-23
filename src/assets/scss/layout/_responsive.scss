@@ -124,10 +124,6 @@ Responsive styles
     display: none;
   }
 
-  .mobile-navbar {
-    display: flex;
-  }
-
   .navbar-brand {
     align-items: center;
     justify-content: space-between;
@@ -265,11 +261,6 @@ Responsive styles
   .pageloader {
     width: 100% !important;
     left: 0 !important;
-  }
-
-  //Navbars
-  .mobile-navbar {
-    display: flex;
   }
 
   .webapp-navbar,

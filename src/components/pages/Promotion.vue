@@ -92,5 +92,203 @@
 <style lang="scss">
 @import '../../assets/scss/abstracts/_variables.scss';
 @import '../../assets/scss/abstracts/_mixins.scss';
-@import '../../assets/scss/pages/generic/_utility.scss';
+
+/* ==========================================================================
+1. Confirm Account
+========================================================================== */
+
+.promotion-page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 560px;
+  margin: 0 auto;
+  max-width: 840px;
+
+  .wrapper-outer {
+    @include vuero-s-card();
+
+    display: flex;
+    padding: 0;
+
+    .wrapper-inner {
+      .action-box {
+        border: none;
+        background: none;
+        border-radius: 0;
+        border-right: 1px solid darken($fade-grey, 3%);
+
+        .price {
+          text-align: center;
+          padding-top: 8px;
+
+          span {
+            display: block;
+            font-family: $font;
+
+            &:first-child {
+              font-size: 2.8rem;
+              font-weight: 600;
+              color: $dark-text;
+              line-height: 1;
+
+              &::before {
+                position: relative;
+                top: -12px;
+                content: '$';
+                font-size: 60%;
+              }
+            }
+
+            &:nth-child(2) {
+              font-size: 0.75rem;
+              color: $light-text;
+              text-transform: uppercase;
+            }
+          }
+        }
+      }
+    }
+
+    .side-wrapper {
+      flex-grow: 2;
+      padding: 40px;
+      min-width: 40%;
+
+      .side-inner {
+        .side-title {
+          font-family: $font;
+          margin-bottom: 16px;
+
+          h3 {
+            font-family: $font-alt;
+            font-weight: 600;
+            color: $dark-text;
+          }
+
+          p {
+            font-size: 0.9rem;
+          }
+        }
+
+        .action-list {
+          .media-flex {
+            .icon-wrap {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 32px;
+              width: 32px;
+              min-width: 32px;
+              border-radius: 50%;
+              background: $white;
+              border: 1px solid darken($fade-grey, 3%);
+              box-shadow: $light-box-shadow;
+              color: $primary;
+
+              svg {
+                width: 16px;
+                height: 16px;
+                stroke-width: 3px;
+              }
+            }
+
+            .flex-meta {
+              span {
+                font-weight: 400;
+                font-size: 0.9rem;
+              }
+
+              p {
+                font-size: 0.9rem;
+                max-width: 240px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .wrapper-inner {
+    .action-box {
+      @include vuero-s-card();
+
+      padding: 40px;
+
+      .box-content {
+        text-align: center;
+        font-family: $font;
+
+        img {
+          display: block;
+          width: 100%;
+          max-width: 220px;
+          margin: 0 auto 8px auto;
+
+          &.is-larger {
+            max-width: 300px;
+          }
+        }
+
+        h3 {
+          font-size: 1.1rem;
+          font-family: $font-alt;
+          font-weight: 600;
+          max-width: 320px;
+          margin: 0 auto 8px auto;
+
+          span {
+            color: $primary;
+          }
+        }
+
+        p {
+          font-size: 0.9rem;
+        }
+
+        .buttons {
+          margin: 0 auto;
+          display: flex;
+          justify-content: center;
+          padding-top: 30px;
+
+          .button {
+            margin: 0 4px;
+            min-width: 180px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .promotion-page-wrapper {
+    .wrapper-outer {
+      flex-direction: column;
+
+      .wrapper-inner {
+        .action-box {
+          padding: 20px 20px 40px 20px;
+          border-right: none;
+          border-bottom: 1px solid darken($fade-grey, 3%);
+
+          .box-content {
+            .buttons {
+              .button {
+                min-width: 130px;
+              }
+            }
+          }
+        }
+      }
+
+      .side-wrapper {
+        padding: 40px 20px;
+      }
+    }
+  }
+}
 </style>

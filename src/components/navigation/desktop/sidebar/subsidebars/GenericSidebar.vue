@@ -338,52 +338,6 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         <li v-has-children class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Form Layouts
-              <i class="iconify" data-icon="feather:chevron-right"
-            /></a>
-          </div>
-          <ul>
-            <li>
-              <RouterLink
-                :to="{ name: 'admin-layouts-form-layouts-1' }"
-                class="is-submenu"
-              >
-                <i class="lnil lnil-passport"></i>
-                <span>Form Layout V1</span>
-              </RouterLink>
-            </li>
-            <li>
-              <RouterLink
-                :to="{ name: 'admin-layouts-form-layouts-2' }"
-                class="is-submenu"
-              >
-                <i class="lnil lnil-passport"></i>
-                <span>Form Layout V2</span>
-              </RouterLink>
-            </li>
-            <li>
-              <RouterLink
-                :to="{ name: 'admin-layouts-form-layouts-3' }"
-                class="is-submenu"
-              >
-                <i class="lnil lnil-passport"></i>
-                <span>Form Layout V3</span>
-              </RouterLink>
-            </li>
-            <li>
-              <RouterLink
-                :to="{ name: 'admin-layouts-form-layouts-4' }"
-                class="is-submenu"
-              >
-                <i class="lnil lnil-passport"></i>
-                <span>Form Layout V4</span>
-              </RouterLink>
-            </li>
-          </ul>
-        </li>
-        <li v-has-children class="has-children">
-          <div class="collapse-wrap">
-            <a href="javascript:void(0);" class="parent-link"
               >Starters <i class="iconify" data-icon="feather:chevron-right"
             /></a>
           </div>

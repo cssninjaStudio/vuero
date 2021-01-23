@@ -47,15 +47,13 @@
 2. Breadcrumbs Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .breadcrumb {
-      ul {
-        li {
-          a {
-            &:hover {
-              color: $accent;
-            }
+.is-dark {
+  .breadcrumb {
+    ul {
+      li {
+        a {
+          &:hover {
+            color: $accent;
           }
         }
       }

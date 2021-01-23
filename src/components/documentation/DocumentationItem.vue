@@ -17,7 +17,9 @@ const displayCode = ref(false)
 <template>
   <div class="demo-card">
     <div class="demo-title">
-      <slot></slot>
+      <div class="content">
+        <slot></slot>
+      </div>
 
       <a
         v-if="!frontmatter.disable_code"
@@ -53,41 +55,41 @@ const displayCode = ref(false)
 </template>
 
 <style lang="scss" scoped>
-@import '../assets/scss/abstracts/_variables.scss';
-@import '../assets/scss/abstracts/_mixins.scss';
+@import '../../assets/scss/abstracts/_variables.scss';
+@import '../../assets/scss/abstracts/_mixins.scss';
 
-.demo-card {
-  .demo-title {
-    ::v-deep(h3) {
-      font-family: $font-alt;
-      font-size: 1.25rem;
-      font-weight: 300;
-      margin-bottom: 0.75rem;
-      color: $dark-text;
-      line-height: 1.125;
-    }
-  }
-}
+// .demo-card {
+//   .demo-title {
+//     ::v-deep(h3) {
+//       font-family: $font-alt;
+//       font-size: 1.25rem;
+//       font-weight: 300;
+//       margin-bottom: 0.75rem;
+//       color: $dark-text;
+//       line-height: 1.125;
+//     }
+//   }
+// }
 
-.is-dark {
-  .demo-card {
-    .demo-title {
-      ::v-deep(h3) {
-        color: $dark-dark-text;
-      }
+// .is-dark {
+//   .demo-card {
+//     .demo-title {
+//       ::v-deep(h3) {
+//         color: $dark-dark-text;
+//       }
 
-      ::v-deep(code) {
-        background: lighten($dark-sidebar, 6%) !important;
-        color: $primary;
-      }
+//       ::v-deep(code) {
+//         background: lighten($dark-sidebar, 6%) !important;
+//         color: $primary;
+//       }
 
-      ::v-deep(strong) {
-        color: $white;
-        font-weight: 400;
-      }
-    }
-  }
-}
+//       ::v-deep(strong) {
+//         color: $white;
+//         font-weight: 400;
+//       }
+//     }
+//   }
+// }
 
 .demo-code-wrapper {
   display: flex;
@@ -100,6 +102,7 @@ const displayCode = ref(false)
     flex-grow: 1;
     position: relative;
     margin-left: 1.5rem;
+    max-width: 300px;
 
     &::before {
       position: absolute;

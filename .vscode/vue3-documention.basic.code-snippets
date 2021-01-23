@@ -1,0 +1,18 @@
+{
+  "Documentation": {
+    "scope": "markdown",
+    "prefix": ["---", "documentation"],
+    "description": "Documentation - Basic template",
+    "body": [
+      "---",
+      "disable_code: true",
+      "disable_example: true",
+      "---",
+      "",
+      "### ${1:$TM_FILENAME_BASE}",
+      "",
+      "${0:Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua}",
+      "",
+    ],
+  }
+}

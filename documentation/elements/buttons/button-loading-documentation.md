@@ -3,7 +3,7 @@ state:
   loading: false
 ---
 
-### Loading Button
+### Loading State
 
 Huro buttons can be shown in a loading state. To show a loading spinner, add the `is-loading` modifier class.
 

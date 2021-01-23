@@ -550,104 +550,102 @@
 2. Lifestyle Dashboard V1 Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .lifestyle-dashboard-bg {
-      background: lighten($dark-sidebar, 6%);
-    }
+.is-dark {
+  .lifestyle-dashboard-bg {
+    background: lighten($dark-sidebar, 6%);
+  }
 
-    .lifestyle-dashboard {
-      &.lifestyle-dashboard-v1 {
-        .dashboard-header-wrapper {
-          .dashboard-header {
-            .header-meta {
-              .username-wrap {
-                .username {
-                  h3 {
-                    color: $dark-dark-text;
-                  }
-                }
-              }
-
-              .meta-stats {
-                .meta-stat {
-                  span {
-                    &:first-child {
-                      color: $dark-dark-text;
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-
-        .body-title {
-          h3 {
-            color: $dark-dark-text;
-          }
-
-          .h-select {
-            .select-box {
-              border: none !important;
-              background: none !important;
-            }
-          }
-        }
-
-        .overview-card {
-          @include vuero-card--dark();
-
-          .card-metric,
-          .metric .metric {
-            color: $dark-dark-text;
-          }
-
-          .cloud-container {
-            .cloud-element {
-              a {
-                color: $dark-dark-text;
-              }
-            }
-          }
-
-          .heatmap-wrapper {
-            .heatmap-title {
-              .title-avatar {
-                border-color: lighten($dark-sidebar, 12%);
-
-                img {
-                  border-color: darken($dark-sidebar, 2%);
-                }
-              }
-
-              .title-meta {
-                p span {
+  .lifestyle-dashboard {
+    &.lifestyle-dashboard-v1 {
+      .dashboard-header-wrapper {
+        .dashboard-header {
+          .header-meta {
+            .username-wrap {
+              .username {
+                h3 {
                   color: $dark-dark-text;
                 }
               }
             }
 
-            .heatmap-inner {
-              .heatmap-row {
-                .heatmap-row-content {
-                  .heatmap-row-item:not(.is-time) {
-                    background: lighten($dark-sidebar, 10%);
+            .meta-stats {
+              .meta-stat {
+                span {
+                  &:first-child {
+                    color: $dark-dark-text;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
 
-                    &.heat-1 {
-                      background: lighten($dark-sidebar, 2%);
-                    }
+      .body-title {
+        h3 {
+          color: $dark-dark-text;
+        }
 
-                    &.heat-2 {
-                      background: lighten($accent, 10%);
-                    }
+        .h-select {
+          .select-box {
+            border: none !important;
+            background: none !important;
+          }
+        }
+      }
 
-                    &.heat-3 {
-                      background: $accent;
+      .overview-card {
+        @include vuero-card--dark();
 
-                      i {
-                        color: $smoke-white;
-                      }
+        .card-metric,
+        .metric .metric {
+          color: $dark-dark-text;
+        }
+
+        .cloud-container {
+          .cloud-element {
+            a {
+              color: $dark-dark-text;
+            }
+          }
+        }
+
+        .heatmap-wrapper {
+          .heatmap-title {
+            .title-avatar {
+              border-color: lighten($dark-sidebar, 12%);
+
+              img {
+                border-color: darken($dark-sidebar, 2%);
+              }
+            }
+
+            .title-meta {
+              p span {
+                color: $dark-dark-text;
+              }
+            }
+          }
+
+          .heatmap-inner {
+            .heatmap-row {
+              .heatmap-row-content {
+                .heatmap-row-item:not(.is-time) {
+                  background: lighten($dark-sidebar, 10%);
+
+                  &.heat-1 {
+                    background: lighten($dark-sidebar, 2%);
+                  }
+
+                  &.heat-2 {
+                    background: lighten($accent, 10%);
+                  }
+
+                  &.heat-3 {
+                    background: $accent;
+
+                    i {
+                      color: $smoke-white;
                     }
                   }
                 }
@@ -1302,48 +1300,46 @@ body {
 6. Lifestyle Dashboard V4 Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .lifestyle-dashboard {
-      &.lifestyle-dashboard-v4 {
-        .illustration-header-2 {
-          background: $dark-sidebar;
-          box-shadow: none;
-        }
+.is-dark {
+  .lifestyle-dashboard {
+    &.lifestyle-dashboard-v4 {
+      .illustration-header-2 {
+        background: $dark-sidebar;
+        box-shadow: none;
+      }
 
-        .writing-stats {
-          .writing-stat {
-            @include vuero-card--dark();
-          }
-        }
-
-        .updates,
-        .featured-authors {
+      .writing-stats {
+        .writing-stat {
           @include vuero-card--dark();
         }
+      }
 
-        .articles-feed {
-          background: lighten($dark-sidebar, 8%);
+      .updates,
+      .featured-authors {
+        @include vuero-card--dark();
+      }
 
-          .articles-feed-subheader {
-            .selector {
-              .button {
-                &.is-selected {
-                  background: $accent !important;
-                  border-color: $accent !important;
-                  box-shadow: $accent-box-shadow !important;
-                  color: $white !important;
-                }
+      .articles-feed {
+        background: lighten($dark-sidebar, 8%);
+
+        .articles-feed-subheader {
+          .selector {
+            .button {
+              &.is-selected {
+                background: $accent !important;
+                border-color: $accent !important;
+                box-shadow: $accent-box-shadow !important;
+                color: $white !important;
               }
             }
           }
+        }
 
-          .articles-feed-list {
-            .articles-feed-list-inner {
-              .articles-feed-item {
-                .featured-content {
-                  background: $dark-sidebar;
-                }
+        .articles-feed-list {
+          .articles-feed-list-inner {
+            .articles-feed-item {
+              .featured-content {
+                background: $dark-sidebar;
               }
             }
           }
