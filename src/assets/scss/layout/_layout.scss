@@ -74,7 +74,6 @@ body {
   padding: 0 0 60px 0;
   margin-left: 80px;
   background: $background-grey;
-  background: #f2f2f2;
   transition: all 0.3s;
 
   &.is-pushed-full {
@@ -187,6 +186,7 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  z-index: 10;
 
   &.is-webapp {
     display: none;

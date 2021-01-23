@@ -1,3 +1,39 @@
+<script setup lang="ts">
+import { onMounted, reactive, ref } from 'vue'
+import { sharingOptions } from '/@src/composition/state/charts/apexcharts/examples/sharingChart'
+import { usersOptions } from '/@src/composition/state/charts/apexcharts/examples/usersChart'
+import {
+  barData,
+  barData2,
+  usersBarOptions,
+} from '/@src/composition/state/charts/apexcharts/examples/usersBarChart'
+import {
+  personalScoreGaugeOptions,
+  onPersonalScoreGaugeReady,
+} from '/@src/composition/state/charts/billboardjs/examples/personalScoreGauge'
+
+onMounted(async () => {
+  setTimeout(() => {
+    usersBarOptions.series = [
+      {
+        name: 'Orders',
+        data: barData,
+      },
+    ]
+  }, 1000)
+
+  setTimeout(() => {
+    usersBarOptions.series = [
+      ...usersBarOptions.series,
+      {
+        name: 'Abandonned',
+        data: barData2,
+      },
+    ]
+  }, 2500)
+})
+</script>
+
 <template>
   <!--Business Dashboard V2-->
   <div class="business-dashboard company-dashboard">
@@ -103,7 +139,13 @@
             </div>
           </div>
           <div class="chart-container">
-            <div id="users-chart"></div>
+            <apexchart
+              id="users-chart"
+              :height="usersOptions.chart.height"
+              :type="usersOptions.chart.type"
+              :series="usersOptions.series"
+              :options="usersOptions"
+            ></apexchart>
           </div>
         </div>
       </div>
@@ -126,7 +168,13 @@
             </div>
           </div>
           <div class="chart-container">
-            <div id="shares-chart"></div>
+            <apexchart
+              id="shares-chart"
+              :height="sharingOptions.chart.height"
+              :type="sharingOptions.chart.type"
+              :series="sharingOptions.series"
+              :options="sharingOptions"
+            ></apexchart>
           </div>
         </div>
       </div>
@@ -164,7 +212,12 @@
             </div>
           </div>
           <div class="gauge-wrap">
-            <div id="gauge-holder" class="gauge-holder"></div>
+            <div class="gauge-holder">
+              <BillboardJS
+                :options="personalScoreGaugeOptions"
+                @ready="onPersonalScoreGaugeReady"
+              />
+            </div>
           </div>
           <div class="widget-content">
             <p>Your score has been calculated based on the latest metrics</p>
@@ -176,7 +229,13 @@
           <div class="card-head">
             <h3 class="dark-inverted">Subscriptions</h3>
           </div>
-          <div id="bar-chart"></div>
+          <apexchart
+            id="bar-chart"
+            :height="usersBarOptions.chart.height"
+            :type="usersBarOptions.chart.type"
+            :series="usersBarOptions.series"
+            :options="usersBarOptions"
+          ></apexchart>
         </div>
       </div>
       <div class="column is-3">

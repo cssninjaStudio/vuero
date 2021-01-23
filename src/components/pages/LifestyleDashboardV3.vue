@@ -1,3 +1,10 @@
+<script setup lang="ts">
+import { energyChartOptions } from '/@src/composition/state/charts/apexcharts/examples/energyChart'
+import { overallChartOptions } from '/@src/composition/state/charts/apexcharts/examples/overallChart'
+import { oxygenChartOptions } from '/@src/composition/state/charts/apexcharts/examples/oxygenChart'
+import { progressChartOptions } from '/@src/composition/state/charts/apexcharts/examples/progressChart'
+</script>
+
 <template>
   <!--Lifestyle Dashboard V3-->
   <div class="lifestyle-dashboard lifestyle-dashboard-v3">
@@ -135,7 +142,13 @@
                   <a class="is-dark-primary">Read how</a>
                 </p>
               </div>
-              <div id="overall-chart"></div>
+              <apexchart
+                id="overall-chart"
+                :height="overallChartOptions.chart.height"
+                :type="overallChartOptions.chart.type"
+                :series="overallChartOptions.series"
+                :options="overallChartOptions"
+              ></apexchart>
             </div>
           </div>
 
@@ -153,7 +166,13 @@
                   <a class="is-dark-primary">Read how</a>
                 </p>
               </div>
-              <div id="energy-chart"></div>
+              <apexchart
+                id="energy-chart"
+                :height="energyChartOptions.chart.height"
+                :type="energyChartOptions.chart.type"
+                :series="energyChartOptions.series"
+                :options="energyChartOptions"
+              ></apexchart>
             </div>
           </div>
 
@@ -171,7 +190,13 @@
                   <a class="is-dark-primary">Read how</a>
                 </p>
               </div>
-              <div id="oxygen-chart"></div>
+              <apexchart
+                id="overall-chart"
+                :height="oxygenChartOptions.chart.height"
+                :type="oxygenChartOptions.chart.type"
+                :series="oxygenChartOptions.series"
+                :options="oxygenChartOptions"
+              ></apexchart>
             </div>
           </div>
 
@@ -189,7 +214,13 @@
                   <a class="is-dark-primary">Read how</a>
                 </p>
               </div>
-              <div id="progress-chart"></div>
+              <apexchart
+                id="progress-chart"
+                :height="progressChartOptions.chart.height"
+                :type="progressChartOptions.chart.type"
+                :series="progressChartOptions.series"
+                :options="progressChartOptions"
+              ></apexchart>
             </div>
           </div>
         </div>

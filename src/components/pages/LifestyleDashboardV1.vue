@@ -2,6 +2,14 @@
 import type { PropType } from 'vue'
 import { defineProps } from 'vue'
 
+import { reputationChartOptions } from '/@src/composition/state/charts/apexcharts/examples/reputationChart'
+import { influenceChartOptions } from '/@src/composition/state/charts/apexcharts/examples/influenceChart'
+import {
+  creativityRadialOptions,
+  engagmentRadialOptions,
+  popularityRadialOptions,
+} from '/@src/composition/state/charts/apexcharts/examples/groupedSocialCharts'
+
 const props = defineProps({
   activeTab: {
     type: String as PropType<'overview' | 'content' | 'brands'>,
@@ -337,7 +345,13 @@ const props = defineProps({
                   </p>
                 </div>
                 <div class="chart-container">
-                  <div id="flex-stat-circle"></div>
+                  <apexchart
+                    id="flex-stat-circle"
+                    :height="reputationChartOptions.chart.height"
+                    :type="reputationChartOptions.chart.type"
+                    :series="reputationChartOptions.series"
+                    :options="reputationChartOptions"
+                  ></apexchart>
                 </div>
               </div>
             </div>
@@ -351,7 +365,13 @@ const props = defineProps({
                 <div class="group">
                   <div class="group-content">
                     <div class="chart-container">
-                      <div id="widget-group-radial-1"></div>
+                      <apexchart
+                        id="widget-group-radial-1"
+                        :height="creativityRadialOptions.chart.height"
+                        :type="creativityRadialOptions.chart.type"
+                        :series="creativityRadialOptions.series"
+                        :options="creativityRadialOptions"
+                      ></apexchart>
                     </div>
                     <span class="dark-inverted">+ 234</span>
                     <p>Creativity</p>
@@ -360,7 +380,13 @@ const props = defineProps({
                 <div class="group">
                   <div class="group-content">
                     <div class="chart-container">
-                      <div id="widget-group-radial-2"></div>
+                      <apexchart
+                        id="widget-group-radial-2"
+                        :height="engagmentRadialOptions.chart.height"
+                        :type="engagmentRadialOptions.chart.type"
+                        :series="engagmentRadialOptions.series"
+                        :options="engagmentRadialOptions"
+                      ></apexchart>
                     </div>
                     <span class="dark-inverted">+37%</span>
                     <p>Engagement</p>
@@ -369,7 +395,13 @@ const props = defineProps({
                 <div class="group">
                   <div class="group-content">
                     <div class="chart-container">
-                      <div id="widget-group-radial-3"></div>
+                      <apexchart
+                        id="widget-group-radial-3"
+                        :height="popularityRadialOptions.chart.height"
+                        :type="popularityRadialOptions.chart.type"
+                        :series="popularityRadialOptions.series"
+                        :options="popularityRadialOptions"
+                      ></apexchart>
                     </div>
                     <span class="dark-inverted">+82%</span>
                     <p>Popularity</p>
@@ -391,7 +423,13 @@ const props = defineProps({
                   </p>
                 </div>
                 <div class="chart-container">
-                  <div id="flex-stat-radial"></div>
+                  <apexchart
+                    id="flex-stat-radial"
+                    :height="influenceChartOptions.chart.height"
+                    :type="influenceChartOptions.chart.type"
+                    :series="influenceChartOptions.series"
+                    :options="influenceChartOptions"
+                  ></apexchart>
                 </div>
               </div>
             </div>

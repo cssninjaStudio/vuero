@@ -16,7 +16,10 @@ useHead({
 
 <template>
   <div>
-    <!-- <div class="lifestyle-dashboard-bg"></div> -->
+    <teleport to="[data-teleport-bg]">
+      <div class="lifestyle-dashboard-bg"></div>
+    </teleport>
+
     <div class="page-title has-text-centered">
       <!-- Sidebar Trigger -->
       <div
