@@ -131,5 +131,14 @@ const displayCode = ref(false)
   > .h-avatar {
     margin: 0 0.15rem;
   }
+
+  .icon-boxes {
+    display: flex;
+    align-items: flex-end;
+
+    .h-icon {
+      margin: 0 0.15rem;
+    }
+  }
 }
 </style>

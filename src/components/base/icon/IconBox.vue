@@ -8,7 +8,7 @@ const props = defineProps({
   },
   color: {
     type: String,
-    default: '',
+    default: 'primary',
   },
   rounded: {
     type: Boolean,
