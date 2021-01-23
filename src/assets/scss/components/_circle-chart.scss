@@ -59,6 +59,7 @@
 
 @keyframes circle-chart-fill {
   50% {
+    stroke-dasharray: 0 0;
   }
 
   100% {

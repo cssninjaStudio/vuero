@@ -299,11 +299,6 @@ Widget Styles
   &.is-straight {
     @include vuero-s-card();
   }
-
-  .widget-content {
-    .tags {
-    }
-  }
 }
 
 .is-dark {
@@ -1560,9 +1555,6 @@ Widget Styles
 
         span {
           color: $primary;
-        }
-
-        p {
         }
       }
 
