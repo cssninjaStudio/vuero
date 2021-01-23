@@ -400,7 +400,6 @@ useHead({
 
 <style lang="scss">
 @import '../assets/scss/abstracts/_variables.scss';
-@import '../assets/scss/pages/messaging/_messaging.scss';
 
 /* ==========================================================================
 1. Chat side FAB

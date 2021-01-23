@@ -1,4 +1,4 @@
-export const waitTimeout = 600
+export const waitTimeout = 1400
 export const disableTimersAndAnimations = true
 
 export const minimal = [
@@ -245,12 +245,12 @@ const layouts = [
     path: '/profile-view',
   },
   {
-    name: 'Projects View',
-    path: '/projects-project',
+    name: 'Projects Details',
+    path: '/projects-details',
   },
   {
     name: 'Projects List V1',
-    path: '/projects-projects',
+    path: '/projects-projects-1',
   },
   {
     name: 'Projects List V2',

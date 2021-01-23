@@ -4,7 +4,7 @@
   "private": "true",
   "license": "MIT",
   "scripts": {
-    "postinstall": "husky install",
+    "postinstall": "node ./scripts/skip.js || husky install",
     "precommit": "run-s precommit:*",
     "precommit:lint-staged": "lint-staged",
     "dev": "vite",

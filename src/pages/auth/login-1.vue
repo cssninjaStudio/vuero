@@ -175,6 +175,9 @@ useHead({
 </template>
 
 <style lang="scss" scoped>
+@import '../../assets/scss/abstracts/_variables.scss';
+@import '../../assets/scss/abstracts/_mixins.scss';
+
 .modern-login {
   position: relative;
   background: $white;

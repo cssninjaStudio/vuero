@@ -2,7 +2,8 @@ FROM bitnami/node:14 AS build
 WORKDIR /app
 
 COPY package.json ./
-RUN CYPRESS_INSTALL_BINARY=0 npm install --unsafe-perm=true
+COPY scripts/skip.js ./scripts/skip.js
+RUN HUSKY=0 CYPRESS_INSTALL_BINARY=0 npm install --unsafe-perm=true
 
 COPY . .
 RUN npm run build
