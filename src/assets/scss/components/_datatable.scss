@@ -57,20 +57,18 @@
 2. Datatable Toolbar Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .datatable-toolbar {
-      .field {
-        .control {
-          .button {
-            background: $dark-sidebar !important;
-            color: $light-text;
+.is-dark {
+  .datatable-toolbar {
+    .field {
+      .control {
+        .button {
+          background: $dark-sidebar !important;
+          color: $light-text;
 
-            &:hover {
-              background: $accent !important;
-              border-color: $accent !important;
-              color: $smoke-white !important;
-            }
+          &:hover {
+            background: $accent !important;
+            border-color: $accent !important;
+            color: $smoke-white !important;
           }
         }
       }
@@ -165,37 +163,35 @@ body {
 4. Datatable pagination Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .pagination {
-      &.datatable-pagination {
-        ul {
-          li {
-            background: $dark-sidebar;
+.is-dark {
+  .pagination {
+    &.datatable-pagination {
+      ul {
+        li {
+          background: $dark-sidebar;
 
-            &.is-selected {
-              background: $accent;
-
-              a {
-                color: $white;
-              }
-            }
-
-            &.active {
-              background: $accent !important;
-
-              a {
-                color: $white;
-              }
-            }
-
-            &:hover {
-              border-color: lighten($dark-sidebar, 4%) !important;
-            }
+          &.is-selected {
+            background: $accent;
 
             a {
-              color: $smoke-white;
+              color: $white;
             }
+          }
+
+          &.active {
+            background: $accent !important;
+
+            a {
+              color: $white;
+            }
+          }
+
+          &:hover {
+            border-color: lighten($dark-sidebar, 4%) !important;
+          }
+
+          a {
+            color: $smoke-white;
           }
         }
       }
@@ -424,64 +420,62 @@ body {
 8. Datatable Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .table-wrapper {
-      border-color: lighten($dark-sidebar, 12%);
-      background: lighten($dark-sidebar, 6%);
+.is-dark {
+  .table-wrapper {
+    border-color: lighten($dark-sidebar, 12%);
+    background: lighten($dark-sidebar, 6%);
 
-      .table {
-        &.is-datatable {
-          tr {
-            &:first-child {
-              &:hover {
-                background: lighten($dark-sidebar, 6%) !important;
-              }
+    .table {
+      &.is-datatable {
+        tr {
+          &:first-child {
+            &:hover {
+              background: lighten($dark-sidebar, 6%) !important;
             }
+          }
 
-            &.is-selected {
-              background: lighten($dark-sidebar, 5%) !important;
+          &.is-selected {
+            background: lighten($dark-sidebar, 5%) !important;
 
-              td {
-                border-color: lighten($dark-sidebar, 8%) !important;
-              }
+            td {
+              border-color: lighten($dark-sidebar, 8%) !important;
             }
+          }
 
-            &.datatable-filter-line {
-              background: lighten($dark-sidebar, 3%);
+          &.datatable-filter-line {
+            background: lighten($dark-sidebar, 3%);
 
-              td {
-                border-color: lighten($dark-sidebar, 12%);
+            td {
+              border-color: lighten($dark-sidebar, 12%);
 
-                .control {
-                  .input {
-                    border-color: lighten($dark-sidebar, 12%);
-                  }
+              .control {
+                .input {
+                  border-color: lighten($dark-sidebar, 12%);
                 }
               }
             }
           }
+        }
 
-          th {
-            border-color: lighten($dark-sidebar, 12%);
-            color: $dark-dark-text;
-          }
+        th {
+          border-color: lighten($dark-sidebar, 12%);
+          color: $dark-dark-text;
+        }
 
-          td {
-            .h-button {
-              &:hover {
-                border-color: $accent !important;
-                color: $accent !important;
-              }
+        td {
+          .h-button {
+            &:hover {
+              border-color: $accent !important;
+              color: $accent !important;
             }
           }
+        }
 
-          .flex-media {
-            .meta {
-              span {
-                &:first-child {
-                  color: $dark-dark-text;
-                }
+        .flex-media {
+          .meta {
+            span {
+              &:first-child {
+                color: $dark-dark-text;
               }
             }
           }

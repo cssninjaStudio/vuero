@@ -356,92 +356,90 @@
 5. Kanban Board Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .kanban-column {
-      background: lighten($dark-sidebar, 15%);
-      border-color: lighten($dark-sidebar, 15%);
+.is-dark {
+  .kanban-column {
+    background: lighten($dark-sidebar, 15%);
+    border-color: lighten($dark-sidebar, 15%);
 
-      .collapsed-content {
-        .expand-button {
-          background: lighten($dark-sidebar, 6%) !important;
-          border-color: lighten($dark-sidebar, 12%) !important;
-
-          &:hover {
-            svg {
-              color: $accent !important;
-            }
-          }
-        }
-
-        .task-count {
-          background: $accent !important;
-          border-color: $accent !important;
-
-          svg {
-            color: $white !important;
-          }
-        }
-
-        .collapsed-text {
-          color: $dark-dark-text !important;
-        }
-      }
-
-      .column-title {
-        h3 {
-          color: $light-white;
-        }
-
-        .is-trigger svg {
-          color: $light-white !important;
-        }
-      }
-
-      .dropdown-content {
-        background: $dark-sidebar;
-
-        .dropdown-item {
-          color: $white;
-        }
-
-        .dropdown-divider {
-          background: lighten($dark-sidebar, 5%);
-        }
-
-        a:hover,
-        div:hover {
-          background: lighten($dark-sidebar, 5%) !important;
-        }
-      }
-
-      .empty-text {
-        color: $accent-grey;
-      }
-
-      .kanban-card,
-      .gu-transit {
+    .collapsed-content {
+      .expand-button {
         background: lighten($dark-sidebar, 6%) !important;
-        border-color: lighten($dark-sidebar, 6%) !important;
+        border-color: lighten($dark-sidebar, 12%) !important;
 
-        &.is-new {
-          background: lighten($dark-sidebar, 6%);
-          border-color: lighten($dark-sidebar, 6%);
-
-          .card-title {
-            color: lighten($accent-grey, 2%);
-          }
-
-          .card-footer,
-          .card-footer-item {
-            border-color: lighten($dark-sidebar, 20%);
-            color: $light-white;
+        &:hover {
+          svg {
+            color: $accent !important;
           }
         }
+      }
+
+      .task-count {
+        background: $accent !important;
+        border-color: $accent !important;
+
+        svg {
+          color: $white !important;
+        }
+      }
+
+      .collapsed-text {
+        color: $dark-dark-text !important;
+      }
+    }
+
+    .column-title {
+      h3 {
+        color: $light-white;
+      }
+
+      .is-trigger svg {
+        color: $light-white !important;
+      }
+    }
+
+    .dropdown-content {
+      background: $dark-sidebar;
+
+      .dropdown-item {
+        color: $white;
+      }
+
+      .dropdown-divider {
+        background: lighten($dark-sidebar, 5%);
+      }
+
+      a:hover,
+      div:hover {
+        background: lighten($dark-sidebar, 5%) !important;
+      }
+    }
+
+    .empty-text {
+      color: $accent-grey;
+    }
+
+    .kanban-card,
+    .gu-transit {
+      background: lighten($dark-sidebar, 6%) !important;
+      border-color: lighten($dark-sidebar, 6%) !important;
+
+      &.is-new {
+        background: lighten($dark-sidebar, 6%);
+        border-color: lighten($dark-sidebar, 6%);
 
         .card-title {
           color: lighten($accent-grey, 2%);
         }
+
+        .card-footer,
+        .card-footer-item {
+          border-color: lighten($dark-sidebar, 20%);
+          color: $light-white;
+        }
+      }
+
+      .card-title {
+        color: lighten($accent-grey, 2%);
       }
     }
   }

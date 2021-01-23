@@ -4,7 +4,7 @@ import { defineProps } from 'vue'
 const props = defineProps({
   value: {
     type: Number,
-    required: true,
+    default: 50,
   },
 })
 </script>

@@ -60,51 +60,49 @@
 2. Content Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .content {
-      ol,
-      ul {
-        &:not(.is-light) {
-          color: $dark-dark-text;
-        }
-      }
-
-      blockquote {
-        background: lighten($dark-sidebar, 10%);
-
-        &:not(.is-primary):not(.is-success):not(.is-info):not(.is-warning):not(.is-danger) {
-          border-color: lighten($dark-sidebar, 2%);
-        }
-
-        &.is-primary {
-          border-color: $accent;
-        }
-      }
-
-      table {
-        th {
-          color: $dark-dark-text;
-          border-color: lighten($dark-sidebar, 14%);
-        }
-
-        td {
-          border-color: lighten($dark-sidebar, 14%);
-        }
+.is-dark {
+  .content {
+    ol,
+    ul {
+      &:not(.is-light) {
+        color: $dark-dark-text;
       }
     }
 
-    .is-divider,
-    .is-divider-vertical {
-      border-color: lighten($dark-sidebar, 14%);
+    blockquote {
+      background: lighten($dark-sidebar, 10%);
 
-      &::before {
+      &:not(.is-primary):not(.is-success):not(.is-info):not(.is-warning):not(.is-danger) {
+        border-color: lighten($dark-sidebar, 2%);
+      }
+
+      &.is-primary {
+        border-color: $accent;
+      }
+    }
+
+    table {
+      th {
+        color: $dark-dark-text;
         border-color: lighten($dark-sidebar, 14%);
       }
 
-      &::after {
-        background: lighten($dark-sidebar, 6%);
+      td {
+        border-color: lighten($dark-sidebar, 14%);
       }
+    }
+  }
+
+  .is-divider,
+  .is-divider-vertical {
+    border-color: lighten($dark-sidebar, 14%);
+
+    &::before {
+      border-color: lighten($dark-sidebar, 14%);
+    }
+
+    &::after {
+      background: lighten($dark-sidebar, 6%);
     }
   }
 }

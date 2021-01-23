@@ -115,19 +115,17 @@ List Widgets Styles
   }
 }
 
-body {
-  &.is-dark {
-    .list-widget {
-      @include vuero-card--dark();
+.is-dark {
+  .list-widget {
+    @include vuero-card--dark();
 
-      &.tabbed-widget {
-        .widget-head {
-          .tabbed-controls {
-            background: lighten($dark-sidebar, 3%);
+    &.tabbed-widget {
+      .widget-head {
+        .tabbed-controls {
+          background: lighten($dark-sidebar, 3%);
 
-            .tabbed-naver {
-              background: $accent;
-            }
+          .tabbed-naver {
+            background: $accent;
           }
         }
       }
@@ -186,14 +184,12 @@ body {
   }
 }
 
-body {
-  &.is-dark {
-    .list-widget {
-      &.list-widget-v1 {
-        .go-icon {
-          background: lighten($dark-sidebar, 3%);
-          border: 1px solid lighten($dark-sidebar, 12%);
-        }
+.is-dark {
+  .list-widget {
+    &.list-widget-v1 {
+      .go-icon {
+        background: lighten($dark-sidebar, 3%);
+        border: 1px solid lighten($dark-sidebar, 12%);
       }
     }
   }
@@ -212,11 +208,9 @@ body {
   }
 }
 
-body {
-  &.is-dark {
-    .list-widget {
-      &.list-widget-v2 {
-      }
+.is-dark {
+  .list-widget {
+    &.list-widget-v2 {
     }
   }
 }
@@ -358,41 +352,39 @@ body {
   }
 }
 
-body {
-  &.is-dark {
-    .list-widget {
-      &.list-widget-v3 {
-        .icon-timeline {
-          .timeline-item {
+.is-dark {
+  .list-widget {
+    &.list-widget-v3 {
+      .icon-timeline {
+        .timeline-item {
+          &::after {
+            border-color: lighten($dark-sidebar, 12%) !important;
+          }
+
+          .timeline-icon:not(.is-primary):not(.is-info):not(.is-success):not(.is-orange):not(.is-yellow) {
+            background: lighten($dark-sidebar, 3%) !important;
+            border-color: lighten($dark-sidebar, 12%) !important;
+          }
+
+          .timeline-icon {
             &::after {
               border-color: lighten($dark-sidebar, 12%) !important;
             }
 
-            .timeline-icon:not(.is-primary):not(.is-info):not(.is-success):not(.is-orange):not(.is-yellow) {
-              background: lighten($dark-sidebar, 3%) !important;
-              border-color: lighten($dark-sidebar, 12%) !important;
-            }
+            &.is-primary {
+              background: $accent;
+              border-color: $accent;
+              box-shadow: $accent-box-shadow;
 
-            .timeline-icon {
-              &::after {
-                border-color: lighten($dark-sidebar, 12%) !important;
-              }
-
-              &.is-primary {
-                background: $accent;
-                border-color: $accent;
-                box-shadow: $accent-box-shadow;
-
-                svg {
-                  color: $smoke-white;
-                }
+              svg {
+                color: $smoke-white;
               }
             }
+          }
 
-            .timeline-content {
-              p {
-                color: $dark-dark-text;
-              }
+          .timeline-content {
+            p {
+              color: $dark-dark-text;
             }
           }
         }

@@ -345,80 +345,78 @@
 2. Demo Card Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .demo-card {
-      @include vuero-card--dark();
+.is-dark {
+  .demo-card {
+    @include vuero-card--dark();
 
-      .demo-title {
-        p {
-          // code {
-          //   // background-color: lighten($dark-sidebar, 6%) !important;
-          //   color: #81a2be;
-          //   background-color: #3b3b41;
-          // }
-        }
-
-        .code-trigger {
-          border-color: lighten($dark-sidebar, 14%);
-          &:hover {
-            svg {
-              color: $light-text;
-            }
-          }
-
-          &.is-active {
-            border-color: lighten($dark-sidebar, 16%);
-            background: lighten($dark-sidebar, 12%);
-
-            svg {
-              color: $primary;
-            }
-          }
-        }
+    .demo-title {
+      p {
+        // code {
+        //   // background-color: lighten($dark-sidebar, 6%) !important;
+        //   color: #81a2be;
+        //   background-color: #3b3b41;
+        // }
       }
 
-      .demo-icon-list {
-        li:hover {
-          background-color: lighten($dark-sidebar, 10%) !important;
-
-          .lnil,
-          .lnir,
-          .fas,
-          .fab {
-            color: $accent;
+      .code-trigger {
+        border-color: lighten($dark-sidebar, 14%);
+        &:hover {
+          svg {
+            color: $light-text;
           }
+        }
+
+        &.is-active {
+          border-color: lighten($dark-sidebar, 16%);
+          background: lighten($dark-sidebar, 12%);
 
           svg {
-            color: $accent;
+            color: $primary;
           }
         }
       }
-
-      // .highlight {
-      //   background: lighten($dark-sidebar, 10%) !important;
-      //   border-color: lighten($dark-sidebar, 10%) !important;
-
-      //   pre {
-      //     background: lighten($dark-sidebar, 10%) !important;
-      //     border-color: lighten($dark-sidebar, 10%) !important;
-
-      //     .hljs {
-      //       background: lighten($dark-sidebar, 10%) !important;
-      //       border-color: lighten($dark-sidebar, 10%) !important;
-      //     }
-      //   }
-      // }
     }
 
-    .color-card {
-      @include vuero-card--dark();
+    .demo-icon-list {
+      li:hover {
+        background-color: lighten($dark-sidebar, 10%) !important;
 
-      .meta {
-        span {
-          &:first-child {
-            color: $dark-dark-text;
-          }
+        .lnil,
+        .lnir,
+        .fas,
+        .fab {
+          color: $accent;
+        }
+
+        svg {
+          color: $accent;
+        }
+      }
+    }
+
+    // .highlight {
+    //   background: lighten($dark-sidebar, 10%) !important;
+    //   border-color: lighten($dark-sidebar, 10%) !important;
+
+    //   pre {
+    //     background: lighten($dark-sidebar, 10%) !important;
+    //     border-color: lighten($dark-sidebar, 10%) !important;
+
+    //     .hljs {
+    //       background: lighten($dark-sidebar, 10%) !important;
+    //       border-color: lighten($dark-sidebar, 10%) !important;
+    //     }
+    //   }
+    // }
+  }
+
+  .color-card {
+    @include vuero-card--dark();
+
+    .meta {
+      span {
+        &:first-child {
+          color: $dark-dark-text;
         }
       }
     }

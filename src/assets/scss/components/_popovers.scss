@@ -121,99 +121,97 @@
 2. Web UI Popover Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .webui-popover {
-      background: $dark-sidebar !important;
-      border-color: lighten($dark-sidebar, 6%);
+.is-dark {
+  .webui-popover {
+    background: $dark-sidebar !important;
+    border-color: lighten($dark-sidebar, 6%);
 
-      &.top {
-        .webui-arrow {
-          border-top-color: $dark-sidebar !important;
-        }
+    &.top {
+      .webui-arrow {
+        border-top-color: $dark-sidebar !important;
       }
+    }
 
-      &.right {
-        .webui-arrow {
-          border-top-color: transparent !important;
+    &.right {
+      .webui-arrow {
+        border-top-color: transparent !important;
+        border-right-color: $dark-sidebar !important;
+
+        &::after {
           border-right-color: $dark-sidebar !important;
-
-          &::after {
-            border-right-color: $dark-sidebar !important;
-          }
         }
       }
+    }
 
-      &.left {
-        .webui-arrow {
-          &::after {
-            border-left-color: $dark-sidebar !important;
-          }
+    &.left {
+      .webui-arrow {
+        &::after {
+          border-left-color: $dark-sidebar !important;
         }
       }
+    }
 
-      &.bottom {
-        .webui-arrow {
-          &::after {
-            border-bottom-color: $dark-sidebar !important;
-          }
+    &.bottom {
+      .webui-arrow {
+        &::after {
+          border-bottom-color: $dark-sidebar !important;
         }
       }
+    }
 
-      &.bottom-right,
-      &.bottom-left {
-        .webui-arrow {
-          &::after {
-            border-bottom-color: $dark-sidebar !important;
-          }
+    &.bottom-right,
+    &.bottom-left {
+      .webui-arrow {
+        &::after {
+          border-bottom-color: $dark-sidebar !important;
         }
       }
+    }
 
-      &.top-right {
-        .webui-arrow {
-          &::after {
-            border-top-color: $dark-sidebar !important;
-          }
-        }
-      }
-
-      &.top-left {
-        .webui-arrow {
+    &.top-right {
+      .webui-arrow {
+        &::after {
           border-top-color: $dark-sidebar !important;
         }
       }
+    }
 
-      .webui-popover-inner {
-        background: $dark-sidebar !important;
-        border-color: $dark-sidebar !important;
+    &.top-left {
+      .webui-arrow {
+        border-top-color: $dark-sidebar !important;
+      }
+    }
+
+    .webui-popover-inner {
+      background: $dark-sidebar !important;
+      border-color: $dark-sidebar !important;
+    }
+
+    .title {
+      color: darken($accent-grey, 5%) !important;
+    }
+
+    .country img,
+    .primary-skill img {
+      border-color: $dark-sidebar !important;
+    }
+
+    .notification-content {
+      a {
+        color: $accent !important;
       }
 
-      .title {
-        color: darken($accent-grey, 5%) !important;
+      span {
+        color: darken($accent-grey, 10%) !important;
       }
+    }
 
-      .country img,
-      .primary-skill img {
-        border-color: $dark-sidebar !important;
-      }
+    .media + .media {
+      border-top-color: lighten($dark-sidebar, 10%) !important;
+    }
 
-      .notification-content {
-        a {
-          color: $accent !important;
-        }
-
-        span {
-          color: darken($accent-grey, 10%) !important;
-        }
-      }
-
-      .media + .media {
-        border-top-color: lighten($dark-sidebar, 10%) !important;
-      }
-
-      .loader-overlay {
-        background: rgba(42, 42, 44, 0.95) !important;
-      }
+    .loader-overlay {
+      background: rgba(42, 42, 44, 0.95) !important;
     }
   }
 }
@@ -493,33 +491,31 @@ body {
 4. User profile popovers Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .webui-popover-profile {
-      .profile-popover-block {
-        .badge {
-          border-color: $dark-sidebar !important;
+.is-dark {
+  .webui-popover-profile {
+    .profile-popover-block {
+      .badge {
+        border-color: $dark-sidebar !important;
+      }
+
+      .user-meta,
+      .skill-meta {
+        .username,
+        .skill-name {
+          color: darken($accent-grey, 5%);
         }
+      }
 
-        .user-meta,
-        .skill-meta {
-          .username,
-          .skill-name {
-            color: darken($accent-grey, 5%);
-          }
-        }
+      .job-title,
+      .skill-type {
+        color: $accent !important;
+      }
 
-        .job-title,
-        .skill-type {
-          color: $accent !important;
-        }
+      .popover-actions .popover-icon:hover {
+        background: lighten($dark-sidebar, 6%) !important;
 
-        .popover-actions .popover-icon:hover {
-          background: lighten($dark-sidebar, 6%) !important;
-
-          svg {
-            color: $accent;
-          }
+        svg {
+          color: $accent;
         }
       }
     }

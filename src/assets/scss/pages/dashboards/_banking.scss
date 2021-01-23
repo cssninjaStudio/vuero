@@ -727,95 +727,93 @@
 3. Banking Dashboard V2 Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .banking-dashboard {
-      &.banking-dashboard-v2 {
-        .dashboard-card {
-          @include vuero-card--dark();
+.is-dark {
+  .banking-dashboard {
+    &.banking-dashboard-v2 {
+      .dashboard-card {
+        @include vuero-card--dark();
 
-          &.is-card-panel {
-            background: lighten($dark-sidebar, 6%);
+        &.is-card-panel {
+          background: lighten($dark-sidebar, 6%);
 
-            .inner-box {
-              border-color: lighten($dark-sidebar, 12%) !important;
+          .inner-box {
+            border-color: lighten($dark-sidebar, 12%) !important;
 
-              .box-title {
-                h3 {
-                  color: $dark-dark-text;
-                }
+            .box-title {
+              h3 {
+                color: $dark-dark-text;
               }
+            }
 
-              .cards-carousel {
-                .cards-carousel-inner {
-                  .cards-carousel-item {
-                    &.slick-current {
-                      .ccard {
-                        background-image: linear-gradient(
-                          -225deg,
-                          darken($accent, 8%) 0%,
-                          darken($accent, 2%) 48%,
-                          lighten($accent, 12%) 100%
-                        );
-                        box-shadow: $accent-box-shadow;
-
-                        .top {
-                          .inactive.dark-image {
-                            display: none !important;
-                          }
-                        }
-                      }
-                    }
-
+            .cards-carousel {
+              .cards-carousel-inner {
+                .cards-carousel-item {
+                  &.slick-current {
                     .ccard {
-                      background: lighten($dark-sidebar, 2%);
+                      background-image: linear-gradient(
+                        -225deg,
+                        darken($accent, 8%) 0%,
+                        darken($accent, 2%) 48%,
+                        lighten($accent, 12%) 100%
+                      );
+                      box-shadow: $accent-box-shadow;
 
                       .top {
                         .inactive.dark-image {
-                          display: block !important;
-                        }
-                      }
-
-                      .bottom {
-                        span {
-                          color: $dark-dark-text;
+                          display: none !important;
                         }
                       }
                     }
                   }
-                }
-              }
 
-              .card-balance-wrap {
-                .card-balance {
-                  span {
-                    color: $accent;
-                  }
-                }
+                  .ccard {
+                    background: lighten($dark-sidebar, 2%);
 
-                .card-balance-stats {
-                  .card-balance-stat {
-                    .stat-block {
-                      .stat-icon {
-                        background: lighten($dark-sidebar, 2%);
+                    .top {
+                      .inactive.dark-image {
+                        display: block !important;
                       }
+                    }
 
-                      .stat-text {
+                    .bottom {
+                      span {
                         color: $dark-dark-text;
                       }
                     }
                   }
                 }
               }
+            }
 
-              .monthly-summary-wrap {
-                .monthly-summary {
-                  border-color: lighten($dark-sidebar, 12%);
-                  background: lighten($dark-sidebar, 4%);
+            .card-balance-wrap {
+              .card-balance {
+                span {
+                  color: $accent;
+                }
+              }
 
-                  .monthly-summary-item {
-                    border-color: lighten($dark-sidebar, 12%);
+              .card-balance-stats {
+                .card-balance-stat {
+                  .stat-block {
+                    .stat-icon {
+                      background: lighten($dark-sidebar, 2%);
+                    }
+
+                    .stat-text {
+                      color: $dark-dark-text;
+                    }
                   }
+                }
+              }
+            }
+
+            .monthly-summary-wrap {
+              .monthly-summary {
+                border-color: lighten($dark-sidebar, 12%);
+                background: lighten($dark-sidebar, 4%);
+
+                .monthly-summary-item {
+                  border-color: lighten($dark-sidebar, 12%);
                 }
               }
             }

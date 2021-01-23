@@ -454,7 +454,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-layouts-projects-project' }"
+                :to="{ name: 'admin-layouts-projects-details' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-layout"></i>

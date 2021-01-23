@@ -748,85 +748,83 @@ Inbox Layouts
 1. Inbox V1 Layout Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .inbox-wrapper {
-      .wrapper-inner {
-        .inbox-sidebar {
-          border-right: none;
+.is-dark {
+  .inbox-wrapper {
+    .wrapper-inner {
+      .inbox-sidebar {
+        border-right: none;
 
-          .header-area {
-            background: $dark-sidebar;
+        .header-area {
+          background: $dark-sidebar;
+          border-color: lighten($dark-sidebar, 12%);
+
+          .inbox-title {
+            color: $dark-dark-text;
+          }
+        }
+
+        .sidebar-inner {
+          background: lighten($dark-sidebar, 4%);
+          border-color: lighten($dark-sidebar, 12%);
+
+          .inner-menu {
             border-color: lighten($dark-sidebar, 12%);
 
-            .inbox-title {
-              color: $dark-dark-text;
+            .compose-button {
+              background: $accent !important;
+              border-color: $accent !important;
+              color: $smoke-white !important;
+
+              &:hover {
+                box-shadow: $accent-box-shadow;
+              }
+            }
+
+            .inbox-menu {
+              ul li a {
+                &.is-active {
+                  background: lighten($dark-sidebar, 8%);
+
+                  span {
+                    color: $smoke-white;
+                  }
+
+                  svg {
+                    color: $accent;
+                  }
+
+                  .tag {
+                    background: $secondary !important;
+                  }
+                }
+              }
             }
           }
 
-          .sidebar-inner {
-            background: lighten($dark-sidebar, 4%);
+          .scroll-menu {
             border-color: lighten($dark-sidebar, 12%);
 
-            .inner-menu {
-              border-color: lighten($dark-sidebar, 12%);
+            .title-wrap {
+              h3 {
+                color: $dark-dark-text;
+              }
 
-              .compose-button {
-                background: $accent !important;
-                border-color: $accent !important;
-                color: $smoke-white !important;
+              .search-button,
+              .cancel-search-button {
+                background: none !important;
+              }
+            }
 
+            .contact-list {
+              .contact-block {
                 &:hover {
-                  box-shadow: $accent-box-shadow;
-                }
-              }
-
-              .inbox-menu {
-                ul li a {
-                  &.is-active {
-                    background: lighten($dark-sidebar, 8%);
-
-                    span {
-                      color: $smoke-white;
-                    }
-
-                    svg {
-                      color: $accent;
-                    }
-
-                    .tag {
-                      background: $secondary !important;
-                    }
-                  }
-                }
-              }
-            }
-
-            .scroll-menu {
-              border-color: lighten($dark-sidebar, 12%);
-
-              .title-wrap {
-                h3 {
-                  color: $dark-dark-text;
+                  background: lighten($dark-sidebar, 8%);
                 }
 
-                .search-button,
-                .cancel-search-button {
-                  background: none !important;
-                }
-              }
-
-              .contact-list {
-                .contact-block {
-                  &:hover {
-                    background: lighten($dark-sidebar, 8%);
-                  }
-
-                  .contact-meta {
-                    span {
-                      &:first-child {
-                        color: $dark-dark-text;
-                      }
+                .contact-meta {
+                  span {
+                    &:first-child {
+                      color: $dark-dark-text;
                     }
                   }
                 }
@@ -834,71 +832,112 @@ body {
             }
           }
         }
+      }
 
-        .inbox-messages {
+      .inbox-messages {
+        border-color: lighten($dark-sidebar, 12%);
+        border-left: 1px solid lighten($dark-sidebar, 12%) !important;
+
+        .header-area {
+          background: $dark-sidebar;
           border-color: lighten($dark-sidebar, 12%);
-          border-left: 1px solid lighten($dark-sidebar, 12%) !important;
-
-          .header-area {
-            background: $dark-sidebar;
-            border-color: lighten($dark-sidebar, 12%);
-          }
-
-          .messages-list {
-            background: lighten($dark-sidebar, 4%);
-
-            .inbox-message {
-              border-color: lighten($dark-sidebar, 12%);
-
-              &.is-selected {
-                background: lighten($dark-sidebar, 8%);
-              }
-
-              .message-meta {
-                span {
-                  &:first-child,
-                  &.subject {
-                    color: $dark-dark-text;
-                  }
-                }
-              }
-            }
-          }
         }
 
-        .inbox-message-details {
-          border-color: lighten($dark-sidebar, 12%);
+        .messages-list {
+          background: lighten($dark-sidebar, 4%);
 
-          .header-area {
-            background: $dark-sidebar;
+          .inbox-message {
             border-color: lighten($dark-sidebar, 12%);
+
+            &.is-selected {
+              background: lighten($dark-sidebar, 8%);
+            }
 
             .message-meta {
               span {
-                &:first-child {
+                &:first-child,
+                &.subject {
                   color: $dark-dark-text;
                 }
               }
             }
+          }
+        }
+      }
 
-            .attachments {
-              span {
+      .inbox-message-details {
+        border-color: lighten($dark-sidebar, 12%);
+
+        .header-area {
+          background: $dark-sidebar;
+          border-color: lighten($dark-sidebar, 12%);
+
+          .message-meta {
+            span {
+              &:first-child {
                 color: $dark-dark-text;
               }
             }
           }
 
-          .message-wrapper {
-            background: lighten($dark-sidebar, 14%);
+          .attachments {
+            span {
+              color: $dark-dark-text;
+            }
+          }
+        }
 
-            .message-inner {
-              background: lighten($dark-sidebar, 4%);
+        .message-wrapper {
+          background: lighten($dark-sidebar, 14%);
+
+          .message-inner {
+            background: lighten($dark-sidebar, 4%);
+            border-color: lighten($dark-sidebar, 12%);
+
+            .message-head {
               border-color: lighten($dark-sidebar, 12%);
 
-              .message-head {
+              .info {
+                span {
+                  &:first-child {
+                    color: $dark-dark-text;
+                  }
+                }
+              }
+            }
+
+            .attachments-list {
+              .attachment {
+                background: lighten($dark-sidebar, 2%);
                 border-color: lighten($dark-sidebar, 12%);
 
-                .info {
+                span {
+                  color: $dark-dark-text;
+                }
+
+                .download-icon {
+                  border-color: lighten($dark-sidebar, 8%);
+
+                  svg {
+                    color: $smoke-white;
+                  }
+                }
+              }
+            }
+          }
+
+          .reply-box-wrap {
+            .reply-bubble {
+              background-color: lighten($dark-sidebar, 2%);
+              border-color: lighten($dark-sidebar, 4%);
+
+              &::before,
+              &::after {
+                border-bottom-color: lighten($dark-sidebar, 2%) !important;
+              }
+
+              .reply-as {
+                .reply-details {
                   span {
                     &:first-child {
                       color: $dark-dark-text;
@@ -907,52 +946,11 @@ body {
                 }
               }
 
-              .attachments-list {
-                .attachment {
-                  background: lighten($dark-sidebar, 2%);
-                  border-color: lighten($dark-sidebar, 12%);
-
-                  span {
-                    color: $dark-dark-text;
-                  }
-
-                  .download-icon {
-                    border-color: lighten($dark-sidebar, 8%);
-
-                    svg {
-                      color: $smoke-white;
-                    }
-                  }
-                }
-              }
-            }
-
-            .reply-box-wrap {
-              .reply-bubble {
-                background-color: lighten($dark-sidebar, 2%);
-                border-color: lighten($dark-sidebar, 4%);
-
-                &::before,
-                &::after {
-                  border-bottom-color: lighten($dark-sidebar, 2%) !important;
-                }
-
-                .reply-as {
-                  .reply-details {
-                    span {
-                      &:first-child {
-                        color: $dark-dark-text;
-                      }
-                    }
-                  }
-                }
-
-                .control {
-                  .button {
-                    background: $secondary;
-                    border-color: $secondary;
-                    color: $smoke-white;
-                  }
+              .control {
+                .button {
+                  background: $secondary;
+                  border-color: $secondary;
+                  color: $smoke-white;
                 }
               }
             }
@@ -1009,16 +1007,14 @@ body {
 1. Inbox action Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .inbox-action {
-      &:hover {
-        background: lighten($dark-sidebar, 2%);
-        border-color: lighten($dark-sidebar, 12%);
+.is-dark {
+  .inbox-action {
+    &:hover {
+      background: lighten($dark-sidebar, 2%);
+      border-color: lighten($dark-sidebar, 12%);
 
-        svg {
-          color: $accent;
-        }
+      svg {
+        color: $accent;
       }
     }
   }
@@ -1090,20 +1086,18 @@ body {
 1. Dropdown Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .inbox-dropdown {
-      &:hover {
-        div > .button {
-          background: lighten($dark-sidebar, 2%) !important;
-          border-color: lighten($dark-sidebar, 12%) !important;
-        }
-      }
-
+.is-dark {
+  .inbox-dropdown {
+    &:hover {
       div > .button {
-        background: transparent !important;
-        border-color: transparent !important;
+        background: lighten($dark-sidebar, 2%) !important;
+        border-color: lighten($dark-sidebar, 12%) !important;
       }
+    }
+
+    div > .button {
+      background: transparent !important;
+      border-color: transparent !important;
     }
   }
 }

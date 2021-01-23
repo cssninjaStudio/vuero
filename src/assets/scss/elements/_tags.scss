@@ -192,27 +192,25 @@
 2. Tags Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .tag {
-      &:not(.is-primary):not(.is-secondary):not(.is-success):not(.is-info):not(.is-warning):not(.is-danger):not(.is-orange):not(.is-green):not(.is-blue):not(.is-purple) {
-        background: lighten($dark-sidebar, 10%);
-        border-color: lighten($dark-sidebar, 10%);
-        color: $dark-dark-text;
+.is-dark {
+  .tag {
+    &:not(.is-primary):not(.is-secondary):not(.is-success):not(.is-info):not(.is-warning):not(.is-danger):not(.is-orange):not(.is-green):not(.is-blue):not(.is-purple) {
+      background: lighten($dark-sidebar, 10%);
+      border-color: lighten($dark-sidebar, 10%);
+      color: $dark-dark-text;
+    }
+
+    &.is-primary {
+      background: $accent;
+
+      &.is-outlined {
+        border-color: $accent;
+        color: $accent;
       }
 
-      &.is-primary {
-        background: $accent;
-
-        &.is-outlined {
-          border-color: $accent;
-          color: $accent;
-        }
-
-        &.is-light {
-          background: lighten($accent, 22%);
-          color: $accent;
-        }
+      &.is-light {
+        background: lighten($accent, 22%);
+        color: $accent;
       }
     }
   }

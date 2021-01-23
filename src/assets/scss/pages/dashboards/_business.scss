@@ -360,69 +360,67 @@
 2. Dashboards Flights Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .business-dashboard {
-      &.flights-dashboard {
-        .booking-bar-wrapper {
+.is-dark {
+  .business-dashboard {
+    &.flights-dashboard {
+      .booking-bar-wrapper {
+        @include vuero-card--dark();
+
+        background: lighten($dark-sidebar, 4%);
+        border-color: lighten($dark-sidebar, 12%);
+        box-shadow: $light-box-shadow;
+      }
+
+      .flights-summary-wrapper {
+        .flight-summary {
           @include vuero-card--dark();
 
-          background: lighten($dark-sidebar, 4%);
-          border-color: lighten($dark-sidebar, 12%);
-          box-shadow: $light-box-shadow;
-        }
+          &:hover {
+            border-color: $accent !important;
+          }
 
-        .flights-summary-wrapper {
-          .flight-summary {
-            @include vuero-card--dark();
-
-            &:hover {
-              border-color: $accent !important;
-            }
-
-            &.is-featured {
-              background: $accent !important;
-              border-color: $accent !important;
-              box-shadow: $accent-box-shadow !important;
-
-              .flight-price {
-                color: $white;
-              }
-            }
+          &.is-featured {
+            background: $accent !important;
+            border-color: $accent !important;
+            box-shadow: $accent-box-shadow !important;
 
             .flight-price {
-              color: $accent;
+              color: $white;
             }
+          }
 
-            .meta {
-              span {
-                &:first-child {
-                  color: $dark-dark-text;
-                }
+          .flight-price {
+            color: $accent;
+          }
+
+          .meta {
+            span {
+              &:first-child {
+                color: $dark-dark-text;
               }
             }
           }
         }
+      }
 
-        .flights {
-          .flight-card {
-            @include vuero-card--dark();
-
-            .start,
-            .end {
-              span {
-                &:first-child {
-                  color: $dark-dark-text;
-                }
-              }
-            }
-          }
-        }
-
-        .company-card,
-        .filters-card {
+      .flights {
+        .flight-card {
           @include vuero-card--dark();
+
+          .start,
+          .end {
+            span {
+              &:first-child {
+                color: $dark-dark-text;
+              }
+            }
+          }
         }
+      }
+
+      .company-card,
+      .filters-card {
+        @include vuero-card--dark();
       }
     }
   }
@@ -872,52 +870,50 @@ body {
 5. HR Dashboard Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .business-dashboard {
-      &.hr-dashboard {
-        .block-header {
-          background: $dark-sidebar;
-          box-shadow: none;
+.is-dark {
+  .business-dashboard {
+    &.hr-dashboard {
+      .block-header {
+        background: $dark-sidebar;
+        box-shadow: none;
 
-          .center {
-            border-color: lighten($dark-sidebar, 10%);
+        .center {
+          border-color: lighten($dark-sidebar, 10%);
 
-            .candidates {
-              button {
-                background: lighten($dark-sidebar, 10%);
-                border: 1px solid transparent;
-                transition: all 0.3s;
+          .candidates {
+            button {
+              background: lighten($dark-sidebar, 10%);
+              border: 1px solid transparent;
+              transition: all 0.3s;
 
-                &:hover {
-                  border-color: $accent;
+              &:hover {
+                border-color: $accent;
 
-                  svg {
-                    color: $accent;
-                  }
+                svg {
+                  color: $accent;
                 }
               }
             }
           }
         }
+      }
 
-        .feed-settings {
-          .button {
-            &.is-selected {
-              background: $accent !important;
-              border-color: $accent !important;
-              box-shadow: $accent-box-shadow !important;
-              color: $white !important;
-            }
+      .feed-settings {
+        .button {
+          &.is-selected {
+            background: $accent !important;
+            border-color: $accent !important;
+            box-shadow: $accent-box-shadow !important;
+            color: $white !important;
           }
         }
+      }
 
-        .recent-rookies {
-          .user-grid {
-            &.user-grid-v4 {
-              .grid-item {
-                @include vuero-card--dark();
-              }
+      .recent-rookies {
+        .user-grid {
+          &.user-grid-v4 {
+            .grid-item {
+              @include vuero-card--dark();
             }
           }
         }

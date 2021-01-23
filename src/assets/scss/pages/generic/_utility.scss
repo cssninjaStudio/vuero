@@ -624,46 +624,44 @@ Utility Pages
 5. Invoice Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .invoice-wrapper {
-      .invoice-header {
-        border-color: lighten($dark-sidebar, 20%);
+.is-dark {
+  .invoice-wrapper {
+    .invoice-header {
+      border-color: lighten($dark-sidebar, 20%);
 
-        .left {
-          h3 {
-            color: $dark-dark-text;
-          }
+      .left {
+        h3 {
+          color: $dark-dark-text;
         }
+      }
 
-        .right {
-          .controls {
-            .action {
-              border: 1px solid transparent;
+      .right {
+        .controls {
+          .action {
+            border: 1px solid transparent;
 
-              &:hover {
-                background: lighten($dark-sidebar, 2%);
-                border-color: $accent;
-                color: $accent;
-              }
+            &:hover {
+              background: lighten($dark-sidebar, 2%);
+              border-color: $accent;
+              color: $accent;
             }
           }
         }
       }
+    }
 
-      .invoice-section {
-        border-color: lighten($dark-sidebar, 12%) !important;
+    .invoice-section {
+      border-color: lighten($dark-sidebar, 12%) !important;
 
-        &.is-flex {
-          .h-avatar {
-            border-color: lighten($dark-sidebar, 12%) !important;
-          }
+      &.is-flex {
+        .h-avatar {
+          border-color: lighten($dark-sidebar, 12%) !important;
+        }
 
-          .meta,
-          .end {
-            h3 {
-              color: $dark-dark-text;
-            }
+        .meta,
+        .end {
+          h3 {
+            color: $dark-dark-text;
           }
         }
       }

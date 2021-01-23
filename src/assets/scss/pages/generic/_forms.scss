@@ -458,43 +458,83 @@ Form Layouts
   }
 }
 
-body {
-  &.is-dark {
-    .form-layout {
-      &.is-split {
-        .form-outer {
-          .form-body {
-            .form-section {
-              &.is-grey {
-                background: lighten($dark-sidebar, 4%) !important;
-              }
+.is-dark {
+  .form-layout {
+    &.is-split {
+      .form-outer {
+        .form-body {
+          .form-section {
+            &.is-grey {
+              background: lighten($dark-sidebar, 4%) !important;
+            }
 
-              h3 {
+            h3 {
+              color: $dark-dark-text;
+            }
+
+            .left {
+              border-color: lighten($dark-sidebar, 12%) !important;
+
+              .operator {
+                background: lighten($dark-sidebar, 6%) !important;
                 color: $dark-dark-text;
               }
 
-              .left {
-                border-color: lighten($dark-sidebar, 12%) !important;
-
-                .operator {
-                  background: lighten($dark-sidebar, 6%) !important;
-                  color: $dark-dark-text;
-                }
-
-                .radio-pills {
-                  .radio-pill {
-                    input {
-                      &:checked + .radio-pill-inner {
-                        border-color: $accent;
-                        background: $accent;
-                        box-shadow: $accent-box-shadow;
-                        color: $smoke-white;
-                      }
+              .radio-pills {
+                .radio-pill {
+                  input {
+                    &:checked + .radio-pill-inner {
+                      border-color: $accent;
+                      background: $accent;
+                      box-shadow: $accent-box-shadow;
+                      color: $smoke-white;
                     }
+                  }
 
-                    .radio-pill-inner {
-                      background: lighten($dark-sidebar, 2%);
-                      border-color: lighten($dark-sidebar, 12%);
+                  .radio-pill-inner {
+                    background: lighten($dark-sidebar, 2%);
+                    border-color: lighten($dark-sidebar, 12%);
+                    color: $dark-dark-text;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &.is-separate {
+      .form-outer {
+        background: none !important;
+
+        .form-body {
+          .form-section {
+            .form-section-inner {
+              @include vuero-card--dark();
+
+              > h3 {
+                color: $dark-dark-text;
+              }
+
+              .radio-boxes {
+                .radio-box {
+                  input:checked + .radio-box-inner {
+                    background: $accent;
+                    border-color: $accent;
+                    box-shadow: $accent-box-shadow;
+
+                    .fee,
+                    p {
+                      color: $smoke-white;
+                    }
+                  }
+
+                  .radio-box-inner {
+                    background: lighten($dark-sidebar, 2%);
+                    border-color: lighten($dark-sidebar, 12%);
+
+                    .fee {
                       color: $dark-dark-text;
                     }
                   }
@@ -504,90 +544,48 @@ body {
           }
         }
       }
+    }
 
-      &.is-separate {
-        .form-outer {
-          background: none !important;
+    &.is-stacked {
+      .form-outer {
+        .form-body {
+          .form-section {
+            border-color: lighten($dark-sidebar, 12%);
 
-          .form-body {
-            .form-section {
-              .form-section-inner {
-                @include vuero-card--dark();
-
-                > h3 {
-                  color: $dark-dark-text;
-                }
-
-                .radio-boxes {
-                  .radio-box {
-                    input:checked + .radio-box-inner {
-                      background: $accent;
-                      border-color: $accent;
-                      box-shadow: $accent-box-shadow;
-
-                      .fee,
-                      p {
-                        color: $smoke-white;
-                      }
-                    }
-
-                    .radio-box-inner {
-                      background: lighten($dark-sidebar, 2%);
-                      border-color: lighten($dark-sidebar, 12%);
-
-                      .fee {
-                        color: $dark-dark-text;
-                      }
-                    }
-                  }
-                }
-              }
+            &.is-grey {
+              background: lighten($dark-sidebar, 4%);
             }
-          }
-        }
-      }
 
-      &.is-stacked {
-        .form-outer {
-          .form-body {
-            .form-section {
+            .form-section-header {
               border-color: lighten($dark-sidebar, 12%);
 
-              &.is-grey {
-                background: lighten($dark-sidebar, 4%);
+              .left {
+                h3 {
+                  color: $dark-dark-text;
+                }
+              }
+            }
+
+            .form-section-inner {
+              .add-link {
+                color: $accent;
               }
 
-              .form-section-header {
-                border-color: lighten($dark-sidebar, 12%);
+              .color-codes {
+                .color-code {
+                  background: lighten($dark-sidebar, 6%);
 
-                .left {
-                  h3 {
-                    color: $dark-dark-text;
+                  &.is-primary {
+                    border-color: $accent;
                   }
                 }
               }
 
-              .form-section-inner {
-                .add-link {
-                  color: $accent;
-                }
-
-                .color-codes {
-                  .color-code {
-                    background: lighten($dark-sidebar, 6%);
-
-                    &.is-primary {
-                      border-color: $accent;
-                    }
-                  }
-                }
-
-                .participants {
-                  .add-participant {
-                    &:hover {
-                      border: 1.6px solid $accent;
-                      color: $accent;
-                    }
+              .participants {
+                .add-participant {
+                  &:hover {
+                    border: 1.6px solid $accent;
+                    color: $accent;
                   }
                 }
               }
@@ -595,33 +593,33 @@ body {
           }
         }
       }
+    }
 
-      .form-outer {
-        @include vuero-card--dark();
+    .form-outer {
+      @include vuero-card--dark();
 
-        .form-header {
-          border-color: lighten($dark-sidebar, 12%);
+      .form-header {
+        border-color: lighten($dark-sidebar, 12%);
 
-          &.is-stuck {
-            background: $dark-sidebar;
-            border-color: lighten($dark-sidebar, 6%);
-          }
-
-          .left {
-            h3 {
-              color: $dark-dark-text;
-            }
-          }
+        &.is-stuck {
+          background: $dark-sidebar;
+          border-color: lighten($dark-sidebar, 6%);
         }
 
-        .form-body {
-          .field {
-            .control {
-              .input,
-              .textarea {
-                &:focus {
-                  border-color: $accent;
-                }
+        .left {
+          h3 {
+            color: $dark-dark-text;
+          }
+        }
+      }
+
+      .form-body {
+        .field {
+          .control {
+            .input,
+            .textarea {
+              &:focus {
+                border-color: $accent;
               }
             }
           }

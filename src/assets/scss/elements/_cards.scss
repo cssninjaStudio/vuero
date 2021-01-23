@@ -25,13 +25,11 @@
 2. Simple Cards Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .r-card,
-    .s-card,
-    .l-card {
-      @include vuero-card--dark();
-    }
+.is-dark {
+  .r-card,
+  .s-card,
+  .l-card {
+    @include vuero-card--dark();
   }
 }
 
@@ -61,34 +59,32 @@ body {
 4. Advanced Cards Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .r-card-advanced,
-    .s-card-advanced,
-    .l-card-advanced {
-      background: lighten($dark-sidebar, 6%);
+.is-dark {
+  .r-card-advanced,
+  .s-card-advanced,
+  .l-card-advanced {
+    background: lighten($dark-sidebar, 6%);
+    border-color: lighten($dark-sidebar, 12%);
+
+    .card-head,
+    .card-foot {
       border-color: lighten($dark-sidebar, 12%);
+    }
 
-      .card-head,
-      .card-foot {
-        border-color: lighten($dark-sidebar, 12%);
+    .h-avatar {
+      img {
+        border-color: lighten($dark-sidebar, 6%) !important;
       }
+    }
 
+    .avatar-stack {
       .h-avatar {
-        img {
-          border-color: lighten($dark-sidebar, 6%) !important;
-        }
-      }
+        border-color: lighten($dark-sidebar, 6%) !important;
 
-      .avatar-stack {
-        .h-avatar {
-          border-color: lighten($dark-sidebar, 6%) !important;
-
-          .avatar {
-            &.is-more {
-              .inner {
-                border-color: lighten($dark-sidebar, 6%) !important;
-              }
+        .avatar {
+          &.is-more {
+            .inner {
+              border-color: lighten($dark-sidebar, 6%) !important;
             }
           }
         }
@@ -111,12 +107,10 @@ body {
 6. Bulma Cards Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .card {
-      &.h-card {
-        @include vuero-h-card--dark();
-      }
+.is-dark {
+  .card {
+    &.h-card {
+      @include vuero-h-card--dark();
     }
   }
 }

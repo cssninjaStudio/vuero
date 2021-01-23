@@ -87,7 +87,7 @@
           }
 
           &.is-selected,
-          &.router-link-active {
+          &.router-link-exact-active {
             svg {
               color: $primary;
             }
@@ -597,20 +597,43 @@
 3. Mobile Subsidebar Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .mobile-main-sidebar {
-      background: darken($dark-sidebar, 6%);
-      border-color: lighten($dark-sidebar, 1%) !important;
+.is-dark {
+  .mobile-main-sidebar {
+    background: darken($dark-sidebar, 6%);
+    border-color: lighten($dark-sidebar, 1%) !important;
 
-      .inner {
-        .icon-side-menu {
-          li {
-            a {
-              &.is-active {
-                svg {
-                  color: $accent;
-                }
+    .inner {
+      .icon-side-menu {
+        li {
+          a {
+            &.is-active {
+              svg {
+                color: $accent;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .mobile-subsidebar {
+    background: lighten($dark-sidebar, 2%);
+    border-color: lighten($dark-sidebar, 4%);
+
+    .submenu {
+      li {
+        &.is-active {
+          a {
+            color: $accent !important;
+          }
+        }
+
+        &.has-children {
+          &.active {
+            .collapse-wrap {
+              > a {
+                color: $smoke-white;
               }
             }
           }
@@ -618,51 +641,26 @@ body {
       }
     }
 
-    .mobile-subsidebar {
-      background: lighten($dark-sidebar, 2%);
-      border-color: lighten($dark-sidebar, 4%);
+    &.is-messaging {
+      ul li {
+        &.is-active {
+          background: darken($dark-sidebar, 4%);
+          border-left-color: $accent !important;
+        }
 
-      .submenu {
-        li {
-          &.is-active {
-            a {
-              color: $accent !important;
-            }
-          }
-
-          &.has-children {
-            &.active {
-              .collapse-wrap {
-                > a {
-                  color: $smoke-white;
-                }
-              }
+        .recipient-meta {
+          span {
+            &:first-child,
+            &.is-unread {
+              color: $accent-grey !important;
             }
           }
         }
-      }
 
-      &.is-messaging {
-        ul li {
-          &.is-active {
-            background: darken($dark-sidebar, 4%);
-            border-left-color: $accent !important;
-          }
-
-          .recipient-meta {
-            span {
-              &:first-child,
-              &.is-unread {
-                color: $accent-grey !important;
-              }
-            }
-          }
-
-          .user-group {
-            img,
-            span {
-              border-color: lighten($dark-sidebar, 2%) !important;
-            }
+        .user-group {
+          img,
+          span {
+            border-color: lighten($dark-sidebar, 2%) !important;
           }
         }
       }

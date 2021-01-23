@@ -136,29 +136,27 @@
 2. Card Hub Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .card-hub {
-      .hub-header {
-        .h-avatar {
-          .badge {
-            border-color: lighten($dark-sidebar, 6%) !important;
-          }
+.is-dark {
+  .card-hub {
+    .hub-header {
+      .h-avatar {
+        .badge {
+          border-color: lighten($dark-sidebar, 6%) !important;
         }
       }
+    }
 
-      .hub-body {
-        .body-inner {
-          .hub-card {
-            background: lighten($dark-sidebar, 6%);
-            border-color: lighten($dark-sidebar, 12%);
+    .hub-body {
+      .body-inner {
+        .hub-card {
+          background: lighten($dark-sidebar, 6%);
+          border-color: lighten($dark-sidebar, 12%);
 
-            .hub-card-foot {
-              border-color: darken($muted-grey, 25%);
+          .hub-card-foot {
+            border-color: darken($muted-grey, 25%);
 
-              a {
-                color: $accent;
-              }
+            a {
+              color: $accent;
             }
           }
         }

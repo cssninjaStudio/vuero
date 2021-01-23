@@ -622,112 +622,112 @@ Subpages UI Elements
 2. SaaS Billing Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .saas-billing-wrapper {
-      .plans-wrapper {
-        border-color: lighten($dark-sidebar, 20%);
+.is-dark {
+  .saas-billing-wrapper {
+    .plans-wrapper {
+      border-color: lighten($dark-sidebar, 20%);
 
-        .left {
-          .inner-wrap {
-            > h3 {
-              color: $dark-dark-text;
-            }
-          }
-
-          .plans {
-            .plan {
-              input {
-                &:checked + .plan-inner {
-                  border-color: $accent !important;
-                }
-              }
-
-              .plan-inner {
-                .meta span {
-                  &:first-child {
-                    color: $dark-dark-text;
-                  }
-                }
-
-                .checkmark {
-                  background: lighten($dark-sidebar, 2%);
-                  border-color: lighten($dark-sidebar, 12%);
-                }
-              }
-            }
+      .left {
+        .inner-wrap {
+          > h3 {
+            color: $dark-dark-text;
           }
         }
 
-        .right {
-          .plan-details {
-            .plan-details-inner {
-              .plan-description {
-                .right {
-                  .plan-pricing span {
-                    &:first-child {
-                      color: $dark-dark-text;
-                    }
+        .plans {
+          .plan {
+            input {
+              &:checked + .plan-inner {
+                border-color: $accent !important;
+              }
+            }
 
-                    &:nth-child(2) {
-                      color: $accent;
-                    }
-                  }
+            .plan-inner {
+              @include vuero-card--dark();
+
+              .meta span {
+                &:first-child {
+                  color: $dark-dark-text;
                 }
               }
 
-              .plan-summary {
-                .plan-features {
-                  ul {
-                    color: $dark-dark-text;
-                  }
-                }
+              .checkmark {
+                background: lighten($dark-sidebar, 2%);
+                border-color: lighten($dark-sidebar, 12%);
               }
             }
           }
         }
       }
 
-      .billing-options-wrapper {
-        .left {
-          .option-block {
-            @include vuero-card--dark();
+      .right {
+        .plan-details {
+          .plan-details-inner {
+            .plan-description {
+              .right {
+                .plan-pricing span {
+                  &:first-child {
+                    color: $dark-dark-text;
+                  }
 
-            .block-header {
-              h3 {
-                color: $dark-dark-text;
-              }
-
-              a:hover {
-                color: $accent;
+                  &:nth-child(2) {
+                    color: $accent;
+                  }
+                }
               }
             }
 
-            .block-body {
-              &.is-seats {
-                .add-seat:hover {
-                  border-color: $accent;
-                  color: $accent;
+            .plan-summary {
+              .plan-features {
+                ul {
+                  color: $dark-dark-text;
                 }
               }
             }
           }
         }
+      }
+    }
 
-        .right {
-          .payment-form {
-            background: lighten($dark-sidebar, 6%);
-            border-color: lighten($dark-sidebar, 12%);
+    .billing-options-wrapper {
+      .left {
+        .option-block {
+          @include vuero-card--dark();
 
-            .form-header {
-              h3 {
-                color: $dark-dark-text;
-              }
+          .block-header {
+            h3 {
+              color: $dark-dark-text;
+            }
 
-              span:hover,
-              a:hover {
+            a:hover {
+              color: $accent;
+            }
+          }
+
+          .block-body {
+            &.is-seats {
+              .add-seat:hover {
+                border-color: $accent;
                 color: $accent;
               }
+            }
+          }
+        }
+      }
+
+      .right {
+        .payment-form {
+          background: lighten($dark-sidebar, 6%);
+          border-color: lighten($dark-sidebar, 12%);
+
+          .form-header {
+            h3 {
+              color: $dark-dark-text;
+            }
+
+            span:hover,
+            a:hover {
+              color: $accent;
             }
           }
         }

@@ -18,6 +18,6 @@ useHead({
       <Toolbar />
     </div>
 
-    <ProjectsViewV1 class="page-content-inner is-webapp" />
+    <ProjectDetailsV1 class="page-content-inner is-webapp" />
   </div>
 </template>

@@ -59,26 +59,24 @@
 2. H Action Dark Mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .button {
-      &.h-action {
-        background: lighten($dark-sidebar, 10%);
-        border-color: lighten($dark-sidebar, 12%);
-        color: $dark-dark-text;
+.is-dark {
+  .button {
+    &.h-action {
+      background: lighten($dark-sidebar, 10%);
+      border-color: lighten($dark-sidebar, 12%);
+      color: $dark-dark-text;
 
+      &:hover {
+        background: $accent;
+        border-color: $accent;
+        color: $smoke-white;
+      }
+
+      &.is-hoverable {
         &:hover {
-          background: $accent;
-          border-color: $accent;
-          color: $smoke-white;
-        }
-
-        &.is-hoverable {
-          &:hover {
-            border-color: $accent !important;
-            background: $accent !important;
-            box-shadow: $accent-box-shadow !important;
-          }
+          border-color: $accent !important;
+          background: $accent !important;
+          box-shadow: $accent-box-shadow !important;
         }
       }
     }
@@ -238,107 +236,105 @@ body {
 4. H Button Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .h-button {
-      &:not(.is-primary):not(.is-success):not(.is-info):not(.is-warning):not(.is-danger):not(.is-light):not(.is-white) {
-        background: lighten($dark-sidebar, 10%);
-        border-color: lighten($dark-sidebar, 12%);
-        color: $dark-dark-text;
+.is-dark {
+  .h-button {
+    &:not(.is-primary):not(.is-success):not(.is-info):not(.is-warning):not(.is-danger):not(.is-light):not(.is-white) {
+      background: lighten($dark-sidebar, 10%);
+      border-color: lighten($dark-sidebar, 12%);
+      color: $dark-dark-text;
 
-        &:hover {
-          border-color: lighten($dark-sidebar, 18%);
-        }
-      }
-
-      &.is-primary {
-        border-color: $accent;
-        background: $accent;
-
-        &.is-raised:hover {
-          box-shadow: $accent-box-shadow !important;
-        }
-
-        &.is-elevated {
-          box-shadow: $accent-box-shadow !important;
-        }
-
-        &.is-outlined {
-          background: transparent;
-          border-color: $accent !important;
-          color: $accent;
-
-          &:hover {
-            background: $accent !important;
-            border-color: $accent !important;
-            color: $white !important;
-          }
-        }
-
-        &.is-light {
-          background: lighten($accent, 25%) !important;
-          color: $accent;
-        }
-      }
-
-      &.is-white {
-        background: lighten($dark-sidebar, 6%) !important;
-        border-color: $muted-grey !important;
-        color: $muted-grey !important;
-      }
-
-      &.is-dark-outlined {
-        background: lighten($dark-sidebar, 10%);
-        border-color: lighten($dark-sidebar, 12%);
-        color: $dark-dark-text;
-
-        &:hover {
-          border-color: $accent !important;
-          color: $accent !important;
-        }
+      &:hover {
+        border-color: lighten($dark-sidebar, 18%);
       }
     }
 
-    .button {
-      &:not(.is-primary):not(.is-success):not(.is-info):not(.is-warning):not(.is-danger):not(.is-light):not(.is-white) {
-        background: lighten($dark-sidebar, 10%);
-        border-color: lighten($dark-sidebar, 12%);
-        color: $dark-dark-text;
+    &.is-primary {
+      border-color: $accent;
+      background: $accent;
+
+      &.is-raised:hover {
+        box-shadow: $accent-box-shadow !important;
+      }
+
+      &.is-elevated {
+        box-shadow: $accent-box-shadow !important;
+      }
+
+      &.is-outlined {
+        background: transparent;
+        border-color: $accent !important;
+        color: $accent;
 
         &:hover {
-          border-color: lighten($dark-sidebar, 18%);
-        }
-      }
-
-      &.is-primary {
-        border-color: $accent;
-        background: $accent;
-      }
-
-      &.is-white {
-        background: lighten($dark-sidebar, 6%) !important;
-        border-color: $muted-grey !important;
-        color: $muted-grey !important;
-      }
-
-      &.is-dark-outlined {
-        background: lighten($dark-sidebar, 10%);
-        border-color: lighten($dark-sidebar, 12%);
-        color: $dark-dark-text;
-
-        &:hover {
-          border-color: $accent !important;
-          color: $accent !important;
-        }
-      }
-
-      &.h-action {
-        &.is-active {
           background: $accent !important;
           border-color: $accent !important;
-          box-shadow: $accent-box-shadow !important;
-          color: $smoke-white !important;
+          color: $white !important;
         }
+      }
+
+      &.is-light {
+        background: lighten($accent, 25%) !important;
+        color: $accent;
+      }
+    }
+
+    &.is-white {
+      background: lighten($dark-sidebar, 6%) !important;
+      border-color: $muted-grey !important;
+      color: $muted-grey !important;
+    }
+
+    &.is-dark-outlined {
+      background: lighten($dark-sidebar, 10%);
+      border-color: lighten($dark-sidebar, 12%);
+      color: $dark-dark-text;
+
+      &:hover {
+        border-color: $accent !important;
+        color: $accent !important;
+      }
+    }
+  }
+
+  .button {
+    &:not(.is-primary):not(.is-success):not(.is-info):not(.is-warning):not(.is-danger):not(.is-light):not(.is-white) {
+      background: lighten($dark-sidebar, 10%);
+      border-color: lighten($dark-sidebar, 12%);
+      color: $dark-dark-text;
+
+      &:hover {
+        border-color: lighten($dark-sidebar, 18%);
+      }
+    }
+
+    &.is-primary {
+      border-color: $accent;
+      background: $accent;
+    }
+
+    &.is-white {
+      background: lighten($dark-sidebar, 6%) !important;
+      border-color: $muted-grey !important;
+      color: $muted-grey !important;
+    }
+
+    &.is-dark-outlined {
+      background: lighten($dark-sidebar, 10%);
+      border-color: lighten($dark-sidebar, 12%);
+      color: $dark-dark-text;
+
+      &:hover {
+        border-color: $accent !important;
+        color: $accent !important;
+      }
+    }
+
+    &.h-action {
+      &.is-active {
+        background: $accent !important;
+        border-color: $accent !important;
+        box-shadow: $accent-box-shadow !important;
+        color: $smoke-white !important;
       }
     }
   }

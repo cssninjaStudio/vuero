@@ -563,120 +563,118 @@
 2. Avatar Dark Mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .h-avatar {
-      .avatar {
+.is-dark {
+  .h-avatar {
+    .avatar {
+      border-color: lighten($dark-sidebar, 6%);
+
+      &.is-fake {
+        &.is-primary {
+          background: $primary;
+
+          span {
+            color: $white;
+          }
+        }
+
+        &.is-accent {
+          background: $accent;
+
+          span {
+            color: $white;
+          }
+        }
+
+        &.is-success {
+          background: $success;
+
+          span {
+            color: $white;
+          }
+        }
+
+        &.is-info {
+          background: $info;
+
+          span {
+            color: $white;
+          }
+        }
+
+        &.is-warning {
+          background: $warning;
+
+          span {
+            color: $white;
+          }
+        }
+
+        &.is-danger {
+          background: $danger;
+
+          span {
+            color: $white;
+          }
+        }
+
+        &.is-h-purple {
+          background: $h-purple;
+
+          span {
+            color: $white;
+          }
+        }
+
+        &.is-h-orange {
+          background: $h-orange;
+
+          span {
+            color: $white;
+          }
+        }
+
+        &.is-h-blue {
+          background: $h-blue;
+
+          span {
+            color: $white;
+          }
+        }
+
+        &.is-h-red {
+          background: $h-red;
+
+          span {
+            color: $white;
+          }
+        }
+
+        &.is-h-green {
+          background: $h-green;
+
+          span {
+            color: $white;
+          }
+        }
+
+        &.is-h-yellow {
+          background: $h-yellow;
+
+          span {
+            color: $white;
+          }
+        }
+      }
+
+      &.is-more {
+        .inner {
+          background: lighten($dark-sidebar, 10%);
+          border-color: darken($dark-sidebar, 2%);
+        }
+      }
+
+      &.is-fake {
         border-color: lighten($dark-sidebar, 6%);
-
-        &.is-fake {
-          &.is-primary {
-            background: $primary;
-
-            span {
-              color: $white;
-            }
-          }
-
-          &.is-accent {
-            background: $accent;
-
-            span {
-              color: $white;
-            }
-          }
-
-          &.is-success {
-            background: $success;
-
-            span {
-              color: $white;
-            }
-          }
-
-          &.is-info {
-            background: $info;
-
-            span {
-              color: $white;
-            }
-          }
-
-          &.is-warning {
-            background: $warning;
-
-            span {
-              color: $white;
-            }
-          }
-
-          &.is-danger {
-            background: $danger;
-
-            span {
-              color: $white;
-            }
-          }
-
-          &.is-h-purple {
-            background: $h-purple;
-
-            span {
-              color: $white;
-            }
-          }
-
-          &.is-h-orange {
-            background: $h-orange;
-
-            span {
-              color: $white;
-            }
-          }
-
-          &.is-h-blue {
-            background: $h-blue;
-
-            span {
-              color: $white;
-            }
-          }
-
-          &.is-h-red {
-            background: $h-red;
-
-            span {
-              color: $white;
-            }
-          }
-
-          &.is-h-green {
-            background: $h-green;
-
-            span {
-              color: $white;
-            }
-          }
-
-          &.is-h-yellow {
-            background: $h-yellow;
-
-            span {
-              color: $white;
-            }
-          }
-        }
-
-        &.is-more {
-          .inner {
-            background: lighten($dark-sidebar, 10%);
-            border-color: darken($dark-sidebar, 2%);
-          }
-        }
-
-        &.is-fake {
-          border-color: lighten($dark-sidebar, 6%);
-        }
       }
     }
   }

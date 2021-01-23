@@ -120,19 +120,17 @@ Widget Styles
   }
 }
 
-body {
-  &.is-dark {
-    .widget-toolbar {
-      h3 {
-        color: $dark-dark-text;
-      }
+.is-dark {
+  .widget-toolbar {
+    h3 {
+      color: $dark-dark-text;
+    }
 
-      .right {
-        .right-icon {
-          &.has-indicator {
-            &::after {
-              border-color: lighten($dark-sidebar, 6%);
-            }
+    .right {
+      .right-icon {
+        &.has-indicator {
+          &::after {
+            border-color: lighten($dark-sidebar, 6%);
           }
         }
       }
@@ -216,23 +214,21 @@ body {
   }
 }
 
-body {
-  &.is-dark {
-    .icon-toolbar-widget {
-      @include vuero-card--dark();
+.is-dark {
+  .icon-toolbar-widget {
+    @include vuero-card--dark();
 
-      .icon-toolbar {
-        .toolbar-icon {
-          .inner-icon {
-            color: darken($light-text, 12%);
+    .icon-toolbar {
+      .toolbar-icon {
+        .inner-icon {
+          color: darken($light-text, 12%);
 
-            &:hover:not(.is-active) {
-              background: lighten($dark-sidebar, 3%);
-            }
+          &:hover:not(.is-active) {
+            background: lighten($dark-sidebar, 3%);
+          }
 
-            &.is-active {
-              color: $accent;
-            }
+          &.is-active {
+            color: $accent;
           }
         }
       }
@@ -273,23 +269,21 @@ body {
   }
 }
 
-body {
-  &.is-dark {
-    .text-widget {
-      @include vuero-card--dark();
+.is-dark {
+  .text-widget {
+    @include vuero-card--dark();
 
-      .widget-content {
-        p {
-          span {
-            color: $dark-dark-text;
-          }
+    .widget-content {
+      p {
+        span {
+          color: $dark-dark-text;
         }
       }
+    }
 
-      .hashtags {
-        a {
-          color: $accent;
-        }
+    .hashtags {
+      a {
+        color: $accent;
       }
     }
   }
@@ -361,17 +355,15 @@ body {
   }
 }
 
-body {
-  &.is-dark {
-    .calendar-widget {
-      .calendar-widget-inner {
-        .calendar-square {
-          @include vuero-card--dark();
-          .date {
-            span {
-              &:first-child {
-                color: $dark-dark-text;
-              }
+.is-dark {
+  .calendar-widget {
+    .calendar-widget-inner {
+      .calendar-square {
+        @include vuero-card--dark();
+        .date {
+          span {
+            &:first-child {
+              color: $dark-dark-text;
             }
           }
         }
@@ -417,19 +409,17 @@ body {
   }
 }
 
-body {
-  &.is-dark {
-    .image-widget {
-      @include vuero-card--dark();
+.is-dark {
+  .image-widget {
+    @include vuero-card--dark();
 
-      .progress-wrap {
-        .progress {
-          background-image: linear-gradient(
-            to right,
-            $accent 30%,
-            #000 30%
-          ) !important;
-        }
+    .progress-wrap {
+      .progress {
+        background-image: linear-gradient(
+          to right,
+          $accent 30%,
+          #000 30%
+        ) !important;
       }
     }
   }
@@ -466,15 +456,13 @@ body {
   }
 }
 
-body {
-  &.is-dark {
-    .list-widget {
-      ul {
-        li {
-          a {
-            &:hover {
-              color: $accent;
-            }
+.is-dark {
+  .list-widget {
+    ul {
+      li {
+        a {
+          &:hover {
+            color: $accent;
           }
         }
       }
@@ -536,27 +524,25 @@ body {
   }
 }
 
-body {
-  &.is-dark {
-    .picker-widget {
-      @include vuero-card--dark();
+.is-dark {
+  .picker-widget {
+    @include vuero-card--dark();
 
-      .calendar {
-        color: $dark-dark-text;
+    .calendar {
+      color: $dark-dark-text;
 
-        thead {
-          color: $accent;
-        }
-
-        td:hover {
-          background: lighten($dark-sidebar, 3%);
-          color: $accent;
-        }
-      }
-
-      .current-day {
+      thead {
         color: $accent;
       }
+
+      td:hover {
+        background: lighten($dark-sidebar, 3%);
+        color: $accent;
+      }
+    }
+
+    .current-day {
+      color: $accent;
     }
   }
 }
@@ -608,15 +594,13 @@ body {
   }
 }
 
-body {
-  &.is-dark {
-    .stats-widget {
-      @include vuero-card--dark();
-      .stat-number {
-        span {
-          &:first-child {
-            color: $dark-dark-text;
-          }
+.is-dark {
+  .stats-widget {
+    @include vuero-card--dark();
+    .stat-number {
+      span {
+        &:first-child {
+          color: $dark-dark-text;
         }
       }
     }
@@ -692,27 +676,25 @@ body {
   }
 }
 
-body {
-  &.is-dark {
-    .search-widget {
-      @include vuero-card--dark();
+.is-dark {
+  .search-widget {
+    @include vuero-card--dark();
 
-      .field {
-        .control {
-          .input {
-            background: lighten($dark-sidebar, 3%);
-            border-color: lighten($dark-sidebar, 12%);
-          }
-
-          .search-button {
-            background: $accent;
-          }
+    .field {
+      .control {
+        .input {
+          background: lighten($dark-sidebar, 3%);
+          border-color: lighten($dark-sidebar, 12%);
         }
 
-        .topics {
-          a:hover {
-            color: $accent;
-          }
+        .search-button {
+          background: $accent;
+        }
+      }
+
+      .topics {
+        a:hover {
+          color: $accent;
         }
       }
     }
@@ -784,31 +766,29 @@ body {
   }
 }
 
-body {
-  &.is-dark {
-    .icon-list-widget {
-      @include vuero-card--dark();
+.is-dark {
+  .icon-list-widget {
+    @include vuero-card--dark();
 
-      .icon-list {
-        .icon-list-item {
-          &:hover {
-            .icon-wrap {
-              background: $accent;
-              box-shadow: $accent-box-shadow;
-              color: $smoke-white;
-            }
-
-            .item-meta {
-              span {
-                color: $accent !important;
-              }
-            }
-          }
-
+    .icon-list {
+      .icon-list-item {
+        &:hover {
           .icon-wrap {
-            background: lighten($dark-sidebar, 3%);
-            color: lighten($light-text, 2%);
+            background: $accent;
+            box-shadow: $accent-box-shadow;
+            color: $smoke-white;
           }
+
+          .item-meta {
+            span {
+              color: $accent !important;
+            }
+          }
+        }
+
+        .icon-wrap {
+          background: lighten($dark-sidebar, 3%);
+          color: lighten($light-text, 2%);
         }
       }
     }
@@ -881,19 +861,17 @@ body {
   }
 }
 
-body {
-  &.is-dark {
-    .video-widget {
-      @include vuero-card--dark();
+.is-dark {
+  .video-widget {
+    @include vuero-card--dark();
 
-      .widget-meta {
-        > svg {
-          color: $accent;
-        }
+    .widget-meta {
+      > svg {
+        color: $accent;
+      }
 
-        h4 {
-          color: $dark-dark-text;
-        }
+      h4 {
+        color: $dark-dark-text;
       }
     }
   }
@@ -969,32 +947,30 @@ body {
   }
 }
 
-body {
-  &.is-dark {
-    .inbox-widget {
-      @include vuero-card--dark();
+.is-dark {
+  .inbox-widget {
+    @include vuero-card--dark();
 
-      .sender-block {
-        .sender-block-inner {
-          .meta {
-            span {
-              color: $dark-dark-text;
-            }
+    .sender-block {
+      .sender-block-inner {
+        .meta {
+          span {
+            color: $dark-dark-text;
           }
         }
       }
+    }
 
-      .exerpt {
-        background: lighten($dark-sidebar, 4%);
-        border-color: lighten($dark-sidebar, 12%);
+    .exerpt {
+      background: lighten($dark-sidebar, 4%);
+      border-color: lighten($dark-sidebar, 12%);
 
-        h5 {
-          color: $accent;
-        }
+      h5 {
+        color: $accent;
+      }
 
-        p {
-          color: $dark-dark-text;
-        }
+      p {
+        color: $dark-dark-text;
       }
     }
   }
@@ -1110,17 +1086,15 @@ body {
   }
 }
 
-body {
-  &.is-dark {
-    .illustration-widget {
-      @include vuero-card--dark();
+.is-dark {
+  .illustration-widget {
+    @include vuero-card--dark();
 
-      &.illustration-widget-v1,
-      &.illustration-widget-v2,
-      &.illustration-widget-v3 {
-        h3 {
-          color: $dark-dark-text;
-        }
+    &.illustration-widget-v1,
+    &.illustration-widget-v2,
+    &.illustration-widget-v3 {
+      h3 {
+        color: $dark-dark-text;
       }
     }
   }
@@ -1169,19 +1143,17 @@ body {
   }
 }
 
-body {
-  &.is-dark {
-    .creative-list-widget {
-      @include vuero-card--dark();
+.is-dark {
+  .creative-list-widget {
+    @include vuero-card--dark();
 
-      .creative-list {
-        .creative-list-item {
-          background: lighten($dark-sidebar, 2%);
-          border: 1px solid lighten($dark-sidebar, 12%);
+    .creative-list {
+      .creative-list-item {
+        background: lighten($dark-sidebar, 2%);
+        border: 1px solid lighten($dark-sidebar, 12%);
 
-          .meta {
-            color: $smoke-white;
-          }
+        .meta {
+          color: $smoke-white;
         }
       }
     }
@@ -1290,18 +1262,16 @@ body {
   }
 }
 
-body {
-  &.is-dark {
-    .social-buttons-widget {
-      @include vuero-card--dark();
+.is-dark {
+  .social-buttons-widget {
+    @include vuero-card--dark();
 
-      .social-buttons {
-        .social-button {
-          .inner-button {
-            &:hover:not(.is-active) {
-              background: lighten($dark-sidebar, 2%);
-              color: $light-text;
-            }
+    .social-buttons {
+      .social-button {
+        .inner-button {
+          &:hover:not(.is-active) {
+            background: lighten($dark-sidebar, 2%);
+            color: $light-text;
           }
         }
       }
@@ -1392,31 +1362,29 @@ body {
   }
 }
 
-body {
-  &.is-dark {
-    .call-widget {
-      @include vuero-card--dark();
+.is-dark {
+  .call-widget {
+    @include vuero-card--dark();
 
-      h3 {
+    h3 {
+      color: $dark-dark-text;
+    }
+
+    .img-container {
+      .badge {
+        border-color: lighten($dark-sidebar, 6%);
+      }
+    }
+
+    .actions {
+      .action {
+        background: lighten($dark-sidebar, 2%);
+        border: 1px solid lighten($dark-sidebar, 12%);
         color: $dark-dark-text;
-      }
 
-      .img-container {
-        .badge {
-          border-color: lighten($dark-sidebar, 6%);
-        }
-      }
-
-      .actions {
-        .action {
-          background: lighten($dark-sidebar, 2%);
-          border: 1px solid lighten($dark-sidebar, 12%);
-          color: $dark-dark-text;
-
-          &:hover {
-            border-color: $accent;
-            color: $accent;
-          }
+        &:hover {
+          border-color: $accent;
+          color: $accent;
         }
       }
     }
@@ -1500,39 +1468,37 @@ body {
   }
 }
 
-body {
-  &.is-dark {
-    .avatar-list-widget {
-      @include vuero-card--dark();
+.is-dark {
+  .avatar-list-widget {
+    @include vuero-card--dark();
 
-      .field {
-        .control {
-          .input {
-            background: lighten($dark-sidebar, 3%);
-            border-color: lighten($dark-sidebar, 12%);
-          }
-
-          .search-button {
-            background: $accent;
-          }
+    .field {
+      .control {
+        .input {
+          background: lighten($dark-sidebar, 3%);
+          border-color: lighten($dark-sidebar, 12%);
         }
 
-        .topics {
-          a:hover {
-            color: $accent;
-          }
+        .search-button {
+          background: $accent;
         }
       }
 
-      .avatar-list {
-        .avatar-list-item {
-          &:hover {
-            background: lighten($dark-sidebar, 8%);
-          }
+      .topics {
+        a:hover {
+          color: $accent;
+        }
+      }
+    }
 
-          .meta {
-            color: $dark-dark-text;
-          }
+    .avatar-list {
+      .avatar-list-item {
+        &:hover {
+          background: lighten($dark-sidebar, 8%);
+        }
+
+        .meta {
+          color: $dark-dark-text;
         }
       }
     }
@@ -1625,29 +1591,27 @@ body {
   }
 }
 
-body {
-  &.is-dark {
-    .contact-widget {
-      @include vuero-card--dark();
+.is-dark {
+  .contact-widget {
+    @include vuero-card--dark();
 
-      .widget-content {
-        border-color: lighten($dark-sidebar, 12%);
+    .widget-content {
+      border-color: lighten($dark-sidebar, 12%);
 
-        .right {
-          h3 {
+      .right {
+        h3 {
+          color: $dark-dark-text;
+        }
+
+        .company {
+          span:first-child {
+            color: $accent;
+          }
+        }
+
+        .contact-info {
+          span span {
             color: $dark-dark-text;
-          }
-
-          .company {
-            span:first-child {
-              color: $accent;
-            }
-          }
-
-          .contact-info {
-            span span {
-              color: $dark-dark-text;
-            }
           }
         }
       }
@@ -1708,17 +1672,15 @@ body {
   }
 }
 
-body {
-  &.is-dark {
-    .followers-widget {
-      @include vuero-card--dark();
+.is-dark {
+  .followers-widget {
+    @include vuero-card--dark();
 
-      .channels {
-        .channel {
-          .channel-icon {
-            background: lighten($dark-sidebar, 2%);
-            border: 1px solid lighten($dark-sidebar, 12%);
-          }
+    .channels {
+      .channel {
+        .channel-icon {
+          background: lighten($dark-sidebar, 2%);
+          border: 1px solid lighten($dark-sidebar, 12%);
         }
       }
     }
@@ -1776,18 +1738,16 @@ body {
   }
 }
 
-body {
-  &.is-dark {
-    .cart-widget {
-      @include vuero-card--dark();
+.is-dark {
+  .cart-widget {
+    @include vuero-card--dark();
 
-      .cart-items {
-        .cart-item {
-          .meta {
-            span {
-              &:nth-child(2) {
-                color: $accent;
-              }
+    .cart-items {
+      .cart-item {
+        .meta {
+          span {
+            &:nth-child(2) {
+              color: $accent;
             }
           }
         }

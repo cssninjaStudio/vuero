@@ -478,79 +478,77 @@
 2. Mobile Navbar Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .mobile-navbar {
-      background: $dark-sidebar;
+.is-dark {
+  .mobile-navbar {
+    background: $dark-sidebar;
 
-      .navbar-menu.is-active {
-        background: lighten($dark-sidebar, 3%);
+    .navbar-menu.is-active {
+      background: lighten($dark-sidebar, 3%);
 
-        .navbar-link {
-          .is-heading {
-            color: lighten($accent-grey, 10%);
-          }
-
-          svg {
-            color: $accent;
-          }
+      .navbar-link {
+        .is-heading {
+          color: lighten($accent-grey, 10%);
         }
 
-        .navbar-item.has-icon {
-          border-bottom-color: lighten($dark-sidebar, 10%) !important;
+        svg {
+          color: $accent;
         }
+      }
 
-        .navbar-dropdown .navbar-item {
-          color: darken($accent-grey, 5%) !important;
-        }
+      .navbar-item.has-icon {
+        border-bottom-color: lighten($dark-sidebar, 10%) !important;
+      }
 
-        .is-search .control {
-          input {
-            background: lighten($dark-sidebar, 10%) !important;
-            border-color: lighten($dark-sidebar, 10%) !important;
-            color: $accent-grey;
+      .navbar-dropdown .navbar-item {
+        color: darken($accent-grey, 5%) !important;
+      }
 
-            &:focus {
-              ~ span svg {
-                color: $accent;
-              }
+      .is-search .control {
+        input {
+          background: lighten($dark-sidebar, 10%) !important;
+          border-color: lighten($dark-sidebar, 10%) !important;
+          color: $accent-grey;
+
+          &:focus {
+            ~ span svg {
+              color: $accent;
             }
           }
         }
       }
     }
+  }
 
-    .is-notification {
-      &.is-active {
-        .navbar-link {
-          svg {
+  .is-notification {
+    &.is-active {
+      .navbar-link {
+        svg {
+          color: $accent !important;
+        }
+      }
+    }
+
+    .navbar-dropdown {
+      background: $dark-sidebar !important;
+      border-color: $dark-sidebar !important;
+
+      .heading {
+        border-color: lighten($dark-sidebar, 12%) !important;
+
+        .heading-right {
+          .notification-link {
             color: $accent !important;
           }
         }
       }
 
-      .navbar-dropdown {
-        background: $dark-sidebar !important;
-        border-color: $dark-sidebar !important;
-
-        .heading {
-          border-color: lighten($dark-sidebar, 12%) !important;
-
-          .heading-right {
-            .notification-link {
-              color: $accent !important;
-            }
-          }
-        }
-
-        .inner {
-          .notification-list {
-            li {
-              .notification-item {
-                .user-content {
-                  p {
-                    color: $dark-dark-text !important;
-                  }
+      .inner {
+        .notification-list {
+          li {
+            .notification-item {
+              .user-content {
+                p {
+                  color: $dark-dark-text !important;
                 }
               }
             }
@@ -1337,50 +1335,216 @@ body {
 4. Webapp Navbar Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .webapp-navbar:not(.is-colored) {
-      background: darken($dark-sidebar, 2%);
-      border-color: lighten($dark-sidebar, 1%);
+.is-dark {
+  .webapp-navbar:not(.is-colored) {
+    background: darken($dark-sidebar, 2%);
+    border-color: lighten($dark-sidebar, 1%);
 
-      &.is-transparent {
-        background: transparent;
-        box-shadow: none;
-        border-bottom-color: transparent;
+    &.is-transparent {
+      background: transparent;
+      box-shadow: none;
+      border-bottom-color: transparent;
 
-        &.is-solid,
-        &.is-scrolled {
-          background: darken($dark-sidebar, 2%);
-          border-color: lighten($dark-sidebar, 1%);
-        }
+      &.is-solid,
+      &.is-scrolled {
+        background: darken($dark-sidebar, 2%);
+        border-color: lighten($dark-sidebar, 1%);
       }
+    }
 
-      .webapp-navbar-inner {
-        .left {
-          .separator {
-            border-color: lighten($dark-sidebar, 12%);
-          }
+    .webapp-navbar-inner {
+      .left {
+        .separator {
+          border-color: lighten($dark-sidebar, 12%);
+        }
 
-          .project-dropdown {
-            .dropdown-menu {
-              .dropdown-content {
-                .dropdown-block {
-                  background: lighten($dark-sidebar, 2%) !important;
+        .project-dropdown {
+          .dropdown-menu {
+            .dropdown-content {
+              .dropdown-block {
+                background: lighten($dark-sidebar, 2%) !important;
 
-                  &:hover {
-                    background: lighten($dark-sidebar, 5%) !important;
-                  }
+                &:hover {
+                  background: lighten($dark-sidebar, 5%) !important;
+                }
 
-                  .meta {
-                    span {
-                      &:first-child {
-                        color: $dark-dark-text !important;
-                      }
+                .meta {
+                  span {
+                    &:first-child {
+                      color: $dark-dark-text !important;
                     }
                   }
                 }
               }
             }
+          }
+        }
+      }
+
+      .center {
+        .centered-links {
+          .centered-link {
+            &:hover {
+              background: lighten($dark-sidebar, 3%);
+            }
+
+            &.is-active {
+              background: lighten($dark-sidebar, 2%);
+              border-color: lighten($dark-sidebar, 12%);
+
+              &:hover {
+                background: lighten($dark-sidebar, 2%);
+              }
+
+              span {
+                color: $accent;
+              }
+
+              svg {
+                color: $accent;
+              }
+            }
+          }
+        }
+
+        .centered-drops {
+          .centered-drop {
+            > .dropdown {
+              &:hover {
+                .is-trigger {
+                  .button {
+                    background: lighten($dark-sidebar, 2%);
+                    border-color: lighten($dark-sidebar, 2%);
+                  }
+                }
+              }
+
+              &.is-active {
+                .is-trigger {
+                  .button {
+                    background: lighten($dark-sidebar, 2%);
+                    border-color: lighten($dark-sidebar, 12%) !important;
+                  }
+                }
+              }
+
+              &.has-mega-dropdown {
+                .dropdown-menu {
+                  .dropdown-content {
+                    .category-selector {
+                      .title-wrap {
+                        h4 {
+                          color: $dark-dark-text;
+                        }
+                      }
+
+                      .category-selector-inner {
+                        .category-item {
+                          background: lighten($dark-sidebar, 4%);
+                          border-color: lighten($dark-sidebar, 12%);
+
+                          &:hover {
+                            i,
+                            span {
+                              color: $accent;
+                            }
+                          }
+
+                          span {
+                            color: $dark-dark-text;
+                          }
+                        }
+                      }
+                    }
+
+                    .mega-menus {
+                      .dropdown-item-group {
+                        .column-heading {
+                          color: $dark-dark-text;
+                          border-color: lighten($dark-sidebar, 12%);
+                        }
+
+                        .column-content {
+                          .is-media {
+                            &:hover {
+                              .meta {
+                                span:first-child {
+                                  color: $smoke-white;
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+
+              .is-trigger {
+                .button {
+                  background: transparent;
+                  border: none;
+                }
+              }
+            }
+          }
+        }
+
+        .centered-button {
+          > .button {
+            background: transparent !important;
+            border: none;
+
+            &:hover {
+              background: lighten($dark-sidebar, 3%) !important;
+            }
+          }
+        }
+      }
+
+      .right {
+        .profile-dropdown {
+          .dropdown-menu {
+            .dropdown-content {
+              .dropdown-head {
+                background: lighten($dark-sidebar, 2%) !important;
+
+                &:hover {
+                  background: lighten($dark-sidebar, 2%) !important;
+                }
+
+                .meta {
+                  &:hover {
+                    background: lighten($dark-sidebar, 2%) !important;
+                  }
+
+                  span {
+                    &:first-child {
+                      color: $dark-dark-text !important;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .webapp-navbar {
+    &.is-colored {
+      background: darken($accent, 2%);
+
+      .webapp-navbar-inner {
+        .left {
+          .separator {
+            border-color: lighten($accent, 3%);
+          }
+
+          .title {
+            color: $smoke-white !important;
           }
         }
 
@@ -1388,36 +1552,53 @@ body {
           .centered-links {
             .centered-link {
               &:hover {
-                background: lighten($dark-sidebar, 3%);
-              }
+                background: darken($accent, 5%);
 
-              &.is-active {
-                background: lighten($dark-sidebar, 2%);
-                border-color: lighten($dark-sidebar, 12%);
-
-                &:hover {
-                  background: lighten($dark-sidebar, 2%);
+                svg {
+                  color: $smoke-white;
                 }
 
                 span {
-                  color: $accent;
+                  color: $smoke-white;
+                }
+              }
+
+              &.is-active {
+                background: darken($accent, 8%);
+                border-color: darken($accent, 2%);
+
+                &:hover {
+                  background: darken($accent, 8%);
                 }
 
                 svg {
-                  color: $accent;
+                  color: $smoke-white;
                 }
+
+                span {
+                  color: $smoke-white;
+                }
+              }
+
+              svg {
+                color: lighten($accent, 12%);
+              }
+
+              span {
+                color: lighten($accent, 12%);
               }
             }
           }
 
           .centered-drops {
             .centered-drop {
-              > .dropdown {
+              .dropdown {
                 &:hover {
                   .is-trigger {
                     .button {
-                      background: lighten($dark-sidebar, 2%);
-                      border-color: lighten($dark-sidebar, 2%);
+                      background: darken($accent, 8%);
+                      border-color: darken($accent, 4%);
+                      color: $smoke-white;
                     }
                   }
                 }
@@ -1425,8 +1606,9 @@ body {
                 &.is-active {
                   .is-trigger {
                     .button {
-                      background: lighten($dark-sidebar, 2%);
-                      border-color: lighten($dark-sidebar, 12%) !important;
+                      background: darken($accent, 8%);
+                      border-color: darken($accent, 6%);
+                      color: $smoke-white;
                     }
                   }
                 }
@@ -1486,27 +1668,85 @@ body {
 
                 .is-trigger {
                   .button {
-                    background: transparent;
-                    border: none;
+                    background: darken($accent, 2%);
+                    border-color: darken($accent, 2%);
+                    color: lighten($accent, 22%);
+
+                    svg {
+                      color: lighten($accent, 24%);
+                    }
                   }
+                }
+              }
+            }
+
+            .centered-button {
+              .button {
+                background: darken($accent, 2%) !important;
+                border-color: darken($accent, 2%) !important;
+                color: lighten($accent, 22%) !important;
+
+                &:hover {
+                  background: darken($accent, 8%) !important;
+                  color: $smoke-white !important;
                 }
               }
             }
           }
 
-          .centered-button {
-            > .button {
-              background: transparent !important;
-              border: none;
+          .centered-search {
+            .field {
+              .control {
+                .input {
+                  background: darken($accent, 10%);
+                  border-color: darken($accent, 6%);
+                  color: $smoke-white;
 
-              &:hover {
-                background: lighten($dark-sidebar, 3%) !important;
+                  &::placeholder {
+                    color: lighten($accent, 4%) !important;
+                  }
+
+                  &:focus ~ .form-icon svg {
+                    color: $smoke-white !important;
+                  }
+                }
+
+                .form-icon svg {
+                  color: lighten($accent, 6%);
+                }
               }
             }
           }
         }
 
         .right {
+          .toolbar {
+            .toolbar-link {
+              &:hover {
+                background: darken($accent, 10%) !important;
+                border-color: darken($accent, 6%) !important;
+              }
+
+              > svg {
+                color: $smoke-white;
+              }
+            }
+
+            .dropdown {
+              &:hover,
+              &.is-active {
+                .is-trigger {
+                  background: darken($accent, 10%) !important;
+                  border-color: darken($accent, 6%) !important;
+                }
+              }
+
+              .is-trigger svg {
+                color: $smoke-white;
+              }
+            }
+          }
+
           .profile-dropdown {
             .dropdown-menu {
               .dropdown-content {
@@ -1535,342 +1775,98 @@ body {
         }
       }
     }
+  }
 
-    .webapp-navbar {
-      &.is-colored {
-        background: darken($accent, 2%);
+  .webapp-subnavbar {
+    background: lighten($dark-sidebar, 2%);
+    border-color: lighten($dark-sidebar, 4%);
 
-        .webapp-navbar-inner {
-          .left {
-            .separator {
-              border-color: lighten($accent, 3%);
-            }
-
-            .title {
-              color: $smoke-white !important;
-            }
-          }
-
-          .center {
-            .centered-links {
-              .centered-link {
-                &:hover {
-                  background: darken($accent, 5%);
-
-                  svg {
-                    color: $smoke-white;
-                  }
-
-                  span {
-                    color: $smoke-white;
-                  }
-                }
-
-                &.is-active {
-                  background: darken($accent, 8%);
-                  border-color: darken($accent, 2%);
-
-                  &:hover {
-                    background: darken($accent, 8%);
-                  }
-
-                  svg {
-                    color: $smoke-white;
-                  }
-
-                  span {
-                    color: $smoke-white;
-                  }
-                }
-
-                svg {
-                  color: lighten($accent, 12%);
-                }
-
-                span {
-                  color: lighten($accent, 12%);
-                }
-              }
-            }
-
-            .centered-drops {
-              .centered-drop {
-                .dropdown {
-                  &:hover {
-                    .is-trigger {
-                      .button {
-                        background: darken($accent, 8%);
-                        border-color: darken($accent, 4%);
-                        color: $smoke-white;
-                      }
-                    }
-                  }
-
-                  &.is-active {
-                    .is-trigger {
-                      .button {
-                        background: darken($accent, 8%);
-                        border-color: darken($accent, 6%);
-                        color: $smoke-white;
-                      }
-                    }
-                  }
-
-                  &.has-mega-dropdown {
-                    .dropdown-menu {
-                      .dropdown-content {
-                        .category-selector {
-                          .title-wrap {
-                            h4 {
-                              color: $dark-dark-text;
-                            }
-                          }
-
-                          .category-selector-inner {
-                            .category-item {
-                              background: lighten($dark-sidebar, 4%);
-                              border-color: lighten($dark-sidebar, 12%);
-
-                              &:hover {
-                                i,
-                                span {
-                                  color: $accent;
-                                }
-                              }
-
-                              span {
-                                color: $dark-dark-text;
-                              }
-                            }
-                          }
-                        }
-
-                        .mega-menus {
-                          .dropdown-item-group {
-                            .column-heading {
-                              color: $dark-dark-text;
-                              border-color: lighten($dark-sidebar, 12%);
-                            }
-
-                            .column-content {
-                              .is-media {
-                                &:hover {
-                                  .meta {
-                                    span:first-child {
-                                      color: $smoke-white;
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-
-                  .is-trigger {
-                    .button {
-                      background: darken($accent, 2%);
-                      border-color: darken($accent, 2%);
-                      color: lighten($accent, 22%);
-
-                      svg {
-                        color: lighten($accent, 24%);
-                      }
-                    }
-                  }
-                }
-              }
-
-              .centered-button {
-                .button {
-                  background: darken($accent, 2%) !important;
-                  border-color: darken($accent, 2%) !important;
-                  color: lighten($accent, 22%) !important;
-
-                  &:hover {
-                    background: darken($accent, 8%) !important;
-                    color: $smoke-white !important;
-                  }
-                }
-              }
-            }
-
-            .centered-search {
-              .field {
-                .control {
-                  .input {
-                    background: darken($accent, 10%);
-                    border-color: darken($accent, 6%);
-                    color: $smoke-white;
-
-                    &::placeholder {
-                      color: lighten($accent, 4%) !important;
-                    }
-
-                    &:focus ~ .form-icon svg {
-                      color: $smoke-white !important;
-                    }
-                  }
-
-                  .form-icon svg {
-                    color: lighten($accent, 6%);
-                  }
-                }
-              }
-            }
-          }
-
-          .right {
-            .toolbar {
-              .toolbar-link {
-                &:hover {
-                  background: darken($accent, 10%) !important;
-                  border-color: darken($accent, 6%) !important;
-                }
-
-                > svg {
-                  color: $smoke-white;
-                }
-              }
-
-              .dropdown {
-                &:hover,
-                &.is-active {
-                  .is-trigger {
-                    background: darken($accent, 10%) !important;
-                    border-color: darken($accent, 6%) !important;
-                  }
-                }
-
-                .is-trigger svg {
-                  color: $smoke-white;
-                }
-              }
-            }
-
-            .profile-dropdown {
-              .dropdown-menu {
-                .dropdown-content {
-                  .dropdown-head {
-                    background: lighten($dark-sidebar, 2%) !important;
-
-                    &:hover {
-                      background: lighten($dark-sidebar, 2%) !important;
-                    }
-
-                    .meta {
-                      &:hover {
-                        background: lighten($dark-sidebar, 2%) !important;
-                      }
-
-                      span {
-                        &:first-child {
-                          color: $dark-dark-text !important;
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-
-    .webapp-subnavbar {
-      background: lighten($dark-sidebar, 2%);
-      border-color: lighten($dark-sidebar, 4%);
-
-      .webapp-subnavbar-inner {
-        .tabs {
-          li {
-            &.is-active {
-              a {
-                border-color: lighten($dark-sidebar, 12%);
-                background: darken($dark-sidebar, 2%);
-                color: $accent;
-                opacity: 1;
-              }
-
-              &:hover {
-                a {
-                  background: darken($dark-sidebar, 2%);
-                }
-              }
-            }
-
-            .router-link-exact-active {
+    .webapp-subnavbar-inner {
+      .tabs {
+        li {
+          &.is-active {
+            a {
               border-color: lighten($dark-sidebar, 12%);
               background: darken($dark-sidebar, 2%);
               color: $accent;
               opacity: 1;
-
-              &:hover {
-                background: darken($dark-sidebar, 2%);
-              }
             }
 
             &:hover {
               a {
-                background: lighten($dark-sidebar, 8%);
+                background: darken($dark-sidebar, 2%);
               }
-            }
-
-            a {
-              opacity: 0.6;
             }
           }
-        }
 
-        .tab-content {
-          .tab-content-inner {
-            .center {
-              .column {
-                border-color: lighten($dark-sidebar, 12%);
+          .router-link-exact-active {
+            border-color: lighten($dark-sidebar, 12%);
+            background: darken($dark-sidebar, 2%);
+            color: $accent;
+            opacity: 1;
+
+            &:hover {
+              background: darken($dark-sidebar, 2%);
+            }
+          }
+
+          &:hover {
+            a {
+              background: lighten($dark-sidebar, 8%);
+            }
+          }
+
+          a {
+            opacity: 0.6;
+          }
+        }
+      }
+
+      .tab-content {
+        .tab-content-inner {
+          .center {
+            .column {
+              border-color: lighten($dark-sidebar, 12%);
+            }
+
+            .column-heading {
+              color: $dark-dark-text;
+            }
+
+            .column-placeholder {
+              &:hover {
+                border-color: $accent;
+
+                h3 {
+                  color: $accent;
+                }
               }
 
-              .column-heading {
+              h3 {
                 color: $dark-dark-text;
               }
+            }
 
-              .column-placeholder {
+            ul {
+              li {
                 &:hover {
-                  border-color: $accent;
-
-                  h3 {
+                  a {
+                    opacity: 1;
                     color: $accent;
                   }
                 }
 
-                h3 {
-                  color: $dark-dark-text;
-                }
-              }
-
-              ul {
-                li {
-                  &:hover {
-                    a {
-                      opacity: 1;
-                      color: $accent;
-                    }
-                  }
-
-                  &.is-active {
-                    border-color: $accent;
-
-                    a {
-                      opacity: 1;
-                      color: $accent;
-                    }
-                  }
+                &.is-active {
+                  border-color: $accent;
 
                   a {
-                    opacity: 0.6;
+                    opacity: 1;
+                    color: $accent;
                   }
+                }
+
+                a {
+                  opacity: 0.6;
                 }
               }
             }

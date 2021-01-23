@@ -139,28 +139,26 @@ Search UI Elements
 2. Search Results Page Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .search-results-wrapper {
-      .search-results-body {
-        .filter-box {
-          @include vuero-card--dark();
-        }
+.is-dark {
+  .search-results-wrapper {
+    .search-results-body {
+      .filter-box {
+        @include vuero-card--dark();
+      }
 
-        .search-results-group {
-          .search-results-list {
-            .search-results-item {
-              @include vuero-card--dark();
-            }
+      .search-results-group {
+        .search-results-list {
+          .search-results-item {
+            @include vuero-card--dark();
           }
-          .group-header {
-            border-color: lighten($dark-sidebar, 20%);
+        }
+        .group-header {
+          border-color: lighten($dark-sidebar, 20%);
 
-            .icon-wrap {
-              background: lighten($dark-sidebar, 2%);
-              border-color: $accent;
-              color: $accent;
-            }
+          .icon-wrap {
+            background: lighten($dark-sidebar, 2%);
+            border-color: $accent;
+            color: $accent;
           }
         }
       }

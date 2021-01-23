@@ -111,38 +111,36 @@
 4. Dark helpers
 ========================================================================== */
 
-body {
-  &.is-dark {
-    //Card border helper
-    .is-dark-card-bordered,
-    .is-dark-bordered-12 {
-      border-color: lighten($dark-sidebar, 12%) !important;
-    }
+.is-dark {
+  //Card border helper
+  .is-dark-card-bordered,
+  .is-dark-bordered-12 {
+    border-color: lighten($dark-sidebar, 12%) !important;
+  }
 
-    //Primary Helper
-    .is-dark-primary {
-      color: $accent !important;
-    }
+  //Primary Helper
+  .is-dark-primary {
+    color: $accent !important;
+  }
 
-    .is-dark-primary-hover:hover {
-      color: $accent !important;
-    }
+  .is-dark-primary-hover:hover {
+    color: $accent !important;
+  }
 
-    //BG Helpers
-    .is-dark-bg-2 {
-      background: lighten($dark-sidebar, 2%) !important;
-    }
+  //BG Helpers
+  .is-dark-bg-2 {
+    background: lighten($dark-sidebar, 2%) !important;
+  }
 
-    .is-dark-bg-3 {
-      background: lighten($dark-sidebar, 3%) !important;
-    }
+  .is-dark-bg-3 {
+    background: lighten($dark-sidebar, 3%) !important;
+  }
 
-    .is-dark-bg-4 {
-      background: lighten($dark-sidebar, 4%) !important;
-    }
+  .is-dark-bg-4 {
+    background: lighten($dark-sidebar, 4%) !important;
+  }
 
-    .is-dark-bg-6 {
-      background: lighten($dark-sidebar, 6%) !important;
-    }
+  .is-dark-bg-6 {
+    background: lighten($dark-sidebar, 6%) !important;
   }
 }

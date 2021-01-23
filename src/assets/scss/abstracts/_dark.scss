@@ -8,46 +8,43 @@
 1. Layout Dark mode
 ========================================================================== */
 
-html,
-body {
-  &.is-dark {
+.is-dark {
+  background: lighten($dark-sidebar, 10%);
+
+  &.is-chat-side-collapsed {
+    background: lighten($dark-sidebar, 5%) !important;
+  }
+
+  &.opened {
+    background: lighten($dark-sidebar, 5%);
+  }
+
+  .pageloader {
     background: lighten($dark-sidebar, 10%);
+  }
 
-    &.is-chat-side-collapsed {
-      background: lighten($dark-sidebar, 5%) !important;
-    }
+  .infraloader {
+    background: lighten($dark-sidebar, 15%) !important;
+  }
 
-    &.opened {
-      background: lighten($dark-sidebar, 5%);
+  .page-title {
+    h1 {
+      color: lighten($accent-grey, 3%);
     }
+  }
 
-    .pageloader {
-      background: lighten($dark-sidebar, 10%);
-    }
+  .menu-toggle i {
+    background: $accent;
+  }
 
-    .infraloader {
-      background: lighten($dark-sidebar, 15%) !important;
-    }
+  .view-wrapper,
+  .minimal-wrapper {
+    background: lighten($dark-sidebar, 10%);
+    border-color: lighten($dark-sidebar, 10%);
+  }
 
-    .page-title {
-      h1 {
-        color: lighten($accent-grey, 3%);
-      }
-    }
-
-    .menu-toggle i {
-      background: $accent;
-    }
-
-    .view-wrapper,
-    .minimal-wrapper {
-      background: lighten($dark-sidebar, 10%);
-      border-color: lighten($dark-sidebar, 10%);
-    }
-
-    .zoom-overlay {
-      background: lighten($dark-sidebar, 10%);
-      border-color: lighten($dark-sidebar, 10%);
-    }
+  .zoom-overlay {
+    background: lighten($dark-sidebar, 10%);
+    border-color: lighten($dark-sidebar, 10%);
   }
 }

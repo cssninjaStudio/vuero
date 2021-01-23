@@ -121,46 +121,44 @@
 3. Inputs and textareas dark-mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .input,
-    .textarea {
-      background-color: lighten($dark-sidebar, 2%);
-      border-color: lighten($dark-sidebar, 4%);
-      color: $dark-dark-text;
+.is-dark {
+  .input,
+  .textarea {
+    background-color: lighten($dark-sidebar, 2%);
+    border-color: lighten($dark-sidebar, 4%);
+    color: $dark-dark-text;
 
-      &:hover {
-        border-color: lighten($dark-sidebar, 12%);
+    &:hover {
+      border-color: lighten($dark-sidebar, 12%);
+    }
+
+    &:focus {
+      border-color: lighten($dark-sidebar, 8%);
+
+      + .form-icon svg {
+        color: $accent !important;
       }
+    }
 
+    &::-webkit-input-placeholder {
+      color: darken($accent-grey, 30%) !important;
+    }
+
+    &::-moz-placeholder {
+      color: darken($accent-grey, 30%) !important;
+    }
+
+    &:-ms-input-placeholder {
+      color: darken($accent-grey, 30%) !important;
+    }
+
+    &:-moz-placeholder {
+      color: darken($accent-grey, 30%) !important;
+    }
+
+    &.is-primary-focus {
       &:focus {
-        border-color: lighten($dark-sidebar, 8%);
-
-        + .form-icon svg {
-          color: $accent !important;
-        }
-      }
-
-      &::-webkit-input-placeholder {
-        color: darken($accent-grey, 30%) !important;
-      }
-
-      &::-moz-placeholder {
-        color: darken($accent-grey, 30%) !important;
-      }
-
-      &:-ms-input-placeholder {
-        color: darken($accent-grey, 30%) !important;
-      }
-
-      &:-moz-placeholder {
-        color: darken($accent-grey, 30%) !important;
-      }
-
-      &.is-primary-focus {
-        &:focus {
-          border-color: $accent !important;
-        }
+        border-color: $accent !important;
       }
     }
   }
@@ -633,97 +631,95 @@ select {
 5. Fieldset | Field | Controls Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .form-fieldset {
-      .fieldset-heading {
-        h4 {
-          color: $dark-dark-text;
-        }
-      }
-    }
-
-    .field {
-      &.has-textarea-addon {
-        .textarea {
-          border-color: lighten($dark-sidebar, 4%) !important;
-        }
-
-        .is-textarea-addon {
-          background-color: lighten($dark-sidebar, 2%);
-          border-color: lighten($dark-sidebar, 4%);
-        }
-      }
-    }
-
-    .control {
-      &.has-icon {
-        .input {
-          &:focus {
-            ~ .form-icon {
-              svg {
-                color: $accent;
-              }
-
-              .fas,
-              .fal,
-              .far,
-              .fab,
-              .lnir,
-              .lnil {
-                color: $accent;
-              }
-            }
-          }
-        }
-
-        .form-icon {
-          svg {
-            color: darken($light-text, 5%);
-          }
-
-          .fas,
-          .fal,
-          .far,
-          .fab,
-          .lnir,
-          .lnil {
-            color: darken($light-text, 5%);
-          }
-        }
-      }
-    }
-
-    .select {
-      &:not(.is-multiple):not(.is-loading) {
-        &:hover {
-          &::after {
-            border-color: $dark-dark-text !important;
-          }
-        }
-      }
-
-      select {
-        background-color: lighten($dark-sidebar, 10%);
-        border-color: lighten($dark-sidebar, 12%) !important;
+.is-dark {
+  .form-fieldset {
+    .fieldset-heading {
+      h4 {
         color: $dark-dark-text;
       }
     }
+  }
 
-    .search-results {
-      background: darken($dark-sidebar, 2%);
-      border-color: lighten($dark-sidebar, 4%) !important;
+  .field {
+    &.has-textarea-addon {
+      .textarea {
+        border-color: lighten($dark-sidebar, 4%) !important;
+      }
 
-      .search-result {
-        &:hover {
-          background: lighten($dark-sidebar, 2%);
+      .is-textarea-addon {
+        background-color: lighten($dark-sidebar, 2%);
+        border-color: lighten($dark-sidebar, 4%);
+      }
+    }
+  }
+
+  .control {
+    &.has-icon {
+      .input {
+        &:focus {
+          ~ .form-icon {
+            svg {
+              color: $accent;
+            }
+
+            .fas,
+            .fal,
+            .far,
+            .fab,
+            .lnir,
+            .lnil {
+              color: $accent;
+            }
+          }
+        }
+      }
+
+      .form-icon {
+        svg {
+          color: darken($light-text, 5%);
         }
 
-        .meta {
-          span {
-            &:first-child {
-              color: $dark-dark-text;
-            }
+        .fas,
+        .fal,
+        .far,
+        .fab,
+        .lnir,
+        .lnil {
+          color: darken($light-text, 5%);
+        }
+      }
+    }
+  }
+
+  .select {
+    &:not(.is-multiple):not(.is-loading) {
+      &:hover {
+        &::after {
+          border-color: $dark-dark-text !important;
+        }
+      }
+    }
+
+    select {
+      background-color: lighten($dark-sidebar, 10%);
+      border-color: lighten($dark-sidebar, 12%) !important;
+      color: $dark-dark-text;
+    }
+  }
+
+  .search-results {
+    background: darken($dark-sidebar, 2%);
+    border-color: lighten($dark-sidebar, 4%) !important;
+
+    .search-result {
+      &:hover {
+        background: lighten($dark-sidebar, 2%);
+      }
+
+      .meta {
+        span {
+          &:first-child {
+            color: $dark-dark-text;
           }
         }
       }
@@ -1060,30 +1056,28 @@ body {
 8. Autocomplete Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .is-autocomplete {
-      .easy-autocomplete-container {
-        > ul {
-          background: $dark-sidebar;
+.is-dark {
+  .is-autocomplete {
+    .easy-autocomplete-container {
+      > ul {
+        background: $dark-sidebar;
+        border-color: lighten($dark-sidebar, 8%);
+
+        li {
           border-color: lighten($dark-sidebar, 8%);
 
-          li {
-            border-color: lighten($dark-sidebar, 8%);
+          &.selected {
+            background-color: lighten($dark-sidebar, 3%);
+          }
 
-            &.selected {
-              background-color: lighten($dark-sidebar, 3%);
-            }
+          .eac-item {
+            .template-wrapper {
+              .entry-text {
+                color: $dark-text;
 
-            .eac-item {
-              .template-wrapper {
-                .entry-text {
-                  color: $dark-text;
-
-                  span {
-                    &:first-child {
-                      color: $dark-dark-text;
-                    }
+                span {
+                  &:first-child {
+                    color: $dark-dark-text;
                   }
                 }
               }
@@ -1240,86 +1234,84 @@ body {
 14. Switch Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .form-switch {
-      &.is-primary {
-        input {
-          &:checked + i {
-            background-color: $accent !important;
-
-            &::after {
-              background: $white !important;
-            }
-          }
-        }
-      }
-
-      &.is-success {
-        input {
-          &:checked + i {
-            background-color: $success !important;
-
-            &::after {
-              background: $white !important;
-            }
-          }
-        }
-      }
-
-      &.is-info {
-        input {
-          &:checked + i {
-            background-color: $info !important;
-
-            &::after {
-              background: $white !important;
-            }
-          }
-        }
-      }
-
-      &.is-warning {
-        input {
-          &:checked + i {
-            background-color: $warning !important;
-
-            &::after {
-              background: $white !important;
-            }
-          }
-        }
-      }
-
-      &.is-danger {
-        input {
-          &:checked + i {
-            background-color: $danger !important;
-
-            &::after {
-              background: $white !important;
-            }
-          }
-        }
-      }
-
-      i {
-        background: $dark-sidebar !important;
-
-        &::before {
-          background: $dark-sidebar !important;
-        }
-
-        &::after {
-          background: lighten($dark-sidebar, 22%) !important;
-        }
-      }
-
+.is-dark {
+  .form-switch {
+    &.is-primary {
       input {
         &:checked + i {
+          background-color: $accent !important;
+
           &::after {
-            background: lighten($dark-sidebar, 55%) !important;
+            background: $white !important;
           }
+        }
+      }
+    }
+
+    &.is-success {
+      input {
+        &:checked + i {
+          background-color: $success !important;
+
+          &::after {
+            background: $white !important;
+          }
+        }
+      }
+    }
+
+    &.is-info {
+      input {
+        &:checked + i {
+          background-color: $info !important;
+
+          &::after {
+            background: $white !important;
+          }
+        }
+      }
+    }
+
+    &.is-warning {
+      input {
+        &:checked + i {
+          background-color: $warning !important;
+
+          &::after {
+            background: $white !important;
+          }
+        }
+      }
+    }
+
+    &.is-danger {
+      input {
+        &:checked + i {
+          background-color: $danger !important;
+
+          &::after {
+            background: $white !important;
+          }
+        }
+      }
+    }
+
+    i {
+      background: $dark-sidebar !important;
+
+      &::before {
+        background: $dark-sidebar !important;
+      }
+
+      &::after {
+        background: lighten($dark-sidebar, 22%) !important;
+      }
+    }
+
+    input {
+      &:checked + i {
+        &::after {
+          background: lighten($dark-sidebar, 55%) !important;
         }
       }
     }
@@ -1461,69 +1453,67 @@ body {
 14. Thin Switch Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .thin-switch {
-      &.is-primary {
-        .input:checked ~ .slider {
-          background: lighten($accent, 20%);
-
-          &::after {
-            background: $accent;
-            border-color: $accent;
-          }
-        }
-      }
-
-      &.is-success {
-        .input:checked ~ .slider {
-          &::after {
-            background: $success;
-            border-color: $success;
-          }
-        }
-      }
-
-      &.is-info {
-        .input:checked ~ .slider {
-          &::after {
-            background: $info;
-            border-color: $info;
-          }
-        }
-      }
-
-      &.is-warning {
-        .input:checked ~ .slider {
-          &::after {
-            background: $warning;
-            border-color: $warning;
-          }
-        }
-      }
-
-      &.is-danger {
-        .input:checked ~ .slider {
-          &::after {
-            background: $danger;
-            border-color: $danger;
-          }
-        }
-      }
-
-      .slider {
-        background: $dark-sidebar;
+.is-dark {
+  .thin-switch {
+    &.is-primary {
+      .input:checked ~ .slider {
+        background: lighten($accent, 20%);
 
         &::after {
-          background: lighten($dark-sidebar, 22%);
+          background: $accent;
+          border-color: $accent;
         }
       }
+    }
 
+    &.is-success {
       .input:checked ~ .slider {
         &::after {
-          background: lighten($dark-sidebar, 55%);
-          border: lighten($dark-sidebar, 55%);
+          background: $success;
+          border-color: $success;
         }
+      }
+    }
+
+    &.is-info {
+      .input:checked ~ .slider {
+        &::after {
+          background: $info;
+          border-color: $info;
+        }
+      }
+    }
+
+    &.is-warning {
+      .input:checked ~ .slider {
+        &::after {
+          background: $warning;
+          border-color: $warning;
+        }
+      }
+    }
+
+    &.is-danger {
+      .input:checked ~ .slider {
+        &::after {
+          background: $danger;
+          border-color: $danger;
+        }
+      }
+    }
+
+    .slider {
+      background: $dark-sidebar;
+
+      &::after {
+        background: lighten($dark-sidebar, 22%);
+      }
+    }
+
+    .input:checked ~ .slider {
+      &::after {
+        background: lighten($dark-sidebar, 55%);
+        border: lighten($dark-sidebar, 55%);
       }
     }
   }
@@ -1640,21 +1630,19 @@ body {
 12. File inputs Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .file {
-      &:not(.is-primary):not(.is-success):not(.is-info):not(.is-warning):not(.is-danger) {
-        .file-cta {
-          background: lighten($dark-sidebar, 10%);
-          border-color: lighten($dark-sidebar, 12%);
-          color: $dark-dark-text;
-        }
+.is-dark {
+  .file {
+    &:not(.is-primary):not(.is-success):not(.is-info):not(.is-warning):not(.is-danger) {
+      .file-cta {
+        background: lighten($dark-sidebar, 10%);
+        border-color: lighten($dark-sidebar, 12%);
+        color: $dark-dark-text;
       }
+    }
 
-      .file-name {
-        background-color: lighten($dark-sidebar, 2%);
-        border-color: lighten($dark-sidebar, 4%);
-      }
+    .file-name {
+      background-color: lighten($dark-sidebar, 2%);
+      border-color: lighten($dark-sidebar, 4%);
     }
   }
 }
@@ -1749,27 +1737,25 @@ body {
 14. Filepond Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .filepond-uploader,
-    .filepond-profile-wrap,
-    .filepond-square-wrap {
-      &:hover {
-        .lnil {
-          color: $accent;
-        }
+.is-dark {
+  .filepond-uploader,
+  .filepond-profile-wrap,
+  .filepond-square-wrap {
+    &:hover {
+      .lnil {
+        color: $accent;
       }
+    }
 
-      .filepond--root {
-        border-color: lighten($dark-sidebar, 12%);
-      }
+    .filepond--root {
+      border-color: lighten($dark-sidebar, 12%);
+    }
 
-      .filepond--drop-label {
-        background: lighten($dark-sidebar, 2%);
+    .filepond--drop-label {
+      background: lighten($dark-sidebar, 2%);
 
-        label {
-          color: $dark-dark-text;
-        }
+      label {
+        color: $dark-dark-text;
       }
     }
   }
@@ -1834,41 +1820,39 @@ body {
 16. Choices Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .choices {
-      &.is-focused {
-        .choices__inner {
-          border-color: lighten($dark-sidebar, 8%);
-        }
+.is-dark {
+  .choices {
+    &.is-focused {
+      .choices__inner {
+        border-color: lighten($dark-sidebar, 8%);
+      }
+    }
+
+    .choices__inner {
+      background-color: lighten($dark-sidebar, 2%);
+      border-color: lighten($dark-sidebar, 4%);
+
+      input {
+        background-color: lighten($dark-sidebar, 2%);
+        color: $dark-dark-text;
       }
 
-      .choices__inner {
-        background-color: lighten($dark-sidebar, 2%);
-        border-color: lighten($dark-sidebar, 4%);
-
-        input {
-          background-color: lighten($dark-sidebar, 2%);
+      .choices__list {
+        .choices__item {
+          background-color: lighten($dark-sidebar, 8%);
+          border-color: lighten($dark-sidebar, 8%);
           color: $dark-dark-text;
         }
-
-        .choices__list {
-          .choices__item {
-            background-color: lighten($dark-sidebar, 8%);
-            border-color: lighten($dark-sidebar, 8%);
-            color: $dark-dark-text;
-          }
-        }
       }
+    }
 
-      .choices__list--dropdown {
-        background-color: lighten($dark-sidebar, 2%);
-        border-color: lighten($dark-sidebar, 4%);
+    .choices__list--dropdown {
+      background-color: lighten($dark-sidebar, 2%);
+      border-color: lighten($dark-sidebar, 4%);
 
-        .choices__item {
-          &.is-highlighted {
-            background-color: darken($dark-sidebar, 2%);
-          }
+      .choices__item {
+        &.is-highlighted {
+          background-color: darken($dark-sidebar, 2%);
         }
       }
     }

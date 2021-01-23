@@ -303,55 +303,53 @@
 2. Flex Table Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .flex-table {
-      .flex-table-item {
-        background: lighten($dark-sidebar, 6%);
-        border-color: lighten($dark-sidebar, 12%);
+.is-dark {
+  .flex-table {
+    .flex-table-item {
+      background: lighten($dark-sidebar, 6%);
+      border-color: lighten($dark-sidebar, 12%);
 
-        .flex-table-cell {
-          &.is-user,
-          &.is-media {
-            .h-avatar {
-              .badge {
+      .flex-table-cell {
+        &.is-user,
+        &.is-media {
+          .h-avatar {
+            .badge {
+              border-color: lighten($dark-sidebar, 6%) !important;
+            }
+          }
+        }
+
+        &.cell-end {
+          .button {
+            &.dark-outlined {
+              &:hover {
+                border-color: $accent !important;
+                color: $accent !important;
+              }
+            }
+          }
+        }
+
+        .dark-text {
+          color: $dark-dark-text !important;
+        }
+
+        .avatar-stack {
+          .h-avatar {
+            border-color: lighten($dark-sidebar, 6%);
+
+            .is-more {
+              .inner {
                 border-color: lighten($dark-sidebar, 6%) !important;
               }
             }
           }
+        }
 
-          &.cell-end {
-            .button {
-              &.dark-outlined {
-                &:hover {
-                  border-color: $accent !important;
-                  color: $accent !important;
-                }
-              }
-            }
-          }
-
-          .dark-text {
-            color: $dark-dark-text !important;
-          }
-
-          .avatar-stack {
-            .h-avatar {
-              border-color: lighten($dark-sidebar, 6%);
-
-              .is-more {
-                .inner {
-                  border-color: lighten($dark-sidebar, 6%) !important;
-                }
-              }
-            }
-          }
-
-          .dot-levels {
-            .dot {
-              &.active {
-                color: $accent;
-              }
+        .dot-levels {
+          .dot {
+            &.active {
+              color: $accent;
             }
           }
         }
@@ -405,33 +403,31 @@ body {
 4. Table Pagination Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .flex-pagination {
-      .pagination-next,
-      .pagination-previous {
-        background: lighten($dark-sidebar, 2%);
-        border-color: lighten($dark-sidebar, 4%);
-        color: $dark-dark-text;
+.is-dark {
+  .flex-pagination {
+    .pagination-next,
+    .pagination-previous {
+      background: lighten($dark-sidebar, 2%);
+      border-color: lighten($dark-sidebar, 4%);
+      color: $dark-dark-text;
 
-        svg {
-          color: $accent;
-        }
+      svg {
+        color: $accent;
       }
+    }
 
-      .pagination-list {
-        li {
-          .pagination-link {
-            background: lighten($dark-sidebar, 2%);
-            border-color: lighten($dark-sidebar, 4%);
-            color: $dark-dark-text;
+    .pagination-list {
+      li {
+        .pagination-link {
+          background: lighten($dark-sidebar, 2%);
+          border-color: lighten($dark-sidebar, 4%);
+          color: $dark-dark-text;
 
-            &.is-current {
-              background: $accent;
-              color: $smoke-white;
-              border-color: $accent;
-              box-shadow: $accent-box-shadow;
-            }
+          &.is-current {
+            background: $accent;
+            color: $smoke-white;
+            border-color: $accent;
+            box-shadow: $accent-box-shadow;
           }
         }
       }
@@ -476,12 +472,10 @@ body {
 6. Flex Table advanced wrapper Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .flex-table-wrapper {
-      background: lighten($dark-sidebar, 6%);
-      border-color: lighten($dark-sidebar, 12%);
-    }
+.is-dark {
+  .flex-table-wrapper {
+    background: lighten($dark-sidebar, 6%);
+    border-color: lighten($dark-sidebar, 12%);
   }
 }
 
@@ -537,42 +531,40 @@ body {
 8. Bulma Table Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .table {
-      background: lighten($dark-sidebar, 6%);
-      border-color: lighten($dark-sidebar, 12%);
+.is-dark {
+  .table {
+    background: lighten($dark-sidebar, 6%);
+    border-color: lighten($dark-sidebar, 12%);
 
-      &.is-hoverable {
-        tr:not(.is-selected) {
-          &:hover {
-            background: lighten($dark-sidebar, 9%);
-          }
+    &.is-hoverable {
+      tr:not(.is-selected) {
+        &:hover {
+          background: lighten($dark-sidebar, 9%);
         }
       }
+    }
 
-      &.is-striped {
-        tr:not(.is-selected) {
-          &:nth-child(even) {
-            background: lighten($dark-sidebar, 9%);
-          }
+    &.is-striped {
+      tr:not(.is-selected) {
+        &:nth-child(even) {
+          background: lighten($dark-sidebar, 9%);
         }
       }
+    }
 
-      tbody {
-        th,
-        td {
-          border-color: lighten($dark-sidebar, 12%);
-        }
+    tbody {
+      th,
+      td {
+        border-color: lighten($dark-sidebar, 12%);
+      }
 
-        th {
+      th {
+        color: $dark-dark-text;
+      }
+
+      td {
+        &:first-child {
           color: $dark-dark-text;
-        }
-
-        td {
-          &:first-child {
-            color: $dark-dark-text;
-          }
         }
       }
     }

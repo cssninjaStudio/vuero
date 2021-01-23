@@ -5,7 +5,7 @@ import { defineProps } from 'vue'
 const props = defineProps({
   activeTab: {
     type: String as PropType<'overview' | 'content' | 'brands'>,
-    required: true,
+    default: 'overview',
   },
 })
 </script>

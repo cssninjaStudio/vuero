@@ -197,28 +197,26 @@ $overlay-bg-dark: linear-gradient(
 2. Wrapper / Header Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .chat-app-wrapper {
-      .chat-app-header {
-        background: darken($dark-sidebar, 2%);
-        border-color: lighten($dark-sidebar, 2%);
+.is-dark {
+  .chat-app-wrapper {
+    .chat-app-header {
+      background: darken($dark-sidebar, 2%);
+      border-color: lighten($dark-sidebar, 2%);
 
-        .search-bar {
-          .field {
-            .control {
-              .input {
-                color: $dark-dark-text;
-              }
+      .search-bar {
+        .field {
+          .control {
+            .input {
+              color: $dark-dark-text;
             }
           }
         }
+      }
 
-        .user-settings {
-          .user-dropdown {
-            .dropdown-menu {
-              border-color: lighten($dark-sidebar, 12%);
-            }
+      .user-settings {
+        .user-dropdown {
+          .dropdown-menu {
+            border-color: lighten($dark-sidebar, 12%);
           }
         }
       }
@@ -330,32 +328,30 @@ body {
 4. Chat Conversations Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .chat-app-wrapper {
-      .wrapper {
-        .conversation-area {
-          background: lighten($dark-sidebar, 4%);
-          border-color: lighten($dark-sidebar, 12%);
+.is-dark {
+  .chat-app-wrapper {
+    .wrapper {
+      .conversation-area {
+        background: lighten($dark-sidebar, 4%);
+        border-color: lighten($dark-sidebar, 12%);
 
-          .overlay {
-            background: $overlay-bg-dark;
+        .overlay {
+          background: $overlay-bg-dark;
+        }
+
+        .conversation {
+          &:hover {
+            background: lighten($dark-sidebar, 6%);
           }
 
-          .conversation {
-            &:hover {
-              background: lighten($dark-sidebar, 6%);
-            }
+          &.active {
+            background: lighten($dark-sidebar, 1%);
+            border-color: $accent;
+          }
 
-            &.active {
-              background: lighten($dark-sidebar, 1%);
-              border-color: $accent;
-            }
-
-            .conversation-detail {
-              .conversation-username {
-                color: $dark-dark-text;
-              }
+          .conversation-detail {
+            .conversation-username {
+              color: $dark-dark-text;
             }
           }
         }
@@ -719,108 +715,106 @@ body {
 6. Chat Messages Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .chat-app-wrapper {
-      .wrapper {
-        .chat-area {
+.is-dark {
+  .chat-app-wrapper {
+    .wrapper {
+      .chat-area {
+        background: lighten($dark-sidebar, 10%);
+        border-color: lighten($dark-sidebar, 12%);
+
+        .chat-area-header {
           background: lighten($dark-sidebar, 10%);
-          border-color: lighten($dark-sidebar, 12%);
 
-          .chat-area-header {
-            background: lighten($dark-sidebar, 10%);
+          .trigger {
+            svg {
+              color: $dark-dark-text;
+            }
+          }
 
-            .trigger {
-              svg {
+          .chat-area-title {
+            color: $dark-dark-text;
+          }
+
+          .chat-area-group {
+            img {
+              border-color: lighten($dark-sidebar, 10%);
+            }
+
+            > span {
+              border-color: lighten($dark-sidebar, 10%);
+              color: darken($accent, 5%);
+              background: lighten($accent, 20%);
+            }
+          }
+        }
+
+        .chat-area-main {
+          .chat-msg {
+            &.owner {
+              .chat-msg-content {
+                .chat-msg-text {
+                  background: darken($accent, 4%);
+                  color: $smoke-white;
+                }
+              }
+            }
+
+            .chat-msg-content {
+              .chat-msg-text {
+                background: lighten($dark-sidebar, 6%);
                 color: $dark-dark-text;
               }
             }
-
-            .chat-area-title {
-              color: $dark-dark-text;
-            }
-
-            .chat-area-group {
-              img {
-                border-color: lighten($dark-sidebar, 10%);
-              }
-
-              > span {
-                border-color: lighten($dark-sidebar, 10%);
-                color: darken($accent, 5%);
-                background: lighten($accent, 20%);
-              }
-            }
           }
+        }
 
-          .chat-area-main {
-            .chat-msg {
-              &.owner {
-                .chat-msg-content {
-                  .chat-msg-text {
-                    background: darken($accent, 4%);
-                    color: $smoke-white;
-                  }
-                }
-              }
+        .chat-area-footer {
+          background: lighten($dark-sidebar, 10%);
+          border-color: lighten($dark-sidebar, 12%);
 
-              .chat-msg-content {
-                .chat-msg-text {
-                  background: lighten($dark-sidebar, 6%);
-                  color: $dark-dark-text;
+          .add-content .dropdown {
+            &:hover {
+              > div > .button {
+                background: lighten($dark-sidebar, 6%) !important;
+
+                svg {
+                  color: $accent;
                 }
               }
             }
-          }
 
-          .chat-area-footer {
-            background: lighten($dark-sidebar, 10%);
-            border-color: lighten($dark-sidebar, 12%);
-
-            .add-content .dropdown {
-              &:hover {
-                > div > .button {
-                  background: lighten($dark-sidebar, 6%) !important;
-
-                  svg {
-                    color: $accent;
-                  }
-                }
-              }
-
-              .dropdown-menu {
-                .dropdown-content {
-                  .dropdown-item {
-                    .meta span {
-                      &:first-child {
-                        color: $dark-dark-text;
-                      }
+            .dropdown-menu {
+              .dropdown-content {
+                .dropdown-item {
+                  .meta span {
+                    &:first-child {
+                      color: $dark-dark-text;
                     }
                   }
                 }
               }
             }
+          }
 
-            .add-emoji {
-              &:hover {
-                .button {
-                  background: lighten($dark-sidebar, 6%) !important;
+          .add-emoji {
+            &:hover {
+              .button {
+                background: lighten($dark-sidebar, 6%) !important;
 
-                  svg {
-                    color: $accent;
-                  }
+                svg {
+                  color: $accent;
                 }
               }
             }
+          }
 
-            input {
-              background: lighten($dark-sidebar, 6%);
-              color: $dark-dark-text;
+          input {
+            background: lighten($dark-sidebar, 6%);
+            color: $dark-dark-text;
 
-              &:focus {
-                border-color: lighten($dark-sidebar, 12%);
-                background: lighten($dark-sidebar, 4%);
-              }
+            &:focus {
+              border-color: lighten($dark-sidebar, 12%);
+              background: lighten($dark-sidebar, 4%);
             }
           }
         }
@@ -939,23 +933,21 @@ body {
 8. Chat Details Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .chat-app-wrapper {
-      .wrapper {
-        .detail-area {
-          background: lighten($dark-sidebar, 4%);
-          border-color: lighten($dark-sidebar, 12%);
+.is-dark {
+  .chat-app-wrapper {
+    .wrapper {
+      .detail-area {
+        background: lighten($dark-sidebar, 4%);
+        border-color: lighten($dark-sidebar, 12%);
 
-          .chat-side-content {
-            .user-name {
-              color: $dark-dark-text;
-            }
+        .chat-side-content {
+          .user-name {
+            color: $dark-dark-text;
+          }
 
-            .detail-photos {
-              .view-more {
-                color: $accent;
-              }
+          .detail-photos {
+            .view-more {
+              color: $accent;
             }
           }
         }

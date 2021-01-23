@@ -558,24 +558,22 @@ body {
 7. Circular Menu Dark Mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .circular-menu {
-      &::after {
-        background: darken($dark-sidebar, 2%);
-        box-shadow: 0 4px 8px 0 hsla(0, 0%, 0%, 0.3) !important;
-      }
+.is-dark {
+  .circular-menu {
+    &::after {
+      background: darken($dark-sidebar, 2%);
+      box-shadow: 0 4px 8px 0 hsla(0, 0%, 0%, 0.3) !important;
+    }
 
-      &.active {
-        .floating-btn {
-          box-shadow: 0 4px 8px 0 hsla(0, 0%, 0%, 0.3) !important;
-        }
-      }
-
+    &.active {
       .floating-btn {
-        background: lighten($dark-sidebar, 2%);
         box-shadow: 0 4px 8px 0 hsla(0, 0%, 0%, 0.3) !important;
       }
+    }
+
+    .floating-btn {
+      background: lighten($dark-sidebar, 2%);
+      box-shadow: 0 4px 8px 0 hsla(0, 0%, 0%, 0.3) !important;
     }
   }
 }

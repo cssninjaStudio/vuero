@@ -5,11 +5,13 @@ state:
 
 ### Basic usage
 
-Vuero provides it's own subset of Bulma buttons. Use the `h-button` class with a Bulma native `button` class to start using Vuero buttons.  
+Vuero provides it's own subset of Bulma buttons. Use the `h-button` class with a Bulma native `button` class to start using Vuero buttons.
 
 #### Modifiers
 
 Basic modifiers such as `is-bold` and `is-rounded` are available.
+
+> this is a hint
 
 > toto
 
@@ -19,7 +21,7 @@ Basic modifiers such as `is-bold` and `is-rounded` are available.
 <script setup lang="ts">
 import { ref } from 'vue'
 
-const clicked =  ref(0)
+const clicked = ref(0)
 </script>
 
 <template>
@@ -41,7 +43,6 @@ const clicked =  ref(0)
 ```
 
 <!--/code-->
-
 
 <!--example-->
 

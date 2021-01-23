@@ -64,35 +64,33 @@
 2. Accordion Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .single-accordion {
-      background: lighten($dark-sidebar, 4%);
+.is-dark {
+  .single-accordion {
+    background: lighten($dark-sidebar, 4%);
+    border-color: lighten($dark-sidebar, 12%);
+
+    .accordion-header {
+      color: $dark-dark-text;
       border-color: lighten($dark-sidebar, 12%);
 
-      .accordion-header {
-        color: $dark-dark-text;
-        border-color: lighten($dark-sidebar, 12%);
-
-        &:hover {
-          background: lighten($dark-sidebar, 6%);
-        }
-
-        &::before {
-          background: $dark-sidebar;
-        }
-
-        &.is-active {
-          &::before {
-            background-color: $accent;
-          }
-        }
+      &:hover {
+        background: lighten($dark-sidebar, 6%);
       }
 
-      .accordion-content {
+      &::before {
         background: $dark-sidebar;
-        border-color: lighten($dark-sidebar, 8%);
       }
+
+      &.is-active {
+        &::before {
+          background-color: $accent;
+        }
+      }
+    }
+
+    .accordion-content {
+      background: $dark-sidebar;
+      border-color: lighten($dark-sidebar, 8%);
     }
   }
 }
@@ -184,29 +182,27 @@ body {
 4. Collapse Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .collapse {
-      @include vuero-card--dark();
+.is-dark {
+  .collapse {
+    @include vuero-card--dark();
 
-      &.is-active {
-        .collapse-header {
-          .collapse-icon {
-            background: lighten($dark-sidebar, 2%);
-            border-color: lighten($dark-sidebar, 4%) !important;
-          }
+    &.is-active {
+      .collapse-header {
+        .collapse-icon {
+          background: lighten($dark-sidebar, 2%);
+          border-color: lighten($dark-sidebar, 4%) !important;
         }
       }
+    }
 
-      .collapse-header {
-        h3 {
-          color: $dark-dark-text;
-        }
+    .collapse-header {
+      h3 {
+        color: $dark-dark-text;
+      }
 
-        .collapse-icon {
-          background: lighten($dark-sidebar, 6%);
-          border-color: lighten($dark-sidebar, 6%);
-        }
+      .collapse-icon {
+        background: lighten($dark-sidebar, 6%);
+        border-color: lighten($dark-sidebar, 6%);
       }
     }
   }

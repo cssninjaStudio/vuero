@@ -188,40 +188,38 @@
 3. H Modal Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .h-modal {
-      .modal-background {
-        background: rgba(101, 101, 104, 0.8) !important;
-      }
+.is-dark {
+  .h-modal {
+    .modal-background {
+      background: rgba(101, 101, 104, 0.8) !important;
+    }
 
-      .modal-content {
-        .modal-card {
-          .modal-card-head {
-            background: lighten($dark-sidebar, 6%) !important;
-            border-color: lighten($dark-sidebar, 12%);
+    .modal-content {
+      .modal-card {
+        .modal-card-head {
+          background: lighten($dark-sidebar, 6%) !important;
+          border-color: lighten($dark-sidebar, 12%);
 
-            h3 {
-              color: $dark-dark-text;
-            }
+          h3 {
+            color: $dark-dark-text;
+          }
 
-            .h-modal-close {
-              &:hover {
-                svg {
-                  color: $accent;
-                }
+          .h-modal-close {
+            &:hover {
+              svg {
+                color: $accent;
               }
             }
           }
+        }
 
-          .modal-card-body {
-            background: lighten($dark-sidebar, 6%) !important;
-          }
+        .modal-card-body {
+          background: lighten($dark-sidebar, 6%) !important;
+        }
 
-          .modal-card-foot {
-            background: lighten($dark-sidebar, 6%) !important;
-            border-color: lighten($dark-sidebar, 12%);
-          }
+        .modal-card-foot {
+          background: lighten($dark-sidebar, 6%) !important;
+          border-color: lighten($dark-sidebar, 12%);
         }
       }
     }

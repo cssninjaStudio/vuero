@@ -231,46 +231,44 @@
 3. Card Grid V1 Dark mode 
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .card-grid {
-      &.card-grid-v1 {
-        .card-grid-item {
-          background: lighten($dark-sidebar, 6%);
+.is-dark {
+  .card-grid {
+    &.card-grid-v1 {
+      .card-grid-item {
+        background: lighten($dark-sidebar, 6%);
+        border-color: lighten($dark-sidebar, 12%);
+
+        .card-grid-item-body {
           border-color: lighten($dark-sidebar, 12%);
 
-          .card-grid-item-body {
-            border-color: lighten($dark-sidebar, 12%);
-
-            .left {
-              .h-avatar {
-                .badge {
-                  border-color: lighten($dark-sidebar, 6%);
-                }
-              }
-            }
-
-            .right {
-              .social-links {
-                .social-link {
-                  background: lighten($dark-sidebar, 2%);
-                  border-color: lighten($dark-sidebar, 12%);
-                  color: $dark-dark-text;
-
-                  &:hover {
-                    border-color: $accent !important;
-                    color: $accent !important;
-                  }
-                }
+          .left {
+            .h-avatar {
+              .badge {
+                border-color: lighten($dark-sidebar, 6%);
               }
             }
           }
 
-          .card-grid-item-footer {
-            .right {
-              .h-button {
-                box-shadow: none !important;
+          .right {
+            .social-links {
+              .social-link {
+                background: lighten($dark-sidebar, 2%);
+                border-color: lighten($dark-sidebar, 12%);
+                color: $dark-dark-text;
+
+                &:hover {
+                  border-color: $accent !important;
+                  color: $accent !important;
+                }
               }
+            }
+          }
+        }
+
+        .card-grid-item-footer {
+          .right {
+            .h-button {
+              box-shadow: none !important;
             }
           }
         }
@@ -383,35 +381,33 @@ body {
 5. Card Grid V2 Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .card-grid {
-      &.card-grid-v2 {
-        .card-grid-item {
+.is-dark {
+  .card-grid {
+    &.card-grid-v2 {
+      .card-grid-item {
+        border-color: lighten($dark-sidebar, 12%);
+
+        .card {
+          background: lighten($dark-sidebar, 6%);
           border-color: lighten($dark-sidebar, 12%);
 
-          .card {
-            background: lighten($dark-sidebar, 6%);
+          .card-header {
+            border-color: lighten($dark-sidebar, 12%);
+          }
+
+          .card-content {
+            border-color: lighten($dark-sidebar, 12%);
+          }
+
+          .card-footer {
             border-color: lighten($dark-sidebar, 12%);
 
-            .card-header {
-              border-color: lighten($dark-sidebar, 12%);
-            }
-
-            .card-content {
-              border-color: lighten($dark-sidebar, 12%);
-            }
-
-            .card-footer {
+            a {
               border-color: lighten($dark-sidebar, 12%);
 
-              a {
-                border-color: lighten($dark-sidebar, 12%);
-
-                &:hover {
-                  background: lighten($dark-sidebar, 2%);
-                  color: $accent;
-                }
+              &:hover {
+                background: lighten($dark-sidebar, 2%);
+                color: $accent;
               }
             }
           }

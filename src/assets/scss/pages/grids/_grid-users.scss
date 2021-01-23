@@ -251,20 +251,18 @@
 3. Users Grid V2 Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .user-grid {
-      .grid-item {
-        @include vuero-card--dark();
-      }
+.is-dark {
+  .user-grid {
+    .grid-item {
+      @include vuero-card--dark();
+    }
 
-      &.user-grid-v2 {
-        .grid-item-wrap {
-          border-color: lighten($dark-sidebar, 12%);
+    &.user-grid-v2 {
+      .grid-item-wrap {
+        border-color: lighten($dark-sidebar, 12%);
 
-          .grid-item-head {
-            background: lighten($dark-sidebar, 4%);
-          }
+        .grid-item-head {
+          background: lighten($dark-sidebar, 4%);
         }
       }
     }
@@ -449,28 +447,28 @@ body {
 5. Users Grid V3 Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .user-grid {
-      &.user-grid-v3 {
-        .grid-item {
-          .icon-tabs-wrapper {
-            .icon-tabs {
-              background: lighten($dark-sidebar, 2%);
-              border-color: lighten($dark-sidebar, 10%);
+.is-dark {
+  .user-grid {
+    &.user-grid-v3 {
+      .grid-item {
+        @include vuero-card--dark();
 
-              .icon-tabs-inner {
-                .tab-item {
-                  border-color: lighten($dark-sidebar, 10%);
+        .icon-tabs-wrapper {
+          .icon-tabs {
+            background: lighten($dark-sidebar, 2%);
+            border-color: lighten($dark-sidebar, 10%);
 
-                  &.is-active {
-                    color: $accent;
-                  }
+            .icon-tabs-inner {
+              .tab-item {
+                border-color: lighten($dark-sidebar, 10%);
+
+                &.is-active {
+                  color: $accent;
                 }
+              }
 
-                .icon-tabs-naver {
-                  background: $accent;
-                }
+              .icon-tabs-naver {
+                background: $accent;
               }
             }
           }
@@ -561,6 +559,16 @@ body {
             }
           }
         }
+      }
+    }
+  }
+}
+
+.is-dark {
+  .user-grid {
+    &.user-grid-v4 {
+      .grid-item {
+        @include vuero-card--dark();
       }
     }
   }

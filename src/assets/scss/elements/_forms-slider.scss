@@ -296,90 +296,88 @@
 2. NoUI Slider Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .noUi-horizontal,
-    .noUi-vertical {
-      &.is-info {
-        .noUi-connect {
-          background: $info;
-        }
-
-        .noUi-tooltip {
-          background: $info;
-
-          &::after {
-            background: $info;
-          }
-        }
-      }
-
-      &.is-success {
-        .noUi-connect {
-          background: $success;
-        }
-
-        .noUi-tooltip {
-          background: $success;
-
-          &::after {
-            background: $success;
-          }
-        }
-      }
-
-      &.is-warning {
-        .noUi-connect {
-          background: $warning;
-        }
-
-        .noUi-tooltip {
-          background: $warning;
-
-          &::after {
-            background: $warning;
-          }
-        }
-      }
-
-      &.is-danger {
-        .noUi-connect {
-          background: $danger;
-        }
-
-        .noUi-tooltip {
-          background: $danger;
-
-          &::after {
-            background: $danger;
-          }
-        }
-      }
-
-      .noUi-connects {
-        background: lighten($dark-sidebar, 2%);
-      }
-
+.is-dark {
+  .noUi-horizontal,
+  .noUi-vertical {
+    &.is-info {
       .noUi-connect {
-        background-color: $accent;
-      }
-
-      .noUi-handle {
-        background: $dark-sidebar;
-        border-color: lighten($dark-sidebar, 12%);
-
-        &::before,
-        &::after {
-          background: lighten($dark-sidebar, 20%);
-        }
+        background: $info;
       }
 
       .noUi-tooltip {
-        background: $accent;
+        background: $info;
 
         &::after {
-          background: $accent;
+          background: $info;
         }
+      }
+    }
+
+    &.is-success {
+      .noUi-connect {
+        background: $success;
+      }
+
+      .noUi-tooltip {
+        background: $success;
+
+        &::after {
+          background: $success;
+        }
+      }
+    }
+
+    &.is-warning {
+      .noUi-connect {
+        background: $warning;
+      }
+
+      .noUi-tooltip {
+        background: $warning;
+
+        &::after {
+          background: $warning;
+        }
+      }
+    }
+
+    &.is-danger {
+      .noUi-connect {
+        background: $danger;
+      }
+
+      .noUi-tooltip {
+        background: $danger;
+
+        &::after {
+          background: $danger;
+        }
+      }
+    }
+
+    .noUi-connects {
+      background: lighten($dark-sidebar, 2%);
+    }
+
+    .noUi-connect {
+      background-color: $accent;
+    }
+
+    .noUi-handle {
+      background: $dark-sidebar;
+      border-color: lighten($dark-sidebar, 12%);
+
+      &::before,
+      &::after {
+        background: lighten($dark-sidebar, 20%);
+      }
+    }
+
+    .noUi-tooltip {
+      background: $accent;
+
+      &::after {
+        background: $accent;
       }
     }
   }

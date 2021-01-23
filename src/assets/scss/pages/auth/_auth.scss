@@ -330,61 +330,59 @@
 2. Login page Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .modern-login {
-      background: $dark-sidebar;
+.is-dark {
+  .modern-login {
+    background: $dark-sidebar;
 
-      .underlay {
-        background: lighten($dark-sidebar, 10%);
+    .underlay {
+      background: lighten($dark-sidebar, 10%);
+    }
+
+    .is-image {
+      border-color: lighten($dark-sidebar, 10%);
+    }
+
+    .is-form {
+      .form-text {
+        h2 {
+          color: $accent;
+        }
       }
 
-      .is-image {
-        border-color: lighten($dark-sidebar, 10%);
-      }
+      .login-wrapper {
+        .control {
+          &.is-flex {
+            a:hover {
+              color: $accent;
+            }
+          }
 
-      .is-form {
-        .form-text {
-          h2 {
-            color: $accent;
+          .input {
+            background: lighten($dark-sidebar, 4%);
+
+            &:focus {
+              border-color: $accent;
+
+              ~ .auth-icon {
+                i {
+                  color: $accent;
+                }
+              }
+            }
+          }
+
+          .auth-label {
+            color: $light-text;
           }
         }
 
-        .login-wrapper {
-          .control {
-            &.is-flex {
-              a:hover {
-                color: $accent;
-              }
-            }
-
-            .input {
-              background: lighten($dark-sidebar, 4%);
-
-              &:focus {
-                border-color: $accent;
-
-                ~ .auth-icon {
-                  i {
-                    color: $accent;
-                  }
-                }
-              }
-            }
-
-            .auth-label {
+        .button-wrap {
+          &.has-help {
+            span {
               color: $light-text;
-            }
-          }
 
-          .button-wrap {
-            &.has-help {
-              span {
-                color: $light-text;
-
-                a {
-                  color: $accent;
-                }
+              a {
+                color: $accent;
               }
             }
           }
@@ -497,25 +495,23 @@ body {
 3. Remember me toggle Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .remember-toggle {
-      input {
-        &:checked + .toggler {
-          border-color: $accent;
-
-          > span {
-            background: $accent;
-          }
-        }
-      }
-
-      .toggler {
-        border-color: lighten($dark-sidebar, 12%);
+.is-dark {
+  .remember-toggle {
+    input {
+      &:checked + .toggler {
+        border-color: $accent;
 
         > span {
-          background: lighten($dark-sidebar, 12%);
+          background: $accent;
         }
+      }
+    }
+
+    .toggler {
+      border-color: lighten($dark-sidebar, 12%);
+
+      > span {
+        background: lighten($dark-sidebar, 12%);
       }
     }
   }
@@ -1328,35 +1324,33 @@ body {
 7. Login / Signup v2 Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .auth-wrapper-inner {
-      .hero-banner {
-        background: lighten($dark-sidebar, 4%);
+.is-dark {
+  .auth-wrapper-inner {
+    .hero-banner {
+      background: lighten($dark-sidebar, 4%);
+    }
+
+    .hero {
+      &.is-white {
+        background: darken($dark-sidebar, 4%);
       }
 
-      .hero {
-        &.is-white {
-          background: darken($dark-sidebar, 4%);
-        }
+      .hero-body {
+        .auth-content {
+          h2 {
+            color: $dark-dark-text;
+          }
 
-        .hero-body {
-          .auth-content {
-            h2 {
-              color: $dark-dark-text;
-            }
-
-            a {
-              color: $accent;
-            }
+          a {
+            color: $accent;
           }
         }
       }
+    }
 
-      .forgot-link {
-        a:hover {
-          color: $accent;
-        }
+    .forgot-link {
+      a:hover {
+        color: $accent;
       }
     }
   }
@@ -1468,28 +1462,26 @@ body {
 9. Login / Signup v3 Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .auth-wrapper-inner {
-      &.is-single {
-        background: lighten($dark-sidebar, 4%);
+.is-dark {
+  .auth-wrapper-inner {
+    &.is-single {
+      background: lighten($dark-sidebar, 4%);
 
-        .single-form-wrap {
-          .inner-wrap {
-            .auth-head {
-              h2 {
-                color: $dark-dark-text;
-              }
-
-              a {
-                color: $accent;
-              }
+      .single-form-wrap {
+        .inner-wrap {
+          .auth-head {
+            h2 {
+              color: $dark-dark-text;
             }
 
-            .form-card {
-              background: darken($dark-sidebar, 4%);
-              border-color: lighten($dark-sidebar, 1%);
+            a {
+              color: $accent;
             }
+          }
+
+          .form-card {
+            background: darken($dark-sidebar, 4%);
+            border-color: lighten($dark-sidebar, 1%);
           }
         }
       }

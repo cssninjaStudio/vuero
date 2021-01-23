@@ -271,51 +271,49 @@ Wizard Styles
 2. Wizard V1 Navigation Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .wizard-navigation {
-      background: darken($dark-sidebar, 2%);
-      border-color: lighten($dark-sidebar, 12%);
+.is-dark {
+  .wizard-navigation {
+    background: darken($dark-sidebar, 2%);
+    border-color: lighten($dark-sidebar, 12%);
 
-      .navbar-item {
-        &.is-wizard-title {
-          border-color: lighten($dark-sidebar, 12%);
+    .navbar-item {
+      &.is-wizard-title {
+        border-color: lighten($dark-sidebar, 12%);
 
-          .title-wrap {
-            color: $dark-dark-text;
-          }
-        }
-
-        &.is-dark-mode {
-          .navbar-icon {
-            background: lighten($dark-sidebar, 6%);
-            border-color: lighten($dark-sidebar, 12%);
-          }
+        .title-wrap {
+          color: $dark-dark-text;
         }
       }
 
-      .wizard-dropdown,
-      .user-dropdown {
-        .dropdown-menu {
+      &.is-dark-mode {
+        .navbar-icon {
+          background: lighten($dark-sidebar, 6%);
           border-color: lighten($dark-sidebar, 12%);
         }
       }
     }
 
-    .wizard-buttons {
-      background: lighten($dark-sidebar, 1%);
-      border-color: lighten($dark-sidebar, 10%);
+    .wizard-dropdown,
+    .user-dropdown {
+      .dropdown-menu {
+        border-color: lighten($dark-sidebar, 12%);
+      }
+    }
+  }
 
-      .button {
-        &.is-light {
-          background: lighten($dark-sidebar, 4%);
-          border-color: lighten($dark-sidebar, 12%);
-          color: $dark-dark-text;
+  .wizard-buttons {
+    background: lighten($dark-sidebar, 1%);
+    border-color: lighten($dark-sidebar, 10%);
 
-          &:hover {
-            color: $accent;
-            border-color: $accent;
-          }
+    .button {
+      &.is-light {
+        background: lighten($dark-sidebar, 4%);
+        border-color: lighten($dark-sidebar, 12%);
+        color: $dark-dark-text;
+
+        &:hover {
+          color: $accent;
+          border-color: $accent;
         }
       }
     }
@@ -447,25 +445,23 @@ body {
 5. Wizard V1 Step 1 Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .wizard-v1-wrapper {
-      .step-content {
-        .input {
-          &.is-dark-focus:focus {
-            border-color: $accent !important;
-          }
+.is-dark {
+  .wizard-v1-wrapper {
+    .step-content {
+      .input {
+        &.is-dark-focus:focus {
+          border-color: $accent !important;
         }
+      }
 
-        .wizard-types {
-          .wizard-card {
-            background: none;
-            border-color: transparent;
+      .wizard-types {
+        .wizard-card {
+          background: none;
+          border-color: transparent;
 
-            &:hover {
-              background: lighten($dark-sidebar, 6%);
-              border-color: lighten($dark-sidebar, 12%);
-            }
+          &:hover {
+            background: lighten($dark-sidebar, 6%);
+            border-color: lighten($dark-sidebar, 12%);
           }
         }
       }
@@ -546,17 +542,15 @@ body {
 7. Wizard V1 Step 2 Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .wizard-v1-wrapper {
-      .step-content {
-        .project-info {
-          .project-info-head {
-            .project-avatar-upload {
-              .filepond-profile-wrap {
-                .filepond--drop-label {
-                  background: lighten($dark-sidebar, 2%);
-                }
+.is-dark {
+  .wizard-v1-wrapper {
+    .step-content {
+      .project-info {
+        .project-info-head {
+          .project-avatar-upload {
+            .filepond-profile-wrap {
+              .filepond--drop-label {
+                background: lighten($dark-sidebar, 2%);
               }
             }
           }
@@ -739,49 +733,47 @@ body {
 9. Wizard V1 Step 3 Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .wizard-v1-wrapper {
-      .step-content {
-        .project-customer {
-          background: lighten($dark-sidebar, 6%);
-          border-color: lighten($dark-sidebar, 12%);
+.is-dark {
+  .wizard-v1-wrapper {
+    .step-content {
+      .project-customer {
+        background: lighten($dark-sidebar, 6%);
+        border-color: lighten($dark-sidebar, 12%);
 
-          .media-flex-center {
-            .h-avatar {
-              .avatar {
-                border-color: lighten($dark-sidebar, 12%);
-              }
+        .media-flex-center {
+          .h-avatar {
+            .avatar {
+              border-color: lighten($dark-sidebar, 12%);
             }
           }
         }
+      }
 
-        .project-dates {
-          background: lighten($dark-sidebar, 6%);
-          border-color: lighten($dark-sidebar, 12%);
+      .project-dates {
+        background: lighten($dark-sidebar, 6%);
+        border-color: lighten($dark-sidebar, 12%);
 
-          .project-dates-inner {
-            .separator {
-              border-color: lighten($dark-sidebar, 20%);
-            }
+        .project-dates-inner {
+          .separator {
+            border-color: lighten($dark-sidebar, 20%);
           }
         }
+      }
 
-        .project-budget {
-          background: lighten($dark-sidebar, 6%);
-          border-color: lighten($dark-sidebar, 12%);
+      .project-budget {
+        background: lighten($dark-sidebar, 6%);
+        border-color: lighten($dark-sidebar, 12%);
 
-          .project-budget-inner {
-            .budget-item {
-              .budget-item-inner {
-                background: lighten($dark-sidebar, 4%);
-                border-color: lighten($dark-sidebar, 12%);
+        .project-budget-inner {
+          .budget-item {
+            .budget-item-inner {
+              background: lighten($dark-sidebar, 4%);
+              border-color: lighten($dark-sidebar, 12%);
 
-                &.is-active {
-                  border-color: $accent;
-                  background: $accent;
-                  box-shadow: $accent-box-shadow;
-                }
+              &.is-active {
+                border-color: $accent;
+                background: $accent;
+                box-shadow: $accent-box-shadow;
               }
             }
           }
@@ -1117,71 +1109,69 @@ body {
 11. Wizard V1 Step 4 Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .wizard-v1-wrapper {
-      .step-content {
-        .uploader {
-          .uploader-toolbar {
-            .left {
-              .uploader-actions {
-                .uploader-action {
-                  .inner-action {
-                    &:hover {
-                      background: lighten($dark-sidebar, 14%);
-                    }
+.is-dark {
+  .wizard-v1-wrapper {
+    .step-content {
+      .uploader {
+        .uploader-toolbar {
+          .left {
+            .uploader-actions {
+              .uploader-action {
+                .inner-action {
+                  &:hover {
+                    background: lighten($dark-sidebar, 14%);
                   }
                 }
               }
             }
           }
+        }
 
-          .uploader-container {
-            .upload-wrapper {
-              .upload-box {
-                border-color: lighten($dark-sidebar, 12%);
-                background: lighten($dark-sidebar, 2%);
+        .uploader-container {
+          .upload-wrapper {
+            .upload-box {
+              border-color: lighten($dark-sidebar, 12%);
+              background: lighten($dark-sidebar, 2%);
 
-                &:hover {
-                  border-color: $accent;
+              &:hover {
+                border-color: $accent;
 
-                  .uploader-label {
-                    i {
-                      color: $accent;
-                    }
+                .uploader-label {
+                  i {
+                    color: $accent;
                   }
                 }
               }
             }
           }
+        }
 
-          .template-list {
-            .template-list-item {
-              .preview-box {
-                border-color: lighten($dark-sidebar, 12%);
-                background: lighten($dark-sidebar, 6%);
+        .template-list {
+          .template-list-item {
+            .preview-box {
+              border-color: lighten($dark-sidebar, 12%);
+              background: lighten($dark-sidebar, 6%);
 
-                .list-item-meta {
-                  .name {
-                    color: $dark-dark-text;
-                  }
+              .list-item-meta {
+                .name {
+                  color: $dark-dark-text;
+                }
+              }
+
+              .list-item-progress {
+                .size strong {
+                  color: $dark-dark-text;
                 }
 
-                .list-item-progress {
-                  .size strong {
-                    color: $dark-dark-text;
-                  }
-
-                  .progress {
-                    background: lighten($dark-sidebar, 2%);
-                  }
+                .progress {
+                  background: lighten($dark-sidebar, 2%);
                 }
+              }
 
-                .list-item-actions {
-                  .list-item-action {
-                    &:hover {
-                      background: lighten($dark-sidebar, 12%);
-                    }
+              .list-item-actions {
+                .list-item-action {
+                  &:hover {
+                    background: lighten($dark-sidebar, 12%);
                   }
                 }
               }
@@ -1374,27 +1364,25 @@ body {
 13. Wizard V1 Step 5 Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .wizard-v1-wrapper {
-      .step-content {
-        .project-team-wrapper {
-          .project-team-body {
-            .members-list {
-              .invited-member {
-                border-color: lighten($dark-sidebar, 12%);
-                background: lighten($dark-sidebar, 6%);
+.is-dark {
+  .wizard-v1-wrapper {
+    .step-content {
+      .project-team-wrapper {
+        .project-team-body {
+          .members-list {
+            .invited-member {
+              border-color: lighten($dark-sidebar, 12%);
+              background: lighten($dark-sidebar, 6%);
 
-                .actions {
-                  .permissions {
-                    .permission-levels {
-                      .permission-level {
-                        .permission-level-inner {
-                          background: lighten($dark-sidebar, 18%);
+              .actions {
+                .permissions {
+                  .permission-levels {
+                    .permission-level {
+                      .permission-level-inner {
+                        background: lighten($dark-sidebar, 18%);
 
-                          &.is-active {
-                            background: $accent;
-                          }
+                        &.is-active {
+                          background: $accent;
                         }
                       }
                     }
@@ -1481,27 +1469,25 @@ body {
 15. Wizard V1 Step 6 Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .wizard-v1-wrapper {
-      .step-content {
-        .tools-wrapper {
-          .tool-card {
-            input:checked + .tool-card-inner {
-              border-color: $accent !important;
-            }
+.is-dark {
+  .wizard-v1-wrapper {
+    .step-content {
+      .tools-wrapper {
+        .tool-card {
+          input:checked + .tool-card-inner {
+            border-color: $accent !important;
+          }
 
-            .tool-card-inner {
-              border-color: lighten($dark-sidebar, 12%);
-              background: lighten($dark-sidebar, 6%);
+          .tool-card-inner {
+            border-color: lighten($dark-sidebar, 12%);
+            background: lighten($dark-sidebar, 6%);
 
-              .media-flex-center {
-                .flex-end {
-                  .checkmark {
-                    border-color: lighten($dark-sidebar, 12%);
-                    background: lighten($dark-sidebar, 2%);
-                    color: $accent;
-                  }
+            .media-flex-center {
+              .flex-end {
+                .checkmark {
+                  border-color: lighten($dark-sidebar, 12%);
+                  background: lighten($dark-sidebar, 2%);
+                  color: $accent;
                 }
               }
             }
@@ -1751,47 +1737,45 @@ body {
 17. Wizard V1 Step 7 Dark mode
 ========================================================================== */
 
-body {
-  &.is-dark {
-    .wizard-v1-wrapper {
-      .step-content {
-        .project-preview-wrapper {
-          .project-preview-loader {
-            background: lighten($dark-sidebar, 10%);
-          }
+.is-dark {
+  .wizard-v1-wrapper {
+    .step-content {
+      .project-preview-wrapper {
+        .project-preview-loader {
+          background: lighten($dark-sidebar, 10%);
+        }
 
-          .project-preview-header {
-            .h-avatar {
-              .edit-icon {
-                border-color: lighten($dark-sidebar, 12%);
-                background: lighten($dark-sidebar, 6%);
-              }
+        .project-preview-header {
+          .h-avatar {
+            .edit-icon {
+              border-color: lighten($dark-sidebar, 12%);
+              background: lighten($dark-sidebar, 6%);
             }
           }
+        }
 
-          .project-preview-body {
-            .edit-box {
-              > h4 {
-                color: $dark-dark-text;
+        .project-preview-body {
+          .edit-box {
+            > h4 {
+              color: $dark-dark-text;
+            }
+
+            .edit-icon {
+              border-color: lighten($dark-sidebar, 12%);
+              background: lighten($dark-sidebar, 2%);
+
+              i {
+                color: $light-text;
               }
+            }
 
-              .edit-icon {
-                border-color: lighten($dark-sidebar, 12%);
-                background: lighten($dark-sidebar, 2%);
-
-                i {
-                  color: $light-text;
-                }
-              }
-
-              .estimated-budget,
-              .estimated-due-date,
-              .attachments {
-                > span,
-                .date,
-                .budget {
-                  color: $accent;
-                }
+            .estimated-budget,
+            .estimated-due-date,
+            .attachments {
+              > span,
+              .date,
+              .budget {
+                color: $accent;
               }
             }
           }
