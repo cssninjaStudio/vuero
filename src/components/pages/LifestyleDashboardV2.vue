@@ -20,8 +20,10 @@
           <div class="column is-3">
             <div
               class="long-card has-background-image"
-              data-background="https://via.placeholder.com/800x600"
-              data-demo-background="/images/photo/demo/dashboards/lifestyle/1.jpg"
+              v-background="{
+                src: '/images/photo/demo/dashboards/lifestyle/1.jpg',
+                placeholder: 'https://via.placeholder.com/800x600',
+              }"
             >
               <div class="long-card-overlay"></div>
               <a href="#" class="long-card-text-overlay">
@@ -79,8 +81,10 @@
           <div class="column is-3">
             <div
               class="long-card has-background-image"
-              data-background="https://via.placeholder.com/800x600"
-              data-demo-background="/images/photo/demo/dashboards/lifestyle/2.jpg"
+              v-background="{
+                src: '/images/photo/demo/dashboards/lifestyle/2.jpg',
+                placeholder: 'https://via.placeholder.com/800x600',
+              }"
             >
               <div class="long-card-overlay"></div>
               <a href="#" class="long-card-text-overlay">
@@ -139,8 +143,10 @@
           <div class="column is-3">
             <div
               class="long-card has-background-image"
-              data-background="https://via.placeholder.com/800x600"
-              data-demo-background="/images/photo/demo/dashboards/lifestyle/3.jpg"
+              v-background="{
+                src: '/images/photo/demo/dashboards/lifestyle/3.jpg',
+                placeholder: 'https://via.placeholder.com/800x600',
+              }"
             >
               <div class="long-card-overlay"></div>
               <a href="#" class="long-card-text-overlay">
@@ -199,8 +205,10 @@
           <div class="column is-3">
             <div
               class="long-card has-background-image"
-              data-background="https://via.placeholder.com/800x600"
-              data-demo-background="/images/photo/demo/dashboards/lifestyle/4.jpg"
+              v-background="{
+                src: '/images/photo/demo/dashboards/lifestyle/4.jpg',
+                placeholder: 'https://via.placeholder.com/800x600',
+              }"
             >
               <div class="long-card-overlay"></div>
               <a href="#" class="long-card-text-overlay">
