@@ -272,7 +272,7 @@ useHead({
           <div class="s-card is-raised demo-s-card">
             <div class="card-head">
               <div class="media-flex-center no-margin">
-                <div class="h-avatar">
+                <div class="v-avatar">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/19.jpg"
@@ -311,7 +311,7 @@ useHead({
           <div class="r-card is-raised demo-r-card">
             <div class="card-head">
               <div class="media-flex-center no-margin">
-                <div class="h-avatar">
+                <div class="v-avatar">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/19.jpg"
@@ -350,7 +350,7 @@ useHead({
           <div class="l-card is-raised demo-l-card">
             <div class="card-head">
               <div class="media-flex-center no-margin">
-                <div class="h-avatar">
+                <div class="v-avatar">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/19.jpg"

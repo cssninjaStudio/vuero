@@ -2,7 +2,7 @@
   <!--User profile-->
   <div class="profile-wrapper">
     <div class="profile-header has-text-centered">
-      <div class="h-avatar is-xl">
+      <div class="v-avatar is-xl">
         <img
           class="avatar"
           src="/images/avatars/photos/8.jpg"
@@ -260,7 +260,7 @@
                       <span>7 years of experience</span>
                     </div>
                     <div class="people">
-                      <div class="h-avatar is-small">
+                      <div class="v-avatar is-small">
                         <span
                           class="avatar is-fake is-warning"
                           data-user-popover="36"
@@ -268,7 +268,7 @@
                           <span>BT</span>
                         </span>
                       </div>
-                      <div class="h-avatar is-small">
+                      <div class="v-avatar is-small">
                         <img
                           class="avatar"
                           src="/images/avatars/photos/18.jpg"
@@ -280,7 +280,7 @@
                           "
                         />
                       </div>
-                      <div class="h-avatar is-small">
+                      <div class="v-avatar is-small">
                         <span
                           class="avatar is-fake is-info"
                           data-user-popover="34"
@@ -288,7 +288,7 @@
                           <span>JD</span>
                         </span>
                       </div>
-                      <div class="h-avatar is-small">
+                      <div class="v-avatar is-small">
                         <img
                           class="avatar"
                           src="/images/avatars/photos/7.jpg"
@@ -300,7 +300,7 @@
                           "
                         />
                       </div>
-                      <div class="h-avatar is-small">
+                      <div class="v-avatar is-small">
                         <span class="avatar is-fake">
                           <span>38</span>
                         </span>
@@ -318,7 +318,7 @@
                       <span>4 years of experience</span>
                     </div>
                     <div class="people">
-                      <div class="h-avatar is-small">
+                      <div class="v-avatar is-small">
                         <img
                           class="avatar"
                           src="/images/avatars/photos/21.jpg"
@@ -330,7 +330,7 @@
                           "
                         />
                       </div>
-                      <div class="h-avatar is-small">
+                      <div class="v-avatar is-small">
                         <span
                           class="avatar is-fake is-success"
                           data-user-popover="37"
@@ -338,7 +338,7 @@
                           <span>AT</span>
                         </span>
                       </div>
-                      <div class="h-avatar is-small">
+                      <div class="v-avatar is-small">
                         <img
                           class="avatar"
                           src="/images/avatars/photos/39.jpg"
@@ -350,7 +350,7 @@
                           "
                         />
                       </div>
-                      <div class="h-avatar is-small">
+                      <div class="v-avatar is-small">
                         <img
                           class="avatar"
                           src="/images/avatars/photos/23.jpg"
@@ -362,7 +362,7 @@
                           "
                         />
                       </div>
-                      <div class="h-avatar is-small">
+                      <div class="v-avatar is-small">
                         <span class="avatar is-fake">
                           <span>27</span>
                         </span>
@@ -387,7 +387,7 @@
                       <span>10+ years of experience</span>
                     </div>
                     <div class="people">
-                      <div class="h-avatar is-small">
+                      <div class="v-avatar is-small">
                         <img
                           class="avatar"
                           src="/images/avatars/photos/38.jpg"
@@ -399,7 +399,7 @@
                           "
                         />
                       </div>
-                      <div class="h-avatar is-small">
+                      <div class="v-avatar is-small">
                         <img
                           class="avatar"
                           src="/images/avatars/photos/11.jpg"
@@ -411,7 +411,7 @@
                           "
                         />
                       </div>
-                      <div class="h-avatar is-small">
+                      <div class="v-avatar is-small">
                         <span
                           class="avatar is-fake is-h-purple"
                           data-user-popover="35"
@@ -419,7 +419,7 @@
                           <span>SC</span>
                         </span>
                       </div>
-                      <div class="h-avatar is-small">
+                      <div class="v-avatar is-small">
                         <img
                           class="avatar"
                           src="/images/avatars/photos/13.jpg"
@@ -431,7 +431,7 @@
                           "
                         />
                       </div>
-                      <div class="h-avatar is-small">
+                      <div class="v-avatar is-small">
                         <span class="avatar is-fake">
                           <span>19</span>
                         </span>
@@ -456,7 +456,7 @@
                       <span>10+ years of experience</span>
                     </div>
                     <div class="people">
-                      <div class="h-avatar is-small">
+                      <div class="v-avatar is-small">
                         <img
                           class="avatar"
                           src="/images/avatars/photos/21.jpg"
@@ -468,7 +468,7 @@
                           "
                         />
                       </div>
-                      <div class="h-avatar is-small">
+                      <div class="v-avatar is-small">
                         <span
                           class="avatar is-fake is-h-purple"
                           data-user-popover="35"
@@ -476,7 +476,7 @@
                           <span>SC</span>
                         </span>
                       </div>
-                      <div class="h-avatar is-small">
+                      <div class="v-avatar is-small">
                         <img
                           class="avatar"
                           src="/images/avatars/photos/5.jpg"
@@ -488,7 +488,7 @@
                           "
                         />
                       </div>
-                      <div class="h-avatar is-small">
+                      <div class="v-avatar is-small">
                         <img
                           class="avatar"
                           src="/images/avatars/photos/7.jpg"
@@ -500,7 +500,7 @@
                           "
                         />
                       </div>
-                      <div class="h-avatar is-small">
+                      <div class="v-avatar is-small">
                         <span class="avatar is-fake">
                           <span>31</span>
                         </span>
@@ -528,7 +528,7 @@
                 <div class="recommendations-wrapper">
                   <!--Recommendation-->
                   <div class="recommendations-item">
-                    <div class="h-avatar is-large">
+                    <div class="v-avatar is-large">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/5.jpg"
@@ -563,7 +563,7 @@
 
                   <!--Recommendation-->
                   <div class="recommendations-item">
-                    <div class="h-avatar is-large">
+                    <div class="v-avatar is-large">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/18.jpg"
@@ -709,7 +709,7 @@
                 <div class="people-wrapper">
                   <!--People-->
                   <a href="#" class="people-item">
-                    <div class="h-avatar">
+                    <div class="v-avatar">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/25.jpg"
@@ -738,7 +738,7 @@
 
                   <!--People-->
                   <a href="#" class="people-item">
-                    <div class="h-avatar">
+                    <div class="v-avatar">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/29.jpg"
@@ -767,7 +767,7 @@
 
                   <!--People-->
                   <a href="#" class="people-item">
-                    <div class="h-avatar">
+                    <div class="v-avatar">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/38.jpg"
@@ -796,7 +796,7 @@
 
                   <!--People-->
                   <a href="#" class="people-item">
-                    <div class="h-avatar">
+                    <div class="v-avatar">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/28.jpg"
@@ -825,7 +825,7 @@
 
                   <!--People-->
                   <a href="#" class="people-item">
-                    <div class="h-avatar">
+                    <div class="v-avatar">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/19.jpg"

@@ -242,7 +242,7 @@
           border-color: lighten($dark-sidebar, 12%);
 
           .left {
-            .h-avatar {
+            .v-avatar {
               .badge {
                 border-color: lighten($dark-sidebar, 6%);
               }
@@ -437,7 +437,7 @@
         transform: scale(0.85);
       }
 
-      > .h-avatar {
+      > .v-avatar {
         display: block;
         margin: 0 auto 10px auto;
         border-radius: 16px;
@@ -474,7 +474,7 @@
         justify-content: center;
         padding: 8px 0 30px 0;
 
-        .h-avatar {
+        .v-avatar {
           margin: 0 4px;
         }
       }

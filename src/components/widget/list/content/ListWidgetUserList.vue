@@ -21,7 +21,7 @@ const props = defineProps({
       :key="user.id"
       class="inner-list-item media-flex-center"
     >
-      <Avatar :picture="user.picture" :squared="squared" />
+      <V-Avatar :picture="user.picture" :squared="squared" />
       <div class="flex-meta is-light">
         <a href="#">{{ user.name }}</a>
         <span>{{ user.position }}</span>

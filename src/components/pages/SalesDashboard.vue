@@ -50,7 +50,7 @@ onMounted(async () => {
   <div class="finance-dashboard sales-dashboard">
     <!--Header-->
     <div class="dashboard-header">
-      <div class="h-avatar is-large">
+      <div class="v-avatar is-large">
         <img
           class="avatar"
           src="/images/avatars/photos/8.jpg"

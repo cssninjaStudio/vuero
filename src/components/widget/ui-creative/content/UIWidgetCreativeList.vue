@@ -21,7 +21,7 @@ const props = defineProps({
       class="creative-list-item"
       :class="'is-' + item.color"
     >
-      <Avatar :picture="item.picture" :squared="squared" />
+      <V-Avatar :picture="item.picture" :squared="squared" />
       <div class="meta">
         <span>{{ item.name }}</span>
       </div>

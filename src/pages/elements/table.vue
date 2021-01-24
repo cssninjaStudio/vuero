@@ -254,7 +254,7 @@ useHead({
               </tr>
               <tr>
                 <td class="is-media">
-                  <div class="h-avatar">
+                  <div class="v-avatar">
                     <img
                       class="avatar"
                       src="/images/avatars/svg/8.gif"
@@ -277,7 +277,7 @@ useHead({
               </tr>
               <tr>
                 <td class="is-media">
-                  <div class="h-avatar">
+                  <div class="v-avatar">
                     <img
                       class="avatar"
                       src="/images/avatars/svg/1.gif"
@@ -300,7 +300,7 @@ useHead({
               </tr>
               <tr>
                 <td class="is-media">
-                  <div class="h-avatar">
+                  <div class="v-avatar">
                     <img
                       class="avatar"
                       src="/images/avatars/svg/4.gif"
@@ -323,7 +323,7 @@ useHead({
               </tr>
               <tr>
                 <td class="is-media">
-                  <div class="h-avatar">
+                  <div class="v-avatar">
                     <span class="avatar is-fake is-info">
                       <span>JD</span>
                     </span>
@@ -340,7 +340,7 @@ useHead({
               </tr>
               <tr>
                 <td class="is-media">
-                  <div class="h-avatar">
+                  <div class="v-avatar">
                     <img
                       class="avatar"
                       src="/images/avatars/svg/3.gif"

@@ -45,7 +45,7 @@ import { products } from '/@src/composition/state/widgets/UI/productList'
       />
 
       <!--Widget-->
-      <AvatarListWidget :avatars="avatarList" squared />
+      <V-AvatarListWidget :avatars="avatarList" squared />
     </div>
 
     <div class="column is-3">
@@ -61,7 +61,7 @@ import { products } from '/@src/composition/state/widgets/UI/productList'
       <SocialButtonsWidget :buttons="socialButtonList1" />
 
       <!--Widget-->
-      <AvatarListWidget :avatars="avatarList" />
+      <V-AvatarListWidget :avatars="avatarList" />
 
       <!--Widget-->
       <UIWidget class="followers-widget">

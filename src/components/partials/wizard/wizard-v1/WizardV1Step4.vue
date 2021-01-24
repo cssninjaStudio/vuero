@@ -41,7 +41,7 @@
             </div>
           </div>
         </div>
-        <div class="h-avatar is-big">
+        <div class="v-avatar is-big">
           <img
             class="avatar"
             src="/images/avatars/photos/8.jpg"

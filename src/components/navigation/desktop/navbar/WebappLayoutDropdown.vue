@@ -6,7 +6,7 @@ import {
 </script>
 
 <template>
-  <BaseDropdown dots right>
+  <V-Dropdown dots right>
     <template #button="{ open }">
       <button class="is-trigger" @click="open">
         <i class="iconify" data-icon="feather:help-circle"></i>
@@ -49,5 +49,5 @@ import {
         >Webapp V5</a
       >
     </template>
-  </BaseDropdown>
+  </V-Dropdown>
 </template>

@@ -128,7 +128,7 @@ const displayCode = ref(false)
 
 //Adjustments
 .demo-example {
-  > .h-avatar {
+  > .v-avatar {
     margin: 0 0.15rem;
   }
 
@@ -136,7 +136,7 @@ const displayCode = ref(false)
     display: flex;
     align-items: flex-end;
 
-    .h-icon {
+    .v-icon {
       margin: 0 0.15rem;
     }
   }

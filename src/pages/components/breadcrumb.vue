@@ -42,7 +42,7 @@ useHead({
       </div>
 
       <div class="title-wrap">
-        <h1 class="title is-4">Breadcrumb</h1>
+        <h1 class="title is-4">V-Breadcrumb</h1>
       </div>
 
       <Toolbar />
@@ -65,7 +65,7 @@ useHead({
           </li>
           <li>
             <a>
-              <span>Breadcrumb</span>
+              <span>V-Breadcrumb</span>
             </a>
           </li>
         </ul>

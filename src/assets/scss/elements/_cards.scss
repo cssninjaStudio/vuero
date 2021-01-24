@@ -71,14 +71,14 @@
       border-color: lighten($dark-sidebar, 12%);
     }
 
-    .h-avatar {
+    .v-avatar {
       img {
         border-color: lighten($dark-sidebar, 6%) !important;
       }
     }
 
     .avatar-stack {
-      .h-avatar {
+      .v-avatar {
         border-color: lighten($dark-sidebar, 6%) !important;
 
         .avatar {

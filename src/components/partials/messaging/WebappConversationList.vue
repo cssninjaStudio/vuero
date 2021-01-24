@@ -8,7 +8,7 @@
       data-detail-name="Kelly Marston"
       data-detail-text="Product Manager"
     >
-      <div class="h-avatar">
+      <div class="v-avatar">
         <img
           class="avatar"
           src="/images/avatars/photos/11.jpg"
@@ -35,7 +35,7 @@
       data-detail-name="Alejandro Badajoz"
       data-detail-text="Business Analyst"
     >
-      <div class="h-avatar">
+      <div class="v-avatar">
         <img
           class="avatar"
           src="/images/avatars/photos/39.jpg"
@@ -62,7 +62,7 @@
       data-detail-name="Work Group"
       data-detail-text="7 people are chatting"
     >
-      <div class="h-avatar">
+      <div class="v-avatar">
         <span class="avatar is-fake is-h-purple">
           <span>WG</span>
         </span>
@@ -86,7 +86,7 @@
       data-detail-name="Alice Carasca"
       data-detail-text="Software Engineer"
     >
-      <div class="h-avatar">
+      <div class="v-avatar">
         <img
           class="avatar"
           src="/images/avatars/photos/7.jpg"
@@ -113,7 +113,7 @@
       data-detail-name="Irina Vierbovsky"
       data-detail-text="Project Manager"
     >
-      <div class="h-avatar">
+      <div class="v-avatar">
         <img
           class="avatar"
           src="/images/avatars/photos/23.jpg"
@@ -140,7 +140,7 @@
       data-detail-name="Mary Lebowski"
       data-detail-text="Project Manager"
     >
-      <div class="h-avatar">
+      <div class="v-avatar">
         <img
           class="avatar"
           src="/images/avatars/photos/5.jpg"
@@ -165,7 +165,7 @@
       data-detail-name="Esteban Castellanos"
       data-detail-text="UI/UX Designer"
     >
-      <div class="h-avatar">
+      <div class="v-avatar">
         <img
           class="avatar"
           src="/images/avatars/photos/18.jpg"
@@ -190,7 +190,7 @@
       data-detail-name="Melany Wallace"
       data-detail-text="Web Developer"
     >
-      <div class="h-avatar">
+      <div class="v-avatar">
         <img
           class="avatar"
           src="/images/avatars/photos/25.jpg"
@@ -217,7 +217,7 @@
       data-detail-name="Jimmy Hector"
       data-detail-text="Project Manager"
     >
-      <div class="h-avatar">
+      <div class="v-avatar">
         <img
           class="avatar"
           src="/images/avatars/photos/22.jpg"
@@ -242,7 +242,7 @@
       data-detail-name="Greta Kroppfer"
       data-detail-text="Sales Manager"
     >
-      <div class="h-avatar">
+      <div class="v-avatar">
         <img
           class="avatar"
           src="/images/avatars/photos/19.jpg"
@@ -269,7 +269,7 @@
       data-detail-name="Tara Svenson"
       data-detail-text="UI/UX Designer"
     >
-      <div class="h-avatar">
+      <div class="v-avatar">
         <img
           class="avatar"
           src="/images/avatars/photos/13.jpg"

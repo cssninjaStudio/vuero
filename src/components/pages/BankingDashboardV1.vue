@@ -104,7 +104,7 @@ import { incomeOptions } from '/@src/composition/state/charts/apexcharts/example
 
           <div class="transactions">
             <div class="media-flex-center">
-              <div class="h-icon is-green is-rounded">
+              <div class="v-icon is-green is-rounded">
                 <i class="lnil lnil-service"></i>
               </div>
               <div class="flex-meta is-lighter">
@@ -116,7 +116,7 @@ import { incomeOptions } from '/@src/composition/state/charts/apexcharts/example
               </div>
             </div>
             <div class="media-flex-center">
-              <div class="h-icon is-orange is-rounded">
+              <div class="v-icon is-orange is-rounded">
                 <i class="lnil lnil-analytics-alt-1"></i>
               </div>
               <div class="flex-meta is-lighter">
@@ -128,7 +128,7 @@ import { incomeOptions } from '/@src/composition/state/charts/apexcharts/example
               </div>
             </div>
             <div class="media-flex-center">
-              <div class="h-icon is-purple is-rounded">
+              <div class="v-icon is-purple is-rounded">
                 <i class="lnil lnil-cart-alt"></i>
               </div>
               <div class="flex-meta is-lighter">
@@ -290,7 +290,7 @@ import { incomeOptions } from '/@src/composition/state/charts/apexcharts/example
 
               <div class="people-wrap">
                 <div class="people">
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <span
                       class="avatar is-fake is-warning"
                       data-user-popover="36"
@@ -298,7 +298,7 @@ import { incomeOptions } from '/@src/composition/state/charts/apexcharts/example
                       <span>BT</span>
                     </span>
                   </div>
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/18.jpg"
@@ -310,12 +310,12 @@ import { incomeOptions } from '/@src/composition/state/charts/apexcharts/example
                       "
                     />
                   </div>
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <span class="avatar is-fake is-info" data-user-popover="34">
                       <span>JD</span>
                     </span>
                   </div>
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/7.jpg"

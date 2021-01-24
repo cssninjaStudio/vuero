@@ -33,7 +33,7 @@ const emit = defineEmit(['close'])
           <div class="inner-content">
             <div class="section-placeholder">
               <div class="placeholder-content">
-                <div class="h-avatar is-xl">
+                <div class="v-avatar is-xl">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/22.jpg"

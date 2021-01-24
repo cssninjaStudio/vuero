@@ -2,7 +2,7 @@
   <!--Profile Settings-->
   <div class="profile-wrapper">
     <div class="profile-header has-text-centered">
-      <div class="h-avatar is-xl">
+      <div class="v-avatar is-xl">
         <img
           class="avatar"
           src="/images/avatars/photos/8.jpg"

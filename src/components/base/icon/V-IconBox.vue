@@ -23,7 +23,7 @@ const props = defineProps({
 
 <template>
   <div
-    class="h-icon"
+    class="v-icon"
     :class="[
       props.size && 'is-' + props.size,
       props.color && 'is-' + props.color,

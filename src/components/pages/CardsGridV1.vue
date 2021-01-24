@@ -29,7 +29,7 @@
         <div class="card-grid-item">
           <div class="card-grid-item-body">
             <div class="left">
-              <div class="h-avatar is-big">
+              <div class="v-avatar is-big">
                 <img
                   class="avatar"
                   src="/images/avatars/photos/13.jpg"
@@ -105,7 +105,7 @@
         <div class="card-grid-item">
           <div class="card-grid-item-body">
             <div class="left">
-              <div class="h-avatar is-big">
+              <div class="v-avatar is-big">
                 <img
                   class="avatar"
                   src="/images/avatars/photos/37.jpg"
@@ -181,7 +181,7 @@
         <div class="card-grid-item">
           <div class="card-grid-item-body">
             <div class="left">
-              <div class="h-avatar is-big">
+              <div class="v-avatar is-big">
                 <img
                   class="avatar"
                   src="/images/avatars/photos/25.jpg"
@@ -257,7 +257,7 @@
         <div class="card-grid-item">
           <div class="card-grid-item-body">
             <div class="left">
-              <div class="h-avatar is-big">
+              <div class="v-avatar is-big">
                 <img
                   class="avatar"
                   src="/images/avatars/photos/29.jpg"
@@ -333,7 +333,7 @@
         <div class="card-grid-item">
           <div class="card-grid-item-body">
             <div class="left">
-              <div class="h-avatar is-big">
+              <div class="v-avatar is-big">
                 <img
                   class="avatar"
                   src="/images/avatars/photos/39.jpg"
@@ -409,7 +409,7 @@
         <div class="card-grid-item">
           <div class="card-grid-item-body">
             <div class="left">
-              <div class="h-avatar is-big">
+              <div class="v-avatar is-big">
                 <img
                   class="avatar"
                   src="/images/avatars/photos/40.jpg"
@@ -485,7 +485,7 @@
         <div class="card-grid-item">
           <div class="card-grid-item-body">
             <div class="left">
-              <div class="h-avatar is-big">
+              <div class="v-avatar is-big">
                 <img
                   class="avatar"
                   src="/images/avatars/photos/19.jpg"
@@ -561,7 +561,7 @@
         <div class="card-grid-item">
           <div class="card-grid-item-body">
             <div class="left">
-              <div class="h-avatar is-big">
+              <div class="v-avatar is-big">
                 <img
                   class="avatar"
                   src="/images/avatars/photos/9.jpg"
@@ -635,7 +635,7 @@
         <div class="card-grid-item">
           <div class="card-grid-item-body">
             <div class="left">
-              <div class="h-avatar is-big">
+              <div class="v-avatar is-big">
                 <img
                   class="avatar"
                   src="/images/avatars/photos/5.jpg"
@@ -711,7 +711,7 @@
         <div class="card-grid-item">
           <div class="card-grid-item-body">
             <div class="left">
-              <div class="h-avatar is-big">
+              <div class="v-avatar is-big">
                 <img
                   class="avatar"
                   src="/images/avatars/photos/32.jpg"
@@ -787,7 +787,7 @@
         <div class="card-grid-item">
           <div class="card-grid-item-body">
             <div class="left">
-              <div class="h-avatar is-big">
+              <div class="v-avatar is-big">
                 <img
                   class="avatar"
                   src="/images/avatars/photos/36.jpg"
@@ -863,7 +863,7 @@
         <div class="card-grid-item">
           <div class="card-grid-item-body">
             <div class="left">
-              <div class="h-avatar is-big">
+              <div class="v-avatar is-big">
                 <img
                   class="avatar"
                   src="/images/avatars/photos/38.jpg"
@@ -939,7 +939,7 @@
         <div class="card-grid-item">
           <div class="card-grid-item-body">
             <div class="left">
-              <div class="h-avatar is-big">
+              <div class="v-avatar is-big">
                 <img
                   class="avatar"
                   src="/images/avatars/photos/26.jpg"
@@ -1015,7 +1015,7 @@
         <div class="card-grid-item">
           <div class="card-grid-item-body">
             <div class="left">
-              <div class="h-avatar is-big">
+              <div class="v-avatar is-big">
                 <img
                   class="avatar"
                   src="/images/avatars/photos/16.jpg"
@@ -1091,7 +1091,7 @@
         <div class="card-grid-item">
           <div class="card-grid-item-body">
             <div class="left">
-              <div class="h-avatar is-big">
+              <div class="v-avatar is-big">
                 <img
                   class="avatar"
                   src="/images/avatars/photos/23.jpg"
@@ -1167,7 +1167,7 @@
         <div class="card-grid-item">
           <div class="card-grid-item-body">
             <div class="left">
-              <div class="h-avatar is-big">
+              <div class="v-avatar is-big">
                 <img
                   class="avatar"
                   src="/images/avatars/photos/28.jpg"
@@ -1243,7 +1243,7 @@
         <div class="card-grid-item">
           <div class="card-grid-item-body">
             <div class="left">
-              <div class="h-avatar is-big">
+              <div class="v-avatar is-big">
                 <img
                   class="avatar"
                   src="/images/avatars/photos/7.jpg"
@@ -1319,7 +1319,7 @@
         <div class="card-grid-item">
           <div class="card-grid-item-body">
             <div class="left">
-              <div class="h-avatar is-big">
+              <div class="v-avatar is-big">
                 <img
                   class="avatar"
                   src="/images/avatars/photos/22.jpg"

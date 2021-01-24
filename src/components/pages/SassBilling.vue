@@ -188,7 +188,7 @@ const cardInfo = reactive({
             <span>3 remaining</span>
           </div>
           <div class="block-body is-seats">
-            <div class="h-avatar">
+            <div class="v-avatar">
               <img
                 class="avatar"
                 src="/images/avatars/photos/8.jpg"
@@ -199,12 +199,12 @@ const cardInfo = reactive({
                 "
               />
             </div>
-            <div class="h-avatar">
+            <div class="v-avatar">
               <span class="avatar is-fake is-warning" data-user-popover="36">
                 <span>BT</span>
               </span>
             </div>
-            <div class="h-avatar">
+            <div class="v-avatar">
               <img
                 class="avatar"
                 src="/images/avatars/photos/18.jpg"
@@ -215,12 +215,12 @@ const cardInfo = reactive({
                 "
               />
             </div>
-            <div class="h-avatar">
+            <div class="v-avatar">
               <span class="avatar is-fake is-info" data-user-popover="34">
                 <span>JD</span>
               </span>
             </div>
-            <div class="h-avatar">
+            <div class="v-avatar">
               <img
                 class="avatar"
                 src="/images/avatars/photos/7.jpg"
@@ -658,7 +658,7 @@ const cardInfo = reactive({
             display: flex;
             padding-bottom: 10px;
 
-            .h-avatar {
+            .v-avatar {
               margin-right: 8px;
             }
 

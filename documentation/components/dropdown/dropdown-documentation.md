@@ -1,12 +1,12 @@
-### Dropdown
+### V-Dropdown
 
-You can use a `<BaseDropdown />` component to display a menu that will hold your options. pass the `right` prop to the component to align it to the right instead of left, which is the default. Use the `up` prop to make it a dropup.
+You can use a `<V-Dropdown />` component to display a menu that will hold your options. pass the `right` prop to the component to align it to the right instead of left, which is the default. Use the `up` prop to make it a dropup.
 
 <!--code-->
 
-```vue 
+```vue
 <template>
-  <BaseDropdown title="Dropdown button" right up>
+  <V-Dropdown title="Dropdown button" right up>
     <template #content>
       <a href="#" class="dropdown-item"> Dropdown item </a>
       <a href="#" class="dropdown-item"> Other dropdown item </a>
@@ -15,18 +15,17 @@ You can use a `<BaseDropdown />` component to display a menu that will hold your
       <hr class="dropdown-divider" />
       <a href="#" class="dropdown-item"> With a divider </a>
     </template>
-  </BaseDropdown>
+  </V-Dropdown>
 </template>
 ```
 
 <!--/code-->
 
-
 <!--example-->
 
 <div class="field is-grouped">
   <div class="control">
-    <BaseDropdown title="Dropdown button">
+    <V-Dropdown title="Dropdown button">
       <template #content>
         <a href="#" class="dropdown-item"> Dropdown item </a>
         <a href="#" class="dropdown-item"> Other dropdown item </a>
@@ -35,11 +34,11 @@ You can use a `<BaseDropdown />` component to display a menu that will hold your
         <hr class="dropdown-divider" />
         <a href="#" class="dropdown-item"> With a divider </a>
       </template>
-    </BaseDropdown>
+    </V-Dropdown>
   </div>
 
   <div class="control">
-    <BaseDropdown title="Dropdown right" right>
+    <V-Dropdown title="Dropdown right" right>
       <template #content>
         <a href="#" class="dropdown-item"> Dropdown item </a>
         <a href="#" class="dropdown-item"> Other dropdown item </a>
@@ -48,11 +47,11 @@ You can use a `<BaseDropdown />` component to display a menu that will hold your
         <hr class="dropdown-divider" />
         <a href="#" class="dropdown-item"> With a divider </a>
       </template>
-    </BaseDropdown>
+    </V-Dropdown>
   </div>
 
   <div class="control">
-    <BaseDropdown title="Dropdown up" up>
+    <V-Dropdown title="Dropdown up" up>
       <template #content>
         <a href="#" class="dropdown-item"> Dropdown item </a>
         <a href="#" class="dropdown-item"> Other dropdown item </a>
@@ -61,9 +60,8 @@ You can use a `<BaseDropdown />` component to display a menu that will hold your
         <hr class="dropdown-divider" />
         <a href="#" class="dropdown-item"> With a divider </a>
       </template>
-    </BaseDropdown>
+    </V-Dropdown>
   </div>
 </div>
-
 
 <!--/example-->

@@ -20,12 +20,12 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
           <RouterLink :to="{ name: 'components' }">Components Hub</RouterLink>
         </li>
         <li>
-          <RouterLink :to="{ name: 'components-avatars' }">Avatars</RouterLink>
+          <RouterLink :to="{ name: 'components-avatars' }">V-Avatar</RouterLink>
         </li>
         <li v-has-children class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Accordions <i class="iconify" data-icon="feather:chevron-right"
+              >V-Accordion <i class="iconify" data-icon="feather:chevron-right"
             /></a>
           </div>
           <ul>
@@ -34,7 +34,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
                 :to="{ name: 'components-accordion-basic' }"
                 class="is-submenu"
                 ><i class="iconify" data-icon="feather:circle"></i
-                >Accordion</RouterLink
+                >V-Accordion</RouterLink
               >
             </li>
             <li>
@@ -42,22 +42,22 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
                 :to="{ name: 'components-accordion-collapse' }"
                 class="is-submenu"
                 ><i class="iconify" data-icon="feather:circle"></i
-                >Collapse</RouterLink
+                >V-Collapse</RouterLink
               >
             </li>
             <li>
               <RouterLink
                 :to="{ name: 'components-accordion-images' }"
                 class="is-submenu"
-                ><i class="iconify" data-icon="feather:circle"></i>Image
-                Accordion</RouterLink
+                ><i class="iconify" data-icon="feather:circle"></i
+                >V-ImageAccordion</RouterLink
               >
             </li>
           </ul>
         </li>
         <li>
           <RouterLink :to="{ name: 'components-breadcrumb' }"
-            >Breadcrumb</RouterLink
+            >V-Breadcrumb</RouterLink
           >
         </li>
         <li>
@@ -65,12 +65,12 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         </li>
         <li>
           <RouterLink :to="{ name: 'components-dropdown' }"
-            >Dropdown</RouterLink
+            >V-Dropdown</RouterLink
           >
         </li>
         <li>
           <RouterLink :to="{ name: 'components-icon-box' }"
-            >Icon Box</RouterLink
+            >V-IconBox</RouterLink
           >
         </li>
         <li>

@@ -35,7 +35,7 @@ import { activePanel } from '/@src/composition/state/ui/activePanelState'
 
             <div class="participants-inner">
               <div class="avatar-stack">
-                <div class="h-avatar">
+                <div class="v-avatar">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/7.jpg"
@@ -45,7 +45,7 @@ import { activePanel } from '/@src/composition/state/ui/activePanelState'
                     "
                   />
                 </div>
-                <div class="h-avatar">
+                <div class="v-avatar">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/8.jpg"
@@ -55,7 +55,7 @@ import { activePanel } from '/@src/composition/state/ui/activePanelState'
                     "
                   />
                 </div>
-                <div class="h-avatar">
+                <div class="v-avatar">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/5.jpg"
@@ -139,7 +139,7 @@ import { activePanel } from '/@src/composition/state/ui/activePanelState'
             <div class="control is-textarea-addon">
               <div class="start">
                 <div class="avatar-stack">
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/8.jpg"

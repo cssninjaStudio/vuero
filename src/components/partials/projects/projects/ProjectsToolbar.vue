@@ -8,7 +8,7 @@
     </div>
 
     <div class="avatar-stack">
-      <div class="h-avatar is-small">
+      <div class="v-avatar is-small">
         <img
           class="avatar"
           src="/images/avatars/photos/7.jpg"
@@ -16,7 +16,7 @@
           @error="$event.target.src = 'https://via.placeholder.com/150x150'"
         />
       </div>
-      <div class="h-avatar is-small">
+      <div class="v-avatar is-small">
         <img
           class="avatar"
           src="/images/avatars/photos/9.jpg"
@@ -24,7 +24,7 @@
           @error="$event.target.src = 'https://via.placeholder.com/150x150'"
         />
       </div>
-      <div class="h-avatar is-small">
+      <div class="v-avatar is-small">
         <img
           class="avatar"
           src="/images/avatars/photos/12.jpg"
@@ -32,7 +32,7 @@
           @error="$event.target.src = 'https://via.placeholder.com/150x150'"
         />
       </div>
-      <div class="h-avatar is-small">
+      <div class="v-avatar is-small">
         <img
           class="avatar"
           src="/images/avatars/photos/8.jpg"
@@ -40,7 +40,7 @@
           @error="$event.target.src = 'https://via.placeholder.com/150x150'"
         />
       </div>
-      <div class="h-avatar is-small">
+      <div class="v-avatar is-small">
         <img
           class="avatar"
           src="/images/avatars/photos/25.jpg"
@@ -48,7 +48,7 @@
           @error="$event.target.src = 'https://via.placeholder.com/150x150'"
         />
       </div>
-      <div class="h-avatar is-small">
+      <div class="v-avatar is-small">
         <img
           class="avatar"
           src="/images/avatars/photos/22.jpg"

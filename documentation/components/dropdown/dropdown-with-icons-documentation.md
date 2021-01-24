@@ -1,12 +1,12 @@
 ### Menu with Icons
 
-`<BaseDropdown />` menu items can have icons and a more structured layout. Use the `spaced` prop with the provided markup in the code example.
+`<V-Dropdown />` menu items can have icons and a more structured layout. Use the `spaced` prop with the provided markup in the code example.
 
 <!--code-->
 
 ```vue {2,4-12}
 <template>
-  <BaseDropdown title="Dropdown with icon" spaced>
+  <V-Dropdown title="Dropdown with icon" spaced>
     <template #content>
       <a href="#" class="dropdown-item is-media">
         <div class="icon">
@@ -46,7 +46,7 @@
         </div>
       </a>
     </template>
-  </BaseDropdown>
+  </V-Dropdown>
 </template>
 ```
 
@@ -56,7 +56,7 @@
 
 <div class="field is-grouped">
   <div class="control">
-    <BaseDropdown title="Dropdown with icon" spaced>
+    <V-Dropdown title="Dropdown with icon" spaced>
       <template #content>
         <a href="#" class="dropdown-item is-media">
           <div class="icon">
@@ -96,11 +96,11 @@
           </div>
         </a>
       </template>
-    </BaseDropdown>
+    </V-Dropdown>
   </div>
 
   <div class="control">
-    <BaseDropdown title="With unicons" spaced>
+    <V-Dropdown title="With unicons" spaced>
       <template #content>
         <a href="#" class="dropdown-item is-media">
           <div class="icon">
@@ -140,7 +140,7 @@
           </div>
         </a>
       </template>
-    </BaseDropdown>
+    </V-Dropdown>
   </div>
 </div>
 

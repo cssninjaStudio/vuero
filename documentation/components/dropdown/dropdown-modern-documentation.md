@@ -1,12 +1,12 @@
 ### Modern Dropdown
 
-If you add in some specific markup, `<BaseDropdown />` buttons can be enhanced into modern dropdowns with an animated caret icon. Use the `modern` prop on the component.
+If you add in some specific markup, `<V-Dropdown />` buttons can be enhanced into modern dropdowns with an animated caret icon. Use the `modern` prop on the component.
 
 <!--code-->
 
 ```vue {2}
 <template>
-  <BaseDropdown title="Modern dropdown" modern>
+  <V-Dropdown title="Modern dropdown" modern>
     <template #content>
       <a href="#" class="dropdown-item"> Dropdown item </a>
       <a href="#" class="dropdown-item"> Other dropdown item </a>
@@ -15,18 +15,17 @@ If you add in some specific markup, `<BaseDropdown />` buttons can be enhanced i
       <hr class="dropdown-divider" />
       <a href="#" class="dropdown-item"> With a divider </a>
     </template>
-  </BaseDropdown>
+  </V-Dropdown>
 </template>
 ```
 
 <!--/code-->
 
-
 <!--example-->
 
 <div class="field is-grouped">
   <div class="control">
-    <BaseDropdown title="Modern dropdown" modern>
+    <V-Dropdown title="Modern dropdown" modern>
       <template #content>
         <a href="#" class="dropdown-item"> Dropdown item </a>
         <a href="#" class="dropdown-item"> Other dropdown item </a>
@@ -35,11 +34,11 @@ If you add in some specific markup, `<BaseDropdown />` buttons can be enhanced i
         <hr class="dropdown-divider" />
         <a href="#" class="dropdown-item"> With a divider </a>
       </template>
-    </BaseDropdown>
+    </V-Dropdown>
   </div>
 
   <div class="control">
-    <BaseDropdown title="Modern rounded dropdown" class="is-rounded" modern>
+    <V-Dropdown title="Modern rounded dropdown" class="is-rounded" modern>
       <template #content>
         <a href="#" class="dropdown-item"> Dropdown item </a>
         <a href="#" class="dropdown-item"> Other dropdown item </a>
@@ -48,11 +47,11 @@ If you add in some specific markup, `<BaseDropdown />` buttons can be enhanced i
         <hr class="dropdown-divider" />
         <a href="#" class="dropdown-item"> With a divider </a>
       </template>
-    </BaseDropdown>
+    </V-Dropdown>
   </div>
 
   <div class="control">
-    <BaseDropdown title="Modern dropdown (up, right)" modern up right>
+    <V-Dropdown title="Modern dropdown (up, right)" modern up right>
       <template #content>
         <a href="#" class="dropdown-item"> Dropdown item </a>
         <a href="#" class="dropdown-item"> Other dropdown item </a>
@@ -61,9 +60,8 @@ If you add in some specific markup, `<BaseDropdown />` buttons can be enhanced i
         <hr class="dropdown-divider" />
         <a href="#" class="dropdown-item"> With a divider </a>
       </template>
-    </BaseDropdown>
+    </V-Dropdown>
   </div>
 </div>
-
 
 <!--/example-->

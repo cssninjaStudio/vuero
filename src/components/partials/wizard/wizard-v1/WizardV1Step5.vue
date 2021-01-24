@@ -13,7 +13,7 @@
             <input type="checkbox" />
             <div class="tool-card-inner">
               <div class="media-flex-center">
-                <div class="h-avatar">
+                <div class="v-avatar">
                   <img
                     class="avatar is-squared"
                     src="/images/photo/demo/tools/illustrator.svg"
@@ -43,7 +43,7 @@
             <input type="checkbox" />
             <div class="tool-card-inner">
               <div class="media-flex-center">
-                <div class="h-avatar">
+                <div class="v-avatar">
                   <img
                     class="avatar is-squared"
                     src="/images/photo/demo/tools/photoshop.svg"
@@ -73,7 +73,7 @@
             <input type="checkbox" />
             <div class="tool-card-inner">
               <div class="media-flex-center">
-                <div class="h-avatar">
+                <div class="v-avatar">
                   <img
                     class="avatar is-squared"
                     src="/images/photo/demo/tools/xd.svg"
@@ -103,7 +103,7 @@
             <input type="checkbox" />
             <div class="tool-card-inner">
               <div class="media-flex-center">
-                <div class="h-avatar">
+                <div class="v-avatar">
                   <img
                     class="avatar is-squared"
                     src="/images/photo/demo/tools/figma.svg"
@@ -133,7 +133,7 @@
             <input type="checkbox" />
             <div class="tool-card-inner">
               <div class="media-flex-center">
-                <div class="h-avatar">
+                <div class="v-avatar">
                   <img
                     class="avatar is-squared"
                     src="/images/photo/demo/tools/invision.svg"
@@ -163,7 +163,7 @@
             <input type="checkbox" />
             <div class="tool-card-inner">
               <div class="media-flex-center">
-                <div class="h-avatar">
+                <div class="v-avatar">
                   <img
                     class="avatar is-squared"
                     src="/images/photo/demo/tools/jira.svg"
@@ -193,7 +193,7 @@
             <input type="checkbox" />
             <div class="tool-card-inner">
               <div class="media-flex-center">
-                <div class="h-avatar">
+                <div class="v-avatar">
                   <img
                     class="avatar is-squared"
                     src="/images/photo/demo/tools/taiga.svg"
@@ -223,7 +223,7 @@
             <input type="checkbox" />
             <div class="tool-card-inner">
               <div class="media-flex-center">
-                <div class="h-avatar">
+                <div class="v-avatar">
                   <img
                     class="avatar is-squared"
                     src="/images/photo/demo/tools/slack.svg"
@@ -253,7 +253,7 @@
             <input type="checkbox" />
             <div class="tool-card-inner">
               <div class="media-flex-center">
-                <div class="h-avatar">
+                <div class="v-avatar">
                   <img
                     class="avatar is-squared"
                     src="/images/photo/demo/tools/asana.svg"
@@ -283,7 +283,7 @@
             <input type="checkbox" />
             <div class="tool-card-inner">
               <div class="media-flex-center">
-                <div class="h-avatar">
+                <div class="v-avatar">
                   <img
                     class="avatar is-squared"
                     src="/images/photo/demo/tools/teamwork.svg"
@@ -313,7 +313,7 @@
             <input type="checkbox" />
             <div class="tool-card-inner">
               <div class="media-flex-center">
-                <div class="h-avatar">
+                <div class="v-avatar">
                   <img
                     class="avatar is-squared"
                     src="/images/photo/demo/tools/github.svg"
@@ -343,7 +343,7 @@
             <input type="checkbox" />
             <div class="tool-card-inner">
               <div class="media-flex-center">
-                <div class="h-avatar">
+                <div class="v-avatar">
                   <img
                     class="avatar is-squared"
                     src="/images/photo/demo/tools/gitlab.svg"

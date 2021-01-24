@@ -16,7 +16,7 @@ import { optionsCircle } from '/@src/composition/state/charts/apexcharts/example
             <div class="dashboard-tile">
               <div class="tile-head">
                 <h3 class="dark-inverted">Transactions</h3>
-                <div class="h-icon is-primary is-rounded is-small">
+                <div class="v-icon is-primary is-rounded is-small">
                   <i class="fas fa-gem"></i>
                 </div>
               </div>
@@ -36,7 +36,7 @@ import { optionsCircle } from '/@src/composition/state/charts/apexcharts/example
             <div class="dashboard-tile">
               <div class="tile-head">
                 <h3 class="dark-inverted">Subscriptions</h3>
-                <div class="h-icon is-orange is-rounded is-small">
+                <div class="v-icon is-orange is-rounded is-small">
                   <i class="fas fa-user-plus"></i>
                 </div>
               </div>
@@ -56,7 +56,7 @@ import { optionsCircle } from '/@src/composition/state/charts/apexcharts/example
             <div class="dashboard-tile">
               <div class="tile-head">
                 <h3 class="dark-inverted">Referals</h3>
-                <div class="h-icon is-green is-rounded is-small">
+                <div class="v-icon is-green is-rounded is-small">
                   <i class="fas fa-bullhorn"></i>
                 </div>
               </div>
@@ -183,7 +183,7 @@ import { optionsCircle } from '/@src/composition/state/charts/apexcharts/example
         <div class="widget contact-widget is-reversed is-straight">
           <div class="widget-content">
             <div class="left">
-              <div class="h-avatar is-medium">
+              <div class="v-avatar is-medium">
                 <img
                   class="avatar is-squared"
                   src="/images/avatars/photos/8.jpg"
@@ -308,7 +308,7 @@ import { optionsCircle } from '/@src/composition/state/charts/apexcharts/example
             </div>
             <div class="right">
               <div class="avatar-stack">
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/7.jpg"
@@ -318,7 +318,7 @@ import { optionsCircle } from '/@src/composition/state/charts/apexcharts/example
                     "
                   />
                 </div>
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/8.jpg"
@@ -328,7 +328,7 @@ import { optionsCircle } from '/@src/composition/state/charts/apexcharts/example
                     "
                   />
                 </div>
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/5.jpg"

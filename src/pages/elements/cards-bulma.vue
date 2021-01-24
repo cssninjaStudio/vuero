@@ -97,7 +97,7 @@ useHead({
                 </header>
                 <div class="card-content">
                   <div class="media-flex p-b-10">
-                    <div class="h-avatar is-medium">
+                    <div class="v-avatar is-medium">
                       <img
                         class="avatar is-squared"
                         src="/images/avatars/photos/19.jpg"
@@ -142,7 +142,7 @@ useHead({
                 </header>
                 <div class="card-content">
                   <div class="media-flex p-b-10">
-                    <div class="h-avatar is-medium">
+                    <div class="v-avatar is-medium">
                       <img
                         class="avatar is-squared"
                         src="/images/avatars/photos/5.jpg"
@@ -187,7 +187,7 @@ useHead({
                 </header>
                 <div class="card-content">
                   <div class="media-flex p-b-10">
-                    <div class="h-avatar is-medium">
+                    <div class="v-avatar is-medium">
                       <img
                         class="avatar is-squared"
                         src="/images/avatars/photos/36.jpg"
@@ -252,7 +252,7 @@ useHead({
                 </div>
                 <div class="card-content">
                   <div class="media-flex-center no-margin">
-                    <div class="h-avatar is-medium">
+                    <div class="v-avatar is-medium">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/19.jpg"
@@ -309,7 +309,7 @@ useHead({
                 </div>
                 <div class="card-content">
                   <div class="media-flex-center no-margin">
-                    <div class="h-avatar is-medium">
+                    <div class="v-avatar is-medium">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/23.jpg"
@@ -366,7 +366,7 @@ useHead({
                 </div>
                 <div class="card-content">
                   <div class="media-flex-center no-margin">
-                    <div class="h-avatar is-medium">
+                    <div class="v-avatar is-medium">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/12.jpg"

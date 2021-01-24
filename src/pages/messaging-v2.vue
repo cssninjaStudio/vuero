@@ -207,7 +207,7 @@ useHead({
         <!--Conversation Details-->
         <div class="detail-area" data-simplebar>
           <div class="chat-side-content is-single">
-            <div class="user-pic h-avatar is-large">
+            <div class="user-pic v-avatar is-large">
               <span class="avatar is-fake is-h-purple">
                 <span>WG</span>
               </span>
@@ -619,7 +619,7 @@ $overlay-bg-dark: linear-gradient(
           }
         }
 
-        .h-avatar {
+        .v-avatar {
           margin-right: 12px;
         }
 

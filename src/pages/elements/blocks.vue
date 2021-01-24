@@ -110,7 +110,7 @@ useHead({
                 <div class="control">
                   <div class="l-card">
                     <div class="media-flex">
-                      <div class="h-avatar">
+                      <div class="v-avatar">
                         <img
                           class="avatar"
                           src="/images/avatars/photos/9.jpg"
@@ -175,7 +175,7 @@ useHead({
                 <div class="control">
                   <div class="l-card">
                     <div class="media-flex">
-                      <div class="h-icon is-success is-rounded">
+                      <div class="v-icon is-success is-rounded">
                         <i class="iconify" data-icon="feather:clock"></i>
                       </div>
                       <div class="flex-meta">
@@ -234,7 +234,7 @@ useHead({
                 <div class="control">
                   <div class="l-card">
                     <div class="media-flex-center">
-                      <div class="h-avatar">
+                      <div class="v-avatar">
                         <img
                           class="avatar"
                           src="/images/avatars/photos/9.jpg"
@@ -299,7 +299,7 @@ useHead({
                 <div class="control">
                   <div class="l-card">
                     <div class="media-flex-center">
-                      <div class="h-icon is-medium is-info is-rounded">
+                      <div class="v-icon is-medium is-info is-rounded">
                         <i class="iconify" data-icon="feather:chrome"></i>
                       </div>
                       <div class="flex-meta">
@@ -362,7 +362,7 @@ useHead({
                 <div class="control">
                   <div class="l-card">
                     <div class="media-flex-center is-responsive-mobile">
-                      <div class="h-avatar">
+                      <div class="v-avatar">
                         <img
                           class="avatar"
                           src="/images/avatars/photos/9.jpg"
@@ -435,7 +435,7 @@ useHead({
                     <div
                       class="media-flex-center is-responsive-mobile is-responsive-tablet-p"
                     >
-                      <div class="h-icon is-medium is-info is-rounded">
+                      <div class="v-icon is-medium is-info is-rounded">
                         <i class="iconify" data-icon="feather:chrome"></i>
                       </div>
                       <div class="flex-meta">

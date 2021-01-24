@@ -159,7 +159,7 @@ document
 
                 <div class="card-head">
                   <div class="media-flex-center no-margin">
-                    <div class="h-avatar">
+                    <div class="v-avatar">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/19.jpg"
@@ -254,7 +254,7 @@ document
 
                 <div class="card-head">
                   <div class="media-flex-center no-margin">
-                    <div class="h-avatar">
+                    <div class="v-avatar">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/19.jpg"
@@ -349,7 +349,7 @@ document
 
                 <div class="card-head">
                   <div class="media-flex-center no-margin">
-                    <div class="h-avatar">
+                    <div class="v-avatar">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/19.jpg"
@@ -444,7 +444,7 @@ document
 
                 <div class="card-head">
                   <div class="media-flex-center no-margin">
-                    <div class="h-avatar">
+                    <div class="v-avatar">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/19.jpg"

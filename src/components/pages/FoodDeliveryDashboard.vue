@@ -1052,7 +1052,7 @@
           </div>
           <div class="cart-items has-slimscroll is-hidden">
             <div class="cart-item">
-              <div class="h-avatar is-medium">
+              <div class="v-avatar is-medium">
                 <img
                   class="avatar is-squared"
                   src="/images/photo/demo/food/1.jpg"
@@ -1068,7 +1068,7 @@
               </div>
             </div>
             <div class="cart-item">
-              <div class="h-avatar is-medium">
+              <div class="v-avatar is-medium">
                 <img
                   class="avatar is-squared"
                   src="/images/photo/demo/food/2.jpg"
@@ -1084,7 +1084,7 @@
               </div>
             </div>
             <div class="cart-item">
-              <div class="h-avatar is-medium">
+              <div class="v-avatar is-medium">
                 <img
                   class="avatar is-squared"
                   src="/images/photo/demo/food/3.jpg"
@@ -1182,7 +1182,7 @@
           <div class="widget contact-widget is-reversed">
             <div class="widget-content">
               <div class="left">
-                <div class="h-avatar is-medium">
+                <div class="v-avatar is-medium">
                   <img
                     class="avatar is-squared"
                     src="/images/avatars/photos/8.jpg"

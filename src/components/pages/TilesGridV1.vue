@@ -28,7 +28,7 @@
       <div class="column is-4">
         <div class="tile-grid-item">
           <div class="tile-grid-item-inner">
-            <div class="h-avatar is-medium">
+            <div class="v-avatar is-medium">
               <img
                 class="avatar"
                 src="/images/avatars/photos/29.jpg"
@@ -60,7 +60,7 @@
       <div class="column is-4">
         <div class="tile-grid-item">
           <div class="tile-grid-item-inner">
-            <div class="h-avatar is-medium">
+            <div class="v-avatar is-medium">
               <img
                 class="avatar"
                 src="/images/avatars/photos/21.jpg"
@@ -92,7 +92,7 @@
       <div class="column is-4">
         <div class="tile-grid-item">
           <div class="tile-grid-item-inner">
-            <div class="h-avatar is-medium">
+            <div class="v-avatar is-medium">
               <img
                 class="avatar"
                 src="/images/avatars/photos/8.jpg"
@@ -124,7 +124,7 @@
       <div class="column is-4">
         <div class="tile-grid-item">
           <div class="tile-grid-item-inner">
-            <div class="h-avatar is-medium">
+            <div class="v-avatar is-medium">
               <img
                 class="avatar"
                 src="/images/avatars/photos/7.jpg"
@@ -156,7 +156,7 @@
       <div class="column is-4">
         <div class="tile-grid-item">
           <div class="tile-grid-item-inner">
-            <div class="h-avatar is-medium">
+            <div class="v-avatar is-medium">
               <span class="avatar is-fake is-warning" data-user-popover="36">
                 <span>BT</span>
               </span>
@@ -182,7 +182,7 @@
       <div class="column is-4">
         <div class="tile-grid-item">
           <div class="tile-grid-item-inner">
-            <div class="h-avatar is-medium">
+            <div class="v-avatar is-medium">
               <img
                 class="avatar"
                 src="/images/avatars/photos/23.jpg"
@@ -214,7 +214,7 @@
       <div class="column is-4">
         <div class="tile-grid-item">
           <div class="tile-grid-item-inner">
-            <div class="h-avatar is-medium">
+            <div class="v-avatar is-medium">
               <img
                 class="avatar"
                 src="/images/avatars/photos/37.jpg"
@@ -246,7 +246,7 @@
       <div class="column is-4">
         <div class="tile-grid-item">
           <div class="tile-grid-item-inner">
-            <div class="h-avatar is-medium">
+            <div class="v-avatar is-medium">
               <img
                 class="avatar"
                 src="/images/avatars/photos/25.jpg"
@@ -278,7 +278,7 @@
       <div class="column is-4">
         <div class="tile-grid-item">
           <div class="tile-grid-item-inner">
-            <div class="h-avatar is-medium">
+            <div class="v-avatar is-medium">
               <img
                 class="avatar"
                 src="/images/avatars/photos/39.jpg"
@@ -310,7 +310,7 @@
       <div class="column is-4">
         <div class="tile-grid-item">
           <div class="tile-grid-item-inner">
-            <div class="h-avatar is-medium">
+            <div class="v-avatar is-medium">
               <img
                 class="avatar"
                 src="/images/avatars/photos/19.jpg"
@@ -342,7 +342,7 @@
       <div class="column is-4">
         <div class="tile-grid-item">
           <div class="tile-grid-item-inner">
-            <div class="h-avatar is-medium">
+            <div class="v-avatar is-medium">
               <img
                 class="avatar"
                 src="/images/avatars/photos/9.jpg"
@@ -374,7 +374,7 @@
       <div class="column is-4">
         <div class="tile-grid-item">
           <div class="tile-grid-item-inner">
-            <div class="h-avatar is-medium">
+            <div class="v-avatar is-medium">
               <span class="avatar is-fake is-success" data-user-popover="37">
                 <span>AT</span>
               </span>
@@ -400,7 +400,7 @@
       <div class="column is-4">
         <div class="tile-grid-item">
           <div class="tile-grid-item-inner">
-            <div class="h-avatar is-medium">
+            <div class="v-avatar is-medium">
               <span class="avatar is-fake is-h-purple" data-user-popover="35">
                 <span>SC</span>
               </span>
@@ -426,7 +426,7 @@
       <div class="column is-4">
         <div class="tile-grid-item">
           <div class="tile-grid-item-inner">
-            <div class="h-avatar is-medium">
+            <div class="v-avatar is-medium">
               <img
                 class="avatar"
                 src="/images/avatars/photos/5.jpg"
@@ -458,7 +458,7 @@
       <div class="column is-4">
         <div class="tile-grid-item">
           <div class="tile-grid-item-inner">
-            <div class="h-avatar is-medium">
+            <div class="v-avatar is-medium">
               <img
                 class="avatar"
                 src="/images/avatars/photos/32.jpg"
@@ -490,7 +490,7 @@
       <div class="column is-4">
         <div class="tile-grid-item">
           <div class="tile-grid-item-inner">
-            <div class="h-avatar is-medium">
+            <div class="v-avatar is-medium">
               <img
                 class="avatar"
                 src="/images/avatars/photos/36.jpg"
@@ -522,7 +522,7 @@
       <div class="column is-4">
         <div class="tile-grid-item">
           <div class="tile-grid-item-inner">
-            <div class="h-avatar is-medium">
+            <div class="v-avatar is-medium">
               <img
                 class="avatar"
                 src="/images/avatars/photos/38.jpg"
@@ -554,7 +554,7 @@
       <div class="column is-4">
         <div class="tile-grid-item">
           <div class="tile-grid-item-inner">
-            <div class="h-avatar is-medium">
+            <div class="v-avatar is-medium">
               <img
                 class="avatar"
                 src="/images/avatars/photos/26.jpg"
@@ -586,7 +586,7 @@
       <div class="column is-4">
         <div class="tile-grid-item">
           <div class="tile-grid-item-inner">
-            <div class="h-avatar is-medium">
+            <div class="v-avatar is-medium">
               <img
                 class="avatar"
                 src="/images/avatars/photos/16.jpg"
@@ -618,7 +618,7 @@
       <div class="column is-4">
         <div class="tile-grid-item">
           <div class="tile-grid-item-inner">
-            <div class="h-avatar is-medium">
+            <div class="v-avatar is-medium">
               <img
                 class="avatar"
                 src="/images/avatars/photos/28.jpg"
@@ -650,7 +650,7 @@
       <div class="column is-4">
         <div class="tile-grid-item">
           <div class="tile-grid-item-inner">
-            <div class="h-avatar is-medium">
+            <div class="v-avatar is-medium">
               <img
                 class="avatar"
                 src="/images/avatars/photos/22.jpg"
@@ -682,7 +682,7 @@
       <div class="column is-4">
         <div class="tile-grid-item">
           <div class="tile-grid-item-inner">
-            <div class="h-avatar is-medium">
+            <div class="v-avatar is-medium">
               <img
                 class="avatar"
                 src="/images/avatars/photos/13.jpg"
@@ -714,7 +714,7 @@
       <div class="column is-4">
         <div class="tile-grid-item">
           <div class="tile-grid-item-inner">
-            <div class="h-avatar is-medium">
+            <div class="v-avatar is-medium">
               <img
                 class="avatar"
                 src="/images/avatars/photos/24.jpg"
@@ -746,7 +746,7 @@
       <div class="column is-4">
         <div class="tile-grid-item">
           <div class="tile-grid-item-inner">
-            <div class="h-avatar is-medium">
+            <div class="v-avatar is-medium">
               <img
                 class="avatar"
                 src="/images/avatars/photos/27.jpg"
@@ -778,7 +778,7 @@
       <div class="column is-4">
         <div class="tile-grid-item">
           <div class="tile-grid-item-inner">
-            <div class="h-avatar is-medium">
+            <div class="v-avatar is-medium">
               <img
                 class="avatar"
                 src="/images/avatars/photos/11.jpg"
@@ -810,7 +810,7 @@
       <div class="column is-4">
         <div class="tile-grid-item">
           <div class="tile-grid-item-inner">
-            <div class="h-avatar is-medium">
+            <div class="v-avatar is-medium">
               <img
                 class="avatar"
                 src="/images/avatars/photos/15.jpg"
@@ -842,7 +842,7 @@
       <div class="column is-4">
         <div class="tile-grid-item">
           <div class="tile-grid-item-inner">
-            <div class="h-avatar is-medium">
+            <div class="v-avatar is-medium">
               <img
                 class="avatar"
                 src="/images/avatars/photos/14.jpg"
@@ -874,7 +874,7 @@
       <div class="column is-4">
         <div class="tile-grid-item">
           <div class="tile-grid-item-inner">
-            <div class="h-avatar is-medium">
+            <div class="v-avatar is-medium">
               <img
                 class="avatar"
                 src="/images/avatars/photos/10.jpg"
@@ -906,7 +906,7 @@
       <div class="column is-4">
         <div class="tile-grid-item">
           <div class="tile-grid-item-inner">
-            <div class="h-avatar is-medium">
+            <div class="v-avatar is-medium">
               <img
                 class="avatar"
                 src="/images/avatars/photos/18.jpg"

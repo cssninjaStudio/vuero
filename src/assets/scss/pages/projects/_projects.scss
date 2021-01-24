@@ -181,7 +181,7 @@
           .developers {
             display: flex;
 
-            .h-avatar {
+            .v-avatar {
               margin-right: 6px;
             }
           }
@@ -562,7 +562,7 @@
             }
           }
 
-          .h-avatar {
+          .v-avatar {
             img {
               border-color: lighten($dark-sidebar, 6%);
             }
@@ -609,7 +609,7 @@
               .developers {
                 justify-content: center;
 
-                .h-avatar {
+                .v-avatar {
                   margin: 0 4px;
                 }
               }

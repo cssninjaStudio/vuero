@@ -59,7 +59,7 @@ const props = defineProps({
   >
     <div class="widget-content">
       <div class="left">
-        <Avatar size="medium" :picture="props.picture" :squared="squared" />
+        <V-Avatar size="medium" :picture="props.picture" :squared="squared" />
       </div>
       <div class="right">
         <h3>{{ props.username }}</h3>

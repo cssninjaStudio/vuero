@@ -233,7 +233,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                 <!--Item-->
                 <div class="search-results-item">
                   <div class="media-flex-center">
-                    <div class="h-avatar is-medium">
+                    <div class="v-avatar is-medium">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/7.jpg"
@@ -268,7 +268,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                 <!--Item-->
                 <div class="search-results-item">
                   <div class="media-flex-center">
-                    <div class="h-avatar is-medium">
+                    <div class="v-avatar is-medium">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/5.jpg"
@@ -303,7 +303,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                 <!--Item-->
                 <div class="search-results-item">
                   <div class="media-flex-center">
-                    <div class="h-avatar is-medium">
+                    <div class="v-avatar is-medium">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/14.jpg"
@@ -338,7 +338,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                 <!--Item-->
                 <div class="search-results-item">
                   <div class="media-flex-center">
-                    <div class="h-avatar is-medium">
+                    <div class="v-avatar is-medium">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/23.jpg"
@@ -373,7 +373,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                 <!--Item-->
                 <div class="search-results-item">
                   <div class="media-flex-center">
-                    <div class="h-avatar is-medium">
+                    <div class="v-avatar is-medium">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/32.jpg"
@@ -408,7 +408,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                 <!--Item-->
                 <div class="search-results-item">
                   <div class="media-flex-center">
-                    <div class="h-avatar is-medium">
+                    <div class="v-avatar is-medium">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/39.jpg"
@@ -443,7 +443,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                 <!--Item-->
                 <div class="search-results-item">
                   <div class="media-flex-center">
-                    <div class="h-avatar is-medium">
+                    <div class="v-avatar is-medium">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/19.jpg"
@@ -491,7 +491,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                 <!--Item-->
                 <div class="search-results-item">
                   <div class="media-flex-center">
-                    <div class="h-avatar is-medium">
+                    <div class="v-avatar is-medium">
                       <img
                         class="avatar"
                         src="/images/photo/demo/apps/1.jpg"
@@ -516,7 +516,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                 <!--Item-->
                 <div class="search-results-item">
                   <div class="media-flex-center">
-                    <div class="h-avatar is-medium">
+                    <div class="v-avatar is-medium">
                       <img
                         class="avatar"
                         src="/images/photo/demo/apps/2.png"
@@ -541,7 +541,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                 <!--Item-->
                 <div class="search-results-item">
                   <div class="media-flex-center">
-                    <div class="h-avatar is-medium">
+                    <div class="v-avatar is-medium">
                       <img
                         class="avatar is-squared"
                         src="/images/icons/files/sheet.svg"
@@ -566,7 +566,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                 <!--Item-->
                 <div class="search-results-item">
                   <div class="media-flex-center">
-                    <div class="h-avatar is-medium">
+                    <div class="v-avatar is-medium">
                       <img
                         class="avatar"
                         src="/images/photo/demo/apps/3.png"
@@ -591,7 +591,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                 <!--Item-->
                 <div class="search-results-item">
                   <div class="media-flex-center">
-                    <div class="h-avatar is-medium">
+                    <div class="v-avatar is-medium">
                       <img
                         class="avatar"
                         src="/images/photo/demo/apps/4.png"
@@ -616,7 +616,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                 <!--Item-->
                 <div class="search-results-item">
                   <div class="media-flex-center">
-                    <div class="h-avatar is-medium">
+                    <div class="v-avatar is-medium">
                       <img
                         class="avatar is-squared"
                         src="/images/icons/files/doc-2.svg"
@@ -641,7 +641,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                 <!--Item-->
                 <div class="search-results-item">
                   <div class="media-flex-center">
-                    <div class="h-avatar is-medium">
+                    <div class="v-avatar is-medium">
                       <img
                         class="avatar is-squared"
                         src="/images/icons/files/pdf.svg"
@@ -666,7 +666,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                 <!--Item-->
                 <div class="search-results-item">
                   <div class="media-flex-center">
-                    <div class="h-avatar is-medium">
+                    <div class="v-avatar is-medium">
                       <img
                         class="avatar"
                         src="/images/photo/demo/apps/5.png"
@@ -691,7 +691,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                 <!--Item-->
                 <div class="search-results-item">
                   <div class="media-flex-center">
-                    <div class="h-avatar is-medium">
+                    <div class="v-avatar is-medium">
                       <img
                         class="avatar is-squared"
                         src="/images/icons/files/ai.svg"
@@ -728,7 +728,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                 <!--Item-->
                 <div class="search-results-item">
                   <div class="media-flex-center">
-                    <div class="h-avatar is-medium">
+                    <div class="v-avatar is-medium">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/7.jpg"
@@ -763,7 +763,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                 <!--Item-->
                 <div class="search-results-item">
                   <div class="media-flex-center">
-                    <div class="h-avatar is-medium">
+                    <div class="v-avatar is-medium">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/5.jpg"
@@ -798,7 +798,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                 <!--Item-->
                 <div class="search-results-item">
                   <div class="media-flex-center">
-                    <div class="h-avatar is-medium">
+                    <div class="v-avatar is-medium">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/14.jpg"
@@ -833,7 +833,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                 <!--Item-->
                 <div class="search-results-item">
                   <div class="media-flex-center">
-                    <div class="h-avatar is-medium">
+                    <div class="v-avatar is-medium">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/23.jpg"
@@ -868,7 +868,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                 <!--Item-->
                 <div class="search-results-item">
                   <div class="media-flex-center">
-                    <div class="h-avatar is-medium">
+                    <div class="v-avatar is-medium">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/32.jpg"
@@ -903,7 +903,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                 <!--Item-->
                 <div class="search-results-item">
                   <div class="media-flex-center">
-                    <div class="h-avatar is-medium">
+                    <div class="v-avatar is-medium">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/39.jpg"
@@ -938,7 +938,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                 <!--Item-->
                 <div class="search-results-item">
                   <div class="media-flex-center">
-                    <div class="h-avatar is-medium">
+                    <div class="v-avatar is-medium">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/19.jpg"
@@ -985,7 +985,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                 <!--Item-->
                 <div class="search-results-item">
                   <div class="media-flex-center">
-                    <div class="h-avatar is-medium">
+                    <div class="v-avatar is-medium">
                       <img
                         class="avatar"
                         src="/images/photo/demo/apps/1.jpg"
@@ -1010,7 +1010,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                 <!--Item-->
                 <div class="search-results-item">
                   <div class="media-flex-center">
-                    <div class="h-avatar is-medium">
+                    <div class="v-avatar is-medium">
                       <img
                         class="avatar"
                         src="/images/photo/demo/apps/2.png"
@@ -1035,7 +1035,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                 <!--Item-->
                 <div class="search-results-item">
                   <div class="media-flex-center">
-                    <div class="h-avatar is-medium">
+                    <div class="v-avatar is-medium">
                       <img
                         class="avatar is-squared"
                         src="/images/icons/files/sheet.svg"
@@ -1060,7 +1060,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                 <!--Item-->
                 <div class="search-results-item">
                   <div class="media-flex-center">
-                    <div class="h-avatar is-medium">
+                    <div class="v-avatar is-medium">
                       <img
                         class="avatar"
                         src="/images/photo/demo/apps/3.png"
@@ -1085,7 +1085,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                 <!--Item-->
                 <div class="search-results-item">
                   <div class="media-flex-center">
-                    <div class="h-avatar is-medium">
+                    <div class="v-avatar is-medium">
                       <img
                         class="avatar"
                         src="/images/photo/demo/apps/4.png"
@@ -1110,7 +1110,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                 <!--Item-->
                 <div class="search-results-item">
                   <div class="media-flex-center">
-                    <div class="h-avatar is-medium">
+                    <div class="v-avatar is-medium">
                       <img
                         class="avatar is-squared"
                         src="/images/icons/files/doc-2.svg"
@@ -1135,7 +1135,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                 <!--Item-->
                 <div class="search-results-item">
                   <div class="media-flex-center">
-                    <div class="h-avatar is-medium">
+                    <div class="v-avatar is-medium">
                       <img
                         class="avatar is-squared"
                         src="/images/icons/files/pdf.svg"
@@ -1160,7 +1160,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                 <!--Item-->
                 <div class="search-results-item">
                   <div class="media-flex-center">
-                    <div class="h-avatar is-medium">
+                    <div class="v-avatar is-medium">
                       <img
                         class="avatar"
                         src="/images/photo/demo/apps/5.png"
@@ -1185,7 +1185,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                 <!--Item-->
                 <div class="search-results-item">
                   <div class="media-flex-center">
-                    <div class="h-avatar is-medium">
+                    <div class="v-avatar is-medium">
                       <img
                         class="avatar is-squared"
                         src="/images/icons/files/ai.svg"

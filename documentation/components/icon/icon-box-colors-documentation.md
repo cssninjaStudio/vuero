@@ -1,44 +1,44 @@
 ### Box colors
 
-The Vuero `<IconBox />` component can have different colors. You can change the color by passing a value to the `color` prop. Available values are: `primary`, `info`, `success`, `warning`, `danger`, `purple`, `yellow`, `orange`, `green`, `red`, or `blue`.
+The Vuero `<V-IconBox />` component can have different colors. You can change the color by passing a value to the `color` prop. Available values are: `primary`, `info`, `success`, `warning`, `danger`, `purple`, `yellow`, `orange`, `green`, `red`, or `blue`.
 
 <!--code-->
 
 ```vue {2-4}
 <template>
-  <IconBox size="medium" color="primary">
+  <V-IconBox size="medium" color="primary">
     <i class="lnil lnil-vector-pen"></i>
-  </IconBox>
-  <IconBox size="medium" color="info">
+  </V-IconBox>
+  <V-IconBox size="medium" color="info">
     <i class="lnil lnil-vector-pen"></i>
-  </IconBox>
-  <IconBox size="medium" color="success">
+  </V-IconBox>
+  <V-IconBox size="medium" color="success">
     <i class="lnil lnil-vector-pen"></i>
-  </IconBox>
-  <IconBox size="medium" color="warning">
+  </V-IconBox>
+  <V-IconBox size="medium" color="warning">
     <i class="lnil lnil-vector-pen"></i>
-  </IconBox>
-  <IconBox size="medium" color="danger">
+  </V-IconBox>
+  <V-IconBox size="medium" color="danger">
     <i class="lnil lnil-vector-pen"></i>
-  </IconBox>
-  <IconBox size="medium" color="purple">
+  </V-IconBox>
+  <V-IconBox size="medium" color="purple">
     <i class="lnil lnil-vector-pen"></i>
-  </IconBox>
-  <IconBox size="medium" color="yellow">
+  </V-IconBox>
+  <V-IconBox size="medium" color="yellow">
     <i class="lnil lnil-vector-pen"></i>
-  </IconBox>
-  <IconBox size="medium" color="orange">
+  </V-IconBox>
+  <V-IconBox size="medium" color="orange">
     <i class="lnil lnil-vector-pen"></i>
-  </IconBox>
-  <IconBox size="medium" color="green">
+  </V-IconBox>
+  <V-IconBox size="medium" color="green">
     <i class="lnil lnil-vector-pen"></i>
-  </IconBox>
-  <IconBox size="medium" color="red">
+  </V-IconBox>
+  <V-IconBox size="medium" color="red">
     <i class="lnil lnil-vector-pen"></i>
-  </IconBox>
-  <IconBox size="medium" color="blue">
+  </V-IconBox>
+  <V-IconBox size="medium" color="blue">
     <i class="lnil lnil-vector-pen"></i>
-  </IconBox>
+  <V-IconBox>
 </template>
 ```
 
@@ -47,39 +47,39 @@ The Vuero `<IconBox />` component can have different colors. You can change the 
 <!--example-->
 
 <div class="icon-boxes">
-    <IconBox size="medium" color="primary">
+    <V-IconBox size="medium" color="primary">
         <i class="lnil lnil-vector-pen"></i>
-    </IconBox>
-    <IconBox size="medium" color="info">
+    </V-IconBox>
+    <V-IconBox size="medium" color="info">
         <i class="lnil lnil-vector-pen"></i>
-    </IconBox>
-    <IconBox size="medium" color="success">
+    </V-IconBox>
+    <V-IconBox size="medium" color="success">
         <i class="lnil lnil-vector-pen"></i>
-    </IconBox>
-    <IconBox size="medium" color="warning">
+    </V-IconBox>
+    <V-IconBox size="medium" color="warning">
         <i class="lnil lnil-vector-pen"></i>
-    </IconBox>
-    <IconBox size="medium" color="danger">
+    </V-IconBox>
+    <V-IconBox size="medium" color="danger">
         <i class="lnil lnil-vector-pen"></i>
-    </IconBox>
-    <IconBox size="medium" color="purple">
+    </V-IconBox>
+    <V-IconBox size="medium" color="purple">
         <i class="lnil lnil-vector-pen"></i>
-    </IconBox>
-    <IconBox size="medium" color="yellow">
+    </V-IconBox>
+    <V-IconBox size="medium" color="yellow">
         <i class="lnil lnil-vector-pen"></i>
-    </IconBox>
-    <IconBox size="medium" color="orange">
+    </V-IconBox>
+    <V-IconBox size="medium" color="orange">
         <i class="lnil lnil-vector-pen"></i>
-    </IconBox>
-    <IconBox size="medium" color="green">
+    </V-IconBox>
+    <V-IconBox size="medium" color="green">
         <i class="lnil lnil-vector-pen"></i>
-    </IconBox>
-    <IconBox size="medium" color="red">
+    </V-IconBox>
+    <V-IconBox size="medium" color="red">
         <i class="lnil lnil-vector-pen"></i>
-    </IconBox>
-    <IconBox size="medium" color="blue">
+    </V-IconBox>
+    <V-IconBox size="medium" color="blue">
         <i class="lnil lnil-vector-pen"></i>
-    </IconBox>
+    </V-IconBox>
 </div>
 
 <!--/example-->

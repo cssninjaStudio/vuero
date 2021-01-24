@@ -115,7 +115,7 @@
             </div>
             <div class="flex-table-cell" data-th="Contacts">
               <div class="avatar-stack is-pushed-mobile">
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/7.jpg"
@@ -125,12 +125,12 @@
                     "
                   />
                 </div>
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <span class="avatar is-fake is-info">
                     <span>JD</span>
                   </span>
                 </div>
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/12.jpg"
@@ -140,7 +140,7 @@
                     "
                   />
                 </div>
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <span class="avatar is-more">
                     <span class="inner">
                       <span>+2</span>
@@ -170,7 +170,7 @@
             </div>
             <div class="flex-table-cell" data-th="Contacts">
               <div class="avatar-stack is-pushed-mobile">
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <span class="avatar is-fake is-danger">
                     <span>SC</span>
                   </span>
@@ -198,12 +198,12 @@
             </div>
             <div class="flex-table-cell" data-th="Contacts">
               <div class="avatar-stack is-pushed-mobile">
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <span class="avatar is-fake is-success">
                     <span>BT</span>
                   </span>
                 </div>
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/8.jpg"
@@ -236,7 +236,7 @@
             </div>
             <div class="flex-table-cell" data-th="Contacts">
               <div class="avatar-stack is-pushed-mobile">
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/13.jpg"
@@ -269,7 +269,7 @@
             </div>
             <div class="flex-table-cell" data-th="Contacts">
               <div class="avatar-stack is-pushed-mobile">
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/11.jpg"
@@ -279,7 +279,7 @@
                     "
                   />
                 </div>
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/16.jpg"
@@ -289,7 +289,7 @@
                     "
                   />
                 </div>
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/19.jpg"

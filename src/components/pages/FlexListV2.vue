@@ -55,7 +55,7 @@ const props = defineProps({
           <!--Table item-->
           <div class="flex-table-item">
             <div class="flex-table-cell is-media is-grow">
-              <div class="h-avatar">
+              <div class="v-avatar">
                 <img
                   class="avatar"
                   src="/images/photo/demo/abstracts/1.png"
@@ -88,7 +88,7 @@ const props = defineProps({
             </div>
             <div class="flex-table-cell" data-th="Relations">
               <div class="avatar-stack is-pushed-mobile">
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/7.jpg"
@@ -99,12 +99,12 @@ const props = defineProps({
                     "
                   />
                 </div>
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <span class="avatar is-fake is-info" data-user-popover="34">
                     <span>JD</span>
                   </span>
                 </div>
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/27.jpg"
@@ -115,7 +115,7 @@ const props = defineProps({
                     "
                   />
                 </div>
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <span class="avatar is-more">
                     <span class="inner">
                       <span>+2</span>
@@ -132,7 +132,7 @@ const props = defineProps({
           <!--Table item-->
           <div class="flex-table-item">
             <div class="flex-table-cell is-media is-grow">
-              <div class="h-avatar">
+              <div class="v-avatar">
                 <img
                   class="avatar"
                   src="/images/photo/demo/abstracts/3.png"
@@ -165,7 +165,7 @@ const props = defineProps({
             </div>
             <div class="flex-table-cell" data-th="Team">
               <div class="avatar-stack is-pushed-mobile">
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <span class="avatar is-fake is-danger" data-user-popover="35">
                     <span>SC</span>
                   </span>
@@ -180,7 +180,7 @@ const props = defineProps({
           <!--Table item-->
           <div class="flex-table-item">
             <div class="flex-table-cell is-media is-grow">
-              <div class="h-avatar">
+              <div class="v-avatar">
                 <img
                   class="avatar"
                   src="/images/photo/demo/abstracts/2.png"
@@ -213,7 +213,7 @@ const props = defineProps({
             </div>
             <div class="flex-table-cell" data-th="Team">
               <div class="avatar-stack is-pushed-mobile">
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/25.jpg"
@@ -224,7 +224,7 @@ const props = defineProps({
                     "
                   />
                 </div>
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <span
                     class="avatar is-fake is-warning"
                     data-user-popover="37"
@@ -232,7 +232,7 @@ const props = defineProps({
                     <span>AT</span>
                   </span>
                 </div>
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/19.jpg"
@@ -243,7 +243,7 @@ const props = defineProps({
                     "
                   />
                 </div>
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <span class="avatar is-more">
                     <span class="inner">
                       <span>+6</span>
@@ -260,7 +260,7 @@ const props = defineProps({
           <!--Table item-->
           <div class="flex-table-item">
             <div class="flex-table-cell is-media is-grow">
-              <div class="h-avatar">
+              <div class="v-avatar">
                 <img
                   class="avatar"
                   src="/images/photo/demo/abstracts/4.png"
@@ -293,7 +293,7 @@ const props = defineProps({
             </div>
             <div class="flex-table-cell" data-th="Team">
               <div class="avatar-stack is-pushed-mobile">
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <span
                     class="avatar is-fake is-success"
                     data-user-popover="36"
@@ -301,7 +301,7 @@ const props = defineProps({
                     <span>BT</span>
                   </span>
                 </div>
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <span
                     class="avatar is-fake is-warning"
                     data-user-popover="37"
@@ -309,7 +309,7 @@ const props = defineProps({
                     <span>AT</span>
                   </span>
                 </div>
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/19.jpg"
@@ -330,7 +330,7 @@ const props = defineProps({
           <!--Table item-->
           <div class="flex-table-item">
             <div class="flex-table-cell is-media is-grow">
-              <div class="h-avatar">
+              <div class="v-avatar">
                 <img
                   class="avatar"
                   src="/images/photo/demo/abstracts/6.png"
@@ -363,7 +363,7 @@ const props = defineProps({
             </div>
             <div class="flex-table-cell" data-th="Team">
               <div class="avatar-stack is-pushed-mobile">
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/18.jpg"
@@ -384,7 +384,7 @@ const props = defineProps({
           <!--Table item-->
           <div class="flex-table-item">
             <div class="flex-table-cell is-media is-grow">
-              <div class="h-avatar">
+              <div class="v-avatar">
                 <img
                   class="avatar"
                   src="/images/photo/demo/abstracts/5.png"
@@ -417,7 +417,7 @@ const props = defineProps({
             </div>
             <div class="flex-table-cell" data-th="Team">
               <div class="avatar-stack is-pushed-mobile">
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/36.jpg"
@@ -428,7 +428,7 @@ const props = defineProps({
                     "
                   />
                 </div>
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/24.jpg"
@@ -449,7 +449,7 @@ const props = defineProps({
           <!--Table item-->
           <div class="flex-table-item">
             <div class="flex-table-cell is-media is-grow">
-              <div class="h-avatar">
+              <div class="v-avatar">
                 <img
                   class="avatar"
                   src="/images/photo/demo/abstracts/7.png"
@@ -482,7 +482,7 @@ const props = defineProps({
             </div>
             <div class="flex-table-cell" data-th="Team">
               <div class="avatar-stack is-pushed-mobile">
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/25.jpg"
@@ -493,7 +493,7 @@ const props = defineProps({
                     "
                   />
                 </div>
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/11.jpg"
@@ -504,7 +504,7 @@ const props = defineProps({
                     "
                   />
                 </div>
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/5.jpg"
@@ -515,7 +515,7 @@ const props = defineProps({
                     "
                   />
                 </div>
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <span class="avatar is-more">
                     <span class="inner">
                       <span>+2</span>
@@ -532,7 +532,7 @@ const props = defineProps({
           <!--Table item-->
           <div class="flex-table-item">
             <div class="flex-table-cell is-media is-grow">
-              <div class="h-avatar">
+              <div class="v-avatar">
                 <img
                   class="avatar"
                   src="/images/photo/demo/abstracts/8.png"
@@ -565,7 +565,7 @@ const props = defineProps({
             </div>
             <div class="flex-table-cell" data-th="Relations">
               <div class="avatar-stack is-pushed-mobile">
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/25.jpg"
@@ -576,7 +576,7 @@ const props = defineProps({
                     "
                   />
                 </div>
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/13.jpg"
@@ -587,7 +587,7 @@ const props = defineProps({
                     "
                   />
                 </div>
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/5.jpg"
@@ -608,7 +608,7 @@ const props = defineProps({
           <!--Table item-->
           <div class="flex-table-item">
             <div class="flex-table-cell is-media is-grow">
-              <div class="h-avatar">
+              <div class="v-avatar">
                 <img
                   class="avatar"
                   src="/images/photo/demo/abstracts/9.png"
@@ -641,7 +641,7 @@ const props = defineProps({
             </div>
             <div class="flex-table-cell" data-th="Relations">
               <div class="avatar-stack is-pushed-mobile">
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/25.jpg"
@@ -662,7 +662,7 @@ const props = defineProps({
           <!--Table item-->
           <div class="flex-table-item">
             <div class="flex-table-cell is-media is-grow">
-              <div class="h-avatar">
+              <div class="v-avatar">
                 <img
                   class="avatar"
                   src="/images/photo/demo/abstracts/10.png"
@@ -695,7 +695,7 @@ const props = defineProps({
             </div>
             <div class="flex-table-cell" data-th="Team">
               <div class="avatar-stack is-pushed-mobile">
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/7.jpg"
@@ -706,12 +706,12 @@ const props = defineProps({
                     "
                   />
                 </div>
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <span class="avatar is-fake is-info" data-user-popover="34">
                     <span>JD</span>
                   </span>
                 </div>
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/27.jpg"
@@ -722,7 +722,7 @@ const props = defineProps({
                     "
                   />
                 </div>
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <span class="avatar is-more">
                     <span class="inner">
                       <span>+2</span>

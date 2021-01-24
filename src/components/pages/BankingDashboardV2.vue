@@ -293,7 +293,7 @@ import { expensesOptions } from '/@src/composition/state/charts/apexcharts/examp
             <div class="transactions">
               <!--Transaction-->
               <div class="media-flex-center">
-                <div class="h-icon is-green is-rounded">
+                <div class="v-icon is-green is-rounded">
                   <i class="lnil lnil-service"></i>
                 </div>
                 <div class="flex-meta is-lighter">
@@ -306,7 +306,7 @@ import { expensesOptions } from '/@src/composition/state/charts/apexcharts/examp
               </div>
               <!--Transaction-->
               <div class="media-flex-center">
-                <div class="h-icon is-orange is-rounded">
+                <div class="v-icon is-orange is-rounded">
                   <i class="lnil lnil-analytics-alt-1"></i>
                 </div>
                 <div class="flex-meta is-lighter">
@@ -319,7 +319,7 @@ import { expensesOptions } from '/@src/composition/state/charts/apexcharts/examp
               </div>
               <!--Transaction-->
               <div class="media-flex-center">
-                <div class="h-icon is-purple is-rounded">
+                <div class="v-icon is-purple is-rounded">
                   <i class="lnil lnil-cart-alt"></i>
                 </div>
                 <div class="flex-meta is-lighter">

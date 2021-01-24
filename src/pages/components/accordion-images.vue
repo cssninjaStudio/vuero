@@ -81,7 +81,7 @@ useHead({
           <AccordionImageDocumentation />
         </div>
         <div class="column is-12">
-          <AccordionImage :items="accordionImagesData" />
+          <V-AccordionImage :items="accordionImagesData" />
         </div>
       </div>
     </div>

@@ -12,7 +12,7 @@ const props = defineProps({
 <template>
   <div class="widget-content">
     <div class="tags">
-      <Tag
+      <V-Tag
         v-for="tag in tags"
         :key="tag.id"
         :color="tag.color"

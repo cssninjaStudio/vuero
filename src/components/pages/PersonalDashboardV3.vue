@@ -40,7 +40,7 @@ import { interviewsOptions } from '/@src/composition/state/charts/apexcharts/exa
                 <div class="column is-6">
                   <div class="dashboard-card">
                     <div class="media-flex-center">
-                      <div class="h-icon is-info is-rounded">
+                      <div class="v-icon is-info is-rounded">
                         <i class="iconify" data-icon="feather:clock"></i>
                       </div>
                       <div class="flex-meta">
@@ -53,7 +53,7 @@ import { interviewsOptions } from '/@src/composition/state/charts/apexcharts/exa
                 <div class="column is-6">
                   <div class="dashboard-card">
                     <div class="media-flex-center">
-                      <div class="h-icon is-purple is-rounded">
+                      <div class="v-icon is-purple is-rounded">
                         <i class="iconify" data-icon="feather:radio"></i>
                       </div>
                       <div class="flex-meta">
@@ -66,7 +66,7 @@ import { interviewsOptions } from '/@src/composition/state/charts/apexcharts/exa
                 <div class="column is-6">
                   <div class="dashboard-card">
                     <div class="media-flex-center">
-                      <div class="h-icon is-green is-rounded">
+                      <div class="v-icon is-green is-rounded">
                         <i class="iconify" data-icon="feather:user-check"></i>
                       </div>
                       <div class="flex-meta">
@@ -79,7 +79,7 @@ import { interviewsOptions } from '/@src/composition/state/charts/apexcharts/exa
                 <div class="column is-6">
                   <div class="dashboard-card">
                     <div class="media-flex-center">
-                      <div class="h-icon is-orange is-rounded">
+                      <div class="v-icon is-orange is-rounded">
                         <i class="iconify" data-icon="feather:frown"></i>
                       </div>
                       <div class="flex-meta">
@@ -101,7 +101,7 @@ import { interviewsOptions } from '/@src/composition/state/charts/apexcharts/exa
                 </div>
                 <div class="right">
                   <div class="avatar-stack">
-                    <div class="h-avatar">
+                    <div class="v-avatar">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/5.jpg"
@@ -113,7 +113,7 @@ import { interviewsOptions } from '/@src/composition/state/charts/apexcharts/exa
                         "
                       />
                     </div>
-                    <div class="h-avatar">
+                    <div class="v-avatar">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/18.jpg"
@@ -125,7 +125,7 @@ import { interviewsOptions } from '/@src/composition/state/charts/apexcharts/exa
                         "
                       />
                     </div>
-                    <div class="h-avatar">
+                    <div class="v-avatar">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/26.jpg"
@@ -137,7 +137,7 @@ import { interviewsOptions } from '/@src/composition/state/charts/apexcharts/exa
                         "
                       />
                     </div>
-                    <div class="h-avatar">
+                    <div class="v-avatar">
                       <span class="avatar is-more">
                         <span class="inner">
                           <span>+20</span>
@@ -257,7 +257,7 @@ import { interviewsOptions } from '/@src/composition/state/charts/apexcharts/exa
 
         <a href="#" class="dashboard-card is-interview">
           <div class="media-flex-center">
-            <div class="h-avatar">
+            <div class="v-avatar">
               <img
                 class="avatar"
                 src="/images/avatars/photos/32.jpg"
@@ -279,7 +279,7 @@ import { interviewsOptions } from '/@src/composition/state/charts/apexcharts/exa
         </a>
         <a href="#" class="dashboard-card is-interview">
           <div class="media-flex-center">
-            <div class="h-avatar">
+            <div class="v-avatar">
               <img
                 class="avatar"
                 src="/images/avatars/photos/19.jpg"
@@ -301,7 +301,7 @@ import { interviewsOptions } from '/@src/composition/state/charts/apexcharts/exa
         </a>
         <a href="#" class="dashboard-card is-interview">
           <div class="media-flex-center">
-            <div class="h-avatar">
+            <div class="v-avatar">
               <img
                 class="avatar"
                 src="/images/avatars/photos/12.jpg"

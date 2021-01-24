@@ -90,7 +90,7 @@ useHead({
                 <div class="card-head">
                   <div class="left">
                     <div class="media-flex-center no-margin">
-                      <div class="h-avatar">
+                      <div class="v-avatar">
                         <img
                           class="avatar"
                           src="/images/avatars/photos/19.jpg"
@@ -119,7 +119,7 @@ useHead({
                   </div>
                   <div class="right">
                     <div class="avatar-stack">
-                      <div class="h-avatar is-small">
+                      <div class="v-avatar is-small">
                         <img
                           class="avatar"
                           src="/images/avatars/photos/12.jpg"
@@ -132,7 +132,7 @@ useHead({
                           "
                         />
                       </div>
-                      <div class="h-avatar is-small">
+                      <div class="v-avatar is-small">
                         <img
                           class="avatar"
                           src="/images/avatars/photos/22.jpg"
@@ -144,7 +144,7 @@ useHead({
                           "
                         />
                       </div>
-                      <div class="h-avatar is-small">
+                      <div class="v-avatar is-small">
                         <img
                           class="avatar"
                           src="/images/avatars/photos/40.jpg"
@@ -156,7 +156,7 @@ useHead({
                           "
                         />
                       </div>
-                      <div class="h-avatar is-small">
+                      <div class="v-avatar is-small">
                         <span class="avatar is-more">
                           <span class="inner">
                             <span>+5</span>
@@ -211,7 +211,7 @@ useHead({
                 <div class="card-foot">
                   <div class="left">
                     <div class="media-flex-center no-margin">
-                      <div class="h-avatar">
+                      <div class="v-avatar">
                         <img
                           class="avatar"
                           src="/images/avatars/photos/19.jpg"
@@ -240,7 +240,7 @@ useHead({
                   </div>
                   <div class="right">
                     <div class="avatar-stack">
-                      <div class="h-avatar is-small">
+                      <div class="v-avatar is-small">
                         <img
                           class="avatar"
                           src="/images/avatars/photos/12.jpg"
@@ -253,7 +253,7 @@ useHead({
                           "
                         />
                       </div>
-                      <div class="h-avatar is-small">
+                      <div class="v-avatar is-small">
                         <img
                           class="avatar"
                           src="/images/avatars/photos/22.jpg"
@@ -265,7 +265,7 @@ useHead({
                           "
                         />
                       </div>
-                      <div class="h-avatar is-small">
+                      <div class="v-avatar is-small">
                         <img
                           class="avatar"
                           src="/images/avatars/photos/40.jpg"
@@ -277,7 +277,7 @@ useHead({
                           "
                         />
                       </div>
-                      <div class="h-avatar is-small">
+                      <div class="v-avatar is-small">
                         <span class="avatar is-more">
                           <span class="inner">
                             <span>+5</span>
@@ -311,7 +311,7 @@ useHead({
                 <div class="card-foot">
                   <div class="left">
                     <div class="media-flex-center no-margin">
-                      <div class="h-avatar">
+                      <div class="v-avatar">
                         <img
                           class="avatar"
                           src="/images/avatars/photos/19.jpg"

@@ -206,7 +206,7 @@
               margin-left: 10px;
               margin-top: 4px;
 
-              .h-avatar {
+              .v-avatar {
                 width: 26px !important;
                 min-width: 26px !important;
                 height: 26px !important;
@@ -225,7 +225,7 @@
           }
         }
 
-        .h-avatar {
+        .v-avatar {
           .avatar.is-fake {
             span {
               margin: 0;
@@ -312,7 +312,7 @@
       .flex-table-cell {
         &.is-user,
         &.is-media {
-          .h-avatar {
+          .v-avatar {
             .badge {
               border-color: lighten($dark-sidebar, 6%) !important;
             }
@@ -335,7 +335,7 @@
         }
 
         .avatar-stack {
-          .h-avatar {
+          .v-avatar {
             border-color: lighten($dark-sidebar, 6%);
 
             .is-more {

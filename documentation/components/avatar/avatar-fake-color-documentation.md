@@ -6,18 +6,18 @@ Fake avatars can have different colors to break monotony. You can change the ava
 
 ```vue {2-4}
 <template>
-  <Avatar initials="CT" size="medium"/>
-  <Avatar initials="CT" size="medium" color="primary" />
-  <Avatar initials="CT" size="medium" color="success" />
-  <Avatar initials="CT" size="medium" color="info" />
-  <Avatar initials="CT" size="medium" color="warning" />
-  <Avatar initials="CT" size="medium" color="danger" />
-  <Avatar initials="CT" size="medium" color="h-purple" />
-  <Avatar initials="CT" size="medium" color="h-orange" />
-  <Avatar initials="CT" size="medium" color="h-blue" />
-  <Avatar initials="CT" size="medium" color="h-green" />
-  <Avatar initials="CT" size="medium" color="h-red" />
-  <Avatar initials="CT" size="medium" color="h-yellow" />
+  <V-Avatar initials="CT" size="medium" />
+  <V-Avatar initials="CT" size="medium" color="primary" />
+  <V-Avatar initials="CT" size="medium" color="success" />
+  <V-Avatar initials="CT" size="medium" color="info" />
+  <V-Avatar initials="CT" size="medium" color="warning" />
+  <V-Avatar initials="CT" size="medium" color="danger" />
+  <V-Avatar initials="CT" size="medium" color="h-purple" />
+  <V-Avatar initials="CT" size="medium" color="h-orange" />
+  <V-Avatar initials="CT" size="medium" color="h-blue" />
+  <V-Avatar initials="CT" size="medium" color="h-green" />
+  <V-Avatar initials="CT" size="medium" color="h-red" />
+  <V-Avatar initials="CT" size="medium" color="h-yellow" />
 </template>
 ```
 
@@ -25,17 +25,17 @@ Fake avatars can have different colors to break monotony. You can change the ava
 
 <!--example-->
 
-<Avatar initials="CT" size="medium"/>
-<Avatar initials="CT" size="medium" color="primary" />
-<Avatar initials="CT" size="medium" color="success" />
-<Avatar initials="CT" size="medium" color="info" />
-<Avatar initials="CT" size="medium" color="warning" />
-<Avatar initials="CT" size="medium" color="danger" />
-<Avatar initials="CT" size="medium" color="h-purple" />
-<Avatar initials="CT" size="medium" color="h-orange" />
-<Avatar initials="CT" size="medium" color="h-blue" />
-<Avatar initials="CT" size="medium" color="h-green" />
-<Avatar initials="CT" size="medium" color="h-red" />
-<Avatar initials="CT" size="medium" color="h-yellow" />
+<V-Avatar initials="CT" size="medium"/>
+<V-Avatar initials="CT" size="medium" color="primary" />
+<V-Avatar initials="CT" size="medium" color="success" />
+<V-Avatar initials="CT" size="medium" color="info" />
+<V-Avatar initials="CT" size="medium" color="warning" />
+<V-Avatar initials="CT" size="medium" color="danger" />
+<V-Avatar initials="CT" size="medium" color="h-purple" />
+<V-Avatar initials="CT" size="medium" color="h-orange" />
+<V-Avatar initials="CT" size="medium" color="h-blue" />
+<V-Avatar initials="CT" size="medium" color="h-green" />
+<V-Avatar initials="CT" size="medium" color="h-red" />
+<V-Avatar initials="CT" size="medium" color="h-yellow" />
 
 <!--/example-->

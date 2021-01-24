@@ -38,31 +38,31 @@ const activeTab = ref<'components' | 'plugins'>('components')
                 <ul>
                   <li>
                     <RouterLink :to="{ name: 'components-avatars' }">
-                      <span>Avatars</span>
+                      <span>V-Avatar</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'components-accordion-basic' }">
-                      <span>Accordion</span>
+                      <span>V-Accordion</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'components-accordion-collapse' }">
-                      <span>Collapse</span>
+                      <span>V-Collapse</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'components-accordion-images' }">
-                      <span>Image Accordion</span>
+                      <span>V-ImageAccordion</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'components-breadcrumb' }">
-                      <span>Breadcrumb</span>
+                      <span>V-Breadcrumb</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
@@ -85,7 +85,7 @@ const activeTab = ref<'components' | 'plugins'>('components')
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'components-dropdown' }">
-                      <span>Dropdown</span>
+                      <span>V-Dropdown</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
@@ -114,7 +114,7 @@ const activeTab = ref<'components' | 'plugins'>('components')
                 <ul>
                   <li>
                     <RouterLink :to="{ name: 'components-icon-box' }">
-                      <span>Icon Box</span>
+                      <span>V-IconBox</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>

@@ -43,7 +43,7 @@
                 </p>
               </div>
               <div class="tile-meta">
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/39.jpg"
@@ -84,7 +84,7 @@
                 </p>
               </div>
               <div class="tile-meta">
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/15.jpg"
@@ -123,7 +123,7 @@
                 </p>
               </div>
               <div class="tile-meta">
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/24.jpg"
@@ -171,7 +171,7 @@
                     </p>
                   </div>
                   <div class="tile-meta">
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/27.jpg"
@@ -213,7 +213,7 @@
                     </p>
                   </div>
                   <div class="tile-meta">
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/10.jpg"
@@ -257,7 +257,7 @@
                     </p>
                   </div>
                   <div class="tile-meta">
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/22.jpg"
@@ -306,7 +306,7 @@
                   </p>
                 </div>
                 <div class="tile-meta">
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/16.jpg"
@@ -353,7 +353,7 @@
                 </p>
               </div>
               <div class="tile-meta">
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/26.jpg"
@@ -397,7 +397,7 @@
                 </p>
               </div>
               <div class="tile-meta">
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/8.jpg"
@@ -436,7 +436,7 @@
                 </p>
               </div>
               <div class="tile-meta">
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/40.jpg"
@@ -478,7 +478,7 @@
                 </p>
               </div>
               <div class="tile-meta">
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/9.jpg"
@@ -517,7 +517,7 @@
                 </p>
               </div>
               <div class="tile-meta">
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/19.jpg"
@@ -556,7 +556,7 @@
                 </p>
               </div>
               <div class="tile-meta">
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/33.jpg"

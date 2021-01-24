@@ -1,14 +1,14 @@
 ### Context Menu
 
-Vuero's `<BaseDropdown />` component can also be displayed as a context menu holding a single icon. The icon can be whatever you want. This dropdown has the specific `dots` prop set. Please refer to the markup for more details about usage.
+Vuero's `<V-Dropdown />` component can also be displayed as a context menu holding a single icon. The icon can be whatever you want. This dropdown has the specific `dots` prop set. Please refer to the markup for more details about usage.
 
 <!--code-->
 
 ```vue {3-7}
 <template>
-  <BaseDropdown dots>
+  <V-Dropdown dots>
     <template #button="{ open }">
-      <button class="is-trigger" @click="open" >
+      <button class="is-trigger" @click="open">
         <i class="iconify" data-icon="feather:more-vertical"></i>
       </button>
     </template>
@@ -21,18 +21,17 @@ Vuero's `<BaseDropdown />` component can also be displayed as a context menu hol
       <hr class="dropdown-divider" />
       <a href="#" class="dropdown-item"> With a divider </a>
     </template>
-  </BaseDropdown>
+  </V-Dropdown>
 </template>
 ```
 
 <!--/code-->
 
-
 <!--example-->
 
 <div class="field is-grouped">
   <div class="control">
-    <BaseDropdown title="Primary button" dots>
+    <V-Dropdown title="Primary button" dots>
       <template #button="slotProps">
         <a class="is-trigger" @click="slotProps.open" >
           <i class="iconify" data-icon="feather:more-horizontal"></i>
@@ -46,11 +45,11 @@ Vuero's `<BaseDropdown />` component can also be displayed as a context menu hol
         <hr class="dropdown-divider" />
         <a href="#" class="dropdown-item"> With a divider </a>
       </template>
-    </BaseDropdown>
+    </V-Dropdown>
   </div>
 
   <div class="control">
-    <BaseDropdown title="Primary button" dots>
+    <V-Dropdown title="Primary button" dots>
       <template #button="slotProps">
         <a class="is-trigger" @click="slotProps.open" >
           <i class="iconify" data-icon="feather:more-vertical"></i>
@@ -64,11 +63,11 @@ Vuero's `<BaseDropdown />` component can also be displayed as a context menu hol
         <hr class="dropdown-divider" />
         <a href="#" class="dropdown-item"> With a divider </a>
       </template>
-    </BaseDropdown>
+    </V-Dropdown>
   </div>
 
   <div class="control">
-    <BaseDropdown title="Primary button" dots up>
+    <V-Dropdown title="Primary button" dots up>
       <template #button="slotProps">
         <a class="is-trigger" @click="slotProps.open" >
           <i class="iconify" data-icon="feather:help-circle"></i>
@@ -82,9 +81,8 @@ Vuero's `<BaseDropdown />` component can also be displayed as a context menu hol
         <hr class="dropdown-divider" />
         <a href="#" class="dropdown-item"> With a divider </a>
       </template>
-    </BaseDropdown>
+    </V-Dropdown>
   </div>
 </div>
-
 
 <!--/example-->

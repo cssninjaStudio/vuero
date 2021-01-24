@@ -20,12 +20,12 @@ const props = defineProps({
         <h3>Your Cart</h3>
       </div>
       <div class="right">
-        <Tag :label="products.length + ' items'" color="orange" curved />
+        <V-Tag :label="products.length + ' items'" color="orange" curved />
       </div>
     </div>
     <div class="cart-items">
       <div v-for="product in products" :key="product.id" class="cart-item">
-        <Avatar :picture="product.picture" size="large" squared />
+        <V-Avatar :picture="product.picture" size="large" squared />
         <div class="meta">
           <span class="text">{{ product.name }}</span>
           <span class="price">${{ product.price }}</span>

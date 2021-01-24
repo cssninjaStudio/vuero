@@ -42,7 +42,7 @@ useHead({
       </div>
 
       <div class="title-wrap">
-        <h1 class="title is-4">Avatars</h1>
+        <h1 class="title is-4">V-Avatar</h1>
       </div>
 
       <Toolbar />
@@ -65,7 +65,7 @@ useHead({
           </li>
           <li>
             <a>
-              <span>Avatars</span>
+              <span>V-Avatar</span>
             </a>
           </li>
         </ul>

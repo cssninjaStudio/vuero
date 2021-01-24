@@ -60,7 +60,7 @@
                 <!--Item-->
                 <div class="featured-authors-item">
                   <div class="media-flex-center">
-                    <div class="h-avatar">
+                    <div class="v-avatar">
                       <img
                         class="avatar is-squared"
                         src="/images/avatars/photos/7.jpg"
@@ -83,7 +83,7 @@
                 <!--Item-->
                 <div class="featured-authors-item">
                   <div class="media-flex-center">
-                    <div class="h-avatar">
+                    <div class="v-avatar">
                       <img
                         class="avatar is-squared"
                         src="/images/avatars/photos/21.jpg"
@@ -106,7 +106,7 @@
                 <!--Item-->
                 <div class="featured-authors-item">
                   <div class="media-flex-center">
-                    <div class="h-avatar">
+                    <div class="v-avatar">
                       <img
                         class="avatar is-squared"
                         src="/images/avatars/photos/32.jpg"
@@ -129,7 +129,7 @@
                 <!--Item-->
                 <div class="featured-authors-item">
                   <div class="media-flex-center">
-                    <div class="h-avatar">
+                    <div class="v-avatar">
                       <img
                         class="avatar is-squared"
                         src="/images/avatars/photos/38.jpg"
@@ -244,7 +244,7 @@
                   <p>Some article content and lorem ipsum sit dolor amet</p>
 
                   <div class="media-flex-center">
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <img
                         class="avatar is-squared"
                         src="/images/avatars/photos/7.jpg"
@@ -278,7 +278,7 @@
                   <p>Some article content and lorem ipsum sit dolor amet</p>
 
                   <div class="media-flex-center">
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <img
                         class="avatar is-squared"
                         src="/images/avatars/photos/5.jpg"

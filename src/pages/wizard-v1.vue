@@ -634,7 +634,7 @@ useHead({
 
       .media-flex,
       .media-flex-center {
-        .h-avatar {
+        .v-avatar {
           .avatar {
             border: 1px solid darken($fade-grey, 3%);
           }
@@ -656,7 +656,7 @@ useHead({
         border-color: lighten($dark-sidebar, 12%);
 
         .media-flex-center {
-          .h-avatar {
+          .v-avatar {
             .avatar {
               border-color: lighten($dark-sidebar, 12%);
             }
@@ -1126,7 +1126,7 @@ useHead({
           max-width: 300px;
         }
 
-        .h-avatar {
+        .v-avatar {
           margin: 0 auto 12px auto;
         }
 
@@ -1460,7 +1460,7 @@ useHead({
           max-width: 300px;
         }
 
-        .h-avatar {
+        .v-avatar {
           position: relative;
           margin: 0 auto 12px auto;
 
@@ -1661,7 +1661,7 @@ useHead({
         }
 
         .project-preview-header {
-          .h-avatar {
+          .v-avatar {
             .edit-icon {
               border-color: lighten($dark-sidebar, 12%);
               background: lighten($dark-sidebar, 6%);

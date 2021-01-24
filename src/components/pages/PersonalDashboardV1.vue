@@ -9,7 +9,7 @@ import { profitChartOptions } from '/@src/composition/state/charts/apexcharts/ex
   <div class="personal-dashboard personal-dashboard-v1">
     <!--Header-->
     <div class="dashboard-header">
-      <div class="h-avatar is-large">
+      <div class="v-avatar is-large">
         <img
           class="avatar"
           src="/images/avatars/photos/8.jpg"
@@ -42,7 +42,7 @@ import { profitChartOptions } from '/@src/composition/state/charts/apexcharts/ex
                 <!--Stat-->
                 <div class="quick-stat">
                   <div class="media-flex-center">
-                    <div class="h-icon is-purple is-rounded">
+                    <div class="v-icon is-purple is-rounded">
                       <i class="lnil lnil-analytics-alt-1"></i>
                     </div>
                     <div class="flex-meta">
@@ -54,7 +54,7 @@ import { profitChartOptions } from '/@src/composition/state/charts/apexcharts/ex
                 <!--Stat-->
                 <div class="quick-stat">
                   <div class="media-flex-center">
-                    <div class="h-icon is-orange is-rounded">
+                    <div class="v-icon is-orange is-rounded">
                       <i class="lnil lnil-handshake"></i>
                     </div>
                     <div class="flex-meta">
@@ -66,7 +66,7 @@ import { profitChartOptions } from '/@src/composition/state/charts/apexcharts/ex
                 <!--Stat-->
                 <div class="quick-stat">
                   <div class="media-flex-center">
-                    <div class="h-icon is-green is-rounded">
+                    <div class="v-icon is-green is-rounded">
                       <i class="lnil lnil-diamond-alt"></i>
                     </div>
                     <div class="flex-meta">
@@ -78,7 +78,7 @@ import { profitChartOptions } from '/@src/composition/state/charts/apexcharts/ex
                 <!--Stat-->
                 <div class="quick-stat">
                   <div class="media-flex-center">
-                    <div class="h-icon is-info is-rounded">
+                    <div class="v-icon is-info is-rounded">
                       <i class="lnil lnil-bank"></i>
                     </div>
                     <div class="flex-meta">
@@ -123,7 +123,7 @@ import { profitChartOptions } from '/@src/composition/state/charts/apexcharts/ex
         <div class="column is-4">
           <div class="dashboard-card is-gauge">
             <div class="people">
-              <div class="h-avatar">
+              <div class="v-avatar">
                 <img
                   class="avatar"
                   src="/images/avatars/photos/21.jpg"
@@ -134,12 +134,12 @@ import { profitChartOptions } from '/@src/composition/state/charts/apexcharts/ex
                   "
                 />
               </div>
-              <div class="h-avatar">
+              <div class="v-avatar">
                 <span class="avatar is-fake is-h-purple" data-user-popover="35">
                   <span>SC</span>
                 </span>
               </div>
-              <div class="h-avatar">
+              <div class="v-avatar">
                 <img
                   class="avatar"
                   src="/images/avatars/photos/39.jpg"
@@ -320,7 +320,7 @@ import { profitChartOptions } from '/@src/composition/state/charts/apexcharts/ex
           justify-content: center;
           z-index: 5;
 
-          .h-avatar {
+          .v-avatar {
             margin: 0 4px;
           }
         }

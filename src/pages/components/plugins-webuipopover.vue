@@ -544,7 +544,7 @@ useHead({
               </a>
             </div>
             <div class="card-inner">
-              <div class="h-avatar is-medium">
+              <div class="v-avatar is-medium">
                 <img
                   class="avatar"
                   src="/images/avatars/photos/7.jpg"
@@ -555,7 +555,7 @@ useHead({
                   "
                 />
               </div>
-              <div class="h-avatar is-medium">
+              <div class="v-avatar is-medium">
                 <img
                   class="avatar"
                   src="/images/avatars/photos/9.jpg"
@@ -566,7 +566,7 @@ useHead({
                   "
                 />
               </div>
-              <div class="h-avatar is-medium">
+              <div class="v-avatar is-medium">
                 <img
                   class="avatar"
                   src="/images/avatars/photos/12.jpg"
@@ -577,7 +577,7 @@ useHead({
                   "
                 />
               </div>
-              <div class="h-avatar is-medium">
+              <div class="v-avatar is-medium">
                 <img
                   class="avatar"
                   src="/images/avatars/photos/8.jpg"
@@ -588,7 +588,7 @@ useHead({
                   "
                 />
               </div>
-              <div class="h-avatar is-medium">
+              <div class="v-avatar is-medium">
                 <img
                   class="avatar"
                   src="/images/avatars/photos/25.jpg"
@@ -602,7 +602,7 @@ useHead({
 
               <div class="highlight highlight-block">
                 <pre><code class="code-highlight">
-&#x3C;div class=&#x22;h-avatar is-medium&#x22;&#x3E;
+&#x3C;div class=&#x22;v-avatar is-medium&#x22;&#x3E;
     &#x3C;img class=&#x22;avatar&#x22; src=&#x22;https://via.placeholder.com/150x150&#x22; alt=&#x22;&#x22; data-user-popover=&#x22;0&#x22;&#x3E;
 &#x3C;/div&#x3E;
 </code></pre>

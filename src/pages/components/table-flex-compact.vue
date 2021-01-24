@@ -112,7 +112,7 @@ useHead({
               </div>
               <div class="flex-table-cell" data-th="Contacts">
                 <div class="avatar-stack is-pushed-mobile">
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/7.jpg"
@@ -123,12 +123,12 @@ useHead({
                       "
                     />
                   </div>
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <span class="avatar is-fake is-info">
                       <span>JD</span>
                     </span>
                   </div>
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/8.jpg"
@@ -139,7 +139,7 @@ useHead({
                       "
                     />
                   </div>
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <span class="avatar is-more">
                       <span class="inner">
                         <span>+2</span>
@@ -169,7 +169,7 @@ useHead({
               </div>
               <div class="flex-table-cell" data-th="Contacts">
                 <div class="avatar-stack is-pushed-mobile">
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <span class="avatar is-fake is-danger">
                       <span>SC</span>
                     </span>
@@ -197,12 +197,12 @@ useHead({
               </div>
               <div class="flex-table-cell" data-th="Contacts">
                 <div class="avatar-stack is-pushed-mobile">
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <span class="avatar is-fake is-success">
                       <span>BT</span>
                     </span>
                   </div>
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/12.jpg"
@@ -236,7 +236,7 @@ useHead({
               </div>
               <div class="flex-table-cell" data-th="Contacts">
                 <div class="avatar-stack is-pushed-mobile">
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/21.jpg"
@@ -270,7 +270,7 @@ useHead({
               </div>
               <div class="flex-table-cell" data-th="Contacts">
                 <div class="avatar-stack is-pushed-mobile">
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/5.jpg"
@@ -281,7 +281,7 @@ useHead({
                       "
                     />
                   </div>
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/9.jpg"
@@ -292,7 +292,7 @@ useHead({
                       "
                     />
                   </div>
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/11.jpg"

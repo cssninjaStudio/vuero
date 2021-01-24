@@ -29,7 +29,7 @@
       max-width: 300px;
     }
 
-    .h-avatar {
+    .v-avatar {
       margin: 0 auto 12px auto;
     }
 
@@ -385,7 +385,7 @@
                 display: flex;
                 justify-content: flex-end;
 
-                .h-avatar {
+                .v-avatar {
                   margin: 0 4px;
                 }
               }
@@ -406,7 +406,7 @@
               padding: 30px 20px;
               border-radius: 4px;
 
-              > .h-avatar {
+              > .v-avatar {
                 display: block;
                 margin: 0 auto 8px auto;
               }
@@ -584,7 +584,7 @@
 .is-dark {
   .profile-wrapper {
     .profile-header {
-      .h-avatar {
+      .v-avatar {
         .badge {
           border-color: lighten($dark-sidebar, 6%);
         }
@@ -664,7 +664,7 @@
                 }
 
                 .people {
-                  .h-avatar {
+                  .v-avatar {
                     &:last-child {
                       .is-fake {
                         background: lighten($dark-sidebar, 2%);
@@ -855,7 +855,7 @@
             }
           }
 
-          .h-avatar {
+          .v-avatar {
             position: relative;
             display: block;
             margin: 0 auto;
@@ -1256,7 +1256,7 @@
             .skills-wrapper {
               .skills-item {
                 .people {
-                  .h-avatar {
+                  .v-avatar {
                     &:not(:last-child) {
                       display: none !important;
                     }

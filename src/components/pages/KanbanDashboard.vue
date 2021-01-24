@@ -36,7 +36,7 @@
       </div>
 
       <div class="avatar-stack">
-        <div class="h-avatar is-small">
+        <div class="v-avatar is-small">
           <img
             class="avatar"
             src="/images/avatars/photos/7.jpg"
@@ -44,7 +44,7 @@
             @error="$event.target.src = 'https://via.placeholder.com/150x150'"
           />
         </div>
-        <div class="h-avatar is-small">
+        <div class="v-avatar is-small">
           <img
             class="avatar"
             src="/images/avatars/photos/9.jpg"
@@ -52,7 +52,7 @@
             @error="$event.target.src = 'https://via.placeholder.com/150x150'"
           />
         </div>
-        <div class="h-avatar is-small">
+        <div class="v-avatar is-small">
           <img
             class="avatar"
             src="/images/avatars/photos/12.jpg"
@@ -60,7 +60,7 @@
             @error="$event.target.src = 'https://via.placeholder.com/150x150'"
           />
         </div>
-        <div class="h-avatar is-small">
+        <div class="v-avatar is-small">
           <img
             class="avatar"
             src="/images/avatars/photos/8.jpg"
@@ -68,7 +68,7 @@
             @error="$event.target.src = 'https://via.placeholder.com/150x150'"
           />
         </div>
-        <div class="h-avatar is-small">
+        <div class="v-avatar is-small">
           <img
             class="avatar"
             src="/images/avatars/photos/25.jpg"
@@ -76,7 +76,7 @@
             @error="$event.target.src = 'https://via.placeholder.com/150x150'"
           />
         </div>
-        <div class="h-avatar is-small">
+        <div class="v-avatar is-small">
           <img
             class="avatar"
             src="/images/avatars/photos/22.jpg"
@@ -208,7 +208,7 @@
                     3 days
                   </span>
                   <div class="avatar-stack">
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/12.jpg"
@@ -219,7 +219,7 @@
                         "
                       />
                     </div>
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/26.jpg"
@@ -230,7 +230,7 @@
                         "
                       />
                     </div>
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/19.jpg"
@@ -255,7 +255,7 @@
                     1 week
                   </span>
                   <div class="avatar-stack">
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/13.jpg"
@@ -280,7 +280,7 @@
                     5 days
                   </span>
                   <div class="avatar-stack">
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/16.jpg"
@@ -343,7 +343,7 @@
                     2 days
                   </span>
                   <div class="avatar-stack">
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/8.jpg"
@@ -455,7 +455,7 @@
                   On time
                 </span>
                 <div class="avatar-stack">
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/12.jpg"
@@ -480,7 +480,7 @@
                   On time
                 </span>
                 <div class="avatar-stack">
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/18.jpg"
@@ -491,7 +491,7 @@
                       "
                     />
                   </div>
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/9.jpg"
@@ -516,7 +516,7 @@
                   On time
                 </span>
                 <div class="avatar-stack">
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/13.jpg"
@@ -541,7 +541,7 @@
                   On time
                 </span>
                 <div class="avatar-stack">
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/16.jpg"

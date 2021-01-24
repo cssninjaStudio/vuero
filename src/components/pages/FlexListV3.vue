@@ -68,7 +68,7 @@ const props = defineProps({
                 >
                 <div class="item-meta">
                   <div class="flex-media">
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/8.jpg"
@@ -127,7 +127,7 @@ const props = defineProps({
                 >
                 <div class="item-meta">
                   <div class="flex-media">
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/12.jpg"
@@ -186,7 +186,7 @@ const props = defineProps({
                 >
                 <div class="item-meta">
                   <div class="flex-media">
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/5.jpg"
@@ -245,7 +245,7 @@ const props = defineProps({
                 >
                 <div class="item-meta">
                   <div class="flex-media">
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/18.jpg"
@@ -304,7 +304,7 @@ const props = defineProps({
                 >
                 <div class="item-meta">
                   <div class="flex-media">
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/18.jpg"
@@ -363,7 +363,7 @@ const props = defineProps({
                 >
                 <div class="item-meta">
                   <div class="flex-media">
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/30.jpg"
@@ -422,7 +422,7 @@ const props = defineProps({
                 >
                 <div class="item-meta">
                   <div class="flex-media">
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/38.jpg"
@@ -481,7 +481,7 @@ const props = defineProps({
                 >
                 <div class="item-meta">
                   <div class="flex-media">
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/30.jpg"
@@ -542,7 +542,7 @@ const props = defineProps({
                 >
                 <div class="item-meta">
                   <div class="flex-media">
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/34.jpg"
@@ -601,7 +601,7 @@ const props = defineProps({
                 >
                 <div class="item-meta">
                   <div class="flex-media">
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/30.jpg"

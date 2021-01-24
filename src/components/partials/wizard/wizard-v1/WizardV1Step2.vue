@@ -17,7 +17,7 @@
         </div>
       </div>
       <div class="media-flex-center is-hidden">
-        <div class="h-avatar is-medium">
+        <div class="v-avatar is-medium">
           <img
             id="customer-logo"
             class="avatar"

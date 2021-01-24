@@ -46,7 +46,7 @@ const activeTab = ref<'team' | 'projects' | 'schedule'>('team')
           >
             <!--Team Member-->
             <div class="team-card">
-              <div class="h-avatar">
+              <div class="v-avatar">
                 <img
                   class="avatar"
                   src="/images/avatars/photos/12.jpg"
@@ -78,7 +78,7 @@ const activeTab = ref<'team' | 'projects' | 'schedule'>('team')
 
             <!--Team Member-->
             <div class="team-card">
-              <div class="h-avatar">
+              <div class="v-avatar">
                 <img
                   class="avatar"
                   src="/images/avatars/photos/25.jpg"
@@ -110,7 +110,7 @@ const activeTab = ref<'team' | 'projects' | 'schedule'>('team')
 
             <!--Team Member-->
             <div class="team-card">
-              <div class="h-avatar">
+              <div class="v-avatar">
                 <img
                   class="avatar"
                   src="/images/avatars/photos/18.jpg"
@@ -142,7 +142,7 @@ const activeTab = ref<'team' | 'projects' | 'schedule'>('team')
 
             <!--Team Member-->
             <div class="team-card">
-              <div class="h-avatar">
+              <div class="v-avatar">
                 <img
                   class="avatar"
                   src="/images/avatars/photos/13.jpg"
@@ -209,7 +209,7 @@ const activeTab = ref<'team' | 'projects' | 'schedule'>('team')
                   <span>5 / 24</span>
 
                   <div class="avatar-stack">
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/7.jpg"
@@ -220,7 +220,7 @@ const activeTab = ref<'team' | 'projects' | 'schedule'>('team')
                         "
                       />
                     </div>
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/5.jpg"
@@ -231,7 +231,7 @@ const activeTab = ref<'team' | 'projects' | 'schedule'>('team')
                         "
                       />
                     </div>
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/8.jpg"
@@ -278,7 +278,7 @@ const activeTab = ref<'team' | 'projects' | 'schedule'>('team')
                   <span>28 / 31</span>
 
                   <div class="avatar-stack">
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/13.jpg"
@@ -289,7 +289,7 @@ const activeTab = ref<'team' | 'projects' | 'schedule'>('team')
                         "
                       />
                     </div>
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/18.jpg"
@@ -336,7 +336,7 @@ const activeTab = ref<'team' | 'projects' | 'schedule'>('team')
                   <span>25 / 39</span>
 
                   <div class="avatar-stack">
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/7.jpg"
@@ -347,7 +347,7 @@ const activeTab = ref<'team' | 'projects' | 'schedule'>('team')
                         "
                       />
                     </div>
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/25.jpg"

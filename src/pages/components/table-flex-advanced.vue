@@ -163,7 +163,7 @@ useHead({
                   </label>
                 </div>
                 <div class="flex-table-cell is-media is-grow" data-th="">
-                  <div class="h-avatar is-medium">
+                  <div class="v-avatar is-medium">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/8.jpg"
@@ -197,7 +197,7 @@ useHead({
                 </div>
                 <div class="flex-table-cell" data-th="Relations">
                   <div class="avatar-stack is-pushed-mobile">
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/7.jpg"
@@ -208,12 +208,12 @@ useHead({
                         "
                       />
                     </div>
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <span class="avatar is-fake is-info">
                         <span>JD</span>
                       </span>
                     </div>
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/12.jpg"
@@ -224,7 +224,7 @@ useHead({
                         "
                       />
                     </div>
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <span class="avatar is-more">
                         <span class="inner">
                           <span>+2</span>
@@ -247,7 +247,7 @@ useHead({
                   </label>
                 </div>
                 <div class="flex-table-cell is-media is-grow" data-th="">
-                  <div class="h-avatar is-medium">
+                  <div class="v-avatar is-medium">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/22.jpg"
@@ -285,7 +285,7 @@ useHead({
                 </div>
                 <div class="flex-table-cell" data-th="Relations">
                   <div class="avatar-stack is-pushed-mobile">
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <span class="avatar is-fake is-danger">
                         <span>SC</span>
                       </span>
@@ -306,7 +306,7 @@ useHead({
                   </label>
                 </div>
                 <div class="flex-table-cell is-media is-grow" data-th="">
-                  <div class="h-avatar is-medium">
+                  <div class="v-avatar is-medium">
                     <span class="avatar is-fake is-success">
                       <span>KL</span>
                     </span>
@@ -338,7 +338,7 @@ useHead({
                 </div>
                 <div class="flex-table-cell" data-th="Relations">
                   <div class="avatar-stack is-pushed-mobile">
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/8.jpg"
@@ -349,7 +349,7 @@ useHead({
                         "
                       />
                     </div>
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/11.jpg"
@@ -376,7 +376,7 @@ useHead({
                   </label>
                 </div>
                 <div class="flex-table-cell is-media is-grow" data-th="">
-                  <div class="h-avatar is-medium">
+                  <div class="v-avatar is-medium">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/25.jpg"
@@ -414,12 +414,12 @@ useHead({
                 </div>
                 <div class="flex-table-cell" data-th="Relations">
                   <div class="avatar-stack is-pushed-mobile">
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <span class="avatar is-fake is-success">
                         <span>BT</span>
                       </span>
                     </div>
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/5.jpg"
@@ -446,7 +446,7 @@ useHead({
                   </label>
                 </div>
                 <div class="flex-table-cell is-media is-grow" data-th="">
-                  <div class="h-avatar is-medium">
+                  <div class="v-avatar is-medium">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/13.jpg"
@@ -484,7 +484,7 @@ useHead({
                 </div>
                 <div class="flex-table-cell" data-th="Relations">
                   <div class="avatar-stack is-pushed-mobile">
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/14.jpg"
@@ -511,7 +511,7 @@ useHead({
                   </label>
                 </div>
                 <div class="flex-table-cell is-media is-grow" data-th="">
-                  <div class="h-avatar is-medium">
+                  <div class="v-avatar is-medium">
                     <span class="avatar is-fake is-warning">
                       <span>SD</span>
                     </span>
@@ -543,7 +543,7 @@ useHead({
                 </div>
                 <div class="flex-table-cell" data-th="Relations">
                   <div class="avatar-stack is-pushed-mobile">
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/13.jpg"
@@ -554,7 +554,7 @@ useHead({
                         "
                       />
                     </div>
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/7.jpg"
@@ -581,7 +581,7 @@ useHead({
                   </label>
                 </div>
                 <div class="flex-table-cell is-media is-grow" data-th="">
-                  <div class="h-avatar is-medium">
+                  <div class="v-avatar is-medium">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/7.jpg"
@@ -619,7 +619,7 @@ useHead({
                 </div>
                 <div class="flex-table-cell" data-th="Relations">
                   <div class="avatar-stack is-pushed-mobile">
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/11.jpg"
@@ -630,7 +630,7 @@ useHead({
                         "
                       />
                     </div>
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/5.jpg"
@@ -641,7 +641,7 @@ useHead({
                         "
                       />
                     </div>
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/12.jpg"
@@ -668,7 +668,7 @@ useHead({
                   </label>
                 </div>
                 <div class="flex-table-cell is-media is-grow" data-th="">
-                  <div class="h-avatar is-medium">
+                  <div class="v-avatar is-medium">
                     <span class="avatar is-fake is-info">
                       <span>LK</span>
                     </span>
@@ -700,7 +700,7 @@ useHead({
                 </div>
                 <div class="flex-table-cell" data-th="Relations">
                   <div class="avatar-stack is-pushed-mobile">
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/21.jpg"
@@ -711,7 +711,7 @@ useHead({
                         "
                       />
                     </div>
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/19.jpg"
@@ -738,7 +738,7 @@ useHead({
                   </label>
                 </div>
                 <div class="flex-table-cell is-media is-grow" data-th="">
-                  <div class="h-avatar is-medium">
+                  <div class="v-avatar is-medium">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/18.jpg"
@@ -776,7 +776,7 @@ useHead({
                 </div>
                 <div class="flex-table-cell" data-th="Relations">
                   <div class="avatar-stack is-pushed-mobile">
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/5.jpg"
@@ -787,7 +787,7 @@ useHead({
                         "
                       />
                     </div>
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/12.jpg"
@@ -798,7 +798,7 @@ useHead({
                         "
                       />
                     </div>
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/21.jpg"
@@ -825,7 +825,7 @@ useHead({
                   </label>
                 </div>
                 <div class="flex-table-cell is-media is-grow" data-th="">
-                  <div class="h-avatar is-medium">
+                  <div class="v-avatar is-medium">
                     <span class="avatar is-fake is-danger">
                       <span>HM</span>
                     </span>
@@ -857,7 +857,7 @@ useHead({
                 </div>
                 <div class="flex-table-cell" data-th="Relations">
                   <div class="avatar-stack is-pushed-mobile">
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/12.jpg"
@@ -868,7 +868,7 @@ useHead({
                         "
                       />
                     </div>
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/8.jpg"

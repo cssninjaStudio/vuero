@@ -44,7 +44,7 @@ const props = defineProps({
         <!--Grid item-->
         <div class="column is-3">
           <div class="grid-item">
-            <div class="h-avatar is-large">
+            <div class="v-avatar is-large">
               <img
                 class="avatar"
                 src="/images/avatars/photos/13.jpg"
@@ -136,7 +136,7 @@ const props = defineProps({
         <!--Grid item-->
         <div class="column is-3">
           <div class="grid-item">
-            <div class="h-avatar is-large">
+            <div class="v-avatar is-large">
               <img
                 class="avatar"
                 src="/images/avatars/photos/37.jpg"
@@ -228,7 +228,7 @@ const props = defineProps({
         <!--Grid item-->
         <div class="column is-3">
           <div class="grid-item">
-            <div class="h-avatar is-large">
+            <div class="v-avatar is-large">
               <img
                 class="avatar"
                 src="/images/avatars/photos/25.jpg"
@@ -320,7 +320,7 @@ const props = defineProps({
         <!--Grid item-->
         <div class="column is-3">
           <div class="grid-item">
-            <div class="h-avatar is-large">
+            <div class="v-avatar is-large">
               <img
                 class="avatar"
                 src="/images/avatars/photos/29.jpg"
@@ -412,7 +412,7 @@ const props = defineProps({
         <!--Grid item-->
         <div class="column is-3">
           <div class="grid-item">
-            <div class="h-avatar is-large">
+            <div class="v-avatar is-large">
               <img
                 class="avatar"
                 src="/images/avatars/photos/39.jpg"
@@ -504,7 +504,7 @@ const props = defineProps({
         <!--Grid item-->
         <div class="column is-3">
           <div class="grid-item">
-            <div class="h-avatar is-large">
+            <div class="v-avatar is-large">
               <img
                 class="avatar"
                 src="/images/avatars/photos/40.jpg"
@@ -596,7 +596,7 @@ const props = defineProps({
         <!--Grid item-->
         <div class="column is-3">
           <div class="grid-item">
-            <div class="h-avatar is-large">
+            <div class="v-avatar is-large">
               <img
                 class="avatar"
                 src="/images/avatars/photos/19.jpg"
@@ -688,7 +688,7 @@ const props = defineProps({
         <!--Grid item-->
         <div class="column is-3">
           <div class="grid-item">
-            <div class="h-avatar is-large">
+            <div class="v-avatar is-large">
               <img
                 class="avatar"
                 src="/images/avatars/photos/9.jpg"
@@ -780,7 +780,7 @@ const props = defineProps({
         <!--Grid item-->
         <div class="column is-3">
           <div class="grid-item">
-            <div class="h-avatar is-large">
+            <div class="v-avatar is-large">
               <img
                 class="avatar"
                 src="/images/avatars/photos/5.jpg"
@@ -872,7 +872,7 @@ const props = defineProps({
         <!--Grid item-->
         <div class="column is-3">
           <div class="grid-item">
-            <div class="h-avatar is-large">
+            <div class="v-avatar is-large">
               <img
                 class="avatar"
                 src="/images/avatars/photos/32.jpg"
@@ -964,7 +964,7 @@ const props = defineProps({
         <!--Grid item-->
         <div class="column is-3">
           <div class="grid-item">
-            <div class="h-avatar is-large">
+            <div class="v-avatar is-large">
               <img
                 class="avatar"
                 src="/images/avatars/photos/36.jpg"
@@ -1056,7 +1056,7 @@ const props = defineProps({
         <!--Grid item-->
         <div class="column is-3">
           <div class="grid-item">
-            <div class="h-avatar is-large">
+            <div class="v-avatar is-large">
               <img
                 class="avatar"
                 src="/images/avatars/photos/38.jpg"
@@ -1148,7 +1148,7 @@ const props = defineProps({
         <!--Grid item-->
         <div class="column is-3">
           <div class="grid-item">
-            <div class="h-avatar is-large">
+            <div class="v-avatar is-large">
               <img
                 class="avatar"
                 src="/images/avatars/photos/26.jpg"
@@ -1240,7 +1240,7 @@ const props = defineProps({
         <!--Grid item-->
         <div class="column is-3">
           <div class="grid-item">
-            <div class="h-avatar is-large">
+            <div class="v-avatar is-large">
               <img
                 class="avatar"
                 src="/images/avatars/photos/16.jpg"
@@ -1332,7 +1332,7 @@ const props = defineProps({
         <!--Grid item-->
         <div class="column is-3">
           <div class="grid-item">
-            <div class="h-avatar is-large">
+            <div class="v-avatar is-large">
               <img
                 class="avatar"
                 src="/images/avatars/photos/23.jpg"
@@ -1424,7 +1424,7 @@ const props = defineProps({
         <!--Grid item-->
         <div class="column is-3">
           <div class="grid-item">
-            <div class="h-avatar is-large">
+            <div class="v-avatar is-large">
               <img
                 class="avatar"
                 src="/images/avatars/photos/28.jpg"
@@ -1516,7 +1516,7 @@ const props = defineProps({
         <!--Grid item-->
         <div class="column is-3">
           <div class="grid-item">
-            <div class="h-avatar is-large">
+            <div class="v-avatar is-large">
               <img
                 class="avatar"
                 src="/images/avatars/photos/7.jpg"
@@ -1608,7 +1608,7 @@ const props = defineProps({
         <!--Grid item-->
         <div class="column is-3">
           <div class="grid-item">
-            <div class="h-avatar is-large">
+            <div class="v-avatar is-large">
               <img
                 class="avatar"
                 src="/images/avatars/photos/22.jpg"

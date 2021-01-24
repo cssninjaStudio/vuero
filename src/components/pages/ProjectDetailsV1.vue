@@ -57,7 +57,7 @@ const props = defineProps({
                   beatissimum? Ne discipulum abducam, times.
                 </p>
                 <div class="avatar-stack">
-                  <div class="h-avatar">
+                  <div class="v-avatar">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/7.jpg"
@@ -69,7 +69,7 @@ const props = defineProps({
                       "
                     />
                   </div>
-                  <div class="h-avatar">
+                  <div class="v-avatar">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/9.jpg"
@@ -81,7 +81,7 @@ const props = defineProps({
                       "
                     />
                   </div>
-                  <div class="h-avatar">
+                  <div class="v-avatar">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/12.jpg"
@@ -93,7 +93,7 @@ const props = defineProps({
                       "
                     />
                   </div>
-                  <div class="h-avatar">
+                  <div class="v-avatar">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/8.jpg"
@@ -105,7 +105,7 @@ const props = defineProps({
                       "
                     />
                   </div>
-                  <div class="h-avatar">
+                  <div class="v-avatar">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/25.jpg"
@@ -117,7 +117,7 @@ const props = defineProps({
                       "
                     />
                   </div>
-                  <div class="h-avatar">
+                  <div class="v-avatar">
                     <span class="avatar is-more">
                       <span class="inner">
                         <span>+3</span>
@@ -247,7 +247,7 @@ const props = defineProps({
               <h4>Project Tools</h4>
 
               <div class="media-flex-center">
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/icons/stacks/sketch.svg"
@@ -263,7 +263,7 @@ const props = defineProps({
                 </div>
               </div>
               <div class="media-flex-center">
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/icons/stacks/illustrator.svg"
@@ -279,7 +279,7 @@ const props = defineProps({
                 </div>
               </div>
               <div class="media-flex-center">
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/icons/stacks/photoshop.svg"
@@ -300,7 +300,7 @@ const props = defineProps({
               <h4>Project Stacks</h4>
 
               <div class="media-flex-center">
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/icons/stacks/html5.svg"
@@ -316,7 +316,7 @@ const props = defineProps({
                 </div>
               </div>
               <div class="media-flex-center">
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/icons/stacks/css3.svg"
@@ -332,7 +332,7 @@ const props = defineProps({
                 </div>
               </div>
               <div class="media-flex-center">
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/icons/stacks/vuejs.svg"
@@ -353,7 +353,7 @@ const props = defineProps({
               <h4>Customer</h4>
 
               <div class="media-flex-center">
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/illustrations/dashboards/flights/company1.svg"
@@ -385,7 +385,7 @@ const props = defineProps({
               <!--Team Member-->
               <div class="column is-6 has-border-bottom">
                 <div class="media-flex-center">
-                  <div class="h-avatar is-medium">
+                  <div class="v-avatar is-medium">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/7.jpg"
@@ -413,7 +413,7 @@ const props = defineProps({
               <!--Team Member-->
               <div class="column is-6 has-border-bottom">
                 <div class="media-flex-center">
-                  <div class="h-avatar is-medium">
+                  <div class="v-avatar is-medium">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/9.jpg"
@@ -441,7 +441,7 @@ const props = defineProps({
               <!--Team Member-->
               <div class="column is-6 has-border-bottom">
                 <div class="media-flex-center">
-                  <div class="h-avatar is-medium">
+                  <div class="v-avatar is-medium">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/12.jpg"
@@ -469,7 +469,7 @@ const props = defineProps({
               <!--Team Member-->
               <div class="column is-6 has-border-bottom">
                 <div class="media-flex-center">
-                  <div class="h-avatar is-medium">
+                  <div class="v-avatar is-medium">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/8.jpg"
@@ -497,7 +497,7 @@ const props = defineProps({
               <!--Team Member-->
               <div class="column is-6 has-border-bottom">
                 <div class="media-flex-center">
-                  <div class="h-avatar is-medium">
+                  <div class="v-avatar is-medium">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/25.jpg"
@@ -525,7 +525,7 @@ const props = defineProps({
               <!--Team Member-->
               <div class="column is-6 has-border-bottom">
                 <div class="media-flex-center">
-                  <div class="h-avatar is-medium">
+                  <div class="v-avatar is-medium">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/13.jpg"
@@ -553,7 +553,7 @@ const props = defineProps({
               <!--Team Member-->
               <div class="column is-6">
                 <div class="media-flex-center">
-                  <div class="h-avatar is-medium">
+                  <div class="v-avatar is-medium">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/18.jpg"
@@ -581,7 +581,7 @@ const props = defineProps({
               <!--Team Member-->
               <div class="column is-6">
                 <div class="media-flex-center">
-                  <div class="h-avatar is-medium">
+                  <div class="v-avatar is-medium">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/5.jpg"
@@ -674,7 +674,7 @@ const props = defineProps({
                   <div class="content-wrap">
                     <div class="left">
                       <div class="avatar-stack">
-                        <div class="h-avatar is-small">
+                        <div class="v-avatar is-small">
                           <img
                             class="avatar"
                             src="/images/avatars/photos/7.jpg"
@@ -685,7 +685,7 @@ const props = defineProps({
                             "
                           />
                         </div>
-                        <div class="h-avatar is-small">
+                        <div class="v-avatar is-small">
                           <img
                             class="avatar"
                             src="/images/avatars/photos/8.jpg"
@@ -696,7 +696,7 @@ const props = defineProps({
                             "
                           />
                         </div>
-                        <div class="h-avatar is-small">
+                        <div class="v-avatar is-small">
                           <img
                             class="avatar"
                             src="/images/avatars/photos/5.jpg"
@@ -731,7 +731,7 @@ const props = defineProps({
                   <div class="content-wrap">
                     <div class="left">
                       <div class="avatar-stack">
-                        <div class="h-avatar is-small">
+                        <div class="v-avatar is-small">
                           <img
                             class="avatar"
                             src="/images/avatars/photos/12.jpg"
@@ -766,7 +766,7 @@ const props = defineProps({
                   <div class="content-wrap">
                     <div class="left">
                       <div class="avatar-stack">
-                        <div class="h-avatar is-small">
+                        <div class="v-avatar is-small">
                           <img
                             class="avatar"
                             src="/images/avatars/photos/12.jpg"
@@ -801,7 +801,7 @@ const props = defineProps({
                   <div class="content-wrap">
                     <div class="left">
                       <div class="avatar-stack">
-                        <div class="h-avatar is-small">
+                        <div class="v-avatar is-small">
                           <img
                             class="avatar"
                             src="/images/avatars/photos/5.jpg"
@@ -812,7 +812,7 @@ const props = defineProps({
                             "
                           />
                         </div>
-                        <div class="h-avatar is-small">
+                        <div class="v-avatar is-small">
                           <img
                             class="avatar"
                             src="/images/avatars/photos/7.jpg"
@@ -847,7 +847,7 @@ const props = defineProps({
                   <div class="content-wrap">
                     <div class="left">
                       <div class="avatar-stack">
-                        <div class="h-avatar is-small">
+                        <div class="v-avatar is-small">
                           <img
                             class="avatar"
                             src="/images/avatars/photos/25.jpg"
@@ -882,7 +882,7 @@ const props = defineProps({
                   <div class="content-wrap">
                     <div class="left">
                       <div class="avatar-stack">
-                        <div class="h-avatar is-small">
+                        <div class="v-avatar is-small">
                           <img
                             class="avatar"
                             src="/images/avatars/photos/25.jpg"
@@ -893,7 +893,7 @@ const props = defineProps({
                             "
                           />
                         </div>
-                        <div class="h-avatar is-small">
+                        <div class="v-avatar is-small">
                           <img
                             class="avatar"
                             src="/images/avatars/photos/12.jpg"
@@ -928,7 +928,7 @@ const props = defineProps({
                   <div class="content-wrap">
                     <div class="left">
                       <div class="avatar-stack">
-                        <div class="h-avatar is-small">
+                        <div class="v-avatar is-small">
                           <img
                             class="avatar"
                             src="/images/avatars/photos/25.jpg"
@@ -939,7 +939,7 @@ const props = defineProps({
                             "
                           />
                         </div>
-                        <div class="h-avatar is-small">
+                        <div class="v-avatar is-small">
                           <img
                             class="avatar"
                             src="/images/avatars/photos/12.jpg"
@@ -974,7 +974,7 @@ const props = defineProps({
                   <div class="content-wrap">
                     <div class="left">
                       <div class="avatar-stack">
-                        <div class="h-avatar is-small">
+                        <div class="v-avatar is-small">
                           <img
                             class="avatar"
                             src="/images/avatars/photos/25.jpg"
@@ -985,7 +985,7 @@ const props = defineProps({
                             "
                           />
                         </div>
-                        <div class="h-avatar is-small">
+                        <div class="v-avatar is-small">
                           <img
                             class="avatar"
                             src="/images/avatars/photos/12.jpg"

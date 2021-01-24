@@ -48,7 +48,7 @@ import { progressChartOptions } from '/@src/composition/state/charts/apexcharts/
       <div class="column is-3">
         <div class="health-tile">
           <div class="tile-head">
-            <div class="h-icon is-primary">
+            <div class="v-icon is-primary">
               <i class="fas fa-tint"></i>
             </div>
             <h4>
@@ -68,7 +68,7 @@ import { progressChartOptions } from '/@src/composition/state/charts/apexcharts/
       <div class="column is-3">
         <div class="health-tile">
           <div class="tile-head">
-            <div class="h-icon is-primary">
+            <div class="v-icon is-primary">
               <i class="fas fa-heart"></i>
             </div>
             <h4>
@@ -88,7 +88,7 @@ import { progressChartOptions } from '/@src/composition/state/charts/apexcharts/
       <div class="column is-3">
         <div class="health-tile">
           <div class="tile-head">
-            <div class="h-icon is-primary">
+            <div class="v-icon is-primary">
               <i class="fas fa-pump-medical"></i>
             </div>
             <h4>
@@ -108,7 +108,7 @@ import { progressChartOptions } from '/@src/composition/state/charts/apexcharts/
       <div class="column is-3">
         <div class="health-tile">
           <div class="tile-head">
-            <div class="h-icon is-primary">
+            <div class="v-icon is-primary">
               <i class="fas fa-weight"></i>
             </div>
             <h4>
@@ -355,7 +355,7 @@ import { progressChartOptions } from '/@src/composition/state/charts/apexcharts/
             </div>
             <div class="right">
               <div class="avatar-stack">
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/7.jpg"
@@ -365,7 +365,7 @@ import { progressChartOptions } from '/@src/composition/state/charts/apexcharts/
                     "
                   />
                 </div>
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/8.jpg"
@@ -375,7 +375,7 @@ import { progressChartOptions } from '/@src/composition/state/charts/apexcharts/
                     "
                   />
                 </div>
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/5.jpg"

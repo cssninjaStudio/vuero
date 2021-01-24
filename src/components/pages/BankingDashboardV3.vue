@@ -89,7 +89,7 @@ import { popularityGaugeOptions } from '/@src/composition/state/charts/apexchart
         <!--Info-->
         <div class="dashboard-card is-side">
           <div class="media-flex-center is-responsive-mobile">
-            <div class="h-avatar">
+            <div class="v-avatar">
               <img
                 class="avatar"
                 src="/images/icons/cryptocurrencies/btc.svg"
@@ -131,7 +131,7 @@ import { popularityGaugeOptions } from '/@src/composition/state/charts/apexchart
           </div>
 
           <div class="people">
-            <div class="h-avatar">
+            <div class="v-avatar">
               <img
                 class="avatar"
                 src="/images/avatars/photos/21.jpg"
@@ -142,12 +142,12 @@ import { popularityGaugeOptions } from '/@src/composition/state/charts/apexchart
                 "
               />
             </div>
-            <div class="h-avatar">
+            <div class="v-avatar">
               <span class="avatar is-fake is-h-purple" data-user-popover="35">
                 <span>SC</span>
               </span>
             </div>
-            <div class="h-avatar">
+            <div class="v-avatar">
               <img
                 class="avatar"
                 src="/images/avatars/photos/7.jpg"
@@ -158,12 +158,12 @@ import { popularityGaugeOptions } from '/@src/composition/state/charts/apexchart
                 "
               />
             </div>
-            <div class="h-avatar">
+            <div class="v-avatar">
               <span class="avatar is-fake is-success" data-user-popover="37">
                 <span>AT</span>
               </span>
             </div>
-            <div class="h-avatar">
+            <div class="v-avatar">
               <img
                 class="avatar"
                 src="/images/avatars/photos/31.jpg"
@@ -174,7 +174,7 @@ import { popularityGaugeOptions } from '/@src/composition/state/charts/apexchart
                 "
               />
             </div>
-            <div class="h-avatar">
+            <div class="v-avatar">
               <span class="avatar is-fake is-h-yellow">
                 <span>50K</span>
               </span>
@@ -189,7 +189,7 @@ import { popularityGaugeOptions } from '/@src/composition/state/charts/apexchart
           </div>
 
           <div class="media-flex-center">
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/icons/cryptocurrencies/xmr.svg"
@@ -213,7 +213,7 @@ import { popularityGaugeOptions } from '/@src/composition/state/charts/apexchart
           </div>
 
           <div class="media-flex-center">
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/icons/cryptocurrencies/ltc.svg"
@@ -237,7 +237,7 @@ import { popularityGaugeOptions } from '/@src/composition/state/charts/apexchart
           </div>
 
           <div class="media-flex-center">
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/icons/cryptocurrencies/link.svg"
@@ -261,7 +261,7 @@ import { popularityGaugeOptions } from '/@src/composition/state/charts/apexchart
           </div>
 
           <div class="media-flex-center">
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/icons/cryptocurrencies/bnb.svg"

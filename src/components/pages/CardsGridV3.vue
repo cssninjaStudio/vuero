@@ -38,7 +38,7 @@
               </span>
             </span>
           </label>
-          <div class="h-avatar is-large">
+          <div class="v-avatar is-large">
             <img
               class="avatar is-squared"
               src="/images/photo/demo/apps/1.jpg"
@@ -61,12 +61,12 @@
             </p>
           </div>
           <div class="people">
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <span class="avatar is-fake is-warning" data-user-popover="36">
                 <span>BT</span>
               </span>
             </div>
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/18.jpg"
@@ -77,12 +77,12 @@
                 "
               />
             </div>
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <span class="avatar is-fake is-info" data-user-popover="34">
                 <span>JD</span>
               </span>
             </div>
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/7.jpg"
@@ -114,7 +114,7 @@
       <!--Grid Item-->
       <div class="column is-4">
         <div class="card-grid-item">
-          <div class="h-avatar is-large">
+          <div class="v-avatar is-large">
             <img
               class="avatar is-squared"
               src="/images/photo/demo/apps/2.png"
@@ -139,7 +139,7 @@
             </p>
           </div>
           <div class="people">
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/21.jpg"
@@ -150,12 +150,12 @@
                 "
               />
             </div>
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <span class="avatar is-fake is-success" data-user-popover="37">
                 <span>AT</span>
               </span>
             </div>
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/39.jpg"
@@ -198,7 +198,7 @@
               </span>
             </span>
           </label>
-          <div class="h-avatar is-large">
+          <div class="v-avatar is-large">
             <img
               class="avatar is-squared"
               src="/images/photo/demo/apps/3.png"
@@ -223,7 +223,7 @@
             </p>
           </div>
           <div class="people">
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/21.jpg"
@@ -234,12 +234,12 @@
                 "
               />
             </div>
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <span class="avatar is-fake is-h-purple" data-user-popover="35">
                 <span>SC</span>
               </span>
             </div>
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/39.jpg"
@@ -271,7 +271,7 @@
       <!--Grid Item-->
       <div class="column is-4">
         <div class="card-grid-item">
-          <div class="h-avatar is-large">
+          <div class="v-avatar is-large">
             <img
               class="avatar is-squared"
               src="/images/photo/demo/apps/4.png"
@@ -296,7 +296,7 @@
             </p>
           </div>
           <div class="people">
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/28.jpg"
@@ -307,7 +307,7 @@
                 "
               />
             </div>
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/33.jpg"
@@ -350,7 +350,7 @@
               </span>
             </span>
           </label>
-          <div class="h-avatar is-large">
+          <div class="v-avatar is-large">
             <img
               class="avatar is-squared"
               src="/images/photo/demo/apps/5.png"
@@ -375,12 +375,12 @@
             </p>
           </div>
           <div class="people">
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <span class="avatar is-fake is-success" data-user-popover="37">
                 <span>AT</span>
               </span>
             </div>
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/23.jpg"
@@ -412,7 +412,7 @@
       <!--Grid Item-->
       <div class="column is-4">
         <div class="card-grid-item">
-          <div class="h-avatar is-large">
+          <div class="v-avatar is-large">
             <img
               class="avatar is-squared"
               src="/images/photo/demo/apps/6.png"
@@ -435,12 +435,12 @@
             </p>
           </div>
           <div class="people">
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <span class="avatar is-fake is-warning" data-user-popover="36">
                 <span>BT</span>
               </span>
             </div>
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/18.jpg"
@@ -451,7 +451,7 @@
                 "
               />
             </div>
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <span class="avatar is-fake is-info" data-user-popover="34">
                 <span>JD</span>
               </span>
@@ -477,7 +477,7 @@
       <!--Grid Item-->
       <div class="column is-4">
         <div class="card-grid-item">
-          <div class="h-avatar is-large">
+          <div class="v-avatar is-large">
             <img
               class="avatar is-squared"
               src="/images/photo/demo/apps/7.png"
@@ -500,12 +500,12 @@
             </p>
           </div>
           <div class="people">
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <span class="avatar is-fake is-h-purple" data-user-popover="35">
                 <span>SC</span>
               </span>
             </div>
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/27.jpg"
@@ -537,7 +537,7 @@
       <!--Grid Item-->
       <div class="column is-4">
         <div class="card-grid-item">
-          <div class="h-avatar is-large">
+          <div class="v-avatar is-large">
             <img
               class="avatar is-squared"
               src="/images/photo/demo/apps/8.png"
@@ -562,12 +562,12 @@
             </p>
           </div>
           <div class="people">
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <span class="avatar is-fake is-h-purple" data-user-popover="35">
                 <span>SC</span>
               </span>
             </div>
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/27.jpg"
@@ -599,7 +599,7 @@
       <!--Grid Item-->
       <div class="column is-4">
         <div class="card-grid-item">
-          <div class="h-avatar is-large">
+          <div class="v-avatar is-large">
             <img
               class="avatar is-squared"
               src="/images/photo/demo/apps/9.png"
@@ -624,12 +624,12 @@
             </p>
           </div>
           <div class="people">
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <span class="avatar is-fake is-success" data-user-popover="37">
                 <span>AT</span>
               </span>
             </div>
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/23.jpg"
@@ -661,7 +661,7 @@
       <!--Grid Item-->
       <div class="column is-4">
         <div class="card-grid-item">
-          <div class="h-avatar is-large">
+          <div class="v-avatar is-large">
             <img
               class="avatar is-squared"
               src="/images/photo/demo/apps/10.png"
@@ -684,12 +684,12 @@
             </p>
           </div>
           <div class="people">
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <span class="avatar is-fake is-success" data-user-popover="37">
                 <span>AT</span>
               </span>
             </div>
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/23.jpg"
@@ -721,7 +721,7 @@
       <!--Grid Item-->
       <div class="column is-4">
         <div class="card-grid-item">
-          <div class="h-avatar is-large">
+          <div class="v-avatar is-large">
             <img
               class="avatar is-squared"
               src="/images/photo/demo/apps/11.png"
@@ -746,12 +746,12 @@
             </p>
           </div>
           <div class="people">
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <span class="avatar is-fake is-warning" data-user-popover="36">
                 <span>BT</span>
               </span>
             </div>
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/18.jpg"
@@ -762,12 +762,12 @@
                 "
               />
             </div>
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <span class="avatar is-fake is-info" data-user-popover="34">
                 <span>JD</span>
               </span>
             </div>
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/7.jpg"
@@ -799,7 +799,7 @@
       <!--Grid Item-->
       <div class="column is-4">
         <div class="card-grid-item">
-          <div class="h-avatar is-large">
+          <div class="v-avatar is-large">
             <img
               class="avatar is-squared"
               src="/images/photo/demo/apps/12.jpg"
@@ -824,7 +824,7 @@
             </p>
           </div>
           <div class="people">
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/21.jpg"
@@ -835,12 +835,12 @@
                 "
               />
             </div>
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <span class="avatar is-fake is-h-purple" data-user-popover="35">
                 <span>SC</span>
               </span>
             </div>
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/39.jpg"
@@ -872,7 +872,7 @@
       <!--Grid Item-->
       <div class="column is-4">
         <div class="card-grid-item">
-          <div class="h-avatar is-large">
+          <div class="v-avatar is-large">
             <img
               class="avatar is-squared"
               src="/images/photo/demo/apps/13.png"
@@ -897,12 +897,12 @@
             </p>
           </div>
           <div class="people">
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <span class="avatar is-fake is-warning" data-user-popover="36">
                 <span>BT</span>
               </span>
             </div>
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/31.jpg"
@@ -934,7 +934,7 @@
       <!--Grid Item-->
       <div class="column is-4">
         <div class="card-grid-item">
-          <div class="h-avatar is-large">
+          <div class="v-avatar is-large">
             <img
               class="avatar is-squared"
               src="/images/photo/demo/apps/14.jpg"
@@ -957,7 +957,7 @@
             </p>
           </div>
           <div class="people">
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/33.jpg"
@@ -968,7 +968,7 @@
                 "
               />
             </div>
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/26.jpg"
@@ -1000,7 +1000,7 @@
       <!--Grid Item-->
       <div class="column is-4">
         <div class="card-grid-item">
-          <div class="h-avatar is-large">
+          <div class="v-avatar is-large">
             <img
               class="avatar is-squared"
               src="/images/photo/demo/apps/15.png"
@@ -1025,7 +1025,7 @@
             </p>
           </div>
           <div class="people">
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/21.jpg"
@@ -1036,12 +1036,12 @@
                 "
               />
             </div>
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <span class="avatar is-fake is-success" data-user-popover="37">
                 <span>AT</span>
               </span>
             </div>
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/39.jpg"

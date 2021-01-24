@@ -35,7 +35,7 @@ useHead({
       </div>
 
       <div class="title-wrap">
-        <h1 class="title is-4">Dropdown</h1>
+        <h1 class="title is-4">V-Dropdown</h1>
       </div>
 
       <Toolbar />
@@ -58,7 +58,7 @@ useHead({
           </li>
           <li>
             <a>
-              <span>Dropdown</span>
+              <span>V-Dropdown</span>
             </a>
           </li>
         </ul>

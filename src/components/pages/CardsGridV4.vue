@@ -37,7 +37,7 @@
             </h3>
           </div>
           <div class="card-grid-item-footer">
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/39.jpg"
@@ -70,7 +70,7 @@
             </h3>
           </div>
           <div class="card-grid-item-footer">
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/15.jpg"
@@ -103,7 +103,7 @@
             </h3>
           </div>
           <div class="card-grid-item-footer">
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/24.jpg"
@@ -136,7 +136,7 @@
             </h3>
           </div>
           <div class="card-grid-item-footer">
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/27.jpg"
@@ -169,7 +169,7 @@
             </h3>
           </div>
           <div class="card-grid-item-footer">
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/10.jpg"
@@ -202,7 +202,7 @@
             </h3>
           </div>
           <div class="card-grid-item-footer">
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/22.jpg"
@@ -235,7 +235,7 @@
             </h3>
           </div>
           <div class="card-grid-item-footer">
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/16.jpg"
@@ -268,7 +268,7 @@
             </h3>
           </div>
           <div class="card-grid-item-footer">
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/26.jpg"
@@ -301,7 +301,7 @@
             </h3>
           </div>
           <div class="card-grid-item-footer">
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/8.jpg"
@@ -334,7 +334,7 @@
             </h3>
           </div>
           <div class="card-grid-item-footer">
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/14.jpg"
@@ -367,7 +367,7 @@
             </h3>
           </div>
           <div class="card-grid-item-footer">
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/9.jpg"
@@ -398,7 +398,7 @@
             <h3 class="dark-inverted">Why it pays to profile your customers</h3>
           </div>
           <div class="card-grid-item-footer">
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/40.jpg"
@@ -431,7 +431,7 @@
             </h3>
           </div>
           <div class="card-grid-item-footer">
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/19.jpg"
@@ -464,7 +464,7 @@
             </h3>
           </div>
           <div class="card-grid-item-footer">
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/28.jpg"
@@ -497,7 +497,7 @@
             </h3>
           </div>
           <div class="card-grid-item-footer">
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/5.jpg"
@@ -530,7 +530,7 @@
             </h3>
           </div>
           <div class="card-grid-item-footer">
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/33.jpg"
@@ -563,7 +563,7 @@
             </h3>
           </div>
           <div class="card-grid-item-footer">
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/33.jpg"
@@ -596,7 +596,7 @@
             </h3>
           </div>
           <div class="card-grid-item-footer">
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/31.jpg"

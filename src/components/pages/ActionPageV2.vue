@@ -5,7 +5,7 @@
       <div class="wrapper-inner">
         <div class="action-box">
           <div class="box-content">
-            <div class="h-avatar is-big">
+            <div class="v-avatar is-big">
               <img
                 class="avatar"
                 src="/images/avatars/photos/16.jpg"
@@ -40,7 +40,7 @@
             </div>
             <div class="people-wrap">
               <div class="people">
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/21.jpg"
@@ -51,7 +51,7 @@
                     "
                   />
                 </div>
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <span
                     class="avatar is-fake is-h-purple"
                     data-user-popover="35"
@@ -59,7 +59,7 @@
                     <span>SC</span>
                   </span>
                 </div>
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/39.jpg"

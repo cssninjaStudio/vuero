@@ -321,7 +321,7 @@
       padding: 30px;
       margin-bottom: 1.5rem;
 
-      .h-avatar {
+      .v-avatar {
         display: block;
         margin: 0 auto;
       }
@@ -487,7 +487,7 @@
         text-align: center;
         padding: 30px;
 
-        .h-avatar {
+        .v-avatar {
           display: block;
           margin: 0 auto 10px auto;
 
@@ -691,7 +691,7 @@
         .candidates {
           margin-top: auto;
 
-          > .h-avatar {
+          > .v-avatar {
             margin-right: 10px;
           }
 
@@ -723,7 +723,7 @@
         align-items: center;
 
         .current-user {
-          .h-avatar {
+          .v-avatar {
             margin-bottom: 1rem;
           }
 
@@ -1108,7 +1108,7 @@
 
         .center {
           .candidates {
-            .h-avatar {
+            .v-avatar {
               &:nth-child(3) {
                 display: none;
               }

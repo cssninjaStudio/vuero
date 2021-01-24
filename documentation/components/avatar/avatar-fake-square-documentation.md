@@ -6,12 +6,12 @@ When the provided picture URL is null, the avatar component falls back to a fake
 
 ```vue {2-4}
 <template>
-  <Avatar initials="CT" size="small" squared />
-  <Avatar initials="CT" squared />
-  <Avatar initials="CT" size="medium" squared />
-  <Avatar initials="CT" size="large" squared />
-  <Avatar initials="CT" size="big" squared />
-  <Avatar initials="CT" size="xl" squared />
+  <V-Avatar initials="CT" size="small" squared />
+  <V-Avatar initials="CT" squared />
+  <V-Avatar initials="CT" size="medium" squared />
+  <V-Avatar initials="CT" size="large" squared />
+  <V-Avatar initials="CT" size="big" squared />
+  <V-Avatar initials="CT" size="xl" squared />
 </template>
 ```
 
@@ -19,11 +19,11 @@ When the provided picture URL is null, the avatar component falls back to a fake
 
 <!--example-->
 
-<Avatar initials="CT" size="small" squared />
-<Avatar initials="CT" squared />
-<Avatar initials="CT" size="medium" squared />
-<Avatar initials="CT" size="large" squared />
-<Avatar initials="CT" size="big" squared />
-<Avatar initials="CT" size="xl" squared />
+<V-Avatar initials="CT" size="small" squared />
+<V-Avatar initials="CT" squared />
+<V-Avatar initials="CT" size="medium" squared />
+<V-Avatar initials="CT" size="large" squared />
+<V-Avatar initials="CT" size="big" squared />
+<V-Avatar initials="CT" size="xl" squared />
 
 <!--/example-->

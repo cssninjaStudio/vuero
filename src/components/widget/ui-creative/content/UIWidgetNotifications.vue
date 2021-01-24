@@ -15,7 +15,7 @@ const props = defineProps({
       <li v-for="notification in notifications" :key="notification.id">
         <a>
           <span>{{ notification.category }}</span>
-          <Tag rounded :label="notification.count" />
+          <V-Tag rounded :label="notification.count" />
         </a>
       </li>
     </ul>

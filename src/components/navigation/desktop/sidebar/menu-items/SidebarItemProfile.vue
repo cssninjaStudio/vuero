@@ -32,7 +32,7 @@ const otherLayoutLink = computed(() => {
       <div class="dropdown-menu" role="menu">
         <div class="dropdown-content">
           <div class="dropdown-head">
-            <div class="h-avatar is-large">
+            <div class="v-avatar is-large">
               <img
                 class="avatar"
                 src="/images/avatars/photos/8.jpg"

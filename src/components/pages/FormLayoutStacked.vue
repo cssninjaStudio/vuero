@@ -154,7 +154,7 @@ const isStuck = computed(() => {
                 <div class="field">
                   <div class="control">
                     <div class="participants">
-                      <div class="h-avatar">
+                      <div class="v-avatar">
                         <img
                           class="avatar"
                           src="/images/avatars/photos/8.jpg"
@@ -167,7 +167,7 @@ const isStuck = computed(() => {
                           "
                         />
                       </div>
-                      <div class="h-avatar">
+                      <div class="v-avatar">
                         <span
                           class="avatar is-fake is-warning"
                           data-user-popover="36"
@@ -175,7 +175,7 @@ const isStuck = computed(() => {
                           <span>BT</span>
                         </span>
                       </div>
-                      <div class="h-avatar">
+                      <div class="v-avatar">
                         <img
                           class="avatar"
                           src="/images/avatars/photos/18.jpg"
@@ -188,7 +188,7 @@ const isStuck = computed(() => {
                           "
                         />
                       </div>
-                      <div class="h-avatar">
+                      <div class="v-avatar">
                         <span
                           class="avatar is-fake is-info"
                           data-user-popover="34"
@@ -196,7 +196,7 @@ const isStuck = computed(() => {
                           <span>JD</span>
                         </span>
                       </div>
-                      <div class="h-avatar">
+                      <div class="v-avatar">
                         <img
                           class="avatar"
                           src="/images/avatars/photos/7.jpg"

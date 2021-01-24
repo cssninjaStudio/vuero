@@ -14,12 +14,12 @@
   align-items: flex-end;
   flex-wrap: wrap;
 
-  .h-icon {
+  .v-icon {
     margin: 0 6px;
   }
 }
 
-.h-icon {
+.v-icon {
   position: relative;
   display: flex;
   justify-content: center;
@@ -411,7 +411,7 @@
 ========================================================================== */
 
 .is-dark {
-  .h-icon {
+  .v-icon {
     &.is-primary {
       background: $accent;
 

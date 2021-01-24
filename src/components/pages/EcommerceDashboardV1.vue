@@ -3,7 +3,7 @@
   <div class="ecommerce-dashboard ecommerce-dashboard-v1">
     <!--Header-->
     <div class="dashboard-header">
-      <div class="h-avatar is-large">
+      <div class="v-avatar is-large">
         <img
           class="avatar"
           src="/images/avatars/photos/8.jpg"
@@ -29,7 +29,7 @@
         <div class="dashboard-tile">
           <div class="tile-head">
             <h3>Total Sales</h3>
-            <div class="h-icon is-info is-rounded">
+            <div class="v-icon is-info is-rounded">
               <i class="iconify" data-icon="feather:gift"></i>
             </div>
           </div>
@@ -49,7 +49,7 @@
         <div class="dashboard-tile">
           <div class="tile-head">
             <h3>Total Income</h3>
-            <div class="h-icon is-purple is-rounded">
+            <div class="v-icon is-purple is-rounded">
               <i class="iconify" data-icon="feather:dollar-sign"></i>
             </div>
           </div>
@@ -69,7 +69,7 @@
         <div class="dashboard-tile">
           <div class="tile-head">
             <h3>New Orders</h3>
-            <div class="h-icon is-green is-rounded">
+            <div class="v-icon is-green is-rounded">
               <i class="iconify" data-icon="feather:box"></i>
             </div>
           </div>
@@ -89,7 +89,7 @@
         <div class="dashboard-tile">
           <div class="tile-head">
             <h3>Abandonned</h3>
-            <div class="h-icon is-orange is-rounded">
+            <div class="v-icon is-orange is-rounded">
               <i class="iconify" data-icon="feather:shopping-cart"></i>
             </div>
           </div>
@@ -325,7 +325,7 @@
           <!--Table item-->
           <div class="flex-table-item">
             <div class="flex-table-cell is-media is-grow" data-th="">
-              <div class="h-avatar is-medium">
+              <div class="v-avatar is-medium">
                 <img
                   class="avatar is-squared"
                   src="/images/avatars/photos/8.jpg"
@@ -366,7 +366,7 @@
           <!--Table item-->
           <div class="flex-table-item">
             <div class="flex-table-cell is-media is-grow" data-th="">
-              <div class="h-avatar is-medium">
+              <div class="v-avatar is-medium">
                 <img
                   class="avatar is-squared"
                   src="/images/avatars/photos/22.jpg"
@@ -407,7 +407,7 @@
           <!--Table item-->
           <div class="flex-table-item">
             <div class="flex-table-cell is-media is-grow" data-th="">
-              <div class="h-avatar is-medium">
+              <div class="v-avatar is-medium">
                 <img
                   class="avatar is-squared"
                   src="/images/avatars/photos/25.jpg"
@@ -448,7 +448,7 @@
           <!--Table item-->
           <div class="flex-table-item">
             <div class="flex-table-cell is-media is-grow" data-th="">
-              <div class="h-avatar is-medium">
+              <div class="v-avatar is-medium">
                 <img
                   class="avatar is-squared"
                   src="/images/avatars/photos/12.jpg"
@@ -489,7 +489,7 @@
           <!--Table item-->
           <div class="flex-table-item">
             <div class="flex-table-cell is-media is-grow" data-th="">
-              <div class="h-avatar is-medium">
+              <div class="v-avatar is-medium">
                 <img
                   class="avatar is-squared"
                   src="/images/avatars/photos/13.jpg"

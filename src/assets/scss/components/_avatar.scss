@@ -9,7 +9,7 @@
 1. Avatar
 ========================================================================== */
 
-.h-avatar {
+.v-avatar {
   position: relative;
   display: inline-block;
   vertical-align: bottom;
@@ -498,7 +498,7 @@
 .avatar-stack {
   display: flex;
 
-  .h-avatar {
+  .v-avatar {
     border-radius: 50%;
 
     &.is-small {
@@ -564,7 +564,7 @@
 ========================================================================== */
 
 .is-dark {
-  .h-avatar {
+  .v-avatar {
     .avatar {
       border-color: lighten($dark-sidebar, 6%);
 

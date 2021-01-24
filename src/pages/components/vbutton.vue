@@ -94,6 +94,9 @@ useHead({
 
           <!--V-Button Elevation-->
           <VButtonElevatedDocumentation />
+
+          <!--V-Button Disabled-->
+          <VButtonDisabledDocumentation />
         </div>
         <div v-if="toc.length" class="column is-3">
           <DocumentationToc :toc="toc" />

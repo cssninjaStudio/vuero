@@ -321,7 +321,7 @@ useHead({
                 <div class="control is-textarea-addon">
                   <div class="start">
                     <div class="avatar-stack">
-                      <div class="h-avatar is-small">
+                      <div class="v-avatar is-small">
                         <img
                           class="avatar"
                           src="/images/avatars/photos/12.jpg"
@@ -332,12 +332,12 @@ useHead({
                           "
                         />
                       </div>
-                      <div class="h-avatar is-small">
+                      <div class="v-avatar is-small">
                         <span class="avatar is-fake is-info">
                           <span>JD</span>
                         </span>
                       </div>
-                      <div class="h-avatar is-small">
+                      <div class="v-avatar is-small">
                         <img
                           class="avatar"
                           src="/images/avatars/photos/7.jpg"
@@ -367,15 +367,15 @@ useHead({
     &#x3C;div class=&#x22;control is-textarea-addon&#x22;&#x3E;
         &#x3C;div class=&#x22;start&#x22;&#x3E;
             &#x3C;div class=&#x22;avatar-stack&#x22;&#x3E;
-                &#x3C;div class=&#x22;h-avatar is-small&#x22;&#x3E;
+                &#x3C;div class=&#x22;v-avatar is-small&#x22;&#x3E;
                     &#x3C;img class=&#x22;avatar&#x22; src=&#x22;https://via.placeholder.com/150x150&#x22; alt=&#x22;&#x22;&#x3E;
                 &#x3C;/div&#x3E;
-                &#x3C;div class=&#x22;h-avatar is-small&#x22;&#x3E;
+                &#x3C;div class=&#x22;v-avatar is-small&#x22;&#x3E;
                     &#x3C;span class=&#x22;avatar is-fake is-info&#x22;&#x3E;
                         &#x3C;span&#x3E;JD&#x3C;/span&#x3E;
                     &#x3C;/span&#x3E;
                 &#x3C;/div&#x3E;
-                &#x3C;div class=&#x22;h-avatar is-small&#x22;&#x3E;
+                &#x3C;div class=&#x22;v-avatar is-small&#x22;&#x3E;
                     &#x3C;img class=&#x22;avatar&#x22; src=&#x22;https://via.placeholder.com/150x150&#x22; alt=&#x22;&#x22;&#x3E;
                 &#x3C;/div&#x3E;
             &#x3C;/div&#x3E;

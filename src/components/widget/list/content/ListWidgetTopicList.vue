@@ -21,15 +21,15 @@ const props = defineProps({
       :key="topic.id"
       class="inner-list-item media-flex-center"
     >
-      <IconBox :rounded="props.rounded" :color="topic.color">
+      <V-IconBox :rounded="props.rounded" :color="topic.color">
         <i class="iconify" :data-icon="topic.icon"></i>
-      </IconBox>
+      </V-IconBox>
       <div class="flex-meta is-light">
         <a href="#">{{ topic.name }}</a>
         <span>{{ topic.category }}</span>
       </div>
       <div class="flex-end">
-        <AvatarStack :avatars="topic.users" size="small" :limit="3" />
+        <V-AvatarStack :avatars="topic.users" size="small" :limit="3" />
       </div>
     </div>
   </div>

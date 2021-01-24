@@ -11,7 +11,7 @@
       </div>
 
       <div class="project-preview-header">
-        <div class="h-avatar is-big">
+        <div class="v-avatar is-big">
           <div id="project-preview-fake-logo" class="avatar is-fake is-h-green">
             <span>P</span>
           </div>
@@ -56,7 +56,7 @@
                 <i class="lnil lnil-pencil"></i>
               </div>
               <div class="media-flex-center">
-                <div class="h-icon is-medium is-warning is-rounded">
+                <div class="v-icon is-medium is-warning is-rounded">
                   <i class="lnil lnil-vector-pen"></i>
                 </div>
                 <div class="flex-meta">
@@ -76,7 +76,7 @@
                 id="project-preview-customer-block"
                 class="media-flex-center"
               >
-                <div class="h-avatar is-medium">
+                <div class="v-avatar is-medium">
                   <img
                     id="project-preview-customer-logo"
                     class="avatar"
@@ -160,7 +160,7 @@
               <div id="project-preview-team" class="media-list">
                 <div class="media-list-item is-owner">
                   <div class="media-flex-center">
-                    <div class="h-avatar">
+                    <div class="v-avatar">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/8.jpg"
@@ -180,7 +180,7 @@
                 </div>
                 <div class="media-list-item">
                   <div class="media-flex-center">
-                    <div class="h-avatar">
+                    <div class="v-avatar">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/7.jpg"
@@ -200,7 +200,7 @@
                 </div>
                 <div class="media-list-item">
                   <div class="media-flex-center">
-                    <div class="h-avatar">
+                    <div class="v-avatar">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/25.jpg"
@@ -240,7 +240,7 @@
               <div id="project-preview-tools" class="media-list">
                 <div class="media-list-item">
                   <div class="media-flex-center">
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <img
                         class="avatar"
                         src="/images/photo/demo/tools/illustrator.svg"
@@ -259,7 +259,7 @@
                 </div>
                 <div class="media-list-item">
                   <div class="media-flex-center">
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <img
                         class="avatar"
                         src="/images/photo/demo/tools/figma.svg"
@@ -278,7 +278,7 @@
                 </div>
                 <div class="media-list-item">
                   <div class="media-flex-center">
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <img
                         class="avatar"
                         src="/images/photo/demo/tools/taiga.svg"

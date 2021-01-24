@@ -6,12 +6,12 @@ When the provided picture URL is null, the avatar component falls back to a fake
 
 ```vue {2-4}
 <template>
-  <Avatar initials="CT" size="small" />
-  <Avatar initials="CT" />
-  <Avatar initials="CT" size="medium" />
-  <Avatar initials="CT" size="large" />
-  <Avatar initials="CT" size="big" />
-  <Avatar initials="CT" size="xl" />
+  <V-Avatar initials="CT" size="small" />
+  <V-Avatar initials="CT" />
+  <V-Avatar initials="CT" size="medium" />
+  <V-Avatar initials="CT" size="large" />
+  <V-Avatar initials="CT" size="big" />
+  <V-Avatar initials="CT" size="xl" />
 </template>
 ```
 
@@ -19,11 +19,11 @@ When the provided picture URL is null, the avatar component falls back to a fake
 
 <!--example-->
 
-<Avatar initials="CT" size="small" />
-<Avatar initials="CT" />
-<Avatar initials="CT" size="medium" />
-<Avatar initials="CT" size="large" />
-<Avatar initials="CT" size="big" />
-<Avatar initials="CT" size="xl" />
+<V-Avatar initials="CT" size="small" />
+<V-Avatar initials="CT" />
+<V-Avatar initials="CT" size="medium" />
+<V-Avatar initials="CT" size="large" />
+<V-Avatar initials="CT" size="big" />
+<V-Avatar initials="CT" size="xl" />
 
 <!--/example-->

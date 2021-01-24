@@ -748,7 +748,7 @@ useHead({
             border-color: $placeholder;
 
             ~ .auth-label,
-            ~ .auth-icon i {
+            ~ .autv-icon i {
               color: $muted-grey;
             }
           }
@@ -772,7 +772,7 @@ useHead({
           transition: all 0.3s;
         }
 
-        .auth-icon {
+        .autv-icon {
           position: absolute;
           top: 0;
           left: 0;

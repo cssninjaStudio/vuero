@@ -130,7 +130,7 @@
 
               <div class="item-people">
                 <div class="avatar-stack">
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/13.jpg"
@@ -141,7 +141,7 @@
                       "
                     />
                   </div>
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/11.jpg"
@@ -183,7 +183,7 @@
 
               <div class="item-people">
                 <div class="avatar-stack">
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/7.jpg"
@@ -194,7 +194,7 @@
                       "
                     />
                   </div>
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/9.jpg"
@@ -205,7 +205,7 @@
                       "
                     />
                   </div>
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/12.jpg"
@@ -216,7 +216,7 @@
                       "
                     />
                   </div>
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/8.jpg"
@@ -227,7 +227,7 @@
                       "
                     />
                   </div>
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/25.jpg"
@@ -238,7 +238,7 @@
                       "
                     />
                   </div>
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <span class="avatar is-more">
                       <span class="inner">
                         <span>+3</span>
@@ -277,7 +277,7 @@
 
               <div class="item-people">
                 <div class="avatar-stack">
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/14.jpg"
@@ -319,7 +319,7 @@
 
               <div class="item-people">
                 <div class="avatar-stack">
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/8.jpg"
@@ -330,7 +330,7 @@
                       "
                     />
                   </div>
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/22.jpg"
@@ -341,7 +341,7 @@
                       "
                     />
                   </div>
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/10.jpg"
@@ -352,7 +352,7 @@
                       "
                     />
                   </div>
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/26.jpg"
@@ -394,7 +394,7 @@
 
               <div class="item-people">
                 <div class="avatar-stack">
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/13.jpg"
@@ -405,7 +405,7 @@
                       "
                     />
                   </div>
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/11.jpg"
@@ -416,7 +416,7 @@
                       "
                     />
                   </div>
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/8.jpg"
@@ -427,7 +427,7 @@
                       "
                     />
                   </div>
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/22.jpg"
@@ -470,7 +470,7 @@
 
               <div class="item-people">
                 <div class="avatar-stack">
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/13.jpg"
@@ -481,7 +481,7 @@
                       "
                     />
                   </div>
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/11.jpg"
@@ -523,7 +523,7 @@
 
               <div class="item-people">
                 <div class="avatar-stack">
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/13.jpg"
@@ -534,7 +534,7 @@
                       "
                     />
                   </div>
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/16.jpg"
@@ -545,7 +545,7 @@
                       "
                     />
                   </div>
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/10.jpg"
@@ -556,7 +556,7 @@
                       "
                     />
                   </div>
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/9.jpg"
@@ -598,7 +598,7 @@
 
               <div class="item-people">
                 <div class="avatar-stack">
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/22.jpg"
@@ -609,7 +609,7 @@
                       "
                     />
                   </div>
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/10.jpg"
@@ -620,7 +620,7 @@
                       "
                     />
                   </div>
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/26.jpg"
@@ -662,7 +662,7 @@
 
               <div class="item-people">
                 <div class="avatar-stack">
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/14.jpg"
@@ -673,7 +673,7 @@
                       "
                     />
                   </div>
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/16.jpg"
@@ -684,7 +684,7 @@
                       "
                     />
                   </div>
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/10.jpg"

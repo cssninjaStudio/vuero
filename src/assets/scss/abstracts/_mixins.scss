@@ -138,14 +138,14 @@
     border-color: $accent;
   }
 
-  .h-avatar {
+  .v-avatar {
     img {
       border-color: lighten($dark-sidebar, 6%) !important;
     }
   }
 
   .avatar-stack {
-    .h-avatar {
+    .v-avatar {
       border-color: lighten($dark-sidebar, 6%) !important;
 
       .avatar {
@@ -245,7 +245,7 @@
     }
   }
 
-  .h-avatar {
+  .v-avatar {
     .badge {
       border-color: lighten($dark-sidebar, 6%);
     }

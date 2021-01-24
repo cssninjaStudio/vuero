@@ -15,7 +15,7 @@ const democheck4 = ref(false)
     <div class="columns is-multiline">
       <div class="column is-12">
         <div class="dashboard-header">
-          <div class="h-avatar is-xl">
+          <div class="v-avatar is-xl">
             <img
               class="avatar"
               src="/images/avatars/photos/8.jpg"
@@ -58,7 +58,7 @@ const democheck4 = ref(false)
           <div class="active-projects">
             <!--Project-->
             <div class="media-flex-center">
-              <div class="h-avatar is-medium">
+              <div class="v-avatar is-medium">
                 <img
                   class="avatar is-squared"
                   src="/images/photo/demo/apps/1.jpg"
@@ -84,7 +84,7 @@ const democheck4 = ref(false)
               </div>
               <div class="flex-end">
                 <div class="avatar-stack">
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/18.jpg"
@@ -96,7 +96,7 @@ const democheck4 = ref(false)
                       "
                     />
                   </div>
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/16.jpg"
@@ -108,7 +108,7 @@ const democheck4 = ref(false)
                       "
                     />
                   </div>
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/23.jpg"
@@ -122,7 +122,7 @@ const democheck4 = ref(false)
                   </div>
                 </div>
 
-                <BaseDropdown dots right spaced classes="end-action">
+                <V-Dropdown dots right spaced classes="end-action">
                   <template #button="{ open }">
                     <button class="is-trigger" @click="open">
                       <i class="iconify" data-icon="feather:more-vertical"></i>
@@ -168,12 +168,12 @@ const democheck4 = ref(false)
                       </div>
                     </a>
                   </template>
-                </BaseDropdown>
+                </V-Dropdown>
               </div>
             </div>
             <!--Project-->
             <div class="media-flex-center">
-              <div class="h-avatar is-medium">
+              <div class="v-avatar is-medium">
                 <img
                   class="avatar is-squared"
                   src="/images/photo/demo/apps/2.png"
@@ -199,7 +199,7 @@ const democheck4 = ref(false)
               </div>
               <div class="flex-end">
                 <div class="avatar-stack">
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/21.jpg"
@@ -211,7 +211,7 @@ const democheck4 = ref(false)
                       "
                     />
                   </div>
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/32.jpg"
@@ -225,7 +225,7 @@ const democheck4 = ref(false)
                   </div>
                 </div>
 
-                <BaseDropdown dots right spaced classes="end-action">
+                <V-Dropdown dots right spaced classes="end-action">
                   <template #button="{ open }">
                     <button class="is-trigger" @click="open">
                       <i class="iconify" data-icon="feather:more-vertical"></i>
@@ -271,12 +271,12 @@ const democheck4 = ref(false)
                       </div>
                     </a>
                   </template>
-                </BaseDropdown>
+                </V-Dropdown>
               </div>
             </div>
             <!--Project-->
             <div class="media-flex-center">
-              <div class="h-avatar is-medium">
+              <div class="v-avatar is-medium">
                 <img
                   class="avatar is-squared"
                   src="/images/photo/demo/apps/3.png"
@@ -302,7 +302,7 @@ const democheck4 = ref(false)
               </div>
               <div class="flex-end">
                 <div class="avatar-stack">
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <div
                       class="avatar is-fake is-success"
                       data-user-popover="38"
@@ -312,7 +312,7 @@ const democheck4 = ref(false)
                   </div>
                 </div>
 
-                <BaseDropdown dots right spaced classes="end-action">
+                <V-Dropdown dots right spaced classes="end-action">
                   <template #button="{ open }">
                     <button class="is-trigger" @click="open">
                       <i class="iconify" data-icon="feather:more-vertical"></i>
@@ -358,12 +358,12 @@ const democheck4 = ref(false)
                       </div>
                     </a>
                   </template>
-                </BaseDropdown>
+                </V-Dropdown>
               </div>
             </div>
             <!--Project-->
             <div class="media-flex-center">
-              <div class="h-avatar is-medium">
+              <div class="v-avatar is-medium">
                 <img
                   class="avatar is-squared"
                   src="/images/photo/demo/apps/4.png"
@@ -389,7 +389,7 @@ const democheck4 = ref(false)
               </div>
               <div class="flex-end">
                 <div class="avatar-stack">
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/13.jpg"
@@ -401,7 +401,7 @@ const democheck4 = ref(false)
                       "
                     />
                   </div>
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/25.jpg"
@@ -413,7 +413,7 @@ const democheck4 = ref(false)
                       "
                     />
                   </div>
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/38.jpg"
@@ -427,7 +427,7 @@ const democheck4 = ref(false)
                   </div>
                 </div>
 
-                <BaseDropdown dots right spaced classes="end-action">
+                <V-Dropdown dots right spaced classes="end-action">
                   <template #button="{ open }">
                     <button class="is-trigger" @click="open">
                       <i class="iconify" data-icon="feather:more-vertical"></i>
@@ -473,7 +473,7 @@ const democheck4 = ref(false)
                       </div>
                     </a>
                   </template>
-                </BaseDropdown>
+                </V-Dropdown>
               </div>
             </div>
           </div>
@@ -517,7 +517,7 @@ const democheck4 = ref(false)
           <div class="active-team">
             <ul class="user-list">
               <li>
-                <div class="h-avatar">
+                <div class="v-avatar">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/18.jpg"
@@ -537,7 +537,7 @@ const democheck4 = ref(false)
                 </div>
               </li>
               <li>
-                <div class="h-avatar">
+                <div class="v-avatar">
                   <div
                     class="avatar is-fake is-h-orange"
                     data-user-popover="35"
@@ -555,7 +555,7 @@ const democheck4 = ref(false)
                 </div>
               </li>
               <li>
-                <div class="h-avatar">
+                <div class="v-avatar">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/13.jpg"
@@ -575,7 +575,7 @@ const democheck4 = ref(false)
                 </div>
               </li>
               <li>
-                <div class="h-avatar">
+                <div class="v-avatar">
                   <div class="avatar is-fake is-success" data-user-popover="38">
                     <span>NL</span>
                   </div>
@@ -778,7 +778,7 @@ body {
       flex-direction: column;
       text-align: center;
 
-      .h-avatar {
+      .v-avatar {
         margin-bottom: 10px;
       }
 

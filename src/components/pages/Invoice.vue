@@ -25,7 +25,7 @@
     <div class="invoice-body">
       <div class="invoice-card">
         <div class="invoice-section is-flex is-bordered">
-          <div class="h-avatar is-large">
+          <div class="v-avatar is-large">
             <img
               class="avatar"
               src="/images/avatars/photos/13.jpg"
@@ -46,7 +46,7 @@
           </div>
         </div>
         <div class="invoice-section is-flex is-bordered">
-          <div class="h-avatar is-customer is-large">
+          <div class="v-avatar is-customer is-large">
             <img
               class="avatar"
               src="/images/photo/demo/brands/airbnb.svg"
@@ -329,7 +329,7 @@
           border-bottom: 1px solid darken($fade-grey, 3%);
         }
 
-        .h-avatar {
+        .v-avatar {
           &.is-customer {
             border: 1.6px solid darken($fade-grey, 3%);
             border-radius: 50%;
@@ -427,7 +427,7 @@
       border-color: lighten($dark-sidebar, 12%) !important;
 
       &.is-flex {
-        .h-avatar {
+        .v-avatar {
           border-color: lighten($dark-sidebar, 12%) !important;
         }
 
@@ -449,7 +449,7 @@
         flex-direction: column;
         text-align: center;
 
-        .h-avatar {
+        .v-avatar {
           margin-bottom: 16px;
         }
 

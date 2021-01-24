@@ -1,5 +1,5 @@
 <template>
-  <BaseDropdown dots right spaced>
+  <V-Dropdown dots right spaced>
     <template #button="{ open }">
       <button class="is-trigger" @click="open">
         <i class="iconify" data-icon="feather:more-vertical"></i>
@@ -45,5 +45,5 @@
         </div>
       </a>
     </template>
-  </BaseDropdown>
+  </V-Dropdown>
 </template>

@@ -10,7 +10,7 @@
               <!--left-->
               <div class="left">
                 <div class="current-user">
-                  <div class="h-avatar is-medium">
+                  <div class="v-avatar is-medium">
                     <img
                       class="avatar is-squared"
                       src="/images/avatars/photos/8.jpg"
@@ -33,7 +33,7 @@
                   Praeclarae mortes.
                 </p>
                 <div class="candidates">
-                  <a class="h-avatar">
+                  <a class="v-avatar">
                     <img
                       class="avatar is-squared"
                       src="/images/avatars/photos/13.jpg"
@@ -44,7 +44,7 @@
                       "
                     />
                   </a>
-                  <a class="h-avatar">
+                  <a class="v-avatar">
                     <img
                       class="avatar is-squared"
                       src="/images/avatars/photos/32.jpg"
@@ -55,7 +55,7 @@
                       "
                     />
                   </a>
-                  <a class="h-avatar">
+                  <a class="v-avatar">
                     <img
                       class="avatar is-squared"
                       src="/images/avatars/photos/9.jpg"
@@ -131,7 +131,7 @@
                 <!--Table item-->
                 <div class="flex-table-item">
                   <div class="flex-table-cell is-media is-grow-lg" data-th="">
-                    <div class="h-icon is-green">
+                    <div class="v-icon is-green">
                       <i class="lnil lnil-envelope-alt"></i>
                     </div>
                     <div>
@@ -155,7 +155,7 @@
                 <!--Table item-->
                 <div class="flex-table-item">
                   <div class="flex-table-cell is-media is-grow-lg" data-th="">
-                    <div class="h-icon is-orange">
+                    <div class="v-icon is-orange">
                       <i class="lnil lnil-checkmark-circle"></i>
                     </div>
                     <div>
@@ -192,7 +192,7 @@
                 <div class="column is-4">
                   <div class="grid-item">
                     <UserCardDropdown />
-                    <div class="h-avatar is-large">
+                    <div class="v-avatar is-large">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/13.jpg"
@@ -228,7 +228,7 @@
                 <div class="column is-4">
                   <div class="grid-item">
                     <UserCardDropdown />
-                    <div class="h-avatar is-large">
+                    <div class="v-avatar is-large">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/37.jpg"
@@ -264,7 +264,7 @@
                 <div class="column is-4">
                   <div class="grid-item">
                     <UserCardDropdown />
-                    <div class="h-avatar is-large">
+                    <div class="v-avatar is-large">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/25.jpg"

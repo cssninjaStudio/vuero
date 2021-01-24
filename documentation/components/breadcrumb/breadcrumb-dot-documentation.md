@@ -6,15 +6,15 @@ Breadcrumb items can be separated by alternative separators. To display dot brea
 
 ```vue {2-4}
 <script setup lang="ts">
-    import { breadcrumbData } from '/@src/composition/state/documentation/components/breadcrumb'
+import { breadcrumbData } from '/@src/composition/state/documentation/components/breadcrumb'
 </script>
 
 <template>
-    <Breadcrumb :items="breadcrumbData" separator="dot" />
+  <V-Breadcrumb :items="breadcrumbData" separator="dot" />
 </template>
 
 <template>
-    <Breadcrumb :items="breadcrumbData" separator="dot"  icons />
+  <V-Breadcrumb :items="breadcrumbData" separator="dot" icons />
 </template>
 ```
 

@@ -259,7 +259,7 @@ useHead({
         <div class="status-tweets">
           <div class="updates">
             <div class="update">
-              <div class="h-avatar">
+              <div class="v-avatar">
                 <img
                   class="avatar"
                   src="/images/logos/logo/hanzo.svg"
@@ -287,7 +287,7 @@ useHead({
               </div>
             </div>
             <div class="update">
-              <div class="h-avatar">
+              <div class="v-avatar">
                 <img
                   class="avatar"
                   src="/images/logos/logo/hanzo.svg"
@@ -602,7 +602,7 @@ useHead({
         padding: 20px 30px 30px 30px;
 
         .update {
-          .h-avatar {
+          .v-avatar {
             display: none;
           }
 

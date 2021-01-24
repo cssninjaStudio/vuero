@@ -1,7 +1,7 @@
 export const mediaFlexBlock = `
 <template>
   <div class="media-flex">
-    <div class="h-avatar is-medium">
+    <div class="v-avatar is-medium">
       <img class="avatar" src="https://via.placeholder.com/150x150" alt="">
     </div>
     <div class="flex-meta">
@@ -17,7 +17,7 @@ export const mediaFlexBlock = `
 export const mediaFlexIconBlock = `
 <template>
   <div class="media-flex">
-    <div class="h-icon is-success is-rounded">
+    <div class="v-icon is-success is-rounded">
       <Icon icon="feather:x" />
     </div>
     <div class="flex-meta">
@@ -33,7 +33,7 @@ export const mediaFlexIconBlock = `
 export const mediaFlexCenterBlock = `
 <template>
   <div class="media-flex-center">
-    <div class="h-avatar is-medium">
+    <div class="v-avatar is-medium">
       <img class="avatar" src="https://via.placeholder.com/150x150" alt="">
     </div>
     <div class="flex-meta">
@@ -49,7 +49,7 @@ export const mediaFlexCenterBlock = `
 export const mediaFlexCenterIconBlock = `
 <template>
   <div class="media-flex-center">
-    <div class="h-icon is-info is-rounded">
+    <div class="v-icon is-info is-rounded">
       <i data-feather="chrome"></i>
       <Icon icon="feather:chrome" />
     </div>
@@ -66,7 +66,7 @@ export const mediaFlexCenterIconBlock = `
 export const mediaFlexCenterMobileBlock = `
 <template>
   <div class="media-flex-center is-responsive-mobile">
-    <div class="h-avatar is-medium">
+    <div class="v-avatar is-medium">
       <img class="avatar" src="https://via.placeholder.com/150x150" alt="">
     </div>
     <div class="flex-meta">
@@ -82,7 +82,7 @@ export const mediaFlexCenterMobileBlock = `
 export const mediaFlexCenterTabletBlock = `
 <template>
   <div class="media-flex-center is-responsive-mobile is-responsive-tablet-p">
-    <div class="h-icon is-info is-rounded">
+    <div class="v-icon is-info is-rounded">
       <Icon icon="feather:chrome" />
     </div>
     <div class="flex-meta">

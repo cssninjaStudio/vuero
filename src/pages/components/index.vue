@@ -50,7 +50,7 @@ useHead({
         <div class="column is-12">
           <div class="hub-wrapper">
             <div class="hub-header has-text-centered">
-              <div class="h-avatar is-xl">
+              <div class="v-avatar is-xl">
                 <img
                   class="avatar"
                   src="/images/avatars/svg/huro-2.svg"

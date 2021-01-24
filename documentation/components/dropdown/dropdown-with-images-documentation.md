@@ -1,41 +1,29 @@
 ### Menu with Images
 
-`<BaseDropdown />` menus items can have images and more original layout. Use the `spaced` prop with the provided markup in the code example. The inner images can be be made rounded by adding the `is-rounded` class to the image element.
+`<V-Dropdown />` menus items can have images and more original layout. Use the `spaced` prop with the provided markup in the code example. The inner images can be be made rounded by adding the `is-rounded` class to the image element.
 
 <!--code-->
 
 ```vue {2,4-14}
 <template>
-  <BaseDropdown title="Dropdown with image" spaced>
+  <V-Dropdown title="Dropdown with image" spaced>
     <template #content>
       <a href="#" class="dropdown-item is-media">
-        <img
-          class="item-img"
-          src="/images/avatars/photos/8.jpg"
-          alt=""
-        />
+        <img class="item-img" src="/images/avatars/photos/8.jpg" alt="" />
         <div class="meta">
           <span>Erik K.</span>
           <span>New York, NY</span>
         </div>
       </a>
       <a href="#" class="dropdown-item is-media is-active">
-        <img
-          class="item-img"
-          src="/images/avatars/photos/7.jpg"
-          alt=""
-        />
+        <img class="item-img" src="/images/avatars/photos/7.jpg" alt="" />
         <div class="meta">
           <span>Alice C.</span>
           <span>San Diego, CA</span>
         </div>
       </a>
       <a href="#" class="dropdown-item is-media">
-        <img
-          class="item-img"
-          src="/images/avatars/photos/25.jpg"
-          alt=""
-        />
+        <img class="item-img" src="/images/avatars/photos/25.jpg" alt="" />
         <div class="meta">
           <span>Melany W.</span>
           <span>San Jose, CA</span>
@@ -43,18 +31,14 @@
       </a>
       <hr class="dropdown-divider" />
       <a href="#" class="dropdown-item is-media">
-        <img
-          class="item-img"
-          src="/images/avatars/photos/9.jpg"
-          alt=""
-        />
+        <img class="item-img" src="/images/avatars/photos/9.jpg" alt="" />
         <div class="meta">
           <span>Anna B</span>
           <span>San Francisco, CA</span>
         </div>
       </a>
     </template>
-  </BaseDropdown>
+  </V-Dropdown>
 </template>
 ```
 
@@ -64,7 +48,7 @@
 
 <div class="field is-grouped">
   <div class="control">
-    <BaseDropdown title="Dropdown with image" spaced>
+    <V-Dropdown title="Dropdown with image" spaced>
       <template #content>
         <a href="#" class="dropdown-item is-media">
           <img
@@ -116,11 +100,11 @@
           </div>
         </a>
       </template>
-    </BaseDropdown>
+    </V-Dropdown>
   </div>
 
   <div class="control">
-    <BaseDropdown title="Dropdown with rounded image" spaced>
+    <V-Dropdown title="Dropdown with rounded image" spaced>
       <template #content>
         <a href="#" class="dropdown-item is-media">
           <img
@@ -172,7 +156,7 @@
           </div>
         </a>
       </template>
-    </BaseDropdown>
+    </V-Dropdown>
   </div>
 </div>
 

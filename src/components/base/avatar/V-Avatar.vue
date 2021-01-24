@@ -39,7 +39,7 @@ const props = defineProps({
 
 <template>
   <div
-    class="h-avatar"
+    class="v-avatar"
     :class="[
       props.size && 'is-' + props.size,
       props.dot && 'has-dot',

@@ -30,7 +30,7 @@
           <div class="card">
             <header class="card-header">
               <div class="card-header-title">
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/7.jpg"
@@ -73,7 +73,7 @@
                   </p>
                 </div>
                 <div class="avatar-stack">
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/27.jpg"
@@ -85,7 +85,7 @@
                       "
                     />
                   </div>
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/15.jpg"
@@ -97,7 +97,7 @@
                       "
                     />
                   </div>
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/12.jpg"
@@ -126,7 +126,7 @@
           <div class="card">
             <header class="card-header">
               <div class="card-header-title">
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/8.jpg"
@@ -169,7 +169,7 @@
                   </p>
                 </div>
                 <div class="avatar-stack">
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/13.jpg"
@@ -181,7 +181,7 @@
                       "
                     />
                   </div>
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/21.jpg"
@@ -210,7 +210,7 @@
           <div class="card">
             <header class="card-header">
               <div class="card-header-title">
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/25.jpg"
@@ -253,7 +253,7 @@
                   </p>
                 </div>
                 <div class="avatar-stack">
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/14.jpg"
@@ -282,7 +282,7 @@
           <div class="card">
             <header class="card-header">
               <div class="card-header-title">
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/23.jpg"
@@ -325,7 +325,7 @@
                   </p>
                 </div>
                 <div class="avatar-stack">
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/13.jpg"
@@ -337,7 +337,7 @@
                       "
                     />
                   </div>
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/21.jpg"
@@ -366,7 +366,7 @@
           <div class="card">
             <header class="card-header">
               <div class="card-header-title">
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/11.jpg"
@@ -409,7 +409,7 @@
                   </p>
                 </div>
                 <div class="avatar-stack">
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/30.jpg"
@@ -421,7 +421,7 @@
                       "
                     />
                   </div>
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/39.jpg"
@@ -450,7 +450,7 @@
           <div class="card">
             <header class="card-header">
               <div class="card-header-title">
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/9.jpg"
@@ -493,7 +493,7 @@
                   </p>
                 </div>
                 <div class="avatar-stack">
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/15.jpg"
@@ -505,7 +505,7 @@
                       "
                     />
                   </div>
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/40.jpg"
@@ -517,7 +517,7 @@
                       "
                     />
                   </div>
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/8.jpg"
@@ -546,7 +546,7 @@
           <div class="card">
             <header class="card-header">
               <div class="card-header-title">
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/25.jpg"
@@ -589,7 +589,7 @@
                   </p>
                 </div>
                 <div class="avatar-stack">
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/11.jpg"
@@ -618,7 +618,7 @@
           <div class="card">
             <header class="card-header">
               <div class="card-header-title">
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/5.jpg"
@@ -661,7 +661,7 @@
                   </p>
                 </div>
                 <div class="avatar-stack">
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/21.jpg"
@@ -673,7 +673,7 @@
                       "
                     />
                   </div>
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/29.jpg"
@@ -685,7 +685,7 @@
                       "
                     />
                   </div>
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/33.jpg"
@@ -714,7 +714,7 @@
           <div class="card">
             <header class="card-header">
               <div class="card-header-title">
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/27.jpg"
@@ -757,7 +757,7 @@
                   </p>
                 </div>
                 <div class="avatar-stack">
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/30.jpg"
@@ -769,7 +769,7 @@
                       "
                     />
                   </div>
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/19.jpg"
@@ -798,7 +798,7 @@
           <div class="card">
             <header class="card-header">
               <div class="card-header-title">
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/27.jpg"
@@ -841,7 +841,7 @@
                   </p>
                 </div>
                 <div class="avatar-stack">
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/24.jpg"
@@ -853,7 +853,7 @@
                       "
                     />
                   </div>
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/22.jpg"
@@ -882,7 +882,7 @@
           <div class="card">
             <header class="card-header">
               <div class="card-header-title">
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/13.jpg"
@@ -925,7 +925,7 @@
                   </p>
                 </div>
                 <div class="avatar-stack">
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/28.jpg"
@@ -954,7 +954,7 @@
           <div class="card">
             <header class="card-header">
               <div class="card-header-title">
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/12.jpg"
@@ -997,7 +997,7 @@
                   </p>
                 </div>
                 <div class="avatar-stack">
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <span
                       class="avatar is-fake is-h-purple"
                       data-user-popover="35"
@@ -1022,7 +1022,7 @@
           <div class="card">
             <header class="card-header">
               <div class="card-header-title">
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/12.jpg"
@@ -1065,7 +1065,7 @@
                   </p>
                 </div>
                 <div class="avatar-stack">
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/15.jpg"
@@ -1077,7 +1077,7 @@
                       "
                     />
                   </div>
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/40.jpg"
@@ -1089,7 +1089,7 @@
                       "
                     />
                   </div>
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/8.jpg"
@@ -1118,7 +1118,7 @@
           <div class="card">
             <header class="card-header">
               <div class="card-header-title">
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/15.jpg"
@@ -1161,7 +1161,7 @@
                   </p>
                 </div>
                 <div class="avatar-stack">
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/31.jpg"
@@ -1190,7 +1190,7 @@
           <div class="card">
             <header class="card-header">
               <div class="card-header-title">
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/39.jpg"
@@ -1235,7 +1235,7 @@
                   </p>
                 </div>
                 <div class="avatar-stack">
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/5.jpg"
@@ -1247,7 +1247,7 @@
                       "
                     />
                   </div>
-                  <div class="h-avatar is-small">
+                  <div class="v-avatar is-small">
                     <img
                       class="avatar"
                       src="/images/avatars/photos/24.jpg"

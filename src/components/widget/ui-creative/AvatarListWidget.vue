@@ -29,7 +29,7 @@ const props = defineProps({
     </div>
     <div class="avatar-list">
       <div v-for="avatar in avatars" :key="avatar.id" class="avatar-list-item">
-        <Avatar :picture="avatar.picture" :squared="squared" />
+        <V-Avatar :picture="avatar.picture" :squared="squared" />
         <div class="meta">
           <span>{{ avatar.name }}</span>
         </div>

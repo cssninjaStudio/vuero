@@ -71,7 +71,7 @@ onMounted(async () => {
     <div class="columns is-multiline">
       <div class="column is-4">
         <div class="dashboard-card is-company">
-          <div class="h-avatar is-big">
+          <div class="v-avatar is-big">
             <img
               class="avatar light-image"
               src="/images/photo/demo/brands/udemy.svg"
@@ -334,7 +334,7 @@ onMounted(async () => {
           <div class="ticket-list">
             <!--Ticket-->
             <div class="media-flex is-responsive-mobile is-dark-bordered-12">
-              <div class="h-avatar is-medium">
+              <div class="v-avatar is-medium">
                 <img
                   class="avatar"
                   src="/images/avatars/photos/31.jpg"
@@ -361,7 +361,7 @@ onMounted(async () => {
             </div>
             <!--Ticket-->
             <div class="media-flex is-responsive-mobile is-dark-bordered-12">
-              <div class="h-avatar is-medium">
+              <div class="v-avatar is-medium">
                 <img
                   class="avatar"
                   src="/images/avatars/photos/23.jpg"
@@ -389,7 +389,7 @@ onMounted(async () => {
             </div>
             <!--Ticket-->
             <div class="media-flex is-responsive-mobile is-dark-bordered-12">
-              <div class="h-avatar is-medium">
+              <div class="v-avatar is-medium">
                 <img
                   class="avatar"
                   src="/images/avatars/photos/32.jpg"
@@ -416,7 +416,7 @@ onMounted(async () => {
             </div>
             <!--Ticket-->
             <div class="media-flex is-responsive-mobile is-dark-bordered-12">
-              <div class="h-avatar is-medium">
+              <div class="v-avatar is-medium">
                 <img
                   class="avatar"
                   src="/images/avatars/photos/13.jpg"

@@ -6,31 +6,31 @@ When the provided picture URL is null, the avatar component falls back to a fake
 
 ```vue {2-4}
 <template>
-  <Avatar
+  <V-Avatar
     initials="CT"
     size="small"
     badge="/images/icons/flags/united-states-of-america.svg"
   />
-  <Avatar
+  <V-Avatar
     initials="CT"
     badge="/images/icons/flags/united-states-of-america.svg"
   />
-  <Avatar
+  <V-Avatar
     initials="CT"
     size="medium"
     badge="/images/icons/flags/united-states-of-america.svg"
   />
-  <Avatar
+  <V-Avatar
     initials="CT"
     size="large"
     badge="/images/icons/flags/united-states-of-america.svg"
   />
-  <Avatar
+  <V-Avatar
     initials="CT"
     size="big"
     badge="/images/icons/flags/united-states-of-america.svg"
   />
-  <Avatar
+  <V-Avatar
     initials="CT"
     size="xl"
     badge="/images/icons/flags/united-states-of-america.svg"
@@ -42,11 +42,11 @@ When the provided picture URL is null, the avatar component falls back to a fake
 
 <!--example-->
 
-<Avatar initials="CT" size="small" badge="/images/icons/flags/united-states-of-america.svg" />
-<Avatar initials="CT" badge="/images/icons/flags/united-states-of-america.svg" />
-<Avatar initials="CT" size="medium" badge="/images/icons/flags/united-states-of-america.svg" />
-<Avatar initials="CT" size="large" badge="/images/icons/flags/united-states-of-america.svg" />
-<Avatar initials="CT" size="big" badge="/images/icons/flags/united-states-of-america.svg" />
-<Avatar initials="CT" size="xl" badge="/images/icons/flags/united-states-of-america.svg" />
+<V-Avatar initials="CT" size="small" badge="/images/icons/flags/united-states-of-america.svg" />
+<V-Avatar initials="CT" badge="/images/icons/flags/united-states-of-america.svg" />
+<V-Avatar initials="CT" size="medium" badge="/images/icons/flags/united-states-of-america.svg" />
+<V-Avatar initials="CT" size="large" badge="/images/icons/flags/united-states-of-america.svg" />
+<V-Avatar initials="CT" size="big" badge="/images/icons/flags/united-states-of-america.svg" />
+<V-Avatar initials="CT" size="xl" badge="/images/icons/flags/united-states-of-america.svg" />
 
 <!--/example-->

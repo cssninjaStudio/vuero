@@ -192,7 +192,7 @@ const props = defineProps({
             <div class="overview-card">
               <div class="card-head">
                 <h4>Content Posts (30 days)</h4>
-                <div class="h-icon is-purple is-rounded">
+                <div class="v-icon is-purple is-rounded">
                   <i class="fab fa-instagram"></i>
                 </div>
               </div>
@@ -216,7 +216,7 @@ const props = defineProps({
             <div class="overview-card">
               <div class="card-head">
                 <h4>Followers (30 days)</h4>
-                <div class="h-icon is-info is-rounded">
+                <div class="v-icon is-info is-rounded">
                   <i class="fas fa-users"></i>
                 </div>
               </div>
@@ -240,7 +240,7 @@ const props = defineProps({
             <div class="overview-card">
               <div class="card-head">
                 <h4>Following (30 days)</h4>
-                <div class="h-icon is-yellow is-rounded">
+                <div class="v-icon is-yellow is-rounded">
                   <i class="fas fa-user-plus"></i>
                 </div>
               </div>
@@ -264,7 +264,7 @@ const props = defineProps({
             <div class="overview-card">
               <div class="card-head">
                 <h4>Likes (30 days)</h4>
-                <div class="h-icon is-red is-rounded">
+                <div class="v-icon is-red is-rounded">
                   <i class="fas fa-heart"></i>
                 </div>
               </div>
@@ -288,7 +288,7 @@ const props = defineProps({
             <div class="overview-card">
               <div class="card-head">
                 <h4>Comments (30 days)</h4>
-                <div class="h-icon is-yellow is-rounded">
+                <div class="v-icon is-yellow is-rounded">
                   <i class="fas fa-comment"></i>
                 </div>
               </div>
@@ -312,7 +312,7 @@ const props = defineProps({
             <div class="overview-card">
               <div class="card-head">
                 <h4>Profile Views (30 days)</h4>
-                <div class="h-icon is-success is-rounded">
+                <div class="v-icon is-success is-rounded">
                   <i class="fas fa-glasses"></i>
                 </div>
               </div>
@@ -1014,7 +1014,7 @@ const props = defineProps({
             <div class="overview-card">
               <div class="card-head">
                 <h4>Post Day</h4>
-                <div class="h-icon is-green is-rounded">
+                <div class="v-icon is-green is-rounded">
                   <i class="fas fa-calendar-day"></i>
                 </div>
               </div>
@@ -1032,7 +1032,7 @@ const props = defineProps({
             <div class="overview-card">
               <div class="card-head">
                 <h4>hashtags</h4>
-                <div class="h-icon is-info is-rounded">
+                <div class="v-icon is-info is-rounded">
                   <i class="fab fa-slack-hash"></i>
                 </div>
               </div>
@@ -1050,7 +1050,7 @@ const props = defineProps({
             <div class="overview-card">
               <div class="card-head">
                 <h4>Filters</h4>
-                <div class="h-icon is-orange is-rounded">
+                <div class="v-icon is-orange is-rounded">
                   <i class="fas fa-camera"></i>
                 </div>
               </div>

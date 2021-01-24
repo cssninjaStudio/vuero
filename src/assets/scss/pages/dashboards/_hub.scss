@@ -22,7 +22,7 @@
       max-width: 300px;
     }
 
-    .h-avatar {
+    .v-avatar {
       margin: 0 auto 12px auto;
     }
 
@@ -139,7 +139,7 @@
 .is-dark {
   .card-hub {
     .hub-header {
-      .h-avatar {
+      .v-avatar {
         .badge {
           border-color: lighten($dark-sidebar, 6%) !important;
         }

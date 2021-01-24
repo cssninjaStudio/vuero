@@ -20,7 +20,7 @@ const props = defineProps({
       <h3>{{ props.title }}</h3>
     </div>
     <div class="right">
-      <AvatarStack :avatars="avatars" :limit="3" size="small" />
+      <V-AvatarStack :avatars="avatars" :limit="3" size="small" />
     </div>
   </div>
 </template>

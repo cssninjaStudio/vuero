@@ -6,7 +6,7 @@
       <div class="column is-4">
         <div class="account-box is-navigation">
           <div class="media-flex-center">
-            <div class="h-avatar is-large">
+            <div class="v-avatar is-large">
               <img
                 class="avatar"
                 src="/images/avatars/photos/8.jpg"
@@ -113,7 +113,7 @@
                 <p>This is how others will recognize you</p>
               </div>
 
-              <div class="h-avatar profile-h-avatar is-xl">
+              <div class="v-avatar profile-v-avatar is-xl">
                 <img
                   class="avatar"
                   src="/images/avatars/photos/8.jpg"

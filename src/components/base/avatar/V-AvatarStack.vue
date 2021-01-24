@@ -20,7 +20,7 @@ const props = defineProps({
 
 <template>
   <div class="avatar-stack">
-    <Avatar
+    <V-Avatar
       v-for="avatar in avatars.slice(0, limit)"
       :key="avatar.id"
       :picture="avatar.picture"
@@ -28,7 +28,7 @@ const props = defineProps({
     />
     <div
       v-if="avatars.length > limit"
-      class="h-avatar"
+      class="v-avatar"
       :class="[size && 'is-' + size]"
     >
       <span class="avatar is-more">

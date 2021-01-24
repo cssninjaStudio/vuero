@@ -19,11 +19,11 @@
           <!--Card-->
           <div class="column is-3">
             <div
-              class="long-card has-background-image"
               v-background="{
                 src: '/images/photo/demo/dashboards/lifestyle/1.jpg',
                 placeholder: 'https://via.placeholder.com/800x600',
               }"
+              class="long-card has-background-image"
             >
               <div class="long-card-overlay"></div>
               <a href="#" class="long-card-text-overlay">
@@ -34,7 +34,7 @@
                 <div class="bottom">
                   <span>28.3K</span>
                   <div class="avatar-stack">
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/12.jpg"
@@ -47,7 +47,7 @@
                         "
                       />
                     </div>
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/22.jpg"
@@ -59,7 +59,7 @@
                         "
                       />
                     </div>
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/40.jpg"
@@ -80,11 +80,11 @@
           <!--Card-->
           <div class="column is-3">
             <div
-              class="long-card has-background-image"
               v-background="{
                 src: '/images/photo/demo/dashboards/lifestyle/2.jpg',
                 placeholder: 'https://via.placeholder.com/800x600',
               }"
+              class="long-card has-background-image"
             >
               <div class="long-card-overlay"></div>
               <a href="#" class="long-card-text-overlay">
@@ -95,7 +95,7 @@
                 <div class="bottom">
                   <span>8.1K</span>
                   <div class="avatar-stack">
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/7.jpg"
@@ -108,7 +108,7 @@
                         "
                       />
                     </div>
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/23.jpg"
@@ -121,7 +121,7 @@
                         "
                       />
                     </div>
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/18.jpg"
@@ -142,11 +142,11 @@
           <!--Card-->
           <div class="column is-3">
             <div
-              class="long-card has-background-image"
               v-background="{
                 src: '/images/photo/demo/dashboards/lifestyle/3.jpg',
                 placeholder: 'https://via.placeholder.com/800x600',
               }"
+              class="long-card has-background-image"
             >
               <div class="long-card-overlay"></div>
               <a href="#" class="long-card-text-overlay">
@@ -157,7 +157,7 @@
                 <div class="bottom">
                   <span>19.7K</span>
                   <div class="avatar-stack">
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/32.jpg"
@@ -169,7 +169,7 @@
                         "
                       />
                     </div>
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/22.jpg"
@@ -182,7 +182,7 @@
                         "
                       />
                     </div>
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/8.jpg"
@@ -204,11 +204,11 @@
           <!--Card-->
           <div class="column is-3">
             <div
-              class="long-card has-background-image"
               v-background="{
                 src: '/images/photo/demo/dashboards/lifestyle/4.jpg',
                 placeholder: 'https://via.placeholder.com/800x600',
               }"
+              class="long-card has-background-image"
             >
               <div class="long-card-overlay"></div>
               <a href="#" class="long-card-text-overlay">
@@ -219,7 +219,7 @@
                 <div class="bottom">
                   <span>48.4K</span>
                   <div class="avatar-stack">
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/27.jpg"
@@ -232,7 +232,7 @@
                         "
                       />
                     </div>
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/16.jpg"
@@ -244,7 +244,7 @@
                         "
                       />
                     </div>
-                    <div class="h-avatar is-small">
+                    <div class="v-avatar is-small">
                       <img
                         class="avatar"
                         src="/images/avatars/photos/29.jpg"
@@ -274,7 +274,7 @@
 
               <div class="inner-list">
                 <a class="media-flex-center">
-                  <div class="h-avatar">
+                  <div class="v-avatar">
                     <img
                       class="avatar is-squared"
                       src="/images/photo/demo/dashboards/lifestyle/1.jpg"
@@ -305,7 +305,7 @@
                   </div>
                 </a>
                 <a class="media-flex-center">
-                  <div class="h-avatar">
+                  <div class="v-avatar">
                     <img
                       class="avatar is-squared"
                       src="/images/photo/demo/dashboards/lifestyle/2.jpg"
@@ -336,7 +336,7 @@
                   </div>
                 </a>
                 <a class="media-flex-center">
-                  <div class="h-avatar">
+                  <div class="v-avatar">
                     <img
                       class="avatar is-squared"
                       src="/images/photo/demo/dashboards/lifestyle/3.jpg"
@@ -367,7 +367,7 @@
                   </div>
                 </a>
                 <a class="media-flex-center">
-                  <div class="h-avatar">
+                  <div class="v-avatar">
                     <img
                       class="avatar is-squared"
                       src="/images/photo/demo/dashboards/lifestyle/4.jpg"
@@ -415,7 +415,7 @@
               </div>
               <div class="inner-list">
                 <a class="media-flex-center">
-                  <div class="h-avatar">
+                  <div class="v-avatar">
                     <img
                       class="avatar is-squared"
                       src="/images/photo/demo/dashboards/lifestyle/5.jpg"
@@ -446,7 +446,7 @@
                   </div>
                 </a>
                 <a class="media-flex-center">
-                  <div class="h-avatar">
+                  <div class="v-avatar">
                     <img
                       class="avatar is-squared"
                       src="/images/photo/demo/dashboards/lifestyle/6.jpg"
@@ -477,7 +477,7 @@
                   </div>
                 </a>
                 <a class="media-flex-center">
-                  <div class="h-avatar">
+                  <div class="v-avatar">
                     <img
                       class="avatar is-squared"
                       src="/images/photo/demo/dashboards/lifestyle/7.jpg"
@@ -508,7 +508,7 @@
                   </div>
                 </a>
                 <a class="media-flex-center">
-                  <div class="h-avatar">
+                  <div class="v-avatar">
                     <img
                       class="avatar is-squared"
                       src="/images/photo/demo/dashboards/lifestyle/8.jpg"
@@ -594,7 +594,7 @@
           <div class="inner-list">
             <!--List Item-->
             <div class="inner-list-item media-flex-center">
-              <div class="h-icon is-yellow">
+              <div class="v-icon is-yellow">
                 <i class="fas fa-biking"></i>
               </div>
               <div class="flex-meta is-light">
@@ -604,7 +604,7 @@
             </div>
             <!--List Item-->
             <div class="inner-list-item media-flex-center">
-              <div class="h-icon is-orange">
+              <div class="v-icon is-orange">
                 <i class="fas fa-running"></i>
               </div>
               <div class="flex-meta is-light">
@@ -614,7 +614,7 @@
             </div>
             <!--List Item-->
             <div class="inner-list-item media-flex-center">
-              <div class="h-icon is-green">
+              <div class="v-icon is-green">
                 <i class="fas fa-skiing"></i>
               </div>
               <div class="flex-meta is-light">
@@ -624,7 +624,7 @@
             </div>
             <!--List Item-->
             <div class="inner-list-item media-flex-center">
-              <div class="h-icon is-info">
+              <div class="v-icon is-info">
                 <i class="fas fa-swimmer"></i>
               </div>
               <div class="flex-meta is-light">
@@ -634,7 +634,7 @@
             </div>
             <!--List Item-->
             <div class="inner-list-item media-flex-center">
-              <div class="h-icon is-purple">
+              <div class="v-icon is-purple">
                 <i class="fas fa-dumbbell"></i>
               </div>
               <div class="flex-meta is-light">

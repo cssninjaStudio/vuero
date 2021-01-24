@@ -13,7 +13,7 @@
           <div class="content-wrap">
             <div class="content-box">
               <div class="status"></div>
-              <div class="h-avatar">
+              <div class="v-avatar">
                 <img
                   class="avatar"
                   src="/images/avatars/photos/13.jpg"
@@ -34,7 +34,7 @@
                 </div>
               </div>
               <div class="box-end">
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/8.jpg"
@@ -59,7 +59,7 @@
           <div class="content-wrap">
             <div class="content-box">
               <div class="status"></div>
-              <div class="h-avatar">
+              <div class="v-avatar">
                 <img
                   class="avatar"
                   src="/images/avatars/photos/23.jpg"
@@ -92,7 +92,7 @@
           <div class="content-wrap">
             <div class="content-box">
               <div class="status"></div>
-              <div class="h-avatar">
+              <div class="v-avatar">
                 <img
                   class="avatar"
                   src="/images/avatars/photos/5.jpg"
@@ -113,7 +113,7 @@
                 </div>
               </div>
               <div class="box-end">
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <span
                     class="avatar is-fake is-warning"
                     data-user-popover="36"
@@ -121,7 +121,7 @@
                     <span>BT</span>
                   </span>
                 </div>
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/18.jpg"
@@ -132,7 +132,7 @@
                     "
                   />
                 </div>
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <span class="avatar is-fake is-info" data-user-popover="34">
                     <span>JD</span>
                   </span>
@@ -151,7 +151,7 @@
           <div class="content-wrap">
             <div class="content-box">
               <div class="status"></div>
-              <div class="h-avatar">
+              <div class="v-avatar">
                 <img
                   class="avatar"
                   src="/images/avatars/photos/12.jpg"
@@ -187,7 +187,7 @@
           <div class="content-wrap">
             <div class="content-box">
               <div class="status"></div>
-              <div class="h-avatar">
+              <div class="v-avatar">
                 <img
                   class="avatar"
                   src="/images/avatars/photos/26.jpg"
@@ -208,7 +208,7 @@
                 </div>
               </div>
               <div class="box-end">
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar is-squared"
                     src="/images/photo/demo/apps/5.png"
@@ -218,7 +218,7 @@
                     "
                   />
                 </div>
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar is-squared"
                     src="/images/photo/demo/apps/8.png"
@@ -242,7 +242,7 @@
           <div class="content-wrap">
             <div class="content-box">
               <div class="status"></div>
-              <div class="h-avatar">
+              <div class="v-avatar">
                 <img
                   class="avatar"
                   src="/images/avatars/photos/31.jpg"
@@ -263,7 +263,7 @@
                 </div>
               </div>
               <div class="box-end">
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <img
                     class="avatar"
                     src="/images/avatars/photos/8.jpg"
@@ -288,7 +288,7 @@
           <div class="content-wrap">
             <div class="content-box">
               <div class="status"></div>
-              <div class="h-avatar">
+              <div class="v-avatar">
                 <img
                   class="avatar"
                   src="/images/avatars/photos/13.jpg"
@@ -321,7 +321,7 @@
           <div class="content-wrap">
             <div class="content-box">
               <div class="status"></div>
-              <div class="h-avatar">
+              <div class="v-avatar">
                 <img
                   class="avatar"
                   src="/images/avatars/photos/25.jpg"

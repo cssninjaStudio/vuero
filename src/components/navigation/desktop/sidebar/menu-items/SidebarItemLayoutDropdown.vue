@@ -7,7 +7,7 @@ import {
 
 <template>
   <li>
-    <BaseDropdown dots>
+    <V-Dropdown dots>
       <template #button="{ open }">
         <button class="is-trigger" @click="open">
           <i class="iconify sidebar-svg" data-icon="feather:help-circle"></i>
@@ -43,6 +43,6 @@ import {
           >Colored &amp; Surved Sidebar</a
         >
       </template>
-    </BaseDropdown>
+    </V-Dropdown>
   </li>
 </template>

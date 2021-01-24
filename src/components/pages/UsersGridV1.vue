@@ -26,7 +26,7 @@
       <!--Grid item-->
       <div class="column is-3">
         <div class="grid-item">
-          <div class="h-avatar is-big">
+          <div class="v-avatar is-big">
             <img
               class="avatar"
               src="/images/avatars/photos/13.jpg"
@@ -44,12 +44,12 @@
           <h3 class="dark-inverted" data-filter-match>Tara Svenson</h3>
           <p data-filter-match>UI/UX Designer</p>
           <div class="people">
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <span class="avatar is-fake is-warning" data-user-popover="36">
                 <span>BT</span>
               </span>
             </div>
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/18.jpg"
@@ -60,12 +60,12 @@
                 "
               />
             </div>
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <span class="avatar is-fake is-info" data-user-popover="34">
                 <span>JD</span>
               </span>
             </div>
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/7.jpg"
@@ -97,7 +97,7 @@
       <!--Grid item-->
       <div class="column is-3">
         <div class="grid-item">
-          <div class="h-avatar is-big">
+          <div class="v-avatar is-big">
             <img
               class="avatar"
               src="/images/avatars/photos/37.jpg"
@@ -115,7 +115,7 @@
           <h3 class="dark-inverted" data-filter-match>Helmut Fritz</h3>
           <p data-filter-match>Product Manager</p>
           <div class="people">
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/21.jpg"
@@ -126,12 +126,12 @@
                 "
               />
             </div>
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <span class="avatar is-fake is-success" data-user-popover="37">
                 <span>AT</span>
               </span>
             </div>
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/39.jpg"
@@ -163,7 +163,7 @@
       <!--Grid item-->
       <div class="column is-3">
         <div class="grid-item">
-          <div class="h-avatar is-big">
+          <div class="v-avatar is-big">
             <img
               class="avatar"
               src="/images/avatars/photos/25.jpg"
@@ -181,7 +181,7 @@
           <h3 class="dark-inverted" data-filter-match>Melany Wallace</h3>
           <p data-filter-match>Web Developer</p>
           <div class="people">
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/21.jpg"
@@ -192,12 +192,12 @@
                 "
               />
             </div>
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <span class="avatar is-fake is-h-purple" data-user-popover="35">
                 <span>SC</span>
               </span>
             </div>
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/39.jpg"
@@ -229,7 +229,7 @@
       <!--Grid item-->
       <div class="column is-3">
         <div class="grid-item">
-          <div class="h-avatar is-big">
+          <div class="v-avatar is-big">
             <img
               class="avatar"
               src="/images/avatars/photos/29.jpg"
@@ -247,7 +247,7 @@
           <h3 class="dark-inverted" data-filter-match>Hakeem Calami</h3>
           <p data-filter-match>Software Engineer</p>
           <div class="people">
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/28.jpg"
@@ -258,7 +258,7 @@
                 "
               />
             </div>
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/33.jpg"
@@ -290,7 +290,7 @@
       <!--Grid item-->
       <div class="column is-3">
         <div class="grid-item">
-          <div class="h-avatar is-big">
+          <div class="v-avatar is-big">
             <img
               class="avatar"
               src="/images/avatars/photos/39.jpg"
@@ -308,12 +308,12 @@
           <h3 class="dark-inverted" data-filter-match>Alejandro Badajoz</h3>
           <p data-filter-match>Business Analyst</p>
           <div class="people">
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <span class="avatar is-fake is-success" data-user-popover="37">
                 <span>AT</span>
               </span>
             </div>
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/23.jpg"
@@ -345,7 +345,7 @@
       <!--Grid item-->
       <div class="column is-3">
         <div class="grid-item">
-          <div class="h-avatar is-big">
+          <div class="v-avatar is-big">
             <img
               class="avatar"
               src="/images/avatars/photos/40.jpg"
@@ -363,12 +363,12 @@
           <h3 class="dark-inverted" data-filter-match>Jeanne Marchand</h3>
           <p data-filter-match>Mobile Developer</p>
           <div class="people">
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <span class="avatar is-fake is-warning" data-user-popover="36">
                 <span>BT</span>
               </span>
             </div>
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/18.jpg"
@@ -379,7 +379,7 @@
                 "
               />
             </div>
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <span class="avatar is-fake is-info" data-user-popover="34">
                 <span>JD</span>
               </span>
@@ -405,7 +405,7 @@
       <!--Grid item-->
       <div class="column is-3">
         <div class="grid-item">
-          <div class="h-avatar is-big">
+          <div class="v-avatar is-big">
             <img
               class="avatar"
               src="/images/avatars/photos/19.jpg"
@@ -423,12 +423,12 @@
           <h3 class="dark-inverted" data-filter-match>Greta Kroppfer</h3>
           <p data-filter-match>Sales Manager</p>
           <div class="people">
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <span class="avatar is-fake is-h-purple" data-user-popover="35">
                 <span>SC</span>
               </span>
             </div>
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/27.jpg"
@@ -460,7 +460,7 @@
       <!--Grid item-->
       <div class="column is-3">
         <div class="grid-item">
-          <div class="h-avatar is-big">
+          <div class="v-avatar is-big">
             <img
               class="avatar"
               src="/images/avatars/photos/9.jpg"
@@ -478,12 +478,12 @@
           <h3 class="dark-inverted" data-filter-match>Anna Baker</h3>
           <p data-filter-match>UI/UX Designer</p>
           <div class="people">
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <span class="avatar is-fake is-success" data-user-popover="37">
                 <span>AT</span>
               </span>
             </div>
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/23.jpg"
@@ -515,7 +515,7 @@
       <!--Grid item-->
       <div class="column is-3">
         <div class="grid-item">
-          <div class="h-avatar is-big">
+          <div class="v-avatar is-big">
             <img
               class="avatar"
               src="/images/avatars/photos/5.jpg"
@@ -533,12 +533,12 @@
           <h3 class="dark-inverted" data-filter-match>Mary Lebowski</h3>
           <p data-filter-match>Project Manager</p>
           <div class="people">
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <span class="avatar is-fake is-warning" data-user-popover="36">
                 <span>BT</span>
               </span>
             </div>
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/18.jpg"
@@ -549,12 +549,12 @@
                 "
               />
             </div>
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <span class="avatar is-fake is-info" data-user-popover="34">
                 <span>JD</span>
               </span>
             </div>
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/7.jpg"
@@ -586,7 +586,7 @@
       <!--Grid item-->
       <div class="column is-3">
         <div class="grid-item">
-          <div class="h-avatar is-big">
+          <div class="v-avatar is-big">
             <img
               class="avatar"
               src="/images/avatars/photos/32.jpg"
@@ -604,7 +604,7 @@
           <h3 class="dark-inverted" data-filter-match>Jonathan Krugger</h3>
           <p data-filter-match>Product Manager</p>
           <div class="people">
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/21.jpg"
@@ -615,12 +615,12 @@
                 "
               />
             </div>
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <span class="avatar is-fake is-h-purple" data-user-popover="35">
                 <span>SC</span>
               </span>
             </div>
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/39.jpg"
@@ -652,7 +652,7 @@
       <!--Grid item-->
       <div class="column is-3">
         <div class="grid-item">
-          <div class="h-avatar is-big">
+          <div class="v-avatar is-big">
             <img
               class="avatar"
               src="/images/avatars/photos/36.jpg"
@@ -670,12 +670,12 @@
           <h3 class="dark-inverted" data-filter-match>Benoit Leblanc</h3>
           <p data-filter-match>Software Engineer</p>
           <div class="people">
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <span class="avatar is-fake is-warning" data-user-popover="36">
                 <span>BT</span>
               </span>
             </div>
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/31.jpg"
@@ -707,7 +707,7 @@
       <!--Grid item-->
       <div class="column is-3">
         <div class="grid-item">
-          <div class="h-avatar is-big">
+          <div class="v-avatar is-big">
             <img
               class="avatar"
               src="/images/avatars/photos/38.jpg"
@@ -725,7 +725,7 @@
           <h3 class="dark-inverted" data-filter-match>Christie Dallas</h3>
           <p data-filter-match>Web Developer</p>
           <div class="people">
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/33.jpg"
@@ -736,7 +736,7 @@
                 "
               />
             </div>
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/26.jpg"
@@ -768,7 +768,7 @@
       <!--Grid item-->
       <div class="column is-3">
         <div class="grid-item">
-          <div class="h-avatar is-big">
+          <div class="v-avatar is-big">
             <img
               class="avatar"
               src="/images/avatars/photos/26.jpg"
@@ -786,7 +786,7 @@
           <h3 class="dark-inverted" data-filter-match>Courtney Wilson</h3>
           <p data-filter-match>Web Developer</p>
           <div class="people">
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/21.jpg"
@@ -797,12 +797,12 @@
                 "
               />
             </div>
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <span class="avatar is-fake is-success" data-user-popover="37">
                 <span>AT</span>
               </span>
             </div>
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/39.jpg"
@@ -834,7 +834,7 @@
       <!--Grid item-->
       <div class="column is-3">
         <div class="grid-item">
-          <div class="h-avatar is-big">
+          <div class="v-avatar is-big">
             <img
               class="avatar"
               src="/images/avatars/photos/16.jpg"
@@ -852,7 +852,7 @@
           <h3 class="dark-inverted" data-filter-match>Jason Guarank</h3>
           <p data-filter-match>Business Analyst</p>
           <div class="people">
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/14.jpg"
@@ -863,7 +863,7 @@
                 "
               />
             </div>
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <span class="avatar is-fake is-h-purple" data-user-popover="35">
                 <span>SC</span>
               </span>
@@ -889,7 +889,7 @@
       <!--Grid item-->
       <div class="column is-3">
         <div class="grid-item">
-          <div class="h-avatar is-big">
+          <div class="v-avatar is-big">
             <img
               class="avatar"
               src="/images/avatars/photos/23.jpg"
@@ -907,12 +907,12 @@
           <h3 class="dark-inverted" data-filter-match>Irina Vierbovsky</h3>
           <p data-filter-match>Project Manager</p>
           <div class="people">
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <span class="avatar is-fake is-success" data-user-popover="37">
                 <span>AT</span>
               </span>
             </div>
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/34.jpg"
@@ -944,7 +944,7 @@
       <!--Grid item-->
       <div class="column is-3">
         <div class="grid-item">
-          <div class="h-avatar is-big">
+          <div class="v-avatar is-big">
             <img
               class="avatar"
               src="/images/avatars/photos/28.jpg"
@@ -962,12 +962,12 @@
           <h3 class="dark-inverted" data-filter-match>Edouard Falant</h3>
           <p data-filter-match>Web Developer</p>
           <div class="people">
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <span class="avatar is-fake is-warning" data-user-popover="36">
                 <span>BT</span>
               </span>
             </div>
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/18.jpg"
@@ -978,7 +978,7 @@
                 "
               />
             </div>
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <span class="avatar is-fake is-info" data-user-popover="34">
                 <span>JD</span>
               </span>
@@ -1004,7 +1004,7 @@
       <!--Grid item-->
       <div class="column is-3">
         <div class="grid-item">
-          <div class="h-avatar is-big">
+          <div class="v-avatar is-big">
             <img
               class="avatar"
               src="/images/avatars/photos/7.jpg"
@@ -1022,7 +1022,7 @@
           <h3 class="dark-inverted" data-filter-match>Alice Carasca</h3>
           <p data-filter-match>Software Engineer</p>
           <div class="people">
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/25.jpg"
@@ -1033,12 +1033,12 @@
                 "
               />
             </div>
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <span class="avatar is-fake is-h-purple" data-user-popover="35">
                 <span>SC</span>
               </span>
             </div>
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <img
                 class="avatar"
                 src="/images/avatars/photos/12.jpg"
@@ -1070,7 +1070,7 @@
       <!--Grid item-->
       <div class="column is-3">
         <div class="grid-item">
-          <div class="h-avatar is-big">
+          <div class="v-avatar is-big">
             <img
               class="avatar"
               src="/images/avatars/photos/22.jpg"
@@ -1088,12 +1088,12 @@
           <h3 class="dark-inverted" data-filter-match>Dwayne Hicks</h3>
           <p data-filter-match>Product Manager</p>
           <div class="people">
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <span class="avatar is-fake is-warning" data-user-popover="36">
                 <span>BT</span>
               </span>
             </div>
-            <div class="h-avatar is-small">
+            <div class="v-avatar is-small">
               <span class="avatar is-fake is-h-purple" data-user-popover="35">
                 <span>SC</span>
               </span>

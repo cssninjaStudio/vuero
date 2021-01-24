@@ -6,15 +6,15 @@ Breadcrumb items can be separated by alternative separators. To display succeeds
 
 ```vue {2-4}
 <script setup lang="ts">
-    import { breadcrumbData } from '/@src/composition/state/documentation/components/breadcrumb'
+import { breadcrumbData } from '/@src/composition/state/documentation/components/breadcrumb'
 </script>
 
 <template>
-    <Breadcrumb :items="breadcrumbData" separator="succeeds" />
+  <V-Breadcrumb :items="breadcrumbData" separator="succeeds" />
 </template>
 
 <template>
-    <Breadcrumb :items="breadcrumbData" separator="succeeds"  icons />
+  <V-Breadcrumb :items="breadcrumbData" separator="succeeds" icons />
 </template>
 ```
 

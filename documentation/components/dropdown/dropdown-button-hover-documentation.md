@@ -1,18 +1,14 @@
 ### Hover buttons
 
-Vuero's `<BaseDropdown />` component can also be opened on hover or after any custom event. Please refer to the markup for more details about usage.
+Vuero's `<V-Dropdown />` component can also be opened on hover or after any custom event. Please refer to the markup for more details about usage.
 
 <!--code-->
 
 ```vue {3-7}
 <template>
-  <BaseDropdown>
+  <V-Dropdown>
     <template #button="{ open, close, toggle, isOpen }">
-      <button
-        class="is-trigger button"
-        @mouseenter="open"
-        @touch="toggle"
-      >
+      <button class="is-trigger button" @mouseenter="open" @touch="toggle">
         <span>Hover me!</span>
         <span class="base-caret">
           <Icon v-if="!isOpen" icon="fa:angle-down" />
@@ -29,7 +25,7 @@ Vuero's `<BaseDropdown />` component can also be opened on hover or after any cu
       <hr class="dropdown-divider" />
       <a href="#" class="dropdown-item"> With a divider </a>
     </template>
-  </BaseDropdown>
+  </V-Dropdown>
 </template>
 ```
 
@@ -39,7 +35,7 @@ Vuero's `<BaseDropdown />` component can also be opened on hover or after any cu
 
 <div class="field is-grouped">
   <div class="control">
-    <BaseDropdown>
+    <V-Dropdown>
       <template #button="{ open, close, toggle, isOpen }">
         <button
           class="is-trigger button"
@@ -61,11 +57,11 @@ Vuero's `<BaseDropdown />` component can also be opened on hover or after any cu
         <hr class="dropdown-divider" />
         <a href="#" class="dropdown-item"> With a divider </a>
       </template>
-    </BaseDropdown>
+    </V-Dropdown>
   </div>
 
   <div class="control">
-    <BaseDropdown title="Primary button" up>
+    <V-Dropdown title="Primary button" up>
       <template #button="{ open, close, toggle, isOpen }">
         <button
           class="is-trigger button"
@@ -86,7 +82,7 @@ Vuero's `<BaseDropdown />` component can also be opened on hover or after any cu
         <hr class="dropdown-divider" />
         <a href="#" class="dropdown-item"> With a divider </a>
       </template>
-    </BaseDropdown>
+    </V-Dropdown>
   </div>
 </div>
 

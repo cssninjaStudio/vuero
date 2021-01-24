@@ -56,17 +56,17 @@
             <div class="foot-block">
               <h4 class="heading">Developers</h4>
               <div class="developers">
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <span class="avatar is-fake is-primary">
                     <span>FE</span>
                   </span>
                 </div>
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <span class="avatar is-fake is-success">
                     <span>SD</span>
                   </span>
                 </div>
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <span class="avatar is-fake is-info">
                     <span>NJ</span>
                   </span>
@@ -110,7 +110,7 @@
             <div class="foot-block">
               <h4 class="heading">Developers</h4>
               <div class="developers">
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <span class="avatar is-fake is-primary">
                     <img
                       class="avatar"
@@ -123,7 +123,7 @@
                     />
                   </span>
                 </div>
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <span class="avatar is-fake is-success">
                     <img
                       class="avatar"
@@ -136,7 +136,7 @@
                     />
                   </span>
                 </div>
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <span class="avatar is-fake is-danger">
                     <span>DC</span>
                   </span>
@@ -180,7 +180,7 @@
             <div class="foot-block">
               <h4 class="heading">Developers</h4>
               <div class="developers">
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <span class="avatar is-fake is-primary">
                     <img
                       class="avatar"
@@ -232,7 +232,7 @@
             <div class="foot-block">
               <h4 class="heading">Developers</h4>
               <div class="developers">
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <span class="avatar is-fake is-primary">
                     <img
                       class="avatar"
@@ -245,7 +245,7 @@
                     />
                   </span>
                 </div>
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <span class="avatar is-fake is-success">
                     <img
                       class="avatar"
@@ -298,7 +298,7 @@
             <div class="foot-block">
               <h4 class="heading">Developers</h4>
               <div class="developers">
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <span class="avatar is-fake is-primary">
                     <img
                       class="avatar"
@@ -311,7 +311,7 @@
                     />
                   </span>
                 </div>
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <span class="avatar is-fake is-warning">
                     <span>AG</span>
                   </span>
@@ -355,7 +355,7 @@
             <div class="foot-block">
               <h4 class="heading">Developers</h4>
               <div class="developers">
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <span class="avatar is-fake is-primary">
                     <img
                       class="avatar"
@@ -407,7 +407,7 @@
             <div class="foot-block">
               <h4 class="heading">Developers</h4>
               <div class="developers">
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <span class="avatar is-fake is-primary">
                     <img
                       class="avatar"
@@ -420,7 +420,7 @@
                     />
                   </span>
                 </div>
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <span class="avatar is-fake is-success">
                     <img
                       class="avatar"
@@ -433,7 +433,7 @@
                     />
                   </span>
                 </div>
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <span class="avatar is-fake is-success">
                     <img
                       class="avatar"
@@ -486,12 +486,12 @@
             <div class="foot-block">
               <h4 class="heading">Developers</h4>
               <div class="developers">
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <span class="avatar is-fake is-info">
                     <span>ET</span>
                   </span>
                 </div>
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <span class="avatar is-fake is-warning">
                     <span>BH</span>
                   </span>
@@ -535,7 +535,7 @@
             <div class="foot-block">
               <h4 class="heading">Developers</h4>
               <div class="developers">
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <span class="avatar">
                     <img
                       class="avatar"
@@ -548,7 +548,7 @@
                     />
                   </span>
                 </div>
-                <div class="h-avatar is-small">
+                <div class="v-avatar is-small">
                   <span class="avatar is-fake is-info">
                     <span>ET</span>
                   </span>

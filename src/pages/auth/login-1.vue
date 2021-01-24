@@ -71,7 +71,7 @@ useHead({
                   <input type="text" class="input" placeholder="" />
                   <small class="error-text">This is a required field</small>
                   <div class="auth-label">Email Address</div>
-                  <div class="auth-icon">
+                  <div class="autv-icon">
                     <i class="lnil lnil-envelope"></i>
                   </div>
                   <div class="validation-icon is-success">
@@ -88,7 +88,7 @@ useHead({
                 <div class="control has-validation">
                   <input type="password" class="input" />
                   <div class="auth-label">Password</div>
-                  <div class="auth-icon">
+                  <div class="autv-icon">
                     <i class="lnil lnil-lock-alt"></i>
                   </div>
                 </div>
@@ -136,7 +136,7 @@ useHead({
                   <input type="text" class="input" />
                   <small class="error-text">This is a required field</small>
                   <div class="auth-label">Email Address</div>
-                  <div class="auth-icon">
+                  <div class="autv-icon">
                     <i class="lnil lnil-envelope"></i>
                   </div>
                   <div class="validation-icon is-success">
@@ -308,7 +308,7 @@ useHead({
             border-color: $placeholder;
 
             ~ .auth-label,
-            ~ .auth-icon i {
+            ~ .autv-icon i {
               color: $muted-grey;
             }
           }
@@ -332,7 +332,7 @@ useHead({
           transition: all 0.3s;
         }
 
-        .auth-icon {
+        .autv-icon {
           position: absolute;
           top: 0;
           left: 0;
@@ -524,7 +524,7 @@ useHead({
             &:focus {
               border-color: $accent;
 
-              ~ .auth-icon {
+              ~ .autv-icon {
                 i {
                   color: $accent;
                 }

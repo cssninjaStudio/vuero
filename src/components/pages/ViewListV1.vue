@@ -293,7 +293,7 @@ const filteredData = computed(() => {
               class="list-view-item"
             >
               <div class="list-view-item-inner">
-                <div class="h-avatar is-large">
+                <div class="v-avatar is-large">
                   <img
                     class="avatar"
                     :src="item.medias.avatar"
@@ -344,7 +344,7 @@ const filteredData = computed(() => {
                       <div
                         v-for="team in item.teams.slice(0, 3)"
                         :key="team"
-                        class="h-avatar is-small"
+                        class="v-avatar is-small"
                       >
                         <img
                           class="avatar"
@@ -359,7 +359,7 @@ const filteredData = computed(() => {
                       </div>
                       <div
                         v-if="item.teams.length > 3"
-                        class="h-avatar is-small"
+                        class="v-avatar is-small"
                       >
                         <span class="avatar is-more">
                           <span class="inner">

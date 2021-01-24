@@ -79,7 +79,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                       <i class="lnil lnil-user-alt"></i>
                     </div>
                     <div class="meta">
-                      <span>Avatars</span>
+                      <span>V-Avatar</span>
                     </div>
                   </RouterLink>
                   <RouterLink
@@ -90,7 +90,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                       <i class="lnil lnil-layout-alt"></i>
                     </div>
                     <div class="meta">
-                      <span>Accordion</span>
+                      <span>V-Accordion</span>
                     </div>
                   </RouterLink>
                   <RouterLink
@@ -101,7 +101,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                       <i class="lnil lnil-layout-alt"></i>
                     </div>
                     <div class="meta">
-                      <span>Collapse</span>
+                      <span>V-Collapse</span>
                     </div>
                   </RouterLink>
                   <RouterLink
@@ -112,7 +112,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                       <i class="lnil lnil-layout-alt"></i>
                     </div>
                     <div class="meta">
-                      <span>Images</span>
+                      <span>V-ImageAccordion</span>
                     </div>
                   </RouterLink>
                   <RouterLink
@@ -123,7 +123,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                       <i class="lnil lnil-air"></i>
                     </div>
                     <div class="meta">
-                      <span>Breadcrumb</span>
+                      <span>V-Breadcrumb</span>
                     </div>
                   </RouterLink>
                   <RouterLink
@@ -168,7 +168,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                       <i class="lnil lnil-scaling"></i>
                     </div>
                     <div class="meta">
-                      <span>Dropdown</span>
+                      <span>V-Dropdown</span>
                     </div>
                   </RouterLink>
                   <RouterLink
@@ -224,7 +224,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                       <i class="lnil lnil-grid-alt"></i>
                     </div>
                     <div class="meta">
-                      <span>Icon Box</span>
+                      <span>V-IconBox</span>
                     </div>
                   </RouterLink>
                   <RouterLink

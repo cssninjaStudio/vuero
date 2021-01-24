@@ -43,7 +43,7 @@ import { activePanel } from '/@src/composition/state/ui/activePanelState'
             <a
               class="media-flex-center is-responsive-mobile is-responsive-tablet-p"
             >
-              <div class="h-icon is-info is-rounded is-small">
+              <div class="v-icon is-info is-rounded is-small">
                 <i class="iconify" data-icon="feather:chrome"></i>
               </div>
               <div class="flex-meta">
@@ -54,7 +54,7 @@ import { activePanel } from '/@src/composition/state/ui/activePanelState'
             <a
               class="media-flex-center is-responsive-mobile is-responsive-tablet-p"
             >
-              <div class="h-icon is-orange is-rounded is-small">
+              <div class="v-icon is-orange is-rounded is-small">
                 <i class="iconify" data-icon="feather:tv"></i>
               </div>
               <div class="flex-meta">
@@ -65,7 +65,7 @@ import { activePanel } from '/@src/composition/state/ui/activePanelState'
             <a
               class="media-flex-center is-responsive-mobile is-responsive-tablet-p"
             >
-              <div class="h-icon is-green is-rounded is-small">
+              <div class="v-icon is-green is-rounded is-small">
                 <i class="iconify" data-icon="feather:twitter"></i>
               </div>
               <div class="flex-meta">
@@ -82,7 +82,7 @@ import { activePanel } from '/@src/composition/state/ui/activePanelState'
             <a
               class="media-flex-center is-responsive-mobile is-responsive-tablet-p"
             >
-              <div class="h-avatar is-small">
+              <div class="v-avatar is-small">
                 <img
                   class="avatar"
                   src="/images/avatars/photos/7.jpg"
@@ -101,7 +101,7 @@ import { activePanel } from '/@src/composition/state/ui/activePanelState'
             <a
               class="media-flex-center is-responsive-mobile is-responsive-tablet-p"
             >
-              <div class="h-avatar is-small">
+              <div class="v-avatar is-small">
                 <img
                   class="avatar"
                   src="/images/avatars/photos/13.jpg"
@@ -120,7 +120,7 @@ import { activePanel } from '/@src/composition/state/ui/activePanelState'
             <a
               class="media-flex-center is-responsive-mobile is-responsive-tablet-p"
             >
-              <div class="h-avatar is-small">
+              <div class="v-avatar is-small">
                 <img
                   class="avatar"
                   src="/images/avatars/photos/22.jpg"

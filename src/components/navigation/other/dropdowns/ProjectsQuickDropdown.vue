@@ -9,7 +9,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
     :class="[isOpen && 'is-active']"
     class="dropdown project-dropdown dropdown-trigger is-spaced"
   >
-    <div class="h-avatar is-small" @click="open">
+    <div class="v-avatar is-small" @click="open">
       <span class="avatar is-fake is-h-green">
         <span>H</span>
       </span>
@@ -19,7 +19,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
     <div class="dropdown-menu" role="menu">
       <div class="dropdown-content">
         <div class="dropdown-block">
-          <div class="h-avatar is-small">
+          <div class="v-avatar is-small">
             <span class="avatar is-fake is-warning">
               <span>D</span>
             </span>
@@ -30,7 +30,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
           </div>
         </div>
         <div class="dropdown-block">
-          <div class="h-avatar is-small">
+          <div class="v-avatar is-small">
             <span class="avatar is-fake is-h-green">
               <span>H</span>
             </span>
@@ -41,7 +41,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
           </div>
         </div>
         <div class="dropdown-block">
-          <div class="h-avatar is-small">
+          <div class="v-avatar is-small">
             <span class="avatar is-fake is-info">
               <span>L</span>
             </span>
@@ -52,7 +52,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
           </div>
         </div>
         <div class="dropdown-block">
-          <div class="h-avatar is-small">
+          <div class="v-avatar is-small">
             <span class="avatar is-fake is-h-purple">
               <span>B</span>
             </span>
