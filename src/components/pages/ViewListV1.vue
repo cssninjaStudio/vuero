@@ -380,7 +380,7 @@ const filteredData = computed(() => {
         </div>
       </div>
 
-      <FlexPagination />
+      <FlexPagination v-if="filteredData.length > 5" />
     </div>
   </div>
 </template>
