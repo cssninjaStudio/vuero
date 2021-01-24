@@ -246,7 +246,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                       <i class="lnil lnil-bubble"></i>
                     </div>
                     <div class="meta">
-                      <span>Message</span>
+                      <span>V-Message</span>
                     </div>
                   </RouterLink>
                   <RouterLink

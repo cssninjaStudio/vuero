@@ -126,7 +126,7 @@ const activeTab = ref<'components' | 'plugins'>('components')
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'components-messages' }">
-                      <span>Message</span>
+                      <span>V-Message</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
