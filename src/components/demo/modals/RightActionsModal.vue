@@ -14,15 +14,15 @@ const emit = defineEmit(['close'])
   <div
     id="demo-right-actions-modal"
     :class="[open && 'is-active']"
-    class="modal h-modal"
+    class="modal v-modal"
   >
-    <div class="modal-background h-modal-close" @click="emit('close')"></div>
+    <div class="modal-background v-modal-close" @click="emit('close')"></div>
     <div class="modal-content">
       <div class="modal-card">
         <header class="modal-card-head">
           <h3>Did you know?</h3>
           <button
-            class="h-modal-close ml-auto"
+            class="v-modal-close ml-auto"
             aria-label="close"
             @click="emit('close')"
           >
@@ -42,7 +42,7 @@ const emit = defineEmit(['close'])
         </div>
         <div class="modal-card-foot is-end">
           <a
-            class="button v-button is-rounded h-modal-close"
+            class="button v-button is-rounded v-modal-close"
             @click="emit('close')"
             >Cancel</a
           >

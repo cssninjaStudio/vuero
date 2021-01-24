@@ -169,14 +169,14 @@ useHead({
                         <span>Embed a video</span>
                       </div>
                     </a>
-                    <a href="#" class="dropdown-item kill-drop h-modal-trigger">
+                    <a href="#" class="dropdown-item kill-drop v-modal-trigger">
                       <i class="iconify" data-icon="feather:image"></i>
                       <div class="meta">
                         <span>Images</span>
                         <span>Upload pictures</span>
                       </div>
                     </a>
-                    <a href="#" class="dropdown-item kill-drop h-modal-trigger">
+                    <a href="#" class="dropdown-item kill-drop v-modal-trigger">
                       <i class="iconify" data-icon="feather:link"></i>
                       <div class="meta">
                         <span>Link</span>
@@ -184,7 +184,7 @@ useHead({
                       </div>
                     </a>
                     <hr class="dropdown-divider" />
-                    <a href="#" class="dropdown-item kill-drop h-modal-trigger">
+                    <a href="#" class="dropdown-item kill-drop v-modal-trigger">
                       <i class="iconify" data-icon="feather:file"></i>
                       <div class="meta">
                         <span>File</span>
