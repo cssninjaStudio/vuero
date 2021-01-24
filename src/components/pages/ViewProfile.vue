@@ -171,7 +171,6 @@
                             'https://via.placeholder.com/150x150'
                         "
                       />
-                      <span class="languages-donut">100/100</span>
                     </div>
                     <div class="meta">
                       <span class="dark-inverted">English</span>
@@ -188,7 +187,6 @@
                             'https://via.placeholder.com/150x150'
                         "
                       />
-                      <span class="languages-donut">80/100</span>
                     </div>
                     <div class="meta">
                       <span class="dark-inverted">French</span>
@@ -205,7 +203,6 @@
                             'https://via.placeholder.com/150x150'
                         "
                       />
-                      <span class="languages-donut">30/100</span>
                     </div>
                     <div class="meta">
                       <span class="dark-inverted">German</span>
@@ -222,7 +219,6 @@
                             'https://via.placeholder.com/150x150'
                         "
                       />
-                      <span class="languages-donut">40/100</span>
                     </div>
                     <div class="meta">
                       <span class="dark-inverted">Spanish</span>
@@ -648,7 +644,6 @@
                             'https://via.placeholder.com/150x150'
                         "
                       />
-                      <span class="languages-donut">80/100</span>
                     </div>
                     <div class="meta">
                       <span class="dark-inverted">Adobe Illustrator</span>
@@ -667,7 +662,6 @@
                             'https://via.placeholder.com/150x150'
                         "
                       />
-                      <span class="languages-donut">60/100</span>
                     </div>
                     <div class="meta">
                       <span class="dark-inverted">Jira Software</span>
@@ -686,7 +680,6 @@
                             'https://via.placeholder.com/150x150'
                         "
                       />
-                      <span class="languages-donut">95/100</span>
                     </div>
                     <div class="meta">
                       <span class="dark-inverted">MS Office</span>

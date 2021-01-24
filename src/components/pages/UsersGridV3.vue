@@ -86,9 +86,6 @@ const props = defineProps({
 
               <div class="icon-tabs-content subsection-1 is-active">
                 <div class="chart-block">
-                  <span class="updating-chart"
-                    >5,3,9,6,5,9,7,3,5,2,5,3,9,6,5,9,7,3,5,2</span
-                  >
                   <div class="stats">
                     <span class="dark-inverted">72</span>
                     <span>Posts</span>
@@ -178,9 +175,6 @@ const props = defineProps({
 
               <div class="icon-tabs-content subsection-1 is-active">
                 <div class="chart-block">
-                  <span class="updating-chart"
-                    >5,3,9,6,5,9,7,3,5,2,5,3,9,6,5,9,7,3,5,2</span
-                  >
                   <div class="stats">
                     <span class="dark-inverted">16</span>
                     <span>Posts</span>
@@ -270,9 +264,6 @@ const props = defineProps({
 
               <div class="icon-tabs-content subsection-1 is-active">
                 <div class="chart-block">
-                  <span class="updating-chart"
-                    >5,3,9,6,5,9,7,3,5,2,5,3,9,6,5,9,7,3,5,2</span
-                  >
                   <div class="stats">
                     <span class="dark-inverted">22</span>
                     <span>Posts</span>
@@ -362,9 +353,6 @@ const props = defineProps({
 
               <div class="icon-tabs-content subsection-1 is-active">
                 <div class="chart-block">
-                  <span class="updating-chart"
-                    >5,3,9,6,5,9,7,3,5,2,5,3,9,6,5,9,7,3,5,2</span
-                  >
                   <div class="stats">
                     <span class="dark-inverted">4</span>
                     <span>Posts</span>
@@ -454,9 +442,6 @@ const props = defineProps({
 
               <div class="icon-tabs-content subsection-1 is-active">
                 <div class="chart-block">
-                  <span class="updating-chart"
-                    >5,3,9,6,5,9,7,3,5,2,5,3,9,6,5,9,7,3,5,2</span
-                  >
                   <div class="stats">
                     <span class="dark-inverted">7</span>
                     <span>Posts</span>
@@ -546,9 +531,6 @@ const props = defineProps({
 
               <div class="icon-tabs-content subsection-1 is-active">
                 <div class="chart-block">
-                  <span class="updating-chart"
-                    >5,3,9,6,5,9,7,3,5,2,5,3,9,6,5,9,7,3,5,2</span
-                  >
                   <div class="stats">
                     <span class="dark-inverted">23</span>
                     <span>Posts</span>
@@ -638,9 +620,6 @@ const props = defineProps({
 
               <div class="icon-tabs-content subsection-1 is-active">
                 <div class="chart-block">
-                  <span class="updating-chart"
-                    >5,3,9,6,5,9,7,3,5,2,5,3,9,6,5,9,7,3,5,2</span
-                  >
                   <div class="stats">
                     <span class="dark-inverted">5</span>
                     <span>Posts</span>
@@ -730,9 +709,6 @@ const props = defineProps({
 
               <div class="icon-tabs-content subsection-1 is-active">
                 <div class="chart-block">
-                  <span class="updating-chart"
-                    >5,3,9,6,5,9,7,3,5,2,5,3,9,6,5,9,7,3,5,2</span
-                  >
                   <div class="stats">
                     <span class="dark-inverted">12</span>
                     <span>Posts</span>
@@ -822,9 +798,6 @@ const props = defineProps({
 
               <div class="icon-tabs-content subsection-1 is-active">
                 <div class="chart-block">
-                  <span class="updating-chart"
-                    >5,3,9,6,5,9,7,3,5,2,5,3,9,6,5,9,7,3,5,2</span
-                  >
                   <div class="stats">
                     <span class="dark-inverted">18</span>
                     <span>Posts</span>
@@ -914,9 +887,6 @@ const props = defineProps({
 
               <div class="icon-tabs-content subsection-1 is-active">
                 <div class="chart-block">
-                  <span class="updating-chart"
-                    >5,3,9,6,5,9,7,3,5,2,5,3,9,6,5,9,7,3,5,2</span
-                  >
                   <div class="stats">
                     <span class="dark-inverted">44</span>
                     <span>Posts</span>
@@ -1006,9 +976,6 @@ const props = defineProps({
 
               <div class="icon-tabs-content subsection-1 is-active">
                 <div class="chart-block">
-                  <span class="updating-chart"
-                    >5,3,9,6,5,9,7,3,5,2,5,3,9,6,5,9,7,3,5,2</span
-                  >
                   <div class="stats">
                     <span class="dark-inverted">31</span>
                     <span>Posts</span>
@@ -1098,9 +1065,6 @@ const props = defineProps({
 
               <div class="icon-tabs-content subsection-1 is-active">
                 <div class="chart-block">
-                  <span class="updating-chart"
-                    >5,3,9,6,5,9,7,3,5,2,5,3,9,6,5,9,7,3,5,2</span
-                  >
                   <div class="stats">
                     <span class="dark-inverted">17</span>
                     <span>Posts</span>
@@ -1190,9 +1154,6 @@ const props = defineProps({
 
               <div class="icon-tabs-content subsection-1 is-active">
                 <div class="chart-block">
-                  <span class="updating-chart"
-                    >5,3,9,6,5,9,7,3,5,2,5,3,9,6,5,9,7,3,5,2</span
-                  >
                   <div class="stats">
                     <span class="dark-inverted">34</span>
                     <span>Posts</span>
@@ -1282,9 +1243,6 @@ const props = defineProps({
 
               <div class="icon-tabs-content subsection-1 is-active">
                 <div class="chart-block">
-                  <span class="updating-chart"
-                    >5,3,9,6,5,9,7,3,5,2,5,3,9,6,5,9,7,3,5,2</span
-                  >
                   <div class="stats">
                     <span class="dark-inverted">0</span>
                     <span>Posts</span>
@@ -1374,9 +1332,6 @@ const props = defineProps({
 
               <div class="icon-tabs-content subsection-1 is-active">
                 <div class="chart-block">
-                  <span class="updating-chart"
-                    >5,3,9,6,5,9,7,3,5,2,5,3,9,6,5,9,7,3,5,2</span
-                  >
                   <div class="stats">
                     <span class="dark-inverted">6</span>
                     <span>Posts</span>
@@ -1466,9 +1421,6 @@ const props = defineProps({
 
               <div class="icon-tabs-content subsection-1 is-active">
                 <div class="chart-block">
-                  <span class="updating-chart"
-                    >5,3,9,6,5,9,7,3,5,2,5,3,9,6,5,9,7,3,5,2</span
-                  >
                   <div class="stats">
                     <span class="dark-inverted">8</span>
                     <span>Posts</span>
@@ -1558,9 +1510,6 @@ const props = defineProps({
 
               <div class="icon-tabs-content subsection-1 is-active">
                 <div class="chart-block">
-                  <span class="updating-chart"
-                    >5,3,9,6,5,9,7,3,5,2,5,3,9,6,5,9,7,3,5,2</span
-                  >
                   <div class="stats">
                     <span class="dark-inverted">8</span>
                     <span>Posts</span>
@@ -1650,9 +1599,6 @@ const props = defineProps({
 
               <div class="icon-tabs-content subsection-1 is-active">
                 <div class="chart-block">
-                  <span class="updating-chart"
-                    >5,3,9,6,5,9,7,3,5,2,5,3,9,6,5,9,7,3,5,2</span
-                  >
                   <div class="stats">
                     <span class="dark-inverted">13</span>
                     <span>Posts</span>
