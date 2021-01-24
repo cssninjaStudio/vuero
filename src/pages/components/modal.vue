@@ -27,6 +27,8 @@ const standardFormOpen = ref(false)
 const mediumFormOpen = ref(false)
 const largeFormOpen = ref(false)
 const bigFormOpen = ref(false)
+const noscrollOpen = ref(false)
+const nocloseOpen = ref(false)
 
 useHead({
   title: 'Components - V-Modal - Vuero',
@@ -132,6 +134,18 @@ useHead({
             >
             <V-Button bold @click="largeFormOpen = true">Large Modal</V-Button>
             <V-Button bold @click="bigFormOpen = true">Big Modal</V-Button>
+          </div>
+
+          <!--V-Modal options-->
+          <VModalOptionsDocumentation />
+
+          <div class="buttons mb-6">
+            <V-Button bold @click="noscrollOpen = true"
+              >Scroll disabled</V-Button
+            >
+            <V-Button bold @click="nocloseOpen = true"
+              >No background close handler</V-Button
+            >
           </div>
         </div>
         <div v-if="toc.length" class="column is-3">
@@ -848,6 +862,46 @@ useHead({
       </template>
       <template #action>
         <V-Button color="primary" raised>Save Changes</V-Button>
+      </template>
+    </V-Modal>
+
+    <V-Modal
+      :open="noscrollOpen"
+      title="Invitation"
+      size="small"
+      actions="center"
+      rounded
+      noscroll
+      @close="noscrollOpen = false"
+    >
+      <template #content>
+        <V-PlaceholderSection
+          title="Go Premium"
+          subtitle="Unlock more features and business tools by going premium"
+        />
+      </template>
+      <template #action>
+        <V-Button color="primary" raised>Confirm</V-Button>
+      </template>
+    </V-Modal>
+
+    <V-Modal
+      :open="nocloseOpen"
+      title="Invitation"
+      size="small"
+      actions="center"
+      rounded
+      noclose
+      @close="nocloseOpen = false"
+    >
+      <template #content>
+        <V-PlaceholderSection
+          title="Go Premium"
+          subtitle="Unlock more features and business tools by going premium"
+        />
+      </template>
+      <template #action>
+        <V-Button color="primary" raised>Confirm</V-Button>
       </template>
     </V-Modal>
   </div>
