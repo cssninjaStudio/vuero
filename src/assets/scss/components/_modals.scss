@@ -67,16 +67,16 @@
 2. H Modal
 ========================================================================== */
 
-.h-modal {
+.v-modal {
   &.is-active {
     z-index: 100 !important;
 
-    .h-modal-close {
+    .v-modal-close {
       cursor: pointer;
     }
   }
 
-  .h-modal-card {
+  .v-modal-card {
     width: 100%;
     background: $white;
     border: 1px solid $fade-grey;
@@ -124,7 +124,7 @@
           font-size: 1rem;
         }
 
-        .h-modal-close {
+        .v-modal-close {
           display: flex;
           justify-content: center;
           align-items: center;
@@ -189,7 +189,7 @@
 ========================================================================== */
 
 .is-dark {
-  .h-modal {
+  .v-modal {
     .modal-background {
       background: rgba(101, 101, 104, 0.8) !important;
     }
@@ -204,7 +204,7 @@
             color: $dark-dark-text;
           }
 
-          .h-modal-close {
+          .v-modal-close {
             &:hover {
               svg {
                 color: $accent;

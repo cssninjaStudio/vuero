@@ -305,7 +305,7 @@ useHead({
                         </a>
                         <a
                           href="#"
-                          class="dropdown-item kill-drop h-modal-trigger"
+                          class="dropdown-item kill-drop v-modal-trigger"
                         >
                           <i class="iconify" data-icon="feather:image"></i>
                           <div class="meta">
@@ -315,7 +315,7 @@ useHead({
                         </a>
                         <a
                           href="#"
-                          class="dropdown-item kill-drop h-modal-trigger"
+                          class="dropdown-item kill-drop v-modal-trigger"
                         >
                           <i class="iconify" data-icon="feather:link"></i>
                           <div class="meta">
@@ -326,7 +326,7 @@ useHead({
                         <hr class="dropdown-divider" />
                         <a
                           href="#"
-                          class="dropdown-item kill-drop h-modal-trigger"
+                          class="dropdown-item kill-drop v-modal-trigger"
                         >
                           <i class="iconify" data-icon="feather:file"></i>
                           <div class="meta">

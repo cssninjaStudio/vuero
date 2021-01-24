@@ -2,10 +2,13 @@
 import { useHead } from '@vueuse/head'
 import { onMounted, ref } from 'vue'
 
+import useMakrdownToc from '/@src/composition/use/useMarkdownToc'
 import {
   activeSidebar,
   toggleSidebar,
 } from '/@src/composition/state/ui/activeSidebarState'
+
+const { markdownContainer, toc } = useMakrdownToc()
 
 onMounted(() => {
   activeSidebar.value = 'components'
@@ -26,7 +29,7 @@ const largeFormOpen = ref(false)
 const bigFormOpen = ref(false)
 
 useHead({
-  title: 'Components - Modal - Vuero',
+  title: 'Components - V-Modal - Vuero',
 })
 </script>
 
@@ -53,7 +56,7 @@ useHead({
       </div>
 
       <div class="title-wrap">
-        <h1 class="title is-4">Modals</h1>
+        <h1 class="title is-4">V-Modal</h1>
       </div>
 
       <Toolbar />
@@ -76,201 +79,776 @@ useHead({
           </li>
           <li>
             <a>
-              <span>Modal</span>
+              <span>V-Modal</span>
             </a>
           </li>
         </ul>
       </nav>
 
       <div class="columns is-multiline">
-        <div class="column is-12">
-          <!--H Modal-->
-          <div class="demo-card">
-            <div class="demo-title">
-              <h3 class="title is-thin is-5">H Modal</h3>
-              <p>
-                Vuero provides a custom modal implementation. Use the existing
-                modal markup and paste it into your page to try it. Use the
-                <code>is-start</code>, <code>is-centered</code>,
-                <code>is-end</code> classes on the
-                <code>modal-card-foot</code> element to change the actions
-                alignment.
-              </p>
-              <a class="code-trigger">
-                <i class="iconify open" data-icon="feather:code"></i>
-                <i class="iconify close" data-icon="feather:x"></i>
-              </a>
-            </div>
-            <div class="card-inner">
-              <div class="buttons">
-                <a
-                  class="button v-button is-rounded h-modal-trigger"
-                  @click="leftActionsOpen = true"
-                  >Left Actions</a
-                >
-                <a
-                  class="button v-button is-rounded h-modal-trigger"
-                  @click="centeredActionsOpen = true"
-                  >Centered Actions</a
-                >
-                <a
-                  class="button v-button is-rounded h-modal-trigger"
-                  @click="rightActionsOpen = true"
-                  >Right Actions</a
-                >
-              </div>
+        <div
+          ref="markdownContainer"
+          :class="[toc.length > 0 ? 'is-9' : 'is-12']"
+          class="column"
+        >
+          <!--V-Modal-->
+          <VModalBaseDocumentation />
 
-              <div class="highlight highlight-block">
-                <pre><code class="code-highlight">
-&#x3C;a class=&#x22;button v-button is-rounded h-modal-trigger&#x22; data-modal=&#x22;demo-right-actions-modal&#x22;&#x3E;Right Actions&#x3C;/a&#x3E;
-
-&#x3C;div id=&#x22;demo-right-actions-modal&#x22; class=&#x22;modal h-modal&#x22;&#x3E;
-    &#x3C;div class=&#x22;modal-background  h-modal-close&#x22;&#x3E;&#x3C;/div&#x3E;
-    &#x3C;div class=&#x22;modal-content&#x22;&#x3E;
-        &#x3C;div class=&#x22;modal-card&#x22;&#x3E;
-            &#x3C;header class=&#x22;modal-card-head&#x22;&#x3E;
-                &#x3C;h3&#x3E;Did you know?&#x3C;/h3&#x3E;
-                &#x3C;button class=&#x22;h-modal-close ml-auto&#x22; aria-label=&#x22;close&#x22;&#x3E;
-                    &#x3C;i data-feather=&#x22;x&#x22;&#x3E;&#x3C;/i&#x3E;
-                &#x3C;/button&#x3E;
-            &#x3C;/header&#x3E;
-            &#x3C;div class=&#x22;modal-card-body&#x22;&#x3E;
-                &#x3C;div class=&#x22;inner-content&#x22;&#x3E;
-                    &#x3C;div class=&#x22;section-placeholder&#x22;&#x3E;
-                        &#x3C;div class=&#x22;placeholder-content&#x22;&#x3E;
-                            &#x3C;img src=&#x22;assets/img/placeholders/huro-1.svg&#x22; alt=&#x22;&#x22;&#x3E;
-                            &#x3C;h3 class=&#x22;dark-inverted&#x22;&#x3E;Go Premium&#x3C;/h3&#x3E;
-                            &#x3C;p&#x3E;Unlock more features and business tools by going premium&#x3C;/p&#x3E;
-                        &#x3C;/div&#x3E;
-                    &#x3C;/div&#x3E;
-                &#x3C;/div&#x3E;
-            &#x3C;/div&#x3E;
-            &#x3C;div class=&#x22;modal-card-foot is-end&#x22;&#x3E;
-                &#x3C;a class=&#x22;button v-button is-rounded h-modal-close&#x22;&#x3E;Cancel&#x3C;/a&#x3E;
-                &#x3C;a class=&#x22;button v-button is-primary is-raised is-rounded&#x22;&#x3E;Confirm&#x3C;/a&#x3E;
-            &#x3C;/div&#x3E;
-        &#x3C;/div&#x3E;
-    &#x3C;/div&#x3E;
-&#x3C;/div&#x3E;
-</code></pre>
-              </div>
-            </div>
+          <div class="buttons mb-6">
+            <V-Button bold @click="leftActionsOpen = true"
+              >Left Actions</V-Button
+            >
+            <V-Button bold @click="centeredActionsOpen = true"
+              >Center Actions</V-Button
+            >
+            <V-Button bold @click="rightActionsOpen = true"
+              >Right Actions</V-Button
+            >
           </div>
 
-          <!--H Modal Sizes-->
-          <div class="demo-card">
-            <div class="demo-title">
-              <h3 class="title is-thin is-5">Modal Sizes</h3>
-              <p>
-                Vuero provides a custom modal implementation. Use the existing
-                modal markup and paste it into your page to try it. Use the
-                <code>is-small</code>, <code>is-medium</code>,
-                <code>is-large</code> and <code>is-big</code> classes on the
-                <code>h-modal</code> element to change the size of the modal.
-              </p>
-            </div>
-            <div class="card-inner">
-              <div class="buttons">
-                <a
-                  class="button v-button is-rounded h-modal-trigger"
-                  @click="smallOpen = true"
-                  >Small Modal</a
-                >
-                <a
-                  class="button v-button is-rounded h-modal-trigger"
-                  @click="standardOpen = true"
-                  >Standard Modal</a
-                >
-                <a
-                  class="button v-button is-rounded h-modal-trigger"
-                  @click="mediumOpen = true"
-                  >Medium Modal</a
-                >
-                <a
-                  class="button v-button is-rounded h-modal-trigger"
-                  @click="largeOpen = true"
-                  >Large Modal</a
-                >
-                <a
-                  class="button v-button is-rounded h-modal-trigger"
-                  @click="bigOpen = true"
-                  >Big Modal</a
-                >
-              </div>
-            </div>
+          <!--V-Modal sizes-->
+          <VModalSizesDocumentation />
+
+          <div class="buttons mb-6">
+            <V-Button bold @click="smallOpen = true">Small Modal</V-Button>
+            <V-Button bold @click="standardOpen = true"
+              >Standard Modal</V-Button
+            >
+            <V-Button bold @click="mediumOpen = true">Medium Modal</V-Button>
+            <V-Button bold @click="largeOpen = true">Large Modal</V-Button>
+            <V-Button bold @click="bigOpen = true">Big Modal</V-Button>
           </div>
 
-          <!--H Modal Forms-->
-          <div class="demo-card">
-            <div class="demo-title">
-              <h3 class="title is-thin is-5">Modal Forms</h3>
-              <p>
-                Vuero provides a custom modal implementation. Use the existing
-                modal markup and paste it into your page to try it. Modals work
-                pretty well with form elements. Check the below examples to get
-                some inspiration about how you can build beautiful modal forms.
-              </p>
-            </div>
-            <div class="card-inner">
-              <div class="buttons">
-                <a
-                  class="button v-button is-rounded h-modal-trigger"
-                  @click="smallFormOpen = true"
-                  >Small Modal</a
-                >
-                <a
-                  class="button v-button is-rounded h-modal-trigger"
-                  @click="standardFormOpen = true"
-                  >Standard Modal</a
-                >
-                <a
-                  class="button v-button is-rounded h-modal-trigger"
-                  @click="mediumFormOpen = true"
-                  >Medium Modal</a
-                >
-                <a
-                  class="button v-button is-rounded h-modal-trigger"
-                  @click="largeFormOpen = true"
-                  >Large Modal</a
-                >
-                <a
-                  class="button v-button is-rounded h-modal-trigger"
-                  @click="bigFormOpen = true"
-                  >Big Modal</a
-                >
-              </div>
-            </div>
+          <!--V-Modal forms-->
+          <VModalFormsDocumentation />
+
+          <div class="buttons mb-6">
+            <V-Button bold @click="smallFormOpen = true">Small Modal</V-Button>
+            <V-Button bold @click="standardFormOpen = true"
+              >Standard Modal</V-Button
+            >
+            <V-Button bold @click="mediumFormOpen = true"
+              >Medium Modal</V-Button
+            >
+            <V-Button bold @click="largeFormOpen = true">Large Modal</V-Button>
+            <V-Button bold @click="bigFormOpen = true">Big Modal</V-Button>
           </div>
+        </div>
+        <div v-if="toc.length" class="column is-3">
+          <DocumentationToc :toc="toc" />
         </div>
       </div>
     </div>
 
-    <LeftActionsModal
-      :open="leftActionsOpen"
-      @close="leftActionsOpen = false"
-    />
-    <CenteredActionsModal
+    <V-Modal :open="leftActionsOpen" @close="leftActionsOpen = false">
+      <template #content>
+        <V-PlaceholderSection
+          title="Go Premium"
+          subtitle="Unlock more features and business tools by going premium"
+        />
+      </template>
+      <template #action>
+        <V-Button color="primary" raised>Confirm</V-Button>
+      </template>
+    </V-Modal>
+
+    <V-Modal
       :open="centeredActionsOpen"
+      actions="center"
       @close="centeredActionsOpen = false"
-    />
-    <RightActionsModal
+    >
+      <template #content>
+        <V-PlaceholderSection
+          title="Go Premium"
+          subtitle="Unlock more features and business tools by going premium"
+        />
+      </template>
+      <template #action>
+        <V-Button color="primary" raised>Confirm</V-Button>
+      </template>
+    </V-Modal>
+
+    <V-Modal
       :open="rightActionsOpen"
+      actions="right"
       @close="rightActionsOpen = false"
-    />
+    >
+      <template #content>
+        <V-PlaceholderSection
+          title="Go Premium"
+          subtitle="Unlock more features and business tools by going premium"
+        />
+      </template>
+      <template #action>
+        <V-Button color="primary" raised>Confirm</V-Button>
+      </template>
+    </V-Modal>
 
-    <SmallModal :open="smallOpen" @close="smallOpen = false" />
-    <StandardModal :open="standardOpen" @close="standardOpen = false" />
-    <MediumModal :open="mediumOpen" @close="mediumOpen = false" />
-    <LargeModal :open="largeOpen" @close="largeOpen = false" />
-    <BigModal :open="bigOpen" @close="bigOpen = false" />
+    <V-Modal
+      :open="smallOpen"
+      title="Invitation"
+      size="small"
+      actions="center"
+      rounded
+      @close="smallOpen = false"
+    >
+      <template #content>
+        <V-PlaceholderInvite
+          image="/images/avatars/photos/22.jpg"
+          badge="/images/icons/flags/united-states-of-america.svg"
+          title="You were invited"
+          subtitle="Jimmy H. invited you to join the Heartman &amp; Sons project."
+        />
+      </template>
+      <template #action>
+        <V-Button color="primary" rounded raised>Confirm</V-Button>
+      </template>
+    </V-Modal>
 
-    <SmallFormModal :open="smallFormOpen" @close="smallFormOpen = false" />
-    <StandardFormModal
+    <V-Modal
+      :open="standardOpen"
+      title="Invitation"
+      actions="center"
+      rounded
+      @close="standardOpen = false"
+    >
+      <template #content>
+        <V-PlaceholderInvite
+          image="/images/avatars/photos/22.jpg"
+          badge="/images/icons/flags/united-states-of-america.svg"
+          title="You were invited"
+          subtitle="Jimmy H. invited you to join the Heartman &amp; Sons project."
+        />
+      </template>
+      <template #action>
+        <V-Button color="primary" rounded raised>Confirm</V-Button>
+      </template>
+    </V-Modal>
+
+    <V-Modal
+      :open="mediumOpen"
+      title="Invitation"
+      size="medium"
+      actions="center"
+      rounded
+      @close="mediumOpen = false"
+    >
+      <template #content>
+        <V-PlaceholderInvite
+          image="/images/avatars/photos/22.jpg"
+          badge="/images/icons/flags/united-states-of-america.svg"
+          title="You were invited"
+          subtitle="Jimmy H. invited you to join the Heartman &amp; Sons project."
+        />
+      </template>
+      <template #action>
+        <V-Button color="primary" rounded raised>Confirm</V-Button>
+      </template>
+    </V-Modal>
+
+    <V-Modal
+      :open="largeOpen"
+      title="Invitation"
+      size="large"
+      actions="center"
+      rounded
+      @close="largeOpen = false"
+    >
+      <template #content>
+        <V-PlaceholderInvite
+          image="/images/avatars/photos/22.jpg"
+          badge="/images/icons/flags/united-states-of-america.svg"
+          title="You were invited"
+          subtitle="Jimmy H. invited you to join the Heartman &amp; Sons project."
+        />
+      </template>
+      <template #action>
+        <V-Button color="primary" rounded raised>Confirm</V-Button>
+      </template>
+    </V-Modal>
+
+    <V-Modal
+      :open="bigOpen"
+      title="Invitation"
+      size="big"
+      actions="center"
+      rounded
+      @close="bigOpen = false"
+    >
+      <template #content>
+        <V-PlaceholderInvite
+          image="/images/avatars/photos/22.jpg"
+          badge="/images/icons/flags/united-states-of-america.svg"
+          title="You were invited"
+          subtitle="Jimmy H. invited you to join the Heartman &amp; Sons project."
+        />
+      </template>
+      <template #action>
+        <V-Button color="primary" rounded raised>Confirm</V-Button>
+      </template>
+    </V-Modal>
+
+    <V-Modal
+      :open="smallFormOpen"
+      title="Leave a Comment"
+      size="small"
+      actions="right"
+      @close="smallFormOpen = false"
+    >
+      <template #content>
+        <form class="modal-form">
+          <div class="field">
+            <label>Username *</label>
+            <div class="control">
+              <input type="text" class="input" placeholder="Username" />
+            </div>
+          </div>
+          <div class="field">
+            <label>Email *</label>
+            <div class="control">
+              <input type="text" class="input" placeholder="Email Address" />
+            </div>
+          </div>
+          <div class="field">
+            <label>Comment *</label>
+            <div class="control">
+              <textarea
+                class="textarea"
+                rows="4"
+                placeholder="Your message..."
+              ></textarea>
+            </div>
+          </div>
+        </form>
+      </template>
+      <template #action>
+        <V-Button color="primary" raised>Publish</V-Button>
+      </template>
+    </V-Modal>
+
+    <V-Modal
       :open="standardFormOpen"
+      title="Leave a Comment"
+      actions="right"
       @close="standardFormOpen = false"
-    />
-    <MediumFormModal :open="mediumFormOpen" @close="mediumFormOpen = false" />
-    <LargeFormModal :open="largeFormOpen" @close="largeFormOpen = false" />
-    <BigFormModal :open="bigFormOpen" @close="bigFormOpen = false" />
+    >
+      <template #content>
+        <form class="modal-form">
+          <div class="field">
+            <label>Username *</label>
+            <div class="control">
+              <input type="text" class="input" placeholder="Username" />
+            </div>
+          </div>
+          <div class="field">
+            <label>Email *</label>
+            <div class="control">
+              <input type="text" class="input" placeholder="Email Address" />
+            </div>
+          </div>
+          <div class="field">
+            <label>Comment *</label>
+            <div class="control">
+              <textarea
+                class="textarea"
+                rows="4"
+                placeholder="Your message..."
+              ></textarea>
+            </div>
+          </div>
+        </form>
+      </template>
+      <template #action>
+        <V-Button color="primary" raised>Publish</V-Button>
+      </template>
+    </V-Modal>
+
+    <V-Modal
+      :open="mediumFormOpen"
+      size="medium"
+      title="Horizontal Form"
+      actions="right"
+      @close="mediumFormOpen = false"
+    >
+      <template #content>
+        <form class="modal-form">
+          <div class="field is-horizontal">
+            <div class="field-label is-normal">
+              <label class="label">Username *</label>
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <div class="control">
+                  <input class="input" type="text" placeholder="Username" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="field is-horizontal">
+            <div class="field-label is-normal">
+              <label class="label">Email *</label>
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <div class="control">
+                  <input class="input" type="text" placeholder="Username" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="field is-horizontal">
+            <div class="field-label is-normal">
+              <label class="label">Comment *</label>
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <div class="control">
+                  <textarea
+                    class="textarea"
+                    rows="4"
+                    placeholder="Your message..."
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </template>
+      <template #action>
+        <V-Button color="primary" raised>Publish</V-Button>
+      </template>
+    </V-Modal>
+
+    <V-Modal
+      :open="largeFormOpen"
+      size="large"
+      title="Create Project"
+      actions="right"
+      @close="largeFormOpen = false"
+    >
+      <template #content>
+        <div class="modal-form">
+          <div class="columns is-multiline">
+            <div class="column is-12">
+              <div class="field">
+                <label>Project Name *</label>
+                <div class="control">
+                  <input
+                    type="text"
+                    class="input"
+                    placeholder="Ex: A cool project"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="column is-6">
+              <div class="field">
+                <label>Project Members</label>
+                <div class="control is-combo">
+                  <div class="stacked-combo-box has-rounded-images">
+                    <div class="box-inner">
+                      <div class="combo-item">
+                        <img
+                          src="/images/avatars/placeholder.jpg"
+                          alt=""
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x150'
+                          "
+                        />
+                        <span class="selected-item">Add people</span>
+                      </div>
+                    </div>
+                    <div class="box-chevron">
+                      <i class="iconify" data-icon="feather:chevron-down"></i>
+                    </div>
+                    <div class="box-dropdown">
+                      <div class="dropdown-inner has-slimscroll">
+                        <ul>
+                          <li>
+                            <span class="item-icon">
+                              <img
+                                src="/images/avatars/photos/22.jpg"
+                                alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
+                              />
+                            </span>
+                            <span class="item-name">Jimmy H.</span>
+                            <span class="checkmark">
+                              <i class="iconify" data-icon="feather:check"></i>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="item-icon">
+                              <img
+                                src="/images/avatars/photos/8.jpg"
+                                alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
+                              />
+                            </span>
+                            <span class="item-name">Erik K.</span>
+                            <span class="checkmark">
+                              <i class="iconify" data-icon="feather:check"></i>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="item-icon">
+                              <img
+                                src="/images/avatars/photos/7.jpg"
+                                alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
+                              />
+                            </span>
+                            <span class="item-name">Alice C.</span>
+                            <span class="checkmark">
+                              <i class="iconify" data-icon="feather:check"></i>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="item-icon">
+                              <img
+                                src="/images/avatars/photos/25.jpg"
+                                alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
+                              />
+                            </span>
+                            <span class="item-name">Melany W.</span>
+                            <span class="checkmark">
+                              <i class="iconify" data-icon="feather:check"></i>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="item-icon">
+                              <img
+                                src="/images/avatars/photos/12.jpg"
+                                alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
+                              />
+                            </span>
+                            <span class="item-name">Joshua S.</span>
+                            <span class="checkmark">
+                              <i class="iconify" data-icon="feather:check"></i>
+                            </span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column is-6">
+              <div class="field">
+                <label>Project Type *</label>
+                <div class="control">
+                  <div class="h-select">
+                    <div class="select-box">
+                      <span>Select a type</span>
+                    </div>
+                    <div class="select-icon">
+                      <i class="iconify" data-icon="feather:chevron-down"></i>
+                    </div>
+                    <div class="select-drop has-slimscroll-sm">
+                      <div class="drop-inner">
+                        <div class="option-row">
+                          <input type="radio" name="project_type" />
+                          <div class="option-meta">
+                            <span>Web development</span>
+                          </div>
+                        </div>
+                        <div class="option-row">
+                          <input type="radio" name="project_type" />
+                          <div class="option-meta">
+                            <span>Design</span>
+                          </div>
+                        </div>
+                        <div class="option-row">
+                          <input type="radio" name="project_type" />
+                          <div class="option-meta">
+                            <span>Marketing</span>
+                          </div>
+                        </div>
+                        <div class="option-row">
+                          <input type="radio" name="project_type" />
+                          <div class="option-meta">
+                            <span>Software</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column is-6">
+              <div class="field">
+                <label>Project Budget *</label>
+                <div class="control">
+                  <input type="text" class="input" placeholder="Ex: $3,500" />
+                </div>
+              </div>
+            </div>
+            <div class="column is-6">
+              <div class="field">
+                <label>Project URL *</label>
+                <div class="control">
+                  <input
+                    type="text"
+                    class="input"
+                    placeholder="Ex: https://project.com"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="column is-12">
+              <div class="field">
+                <label>Description *</label>
+                <div class="control">
+                  <textarea
+                    class="textarea"
+                    rows="3"
+                    placeholder="Details about the project..."
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </template>
+      <template #action>
+        <V-Button color="primary" raised>Save Changes</V-Button>
+      </template>
+    </V-Modal>
+
+    <V-Modal
+      :open="bigFormOpen"
+      size="large"
+      title="Create Project"
+      actions="right"
+      @close="bigFormOpen = false"
+    >
+      <template #content>
+        <div class="modal-form">
+          <div class="columns is-multiline">
+            <div class="column is-12">
+              <div class="field">
+                <label>Project Name *</label>
+                <div class="control">
+                  <input
+                    type="text"
+                    class="input"
+                    placeholder="Ex: A cool project"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="column is-6">
+              <div class="field">
+                <label>Project Members</label>
+                <div class="control is-combo">
+                  <div class="stacked-combo-box has-rounded-images">
+                    <div class="box-inner">
+                      <div class="combo-item">
+                        <img
+                          src="/images/avatars/placeholder.jpg"
+                          alt=""
+                          @error="
+                            $event.target.src =
+                              'https://via.placeholder.com/150x150'
+                          "
+                        />
+                        <span class="selected-item">Add people</span>
+                      </div>
+                    </div>
+                    <div class="box-chevron">
+                      <i class="iconify" data-icon="feather:chevron-down"></i>
+                    </div>
+                    <div class="box-dropdown">
+                      <div class="dropdown-inner has-slimscroll">
+                        <ul>
+                          <li>
+                            <span class="item-icon">
+                              <img
+                                src="/images/avatars/photos/22.jpg"
+                                alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
+                              />
+                            </span>
+                            <span class="item-name">Jimmy H.</span>
+                            <span class="checkmark">
+                              <i class="iconify" data-icon="feather:check"></i>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="item-icon">
+                              <img
+                                src="/images/avatars/photos/8.jpg"
+                                alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
+                              />
+                            </span>
+                            <span class="item-name">Erik K.</span>
+                            <span class="checkmark">
+                              <i class="iconify" data-icon="feather:check"></i>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="item-icon">
+                              <img
+                                src="/images/avatars/photos/7.jpg"
+                                alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
+                              />
+                            </span>
+                            <span class="item-name">Alice C.</span>
+                            <span class="checkmark">
+                              <i class="iconify" data-icon="feather:check"></i>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="item-icon">
+                              <img
+                                src="/images/avatars/photos/25.jpg"
+                                alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
+                              />
+                            </span>
+                            <span class="item-name">Melany W.</span>
+                            <span class="checkmark">
+                              <i class="iconify" data-icon="feather:check"></i>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="item-icon">
+                              <img
+                                src="/images/avatars/photos/12.jpg"
+                                alt=""
+                                @error="
+                                  $event.target.src =
+                                    'https://via.placeholder.com/150x150'
+                                "
+                              />
+                            </span>
+                            <span class="item-name">Joshua S.</span>
+                            <span class="checkmark">
+                              <i class="iconify" data-icon="feather:check"></i>
+                            </span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column is-6">
+              <div class="field">
+                <label>Project Type *</label>
+                <div class="control">
+                  <div class="h-select">
+                    <div class="select-box">
+                      <span>Select a type</span>
+                    </div>
+                    <div class="select-icon">
+                      <i class="iconify" data-icon="feather:chevron-down"></i>
+                    </div>
+                    <div class="select-drop has-slimscroll-sm">
+                      <div class="drop-inner">
+                        <div class="option-row">
+                          <input type="radio" name="project_type" />
+                          <div class="option-meta">
+                            <span>Web development</span>
+                          </div>
+                        </div>
+                        <div class="option-row">
+                          <input type="radio" name="project_type" />
+                          <div class="option-meta">
+                            <span>Design</span>
+                          </div>
+                        </div>
+                        <div class="option-row">
+                          <input type="radio" name="project_type" />
+                          <div class="option-meta">
+                            <span>Marketing</span>
+                          </div>
+                        </div>
+                        <div class="option-row">
+                          <input type="radio" name="project_type" />
+                          <div class="option-meta">
+                            <span>Software</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column is-6">
+              <div class="field">
+                <label>Project Budget *</label>
+                <div class="control">
+                  <input type="text" class="input" placeholder="Ex: $3,500" />
+                </div>
+              </div>
+            </div>
+            <div class="column is-6">
+              <div class="field">
+                <label>Project URL *</label>
+                <div class="control">
+                  <input
+                    type="text"
+                    class="input"
+                    placeholder="Ex: https://project.com"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="column is-12">
+              <div class="field">
+                <label>Description *</label>
+                <div class="control">
+                  <textarea
+                    class="textarea"
+                    rows="3"
+                    placeholder="Details about the project..."
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </template>
+      <template #action>
+        <V-Button color="primary" raised>Save Changes</V-Button>
+      </template>
+    </V-Modal>
   </div>
 </template>

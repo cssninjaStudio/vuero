@@ -483,14 +483,14 @@ useHead({
     <div id="upload-modal" class="modal modal-sm">
       <div class="modal-background"></div>
       <div class="modal-content">
-        <div class="h-modal">
+        <div class="v-modal">
           <div class="modal-heading">
             <img src="/images/logos/logo/logo-light.svg" alt="" />
             <h2 class="subtitle is-6 is-light has-text-centered">
               Upload and crop your picture
             </h2>
           </div>
-          <div class="h-modal-card">
+          <div class="v-modal-card">
             <div class="upload-demo-wrap">
               <div id="upload-demo"></div>
             </div>

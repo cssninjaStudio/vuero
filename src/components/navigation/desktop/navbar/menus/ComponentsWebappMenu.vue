@@ -97,7 +97,7 @@ const activeTab = ref<'components' | 'plugins'>('components')
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'components-modal' }">
-                      <span>Modal Dialogs</span>
+                      <span>V-Modal</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>

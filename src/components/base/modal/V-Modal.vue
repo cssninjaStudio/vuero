@@ -6,17 +6,37 @@ const props = defineProps({
     type: Boolean,
     default: false,
   },
+  size: {
+    type: String,
+    default: '',
+  },
+  title: {
+    type: String,
+    default: 'Modal title',
+  },
+  actions: {
+    type: String,
+    default: '',
+  },
+  rounded: {
+    type: Boolean,
+    default: false,
+  },
 })
+
 const emit = defineEmit(['close'])
 </script>
 
 <template>
-  <div :class="[open && 'is-active']" class="modal v-modal">
+  <div
+    :class="[open && 'is-active', size && `is-${size}`]"
+    class="modal v-modal"
+  >
     <div class="modal-background v-modal-close" @click="emit('close')"></div>
     <div class="modal-content">
       <div class="modal-card">
         <header class="modal-card-head">
-          <h3>Did you know?</h3>
+          <h3>{{ props.title }}</h3>
           <button
             class="v-modal-close ml-auto"
             aria-label="close"
@@ -27,22 +47,24 @@ const emit = defineEmit(['close'])
         </header>
         <div class="modal-card-body">
           <div class="inner-content">
-            <div class="section-placeholder">
-              <div class="placeholder-content">
-                <img src="/images/placeholders/huro-1.svg" alt="" />
-                <h3 class="dark-inverted">Go Premium</h3>
-                <p>Unlock more features and business tools by going premium</p>
-              </div>
-            </div>
+            <slot name="content"></slot>
           </div>
         </div>
-        <div class="modal-card-foot is-start">
+        <div
+          class="modal-card-foot"
+          :class="[
+            actions === '' && '',
+            actions === 'center' && 'is-centered',
+            actions === 'right' && 'is-end',
+          ]"
+        >
           <a
-            class="button v-button is-rounded v-modal-close"
+            class="button v-button v-modal-close"
+            :class="[rounded && 'is-rounded']"
             @click="emit('close')"
             >Cancel</a
           >
-          <a class="button v-button is-primary is-raised is-rounded">Confirm</a>
+          <slot name="action"></slot>
         </div>
       </div>
     </div>

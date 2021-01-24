@@ -190,7 +190,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                       <i class="lnil lnil-scaling"></i>
                     </div>
                     <div class="meta">
-                      <span>Modal Dialogs</span>
+                      <span>V-Modal</span>
                     </div>
                   </RouterLink>
                   <RouterLink
