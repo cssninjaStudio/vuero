@@ -1,5 +1,22 @@
 <script setup lang="ts">
 import { expensesOptions } from '/@src/composition/state/charts/apexcharts/examples/expensesAreaChart'
+import { tns } from 'tiny-slider/src/tiny-slider'
+import { ref, onMounted } from 'vue'
+
+const sliderElement = ref<HTMLElement | null>(null)
+onMounted(() => {
+  if (sliderElement.value) {
+    const slider = tns({
+      container: sliderElement.value,
+      controls: false,
+      nav: true,
+      mouseDrag: true,
+      items: 1.9,
+      center: false,
+      loop: false,
+    })
+  }
+})
 </script>
 
 <template>
@@ -26,7 +43,7 @@ import { expensesOptions } from '/@src/composition/state/charts/apexcharts/examp
 
               <!--Carousel-->
               <div class="cards-carousel">
-                <div class="cards-carousel-inner">
+                <div ref="sliderElement" class="cards-carousel-inner">
                   <!--Carousel Item-->
                   <div class="cards-carousel-item">
                     <div class="ccard">
