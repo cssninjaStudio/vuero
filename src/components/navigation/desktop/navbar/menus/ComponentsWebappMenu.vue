@@ -132,7 +132,7 @@ const activeTab = ref<'components' | 'plugins'>('components')
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'components-progress' }">
-                      <span>Progress</span>
+                      <span>V-Progress</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>

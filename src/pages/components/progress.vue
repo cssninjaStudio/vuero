@@ -2,17 +2,20 @@
 import { useHead } from '@vueuse/head'
 import { onMounted } from 'vue'
 
+import useMakrdownToc from '/@src/composition/use/useMarkdownToc'
 import {
   activeSidebar,
   toggleSidebar,
 } from '/@src/composition/state/ui/activeSidebarState'
+
+const { markdownContainer, toc } = useMakrdownToc()
 
 onMounted(() => {
   activeSidebar.value = 'components'
 })
 
 useHead({
-  title: 'Components - Progress - Vuero',
+  title: 'Components - V-Progress - Vuero',
 })
 </script>
 
@@ -39,7 +42,7 @@ useHead({
       </div>
 
       <div class="title-wrap">
-        <h1 class="title is-4">Progress</h1>
+        <h1 class="title is-4">V-Progress</h1>
       </div>
 
       <Toolbar />
@@ -62,167 +65,29 @@ useHead({
           </li>
           <li>
             <a>
-              <span>Progress</span>
+              <span>V-Progress</span>
             </a>
           </li>
         </ul>
       </nav>
 
       <div class="columns">
-        <div class="column is-12">
-          <!--Progress Bars-->
-          <div class="demo-card">
-            <div class="demo-title">
-              <h3 class="title is-thin is-5">Progress Bars</h3>
-              <p>
-                Vuero provides a very versatile progress bar component that can
-                be used almost anywhere, across a wide variety of layouts. 3
-                size modifier classes are available:
-                <code>.is-small</code>, <code>.is-smaller</code> and
-                <code>.is-tiny</code>.
-              </p>
-              <a class="code-trigger">
-                <i class="iconify open" data-icon="feather:code"></i>
-                <i class="iconify close" data-icon="feather:x"></i>
-              </a>
-            </div>
-            <div class="card-inner">
-              <progress
-                class="progress is-primary is-tiny"
-                value="65"
-                max="100"
-              >
-                65%
-              </progress>
-              <progress
-                class="progress is-primary is-smaller"
-                value="90"
-                max="100"
-              >
-                90%
-              </progress>
-              <progress
-                class="progress is-primary is-small"
-                value="31"
-                max="100"
-              >
-                31%
-              </progress>
-              <progress class="progress is-primary" value="15" max="100">
-                15%
-              </progress>
+        <div
+          ref="markdownContainer"
+          :class="[toc.length > 0 ? 'is-9' : 'is-12']"
+          class="column"
+        >
+          <!--V-Progress-->
+          <VProgressBaseDocumentation />
 
-              <div class="highlight highlight-block">
-                <pre><code class="code-highlight">
-&#x3C;progress class=&#x22;progress is-primary is-tiny&#x22; value=&#x22;65&#x22; max=&#x22;100&#x22;&#x3E;65%&#x3C;/progress&#x3E;
-&#x3C;progress class=&#x22;progress is-primary is-smaller&#x22; value=&#x22;90&#x22; max=&#x22;100&#x22;&#x3E;90%&#x3C;/progress&#x3E;
-&#x3C;progress class=&#x22;progress is-primary is-small&#x22; value=&#x22;31&#x22; max=&#x22;100&#x22;&#x3E;31%&#x3C;/progress&#x3E;
-&#x3C;progress class=&#x22;progress is-primary&#x22; value=&#x22;15&#x22; max=&#x22;100&#x22;&#x3E;15%&#x3C;/progress&#x3E;
-</code></pre>
-              </div>
-            </div>
-          </div>
+          <!--V-Progress colors-->
+          <VProgressColorsDocumentation />
 
-          <!--Progress Bars-->
-          <div class="demo-card">
-            <div class="demo-title">
-              <h3 class="title is-thin is-5">Progress Bars</h3>
-              <p>
-                Vuero progress bars can also have different colors. Available
-                modifier classes are: <code>.is-primary</code>,
-                <code>.is-success</code> <code>.is-info</code>,
-                <code>.is-warning</code>, and <code>.is-danger</code>.
-              </p>
-              <a class="code-trigger">
-                <i class="iconify open" data-icon="feather:code"></i>
-                <i class="iconify close" data-icon="feather:x"></i>
-              </a>
-            </div>
-            <div class="card-inner">
-              <progress
-                class="progress is-primary is-tiny"
-                value="70"
-                max="100"
-              >
-                70%
-              </progress>
-              <progress
-                class="progress is-success is-tiny"
-                value="55"
-                max="100"
-              >
-                55%
-              </progress>
-              <progress class="progress is-info is-tiny" value="45" max="100">
-                45%
-              </progress>
-              <progress
-                class="progress is-warning is-tiny"
-                value="60"
-                max="100"
-              >
-                60%
-              </progress>
-              <progress class="progress is-danger is-tiny" value="38" max="100">
-                38%
-              </progress>
-
-              <div class="highlight highlight-block">
-                <pre><code class="code-highlight">
-&#x3C;progress class=&#x22;progress is-primary is-tiny&#x22; value=&#x22;70&#x22; max=&#x22;100&#x22;&#x3E;70%&#x3C;/progress&#x3E;
-&#x3C;progress class=&#x22;progress is-success is-tiny&#x22; value=&#x22;55&#x22; max=&#x22;100&#x22;&#x3E;55%&#x3C;/progress&#x3E;
-&#x3C;progress class=&#x22;progress is-info is-tiny&#x22; value=&#x22;45&#x22; max=&#x22;100&#x22;&#x3E;45%&#x3C;/progress&#x3E;
-&#x3C;progress class=&#x22;progress is-warning is-tiny&#x22; value=&#x22;60&#x22; max=&#x22;100&#x22;&#x3E;60%&#x3C;/progress&#x3E;
-&#x3C;progress class=&#x22;progress is-danger is-tiny&#x22; value=&#x22;38&#x22; max=&#x22;100&#x22;&#x3E;38%&#x3C;/progress&#x3E;
-</code></pre>
-              </div>
-            </div>
-          </div>
-
-          <!--Progress Bars-->
-          <div class="demo-card">
-            <div class="demo-title">
-              <h3 class="title is-thin is-5">Indeterminate Progress</h3>
-              <p>
-                In some particular use cases, you might want to show an
-                undetermined progress. If you want your progress bars to show an
-                undetermined state, you just need to omit the
-                <code>value=""</code> attribute. The CSS will take care of the
-                rest.
-              </p>
-              <a class="code-trigger">
-                <i class="iconify open" data-icon="feather:code"></i>
-                <i class="iconify close" data-icon="feather:x"></i>
-              </a>
-            </div>
-            <div class="card-inner">
-              <progress class="progress is-primary is-tiny" max="100">
-                70%
-              </progress>
-              <progress class="progress is-success is-tiny" max="100">
-                55%
-              </progress>
-              <progress class="progress is-info is-tiny" max="100">
-                45%
-              </progress>
-              <progress class="progress is-warning is-tiny" max="100">
-                60%
-              </progress>
-              <progress class="progress is-danger is-tiny" max="100">
-                38%
-              </progress>
-
-              <div class="highlight highlight-block">
-                <pre><code class="code-highlight">
-&#x3C;progress class=&#x22;progress is-primary is-tiny&#x22;  max=&#x22;100&#x22;&#x3E;70%&#x3C;/progress&#x3E;
-&#x3C;progress class=&#x22;progress is-success is-tiny&#x22; max=&#x22;100&#x22;&#x3E;55%&#x3C;/progress&#x3E;
-&#x3C;progress class=&#x22;progress is-info is-tiny&#x22; max=&#x22;100&#x22;&#x3E;45%&#x3C;/progress&#x3E;
-&#x3C;progress class=&#x22;progress is-warning is-tiny&#x22; max=&#x22;100&#x22;&#x3E;60%&#x3C;/progress&#x3E;
-&#x3C;progress class=&#x22;progress is-danger is-tiny&#x22; max=&#x22;100&#x22;&#x3E;38%&#x3C;/progress&#x3E;
-</code></pre>
-              </div>
-            </div>
-          </div>
+          <!--V-Progress undeterminate-->
+          <VProgressUndeterminateDocumentation />
+        </div>
+        <div v-if="toc.length" class="column is-3">
+          <DocumentationToc :toc="toc" />
         </div>
       </div>
     </div>
