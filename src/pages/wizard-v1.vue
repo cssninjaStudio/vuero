@@ -1,9 +1,14 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
-import { step } from 'billboard.js'
 import { computed, ref, watch } from 'vue'
+import { useRoute, useRouter } from 'vue-router'
 
-const currentStep = ref(1)
+const route = useRoute()
+const router = useRouter()
+
+const currentStep = ref<number>(
+  (route.query.step && parseInt(route.query.step as string)) || 1
+)
 
 const stepTitle = computed(() => {
   switch (currentStep.value) {
@@ -29,6 +34,17 @@ const stepTitle = computed(() => {
 
 useHead({
   title: 'Wizard V1 - Vuero',
+})
+watch(currentStep, () => {
+  router.push({
+    query: {
+      step: currentStep.value,
+    },
+  })
+})
+watch(route, () => {
+  currentStep.value =
+    (route.query.step && parseInt(route.query.step as string)) || 1
 })
 </script>
 
