@@ -1,5 +1,31 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
+import { step } from 'billboard.js'
+import { computed, ref, watch } from 'vue'
+
+const currentStep = ref(1)
+
+const stepTitle = computed(() => {
+  switch (currentStep.value) {
+    case 2:
+      return 'Project Info'
+    case 3:
+      return 'Project Details'
+    case 4:
+      return 'Project Files'
+    case 5:
+      return 'Team Members'
+    case 6:
+      return 'Project Tools'
+    case 7:
+      return 'Preview'
+    case 8:
+      return 'Finish'
+    case 1:
+    default:
+      return 'Project Type'
+  }
+})
 
 useHead({
   title: 'Wizard V1 - Vuero',
@@ -9,13 +35,13 @@ useHead({
 <template>
   <MinimalLayout>
     <!--Wizard Navbar-->
-    <WizardV1Navigation />
+    <WizardV1Navigation v-model:step="currentStep" :title="stepTitle" />
 
     <!--Wizard Progress Bar-->
     <progress
       id="wizard-progress"
       class="progress is-smaller is-primary wizard-progress"
-      value="10"
+      :value="(currentStep / 8) * 100"
       max="100"
     ></progress>
 
@@ -23,78 +49,113 @@ useHead({
     <div class="wizard-v1-wrapper">
       <div
         id="wizard-step-0"
-        class="inner-wrapper is-active"
-        data-step-title="Project Type"
+        class="inner-wrapper"
+        :class="[currentStep === 1 && 'is-active']"
       >
         <!--src/partials/pages/wizard/wizard-v1/-->
-        <WizardV1Step0 />
+        <WizardV1Step0 @next="currentStep = 2" />
       </div>
 
       <div
         id="wizard-step-1"
         class="inner-wrapper"
-        data-step-title="Project Info"
+        :class="[currentStep === 2 && 'is-active']"
       >
         <!--src/partials/pages/wizard/wizard-v1/-->
-        <WizardV1Step1 />
+        <WizardV1Step1 @next="currentStep = 3" @prev="currentStep = 1" />
       </div>
 
       <div
         id="wizard-step-2"
         class="inner-wrapper"
-        data-step-title="Project Details"
+        :class="[currentStep === 3 && 'is-active']"
       >
         <!--src/partials/pages/wizard/wizard-v1/-->
-        <WizardV1Step2 />
+        <WizardV1Step2 @next="currentStep = 4" @prev="currentStep = 2" />
       </div>
 
       <div
         id="wizard-step-3"
         class="inner-wrapper"
-        data-step-title="Project Files"
+        :class="[currentStep === 4 && 'is-active']"
       >
         <!--src/partials/pages/wizard/wizard-v1/-->
-        <WizardV1Step3 />
+        <WizardV1Step3 @next="currentStep = 5" @prev="currentStep = 3" />
       </div>
 
       <div
         id="wizard-step-4"
         class="inner-wrapper"
-        data-step-title="Team Members"
+        :class="[currentStep === 5 && 'is-active']"
       >
         <!--src/partials/pages/wizard/wizard-v1/-->
-        <WizardV1Step4 />
+        <WizardV1Step4 @next="currentStep = 6" @prev="currentStep = 4" />
       </div>
 
       <div
         id="wizard-step-5"
         class="inner-wrapper"
-        data-step-title="Project Tools"
+        :class="[currentStep === 6 && 'is-active']"
       >
         <!--src/partials/pages/wizard/wizard-v1/-->
-        <WizardV1Step5 />
+        <WizardV1Step5 @next="currentStep = 7" @prev="currentStep = 5" />
       </div>
 
-      <div id="wizard-step-6" class="inner-wrapper" data-step-title="Preview">
+      <div
+        id="wizard-step-6"
+        :class="[currentStep === 7 && 'is-active']"
+        class="inner-wrapper"
+        data-step-title="Preview"
+      >
         <!--src/partials/pages/wizard/wizard-v1/-->
-        <WizardV1Step6 />
+        <WizardV1Step6 @next="currentStep = 8" @prev="currentStep = 6" />
       </div>
 
-      <div id="wizard-step-7" class="inner-wrapper" data-step-title="Finish">
+      <div
+        id="wizard-step-7"
+        :class="[currentStep === 8 && 'is-active']"
+        class="inner-wrapper"
+        data-step-title="Finish"
+      >
         <!--src/partials/pages/wizard/wizard-v1/-->
         <WizardV1Step7 />
       </div>
 
       <!--Wizard Navigation Buttons-->
-      <div class="wizard-buttons">
+      <div
+        class="wizard-buttons"
+        :class="[currentStep > 1 && currentStep < 8 && 'is-active']"
+      >
         <div class="wizard-buttons-inner">
           <button
-            class="button v-button is-light is-bold wizard-button-previous"
+            :class="[
+              currentStep === 2 && 'is-light',
+              currentStep > 2 && 'is-primary is-elevated',
+            ]"
+            class="button v-button is-bold wizard-button-previous"
+            @click="
+              () => {
+                if (currentStep > 2) {
+                  currentStep--
+                }
+              }
+            "
           >
             Previous
           </button>
           <button
-            class="button v-button is-primary is-bold is-elevated wizard-button-next"
+            :class="[
+              currentStep === 8 && 'is-light',
+              currentStep < 8 && 'is-primary is-elevated',
+            ]"
+            class="button v-button is-bold wizard-button-next"
+            @click="
+              () => {
+                if (currentStep <= 8) {
+                  currentStep++
+                }
+              }
+            "
           >
             Next
           </button>

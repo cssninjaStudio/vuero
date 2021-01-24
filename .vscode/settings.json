@@ -5,7 +5,7 @@
   "editor.formatOnSave": false,
   "vetur.validation.template": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": false
+    "source.fixAll.eslint": true
   },
   "eslint.alwaysShowStatus": true,
   // "eslint.autoFixOnSave": true,

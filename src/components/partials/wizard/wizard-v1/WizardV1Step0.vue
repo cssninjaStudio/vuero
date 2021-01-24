@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import { defineEmit } from 'vue'
+
+const emit = defineEmit(['next'])
+</script>
+
 <template>
   <div class="step-content">
     <div class="step-title">
@@ -15,6 +21,7 @@
               <a
                 href="#"
                 class="button v-button is-primary is-rounded is-elevated is-bold type-select-button"
+                @click="() => emit('next')"
                 >Continue</a
               >
             </div>
@@ -32,6 +39,7 @@
               <a
                 href="#"
                 class="button v-button is-primary is-rounded is-elevated is-bold type-select-button"
+                @click="() => emit('next')"
                 >Continue</a
               >
             </div>
@@ -49,6 +57,7 @@
               <a
                 href="#"
                 class="button v-button is-primary is-rounded is-elevated is-bold type-select-button"
+                @click="() => emit('next')"
                 >Continue</a
               >
             </div>

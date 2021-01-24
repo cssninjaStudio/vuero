@@ -1,10 +1,25 @@
 <script setup lang="ts">
+import { defineEmit, defineProps } from 'vue'
 import { isDark } from '/@src/composition/state/ui/darkModeState.ts'
 import useDropdown from '/@src/composition/use/useDropdown'
+
+const props = defineProps({
+  step: {
+    type: Number,
+    default: 1,
+  },
+  title: {
+    type: String,
+    default: '',
+  },
+})
+
+const emit = defineEmit(['update:step'])
 
 const {
   dropdownElement: dropdownElement1,
   open: open1,
+  close: close1,
   isOpen: isOpen1,
 } = useDropdown()
 
@@ -13,6 +28,13 @@ const {
   open: open2,
   isOpen: isOpen2,
 } = useDropdown()
+
+const setStep = (target: number) => {
+  if (props.step >= target) {
+    emit('update:step', target)
+    close1()
+  }
+}
 </script>
 
 <template>
@@ -23,7 +45,9 @@ const {
     </RouterLink>
 
     <div class="navbar-item is-wizard-title">
-      <span class="title-wrap">Step 1: <span>Project Type</span></span>
+      <span class="title-wrap"
+        >Step {{ step }}: <span>{{ title }}</span></span
+      >
     </div>
 
     <div
@@ -37,51 +61,58 @@ const {
       <div id="wizard-navigation-dropdown" class="dropdown-menu" role="menu">
         <div class="dropdown-content">
           <a
-            href="javascript:void(0);"
+            :class="[step < 1 && 'is-disabled']"
             class="dropdown-item kill-drop"
             data-dropdown-step="0"
+            @click="setStep(1)"
           >
             Step 1: Project Type
           </a>
           <a
-            href="javascript:void(0);"
-            class="dropdown-item kill-drop is-disabled"
+            :class="[step < 2 && 'is-disabled']"
+            class="dropdown-item kill-drop"
             data-dropdown-step="1"
+            @click="setStep(2)"
           >
             Step 2: Project Info
           </a>
           <a
-            href="javascript:void(0);"
-            class="dropdown-item kill-drop is-disabled"
+            :class="[step < 3 && 'is-disabled']"
+            class="dropdown-item kill-drop"
             data-dropdown-step="2"
+            @click="setStep(3)"
           >
             Step 3: Project Details
           </a>
           <a
-            href="javascript:void(0);"
-            class="dropdown-item kill-drop is-disabled"
+            :class="[step < 4 && 'is-disabled']"
+            class="dropdown-item kill-drop"
             data-dropdown-step="3"
+            @click="setStep(4)"
           >
             Step 4: Project Files
           </a>
           <a
-            href="javascript:void(0);"
-            class="dropdown-item kill-drop is-disabled"
+            :class="[step < 5 && 'is-disabled']"
+            class="dropdown-item kill-drop"
             data-dropdown-step="4"
+            @click="setStep(5)"
           >
             Step 5: Team Members
           </a>
           <a
-            href="javascript:void(0);"
-            class="dropdown-item kill-drop is-disabled"
+            :class="[step < 6 && 'is-disabled']"
+            class="dropdown-item kill-drop"
             data-dropdown-step="5"
+            @click="setStep(6)"
           >
             Step 6: Project Tools
           </a>
           <a
-            href="javascript:void(0);"
-            class="dropdown-item kill-drop is-disabled"
+            :class="[step < 7 && 'is-disabled']"
+            class="dropdown-item kill-drop"
             data-dropdown-step="6"
+            @click="setStep(7)"
           >
             Step 7: Preview
           </a>
