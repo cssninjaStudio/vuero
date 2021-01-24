@@ -434,17 +434,27 @@
             .cards-carousel {
               max-width: 520px;
 
-              .slick-dots {
+              .tns-nav {
                 text-align: right;
                 position: absolute;
-                top: -45px;
-                right: 0;
+                top: 0;
+                right: 15px;
                 height: auto;
                 max-height: 30px;
                 width: auto;
 
-                li {
-                  margin: 0;
+                [aria-controls] {
+                  width: 9px;
+                  height: 9px;
+                  padding: 0;
+                  margin: 0 5px;
+                  border-radius: 50%;
+                  background: #ddd;
+                  border: 0;
+
+                  &.tns-nav-active {
+                    background: $primary;
+                  }
                 }
               }
 
@@ -454,8 +464,9 @@
                 .cards-carousel-item {
                   margin: 0 1.5rem 1.5rem 0;
                   outline: none !important;
+                  user-select: none;
 
-                  &.slick-current {
+                  &.tns-slide-active {
                     .ccard {
                       background-image: linear-gradient(
                         -225deg,
@@ -746,9 +757,15 @@
             }
 
             .cards-carousel {
+              .tns-nav {
+                [aria-controls] {
+                  background: lighten($dark-sidebar, 12%);
+                }
+              }
+
               .cards-carousel-inner {
                 .cards-carousel-item {
-                  &.slick-current {
+                  &.tns-slide-active {
                     .ccard {
                       background-image: linear-gradient(
                         -225deg,

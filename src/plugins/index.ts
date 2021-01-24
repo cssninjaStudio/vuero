@@ -7,6 +7,7 @@ import installDirectives from '/@src/directives'
 import '@purge-icons/generated'
 import './icons'
 import './simplebar'
+import './tinyslider'
 import './scss'
 
 export default (app: App) => {

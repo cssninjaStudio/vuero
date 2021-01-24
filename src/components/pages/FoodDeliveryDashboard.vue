@@ -1,3 +1,53 @@
+<script setup lang="ts">
+import type { TinySliderInstance } from 'tiny-slider/src/tiny-slider'
+import { tns } from 'tiny-slider/src/tiny-slider'
+import { ref, onMounted, onUnmounted } from 'vue'
+
+let slider: TinySliderInstance
+const sliderElement = ref<HTMLElement | null>(null)
+const nextButtonElement = ref<HTMLElement | null>(null)
+const prevButtonElement = ref<HTMLElement | null>(null)
+const onIndexChanged = (info: any) => {
+  console.log('onTransitionEnd', info)
+  // direct access to info object
+  const indexPrev = info.indexCached
+  const indexCurrent = info.index
+
+  // update style based on index
+  info.slideItems[indexPrev].classList.remove('active')
+  info.slideItems[indexCurrent].classList.add('active')
+}
+onMounted(() => {
+  if (
+    sliderElement.value &&
+    nextButtonElement.value &&
+    prevButtonElement.value
+  ) {
+    slider = tns({
+      container: sliderElement.value,
+      controls: true,
+      nav: false,
+      mouseDrag: true,
+      nextButton: nextButtonElement.value,
+      prevButton: prevButtonElement.value,
+      fixedWidth: 100,
+      swipeAngle: false,
+      items: 1,
+      center: false,
+      loop: true,
+    })
+
+    slider.events.on('indexChanged', onIndexChanged)
+  }
+})
+
+onUnmounted(() => {
+  if (slider) {
+    slider.events.off('indexChanged', onIndexChanged)
+    slider.destroy()
+  }
+})
+</script>
 <template>
   <!--Food Delivery Dashboard-->
   <div class="food-delivery-dashboard">
@@ -28,7 +78,19 @@
           </div>
 
           <div class="food-pills">
-            <div class="food-pills-inner pill-carousel">
+            <div
+              ref="prevButtonElement"
+              class="slick-custom is-prev slick-arrow"
+            >
+              <i class="fas fa-angle-left"></i>
+            </div>
+            <div
+              ref="nextButtonElement"
+              class="slick-custom is-next slick-arrow"
+            >
+              <i class="fas fa-angle-right"></i>
+            </div>
+            <div ref="sliderElement" class="food-pills-inner pill-carousel">
               <!--Pill-->
               <div class="food-pill">
                 <div class="food-pill-icon">
@@ -1383,10 +1445,11 @@
 
         .food-pills-inner {
           .food-pill {
-            display: flex;
-            flex-direction: column;
+            // display: flex;
+            // flex-direction: column;
             text-align: center;
             width: 80px;
+            max-width: 80px;
             height: 170px;
             background: $white;
             border: 1px solid darken($fade-grey, 3%);
@@ -1435,12 +1498,12 @@
           }
         }
 
-        .slick-slide {
+        .tns-slider {
           &:focus {
             outline: none !important;
           }
 
-          &.slick-current {
+          .active {
             background: $primary;
             border-color: $primary;
 
