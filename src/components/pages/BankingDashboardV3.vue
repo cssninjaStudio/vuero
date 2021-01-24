@@ -17,11 +17,11 @@ import { popularityGaugeOptions } from '/@src/composition/state/charts/apexchart
       </div>
       <div class="right">
         <div class="buttons">
-          <button class="button h-action">Hour</button>
-          <button class="button h-action">Day</button>
-          <button class="button h-action is-active">Week</button>
-          <button class="button h-action">Month</button>
-          <button class="button h-action">Year</button>
+          <button class="button v-action">Hour</button>
+          <button class="button v-action">Day</button>
+          <button class="button v-action is-active">Week</button>
+          <button class="button v-action">Month</button>
+          <button class="button v-action">Year</button>
         </div>
       </div>
     </div>
@@ -117,10 +117,10 @@ import { popularityGaugeOptions } from '/@src/composition/state/charts/apexchart
             </p>
           </div>
           <div class="button-wrap">
-            <button class="button h-button is-primary is-elevated">
+            <button class="button v-button is-primary is-elevated">
               Buy BTC
             </button>
-            <button class="button h-button is-dark-outlined">Compare</button>
+            <button class="button v-button is-dark-outlined">Compare</button>
           </div>
         </div>
 

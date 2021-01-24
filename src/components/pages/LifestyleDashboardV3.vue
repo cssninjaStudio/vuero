@@ -232,7 +232,7 @@ import { progressChartOptions } from '/@src/composition/state/charts/apexcharts/
           <div class="field">
             <div class="control">
               <input type="text" class="input" placeholder="Search..." />
-              <button class="search-button">
+              <button class="searcv-button">
                 <i class="iconify" data-icon="feather:search"></i>
               </button>
             </div>

@@ -8,7 +8,7 @@ You can easily align buttons and group them together by wrapping them inside a `
 <template>
   <div class="buttons">
     <!-- button 1 -->
-    <button class="button h-button">
+    <button class="button v-button">
       <span class="icon">
         <i class="iconify" data-icon="feather:eye"></i>
       </span>
@@ -16,7 +16,7 @@ You can easily align buttons and group them together by wrapping them inside a `
     </button>
 
     <!-- button 2 -->
-    <button class="button h-button">
+    <button class="button v-button">
       <span class="icon">
         <i class="iconify" data-icon="feather:edit-2"></i>
       </span>
@@ -24,7 +24,7 @@ You can easily align buttons and group them together by wrapping them inside a `
     </button>
 
     <!-- button 3 -->
-    <button class="button h-button is-success is-elevated">
+    <button class="button v-button is-success is-elevated">
       <span class="icon">
         <i class="fas fa-check"></i>
       </span>
@@ -39,19 +39,19 @@ You can easily align buttons and group them together by wrapping them inside a `
 <!--example-->
 
 <div class="buttons">
-  <button class="button h-button" @click="clickMyText">
+  <button class="button v-button" @click="clickMyText">
     <span class="icon">
       <i class="iconify" data-icon="feather:eye"></i>
     </span>
     <span class="text">View</span>
   </button>
-  <button class="button h-button" @click="clickMyText">
+  <button class="button v-button" @click="clickMyText">
     <span class="icon">
       <i class="iconify" data-icon="feather:edit-2"></i>
     </span>
     <span class="text">Edit</span>
   </button>
-  <button class="button h-button is-success is-elevated" @click="clickMyText">
+  <button class="button v-button is-success is-elevated" @click="clickMyText">
     <span class="icon">
       <i class="fas fa-check"></i>
     </span>

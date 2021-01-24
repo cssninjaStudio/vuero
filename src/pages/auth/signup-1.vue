@@ -173,7 +173,7 @@ useHead({
                       <button
                         id="confirm-step-1"
                         type="button"
-                        class="button h-button is-big is-rounded is-primary is-bold is-fullwidth"
+                        class="button v-button is-big is-rounded is-primary is-bold is-fullwidth"
                       >
                         Continue
                       </button>
@@ -370,7 +370,7 @@ useHead({
                   <button
                     id="confirm-step-2"
                     type="button"
-                    class="button h-button is-primary is-big is-rounded is-lower"
+                    class="button v-button is-primary is-big is-rounded is-lower"
                   >
                     Continue
                   </button>
@@ -466,7 +466,7 @@ useHead({
                     <button
                       id="finish-signup"
                       type="button"
-                      class="button h-button is-big is-rounded is-primary is-lower"
+                      class="button v-button is-big is-rounded is-primary is-lower"
                     >
                       Done
                     </button>
@@ -498,12 +498,12 @@ useHead({
             <small class="help-text">Use the slider to resize the image</small>
 
             <div class="actions">
-              <div class="button h-button is-big is-outlined upload-button">
+              <div class="button v-button is-big is-outlined upload-button">
                 <span>Upload</span>
                 <input id="upload" type="file" accept="image/*" />
               </div>
               <button
-                class="button h-button is-big is-outlined upload-result is-disabled"
+                class="button v-button is-big is-outlined upload-result is-disabled"
               >
                 Confirm
               </button>

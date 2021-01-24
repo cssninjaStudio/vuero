@@ -230,7 +230,7 @@
           <div class="field">
             <div class="control">
               <input type="text" class="input" placeholder="Search..." />
-              <button class="search-button">
+              <button class="searcv-button">
                 <i class="iconify" data-icon="feather:search"></i>
               </button>
             </div>
@@ -328,7 +328,7 @@
         </div>
 
         <div class="filters-card">
-          <a class="button h-button is-primary is-fullwidth is-bold is-raised"
+          <a class="button v-button is-primary is-fullwidth is-bold is-raised"
             >Add To Favorites</a
           >
 

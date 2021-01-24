@@ -259,7 +259,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                       <span>Software Engineer</span>
                     </div>
                     <div class="flex-end">
-                      <button class="button h-button is-dark-outlined">
+                      <button class="button v-button is-dark-outlined">
                         Profile
                       </button>
                     </div>
@@ -294,7 +294,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                       <span>Project Manager</span>
                     </div>
                     <div class="flex-end">
-                      <button class="button h-button is-dark-outlined">
+                      <button class="button v-button is-dark-outlined">
                         Profile
                       </button>
                     </div>
@@ -329,7 +329,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                       <span>Web Developer</span>
                     </div>
                     <div class="flex-end">
-                      <button class="button h-button is-dark-outlined">
+                      <button class="button v-button is-dark-outlined">
                         Profile
                       </button>
                     </div>
@@ -364,7 +364,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                       <span>Project Manager</span>
                     </div>
                     <div class="flex-end">
-                      <button class="button h-button is-dark-outlined">
+                      <button class="button v-button is-dark-outlined">
                         Profile
                       </button>
                     </div>
@@ -399,7 +399,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                       <span>Product Manager</span>
                     </div>
                     <div class="flex-end">
-                      <button class="button h-button is-dark-outlined">
+                      <button class="button v-button is-dark-outlined">
                         Profile
                       </button>
                     </div>
@@ -434,7 +434,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                       <span>Business Analyst</span>
                     </div>
                     <div class="flex-end">
-                      <button class="button h-button is-dark-outlined">
+                      <button class="button v-button is-dark-outlined">
                         Profile
                       </button>
                     </div>
@@ -469,7 +469,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                       <span>Sales Manager</span>
                     </div>
                     <div class="flex-end">
-                      <button class="button h-button is-dark-outlined">
+                      <button class="button v-button is-dark-outlined">
                         Profile
                       </button>
                     </div>
@@ -507,7 +507,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                       <span>August 2020</span>
                     </div>
                     <div class="flex-end">
-                      <button class="button h-button is-dark-outlined">
+                      <button class="button v-button is-dark-outlined">
                         Details
                       </button>
                     </div>
@@ -532,7 +532,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                       <span>October 2020</span>
                     </div>
                     <div class="flex-end">
-                      <button class="button h-button is-dark-outlined">
+                      <button class="button v-button is-dark-outlined">
                         Details
                       </button>
                     </div>
@@ -557,7 +557,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                       <span>XLS file</span>
                     </div>
                     <div class="flex-end">
-                      <button class="button h-button is-dark-outlined">
+                      <button class="button v-button is-dark-outlined">
                         Details
                       </button>
                     </div>
@@ -582,7 +582,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                       <span>September 2020</span>
                     </div>
                     <div class="flex-end">
-                      <button class="button h-button is-dark-outlined">
+                      <button class="button v-button is-dark-outlined">
                         Details
                       </button>
                     </div>
@@ -607,7 +607,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                       <span>October 2020</span>
                     </div>
                     <div class="flex-end">
-                      <button class="button h-button is-dark-outlined">
+                      <button class="button v-button is-dark-outlined">
                         Details
                       </button>
                     </div>
@@ -632,7 +632,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                       <span>DOCX file</span>
                     </div>
                     <div class="flex-end">
-                      <button class="button h-button is-dark-outlined">
+                      <button class="button v-button is-dark-outlined">
                         Details
                       </button>
                     </div>
@@ -657,7 +657,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                       <span>PDF file</span>
                     </div>
                     <div class="flex-end">
-                      <button class="button h-button is-dark-outlined">
+                      <button class="button v-button is-dark-outlined">
                         Details
                       </button>
                     </div>
@@ -682,7 +682,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                       <span>October 2020</span>
                     </div>
                     <div class="flex-end">
-                      <button class="button h-button is-dark-outlined">
+                      <button class="button v-button is-dark-outlined">
                         Details
                       </button>
                     </div>
@@ -707,7 +707,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                       <span>AI file</span>
                     </div>
                     <div class="flex-end">
-                      <button class="button h-button is-dark-outlined">
+                      <button class="button v-button is-dark-outlined">
                         Details
                       </button>
                     </div>
@@ -754,7 +754,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                       <span>Software Engineer</span>
                     </div>
                     <div class="flex-end">
-                      <button class="button h-button is-dark-outlined">
+                      <button class="button v-button is-dark-outlined">
                         Profile
                       </button>
                     </div>
@@ -789,7 +789,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                       <span>Project Manager</span>
                     </div>
                     <div class="flex-end">
-                      <button class="button h-button is-dark-outlined">
+                      <button class="button v-button is-dark-outlined">
                         Profile
                       </button>
                     </div>
@@ -824,7 +824,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                       <span>Web Developer</span>
                     </div>
                     <div class="flex-end">
-                      <button class="button h-button is-dark-outlined">
+                      <button class="button v-button is-dark-outlined">
                         Profile
                       </button>
                     </div>
@@ -859,7 +859,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                       <span>Project Manager</span>
                     </div>
                     <div class="flex-end">
-                      <button class="button h-button is-dark-outlined">
+                      <button class="button v-button is-dark-outlined">
                         Profile
                       </button>
                     </div>
@@ -894,7 +894,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                       <span>Product Manager</span>
                     </div>
                     <div class="flex-end">
-                      <button class="button h-button is-dark-outlined">
+                      <button class="button v-button is-dark-outlined">
                         Profile
                       </button>
                     </div>
@@ -929,7 +929,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                       <span>Business Analyst</span>
                     </div>
                     <div class="flex-end">
-                      <button class="button h-button is-dark-outlined">
+                      <button class="button v-button is-dark-outlined">
                         Profile
                       </button>
                     </div>
@@ -964,7 +964,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                       <span>Sales Manager</span>
                     </div>
                     <div class="flex-end">
-                      <button class="button h-button is-dark-outlined">
+                      <button class="button v-button is-dark-outlined">
                         Profile
                       </button>
                     </div>
@@ -1001,7 +1001,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                       <span>August 2020</span>
                     </div>
                     <div class="flex-end">
-                      <button class="button h-button is-dark-outlined">
+                      <button class="button v-button is-dark-outlined">
                         Details
                       </button>
                     </div>
@@ -1026,7 +1026,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                       <span>October 2020</span>
                     </div>
                     <div class="flex-end">
-                      <button class="button h-button is-dark-outlined">
+                      <button class="button v-button is-dark-outlined">
                         Details
                       </button>
                     </div>
@@ -1051,7 +1051,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                       <span>XLS file</span>
                     </div>
                     <div class="flex-end">
-                      <button class="button h-button is-dark-outlined">
+                      <button class="button v-button is-dark-outlined">
                         Details
                       </button>
                     </div>
@@ -1076,7 +1076,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                       <span>September 2020</span>
                     </div>
                     <div class="flex-end">
-                      <button class="button h-button is-dark-outlined">
+                      <button class="button v-button is-dark-outlined">
                         Details
                       </button>
                     </div>
@@ -1101,7 +1101,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                       <span>October 2020</span>
                     </div>
                     <div class="flex-end">
-                      <button class="button h-button is-dark-outlined">
+                      <button class="button v-button is-dark-outlined">
                         Details
                       </button>
                     </div>
@@ -1126,7 +1126,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                       <span>DOCX file</span>
                     </div>
                     <div class="flex-end">
-                      <button class="button h-button is-dark-outlined">
+                      <button class="button v-button is-dark-outlined">
                         Details
                       </button>
                     </div>
@@ -1151,7 +1151,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                       <span>PDF file</span>
                     </div>
                     <div class="flex-end">
-                      <button class="button h-button is-dark-outlined">
+                      <button class="button v-button is-dark-outlined">
                         Details
                       </button>
                     </div>
@@ -1176,7 +1176,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                       <span>October 2020</span>
                     </div>
                     <div class="flex-end">
-                      <button class="button h-button is-dark-outlined">
+                      <button class="button v-button is-dark-outlined">
                         Details
                       </button>
                     </div>
@@ -1201,7 +1201,7 @@ const activeTab = ref<'all' | 'people' | 'records'>('all')
                       <span>AI file</span>
                     </div>
                     <div class="flex-end">
-                      <button class="button h-button is-dark-outlined">
+                      <button class="button v-button is-dark-outlined">
                         Details
                       </button>
                     </div>

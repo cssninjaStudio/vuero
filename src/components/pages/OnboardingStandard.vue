@@ -27,7 +27,7 @@
           </p>
           <div class="button-wrap">
             <a
-              class="button h-button is-primary is-outlined is-rounded is-raised"
+              class="button v-button is-primary is-outlined is-rounded is-raised"
               >Configure Shop</a
             >
           </div>
@@ -52,7 +52,7 @@
           </p>
           <div class="button-wrap">
             <a
-              class="button h-button is-primary is-outlined is-rounded is-raised"
+              class="button v-button is-primary is-outlined is-rounded is-raised"
               >Manage Products</a
             >
           </div>
@@ -77,7 +77,7 @@
           </p>
           <div class="button-wrap">
             <a
-              class="button h-button is-primary is-outlined is-rounded is-raised"
+              class="button v-button is-primary is-outlined is-rounded is-raised"
               >Setup Payments</a
             >
           </div>

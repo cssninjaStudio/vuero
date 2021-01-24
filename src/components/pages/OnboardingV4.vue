@@ -29,7 +29,7 @@
               dicis; Ita enim vivunt.
             </p>
             <div class="button-wrap">
-              <a class="button h-button is-primary is-rounded is-elevated"
+              <a class="button v-button is-primary is-rounded is-elevated"
                 >Explore</a
               >
             </div>
@@ -54,7 +54,7 @@
               dicis; Ita enim vivunt.
             </p>
             <div class="button-wrap">
-              <a class="button h-button is-primary is-rounded is-elevated"
+              <a class="button v-button is-primary is-rounded is-elevated"
                 >Book Now</a
               >
             </div>
@@ -79,7 +79,7 @@
               dicis; Ita enim vivunt.
             </p>
             <div class="button-wrap">
-              <a class="button h-button is-primary is-rounded is-elevated"
+              <a class="button v-button is-primary is-rounded is-elevated"
                 >Browse</a
               >
             </div>

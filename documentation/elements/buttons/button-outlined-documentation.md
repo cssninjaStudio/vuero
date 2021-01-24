@@ -7,11 +7,11 @@ Vuero Buttons can be outlined. Simply use the same markup that we have for solid
 ```vue
 <template>
   <div class="buttons">
-    <a class="button h-button is-primary is-outlined">Primary</a>
-    <a class="button h-button is-info is-outlined">Info</a>
-    <a class="button h-button is-success is-outlined">Success</a>
-    <a class="button h-button is-warning is-outlined">Warning</a>
-    <a class="button h-button is-danger is-outlined">Danger</a>
+    <a class="button v-button is-primary is-outlined">Primary</a>
+    <a class="button v-button is-info is-outlined">Info</a>
+    <a class="button v-button is-success is-outlined">Success</a>
+    <a class="button v-button is-warning is-outlined">Warning</a>
+    <a class="button v-button is-danger is-outlined">Danger</a>
   </div>
 </template>
 ```
@@ -21,11 +21,11 @@ Vuero Buttons can be outlined. Simply use the same markup that we have for solid
 <!--example-->
 
 <div class="buttons">
-  <a class="button h-button is-primary is-outlined" @click="clickMe">Primary</a>
-  <a class="button h-button is-info is-outlined" @click="clickMe">Info</a>
-  <a class="button h-button is-success is-outlined" @click="clickMe">Success</a>
-  <a class="button h-button is-warning is-outlined" @click="clickMe">Warning</a>
-  <a class="button h-button is-danger is-outlined" @click="clickMe">Danger</a>
+  <a class="button v-button is-primary is-outlined" @click="clickMe">Primary</a>
+  <a class="button v-button is-info is-outlined" @click="clickMe">Info</a>
+  <a class="button v-button is-success is-outlined" @click="clickMe">Success</a>
+  <a class="button v-button is-warning is-outlined" @click="clickMe">Warning</a>
+  <a class="button v-button is-danger is-outlined" @click="clickMe">Danger</a>
 </div>
 
 <!--/example-->

@@ -86,7 +86,7 @@
         </div>
       </div>
 
-      <a class="button h-button is-primary is-raised is-bold">
+      <a class="button v-button is-primary is-raised is-bold">
         <span>New Task</span>
       </a>
     </div>
@@ -371,7 +371,7 @@
               <span>There are no tasks marked as ready for now.</span>
               <a
                 href="#"
-                class="button h-button is-outlined is-rounded is-fullwidth"
+                class="button v-button is-outlined is-rounded is-fullwidth"
                 >Create Task</a
               >
             </p>

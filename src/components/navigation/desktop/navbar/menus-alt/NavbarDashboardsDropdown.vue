@@ -11,7 +11,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
   >
     <div class="is-trigger" aria-haspopup="true" aria-controls="dropdown-menu">
       <button
-        class="button h-button is-rounded"
+        class="button v-button is-rounded"
         aria-haspopup="true"
         aria-controls="dropdown-menu"
         @click="open"

@@ -2,7 +2,11 @@
 import { defineProps } from 'vue'
 
 const props = defineProps({
-  rounded: {
+  link: {
+    type: String,
+    default: 'index',
+  },
+  circle: {
     type: Boolean,
     default: false,
   },
@@ -30,10 +34,6 @@ const props = defineProps({
     type: Boolean,
     default: false,
   },
-  disabled: {
-    type: Boolean,
-    default: false,
-  },
   color: {
     type: String,
     default: '',
@@ -50,10 +50,11 @@ const props = defineProps({
 </script>
 
 <template>
-  <button
-    class="button v-button"
+  <RouterLink
+    :to="{ name: link }"
+    class="button"
     :class="[
-      rounded && 'is-rounded',
+      circle && 'is-circle',
       bold && 'is-bold',
       outlined && 'is-outlined',
       raised && 'is-raised',
@@ -62,7 +63,6 @@ const props = defineProps({
       color && `is-${color}`,
       color && light && 'is-light',
     ]"
-    :disabled="disabled"
   >
     <span v-if="fa" class="icon">
       <i :class="fa"></i>
@@ -70,8 +70,5 @@ const props = defineProps({
     <span v-if="feather" class="icon">
       <i class="iconify" :data-icon="feather"></i>
     </span>
-    <span>
-      <slot></slot>
-    </span>
-  </button>
+  </RouterLink>
 </template>

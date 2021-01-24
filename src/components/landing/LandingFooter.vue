@@ -11,7 +11,7 @@
           <div class="buttons">
             <a
               href="https://themeforest.net/item/huro-multipurpose-admin-and-webapp-ui-kit/28933249"
-              class="button h-button is-primary is-rounded raised action-button"
+              class="button v-button is-primary is-rounded raised action-button"
               >Buy Vuero</a
             >
             <a href="https://cssninja.io" class="button chat-button"

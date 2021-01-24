@@ -124,7 +124,7 @@ useHead({
                         <!-- Submit -->
                         <div class="control login">
                           <button
-                            class="button h-button is-primary is-bold is-fullwidth is-raised"
+                            class="button v-button is-primary is-bold is-fullwidth is-raised"
                           >
                             Sign Up
                           </button>

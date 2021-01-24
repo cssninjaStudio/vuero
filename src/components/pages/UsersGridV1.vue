@@ -78,13 +78,13 @@
             </div>
           </div>
           <div class="buttons">
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:user"></i>
               </span>
               <span>Profile</span>
             </button>
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:message-circle"></i>
               </span>
@@ -144,13 +144,13 @@
             </div>
           </div>
           <div class="buttons">
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:user"></i>
               </span>
               <span>Profile</span>
             </button>
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:message-circle"></i>
               </span>
@@ -210,13 +210,13 @@
             </div>
           </div>
           <div class="buttons">
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:user"></i>
               </span>
               <span>Profile</span>
             </button>
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:message-circle"></i>
               </span>
@@ -271,13 +271,13 @@
             </div>
           </div>
           <div class="buttons">
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:user"></i>
               </span>
               <span>Profile</span>
             </button>
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:message-circle"></i>
               </span>
@@ -326,13 +326,13 @@
             </div>
           </div>
           <div class="buttons">
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:user"></i>
               </span>
               <span>Profile</span>
             </button>
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:message-circle"></i>
               </span>
@@ -386,13 +386,13 @@
             </div>
           </div>
           <div class="buttons">
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:user"></i>
               </span>
               <span>Profile</span>
             </button>
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:message-circle"></i>
               </span>
@@ -441,13 +441,13 @@
             </div>
           </div>
           <div class="buttons">
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:user"></i>
               </span>
               <span>Profile</span>
             </button>
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:message-circle"></i>
               </span>
@@ -496,13 +496,13 @@
             </div>
           </div>
           <div class="buttons">
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:user"></i>
               </span>
               <span>Profile</span>
             </button>
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:message-circle"></i>
               </span>
@@ -567,13 +567,13 @@
             </div>
           </div>
           <div class="buttons">
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:user"></i>
               </span>
               <span>Profile</span>
             </button>
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:message-circle"></i>
               </span>
@@ -633,13 +633,13 @@
             </div>
           </div>
           <div class="buttons">
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:user"></i>
               </span>
               <span>Profile</span>
             </button>
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:message-circle"></i>
               </span>
@@ -688,13 +688,13 @@
             </div>
           </div>
           <div class="buttons">
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:user"></i>
               </span>
               <span>Profile</span>
             </button>
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:message-circle"></i>
               </span>
@@ -749,13 +749,13 @@
             </div>
           </div>
           <div class="buttons">
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:user"></i>
               </span>
               <span>Profile</span>
             </button>
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:message-circle"></i>
               </span>
@@ -815,13 +815,13 @@
             </div>
           </div>
           <div class="buttons">
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:user"></i>
               </span>
               <span>Profile</span>
             </button>
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:message-circle"></i>
               </span>
@@ -870,13 +870,13 @@
             </div>
           </div>
           <div class="buttons">
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:user"></i>
               </span>
               <span>Profile</span>
             </button>
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:message-circle"></i>
               </span>
@@ -925,13 +925,13 @@
             </div>
           </div>
           <div class="buttons">
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:user"></i>
               </span>
               <span>Profile</span>
             </button>
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:message-circle"></i>
               </span>
@@ -985,13 +985,13 @@
             </div>
           </div>
           <div class="buttons">
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:user"></i>
               </span>
               <span>Profile</span>
             </button>
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:message-circle"></i>
               </span>
@@ -1051,13 +1051,13 @@
             </div>
           </div>
           <div class="buttons">
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:user"></i>
               </span>
               <span>Profile</span>
             </button>
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:message-circle"></i>
               </span>
@@ -1100,13 +1100,13 @@
             </div>
           </div>
           <div class="buttons">
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:user"></i>
               </span>
               <span>Profile</span>
             </button>
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:message-circle"></i>
               </span>

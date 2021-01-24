@@ -21,9 +21,9 @@ const handleClick = (event: MouseEvent) => {
 
 <template>
   <div class="buttons">
-    <button 
-      :disabled="disabled" 
-      class="button h-button is-primary"
+    <button
+      :disabled="disabled"
+      class="button v-button is-primary"
       @click="handleClick"
     >
       I'm disabled!
@@ -38,7 +38,7 @@ const handleClick = (event: MouseEvent) => {
 
 <div class="buttons">
   <button 
-    class="button h-button"
+    class="button v-button"
     :disabled="frontmatter.state.disabled"
     @click="clickMe"
   >

@@ -14,7 +14,7 @@
             <div class="button-wrap">
               <a
                 href="#"
-                class="button h-button is-primary is-rounded is-elevated is-bold type-select-button"
+                class="button v-button is-primary is-rounded is-elevated is-bold type-select-button"
                 >Continue</a
               >
             </div>
@@ -31,7 +31,7 @@
             <div class="button-wrap">
               <a
                 href="#"
-                class="button h-button is-primary is-rounded is-elevated is-bold type-select-button"
+                class="button v-button is-primary is-rounded is-elevated is-bold type-select-button"
                 >Continue</a
               >
             </div>
@@ -48,7 +48,7 @@
             <div class="button-wrap">
               <a
                 href="#"
-                class="button h-button is-primary is-rounded is-elevated is-bold type-select-button"
+                class="button v-button is-primary is-rounded is-elevated is-bold type-select-button"
                 >Continue</a
               >
             </div>

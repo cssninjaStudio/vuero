@@ -153,12 +153,12 @@ useHead({
                     <i class="iconify" data-icon="feather:search"></i>
                   </div>
                 </div>
-                <a class="button search-button">
+                <a class="button searcv-button">
                   <span class="icon is-small">
                     <i class="iconify" data-icon="feather:search"></i>
                   </span>
                 </a>
-                <a class="button cancel-search-button is-hidden">
+                <a class="button cancel-searcv-button is-hidden">
                   <span class="icon is-small">
                     <i class="iconify" data-icon="feather:x"></i>
                   </span>
@@ -1157,8 +1157,8 @@ Inbox Layouts
                 color: $dark-dark-text;
               }
 
-              .search-button,
-              .cancel-search-button {
+              .searcv-button,
+              .cancel-searcv-button {
                 background: none !important;
               }
             }
@@ -1549,7 +1549,7 @@ Inbox Layouts
             }
           }
 
-          .attach-button {
+          .attacv-button {
             position: absolute;
             height: 38px;
             width: 38px;

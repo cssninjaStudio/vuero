@@ -351,7 +351,7 @@ useHead({
                     </div>
                   </div>
                   <div class="end">
-                    <a class="button h-button is-primary is-raised"
+                    <a class="button v-button is-primary is-raised"
                       >Post Comment</a
                     >
                   </div>
@@ -381,7 +381,7 @@ useHead({
             &#x3C;/div&#x3E;
         &#x3C;/div&#x3E;
         &#x3C;div class=&#x22;end&#x22;&#x3E;
-            &#x3C;a class=&#x22;button h-button is-primary is-raised&#x22;&#x3E;Post Comment&#x3C;/a&#x3E;
+            &#x3C;a class=&#x22;button v-button is-primary is-raised&#x22;&#x3E;Post Comment&#x3C;/a&#x3E;
         &#x3C;/div&#x3E;
     &#x3C;/div&#x3E;
 &#x3C;/div&#x3E;

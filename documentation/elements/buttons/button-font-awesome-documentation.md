@@ -7,15 +7,13 @@ Vuero buttons work well with Font Awesome Icons. Add an icon element inside the 
 ```vue {4-6}
 <template>
   <div class="buttons">
-    <button class="button h-button is-primary is-elevated">
+    <button class="button v-button is-primary is-elevated">
       <span class="icon">
         <i class="fab fa-twitter"></i>
       </span>
       <span>Tweet Now</span>
     </button>
-    <button
-      class="button h-button is-success is-rounded is-elevated"
-    >
+    <button class="button v-button is-success is-rounded is-elevated">
       <span class="icon">
         <i class="fas fa-check"></i>
       </span>
@@ -40,14 +38,14 @@ Vuero buttons work well with Font Awesome Icons. Add an icon element inside the 
 <!--example-->
 
 <div class="buttons">
-  <button class="button h-button is-primary is-elevated" @click="clickMyText">
+  <button class="button v-button is-primary is-elevated" @click="clickMyText">
     <span class="icon">
       <i class="fab fa-twitter"></i>
     </span>
     <span class="text">Tweet Now</span>
   </button>
   <button
-    class="button h-button is-success is-rounded is-elevated" @click="clickMyText"
+    class="button v-button is-success is-rounded is-elevated" @click="clickMyText"
   >
     <span class="icon">
       <i class="fas fa-check"></i>

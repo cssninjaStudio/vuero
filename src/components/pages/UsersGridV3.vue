@@ -117,13 +117,13 @@ const props = defineProps({
               </div>
             </div>
             <div class="buttons">
-              <button class="button h-button is-dark-outlined">
+              <button class="button v-button is-dark-outlined">
                 <span class="icon">
                   <i class="iconify" data-icon="feather:check"></i>
                 </span>
                 <span>Hire</span>
               </button>
-              <button class="button h-button is-dark-outlined">
+              <button class="button v-button is-dark-outlined">
                 <span class="icon">
                   <i class="iconify" data-icon="feather:message-circle"></i>
                 </span>
@@ -209,13 +209,13 @@ const props = defineProps({
               </div>
             </div>
             <div class="buttons">
-              <button class="button h-button is-dark-outlined">
+              <button class="button v-button is-dark-outlined">
                 <span class="icon">
                   <i class="iconify" data-icon="feather:check"></i>
                 </span>
                 <span>Hire</span>
               </button>
-              <button class="button h-button is-dark-outlined">
+              <button class="button v-button is-dark-outlined">
                 <span class="icon">
                   <i class="iconify" data-icon="feather:message-circle"></i>
                 </span>
@@ -301,13 +301,13 @@ const props = defineProps({
               </div>
             </div>
             <div class="buttons">
-              <button class="button h-button is-dark-outlined">
+              <button class="button v-button is-dark-outlined">
                 <span class="icon">
                   <i class="iconify" data-icon="feather:check"></i>
                 </span>
                 <span>Hire</span>
               </button>
-              <button class="button h-button is-dark-outlined">
+              <button class="button v-button is-dark-outlined">
                 <span class="icon">
                   <i class="iconify" data-icon="feather:message-circle"></i>
                 </span>
@@ -393,13 +393,13 @@ const props = defineProps({
               </div>
             </div>
             <div class="buttons">
-              <button class="button h-button is-dark-outlined">
+              <button class="button v-button is-dark-outlined">
                 <span class="icon">
                   <i class="iconify" data-icon="feather:check"></i>
                 </span>
                 <span>Hire</span>
               </button>
-              <button class="button h-button is-dark-outlined">
+              <button class="button v-button is-dark-outlined">
                 <span class="icon">
                   <i class="iconify" data-icon="feather:message-circle"></i>
                 </span>
@@ -485,13 +485,13 @@ const props = defineProps({
               </div>
             </div>
             <div class="buttons">
-              <button class="button h-button is-dark-outlined">
+              <button class="button v-button is-dark-outlined">
                 <span class="icon">
                   <i class="iconify" data-icon="feather:check"></i>
                 </span>
                 <span>Hire</span>
               </button>
-              <button class="button h-button is-dark-outlined">
+              <button class="button v-button is-dark-outlined">
                 <span class="icon">
                   <i class="iconify" data-icon="feather:message-circle"></i>
                 </span>
@@ -577,13 +577,13 @@ const props = defineProps({
               </div>
             </div>
             <div class="buttons">
-              <button class="button h-button is-dark-outlined">
+              <button class="button v-button is-dark-outlined">
                 <span class="icon">
                   <i class="iconify" data-icon="feather:check"></i>
                 </span>
                 <span>Hire</span>
               </button>
-              <button class="button h-button is-dark-outlined">
+              <button class="button v-button is-dark-outlined">
                 <span class="icon">
                   <i class="iconify" data-icon="feather:message-circle"></i>
                 </span>
@@ -669,13 +669,13 @@ const props = defineProps({
               </div>
             </div>
             <div class="buttons">
-              <button class="button h-button is-dark-outlined">
+              <button class="button v-button is-dark-outlined">
                 <span class="icon">
                   <i class="iconify" data-icon="feather:check"></i>
                 </span>
                 <span>Hire</span>
               </button>
-              <button class="button h-button is-dark-outlined">
+              <button class="button v-button is-dark-outlined">
                 <span class="icon">
                   <i class="iconify" data-icon="feather:message-circle"></i>
                 </span>
@@ -761,13 +761,13 @@ const props = defineProps({
               </div>
             </div>
             <div class="buttons">
-              <button class="button h-button is-dark-outlined">
+              <button class="button v-button is-dark-outlined">
                 <span class="icon">
                   <i class="iconify" data-icon="feather:check"></i>
                 </span>
                 <span>Hire</span>
               </button>
-              <button class="button h-button is-dark-outlined">
+              <button class="button v-button is-dark-outlined">
                 <span class="icon">
                   <i class="iconify" data-icon="feather:message-circle"></i>
                 </span>
@@ -853,13 +853,13 @@ const props = defineProps({
               </div>
             </div>
             <div class="buttons">
-              <button class="button h-button is-dark-outlined">
+              <button class="button v-button is-dark-outlined">
                 <span class="icon">
                   <i class="iconify" data-icon="feather:check"></i>
                 </span>
                 <span>Hire</span>
               </button>
-              <button class="button h-button is-dark-outlined">
+              <button class="button v-button is-dark-outlined">
                 <span class="icon">
                   <i class="iconify" data-icon="feather:message-circle"></i>
                 </span>
@@ -945,13 +945,13 @@ const props = defineProps({
               </div>
             </div>
             <div class="buttons">
-              <button class="button h-button is-dark-outlined">
+              <button class="button v-button is-dark-outlined">
                 <span class="icon">
                   <i class="iconify" data-icon="feather:check"></i>
                 </span>
                 <span>Hire</span>
               </button>
-              <button class="button h-button is-dark-outlined">
+              <button class="button v-button is-dark-outlined">
                 <span class="icon">
                   <i class="iconify" data-icon="feather:message-circle"></i>
                 </span>
@@ -1037,13 +1037,13 @@ const props = defineProps({
               </div>
             </div>
             <div class="buttons">
-              <button class="button h-button is-dark-outlined">
+              <button class="button v-button is-dark-outlined">
                 <span class="icon">
                   <i class="iconify" data-icon="feather:check"></i>
                 </span>
                 <span>Hire</span>
               </button>
-              <button class="button h-button is-dark-outlined">
+              <button class="button v-button is-dark-outlined">
                 <span class="icon">
                   <i class="iconify" data-icon="feather:message-circle"></i>
                 </span>
@@ -1129,13 +1129,13 @@ const props = defineProps({
               </div>
             </div>
             <div class="buttons">
-              <button class="button h-button is-dark-outlined">
+              <button class="button v-button is-dark-outlined">
                 <span class="icon">
                   <i class="iconify" data-icon="feather:check"></i>
                 </span>
                 <span>Hire</span>
               </button>
-              <button class="button h-button is-dark-outlined">
+              <button class="button v-button is-dark-outlined">
                 <span class="icon">
                   <i class="iconify" data-icon="feather:message-circle"></i>
                 </span>
@@ -1221,13 +1221,13 @@ const props = defineProps({
               </div>
             </div>
             <div class="buttons">
-              <button class="button h-button is-dark-outlined">
+              <button class="button v-button is-dark-outlined">
                 <span class="icon">
                   <i class="iconify" data-icon="feather:check"></i>
                 </span>
                 <span>Hire</span>
               </button>
-              <button class="button h-button is-dark-outlined">
+              <button class="button v-button is-dark-outlined">
                 <span class="icon">
                   <i class="iconify" data-icon="feather:message-circle"></i>
                 </span>
@@ -1313,13 +1313,13 @@ const props = defineProps({
               </div>
             </div>
             <div class="buttons">
-              <button class="button h-button is-dark-outlined">
+              <button class="button v-button is-dark-outlined">
                 <span class="icon">
                   <i class="iconify" data-icon="feather:check"></i>
                 </span>
                 <span>Hire</span>
               </button>
-              <button class="button h-button is-dark-outlined">
+              <button class="button v-button is-dark-outlined">
                 <span class="icon">
                   <i class="iconify" data-icon="feather:message-circle"></i>
                 </span>
@@ -1405,13 +1405,13 @@ const props = defineProps({
               </div>
             </div>
             <div class="buttons">
-              <button class="button h-button is-dark-outlined">
+              <button class="button v-button is-dark-outlined">
                 <span class="icon">
                   <i class="iconify" data-icon="feather:check"></i>
                 </span>
                 <span>Hire</span>
               </button>
-              <button class="button h-button is-dark-outlined">
+              <button class="button v-button is-dark-outlined">
                 <span class="icon">
                   <i class="iconify" data-icon="feather:message-circle"></i>
                 </span>
@@ -1497,13 +1497,13 @@ const props = defineProps({
               </div>
             </div>
             <div class="buttons">
-              <button class="button h-button is-dark-outlined">
+              <button class="button v-button is-dark-outlined">
                 <span class="icon">
                   <i class="iconify" data-icon="feather:check"></i>
                 </span>
                 <span>Hire</span>
               </button>
-              <button class="button h-button is-dark-outlined">
+              <button class="button v-button is-dark-outlined">
                 <span class="icon">
                   <i class="iconify" data-icon="feather:message-circle"></i>
                 </span>
@@ -1589,13 +1589,13 @@ const props = defineProps({
               </div>
             </div>
             <div class="buttons">
-              <button class="button h-button is-dark-outlined">
+              <button class="button v-button is-dark-outlined">
                 <span class="icon">
                   <i class="iconify" data-icon="feather:check"></i>
                 </span>
                 <span>Hire</span>
               </button>
-              <button class="button h-button is-dark-outlined">
+              <button class="button v-button is-dark-outlined">
                 <span class="icon">
                   <i class="iconify" data-icon="feather:message-circle"></i>
                 </span>
@@ -1681,13 +1681,13 @@ const props = defineProps({
               </div>
             </div>
             <div class="buttons">
-              <button class="button h-button is-dark-outlined">
+              <button class="button v-button is-dark-outlined">
                 <span class="icon">
                   <i class="iconify" data-icon="feather:check"></i>
                 </span>
                 <span>Hire</span>
               </button>
-              <button class="button h-button is-dark-outlined">
+              <button class="button v-button is-dark-outlined">
                 <span class="icon">
                   <i class="iconify" data-icon="feather:message-circle"></i>
                 </span>

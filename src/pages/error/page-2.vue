@@ -19,7 +19,7 @@ useHead({
             an administrator if the problem persists.
           </p>
           <div class="button-wrap">
-            <a class="button h-button is-primary is-elevated" onclick="goBack()"
+            <a class="button v-button is-primary is-elevated" onclick="goBack()"
               >Take me Back</a
             >
           </div>

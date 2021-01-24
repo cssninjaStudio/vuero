@@ -23,7 +23,7 @@
           creating tasks.
         </p>
         <div class="button-wrap">
-          <a class="button h-button is-rounded is-bold is-elevated is-primary"
+          <a class="button v-button is-rounded is-bold is-elevated is-primary"
             >View Project</a
           >
         </div>

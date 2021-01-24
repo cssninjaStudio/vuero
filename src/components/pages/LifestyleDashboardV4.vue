@@ -19,7 +19,7 @@
                   Have any ideas for a new article? If not, you should
                   definitely check the feed for some inspiration.
                 </p>
-                <button class="button h-button is-light is-outlined">
+                <button class="button v-button is-light is-outlined">
                   <span class="icon is-small">
                     <i class="iconify" data-icon="feather:plus"></i>
                   </span>

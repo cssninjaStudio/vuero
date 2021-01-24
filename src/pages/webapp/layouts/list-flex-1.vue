@@ -31,7 +31,7 @@ useHead({
       </div>
 
       <div class="buttons">
-        <button class="button h-button is-primary is-elevated">
+        <button class="button v-button is-primary is-elevated">
           <span class="icon">
             <i class="fas fa-plus"></i>
           </span>

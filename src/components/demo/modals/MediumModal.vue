@@ -61,11 +61,11 @@ const emit = defineEmit(['close'])
         </div>
         <div class="modal-card-foot is-centered">
           <a
-            class="button h-button is-rounded h-modal-close"
+            class="button v-button is-rounded h-modal-close"
             @click="emit('close')"
             >Decline</a
           >
-          <a class="button h-button is-primary is-raised is-rounded">Accept</a>
+          <a class="button v-button is-primary is-raised is-rounded">Accept</a>
         </div>
       </div>
     </div>

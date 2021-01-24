@@ -350,7 +350,7 @@
       </div>
 
       <div class="load-more-wrap has-text-centered">
-        <button class="button h-button is-dark-outlined">Load More</button>
+        <button class="button v-button is-dark-outlined">Load More</button>
       </div>
     </div>
   </div>

@@ -97,7 +97,7 @@ useHead({
             </div>
             <div class="card-inner">
               <button
-                class="button h-button is-dark-outlined"
+                class="button v-button is-dark-outlined"
                 data-toggle="popover"
                 data-pop-mode="hover"
                 data-pop-width="220"
@@ -108,7 +108,7 @@ useHead({
                 Hover Me
               </button>
               <button
-                class="button h-button is-dark-outlined"
+                class="button v-button is-dark-outlined"
                 data-toggle="popover"
                 data-pop-mode="click"
                 data-pop-width="220"
@@ -121,7 +121,7 @@ useHead({
 
               <div class="highlight highlight-block">
                 <pre><code class="code-highlight">
-&#x3C;button class=&#x22;button h-button is-dark-outlined&#x22; data-toggle=&#x22;popover&#x22;
+&#x3C;button class=&#x22;button v-button is-dark-outlined&#x22; data-toggle=&#x22;popover&#x22;
     data-pop-mode=&#x22;hover&#x22;
     data-pop-width=&#x22;220&#x22;
     data-pop-title=&#x22;Hover Popover&#x22;
@@ -129,7 +129,7 @@ useHead({
     data-pop-position=&#x22;top&#x22;&#x3E;
         Hover Me
 &#x3C;/button&#x3E;
-&#x3C;button class=&#x22;button h-button is-dark-outlined&#x22; data-toggle=&#x22;popover&#x22;
+&#x3C;button class=&#x22;button v-button is-dark-outlined&#x22; data-toggle=&#x22;popover&#x22;
     data-pop-mode=&#x22;click&#x22;
     data-pop-width=&#x22;220&#x22;
     data-pop-title=&#x22;Click Popover&#x22;
@@ -160,7 +160,7 @@ useHead({
             </div>
             <div class="card-inner">
               <button
-                class="button h-button is-dark-outlined"
+                class="button v-button is-dark-outlined"
                 data-toggle="popover"
                 data-pop-mode="hover"
                 data-pop-width="220"
@@ -172,7 +172,7 @@ useHead({
               </button>
 
               <button
-                class="button h-button is-dark-outlined"
+                class="button v-button is-dark-outlined"
                 data-toggle="popover"
                 data-pop-mode="hover"
                 data-pop-width="220"
@@ -184,7 +184,7 @@ useHead({
               </button>
 
               <button
-                class="button h-button is-dark-outlined"
+                class="button v-button is-dark-outlined"
                 data-toggle="popover"
                 data-pop-mode="hover"
                 data-pop-width="220"
@@ -196,7 +196,7 @@ useHead({
               </button>
 
               <button
-                class="button h-button is-dark-outlined"
+                class="button v-button is-dark-outlined"
                 data-toggle="popover"
                 data-pop-mode="hover"
                 data-pop-width="220"
@@ -208,7 +208,7 @@ useHead({
               </button>
 
               <button
-                class="button h-button is-dark-outlined"
+                class="button v-button is-dark-outlined"
                 data-toggle="popover"
                 data-pop-mode="hover"
                 data-pop-width="220"
@@ -220,7 +220,7 @@ useHead({
               </button>
 
               <button
-                class="button h-button is-dark-outlined"
+                class="button v-button is-dark-outlined"
                 data-toggle="popover"
                 data-pop-mode="hover"
                 data-pop-width="220"
@@ -232,7 +232,7 @@ useHead({
               </button>
 
               <button
-                class="button h-button is-dark-outlined"
+                class="button v-button is-dark-outlined"
                 data-toggle="popover"
                 data-pop-mode="hover"
                 data-pop-width="220"
@@ -244,7 +244,7 @@ useHead({
               </button>
 
               <button
-                class="button h-button is-dark-outlined"
+                class="button v-button is-dark-outlined"
                 data-toggle="popover"
                 data-pop-mode="hover"
                 data-pop-width="220"
@@ -257,7 +257,7 @@ useHead({
 
               <div class="highlight highlight-block">
                 <pre><code class="code-highlight">
-&#x3C;button class=&#x22;button h-button is-dark-outlined&#x22; data-toggle=&#x22;popover&#x22;
+&#x3C;button class=&#x22;button v-button is-dark-outlined&#x22; data-toggle=&#x22;popover&#x22;
     data-pop-mode=&#x22;hover&#x22;
     data-pop-width=&#x22;220&#x22;
     data-pop-title=&#x22;Left&#x22;
@@ -266,7 +266,7 @@ useHead({
         Left
 &#x3C;/button&#x3E;
 
-&#x3C;button class=&#x22;button h-button is-dark-outlined&#x22; data-toggle=&#x22;popover&#x22;
+&#x3C;button class=&#x22;button v-button is-dark-outlined&#x22; data-toggle=&#x22;popover&#x22;
     data-pop-mode=&#x22;hover&#x22;
     data-pop-width=&#x22;220&#x22;
     data-pop-title=&#x22;Top Left&#x22;
@@ -275,7 +275,7 @@ useHead({
         Top Left
 &#x3C;/button&#x3E;
 
-&#x3C;button class=&#x22;button h-button is-dark-outlined&#x22; data-toggle=&#x22;popover&#x22;
+&#x3C;button class=&#x22;button v-button is-dark-outlined&#x22; data-toggle=&#x22;popover&#x22;
     data-pop-mode=&#x22;hover&#x22;
     data-pop-width=&#x22;220&#x22;
     data-pop-title=&#x22;Top&#x22;
@@ -284,7 +284,7 @@ useHead({
         Top
 &#x3C;/button&#x3E;
 
-&#x3C;button class=&#x22;button h-button is-dark-outlined&#x22; data-toggle=&#x22;popover&#x22;
+&#x3C;button class=&#x22;button v-button is-dark-outlined&#x22; data-toggle=&#x22;popover&#x22;
     data-pop-mode=&#x22;hover&#x22;
     data-pop-width=&#x22;220&#x22;
     data-pop-title=&#x22;Top Right&#x22;
@@ -293,7 +293,7 @@ useHead({
         Top Right
 &#x3C;/button&#x3E;
 
-&#x3C;button class=&#x22;button h-button is-dark-outlined&#x22; data-toggle=&#x22;popover&#x22;
+&#x3C;button class=&#x22;button v-button is-dark-outlined&#x22; data-toggle=&#x22;popover&#x22;
     data-pop-mode=&#x22;hover&#x22;
     data-pop-width=&#x22;220&#x22;
     data-pop-title=&#x22;Right&#x22;
@@ -302,7 +302,7 @@ useHead({
         Right
 &#x3C;/button&#x3E;
 
-&#x3C;button class=&#x22;button h-button is-dark-outlined&#x22; data-toggle=&#x22;popover&#x22;
+&#x3C;button class=&#x22;button v-button is-dark-outlined&#x22; data-toggle=&#x22;popover&#x22;
     data-pop-mode=&#x22;hover&#x22;
     data-pop-width=&#x22;220&#x22;
     data-pop-title=&#x22;Bottom Right&#x22;
@@ -311,7 +311,7 @@ useHead({
         Bottom Right
 &#x3C;/button&#x3E;
 
-&#x3C;button class=&#x22;button h-button is-dark-outlined&#x22; data-toggle=&#x22;popover&#x22;
+&#x3C;button class=&#x22;button v-button is-dark-outlined&#x22; data-toggle=&#x22;popover&#x22;
     data-pop-mode=&#x22;hover&#x22;
     data-pop-width=&#x22;220&#x22;
     data-pop-title=&#x22;Bottom&#x22;
@@ -320,7 +320,7 @@ useHead({
         Bottom
 &#x3C;/button&#x3E;
 
-&#x3C;button class=&#x22;button h-button is-dark-outlined&#x22; data-toggle=&#x22;popover&#x22;
+&#x3C;button class=&#x22;button v-button is-dark-outlined&#x22; data-toggle=&#x22;popover&#x22;
     data-pop-mode=&#x22;hover&#x22;
     data-pop-width=&#x22;220&#x22;
     data-pop-title=&#x22;Bottom Left&#x22;
@@ -351,7 +351,7 @@ useHead({
             </div>
             <div class="card-inner">
               <button
-                class="button h-button is-dark-outlined"
+                class="button v-button is-dark-outlined"
                 data-toggle="popover"
                 data-pop-mode="hover"
                 data-pop-width="220"
@@ -364,7 +364,7 @@ useHead({
               </button>
 
               <button
-                class="button h-button is-dark-outlined"
+                class="button v-button is-dark-outlined"
                 data-toggle="popover"
                 data-pop-mode="click"
                 data-pop-width="220"
@@ -378,7 +378,7 @@ useHead({
 
               <div class="highlight highlight-block">
                 <pre><code class="code-highlight">
-&#x3C;button class=&#x22;button h-button is-dark-outlined&#x22; data-toggle=&#x22;popover&#x22;
+&#x3C;button class=&#x22;button v-button is-dark-outlined&#x22; data-toggle=&#x22;popover&#x22;
     data-pop-mode=&#x22;hover&#x22;
     data-pop-width=&#x22;220&#x22;
     data-pop-title=&#x22;Alejandro B.&#x22;
@@ -388,7 +388,7 @@ useHead({
         Hover Me
 &#x3C;/button&#x3E;
 
-&#x3C;button class=&#x22;button h-button is-dark-outlined&#x22; data-toggle=&#x22;popover&#x22;
+&#x3C;button class=&#x22;button v-button is-dark-outlined&#x22; data-toggle=&#x22;popover&#x22;
     data-pop-mode=&#x22;click&#x22;
     data-pop-width=&#x22;220&#x22;
     data-pop-title=&#x22;Alice C.&#x22;
@@ -420,7 +420,7 @@ useHead({
             </div>
             <div class="card-inner">
               <button
-                class="button h-button is-dark-outlined"
+                class="button v-button is-dark-outlined"
                 data-toggle="popover"
                 data-pop-mode="hover"
                 data-pop-width="220"
@@ -434,7 +434,7 @@ useHead({
               </button>
 
               <button
-                class="button h-button is-dark-outlined"
+                class="button v-button is-dark-outlined"
                 data-toggle="popover"
                 data-pop-mode="hover"
                 data-pop-width="220"
@@ -448,7 +448,7 @@ useHead({
               </button>
 
               <button
-                class="button h-button is-dark-outlined"
+                class="button v-button is-dark-outlined"
                 data-toggle="popover"
                 data-pop-mode="hover"
                 data-pop-width="220"
@@ -462,7 +462,7 @@ useHead({
               </button>
 
               <button
-                class="button h-button is-dark-outlined"
+                class="button v-button is-dark-outlined"
                 data-toggle="popover"
                 data-pop-mode="hover"
                 data-pop-width="220"
@@ -477,7 +477,7 @@ useHead({
 
               <div class="highlight highlight-block">
                 <pre><code class="code-highlight">
-&#x3C;button class=&#x22;button h-button is-dark-outlined&#x22; data-toggle=&#x22;popover&#x22;
+&#x3C;button class=&#x22;button v-button is-dark-outlined&#x22; data-toggle=&#x22;popover&#x22;
     data-pop-mode=&#x22;hover&#x22;
     data-pop-width=&#x22;220&#x22;
     data-pop-title=&#x22;Hover Popover&#x22;
@@ -488,7 +488,7 @@ useHead({
         Primary
 &#x3C;/button&#x3E;
 
-&#x3C;button class=&#x22;button h-button is-dark-outlined&#x22; data-toggle=&#x22;popover&#x22;
+&#x3C;button class=&#x22;button v-button is-dark-outlined&#x22; data-toggle=&#x22;popover&#x22;
     data-pop-mode=&#x22;hover&#x22;
     data-pop-width=&#x22;220&#x22;
     data-pop-title=&#x22;Hover Popover&#x22;
@@ -499,7 +499,7 @@ useHead({
         Info
 &#x3C;/button&#x3E;
 
-&#x3C;button class=&#x22;button h-button is-dark-outlined&#x22; data-toggle=&#x22;popover&#x22;
+&#x3C;button class=&#x22;button v-button is-dark-outlined&#x22; data-toggle=&#x22;popover&#x22;
     data-pop-mode=&#x22;hover&#x22;
     data-pop-width=&#x22;220&#x22;
     data-pop-title=&#x22;Hover Popover&#x22;
@@ -510,7 +510,7 @@ useHead({
         Orange
 &#x3C;/button&#x3E;
 
-&#x3C;button class=&#x22;button h-button is-dark-outlined&#x22; data-toggle=&#x22;popover&#x22;
+&#x3C;button class=&#x22;button v-button is-dark-outlined&#x22; data-toggle=&#x22;popover&#x22;
     data-pop-mode=&#x22;hover&#x22;
     data-pop-width=&#x22;220&#x22;
     data-pop-title=&#x22;Hover Popover&#x22;

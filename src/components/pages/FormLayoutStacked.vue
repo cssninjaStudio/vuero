@@ -20,7 +20,7 @@ const isStuck = computed(() => {
           </div>
           <div class="right">
             <div class="buttons">
-              <a href="#" class="button h-button is-light is-dark-outlined">
+              <a href="#" class="button v-button is-light is-dark-outlined">
                 <span class="icon">
                   <i class="lnir lnir-arrow-left rem-100"></i>
                 </span>
@@ -28,7 +28,7 @@ const isStuck = computed(() => {
               </a>
               <button
                 id="save-button"
-                class="button h-button is-primary is-raised"
+                class="button v-button is-primary is-raised"
               >
                 Schedule
               </button>

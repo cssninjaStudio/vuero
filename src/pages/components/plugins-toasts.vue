@@ -92,7 +92,7 @@ useHead({
               <div class="buttons">
                 <a
                   id="success-toast-demo"
-                  class="button h-button is-rounded toast-trigger"
+                  class="button v-button is-rounded toast-trigger"
                   >Success Toast</a
                 >
               </div>
@@ -116,7 +116,7 @@ useHead({
               <div class="buttons">
                 <a
                   id="error-toast-demo"
-                  class="button h-button is-rounded toast-trigger"
+                  class="button v-button is-rounded toast-trigger"
                   >Error Toast</a
                 >
               </div>
@@ -140,7 +140,7 @@ useHead({
               <div class="buttons">
                 <a
                   id="info-toast-demo"
-                  class="button h-button is-rounded toast-trigger"
+                  class="button v-button is-rounded toast-trigger"
                   >Info Toast</a
                 >
               </div>
@@ -164,7 +164,7 @@ useHead({
               <div class="buttons">
                 <a
                   id="warning-toast-demo"
-                  class="button h-button is-rounded toast-trigger"
+                  class="button v-button is-rounded toast-trigger"
                   >Warning Toast</a
                 >
               </div>
@@ -188,7 +188,7 @@ useHead({
               <div class="buttons">
                 <a
                   id="primary-toast-demo"
-                  class="button h-button is-rounded toast-trigger"
+                  class="button v-button is-rounded toast-trigger"
                   >Primary Toast</a
                 >
               </div>
@@ -212,7 +212,7 @@ useHead({
               <div class="buttons">
                 <a
                   id="purple-toast-demo"
-                  class="button h-button is-rounded toast-trigger"
+                  class="button v-button is-rounded toast-trigger"
                   >Purple Toast</a
                 >
               </div>
@@ -236,7 +236,7 @@ useHead({
               <div class="buttons">
                 <a
                   id="blue-toast-demo"
-                  class="button h-button is-rounded toast-trigger"
+                  class="button v-button is-rounded toast-trigger"
                   >Blue Toast</a
                 >
               </div>
@@ -260,7 +260,7 @@ useHead({
               <div class="buttons">
                 <a
                   id="green-toast-demo"
-                  class="button h-button is-rounded toast-trigger"
+                  class="button v-button is-rounded toast-trigger"
                   >Green Toast</a
                 >
               </div>
@@ -284,7 +284,7 @@ useHead({
               <div class="buttons">
                 <a
                   id="orange-toast-demo"
-                  class="button h-button is-rounded toast-trigger"
+                  class="button v-button is-rounded toast-trigger"
                   >Orange Toast</a
                 >
               </div>

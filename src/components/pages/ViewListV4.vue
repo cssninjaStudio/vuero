@@ -109,7 +109,7 @@ const props = defineProps({
                 <span>Like this</span>
               </div>
               <div class="buttons">
-                <a class="button h-button is-primary is-outlined is-raised"
+                <a class="button v-button is-primary is-outlined is-raised"
                   >View Recipe</a
                 >
                 <button
@@ -211,7 +211,7 @@ const props = defineProps({
                 <span>Like this</span>
               </div>
               <div class="buttons">
-                <a class="button h-button is-primary is-outlined is-raised"
+                <a class="button v-button is-primary is-outlined is-raised"
                   >View Recipe</a
                 >
                 <button
@@ -313,7 +313,7 @@ const props = defineProps({
                 <span>Like this</span>
               </div>
               <div class="buttons">
-                <a class="button h-button is-primary is-outlined is-raised"
+                <a class="button v-button is-primary is-outlined is-raised"
                   >View Recipe</a
                 >
                 <button
@@ -415,7 +415,7 @@ const props = defineProps({
                 <span>Like this</span>
               </div>
               <div class="buttons">
-                <a class="button h-button is-primary is-outlined is-raised"
+                <a class="button v-button is-primary is-outlined is-raised"
                   >View Recipe</a
                 >
                 <button
@@ -518,7 +518,7 @@ const props = defineProps({
                 <span>Like this</span>
               </div>
               <div class="buttons">
-                <a class="button h-button is-primary is-outlined is-raised"
+                <a class="button v-button is-primary is-outlined is-raised"
                   >View Recipe</a
                 >
                 <button
@@ -620,7 +620,7 @@ const props = defineProps({
                 <span>Like this</span>
               </div>
               <div class="buttons">
-                <a class="button h-button is-primary is-outlined is-raised"
+                <a class="button v-button is-primary is-outlined is-raised"
                   >View Recipe</a
                 >
                 <button
@@ -722,7 +722,7 @@ const props = defineProps({
                 <span>Like this</span>
               </div>
               <div class="buttons">
-                <a class="button h-button is-primary is-outlined is-raised"
+                <a class="button v-button is-primary is-outlined is-raised"
                   >View Recipe</a
                 >
                 <button
@@ -824,7 +824,7 @@ const props = defineProps({
                 <span>Like this</span>
               </div>
               <div class="buttons">
-                <a class="button h-button is-primary is-outlined is-raised"
+                <a class="button v-button is-primary is-outlined is-raised"
                   >View Recipe</a
                 >
                 <button
@@ -926,7 +926,7 @@ const props = defineProps({
                 <span>Like this</span>
               </div>
               <div class="buttons">
-                <a class="button h-button is-primary is-outlined is-raised"
+                <a class="button v-button is-primary is-outlined is-raised"
                   >View Recipe</a
                 >
                 <button
@@ -1028,7 +1028,7 @@ const props = defineProps({
                 <span>Like this</span>
               </div>
               <div class="buttons">
-                <a class="button h-button is-primary is-outlined is-raised"
+                <a class="button v-button is-primary is-outlined is-raised"
                   >View Recipe</a
                 >
                 <button

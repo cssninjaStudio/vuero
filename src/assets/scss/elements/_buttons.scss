@@ -15,7 +15,7 @@
   font-family: $font;
   transition: all 0.3s;
 
-  &.h-action {
+  &.v-action {
     padding: 8px 16px;
     font-weight: 500;
     font-size: 0.9rem;
@@ -61,7 +61,7 @@
 
 .is-dark {
   .button {
-    &.h-action {
+    &.v-action {
       background: lighten($dark-sidebar, 10%);
       border-color: lighten($dark-sidebar, 12%);
       color: $dark-dark-text;
@@ -92,7 +92,7 @@
     border-radius: 50%;
   }
 
-  &.h-button {
+  &.v-button {
     padding: 8px 22px 8px 22px;
     height: 38px;
     line-height: 1.1;
@@ -237,7 +237,7 @@
 ========================================================================== */
 
 .is-dark {
-  .h-button {
+  .v-button {
     &:not(.is-primary):not(.is-success):not(.is-info):not(.is-warning):not(.is-danger):not(.is-light):not(.is-white) {
       background: lighten($dark-sidebar, 10%);
       border-color: lighten($dark-sidebar, 12%);
@@ -329,7 +329,7 @@
       }
     }
 
-    &.h-action {
+    &.v-action {
       &.is-active {
         background: $accent !important;
         border-color: $accent !important;

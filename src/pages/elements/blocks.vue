@@ -183,7 +183,7 @@ useHead({
                         <span>View all tasks</span>
                       </div>
                       <div class="flex-end">
-                        <button class="button h-button is-primary is-elevated">
+                        <button class="button v-button is-primary is-elevated">
                           View
                         </button>
                       </div>
@@ -307,7 +307,7 @@ useHead({
                         <span>View browser support</span>
                       </div>
                       <div class="flex-end">
-                        <button class="button h-button is-primary is-elevated">
+                        <button class="button v-button is-primary is-elevated">
                           View
                         </button>
                       </div>
@@ -378,7 +378,7 @@ useHead({
                         <span>UX Designer</span>
                       </div>
                       <div class="flex-end">
-                        <button class="button h-button is-primary is-elevated">
+                        <button class="button v-button is-primary is-elevated">
                           View
                         </button>
                       </div>
@@ -443,7 +443,7 @@ useHead({
                         <span>View browser support reports</span>
                       </div>
                       <div class="flex-end">
-                        <button class="button h-button is-primary is-elevated">
+                        <button class="button v-button is-primary is-elevated">
                           View
                         </button>
                       </div>

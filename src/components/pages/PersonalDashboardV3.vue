@@ -26,7 +26,7 @@ import { interviewsOptions } from '/@src/composition/state/charts/apexcharts/exa
               </div>
               <div class="button-wrap">
                 <button
-                  class="button h-button is-primary is-fullwidth is-big is-raised"
+                  class="button v-button is-primary is-fullwidth is-big is-raised"
                 >
                   View Schedule
                 </button>
@@ -391,7 +391,7 @@ import { interviewsOptions } from '/@src/composition/state/charts/apexcharts/exa
       }
 
       .button-wrap {
-        .h-button {
+        .v-button {
           height: 44px;
           border-radius: 10px;
         }

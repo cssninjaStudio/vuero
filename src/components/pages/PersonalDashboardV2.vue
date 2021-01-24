@@ -655,7 +655,7 @@ const democheck4 = ref(false)
               />
               <h3 class="dark-inverted">Go Premium</h3>
               <p>Unlock more features and business tools by going premium</p>
-              <a class="button h-button is-primary is-elevated">Go Premium</a>
+              <a class="button v-button is-primary is-elevated">Go Premium</a>
             </div>
           </div>
         </div>

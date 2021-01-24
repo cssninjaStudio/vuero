@@ -225,13 +225,13 @@ useHead({
             </p>
 
             <div class="side-actions">
-              <a class="button h-button is-rounded">
+              <a class="button v-button is-rounded">
                 <span class="icon is-small">
                   <i class="fas fa-phone"></i>
                 </span>
                 <span>Audio Call</span>
               </a>
-              <a class="button h-button is-rounded">
+              <a class="button v-button is-rounded">
                 <span class="icon is-small">
                   <i class="fas fa-video"></i>
                 </span>

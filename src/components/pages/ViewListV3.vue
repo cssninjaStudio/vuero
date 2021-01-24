@@ -66,7 +66,7 @@ const props = defineProps({
             </div>
             <div class="meta-right">
               <div class="buttons">
-                <a class="button h-button is-primary is-outlined is-raised"
+                <a class="button v-button is-primary is-outlined is-raised"
                   >Apply Now</a
                 >
                 <button
@@ -108,7 +108,7 @@ const props = defineProps({
             </div>
             <div class="meta-right">
               <div class="buttons">
-                <a class="button h-button is-primary is-outlined is-raised"
+                <a class="button v-button is-primary is-outlined is-raised"
                   >Apply Now</a
                 >
                 <button
@@ -150,7 +150,7 @@ const props = defineProps({
             </div>
             <div class="meta-right">
               <div class="buttons">
-                <a class="button h-button is-primary is-outlined is-raised"
+                <a class="button v-button is-primary is-outlined is-raised"
                   >Apply Now</a
                 >
                 <button
@@ -190,7 +190,7 @@ const props = defineProps({
             </div>
             <div class="meta-right">
               <div class="buttons">
-                <a class="button h-button is-primary is-outlined is-raised"
+                <a class="button v-button is-primary is-outlined is-raised"
                   >Apply Now</a
                 >
                 <button
@@ -232,7 +232,7 @@ const props = defineProps({
             </div>
             <div class="meta-right">
               <div class="buttons">
-                <a class="button h-button is-primary is-outlined is-raised"
+                <a class="button v-button is-primary is-outlined is-raised"
                   >Apply Now</a
                 >
                 <button
@@ -274,7 +274,7 @@ const props = defineProps({
             </div>
             <div class="meta-right">
               <div class="buttons">
-                <a class="button h-button is-primary is-outlined is-raised"
+                <a class="button v-button is-primary is-outlined is-raised"
                   >Apply Now</a
                 >
                 <button
@@ -314,7 +314,7 @@ const props = defineProps({
             </div>
             <div class="meta-right">
               <div class="buttons">
-                <a class="button h-button is-primary is-outlined is-raised"
+                <a class="button v-button is-primary is-outlined is-raised"
                   >Apply Now</a
                 >
                 <button
@@ -356,7 +356,7 @@ const props = defineProps({
             </div>
             <div class="meta-right">
               <div class="buttons">
-                <a class="button h-button is-primary is-outlined is-raised"
+                <a class="button v-button is-primary is-outlined is-raised"
                   >Apply Now</a
                 >
                 <button
@@ -396,7 +396,7 @@ const props = defineProps({
             </div>
             <div class="meta-right">
               <div class="buttons">
-                <a class="button h-button is-primary is-outlined is-raised"
+                <a class="button v-button is-primary is-outlined is-raised"
                   >Apply Now</a
                 >
                 <button
@@ -438,7 +438,7 @@ const props = defineProps({
             </div>
             <div class="meta-right">
               <div class="buttons">
-                <a class="button h-button is-primary is-outlined is-raised"
+                <a class="button v-button is-primary is-outlined is-raised"
                   >Apply Now</a
                 >
                 <button

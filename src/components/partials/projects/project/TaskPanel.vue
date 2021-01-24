@@ -162,7 +162,7 @@ import { activePanel } from '/@src/composition/state/ui/activePanelState'
                 <a class="message-action"
                   ><i class="iconify" data-icon="feather:paperclip"></i
                 ></a>
-                <a class="button h-button is-primary is-bold is-raised">Send</a>
+                <a class="button v-button is-primary is-bold is-raised">Send</a>
               </div>
             </div>
           </div>

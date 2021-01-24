@@ -21,9 +21,9 @@ const handleClick = (event: MouseEvent) => {
 
 <template>
   <div class="buttons">
-    <a 
-      :class="[loading && 'is-loading']" 
-      class="button h-button is-primary"
+    <a
+      :class="[loading && 'is-loading']"
+      class="button v-button is-primary"
       @click="handleClick"
     >
       Click me!
@@ -38,7 +38,7 @@ const handleClick = (event: MouseEvent) => {
 
 <div class="buttons">
   <a 
-    class="button h-button"
+    class="button v-button"
     :class="[frontmatter.state.loading && 'is-loading']" 
     @click="() => { 
       frontmatter.state.loading = true

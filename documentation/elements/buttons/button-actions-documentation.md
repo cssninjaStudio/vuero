@@ -1,16 +1,16 @@
-### H-Action Alternative
+### v-action Alternative
 
-Vuero also provides a simple button called `h-action`. it doesn't come up with a lot of modifiers like the `H-Button` but is a solid alternative when you want to use simple buttons.
+Vuero also provides a simple button called `v-action`. it doesn't come up with a lot of modifiers like the `v-button` but is a solid alternative when you want to use simple buttons.
 
 <!--code-->
 
 ```vue
 <template>
   <div class="buttons">
-    <a class="button h-action">Button</a>
-    <button class="button h-action is-rounded">Button</button>
-    <a class="button h-action is-hoverable">Button</a>
-    <button class="button h-action is-grey">Button</button>
+    <a class="button v-action">Button</a>
+    <button class="button v-action is-rounded">Button</button>
+    <a class="button v-action is-hoverable">Button</a>
+    <button class="button v-action is-grey">Button</button>
   </div>
 </template>
 ```
@@ -21,10 +21,10 @@ Vuero also provides a simple button called `h-action`. it doesn't come up with a
 
 <div class="buttons">
   <div class="buttons">
-    <a class="button h-action" @click="clickMe">Button</a>
-    <button class="button h-action is-rounded" @click="clickMe">Button</button>
-    <a class="button h-action is-hoverable" @click="clickMe">Button</a>
-    <button class="button h-action is-grey" @click="clickMe">Button</button>
+    <a class="button v-action" @click="clickMe">Button</a>
+    <button class="button v-action is-rounded" @click="clickMe">Button</button>
+    <a class="button v-action is-hoverable" @click="clickMe">Button</a>
+    <button class="button v-action is-grey" @click="clickMe">Button</button>
   </div>
 </div>
 

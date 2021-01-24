@@ -97,6 +97,21 @@ useHead({
 
           <!--V-Button Disabled-->
           <VButtonDisabledDocumentation />
+
+          <!--V-Button Font Awesome-->
+          <VButtonFaDocumentation />
+
+          <!--V-Button Feather-->
+          <VButtonFeatherDocumentation />
+
+          <!--V-Button Group-->
+          <VButtonGroupDocumentation />
+
+          <!--V-Button Addons-->
+          <VButtonAddonsDocumentation />
+
+          <!--V-Action-->
+          <VButtonActionDocumentation />
         </div>
         <div v-if="toc.length" class="column is-3">
           <DocumentationToc :toc="toc" />

@@ -45,7 +45,7 @@
           <h3 class="dark-inverted" data-filter-match>Tara Svenson</h3>
           <p data-filter-match>UI/UX Designer</p>
           <div class="button-wrap has-text-centered">
-            <button class="button h-button is-primary is-raised">
+            <button class="button v-button is-primary is-raised">
               Add To Project
             </button>
             <div>
@@ -77,7 +77,7 @@
           <h3 class="dark-inverted" data-filter-match>Helmut Fritz</h3>
           <p data-filter-match>Product Manager</p>
           <div class="button-wrap has-text-centered">
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               Add To Team
             </button>
             <div>
@@ -109,7 +109,7 @@
           <h3 class="dark-inverted" data-filter-match>Melany Wallace</h3>
           <p data-filter-match>Web Developer</p>
           <div class="button-wrap has-text-centered">
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               Add To Team
             </button>
             <div>
@@ -141,7 +141,7 @@
           <h3 class="dark-inverted" data-filter-match>Hakeem Calami</h3>
           <p data-filter-match>Software Engineer</p>
           <div class="button-wrap has-text-centered">
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               Add To Team
             </button>
             <div>
@@ -173,7 +173,7 @@
           <h3 class="dark-inverted" data-filter-match>Alejandro Badajoz</h3>
           <p data-filter-match>Business Analyst</p>
           <div class="button-wrap has-text-centered">
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               Add To Team
             </button>
             <div>
@@ -205,7 +205,7 @@
           <h3 class="dark-inverted" data-filter-match>Jeanne Marchand</h3>
           <p data-filter-match>Mobile Developer</p>
           <div class="button-wrap has-text-centered">
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               Add To Team
             </button>
             <div>
@@ -237,7 +237,7 @@
           <h3 class="dark-inverted" data-filter-match>Greta Kroppfer</h3>
           <p data-filter-match>Sales Manager</p>
           <div class="button-wrap has-text-centered">
-            <button class="button h-button is-primary is-raised">
+            <button class="button v-button is-primary is-raised">
               Add To Project
             </button>
             <div>
@@ -269,7 +269,7 @@
           <h3 class="dark-inverted" data-filter-match>Anna Baker</h3>
           <p data-filter-match>UI/UX Designer</p>
           <div class="button-wrap has-text-centered">
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               Add To Team
             </button>
             <div>
@@ -301,7 +301,7 @@
           <h3 class="dark-inverted" data-filter-match>Mary Lebowski</h3>
           <p data-filter-match>Project Manager</p>
           <div class="button-wrap has-text-centered">
-            <button class="button h-button is-primary is-raised">
+            <button class="button v-button is-primary is-raised">
               Add To Project
             </button>
             <div>
@@ -333,7 +333,7 @@
           <h3 class="dark-inverted" data-filter-match>Jonathan Krugger</h3>
           <p data-filter-match>Product Manager</p>
           <div class="button-wrap has-text-centered">
-            <button class="button h-button is-primary is-raised">
+            <button class="button v-button is-primary is-raised">
               Add To Project
             </button>
             <div>
@@ -365,7 +365,7 @@
           <h3 class="dark-inverted" data-filter-match>Benoit Leblanc</h3>
           <p data-filter-match>Software Engineer</p>
           <div class="button-wrap has-text-centered">
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               Add To Team
             </button>
             <div>
@@ -397,7 +397,7 @@
           <h3 class="dark-inverted" data-filter-match>Christie Dallas</h3>
           <p data-filter-match>Web Developer</p>
           <div class="button-wrap has-text-centered">
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               Add To Team
             </button>
             <div>
@@ -429,7 +429,7 @@
           <h3 class="dark-inverted" data-filter-match>Courtney Wilson</h3>
           <p data-filter-match>Web Developer</p>
           <div class="button-wrap has-text-centered">
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               Add To Team
             </button>
             <div>
@@ -461,7 +461,7 @@
           <h3 class="dark-inverted" data-filter-match>Jason Guarank</h3>
           <p data-filter-match>Business Analyst</p>
           <div class="button-wrap has-text-centered">
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               Add To Team
             </button>
             <div>
@@ -493,7 +493,7 @@
           <h3 class="dark-inverted" data-filter-match>Irina Vierbovsky</h3>
           <p data-filter-match>Project Manager</p>
           <div class="button-wrap has-text-centered">
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               Add To Team
             </button>
             <div>
@@ -525,7 +525,7 @@
           <h3 class="dark-inverted" data-filter-match>Edouard Falant</h3>
           <p data-filter-match>Web Developer</p>
           <div class="button-wrap has-text-centered">
-            <button class="button h-button is-primary is-raised">
+            <button class="button v-button is-primary is-raised">
               Add To Project
             </button>
             <div>
@@ -557,7 +557,7 @@
           <h3 class="dark-inverted" data-filter-match>Alice Carasca</h3>
           <p data-filter-match>Software Engineer</p>
           <div class="button-wrap has-text-centered">
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               Add To Team
             </button>
             <div>
@@ -589,7 +589,7 @@
           <h3 class="dark-inverted" data-filter-match>Dwayne Hicks</h3>
           <p data-filter-match>Product Manager</p>
           <div class="button-wrap has-text-centered">
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               Add To Team
             </button>
             <div>

@@ -138,13 +138,13 @@ useHead({
                   </p>
 
                   <div class="side-actions">
-                    <a class="button h-button is-rounded">
+                    <a class="button v-button is-rounded">
                       <span class="icon is-small">
                         <i class="fas fa-phone"></i>
                       </span>
                       <span>Audio Call</span>
                     </a>
-                    <a class="button h-button is-rounded">
+                    <a class="button v-button is-rounded">
                       <span class="icon is-small">
                         <i class="fas fa-video"></i>
                       </span>
@@ -350,7 +350,7 @@ useHead({
                   placeholder="Write a message ..."
                 />
                 <div class="send-message">
-                  <div class="button h-button is-primary is-raised is-rounded">
+                  <div class="button v-button is-primary is-raised is-rounded">
                     Send
                   </div>
                 </div>
@@ -378,7 +378,7 @@ useHead({
                 <p>Select an existing conversation or start a new one</p>
                 <a
                   id="new-chat"
-                  class="button h-button is-solid is-outlined is-big is-rounded"
+                  class="button v-button is-solid is-outlined is-big is-rounded"
                   >Start a new conversation</a
                 >
               </div>

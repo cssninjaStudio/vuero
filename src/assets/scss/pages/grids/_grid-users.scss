@@ -58,7 +58,7 @@
     margin-bottom: 0;
 
     .field,
-    .h-button {
+    .v-button {
       margin-bottom: 0;
 
       .h-select {
@@ -224,7 +224,7 @@
           margin-bottom: 0;
 
           .button,
-          .h-button {
+          .v-button {
             width: calc(50% - 4px);
             color: $light-text;
             margin-bottom: 0;
@@ -427,7 +427,7 @@
         margin-bottom: 0;
 
         .button,
-        .h-button {
+        .v-button {
           width: calc(50% - 4px);
           color: $light-text;
           margin-bottom: 0;
@@ -537,7 +537,7 @@
       .button-wrap {
         margin: 20px 0 0 0;
 
-        .h-button {
+        .v-button {
           width: 100%;
           max-width: 140px;
           margin: 0 auto;

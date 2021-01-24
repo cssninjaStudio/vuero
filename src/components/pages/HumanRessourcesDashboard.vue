@@ -81,7 +81,7 @@
                 </p>
 
                 <button
-                  class="button h-button is-bold is-fullwidth is-dark-outlined"
+                  class="button v-button is-bold is-fullwidth is-dark-outlined"
                 >
                   Manage Jobs
                 </button>
@@ -218,7 +218,7 @@
                     </h3>
                     <p data-filter-match>UI/UX Designer</p>
                     <div class="button-wrap has-text-centered">
-                      <button class="button h-button is-primary is-raised">
+                      <button class="button v-button is-primary is-raised">
                         Hire
                       </button>
                     </div>
@@ -254,7 +254,7 @@
                     </h3>
                     <p data-filter-match>Product Manager</p>
                     <div class="button-wrap has-text-centered">
-                      <button class="button h-button is-dark-outlined is-bold">
+                      <button class="button v-button is-dark-outlined is-bold">
                         Assess
                       </button>
                     </div>
@@ -290,7 +290,7 @@
                     </h3>
                     <p data-filter-match>Web Developer</p>
                     <div class="button-wrap has-text-centered">
-                      <button class="button h-button is-dark-outlined is-bold">
+                      <button class="button v-button is-dark-outlined is-bold">
                         Assess
                       </button>
                     </div>
@@ -308,7 +308,7 @@
           <div class="field">
             <div class="control">
               <input type="text" class="input" placeholder="Search..." />
-              <button class="search-button">
+              <button class="searcv-button">
                 <i class="iconify" data-icon="feather:search"></i>
               </button>
             </div>

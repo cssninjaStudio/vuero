@@ -37,7 +37,7 @@ useHead({
           <div class="button-wrap">
             <RouterLink
               :to="{ name: 'index' }"
-              class="button h-button is-primary is-elevated"
+              class="button v-button is-primary is-elevated"
               >Take me Back</RouterLink
             >
           </div>

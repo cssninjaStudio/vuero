@@ -333,11 +333,11 @@ import { expensesOptions } from '/@src/composition/state/charts/apexcharts/examp
             </div>
             <div class="button-wrap">
               <button
-                class="button h-button is-fullwidth is-primary is-elevated"
+                class="button v-button is-fullwidth is-primary is-elevated"
               >
                 New
               </button>
-              <button class="button h-button is-fullwidth">Settings</button>
+              <button class="button v-button is-fullwidth">Settings</button>
             </div>
           </div>
         </div>

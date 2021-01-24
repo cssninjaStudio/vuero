@@ -89,14 +89,14 @@ useHead({
               </a>
             </div>
             <div class="card-inner">
-              <button id="alertify-demo-1" class="button h-button">
+              <button id="alertify-demo-1" class="button v-button">
                 Launch Alert
               </button>
 
               <div class="highlight highlight-block">
                 <pre><code class="code-highlight">
 //Markup
-&#x3C;button id=&#x22;alertify-demo-1&#x22; class=&#x22;button h-button&#x22;&#x3E;Launch Alert&#x3C;/button&#x3E;
+&#x3C;button id=&#x22;alertify-demo-1&#x22; class=&#x22;button v-button&#x22;&#x3E;Launch Alert&#x3C;/button&#x3E;
 
 //Javascript
 $('#alertify-demo-1').on('click', function () {
@@ -122,14 +122,14 @@ $('#alertify-demo-1').on('click', function () {
               </a>
             </div>
             <div class="card-inner">
-              <button id="alertify-demo-2" class="button h-button">
+              <button id="alertify-demo-2" class="button v-button">
                 Launch Alert
               </button>
 
               <div class="highlight highlight-block">
                 <pre><code class="code-highlight">
 //Markup
-&#x3C;button id=&#x22;alertify-demo-2&#x22; class=&#x22;button h-button&#x22;&#x3E;Launch Alert&#x3C;/button&#x3E;
+&#x3C;button id=&#x22;alertify-demo-2&#x22; class=&#x22;button v-button&#x22;&#x3E;Launch Alert&#x3C;/button&#x3E;
 
 //Javascript
 $('#alertify-demo-2').on('click', function () {

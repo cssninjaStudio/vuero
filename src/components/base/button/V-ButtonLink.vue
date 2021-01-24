@@ -46,24 +46,19 @@ const props = defineProps({
     type: String,
     default: '',
   },
-  circle: {
-    type: Boolean,
-    default: false,
-  },
 })
 </script>
 
 <template>
   <RouterLink
     :to="{ name: link }"
-    class="button h-button"
+    class="button v-button"
     :class="[
       rounded && 'is-rounded',
       bold && 'is-bold',
       outlined && 'is-outlined',
       raised && 'is-raised',
       elevated && 'is-elevated',
-      circle && 'is-circle',
       loading && 'is-loading',
       color && `is-${color}`,
       color && light && 'is-light',

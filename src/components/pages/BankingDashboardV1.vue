@@ -452,7 +452,7 @@ import { incomeOptions } from '/@src/composition/state/charts/apexcharts/example
 
                 <div class="submit-wrap">
                   <button
-                    class="button h-button is-fullwidth is-primary is-big is-raised is-bold"
+                    class="button v-button is-fullwidth is-primary is-big is-raised is-bold"
                   >
                     Send Money
                   </button>

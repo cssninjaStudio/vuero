@@ -119,7 +119,7 @@ useHead({
 
               <button
                 id="show-demo-loaders"
-                class="button h-button is-primary is-elevated"
+                class="button v-button is-primary is-elevated"
                 @click="toggleLoaders"
               >
                 Show Loaders

@@ -33,7 +33,7 @@ const props = defineProps({
   <div class="stat-widget table-widget-v1" :class="[straight && 'is-straight']">
     <div class="widget-head">
       <h3 class="dark-inverted">{{ props.title }}</h3>
-      <button class="button h-button is-primary is-elevated">
+      <button class="button v-button is-primary is-elevated">
         <span class="icon is-small">
           <i class="fas fa-plus"></i>
         </span>

@@ -22,8 +22,8 @@ import { profitChartOptions } from '/@src/composition/state/charts/apexcharts/ex
         <p>We're very happy to see you again on your personal dashboard.</p>
       </div>
       <div class="end">
-        <button class="button h-button is-dark-outlined">View Reports</button>
-        <button class="button h-button is-primary is-elevated">
+        <button class="button v-button is-dark-outlined">View Reports</button>
+        <button class="button v-button is-primary is-elevated">
           Manage Store
         </button>
       </div>

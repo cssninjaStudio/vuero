@@ -1106,7 +1106,7 @@
               <span>$0.00</span>
             </div>
             <div
-              class="button h-button is-primary is-raised is-bold is-fullwidth"
+              class="button v-button is-primary is-raised is-bold is-fullwidth"
             >
               Start Checkout
             </div>

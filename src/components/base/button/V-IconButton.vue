@@ -2,7 +2,7 @@
 import { defineProps } from 'vue'
 
 const props = defineProps({
-  rounded: {
+  circle: {
     type: Boolean,
     default: false,
   },
@@ -51,9 +51,9 @@ const props = defineProps({
 
 <template>
   <button
-    class="button v-button"
+    class="button"
     :class="[
-      rounded && 'is-rounded',
+      circle && 'is-circle',
       bold && 'is-bold',
       outlined && 'is-outlined',
       raised && 'is-raised',
@@ -69,9 +69,6 @@ const props = defineProps({
     </span>
     <span v-if="feather" class="icon">
       <i class="iconify" :data-icon="feather"></i>
-    </span>
-    <span>
-      <slot></slot>
     </span>
   </button>
 </template>

@@ -19,7 +19,7 @@ useHead({
           </p>
           <div class="button-wrap">
             <a
-              class="button h-button is-primary is-rounded is-elevated"
+              class="button v-button is-primary is-rounded is-elevated"
               onclick="goBack()"
               >Take me Back</a
             >

@@ -148,7 +148,7 @@
                   </div>
                 </div>
                 <div class="more-button has-text-centered">
-                  <a class="button h-button is-light">View More</a>
+                  <a class="button v-button is-light">View More</a>
                 </div>
               </div>
             </div>
@@ -510,7 +510,7 @@
                 </div>
 
                 <div class="more-button has-text-centered">
-                  <a class="button h-button is-light">View More</a>
+                  <a class="button v-button is-light">View More</a>
                 </div>
               </div>
             </div>

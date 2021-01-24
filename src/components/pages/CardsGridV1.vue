@@ -91,7 +91,7 @@
             </div>
             <div class="right">
               <div class="buttons">
-                <button class="button h-button is-rounded is-dark-outlined">
+                <button class="button v-button is-rounded is-dark-outlined">
                   View Profile
                 </button>
               </div>
@@ -167,7 +167,7 @@
             </div>
             <div class="right">
               <div class="buttons">
-                <button class="button h-button is-rounded is-dark-outlined">
+                <button class="button v-button is-rounded is-dark-outlined">
                   View Profile
                 </button>
               </div>
@@ -243,7 +243,7 @@
             </div>
             <div class="right">
               <div class="buttons">
-                <button class="button h-button is-rounded is-dark-outlined">
+                <button class="button v-button is-rounded is-dark-outlined">
                   View Profile
                 </button>
               </div>
@@ -319,7 +319,7 @@
             </div>
             <div class="right">
               <div class="buttons">
-                <button class="button h-button is-rounded is-dark-outlined">
+                <button class="button v-button is-rounded is-dark-outlined">
                   View Profile
                 </button>
               </div>
@@ -395,7 +395,7 @@
             </div>
             <div class="right">
               <div class="buttons">
-                <button class="button h-button is-rounded is-dark-outlined">
+                <button class="button v-button is-rounded is-dark-outlined">
                   View Profile
                 </button>
               </div>
@@ -471,7 +471,7 @@
             </div>
             <div class="right">
               <div class="buttons">
-                <button class="button h-button is-rounded is-dark-outlined">
+                <button class="button v-button is-rounded is-dark-outlined">
                   View Profile
                 </button>
               </div>
@@ -547,7 +547,7 @@
             </div>
             <div class="right">
               <div class="buttons">
-                <button class="button h-button is-rounded is-dark-outlined">
+                <button class="button v-button is-rounded is-dark-outlined">
                   View Profile
                 </button>
               </div>
@@ -621,7 +621,7 @@
             </div>
             <div class="right">
               <div class="buttons">
-                <button class="button h-button is-rounded is-dark-outlined">
+                <button class="button v-button is-rounded is-dark-outlined">
                   View Profile
                 </button>
               </div>
@@ -697,7 +697,7 @@
             </div>
             <div class="right">
               <div class="buttons">
-                <button class="button h-button is-rounded is-dark-outlined">
+                <button class="button v-button is-rounded is-dark-outlined">
                   View Profile
                 </button>
               </div>
@@ -773,7 +773,7 @@
             </div>
             <div class="right">
               <div class="buttons">
-                <button class="button h-button is-rounded is-dark-outlined">
+                <button class="button v-button is-rounded is-dark-outlined">
                   View Profile
                 </button>
               </div>
@@ -849,7 +849,7 @@
             </div>
             <div class="right">
               <div class="buttons">
-                <button class="button h-button is-rounded is-dark-outlined">
+                <button class="button v-button is-rounded is-dark-outlined">
                   View Profile
                 </button>
               </div>
@@ -925,7 +925,7 @@
             </div>
             <div class="right">
               <div class="buttons">
-                <button class="button h-button is-rounded is-dark-outlined">
+                <button class="button v-button is-rounded is-dark-outlined">
                   View Profile
                 </button>
               </div>
@@ -1001,7 +1001,7 @@
             </div>
             <div class="right">
               <div class="buttons">
-                <button class="button h-button is-rounded is-dark-outlined">
+                <button class="button v-button is-rounded is-dark-outlined">
                   View Profile
                 </button>
               </div>
@@ -1077,7 +1077,7 @@
             </div>
             <div class="right">
               <div class="buttons">
-                <button class="button h-button is-rounded is-dark-outlined">
+                <button class="button v-button is-rounded is-dark-outlined">
                   View Profile
                 </button>
               </div>
@@ -1153,7 +1153,7 @@
             </div>
             <div class="right">
               <div class="buttons">
-                <button class="button h-button is-rounded is-dark-outlined">
+                <button class="button v-button is-rounded is-dark-outlined">
                   View Profile
                 </button>
               </div>
@@ -1229,7 +1229,7 @@
             </div>
             <div class="right">
               <div class="buttons">
-                <button class="button h-button is-rounded is-dark-outlined">
+                <button class="button v-button is-rounded is-dark-outlined">
                   View Profile
                 </button>
               </div>
@@ -1305,7 +1305,7 @@
             </div>
             <div class="right">
               <div class="buttons">
-                <button class="button h-button is-rounded is-dark-outlined">
+                <button class="button v-button is-rounded is-dark-outlined">
                   View Profile
                 </button>
               </div>
@@ -1381,7 +1381,7 @@
             </div>
             <div class="right">
               <div class="buttons">
-                <button class="button h-button is-rounded is-dark-outlined">
+                <button class="button v-button is-rounded is-dark-outlined">
                   View Profile
                 </button>
               </div>

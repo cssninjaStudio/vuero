@@ -8,7 +8,7 @@ You can browse [icons here](https://icones.netlify.app/). Please refer to markup
 ```vue {4-7}
 <template>
   <div class="buttons">
-    <button class="button h-button is-primary is-elevated">
+    <button class="button v-button is-primary is-elevated">
       <!-- Feather Icons -->
       <span class="icon">
         <i class="iconify" data-icon="feather:twitter"></i>
@@ -16,7 +16,7 @@ You can browse [icons here](https://icones.netlify.app/). Please refer to markup
       <span>Tweet Now</span>
     </button>
 
-    <button class="button h-button is-danger is-rounded is-elevated">
+    <button class="button v-button is-danger is-rounded is-elevated">
       <!-- Remix Icons -->
       <span class="icon">
         <i class="iconify" data-icon="ri:ancient-gate-line"></i>
@@ -47,7 +47,7 @@ You can browse [icons here](https://icones.netlify.app/). Please refer to markup
 
 <div class="buttons">
   <button 
-    class="button h-button is-primary is-elevated" 
+    class="button v-button is-primary is-elevated" 
     @click="clickMyText"
   >
     <span class="icon">
@@ -56,7 +56,7 @@ You can browse [icons here](https://icones.netlify.app/). Please refer to markup
     <span class="text">Tweet Now</span>
   </button>
   <button
-    class="button h-button is-danger is-rounded is-elevated" 
+    class="button v-button is-danger is-rounded is-elevated" 
     @click="clickMyText"
   >
     <span class="icon">

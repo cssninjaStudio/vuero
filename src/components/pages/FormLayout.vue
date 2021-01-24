@@ -22,7 +22,7 @@ const isStuck = computed(() => {
             <div class="buttons">
               <RouterLink
                 :to="{ name: 'admin-layouts-profile-view' }"
-                class="button h-button is-light is-dark-outlined"
+                class="button v-button is-light is-dark-outlined"
               >
                 <span class="icon">
                   <i class="lnir lnir-arrow-left rem-100"></i>
@@ -31,7 +31,7 @@ const isStuck = computed(() => {
               </RouterLink>
               <button
                 id="save-button"
-                class="button h-button is-primary is-raised"
+                class="button v-button is-primary is-raised"
               >
                 Schedule
               </button>

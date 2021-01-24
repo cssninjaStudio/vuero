@@ -58,7 +58,7 @@
       </div>
     </div>
 
-    <a class="button h-button is-primary is-raised is-bold">
+    <a class="button v-button is-primary is-raised is-bold">
       <span>New Project</span>
     </a>
   </div>
@@ -93,7 +93,7 @@
       display: none;
     }
 
-    .h-button {
+    .v-button {
       min-width: 110px;
     }
   }

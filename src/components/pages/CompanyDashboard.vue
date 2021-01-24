@@ -354,7 +354,7 @@ onMounted(async () => {
                 <span>Updated 5 hours ago</span>
               </div>
               <div class="flex-end">
-                <button class="button h-button is-primary is-raised">
+                <button class="button v-button is-primary is-raised">
                   Manage
                 </button>
               </div>
@@ -382,7 +382,7 @@ onMounted(async () => {
                 <span>Updated 2 hours ago</span>
               </div>
               <div class="flex-end">
-                <button class="button h-button is-primary is-raised">
+                <button class="button v-button is-primary is-raised">
                   Manage
                 </button>
               </div>
@@ -409,7 +409,7 @@ onMounted(async () => {
                 <span>Updated 30 minutes ago</span>
               </div>
               <div class="flex-end">
-                <button class="button h-button is-primary is-raised">
+                <button class="button v-button is-primary is-raised">
                   Manage
                 </button>
               </div>
@@ -436,7 +436,7 @@ onMounted(async () => {
                 <span>Updated 6 hours ago</span>
               </div>
               <div class="flex-end">
-                <button class="button h-button is-primary is-raised">
+                <button class="button v-button is-primary is-raised">
                   Manage
                 </button>
               </div>

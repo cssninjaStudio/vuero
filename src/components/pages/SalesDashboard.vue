@@ -63,8 +63,8 @@ onMounted(async () => {
         <p>We're very happy to see you again on your dashboard.</p>
       </div>
       <div class="end">
-        <button class="button h-button is-dark-outlined">View Reports</button>
-        <button class="button h-button is-primary is-elevated">
+        <button class="button v-button is-dark-outlined">View Reports</button>
+        <button class="button v-button is-primary is-elevated">
           Transactions
         </button>
       </div>

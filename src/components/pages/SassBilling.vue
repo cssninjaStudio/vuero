@@ -384,7 +384,7 @@ const cardInfo = reactive({
                 <div class="button-wrap">
                   <button
                     type="button"
-                    class="button h-button is-primary is-raised is-fullwidth"
+                    class="button v-button is-primary is-raised is-fullwidth"
                   >
                     Save Payment Method
                   </button>
@@ -752,7 +752,7 @@ const cardInfo = reactive({
           .button-wrap {
             padding-top: 16px;
 
-            .h-button {
+            .v-button {
               min-height: 50px;
             }
           }

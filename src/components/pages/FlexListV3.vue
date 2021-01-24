@@ -104,7 +104,7 @@ const props = defineProps({
               </span>
             </div>
             <div class="flex-table-cell cell-end" data-th="Actions">
-              <a class="button h-button has-dot dark-outlined is-pushed-mobile"
+              <a class="button v-button has-dot dark-outlined is-pushed-mobile"
                 >Purchase <i class="fas fa-circle dot"></i> $26</a
               >
             </div>
@@ -163,7 +163,7 @@ const props = defineProps({
               </span>
             </div>
             <div class="flex-table-cell cell-end" data-th="Actions">
-              <a class="button h-button has-dot dark-outlined is-pushed-mobile"
+              <a class="button v-button has-dot dark-outlined is-pushed-mobile"
                 >Purchase <i class="fas fa-circle dot"></i> $12</a
               >
             </div>
@@ -222,7 +222,7 @@ const props = defineProps({
               </span>
             </div>
             <div class="flex-table-cell cell-end" data-th="Actions">
-              <a class="button h-button has-dot dark-outlined is-pushed-mobile"
+              <a class="button v-button has-dot dark-outlined is-pushed-mobile"
                 >Purchase <i class="fas fa-circle dot"></i> $16</a
               >
             </div>
@@ -281,7 +281,7 @@ const props = defineProps({
               </span>
             </div>
             <div class="flex-table-cell cell-end" data-th="Actions">
-              <a class="button h-button has-dot dark-outlined is-pushed-mobile"
+              <a class="button v-button has-dot dark-outlined is-pushed-mobile"
                 >Purchase <i class="fas fa-circle dot"></i> FREE</a
               >
             </div>
@@ -340,7 +340,7 @@ const props = defineProps({
               </span>
             </div>
             <div class="flex-table-cell cell-end" data-th="Actions">
-              <a class="button h-button has-dot dark-outlined is-pushed-mobile"
+              <a class="button v-button has-dot dark-outlined is-pushed-mobile"
                 >Purchase <i class="fas fa-circle dot"></i> $8</a
               >
             </div>
@@ -399,7 +399,7 @@ const props = defineProps({
               </span>
             </div>
             <div class="flex-table-cell cell-end" data-th="Actions">
-              <a class="button h-button has-dot dark-outlined is-pushed-mobile"
+              <a class="button v-button has-dot dark-outlined is-pushed-mobile"
                 >Purchase <i class="fas fa-circle dot"></i> $25</a
               >
             </div>
@@ -458,7 +458,7 @@ const props = defineProps({
               </span>
             </div>
             <div class="flex-table-cell cell-end" data-th="Actions">
-              <a class="button h-button has-dot dark-outlined is-pushed-mobile"
+              <a class="button v-button has-dot dark-outlined is-pushed-mobile"
                 >Purchase <i class="fas fa-circle dot"></i> $12</a
               >
             </div>
@@ -519,7 +519,7 @@ const props = defineProps({
               </span>
             </div>
             <div class="flex-table-cell cell-end" data-th="Actions">
-              <a class="button h-button has-dot dark-outlined is-pushed-mobile"
+              <a class="button v-button has-dot dark-outlined is-pushed-mobile"
                 >Purchase <i class="fas fa-circle dot"></i> $34</a
               >
             </div>
@@ -578,7 +578,7 @@ const props = defineProps({
               </span>
             </div>
             <div class="flex-table-cell cell-end" data-th="Actions">
-              <a class="button h-button has-dot dark-outlined is-pushed-mobile"
+              <a class="button v-button has-dot dark-outlined is-pushed-mobile"
                 >Purchase <i class="fas fa-circle dot"></i> $22</a
               >
             </div>
@@ -637,7 +637,7 @@ const props = defineProps({
               </span>
             </div>
             <div class="flex-table-cell cell-end" data-th="Actions">
-              <a class="button h-button has-dot dark-outlined is-pushed-mobile"
+              <a class="button v-button has-dot dark-outlined is-pushed-mobile"
                 >Purchase <i class="fas fa-circle dot"></i> $35</a
               >
             </div>

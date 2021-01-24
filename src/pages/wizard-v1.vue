@@ -89,12 +89,12 @@ useHead({
       <div class="wizard-buttons">
         <div class="wizard-buttons-inner">
           <button
-            class="button h-button is-light is-bold wizard-button-previous"
+            class="button v-button is-light is-bold wizard-button-previous"
           >
             Previous
           </button>
           <button
-            class="button h-button is-primary is-bold is-elevated wizard-button-next"
+            class="button v-button is-primary is-bold is-elevated wizard-button-next"
           >
             Next
           </button>

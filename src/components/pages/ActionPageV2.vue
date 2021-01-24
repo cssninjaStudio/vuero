@@ -76,8 +76,8 @@
               </div>
             </div>
             <div class="buttons">
-              <button class="button h-button is-dark-outlined">Decline</button>
-              <button class="button h-button is-primary is-raised">
+              <button class="button v-button is-dark-outlined">Decline</button>
+              <button class="button v-button is-primary is-raised">
                 Accept
               </button>
             </div>

@@ -33,7 +33,7 @@ const props = defineProps({
       </div>
     </div>
     <div class="cart-button">
-      <div class="button h-button is-primary is-raised is-bold is-fullwidth">
+      <div class="button v-button is-primary is-raised is-bold is-fullwidth">
         Start Checkout
       </div>
     </div>

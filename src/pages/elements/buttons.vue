@@ -77,7 +77,7 @@ useHead({
           :class="[toc.length > 0 ? 'is-10' : 'is-12']"
           class="column"
         >
-          <!--H-Button-->
+          <!--v-button-->
           <ButtonBaseDocumentation />
 
           <!--Solid Buttons-->
@@ -110,7 +110,7 @@ useHead({
           <!--Addon Buttons-->
           <ButtonAddonsDocumentation />
 
-          <!--H-Action-->
+          <!--v-action-->
           <ButtonActionsDocumentation />
         </div>
         <div v-if="toc.length" class="column is-2">

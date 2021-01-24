@@ -246,7 +246,7 @@
             </div>
             <div class="button-wrap">
               <button
-                class="button h-button is-primary is-bold is-raised is-fullwidth"
+                class="button v-button is-primary is-bold is-raised is-fullwidth"
               >
                 Confirm My Order
               </button>

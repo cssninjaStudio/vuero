@@ -111,7 +111,7 @@ watch(
         <div class="navbar-item">
           <RouterLink
             :to="{ name: 'auth-signup-1' }"
-            class="button h-button is-rounded is-primary is-raised"
+            class="button v-button is-rounded is-primary is-raised"
           >
             <strong>Sign up</strong>
           </RouterLink>

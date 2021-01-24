@@ -97,8 +97,8 @@ const props = defineProps({
             </div>
             <div class="meta-right">
               <div class="buttons">
-                <a class="button h-button is-light">More Info</a>
-                <a class="button h-button is-primary is-raised">Book Now</a>
+                <a class="button v-button is-light">More Info</a>
+                <a class="button v-button is-primary is-raised">Book Now</a>
               </div>
             </div>
           </div>
@@ -150,8 +150,8 @@ const props = defineProps({
             </div>
             <div class="meta-right">
               <div class="buttons">
-                <a class="button h-button is-light">More Info</a>
-                <a class="button h-button is-primary is-raised">Book Now</a>
+                <a class="button v-button is-light">More Info</a>
+                <a class="button v-button is-primary is-raised">Book Now</a>
               </div>
             </div>
           </div>
@@ -212,8 +212,8 @@ const props = defineProps({
             </div>
             <div class="meta-right">
               <div class="buttons">
-                <a class="button h-button is-light">More Info</a>
-                <a class="button h-button is-primary is-raised">Book Now</a>
+                <a class="button v-button is-light">More Info</a>
+                <a class="button v-button is-primary is-raised">Book Now</a>
               </div>
             </div>
           </div>
@@ -273,8 +273,8 @@ const props = defineProps({
             </div>
             <div class="meta-right">
               <div class="buttons">
-                <a class="button h-button is-light">More Info</a>
-                <a class="button h-button is-primary is-raised">Book Now</a>
+                <a class="button v-button is-light">More Info</a>
+                <a class="button v-button is-primary is-raised">Book Now</a>
               </div>
             </div>
           </div>
@@ -326,8 +326,8 @@ const props = defineProps({
             </div>
             <div class="meta-right">
               <div class="buttons">
-                <a class="button h-button is-light">More Info</a>
-                <a class="button h-button is-primary is-raised">Book Now</a>
+                <a class="button v-button is-light">More Info</a>
+                <a class="button v-button is-primary is-raised">Book Now</a>
               </div>
             </div>
           </div>
@@ -387,8 +387,8 @@ const props = defineProps({
             </div>
             <div class="meta-right">
               <div class="buttons">
-                <a class="button h-button is-light">More Info</a>
-                <a class="button h-button is-primary is-raised">Book Now</a>
+                <a class="button v-button is-light">More Info</a>
+                <a class="button v-button is-primary is-raised">Book Now</a>
               </div>
             </div>
           </div>
@@ -448,8 +448,8 @@ const props = defineProps({
             </div>
             <div class="meta-right">
               <div class="buttons">
-                <a class="button h-button is-light">More Info</a>
-                <a class="button h-button is-primary is-raised">Book Now</a>
+                <a class="button v-button is-light">More Info</a>
+                <a class="button v-button is-primary is-raised">Book Now</a>
               </div>
             </div>
           </div>
@@ -505,8 +505,8 @@ const props = defineProps({
             </div>
             <div class="meta-right">
               <div class="buttons">
-                <a class="button h-button is-light">More Info</a>
-                <a class="button h-button is-primary is-raised">Book Now</a>
+                <a class="button v-button is-light">More Info</a>
+                <a class="button v-button is-primary is-raised">Book Now</a>
               </div>
             </div>
           </div>
@@ -563,8 +563,8 @@ const props = defineProps({
             </div>
             <div class="meta-right">
               <div class="buttons">
-                <a class="button h-button is-light">More Info</a>
-                <a class="button h-button is-primary is-raised">Book Now</a>
+                <a class="button v-button is-light">More Info</a>
+                <a class="button v-button is-primary is-raised">Book Now</a>
               </div>
             </div>
           </div>
@@ -624,8 +624,8 @@ const props = defineProps({
             </div>
             <div class="meta-right">
               <div class="buttons">
-                <a class="button h-button is-light">More Info</a>
-                <a class="button h-button is-primary is-raised">Book Now</a>
+                <a class="button v-button is-light">More Info</a>
+                <a class="button v-button is-primary is-raised">Book Now</a>
               </div>
             </div>
           </div>

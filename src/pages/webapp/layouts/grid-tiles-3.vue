@@ -71,7 +71,7 @@ useHead({
             </div>
           </div>
         </div>
-        <button class="button h-button is-primary is-raised">
+        <button class="button v-button is-primary is-raised">
           <span class="icon">
             <i class="fas fa-plus"></i>
           </span>

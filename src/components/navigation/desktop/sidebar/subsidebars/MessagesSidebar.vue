@@ -36,7 +36,7 @@ import {
       <div class="is-new-conversation">
         <button
           id="start-conversation"
-          class="button h-button is-primary is-raised is-rounded is-fullwidth"
+          class="button v-button is-primary is-raised is-rounded is-fullwidth"
         >
           <i class="iconify" data-icon="feather:plus"></i>
           <span>New Conversation</span>

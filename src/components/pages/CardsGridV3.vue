@@ -95,13 +95,13 @@
             </div>
           </div>
           <div class="buttons">
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:eye"></i>
               </span>
               <span>View</span>
             </button>
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:edit-2"></i>
               </span>
@@ -168,13 +168,13 @@
             </div>
           </div>
           <div class="buttons">
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:eye"></i>
               </span>
               <span>View</span>
             </button>
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:edit-2"></i>
               </span>
@@ -252,13 +252,13 @@
             </div>
           </div>
           <div class="buttons">
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:eye"></i>
               </span>
               <span>View</span>
             </button>
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:edit-2"></i>
               </span>
@@ -320,13 +320,13 @@
             </div>
           </div>
           <div class="buttons">
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:eye"></i>
               </span>
               <span>View</span>
             </button>
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:edit-2"></i>
               </span>
@@ -393,13 +393,13 @@
             </div>
           </div>
           <div class="buttons">
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:eye"></i>
               </span>
               <span>View</span>
             </button>
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:edit-2"></i>
               </span>
@@ -458,13 +458,13 @@
             </div>
           </div>
           <div class="buttons">
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:eye"></i>
               </span>
               <span>View</span>
             </button>
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:edit-2"></i>
               </span>
@@ -518,13 +518,13 @@
             </div>
           </div>
           <div class="buttons">
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:eye"></i>
               </span>
               <span>View</span>
             </button>
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:edit-2"></i>
               </span>
@@ -580,13 +580,13 @@
             </div>
           </div>
           <div class="buttons">
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:eye"></i>
               </span>
               <span>View</span>
             </button>
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:edit-2"></i>
               </span>
@@ -642,13 +642,13 @@
             </div>
           </div>
           <div class="buttons">
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:eye"></i>
               </span>
               <span>View</span>
             </button>
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:edit-2"></i>
               </span>
@@ -702,13 +702,13 @@
             </div>
           </div>
           <div class="buttons">
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:eye"></i>
               </span>
               <span>View</span>
             </button>
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:edit-2"></i>
               </span>
@@ -780,13 +780,13 @@
             </div>
           </div>
           <div class="buttons">
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:eye"></i>
               </span>
               <span>View</span>
             </button>
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:edit-2"></i>
               </span>
@@ -853,13 +853,13 @@
             </div>
           </div>
           <div class="buttons">
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:eye"></i>
               </span>
               <span>View</span>
             </button>
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:edit-2"></i>
               </span>
@@ -915,13 +915,13 @@
             </div>
           </div>
           <div class="buttons">
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:eye"></i>
               </span>
               <span>View</span>
             </button>
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:edit-2"></i>
               </span>
@@ -981,13 +981,13 @@
             </div>
           </div>
           <div class="buttons">
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:eye"></i>
               </span>
               <span>View</span>
             </button>
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:edit-2"></i>
               </span>
@@ -1054,13 +1054,13 @@
             </div>
           </div>
           <div class="buttons">
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:eye"></i>
               </span>
               <span>View</span>
             </button>
-            <button class="button h-button is-dark-outlined">
+            <button class="button v-button is-dark-outlined">
               <span class="icon">
                 <i class="iconify" data-icon="feather:edit-2"></i>
               </span>

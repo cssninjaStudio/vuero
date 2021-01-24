@@ -57,7 +57,7 @@
     margin-bottom: 0;
 
     .field,
-    .h-button {
+    .v-button {
       margin-bottom: 0;
 
       .h-select {
@@ -211,7 +211,7 @@
         }
 
         .right {
-          .h-button {
+          .v-button {
             color: $light-text;
 
             &:hover {
@@ -267,7 +267,7 @@
 
         .card-grid-item-footer {
           .right {
-            .h-button {
+            .v-button {
               box-shadow: none !important;
             }
           }

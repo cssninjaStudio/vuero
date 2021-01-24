@@ -94,7 +94,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
             <button type="button" class="button send-button">
               Send Message
             </button>
-            <a class="attach-button">
+            <a class="attacv-button">
               <i class="sl sl-icon-paper-clip"></i>
             </a>
           </div>

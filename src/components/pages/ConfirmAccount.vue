@@ -22,7 +22,7 @@
             board.
           </p>
           <div class="buttons">
-            <button class="button h-button is-primary is-raised">
+            <button class="button v-button is-primary is-raised">
               Confirm Account
             </button>
           </div>

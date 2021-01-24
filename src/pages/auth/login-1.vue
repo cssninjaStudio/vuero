@@ -112,7 +112,7 @@ useHead({
                   <button
                     id="login-submit"
                     type="button"
-                    class="button h-button is-big is-rounded is-primary is-bold is-raised"
+                    class="button v-button is-big is-rounded is-primary is-bold is-raised"
                   >
                     Login Now
                   </button>
@@ -154,13 +154,13 @@ useHead({
                   <button
                     id="cancel-recover"
                     type="button"
-                    class="button h-button is-white is-big is-rounded is-lower"
+                    class="button v-button is-white is-big is-rounded is-lower"
                   >
                     Cancel
                   </button>
                   <button
                     type="button"
-                    class="button h-button is-solid is-big is-rounded is-lower is-raised is-colored"
+                    class="button v-button is-solid is-big is-rounded is-lower is-raised is-colored"
                   >
                     Confirm
                   </button>

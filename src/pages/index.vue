@@ -172,7 +172,7 @@ useHead({
               <div class="buttons">
                 <a
                   href="https://themeforest.net/item/huro-multipurpose-admin-and-webapp-ui-kit/28933249"
-                  class="button h-button is-primary is-rounded is-elevated action-button"
+                  class="button v-button is-primary is-rounded is-elevated action-button"
                   >Buy Now</a
                 >
                 <a href="https://cssninja.io" class="button chat-button"
@@ -313,7 +313,7 @@ useHead({
               <div class="buttons">
                 <a
                   href="https://docs.huro.cssninja.io"
-                  class="button h-button is-primary is-rounded is-elevated action-button"
+                  class="button v-button is-primary is-rounded is-elevated action-button"
                   >Read the Docs</a
                 >
                 <a
@@ -393,7 +393,7 @@ useHead({
           <p class="p-t-40 p-b-40 has-text-centered">
             <a
               href="https://themeforest.net/item/huro-multipurpose-admin-and-webapp-ui-kit/28933249"
-              class="button h-button is-rounded is-primary is-elevated is-bold is-huge"
+              class="button v-button is-rounded is-primary is-elevated is-bold is-huge"
             >
               Buy Now
             </a>

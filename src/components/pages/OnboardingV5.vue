@@ -26,7 +26,7 @@
             tament.
           </p>
           <div class="button-wrap">
-            <a class="button h-button is-primary is-elevated">Configure</a>
+            <a class="button v-button is-primary is-elevated">Configure</a>
           </div>
         </div>
         <!--Card-->
@@ -48,7 +48,7 @@
             tament.
           </p>
           <div class="button-wrap">
-            <a class="button h-button is-primary is-elevated">Configure</a>
+            <a class="button v-button is-primary is-elevated">Configure</a>
           </div>
         </div>
         <!--Card-->
@@ -70,7 +70,7 @@
             tament.
           </p>
           <div class="button-wrap">
-            <a class="button h-button is-primary is-elevated">Manage</a>
+            <a class="button v-button is-primary is-elevated">Manage</a>
           </div>
         </div>
       </div>

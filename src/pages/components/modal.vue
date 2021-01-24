@@ -104,17 +104,17 @@ useHead({
             <div class="card-inner">
               <div class="buttons">
                 <a
-                  class="button h-button is-rounded h-modal-trigger"
+                  class="button v-button is-rounded h-modal-trigger"
                   @click="leftActionsOpen = true"
                   >Left Actions</a
                 >
                 <a
-                  class="button h-button is-rounded h-modal-trigger"
+                  class="button v-button is-rounded h-modal-trigger"
                   @click="centeredActionsOpen = true"
                   >Centered Actions</a
                 >
                 <a
-                  class="button h-button is-rounded h-modal-trigger"
+                  class="button v-button is-rounded h-modal-trigger"
                   @click="rightActionsOpen = true"
                   >Right Actions</a
                 >
@@ -122,7 +122,7 @@ useHead({
 
               <div class="highlight highlight-block">
                 <pre><code class="code-highlight">
-&#x3C;a class=&#x22;button h-button is-rounded h-modal-trigger&#x22; data-modal=&#x22;demo-right-actions-modal&#x22;&#x3E;Right Actions&#x3C;/a&#x3E;
+&#x3C;a class=&#x22;button v-button is-rounded h-modal-trigger&#x22; data-modal=&#x22;demo-right-actions-modal&#x22;&#x3E;Right Actions&#x3C;/a&#x3E;
 
 &#x3C;div id=&#x22;demo-right-actions-modal&#x22; class=&#x22;modal h-modal&#x22;&#x3E;
     &#x3C;div class=&#x22;modal-background  h-modal-close&#x22;&#x3E;&#x3C;/div&#x3E;
@@ -146,8 +146,8 @@ useHead({
                 &#x3C;/div&#x3E;
             &#x3C;/div&#x3E;
             &#x3C;div class=&#x22;modal-card-foot is-end&#x22;&#x3E;
-                &#x3C;a class=&#x22;button h-button is-rounded h-modal-close&#x22;&#x3E;Cancel&#x3C;/a&#x3E;
-                &#x3C;a class=&#x22;button h-button is-primary is-raised is-rounded&#x22;&#x3E;Confirm&#x3C;/a&#x3E;
+                &#x3C;a class=&#x22;button v-button is-rounded h-modal-close&#x22;&#x3E;Cancel&#x3C;/a&#x3E;
+                &#x3C;a class=&#x22;button v-button is-primary is-raised is-rounded&#x22;&#x3E;Confirm&#x3C;/a&#x3E;
             &#x3C;/div&#x3E;
         &#x3C;/div&#x3E;
     &#x3C;/div&#x3E;
@@ -172,27 +172,27 @@ useHead({
             <div class="card-inner">
               <div class="buttons">
                 <a
-                  class="button h-button is-rounded h-modal-trigger"
+                  class="button v-button is-rounded h-modal-trigger"
                   @click="smallOpen = true"
                   >Small Modal</a
                 >
                 <a
-                  class="button h-button is-rounded h-modal-trigger"
+                  class="button v-button is-rounded h-modal-trigger"
                   @click="standardOpen = true"
                   >Standard Modal</a
                 >
                 <a
-                  class="button h-button is-rounded h-modal-trigger"
+                  class="button v-button is-rounded h-modal-trigger"
                   @click="mediumOpen = true"
                   >Medium Modal</a
                 >
                 <a
-                  class="button h-button is-rounded h-modal-trigger"
+                  class="button v-button is-rounded h-modal-trigger"
                   @click="largeOpen = true"
                   >Large Modal</a
                 >
                 <a
-                  class="button h-button is-rounded h-modal-trigger"
+                  class="button v-button is-rounded h-modal-trigger"
                   @click="bigOpen = true"
                   >Big Modal</a
                 >
@@ -214,27 +214,27 @@ useHead({
             <div class="card-inner">
               <div class="buttons">
                 <a
-                  class="button h-button is-rounded h-modal-trigger"
+                  class="button v-button is-rounded h-modal-trigger"
                   @click="smallFormOpen = true"
                   >Small Modal</a
                 >
                 <a
-                  class="button h-button is-rounded h-modal-trigger"
+                  class="button v-button is-rounded h-modal-trigger"
                   @click="standardFormOpen = true"
                   >Standard Modal</a
                 >
                 <a
-                  class="button h-button is-rounded h-modal-trigger"
+                  class="button v-button is-rounded h-modal-trigger"
                   @click="mediumFormOpen = true"
                   >Medium Modal</a
                 >
                 <a
-                  class="button h-button is-rounded h-modal-trigger"
+                  class="button v-button is-rounded h-modal-trigger"
                   @click="largeFormOpen = true"
                   >Large Modal</a
                 >
                 <a
-                  class="button h-button is-rounded h-modal-trigger"
+                  class="button v-button is-rounded h-modal-trigger"
                   @click="bigFormOpen = true"
                   >Big Modal</a
                 >

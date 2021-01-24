@@ -47,7 +47,7 @@
     margin-left: auto;
     margin-bottom: 0;
 
-    .h-button {
+    .v-button {
       margin-bottom: 0;
     }
   }
@@ -463,7 +463,7 @@
         }
 
         td {
-          .h-button {
+          .v-button {
             &:hover {
               border-color: $accent !important;
               color: $accent !important;

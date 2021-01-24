@@ -16,8 +16,8 @@
         <p>We're very happy to see you again on your dashboard.</p>
       </div>
       <div class="end">
-        <button class="button h-button is-dark-outlined">View Reports</button>
-        <button class="button h-button is-primary is-elevated">
+        <button class="button v-button is-dark-outlined">View Reports</button>
+        <button class="button v-button is-primary is-elevated">
           Manage Shop
         </button>
       </div>
@@ -357,7 +357,7 @@
               <a class="action-link is-pushed-mobile">TR-7295</a>
             </div>
             <div class="flex-table-cell cell-end" data-th="Actions">
-              <button class="button h-button is-dark-outlined is-pushed-mobile">
+              <button class="button v-button is-dark-outlined is-pushed-mobile">
                 View Order
               </button>
             </div>
@@ -398,7 +398,7 @@
               <a class="action-link is-pushed-mobile">TR-6259</a>
             </div>
             <div class="flex-table-cell cell-end" data-th="Actions">
-              <button class="button h-button is-dark-outlined is-pushed-mobile">
+              <button class="button v-button is-dark-outlined is-pushed-mobile">
                 View Order
               </button>
             </div>
@@ -439,7 +439,7 @@
               <span class="light-text is-pushed-mobile">N/A</span>
             </div>
             <div class="flex-table-cell cell-end" data-th="Actions">
-              <button class="button h-button is-dark-outlined is-pushed-mobile">
+              <button class="button v-button is-dark-outlined is-pushed-mobile">
                 View Order
               </button>
             </div>
@@ -480,7 +480,7 @@
               <a class="action-link is-pushed-mobile">TR-48951</a>
             </div>
             <div class="flex-table-cell cell-end" data-th="Actions">
-              <button class="button h-button is-dark-outlined is-pushed-mobile">
+              <button class="button v-button is-dark-outlined is-pushed-mobile">
                 View Order
               </button>
             </div>
@@ -521,7 +521,7 @@
               <a class="action-link is-pushed-mobile">TR-48555</a>
             </div>
             <div class="flex-table-cell cell-end" data-th="Actions">
-              <button class="button h-button is-dark-outlined is-pushed-mobile">
+              <button class="button v-button is-dark-outlined is-pushed-mobile">
                 View Order
               </button>
             </div>

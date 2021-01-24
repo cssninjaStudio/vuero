@@ -44,7 +44,7 @@ useHead({
     <div class="datatable-toolbar">
       <div class="field has-addons is-disabled">
         <p class="control">
-          <button class="button h-button">
+          <button class="button v-button">
             <span class="icon is-small">
               <i class="fas fa-download"></i>
             </span>
@@ -52,7 +52,7 @@ useHead({
           </button>
         </p>
         <p class="control">
-          <button class="button h-button">
+          <button class="button v-button">
             <span class="icon is-small">
               <i class="fas fa-upload"></i>
             </span>
@@ -60,7 +60,7 @@ useHead({
           </button>
         </p>
         <p class="control">
-          <button class="button h-button">
+          <button class="button v-button">
             <span class="icon is-small">
               <i class="fas fa-times"></i>
             </span>
@@ -70,7 +70,7 @@ useHead({
       </div>
 
       <div class="buttons">
-        <button class="button h-button is-primary is-elevated">
+        <button class="button v-button is-primary is-elevated">
           <span class="icon">
             <i class="fas fa-upload"></i>
           </span>
