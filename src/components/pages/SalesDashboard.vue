@@ -23,7 +23,7 @@ import {
   onPersonalScoreGaugeReady,
 } from '/@src/composition/state/charts/billboardjs/examples/personalScoreGauge'
 
-onMounted(async () => {
+onMounted(() => {
   setTimeout(() => {
     salesBarOptions.series = [
       {

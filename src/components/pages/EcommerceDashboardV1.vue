@@ -1,3 +1,26 @@
+<script setup lang="ts">
+import { customerEngagementChartOptions } from '/@src/composition/state/charts/apexcharts/examples/ecommerceCustomerEngagementChart'
+import { customersChartOptions } from '/@src/composition/state/charts/apexcharts/examples/ecommerceCustomersChart'
+import { productReturnsChartOptions } from '/@src/composition/state/charts/apexcharts/examples/ecommerceProductReturnsChart'
+import { revenueChartsOptions } from '/@src/composition/state/charts/apexcharts/examples/ecommerceRevenueChart'
+import {
+  activeTicketsChartOptions,
+  escalatedChartOptions,
+  closedTicketsChartOptions,
+} from '/@src/composition/state/charts/apexcharts/examples/ecommerceSupportCharts'
+import {
+  spark1,
+  spark2,
+  spark3,
+  spark4,
+} from '/@src/composition/state/charts/apexcharts/examples/ecommerceSparksCharts'
+import {
+  freeShippingChartOptions,
+  groundShippingChartOptions,
+  nextDayAirChartOptions,
+} from '/@src/composition/state/charts/apexcharts/examples/ecommerceShippingCharts'
+</script>
+
 <template>
   <!--Ecommerce Dashboard V1-->
   <div class="ecommerce-dashboard ecommerce-dashboard-v1">
@@ -38,7 +61,13 @@
               <span class="dark-inverted">641.4K</span>
             </div>
             <div class="right">
-              <div id="spark1"></div>
+              <apexchart
+                id="spark1"
+                :height="spark1.chart.height"
+                :type="spark1.chart.type"
+                :series="spark1.series"
+                :options="spark1"
+              ></apexchart>
             </div>
           </div>
         </div>
@@ -58,7 +87,13 @@
               <span class="dark-inverted">$389.9K</span>
             </div>
             <div class="right">
-              <div id="spark2"></div>
+              <apexchart
+                id="spark2"
+                :height="spark2.chart.height"
+                :type="spark2.chart.type"
+                :series="spark2.series"
+                :options="spark2"
+              ></apexchart>
             </div>
           </div>
         </div>
@@ -78,7 +113,13 @@
               <span class="dark-inverted">371</span>
             </div>
             <div class="right">
-              <div id="spark3"></div>
+              <apexchart
+                id="spark3"
+                :height="spark3.chart.height"
+                :type="spark3.chart.type"
+                :series="spark3.series"
+                :options="spark3"
+              ></apexchart>
             </div>
           </div>
         </div>
@@ -98,7 +139,13 @@
               <span class="dark-inverted">29</span>
             </div>
             <div class="right">
-              <div id="spark4"></div>
+              <apexchart
+                id="spark4"
+                :height="spark4.chart.height"
+                :type="spark4.chart.type"
+                :series="spark4.series"
+                :options="spark4"
+              ></apexchart>
             </div>
           </div>
         </div>
@@ -122,7 +169,13 @@
               <span class="dark-inverted">$91,512.18</span>
             </div>
           </div>
-          <div id="line-stats-widget-chart"></div>
+          <apexchart
+            id="line-stats-widget-chart"
+            :height="revenueChartsOptions.chart.height"
+            :type="revenueChartsOptions.chart.type"
+            :series="revenueChartsOptions.series"
+            :options="revenueChartsOptions"
+          ></apexchart>
         </div>
       </div>
 
@@ -144,7 +197,13 @@
               <span class="dark-inverted">684</span>
             </div>
           </div>
-          <div id="area-stats-widget-chart"></div>
+          <apexchart
+            id="area-stats-widget-chart"
+            :height="customersChartOptions.chart.height"
+            :type="customersChartOptions.chart.type"
+            :series="customersChartOptions.series"
+            :options="customersChartOptions"
+          ></apexchart>
         </div>
       </div>
 
@@ -162,7 +221,13 @@
               </p>
             </div>
             <div class="chart-container">
-              <div id="flex-stat-circle"></div>
+              <apexchart
+                id="flex-stat-circle"
+                :height="productReturnsChartOptions.chart.height"
+                :type="productReturnsChartOptions.chart.type"
+                :series="productReturnsChartOptions.series"
+                :options="productReturnsChartOptions"
+              ></apexchart>
             </div>
           </div>
         </div>
@@ -182,7 +247,13 @@
               </p>
             </div>
             <div class="chart-container">
-              <div id="flex-stat-radial"></div>
+              <apexchart
+                id="flex-stat-radial"
+                :height="customerEngagementChartOptions.chart.height"
+                :type="customerEngagementChartOptions.chart.type"
+                :series="customerEngagementChartOptions.series"
+                :options="customerEngagementChartOptions"
+              ></apexchart>
             </div>
           </div>
         </div>
@@ -198,7 +269,13 @@
             <div class="group">
               <div class="group-content">
                 <div class="chart-container">
-                  <div id="widget-group-radial-1"></div>
+                  <apexchart
+                    id="widget-group-radial-1"
+                    :height="freeShippingChartOptions.chart.height"
+                    :type="freeShippingChartOptions.chart.type"
+                    :series="freeShippingChartOptions.series"
+                    :options="freeShippingChartOptions"
+                  ></apexchart>
                 </div>
                 <span class="dark-inverted">36.8K</span>
                 <p>Free Shipping</p>
@@ -207,7 +284,13 @@
             <div class="group">
               <div class="group-content">
                 <div class="chart-container">
-                  <div id="widget-group-radial-2"></div>
+                  <apexchart
+                    id="widget-group-radial-2"
+                    :height="groundShippingChartOptions.chart.height"
+                    :type="groundShippingChartOptions.chart.type"
+                    :series="groundShippingChartOptions.series"
+                    :options="groundShippingChartOptions"
+                  ></apexchart>
                 </div>
                 <span class="dark-inverted">292.3K</span>
                 <p>Ground Shipping</p>
@@ -216,7 +299,13 @@
             <div class="group">
               <div class="group-content">
                 <div class="chart-container">
-                  <div id="widget-group-radial-3"></div>
+                  <apexchart
+                    id="widget-group-radial-3"
+                    :height="nextDayAirChartOptions.chart.height"
+                    :type="nextDayAirChartOptions.chart.type"
+                    :series="nextDayAirChartOptions.series"
+                    :options="nextDayAirChartOptions"
+                  ></apexchart>
                 </div>
                 <span class="dark-inverted">108.2K</span>
                 <p>Next Day Air</p>
@@ -236,7 +325,13 @@
             <div class="group">
               <div class="group-content">
                 <div class="chart-container is-gauge">
-                  <div id="widget-group-radial-4"></div>
+                  <apexchart
+                    id="widget-group-radial-4"
+                    :height="activeTicketsChartOptions.chart.height"
+                    :type="activeTicketsChartOptions.chart.type"
+                    :series="activeTicketsChartOptions.series"
+                    :options="activeTicketsChartOptions"
+                  ></apexchart>
                 </div>
                 <span class="dark-inverted">641</span>
                 <p>Active Tickets</p>
@@ -245,7 +340,13 @@
             <div class="group">
               <div class="group-content">
                 <div class="chart-container is-gauge">
-                  <div id="widget-group-radial-5"></div>
+                  <apexchart
+                    id="widget-group-radial-5"
+                    :height="escalatedChartOptions.chart.height"
+                    :type="escalatedChartOptions.chart.type"
+                    :series="escalatedChartOptions.series"
+                    :options="escalatedChartOptions"
+                  ></apexchart>
                 </div>
                 <span class="dark-inverted">84</span>
                 <p>Escalated</p>
@@ -254,7 +355,13 @@
             <div class="group">
               <div class="group-content">
                 <div class="chart-container is-gauge">
-                  <div id="widget-group-radial-6"></div>
+                  <apexchart
+                    id="widget-group-radial-6"
+                    :height="closedTicketsChartOptions.chart.height"
+                    :type="closedTicketsChartOptions.chart.type"
+                    :series="closedTicketsChartOptions.series"
+                    :options="closedTicketsChartOptions"
+                  ></apexchart>
                 </div>
                 <span class="dark-inverted">1,749</span>
                 <p>Closed Tickets</p>
