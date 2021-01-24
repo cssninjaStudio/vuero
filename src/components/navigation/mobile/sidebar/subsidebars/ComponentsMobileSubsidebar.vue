@@ -89,7 +89,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         </li>
         <li>
           <RouterLink :to="{ name: 'components-progress' }"
-            >Progress</RouterLink
+            >V-Progress</RouterLink
           >
         </li>
         <li v-has-children class="has-children">

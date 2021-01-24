@@ -257,7 +257,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                       <i class="lnil lnil-line-double"></i>
                     </div>
                     <div class="meta">
-                      <span>Progress</span>
+                      <span>V-Progress</span>
                     </div>
                   </RouterLink>
                   <RouterLink
