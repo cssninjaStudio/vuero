@@ -126,6 +126,17 @@ const { dropdownElement, isOpen, open } = useDropdown()
                       <span>Breadcrumb</span>
                     </div>
                   </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'components-vbutton' }"
+                    class="dropdown-item is-media"
+                  >
+                    <div class="icon">
+                      <i class="lnil lnil-air"></i>
+                    </div>
+                    <div class="meta">
+                      <span>V-Button</span>
+                    </div>
+                  </RouterLink>
                 </div>
               </div>
             </div>

@@ -15,7 +15,7 @@ onMounted(() => {
 })
 
 useHead({
-  title: 'Components - Icon Box - Vuero',
+  title: 'Components - V-Button - Vuero',
 })
 </script>
 
@@ -42,7 +42,7 @@ useHead({
       </div>
 
       <div class="title-wrap">
-        <h1 class="title is-4">Icon Box</h1>
+        <h1 class="title is-4">V-Button</h1>
       </div>
 
       <Toolbar />
@@ -65,7 +65,7 @@ useHead({
           </li>
           <li>
             <a>
-              <span>Icon Box</span>
+              <span>V-Button</span>
             </a>
           </li>
         </ul>
@@ -77,26 +77,23 @@ useHead({
           :class="[toc.length > 0 ? 'is-9' : 'is-12']"
           class="column"
         >
-          <!--Icon Box-->
-          <IconBoxDefaultDocumentation />
+          <!--V-Button base-->
+          <VButtonBaseDocumentation />
 
-          <!--Box Colors-->
-          <IconBoxColorsDocumentation />
+          <!--V-Button link-->
+          <VButtonLinkDocumentation />
 
-          <!--Box Border-->
-          <IconBoxSquaredBorderDocumentation />
+          <!--V-Button colors-->
+          <VButtonColorsDocumentation />
 
-          <!--Box Rounded-->
-          <IconBoxRoundedDocumentation />
+          <!--V-Button light colors-->
+          <VButtonColorsLightDocumentation />
 
-          <!--Box Colors-->
-          <IconBoxRoundedBorderDocumentation />
+          <!--V-Button outlined colors-->
+          <VButtonColorsOutlinedDocumentation />
 
-          <!--Feather Icons-->
-          <IconBoxFeatherDocumentation />
-
-          <!--Font Awesome-->
-          <IconBoxFaDocumentation />
+          <!--V-Button Elevation-->
+          <VButtonElevatedDocumentation />
         </div>
         <div v-if="toc.length" class="column is-3">
           <DocumentationToc :toc="toc" />

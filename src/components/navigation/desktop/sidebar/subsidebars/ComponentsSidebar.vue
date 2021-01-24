@@ -61,6 +61,9 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
           >
         </li>
         <li>
+          <RouterLink :to="{ name: 'components-vbutton' }">V-Button</RouterLink>
+        </li>
+        <li>
           <RouterLink :to="{ name: 'components-dropdown' }"
             >Dropdown</RouterLink
           >

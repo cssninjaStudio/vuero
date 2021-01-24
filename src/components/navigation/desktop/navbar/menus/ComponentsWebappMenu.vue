@@ -66,6 +66,12 @@ const activeTab = ref<'components' | 'plugins'>('components')
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
+                  <li>
+                    <RouterLink :to="{ name: 'components-vbutton' }">
+                      <span>V-Button</span>
+                      <i class="iconify" data-icon="feather:circle"></i>
+                    </RouterLink>
+                  </li>
                 </ul>
               </div>
               <div class="column is-3">
