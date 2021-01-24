@@ -1,3 +1,20 @@
+<script setup lang="ts">
+import { ref } from 'vue'
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
+const isLoading = ref(false)
+
+router.beforeEach(() => {
+  isLoading.value = true
+})
+router.afterEach(() => {
+  setTimeout(() => {
+    isLoading.value = false
+  }, 200)
+})
+</script>
+
 <template>
   <svg
     id="OBJECTS"
@@ -9,7 +26,7 @@
     viewBox="0 0 160 160"
     style="enable-background: new 0 0 160 160"
     xml:space="preserve"
-    class="is-roll"
+    :class="[isLoading && 'is-roll']"
   >
     <g>
       <g>
