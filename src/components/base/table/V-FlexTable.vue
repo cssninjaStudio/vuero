@@ -1,0 +1,21 @@
+<script setup lang="ts">
+import { defineProps } from 'vue'
+
+const props = defineProps({
+  rows: {
+    type: Array,
+    required: true,
+  },
+  compact: {
+    type: Boolean,
+    default: false,
+  },
+})
+</script>
+
+<template>
+  <div class="flex-table">
+    <slot name="header"></slot>
+    <slot name="body"></slot>
+  </div>
+</template>

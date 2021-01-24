@@ -778,7 +778,7 @@
     </div>
 
     <!--Table Pagination-->
-    <FlexPagination />
+    <V-FlexPagination />
   </div>
 </template>
 

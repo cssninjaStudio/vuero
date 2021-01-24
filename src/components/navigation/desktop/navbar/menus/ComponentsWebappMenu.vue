@@ -149,19 +149,19 @@ const activeTab = ref<'components' | 'plugins'>('components')
                 <ul>
                   <li>
                     <RouterLink :to="{ name: 'components-table-flex' }">
-                      <span>Base Table</span>
+                      <span>V-FlexTable Base</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'components-table-flex-compact' }">
-                      <span>Compact Table</span>
+                      <span>V-FlexTable Compact</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'components-table-flex-media' }">
-                      <span>Media Table</span>
+                      <span>V-FlexTable Media</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
@@ -169,7 +169,7 @@ const activeTab = ref<'components' | 'plugins'>('components')
                     <RouterLink
                       :to="{ name: 'components-table-flex-advanced' }"
                     >
-                      <span>Advanced Table</span>
+                      <span>V-FlexTable Advanced</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>

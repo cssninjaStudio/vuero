@@ -739,7 +739,7 @@ const props = defineProps({
       </div>
 
       <!--Table Pagination-->
-      <FlexPagination />
+      <V-FlexPagination />
     </div>
 
     <!--inactive Tab-->

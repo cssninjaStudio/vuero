@@ -279,7 +279,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                       <i class="lnil lnil-layout-alt"></i>
                     </div>
                     <div class="meta">
-                      <span>Base Table</span>
+                      <span>V-FlexTable Base</span>
                     </div>
                   </RouterLink>
                   <RouterLink
@@ -290,7 +290,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                       <i class="lnil lnil-layout-alt"></i>
                     </div>
                     <div class="meta">
-                      <span>Compact Table</span>
+                      <span>V-FlexTable Compact</span>
                     </div>
                   </RouterLink>
                   <RouterLink
@@ -301,7 +301,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                       <i class="lnil lnil-layout-alt"></i>
                     </div>
                     <div class="meta">
-                      <span>Media Table</span>
+                      <span>V-FlexTable Media</span>
                     </div>
                   </RouterLink>
                   <RouterLink
@@ -312,7 +312,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                       <i class="lnil lnil-layout-alt"></i>
                     </div>
                     <div class="meta">
-                      <span>Advanced Table</span>
+                      <span>V-FlexTable Advanced</span>
                     </div>
                   </RouterLink>
                 </div>

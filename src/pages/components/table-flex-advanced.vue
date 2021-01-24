@@ -889,7 +889,7 @@ useHead({
           </div>
 
           <!--Table Pagination-->
-          <FlexPagination />
+          <V-FlexPagination />
         </div>
       </div>
     </div>
