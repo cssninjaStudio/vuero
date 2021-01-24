@@ -70,7 +70,7 @@ useHead({
       </div>
 
       <div class="title-wrap">
-        <h1 class="title is-4">Loader</h1>
+        <h1 class="title is-4">V-Loader</h1>
       </div>
 
       <Toolbar />
@@ -93,7 +93,7 @@ useHead({
           </li>
           <li>
             <a>
-              <span>Loader</span>
+              <span>V-Loader</span>
             </a>
           </li>
         </ul>

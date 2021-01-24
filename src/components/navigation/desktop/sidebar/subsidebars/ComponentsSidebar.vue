@@ -56,6 +56,9 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
           </ul>
         </li>
         <li>
+          <RouterLink :to="{ name: 'components-vblock' }">V-Block</RouterLink>
+        </li>
+        <li>
           <RouterLink :to="{ name: 'components-breadcrumb' }"
             >V-Breadcrumb</RouterLink
           >

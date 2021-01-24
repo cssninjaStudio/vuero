@@ -61,6 +61,12 @@ const activeTab = ref<'components' | 'plugins'>('components')
                     </RouterLink>
                   </li>
                   <li>
+                    <RouterLink :to="{ name: 'components-vblock' }">
+                      <span>V-Block</span>
+                      <i class="iconify" data-icon="feather:circle"></i>
+                    </RouterLink>
+                  </li>
+                  <li>
                     <RouterLink :to="{ name: 'components-breadcrumb' }">
                       <span>V-Breadcrumb</span>
                       <i class="iconify" data-icon="feather:circle"></i>

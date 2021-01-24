@@ -28,7 +28,7 @@ router.afterEach(() => {
     xml:space="preserve"
     :class="[isLoading && 'is-roll']"
   >
-    <g>
+    <g class="is-roll">
       <g>
         <path
           class="right"
