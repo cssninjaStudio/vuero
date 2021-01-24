@@ -51,14 +51,9 @@
 
   &.has-loader-active {
     overflow: hidden;
-
-    .h-loader-wrapper {
-      opacity: 1;
-      pointer-events: all;
-    }
   }
 
-  .h-loader-wrapper {
+  .v-loader-wrapper {
     position: absolute;
     top: 0;
     left: 0;
@@ -72,6 +67,11 @@
     pointer-events: none;
     transition: opacity 0.3s;
     z-index: 5;
+
+    &.is-active {
+      opacity: 1;
+      pointer-events: all;
+    }
 
     .loader {
       height: 3rem;
@@ -97,7 +97,7 @@
 
 .is-dark {
   .has-loader {
-    .h-loader-wrapper {
+    .v-loader-wrapper {
       background: lighten($dark-sidebar, 6%);
     }
   }

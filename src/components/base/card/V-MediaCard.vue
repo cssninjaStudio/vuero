@@ -23,21 +23,37 @@ const props = defineProps({
     default:
       'I can be used as is in any layout. L Cards are simple containers that can hold any type of content, from simple plain text to more structured markup.',
   },
+  radius: {
+    type: Boolean,
+    default: 'regular',
+  },
+  loading: {
+    type: Boolean,
+    default: 'regular',
+  },
 })
 </script>
 
 <template>
-  <div class="s-card is-raised demo-s-card has-loader">
+  <div
+    class="is-raised has-loader"
+    :class="[
+      radius === 'regular' && 's-card',
+      radius === 'smooth' && 'r-card',
+      radius === 'rounded' && 'l-card',
+      loading && 'has-loader-active',
+    ]"
+  >
     <slot name="loader"></slot>
     <div class="card-head">
-      <div class="media-flex-center no-margin">
-        <V-Avatar :picture="picture" :badge="badge" />
-        <div class="flex-meta">
-          <span>{{ props.title }}</span>
-          <span>{{ props.subtitle }}</span>
-        </div>
-      </div>
-      <slot name="action"></slot>
+      <V-Block :title="title" :subtitle="subtitle" center>
+        <template #icon>
+          <V-Avatar :picture="avatar" :badge="badge" />
+        </template>
+        <template #action>
+          <WidgetDropdown />
+        </template>
+      </V-Block>
     </div>
     <div class="card-inner">
       <p>{{ props.content }}</p>

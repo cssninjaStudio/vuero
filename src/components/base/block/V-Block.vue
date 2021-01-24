@@ -14,6 +14,10 @@ const props = defineProps({
     type: String,
     default: 'Card subtitle',
   },
+  narrow: {
+    type: Boolean,
+    default: false,
+  },
   mResponsive: {
     type: Boolean,
     default: false,
@@ -30,6 +34,7 @@ const props = defineProps({
     :class="[
       !center && 'media-flex',
       center && 'media-flex-center',
+      narrow && 'no-margin',
       mResponsive && 'is-responsive-mobile',
       tResponsive && 'is-responsive-tablet-p',
     ]"

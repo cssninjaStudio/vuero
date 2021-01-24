@@ -85,7 +85,7 @@ const activeTab = ref<'components' | 'plugins'>('components')
                 <ul>
                   <li>
                     <RouterLink :to="{ name: 'components-loader' }">
-                      <span>Loader</span>
+                      <span>V-Loader</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>

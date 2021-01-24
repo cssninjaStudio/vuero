@@ -168,7 +168,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                       <i class="lnil lnil-reload"></i>
                     </div>
                     <div class="meta">
-                      <span>Loader</span>
+                      <span>V-Loader</span>
                     </div>
                   </RouterLink>
                   <RouterLink

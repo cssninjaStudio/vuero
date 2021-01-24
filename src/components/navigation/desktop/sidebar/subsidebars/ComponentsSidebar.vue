@@ -77,7 +77,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
           >
         </li>
         <li>
-          <RouterLink :to="{ name: 'components-loader' }">Loader</RouterLink>
+          <RouterLink :to="{ name: 'components-loader' }">V-Loader</RouterLink>
         </li>
         <li>
           <RouterLink :to="{ name: 'components-messages' }">Message</RouterLink>
