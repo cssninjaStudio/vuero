@@ -1,4 +1,4 @@
-import moment from 'moment'
+import dayjs from 'dayjs'
 
 export function toString(val: number): string {
   return `${val}`
@@ -23,7 +23,7 @@ type WithOptions = (val: number, timestamp: number) => string
 type WithTimeOptions = (val: number, timestamp: number) => string
 
 export function toDate(format: string): WithTimeOptions {
-  return (val, timestamp) => moment(new Date(timestamp)).format(format)
+  return (val, timestamp) => dayjs(timestamp).format(format)
 }
 
 export function toFixed(fractionDigit: number, divider = 1): WithOptions {

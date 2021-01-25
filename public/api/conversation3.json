@@ -1,0 +1,109 @@
+{
+    "messages": {
+        "message": [
+            {
+                "id": "0",
+                "type": "system",
+                "sender": null,
+                "avatar": null,
+                "content": {
+                    "text": "Monday 23th",
+                    "time": null
+                }
+            },
+            {
+                "id": "1",
+                "type": "msg",
+                "sender": "other",
+                "avatar": "/images/avatars/photos/13.jpg",
+                "content": {
+                    "text": "Hey Erik, I need the Heartman & Sons benchmark document that you mentionned in the meeting yesterday.",
+                    "time": "12:17pm"
+                }
+            },
+            {
+                "id": "2",
+                "type": "msg",
+                "sender": "self",
+                "avatar": "/images/avatars/photos/8.jpg",
+                "content": {
+                    "text": "Oh, sorry I don't really remember, could you be more specific?",
+                    "time": "12:31pm"
+                }
+            },
+            {
+                "id": "3",
+                "type": "system",
+                "sender": null,
+                "avatar": null,
+                "content": {
+                    "text": "Yesterday",
+                    "time": null
+                }
+            },
+            {
+                "id": "4",
+                "type": "msg",
+                "sender": "other",
+                "avatar": "/images/avatars/photos/13.jpg",
+                "content": {
+                    "text": "Well the one about the webapp, I think it was something about the accounting app built with modern javascript frameworks.",
+                    "time": "08:42am"
+                }
+            },
+            {
+                "id": "5",
+                "type": "imagelink",
+                "sender": "other",
+                "avatar": "/images/avatars/svg/2.gif",
+                "content": {
+                    "text": "Smart Accounting made easy for everyone",
+                    "subtext": "titan-accounting.io",
+                    "time": null,
+                    "link_image": "/images/photo/demo/demo-apps/1.png",
+                    "link_badge": "/images/icons/stacks/angular.svg"
+                }
+            },
+            {
+                "id": "6",
+                "type": "msg",
+                "sender": "self",
+                "avatar": "/images/avatars/photos/8.jpg",
+                "content": {
+                    "text": "I see, now I remember. Sure I can send it you real quick. Do you want it on your email inbox or is it fine to post ot here?",
+                    "time": "09:23am"
+                }
+            },
+            {
+                "id": "7",
+                "type": "msg",
+                "sender": "other",
+                "avatar": "/images/avatars/photos/13.jpg",
+                "content": {
+                    "text": "I guess via email would be better, I'll need it more than once.",
+                    "time": "09:32am"
+                }
+            },
+            {
+                "id": "8",
+                "type": "msg",
+                "sender": "self",
+                "avatar": "/images/avatars/photos/8.jpg",
+                "content": {
+                    "text": "Ok then, I'll shoot you an email in a few minutes.",
+                    "time": "09:44am"
+                }
+            },
+            {
+                "id": "9",
+                "type": "msg",
+                "sender": "other",
+                "avatar": "/images/avatars/photos/13.jpg",
+                "content": {
+                    "text": "Thank you very much! Much appreciated.",
+                    "time": "09:49am"
+                }
+            }
+        ]
+    }
+}

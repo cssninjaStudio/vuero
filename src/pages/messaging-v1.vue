@@ -1,37 +1,158 @@
 <script setup lang="ts">
+import axios from 'axios'
 import { useHead } from '@vueuse/head'
-import { onMounted } from 'vue'
+import { computed, onMounted, ref, watch } from 'vue'
 
 import {
   activeSidebar,
   toggleSidebar,
 } from '/@src/composition/state/ui/activeSidebarState'
 import useDropdown from '/@src/composition/use/useDropdown'
+import sleep from '/@src/utils/sleep'
+
+const conversations = [
+  {
+    id: 1,
+    name: 'Henry G.',
+    lastMessage: '3 minutes ago',
+    avatar: '/images/avatars/photos/10.jpg',
+  },
+  {
+    id: 2,
+    name: 'Melany W.',
+    lastMessage: '30 minutes ago',
+    avatar: '/images/avatars/photos/25.jpg',
+  },
+  {
+    id: 3,
+    name: 'Tara S.',
+    lastMessage: '1 day ago',
+    avatar: '/images/avatars/photos/13.jpg',
+  },
+  {
+    id: 4,
+    name: 'Esteban C.',
+    lastMessage: '1 day ago',
+    avatar: '/images/avatars/photos/18.jpg',
+  },
+  {
+    id: 5,
+    name: 'Alice C.',
+    lastMessage: '2 days ago',
+    avatar: '/images/avatars/photos/7.jpg',
+  },
+]
 
 const { dropdownElement, isOpen, open } = useDropdown()
+const addConversationOpen = ref(false)
+const isLoading = ref(false)
+const selectedConversationId = ref(0)
+const messages = ref<any[]>([])
+
+const onConversationChanged = async () => {
+  if (selectedConversationId.value === 0) {
+    messages.value = []
+    return
+  }
+
+  isLoading.value = true
+  await sleep()
+
+  try {
+    const { data } = await axios.get(
+      `/api/conversation${selectedConversationId.value}.json`
+    )
+    if (data.messages && data.messages.message) {
+      messages.value = data.messages.message
+    }
+  } catch (error) {
+    console.error(error)
+  }
+
+  isLoading.value = false
+}
+
+const selectedConversation = computed(() => {
+  const conversation = conversations.find(
+    (item) => item.id === selectedConversationId.value
+  )
+  if (selectedConversationId.value === 0 || !conversation || isLoading.value) {
+    return {
+      id: 0,
+      name: '',
+      lastMessage: '',
+      avatar: '/images/avatars/placeholder.jpg',
+    }
+  } else {
+    return conversation
+  }
+})
 
 onMounted(() => {
   activeSidebar.value = 'messages'
+  selectedConversationId.value = conversations[0].id
+  //onConversationChanged()
 })
 
 useHead({
   title: 'Messaging chat - Admin - Vuero',
 })
+
+watch(selectedConversationId, onConversationChanged)
 </script>
 
 <template>
   <DefaultLayout>
-    <MessagesSidebar />
-    <MessagesMobileSubsidebar />
-    <CollapsedMessaging />
+    <MessagesSidebar
+      :conversations="conversations"
+      :selected-conversation-id="selectedConversationId"
+      @addConversation="
+        () => {
+          selectedConversationId = 0
+          addConversationOpen = !addConversationOpen
+        }
+      "
+      @selectConversation="
+        (id) => {
+          addConversationOpen = false
+          selectedConversationId = id
+        }
+      "
+    />
+    <MessagesMobileSubsidebar
+      :conversations="conversations"
+      :selected-conversation-id="selectedConversationId"
+      @selectConversation="
+        (id) => {
+          addConversationOpen = false
+          selectedConversationId = id
+        }
+      "
+    />
+    <CollapsedMessaging
+      :conversations="conversations"
+      :selected-conversation-id="selectedConversationId"
+      @addConversation="
+        () => {
+          selectedConversationId = 0
+          addConversationOpen = !addConversationOpen
+        }
+      "
+      @selectConversation="
+        (id) => {
+          addConversationOpen = false
+          selectedConversationId = id
+        }
+      "
+    />
 
     <div
       id="huro-messaging"
       class="view-wrapper"
-      :class="[activeSidebar !== 'none' && 'is-pushed-full']"
-      data-naver-offset="406"
-      data-menu-item="#sidebar-bubble"
-      data-mobile-item="#mobile-bubble"
+      :class="[
+        activeSidebar !== 'none' && 'is-pushed-full',
+        activeSidebar === 'none' && 'is-pushed-messages',
+      ]"
     >
       <div class="page-content-wrapper">
         <div class="page-content chat-content">
@@ -61,19 +182,24 @@ useHead({
           <div class="is-chat animated preFadeInUp fadeInUp">
             <!-- Header -->
             <div class="chat-header">
-              <div class="is-autocomplete is-hidden">
+              <div
+                :class="[!addConversationOpen && 'is-hidden']"
+                class="is-autocomplete"
+              >
                 <div class="control">
-                  <input
-                    id="users-autocpl"
-                    type="text"
-                    class="input"
-                    placeholder="Start typing a name"
-                    autofocus
-                  />
+                  <div class="easy-autocomplete">
+                    <input
+                      id="users-autocpl"
+                      type="text"
+                      class="input"
+                      placeholder="Start typing a name"
+                      autofocus
+                    />
+                  </div>
                   <div class="icon">
                     <span>To:</span>
                   </div>
-                  <div class="hide">
+                  <div class="hide" @click="addConversationOpen = false">
                     <i class="iconify" data-icon="feather:x"></i>
                   </div>
                 </div>
@@ -83,7 +209,7 @@ useHead({
             <div class="chat-body-wrap">
               <!-- Chat Body -->
               <ol id="chat-body" class="chat-body">
-                <li class="no-messages">
+                <li v-if="messages.length === 0" class="no-messages">
                   <img
                     class="light-image"
                     src="/images/illustrations/placeholders/search-4.svg"
@@ -100,7 +226,110 @@ useHead({
                   </div>
                 </li>
 
-                <li class="chat-loader">
+                <li
+                  v-for="message in messages"
+                  :key="message.id"
+                  :class="[
+                    message.type === 'system' && 'divider-container',
+                    message.type !== 'system' && message.sender,
+                  ]"
+                >
+                  <!-- System messages -->
+                  <template v-if="message.type === 'system'">
+                    <li class="divider-container">
+                      <div class="divider">
+                        <span>{{ message.content.text }}</span>
+                      </div>
+                    </li>
+                  </template>
+
+                  <!-- Text messages -->
+                  <template v-else-if="message.type === 'msg'">
+                    <div class="avatar">
+                      <img :src="message.avatar" draggable="false" />
+                    </div>
+                    <div class="msg">
+                      <div class="msg-inner">
+                        <p>{{ message.content.text }}</p>
+                      </div>
+
+                      <time>
+                        {{ message.content.time }}
+                      </time>
+                    </div>
+                  </template>
+
+                  <!-- Image messages -->
+                  <template v-else-if="message.type === 'image'">
+                    <div class="avatar is-online">
+                      <img :src="message.avatar" draggable="false" />
+                    </div>
+                    <div class="msg is-image">
+                      <div class="image-container">
+                        <img :src="message.content.image_url" />
+                        <div class="image-overlay"></div>
+                        <div class="image-actions">
+                          <div class="actions-inner">
+                            <div class="action">
+                              <span
+                                class="iconify"
+                                data-icon="feather:download"
+                              ></span>
+                            </div>
+                            <a
+                              :href="message.content.image_url"
+                              class="action messaging-popup"
+                            >
+                              <span
+                                class="iconify"
+                                data-icon="feather:maximize"
+                              ></span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </template>
+
+                  <!-- Link image messages -->
+                  <template v-else-if="message.type === 'imagelink'">
+                    <div class="avatar">
+                      <img :src="message.avatar" draggable="false" />
+                    </div>
+                    <div class="msg is-link-image">
+                      <figure class="image">
+                        <img :src="message.content.link_image" />
+                        <div class="link-badge">
+                          <img :src="message.content.link_badge" />
+                        </div>
+                      </figure>
+                      <div class="link-body">
+                        <span class="link-title">{{
+                          message.content.text
+                        }}</span>
+                        <small>{{ message.content.subtext }}</small>
+                      </div>
+                    </div>
+                  </template>
+
+                  <!-- Link text messages -->
+                  <template v-else-if="message.type === 'link'">
+                    <div class="avatar is-online">
+                      <img :src="message.avatar" draggable="false" />
+                    </div>
+                    <div class="msg is-link">
+                      <div class="icon-wrapper">
+                        <span class="iconify" data-icon="feather:link"></span>
+                      </div>
+                      <p class="link-meta">
+                        <span>{{ message.content.text }}</span>
+                        <a href="#">{{ message.content.subtext }}</a>
+                      </p>
+                    </div>
+                  </template>
+                </li>
+
+                <li class="chat-loader" :class="[isLoading && 'is-active']">
                   <div class="loader is-loading"></div>
                 </li>
               </ol>
@@ -110,11 +339,12 @@ useHead({
                 <div class="chat-side-header">
                   <MessagingToolbar />
                 </div>
+
                 <div class="chat-side-content is-single">
                   <div class="user-pic">
                     <img
                       id="user-details-image"
-                      src="/images/avatars/photos/10.jpg"
+                      :src="selectedConversation.avatar"
                       alt=""
                       @error="
                         $event.target.src =
@@ -132,9 +362,14 @@ useHead({
                       "
                     />
                   </div>
-                  <h4 id="user-details-name" class="user-name">Henry G.</h4>
-                  <p id="user-details-title" class="user-job-title">
-                    Business Analyst
+                  <h4 v-if="selectedConversation.name" class="user-name">
+                    {{ selectedConversation.name }}
+                  </h4>
+                  <p
+                    v-if="selectedConversation.lastMessage"
+                    class="user-job-title"
+                  >
+                    {{ selectedConversation.lastMessage }}
                   </p>
 
                   <div class="side-actions">
@@ -792,6 +1027,7 @@ useHead({
   }
 
   .divider-container {
+    width: 100%;
     max-width: 100%;
 
     .divider {

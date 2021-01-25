@@ -1,0 +1,86 @@
+{
+    "messages": {
+        "message": [
+            {
+                "id": "0",
+                "type": "system",
+                "sender": null,
+                "avatar": null,
+                "content": {
+                    "text": "Friday 14th",
+                    "time": null
+                }
+            },
+            {
+                "id": "1",
+                "type": "msg",
+                "sender": "other",
+                "avatar": "/images/avatars/photos/7.jpg",
+                "content": {
+                    "text": "Hey Erik, we have a reluctant customer who claims he talked to you.",
+                    "time": "03:47pm"
+                }
+            },
+            {
+                "id": "2",
+                "type": "msg",
+                "sender": "other",
+                "avatar": "/images/avatars/photos/7.jpg",
+                "content": {
+                    "text": "He is making pressing demands. It's someone from Heartman & Sons. Gary Wootten.",
+                    "time": "03:47pm"
+                }
+            },
+            {
+                "id": "3",
+                "type": "msg",
+                "sender": "self",
+                "avatar": "/images/avatars/photos/8.jpg",
+                "content": {
+                    "text": "Yeah, I know him, the guy's a bit the nervous type.",
+                    "time": "04:19pm"
+                }
+            },
+            {
+                "id": "4",
+                "type": "msg",
+                "sender": "self",
+                "avatar": "/images/avatars/photos/8.jpg",
+                "content": {
+                    "text": "You should walk him through the latest features and give him our usual guarantees.",
+                    "time": "04:20"
+                }
+            },
+            {
+                "id": "5",
+                "type": "msg",
+                "sender": "other",
+                "avatar": "/images/avatars/photos/7.jpg",
+                "content": {
+                    "text": "You think that will be enough?",
+                    "time": "06:30pm"
+                }
+            },
+            {
+                "id": "6",
+                "type": "msg",
+                "sender": "self",
+                "avatar": "/images/avatars/photos/8.jpg",
+                "content": {
+                    "text": "Yes, don't worry, he's going to drop it soon enough.",
+                    "time": "06:34pm"
+                }
+            },
+            {
+                "id": "7",
+                "type": "msg",
+                "sender": "other",
+                "avatar": "/images/avatars/photos/7.jpg",
+                "content": {
+                    "text": "Ok, thanks for the advice. I'll let you know.",
+                    "time": "06:58pm"
+                }
+            }
+        ]
+    }
+}

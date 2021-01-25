@@ -1,0 +1,109 @@
+{
+    "messages": {
+        "message": [
+            {
+                "id": "0",
+                "type": "system",
+                "sender": null,
+                "avatar": null,
+                "content": {
+                    "text": "Monday 23th",
+                    "time": null
+                }
+            },
+            {
+                "id": "1",
+                "type": "msg",
+                "sender": "other",
+                "avatar": "/images/avatars/photos/25.jpg",
+                "content": {
+                    "text": "I was wondering why Danny still works on Sketch when Figma is now cheap and accessible. This could really boost our process.",
+                    "time": "12:17pm"
+                }
+            },
+            {
+                "id": "2",
+                "type": "msg",
+                "sender": "self",
+                "avatar": "/images/avatars/photos/8.jpg",
+                "content": {
+                    "text": "Not really sure about why, but he certainly has good reasons. Anyway, why should he switch?",
+                    "time": "12:31pm"
+                }
+            },
+            {
+                "id": "3",
+                "type": "system",
+                "sender": null,
+                "avatar": null,
+                "content": {
+                    "text": "Yesterday",
+                    "time": null
+                }
+            },
+            {
+                "id": "4",
+                "type": "msg",
+                "sender": "other",
+                "avatar": "/images/avatars/photos/25.jpg",
+                "content": {
+                    "text": "There are plenty of reasons, one of them being awesome UI kits being released every day.",
+                    "time": "08:42am"
+                }
+            },
+            {
+                "id": "5",
+                "type": "imagelink",
+                "sender": "other",
+                "avatar": "/images/avatars/svg/2.gif",
+                "content": {
+                    "text": "iDesign Pro, iOS premium UI kit",
+                    "subtext": "figma-factory.com",
+                    "time": null,
+                    "link_image": "/images/photo/demo/demo-apps/5.jpg",
+                    "link_badge": "/images/photo/demo/misc/figma.png"
+                }
+            },
+            {
+                "id": "6",
+                "type": "msg",
+                "sender": "self",
+                "avatar": "/images/avatars/photos/8.jpg",
+                "content": {
+                    "text": "That really looks awesome! Danny should definitely have a look at this.",
+                    "time": "09:23am"
+                }
+            },
+            {
+                "id": "7",
+                "type": "msg",
+                "sender": "other",
+                "avatar": "/images/avatars/photos/25.jpg",
+                "content": {
+                    "text": "Yes, this is exactly what I was thinking, do you think that he'll be willing to switch?",
+                    "time": "09:32am"
+                }
+            },
+            {
+                "id": "8",
+                "type": "msg",
+                "sender": "self",
+                "avatar": "/images/avatars/photos/8.jpg",
+                "content": {
+                    "text": "To be honest, I can't tell. But I'd be really glad if he said yes.",
+                    "time": "09:44am"
+                }
+            },
+            {
+                "id": "9",
+                "type": "msg",
+                "sender": "other",
+                "avatar": "/images/avatars/photos/25.jpg",
+                "content": {
+                    "text": "Well that's worth a try. Maybe we can schedule a meeting to discuss it with a proper presentation.",
+                    "time": "09:49am"
+                }
+            }
+        ]
+    }
+}

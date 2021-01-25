@@ -1,0 +1,58 @@
+[
+    {
+        "id":"0",
+        "name":"Airbnb",
+        "initials": "A",
+        "location":"Los Angeles, CA",
+        "pic":"/images/photo/demo/brands/airbnb.svg"
+    },
+    {
+        "id":"1",
+        "name":"Facebook",
+        "initials": "F",
+        "location":"Los Angeles, CA",
+        "pic":"/images/photo/demo/brands/facebook.svg"
+    },
+    {
+        "id":"2",
+        "name":"GitHub",
+        "initials": "A",
+        "location":"Los Angeles, CA",
+        "pic":"/images/photo/demo/brands/github.svg"
+    },
+    {
+        "id":"3",
+        "name":"Gitlab",
+        "initials": "A",
+        "location":"Los Angeles, CA",
+        "pic":"/images/photo/demo/brands/gitlab.svg"
+    },
+    {
+        "id":"4",
+        "name":"Atlassian",
+        "initials": "A",
+        "location":"Los Angeles, CA",
+        "pic":"/images/photo/demo/brands/atlassian.svg"
+    },
+    {
+        "id":"5",
+        "name":"Google",
+        "initials": "A",
+        "location":"Los Angeles, CA",
+        "pic":"/images/photo/demo/brands/google.svg"
+    },
+    {
+        "id":"6",
+        "name":"Dribbble",
+        "initials": "A",
+        "location":"Los Angeles, CA",
+        "pic":"/images/photo/demo/brands/dribbble.svg"
+    },
+    {
+        "id":"7",
+        "name":"Hubspot",
+        "initials": "A",
+        "location":"Los Angeles, CA",
+        "pic":"/images/photo/demo/brands/hubspot.svg"
+    }
+]

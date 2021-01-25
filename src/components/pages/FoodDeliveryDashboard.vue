@@ -3,12 +3,14 @@ import type { TinySliderInstance } from 'tiny-slider/src/tiny-slider'
 import { tns } from 'tiny-slider/src/tiny-slider'
 import { ref, onMounted, onUnmounted } from 'vue'
 
+const activeSection = ref('cart')
+
 let slider: TinySliderInstance
 const sliderElement = ref<HTMLElement | null>(null)
 const nextButtonElement = ref<HTMLElement | null>(null)
 const prevButtonElement = ref<HTMLElement | null>(null)
+
 const onIndexChanged = (info: any) => {
-  console.log('onTransitionEnd', info)
   // direct access to info object
   const indexPrev = info.indexCached
   const indexCurrent = info.index
@@ -1071,29 +1073,48 @@ onUnmounted(() => {
         <div class="widget icon-toolbar-widget">
           <div class="icon-toolbar">
             <div class="toolbar-icon">
-              <a class="inner-icon is-active" data-section="cart-section">
+              <a
+                class="inner-icon"
+                :class="[activeSection === 'cart' && 'is-active']"
+                @click="activeSection = 'cart'"
+              >
                 <i class="iconify" data-icon="feather:shopping-cart"></i>
               </a>
             </div>
             <div class="toolbar-icon">
-              <a class="inner-icon" data-section="activity-section">
+              <a
+                class="inner-icon"
+                :class="[activeSection === 'activity' && 'is-active']"
+                @click="activeSection = 'activity'"
+              >
                 <i class="iconify" data-icon="feather:activity"></i>
               </a>
             </div>
             <div class="toolbar-icon">
-              <a class="inner-icon" data-section="address-section">
+              <a
+                class="inner-icon"
+                :class="[activeSection === 'address' && 'is-active']"
+                @click="activeSection = 'address'"
+              >
                 <i class="iconify" data-icon="feather:map-pin"></i>
               </a>
             </div>
             <div class="toolbar-icon">
-              <a class="inner-icon" data-section="settings-section">
+              <a
+                class="inner-icon"
+                :class="[activeSection === 'settings' && 'is-active']"
+                @click="activeSection = 'settings'"
+              >
                 <i class="iconify" data-icon="feather:settings"></i>
               </a>
             </div>
           </div>
         </div>
 
-        <div id="cart-section" class="cart-widget side-section is-active">
+        <div
+          class="cart-widget side-section"
+          :class="[activeSection === 'cart' && 'is-active']"
+        >
           <div class="widget-toolbar">
             <div class="left">
               <h3 class="is-bigger">My Order</h3>
@@ -1175,7 +1196,10 @@ onUnmounted(() => {
           </div>
         </div>
 
-        <div id="activity-section" class="side-section">
+        <div
+          class="side-section"
+          :class="[activeSection === 'activity' && 'is-active']"
+        >
           <div class="widget followers-widget">
             <div class="widget-toolbar">
               <div class="left">
@@ -1224,7 +1248,10 @@ onUnmounted(() => {
           </div>
         </div>
 
-        <div id="address-section" class="side-section">
+        <div
+          class="side-section"
+          :class="[activeSection === 'address' && 'is-active']"
+        >
           <div class="widget text-widget">
             <div class="widget-toolbar">
               <div class="left">
@@ -1279,7 +1306,10 @@ onUnmounted(() => {
           </div>
         </div>
 
-        <div id="settings-section" class="side-section">
+        <div
+          class="side-section"
+          :class="[activeSection === 'settings' && 'is-active']"
+        >
           <div class="widget icon-list-widget">
             <div class="widget-toolbar">
               <div class="left">
@@ -1701,6 +1731,7 @@ onUnmounted(() => {
       position: fixed;
       height: calc(100% - 100px);
       transition: all 0.3s;
+      width: 336px;
 
       &.is-stretched {
         height: calc(100% - 30px);
