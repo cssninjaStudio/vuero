@@ -1,8 +1,22 @@
 <script setup lang="ts">
+import { defineProps, defineEmit } from 'vue'
 import {
   activeSidebar,
   toggleSidebar,
 } from '/@src/composition/state/ui/activeSidebarState'
+
+const props = defineProps({
+  conversations: {
+    type: Array,
+    default: () => [],
+  },
+  selectedConversationId: {
+    type: Number,
+    default: 0,
+  },
+})
+
+const emit = defineEmit(['addConversation', 'selectConversation'])
 </script>
 
 <template>
@@ -31,82 +45,24 @@ import {
         </div>
       </div>
       <div class="collapsed-add">
-        <a class="button collapse-add-button is-primary">
+        <a
+          class="button collapse-add-button is-primary"
+          @click="() => emit('addConversation')"
+        >
           <i class="iconify" data-icon="feather:plus"></i>
         </a>
       </div>
       <ul class="collapsed-conversations">
         <li
-          id="conversation1-collapsed"
-          class="is-active"
-          data-conversation-menu="conversation1"
-          data-position="Business Analyst"
-          data-username="Henry G."
+          v-for="conversation in conversations"
+          :key="conversation.id"
+          :class="[selectedConversationId === conversation.id && 'is-active']"
+          @click="() => emit('selectConversation', conversation.id)"
         >
           <div class="user-container">
             <img
               class="is-user"
-              src="/images/avatars/photos/10.jpg"
-              alt=""
-              @error="$event.target.src = 'https://via.placeholder.com/150x150'"
-            />
-          </div>
-        </li>
-        <li
-          id="conversation2-collapsed"
-          data-conversation-menu="conversation2"
-          data-position="Web Developer"
-          data-username="Melany W."
-        >
-          <div class="user-container">
-            <img
-              class="is-user"
-              src="/images/avatars/photos/25.jpg"
-              alt=""
-              @error="$event.target.src = 'https://via.placeholder.com/150x150'"
-            />
-          </div>
-        </li>
-        <li
-          id="conversation3-collapsed"
-          data-conversation-menu="conversation3"
-          data-position="UI/UX Designer"
-          data-username="Tara S."
-        >
-          <div class="user-container">
-            <img
-              class="is-user"
-              src="/images/avatars/photos/13.jpg"
-              alt=""
-              @error="$event.target.src = 'https://via.placeholder.com/150x150'"
-            />
-          </div>
-        </li>
-        <li
-          id="conversation4-collapsed"
-          data-conversation-menu="conversation4"
-          data-position="UI/UX Designer"
-          data-username="Esteban C."
-        >
-          <div class="user-container">
-            <img
-              class="is-user"
-              src="/images/avatars/photos/18.jpg"
-              alt=""
-              @error="$event.target.src = 'https://via.placeholder.com/150x150'"
-            />
-          </div>
-        </li>
-        <li
-          id="conversation5-collapsed"
-          data-conversation-menu="conversation5"
-          data-position="Software Engineer"
-          data-username="Alice C."
-        >
-          <div class="user-container">
-            <img
-              class="is-user"
-              src="/images/avatars/photos/7.jpg"
+              :src="conversation.avatar"
               alt=""
               @error="$event.target.src = 'https://via.placeholder.com/150x150'"
             />

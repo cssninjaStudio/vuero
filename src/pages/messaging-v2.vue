@@ -1,7 +1,136 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
+import { computed, ref } from 'vue'
 
 import useDropdown from '/@src/composition/use/useDropdown'
+
+const conversations = [
+  {
+    id: 1,
+    name: 'Kelly Marston',
+    role: 'Product Manager',
+    avatar: {
+      picture: '/images/avatars/photos/11.jpg',
+    },
+    lastMessage: '20m',
+    lastMessagePreview: 'What time was our meeting scheduled for?',
+  },
+  {
+    id: 2,
+    name: 'Alejandro Badajoz',
+    role: 'Business Analyst',
+    avatar: {
+      picture: '/images/avatars/photos/39.jpg',
+    },
+    lastMessage: '24m',
+    lastMessagePreview: 'Nah, I have a meeting that starts in 5.',
+  },
+  {
+    id: 3,
+    name: 'Work Group',
+    role: '7 people are chatting',
+    avatar: {
+      color: 'h-purple',
+      initials: 'WG',
+    },
+    lastMessage: '31m',
+    lastMessagePreview:
+      'This is getting funnier and funnier. You gotta love dat team 🥰',
+  },
+  {
+    id: 4,
+    name: 'Alice Carasca',
+    role: 'Software Engineer',
+    avatar: {
+      picture: '/images/avatars/photos/7.jpg',
+    },
+    lastMessage: '47m',
+    lastMessagePreview: 'I like the curves in this one.',
+  },
+  {
+    id: 5,
+    name: 'Irina Vierbovsky',
+    role: 'Project Manager',
+    avatar: {
+      picture: '/images/avatars/photos/23.jpg',
+    },
+    lastMessage: '56m',
+    lastMessagePreview: 'I need some help on something Iam working on.',
+  },
+  {
+    id: 6,
+    name: 'Mary Lebowski',
+    role: 'Project Manager',
+    avatar: {
+      picture: '/images/avatars/photos/5.jpg',
+    },
+    lastMessage: '1h',
+    lastMessagePreview: 'Still down for that movie?',
+  },
+  {
+    id: 7,
+    name: 'Esteban Castellanos',
+    role: 'UI/UX Designer',
+    avatar: {
+      picture: '/images/avatars/photos/18.jpg',
+    },
+    lastMessage: '1h',
+    lastMessagePreview: 'I can send you the files.',
+  },
+  {
+    id: 8,
+    name: 'Melany Wallace',
+    role: 'Web Developer',
+    avatar: {
+      picture: '/images/avatars/photos/25.jpg',
+    },
+    lastMessage: '2h',
+    lastMessagePreview: 'I has some issues with the headers tough.',
+  },
+  {
+    id: 9,
+    name: 'Jimmy Hector',
+    role: 'Project Manager',
+    avatar: {
+      picture: '/images/avatars/photos/22.jpg',
+    },
+    lastMessage: '3h',
+    lastMessagePreview: 'When are you available?',
+  },
+  {
+    id: 10,
+    name: 'Greta Kroppfer',
+    role: 'Sales Manager',
+    avatar: {
+      picture: '/images/avatars/photos/19.jpg',
+    },
+    lastMessage: '3h',
+    lastMessagePreview:
+      'Thank you for you clean presentation, it was stunning.',
+  },
+  {
+    id: 11,
+    name: 'Tara Svenson',
+    role: 'UI/UX Designer',
+    avatar: {
+      picture: '/images/avatars/photos/13.jpg',
+    },
+    lastMessage: '9h',
+    lastMessagePreview: 'Hope you like them.',
+  },
+]
+
+const selectedConversationId = ref(3)
+const selectedConversation = computed(() => {
+  const conversation = conversations.find(
+    (item) => item.id === selectedConversationId.value
+  )
+  if (conversation) {
+    return conversation
+  }
+
+  return conversations[0]
+})
 
 const {
   dropdownElement: dropdownElement1,
@@ -111,42 +240,67 @@ useHead({
       <!--Chat app wrapper-->
       <div class="wrapper">
         <!--Conversation List-->
-        <WebappConversationList />
+        <WebappConversationList
+          v-model:conversationId="selectedConversationId"
+          :conversations="conversations"
+        />
 
         <!--Conversation messages-->
         <div class="chat-area" data-simplebar>
           <!--Conversation 1-->
-          <WebappConversation1 />
+          <WebappConversation1
+            :class="[selectedConversationId === 1 && 'is-active']"
+          />
 
           <!--Conversation 2-->
-          <WebappConversation2 />
+          <WebappConversation2
+            :class="[selectedConversationId === 2 && 'is-active']"
+          />
 
           <!--Conversation 3-->
-          <WebappConversation3 />
+          <WebappConversation3
+            :class="[selectedConversationId === 3 && 'is-active']"
+          />
 
           <!--Conversation 4-->
-          <WebappConversation4 />
+          <WebappConversation4
+            :class="[selectedConversationId === 4 && 'is-active']"
+          />
 
           <!--Conversation 5-->
-          <WebappConversation5 />
+          <WebappConversation5
+            :class="[selectedConversationId === 5 && 'is-active']"
+          />
 
           <!--Conversation 6-->
-          <WebappConversation6 />
+          <WebappConversation6
+            :class="[selectedConversationId === 6 && 'is-active']"
+          />
 
           <!--Conversation 7-->
-          <WebappConversation7 />
+          <WebappConversation7
+            :class="[selectedConversationId === 7 && 'is-active']"
+          />
 
           <!--Conversation 8-->
-          <WebappConversation8 />
+          <WebappConversation8
+            :class="[selectedConversationId === 8 && 'is-active']"
+          />
 
           <!--Conversation 9-->
-          <WebappConversation9 />
+          <WebappConversation9
+            :class="[selectedConversationId === 9 && 'is-active']"
+          />
 
           <!--Conversation 10-->
-          <WebappConversation10 />
+          <WebappConversation10
+            :class="[selectedConversationId === 10 && 'is-active']"
+          />
 
           <!--Conversation 11-->
-          <WebappConversation11 />
+          <WebappConversation11
+            :class="[selectedConversationId === 11 && 'is-active']"
+          />
 
           <div class="chat-area-footer">
             <div class="add-content">
@@ -207,21 +361,16 @@ useHead({
         <!--Conversation Details-->
         <div class="detail-area" data-simplebar>
           <div class="chat-side-content is-single">
-            <div class="user-pic v-avatar is-large">
-              <span class="avatar is-fake is-h-purple">
-                <span>WG</span>
-              </span>
-              <img
-                class="avatar is-hidden"
-                alt=""
-                @error="
-                  $event.target.src = 'https://via.placeholder.com/150x150'
-                "
-              />
-            </div>
-            <h4 id="user-details-name" class="user-name">Work Group</h4>
+            <V-Avatar
+              :picture="selectedConversation.avatar.picture"
+              :color="selectedConversation.avatar.color"
+              :initials="selectedConversation.avatar.initials"
+            />
+            <h4 id="user-details-name" class="user-name">
+              {{ selectedConversation.name }}
+            </h4>
             <p id="user-details-title" class="user-job-title">
-              7 people are chatting
+              {{ selectedConversation.role }}
             </p>
 
             <div class="side-actions">

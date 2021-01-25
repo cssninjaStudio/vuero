@@ -1,8 +1,22 @@
 <script setup lang="ts">
+import { defineEmit, defineProps } from 'vue'
 import {
   activeSidebar,
   toggleSidebar,
 } from '/@src/composition/state/ui/activeSidebarState'
+
+const props = defineProps({
+  conversations: {
+    type: Array,
+    default: () => [],
+  },
+  selectedConversationId: {
+    type: Number,
+    default: 0,
+  },
+})
+
+const emit = defineEmit(['addConversation', 'selectConversation'])
 </script>
 
 <template>
@@ -37,6 +51,7 @@ import {
         <button
           id="start-conversation"
           class="button v-button is-primary is-raised is-rounded is-fullwidth"
+          @click="() => emit('addConversation')"
         >
           <i class="iconify" data-icon="feather:plus"></i>
           <span>New Conversation</span>
@@ -44,16 +59,16 @@ import {
       </div>
       <ul id="conversations-list" class="animated preFadeInUp fadeInUp">
         <li
-          id="conversation1"
-          class="is-active"
-          data-conversation-menu="conversation1"
-          data-position="Business Analyst"
+          v-for="conversation in conversations"
+          :key="conversation.id"
+          :class="[selectedConversationId === conversation.id && 'is-active']"
+          @click="() => emit('selectConversation', conversation.id)"
         >
           <div class="recent-user">
             <div class="user-container">
               <img
                 class="is-user"
-                src="/images/avatars/photos/10.jpg"
+                :src="conversation.avatar"
                 alt=""
                 @error="
                   $event.target.src = 'https://via.placeholder.com/150x150'
@@ -61,96 +76,8 @@ import {
               />
             </div>
             <div class="recipient-meta">
-              <span>Henry G.</span>
-              <span>3 minutes ago</span>
-            </div>
-          </div>
-        </li>
-        <li
-          id="conversation2"
-          data-conversation-menu="conversation2"
-          data-position="Web Developer"
-        >
-          <div class="recent-user">
-            <div class="user-container">
-              <img
-                class="is-user"
-                src="/images/avatars/photos/25.jpg"
-                alt=""
-                @error="
-                  $event.target.src = 'https://via.placeholder.com/150x150'
-                "
-              />
-            </div>
-            <div class="recipient-meta">
-              <span>Melany W.</span>
-              <span>30 minutes ago</span>
-            </div>
-          </div>
-        </li>
-        <li
-          id="conversation3"
-          data-conversation-menu="conversation3"
-          data-position="UI/UX Designer"
-        >
-          <div class="recent-user">
-            <div class="user-container">
-              <img
-                class="is-user"
-                src="/images/avatars/photos/13.jpg"
-                alt=""
-                @error="
-                  $event.target.src = 'https://via.placeholder.com/150x150'
-                "
-              />
-            </div>
-            <div class="recipient-meta">
-              <span>Tara S.</span>
-              <span>1 day ago</span>
-            </div>
-          </div>
-        </li>
-        <li
-          id="conversation4"
-          data-conversation-menu="conversation4"
-          data-position="UI/UX Designer"
-        >
-          <div class="recent-user">
-            <div class="user-container">
-              <img
-                class="is-user"
-                src="/images/avatars/photos/18.jpg"
-                alt=""
-                @error="
-                  $event.target.src = 'https://via.placeholder.com/150x150'
-                "
-              />
-            </div>
-            <div class="recipient-meta">
-              <span>Esteban C.</span>
-              <span>1 day ago</span>
-            </div>
-          </div>
-        </li>
-        <li
-          id="conversation5"
-          data-conversation-menu="conversation5"
-          data-position="Software Engineer"
-        >
-          <div class="recent-user">
-            <div class="user-container">
-              <img
-                class="is-user"
-                src="/images/avatars/photos/7.jpg"
-                alt=""
-                @error="
-                  $event.target.src = 'https://via.placeholder.com/150x150'
-                "
-              />
-            </div>
-            <div class="recipient-meta">
-              <span>Alice C.</span>
-              <span>2 days ago</span>
+              <span>{{ conversation.name }}</span>
+              <span>{{ conversation.lastMessage }}</span>
             </div>
           </div>
         </li>

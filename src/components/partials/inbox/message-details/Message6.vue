@@ -16,7 +16,7 @@ const {
 
 <template>
   <!-- Message details -->
-  <div id="message-6" class="inbox-message-details is-hidden">
+  <div id="message-6" class="inbox-message-details">
     <div class="header-area">
       <img
         class="sender-pic"
