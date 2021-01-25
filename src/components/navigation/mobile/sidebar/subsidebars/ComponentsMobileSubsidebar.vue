@@ -24,7 +24,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         </li>
         <li v-has-children class="has-children">
           <div class="collapse-wrap">
-            <a href="javascript:void(0);" class="parent-link"
+            <a class="parent-link"
               >V-Accordion <i class="iconify" data-icon="feather:chevron-right"
             /></a>
           </div>
@@ -94,7 +94,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         </li>
         <li v-has-children class="has-children">
           <div class="collapse-wrap">
-            <a href="javascript:void(0);" class="parent-link"
+            <a class="parent-link"
               >Tabs <i class="iconify" data-icon="feather:chevron-right"
             /></a>
           </div>
@@ -119,7 +119,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         </li>
         <li v-has-children class="has-children">
           <div class="collapse-wrap">
-            <a href="javascript:void(0);" class="parent-link"
+            <a class="parent-link"
               >V-FlexTable <i class="iconify" data-icon="feather:chevron-right"
             /></a>
           </div>
@@ -164,7 +164,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         <li class="divider"></li>
         <li v-has-children class="has-children">
           <div class="collapse-wrap">
-            <a href="javascript:void(0);" class="parent-link"
+            <a class="parent-link"
               >Plugins <i class="iconify" data-icon="feather:chevron-right"
             /></a>
           </div>
@@ -261,7 +261,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         </li>
         <li v-has-children class="has-children">
           <div class="collapse-wrap">
-            <a href="javascript:void(0);" class="parent-link"
+            <a class="parent-link"
               >Rich Text <i class="iconify" data-icon="feather:chevron-right"
             /></a>
           </div>
