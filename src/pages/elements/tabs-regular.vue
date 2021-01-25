@@ -8,16 +8,6 @@ import {
   toggleSidebar,
 } from '/@src/composition/state/ui/activeSidebarState'
 
-const activeTab = ref<'team' | 'projects' | 'tasks'>('team')
-const activeTab1 = ref<'team' | 'projects' | 'tasks'>('team')
-const activeTab2 = ref<'team' | 'projects' | 'tasks'>('team')
-const activeTab3 = ref<'team' | 'projects' | 'tasks'>('team')
-const activeTab4 = ref<'team' | 'projects' | 'tasks'>('team')
-const activeTab5 = ref<'team' | 'projects' | 'tasks'>('team')
-const activeTab6 = ref<'team' | 'projects' | 'tasks'>('team')
-const activeTab7 = ref<'team' | 'projects' | 'tasks'>('team')
-const activeTab8 = ref<'team' | 'projects' | 'tasks'>('team')
-
 const { markdownContainer, toc } = useMakrdownToc()
 
 onMounted(() => {
@@ -25,7 +15,7 @@ onMounted(() => {
 })
 
 useHead({
-  title: 'Elements - Tabs Regular - Vuero',
+  title: 'Elements - Regular Tabs - Vuero',
 })
 </script>
 
