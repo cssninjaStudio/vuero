@@ -94,7 +94,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         </li>
         <li v-has-children class="has-children">
           <div class="collapse-wrap">
-            <a href="javascript:void(0);" class="parent-link"
+            <a class="parent-link"
               >V-FlexTable <i class="iconify" data-icon="feather:chevron-right"
             /></a>
           </div>
