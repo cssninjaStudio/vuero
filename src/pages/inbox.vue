@@ -7,7 +7,7 @@ import useDropdown from '/@src/composition/use/useDropdown'
 
 const contactSearchOpen = ref(false)
 const activeTab = ref('inbox')
-const selectedConversationId = ref(2)
+const selectedConversationId = ref(1)
 
 const {
   dropdownElement: dropdownElement1,
