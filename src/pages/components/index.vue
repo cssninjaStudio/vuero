@@ -189,7 +189,7 @@ useHead({
                   light="/images/illustrations/components/tabs.svg"
                   dark="/images/illustrations/components/tabs-dark.svg"
                 >
-                  <RouterLink :to="{ name: 'components-tabs-regular' }"
+                  <RouterLink :to="{ name: 'elements-tabs-regular' }"
                     >Get Started</RouterLink
                   >
                 </HubCard>

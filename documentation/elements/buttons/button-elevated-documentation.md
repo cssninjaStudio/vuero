@@ -1,7 +1,6 @@
 ### Elevated Button
 
-Vuero buttons can handle elevation. For a hover triggered elevation, add the `is-raised` modifier class.  
-For a permanent elevation, add the `is-elevated` modifier class.
+Vuero buttons can handle elevation. For a hover triggered elevation, add the `is-raised` modifier class. For a permanent elevation, add the `is-elevated` modifier class.
 
 <!--code-->
 

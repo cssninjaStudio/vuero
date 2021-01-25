@@ -29,9 +29,6 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
           <RouterLink :to="{ name: 'elements-buttons' }">Buttons</RouterLink>
         </li>
         <li>
-          <RouterLink :to="{ name: 'elements-blocks' }">Blocks</RouterLink>
-        </li>
-        <li>
           <RouterLink :to="{ name: 'elements-content' }">Content</RouterLink>
         </li>
         <li>
@@ -139,6 +136,31 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         </li>
         <li>
           <RouterLink :to="{ name: 'elements-table' }">Table</RouterLink>
+        </li>
+        <li v-has-children class="has-children">
+          <div class="collapse-wrap">
+            <a href="javascript:void(0);" class="parent-link"
+              >Tabs <i class="iconify" data-icon="feather:chevron-right"
+            /></a>
+          </div>
+          <ul>
+            <li>
+              <RouterLink
+                :to="{ name: 'elements-tabs-regular' }"
+                class="is-submenu"
+                ><i class="iconify" data-icon="feather:circle"></i>Regular
+                Tabs</RouterLink
+              >
+            </li>
+            <li>
+              <RouterLink
+                :to="{ name: 'elements-tabs-slider' }"
+                class="is-submenu"
+                ><i class="iconify" data-icon="feather:circle"></i>Slider
+                Tabs</RouterLink
+              >
+            </li>
+          </ul>
         </li>
         <li>
           <RouterLink :to="{ name: 'elements-tooltips' }">Tooltips</RouterLink>

@@ -172,17 +172,6 @@ const { dropdownElement, isOpen, open } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'elements-blocks' }"
-                    class="dropdown-item is-media"
-                  >
-                    <div class="icon">
-                      <i class="lnil lnil-scaling"></i>
-                    </div>
-                    <div class="meta">
-                      <span>Blocks</span>
-                    </div>
-                  </RouterLink>
-                  <RouterLink
                     :to="{ name: 'elements-content' }"
                     class="dropdown-item is-media"
                   >
@@ -258,6 +247,28 @@ const { dropdownElement, isOpen, open } = useDropdown()
                     </div>
                     <div class="meta">
                       <span>Table</span>
+                    </div>
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'elements-tabs-regular' }"
+                    class="dropdown-item is-media"
+                  >
+                    <div class="icon">
+                      <i class="lnil lnil-switch"></i>
+                    </div>
+                    <div class="meta">
+                      <span>Regular Tabs</span>
+                    </div>
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'elements-tabs-slider' }"
+                    class="dropdown-item is-media"
+                  >
+                    <div class="icon">
+                      <i class="lnil lnil-switch"></i>
+                    </div>
+                    <div class="meta">
+                      <span>Slider Tabs</span>
                     </div>
                   </RouterLink>
                   <RouterLink

@@ -239,6 +239,17 @@ const { dropdownElement, isOpen, open } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
+                    :to="{ name: 'components-vtag' }"
+                    class="dropdown-item is-media"
+                  >
+                    <div class="icon">
+                      <i class="lnil lnil-cupcake"></i>
+                    </div>
+                    <div class="meta">
+                      <span>V-Tag</span>
+                    </div>
+                  </RouterLink>
+                  <RouterLink
                     :to="{ name: 'components-snacks' }"
                     class="dropdown-item is-media"
                   >
@@ -246,7 +257,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                       <i class="lnil lnil-cupcake"></i>
                     </div>
                     <div class="meta">
-                      <span>Snacks</span>
+                      <span>V-Snack</span>
                     </div>
                   </RouterLink>
                   <RouterLink

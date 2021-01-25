@@ -134,7 +134,10 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
           </ul>
         </li>
         <li>
-          <RouterLink :to="{ name: 'components-snacks' }">Snacks</RouterLink>
+          <RouterLink :to="{ name: 'components-vtag' }">V-Tag</RouterLink>
+        </li>
+        <li>
+          <RouterLink :to="{ name: 'components-snacks' }">V-Snack</RouterLink>
         </li>
         <li class="divider"></li>
         <li v-has-children class="has-children">

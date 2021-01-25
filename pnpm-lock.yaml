@@ -3,10 +3,12 @@ dependencies:
   '@vueuse/core': 4.0.8_vue@3.0.5
   '@vueuse/head': 0.2.3_vue@3.0.5
   apexcharts: 3.23.1
+  axios: 0.21.1
   billboard.js: 2.1.4
   bulma: 0.9.1
   dayjs: 1.10.4
   markdown-it-emoji: 2.0.0
+  notyf: 3.9.0
   nprogress: 0.2.0
   simplebar: 6.0.0-beta.9
   simplebar-vue: 1.6.0_vue@3.0.5
@@ -33,7 +35,6 @@ devDependencies:
   '@vuedx/typecheck': 0.6.0
   '@vuedx/typescript-plugin-vue': 0.6.0
   autoprefixer: 10.2.3
-  axios: 0.21.1
   chalk: 4.1.0
   cross-env: 7.0.3
   cypress: 6.3.0
@@ -2243,7 +2244,7 @@ packages:
   /axios/0.21.1:
     dependencies:
       follow-redirects: 1.13.1
-    dev: true
+    dev: false
     resolution:
       integrity: sha512-dKQiRHxGD9PPRIUNIWvZhPTPpl1rf/OxTYKsqKUDjBwYylTvV7SjSHJb9ratfyzM6wCdLCOYLzs73qpg5c4iGA==
   /axios/0.21.1_debug@4.3.2:
@@ -3655,7 +3656,7 @@ packages:
     resolution:
       integrity: sha512-zAoAQiudy+r5SvnSw3KJy5os/oRJYHzrzja/tBDqrZtNhUw8bt6y8OBzMWcjWr+8liV8Eb6yOhw8WZ7VFZ5ZzA==
   /follow-redirects/1.13.1:
-    dev: true
+    dev: false
     engines:
       node: '>=4.0'
     peerDependencies:
@@ -5062,6 +5063,10 @@ packages:
     dev: true
     resolution:
       integrity: sha1-0LFF62kRicY6eNIB3E/bEpPvDAM=
+  /notyf/3.9.0:
+    dev: false
+    resolution:
+      integrity: sha512-3zqV/AuP8w5OpPhUElsLte1BFfL42tswMZM5Ya24w7GozMsQTJRYsQQgqmA9oylDL3t5TE7F4rP3ZGM6JfaKOQ==
   /npm-run-all/4.1.5:
     dependencies:
       ansi-styles: 3.2.1
@@ -7571,6 +7576,7 @@ specifiers:
   markdown-it: ^12.0.4
   markdown-it-anchor: ^7.0.0
   markdown-it-emoji: ^2.0.0
+  notyf: ^3.9.0
   npm-run-all: 4.1.5
   nprogress: 0.2.0
   prettier: 2.2.1

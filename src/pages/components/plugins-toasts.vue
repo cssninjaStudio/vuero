@@ -2,17 +2,154 @@
 import { useHead } from '@vueuse/head'
 import { onMounted } from 'vue'
 
+import useMakrdownToc from '/@src/composition/use/useMarkdownToc'
+import { themeColors } from '/@src/composition/state/themeColors'
+import { Notyf } from 'notyf'
+
 import {
   activeSidebar,
   toggleSidebar,
 } from '/@src/composition/state/ui/activeSidebarState'
 
+const { markdownContainer, toc } = useMakrdownToc()
+
+const notyf = new Notyf({
+  duration: 2000,
+  position: {
+    x: 'right',
+    y: 'bottom',
+  },
+  types: [
+    {
+      type: 'warning',
+      background: themeColors.warning,
+      icon: {
+        className: 'fas fa-hand-paper',
+        tagName: 'i',
+        text: '',
+      },
+    },
+    {
+      type: 'info',
+      background: themeColors.info,
+      icon: {
+        className: 'fas fa-info-circle',
+        tagName: 'i',
+        text: '',
+      },
+    },
+    {
+      type: 'primary',
+      background: themeColors.primary,
+      icon: {
+        className: 'fas fa-car-crash',
+        tagName: 'i',
+        text: '',
+      },
+    },
+    {
+      type: 'accent',
+      background: themeColors.accent,
+      icon: {
+        className: 'fas fa-car-crash',
+        tagName: 'i',
+        text: '',
+      },
+    },
+    {
+      type: 'purple',
+      background: themeColors.purple,
+      icon: {
+        className: 'fas fa-check',
+        tagName: 'i',
+        text: '',
+      },
+    },
+    {
+      type: 'blue',
+      background: themeColors.blue,
+      icon: {
+        className: 'fas fa-check',
+        tagName: 'i',
+        text: '',
+      },
+    },
+    {
+      type: 'green',
+      background: themeColors.green,
+      icon: {
+        className: 'fas fa-check',
+        tagName: 'i',
+        text: '',
+      },
+    },
+    {
+      type: 'orange',
+      background: themeColors.orange,
+      icon: {
+        className: 'fas fa-check',
+        tagName: 'i',
+        text: '',
+      },
+    },
+  ],
+})
+const successToast = () => {
+  notyf.success('Your changes have been successfully saved!')
+}
+const errorToast = () => {
+  notyf.error('Looks like something went wrong')
+}
+const infoToast = () => {
+  notyf.open({
+    type: 'info',
+    message: 'This is some useful information that you might need.',
+  })
+}
+const warningToast = () => {
+  notyf.open({
+    type: 'warning',
+    message: 'Please be careful when driving back to home.',
+  })
+}
+const primaryToast = () => {
+  notyf.open({
+    type: 'primary',
+    message: 'Please be careful when driving back to home.',
+  })
+}
+const purpleToast = () => {
+  notyf.open({
+    type: 'purple',
+    message: 'This is a nice looking purple toast notification.',
+  })
+}
+const blueToast = () => {
+  notyf.open({
+    type: 'blue',
+    message: 'This is a nice looking blue toast notification.',
+  })
+}
+const greenToast = () => {
+  notyf.open({
+    type: 'green',
+    message: 'This is a nice looking green toast notification.',
+  })
+}
+const orangeToast = () => {
+  notyf.open({
+    type: 'orange',
+    message: 'This is a nice looking orange toast notification.',
+  })
+}
+
 onMounted(() => {
   activeSidebar.value = 'components'
+  notyf.success('Page component is mounted!')
 })
 
 useHead({
-  title: 'Components - Plugins Toasts - Vuero',
+  title: 'Components - Plugins Notyf - Vuero',
 })
 </script>
 
@@ -67,229 +204,83 @@ useHead({
           </li>
           <li>
             <a>
-              <span>Toasts</span>
+              <span>Notyf</span>
             </a>
           </li>
         </ul>
       </nav>
 
       <div class="columns is-multiline">
-        <div class="column is-12">
+        <div
+          ref="markdownContainer"
+          :class="[toc.length > 0 ? 'is-9' : 'is-12']"
+          class="column"
+        >
           <!--Success Toast-->
-          <div class="demo-card">
-            <div class="demo-title">
-              <h3 class="title is-thin is-5">Success Toast</h3>
-              <p>
-                Vuero is integrated with Notyf, a dead simple vanilla javascript
-                toasting library. You can check the plugin documentation on
-                <a href="https://github.com/caroso1222/notyf">Github</a>. You
-                can also access the javascript code by visiting the
-                <code>assets/js/components.js</code> file. The success toast is
-                one the 2 notyf default toasts.
-              </p>
-            </div>
-            <div class="card-inner">
-              <div class="buttons">
-                <a
-                  id="success-toast-demo"
-                  class="button v-button is-rounded toast-trigger"
-                  >Success Toast</a
-                >
-              </div>
-            </div>
+          <NotyfSuccessDocumentation />
+
+          <div class="buttons mb-6">
+            <V-Button bold @click="successToast">Success Toast</V-Button>
           </div>
 
           <!--Error Toast-->
-          <div class="demo-card">
-            <div class="demo-title">
-              <h3 class="title is-thin is-5">Error Toast</h3>
-              <p>
-                Vuero is integrated with Notyf, a dead simple vanilla javascript
-                toasting library. You can check the plugin documentation on
-                <a href="https://github.com/caroso1222/notyf">Github</a>. You
-                can also access the javascript code by visiting the
-                <code>assets/js/components.js</code> file. The error toast is
-                one the 2 notyf default toasts.
-              </p>
-            </div>
-            <div class="card-inner">
-              <div class="buttons">
-                <a
-                  id="error-toast-demo"
-                  class="button v-button is-rounded toast-trigger"
-                  >Error Toast</a
-                >
-              </div>
-            </div>
+          <NotyfErrorDocumentation />
+
+          <div class="buttons mb-6">
+            <V-Button bold @click="errorToast">Error Toast</V-Button>
           </div>
 
           <!--Info Toast-->
-          <div class="demo-card">
-            <div class="demo-title">
-              <h3 class="title is-thin is-5">Info Toast</h3>
-              <p>
-                Vuero is integrated with Notyf, a dead simple vanilla javascript
-                toasting library. You can check the plugin documentation on
-                <a href="https://github.com/caroso1222/notyf">Github</a>. You
-                can also access the javascript code by visiting the
-                <code>assets/js/components.js</code> file. The info toast is a
-                custom configured toast.
-              </p>
-            </div>
-            <div class="card-inner">
-              <div class="buttons">
-                <a
-                  id="info-toast-demo"
-                  class="button v-button is-rounded toast-trigger"
-                  >Info Toast</a
-                >
-              </div>
-            </div>
+          <NotyfInfoDocumentation />
+
+          <div class="buttons mb-6">
+            <V-Button bold @click="infoToast">Info Toast</V-Button>
           </div>
 
           <!--Warning Toast-->
-          <div class="demo-card">
-            <div class="demo-title">
-              <h3 class="title is-thin is-5">Warning Toast</h3>
-              <p>
-                Vuero is integrated with Notyf, a dead simple vanilla javascript
-                toasting library. You can check the plugin documentation on
-                <a href="https://github.com/caroso1222/notyf">Github</a>. You
-                can also access the javascript code by visiting the
-                <code>assets/js/components.js</code> file. The warning toast is
-                a custom configured toast.
-              </p>
-            </div>
-            <div class="card-inner">
-              <div class="buttons">
-                <a
-                  id="warning-toast-demo"
-                  class="button v-button is-rounded toast-trigger"
-                  >Warning Toast</a
-                >
-              </div>
-            </div>
+          <NotyfWarningDocumentation />
+
+          <div class="buttons mb-6">
+            <V-Button bold @click="warningToast">Warning Toast</V-Button>
           </div>
 
           <!--Primary Toast-->
-          <div class="demo-card">
-            <div class="demo-title">
-              <h3 class="title is-thin is-5">Primary Toast</h3>
-              <p>
-                Vuero is integrated with Notyf, a dead simple vanilla javascript
-                toasting library. You can check the plugin documentation on
-                <a href="https://github.com/caroso1222/notyf">Github</a>. You
-                can also access the javascript code by visiting the
-                <code>assets/js/components.js</code> file. The primary toast is
-                a custom configured toast.
-              </p>
-            </div>
-            <div class="card-inner">
-              <div class="buttons">
-                <a
-                  id="primary-toast-demo"
-                  class="button v-button is-rounded toast-trigger"
-                  >Primary Toast</a
-                >
-              </div>
-            </div>
+          <NotyfPrimaryDocumentation />
+
+          <div class="buttons mb-6">
+            <V-Button bold @click="primaryToast">Primary Toast</V-Button>
           </div>
 
           <!--Purple Toast-->
-          <div class="demo-card">
-            <div class="demo-title">
-              <h3 class="title is-thin is-5">Purple Toast</h3>
-              <p>
-                Vuero is integrated with Notyf, a dead simple vanilla javascript
-                toasting library. You can check the plugin documentation on
-                <a href="https://github.com/caroso1222/notyf">Github</a>. You
-                can also access the javascript code by visiting the
-                <code>assets/js/components.js</code> file. The primary toast is
-                a custom configured toast.
-              </p>
-            </div>
-            <div class="card-inner">
-              <div class="buttons">
-                <a
-                  id="purple-toast-demo"
-                  class="button v-button is-rounded toast-trigger"
-                  >Purple Toast</a
-                >
-              </div>
-            </div>
+          <NotyfPurpleDocumentation />
+
+          <div class="buttons mb-6">
+            <V-Button bold @click="purpleToast">Purple Toast</V-Button>
           </div>
 
           <!--Blue Toast-->
-          <div class="demo-card">
-            <div class="demo-title">
-              <h3 class="title is-thin is-5">Blue Toast</h3>
-              <p>
-                Vuero is integrated with Notyf, a dead simple vanilla javascript
-                toasting library. You can check the plugin documentation on
-                <a href="https://github.com/caroso1222/notyf">Github</a>. You
-                can also access the javascript code by visiting the
-                <code>assets/js/components.js</code> file. The primary toast is
-                a custom configured toast.
-              </p>
-            </div>
-            <div class="card-inner">
-              <div class="buttons">
-                <a
-                  id="blue-toast-demo"
-                  class="button v-button is-rounded toast-trigger"
-                  >Blue Toast</a
-                >
-              </div>
-            </div>
+          <NotyfBlueDocumentation />
+
+          <div class="buttons mb-6">
+            <V-Button bold @click="blueToast">Blue Toast</V-Button>
           </div>
 
           <!--Green Toast-->
-          <div class="demo-card">
-            <div class="demo-title">
-              <h3 class="title is-thin is-5">Green Toast</h3>
-              <p>
-                Vuero is integrated with Notyf, a dead simple vanilla javascript
-                toasting library. You can check the plugin documentation on
-                <a href="https://github.com/caroso1222/notyf">Github</a>. You
-                can also access the javascript code by visiting the
-                <code>assets/js/components.js</code> file. The primary toast is
-                a custom configured toast.
-              </p>
-            </div>
-            <div class="card-inner">
-              <div class="buttons">
-                <a
-                  id="green-toast-demo"
-                  class="button v-button is-rounded toast-trigger"
-                  >Green Toast</a
-                >
-              </div>
-            </div>
+          <NotyfGreenDocumentation />
+
+          <div class="buttons mb-6">
+            <V-Button bold @click="greenToast">Green Toast</V-Button>
           </div>
 
           <!--Orange Toast-->
-          <div class="demo-card">
-            <div class="demo-title">
-              <h3 class="title is-thin is-5">Orange Toast</h3>
-              <p>
-                Vuero is integrated with Notyf, a dead simple vanilla javascript
-                toasting library. You can check the plugin documentation on
-                <a href="https://github.com/caroso1222/notyf">Github</a>. You
-                can also access the javascript code by visiting the
-                <code>assets/js/components.js</code> file. The primary toast is
-                a custom configured toast.
-              </p>
-            </div>
-            <div class="card-inner">
-              <div class="buttons">
-                <a
-                  id="orange-toast-demo"
-                  class="button v-button is-rounded toast-trigger"
-                  >Orange Toast</a
-                >
-              </div>
-            </div>
+          <NotyfOrangeDocumentation />
+
+          <div class="buttons mb-6">
+            <V-Button bold @click="orangeToast">Orange Toast</V-Button>
           </div>
+        </div>
+        <div v-if="toc.length" class="column is-3">
+          <DocumentationToc :toc="toc" />
         </div>
       </div>
     </div>

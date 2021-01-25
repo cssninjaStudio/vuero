@@ -254,6 +254,8 @@
         width: 18px;
         stroke-width: 1.6px;
         color: $light-text;
+        vertical-align: 0 !important;
+        transform: rotate(0) translate(-50%, -50%) !important;
       }
 
       .fas,
@@ -289,7 +291,7 @@
 
   .snack-action {
     position: relative;
-    top: -12px;
+    top: -14px;
     display: inline-block;
     margin: 0 16px 0 10px;
     cursor: pointer;

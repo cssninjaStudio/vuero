@@ -1,7 +1,6 @@
 ### Ordered Lists
 
-Ordered lists `ol` are also genrated using a div with the content class. Ordered list bullets can be controlled with the type attribute.  
-Available types are `type="1"`, `type="A"`, `type="a"`, `type="I"`, `type="i"`
+Ordered lists `ol` are also genrated using a div with the content class. Ordered list bullets can be controlled with the type attribute. Available types are `type="1"`, `type="A"`, `type="a"`, `type="I"`, `type="i"`
 
 <!--code-->
 
