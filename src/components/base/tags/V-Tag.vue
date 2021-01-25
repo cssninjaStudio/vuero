@@ -5,7 +5,7 @@ const props = defineProps({
   label: {
     type: String,
     required: true,
-    default: 'Label',
+    default: '',
   },
   color: {
     type: String,
