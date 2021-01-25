@@ -193,28 +193,6 @@ const { dropdownElement, isOpen, open } = useDropdown()
                       <span>V-Modal</span>
                     </div>
                   </RouterLink>
-                  <RouterLink
-                    :to="{ name: 'components-tabs-regular' }"
-                    class="dropdown-item is-media"
-                  >
-                    <div class="icon">
-                      <i class="lnil lnil-switch"></i>
-                    </div>
-                    <div class="meta">
-                      <span>Regular Tabs</span>
-                    </div>
-                  </RouterLink>
-                  <RouterLink
-                    :to="{ name: 'components-tabs-slider' }"
-                    class="dropdown-item is-media"
-                  >
-                    <div class="icon">
-                      <i class="lnil lnil-switch"></i>
-                    </div>
-                    <div class="meta">
-                      <span>Slider Tabs</span>
-                    </div>
-                  </RouterLink>
                 </div>
               </div>
             </div>
@@ -261,6 +239,17 @@ const { dropdownElement, isOpen, open } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
+                    :to="{ name: 'components-vtag' }"
+                    class="dropdown-item is-media"
+                  >
+                    <div class="icon">
+                      <i class="lnil lnil-cupcake"></i>
+                    </div>
+                    <div class="meta">
+                      <span>V-Tag</span>
+                    </div>
+                  </RouterLink>
+                  <RouterLink
                     :to="{ name: 'components-snacks' }"
                     class="dropdown-item is-media"
                   >
@@ -268,7 +257,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                       <i class="lnil lnil-cupcake"></i>
                     </div>
                     <div class="meta">
-                      <span>Snacks</span>
+                      <span>V-Snack</span>
                     </div>
                   </RouterLink>
                   <RouterLink

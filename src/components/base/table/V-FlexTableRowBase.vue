@@ -21,10 +21,24 @@ const props = defineProps({
       <span class="light-text">{{ row.industry }}</span>
     </div>
     <div class="flex-table-cell" data-th="Status">
-      <span class="tag is-success is-rounded">{{ row.status }}</span>
+      <span
+        class="tag is-rounded"
+        :class="[
+          row.status === 'Active' && 'is-success',
+          row.status === 'Disabled' && '',
+          row.status === 'New' && 'is-info',
+          row.status === 'Suspended' && 'is-orange',
+        ]"
+        >{{ row.status }}</span
+      >
     </div>
     <div class="flex-table-cell" data-th="Contacts">
-      <AvatarStack size="small" :avatars="row.contacts" :limit="3" />
+      <V-AvatarStack
+        class="is-pushed-mobile"
+        size="small"
+        :avatars="row.contacts"
+        :limit="3"
+      />
     </div>
     <div class="flex-table-cell cell-end" data-th="Actions">
       <FlexTableContextMenu />

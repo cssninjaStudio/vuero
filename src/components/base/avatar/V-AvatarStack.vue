@@ -25,6 +25,8 @@ const props = defineProps({
       :key="avatar.id"
       :picture="avatar.picture"
       :size="props.size"
+      :initials="avatar.initials"
+      :color="avatar.color"
     />
     <div
       v-if="avatars.length > limit"

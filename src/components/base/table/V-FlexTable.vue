@@ -2,10 +2,6 @@
 import { defineProps } from 'vue'
 
 const props = defineProps({
-  rows: {
-    type: Array,
-    required: true,
-  },
   compact: {
     type: Boolean,
     default: false,
@@ -14,7 +10,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="flex-table">
+  <div class="flex-table" :class="[compact && 'is-compact']">
     <slot name="header"></slot>
     <slot name="body"></slot>
   </div>

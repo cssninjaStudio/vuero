@@ -145,6 +145,18 @@ const activeTab = ref<'basic' | 'forms'>('basic')
                     </RouterLink>
                   </li>
                   <li>
+                    <RouterLink :to="{ name: 'components-tabs-regular' }">
+                      <span>Regular Tabs</span>
+                      <i class="iconify" data-icon="feather:circle"></i>
+                    </RouterLink>
+                  </li>
+                  <li>
+                    <RouterLink :to="{ name: 'components-tabs-slider' }">
+                      <span>Slider Tabs</span>
+                      <i class="iconify" data-icon="feather:circle"></i>
+                    </RouterLink>
+                  </li>
+                  <li>
                     <RouterLink :to="{ name: 'elements-tooltips' }">
                       <span>Tooltips</span>
                       <i class="iconify" data-icon="feather:circle"></i>

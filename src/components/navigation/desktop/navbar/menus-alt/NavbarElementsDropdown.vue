@@ -261,6 +261,28 @@ const { dropdownElement, isOpen, open } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
+                    :to="{ name: 'components-tabs-regular' }"
+                    class="dropdown-item is-media"
+                  >
+                    <div class="icon">
+                      <i class="lnil lnil-switch"></i>
+                    </div>
+                    <div class="meta">
+                      <span>Regular Tabs</span>
+                    </div>
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'components-tabs-slider' }"
+                    class="dropdown-item is-media"
+                  >
+                    <div class="icon">
+                      <i class="lnil lnil-switch"></i>
+                    </div>
+                    <div class="meta">
+                      <span>Slider Tabs</span>
+                    </div>
+                  </RouterLink>
+                  <RouterLink
                     :to="{ name: 'webapp-layouts-list-datatable-4' }"
                     class="dropdown-item is-media"
                   >

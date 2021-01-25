@@ -95,31 +95,6 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         <li v-has-children class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
-              >Tabs <i class="iconify" data-icon="feather:chevron-right"
-            /></a>
-          </div>
-          <ul>
-            <li>
-              <RouterLink
-                :to="{ name: 'components-tabs-regular' }"
-                class="is-submenu"
-                ><i class="iconify" data-icon="feather:circle"></i>Regular
-                Tabs</RouterLink
-              >
-            </li>
-            <li>
-              <RouterLink
-                :to="{ name: 'components-tabs-slider' }"
-                class="is-submenu"
-                ><i class="iconify" data-icon="feather:circle"></i>Slider
-                Tabs</RouterLink
-              >
-            </li>
-          </ul>
-        </li>
-        <li v-has-children class="has-children">
-          <div class="collapse-wrap">
-            <a href="javascript:void(0);" class="parent-link"
               >V-FlexTable <i class="iconify" data-icon="feather:chevron-right"
             /></a>
           </div>
@@ -159,7 +134,10 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
           </ul>
         </li>
         <li>
-          <RouterLink :to="{ name: 'components-snacks' }">Snacks</RouterLink>
+          <RouterLink :to="{ name: 'components-vtag' }">V-Tag</RouterLink>
+        </li>
+        <li>
+          <RouterLink :to="{ name: 'components-snacks' }">V-Snack</RouterLink>
         </li>
         <li class="divider"></li>
         <li v-has-children class="has-children">

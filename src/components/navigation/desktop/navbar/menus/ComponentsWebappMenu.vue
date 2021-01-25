@@ -101,18 +101,6 @@ const activeTab = ref<'components' | 'plugins'>('components')
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
-                  <li>
-                    <RouterLink :to="{ name: 'components-tabs-regular' }">
-                      <span>Regular Tabs</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
-                    </RouterLink>
-                  </li>
-                  <li>
-                    <RouterLink :to="{ name: 'components-tabs-slider' }">
-                      <span>Slider Tabs</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
-                    </RouterLink>
-                  </li>
                 </ul>
               </div>
               <div class="column is-3">
@@ -137,8 +125,14 @@ const activeTab = ref<'components' | 'plugins'>('components')
                     </RouterLink>
                   </li>
                   <li>
+                    <RouterLink :to="{ name: 'components-vtag' }">
+                      <span>V-Tag</span>
+                      <i class="iconify" data-icon="feather:circle"></i>
+                    </RouterLink>
+                  </li>
+                  <li>
                     <RouterLink :to="{ name: 'components-snacks' }">
-                      <span>Snacks</span>
+                      <span>V-Snack</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
