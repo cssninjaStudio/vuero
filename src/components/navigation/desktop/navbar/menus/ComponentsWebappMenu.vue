@@ -101,18 +101,6 @@ const activeTab = ref<'components' | 'plugins'>('components')
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
-                  <li>
-                    <RouterLink :to="{ name: 'components-tabs-regular' }">
-                      <span>Regular Tabs</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
-                    </RouterLink>
-                  </li>
-                  <li>
-                    <RouterLink :to="{ name: 'components-tabs-slider' }">
-                      <span>Slider Tabs</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
-                    </RouterLink>
-                  </li>
                 </ul>
               </div>
               <div class="column is-3">
