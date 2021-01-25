@@ -261,7 +261,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'components-tabs-regular' }"
+                    :to="{ name: 'elements-tabs-regular' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -272,7 +272,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'components-tabs-slider' }"
+                    :to="{ name: 'elements-tabs-slider' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">

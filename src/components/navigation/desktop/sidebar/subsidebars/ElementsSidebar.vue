@@ -149,7 +149,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
           <ul>
             <li>
               <RouterLink
-                :to="{ name: 'components-tabs-regular' }"
+                :to="{ name: 'elements-tabs-regular' }"
                 class="is-submenu"
                 ><i class="iconify" data-icon="feather:circle"></i>Regular
                 Tabs</RouterLink
@@ -157,7 +157,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'components-tabs-slider' }"
+                :to="{ name: 'elements-tabs-slider' }"
                 class="is-submenu"
                 ><i class="iconify" data-icon="feather:circle"></i>Slider
                 Tabs</RouterLink
