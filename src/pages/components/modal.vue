@@ -870,7 +870,6 @@ useHead({
       title="Invitation"
       size="small"
       actions="center"
-      rounded
       noscroll
       @close="noscrollOpen = false"
     >
@@ -890,7 +889,6 @@ useHead({
       title="Invitation"
       size="small"
       actions="center"
-      rounded
       noclose
       @close="nocloseOpen = false"
     >
