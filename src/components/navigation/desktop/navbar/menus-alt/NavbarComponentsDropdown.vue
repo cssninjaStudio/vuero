@@ -193,28 +193,6 @@ const { dropdownElement, isOpen, open } = useDropdown()
                       <span>V-Modal</span>
                     </div>
                   </RouterLink>
-                  <RouterLink
-                    :to="{ name: 'components-tabs-regular' }"
-                    class="dropdown-item is-media"
-                  >
-                    <div class="icon">
-                      <i class="lnil lnil-switch"></i>
-                    </div>
-                    <div class="meta">
-                      <span>Regular Tabs</span>
-                    </div>
-                  </RouterLink>
-                  <RouterLink
-                    :to="{ name: 'components-tabs-slider' }"
-                    class="dropdown-item is-media"
-                  >
-                    <div class="icon">
-                      <i class="lnil lnil-switch"></i>
-                    </div>
-                    <div class="meta">
-                      <span>Slider Tabs</span>
-                    </div>
-                  </RouterLink>
                 </div>
               </div>
             </div>
