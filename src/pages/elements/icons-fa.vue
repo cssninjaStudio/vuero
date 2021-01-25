@@ -7,14 +7,6 @@ import {
   toggleSidebar,
 } from '/@src/composition/state/ui/activeSidebarState'
 
-import * as examples from './icons-fa.examples'
-
-const examplesIds = Object.keys(examples)
-const display = ref<any>({})
-for (const id of examplesIds) {
-  display[id] = false
-}
-
 onMounted(() => {
   activeSidebar.value = 'elements'
 })
@@ -78,43 +70,10 @@ useHead({
 
       <div class="columns">
         <div class="column is-12">
-          <!--Line Icons-->
+          <!--Font Awesome-->
+          <IconsFaDocumentation />
           <div class="demo-card">
-            <div class="demo-title">
-              <h3 class="title is-thin is-5">Font Awesome 5</h3>
-              <p>
-                Vuero is bundled with the <code>Font Awesome 5</code> free
-                version. Everyone likes Font Awesome icons and they are widely
-                used accross a large variety of websites. Please refer to the
-                code example for more details about usage.
-              </p>
-              <a
-                class="code-trigger"
-                :class="[display.fontAwesomeIcons && 'is-active']"
-                @click="display.fontAwesomeIcons = !display.fontAwesomeIcons"
-              >
-                <span
-                  v-show="display.fontAwesomeIcons"
-                  class="iconify open"
-                  data-icon="feather:code"
-                />
-                <span
-                  v-show="!display.fontAwesomeIcons"
-                  class="iconify close"
-                  data-icon="feather:x"
-                />
-              </a>
-            </div>
-
             <div class="card-inner">
-              <div class="highlight highlight-block">
-                <HighlightJS
-                  v-if="display.fontAwesomeIcons"
-                  language="vue"
-                  :code="examples.fontAwesomeIcons"
-                />
-              </div>
-
               <ul class="demo-icon-list">
                 <li
                   id="ad"

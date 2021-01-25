@@ -42,6 +42,13 @@ import {
           @click="setLayout('sidebar-color-curved')"
           >Colored &amp; Surved Sidebar</a
         >
+        <a
+          href="#"
+          :class="[adminLayoutId === 'sidebar-minimal' && 'is-active']"
+          class="dropdown-item"
+          @click="setLayout('sidebar-minimal')"
+          >Default Minimal</a
+        >
       </template>
     </V-Dropdown>
   </li>

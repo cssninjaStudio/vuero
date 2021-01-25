@@ -7,14 +7,6 @@ import {
   toggleSidebar,
 } from '/@src/composition/state/ui/activeSidebarState'
 
-import * as examples from './icons-feater.examples'
-
-const examplesIds = Object.keys(examples)
-const display = ref<any>({})
-for (const id of examplesIds) {
-  display[id] = false
-}
-
 onMounted(() => {
   activeSidebar.value = 'elements'
 })
@@ -79,43 +71,9 @@ useHead({
       <div class="columns">
         <div class="column is-12">
           <!--Line Icons-->
+          <IconsFeatherDocumentation />
           <div class="demo-card">
-            <div class="demo-title">
-              <h3 class="title is-thin is-5">Feather Icons</h3>
-              <p>
-                Vuero is bundled with the
-                <code>Feather Icons</code> javascript svg library. Everyone
-                likes Font Awesome icons and they are widely used accross a
-                large variety of websites. Please refer to the code example for
-                more details about usage.
-              </p>
-              <a
-                class="code-trigger"
-                :class="[display.featherIcons && 'is-active']"
-                @click="display.featherIcons = !display.featherIcons"
-              >
-                <span
-                  v-show="display.featherIcons"
-                  class="iconify open"
-                  data-icon="feather:code"
-                />
-                <span
-                  v-show="!display.featherIcons"
-                  class="iconify close"
-                  data-icon="feather:x"
-                />
-              </a>
-            </div>
-
             <div class="card-inner">
-              <div class="highlight highlight-block">
-                <HighlightJS
-                  v-if="display.featherIcons"
-                  language="vue"
-                  :code="examples.featherIcons"
-                />
-              </div>
-
               <ul class="demo-icon-list">
                 <li class="textFilter-target">
                   <i class="iconify" data-icon="feather:activity"></i>

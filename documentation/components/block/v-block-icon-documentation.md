@@ -13,9 +13,9 @@ Vuero provides a versatile flex block media component named `<V-Block />`. V-Blo
             </VIconBox>
         </template>
         <template #action>
-            <V-Button color="primary" elevated>View</V-button>
+            <V-Button color="primary" elevated>View</V-Button>
         </template>
-    </VBlock>
+    </V-Block>
 </template>
 ```
 
@@ -33,9 +33,9 @@ Vuero provides a versatile flex block media component named `<V-Block />`. V-Blo
                     </VIconBox>
                 </template>
                 <template #action>
-                    <V-Button color="primary" elevated>View</V-button>
+                    <V-Button color="primary" elevated>View</V-Button>
                 </template>
-            </VBlock>
+            </V-Block>
         </div>
     </div>
 </div>

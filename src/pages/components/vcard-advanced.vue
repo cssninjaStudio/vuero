@@ -1,21 +1,18 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
-import { onMounted, ref } from 'vue'
-import useMakrdownToc from '/@src/composition/use/useMarkdownToc'
+import { onMounted } from 'vue'
 
 import {
   activeSidebar,
   toggleSidebar,
 } from '/@src/composition/state/ui/activeSidebarState'
 
-const { markdownContainer, toc } = useMakrdownToc()
-
 onMounted(() => {
-  activeSidebar.value = 'elements'
+  activeSidebar.value = 'components'
 })
 
 useHead({
-  title: 'Elements - Tags - Vuero',
+  title: 'Components - V-Card - Vuero',
 })
 </script>
 
@@ -25,7 +22,7 @@ useHead({
       <!-- Sidebar Trigger -->
       <div
         class="huro-hamburger nav-trigger push-resize"
-        @click="toggleSidebar('elements')"
+        @click="toggleSidebar('components')"
       >
         <span class="menu-toggle has-chevron">
           <span
@@ -42,7 +39,7 @@ useHead({
       </div>
 
       <div class="title-wrap">
-        <h1 class="title is-4">Tags</h1>
+        <h1 class="title is-4">V-Card</h1>
       </div>
 
       <Toolbar />
@@ -60,50 +57,31 @@ useHead({
           </li>
           <li>
             <RouterLink :to="{ name: 'elements' }">
-              <span>Elements</span>
+              <span>Components</span>
             </RouterLink>
           </li>
           <li>
             <a>
-              <span>Tags</span>
+              <span>V-Card</span>
+            </a>
+          </li>
+          <li>
+            <a>
+              <span>Advanced</span>
             </a>
           </li>
         </ul>
       </nav>
 
-      <div class="columns">
-        <div
-          ref="markdownContainer"
-          :class="[toc.length > 0 ? 'is-9' : 'is-12']"
-          class="column"
-        >
-          <!--Tags-->
-          <TagsBaseDocumentation />
-
-          <!--Tags rounded-->
-          <TagsRoundedDocumentation />
-
-          <!--Tags curved-->
-          <TagsCurvedDocumentation />
-
-          <!--Tags outlined-->
-          <TagsOutlinedDocumentation />
-
-          <!--Tags light-->
-          <TagsLightDocumentation />
-
-          <!--Tags elevated-->
-          <TagsElevatedDocumentation />
-
-          <!--Tags addons-->
-          <TagsAddonsDocumentation />
-
-          <!--Tags addons list-->
-          <TagsAddonsListDocumentation />
+      <div class="columns is-multiline">
+        <div class="column is-12">
+          <!--V-Card Advanced-->
+          <VCardAdvancedDocumentation />
         </div>
-        <div v-if="toc.length" class="column is-3">
-          <DocumentationToc :toc="toc" />
-        </div>
+
+        <div class="column is-6"></div>
+
+        <div class="column is-6"></div>
       </div>
     </div>
   </div>
