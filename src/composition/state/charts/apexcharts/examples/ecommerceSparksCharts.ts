@@ -24,6 +24,12 @@ export const spark1 = {
   markers: {
     size: 0,
   },
+  yaxis: {
+    min: 0,
+    labels: {
+      minWidth: 100,
+    },
+  },
   tooltip: {
     fixed: {
       enabled: true,
@@ -58,6 +64,12 @@ export const spark2 = {
   },
   markers: {
     size: 0,
+  },
+  yaxis: {
+    min: 0,
+    labels: {
+      minWidth: 100,
+    },
   },
   tooltip: {
     fixed: {
@@ -112,6 +124,12 @@ export const spark3 = {
       width: 1,
     },
   },
+  yaxis: {
+    min: 0,
+    labels: {
+      minWidth: 100,
+    },
+  },
 }
 
 export const spark4 = {
@@ -150,6 +168,12 @@ export const spark4 = {
   xaxis: {
     crosshairs: {
       width: 1,
+    },
+  },
+  yaxis: {
+    min: 0,
+    labels: {
+      minWidth: 100,
     },
   },
 }
