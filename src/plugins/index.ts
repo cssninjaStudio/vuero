@@ -8,6 +8,7 @@ import '@purge-icons/generated'
 import './icons'
 import './simplebar'
 import './tinyslider'
+import './notyf'
 import './scss'
 
 export default (app: App) => {
