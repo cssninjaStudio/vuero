@@ -1,4 +1,4 @@
-import moment from 'moment'
+import dayjs from 'dayjs'
 
 import { themeColors } from '/@src/composition/state/themeColors'
 import * as formatters from '../formatters'
@@ -873,8 +873,8 @@ export const options14 = {
     enabled: true,
     formatter: function (val: string, opts: any) {
       const label = opts.w.globals.labels[opts.dataPointIndex]
-      const a = moment(val[0])
-      const b = moment(val[1])
+      const a = dayjs(val[0])
+      const b = dayjs(val[1])
       const diff = b.diff(a, 'days')
       return label + ': ' + diff + (diff > 1 ? 'd' : 'd')
     },

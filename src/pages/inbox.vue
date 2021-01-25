@@ -1,8 +1,13 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
+import { ref } from 'vue'
 
 import { isDark } from '/@src/composition/state/ui/darkModeState.ts'
 import useDropdown from '/@src/composition/use/useDropdown'
+
+const contactSearchOpen = ref(false)
+const activeTab = ref('inbox')
+const selectedConversationId = ref(1)
 
 const {
   dropdownElement: dropdownElement1,
@@ -102,35 +107,50 @@ useHead({
               <div class="inbox-menu">
                 <ul>
                   <li>
-                    <a class="is-active">
+                    <a
+                      :class="[activeTab === 'inbox' && 'is-active']"
+                      @click="activeTab = 'inbox'"
+                    >
                       <i class="iconify" data-icon="feather:mail"></i>
                       <span>Inbox</span>
                       <span class="tag">24</span>
                     </a>
                   </li>
                   <li>
-                    <a>
+                    <a
+                      :class="[activeTab === 'drafts' && 'is-active']"
+                      @click="activeTab = 'drafts'"
+                    >
                       <i class="iconify" data-icon="feather:file-text"></i>
                       <span>Drafts</span>
                       <span class="tag">2</span>
                     </a>
                   </li>
                   <li>
-                    <a>
+                    <a
+                      :class="[activeTab === 'sent' && 'is-active']"
+                      @click="activeTab = 'sent'"
+                    >
                       <i class="iconify" data-icon="feather:send"></i>
                       <span>Sent</span>
                       <span class="tag">7</span>
                     </a>
                   </li>
                   <li>
-                    <a>
+                    <a
+                      :class="[activeTab === 'trash' && 'is-active']"
+                      @click="activeTab = 'trash'"
+                    >
                       <i class="iconify" data-icon="feather:trash-2"></i>
                       <span>Trash</span>
                       <span class="tag">18</span>
                     </a>
                   </li>
                   <li>
-                    <a>
+                    <a
+                      :class="[activeTab === 'span' && 'is-active']"
+                      @click="activeTab = 'span'"
+                    >
                       <i class="iconify" data-icon="feather:alert-octagon"></i>
                       <span>Spam</span>
                       <span class="tag">29</span>
@@ -142,8 +162,11 @@ useHead({
             <!--Scroll menu-->
             <div class="scroll-menu">
               <div class="title-wrap">
-                <h3>Contacts</h3>
-                <div class="control has-icon is-hidden">
+                <h3 :class="[contactSearchOpen && 'is-hidden']">Contacts</h3>
+                <div
+                  :class="[!contactSearchOpen && 'is-hidden']"
+                  class="control has-icon"
+                >
                   <input
                     type="text"
                     class="input"
@@ -153,13 +176,22 @@ useHead({
                     <i class="iconify" data-icon="feather:search"></i>
                   </div>
                 </div>
-                <a class="button searcv-button">
-                  <span class="icon is-small">
+                <a
+                  :class="[contactSearchOpen && 'is-hidden']"
+                  class="button searcv-button"
+                >
+                  <span class="icon is-small" @click="contactSearchOpen = true">
                     <i class="iconify" data-icon="feather:search"></i>
                   </span>
                 </a>
-                <a class="button cancel-searcv-button is-hidden">
-                  <span class="icon is-small">
+                <a
+                  :class="[!contactSearchOpen && 'is-hidden']"
+                  class="button cancel-searcv-button"
+                >
+                  <span
+                    class="icon is-small"
+                    @click="contactSearchOpen = false"
+                  >
                     <i class="iconify" data-icon="feather:x"></i>
                   </span>
                 </a>
@@ -302,7 +334,9 @@ useHead({
           <!--Messages-->
           <div class="messages-list has-slimscroll">
             <!--messages list partial-->
-            <InboxMessagesList />
+            <InboxMessagesList
+              v-model:conversationId="selectedConversationId"
+            />
           </div>
         </div>
 
@@ -312,34 +346,34 @@ useHead({
         </div>
 
         <!--Message details 1-->
-        <Message1 />
+        <Message1 :class="[selectedConversationId !== 1 && 'is-hidden']" />
 
         <!--Message details 2-->
-        <Message2 />
+        <Message2 :class="[selectedConversationId !== 2 && 'is-hidden']" />
 
         <!--Message details 3-->
-        <Message3 />
+        <Message3 :class="[selectedConversationId !== 3 && 'is-hidden']" />
 
         <!--Message details 4-->
-        <Message4 />
+        <Message4 :class="[selectedConversationId !== 4 && 'is-hidden']" />
 
         <!--Message details 5-->
-        <Message5 />
+        <Message5 :class="[selectedConversationId !== 5 && 'is-hidden']" />
 
         <!--Message details 6-->
-        <Message6 />
+        <Message6 :class="[selectedConversationId !== 6 && 'is-hidden']" />
 
         <!--Message details 7-->
-        <Message7 />
+        <Message7 :class="[selectedConversationId !== 7 && 'is-hidden']" />
 
         <!--Message details 8-->
-        <Message8 />
+        <Message8 :class="[selectedConversationId !== 8 && 'is-hidden']" />
 
         <!--Message details 9-->
-        <Message9 />
+        <Message9 :class="[selectedConversationId !== 9 && 'is-hidden']" />
 
         <!--Message details 10-->
-        <Message10 />
+        <Message10 :class="[selectedConversationId !== 10 && 'is-hidden']" />
       </div>
     </div>
   </MinimalLayout>

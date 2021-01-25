@@ -1,6 +1,29 @@
+<script setup lang="ts">
+import { ref, defineEmit, defineProps } from 'vue'
+
+const props = defineProps({
+  conversationId: {
+    type: Number,
+    default: 0,
+  },
+})
+
+const unread = ref(true)
+const emit = defineEmit(['update:conversationId'])
+</script>
+
 <template>
   <!--Message-->
-  <div class="inbox-message is-unread" data-message="message-2">
+  <div
+    class="inbox-message"
+    :class="[conversationId === 2 && 'is-selected', unread && 'is-unread']"
+    @click="
+      () => {
+        unread = false
+        emit('update:conversationId', 2)
+      }
+    "
+  >
     <div class="message-checkbox">
       <label class="checkbox is-outlined is-primary">
         <input id="checkbox-mail-1" type="checkbox" />
@@ -17,7 +40,11 @@
     <div class="pushed">Oct 22</div>
   </div>
   <!--Message-->
-  <div class="inbox-message is-selected" data-message="message-1">
+  <div
+    class="inbox-message"
+    :class="[conversationId === 1 && 'is-selected']"
+    @click="() => emit('update:conversationId', 1)"
+  >
     <div class="message-checkbox">
       <label class="checkbox is-outlined is-primary">
         <input id="checkbox-mail-2" type="checkbox" />
@@ -32,7 +59,11 @@
     <div class="pushed">Oct 21</div>
   </div>
   <!--Message-->
-  <div class="inbox-message" data-message="message-3">
+  <div
+    class="inbox-message"
+    :class="[conversationId === 3 && 'is-selected']"
+    @click="() => emit('update:conversationId', 3)"
+  >
     <div class="message-checkbox">
       <label class="checkbox is-outlined is-primary">
         <input id="checkbox-mail-3" type="checkbox" />
@@ -47,7 +78,11 @@
     <div class="pushed">Oct 20</div>
   </div>
   <!--Message-->
-  <div class="inbox-message" data-message="message-4">
+  <div
+    class="inbox-message"
+    :class="[conversationId === 4 && 'is-selected']"
+    @click="() => emit('update:conversationId', 4)"
+  >
     <div class="message-checkbox">
       <label class="checkbox is-outlined is-primary">
         <input id="checkbox-mail-4" type="checkbox" />
@@ -62,7 +97,11 @@
     <div class="pushed">Oct 19</div>
   </div>
   <!--Message-->
-  <div class="inbox-message" data-message="message-5">
+  <div
+    class="inbox-message"
+    :class="[conversationId === 5 && 'is-selected']"
+    @click="() => emit('update:conversationId', 5)"
+  >
     <div class="message-checkbox">
       <label class="checkbox is-outlined is-primary">
         <input id="checkbox-mail-5" type="checkbox" />
@@ -79,7 +118,11 @@
     <div class="pushed">Oct 19</div>
   </div>
   <!--Message-->
-  <div class="inbox-message" data-message="message-6">
+  <div
+    class="inbox-message"
+    :class="[conversationId === 6 && 'is-selected']"
+    @click="() => emit('update:conversationId', 6)"
+  >
     <div class="message-checkbox">
       <label class="checkbox is-outlined is-primary">
         <input id="checkbox-mail-6" type="checkbox" />
@@ -94,7 +137,11 @@
     <div class="pushed">Oct 18</div>
   </div>
   <!--Message-->
-  <div class="inbox-message" data-message="message-7">
+  <div
+    class="inbox-message"
+    :class="[conversationId === 7 && 'is-selected']"
+    @click="() => emit('update:conversationId', 7)"
+  >
     <div class="message-checkbox">
       <label class="checkbox is-outlined is-primary">
         <input id="checkbox-mail-7" type="checkbox" />
@@ -111,7 +158,11 @@
     <div class="pushed">Oct 18</div>
   </div>
   <!--Message-->
-  <div class="inbox-message" data-message="message-8">
+  <div
+    class="inbox-message"
+    :class="[conversationId === 8 && 'is-selected']"
+    @click="() => emit('update:conversationId', 8)"
+  >
     <div class="message-checkbox">
       <label class="checkbox is-outlined is-primary">
         <input id="checkbox-mail-8" type="checkbox" />
@@ -126,7 +177,11 @@
     <div class="pushed">Oct 17</div>
   </div>
   <!--Message-->
-  <div class="inbox-message" data-message="message-9">
+  <div
+    class="inbox-message"
+    :class="[conversationId === 9 && 'is-selected']"
+    @click="() => emit('update:conversationId', 9)"
+  >
     <div class="message-checkbox">
       <label class="checkbox is-outlined is-primary">
         <input id="checkbox-mail-9" type="checkbox" />
@@ -141,7 +196,11 @@
     <div class="pushed">Oct 17</div>
   </div>
   <!--Message-->
-  <div class="inbox-message" data-message="message-10">
+  <div
+    class="inbox-message"
+    :class="[conversationId === 10 && 'is-selected']"
+    @click="() => emit('update:conversationId', 10)"
+  >
     <div class="message-checkbox">
       <label class="checkbox is-outlined is-primary">
         <input id="checkbox-mail-10" type="checkbox" />

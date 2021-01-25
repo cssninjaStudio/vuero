@@ -20,7 +20,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
       <ul>
         <li v-has-children class="has-children">
           <div class="collapse-wrap">
-            <a href="javascript:void(0);" class="parent-link"
+            <a class="parent-link"
               >Lists <i class="iconify" data-icon="feather:chevron-right"
             /></a>
           </div>
@@ -62,7 +62,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         </li>
         <li v-has-children class="has-children">
           <div class="collapse-wrap">
-            <a href="javascript:void(0);" class="parent-link"
+            <a class="parent-link"
               >Flex Lists <i class="iconify" data-icon="feather:chevron-right"
             /></a>
           </div>
@@ -98,7 +98,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         </li>
         <li v-has-children class="has-children">
           <div class="collapse-wrap">
-            <a href="javascript:void(0);" class="parent-link"
+            <a class="parent-link"
               >Datatable <i class="iconify" data-icon="feather:chevron-right"
             /></a>
           </div>
@@ -144,7 +144,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
 
         <li v-has-children class="has-children">
           <div class="collapse-wrap">
-            <a href="javascript:void(0);" class="parent-link"
+            <a class="parent-link"
               >Form Layouts
               <i class="iconify" data-icon="feather:chevron-right"
             /></a>
@@ -191,7 +191,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         <li class="divider"></li>
         <li v-has-children class="has-children">
           <div class="collapse-wrap">
-            <a href="javascript:void(0);" class="parent-link"
+            <a class="parent-link"
               >Card Grid <i class="iconify" data-icon="feather:chevron-right"
             /></a>
           </div>
@@ -236,7 +236,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         </li>
         <li v-has-children class="has-children">
           <div class="collapse-wrap">
-            <a href="javascript:void(0);" class="parent-link"
+            <a class="parent-link"
               >Tile Grid <i class="iconify" data-icon="feather:chevron-right"
             /></a>
           </div>
@@ -272,7 +272,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         </li>
         <li v-has-children class="has-children">
           <div class="collapse-wrap">
-            <a href="javascript:void(0);" class="parent-link"
+            <a class="parent-link"
               >User Grid <i class="iconify" data-icon="feather:chevron-right"
             /></a>
           </div>
@@ -315,7 +315,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         <li class="divider"></li>
         <li v-has-children class="has-children">
           <div class="collapse-wrap">
-            <a href="javascript:void(0);" class="parent-link"
+            <a class="parent-link"
               >Personal <i class="iconify" data-icon="feather:chevron-right"
             /></a>
           </div>
@@ -360,7 +360,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         </li>
         <li v-has-children class="has-children">
           <div class="collapse-wrap">
-            <a href="javascript:void(0);" class="parent-link"
+            <a class="parent-link"
               >Pages <i class="iconify" data-icon="feather:chevron-right"
             /></a>
           </div>
@@ -423,7 +423,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         </li>
         <li v-has-children class="has-children">
           <div class="collapse-wrap">
-            <a href="javascript:void(0);" class="parent-link"
+            <a class="parent-link"
               >Subpages <i class="iconify" data-icon="feather:chevron-right"
             /></a>
           </div>
@@ -468,7 +468,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         </li>
         <li v-has-children class="has-children">
           <div class="collapse-wrap">
-            <a href="javascript:void(0);" class="parent-link"
+            <a class="parent-link"
               >Projects <i class="iconify" data-icon="feather:chevron-right"
             /></a>
           </div>
@@ -523,7 +523,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         <li class="divider"></li>
         <li v-has-children class="has-children">
           <div class="collapse-wrap">
-            <a href="javascript:void(0);" class="parent-link"
+            <a class="parent-link"
               >Utility <i class="iconify" data-icon="feather:chevron-right"
             /></a>
           </div>
@@ -565,7 +565,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         </li>
         <li v-has-children class="has-children">
           <div class="collapse-wrap">
-            <a href="javascript:void(0);" class="parent-link"
+            <a class="parent-link"
               >Onboarding <i class="iconify" data-icon="feather:chevron-right"
             /></a>
           </div>
@@ -619,7 +619,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         </li>
         <li v-has-children class="has-children">
           <div class="collapse-wrap">
-            <a href="javascript:void(0);" class="parent-link"
+            <a class="parent-link"
               >Error Pages <i class="iconify" data-icon="feather:chevron-right"
             /></a>
           </div>

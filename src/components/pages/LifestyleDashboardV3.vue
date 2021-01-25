@@ -1,8 +1,13 @@
 <script setup lang="ts">
+import { onMounted, reactive, ref } from 'vue'
 import { energyChartOptions } from '/@src/composition/state/charts/apexcharts/examples/energyChart'
 import { overallChartOptions } from '/@src/composition/state/charts/apexcharts/examples/overallChart'
 import { oxygenChartOptions } from '/@src/composition/state/charts/apexcharts/examples/oxygenChart'
 import { progressChartOptions } from '/@src/composition/state/charts/apexcharts/examples/progressChart'
+import {
+  personalScoreGaugeOptions,
+  onPersonalScoreGaugeReady,
+} from '/@src/composition/state/charts/billboardjs/examples/personalScoreGauge'
 </script>
 
 <template>
@@ -341,6 +346,10 @@ import { progressChartOptions } from '/@src/composition/state/charts/apexcharts/
           </div>
           <div class="gauge-wrap">
             <div id="gauge-holder" class="gauge-holder"></div>
+            <BillboardJS
+              :options="personalScoreGaugeOptions"
+              @ready="onPersonalScoreGaugeReady"
+            />
           </div>
           <div class="widget-content">
             <p>Your score has been calculated based on the latest metrics</p>

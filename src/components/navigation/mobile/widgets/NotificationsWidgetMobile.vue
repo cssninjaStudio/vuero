@@ -2,7 +2,7 @@
   <div
     class="navbar-item has-dropdown is-notification is-hidden-tablet is-hidden-desktop"
   >
-    <a class="navbar-link is-arrowless" href="javascript:void(0);">
+    <a class="navbar-link is-arrowless">
       <i class="iconify" data-icon="feather:bell"></i>
       <span class="new-indicator pulsate"></span>
     </a>

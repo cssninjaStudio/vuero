@@ -42,7 +42,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
 
         <li v-has-children class="has-children">
           <div class="collapse-wrap">
-            <a href="javascript:void(0);" class="parent-link"
+            <a class="parent-link"
               >Icons <i class="iconify" data-icon="feather:chevron-right"
             /></a>
           </div>
@@ -81,7 +81,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         </li>
         <li v-has-children class="has-children">
           <div class="collapse-wrap">
-            <a href="javascript:void(0);" class="parent-link"
+            <a class="parent-link"
               >Cards <i class="iconify" data-icon="feather:chevron-right"
             /></a>
           </div>
@@ -108,6 +108,31 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
                 class="is-submenu"
                 ><i class="iconify" data-icon="feather:circle"></i>Bulma
                 Cards</RouterLink
+              >
+            </li>
+          </ul>
+        </li>
+        <li v-has-children class="has-children">
+          <div class="collapse-wrap">
+            <a class="parent-link"
+              >Tabs <i class="iconify" data-icon="feather:chevron-right"
+            /></a>
+          </div>
+          <ul>
+            <li>
+              <RouterLink
+                :to="{ name: 'elements-tabs-regular' }"
+                class="is-submenu"
+                ><i class="iconify" data-icon="feather:circle"></i>Regular
+                Tabs</RouterLink
+              >
+            </li>
+            <li>
+              <RouterLink
+                :to="{ name: 'elements-tabs-slider' }"
+                class="is-submenu"
+                ><i class="iconify" data-icon="feather:circle"></i>Slider
+                Tabs</RouterLink
               >
             </li>
           </ul>
@@ -146,7 +171,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         <li class="divider"></li>
         <li v-has-children class="has-children">
           <div class="collapse-wrap">
-            <a href="javascript:void(0);" class="parent-link"
+            <a class="parent-link"
               >Forms <i class="iconify" data-icon="feather:chevron-right"
             /></a>
           </div>
@@ -203,7 +228,7 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         </li>
         <li v-has-children class="has-children">
           <div class="collapse-wrap">
-            <a href="javascript:void(0);" class="parent-link"
+            <a class="parent-link"
               >Toggles <i class="iconify" data-icon="feather:chevron-right"
             /></a>
           </div>

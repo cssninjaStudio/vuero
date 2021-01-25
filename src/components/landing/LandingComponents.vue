@@ -487,52 +487,6 @@ const props = defineProps({
 
       <div class="column is-3">
         <RouterLink
-          :to="{ name: 'components-tabs-regular' }"
-          class="component-box"
-        >
-          <div class="component">
-            <img
-              class="light-image-l"
-              src="/images/icons/components/tabs.svg"
-              alt=""
-              loading="lazy"
-            />
-            <img
-              class="dark-image-l"
-              src="/images/icons/components/tabs-dark.svg"
-              alt=""
-              loading="lazy"
-            />
-          </div>
-          <div class="component-title">Tabs</div>
-        </RouterLink>
-      </div>
-
-      <div class="column is-3">
-        <RouterLink
-          :to="{ name: 'components-tabs-slider' }"
-          class="component-box"
-        >
-          <div class="component">
-            <img
-              class="light-image-l"
-              src="/images/icons/components/slider-tabs.svg"
-              alt=""
-              loading="lazy"
-            />
-            <img
-              class="dark-image-l"
-              src="/images/icons/components/slider-tabs-dark.svg"
-              alt=""
-              loading="lazy"
-            />
-          </div>
-          <div class="component-title">Slider Tabs</div>
-        </RouterLink>
-      </div>
-
-      <div class="column is-3">
-        <RouterLink
           :to="{ name: 'components-table-flex' }"
           class="component-box"
         >
