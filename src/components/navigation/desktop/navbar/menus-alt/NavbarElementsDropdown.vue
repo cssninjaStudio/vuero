@@ -172,17 +172,6 @@ const { dropdownElement, isOpen, open } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'elements-blocks' }"
-                    class="dropdown-item is-media"
-                  >
-                    <div class="icon">
-                      <i class="lnil lnil-scaling"></i>
-                    </div>
-                    <div class="meta">
-                      <span>Blocks</span>
-                    </div>
-                  </RouterLink>
-                  <RouterLink
                     :to="{ name: 'elements-content' }"
                     class="dropdown-item is-media"
                   >

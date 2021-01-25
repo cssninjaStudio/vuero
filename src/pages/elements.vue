@@ -21,7 +21,7 @@ onMounted(() => {
       <div class="page-content-wrapper">
         <div class="page-content is-relative">
           <RouterView v-slot="{ Component }">
-            <transition name="fade-fast" mode="out-in">
+            <transition name="translate-page-y" mode="out-in">
               <component :is="Component" />
             </transition>
           </RouterView>

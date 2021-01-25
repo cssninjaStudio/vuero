@@ -1,7 +1,6 @@
 ### Iconify
 
-Vuero buttons work well with Iconify which includes **over 40,000 icons** from popular fonts and emoji sets. Add an icon element inside the button to handle icons. You can also create square and circle buttons with a single icon.  
-You can browse [icons here](https://icones.netlify.app/). Please refer to markup for detailed examples.
+Vuero buttons work well with Iconify which includes **over 40,000 icons** from popular fonts and emoji sets. You can also create square and circle buttons with a single icon. You can browse all the available [icons here](https://icones.netlify.app/). Please refer to the markup for detailed examples.
 
 <!--code-->
 

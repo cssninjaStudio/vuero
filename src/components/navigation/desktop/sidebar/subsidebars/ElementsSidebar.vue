@@ -29,13 +29,10 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
           <RouterLink :to="{ name: 'elements-buttons' }">Buttons</RouterLink>
         </li>
         <li>
-          <RouterLink :to="{ name: 'elements-blocks' }">Blocks</RouterLink>
-        </li>
-        <li>
           <RouterLink :to="{ name: 'elements-content' }">Content</RouterLink>
         </li>
         <li>
-          <RouterLink :to="{ name: 'elements-tags' }">Tags & Badges</RouterLink>
+          <RouterLink :to="{ name: 'elements-tags' }">Tags</RouterLink>
         </li>
 
         <li v-has-children class="has-children">

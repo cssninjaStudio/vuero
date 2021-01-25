@@ -1,7 +1,6 @@
 ### Blockquotes
 
-Vuero provides `blockquote` html element styling. Wrap your `blockquote` element inside a `div` with the `content` class. Blockquotes can have different colors.  
-Available color modifier classes are `is-primary`, `is-success`, `is-info`, `is-warning` and `is-danger`.
+Vuero provides `blockquote` html element styling. Wrap your `blockquote` element inside a `div` with the `content` class. Blockquotes can have different colors. Available color modifier classes are `is-primary`, `is-success`, `is-info`, `is-warning` and `is-danger`.
 
 <!--code-->
 

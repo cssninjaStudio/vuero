@@ -98,12 +98,6 @@ const activeTab = ref<'basic' | 'forms'>('basic')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'elements-blocks' }">
-                      <span>Blocks</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
-                    </RouterLink>
-                  </li>
-                  <li>
                     <RouterLink :to="{ name: 'elements-content' }">
                       <span>Content</span>
                       <i class="iconify" data-icon="feather:circle"></i>

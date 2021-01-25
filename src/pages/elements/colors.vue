@@ -79,7 +79,7 @@ useHead({
                 <div class="color-dot is-primary"></div>
                 <div class="meta">
                   <span>$primary</span>
-                  <span>#37105ff</span>
+                  <span>#41b883</span>
                 </div>
               </div>
             </div>
@@ -88,7 +88,7 @@ useHead({
                 <div class="color-dot is-accent"></div>
                 <div class="meta">
                   <span>$accent</span>
-                  <span>#797bf2</span>
+                  <span>#41b883</span>
                 </div>
               </div>
             </div>
