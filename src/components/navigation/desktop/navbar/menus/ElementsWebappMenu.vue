@@ -116,19 +116,7 @@ const activeTab = ref<'basic' | 'forms'>('basic')
                 <ul>
                   <li>
                     <RouterLink :to="{ name: 'elements-cards-basic' }">
-                      <span>Basic Cards</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
-                    </RouterLink>
-                  </li>
-                  <li>
-                    <RouterLink :to="{ name: 'elements-cards-advanced' }">
-                      <span>Advanced Cards</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
-                    </RouterLink>
-                  </li>
-                  <li>
-                    <RouterLink :to="{ name: 'elements-cards-bulma' }">
-                      <span>Bulma Cards</span>
+                      <span>Cards</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>

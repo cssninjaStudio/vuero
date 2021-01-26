@@ -76,38 +76,8 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
             </li>
           </ul>
         </li>
-        <li v-has-children class="has-children">
-          <div class="collapse-wrap">
-            <a class="parent-link"
-              >Cards <i class="iconify" data-icon="feather:chevron-right"
-            /></a>
-          </div>
-          <ul>
-            <li>
-              <RouterLink
-                :to="{ name: 'elements-cards-basic' }"
-                class="is-submenu"
-                ><i class="iconify" data-icon="feather:circle"></i>Basic
-                Cards</RouterLink
-              >
-            </li>
-            <li>
-              <RouterLink
-                :to="{ name: 'elements-cards-advanced' }"
-                class="is-submenu"
-                ><i class="iconify" data-icon="feather:circle"></i>Advanced
-                Cards</RouterLink
-              >
-            </li>
-            <li>
-              <RouterLink
-                :to="{ name: 'elements-cards-bulma' }"
-                class="is-submenu"
-                ><i class="iconify" data-icon="feather:circle"></i>Bulma
-                Cards</RouterLink
-              >
-            </li>
-          </ul>
+        <li>
+          <RouterLink :to="{ name: 'elements-cards-basic' }">Cards</RouterLink>
         </li>
         <li v-has-children class="has-children">
           <div class="collapse-wrap">
