@@ -1,0 +1,38 @@
+<script setup lang="ts">
+import { defineProps } from 'vue'
+
+const props = defineProps({
+  help: {
+    type: String,
+  },
+  addons: {
+    type: Boolean,
+    default: false,
+  },
+  validation: {
+    type: Boolean,
+    default: false,
+  },
+  success: {
+    type: Boolean,
+    default: false,
+  },
+  error: {
+    type: Boolean,
+    default: false,
+  },
+})
+</script>
+
+<template>
+  <div class="field" :class="[addons && 'has-addons']">
+    <slot></slot>
+    <p v-if="help" class="help"></p>
+    <p v-if="validation && success" class="help text-success">
+      Looks like we're good
+    </p>
+    <p v-if="validation && error" class="help text-danger">
+      Please enter a valid value
+    </p>
+  </div>
+</template>

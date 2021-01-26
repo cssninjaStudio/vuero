@@ -5,8 +5,7 @@ state:
 
 ### Input
 
-Huro provides elegant form controls with minimum styling. You can use regular inputs by adding the `input` class to a html `input` element.  
-It's better to wrap inputs inside a `field` and a `control` for consistency.
+Vuero provides elegant form controls with minimum styling. You can use regular Html inputs by adding the `input` class to a html `input` element. Always wrap your inputs inside a `<V-Field />` and a `<V-Control />` to build forms quickly and efficiently.
 
 <!--code-->
 
@@ -18,16 +17,16 @@ const input = ref('')
 </script>
 
 <template>
-  <div class="field">
-    <div class="control">
+  <V-Field>
+    <V-Control>
       <input
-        v-model="input"
         type="text"
         class="input"
         placeholder="Username"
+        v-model="frontmatter.state.input"
       />
-    </div>
-  </div>
+    </V-Control>
+  </V-Field>
 </template>
 ```
 
@@ -35,15 +34,15 @@ const input = ref('')
 
 <!--example-->
 
-<div class="field">
-  <div class="control">
+<V-Field>
+  <V-Control>
     <input
-      type="text"
-      class="input"
-      placeholder="Username"
-      v-model="frontmatter.state.input"
-    />
-  </div>
-</div>
+        type="text"
+        class="input"
+        placeholder="Username"
+        v-model="frontmatter.state.input"
+      />
+  </V-Control>
+</V-Field>
 
 <!--/example-->
