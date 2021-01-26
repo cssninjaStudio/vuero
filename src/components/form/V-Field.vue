@@ -9,6 +9,10 @@ const props = defineProps({
     type: Boolean,
     default: false,
   },
+  textaddon: {
+    type: Boolean,
+    default: false,
+  },
   validation: {
     type: Boolean,
     default: false,
@@ -25,7 +29,10 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="field" :class="[addons && 'has-addons']">
+  <div
+    class="field"
+    :class="[addons && 'has-addons', textaddon && 'has-textarea-addon']"
+  >
     <slot></slot>
     <p v-if="help" class="help"></p>
     <p v-if="validation && success" class="help text-success">

@@ -34,6 +34,10 @@ const props = defineProps({
     type: Boolean,
     default: false,
   },
+  textaddon: {
+    type: Boolean,
+    default: false,
+  },
 })
 </script>
 
@@ -44,6 +48,7 @@ const props = defineProps({
       iconed && 'has-icon',
       loading && 'is-loading',
       expanded && 'is-expanded',
+      textaddon && 'is-textarea-addon',
       validation && 'has-validation',
       success && 'has-success',
       error && 'has-error',
