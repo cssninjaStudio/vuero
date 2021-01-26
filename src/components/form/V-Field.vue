@@ -13,6 +13,10 @@ const props = defineProps({
     type: Boolean,
     default: false,
   },
+  grouped: {
+    type: Boolean,
+    default: false,
+  },
   validation: {
     type: Boolean,
     default: false,
@@ -31,7 +35,11 @@ const props = defineProps({
 <template>
   <div
     class="field"
-    :class="[addons && 'has-addons', textaddon && 'has-textarea-addon']"
+    :class="[
+      addons && 'has-addons',
+      textaddon && 'has-textarea-addon',
+      grouped && 'is-grouped',
+    ]"
   >
     <slot></slot>
     <p v-if="help" class="help"></p>
