@@ -47,34 +47,34 @@ Vuero provides nice thin switch checkboxes when you need to display such control
 
 <V-Field grouped>
     <V-Control>
-        <div class="thin-switch">
-            <input id="thin-switch-1" class="input" type="checkbox" />
-            <label for="thin-switch-1" class="slider"></label>
-        </div>
+        <label class="thin-switch">
+            <input class="input" type="checkbox" />
+            <span class="slider"></span>
+        </label>
     </V-Control>
     <V-Control>
-        <div class="thin-switch is-primary">
-            <input id="thin-switch-2" class="input" type="checkbox" checked />
-            <label for="thin-switch-2" class="slider"></label>
-        </div>
+        <label class="thin-switch is-primary">
+            <input class="input" type="checkbox" checked />
+            <span class="slider"></span>
+        </label>
     </V-Control>
     <V-Control>
-        <div class="thin-switch is-info">
-            <input id="thin-switch-4" class="input" type="checkbox" checked />
-            <label for="thin-switch-4" class="slider"></label>
-        </div>
+        <label class="thin-switch is-info">
+            <input class="input" type="checkbox" checked />
+            <span class="slider"></span>
+        </label>
     </V-Control>
     <V-Control>
-        <div class="thin-switch is-warning">
-            <input id="thin-switch-5" class="input" type="checkbox" checked />
-            <label for="thin-switch-5" class="slider"></label>
-        </div>
+        <label class="thin-switch is-warning">
+            <input class="input" type="checkbox" checked />
+            <span class="slider"></span>
+        </label>
     </V-Control>
     <V-Control>
-        <div class="thin-switch is-danger">
-            <input id="thin-switch-6" class="input" type="checkbox" checked />
-            <label for="thin-switch-6" class="slider"></label>
-        </div>
+        <label class="thin-switch is-danger">
+            <input class="input" type="checkbox" checked />
+            <span class="slider"></span>
+        </label>
     </V-Control>
 </V-Field>
 
