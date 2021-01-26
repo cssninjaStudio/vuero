@@ -7,6 +7,8 @@ import {
   toggleSidebar,
 } from '/@src/composition/state/ui/activeSidebarState'
 
+import { userStack2 } from '/@src/composition/state/users/userStacks'
+
 onMounted(() => {
   activeSidebar.value = 'components'
 })
@@ -79,9 +81,104 @@ useHead({
           <VCardAdvancedDocumentation />
         </div>
 
-        <div class="column is-6"></div>
+        <div class="column is-4">
+          <V-CardAdvanced>
+            <template #header-left>
+              <V-Block title="Anna B." subtitle="UX Designer" center>
+                <template #icon>
+                  <V-Avatar
+                    picture="/images/avatars/photos/19.jpg"
+                    badge="/images/icons/flags/germany.svg"
+                  />
+                </template>
+              </V-Block>
+            </template>
+            <template #header-right>
+              <V-AvatarStack :avatars="userStack2" :limit="3" size="small" />
+            </template>
+            <template #content>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Quibusnam praeteritis? At multis se probavit. Quoniam, si dis
+                placet, ab Epicuro loqui discimus. Et ille ridens.
+              </p>
+            </template>
+            <template #footer-left>
+              <div class="tags">
+                <V-Tag label="Sales" color="solid" rounded />
+                <V-Tag label="Business" color="solid" rounded />
+              </div>
+            </template>
+            <template #footer-right>
+              <V-Button color="primary" raised>Action</V-Button>
+            </template>
+          </V-CardAdvanced>
+        </div>
 
-        <div class="column is-6"></div>
+        <div class="column is-4">
+          <V-CardAdvanced radius="smooth">
+            <template #header-left>
+              <div class="tags">
+                <V-Tag label="Sales" color="solid" rounded />
+                <V-Tag label="Business" color="solid" rounded />
+              </div>
+            </template>
+            <template #header-right>
+              <V-Button color="primary" raised>Action</V-Button>
+            </template>
+            <template #content>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Quibusnam praeteritis? At multis se probavit. Quoniam, si dis
+                placet, ab Epicuro loqui discimus. Et ille ridens.
+              </p>
+            </template>
+            <template #footer-left>
+              <V-Block title="Anna B." subtitle="UX Designer" center>
+                <template #icon>
+                  <V-Avatar
+                    picture="/images/avatars/photos/19.jpg"
+                    badge="/images/icons/flags/germany.svg"
+                  />
+                </template>
+              </V-Block>
+            </template>
+            <template #footer-right>
+              <V-AvatarStack :avatars="userStack2" :limit="3" size="small" />
+            </template>
+          </V-CardAdvanced>
+        </div>
+
+        <div class="column is-4">
+          <V-CardAdvanced radius="rounded">
+            <template #header-left>
+              <h3 class="title is-6">A Card Title</h3>
+            </template>
+            <template #header-right>
+              <WidgetDropdown />
+            </template>
+            <template #content>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Quibusnam praeteritis? At multis se probavit. Quoniam, si dis
+                placet, ab Epicuro loqui discimus. Et ille ridens.
+              </p>
+            </template>
+            <template #footer-left>
+              <V-Block title="Anna B." subtitle="UX Designer" center>
+                <template #icon>
+                  <V-Avatar
+                    picture="/images/avatars/photos/19.jpg"
+                    badge="/images/icons/flags/germany.svg"
+                  />
+                </template>
+              </V-Block>
+            </template>
+            <template #footer-right>
+              <V-AvatarStack :avatars="userStack2" :limit="3" size="small" />
+            </template>
+          </V-CardAdvanced>
+        </div>
       </div>
     </div>
   </div>

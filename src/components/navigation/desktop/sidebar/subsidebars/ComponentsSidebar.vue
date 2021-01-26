@@ -89,6 +89,14 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
                 >V-CardBulma</RouterLink
               >
             </li>
+            <li>
+              <RouterLink
+                :to="{ name: 'components-vcard-social' }"
+                class="is-submenu"
+                ><i class="iconify" data-icon="feather:circle"></i
+                >V-CardSocial</RouterLink
+              >
+            </li>
           </ul>
         </li>
         <li>

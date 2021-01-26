@@ -7,6 +7,8 @@ import {
   toggleSidebar,
 } from '/@src/composition/state/ui/activeSidebarState'
 
+import { userStack2 } from '/@src/composition/state/users/userStacks'
+
 onMounted(() => {
   activeSidebar.value = 'components'
 })
@@ -67,7 +69,7 @@ useHead({
           </li>
           <li>
             <a>
-              <span>Bulma</span>
+              <span>Social</span>
             </a>
           </li>
         </ul>
@@ -75,56 +77,44 @@ useHead({
 
       <div class="columns is-multiline">
         <div class="column is-12">
-          <!--V-Card Bulma-->
-          <VCardBulmaDocumentation />
+          <!--V-Card Social-->
+          <VCardSocialDocumentation />
         </div>
 
         <div class="column is-4">
-          <V-CardBulma
-            image="/images/photo/demo/apps/1.jpg"
+          <V-CardSocial
+            title="Featured Tweet"
+            network="twitter"
             avatar="/images/avatars/photos/19.jpg"
-            badge="/images/icons/flags/germany.svg"
-            title="Greta K."
-            subtitle="Sales Manager"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Ego vero isti, inquam, permitto. Id Sextilius factum
-                      negabat. Apparet statim, quae sint officia, quae actiones.
-                      Sed hoc sane concedamus..."
-          >
-            <a class="action-link">Read More</a>
-          </V-CardBulma>
+            username="Greta K."
+            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris."
+            :hashtags="['#bulmaio', '#css', '#responsive']"
+            icon="fab fa-twitter"
+          />
         </div>
 
         <div class="column is-4">
-          <V-CardBulma
-            image="/images/photo/demo/apps/2.png"
-            avatar="/images/avatars/photos/23.jpg"
-            badge="/images/icons/flags/united-states-of-america.svg"
-            title="Irina V."
-            subtitle="Project Manager"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Ego vero isti, inquam, permitto. Id Sextilius factum
-                      negabat. Apparet statim, quae sint officia, quae actiones.
-                      Sed hoc sane concedamus..."
-          >
-            <a class="action-link">Read More</a>
-          </V-CardBulma>
+          <V-CardSocial
+            title="Featured Story"
+            network="instagram"
+            avatar="/images/avatars/photos/5.jpg"
+            username="Mary L."
+            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris."
+            :hashtags="['#bulmaio', '#css', '#responsive']"
+            icon="fab fa-instagram"
+          />
         </div>
 
         <div class="column is-4">
-          <V-CardBulma
-            image="/images/photo/demo/apps/3.png"
-            avatar="/images/avatars/photos/12.jpg"
-            badge="/images/icons/flags/united-states-of-america.svg"
-            title="Joshua S."
-            subtitle="Backend Developer"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Ego vero isti, inquam, permitto. Id Sextilius factum
-                      negabat. Apparet statim, quae sint officia, quae actiones.
-                      Sed hoc sane concedamus..."
-          >
-            <a class="action-link">Read More</a>
-          </V-CardBulma>
+          <V-CardSocial
+            title="Featured Post"
+            network="facebook"
+            avatar="/images/avatars/photos/36.jpg"
+            username="Benoit L."
+            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris."
+            :hashtags="['#bulmaio', '#css', '#responsive']"
+            icon="fab fa-facebook-f"
+          />
         </div>
       </div>
     </div>

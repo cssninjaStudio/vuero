@@ -77,7 +77,7 @@ useHead({
               <p>
                 Vuero also features classic Bulma cards, but with a particular
                 Vuero flavour. Simply add the
-                <code>h-card</code> class to a Bulma <code>card</code> element
+                <code>v-card</code> class to a Bulma <code>card</code> element
                 to leverage the styles provided by Vuero.
               </p>
             </div>
@@ -86,7 +86,7 @@ useHead({
           <div class="columns is-multiline">
             <!--Card-->
             <div class="column is-4">
-              <div class="card h-card">
+              <div class="card v-card">
                 <header class="card-header">
                   <div class="card-header-title">Featured Tweet</div>
                   <a href="#" class="card-header-icon text-twitter">
@@ -131,7 +131,7 @@ useHead({
             </div>
             <!--Card-->
             <div class="column is-4">
-              <div class="card h-card">
+              <div class="card v-card">
                 <header class="card-header">
                   <div class="card-header-title">Featured Story</div>
                   <a href="#" class="card-header-icon text-instagram">
@@ -176,7 +176,7 @@ useHead({
             </div>
             <!--Card-->
             <div class="column is-4">
-              <div class="card h-card">
+              <div class="card v-card">
                 <header class="card-header">
                   <div class="card-header-title">Featured Post</div>
                   <a href="#" class="card-header-icon text-facebook">
@@ -228,7 +228,7 @@ useHead({
               <p>
                 Vuero also features classic Bulma cards, but with a particular
                 Vuero flavour. Simply add the
-                <code>h-card</code> class to a Bulma <code>card</code> element
+                <code>v-card</code> class to a Bulma <code>card</code> element
                 to leverage the styles provided by Vuero.
               </p>
             </div>
@@ -237,7 +237,7 @@ useHead({
           <div class="columns is-multiline">
             <!--Card-->
             <div class="column is-4">
-              <div class="card h-card">
+              <div class="card v-card">
                 <div class="card-image">
                   <figure class="image is-4by3">
                     <img
@@ -294,7 +294,7 @@ useHead({
             </div>
             <!--Card-->
             <div class="column is-4">
-              <div class="card h-card">
+              <div class="card v-card">
                 <div class="card-image">
                   <figure class="image is-4by3">
                     <img
@@ -351,7 +351,7 @@ useHead({
             </div>
             <!--Card-->
             <div class="column is-4">
-              <div class="card h-card">
+              <div class="card v-card">
                 <div class="card-image">
                   <figure class="image is-4by3">
                     <img
