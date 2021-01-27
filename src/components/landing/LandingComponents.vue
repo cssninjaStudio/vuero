@@ -204,52 +204,6 @@ const props = defineProps({
       </div>
 
       <div class="column is-3">
-        <RouterLink
-          :to="{ name: 'elements-cards-advanced' }"
-          class="component-box"
-        >
-          <div class="component">
-            <img
-              class="light-image-l"
-              src="/images/icons/components/cards.svg"
-              alt=""
-              loading="lazy"
-            />
-            <img
-              class="dark-image-l"
-              src="/images/icons/components/cards-dark.svg"
-              alt=""
-              loading="lazy"
-            />
-          </div>
-          <div class="component-title">Advanced Cards</div>
-        </RouterLink>
-      </div>
-
-      <div class="column is-3">
-        <RouterLink
-          :to="{ name: 'elements-cards-bulma' }"
-          class="component-box"
-        >
-          <div class="component">
-            <img
-              class="light-image-l"
-              src="/images/icons/components/cards.svg"
-              alt=""
-              loading="lazy"
-            />
-            <img
-              class="dark-image-l"
-              src="/images/icons/components/cards-dark.svg"
-              alt=""
-              loading="lazy"
-            />
-          </div>
-          <div class="component-title">Bulma Cards</div>
-        </RouterLink>
-      </div>
-
-      <div class="column is-3">
         <RouterLink :to="{ name: 'elements-table' }" class="component-box">
           <div class="component">
             <img
@@ -381,6 +335,52 @@ const props = defineProps({
             />
           </div>
           <div class="component-title">Breadcrumb</div>
+        </RouterLink>
+      </div>
+
+      <div class="column is-3">
+        <RouterLink
+          :to="{ name: 'components-vcard-advanced' }"
+          class="component-box"
+        >
+          <div class="component">
+            <img
+              class="light-image-l"
+              src="/images/icons/components/cards.svg"
+              alt=""
+              loading="lazy"
+            />
+            <img
+              class="dark-image-l"
+              src="/images/icons/components/cards-dark.svg"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+          <div class="component-title">Advanced Cards</div>
+        </RouterLink>
+      </div>
+
+      <div class="column is-3">
+        <RouterLink
+          :to="{ name: 'components-vcard-bulma' }"
+          class="component-box"
+        >
+          <div class="component">
+            <img
+              class="light-image-l"
+              src="/images/icons/components/cards.svg"
+              alt=""
+              loading="lazy"
+            />
+            <img
+              class="dark-image-l"
+              src="/images/icons/components/cards-dark.svg"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+          <div class="component-title">Bulma Cards</div>
         </RouterLink>
       </div>
 
