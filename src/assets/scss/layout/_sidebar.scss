@@ -41,8 +41,8 @@
   }
 
   &.is-colored {
-    background: $primary;
-    border-color: darken($primary, 2%);
+    border-color: lighten($landing-dark-2, 2%);
+    background: $landing-dark-2;
 
     .sidebar-inner {
       .naver {
@@ -61,7 +61,7 @@
             }
 
             .sidebar-svg {
-              color: lighten($primary, 25%);
+              color: $light-text;
             }
           }
         }
@@ -483,8 +483,8 @@
 
   .main-sidebar {
     &.is-colored {
-      background: darken($accent, 2%);
-      border-color: darken($accent, 2%) !important;
+      //background: darken($accent, 2%);
+      //border-color: darken($accent, 2%) !important;
 
       .sidebar-inner {
         .naver {
@@ -499,6 +499,7 @@
               &.is-active {
                 .sidebar-svg {
                   color: $smoke-white;
+                  stroke: $smoke-white;
                   opacity: 1;
                 }
               }

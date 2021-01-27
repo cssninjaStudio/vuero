@@ -23,7 +23,7 @@ const standardOpen = ref(false)
         <div class="columns is-multiline layout-selector">
           <div class="column is-6">
             <a
-              href="javascript:"
+              href="#"
               class="layout-item"
               :class="[adminLayoutId === 'sidebar-default' && 'is-active']"
               @click="setLayout('sidebar-default')"
@@ -40,11 +40,14 @@ const standardOpen = ref(false)
               />
               <h3>Default Sidebar</h3>
               <p>The good old default sidebar</p>
+              <div class="indicator">
+                <i class="iconify" data-icon="feather:check"></i>
+              </div>
             </a>
           </div>
           <div class="column is-6">
             <a
-              href="javascript:"
+              href="#"
               class="layout-item"
               :class="[adminLayoutId === 'sidebar-color' && 'is-active']"
               @click="setLayout('sidebar-color')"
@@ -61,11 +64,14 @@ const standardOpen = ref(false)
               />
               <h3>Colored Sidebar</h3>
               <p>The good old default sidebar</p>
+              <div class="indicator">
+                <i class="iconify" data-icon="feather:check"></i>
+              </div>
             </a>
           </div>
           <div class="column is-6">
             <a
-              href="javascript:"
+              href="#"
               class="layout-item"
               :class="[adminLayoutId === 'sidebar-curved' && 'is-active']"
               @click="setLayout('sidebar-curved')"
@@ -82,11 +88,14 @@ const standardOpen = ref(false)
               />
               <h3>Curved Sidebar</h3>
               <p>The good old default sidebar</p>
+              <div class="indicator">
+                <i class="iconify" data-icon="feather:check"></i>
+              </div>
             </a>
           </div>
           <div class="column is-6">
             <a
-              href="javascript:"
+              href="#"
               class="layout-item"
               :class="[adminLayoutId === 'sidebar-color-curved' && 'is-active']"
               @click="setLayout('sidebar-color-curved')"
@@ -103,6 +112,9 @@ const standardOpen = ref(false)
               />
               <h3>Curved Colored</h3>
               <p>The good old default sidebar</p>
+              <div class="indicator">
+                <i class="iconify" data-icon="feather:check"></i>
+              </div>
             </a>
           </div>
         </div>

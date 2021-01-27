@@ -44,13 +44,13 @@
   }
 
   &.is-colored {
-    background: $primary;
-    border-bottom-color: $primary;
+    background: $landing-dark-2;
+    border-bottom-color: $landing-dark-2;
 
     .webapp-navbar-inner {
       .left {
         .separator {
-          border-color: lighten($primary, 18%);
+          border-color: lighten($landing-dark-2, 18%);
         }
 
         .title {
@@ -62,7 +62,7 @@
         .centered-links {
           .centered-link {
             &:hover {
-              background: darken($primary, 6%);
+              background: darken($landing-dark-2, 6%);
 
               svg {
                 color: $smoke-white;
@@ -74,11 +74,11 @@
             }
 
             &.is-active {
-              background: darken($primary, 12%);
-              border-color: lighten($primary, 6%);
+              background: darken($landing-dark-2, 12%);
+              border-color: lighten($landing-dark-2, 6%);
 
               &:hover {
-                background: darken($primary, 12%);
+                background: darken($landing-dark-2, 12%);
               }
 
               svg {
@@ -91,11 +91,11 @@
             }
 
             svg {
-              color: lighten($primary, 25%);
+              color: $light-text;
             }
 
             span {
-              color: lighten($primary, 25%);
+              color: $light-text;
             }
           }
         }
@@ -106,7 +106,7 @@
               &:hover {
                 .is-trigger {
                   .button {
-                    background: darken($primary, 6%);
+                    background: darken($landing-dark-2, 6%);
                     color: $smoke-white;
                   }
                 }
@@ -115,16 +115,16 @@
               &.is-active {
                 .is-trigger {
                   .button {
-                    background: darken($primary, 12%);
-                    border-color: lighten($primary, 6%);
+                    background: darken($landing-dark-2, 12%);
+                    border-color: lighten($landing-dark-2, 6%);
                   }
                 }
               }
 
               .is-trigger {
                 .button {
-                  background: $primary;
-                  color: lighten($primary, 45%);
+                  background: $landing-dark-2;
+                  color: $light-text;
                 }
               }
             }
@@ -132,11 +132,11 @@
 
           .centered-button {
             .button {
-              background: $primary;
-              color: lighten($primary, 45%);
+              background: $landing-dark-2;
+              color: $light-text;
 
               &:hover {
-                background: darken($primary, 6%);
+                background: darken($landing-dark-2, 6%);
                 color: $smoke-white;
               }
             }
@@ -984,12 +984,12 @@
 
   .webapp-navbar {
     &.is-colored {
-      background: darken($accent, 2%);
+      //background: darken($accent, 2%);
 
       .webapp-navbar-inner {
         .left {
           .separator {
-            border-color: lighten($accent, 3%);
+            //border-color: lighten($accent, 3%);
           }
 
           .title {
@@ -1013,11 +1013,11 @@
               }
 
               &.is-active {
-                background: darken($accent, 8%);
-                border-color: darken($accent, 2%);
+                //background: darken($accent, 8%);
+                //border-color: darken($accent, 2%);
 
                 &:hover {
-                  background: darken($accent, 8%);
+                  //background: darken($accent, 8%);
                 }
 
                 svg {
@@ -1030,11 +1030,11 @@
               }
 
               svg {
-                color: lighten($accent, 12%);
+                //color: lighten($accent, 12%);
               }
 
               span {
-                color: lighten($accent, 12%);
+                //color: lighten($accent, 12%);
               }
             }
           }
@@ -1045,8 +1045,8 @@
                 &:hover {
                   .is-trigger {
                     .button {
-                      background: darken($accent, 8%);
-                      border-color: darken($accent, 4%);
+                      //background: darken($accent, 8%);
+                      //border-color: darken($accent, 4%);
                       color: $smoke-white;
                     }
                   }
@@ -1055,8 +1055,8 @@
                 &.is-active {
                   .is-trigger {
                     .button {
-                      background: darken($accent, 8%);
-                      border-color: darken($accent, 6%);
+                      //background: darken($accent, 8%);
+                      //border-color: darken($accent, 6%);
                       color: $smoke-white;
                     }
                   }
@@ -1117,12 +1117,12 @@
 
                 .is-trigger {
                   .button {
-                    background: darken($accent, 2%);
-                    border-color: darken($accent, 2%);
-                    color: lighten($accent, 22%);
+                    //background: darken($accent, 2%);
+                    //border-color: darken($accent, 2%);
+                    //color: lighten($accent, 22%);
 
                     svg {
-                      color: lighten($accent, 24%);
+                      //color: lighten($accent, 24%);
                     }
                   }
                 }
@@ -1131,12 +1131,12 @@
 
             .centered-button {
               .button {
-                background: darken($accent, 2%) !important;
-                border-color: darken($accent, 2%) !important;
-                color: lighten($accent, 22%) !important;
+                //background: darken($accent, 2%) !important;
+                //border-color: darken($accent, 2%) !important;
+                //color: lighten($accent, 22%) !important;
 
                 &:hover {
-                  background: darken($accent, 8%) !important;
+                  //background: darken($accent, 8%) !important;
                   color: $smoke-white !important;
                 }
               }
@@ -1147,12 +1147,12 @@
             .field {
               .control {
                 .input {
-                  background: darken($accent, 10%);
-                  border-color: darken($accent, 6%);
+                  //background: darken($accent, 10%);
+                  //border-color: darken($accent, 6%);
                   color: $smoke-white;
 
                   &::placeholder {
-                    color: lighten($accent, 4%) !important;
+                    //color: lighten($accent, 4%) !important;
                   }
 
                   &:focus ~ .form-icon svg {
@@ -1161,7 +1161,7 @@
                 }
 
                 .form-icon svg {
-                  color: lighten($accent, 6%);
+                  //color: lighten($accent, 6%);
                 }
               }
             }
@@ -1172,8 +1172,8 @@
           .toolbar {
             .toolbar-link {
               &:hover {
-                background: darken($accent, 10%) !important;
-                border-color: darken($accent, 6%) !important;
+                //background: darken($accent, 10%) !important;
+                //border-color: darken($accent, 6%) !important;
               }
 
               > svg {
@@ -1185,8 +1185,8 @@
               &:hover,
               &.is-active {
                 .is-trigger {
-                  background: darken($accent, 10%) !important;
-                  border-color: darken($accent, 6%) !important;
+                  //background: darken($accent, 10%) !important;
+                  //border-color: darken($accent, 6%) !important;
                 }
               }
 
