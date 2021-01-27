@@ -192,12 +192,6 @@ const activeTab = ref<'basic' | 'forms'>('basic')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'elements-forms-custom' }">
-                      <span>Custom</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
-                    </RouterLink>
-                  </li>
-                  <li>
                     <RouterLink :to="{ name: 'elements-forms-file' }">
                       <span>File Input</span>
                       <i class="iconify" data-icon="feather:circle"></i>

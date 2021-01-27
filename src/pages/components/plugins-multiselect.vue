@@ -1,18 +1,26 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
-import { onMounted } from 'vue'
+import { ref, onMounted } from 'vue'
+
+import useMakrdownToc from '/@src/composition/use/useMarkdownToc'
 
 import {
   activeSidebar,
   toggleSidebar,
 } from '/@src/composition/state/ui/activeSidebarState'
 
+const { markdownContainer, toc } = useMakrdownToc()
+
+import Multiselect from '@vueform/multiselect'
+const value = ref(0)
+const options = ref(['Batman', 'Robin', 'Joker'])
+
 onMounted(() => {
   activeSidebar.value = 'components'
 })
 
 useHead({
-  title: 'Components - Plugins Video Player - Vuero',
+  title: 'Components - Plugins Multiselect - Vuero',
 })
 </script>
 
@@ -39,7 +47,7 @@ useHead({
       </div>
 
       <div class="title-wrap">
-        <h1 class="title is-4">Video Player</h1>
+        <h1 class="title is-4">Multiselect</h1>
       </div>
 
       <Toolbar />
@@ -56,7 +64,7 @@ useHead({
             </RouterLink>
           </li>
           <li>
-            <RouterLink :to="{ name: 'elements' }">
+            <RouterLink :to="{ name: 'components' }">
               <span>Components</span>
             </RouterLink>
           </li>
@@ -67,16 +75,29 @@ useHead({
           </li>
           <li>
             <a>
-              <span>Video Player</span>
+              <span>Multiselect</span>
             </a>
           </li>
         </ul>
       </nav>
 
       <div class="columns is-multiline">
-        <div class="column is-12">
-          <!--Video Player-->
-          <VideoBaseDocumentation />
+        <div
+          ref="markdownContainer"
+          :class="[toc.length > 0 ? 'is-9' : 'is-12']"
+          class="column"
+        >
+          <!--Simple multiselect-->
+          <MultiselectBaseDocumentation />
+
+          <V-Field class="demo-field">
+            <V-Control>
+              <Multiselect v-model="value" :options="options" />
+            </V-Control>
+          </V-Field>
+        </div>
+        <div v-if="toc.length" class="column is-3">
+          <DocumentationToc :toc="toc" />
         </div>
       </div>
     </div>

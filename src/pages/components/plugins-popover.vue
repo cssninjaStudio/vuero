@@ -12,7 +12,7 @@ onMounted(() => {
 })
 
 useHead({
-  title: 'Components - Plugins Video Player - Vuero',
+  title: 'Components - Plugins Popover - Vuero',
 })
 </script>
 
@@ -39,7 +39,7 @@ useHead({
       </div>
 
       <div class="title-wrap">
-        <h1 class="title is-4">Video Player</h1>
+        <h1 class="title is-4">Popover</h1>
       </div>
 
       <Toolbar />
@@ -67,7 +67,7 @@ useHead({
           </li>
           <li>
             <a>
-              <span>Video Player</span>
+              <span>Popover</span>
             </a>
           </li>
         </ul>
@@ -75,8 +75,8 @@ useHead({
 
       <div class="columns is-multiline">
         <div class="column is-12">
-          <!--Video Player-->
-          <VideoBaseDocumentation />
+          <!--Text Popover-->
+          <PopoverBaseDocumentation />
         </div>
       </div>
     </div>

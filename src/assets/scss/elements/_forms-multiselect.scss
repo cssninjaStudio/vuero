@@ -1,0 +1,44 @@
+/*! _forms-multiselect.scss | Vuero | Css ninja 2020-2021 */
+
+/*
+    1. Multiselect
+*/
+
+/* ==========================================================================
+1. Multiselect
+========================================================================== */
+
+.multiselect {
+  font-family: $font;
+
+  .multiselect-input {
+    background: $white;
+
+    .multiselect-single-label {
+      font-size: 0.9rem;
+    }
+  }
+
+  .multiselect-options {
+    overflow-x: hidden;
+    padding: 1rem;
+
+    &::-webkit-scrollbar {
+      width: 6px !important;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 10px !important;
+      background: rgba(0, 0, 0, 0.2) !important;
+    }
+
+    .multiselect-option {
+      border-radius: 0.5rem;
+      transition: background-color 0.3s;
+
+      > span {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}

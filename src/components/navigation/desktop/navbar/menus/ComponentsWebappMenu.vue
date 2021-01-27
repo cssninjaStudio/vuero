@@ -185,12 +185,6 @@ const activeTab = ref<'components' | 'plugins'>('components')
               <div class="column is-3">
                 <ul>
                   <li>
-                    <RouterLink :to="{ name: 'components-plugins-alertify' }">
-                      <span>Alertify</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
-                    </RouterLink>
-                  </li>
-                  <li>
                     <RouterLink
                       :to="{ name: 'components-plugins-autocomplete' }"
                     >
@@ -204,22 +198,10 @@ const activeTab = ref<'components' | 'plugins'>('components')
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
-                  <li>
-                    <RouterLink :to="{ name: 'components-plugins-choices' }">
-                      <span>Choices JS</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
-                    </RouterLink>
-                  </li>
                 </ul>
               </div>
               <div class="column is-3">
                 <ul>
-                  <li>
-                    <RouterLink :to="{ name: 'components-plugins-filepond' }">
-                      <span>Filepond</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
-                    </RouterLink>
-                  </li>
                   <li>
                     <RouterLink
                       :to="{ name: 'components-plugins-lightgallery' }"
@@ -255,30 +237,8 @@ const activeTab = ref<'components' | 'plugins'>('components')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink
-                      :to="{ name: 'components-plugins-webuipopover' }"
-                    >
-                      <span>WebUI Popovers</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
-                    </RouterLink>
-                  </li>
-                  <li>
-                    <RouterLink :to="{ name: 'components-plugins-nouislider' }">
-                      <span>NoUI Slider</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
-                    </RouterLink>
-                  </li>
-                  <li>
-                    <RouterLink
-                      :to="{ name: 'components-plugins-editor-summernote' }"
-                    >
-                      <span>Summernote</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
-                    </RouterLink>
-                  </li>
-                  <li>
-                    <RouterLink :to="{ name: 'components-plugins-editor-sun' }">
-                      <span>Sun Editor</span>
+                    <RouterLink :to="{ name: 'components-plugins-popover' }">
+                      <span>Popovers</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>

@@ -323,17 +323,6 @@ const { dropdownElement, isOpen, open } = useDropdown()
 
                 <div class="column-content">
                   <RouterLink
-                    :to="{ name: 'components-plugins-alertify' }"
-                    class="dropdown-item is-media"
-                  >
-                    <div class="icon">
-                      <i class="lnil lnil-html5"></i>
-                    </div>
-                    <div class="meta">
-                      <span>Alertify</span>
-                    </div>
-                  </RouterLink>
-                  <RouterLink
                     :to="{ name: 'components-plugins-autocomplete' }"
                     class="dropdown-item is-media"
                   >
@@ -355,17 +344,6 @@ const { dropdownElement, isOpen, open } = useDropdown()
                       <span>Datepicker</span>
                     </div>
                   </RouterLink>
-                  <RouterLink
-                    :to="{ name: 'components-plugins-choices' }"
-                    class="dropdown-item is-media"
-                  >
-                    <div class="icon">
-                      <i class="lnil lnil-html5"></i>
-                    </div>
-                    <div class="meta">
-                      <span>Choices JS</span>
-                    </div>
-                  </RouterLink>
                 </div>
               </div>
             </div>
@@ -379,17 +357,6 @@ const { dropdownElement, isOpen, open } = useDropdown()
                 </h4>
 
                 <div class="column-content">
-                  <RouterLink
-                    :to="{ name: 'components-plugins-filepond' }"
-                    class="dropdown-item is-media"
-                  >
-                    <div class="icon">
-                      <i class="lnil lnil-html5"></i>
-                    </div>
-                    <div class="meta">
-                      <span>Filepond</span>
-                    </div>
-                  </RouterLink>
                   <RouterLink
                     :to="{ name: 'components-plugins-lightgallery' }"
                     class="dropdown-item is-media"
@@ -448,47 +415,14 @@ const { dropdownElement, isOpen, open } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'components-plugins-webuipopover' }"
+                    :to="{ name: 'components-plugins-popover' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
                       <i class="lnil lnil-html5"></i>
                     </div>
                     <div class="meta">
-                      <span>WebUI Popover</span>
-                    </div>
-                  </RouterLink>
-                  <RouterLink
-                    :to="{ name: 'components-plugins-nouislider' }"
-                    class="dropdown-item is-media"
-                  >
-                    <div class="icon">
-                      <i class="lnil lnil-html5"></i>
-                    </div>
-                    <div class="meta">
-                      <span>NoUI Slider</span>
-                    </div>
-                  </RouterLink>
-                  <RouterLink
-                    :to="{ name: 'components-plugins-editor-summernote' }"
-                    class="dropdown-item is-media"
-                  >
-                    <div class="icon">
-                      <i class="lnil lnil-html5"></i>
-                    </div>
-                    <div class="meta">
-                      <span>Summernote</span>
-                    </div>
-                  </RouterLink>
-                  <RouterLink
-                    :to="{ name: 'components-plugins-editor-sun' }"
-                    class="dropdown-item is-media"
-                  >
-                    <div class="icon">
-                      <i class="lnil lnil-html5"></i>
-                    </div>
-                    <div class="meta">
-                      <span>Sun Editor</span>
+                      <span>Popover</span>
                     </div>
                   </RouterLink>
                 </div>
