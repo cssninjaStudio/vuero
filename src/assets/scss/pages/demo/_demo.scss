@@ -438,6 +438,51 @@
   }
 }
 
+.layout-selector {
+  .layout-item {
+    text-align: center;
+    cursor: pointer;
+
+    &:hover {
+      img {
+        filter: grayscale(0);
+        opacity: 1;
+      }
+    }
+
+    img {
+      max-width: 150px;
+      margin: 0 auto;
+      filter: grayscale(1);
+      opacity: 0.6;
+      transition: all 0.3s;
+    }
+
+    h3 {
+      font-family: $font-alt;
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: $dark-text;
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+body {
+  &.is-dark {
+    .layout-selector {
+      .layout-item {
+        h3 {
+          color: $dark-dark-text;
+        }
+      }
+    }
+  }
+}
+
 /* ==========================================================================
 3. Code Highlight
 ========================================================================== */

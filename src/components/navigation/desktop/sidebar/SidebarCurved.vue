@@ -28,7 +28,8 @@
 
       <!-- User account -->
       <ul class="bottom-menu">
-        <SidebarItemLayoutDropdown />
+        <!--Switch Layouts-->
+        <SidebarItemLayoutSwitcher />
         <!-- Notifications -->
         <SidebarItemSearch />
         <!-- Wallet -->
