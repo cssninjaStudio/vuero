@@ -10,14 +10,6 @@ import {
 
 const { markdownContainer, toc } = useMakrdownToc()
 
-import * as examples from './tags.examples'
-
-const examplesIds = Object.keys(examples)
-const display = ref<any>({})
-for (const id of examplesIds) {
-  display[id] = false
-}
-
 onMounted(() => {
   activeSidebar.value = 'elements'
 })
@@ -50,7 +42,7 @@ useHead({
       </div>
 
       <div class="title-wrap">
-        <h1 class="title is-4">Tags &amp; Badges</h1>
+        <h1 class="title is-4">Tags</h1>
       </div>
 
       <Toolbar />
@@ -73,7 +65,7 @@ useHead({
           </li>
           <li>
             <a>
-              <span>Tags &amp; Badges</span>
+              <span>Tags</span>
             </a>
           </li>
         </ul>

@@ -66,6 +66,39 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         <li>
           <RouterLink :to="{ name: 'components-vbutton' }">V-Button</RouterLink>
         </li>
+        <li v-has-children class="has-children">
+          <div class="collapse-wrap">
+            <a class="parent-link"
+              >V-Card <i class="iconify" data-icon="feather:chevron-right"
+            /></a>
+          </div>
+          <ul>
+            <li>
+              <RouterLink
+                :to="{ name: 'components-vcard-advanced' }"
+                class="is-submenu"
+                ><i class="iconify" data-icon="feather:circle"></i
+                >V-CardAdvanced</RouterLink
+              >
+            </li>
+            <li>
+              <RouterLink
+                :to="{ name: 'components-vcard-bulma' }"
+                class="is-submenu"
+                ><i class="iconify" data-icon="feather:circle"></i
+                >V-CardBulma</RouterLink
+              >
+            </li>
+            <li>
+              <RouterLink
+                :to="{ name: 'components-vcard-social' }"
+                class="is-submenu"
+                ><i class="iconify" data-icon="feather:circle"></i
+                >V-CardSocial</RouterLink
+              >
+            </li>
+          </ul>
+        </li>
         <li>
           <RouterLink :to="{ name: 'components-dropdown' }"
             >V-Dropdown</RouterLink
@@ -235,15 +268,6 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
                 Popover</RouterLink
               >
             </li>
-          </ul>
-        </li>
-        <li v-has-children class="has-children">
-          <div class="collapse-wrap">
-            <a class="parent-link"
-              >Rich Text <i class="iconify" data-icon="feather:chevron-right"
-            /></a>
-          </div>
-          <ul>
             <li>
               <RouterLink
                 class="is-submenu"

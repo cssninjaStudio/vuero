@@ -213,29 +213,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                       <i class="lnil lnil-grid-alt"></i>
                     </div>
                     <div class="meta">
-                      <span>Basic Cards</span>
-                    </div>
-                  </RouterLink>
-                  <RouterLink
-                    :to="{ name: 'elements-cards-advanced' }"
-                    class="dropdown-item is-media"
-                  >
-                    <div class="icon">
-                      <i class="lnil lnil-grid-alt"></i>
-                    </div>
-                    <div class="meta">
-                      <span>Advanced Cards</span>
-                    </div>
-                  </RouterLink>
-                  <RouterLink
-                    :to="{ name: 'elements-cards-bulma' }"
-                    class="dropdown-item is-media"
-                  >
-                    <div class="icon">
-                      <i class="lnil lnil-grid-alt"></i>
-                    </div>
-                    <div class="meta">
-                      <span>Bulma Cards</span>
+                      <span>Cards</span>
                     </div>
                   </RouterLink>
                   <RouterLink

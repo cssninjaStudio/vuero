@@ -6,16 +6,18 @@ Vuero provides a versatile flex block media component named `<V-Block />`. V-Blo
 
 ```vue
 <template>
-    <V-Block title="Anna B." subtitle="UX Designer">
-        <template #icon>
-            <V-Avatar size="medium"
-                picture="/images/avatars/photos/19.jpg"
-                badge="/images/icons/flags/germany.svg">
-        </template>
-        <template #action>
-            <V-Button color="primary" elevated>View</V-button>
-        </template>
-    </VBlock>
+  <V-Block title="Anna B." subtitle="UX Designer">
+    <template #icon>
+      <V-Avatar
+        size="medium"
+        picture="/images/avatars/photos/19.jpg"
+        badge="/images/icons/flags/germany.svg"
+      />
+    </template>
+    <template #action>
+      <V-Button color="primary" elevated>View</V-Button>
+    </template>
+  </V-Block>
 </template>
 ```
 
@@ -31,9 +33,9 @@ Vuero provides a versatile flex block media component named `<V-Block />`. V-Blo
                     <V-Avatar size="medium" picture="/images/avatars/photos/19.jpg" badge="/images/icons/flags/germany.svg">
                 </template>
                 <template #action>
-                    <V-Button color="primary" elevated>View</V-button>
+                    <V-Button color="primary" elevated>View</V-Button>
                 </template>
-            </VBlock>
+            </V-Block>
         </div>
     </div>
 </div>

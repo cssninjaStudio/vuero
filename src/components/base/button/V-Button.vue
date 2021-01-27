@@ -26,6 +26,10 @@ const props = defineProps({
     type: Boolean,
     default: false,
   },
+  darkOutlined: {
+    type: Boolean,
+    default: false,
+  },
   loading: {
     type: Boolean,
     default: false,
@@ -56,6 +60,7 @@ const props = defineProps({
       rounded && 'is-rounded',
       bold && 'is-bold',
       outlined && 'is-outlined',
+      darkOutlined && 'is-dark-outlined',
       raised && 'is-raised',
       elevated && 'is-elevated',
       loading && 'is-loading',

@@ -21,9 +21,14 @@ export default function hasChildren(app: App) {
 
         link.onclick = (event) => {
           event.preventDefault()
+
           const isActive = el.classList.contains('active')
 
           if (isActive) {
+            //TODO: @stf: make child-menu exclusive, menu should close on self click
+            document
+              .querySelectorAll('.has-children')
+              .forEach((element) => element.classList.remove('active'))
             el.classList.remove('active')
           } else {
             el.classList.add('active')

@@ -1164,7 +1164,7 @@ const props = defineProps({
 
           <!--Posts-->
           <div class="column is-4">
-            <div class="card h-card">
+            <div class="card v-card">
               <header class="card-header">
                 <div class="post-stats">
                   <span>Most Liked Posts</span>
@@ -1234,7 +1234,7 @@ const props = defineProps({
 
           <!--Posts-->
           <div class="column is-4">
-            <div class="card h-card">
+            <div class="card v-card">
               <header class="card-header">
                 <div class="post-stats">
                   <span>Most Commented Posts</span>
@@ -1304,7 +1304,7 @@ const props = defineProps({
 
           <!--Posts-->
           <div class="column is-4">
-            <div class="card h-card">
+            <div class="card v-card">
               <header class="card-header">
                 <div class="post-stats">
                   <span>Most Engaging Posts</span>

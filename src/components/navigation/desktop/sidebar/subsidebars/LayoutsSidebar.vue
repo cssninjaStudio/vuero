@@ -278,7 +278,10 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
           </div>
           <ul>
             <li>
-              <RouterLink :to="{ name: 'admin-layouts' }" class="is-submenu">
+              <RouterLink
+                :to="{ name: 'admin-layouts-grid-users-1' }"
+                class="is-submenu"
+              >
                 <i class="lnil lnil-users-alt"></i>
                 <span>User Grid V1</span>
               </RouterLink>

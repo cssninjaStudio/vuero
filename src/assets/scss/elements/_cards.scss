@@ -98,8 +98,8 @@
 ========================================================================== */
 
 .card {
-  &.h-card {
-    @include vuero-h-card();
+  &.v-card {
+    @include vuero-v-card();
   }
 }
 
@@ -109,8 +109,8 @@
 
 .is-dark {
   .card {
-    &.h-card {
-      @include vuero-h-card--dark();
+    &.v-card {
+      @include vuero-v-card--dark();
     }
   }
 }

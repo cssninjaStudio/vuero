@@ -277,6 +277,8 @@
 }
 
 .select {
+  width: 100%;
+
   &.is-loading {
     &::after {
       right: 0.75em;
@@ -298,6 +300,9 @@
 }
 
 select {
+  width: 100%;
+  font-family: $font;
+
   &:focus {
     box-shadow: none !important;
     border-color: darken($fade-grey, 6%) !important;
@@ -375,6 +380,12 @@ select {
     &::after {
       right: 0.75em;
       top: 0.75em;
+    }
+
+    .select {
+      &::after {
+        display: none;
+      }
     }
   }
 

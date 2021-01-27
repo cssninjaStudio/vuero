@@ -1,11 +1,14 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
 import { onMounted } from 'vue'
+import useMakrdownToc from '/@src/composition/use/useMarkdownToc'
 
 import {
   activeSidebar,
   toggleSidebar,
 } from '/@src/composition/state/ui/activeSidebarState'
+
+const { markdownContainer, toc } = useMakrdownToc()
 
 onMounted(() => {
   activeSidebar.value = 'elements'
@@ -62,11 +65,6 @@ useHead({
           </li>
           <li>
             <a>
-              <span>Forms</span>
-            </a>
-          </li>
-          <li>
-            <a>
               <span>Table</span>
             </a>
           </li>
@@ -74,28 +72,26 @@ useHead({
       </nav>
 
       <div class="columns">
-        <div class="column is-12">
+        <div
+          ref="markdownContainer"
+          :class="[toc.length > 0 ? 'is-9' : 'is-12']"
+          class="column"
+        >
           <!--Table-->
-          <div class="demo-card has-more-margin">
-            <div class="demo-title">
-              <h3 class="title is-thin is-5">Basic Table</h3>
-              <p>
-                Vuero provides a basic Html5 table powered by Bulma. You sinply
-                have to add the <code>table</code> class to a html5
-                <code>table</code> element. You can also add the
-                <code>is-hoverable</code> class to highlight the rows on hover.
-              </p>
-            </div>
-          </div>
+          <TableBaseDocumentation />
 
-          <div class="s-card demo-table">
+          <div class="s-card demo-table mb-6">
             <table class="table is-hoverable is-fullwidth">
               <tr>
                 <th>First Name</th>
                 <th>Last Name</th>
                 <th>Position</th>
                 <th class="is-end">
-                  <div class="dark-inverted">Actions</div>
+                  <div
+                    class="dark-inverted is-flex is-justify-content-flex-end"
+                  >
+                    Actions
+                  </div>
                 </th>
               </tr>
               <tr>
@@ -103,7 +99,7 @@ useHead({
                 <td>Bergmann</td>
                 <td>Head of Sales</td>
                 <td class="is-end">
-                  <div>
+                  <div class="is-flex is-justify-content-flex-end">
                     <FlexTableContextMenuAlt />
                   </div>
                 </td>
@@ -113,7 +109,7 @@ useHead({
                 <td>Wistmus</td>
                 <td>Senior Executive</td>
                 <td class="is-end">
-                  <div>
+                  <div class="is-flex is-justify-content-flex-end">
                     <FlexTableContextMenuAlt />
                   </div>
                 </td>
@@ -123,7 +119,7 @@ useHead({
                 <td>Watson</td>
                 <td>Software Engineer</td>
                 <td class="is-end">
-                  <div>
+                  <div class="is-flex is-justify-content-flex-end">
                     <FlexTableContextMenuAlt />
                   </div>
                 </td>
@@ -133,7 +129,7 @@ useHead({
                 <td>Joestar</td>
                 <td>HR Manager</td>
                 <td class="is-end">
-                  <div>
+                  <div class="is-flex is-justify-content-flex-end">
                     <FlexTableContextMenuAlt />
                   </div>
                 </td>
@@ -143,7 +139,7 @@ useHead({
                 <td>Jensen</td>
                 <td>Accountant</td>
                 <td class="is-end">
-                  <div>
+                  <div class="is-flex is-justify-content-flex-end">
                     <FlexTableContextMenuAlt />
                   </div>
                 </td>
@@ -151,19 +147,8 @@ useHead({
             </table>
           </div>
 
-          <!--Table-->
-          <div class="demo-card has-more-margin">
-            <div class="demo-title">
-              <h3 class="title is-thin is-5">Striped Table</h3>
-              <p>
-                Vuero provides a basic Html5 table powered by Bulma. You sinply
-                have to add the <code>table</code> class to a html5
-                <code>table</code> element. You can also add the
-                <code>is-striped</code> to apply striped styles to the table
-                rows.
-              </p>
-            </div>
-          </div>
+          <!--Table striped-->
+          <TableStripedDocumentation />
 
           <div class="s-card demo-table">
             <table class="table is-striped is-fullwidth">
@@ -172,7 +157,11 @@ useHead({
                 <th>Last Name</th>
                 <th>Position</th>
                 <th class="is-end">
-                  <div class="dark-inverted">Actions</div>
+                  <div
+                    class="dark-inverted is-flex is-justify-content-flex-end"
+                  >
+                    Actions
+                  </div>
                 </th>
               </tr>
               <tr>
@@ -180,7 +169,7 @@ useHead({
                 <td>Bergmann</td>
                 <td>Head of Sales</td>
                 <td class="is-end">
-                  <div>
+                  <div class="is-flex is-justify-content-flex-end">
                     <FlexTableContextMenuAlt />
                   </div>
                 </td>
@@ -190,7 +179,7 @@ useHead({
                 <td>Wistmus</td>
                 <td>Senior Executive</td>
                 <td class="is-end">
-                  <div>
+                  <div class="is-flex is-justify-content-flex-end">
                     <FlexTableContextMenuAlt />
                   </div>
                 </td>
@@ -200,7 +189,7 @@ useHead({
                 <td>Watson</td>
                 <td>Software Engineer</td>
                 <td class="is-end">
-                  <div>
+                  <div class="is-flex is-justify-content-flex-end">
                     <FlexTableContextMenuAlt />
                   </div>
                 </td>
@@ -210,7 +199,7 @@ useHead({
                 <td>Joestar</td>
                 <td>HR Manager</td>
                 <td class="is-end">
-                  <div>
+                  <div class="is-flex is-justify-content-flex-end">
                     <FlexTableContextMenuAlt />
                   </div>
                 </td>
@@ -220,7 +209,7 @@ useHead({
                 <td>Jensen</td>
                 <td>Accountant</td>
                 <td class="is-end">
-                  <div>
+                  <div class="is-flex is-justify-content-flex-end">
                     <FlexTableContextMenuAlt />
                   </div>
                 </td>
@@ -228,18 +217,8 @@ useHead({
             </table>
           </div>
 
-          <!--Table-->
-          <div class="demo-card has-more-margin">
-            <div class="demo-title">
-              <h3 class="title is-thin is-5">Media Table</h3>
-              <p>
-                Vuero provides a basic Html5 table powered by Bulma. You sinply
-                have to add the <code>table</code> class to a html5
-                <code>table</code> element. You can easily add media elements
-                like the huro avatars inside your table rows.
-              </p>
-            </div>
-          </div>
+          <!--Table media-->
+          <TableMediaDocumentation />
 
           <div class="s-card demo-table">
             <table class="table is-hoverable is-fullwidth">
@@ -249,7 +228,11 @@ useHead({
                 <th>Last Name</th>
                 <th>Position</th>
                 <th class="is-end">
-                  <div class="dark-inverted">Actions</div>
+                  <div
+                    class="dark-inverted is-flex is-justify-content-flex-end"
+                  >
+                    Actions
+                  </div>
                 </th>
               </tr>
               <tr>
@@ -270,7 +253,7 @@ useHead({
                 <td>Bergmann</td>
                 <td>Head of Sales</td>
                 <td class="is-end">
-                  <div>
+                  <div class="is-flex is-justify-content-flex-end">
                     <FlexTableContextMenuAlt />
                   </div>
                 </td>
@@ -293,7 +276,7 @@ useHead({
                 <td>Wistmus</td>
                 <td>Senior Executive</td>
                 <td class="is-end">
-                  <div>
+                  <div class="is-flex is-justify-content-flex-end">
                     <FlexTableContextMenuAlt />
                   </div>
                 </td>
@@ -316,7 +299,7 @@ useHead({
                 <td>Watson</td>
                 <td>Software Engineer</td>
                 <td class="is-end">
-                  <div>
+                  <div class="is-flex is-justify-content-flex-end">
                     <FlexTableContextMenuAlt />
                   </div>
                 </td>
@@ -333,7 +316,7 @@ useHead({
                 <td>Joestar</td>
                 <td>HR Manager</td>
                 <td class="is-end">
-                  <div>
+                  <div class="is-flex is-justify-content-flex-end">
                     <FlexTableContextMenuAlt />
                   </div>
                 </td>
@@ -356,13 +339,16 @@ useHead({
                 <td>Jensen</td>
                 <td>Accountant</td>
                 <td class="is-end">
-                  <div>
+                  <div class="is-flex is-justify-content-flex-end">
                     <FlexTableContextMenuAlt />
                   </div>
                 </td>
               </tr>
             </table>
           </div>
+        </div>
+        <div v-if="toc.length" class="column is-3">
+          <DocumentationToc :toc="toc" />
         </div>
       </div>
     </div>

@@ -12,12 +12,16 @@ const SidebarColorLayout = defineAsyncComponent(
 const SidebarColorCurvedLayout = defineAsyncComponent(
   () => import('/@src/layouts/SidebarColorCurvedLayout.vue')
 )
+const SidebarMinimalLayout = defineAsyncComponent(
+  () => import('/@src/layouts/MinimalLayout.vue')
+)
 
 const layoutsComponents = {
   'sidebar-default': DefaultLayout,
   'sidebar-curved': SidebarCurvedLayout,
   'sidebar-color': SidebarColorLayout,
   'sidebar-color-curved': SidebarColorCurvedLayout,
+  'sidebar-minimal': SidebarMinimalLayout,
 }
 
 export const adminLayoutId = ref<keyof typeof layoutsComponents>(

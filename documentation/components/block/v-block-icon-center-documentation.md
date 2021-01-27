@@ -13,9 +13,9 @@ You can adjust the `<V-Block />` component flex alignment using the `center` pro
             </VIconBox>
         </template>
         <template #action>
-            <V-Button color="primary" elevated>View</V-button>
+            <V-Button color="primary" elevated>View</V-Button>
         </template>
-    </VBlock>
+    </V-Block>
 </template>
 ```
 
@@ -33,9 +33,9 @@ You can adjust the `<V-Block />` component flex alignment using the `center` pro
                     </VIconBox>
                 </template>
                 <template #action>
-                    <V-Button color="primary" elevated>View</V-button>
+                    <V-Button color="primary" elevated>View</V-Button>
                 </template>
-            </VBlock>
+            </V-Block>
         </div>
     </div>
 </div>

@@ -7,14 +7,6 @@ import {
   toggleSidebar,
 } from '/@src/composition/state/ui/activeSidebarState'
 
-import * as examples from './icons-lnir.examples'
-
-const examplesIds = Object.keys(examples)
-const display = ref<any>({})
-for (const id of examplesIds) {
-  display[id] = false
-}
-
 onMounted(() => {
   activeSidebar.value = 'elements'
 })
@@ -79,42 +71,10 @@ useHead({
       <div class="columns">
         <div class="column is-12">
           <!--Line Icons-->
-          <div class="demo-card">
-            <div class="demo-title">
-              <h3 class="title is-thin is-5">Line Icons Regular</h3>
-              <p>
-                Vuero is bundled with the <code>Line Icons</code> premium icon
-                set. This set offers 1000 high quality premium handcrafted
-                icons. Please refer to the code example for more details about
-                usage.
-              </p>
-              <a
-                class="code-trigger"
-                :class="[display.lineIconRegular && 'is-active']"
-                @click="display.lineIconRegular = !display.lineIconRegular"
-              >
-                <span
-                  v-show="display.lineIconRegular"
-                  class="iconify open"
-                  data-icon="feather:code"
-                />
-                <span
-                  v-show="!display.lineIconRegular"
-                  class="iconify close"
-                  data-icon="feather:x"
-                />
-              </a>
-            </div>
+          <IconsLineRegularDocumentation />
 
+          <div class="demo-card mt-4">
             <div class="card-inner">
-              <div class="highlight highlight-block">
-                <HighlightJS
-                  v-if="display.lineIconRegular"
-                  language="vue"
-                  :code="examples.lineIconRegular"
-                />
-              </div>
-
               <ul class="demo-icon-list">
                 <li class="textFilter-target">
                   <i class="lnir lnir-air-flow"></i>

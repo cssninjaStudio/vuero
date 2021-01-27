@@ -6,16 +6,18 @@ You can adjust the `<V-Block />` component flex alignment using the `center` pro
 
 ```vue
 <template>
-    <V-Block title="Anna B." subtitle="UX Designer" center>
-        <template #icon>
-            <V-Avatar size="medium"
-                picture="/images/avatars/photos/19.jpg"
-                badge="/images/icons/flags/germany.svg">
-        </template>
-        <template #action>
-            <V-Button color="primary" elevated>View</V-button>
-        </template>
-    </VBlock>
+  <V-Block title="Anna B." subtitle="UX Designer" center>
+    <template #icon>
+      <V-Avatar
+        size="medium"
+        picture="/images/avatars/photos/19.jpg"
+        badge="/images/icons/flags/germany.svg"
+      />
+    </template>
+    <template #action>
+      <V-Button color="primary" elevated>View</V-Button>
+    </template>
+  </V-Block>
 </template>
 ```
 
@@ -31,9 +33,9 @@ You can adjust the `<V-Block />` component flex alignment using the `center` pro
                     <V-Avatar size="medium" picture="/images/avatars/photos/19.jpg" badge="/images/icons/flags/germany.svg">
                 </template>
                 <template #action>
-                    <V-Button color="primary" elevated>View</V-button>
+                    <V-Button color="primary" elevated>View</V-Button>
                 </template>
-            </VBlock>
+            </V-Block>
         </div>
     </div>
 </div>
