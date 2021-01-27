@@ -17,18 +17,10 @@ const clicked = ref(0)
 </script>
 
 <template>
-  <V-Button @click="frontmatter.state.clicked++">
-    clicked: {{ frontmatter.state.clicked }}
-  </V-Button>
-  <V-Button bold @click="frontmatter.state.clicked++">
-    clicked: {{ frontmatter.state.clicked }}
-  </V-Button>
-  <V-Button rounded @click="frontmatter.state.clicked++">
-    clicked: {{ frontmatter.state.clicked }}
-  </V-Button>
-  <V-Button bold rounded @click="frontmatter.state.clicked++">
-    clicked: {{ frontmatter.state.clicked }}
-  </V-Button>
+  <V-Button @click="clicked++"> clicked: {{ clicked }} </V-Button>
+  <V-Button bold @click="clicked++"> clicked: {{ clicked }} </V-Button>
+  <V-Button rounded @click="clicked++"> clicked: {{ clicked }} </V-Button>
+  <V-Button bold rounded @click="clicked++"> clicked: {{ clicked }} </V-Button>
 </template>
 ```
 

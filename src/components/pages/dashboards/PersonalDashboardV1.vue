@@ -9,23 +9,14 @@ import { profitChartOptions } from '/@src/composition/state/charts/apexcharts/ex
   <div class="personal-dashboard personal-dashboard-v1">
     <!--Header-->
     <div class="dashboard-header">
-      <div class="v-avatar is-large">
-        <img
-          class="avatar"
-          src="/images/avatars/photos/8.jpg"
-          alt=""
-          @error="$event.target.src = 'https://via.placeholder.com/150x150'"
-        />
-      </div>
+      <V-Avatar picture="/images/avatars/photos/8.jpg" size="large" />
       <div class="start">
         <h3>Welcome back, Erik Kovalsky</h3>
         <p>We're very happy to see you again on your personal dashboard.</p>
       </div>
       <div class="end">
-        <button class="button v-button is-dark-outlined">View Reports</button>
-        <button class="button v-button is-primary is-elevated">
-          Manage Store
-        </button>
+        <V-Button>View Reports</V-Button>
+        <V-Button color="primary" elevated>Manage Store</V-Button>
       </div>
     </div>
 
@@ -42,9 +33,9 @@ import { profitChartOptions } from '/@src/composition/state/charts/apexcharts/ex
                 <!--Stat-->
                 <div class="quick-stat">
                   <div class="media-flex-center">
-                    <div class="v-icon is-purple is-rounded">
+                    <V-IconBox color="purple" rounded>
                       <i class="lnil lnil-analytics-alt-1"></i>
-                    </div>
+                    </V-IconBox>
                     <div class="flex-meta">
                       <span>2,870</span>
                       <span>Sales this month</span>
@@ -54,9 +45,9 @@ import { profitChartOptions } from '/@src/composition/state/charts/apexcharts/ex
                 <!--Stat-->
                 <div class="quick-stat">
                   <div class="media-flex-center">
-                    <div class="v-icon is-orange is-rounded">
+                    <V-IconBox color="orange" rounded>
                       <i class="lnil lnil-handshake"></i>
-                    </div>
+                    </V-IconBox>
                     <div class="flex-meta">
                       <span>131</span>
                       <span>New users</span>
@@ -66,9 +57,9 @@ import { profitChartOptions } from '/@src/composition/state/charts/apexcharts/ex
                 <!--Stat-->
                 <div class="quick-stat">
                   <div class="media-flex-center">
-                    <div class="v-icon is-green is-rounded">
+                    <V-IconBox color="green" rounded>
                       <i class="lnil lnil-diamond-alt"></i>
-                    </div>
+                    </V-IconBox>
                     <div class="flex-meta">
                       <span>$398,49</span>
                       <span>Earned today</span>
@@ -78,9 +69,9 @@ import { profitChartOptions } from '/@src/composition/state/charts/apexcharts/ex
                 <!--Stat-->
                 <div class="quick-stat">
                   <div class="media-flex-center">
-                    <div class="v-icon is-info is-rounded">
+                    <V-IconBox color="info" rounded>
                       <i class="lnil lnil-bank"></i>
-                    </div>
+                    </V-IconBox>
                     <div class="flex-meta">
                       <span>$6542,31</span>
                       <span>Total balance</span>
@@ -123,33 +114,9 @@ import { profitChartOptions } from '/@src/composition/state/charts/apexcharts/ex
         <div class="column is-4">
           <div class="dashboard-card is-gauge">
             <div class="people">
-              <div class="v-avatar">
-                <img
-                  class="avatar"
-                  src="/images/avatars/photos/21.jpg"
-                  alt=""
-                  data-user-popover="19"
-                  @error="
-                    $event.target.src = 'https://via.placeholder.com/150x150'
-                  "
-                />
-              </div>
-              <div class="v-avatar">
-                <span class="avatar is-fake is-h-purple" data-user-popover="35">
-                  <span>SC</span>
-                </span>
-              </div>
-              <div class="v-avatar">
-                <img
-                  class="avatar"
-                  src="/images/avatars/photos/39.jpg"
-                  alt=""
-                  data-user-popover="33"
-                  @error="
-                    $event.target.src = 'https://via.placeholder.com/150x150'
-                  "
-                />
-              </div>
+              <V-Avatar picture="/images/avatars/photos/21.jpg" />
+              <V-Avatar initials="SC" color="h-purple" />
+              <V-Avatar picture="/images/avatars/photos/39.jpg" />
             </div>
             <div></div>
             <apexchart
@@ -180,8 +147,8 @@ import { profitChartOptions } from '/@src/composition/state/charts/apexcharts/ex
 </template>
 
 <style lang="scss" scoped>
-@import '../../assets/scss/abstracts/_variables.scss';
-@import '../../assets/scss/abstracts/_mixins.scss';
+@import '../../../assets/scss/abstracts/_variables.scss';
+@import '../../../assets/scss/abstracts/_mixins.scss';
 
 .personal-dashboard-v1 {
   .dashboard-header {
@@ -329,39 +296,37 @@ import { profitChartOptions } from '/@src/composition/state/charts/apexcharts/ex
   }
 }
 
-body {
-  &.is-dark {
-    .personal-dashboard-v1 {
-      .dashboard-header {
-        .start {
-          h3 {
-            color: $dark-dark-text;
-          }
+.is-dark {
+  .personal-dashboard-v1 {
+    .dashboard-header {
+      .start {
+        h3 {
+          color: $dark-dark-text;
         }
       }
+    }
 
-      .dashboard-body {
-        .dashboard-card {
-          @include vuero-card--dark();
+    .dashboard-body {
+      .dashboard-card {
+        @include vuero-card--dark();
 
-          &.is-upgrade {
-            background: $accent;
-            border-color: $accent;
-            box-shadow: $accent-box-shadow;
-          }
+        &.is-upgrade {
+          background: $accent;
+          border-color: $accent;
+          box-shadow: $accent-box-shadow;
+        }
 
-          .quick-stats {
-            .quick-stats-inner {
-              .quick-stat {
-                background: lighten($dark-sidebar, 2%);
-                border: 1px solid lighten($dark-sidebar, 12%);
+        .quick-stats {
+          .quick-stats-inner {
+            .quick-stat {
+              background: lighten($dark-sidebar, 2%);
+              border: 1px solid lighten($dark-sidebar, 12%);
 
-                .media-flex-center {
-                  .flex-meta {
-                    span {
-                      &:first-child {
-                        color: $dark-dark-text;
-                      }
+              .media-flex-center {
+                .flex-meta {
+                  span {
+                    &:first-child {
+                      color: $dark-dark-text;
                     }
                   }
                 }
