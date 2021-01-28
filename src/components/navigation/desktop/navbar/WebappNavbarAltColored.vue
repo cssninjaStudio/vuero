@@ -39,11 +39,7 @@ watch(
     <div class="webapp-navbar-inner">
       <div class="left">
         <RouterLink :to="{ name: 'index' }" class="brand">
-          <img
-            class="light-image"
-            src="/images/logos/logo/logo-light.svg"
-            alt=""
-          />
+          <AnimatedLogo light width="38px" height="38px" />
         </RouterLink>
         <div class="separator"></div>
         <ProjectsQuickDropdown />

@@ -12,7 +12,7 @@ type TocItem = {
 
 const route = useRoute()
 
-const props = defineProps({
+defineProps({
   toc: {
     type: Array as PropType<TocItem[]>,
   },

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { defineProps } from 'vue'
 
-const props = defineProps({
+defineProps({
   size: {
     type: String,
     default: '',
@@ -24,7 +24,7 @@ const props = defineProps({
     :value="value"
     max="100"
   >
-    {{ props.value }}%
+    {{ value }}%
   </progress>
   <progress
     v-else

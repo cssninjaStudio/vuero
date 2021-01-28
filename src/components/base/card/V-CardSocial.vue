@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { defineProps } from 'vue'
 
-const props = defineProps({
+defineProps({
   avatar: {
     type: String,
     default: 'https://via.placeholder.com/150x150',

@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
-import { onMounted } from 'vue'
 
 import {
   activeSidebar,

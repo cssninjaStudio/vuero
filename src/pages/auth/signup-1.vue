@@ -485,7 +485,7 @@ useHead({
       <div class="modal-content">
         <div class="v-modal">
           <div class="modal-heading">
-            <img src="/images/logos/logo/logo-light.svg" alt="" />
+            <AnimatedLogo light width="38px" height="38px" />
             <h2 class="subtitle is-6 is-light has-text-centered">
               Upload and crop your picture
             </h2>

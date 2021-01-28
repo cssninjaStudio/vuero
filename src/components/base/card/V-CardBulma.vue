@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { defineProps } from 'vue'
 
-const props = defineProps({
+defineProps({
   image: {
     type: String,
     default: 'https://via.placeholder.com/1280x960',
@@ -45,7 +45,7 @@ const props = defineProps({
         </template>
       </V-Block>
       <div class="inner-content p-t-20 p-b-20">
-        <p>{{ props.text }}</p>
+        <p>{{ text }}</p>
       </div>
 
       <slot></slot>

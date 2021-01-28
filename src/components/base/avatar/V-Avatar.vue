@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { defineProps } from 'vue'
 
-const props = defineProps({
+defineProps({
   picture: {
     type: String,
     default: '',
@@ -41,9 +41,9 @@ const props = defineProps({
   <div
     class="v-avatar"
     :class="[
-      props.size && 'is-' + props.size,
-      props.dot && 'has-dot',
-      props.dotColor && `dot-${dotColor}`,
+      size && 'is-' + size,
+      dot && 'has-dot',
+      dotColor && `dot-${dotColor}`,
       squared && dot && 'has-dot-squared',
     ]"
   >
@@ -51,7 +51,7 @@ const props = defineProps({
       v-if="picture"
       class="avatar"
       :class="[squared && 'is-squared']"
-      :src="props.picture"
+      :src="picture"
       alt=""
       @error="$event.target.src = 'https://via.placeholder.com/150x150'"
     />
@@ -60,12 +60,12 @@ const props = defineProps({
       class="avatar is-fake"
       :class="[squared && 'is-squared', color && `is-${color}`]"
     >
-      <span>{{ props.initials }}</span>
+      <span>{{ initials }}</span>
     </span>
     <img
       v-if="badge"
       class="badge"
-      :src="props.badge"
+      :src="badge"
       alt=""
       @error="$event.target.src = 'https://via.placeholder.com/150x150'"
     />

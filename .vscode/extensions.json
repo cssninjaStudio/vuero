@@ -1,5 +1,7 @@
 {
   "recommendations": [
+    "johnsoncodehk.volar",
+    "octref.vetur",
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
     "syler.sass-indented",

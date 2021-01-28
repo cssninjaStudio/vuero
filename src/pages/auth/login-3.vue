@@ -17,11 +17,6 @@ useHead({
         <div class="center">
           <RouterLink :to="{ name: 'index' }" class="header-item">
             <AnimatedLogo width="38px" height="38px" />
-            <img
-              class="dark-image"
-              src="/images/logos/logo/logo-light.svg"
-              alt=""
-            />
           </RouterLink>
         </div>
         <div class="right">

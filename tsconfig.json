@@ -2,10 +2,11 @@
   "compilerOptions": {
     "baseUrl": ".",
     "module": "ESNext",
-    "target": "ES2016",
+    "target": "ESNext",
     "lib": ["DOM", "ESNext"],
     "types": ["node", "vite/client"],
     "strict": true,
+    "sourceMap": true,
     "strictNullChecks": true,
     "esModuleInterop": true,
     "incremental": true,

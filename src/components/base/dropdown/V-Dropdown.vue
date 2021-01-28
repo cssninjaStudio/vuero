@@ -2,7 +2,7 @@
 import { defineProps } from 'vue'
 import useDropdown from '/@src/composition/use/useDropdown'
 
-const props = defineProps({
+defineProps({
   title: {
     type: String,
     default: '',

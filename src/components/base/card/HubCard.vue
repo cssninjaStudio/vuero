@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { defineProps } from 'vue'
 
-const props = defineProps({
+defineProps({
   title: {
     type: String,
     default: 'Title',
@@ -25,13 +25,13 @@ const props = defineProps({
   <div class="hub-card">
     <div class="hub-card-body">
       <div class="inner-content">
-        <h3 class="title is-5 is-narrow is-thin">{{ props.title }}</h3>
+        <h3 class="title is-5 is-narrow is-thin">{{ title }}</h3>
         <p class="light-text">
-          {{ props.content }}
+          {{ content }}
         </p>
       </div>
-      <img class="light-image" :src="props.light" alt="" />
-      <img class="dark-image" :src="props.dark" alt="" />
+      <img class="light-image" :src="light" alt="" />
+      <img class="dark-image" :src="dark" alt="" />
     </div>
     <div class="hub-card-foot">
       <slot></slot>

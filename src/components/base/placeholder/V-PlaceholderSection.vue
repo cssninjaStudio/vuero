@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { defineProps } from 'vue'
 
-const props = defineProps({
+defineProps({
   image: {
     type: String,
     default: '/images/placeholders/huro-1.svg',
@@ -22,8 +22,8 @@ const props = defineProps({
     <div class="placeholder-content">
       <img class="light-image" :src="image" alt="" />
       <img class="dark-image" :src="image" alt="" />
-      <h3 class="dark-inverted">{{ props.title }}</h3>
-      <p>{{ props.subtitle }}</p>
+      <h3 class="dark-inverted">{{ title }}</h3>
+      <p>{{ subtitle }}</p>
     </div>
   </div>
 </template>

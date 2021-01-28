@@ -2,7 +2,7 @@
 import type { PropType } from 'vue'
 import { defineProps } from 'vue'
 
-const props = defineProps({
+defineProps({
   activeTab: {
     type: String as PropType<'elements' | 'components' | 'forms' | 'plugins'>,
     default: 'elements',

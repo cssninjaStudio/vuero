@@ -2,8 +2,6 @@
 import { useHead } from '@vueuse/head'
 import { ref } from 'vue'
 
-import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
-
 const activeTab = ref<'active' | 'closed'>('active')
 
 useHead({

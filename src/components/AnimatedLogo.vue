@@ -1,6 +1,13 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, defineProps } from 'vue'
 import { useRouter } from 'vue-router'
+
+defineProps({
+  light: {
+    type: Boolean,
+    default: false,
+  },
+})
 
 const router = useRouter()
 const isLoading = ref(false)
@@ -26,7 +33,7 @@ router.afterEach(() => {
     viewBox="0 0 160 160"
     style="enable-background: new 0 0 160 160"
     xml:space="preserve"
-    :class="[isLoading && 'is-roll']"
+    :class="[isLoading && 'is-roll', light && 'is-light']"
   >
     <g class="is-roll">
       <g>
@@ -77,6 +84,21 @@ router.afterEach(() => {
     animation: is-roll-bottom 8s ease infinite;
     animation-fill-mode: forwards;
     animation-delay: 4s;
+  }
+}
+
+.is-light {
+  .right {
+    fill: red;
+    animation: none;
+  }
+  .bottom {
+    fill: green;
+    animation: none;
+  }
+  .left {
+    fill: blue;
+    animation: none;
   }
 }
 
