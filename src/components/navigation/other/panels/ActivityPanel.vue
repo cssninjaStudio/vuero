@@ -2,7 +2,8 @@
 import { ref } from 'vue'
 import { activePanel } from '/@src/composition/state/ui/activePanelState'
 
-const activeTab = ref<'team' | 'projects' | 'schedule'>('team')
+type TabId = 'team' | 'projects' | 'schedule'
+const activeTab = ref<TabId>('team')
 </script>
 
 <template>

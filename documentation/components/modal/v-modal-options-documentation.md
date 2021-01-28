@@ -1,10 +1,13 @@
 ### Modal Options
 
-The `<V-Modal />` component behavior can be customized. Use the `noscroll` prop to disable page scrolling when the modal is open. You also can use the `noclose` prop to prevent modal from closing if the user click on the background overlay.
+The `<V-Modal />` component behavior can be customized. Use the `noscroll`
+prop to disable page scrolling when the modal is open.
+You also can use the `noclose` prop to prevent modal from closing
+if the user click on the background overlay.
 
 <!--code-->
 
-```vue {13-14}
+```vue
 <script setup lang="ts">
 import { ref } from 'vue'
 const isOpen = ref(false)

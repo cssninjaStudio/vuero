@@ -1,10 +1,12 @@
 ### Modal Forms
 
-Vuero `<V-Modal />` component can be used for anything, including displaying and handling forms. Use the `content` slot `<template #content></template>` to inject any kind of content inside the modal.
+Vuero `<V-Modal />` component can be used for anything, including displaying
+and handling forms. Use the `content` slot `<template #content></template>`
+to inject any kind of content inside the modal.
 
 <!--code-->
 
-```vue {2-4}
+```vue
 <script setup lang="ts">
 import { ref } from 'vue'
 const smallFormOpen = ref(false)

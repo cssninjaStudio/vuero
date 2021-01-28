@@ -1,6 +1,8 @@
 ### Multiselect custom label
 
-The `<Multiselect />` component in multiple mode has a default label when you start selecting options. You can change the way the message is formatted by using the `#multiplelabel` custom slot to configure your message.
+The `<Multiselect />` component in multiple mode has a default label when you
+start selecting options. You can change the way the message is formatted by
+using the `#multiplelabel` custom slot to configure your message.
 
 <!--code-->
 

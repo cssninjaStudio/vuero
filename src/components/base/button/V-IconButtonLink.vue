@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { defineProps } from 'vue'
 
-const props = defineProps({
+defineProps({
   link: {
     type: String,
     default: 'index',
@@ -38,7 +38,7 @@ const props = defineProps({
     type: String,
     default: '',
   },
-  feather: {
+  iconify: {
     type: String,
     default: '',
   },
@@ -67,8 +67,8 @@ const props = defineProps({
     <span v-if="fa" class="icon">
       <i :class="fa"></i>
     </span>
-    <span v-if="feather" class="icon">
-      <i class="iconify" :data-icon="feather"></i>
+    <span v-if="iconify" class="icon">
+      <i class="iconify" :data-icon="iconify"></i>
     </span>
   </RouterLink>
 </template>

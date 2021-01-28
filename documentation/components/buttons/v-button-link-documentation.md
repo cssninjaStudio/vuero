@@ -1,6 +1,8 @@
 ### V-ButtonLink
 
-Vuero provides a `<V-ButtonLink />` component if you don't want to use the simple Html button. `<V-ButtonLink />` is an alternative to `<V-Button />` that renders a router link. All `<V-Button />` props are available.
+Vuero provides a `<V-ButtonLink />` component if you don't want to use
+the simple Html button. `<V-ButtonLink />` is an alternative to `<V-Button />`
+that renders a router link. All `<V-Button />` props are available.
 
 <!--code-->
 

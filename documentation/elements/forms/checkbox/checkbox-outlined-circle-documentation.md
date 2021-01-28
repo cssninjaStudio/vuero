@@ -1,10 +1,12 @@
 ### Outlined circle
 
-Vuero checkboxes can be circles instead of squares. Simply add the `is-circle` modifier class to your checkbox element. See the code example for more details about usage.
+Vuero checkboxes can be circles instead of squares. Simply add the `is-circle`
+modifier class to your checkbox element.
+See the code example for more details about usage.
 
 <!--code-->
 
-```vue {0}
+```vue
 <template>
   <V-Field>
     <V-Control>

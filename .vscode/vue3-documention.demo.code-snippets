@@ -15,7 +15,7 @@
       "",
       "<!--code-->",
       "",
-      "```vue {6-8}",
+      "```vue",
       "<script setup lang=\"ts\">",
       "  // code sample script (remove if unused)",
       "</script>",

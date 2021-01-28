@@ -5,11 +5,12 @@ state:
 
 ### Loading State
 
-Huro buttons can be shown in a loading state. To show a loading spinner, add the `is-loading` modifier class.
+Huro buttons can be shown in a loading state. To show a loading spinner,
+add the `is-loading` modifier class.
 
 <!--code-->
 
-```vue {4,13}
+```vue
 <script setup lang="ts">
 import { ref } from 'vue'
 

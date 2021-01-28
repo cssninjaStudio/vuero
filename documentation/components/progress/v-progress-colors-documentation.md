@@ -1,6 +1,10 @@
 ### V-Progress colors
 
-Vuero provides a nice and clean `<V-Progress />` component that can be used almost anywhere, across a wide variety of layouts. Use the `color` prop to change the progress bar color. 5 color modifiers are available: `primary`, `success`, `info`, `warning` and `danger`.
+Vuero provides a nice and clean `<V-Progress />` component that
+can be used almost anywhere, across a wide variety of layouts.
+Use the `color` prop to change the progress bar color.
+5 color modifiers are available: `primary`, `success`, `info`,
+`warning` and `danger`.
 
 <!--code-->
 

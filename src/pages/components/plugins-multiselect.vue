@@ -36,7 +36,7 @@ const tagsOptions = ref([
   { value: 'joker', label: 'Joker' },
 ])
 
-const fetchLanguages = async (query: String) => {
+const fetchLanguages = async (query: any) => {
   // From: https://www.back4app.com/database/paul-datasets/list-of-all-programming-languages/get-started/javascript/rest-api/fetch?objectClassSlug=dataset
 
   let where = ''
@@ -68,7 +68,7 @@ const fetchLanguages = async (query: String) => {
 
   const data = await response.json() // Here you have the data that you need
 
-  return data.results.map((item) => {
+  return data.results.map((item: any) => {
     return { value: item.ProgrammingLanguage, label: item.ProgrammingLanguage }
   })
 }

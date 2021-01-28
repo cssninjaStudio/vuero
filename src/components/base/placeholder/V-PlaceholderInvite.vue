@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { defineProps } from 'vue'
 
-const props = defineProps({
+defineProps({
   image: {
     type: String,
     default: 'https://via.placeholder.com/150x150',
@@ -25,8 +25,8 @@ const props = defineProps({
   <div class="section-placeholder">
     <div class="placeholder-content">
       <V-Avatar size="xl" :picture="image" :badge="badge" />
-      <h3 class="dark-inverted">{{ props.title }}</h3>
-      <p>{{ props.subtitle }}</p>
+      <h3 class="dark-inverted">{{ title }}</h3>
+      <p>{{ subtitle }}</p>
     </div>
   </div>
 </template>

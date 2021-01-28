@@ -1,6 +1,7 @@
 ### Disabled
 
-`<V-Button />` components can be disabled and not responsive to pointer events. Use the `disabled` prop to set a button in a disabled state.
+`<V-Button />` components can be disabled and not responsive to pointer events.
+Use the `disabled` prop to set a button in a disabled state.
 
 <!--code-->
 

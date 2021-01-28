@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { defineProps } from 'vue'
 
-const props = defineProps({
+defineProps({
   avatars: {
     type: Array,
     required: true,
@@ -24,7 +24,7 @@ const props = defineProps({
       v-for="avatar in avatars.slice(0, limit)"
       :key="avatar.id"
       :picture="avatar.picture"
-      :size="props.size"
+      :size="size"
       :initials="avatar.initials"
       :color="avatar.color"
     />

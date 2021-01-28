@@ -4,11 +4,13 @@ selected: 'team'
 
 ### Line Icons
 
-You can easily embed `Line Icons` in your tab elements. The styling is already taken care of, just add the icons you want. Check the markup for more details.
+You can easily embed `Line Icons` in your tab elements.
+The styling is already taken care of, just add the icons you want.
+Check the markup for more details.
 
 <!--code-->
 
-```vue {15,21,27}
+```vue
 <script setup lang="ts">
 import { ref } from 'vue'
 

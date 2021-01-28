@@ -1,10 +1,12 @@
 ### Rounded border
 
-The Vuero `<V-IconBox />` component can have a thick border. You can add a border by simply adding the `bordered` and `rounded` props to the component. See the code example for more details.
+The Vuero `<V-IconBox />` component can have a thick border.
+You can add a border by simply adding the `bordered` and `rounded`
+props to the component. See the code example for more details.
 
 <!--code-->
 
-```vue {2-4}
+```vue
 <template>
   <V-IconBox size="medium" color="primary" bordered rounded>
     <i class="lnil lnil-vector-pen"></i>

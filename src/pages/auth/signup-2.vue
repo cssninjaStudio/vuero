@@ -30,16 +30,7 @@ useHead({
             </label>
             <div class="auth-logo">
               <RouterLink :to="{ name: 'index' }">
-                <img
-                  class="top-logo light-image"
-                  src="/images/logos/logo/logo.svg"
-                  alt=""
-                />
-                <img
-                  class="top-logo dark-image"
-                  src="/images/logos/logo/logo-light.svg"
-                  alt=""
-                />
+                <AnimatedLogo class="top-logo" width="36px" height="36px" />
               </RouterLink>
             </div>
           </div>

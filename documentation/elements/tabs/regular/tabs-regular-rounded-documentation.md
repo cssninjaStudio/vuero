@@ -4,11 +4,14 @@ selected: 'team'
 
 ### Rounded Toggle Tabs
 
-Tabs can be displayed in exclusive toggle layout. To display rounded toggle tabs, use the `is-toggle` and `is-toggle-rounded` classes on the main tabs element. check the
+Tabs can be displayed in exclusive toggle layout.
+To display rounded toggle tabs, use the `is-toggle` and `is-toggle-rounded`
+classes on the main tabs element.
+Check the markup for more details.
 
 <!--code-->
 
-```vue {11}
+```vue
 <script setup lang="ts">
 import { ref } from 'vue'
 

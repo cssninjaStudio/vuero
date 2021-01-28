@@ -5,7 +5,10 @@ state:
 
 ### Basic usage
 
-Vuero provides it's own subset of Bulma buttons. Use the `v-button` class with a Bulma native `button` class to start using Vuero buttons. Basic modifiers such as `is-bold` and `is-rounded` are available.
+Vuero provides it's own subset of Bulma buttons.
+Use the `v-button` class with a Bulma native `button` class
+to start using Vuero buttons.
+Basic modifiers such as `is-bold` and `is-rounded` are available.
 
 <!--code-->
 

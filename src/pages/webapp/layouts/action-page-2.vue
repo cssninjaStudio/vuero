@@ -1,8 +1,6 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
 
-import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
-
 useHead({
   title: 'Action Page 2 - WebApp - Vuero',
 })

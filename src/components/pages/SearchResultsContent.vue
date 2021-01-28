@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
-const activeTab = ref<'all' | 'people' | 'records'>('all')
+type TabId = 'all' | 'people' | 'records'
+const activeTab = ref<TabId>('all')
 </script>
 
 <template>

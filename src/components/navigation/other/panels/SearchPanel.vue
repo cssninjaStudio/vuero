@@ -12,12 +12,7 @@ import { activePanel } from '/@src/composition/state/ui/activePanelState'
 
     <div class="right-panel">
       <div class="right-panel-head">
-        <img class="light-image" src="/images/logos/logo/logo.svg" alt="" />
-        <img
-          class="dark-image"
-          src="/images/logos/logo/logo-light.svg"
-          alt=""
-        />
+        <AnimatedLogo width="38px" height="38px" />
         <a class="close-panel" @click="activePanel = 'none'">
           <i class="iconify" data-icon="feather:chevron-left"></i>
         </a>

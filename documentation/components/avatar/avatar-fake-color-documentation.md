@@ -1,10 +1,14 @@
 ### Fake avatar colors
 
-Fake avatars can have different colors to break monotony. You can change the avatar color passing one of the following values to the `color` prop: `primary`, `success`, `info`, `warning`, `danger`, `h-purple`, `h-orange`, `h-blue`, `h-green`, `h-red`, `h-yellow`. Supports dark mode.
+Fake avatars can have different colors to break monotony.
+You can change the avatar color passing one of the following values
+to the `color` prop: `primary`, `success`, `info`, `warning`, `danger`,
+`h-purple`, `h-orange`, `h-blue`, `h-green`, `h-red`, `h-yellow`.
+Supports dark mode.
 
 <!--code-->
 
-```vue {2-4}
+```vue
 <template>
   <V-Avatar initials="CT" size="medium" />
   <V-Avatar initials="CT" size="medium" color="primary" />

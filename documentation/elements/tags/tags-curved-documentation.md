@@ -1,6 +1,8 @@
 ### Tags curved
 
-Vuero tags can have curved edges. Use the `is-curved` modifier class on a tag element to apply a curved style. See the code examples for more details about usage.
+Vuero tags can have curved edges. Use the `is-curved` modifier class
+on a tag element to apply a curved style.
+See the code examples for more details about usage.
 
 <!--code-->
 

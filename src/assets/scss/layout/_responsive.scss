@@ -64,6 +64,15 @@ Responsive styles
     left: 60px;
   }
 
+  .is-webapp {
+    .view-wrapper {
+      .is-stuck {
+        margin-left: 0 !important;
+        width: 100% !important;
+      }
+    }
+  }
+
   //Layout
   .view-wrapper {
     width: calc(100% - 60px) !important;
@@ -72,13 +81,6 @@ Responsive styles
     &.is-pushed-messages {
       margin-left: 140px !important;
       width: calc(100% - 140px) !important;
-    }
-
-    &.is-webapp {
-      .is-stuck {
-        margin-left: 0 !important;
-        width: 100% !important;
-      }
     }
   }
 
@@ -211,11 +213,6 @@ Responsive styles
     padding-left: 40px;
     padding-right: 40px;
 
-    &.is-webapp {
-      padding-top: 70px !important;
-      margin-top: 0 !important;
-    }
-
     &.is-explore {
       padding-left: 0 !important;
       padding-right: 0 !important;
@@ -223,15 +220,22 @@ Responsive styles
   }
 
   .page-title {
-    &.is-webapp {
-      display: flex !important;
-      margin-top: 0;
-    }
-
     &.is-project-details {
       .huro-hamburger {
         margin-left: 7px !important;
       }
+    }
+  }
+
+  .is-webapp {
+    .view-wrapper {
+      padding-top: 70px !important;
+      margin-top: 0 !important;
+    }
+
+    .page-title {
+      display: flex !important;
+      margin-top: 0;
     }
   }
 
@@ -358,19 +362,10 @@ Responsive styles
     width: 100% !important;
     margin-left: 0 !important;
     margin-top: 60px !important;
-
-    &.is-webapp {
-      padding-top: 0 !important;
-    }
   }
 
   .page-title {
     margin-top: 20px;
-
-    &.is-webapp {
-      display: flex !important;
-      margin-top: 0;
-    }
 
     &.is-project-details {
       .huro-hamburger {
@@ -380,6 +375,16 @@ Responsive styles
 
     .title-wrap {
       margin-left: 0;
+    }
+  }
+
+  .is-webapp {
+    .view-wrapper {
+      padding-top: 0 !important;
+    }
+    .page-title {
+      display: flex !important;
+      margin-top: 0;
     }
   }
 

@@ -1,6 +1,8 @@
 ### Outlined Colors
 
-`<V-Button />` solid color can have an outlined button style. Use the `color` prop to set a solid color and use the `outlined` modifier prop to make an outlined button.
+`<V-Button />` solid color can have an outlined button style.
+Use the `color` prop to set a solid color and
+use the `outlined` modifier prop to make an outlined button.
 
 <!--code-->
 

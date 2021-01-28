@@ -1,10 +1,12 @@
 ### File left
 
-File inputs can show an additional area to display the selected file name. You just need to add the `has-name` class to your file input element to apply this style. Please refer to markup for more details about usage.
+File inputs can show an additional area to display the selected file name.
+You just need to add the `has-name` class to your file input element
+to apply this style. Please refer to markup for more details about usage.
 
 <!--code-->
 
-```vue {0}
+```vue
 <template>
   <V-Field grouped>
     <V-Control>

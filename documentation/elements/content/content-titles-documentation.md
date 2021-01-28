@@ -1,6 +1,10 @@
 ### Titles
 
-To create a title, you can add the `title` class to any html element. Title sizes can be controlled with numbered modifiers using the patter `is-*` where `*` represents a number between 3 and 6. Titles can also be thinner using the `is-thin`, bold using the `is-bold` or bolder using the `is-bolder` modifier classes.
+To create a title, you can add the `title` class to any html element.
+Title sizes can be controlled with numbered modifiers using the patter
+`is-*` where `*` represents a number between 3 and 6.
+Titles can also be thinner using the `is-thin`, bold using the `is-bold`
+or bolder using the `is-bolder` modifier classes.
 
 <!--code-->
 

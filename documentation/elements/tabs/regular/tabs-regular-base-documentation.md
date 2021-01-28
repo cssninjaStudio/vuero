@@ -5,11 +5,13 @@ state:
 
 ### Tabs
 
-Vuero provides styled navigation tabs that you can use to build nice looking and optimized layouts. Tabs work with a javascript implementation. Check the markup for more details.
+Vuero provides styled navigation tabs that you can use to build nice
+looking and optimized layouts. Tabs work with a javascript implementation.
+Check the markup for more details.
 
 <!--code-->
 
-```vue {4,13-21,27-28,40-41,53-54}
+```vue
 <script setup lang="ts">
 import { ref } from 'vue'
 

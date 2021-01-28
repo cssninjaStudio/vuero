@@ -1,10 +1,11 @@
 ### Avatar badge
 
-Huro avatars can have badge images attached to them. Simply add a 1:1 ratio image URL to the avatar component using the `badge` prop.
+Huro avatars can have badge images attached to them.
+Simply add a 1:1 ratio image URL to the avatar component using the `badge` prop.
 
 <!--code-->
 
-```vue {2-4}
+```vue
 <template>
   <V-Avatar
     picture="/images/avatars/photos/7.jpg"

@@ -1,10 +1,12 @@
 ### Rounded box
 
-The Vuero `<V-IconBox />` component can have a rounded shape. You can make icons rounded by simply adding the `rounded` prop to the component. See the code example for more details.
+The Vuero `<V-IconBox />` component can have a rounded shape.
+You can make icons rounded by simply adding the `rounded`
+prop to the component. See the code example for more details.
 
 <!--code-->
 
-```vue {2-4}
+```vue
 <template>
   <V-IconBox size="medium" color="primary" rounded>
     <i class="lnil lnil-vector-pen"></i>

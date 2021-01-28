@@ -1,10 +1,13 @@
 ### Font Awesome
 
-Vuero selects can have icons attached to them. They work pretty well with Font Awesome icons. You can add an icon element inside the select. Please refer to the code example for more details about usage.
+Vuero selects can have icons attached to them.
+They work pretty well with Font Awesome icons. You can add an
+icon element inside the select. Please refer to the code example
+for more details about usage.
 
 <!--code-->
 
-```vue {3,15-17}
+```vue
 <template>
   <V-Field>
     <V-Control class="has-icons-left">

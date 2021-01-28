@@ -2,9 +2,8 @@
 import { useHead } from '@vueuse/head'
 import { ref } from 'vue'
 
-import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
-
-const activeTab = ref<'active' | 'closed'>('active')
+type TabId = 'active' | 'closed'
+const activeTab = ref<TabId>('active')
 
 useHead({
   title: 'List Flex 2 - WebApp - Vuero',

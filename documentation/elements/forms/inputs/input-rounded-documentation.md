@@ -1,10 +1,11 @@
 ### Rounded input
 
-You can easily change the shape of the input inside the field. Simply add the `is-rounded` class to the Html `input` element.
+You can easily change the shape of the input inside the field.
+Simply add the `is-rounded` class to the Html `input` element.
 
 <!--code-->
 
-```vue {6}
+```vue
 <template>
   <V-Field>
     <V-Control>

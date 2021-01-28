@@ -1,6 +1,8 @@
 ### Multiselect Object
 
-The `<Multiselect />` component can receive data with his `options` props. You can either pass an `Array` or `Object` to the `options` props. You can also activate the `multiple` mode by setting the `mode` prop to `mode="multiple"`.
+The `<Multiselect />` component can receive data with his `options` props. You
+can either pass an `Array` or `Object` to the `options` props. You can also
+activate the `multiple` mode by setting the `mode` prop to `mode="multiple"`.
 
 <!--code-->
 

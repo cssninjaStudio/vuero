@@ -3,7 +3,6 @@
   "less.validate": false,
   "scss.validate": false,
   "editor.formatOnSave": false,
-  "vetur.validation.template": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
@@ -13,6 +12,7 @@
   "eslint.validate": [
     "javascript",
     "javascriptreact",
+    "markdown",
     "vue"
   ],
   "[vue]": {
@@ -22,10 +22,15 @@
     "editor.formatOnSave": false
   },
   "[markdown]": {
-    "editor.formatOnSave": false,
+    "editor.formatOnSave": true,
+    "editor.rulers": [ 80 ]
+    // "vetur.validation.template": true,
   },
-  "vetur.experimental.templateInterpolationService": false,
+  "vetur.format.enable": true,
+  "vetur.validation.template": false,
   "vetur.validation.interpolation": false,
+  "vetur.validation.templateProps": true,
+  "vetur.experimental.templateInterpolationService": true,
   "vetur.completion.tagCasing": "initial",
   "vetur.completion.autoImport": true,
   "i18n-ally.localesPaths": [

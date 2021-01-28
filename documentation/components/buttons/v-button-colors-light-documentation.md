@@ -1,6 +1,8 @@
 ### Light Colors
 
-`<V-Button />` solid color can have a very light tint of their original color. Use the `color` prop to set a solid color and use the `light` modifier prop to make a light colored button.
+`<V-Button />` solid color can have a very light tint of their original color.
+Use the `color` prop to set a solid color and
+use the `light` modifier prop to make a light colored button.
 
 <!--code-->
 

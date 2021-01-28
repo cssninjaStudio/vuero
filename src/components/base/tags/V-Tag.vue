@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { defineProps } from 'vue'
 
-const props = defineProps({
+defineProps({
   label: {
     type: String,
     required: true,
@@ -45,6 +45,6 @@ const props = defineProps({
       light && 'is-light',
       elevated && 'is-elevated',
     ]"
-    >{{ props.label }}</span
+    >{{ label }}</span
   >
 </template>

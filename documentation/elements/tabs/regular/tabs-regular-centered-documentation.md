@@ -4,11 +4,14 @@ selected: 'team'
 
 ### Centered Tabs
 
-Vuero provides styled navigation tabs that you can use to build nice looking and optimized layouts. Tabs work with a javascript implementation. Use the `is-centered` class to center align the tabs. Check the markup for more details.
+Vuero provides styled navigation tabs that you can use to build nice
+looking and optimized layouts. Tabs work with a javascript implementation.
+Use the `is-centered` class to center align the tabs.
+Check the markup for more details.
 
 <!--code-->
 
-```vue {11}
+```vue
 <script setup lang="ts">
 import { ref } from 'vue'
 

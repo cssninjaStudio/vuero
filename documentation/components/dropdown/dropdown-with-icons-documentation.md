@@ -1,10 +1,11 @@
 ### Menu with Icons
 
-`<V-Dropdown />` menu items can have icons and a more structured layout. Use the `spaced` prop with the provided markup in the code example.
+`<V-Dropdown />` menu items can have icons and a more structured layout.
+Use the `spaced` prop with the provided markup in the code example.
 
 <!--code-->
 
-```vue {2,4-12}
+```vue
 <template>
   <V-Dropdown title="Dropdown with icon" spaced>
     <template #content>

@@ -1,10 +1,12 @@
 ### Feather Icons
 
-The Vuero `<V-IconBox />` component works also very well with the `Feather Icons` icon set. Use the same markup and just replace the existing icons with some from Feather Icons.
+The Vuero `<V-IconBox />` component works also very well with
+the `Feather Icons` icon set. Use the same markup and
+just replace the existing icons with some from Feather Icons.
 
 <!--code-->
 
-```vue {2-4}
+```vue
 <template>
   <V-IconBox size="medium" color="primary" rounded>
     <i class="iconify" data-icon="feather:award"></i>

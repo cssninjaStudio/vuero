@@ -1,10 +1,12 @@
 ### Font Awesome
 
-The Vuero `<V-IconBox />` component works also very well with the `Font Awesome` icon set. Use the same markup and just replace the existing icons with some from Font Awesome.
+The Vuero `<V-IconBox />` component works also very well with
+the `Font Awesome` icon set. Use the same markup and
+just replace the existing icons with some from Font Awesome.
 
 <!--code-->
 
-```vue {2-4}
+```vue
 <template>
   <V-IconBox size="medium" color="primary" rounded>
     <i class="fas fa-atom"></i>

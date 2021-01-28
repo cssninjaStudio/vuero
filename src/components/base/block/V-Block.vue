@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { defineProps } from 'vue'
 
-const props = defineProps({
+defineProps({
   center: {
     type: Boolean,
     default: false,
@@ -41,8 +41,8 @@ const props = defineProps({
   >
     <slot name="icon"></slot>
     <div class="flex-meta">
-      <span>{{ props.title }}</span>
-      <span>{{ props.subtitle }}</span>
+      <span>{{ title }}</span>
+      <span>{{ subtitle }}</span>
     </div>
     <div class="flex-end">
       <slot name="action"></slot>

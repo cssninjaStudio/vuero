@@ -1,6 +1,8 @@
 ### V Action
 
-Vuero also provides a simple and smaller button called `v-action`. it doesn't come up with a lot of modifiers like the `v-button` but is a solid alternative when you want to use simple buttons.
+Vuero also provides a simple and smaller button called `v-action`.
+It doesn't come up with a lot of modifiers like the `v-button`
+but is a solid alternative when you want to use simple buttons.
 
 <!--code-->
 

@@ -1,13 +1,14 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
-import { onMounted, ref } from 'vue'
+import { ref } from 'vue'
 
 import {
   activeSidebar,
   toggleSidebar,
 } from '/@src/composition/state/ui/activeSidebarState'
 
-const activeTab = ref<'active' | 'closed'>('active')
+type TabId = 'active' | 'closed'
+const activeTab = ref<TabId>('active')
 
 useHead({
   title: 'List Flex 2 - Admin - Vuero',

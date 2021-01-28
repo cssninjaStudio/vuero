@@ -11,7 +11,7 @@ useHead({
     <div class="signup-nav">
       <div class="signup-nav-inner">
         <RouterLink :to="{ name: 'index' }" class="logo">
-          <img src="/images/logos/logo/logo.svg" alt="" />
+          <AnimatedLogo width="36px" height="36px" />
         </RouterLink>
       </div>
     </div>
@@ -485,7 +485,7 @@ useHead({
       <div class="modal-content">
         <div class="v-modal">
           <div class="modal-heading">
-            <img src="/images/logos/logo/logo-light.svg" alt="" />
+            <AnimatedLogo light width="38px" height="38px" />
             <h2 class="subtitle is-6 is-light has-text-centered">
               Upload and crop your picture
             </h2>

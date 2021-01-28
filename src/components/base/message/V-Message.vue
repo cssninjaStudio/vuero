@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { defineProps } from 'vue'
 
-const props = defineProps({
+defineProps({
   message: {
     type: String,
     default:
@@ -17,6 +17,6 @@ const props = defineProps({
 <template>
   <div class="message" :class="[color && `is-${color}`]">
     <a class="delete"></a>
-    <div class="message-body">{{ props.message }}</div>
+    <div class="message-body">{{ message }}</div>
   </div>
 </template>

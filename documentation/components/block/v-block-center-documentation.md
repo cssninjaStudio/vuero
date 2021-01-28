@@ -1,6 +1,8 @@
 ### Centered align
 
-You can adjust the `<V-Block />` component flex alignment using the `center` prop. This will apply the `flex` property `align-items: center;` to the component.
+You can adjust the `<V-Block />` component flex alignment
+using the `center` prop. This will apply the `flex` property
+`align-items: center;` to the component.
 
 <!--code-->
 

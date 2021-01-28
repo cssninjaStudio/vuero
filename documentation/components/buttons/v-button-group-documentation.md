@@ -1,6 +1,8 @@
 ### Button group
 
-You can easily align `<V-Button />` components and group them together by wrapping them inside a `<div class="buttons"><div>` element. You can mix any button styles.
+You can easily align `<V-Button />` components and group them together
+by wrapping them inside a `<div class="buttons"><div>` element.
+You can mix any button styles.
 
 <!--code-->
 

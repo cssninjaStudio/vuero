@@ -1,6 +1,10 @@
 ### V-Tag
 
-Vuero provides a `<V-Tag />` component than can be customized to fit any needs. V-Tags can have multiple colors. Use the `color` prop to change the component color. Available modifiers are `primary`, `info`, `success`, `warning`, `danger`, `orange`, `blue`, `green`, `purple`, `white`, `light` and `solid`.
+Vuero provides a `<V-Tag />` component than can be customized to fit any needs.
+V-Tags can have multiple colors. Use the `color` prop to change
+the component color. Available modifiers are `primary`, `info`,
+`success`, `warning`, `danger`, `orange`, `blue`, `green`, `purple`,
+`white`, `light` and `solid`.
 
 <!--code-->
 

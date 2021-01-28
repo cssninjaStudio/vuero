@@ -1,10 +1,14 @@
 ### Image accordion
 
-A nice experimental and playful CSS only image accordion component: `<V-AccordionImage />`. Images simply stack on mobile. Pass an **Array** to the `items` props to render the accordion. Check markup for more details about usage.
+A nice experimental and playful CSS only image
+accordion component: `<V-AccordionImage />`.
+Images simply stack on mobile.
+Pass an **Array** to the `items` props to render the accordion.
+Check markup for more details about usage.
 
 <!--code-->
 
-```vue {2-4}
+```vue
 <script setup lang="ts">
 import { accordionImagesData } from '/@src/composition/state/documentation/components/accordion'
 </script>

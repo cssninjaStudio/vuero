@@ -2,9 +2,8 @@
 import { useHead } from '@vueuse/head'
 import { ref } from 'vue'
 
-import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
-
-const activeTab = ref<'all' | 'team'>('all')
+type TabId = 'all' | 'team'
+const activeTab = ref<TabId>('all')
 
 useHead({
   title: 'Grid Users 3 - WebApp - Vuero',

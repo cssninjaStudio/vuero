@@ -1,6 +1,8 @@
 ### V-Action
 
-Vuero provides a versatile small button component named `<V-Action />` components can have different colors. V-Actions can be `rounded`, `hoverable` or `grey` using the related props.
+Vuero provides a versatile small button component named
+`<V-Action />` components can have different colors.
+V-Actions can be `rounded`, `hoverable` or `grey` using the related props.
 
 <!--code-->
 

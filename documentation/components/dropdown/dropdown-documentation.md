@@ -1,6 +1,9 @@
 ### V-Dropdown
 
-You can use a `<V-Dropdown />` component to display a menu that will hold your options. pass the `right` prop to the component to align it to the right instead of left, which is the default. Use the `up` prop to make it a dropup.
+You can use a `<V-Dropdown />` component to display a menu that
+will hold your options. pass the `right` prop to the component to align
+it to the right instead of left, which is the default.
+Use the `up` prop to make it a dropup.
 
 <!--code-->
 

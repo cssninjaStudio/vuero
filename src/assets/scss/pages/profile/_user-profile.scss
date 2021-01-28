@@ -12,13 +12,15 @@
 1. User Profile View
 ========================================================================== */
 
+.is-webapp {
+  .profile-wrapper {
+    margin-top: 30px;
+  }
+}
+
 .profile-wrapper {
   max-width: 1040px;
   margin: 0 auto;
-
-  &.is-webapp {
-    margin-top: 30px;
-  }
 
   .profile-header {
     text-align: center;
@@ -708,12 +710,14 @@
 3. User Profile Edit
 ========================================================================== */
 
-.account-wrapper {
-  padding-bottom: 60px;
-
-  &.is-webapp {
+.is-webapp {
+  .account-wrapper {
     margin-top: 30px;
   }
+}
+
+.account-wrapper {
+  padding-bottom: 60px;
 
   .account-box {
     @include vuero-s-card();

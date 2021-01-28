@@ -1,6 +1,10 @@
 ### Tooltip Shapes
 
-Vuero tooltips can have different shapes, based oon what you need in your design. Available shape classes are: `hint--rounded` and `hint--bubble`. Note that the bubble tooltip has uppercase set by default ans doesn't have a tooltip arrow.
+Vuero tooltips can have different shapes,
+based on what you need in your design.
+Available shape classes are: `hint--rounded` and `hint--bubble`.
+Note that the bubble tooltip has uppercase set by default
+and doesn't have a tooltip arrow.
 
 <!--code-->
 

@@ -1,10 +1,12 @@
 ### Select rounded
 
-The Vuero select can have rounded edges. Like other controls, simply add the is-rounded class to the select wrapper element. Please refer to the code example for more details about usage.
+The Vuero select can have rounded edges. Like other controls,
+simply add the is-rounded class to the select wrapper element.
+Please refer to the code example for more details about usage.
 
 <!--code-->
 
-```vue {4,11}
+```vue
 <script setup lang="ts">
 import { ref } from 'vue'
 

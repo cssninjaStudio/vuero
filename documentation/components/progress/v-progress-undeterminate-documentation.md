@@ -1,6 +1,8 @@
 ### Undeterminate progress
 
-In some particular use cases, you might want to show an undetermined progress. If you want your progress bars to show an undetermined state, you just need to omit the `value` prop. The CSS will take care of the rest.
+In some particular use cases, you might want to show an undetermined progress.
+If you want your progress bars to show an undetermined state,
+you just need to omit the `value` prop. The CSS will take care of the rest.
 
 <!--code-->
 

@@ -1,6 +1,8 @@
 ### Tags rounded
 
-Vuero tags can have rounded edges. Use the `is-rounded` modifier class on a tag element to apply a rounded style. See the code examples for more details about usage.
+Vuero tags can have rounded edges. Use the `is-rounded` modifier class on a
+tag element to apply a rounded style.
+See the code examples for more details about usage.
 
 <!--code-->
 

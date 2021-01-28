@@ -33,12 +33,7 @@ useHead({
         </div>
         <div class="column is-4 is-relative">
           <RouterLink :to="{ name: 'index' }" class="top-logo">
-            <img class="light-image" src="/images/logos/logo/logo.svg" alt="" />
-            <img
-              class="dark-image"
-              src="/images/logos/logo/logo-light.svg"
-              alt=""
-            />
+            <AnimatedLogo width="38px" height="38px" />
           </RouterLink>
           <label class="dark-mode ml-auto">
             <input

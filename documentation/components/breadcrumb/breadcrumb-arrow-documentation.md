@@ -1,10 +1,12 @@
 ### Arrow Separator
 
-Breadcrumb items can be separated by alternative separators. To display arrow breadcrumb separators, set the `separator` prop to `arrow`. See markup for more details.
+Breadcrumb items can be separated by alternative separators.
+To display arrow breadcrumb separators,
+set the `separator` prop to `arrow`. See markup for more details.
 
 <!--code-->
 
-```vue {2-4}
+```vue
 <script setup lang="ts">
 import { breadcrumbData } from '/@src/composition/state/documentation/components/breadcrumb'
 </script>

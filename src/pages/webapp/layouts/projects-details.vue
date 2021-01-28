@@ -1,9 +1,5 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
-import { ref } from 'vue'
-
-import { activePanel } from '/@src/composition/state/ui/activePanelState'
-import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
 
 useHead({
   title: 'Projects Project - WebApp - Vuero',
@@ -20,7 +16,7 @@ useHead({
       <Toolbar />
     </div>
 
-    <ProjectViewV1 class="page-content-inner is-webapp" />
+    <ProjectsViewV1 class="page-content-inner is-webapp" />
     <!-- <TaskPanel /> -->
   </div>
 </template>

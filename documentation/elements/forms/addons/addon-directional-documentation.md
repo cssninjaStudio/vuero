@@ -1,10 +1,12 @@
 ### Bi-Directional
 
-Inputs can have addons on both sides. You can even attach a select element to your `<V-Control />` component. Please refer to the code example for more details about usage.
+Inputs can have addons on both sides. You can even attach a select element
+to your `<V-Control />` component. Please refer to the code example
+for more details about usage.
 
 <!--code-->
 
-```vue {2,3,10}
+```vue
 <template>
   <V-Field addons>
     <V-Control>

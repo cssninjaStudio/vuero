@@ -4,7 +4,10 @@ disable_example: true
 
 ### Basic Card
 
-Vuero cards are very versatile and can be used in any type of layout. Vuero provides 3 main Html cards with the following classes: `.s-card`, `.r-card` and `.l-card`. The main difference each one of those is the border radius, giving a unique look and feel to each one of them.
+Vuero cards are very versatile and can be used in any type of layout.
+Vuero provides 3 main Html cards with the following classes: `.s-card`,
+`.r-card` and `.l-card`. The main difference each one of those is
+the border radius, giving a unique look and feel to each one of them.
 
 <!--code-->
 

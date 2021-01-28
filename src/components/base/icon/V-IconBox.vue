@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { defineProps } from 'vue'
 
-const props = defineProps({
+defineProps({
   size: {
     type: String,
     default: '',
@@ -25,10 +25,10 @@ const props = defineProps({
   <div
     class="v-icon"
     :class="[
-      props.size && 'is-' + props.size,
-      props.color && 'is-' + props.color,
-      props.rounded && 'is-rounded',
-      props.bordered && 'is-bordered',
+      size && 'is-' + size,
+      color && 'is-' + color,
+      rounded && 'is-rounded',
+      bordered && 'is-bordered',
     ]"
   >
     <slot></slot>

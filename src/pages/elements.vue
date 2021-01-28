@@ -2,6 +2,10 @@
 import { onMounted } from 'vue'
 
 import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
+import {
+  adminLayout,
+  adminLayoutId,
+} from '/@src/composition/state/ui/adminLayoutState'
 
 onMounted(() => {
   activeSidebar.value = 'elements'
@@ -9,7 +13,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <DefaultLayout>
+  <component :is="adminLayout" :class="[adminLayoutId]">
     <ElementsSidebar />
     <ElementsMobileSubsidebar />
 
@@ -28,5 +32,5 @@ onMounted(() => {
         </div>
       </div>
     </div>
-  </DefaultLayout>
+  </component>
 </template>

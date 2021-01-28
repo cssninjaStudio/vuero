@@ -1,4 +1,4 @@
-import type { UserConfig } from 'vite'
+import { defineConfig } from 'vite'
 import path from 'path'
 import Vue from '@vitejs/plugin-vue'
 import Pages from 'vite-plugin-voie'
@@ -11,7 +11,7 @@ import { VitePWA } from 'vite-plugin-pwa'
 
 const projectRootDir = path.resolve(__dirname)
 
-const config: UserConfig = {
+export default defineConfig({
   alias: [
     {
       find: '/@src/',
@@ -82,6 +82,4 @@ const config: UserConfig = {
       },
     }),
   ],
-}
-
-export default config
+})

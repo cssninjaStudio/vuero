@@ -1,6 +1,9 @@
 ### V-Tag outlined
 
-Vuero provides a `<V-Tag />` component than can be customized to fit any needs. V-Tags can have outlined edges and a transparent background. Use the `outlined` prop to change the component shape.
+Vuero provides a `<V-Tag />` component than can be customized
+to fit any needs. V-Tags can have outlined edges
+and a transparent background.
+Use the `outlined` prop to change the component shape.
 
 <!--code-->
 

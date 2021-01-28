@@ -1,10 +1,12 @@
 ### Modern Dropdown
 
-If you add in some specific markup, `<V-Dropdown />` buttons can be enhanced into modern dropdowns with an animated caret icon. Use the `modern` prop on the component.
+If you add in some specific markup, `<V-Dropdown />` buttons can
+be enhanced into modern dropdowns with an animated caret icon.
+Use the `modern` prop on the component.
 
 <!--code-->
 
-```vue {2}
+```vue
 <template>
   <V-Dropdown title="Modern dropdown" modern>
     <template #content>

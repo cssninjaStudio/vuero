@@ -1,10 +1,13 @@
 ### Media table
 
-Vuero provides a custom table component called `<V-FlexTable />`. It looks like a table but is not an Html5 table. Instead, it uses the flexbox technology and is fully responsive. Check the markup for more details about usage.
+Vuero provides a custom table component called `<V-FlexTable />`.
+It looks like a table but is not an Html5 table.
+Instead, it uses the flexbox technology and is fully responsive.
+Check the markup for more details about usage.
 
 <!--code-->
 
-```vue {2-4}
+```vue
 <script setup lang="ts">
 import { flexRowsMedia } from '/@src/composition/state/documentation/components/table'
 </script>

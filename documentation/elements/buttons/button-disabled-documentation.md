@@ -5,11 +5,12 @@ state:
 
 ### Disabled State
 
-Vuero buttons can be shown in a disabled state. To show a disabled button, add the `disabled` html attribute to the target button element.
+Vuero buttons can be shown in a disabled state. To show a disabled button,
+add the `disabled` html attribute to the target button element.
 
 <!--code-->
 
-```vue {4,13}
+```vue
 <script setup lang="ts">
 import { ref } from 'vue'
 

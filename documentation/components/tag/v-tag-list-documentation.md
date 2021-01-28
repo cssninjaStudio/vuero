@@ -1,6 +1,9 @@
 ### Addon List
 
-`<V-Tag />` components with addons can be organized in a list with optimal spacing. Wrap your components inside a `field is-grouped is-grouped-multiline` Html element. See markup for more details about usage.
+`<V-Tag />` components with addons can be organized in a
+list with optimal spacing. Wrap your components inside a
+`field is-grouped is-grouped-multiline` Html element.
+See markup for more details about usage.
 
 <!--code-->
 

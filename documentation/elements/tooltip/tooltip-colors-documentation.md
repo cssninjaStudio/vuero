@@ -1,6 +1,8 @@
 ### Tooltip Colors
 
-Vuero tooltips can have different colors that can be changed with a simple CSS class. Available color classes are: `hint--light`, `hint--primary`, `hint--info`, `hint--success`, `hint--warning` and `hint--error`.
+Vuero tooltips can have different colors that can be changed with a simple
+CSS class. Available color classes are: `hint--light`, `hint--primary`,
+`hint--info`, `hint--success`, `hint--warning` and `hint--error`.
 
 <!--code-->
 

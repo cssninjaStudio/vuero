@@ -1,10 +1,11 @@
 ### Input Loading
 
-An input can be shown in a loading state. To apply that style, simply add the `loading` prop to the wrapping `<V-Control />` component.
+An input can be shown in a loading state. To apply that style,
+simply add the `loading` prop to the wrapping `<V-Control />` component.
 
 <!--code-->
 
-```vue {0}
+```vue
 <template>
   <V-Field>
     <V-Control loading>

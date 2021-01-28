@@ -1,6 +1,8 @@
 ### Tags light
 
-Vuero tags can have light background colors. Use the `is-light` modifier class on a solid color tag element to apply an light style. See the code examples for more details about usage.
+Vuero tags can have light background colors. Use the `is-light` modifier
+class on a solid color tag element to apply an light style.
+See the code examples for more details about usage.
 
 <!--code-->
 

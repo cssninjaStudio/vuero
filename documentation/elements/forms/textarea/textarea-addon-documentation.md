@@ -1,10 +1,13 @@
 ### Textarea addon
 
-Textareas that are wrapped by a control and a field can have a single bottom addon. You can use it to display a toolbar or any type of user actions. Use the `textaddon` prop on the `<V-Field />` and the second `<V-Control />` component. Please refer to the code example for more details about usage.
+Textareas that are wrapped by a control and a field can have a single
+bottom addon. You can use it to display a toolbar or any type of user actions.
+Use the `textaddon` prop on the `<V-Field />` and the second `<V-Control />`
+component. Please refer to the code example for more details about usage.
 
 <!--code-->
 
-```vue {0}
+```vue
 <template>
   <V-Field textaddon>
     <V-Control>

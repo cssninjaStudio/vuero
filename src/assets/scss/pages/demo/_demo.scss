@@ -515,13 +515,11 @@
   }
 }
 
-body {
-  &.is-dark {
-    .layout-selector {
-      .layout-item {
-        h3 {
-          color: $dark-dark-text;
-        }
+.is-dark {
+  .layout-selector {
+    .layout-item {
+      h3 {
+        color: $dark-dark-text;
       }
     }
   }

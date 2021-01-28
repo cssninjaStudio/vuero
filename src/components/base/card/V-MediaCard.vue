@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { defineProps } from 'vue'
 
-const props = defineProps({
+defineProps({
   avatar: {
     type: String,
     default: 'https://via.placeholder.com/150x150',
@@ -56,7 +56,7 @@ const props = defineProps({
       </V-Block>
     </div>
     <div class="card-inner">
-      <p>{{ props.content }}</p>
+      <p>{{ content }}</p>
     </div>
   </div>
 </template>

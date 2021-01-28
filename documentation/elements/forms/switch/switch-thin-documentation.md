@@ -1,10 +1,14 @@
 ### Thin Switch
 
-Vuero provides nice thin switch checkboxes when you need to display such control in your forms. Vuero switches have several color modififers. Available modifiers are `is-primary`, `is-success`, `is-info`, `is-warning` and `is-danger`. Please refer to the markup for more details about usage.
+Vuero provides nice thin switch checkboxes when you need to display
+such control in your forms. Vuero switches have several color modififers.
+Available modifiers are `is-primary`, `is-success`, `is-info`,
+`is-warning` and `is-danger`.
+Please refer to the markup for more details about usage.
 
 <!--code-->
 
-```vue {0}
+```vue
 <template>
   <V-Field grouped>
     <V-Control>

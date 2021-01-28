@@ -1,6 +1,7 @@
 ### Outlined Button
 
-Vuero Buttons can be outlined. Simply use the same markup that we have for solid buttons and add the `is-outlined` modifier class.
+Vuero Buttons can be outlined. Simply use the same markup that we have
+for solid buttons and add the `is-outlined` modifier class.
 
 <!--code-->
 

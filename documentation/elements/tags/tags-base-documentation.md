@@ -1,6 +1,10 @@
 ### Tags
 
-Vuero provides a tag element than can be customized to fit any needs. Tags can have multiple colors. Available modifier classes are `is-primary`, `is-info`, `is-success`, `is-warning`, `is-danger`, `is-light`, `is-white`, `is-solid`, `is-orange`, `is-blue`, `is-green` and `is-purple`.
+Vuero provides a tag element than can be customized to fit any needs.
+Tags can have multiple colors. Available modifier classes are
+`is-primary`, `is-info`, `is-success`, `is-warning`, `is-danger`,
+`is-light`, `is-white`, `is-solid`, `is-orange`, `is-blue`, `is-green`
+and `is-purple`.
 
 <!--code-->
 

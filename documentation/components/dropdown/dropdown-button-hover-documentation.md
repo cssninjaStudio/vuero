@@ -1,14 +1,21 @@
 ### Hover buttons
 
-Vuero's `<V-Dropdown />` component can also be opened on hover or after any custom event. Please refer to the markup for more details about usage.
+Vuero's `<V-Dropdown />` component can also be opened
+on hover or after any custom event.
+Please refer to the markup for more details about usage.
 
 <!--code-->
 
-```vue {3-7}
+```vue
 <template>
   <V-Dropdown>
     <template #button="{ open, close, toggle, isOpen }">
-      <button class="is-trigger button" @mouseenter="open" @touch="toggle">
+      <button
+        class="is-trigger button"
+        @mouseenter="open"
+        @mouseleave="close"
+        @touch="toggle"
+      >
         <span>Hover me!</span>
         <span class="base-caret">
           <Icon v-if="!isOpen" icon="fa:angle-down" />

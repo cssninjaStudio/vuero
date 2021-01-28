@@ -4,11 +4,13 @@ selected: 'team'
 
 ### Font Awesome
 
-You can easily embed `Font Awesome 5` in your tab elements. The styling is already taken care of, just add the icons you want. Check the markup for more details
+You can easily embed `Font Awesome 5` in your tab elements.
+The styling is already taken care of, just add the icons you want.
+Check the markup for more details
 
 <!--code-->
 
-```vue {15,21,27}
+```vue
 <script setup lang="ts">
 import { ref } from 'vue'
 

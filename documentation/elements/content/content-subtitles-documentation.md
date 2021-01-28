@@ -1,6 +1,8 @@
 ### Subtitles
 
-To create a subtitle, you can add the `subtitle` class to any html element. Subtitle sizes can be controlled with numbered modifiers using the patter `is-*` where `*` represents a number between 4 and 6.
+To create a subtitle, you can add the `subtitle` class to any html element.
+Subtitle sizes can be controlled with numbered modifiers using
+the patter `is-*` where `*` represents a number between 4 and 6.
 
 <!--code-->
 

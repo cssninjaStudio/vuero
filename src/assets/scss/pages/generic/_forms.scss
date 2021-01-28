@@ -12,13 +12,15 @@ Form Layouts
 1. Form Layout
 ========================================================================== */
 
+.is-webapp {
+  .form-layout {
+    margin-top: 30px;
+  }
+}
+
 .form-layout {
   max-width: 740px;
   margin: 0 auto;
-
-  &.is-webapp {
-    margin-top: 30px;
-  }
 
   &.is-split {
     max-width: 840px;

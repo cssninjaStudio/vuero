@@ -1,10 +1,13 @@
 ### Fake squared
 
-When the provided picture URL is null, the avatar component falls back to a fake avatar. Same size mofifiers are available. Use the `initials` prop to pass initials to the component. See the code examples for more details about usage.
+When the provided picture URL is null, the avatar component
+falls back to a fake avatar. Same size mofifiers are available.
+Use the `initials` prop to pass initials to the component.
+See the code examples for more details about usage.
 
 <!--code-->
 
-```vue {2-4}
+```vue
 <template>
   <V-Avatar initials="CT" size="small" squared />
   <V-Avatar initials="CT" squared />

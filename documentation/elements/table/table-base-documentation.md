@@ -4,7 +4,9 @@ disable_example: true
 
 ### Basic Table
 
-Vuero provides a basic Html5 table powered by Bulma. You simply have to add the `.table` class to a html5 table element. You can also add the `.is-hoverable` class to highlight the rows on hover.
+Vuero provides a basic Html5 table powered by Bulma.
+You simply have to add the `.table` class to a html5 table element.
+You can also add the `.is-hoverable` class to highlight the rows on hover.
 
 <!--code-->
 

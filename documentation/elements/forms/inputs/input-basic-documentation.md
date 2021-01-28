@@ -5,11 +5,14 @@ state:
 
 ### Input
 
-Vuero provides elegant form controls with minimum styling. You can use regular Html inputs by adding the `input` class to a html `input` element. Always wrap your inputs inside a `<V-Field />` and a `<V-Control />` to build forms quickly and efficiently.
+Vuero provides elegant form controls with minimum styling.
+You can use regular Html inputs by adding the `input` class
+to a html `input` element. Always wrap your inputs inside a `<V-Field />`
+and a `<V-Control />` to build forms quickly and efficiently.
 
 <!--code-->
 
-```vue {4,11}
+```vue
 <script setup lang="ts">
 import { ref } from 'vue'
 
@@ -19,12 +22,7 @@ const input = ref('')
 <template>
   <V-Field>
     <V-Control>
-      <input
-        type="text"
-        class="input"
-        placeholder="Username"
-        v-model="frontmatter.state.input"
-      />
+      <input v-model="input" type="text" class="input" placeholder="Username" />
     </V-Control>
   </V-Field>
 </template>

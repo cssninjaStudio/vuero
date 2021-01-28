@@ -14,12 +14,9 @@ onMounted(() => {
   activeSidebar.value = 'none'
 })
 
-watch(
-  () => route.path,
-  () => {
-    activeSidebar.value = 'none'
-  }
-)
+watch(route, () => {
+  activeSidebar.value = 'none'
+})
 </script>
 
 <template>

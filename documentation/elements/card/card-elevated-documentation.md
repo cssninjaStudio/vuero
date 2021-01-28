@@ -4,7 +4,9 @@ disable_example: true
 
 ### Elevated Card
 
-Vuero cards can be elevated and show a light box shadow. To display elevated cards, simply add the `is-raised` class to the target card element.
+Vuero cards can be elevated and show a light box shadow.
+To display elevated cards, simply add the `is-raised`
+class to the target card element.
 
 <!--code-->
 

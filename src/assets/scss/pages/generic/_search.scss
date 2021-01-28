@@ -14,11 +14,13 @@ Search UI Elements
 1. Search Results Page
 ========================================================================== */
 
-.search-results-wrapper {
-  &.is-webapp {
+.is-webapp {
+  .search-results-wrapper {
     padding-top: 30px;
   }
+}
 
+.search-results-wrapper {
   .search-results-header {
     display: flex;
     align-items: center;

@@ -4,7 +4,9 @@ disable_example: true
 
 ### Striped Table
 
-Vuero provides a basic Html5 table powered by Bulma. You sinply have to add the table class to a html5 table element. You can also add the is-striped to apply striped styles to the table rows.
+Vuero provides a basic Html5 table powered by Bulma.
+You sinply have to add the table class to a html5 table element.
+You can also add the is-striped to apply striped styles to the table rows.
 
 <!--code-->
 

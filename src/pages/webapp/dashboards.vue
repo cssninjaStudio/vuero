@@ -2,12 +2,6 @@
 import { onMounted, watch, ref } from 'vue'
 import { useRoute } from 'vue-router'
 
-import WebappLayout from '/@src/layouts/WebappLayout.vue'
-import WebappV2Layout from '/@src/layouts/WebappV2Layout.vue'
-import WebappV3Layout from '/@src/layouts/WebappV3Layout.vue'
-import WebappV4Layout from '/@src/layouts/WebappV4Layout.vue'
-import WebappV5Layout from '/@src/layouts/WebappV5Layout.vue'
-
 import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
 import {
   webappLayout,
@@ -20,12 +14,9 @@ onMounted(() => {
   activeSidebar.value = 'none'
 })
 
-watch(
-  () => route.path,
-  () => {
-    activeSidebar.value = 'none'
-  }
-)
+watch(route, () => {
+  activeSidebar.value = 'none'
+})
 </script>
 
 <template>

@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { watch, onMounted, ref, defineProps, defineEmit } from 'vue'
+// import { useRoute } from 'vue-router'
 
 const props = defineProps({
   open: {
@@ -31,8 +32,9 @@ const props = defineProps({
     default: false,
   },
 })
-const emit = defineEmit(['close'])
+defineEmit(['close'])
 
+// const route = useRoute()
 const wasOpen = ref(false)
 
 const checkScroll = () => {
@@ -62,7 +64,7 @@ watch(() => props.open, checkScroll)
       <div class="modal-content">
         <div class="modal-card">
           <header class="modal-card-head">
-            <h3>{{ props.title }}</h3>
+            <h3>{{ title }}</h3>
             <button
               class="v-modal-close ml-auto"
               aria-label="close"

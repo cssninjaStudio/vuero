@@ -2,7 +2,8 @@
 import { ref } from 'vue'
 import { activeSubnav } from '/@src/composition/state/ui/webappNavState'
 
-const activeTab = ref<'components' | 'plugins'>('components')
+type TabId = 'components' | 'plugins'
+const activeTab = ref<TabId>('components')
 </script>
 
 <template>

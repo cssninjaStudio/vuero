@@ -1,6 +1,8 @@
 ### Tags elevated
 
-Vuero tags can be elevated. Use the `is-elevated` modifier class on a solid color tag element to apply an elevated style. See the code examples for more details about usage.
+Vuero tags can be elevated. Use the `is-elevated` modifier class on a
+solid color tag element to apply an elevated style.
+See the code examples for more details about usage.
 
 <!--code-->
 

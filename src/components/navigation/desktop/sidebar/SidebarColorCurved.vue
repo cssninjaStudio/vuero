@@ -2,7 +2,7 @@
   <div class="main-sidebar is-colored is-curved">
     <div class="sidebar-brand">
       <RouterLink :to="{ name: 'index' }">
-        <img src="/images/logos/logo/logo-light.svg" alt="" />
+        <AnimatedLogo light width="38px" height="38px" />
       </RouterLink>
     </div>
     <div class="sidebar-inner">

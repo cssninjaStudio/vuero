@@ -1,10 +1,13 @@
 ### Validation rounded
 
-Vuero offers input validation styles to go with any type of form validation library you could use in your project. It's CSS based only and gives you a lot of freedom. Use the props shown in the code examples to handle validation.
+Vuero offers input validation styles to go with any type of form validation
+library you could use in your project.
+It's CSS based only and gives you a lot of freedom.
+Use the props shown in the code examples to handle validation.
 
 <!--code-->
 
-```vue {3}
+```vue
 <template>
   <V-Field validation success>
     <V-Control iconed iconify="feather:user" validation success>
