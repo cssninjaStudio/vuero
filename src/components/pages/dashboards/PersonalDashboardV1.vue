@@ -87,7 +87,6 @@ import { profitChartOptions } from '/@src/composition/state/charts/apexcharts/ex
         <div class="column is-6">
           <div class="dashboard-card">
             <apexchart
-              id="customers-chart"
               :height="customersOptions.chart.height"
               :type="customersOptions.chart.type"
               :series="customersOptions.series"
@@ -120,7 +119,6 @@ import { profitChartOptions } from '/@src/composition/state/charts/apexcharts/ex
             </div>
             <div></div>
             <apexchart
-              id="team-gauge"
               :height="teamGaugeOptions.chart.height"
               :type="teamGaugeOptions.chart.type"
               :series="teamGaugeOptions.series"
@@ -133,7 +131,6 @@ import { profitChartOptions } from '/@src/composition/state/charts/apexcharts/ex
         <div class="column is-4">
           <div class="dashboard-card">
             <apexchart
-              id="profit-chart"
               :height="profitChartOptions.chart.height"
               :type="profitChartOptions.chart.type"
               :series="profitChartOptions.series"
