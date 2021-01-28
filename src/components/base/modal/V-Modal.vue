@@ -81,7 +81,6 @@ watch(() => props.open, checkScroll)
           <div
             class="modal-card-foot"
             :class="[
-              actions === '' && '',
               actions === 'center' && 'is-centered',
               actions === 'right' && 'is-end',
             ]"
