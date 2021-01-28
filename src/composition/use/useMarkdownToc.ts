@@ -1,6 +1,13 @@
 import { ref, onMounted, nextTick } from 'vue'
 
-const ANCHOR_PREFIX = '⚝ '
+const HEADER_SELECTORS = [
+  'h1[id]',
+  'h2[id]',
+  'h3[id]',
+  'h4[id]',
+  'h5[id]',
+  'h6[id]',
+]
 
 export type TocItem = {
   id: string
@@ -15,21 +22,14 @@ export default function useMarkdownToc() {
   onMounted(() => {
     nextTick(() => {
       if (markdownContainer.value) {
-        const anchors = markdownContainer.value.querySelectorAll('[id]')
+        const anchors = markdownContainer.value.querySelectorAll(
+          HEADER_SELECTORS.join(', ')
+        )
         anchors.forEach((anchor) => {
-          let title = ''
-
-          if (
-            anchor.textContent /*&&
-            anchor.textContent.startsWith(ANCHOR_PREFIX)*/
-          ) {
-            title = anchor.textContent.replace(ANCHOR_PREFIX, '')
-          }
-
           toc.value.push({
             id: anchor.id,
             level: parseInt(anchor.tagName.replace(/[a-z]+/i, '')),
-            title,
+            title: anchor.textContent || '',
           })
         })
       }

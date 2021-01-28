@@ -1,5 +1,6 @@
 dependencies:
   '@iconify/iconify': 1.0.7
+  '@vueform/multiselect': 1.2.5
   '@vueuse/core': 4.0.10_vue@3.0.5
   '@vueuse/head': 0.2.3_vue@3.0.5
   apexcharts: 3.23.1
@@ -1965,6 +1966,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-FN5h4GsIcYAIfFbal0+1ryddDgpxMx/gxGE5QYinbwj5PwILZzyAUt//drQfppIHzCL+TJuZSml7fAod5tYvQA==
+  /@vueform/multiselect/1.2.5:
+    dev: false
+    resolution:
+      integrity: sha512-KOW1XQb0TWfBH70Pl5ZdffbSidyOVz9RgYVpndX237P0lfJ7JTCIhMy9h3dmecBr/yTPPFVapC/hTlwmrlaDsg==
   /@vueuse/core/4.0.10_vue@3.0.5:
     dependencies:
       '@vueuse/shared': 4.0.10_vue@3.0.5
@@ -7633,6 +7638,7 @@ specifiers:
   '@vue/server-renderer': 3.0.5
   '@vuedx/typecheck': 0.6.3
   '@vuedx/typescript-plugin-vue': 0.6.3
+  '@vueform/multiselect': ^1.2.5
   '@vueuse/core': 4.0.10
   '@vueuse/head': ^0.2.3
   apexcharts: ^3.23.1
