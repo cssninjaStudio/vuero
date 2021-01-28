@@ -1,10 +1,12 @@
 ### End Addon
 
-Inputs can have addons if you need to show contextual information. You can attach an addon at the end of a `<V-Field />` with the `addons` prop. See markup for more details about usage.
+Inputs can have addons if you need to show contextual information.
+You can attach an addon at the end of a `<V-Field />` with the `addons` prop.
+See markup for more details about usage.
 
 <!--code-->
 
-```vue {2,3,10}
+```vue
 <template>
   <V-Field addons>
     <V-Control expanded>

@@ -1,10 +1,13 @@
 ### Focus Colors
 
-An input can have different border colors when focused. Simply add the appropriate color modifier class. Available classes are `is-primary-focus`, `is-success-focus`, `is-info-focus`, `is-warning-focus`, `is-danger-focus`.
+An input can have different border colors when focused.
+Simply add the appropriate color modifier class.
+Available classes are `is-primary-focus`, `is-success-focus`,
+`is-info-focus`, `is-warning-focus`, `is-danger-focus`.
 
 <!--code-->
 
-```vue {3}
+```vue
 <template>
   <V-Field>
     <V-Control>

@@ -279,18 +279,16 @@ $curve: cubic-bezier(0.65, 0, 0.45, 1);
   }
 }
 
-body {
-  &.is-dark {
-    .animated-checkbox {
-      .checkmark-wrap {
-        .checkmark-circle,
-        .checkmark-check {
-          color: $accent;
-        }
+.is-dark {
+  .animated-checkbox {
+    .checkmark-wrap {
+      .checkmark-circle,
+      .checkmark-check {
+        color: $accent;
+      }
 
-        .shadow-circle {
-          border-color: lighten($dark-sidebar, 20%);
-        }
+      .shadow-circle {
+        border-color: lighten($dark-sidebar, 20%);
       }
     }
   }

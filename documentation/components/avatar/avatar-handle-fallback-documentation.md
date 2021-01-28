@@ -1,10 +1,11 @@
 ### Fallback avatar
 
-Vuero Avatars automatically fall back to a placeholder when no valid URL is provided for the `picture` prop.
+Vuero Avatars automatically fall back to a placeholder
+when no valid URL is provided for the `picture` prop.
 
 <!--code-->
 
-```vue {7-9}
+```vue
 <template>
   <V-Avatar picture="no-file.jpg" size="small" />
   <V-Avatar picture="no-file.jpg" />

@@ -5,11 +5,13 @@ state:
 
 ### Slider Tabs 3x
 
-Vuero provides special navigation tabs that you can use to build nice looking and optimized layouts. Tabs work with a javascript implementation. Check the markup for more details. These tabs only support 3 items.
+Vuero provides special navigation tabs that you can use to build nice looking
+and optimized layouts. Tabs work with a javascript implementation.
+Check the markup for more details. These tabs only support 3 items.
 
 <!--code-->
 
-```vue {4,13-21,28-29,40-41,52-53}
+```vue
 <script setup lang="ts">
 import { ref } from 'vue'
 

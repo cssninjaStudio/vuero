@@ -44,11 +44,6 @@ watch(
             src="/images/logos/logo/logo-light.svg"
             alt=""
           />
-          <img
-            class="dark-image"
-            src="/images/logos/logo/logo-light.svg"
-            alt=""
-          />
         </RouterLink>
         <div class="separator"></div>
         <ProjectsQuickDropdown />

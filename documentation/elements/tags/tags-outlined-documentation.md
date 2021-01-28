@@ -1,6 +1,8 @@
 ### Tags outlined
 
-Vuero tags can be outlined and have transparent backgrounds. Use the `is-outlined` modifier class on a tag element to apply an outlined style. See the code examples for more details about usage.
+Vuero tags can be outlined and have transparent backgrounds.
+Use the `is-outlined` modifier class on a tag element to apply an
+outlined style. See the code examples for more details about usage.
 
 <!--code-->
 

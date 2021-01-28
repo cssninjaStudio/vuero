@@ -1,10 +1,13 @@
 ### Checkbox solid
 
-Vuero provides default styled checkboxes in 2 main styles, `outlined` and `solid`. Those checkboxes also support all main colors. The available modifiers are `is-primary`, `is-success`, `is-info`, `is-warning`, `is-danger`.
+Vuero provides default styled checkboxes in 2 main styles,
+`outlined` and `solid`. Those checkboxes also support all main colors.
+The available modifiers are `is-primary`, `is-success`, `is-info`,
+`is-warning`, `is-danger`.
 
 <!--code-->
 
-```vue {0}
+```vue
 <template>
   <V-Field>
     <V-Control>

@@ -1,10 +1,12 @@
 ### Small stack
 
-Huro avatars can be stacked in an slighlty overlaping line. Use the `<V-AvatarStack />` component. The component takes 2 props: `avatars` and `size`. Available sizes are normal, `small` and `medium`.
+Huro avatars can be stacked in an slighlty overlaping line.
+Use the `<V-AvatarStack />` component. The component takes 2 props:
+`avatars` and `size`. Available sizes are normal, `small` and `medium`.
 
 <!--code-->
 
-```vue {2-4}
+```vue
 <script setup lang="ts">
 const users = [
   {

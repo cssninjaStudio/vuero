@@ -1530,14 +1530,12 @@
     }
   }
 
-  body {
-    &.is-dark {
-      .lifestyle-dashboard {
-        &.lifestyle-dashboard-v3 {
-          .health-tile {
-            background: lighten($dark-sidebar, 6%);
-            border-color: lighten($dark-sidebar, 12%);
-          }
+  .is-dark {
+    .lifestyle-dashboard {
+      &.lifestyle-dashboard-v3 {
+        .health-tile {
+          background: lighten($dark-sidebar, 6%);
+          border-color: lighten($dark-sidebar, 12%);
         }
       }
     }

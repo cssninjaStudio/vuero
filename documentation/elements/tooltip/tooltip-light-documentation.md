@@ -1,6 +1,9 @@
 ### Light Tooltip
 
-Vuero offers a very simple versatile and CSS only tooltip. The example below is the light version. Reference default tooltips to learn more about placement options. To use the light tooltip, add the `hint--light` class.
+Vuero offers a very simple versatile and CSS only tooltip.
+The example below is the light version. Reference default tooltips to
+learn more about placement options.
+To use the light tooltip, add the `hint--light` class.
 
 <!--code-->
 

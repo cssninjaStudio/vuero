@@ -11,7 +11,7 @@ useHead({
     <div class="signup-nav">
       <div class="signup-nav-inner">
         <RouterLink :to="{ name: 'index' }" class="logo">
-          <img src="/images/logos/logo/logo.svg" alt="" />
+          <AnimatedLogo width="36px" height="36px" />
         </RouterLink>
       </div>
     </div>

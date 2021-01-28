@@ -1,10 +1,12 @@
 ### Loading select
 
-huro selects can be shown in a loading state. To apply that style, simply add the is-loading class to the select wrapping element. Please refer to the code example for more details about usage.
+huro selects can be shown in a loading state. To apply that style,
+simply add the is-loading class to the select wrapping element.
+Please refer to the code example for more details about usage.
 
 <!--code-->
 
-```vue {3}
+```vue
 <template>
   <V-Field>
     <V-Control loading>

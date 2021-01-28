@@ -1,6 +1,9 @@
 ### Multiselect
 
-Vuero is integrated with `Notyf`, a dead simple vanilla javascript toasting library. You can check the plugin documentation on <a href="https://github.com/caroso1222/notyf" target="_blank">Github</a>. The success toast is one the 2 notyf default toasts.
+Vuero is integrated with `Notyf`, a dead simple vanilla
+javascript toasting library. You can check the plugin documentation on
+<a href="https://github.com/caroso1222/notyf" target="_blank">Github</a>.
+The success toast is one the 2 notyf default toasts.
 
 <!--code-->
 

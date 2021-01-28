@@ -1,6 +1,9 @@
 ### V-Button Colors
 
-`<V-Button />` components can have different colors. Use the `color` prop on the component to change its color. Available color values are `primary`, `info`, `success`, `warning`, `danger`, `light` and `white`.
+`<V-Button />` components can have different colors.
+Use the `color` prop on the component to change its color.
+Available color values are `primary`, `info`, `success`, `warning`,
+`danger`, `light` and `white`.
 
 <!--code-->
 

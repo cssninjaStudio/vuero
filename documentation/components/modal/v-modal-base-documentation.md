@@ -1,10 +1,13 @@
 ### V-Modal
 
-Vuero ships with a dead simple and versatile `<V-Modal />` component. The V-Modal component has 2 available `slots`: one for the `content`, so you can put anything you want inside, and one for the primary `action`. Check the code example for more details.
+Vuero ships with a dead simple and versatile `<V-Modal />` component.
+The V-Modal component has 2 available `slots`: one for the `content`,
+so you can put anything you want inside, and one for the primary `action`.
+Check the code example for more details.
 
 <!--code-->
 
-```vue {2-4}
+```vue
 <script setup lang="ts">
 import { ref } from 'vue'
 const centeredActionsOpen = ref(false)

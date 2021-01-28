@@ -13,9 +13,11 @@ useHead({
       <!--Status header-->
       <div class="head">
         <RouterLink :to="{ name: 'index' }" class="logo">
-          <img src="/images/logos/logo/logo.svg" alt="" />
+          <AnimatedLogo width="38px" height="38px" />
         </RouterLink>
-        <a class="action-link" onclick="goBack()">Take me Back</a>
+        <RouterLink class="action-link" :to="{ name: 'admin-layouts' }"
+          >Take me Back</RouterLink
+        >
       </div>
 
       <!--Status body-->

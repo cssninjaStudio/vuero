@@ -24,16 +24,8 @@
         <!-- Column -->
         <div class="column is-4">
           <div class="p-t-10 p-b-10">
-            <img
-              class="small-footer-logo light-image-l"
-              src="/images/logos/logo/logo.svg"
-              alt=""
-            />
-            <img
-              class="small-footer-logo dark-image-l"
-              src="/images/logos/logo/logo-light.svg"
-              alt=""
-            />
+            <AnimatedLogo width="36px" height="36px" />
+
             <div class="footer-description p-t-10 p-b-10">
               Vuero is built for developers and designers. It's modular approach
               lets you create awesome webapps with incredible layouts and

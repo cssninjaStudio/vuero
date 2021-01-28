@@ -1,6 +1,8 @@
 ### V-Tag curved
 
-Vuero provides a `<V-Tag />` component than can be customized to fit any needs. V-Tags can have curved edges. Use the `curved` prop to change the component shape.
+Vuero provides a `<V-Tag />` component than can be customized to fit any needs.
+V-Tags can have curved edges.
+Use the `curved` prop to change the component shape.
 
 <!--code-->
 

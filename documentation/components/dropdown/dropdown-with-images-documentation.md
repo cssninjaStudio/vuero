@@ -1,10 +1,13 @@
 ### Menu with Images
 
-`<V-Dropdown />` menus items can have images and more original layout. Use the `spaced` prop with the provided markup in the code example. The inner images can be be made rounded by adding the `is-rounded` class to the image element.
+`<V-Dropdown />` menus items can have images and more original layout.
+Use the `spaced` prop with the provided markup in the code example.
+The inner images can be be made rounded by adding
+the `is-rounded` class to the image element.
 
 <!--code-->
 
-```vue {2,4-14}
+```vue
 <template>
   <V-Dropdown title="Dropdown with image" spaced>
     <template #content>

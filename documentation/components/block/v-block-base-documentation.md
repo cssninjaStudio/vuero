@@ -1,6 +1,8 @@
 ### V-Block
 
-Vuero provides a versatile flex block media component named `<V-Block />`. V-Block has 2 named slots. One for the `icon` element, which can be whatever you want, and one for the `action`.
+Vuero provides a versatile flex block media component named `<V-Block />`.
+V-Block has 2 named slots. One for the `icon` element, which can
+be whatever you want, and one for the `action`.
 
 <!--code-->
 

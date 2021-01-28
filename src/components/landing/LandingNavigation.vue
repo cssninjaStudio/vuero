@@ -33,12 +33,7 @@ watch(
     <div class="navbar-brand">
       <RouterLink :to="{ name: 'index' }" class="navbar-item">
         <div class="brand-icon">
-          <img class="light-image-l" src="/images/logos/logo/logo.svg" alt="" />
-          <img
-            class="dark-image-l"
-            src="/images/logos/logo/logo-light.svg"
-            alt=""
-          />
+          <AnimatedLogo width="34px" height="34px" />
         </div>
       </RouterLink>
 

@@ -1,6 +1,8 @@
 ### Elevation
 
-`<V-Button />` components can be elevated using box shadows. Use the `raised` prop to show a box shadow on hover or use the `elevated` prop to set a permanent box shadow.
+`<V-Button />` components can be elevated using box shadows.
+Use the `raised` prop to show a box shadow on hover or
+use the `elevated` prop to set a permanent box shadow.
 
 <!--code-->
 

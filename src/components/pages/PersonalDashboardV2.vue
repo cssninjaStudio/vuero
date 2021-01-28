@@ -754,19 +754,17 @@ const democheck4 = ref(false)
   }
 }
 
-body {
-  &.is-dark {
-    .personal-dashboard-v2 {
-      .dashboard-header,
-      .dashboard-card {
-        @include vuero-card--dark();
-      }
+.is-dark {
+  .personal-dashboard-v2 {
+    .dashboard-header,
+    .dashboard-card {
+      @include vuero-card--dark();
+    }
 
-      .home-header {
-        .cta {
-          background: lighten($accent, 2%);
-          box-shadow: $accent-box-shadow;
-        }
+    .home-header {
+      .cta {
+        background: lighten($accent, 2%);
+        box-shadow: $accent-box-shadow;
       }
     }
   }

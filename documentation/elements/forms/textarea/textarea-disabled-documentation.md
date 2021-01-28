@@ -1,10 +1,12 @@
 ### Disabled
 
-A textarea can be shown in a disabled state. For that, you need to wrap it inside a `<V-Control />` component. Simply add the `disabled` attribute to the target textarea element.
+A textarea can be shown in a disabled state. For that, you need to wrap it
+inside a `<V-Control />` component. Simply add the `disabled` attribute
+to the target textarea element.
 
 <!--code-->
 
-```vue {0}
+```vue
 <template>
   <V-Field>
     <V-Control>

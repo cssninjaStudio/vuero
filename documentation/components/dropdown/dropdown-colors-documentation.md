@@ -1,6 +1,9 @@
 ### Dropdown Colors
 
-You can use all the available color classes on the `<V-Dropdown />` component, like `is-primary` or `is-info` for instance. Refer to the button documentation for full customization options.
+You can use all the available color classes on
+the `<V-Dropdown />` component, like `is-primary`
+or `is-info` for instance.
+Refer to the button documentation for full customization options.
 
 <!--code-->
 

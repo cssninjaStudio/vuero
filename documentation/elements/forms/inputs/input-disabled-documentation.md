@@ -1,10 +1,11 @@
 ### Disabled input
 
-An input can be shown in a disabled state. To apply that style, simply add the `disabled` atribute to the target input element.
+An input can be shown in a disabled state. To apply that style,
+simply add the `disabled` atribute to the target input element.
 
 <!--code-->
 
-```vue {8}
+```vue
 <template>
   <V-Field>
     <V-Control>

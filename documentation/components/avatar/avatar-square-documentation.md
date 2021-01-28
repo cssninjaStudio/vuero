@@ -1,10 +1,12 @@
 ### Squared avatar
 
-Avatars can have a square shape instead of a circle shape by adding the `squared` prop to the avatar component. See code for more details about usage.
+Avatars can have a square shape instead of a circle shape
+by adding the `squared` prop to the avatar component.
+See code for more details about usage.
 
 <!--code-->
 
-```vue {2-4}
+```vue
 <template>
   <V-Avatar picture="/images/avatars/photos/7.jpg" size="small" squared />
   <V-Avatar picture="/images/avatars/photos/8.jpg" squared />

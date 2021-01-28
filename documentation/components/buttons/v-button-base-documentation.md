@@ -5,7 +5,9 @@ state:
 
 ### V-Button
 
-Vuero provides a `<V-Button />` component if you don't want to use the simple Html button. V-Buttons can be made bold and rounded by using the `bold` and `rounded` props on the component.
+Vuero provides a `<V-Button />` component if you don't want to use the
+simple Html button. V-Buttons can be made bold and rounded
+by using the `bold` and `rounded` props on the component.
 
 <!--code-->
 

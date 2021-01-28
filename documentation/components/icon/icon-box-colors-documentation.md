@@ -1,10 +1,13 @@
 ### Box colors
 
-The Vuero `<V-IconBox />` component can have different colors. You can change the color by passing a value to the `color` prop. Available values are: `primary`, `info`, `success`, `warning`, `danger`, `purple`, `yellow`, `orange`, `green`, `red`, or `blue`.
+The Vuero `<V-IconBox />` component can have different colors.
+You can change the color by passing a value to the `color` prop.
+Available values are: `primary`, `info`, `success`, `warning`,
+`danger`, `purple`, `yellow`, `orange`, `green`, `red`, or `blue`.
 
 <!--code-->
 
-```vue {2-4}
+```vue
 <template>
   <V-IconBox size="medium" color="primary">
     <i class="lnil lnil-vector-pen"></i>
@@ -38,7 +41,7 @@ The Vuero `<V-IconBox />` component can have different colors. You can change th
   </V-IconBox>
   <V-IconBox size="medium" color="blue">
     <i class="lnil lnil-vector-pen"></i>
-  <V-IconBox>
+  </V-IconBox>
 </template>
 ```
 

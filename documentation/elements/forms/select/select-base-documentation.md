@@ -1,10 +1,12 @@
 ### Select
 
-Vuero provides default styles for the native Html select element. There's an additional wrapper for the styles to apply properly. Please refer to the code example for more details about usage.
+Vuero provides default styles for the native Html select element.
+There's an additional wrapper for the styles to apply properly.
+Please refer to the code example for more details about usage.
 
 <!--code-->
 
-```vue {4,11}
+```vue
 <script setup lang="ts">
 import { ref } from 'vue'
 

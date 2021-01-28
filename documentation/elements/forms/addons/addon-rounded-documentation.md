@@ -1,10 +1,12 @@
 ### Rounded addons
 
-Since input addons are button elements, usual modifier classes apply to them. You can use the `is-rounded` on both the input and the button inside the addon element to create a rounded field with addons.
+Since input addons are button elements, usual modifier classes apply to them.
+You can use the `is-rounded` on both the input and the button inside the addon
+element to create a rounded field with addons.
 
 <!--code-->
 
-```vue {2,3,10}
+```vue
 <template>
   <V-Field addons>
     <V-Control expanded>

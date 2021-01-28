@@ -1,10 +1,11 @@
 ### Button Group
 
-You can easily align buttons and group them together by wrapping them inside a `buttons` element. You can mix any button styles.
+You can easily align buttons and group them together
+by wrapping them inside a `buttons` element. You can mix any button styles.
 
 <!--code-->
 
-```vue {2,26}
+```vue
 <template>
   <div class="buttons">
     <!-- button 1 -->

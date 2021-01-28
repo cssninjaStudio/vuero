@@ -1,10 +1,14 @@
 ### Iconify
 
-Vuero buttons work well with Iconify which includes **over 40,000 icons** from popular fonts and emoji sets. You can also create square and circle buttons with a single icon. You can browse all the available [icons here](https://icones.netlify.app/). Please refer to the markup for detailed examples.
+Vuero buttons work well with Iconify which includes **over 40,000 icons**
+from popular fonts and emoji sets.
+You can also create square and circle buttons with a single icon.
+You can browse all the available [icons here](https://icones.netlify.app/).
+Please refer to the markup for detailed examples.
 
 <!--code-->
 
-```vue {4-7}
+```vue
 <template>
   <div class="buttons">
     <button class="button v-button is-primary is-elevated">

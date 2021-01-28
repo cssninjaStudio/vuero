@@ -70,8 +70,8 @@
   }
 }
 
-.flex-list-wrapper {
-  &.is-webapp {
+.is-webapp {
+  .flex-list-wrapper {
     margin: 0 auto;
 
     &.flex-list-v1 {

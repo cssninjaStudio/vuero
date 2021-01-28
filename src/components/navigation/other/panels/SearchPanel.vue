@@ -12,7 +12,7 @@ import { activePanel } from '/@src/composition/state/ui/activePanelState'
 
     <div class="right-panel">
       <div class="right-panel-head">
-        <img class="light-image" src="/images/logos/logo/logo.svg" alt="" />
+        <AnimatedLogo width="38px" height="38px" />
         <img
           class="dark-image"
           src="/images/logos/logo/logo-light.svg"

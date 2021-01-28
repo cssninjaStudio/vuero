@@ -4,11 +4,15 @@ selected: 'team'
 
 ### Squared Slider Tabs 2x
 
-Vuero provides special navigation tabs that you can use to build nice looking and optimized layouts. Add the `is-squared` class to the `tabs-wrapper` element to make the tabs squared. Tabs work with a javascript implementation. Check the markup for more details. These tabs only support 3 items.
+Vuero provides special navigation tabs that you can use to build nice
+looking and optimized layouts. Add the `is-squared` class to
+the `tabs-wrapper` element to make the tabs squared.
+Tabs work with a javascript implementation. Check the markup for more details.
+These tabs only support 3 items.
 
 <!--code-->
 
-```vue {9}
+```vue
 <script setup lang="ts">
 import { ref } from 'vue'
 

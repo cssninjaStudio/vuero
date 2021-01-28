@@ -17,14 +17,16 @@
 1. List View Toolbar
 ========================================================================== */
 
+.is-webapp {
+  .list-view-toolbar {
+    padding-top: 30px;
+  }
+}
+
 .list-view-toolbar {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
-
-  &.is-webapp {
-    padding-top: 30px;
-  }
 
   &.is-reversed {
     flex-direction: row-reverse;

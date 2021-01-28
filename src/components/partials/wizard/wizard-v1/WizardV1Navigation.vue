@@ -40,7 +40,7 @@ const setStep = (target: number) => {
 <template>
   <nav class="wizard-navigation">
     <RouterLink :to="{ name: 'index' }" class="wizard-brand">
-      <img class="light-image" src="/images/logos/logo/logo.svg" alt="" />
+      <AnimatedLogo width="38px" height="38px" />
       <img class="dark-image" src="/images/logos/logo/logo-light.svg" alt="" />
     </RouterLink>
 

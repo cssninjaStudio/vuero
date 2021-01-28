@@ -1,10 +1,13 @@
 ### Horizontal dividers
 
-Huro provides dividers for your textual content. You can use horizontal and vertical dividers by passing the divider text as a `data-content` html attribute. See the code example for more details about usage.
+Huro provides dividers for your textual content.
+You can use horizontal and vertical dividers by passing
+the divider text as a `data-content` html attribute.
+See the code example for more details about usage.
 
 <!--code-->
 
-```vue {10,27}
+```vue
 <template>
   <div class="columns">
     <div class="column is-5">

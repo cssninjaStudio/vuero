@@ -1,10 +1,12 @@
 ### Modal Sizes
 
-The `<V-Modal />` component can have different sizes. use the size `true` prop to change the modal size. Available sizes are: `small`, default,, `medium`, `large` and `big`.
+The `<V-Modal />` component can have different sizes. use the size `true`
+prop to change the modal size. Available sizes are: `small`, default,
+`medium`, `large` and `big`.
 
 <!--code-->
 
-```vue {2-4}
+```vue
 <script setup lang="ts">
 import { ref } from 'vue'
 const centeredActionsOpen = ref(false)

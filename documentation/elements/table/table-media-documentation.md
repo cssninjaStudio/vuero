@@ -4,7 +4,9 @@ disable_example: true
 
 ### Media Table
 
-Vuero provides a basic Html5 table powered by Bulma. You sinply have to add the table class to a html5 table element. You can easily add media elements like the huro avatars inside your table rows.
+Vuero provides a basic Html5 table powered by Bulma.
+You sinply have to add the table class to a html5 table element.
+You can easily add media elements like the huro avatars inside your table rows.
 
 <!--code-->
 

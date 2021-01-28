@@ -1,12 +1,15 @@
 ### Responsive mobile
 
-`<V-Block />` can be made responsive for the mobile viewport by adding the `mResponsive` prop to the component. When set to responsive mode, the flex block elements stack to fit in the available space. Resize your screen to see it in action.
+`<V-Block />` can be made responsive for the mobile viewport by
+adding the `mResponsive` prop to the component.
+When set to responsive mode, the flex block elements stack
+to fit in the available space. Resize your screen to see it in action.
 
 <!--code-->
 
 ```vue
 <template>
-  <V-Block title="Anna B." subtitle="UX Designer" center mResponsive>
+  <V-Block title="Anna B." subtitle="UX Designer" center m-responsive>
     <template #icon>
       <V-Avatar
         size="medium"

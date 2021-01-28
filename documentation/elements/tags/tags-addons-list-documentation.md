@@ -1,6 +1,8 @@
 ### Addons list
 
-Vuero tag addons can be organized in an inline tag list. You can use it to build a custom tag input for example. See the code examples for more details about usage.
+Vuero tag addons can be organized in an inline tag list.
+You can use it to build a custom tag input for example.
+See the code examples for more details about usage.
 
 <!--code-->
 

@@ -1,10 +1,14 @@
 ### V-FlexTable Compact
 
-Vuero provides a custom table component called `<V-FlexTable />`. It looks like a table but is not an Html5 table. Instead, it uses the flexbox technology and is fully responsive. Make the table compact by using the `compact` prop. Check the markup for more details about usage.
+Vuero provides a custom table component called `<V-FlexTable />`.
+It looks like a table but is not an Html5 table.
+Instead, it uses the flexbox technology and is fully responsive.
+Make the table compact by using the `compact` prop.
+Check the markup for more details about usage.
 
 <!--code-->
 
-```vue {2-4}
+```vue
 <script setup lang="ts">
 import { flexRowsBasic } from '/@src/composition/state/documentation/components/table'
 </script>

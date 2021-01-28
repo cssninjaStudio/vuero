@@ -1,6 +1,10 @@
 ### Default Tooltip
 
-Vuero offers a very simple versatile and CSS only tooltip. The example below is the default and basic version. There are 6 default positions: `hint--top-left`, `hint--top`, `hint--top-right`, `hint--bottom-left`, `hint--bottom`, `hint--bottom-right`. The tooltip text is controlled via the `data-hint` attribute.
+Vuero offers a very simple versatile and CSS only tooltip.
+The example below is the default and basic version.
+There are 6 default positions: `hint--top-left`, `hint--top`,
+`hint--top-right`, `hint--bottom-left`, `hint--bottom`, `hint--bottom-right`.
+The tooltip text is controlled via the `data-hint` attribute.
 
 <!--code-->
 

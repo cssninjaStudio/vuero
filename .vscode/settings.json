@@ -12,6 +12,7 @@
   "eslint.validate": [
     "javascript",
     "javascriptreact",
+    "markdown",
     "vue"
   ],
   "[vue]": {
@@ -21,7 +22,9 @@
     "editor.formatOnSave": false
   },
   "[markdown]": {
-    "editor.formatOnSave": false,
+    "editor.formatOnSave": true,
+    "editor.rulers": [ 80 ]
+    // "vetur.validation.template": true,
   },
   "vetur.format.enable": true,
   "vetur.validation.template": false,

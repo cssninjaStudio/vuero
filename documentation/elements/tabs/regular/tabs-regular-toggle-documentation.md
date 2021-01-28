@@ -4,11 +4,13 @@ selected: 'team'
 
 ### Toggle Tabs
 
-Tabs can be displayed in an old school boxed layout. To display boxed tabs, use the `is-toggle` class on the main `tabs` element. check the markup for more details.
+Tabs can be displayed in an old school boxed layout.
+To display boxed tabs, use the `is-toggle` class on the main `tabs` element.
+Check the markup for more details.
 
 <!--code-->
 
-```vue {11}
+```vue
 <script setup lang="ts">
 import { ref } from 'vue'
 

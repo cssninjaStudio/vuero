@@ -1026,11 +1026,13 @@ const props = defineProps({
 1. Project Details
 ========================================================================== */
 
-.project-details {
-  &.is-webapp {
+.is-webapp {
+  .project-details {
     padding-top: 30px;
   }
+}
 
+.project-details {
   .tabs-wrapper {
     .tabs-inner {
       .tabs {

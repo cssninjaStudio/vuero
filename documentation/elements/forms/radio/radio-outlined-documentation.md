@@ -1,10 +1,13 @@
 ### Radios outline
 
-Vuero provides default styled radio buttons in 2 main styles, `outlined` and `solid`. Those radio buttons also support all main colors. The available modifiers are `is-primary`, `is-success`, `is-info`, `is-warning`, `is-danger`.
+Vuero provides default styled radio buttons in 2 main styles,
+`outlined` and `solid`. Those radio buttons also support all main colors.
+The available modifiers are `is-primary`, `is-success`,
+`is-info`, `is-warning`, `is-danger`.
 
 <!--code-->
 
-```vue {0}
+```vue
 <template>
   <V-Field>
     <V-Control>

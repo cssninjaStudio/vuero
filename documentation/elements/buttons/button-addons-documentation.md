@@ -1,10 +1,12 @@
 ### Addons
 
-Vuero buttons can be grouped together in an addon styled block of buttons. This makes creating conmplex interfaces much more easier. Refer to markup for a detailed example.
+Vuero buttons can be grouped together in an addon styled block of buttons.
+This makes creating conmplex interfaces much more easier.
+Refer to markup for a detailed example.
 
 <!--code-->
 
-```vue {2,32}
+```vue
 <template>
   <div class="field has-addons">
     <!-- button 1 -->

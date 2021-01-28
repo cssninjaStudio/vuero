@@ -10,13 +10,16 @@
     "build:clean": "rimraf dist",
     "build:vite": "vite build",
     "lint": "run-s lint:js lint:style lint:prettier",
-    "lint:fix": "run-s lint:js:fix lint:style:fix lint:prettier:fix",
+    "lint:fix": "run-s lint:js:fix lint:style:fix lint:prettier:fix lint:doc:fix",
     "lint:prettier": "prettier --check \"./src/**/*.(js|ts|vue|css|scss|graphql|gql)\"",
     "lint:prettier:fix": "prettier --write \"./src/**/*.(js|ts|vue|css|scss|graphql|gql)\"",
     "lint:js": "eslint --ext .ts,.vue ./src",
     "lint:js:fix": "eslint --fix --ext .ts,.vue ./src",
     "lint:style": "stylelint ./src/**/*.{vue,css,scss}",
     "lint:style:fix": "stylelint ./src/**/*.{vue,css,scss} --fix",
+    "lint:doc:fix": "run-s lint:doc:*",
+    "lint:doc:lint": "eslint --fix --ext .md ./documentation",
+    "lint:doc:prettier": "prettier --write \"./documentation/**/*.(md)\"",
     "test:e2e": "cypress",
     "precommit": "run-s precommit:*",
     "precommit:lint-staged": "lint-staged"
@@ -61,6 +64,7 @@
     "cypress": "6.3.0",
     "eslint": "7.18.0",
     "eslint-config-prettier": "7.2.0",
+    "eslint-plugin-md": "^1.0.19",
     "eslint-plugin-prettier-vue": "3.0.0-alpha.2",
     "eslint-plugin-vue": "7.5.0",
     "gray-matter": "4.0.2",
@@ -100,6 +104,7 @@
       "prettier --write"
     ],
     "*.md": [
+      "eslint --fix",
       "prettier --write"
     ],
     "*.vue": [

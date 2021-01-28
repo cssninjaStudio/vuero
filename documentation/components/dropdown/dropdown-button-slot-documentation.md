@@ -1,10 +1,14 @@
 ### Context Menu
 
-Vuero's `<V-Dropdown />` component can also be displayed as a context menu holding a single icon. The icon can be whatever you want. This dropdown has the specific `dots` prop set. Please refer to the markup for more details about usage.
+Vuero's `<V-Dropdown />` component can also be displayed
+as a context menu holding a single icon.
+The icon can be whatever you want.
+This dropdown has the specific `dots` prop set.
+Please refer to the markup for more details about usage.
 
 <!--code-->
 
-```vue {3-7}
+```vue
 <template>
   <V-Dropdown dots>
     <template #button="{ open }">

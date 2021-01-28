@@ -1,6 +1,10 @@
 ### Feather icons
 
-`<V-Button />` components work well with Font Awesome Icons. Add an icon name inside the `fa` prop to set a Font Awesome icon. You can also create square and circle buttons with a single icon using the `<V-IconButton />` and `<V-IconButtonLink />` components. Please refer to markup for detailed examples.
+`<V-Button />` components work well with Font Awesome Icons.
+Add an icon name inside the `fa` prop to set a Font Awesome icon.
+You can also create square and circle buttons with a single icon
+using the `<V-IconButton />` and `<V-IconButtonLink />` components.
+Please refer to markup for detailed examples.
 
 <!--code-->
 

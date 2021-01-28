@@ -1,10 +1,12 @@
 ### Fake badge
 
-When the provided picture URL is null, the avatar component falls back to a fake avatar. Fake avatars can also have badges. See the code examples for more details about usage.
+When the provided picture URL is null, the avatar component
+falls back to a fake avatar. Fake avatars can also have badges.
+See the code examples for more details about usage.
 
 <!--code-->
 
-```vue {2-4}
+```vue
 <template>
   <V-Avatar
     initials="CT"

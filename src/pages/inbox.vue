@@ -36,16 +36,7 @@ useHead({
           <div class="header-area">
             <div class="inbox-title">
               <RouterLink :to="{ name: 'index' }" class="inbox-brand">
-                <img
-                  class="light-image"
-                  src="/images/logos/logo/logo.svg"
-                  alt=""
-                />
-                <img
-                  class="dark-image"
-                  src="/images/logos/logo/logo-light.svg"
-                  alt=""
-                />
+                <AnimatedLogo width="36px" height="36px" />
               </RouterLink>
               <span>Inbox</span>
 

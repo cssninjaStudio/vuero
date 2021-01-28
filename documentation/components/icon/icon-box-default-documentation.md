@@ -1,10 +1,13 @@
 ### V-IconBox
 
-The Vuero `<V-IconBox />` component let you display icons in a fancy and colored way. Box sizes can be controled with the `size` prop. Available sizes are `small`, `medium`, `large`, `big` and `xl`. See code for more details about usage.
+The Vuero `<V-IconBox />` component let you display icons
+in a fancy and colored way. Box sizes can be controled with
+the `size` prop. Available sizes are `small`, `medium`, `large`,
+`big` and `xl`. See code for more details about usage.
 
 <!--code-->
 
-```vue {2-4}
+```vue
 <template>
   <V-IconBox size="small">
     <i class="lnil lnil-vector-pen"></i>

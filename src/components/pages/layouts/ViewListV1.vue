@@ -24,7 +24,10 @@ const data = [
       replies: 97,
       posts: 16,
     },
-    teams: ['/images/avatars/photos/9.jpg', '/images/avatars/photos/8.jpg'],
+    teams: [
+      { picture: '/images/avatars/photos/9.jpg' },
+      { picture: '/images/avatars/photos/8.jpg' },
+    ],
   },
   {
     id: '34',
@@ -42,9 +45,9 @@ const data = [
       posts: 5,
     },
     teams: [
-      '/images/avatars/photos/12.jpg',
-      '/images/avatars/photos/22.jpg',
-      '/images/avatars/photos/40.jpg',
+      { picture: '/images/avatars/photos/12.jpg' },
+      { picture: '/images/avatars/photos/22.jpg' },
+      { picture: '/images/avatars/photos/40.jpg' },
     ],
   },
   {
@@ -62,7 +65,10 @@ const data = [
       replies: 97,
       posts: 16,
     },
-    teams: ['/images/avatars/photos/7.jpg', '/images/avatars/photos/23.jpg'],
+    teams: [
+      { picture: '/images/avatars/photos/7.jpg' },
+      { picture: '/images/avatars/photos/23.jpg' },
+    ],
   },
   {
     id: '40',
@@ -80,14 +86,14 @@ const data = [
       posts: 8,
     },
     teams: [
-      '/images/avatars/photos/18.jpg',
-      '/images/avatars/photos/13.jpg',
-      '/images/avatars/photos/8.jpg',
-      '/images/avatars/photos/8.jpg',
-      '/images/avatars/photos/8.jpg',
-      '/images/avatars/photos/8.jpg',
-      '/images/avatars/photos/8.jpg',
-      '/images/avatars/photos/8.jpg',
+      { picture: '/images/avatars/photos/18.jpg' },
+      { picture: '/images/avatars/photos/13.jpg' },
+      { picture: '/images/avatars/photos/8.jpg' },
+      { picture: '/images/avatars/photos/8.jpg' },
+      { picture: '/images/avatars/photos/8.jpg' },
+      { picture: '/images/avatars/photos/8.jpg' },
+      { picture: '/images/avatars/photos/8.jpg' },
+      { picture: '/images/avatars/photos/8.jpg' },
     ],
   },
   {
@@ -105,7 +111,7 @@ const data = [
       replies: 158,
       posts: 54,
     },
-    teams: ['/images/avatars/photos/18.jpg'],
+    teams: [{ picture: '/images/avatars/photos/18.jpg' }],
   },
   {
     id: '9',
@@ -122,7 +128,10 @@ const data = [
       replies: 28,
       posts: 12,
     },
-    teams: ['/images/avatars/photos/8.jpg', '/images/avatars/photos/5.jpg'],
+    teams: [
+      { picture: '/images/avatars/photos/8.jpg' },
+      { picture: '/images/avatars/photos/5.jpg' },
+    ],
   },
   {
     id: '18',
@@ -140,16 +149,16 @@ const data = [
       posts: 16,
     },
     teams: [
-      '/images/avatars/photos/27.jpg',
-      '/images/avatars/photos/16.jpg',
-      '/images/avatars/photos/29.jpg',
-      '/images/avatars/photos/5.jpg',
-      '/images/avatars/photos/5.jpg',
-      '/images/avatars/photos/5.jpg',
-      '/images/avatars/photos/5.jpg',
-      '/images/avatars/photos/5.jpg',
-      '/images/avatars/photos/5.jpg',
-      '/images/avatars/photos/5.jpg',
+      { picture: '/images/avatars/photos/27.jpg' },
+      { picture: '/images/avatars/photos/16.jpg' },
+      { picture: '/images/avatars/photos/29.jpg' },
+      { picture: '/images/avatars/photos/5.jpg' },
+      { picture: '/images/avatars/photos/5.jpg' },
+      { picture: '/images/avatars/photos/5.jpg' },
+      { picture: '/images/avatars/photos/5.jpg' },
+      { picture: '/images/avatars/photos/5.jpg' },
+      { picture: '/images/avatars/photos/5.jpg' },
+      { picture: '/images/avatars/photos/5.jpg' },
     ],
   },
   {
@@ -167,7 +176,10 @@ const data = [
       replies: 15,
       posts: 2,
     },
-    teams: ['/images/avatars/photos/32.jpg', '/images/avatars/photos/22.jpg'],
+    teams: [
+      { picture: '/images/avatars/photos/32.jpg' },
+      { picture: '/images/avatars/photos/22.jpg' },
+    ],
   },
   {
     id: '25',
@@ -185,11 +197,11 @@ const data = [
       posts: 4,
     },
     teams: [
-      '/images/avatars/photos/26.jpg',
-      '/images/avatars/photos/38.jpg',
-      '/images/avatars/photos/21.jpg',
-      '/images/avatars/photos/5.jpg',
-      '/images/avatars/photos/5.jpg',
+      { picture: '/images/avatars/photos/26.jpg' },
+      { picture: '/images/avatars/photos/38.jpg' },
+      { picture: '/images/avatars/photos/21.jpg' },
+      { picture: '/images/avatars/photos/5.jpg' },
+      { picture: '/images/avatars/photos/5.jpg' },
     ],
   },
   {
@@ -207,7 +219,10 @@ const data = [
       replies: 82,
       posts: 14,
     },
-    teams: ['/images/avatars/photos/9.jpg', '/images/avatars/photos/8.jpg'],
+    teams: [
+      { picture: '/images/avatars/photos/9.jpg' },
+      { picture: '/images/avatars/photos/8.jpg' },
+    ],
   },
 ]
 
@@ -229,17 +244,14 @@ const filteredData = computed(() => {
 
 <template>
   <div>
-    <div class="list-view-toolbar" :class="[webapp && 'is-webapp']">
-      <div class="control has-icon">
+    <div class="list-view-toolbar">
+      <V-Control iconed iconify="feather:search">
         <input
           v-model="filters"
           class="input custom-text-filter"
           placeholder="Search..."
         />
-        <div class="form-icon">
-          <i class="iconify" data-icon="feather:search"></i>
-        </div>
-      </div>
+      </V-Control>
 
       <div class="list-info">
         <span v-if="filteredData.length === 1">1 record found</span>
@@ -256,7 +268,7 @@ const filteredData = computed(() => {
       </div>
     </div>
 
-    <div class="page-content-inner" :class="[webapp && 'is-webapp']">
+    <div class="page-content-inner">
       <!--List-->
       <div class="list-view list-view-v1">
         <!--List Empty Search Placeholder -->
@@ -293,33 +305,26 @@ const filteredData = computed(() => {
               class="list-view-item"
             >
               <div class="list-view-item-inner">
-                <div class="v-avatar is-large">
-                  <img
-                    class="avatar"
-                    :src="item.medias.avatar"
-                    alt=""
-                    data-user-popover="9"
-                    @error="
-                      $event.target.src = 'https://via.placeholder.com/150x150'
-                    "
-                  />
-                  <img class="badge" :src="item.medias.flag" alt="" />
-                </div>
+                <V-Avatar
+                  :picture="item.medias.avatar"
+                  size="large"
+                  :badge="item.medias.flag"
+                />
                 <div class="meta-left">
-                  <h3 data-filter-match>{{ item.name }}</h3>
+                  <h3>{{ item.name }}</h3>
                   <span>
                     <i class="iconify" data-icon="feather:map-pin"></i>
-                    <span data-filter-match>{{ item.location }}</span>
+                    <span>{{ item.location }}</span>
                   </span>
                 </div>
                 <div class="meta-right">
                   <div class="tags">
-                    <span
-                      class="tag is-rounded is-elevated"
-                      :class="[`is-${item.roleColor}`]"
-                      data-filter-match
-                      >{{ item.role }}</span
-                    >
+                    <V-Tag
+                      :label="item.role"
+                      :color="item.roleColor"
+                      rounded
+                      elevated
+                    />
                   </div>
 
                   <div class="stats">
@@ -340,34 +345,11 @@ const filteredData = computed(() => {
                   </div>
 
                   <div class="network">
-                    <div class="avatar-stack">
-                      <div
-                        v-for="team in item.teams.slice(0, 3)"
-                        :key="team"
-                        class="v-avatar is-small"
-                      >
-                        <img
-                          class="avatar"
-                          :src="team"
-                          alt=""
-                          data-user-popover="1"
-                          @error="
-                            $event.target.src =
-                              'https://via.placeholder.com/150x150'
-                          "
-                        />
-                      </div>
-                      <div
-                        v-if="item.teams.length > 3"
-                        class="v-avatar is-small"
-                      >
-                        <span class="avatar is-more">
-                          <span class="inner">
-                            <span>+{{ item.teams.length - 3 }}</span>
-                          </span>
-                        </span>
-                      </div>
-                    </div>
+                    <V-AvatarStack
+                      :avatars="item.teams"
+                      :limit="3"
+                      size="small"
+                    />
                     <span>in Team</span>
                   </div>
 
@@ -386,7 +368,7 @@ const filteredData = computed(() => {
 </template>
 
 <style lang="scss">
-@import '../../assets/scss/abstracts/_variables.scss';
-@import '../../assets/scss/abstracts/_mixins.scss';
-@import '../../assets/scss/pages/lists/_list-view.scss';
+@import '../../../assets/scss/abstracts/_variables.scss';
+@import '../../../assets/scss/abstracts/_mixins.scss';
+@import '../../../assets/scss/pages/lists/_list-view.scss';
 </style>

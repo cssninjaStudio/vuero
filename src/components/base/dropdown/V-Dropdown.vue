@@ -400,149 +400,147 @@ const { dropdownElement, open, close, toggle, isOpen } = useDropdown()
   }
 }
 
-body {
-  &.is-dark {
-    .toolbar-link {
-      &:hover {
-        background: lighten($dark-sidebar, 2%) !important;
-      }
-
-      svg {
-        color: $dark-dark-text;
-      }
+.is-dark {
+  .toolbar-link {
+    &:hover {
+      background: lighten($dark-sidebar, 2%) !important;
     }
 
-    .dropdown {
-      &.is-spaced,
-      &.is-dots {
-        &:hover,
-        &.is-active {
-          .is-trigger {
-            background: lighten($dark-sidebar, 2%) !important;
+    svg {
+      color: $dark-dark-text;
+    }
+  }
 
-            svg {
-              color: $dark-dark-text;
-            }
-          }
-        }
+  .dropdown {
+    &.is-spaced,
+    &.is-dots {
+      &:hover,
+      &.is-active {
+        .is-trigger {
+          background: lighten($dark-sidebar, 2%) !important;
 
-        .dropdown-menu {
-          .dropdown-content {
-            background: $dark-sidebar !important;
-            border-color: lighten($dark-sidebar, 8%) !important;
-
-            .heading {
-              border-color: lighten($dark-sidebar, 8%) !important;
-
-              &:hover,
-              *:hover {
-                background: $dark-sidebar !important;
-              }
-
-              .heading-right {
-                .notification-link {
-                  color: $accent !important;
-                }
-              }
-            }
-
-            .notification-list {
-              li {
-                .notification-item {
-                  &:hover,
-                  *:hover {
-                    background: $dark-sidebar !important;
-                  }
-
-                  .user-content {
-                    .user-info {
-                      color: $dark-dark-text !important;
-                    }
-                  }
-                }
-              }
-            }
-
-            .is-media {
-              &:hover {
-                .icon {
-                  svg {
-                    color: $accent !important;
-                  }
-
-                  .lnir,
-                  .lnil {
-                    color: $accent;
-                  }
-                }
-              }
-
-              .icon {
-                svg {
-                  color: $light-text;
-                }
-
-                .lnir,
-                .lnil {
-                  color: $light-text;
-                }
-              }
-
-              .meta {
-                span {
-                  &:first-child {
-                    color: $dark-dark-text;
-                  }
-                }
-              }
-            }
+          svg {
+            color: $dark-dark-text;
           }
         }
       }
 
       .dropdown-menu {
         .dropdown-content {
-          background: $dark-sidebar;
+          background: $dark-sidebar !important;
           border-color: lighten($dark-sidebar, 8%) !important;
 
-          .dropdown-item {
-            font-family: $font;
-            color: $light-text;
+          .heading {
+            border-color: lighten($dark-sidebar, 8%) !important;
 
-            &.is-active {
-              background: lighten($dark-sidebar, 2%) !important;
-              //color: $white !important;
+            &:hover,
+            *:hover {
+              background: $dark-sidebar !important;
+            }
+
+            .heading-right {
+              .notification-link {
+                color: $accent !important;
+              }
             }
           }
 
-          .dropdown-divider {
-            background: lighten($dark-sidebar, 5%);
+          .notification-list {
+            li {
+              .notification-item {
+                &:hover,
+                *:hover {
+                  background: $dark-sidebar !important;
+                }
+
+                .user-content {
+                  .user-info {
+                    color: $dark-dark-text !important;
+                  }
+                }
+              }
+            }
           }
 
-          a:hover {
-            background: lighten($dark-sidebar, 5%) !important;
+          .is-media {
+            &:hover {
+              .icon {
+                svg {
+                  color: $accent !important;
+                }
+
+                .lnir,
+                .lnil {
+                  color: $accent;
+                }
+              }
+            }
+
+            .icon {
+              svg {
+                color: $light-text;
+              }
+
+              .lnir,
+              .lnil {
+                color: $light-text;
+              }
+            }
+
+            .meta {
+              span {
+                &:first-child {
+                  color: $dark-dark-text;
+                }
+              }
+            }
           }
         }
       }
     }
 
-    .child-dropdown {
-      .inner {
-        background: $dark-sidebar !important;
-        border-color: lighten($dark-sidebar, 4%) !important;
+    .dropdown-menu {
+      .dropdown-content {
+        background: $dark-sidebar;
+        border-color: lighten($dark-sidebar, 8%) !important;
 
-        &:hover {
-          background: $dark-sidebar !important;
-          border-color: lighten($dark-sidebar, 4%) !important;
+        .dropdown-item {
+          font-family: $font;
+          color: $light-text;
+
+          &.is-active {
+            background: lighten($dark-sidebar, 2%) !important;
+            //color: $white !important;
+          }
         }
 
-        ul {
-          li {
-            .text {
-              span {
-                &:first-child {
-                  color: $dark-dark-text !important;
-                }
+        .dropdown-divider {
+          background: lighten($dark-sidebar, 5%);
+        }
+
+        a:hover {
+          background: lighten($dark-sidebar, 5%) !important;
+        }
+      }
+    }
+  }
+
+  .child-dropdown {
+    .inner {
+      background: $dark-sidebar !important;
+      border-color: lighten($dark-sidebar, 4%) !important;
+
+      &:hover {
+        background: $dark-sidebar !important;
+        border-color: lighten($dark-sidebar, 4%) !important;
+      }
+
+      ul {
+        li {
+          .text {
+            span {
+              &:first-child {
+                color: $dark-dark-text !important;
               }
             }
           }

@@ -1,6 +1,8 @@
 ### V-Tag rounded
 
-Vuero provides a `<V-Tag />` component than can be customized to fit any needs. V-Tags can have rounded edges. Use the `rounded` prop to change the component shape.
+Vuero provides a `<V-Tag />` component than can be customized
+to fit any needs. V-Tags can have rounded edges.
+Use the `rounded` prop to change the component shape.
 
 <!--code-->
 

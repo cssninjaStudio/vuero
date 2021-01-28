@@ -1,10 +1,12 @@
 ### Addon Color
 
-Since input addons are button elements, usual modifier classes apply to them. You can use the `is-primary`, `is-success`, `is-info`, `is-warning`, `is-danger`.
+Since input addons are button elements, usual modifier classes apply to them.
+You can use the `is-primary`, `is-success`, `is-info`,
+`is-warning`, `is-danger`.
 
 <!--code-->
 
-```vue {2,3,10}
+```vue
 <template>
   <V-Field addons>
     <V-Control expanded>

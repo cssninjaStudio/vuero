@@ -222,12 +222,14 @@ Responsive styles
     }
   }
 
-  .page-title {
-    &.is-webapp {
+  .is-webapp {
+    .page-title {
       display: flex !important;
       margin-top: 0;
     }
+  }
 
+  .page-title {
     &.is-project-details {
       .huro-hamburger {
         margin-left: 7px !important;

@@ -10,12 +10,21 @@ module.exports = {
   extends: [
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:vue/vue3-recommended',
-    'plugin:prettier-vue/recommended',
-    'prettier/vue',
+    'plugin:md/recommended',
   ],
   plugins: ['@typescript-eslint'],
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
   },
+  overrides: [
+    {
+      files: ['*.md'],
+      parser: 'markdown-eslint-parser',
+    },
+    {
+      files: ['*.vue'],
+      extends: ['plugin:prettier-vue/recommended', 'prettier/vue'],
+    },
+  ],
 }

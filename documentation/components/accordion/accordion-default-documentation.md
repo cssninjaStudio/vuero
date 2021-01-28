@@ -1,10 +1,14 @@
 ### Accordion
 
-Vuero provides 2 accordion components with enough styling to be able to use them out of the box: `<V-AccordionSimple />` and `<V-AccordionExclusive />`. In the simple accordion, each item can be openened separately, whereas in the exclusive accordion, only one item can be expanded at a time. Pass an **Array** to the `items` props to render the accordion.
+Vuero provides 2 accordion components with enough styling to be able to use
+them out of the box: `<V-AccordionSimple />` and `<V-AccordionExclusive />`.
+In the simple accordion, each item can be openened separately, whereas in the
+exclusive accordion, only one item can be expanded at a time.
+Pass an **Array** to the `items` props to render the accordion.
 
 <!--code-->
 
-```vue {2-4}
+```vue
 <script setup lang="ts">
 import {
   accordionSimpleData,

@@ -1,10 +1,14 @@
 ### V-Card Advanced
 
-Vuero ships with a `<V-CardAdvanced />` component that features a card header, body, and footer, to display any type of content. Card header and footer have both a left and right `slots` where you can insert your UI elements/components. You can also control the card radius using the `radius` prop.
+Vuero ships with a `<V-CardAdvanced />` component that features a card header,
+body, and footer, to display any type of content.
+Card header and footer have both a left and right `slots` where you
+can insert your UI elements/components. You can also control the card radius
+using the `radius` prop.
 
 <!--code-->
 
-```vue {0}
+```vue
 <template>
   <V-CardAdvanced>
     <template #header-left>

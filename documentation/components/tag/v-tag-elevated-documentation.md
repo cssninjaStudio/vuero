@@ -1,6 +1,8 @@
 ### V-Tag elevated
 
-Vuero provides a `<V-Tag />` component than can be customized to fit any needs. V-Tags can have a permanent box shadow. Use the `elevated` prop to add elevation to the component.
+Vuero provides a `<V-Tag />` component than can be customized to fit any needs.
+V-Tags can have a permanent box shadow.
+Use the `elevated` prop to add elevation to the component.
 
 <!--code-->
 

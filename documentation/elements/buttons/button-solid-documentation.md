@@ -1,6 +1,9 @@
 ### Solid Colors
 
-Vuero buttons can have solid colors. You can use the same classes that are offered by the Bulma Framework. Available color classes are `is-primary`, `is-info`, `is-success`, `is-warning`, `is-danger`, `is-light`, `is-white`.
+Vuero buttons can have solid colors. You can use the same classes
+that are offered by the Bulma Framework. Available color classes are
+`is-primary`, `is-info`, `is-success`, `is-warning`, `is-danger`,
+`is-light`, `is-white`.
 
 <!--code-->
 

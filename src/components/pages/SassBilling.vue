@@ -31,7 +31,7 @@ const cardInfo = reactive({
             >
               <input type="radio" name="plan_selection" />
               <div class="plan-inner">
-                <img src="/images/logos/logo/logo.svg" alt="" />
+                <AnimatedLogo width="36px" height="36px" />
                 <div class="meta">
                   <span>Vuero Starter</span>
                   <span>Plan for starters</span>

@@ -1,10 +1,13 @@
 ### Font Awesome
 
-Vuero buttons work well with Font Awesome Icons. Add an icon element inside the button to handle icons. You can also create square and circle buttons with a single icon. Please refer to markup for detailed examples.
+Vuero buttons work well with Font Awesome Icons.
+Add an icon element inside the button to handle icons.
+You can also create square and circle buttons with a single icon.
+Please refer to markup for detailed examples.
 
 <!--code-->
 
-```vue {4-6}
+```vue
 <template>
   <div class="buttons">
     <button class="button v-button is-primary is-elevated">

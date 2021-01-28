@@ -1,6 +1,8 @@
 ### Tag addons
 
-Vuero tags can be merged into a single one to achieve addon styles. You can attach another tag or a delete button if you need to. See the code example for more details about usage.
+Vuero tags can be merged into a single one to achieve addon styles.
+You can attach another tag or a delete button if you need to.
+See the code example for more details about usage.
 
 <!--code-->
 

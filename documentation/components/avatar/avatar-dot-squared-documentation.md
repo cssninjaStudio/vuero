@@ -1,10 +1,12 @@
 ### Squared dot
 
-Avatars can have a small dot attached to them, if you'd like to show a user status for example. Add the `dot` prop to the target avatar component. See code for more details about usage.
+Avatars can have a small dot attached to them, if you'd like to
+show a user status for example. Add the `dot` prop
+to the target avatar component. See code for more details about usage.
 
 <!--code-->
 
-```vue {2-4}
+```vue
 <template>
   <V-Avatar picture="/images/avatars/photos/7.jpg" size="small" dot squared />
   <V-Avatar picture="/images/avatars/photos/8.jpg" dot squared />
