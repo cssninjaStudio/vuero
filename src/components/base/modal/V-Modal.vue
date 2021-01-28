@@ -32,7 +32,7 @@ const props = defineProps({
     default: false,
   },
 })
-defineEmit(['close'])
+const emit = defineEmit(['close'])
 
 // const route = useRoute()
 const wasOpen = ref(false)
