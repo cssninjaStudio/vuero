@@ -7,7 +7,8 @@ import {
   toggleSidebar,
 } from '/@src/composition/state/ui/activeSidebarState'
 
-const activeTab = ref<'all' | 'saved'>('all')
+type TabId = 'all' | 'saved'
+const activeTab = ref<TabId>('all')
 
 useHead({
   title: 'List View 3 - Admin - Vuero',

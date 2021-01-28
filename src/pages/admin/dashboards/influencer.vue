@@ -7,7 +7,8 @@ import {
   toggleSidebar,
 } from '/@src/composition/state/ui/activeSidebarState'
 
-const activeTab = ref<'overview' | 'content' | 'brands'>('overview')
+type TabId = 'overview' | 'content' | 'brands'
+const activeTab = ref<TabId>('overview')
 
 useHead({
   title: 'Dashboard Lifestyle 1 - Admin - Vuero',

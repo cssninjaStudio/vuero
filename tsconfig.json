@@ -7,9 +7,6 @@
     "types": ["node", "vite/client"],
     "strict": true,
     "sourceMap": true,
-    "strictNullChecks": true,
-    "esModuleInterop": true,
-    "incremental": true,
     "skipLibCheck": true,
     "moduleResolution": "Node",
     "resolveJsonModule": true,
@@ -17,12 +14,12 @@
     "plugins": [{ "name": "@vuedx/typescript-plugin-vue" }],
     "paths": {
       "/@src/*": ["src/*"],
-    }
+    },
   },
   "exclude": [
     "**/dist",
     "**/node_modules",
     "**/cypress",
     "**/test"
-  ]
+  ],
 }

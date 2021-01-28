@@ -14,6 +14,12 @@
 1. Lifestyle Dashboard V1
 ========================================================================== */
 
+.is-webapp {
+  .lifestyle-dashboard-bg {
+    height: 406px;
+  }
+}
+
 .lifestyle-dashboard-bg {
   position: absolute;
   top: 0;
@@ -22,10 +28,6 @@
   height: 355px;
   background: $white;
   z-index: 1;
-
-  &.is-webapp {
-    height: 406px;
-  }
 }
 
 .lifestyle-dashboard {

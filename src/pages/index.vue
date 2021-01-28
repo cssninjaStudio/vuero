@@ -4,9 +4,8 @@ import { useHead } from '@vueuse/head'
 
 import { isDark } from '/@src/composition/state/ui/darkModeState.ts'
 
-const activeTab = ref<'elements' | 'components' | 'forms' | 'plugins'>(
-  'elements'
-)
+type TabId = 'elements' | 'components' | 'forms' | 'plugins'
+const activeTab = ref<TabId>('elements')
 
 useHead({
   title: 'Vuero - A complete Vue 3 design system',

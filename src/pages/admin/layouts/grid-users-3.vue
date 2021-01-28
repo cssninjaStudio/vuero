@@ -7,7 +7,8 @@ import {
   toggleSidebar,
 } from '/@src/composition/state/ui/activeSidebarState'
 
-const activeTab = ref<'all' | 'team'>('all')
+type TabId = 'all' | 'team'
+const activeTab = ref<TabId>('all')
 
 useHead({
   title: 'Grid Users 3 - Admin - Vuero',

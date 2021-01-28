@@ -2,9 +2,8 @@
 import { useHead } from '@vueuse/head'
 import { ref } from 'vue'
 
-import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
-
-const activeTab = ref<'overview' | 'content' | 'brands'>('overview')
+type TabId = 'overview' | 'content' | 'brands'
+const activeTab = ref<TabId>('overview')
 
 useHead({
   title: 'Dashboards Lifestyle 1 - WebApp - Vuero',

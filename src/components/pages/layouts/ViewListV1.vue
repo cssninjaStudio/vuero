@@ -1,13 +1,6 @@
 <script setup lang="ts">
 import { computed, ref, defineProps } from 'vue'
 
-const props = defineProps({
-  webapp: {
-    type: Boolean,
-    default: false,
-  },
-})
-
 const data = [
   {
     id: '5',

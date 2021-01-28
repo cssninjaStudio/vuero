@@ -89,15 +89,15 @@ router.afterEach(() => {
 
 .is-light {
   .right {
-    fill: red;
+    fill: #fff;
     animation: none;
   }
   .bottom {
-    fill: green;
+    fill: #fffc;
     animation: none;
   }
   .left {
-    fill: blue;
+    fill: #fffa;
     animation: none;
   }
 }

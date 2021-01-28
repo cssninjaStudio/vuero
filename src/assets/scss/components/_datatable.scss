@@ -14,14 +14,16 @@
 1. Datatable Toolbar
 ========================================================================== */
 
+.is-webapp {
+  .datatable-toolbar {
+    padding-top: 30px;
+  }
+}
+
 .datatable-toolbar {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
-
-  &.is-webapp {
-    padding-top: 30px;
-  }
 
   &.is-reversed {
     flex-direction: row-reverse;

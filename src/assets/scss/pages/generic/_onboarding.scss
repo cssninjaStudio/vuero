@@ -14,12 +14,14 @@ Onboarding Layouts
 1. Standard Onboarding
 ========================================================================== */
 
-.standard-onboarding {
-  padding: 20px 0;
-
-  &.is-webapp {
+.is-webapp {
+  .standard-onboarding {
     margin-top: 20px;
   }
+}
+
+.standard-onboarding {
+  padding: 20px 0;
 
   .title-wrap {
     text-align: center;
