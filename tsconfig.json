@@ -2,14 +2,16 @@
   "compilerOptions": {
     "baseUrl": ".",
     "module": "ESNext",
-    "target": "ESNext",
+    "target": "ES2016",
     "lib": ["DOM", "ESNext"],
-    "types": ["node"],
+    "types": ["node", "vite/client"],
     "strict": true,
+    "strictNullChecks": true,
     "esModuleInterop": true,
     "incremental": true,
+    "noUnusedLocals": true,
     "skipLibCheck": true,
-    "moduleResolution": "node",
+    "moduleResolution": "Node",
     "resolveJsonModule": true,
     "forceConsistentCasingInFileNames": true,
     "plugins": [{ "name": "@vuedx/typescript-plugin-vue" }],
@@ -17,4 +19,10 @@
       "/@src/*": ["src/*"],
     }
   },
+  "exclude": [
+    "**/dist",
+    "**/node_modules",
+    "**/cypress",
+    "**/test"
+  ]
 }
