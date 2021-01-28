@@ -107,31 +107,6 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
         <li>
           <RouterLink :to="{ name: 'elements-table' }">Table</RouterLink>
         </li>
-        <li v-has-children class="has-children">
-          <div class="collapse-wrap">
-            <a href="javascript:void(0);" class="parent-link"
-              >Tabs <i class="iconify" data-icon="feather:chevron-right"
-            /></a>
-          </div>
-          <ul>
-            <li>
-              <RouterLink
-                :to="{ name: 'elements-tabs-regular' }"
-                class="is-submenu"
-                ><i class="iconify" data-icon="feather:circle"></i>Regular
-                Tabs</RouterLink
-              >
-            </li>
-            <li>
-              <RouterLink
-                :to="{ name: 'elements-tabs-slider' }"
-                class="is-submenu"
-                ><i class="iconify" data-icon="feather:circle"></i>Slider
-                Tabs</RouterLink
-              >
-            </li>
-          </ul>
-        </li>
         <li>
           <RouterLink :to="{ name: 'elements-tooltips' }">Tooltips</RouterLink>
         </li>
@@ -173,14 +148,6 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
                 class="is-submenu"
                 ><i class="iconify" data-icon="feather:circle"></i
                 >Selects</RouterLink
-              >
-            </li>
-            <li>
-              <RouterLink
-                :to="{ name: 'elements-forms-custom' }"
-                class="is-submenu"
-                ><i class="iconify" data-icon="feather:circle"></i
-                >Custom</RouterLink
               >
             </li>
             <li>

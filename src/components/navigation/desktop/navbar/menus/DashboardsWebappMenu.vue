@@ -56,13 +56,6 @@ const activeTab = ref<'dashboards' | 'templates'>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'webapp-dashboards-influencer' }">
-                      <i class="lnil lnil-cardiology"></i>
-                      <span>Influencer</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
-                    </RouterLink>
-                  </li>
-                  <li>
                     <RouterLink :to="{ name: 'webapp-dashboards-hobbies' }">
                       <i class="lnil lnil-cloud-sun"></i>
                       <span>Hobbies</span>
@@ -135,6 +128,13 @@ const activeTab = ref<'dashboards' | 'templates'>('dashboards')
               <div class="column is-3">
                 <h4 class="column-heading">Business</h4>
                 <ul>
+                  <li>
+                    <RouterLink :to="{ name: 'webapp-dashboards-influencer' }">
+                      <i class="lnil lnil-cardiology"></i>
+                      <span>Influencer</span>
+                      <i class="iconify" data-icon="feather:circle"></i>
+                    </RouterLink>
+                  </li>
                   <li>
                     <RouterLink :to="{ name: 'webapp-dashboards-flights' }">
                       <i class="lnil lnil-plane-alt"></i>

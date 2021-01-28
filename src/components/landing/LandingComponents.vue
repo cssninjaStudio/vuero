@@ -607,29 +607,6 @@ const props = defineProps({
 
       <div class="column is-3">
         <RouterLink
-          :to="{ name: 'elements-forms-custom' }"
-          class="component-box"
-        >
-          <div class="component">
-            <img
-              class="light-image-l"
-              src="/images/icons/components/selects.svg"
-              alt=""
-              loading="lazy"
-            />
-            <img
-              class="dark-image-l"
-              src="/images/icons/components/selects-dark.svg"
-              alt=""
-              loading="lazy"
-            />
-          </div>
-          <div class="component-title">Selects</div>
-        </RouterLink>
-      </div>
-
-      <div class="column is-3">
-        <RouterLink
           :to="{ name: 'elements-forms-selects' }"
           class="component-box"
         >
@@ -647,7 +624,7 @@ const props = defineProps({
               loading="lazy"
             />
           </div>
-          <div class="component-title">Custom</div>
+          <div class="component-title">Selects</div>
         </RouterLink>
       </div>
 
@@ -843,29 +820,6 @@ const props = defineProps({
     <div class="columns is-multiline">
       <div class="column is-3">
         <RouterLink
-          :to="{ name: 'components-plugins-alertify' }"
-          class="component-box"
-        >
-          <div class="component">
-            <img
-              class="light-image-l"
-              src="/images/icons/components/alert.svg"
-              alt=""
-              loading="lazy"
-            />
-            <img
-              class="dark-image-l"
-              src="/images/icons/components/alert-dark.svg"
-              alt=""
-              loading="lazy"
-            />
-          </div>
-          <div class="component-title">Alertify</div>
-        </RouterLink>
-      </div>
-
-      <div class="column is-3">
-        <RouterLink
           :to="{ name: 'components-plugins-autocomplete' }"
           class="component-box"
         >
@@ -907,75 +861,6 @@ const props = defineProps({
             />
           </div>
           <div class="component-title">Datepicker</div>
-        </RouterLink>
-      </div>
-
-      <div class="column is-3">
-        <RouterLink
-          :to="{ name: 'components-plugins-choices' }"
-          class="component-box"
-        >
-          <div class="component">
-            <img
-              class="light-image-l"
-              src="/images/icons/components/tags-inputs.svg"
-              alt=""
-              loading="lazy"
-            />
-            <img
-              class="dark-image-l"
-              src="/images/icons/components/tags-inputs-dark.svg"
-              alt=""
-              loading="lazy"
-            />
-          </div>
-          <div class="component-title">Tags Input</div>
-        </RouterLink>
-      </div>
-
-      <div class="column is-3">
-        <RouterLink
-          :to="{ name: 'components-plugins-nouislider' }"
-          class="component-box"
-        >
-          <div class="component">
-            <img
-              class="light-image-l"
-              src="/images/icons/components/slider.svg"
-              alt=""
-              loading="lazy"
-            />
-            <img
-              class="dark-image-l"
-              src="/images/icons/components/slider-dark.svg"
-              alt=""
-              loading="lazy"
-            />
-          </div>
-          <div class="component-title">Range Slider</div>
-        </RouterLink>
-      </div>
-
-      <div class="column is-3">
-        <RouterLink
-          :to="{ name: 'components-plugins-filepond' }"
-          class="component-box"
-        >
-          <div class="component">
-            <img
-              class="light-image-l"
-              src="/images/icons/components/file-input.svg"
-              alt=""
-              loading="lazy"
-            />
-            <img
-              class="dark-image-l"
-              src="/images/icons/components/file-input-dark.svg"
-              alt=""
-              loading="lazy"
-            />
-          </div>
-          <div class="component-title">Filepond</div>
         </RouterLink>
       </div>
 
@@ -1073,7 +958,7 @@ const props = defineProps({
 
       <div class="column is-3">
         <RouterLink
-          :to="{ name: 'components-plugins-webuipopover' }"
+          :to="{ name: 'components-plugins-popover' }"
           class="component-box"
         >
           <div class="component">
@@ -1091,52 +976,6 @@ const props = defineProps({
             />
           </div>
           <div class="component-title">Popovers</div>
-        </RouterLink>
-      </div>
-
-      <div class="column is-3">
-        <RouterLink
-          :to="{ name: 'components-plugins-editor-summernote' }"
-          class="component-box"
-        >
-          <div class="component">
-            <img
-              class="light-image-l"
-              src="/images/icons/components/summernote.svg"
-              alt=""
-              loading="lazy"
-            />
-            <img
-              class="dark-image-l"
-              src="/images/icons/components/summernote-dark.svg"
-              alt=""
-              loading="lazy"
-            />
-          </div>
-          <div class="component-title">Summernote</div>
-        </RouterLink>
-      </div>
-
-      <div class="column is-3">
-        <RouterLink
-          :to="{ name: 'components-plugins-editor-sun' }"
-          class="component-box"
-        >
-          <div class="component">
-            <img
-              class="light-image-l"
-              src="/images/icons/components/summernote.svg"
-              alt=""
-              loading="lazy"
-            />
-            <img
-              class="dark-image-l"
-              src="/images/icons/components/summernote-dark.svg"
-              alt=""
-              loading="lazy"
-            />
-          </div>
-          <div class="component-title">Sun Editor</div>
         </RouterLink>
       </div>
     </div>

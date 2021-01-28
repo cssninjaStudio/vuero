@@ -333,17 +333,6 @@ const { dropdownElement, isOpen, open } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'elements-forms-custom' }"
-                    class="dropdown-item is-media"
-                  >
-                    <div class="icon">
-                      <i class="lnil lnil-pointer-top"></i>
-                    </div>
-                    <div class="meta">
-                      <span>Custom</span>
-                    </div>
-                  </RouterLink>
-                  <RouterLink
                     :to="{ name: 'elements-forms-file' }"
                     class="dropdown-item is-media"
                   >

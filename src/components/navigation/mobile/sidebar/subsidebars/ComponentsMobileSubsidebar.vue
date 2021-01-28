@@ -149,14 +149,6 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
           <ul>
             <li>
               <RouterLink
-                :to="{ name: 'components-plugins-alertify' }"
-                class="is-submenu"
-                ><i class="iconify" data-icon="feather:circle"></i
-                >Alertify</RouterLink
-              >
-            </li>
-            <li>
-              <RouterLink
                 :to="{ name: 'components-plugins-autocomplete' }"
                 class="is-submenu"
                 ><i class="iconify" data-icon="feather:circle"></i
@@ -169,30 +161,6 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
                 class="is-submenu"
                 ><i class="iconify" data-icon="feather:circle"></i
                 >Datepicker</RouterLink
-              >
-            </li>
-            <li>
-              <RouterLink
-                :to="{ name: 'components-plugins-choices' }"
-                class="is-submenu"
-                ><i class="iconify" data-icon="feather:circle"></i
-                >ChoicesJs</RouterLink
-              >
-            </li>
-            <li>
-              <RouterLink
-                :to="{ name: 'components-plugins-nouislider' }"
-                class="is-submenu"
-                ><i class="iconify" data-icon="feather:circle"></i>NoUI
-                Slider</RouterLink
-              >
-            </li>
-            <li>
-              <RouterLink
-                :to="{ name: 'components-plugins-filepond' }"
-                class="is-submenu"
-                ><i class="iconify" data-icon="feather:circle"></i
-                >Filepond</RouterLink
               >
             </li>
             <li>
@@ -221,6 +189,14 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
             </li>
             <li>
               <RouterLink
+                :to="{ name: 'components-plugins-multiselect' }"
+                class="is-submenu"
+                ><i class="iconify" data-icon="feather:circle"></i
+                >Vue-Multiselect</RouterLink
+              >
+            </li>
+            <li>
+              <RouterLink
                 :to="{ name: 'components-plugins-toasts' }"
                 class="is-submenu"
                 ><i class="iconify" data-icon="feather:circle"></i
@@ -229,35 +205,10 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'components-plugins-webuipopover' }"
+                :to="{ name: 'components-plugins-popover' }"
                 class="is-submenu"
-                ><i class="iconify" data-icon="feather:circle"></i>WebUI
+                ><i class="iconify" data-icon="feather:circle"></i>
                 Popover</RouterLink
-              >
-            </li>
-          </ul>
-        </li>
-        <li v-has-children class="has-children">
-          <div class="collapse-wrap">
-            <a class="parent-link"
-              >Rich Text <i class="iconify" data-icon="feather:chevron-right"
-            /></a>
-          </div>
-          <ul>
-            <li>
-              <RouterLink
-                class="is-submenu"
-                :to="{ name: 'components-plugins-editor-summernote' }"
-                ><i class="iconify" data-icon="feather:circle"></i
-                >Summernote</RouterLink
-              >
-            </li>
-            <li>
-              <RouterLink
-                :to="{ name: 'components-plugins-editor-sun' }"
-                class="is-submenu"
-                ><i class="iconify" data-icon="feather:circle"></i>Sun
-                Editor</RouterLink
               >
             </li>
           </ul>

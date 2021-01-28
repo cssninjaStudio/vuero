@@ -150,14 +150,6 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'elements-forms-custom' }"
-                class="is-submenu"
-                ><i class="iconify" data-icon="feather:circle"></i
-                >Custom</RouterLink
-              >
-            </li>
-            <li>
-              <RouterLink
                 :to="{ name: 'elements-forms-file' }"
                 class="is-submenu"
                 ><i class="iconify" data-icon="feather:circle"></i>File
