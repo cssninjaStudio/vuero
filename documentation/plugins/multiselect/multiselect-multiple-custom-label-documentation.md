@@ -19,7 +19,6 @@ const optionMultipleObject = ref({
 </script>
 
 <template>
-  `
   <V-Field class="demo-field mb-6">
     <V-Control>
       <Multiselect

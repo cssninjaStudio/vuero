@@ -2,7 +2,7 @@
 
 Vuero is integrated with `Vue Multiselect`, a vue 3 select single, multiple and
 tags input library. You can check the plugin documentation on
-<a href="https://github.com/vueform/multiselect" target="_blank">Github</a>.
+[Github](https://github.com/vueform/multiselect).
 You can change the `<Multiselect />` component radius by adding the `is-curved`
 or `is-rounded` class to the parent `<V-Field />` component.
 
