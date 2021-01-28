@@ -11,7 +11,6 @@ import {
 
 const { markdownContainer, toc } = useMakrdownToc()
 
-import Multiselect from '@vueform/multiselect'
 const valueSingle = ref(0)
 const optionsSingle = ref(['Batman', 'Robin', 'Joker'])
 
