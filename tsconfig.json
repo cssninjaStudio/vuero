@@ -9,7 +9,6 @@
     "strictNullChecks": true,
     "esModuleInterop": true,
     "incremental": true,
-    "noUnusedLocals": true,
     "skipLibCheck": true,
     "moduleResolution": "Node",
     "resolveJsonModule": true,

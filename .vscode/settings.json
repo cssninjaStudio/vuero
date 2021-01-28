@@ -3,7 +3,6 @@
   "less.validate": false,
   "scss.validate": false,
   "editor.formatOnSave": false,
-  "vetur.validation.template": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
@@ -24,8 +23,11 @@
   "[markdown]": {
     "editor.formatOnSave": false,
   },
-  "vetur.experimental.templateInterpolationService": false,
+  "vetur.format.enable": true,
+  "vetur.validation.template": false,
   "vetur.validation.interpolation": false,
+  "vetur.validation.templateProps": true,
+  "vetur.experimental.templateInterpolationService": true,
   "vetur.completion.tagCasing": "initial",
   "vetur.completion.autoImport": true,
   "i18n-ally.localesPaths": [

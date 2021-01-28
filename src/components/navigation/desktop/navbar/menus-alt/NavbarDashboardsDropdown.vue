@@ -155,7 +155,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
             <div class="column is-4">
               <div class="dropdown-item-group">
                 <h4 class="column-heading is-info">
-                  <i class="iconify is-vhidden" data-icon="circle"></i>
+                  <i class="iconify is-vhidden" data-icon="feather:circle"></i>
                   <span class="is-vhidden">All Dashboards</span>
                 </h4>
 
@@ -266,7 +266,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
             <div class="column is-4">
               <div class="dropdown-item-group">
                 <h4 class="column-heading is-info">
-                  <i class="iconify is-vhidden" data-icon="circle"></i>
+                  <i class="iconify is-vhidden" data-icon="feather:circle"></i>
                   <span class="is-vhidden">All Dashboards</span>
                 </h4>
 
