@@ -13,9 +13,16 @@
 
   .multiselect-input {
     background: $white;
+    min-height: 38px;
 
     .multiselect-single-label {
       font-size: 0.9rem;
+    }
+
+    .multiselect-placeholder,
+    .multiselect-multiple-label {
+      font-size: 0.9rem;
+      color: $light-text;
     }
   }
 
