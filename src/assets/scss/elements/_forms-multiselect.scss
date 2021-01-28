@@ -8,6 +8,40 @@
 1. Multiselect
 ========================================================================== */
 
+.is-rounded-select {
+  .multiselect {
+    .multiselect-input {
+      border-radius: 500px;
+
+      &::before {
+        right: 20px;
+      }
+    }
+
+    .multiselect-options {
+      border-radius: 0.75rem;
+      margin-top: 0.25rem;
+    }
+  }
+}
+
+.is-curved-select {
+  .multiselect {
+    .multiselect-input {
+      border-radius: 0.5rem;
+
+      &::before {
+        //right: 20px;
+      }
+    }
+
+    .multiselect-options {
+      border-radius: 0.75rem;
+      margin-top: 0.25rem;
+    }
+  }
+}
+
 .multiselect {
   font-family: $font;
 
@@ -42,6 +76,15 @@
     .multiselect-option {
       border-radius: 0.5rem;
       transition: background-color 0.3s;
+
+      &.is-pointed {
+        background: $widget-grey;
+      }
+
+      &.is-selected {
+        background: $primary !important;
+        color: $white !important;
+      }
 
       > span {
         font-size: 0.9rem;

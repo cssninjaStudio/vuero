@@ -1,21 +1,32 @@
 ### Multiselect Object
 
-Vuero is integrated with `Notyf`, a dead simple vanilla javascript toasting library. You can check the plugin documentation on <a href="https://github.com/caroso1222/notyf" target="_blank">Github</a>. The success toast is one the 2 notyf default toasts.
+The `<Multiselect />` component can receive data with his `options` props. You can either pass an `Array` or `Object` to the `options` props. You can also activate the `multiple` mode by setting the `mode` prop to `mode="multiple"`.
 
 <!--code-->
 
 ```vue
 <script setup lang="ts">
-import { Notyf } from 'notyf'
-
-const notyf = new Notyf()
-const successToast = () => {
-  notyf.success('Your changes have been successfully saved!')
-}
+import { ref } from 'vue'
+import Multiselect from '@vueform/multiselect'
+const valueMultipleObject = ref(['robin'])
+const optionMultipleObject = ref({
+  batman: 'Batman',
+  robin: 'Robin',
+  joker: 'Joker',
+})
 </script>
 
 <template>
-  <V-Button bold @click="successToast">Success Toast</V-Button>
+  <V-Field>
+    <V-Control>
+      <Multiselect
+        v-model="valueMultipleObject"
+        mode="multiple"
+        :options="optionMultipleObject"
+        placeholder="Select options"
+      />
+    </V-Control>
+  </V-Field>
 </template>
 ```
 

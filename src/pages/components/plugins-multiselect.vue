@@ -195,49 +195,149 @@ useHead({
           <!--Simple select-->
           <MultiselectBaseDocumentation />
 
-          <V-Field class="demo-field mb-6">
-            <V-Control>
-              <Multiselect
-                v-model="valueSingle"
-                :options="optionsSingle"
-                placeholder="Select an option"
-              />
-            </V-Control>
-          </V-Field>
+          <div class="s-card mb-6">
+            <div class="columns">
+              <div class="column is-4">
+                <V-Field>
+                  <V-Control>
+                    <Multiselect
+                      v-model="valueSingle"
+                      :options="optionsSingle"
+                      placeholder="Select an option"
+                    />
+                  </V-Control>
+                </V-Field>
+              </div>
+              <div class="column is-4">
+                <V-Field class="is-curved-select">
+                  <V-Control>
+                    <Multiselect
+                      v-model="valueSingle"
+                      :options="optionsSingle"
+                      placeholder="Select an option"
+                    />
+                  </V-Control>
+                </V-Field>
+              </div>
+              <div class="column is-4">
+                <V-Field class="is-rounded-select">
+                  <V-Control>
+                    <Multiselect
+                      v-model="valueSingle"
+                      :options="optionsSingle"
+                      placeholder="Select an option"
+                    />
+                  </V-Control>
+                </V-Field>
+              </div>
+            </div>
+          </div>
 
           <!--Multiselect-->
           <MultiselectMultipleObjectDocumentation />
 
-          <V-Field class="demo-field mb-6">
-            <V-Control>
-              <Multiselect
-                v-model="valueMultipleObject"
-                mode="multiple"
-                :options="optionMultipleObject"
-                placeholder="Select options"
-              />
-            </V-Control>
-          </V-Field>
+          <div class="s-card mb-6">
+            <div class="columns">
+              <div class="column is-4">
+                <V-Field>
+                  <V-Control>
+                    <Multiselect
+                      v-model="valueMultipleObject"
+                      mode="multiple"
+                      :options="optionMultipleObject"
+                      placeholder="Select options"
+                    />
+                  </V-Control>
+                </V-Field>
+              </div>
+              <div class="column is-4">
+                <V-Field class="is-curved-select">
+                  <V-Control>
+                    <Multiselect
+                      v-model="valueMultipleObject"
+                      mode="multiple"
+                      :options="optionMultipleObject"
+                      placeholder="Select options"
+                    />
+                  </V-Control>
+                </V-Field>
+              </div>
+              <div class="column is-4">
+                <V-Field class="is-rounded-select">
+                  <V-Control>
+                    <Multiselect
+                      v-model="valueMultipleObject"
+                      mode="multiple"
+                      :options="optionMultipleObject"
+                      placeholder="Select options"
+                    />
+                  </V-Control>
+                </V-Field>
+              </div>
+            </div>
+          </div>
 
           <!--Multiselect custom label-->
           <MultiselectMultipleCustomLabelDocumentation />
 
-          <V-Field class="demo-field mb-6">
-            <V-Control>
-              <Multiselect
-                v-model="valueMultipleObject"
-                mode="multiple"
-                placeholder="Select your characters"
-                :options="optionMultipleObject"
-              >
-                <template #multiplelabel="{ values }">
-                  <div class="multiselect-multiple-label">
-                    {{ values.length }} characters selected
-                  </div>
-                </template>
-              </Multiselect>
-            </V-Control>
-          </V-Field>
+          <div class="s-card mb-6">
+            <div class="columns">
+              <div class="column is-4">
+                <V-Field>
+                  <V-Control>
+                    <Multiselect
+                      v-model="valueMultipleObject"
+                      mode="multiple"
+                      placeholder="Select your characters"
+                      :options="optionMultipleObject"
+                    >
+                      <template #multiplelabel="{ values }">
+                        <div class="multiselect-multiple-label">
+                          {{ values.length }} characters selected
+                        </div>
+                      </template>
+                    </Multiselect>
+                  </V-Control>
+                </V-Field>
+              </div>
+              <div class="column is-4">
+                <V-Field class="is-curved-select">
+                  <V-Control>
+                    <Multiselect
+                      v-model="valueMultipleObject"
+                      mode="multiple"
+                      placeholder="Select your characters"
+                      :options="optionMultipleObject"
+                    >
+                      <template #multiplelabel="{ values }">
+                        <div class="multiselect-multiple-label">
+                          {{ values.length }} characters selected
+                        </div>
+                      </template>
+                    </Multiselect>
+                  </V-Control>
+                </V-Field>
+              </div>
+              <div class="column is-4">
+                <V-Field class="is-rounded-select">
+                  <V-Control>
+                    <Multiselect
+                      v-model="valueMultipleObject"
+                      mode="multiple"
+                      placeholder="Select your characters"
+                      :options="optionMultipleObject"
+                    >
+                      <template #multiplelabel="{ values }">
+                        <div class="multiselect-multiple-label">
+                          {{ values.length }} characters selected
+                        </div>
+                      </template>
+                    </Multiselect>
+                  </V-Control>
+                </V-Field>
+              </div>
+            </div>
+          </div>
 
           <!--Disabled option-->
           <MultiselectDisabledOptionDocumentation />
