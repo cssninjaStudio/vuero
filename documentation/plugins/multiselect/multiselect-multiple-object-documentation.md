@@ -1,4 +1,13 @@
-### Multiselect Object
+---
+optionMultipleObject:
+  batman: Batman
+  robin: Robin
+  joker: Joker
+valueMultipleObject:
+  - robin
+---
+
+### Options object
 
 The `<Multiselect />` component can receive data with his `options` props. You
 can either pass an `Array` or `Object` to the `options` props. You can also
@@ -8,14 +17,12 @@ activate the `multiple` mode by setting the `mode` prop to `mode="multiple"`.
 
 ```vue
 <script setup lang="ts">
-import { ref } from 'vue'
-import Multiselect from '@vueform/multiselect'
-const valueMultipleObject = ref(['robin'])
-const optionMultipleObject = ref({
+const valueMultipleObject = ['robin']
+const optionMultipleObject = {
   batman: 'Batman',
   robin: 'Robin',
   joker: 'Joker',
-})
+}
 </script>
 
 <template>
@@ -33,3 +40,46 @@ const optionMultipleObject = ref({
 ```
 
 <!--/code-->
+
+<!--example-->
+
+<div class="columns">
+  <div class="column is-4">
+    <V-Field>
+      <V-Control>
+        <Multiselect
+          v-model="frontmatter.valueMultipleObject"
+          mode="multiple"
+          :options="frontmatter.optionMultipleObject"
+          placeholder="Select options"
+        />
+      </V-Control>
+    </V-Field>
+  </div>
+  <div class="column is-4">
+    <V-Field class="is-curved-select">
+      <V-Control>
+        <Multiselect
+          v-model="frontmatter.valueMultipleObject"
+          mode="multiple"
+          :options="frontmatter.optionMultipleObject"
+          placeholder="Select options"
+        />
+      </V-Control>
+    </V-Field>
+  </div>
+  <div class="column is-4">
+    <V-Field class="is-rounded-select">
+      <V-Control>
+        <Multiselect
+          v-model="frontmatter.valueMultipleObject"
+          mode="multiple"
+          :options="frontmatter.optionMultipleObject"
+          placeholder="Select options"
+        />
+      </V-Control>
+    </V-Field>
+  </div>
+</div>
+
+<!--/example-->

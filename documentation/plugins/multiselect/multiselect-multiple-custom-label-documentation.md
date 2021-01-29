@@ -1,4 +1,13 @@
-### Multiselect custom label
+---
+optionMultipleObject:
+  batman: Batman
+  robin: Robin
+  joker: Joker
+valueMultipleObject:
+  - robin
+---
+
+### Custom label
 
 The `<Multiselect />` component in multiple mode has a default label when you
 start selecting options. You can change the way the message is formatted by
@@ -39,3 +48,64 @@ const optionMultipleObject = ref({
 ```
 
 <!--/code-->
+
+<!--example-->
+
+<div class="columns">
+  <div class="column is-4">
+    <V-Field>
+      <V-Control>
+        <Multiselect
+          v-model="frontmatter.valueMultipleObject"
+          mode="multiple"
+          placeholder="Select your characters"
+          :options="frontmatter.optionMultipleObject"
+        >
+          <template #multiplelabel="{ values }">
+            <div class="multiselect-multiple-label">
+              {{ values.length }} characters selected
+            </div>
+          </template>
+        </Multiselect>
+      </V-Control>
+    </V-Field>
+  </div>
+  <div class="column is-4">
+    <V-Field class="is-curved-select">
+      <V-Control>
+        <Multiselect
+          v-model="frontmatter.valueMultipleObject"
+          mode="multiple"
+          placeholder="Select your characters"
+          :options="frontmatter.optionMultipleObject"
+        >
+          <template #multiplelabel="{ values }">
+            <div class="multiselect-multiple-label">
+              {{ values.length }} characters selected
+            </div>
+          </template>
+        </Multiselect>
+      </V-Control>
+    </V-Field>
+  </div>
+  <div class="column is-4">
+    <V-Field class="is-rounded-select">
+      <V-Control>
+        <Multiselect
+          v-model="frontmatter.valueMultipleObject"
+          mode="multiple"
+          placeholder="Select your characters"
+          :options="frontmatter.optionMultipleObject"
+        >
+          <template #multiplelabel="{ values }">
+            <div class="multiselect-multiple-label">
+              {{ values.length }} characters selected
+            </div>
+          </template>
+        </Multiselect>
+      </V-Control>
+    </V-Field>
+  </div>
+</div>
+
+<!--/example-->

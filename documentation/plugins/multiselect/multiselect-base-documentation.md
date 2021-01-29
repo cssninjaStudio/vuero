@@ -19,10 +19,8 @@ or `is-rounded` class to the parent `<V-Field />` component.
 
 ```vue
 <script setup lang="ts">
-import { ref } from 'vue'
-import Multiselect from '@vueform/multiselect'
-const valueSingle = ref(0)
-const optionsSingle = ref(['Batman', 'Robin', 'Joker'])
+const valueSingle = 0
+const optionsSingle = ['Batman', 'Robin', 'Joker']
 </script>
 
 <template>

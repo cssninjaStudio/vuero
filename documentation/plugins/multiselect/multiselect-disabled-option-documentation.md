@@ -1,25 +1,86 @@
+---
+disabledOptions:
+  - value: batman
+    label: Batman
+  - value: robin
+    label: Robin
+    disabled: true
+  - value: joker
+    label: Joker
+disabledValue:
+  - batman
+---
+
 ### Disabled Option
 
-Vuero is integrated with `Notyf`, a dead simple vanilla javascript
-toasting library. You can check the plugin documentation on
-[Github](https://github.com/vueform/multiselect).
-The success toast is one the 2 notyf default toasts.
+`<Multiselect />` options can be disabled. Simply pass a `disabled` property
+in your options object.
 
 <!--code-->
 
 ```vue
 <script setup lang="ts">
-import { Notyf } from 'notyf'
-
-const notyf = new Notyf()
-const successToast = () => {
-  notyf.success('Your changes have been successfully saved!')
-}
+const disabledValue = ['batman']
+const disabledOptions = [
+  { value: 'batman', label: 'Batman' },
+  { value: 'robin', label: 'Robin', disabled: true },
+  { value: 'joker', label: 'Joker' },
+]
 </script>
 
 <template>
-  <V-Button bold @click="successToast">Success Toast</V-Button>
+  <V-Field>
+    <V-Control>
+      <Multiselect
+        v-model="disabledValue"
+        mode="multiple"
+        :options="disabledOptions"
+        placeholder="Select options"
+      />
+    </V-Control>
+  </V-Field>
 </template>
 ```
 
 <!--/code-->
+
+<!--example-->
+
+<div class="columns">
+  <div class="column is-4">
+    <V-Field>
+      <V-Control>
+        <Multiselect
+          v-model="frontmatter.disabledValue"
+          mode="multiple"
+          :options="frontmatter.disabledOptions"
+          placeholder="Select options"
+        />
+      </V-Control>
+    </V-Field>
+  </div>
+  <div class="column is-4">
+    <V-Field class="is-curved-select">
+      <Multiselect
+          v-model="frontmatter.disabledValue"
+          mode="multiple"
+          :options="frontmatter.disabledOptions"
+          placeholder="Select options"
+        />
+      </V-Control>
+    </V-Field>
+  </div>
+  <div class="column is-4">
+    <V-Field class="is-rounded-select">
+      <Multiselect
+          v-model="frontmatter.disabledValue"
+          mode="multiple"
+          :options="frontmatter.disabledOptions"
+          placeholder="Select options"
+        />
+      </V-Control>
+    </V-Field>
+  </div>
+</div>
+
+<!--/example-->
