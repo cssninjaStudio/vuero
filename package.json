@@ -29,6 +29,7 @@
   "dependencies": {
     "@iconify/iconify": "1.0.7",
     "@vueform/multiselect": "1.2.5",
+    "@vueform/slider": "^1.0.3",
     "@vueuse/core": "4.0.10",
     "@vueuse/head": "0.2.3",
     "apexcharts": "3.23.1",

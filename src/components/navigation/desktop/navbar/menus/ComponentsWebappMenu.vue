@@ -232,8 +232,22 @@ const activeTab = ref<TabId>('components')
               <div class="column is-3">
                 <ul>
                   <li>
+                    <RouterLink
+                      :to="{ name: 'components-plugins-multiselect' }"
+                    >
+                      <span>Vue-Multiselect</span>
+                      <i class="iconify" data-icon="feather:circle"></i>
+                    </RouterLink>
+                  </li>
+                  <li>
+                    <RouterLink :to="{ name: 'components-plugins-slider' }">
+                      <span>Vue-Slider</span>
+                      <i class="iconify" data-icon="feather:circle"></i>
+                    </RouterLink>
+                  </li>
+                  <li>
                     <RouterLink :to="{ name: 'components-plugins-toasts' }">
-                      <span>Toast Messages</span>
+                      <span>Notyf</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>

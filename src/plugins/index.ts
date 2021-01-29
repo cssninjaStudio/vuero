@@ -3,6 +3,7 @@ import installRouter from './router'
 import installI18n from './i18n'
 import installApexCharts from './apexcharts'
 import installMultiselect from './multiselect'
+import installSlider from './slider'
 import installDirectives from '/@src/directives'
 import '@purge-icons/generated'
 import './icons'
@@ -16,5 +17,6 @@ export default (app: App) => {
   installI18n(app)
   installApexCharts(app)
   installMultiselect(app)
+  installSlider(app)
   installDirectives(app)
 }
