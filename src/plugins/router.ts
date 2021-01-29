@@ -2,7 +2,7 @@ import type { App } from 'vue'
 // import routes from 'vite-plugin-pages/client'
 import routes from 'voie-pages'
 import { createHead } from '@vueuse/head'
-import NProgress from 'nprogress'
+import * as NProgress from 'nprogress'
 import { createRouter, createWebHistory } from 'vue-router'
 
 console.log('routes?', routes)

@@ -14,7 +14,6 @@ type Subnav =
   | 'search'
 
 /* WebAppNavState data */
-// const route = useRoute()
 const isLargeScreen = useMediaQuery('(min-width: 767px)')
 export const activeSubnav = ref<Subnav>('closed')
 

@@ -8,8 +8,8 @@ You can mix any button styles.
 
 ```vue
 <template>
-  <V-Button feather="feather:eye"> View </V-Button>
-  <V-Button feather="feather:edit-2"> View </V-Button>
+  <V-Button iconify="feather:eye"> View </V-Button>
+  <V-Button iconify="feather:edit-2"> View </V-Button>
   <V-Button color="primary" fa="fas fa-check" elevated> Approve </V-Button>
 </template>
 ```
@@ -19,10 +19,10 @@ You can mix any button styles.
 <!--example-->
 
 <div class="buttons">
-    <V-Button feather="feather:eye">
+    <V-Button iconify="feather:eye">
         View
     </V-Button>
-    <V-Button feather="feather:edit-2">
+    <V-Button iconify="feather:edit-2">
         View
     </V-Button>
     <V-Button color="primary" fa="fas fa-check" elevated>

@@ -3,7 +3,7 @@ import { defineProps } from 'vue'
 
 defineProps({
   radius: {
-    type: Boolean,
+    type: String,
     default: 'regular',
   },
 })

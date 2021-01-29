@@ -10,14 +10,14 @@ Please refer to markup for detailed examples.
 
 ```vue
 <template>
-  <V-Button color="info" feather="feather:twitter" elevated>
+  <V-Button color="info" iconify="feather:twitter" elevated>
     Tweet Now
   </V-Button>
-  <V-Button color="danger" feather="feather:gitlab" raised rounded>
+  <V-Button color="danger" iconify="feather:gitlab" raised rounded>
     Commit Code
   </V-Button>
-  <V-IconButton feather="feather:mail" />
-  <V-IconButton color="info" raised circle feather="feather:message-circle" />
+  <V-IconButton iconify="feather:mail" />
+  <V-IconButton color="info" raised circle iconify="feather:message-circle" />
 </template>
 ```
 
@@ -26,14 +26,14 @@ Please refer to markup for detailed examples.
 <!--example-->
 
 <div class="buttons">
-    <V-Button color="info" feather="feather:twitter" elevated>
+    <V-Button color="info" iconify="feather:twitter" elevated>
         Tweet Now
     </V-Button>
-    <V-Button color="danger" feather="feather:gitlab" raised rounded>
+    <V-Button color="danger" iconify="feather:gitlab" raised rounded>
         Commit Code
     </V-Button>
-    <V-IconButton feather="feather:mail" />
-    <V-IconButton color="info" raised circle feather="feather:message-circle" />
+    <V-IconButton iconify="feather:mail" />
+    <V-IconButton color="info" raised circle iconify="feather:message-circle" />
 </div>
 
 <!--/example-->
