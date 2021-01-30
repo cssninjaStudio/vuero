@@ -157,6 +157,7 @@ function VitePluginVueroDoc(options: Options = {}): Plugin {
             event.target.innerText = text;
           })
         },
+        formatAsPercent (value) { return value + '%' },
         clickMyText(event) { 
           const inner = event.currentTarget.querySelector('.text');
           if (!inner) return;
