@@ -252,12 +252,9 @@ const filteredData = computed(() => {
       </div>
 
       <div class="buttons">
-        <button class="button v-button is-primary is-elevated">
-          <span class="icon">
-            <i class="fas fa-check"></i>
-          </span>
-          <span>Approve</span>
-        </button>
+        <V-Button color="primary" fa="fas fa-check" elevated>
+          Approve
+        </V-Button>
       </div>
     </div>
 
