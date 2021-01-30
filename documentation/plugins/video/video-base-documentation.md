@@ -8,7 +8,7 @@ Eademne, quae restincta siti? Quid, quod res alia tota est?
 
 ```vue
 <template>
-  <VideoPlayer
+  <V-Plyr
     ratio="square"
     source="/video/hands.mp4"
     poster="/video/poster-1c.jpg"
@@ -21,7 +21,7 @@ Eademne, quae restincta siti? Quid, quod res alia tota est?
 <!--example-->
 
 <div>
-  <VideoPlayer
+  <V-Plyr
     ratio="square"
     source="/video/hands.mp4"
     poster="/video/poster-1c.jpg"
