@@ -197,10 +197,18 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
             </li>
             <li>
               <RouterLink
+                :to="{ name: 'components-plugins-slider' }"
+                class="is-submenu"
+                ><i class="iconify" data-icon="feather:circle"></i
+                >Vue-Slider</RouterLink
+              >
+            </li>
+            <li>
+              <RouterLink
                 :to="{ name: 'components-plugins-toasts' }"
                 class="is-submenu"
                 ><i class="iconify" data-icon="feather:circle"></i
-                >Toasts</RouterLink
+                >Notyf</RouterLink
               >
             </li>
             <li>

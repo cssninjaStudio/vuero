@@ -1,3 +1,12 @@
+---
+optionsSingle:
+  - batman
+  - robin
+  - joker
+state:
+  valueSingle: 0
+---
+
 ### Single Select
 
 Vuero is integrated with `Vue Multiselect`, a vue 3 select single, multiple and
@@ -10,14 +19,12 @@ or `is-rounded` class to the parent `<V-Field />` component.
 
 ```vue
 <script setup lang="ts">
-import { ref } from 'vue'
-import Multiselect from '@vueform/multiselect'
-const valueSingle = ref(0)
-const optionsSingle = ref(['Batman', 'Robin', 'Joker'])
+const valueSingle = 0
+const optionsSingle = ['Batman', 'Robin', 'Joker']
 </script>
 
 <template>
-  <V-Field class="is-curved-select mb-6">
+  <V-Field class="is-curved-select">
     <V-Control>
       <Multiselect
         v-model="valueSingle"
@@ -30,3 +37,43 @@ const optionsSingle = ref(['Batman', 'Robin', 'Joker'])
 ```
 
 <!--/code-->
+
+<!--example-->
+
+<div class="columns">
+  <div class="column is-4">
+    <V-Field>
+      <V-Control>
+        <Multiselect
+          v-model="frontmatter.state.valueSingle"
+          :options="frontmatter.optionsSingle"
+          placeholder="Select an option"
+        />
+      </V-Control>
+    </V-Field>
+  </div>
+  <div class="column is-4">
+    <V-Field class="is-curved-select">
+      <V-Control>
+        <Multiselect
+          v-model="frontmatter.state.valueSingle"
+          :options="frontmatter.optionsSingle"
+          placeholder="Select an option"
+        />
+      </V-Control>
+    </V-Field>
+  </div>
+  <div class="column is-4">
+    <V-Field class="is-rounded-select">
+      <V-Control>
+        <Multiselect
+          v-model="frontmatter.state.valueSingle"
+          :options="frontmatter.optionsSingle"
+          placeholder="Select an option"
+        />
+      </V-Control>
+    </V-Field>
+  </div>
+</div>
+
+<!--/example-->

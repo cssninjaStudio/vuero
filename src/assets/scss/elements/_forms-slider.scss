@@ -9,7 +9,7 @@
 1. NoUI Slider
 ========================================================================== */
 
-.noUi-horizontal,
+/* .noUi-horizontal,
 .noUi-vertical {
   border: none;
   box-shadow: none;
@@ -290,13 +290,13 @@
     pointer-events: all;
     transform: translate(-50%, 0) scale(1);
   }
-}
+} */
 
 /* ==========================================================================
 2. NoUI Slider Dark mode
 ========================================================================== */
 
-.is-dark {
+/* .is-dark {
   .noUi-horizontal,
   .noUi-vertical {
     &.is-info {
@@ -379,6 +379,163 @@
       &::after {
         background: $accent;
       }
+    }
+  }
+} */
+
+/* ==========================================================================
+1. Vue Slider
+========================================================================== */
+
+.slider-target {
+  .slider-base {
+    .slider-connects {
+      .slider-connect {
+        background: $primary;
+      }
+    }
+
+    .slider-tooltip {
+      font-size: 0.9rem;
+      border: 1px solid $primary;
+      background: $primary;
+    }
+  }
+}
+
+.is-slider-info {
+  .slider-target {
+    .slider-base {
+      .slider-connects {
+        .slider-connect {
+          background: $info;
+        }
+      }
+
+      .slider-tooltip {
+        border: 1px solid $info;
+        background: $info;
+      }
+    }
+  }
+}
+
+.is-slider-success {
+  .slider-target {
+    .slider-base {
+      .slider-connects {
+        .slider-connect {
+          background: $success;
+        }
+      }
+
+      .slider-tooltip {
+        border: 1px solid $success;
+        background: $success;
+      }
+    }
+  }
+}
+
+.is-slider-warning {
+  .slider-target {
+    .slider-base {
+      .slider-connects {
+        .slider-connect {
+          background: $warning;
+        }
+      }
+
+      .slider-tooltip {
+        border: 1px solid $warning;
+        background: $warning;
+      }
+    }
+  }
+}
+
+.is-slider-danger {
+  .slider-target {
+    .slider-base {
+      .slider-connects {
+        .slider-connect {
+          background: $danger;
+        }
+      }
+
+      .slider-tooltip {
+        border: 1px solid $danger;
+        background: $danger;
+      }
+    }
+  }
+}
+
+.has-rounded-tooltip {
+  .slider-target {
+    .slider-base {
+      .slider-handle {
+        .slider-tooltip {
+          border-radius: 100px;
+          width: 28px;
+          height: 28px;
+          font-size: 0.9rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          line-height: 3;
+        }
+      }
+    }
+  }
+}
+
+.has-curved-tooltip {
+  .slider-target {
+    .slider-base {
+      .slider-handle {
+        .slider-tooltip {
+          border-radius: 0.75rem;
+          min-width: 28px;
+          padding-left: 0.75rem;
+          padding-right: 0.75rem;
+          height: 28px;
+          font-size: 0.9rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          line-height: 3;
+        }
+      }
+    }
+  }
+}
+
+.has-squared-tooltip {
+  .slider-target {
+    .slider-base {
+      .slider-handle {
+        .slider-tooltip {
+          border-radius: 0.5rem;
+          min-width: 28px;
+          padding-left: 0.75rem;
+          padding-right: 0.75rem;
+          height: 28px;
+          font-size: 0.9rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          line-height: 3;
+        }
+      }
+    }
+  }
+}
+
+.is-dark {
+  .slider-target {
+    .slider-base {
+      background: lighten($dark-sidebar, 2%);
     }
   }
 }

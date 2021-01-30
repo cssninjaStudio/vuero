@@ -16,7 +16,7 @@ onMounted(() => {
 })
 
 useHead({
-  title: 'Components - Plugins Multiselect - Vuero',
+  title: 'Components - Plugins Slider - Vuero',
 })
 </script>
 
@@ -43,7 +43,7 @@ useHead({
       </div>
 
       <div class="title-wrap">
-        <h1 class="title is-4">Multiselect</h1>
+        <h1 class="title is-4">Slider</h1>
       </div>
 
       <Toolbar />
@@ -71,7 +71,7 @@ useHead({
           </li>
           <li>
             <a>
-              <span>Multiselect</span>
+              <span>Slider</span>
             </a>
           </li>
         </ul>
@@ -83,44 +83,26 @@ useHead({
           :class="[toc.length > 0 ? 'is-9' : 'is-12']"
           class="column"
         >
-          <!--Simple select-->
-          <MultiselectBaseDocumentation />
+          <!--Simple slider-->
+          <SliderBaseDocumentation />
 
-          <!--Multiselect-->
-          <MultiselectMultipleObjectDocumentation />
+          <!--Squared tooltip-->
+          <SliderSquaredDocumentation />
 
-          <!--Multiselect custom label-->
-          <MultiselectMultipleCustomLabelDocumentation />
+          <!--Curved tooltip-->
+          <SliderCurvedDocumentation />
 
-          <!--Disabled option-->
-          <MultiselectDisabledOptionDocumentation />
+          <!--Slider colors-->
+          <SliderColorDocumentation />
 
-          <!--Tags-->
-          <MultiselectTagsBaseDocumentation />
+          <!--Multiple sliders-->
+          <SliderMultipleDocumentation />
 
-          <!--Slot-->
-          <MultiselectSelectSlotDocumentation />
+          <!--Tooltip format-->
+          <SliderFormatDocumentation />
 
-          <!--Slot search-->
-          <MultiselectSelectSlotSearchDocumentation />
-
-          <!--Slot search-->
-          <MultiselectSelectSlotUsersDocumentation />
-
-          <!--Slot icons search-->
-          <MultiselectSelectSlotIconsDocumentation />
-
-          <!--Tags images-->
-          <MultiselectTagsImageSlotDocumentation />
-
-          <!--Tags users-->
-          <MultiselectTagsCustomSlotDocumentation />
-
-          <!--Tags images stacked-->
-          <MultiselectTagsImagesStackedDocumentation />
-
-          <!--Tags users stacked-->
-          <MultiselectTagsUsersStackedDocumentation />
+          <!--Slider Mergin-->
+          <SliderMergingDocumentation />
 
           <div class="pb-6 mb-6"></div>
         </div>

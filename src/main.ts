@@ -1,6 +1,7 @@
 import { createApp } from 'vue'
 import { createHead } from '@vueuse/head'
-import Multiselect from '@vueform/multiselect'
+import VueMultiselect from '@vueform/multiselect'
+import VueSlider from '@vueform/slider'
 import VueApexCharts from 'vue3-apexcharts'
 import VCalendar from 'v-calendar'
 import VueTippy from 'vue-tippy'
@@ -12,6 +13,7 @@ import 'simplebar'
 import '@purge-icons/generated'
 
 import '@vueform/multiselect/themes/default.css'
+import '@vueform/slider/themes/default.css'
 import 'simplebar/dist/simplebar.css'
 import 'tiny-slider/src/tiny-slider.scss'
 import 'notyf/notyf.min.css'
@@ -41,7 +43,8 @@ app.use(VueTippy, {
   },
 })
 
-app.component(Multiselect.name, Multiselect)
+app.component(VueMultiselect.name, VueMultiselect)
+app.component(VueSlider.name, VueSlider)
 
 app.directive('has-children', hasChildren)
 app.directive('background', background)

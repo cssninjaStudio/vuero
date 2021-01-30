@@ -1,41 +1,42 @@
 ---
-tagsSlotOptions:
+tagsStackedUsersOptions:
   - value: alice
-    name: Alice C.
+    name: Alice Carasca
     image: /images/avatars/photos/7.jpg
   - value: erik
-    name: Erik K.
+    name: Erik Kovalsky
     image: /images/avatars/photos/8.jpg
   - value: melany
-    name: Melany W.
+    name: Melany Wallace
     image: /images/avatars/photos/25.jpg
   - value: tara
-    name: Tara S.
+    name: Tara Svenson
     image: /images/avatars/photos/13.jpg
   - value: mary
-    name: Mary L.
+    name: Mary Lebowski
     image: /images/avatars/photos/5.jpg
   - value: irina
-    name: Irina V.
+    name: Irina Vierbovsky
     image: /images/avatars/photos/23.jpg
   - value: jonathan
-    name: Jonathan K.
+    name: Jonathan Krugger
     image: /images/avatars/photos/32.jpg
-tagsSlotValue: []
+tagsStackedUsersValue: []
 ---
 
-### User tags
+### Stacked users
 
 You can combine the `mode="tags"` with a custom template. This way you can
 show custom tag elements with an image inside. The tag shape inherits from
-the select class modifier.
+the select class modifier. Add the `is-stacked` class to the `is-image-tags`
+element to show stacked images.
 
 <!--code-->
 
 ```vue
 <script setup lang="ts">
-const tagsSlotValue = []
-const tagsSlotOptions = [
+const tagsStackedUsersValue = []
+const tagsStackedUsersOptions = [
   {
     value: 'alice',
     name: 'Alice Carasca',
@@ -78,13 +79,13 @@ const tagsSlotOptions = [
   <V-Field class="is-image-tags">
     <V-Control>
       <Multiselect
-        v-model="tagsSlotValue"
+        v-model="tagsStackedUsersValue"
         mode="tags"
-        placeholder="Select employees"
+        placeholder="Select members"
         track-by="name"
         label="name"
         :search="true"
-        :options="tagsSlotOptions"
+        :options="tagsStackedUsersOptions"
         :max-height="145"
       >
         <template #tag="{ option, remove, disabled }">
@@ -110,22 +111,21 @@ const tagsSlotOptions = [
 
 <div class="columns">
   <div class="column is-4">
-    <V-Field class="is-image-tags">
+    <V-Field class="is-image-tags is-stacked">
       <V-Control>
         <Multiselect
-          v-model="frontmatter.tagsSlotValue"
+          v-model="frontmatter.tagsStackedUsersValue"
           mode="tags"
-          placeholder="Select employees"
+          placeholder="Select members"
           trackBy="name"
           label="name"
           :search="true"
-          :options="frontmatter.tagsSlotOptions"
+          :options="frontmatter.tagsStackedUsersOptions"
           :max-height="145"
         >
           <template v-slot:tag="{ option, remove, disabled }">
             <div class="multiselect-tag is-user">
               <img :src="option.image">
-              {{ option.name }}
               <i
                 v-if="!disabled"
                 @click.prevent
@@ -138,21 +138,20 @@ const tagsSlotOptions = [
     </V-Field>
   </div>
   <div class="column is-4">
-    <V-Field class="is-image-tags is-curved-select">
+    <V-Field class="is-image-tags is-stacked is-curved-select">
       <Multiselect
-          v-model="frontmatter.tagsSlotValue"
+          v-model="frontmatter.tagsStackedUsersValue"
           mode="tags"
-          placeholder="Select employees"
+          placeholder="Select members"
           trackBy="name"
           label="name"
           :search="true"
-          :options="frontmatter.tagsSlotOptions"
+          :options="frontmatter.tagsStackedUsersOptions"
           :max-height="145"
         >
           <template v-slot:tag="{ option, remove, disabled }">
             <div class="multiselect-tag is-user">
               <img :src="option.image">
-              {{ option.name }}
               <i
                 v-if="!disabled"
                 @click.prevent
@@ -165,21 +164,20 @@ const tagsSlotOptions = [
     </V-Field>
   </div>
   <div class="column is-4">
-    <V-Field class="is-image-tags is-rounded-select">
+    <V-Field class="is-image-tags is-stacked is-rounded-select">
       <Multiselect
-          v-model="frontmatter.tagsSlotValue"
+          v-model="frontmatter.tagsStackedUsersValue"
           mode="tags"
-          placeholder="Select employees"
+          placeholder="Select members"
           trackBy="name"
           label="name"
           :search="true"
-          :options="frontmatter.tagsSlotOptions"
+          :options="frontmatter.tagsStackedUsersOptions"
           :max-height="145"
         >
           <template v-slot:tag="{ option, remove, disabled }">
             <div class="multiselect-tag is-user">
               <img :src="option.image">
-              {{ option.name }}
               <i
                 v-if="!disabled"
                 @click.prevent

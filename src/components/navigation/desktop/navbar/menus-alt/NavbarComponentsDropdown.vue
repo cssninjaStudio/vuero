@@ -404,6 +404,28 @@ const { dropdownElement, isOpen, open } = useDropdown()
 
                 <div class="column-content">
                   <RouterLink
+                    :to="{ name: 'components-plugins-multiselect' }"
+                    class="dropdown-item is-media"
+                  >
+                    <div class="icon">
+                      <i class="lnil lnil-html5"></i>
+                    </div>
+                    <div class="meta">
+                      <span>Vue-Multiselect</span>
+                    </div>
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'components-plugins-slider' }"
+                    class="dropdown-item is-media"
+                  >
+                    <div class="icon">
+                      <i class="lnil lnil-html5"></i>
+                    </div>
+                    <div class="meta">
+                      <span>Vue-Slider</span>
+                    </div>
+                  </RouterLink>
+                  <RouterLink
                     :to="{ name: 'components-plugins-toasts' }"
                     class="dropdown-item is-media"
                   >
@@ -411,7 +433,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                       <i class="lnil lnil-html5"></i>
                     </div>
                     <div class="meta">
-                      <span>Toast Messages</span>
+                      <span>Notyf</span>
                     </div>
                   </RouterLink>
                   <RouterLink

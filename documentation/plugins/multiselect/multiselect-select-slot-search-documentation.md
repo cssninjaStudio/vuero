@@ -9,11 +9,22 @@ selectSlotOptions:
   - value: vuejs
     name: VueJS
     icon: /images/icons/stacks/vuejs.svg
+  - value: angular
+    name: Angular
+    icon: /images/icons/stacks/angular.svg
+  - value: android
+    name: Android
+    icon: /images/icons/stacks/android.svg
+  - value: html5
+    name: Html5
+    icon: /images/icons/stacks/html5.svg
+  - value: css3
+    name: CSS3
+    icon: /images/icons/stacks/css3.svg
 selectSlotValue:
-  - batman
 ---
 
-### Image Select
+### Image with search
 
 The `<Multiselect />` component can be used with a custom template to show
 images for options and selected option. 2 CSS modifiers are available for
@@ -31,7 +42,7 @@ const selectSlotOptions = [
     icon: '/images/icons/stacks/js.svg',
   },
   {
-    value: 'spiderman',
+    value: 'reactjs',
     name: 'ReactJS',
     icon: '/images/icons/stacks/reactjs.svg',
   },
@@ -49,6 +60,9 @@ const selectSlotOptions = [
     placeholder="Select a language"
     label="name"
     :options="selectSlotOptions"
+    :searchable="true"
+    track-by="name"
+    :max-height="145"
   >
     <template #singlelabel="{ value }">
       <div class="multiselect-single-label">
@@ -76,7 +90,10 @@ const selectSlotOptions = [
           v-model="frontmatter.selectSlotValue"
           placeholder="Select a language"
           label="name"
-          :options="frontmatter.selectSlotOptions">
+          :options="frontmatter.selectSlotOptions"
+          :searchable="true"
+          trackBy="name"
+          :maxHeight="145">
           <template v-slot:singlelabel="{ value }">
             <div class="multiselect-single-label">
               <img class="select-label-icon" :src="value.icon"> 
@@ -101,7 +118,10 @@ const selectSlotOptions = [
           v-model="frontmatter.selectSlotValue"
           placeholder="Select a language"
           label="name"
-          :options="frontmatter.selectSlotOptions">
+          :options="frontmatter.selectSlotOptions"
+          :searchable="true"
+          trackBy="name"
+          :maxHeight="145">
           <template v-slot:singlelabel="{ value }">
             <div class="multiselect-single-label">
               <img class="select-label-icon is-curved" :src="value.icon"> 
@@ -126,7 +146,10 @@ const selectSlotOptions = [
           v-model="frontmatter.selectSlotValue"
           placeholder="Select a language"
           label="name"
-          :options="frontmatter.selectSlotOptions">
+          :options="frontmatter.selectSlotOptions"
+          :searchable="true"
+          trackBy="name"
+          :maxHeight="145">
           <template v-slot:singlelabel="{ value }">
             <div class="multiselect-single-label">
               <img class="select-label-icon is-rounded" :src="value.icon">

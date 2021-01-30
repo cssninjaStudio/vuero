@@ -2,6 +2,7 @@ dependencies:
   '@iconify/iconify': 1.0.7
   '@popperjs/core': 2.6.0
   '@vueform/multiselect': 1.2.5
+  '@vueform/slider': 1.0.3
   '@vueuse/core': 4.0.10_vue@3.0.5
   '@vueuse/head': 0.2.3_vue@3.0.5
   apexcharts: 3.23.1
@@ -1978,6 +1979,13 @@ packages:
     dev: false
     resolution:
       integrity: sha512-KOW1XQb0TWfBH70Pl5ZdffbSidyOVz9RgYVpndX237P0lfJ7JTCIhMy9h3dmecBr/yTPPFVapC/hTlwmrlaDsg==
+  /@vueform/slider/1.0.3:
+    dependencies:
+      nouislider: 14.6.3
+      wnumb: 1.2.0
+    dev: false
+    resolution:
+      integrity: sha512-3bbjg1qPmrsb9R9kvYzgikYkWduIYP/F8B4XWDnSgFHzRXyp8oSOnQOjdpArN9fF2w9+URff4jQyakpfr5azXA==
   /@vueuse/core/4.0.10_vue@3.0.5:
     dependencies:
       '@vueuse/shared': 4.0.10_vue@3.0.5
@@ -5178,6 +5186,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-3zqV/AuP8w5OpPhUElsLte1BFfL42tswMZM5Ya24w7GozMsQTJRYsQQgqmA9oylDL3t5TE7F4rP3ZGM6JfaKOQ==
+  /nouislider/14.6.3:
+    dev: false
+    resolution:
+      integrity: sha512-/3tAqsWY2JYW9vd7bC14bFRA1P9A+pRHOtKmoMsyfnB0fQcd1UFx2pdY1Ey5wAUzTnXTesmYaEo/ecLVETijIQ==
   /npm-run-all/4.1.5:
     dependencies:
       ansi-styles: 3.2.1
@@ -7913,6 +7925,10 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==
+  /wnumb/1.2.0:
+    dev: false
+    resolution:
+      integrity: sha512-eYut5K/dW7usfk/Mwm6nxBNoTPp/uP7PlXld+hhg7lDtHLdHFnNclywGYM9BRC7Ohd4JhwuHg+vmOUGfd3NhVA==
   /word-wrap/1.2.3:
     dev: true
     engines:
@@ -8226,6 +8242,7 @@ specifiers:
   '@vuedx/typecheck': 0.6.3
   '@vuedx/typescript-plugin-vue': 0.6.3
   '@vueform/multiselect': 1.2.5
+  '@vueform/slider': ^1.0.3
   '@vueuse/core': 4.0.10
   '@vueuse/head': 0.2.3
   apexcharts: 3.23.1
