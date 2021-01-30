@@ -23,7 +23,7 @@ const props = defineProps({
   },
   options: {
     type: Object as PropType<Plyr.Options>,
-    default: () => {},
+    default: () => ({}),
   },
 })
 

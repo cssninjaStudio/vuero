@@ -7,6 +7,11 @@ module.exports = {
     'at-rule-no-unknown': null,
     'no-descending-specificity': null, // TODO
     'no-duplicate-selectors': null, // TODO
-    'selector-pseudo-element-no-unknown': null,
+    'selector-pseudo-element-no-unknown': [
+      true,
+      {
+        ignorePseudoElements: ["/^v-deep/"]
+      }
+    ],
   },
 }
