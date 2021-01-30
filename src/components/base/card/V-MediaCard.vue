@@ -28,8 +28,8 @@ defineProps({
     default: 'regular',
   },
   loading: {
-    type: String,
-    default: 'regular',
+    type: Boolean,
+    default: false,
   },
 })
 </script>

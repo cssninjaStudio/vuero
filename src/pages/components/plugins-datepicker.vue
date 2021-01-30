@@ -1,11 +1,13 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
-import { onMounted } from 'vue'
+import { onMounted, ref } from 'vue'
 
 import {
   activeSidebar,
   toggleSidebar,
 } from '/@src/composition/state/ui/activeSidebarState'
+
+const date = ref(null)
 
 onMounted(() => {
   activeSidebar.value = 'components'
@@ -77,6 +79,9 @@ useHead({
         <div class="column is-12">
           <!--Datepicker-->
           <DatepickerBaseDocumentation />
+
+          <!--Datepicker-->
+          <DatepickerRangeDocumentation />
         </div>
       </div>
     </div>

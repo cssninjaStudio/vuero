@@ -1,53 +1,34 @@
-import type { App } from 'vue'
+import type { Directive, DirectiveHook } from 'vue'
 
-export default function background(app: App) {
-  app.directive('background', {
-    getSSRProps(binding, vnode) {
-      return {}
-    },
-    updated(el: HTMLElement, bindings) {
-      const src = bindings.value.src
-      const placeholder = bindings.value.placeholder
+const onUpdate: DirectiveHook = (el: HTMLElement, bindings) => {
+  const src = bindings.value.src
+  const placeholder = bindings.value.placeholder
 
-      if (src) {
-        const image = new Image()
+  if (src) {
+    const image = new Image()
 
-        if (placeholder) {
-          image.onerror = () => {
-            image.onerror = null
-            el.style.backgroundImage = `url(${placeholder})`
-          }
-        }
-
-        image.onload = () => {
-          image.onload = null
-          el.style.backgroundImage = `url(${src})`
-        }
-
-        image.src = src
+    if (placeholder) {
+      image.onerror = () => {
+        image.onerror = null
+        el.style.backgroundImage = `url(${placeholder})`
       }
-    },
-    mounted(el: HTMLElement, bindings) {
-      const src = bindings.value.src
-      const placeholder = bindings.value.placeholder
+    }
 
-      if (src) {
-        const image = new Image()
+    image.onload = () => {
+      image.onload = null
+      el.style.backgroundImage = `url(${src})`
+    }
 
-        if (placeholder) {
-          image.onerror = () => {
-            image.onerror = null
-            el.style.backgroundImage = `url(${placeholder})`
-          }
-        }
-
-        image.onload = () => {
-          image.onload = null
-          el.style.backgroundImage = `url(${src})`
-        }
-
-        image.src = src
-      }
-    },
-  })
+    image.src = src
+  }
 }
+
+const background: Directive = {
+  getSSRProps(binding, vnode) {
+    return {}
+  },
+  updated: onUpdate,
+  mounted: onUpdate,
+}
+
+export default background

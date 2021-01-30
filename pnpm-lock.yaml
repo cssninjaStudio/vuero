@@ -1,5 +1,6 @@
 dependencies:
   '@iconify/iconify': 1.0.7
+  '@popperjs/core': 2.6.0
   '@vueform/multiselect': 1.2.5
   '@vueuse/core': 4.0.10_vue@3.0.5
   '@vueuse/head': 0.2.3_vue@3.0.5
@@ -13,10 +14,13 @@ dependencies:
   nprogress: 0.2.0
   simplebar: 6.0.0-beta.9
   simplebar-vue: 1.6.0_vue@3.0.5
+  tippy.js: 6.2.7
+  v-calendar: 3.0.0-alpha.3_@popperjs+core@2.6.0+vue@3.0.5
   vue: 3.0.5
   vue-i18n: 9.0.0-rc.2_vue@3.0.5
   vue-router: 4.0.3_vue@3.0.5
   vue-scrollto: 2.20.0
+  vue-tippy: 6.0.0-alpha.24_vue@3.0.5
   vue3-apexcharts: 1.1.1_apexcharts@3.23.1+vue@3.0.5
 devDependencies:
   '@iconify/json': 1.1.293
@@ -46,6 +50,7 @@ devDependencies:
   markdown-it: 12.0.4
   markdown-it-anchor: 7.0.1_markdown-it@12.0.4
   npm-run-all: 4.1.5
+  plyr: 3.6.4
   prettier: 2.2.1
   prismjs: 1.23.0
   rimraf: 3.0.2
@@ -1310,6 +1315,10 @@ packages:
       node: '>= 8'
     resolution:
       integrity: sha512-8Broas6vTtW4GIXTAHDoE32hnN2M5ykgCpWGbuXHQ15vEMqr23pB76e/GZcYsZCHALv50ktd24qhEyKr6wBtow==
+  /@popperjs/core/2.6.0:
+    dev: false
+    resolution:
+      integrity: sha512-cPqjjzuFWNK3BSKLm0abspP0sp/IGOli4p5I5fKFAzdS8fvjdOwDCfZqAaIiXd9lPkOWi3SUUfZof3hEb7J/uw==
   /@purge-icons/core/0.6.0:
     dependencies:
       '@iconify/iconify': 2.0.0-rc.6
@@ -1537,6 +1546,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-x9OaQQTb1N2hPZ/LWJsqushexDvz7NgzuZxiRmZio44WPuolTZNHDBCrOxCzRVOMwamJRO2dWax5NbygOf1OTQ==
+  /@types/lodash/4.14.168:
+    dev: false
+    resolution:
+      integrity: sha512-oVfRvqHV/V6D1yifJbVRU3TMp8OT6o6BG+U9MkwuJ3U8/CsDHvalRpsxBqivn71ztOFZBTfJMvETbqHiaNSj7Q==
   /@types/markdown-it/12.0.1:
     dependencies:
       '@types/highlight.js': 9.12.4
@@ -2705,7 +2718,6 @@ packages:
     resolution:
       integrity: sha512-1sCb0wBXnBIL16pfFG1Gkvei6UzvKyTNYpiC41yrdjEv0UoJoq9E/abTMzyYJ6JpTkAj15dLjbqifIzEBDVvog==
   /core-js/3.8.3:
-    dev: false
     requiresBuild: true
     resolution:
       integrity: sha512-KPYXeVZYemC2TkNEkX/01I+7yd+nX3KddKwZ1Ww7SKWdI2wQprSgLmrTddT8nw92AjEklTsPBoSdQBhbI1bQ6Q==
@@ -2789,6 +2801,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-2mSc+VEpGPblzAxyeR+vZhJKgYg0Og0nnRi7pmRXFYYxSfnOnW8A5wwQb4n4cE2nIOzqKOAzLCaEX6aBmNEv8A==
+  /custom-event-polyfill/1.0.7:
+    dev: true
+    resolution:
+      integrity: sha512-TDDkd5DkaZxZFM8p+1I3yAlvM3rSr1wbrOliG4yJiwinMZN8z/iGL7BTlDkrJcYTmgUSb4ywVCc3ZaUtOtC76w==
   /cypress/6.3.0:
     dependencies:
       '@cypress/listr-verbose-renderer': 0.4.1
@@ -2964,10 +2980,24 @@ packages:
       node: '>=0.10'
     resolution:
       integrity: sha1-hTz6D3y+L+1d4gMmuN1YEDX24vA=
+  /date-fns-tz/1.0.12_date-fns@2.16.1:
+    dependencies:
+      date-fns: 2.16.1
+    dev: false
+    peerDependencies:
+      date-fns: '>=2.0.0-alpha.13'
+    resolution:
+      integrity: sha512-Ca+9pjGkU90XDHnclfSjz9o7g/ZqyYyYI0aCYmbf65P75oy8gktuaRslO3UPXl3ADgAnF9/KCykQkpU3/xvtWQ==
   /date-fns/1.30.1:
     dev: true
     resolution:
       integrity: sha512-hBSVCvSmWC+QypYObzwGOd9wqdDpOt+0wl0KbU+R+uuZBS1jN8VsD1ss3irQDknRj5NvxiTF6oj/nDRnN/UQNw==
+  /date-fns/2.16.1:
+    dev: false
+    engines:
+      node: '>=0.11'
+    resolution:
+      integrity: sha512-sAJVKx/FqrLYHAQeN7VpJrPhagZc9R4ImZIWYRFZaaohR3KzmuK88touwsSwSVT8Qcbd4zoDsnGfX4GFB4imyQ==
   /dayjs/1.10.4:
     dev: false
     resolution:
@@ -4714,6 +4744,10 @@ packages:
       node: '>=4.0.0'
     resolution:
       integrity: sha512-qH0WSMBtn/oHuwjy/NucEgbx5dbxxnxup9s4PVXJUDHZBQY+s0NWA9rJf53RBnQZxfch7euUui7hpoAPvALZdA==
+  /loadjs/4.2.0:
+    dev: true
+    resolution:
+      integrity: sha512-AgQGZisAlTPbTEzrHPb6q+NYBMD+DP9uvGSIjSUM5uG+0jG15cb8axWpxuOIqrmQjn6scaaH8JwloiP27b2KXA==
   /locate-path/5.0.0:
     dependencies:
       p-locate: 4.1.0
@@ -5481,6 +5515,16 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-t1Ax8KUvV3FFII8ltczPn2tJdjqbd1sIzu6t4JL7nQ3EyeL/lTrj5PWKb06ic5/6XYDr65rQ4uzQEGN70/6X5w==
+  /plyr/3.6.4:
+    dependencies:
+      core-js: 3.8.3
+      custom-event-polyfill: 1.0.7
+      loadjs: 4.2.0
+      rangetouch: 2.0.1
+      url-polyfill: 1.1.12
+    dev: true
+    resolution:
+      integrity: sha512-l0EKsRxhwGtzpPJhs+okusogXRiJaagNaGYlj+iiyqyNzjh0ef5bhxNLsKhpsGvvZMnfV/KbOvIva+qeNCA9ng==
   /postcss-html/0.36.0_4fe96148bf77e6cee792ae366c9083f9:
     dependencies:
       htmlparser2: 3.10.1
@@ -5731,6 +5775,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-vYl3iOX+4CKUWuxGi9Ukhie6fsqXqS9FE2Zaic4tNFD2N2QQaXOMFbuKK4QmDHC0JO6B1Zp41J0LpT0oR68amQ==
+  /rangetouch/2.0.1:
+    dev: true
+    resolution:
+      integrity: sha512-sln+pNSc8NGaHoLzwNBssFSf/rSYkqeBXzX1AtJlkJiUaVSJSbRAWJk+4omsXkN+EJalzkZhWQ3th1m0FpR5xA==
   /read-pkg-up/7.0.1:
     dependencies:
       find-up: 4.1.0
@@ -7288,6 +7336,12 @@ packages:
     dev: true
     resolution:
       integrity: sha512-KZY45m+t3fb3Kwlqsic0PIos1lgTNXBEC5N/AhI3aNEcryrd0nXohZMbVPMkcNYdbLjY1IUJAXWYAO6/RGJnKw==
+  /tippy.js/6.2.7:
+    dependencies:
+      '@popperjs/core': 2.6.0
+    dev: false
+    resolution:
+      integrity: sha512-k+kWF9AJz5xLQHBi3K/XlmJiyu+p9gsCyc5qZhxxGaJWIW8SMjw1R+C7saUnP33IM8gUhDA2xX//ejRSwqR0tA==
   /tmp/0.0.33:
     dependencies:
       os-tmpdir: 1.0.2
@@ -7587,6 +7641,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==
+  /url-polyfill/1.1.12:
+    dev: true
+    resolution:
+      integrity: sha512-mYFmBHCapZjtcNHW0MDq9967t+z4Dmg5CJ0KqysK3+ZbyoNOWQHksGCTWwDhxGXllkWlOc10Xfko6v4a3ucM6A==
   /url/0.11.0:
     dependencies:
       punycode: 1.3.2
@@ -7608,6 +7666,21 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==
+  /v-calendar/3.0.0-alpha.3_@popperjs+core@2.6.0+vue@3.0.5:
+    dependencies:
+      '@popperjs/core': 2.6.0
+      '@types/lodash': 4.14.168
+      core-js: 3.8.3
+      date-fns: 2.16.1
+      date-fns-tz: 1.0.12_date-fns@2.16.1
+      lodash: 4.17.20
+      vue: 3.0.5
+    dev: false
+    peerDependencies:
+      '@popperjs/core': ^2.4.0
+      vue: ^3.0.0
+    resolution:
+      integrity: sha512-Yj9Virc4IEl2gL7AYAYLIDMsEuQPwU0Ugh4yfMvLRTuyxTmzGO8jjNVbQiUyj3kqPffb/Sw4EcdTepYM68syeA==
   /v8-compile-cache/2.2.0:
     dev: true
     resolution:
@@ -7797,6 +7870,15 @@ packages:
     dev: false
     resolution:
       integrity: sha512-7i+AGKJTThZnMEkhIPgrZjyAX+fXV7/rGdg+CV283uZZwCxwiMXaBLTmIc5RTA4uwGnT+E6eJle3mXQfM2OD3A==
+  /vue-tippy/6.0.0-alpha.24_vue@3.0.5:
+    dependencies:
+      tippy.js: 6.2.7
+      vue: 3.0.5
+    dev: false
+    peerDependencies:
+      vue: ^3.0.0
+    resolution:
+      integrity: sha512-oHXIwPD0nrmocDT2IdEfKCgFVg+nVfrdqKYgOJ9eaOM9ornFiV8xHswiKeRK46DbMlsbCKO3mWNJ/uvQsC5acw==
   /vue/3.0.5:
     dependencies:
       '@vue/compiler-dom': 3.0.5
@@ -8130,6 +8212,7 @@ specifiers:
   '@iconify/iconify': 1.0.7
   '@iconify/json': ^1.1.293
   '@intlify/vite-plugin-vue-i18n': 1.0.0-beta.12
+  '@popperjs/core': ^2.6.0
   '@types/markdown-it': 12.0.1
   '@types/node': 14.14.22
   '@types/nprogress': 0.2.0
@@ -8166,6 +8249,7 @@ specifiers:
   notyf: 3.9.0
   npm-run-all: 4.1.5
   nprogress: 0.2.0
+  plyr: ^3.6.4
   prettier: 2.2.1
   prismjs: 1.23.0
   rimraf: 3.0.2
@@ -8178,7 +8262,9 @@ specifiers:
   stylelint-config-standard: 20.0.0
   stylelint-scss: 3.18.0
   tiny-slider: 2.9.3
+  tippy.js: ^6.2.7
   typescript: 4.1.3
+  v-calendar: 3.0.0-alpha.3
   vite: 2.0.0-beta.52
   vite-plugin-components: 0.6.6
   vite-plugin-fonts: 0.1.5
@@ -8191,5 +8277,6 @@ specifiers:
   vue-i18n: 9.0.0-rc.2
   vue-router: 4.0.3
   vue-scrollto: 2.20.0
+  vue-tippy: ^6.0.0-alpha.24
   vue3-apexcharts: 1.1.1
   yorkie: 2.0.0
