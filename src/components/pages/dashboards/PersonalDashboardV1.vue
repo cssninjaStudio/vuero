@@ -32,51 +32,46 @@ import { profitChartOptions } from '/@src/composition/state/charts/apexcharts/ex
               <div class="quick-stats-inner">
                 <!--Stat-->
                 <div class="quick-stat">
-                  <div class="media-flex-center">
-                    <V-IconBox color="purple" rounded>
-                      <i class="lnil lnil-analytics-alt-1"></i>
-                    </V-IconBox>
-                    <div class="flex-meta">
-                      <span>2,870</span>
-                      <span>Sales this month</span>
-                    </div>
-                  </div>
+                  <V-Block title="2,870" subtitle="Sales this month" center>
+                    <template #icon>
+                      <V-IconBox color="purple" rounded>
+                        <i class="lnil lnil-analytics-alt-1"></i>
+                      </V-IconBox>
+                    </template>
+                  </V-Block>
                 </div>
+
                 <!--Stat-->
                 <div class="quick-stat">
-                  <div class="media-flex-center">
-                    <V-IconBox color="orange" rounded>
-                      <i class="lnil lnil-handshake"></i>
-                    </V-IconBox>
-                    <div class="flex-meta">
-                      <span>131</span>
-                      <span>New users</span>
-                    </div>
-                  </div>
+                  <V-Block title="131" subtitle="New users" center>
+                    <template #icon>
+                      <V-IconBox color="orange" rounded>
+                        <i class="lnil lnil-handshake"></i>
+                      </V-IconBox>
+                    </template>
+                  </V-Block>
                 </div>
+
                 <!--Stat-->
                 <div class="quick-stat">
-                  <div class="media-flex-center">
-                    <V-IconBox color="green" rounded>
-                      <i class="lnil lnil-diamond-alt"></i>
-                    </V-IconBox>
-                    <div class="flex-meta">
-                      <span>$398,49</span>
-                      <span>Earned today</span>
-                    </div>
-                  </div>
+                  <V-Block title="$398,49" subtitle="Earned today" center>
+                    <template #icon>
+                      <V-IconBox color="green" rounded>
+                        <i class="lnil lnil-diamond-alt"></i>
+                      </V-IconBox>
+                    </template>
+                  </V-Block>
                 </div>
+
                 <!--Stat-->
                 <div class="quick-stat">
-                  <div class="media-flex-center">
-                    <V-IconBox color="info" rounded>
-                      <i class="lnil lnil-bank"></i>
-                    </V-IconBox>
-                    <div class="flex-meta">
-                      <span>$6542,31</span>
-                      <span>Total balance</span>
-                    </div>
-                  </div>
+                  <V-Block title="$6542,31" subtitle="Total balance" center>
+                    <template #icon>
+                      <V-IconBox color="info" rounded>
+                        <i class="lnil lnil-bank"></i>
+                      </V-IconBox>
+                    </template>
+                  </V-Block>
                 </div>
               </div>
             </div>
@@ -117,7 +112,6 @@ import { profitChartOptions } from '/@src/composition/state/charts/apexcharts/ex
               <V-Avatar initials="SC" color="h-purple" />
               <V-Avatar picture="/images/avatars/photos/39.jpg" />
             </div>
-            <div></div>
             <apexchart
               :height="teamGaugeOptions.chart.height"
               :type="teamGaugeOptions.chart.type"
@@ -206,7 +200,7 @@ import { profitChartOptions } from '/@src/composition/state/charts/apexcharts/ex
             border-radius: 6px;
             transition: all 0.3s;
 
-            .media-flex-center {
+            ::v-deep(.media-flex-center) {
               .flex-meta {
                 span {
                   &:first-child {
