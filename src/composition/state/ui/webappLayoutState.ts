@@ -1,8 +1,6 @@
 import { computed, ref, defineAsyncComponent } from 'vue'
+import WebappLayout from '/@src/layouts/WebappLayout.vue'
 
-const WebappLayout = defineAsyncComponent(
-  () => import('/@src/layouts/WebappLayout.vue')
-)
 const WebappV2Layout = defineAsyncComponent(
   () => import('/@src/layouts/WebappV2Layout.vue')
 )

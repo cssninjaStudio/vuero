@@ -1,5 +1,9 @@
+<script setup lang="ts">
+import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
+</script>
+
 <template>
-  <div class="main-sidebar is-curved">
+  <div class="main-sidebar" :class="[activeSidebar === 'none' && 'is-curved']">
     <div class="sidebar-brand">
       <RouterLink :to="{ name: 'index' }">
         <AnimatedLogo width="38px" height="38px" />

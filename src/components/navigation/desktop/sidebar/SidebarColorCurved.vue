@@ -1,5 +1,12 @@
+<script setup lang="ts">
+import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
+</script>
+
 <template>
-  <div class="main-sidebar is-colored is-curved">
+  <div
+    class="main-sidebar is-colored"
+    :class="[activeSidebar === 'none' && 'is-curved']"
+  >
     <div class="sidebar-brand">
       <RouterLink :to="{ name: 'index' }">
         <AnimatedLogo light width="38px" height="38px" />

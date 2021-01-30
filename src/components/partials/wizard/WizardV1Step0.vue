@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { defineEmit } from 'vue'
 
-defineEmit(['next'])
+const emit = defineEmit(['next'])
 </script>
 
 <template>

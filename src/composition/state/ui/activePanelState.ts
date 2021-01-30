@@ -6,6 +6,9 @@ import type { Ref } from 'vue'
 import { useStorage } from '@vueuse/core'
 
 /* ActivePanelState data */
-export const activePanel = useStorage('active-panel', 'none') as Ref<
-  'none' | 'search' | 'languages' | 'activity' | 'task'
->
+type ActivePanelId = 'none' | 'search' | 'languages' | 'activity' | 'task'
+
+export const activePanel = useStorage(
+  'active-panel',
+  'none'
+) as Ref<ActivePanelId>

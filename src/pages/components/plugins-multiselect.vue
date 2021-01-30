@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
-import { ref, onMounted } from 'vue'
+import { onMounted } from 'vue'
 
 import useMakrdownToc from '/@src/composition/use/useMarkdownToc'
 

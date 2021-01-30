@@ -24,12 +24,12 @@ defineProps({
       'I can be used as is in any layout. L Cards are simple containers that can hold any type of content, from simple plain text to more structured markup.',
   },
   radius: {
-    type: Boolean,
+    type: String,
     default: 'regular',
   },
   loading: {
     type: Boolean,
-    default: 'regular',
+    default: false,
   },
 })
 </script>

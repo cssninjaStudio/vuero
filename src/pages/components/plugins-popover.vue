@@ -77,6 +77,8 @@ useHead({
         <div class="column is-12">
           <!--Text Popover-->
           <PopoverBaseDocumentation />
+
+          <PopoverComplexDocumentation />
         </div>
       </div>
     </div>
