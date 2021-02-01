@@ -437,3 +437,64 @@
     }
   }
 }
+
+/* ==========================================================================
+0. V-Calendar
+========================================================================== */
+
+.vc-pane-container {
+  .vc-pane-layout {
+    font-family: $font;
+
+    .vc-pane {
+      padding: 1rem;
+    }
+
+    .vc-header {
+      .vc-title {
+        font-size: 1rem;
+        font-weight: 500;
+      }
+    }
+
+    .vc-weeks {
+      margin-top: 0.75rem;
+
+      .vc-weekday {
+        font-weight: 400;
+      }
+
+      .vc-day {
+        .vc-day-layer {
+          .vc-day-content {
+            //font-size: .9rem !important;
+          }
+        }
+      }
+    }
+  }
+
+  .vc-day-content {
+    font-size: 0.9rem !important;
+    font-weight: 500;
+  }
+
+  .vc-arrows-container {
+    top: 1.3rem;
+    padding: 8px 24px;
+
+    .vc-arrow {
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      svg {
+        position: relative;
+        top: -1px;
+        height: 20px;
+        width: 20px;
+      }
+    }
+  }
+}

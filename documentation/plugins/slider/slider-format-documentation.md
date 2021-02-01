@@ -1,6 +1,5 @@
 ---
 value: 54
-format: function (value) { return `${value}%` }
 ---
 
 ### Tooltip format
@@ -36,7 +35,7 @@ const format = function (value) {
     <V-Field class="pt-5 px-4 has-curved-tooltip">
         <V-Control>
             <Slider id="slider-example-format" v-model="frontmatter.value" 
-                :format="frontmatter.format" />
+                :format="formatAsPercent" />
         </V-Control>
     </V-Field>
   </div>
