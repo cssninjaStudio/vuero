@@ -1,13 +1,35 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
-import { onMounted } from 'vue'
+import { onMounted, reactive, ref } from 'vue'
 
 import {
   activeSidebar,
   toggleSidebar,
 } from '/@src/composition/state/ui/activeSidebarState'
 
-const options = {
+const addItem = () => {
+  options.data.data.unshift([
+    'AAAPearl Carlson',
+    6231,
+    'Cobourg',
+    '2014/31/08',
+    '100%',
+  ])
+}
+
+const autoupdate = ref(true)
+const randUpdate = () => {
+  const max = options.data.data.length
+  const index = Math.floor(Math.random() * max)
+
+  options.data.data[index][1] = Math.floor(Math.random() * 5000)
+}
+
+const onSort = (args: any) => {
+  console.log('onSort', args)
+}
+
+const options = reactive({
   perPageSelect: [10, 20, 30, 40, 50, 100, 200, 300, 400, 500, 1000],
   perPage: 10,
   data: {
@@ -63,7 +85,7 @@ const options = {
       ['Hilda Whitley', 3514, 'New Sarepta', '2011/05/07', '94%'],
       ['Roth Cherry', 4006, 'Flin Flon', '2008/02/09', '8%'],
       ['Lareina Jones', 8642, 'East Linton', '2009/07/08', '21%'],
-      ['Joshua Weiss', 2289, 'Saint-L�onard', '2010/15/01', '52%'],
+      ['Joshua Weiss', 2289, 'Saint-Léonard', '2010/15/01', '52%'],
       ['Kiona Lowery', 5952, 'Inuvik', '2002/17/12', '72%'],
       ['Nina Rush', 7567, 'Bo‘lhe', '2008/27/01', '6%'],
       ['Palmer Parker', 2000, 'Stade', '2012/24/07', '58%'],
@@ -123,10 +145,12 @@ const options = {
       ['Pearl Carlson', 6231, 'Cobourg', '2014/31/08', '100%'],
     ],
   },
-}
+})
 
 onMounted(() => {
   activeSidebar.value = 'components'
+
+  setInterval(randUpdate, 10000)
 })
 
 useHead({
@@ -196,7 +220,21 @@ useHead({
           <!--Simple Autocomplete-->
           <AutocompleteBaseDocumentation />
 
-          <V-SimpleDatatables :options="options" />
+          <div class="buttons">
+            <V-Button @click="addItem">Add item</V-Button>
+            <V-Button @click="randUpdate">Update random item</V-Button>
+            <label
+              ><input v-model="autoupdate" type="checkbox" /> autoupdate</label
+            >
+          </div>
+
+          <div class="card">
+            <V-SimpleDatatables
+              :options="options"
+              :autoupdate="autoupdate"
+              @sort="onSort"
+            />
+          </div>
 
           <div class="demo-spacer"></div>
         </div>
