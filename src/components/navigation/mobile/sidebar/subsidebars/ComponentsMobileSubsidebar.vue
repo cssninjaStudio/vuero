@@ -149,10 +149,26 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
           <ul>
             <li>
               <RouterLink
-                :to="{ name: 'components-plugins-autocomplete' }"
+                :to="{ name: 'components-plugins-toasts' }"
                 class="is-submenu"
                 ><i class="iconify" data-icon="feather:circle"></i
-                >Autocomplete</RouterLink
+                >Notyf</RouterLink
+              >
+            </li>
+            <li>
+              <RouterLink
+                :to="{ name: 'components-plugins-lightgallery' }"
+                class="is-submenu"
+                ><i class="iconify" data-icon="feather:circle"></i>Photo
+                Swipe</RouterLink
+              >
+            </li>
+            <li>
+              <RouterLink
+                :to="{ name: 'components-plugins-vdatatable' }"
+                class="is-submenu"
+                ><i class="iconify" data-icon="feather:circle"></i
+                >V-Datatable</RouterLink
               >
             </li>
             <li>
@@ -160,31 +176,15 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
                 :to="{ name: 'components-plugins-datepicker' }"
                 class="is-submenu"
                 ><i class="iconify" data-icon="feather:circle"></i
-                >Datepicker</RouterLink
-              >
-            </li>
-            <li>
-              <RouterLink
-                :to="{ name: 'components-plugins-lightgallery' }"
-                class="is-submenu"
-                ><i class="iconify" data-icon="feather:circle"></i>Light
-                Gallery</RouterLink
-              >
-            </li>
-            <li>
-              <RouterLink
-                :to="{ name: 'components-plugins-videogallery' }"
-                class="is-submenu"
-                ><i class="iconify" data-icon="feather:circle"></i>Video
-                Gallery</RouterLink
+                >V-Calendar</RouterLink
               >
             </li>
             <li>
               <RouterLink
                 :to="{ name: 'components-plugins-video-player' }"
                 class="is-submenu"
-                ><i class="iconify" data-icon="feather:circle"></i>Video
-                Player</RouterLink
+                ><i class="iconify" data-icon="feather:circle"></i
+                >Vue-Plyr</RouterLink
               >
             </li>
             <li>
@@ -203,20 +203,13 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
                 >Vue-Slider</RouterLink
               >
             </li>
-            <li>
-              <RouterLink
-                :to="{ name: 'components-plugins-toasts' }"
-                class="is-submenu"
-                ><i class="iconify" data-icon="feather:circle"></i
-                >Notyf</RouterLink
-              >
-            </li>
+
             <li>
               <RouterLink
                 :to="{ name: 'components-plugins-popover' }"
                 class="is-submenu"
                 ><i class="iconify" data-icon="feather:circle"></i>
-                Popover</RouterLink
+                V-Tippy</RouterLink
               >
             </li>
           </ul>

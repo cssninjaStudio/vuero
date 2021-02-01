@@ -5,11 +5,10 @@ state:
     end:
 ---
 
-### V-Calendar Range Datepicker
+### DateRangepicker
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-Summum ením bonum exposuit vacuitatem doloris; Haeret in salebra.
-Eademne, quae restincta siti? Quid, quod res alia tota est?
+`<V-Calendar />` can be turned into a date range picker if needed. Check the
+code example for more details about usage.
 
 <!--code-->
 
@@ -24,7 +23,7 @@ const date = reactive({
 </script>
 
 <template>
-  <v-date-picker v-model="range" is-range color="green">
+  <v-date-picker v-model="range" is-range color="green" trim-weeks>
     <template #default="{ inputValue, inputEvents }">
       <V-Field addons>
         <V-Control>
@@ -58,20 +57,20 @@ const date = reactive({
 <V-Field addons>
 <V-Control>
 <input
-          :value="inputValue.start"
-          v-on="inputEvents.start"
-          class="input"
-        />
+            :value="inputValue.start"
+            v-on="inputEvents.start"
+            class="input"
+          />
 </V-Control>
 <V-Control>
 <a class="button is-static"><i class="iconify" data-icon="feather:arrow-right"></i></a>
 </V-Control>
 <V-Control>
 <input
-          :value="inputValue.end"
-          v-on="inputEvents.end"
-          class="input"
-        />
+            :value="inputValue.end"
+            v-on="inputEvents.end"
+            class="input"
+          />
 </V-Control>
 </V-Field>
 </template>

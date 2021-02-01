@@ -820,7 +820,7 @@ defineProps({
     <div class="columns is-multiline">
       <div class="column is-3">
         <RouterLink
-          :to="{ name: 'components-plugins-autocomplete' }"
+          :to="{ name: 'components-plugins-vdatatable' }"
           class="component-box"
         >
           <div class="component">
@@ -837,7 +837,7 @@ defineProps({
               loading="lazy"
             />
           </div>
-          <div class="component-title">Autocomplete</div>
+          <div class="component-title">V-Datatable</div>
         </RouterLink>
       </div>
 
@@ -860,7 +860,7 @@ defineProps({
               loading="lazy"
             />
           </div>
-          <div class="component-title">Datepicker</div>
+          <div class="component-title">V-Calendar</div>
         </RouterLink>
       </div>
 
@@ -883,30 +883,7 @@ defineProps({
               loading="lazy"
             />
           </div>
-          <div class="component-title">Light Gallery</div>
-        </RouterLink>
-      </div>
-
-      <div class="column is-3">
-        <RouterLink
-          :to="{ name: 'components-plugins-videogallery' }"
-          class="component-box"
-        >
-          <div class="component">
-            <img
-              class="light-image-l"
-              src="/images/icons/components/video-gallery.svg"
-              alt=""
-              loading="lazy"
-            />
-            <img
-              class="dark-image-l"
-              src="/images/icons/components/video-gallery-dark.svg"
-              alt=""
-              loading="lazy"
-            />
-          </div>
-          <div class="component-title">Video Gallery</div>
+          <div class="component-title">Photo Swipe</div>
         </RouterLink>
       </div>
 
@@ -929,7 +906,7 @@ defineProps({
               loading="lazy"
             />
           </div>
-          <div class="component-title">Video Player</div>
+          <div class="component-title">Vue-Plyr</div>
         </RouterLink>
       </div>
 
@@ -952,7 +929,7 @@ defineProps({
               loading="lazy"
             />
           </div>
-          <div class="component-title">Toasts</div>
+          <div class="component-title">Notyf</div>
         </RouterLink>
       </div>
 
@@ -975,7 +952,7 @@ defineProps({
               loading="lazy"
             />
           </div>
-          <div class="component-title">Popovers</div>
+          <div class="component-title">V-Tippy</div>
         </RouterLink>
       </div>
     </div>

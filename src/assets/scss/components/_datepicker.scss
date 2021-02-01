@@ -13,7 +13,7 @@
 1. Pickaday Datepicker
 ========================================================================== */
 
-.pika-single {
+/* .pika-single {
   margin-top: 6px;
   border-radius: 6px;
   border: 1px solid darken($fade-grey, 3%);
@@ -80,13 +80,13 @@
       }
     }
   }
-}
+} */
 
 /* ==========================================================================
 2. Pickaday Datepicker Dark mode
 ========================================================================== */
 
-.is-dark {
+/* .is-dark {
   .pika-single {
     background: $dark-sidebar !important;
     border-color: lighten($dark-sidebar, 8%) !important;
@@ -133,13 +133,13 @@
       }
     }
   }
-}
+} */
 
 /* ==========================================================================
 3. Bulma Datetimepickers
 ========================================================================== */
 
-.is-bulma-timepicker {
+/* .is-bulma-timepicker {
   .datetimepicker-dummy::before {
     content: '\f017' !important;
   }
@@ -194,13 +194,13 @@
   .datetimepicker-footer {
     padding: 20px 10px !important;
   }
-}
+} */
 
 /* ==========================================================================
 4. Bulma Datetimepickers Dark mode
 ========================================================================== */
 
-.is-dark {
+/* .is-dark {
   .datetimepicker-dummy {
     .datetimepicker-dummy-wrapper {
       background: lighten($dark-sidebar, 2%);
@@ -372,13 +372,13 @@
   .datetimepicker-footer {
     background: darken($dark-sidebar, 2%);
   }
-}
+} */
 
 /* ==========================================================================
 5. Clock Timepicker
 ========================================================================== */
 
-.is-clock-timepicker {
+/* .is-clock-timepicker {
   position: relative;
 
   .control {
@@ -422,13 +422,13 @@
     font-family: $font;
     transition: backgroundimage 0.25s;
   }
-}
+} */
 
 /* ==========================================================================
 5. Clock Timepicker Dark mode
 ========================================================================== */
 
-.is-dark {
+/* .is-dark {
   .is-clock-timepicker {
     .control {
       .chevron {
@@ -436,7 +436,7 @@
       }
     }
   }
-}
+} */
 
 /* ==========================================================================
 0. V-Calendar
@@ -462,6 +462,7 @@
 
       .vc-weekday {
         font-weight: 400;
+        font-size: 0.9rem;
       }
 
       .vc-day {
@@ -494,6 +495,203 @@
         top: -1px;
         height: 20px;
         width: 20px;
+      }
+    }
+  }
+}
+
+.vc-popover-content-wrapper {
+  .vc-nav-popover-container {
+    .vc-nav-container {
+      padding: 0.75rem;
+
+      .vc-nav-header {
+        margin-bottom: 0.75rem;
+
+        .vc-nav-title,
+        .vc-nav-arrow {
+          &:active,
+          &:focus {
+            outline: none !important;
+            border-color: transparent !important;
+          }
+        }
+
+        .vc-nav-arrow {
+          position: relative;
+          top: 0.25rem;
+          border-radius: 50%;
+          width: 24px;
+          height: 24px;
+          min-width: 24px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: $white;
+
+          svg {
+            position: relative;
+            top: -1px;
+            height: 20px;
+            width: 20px;
+            stroke: $white;
+          }
+        }
+      }
+
+      .vc-nav-items {
+        .vc-nav-item {
+          color: $white;
+          font-family: $font;
+          font-weight: 400;
+          font-size: 0.75rem;
+          text-transform: uppercase;
+          padding-top: 0.5rem;
+          padding-bottom: 0.5rem;
+
+          &.is-active {
+            background: $primary !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+.vc-time-content {
+  .vc-time-date {
+    > span {
+      font-size: 0.9rem;
+    }
+  }
+
+  .vc-am-pm {
+    > button {
+      font-family: $font;
+      font-size: 0.85rem;
+    }
+  }
+}
+
+.vc-time-picker {
+  .vc-date-time {
+    .vc-date {
+      > span {
+        font-family: $font;
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+1. V-Calendar Dark mode
+========================================================================== */
+
+.is-dark {
+  .vc-popover-content-wrapper {
+    .vc-popover-caret {
+      border-color: $dark-sidebar !important;
+    }
+  }
+
+  .vc-container {
+    background: $dark-sidebar !important;
+    border: 1px solid lighten($dark-sidebar, 8%) !important;
+  }
+
+  .vc-pane-container {
+    .vc-pane-layout {
+      .vc-header {
+        .vc-title {
+          color: $dark-dark-text !important;
+        }
+      }
+    }
+
+    .vc-day-content {
+      color: $dark-dark-text;
+
+      &:hover {
+        background: lighten($dark-sidebar, 4%) !important;
+      }
+    }
+
+    .vc-arrows-container {
+      .vc-arrow {
+        &:hover {
+          background: lighten($dark-sidebar, 4%) !important;
+        }
+      }
+    }
+  }
+
+  .vc-popover-content-wrapper {
+    .vc-nav-popover-container {
+      background: darken($dark-sidebar, 4%) !important;
+      border-color: lighten($dark-sidebar, 4%) !important;
+
+      .vc-nav-container {
+        .vc-nav-header {
+          .vc-nav-title,
+          .vc-nav-arrow {
+            &:hover {
+              background: lighten($dark-sidebar, 2%) !important;
+            }
+          }
+        }
+
+        .vc-nav-items {
+          .vc-nav-item {
+            color: $white;
+
+            &:not(.is-active):hover {
+              background: lighten($dark-sidebar, 2%) !important;
+            }
+
+            &.is-active {
+              background: $primary !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .vc-time-picker {
+    &.vc-bordered {
+      border-color: lighten($dark-sidebar, 12%) !important;
+    }
+
+    .vc-date-time {
+      .vc-date {
+        .vc-time-weekday {
+          color: $light-text !important;
+        }
+      }
+    }
+
+    .vc-time-content {
+      .vc-time-date {
+        .vc-time-weekday {
+          color: $light-text !important;
+        }
+      }
+
+      .vc-select {
+        select {
+          background: darken($dark-sidebar, 4%) !important;
+          border-color: darken($dark-sidebar, 4%) !important;
+          color: $dark-dark-text !important;
+        }
+      }
+
+      .vc-am-pm {
+        background: darken($dark-sidebar, 4%) !important;
+
+        > button {
+          color: $white !important;
+        }
       }
     }
   }

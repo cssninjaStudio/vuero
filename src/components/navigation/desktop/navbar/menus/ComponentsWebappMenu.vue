@@ -186,51 +186,47 @@ const activeTab = ref<TabId>('components')
               <div class="column is-3">
                 <ul>
                   <li>
+                    <RouterLink :to="{ name: 'components-plugins-toasts' }">
+                      <span>Notyf</span>
+                      <i class="iconify" data-icon="feather:circle"></i>
+                    </RouterLink>
+                  </li>
+                  <li>
                     <RouterLink
-                      :to="{ name: 'components-plugins-autocomplete' }"
+                      :to="{ name: 'components-plugins-lightgallery' }"
                     >
-                      <span>Autocomplete</span>
+                      <span>Photo Swipe</span>
+                      <i class="iconify" data-icon="feather:circle"></i>
+                    </RouterLink>
+                  </li>
+                </ul>
+              </div>
+              <div class="column is-3">
+                <ul>
+                  <li>
+                    <RouterLink
+                      :to="{ name: 'components-plugins-video-player' }"
+                    >
+                      <span>Vue-Plyr</span>
+                      <i class="iconify" data-icon="feather:circle"></i>
+                    </RouterLink>
+                  </li>
+                </ul>
+              </div>
+              <div class="column is-3">
+                <ul>
+                  <li>
+                    <RouterLink :to="{ name: 'components-plugins-vdatatable' }">
+                      <span>V-Datatable</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'components-plugins-datepicker' }">
-                      <span>Datepicker</span>
+                      <span>V-Calendar</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
-                </ul>
-              </div>
-              <div class="column is-3">
-                <ul>
-                  <li>
-                    <RouterLink
-                      :to="{ name: 'components-plugins-lightgallery' }"
-                    >
-                      <span>Light Gallery</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
-                    </RouterLink>
-                  </li>
-                  <li>
-                    <RouterLink
-                      :to="{ name: 'components-plugins-videogallery' }"
-                    >
-                      <span>Video Gallery</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
-                    </RouterLink>
-                  </li>
-                  <li>
-                    <RouterLink
-                      :to="{ name: 'components-plugins-video-player' }"
-                    >
-                      <span>Video Player</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
-                    </RouterLink>
-                  </li>
-                </ul>
-              </div>
-              <div class="column is-3">
-                <ul>
                   <li>
                     <RouterLink
                       :to="{ name: 'components-plugins-multiselect' }"
@@ -245,15 +241,10 @@ const activeTab = ref<TabId>('components')
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
-                  <li>
-                    <RouterLink :to="{ name: 'components-plugins-toasts' }">
-                      <span>Notyf</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
-                    </RouterLink>
-                  </li>
+
                   <li>
                     <RouterLink :to="{ name: 'components-plugins-popover' }">
-                      <span>Popovers</span>
+                      <span>V-Tippy</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>

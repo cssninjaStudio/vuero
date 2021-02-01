@@ -2,11 +2,13 @@
 import { useHead } from '@vueuse/head'
 import { onMounted, ref } from 'vue'
 
+import useMakrdownToc from '/@src/composition/use/useMarkdownToc'
 import {
   activeSidebar,
   toggleSidebar,
 } from '/@src/composition/state/ui/activeSidebarState'
 
+const { markdownContainer, toc } = useMakrdownToc()
 const date = ref(null)
 
 onMounted(() => {
@@ -14,7 +16,7 @@ onMounted(() => {
 })
 
 useHead({
-  title: 'Components - Plugins Datepicker - Vuero',
+  title: 'Components - Plugins V-Calendar - Vuero',
 })
 </script>
 
@@ -41,7 +43,7 @@ useHead({
       </div>
 
       <div class="title-wrap">
-        <h1 class="title is-4">Datepicker</h1>
+        <h1 class="title is-4">V-Calendar</h1>
       </div>
 
       <Toolbar />
@@ -69,19 +71,32 @@ useHead({
           </li>
           <li>
             <a>
-              <span>Datepicker</span>
+              <span>V-Calendar</span>
             </a>
           </li>
         </ul>
       </nav>
 
       <div class="columns is-multiline">
-        <div class="column is-12">
+        <div
+          ref="markdownContainer"
+          :class="[toc.length > 0 ? 'is-9' : 'is-12']"
+          class="column"
+        >
           <!--Datepicker-->
           <DatepickerBaseDocumentation />
 
           <!--Datepicker-->
           <DatepickerRangeDocumentation />
+
+          <!--Datepicker-->
+          <DatepickerTimeDocumentation />
+
+          <!--Datepicker-->
+          <DatepickerTimeSingleDocumentation />
+        </div>
+        <div v-if="toc.length" class="column is-3">
+          <DocumentationToc :toc="toc" />
         </div>
       </div>
     </div>

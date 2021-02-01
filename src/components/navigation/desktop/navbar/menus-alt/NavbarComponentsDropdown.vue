@@ -323,14 +323,14 @@ const { dropdownElement, isOpen, open } = useDropdown()
 
                 <div class="column-content">
                   <RouterLink
-                    :to="{ name: 'components-plugins-autocomplete' }"
+                    :to="{ name: 'components-plugins-vdatatable' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
                       <i class="lnil lnil-html5"></i>
                     </div>
                     <div class="meta">
-                      <span>Autocomplete</span>
+                      <span>V-Datatable</span>
                     </div>
                   </RouterLink>
                   <RouterLink
@@ -341,7 +341,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                       <i class="lnil lnil-html5"></i>
                     </div>
                     <div class="meta">
-                      <span>Datepicker</span>
+                      <span>V-Calendar</span>
                     </div>
                   </RouterLink>
                 </div>
@@ -358,6 +358,17 @@ const { dropdownElement, isOpen, open } = useDropdown()
 
                 <div class="column-content">
                   <RouterLink
+                    :to="{ name: 'components-plugins-toasts' }"
+                    class="dropdown-item is-media"
+                  >
+                    <div class="icon">
+                      <i class="lnil lnil-html5"></i>
+                    </div>
+                    <div class="meta">
+                      <span>Notyf</span>
+                    </div>
+                  </RouterLink>
+                  <RouterLink
                     :to="{ name: 'components-plugins-lightgallery' }"
                     class="dropdown-item is-media"
                   >
@@ -365,18 +376,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                       <i class="lnil lnil-html5"></i>
                     </div>
                     <div class="meta">
-                      <span>Light Gallery</span>
-                    </div>
-                  </RouterLink>
-                  <RouterLink
-                    :to="{ name: 'components-plugins-videogallery' }"
-                    class="dropdown-item is-media"
-                  >
-                    <div class="icon">
-                      <i class="lnil lnil-html5"></i>
-                    </div>
-                    <div class="meta">
-                      <span>Video Gallery</span>
+                      <span>Photo Swipe</span>
                     </div>
                   </RouterLink>
                   <RouterLink
@@ -387,7 +387,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                       <i class="lnil lnil-html5"></i>
                     </div>
                     <div class="meta">
-                      <span>Video Player</span>
+                      <span>Vue-Plyr</span>
                     </div>
                   </RouterLink>
                 </div>
@@ -425,17 +425,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                       <span>Vue-Slider</span>
                     </div>
                   </RouterLink>
-                  <RouterLink
-                    :to="{ name: 'components-plugins-toasts' }"
-                    class="dropdown-item is-media"
-                  >
-                    <div class="icon">
-                      <i class="lnil lnil-html5"></i>
-                    </div>
-                    <div class="meta">
-                      <span>Notyf</span>
-                    </div>
-                  </RouterLink>
+
                   <RouterLink
                     :to="{ name: 'components-plugins-popover' }"
                     class="dropdown-item is-media"
@@ -444,7 +434,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                       <i class="lnil lnil-html5"></i>
                     </div>
                     <div class="meta">
-                      <span>Popover</span>
+                      <span>V-Tippy</span>
                     </div>
                   </RouterLink>
                 </div>

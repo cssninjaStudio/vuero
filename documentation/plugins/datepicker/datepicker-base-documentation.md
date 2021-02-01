@@ -3,11 +3,12 @@ state:
   date:
 ---
 
-### V-Calendar Datepicker
+### Datepicker
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-Summum ením bonum exposuit vacuitatem doloris; Haeret in salebra.
-Eademne, quae restincta siti? Quid, quod res alia tota est?
+Vuero ships with the `<V-Calendar />` component, a multipurpose calendar /
+datepicker component for your forms. Below is a basic example. Please check the
+[plugin documentation](https://vcalendar.io/) for more details
+about usage.
 
 <!--code-->
 
@@ -19,7 +20,7 @@ const date = ref(null)
 </script>
 
 <template>
-  <v-date-picker v-model="date">
+  <v-date-picker v-model="frontmatter.state.date" color="green" trim-weeks>
     <template #default="{ inputValue, inputEvents }">
       <V-Field>
         <V-Control>
