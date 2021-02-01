@@ -103,5 +103,7 @@ if (isReactive(props.options)) {
 </script>
 
 <template>
-  <table ref="tableElement"></table>
+  <table ref="tableElement">
+    <slot></slot>
+  </table>
 </template>

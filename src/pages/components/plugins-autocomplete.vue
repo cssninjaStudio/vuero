@@ -150,7 +150,7 @@ const options = reactive({
 onMounted(() => {
   activeSidebar.value = 'components'
 
-  setInterval(randUpdate, 10000)
+  setInterval(randUpdate, 1000)
 })
 
 useHead({
