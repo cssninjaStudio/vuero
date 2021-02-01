@@ -9,12 +9,12 @@ Eademne, quae restincta siti? Quid, quod res alia tota est?
 ```vue
 <template>
   <div class="buttons">
-    <tippy theme="light">
+    <tippy>
       <V-Button>Hover me!</V-Button>
       <template #content> Tooltip content </template>
     </tippy>
 
-    <tippy theme="light" trigger="click">
+    <tippy trigger="click">
       <V-Button>Click me!</V-Button>
       <template #content> Tooltip content </template>
     </tippy>
@@ -27,11 +27,11 @@ Eademne, quae restincta siti? Quid, quod res alia tota est?
 <!--example-->
 
 <div class="buttons">
-  <tippy theme="light">
+  <tippy>
     <V-Button>Hover me!</V-Button>
     <template #content> Tooltip content </template>
   </tippy>
-  <tippy theme="light" trigger="click">
+  <tippy trigger="click">
     <V-Button>Click me!</V-Button>
     <template #content> Tooltip content </template>
   </tippy>
