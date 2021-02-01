@@ -35,7 +35,7 @@ const date = ref(null)
 
 <!--example-->
 
-<v-date-picker v-model="frontmatter.state.date">
+<v-date-picker v-model="frontmatter.state.date" color="green" trim-weeks>
   <template #default="{ inputValue, inputEvents }">
     <V-Field>
       <V-Control>

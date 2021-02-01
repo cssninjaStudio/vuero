@@ -24,7 +24,7 @@ const date = reactive({
 </script>
 
 <template>
-  <v-date-picker v-model="range" is-range>
+  <v-date-picker v-model="range" is-range color="green">
     <template #default="{ inputValue, inputEvents }">
       <V-Field addons>
         <V-Control>
@@ -52,28 +52,29 @@ const date = reactive({
 
 <!--example-->
 
-<v-date-picker v-model="frontmatter.state.range" is-range>
-  <template v-slot="{ inputValue, inputEvents }">
-    <V-Field addons>
-      <V-Control>
-        <input
+<v-date-picker v-model="frontmatter.state.range" is-range color="green" 
+  trim-weeks>
+<template v-slot="{ inputValue, inputEvents }">
+<V-Field addons>
+<V-Control>
+<input
           :value="inputValue.start"
           v-on="inputEvents.start"
           class="input"
         />
-      </V-Control>
-      <V-Control>
-        <a class="button is-static"><i class="iconify" data-icon="feather:arrow-right"></i></a>
-      </V-Control>
-      <V-Control>
-        <input
+</V-Control>
+<V-Control>
+<a class="button is-static"><i class="iconify" data-icon="feather:arrow-right"></i></a>
+</V-Control>
+<V-Control>
+<input
           :value="inputValue.end"
           v-on="inputEvents.end"
           class="input"
         />
-      </V-Control>
-    </V-Field>
-  </template>
+</V-Control>
+</V-Field>
+</template>
 </v-date-picker>
 
 <!--/example-->
