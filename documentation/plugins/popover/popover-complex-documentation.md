@@ -8,7 +8,7 @@ Eademne, quae restincta siti? Quid, quod res alia tota est?
 
 ```vue
 <template>
-  <tippy trigger="manual">
+  <tippy trigger="manual" interactive>
     <template #default="{ show }">
       <V-Avatar picture="/images/avatars/photos/19.jpg" @mouseenter="show" />
     </template>
@@ -23,7 +23,7 @@ Eademne, quae restincta siti? Quid, quod res alia tota est?
 
 <!--example-->
 
-<tippy trigger="manual">
+<tippy trigger="manual" interactive>
   <template #default="{ show }">
     <V-Avatar picture="/images/avatars/photos/19.jpg" @mouseenter="show" />
   </template>
