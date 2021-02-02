@@ -5,6 +5,7 @@
     2. Color helpers
     3. Shadow helpers
     4. Dark helpers
+    5. Radius helpers
 */
 
 /* ==========================================================================
@@ -143,4 +144,20 @@
   .is-dark-bg-6 {
     background: lighten($dark-sidebar, 6%) !important;
   }
+}
+
+/* ==========================================================================
+4. Radius helpers
+========================================================================== */
+
+.radius-5 {
+  border-radius: 0.5rem;
+}
+
+.radius-75 {
+  border-radius: 0.75rem;
+}
+
+.radius-full {
+  border-radius: 50%;
 }

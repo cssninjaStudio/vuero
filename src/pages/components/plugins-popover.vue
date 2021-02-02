@@ -85,15 +85,16 @@ useHead({
           <!--Text Popover-->
           <PopoverBaseDocumentation />
 
-          <!--Text Popover-->
+          <!--Popover Position-->
           <PopoverPositionDocumentation />
 
-          <!--Text Popover-->
+          <!--Avatar Popover-->
           <PopoverAvatarDocumentation />
 
-          <!--Text Popover-->
+          <!--Icon Popover-->
           <PopoverIconDocumentation />
 
+          <!--Profile Popover-->
           <PopoverComplexDocumentation />
         </div>
         <div v-if="toc.length" class="column is-3">

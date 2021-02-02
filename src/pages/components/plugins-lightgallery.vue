@@ -2,17 +2,20 @@
 import { useHead } from '@vueuse/head'
 import { onMounted } from 'vue'
 
+import useMakrdownToc from '/@src/composition/use/useMarkdownToc'
 import {
   activeSidebar,
   toggleSidebar,
 } from '/@src/composition/state/ui/activeSidebarState'
+
+const { markdownContainer, toc } = useMakrdownToc()
 
 onMounted(() => {
   activeSidebar.value = 'components'
 })
 
 useHead({
-  title: 'Components - Plugins Lightgallery - Vuero',
+  title: 'Components - Plugins Photo Swipe - Vuero',
 })
 </script>
 
@@ -39,7 +42,7 @@ useHead({
       </div>
 
       <div class="title-wrap">
-        <h1 class="title is-4">Light Gallery</h1>
+        <h1 class="title is-4">Photo Swipe</h1>
       </div>
 
       <Toolbar />
@@ -67,16 +70,32 @@ useHead({
           </li>
           <li>
             <a>
-              <span>Light Gallery</span>
+              <span>Photo Swipe</span>
             </a>
           </li>
         </ul>
       </nav>
 
       <div class="columns is-multiline">
-        <div class="column is-12">
-          <!--Light Gallery-->
+        <div
+          ref="markdownContainer"
+          :class="[toc.length > 0 ? 'is-9' : 'is-12']"
+          class="column"
+        >
+          <!--Thumbnails-->
           <GalleryImagesDocumentation />
+
+          <!--Curved Thumbnails-->
+          <GalleryImagesCurvedDocumentation />
+
+          <!--Rounded Thumbnails-->
+          <GalleryImagesRoundedDocumentation />
+
+          <!--Bigger Thumbnails-->
+          <GalleryImagesLargerDocumentation />
+        </div>
+        <div v-if="toc.length" class="column is-3">
+          <DocumentationToc :toc="toc" />
         </div>
       </div>
     </div>

@@ -82,13 +82,13 @@ useHead({
           :class="[toc.length > 0 ? 'is-9' : 'is-12']"
           class="column"
         >
-          <!--Video Player-->
+          <!--1:1 Video Player-->
           <VideoBaseDocumentation />
 
-          <!--Video Player-->
+          <!--4:3 Video Player-->
           <VideoFourDocumentation />
 
-          <!--Video Player-->
+          <!--16:9 Video Player-->
           <VideoSixteenDocumentation />
         </div>
         <div v-if="toc.length" class="column is-3">
