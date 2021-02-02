@@ -9,7 +9,7 @@
 1. Video Player
 ========================================================================== */
 
-.video-container {
+/* .video-container {
   position: relative;
   padding-top: 56.25%;
   margin: 0 auto;
@@ -88,13 +88,13 @@
       }
     }
   }
-}
+} */
 
 /* ==========================================================================
 2. Video Player Dark mode
 ========================================================================== */
 
-.is-dark {
+/* .is-dark {
   .video-container {
     .media-player {
       .media-toolbar {
@@ -124,6 +124,129 @@
           }
         }
       }
+    }
+  }
+} */
+
+/* ==========================================================================
+1. Plyr Player
+========================================================================== */
+
+.video-player-container {
+  margin: 0 auto;
+  overflow: hidden;
+
+  &.is-square {
+    position: relative;
+    height: 440px;
+    width: 480px;
+
+    .plyr {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      display: block;
+    }
+  }
+
+  &.is-4by3 {
+    position: relative;
+    padding-top: 75%;
+    width: 100%;
+    max-width: 840px;
+
+    .plyr {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      display: block;
+    }
+  }
+
+  &.is-16by9 {
+    position: relative;
+    padding-top: 56.25%;
+    width: 100%;
+    max-width: 840px;
+
+    .plyr {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      display: block;
+    }
+  }
+
+  &.reversed-play {
+    .plyr--full-ui.plyr--video .plyr__control--overlaid {
+      background: $white !important;
+      border: 1px solid $primary;
+      color: $primary !important;
+
+      &:hover {
+        background: $primary !important;
+        border-color: $primary !important;
+        color: $white !important;
+
+        svg {
+          fill: $white !important;
+          stroke: $white !important;
+        }
+      }
+
+      svg {
+        fill: none;
+        stroke: $primary;
+        stroke-width: 1.6px;
+      }
+    }
+  }
+
+  video {
+    background-color: transparent !important;
+  }
+}
+
+.plyr--full-ui.plyr--video .plyr__control--overlaid {
+  background: $primary !important;
+  box-shadow: $primary-box-shadow;
+}
+
+.plyr--video .plyr__control.plyr__tab-focus,
+.plyr--video .plyr__control:hover,
+.plyr--video .plyr__control[aria-expanded='true'],
+.plyr__menu__container
+  .plyr__control[role='menuitemradio'][aria-checked='true']::before {
+  background: $primary;
+}
+
+.plyr--full-ui input[type='range'] {
+  color: $primary;
+}
+
+.plyr__controls {
+  transition: all 0.3s;
+}
+
+.plyr--paused,
+.plyr--stopped {
+  .plyr__controls {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .video-player-container {
+    &.is-square {
+      height: 303px;
+      width: 330px;
     }
   }
 }

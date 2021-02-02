@@ -1,4 +1,4 @@
-### Video Player 1:1
+### Video Player 4:3
 
 We wrote a custom vue wrapper for the `Plyr` video player vanilla js library. It
 is really easy to setup. Change the video ratio using the `ratio` prop.
@@ -8,11 +8,7 @@ Available ratios are `square`, `4by3` and `16by9`.
 
 ```vue
 <template>
-  <V-Plyr
-    ratio="square"
-    source="/video/hands.mp4"
-    poster="/video/poster-1c.jpg"
-  />
+  <V-Plyr ratio="4by3" source="/video/hands.mp4" poster="/video/poster-3.jpg" />
 </template>
 ```
 
@@ -22,9 +18,9 @@ Available ratios are `square`, `4by3` and `16by9`.
 
 <div>
   <V-Plyr class="ml-1"
-    ratio="square"
+    ratio="4by3"
     source="/video/hands.mp4"
-    poster="/video/poster-1c.jpg"
+    poster="/video/poster-3.jpg"
   />
 </div>
 
