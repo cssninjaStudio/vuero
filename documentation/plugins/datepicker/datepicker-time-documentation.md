@@ -1,7 +1,6 @@
 ---
 state:
-  date:
-  timezone: ''
+  date: 2021-02-28T16:20:00.000Z
 ---
 
 ### DateTimepicker
@@ -15,11 +14,11 @@ code example for more details about usage.
 <script setup lang="ts">
 import { ref } from vue
 
-const date = ref(null)
+const date = ref(new Date())
 </script>
 
 <template>
-  <v-date-picker v-model="date" mode="dateTime" :timezone="timezone">
+  <v-date-picker v-model="date" mode="dateTime">
     <template #default="{ inputValue, inputEvents }">
       <V-Field>
         <V-Control>
@@ -36,13 +35,13 @@ const date = ref(null)
 <!--example-->
 
 <v-date-picker v-model="frontmatter.state.date" color="green" mode="dateTime">
-<template #default="{ inputValue, inputEvents }">
-<V-Field>
-<V-Control>
-<input class="input" :value="inputValue" v-on="inputEvents" />
-</V-Control>
-</V-Field>
-</template>
+  <template #default="{ inputValue, inputEvents }">
+    <V-Field>
+      <V-Control>
+        <input class="input" :value="inputValue" v-on="inputEvents" />
+      </V-Control>
+    </V-Field>
+  </template>
 </v-date-picker>
 
 <!--/example-->

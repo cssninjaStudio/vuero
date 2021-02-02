@@ -44,7 +44,7 @@ can easily add a `<V-Avatar />` inside your popover.
     </template>
   </tippy>
   <tippy>
-    <V-Button class="mx-1">Click me!</V-Button>
+    <V-Button class="mx-1">Hover me!</V-Button>
     <template #content>
       <div class="v-popover-content is-text">
           <div class="popover-head">

@@ -1,51 +1,38 @@
 <script setup lang="ts">
-import { defineProps, onMounted, ref, watch } from 'vue'
-import { tippy } from 'vue-tippy'
-import sleep from '/@src/utils/sleep'
+import type { PropType } from 'vue'
+import { defineProps } from 'vue'
+
+type User = {
+  avatar: string
+  badge: string
+  username: string
+  location: string
+  position: string
+  bio: string
+}
 
 const props = defineProps({
-  userId: {
-    type: String,
-    default: '19',
-  },
-  tippyState: {
-    type: Object,
+  user: {
+    type: Object as PropType<User>,
   },
 })
-
-const isLoading = ref(false)
-
-onMounted(async () => {
-  console.log('mounted?')
-  isLoading.value = true
-  await sleep(3000)
-  isLoading.value = false
-})
-watch(
-  props,
-  () => {
-    console.log('watch?', props.tippyState)
-  },
-  { deep: true }
-)
 </script>
 
 <template>
   <div class="v-popover-profile has-loader">
     <div class="profile-popover-block">
-      <V-Loader :active="isLoading" />
       <div class="profile-popover-wrapper">
         <div class="popover-avatar">
-          <img class="avatar" :src="tippyState.avatar" />
-          <img class="badge" :src="tippyState.badge" />
+          <img class="avatar" :src="user.avatar" />
+          <img class="badge" :src="user.badge" />
         </div>
         <div class="popover-meta">
           <span class="user-meta">
-            <span class="username">{{ tippyState.username }}</span>
-            <span class="location">{{ tippyState.location }}</span>
+            <span class="username">{{ user.username }}</span>
+            <span class="location">{{ user.location }}</span>
           </span>
-          <span class="job-title mb-1">{{ tippyState.position }}</span>
-          <span class="bio">{{ tippyState.bio }}</span>
+          <span class="job-title mb-1">{{ user.position }}</span>
+          <span class="bio">{{ user.bio }}</span>
         </div>
       </div>
       <div class="popover-actions">

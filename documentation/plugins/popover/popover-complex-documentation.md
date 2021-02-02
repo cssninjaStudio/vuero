@@ -1,19 +1,19 @@
 ---
-popover1:
+user1:
   avatar: /images/avatars/photos/19.jpg
   badge: /images/icons/flags/germany.svg
   username: Greta K.
   location: Los Angeles, CA
   position: Sales Manager
   bio: This is a nice user description that we can use as demo content.
-popover2:
+user2:
   avatar: /images/avatars/photos/8.jpg
   badge: /images/icons/flags/united-states-of-america.svg
   username: Erik K.
   location: Las Begas, NV
   position: Product Manager
   bio: This is a nice user description that we can use as demo content.
-popover3:
+user3:
   avatar: /images/avatars/photos/7.jpg
   badge: /images/icons/flags/united-states-of-america.svg
   username: Alice C.
@@ -33,7 +33,7 @@ prop.
 
 ```vue
 <script setup lang="ts">
-const popoverData = {
+const user = {
   avatar: '/images/avatars/photos/19.jpg',
   badge: '/images/icons/flags/germany.svg',
   username: 'Greta K.',
@@ -44,12 +44,10 @@ const popoverData = {
 </script>
 
 <template>
-  <tippy tippy="{interactive}" trigger="manual">
-    <template #default="{ show }">
-      <V-Avatar picture="/images/avatars/photos/19.jpg" @mouseenter="show" />
-    </template>
+  <tippy interactive :offset="[0, 30]">
+    <V-Avatar :picture="user.avatar" />
     <template #content>
-      <UserPopoverContent :tippy-state="popoverData" />
+      <UserPopoverContent :user="user" />
     </template>
   </tippy>
 </template>
@@ -59,31 +57,27 @@ const popoverData = {
 
 <!--example-->
 
-<tippy trigger="manual" tippy="{interactive}" class="mx-1">
-  <template #default="{ show }">
-    <V-Avatar picture="/images/avatars/photos/19.jpg" @mouseenter="show" />
-  </template>
-  <template #content>
-    <UserPopoverContent :tippyState="frontmatter.popover1" />
-  </template>
-</tippy>
+<div>
+  <tippy class="mx-1" interactive :offset="[0, 30]">
+    <V-Avatar :picture="frontmatter.user1.avatar" />
+    <template #content>
+      <UserPopoverContent :user="frontmatter.user1" />
+    </template>
+  </tippy>
 
-<tippy trigger="manual" tippy="{interactive}" class="mx-1">
-  <template #default="{ show }">
-    <V-Avatar picture="/images/avatars/photos/8.jpg" @mouseenter="show" />
-  </template>
-  <template #content>
-    <UserPopoverContent :tippyState="frontmatter.popover2" />
-  </template>
-</tippy>
+  <tippy class="mx-1" interactive :offset="[0, 30]">
+    <V-Avatar :picture="frontmatter.user2.avatar" />
+    <template #content>
+      <UserPopoverContent :user="frontmatter.user2" />
+    </template>
+  </tippy>
 
-<tippy trigger="manual" tippy="{interactive}" class="mx-1">
-  <template #default="{ show }">
-    <V-Avatar picture="/images/avatars/photos/7.jpg" @mouseenter="show" />
-  </template>
-  <template #content>
-    <UserPopoverContent :tippyState="frontmatter.popover3" />
-  </template>
-</tippy>
+  <tippy class="mx-1" interactive :offset="[0, 30]">
+    <V-Avatar :picture="frontmatter.user3.avatar" />
+    <template #content>
+      <UserPopoverContent :user="frontmatter.user3" />
+    </template>
+  </tippy>
+</div>
 
 <!--/example-->
