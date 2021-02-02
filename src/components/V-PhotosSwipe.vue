@@ -2,7 +2,7 @@
 import 'photoswipe/dist/photoswipe.css'
 import 'photoswipe/dist/default-skin/default-skin.css'
 
-let instances_count = 0
+let instances = 0
 </script>
 
 <script setup lang="ts">
@@ -10,8 +10,8 @@ import { ref, defineProps, onMounted } from 'vue'
 import PhotoSwipe from 'photoswipe/dist/photoswipe'
 import PhotoSwipeUI_Default from 'photoswipe/dist/photoswipe-ui-default'
 
+const galleryUID = ++instances
 const angle = ref(0)
-const gid = ++instances_count
 const pswpElement = ref<HTMLElement | null>(null)
 const galleryElement = ref<HTMLElement | null>(null)
 const props = defineProps({
@@ -178,7 +178,7 @@ const openPhotoSwipe = function (
   // define options (if needed)
   options = {
     // define gallery index (for URL)
-    galleryUID: gid,
+    galleryUID,
 
     getThumbBoundsFn: function (index: number) {
       // See Options -> getThumbBoundsFn section of documentation for more info
@@ -192,7 +192,7 @@ const openPhotoSwipe = function (
 
   // PhotoSwipe opened from URL
   if (fromURL) {
-    if (options.galleryPIDs) {
+    if (props.options.galleryPIDs) {
       // parse real index when custom PIDs are used
       // http://photoswipe.com/documentation/faq.html#custom-pid-in-url
       for (let j = 0; j < items.length; j++) {
@@ -244,9 +244,11 @@ const openPhotoSwipe = function (
 
 // Parse URL and open gallery if it contains #&pid=3&gid=1
 onMounted(() => {
-  let hashData = photoswipeParseHash()
-  if (hashData.pid && hashData.gid === gid && galleryElement.value) {
-    openPhotoSwipe(hashData.pid.toString(), galleryElement.value, true, true)
+  if (galleryElement.value) {
+    let hashData = photoswipeParseHash()
+    if (hashData.pid && hashData.gid === galleryUID) {
+      openPhotoSwipe(hashData.pid.toString(), galleryElement.value, true, true)
+    }
   }
 })
 
