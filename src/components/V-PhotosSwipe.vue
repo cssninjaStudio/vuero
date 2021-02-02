@@ -21,7 +21,12 @@
         :data-size="'' + item.w + 'x' + item.h"
         :title="item.title"
       >
-        <img :src="item.thumbnail" :alt="item.alt" itemprop="thumbnail" />
+        <img
+          :class="[thumbnailRadius && `radius-${thumbnailRadius}`]"
+          :src="item.thumbnail"
+          :alt="item.alt"
+          itemprop="thumbnail"
+        />
       </a>
     </figure>
   </div>
@@ -124,6 +129,10 @@ export default {
     singleThumbnail: {
       type: Boolean,
       default: false,
+    },
+    thumbnailRadius: {
+      type: String,
+      default: '',
     },
   },
   data() {

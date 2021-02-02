@@ -86,13 +86,13 @@ useHead({
           <!--Datepicker-->
           <DatepickerBaseDocumentation />
 
-          <!--Datepicker-->
+          <!--DateRangepicker-->
           <DatepickerRangeDocumentation />
 
-          <!--Datepicker-->
+          <!--DateTimepicker-->
           <DatepickerTimeDocumentation />
 
-          <!--Datepicker-->
+          <!--Timepicker-->
           <DatepickerTimeSingleDocumentation />
         </div>
         <div v-if="toc.length" class="column is-3">

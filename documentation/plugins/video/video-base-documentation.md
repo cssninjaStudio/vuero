@@ -25,6 +25,7 @@ Available ratios are `square`, `4by3` and `16by9`.
     ratio="square"
     source="/video/hands.mp4"
     poster="/video/poster-1c.jpg"
+    reversed
   />
 </div>
 

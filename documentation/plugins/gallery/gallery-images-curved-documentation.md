@@ -15,11 +15,12 @@ items:
     h: 600
 ---
 
-### Thumbnail Gallery
+### Curved Thumbnails
 
 We wrote a custom Vue wrapper for the `Photo Swipe` library so it makes it easy
-for you to create image galleries seamlessly. Pass an array of `items` to
-generate your gallery.
+for you to create image galleries seamlessly. Thumbnails border radius is
+configurable. Pass a value of `5` to the `thumbnailRadius` to show curved
+borders.
 
 <!--code-->
 
@@ -49,7 +50,7 @@ const items = [
 </script>
 
 <template>
-  <V-PhotosSwipe :items="items" />
+  <V-PhotosSwipe :items="items" thumbnail-radius="5" />
 </template>
 ```
 
@@ -57,6 +58,6 @@ const items = [
 
 <!--example-->
 
-<V-PhotosSwipe :items="frontmatter.items">
+<V-PhotosSwipe :items="frontmatter.items" thumbnailRadius="5">
 
 <!--/example-->
