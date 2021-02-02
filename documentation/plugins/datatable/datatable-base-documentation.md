@@ -1,4 +1,4 @@
-### Autocomplete
+### V-Datatable
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 Summum ením bonum exposuit vacuitatem doloris; Haeret in salebra.
