@@ -248,6 +248,13 @@ const activeTab = ref<TabId>('components')
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
+
+                  <li>
+                    <RouterLink :to="{ name: 'components-plugins-ckeditor' }">
+                      <span>CKEditor</span>
+                      <i class="iconify" data-icon="feather:circle"></i>
+                    </RouterLink>
+                  </li>
                 </ul>
               </div>
               <div class="column is-3">

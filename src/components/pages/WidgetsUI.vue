@@ -24,7 +24,7 @@ import { trendWidgetChartOptions } from '/@src/composition/state/charts/apexchar
         </template>
         <template #body>
           <div class="gauge-wrap">
-            <BillboardJS
+            <V-BillboardJS
               class="gauge-holder"
               :options="personalScoreGaugeOptions"
               @ready="onPersonalScoreGaugeReady"

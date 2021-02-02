@@ -1,8 +1,8 @@
 ---
 state:
   range:
-    start:
-    end:
+    start: 2021-02-08
+    end: 2021-02-14
 ---
 
 ### DateRangepicker
@@ -17,8 +17,8 @@ code example for more details about usage.
 import { reactive } from vue
 
 const date = reactive({
-  start: null,
-  end: null,
+  start: new Date(),
+  end: new Date(),
 })
 </script>
 
@@ -51,29 +51,28 @@ const date = reactive({
 
 <!--example-->
 
-<v-date-picker v-model="frontmatter.state.range" is-range color="green" 
-  trim-weeks>
-<template v-slot="{ inputValue, inputEvents }">
-<V-Field addons>
-<V-Control>
-<input
-            :value="inputValue.start"
-            v-on="inputEvents.start"
-            class="input"
-          />
-</V-Control>
-<V-Control>
-<a class="button is-static"><i class="iconify" data-icon="feather:arrow-right"></i></a>
-</V-Control>
-<V-Control>
-<input
-            :value="inputValue.end"
-            v-on="inputEvents.end"
-            class="input"
-          />
-</V-Control>
-</V-Field>
-</template>
+<v-date-picker v-model="frontmatter.state.range" is-range color="green" trim-weeks>
+  <template v-slot="{ inputValue, inputEvents }">
+    <V-Field addons>
+      <V-Control>
+        <input
+          :value="inputValue.start"
+          v-on="inputEvents.start"
+          class="input"
+        />
+      </V-Control>
+      <V-Control>
+        <a class="button is-static"><i class="iconify" data-icon="feather:arrow-right"></i></a>
+      </V-Control>
+      <V-Control>
+        <input
+          :value="inputValue.end"
+          v-on="inputEvents.end"
+          class="input"
+        />
+      </V-Control>
+    </V-Field>
+  </template>
 </v-date-picker>
 
 <!--/example-->

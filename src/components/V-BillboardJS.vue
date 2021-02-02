@@ -1,10 +1,12 @@
 <script setup lang="ts">
+import type { ChartOptions } from 'billboard.js'
+import type { PropType } from 'vue'
 import { onMounted, ref, defineProps, defineEmit } from 'vue'
 import bb from 'billboard.js'
 
 const props = defineProps({
   options: {
-    type: Object,
+    type: Object as PropType<ChartOptions>,
     required: true,
   },
 })
@@ -21,7 +23,7 @@ onMounted(() => {
       })
       emit('ready', billboard)
     } catch (error) {
-      console.log(error)
+      console.error(error)
     }
   }
 })

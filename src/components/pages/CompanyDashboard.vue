@@ -213,7 +213,7 @@ onMounted(async () => {
           </div>
           <div class="gauge-wrap">
             <div class="gauge-holder">
-              <BillboardJS
+              <V-BillboardJS
                 :options="personalScoreGaugeOptions"
                 @ready="onPersonalScoreGaugeReady"
               />

@@ -437,6 +437,17 @@ const { dropdownElement, isOpen, open } = useDropdown()
                       <span>V-Tippy</span>
                     </div>
                   </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'components-plugins-ckeditor' }"
+                    class="dropdown-item is-media"
+                  >
+                    <div class="icon">
+                      <i class="lnil lnil-html5"></i>
+                    </div>
+                    <div class="meta">
+                      <span>CKEditor</span>
+                    </div>
+                  </RouterLink>
                 </div>
               </div>
             </div>

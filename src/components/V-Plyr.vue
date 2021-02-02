@@ -1,8 +1,11 @@
+<script lang="ts">
+import 'plyr/dist/plyr.css'
+</script>
+
 <script setup lang="ts">
 import type { PropType } from 'vue'
 import { defineProps, onBeforeUnmount, onMounted, ref } from 'vue'
 import Plyr from 'plyr'
-import 'plyr/dist/plyr.css'
 
 const props = defineProps({
   ratio: {

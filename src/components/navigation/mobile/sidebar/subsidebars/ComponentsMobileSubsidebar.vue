@@ -212,6 +212,15 @@ import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
                 V-Tippy</RouterLink
               >
             </li>
+
+            <li>
+              <RouterLink
+                :to="{ name: 'components-plugins-ckeditor' }"
+                class="is-submenu"
+                ><i class="iconify" data-icon="feather:circle"></i>
+                CKEditor</RouterLink
+              >
+            </li>
           </ul>
         </li>
       </ul>
