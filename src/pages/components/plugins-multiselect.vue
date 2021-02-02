@@ -83,6 +83,9 @@ useHead({
           :class="[toc.length > 0 ? 'is-9' : 'is-12']"
           class="column"
         >
+          <!--Autocomplete-->
+          <MultiselectAutocompleteDocumentation />
+
           <!--Simple select-->
           <MultiselectBaseDocumentation />
 

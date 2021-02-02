@@ -168,7 +168,7 @@
 
       .multiselect-search {
         input {
-          background-color: lighten($dark-sidebar, 2%);
+          background: transparent;
           color: $light-text;
         }
       }
@@ -483,6 +483,29 @@
           align-items: center;
           min-width: 22px;
           transition: color 0.3s background-color 0.3s;
+        }
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+5. Autocomplete select
+========================================================================== */
+
+.is-autocomplete-select {
+  .multiselect {
+    &.is-searchable {
+      .multiselect-input {
+        .multiselect-single-label,
+        .multiselect-placeholder {
+          padding-left: 40px !important;
+        }
+
+        .multiselect-search {
+          input {
+            padding-left: 40px !important;
+          }
         }
       }
     }
