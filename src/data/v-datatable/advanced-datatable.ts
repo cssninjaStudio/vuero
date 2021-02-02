@@ -9,6 +9,17 @@ function renderIcon(data: any, cell: any, row: any) {
   }
   if (data == 'latte') {
     return `🔥 ${data}`
+  }
+
+  if (data == 'coffee') {
+    return `
+      <div class="media-flex-center">
+        <img class="drinks-icon" src="/images/icons/datatable/coffee.svg" alt="">
+        <div class="flex-meta">
+          <span>${data}</span>
+        </div>
+      </div>
+    `
   } else {
     return `🌿 ${data}`
   }
@@ -56,7 +67,7 @@ export const optionsAdvanced = reactive({
     headings: ['ID', 'Drink', 'Price', 'Caffeinated', 'Profit'],
     data: [
       [574, 'latte.jpg', 4.0, false, 0.0],
-      [984, 'herbal tea', 3.0, false, 0.56],
+      [984, 'coffee', 3.0, false, 0.56],
       [312, 'green tea', 3.0, true, 1.72],
       [312, 'latte', 3.0, true, -1.21],
       [312, 'green tea', 3.0, false, 0.0],

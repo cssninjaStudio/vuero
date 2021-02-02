@@ -486,3 +486,20 @@
     }
   }
 }
+
+.dataTable-wrapper {
+  .dataTable-container {
+    .dataTable-table {
+      td {
+        vertical-align: middle;
+      }
+
+      .drinks-icon {
+        display: block;
+        max-width: 48px;
+        border-radius: 50%;
+        border: 1px solid #ededed;
+      }
+    }
+  }
+}
