@@ -12,7 +12,18 @@
 1. Web UI Popover
 ========================================================================== */
 
-.webui-popover {
+.tippy-box[data-theme~='light'] {
+  border-radius: 0.5rem;
+  border: 1px solid $border;
+  box-shadow: $light-box-shadow;
+
+  .tippy-content {
+    //padding: 0 !important;
+    //border: none
+  }
+}
+
+.v-popover {
   box-shadow: rgba(0, 0, 0, 0.04) 0 3px 10px 4px !important;
   background: $white !important;
   color: $dark-text !important;
@@ -53,64 +64,103 @@
     }
   }
 
-  .webui-popover-title {
+  .v-popover-title {
     background-color: $white !important;
     border-bottom: none !important;
     font-weight: 500;
   }
+}
 
-  .webui-popover-content {
-    font-size: 0.75rem !important;
+.v-popover-content {
+  font-size: 0.75rem !important;
 
-    .popover-flex-block {
+  &.is-text {
+    max-width: 200px;
+    padding: 8px 5px 4px 5px;
+    font-size: 0.9rem !important;
+  }
+
+  .popover-head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+    .v-avatar,
+    .v-icon {
+      margin-right: 10px;
+    }
+
+    h4 {
+      font-family: $font-alt;
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: $dark;
+      margin-bottom: 0;
+    }
+  }
+
+  .popover-body {
+    padding: 0;
+
+    p {
+      font-family: $font;
+      font-size: 0.9rem;
+      color: $light-text;
+
+      &:last-child {
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+  .popover-flex-block {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px 0;
+
+    .staff-avatar {
+      height: 38px;
+      width: 38px;
+      border-radius: 50%;
+    }
+
+    .content-block {
+      margin-left: 10px;
+
+      label,
+      span {
+        display: block;
+      }
+
+      label {
+        color: lighten($dark-text, 35%);
+        text-transform: uppercase;
+        font-size: 70%;
+      }
+    }
+
+    .fa.fa-star,
+    .fa.fa-star-half {
+      color: #ffd700;
+    }
+
+    .icon-block {
+      height: 38px;
+      width: 38px;
       display: flex;
-      justify-content: flex-start;
+      justify-content: center;
       align-items: center;
-      padding: 5px 0;
 
-      .staff-avatar {
-        height: 38px;
-        width: 38px;
-        border-radius: 50%;
-      }
+      svg {
+        height: 18px;
+        width: 18px;
+        color: $dark-text;
+        stroke-width: 1.3px;
 
-      .content-block {
-        margin-left: 10px;
-
-        label,
-        span {
-          display: block;
-        }
-
-        label {
-          color: lighten($dark-text, 35%);
-          text-transform: uppercase;
-          font-size: 70%;
-        }
-      }
-
-      .fa.fa-star,
-      .fa.fa-star-half {
-        color: #ffd700;
-      }
-
-      .icon-block {
-        height: 38px;
-        width: 38px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        svg {
-          height: 18px;
-          width: 18px;
-          color: $dark-text;
-          stroke-width: 1.3px;
-
-          &.is-medium {
-            height: 26px;
-            width: 26px;
-          }
+        &.is-medium {
+          height: 26px;
+          width: 26px;
         }
       }
     }
@@ -122,7 +172,7 @@
 ========================================================================== */
 
 .is-dark {
-  .webui-popover {
+  .v-popover {
     background: $dark-sidebar !important;
     border-color: lighten($dark-sidebar, 6%);
 
@@ -182,7 +232,7 @@
       }
     }
 
-    .webui-popover-inner {
+    .v-popover-inner {
       background: $dark-sidebar !important;
       border-color: $dark-sidebar !important;
     }
@@ -220,15 +270,17 @@
 3. User profile popovers
 ========================================================================== */
 
-.webui-popover-profile {
+.v-popover-profile {
   .profile-popover-block,
   .skill-popover-block {
+    max-width: 260px;
+
     .profile-popover-wrapper,
     .skill-popover-wrapper {
       display: flex;
       justify-content: flex-start;
       align-items: stretch;
-      padding: 16px;
+      padding: 11px 6px;
 
       .popover-avatar,
       .popover-fake-avatar {
@@ -436,6 +488,7 @@
         border-radius: 50%;
         transition: all 0.3s;
         cursor: pointer;
+        pointer-events: all !important;
 
         &:hover {
           background: lighten($fade-grey, 3%);
@@ -469,10 +522,12 @@
       opacity: 0;
       transition: all 0.3s;
       z-index: 0;
+      pointer-events: none;
 
       &.is-active {
         opacity: 1;
         z-index: 1;
+        pointer-events: all;
       }
 
       .loader {
@@ -492,7 +547,24 @@
 ========================================================================== */
 
 .is-dark {
-  .webui-popover-profile {
+  .tippy-box {
+    background: $dark-sidebar !important;
+    border-color: lighten($dark-sidebar, 6%);
+  }
+
+  .tippy-box[data-theme~='light'][data-placement^='top']
+    > .tippy-arrow::before {
+    border-top-color: $dark-sidebar !important;
+  }
+
+  .tippy-profile {
+    background: $dark-sidebar !important;
+    border-color: lighten($dark-sidebar, 6%);
+  }
+
+  .v-popover-profile {
+    background: $dark-sidebar !important;
+
     .profile-popover-block {
       .badge {
         border-color: $dark-sidebar !important;
@@ -516,49 +588,6 @@
 
         svg {
           color: $accent;
-        }
-      }
-    }
-  }
-}
-
-/* ==========================================================================
-5. Simple popover
-========================================================================== */
-
-.webui-popover {
-  &.webui-popover-default {
-    .webui-popover-content {
-      .popover-head {
-        display: flex;
-        align-items: center;
-        margin-bottom: 10px;
-
-        .v-avatar,
-        .v-icon {
-          margin-right: 10px;
-        }
-
-        h4 {
-          font-family: $font-alt;
-          font-weight: 600;
-          font-size: 0.9rem;
-          color: $dark;
-          margin-bottom: 0;
-        }
-      }
-
-      .popover-body {
-        padding: 0;
-
-        p {
-          font-family: $font;
-          font-size: 0.9rem;
-          color: $light-text;
-
-          &:last-child {
-            margin-bottom: 8px;
-          }
         }
       }
     }

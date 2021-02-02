@@ -2,6 +2,7 @@
 import { useHead } from '@vueuse/head'
 import { onMounted } from 'vue'
 
+import useMakrdownToc from '/@src/composition/use/useMarkdownToc'
 import {
   activeSidebar,
   toggleSidebar,

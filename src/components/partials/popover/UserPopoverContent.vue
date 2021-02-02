@@ -31,25 +31,21 @@ watch(
 </script>
 
 <template>
-  <div class="webui-popover-profile has-loader">
+  <div class="v-popover-profile has-loader">
     <div class="profile-popover-block">
       <V-Loader :active="isLoading" />
       <div class="profile-popover-wrapper">
         <div class="popover-avatar">
-          <img class="avatar" src="/images/avatars/photos/19.jpg" />
-          <img class="badge" src="/images/icons/flags/germany.svg" />
+          <img class="avatar" :src="tippyState.avatar" />
+          <img class="badge" :src="tippyState.badge" />
         </div>
         <div class="popover-meta">
           <span class="user-meta">
-            <span class="username">Greta K.</span>
-            <span class="location">Los Angeles, CA</span>
+            <span class="username">{{ tippyState.username }}</span>
+            <span class="location">{{ tippyState.location }}</span>
           </span>
-          <span class="job-title">Sales Manager</span>
-          <span class="bio"
-            >I can be used as is in any layout. L Cards are simple containers
-            that can hold any type of content, from simple plain text to more
-            structured markup.</span
-          >
+          <span class="job-title mb-1">{{ tippyState.position }}</span>
+          <span class="bio">{{ tippyState.bio }}</span>
         </div>
       </div>
       <div class="popover-actions">
