@@ -9,7 +9,7 @@ import {
   <div class="columns is-multiline">
     <div class="column is-6">
       <div class="s-card">
-        <BillboardJS
+        <V-BillboardJS
           :options="genericLineOptions"
           @ready="onGenericLineReady"
         />

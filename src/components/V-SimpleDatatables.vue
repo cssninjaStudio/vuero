@@ -1,3 +1,7 @@
+<script lang="ts">
+import 'simple-datatables/src/style.css'
+</script>
+
 <script setup lang="ts">
 import {
   defineProps,
@@ -9,7 +13,6 @@ import {
   defineEmit,
 } from 'vue'
 import { DataTable } from 'simple-datatables'
-import 'simple-datatables/src/style.css'
 
 const props = defineProps({
   options: {

@@ -346,7 +346,7 @@ import {
           </div>
           <div class="gauge-wrap">
             <div id="gauge-holder" class="gauge-holder"></div>
-            <BillboardJS
+            <V-BillboardJS
               :options="personalScoreGaugeOptions"
               @ready="onPersonalScoreGaugeReady"
             />
