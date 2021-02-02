@@ -27,6 +27,8 @@
     "precommit:lint-staged": "lint-staged"
   },
   "dependencies": {
+    "@ckeditor/ckeditor5-build-classic": "^25.0.0",
+    "@ckeditor/ckeditor5-vue": "^2.0.1",
     "@iconify/iconify": "1.0.7",
     "@popperjs/core": "^2.6.0",
     "@vueform/multiselect": "1.2.5",

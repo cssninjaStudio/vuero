@@ -3,6 +3,7 @@ import { createHead } from '@vueuse/head'
 import VueMultiselect from '@vueform/multiselect'
 import VueSlider from '@vueform/slider'
 import VueApexCharts from 'vue3-apexcharts'
+import VueCKEditor from '@ckeditor/ckeditor5-vue'
 import VCalendar from 'v-calendar'
 import VueTippy from 'vue-tippy'
 
@@ -36,6 +37,7 @@ app.use(router)
 app.use(i18n)
 app.use(head)
 app.use(VueApexCharts)
+app.use(VueCKEditor)
 app.use(VCalendar)
 app.use(VueTippy, {
   defaultProps: {
