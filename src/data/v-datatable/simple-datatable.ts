@@ -1,31 +1,7 @@
-import { ref, reactive } from 'vue'
-
-export const addItem = () => {
-  options.data.data.unshift([
-    'AAAPearl Carlson',
-    6231,
-    'Cobourg',
-    '2014/31/08',
-    '100%',
-  ])
-}
-
-export const autoupdate = ref(false)
-
-export const randUpdate = () => {
-  const max = options.data.data.length
-  const index = Math.floor(Math.random() * max)
-
-  options.data.data[index][1] = Math.floor(Math.random() * 5000)
-}
-
-export const onSort = (args: any) => {
-  console.log('onSort', args)
-}
-
-export const options = reactive({
-  perPageSelect: [10, 20, 30, 40, 50, 100, 200, 300, 400, 500, 1000],
-  perPage: 10,
+export const optionsBase = {
+  searchable: false,
+  sortable: false,
+  perPageSelect: false,
   data: {
     headings: ['Name', 'Ext.', 'City', 'Start Date', 'Completion'],
     data: [
@@ -139,4 +115,4 @@ export const options = reactive({
       ['Pearl Carlson', 6231, 'Cobourg', '2014/31/08', '100%'],
     ],
   },
-})
+}

@@ -1,4 +1,4 @@
-### Basic Datatable
+### Reactive Datatable
 
 Because Vue 3 is still the new thing, there are a very few datatable plugins
 available. Therefore, we wrote a custom Vue wrapper for the [Simple Datatables](https://github.com/fiduswriter/Simple-DataTables)
@@ -9,10 +9,9 @@ details.
 
 ```vue
 <script setup lang="ts">
-const options = {
-  searchable: false,
-  sortable: false,
-  perPageSelect: false,
+import { reactive } from 'vue'
+
+const options = reactive({
   data: {
     headings: ['Name', 'Ext.', 'City', 'Start Date', 'Completion'],
     data: [
@@ -27,11 +26,25 @@ const options = {
       ['Deirdre Bridges', 1579, 'Eberswalde-Finow', '2014/26/08', '44%'],
     ],
   },
-}
+})
+
+setInterval(() => {
+  const max = optionsReactive.data.data.length
+  const index = Math.floor(Math.random() * max)
+  const percent = parseInt(
+    `${optionsReactive.data.data[index][4]}`.replace('%', '')
+  )
+
+  if (percent < 100) {
+    // updating the data will refresh the datatable
+    optionsReactive.data.data[index][1] = Math.floor(Math.random() * 5000)
+    optionsReactive.data.data[index][4] = `${percent + 1}%`
+  }
+}, 400)
 </script>
 
 <template>
-  <V-SimpleDatatables :options="options" />
+  <V-SimpleDatatables :options="options" autoupdate />
 </template>
 ```
 

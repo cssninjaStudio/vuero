@@ -1,27 +1,33 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
-import { onMounted, reactive, ref } from 'vue'
+import { onBeforeUnmount, onMounted } from 'vue'
 
 import {
   activeSidebar,
   toggleSidebar,
 } from '/@src/composition/state/ui/activeSidebarState'
 
+import { optionsBase } from '/@src/data/v-datatable/simple-datatable'
 import {
-  addItem,
-  autoupdate,
-  randUpdate,
-  onSort,
-  options,
-} from '/@src/data/v-datatable/simple-datatable'
+  randomUpdate,
+  optionsReactive,
+} from '/@src/data/v-datatable/reactive-datatable'
 
 import { optionsAdvanced } from '/@src/data/v-datatable/advanced-datatable'
 import { optionsUsers } from '/@src/data/v-datatable/users-datatable'
 
+let interval: NodeJS.Timeout
+
 onMounted(() => {
   activeSidebar.value = 'components'
 
-  setInterval(randUpdate, 1000)
+  interval = setInterval(randomUpdate, 400)
+})
+
+onBeforeUnmount(() => {
+  if (interval) {
+    clearInterval(interval)
+  }
 })
 
 useHead({
@@ -91,22 +97,50 @@ useHead({
           <!--Simple Datatable-->
           <DatatableBaseDocumentation />
 
-          <div class="buttons">
-            <V-Button dark-outlined @click="addItem">Add item</V-Button>
-            <V-Button dark-outlined @click="randUpdate"
-              >Update random item</V-Button
-            >
-            <label
-              ><input v-model="autoupdate" type="checkbox" /> autoupdate</label
-            >
+          <div class="mb-6">
+            <V-SimpleDatatables :options="optionsBase" />
           </div>
 
+          <!--Reactive Datatable-->
+          <DatatableReactiveDocumentation />
+
           <div class="mb-6">
-            <V-SimpleDatatables
-              :options="options"
-              :autoupdate="autoupdate"
-              @sort="onSort"
-            />
+            <V-SimpleDatatables :options="optionsReactive" autoupdate />
+          </div>
+
+          <!--Slot Datatable-->
+          <DatatableSlotDocumentation />
+
+          <div class="mb-6">
+            <V-SimpleDatatables>
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Ext.</th>
+                  <th>City</th>
+                  <th data-type="date" data-format="YYYY/MM/DD">Start Date</th>
+                  <th>Completion</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr v-for="(row, index) in optionsBase.data.data" :key="index">
+                  <td>
+                    {{ row[0] }}
+                  </td>
+                  <td>
+                    <strong>{{ row[1] }}</strong>
+                  </td>
+                  <td>{{ row[2] }}</td>
+                  <td>{{ row[3] }}</td>
+                  <td>
+                    <V-Tag
+                      :color="row[4] === '100%' ? 'primary' : 'light'"
+                      :label="row[4]"
+                    />
+                  </td>
+                </tr>
+              </tbody>
+            </V-SimpleDatatables>
           </div>
 
           <!--Advanced Datatable-->
