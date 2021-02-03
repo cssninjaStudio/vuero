@@ -1,11 +1,11 @@
 <script setup lang="ts">
 import { onMounted } from 'vue'
 
-import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
+import { activeSidebar } from '/@src/composition/state/activeSidebarState'
 import {
   adminLayout,
   adminLayoutId,
-} from '/@src/composition/state/ui/adminLayoutState'
+} from '/@src/composition/state/adminLayoutState'
 
 onMounted(() => {
   activeSidebar.value = 'elements'

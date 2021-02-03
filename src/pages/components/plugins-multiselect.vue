@@ -7,7 +7,7 @@ import useMakrdownToc from '/@src/composition/use/useMarkdownToc'
 import {
   activeSidebar,
   toggleSidebar,
-} from '/@src/composition/state/ui/activeSidebarState'
+} from '/@src/composition/state/activeSidebarState'
 
 const { markdownContainer, toc } = useMakrdownToc()
 

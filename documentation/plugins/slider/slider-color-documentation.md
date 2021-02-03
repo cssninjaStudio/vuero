@@ -1,5 +1,6 @@
 ---
-value: 78
+state:
+  value: 78
 ---
 
 ### Slider colors
@@ -12,7 +13,9 @@ theme `$primary` color. Available color classes modifiers are: `is-slider-info`,
 
 ```vue
 <script setup lang="ts">
-const value = 0
+import { ref } from 'vue'
+
+const value = ref(0)
 </script>
 
 <template>
@@ -31,30 +34,30 @@ const value = 0
 <div class="columns is-multiline">
   <div class="column is-6">
     <V-Field class="pt-6 px-4 has-rounded-tooltip is-slider-info">
-        <V-Control>
-            <Slider id="slider-example-1" v-model="frontmatter.value" />
-        </V-Control>
+      <V-Control>
+        <Slider v-model="frontmatter.state.value" />
+      </V-Control>
     </V-Field>
   </div>
   <div class="column is-6">
     <V-Field class="pt-6 px-4 has-rounded-tooltip is-slider-success">
-        <V-Control>
-            <Slider id="slider-example-1" v-model="frontmatter.value" />
-        </V-Control>
+      <V-Control>
+        <Slider v-model="frontmatter.state.value" />
+      </V-Control>
     </V-Field>
   </div>
   <div class="column is-6">
     <V-Field class="pt-6 px-4 has-rounded-tooltip is-slider-warning">
-        <V-Control>
-            <Slider id="slider-example-1" v-model="frontmatter.value" />
-        </V-Control>
+      <V-Control>
+        <Slider v-model="frontmatter.state.value" />
+      </V-Control>
     </V-Field>
   </div>
   <div class="column is-6">
     <V-Field class="pt-6 px-4 has-rounded-tooltip is-slider-danger">
-        <V-Control>
-            <Slider id="slider-example-1" v-model="frontmatter.value" />
-        </V-Control>
+      <V-Control>
+        <Slider v-model="frontmatter.state.value" />
+      </V-Control>
     </V-Field>
   </div>
 </div>

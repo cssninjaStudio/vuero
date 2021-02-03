@@ -35,7 +35,7 @@ defineProps({
 <template>
   <div class="card v-card">
     <header class="card-header">
-      <div class="card-header-title">{{ props.title }}</div>
+      <div class="card-header-title">{{ title }}</div>
       <a
         href="#"
         class="card-header-icon"
@@ -50,9 +50,9 @@ defineProps({
       <div class="media-flex p-b-10">
         <V-Avatar size="medium" :picture="avatar" squared />
         <div class="flex-meta">
-          <span>{{ props.username }}</span>
+          <span>{{ username }}</span>
           <span>
-            {{ props.text }}
+            {{ text }}
           </span>
           <span>
             <a

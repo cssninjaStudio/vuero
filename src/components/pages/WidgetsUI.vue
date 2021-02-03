@@ -2,14 +2,14 @@
 import {
   personalScoreGaugeOptions,
   onPersonalScoreGaugeReady,
-} from '/@src/composition/state/charts/billboardjs/examples/personalScoreGauge'
-import { followersList } from '/@src/composition/state/widgets/UI/followers'
-import { tagList1, tagList2 } from '/@src/composition/state/widgets/UI/tagList'
-import { tabs } from '/@src/composition/state/widgets/UI/tabList'
-import { days } from '/@src/composition/state/widgets/UI/dayList'
-import { iconList } from '/@src/composition/state/widgets/UI/menuList'
-import { notifications } from '/@src/composition/state/widgets/UI/notificationList'
-import { trendWidgetChartOptions } from '/@src/composition/state/charts/apexcharts/examples/trendWidgetChart'
+} from '/@src/data/widgets/charts/personalScoreGauge'
+import { followersList } from '/@src/data/widgets/ui/followers'
+import { tagList1, tagList2 } from '/@src/data/widgets/ui/tagList'
+import { tabs } from '/@src/data/widgets/ui/tabList'
+import { days } from '/@src/data/widgets/ui/dayList'
+import { iconList } from '/@src/data/widgets/ui/menuList'
+import { notifications } from '/@src/data/widgets/ui/notificationList'
+import { trendWidgetChartOptions } from '/@src/data/widgets/charts/trendWidgetChart'
 </script>
 
 <template>

@@ -2,11 +2,11 @@
 import { onMounted, watch } from 'vue'
 import { useRoute } from 'vue-router'
 
-import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
+import { activeSidebar } from '/@src/composition/state/activeSidebarState'
 import {
   adminLayout,
   adminLayoutId,
-} from '/@src/composition/state/ui/adminLayoutState'
+} from '/@src/composition/state/adminLayoutState'
 
 const route = useRoute()
 

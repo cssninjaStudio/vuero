@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { activeSubnav } from '/@src/composition/state/ui/webappNavState'
+import { activeSubnav } from '/@src/composition/state/webappNavState'
 
 type TabId = 'dashboards' | 'templates'
 const activeTab = ref<TabId>('dashboards')

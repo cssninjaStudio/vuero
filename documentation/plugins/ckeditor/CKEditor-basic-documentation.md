@@ -10,19 +10,23 @@ chose one and keep on with it. Other available layouts can be found [here](https
 
 ```vue
 <script setup lang="ts">
-import {
-  editor,
-  editorData,
-  editorConfig,
-} from '/@src/data/ck-editor/editor-data'
+import { ref } from 'vue'
+import ClassicEditor from '@ckeditor/ckeditor5-build-classic'
+
+const editorData = ref(`<h2>Your HTML Content</h2>`)
+const config = {
+  fontFamily: {
+    options: ['"Montserrat", sans-serif', '"Roboto", sans-serif'],
+  },
+}
 </script>
 
 <template>
   <div class="content">
     <ckeditor
-      v-model="editorData"
-      :editor="editor"
-      :config="editorConfig"
+      v-model="content"
+      :editor="ClassicEditor"
+      :config="config"
     ></ckeditor>
   </div>
 </template>

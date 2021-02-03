@@ -7,7 +7,7 @@ import useDropdown from '/@src/composition/use/useDropdown'
 import {
   activeSubnav,
   toggleSubnav,
-} from '/@src/composition/state/ui/webappNavState'
+} from '/@src/composition/state/webappNavState'
 
 const route = useRoute()
 const { dropdownElement, isOpen, open } = useDropdown()

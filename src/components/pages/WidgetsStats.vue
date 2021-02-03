@@ -4,22 +4,22 @@ import {
   spark2,
   spark3,
   spark4,
-} from '/@src/composition/state/charts/apexcharts/examples/salesSparksChart'
-import { revenueOptions } from '/@src/composition/state/charts/apexcharts/examples/revenueAreaChart'
-import { lineStatsChartOptions } from '/@src/composition/state/charts/apexcharts/examples/lineStatsWidgetChart'
-import { flexRadialChartCircleOptions } from '/@src/composition/state/charts/apexcharts/examples/flexRadialChartCircleChart'
-import { flexRadialChartStripesOptions } from '/@src/composition/state/charts/apexcharts/examples/flexRadialChartStripesChart'
+} from '/@src/data/widgets/charts/salesSparksChart'
+import { revenueOptions } from '/@src/data/widgets/charts/revenueAreaChart'
+import { lineStatsChartOptions } from '/@src/data/widgets/charts/lineStatsWidgetChart'
+import { flexRadialChartCircleOptions } from '/@src/data/widgets/charts/flexRadialChartCircleChart'
+import { flexRadialChartStripesOptions } from '/@src/data/widgets/charts/flexRadialChartStripesChart'
 import {
   widgetRadialGroup1Options,
   widgetRadialGroup2Options,
   widgetRadialGroup3Options,
-} from '/@src/composition/state/charts/apexcharts/examples/groupedCircleCharts'
+} from '/@src/data/widgets/charts/groupedCircleCharts'
 import {
   widgetGaugeGroup1Options,
   widgetGaugeGroup2Options,
   widgetGaugeGroup3Options,
-} from '/@src/composition/state/charts/apexcharts/examples/groupedRadialCharts'
-import { memberList } from '/@src/composition/state/widgets/table/memberList'
+} from '/@src/data/widgets/charts/groupedRadialCharts'
+import { memberList } from '/@src/data/widgets/table/memberList'
 </script>
 
 <template>

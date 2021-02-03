@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { isMobileSidebarOpen } from '/@src/composition/state/ui/mobileSidebarState'
-import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
+import { isMobileSidebarOpen } from '/@src/composition/state/mobileSidebarState'
+import { activeSidebar } from '/@src/composition/state/activeSidebarState'
 </script>
 
 <template>

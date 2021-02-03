@@ -1,5 +1,3 @@
-import { reactive } from 'vue'
-
 // Add Icon
 function renderPicture(data: any, cell: any, row: any) {
   return `
@@ -34,7 +32,7 @@ function renderButton(data: any, cell: any, row: any) {
   return `<div class="has-text-right"><button class="button v-button is-dark-outlined" data-row="${row.dataIndex}">Manage</button></div>`
 }
 
-export const optionsUsers = reactive({
+export const optionsUsers = {
   perPageSelect: [5, 10, 20, 25, 50, 100],
   perPage: 10,
   columns: [
@@ -178,4 +176,4 @@ export const optionsUsers = reactive({
       ],
     ],
   },
-})
+}

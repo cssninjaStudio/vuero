@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { defineEmit, defineProps } from 'vue'
-import { isDark } from '/@src/composition/state/ui/darkModeState.ts'
+import { isDark } from '/@src/composition/state/darkModeState.ts'
 import useDropdown from '/@src/composition/use/useDropdown'
 
 const props = defineProps({

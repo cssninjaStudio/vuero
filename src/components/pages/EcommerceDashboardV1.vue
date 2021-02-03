@@ -1,24 +1,24 @@
 <script setup lang="ts">
-import { customerEngagementChartOptions } from '/@src/composition/state/charts/apexcharts/examples/ecommerceCustomerEngagementChart'
-import { customersChartOptions } from '/@src/composition/state/charts/apexcharts/examples/ecommerceCustomersChart'
-import { productReturnsChartOptions } from '/@src/composition/state/charts/apexcharts/examples/ecommerceProductReturnsChart'
-import { revenueChartsOptions } from '/@src/composition/state/charts/apexcharts/examples/ecommerceRevenueChart'
+import { customerEngagementChartOptions } from '/@src/data/dashboards/ecommerce/customerEngagementChart'
+import { customersChartOptions } from '/@src/data/dashboards/ecommerce/customersChart'
+import { productReturnsChartOptions } from '/@src/data/dashboards/ecommerce/productReturnsChart'
+import { revenueChartsOptions } from '/@src/data/dashboards/ecommerce/revenueChart'
 import {
   activeTicketsChartOptions,
   escalatedChartOptions,
   closedTicketsChartOptions,
-} from '/@src/composition/state/charts/apexcharts/examples/ecommerceSupportCharts'
+} from '/@src/data/dashboards/ecommerce/supportCharts'
 import {
   spark1,
   spark2,
   spark3,
   spark4,
-} from '/@src/composition/state/charts/apexcharts/examples/ecommerceSparksCharts'
+} from '/@src/data/dashboards/ecommerce/sparksCharts'
 import {
   freeShippingChartOptions,
   groundShippingChartOptions,
   nextDayAirChartOptions,
-} from '/@src/composition/state/charts/apexcharts/examples/ecommerceShippingCharts'
+} from '/@src/data/dashboards/ecommerce/shippingCharts'
 </script>
 
 <template>

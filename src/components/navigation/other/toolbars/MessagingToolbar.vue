@@ -2,8 +2,8 @@
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 
-import { isDark } from '/@src/composition/state/ui/darkModeState.ts'
-import { activePanel } from '/@src/composition/state/ui/activePanelState'
+import { isDark } from '/@src/composition/state/darkModeState.ts'
+import { activePanel } from '/@src/composition/state/activePanelState'
 import useDropdown from '/@src/composition/use/useDropdown'
 
 const { locale } = useI18n()

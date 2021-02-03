@@ -1,7 +1,10 @@
 import { ref } from 'vue'
-import ClassicEditor from '@ckeditor/ckeditor5-build-classic'
 
-export const editor = ref(ClassicEditor)
+export const editorConfig = {
+  fontFamily: {
+    options: ['"Montserrat", sans-serif', '"Roboto", sans-serif'],
+  },
+}
 
 export const editorData = ref(`
   <h2>The three greatest things you learn from traveling</h2>
@@ -38,9 +41,3 @@ export const editorData = ref(`
 
 	<p>Going to a new place can be quite terrifying. While change and uncertainty makes us scared, traveling teaches us how ridiculous it is to be afraid of something before it happens. The moment you face your fear and see there was nothing to be afraid of, is the moment you discover bliss.</p>
 `)
-
-export const editorConfig = ref({
-  fontFamily: {
-    options: ['"Montserrat", sans-serif', '"Roboto", sans-serif'],
-  },
-})

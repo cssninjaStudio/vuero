@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { activePanel } from '/@src/composition/state/ui/activePanelState'
+import { activePanel } from '/@src/composition/state/activePanelState'
 import { useI18n } from 'vue-i18n'
 
 const { locale, t } = useI18n()

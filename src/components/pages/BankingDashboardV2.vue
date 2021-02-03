@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { expensesOptions } from '/@src/composition/state/charts/apexcharts/examples/expensesAreaChart'
+import { expensesOptions } from '/@src/data/dashboards/banking-v2/expensesAreaChart'
 import { tns } from 'tiny-slider/src/tiny-slider'
 import { ref, onMounted } from 'vue'
 

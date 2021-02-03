@@ -5,9 +5,9 @@ import { onMounted } from 'vue'
 import {
   activeSidebar,
   toggleSidebar,
-} from '/@src/composition/state/ui/activeSidebarState'
+} from '/@src/composition/state/activeSidebarState'
 
-import { userStack2 } from '/@src/composition/state/users/userStacks'
+import { userStack2 } from '/@src/data/users/userStacks'
 
 onMounted(() => {
   activeSidebar.value = 'components'

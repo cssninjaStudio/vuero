@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { completionOptions } from '/@src/composition/state/charts/apexcharts/examples/taskCompletionChart'
-import { barOptions } from '/@src/composition/state/charts/apexcharts/examples/teamEfficiencyChart'
+import { completionOptions } from '/@src/data/dashboards/personal-v2/taskCompletionChart'
+import { barOptions } from '/@src/data/dashboards/personal-v2/teamEfficiencyChart'
 
 const democheck1 = ref(false)
 const democheck2 = ref(true)

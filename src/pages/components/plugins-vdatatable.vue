@@ -6,7 +6,7 @@ import useMakrdownToc from '/@src/composition/use/useMarkdownToc'
 import {
   activeSidebar,
   toggleSidebar,
-} from '/@src/composition/state/ui/activeSidebarState'
+} from '/@src/composition/state/activeSidebarState'
 
 import { optionsBase } from '/@src/data/documentation/v-datatable/simple-datatable'
 import { optionsReactive } from '/@src/data/documentation/v-datatable/reactive-datatable'

@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { bitcoinChartOptions } from '/@src/composition/state/charts/apexcharts/examples/bitcoinPriceChart'
-import { evolutionRadialOptions } from '/@src/composition/state/charts/apexcharts/examples/evolutionRadialChart'
-import { popularityGaugeOptions } from '/@src/composition/state/charts/apexcharts/examples/popularityGaugeChart'
+import { bitcoinChartOptions } from '/@src/data/dashboards/banking-v3/bitcoinPriceChart'
+import { evolutionRadialOptions } from '/@src/data/dashboards/banking-v3/evolutionRadialChart'
+import { popularityGaugeOptions } from '/@src/data/dashboards/banking-v3/popularityGaugeChart'
 </script>
 
 <template>

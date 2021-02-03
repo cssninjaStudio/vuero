@@ -3,7 +3,7 @@ import { ref, reactive, onMounted } from 'vue'
 import { useHead } from '@vueuse/head'
 
 import useMakrdownToc from '/@src/composition/use/useMarkdownToc'
-import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
+import { activeSidebar } from '/@src/composition/state/activeSidebarState'
 
 const { markdownContainer, toc } = useMakrdownToc()
 

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 import useDropdown from '/@src/composition/use/useDropdown'
-import { isMobileSidebarOpen } from '/@src/composition/state/ui/mobileSidebarState'
+import { isMobileSidebarOpen } from '/@src/composition/state/mobileSidebarState'
 import { useRoute } from 'vue-router'
 
 const { dropdownElement, isOpen, open } = useDropdown()

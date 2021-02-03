@@ -2,7 +2,7 @@
 import {
   genericLineOptions,
   onGenericLineReady,
-} from '/@src/composition/state/charts/billboardjs/demo/genericLine'
+} from '/@src/data/dashboards/billboardjs-demo/genericLine'
 </script>
 
 <template>

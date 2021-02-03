@@ -37,7 +37,7 @@ defineProps({
     >
       <slot name="icon"></slot>
     </div>
-    <span class="snack-text">{{ props.title }}</span>
+    <span class="snack-text">{{ title }}</span>
     <span class="snack-action">
       <slot name="action"></slot>
     </span>

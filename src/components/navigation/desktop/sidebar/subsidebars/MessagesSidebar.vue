@@ -3,7 +3,7 @@ import { defineEmit, defineProps } from 'vue'
 import {
   activeSidebar,
   toggleSidebar,
-} from '/@src/composition/state/ui/activeSidebarState'
+} from '/@src/composition/state/activeSidebarState'
 
 const props = defineProps({
   conversations: {

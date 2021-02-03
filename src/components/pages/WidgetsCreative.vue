@@ -2,13 +2,13 @@
 import {
   avatarList,
   avatarListCreative,
-} from '/@src/composition/state/widgets/UI/avatarList'
+} from '/@src/data/widgets/ui/avatarList'
 import {
   socialButtonList1,
   socialButtonList2,
-} from '/@src/composition/state/widgets/UI/socialButtonList'
-import { followersStats } from '/@src/composition/state/widgets/UI/followers'
-import { products } from '/@src/composition/state/widgets/UI/productList'
+} from '/@src/data/widgets/ui/socialButtonList'
+import { followersStats } from '/@src/data/widgets/ui/followers'
+import { products } from '/@src/data/widgets/ui/productList'
 </script>
 
 <template>

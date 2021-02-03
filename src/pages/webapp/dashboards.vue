@@ -2,11 +2,11 @@
 import { onMounted, watch, ref } from 'vue'
 import { useRoute } from 'vue-router'
 
-import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
+import { activeSidebar } from '/@src/composition/state/activeSidebarState'
 import {
   webappLayout,
   webappLayoutId,
-} from '/@src/composition/state/ui/webappLayoutState'
+} from '/@src/composition/state/webappLayoutState'
 
 const route = useRoute()
 

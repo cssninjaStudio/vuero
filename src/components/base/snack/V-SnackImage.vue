@@ -31,7 +31,7 @@ defineProps({
         @error="$event.target.src = 'https://via.placeholder.com/150x150'"
       />
     </div>
-    <span class="snack-text">{{ props.title }}</span>
+    <span class="snack-text">{{ title }}</span>
     <span class="snack-action">
       <slot></slot>
     </span>

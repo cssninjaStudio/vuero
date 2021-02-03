@@ -3,7 +3,7 @@ import { ref } from 'vue'
 import {
   adminLayoutId,
   setLayout,
-} from '/@src/composition/state/ui/adminLayoutState'
+} from '/@src/composition/state/adminLayoutState'
 const standardOpen = ref(false)
 </script>
 

@@ -1,9 +1,10 @@
 ---
-value:
-  - 20
-  - 50
-  - 70
-merge: 10
+state:
+  value:
+    - 20
+    - 50
+    - 70
+  merge: 10
 ---
 
 ### Tooltip merging
@@ -16,7 +17,9 @@ component's `:merge` prop.
 
 ```vue
 <script setup lang="ts">
-const value = [20, 50, 70]
+import { ref } from 'vue'
+
+const value = ref([20, 50, 70])
 const merge = 10
 </script>
 
@@ -36,10 +39,12 @@ const merge = 10
 <div class="columns mt-2">
   <div class="column is-6">
     <V-Field class="pt-5 px-4 is-slider-info">
-        <V-Control>
-            <Slider id="slider-example-merging" v-model="frontmatter.value" 
-                :merge="frontmatter.merge" />
-        </V-Control>
+      <V-Control>
+        <Slider 
+          v-model="frontmatter.state.value" 
+          :merge="frontmatter.state.merge"
+        />
+      </V-Control>
     </V-Field>
   </div>
 </div>

@@ -5,12 +5,12 @@ import { onMounted } from 'vue'
 import {
   activeSidebar,
   toggleSidebar,
-} from '/@src/composition/state/ui/activeSidebarState'
+} from '/@src/composition/state/activeSidebarState'
 
 import {
   accordionSimpleData,
   accordionExclusiveData,
-} from '/@src/composition/state/documentation/components/accordion'
+} from '/@src/data/documentation/accordion'
 
 onMounted(() => {
   activeSidebar.value = 'components'

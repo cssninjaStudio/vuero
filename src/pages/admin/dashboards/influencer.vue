@@ -5,7 +5,7 @@ import { ref } from 'vue'
 import {
   activeSidebar,
   toggleSidebar,
-} from '/@src/composition/state/ui/activeSidebarState'
+} from '/@src/composition/state/activeSidebarState'
 
 type TabId = 'overview' | 'content' | 'brands'
 const activeTab = ref<TabId>('overview')

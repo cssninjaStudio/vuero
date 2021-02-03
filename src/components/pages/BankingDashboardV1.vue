@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { incomeOptions } from '/@src/composition/state/charts/apexcharts/examples/incomeHistoryChart'
+import { incomeOptions } from '/@src/data/dashboards/banking-v1/incomeHistoryChart'
 </script>
 
 <template>

@@ -1,13 +1,13 @@
 <script setup lang="ts">
 import { onMounted, reactive, ref } from 'vue'
-import { energyChartOptions } from '/@src/composition/state/charts/apexcharts/examples/energyChart'
-import { overallChartOptions } from '/@src/composition/state/charts/apexcharts/examples/overallChart'
-import { oxygenChartOptions } from '/@src/composition/state/charts/apexcharts/examples/oxygenChart'
-import { progressChartOptions } from '/@src/composition/state/charts/apexcharts/examples/progressChart'
+import { energyChartOptions } from '/@src/data/dashboards/lifestyle-v3/energyChart'
+import { overallChartOptions } from '/@src/data/dashboards/lifestyle-v3/overallChart'
+import { oxygenChartOptions } from '/@src/data/dashboards/lifestyle-v3/oxygenChart'
+import { progressChartOptions } from '/@src/data/dashboards/lifestyle-v3/progressChart'
 import {
   personalScoreGaugeOptions,
   onPersonalScoreGaugeReady,
-} from '/@src/composition/state/charts/billboardjs/examples/personalScoreGauge'
+} from '/@src/data/dashboards/lifestyle-v3/personalScoreGauge'
 </script>
 
 <template>

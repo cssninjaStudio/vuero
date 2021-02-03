@@ -2,7 +2,7 @@
 import {
   adminLayoutId,
   setLayout,
-} from '/@src/composition/state/ui/adminLayoutState'
+} from '/@src/composition/state/adminLayoutState'
 </script>
 
 <template>

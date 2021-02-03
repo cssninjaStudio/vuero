@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { revenueOptions } from '/@src/composition/state/charts/apexcharts/examples/revenueChart'
-import { gaugeOptions } from '/@src/composition/state/charts/apexcharts/examples/goalChart'
-import { barOptions } from '/@src/composition/state/charts/apexcharts/examples/profitBarChart'
-import { optionsCircle } from '/@src/composition/state/charts/apexcharts/examples/growthRadialChart'
+import { revenueOptions } from '/@src/data/dashboards/analytics/revenueChart'
+import { gaugeOptions } from '/@src/data/dashboards/analytics/goalChart'
+import { barOptions } from '/@src/data/dashboards/analytics/profitBarChart'
+import { optionsCircle } from '/@src/data/dashboards/analytics/growthRadialChart'
 </script>
 
 <template>

@@ -1,16 +1,16 @@
 <script setup lang="ts">
-import { onMounted, reactive, ref } from 'vue'
-import { sharingOptions } from '/@src/composition/state/charts/apexcharts/examples/sharingChart'
-import { usersOptions } from '/@src/composition/state/charts/apexcharts/examples/usersChart'
+import { onMounted } from 'vue'
+import { sharingOptions } from '/@src/data/dashboards/company/sharingChart'
+import { usersOptions } from '/@src/data/dashboards/company/usersChart'
 import {
   barData,
   barData2,
   usersBarOptions,
-} from '/@src/composition/state/charts/apexcharts/examples/usersBarChart'
+} from '/@src/data/dashboards/company/usersBarChart'
 import {
   personalScoreGaugeOptions,
   onPersonalScoreGaugeReady,
-} from '/@src/composition/state/charts/billboardjs/examples/personalScoreGauge'
+} from '/@src/data/dashboards/company/personalScoreGauge'
 
 onMounted(async () => {
   setTimeout(() => {

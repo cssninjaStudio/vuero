@@ -6,7 +6,7 @@ import useDropdown from '/@src/composition/use/useDropdown'
 import {
   activeSubnav,
   toggleSubnav,
-} from '/@src/composition/state/ui/webappNavState'
+} from '/@src/composition/state/webappNavState'
 import { useWindowScroll } from '@vueuse/core'
 
 const route = useRoute()

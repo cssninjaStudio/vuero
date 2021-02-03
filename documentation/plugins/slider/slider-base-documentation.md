@@ -1,5 +1,6 @@
 ---
-value: 0
+state:
+  value: 0
 ---
 
 ### Rounded tooltip
@@ -13,7 +14,9 @@ tooltip.
 
 ```vue
 <script setup lang="ts">
-const value = 0
+import { ref } from 'vue'
+
+const value = ref(0)
 </script>
 
 <template>
@@ -33,7 +36,7 @@ const value = 0
   <div class="column is-6">
     <V-Field class="pt-5 px-4 has-rounded-tooltip">
         <V-Control>
-            <Slider id="slider-example-rounded" v-model="frontmatter.value" />
+            <Slider v-model="frontmatter.state.value" />
         </V-Control>
     </V-Field>
   </div>

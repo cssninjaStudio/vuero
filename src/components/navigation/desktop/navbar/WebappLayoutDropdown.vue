@@ -2,7 +2,7 @@
 import {
   webappLayoutId,
   setLayout,
-} from '/@src/composition/state/ui/webappLayoutState'
+} from '/@src/composition/state/webappLayoutState'
 </script>
 
 <template>

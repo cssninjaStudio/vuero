@@ -5,8 +5,8 @@ import { onMounted } from 'vue'
 import {
   activeSidebar,
   toggleSidebar,
-} from '/@src/composition/state/ui/activeSidebarState'
-import { flexRowsBasic } from '/@src/composition/state/documentation/components/table'
+} from '/@src/composition/state/activeSidebarState'
+import { flexRowsBasic } from '/@src/data/documentation/table'
 
 onMounted(() => {
   activeSidebar.value = 'components'

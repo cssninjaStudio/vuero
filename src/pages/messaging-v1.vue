@@ -6,7 +6,7 @@ import { computed, onMounted, ref, watch } from 'vue'
 import {
   activeSidebar,
   toggleSidebar,
-} from '/@src/composition/state/ui/activeSidebarState'
+} from '/@src/composition/state/activeSidebarState'
 import useDropdown from '/@src/composition/use/useDropdown'
 import sleep from '/@src/utils/sleep'
 

@@ -2,7 +2,7 @@
 import { useWindowScroll, useMediaQuery } from '@vueuse/core'
 import { computed, ref, watch } from 'vue'
 
-import { isDark } from '/@src/composition/state/ui/darkModeState.ts'
+import { isDark } from '/@src/composition/state/darkModeState.ts'
 
 const isMobileNavOpen = ref(false)
 const isLargeScreen = useMediaQuery('(min-width: 1023px)')

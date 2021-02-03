@@ -5,7 +5,7 @@ import { onMounted, ref } from 'vue'
 import {
   activeSidebar,
   toggleSidebar,
-} from '/@src/composition/state/ui/activeSidebarState'
+} from '/@src/composition/state/activeSidebarState'
 
 onMounted(() => {
   activeSidebar.value = 'elements'

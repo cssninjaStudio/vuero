@@ -1,5 +1,6 @@
 ---
-value: 36
+state:
+  value: 36
 ---
 
 ### Squared tooltip
@@ -11,7 +12,9 @@ square shaped tooltip. Supports bigger values than the rounded tooltip.
 
 ```vue
 <script setup lang="ts">
-const value = 0
+import { ref } from 'vue'
+
+const value = ref(0)
 </script>
 
 <template>
@@ -30,9 +33,9 @@ const value = 0
 <div class="columns mt-2">
   <div class="column is-6">
     <V-Field class="pt-5 px-4 has-squared-tooltip">
-        <V-Control>
-            <Slider id="slider-example-squared" v-model="frontmatter.value" />
-        </V-Control>
+      <V-Control>
+        <Slider v-model="frontmatter.state.value" />
+      </V-Control>
     </V-Field>
   </div>
 </div>

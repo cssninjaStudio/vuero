@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { activeSidebar } from '/@src/composition/state/ui/activeSidebarState'
+import { activeSidebar } from '/@src/composition/state/activeSidebarState'
 </script>
 
 <template>

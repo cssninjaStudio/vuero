@@ -1,5 +1,6 @@
 ---
-value: 54
+state:
+  value: 54
 ---
 
 ### Tooltip format
@@ -11,8 +12,10 @@ property. You can return the tooltip value with the format that you want.
 
 ```vue
 <script setup lang="ts">
-const value = 54
-const format = function (value) {
+import { ref } from 'vue'
+
+const value = ref(54)
+const format = (value) => {
   return `${value}%`
 }
 </script>
@@ -33,10 +36,12 @@ const format = function (value) {
 <div class="columns mt-2">
   <div class="column is-6">
     <V-Field class="pt-5 px-4 has-curved-tooltip">
-        <V-Control>
-            <Slider id="slider-example-format" v-model="frontmatter.value" 
-                :format="formatAsPercent" />
-        </V-Control>
+      <V-Control>
+        <Slider 
+          v-model="frontmatter.state.value" 
+          :format="formatAsPercent" 
+        />
+      </V-Control>
     </V-Field>
   </div>
 </div>

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
 
-import { isDark } from '/@src/composition/state/ui/darkModeState.ts'
+import { isDark } from '/@src/composition/state/darkModeState.ts'
 
 useHead({
   title: 'Auth Login 1 - Vuero',

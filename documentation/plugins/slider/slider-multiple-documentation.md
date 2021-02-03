@@ -1,7 +1,8 @@
 ---
-value:
-  - 16
-  - 62
+state:
+  value:
+    - 16
+    - 62
 ---
 
 ### Multiple handles
@@ -13,7 +14,9 @@ to its `v-model` property.
 
 ```vue
 <script setup lang="ts">
-const value = [16, 62]
+import { ref } from 'vue'
+
+const value = ref([16, 62])
 </script>
 
 <template>
@@ -32,9 +35,9 @@ const value = [16, 62]
 <div class="columns mt-2">
   <div class="column is-6">
     <V-Field class="pt-5 px-4 has-rounded-tooltip">
-        <V-Control>
-            <Slider id="slider-example-multiple" v-model="frontmatter.value" />
-        </V-Control>
+      <V-Control>
+        <Slider v-model="frontmatter.state.value" />
+      </V-Control>
     </V-Field>
   </div>
 </div>

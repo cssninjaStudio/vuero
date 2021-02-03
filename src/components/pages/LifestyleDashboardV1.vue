@@ -2,17 +2,19 @@
 import type { PropType } from 'vue'
 import { defineProps } from 'vue'
 
-import { reputationChartOptions } from '/@src/composition/state/charts/apexcharts/examples/reputationChart'
-import { influenceChartOptions } from '/@src/composition/state/charts/apexcharts/examples/influenceChart'
+import { reputationChartOptions } from '/@src/data/dashboards/lifestyle-v1/reputationChart'
+import { influenceChartOptions } from '/@src/data/dashboards/lifestyle-v1/influenceChart'
 import {
   creativityRadialOptions,
   engagmentRadialOptions,
   popularityRadialOptions,
-} from '/@src/composition/state/charts/apexcharts/examples/groupedSocialCharts'
+} from '/@src/data/dashboards/lifestyle-v1/groupedSocialCharts'
+
+type TabId = 'overview' | 'content' | 'brands'
 
 const props = defineProps({
   activeTab: {
-    type: String as PropType<'overview' | 'content' | 'brands'>,
+    type: String as PropType<TabId>,
     default: 'overview',
   },
 })

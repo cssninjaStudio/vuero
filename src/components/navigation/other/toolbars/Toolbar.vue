@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { isDark } from '/@src/composition/state/ui/darkModeState.ts'
-import { activePanel } from '/@src/composition/state/ui/activePanelState'
+import { isDark } from '/@src/composition/state/darkModeState.ts'
+import { activePanel } from '/@src/composition/state/activePanelState'
 import useDropdown from '/@src/composition/use/useDropdown'
 import { useI18n } from 'vue-i18n'
 import { computed } from 'vue'

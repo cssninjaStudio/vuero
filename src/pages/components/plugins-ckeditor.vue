@@ -1,14 +1,14 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
 import { onMounted, ref } from 'vue'
+import ClassicEditor from '@ckeditor/ckeditor5-build-classic'
 
 import {
   activeSidebar,
   toggleSidebar,
-} from '/@src/composition/state/ui/activeSidebarState'
+} from '/@src/composition/state/activeSidebarState'
 
 import {
-  editor,
   editorData,
   editorConfig,
 } from '/@src/data/documentation/ck-editor/editor-data'
@@ -88,7 +88,7 @@ useHead({
             <div class="column is-12 content">
               <ckeditor
                 v-model="editorData"
-                :editor="editor"
+                :editor="ClassicEditor"
                 :config="editorConfig"
               >
               </ckeditor>

@@ -5,23 +5,23 @@ import {
   spark2,
   spark3,
   spark4,
-} from '/@src/composition/state/charts/apexcharts/examples/salesSparksChart'
-import { revenueOptions } from '/@src/composition/state/charts/apexcharts/examples/revenueAreaChart'
-import { salesRevenuesRadialOptions } from '/@src/composition/state/charts/apexcharts/examples/salesRevenueRadialChart'
+} from '/@src/data/dashboards/sales/salesSparksChart'
+import { revenueOptions } from '/@src/data/dashboards/sales/revenueAreaChart'
+import { salesRevenuesRadialOptions } from '/@src/data/dashboards/sales/salesRevenueRadialChart'
 import {
   radialGroup1Options,
   radialGroup2Options,
   radialGroup3Options,
-} from '/@src/composition/state/charts/apexcharts/examples/salesRadialGroupChart'
+} from '/@src/data/dashboards/sales/salesRadialGroupChart'
 import {
   barData,
   barData2,
   salesBarOptions,
-} from '/@src/composition/state/charts/apexcharts/examples/salesBarChart'
+} from '/@src/data/dashboards/sales/salesBarChart'
 import {
   personalScoreGaugeOptions,
   onPersonalScoreGaugeReady,
-} from '/@src/composition/state/charts/billboardjs/examples/personalScoreGauge'
+} from '/@src/data/dashboards/sales/personalScoreGauge'
 
 onMounted(() => {
   setTimeout(() => {
