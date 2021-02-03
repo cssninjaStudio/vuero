@@ -16,6 +16,7 @@ import {
 } from '/@src/data/v-datatable/simple-datatable'
 
 import { optionsAdvanced } from '/@src/data/v-datatable/advanced-datatable'
+import { optionsUsers } from '/@src/data/v-datatable/users-datatable'
 
 onMounted(() => {
   activeSidebar.value = 'components'
@@ -91,14 +92,16 @@ useHead({
           <DatatableBaseDocumentation />
 
           <div class="buttons">
-            <V-Button @click="addItem">Add item</V-Button>
-            <V-Button @click="randUpdate">Update random item</V-Button>
+            <V-Button dark-outlined @click="addItem">Add item</V-Button>
+            <V-Button dark-outlined @click="randUpdate"
+              >Update random item</V-Button
+            >
             <label
               ><input v-model="autoupdate" type="checkbox" /> autoupdate</label
             >
           </div>
 
-          <div class="r-card mb-6">
+          <div class="mb-6">
             <V-SimpleDatatables
               :options="options"
               :autoupdate="autoupdate"
@@ -109,49 +112,18 @@ useHead({
           <!--Advanced Datatable-->
           <DatatableAdvancedDocumentation />
 
-          <div class="r-card mb-6">
+          <div class="mb-6">
             <V-SimpleDatatables :options="optionsAdvanced" />
+          </div>
+
+          <!--Users Datatable-->
+          <DatatableUsersDocumentation />
+
+          <div class="mb-6">
+            <V-SimpleDatatables :options="optionsUsers" />
           </div>
         </div>
       </div>
     </div>
   </div>
 </template>
-
-<style lang="scss">
-tr.yes .icon {
-  color: red;
-}
-tr.no .icon {
-  color: green;
-}
-
-tr.yes b {
-  color: green;
-}
-tr.no b {
-  color: red;
-}
-
-button {
-  background: blue;
-  color: white;
-  border: 0;
-  border-radius: 4px;
-  margin: 0 0 0 0.5rem;
-}
-
-.currency::before {
-  content: '$';
-}
-
-.currency--profit {
-  color: limegreen;
-}
-.currency--loss {
-  color: red;
-}
-.currency--zero {
-  color: gray;
-}
-</style>

@@ -7,7 +7,8 @@
     4. Datatable pagination Dark mode
     5. Datatable sorting
     6. Ajax Loading bar
-    7. Datatable
+    3. Simple Datatables
+    4. Simple Datatables Dark mode
 */
 
 /* ==========================================================================
@@ -82,7 +83,7 @@
 3. Datatable pagination
 ========================================================================== */
 
-.pagination {
+/* .pagination {
   text-align: center;
 
   li {
@@ -103,9 +104,9 @@
       }
     }
   }
-}
+} */
 
-.pagination {
+/* .pagination {
   &.datatable-pagination {
     display: flex;
     justify-content: space-between;
@@ -159,13 +160,13 @@
       }
     }
   }
-}
+} */
 
 /* ==========================================================================
 4. Datatable pagination Dark mode
 ========================================================================== */
 
-.is-dark {
+/* .is-dark {
   .pagination {
     &.datatable-pagination {
       ul {
@@ -199,13 +200,13 @@
       }
     }
   }
-}
+} */
 
 /* ==========================================================================
 5. Datatable sorting
 ========================================================================== */
 
-.sorting {
+/* .sorting {
   cursor: pointer;
   background-image: url('/images/icons/datatable/sort_both.png');
   background-repeat: no-repeat;
@@ -218,13 +219,13 @@
 
 .sorting-asc {
   background-image: url('/images/icons/datatable/sort_asc.png');
-}
+} */
 
 /* ==========================================================================
 6. Ajax Loading bar
 ========================================================================== */
 
-.datatable-load-bar {
+/* .datatable-load-bar {
   width: 100%;
   margin: 8px 0;
 }
@@ -241,13 +242,13 @@
 
 .datatable-filter-line {
   background: #fcfcfc;
-}
+} */
 
 /* ==========================================================================
 7. Datatable
 ========================================================================== */
 
-.table-wrapper {
+/* .table-wrapper {
   overflow-x: auto;
   overflow-y: visible;
   border: 1px solid darken($fade-grey, 3%);
@@ -416,13 +417,13 @@
       }
     }
   }
-}
+} */
 
 /* ==========================================================================
 8. Datatable Dark mode
 ========================================================================== */
 
-.is-dark {
+/* .is-dark {
   .table-wrapper {
     border-color: lighten($dark-sidebar, 12%);
     background: lighten($dark-sidebar, 6%);
@@ -485,20 +486,334 @@
       }
     }
   }
-}
+} */
+
+/* ==========================================================================
+3. Simple Datatables
+========================================================================== */
 
 .dataTable-wrapper {
+  .dataTable-top {
+    margin-bottom: 1.5rem;
+    padding-left: 0;
+    padding-right: 0;
+
+    .dataTable-dropdown {
+      label {
+        display: block;
+        position: relative;
+        font-family: $font;
+        font-weight: 400;
+        font-size: 0.9rem;
+        color: $light-text;
+
+        &::after {
+          position: absolute;
+          top: 1px;
+          right: 4px;
+          content: '';
+          font-family: 'Font Awesome 5 Free';
+          font-weight: 900;
+          font-size: 0.9rem;
+          color: $light-text;
+          height: 36px;
+          width: 36px;
+          border-radius: 0.5rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: $white;
+        }
+      }
+
+      select {
+        font-size: 1rem;
+        background: $white;
+        border: 1px solid $border;
+        color: $dark-text;
+        border-radius: 0.5rem;
+        height: 38px;
+        outline: none;
+        transition: box-shadow 0.3s;
+
+        &:focus {
+          box-shadow: $light-box-shadow;
+        }
+      }
+    }
+
+    .dataTable-search {
+      position: relative;
+
+      &::after {
+        position: absolute;
+        top: 1px;
+        right: 4px;
+        content: '\f002';
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        font-size: 0.9rem;
+        color: $light-text;
+        height: 36px;
+        width: 36px;
+        border-radius: 0.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $white;
+      }
+
+      input {
+        font-family: $font;
+        font-size: 1rem;
+        background: $white;
+        border: 1px solid $border;
+        color: $dark-text;
+        border-radius: 0.5rem;
+        height: 38px;
+        outline: none;
+        transition: box-shadow 0.3s;
+
+        &::placeholder {
+          color: $placeholder;
+        }
+
+        &:focus {
+          box-shadow: $light-box-shadow;
+        }
+      }
+    }
+  }
+
   .dataTable-container {
+    background: $white;
+    border: none !important;
+
     .dataTable-table {
+      border: 1px solid $fade-grey;
+      border-collapse: collapse;
+      border-radius: 0.75rem;
+
+      th {
+        padding: 16px 20px;
+        font-family: $font-alt;
+        font-size: 0.8rem;
+        color: $dark-text;
+        text-transform: uppercase;
+        border: 1px solid $fade-grey;
+        font-weight: 600;
+
+        &:last-child {
+          text-align: right;
+        }
+      }
+
       td {
+        font-family: $font;
         vertical-align: middle;
+        padding: 12px 20px;
+        border-bottom: 1px solid $fade-grey;
+
+        &:last-child {
+          text-align: right;
+        }
+      }
+
+      .light-text {
+        color: $light-text;
       }
 
       .drinks-icon {
         display: block;
         max-width: 48px;
         border-radius: 50%;
-        border: 1px solid #ededed;
+        border: 1px solid $fade-grey;
+      }
+
+      .negative-icon,
+      .positive-icon {
+        svg {
+          height: 16px;
+          width: 16px;
+        }
+      }
+
+      .positive-icon {
+        .iconify {
+          color: $success;
+
+          * {
+            stroke-width: 4px;
+          }
+        }
+      }
+
+      .negative-icon {
+        &.is-danger {
+          .iconify {
+            color: $danger !important;
+          }
+        }
+
+        .iconify {
+          color: $light-text;
+
+          * {
+            stroke-width: 4px;
+          }
+        }
+      }
+
+      .price {
+        color: $dark-text;
+        font-weight: 500;
+
+        &::before {
+          content: '$';
+        }
+
+        &.price-free {
+          color: $light-text;
+        }
+      }
+
+      .status {
+        display: flex;
+        align-items: center;
+
+        &.is-available {
+          i {
+            color: $success;
+          }
+        }
+
+        &.is-busy {
+          i {
+            color: $danger;
+          }
+        }
+
+        &.is-offline {
+          i {
+            color: $light-text;
+          }
+        }
+
+        i {
+          margin-right: 8px;
+          font-size: 8px;
+        }
+
+        span {
+          font-family: $font;
+          font-size: 0.9rem;
+          color: $light-text;
+        }
+      }
+    }
+  }
+
+  .dataTable-bottom {
+    .dataTable-info {
+      font-family: $font;
+      font-size: 0.9rem;
+      color: $light-text;
+    }
+
+    .dataTable-pagination {
+      li {
+        &:not(.active) {
+          a:hover {
+            background: $white;
+          }
+        }
+
+        &.active {
+          a {
+            background: $primary;
+            box-shadow: $primary-box-shadow;
+            color: $white;
+          }
+        }
+
+        a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-family: $font;
+          color: $light-text;
+          border-radius: 50%;
+          min-width: 34px;
+          min-height: 34px;
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+4. Simple Datatables Dark mode
+========================================================================== */
+
+.is-dark {
+  .dataTable-wrapper {
+    .dataTable-top {
+      .dataTable-dropdown {
+        label {
+          &::after {
+            background: lighten($dark-sidebar, 6%) !important;
+          }
+        }
+
+        select {
+          border-color: lighten($dark-sidebar, 12%);
+          background: lighten($dark-sidebar, 6%);
+          color: $white;
+        }
+      }
+
+      .dataTable-search {
+        &::after {
+          background: lighten($dark-sidebar, 6%) !important;
+        }
+
+        input {
+          border-color: lighten($dark-sidebar, 12%);
+          background: lighten($dark-sidebar, 6%);
+          color: $white;
+        }
+      }
+    }
+
+    .dataTable-container {
+      border-color: lighten($dark-sidebar, 12%);
+      background: lighten($dark-sidebar, 6%);
+
+      .dataTable-table {
+        border-color: lighten($dark-sidebar, 12%);
+
+        th,
+        td {
+          border-color: lighten($dark-sidebar, 12%);
+          color: $dark-dark-text;
+        }
+
+        th {
+          .dataTable-sorter {
+            &::before {
+              border-top-color: $dark-dark-text;
+            }
+
+            &::after {
+              border-bottom-color: $dark-dark-text;
+            }
+          }
+        }
+
+        .drinks-icon {
+          border-color: lighten($dark-sidebar, 12%);
+        }
       }
     }
   }

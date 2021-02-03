@@ -10,7 +10,7 @@ export const addItem = () => {
   ])
 }
 
-export const autoupdate = ref(true)
+export const autoupdate = ref(false)
 
 export const randUpdate = () => {
   const max = options.data.data.length
