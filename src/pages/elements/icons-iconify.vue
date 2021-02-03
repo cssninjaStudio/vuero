@@ -12,7 +12,7 @@ onMounted(() => {
 })
 
 useHead({
-  title: 'Elements - Icons Feather - Vuero',
+  title: 'Elements - Iconify - Vuero',
 })
 </script>
 
@@ -39,7 +39,7 @@ useHead({
       </div>
 
       <div class="title-wrap">
-        <h1 class="title is-4">Feather Icons</h1>
+        <h1 class="title is-4">Iconify</h1>
       </div>
 
       <FilterToolbar />
@@ -62,7 +62,7 @@ useHead({
           </li>
           <li>
             <a>
-              <span>Feather Icons</span>
+              <span>Iconify</span>
             </a>
           </li>
         </ul>
@@ -70,8 +70,9 @@ useHead({
 
       <div class="columns">
         <div class="column is-12">
-          <!--Line Icons-->
-          <IconsFeatherDocumentation />
+          <!--Iconify Icons-->
+          <IconsIconifyDocumentation />
+
           <div class="demo-card">
             <div class="card-inner">
               <ul class="demo-icon-list">

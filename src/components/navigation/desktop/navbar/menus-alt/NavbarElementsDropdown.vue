@@ -138,14 +138,14 @@ const { dropdownElement, isOpen, open } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'elements-icons-feather' }"
+                    :to="{ name: 'elements-icons-iconify' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
                       <i class="lnil lnil-flag"></i>
                     </div>
                     <div class="meta">
-                      <span>Feather Icons</span>
+                      <span>Iconify</span>
                     </div>
                   </RouterLink>
                 </div>

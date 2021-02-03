@@ -119,7 +119,7 @@ defineProps({
 
       <div class="column is-3">
         <RouterLink
-          :to="{ name: 'elements-icons-feather' }"
+          :to="{ name: 'elements-icons-iconify' }"
           class="component-box"
         >
           <div class="component">

@@ -68,10 +68,10 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'elements-icons-feather' }"
+                :to="{ name: 'elements-icons-iconify' }"
                 class="is-submenu"
-                ><i class="iconify" data-icon="feather:circle"></i>Feather
-                Icons</RouterLink
+                ><i class="iconify" data-icon="feather:circle"></i
+                >Iconify</RouterLink
               >
             </li>
           </ul>

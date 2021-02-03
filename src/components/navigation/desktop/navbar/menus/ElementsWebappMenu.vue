@@ -82,8 +82,8 @@ const activeTab = ref<TabId>('basic')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'elements-icons-feather' }">
-                      <span>Feather Icons</span>
+                    <RouterLink :to="{ name: 'elements-icons-iconify' }">
+                      <span>Iconify</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
