@@ -107,3 +107,48 @@
 
   --ck-color-link-default: hsl(190, 100%, 75%);
 }
+
+.ck-editor {
+  font-family: $font;
+
+  .ck-labeled-field-view__input-wrapper {
+    box-shadow: none !important;
+    .ck-input {
+      box-shadow: none !important;
+    }
+  }
+
+  .ck-insert-table-dropdown-grid-box {
+    &.ck-on {
+      background: $primary !important;
+      border-color: $primary !important;
+    }
+  }
+
+  .ck-editor__main {
+    .ck-content {
+      padding: 0 2rem;
+    }
+  }
+}
+
+.is-dark {
+  .ck-editor {
+    .ck-editor__main {
+      .ck-editor__editable {
+        border-color: lighten($dark-sidebar, 12%) !important;
+      }
+      .ck-content {
+        background: lighten($dark-sidebar, 6%) !important;
+        border-color: lighten($dark-sidebar, 12%);
+      }
+    }
+
+    figcaption {
+      &.ck-editor__nested-editable {
+        background: $dark-sidebar;
+        color: $light-text;
+      }
+    }
+  }
+}

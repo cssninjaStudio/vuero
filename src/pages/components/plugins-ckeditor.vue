@@ -1,20 +1,17 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
 import { onMounted, ref } from 'vue'
-import ClassicEditor from '@ckeditor/ckeditor5-build-classic'
 
 import {
   activeSidebar,
   toggleSidebar,
 } from '/@src/composition/state/ui/activeSidebarState'
 
-const editor = ref(ClassicEditor)
-const editorData = ref('<h3>ClassicEditor</h3><p>Content of the editor.</p>')
-const editorConfig = ref({
-  fontFamily: {
-    options: ['"Montserrat", sans-serif', '"Roboto", sans-serif'],
-  },
-})
+import {
+  editor,
+  editorData,
+  editorConfig,
+} from '/@src/data/ck-editor/editor-data'
 
 onMounted(() => {
   activeSidebar.value = 'components'
@@ -87,12 +84,15 @@ useHead({
           <!--Simple Datatable-->
           <CKEditorBasicDocumentation />
 
-          <div class="content">
-            <ckeditor
-              v-model="editorData"
-              :editor="editor"
-              :config="editorConfig"
-            ></ckeditor>
+          <div class="columns">
+            <div class="column is-12 content">
+              <ckeditor
+                v-model="editorData"
+                :editor="editor"
+                :config="editorConfig"
+              >
+              </ckeditor>
+            </div>
           </div>
         </div>
       </div>
