@@ -2,21 +2,32 @@
 import { useHead } from '@vueuse/head'
 import { onBeforeUnmount, onMounted } from 'vue'
 
+import useMakrdownToc from '/@src/composition/use/useMarkdownToc'
 import {
   activeSidebar,
   toggleSidebar,
 } from '/@src/composition/state/ui/activeSidebarState'
 
-import { optionsBase } from '/@src/data/v-datatable/simple-datatable'
-import {
-  randomUpdate,
-  optionsReactive,
-} from '/@src/data/v-datatable/reactive-datatable'
-
-import { optionsAdvanced } from '/@src/data/v-datatable/advanced-datatable'
-import { optionsUsers } from '/@src/data/v-datatable/users-datatable'
+import { optionsBase } from '/@src/data/documentation/v-datatable/simple-datatable'
+import { optionsReactive } from '/@src/data/documentation/v-datatable/reactive-datatable'
+import { optionsAdvanced } from '/@src/data/documentation/v-datatable/advanced-datatable'
+import { optionsUsers } from '/@src/data/documentation/v-datatable/users-datatable'
 
 let interval: NodeJS.Timeout
+const { markdownContainer, toc } = useMakrdownToc()
+
+const randomUpdate = () => {
+  const max = optionsReactive.data.data.length
+  const index = Math.floor(Math.random() * max)
+  const percent = parseInt(
+    `${optionsReactive.data.data[index][4]}`.replace('%', '')
+  )
+
+  if (percent < 100) {
+    optionsReactive.data.data[index][1] = Math.floor(Math.random() * 5000)
+    optionsReactive.data.data[index][4] = `${percent + 1}%`
+  }
+}
 
 onMounted(() => {
   activeSidebar.value = 'components'
@@ -93,7 +104,11 @@ useHead({
       </nav>
 
       <div class="columns is-multiline">
-        <div class="column is-12">
+        <div
+          ref="markdownContainer"
+          :class="[toc.length > 0 ? 'is-9' : 'is-12']"
+          class="column"
+        >
           <!--Simple Datatable-->
           <DatatableBaseDocumentation />
 
@@ -156,6 +171,9 @@ useHead({
           <div class="mb-6">
             <V-SimpleDatatables :options="optionsUsers" />
           </div>
+        </div>
+        <div v-if="toc.length" class="column is-3">
+          <DocumentationToc :toc="toc" />
         </div>
       </div>
     </div>

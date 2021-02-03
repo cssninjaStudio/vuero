@@ -11,7 +11,7 @@ import {
   editor,
   editorData,
   editorConfig,
-} from '/@src/data/ck-editor/editor-data'
+} from '/@src/data/documentation/ck-editor/editor-data'
 
 onMounted(() => {
   activeSidebar.value = 'components'
