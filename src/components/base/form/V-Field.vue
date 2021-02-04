@@ -42,7 +42,7 @@ defineProps({
     ]"
   >
     <slot></slot>
-    <p v-if="help" class="help"></p>
+    <p v-if="help" class="help">{{ help }}</p>
     <p v-if="validation && success" class="help text-success">
       Looks like we're good
     </p>

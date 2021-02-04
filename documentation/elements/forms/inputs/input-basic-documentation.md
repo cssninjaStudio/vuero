@@ -22,7 +22,12 @@ const input = ref('')
 <template>
   <V-Field>
     <V-Control>
-      <input v-model="input" type="text" class="input" placeholder="Username" />
+      <input
+        v-model="input"
+        type="text"
+        class="input"
+        placeholder="Your username"
+      />
     </V-Control>
   </V-Field>
 </template>
@@ -35,11 +40,11 @@ const input = ref('')
 <V-Field>
   <V-Control>
     <input
-        type="text"
-        class="input"
-        placeholder="Username"
-        v-model="frontmatter.state.input"
-      />
+      v-model="frontmatter.state.input"
+      type="text"
+      class="input"
+      placeholder="Your username"
+    />
   </V-Control>
 </V-Field>
 

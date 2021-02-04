@@ -1,3 +1,9 @@
+---
+state:
+  options:
+    - 'Option 2'
+---
+
 ### Checkbox outline
 
 Vuero provides default styled checkboxes in 2 main styles, `outlined`
@@ -8,36 +14,42 @@ The available modifiers are `is-primary`, `is-success`, `is-info`,
 <!--code-->
 
 ```vue
+<script setup lang="ts">
+import { ref } from 'vue'
+
+const options = ref(['Option 2'])
+</script>
+
 <template>
   <V-Field>
     <V-Control>
       <label class="checkbox">
-        <input type="checkbox" checked />
+        <input v-model="options" type="checkbox" value="Option 1" />
         <span></span>
         Option 1
       </label>
       <label class="checkbox is-outlined is-primary">
-        <input type="checkbox" />
+        <input v-model="options" type="checkbox" value="Option 2" />
         <span></span>
         Option 2
       </label>
       <label class="checkbox is-outlined is-info">
-        <input type="checkbox" />
+        <input v-model="options" type="checkbox" value="Option 3" />
         <span></span>
         Option 3
       </label>
       <label class="checkbox is-outlined is-success">
-        <input type="checkbox" />
+        <input v-model="options" type="checkbox" value="Option 4" />
         <span></span>
         Option 4
       </label>
       <label class="checkbox is-outlined is-warning">
-        <input type="checkbox" />
+        <input v-model="options" type="checkbox" value="Option 5" />
         <span></span>
         Option 5
       </label>
       <label class="checkbox is-outlined is-danger">
-        <input type="checkbox" />
+        <input v-model="options" type="checkbox" value="Option 6" />
         <span></span>
         Option 6
       </label>
@@ -51,38 +63,38 @@ The available modifiers are `is-primary`, `is-success`, `is-info`,
 <!--example-->
 
 <V-Field>
-    <V-Control>
-        <label class="checkbox">
-            <input type="checkbox" checked>
-            <span></span>
-            Option 1
-        </label>
-        <label class="checkbox is-outlined is-primary">
-            <input type="checkbox">
-            <span></span>
-            Option 2
-        </label>
-        <label class="checkbox is-outlined is-info">
-            <input type="checkbox">
-            <span></span>
-            Option 3
-        </label>
-        <label class="checkbox is-outlined is-success">
-            <input type="checkbox">
-            <span></span>
-            Option 4
-        </label>
-        <label class="checkbox is-outlined is-warning">
-            <input type="checkbox">
-            <span></span>
-            Option 5
-        </label>
-        <label class="checkbox is-outlined is-danger">
-            <input type="checkbox">
-            <span></span>
-            Option 6
-        </label>
-    </V-Control>
+  <V-Control>
+    <label class="checkbox">
+      <input v-model="frontmatter.state.options" type="checkbox" value="Option 1" />
+      <span></span>
+      Option 1
+    </label>
+    <label class="checkbox is-outlined is-primary">
+      <input v-model="frontmatter.state.options" type="checkbox" value="Option 2" />
+      <span></span>
+      Option 2
+    </label>
+    <label class="checkbox is-outlined is-info">
+      <input v-model="frontmatter.state.options" type="checkbox" value="Option 3" />
+      <span></span>
+      Option 3
+    </label>
+    <label class="checkbox is-outlined is-success">
+      <input v-model="frontmatter.state.options" type="checkbox" value="Option 4" />
+      <span></span>
+      Option 4
+    </label>
+    <label class="checkbox is-outlined is-warning">
+      <input v-model="frontmatter.state.options" type="checkbox" value="Option 5" />
+      <span></span>
+      Option 5
+    </label>
+    <label class="checkbox is-outlined is-danger">
+      <input v-model="frontmatter.state.options" type="checkbox" value="Option 6" />
+      <span></span>
+      Option 6
+    </label>
+  </V-Control>
 </V-Field>
 
 <!--/example-->

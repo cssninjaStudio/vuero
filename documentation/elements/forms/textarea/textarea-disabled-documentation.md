@@ -1,3 +1,9 @@
+---
+state:
+  textarea: ''
+  disabled: true
+---
+
 ### Disabled
 
 A textarea can be shown in a disabled state. For that, you need to wrap it
@@ -7,14 +13,22 @@ to the target textarea element.
 <!--code-->
 
 ```vue
+<script setup lang="ts">
+import { ref } from 'vue'
+
+const textarea = ref('')
+const disabled = ref(true)
+</script>
+
 <template>
   <V-Field>
     <V-Control>
       <textarea
+        v-model="textarea"
         class="textarea"
         rows="4"
         placeholder="A longer message..."
-        disabled
+        :disabled="disabled"
       >
       </textarea>
     </V-Control>
@@ -28,10 +42,13 @@ to the target textarea element.
 
 <V-Field>
   <V-Control>
-    <textarea class="textarea" 
-        rows="4" 
-        placeholder="A longer message..."
-        disabled>
+    <textarea
+      v-model="frontmatter.state.textarea"
+      class="textarea"
+      rows="4"
+      placeholder="A longer message..."
+      :disabled="frontmatter.state.disabled"
+    >
     </textarea>
   </V-Control>
 </V-Field>

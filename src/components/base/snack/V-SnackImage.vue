@@ -26,7 +26,7 @@ defineProps({
     <div class="snack-media">
       <img
         class="avatar"
-        :src="props.image"
+        :src="image"
         alt=""
         @error="$event.target.src = 'https://via.placeholder.com/150x150'"
       />

@@ -1,3 +1,8 @@
+---
+state:
+  selected: 'Choice 1'
+---
+
 ### Squared outline
 
 Vuero provides default styled radio buttons in 2 main styles,
@@ -8,36 +13,72 @@ The available modifiers are `is-primary`, `is-success`, `is-info`,
 <!--code-->
 
 ```vue
+<script setup lang="ts">
+import { ref } from 'vue'
+
+const selected = ref('Choice 1')
+</script>
+
 <template>
   <V-Field>
     <V-Control>
       <label class="radio is-square">
-        <input type="radio" name="outlined_square_radio" />
+        <input
+          v-model="selected"
+          value="Choice 1"
+          type="radio"
+          name="outlined_square_radio"
+        />
         <span></span>
         Choice 1
       </label>
       <label class="radio is-square is-primary">
-        <input type="radio" name="outlined_square_radio" />
+        <input
+          v-model="selected"
+          value="Choice 2"
+          type="radio"
+          name="outlined_square_radio"
+        />
         <span></span>
         Choice 2
       </label>
       <label class="radio is-square is-info">
-        <input type="radio" name="outlined_square_radio" />
+        <input
+          v-model="selected"
+          value="Choice 3"
+          type="radio"
+          name="outlined_square_radio"
+        />
         <span></span>
         Choice 3
       </label>
       <label class="radio is-square is-success">
-        <input type="radio" name="outlined_square_radio" />
+        <input
+          v-model="selected"
+          value="Choice 4"
+          type="radio"
+          name="outlined_square_radio"
+        />
         <span></span>
         Choice 4
       </label>
       <label class="radio is-square is-warning">
-        <input type="radio" name="outlined_square_radio" />
+        <input
+          v-model="selected"
+          value="Choice 5"
+          type="radio"
+          name="outlined_square_radio"
+        />
         <span></span>
         Choice 5
       </label>
       <label class="radio is-square is-danger">
-        <input type="radio" name="outlined_square_radio" />
+        <input
+          v-model="selected"
+          value="Choice 6"
+          type="radio"
+          name="outlined_square_radio"
+        />
         <span></span>
         Choice 6
       </label>
@@ -51,38 +92,68 @@ The available modifiers are `is-primary`, `is-success`, `is-info`,
 <!--example-->
 
 <V-Field>
-    <V-Control>
-        <label class="radio is-square">
-            <input type="radio" name="outlined_square_radio">
-            <span></span>
-            Choice 1
-        </label>
-        <label class="radio is-square is-primary">
-            <input type="radio" name="outlined_square_radio">
-            <span></span>
-            Choice 2
-        </label>
-        <label class="radio is-square is-info">
-            <input type="radio" name="outlined_square_radio">
-            <span></span>
-            Choice 3
-        </label>
-        <label class="radio is-square is-success">
-            <input type="radio" name="outlined_square_radio">
-            <span></span>
-            Choice 4
-        </label>
-        <label class="radio is-square is-warning">
-            <input type="radio" name="outlined_square_radio">
-            <span></span>
-            Choice 5
-        </label>
-        <label class="radio is-outlined is-danger">
-            <input type="radio" square="outlined_square_radio">
-            <span></span>
-            Choice 6
-        </label>
-    </V-Control>
+  <V-Control>
+    <label class="radio is-square">
+      <input
+        v-model="frontmatter.state.selected"
+        value="Choice 1"
+        type="radio"
+        name="outlined_square_radio"
+      />
+      <span></span>
+      Choice 1
+    </label>
+    <label class="radio is-square is-primary">
+      <input
+        v-model="frontmatter.state.selected"
+        value="Choice 2"
+        type="radio"
+        name="outlined_square_radio"
+      />
+      <span></span>
+      Choice 2
+    </label>
+    <label class="radio is-square is-info">
+      <input
+        v-model="frontmatter.state.selected"
+        value="Choice 3"
+        type="radio"
+        name="outlined_square_radio"
+      />
+      <span></span>
+      Choice 3
+    </label>
+    <label class="radio is-square is-success">
+      <input
+        v-model="frontmatter.state.selected"
+        value="Choice 4"
+        type="radio"
+        name="outlined_square_radio"
+      />
+      <span></span>
+      Choice 4
+    </label>
+    <label class="radio is-square is-warning">
+      <input
+        v-model="frontmatter.state.selected"
+        value="Choice 5"
+        type="radio"
+        name="outlined_square_radio"
+      />
+      <span></span>
+      Choice 5
+    </label>
+    <label class="radio is-square is-danger">
+      <input
+        v-model="frontmatter.state.selected"
+        value="Choice 6"
+        type="radio"
+        name="outlined_square_radio"
+      />
+      <span></span>
+      Choice 6
+    </label>
+  </V-Control>
 </V-Field>
 
 <!--/example-->

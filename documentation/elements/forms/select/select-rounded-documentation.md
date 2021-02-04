@@ -17,14 +17,14 @@ const input = ref('')
   <V-Field>
     <V-Control>
       <div class="select is-rounded">
-        <select>
-          <option>Select a Hero</option>
-          <option>Superman</option>
-          <option>Batman</option>
-          <option>Spiderman</option>
-          <option>Deadpool</option>
-          <option>Spawn</option>
-          <option>Galactus</option>
+        <select v-model="input">
+          <option value="">Select a Hero</option>
+          <option value="Superman">Superman</option>
+          <option value="Batman">Batman</option>
+          <option value="Spiderman">Spiderman</option>
+          <option value="Deadpool">Deadpool</option>
+          <option value="Spawn">Spawn</option>
+          <option value="Galactus">Galactus</option>
         </select>
       </div>
     </V-Control>

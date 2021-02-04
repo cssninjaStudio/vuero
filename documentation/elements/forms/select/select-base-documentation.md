@@ -1,3 +1,8 @@
+---
+state:
+  input: ''
+---
+
 ### Select
 
 Vuero provides default styles for the native Html select element.
@@ -17,14 +22,14 @@ const input = ref('')
   <V-Field>
     <V-Control>
       <div class="select">
-        <select>
-          <option>Select a Hero</option>
-          <option>Superman</option>
-          <option>Batman</option>
-          <option>Spiderman</option>
-          <option>Deadpool</option>
-          <option>Spawn</option>
-          <option>Galactus</option>
+        <select v-model="input">
+          <option value="">Select a Hero</option>
+          <option value="Superman">Superman</option>
+          <option value="Batman">Batman</option>
+          <option value="Spiderman">Spiderman</option>
+          <option value="Deadpool">Deadpool</option>
+          <option value="Spawn">Spawn</option>
+          <option value="Galactus">Galactus</option>
         </select>
       </div>
     </V-Control>
@@ -37,19 +42,19 @@ const input = ref('')
 <!--example-->
 
 <V-Field>
-    <V-Control>
-        <div class="select">
-            <select>
-                <option>Select a Hero</option>
-                <option>Superman</option>
-                <option>Batman</option>
-                <option>Spiderman</option>
-                <option>Deadpool</option>
-                <option>Spawn</option>
-                <option>Galactus</option>
-            </select>
-        </div>
-    </V-Control>
+  <V-Control>
+    <div class="select">
+      <select v-model="frontmatter.state.input">
+        <option value="">Select a Hero</option>
+        <option value="Superman">Superman</option>
+        <option value="Batman">Batman</option>
+        <option value="Spiderman">Spiderman</option>
+        <option value="Deadpool">Deadpool</option>
+        <option value="Spawn">Spawn</option>
+        <option value="Galactus">Galactus</option>
+      </select>
+    </div>
+  </V-Control>
 </V-Field>
 
 <!--/example-->
