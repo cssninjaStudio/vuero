@@ -24,6 +24,14 @@ const selectSlotOptions = [
     icon: '/images/icons/dashboards/banking/bank-3.svg',
   },
 ]
+
+const valueSingle = 0
+const optionsSingle = [
+  'Last 10 days',
+  'Last month',
+  'Last 3 months',
+  'Last 6 months',
+]
 </script>
 
 <template>
@@ -372,46 +380,16 @@ const selectSlotOptions = [
 
           <div class="column is-12">
             <div class="dashboard-card is-income">
-              <div class="field">
-                <div class="control">
-                  <div class="h-select">
-                    <div class="select-box">
-                      <span>Last 10 days</span>
-                    </div>
-                    <div class="select-icon">
-                      <i class="iconify" data-icon="feather:chevron-down"></i>
-                    </div>
-                    <div class="select-drop has-slimscroll-sm">
-                      <div class="drop-inner">
-                        <div class="option-row">
-                          <input type="radio" name="period_select" checked />
-                          <div class="option-meta">
-                            <span>Last 10 days</span>
-                          </div>
-                        </div>
-                        <div class="option-row">
-                          <input type="radio" name="period_select" />
-                          <div class="option-meta">
-                            <span>Last month</span>
-                          </div>
-                        </div>
-                        <div class="option-row">
-                          <input type="radio" name="period_select" />
-                          <div class="option-meta">
-                            <span>Last 3 months</span>
-                          </div>
-                        </div>
-                        <div class="option-row">
-                          <input type="radio" name="period_select" />
-                          <div class="option-meta">
-                            <span>Last 6 months</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <V-Field class="is-minimal-select">
+                <V-Control>
+                  <Multiselect
+                    v-model="valueSingle"
+                    :options="optionsSingle"
+                    placeholder="Select an option"
+                    :max-height="145"
+                  />
+                </V-Control>
+              </V-Field>
 
               <apexchart
                 id="income-chart"
@@ -695,10 +673,18 @@ const selectSlotOptions = [
         top: 12px;
         right: 16px;
         z-index: 5;
+        min-width: 135px;
 
-        .h-select {
-          .select-box {
-            border-color: transparent;
+        .multiselect {
+          .multiselect-input {
+            .multiselect-single-label {
+              color: $light-text;
+            }
+          }
+
+          .multiselect-options {
+            left: unset !important;
+            min-width: 180px;
           }
         }
       }

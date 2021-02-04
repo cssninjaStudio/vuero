@@ -34,7 +34,7 @@ export const expensesOptions = {
       opacity: 0.06,
     },
   },
-  colors: [themeColors.accent, themeColors.orange, themeColors.orange],
+  colors: [themeColors.green, themeColors.accent, themeColors.orange],
   stroke: {
     curve: 'smooth',
     width: 3,
