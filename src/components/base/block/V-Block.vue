@@ -14,6 +14,10 @@ defineProps({
     type: String,
     default: 'Card subtitle',
   },
+  lighter: {
+    type: Boolean,
+    default: false,
+  },
   narrow: {
     type: Boolean,
     default: false,
@@ -40,7 +44,7 @@ defineProps({
     ]"
   >
     <slot name="icon"></slot>
-    <div class="flex-meta">
+    <div class="flex-meta" :class="[lighter && 'is-lighter']">
       <span>{{ title }}</span>
       <span>{{ subtitle }}</span>
     </div>

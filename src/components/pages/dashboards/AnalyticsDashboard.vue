@@ -137,13 +137,7 @@ import { notifications } from '/@src/data/widgets/ui/notificationList'
                 <div class="value">
                   <span class="dark-inverted">78%</span>
                 </div>
-                <progress
-                  class="progress is-primary is-tiny"
-                  value="78"
-                  max="100"
-                >
-                  78%
-                </progress>
+                <V-Progress size="tiny" :value="78" />
                 <div class="progress-foot">
                   <span class="text-h-green"
                     >+6.4% <i class="iconify" data-icon="feather:trending-up"

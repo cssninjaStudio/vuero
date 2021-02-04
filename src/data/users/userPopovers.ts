@@ -1,4 +1,12 @@
 export const popovers = {
+  user7: {
+    avatar: '/images/avatars/photos/7.jpg',
+    badge: '/images/icons/flags/united-states-of-america.svg',
+    username: 'Alice C.',
+    location: 'San Diego, CA',
+    position: 'Software Engineer',
+    bio: 'This is a nice user description that we can use as demo content.',
+  },
   user13: {
     avatar: '/images/avatars/photos/13.jpg',
     badge: '/images/icons/flags/united-states-of-america.svg',
@@ -41,6 +49,26 @@ export const popovers = {
     color: 'success',
     location: 'San Francisco, CA',
     position: 'Frontend Developer',
+    bio: 'This is a nice user description that we can use as demo content.',
+  },
+  user122: {
+    avatar: null,
+    badge: '/images/icons/flags/united-states-of-america.svg',
+    username: 'Betty T.',
+    initials: 'BT',
+    color: 'warning',
+    location: 'San Diego, CA',
+    position: 'Product Manager',
+    bio: 'This is a nice user description that we can use as demo content.',
+  },
+  user123: {
+    avatar: null,
+    badge: '/images/icons/flags/united-states-of-america.svg',
+    username: 'John D.',
+    initials: 'JD',
+    color: 'info',
+    location: 'New York, NY',
+    position: 'Web Developer',
     bio: 'This is a nice user description that we can use as demo content.',
   },
 }
