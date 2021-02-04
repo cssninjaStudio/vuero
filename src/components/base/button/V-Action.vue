@@ -14,6 +14,9 @@ defineProps({
     type: Boolean,
     default: false,
   },
+  dark: {
+    type: String,
+  },
 })
 </script>
 
@@ -22,6 +25,7 @@ defineProps({
     class="button v-action"
     :class="[
       rounded && 'is-rounded',
+      dark && `is-dark-bg-${dark}`,
       hoverable && 'is-hoverable',
       grey && 'is-grey',
     ]"

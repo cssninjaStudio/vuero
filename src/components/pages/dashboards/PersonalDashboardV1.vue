@@ -15,7 +15,7 @@ import { profitChartOptions } from '/@src/data/dashboards/personal-v1/profitChar
         <p>We're very happy to see you again on your personal dashboard.</p>
       </div>
       <div class="end">
-        <V-Button>View Reports</V-Button>
+        <V-Button dark="3">View Reports</V-Button>
         <V-Button color="primary" elevated>Manage Store</V-Button>
       </div>
     </div>

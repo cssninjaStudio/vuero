@@ -1,0 +1,396 @@
+<script setup lang="ts">
+import { interviewsOptions } from '/@src/data/dashboards/personal-v3/interviewsChart'
+import {
+  progressGaugeOptions,
+  onprogressGaugeReady,
+} from '/@src/data/dashboards/personal-v3/progressChart'
+import { userStack } from '/@src/data/dashboards/personal-v3/users'
+</script>
+
+<template>
+  <!--Personal Dashboard V3-->
+  <div class="personal-dashboard personal-dashboard-v3">
+    <div class="columns">
+      <div class="column is-8">
+        <div class="columns is-multiline is-flex-tablet-p">
+          <div class="column is-6">
+            <div class="dashboard-card is-welcome">
+              <div class="welcome-title">
+                <h3 class="dark-inverted">Hi Erik K.</h3>
+                <p>
+                  You have 6 interviews to conduct during this week. Your
+                  current progress is great.
+                </p>
+              </div>
+              <div class="welcome-progress">
+                <V-BillboardJS
+                  :options="progressGaugeOptions"
+                  @ready="onprogressGaugeReady"
+                />
+                <div class="meta">
+                  <span>Your Progress</span>
+                  <span class="dark-inverted">Outstanding 🎉</span>
+                </div>
+              </div>
+              <div class="button-wrap">
+                <V-Button color="primary" fullwidth big raised
+                  >View Schedule</V-Button
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-6">
+            <div class="stats-wrapper">
+              <div class="columns is-multiline is-flex-tablet-p">
+                <div class="column is-6">
+                  <div class="dashboard-card">
+                    <V-Block title="62K" subtitle="Minutes" center>
+                      <template #icon>
+                        <V-IconBox color="info" rounded>
+                          <i class="iconify" data-icon="feather:clock"></i>
+                        </V-IconBox>
+                      </template>
+                    </V-Block>
+                  </div>
+                </div>
+                <div class="column is-6">
+                  <div class="dashboard-card">
+                    <V-Block title="263" subtitle="Interviews" center>
+                      <template #icon>
+                        <V-IconBox color="purple" rounded>
+                          <i class="iconify" data-icon="feather:radio"></i>
+                        </V-IconBox>
+                      </template>
+                    </V-Block>
+                  </div>
+                </div>
+                <div class="column is-6">
+                  <div class="dashboard-card">
+                    <V-Block title="49" subtitle="Approved" center>
+                      <template #icon>
+                        <V-IconBox color="green" rounded>
+                          <i class="iconify" data-icon="feather:user-check"></i>
+                        </V-IconBox>
+                      </template>
+                    </V-Block>
+                  </div>
+                </div>
+                <div class="column is-6">
+                  <div class="dashboard-card">
+                    <V-Block title="214" subtitle="Rejected" center>
+                      <template #icon>
+                        <V-IconBox color="orange" rounded>
+                          <i class="iconify" data-icon="feather:frown"></i>
+                        </V-IconBox>
+                      </template>
+                    </V-Block>
+                  </div>
+                </div>
+              </div>
+
+              <div class="people">
+                <div class="left">
+                  <span class="dark-inverted">Total Interviews</span>
+                  <span
+                    ><a class="is-dark-primary">23 interviews</a> this
+                    month</span
+                  >
+                </div>
+                <div class="right">
+                  <V-AvatarStack :avatars="userStack" :limit="3" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-6 h-hidden-mobile h-hidden-tablet-p">
+            <img
+              src="/images/illustrations/dashboards/personal/interviews.svg"
+              alt=""
+            />
+          </div>
+
+          <div class="column is-6">
+            <div class="dashboard-card">
+              <apexchart
+                id="interviews-chart"
+                :height="interviewsOptions.chart.height"
+                :type="interviewsOptions.chart.type"
+                :series="interviewsOptions.series"
+                :options="interviewsOptions"
+              ></apexchart>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="column is-4">
+        <UIWidget class="picker-widget">
+          <template #header>
+            <div class="widget-toolbar">
+              <div class="left">
+                <a class="action-icon">
+                  <i class="iconify" data-icon="feather:chevron-left"></i>
+                </a>
+              </div>
+              <div class="center">
+                <h3>October 2020</h3>
+              </div>
+              <div class="right">
+                <a class="action-icon">
+                  <i class="iconify" data-icon="feather:chevron-right"></i>
+                </a>
+              </div>
+            </div>
+          </template>
+          <template #body>
+            <table class="calendar">
+              <thead>
+                <tr>
+                  <td>Mon</td>
+                  <td>Tue</td>
+                  <td>Wed</td>
+                  <td>Thu</td>
+                  <td>Fri</td>
+                  <td>Sat</td>
+                  <td>Sun</td>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td class="prev-month">29</td>
+                  <td class="prev-month">30</td>
+                  <td class="prev-month">31</td>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>3</td>
+                  <td>4</td>
+                </tr>
+
+                <tr>
+                  <td>5</td>
+                  <td>6</td>
+                  <td>7</td>
+                  <td>8</td>
+                  <td>9</td>
+                  <td>10</td>
+                  <td>11</td>
+                </tr>
+
+                <tr>
+                  <td>12</td>
+                  <td>13</td>
+                  <td>14</td>
+                  <td>15</td>
+                  <td>16</td>
+                  <td>17</td>
+                  <td class="current-day">18</td>
+                </tr>
+
+                <tr>
+                  <td>19</td>
+                  <td>20</td>
+                  <td>21</td>
+                  <td>22</td>
+                  <td>23</td>
+                  <td>24</td>
+                  <td>25</td>
+                </tr>
+
+                <tr>
+                  <td>26</td>
+                  <td>27</td>
+                  <td>28</td>
+                  <td>29</td>
+                  <td>30</td>
+                  <td>31</td>
+                  <td class="next-month">1</td>
+                </tr>
+              </tbody>
+            </table>
+          </template>
+        </UIWidget>
+
+        <a href="#" class="dashboard-card is-interview">
+          <V-Block title="Jonathan K." subtitle="08:00 - 09:00" center>
+            <template #icon>
+              <V-Avatar picture="/images/avatars/photos/32.jpg" />
+            </template>
+            <template #action>
+              <i class="iconify" data-icon="feather:chevron-right"></i>
+            </template>
+          </V-Block>
+        </a>
+        <a href="#" class="dashboard-card is-interview">
+          <V-Block title="Greta K." subtitle="10:30 - 11:00" center>
+            <template #icon>
+              <V-Avatar picture="/images/avatars/photos/19.jpg" />
+            </template>
+            <template #action>
+              <i class="iconify" data-icon="feather:chevron-right"></i>
+            </template>
+          </V-Block>
+        </a>
+        <a href="#" class="dashboard-card is-interview">
+          <V-Block title="Joshua S." subtitle="02:30 - 03:00" center>
+            <template #icon>
+              <V-Avatar picture="/images/avatars/photos/12.jpg" />
+            </template>
+            <template #action>
+              <i class="iconify" data-icon="feather:chevron-right"></i>
+            </template>
+          </V-Block>
+        </a>
+      </div>
+    </div>
+  </div>
+</template>
+
+<style lang="scss">
+@import '../../../assets/scss/abstracts/_variables.scss';
+@import '../../../assets/scss/abstracts/_mixins.scss';
+
+.personal-dashboard-v3 {
+  .columns {
+    &.is-flex-tablet-p {
+      .column {
+        &.is-6 {
+          min-width: 50%;
+        }
+      }
+    }
+  }
+
+  .dashboard-card {
+    @include vuero-l-card();
+
+    font-family: $font;
+
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+
+    &.is-welcome {
+      background: $widget-grey;
+      border: none;
+      padding: 40px;
+
+      .welcome-title {
+        h3 {
+          font-family: $font-alt;
+          font-weight: 700;
+          font-size: 2rem;
+          color: $dark-text;
+        }
+      }
+
+      .welcome-progress {
+        display: flex;
+        align-items: center;
+        padding: 10px 0;
+
+        .meta {
+          margin-left: 16px;
+
+          span {
+            display: block;
+
+            &:first-child {
+              color: $light-text;
+              font-size: 0.95rem;
+            }
+
+            &:nth-child(2) {
+              font-family: $font-alt;
+              font-size: 1.1rem;
+              font-weight: 600;
+              color: $dark-text;
+            }
+          }
+        }
+      }
+
+      .button-wrap {
+        .v-button {
+          height: 44px;
+          border-radius: 10px;
+        }
+      }
+    }
+
+    &.is-interview {
+      &:not(:last-child) {
+        margin-bottom: 0.75rem;
+      }
+
+      .flex-end {
+        svg {
+          height: 18px;
+          width: 18px;
+          color: $light-text;
+        }
+      }
+    }
+  }
+
+  .picker-widget {
+    padding: 40px;
+    height: 317px;
+  }
+
+  .stats-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 280px;
+
+    .people {
+      margin-top: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 6px;
+
+      .left {
+        span {
+          display: block;
+          font-family: $font;
+
+          &:first-child {
+            font-family: $font-alt;
+            font-weight: 600;
+            color: $dark-text;
+          }
+
+          &:nth-child(2) {
+            font-size: 0.9rem;
+            color: $light-text;
+
+            a {
+              font-weight: 500;
+              color: $primary;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.is-dark {
+  .personal-dashboard-v3 {
+    .dashboard-card {
+      @include vuero-card--dark();
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .personal-dashboard-v3 {
+    .stats-wrapper {
+      height: auto;
+    }
+  }
+}
+</style>
