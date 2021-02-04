@@ -16,7 +16,7 @@ export const sharingOptions = {
       enabled: true,
     },
   },
-  colors: [themeColors.accent, themeColors.orange, themeColors.purple],
+  colors: [themeColors.accent, themeColors.primary, themeColors.info],
   plotOptions: {
     bar: {
       columnWidth: '30px',

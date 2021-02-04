@@ -14,6 +14,9 @@ defineProps({
     type: String,
     default: 'Card subtitle',
   },
+  infratitle: {
+    type: String,
+  },
   lighter: {
     type: Boolean,
     default: false,
@@ -47,6 +50,7 @@ defineProps({
     <div class="flex-meta" :class="[lighter && 'is-lighter']">
       <span>{{ title }}</span>
       <span>{{ subtitle }}</span>
+      <span v-if="infratitle">{{ infratitle }}</span>
     </div>
     <div class="flex-end">
       <slot name="action"></slot>

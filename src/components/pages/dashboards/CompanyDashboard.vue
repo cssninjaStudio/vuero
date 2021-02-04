@@ -1,0 +1,675 @@
+<script setup lang="ts">
+import { onMounted } from 'vue'
+import { sharingOptions } from '/@src/data/dashboards/company/sharingChart'
+import { usersOptions } from '/@src/data/dashboards/company/usersChart'
+import {
+  barData,
+  barData2,
+  usersBarOptions,
+} from '/@src/data/dashboards/company/usersBarChart'
+import {
+  personalScoreGaugeOptions,
+  onPersonalScoreGaugeReady,
+} from '/@src/data/dashboards/company/personalScoreGauge'
+import { optionsCompany } from '/@src/data/dashboards/company/datatable'
+import { popovers } from '/@src/data/users/userPopovers'
+
+onMounted(async () => {
+  setTimeout(() => {
+    usersBarOptions.series = [
+      {
+        name: 'Orders',
+        data: barData,
+      },
+    ]
+  }, 1000)
+
+  setTimeout(() => {
+    usersBarOptions.series = [
+      ...usersBarOptions.series,
+      {
+        name: 'Abandonned',
+        data: barData2,
+      },
+    ]
+  }, 2500)
+})
+</script>
+
+<template>
+  <!--Business Dashboard V2-->
+  <div class="business-dashboard company-dashboard">
+    <div class="company-header is-dark-card-bordered is-dark-bg-6">
+      <div class="header-item is-dark-bordered-12">
+        <div class="item-inner">
+          <i class="lnil lnil-users-alt is-dark-primary"></i>
+          <span class="dark-inverted">162</span>
+          <p>New Users</p>
+        </div>
+      </div>
+      <div class="header-item is-dark-bordered-12">
+        <div class="item-inner">
+          <i class="lnil lnil-diamond-alt is-dark-primary"></i>
+          <span class="dark-inverted">$1,835.41</span>
+          <p>Daily Income</p>
+        </div>
+      </div>
+      <div class="header-item is-dark-bordered-12">
+        <div class="item-inner">
+          <i class="lnil lnil-briefcase-alt is-dark-primary"></i>
+          <span class="dark-inverted">378</span>
+          <p>Completed Projects</p>
+        </div>
+      </div>
+      <div class="header-item is-dark-bordered-12">
+        <div class="item-inner">
+          <i class="lnil lnil-ticket is-dark-primary"></i>
+          <span class="dark-inverted">192</span>
+          <p>Active Tickets</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="columns is-multiline">
+      <div class="column is-4">
+        <div class="dashboard-card is-company">
+          <div class="v-avatar is-big">
+            <img
+              class="avatar light-image"
+              src="/images/photo/demo/brands/udemy.svg"
+              alt=""
+              @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+            />
+            <img
+              class="avatar dark-image"
+              src="/images/photo/demo/brands/udemy-dark.svg"
+              alt=""
+              @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+            />
+            <button class="button icon-button is-circle is-dark-outlined">
+              <span class="icon is-small">
+                <i class="iconify" data-icon="feather:plus"></i>
+              </span>
+            </button>
+          </div>
+          <h3 class="dark-inverted">U Learning</h3>
+          <p>Online Courses</p>
+          <div class="description">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fac
+              ista esse non inportuna.
+            </p>
+          </div>
+          <div class="company-stats is-dark-bordered-12">
+            <div class="company-stat">
+              <div>
+                <span>Posts</span>
+                <span class="dark-inverted">864</span>
+              </div>
+            </div>
+            <div class="company-stat">
+              <div>
+                <span>Projects</span>
+                <span class="dark-inverted">261</span>
+              </div>
+            </div>
+            <div class="company-stat">
+              <div>
+                <span>Followers</span>
+                <span class="dark-inverted">32K</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column is-4">
+        <div class="dashboard-card is-base-chart">
+          <div class="content-box">
+            <div class="revenue-stats is-dark-bordered-12">
+              <div class="revenue-stat">
+                <span>New</span>
+                <span class="current">153</span>
+              </div>
+              <div class="revenue-stat">
+                <span>Renewals</span>
+                <span class="dark-inverted">641</span>
+              </div>
+              <div class="revenue-stat">
+                <span>Resigns</span>
+                <span class="dark-inverted">64</span>
+              </div>
+            </div>
+          </div>
+          <div class="chart-container">
+            <apexchart
+              id="users-chart"
+              :height="usersOptions.chart.height"
+              :type="usersOptions.chart.type"
+              :series="usersOptions.series"
+              :options="usersOptions"
+            ></apexchart>
+          </div>
+        </div>
+      </div>
+      <div class="column is-4">
+        <div class="dashboard-card is-base-chart">
+          <div class="content-box">
+            <div class="revenue-stats is-dark-bordered-12">
+              <div class="revenue-stat">
+                <span>Facebook</span>
+                <span class="current">64K</span>
+              </div>
+              <div class="revenue-stat">
+                <span>Instagram</span>
+                <span class="dark-inverted">78K</span>
+              </div>
+              <div class="revenue-stat">
+                <span>Twitter</span>
+                <span class="dark-inverted">25K</span>
+              </div>
+            </div>
+          </div>
+          <div class="chart-container">
+            <apexchart
+              id="shares-chart"
+              :height="sharingOptions.chart.height"
+              :type="sharingOptions.chart.type"
+              :series="sharingOptions.series"
+              :options="sharingOptions"
+            ></apexchart>
+          </div>
+        </div>
+      </div>
+
+      <div class="column is-12">
+        <!-- Datatable -->
+        <V-SimpleDatatables :options="optionsCompany" />
+      </div>
+
+      <div class="column is-3">
+        <!--Widget-->
+        <UIWidget class="gauge-widget" straight>
+          <template #header>
+            <UIWidgetToolbarDropdown title="Gauge Widget" />
+          </template>
+          <template #body>
+            <div class="gauge-wrap">
+              <V-BillboardJS
+                class="gauge-holder"
+                :options="personalScoreGaugeOptions"
+                @ready="onPersonalScoreGaugeReady"
+              />
+            </div>
+            <div class="widget-content">
+              <p>Your score has been calculated based on the latest metrics</p>
+            </div>
+          </template>
+        </UIWidget>
+      </div>
+      <div class="column is-6">
+        <div class="dashboard-card">
+          <div class="card-head">
+            <h3 class="dark-inverted">Subscriptions</h3>
+          </div>
+          <apexchart
+            id="bar-chart"
+            :height="usersBarOptions.chart.height"
+            :type="usersBarOptions.chart.type"
+            :series="usersBarOptions.series"
+            :options="usersBarOptions"
+          ></apexchart>
+        </div>
+      </div>
+      <div class="column is-3">
+        <!--Widget-->
+        <UIWidget class="picker-widget" straight>
+          <template #header>
+            <div class="widget-toolbar">
+              <div class="left">
+                <a class="action-icon">
+                  <i class="iconify" data-icon="feather:chevron-left"></i>
+                </a>
+              </div>
+              <div class="center">
+                <h3>October 2020</h3>
+              </div>
+              <div class="right">
+                <a class="action-icon">
+                  <i class="iconify" data-icon="feather:chevron-right"></i>
+                </a>
+              </div>
+            </div>
+          </template>
+          <template #body>
+            <table class="calendar">
+              <thead>
+                <tr>
+                  <td>Mon</td>
+                  <td>Tue</td>
+                  <td>Wed</td>
+                  <td>Thu</td>
+                  <td>Fri</td>
+                  <td>Sat</td>
+                  <td>Sun</td>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td class="prev-month">29</td>
+                  <td class="prev-month">30</td>
+                  <td class="prev-month">31</td>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>3</td>
+                  <td>4</td>
+                </tr>
+
+                <tr>
+                  <td>5</td>
+                  <td>6</td>
+                  <td>7</td>
+                  <td>8</td>
+                  <td>9</td>
+                  <td>10</td>
+                  <td>11</td>
+                </tr>
+
+                <tr>
+                  <td>12</td>
+                  <td>13</td>
+                  <td>14</td>
+                  <td>15</td>
+                  <td>16</td>
+                  <td>17</td>
+                  <td class="current-day">18</td>
+                </tr>
+
+                <tr>
+                  <td>19</td>
+                  <td>20</td>
+                  <td>21</td>
+                  <td>22</td>
+                  <td>23</td>
+                  <td>24</td>
+                  <td>25</td>
+                </tr>
+
+                <tr>
+                  <td>26</td>
+                  <td>27</td>
+                  <td>28</td>
+                  <td>29</td>
+                  <td>30</td>
+                  <td>31</td>
+                  <td class="next-month">1</td>
+                </tr>
+              </tbody>
+            </table>
+          </template>
+        </UIWidget>
+      </div>
+
+      <div class="column is-12">
+        <div class="dashboard-card is-tickets">
+          <div class="card-head">
+            <h3 class="dark-inverted">Pending Tickets</h3>
+            <a class="action-link">View All</a>
+          </div>
+
+          <div class="ticket-list">
+            <!--Ticket-->
+            <V-Block
+              title="[#45651] Cannot save changes to user profile"
+              subtitle="Iam not able to save changes I make to my user profile. When
+                  I click on the save button, it simply says failed."
+              infratitle="Updated 5 hours ago"
+              m-responsive
+              class="is-dark-bordered-12"
+            >
+              <template #icon>
+                <tippy interactive :offset="[0, 10]" placement="top-start">
+                  <V-Avatar
+                    size="medium"
+                    picture="/images/avatars/photos/31.jpg"
+                  />
+                  <template #content>
+                    <UserPopoverContent :user="popovers.user31" />
+                  </template>
+                </tippy>
+              </template>
+              <template #action>
+                <V-Button color="primary" raised>Manage</V-Button>
+              </template>
+            </V-Block>
+
+            <!--Ticket-->
+            <V-Block
+              title="[#45783] Cannot create a new opportunity"
+              subtitle="when I try to create a new opportunity, Iam redirected to a
+                  404 page after clicking the action button."
+              infratitle="Updated 2 hours ago"
+              m-responsive
+              class="is-dark-bordered-12"
+            >
+              <template #icon>
+                <tippy interactive :offset="[0, 10]" placement="top-start">
+                  <V-Avatar
+                    size="medium"
+                    picture="/images/avatars/photos/23.jpg"
+                  />
+                  <template #content>
+                    <UserPopoverContent :user="popovers.user23" />
+                  </template>
+                </tippy>
+              </template>
+              <template #action>
+                <V-Button color="primary" raised>Manage</V-Button>
+              </template>
+            </V-Block>
+
+            <!--Ticket-->
+            <V-Block
+              title="[#45723] Payment fails when using PayPal"
+              subtitle="When I try to use PayPal as a payment method, it spins
+                  forever and I get an error message after that."
+              infratitle="Updated 30 minutes ago"
+              m-responsive
+              class="is-dark-bordered-12"
+            >
+              <template #icon>
+                <tippy interactive :offset="[0, 10]" placement="top-start">
+                  <V-Avatar
+                    size="medium"
+                    picture="/images/avatars/photos/32.jpg"
+                  />
+                  <template #content>
+                    <UserPopoverContent :user="popovers.user32" />
+                  </template>
+                </tippy>
+              </template>
+              <template #action>
+                <V-Button color="primary" raised>Manage</V-Button>
+              </template>
+            </V-Block>
+
+            <!--Ticket-->
+            <V-Block
+              title="[#45862] Cannot find the assets in the theme folder"
+              subtitle="I followed the documentation but Iam not able to locate the
+                  assets in the main folder. Can I get some help?"
+              infratitle="Updated 6 hours ago"
+              m-responsive
+              class="is-dark-bordered-12"
+            >
+              <template #icon>
+                <tippy interactive :offset="[0, 10]" placement="top-start">
+                  <V-Avatar
+                    size="medium"
+                    picture="/images/avatars/photos/13.jpg"
+                  />
+                  <template #content>
+                    <UserPopoverContent :user="popovers.user13" />
+                  </template>
+                </tippy>
+              </template>
+              <template #action>
+                <V-Button color="primary" raised>Manage</V-Button>
+              </template>
+            </V-Block>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<style lang="scss">
+@import '../../../assets/scss/abstracts/_variables.scss';
+@import '../../../assets/scss/abstracts/_mixins.scss';
+
+.company-dashboard {
+  .company-header {
+    display: flex;
+    padding: 20px;
+    background: $white;
+    border: 1px solid darken($fade-grey, 3%);
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+
+    .header-item {
+      width: 25%;
+      border-right: 1px solid darken($fade-grey, 3%);
+
+      &:last-child {
+        border-right: none;
+      }
+
+      .item-inner {
+        text-align: center;
+
+        .lnil,
+        .lnir {
+          font-size: 1.8rem;
+          margin-bottom: 6px;
+          color: $primary;
+        }
+
+        span {
+          display: block;
+          font-family: $font;
+          font-weight: 600;
+          font-size: 1.6rem;
+          color: $dark-text;
+        }
+
+        p {
+          font-family: $font-alt;
+          font-size: 0.95rem;
+        }
+      }
+    }
+  }
+
+  .widget {
+    height: 100%;
+  }
+
+  .dashboard-card {
+    @include vuero-s-card();
+
+    height: 100%;
+
+    &.is-company {
+      text-align: center;
+      padding: 30px;
+
+      .v-avatar {
+        display: block;
+        margin: 0 auto 10px auto;
+
+        .button {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          max-width: 35px;
+        }
+      }
+
+      > h3 {
+        color: $dark-text;
+        font-family: $font-alt;
+        font-size: 1.2rem;
+        font-weight: 600;
+      }
+
+      > p {
+        font-size: 0.9rem;
+      }
+
+      .description {
+        padding: 10px 0 0 0;
+      }
+
+      .company-stats {
+        display: flex;
+        padding-top: 20px;
+        margin-top: 20px;
+        border-top: 1px solid darken($fade-grey, 3%);
+
+        .company-stat {
+          width: 33.3%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+
+          span {
+            display: block;
+            font-family: $font;
+
+            &:first-child {
+              text-transform: uppercase;
+              font-family: $font-alt;
+              font-size: 0.75rem;
+              color: $light-text;
+            }
+
+            &:nth-child(2) {
+              color: $dark-text;
+              font-size: 1.4rem;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+
+    &.is-base-chart {
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+
+      .content-box {
+        padding: 30px;
+
+        .revenue-stats {
+          display: flex;
+          padding-bottom: 20px;
+          border-bottom: 1px solid darken($fade-grey, 3%);
+
+          .revenue-stat {
+            margin-right: 30px;
+            font-family: $font;
+
+            span {
+              display: block;
+
+              &:first-child {
+                text-transform: uppercase;
+                font-family: $font-alt;
+                font-size: 0.75rem;
+                color: $light-text;
+              }
+
+              &:nth-child(2) {
+                color: $dark-text;
+                font-size: 1.6rem;
+                font-weight: 600;
+              }
+
+              &.current {
+                color: $accent;
+              }
+            }
+          }
+        }
+      }
+
+      .chart-container {
+        margin-top: auto;
+      }
+    }
+
+    &.is-tickets {
+      padding: 30px;
+
+      .ticket-list {
+        padding: 10px 0;
+
+        .media-flex {
+          + .media-flex {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid darken($fade-grey, 3%);
+          }
+
+          .flex-meta {
+            span {
+              &:nth-child(2) {
+                font-size: 1rem;
+                margin: 4px 0;
+                color: darken($light-text, 20%);
+                max-width: 430px;
+              }
+
+              &:nth-child(3) {
+                font-size: 0.9rem;
+                color: $light-text;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .card-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+
+      h3 {
+        font-family: $font-alt;
+        font-size: 1rem;
+        font-weight: 600;
+        color: $dark-text;
+      }
+    }
+  }
+
+  .table-wrapper {
+    min-height: 0;
+  }
+
+  .dataTable-wrapper {
+    .dataTable-top {
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+  }
+}
+
+.is-dark {
+  .company-dashboard {
+    .dashboard-card {
+      @include vuero-card--dark();
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .company-dashboard {
+    .company-header {
+      flex-wrap: wrap;
+
+      .header-item {
+        width: 50%;
+        border-right: none;
+        border: none;
+        padding: 16px 0;
+      }
+    }
+  }
+}
+</style>

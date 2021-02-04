@@ -39,12 +39,28 @@ export const popovers = {
     position: 'Mobile Developer',
     bio: 'This is a nice user description that we can use as demo content.',
   },
+  user23: {
+    avatar: '/images/avatars/photos/23.jpg',
+    badge: '/images/icons/flags/united-states-of-america.svg',
+    username: 'Irina V.',
+    location: 'San Diego, CA',
+    position: 'Project Manager',
+    bio: 'This is a nice user description that we can use as demo content.',
+  },
   user31: {
     avatar: '/images/avatars/photos/31.jpg',
     badge: '/images/icons/flags/united-states-of-america.svg',
     username: 'Yasseen A.',
     location: 'New York, NY',
     position: 'Business Analyst',
+    bio: 'This is a nice user description that we can use as demo content.',
+  },
+  user32: {
+    avatar: '/images/avatars/photos/32.jpg',
+    badge: '/images/icons/flags/united-states-of-america.svg',
+    username: 'Jonathan K.',
+    location: 'Los Angeles, CA',
+    position: 'Product Manager',
     bio: 'This is a nice user description that we can use as demo content.',
   },
   user120: {

@@ -113,7 +113,7 @@ export const usersBarOptions = reactive<any>({
       show: false,
     },
   },
-  colors: [themeColors.accent, themeColors.orange],
+  colors: [themeColors.accent, themeColors.primary],
   dataLabels: {
     enabled: false,
   },
