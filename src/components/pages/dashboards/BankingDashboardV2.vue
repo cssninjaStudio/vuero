@@ -3,13 +3,10 @@ import { expensesOptions } from '/@src/data/dashboards/banking-v2/expensesAreaCh
 import { tns } from 'tiny-slider/src/tiny-slider'
 import { ref, onMounted } from 'vue'
 
-const valueSingle = 0
-const optionsSingle = [
-  'Last 10 days',
-  'Last month',
-  'Last 3 months',
-  'Last 6 months',
-]
+import {
+  valueSingle,
+  optionsSingle,
+} from '/@src/data/dashboards/banking-v2/dashboardData'
 
 const sliderElement = ref<HTMLElement | null>(null)
 onMounted(() => {

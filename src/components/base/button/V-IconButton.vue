@@ -29,6 +29,10 @@ defineProps({
     type: Boolean,
     default: false,
   },
+  darkOutlined: {
+    type: Boolean,
+    default: false,
+  },
   loading: {
     type: Boolean,
     default: false,
@@ -61,6 +65,7 @@ defineProps({
       outlined && 'is-outlined',
       raised && 'is-raised',
       dark && `is-dark-bg-${dark}`,
+      darkOutlined && 'is-dark-outlined',
       elevated && 'is-elevated',
       loading && 'is-loading',
       color && `is-${color}`,
