@@ -25,7 +25,7 @@ export const usersOptions = {
       enabled: true,
     },
   },
-  colors: [themeColors.purple, themeColors.accent, themeColors.orange],
+  colors: [themeColors.primary, themeColors.accent, themeColors.info],
   grid: {
     show: false,
     padding: {

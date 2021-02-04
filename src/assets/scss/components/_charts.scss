@@ -222,6 +222,14 @@
       border-bottom-color: lighten($dark-sidebar, 12%);
     }
 
+    &.apexcharts-xaxistooltip-top::after {
+      border-top-color: lighten($dark-sidebar, 2%);
+    }
+
+    &.apexcharts-xaxistooltip-top::before {
+      border-top-color: lighten($dark-sidebar, 12%);
+    }
+
     * {
       font-family: $font;
       color: inherit;
@@ -280,6 +288,10 @@
   .bb-chart-arc path {
     color: lighten($dark-sidebar, 12%) !important;
     stroke: lighten($dark-sidebar, 12%) !important;
+  }
+
+  .bb-chart-arc .bb-gauge-value {
+    fill: $light-text !important;
   }
 
   .bb-chart-arcs .bb-chart-arcs-background {

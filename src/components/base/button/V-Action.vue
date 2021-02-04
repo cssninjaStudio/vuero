@@ -2,6 +2,10 @@
 import { defineProps } from 'vue'
 
 defineProps({
+  active: {
+    type: Boolean,
+    default: false,
+  },
   rounded: {
     type: Boolean,
     default: false,
@@ -14,6 +18,9 @@ defineProps({
     type: Boolean,
     default: false,
   },
+  dark: {
+    type: String,
+  },
 })
 </script>
 
@@ -21,7 +28,9 @@ defineProps({
   <button
     class="button v-action"
     :class="[
+      active && 'is-active',
       rounded && 'is-rounded',
+      dark && `is-dark-bg-${dark}`,
       hoverable && 'is-hoverable',
       grey && 'is-grey',
     ]"

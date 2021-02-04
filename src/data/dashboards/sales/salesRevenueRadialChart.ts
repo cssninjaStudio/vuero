@@ -3,7 +3,7 @@ import { themeColors } from '/@src/composition/state/themeColors'
 export const salesRevenuesRadialOptions = {
   series: [65],
   chart: {
-    height: 130,
+    height: 155,
     type: 'radialBar',
     toolbar: {
       show: false,

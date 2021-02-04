@@ -14,6 +14,14 @@ defineProps({
     type: Boolean,
     default: false,
   },
+  big: {
+    type: Boolean,
+    default: false,
+  },
+  fullwidth: {
+    type: Boolean,
+    default: false,
+  },
   light: {
     type: Boolean,
     default: false,
@@ -33,6 +41,9 @@ defineProps({
   darkOutlined: {
     type: Boolean,
     default: false,
+  },
+  dark: {
+    type: String,
   },
   loading: {
     type: Boolean,
@@ -60,7 +71,10 @@ defineProps({
     :class="[
       rounded && 'is-rounded',
       bold && 'is-bold',
+      big && 'is-big',
+      fullwidth && 'is-fullwidth',
       outlined && 'is-outlined',
+      dark && `is-dark-bg-${dark}`,
       darkOutlined && 'is-dark-outlined',
       raised && 'is-raised',
       elevated && 'is-elevated',

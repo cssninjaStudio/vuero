@@ -159,7 +159,7 @@
       span,
       a {
         &:first-child {
-          color: $dark-dark-text;
+          color: $dark-dark-text !important;
         }
       }
 

@@ -3,7 +3,7 @@ import { themeColors } from '/@src/composition/state/themeColors'
 export const radialGroup1Options = {
   series: [31],
   chart: {
-    height: 80,
+    height: 100,
     type: 'radialBar',
     offsetY: -10,
     toolbar: {
@@ -27,7 +27,7 @@ export const radialGroup1Options = {
 export const radialGroup2Options = {
   series: [53],
   chart: {
-    height: 80,
+    height: 100,
     type: 'radialBar',
     offsetY: -10,
     toolbar: {
@@ -51,7 +51,7 @@ export const radialGroup2Options = {
 export const radialGroup3Options = {
   series: [84],
   chart: {
-    height: 80,
+    height: 100,
     type: 'radialBar',
     offsetY: -10,
     toolbar: {
