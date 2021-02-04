@@ -391,7 +391,315 @@
 </template>
 
 <style lang="scss">
-@import '../../assets/scss/abstracts/_variables.scss';
-@import '../../assets/scss/abstracts/_mixins.scss';
-@import '../../assets/scss/pages/dashboards/_finance.scss';
+@import '../../../assets/scss/abstracts/_variables.scss';
+@import '../../../assets/scss/abstracts/_mixins.scss';
+
+.stock-dashboard {
+  .stock {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 40px;
+    padding: 5px 0;
+    margin: 5px 0;
+
+    .stock-logo {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      flex: 0;
+      margin-right: 10px;
+
+      &::before {
+        content: '';
+        width: 36px;
+        height: 36px;
+        transform: rotate(0);
+        border-radius: 7px;
+      }
+
+      &.github::before,
+      &.apple::before {
+        background: $github;
+        box-shadow: $github-box-shadow;
+      }
+
+      &.invision::before {
+        background: $invision;
+        box-shadow: $invision-box-shadow;
+      }
+
+      &.facebook::before,
+      &.docker::before {
+        background: $facebook;
+        box-shadow: $facebook-box-shadow;
+      }
+
+      &.amazon::before {
+        background: $amazon;
+        box-shadow: $amazon-box-shadow;
+      }
+
+      &.twitter::before {
+        background: $twitter;
+        box-shadow: $twitter-box-shadow;
+      }
+
+      &.algolia::before {
+        background: $accent;
+        box-shadow: $accent-box-shadow;
+      }
+
+      &.snapchat::before {
+        background: $primary;
+        box-shadow: $primary-box-shadow;
+      }
+
+      i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    .stock-info {
+      margin-left: 5px;
+      flex: 1;
+      line-height: 1.2;
+
+      .stock-name {
+        font-family: $font-alt;
+        font-weight: 600;
+        font-size: 0.9rem;
+        color: $dark-text;
+      }
+
+      .stock-fullname {
+        font-family: $font;
+        color: $light-text;
+      }
+    }
+
+    .stock-value {
+      flex: 1;
+      font-weight: bold;
+      color: $light-text;
+      text-align: right;
+    }
+  }
+
+  .graph {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    padding: 20px;
+    background: $white;
+    border-radius: 10px;
+    box-shadow: $light-box-shadow;
+    border: 1px solid $fade-grey;
+
+    .dropdown {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+
+    > svg {
+      max-width: 100%;
+      min-height: 90px;
+      margin: 0 auto 16px auto;
+      display: block;
+
+      text {
+        font-family: Roboto;
+        font-weight: 700;
+        font-size: 12px;
+        font-style: normal;
+      }
+    }
+  }
+
+  .asset-category {
+    display: flex;
+    padding: 12px 0;
+
+    .category {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      cursor: pointer;
+
+      &:hover {
+        .asset {
+          .asset-logo {
+            transform: translateY(-5px);
+
+            &::before {
+              border-color: $primary;
+              box-shadow: $light-box-shadow;
+            }
+
+            i {
+              color: $primary;
+            }
+          }
+        }
+
+        .asset-name {
+          color: $primary;
+        }
+      }
+
+      .asset {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        margin: 10px 0;
+
+        .asset-logo {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          flex: 0;
+          transition: all 0.3s;
+
+          &::before {
+            content: '';
+            width: 46px;
+            height: 46px;
+            background-color: $white;
+            border: 1px solid $fade-grey;
+            transform: rotate(45deg);
+            border-radius: 10px;
+            transition: all 0.3s;
+          }
+
+          i {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: $light-text;
+            font-size: 18px;
+            transition: color 0.3s;
+          }
+        }
+      }
+
+      .asset-name {
+        color: $dark-text;
+        font-size: 0.9rem;
+        font-family: $font-alt;
+        font-weight: 600;
+        transition: color 0.3s;
+      }
+    }
+  }
+
+  .stock-card {
+    @include vuero-r-card();
+
+    .action-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+
+      h3 {
+        font-family: $font-alt;
+        font-size: 1rem;
+        font-weight: 600;
+        color: $dark-text;
+      }
+    }
+
+    .stock {
+      margin: 8px 0;
+
+      .stock-logo {
+        i {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+.is-dark {
+  .stock-dashboard {
+    .graph {
+      background: lighten($dark-sidebar, 6%) !important;
+      border-color: lighten($dark-sidebar, 12%) !important;
+    }
+
+    .stock {
+      .stock-info {
+        .stock-name {
+          color: $dark-dark-text;
+        }
+      }
+    }
+
+    .asset-category {
+      .category {
+        &:hover {
+          .asset {
+            .asset-logo {
+              &::before {
+                border-color: $accent !important;
+              }
+
+              i {
+                color: $accent;
+              }
+            }
+          }
+
+          .asset-name {
+            color: $accent;
+          }
+        }
+
+        .asset {
+          .asset-logo {
+            &::before {
+              background: lighten($dark-sidebar, 6%) !important;
+              border-color: lighten($dark-sidebar, 12%) !important;
+            }
+          }
+        }
+
+        .asset-name {
+          color: $dark-dark-text;
+        }
+      }
+    }
+
+    .stock-card {
+      @include vuero-card--dark();
+
+      .action-bar {
+        h3 {
+          color: $dark-dark-text;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .stock-dashboard {
+    .asset-category {
+      flex-wrap: wrap;
+
+      .category {
+        min-width: 25% !important;
+        margin-bottom: 12px !important;
+      }
+    }
+  }
+}
 </style>
