@@ -7,17 +7,27 @@ import {
   toggleSidebar,
 } from '/@src/composition/state/activeSidebarState'
 
-import {
-  accordionSimpleData,
-  accordionExclusiveData,
-} from '/@src/data/documentation/accordion'
+const data = [
+  {
+    title: 'Accordion Item 1',
+    content: 'Sed ut perspiciatis unde omnis iste ...',
+  },
+  {
+    title: 'Accordion Item 2',
+    content: 'Sed ut perspiciatis unde omnis iste ...',
+  },
+  {
+    title: 'Accordion Item 3',
+    content: 'Sed ut perspiciatis unde omnis iste ...',
+  },
+]
 
 onMounted(() => {
   activeSidebar.value = 'components'
 })
 
 useHead({
-  title: 'Components - Accordion Basic - Vuero',
+  title: 'V-Accordion - Components - Vuero',
 })
 </script>
 
@@ -44,38 +54,35 @@ useHead({
       </div>
 
       <div class="title-wrap">
-        <h1 class="title is-4">Accordion</h1>
+        <h1 class="title is-4">V-Accordion</h1>
       </div>
 
       <Toolbar />
     </div>
     <div class="page-content-inner">
-      <nav class="breadcrumb has-bullet-separator" aria-label="breadcrumbs">
-        <ul>
-          <li>
-            <RouterLink :to="{ name: 'index' }">
-              <span class="icon is-small is-solo">
-                <i class="iconify" data-icon="feather:home"></i>
-              </span>
-            </RouterLink>
-          </li>
-          <li>
-            <RouterLink :to="{ name: 'elements' }">
-              <span>Components</span>
-            </RouterLink>
-          </li>
-          <li>
-            <a>
-              <span>Accordions</span>
-            </a>
-          </li>
-          <li>
-            <a>
-              <span>Accordion</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <V-Breadcrumb
+        with-icons
+        separator="bullet"
+        :items="[
+          {
+            label: 'Vuero',
+            hideLabel: true,
+            icon: 'feather:home',
+            to: { name: 'index' },
+          },
+          {
+            label: 'Components',
+            to: { name: 'components' },
+          },
+          {
+            label: 'Accordions',
+          },
+          {
+            label: 'V-Accordion',
+            to: { name: 'components-accordion' },
+          },
+        ]"
+      />
 
       <div class="columns is-multiline">
         <div class="column is-12">
@@ -84,11 +91,11 @@ useHead({
         </div>
 
         <div class="column is-6">
-          <V-Accordion :items="accordionSimpleData" />
+          <V-Accordion :items="data" />
         </div>
 
         <div class="column is-6">
-          <V-Accordion :items="accordionExclusiveData" exclusive />
+          <V-Accordion :items="data" exclusive />
         </div>
       </div>
     </div>

@@ -42,7 +42,7 @@ onBeforeUnmount(() => {
 })
 
 useHead({
-  title: 'Components - Plugins V-Datatable - Vuero',
+  title: 'Components - Plugins Simple Datatables - Vuero',
 })
 </script>
 
@@ -69,39 +69,36 @@ useHead({
       </div>
 
       <div class="title-wrap">
-        <h1 class="title is-4">V-Datatable</h1>
+        <h1 class="title is-4">Simple Datatables</h1>
       </div>
 
       <Toolbar />
     </div>
 
     <div class="page-content-inner">
-      <nav class="breadcrumb has-bullet-separator" aria-label="breadcrumbs">
-        <ul>
-          <li>
-            <RouterLink :to="{ name: 'index' }">
-              <span class="icon is-small is-solo">
-                <i class="iconify" data-icon="feather:home"></i>
-              </span>
-            </RouterLink>
-          </li>
-          <li>
-            <RouterLink :to="{ name: 'elements' }">
-              <span>Components</span>
-            </RouterLink>
-          </li>
-          <li>
-            <a>
-              <span>Plugins</span>
-            </a>
-          </li>
-          <li>
-            <a>
-              <span>V-Datatable</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <V-Breadcrumb
+        with-icons
+        separator="bullet"
+        :items="[
+          {
+            label: 'Vuero',
+            hideLabel: true,
+            icon: 'feather:home',
+            to: { name: 'index' },
+          },
+          {
+            label: 'Components',
+            to: { name: 'components' },
+          },
+          {
+            label: 'Plugins',
+          },
+          {
+            label: 'Simple Datatables',
+            to: { name: 'components-plugins-simple-datatables' },
+          },
+        ]"
+      />
 
       <div class="columns is-multiline">
         <div

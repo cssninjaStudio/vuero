@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
-import { onMounted, ref } from 'vue'
+import { onMounted } from 'vue'
 
 import useMakrdownToc from '/@src/composition/use/useMarkdownToc'
 import {
@@ -9,14 +9,13 @@ import {
 } from '/@src/composition/state/activeSidebarState'
 
 const { markdownContainer, toc } = useMakrdownToc()
-const date = ref(null)
 
 onMounted(() => {
   activeSidebar.value = 'components'
 })
 
 useHead({
-  title: 'Components - Plugins V-Calendar - Vuero',
+  title: 'Plugins Photo Swipe - Components - Vuero',
 })
 </script>
 
@@ -43,39 +42,36 @@ useHead({
       </div>
 
       <div class="title-wrap">
-        <h1 class="title is-4">V-Calendar</h1>
+        <h1 class="title is-4">Photo Swipe</h1>
       </div>
 
       <Toolbar />
     </div>
 
     <div class="page-content-inner">
-      <nav class="breadcrumb has-bullet-separator" aria-label="breadcrumbs">
-        <ul>
-          <li>
-            <RouterLink :to="{ name: 'index' }">
-              <span class="icon is-small is-solo">
-                <i class="iconify" data-icon="feather:home"></i>
-              </span>
-            </RouterLink>
-          </li>
-          <li>
-            <RouterLink :to="{ name: 'elements' }">
-              <span>Components</span>
-            </RouterLink>
-          </li>
-          <li>
-            <a>
-              <span>Plugins</span>
-            </a>
-          </li>
-          <li>
-            <a>
-              <span>V-Calendar</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <V-Breadcrumb
+        with-icons
+        separator="bullet"
+        :items="[
+          {
+            label: 'Vuero',
+            hideLabel: true,
+            icon: 'feather:home',
+            to: { name: 'index' },
+          },
+          {
+            label: 'Components',
+            to: { name: 'components' },
+          },
+          {
+            label: 'Plugins',
+          },
+          {
+            label: 'Photo Swipe',
+            to: { name: 'components-plugins-photo-swipe' },
+          },
+        ]"
+      />
 
       <div class="columns is-multiline">
         <div
@@ -83,17 +79,17 @@ useHead({
           :class="[toc.length > 0 ? 'is-9' : 'is-12']"
           class="column"
         >
-          <!--Datepicker-->
-          <DatepickerBaseDocumentation />
+          <!--Thumbnails-->
+          <GalleryImagesDocumentation />
 
-          <!--DateRangepicker-->
-          <DatepickerRangeDocumentation />
+          <!--Curved Thumbnails-->
+          <GalleryImagesCurvedDocumentation />
 
-          <!--DateTimepicker-->
-          <DatepickerTimeDocumentation />
+          <!--Rounded Thumbnails-->
+          <GalleryImagesRoundedDocumentation />
 
-          <!--Timepicker-->
-          <DatepickerTimeSingleDocumentation />
+          <!--Bigger Thumbnails-->
+          <GalleryImagesLargerDocumentation />
         </div>
         <div v-if="toc.length" class="column is-3">
           <DocumentationToc :toc="toc" />

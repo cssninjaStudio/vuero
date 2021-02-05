@@ -44,7 +44,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
           <ul>
             <li>
               <RouterLink
-                :to="{ name: 'elements-icons-lnil' }"
+                :to="{ name: 'elements-icons-line-icons' }"
                 class="is-submenu"
                 ><i class="iconify" data-icon="feather:circle"></i>Line Icons
                 Light</RouterLink
@@ -52,7 +52,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'elements-icons-lnir' }"
+                :to="{ name: 'elements-icons-line-icons-regular' }"
                 class="is-submenu"
                 ><i class="iconify" data-icon="feather:circle"></i>Line Icons
                 Regular</RouterLink

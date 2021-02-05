@@ -15,7 +15,7 @@ onMounted(() => {
 })
 
 useHead({
-  title: 'Elements - Slider Tabs - Vuero',
+  title: 'Tabs with slider - Elements - Vuero',
 })
 </script>
 
@@ -42,34 +42,33 @@ useHead({
       </div>
 
       <div class="title-wrap">
-        <h1 class="title is-4">Slider Tabs</h1>
+        <h1 class="title is-4">Tabs with Slider</h1>
       </div>
 
       <Toolbar />
     </div>
 
     <div class="page-content-inner">
-      <nav class="breadcrumb has-bullet-separator" aria-label="breadcrumbs">
-        <ul>
-          <li>
-            <RouterLink :to="{ name: 'index' }">
-              <span class="icon is-small is-solo">
-                <i class="iconify" data-icon="feather:home"></i>
-              </span>
-            </RouterLink>
-          </li>
-          <li>
-            <RouterLink :to="{ name: 'elements' }">
-              <span>Elements</span>
-            </RouterLink>
-          </li>
-          <li>
-            <a>
-              <span>RegularTabs</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <V-Breadcrumb
+        with-icons
+        separator="bullet"
+        :items="[
+          {
+            label: 'Vuero',
+            hideLabel: true,
+            icon: 'feather:home',
+            to: { name: 'index' },
+          },
+          {
+            label: 'Elements',
+            to: { name: 'elements' },
+          },
+          {
+            label: 'Tabs with slider',
+            to: { name: 'elements-tabs-slider' },
+          },
+        ]"
+      />
 
       <div class="columns">
         <div

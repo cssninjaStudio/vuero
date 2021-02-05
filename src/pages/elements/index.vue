@@ -12,7 +12,7 @@ onMounted(() => {
 })
 
 useHead({
-  title: 'Elements - Hub - Vuero',
+  title: 'Elements - Vuero',
 })
 </script>
 
@@ -110,7 +110,7 @@ useHead({
                   light="/images/illustrations/components/icons.svg"
                   dark="/images/illustrations/components/icons-dark.svg"
                 >
-                  <RouterLink :to="{ name: 'elements-icons-lnil' }"
+                  <RouterLink :to="{ name: 'elements-icons-line-icons' }"
                     >Get Started</RouterLink
                   >
                 </HubCard>

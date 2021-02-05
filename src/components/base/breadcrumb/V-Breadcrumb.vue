@@ -52,14 +52,14 @@ const props = defineProps({
       >
         <RouterLink v-if="item.to" itemprop="item" :to="item.to">
           <span
-            v-if="withIcons && item.icon"
+            v-if="withIcons && !!item.icon"
             class="icon is-small"
-            :class="[item.hideLabel && withIcons && item.icon && 'is-solo']"
+            :class="[item.hideLabel && withIcons && !!item.icon && 'is-solo']"
           >
             <i class="iconify" :data-icon="item.icon"></i>
           </span>
           <meta
-            v-if="item.hideLabel && withIcons && item.icon"
+            v-if="item.hideLabel && withIcons && !!item.icon"
             itemprop="name"
             :content="item.label"
           />
@@ -69,14 +69,14 @@ const props = defineProps({
         </RouterLink>
         <a v-else-if="item.link" itemprop="item" :href="item.link">
           <span
-            v-if="withIcons && item.icon"
+            v-if="withIcons && !!item.icon"
             class="icon is-small"
-            :class="[item.hideLabel && withIcons && item.icon && 'is-solo']"
+            :class="[item.hideLabel && withIcons && !!item.icon && 'is-solo']"
           >
             <i class="iconify" :data-icon="item.icon"></i>
           </span>
           <meta
-            v-if="item.hideLabel && withIcons && item.icon"
+            v-if="item.hideLabel && withIcons && !!item.icon"
             itemprop="name"
             :content="item.label"
           />
@@ -86,9 +86,9 @@ const props = defineProps({
         </a>
         <a v-else>
           <span
-            v-if="withIcons && item.icon"
+            v-if="withIcons && !!item.icon"
             class="icon is-small"
-            :class="[item.hideLabel && withIcons && item.icon && 'is-solo']"
+            :class="[item.hideLabel && withIcons && !!item.icon && 'is-solo']"
           >
             <i class="iconify" :data-icon="item.icon"></i>
           </span>

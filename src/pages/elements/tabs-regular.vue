@@ -15,7 +15,7 @@ onMounted(() => {
 })
 
 useHead({
-  title: 'Elements - Regular Tabs - Vuero',
+  title: 'Tabs Regular - Elements - Vuero',
 })
 </script>
 
@@ -42,34 +42,33 @@ useHead({
       </div>
 
       <div class="title-wrap">
-        <h1 class="title is-4">Regular Tabs</h1>
+        <h1 class="title is-4">Tabs Regular</h1>
       </div>
 
       <Toolbar />
     </div>
 
     <div class="page-content-inner">
-      <nav class="breadcrumb has-bullet-separator" aria-label="breadcrumbs">
-        <ul>
-          <li>
-            <RouterLink :to="{ name: 'index' }">
-              <span class="icon is-small is-solo">
-                <i class="iconify" data-icon="feather:home"></i>
-              </span>
-            </RouterLink>
-          </li>
-          <li>
-            <RouterLink :to="{ name: 'elements' }">
-              <span>Elements</span>
-            </RouterLink>
-          </li>
-          <li>
-            <a>
-              <span>RegularTabs</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <V-Breadcrumb
+        with-icons
+        separator="bullet"
+        :items="[
+          {
+            label: 'Vuero',
+            hideLabel: true,
+            icon: 'feather:home',
+            to: { name: 'index' },
+          },
+          {
+            label: 'Elements',
+            to: { name: 'elements' },
+          },
+          {
+            label: 'Tabs regular',
+            to: { name: 'elements-tabs-regular' },
+          },
+        ]"
+      />
 
       <div class="columns">
         <div

@@ -13,7 +13,7 @@ onMounted(() => {
 })
 
 useHead({
-  title: 'Components - Table Flex - Vuero',
+  title: 'V-FlexTable Compact - Components - Vuero',
 })
 </script>
 
@@ -40,43 +40,46 @@ useHead({
       </div>
 
       <div class="title-wrap">
-        <h1 class="title is-4">Flex Table</h1>
+        <h1 class="title is-4">V-FlexTable - Compact</h1>
       </div>
 
       <Toolbar />
     </div>
 
     <div class="page-content-inner">
-      <nav class="breadcrumb has-bullet-separator" aria-label="breadcrumbs">
-        <ul>
-          <li>
-            <RouterLink :to="{ name: 'index' }">
-              <span class="icon is-small is-solo">
-                <i class="iconify" data-icon="feather:home"></i>
-              </span>
-            </RouterLink>
-          </li>
-          <li>
-            <RouterLink :to="{ name: 'components' }">
-              <span>Components</span>
-            </RouterLink>
-          </li>
-          <li>
-            <a>
-              <span>Flex Table</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <V-Breadcrumb
+        with-icons
+        separator="bullet"
+        :items="[
+          {
+            label: 'Vuero',
+            hideLabel: true,
+            icon: 'feather:home',
+            to: { name: 'index' },
+          },
+          {
+            label: 'Components',
+            to: { name: 'components' },
+          },
+          {
+            label: 'V-FlexTable',
+            to: { name: 'components-flex-table' },
+          },
+          {
+            label: 'Compact',
+            to: { name: 'components-flex-table-compact' },
+          },
+        ]"
+      />
 
       <div class="columns">
         <div class="column is-12">
-          <!--Flex Table-->
-          <VFlexTableBaseDocumentation />
+          <!--Flex Table Compact-->
+          <VFlexTableCompactDocumentation />
 
           <div class="mt-4">
             <!--V-FlexTabe-->
-            <V-FlexTable>
+            <V-FlexTable compact>
               <template #header>
                 <div class="flex-table-header">
                   <span>Company</span>

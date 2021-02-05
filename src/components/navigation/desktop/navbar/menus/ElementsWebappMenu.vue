@@ -64,13 +64,15 @@ const activeTab = ref<TabId>('basic')
                 <h4 class="column-heading">Icons</h4>
                 <ul>
                   <li>
-                    <RouterLink :to="{ name: 'elements-icons-lnil' }">
+                    <RouterLink :to="{ name: 'elements-icons-line-icons' }">
                       <span>Line Icons Light</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'elements-icons-lnir' }">
+                    <RouterLink
+                      :to="{ name: 'elements-icons-line-icons-regular' }"
+                    >
                       <span>Line Icons Regular</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>

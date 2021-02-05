@@ -6,6 +6,7 @@
   "scripts": {
     "postinstall": "node ./scripts/skip.js || husky install",
     "dev": "vite",
+    "dev:force": "vite --force",
     "preview": "vite preview",
     "build": "run-s build:*",
     "build:clean": "rimraf dist",
