@@ -82,17 +82,17 @@ useHead({
           :class="[toc.length > 0 ? 'is-9' : 'is-12']"
           class="column"
         >
-          <!--Switch-->
-          <SwitchDocumentation />
-
-          <!--Thin Switch-->
-          <SwitchThinDocumentation />
-
           <!--Switch Block-->
           <SwitchBlockDocumentation />
 
           <!--Switch Block Thin-->
           <SwitchBlockThinDocumentation />
+
+          <!--Switch-->
+          <SwitchDocumentation />
+
+          <!--Thin Switch-->
+          <SwitchThinDocumentation />
         </div>
         <div v-if="toc.length" class="column is-3">
           <DocumentationToc :toc="toc" />

@@ -85,11 +85,11 @@ useHead({
         </div>
 
         <div class="column is-6">
-          <V-CollapsePlus :items="collapsePlusData" />
+          <V-Collapse :items="collapsePlusData" />
         </div>
 
         <div class="column is-6">
-          <V-CollapseChevron :items="collapseChevronData" />
+          <V-Collapse :items="collapseChevronData" with-chevron />
         </div>
       </div>
     </div>

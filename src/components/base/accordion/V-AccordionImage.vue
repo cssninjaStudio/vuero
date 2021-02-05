@@ -1,9 +1,16 @@
 <script setup lang="ts">
+import type { PropType } from 'vue'
 import { defineProps } from 'vue'
 
-defineProps({
+type AccordionImageItem = {
+  title: string
+  content: string
+  image: string
+}
+
+const props = defineProps({
   items: {
-    type: Array,
+    type: Array as PropType<AccordionImageItem[]>,
     required: true,
   },
 })

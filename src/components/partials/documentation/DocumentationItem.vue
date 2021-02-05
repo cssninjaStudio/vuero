@@ -27,8 +27,8 @@ const displayCode = ref(false)
         :class="[displayCode && 'is-active']"
         @click="displayCode = !displayCode"
       >
-        <Icon v-if="!displayCode" icon="feather:code" />
-        <Icon v-else icon="feather:x" />
+        <V-Icon v-if="!displayCode" icon="feather:code" />
+        <V-Icon v-else icon="feather:x" />
       </a>
     </div>
     <div
