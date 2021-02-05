@@ -26,23 +26,14 @@ import {
   <div class="ecommerce-dashboard ecommerce-dashboard-v1">
     <!--Header-->
     <div class="dashboard-header">
-      <div class="v-avatar is-large">
-        <img
-          class="avatar"
-          src="/images/avatars/photos/8.jpg"
-          alt=""
-          @error="$event.target.src = 'https://via.placeholder.com/150x150'"
-        />
-      </div>
+      <V-Avatar picture="/images/avatars/photos/8.jpg" size="large" />
       <div class="start">
         <h3 class="dark-inverted">Welcome back, Erik Kovalsky</h3>
         <p>We're very happy to see you again on your dashboard.</p>
       </div>
       <div class="end">
-        <button class="button v-button is-dark-outlined">View Reports</button>
-        <button class="button v-button is-primary is-elevated">
-          Manage Shop
-        </button>
+        <V-Button dark="3">View Reports</V-Button>
+        <V-Button color="primary" elevated>Manage Shop</V-Button>
       </div>
     </div>
 
@@ -52,9 +43,9 @@ import {
         <div class="dashboard-tile">
           <div class="tile-head">
             <h3>Total Sales</h3>
-            <div class="v-icon is-info is-rounded">
+            <V-IconBox color="info" rounded>
               <i class="iconify" data-icon="feather:gift"></i>
-            </div>
+            </V-IconBox>
           </div>
           <div class="dashboard-tile-inner">
             <div class="left">
@@ -78,9 +69,9 @@ import {
         <div class="dashboard-tile">
           <div class="tile-head">
             <h3>Total Income</h3>
-            <div class="v-icon is-purple is-rounded">
+            <V-IconBox color="purple" rounded>
               <i class="iconify" data-icon="feather:dollar-sign"></i>
-            </div>
+            </V-IconBox>
           </div>
           <div class="dashboard-tile-inner">
             <div class="left">
@@ -104,9 +95,9 @@ import {
         <div class="dashboard-tile">
           <div class="tile-head">
             <h3>New Orders</h3>
-            <div class="v-icon is-green is-rounded">
+            <V-IconBox color="green" rounded>
               <i class="iconify" data-icon="feather:box"></i>
-            </div>
+            </V-IconBox>
           </div>
           <div class="dashboard-tile-inner">
             <div class="left">
@@ -130,9 +121,9 @@ import {
         <div class="dashboard-tile">
           <div class="tile-head">
             <h3>Abandonned</h3>
-            <div class="v-icon is-orange is-rounded">
+            <V-IconBox color="orange" rounded>
               <i class="iconify" data-icon="feather:shopping-cart"></i>
-            </div>
+            </V-IconBox>
           </div>
           <div class="dashboard-tile-inner">
             <div class="left">
@@ -640,9 +631,9 @@ import {
 </template>
 
 <style lang="scss">
-@import '../../assets/scss/abstracts/_variables.scss';
-@import '../../assets/scss/abstracts/_mixins.scss';
-@import '../../assets/scss/pages/generic/_widgets-stats.scss';
+@import '../../../assets/scss/abstracts/_variables.scss';
+@import '../../../assets/scss/abstracts/_mixins.scss';
+@import '../../../assets/scss/pages/generic/_widgets-stats.scss';
 
 /* ==========================================================================
 1. Ecommerce Dashboard V1
