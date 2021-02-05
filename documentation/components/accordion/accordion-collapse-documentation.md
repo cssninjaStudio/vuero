@@ -10,19 +10,29 @@ the chosen collapse component. Check markup for more details.
 
 ```vue
 <script setup lang="ts">
-import {
-  collapsePlusData,
-  collapseChevronData,
-} from '/@src/composition/state/documentation/components/accordion'
+const data = [
+  {
+    title: 'Accordion Item 1',
+    content: 'Sed ut perspiciatis unde omnis iste ...',
+  },
+  {
+    title: 'Accordion Item 2',
+    content: 'Sed ut perspiciatis unde omnis iste ...',
+  },
+  {
+    title: 'Accordion Item 3',
+    content: 'Sed ut perspiciatis unde omnis iste ...',
+  },
+]
 </script>
 
 <template>
   <div class="column is-6">
-    <V-CollapsePlus :items="collapsePlusData" />
+    <V-Collapse :items="data" />
   </div>
 
   <div class="column is-6">
-    <V-CollapseChevron :items="collapseChevronData" />
+    <V-Collapse :items="data" with-chevron />
   </div>
 </template>
 ```

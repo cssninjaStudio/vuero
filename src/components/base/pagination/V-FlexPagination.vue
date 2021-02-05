@@ -1,37 +1,145 @@
+<script setup lang="ts">
+import { defineProps, computed } from 'vue'
+import { useRoute } from 'vue-router'
+
+const props = defineProps({
+  itemPerPage: {
+    type: Number,
+    required: true,
+  },
+  totalItems: {
+    type: Number,
+    required: true,
+  },
+  currentPage: {
+    type: Number,
+    default: 1,
+  },
+  maxLinksDisplayed: {
+    type: Number,
+    default: 5,
+  },
+})
+const route = useRoute()
+const lastPage = computed(
+  () => Math.ceil(props.totalItems / props.itemPerPage) || 1
+)
+const totalPageDisplayed = computed(() =>
+  lastPage.value > props.maxLinksDisplayed - 2
+    ? props.maxLinksDisplayed - 2
+    : lastPage.value
+)
+const pages = computed(() => {
+  const pages = []
+  let firstButton = props.currentPage - Math.floor(totalPageDisplayed.value / 2)
+  let lastButton =
+    firstButton +
+    (totalPageDisplayed.value - Math.ceil(totalPageDisplayed.value % 2))
+
+  if (firstButton < 1) {
+    firstButton = 1
+    lastButton = firstButton + (totalPageDisplayed.value - 1)
+  }
+
+  if (lastButton > lastPage.value) {
+    lastButton = lastPage.value
+    firstButton = lastButton - (totalPageDisplayed.value - 1)
+  }
+
+  for (let page = firstButton; page <= lastButton; page += 1) {
+    pages.push(page)
+  }
+
+  return pages
+})
+
+const showFirstLink = computed(() => pages.value[0] > 1)
+const showLastLink = computed(
+  () => pages.value[pages.value.length - 1] < lastPage.value
+)
+
+const paginatedLink = (page = 1) => {
+  const _page = Math.min(page, lastPage.value)
+  const query = {
+    ...route.query,
+    page: _page <= 1 ? undefined : _page,
+  }
+
+  console.log('paginatedLink', page, {
+    name: route.name,
+    params: route.params,
+    query,
+  })
+
+  return {
+    name: route.name,
+    params: route.params,
+    query,
+  }
+}
+</script>
+
 <template>
   <nav
+    role="navigation"
     class="flex-pagination pagination is-rounded"
     aria-label="pagination"
     data-filter-hide
   >
-    <a class="pagination-previous has-chevron"
-      ><i class="iconify" data-icon="feather:chevron-left"
-    /></a>
-    <a class="pagination-next has-chevron"
-      ><i class="iconify" data-icon="feather:chevron-right"
-    /></a>
+    <RouterLink
+      v-if="lastPage > 1"
+      :to="paginatedLink(currentPage - 1)"
+      class="pagination-previous has-chevron"
+    >
+      <i class="iconify" data-icon="feather:chevron-left" />
+    </RouterLink>
+    <RouterLink
+      v-if="lastPage > 1"
+      :to="paginatedLink(currentPage + 1)"
+      class="pagination-next has-chevron"
+    >
+      <i class="iconify" data-icon="feather:chevron-right" />
+    </RouterLink>
+
     <ul class="pagination-list">
-      <li>
-        <a class="pagination-link" aria-label="Goto page 1">1</a>
-      </li>
-      <li><span class="pagination-ellipsis">…</span></li>
-      <li>
-        <a class="pagination-link" aria-label="Goto page 45">45</a>
-      </li>
-      <li>
-        <a
-          class="pagination-link is-current"
-          aria-label="Page 46"
-          aria-current="page"
-          >46</a
+      <li v-if="showFirstLink">
+        <RouterLink
+          :to="paginatedLink(1)"
+          class="pagination-link"
+          aria-label="Goto page 1"
         >
+          1
+        </RouterLink>
       </li>
-      <li>
-        <a class="pagination-link" aria-label="Goto page 47">47</a>
+
+      <li v-if="pages[0] > 2"><span class="pagination-ellipsis">…</span></li>
+
+      <li v-for="page in pages" :key="page">
+        <RouterLink
+          :to="paginatedLink(page)"
+          class="pagination-link"
+          :aria-label="`Goto page ${page}`"
+          :aria-current="currentPage === page ? 'page' : ''"
+          :class="{
+            'is-current': currentPage === page,
+          }"
+        >
+          {{ page }}
+        </RouterLink>
       </li>
-      <li><span class="pagination-ellipsis">…</span></li>
-      <li>
-        <a class="pagination-link" aria-label="Goto page 86">86</a>
+
+      <li v-if="pages[pages.length - 1] < lastPage - 1">
+        <span class="pagination-ellipsis">…</span>
+      </li>
+
+      <li v-if="showLastLink">
+        <RouterLink
+          :to="paginatedLink(lastPage)"
+          class="pagination-link"
+          :aria-label="`Goto page ${lastPage}`"
+        >
+          {{ lastPage }}
+        </RouterLink>
       </li>
     </ul>
   </nav>

@@ -24,14 +24,19 @@ const props = defineProps({
 
 const internalOpenItems = reactive(props.openItems)
 const toggle = (key: number) => {
+  const wasOpen = internalOpenItems.includes(key)
+
   if (props.exclusive) {
     internalOpenItems.splice(0, internalOpenItems.length)
-    internalOpenItems.push(key)
+
+    if (!wasOpen) {
+      internalOpenItems.push(key)
+    }
 
     return
   }
 
-  if (internalOpenItems.includes(key)) {
+  if (wasOpen) {
     internalOpenItems.splice(internalOpenItems.indexOf(key), 1)
   } else {
     internalOpenItems.push(key)

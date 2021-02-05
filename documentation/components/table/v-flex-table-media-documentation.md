@@ -9,7 +9,28 @@ Check the markup for more details about usage.
 
 ```vue
 <script setup lang="ts">
-import { flexRowsMedia } from '/@src/composition/state/documentation/components/table'
+const data = [
+  {
+    id: 0,
+    username: 'Erik K.',
+    position: 'Product Manager',
+    picture: '/images/avatars/photos/8.jpg',
+    badge: '/images/icons/flags/united-states-of-america.svg',
+    location: 'Las Vegas, NV',
+    industry: 'Software',
+    status: 'Active',
+    contacts: [
+      {
+        id: 0,
+        picture: '/images/avatars/photos/25.jpg',
+        initials: 'AC',
+        color: 'info',
+      },
+      // and more contacts ...
+    ],
+  },
+  // and more data ...
+]
 </script>
 
 <template>
@@ -26,7 +47,7 @@ import { flexRowsMedia } from '/@src/composition/state/documentation/components/
       </div>
     </template>
     <template #body>
-      <V-FlexTableRowMedia :rows="flexRowsMedia" />
+      <V-FlexTableRowMedia :rows="data" />
     </template>
   </V-FlexTable>
 

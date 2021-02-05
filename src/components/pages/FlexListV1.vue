@@ -778,7 +778,12 @@
     </div>
 
     <!--Table Pagination-->
-    <V-FlexPagination />
+    <V-FlexPagination
+      :item-per-page="10"
+      :total-items="873"
+      :current-page="42"
+      :max-links-displayed="7"
+    />
   </div>
 </template>
 

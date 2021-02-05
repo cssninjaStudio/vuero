@@ -9,29 +9,87 @@ Check the markup for more details about usage.
 
 ```vue
 <script setup lang="ts">
-import { flexRowsMedia } from '/@src/composition/state/documentation/components/table'
+const data = [
+  {
+    id: 0,
+    username: 'Erik K.',
+    position: 'Product Manager',
+    picture: '/images/avatars/photos/8.jpg',
+    badge: '/images/icons/flags/united-states-of-america.svg',
+    location: 'Las Vegas, NV',
+    industry: 'Software',
+    status: 'Active',
+    contacts: [
+      {
+        id: 0,
+        picture: '/images/avatars/photos/25.jpg',
+        initials: 'AC',
+        color: 'info',
+      },
+      // and more contacts ...
+    ],
+  },
+  // and more data ...
+]
 </script>
 
 <template>
-  <!--V-FlexTable-->
-  <V-FlexTable>
-    <template #header>
-      <div class="flex-table-header">
-        <span class="is-grow">User</span>
-        <span>Location</span>
-        <span>Industry</span>
-        <span>Status</span>
-        <span>Relations</span>
-        <span class="cell-end">Actions</span>
+  <div class="flex-table-wrapper mt-4">
+    <!--Custom table toolbar-->
+    <div class="flex-table-toolbar">
+      <div class="left">
+        <V-Field>
+          <V-Control iconed iconify="feather:search">
+            <input
+              type="text"
+              class="input is-rounded"
+              placeholder="Filter..."
+            />
+          </V-Control>
+        </V-Field>
       </div>
-    </template>
-    <template #body>
-      <V-FlexTableRowMedia :rows="flexRowsMedia" />
-    </template>
-  </V-FlexTable>
 
-  <!--Table Pagination-->
-  <V-FlexPagination />
+      <div class="right">
+        <V-Field>
+          <V-Control>
+            <div class="select is-rounded">
+              <select>
+                <option selected>10 results per page</option>
+                <option>25 results per page</option>
+                <option>50 results per page</option>
+                <option>100 results per page</option>
+              </select>
+            </div>
+          </V-Control>
+        </V-Field>
+      </div>
+    </div>
+
+    <!--V-FlexTable-->
+    <V-FlexTable>
+      <template #header>
+        <div class="flex-table-header">
+          <span class="is-grow">User</span>
+          <span>Location</span>
+          <span>Industry</span>
+          <span>Status</span>
+          <span>Relations</span>
+          <span class="cell-end">Actions</span>
+        </div>
+      </template>
+      <template #body>
+        <V-FlexTableRowMedia :rows="data" />
+      </template>
+    </V-FlexTable>
+
+    <!--Table Pagination-->
+    <V-FlexPagination
+      :item-per-page="10"
+      :total-items="873"
+      :current-page="42"
+      :max-links-displayed="5"
+    />
+  </div>
 </template>
 ```
 

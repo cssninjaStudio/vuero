@@ -77,53 +77,30 @@ useHead({
           <div class="flex-table-wrapper mt-4">
             <div class="flex-table-toolbar">
               <div class="left">
-                <div class="control has-icon">
-                  <input class="input is-rounded" placeholder="Filter..." />
-                  <div class="form-icon">
-                    <i class="iconify" data-icon="feather:search"></i>
-                  </div>
-                </div>
+                <V-Field>
+                  <V-Control iconed iconify="feather:search">
+                    <input
+                      type="text"
+                      class="input is-rounded"
+                      placeholder="Filter..."
+                    />
+                  </V-Control>
+                </V-Field>
               </div>
 
               <div class="right">
-                <div class="control">
-                  <div class="h-select is-rounded">
-                    <div class="select-box">
-                      <span>10 results per page</span>
+                <V-Field>
+                  <V-Control>
+                    <div class="select is-rounded">
+                      <select>
+                        <option selected>10 results per page</option>
+                        <option>25 results per page</option>
+                        <option>50 results per page</option>
+                        <option>100 results per page</option>
+                      </select>
                     </div>
-                    <div class="select-icon">
-                      <i class="iconify" data-icon="feather:chevron-down"></i>
-                    </div>
-                    <div class="select-drop has-slimscroll-sm">
-                      <div class="drop-inner">
-                        <div class="option-row">
-                          <input type="radio" name="table_results" />
-                          <div class="option-meta">
-                            <span>10 results per page</span>
-                          </div>
-                        </div>
-                        <div class="option-row">
-                          <input type="radio" name="table_results" />
-                          <div class="option-meta">
-                            <span>25 results per page</span>
-                          </div>
-                        </div>
-                        <div class="option-row">
-                          <input type="radio" name="table_results" />
-                          <div class="option-meta">
-                            <span>50 results per page</span>
-                          </div>
-                        </div>
-                        <div class="option-row">
-                          <input type="radio" name="table_results" />
-                          <div class="option-meta">
-                            <span>100 results per page</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                  </V-Control>
+                </V-Field>
               </div>
             </div>
 
@@ -146,7 +123,12 @@ useHead({
           </div>
 
           <!--Table Pagination-->
-          <V-FlexPagination />
+          <V-FlexPagination
+            :item-per-page="10"
+            :total-items="873"
+            :current-page="42"
+            :max-links-displayed="7"
+          />
         </div>
       </div>
     </div>

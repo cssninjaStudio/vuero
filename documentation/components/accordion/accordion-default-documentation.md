@@ -10,19 +10,29 @@ Pass an **Array** to the `items` props to render the accordion.
 
 ```vue
 <script setup lang="ts">
-import {
-  accordionSimpleData,
-  accordionExclusiveData,
-} from '/@src/composition/state/documentation/components/accordion'
+const data = [
+  {
+    title: 'Accordion Item 1',
+    content: 'Sed ut perspiciatis unde omnis iste ...',
+  },
+  {
+    title: 'Accordion Item 2',
+    content: 'Sed ut perspiciatis unde omnis iste ...',
+  },
+  {
+    title: 'Accordion Item 3',
+    content: 'Sed ut perspiciatis unde omnis iste ...',
+  },
+]
 </script>
 
 <template>
   <div class="column is-6">
-    <V-AccordionSimple :items="accordionSimpleData" />
+    <V-Accordion :items="data" />
   </div>
 
   <div class="column is-6">
-    <V-AccordionExclusive :items="accordionExclusiveData" />
+    <V-Accordion :items="data" exclusive />
   </div>
 </template>
 ```

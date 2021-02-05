@@ -34,6 +34,7 @@ const props = defineProps({
 
 <template>
   <nav
+    role="navigation"
     class="breadcrumb"
     aria-label="breadcrumbs"
     itemscope
@@ -44,6 +45,7 @@ const props = defineProps({
       <li
         v-for="(item, key) in items"
         :key="key"
+        :aria-current="key === items.length - 1 ? 'page' : ''"
         itemprop="itemListElement"
         itemscope
         itemtype="https://schema.org/ListItem"

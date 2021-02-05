@@ -10,7 +10,25 @@ Check the markup for more details about usage.
 
 ```vue
 <script setup lang="ts">
-import { flexRowsBasic } from '/@src/composition/state/documentation/components/table'
+const data = [
+  {
+    id: 0,
+    company: 'Grubspot',
+    type: 'New Lead',
+    industry: 'Software',
+    status: 'Active',
+    contacts: [
+      {
+        id: 0,
+        picture: '/images/avatars/photos/25.jpg',
+        initials: 'AC',
+        color: 'info',
+      },
+      // and more contacts ..
+    ],
+  },
+  // and more data ...
+]
 </script>
 
 <template>
