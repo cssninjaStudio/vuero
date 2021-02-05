@@ -15,7 +15,7 @@ onMounted(() => {
 })
 
 useHead({
-  title: 'Components - V-Block - Vuero',
+  title: 'V-Button - Components - Vuero',
 })
 </script>
 
@@ -42,34 +42,33 @@ useHead({
       </div>
 
       <div class="title-wrap">
-        <h1 class="title is-4">V-Block</h1>
+        <h1 class="title is-4">V-Button</h1>
       </div>
 
       <Toolbar />
     </div>
 
     <div class="page-content-inner">
-      <nav class="breadcrumb has-bullet-separator" aria-label="breadcrumbs">
-        <ul>
-          <li>
-            <RouterLink :to="{ name: 'index' }">
-              <span class="icon is-small is-solo">
-                <i class="iconify" data-icon="feather:home"></i>
-              </span>
-            </RouterLink>
-          </li>
-          <li>
-            <RouterLink :to="{ name: 'components' }">
-              <span>Components</span>
-            </RouterLink>
-          </li>
-          <li>
-            <a>
-              <span>V-Block</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <V-Breadcrumb
+        with-icons
+        separator="bullet"
+        :items="[
+          {
+            label: 'Vuero',
+            hideLabel: true,
+            icon: 'feather:home',
+            to: { name: 'index' },
+          },
+          {
+            label: 'Components',
+            to: { name: 'components' },
+          },
+          {
+            label: 'V-Button',
+            to: { name: 'components-button' },
+          },
+        ]"
+      />
 
       <div class="columns">
         <div
@@ -77,23 +76,41 @@ useHead({
           :class="[toc.length > 0 ? 'is-9' : 'is-12']"
           class="column"
         >
-          <!--V-Block base-->
-          <VBlockBaseDocumentation />
+          <!--V-Button base-->
+          <VButtonBaseDocumentation />
 
-          <!--V-Block icon-->
-          <VBlockIconDocumentation />
+          <!--V-Button link-->
+          <VButtonLinkDocumentation />
 
-          <!--V-Block center-->
-          <VBlockCenterDocumentation />
+          <!--V-Button colors-->
+          <VButtonColorsDocumentation />
 
-          <!--V-Block icon center-->
-          <VBlockIconCenterDocumentation />
+          <!--V-Button light colors-->
+          <VButtonColorsLightDocumentation />
 
-          <!--V-Block base responsive-->
-          <VBlockBaseResponsiveDocumentation />
+          <!--V-Button outlined colors-->
+          <VButtonColorsOutlinedDocumentation />
 
-          <!--V-Block center responsive-->
-          <VBlockCenterResponsiveDocumentation />
+          <!--V-Button Elevation-->
+          <VButtonElevatedDocumentation />
+
+          <!--V-Button Disabled-->
+          <VButtonDisabledDocumentation />
+
+          <!--V-Button Font Awesome-->
+          <VButtonFaDocumentation />
+
+          <!--V-Button Feather-->
+          <VButtonFeatherDocumentation />
+
+          <!--V-Button Group-->
+          <VButtonGroupDocumentation />
+
+          <!--V-Button Addons-->
+          <VButtonAddonsDocumentation />
+
+          <!--V-Action-->
+          <VButtonActionDocumentation />
         </div>
         <div v-if="toc.length" class="column is-3">
           <DocumentationToc :toc="toc" />

@@ -6,14 +6,14 @@ import {
   activeSidebar,
   toggleSidebar,
 } from '/@src/composition/state/activeSidebarState'
-import { flexRowsAdvanced } from '/@src/data/documentation/table'
+import { flexRowsBasic } from '/@src/data/documentation/table'
 
 onMounted(() => {
   activeSidebar.value = 'components'
 })
 
 useHead({
-  title: 'Components - Table Flex Media - Vuero',
+  title: 'V-FlexTable - Components - Vuero',
 })
 </script>
 
@@ -40,55 +40,54 @@ useHead({
       </div>
 
       <div class="title-wrap">
-        <h1 class="title is-4">Media Table</h1>
+        <h1 class="title is-4">V-FlexTable</h1>
       </div>
 
       <Toolbar />
     </div>
 
     <div class="page-content-inner">
-      <nav class="breadcrumb has-bullet-separator" aria-label="breadcrumbs">
-        <ul>
-          <li>
-            <RouterLink :to="{ name: 'index' }">
-              <span class="icon is-small is-solo">
-                <i class="iconify" data-icon="feather:home"></i>
-              </span>
-            </RouterLink>
-          </li>
-          <li>
-            <RouterLink :to="{ name: 'components' }">
-              <span>Components</span>
-            </RouterLink>
-          </li>
-          <li>
-            <a>
-              <span>Media Table</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <V-Breadcrumb
+        with-icons
+        separator="bullet"
+        :items="[
+          {
+            label: 'Vuero',
+            hideLabel: true,
+            icon: 'feather:home',
+            to: { name: 'index' },
+          },
+          {
+            label: 'Components',
+            to: { name: 'components' },
+          },
+          {
+            label: 'V-FlexTable',
+            to: { name: 'components-flex-table' },
+          },
+        ]"
+      />
 
       <div class="columns">
         <div class="column is-12">
           <!--Flex Table-->
-          <VFlexTableMediaDocumentation />
+          <VFlexTableBaseDocumentation />
 
           <div class="mt-4">
-            <!--V-FlexTable-->
+            <!--V-FlexTabe-->
             <V-FlexTable>
               <template #header>
                 <div class="flex-table-header">
-                  <span class="is-grow">User</span>
-                  <span>Location</span>
+                  <span>Company</span>
+                  <span>Type</span>
                   <span>Industry</span>
                   <span>Status</span>
-                  <span>Relations</span>
+                  <span>Contacts</span>
                   <span class="cell-end">Actions</span>
                 </div>
               </template>
               <template #body>
-                <V-FlexTableRowMedia :rows="flexRowsAdvanced" />
+                <V-FlexTableRowBase :rows="flexRowsBasic" />
               </template>
             </V-FlexTable>
 

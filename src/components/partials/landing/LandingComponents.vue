@@ -141,7 +141,10 @@ defineProps({
       </div>
 
       <div class="column is-3">
-        <RouterLink :to="{ name: 'elements-icons-lnir' }" class="component-box">
+        <RouterLink
+          :to="{ name: 'elements-icons-line-icons-regular' }"
+          class="component-box"
+        >
           <div class="component">
             <img
               class="light-image-l"
@@ -161,7 +164,10 @@ defineProps({
       </div>
 
       <div class="column is-3">
-        <RouterLink :to="{ name: 'elements-icons-lnil' }" class="component-box">
+        <RouterLink
+          :to="{ name: 'elements-icons-line-icons' }"
+          class="component-box"
+        >
           <div class="component">
             <img
               class="light-image-l"
@@ -275,7 +281,7 @@ defineProps({
       <!--Item-->
       <div class="column is-3">
         <RouterLink
-          :to="{ name: 'components-accordion-basic' }"
+          :to="{ name: 'components-accordion' }"
           class="component-box"
         >
           <div class="component">
@@ -296,7 +302,7 @@ defineProps({
         </RouterLink>
       </div>
       <div class="column is-3">
-        <RouterLink :to="{ name: 'components-vblock' }" class="component-box">
+        <RouterLink :to="{ name: 'components-block' }" class="component-box">
           <div class="component">
             <img
               class="light-image-l"
@@ -340,7 +346,7 @@ defineProps({
 
       <div class="column is-3">
         <RouterLink
-          :to="{ name: 'components-vcard-advanced' }"
+          :to="{ name: 'components-card-advanced' }"
           class="component-box"
         >
           <div class="component">
@@ -363,7 +369,7 @@ defineProps({
 
       <div class="column is-3">
         <RouterLink
-          :to="{ name: 'components-vcard-bulma' }"
+          :to="{ name: 'components-card-bulma' }"
           class="component-box"
         >
           <div class="component">
@@ -486,7 +492,7 @@ defineProps({
 
       <div class="column is-3">
         <RouterLink
-          :to="{ name: 'components-table-flex' }"
+          :to="{ name: 'components-flex-table' }"
           class="component-box"
         >
           <div class="component">
@@ -820,7 +826,7 @@ defineProps({
     <div class="columns is-multiline">
       <div class="column is-3">
         <RouterLink
-          :to="{ name: 'components-plugins-vdatatable' }"
+          :to="{ name: 'components-plugins-simple-datatables' }"
           class="component-box"
         >
           <div class="component">
@@ -843,7 +849,7 @@ defineProps({
 
       <div class="column is-3">
         <RouterLink
-          :to="{ name: 'components-plugins-datepicker' }"
+          :to="{ name: 'components-plugins-v-calendar' }"
           class="component-box"
         >
           <div class="component">
@@ -866,7 +872,7 @@ defineProps({
 
       <div class="column is-3">
         <RouterLink
-          :to="{ name: 'components-plugins-lightgallery' }"
+          :to="{ name: 'components-plugins-photo-swipe' }"
           class="component-box"
         >
           <div class="component">
@@ -889,7 +895,7 @@ defineProps({
 
       <div class="column is-3">
         <RouterLink
-          :to="{ name: 'components-plugins-video-player' }"
+          :to="{ name: 'components-plugins-vue-plyr' }"
           class="component-box"
         >
           <div class="component">
@@ -912,7 +918,7 @@ defineProps({
 
       <div class="column is-3">
         <RouterLink
-          :to="{ name: 'components-plugins-toasts' }"
+          :to="{ name: 'components-plugins-notif' }"
           class="component-box"
         >
           <div class="component">
@@ -935,7 +941,7 @@ defineProps({
 
       <div class="column is-3">
         <RouterLink
-          :to="{ name: 'components-plugins-popover' }"
+          :to="{ name: 'components-plugins-vue-tippy' }"
           class="component-box"
         >
           <div class="component">

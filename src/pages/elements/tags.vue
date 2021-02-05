@@ -15,7 +15,7 @@ onMounted(() => {
 })
 
 useHead({
-  title: 'Elements - Tags - Vuero',
+  title: 'Tags - Elements - Vuero',
 })
 </script>
 
@@ -49,27 +49,26 @@ useHead({
     </div>
 
     <div class="page-content-inner">
-      <nav class="breadcrumb has-bullet-separator" aria-label="breadcrumbs">
-        <ul>
-          <li>
-            <RouterLink :to="{ name: 'index' }">
-              <span class="icon is-small is-solo">
-                <i class="iconify" data-icon="feather:home"></i>
-              </span>
-            </RouterLink>
-          </li>
-          <li>
-            <RouterLink :to="{ name: 'elements' }">
-              <span>Elements</span>
-            </RouterLink>
-          </li>
-          <li>
-            <a>
-              <span>Tags</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <V-Breadcrumb
+        with-icons
+        separator="bullet"
+        :items="[
+          {
+            label: 'Vuero',
+            hideLabel: true,
+            icon: 'feather:home',
+            to: { name: 'index' },
+          },
+          {
+            label: 'Elements',
+            to: { name: 'elements' },
+          },
+          {
+            label: 'Tags',
+            to: { name: 'elements-tags' },
+          },
+        ]"
+      />
 
       <div class="columns">
         <div

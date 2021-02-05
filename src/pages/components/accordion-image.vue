@@ -1,24 +1,51 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
-import { onMounted, ref } from 'vue'
-import ClassicEditor from '@ckeditor/ckeditor5-build-classic'
+import { onMounted } from 'vue'
 
 import {
   activeSidebar,
   toggleSidebar,
 } from '/@src/composition/state/activeSidebarState'
 
-import {
-  editorData,
-  editorConfig,
-} from '/@src/data/documentation/ck-editor/editor-data'
+const data = [
+  {
+    image: 'https://source.unsplash.com/FV3GConVSss/1600x900',
+    title: 'Office Part I',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+  },
+  {
+    image: 'https://source.unsplash.com/rRiAzFkJPMo/1600x900',
+    title: 'Office Part II',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+  },
+  {
+    image: 'https://source.unsplash.com/tvleqH3p1os/1600x900',
+    title: '12 Great Landscapes',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+  },
+  {
+    image: 'https://source.unsplash.com/-Xv7k95vOFA/1600x900',
+    title: 'Team Meetup',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+  },
+  {
+    image: 'https://source.unsplash.com/F6NvgzU3RfM/1600x900',
+    title: 'Purple Shades',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+  },
+  {
+    image: 'https://source.unsplash.com/5E5N49RWtbA/1600x900',
+    title: 'Blue Note',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+  },
+]
 
 onMounted(() => {
   activeSidebar.value = 'components'
 })
 
 useHead({
-  title: 'Plugins CKEditor - Components - Vuero',
+  title: 'V-AccordionImage - Components - Vuero',
 })
 </script>
 
@@ -45,7 +72,7 @@ useHead({
       </div>
 
       <div class="title-wrap">
-        <h1 class="title is-4">CKEditor</h1>
+        <h1 class="title is-4">V-AccordionImage</h1>
       </div>
 
       <Toolbar />
@@ -67,30 +94,22 @@ useHead({
             to: { name: 'components' },
           },
           {
-            label: 'Plugins',
+            label: 'Accordions',
           },
           {
-            label: 'CKEditor',
-            to: { name: 'components-plugins-ckeditor' },
+            label: 'V-AccordionImage',
+            to: { name: 'components-accordion-image' },
           },
         ]"
       />
 
       <div class="columns is-multiline">
         <div class="column is-12">
-          <!--Simple Datatable-->
-          <CKEditorBasicDocumentation />
-
-          <div class="columns">
-            <div class="column is-12 content">
-              <ckeditor
-                v-model="editorData"
-                :editor="ClassicEditor"
-                :config="editorConfig"
-              >
-              </ckeditor>
-            </div>
-          </div>
+          <!--Image Accordion-->
+          <AccordionImageDocumentation />
+        </div>
+        <div class="column is-12">
+          <V-AccordionImage :items="data" />
         </div>
       </div>
     </div>

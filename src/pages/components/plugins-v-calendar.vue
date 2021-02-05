@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
-import { onMounted } from 'vue'
+import { onMounted, ref } from 'vue'
 
 import useMakrdownToc from '/@src/composition/use/useMarkdownToc'
 import {
@@ -9,13 +9,14 @@ import {
 } from '/@src/composition/state/activeSidebarState'
 
 const { markdownContainer, toc } = useMakrdownToc()
+const date = ref(null)
 
 onMounted(() => {
-  activeSidebar.value = 'elements'
+  activeSidebar.value = 'components'
 })
 
 useHead({
-  title: 'Input Addons - Forms Elements - Vuero',
+  title: 'Plugins V-Calendar - Components - Vuero',
 })
 </script>
 
@@ -25,7 +26,7 @@ useHead({
       <!-- Sidebar Trigger -->
       <div
         class="huro-hamburger nav-trigger push-resize"
-        @click="toggleSidebar('elements')"
+        @click="toggleSidebar('components')"
       >
         <span class="menu-toggle has-chevron">
           <span
@@ -42,7 +43,7 @@ useHead({
       </div>
 
       <div class="title-wrap">
-        <h1 class="title is-4">Input Addons</h1>
+        <h1 class="title is-4">V-Calendar</h1>
       </div>
 
       <Toolbar />
@@ -60,39 +61,36 @@ useHead({
             to: { name: 'index' },
           },
           {
-            label: 'Elements',
-            to: { name: 'elements' },
+            label: 'Components',
+            to: { name: 'components' },
           },
           {
-            label: 'Forms',
+            label: 'Plugins',
           },
           {
-            label: 'Input Addons',
-            to: { name: 'elements-forms-addons' },
+            label: 'V-Calendar',
+            to: { name: 'components-plugins-v-calendar' },
           },
         ]"
       />
 
-      <div class="columns">
+      <div class="columns is-multiline">
         <div
           ref="markdownContainer"
           :class="[toc.length > 0 ? 'is-9' : 'is-12']"
           class="column"
         >
-          <!--End Addon-->
-          <AddonEndDocumentation />
+          <!--Datepicker-->
+          <DatepickerBaseDocumentation />
 
-          <!--Start Addon-->
-          <AddonStartDocumentation />
+          <!--DateRangepicker-->
+          <DatepickerRangeDocumentation />
 
-          <!--Addon Colors-->
-          <AddonColorsDocumentation />
+          <!--DateTimepicker-->
+          <DatepickerTimeDocumentation />
 
-          <!--Rounded Addons-->
-          <AddonRoundedDocumentation />
-
-          <!--Bi Directional-->
-          <AddonDirectionalDocumentation />
+          <!--Timepicker-->
+          <DatepickerTimeSingleDocumentation />
         </div>
         <div v-if="toc.length" class="column is-3">
           <DocumentationToc :toc="toc" />

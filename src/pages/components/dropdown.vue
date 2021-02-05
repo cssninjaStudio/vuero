@@ -8,7 +8,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
 const { markdownContainer, toc } = useMakrdownToc()
 
 useHead({
-  title: 'Components - Dropdown - Vuero',
+  title: 'V-Dropdown - Components - Vuero',
 })
 </script>
 
@@ -42,27 +42,26 @@ useHead({
     </div>
 
     <div class="page-content-inner">
-      <nav class="breadcrumb has-bullet-separator" aria-label="breadcrumbs">
-        <ul>
-          <li>
-            <RouterLink :to="{ name: 'index' }">
-              <span class="icon is-small is-solo">
-                <i class="iconify" data-icon="feather:home"></i>
-              </span>
-            </RouterLink>
-          </li>
-          <li>
-            <RouterLink :to="{ name: 'components' }">
-              <span>Components</span>
-            </RouterLink>
-          </li>
-          <li>
-            <a>
-              <span>V-Dropdown</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <V-Breadcrumb
+        with-icons
+        separator="bullet"
+        :items="[
+          {
+            label: 'Vuero',
+            hideLabel: true,
+            icon: 'feather:home',
+            to: { name: 'index' },
+          },
+          {
+            label: 'Components',
+            to: { name: 'components' },
+          },
+          {
+            label: 'V-Dropdown',
+            to: { name: 'components-dropdown' },
+          },
+        ]"
+      />
 
       <div class="columns">
         <div

@@ -12,7 +12,7 @@ onMounted(() => {
 })
 
 useHead({
-  title: 'Components - Hub - Vuero',
+  title: 'Components - Vuero',
 })
 </script>
 
@@ -98,7 +98,7 @@ useHead({
                   light="/images/illustrations/components/accordion.svg"
                   dark="/images/illustrations/components/accordion-dark.svg"
                 >
-                  <RouterLink :to="{ name: 'components-accordion-basic' }"
+                  <RouterLink :to="{ name: 'components-accordion' }"
                     >Get Started</RouterLink
                   >
                 </HubCard>
@@ -202,7 +202,7 @@ useHead({
                   light="/images/illustrations/components/table.svg"
                   dark="/images/illustrations/components/table-dark.svg"
                 >
-                  <RouterLink :to="{ name: 'components-table-flex' }"
+                  <RouterLink :to="{ name: 'components-flex-table' }"
                     >Get Started</RouterLink
                   >
                 </HubCard>
@@ -228,7 +228,7 @@ useHead({
                   light="/images/illustrations/components/plugins.svg"
                   dark="/images/illustrations/components/plugins-dark.svg"
                 >
-                  <RouterLink :to="{ name: 'components-plugins-toasts' }"
+                  <RouterLink :to="{ name: 'components-plugins-notif' }"
                     >Get Started</RouterLink
                   >
                 </HubCard>

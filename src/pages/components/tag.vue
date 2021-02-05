@@ -15,7 +15,7 @@ onMounted(() => {
 })
 
 useHead({
-  title: 'Components - Plugins Photo Swipe - Vuero',
+  title: 'V-Tag - Components - Vuero',
 })
 </script>
 
@@ -42,57 +42,60 @@ useHead({
       </div>
 
       <div class="title-wrap">
-        <h1 class="title is-4">Photo Swipe</h1>
+        <h1 class="title is-4">V-Tag</h1>
       </div>
 
       <Toolbar />
     </div>
 
     <div class="page-content-inner">
-      <nav class="breadcrumb has-bullet-separator" aria-label="breadcrumbs">
-        <ul>
-          <li>
-            <RouterLink :to="{ name: 'index' }">
-              <span class="icon is-small is-solo">
-                <i class="iconify" data-icon="feather:home"></i>
-              </span>
-            </RouterLink>
-          </li>
-          <li>
-            <RouterLink :to="{ name: 'elements' }">
-              <span>Components</span>
-            </RouterLink>
-          </li>
-          <li>
-            <a>
-              <span>Plugins</span>
-            </a>
-          </li>
-          <li>
-            <a>
-              <span>Photo Swipe</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <V-Breadcrumb
+        with-icons
+        separator="bullet"
+        :items="[
+          {
+            label: 'Vuero',
+            hideLabel: true,
+            icon: 'feather:home',
+            to: { name: 'index' },
+          },
+          {
+            label: 'Components',
+            to: { name: 'components' },
+          },
+          {
+            label: 'V-Tag',
+            to: { name: 'components-tag' },
+          },
+        ]"
+      />
 
-      <div class="columns is-multiline">
+      <div class="columns">
         <div
           ref="markdownContainer"
           :class="[toc.length > 0 ? 'is-9' : 'is-12']"
           class="column"
         >
-          <!--Thumbnails-->
-          <GalleryImagesDocumentation />
+          <!--V-Tag base-->
+          <VTagBaseDocumentation />
 
-          <!--Curved Thumbnails-->
-          <GalleryImagesCurvedDocumentation />
+          <!--V-Tag rounded-->
+          <VTagRoundedDocumentation />
 
-          <!--Rounded Thumbnails-->
-          <GalleryImagesRoundedDocumentation />
+          <!--V-Tag curved-->
+          <VTagCurvedDocumentation />
 
-          <!--Bigger Thumbnails-->
-          <GalleryImagesLargerDocumentation />
+          <!--V-Tag Outlined-->
+          <VTagOutlinedDocumentation />
+
+          <!--V-Tag Elevated-->
+          <VTagElevatedDocumentation />
+
+          <!--V-Tag addons-->
+          <VTagAddonsDocumentation />
+
+          <!--V-Tag list-->
+          <VTagListDocumentation />
         </div>
         <div v-if="toc.length" class="column is-3">
           <DocumentationToc :toc="toc" />

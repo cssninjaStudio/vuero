@@ -83,7 +83,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'components-accordion-basic' }"
+                    :to="{ name: 'components-accordion' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -94,7 +94,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'components-accordion-collapse' }"
+                    :to="{ name: 'components-collapse' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -105,7 +105,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'components-accordion-images' }"
+                    :to="{ name: 'components-accordion-image' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -116,7 +116,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'components-vblock' }"
+                    :to="{ name: 'components-block' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -138,7 +138,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'components-vbutton' }"
+                    :to="{ name: 'components-button' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -239,7 +239,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'components-vtag' }"
+                    :to="{ name: 'components-tag' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -261,7 +261,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'components-table-flex' }"
+                    :to="{ name: 'components-flex-table' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -272,7 +272,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'components-table-flex-compact' }"
+                    :to="{ name: 'components-flex-table-compact' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -283,7 +283,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'components-table-flex-media' }"
+                    :to="{ name: 'components-flex-table-media' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -294,7 +294,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'components-table-flex-advanced' }"
+                    :to="{ name: 'components-flex-table-advanced' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -323,7 +323,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
 
                 <div class="column-content">
                   <RouterLink
-                    :to="{ name: 'components-plugins-vdatatable' }"
+                    :to="{ name: 'components-plugins-simple-datatables' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -334,7 +334,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'components-plugins-datepicker' }"
+                    :to="{ name: 'components-plugins-v-calendar' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -358,7 +358,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
 
                 <div class="column-content">
                   <RouterLink
-                    :to="{ name: 'components-plugins-toasts' }"
+                    :to="{ name: 'components-plugins-notif' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -369,7 +369,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'components-plugins-lightgallery' }"
+                    :to="{ name: 'components-plugins-photo-swipe' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -380,7 +380,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'components-plugins-video-player' }"
+                    :to="{ name: 'components-plugins-vue-plyr' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -404,7 +404,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
 
                 <div class="column-content">
                   <RouterLink
-                    :to="{ name: 'components-plugins-multiselect' }"
+                    :to="{ name: 'components-plugins-vue-multiselect' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -415,7 +415,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'components-plugins-slider' }"
+                    :to="{ name: 'components-plugins-vue-slider' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -427,7 +427,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                   </RouterLink>
 
                   <RouterLink
-                    :to="{ name: 'components-plugins-popover' }"
+                    :to="{ name: 'components-plugins-vue-tippy' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">

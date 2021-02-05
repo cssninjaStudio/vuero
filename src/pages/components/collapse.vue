@@ -7,17 +7,27 @@ import {
   toggleSidebar,
 } from '/@src/composition/state/activeSidebarState'
 
-import {
-  collapsePlusData,
-  collapseChevronData,
-} from '/@src/data/documentation/accordion'
+const data = [
+  {
+    title: 'Accordion Item 1',
+    content: 'Sed ut perspiciatis unde omnis iste ...',
+  },
+  {
+    title: 'Accordion Item 2',
+    content: 'Sed ut perspiciatis unde omnis iste ...',
+  },
+  {
+    title: 'Accordion Item 3',
+    content: 'Sed ut perspiciatis unde omnis iste ...',
+  },
+]
 
 onMounted(() => {
   activeSidebar.value = 'components'
 })
 
 useHead({
-  title: 'Components - Accordion Collapse - Vuero',
+  title: 'V-Collapse - Components - Vuero',
 })
 </script>
 
@@ -44,39 +54,36 @@ useHead({
       </div>
 
       <div class="title-wrap">
-        <h1 class="title is-4">Collapse</h1>
+        <h1 class="title is-4">V-Collapse</h1>
       </div>
 
       <Toolbar />
     </div>
 
     <div class="page-content-inner">
-      <nav class="breadcrumb has-bullet-separator" aria-label="breadcrumbs">
-        <ul>
-          <li>
-            <RouterLink :to="{ name: 'index' }">
-              <span class="icon is-small is-solo">
-                <i class="iconify" data-icon="feather:home"></i>
-              </span>
-            </RouterLink>
-          </li>
-          <li>
-            <RouterLink :to="{ name: 'elements' }">
-              <span>Components</span>
-            </RouterLink>
-          </li>
-          <li>
-            <a>
-              <span>Accordions</span>
-            </a>
-          </li>
-          <li>
-            <a>
-              <span>Collapse</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <V-Breadcrumb
+        with-icons
+        separator="bullet"
+        :items="[
+          {
+            label: 'Vuero',
+            hideLabel: true,
+            icon: 'feather:home',
+            to: { name: 'index' },
+          },
+          {
+            label: 'Components',
+            to: { name: 'components' },
+          },
+          {
+            label: 'Accordions',
+          },
+          {
+            label: 'V-Collapse',
+            to: { name: 'components-collapse' },
+          },
+        ]"
+      />
 
       <div class="columns is-multiline">
         <div class="column is-12">
@@ -85,11 +92,11 @@ useHead({
         </div>
 
         <div class="column is-6">
-          <V-Collapse :items="collapsePlusData" />
+          <V-Collapse :items="data" />
         </div>
 
         <div class="column is-6">
-          <V-Collapse :items="collapseChevronData" with-chevron />
+          <V-Collapse :items="data" with-chevron />
         </div>
       </div>
     </div>

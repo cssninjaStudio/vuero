@@ -31,7 +31,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
           <ul>
             <li>
               <RouterLink
-                :to="{ name: 'components-accordion-basic' }"
+                :to="{ name: 'components-accordion' }"
                 class="is-submenu"
                 ><i class="iconify" data-icon="feather:circle"></i
                 >V-Accordion</RouterLink
@@ -39,7 +39,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'components-accordion-collapse' }"
+                :to="{ name: 'components-collapse' }"
                 class="is-submenu"
                 ><i class="iconify" data-icon="feather:circle"></i
                 >V-Collapse</RouterLink
@@ -47,7 +47,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'components-accordion-images' }"
+                :to="{ name: 'components-accordion-image' }"
                 class="is-submenu"
                 ><i class="iconify" data-icon="feather:circle"></i>
                 V-ImageAccordion</RouterLink
@@ -56,7 +56,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
           </ul>
         </li>
         <li>
-          <RouterLink :to="{ name: 'components-vblock' }">V-Block</RouterLink>
+          <RouterLink :to="{ name: 'components-block' }">V-Block</RouterLink>
         </li>
         <li>
           <RouterLink :to="{ name: 'components-breadcrumb' }"
@@ -64,7 +64,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
           >
         </li>
         <li>
-          <RouterLink :to="{ name: 'components-vbutton' }">V-Button</RouterLink>
+          <RouterLink :to="{ name: 'components-button' }">V-Button</RouterLink>
         </li>
         <li>
           <RouterLink :to="{ name: 'components-dropdown' }"
@@ -101,7 +101,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
           <ul>
             <li>
               <RouterLink
-                :to="{ name: 'components-table-flex' }"
+                :to="{ name: 'components-flex-table' }"
                 class="is-submenu"
                 ><i class="iconify" data-icon="feather:circle"></i>Base
                 Table</RouterLink
@@ -109,7 +109,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'components-table-flex-compact' }"
+                :to="{ name: 'components-flex-table-compact' }"
                 class="is-submenu"
                 ><i class="iconify" data-icon="feather:circle"></i>Compact
                 Table</RouterLink
@@ -117,7 +117,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'components-table-flex-media' }"
+                :to="{ name: 'components-flex-table-media' }"
                 class="is-submenu"
                 ><i class="iconify" data-icon="feather:circle"></i>Media
                 Table</RouterLink
@@ -125,7 +125,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'components-table-flex-advanced' }"
+                :to="{ name: 'components-flex-table-advanced' }"
                 class="is-submenu"
                 ><i class="iconify" data-icon="feather:circle"></i>Advanced
                 Table</RouterLink
@@ -134,7 +134,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
           </ul>
         </li>
         <li>
-          <RouterLink :to="{ name: 'components-vtag' }">V-Tag</RouterLink>
+          <RouterLink :to="{ name: 'components-tag' }">V-Tag</RouterLink>
         </li>
         <li>
           <RouterLink :to="{ name: 'components-snacks' }">V-Snack</RouterLink>
@@ -149,7 +149,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
           <ul>
             <li>
               <RouterLink
-                :to="{ name: 'components-plugins-toasts' }"
+                :to="{ name: 'components-plugins-notif' }"
                 class="is-submenu"
                 ><i class="iconify" data-icon="feather:circle"></i
                 >Notyf</RouterLink
@@ -157,7 +157,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'components-plugins-lightgallery' }"
+                :to="{ name: 'components-plugins-photo-swipe' }"
                 class="is-submenu"
                 ><i class="iconify" data-icon="feather:circle"></i>Photo
                 Swipe</RouterLink
@@ -165,7 +165,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'components-plugins-vdatatable' }"
+                :to="{ name: 'components-plugins-simple-datatables' }"
                 class="is-submenu"
                 ><i class="iconify" data-icon="feather:circle"></i
                 >V-Datatable</RouterLink
@@ -173,7 +173,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'components-plugins-datepicker' }"
+                :to="{ name: 'components-plugins-v-calendar' }"
                 class="is-submenu"
                 ><i class="iconify" data-icon="feather:circle"></i
                 >V-Calendar</RouterLink
@@ -181,7 +181,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'components-plugins-video-player' }"
+                :to="{ name: 'components-plugins-vue-plyr' }"
                 class="is-submenu"
                 ><i class="iconify" data-icon="feather:circle"></i
                 >Vue-Plyr</RouterLink
@@ -189,7 +189,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'components-plugins-multiselect' }"
+                :to="{ name: 'components-plugins-vue-multiselect' }"
                 class="is-submenu"
                 ><i class="iconify" data-icon="feather:circle"></i
                 >Vue-Multiselect</RouterLink
@@ -197,7 +197,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'components-plugins-slider' }"
+                :to="{ name: 'components-plugins-vue-slider' }"
                 class="is-submenu"
                 ><i class="iconify" data-icon="feather:circle"></i
                 >Vue-Slider</RouterLink
@@ -206,7 +206,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
 
             <li>
               <RouterLink
-                :to="{ name: 'components-plugins-popover' }"
+                :to="{ name: 'components-plugins-vue-tippy' }"
                 class="is-submenu"
                 ><i class="iconify" data-icon="feather:circle"></i>
                 V-Tippy</RouterLink

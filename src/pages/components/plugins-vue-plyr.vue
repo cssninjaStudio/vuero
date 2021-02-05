@@ -15,7 +15,7 @@ onMounted(() => {
 })
 
 useHead({
-  title: 'Components - Plugins Popover - Vuero',
+  title: 'Components - Plugins Vue-Plyr - Vuero',
 })
 </script>
 
@@ -42,39 +42,36 @@ useHead({
       </div>
 
       <div class="title-wrap">
-        <h1 class="title is-4">Popover</h1>
+        <h1 class="title is-4">Vue-Plyr</h1>
       </div>
 
       <Toolbar />
     </div>
 
     <div class="page-content-inner">
-      <nav class="breadcrumb has-bullet-separator" aria-label="breadcrumbs">
-        <ul>
-          <li>
-            <RouterLink :to="{ name: 'index' }">
-              <span class="icon is-small is-solo">
-                <i class="iconify" data-icon="feather:home"></i>
-              </span>
-            </RouterLink>
-          </li>
-          <li>
-            <RouterLink :to="{ name: 'elements' }">
-              <span>Components</span>
-            </RouterLink>
-          </li>
-          <li>
-            <a>
-              <span>Plugins</span>
-            </a>
-          </li>
-          <li>
-            <a>
-              <span>Popover</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <V-Breadcrumb
+        with-icons
+        separator="bullet"
+        :items="[
+          {
+            label: 'Vuero',
+            hideLabel: true,
+            icon: 'feather:home',
+            to: { name: 'index' },
+          },
+          {
+            label: 'Components',
+            to: { name: 'components' },
+          },
+          {
+            label: 'Plugins',
+          },
+          {
+            label: 'Vue-Plyr',
+            to: { name: 'components-plugins-vue-plyr' },
+          },
+        ]"
+      />
 
       <div class="columns is-multiline">
         <div
@@ -82,20 +79,14 @@ useHead({
           :class="[toc.length > 0 ? 'is-9' : 'is-12']"
           class="column"
         >
-          <!--Text Popover-->
-          <PopoverBaseDocumentation />
+          <!--1:1 Video Player-->
+          <VideoBaseDocumentation />
 
-          <!--Popover Position-->
-          <PopoverPositionDocumentation />
+          <!--4:3 Video Player-->
+          <VideoFourDocumentation />
 
-          <!--Avatar Popover-->
-          <PopoverAvatarDocumentation />
-
-          <!--Icon Popover-->
-          <PopoverIconDocumentation />
-
-          <!--Profile Popover-->
-          <PopoverComplexDocumentation />
+          <!--16:9 Video Player-->
+          <VideoSixteenDocumentation />
         </div>
         <div v-if="toc.length" class="column is-3">
           <DocumentationToc :toc="toc" />

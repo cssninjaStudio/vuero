@@ -105,7 +105,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'elements-icons-lnil' }"
+                    :to="{ name: 'elements-icons-line-icons' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -116,7 +116,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'elements-icons-lnir' }"
+                    :to="{ name: 'elements-icons-line-icons-regular' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">

@@ -15,7 +15,7 @@ onMounted(() => {
 })
 
 useHead({
-  title: 'Components - V-Tag - Vuero',
+  title: 'V-Block - Components - Vuero',
 })
 </script>
 
@@ -42,34 +42,33 @@ useHead({
       </div>
 
       <div class="title-wrap">
-        <h1 class="title is-4">V-Tag</h1>
+        <h1 class="title is-4">V-Block</h1>
       </div>
 
       <Toolbar />
     </div>
 
     <div class="page-content-inner">
-      <nav class="breadcrumb has-bullet-separator" aria-label="breadcrumbs">
-        <ul>
-          <li>
-            <RouterLink :to="{ name: 'index' }">
-              <span class="icon is-small is-solo">
-                <i class="iconify" data-icon="feather:home"></i>
-              </span>
-            </RouterLink>
-          </li>
-          <li>
-            <RouterLink :to="{ name: 'components' }">
-              <span>Components</span>
-            </RouterLink>
-          </li>
-          <li>
-            <a>
-              <span>V-Tag</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <V-Breadcrumb
+        with-icons
+        separator="bullet"
+        :items="[
+          {
+            label: 'Vuero',
+            hideLabel: true,
+            icon: 'feather:home',
+            to: { name: 'index' },
+          },
+          {
+            label: 'Components',
+            to: { name: 'components' },
+          },
+          {
+            label: 'V-Block',
+            to: { name: 'components-block' },
+          },
+        ]"
+      />
 
       <div class="columns">
         <div
@@ -77,26 +76,23 @@ useHead({
           :class="[toc.length > 0 ? 'is-9' : 'is-12']"
           class="column"
         >
-          <!--V-Tag base-->
-          <VTagBaseDocumentation />
+          <!--V-Block base-->
+          <VBlockBaseDocumentation />
 
-          <!--V-Tag rounded-->
-          <VTagRoundedDocumentation />
+          <!--V-Block icon-->
+          <VBlockIconDocumentation />
 
-          <!--V-Tag curved-->
-          <VTagCurvedDocumentation />
+          <!--V-Block center-->
+          <VBlockCenterDocumentation />
 
-          <!--V-Tag Outlined-->
-          <VTagOutlinedDocumentation />
+          <!--V-Block icon center-->
+          <VBlockIconCenterDocumentation />
 
-          <!--V-Tag Elevated-->
-          <VTagElevatedDocumentation />
+          <!--V-Block base responsive-->
+          <VBlockBaseResponsiveDocumentation />
 
-          <!--V-Tag addons-->
-          <VTagAddonsDocumentation />
-
-          <!--V-Tag list-->
-          <VTagListDocumentation />
+          <!--V-Block center responsive-->
+          <VBlockCenterResponsiveDocumentation />
         </div>
         <div v-if="toc.length" class="column is-3">
           <DocumentationToc :toc="toc" />
