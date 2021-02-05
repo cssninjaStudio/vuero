@@ -28,7 +28,7 @@ export const progressChartOptions = {
     width: [2, 2, 2],
     curve: 'smooth',
   },
-  colors: [themeColors.accent],
+  colors: [themeColors.primary],
   labels: ['Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
   yaxis: {
     opposite: true,

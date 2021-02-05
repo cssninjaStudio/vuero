@@ -1,0 +1,623 @@
+<script setup lang="ts">
+import { onMounted, reactive, ref } from 'vue'
+import { energyChartOptions } from '/@src/data/dashboards/lifestyle-v3/energyChart'
+import { overallChartOptions } from '/@src/data/dashboards/lifestyle-v3/overallChart'
+import { oxygenChartOptions } from '/@src/data/dashboards/lifestyle-v3/oxygenChart'
+import { progressChartOptions } from '/@src/data/dashboards/lifestyle-v3/progressChart'
+import {
+  personalScoreGaugeOptions,
+  onPersonalScoreGaugeReady,
+} from '/@src/data/dashboards/lifestyle-v3/personalScoreGauge'
+import { followersList } from '/@src/data/widgets/ui/followers'
+</script>
+
+<template>
+  <!--Lifestyle Dashboard V3-->
+  <div class="lifestyle-dashboard lifestyle-dashboard-v3">
+    <div class="illustration-header">
+      <div class="header-image">
+        <img
+          src="/images/illustrations/dashboards/lifestyle/doctor.svg"
+          alt=""
+        />
+      </div>
+      <div class="header-meta">
+        <h3>Today's Summary</h3>
+        <p>Monitor your activity and keep improving your weak points.</p>
+        <div class="summary-stats">
+          <div class="summary-stat">
+            <span>900 kcal</span>
+            <span>Burnt today</span>
+          </div>
+          <div class="summary-stat">
+            <span>2300 kcal</span>
+            <span>Eaten today</span>
+          </div>
+          <div class="summary-stat">
+            <span>10,864</span>
+            <span>Steps walked</span>
+          </div>
+          <div class="summary-stat">
+            <span>2% fat</span>
+            <span>Burnt today</span>
+          </div>
+          <div class="summary-stat h-hidden-tablet-p">
+            <span>8.4 km</span>
+            <span>distance today</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="columns is-multiline is-flex-tablet-p">
+      <!--Tile-->
+      <div class="column is-3">
+        <div class="health-tile">
+          <div class="tile-head">
+            <V-IconBox color="primary">
+              <i class="fas fa-tint"></i>
+            </V-IconBox>
+            <h4>
+              <span class="dark-inverted">114/90</span>
+              <span>Min/Max</span>
+            </h4>
+          </div>
+          <h3 class="dark-inverted">Blood</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit Illis
+            videtur.
+          </p>
+        </div>
+      </div>
+
+      <!--Tile-->
+      <div class="column is-3">
+        <div class="health-tile">
+          <div class="tile-head">
+            <V-IconBox color="primary">
+              <i class="fas fa-heart"></i>
+            </V-IconBox>
+            <h4>
+              <span class="dark-inverted">112</span>
+              <span>Bpm</span>
+            </h4>
+          </div>
+          <h3 class="dark-inverted">Heart Rate</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit Illis
+            videtur.
+          </p>
+        </div>
+      </div>
+
+      <!--Tile-->
+      <div class="column is-3">
+        <div class="health-tile">
+          <div class="tile-head">
+            <V-IconBox color="primary">
+              <i class="fas fa-pump-medical"></i>
+            </V-IconBox>
+            <h4>
+              <span class="dark-inverted">12/14</span>
+              <span>units</span>
+            </h4>
+          </div>
+          <h3 class="dark-inverted">Blood Pressure</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit Illis
+            videtur.
+          </p>
+        </div>
+      </div>
+
+      <!--Tile-->
+      <div class="column is-3">
+        <div class="health-tile">
+          <div class="tile-head">
+            <V-IconBox color="primary">
+              <i class="fas fa-weight"></i>
+            </V-IconBox>
+            <h4>
+              <span class="dark-inverted">60.4</span>
+              <span>lbs</span>
+            </h4>
+          </div>
+          <h3 class="dark-inverted">Weight</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit Illis
+            videtur.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="columns is-multiline">
+      <div class="column is-9">
+        <div class="columns is-multiline">
+          <!--Dashboard Card-->
+          <div class="column is-6">
+            <div class="dashboard-card">
+              <div class="card-head">
+                <h3 class="dark-inverted">Overall Condition</h3>
+                <WidgetDropdown />
+              </div>
+              <div class="chart-meta">
+                <p>
+                  <i class="iconify" data-icon="feather:help-circle"></i> Your
+                  overall condition is very good. Make it even better.
+                  <a class="is-dark-primary">Read how</a>
+                </p>
+              </div>
+              <apexchart
+                id="overall-chart"
+                :height="overallChartOptions.chart.height"
+                :type="overallChartOptions.chart.type"
+                :series="overallChartOptions.series"
+                :options="overallChartOptions"
+              ></apexchart>
+            </div>
+          </div>
+
+          <!--Dashboard Card-->
+          <div class="column is-6">
+            <div class="dashboard-card">
+              <div class="card-head">
+                <h3 class="dark-inverted">Energy Report</h3>
+                <WidgetDropdown />
+              </div>
+              <div class="chart-meta">
+                <p>
+                  <i class="iconify" data-icon="feather:help-circle"></i> Your
+                  energy seems a bit unstable. You can improve it.
+                  <a class="is-dark-primary">Read how</a>
+                </p>
+              </div>
+              <apexchart
+                id="energy-chart"
+                :height="energyChartOptions.chart.height"
+                :type="energyChartOptions.chart.type"
+                :series="energyChartOptions.series"
+                :options="energyChartOptions"
+              ></apexchart>
+            </div>
+          </div>
+
+          <!--Dashboard Card-->
+          <div class="column is-6">
+            <div class="dashboard-card">
+              <div class="card-head">
+                <h3 class="dark-inverted">Oxygenation</h3>
+                <WidgetDropdown />
+              </div>
+              <div class="chart-meta">
+                <p>
+                  <i class="iconify" data-icon="feather:help-circle"></i> Your
+                  oxygen seems a bit unstable. You can improve it.
+                  <a class="is-dark-primary">Read how</a>
+                </p>
+              </div>
+              <apexchart
+                id="overall-chart"
+                :height="oxygenChartOptions.chart.height"
+                :type="oxygenChartOptions.chart.type"
+                :series="oxygenChartOptions.series"
+                :options="oxygenChartOptions"
+              ></apexchart>
+            </div>
+          </div>
+
+          <!--Dashboard Card-->
+          <div class="column is-6">
+            <div class="dashboard-card">
+              <div class="card-head">
+                <h3 class="dark-inverted">Overall Progress</h3>
+                <WidgetDropdown />
+              </div>
+              <div class="chart-meta">
+                <p>
+                  <i class="iconify" data-icon="feather:help-circle"></i> Your
+                  overall condition is very good. Make it even better.
+                  <a class="is-dark-primary">Read how</a>
+                </p>
+              </div>
+              <apexchart
+                id="progress-chart"
+                :height="progressChartOptions.chart.height"
+                :type="progressChartOptions.chart.type"
+                :series="progressChartOptions.series"
+                :options="progressChartOptions"
+              ></apexchart>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="column is-3">
+        <!--Widget-->
+        <UIWidget class="search-widget">
+          <template #body>
+            <div class="field">
+              <div class="control">
+                <input type="text" class="input" placeholder="Search..." />
+                <button class="searcv-button">
+                  <i class="iconify" data-icon="feather:search"></i>
+                </button>
+              </div>
+
+              <div class="topics">
+                <a>#Health</a>
+                <a>#Cardio</a>
+                <a>#Nutrition</a>
+              </div>
+            </div>
+          </template>
+        </UIWidget>
+
+        <!--Widget-->
+        <UIWidget class="picker-widget">
+          <template #header>
+            <div class="widget-toolbar">
+              <div class="left">
+                <a class="action-icon">
+                  <i class="iconify" data-icon="feather:chevron-left"></i>
+                </a>
+              </div>
+              <div class="center">
+                <h3>October 2020</h3>
+              </div>
+              <div class="right">
+                <a class="action-icon">
+                  <i class="iconify" data-icon="feather:chevron-right"></i>
+                </a>
+              </div>
+            </div>
+          </template>
+          <template #body>
+            <table class="calendar">
+              <thead>
+                <tr>
+                  <td>Mon</td>
+                  <td>Tue</td>
+                  <td>Wed</td>
+                  <td>Thu</td>
+                  <td>Fri</td>
+                  <td>Sat</td>
+                  <td>Sun</td>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td class="prev-month">29</td>
+                  <td class="prev-month">30</td>
+                  <td class="prev-month">31</td>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>3</td>
+                  <td>4</td>
+                </tr>
+
+                <tr>
+                  <td>5</td>
+                  <td>6</td>
+                  <td>7</td>
+                  <td>8</td>
+                  <td>9</td>
+                  <td>10</td>
+                  <td>11</td>
+                </tr>
+
+                <tr>
+                  <td>12</td>
+                  <td>13</td>
+                  <td>14</td>
+                  <td>15</td>
+                  <td>16</td>
+                  <td>17</td>
+                  <td class="current-day">18</td>
+                </tr>
+
+                <tr>
+                  <td>19</td>
+                  <td>20</td>
+                  <td>21</td>
+                  <td>22</td>
+                  <td>23</td>
+                  <td>24</td>
+                  <td>25</td>
+                </tr>
+
+                <tr>
+                  <td>26</td>
+                  <td>27</td>
+                  <td>28</td>
+                  <td>29</td>
+                  <td>30</td>
+                  <td>31</td>
+                  <td class="next-month">1</td>
+                </tr>
+              </tbody>
+            </table>
+          </template>
+        </UIWidget>
+
+        <!--Widget-->
+        <UIWidget class="gauge-widget">
+          <template #header>
+            <UIWidgetToolbarDropdown title="Gauge Widget" />
+          </template>
+          <template #body>
+            <div class="gauge-wrap">
+              <V-BillboardJS
+                class="gauge-holder"
+                :options="personalScoreGaugeOptions"
+                @ready="onPersonalScoreGaugeReady"
+              />
+            </div>
+            <div class="widget-content">
+              <p>Your score has been calculated based on the latest metrics</p>
+            </div>
+          </template>
+        </UIWidget>
+
+        <!--Widget-->
+        <UIWidget class="text-widget">
+          <template #header>
+            <UIWidgetToolbarFollowers
+              title="New Friends"
+              :avatars="followersList"
+            />
+          </template>
+          <template #body>
+            <div class="widget-content">
+              <p>
+                Great News! <span>{{ followersList[0].name }}</span
+                >, <span>{{ followersList[1].name }}</span> and
+                <span>{{ followersList[2].name }}</span> are now friends with
+                you. Take some time to look at their profile.
+              </p>
+            </div>
+          </template>
+        </UIWidget>
+      </div>
+    </div>
+  </div>
+</template>
+
+<style lang="scss">
+@import '../../../assets/scss/abstracts/_variables.scss';
+@import '../../../assets/scss/abstracts/_mixins.scss';
+
+.lifestyle-dashboard-v3 {
+  .illustration-header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 16px;
+    background: darken($primary, 24%);
+    font-family: $font;
+    margin-bottom: 30px;
+
+    .header-image {
+      position: relative;
+      height: 168px;
+      width: 280px;
+
+      img {
+        position: absolute;
+        top: -76px;
+        left: -30px;
+        display: block;
+        pointer-events: none;
+      }
+    }
+
+    .header-meta {
+      margin-left: 0;
+
+      h3 {
+        color: $smoke-white;
+        font-family: $font-alt;
+        font-weight: 700;
+        font-size: 1.3rem;
+      }
+
+      p {
+        font-weight: 400;
+        color: darken($smoke-white, 16%);
+        margin-bottom: 16px;
+      }
+
+      .summary-stats {
+        display: flex;
+
+        .summary-stat {
+          margin-right: 30px;
+
+          span {
+            font-family: $font;
+            display: block;
+
+            &:first-child {
+              font-size: 1.1rem;
+              font-family: $font-alt;
+              color: $smoke-white;
+            }
+
+            &:nth-child(2) {
+              color: lighten($primary, 18%);
+              font-size: 0.85rem;
+            }
+          }
+        }
+      }
+
+      .action-link {
+        span {
+          font-size: 0.8rem;
+          text-transform: uppercase;
+          margin-right: 6px;
+        }
+
+        i {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .health-tile {
+    font-family: $font;
+
+    .tile-head {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+
+      .v-icon {
+        margin-right: 10px;
+      }
+
+      h4 {
+        span {
+          &:first-child {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: $dark-text;
+            margin-right: 0.25rem;
+          }
+
+          &:nth-child(2) {
+            font-size: 0.95rem;
+            color: $light-text;
+          }
+        }
+      }
+    }
+
+    h3 {
+      font-family: $font-alt;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: $dark-text;
+    }
+
+    p {
+      font-size: 0.95rem;
+    }
+  }
+
+  .dashboard-card {
+    @include vuero-l-card();
+
+    .card-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 12px;
+
+      h3 {
+        color: $dark-text;
+        font-size: 1.2rem;
+        font-weight: 500;
+      }
+    }
+
+    .chart-meta {
+      p {
+        font-size: 0.95rem;
+        max-width: 80%;
+
+        svg {
+          position: relative;
+          top: 2px;
+          height: 16px;
+          width: 16px;
+          color: $light-text;
+        }
+
+        a {
+          color: $primary;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+.is-dark {
+  .lifestyle-dashboard-v3 {
+    .dashboard-card {
+      @include vuero-card--dark();
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .lifestyle-dashboard-v3 {
+    .illustration-header {
+      flex-direction: column;
+      text-align: center;
+
+      .header-image {
+        height: auto;
+        width: 100%;
+
+        img {
+          position: relative;
+          width: 100%;
+          max-width: 260px;
+          margin: 0 auto;
+          top: 0;
+          margin-top: -75px;
+        }
+      }
+
+      .header-meta {
+        padding: 20px;
+
+        > p {
+          max-width: 280px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        .summary-stats {
+          flex-wrap: wrap;
+
+          .summary-stat {
+            margin: 10px;
+            min-width: calc(33.3% - 20px);
+          }
+        }
+      }
+    }
+
+    .health-tile {
+      padding: 20px;
+      background: $white;
+      border: 1px solid darken($fade-grey, 3%);
+      border-radius: 10px;
+    }
+  }
+
+  .is-dark {
+    .lifestyle-dashboard-v3 {
+      .health-tile {
+        background: lighten($dark-sidebar, 6%);
+        border-color: lighten($dark-sidebar, 12%);
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .lifestyle-dashboard-v3 {
+    .illustration-header {
+      .header-image {
+        width: 250px;
+      }
+    }
+  }
+}
+</style>
