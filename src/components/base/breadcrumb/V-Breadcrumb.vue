@@ -1,22 +1,33 @@
 <script setup lang="ts">
+import type { PropType } from 'vue'
 import { defineProps } from 'vue'
 
-defineProps({
+type BreadcrumbSeparator = 'arrow' | 'bullet' | 'dot' | 'succeeds' | ''
+type BreadcrumbAlign = 'center' | 'right' | ''
+type BreadcrumbItem = {
+  label: string
+  hideLabel?: boolean
+  icon?: string
+  link?: string
+  to?: any
+}
+
+const props = defineProps({
   items: {
-    type: Array,
+    type: Array as PropType<BreadcrumbItem[]>,
     required: true,
   },
   separator: {
-    type: String,
+    type: String as PropType<BreadcrumbSeparator>,
     default: '',
-  },
-  icons: {
-    type: Boolean,
-    default: false,
   },
   align: {
-    type: String,
+    type: String as PropType<BreadcrumbAlign>,
     default: '',
+  },
+  withIcons: {
+    type: Boolean,
+    default: false,
   },
 })
 </script>
@@ -25,15 +36,56 @@ defineProps({
   <nav
     class="breadcrumb"
     aria-label="breadcrumbs"
+    itemscope
+    itemtype="https://schema.org/BreadcrumbList"
     :class="[`has-${separator}-separator`, align && `is-${align}`]"
   >
     <ul>
-      <li v-for="item in items" :key="item.id">
-        <a href="#">
-          <span v-if="icons" class="icon is-small">
+      <li
+        v-for="(item, key) in items"
+        :key="key"
+        itemprop="itemListElement"
+        itemscope
+        itemtype="https://schema.org/ListItem"
+      >
+        <RouterLink v-if="item.to" itemprop="item" :to="item.to">
+          <span v-if="withIcons && item.icon" class="icon is-small">
             <i class="iconify" :data-icon="item.icon"></i>
           </span>
-          <span>{{ item.label }}</span>
+          <meta
+            v-if="item.hideLabel && withIcons && item.icon"
+            itemprop="name"
+            :content="item.label"
+          />
+          <span v-else itemprop="name">{{ item.label }}</span>
+
+          <meta itemprop="position" :content="key + 1" />
+        </RouterLink>
+        <a v-else-if="item.link" itemprop="item" :href="item.link">
+          <span v-if="withIcons && item.icon" class="icon is-small">
+            <i class="iconify" :data-icon="item.icon"></i>
+          </span>
+          <meta
+            v-if="item.hideLabel && withIcons && item.icon"
+            itemprop="name"
+            :content="item.label"
+          />
+          <span v-else itemprop="name">{{ item.label }}</span>
+
+          <meta itemprop="position" :content="key + 1" />
+        </a>
+        <a v-else>
+          <span v-if="withIcons && item.icon" class="icon is-small">
+            <i class="iconify" :data-icon="item.icon"></i>
+          </span>
+          <meta
+            v-if="item.hideLabel && withIcons && item.icon"
+            itemprop="name"
+            :content="item.label"
+          />
+          <span v-else itemprop="name">{{ item.label }}</span>
+
+          <meta itemprop="position" :content="key + 1" />
         </a>
       </li>
     </ul>

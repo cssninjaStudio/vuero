@@ -1,3 +1,15 @@
+---
+breadcrumb:
+  - label: Vuero
+    icon: feather:home
+    link: https://vuero.cssninja.io/
+  - label: Components
+    icon: feather:cpu
+    to:
+      name: components
+  - label: V-Breadcrumb
+---
+
 ### Dot Separator
 
 Breadcrumb items can be separated by alternative separators.
@@ -8,15 +20,30 @@ See markup for more details.
 
 ```vue
 <script setup lang="ts">
-import { breadcrumbData } from '/@src/composition/state/documentation/components/breadcrumb'
+const breadcrumb = [
+  {
+    label: 'Vuero',
+    icon: 'feather:home',
+    // use external links
+    link: 'https://vuero.cssninja.io/',
+  },
+  {
+    label: 'Components',
+    icon: 'feather:cpu',
+    // or generate a router link with 'to' props
+    to: {
+      name: 'components',
+    },
+  },
+  {
+    label: 'V-Breadcrumb',
+  },
+]
 </script>
 
 <template>
-  <V-Breadcrumb :items="breadcrumbData" separator="dot" />
-</template>
-
-<template>
-  <V-Breadcrumb :items="breadcrumbData" separator="dot" icons />
+  <V-Breadcrumb :items="breadcrumb" separator="dot" />
+  <V-Breadcrumb :items="breadcrumb" separator="dot" with-icons />
 </template>
 ```
 
@@ -24,56 +51,9 @@ import { breadcrumbData } from '/@src/composition/state/documentation/components
 
 <!--example-->
 
-<nav class="breadcrumb has-dot-separator" aria-label="breadcrumbs">
-    <ul>
-        <li>
-            <a href="#">
-                <span>Catalogue</span>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <span>Computers</span>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <span>Monitors</span>
-            </a>
-        </li>
-    </ul>
-</nav>
-
-<nav class="breadcrumb has-dot-separator" aria-label="breadcrumbs">
-    <ul>
-        <li>
-        <a href="#">
-            <span class="icon is-small">
-            <i
-                class="iconify"
-                data-icon="feather:shopping-cart"
-            ></i>
-            </span>
-            <span>Catalogue</span>
-        </a>
-        </li>
-        <li>
-        <a href="#">
-            <span class="icon is-small">
-            <i class="iconify" data-icon="feather:cpu"></i>
-            </span>
-            <span>Computers</span>
-        </a>
-        </li>
-        <li>
-        <a href="#">
-            <span class="icon is-small">
-            <i class="iconify" data-icon="feather:monitor"></i>
-            </span>
-            <span>Monitors</span>
-        </a>
-        </li>
-    </ul>
-</nav>
+<div>
+  <V-Breadcrumb :items="frontmatter.breadcrumb" separator="dot" />
+  <V-Breadcrumb :items="frontmatter.breadcrumb" separator="dot" with-icons />
+</div>
 
 <!--/example-->

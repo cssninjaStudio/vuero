@@ -2,15 +2,11 @@
 import { defineProps } from 'vue'
 
 defineProps({
-  validation: {
+  isValid: {
     type: Boolean,
     default: false,
   },
-  success: {
-    type: Boolean,
-    default: false,
-  },
-  error: {
+  hasError: {
     type: Boolean,
     default: false,
   },
@@ -49,20 +45,19 @@ defineProps({
       loading && 'is-loading',
       expanded && 'is-expanded',
       textaddon && 'is-textarea-addon',
-      validation && 'has-validation',
-      success && 'has-success',
-      error && 'has-error',
+      isValid && 'has-validation has-success',
+      hasError && 'has-validation has-error',
     ]"
   >
     <slot></slot>
     <div v-if="iconed" class="form-icon">
       <i v-if="iconify && !icon" class="iconify" :data-icon="iconify"></i>
-      <i v-if="icon && !iconify" :class="icon"></i>
+      <i v-else-if="!iconify && icon" :class="icon"></i>
     </div>
-    <div v-if="validation" class="validation-icon is-success">
+    <div v-if="isValid" class="validation-icon is-success">
       <i class="iconify" data-icon="feather:check"></i>
     </div>
-    <div v-if="validation" class="validation-icon is-error">
+    <div v-else-if="hasError" class="validation-icon is-error">
       <i class="iconify" data-icon="feather:x"></i>
     </div>
   </div>

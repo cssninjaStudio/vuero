@@ -9,9 +9,10 @@ for more details about usage.
 
 ```vue
 <template>
-  <V-Field help="Choose a nice username">
+  <V-Field>
     <V-Control>
       <input type="text" class="input" placeholder="Username" />
+      <p class="help">Choose a nice username</p>
     </V-Control>
   </V-Field>
 </template>
@@ -21,13 +22,14 @@ for more details about usage.
 
 <!--example-->
 
-<V-Field help="Choose a nice username">
+<V-Field>
   <V-Control>
     <input
-        type="text"
-        class="input"
-        placeholder="Username"
-      />
+      type="text"
+      class="input"
+      placeholder="Username"
+    />
+    <p class="help">Choose a nice username</p>
   </V-Control>
 </V-Field>
 

@@ -19,6 +19,19 @@
   border-radius: 6px;
   overflow: hidden;
 
+  .accordion-item {
+    &.is-active {
+      .accordion-header {
+        &::before {
+          background-color: $primary;
+        }
+      }
+      .accordion-content {
+        display: block;
+      }
+    }
+  }
+
   .accordion-header {
     border-bottom: 1px solid #dde0e7;
     color: $dark-text;
@@ -27,15 +40,10 @@
     font-size: 0.95rem;
     font-family: $font-alt;
     padding: 1.5rem;
+    display: block;
 
     &:hover {
       background: #f6f7f9;
-    }
-
-    &.is-active {
-      &::before {
-        background-color: $primary;
-      }
     }
 
     &::before {
@@ -112,6 +120,9 @@
           transform: rotate(45deg);
         }
       }
+      .collapse-content {
+        display: block;
+      }
     }
   }
 
@@ -121,6 +132,9 @@
         .collapse-icon {
           transform: rotate(180deg);
         }
+      }
+      .collapse-content {
+        display: block;
       }
     }
   }

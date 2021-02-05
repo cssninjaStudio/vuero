@@ -9,24 +9,26 @@ Use the props shown in the code examples to handle validation.
 
 ```vue
 <template>
-  <V-Field validation success>
-    <V-Control iconed iconify="feather:user" validation success>
+  <V-Field>
+    <V-Control iconed iconify="feather:user" is-valid>
       <input
         type="text"
         class="input is-rounded"
         placeholder="Username"
         value="Superman"
       />
+      <p class="help is-success">This username is available</p>
     </V-Control>
   </V-Field>
-  <V-Field validation error>
-    <V-Control iconed iconify="feather:lock" validation error>
+  <V-Field>
+    <V-Control iconed iconify="feather:lock" has-error>
       <input
         type="password"
         class="input is-rounded"
         placeholder="Password"
-        value="fefete6ht"
+        value="passwd"
       />
+      <p class="help text-danger">The password must contains 8 characters</p>
     </V-Control>
   </V-Field>
 </template>
@@ -36,25 +38,27 @@ Use the props shown in the code examples to handle validation.
 
 <!--example-->
 
-<V-Field validation success>
-    <V-Control iconed iconify="feather:user" validation success>
-        <input
-            type="text"
-            class="input is-rounded"
-            placeholder="Username"
-            value="Superman"
-        />
-    </V-Control>
+<V-Field>
+  <V-Control iconed iconify="feather:user" is-valid>
+    <input
+      type="text"
+      class="input is-rounded"
+      placeholder="Username"
+      value="Superman"
+    />
+    <p class="help is-success">This username is available</p>
+  </V-Control>
 </V-Field>
-<V-Field validation error>
-    <V-Control iconed iconify="feather:lock" validation error>
-        <input
-            type="password"
-            class="input is-rounded"
-            placeholder="Password"
-            value="fefete6ht"
-        />
-    </V-Control>
+<V-Field>
+  <V-Control iconed iconify="feather:lock" has-error>
+    <input
+      type="password"
+      class="input is-rounded"
+      placeholder="Password"
+      value="passwd"
+    />
+    <p class="help text-danger">The password must contains 8 characters</p>
+  </V-Control>
 </V-Field>
 
 <!--/example-->

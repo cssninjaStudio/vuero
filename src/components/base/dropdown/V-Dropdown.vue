@@ -61,8 +61,8 @@ const { dropdownElement, open, close, toggle, isOpen } = useDropdown()
       <button v-bind="$attrs" class="is-trigger button" @click="toggle">
         <span v-if="title">{{ title }}</span>
         <span :class="[!modern && 'base-caret', modern && 'base-caret']">
-          <Icon v-if="!isOpen" icon="fa:angle-down" />
-          <Icon v-else icon="fa:angle-up" />
+          <V-Icon v-if="!isOpen" icon="fa:angle-down" />
+          <V-Icon v-else icon="fa:angle-up" />
         </span>
       </button>
     </slot>

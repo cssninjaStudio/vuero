@@ -84,11 +84,11 @@ useHead({
         </div>
 
         <div class="column is-6">
-          <V-AccordionSimple :items="accordionSimpleData" />
+          <V-Accordion :items="accordionSimpleData" />
         </div>
 
         <div class="column is-6">
-          <V-AccordionExclusive :items="accordionExclusiveData" />
+          <V-Accordion :items="accordionExclusiveData" exclusive />
         </div>
       </div>
     </div>
