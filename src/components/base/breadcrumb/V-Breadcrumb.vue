@@ -52,9 +52,7 @@ const props = defineProps({
           <span
             v-if="withIcons && item.icon"
             class="icon is-small"
-            :class="[
-              item.hideLabel === false && withIcons && item.icon && 'is-solo',
-            ]"
+            :class="[item.hideLabel && withIcons && item.icon && 'is-solo']"
           >
             <i class="iconify" :data-icon="item.icon"></i>
           </span>
@@ -71,9 +69,7 @@ const props = defineProps({
           <span
             v-if="withIcons && item.icon"
             class="icon is-small"
-            :class="[
-              item.hideLabel === false && withIcons && item.icon && 'is-solo',
-            ]"
+            :class="[item.hideLabel && withIcons && item.icon && 'is-solo']"
           >
             <i class="iconify" :data-icon="item.icon"></i>
           </span>
@@ -90,9 +86,7 @@ const props = defineProps({
           <span
             v-if="withIcons && item.icon"
             class="icon is-small"
-            :class="[
-              item.hideLabel === false && withIcons && item.icon && 'is-solo',
-            ]"
+            :class="[item.hideLabel && withIcons && item.icon && 'is-solo']"
           >
             <i class="iconify" :data-icon="item.icon"></i>
           </span>

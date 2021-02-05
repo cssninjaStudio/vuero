@@ -1,6 +1,7 @@
 ---
 breadcrumb:
   - label: Vuero
+    hideLabel: true
     icon: feather:home
     link: https://vuero.cssninja.io/
   - label: Components
@@ -23,6 +24,7 @@ set the `separator` prop to `bullet`. See markup for more details.
 const breadcrumb = [
   {
     icon: 'feather:home',
+    hideLabel: true,
     // use external links
     link: 'https://vuero.cssninja.io/',
   },

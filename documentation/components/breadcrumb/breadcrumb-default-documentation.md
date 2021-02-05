@@ -27,6 +27,7 @@ See markup for more details about usage.
 const breadcrumb = [
   {
     label: 'Vuero',
+    hideLabel: true,
     icon: 'feather:home',
     // use external links
     link: 'https://vuero.cssninja.io/',
