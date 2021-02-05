@@ -49,7 +49,13 @@ const props = defineProps({
         itemtype="https://schema.org/ListItem"
       >
         <RouterLink v-if="item.to" itemprop="item" :to="item.to">
-          <span v-if="withIcons && item.icon" class="icon is-small">
+          <span
+            v-if="withIcons && item.icon"
+            class="icon is-small"
+            :class="[
+              item.hideLabel === false && withIcons && item.icon && 'is-solo',
+            ]"
+          >
             <i class="iconify" :data-icon="item.icon"></i>
           </span>
           <meta
@@ -62,7 +68,13 @@ const props = defineProps({
           <meta itemprop="position" :content="key + 1" />
         </RouterLink>
         <a v-else-if="item.link" itemprop="item" :href="item.link">
-          <span v-if="withIcons && item.icon" class="icon is-small">
+          <span
+            v-if="withIcons && item.icon"
+            class="icon is-small"
+            :class="[
+              item.hideLabel === false && withIcons && item.icon && 'is-solo',
+            ]"
+          >
             <i class="iconify" :data-icon="item.icon"></i>
           </span>
           <meta
@@ -75,7 +87,13 @@ const props = defineProps({
           <meta itemprop="position" :content="key + 1" />
         </a>
         <a v-else>
-          <span v-if="withIcons && item.icon" class="icon is-small">
+          <span
+            v-if="withIcons && item.icon"
+            class="icon is-small"
+            :class="[
+              item.hideLabel === false && withIcons && item.icon && 'is-solo',
+            ]"
+          >
             <i class="iconify" :data-icon="item.icon"></i>
           </span>
           <meta
