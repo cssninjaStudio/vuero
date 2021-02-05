@@ -307,6 +307,12 @@ $h-blue-shadow-to: rgba($h-blue, 0.2);
 $h-blue-box-shadow: 0 14px 26px -12px $h-blue-shadow-from,
   0 4px 23px 0 $base-shadow, 0 8px 10px -5px $h-blue-shadow-to !important;
 
+//h-yellow
+$h-yellow-shadow-from: rgba($h-yellow, 0.42);
+$h-yellow-shadow-to: rgba($h-yellow, 0.2);
+$h-yellow-box-shadow: 0 14px 26px -12px $h-yellow-shadow-from,
+  0 4px 23px 0 $base-shadow, 0 8px 10px -5px $h-yellow-shadow-to !important;
+
 //h-orange
 $h-orange-shadow-from: rgba($h-orange, 0.42);
 $h-orange-shadow-to: rgba($h-orange, 0.2);

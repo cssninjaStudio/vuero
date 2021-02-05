@@ -3,14 +3,14 @@ import { themeColors } from '/@src/composition/state/themeColors'
 export const reputationChartOptions = {
   series: [65],
   chart: {
-    height: 130,
+    height: 140,
     type: 'radialBar',
     offsetX: -10,
     toolbar: {
       show: false,
     },
   },
-  colors: [themeColors.purple],
+  colors: [themeColors.primary],
   plotOptions: {
     radialBar: {
       hollow: {
@@ -29,7 +29,7 @@ export const reputationChartOptions = {
           show: true,
           fontWeight: 600,
           fontFamily: 'Roboto, sans-serif',
-          color: themeColors.purple,
+          color: themeColors.primary,
           fontSize: '16px',
           offsetY: 5,
         },

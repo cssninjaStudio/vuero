@@ -28,7 +28,7 @@ defineProps({
         <a href="#">{{ topic.name }}</a>
         <span>{{ topic.category }}</span>
       </div>
-      <div class="flex-end">
+      <div v-if="topic.users" class="flex-end">
         <V-AvatarStack :avatars="topic.users" size="small" :limit="3" />
       </div>
     </div>

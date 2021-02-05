@@ -71,5 +71,5 @@ export const oxygenChartOptions = {
       formatter: formatters.asPercent,
     },
   },
-  colors: [themeColors.accent],
+  colors: [themeColors.purple],
 }

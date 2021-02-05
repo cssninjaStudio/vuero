@@ -28,7 +28,7 @@ export const overallChartOptions = {
     width: [2, 2, 2],
     curve: 'straight',
   },
-  colors: [themeColors.accent],
+  colors: [themeColors.primary],
   labels: ['Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
   yaxis: {
     opposite: true,

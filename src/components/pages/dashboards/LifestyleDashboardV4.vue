@@ -1,0 +1,666 @@
+<template>
+  <!--Lifestyle Dashboard V4-->
+  <div class="lifestyle-dashboard lifestyle-dashboard-v4">
+    <div class="columns">
+      <div class="column is-8">
+        <div class="columns is-multiline">
+          <!--Header-->
+          <div class="column is-12">
+            <div class="illustration-header-2">
+              <div class="header-image">
+                <img
+                  src="/images/illustrations/dashboards/lifestyle/reading.svg"
+                  alt=""
+                />
+              </div>
+              <div class="header-meta">
+                <h3>Hello, Erik.</h3>
+                <p>
+                  Have any ideas for a new article? If not, you should
+                  definitely check the feed for some inspiration.
+                </p>
+                <V-Button light outlined iconify="feather:plus"
+                  >New Article</V-Button
+                >
+              </div>
+            </div>
+          </div>
+
+          <!--Content-->
+          <div class="column is-7">
+            <div class="writing-stats">
+              <!--Stat-->
+              <div class="writing-stat">
+                <span>Articles</span>
+                <span class="dark-inverted">209</span>
+              </div>
+              <!--Stat-->
+              <div class="writing-stat">
+                <span>Readers</span>
+                <span class="dark-inverted">863</span>
+              </div>
+              <!--Stat-->
+              <div class="writing-stat">
+                <span>Comments</span>
+                <span class="dark-inverted">386</span>
+              </div>
+            </div>
+
+            <div class="featured-authors">
+              <!--Header-->
+              <div class="featured-authors-header">
+                <h3 class="dark-inverted">Featured Authors</h3>
+                <a class="action-link">View All</a>
+              </div>
+
+              <div class="featured-authors-list">
+                <!--Item-->
+                <div class="featured-authors-item">
+                  <V-Block title="Alice C." subtitle="Software Engineer">
+                    <template #icon>
+                      <V-Avatar
+                        picture="/images/avatars/photos/7.jpg"
+                        squared
+                      />
+                    </template>
+                    <template #action>
+                      <span class="dark-inverted">112K</span>
+                    </template>
+                  </V-Block>
+                </div>
+                <!--Item-->
+                <div class="featured-authors-item">
+                  <V-Block title="Elizabeth F." subtitle="Web Developer">
+                    <template #icon>
+                      <V-Avatar
+                        picture="/images/avatars/photos/21.jpg"
+                        squared
+                      />
+                    </template>
+                    <template #action>
+                      <span class="dark-inverted">91K</span>
+                    </template>
+                  </V-Block>
+                </div>
+                <!--Item-->
+                <div class="featured-authors-item">
+                  <V-Block title="Jonathan K." subtitle="UI/UX Designer">
+                    <template #icon>
+                      <V-Avatar
+                        picture="/images/avatars/photos/32.jpg"
+                        squared
+                      />
+                    </template>
+                    <template #action>
+                      <span class="dark-inverted">72K</span>
+                    </template>
+                  </V-Block>
+                </div>
+                <!--Item-->
+                <div class="featured-authors-item">
+                  <V-Block title="Christie D." subtitle="Software Engineer">
+                    <template #icon>
+                      <V-Avatar
+                        picture="/images/avatars/photos/38.jpg"
+                        squared
+                      />
+                    </template>
+                    <template #action>
+                      <span class="dark-inverted">19K</span>
+                    </template>
+                  </V-Block>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Content-->
+          <div class="column is-5">
+            <!--Updates-->
+            <div class="updates">
+              <!--Header-->
+              <div class="updates-header">
+                <h3 class="dark-inverted">Updates</h3>
+                <a class="action-link">View All</a>
+              </div>
+
+              <div class="updates-list">
+                <!--Update-->
+                <div class="update-item is-dark-bordered-12">
+                  <p>
+                    Lorem ipsum sit dolor amet is a dummy text used by
+                    typographers.
+                  </p>
+                  <span class="dark-inverted">Oct 23</span>
+                </div>
+                <!--Update-->
+                <div class="update-item is-dark-bordered-12">
+                  <p>
+                    Lorem ipsum sit dolor amet is a dummy text used by
+                    typographers.
+                  </p>
+                  <span class="dark-inverted">Oct 23</span>
+                </div>
+                <!--Update-->
+                <div class="update-item is-dark-bordered-12">
+                  <p>
+                    Lorem ipsum sit dolor amet is a dummy text used by
+                    typographers.
+                  </p>
+                  <span class="dark-inverted">Oct 23</span>
+                </div>
+                <!--Update-->
+                <div class="update-item is-dark-bordered-12">
+                  <p>
+                    Lorem ipsum sit dolor amet is a dummy text used by
+                    typographers.
+                  </p>
+                  <span class="dark-inverted">Oct 23</span>
+                </div>
+                <!--Update-->
+                <div class="update-item is-dark-bordered-12">
+                  <p>
+                    Lorem ipsum sit dolor amet is a dummy text used by
+                    typographers.
+                  </p>
+                  <span class="dark-inverted">Oct 23</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Feed-->
+      <div class="column is-4">
+        <div class="articles-feed">
+          <!--Header-->
+          <div class="articles-feed-header">
+            <h3 class="dark-inverted">New Articles</h3>
+            <a class="action-link">View All</a>
+          </div>
+          <!--Subheader-->
+          <div class="articles-feed-subheader">
+            <div class="selector">
+              <button class="button is-selected">Recent</button>
+              <button class="button">Popular</button>
+            </div>
+          </div>
+          <!--List-->
+          <div class="articles-feed-list">
+            <div class="articles-feed-list-inner">
+              <!--Item-->
+              <a class="articles-feed-item">
+                <div class="featured-image">
+                  <img
+                    src="/images/photo/demo/38.jpg"
+                    alt=""
+                    @error="
+                      $event.target.src = 'https://via.placeholder.com/800x600'
+                    "
+                  />
+                </div>
+                <div class="featured-content">
+                  <h4 class="dark-inverted">Learning the modern novel</h4>
+                  <p>Some article content and lorem ipsum sit dolor amet</p>
+
+                  <V-Block title="Alice C." subtitle="Software Engineer">
+                    <template #icon>
+                      <V-Avatar
+                        picture="/images/avatars/photos/7.jpg"
+                        squared
+                      />
+                    </template>
+                  </V-Block>
+                </div>
+              </a>
+              <!--Item-->
+              <a class="articles-feed-item">
+                <div class="featured-image">
+                  <img
+                    src="/images/photo/demo/37.jpg"
+                    alt=""
+                    @error="
+                      $event.target.src = 'https://via.placeholder.com/800x600'
+                    "
+                  />
+                </div>
+                <div class="featured-content">
+                  <h4 class="dark-inverted">5 Writing tips for you</h4>
+                  <p>Some article content and lorem ipsum sit dolor amet</p>
+
+                  <V-Block title="Mary L." subtitle="Project Manager">
+                    <template #icon>
+                      <V-Avatar
+                        picture="/images/avatars/photos/5.jpg"
+                        squared
+                      />
+                    </template>
+                  </V-Block>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<style lang="scss">
+@import '../../../assets/scss/abstracts/_variables.scss';
+@import '../../../assets/scss/abstracts/_mixins.scss';
+
+.lifestyle-dashboard-v4 {
+  .illustration-header-2 {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 16px;
+    background: $primary;
+    font-family: $font;
+    box-shadow: $primary-box-shadow;
+
+    .header-image {
+      position: relative;
+      height: 175px;
+      width: 320px;
+
+      img {
+        position: absolute;
+        top: 0;
+        left: -40px;
+        display: block;
+        pointer-events: none;
+      }
+    }
+
+    .header-meta {
+      margin-left: 0;
+      padding-right: 30px;
+
+      h3 {
+        color: $smoke-white;
+        font-family: $font-alt;
+        font-weight: 700;
+        font-size: 1.3rem;
+        max-width: 280px;
+      }
+
+      p {
+        font-weight: 400;
+        color: darken($smoke-white, 2%);
+        margin-bottom: 16px;
+        max-width: 320px;
+      }
+
+      .action-link {
+        span {
+          font-size: 0.8rem;
+          text-transform: uppercase;
+          margin-right: 6px;
+        }
+
+        i {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .writing-stats {
+    display: flex;
+    margin-bottom: 1rem;
+    margin-left: -8px;
+    margin-right: -8px;
+
+    .writing-stat {
+      @include vuero-l-card();
+
+      margin: 8px;
+      width: calc(33.3% - 16px);
+      padding: 12px;
+
+      span {
+        display: block;
+
+        &:first-child {
+          font-family: $font-alt;
+          font-size: 0.8rem;
+          font-weight: 500;
+          text-transform: uppercase;
+          margin-bottom: 5px;
+          color: $light-text;
+        }
+
+        &:nth-child(2) {
+          font-family: $font;
+          font-weight: 700;
+          font-size: 1.8rem;
+          color: $dark-text;
+        }
+      }
+    }
+  }
+
+  .featured-authors {
+    @include vuero-l-card();
+
+    padding: 20px;
+
+    .featured-authors-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 30px;
+
+      h3 {
+        font-family: $font-alt;
+        font-weight: 600;
+        font-size: 1.1rem;
+        color: $dark-text;
+      }
+
+      .action-link {
+        font-size: 0.9rem;
+      }
+    }
+
+    .featured-authors-list {
+      .featured-authors-item {
+        &:not(:last-child) {
+          margin-bottom: 20px;
+        }
+
+        .media-flex-center {
+          .flex-end {
+            span {
+              font-family: $font-alt;
+              font-weight: 600;
+              color: $dark-text;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .updates {
+    @include vuero-l-card();
+
+    padding: 20px;
+    margin-top: 8px;
+
+    .updates-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+
+      h3 {
+        font-family: $font-alt;
+        font-weight: 600;
+        font-size: 1.1rem;
+        color: $dark-text;
+      }
+
+      .action-link {
+        font-size: 0.9rem;
+      }
+    }
+
+    .updates-list {
+      .update-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 16px;
+        padding-bottom: 16px;
+        border-bottom: 1px solid darken($fade-grey, 3%);
+
+        &:last-child {
+          margin-bottom: 0;
+          border-bottom: none;
+        }
+
+        p {
+          font-size: 0.9rem;
+        }
+
+        span {
+          display: block;
+          min-width: 60px;
+          text-align: right;
+          font-family: $font;
+          font-weight: 600;
+          font-size: 0.8rem;
+          color: $dark-text;
+        }
+      }
+    }
+  }
+
+  .articles-feed {
+    background: $widget-grey;
+    padding: 30px;
+    border-radius: 12px;
+
+    .articles-feed-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+
+      h3 {
+        font-family: $font-alt;
+        font-weight: 600;
+        font-size: 1.1rem;
+        color: $dark-text;
+      }
+
+      .action-link {
+        font-size: 0.9rem;
+      }
+    }
+
+    .articles-feed-subheader {
+      margin-bottom: 20px;
+
+      .selector {
+        .button {
+          font-size: 0.8rem;
+          border-radius: 50px;
+          margin-right: 4px;
+
+          &.is-selected {
+            background: $primary;
+            color: $white;
+            border-color: $primary;
+            box-shadow: $primary-box-shadow;
+          }
+        }
+      }
+    }
+
+    .articles-feed-list {
+      .articles-feed-list-inner {
+        .articles-feed-item {
+          display: block;
+
+          &:not(:last-child) {
+            margin-bottom: 20px;
+          }
+
+          .featured-image {
+            height: 180px;
+            overflow: hidden;
+            border-top-left-radius: 18px;
+            border-top-right-radius: 18px;
+
+            img {
+              display: block;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+
+          .featured-content {
+            position: relative;
+            padding: 25px;
+            border-radius: 18px;
+            background: $white;
+            margin-top: -40px;
+            z-index: 1;
+
+            h4,
+            p {
+              margin-bottom: 10px;
+            }
+
+            h4 {
+              font-family: $font-alt;
+              font-size: 1rem;
+              font-weight: 600;
+              color: $dark-text;
+            }
+
+            .media-flex-center {
+              .flex-meta {
+                span {
+                  font-size: 0.8rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.is-dark {
+  .lifestyle-dashboard-v4 {
+    .illustration-header-2 {
+      background: $dark-sidebar;
+      box-shadow: none;
+    }
+
+    .writing-stats {
+      .writing-stat {
+        @include vuero-card--dark();
+      }
+    }
+
+    .updates,
+    .featured-authors {
+      @include vuero-card--dark();
+    }
+
+    .articles-feed {
+      background: lighten($dark-sidebar, 8%);
+
+      .articles-feed-subheader {
+        .selector {
+          .button {
+            &.is-selected {
+              background: $accent !important;
+              border-color: $accent !important;
+              box-shadow: $accent-box-shadow !important;
+              color: $white !important;
+            }
+          }
+        }
+      }
+
+      .articles-feed-list {
+        .articles-feed-list-inner {
+          .articles-feed-item {
+            .featured-content {
+              background: $dark-sidebar;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .lifestyle-dashboard-v4 {
+    .illustration-header-2 {
+      flex-direction: column;
+      text-align: center;
+
+      .header-image {
+        height: auto;
+        width: 100%;
+
+        img {
+          position: relative;
+          width: 100%;
+          max-width: 260px;
+          margin: 0 auto;
+          top: 0;
+          left: 0;
+          margin-top: -34px;
+        }
+      }
+
+      .header-meta {
+        padding: 20px;
+
+        > p {
+          max-width: 280px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+    }
+
+    .writing-stats {
+      .writing-stat {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .lifestyle-dashboard-v4 {
+    .articles-feed {
+      .articles-feed-list {
+        .articles-feed-list-inner {
+          display: flex;
+          flex-wrap: wrap;
+          margin-left: -12px;
+          margin-right: -12px;
+
+          .articles-feed-item {
+            width: calc(50% - 24px);
+            margin: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .lifestyle-dashboard-v4 {
+    .updates {
+      .updates-list {
+        .update-item {
+          > span {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .articles-feed {
+      padding: 20px;
+    }
+  }
+}
+</style>

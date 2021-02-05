@@ -16,7 +16,7 @@
     "vue"
   ],
   "[vue]": {
-    "editor.formatOnSave": true
+    "editor.formatOnSave": false
   },
   "[sass]": {
     "editor.formatOnSave": false

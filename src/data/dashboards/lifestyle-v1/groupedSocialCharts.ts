@@ -3,7 +3,7 @@ import { themeColors } from '/@src/composition/state/themeColors'
 export const creativityRadialOptions = {
   series: [31],
   chart: {
-    height: 80,
+    height: 100,
     type: 'radialBar',
     offsetY: -10,
     toolbar: {
@@ -27,14 +27,14 @@ export const creativityRadialOptions = {
 export const engagmentRadialOptions = {
   series: [53],
   chart: {
-    height: 80,
+    height: 100,
     type: 'radialBar',
     offsetY: -10,
     toolbar: {
       show: false,
     },
   },
-  colors: [themeColors.orange],
+  colors: [themeColors.primary],
   plotOptions: {
     radialBar: {
       hollow: {
@@ -51,7 +51,7 @@ export const engagmentRadialOptions = {
 export const popularityRadialOptions = {
   series: [84],
   chart: {
-    height: 80,
+    height: 100,
     type: 'radialBar',
     offsetY: -10,
     toolbar: {

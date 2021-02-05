@@ -4,7 +4,7 @@ import * as formatters from '/@src/utils/apex-formatters'
 export const influenceChartOptions = {
   series: [65],
   chart: {
-    height: 160,
+    height: 170,
     type: 'radialBar',
     offsetX: -15,
     offsetY: -10,
@@ -12,7 +12,7 @@ export const influenceChartOptions = {
       show: false,
     },
   },
-  colors: [themeColors.info, themeColors.secondary],
+  colors: [themeColors.yellow, themeColors.secondary],
   plotOptions: {
     radialBar: {
       startAngle: -135,

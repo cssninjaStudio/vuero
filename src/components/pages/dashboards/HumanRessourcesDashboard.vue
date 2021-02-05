@@ -1,0 +1,756 @@
+<script setup lang="ts">
+import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
+</script>
+
+<template>
+  <!--Business Dashboard V3-->
+  <div class="business-dashboard hr-dashboard">
+    <div class="columns">
+      <div class="column is-8">
+        <div class="columns is-multiline">
+          <!--Header-->
+          <div class="column is-12">
+            <div class="block-header">
+              <!--left-->
+              <div class="left">
+                <div class="current-user">
+                  <V-Avatar
+                    size="medium"
+                    picture="/images/avatars/photos/8.jpg"
+                    squared
+                  />
+                  <h3>Welcome back, Erik.</h3>
+                </div>
+              </div>
+
+              <!--Center-->
+              <div class="center">
+                <h4 class="block-heading">New Rookies</h4>
+                <p class="block-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praeclarae mortes.
+                </p>
+                <div class="candidates">
+                  <V-Avatar picture="/images/avatars/photos/13.jpg" squared />
+                  <V-Avatar picture="/images/avatars/photos/32.jpg" squared />
+                  <V-Avatar picture="/images/avatars/photos/9.jpg" squared />
+                  <button>
+                    <i class="iconify" data-icon="feather:plus"></i>
+                  </button>
+                </div>
+              </div>
+
+              <!--Right-->
+              <div class="right">
+                <h4 class="block-heading">Job Feed</h4>
+                <p class="block-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praeclarae mortes.
+                </p>
+
+                <V-Button bold fullwidth dark-outlined>Manage Jobs</V-Button>
+              </div>
+            </div>
+          </div>
+
+          <!--Selector-->
+          <div class="column is-12">
+            <div class="feed-settings">
+              <h3 class="dark-inverted">Manage feed settings</h3>
+              <div class="buttons">
+                <button class="button is-dark-outlined">All</button>
+                <button class="button is-selected is-dark-outlined">
+                  Candidates
+                </button>
+                <button class="button is-dark-outlined">Companies</button>
+              </div>
+            </div>
+          </div>
+
+          <!--Side Text-->
+          <div class="column is-4">
+            <div class="side-text">
+              <h3 class="dark-inverted">More Details</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Perge
+                porro; Oratio me istius philosophi non offendit; Duo Reges:
+                constructio interrete.
+              </p>
+              <a class="action-link">Read More</a>
+            </div>
+          </div>
+
+          <!--Incoming-->
+          <div class="column is-7 is-offset-1">
+            <div class="incoming">
+              <div class="flex-table">
+                <!--Table header-->
+                <div class="flex-table-header">
+                  <span class="is-grow-lg">Type</span>
+                  <span>Count</span>
+                  <span>Status</span>
+                  <span class="cell-end">Actions</span>
+                </div>
+
+                <!--Table item-->
+                <div class="flex-table-item">
+                  <div class="flex-table-cell is-media is-grow-lg" data-th="">
+                    <V-IconBox color="green">
+                      <i class="lnil lnil-envelope-alt"></i>
+                    </V-IconBox>
+                    <div>
+                      <span class="item-name dark-inverted">Messages</span>
+                      <span class="item-meta">
+                        <span>Inbox messages</span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="flex-table-cell cell-center" data-th="Count">
+                    <span class="light-text">5</span>
+                  </div>
+                  <div class="flex-table-cell" data-th="Status">
+                    <V-Tag rounded color="success" label="New" />
+                  </div>
+                  <div class="flex-table-cell cell-end" data-th="Actions">
+                    <a class="action-link is-pushed-mobile">Open</a>
+                  </div>
+                </div>
+
+                <!--Table item-->
+                <div class="flex-table-item">
+                  <div class="flex-table-cell is-media is-grow-lg" data-th="">
+                    <V-IconBox color="orange">
+                      <i class="lnil lnil-checkmark-circle"></i>
+                    </V-IconBox>
+                    <div>
+                      <span class="item-name dark-inverted">Tasks</span>
+                      <span class="item-meta">
+                        <span>Pending tasks</span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="flex-table-cell cell-center" data-th="Count">
+                    <span class="light-text">3</span>
+                  </div>
+                  <div class="flex-table-cell" data-th="Status">
+                    <V-Tag rounded label="Pending" />
+                  </div>
+                  <div class="flex-table-cell cell-end" data-th="Actions">
+                    <a class="action-link is-pushed-mobile">Open</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Rookies-->
+          <div class="column is-12">
+            <div class="recent-rookies">
+              <div class="recent-rookies-header">
+                <h3 class="dark-inverted">Recent Rookies</h3>
+                <a class="action-link">View All</a>
+              </div>
+
+              <div class="columns user-grid user-grid-v4">
+                <!--Rookie-->
+                <div class="column is-4">
+                  <div class="grid-item">
+                    <UserCardDropdown />
+                    <V-Avatar
+                      picture="/images/avatars/photos/13.jpg"
+                      badge="/images/icons/stacks/illustrator.svg"
+                      size="large"
+                    />
+                    <h3 class="dark-inverted">Tara Svenson</h3>
+                    <p>UI/UX Designer</p>
+                    <div class="button-wrap has-text-centered">
+                      <V-Button color="primary" raised>Hire</V-Button>
+                    </div>
+                  </div>
+                </div>
+                <!--Rookie-->
+                <div class="column is-4">
+                  <div class="grid-item">
+                    <UserCardDropdown />
+                    <V-Avatar
+                      picture="/images/avatars/photos/37.jpg"
+                      badge="/images/icons/flags/france.svg"
+                      size="large"
+                    />
+                    <h3 class="dark-inverted">Helmut Fritz</h3>
+                    <p>Product Manager</p>
+                    <div class="button-wrap has-text-centered">
+                      <V-Button dark-outlined bold>Assess</V-Button>
+                    </div>
+                  </div>
+                </div>
+                <!--Rookie-->
+                <div class="column is-4">
+                  <div class="grid-item">
+                    <UserCardDropdown />
+                    <V-Avatar
+                      picture="/images/avatars/photos/25.jpg"
+                      badge="/images/icons/stacks/js.svg"
+                      size="large"
+                    />
+                    <h3 class="dark-inverted">Melany Wallace</h3>
+                    <p>Web Developer</p>
+                    <div class="button-wrap has-text-centered">
+                      <V-Button dark-outlined bold>Assess</V-Button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="column is-4">
+        <!--Widget-->
+        <UIWidget class="search-widget">
+          <template #body>
+            <div class="field">
+              <div class="control">
+                <input type="text" class="input" placeholder="Search..." />
+                <button class="searcv-button">
+                  <i class="iconify" data-icon="feather:search"></i>
+                </button>
+              </div>
+            </div>
+          </template>
+        </UIWidget>
+
+        <!--Widget-->
+        <ListWidgetTabbed
+          title="Todo"
+          :labels="['All', 'Mine']"
+          class="list-widget-v2"
+        >
+          <template #tab1>
+            <listWidgetTodoList :todos="todoList3" />
+          </template>
+          <template #tab2>
+            <listWidgetTodoList :todos="todoList4" />
+          </template>
+        </ListWidgetTabbed>
+
+        <!--Widget-->
+        <UIWidget class="picker-widget">
+          <template #header>
+            <div class="widget-toolbar">
+              <div class="left">
+                <a class="action-icon">
+                  <i class="iconify" data-icon="feather:chevron-left"></i>
+                </a>
+              </div>
+              <div class="center">
+                <h3>October 2020</h3>
+              </div>
+              <div class="right">
+                <a class="action-icon">
+                  <i class="iconify" data-icon="feather:chevron-right"></i>
+                </a>
+              </div>
+            </div>
+          </template>
+          <template #body>
+            <table class="calendar">
+              <thead>
+                <tr>
+                  <td>Mon</td>
+                  <td>Tue</td>
+                  <td>Wed</td>
+                  <td>Thu</td>
+                  <td>Fri</td>
+                  <td>Sat</td>
+                  <td>Sun</td>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td class="prev-month">29</td>
+                  <td class="prev-month">30</td>
+                  <td class="prev-month">31</td>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>3</td>
+                  <td>4</td>
+                </tr>
+
+                <tr>
+                  <td>5</td>
+                  <td>6</td>
+                  <td>7</td>
+                  <td>8</td>
+                  <td>9</td>
+                  <td>10</td>
+                  <td>11</td>
+                </tr>
+
+                <tr>
+                  <td>12</td>
+                  <td>13</td>
+                  <td>14</td>
+                  <td>15</td>
+                  <td>16</td>
+                  <td>17</td>
+                  <td class="current-day">18</td>
+                </tr>
+
+                <tr>
+                  <td>19</td>
+                  <td>20</td>
+                  <td>21</td>
+                  <td>22</td>
+                  <td>23</td>
+                  <td>24</td>
+                  <td>25</td>
+                </tr>
+
+                <tr>
+                  <td>26</td>
+                  <td>27</td>
+                  <td>28</td>
+                  <td>29</td>
+                  <td>30</td>
+                  <td>31</td>
+                  <td class="next-month">1</td>
+                </tr>
+              </tbody>
+            </table>
+          </template>
+        </UIWidget>
+      </div>
+    </div>
+  </div>
+</template>
+
+<style lang="scss">
+@import '../../../assets/scss/abstracts/_variables.scss';
+@import '../../../assets/scss/abstracts/_mixins.scss';
+@import '../../../assets/scss/pages/generic/_widgets-lists.scss';
+@import '../../../assets/scss/pages/dashboards/_business.scss';
+
+.hr-dashboard {
+  .block-header {
+    display: flex;
+    border-radius: 16px;
+    padding: 50px;
+    background: $primary;
+    font-family: $font;
+    box-shadow: $primary-box-shadow;
+
+    .left,
+    .right {
+      width: 30%;
+    }
+
+    .center {
+      display: flex;
+      flex-direction: column;
+      width: 40%;
+      padding-right: 30px;
+      margin-right: 30px;
+      border-right: 1px solid lighten($primary, 10%);
+
+      .block-text {
+        margin-bottom: 16px;
+      }
+
+      .candidates {
+        margin-top: auto;
+
+        > .v-avatar {
+          margin-right: 10px;
+        }
+
+        button {
+          height: 40px;
+          width: 40px;
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 10px;
+          background: $white;
+          color: $light-text;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          transition: all 0.3s;
+
+          svg {
+            height: 18px;
+            width: 18px;
+          }
+        }
+      }
+    }
+
+    .left {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .current-user {
+        .v-avatar {
+          margin-bottom: 1rem;
+        }
+
+        h3 {
+          font-family: $font-alt;
+          font-weight: 700;
+          font-size: 1.8rem;
+          color: $white;
+          line-height: 1.2;
+        }
+      }
+    }
+
+    .right {
+      display: flex;
+      flex-direction: column;
+
+      .button {
+        margin-top: auto;
+      }
+    }
+
+    .block-heading {
+      font-family: $font-alt;
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: $white;
+      margin-bottom: 4px;
+    }
+
+    .block-text {
+      font-family: $font;
+      font-size: 0.9rem;
+      color: $white;
+      margin-bottom: 16px;
+    }
+
+    .header-meta {
+      margin-left: 0;
+      padding-right: 30px;
+
+      h3 {
+        color: $smoke-white;
+        font-family: $font-alt;
+        font-weight: 700;
+        font-size: 1.3rem;
+        max-width: 280px;
+      }
+
+      p {
+        font-weight: 400;
+        color: darken($smoke-white, 2%);
+        margin-bottom: 16px;
+        max-width: 320px;
+      }
+
+      .action-link {
+        span {
+          font-size: 0.8rem;
+          text-transform: uppercase;
+          margin-right: 6px;
+        }
+
+        i {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .feed-settings {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+
+    h3 {
+      font-family: $font-alt;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: $dark-text;
+    }
+
+    .button {
+      font-size: 0.8rem;
+      border-radius: 8px;
+      margin-right: 4px;
+
+      &.is-selected {
+        background: $primary;
+        color: $white;
+        border-color: $primary;
+        box-shadow: $primary-box-shadow;
+      }
+    }
+  }
+
+  .side-text {
+    h3 {
+      font-family: $font-alt;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: $dark-text;
+      margin-bottom: 8px;
+    }
+
+    p {
+      font-size: 0.95rem;
+      margin-bottom: 8px;
+    }
+
+    .action-link {
+      font-size: 0.9rem;
+    }
+  }
+
+  .recent-rookies {
+    .recent-rookies-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+
+      h3 {
+        font-family: $font-alt;
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: $dark-text;
+      }
+    }
+
+    .user-grid {
+      &.user-grid-v4 {
+        .grid-item {
+          @include vuero-l-card();
+        }
+      }
+    }
+  }
+}
+
+.user-grid {
+  .columns {
+    margin-left: -0.5rem !important;
+    margin-right: -0.5rem !important;
+    margin-top: -0.5rem !important;
+  }
+
+  .column {
+    padding: 0.5rem !important;
+  }
+
+  .grid-item {
+    position: relative;
+    @include vuero-s-card();
+
+    text-align: center;
+
+    &:hover {
+      .button-wrap {
+        > div {
+          a {
+            opacity: 1;
+            pointer-events: all;
+          }
+        }
+      }
+    }
+
+    .dropdown {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      text-align: left;
+    }
+
+    > .v-avatar {
+      display: block;
+      margin: 0 auto 4px auto;
+    }
+
+    h3 {
+      font-family: $font-alt;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: $dark-text;
+    }
+
+    p {
+      font-size: 0.85rem;
+    }
+
+    .button-wrap {
+      margin: 20px 0 0 0;
+
+      .v-button {
+        width: 100%;
+        max-width: 140px;
+        margin: 0 auto;
+      }
+
+      > div {
+        margin: 6px 0 0 0;
+
+        a {
+          opacity: 0;
+          pointer-events: none;
+          color: $light-text;
+          font-weight: 500;
+          font-size: 0.9rem;
+          transition: opacity 0.3s, color 0.3s;
+
+          &:hover {
+            color: $primary;
+          }
+        }
+      }
+    }
+  }
+}
+
+.is-dark {
+  .user-grid {
+    .grid-item {
+      @include vuero-card--dark();
+    }
+  }
+
+  .hr-dashboard {
+    .block-header {
+      background: $dark-sidebar;
+      box-shadow: none;
+
+      .center {
+        border-color: lighten($dark-sidebar, 10%);
+
+        .candidates {
+          button {
+            background: lighten($dark-sidebar, 10%);
+            border: 1px solid transparent;
+            transition: all 0.3s;
+
+            &:hover {
+              border-color: $accent;
+
+              svg {
+                color: $accent;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .feed-settings {
+      .button {
+        &.is-selected {
+          background: $accent !important;
+          border-color: $accent !important;
+          box-shadow: $accent-box-shadow !important;
+          color: $white !important;
+        }
+      }
+    }
+
+    .recent-rookies {
+      .user-grid {
+        &.user-grid-v4 {
+          .grid-item {
+            @include vuero-card--dark();
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .hr-dashboard {
+    .block-header {
+      flex-direction: column;
+      padding: 30px;
+
+      .left,
+      .center,
+      .right {
+        width: 100%;
+      }
+
+      .left {
+        justify-content: flex-start;
+        margin-bottom: 20px;
+      }
+
+      .center {
+        padding-right: 0;
+        margin-right: 0;
+        border-right: none;
+        margin-bottom: 20px;
+      }
+    }
+
+    .feed-settings {
+      flex-direction: column;
+
+      h3 {
+        margin-bottom: 16px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .hr-dashboard {
+    .block-header {
+      padding: 40px;
+    }
+
+    .side-text {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .hr-dashboard {
+    .block-header {
+      padding: 40px;
+
+      .left {
+        .current-user {
+          h3 {
+            font-size: 1.5rem;
+          }
+        }
+      }
+
+      .center {
+        .candidates {
+          .v-avatar {
+            &:nth-child(3) {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    .column {
+      &.is-7 {
+        &.is-offset-1 {
+          margin-left: 2% !important;
+          width: 64.33333% !important;
+        }
+      }
+    }
+  }
+}
+</style>
