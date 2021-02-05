@@ -24,7 +24,7 @@ export const customersChartOptions = {
       show: false,
     },
   },
-  colors: [themeColors.accent, themeColors.info, themeColors.orange],
+  colors: [themeColors.accent, themeColors.info, themeColors.primary],
   legend: {
     position: 'bottom',
     horizontalAlign: 'center',

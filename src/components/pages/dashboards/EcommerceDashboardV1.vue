@@ -19,6 +19,11 @@ import {
   groundShippingChartOptions,
   nextDayAirChartOptions,
 } from '/@src/data/dashboards/ecommerce/shippingCharts'
+import {
+  valueSingle,
+  optionsSingle,
+  flexRowsOrders,
+} from '/@src/data/dashboards/ecommerce/dashboardData'
 </script>
 
 <template>
@@ -367,46 +372,16 @@ import {
         <!--Header-->
         <div class="table-header">
           <h3 class="dark-inverted">Recent Orders</h3>
-          <div class="field">
-            <div class="control">
-              <div class="h-select">
-                <div class="select-box">
-                  <span>Last 30 days</span>
-                </div>
-                <div class="select-icon">
-                  <i class="iconify" data-icon="feather:chevron-down"></i>
-                </div>
-                <div class="select-drop has-slimscroll-sm">
-                  <div class="drop-inner">
-                    <div class="option-row">
-                      <input type="radio" name="instagram_period_select" />
-                      <div class="option-meta">
-                        <span>Last Week</span>
-                      </div>
-                    </div>
-                    <div class="option-row">
-                      <input type="radio" name="instagram_period_select" />
-                      <div class="option-meta">
-                        <span>Last 30 days</span>
-                      </div>
-                    </div>
-                    <div class="option-row">
-                      <input type="radio" name="instagram_period_select" />
-                      <div class="option-meta">
-                        <span>Last 60 days</span>
-                      </div>
-                    </div>
-                    <div class="option-row">
-                      <input type="radio" name="instagram_period_select" />
-                      <div class="option-meta">
-                        <span>Last 90 days</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <V-Field class="is-minimal-select">
+            <V-Control>
+              <Multiselect
+                v-model="valueSingle"
+                :options="optionsSingle"
+                placeholder="Select an option"
+                :max-height="145"
+              />
+            </V-Control>
+          </V-Field>
         </div>
 
         <div class="flex-table">
@@ -421,209 +396,7 @@ import {
           </div>
 
           <!--Table item-->
-          <div class="flex-table-item">
-            <div class="flex-table-cell is-media is-grow" data-th="">
-              <div class="v-avatar is-medium">
-                <img
-                  class="avatar is-squared"
-                  src="/images/avatars/photos/8.jpg"
-                  alt=""
-                  @error="
-                    $event.target.src = 'https://via.placeholder.com/150x150'
-                  "
-                />
-              </div>
-              <div>
-                <span class="item-name dark-inverted is-font-alt is-weight-600"
-                  >Erik K.</span
-                >
-                <span class="item-meta">
-                  <span>#158456</span>
-                </span>
-              </div>
-            </div>
-            <div class="flex-table-cell" data-th="Date">
-              <span class="light-text">Oct 31, 2020</span>
-            </div>
-            <div class="flex-table-cell" data-th="Amount">
-              <span class="dark-inverted is-weight-600">$863.42</span>
-            </div>
-            <div class="flex-table-cell" data-th="Status">
-              <span class="tag is-green is-rounded">Paid</span>
-            </div>
-            <div class="flex-table-cell" data-th="Tracking">
-              <a class="action-link is-pushed-mobile">TR-7295</a>
-            </div>
-            <div class="flex-table-cell cell-end" data-th="Actions">
-              <button class="button v-button is-dark-outlined is-pushed-mobile">
-                View Order
-              </button>
-            </div>
-          </div>
-
-          <!--Table item-->
-          <div class="flex-table-item">
-            <div class="flex-table-cell is-media is-grow" data-th="">
-              <div class="v-avatar is-medium">
-                <img
-                  class="avatar is-squared"
-                  src="/images/avatars/photos/22.jpg"
-                  alt=""
-                  @error="
-                    $event.target.src = 'https://via.placeholder.com/150x150'
-                  "
-                />
-              </div>
-              <div>
-                <span class="item-name dark-inverted is-font-alt is-weight-600"
-                  >Jimmy H.</span
-                >
-                <span class="item-meta">
-                  <span>#15893</span>
-                </span>
-              </div>
-            </div>
-            <div class="flex-table-cell" data-th="Date">
-              <span class="light-text">Oct 31, 2020</span>
-            </div>
-            <div class="flex-table-cell" data-th="Amount">
-              <span class="dark-inverted is-weight-600">$128.00</span>
-            </div>
-            <div class="flex-table-cell" data-th="Status">
-              <span class="tag is-green is-rounded">Paid</span>
-            </div>
-            <div class="flex-table-cell" data-th="Tracking">
-              <a class="action-link is-pushed-mobile">TR-6259</a>
-            </div>
-            <div class="flex-table-cell cell-end" data-th="Actions">
-              <button class="button v-button is-dark-outlined is-pushed-mobile">
-                View Order
-              </button>
-            </div>
-          </div>
-
-          <!--Table item-->
-          <div class="flex-table-item">
-            <div class="flex-table-cell is-media is-grow" data-th="">
-              <div class="v-avatar is-medium">
-                <img
-                  class="avatar is-squared"
-                  src="/images/avatars/photos/25.jpg"
-                  alt=""
-                  @error="
-                    $event.target.src = 'https://via.placeholder.com/150x150'
-                  "
-                />
-              </div>
-              <div>
-                <span class="item-name dark-inverted is-font-alt is-weight-600"
-                  >Melany W.</span
-                >
-                <span class="item-meta">
-                  <span>#155848</span>
-                </span>
-              </div>
-            </div>
-            <div class="flex-table-cell" data-th="Date">
-              <span class="light-text">Oct 31, 2020</span>
-            </div>
-            <div class="flex-table-cell" data-th="Amount">
-              <span class="dark-inverted is-weight-600">$236.79</span>
-            </div>
-            <div class="flex-table-cell" data-th="Status">
-              <span class="tag is-orange is-rounded">Pending</span>
-            </div>
-            <div class="flex-table-cell" data-th="Tracking">
-              <span class="light-text is-pushed-mobile">N/A</span>
-            </div>
-            <div class="flex-table-cell cell-end" data-th="Actions">
-              <button class="button v-button is-dark-outlined is-pushed-mobile">
-                View Order
-              </button>
-            </div>
-          </div>
-
-          <!--Table item-->
-          <div class="flex-table-item">
-            <div class="flex-table-cell is-media is-grow" data-th="">
-              <div class="v-avatar is-medium">
-                <img
-                  class="avatar is-squared"
-                  src="/images/avatars/photos/12.jpg"
-                  alt=""
-                  @error="
-                    $event.target.src = 'https://via.placeholder.com/150x150'
-                  "
-                />
-              </div>
-              <div>
-                <span class="item-name dark-inverted is-font-alt is-weight-600"
-                  >Joshua S.</span
-                >
-                <span class="item-meta">
-                  <span>#154736</span>
-                </span>
-              </div>
-            </div>
-            <div class="flex-table-cell" data-th="Date">
-              <span class="light-text">Oct 30, 2020</span>
-            </div>
-            <div class="flex-table-cell" data-th="Amount">
-              <span class="dark-inverted is-weight-600">$98.31</span>
-            </div>
-            <div class="flex-table-cell" data-th="Status">
-              <span class="tag is-green is-rounded">Paid</span>
-            </div>
-            <div class="flex-table-cell" data-th="Tracking">
-              <a class="action-link is-pushed-mobile">TR-48951</a>
-            </div>
-            <div class="flex-table-cell cell-end" data-th="Actions">
-              <button class="button v-button is-dark-outlined is-pushed-mobile">
-                View Order
-              </button>
-            </div>
-          </div>
-
-          <!--Table item-->
-          <div class="flex-table-item">
-            <div class="flex-table-cell is-media is-grow" data-th="">
-              <div class="v-avatar is-medium">
-                <img
-                  class="avatar is-squared"
-                  src="/images/avatars/photos/13.jpg"
-                  alt=""
-                  @error="
-                    $event.target.src = 'https://via.placeholder.com/150x150'
-                  "
-                />
-              </div>
-              <div>
-                <span class="item-name dark-inverted is-font-alt is-weight-600"
-                  >Tina C.</span
-                >
-                <span class="item-meta">
-                  <span>#158315</span>
-                </span>
-              </div>
-            </div>
-            <div class="flex-table-cell" data-th="Date">
-              <span class="light-text">Oct 30, 2020</span>
-            </div>
-            <div class="flex-table-cell" data-th="Amount">
-              <span class="dark-inverted is-weight-500">$112.00</span>
-            </div>
-            <div class="flex-table-cell" data-th="Status">
-              <span class="tag is-green is-rounded">Paid</span>
-            </div>
-            <div class="flex-table-cell" data-th="Tracking">
-              <a class="action-link is-pushed-mobile">TR-48555</a>
-            </div>
-            <div class="flex-table-cell cell-end" data-th="Actions">
-              <button class="button v-button is-dark-outlined is-pushed-mobile">
-                View Order
-              </button>
-            </div>
-          </div>
+          <V-FlexTableRowOrders :rows="flexRowsOrders" />
         </div>
       </div>
     </div>
@@ -635,100 +408,101 @@ import {
 @import '../../../assets/scss/abstracts/_mixins.scss';
 @import '../../../assets/scss/pages/generic/_widgets-stats.scss';
 
-/* ==========================================================================
-1. Ecommerce Dashboard V1
-========================================================================== */
+.ecommerce-dashboard-v1 {
+  .dashboard-header {
+    display: flex;
+    align-items: center;
+    font-family: $font;
+    margin-bottom: 30px;
 
-.ecommerce-dashboard {
-  &.ecommerce-dashboard-v1 {
-    .dashboard-header {
+    .start {
+      margin-left: 12px;
+
+      h3 {
+        font-family: $font-alt;
+        font-weight: 600;
+        font-size: 1.3rem;
+        color: $dark-text;
+      }
+    }
+
+    .end {
+      margin-left: auto;
+      display: flex;
+      justify-content: flex-end;
+
+      .button {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .dashboard-tile {
+    @include vuero-s-card();
+
+    font-family: $font;
+
+    .tile-head {
       display: flex;
       align-items: center;
-      font-family: $font;
-      margin-bottom: 30px;
+      justify-content: space-between;
 
-      .start {
-        margin-left: 12px;
+      h3 {
+        font-family: $font-alt;
+        color: $light-text;
+        font-size: 1rem;
+        font-weight: 500;
+      }
+    }
 
-        h3 {
-          font-family: $font-alt;
+    .dashboard-tile-inner {
+      display: flex;
+      align-items: center;
+
+      .left {
+        margin-right: 20px;
+
+        span {
+          font-size: 1.5rem;
           font-weight: 600;
-          font-size: 1.3rem;
           color: $dark-text;
         }
       }
 
-      .end {
-        margin-left: auto;
-        display: flex;
-        justify-content: flex-end;
-
-        .button {
-          margin-left: 10px;
-        }
+      .right {
+        flex-grow: 2;
       }
     }
+  }
 
-    .dashboard-tile {
-      @include vuero-s-card();
+  .table-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: $font;
+    margin: 20px 0;
 
-      font-family: $font;
+    h3 {
+      font-family: $font-alt;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: $dark-text;
+    }
 
-      .tile-head {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+    .field {
+      z-index: 5;
+      min-width: 135px;
 
-        h3 {
-          font-family: $font-alt;
-          color: $light-text;
-          font-size: 1rem;
-          font-weight: 500;
-        }
-      }
-
-      .dashboard-tile-inner {
-        display: flex;
-        align-items: center;
-
-        .left {
-          margin-right: 20px;
-
-          span {
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: $dark-text;
+      .multiselect {
+        .multiselect-input {
+          .multiselect-single-label {
+            color: $light-text;
           }
         }
 
-        .right {
-          flex-grow: 2;
-        }
-      }
-    }
-
-    .table-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      font-family: $font;
-      margin: 20px 0;
-
-      h3 {
-        font-family: $font-alt;
-        font-size: 1.1rem;
-        font-weight: 700;
-        color: $dark-text;
-      }
-
-      .h-select {
-        .select-box {
-          border: none;
-          background: none;
-
-          span {
-            font-size: 1.1rem;
-          }
+        .multiselect-options {
+          left: unset !important;
+          min-width: 180px;
         }
       }
     }
@@ -736,34 +510,26 @@ import {
 }
 
 .is-dark {
-  .ecommerce-dashboard {
-    &.ecommerce-dashboard-v1 {
-      .dashboard-tile {
-        @include vuero-card--dark();
-      }
+  .ecommerce-dashboard-v1 {
+    .dashboard-tile {
+      @include vuero-card--dark();
     }
   }
 }
 
-/* ==========================================================================
-2. Media Queries
-========================================================================== */
-
 @media only screen and (max-width: 767px) {
-  .ecommerce-dashboard {
-    &.ecommerce-dashboard-v1 {
-      .dashboard-header {
-        text-align: center;
-        flex-direction: column;
+  .ecommerce-dashboard-v1 {
+    .dashboard-header {
+      text-align: center;
+      flex-direction: column;
 
-        .start {
-          margin: 10px auto;
-        }
+      .start {
+        margin: 10px auto;
+      }
 
-        .end {
-          margin: 0;
-          justify-content: space-between;
-        }
+      .end {
+        margin: 0;
+        justify-content: space-between;
       }
     }
   }

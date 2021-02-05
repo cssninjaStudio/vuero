@@ -18,7 +18,7 @@ export const revenueChartsOptions = {
       show: false,
     },
   },
-  colors: [themeColors.accent],
+  colors: [themeColors.primary],
   dataLabels: {
     enabled: false,
   },
