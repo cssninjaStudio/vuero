@@ -2,6 +2,12 @@
 import type { TinySliderInstance } from 'tiny-slider/src/tiny-slider'
 import { tns } from 'tiny-slider/src/tiny-slider'
 import { ref, onMounted, onUnmounted } from 'vue'
+import {
+  foodPills,
+  restaurants,
+} from '/@src/data/dashboards/food-delivery/dashboardData'
+import { followersStats } from '/@src/data/widgets/ui/followers'
+import { iconList } from '/@src/data/widgets/ui/menuList'
 
 const activeSection = ref('cart')
 
@@ -50,6 +56,7 @@ onUnmounted(() => {
   }
 })
 </script>
+
 <template>
   <!--Food Delivery Dashboard-->
   <div class="food-delivery-dashboard">
@@ -93,257 +100,28 @@ onUnmounted(() => {
               <i class="fas fa-angle-right"></i>
             </div>
             <div ref="sliderElement" class="food-pills-inner pill-carousel">
-              <!--Pill-->
-              <div class="food-pill">
+              <!--Pills Loop-->
+              <div v-for="item in foodPills" :key="item.id" class="food-pill">
                 <div class="food-pill-icon">
-                  <img
-                    src="/images/illustrations/dashboards/food/icon-1.svg"
-                    alt=""
-                  />
+                  <img :src="item.icon" alt="" />
                 </div>
-                <span>All</span>
-              </div>
-              <!--Pill-->
-              <div class="food-pill">
-                <div class="food-pill-icon">
-                  <img
-                    src="/images/illustrations/dashboards/food/icon-2.svg"
-                    alt=""
-                  />
-                </div>
-                <span>Pizza</span>
-              </div>
-              <!--Pill-->
-              <div class="food-pill">
-                <div class="food-pill-icon">
-                  <img
-                    src="/images/illustrations/dashboards/food/icon-3.svg"
-                    alt=""
-                  />
-                </div>
-                <span>Asian</span>
-              </div>
-              <!--Pill-->
-              <div class="food-pill">
-                <div class="food-pill-icon">
-                  <img
-                    src="/images/illustrations/dashboards/food/icon-4.svg"
-                    alt=""
-                  />
-                </div>
-                <span>Fast</span>
-              </div>
-              <!--Pill-->
-              <div class="food-pill">
-                <div class="food-pill-icon">
-                  <img
-                    src="/images/illustrations/dashboards/food/icon-5.svg"
-                    alt=""
-                  />
-                </div>
-                <span>Grills</span>
-              </div>
-              <!--Pill-->
-              <div class="food-pill">
-                <div class="food-pill-icon">
-                  <img
-                    src="/images/illustrations/dashboards/food/icon-6.svg"
-                    alt=""
-                  />
-                </div>
-                <span>Cakes</span>
-              </div>
-              <!--Pill-->
-              <div class="food-pill">
-                <div class="food-pill-icon">
-                  <img
-                    src="/images/illustrations/dashboards/food/icon-7.svg"
-                    alt=""
-                  />
-                </div>
-                <span>Thai</span>
-              </div>
-              <!--Pill-->
-              <div class="food-pill">
-                <div class="food-pill-icon">
-                  <img
-                    src="/images/illustrations/dashboards/food/icon-8.svg"
-                    alt=""
-                  />
-                </div>
-                <span>Sushi</span>
-              </div>
-              <!--Pill-->
-              <div class="food-pill">
-                <div class="food-pill-icon">
-                  <img
-                    src="/images/illustrations/dashboards/food/icon-9.svg"
-                    alt=""
-                  />
-                </div>
-                <span>Fruits</span>
-              </div>
-              <!--Pill-->
-              <div class="food-pill">
-                <div class="food-pill-icon">
-                  <img
-                    src="/images/illustrations/dashboards/food/icon-10.svg"
-                    alt=""
-                  />
-                </div>
-                <span>Veggie</span>
-              </div>
-              <!--Pill-->
-              <div class="food-pill">
-                <div class="food-pill-icon">
-                  <img
-                    src="/images/illustrations/dashboards/food/icon-11.svg"
-                    alt=""
-                  />
-                </div>
-                <span>Brunch</span>
-              </div>
-              <!--Pill-->
-              <div class="food-pill">
-                <div class="food-pill-icon">
-                  <img
-                    src="/images/illustrations/dashboards/food/icon-12.svg"
-                    alt=""
-                  />
-                </div>
-                <span>Pasta</span>
-              </div>
-              <!--Pill-->
-              <div class="food-pill">
-                <div class="food-pill-icon">
-                  <img
-                    src="/images/illustrations/dashboards/food/icon-13.svg"
-                    alt=""
-                  />
-                </div>
-                <span>Fish</span>
-              </div>
-              <!--Pill-->
-              <div class="food-pill">
-                <div class="food-pill-icon">
-                  <img
-                    src="/images/illustrations/dashboards/food/icon-2.svg"
-                    alt=""
-                  />
-                </div>
-                <span>Pizza</span>
-              </div>
-              <!--Pill-->
-              <div class="food-pill">
-                <div class="food-pill-icon">
-                  <img
-                    src="/images/illustrations/dashboards/food/icon-3.svg"
-                    alt=""
-                  />
-                </div>
-                <span>Asian</span>
-              </div>
-              <!--Pill-->
-              <div class="food-pill">
-                <div class="food-pill-icon">
-                  <img
-                    src="/images/illustrations/dashboards/food/icon-4.svg"
-                    alt=""
-                  />
-                </div>
-                <span>Fast</span>
-              </div>
-              <!--Pill-->
-              <div class="food-pill">
-                <div class="food-pill-icon">
-                  <img
-                    src="/images/illustrations/dashboards/food/icon-5.svg"
-                    alt=""
-                  />
-                </div>
-                <span>Grills</span>
-              </div>
-              <!--Pill-->
-              <div class="food-pill">
-                <div class="food-pill-icon">
-                  <img
-                    src="/images/illustrations/dashboards/food/icon-6.svg"
-                    alt=""
-                  />
-                </div>
-                <span>Cakes</span>
-              </div>
-              <!--Pill-->
-              <div class="food-pill">
-                <div class="food-pill-icon">
-                  <img
-                    src="/images/illustrations/dashboards/food/icon-7.svg"
-                    alt=""
-                  />
-                </div>
-                <span>Thai</span>
-              </div>
-              <!--Pill-->
-              <div class="food-pill">
-                <div class="food-pill-icon">
-                  <img
-                    src="/images/illustrations/dashboards/food/icon-9.svg"
-                    alt=""
-                  />
-                </div>
-                <span>Fruits</span>
-              </div>
-              <!--Pill-->
-              <div class="food-pill">
-                <div class="food-pill-icon">
-                  <img
-                    src="/images/illustrations/dashboards/food/icon-10.svg"
-                    alt=""
-                  />
-                </div>
-                <span>Veggie</span>
-              </div>
-              <!--Pill-->
-              <div class="food-pill">
-                <div class="food-pill-icon">
-                  <img
-                    src="/images/illustrations/dashboards/food/icon-11.svg"
-                    alt=""
-                  />
-                </div>
-                <span>Brunch</span>
-              </div>
-              <!--Pill-->
-              <div class="food-pill">
-                <div class="food-pill-icon">
-                  <img
-                    src="/images/illustrations/dashboards/food/icon-12.svg"
-                    alt=""
-                  />
-                </div>
-                <span>Pasta</span>
-              </div>
-              <!--Pill-->
-              <div class="food-pill">
-                <div class="food-pill-icon">
-                  <img
-                    src="/images/illustrations/dashboards/food/icon-13.svg"
-                    alt=""
-                  />
-                </div>
-                <span>Fish</span>
+                <span>{{ item.label }}</span>
               </div>
             </div>
           </div>
 
           <div class="restaurants-list">
             <div class="columns is-multiline">
-              <!--Restaurant-->
-              <div class="column is-4">
+              <!--Restaurants Loop-->
+              <div
+                v-for="restaurant in restaurants"
+                :key="restaurant.id"
+                class="column is-4"
+              >
                 <div class="restaurants-list-item">
                   <div class="image-container">
                     <img
-                      src="/images/photo/demo/food/1.jpg"
+                      :src="restaurant.picture"
                       alt=""
                       @error="
                         $event.target.src =
@@ -352,7 +130,7 @@ onUnmounted(() => {
                     />
                     <div class="timer">
                       <div>
-                        <span>40</span>
+                        <span>{{ restaurant.deliveryTime }}</span>
                         <span>Min</span>
                       </div>
                     </div>
@@ -360,7 +138,7 @@ onUnmounted(() => {
                   <div class="meta-container">
                     <div class="meta-icon">
                       <img
-                        src="/images/illustrations/dashboards/food/icon-2.svg"
+                        :src="restaurant.icon"
                         alt=""
                         @error="
                           $event.target.src =
@@ -369,693 +147,13 @@ onUnmounted(() => {
                       />
                     </div>
                     <div class="meta-content">
-                      <h4>Mario's Place</h4>
+                      <h4>{{ restaurant.name }}</h4>
                       <p>
-                        <span>Pizza</span>
+                        <span>{{ restaurant.category }}</span>
                         <i class="fas fa-circle"></i>
                         <span class="rating">
                           <i class="fas fa-star"></i>
-                          <span>4.9</span>
-                        </span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--Restaurant-->
-              <div class="column is-4">
-                <div class="restaurants-list-item">
-                  <div class="image-container">
-                    <img
-                      src="/images/photo/demo/food/2.jpg"
-                      alt=""
-                      @error="
-                        $event.target.src =
-                          'https://via.placeholder.com/800x450'
-                      "
-                    />
-                    <div class="timer">
-                      <div>
-                        <span>30</span>
-                        <span>Min</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="meta-container">
-                    <div class="meta-icon">
-                      <img
-                        src="/images/illustrations/dashboards/food/icon-4.svg"
-                        alt=""
-                      />
-                    </div>
-                    <div class="meta-content">
-                      <h4>Jimmy's Downtown</h4>
-                      <p>
-                        <span>Fast</span>
-                        <i class="fas fa-circle"></i>
-                        <span class="rating">
-                          <i class="fas fa-star"></i>
-                          <span>4.5</span>
-                        </span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--Restaurant-->
-              <div class="column is-4">
-                <div class="restaurants-list-item">
-                  <div class="image-container">
-                    <img
-                      src="/images/photo/demo/food/3.jpg"
-                      alt=""
-                      @error="
-                        $event.target.src =
-                          'https://via.placeholder.com/800x450'
-                      "
-                    />
-                    <div class="timer">
-                      <div>
-                        <span>45</span>
-                        <span>Min</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="meta-container">
-                    <div class="meta-icon">
-                      <img
-                        src="/images/illustrations/dashboards/food/icon-9.svg"
-                        alt=""
-                      />
-                    </div>
-                    <div class="meta-content">
-                      <h4>Fruity Loops</h4>
-                      <p>
-                        <span>Fruits</span>
-                        <i class="fas fa-circle"></i>
-                        <span class="rating">
-                          <i class="fas fa-star"></i>
-                          <span>4.8</span>
-                        </span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--Restaurant-->
-              <div class="column is-4">
-                <div class="restaurants-list-item">
-                  <div class="image-container">
-                    <img
-                      src="/images/photo/demo/food/4.jpg"
-                      alt=""
-                      @error="
-                        $event.target.src =
-                          'https://via.placeholder.com/800x450'
-                      "
-                    />
-                    <div class="timer">
-                      <div>
-                        <span>20</span>
-                        <span>Min</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="meta-container">
-                    <div class="meta-icon">
-                      <img
-                        src="/images/illustrations/dashboards/food/icon-10.svg"
-                        alt=""
-                      />
-                    </div>
-                    <div class="meta-content">
-                      <h4>The Green Heaven</h4>
-                      <p>
-                        <span>Veggie</span>
-                        <i class="fas fa-circle"></i>
-                        <span class="rating">
-                          <i class="fas fa-star"></i>
-                          <span>5.0</span>
-                        </span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--Restaurant-->
-              <div class="column is-4">
-                <div class="restaurants-list-item">
-                  <div class="image-container">
-                    <img
-                      src="/images/photo/demo/food/5.jpg"
-                      alt=""
-                      @error="
-                        $event.target.src =
-                          'https://via.placeholder.com/800x450'
-                      "
-                    />
-                    <div class="timer">
-                      <div>
-                        <span>30</span>
-                        <span>Min</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="meta-container">
-                    <div class="meta-icon">
-                      <img
-                        src="/images/illustrations/dashboards/food/icon-10.svg"
-                        alt=""
-                      />
-                    </div>
-                    <div class="meta-content">
-                      <h4>Salad Bar</h4>
-                      <p>
-                        <span>Veggie</span>
-                        <i class="fas fa-circle"></i>
-                        <span class="rating">
-                          <i class="fas fa-star"></i>
-                          <span>4.8</span>
-                        </span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--Restaurant-->
-              <div class="column is-4">
-                <div class="restaurants-list-item">
-                  <div class="image-container">
-                    <img
-                      src="/images/photo/demo/food/6.jpg"
-                      alt=""
-                      @error="
-                        $event.target.src =
-                          'https://via.placeholder.com/800x450'
-                      "
-                    />
-                    <div class="timer">
-                      <div>
-                        <span>50</span>
-                        <span>Min</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="meta-container">
-                    <div class="meta-icon">
-                      <img
-                        src="/images/illustrations/dashboards/food/icon-12.svg"
-                        alt=""
-                      />
-                    </div>
-                    <div class="meta-content">
-                      <h4>Little Italy</h4>
-                      <p>
-                        <span>Pasta</span>
-                        <i class="fas fa-circle"></i>
-                        <span class="rating">
-                          <i class="fas fa-star"></i>
-                          <span>1.1</span>
-                        </span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--Restaurant-->
-              <div class="column is-4">
-                <div class="restaurants-list-item">
-                  <div class="image-container">
-                    <img
-                      src="/images/photo/demo/food/7.jpg"
-                      alt=""
-                      @error="
-                        $event.target.src =
-                          'https://via.placeholder.com/800x450'
-                      "
-                    />
-                    <div class="timer">
-                      <div>
-                        <span>15</span>
-                        <span>Min</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="meta-container">
-                    <div class="meta-icon">
-                      <img
-                        src="/images/illustrations/dashboards/food/icon-7.svg"
-                        alt=""
-                      />
-                    </div>
-                    <div class="meta-content">
-                      <h4>The Noodle Bar</h4>
-                      <p>
-                        <span>Thai</span>
-                        <i class="fas fa-circle"></i>
-                        <span class="rating">
-                          <i class="fas fa-star"></i>
-                          <span>4.9</span>
-                        </span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--Restaurant-->
-              <div class="column is-4">
-                <div class="restaurants-list-item">
-                  <div class="image-container">
-                    <img
-                      src="/images/photo/demo/food/8.jpg"
-                      alt=""
-                      @error="
-                        $event.target.src =
-                          'https://via.placeholder.com/800x450'
-                      "
-                    />
-                    <div class="timer">
-                      <div>
-                        <span>20</span>
-                        <span>Min</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="meta-container">
-                    <div class="meta-icon">
-                      <img
-                        src="/images/illustrations/dashboards/food/icon-4.svg"
-                        alt=""
-                      />
-                    </div>
-                    <div class="meta-content">
-                      <h4>Jerry's Epic Burger</h4>
-                      <p>
-                        <span>Fast</span>
-                        <i class="fas fa-circle"></i>
-                        <span class="rating">
-                          <i class="fas fa-star"></i>
-                          <span>5.0</span>
-                        </span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--Restaurant-->
-              <div class="column is-4">
-                <div class="restaurants-list-item">
-                  <div class="image-container">
-                    <img
-                      src="/images/photo/demo/food/9.jpg"
-                      alt=""
-                      @error="
-                        $event.target.src =
-                          'https://via.placeholder.com/800x450'
-                      "
-                    />
-                    <div class="timer">
-                      <div>
-                        <span>55</span>
-                        <span>Min</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="meta-container">
-                    <div class="meta-icon">
-                      <img
-                        src="/images/illustrations/dashboards/food/icon-13.svg"
-                        alt=""
-                      />
-                    </div>
-                    <div class="meta-content">
-                      <h4>Meals From The Sea</h4>
-                      <p>
-                        <span>Fish</span>
-                        <i class="fas fa-circle"></i>
-                        <span class="rating">
-                          <i class="fas fa-star"></i>
-                          <span>4.7</span>
-                        </span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--Restaurant-->
-              <div class="column is-4">
-                <div class="restaurants-list-item">
-                  <div class="image-container">
-                    <img
-                      src="/images/photo/demo/food/10.jpg"
-                      alt=""
-                      @error="
-                        $event.target.src =
-                          'https://via.placeholder.com/800x450'
-                      "
-                    />
-                    <div class="timer">
-                      <div>
-                        <span>45</span>
-                        <span>Min</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="meta-container">
-                    <div class="meta-icon">
-                      <img
-                        src="/images/illustrations/dashboards/food/icon-6.svg"
-                        alt=""
-                      />
-                    </div>
-                    <div class="meta-content">
-                      <h4>Delicious Little Things</h4>
-                      <p>
-                        <span>Cakes</span>
-                        <i class="fas fa-circle"></i>
-                        <span class="rating">
-                          <i class="fas fa-star"></i>
-                          <span>5.0</span>
-                        </span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--Restaurant-->
-              <div class="column is-4">
-                <div class="restaurants-list-item">
-                  <div class="image-container">
-                    <img
-                      src="/images/photo/demo/food/11.jpg"
-                      alt=""
-                      @error="
-                        $event.target.src =
-                          'https://via.placeholder.com/800x450'
-                      "
-                    />
-                    <div class="timer">
-                      <div>
-                        <span>15</span>
-                        <span>Min</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="meta-container">
-                    <div class="meta-icon">
-                      <img
-                        src="/images/illustrations/dashboards/food/icon-4.svg"
-                        alt=""
-                      />
-                    </div>
-                    <div class="meta-content">
-                      <h4>Pollos Hermanos</h4>
-                      <p>
-                        <span>Fast</span>
-                        <i class="fas fa-circle"></i>
-                        <span class="rating">
-                          <i class="fas fa-star"></i>
-                          <span>5.0</span>
-                        </span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--Restaurant-->
-              <div class="column is-4">
-                <div class="restaurants-list-item">
-                  <div class="image-container">
-                    <img
-                      src="/images/photo/demo/food/12.jpg"
-                      alt=""
-                      @error="
-                        $event.target.src =
-                          'https://via.placeholder.com/800x450'
-                      "
-                    />
-                    <div class="timer">
-                      <div>
-                        <span>30</span>
-                        <span>Min</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="meta-container">
-                    <div class="meta-icon">
-                      <img
-                        src="/images/illustrations/dashboards/food/icon-6.svg"
-                        alt=""
-                      />
-                    </div>
-                    <div class="meta-content">
-                      <h4>Iced & Delicious</h4>
-                      <p>
-                        <span>Cakes</span>
-                        <i class="fas fa-circle"></i>
-                        <span class="rating">
-                          <i class="fas fa-star"></i>
-                          <span>4.2</span>
-                        </span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--Restaurant-->
-              <div class="column is-4">
-                <div class="restaurants-list-item">
-                  <div class="image-container">
-                    <img
-                      src="/images/photo/demo/food/13.jpg"
-                      alt=""
-                      @error="
-                        $event.target.src =
-                          'https://via.placeholder.com/800x450'
-                      "
-                    />
-                    <div class="timer">
-                      <div>
-                        <span>30</span>
-                        <span>Min</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="meta-container">
-                    <div class="meta-icon">
-                      <img
-                        src="/images/illustrations/dashboards/food/icon-8.svg"
-                        alt=""
-                      />
-                    </div>
-                    <div class="meta-content">
-                      <h4>Osaka Sushi</h4>
-                      <p>
-                        <span>Sushi</span>
-                        <i class="fas fa-circle"></i>
-                        <span class="rating">
-                          <i class="fas fa-star"></i>
-                          <span>4.9</span>
-                        </span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--Restaurant-->
-              <div class="column is-4">
-                <div class="restaurants-list-item">
-                  <div class="image-container">
-                    <img
-                      src="/images/photo/demo/food/14.jpg"
-                      alt=""
-                      @error="
-                        $event.target.src =
-                          'https://via.placeholder.com/800x450'
-                      "
-                    />
-                    <div class="timer">
-                      <div>
-                        <span>10</span>
-                        <span>Min</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="meta-container">
-                    <div class="meta-icon">
-                      <img
-                        src="/images/illustrations/dashboards/food/icon-10.svg"
-                        alt=""
-                      />
-                    </div>
-                    <div class="meta-content">
-                      <h4>Quick Treats</h4>
-                      <p>
-                        <span>Veggie</span>
-                        <i class="fas fa-circle"></i>
-                        <span class="rating">
-                          <i class="fas fa-star"></i>
-                          <span>3.8</span>
-                        </span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--Restaurant-->
-              <div class="column is-4">
-                <div class="restaurants-list-item">
-                  <div class="image-container">
-                    <img
-                      src="/images/photo/demo/food/15.jpg"
-                      alt=""
-                      @error="
-                        $event.target.src =
-                          'https://via.placeholder.com/800x450'
-                      "
-                    />
-                    <div class="timer">
-                      <div>
-                        <span>30</span>
-                        <span>Min</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="meta-container">
-                    <div class="meta-icon">
-                      <img
-                        src="/images/illustrations/dashboards/food/icon-10.svg"
-                        alt=""
-                      />
-                    </div>
-                    <div class="meta-content">
-                      <h4>Sam' Dwich</h4>
-                      <p>
-                        <span>Veggie</span>
-                        <i class="fas fa-circle"></i>
-                        <span class="rating">
-                          <i class="fas fa-star"></i>
-                          <span>4.5</span>
-                        </span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--Restaurant-->
-              <div class="column is-4">
-                <div class="restaurants-list-item">
-                  <div class="image-container">
-                    <img
-                      src="/images/photo/demo/food/16.jpg"
-                      alt=""
-                      @error="
-                        $event.target.src =
-                          'https://via.placeholder.com/800x450'
-                      "
-                    />
-                    <div class="timer">
-                      <div>
-                        <span>45</span>
-                        <span>Min</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="meta-container">
-                    <div class="meta-icon">
-                      <img
-                        src="/images/illustrations/dashboards/food/icon-6.svg"
-                        alt=""
-                      />
-                    </div>
-                    <div class="meta-content">
-                      <h4>Sunchine Cookies</h4>
-                      <p>
-                        <span>Cakes</span>
-                        <i class="fas fa-circle"></i>
-                        <span class="rating">
-                          <i class="fas fa-star"></i>
-                          <span>4.9</span>
-                        </span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--Restaurant-->
-              <div class="column is-4">
-                <div class="restaurants-list-item">
-                  <div class="image-container">
-                    <img
-                      src="/images/photo/demo/food/17.jpg"
-                      alt=""
-                      @error="
-                        $event.target.src =
-                          'https://via.placeholder.com/800x450'
-                      "
-                    />
-                    <div class="timer">
-                      <div>
-                        <span>45</span>
-                        <span>Min</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="meta-container">
-                    <div class="meta-icon">
-                      <img
-                        src="/images/illustrations/dashboards/food/icon-4.svg"
-                        alt=""
-                      />
-                    </div>
-                    <div class="meta-content">
-                      <h4>O' Fried Chicken</h4>
-                      <p>
-                        <span>Fast</span>
-                        <i class="fas fa-circle"></i>
-                        <span class="rating">
-                          <i class="fas fa-star"></i>
-                          <span>1.0</span>
-                        </span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--Restaurant-->
-              <div class="column is-4">
-                <div class="restaurants-list-item">
-                  <div class="image-container">
-                    <img
-                      src="/images/photo/demo/food/18.jpg"
-                      alt=""
-                      @error="
-                        $event.target.src =
-                          'https://via.placeholder.com/800x450'
-                      "
-                    />
-                    <div class="timer">
-                      <div>
-                        <span>30</span>
-                        <span>Min</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="meta-container">
-                    <div class="meta-icon">
-                      <img
-                        src="/images/illustrations/dashboards/food/icon-7.svg"
-                        alt=""
-                      />
-                    </div>
-                    <div class="meta-content">
-                      <h4>Bangkok Woks</h4>
-                      <p>
-                        <span>Thai</span>
-                        <i class="fas fa-circle"></i>
-                        <span class="rating">
-                          <i class="fas fa-star"></i>
-                          <span>4.5</span>
+                          <span>{{ restaurant.rating }}</span>
                         </span>
                       </p>
                     </div>
@@ -1123,60 +221,41 @@ onUnmounted(() => {
               <span class="tag is-curved">0 items</span>
             </div>
           </div>
-          <div class="section-placeholder">
-            <div class="placeholder-content">
-              <img
-                src="/images/illustrations/dashboards/food/cart-placeholder.svg"
-                alt=""
-              />
-              <h3 class="dark-inverted">No Items</h3>
-              <p>Your cart is currently empty. Start adding products.</p>
-            </div>
-          </div>
+          <V-PlaceholderSection
+            image-light="/images/illustrations/dashboards/food/cart-placeholder.svg"
+            image-dark="/images/illustrations/dashboards/food/cart-placeholder.svg"
+            title="No Items"
+            subtitle="Your cart is currently empty. Start adding products."
+          />
           <div class="cart-items has-slimscroll is-hidden">
             <div class="cart-item">
-              <div class="v-avatar is-medium">
-                <img
-                  class="avatar is-squared"
-                  src="/images/photo/demo/food/1.jpg"
-                  alt=""
-                  @error="
-                    $event.target.src = 'https://via.placeholder.com/150x150'
-                  "
-                />
-              </div>
+              <V-Avatar
+                picture="/images/photo/demo/food/1.jpg"
+                size="medium"
+                squared
+              />
               <div class="meta">
                 <span class="text"> Double XL Burger </span>
                 <span class="price">$15.50 x 1</span>
               </div>
             </div>
             <div class="cart-item">
-              <div class="v-avatar is-medium">
-                <img
-                  class="avatar is-squared"
-                  src="/images/photo/demo/food/2.jpg"
-                  alt=""
-                  @error="
-                    $event.target.src = 'https://via.placeholder.com/150x150'
-                  "
-                />
-              </div>
+              <V-Avatar
+                picture="/images/photo/demo/food/2.jpg"
+                size="medium"
+                squared
+              />
               <div class="meta">
                 <span class="text"> Cherry Cupcakes </span>
                 <span class="price">$8.00 x 3</span>
               </div>
             </div>
             <div class="cart-item">
-              <div class="v-avatar is-medium">
-                <img
-                  class="avatar is-squared"
-                  src="/images/photo/demo/food/3.jpg"
-                  alt=""
-                  @error="
-                    $event.target.src = 'https://via.placeholder.com/150x150'
-                  "
-                />
-              </div>
+              <V-Avatar
+                picture="/images/photo/demo/food/3.jpg"
+                size="medium"
+                squared
+              />
               <div class="meta">
                 <span class="text"> Extra Fries </span>
                 <span class="price">$7.90 x 2</span>
@@ -1188,11 +267,9 @@ onUnmounted(() => {
               <span class="label">Total</span>
               <span>$0.00</span>
             </div>
-            <div
-              class="button v-button is-primary is-raised is-bold is-fullwidth"
+            <V-Button color="primary" raised bold fullwidth
+              >Start Checkout</V-Button
             >
-              Start Checkout
-            </div>
           </div>
         </div>
 
@@ -1200,168 +277,62 @@ onUnmounted(() => {
           class="side-section"
           :class="[activeSection === 'activity' && 'is-active']"
         >
-          <div class="widget followers-widget">
-            <div class="widget-toolbar">
-              <div class="left">
-                <h3 class="is-bigger">Followers</h3>
-              </div>
-              <div class="right">
-                <WidgetDropdown />
-              </div>
-            </div>
-            <div class="channels">
-              <div class="channel">
-                <div class="channel-icon">
-                  <i class="fab fa-facebook-f"></i>
-                </div>
-                <div class="channel-stats">
-                  <span>22K</span>
-                </div>
-              </div>
-              <div class="channel">
-                <div class="channel-icon">
-                  <i class="fab fa-twitter"></i>
-                </div>
-                <div class="channel-stats">
-                  <span>38K</span>
-                </div>
-              </div>
-              <div class="channel">
-                <div class="channel-icon">
-                  <i class="fab fa-instagram"></i>
-                </div>
-                <div class="channel-stats">
-                  <span>5K</span>
-                </div>
-              </div>
-            </div>
-          </div>
+          <UIWidget class="followers-widget">
+            <template #header>
+              <UIWidgetToolbarDropdown title="Followers" />
+            </template>
+            <template #body>
+              <UIWidgetFollowerStats :channels="followersStats" />
+            </template>
+          </UIWidget>
 
-          <div class="widget illustration-widget illustration-widget-v2">
-            <img
-              class="main"
-              src="/images/illustrations/dashboards/food/widget.svg"
-              alt=""
-            />
-            <h3>You unlocked 2 new Achievements</h3>
-            <p>Congrats, your efforts have been rewarded. Keep up like this!</p>
-          </div>
+          <IllustrationWidget
+            class="illustration-widget-v2"
+            title="You unlocked 2 new Achievements"
+            text="Congrats, your efforts have been rewarded. Keep up like this!"
+            picture="/images/illustrations/dashboards/food/widget.svg"
+          />
         </div>
 
         <div
           class="side-section"
           :class="[activeSection === 'address' && 'is-active']"
         >
-          <div class="widget text-widget">
-            <div class="widget-toolbar">
-              <div class="left">
-                <h3 class="is-bigger">Deliver to</h3>
+          <UIWidget class="text-widget">
+            <template #header>
+              <UIWidgetToolbarIcon title="Deliver to" icon="feather:map-pin" />
+            </template>
+            <template #body>
+              <div class="widget-content">
+                <p>Erik Kovalsky</p>
+                <p>38, Suite B2 Parkman Avenue</p>
+                <p>Los Angeles, CA</p>
               </div>
-              <div class="right">
-                <a class="action-link"> Edit </a>
-              </div>
-            </div>
-            <div class="widget-content">
-              <p>Erik Kovalsky</p>
-              <p>38, Suite B2 Parkman Avenue</p>
-              <p>Los Angeles, CA</p>
-            </div>
-          </div>
+            </template>
+          </UIWidget>
 
-          <div class="widget contact-widget is-reversed">
-            <div class="widget-content">
-              <div class="left">
-                <div class="v-avatar is-medium">
-                  <img
-                    class="avatar is-squared"
-                    src="/images/avatars/photos/8.jpg"
-                    alt=""
-                    data-user-popover="3"
-                    @error="
-                      $event.target.src = 'https://via.placeholder.com/150x150'
-                    "
-                  />
-                </div>
-              </div>
-              <div class="right">
-                <h3>Erik K.</h3>
-                <div class="company">
-                  <span>Vuero Ltd.</span>
-                  <p>Product Manager</p>
-                </div>
-                <div class="contact-info">
-                  <span>
-                    <i class="iconify" data-icon="feather:map-pin"></i>
-                    <span>Los Angeles, CA</span>
-                  </span>
-                  <span>
-                    <i class="iconify" data-icon="feather:phone"></i>
-                    <span>+1 444-5156</span>
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            <p class="email">erikkovalsky@huro.io</p>
-          </div>
+          <ContactWidget
+            picture="/images/avatars/photos/8.jpg"
+            username="Erik K."
+            email="erikkovalsky@vuero.io"
+            company="Vuero Ltd."
+            position="Product Manager"
+            location="Los Angeles, CA"
+            phone="+1 444-5156"
+            squared
+            reversed
+          />
         </div>
 
         <div
           class="side-section"
           :class="[activeSection === 'settings' && 'is-active']"
         >
-          <div class="widget icon-list-widget">
-            <div class="widget-toolbar">
-              <div class="left">
-                <h3 class="is-bigger">Settings</h3>
-              </div>
-              <div class="right">
-                <WidgetDropdown />
-              </div>
-            </div>
-            <div class="icon-list">
-              <div class="icon-list-item">
-                <div class="icon-wrap">
-                  <i class="iconify" data-icon="feather:circle"></i>
-                </div>
-                <div class="item-meta">
-                  <span>Global</span>
-                </div>
-              </div>
-              <div class="icon-list-item">
-                <div class="icon-wrap">
-                  <i class="iconify" data-icon="feather:user"></i>
-                </div>
-                <div class="item-meta">
-                  <span>Profile</span>
-                </div>
-              </div>
-              <div class="icon-list-item">
-                <div class="icon-wrap">
-                  <i class="iconify" data-icon="feather:credit-card"></i>
-                </div>
-                <div class="item-meta">
-                  <span>Payments</span>
-                </div>
-              </div>
-              <div class="icon-list-item">
-                <div class="icon-wrap">
-                  <i class="iconify" data-icon="feather:clock"></i>
-                </div>
-                <div class="item-meta">
-                  <span>History</span>
-                </div>
-              </div>
-              <div class="icon-list-item">
-                <div class="icon-wrap">
-                  <i class="iconify" data-icon="feather:file"></i>
-                </div>
-                <div class="item-meta">
-                  <span>Invoices</span>
-                </div>
-              </div>
-            </div>
-          </div>
+          <UIWidget class="icon-list-widget">
+            <template #body>
+              <UIWidgetIconList :list="iconList" />
+            </template>
+          </UIWidget>
         </div>
       </div>
     </div>
@@ -1475,8 +446,7 @@ onUnmounted(() => {
 
         .food-pills-inner {
           .food-pill {
-            // display: flex;
-            // flex-direction: column;
+            outline: none;
             text-align: center;
             width: 80px;
             max-width: 80px;
@@ -1548,6 +518,8 @@ onUnmounted(() => {
         }
 
         .slick-custom {
+          outline: none !important;
+
           &.is-prev {
             right: 30px;
 
