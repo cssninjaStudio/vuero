@@ -65,12 +65,6 @@ const paginatedLink = (page = 1) => {
     page: _page <= 1 ? undefined : _page,
   }
 
-  console.log('paginatedLink', page, {
-    name: route.name,
-    params: route.params,
-    query,
-  })
-
   return {
     name: route.name,
     params: route.params,

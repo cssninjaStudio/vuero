@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, ref, defineProps } from 'vue'
+import { computed, ref } from 'vue'
 
 const data = [
   {
@@ -238,13 +238,15 @@ const filteredData = computed(() => {
 <template>
   <div>
     <div class="list-view-toolbar">
-      <V-Control iconed iconify="feather:search">
-        <input
-          v-model="filters"
-          class="input custom-text-filter"
-          placeholder="Search..."
-        />
-      </V-Control>
+      <V-Field>
+        <V-Control iconed iconify="feather:search">
+          <input
+            v-model="filters"
+            class="input custom-text-filter"
+            placeholder="Search..."
+          />
+        </V-Control>
+      </V-Field>
 
       <div class="list-info">
         <span v-if="filteredData.length === 1">1 record found</span>
@@ -352,7 +354,13 @@ const filteredData = computed(() => {
         </div>
       </div>
 
-      <V-FlexPagination v-if="filteredData.length > 5" />
+      <V-FlexPagination
+        v-if="filteredData.length > 5"
+        :item-per-page="10"
+        :total-items="873"
+        :current-page="42"
+        :max-links-displayed="5"
+      />
     </div>
   </div>
 </template>

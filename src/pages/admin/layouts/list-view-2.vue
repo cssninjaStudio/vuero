@@ -1,14 +1,10 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
-import { ref } from 'vue'
 
 import {
   activeSidebar,
   toggleSidebar,
 } from '/@src/composition/state/activeSidebarState'
-
-type TabId = 'active' | 'inactive'
-const activeTab = ref<TabId>('active')
 
 useHead({
   title: 'List View 2 - Admin - Vuero',
@@ -44,35 +40,6 @@ useHead({
       <Toolbar />
     </div>
 
-    <div class="list-view-toolbar">
-      <div class="control has-icon">
-        <input
-          class="input custom-text-filter"
-          placeholder="Search..."
-          data-filter-target=".list-view-item"
-        />
-        <div class="form-icon">
-          <i class="iconify" data-icon="feather:search"></i>
-        </div>
-      </div>
-
-      <div class="tabs-inner">
-        <div class="tabs">
-          <ul>
-            <li :class="[activeTab === 'active' && 'is-active']">
-              <a @click="activeTab = 'active'"><span>Active</span></a>
-            </li>
-            <li :class="[activeTab === 'inactive' && 'is-active']">
-              <a @click="activeTab = 'inactive'"><span>Inactive</span></a>
-            </li>
-            <li class="tab-naver"></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="page-content-inner">
-      <ViewListV2 :active-tab="activeTab" />
-    </div>
+    <ViewListV2 />
   </div>
 </template>

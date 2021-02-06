@@ -79,7 +79,7 @@ defineProps({
       elevated && 'is-elevated',
       loading && 'is-loading',
       color && `is-${color}`,
-      color && light && 'is-light',
+      light && 'is-light',
     ]"
     :disabled="disabled"
   >
