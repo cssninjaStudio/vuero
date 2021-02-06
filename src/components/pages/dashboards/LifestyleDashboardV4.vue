@@ -56,7 +56,7 @@
               <div class="featured-authors-list">
                 <!--Item-->
                 <div class="featured-authors-item">
-                  <V-Block title="Alice C." subtitle="Software Engineer">
+                  <V-Block title="Alice C." subtitle="Software Engineer" center>
                     <template #icon>
                       <V-Avatar
                         picture="/images/avatars/photos/7.jpg"
@@ -70,7 +70,7 @@
                 </div>
                 <!--Item-->
                 <div class="featured-authors-item">
-                  <V-Block title="Elizabeth F." subtitle="Web Developer">
+                  <V-Block title="Elizabeth F." subtitle="Web Developer" center>
                     <template #icon>
                       <V-Avatar
                         picture="/images/avatars/photos/21.jpg"
@@ -84,7 +84,7 @@
                 </div>
                 <!--Item-->
                 <div class="featured-authors-item">
-                  <V-Block title="Jonathan K." subtitle="UI/UX Designer">
+                  <V-Block title="Jonathan K." subtitle="UI/UX Designer" center>
                     <template #icon>
                       <V-Avatar
                         picture="/images/avatars/photos/32.jpg"
@@ -98,7 +98,11 @@
                 </div>
                 <!--Item-->
                 <div class="featured-authors-item">
-                  <V-Block title="Christie D." subtitle="Software Engineer">
+                  <V-Block
+                    title="Christie D."
+                    subtitle="Software Engineer"
+                    center
+                  >
                     <template #icon>
                       <V-Avatar
                         picture="/images/avatars/photos/38.jpg"

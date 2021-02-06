@@ -12,7 +12,7 @@ export const customerEngagementChartOptions = {
       show: false,
     },
   },
-  colors: [themeColors.info, themeColors.secondary],
+  colors: [themeColors.accent, themeColors.secondary],
   plotOptions: {
     radialBar: {
       startAngle: -135,

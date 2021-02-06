@@ -34,7 +34,7 @@ export const groundShippingChartOptions = {
       show: false,
     },
   },
-  colors: [themeColors.orange],
+  colors: [themeColors.primary],
   plotOptions: {
     radialBar: {
       hollow: {

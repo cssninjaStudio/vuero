@@ -73,7 +73,7 @@ export const escalatedChartOptions = {
       show: false,
     },
   },
-  colors: [themeColors.orange],
+  colors: [themeColors.primary],
   plotOptions: {
     radialBar: {
       startAngle: -90,
