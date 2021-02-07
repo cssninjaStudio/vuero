@@ -43,7 +43,7 @@ const conversations = [
   },
 ]
 
-const { dropdownElement, isOpen, open } = useDropdown()
+const { dropdownElement, isOpen, toggle } = useDropdown()
 const addConversationOpen = ref(false)
 const isLoading = ref(false)
 const selectedConversationId = ref(0)
@@ -525,7 +525,7 @@ watch(selectedConversationId, onConversationChanged)
                     class="dropdown dropdown-trigger is-up"
                   >
                     <div>
-                      <div class="button" aria-haspopup="true" @click="open">
+                      <div class="button" aria-haspopup="true" @click="toggle">
                         <i class="iconify" data-icon="feather:plus"></i>
                       </div>
                     </div>

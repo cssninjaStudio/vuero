@@ -33,13 +33,13 @@ const toggleSelection = () => {
 
 const {
   dropdownElement: dropdownElement1,
-  open: open1,
+  toggle: toggle1,
   isOpen: isOpen1,
 } = useDropdown()
 
 const {
   dropdownElement: dropdownElement2,
-  open: open2,
+  toggle: toggle2,
   isOpen: isOpen2,
 } = useDropdown()
 
@@ -88,7 +88,7 @@ useHead({
               class="dropdown inbox-dropdown dropdown-trigger is-right"
             >
               <div>
-                <button class="button" @click="open1">
+                <button class="button" @click="toggle1">
                   <span class="icon is-small">
                     <i class="iconify" data-icon="feather:more-vertical"></i>
                   </span>
@@ -331,7 +331,7 @@ useHead({
                 class="dropdown inbox-dropdown dropdown-trigger is-right"
               >
                 <div>
-                  <button class="button" @click="open2">
+                  <button class="button" @click="toggle2">
                     <span class="icon is-small">
                       <i class="iconify" data-icon="feather:more-vertical"></i>
                     </span>

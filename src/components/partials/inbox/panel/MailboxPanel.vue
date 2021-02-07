@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import useDropdown from '/@src/composition/use/useDropdown'
-const { dropdownElement, isOpen, open } = useDropdown()
+const { dropdownElement, isOpen, toggle } = useDropdown()
 </script>
 
 <template>
@@ -15,7 +15,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
         class="dropdown inbox-dropdown dropdown-trigger is-right"
       >
         <div>
-          <button class="button" @click="open">
+          <button class="button" @click="toggle">
             <span class="icon is-small">
               <i class="material-icons">keyboard_arrow_down</i>
             </span>

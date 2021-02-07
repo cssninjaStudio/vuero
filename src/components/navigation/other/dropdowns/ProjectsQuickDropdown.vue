@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import useDropdown from '/@src/composition/use/useDropdown'
-const { dropdownElement, isOpen, open } = useDropdown()
+const { dropdownElement, isOpen, toggle } = useDropdown()
 </script>
 
 <template>
@@ -9,7 +9,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
     :class="[isOpen && 'is-active']"
     class="dropdown project-dropdown dropdown-trigger is-spaced"
   >
-    <div class="v-avatar is-small" @click="open">
+    <div class="v-avatar is-small" @click="toggle">
       <span class="avatar is-fake is-h-green">
         <span>H</span>
       </span>

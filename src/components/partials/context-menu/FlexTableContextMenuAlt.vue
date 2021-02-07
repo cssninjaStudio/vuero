@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import useDropdown from '/@src/composition/use/useDropdown'
-const { dropdownElement, isOpen, open } = useDropdown()
+const { dropdownElement, isOpen, toggle } = useDropdown()
 </script>
 
 <template>
@@ -9,7 +9,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
     :class="[isOpen && 'is-active']"
     class="dropdown is-spaced is-dots is-right dropdown-trigger is-pushed-mobile"
   >
-    <div class="is-trigger" aria-haspopup="true" @click="open">
+    <div class="is-trigger" aria-haspopup="true" @click="toggle">
       <i class="iconify" data-icon="feather:more-vertical"></i>
     </div>
     <div class="dropdown-menu" role="menu">

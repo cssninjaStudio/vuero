@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import useDropdown from '/@src/composition/use/useDropdown'
-const { dropdownElement, isOpen, open } = useDropdown()
+const { dropdownElement, isOpen, toggle } = useDropdown()
 </script>
 
 <template>
@@ -14,7 +14,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
         class="button v-button is-rounded"
         aria-haspopup="true"
         aria-controls="dropdown-menu"
-        @click="open"
+        @click="toggle"
       >
         <span>Components</span>
         <span class="caret">

@@ -10,7 +10,7 @@ import {
 } from '/@src/composition/state/webappNavState'
 
 const route = useRoute()
-const { dropdownElement, isOpen, open } = useDropdown()
+const { dropdownElement, isOpen, toggle } = useDropdown()
 
 const otherLayoutLink = computed(() => {
   if (route.fullPath.startsWith('/admin')) {
@@ -136,7 +136,7 @@ watch(
             src="/images/avatars/photos/8.jpg"
             alt=""
             @error="$event.target.src = 'https://via.placeholder.com/150x150'"
-            @click="open"
+            @click="toggle"
           />
           <span class="status-indicator"></span>
 

@@ -2,7 +2,7 @@
 import { isDark } from '/@src/composition/state/darkModeState.ts'
 import useDropdown from '/@src/composition/use/useDropdown'
 
-const { dropdownElement, isOpen, open } = useDropdown()
+const { dropdownElement, isOpen, toggle } = useDropdown()
 </script>
 
 <template>
@@ -39,7 +39,7 @@ const { dropdownElement, isOpen, open } = useDropdown()
         :class="[isOpen && 'is-active']"
         class="dropdown is-spaced is-dots is-right dropdown-trigger"
       >
-        <div class="is-trigger" aria-haspopup="true" @click="open">
+        <div class="is-trigger" aria-haspopup="true" @click="toggle">
           <i class="iconify" data-icon="feather:bell"></i>
           <span class="new-indicator pulsate"></span>
         </div>

@@ -4,7 +4,7 @@ import useDropdown from '/@src/composition/use/useDropdown'
 import { isMobileSidebarOpen } from '/@src/composition/state/mobileSidebarState'
 import { useRoute } from 'vue-router'
 
-const { dropdownElement, isOpen, open } = useDropdown()
+const { dropdownElement, isOpen, toggle } = useDropdown()
 const route = useRoute()
 
 const otherLayoutLink = computed(() => {
@@ -49,7 +49,7 @@ const otherLayoutLink = computed(() => {
             :class="[isOpen && 'is-active']"
             class="dropdown is-right is-spaced dropdown-trigger user-dropdown"
           >
-            <div class="is-trigger" aria-haspopup="true" @click="open">
+            <div class="is-trigger" aria-haspopup="true" @click="toggle">
               <div class="profile-avatar">
                 <img
                   class="avatar"

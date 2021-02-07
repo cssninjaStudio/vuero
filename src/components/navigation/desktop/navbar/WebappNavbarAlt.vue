@@ -10,7 +10,7 @@ import {
 import { useWindowScroll } from '@vueuse/core'
 
 const route = useRoute()
-const { dropdownElement, isOpen, open } = useDropdown()
+const { dropdownElement, isOpen, toggle } = useDropdown()
 
 const { y } = useWindowScroll()
 
@@ -105,7 +105,7 @@ watch(
             src="/images/avatars/photos/8.jpg"
             alt=""
             @error="$event.target.src = 'https://via.placeholder.com/150x150'"
-            @click="open"
+            @click="toggle"
           />
           <span class="status-indicator"></span>
 
