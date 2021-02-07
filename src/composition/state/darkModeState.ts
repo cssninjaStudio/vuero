@@ -3,7 +3,7 @@
  */
 
 import type { Ref } from 'vue'
-import { computed, watch } from 'vue'
+import { computed, watchEffect } from 'vue'
 import { usePreferredDark, useStorage } from '@vueuse/core'
 
 /* DarkModeState data */
@@ -27,32 +27,26 @@ export const isDark = computed({
 
 // export default function init() {
 // update body classList when state changed
-watch(
-  isDark,
-  () => {
-    const body = document.body
-    const images = document.querySelectorAll('.theme-image')
+watchEffect(() => {
+  const body = document.body
+  const images = document.querySelectorAll('.theme-image')
 
-    if (isDark.value) {
-      body.classList.add(DARK_MODE_CSS)
-      images.forEach((element) => {
-        const image = element as HTMLImageElement
-        if (image) {
-          image.src = image.dataset.dark || image.src
-        }
-      })
-    } else {
-      body.classList.remove(DARK_MODE_CSS)
-      images.forEach((element) => {
-        const image = element as HTMLImageElement
-        if (image) {
-          image.src = image.dataset.light || image.src
-        }
-      })
-    }
-  },
-  {
-    immediate: true,
+  if (isDark.value) {
+    body.classList.add(DARK_MODE_CSS)
+    images.forEach((element) => {
+      const image = element as HTMLImageElement
+      if (image) {
+        image.src = image.dataset.dark || image.src
+      }
+    })
+  } else {
+    body.classList.remove(DARK_MODE_CSS)
+    images.forEach((element) => {
+      const image = element as HTMLImageElement
+      if (image) {
+        image.src = image.dataset.light || image.src
+      }
+    })
   }
-)
+})
 // }

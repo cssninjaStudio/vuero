@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { PropType, watch } from 'vue'
-import { ref, defineEmit, defineProps } from 'vue'
+import type { PropType } from 'vue'
+import { ref, defineEmit, defineProps, watchEffect } from 'vue'
 
 const props = defineProps({
   conversationId: {
@@ -20,7 +20,7 @@ const emit = defineEmit([
 ])
 const internalSelection = ref(props.selectedConversationList)
 
-watch(internalSelection, () => {
+watchEffect(() => {
   emit('update:selectedConversationList', internalSelection.value)
 })
 </script>

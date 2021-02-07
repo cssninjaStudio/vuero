@@ -1,9 +1,8 @@
 <script setup lang="ts">
-import useDropdown from '/@src/composition/use/useDropdown'
-import { useMediaQuery } from '@vueuse/core'
 import { defineEmit, defineProps } from 'vue'
 
-const isLargeScreen = useMediaQuery('(min-width: 767px)')
+import useDropdown from '/@src/composition/use/useDropdown'
+import { isMediumScreen } from '/@src/composition/state/responsiveState'
 
 const props = defineProps({
   selected: {
@@ -37,7 +36,7 @@ const {
     class="inbox-message-details"
     :class="[
       mobileMessageOpen && selected && 'mobile-active tablet-active',
-      isLargeScreen && !selected && 'is-hidden',
+      isMediumScreen && !selected && 'is-hidden',
     ]"
   >
     <div class="header-area">

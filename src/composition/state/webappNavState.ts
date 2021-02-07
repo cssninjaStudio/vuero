@@ -2,8 +2,8 @@
  * WebAppNavState Composition API
  */
 
-import { useMediaQuery } from '@vueuse/core'
-import { ref, watch } from 'vue'
+import { ref, watchEffect } from 'vue'
+import { isMediumScreen } from '/@src/composition/state/responsiveState'
 
 type Subnav =
   | 'closed'
@@ -14,7 +14,6 @@ type Subnav =
   | 'search'
 
 /* WebAppNavState data */
-const isLargeScreen = useMediaQuery('(min-width: 767px)')
 export const activeSubnav = ref<Subnav>('closed')
 
 export function toggleSubnav(subnav: Subnav) {
@@ -25,8 +24,8 @@ export function toggleSubnav(subnav: Subnav) {
   }
 }
 
-watch(isLargeScreen, () => {
-  if (!isLargeScreen.value) {
+watchEffect(() => {
+  if (!isMediumScreen.value) {
     activeSubnav.value = 'closed'
   }
 })

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useStorage } from '@vueuse/core'
-import { watch } from 'vue'
+import { watchEffect } from 'vue'
 import { useI18n } from 'vue-i18n'
 
 const i18n = useI18n()
@@ -9,7 +9,7 @@ const defaultLocale = useStorage(
   (navigator && navigator.language) || 'en'
 )
 
-watch(i18n.locale, () => {
+watchEffect(() => {
   defaultLocale.value = i18n.locale.value
 })
 </script>

@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import { useWindowScroll, useMediaQuery } from '@vueuse/core'
-import { computed, ref, watch } from 'vue'
+import { useWindowScroll } from '@vueuse/core'
+import { computed, ref, watchEffect } from 'vue'
+import { isLargeScreen } from '/@src/composition/state/responsiveState'
 
 import { isDark } from '/@src/composition/state/darkModeState.ts'
 
 const isMobileNavOpen = ref(false)
-const isLargeScreen = useMediaQuery('(min-width: 1023px)')
 
 const { y } = useWindowScroll()
 
@@ -13,15 +13,11 @@ const isScrolling = computed(() => {
   return y.value > 30
 })
 
-watch(
-  isLargeScreen,
-  () => {
-    if (isLargeScreen.value) {
-      isMobileNavOpen.value = false
-    }
-  },
-  { immediate: true }
-)
+watchEffect(() => {
+  if (isLargeScreen.value) {
+    isMobileNavOpen.value = false
+  }
+})
 </script>
 
 <template>

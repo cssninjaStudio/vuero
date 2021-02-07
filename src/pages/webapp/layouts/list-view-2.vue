@@ -8,9 +8,9 @@ useHead({
 
 <template>
   <div
-    class="page-content is-relative tabs-wrapper is-slider is-squared is-inverted"
+    class="page-content is-relative tabs-wrapper is-slider is-squared is-inverted is-webapp"
   >
-    <div class="page-title has-text-centered is-webapp">
+    <div class="page-title has-text-centered">
       <div class="title-wrap">
         <h1 class="title is-4">List View</h1>
       </div>

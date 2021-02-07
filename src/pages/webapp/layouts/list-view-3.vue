@@ -12,9 +12,9 @@ useHead({
 
 <template>
   <div
-    class="page-content is-relative tabs-wrapper is-slider is-squared is-inverted"
+    class="page-content is-relative tabs-wrapper is-slider is-squared is-inverted is-webapp"
   >
-    <div class="page-title has-text-centered is-webapp">
+    <div class="page-title has-text-centered">
       <div class="title-wrap">
         <h1 class="title is-4">List View</h1>
       </div>
@@ -22,7 +22,7 @@ useHead({
       <Toolbar />
     </div>
 
-    <div class="list-view-toolbar is-webapp is-reversed">
+    <div class="list-view-toolbar is-reversed">
       <div class="control has-icon">
         <input
           class="input custom-text-filter"
@@ -49,7 +49,7 @@ useHead({
       </div>
     </div>
 
-    <div class="page-content-inner is-webapp">
+    <div class="page-content-inner">
       <ViewListV3 :active-tab="activeTab" />
     </div>
   </div>

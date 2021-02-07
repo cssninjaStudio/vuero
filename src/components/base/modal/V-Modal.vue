@@ -1,5 +1,12 @@
 <script setup lang="ts">
-import { watch, onMounted, ref, defineProps, defineEmit } from 'vue'
+import {
+  watch,
+  onMounted,
+  ref,
+  defineProps,
+  defineEmit,
+  watchEffect,
+} from 'vue'
 // import { useRoute } from 'vue-router'
 
 const props = defineProps({
@@ -48,7 +55,7 @@ const checkScroll = () => {
 }
 
 onMounted(checkScroll)
-watch(() => props.open, checkScroll)
+watchEffect(checkScroll)
 </script>
 
 <template>

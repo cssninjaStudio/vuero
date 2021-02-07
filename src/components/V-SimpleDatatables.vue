@@ -180,7 +180,7 @@ onBeforeUnmount(() => {
 
 if (isReactive(props.options)) {
   watch([props.options, () => props.autoupdate], () => {
-    if (props.autoupdate && !hasFocus.value) {
+    if (tableElement.value && props.autoupdate && !hasFocus.value) {
       let currentPage = 1
       let perPage = 10
       let search = ''

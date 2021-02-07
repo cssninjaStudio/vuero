@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
-import { computed, ref, watch } from 'vue'
+import { computed, ref, watch, watchEffect } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 
 const route = useRoute()
@@ -42,7 +42,7 @@ watch(currentStep, () => {
     },
   })
 })
-watch(route, () => {
+watchEffect(() => {
   currentStep.value =
     (route.query.step && parseInt(route.query.step as string)) || 1
 })

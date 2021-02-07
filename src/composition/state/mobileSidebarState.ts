@@ -2,20 +2,15 @@
  * MobileSidebarState Composition API
  */
 
-import { useMediaQuery } from '@vueuse/core'
-import { ref, watch } from 'vue'
+import { ref, watchEffect } from 'vue'
+import { isMediumScreen } from '/@src/composition/state/responsiveState'
 
 /* MobileSidebarState data */
-const isLargeScreen = useMediaQuery('(min-width: 767px)')
 
 export const isMobileSidebarOpen = ref(false)
 
-watch(
-  isLargeScreen,
-  () => {
-    if (isLargeScreen.value) {
-      isMobileSidebarOpen.value = false
-    }
-  },
-  { immediate: true }
-)
+watchEffect(() => {
+  if (isMediumScreen.value) {
+    isMobileSidebarOpen.value = false
+  }
+})
