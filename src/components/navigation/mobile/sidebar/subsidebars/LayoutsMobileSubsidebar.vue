@@ -280,7 +280,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-layouts-profile-edit-1' }"
+                :to="{ name: 'admin-layouts-profile-edit' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-pencil"></i>

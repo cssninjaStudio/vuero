@@ -1,15 +1,35 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { computed, ref } from 'vue'
+
+import { offers } from '/@src/data/layouts/view-list-v3'
 
 type TabId = 'all' | 'saved'
 const activeTab = ref<TabId>('all')
+const filters = ref('')
+
+const filteredData = computed(() => {
+  if (!filters.value) {
+    return offers
+  } else {
+    return offers.filter((item) => {
+      return (
+        item.logo.match(new RegExp(filters.value, 'i')) ||
+        item.title.match(new RegExp(filters.value, 'i')) ||
+        item.location.match(new RegExp(filters.value, 'i')) ||
+        item.duration.match(new RegExp(filters.value, 'i')) ||
+        item.requirements.match(new RegExp(filters.value, 'i'))
+      )
+    })
+  }
+})
 </script>
 
 <template>
   <div>
     <div class="list-view-toolbar is-reversed">
-      <div class="control has-icon">
+      <V-Control iconify="feather:search">
         <input
+          v-model="filters"
           class="input custom-text-filter"
           placeholder="Search..."
           data-filter-target=".list-view-item"
@@ -17,7 +37,7 @@ const activeTab = ref<TabId>('all')
         <div class="form-icon">
           <i class="iconify" data-icon="feather:search"></i>
         </div>
-      </div>
+      </V-Control>
 
       <div class="tabs-inner">
         <div class="tabs">
@@ -38,7 +58,10 @@ const activeTab = ref<TabId>('all')
       <!--List-->
       <div class="list-view list-view-v3">
         <!--List Empty Search Placeholder -->
-        <div class="page-placeholder custom-text-filter-placeholder is-hidden">
+        <div
+          class="page-placeholder custom-text-filter-placeholder"
+          :class="[filteredData.length !== 0 && 'is-hidden']"
+        >
           <div class="placeholder-content">
             <img
               class="light-image"
@@ -66,444 +89,59 @@ const activeTab = ref<TabId>('all')
           :class="[activeTab === 'all' && 'is-active']"
         >
           <div class="list-view-inner">
-            <!--Item-->
-            <div class="list-view-item">
-              <div class="list-view-item-inner">
-                <img
-                  class="avatar"
-                  src="/images/photo/demo/brands/airbnb.svg"
-                  alt=""
-                  @error="
-                    $event.target.src = 'https://via.placeholder.com/150x150'
-                  "
-                />
-                <div class="meta-left">
-                  <h3 data-filter-match>
-                    Node JS Fullstack Developer wanted 👌
-                  </h3>
-                  <span>
-                    <i class="iconify" data-icon="feather:map-pin"></i>
-                    <span data-filter-match>San Diego</span>
-                    <i class="fas fa-circle icon-separator"></i>
-                    <i class="iconify" data-icon="feather:clock"></i>
-                    <span data-filter-match>Full Time</span>
-                    <i class="fas fa-circle icon-separator"></i>
-                    <i class="iconify" data-icon="feather:check-circle"></i>
-                    <span data-filter-match>3 Years Exp.</span>
-                  </span>
-                </div>
-                <div class="meta-right">
-                  <div class="buttons">
-                    <a class="button v-button is-primary is-outlined is-raised"
-                      >Apply Now</a
-                    >
-                    <button
-                      class="button is-light is-circle hint--bubble hint--primary hint--top"
-                      data-hint="Save"
-                    >
-                      <span class="icon is-small">
-                        <i class="iconify" data-icon="feather:bookmark"></i>
-                      </span>
-                    </button>
+            <transition-group name="list-complete" tag="div">
+              <!--Item-->
+              <div
+                v-for="item in filteredData"
+                :key="item.id"
+                class="list-view-item"
+              >
+                <div class="list-view-item-inner">
+                  <img
+                    class="avatar"
+                    :src="item.logo"
+                    alt=""
+                    @error="
+                      $event.target.src = 'https://via.placeholder.com/150x150'
+                    "
+                  />
+                  <div class="meta-left">
+                    <h3>
+                      {{ item.title }}
+                    </h3>
+                    <span>
+                      <i class="iconify" data-icon="feather:map-pin"></i>
+                      <span>{{ item.location }}</span>
+                      <i class="fas fa-circle icon-separator"></i>
+                      <i class="iconify" data-icon="feather:clock"></i>
+                      <span>{{ item.duration }}</span>
+                      <i class="fas fa-circle icon-separator"></i>
+                      <i class="iconify" data-icon="feather:check-circle"></i>
+                      <span>{{ item.requirements }}</span>
+                    </span>
                   </div>
-                </div>
-              </div>
-            </div>
+                  <div class="meta-right">
+                    <div class="buttons">
+                      <V-Button color="primary" outlined raised>
+                        Apply Now
+                      </V-Button>
 
-            <!--Item-->
-            <div class="list-view-item">
-              <div class="list-view-item-inner">
-                <img
-                  class="avatar"
-                  src="/images/photo/demo/brands/hubspot.svg"
-                  alt=""
-                  @error="
-                    $event.target.src = 'https://via.placeholder.com/150x150'
-                  "
-                />
-                <div class="meta-left">
-                  <h3 data-filter-match>
-                    Project Manager for React Native Project
-                  </h3>
-                  <span>
-                    <i class="iconify" data-icon="feather:map-pin"></i>
-                    <span data-filter-match>Los Angeles</span>
-                    <i class="fas fa-circle icon-separator"></i>
-                    <i class="iconify" data-icon="feather:clock"></i>
-                    <span data-filter-match>Part Time</span>
-                    <i class="fas fa-circle icon-separator"></i>
-                    <i class="iconify" data-icon="feather:check-circle"></i>
-                    <span data-filter-match>2 Years Exp.</span>
-                  </span>
-                </div>
-                <div class="meta-right">
-                  <div class="buttons">
-                    <a class="button v-button is-primary is-outlined is-raised"
-                      >Apply Now</a
-                    >
-                    <button
-                      class="button is-light is-circle hint--bubble hint--primary hint--top"
-                      data-hint="Save"
-                    >
-                      <span class="icon is-small">
-                        <i class="iconify" data-icon="feather:bookmark"></i>
-                      </span>
-                    </button>
+                      <V-IconButton
+                        iconify="feather:bookmark"
+                        class="hint--bubble hint--primary hint--top"
+                        data-hint="Save"
+                        light
+                        circle
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-
-            <!--Item-->
-            <div class="list-view-item">
-              <div class="list-view-item-inner">
-                <img
-                  class="avatar"
-                  src="/images/photo/demo/brands/slack.svg"
-                  alt=""
-                  @error="
-                    $event.target.src = 'https://via.placeholder.com/150x150'
-                  "
-                />
-                <div class="meta-left">
-                  <h3 data-filter-match>
-                    UI/UX Designer to Consolidate the UX Team 💪💪
-                  </h3>
-                  <span>
-                    <i class="iconify" data-icon="feather:map-pin"></i>
-                    <span data-filter-match>Los Angeles</span>
-                    <i class="fas fa-circle icon-separator"></i>
-                    <i class="iconify" data-icon="feather:clock"></i>
-                    <span data-filter-match>Full Time</span>
-                    <i class="fas fa-circle icon-separator"></i>
-                    <i class="iconify" data-icon="feather:check-circle"></i>
-                    <span data-filter-match>3 Years Exp.</span>
-                  </span>
-                </div>
-                <div class="meta-right">
-                  <div class="buttons">
-                    <a class="button v-button is-primary is-outlined is-raised"
-                      >Apply Now</a
-                    >
-                    <button
-                      class="button is-light is-circle hint--bubble hint--primary hint--top"
-                      data-hint="Save"
-                    >
-                      <span class="icon is-small">
-                        <i class="iconify" data-icon="feather:bookmark"></i>
-                      </span>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!--Item-->
-            <div class="list-view-item">
-              <div class="list-view-item-inner">
-                <img
-                  class="avatar"
-                  src="/images/photo/demo/brands/gitlab.svg"
-                  alt=""
-                  @error="
-                    $event.target.src = 'https://via.placeholder.com/150x150'
-                  "
-                />
-                <div class="meta-left">
-                  <h3 data-filter-match>IT Team Senior DevOps Manager</h3>
-                  <span>
-                    <i class="iconify" data-icon="feather:map-pin"></i>
-                    <span data-filter-match>Los Angeles</span>
-                    <i class="fas fa-circle icon-separator"></i>
-                    <i class="iconify" data-icon="feather:clock"></i>
-                    <span data-filter-match>Full Time</span>
-                    <i class="fas fa-circle icon-separator"></i>
-                    <i class="iconify" data-icon="feather:check-circle"></i>
-                    <span data-filter-match>10 Years Exp.</span>
-                  </span>
-                </div>
-                <div class="meta-right">
-                  <div class="buttons">
-                    <a class="button v-button is-primary is-outlined is-raised"
-                      >Apply Now</a
-                    >
-                    <button
-                      class="button is-light is-circle hint--bubble hint--primary hint--top"
-                      data-hint="Save"
-                    >
-                      <span class="icon is-small">
-                        <i class="iconify" data-icon="feather:bookmark"></i>
-                      </span>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!--Item-->
-            <div class="list-view-item">
-              <div class="list-view-item-inner">
-                <img
-                  class="avatar"
-                  src="/images/photo/demo/brands/google.svg"
-                  alt=""
-                  @error="
-                    $event.target.src = 'https://via.placeholder.com/150x150'
-                  "
-                />
-                <div class="meta-left">
-                  <h3 data-filter-match>
-                    Fullstack Developer With Solid MongoDB Skills
-                  </h3>
-                  <span>
-                    <i class="iconify" data-icon="feather:map-pin"></i>
-                    <span data-filter-match>San Francisco</span>
-                    <i class="fas fa-circle icon-separator"></i>
-                    <i class="iconify" data-icon="feather:clock"></i>
-                    <span data-filter-match>Full Time</span>
-                    <i class="fas fa-circle icon-separator"></i>
-                    <i class="iconify" data-icon="feather:check-circle"></i>
-                    <span data-filter-match>5 Years Exp.</span>
-                  </span>
-                </div>
-                <div class="meta-right">
-                  <div class="buttons">
-                    <a class="button v-button is-primary is-outlined is-raised"
-                      >Apply Now</a
-                    >
-                    <button
-                      class="button is-light is-circle hint--bubble hint--primary hint--top"
-                      data-hint="Save"
-                    >
-                      <span class="icon is-small">
-                        <i class="iconify" data-icon="feather:bookmark"></i>
-                      </span>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!--Item-->
-            <div class="list-view-item">
-              <div class="list-view-item-inner">
-                <img
-                  class="avatar"
-                  src="/images/photo/demo/brands/facebook.svg"
-                  alt=""
-                  @error="
-                    $event.target.src = 'https://via.placeholder.com/150x150'
-                  "
-                />
-                <div class="meta-left">
-                  <h3 data-filter-match>
-                    Fullstack Javascript and Node JS Developer
-                  </h3>
-                  <span>
-                    <i class="iconify" data-icon="feather:map-pin"></i>
-                    <span data-filter-match>Pasadena</span>
-                    <i class="fas fa-circle icon-separator"></i>
-                    <i class="iconify" data-icon="feather:clock"></i>
-                    <span data-filter-match>Full Time</span>
-                    <i class="fas fa-circle icon-separator"></i>
-                    <i class="iconify" data-icon="feather:check-circle"></i>
-                    <span data-filter-match>4 Years Exp.</span>
-                  </span>
-                </div>
-                <div class="meta-right">
-                  <div class="buttons">
-                    <a class="button v-button is-primary is-outlined is-raised"
-                      >Apply Now</a
-                    >
-                    <button
-                      class="button is-light is-circle hint--bubble hint--primary hint--top"
-                      data-hint="Save"
-                    >
-                      <span class="icon is-small">
-                        <i class="iconify" data-icon="feather:bookmark"></i>
-                      </span>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!--Item-->
-            <div class="list-view-item">
-              <div class="list-view-item-inner">
-                <img
-                  class="avatar"
-                  src="/images/photo/demo/brands/tnw.svg"
-                  alt=""
-                  @error="
-                    $event.target.src = 'https://via.placeholder.com/150x150'
-                  "
-                />
-                <div class="meta-left">
-                  <h3 data-filter-match>
-                    Product Owner for React Native Project
-                  </h3>
-                  <span>
-                    <i class="iconify" data-icon="feather:map-pin"></i>
-                    <span data-filter-match>Los Angeles</span>
-                    <i class="fas fa-circle icon-separator"></i>
-                    <i class="iconify" data-icon="feather:clock"></i>
-                    <span data-filter-match>Full Time</span>
-                    <i class="fas fa-circle icon-separator"></i>
-                    <i class="iconify" data-icon="feather:check-circle"></i>
-                    <span data-filter-match>2 Years Exp.</span>
-                  </span>
-                </div>
-                <div class="meta-right">
-                  <div class="buttons">
-                    <a class="button v-button is-primary is-outlined is-raised"
-                      >Apply Now</a
-                    >
-                    <button
-                      class="button is-light is-circle hint--bubble hint--primary hint--top"
-                      data-hint="Save"
-                    >
-                      <span class="icon is-small">
-                        <i class="iconify" data-icon="feather:bookmark"></i>
-                      </span>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!--Item-->
-            <div class="list-view-item">
-              <div class="list-view-item-inner">
-                <img
-                  class="avatar"
-                  src="/images/photo/demo/brands/dribbble.svg"
-                  alt=""
-                  @error="
-                    $event.target.src = 'https://via.placeholder.com/150x150'
-                  "
-                />
-                <div class="meta-left">
-                  <h3 data-filter-match>
-                    UI/UX Designer With Html5 and Sass Skills 👍
-                  </h3>
-                  <span>
-                    <i class="iconify" data-icon="feather:map-pin"></i>
-                    <span data-filter-match>Los Angeles</span>
-                    <i class="fas fa-circle icon-separator"></i>
-                    <i class="iconify" data-icon="feather:clock"></i>
-                    <span data-filter-match>Full Time</span>
-                    <i class="fas fa-circle icon-separator"></i>
-                    <i class="iconify" data-icon="feather:check-circle"></i>
-                    <span data-filter-match>4 Years Exp.</span>
-                  </span>
-                </div>
-                <div class="meta-right">
-                  <div class="buttons">
-                    <a class="button v-button is-primary is-outlined is-raised"
-                      >Apply Now</a
-                    >
-                    <button
-                      class="button is-light is-circle hint--bubble hint--primary hint--top"
-                      data-hint="Save"
-                    >
-                      <span class="icon is-small">
-                        <i class="iconify" data-icon="feather:bookmark"></i>
-                      </span>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!--Item-->
-            <div class="list-view-item">
-              <div class="list-view-item-inner">
-                <img
-                  class="avatar"
-                  src="/images/photo/demo/brands/atlassian.svg"
-                  alt=""
-                  @error="
-                    $event.target.src = 'https://via.placeholder.com/150x150'
-                  "
-                />
-                <div class="meta-left">
-                  <h3 data-filter-match>Experienced Senior UX Team Manager</h3>
-                  <span>
-                    <i class="iconify" data-icon="feather:map-pin"></i>
-                    <span data-filter-match>Melbourne</span>
-                    <i class="fas fa-circle icon-separator"></i>
-                    <i class="iconify" data-icon="feather:clock"></i>
-                    <span data-filter-match>Full Time</span>
-                    <i class="fas fa-circle icon-separator"></i>
-                    <i class="iconify" data-icon="feather:check-circle"></i>
-                    <span data-filter-match>10 Years Exp.</span>
-                  </span>
-                </div>
-                <div class="meta-right">
-                  <div class="buttons">
-                    <a class="button v-button is-primary is-outlined is-raised"
-                      >Apply Now</a
-                    >
-                    <button
-                      class="button is-light is-circle hint--bubble hint--primary hint--top"
-                      data-hint="Save"
-                    >
-                      <span class="icon is-small">
-                        <i class="iconify" data-icon="feather:bookmark"></i>
-                      </span>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!--Item-->
-            <div class="list-view-item">
-              <div class="list-view-item-inner">
-                <img
-                  class="avatar"
-                  src="/images/photo/demo/brands/github.svg"
-                  alt=""
-                  @error="
-                    $event.target.src = 'https://via.placeholder.com/150x150'
-                  "
-                />
-                <div class="meta-left">
-                  <h3 data-filter-match>
-                    Fullstack Javascript and Node JS Developer
-                  </h3>
-                  <span>
-                    <i class="iconify" data-icon="feather:map-pin"></i>
-                    <span data-filter-match>Los Angeles</span>
-                    <i class="fas fa-circle icon-separator"></i>
-                    <i class="iconify" data-icon="feather:clock"></i>
-                    <span data-filter-match>Part Time</span>
-                    <i class="fas fa-circle icon-separator"></i>
-                    <i class="iconify" data-icon="feather:check-circle"></i>
-                    <span data-filter-match>1 Year Exp.</span>
-                  </span>
-                </div>
-                <div class="meta-right">
-                  <div class="buttons">
-                    <a class="button v-button is-primary is-outlined is-raised"
-                      >Apply Now</a
-                    >
-                    <button
-                      class="button is-light is-circle hint--bubble hint--primary hint--top"
-                      data-hint="Save"
-                    >
-                      <span class="icon is-small">
-                        <i class="iconify" data-icon="feather:bookmark"></i>
-                      </span>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
+            </transition-group>
           </div>
 
           <V-FlexPagination
+            v-if="filteredData.length > 5"
             :item-per-page="10"
             :total-items="873"
             :current-page="42"

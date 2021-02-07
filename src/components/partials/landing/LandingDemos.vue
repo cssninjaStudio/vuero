@@ -1390,7 +1390,7 @@
                   <span>Edit Profile 1</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'admin-layouts-profile-edit-1' }"
+                  <RouterLink :to="{ name: 'admin-layouts-profile-edit' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -1422,7 +1422,8 @@
                   <span>Edit Profile 2</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'admin-layouts-profile-edit-2' }"
+                  <RouterLink
+                    :to="{ name: 'admin-layouts-profile-edit-experience' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -1454,7 +1455,8 @@
                   <span>Edit Profile 3</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'admin-layouts-profile-edit-3' }"
+                  <RouterLink
+                    :to="{ name: 'admin-layouts-profile-edit-skills' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -1486,7 +1488,8 @@
                   <span>Edit Profile 4</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'admin-layouts-profile-edit-4' }"
+                  <RouterLink
+                    :to="{ name: 'admin-layouts-profile-edit-settings' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>

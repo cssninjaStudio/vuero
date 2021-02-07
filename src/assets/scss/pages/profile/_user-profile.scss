@@ -745,7 +745,7 @@
           margin-bottom: 5px;
           transition: all 0.3s;
 
-          &.is-active {
+          &.router-link-exact-active {
             box-shadow: $light-box-shadow;
             border-color: darken($fade-grey, 3%);
 
@@ -759,7 +759,7 @@
             }
           }
 
-          &:not(.is-active) {
+          &:not(.router-link-exact-active) {
             &:hover {
               background: lighten($fade-grey, 3%);
             }
@@ -982,7 +982,7 @@
       &.is-navigation {
         .account-menu {
           .account-menu-item {
-            &.is-active {
+            &.router-link-exact-active {
               background: lighten($dark-sidebar, 8%);
               border-color: lighten($dark-sidebar, 12%);
 
@@ -992,7 +992,7 @@
               }
             }
 
-            &:not(.is-active) {
+            &:not(.router-link-exact-active) {
               &:hover {
                 background: lighten($dark-sidebar, 10%);
               }

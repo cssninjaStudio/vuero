@@ -67,8 +67,8 @@ body {
 2. View Wrapper
 ========================================================================== */
 
-.is-webapp {
-  .view-wrapper {
+.view-wrapper {
+  &.has-top-nav {
     padding-top: 80px;
     margin-left: 0 !important;
     width: 100% !important;

@@ -71,7 +71,7 @@ const classes = computed(() => {
     props.elevated && 'is-elevated',
     props.loading && 'is-loading',
     props.color && `is-${props.color}`,
-    props.color && props.light && 'is-light',
+    props.light && 'is-light',
   ]
 })
 </script>

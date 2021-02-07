@@ -2,10 +2,10 @@
 import { useHead } from '@vueuse/head'
 
 useHead({
-  title: 'List View 1 - WebApp - Vuero',
+  title: 'Profile Edit 2 - Admin - Vuero',
 })
 </script>
 
 <template>
-  <ViewListV1 />
+  <EditProfileV2 />
 </template>

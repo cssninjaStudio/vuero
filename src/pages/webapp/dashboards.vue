@@ -28,7 +28,7 @@ watch(
 
     <!-- Content Wrapper -->
     <div
-      class="view-wrapper is-webapp"
+      class="view-wrapper has-top-nav"
       :class="[activeSidebar !== 'none' && 'is-pushed-full']"
     >
       <div class="page-content-wrapper">

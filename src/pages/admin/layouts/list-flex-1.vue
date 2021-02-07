@@ -40,30 +40,6 @@ useHead({
       <Toolbar />
     </div>
 
-    <div class="list-flex-toolbar">
-      <div class="control has-icon">
-        <input
-          class="input custom-text-filter"
-          placeholder="Search..."
-          data-filter-target=".flex-table-item"
-        />
-        <div class="form-icon">
-          <i class="iconify" data-icon="feather:search"></i>
-        </div>
-      </div>
-
-      <div class="buttons">
-        <button class="button v-button is-primary is-elevated">
-          <span class="icon">
-            <i class="fas fa-plus"></i>
-          </span>
-          <span>Add User</span>
-        </button>
-      </div>
-    </div>
-
-    <div class="page-content-inner">
-      <FlexListV1 />
-    </div>
+    <FlexListV1 />
   </div>
 </template>
