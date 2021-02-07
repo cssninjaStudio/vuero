@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
-import { ref } from 'vue'
+import { computed, ref, watch } from 'vue'
 
 import { isDark } from '/@src/composition/state/darkModeState.ts'
 import useDropdown from '/@src/composition/use/useDropdown'
@@ -8,6 +8,28 @@ import useDropdown from '/@src/composition/use/useDropdown'
 const contactSearchOpen = ref(false)
 const activeTab = ref('inbox')
 const selectedConversationId = ref(1)
+const selectedConversationList = ref<number[]>([])
+const mobileMessageOpen = ref(true)
+const mobileSidebarOpen = ref(false)
+
+const isAllChecked = computed(() => {
+  return selectedConversationList.value.length === 10
+})
+
+const toggleSelection = () => {
+  if (isAllChecked.value) {
+    selectedConversationList.value.splice(
+      0,
+      selectedConversationList.value.length
+    )
+  } else {
+    selectedConversationList.value.splice(
+      0,
+      selectedConversationList.value.length
+    )
+    selectedConversationList.value.push(...[1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+  }
+}
 
 const {
   dropdownElement: dropdownElement1,
@@ -21,6 +43,10 @@ const {
   isOpen: isOpen2,
 } = useDropdown()
 
+watch(selectedConversationId, () => {
+  mobileMessageOpen.value = true
+})
+
 useHead({
   title: 'Dashboard Apps 2 - Admin - Vuero',
 })
@@ -31,7 +57,10 @@ useHead({
     <div class="inbox-wrapper">
       <div class="wrapper-inner">
         <!--Inbox sidebar-->
-        <div class="inbox-sidebar">
+        <div
+          class="inbox-sidebar"
+          :class="[mobileSidebarOpen && 'mobile-active']"
+        >
           <!-- Header -->
           <div class="header-area">
             <div class="inbox-title">
@@ -86,7 +115,10 @@ useHead({
                 </div>
               </div>
             </div>
-            <a class="inbox-action inbox-close-sidebar-mobile">
+            <a
+              class="inbox-action inbox-close-sidebar-mobile"
+              @click="mobileSidebarOpen = false"
+            >
               <i class="iconify" data-icon="feather:x"></i>
             </a>
           </div>
@@ -267,10 +299,17 @@ useHead({
         <div class="inbox-messages">
           <div class="header-area">
             <div class="actions">
-              <a class="inbox-action mobile-menu-action">
+              <a
+                class="inbox-action mobile-menu-action"
+                @click="mobileSidebarOpen = true"
+              >
                 <i class="iconify" data-icon="feather:chevron-right"></i>
               </a>
-              <a class="inbox-action check-all-action">
+              <a
+                class="inbox-action check-all-action"
+                :class="[isAllChecked && 'is-checked']"
+                @click="toggleSelection"
+              >
                 <i class="iconify" data-icon="feather:check"></i>
               </a>
             </div>
@@ -327,6 +366,7 @@ useHead({
             <!--messages list partial-->
             <InboxMessagesList
               v-model:conversationId="selectedConversationId"
+              v-model:selectedConversationList="selectedConversationList"
             />
           </div>
         </div>
@@ -337,34 +377,64 @@ useHead({
         </div>
 
         <!--Message details 1-->
-        <Message1 :class="[selectedConversationId !== 1 && 'is-hidden']" />
+        <Message1
+          v-model:mobile-message-open="mobileMessageOpen"
+          :selected="selectedConversationId === 1"
+        />
 
         <!--Message details 2-->
-        <Message2 :class="[selectedConversationId !== 2 && 'is-hidden']" />
+        <Message2
+          v-model:mobile-message-open="mobileMessageOpen"
+          :selected="selectedConversationId === 2"
+        />
 
         <!--Message details 3-->
-        <Message3 :class="[selectedConversationId !== 3 && 'is-hidden']" />
+        <Message3
+          v-model:mobile-message-open="mobileMessageOpen"
+          :selected="selectedConversationId === 3"
+        />
 
         <!--Message details 4-->
-        <Message4 :class="[selectedConversationId !== 4 && 'is-hidden']" />
+        <Message4
+          v-model:mobile-message-open="mobileMessageOpen"
+          :selected="selectedConversationId === 4"
+        />
 
         <!--Message details 5-->
-        <Message5 :class="[selectedConversationId !== 5 && 'is-hidden']" />
+        <Message5
+          v-model:mobile-message-open="mobileMessageOpen"
+          :selected="selectedConversationId === 5"
+        />
 
         <!--Message details 6-->
-        <Message6 :class="[selectedConversationId !== 6 && 'is-hidden']" />
+        <Message6
+          v-model:mobile-message-open="mobileMessageOpen"
+          :selected="selectedConversationId === 6"
+        />
 
         <!--Message details 7-->
-        <Message7 :class="[selectedConversationId !== 7 && 'is-hidden']" />
+        <Message7
+          v-model:mobile-message-open="mobileMessageOpen"
+          :selected="selectedConversationId === 7"
+        />
 
         <!--Message details 8-->
-        <Message8 :class="[selectedConversationId !== 8 && 'is-hidden']" />
+        <Message8
+          v-model:mobile-message-open="mobileMessageOpen"
+          :selected="selectedConversationId === 8"
+        />
 
         <!--Message details 9-->
-        <Message9 :class="[selectedConversationId !== 9 && 'is-hidden']" />
+        <Message9
+          v-model:mobile-message-open="mobileMessageOpen"
+          :selected="selectedConversationId === 9"
+        />
 
         <!--Message details 10-->
-        <Message10 :class="[selectedConversationId !== 10 && 'is-hidden']" />
+        <Message10
+          v-model:mobile-message-open="mobileMessageOpen"
+          :selected="selectedConversationId === 10"
+        />
       </div>
     </div>
   </MinimalLayout>

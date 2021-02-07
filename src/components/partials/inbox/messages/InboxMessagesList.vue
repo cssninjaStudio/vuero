@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { PropType, watch } from 'vue'
 import { ref, defineEmit, defineProps } from 'vue'
 
 const props = defineProps({
@@ -6,10 +7,22 @@ const props = defineProps({
     type: Number,
     default: 0,
   },
+  selectedConversationList: {
+    type: Array as PropType<number[]>,
+    default: () => [],
+  },
 })
 
 const unread = ref(true)
-const emit = defineEmit(['update:conversationId'])
+const emit = defineEmit([
+  'update:conversationId',
+  'update:selectedConversationList',
+])
+const internalSelection = ref(props.selectedConversationList)
+
+watch(internalSelection, () => {
+  emit('update:selectedConversationList', internalSelection.value)
+})
 </script>
 
 <template>
@@ -26,7 +39,7 @@ const emit = defineEmit(['update:conversationId'])
   >
     <div class="message-checkbox">
       <label class="checkbox is-outlined is-primary">
-        <input id="checkbox-mail-1" type="checkbox" />
+        <input v-model="internalSelection" type="checkbox" :value="2" />
         <span></span>
       </label>
     </div>
@@ -47,7 +60,7 @@ const emit = defineEmit(['update:conversationId'])
   >
     <div class="message-checkbox">
       <label class="checkbox is-outlined is-primary">
-        <input id="checkbox-mail-2" type="checkbox" />
+        <input v-model="internalSelection" type="checkbox" :value="1" />
         <span></span>
       </label>
     </div>
@@ -66,7 +79,7 @@ const emit = defineEmit(['update:conversationId'])
   >
     <div class="message-checkbox">
       <label class="checkbox is-outlined is-primary">
-        <input id="checkbox-mail-3" type="checkbox" />
+        <input v-model="internalSelection" type="checkbox" :value="3" />
         <span></span>
       </label>
     </div>
@@ -85,7 +98,7 @@ const emit = defineEmit(['update:conversationId'])
   >
     <div class="message-checkbox">
       <label class="checkbox is-outlined is-primary">
-        <input id="checkbox-mail-4" type="checkbox" />
+        <input v-model="internalSelection" type="checkbox" :value="4" />
         <span></span>
       </label>
     </div>
@@ -104,7 +117,7 @@ const emit = defineEmit(['update:conversationId'])
   >
     <div class="message-checkbox">
       <label class="checkbox is-outlined is-primary">
-        <input id="checkbox-mail-5" type="checkbox" />
+        <input v-model="internalSelection" type="checkbox" :value="5" />
         <span></span>
       </label>
     </div>
@@ -125,7 +138,7 @@ const emit = defineEmit(['update:conversationId'])
   >
     <div class="message-checkbox">
       <label class="checkbox is-outlined is-primary">
-        <input id="checkbox-mail-6" type="checkbox" />
+        <input v-model="internalSelection" type="checkbox" :value="6" />
         <span></span>
       </label>
     </div>
@@ -144,7 +157,7 @@ const emit = defineEmit(['update:conversationId'])
   >
     <div class="message-checkbox">
       <label class="checkbox is-outlined is-primary">
-        <input id="checkbox-mail-7" type="checkbox" />
+        <input v-model="internalSelection" type="checkbox" :value="7" />
         <span></span>
       </label>
     </div>
@@ -165,7 +178,7 @@ const emit = defineEmit(['update:conversationId'])
   >
     <div class="message-checkbox">
       <label class="checkbox is-outlined is-primary">
-        <input id="checkbox-mail-8" type="checkbox" />
+        <input v-model="internalSelection" type="checkbox" :value="8" />
         <span></span>
       </label>
     </div>
@@ -184,7 +197,7 @@ const emit = defineEmit(['update:conversationId'])
   >
     <div class="message-checkbox">
       <label class="checkbox is-outlined is-primary">
-        <input id="checkbox-mail-9" type="checkbox" />
+        <input v-model="internalSelection" type="checkbox" :value="9" />
         <span></span>
       </label>
     </div>
@@ -203,7 +216,7 @@ const emit = defineEmit(['update:conversationId'])
   >
     <div class="message-checkbox">
       <label class="checkbox is-outlined is-primary">
-        <input id="checkbox-mail-10" type="checkbox" />
+        <input v-model="internalSelection" type="checkbox" :value="10" />
         <span></span>
       </label>
     </div>

@@ -1,5 +1,22 @@
 <script setup lang="ts">
 import useDropdown from '/@src/composition/use/useDropdown'
+import { useMediaQuery } from '@vueuse/core'
+import { defineEmit, defineProps } from 'vue'
+
+const isLargeScreen = useMediaQuery('(min-width: 767px)')
+
+const props = defineProps({
+  selected: {
+    type: Boolean,
+    default: false,
+  },
+  mobileMessageOpen: {
+    type: Boolean,
+    default: false,
+  },
+})
+
+const emit = defineEmit(['update:mobileMessageOpen'])
 
 const {
   dropdownElement: dropdownElement1,
@@ -16,7 +33,13 @@ const {
 
 <template>
   <!-- Message details -->
-  <div id="message-9" class="inbox-message-details">
+  <div
+    :class="[
+      mobileMessageOpen && selected && 'mobile-active tablet-active',
+      isLargeScreen && !selected && 'is-hidden',
+    ]"
+    class="inbox-message-details"
+  >
     <div class="header-area">
       <img
         class="sender-pic"
@@ -62,7 +85,10 @@ const {
           </div>
         </div>
       </div>
-      <a class="inbox-action inbox-close-details-mobile">
+      <a
+        class="inbox-action inbox-close-details-mobile"
+        @click="emit('update:mobileMessageOpen', false)"
+      >
         <i class="iconify" data-icon="feather:x"></i>
       </a>
     </div>
