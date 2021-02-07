@@ -65,12 +65,12 @@ useHead({
 
             <img
               class="light-image-l hero-mockup"
-              src="/@src/assets/illustrations/landing/app-1.png"
+              src="/@src/assets/illustrations/landing/app-1.png?size=740x490&format=webp"
               alt=""
             />
             <img
               class="dark-image-l hero-mockup"
-              src="/@src/assets/illustrations/landing/app-1-dark.png"
+              src="/@src/assets/illustrations/landing/app-1-dark.png?size=740x490&format=webp"
               alt=""
             />
           </div>
@@ -210,12 +210,12 @@ useHead({
             <div class="column is-6 has-text-centered">
               <img
                 class="light-image-l featured-image"
-                src="/@src/assets/illustrations/landing/feature-1.png"
+                src="/@src/assets/illustrations/landing/feature-1.png?size=560x406&format=webp"
                 alt=""
               />
               <img
                 class="dark-image-l featured-image"
-                src="/@src/assets/illustrations/landing/feature-1-dark.png"
+                src="/@src/assets/illustrations/landing/feature-1-dark.png?size=560x406&format=webp"
                 alt=""
               />
             </div>

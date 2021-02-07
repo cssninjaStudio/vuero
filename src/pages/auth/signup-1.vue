@@ -138,8 +138,9 @@ onUnmounted(() => {
       </div>
 
       <img
+        :class="[step > 0 && 'is-hidden']"
         class="card-bg"
-        src="/@src/assets/backgrounds/signup/huro-signup.png"
+        src="/@src/assets/backgrounds/signup/huro-signup.png?format=webp"
         alt=""
       />
 
