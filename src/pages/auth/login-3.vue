@@ -1,7 +1,25 @@
 <script setup lang="ts">
+import { ref } from 'vue'
+import { useRouter } from 'vue-router'
 import { useHead } from '@vueuse/head'
 
 import { isDark } from '/@src/composition/state/darkModeState.ts'
+import useNotyf from '/@src/composition/use/useNotyf'
+import sleep from '/@src/utils/sleep'
+
+const isLoading = ref(false)
+const router = useRouter()
+const notif = useNotyf()
+
+const handleLogin = async () => {
+  if (!isLoading.value) {
+    isLoading.value = true
+    await sleep(2000)
+    notif.success('Welcome back, Erik Kovalsky')
+    router.push({ name: 'admin-dashboards' })
+    isLoading.value = false
+  }
+}
 
 useHead({
   title: 'Auth Login 3 - Vuero',
@@ -9,102 +27,101 @@ useHead({
 </script>
 
 <template>
-  <AuthLayout>
-    <div class="auth-wrapper-inner is-single">
-      <!--Fake navigation-->
-      <div class="auth-nav">
-        <div class="left"></div>
-        <div class="center">
-          <RouterLink :to="{ name: 'index' }" class="header-item">
-            <AnimatedLogo width="38px" height="38px" />
+  <div class="auth-wrapper-inner is-single">
+    <!--Fake navigation-->
+    <div class="auth-nav">
+      <div class="left"></div>
+      <div class="center">
+        <RouterLink :to="{ name: 'index' }" class="header-item">
+          <AnimatedLogo width="38px" height="38px" />
+        </RouterLink>
+      </div>
+      <div class="right">
+        <label class="dark-mode ml-auto">
+          <input
+            type="checkbox"
+            :checked="!isDark"
+            @change="
+              (event) => {
+                isDark = !event.target.checked
+              }
+            "
+          />
+          <span></span>
+        </label>
+      </div>
+    </div>
+
+    <!--Single Centered Form-->
+    <div class="single-form-wrap">
+      <div class="inner-wrap">
+        <!--Form Title-->
+        <div class="auth-head">
+          <h2>Welcome Back.</h2>
+          <p>Please sign in to your account</p>
+          <RouterLink :to="{ name: 'auth-signup-3' }"
+            >I do not have an account yet
           </RouterLink>
         </div>
-        <div class="right">
-          <label class="dark-mode ml-auto">
-            <input
-              type="checkbox"
-              :checked="!isDark"
-              @change="
-                (event) => {
-                  isDark = !event.target.checked
-                }
-              "
-            />
-            <span></span>
-          </label>
-        </div>
-      </div>
 
-      <!--Single Centered Form-->
-      <div class="single-form-wrap">
-        <div class="inner-wrap">
-          <!--Form Title-->
-          <div class="auth-head">
-            <h2>Welcome Back.</h2>
-            <p>Please sign in to your account</p>
-            <RouterLink :to="{ name: 'auth-signup-3' }"
-              >I do not have an account yet
-            </RouterLink>
-          </div>
+        <!--Form-->
+        <div class="form-card">
+          <form @submit.prevent="handleLogin">
+            <div class="login-form">
+              <V-Field>
+                <V-Control iconify="feather:user">
+                  <input
+                    class="input"
+                    type="text"
+                    placeholder="Username"
+                    autocomplete="username"
+                  />
+                </V-Control>
+              </V-Field>
+              <V-Field>
+                <V-Control iconify="feather:lock">
+                  <input
+                    class="input"
+                    type="password"
+                    placeholder="Password"
+                    autocomplete="current-password"
+                  />
+                </V-Control>
+              </V-Field>
 
-          <!--Form-->
-          <div class="form-card">
-            <form>
-              <div id="signin-form" class="login-form">
-                <!-- Input -->
-                <div class="field">
-                  <div class="control has-icon">
-                    <input class="input" type="text" placeholder="Username" />
-                    <span class="form-icon">
-                      <i class="iconify" data-icon="feather:user"></i>
-                    </span>
-                  </div>
-                </div>
-                <!-- Input -->
-                <div class="field">
-                  <div class="control has-icon">
-                    <input
-                      class="input"
-                      type="password"
-                      placeholder="Password"
-                    />
-                    <span class="form-icon">
-                      <i class="iconify" data-icon="feather:lock"></i>
-                    </span>
-                  </div>
-                </div>
-
-                <div class="setting-item">
-                  <label class="form-switch is-primary">
-                    <input
-                      id="busy-mode-toggle"
-                      type="checkbox"
-                      class="is-switch"
-                    />
-                    <i></i>
-                  </label>
-                  <div class="setting-meta">
+              <!-- Switch -->
+              <V-Control class="setting-item">
+                <label for="remember-me" class="form-switch is-primary">
+                  <input id="remember-me" type="checkbox" class="is-switch" />
+                  <i></i>
+                </label>
+                <div class="setting-meta">
+                  <label for="remember-me">
                     <span>Remember Me</span>
-                  </div>
+                  </label>
                 </div>
+              </V-Control>
 
-                <!-- Submit -->
-                <div class="control login">
-                  <button
-                    class="button v-button is-primary is-bold is-fullwidth is-raised"
-                  >
-                    Sign In
-                  </button>
-                </div>
-              </div>
-            </form>
-          </div>
+              <!-- Submit -->
+              <V-Control class="login">
+                <V-Button
+                  :loading="isLoading"
+                  color="primary"
+                  bold
+                  fullwidth
+                  raised
+                >
+                  Sign In
+                </V-Button>
+              </V-Control>
+            </div>
+          </form>
+        </div>
 
-          <div class="forgot-link has-text-centered">
-            <a>Forgot Password?</a>
-          </div>
+        <div class="forgot-link has-text-centered">
+          <a>Forgot Password?</a>
         </div>
       </div>
     </div>
-  </AuthLayout>
+  </div>
 </template>

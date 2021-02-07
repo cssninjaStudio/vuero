@@ -10,10 +10,6 @@ defineProps({
     type: Boolean,
     default: false,
   },
-  iconed: {
-    type: Boolean,
-    default: false,
-  },
   icon: {
     type: String,
     default: '',
@@ -41,7 +37,7 @@ defineProps({
   <div
     class="control"
     :class="[
-      iconed && 'has-icon',
+      (iconify || icon) && 'has-icon',
       loading && 'is-loading',
       expanded && 'is-expanded',
       textaddon && 'is-textarea-addon',
@@ -50,7 +46,7 @@ defineProps({
     ]"
   >
     <slot></slot>
-    <div v-if="iconed" class="form-icon">
+    <div v-if="iconify || icon" class="form-icon">
       <i v-if="iconify && !icon" class="iconify" :data-icon="iconify"></i>
       <i v-else-if="!iconify && icon" :class="icon"></i>
     </div>

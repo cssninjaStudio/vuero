@@ -10,7 +10,7 @@ Use the props shown in the code examples to handle validation.
 ```vue
 <template>
   <V-Field>
-    <V-Control iconed iconify="feather:user" is-valid>
+    <V-Control iconify="feather:user" is-valid>
       <input
         type="text"
         class="input"
@@ -21,7 +21,7 @@ Use the props shown in the code examples to handle validation.
     </V-Control>
   </V-Field>
   <V-Field>
-    <V-Control iconed iconify="feather:lock" has-error>
+    <V-Control iconify="feather:lock" has-error>
       <input
         type="password"
         class="input"
@@ -39,7 +39,7 @@ Use the props shown in the code examples to handle validation.
 <!--example-->
 
 <V-Field>
-  <V-Control iconed iconify="feather:user" is-valid>
+  <V-Control iconify="feather:user" is-valid>
     <input
       type="text"
       class="input"
@@ -50,7 +50,7 @@ Use the props shown in the code examples to handle validation.
   </V-Control>
 </V-Field>
 <V-Field>
-  <V-Control iconed iconify="feather:lock" has-error>
+  <V-Control iconify="feather:lock" has-error>
     <input
       type="password"
       class="input"

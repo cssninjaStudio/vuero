@@ -85,52 +85,52 @@ const notyf = new Notyf({
 
 export default function useNotyf() {
   return {
-    successToast: () => {
-      notyf.success('Your changes have been successfully saved!')
+    success: (message: string) => {
+      notyf.success(message)
     },
-    errorToast: () => {
-      notyf.error('Looks like something went wrong')
+    error: (message: string) => {
+      notyf.error(message)
     },
-    infoToast: () => {
+    info: (message: string) => {
       notyf.open({
         type: 'info',
-        message: 'This is some useful information that you might need.',
+        message,
       })
     },
-    warningToast: () => {
+    warning: (message: string) => {
       notyf.open({
         type: 'warning',
-        message: 'Please be careful when driving back to home.',
+        message,
       })
     },
-    primaryToast: () => {
+    primary: (message: string) => {
       notyf.open({
         type: 'primary',
-        message: 'Please be careful when driving back to home.',
+        message,
       })
     },
-    purpleToast: () => {
+    purple: (message: string) => {
       notyf.open({
         type: 'purple',
-        message: 'This is a nice looking purple toast notification.',
+        message,
       })
     },
-    blueToast: () => {
+    blue: (message: string) => {
       notyf.open({
         type: 'blue',
-        message: 'This is a nice looking blue toast notification.',
+        message,
       })
     },
-    greenToast: () => {
+    green: (message: string) => {
       notyf.open({
         type: 'green',
-        message: 'This is a nice looking green toast notification.',
+        message,
       })
     },
-    orangeToast: () => {
+    orange: (message: string) => {
       notyf.open({
         type: 'orange',
-        message: 'This is a nice looking orange toast notification.',
+        message,
       })
     },
   }

@@ -1,13 +1,100 @@
 <script setup lang="ts">
+import type {
+  TinySliderInstance,
+  TinySliderInfo,
+} from 'tiny-slider/src/tiny-slider'
+import { tns } from 'tiny-slider/src/tiny-slider'
 import { useHead } from '@vueuse/head'
+import { ref, onMounted, onUnmounted } from 'vue'
+import { useRouter } from 'vue-router'
+
+import sleep from '/@src/utils/sleep'
+import useNotyf from '/@src/composition/use/useNotyf'
+
+let slider: TinySliderInstance
+const sliderElement = ref<HTMLElement | null>(null)
+const router = useRouter()
+const notif = useNotyf()
+const step = ref(0)
+const selectedAvatar = ref(2)
+const isLoading = ref(false)
+const resizeValue = ref(70)
+const uploadModalOpen = ref(false)
+const avatars = [
+  '/images/avatars/svg/huro-1.svg',
+  '/images/avatars/svg/huro-2.svg',
+  '/images/avatars/svg/huro-3.svg',
+  '/images/avatars/svg/huro-4.svg',
+  '/images/avatars/svg/huro-5.svg',
+  '/images/avatars/svg/huro-6.svg',
+  '/images/avatars/svg/huro-7.svg',
+  '/images/avatars/svg/huro-8.svg',
+  '/images/avatars/svg/huro-9.svg',
+  '/images/avatars/svg/huro-10.svg',
+  '/images/avatars/svg/huro-11.svg',
+  '/images/avatars/svg/huro-12.svg',
+]
+
+const handleSignup = async () => {
+  if (!isLoading.value) {
+    step.value++
+    isLoading.value = true
+    sleep(2000)
+    notif.success('Welcome, Erik Kovalsky')
+    router.push({ name: 'admin-dashboards' })
+    isLoading.value = false
+  }
+}
+
+const onAvatarChanged = (info: any) => {
+  // direct access to info object
+  const indexPrev = info.indexCached
+  const indexCurrent = info.index
+
+  // update style based on index
+  info.slideItems[indexPrev].classList.remove('active')
+  info.slideItems[indexCurrent].classList.add('active')
+
+  if (info.displayIndex) {
+    selectedAvatar.value = info.displayIndex - 1
+  }
+}
 
 useHead({
   title: 'Auth Signup 1 - Vuero',
 })
+
+onMounted(() => {
+  if (sliderElement.value) {
+    slider = tns({
+      container: sliderElement.value,
+      controls: false,
+      nav: false,
+      mouseDrag: true,
+      startIndex: 2,
+      fixedWidth: 100,
+      gutter: 40,
+      slideBy: 1,
+      swipeAngle: false,
+      center: false,
+      loop: true,
+      edgePadding: 325,
+    })
+    slider.events.on('indexChanged', onAvatarChanged)
+    onAvatarChanged(slider.getInfo())
+  }
+})
+
+onUnmounted(() => {
+  if (slider) {
+    slider.events.off('indexChanged', onAvatarChanged)
+    slider.destroy()
+  }
+})
 </script>
 
 <template>
-  <AuthLayout>
+  <div>
     <div class="signup-nav">
       <div class="signup-nav-inner">
         <RouterLink :to="{ name: 'index' }" class="logo">
@@ -17,18 +104,11 @@ useHead({
     </div>
 
     <div id="huro-signup" class="signup-wrapper">
-      <div class="signup-steps is-hidden">
+      <div class="signup-steps" :class="[step === 0 && 'is-hidden']">
         <div class="steps-container">
-          <!--div class="step-icon is-active" data-progress="10" data-step="signup-step-1">
-                <div class="inner">
-                    <i class="iconify" data-icon="feather:home"></i>
-                </div>
-                <span class="step-label">Sign up</span>
-            </div-->
           <div
             class="step-icon is-active"
-            data-progress="23"
-            data-step="signup-step-2"
+            :class="[step >= 1 && 'is-active', step < 1 && 'is-inactive']"
           >
             <div class="inner">
               <i class="iconify" data-icon="feather:user"></i>
@@ -36,29 +116,24 @@ useHead({
             <span class="step-label">Profile Pic</span>
           </div>
           <div
-            class="step-icon is-inactive"
-            data-progress="75"
-            data-step="signup-step-3"
+            class="step-icon"
+            :class="[step >= 2 && 'is-active', step < 2 && 'is-inactive']"
           >
             <div class="inner">
               <i class="iconify" data-icon="feather:shield"></i>
             </div>
             <span class="step-label">Account</span>
           </div>
-          <div class="step-icon is-inactive" data-progress="98">
+          <div
+            class="step-icon"
+            :class="[step >= 3 && 'is-active', step < 3 && 'is-inactive']"
+          >
             <div class="inner">
               <i class="iconify" data-icon="feather:check"></i>
             </div>
             <span class="step-label">Done</span>
           </div>
-          <progress
-            id="signup-steps-progress"
-            class="progress"
-            value="25"
-            max="100"
-          >
-            25%
-          </progress>
+          <progress class="progress" :value="step - 1" :max="2">25%</progress>
         </div>
       </div>
 
@@ -68,7 +143,10 @@ useHead({
         <div class="hero-body">
           <div class="container">
             <!-- Step 1 -->
-            <div id="signup-step-1" class="columns signup-columns">
+            <div
+              class="columns signup-columns"
+              :class="[step !== 0 && 'is-hidden']"
+            >
               <div class="column is-4 is-offset-1">
                 <h1 id="main-signup-title" class="title is-3 signup-title">
                   Become a Vuero
@@ -77,64 +155,43 @@ useHead({
                   And simply join an unmatched design experience.
                 </h2>
                 <div class="signup-card">
-                  <form id="signup-form" class="signup-form is-mobile-spaced">
+                  <form class="signup-form is-mobile-spaced" @submit.prevent>
                     <div class="columns is-multiline">
                       <div class="column is-6">
-                        <div class="control has-validation">
-                          <input type="text" class="input" />
-                          <small class="error-text"
-                            >This is a required field</small
-                          >
-                          <div class="auth-label">First Name</div>
-                          <div class="validation-icon is-success">
-                            <div class="icon-wrapper">
-                              <i class="iconify" data-icon="feather:check"></i>
-                            </div>
-                          </div>
-                          <div class="validation-icon is-error">
-                            <div class="icon-wrapper">
-                              <i class="iconify" data-icon="feather:x"></i>
-                            </div>
-                          </div>
-                        </div>
+                        <V-Field>
+                          <V-Control>
+                            <input
+                              type="text"
+                              class="input"
+                              autocomplete="given-name"
+                            />
+                            <div class="auth-label">First Name</div>
+                          </V-Control>
+                        </V-Field>
                       </div>
                       <div class="column is-6">
-                        <div class="control has-validation">
-                          <input type="text" class="input" />
-                          <small class="error-text"
-                            >This is a required field</small
-                          >
-                          <div class="auth-label">Last Name</div>
-                          <div class="validation-icon is-success">
-                            <div class="icon-wrapper">
-                              <i class="iconify" data-icon="feather:check"></i>
-                            </div>
-                          </div>
-                          <div class="validation-icon is-error">
-                            <div class="icon-wrapper">
-                              <i class="iconify" data-icon="feather:x"></i>
-                            </div>
-                          </div>
-                        </div>
+                        <V-Field>
+                          <V-Control>
+                            <input
+                              type="text"
+                              class="input"
+                              autocomplete="family-name"
+                            />
+                            <div class="auth-label">Last Name</div>
+                          </V-Control>
+                        </V-Field>
                       </div>
                       <div class="column is-12">
-                        <div class="control has-validation">
-                          <input type="text" class="input" />
-                          <small class="error-text"
-                            >This is a required field</small
-                          >
-                          <div class="auth-label">Email Address</div>
-                          <div class="validation-icon is-success">
-                            <div class="icon-wrapper">
-                              <i class="iconify" data-icon="feather:check"></i>
-                            </div>
-                          </div>
-                          <div class="validation-icon is-error">
-                            <div class="icon-wrapper">
-                              <i class="iconify" data-icon="feather:x"></i>
-                            </div>
-                          </div>
-                        </div>
+                        <V-Field>
+                          <V-Control>
+                            <input
+                              type="text"
+                              class="input"
+                              autocomplete="email"
+                            />
+                            <div class="auth-label">Email Address</div>
+                          </V-Control>
+                        </V-Field>
                       </div>
                       <div class="column is-12">
                         <div class="signup-type">
@@ -163,27 +220,30 @@ useHead({
                     </div>
 
                     <div class="control is-agree">
-                      <span
-                        >By continuing you agree to our
-                        <a href="#">Terms</a> and <a href="#">Privacy</a></span
-                      >
+                      <span>
+                        By continuing you agree to our <a href="#">Terms</a> and
+                        <a href="#">Privacy</a>
+                      </span>
                     </div>
 
                     <div class="button-wrap has-help">
-                      <button
-                        id="confirm-step-1"
-                        type="button"
-                        class="button v-button is-big is-rounded is-primary is-bold is-fullwidth"
+                      <V-Button
+                        color="primary"
+                        size="big"
+                        bold
+                        fullwidth
+                        rounded
+                        @click="step++"
                       >
                         Continue
-                      </button>
-                      <span
-                        >Or
-                        <RouterLink :to="{ name: 'auth-login-1' }"
-                          >Sign In</RouterLink
-                        >
-                        to your account.</span
-                      >
+                      </V-Button>
+                      <span>
+                        Or
+                        <RouterLink :to="{ name: 'auth-login-1' }">
+                          Sign In
+                        </RouterLink>
+                        to your account.
+                      </span>
                     </div>
                   </form>
                 </div>
@@ -191,8 +251,11 @@ useHead({
             </div>
 
             <!-- Step 2 -->
-            <div id="signup-step-2" class="columns signup-columns is-hidden">
-              <div class="column is-8 is-offset-2">
+            <div
+              class="columns signup-columns"
+              :class="[step !== 1 && 'is-hidden']"
+            >
+              <form class="column is-8 is-offset-2" @submit.prevent>
                 <div class="signup-profile-wrapper">
                   <h1 class="title is-5 signup-title has-text-centered">
                     Add a profile picture
@@ -202,11 +265,11 @@ useHead({
                   </h2>
                   <div class="picture-selector">
                     <div class="image-container">
-                      <img src="/images/avatars/svg/huro-1.svg" alt="" />
+                      <img :src="avatars[selectedAvatar]" alt="" />
                       <div
-                        class="upload-button modal-trigger"
+                        class="upload-button"
                         role="button"
-                        data-modal="upload-modal"
+                        @click="uploadModalOpen = true"
                       >
                         <i class="iconify" data-icon="feather:plus"></i>
                       </div>
@@ -220,143 +283,15 @@ useHead({
                   </div>
                 </div>
 
-                <div class="avatar-carousel resized-mobile">
-                  <div class="carousel-item">
+                <div ref="sliderElement" class="avatar-carousel resized-mobile">
+                  <div
+                    v-for="(avatar, key) in avatars"
+                    :key="key"
+                    class="carousel-item"
+                  >
                     <div class="image-wrapper">
                       <img
-                        src="/images/avatars/svg/huro-1.svg"
-                        alt=""
-                        @error="
-                          $event.target.src =
-                            'https://via.placeholder.com/150x150'
-                        "
-                      />
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="image-wrapper">
-                      <img
-                        src="/images/avatars/svg/huro-2.svg"
-                        alt=""
-                        @error="
-                          $event.target.src =
-                            'https://via.placeholder.com/150x150'
-                        "
-                      />
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="image-wrapper">
-                      <img
-                        src="/images/avatars/svg/huro-3.svg"
-                        alt=""
-                        @error="
-                          $event.target.src =
-                            'https://via.placeholder.com/150x150'
-                        "
-                      />
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="image-wrapper">
-                      <img
-                        src="/images/avatars/svg/huro-4.svg"
-                        alt=""
-                        @error="
-                          $event.target.src =
-                            'https://via.placeholder.com/150x150'
-                        "
-                      />
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="image-wrapper">
-                      <img
-                        src="/images/avatars/svg/huro-5.svg"
-                        alt=""
-                        @error="
-                          $event.target.src =
-                            'https://via.placeholder.com/150x150'
-                        "
-                      />
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="image-wrapper">
-                      <img
-                        src="/images/avatars/svg/huro-6.svg"
-                        alt=""
-                        @error="
-                          $event.target.src =
-                            'https://via.placeholder.com/150x150'
-                        "
-                      />
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="image-wrapper">
-                      <img
-                        src="/images/avatars/svg/huro-7.svg"
-                        alt=""
-                        @error="
-                          $event.target.src =
-                            'https://via.placeholder.com/150x150'
-                        "
-                      />
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="image-wrapper">
-                      <img
-                        src="/images/avatars/svg/huro-8.svg"
-                        alt=""
-                        @error="
-                          $event.target.src =
-                            'https://via.placeholder.com/150x150'
-                        "
-                      />
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="image-wrapper">
-                      <img
-                        src="/images/avatars/svg/huro-9.svg"
-                        alt=""
-                        @error="
-                          $event.target.src =
-                            'https://via.placeholder.com/150x150'
-                        "
-                      />
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="image-wrapper">
-                      <img
-                        src="/images/avatars/svg/huro-10.svg"
-                        alt=""
-                        @error="
-                          $event.target.src =
-                            'https://via.placeholder.com/150x150'
-                        "
-                      />
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="image-wrapper">
-                      <img
-                        src="/images/avatars/svg/huro-11.svg"
-                        alt=""
-                        @error="
-                          $event.target.src =
-                            'https://via.placeholder.com/150x150'
-                        "
-                      />
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="image-wrapper">
-                      <img
-                        src="/images/avatars/svg/huro-12.svg"
+                        :src="avatar"
                         alt=""
                         @error="
                           $event.target.src =
@@ -367,19 +302,24 @@ useHead({
                   </div>
                 </div>
                 <div class="button-wrap is-centered has-text-centered">
-                  <button
-                    id="confirm-step-2"
-                    type="button"
-                    class="button v-button is-primary is-big is-rounded is-lower"
+                  <V-Button
+                    color="primary"
+                    size="big"
+                    rounded
+                    lower
+                    @click="step++"
                   >
                     Continue
-                  </button>
+                  </V-Button>
                 </div>
-              </div>
+              </form>
             </div>
 
             <!-- Step 3 -->
-            <div id="signup-step-3" class="columns signup-columns is-hidden">
+            <div
+              class="columns signup-columns"
+              :class="[step !== 2 && 'is-hidden']"
+            >
               <div class="column is-4 is-offset-4 username-form">
                 <h1 class="title is-5 signup-title has-text-centered">
                   Pick a username
@@ -388,88 +328,79 @@ useHead({
                   Your username is how others will find you on Vuero so pick a
                   good one. You can change it later.
                 </h2>
-                <form class="signup-form">
+                <form class="signup-form" @submit.prevent="handleSignup">
                   <div class="columns is-multiline">
                     <div class="column is-12">
-                      <div class="control has-validation">
-                        <input type="text" class="input" />
-                        <small class="error-text"
-                          >This is a required field</small
-                        >
-                        <div class="auth-label">Username</div>
-                        <div class="validation-icon is-success">
-                          <div class="icon-wrapper">
-                            <i class="iconify" data-icon="feather:check"></i>
-                          </div>
-                        </div>
-                        <div class="validation-icon is-error">
-                          <div class="icon-wrapper">
-                            <i class="iconify" data-icon="feather:x"></i>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="column is-12">
-                      <div class="control has-validation">
-                        <input type="text" class="input" />
-                        <small class="error-text"
-                          >This is a required field</small
-                        >
-                        <div class="auth-label">Password</div>
-                        <div class="validation-icon is-success">
-                          <div class="icon-wrapper">
-                            <i class="iconify" data-icon="feather:check"></i>
-                          </div>
-                        </div>
-                        <div class="validation-icon is-error">
-                          <div class="icon-wrapper">
-                            <i class="iconify" data-icon="feather:x"></i>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="column is-12">
-                      <div class="control has-validation">
-                        <input type="text" class="input" />
-                        <small class="error-text"
-                          >This is a required field</small
-                        >
-                        <div class="auth-label">Confirm Password</div>
-                        <div class="validation-icon is-success">
-                          <div class="icon-wrapper">
-                            <i class="iconify" data-icon="feather:check"></i>
-                          </div>
-                        </div>
-                        <div class="validation-icon is-error">
-                          <div class="icon-wrapper">
-                            <i class="iconify" data-icon="feather:x"></i>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="column is-12">
-                      <div class="control has-switch">
-                        <span>Send me marketing and transaction emails</span>
-                        <label class="form-switch ml-auto">
+                      <V-Field>
+                        <V-Control>
                           <input
-                            id="signup-toggle"
-                            type="checkbox"
-                            class="is-switch"
+                            type="text"
+                            class="input"
+                            autocomplete="username"
                           />
-                          <i></i>
-                        </label>
-                      </div>
+                          <div class="auth-label">Username</div>
+                        </V-Control>
+                      </V-Field>
+                    </div>
+                    <div class="column is-12">
+                      <V-Field>
+                        <V-Control>
+                          <input
+                            type="password"
+                            class="input"
+                            autocomplete="new-password"
+                          />
+                          <div class="auth-label">Password</div>
+                        </V-Control>
+                      </V-Field>
+                    </div>
+                    <div class="column is-12">
+                      <V-Field>
+                        <V-Control>
+                          <input
+                            type="password"
+                            class="input"
+                            autocomplete="new-password"
+                          />
+                          <div class="auth-label">Confirm Password</div>
+                        </V-Control>
+                      </V-Field>
+                    </div>
+                    <div class="column is-12">
+                      <V-Field>
+                        <V-Control class="has-switch">
+                          <label for="send-marketing"
+                            ><span
+                              >Send me marketing and transaction emails</span
+                            ></label
+                          >
+                          <label
+                            for="send-marketing"
+                            class="form-switch ml-auto"
+                          >
+                            <input
+                              id="send-marketing"
+                              type="checkbox"
+                              class="is-switch"
+                            />
+                            <i></i>
+                          </label>
+                        </V-Control>
+                      </V-Field>
                     </div>
                   </div>
 
                   <div class="button-wrap is-centered has-text-centered">
-                    <button
-                      id="finish-signup"
-                      type="button"
-                      class="button v-button is-big is-rounded is-primary is-lower"
+                    <V-Button
+                      size="big"
+                      color="primary"
+                      rounded
+                      primary
+                      lower
+                      :loading="isLoading"
                     >
                       Done
-                    </button>
+                    </V-Button>
                   </div>
                 </form>
               </div>
@@ -480,44 +411,51 @@ useHead({
     </div>
 
     <!-- upload modal -->
-    <div id="upload-modal" class="modal modal-sm">
-      <div class="modal-background"></div>
-      <div class="modal-content">
-        <div class="v-modal">
-          <div class="modal-heading">
-            <AnimatedLogo light width="38px" height="38px" />
-            <h2 class="subtitle is-6 is-light has-text-centered">
-              Upload and crop your picture
-            </h2>
-          </div>
-          <div class="v-modal-card">
-            <div class="upload-demo-wrap">
-              <div id="upload-demo"></div>
-            </div>
+    <V-Modal
+      :open="uploadModalOpen"
+      title="Upload and crop your picture"
+      actions="center"
+      size="small"
+      @close="uploadModalOpen = false"
+    >
+      <template #content>
+        <div class="has-text-centered">
+          <div class="upload-demo-wrap"><V-Avatar size="big" /></div>
 
-            <small class="help-text">Use the slider to resize the image</small>
+          <small class="help-text">Use the slider to resize the image</small>
 
-            <div class="actions">
-              <div class="button v-button is-big is-outlined upload-button">
-                <span>Upload</span>
-                <input id="upload" type="file" accept="image/*" />
-              </div>
-              <button
-                class="button v-button is-big is-outlined upload-result is-disabled"
-              >
-                Confirm
-              </button>
-            </div>
-          </div>
+          <V-Field class="resize-handler">
+            <V-Control>
+              <Slider v-model="resizeValue" :tooltips="false" />
+            </V-Control>
+          </V-Field>
         </div>
-      </div>
-      <button
-        class="modal-close is-large is-hidden"
-        aria-label="close"
-      ></button>
-    </div>
-    <!-- upload modal -->
-  </AuthLayout>
+      </template>
+      <template #cancel><wbr /></template>
+      <template #action>
+        <V-Field grouped>
+          <V-Control>
+            <div class="file">
+              <label class="file-label">
+                <input class="file-input" type="file" name="resume" />
+                <span class="file-cta">
+                  <span class="file-icon">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                  </span>
+                  <span class="file-label"> Choose a file… </span>
+                </span>
+              </label>
+            </div>
+          </V-Control>
+          <V-Control>
+            <V-Button class="upload-result" size="big" outlined disabled>
+              Confirm
+            </V-Button>
+          </V-Control>
+        </V-Field>
+      </template>
+    </V-Modal>
+  </div>
 </template>
 
 <style lang="scss">
@@ -1087,8 +1025,8 @@ useHead({
 
 .avatar-carousel {
   text-align: center;
-  max-width: 550px;
-  margin: 0 auto 20px auto;
+  // max-width: 550px;
+  // margin: 0 auto 20px auto;
 
   &:hover .slick-custom {
     opacity: 1;
@@ -1115,7 +1053,7 @@ useHead({
     }
   }
 
-  .slick-slide {
+  .tns-item {
     max-width: 120px;
     text-align: center;
     cursor: pointer;
@@ -1130,7 +1068,7 @@ useHead({
       transform: scale(0.75);
     }
 
-    &.slick-current {
+    &.active {
       img {
         opacity: 1;
         transform: scale(1);
@@ -1197,6 +1135,11 @@ useHead({
       right: -6px;
     }
   }
+}
+
+.resize-handler {
+  max-width: 200px;
+  margin: 7px auto 10px auto;
 }
 
 .username-form {

@@ -1,7 +1,11 @@
 <script setup lang="ts">
-import { defineProps } from 'vue'
+import { computed, defineProps } from 'vue'
 
-defineProps({
+const props = defineProps({
+  to: {
+    type: Object,
+    default: undefined,
+  },
   circle: {
     type: Boolean,
     default: false,
@@ -16,6 +20,7 @@ defineProps({
   },
   dark: {
     type: String,
+    default: undefined,
   },
   raised: {
     type: Boolean,
@@ -54,29 +59,37 @@ defineProps({
     default: '',
   },
 })
+const classes = computed(() => {
+  return [
+    props.disabled && 'is-disabled',
+    props.circle && 'is-circle',
+    props.bold && 'is-bold',
+    props.outlined && 'is-outlined',
+    props.raised && 'is-raised',
+    props.dark && `is-dark-bg-${props.dark}`,
+    props.darkOutlined && 'is-dark-outlined',
+    props.elevated && 'is-elevated',
+    props.loading && 'is-loading',
+    props.color && `is-${props.color}`,
+    props.color && props.light && 'is-light',
+  ]
+})
 </script>
 
 <template>
-  <button
-    class="button"
-    :class="[
-      circle && 'is-circle',
-      bold && 'is-bold',
-      outlined && 'is-outlined',
-      raised && 'is-raised',
-      dark && `is-dark-bg-${dark}`,
-      darkOutlined && 'is-dark-outlined',
-      elevated && 'is-elevated',
-      loading && 'is-loading',
-      color && `is-${color}`,
-      color && light && 'is-light',
-    ]"
-    :disabled="disabled"
-  >
+  <RouterLink v-if="to" :to="to" class="button" :class="classes">
     <span v-if="fa" class="icon">
       <i :class="fa"></i>
     </span>
-    <span v-if="iconify" class="icon">
+    <span v-else-if="iconify" class="icon">
+      <i class="iconify" :data-icon="iconify"></i>
+    </span>
+  </RouterLink>
+  <button v-else class="button" :class="classes" :disabled="disabled">
+    <span v-if="fa" class="icon">
+      <i :class="fa"></i>
+    </span>
+    <span v-else-if="iconify" class="icon">
       <i class="iconify" :data-icon="iconify"></i>
     </span>
   </button>

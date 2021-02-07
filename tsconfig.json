@@ -4,7 +4,7 @@
     "module": "ESNext",
     "target": "ESNext",
     "lib": ["DOM", "ESNext"],
-    "types": ["node", "vite/client"],
+    "types": ["node", "vite/client", "vite-plugin-pages/client"],
     "strict": true,
     "esModuleInterop": true,
     "incremental": true,
@@ -17,10 +17,5 @@
       "/@src/*": ["src/*"],
     },
   },
-  "exclude": [
-    "**/dist",
-    "**/node_modules",
-    "**/cypress",
-    "**/test"
-  ],
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.vue", "documentation/**/*.md"],
 }

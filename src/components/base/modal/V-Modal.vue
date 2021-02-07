@@ -85,12 +85,14 @@ watch(() => props.open, checkScroll)
               actions === 'right' && 'is-end',
             ]"
           >
-            <a
-              class="button v-button v-modal-close"
-              :class="[rounded && 'is-rounded']"
-              @click="emit('close')"
-              >Cancel</a
-            >
+            <slot name="cancel">
+              <a
+                class="button v-button v-modal-close"
+                :class="[rounded && 'is-rounded']"
+                @click="emit('close')"
+                >Cancel</a
+              >
+            </slot>
             <slot name="action"></slot>
           </div>
         </div>

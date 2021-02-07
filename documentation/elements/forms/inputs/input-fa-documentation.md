@@ -9,7 +9,7 @@ You also have to provide an icon type using the `icon` or `iconify` props.
 ```vue
 <template>
   <V-Field>
-    <V-Control iconed icon="fab fa-twitter">
+    <V-Control icon="fab fa-twitter">
       <input type="text" class="input is-rounded" placeholder="Username" />
     </V-Control>
   </V-Field>
@@ -21,7 +21,7 @@ You also have to provide an icon type using the `icon` or `iconify` props.
 <!--example-->
 
 <V-Field>
-  <V-Control iconed icon="fab fa-twitter">
+  <V-Control icon="fab fa-twitter">
     <input
         type="text"
         class="input is-rounded"

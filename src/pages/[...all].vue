@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
 import { onMounted } from 'vue'
-import { useRoute } from 'vue-router'
+import { useRoute, useRouter } from 'vue-router'
 
 const route = useRoute()
 
@@ -35,11 +35,9 @@ useHead({
             an administrator if the problem persists.
           </p>
           <div class="button-wrap">
-            <RouterLink
-              :to="{ name: 'index' }"
-              class="button v-button is-primary is-elevated"
-              >Take me Back</RouterLink
-            >
+            <V-Button primary elevated :to="{ name: 'index' }">
+              Take me Back
+            </V-Button>
           </div>
         </div>
       </div>

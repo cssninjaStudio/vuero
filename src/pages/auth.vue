@@ -1,5 +1,7 @@
 <template>
-  <RouterView />
+  <AuthLayout>
+    <RouterView />
+  </AuthLayout>
 </template>
 
 <style lang="scss">

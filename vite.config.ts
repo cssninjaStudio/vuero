@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 import path from 'path'
 import Vue from '@vitejs/plugin-vue'
-import Pages from 'vite-plugin-voie'
+import Pages from 'vite-plugin-pages'
 import ViteComponents from 'vite-plugin-components'
 import ViteFonts from 'vite-plugin-fonts'
 import PurgeIcons from 'vite-plugin-purge-icons'
@@ -19,7 +19,9 @@ export default defineConfig({
     },
   ],
   plugins: [
-    Vue(),
+    Vue({
+      include: [/\.vue$/],
+    }),
 
     // https://github.com/hannoeru/vite-plugin-pages
     Pages(),

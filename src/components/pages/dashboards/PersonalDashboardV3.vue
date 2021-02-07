@@ -33,7 +33,7 @@ import { userStack } from '/@src/data/dashboards/personal-v3/users'
                 </div>
               </div>
               <div class="button-wrap">
-                <V-Button color="primary" fullwidth big raised
+                <V-Button color="primary" size="big" fullwidth raised
                   >View Schedule</V-Button
                 >
               </div>

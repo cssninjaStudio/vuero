@@ -1,3 +1,5 @@
 <template>
-  <RouterView />
+  <MinimalLayout>
+    <RouterView />
+  </MinimalLayout>
 </template>

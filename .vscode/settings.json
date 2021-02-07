@@ -2,13 +2,12 @@
   "css.validate": false,
   "less.validate": false,
   "scss.validate": false,
-  "editor.formatOnSave": false,
+  "editor.formatOnSave": true,
+  "vetur.validation.template": false,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
   "eslint.alwaysShowStatus": true,
-  // "eslint.autoFixOnSave": true,
-  // "eslint.packageManager": "pnpm",
   "eslint.validate": [
     "javascript",
     "javascriptreact",
@@ -18,19 +17,12 @@
   "[vue]": {
     "editor.formatOnSave": false
   },
-  "[sass]": {
-    "editor.formatOnSave": false
-  },
   "[markdown]": {
-    "editor.formatOnSave": true,
-    "editor.rulers": [ 80 ]
-    // "vetur.validation.template": true,
+    "editor.formatOnSave": false,
+    "editor.rulers": [80]
   },
-  "vetur.format.enable": true,
-  "vetur.validation.template": false,
+  "vetur.experimental.templateInterpolationService": false,
   "vetur.validation.interpolation": false,
-  "vetur.validation.templateProps": true,
-  "vetur.experimental.templateInterpolationService": true,
   "vetur.completion.tagCasing": "initial",
   "vetur.completion.autoImport": true,
   "i18n-ally.localesPaths": [

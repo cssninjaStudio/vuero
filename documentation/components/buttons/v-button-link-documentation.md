@@ -1,17 +1,17 @@
-### V-ButtonLink
+### V-Button link
 
-Vuero provides a `<V-ButtonLink />` component if you don't want to use
-the simple Html button. `<V-ButtonLink />` is an alternative to `<V-Button />`
-that renders a router link. All `<V-Button />` props are available.
+`<V-Button />` provides a `to` property that can be used like
+on `<RouterLink />`. You can also use a `href` property to render
+a standard `<a>` tag. If none is used a `<button>` is rendered insted.
 
 <!--code-->
 
 ```vue
 <template>
-  <V-ButtonLink link="index"> Home </V-ButtonLink>
-  <V-ButtonLink bold link="index"> Home </V-ButtonLink>
-  <V-ButtonLink rounded link="index"> Home </V-ButtonLink>
-  <V-ButtonLink bold rounded link="index"> Home </V-ButtonLink>
+  <V-Button :to="{ name: 'index' }"> Home </V-Button>
+  <V-Button bold :to="{ name: 'index' }"> Home </V-Button>
+  <V-Button rounded href="https://vuero.cssninja.io"> Home </V-Button>
+  <V-Button bold rounded href="https://vuero.cssninja.io"> Home </V-Button>
 </template>
 ```
 
@@ -20,18 +20,18 @@ that renders a router link. All `<V-Button />` props are available.
 <!--example-->
 
 <div class="buttons">
-    <V-ButtonLink link="index">
-        Home
-    </V-ButtonLink>
-    <V-ButtonLink bold link="index">
-        Home
-    </V-ButtonLink>
-    <V-ButtonLink rounded link="index">
-        Home
-    </V-ButtonLink>
-    <V-ButtonLink bold rounded link="index">
-        Home
-    </V-ButtonLink>
+  <V-Button :to="{ name: 'index' }">
+    Home
+  </V-Button>
+  <V-Button bold :to="{ name: 'index' }">
+    Home
+  </V-Button>
+  <V-Button rounded href="https://vuero.cssninja.io">
+    Home
+  </V-Button>
+  <V-Button bold rounded href="https://vuero.cssninja.io">
+    Home
+  </V-Button>
 </div>
 
 <!--/example-->

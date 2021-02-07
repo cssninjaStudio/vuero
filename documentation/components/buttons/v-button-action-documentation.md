@@ -20,10 +20,10 @@ V-Actions can be `rounded`, `hoverable` or `grey` using the related props.
 <!--example-->
 
 <div class="buttons">
-    <V-Action> Action </V-Action>
-    <V-Action rounded> Action </V-Action>
-    <V-Action hoverable> Action </V-Action>
-    <V-Action grey> Action </V-Action>
+  <V-Action> Action </V-Action>
+  <V-Action rounded> Action </V-Action>
+  <V-Action hoverable> Action </V-Action>
+  <V-Action grey> Action </V-Action>
 </div>
 
 <!--/example-->

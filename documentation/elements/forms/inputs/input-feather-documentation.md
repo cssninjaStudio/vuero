@@ -1,15 +1,15 @@
 ### Feather Icons
 
 Vuero inputs are fully compatible with Feather Icons.
-Use the `iconed` prop on the `<V-Control />` component to show an icon.
-You also have to provide an icon type using the `icon` or `iconify` props.
+Use the `icon` or `iconify` propson the `<V-Control />`
+component to show an icon.
 
 <!--code-->
 
 ```vue
 <template>
   <V-Field>
-    <V-Control iconed iconify="feather:github">
+    <V-Control iconify="feather:github">
       <input type="text" class="input is-rounded" placeholder="GitHub URL" />
     </V-Control>
   </V-Field>
@@ -21,7 +21,7 @@ You also have to provide an icon type using the `icon` or `iconify` props.
 <!--example-->
 
 <V-Field>
-  <V-Control iconed iconify="feather:github">
+  <V-Control iconify="feather:github">
     <input
         type="text"
         class="input is-rounded"

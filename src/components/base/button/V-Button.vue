@@ -1,16 +1,25 @@
 <script setup lang="ts">
-import { defineProps } from 'vue'
+import type { PropType } from 'vue'
+import { defineProps, computed } from 'vue'
 
-defineProps({
+const props = defineProps({
+  to: {
+    type: Object,
+    default: undefined,
+  },
+  href: {
+    type: String,
+    default: undefined,
+  },
   rounded: {
     type: Boolean,
     default: false,
   },
-  bold: {
-    type: Boolean,
-    default: false,
+  size: {
+    type: String as PropType<'big' | 'huge'>,
+    default: undefined,
   },
-  big: {
+  bold: {
     type: Boolean,
     default: false,
   },
@@ -45,48 +54,78 @@ defineProps({
     type: Boolean,
     default: false,
   },
+  lower: {
+    type: Boolean,
+    default: false,
+  },
   disabled: {
     type: Boolean,
     default: false,
   },
   color: {
     type: String,
-    default: '',
+    default: undefined,
   },
   iconify: {
     type: String,
-    default: '',
+    default: undefined,
   },
   fa: {
     type: String,
-    default: '',
+    default: undefined,
   },
+})
+
+const classes = computed(() => {
+  return [
+    'button',
+    'v-button',
+    props.disabled && 'is-disabled',
+    props.rounded && 'is-rounded',
+    props.bold && 'is-bold',
+    props.size && `is-${props.size}`,
+    props.lower && 'is-lower',
+    props.fullwidth && 'is-fullwidth',
+    props.outlined && 'is-outlined',
+    props.dark && `is-dark-bg-${props.dark}`,
+    props.darkOutlined && 'is-dark-outlined',
+    props.raised && 'is-raised',
+    props.elevated && 'is-elevated',
+    props.loading && 'is-loading',
+    props.color && `is-${props.color}`,
+    props.light && 'is-light',
+  ]
 })
 </script>
 
 <template>
-  <button
-    class="button v-button"
-    :class="[
-      rounded && 'is-rounded',
-      bold && 'is-bold',
-      big && 'is-big',
-      fullwidth && 'is-fullwidth',
-      outlined && 'is-outlined',
-      dark && `is-dark-bg-${dark}`,
-      darkOutlined && 'is-dark-outlined',
-      raised && 'is-raised',
-      elevated && 'is-elevated',
-      loading && 'is-loading',
-      color && `is-${color}`,
-      light && 'is-light',
-    ]"
-    :disabled="disabled"
-  >
+  <RouterLink v-if="to" :to="to" :class="classes">
     <span v-if="fa" class="icon">
       <i :class="fa"></i>
     </span>
-    <span v-if="iconify" class="icon">
+    <span v-else-if="iconify" class="icon">
+      <i class="iconify" :data-icon="iconify"></i>
+    </span>
+    <span>
+      <slot></slot>
+    </span>
+  </RouterLink>
+  <a v-else-if="href" :href="href" :class="classes">
+    <span v-if="fa" class="icon">
+      <i :class="fa"></i>
+    </span>
+    <span v-else-if="iconify" class="icon">
+      <i class="iconify" :data-icon="iconify"></i>
+    </span>
+    <span>
+      <slot></slot>
+    </span>
+  </a>
+  <button v-else :class="classes" :disabled="disabled">
+    <span v-if="fa" class="icon">
+      <i :class="fa"></i>
+    </span>
+    <span v-else-if="iconify" class="icon">
       <i class="iconify" :data-icon="iconify"></i>
     </span>
     <span>
