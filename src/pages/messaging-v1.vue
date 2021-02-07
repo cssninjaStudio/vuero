@@ -7,6 +7,11 @@ import {
   activeSidebar,
   toggleSidebar,
 } from '/@src/composition/state/activeSidebarState'
+import {
+  adminLayout,
+  adminLayoutId,
+} from '/@src/composition/state/adminLayoutState'
+
 import useDropdown from '/@src/composition/use/useDropdown'
 import sleep from '/@src/utils/sleep'
 
@@ -102,7 +107,7 @@ watch(selectedConversationId, onConversationChanged)
 </script>
 
 <template>
-  <DefaultLayout>
+  <component :is="adminLayout" :class="[adminLayoutId]">
     <MessagesSidebar
       :conversations="conversations"
       :selected-conversation-id="selectedConversationId"
@@ -626,7 +631,7 @@ watch(selectedConversationId, onConversationChanged)
     <a class="chat-side-fab">
       <i class="iconify" data-icon="feather:chevron-left"></i>
     </a>
-  </DefaultLayout>
+  </component>
 </template>
 
 <style lang="scss">
