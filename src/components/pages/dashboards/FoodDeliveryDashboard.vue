@@ -64,7 +64,10 @@ onUnmounted(() => {
     <div class="left">
       <div class="left-header">
         <div class="header-image">
-          <img src="/images/illustrations/dashboards/food/header.svg" alt="" />
+          <img
+            src="/@src/assets/illustrations/dashboards/food/header.svg"
+            alt=""
+          />
         </div>
         <div class="header-meta">
           <h3>$0 delivery for 30 days! 🎉</h3>
@@ -222,11 +225,22 @@ onUnmounted(() => {
             </div>
           </div>
           <V-PlaceholderSection
-            image-light="/images/illustrations/dashboards/food/cart-placeholder.svg"
-            image-dark="/images/illustrations/dashboards/food/cart-placeholder.svg"
             title="No Items"
             subtitle="Your cart is currently empty. Start adding products."
-          />
+          >
+            <template #image>
+              <img
+                class="light-image"
+                src="/@src/assets/illustrations/dashboards/food/cart-placeholder.svg"
+                alt=""
+              />
+              <img
+                class="dark-image"
+                src="/@src/assets/illustrations/dashboards/food/cart-placeholder.svg"
+                alt=""
+              />
+            </template>
+          </V-PlaceholderSection>
           <div class="cart-items has-slimscroll is-hidden">
             <div class="cart-item">
               <V-Avatar
@@ -290,7 +304,7 @@ onUnmounted(() => {
             class="illustration-widget-v2"
             title="You unlocked 2 new Achievements"
             text="Congrats, your efforts have been rewarded. Keep up like this!"
-            picture="/images/illustrations/dashboards/food/widget.svg"
+            picture="/@src/assets/illustrations/dashboards/food/widget.svg"
           />
         </div>
 

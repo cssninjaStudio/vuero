@@ -26,20 +26,20 @@ which can be whatever you want, and one for the `action`.
 <!--example-->
 
 <div class="field">
-    <div class="control">
-        <div class="l-card">
-            <V-Block title="Team Tasks" subtitle="View all tasks">
-                <template #icon>
-                    <VIconBox color="success" rounded>
-                        <i class="iconify" data-icon="feather:clock">
-                    </VIconBox>
-                </template>
-                <template #action>
-                    <V-Button color="primary" elevated>View</V-Button>
-                </template>
-            </V-Block>
-        </div>
+  <div class="control">
+    <div class="l-card">
+      <V-Block title="Team Tasks" subtitle="View all tasks">
+        <template #icon>
+          <VIconBox color="success" rounded>
+            <i class="iconify" data-icon="feather:clock"></i>
+          </VIconBox>
+        </template>
+        <template #action>
+          <V-Button color="primary" elevated>View</V-Button>
+        </template>
+      </V-Block>
     </div>
+  </div>
 </div>
 
 <!--/example-->

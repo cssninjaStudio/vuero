@@ -331,7 +331,7 @@ const activeTab = ref<TabId>('list')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'webapp-layouts-profile-edit-1' }">
+                    <RouterLink :to="{ name: 'webapp-layouts-profile-edit' }">
                       <i class="lnil lnil-pencil"></i>
                       <span>Edit Profile</span>
                       <i class="iconify" data-icon="feather:circle"></i>

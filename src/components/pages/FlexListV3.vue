@@ -17,12 +17,12 @@ const props = defineProps({
       <div class="placeholder-content">
         <img
           class="light-image"
-          src="/images/illustrations/placeholders/search-4.svg"
+          src="/@src/assets/illustrations/placeholders/search-4.svg"
           alt=""
         />
         <img
           class="dark-image"
-          src="/images/illustrations/placeholders/search-4-dark.svg"
+          src="/@src/assets/illustrations/placeholders/search-4-dark.svg"
           alt=""
         />
         <h3>We couldn't find any matching results.</h3>
@@ -665,12 +665,12 @@ const props = defineProps({
         <div class="placeholder-content">
           <img
             class="light-image is-larger"
-            src="/images/illustrations/placeholders/courses.svg"
+            src="/@src/assets/illustrations/placeholders/courses.svg"
             alt=""
           />
           <img
             class="dark-image is-larger"
-            src="/images/illustrations/placeholders/courses-dark.svg"
+            src="/@src/assets/illustrations/placeholders/courses-dark.svg"
             alt=""
           />
           <h3>No saved courses.</h3>

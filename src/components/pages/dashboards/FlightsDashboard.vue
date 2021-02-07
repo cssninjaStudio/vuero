@@ -7,12 +7,12 @@
         <div class="booking-bar-wrapper">
           <img
             class="travel-illustration light-image"
-            src="/images/illustrations/dashboards/flights/travel.svg"
+            src="/@src/assets/illustrations/dashboards/flights/travel.svg"
             alt=""
           />
           <img
             class="travel-illustration dark-image"
-            src="/images/illustrations/dashboards/flights/travel-dark.svg"
+            src="/@src/assets/illustrations/dashboards/flights/travel-dark.svg"
             alt=""
           />
           <div class="booking-bar-info">
@@ -95,7 +95,7 @@
           <!--Flight-->
           <a class="flight-card">
             <img
-              src="/images/illustrations/dashboards/flights/company1.svg"
+              src="/@src/assets/illustrations/dashboards/flights/company1.svg"
               alt=""
             />
             <div class="start">
@@ -121,7 +121,7 @@
           <!--Flight-->
           <a class="flight-card">
             <img
-              src="/images/illustrations/dashboards/flights/company2.svg"
+              src="/@src/assets/illustrations/dashboards/flights/company2.svg"
               alt=""
             />
             <div class="start">
@@ -147,7 +147,7 @@
           <!--Flight-->
           <a class="flight-card">
             <img
-              src="/images/illustrations/dashboards/flights/company1.svg"
+              src="/@src/assets/illustrations/dashboards/flights/company1.svg"
               alt=""
             />
             <div class="start">
@@ -173,7 +173,7 @@
           <!--Flight-->
           <a class="flight-card">
             <img
-              src="/images/illustrations/dashboards/flights/company3.svg"
+              src="/@src/assets/illustrations/dashboards/flights/company3.svg"
               alt=""
             />
             <div class="start">
@@ -199,7 +199,7 @@
           <!--Flight-->
           <a class="flight-card">
             <img
-              src="/images/illustrations/dashboards/flights/company1.svg"
+              src="/@src/assets/illustrations/dashboards/flights/company1.svg"
               alt=""
             />
             <div class="start">

@@ -291,13 +291,24 @@ const democheck4 = ref(false)
 
         <div class="dashboard-card">
           <V-PlaceholderSection
-            image-light="/images/illustrations/placeholders/chart-guy.svg"
-            image-dark="/images/illustrations/placeholders/chart-guy-dark.svg"
             title="Go Premium"
             subtitle="Unlock more features and business tools by going premium"
             action
             cta="Go Premium"
-          />
+          >
+            <template #image>
+              <img
+                class="light-image"
+                src="/@src/assets/illustrations/placeholders/chart-guy.svg"
+                alt=""
+              />
+              <img
+                class="dark-image"
+                src="/@src/assets/illustrations/placeholders/chart-guy-dark.svg"
+                alt=""
+              />
+            </template>
+          </V-PlaceholderSection>
         </div>
       </div>
     </div>

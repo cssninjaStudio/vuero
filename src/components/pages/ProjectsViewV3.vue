@@ -3,12 +3,12 @@
     <div class="illustration-header">
       <img
         class="light-image"
-        src="/images/illustrations/projects/header.svg"
+        src="/@src/assets/illustrations/projects/header.svg"
         alt=""
       />
       <img
         class="dark-image"
-        src="/images/illustrations/projects/header-dark.svg"
+        src="/@src/assets/illustrations/projects/header-dark.svg"
         alt=""
       />
       <div class="header-stats">

@@ -18,12 +18,12 @@ const props = defineProps({
       <div class="placeholder-content">
         <img
           class="light-image"
-          src="/images/illustrations/placeholders/search-3.svg"
+          src="/@src/assets/illustrations/placeholders/search-3.svg"
           alt=""
         />
         <img
           class="dark-image"
-          src="/images/illustrations/placeholders/search-3-dark.svg"
+          src="/@src/assets/illustrations/placeholders/search-3-dark.svg"
           alt=""
         />
         <h3>We couldn't find any matching results.</h3>
@@ -50,7 +50,7 @@ const props = defineProps({
             </div>
             <img
               class="avatar"
-              src="/images/illustrations/list-views/cake-1.svg"
+              src="/@src/assets/illustrations/list-views/cake-1.svg"
               alt=""
               @error="$event.target.src = 'https://via.placeholder.com/150x150'"
             />
@@ -133,7 +133,7 @@ const props = defineProps({
             </div>
             <img
               class="avatar"
-              src="/images/illustrations/list-views/cake-2.svg"
+              src="/@src/assets/illustrations/list-views/cake-2.svg"
               alt=""
               @error="$event.target.src = 'https://via.placeholder.com/150x150'"
             />
@@ -235,7 +235,7 @@ const props = defineProps({
             </div>
             <img
               class="avatar"
-              src="/images/illustrations/list-views/cake-3.svg"
+              src="/@src/assets/illustrations/list-views/cake-3.svg"
               alt=""
               @error="$event.target.src = 'https://via.placeholder.com/150x150'"
             />
@@ -337,7 +337,7 @@ const props = defineProps({
             </div>
             <img
               class="avatar"
-              src="/images/illustrations/list-views/cake-4.svg"
+              src="/@src/assets/illustrations/list-views/cake-4.svg"
               alt=""
               @error="$event.target.src = 'https://via.placeholder.com/150x150'"
             />
@@ -439,7 +439,7 @@ const props = defineProps({
             </div>
             <img
               class="avatar"
-              src="/images/illustrations/list-views/cake-5.svg"
+              src="/@src/assets/illustrations/list-views/cake-5.svg"
               alt=""
               data-user-popover="14"
               @error="$event.target.src = 'https://via.placeholder.com/150x150'"
@@ -542,7 +542,7 @@ const props = defineProps({
             </div>
             <img
               class="avatar"
-              src="/images/illustrations/list-views/cake-6.svg"
+              src="/@src/assets/illustrations/list-views/cake-6.svg"
               alt=""
               @error="$event.target.src = 'https://via.placeholder.com/150x150'"
             />
@@ -644,7 +644,7 @@ const props = defineProps({
             </div>
             <img
               class="avatar"
-              src="/images/illustrations/list-views/cake-7.svg"
+              src="/@src/assets/illustrations/list-views/cake-7.svg"
               alt=""
               @error="$event.target.src = 'https://via.placeholder.com/150x150'"
             />
@@ -746,7 +746,7 @@ const props = defineProps({
             </div>
             <img
               class="avatar"
-              src="/images/illustrations/list-views/cake-8.svg"
+              src="/@src/assets/illustrations/list-views/cake-8.svg"
               alt=""
               @error="$event.target.src = 'https://via.placeholder.com/150x150'"
             />
@@ -848,7 +848,7 @@ const props = defineProps({
             </div>
             <img
               class="avatar"
-              src="/images/illustrations/list-views/cake-9.svg"
+              src="/@src/assets/illustrations/list-views/cake-9.svg"
               alt=""
               @error="$event.target.src = 'https://via.placeholder.com/150x150'"
             />
@@ -950,7 +950,7 @@ const props = defineProps({
             </div>
             <img
               class="avatar"
-              src="/images/illustrations/list-views/cake-10.svg"
+              src="/@src/assets/illustrations/list-views/cake-10.svg"
               alt=""
               @error="$event.target.src = 'https://via.placeholder.com/150x150'"
             />
@@ -1068,12 +1068,12 @@ const props = defineProps({
           <div class="placeholder-content">
             <img
               class="light-image"
-              src="/images/illustrations/placeholders/cooking.svg"
+              src="/@src/assets/illustrations/placeholders/cooking.svg"
               alt=""
             />
             <img
               class="dark-image"
-              src="/images/illustrations/placeholders/cooking-dark.svg"
+              src="/@src/assets/illustrations/placeholders/cooking-dark.svg"
               alt=""
             />
             <h3>No saved recipes.</h3>

@@ -668,11 +668,11 @@ var {
 }
 
 .light-image-block {
-  display: block;
+  display: block !important;
 }
 
 .dark-image-block {
-  display: none;
+  display: none !important;
 }
 
 .is-dark {

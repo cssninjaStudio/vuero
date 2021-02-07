@@ -11,12 +11,12 @@
         <div class="onboarding-card">
           <img
             class="light-image"
-            src="/images/illustrations/onboarding/set1-1.svg"
+            src="/@src/assets/illustrations/onboarding/set1-1.svg"
             alt=""
           />
           <img
             class="dark-image"
-            src="/images/illustrations/onboarding/set1-1-dark.svg"
+            src="/@src/assets/illustrations/onboarding/set1-1-dark.svg"
             alt=""
           />
           <h3>Configure Shop</h3>
@@ -36,12 +36,12 @@
         <div class="onboarding-card">
           <img
             class="light-image"
-            src="/images/illustrations/onboarding/set1-2.svg"
+            src="/@src/assets/illustrations/onboarding/set1-2.svg"
             alt=""
           />
           <img
             class="dark-image"
-            src="/images/illustrations/onboarding/set1-2-dark.svg"
+            src="/@src/assets/illustrations/onboarding/set1-2-dark.svg"
             alt=""
           />
           <h3>Manage Products</h3>
@@ -61,12 +61,12 @@
         <div class="onboarding-card">
           <img
             class="light-image"
-            src="/images/illustrations/onboarding/set1-3.svg"
+            src="/@src/assets/illustrations/onboarding/set1-3.svg"
             alt=""
           />
           <img
             class="dark-image"
-            src="/images/illustrations/onboarding/set1-3-dark.svg"
+            src="/@src/assets/illustrations/onboarding/set1-3-dark.svg"
             alt=""
           />
           <h3>Setup Payments</h3>

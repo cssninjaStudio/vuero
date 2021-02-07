@@ -217,12 +217,12 @@ watch(selectedConversationId, onConversationChanged)
                 <li v-if="messages.length === 0" class="no-messages">
                   <img
                     class="light-image"
-                    src="/images/illustrations/placeholders/search-4.svg"
+                    src="/@src/assets/illustrations/placeholders/search-4.svg"
                     alt=""
                   />
                   <img
                     class="dark-image"
-                    src="/images/illustrations/placeholders/search-4-dark.svg"
+                    src="/@src/assets/illustrations/placeholders/search-4-dark.svg"
                     alt=""
                   />
                   <div class="text">
@@ -607,7 +607,7 @@ watch(selectedConversationId, onConversationChanged)
           >
             <div class="caption">
               <img
-                src="/images/illustrations/placeholders/having-coffee.svg"
+                src="/@src/assets/illustrations/placeholders/having-coffee.svg"
                 alt=""
                 @error="
                   $event.target.src = 'https://via.placeholder.com/150x150'

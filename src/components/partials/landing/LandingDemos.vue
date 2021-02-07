@@ -25,13 +25,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-dashboards-personal-1.png"
+              src="/@src/assets/screenshots/admin-dashboards-personal-1.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-dashboards-personal-1-dark.png"
+              src="/@src/assets/screenshots/admin-dashboards-personal-1-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -57,13 +57,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-dashboards-personal-2.png"
+              src="/@src/assets/screenshots/admin-dashboards-personal-2.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-dashboards-personal-2-dark.png"
+              src="/@src/assets/screenshots/admin-dashboards-personal-2-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -89,13 +89,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-dashboards-personal-3.png"
+              src="/@src/assets/screenshots/admin-dashboards-personal-3.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-dashboards-personal-3-dark.png"
+              src="/@src/assets/screenshots/admin-dashboards-personal-3-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -121,13 +121,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-dashboards-finance-1.png"
+              src="/@src/assets/screenshots/admin-dashboards-finance-1.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-dashboards-finance-1-dark.png"
+              src="/@src/assets/screenshots/admin-dashboards-finance-1-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -153,13 +153,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-dashboards-finance-2.png"
+              src="/@src/assets/screenshots/admin-dashboards-finance-2.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-dashboards-finance-2-dark.png"
+              src="/@src/assets/screenshots/admin-dashboards-finance-2-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -185,13 +185,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-dashboards-finance-3.png"
+              src="/@src/assets/screenshots/admin-dashboards-finance-3.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-dashboards-finance-3-dark.png"
+              src="/@src/assets/screenshots/admin-dashboards-finance-3-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -217,13 +217,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-dashboards-banking-1.png"
+              src="/@src/assets/screenshots/admin-dashboards-banking-1.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-dashboards-banking-1-dark.png"
+              src="/@src/assets/screenshots/admin-dashboards-banking-1-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -249,13 +249,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-dashboards-banking-2.png"
+              src="/@src/assets/screenshots/admin-dashboards-banking-2.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-dashboards-banking-2-dark.png"
+              src="/@src/assets/screenshots/admin-dashboards-banking-2-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -281,13 +281,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-dashboards-banking-3.png"
+              src="/@src/assets/screenshots/admin-dashboards-banking-3.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-dashboards-banking-3-dark.png"
+              src="/@src/assets/screenshots/admin-dashboards-banking-3-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -313,13 +313,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-dashboards-business-1.png"
+              src="/@src/assets/screenshots/admin-dashboards-business-1.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-dashboards-business-1-dark.png"
+              src="/@src/assets/screenshots/admin-dashboards-business-1-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -345,13 +345,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-dashboards-business-2.png"
+              src="/@src/assets/screenshots/admin-dashboards-business-2.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-dashboards-business-2-dark.png"
+              src="/@src/assets/screenshots/admin-dashboards-business-2-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -378,13 +378,13 @@
             <span class="new-tag">New</span>
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-dashboards-business-3.png"
+              src="/@src/assets/screenshots/admin-dashboards-business-3.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-dashboards-business-3-dark.png"
+              src="/@src/assets/screenshots/admin-dashboards-business-3-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -411,13 +411,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-dashboards-lifestyle-1.png"
+              src="/@src/assets/screenshots/admin-dashboards-lifestyle-1.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-dashboards-lifestyle-1-dark.png"
+              src="/@src/assets/screenshots/admin-dashboards-lifestyle-1-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -443,13 +443,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-dashboards-lifestyle-2.png"
+              src="/@src/assets/screenshots/admin-dashboards-lifestyle-2.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-dashboards-lifestyle-2-dark.png"
+              src="/@src/assets/screenshots/admin-dashboards-lifestyle-2-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -475,13 +475,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-dashboards-lifestyle-3.png"
+              src="/@src/assets/screenshots/admin-dashboards-lifestyle-3.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-dashboards-lifestyle-3-dark.png"
+              src="/@src/assets/screenshots/admin-dashboards-lifestyle-3-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -508,13 +508,13 @@
             <span class="new-tag">New</span>
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-dashboards-lifestyle-4.png"
+              src="/@src/assets/screenshots/admin-dashboards-lifestyle-4.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-dashboards-lifestyle-4-dark.png"
+              src="/@src/assets/screenshots/admin-dashboards-lifestyle-4-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -540,13 +540,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-dashboards-ecommerce-1.png"
+              src="/@src/assets/screenshots/admin-dashboards-ecommerce-1.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-dashboards-ecommerce-1-dark.png"
+              src="/@src/assets/screenshots/admin-dashboards-ecommerce-1-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -572,13 +572,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-dashboards-food.png"
+              src="/@src/assets/screenshots/admin-dashboards-food.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-dashboards-food-dark.png"
+              src="/@src/assets/screenshots/admin-dashboards-food-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -604,13 +604,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-list-view-1.png"
+              src="/@src/assets/screenshots/admin-list-view-1.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-list-view-1-dark.png"
+              src="/@src/assets/screenshots/admin-list-view-1-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -636,13 +636,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-list-view-2.png"
+              src="/@src/assets/screenshots/admin-list-view-2.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-list-view-2-dark.png"
+              src="/@src/assets/screenshots/admin-list-view-2-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -668,13 +668,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-list-view-3.png"
+              src="/@src/assets/screenshots/admin-list-view-3.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-list-view-3-dark.png"
+              src="/@src/assets/screenshots/admin-list-view-3-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -700,13 +700,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-list-view-4.png"
+              src="/@src/assets/screenshots/admin-list-view-4.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-list-view-4-dark.png"
+              src="/@src/assets/screenshots/admin-list-view-4-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -732,13 +732,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-list-flex-1.png"
+              src="/@src/assets/screenshots/admin-list-flex-1.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-list-flex-1-dark.png"
+              src="/@src/assets/screenshots/admin-list-flex-1-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -764,13 +764,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-list-flex-2.png"
+              src="/@src/assets/screenshots/admin-list-flex-2.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-list-flex-2-dark.png"
+              src="/@src/assets/screenshots/admin-list-flex-2-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -796,13 +796,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-list-flex-3.png"
+              src="/@src/assets/screenshots/admin-list-flex-3.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-list-flex-3-dark.png"
+              src="/@src/assets/screenshots/admin-list-flex-3-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -828,13 +828,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-list-datatable-1.png"
+              src="/@src/assets/screenshots/admin-list-datatable-1.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-list-datatable-1-dark.png"
+              src="/@src/assets/screenshots/admin-list-datatable-1-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -860,13 +860,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-list-datatable-2.png"
+              src="/@src/assets/screenshots/admin-list-datatable-2.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-list-datatable-2-dark.png"
+              src="/@src/assets/screenshots/admin-list-datatable-2-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -892,13 +892,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-list-datatable-3.png"
+              src="/@src/assets/screenshots/admin-list-datatable-3.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-list-datatable-3-dark.png"
+              src="/@src/assets/screenshots/admin-list-datatable-3-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -924,13 +924,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-list-datatable-4.png"
+              src="/@src/assets/screenshots/admin-list-datatable-4.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-list-datatable-4-dark.png"
+              src="/@src/assets/screenshots/admin-list-datatable-4-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -956,13 +956,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-grid-cards-1.png"
+              src="/@src/assets/screenshots/admin-grid-cards-1.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-grid-cards-1-dark.png"
+              src="/@src/assets/screenshots/admin-grid-cards-1-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -988,13 +988,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-grid-cards-2.png"
+              src="/@src/assets/screenshots/admin-grid-cards-2.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-grid-cards-2-dark.png"
+              src="/@src/assets/screenshots/admin-grid-cards-2-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -1020,13 +1020,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-grid-cards-3.png"
+              src="/@src/assets/screenshots/admin-grid-cards-3.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-grid-cards-3-dark.png"
+              src="/@src/assets/screenshots/admin-grid-cards-3-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -1052,13 +1052,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-grid-cards-4.png"
+              src="/@src/assets/screenshots/admin-grid-cards-4.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-grid-cards-4-dark.png"
+              src="/@src/assets/screenshots/admin-grid-cards-4-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -1084,13 +1084,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-grid-tiles-1.png"
+              src="/@src/assets/screenshots/admin-grid-tiles-1.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-grid-tiles-1-dark.png"
+              src="/@src/assets/screenshots/admin-grid-tiles-1-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -1116,13 +1116,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-grid-tiles-2.png"
+              src="/@src/assets/screenshots/admin-grid-tiles-2.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-grid-tiles-2-dark.png"
+              src="/@src/assets/screenshots/admin-grid-tiles-2-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -1148,13 +1148,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-grid-tiles-3.png"
+              src="/@src/assets/screenshots/admin-grid-tiles-3.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-grid-tiles-3-dark.png"
+              src="/@src/assets/screenshots/admin-grid-tiles-3-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -1180,13 +1180,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-grid-users-1.png"
+              src="/@src/assets/screenshots/admin-grid-users-1.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-grid-users-1-dark.png"
+              src="/@src/assets/screenshots/admin-grid-users-1-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -1212,13 +1212,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-grid-users-2.png"
+              src="/@src/assets/screenshots/admin-grid-users-2.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-grid-users-2-dark.png"
+              src="/@src/assets/screenshots/admin-grid-users-2-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -1244,13 +1244,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-grid-users-3.png"
+              src="/@src/assets/screenshots/admin-grid-users-3.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-grid-users-3-dark.png"
+              src="/@src/assets/screenshots/admin-grid-users-3-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -1276,13 +1276,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-grid-users-4.png"
+              src="/@src/assets/screenshots/admin-grid-users-4.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-grid-users-4-dark.png"
+              src="/@src/assets/screenshots/admin-grid-users-4-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -1308,13 +1308,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-messaging-chat.png"
+              src="/@src/assets/screenshots/admin-messaging-chat.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-messaging-chat-dark.png"
+              src="/@src/assets/screenshots/admin-messaging-chat-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -1340,13 +1340,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-profile-view.png"
+              src="/@src/assets/screenshots/admin-profile-view.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-profile-view-dark.png"
+              src="/@src/assets/screenshots/admin-profile-view-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -1372,13 +1372,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-profile-edit-1.png"
+              src="/@src/assets/screenshots/admin-profile-edit-1.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-profile-edit-1-dark.png"
+              src="/@src/assets/screenshots/admin-profile-edit-1-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -1404,13 +1404,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-profile-edit-2.png"
+              src="/@src/assets/screenshots/admin-profile-edit-2.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-profile-edit-2-dark.png"
+              src="/@src/assets/screenshots/admin-profile-edit-2-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -1437,13 +1437,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-profile-edit-3.png"
+              src="/@src/assets/screenshots/admin-profile-edit-3.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-profile-edit-3-dark.png"
+              src="/@src/assets/screenshots/admin-profile-edit-3-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -1470,13 +1470,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-profile-edit-4.png"
+              src="/@src/assets/screenshots/admin-profile-edit-4.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-profile-edit-4-dark.png"
+              src="/@src/assets/screenshots/admin-profile-edit-4-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -1503,13 +1503,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-profile-notifications.png"
+              src="/@src/assets/screenshots/admin-profile-notifications.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-profile-notifications-dark.png"
+              src="/@src/assets/screenshots/admin-profile-notifications-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -1536,13 +1536,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-profile-settings.png"
+              src="/@src/assets/screenshots/admin-profile-settings.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-profile-settings-dark.png"
+              src="/@src/assets/screenshots/admin-profile-settings-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -1568,13 +1568,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-projects-projects.png"
+              src="/@src/assets/screenshots/admin-projects-projects.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-projects-projects-dark.png"
+              src="/@src/assets/screenshots/admin-projects-projects-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -1601,13 +1601,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-projects-projects-2.png"
+              src="/@src/assets/screenshots/admin-projects-projects-2.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-projects-projects-2-dark.png"
+              src="/@src/assets/screenshots/admin-projects-projects-2-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -1634,13 +1634,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-projects-projects-3.png"
+              src="/@src/assets/screenshots/admin-projects-projects-3.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-projects-projects-3-dark.png"
+              src="/@src/assets/screenshots/admin-projects-projects-3-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -1667,13 +1667,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-projects-project.png"
+              src="/@src/assets/screenshots/admin-projects-project.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-projects-project-dark.png"
+              src="/@src/assets/screenshots/admin-projects-project-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -1699,13 +1699,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-kanban-board.png"
+              src="/@src/assets/screenshots/admin-kanban-board.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-kanban-board-dark.png"
+              src="/@src/assets/screenshots/admin-kanban-board-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -1731,13 +1731,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-search-results.png"
+              src="/@src/assets/screenshots/admin-search-results.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-search-results-dark.png"
+              src="/@src/assets/screenshots/admin-search-results-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -1763,13 +1763,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-search-empty.png"
+              src="/@src/assets/screenshots/admin-search-empty.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-search-empty-dark.png"
+              src="/@src/assets/screenshots/admin-search-empty-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -1795,13 +1795,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-saas-billing.png"
+              src="/@src/assets/screenshots/admin-saas-billing.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-saas-billing-dark.png"
+              src="/@src/assets/screenshots/admin-saas-billing-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -1827,13 +1827,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-welcome.png"
+              src="/@src/assets/screenshots/admin-welcome.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-welcome-dark.png"
+              src="/@src/assets/screenshots/admin-welcome-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -1859,13 +1859,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-action-page-1.png"
+              src="/@src/assets/screenshots/admin-action-page-1.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-action-page-1-dark.png"
+              src="/@src/assets/screenshots/admin-action-page-1-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -1891,13 +1891,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-action-page-2.png"
+              src="/@src/assets/screenshots/admin-action-page-2.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-action-page-2-dark.png"
+              src="/@src/assets/screenshots/admin-action-page-2-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -1923,13 +1923,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-utility-account-confirm.png"
+              src="/@src/assets/screenshots/admin-utility-account-confirm.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-utility-account-confirm-dark.png"
+              src="/@src/assets/screenshots/admin-utility-account-confirm-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -1956,13 +1956,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-utility-promotion.png"
+              src="/@src/assets/screenshots/admin-utility-promotion.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-utility-promotion-dark.png"
+              src="/@src/assets/screenshots/admin-utility-promotion-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -1988,13 +1988,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-utility-invoice.png"
+              src="/@src/assets/screenshots/admin-utility-invoice.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-utility-invoice-dark.png"
+              src="/@src/assets/screenshots/admin-utility-invoice-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -2020,13 +2020,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-dashboards-widgets-ui.png"
+              src="/@src/assets/screenshots/admin-dashboards-widgets-ui.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-dashboards-widgets-ui-dark.png"
+              src="/@src/assets/screenshots/admin-dashboards-widgets-ui-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -2053,13 +2053,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-dashboards-widgets-creative.png"
+              src="/@src/assets/screenshots/admin-dashboards-widgets-creative.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-dashboards-widgets-creative-dark.png"
+              src="/@src/assets/screenshots/admin-dashboards-widgets-creative-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -2086,13 +2086,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-dashboards-widgets-list.png"
+              src="/@src/assets/screenshots/admin-dashboards-widgets-list.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-dashboards-widgets-list-dark.png"
+              src="/@src/assets/screenshots/admin-dashboards-widgets-list-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -2119,13 +2119,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-dashboards-widgets-stats.png"
+              src="/@src/assets/screenshots/admin-dashboards-widgets-stats.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-dashboards-widgets-stats-dark.png"
+              src="/@src/assets/screenshots/admin-dashboards-widgets-stats-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -2152,13 +2152,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-form-layouts-1.png"
+              src="/@src/assets/screenshots/admin-form-layouts-1.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-form-layouts-1-dark.png"
+              src="/@src/assets/screenshots/admin-form-layouts-1-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -2184,13 +2184,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-form-layouts-2.png"
+              src="/@src/assets/screenshots/admin-form-layouts-2.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-form-layouts-2-dark.png"
+              src="/@src/assets/screenshots/admin-form-layouts-2-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -2216,13 +2216,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-form-layouts-3.png"
+              src="/@src/assets/screenshots/admin-form-layouts-3.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-form-layouts-3-dark.png"
+              src="/@src/assets/screenshots/admin-form-layouts-3-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -2248,13 +2248,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-form-layouts-4.png"
+              src="/@src/assets/screenshots/admin-form-layouts-4.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-form-layouts-4-dark.png"
+              src="/@src/assets/screenshots/admin-form-layouts-4-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -2280,13 +2280,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-onboarding-page-1.png"
+              src="/@src/assets/screenshots/admin-onboarding-page-1.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-onboarding-page-1-dark.png"
+              src="/@src/assets/screenshots/admin-onboarding-page-1-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -2312,13 +2312,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-onboarding-page-2.png"
+              src="/@src/assets/screenshots/admin-onboarding-page-2.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-onboarding-page-2-dark.png"
+              src="/@src/assets/screenshots/admin-onboarding-page-2-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -2344,13 +2344,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-onboarding-page-3.png"
+              src="/@src/assets/screenshots/admin-onboarding-page-3.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-onboarding-page-3-dark.png"
+              src="/@src/assets/screenshots/admin-onboarding-page-3-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -2376,13 +2376,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-onboarding-page-4.png"
+              src="/@src/assets/screenshots/admin-onboarding-page-4.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-onboarding-page-4-dark.png"
+              src="/@src/assets/screenshots/admin-onboarding-page-4-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -2408,13 +2408,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-onboarding-page-5.png"
+              src="/@src/assets/screenshots/admin-onboarding-page-5.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-onboarding-page-5-dark.png"
+              src="/@src/assets/screenshots/admin-onboarding-page-5-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -2462,13 +2462,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-dashboards-personal-1.png"
+              src="/@src/assets/screenshots/webapp-dashboards-personal-1.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-dashboards-personal-1-dark.png"
+              src="/@src/assets/screenshots/webapp-dashboards-personal-1-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -2494,13 +2494,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-dashboards-personal-2.png"
+              src="/@src/assets/screenshots/webapp-dashboards-personal-2.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-dashboards-personal-2-dark.png"
+              src="/@src/assets/screenshots/webapp-dashboards-personal-2-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -2526,13 +2526,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-dashboards-personal-3.png"
+              src="/@src/assets/screenshots/webapp-dashboards-personal-3.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-dashboards-personal-3-dark.png"
+              src="/@src/assets/screenshots/webapp-dashboards-personal-3-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -2558,13 +2558,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-dashboards-finance-1.png"
+              src="/@src/assets/screenshots/webapp-dashboards-finance-1.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-dashboards-finance-1-dark.png"
+              src="/@src/assets/screenshots/webapp-dashboards-finance-1-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -2590,13 +2590,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-dashboards-finance-2.png"
+              src="/@src/assets/screenshots/webapp-dashboards-finance-2.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-dashboards-finance-2-dark.png"
+              src="/@src/assets/screenshots/webapp-dashboards-finance-2-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -2622,13 +2622,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-dashboards-finance-3.png"
+              src="/@src/assets/screenshots/webapp-dashboards-finance-3.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-dashboards-finance-3-dark.png"
+              src="/@src/assets/screenshots/webapp-dashboards-finance-3-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -2654,13 +2654,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-dashboards-banking-1.png"
+              src="/@src/assets/screenshots/webapp-dashboards-banking-1.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-dashboards-banking-1-dark.png"
+              src="/@src/assets/screenshots/webapp-dashboards-banking-1-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -2686,13 +2686,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-dashboards-banking-2.png"
+              src="/@src/assets/screenshots/webapp-dashboards-banking-2.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-dashboards-banking-2-dark.png"
+              src="/@src/assets/screenshots/webapp-dashboards-banking-2-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -2718,13 +2718,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-dashboards-banking-3.png"
+              src="/@src/assets/screenshots/webapp-dashboards-banking-3.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-dashboards-banking-3-dark.png"
+              src="/@src/assets/screenshots/webapp-dashboards-banking-3-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -2750,13 +2750,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-dashboards-business-1.png"
+              src="/@src/assets/screenshots/webapp-dashboards-business-1.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-dashboards-business-1-dark.png"
+              src="/@src/assets/screenshots/webapp-dashboards-business-1-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -2782,13 +2782,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-dashboards-business-2.png"
+              src="/@src/assets/screenshots/webapp-dashboards-business-2.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-dashboards-business-2-dark.png"
+              src="/@src/assets/screenshots/webapp-dashboards-business-2-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -2815,13 +2815,13 @@
             <span class="new-tag">New</span>
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-dashboards-business-3.png"
+              src="/@src/assets/screenshots/webapp-dashboards-business-3.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-dashboards-business-3-dark.png"
+              src="/@src/assets/screenshots/webapp-dashboards-business-3-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -2848,13 +2848,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-dashboards-lifestyle-1.png"
+              src="/@src/assets/screenshots/webapp-dashboards-lifestyle-1.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-dashboards-lifestyle-1-dark.png"
+              src="/@src/assets/screenshots/webapp-dashboards-lifestyle-1-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -2880,13 +2880,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-dashboards-lifestyle-2.png"
+              src="/@src/assets/screenshots/webapp-dashboards-lifestyle-2.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-dashboards-lifestyle-2-dark.png"
+              src="/@src/assets/screenshots/webapp-dashboards-lifestyle-2-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -2912,13 +2912,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-dashboards-lifestyle-3.png"
+              src="/@src/assets/screenshots/webapp-dashboards-lifestyle-3.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-dashboards-lifestyle-3-dark.png"
+              src="/@src/assets/screenshots/webapp-dashboards-lifestyle-3-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -2945,13 +2945,13 @@
             <span class="new-tag">New</span>
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-dashboards-lifestyle-4.png"
+              src="/@src/assets/screenshots/webapp-dashboards-lifestyle-4.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-dashboards-lifestyle-4-dark.png"
+              src="/@src/assets/screenshots/webapp-dashboards-lifestyle-4-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -2977,13 +2977,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-dashboards-ecommerce-1.png"
+              src="/@src/assets/screenshots/webapp-dashboards-ecommerce-1.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-dashboards-ecommerce-1-dark.png"
+              src="/@src/assets/screenshots/webapp-dashboards-ecommerce-1-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -3009,13 +3009,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-dashboards-food.png"
+              src="/@src/assets/screenshots/webapp-dashboards-food.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-dashboards-food-dark.png"
+              src="/@src/assets/screenshots/webapp-dashboards-food-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -3041,13 +3041,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-profile-view.png"
+              src="/@src/assets/screenshots/webapp-profile-view.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-profile-view-dark.png"
+              src="/@src/assets/screenshots/webapp-profile-view-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -3073,13 +3073,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-list-view-1.png"
+              src="/@src/assets/screenshots/webapp-list-view-1.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-list-view-1-dark.png"
+              src="/@src/assets/screenshots/webapp-list-view-1-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -3105,13 +3105,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-list-view-2.png"
+              src="/@src/assets/screenshots/webapp-list-view-2.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-list-view-2-dark.png"
+              src="/@src/assets/screenshots/webapp-list-view-2-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -3137,13 +3137,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-list-view-3.png"
+              src="/@src/assets/screenshots/webapp-list-view-3.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-list-view-3-dark.png"
+              src="/@src/assets/screenshots/webapp-list-view-3-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -3169,13 +3169,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-list-view-4.png"
+              src="/@src/assets/screenshots/webapp-list-view-4.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-list-view-4-dark.png"
+              src="/@src/assets/screenshots/webapp-list-view-4-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -3201,13 +3201,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-list-flex-1.png"
+              src="/@src/assets/screenshots/webapp-list-flex-1.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-list-flex-1-dark.png"
+              src="/@src/assets/screenshots/webapp-list-flex-1-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -3233,13 +3233,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-list-flex-2.png"
+              src="/@src/assets/screenshots/webapp-list-flex-2.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-list-flex-2-dark.png"
+              src="/@src/assets/screenshots/webapp-list-flex-2-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -3265,13 +3265,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-list-flex-3.png"
+              src="/@src/assets/screenshots/webapp-list-flex-3.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-list-flex-3-dark.png"
+              src="/@src/assets/screenshots/webapp-list-flex-3-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -3297,13 +3297,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-list-datatable-1.png"
+              src="/@src/assets/screenshots/webapp-list-datatable-1.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-list-datatable-1-dark.png"
+              src="/@src/assets/screenshots/webapp-list-datatable-1-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -3329,13 +3329,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-list-datatable-2.png"
+              src="/@src/assets/screenshots/webapp-list-datatable-2.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-list-datatable-2-dark.png"
+              src="/@src/assets/screenshots/webapp-list-datatable-2-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -3361,13 +3361,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-list-datatable-3.png"
+              src="/@src/assets/screenshots/webapp-list-datatable-3.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-list-datatable-3-dark.png"
+              src="/@src/assets/screenshots/webapp-list-datatable-3-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -3393,13 +3393,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-list-datatable-4.png"
+              src="/@src/assets/screenshots/webapp-list-datatable-4.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-list-datatable-4-dark.png"
+              src="/@src/assets/screenshots/webapp-list-datatable-4-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -3425,13 +3425,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-grid-cards-1.png"
+              src="/@src/assets/screenshots/webapp-grid-cards-1.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-grid-cards-1-dark.png"
+              src="/@src/assets/screenshots/webapp-grid-cards-1-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -3457,13 +3457,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-grid-cards-2.png"
+              src="/@src/assets/screenshots/webapp-grid-cards-2.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-grid-cards-2-dark.png"
+              src="/@src/assets/screenshots/webapp-grid-cards-2-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -3489,13 +3489,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-grid-cards-3.png"
+              src="/@src/assets/screenshots/webapp-grid-cards-3.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-grid-cards-3-dark.png"
+              src="/@src/assets/screenshots/webapp-grid-cards-3-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -3521,13 +3521,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-grid-cards-4.png"
+              src="/@src/assets/screenshots/webapp-grid-cards-4.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-grid-cards-4-dark.png"
+              src="/@src/assets/screenshots/webapp-grid-cards-4-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -3553,13 +3553,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-grid-tiles-1.png"
+              src="/@src/assets/screenshots/webapp-grid-tiles-1.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-grid-tiles-1-dark.png"
+              src="/@src/assets/screenshots/webapp-grid-tiles-1-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -3585,13 +3585,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-grid-tiles-2.png"
+              src="/@src/assets/screenshots/webapp-grid-tiles-2.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-grid-tiles-2-dark.png"
+              src="/@src/assets/screenshots/webapp-grid-tiles-2-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -3617,13 +3617,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-grid-tiles-3.png"
+              src="/@src/assets/screenshots/webapp-grid-tiles-3.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-grid-tiles-3-dark.png"
+              src="/@src/assets/screenshots/webapp-grid-tiles-3-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -3649,13 +3649,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-grid-users-1.png"
+              src="/@src/assets/screenshots/webapp-grid-users-1.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-grid-users-1-dark.png"
+              src="/@src/assets/screenshots/webapp-grid-users-1-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -3681,13 +3681,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-grid-users-2.png"
+              src="/@src/assets/screenshots/webapp-grid-users-2.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-grid-users-2-dark.png"
+              src="/@src/assets/screenshots/webapp-grid-users-2-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -3713,13 +3713,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-grid-users-3.png"
+              src="/@src/assets/screenshots/webapp-grid-users-3.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-grid-users-3-dark.png"
+              src="/@src/assets/screenshots/webapp-grid-users-3-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -3745,13 +3745,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-grid-users-4.png"
+              src="/@src/assets/screenshots/webapp-grid-users-4.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-grid-users-4-dark.png"
+              src="/@src/assets/screenshots/webapp-grid-users-4-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -3777,13 +3777,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-messaging-chat.png"
+              src="/@src/assets/screenshots/webapp-messaging-chat.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-messaging-chat-dark.png"
+              src="/@src/assets/screenshots/webapp-messaging-chat-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -3809,13 +3809,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-profile-edit-1.png"
+              src="/@src/assets/screenshots/webapp-profile-edit-1.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-profile-edit-1-dark.png"
+              src="/@src/assets/screenshots/webapp-profile-edit-1-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -3827,7 +3827,7 @@
                   <span>Edit Profile 1</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-layouts-profile-edit-1' }"
+                  <RouterLink :to="{ name: 'webapp-layouts-profile-edit' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -3841,13 +3841,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-profile-edit-2.png"
+              src="/@src/assets/screenshots/webapp-profile-edit-2.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-profile-edit-2-dark.png"
+              src="/@src/assets/screenshots/webapp-profile-edit-2-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -3859,7 +3859,8 @@
                   <span>Edit Profile 2</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-layouts-profile-edit-2' }"
+                  <RouterLink
+                    :to="{ name: 'webapp-layouts-profile-edit-experience' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -3873,13 +3874,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-profile-edit-3.png"
+              src="/@src/assets/screenshots/webapp-profile-edit-3.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-profile-edit-3-dark.png"
+              src="/@src/assets/screenshots/webapp-profile-edit-3-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -3891,7 +3892,8 @@
                   <span>Edit Profile 3</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-layouts-profile-edit-3' }"
+                  <RouterLink
+                    :to="{ name: 'webapp-layouts-profile-edit-skills' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -3905,13 +3907,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-profile-edit-4.png"
+              src="/@src/assets/screenshots/webapp-profile-edit-4.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-profile-edit-4-dark.png"
+              src="/@src/assets/screenshots/webapp-profile-edit-4-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -3923,7 +3925,8 @@
                   <span>Edit Profile 4</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: 'webapp-layouts-profile-edit-4' }"
+                  <RouterLink
+                    :to="{ name: 'webapp-layouts-profile-edit-settings' }"
                     >Go to demo <i class="fas fa-angle-right"></i
                   ></RouterLink>
                 </div>
@@ -3937,13 +3940,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-profile-notifications.png"
+              src="/@src/assets/screenshots/webapp-profile-notifications.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-profile-notifications-dark.png"
+              src="/@src/assets/screenshots/webapp-profile-notifications-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -3970,13 +3973,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-profile-settings.png"
+              src="/@src/assets/screenshots/webapp-profile-settings.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-profile-settings-dark.png"
+              src="/@src/assets/screenshots/webapp-profile-settings-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -4002,13 +4005,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-projects-projects.png"
+              src="/@src/assets/screenshots/webapp-projects-projects.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-projects-projects-dark.png"
+              src="/@src/assets/screenshots/webapp-projects-projects-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -4035,13 +4038,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-projects-projects-2.png"
+              src="/@src/assets/screenshots/webapp-projects-projects-2.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-projects-projects-2-dark.png"
+              src="/@src/assets/screenshots/webapp-projects-projects-2-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -4068,13 +4071,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-projects-projects-3.png"
+              src="/@src/assets/screenshots/webapp-projects-projects-3.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-projects-projects-3-dark.png"
+              src="/@src/assets/screenshots/webapp-projects-projects-3-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -4101,13 +4104,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-projects-project.png"
+              src="/@src/assets/screenshots/webapp-projects-project.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-projects-project-dark.png"
+              src="/@src/assets/screenshots/webapp-projects-project-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -4133,13 +4136,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-kanban-board.png"
+              src="/@src/assets/screenshots/webapp-kanban-board.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-kanban-board-dark.png"
+              src="/@src/assets/screenshots/webapp-kanban-board-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -4165,13 +4168,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-search-results.png"
+              src="/@src/assets/screenshots/webapp-search-results.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-search-results-dark.png"
+              src="/@src/assets/screenshots/webapp-search-results-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -4197,13 +4200,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-search-empty.png"
+              src="/@src/assets/screenshots/webapp-search-empty.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-search-empty-dark.png"
+              src="/@src/assets/screenshots/webapp-search-empty-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -4229,13 +4232,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-saas-billing.png"
+              src="/@src/assets/screenshots/webapp-saas-billing.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-saas-billing-dark.png"
+              src="/@src/assets/screenshots/webapp-saas-billing-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -4261,13 +4264,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-welcome.png"
+              src="/@src/assets/screenshots/webapp-welcome.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-welcome-dark.png"
+              src="/@src/assets/screenshots/webapp-welcome-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -4293,13 +4296,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-action-page-1.png"
+              src="/@src/assets/screenshots/webapp-action-page-1.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-action-page-1-dark.png"
+              src="/@src/assets/screenshots/webapp-action-page-1-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -4325,13 +4328,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-action-page-2.png"
+              src="/@src/assets/screenshots/webapp-action-page-2.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-action-page-2-dark.png"
+              src="/@src/assets/screenshots/webapp-action-page-2-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -4357,13 +4360,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-utility-account-confirm.png"
+              src="/@src/assets/screenshots/webapp-utility-account-confirm.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-utility-account-confirm-dark.png"
+              src="/@src/assets/screenshots/webapp-utility-account-confirm-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -4390,13 +4393,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-utility-promotion.png"
+              src="/@src/assets/screenshots/webapp-utility-promotion.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-utility-promotion-dark.png"
+              src="/@src/assets/screenshots/webapp-utility-promotion-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -4422,13 +4425,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-utility-invoice.png"
+              src="/@src/assets/screenshots/webapp-utility-invoice.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-utility-invoice-dark.png"
+              src="/@src/assets/screenshots/webapp-utility-invoice-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -4454,13 +4457,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-dashboards-widgets-ui.png"
+              src="/@src/assets/screenshots/webapp-dashboards-widgets-ui.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-dashboards-widgets-ui-dark.png"
+              src="/@src/assets/screenshots/webapp-dashboards-widgets-ui-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -4487,13 +4490,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-dashboards-widgets-creative.png"
+              src="/@src/assets/screenshots/webapp-dashboards-widgets-creative.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-dashboards-widgets-creative-dark.png"
+              src="/@src/assets/screenshots/webapp-dashboards-widgets-creative-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -4520,13 +4523,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-dashboards-widgets-list.png"
+              src="/@src/assets/screenshots/webapp-dashboards-widgets-list.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-dashboards-widgets-list-dark.png"
+              src="/@src/assets/screenshots/webapp-dashboards-widgets-list-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -4553,13 +4556,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-dashboards-widgets-stats.png"
+              src="/@src/assets/screenshots/webapp-dashboards-widgets-stats.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-dashboards-widgets-stats-dark.png"
+              src="/@src/assets/screenshots/webapp-dashboards-widgets-stats-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -4586,13 +4589,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-form-layouts-1.png"
+              src="/@src/assets/screenshots/webapp-form-layouts-1.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-form-layouts-1-dark.png"
+              src="/@src/assets/screenshots/webapp-form-layouts-1-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -4618,13 +4621,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-form-layouts-2.png"
+              src="/@src/assets/screenshots/webapp-form-layouts-2.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-form-layouts-2-dark.png"
+              src="/@src/assets/screenshots/webapp-form-layouts-2-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -4650,13 +4653,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-form-layouts-3.png"
+              src="/@src/assets/screenshots/webapp-form-layouts-3.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-form-layouts-3-dark.png"
+              src="/@src/assets/screenshots/webapp-form-layouts-3-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -4682,13 +4685,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-form-layouts-4.png"
+              src="/@src/assets/screenshots/webapp-form-layouts-4.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-form-layouts-4-dark.png"
+              src="/@src/assets/screenshots/webapp-form-layouts-4-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -4714,13 +4717,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-onboarding-page-1.png"
+              src="/@src/assets/screenshots/webapp-onboarding-page-1.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-onboarding-page-1-dark.png"
+              src="/@src/assets/screenshots/webapp-onboarding-page-1-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -4746,13 +4749,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-onboarding-page-2.png"
+              src="/@src/assets/screenshots/webapp-onboarding-page-2.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-onboarding-page-2-dark.png"
+              src="/@src/assets/screenshots/webapp-onboarding-page-2-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -4778,13 +4781,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-onboarding-page-3.png"
+              src="/@src/assets/screenshots/webapp-onboarding-page-3.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-onboarding-page-3-dark.png"
+              src="/@src/assets/screenshots/webapp-onboarding-page-3-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -4810,13 +4813,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-onboarding-page-4.png"
+              src="/@src/assets/screenshots/webapp-onboarding-page-4.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-onboarding-page-4-dark.png"
+              src="/@src/assets/screenshots/webapp-onboarding-page-4-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -4842,13 +4845,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-onboarding-page-5.png"
+              src="/@src/assets/screenshots/webapp-onboarding-page-5.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-onboarding-page-5-dark.png"
+              src="/@src/assets/screenshots/webapp-onboarding-page-5-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -4897,13 +4900,13 @@
             <span class="new-tag">New</span>
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/auth-login.png"
+              src="/@src/assets/screenshots/auth-login.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/auth-login-dark.png"
+              src="/@src/assets/screenshots/auth-login-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -4930,13 +4933,13 @@
             <span class="new-tag">New</span>
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/auth-login-2.png"
+              src="/@src/assets/screenshots/auth-login-2.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/auth-login-2-dark.png"
+              src="/@src/assets/screenshots/auth-login-2-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -4963,13 +4966,13 @@
             <span class="new-tag">New</span>
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/auth-login-3.png"
+              src="/@src/assets/screenshots/auth-login-3.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/auth-login-3-dark.png"
+              src="/@src/assets/screenshots/auth-login-3-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -4996,13 +4999,13 @@
             <span class="new-tag">New</span>
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/auth-signup-2.png"
+              src="/@src/assets/screenshots/auth-signup-2.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/auth-signup-2-dark.png"
+              src="/@src/assets/screenshots/auth-signup-2-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -5029,13 +5032,13 @@
             <span class="new-tag">New</span>
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/auth-signup-3.png"
+              src="/@src/assets/screenshots/auth-signup-3.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/auth-signup-3-dark.png"
+              src="/@src/assets/screenshots/auth-signup-3-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -5060,7 +5063,7 @@
         <div class="column is-4 has-text-centered">
           <figure class="huro-demo-wrapper loaded">
             <img
-              src="/images/photo/screenshots/auth-signup.png"
+              src="/@src/assets/screenshots/auth-signup.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -5085,7 +5088,7 @@
         <div class="column is-4 has-text-centered">
           <figure class="huro-demo-wrapper loaded">
             <img
-              src="/images/photo/screenshots/admin-utility-status.png"
+              src="/@src/assets/screenshots/admin-utility-status.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -5111,13 +5114,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-dashboards-apps-2.png"
+              src="/@src/assets/screenshots/admin-dashboards-apps-2.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-dashboards-apps-2-dark.png"
+              src="/@src/assets/screenshots/admin-dashboards-apps-2-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -5143,13 +5146,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/project-wizard-step-1.png"
+              src="/@src/assets/screenshots/project-wizard-step-1.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/project-wizard-step-1-dark.png"
+              src="/@src/assets/screenshots/project-wizard-step-1-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -5175,13 +5178,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/project-wizard-step-2.png"
+              src="/@src/assets/screenshots/project-wizard-step-2.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/project-wizard-step-2-dark.png"
+              src="/@src/assets/screenshots/project-wizard-step-2-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -5207,13 +5210,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/project-wizard-step-3.png"
+              src="/@src/assets/screenshots/project-wizard-step-3.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/project-wizard-step-3-dark.png"
+              src="/@src/assets/screenshots/project-wizard-step-3-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -5239,13 +5242,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/project-wizard-step-4.png"
+              src="/@src/assets/screenshots/project-wizard-step-4.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/project-wizard-step-4-dark.png"
+              src="/@src/assets/screenshots/project-wizard-step-4-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -5271,13 +5274,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/project-wizard-step-5.png"
+              src="/@src/assets/screenshots/project-wizard-step-5.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/project-wizard-step-5-dark.png"
+              src="/@src/assets/screenshots/project-wizard-step-5-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -5303,13 +5306,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/project-wizard-step-6.png"
+              src="/@src/assets/screenshots/project-wizard-step-6.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/project-wizard-step-6-dark.png"
+              src="/@src/assets/screenshots/project-wizard-step-6-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -5335,13 +5338,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/project-wizard-step-7.png"
+              src="/@src/assets/screenshots/project-wizard-step-7.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/project-wizard-step-7-dark.png"
+              src="/@src/assets/screenshots/project-wizard-step-7-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -5367,13 +5370,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/project-wizard-step-8.png"
+              src="/@src/assets/screenshots/project-wizard-step-8.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/project-wizard-step-8-dark.png"
+              src="/@src/assets/screenshots/project-wizard-step-8-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -5398,7 +5401,7 @@
         <div class="column is-4 has-text-centered">
           <figure class="huro-demo-wrapper loaded">
             <img
-              src="/images/photo/screenshots/error-page-1.png"
+              src="/@src/assets/screenshots/error-page-1.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -5423,7 +5426,7 @@
         <div class="column is-4 has-text-centered">
           <figure class="huro-demo-wrapper loaded">
             <img
-              src="/images/photo/screenshots/error-page-2.png"
+              src="/@src/assets/screenshots/error-page-2.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -5448,7 +5451,7 @@
         <div class="column is-4 has-text-centered">
           <figure class="huro-demo-wrapper loaded">
             <img
-              src="/images/photo/screenshots/error-page-3.png"
+              src="/@src/assets/screenshots/error-page-3.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -5473,7 +5476,7 @@
         <div class="column is-4 has-text-centered">
           <figure class="huro-demo-wrapper loaded">
             <img
-              src="/images/photo/screenshots/error-page-4.png"
+              src="/@src/assets/screenshots/error-page-4.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -5498,7 +5501,7 @@
         <div class="column is-4 has-text-centered">
           <figure class="huro-demo-wrapper loaded">
             <img
-              src="/images/photo/screenshots/error-page-5.png"
+              src="/@src/assets/screenshots/error-page-5.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -5546,13 +5549,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-blank-page-1.png"
+              src="/@src/assets/screenshots/admin-blank-page-1.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-blank-page-1-dark.png"
+              src="/@src/assets/screenshots/admin-blank-page-1-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -5577,13 +5580,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-blank-page-2.png"
+              src="/@src/assets/screenshots/admin-blank-page-2.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-blank-page-2-dark.png"
+              src="/@src/assets/screenshots/admin-blank-page-2-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -5608,13 +5611,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-blank-page-3.png"
+              src="/@src/assets/screenshots/admin-blank-page-3.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-blank-page-3-dark.png"
+              src="/@src/assets/screenshots/admin-blank-page-3-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -5639,13 +5642,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/admin-blank-page-4.png"
+              src="/@src/assets/screenshots/admin-blank-page-4.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/admin-blank-page-4-dark.png"
+              src="/@src/assets/screenshots/admin-blank-page-4-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -5670,13 +5673,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-blank-page-1.png"
+              src="/@src/assets/screenshots/webapp-blank-page-1.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-blank-page-1-dark.png"
+              src="/@src/assets/screenshots/webapp-blank-page-1-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -5701,13 +5704,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-blank-page-2.png"
+              src="/@src/assets/screenshots/webapp-blank-page-2.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-blank-page-2-dark.png"
+              src="/@src/assets/screenshots/webapp-blank-page-2-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -5732,13 +5735,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-blank-page-3.png"
+              src="/@src/assets/screenshots/webapp-blank-page-3.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-blank-page-3-dark.png"
+              src="/@src/assets/screenshots/webapp-blank-page-3-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -5763,13 +5766,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-blank-page-4.png"
+              src="/@src/assets/screenshots/webapp-blank-page-4.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-blank-page-4-dark.png"
+              src="/@src/assets/screenshots/webapp-blank-page-4-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
@@ -5794,13 +5797,13 @@
           <figure class="huro-demo-wrapper loaded">
             <img
               class="light-image-block-l"
-              src="/images/photo/screenshots/webapp-blank-page-5.png"
+              src="/@src/assets/screenshots/webapp-blank-page-5.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />
             <img
               class="dark-image-block-l"
-              src="/images/photo/screenshots/webapp-blank-page-5-dark.png"
+              src="/@src/assets/screenshots/webapp-blank-page-5-dark.png?size=364x204&format=webp"
               alt=""
               loading="lazy"
             />

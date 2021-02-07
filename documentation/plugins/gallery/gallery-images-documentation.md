@@ -57,6 +57,6 @@ const items = [
 
 <!--example-->
 
-<V-PhotosSwipe :items="frontmatter.items">
+<V-PhotosSwipe :items="frontmatter.items" />
 
 <!--/example-->

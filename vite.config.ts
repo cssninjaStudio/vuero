@@ -5,8 +5,9 @@ import Pages from 'vite-plugin-pages'
 import ViteComponents from 'vite-plugin-components'
 import ViteFonts from 'vite-plugin-fonts'
 import PurgeIcons from 'vite-plugin-purge-icons'
+import ImageTools from 'vite-imagetools'
 import VueI18n from '@intlify/vite-plugin-vue-i18n'
-import VueroDocumentation from './vite-plugins/vite-plugin-vuero-doc'
+import VueroDocumentation from './vite-plugin-vuero-doc/index'
 import { VitePWA } from 'vite-plugin-pwa'
 
 const projectRootDir = path.resolve(__dirname)
@@ -34,6 +35,9 @@ export default defineConfig({
       dirs: ['documentation', 'src/components', 'src/layouts'],
       customLoaderMatcher: (path) => path.endsWith('.md'),
     }),
+
+    // https://github.com/JonasKruckenberg/vite-imagetools
+    ImageTools(),
 
     // https://github.com/stafyniaksacha/vite-plugin-fonts
     ViteFonts({

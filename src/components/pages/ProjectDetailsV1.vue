@@ -356,7 +356,7 @@ const props = defineProps({
                 <div class="v-avatar is-small">
                   <img
                     class="avatar"
-                    src="/images/illustrations/dashboards/flights/company1.svg"
+                    src="/@src/assets/illustrations/dashboards/flights/company1.svg"
                     alt=""
                     @error="
                       $event.target.src = 'https://via.placeholder.com/150x150'

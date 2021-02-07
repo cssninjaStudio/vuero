@@ -124,7 +124,8 @@ const selectSlotIconOptions = [
           :options="frontmatter.selectSlotIconOptions"
           :searchable="true"
           trackBy="name"
-          :maxHeight="145">
+          :maxHeight="145"
+        >
           <template v-slot:singlelabel="{ value }">
             <div class="multiselect-single-label">
               <div class="select-label-icon-wrap">
@@ -157,7 +158,8 @@ const selectSlotIconOptions = [
           :options="frontmatter.selectSlotIconOptions"
           :searchable="true"
           trackBy="name"
-          :maxHeight="145">
+          :maxHeight="145"
+        >
           <template v-slot:singlelabel="{ value }">
             <div class="multiselect-single-label">
               <div class="select-label-icon-wrap">
@@ -190,7 +192,8 @@ const selectSlotIconOptions = [
           :options="frontmatter.selectSlotIconOptions"
           :searchable="true"
           trackBy="name"
-          :maxHeight="145">
+          :maxHeight="145"
+        >
           <template v-slot:singlelabel="{ value }">
             <div class="multiselect-single-label">
               <div class="select-label-icon-wrap">

@@ -139,7 +139,8 @@ const tagsSlotOptions = [
   </div>
   <div class="column is-4">
     <V-Field class="is-image-tags is-curved-select">
-      <Multiselect
+      <V-Control>
+        <Multiselect
           v-model="frontmatter.tagsSlotValue"
           mode="tags"
           placeholder="Select employees"
@@ -166,7 +167,8 @@ const tagsSlotOptions = [
   </div>
   <div class="column is-4">
     <V-Field class="is-image-tags is-rounded-select">
-      <Multiselect
+      <V-Control>
+        <Multiselect
           v-model="frontmatter.tagsSlotValue"
           mode="tags"
           placeholder="Select employees"

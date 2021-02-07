@@ -26,8 +26,8 @@ const cardInfo = reactive({
               data-projects="20"
               data-storage="20GB"
               data-addons="1"
-              data-logo-light="/images/illustrations/pricing/huro-starter.svg"
-              data-logo-dark="/images/illustrations/pricing/huro-starter-dark.svg"
+              data-logo-light="/@src/assets/illustrations/pricing/huro-starter.svg"
+              data-logo-dark="/@src/assets/illustrations/pricing/huro-starter-dark.svg"
             >
               <input type="radio" name="plan_selection" />
               <div class="plan-inner">
@@ -49,8 +49,8 @@ const cardInfo = reactive({
               data-projects="150"
               data-storage="100GB"
               data-addons="3"
-              data-logo-light="/images/illustrations/pricing/huro-pro.svg"
-              data-logo-dark="/images/illustrations/pricing/huro-pro-dark.svg"
+              data-logo-light="/@src/assets/illustrations/pricing/huro-pro.svg"
+              data-logo-dark="/@src/assets/illustrations/pricing/huro-pro-dark.svg"
             >
               <input type="radio" name="plan_selection" checked />
               <div class="plan-inner">
@@ -72,8 +72,8 @@ const cardInfo = reactive({
               data-projects="Unlimited"
               data-storage="500GB"
               data-addons="5"
-              data-logo-light="/images/illustrations/pricing/huro-business.svg"
-              data-logo-dark="/images/illustrations/pricing/huro-business-dark.svg"
+              data-logo-light="/@src/assets/illustrations/pricing/huro-business.svg"
+              data-logo-dark="/@src/assets/illustrations/pricing/huro-business-dark.svg"
             >
               <input type="radio" name="plan_selection" />
               <div class="plan-inner">
@@ -95,8 +95,8 @@ const cardInfo = reactive({
               data-projects="Unlimited"
               data-storage="Unlimited"
               data-addons="Unlimited"
-              data-logo-light="/images/illustrations/pricing/huro-enterprise.svg"
-              data-logo-dark="/images/illustrations/pricing/huro-enterprise-dark.svg"
+              data-logo-light="/@src/assets/illustrations/pricing/huro-enterprise.svg"
+              data-logo-dark="/@src/assets/illustrations/pricing/huro-enterprise-dark.svg"
             >
               <input type="radio" name="plan_selection" />
               <div class="plan-inner">
@@ -121,13 +121,13 @@ const cardInfo = reactive({
                 <img
                   id="plan-logo-light"
                   class="light-image"
-                  src="/images/illustrations/pricing/huro-pro.svg"
+                  src="/@src/assets/illustrations/pricing/huro-pro.svg"
                   alt=""
                 />
                 <img
                   id="plan-logo-dark"
                   class="dark-image"
-                  src="/images/illustrations/pricing/huro-pro-dark.svg"
+                  src="/@src/assets/illustrations/pricing/huro-pro-dark.svg"
                   alt=""
                 />
               </div>

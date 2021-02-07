@@ -10,12 +10,12 @@
       <div class="placeholder-content">
         <img
           class="light-image is-rounded"
-          src="/images/illustrations/wizard/team-placeholder.svg"
+          src="/@src/assets/illustrations/wizard/team-placeholder.svg"
           alt=""
         />
         <img
           class="dark-image is-rounded"
-          src="/images/illustrations/wizard/team-placeholder.svg"
+          src="/@src/assets/illustrations/wizard/team-placeholder.svg"
           alt=""
         />
         <h3>Invite People</h3>

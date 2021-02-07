@@ -12,11 +12,11 @@ defineProps({
   },
   light: {
     type: String,
-    default: '/images/illustrations/components/avatar.svg',
+    default: '/@src/assets/illustrations/components/avatar.svg',
   },
   dark: {
     type: String,
-    default: '/images/illustrations/components/avatar-dark.svg',
+    default: '/@src/assets/illustrations/components/avatar-dark.svg',
   },
 })
 </script>
@@ -30,8 +30,7 @@ defineProps({
           {{ content }}
         </p>
       </div>
-      <img class="light-image" :src="light" alt="" />
-      <img class="dark-image" :src="dark" alt="" />
+      <slot name="icon"></slot>
     </div>
     <div class="hub-card-foot">
       <slot></slot>

@@ -58,6 +58,6 @@ const items = [
 
 <!--example-->
 
-<V-PhotosSwipe :items="frontmatter.items" thumbnailRadius="full">
+<V-PhotosSwipe :items="frontmatter.items" thumbnail-radius="full" />
 
 <!--/example-->

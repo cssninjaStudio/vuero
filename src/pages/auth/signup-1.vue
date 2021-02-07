@@ -137,7 +137,11 @@ onUnmounted(() => {
         </div>
       </div>
 
-      <img class="card-bg" src="/images/bg/signup/huro-signup.png" alt="" />
+      <img
+        class="card-bg"
+        src="/@src/assets/backgrounds/signup/huro-signup.png"
+        alt=""
+      />
 
       <div class="hero is-fullheight">
         <div class="hero-body">

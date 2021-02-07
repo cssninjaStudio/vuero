@@ -5,12 +5,12 @@
       <div class="placeholder-content">
         <img
           class="light-image"
-          src="/images/illustrations/placeholders/search-5.svg"
+          src="/@src/assets/illustrations/placeholders/search-5.svg"
           alt=""
         />
         <img
           class="dark-image"
-          src="/images/illustrations/placeholders/search-5-dark.svg"
+          src="/@src/assets/illustrations/placeholders/search-5-dark.svg"
           alt=""
         />
         <h3>We couldn't find any matching results.</h3>

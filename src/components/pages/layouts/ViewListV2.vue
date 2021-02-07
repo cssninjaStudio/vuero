@@ -67,12 +67,12 @@ const filteredData = computed(() => {
         <div class="placeholder-content">
           <img
             class="light-image"
-            src="/images/illustrations/placeholders/search-2.svg"
+            src="/@src/assets/illustrations/placeholders/search-2.svg"
             alt=""
           />
           <img
             class="dark-image"
-            src="/images/illustrations/placeholders/search-2-dark.svg"
+            src="/@src/assets/illustrations/placeholders/search-2-dark.svg"
             alt=""
           />
           <h3>We couldn't find any matching results.</h3>
@@ -239,12 +239,12 @@ const filteredData = computed(() => {
             <div class="placeholder-content">
               <img
                 class="light-image"
-                src="/images/illustrations/placeholders/having-coffee.svg"
+                src="/@src/assets/illustrations/placeholders/having-coffee.svg"
                 alt=""
               />
               <img
                 class="dark-image"
-                src="/images/illustrations/placeholders/having-coffee-dark.svg"
+                src="/@src/assets/illustrations/placeholders/having-coffee-dark.svg"
                 alt=""
               />
               <h3>There are no inactive properties.</h3>

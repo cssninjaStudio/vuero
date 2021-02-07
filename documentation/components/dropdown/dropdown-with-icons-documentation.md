@@ -105,7 +105,7 @@ Use the `spaced` prop with the provided markup in the code example.
       <template #content>
         <a href="#" class="dropdown-item is-media">
           <div class="icon">
-            <Icon icon="uil:pagelines">
+            <i class="iconify" data-icon="uil:pagelines"></i>
           </div>
           <div class="meta">
             <span>Invest</span>
@@ -114,7 +114,7 @@ Use the `spaced` prop with the provided markup in the code example.
         </a>
         <a href="#" class="dropdown-item is-media is-active">
           <div class="icon">
-            <Icon icon="uil:meeting-board">
+            <i class="iconify" data-icon="uil:meeting-board"></i>
           </div>
           <div class="meta">
             <span>Compare</span>
@@ -123,7 +123,7 @@ Use the `spaced` prop with the provided markup in the code example.
         </a>
         <a href="#" class="dropdown-item is-media">
           <div class="icon">
-            <Icon icon="uil:social-distancing">
+            <i class="iconify" data-icon="uil:social-distancing"></i>
           </div>
           <div class="meta">
             <span>Trade</span>
@@ -133,7 +133,7 @@ Use the `spaced` prop with the provided markup in the code example.
         <hr class="dropdown-divider" />
         <a href="#" class="dropdown-item is-media">
           <div class="icon">
-            <Icon icon="uil:palette">
+            <i class="iconify" data-icon="uil:palette"></i>
           </div>
           <div class="meta">
             <span>Wallet</span>

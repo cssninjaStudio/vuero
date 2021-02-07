@@ -61,7 +61,8 @@ const disabledOptions = [
   </div>
   <div class="column is-4">
     <V-Field class="is-curved-select">
-      <Multiselect
+      <V-Control>
+        <Multiselect
           v-model="frontmatter.disabledValue"
           mode="multiple"
           :options="frontmatter.disabledOptions"
@@ -72,7 +73,8 @@ const disabledOptions = [
   </div>
   <div class="column is-4">
     <V-Field class="is-rounded-select">
-      <Multiselect
+      <V-Control>
+        <Multiselect
           v-model="frontmatter.disabledValue"
           mode="multiple"
           :options="frontmatter.disabledOptions"

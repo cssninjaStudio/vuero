@@ -14,7 +14,7 @@ const emit = defineEmit(['next'])
       <div class="columns">
         <div class="column is-4">
           <div class="wizard-card">
-            <img src="/images/illustrations/wizard/type-1.svg" alt="" />
+            <img src="/@src/assets/illustrations/wizard/type-1.svg" alt="" />
             <h3 class="dark-inverted">UI/UX Design</h3>
             <p>Some short explanation about the type goes here.</p>
             <div class="button-wrap">
@@ -32,7 +32,7 @@ const emit = defineEmit(['next'])
         </div>
         <div class="column is-4">
           <div class="wizard-card">
-            <img src="/images/illustrations/wizard/type-2.svg" alt="" />
+            <img src="/@src/assets/illustrations/wizard/type-2.svg" alt="" />
             <h3 class="dark-inverted">Web Development</h3>
             <p>Some short explanation about the type goes here.</p>
             <div class="button-wrap">
@@ -50,7 +50,7 @@ const emit = defineEmit(['next'])
         </div>
         <div class="column is-4">
           <div class="wizard-card">
-            <img src="/images/illustrations/wizard/type-3.svg" alt="" />
+            <img src="/@src/assets/illustrations/wizard/type-3.svg" alt="" />
             <h3 class="dark-inverted">Marketing</h3>
             <p>Some short explanation about the type goes here.</p>
             <div class="button-wrap">

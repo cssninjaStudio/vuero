@@ -79,105 +79,185 @@ useHead({
                 <!--Component-->
                 <HubCard
                   title="Buttons"
-                  content="Get familiar with the Vuero button styles. Code examples
-                        included."
-                  light="/images/illustrations/components/buttons.svg"
-                  dark="/images/illustrations/components/buttons-dark.svg"
+                  content="Get familiar with the Vuero button styles. Code examples included."
                 >
-                  <RouterLink :to="{ name: 'elements-buttons' }"
-                    >Get Started</RouterLink
-                  >
+                  <RouterLink :to="{ name: 'elements-buttons' }">
+                    Get Started
+                  </RouterLink>
+
+                  <template #icon>
+                    <img
+                      class="light-image"
+                      src="/@src/assets/illustrations/components/buttons.svg"
+                      alt=""
+                    />
+                    <img
+                      class="dark-image"
+                      src="/@src/assets/illustrations/components/buttons-dark.svg"
+                      alt=""
+                    />
+                  </template>
                 </HubCard>
 
                 <!--Component-->
                 <HubCard
                   title="Cards"
-                  content="Get familiar with the Vuero card styles. Code examples
-                        included."
-                  light="/images/illustrations/components/cards.svg"
-                  dark="/images/illustrations/components/cards-dark.svg"
+                  content="Get familiar with the Vuero card styles. Code examples included."
                 >
-                  <RouterLink :to="{ name: 'elements-cards-basic' }"
-                    >Get Started</RouterLink
-                  >
+                  <RouterLink :to="{ name: 'elements-cards-basic' }">
+                    Get Started
+                  </RouterLink>
+
+                  <template #icon>
+                    <img
+                      class="light-image"
+                      src="/@src/assets/illustrations/components/cards.svg"
+                      alt=""
+                    />
+                    <img
+                      class="dark-image"
+                      src="/@src/assets/illustrations/components/cards-dark.svg"
+                      alt=""
+                    />
+                  </template>
                 </HubCard>
 
                 <!--Component-->
                 <HubCard
                   title="Icons"
-                  content="Get familiar with the Vuero icon libraries. Code
-                        examples included."
-                  light="/images/illustrations/components/icons.svg"
-                  dark="/images/illustrations/components/icons-dark.svg"
+                  content="Get familiar with the Vuero icon libraries. Code examples included."
                 >
-                  <RouterLink :to="{ name: 'elements-icons-line-icons' }"
-                    >Get Started</RouterLink
-                  >
+                  <RouterLink :to="{ name: 'elements-icons-line-icons' }">
+                    Get Started
+                  </RouterLink>
+
+                  <template #icon>
+                    <img
+                      class="light-image"
+                      src="/@src/assets/illustrations/components/icons.svg"
+                      alt=""
+                    />
+                    <img
+                      class="dark-image"
+                      src="/@src/assets/illustrations/components/icons-dark.svg"
+                      alt=""
+                    />
+                  </template>
                 </HubCard>
 
                 <!--Component-->
                 <HubCard
                   title="Content"
-                  content="Get familiar with the Vuero content styles. Code
-                        examples included."
-                  light="/images/illustrations/components/lists.svg"
-                  dark="/images/illustrations/components/lists-dark.svg"
+                  content="Get familiar with the Vuero content styles. Code examples included."
                 >
-                  <RouterLink :to="{ name: 'elements-content' }"
-                    >Get Started</RouterLink
-                  >
+                  <RouterLink :to="{ name: 'elements-content' }">
+                    Get Started
+                  </RouterLink>
+
+                  <template #icon>
+                    <img
+                      class="light-image"
+                      src="/@src/assets/illustrations/components/lists.svg"
+                      alt=""
+                    />
+                    <img
+                      class="dark-image"
+                      src="/@src/assets/illustrations/components/lists-dark.svg"
+                      alt=""
+                    />
+                  </template>
                 </HubCard>
 
                 <!--Component-->
                 <HubCard
                   title="Forms"
-                  content="Get familiar with the Vuero form elements. Code
-                        examples included."
-                  light="/images/illustrations/components/forms.svg"
-                  dark="/images/illustrations/components/forms-dark.svg"
+                  content="Get familiar with the Vuero form elements. Code examples included."
                 >
-                  <RouterLink :to="{ name: 'elements-forms-inputs' }"
-                    >Get Started</RouterLink
-                  >
+                  <RouterLink :to="{ name: 'elements-forms-inputs' }">
+                    Get Started
+                  </RouterLink>
+
+                  <template #icon>
+                    <img
+                      class="light-image"
+                      src="/@src/assets/illustrations/components/forms.svg"
+                      alt=""
+                    />
+                    <img
+                      class="dark-image"
+                      src="/@src/assets/illustrations/components/forms-dark.svg"
+                      alt=""
+                    />
+                  </template>
                 </HubCard>
 
                 <!--Component-->
                 <HubCard
                   title="Checkboxes"
-                  content="Get familiar with the Vuero checkboxes styles. Code
-                        examples included."
-                  light="/images/illustrations/components/checkboxes.svg"
-                  dark="/images/illustrations/components/checkboxes-dark.svg"
+                  content="Get familiar with the Vuero checkboxes styles. Code examples included."
                 >
-                  <RouterLink :to="{ name: 'elements-forms-checkboxes' }"
-                    >Get Started</RouterLink
-                  >
+                  <RouterLink :to="{ name: 'elements-forms-checkboxes' }">
+                    Get Started
+                  </RouterLink>
+
+                  <template #icon>
+                    <img
+                      class="light-image"
+                      src="/@src/assets/illustrations/components/checkboxes.svg"
+                      alt=""
+                    />
+                    <img
+                      class="dark-image"
+                      src="/@src/assets/illustrations/components/checkboxes-dark.svg"
+                      alt=""
+                    />
+                  </template>
                 </HubCard>
 
                 <!--Component-->
                 <HubCard
                   title="Tags"
-                  content="Get familiar with the Vuero tags styles. Code
-                        examples included."
-                  light="/images/illustrations/components/tags.svg"
-                  dark="/images/illustrations/components/tags-dark.svg"
+                  content="Get familiar with the Vuero tags styles. Code examples included."
                 >
-                  <RouterLink :to="{ name: 'elements-tags' }"
-                    >Get Started</RouterLink
-                  >
+                  <RouterLink :to="{ name: 'elements-tags' }">
+                    Get Started
+                  </RouterLink>
+
+                  <template #icon>
+                    <img
+                      class="light-image"
+                      src="/@src/assets/illustrations/components/tags.svg"
+                      alt=""
+                    />
+                    <img
+                      class="dark-image"
+                      src="/@src/assets/illustrations/components/tags-dark.svg"
+                      alt=""
+                    />
+                  </template>
                 </HubCard>
 
                 <!--Component-->
                 <HubCard
                   title="Switches"
-                  content="Get familiar with the Vuero switches styles. Code
-                        examples included."
-                  light="/images/illustrations/components/switches.svg"
-                  dark="/images/illustrations/components/switches-dark.svg"
+                  content="Get familiar with the Vuero switches styles. Code examples included."
                 >
-                  <RouterLink :to="{ name: 'elements-forms-switch' }"
-                    >Get Started</RouterLink
-                  >
+                  <RouterLink :to="{ name: 'elements-forms-switch' }">
+                    Get Started
+                  </RouterLink>
+
+                  <template #icon>
+                    <img
+                      class="light-image"
+                      src="/@src/assets/illustrations/components/switches.svg"
+                      alt=""
+                    />
+                    <img
+                      class="dark-image"
+                      src="/@src/assets/illustrations/components/switches-dark.svg"
+                      alt=""
+                    />
+                  </template>
                 </HubCard>
               </div>
             </div>

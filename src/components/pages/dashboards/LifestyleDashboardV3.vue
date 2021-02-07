@@ -17,7 +17,7 @@ import { followersList } from '/@src/data/widgets/ui/followers'
     <div class="illustration-header">
       <div class="header-image">
         <img
-          src="/images/illustrations/dashboards/lifestyle/doctor.svg"
+          src="/@src/assets/illustrations/dashboards/lifestyle/doctor.svg"
           alt=""
         />
       </div>

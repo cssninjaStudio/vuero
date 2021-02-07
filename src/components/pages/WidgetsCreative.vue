@@ -20,9 +20,9 @@ import { products } from '/@src/data/widgets/ui/productList'
         class="illustration-widget-v1"
         title="You unlocked 2 new Achievements"
         text="Congrats, your efforts have been rewarded. Keep up like this!"
-        picture="/images/illustrations/widgets/1.svg"
-        badge-left="/images/illustrations/widgets/2.svg"
-        badge-right="/images/illustrations/widgets/3.svg"
+        picture="/@src/assets/illustrations/widgets/1.svg"
+        badge-left="/@src/assets/illustrations/widgets/2.svg"
+        badge-right="/@src/assets/illustrations/widgets/3.svg"
       />
 
       <!--Widget-->
@@ -41,7 +41,7 @@ import { products } from '/@src/data/widgets/ui/productList'
         class="illustration-widget-v2"
         title="You unlocked 2 new Achievements"
         text="Congrats, your efforts have been rewarded. Keep up like this!"
-        picture="/images/illustrations/widgets/7.svg"
+        picture="/@src/assets/illustrations/widgets/7.svg"
       />
 
       <!--Widget-->
@@ -54,7 +54,7 @@ import { products } from '/@src/data/widgets/ui/productList'
         class="illustration-widget-v2"
         title="You unlocked 2 new Achievements"
         text="Congrats, your efforts have been rewarded. Keep up like this!"
-        picture="/images/illustrations/widgets/4.svg"
+        picture="/@src/assets/illustrations/widgets/4.svg"
       />
 
       <!--Widget-->
@@ -103,7 +103,7 @@ import { products } from '/@src/data/widgets/ui/productList'
         class="illustration-widget-v3"
         title="You unlocked 2 new Achievements"
         text="Congrats, your efforts have been rewarded. Keep up like this!"
-        picture="/images/illustrations/widgets/5.svg"
+        picture="/@src/assets/illustrations/widgets/5.svg"
       />
 
       <!--Widget-->
@@ -146,7 +146,7 @@ import { products } from '/@src/data/widgets/ui/productList'
 
       <!--Widget-->
       <CallWidget
-        picture="/images/illustrations/widgets/6.svg"
+        picture="/@src/assets/illustrations/widgets/6.svg"
         badge="/images/avatars/photos/7.jpg"
         username="Alice"
       />
@@ -156,7 +156,7 @@ import { products } from '/@src/data/widgets/ui/productList'
         class="illustration-widget-v2"
         title="You unlocked 2 new Achievements"
         text="Congrats, your efforts have been rewarded. Keep up like this!"
-        picture="/images/illustrations/widgets/8.svg"
+        picture="/@src/assets/illustrations/widgets/8.svg"
       />
     </div>
   </div>

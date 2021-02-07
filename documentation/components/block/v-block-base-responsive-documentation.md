@@ -29,18 +29,22 @@ to fit in the available space. Resize your screen to see it in action.
 <!--example-->
 
 <div class="field">
-    <div class="control">
-        <div class="l-card">
-            <V-Block title="Anna B." subtitle="UX Designer" center mResponsive>
-                <template #icon>
-                    <V-Avatar size="medium" picture="/images/avatars/photos/19.jpg" badge="/images/icons/flags/germany.svg">
-                </template>
-                <template #action>
-                    <V-Button color="primary" elevated>View</V-Button>
-                </template>
-            </V-Block>
-        </div>
+  <div class="control">
+    <div class="l-card">
+      <V-Block title="Anna B." subtitle="UX Designer" center mResponsive>
+        <template #icon>
+          <V-Avatar
+            size="medium"
+            picture="/images/avatars/photos/19.jpg"
+            badge="/images/icons/flags/germany.svg"
+          />
+        </template>
+        <template #action>
+          <V-Button color="primary" elevated>View</V-Button>
+        </template>
+      </V-Block>
     </div>
+  </div>
 </div>
 
 <!--/example-->

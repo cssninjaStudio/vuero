@@ -403,7 +403,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'webapp-layouts-profile-edit-1' }"
+                    :to="{ name: 'webapp-layouts-profile-edit' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">

@@ -1,31 +1,6 @@
 <template>
   <div class="page-content kanban-content is-relative">
-    <div class="page-title">
-      <!-- Sidebar Trigger -->
-      <div
-        class="huro-hamburger nav-trigger push-resize"
-        @click="toggleSidebar('layouts')"
-      >
-        <span class="menu-toggle has-chevron">
-          <span
-            :class="[activeSidebar !== 'none' && 'active']"
-            class="icon-box-toggle"
-          >
-            <span class="rotate">
-              <i class="icon-line-top"></i>
-              <i class="icon-line-center"></i>
-              <i class="icon-line-bottom"></i>
-            </span>
-          </span>
-        </span>
-      </div>
-
-      <div class="title-wrap">
-        <h1 class="title is-4">Kanban Board</h1>
-      </div>
-
-      <Toolbar />
-    </div>
+    <slot name="title"></slot>
 
     <div class="kanban-toolbar">
       <div class="control has-icon">
@@ -117,14 +92,19 @@
           </div>
 
           <!-- Empty state image / text -->
-          <img
-            class="empty-state theme-image"
-            src="/images/illustrations/projects/board/new.svg"
-            data-light="/images/illustrations/projects/board/new.svg"
-            data-dark="/images/illustrations/projects/board/new-dark.svg"
-            alt=""
-          />
-          <p class="empty-text">There are no new tasks to approve for now.</p>
+          <div class="kanban-empty">
+            <img
+              class="empty-state theme-image light-image"
+              src="/@src/assets/illustrations/projects/board/new.svg"
+              alt=""
+            />
+            <img
+              class="empty-state theme-image dark-image"
+              src="/@src/assets/illustrations/projects/board/new-dark.svg"
+              alt=""
+            />
+            <p class="empty-text">There are no new tasks to approve for now.</p>
+          </div>
 
           <div id="demo-invite" class="kanban-card is-new">
             <div class="card-body">
@@ -199,6 +179,23 @@
           </div>
 
           <div id="kanban-1">
+            <!-- Empty state image / text -->
+            <div class="kanban-empty">
+              <img
+                class="empty-state theme-image light-image-block"
+                src="/@src/assets/illustrations/projects/board/progress.svg"
+                alt=""
+              />
+              <img
+                class="empty-state theme-image dark-image-block"
+                src="/@src/assets/illustrations/projects/board/progress-dark.svg"
+                alt=""
+              />
+              <p class="empty-text">
+                There are no tasks in progress at the moment.
+              </p>
+            </div>
+
             <div class="kanban-card">
               <div class="card-body">
                 <h4 class="card-title">Implement the users REST API</h4>
@@ -295,18 +292,6 @@
                 </div>
               </div>
             </div>
-
-            <!-- Empty state image / text -->
-            <img
-              class="empty-state theme-image"
-              src="/images/illustrations/projects/board/progress.svg"
-              data-light="/images/illustrations/projects/board/progress.svg"
-              data-dark="/images/illustrations/projects/board/progress-dark.svg"
-              alt=""
-            />
-            <p class="empty-text">
-              There are no tasks in progress at the moment.
-            </p>
           </div>
         </div>
       </div>
@@ -334,6 +319,28 @@
           </div>
 
           <div id="kanban-2">
+            <div class="kanban-empty">
+              <!-- Empty state image / text -->
+              <img
+                class="empty-state theme-image light-image-block"
+                src="/@src/assets/illustrations/projects/board/ready.svg"
+                alt=""
+              />
+              <img
+                class="empty-state theme-image dark-image-block"
+                src="/@src/assets/illustrations/projects/board/ready-dark.svg"
+                alt=""
+              />
+              <p class="empty-text">
+                <span>There are no tasks marked as ready for now.</span>
+                <a
+                  href="#"
+                  class="button v-button is-outlined is-rounded is-fullwidth"
+                  >Create Task</a
+                >
+              </p>
+            </div>
+
             <div class="kanban-card">
               <div class="card-body">
                 <h4 class="card-title">Implement the projects REST API</h4>
@@ -358,23 +365,6 @@
                 </div>
               </div>
             </div>
-
-            <!-- Empty state image / text -->
-            <img
-              class="empty-state theme-image"
-              src="/images/illustrations/projects/board/ready.svg"
-              data-light="/images/illustrations/projects/board/ready.svg"
-              data-dark="/images/illustrations/projects/board/ready-dark.svg"
-              alt=""
-            />
-            <p class="empty-text">
-              <span>There are no tasks marked as ready for now.</span>
-              <a
-                href="#"
-                class="button v-button is-outlined is-rounded is-fullwidth"
-                >Create Task</a
-              >
-            </p>
           </div>
         </div>
       </div>
@@ -401,15 +391,22 @@
             <KanbanDropdown />
           </div>
           <div id="kanban-3">
-            <!-- Empty state image / text -->
-            <img
-              class="empty-state theme-image"
-              src="/images/illustrations/projects/board/test.svg"
-              data-light="/images/illustrations/projects/board/test.svg"
-              data-dark="/images/illustrations/projects/board/test-dark.svg"
-              alt=""
-            />
-            <p class="empty-text">No tasks are being reviewed at the moment.</p>
+            <div class="kanban-empty">
+              <!-- Empty state image / text -->
+              <img
+                class="empty-state theme-image light-image-block"
+                src="/@src/assets/illustrations/projects/board/test.svg"
+                alt=""
+              />
+              <img
+                class="empty-state theme-image dark-image-block"
+                src="/@src/assets/illustrations/projects/board/test-dark.svg"
+                alt=""
+              />
+              <p class="empty-text">
+                No tasks are being reviewed at the moment.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -437,14 +434,19 @@
           </div>
 
           <!-- Empty state image / text -->
-          <img
-            class="empty-state theme-image"
-            src="/images/illustrations/projects/board/complete.svg"
-            data-light="/images/illustrations/projects/board/complete.svg"
-            data-dark="/images/illustrations/projects/board/complete-dark.svg"
-            alt=""
-          />
-          <p class="empty-text">You have no completed bounties.</p>
+          <div class="kanban-empty">
+            <img
+              class="empty-state theme-image light-image-block"
+              src="/@src/assets/illustrations/projects/board/complete.svg"
+              alt=""
+            />
+            <img
+              class="empty-state theme-image dark-image-block"
+              src="/@src/assets/illustrations/projects/board/complete-dark.svg"
+              alt=""
+            />
+            <p class="empty-text">You have no completed bounties.</p>
+          </div>
 
           <div class="kanban-card">
             <div class="card-body">
@@ -653,14 +655,14 @@
     }
 
     .empty-state {
-      display: none;
+      // display: none;
       margin: 30px auto 10px auto;
       width: 150px;
       height: auto;
     }
 
     .empty-text {
-      display: none;
+      // display: none;
       text-align: center;
       padding: 10px 10px 20px 10px;
       font-size: 0.95rem;
@@ -683,7 +685,7 @@
     &.is-empty {
       .empty-state,
       .empty-text {
-        display: block !important;
+        display: block;
       }
     }
 
@@ -695,7 +697,7 @@
       .kanban-card,
       .empty-state,
       .empty-text {
-        display: none !important;
+        display: none;
       }
 
       .collapsed-content {

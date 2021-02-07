@@ -13,6 +13,7 @@ import background from './directives/background'
 import 'simplebar'
 import '@purge-icons/generated'
 
+import 'nprogress/nprogress.css'
 import '@vueform/multiselect/themes/default.css'
 import '@vueform/slider/themes/default.css'
 import 'simplebar/dist/simplebar.css'
@@ -24,6 +25,9 @@ import 'tippy.js/dist/border.css'
 import 'tippy.js/dist/backdrop.css'
 import 'tippy.js/themes/light.css'
 
+import './assets/scss/vendors/font-awesome-v5.css'
+import './assets/scss/vendors/line-icons-pro.css'
+import './assets/scss/vendors/prism-coldark-cold.css'
 import './assets/scss/main.scss'
 
 import App from './App.vue'

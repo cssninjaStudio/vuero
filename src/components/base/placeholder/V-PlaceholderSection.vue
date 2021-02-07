@@ -2,21 +2,13 @@
 import { defineProps } from 'vue'
 
 defineProps({
-  imageLight: {
-    type: String,
-    default: '/images/placeholders/huro-1.svg',
-  },
-  imageDark: {
-    type: String,
-    default: '/images/placeholders/huro-1.svg',
-  },
   title: {
     type: String,
     default: 'Placeholder title',
   },
   subtitle: {
     type: String,
-    default: 'Lorem ipsum sit dolor amet is a dummy text used by typographers',
+    default: undefined,
   },
   action: {
     type: Boolean,
@@ -32,10 +24,9 @@ defineProps({
 <template>
   <div class="section-placeholder">
     <div class="placeholder-content">
-      <img class="light-image" :src="imageLight" alt="" />
-      <img class="dark-image" :src="imageDark" alt="" />
+      <slot name="image"></slot>
       <h3 class="dark-inverted">{{ title }}</h3>
-      <p>{{ subtitle }}</p>
+      <p v-if="subtitle">{{ subtitle }}</p>
       <V-Button v-if="action" color="primary" elevated>{{ cta }}</V-Button>
     </div>
   </div>

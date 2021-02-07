@@ -10,12 +10,12 @@
       <div class="placeholder-content">
         <img
           class="light-image is-rounded"
-          src="/images/illustrations/wizard/upload-placeholder.svg"
+          src="/@src/assets/illustrations/wizard/upload-placeholder.svg"
           alt=""
         />
         <img
           class="dark-image is-rounded"
-          src="/images/illustrations/wizard/upload-placeholder.svg"
+          src="/@src/assets/illustrations/wizard/upload-placeholder.svg"
           alt=""
         />
         <h3>Upload project files</h3>

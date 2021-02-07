@@ -93,20 +93,21 @@ const selectSlotOptions = [
           :options="frontmatter.selectSlotOptions"
           :searchable="true"
           trackBy="name"
-          :maxHeight="145">
+          :maxHeight="145"
+        >
           <template v-slot:singlelabel="{ value }">
             <div class="multiselect-single-label">
-              <img class="select-label-icon" :src="value.icon"> 
+              <img class="select-label-icon" :src="value.icon" /> 
               <span class="select-label-text">
                 {{ value.name }}
-              <span>
+              </span>
             </div>
           </template>
           <template v-slot:option="{ option }">
-            <img class="select-option-icon" :src="option.icon"> 
+            <img class="select-option-icon" :src="option.icon" /> 
             <span class="select-option-text">
               {{ option.name }}
-            <span>  
+            </span>  
           </template>
         </Multiselect>
       </V-Control>
@@ -114,27 +115,29 @@ const selectSlotOptions = [
   </div>
   <div class="column is-4">
     <V-Field class="is-image-select is-curved-select">
-      <Multiselect
+      <V-Control>
+        <Multiselect
           v-model="frontmatter.selectSlotValue"
           placeholder="Select a language"
           label="name"
           :options="frontmatter.selectSlotOptions"
           :searchable="true"
           trackBy="name"
-          :maxHeight="145">
+          :maxHeight="145"
+        >
           <template v-slot:singlelabel="{ value }">
             <div class="multiselect-single-label">
-              <img class="select-label-icon is-curved" :src="value.icon"> 
+              <img class="select-label-icon is-curved" :src="value.icon" /> 
               <span class="select-label-text">
                 {{ value.name }}
-              <span>
+              </span>
             </div>
           </template>
           <template v-slot:option="{ option }">
-            <img class="select-option-icon is-curved" :src="option.icon"> 
+            <img class="select-option-icon is-curved" :src="option.icon" /> 
             <span class="select-option-text">
               {{ option.name }}
-            <span>  
+            </span>  
           </template>
         </Multiselect>
       </V-Control>
@@ -142,27 +145,29 @@ const selectSlotOptions = [
   </div>
   <div class="column is-4">
     <V-Field class="is-image-select is-rounded-select">
-      <Multiselect
+      <V-Control>
+        <Multiselect
           v-model="frontmatter.selectSlotValue"
           placeholder="Select a language"
           label="name"
           :options="frontmatter.selectSlotOptions"
           :searchable="true"
           trackBy="name"
-          :maxHeight="145">
+          :maxHeight="145"
+        >
           <template v-slot:singlelabel="{ value }">
             <div class="multiselect-single-label">
-              <img class="select-label-icon is-rounded" :src="value.icon">
+              <img class="select-label-icon is-rounded" :src="value.icon" />
               <span class="select-label-text">
                 {{ value.name }}
-              <span>
+              </span>
             </div>
           </template>
           <template v-slot:option="{ option }">
-            <img class="select-option-icon is-rounded" :src="option.icon">
+            <img class="select-option-icon is-rounded" :src="option.icon" />
             <span class="select-option-text">
               {{ option.name }}
-            <span>  
+            </span>  
           </template>
         </Multiselect>
       </V-Control>

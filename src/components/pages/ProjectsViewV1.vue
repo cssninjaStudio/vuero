@@ -41,7 +41,7 @@
         <a class="project-grid-item">
           <img
             class="project-avatar"
-            src="/images/illustrations/dashboards/flights/company1.svg"
+            src="/@src/assets/illustrations/dashboards/flights/company1.svg"
             alt=""
             @error="$event.target.src = 'https://via.placeholder.com/150x150'"
           />

@@ -24,12 +24,12 @@ useHead({
           <div class="header-inner">
             <img
               class="cut-circle light-image-l"
-              src="/images/shapes/cut-circle.svg"
+              src="/@src/assets/shapes/cut-circle.svg"
               alt=""
             />
             <img
               class="cut-circle dark-image-l"
-              src="/images/shapes/cut-circle-dark.svg"
+              src="/@src/assets/shapes/cut-circle-dark.svg"
               alt=""
             />
           </div>
@@ -65,12 +65,12 @@ useHead({
 
             <img
               class="light-image-l hero-mockup"
-              src="/images/illustrations/landing/app-1.png"
+              src="/@src/assets/illustrations/landing/app-1.png"
               alt=""
             />
             <img
               class="dark-image-l hero-mockup"
-              src="/images/illustrations/landing/app-1-dark.png"
+              src="/@src/assets/illustrations/landing/app-1-dark.png"
               alt=""
             />
           </div>
@@ -210,12 +210,12 @@ useHead({
             <div class="column is-6 has-text-centered">
               <img
                 class="light-image-l featured-image"
-                src="/images/illustrations/landing/feature-1.png"
+                src="/@src/assets/illustrations/landing/feature-1.png"
                 alt=""
               />
               <img
                 class="dark-image-l featured-image"
-                src="/images/illustrations/landing/feature-1-dark.png"
+                src="/@src/assets/illustrations/landing/feature-1-dark.png"
                 alt=""
               />
             </div>
@@ -240,12 +240,12 @@ useHead({
             >
               <img
                 class="light-image-l featured-image"
-                src="/images/illustrations/landing/feature-2.svg"
+                src="/@src/assets/illustrations/landing/feature-2.svg"
                 alt=""
               />
               <img
                 class="dark-image-l featured-image"
-                src="/images/illustrations/landing/feature-2-dark.svg"
+                src="/@src/assets/illustrations/landing/feature-2-dark.svg"
                 alt=""
               />
             </div>
@@ -264,12 +264,12 @@ useHead({
             <div class="column is-6 has-text-centered h-hidden-mobile">
               <img
                 class="light-image-l featured-image"
-                src="/images/illustrations/landing/feature-2.svg"
+                src="/@src/assets/illustrations/landing/feature-2.svg"
                 alt=""
               />
               <img
                 class="dark-image-l featured-image"
-                src="/images/illustrations/landing/feature-2-dark.svg"
+                src="/@src/assets/illustrations/landing/feature-2-dark.svg"
                 alt=""
               />
             </div>
@@ -279,12 +279,12 @@ useHead({
             <div class="column is-6 has-text-centered">
               <img
                 class="light-image-l featured-image"
-                src="/images/illustrations/landing/feature-3.svg"
+                src="/@src/assets/illustrations/landing/feature-3.svg"
                 alt=""
               />
               <img
                 class="dark-image-l featured-image"
-                src="/images/illustrations/landing/feature-3-dark.svg"
+                src="/@src/assets/illustrations/landing/feature-3-dark.svg"
                 alt=""
               />
             </div>
@@ -439,12 +439,12 @@ useHead({
               <div class="column is-5 is-offset-1 has-text-centered">
                 <img
                   class="light-image-l featured-image"
-                  src="/images/illustrations/landing/feature-4.svg"
+                  src="/@src/assets/illustrations/landing/feature-4.svg"
                   alt=""
                 />
                 <img
                   class="dark-image-l featured-image"
-                  src="/images/illustrations/landing/feature-4-dark.svg"
+                  src="/@src/assets/illustrations/landing/feature-4-dark.svg"
                   alt=""
                 />
               </div>
@@ -470,12 +470,12 @@ useHead({
               >
                 <img
                   class="light-image-l featured-image"
-                  src="/images/illustrations/landing/feature-5.svg"
+                  src="/@src/assets/illustrations/landing/feature-5.svg"
                   alt=""
                 />
                 <img
                   class="dark-image-l featured-image"
-                  src="/images/illustrations/landing/feature-5-dark.svg"
+                  src="/@src/assets/illustrations/landing/feature-5-dark.svg"
                   alt=""
                 />
               </div>
@@ -496,12 +496,12 @@ useHead({
               <div class="column is-5 has-text-centered h-hidden-mobile">
                 <img
                   class="light-image-l featured-image"
-                  src="/images/illustrations/landing/feature-5.svg"
+                  src="/@src/assets/illustrations/landing/feature-5.svg"
                   alt=""
                 />
                 <img
                   class="dark-image-l featured-image"
-                  src="/images/illustrations/landing/feature-5-dark.svg"
+                  src="/@src/assets/illustrations/landing/feature-5-dark.svg"
                   alt=""
                 />
               </div>
@@ -512,12 +512,12 @@ useHead({
               <div class="column is-5 is-offset-1 has-text-centered">
                 <img
                   class="light-image-l featured-image"
-                  src="/images/illustrations/landing/feature-6.svg"
+                  src="/@src/assets/illustrations/landing/feature-6.svg"
                   alt=""
                 />
                 <img
                   class="dark-image-l featured-image"
-                  src="/images/illustrations/landing/feature-6-dark.svg"
+                  src="/@src/assets/illustrations/landing/feature-6-dark.svg"
                   alt=""
                 />
               </div>

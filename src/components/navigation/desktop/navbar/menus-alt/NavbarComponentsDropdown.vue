@@ -40,12 +40,12 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
 
             <img
               class="placeholder-image light-image"
-              src="/images/illustrations/components/icons.svg"
+              src="/@src/assets/illustrations/components/icons.svg"
               alt=""
             />
             <img
               class="placeholder-image dark-image"
-              src="/images/illustrations/components/icons-dark.svg"
+              src="/@src/assets/illustrations/components/icons-dark.svg"
               alt=""
             />
           </div>

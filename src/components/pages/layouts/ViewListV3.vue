@@ -65,12 +65,12 @@ const filteredData = computed(() => {
           <div class="placeholder-content">
             <img
               class="light-image"
-              src="/images/illustrations/placeholders/search-3.svg"
+              src="/@src/assets/illustrations/placeholders/search-3.svg"
               alt=""
             />
             <img
               class="dark-image"
-              src="/images/illustrations/placeholders/search-3-dark.svg"
+              src="/@src/assets/illustrations/placeholders/search-3-dark.svg"
               alt=""
             />
             <h3>We couldn't find any matching results.</h3>
@@ -164,12 +164,12 @@ const filteredData = computed(() => {
               <div class="placeholder-content">
                 <img
                   class="light-image"
-                  src="/images/illustrations/placeholders/thinking-canvas.svg"
+                  src="/@src/assets/illustrations/placeholders/thinking-canvas.svg"
                   alt=""
                 />
                 <img
                   class="dark-image"
-                  src="/images/illustrations/placeholders/thinking-canvas-dark.svg"
+                  src="/@src/assets/illustrations/placeholders/thinking-canvas-dark.svg"
                   alt=""
                 />
                 <h3>No saved jobs.</h3>

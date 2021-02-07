@@ -132,12 +132,12 @@ const { locale, t } = useI18n()
         <div class="img-wrap has-text-centered">
           <img
             class="light-image"
-            src="/images/illustrations/right-panel/languages.svg"
+            src="/@src/assets/illustrations/right-panel/languages.svg"
             alt=""
           />
           <img
             class="dark-image"
-            src="/images/illustrations/right-panel/languages-dark.svg"
+            src="/@src/assets/illustrations/right-panel/languages-dark.svg"
             alt=""
           />
         </div>
