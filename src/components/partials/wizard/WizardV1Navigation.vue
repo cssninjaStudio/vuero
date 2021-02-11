@@ -18,14 +18,14 @@ const emit = defineEmit(['update:step'])
 
 const {
   dropdownElement: dropdownElement1,
-  open: open1,
+  toggle: toggle1,
   close: close1,
   isOpen: isOpen1,
 } = useDropdown()
 
 const {
   dropdownElement: dropdownElement2,
-  open: open2,
+  toggle: toggle2,
   isOpen: isOpen2,
 } = useDropdown()
 
@@ -43,7 +43,7 @@ const setStep = (target: number) => {
       <AnimatedLogo width="38px" height="38px" />
     </RouterLink>
 
-    <div class="navbar-item is-wizard-title">
+    <div class="navbar-item is-wizard-title" @click="toggle1">
       <span class="title-wrap"
         >Step {{ step }}: <span>{{ title }}</span></span
       >
@@ -54,7 +54,7 @@ const setStep = (target: number) => {
       :class="[isOpen1 && 'is-active']"
       class="dropdown wizard-dropdown dropdown-trigger"
     >
-      <div class="is-trigger" @click="open1">
+      <div class="is-trigger" @click="toggle1">
         <i class="iconify" data-icon="feather:chevron-down"></i>
       </div>
       <div id="wizard-navigation-dropdown" class="dropdown-menu" role="menu">
@@ -141,7 +141,7 @@ const setStep = (target: number) => {
       :class="[isOpen2 && 'is-active']"
       class="dropdown is-right dropdown-trigger user-dropdown"
     >
-      <div class="is-trigger" aria-haspopup="true" @click="open2">
+      <div class="is-trigger" aria-haspopup="true" @click="toggle2">
         <div class="profile-avatar">
           <img
             class="avatar"

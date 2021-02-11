@@ -134,13 +134,13 @@ const selectedConversation = computed(() => {
 
 const {
   dropdownElement: dropdownElement1,
-  open: open1,
+  toggle: toggle1,
   isOpen: isOpen1,
 } = useDropdown()
 
 const {
   dropdownElement: dropdownElement2,
-  open: open2,
+  toggle: toggle2,
   isOpen: isOpen2,
 } = useDropdown()
 
@@ -187,7 +187,7 @@ useHead({
             :class="[isOpen1 && 'is-active']"
             class="dropdown is-right dropdown-trigger user-dropdown"
           >
-            <div class="is-trigger" aria-haspopup="true" @click="open1">
+            <div class="is-trigger" aria-haspopup="true" @click="toggle1">
               <div class="profile-avatar">
                 <img
                   class="avatar"
@@ -305,7 +305,7 @@ useHead({
                 class="dropdown dropdown-trigger is-up"
               >
                 <div>
-                  <div class="button" aria-haspopup="true" @click="open2">
+                  <div class="button" aria-haspopup="true" @click="toggle2">
                     <i class="iconify" data-icon="feather:plus"></i>
                   </div>
                 </div>

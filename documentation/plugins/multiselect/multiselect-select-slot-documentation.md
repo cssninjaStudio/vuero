@@ -44,27 +44,31 @@ const selectSlotOptions = [
 </script>
 
 <template>
-  <Multiselect
-    v-model="selectSlotValue"
-    placeholder="Select a language"
-    label="name"
-    :options="selectSlotOptions"
-  >
-    <template #singlelabel="{ value }">
-      <div class="multiselect-single-label">
-        <img class="select-label-icon" :src="value.icon" />
-        <span class="select-label-text">
-          {{ value.name }}
-        </span>
-      </div>
-    </template>
-    <template #option="{ option }">
-      <img class="select-option-icon" :src="option.icon" />
-      <span class="select-label-text">
-        {{ option.name }}
-      </span>
-    </template>
-  </Multiselect>
+  <V-Field class="is-image-select">
+    <V-Control>
+      <Multiselect
+        v-model="selectSlotValue"
+        placeholder="Select a language"
+        label="name"
+        :options="selectSlotOptions"
+      >
+        <template #singlelabel="{ value }">
+          <div class="multiselect-single-label">
+            <img class="select-label-icon" :src="value.icon" />
+            <span class="select-label-text">
+              {{ value.name }}
+            </span>
+          </div>
+        </template>
+        <template #option="{ option }">
+          <img class="select-option-icon" :src="option.icon" />
+          <span class="select-label-text">
+            {{ option.name }}
+          </span>
+        </template>
+      </Multiselect>
+    </V-Control>
+  </V-Field>
 </template>
 ```
 

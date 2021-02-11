@@ -1,30 +1,36 @@
 <script setup lang="ts">
-import {
-  watch,
-  onMounted,
-  ref,
-  defineProps,
-  defineEmit,
-  watchEffect,
-} from 'vue'
-// import { useRoute } from 'vue-router'
+import { tryOnUnmounted } from '@vueuse/core'
+import { ref, defineProps, defineEmit, watchEffect, PropType } from 'vue'
+
+type ModalSize = 'small' | 'medium' | 'large' | 'big'
+type ModalAction = 'center' | 'right'
 
 const props = defineProps({
+  title: {
+    type: String,
+    required: true,
+  },
+  size: {
+    type: String as PropType<ModalSize>,
+    default: undefined,
+    validator: function (value?: ModalAction) {
+      // The value must match one of these strings
+      return (
+        [undefined, 'small', 'medium', 'large', 'big'].indexOf(value) !== -1
+      )
+    },
+  },
+  actions: {
+    type: String as PropType<ModalAction>,
+    default: undefined,
+    validator: function (value?: ModalAction) {
+      // The value must match one of these strings
+      return [undefined, 'center', 'right'].indexOf(value) !== -1
+    },
+  },
   open: {
     type: Boolean,
     default: false,
-  },
-  size: {
-    type: String,
-    default: '',
-  },
-  title: {
-    type: String,
-    default: 'Modal title',
-  },
-  actions: {
-    type: String,
-    default: '',
   },
   rounded: {
     type: Boolean,
@@ -54,8 +60,10 @@ const checkScroll = () => {
   }
 }
 
-onMounted(checkScroll)
 watchEffect(checkScroll)
+tryOnUnmounted(() => {
+  document.documentElement.classList.remove('no-scroll')
+})
 </script>
 
 <template>

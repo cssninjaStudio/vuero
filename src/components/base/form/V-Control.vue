@@ -30,6 +30,10 @@ defineProps({
     type: Boolean,
     default: false,
   },
+  nogrow: {
+    type: Boolean,
+    default: false,
+  },
 })
 </script>
 
@@ -40,6 +44,7 @@ defineProps({
       (iconify || fa) && 'has-icon',
       loading && 'is-loading',
       expanded && 'is-expanded',
+      nogrow && 'is-nogrow',
       textaddon && 'is-textarea-addon',
       isValid && 'has-validation has-success',
       hasError && 'has-validation has-error',
@@ -58,3 +63,9 @@ defineProps({
     </div>
   </div>
 </template>
+
+<style lang="scss" scoped>
+.is-nogrow {
+  flex-grow: 0 !important;
+}
+</style>

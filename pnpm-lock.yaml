@@ -12,6 +12,15 @@ dependencies:
   billboard.js: 2.2.2
   bulma: 0.9.2
   dayjs: 1.10.4
+  filepond: 4.25.1
+  filepond-plugin-file-validate-size: 2.2.2_filepond@4.25.1
+  filepond-plugin-file-validate-type: 1.2.5_filepond@4.25.1
+  filepond-plugin-image-crop: 2.0.4_filepond@4.25.1
+  filepond-plugin-image-edit: 1.6.2_filepond@4.25.1
+  filepond-plugin-image-exif-orientation: 1.0.9_filepond@4.25.1
+  filepond-plugin-image-preview: 4.6.5_filepond@4.25.1
+  filepond-plugin-image-resize: 2.0.7_filepond@4.25.1
+  filepond-plugin-image-transform: 3.7.5_filepond@4.25.1
   markdown-it-emoji: 2.0.0
   notyf: 3.9.0
   nprogress: 0.2.0
@@ -19,6 +28,7 @@ dependencies:
   simple-datatables: 3.0.0
   simplebar: 6.0.0-beta.9
   simplebar-vue: 1.6.0_vue@3.0.5
+  tiny-slider: 2.9.3
   tippy.js: 6.2.7
   v-calendar: 3.0.0-alpha.3_@popperjs+core@2.6.0+vue@3.0.5
   vue: 3.0.5
@@ -65,13 +75,11 @@ devDependencies:
   stylelint-config-prettier: 8.0.2_stylelint@13.9.0
   stylelint-config-standard: 20.0.0_stylelint@13.9.0
   stylelint-scss: 3.18.0_stylelint@13.9.0
-  tiny-slider: 2.9.3
   typescript: 4.1.3
   vite: 2.0.0-beta.65
   vite-imagetools: 2.3.0
   vite-plugin-components: 0.6.6
   vite-plugin-fonts: 0.1.5_vite@2.0.0-beta.65
-  vite-plugin-md: 0.4.2_vite@2.0.0-beta.65
   vite-plugin-pages: 0.2.3_vite@2.0.0-beta.65+vue@3.0.5
   vite-plugin-purge-icons: 0.6.0_vite@2.0.0-beta.65
   vite-plugin-pwa: 0.4.6
@@ -4545,6 +4553,74 @@ packages:
       node: ^10.12.0 || >=12.0.0
     resolution:
       integrity: sha512-fqoO76jZ3ZnYrXLDRxBR1YvOvc0k844kcOg40bgsPrE25LAb/PDqTY+ho64Xh2c8ZXgIKldchCFHczG2UVRcWA==
+  /filepond-plugin-file-validate-size/2.2.2_filepond@4.25.1:
+    dependencies:
+      filepond: 4.25.1
+    dev: false
+    peerDependencies:
+      filepond: '>=3.1.2 <5.x'
+    resolution:
+      integrity: sha512-35OH99f0poTBdldMcPOomZeXXiJC4ae5qrqZheP2wS1QDOcJa5RUgcIAwS43rixPrHNbEj9NpFei+7X15MUm9w==
+  /filepond-plugin-file-validate-type/1.2.5_filepond@4.25.1:
+    dependencies:
+      filepond: 4.25.1
+    dev: false
+    peerDependencies:
+      filepond: '>=1.x <5.x'
+    resolution:
+      integrity: sha512-SsdYD6N+PDnetrPrBHfl13ZC9jRv5BuGdai5cORfANhuE/N32OwU/IclCNQ4qlpIa88hzqBg9dj6IINkiW+4HA==
+  /filepond-plugin-image-crop/2.0.4_filepond@4.25.1:
+    dependencies:
+      filepond: 4.25.1
+    dev: false
+    peerDependencies:
+      filepond: '>=3.x <5.x'
+    resolution:
+      integrity: sha512-Y5dv2rFd/UBwA3+sdJOFjuCv1t5ekLOJr2C3hsNjq58lw7kM9/twaT+qjyZW0LFj1Yq4DccynuqS3BG50oHBoQ==
+  /filepond-plugin-image-edit/1.6.2_filepond@4.25.1:
+    dependencies:
+      filepond: 4.25.1
+    dev: false
+    peerDependencies:
+      filepond: '>=3.7.2 <5.x'
+    resolution:
+      integrity: sha512-ToQvIDEXr1kpkkEaYgz2Kqp/v4+m5xPL/PxQKw7RH4MFnK4QPk6tH49JmqrEbY3luolhdR+PyaEebbqgalrXag==
+  /filepond-plugin-image-exif-orientation/1.0.9_filepond@4.25.1:
+    dependencies:
+      filepond: 4.25.1
+    dev: false
+    peerDependencies:
+      filepond: '>=3.x <5.x'
+    resolution:
+      integrity: sha512-Pyw7oNpMk5YwX0eYsa1wjNTJ2WxTQ27VUDviV0XrNbKPB7/iDSZ9r2zWSEeT9yS46OUGNE8lcdAARi5Z2v5TLA==
+  /filepond-plugin-image-preview/4.6.5_filepond@4.25.1:
+    dependencies:
+      filepond: 4.25.1
+    dev: false
+    peerDependencies:
+      filepond: '>=4.x <5.x'
+    resolution:
+      integrity: sha512-NssyAoy7zo/bGnwPpDrKHU6g64gjavf4fvxja1wIFu2zq57Sneevg0r15e1WHkAHL4hs0SwbX1YUpEEgJZ4gSg==
+  /filepond-plugin-image-resize/2.0.7_filepond@4.25.1:
+    dependencies:
+      filepond: 4.25.1
+    dev: false
+    peerDependencies:
+      filepond: '>=3.x <5.x'
+    resolution:
+      integrity: sha512-Ea2shQ8DFWyfbgqEuz8tp23F8v+kQLlHXNIDo+C7qxKHbflHoQ8Aol5ZrWLBImLx/J3Kbrzc+SrBem8RZOz9CA==
+  /filepond-plugin-image-transform/3.7.5_filepond@4.25.1:
+    dependencies:
+      filepond: 4.25.1
+    dev: false
+    peerDependencies:
+      filepond: '>=3.6.0 <5.x'
+    resolution:
+      integrity: sha512-7+VaKcSjXMEREQUcekIJBV9s/XUuUP1JKSHCmma3Lur+bgUfuUXuGSmfgbIz/mBtUUPeCa2+azRvkHZY+EUFzA==
+  /filepond/4.25.1:
+    dev: false
+    resolution:
+      integrity: sha512-8UPPTzfpHZRUtJl3dEcGMLYOygg8taJZpYTv1WaEkvzeI+X0JX9+agMJ+5Lu1EKtdt9dGq/9Gud+EnNRBaGl1A==
   /fill-range/4.0.0:
     dependencies:
       extend-shallow: 2.0.1
@@ -8917,7 +8993,7 @@ packages:
     resolution:
       integrity: sha512-NB6Dk1A9xgQPMoGqC5CVXn123gWyte215ONT5Pp5a0yt4nlEoO1ZWeCwpncaekPHXO60i47ihFnZPiRPjRMq4Q==
   /tiny-slider/2.9.3:
-    dev: true
+    dev: false
     resolution:
       integrity: sha512-KZY45m+t3fb3Kwlqsic0PIos1lgTNXBEC5N/AhI3aNEcryrd0nXohZMbVPMkcNYdbLjY1IUJAXWYAO6/RGJnKw==
   /tippy.js/6.2.7:
@@ -9393,16 +9469,6 @@ packages:
       vite: ^2.0.0-beta.22
     resolution:
       integrity: sha512-yF9Q1OVRGijlgUe8VXkAEGon+3tIAfeFtzOFBUpSDp5OmMVFMwt40Jy/7qMbVmu9tAV1OeCAK1uaUZgjQE5QPg==
-  /vite-plugin-md/0.4.2_vite@2.0.0-beta.65:
-    dependencies:
-      gray-matter: 4.0.2
-      markdown-it: 12.0.4
-      vite: 2.0.0-beta.65
-    dev: true
-    peerDependencies:
-      vite: ^2.0.0-beta.1
-    resolution:
-      integrity: sha512-gAmtGCiPj0ESdWJikKTg4h0ADqybezRVOh1a51KtWqYk4WgwrvFRpTeVq9fVqLXLFhuU0iUIKJ04V3KeXAeWdQ==
   /vite-plugin-pages/0.2.3_vite@2.0.0-beta.65+vue@3.0.5:
     dependencies:
       debug: 4.3.2
@@ -9977,6 +10043,15 @@ specifiers:
   eslint-plugin-md: 1.0.19
   eslint-plugin-prettier-vue: 3.0.0-alpha.2
   eslint-plugin-vue: 7.5.0
+  filepond: ^4.25.1
+  filepond-plugin-file-validate-size: ^2.2.2
+  filepond-plugin-file-validate-type: ^1.2.5
+  filepond-plugin-image-crop: ^2.0.4
+  filepond-plugin-image-edit: ^1.6.2
+  filepond-plugin-image-exif-orientation: ^1.0.9
+  filepond-plugin-image-preview: ^4.6.5
+  filepond-plugin-image-resize: ^2.0.7
+  filepond-plugin-image-transform: ^3.7.5
   gray-matter: 4.0.2
   husky: 5.0.6
   lint-staged: 10.5.4
@@ -10008,7 +10083,6 @@ specifiers:
   vite-imagetools: 2.3.0
   vite-plugin-components: 0.6.6
   vite-plugin-fonts: 0.1.5
-  vite-plugin-md: 0.4.2
   vite-plugin-pages: 0.2.3
   vite-plugin-purge-icons: 0.6.0
   vite-plugin-pwa: 0.4.6
