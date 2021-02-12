@@ -44,33 +44,6 @@ useHead({
       <Toolbar />
     </div>
 
-    <div class="list-view-toolbar is-reversed">
-      <div class="control has-icon">
-        <input
-          class="input custom-text-filter"
-          placeholder="Search..."
-          data-filter-target=".list-view-item"
-        />
-        <div class="form-icon">
-          <i class="iconify" data-icon="feather:search"></i>
-        </div>
-      </div>
-
-      <div class="tabs-inner">
-        <div class="tabs">
-          <ul>
-            <li :class="[activeTab === 'all' && 'is-active']">
-              <a @click="activeTab = 'all'"><span>All</span></a>
-            </li>
-            <li :class="[activeTab === 'saved' && 'is-active']">
-              <a @click="activeTab = 'saved'"><span>Saved</span></a>
-            </li>
-            <li class="tab-naver"></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
     <div class="page-content-inner">
       <ViewListV4 :active-tab="activeTab" />
     </div>

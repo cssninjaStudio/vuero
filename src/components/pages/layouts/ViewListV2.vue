@@ -60,11 +60,15 @@ const filteredData = computed(() => {
     <!--List-->
     <div class="list-view list-view-v2">
       <!--List Empty Search Placeholder -->
-      <div
+      <V-PlaceholderPage
         :class="[filteredData.length !== 0 && 'is-hidden']"
-        class="page-placeholder custom-text-filter-placeholder"
+        title="We couldn't find any matching results."
+        subtitle="Too bad. Looks like we couldn't find any matching results for the
+          search terms you've entered. Please try different search terms or
+          criteria."
+        larger
       >
-        <div class="placeholder-content">
+        <template #image>
           <img
             class="light-image"
             src="/@src/assets/illustrations/placeholders/search-2.svg"
@@ -75,14 +79,8 @@ const filteredData = computed(() => {
             src="/@src/assets/illustrations/placeholders/search-2-dark.svg"
             alt=""
           />
-          <h3>We couldn't find any matching results.</h3>
-          <p class="is-larger">
-            Too bad. Looks like we couldn't find any matching results for the
-            search terms you've entered. Please try different search terms or
-            criteria.
-          </p>
-        </div>
-      </div>
+        </template>
+      </V-PlaceholderPage>
 
       <!--Active Tab-->
       <div
@@ -235,8 +233,13 @@ const filteredData = computed(() => {
       >
         <div class="list-view-inner">
           <!--Empty placeholder-->
-          <div class="page-placeholder custom-text-filter-placeholder">
-            <div class="placeholder-content">
+          <V-PlaceholderPage
+            title="There are no inactive properties."
+            subtitle="Looks like there are no inactive properties to display. You can
+                disable and also enable a property from the property settings."
+            larger
+          >
+            <template #image>
               <img
                 class="light-image"
                 src="/@src/assets/illustrations/placeholders/having-coffee.svg"
@@ -247,13 +250,8 @@ const filteredData = computed(() => {
                 src="/@src/assets/illustrations/placeholders/having-coffee-dark.svg"
                 alt=""
               />
-              <h3>There are no inactive properties.</h3>
-              <p class="is-larger">
-                Looks like there are no inactive properties to display. You can
-                disable and also enable a property from the property settings.
-              </p>
-            </div>
-          </div>
+            </template>
+          </V-PlaceholderPage>
         </div>
       </div>
     </div>
@@ -263,5 +261,272 @@ const filteredData = computed(() => {
 <style lang="scss">
 @import '../../../assets/scss/abstracts/_variables.scss';
 @import '../../../assets/scss/abstracts/_mixins.scss';
-@import '../../../assets/scss/pages/lists/_list-view.scss';
+
+.list-view-v2 {
+  .list-view-item {
+    @include vuero-s-card();
+
+    margin-bottom: 16px;
+    padding: 16px;
+
+    &:hover {
+      box-shadow: $light-box-shadow;
+    }
+
+    .list-view-item-inner {
+      display: flex;
+
+      > img {
+        display: block;
+        min-height: 130px;
+        max-height: 130px;
+        min-width: 190px;
+        max-width: 190px;
+        object-fit: cover;
+        border-radius: 4px;
+      }
+
+      .meta-left {
+        display: flex;
+        flex-direction: column;
+        margin-left: 16px;
+
+        h3 {
+          font-family: $font-alt;
+          color: $dark-text;
+          font-weight: 600;
+          font-size: 1.1rem;
+          line-height: 1.5;
+
+          .rating {
+            margin-left: 12px;
+
+            i {
+              position: relative;
+              top: -2px;
+              font-size: 12px;
+              color: darken($fade-grey, 4%);
+
+              &.active {
+                color: #ffc43b;
+              }
+            }
+          }
+        }
+
+        p {
+          font-size: 0.95rem;
+          color: $light-text;
+
+          svg {
+            height: 12px;
+            width: 12px;
+          }
+        }
+
+        > span {
+          display: flex;
+          align-items: center;
+          margin-top: 10px;
+          font-family: $font;
+          font-size: 0.9rem;
+          color: $primary;
+
+          .icon-separator {
+            font-size: 5px;
+            color: $light-text;
+            padding: 0 10px;
+          }
+        }
+
+        .icon-list {
+          margin-top: auto;
+          display: flex;
+
+          > span {
+            display: flex;
+            align-items: center;
+            margin-right: 15px;
+
+            span {
+              font-size: 0.85rem;
+              font-family: $font-alt;
+              color: $dark-text;
+            }
+
+            i {
+              font-size: 1.2rem;
+              margin-right: 6px;
+              color: $light-text;
+            }
+          }
+        }
+      }
+
+      .meta-right {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        .buttons {
+          margin-bottom: 0;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+.is-dark {
+  .list-view-v2 {
+    .list-view-item {
+      @include vuero-card--dark();
+
+      .list-view-item-inner {
+        .meta-left {
+          h3 {
+            color: $dark-dark-text !important;
+
+            .rating {
+              i:not(.active) {
+                color: darken($dark-sidebar, 2%);
+              }
+            }
+          }
+
+          > span {
+            color: $accent;
+          }
+
+          .icon-list {
+            > span {
+              span {
+                color: $dark-dark-text;
+              }
+            }
+          }
+        }
+
+        .meta-right {
+          .buttons {
+            .button {
+              &:first-child {
+                background: lighten($dark-sidebar, 2%);
+                border-color: lighten($dark-sidebar, 8%);
+                color: $dark-dark-text;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .list-view-v2 {
+    .list-view-item {
+      padding: 20px;
+
+      .list-view-item-inner {
+        flex-direction: column;
+
+        > img {
+          width: 100%;
+          max-width: 100%;
+          min-height: 160px;
+          max-height: 160px;
+          margin-bottom: 1rem;
+        }
+
+        .meta-left {
+          margin-left: 0;
+
+          > span {
+            margin-bottom: 16px;
+          }
+
+          .icon-list {
+            flex-wrap: wrap;
+
+            > span {
+              flex-direction: column;
+              text-align: center;
+              margin: 10px;
+              width: calc(33.3% - 20px);
+
+              i {
+                margin: 0;
+              }
+            }
+          }
+        }
+
+        .meta-right {
+          margin: 16px 0 0 0;
+
+          .buttons {
+            margin: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            .button {
+              width: 48%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .list-view-v2 {
+    .list-view-item {
+      .list-view-item-inner {
+        position: relative;
+        flex-direction: column;
+
+        .v-avatar {
+          margin-bottom: 10px;
+        }
+
+        .meta-left {
+          margin-left: 0;
+        }
+
+        .meta-right {
+          flex-direction: column;
+          margin-left: 0;
+
+          .tags {
+            margin: 10px 0;
+          }
+
+          .stats {
+            margin: 10px 0;
+          }
+
+          .network {
+            margin: 10px 0 0 0;
+            justify-content: center;
+
+            > span {
+              display: none;
+            }
+          }
+
+          .dropdown {
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+}
 </style>
