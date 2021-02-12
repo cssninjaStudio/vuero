@@ -58,11 +58,15 @@ const filteredData = computed(() => {
       <!--List-->
       <div class="list-view list-view-v3">
         <!--List Empty Search Placeholder -->
-        <div
-          class="page-placeholder custom-text-filter-placeholder"
+        <V-PlaceholderPage
           :class="[filteredData.length !== 0 && 'is-hidden']"
+          title="We couldn't find any matching results."
+          subtitle="Too bad. Looks like we couldn't find any matching results for the
+          search terms you've entered. Please try different search terms or
+          criteria."
+          larger
         >
-          <div class="placeholder-content">
+          <template #image>
             <img
               class="light-image"
               src="/@src/assets/illustrations/placeholders/search-3.svg"
@@ -73,14 +77,8 @@ const filteredData = computed(() => {
               src="/@src/assets/illustrations/placeholders/search-3-dark.svg"
               alt=""
             />
-            <h3>We couldn't find any matching results.</h3>
-            <p class="is-larger">
-              Too bad. Looks like we couldn't find any matching results for the
-              search terms you've entered. Please try different search terms or
-              criteria.
-            </p>
-          </div>
-        </div>
+          </template>
+        </V-PlaceholderPage>
 
         <!--Active Tab-->
         <div
@@ -157,11 +155,12 @@ const filteredData = computed(() => {
         >
           <div class="list-view-inner">
             <!--Empty placeholder-->
-            <div
-              class="page-placeholder custom-text-filter-placeholder"
-              data-filter-hide
+            <V-PlaceholderPage
+              title="No saved jobs."
+              subtitle="Looks like you don't have any saved jobs for the moment. It's
+                  also possible that some of your saved items expired."
             >
-              <div class="placeholder-content">
+              <template #image>
                 <img
                   class="light-image"
                   src="/@src/assets/illustrations/placeholders/thinking-canvas.svg"
@@ -172,13 +171,8 @@ const filteredData = computed(() => {
                   src="/@src/assets/illustrations/placeholders/thinking-canvas-dark.svg"
                   alt=""
                 />
-                <h3>No saved jobs.</h3>
-                <p class="">
-                  Looks like you don't have any saved jobs for the moment. It's
-                  also possible that some of your saved items expired
-                </p>
-              </div>
-            </div>
+              </template>
+            </V-PlaceholderPage>
           </div>
         </div>
       </div>
@@ -189,5 +183,258 @@ const filteredData = computed(() => {
 <style lang="scss">
 @import '../../../assets/scss/abstracts/_variables.scss';
 @import '../../../assets/scss/abstracts/_mixins.scss';
-@import '../../../assets/scss/pages/lists/_list-view.scss';
+
+.list-view-v3 {
+  .list-view-item {
+    @include vuero-r-card();
+
+    margin-bottom: 16px;
+    padding: 16px;
+
+    .list-view-item-inner {
+      display: flex;
+      align-items: center;
+
+      > img {
+        width: 100%;
+        max-width: 60px;
+        min-width: 60px;
+        max-height: 60px;
+        min-height: 60px;
+        border-radius: 50%;
+        border: 1px solid $fade-grey;
+      }
+
+      .meta-left {
+        margin-left: 16px;
+
+        h3 {
+          font-family: $font-alt;
+          color: $dark-text;
+          font-weight: 500;
+          font-size: 1.1rem;
+          line-height: 1;
+        }
+
+        > span:not(.tag) {
+          font-size: 0.9rem;
+          color: $light-text;
+
+          svg {
+            position: relative;
+            top: 1px;
+            height: 12px;
+            width: 12px;
+          }
+
+          .icon-separator {
+            position: relative;
+            top: -3px;
+            font-size: 5px;
+            color: $light-text;
+            padding: 0 8px;
+          }
+
+          .iconify {
+            margin-right: 0.25rem;
+          }
+        }
+      }
+
+      .meta-right {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        .buttons {
+          margin-bottom: 0;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+.is-dark {
+  .list-view-v3 {
+    .list-view-item {
+      @include vuero-card--dark();
+
+      .list-view-item-inner {
+        > img {
+          border-color: lighten($dark-sidebar, 12%);
+        }
+
+        .meta-left {
+          h3 {
+            color: $dark-dark-text !important;
+          }
+        }
+
+        .meta-right {
+          .buttons {
+            .button {
+              &:nth-child(2) {
+                background: lighten($dark-sidebar, 2%);
+                border-color: lighten($dark-sidebar, 8%);
+                color: $dark-dark-text;
+                transition: all 0.3s;
+
+                &:hover {
+                  border-color: $accent;
+                  color: $accent;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .list-view-v3 {
+    .list-view-item {
+      position: relative;
+      padding: 20px;
+
+      .list-view-item-inner {
+        flex-direction: column;
+
+        > img {
+          margin-bottom: 1rem;
+        }
+
+        .meta-left {
+          margin-left: 0;
+
+          h3 {
+            text-align: center;
+            margin-bottom: 6px;
+          }
+
+          > span {
+            margin-bottom: 16px;
+          }
+
+          .icon-list {
+            flex-wrap: wrap;
+
+            > span {
+              flex-direction: column;
+              text-align: center;
+              margin: 10px;
+              width: calc(33.3% - 20px);
+
+              i {
+                margin: 0;
+              }
+            }
+          }
+        }
+
+        .meta-right {
+          margin: 16px 0 0 0;
+          width: 100%;
+
+          .buttons {
+            margin: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            .button {
+              width: 100%;
+              margin: 10px 0;
+
+              &:first-child {
+                width: 100%;
+                max-width: 240px;
+                margin: 10px auto;
+              }
+
+              &:nth-child(2) {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                max-width: 35px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .list-view-v3 {
+    .list-view-inner {
+      display: flex;
+      flex-wrap: wrap;
+
+      .list-view-item {
+        padding: 20px;
+        margin: 10px;
+        width: calc(50% - 20px);
+
+        .list-view-item-inner {
+          flex-direction: column;
+          height: 100%;
+
+          > img {
+            width: 100%;
+            max-width: 100%;
+            min-height: 160px;
+            max-height: 160px;
+            margin-bottom: 1rem;
+          }
+
+          .meta-left {
+            margin-left: 0;
+
+            > span {
+              margin-bottom: 16px;
+            }
+
+            .icon-list {
+              flex-wrap: wrap;
+
+              > span {
+                flex-direction: column;
+                text-align: center;
+                margin: 10px;
+                width: calc(33.3% - 20px);
+
+                i {
+                  margin: 0;
+                }
+              }
+            }
+          }
+
+          .meta-right {
+            margin: auto 0 0 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+
+            .buttons {
+              margin: 16px 0 0 0;
+              width: 100%;
+              display: flex;
+              justify-content: space-between;
+
+              .button {
+                width: 48%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 </style>
