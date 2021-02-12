@@ -153,7 +153,11 @@ useHead({
       </div>
     </div>
 
-    <V-Modal :open="leftActionsOpen" @close="leftActionsOpen = false">
+    <V-Modal
+      title="Standard actions"
+      :open="leftActionsOpen"
+      @close="leftActionsOpen = false"
+    >
       <template #content>
         <V-PlaceholderSection
           title="Go Premium"
@@ -166,6 +170,7 @@ useHead({
     </V-Modal>
 
     <V-Modal
+      title="Centered actions"
       :open="centeredActionsOpen"
       actions="center"
       @close="centeredActionsOpen = false"
@@ -182,6 +187,7 @@ useHead({
     </V-Modal>
 
     <V-Modal
+      title="Right actions"
       :open="rightActionsOpen"
       actions="right"
       @close="rightActionsOpen = false"

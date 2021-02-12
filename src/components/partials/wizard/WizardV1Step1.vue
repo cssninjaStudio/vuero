@@ -1,3 +1,22 @@
+<script setup lang="ts">
+const onAddFile = (error: any, file: any) => {
+  if (error) {
+    console.error(error)
+    return
+  }
+
+  console.log('file added', file)
+}
+const onRemoveFile = (error: any, file: any) => {
+  if (error) {
+    console.error(error)
+    return
+  }
+
+  console.log('file removed', file)
+}
+</script>
+
 <template>
   <div class="step-content">
     <div class="step-title">
@@ -9,11 +28,23 @@
       <div class="project-info-head">
         <div class="project-avatar-upload">
           <div class="filepond-profile-wrap is-small">
-            <input
-              type="file"
+            <V-FilePond
               class="profile-filepond"
               name="profile_filepond"
-              accept="image/png, image/jpeg, image/gif"
+              chunk-retry-delays="500,1000,3000"
+              label-idle="<i class='lnil lnil-cloud-upload'></i>"
+              :accepted-file-types="['image/png', 'image/jpeg', 'image/gif']"
+              :image-preview-height="140"
+              :image-resize-target-width="140"
+              :image-resize-target-height="140"
+              image-crop-aspect-ratio="1:1"
+              style-panel-layout="compact circle"
+              style-load-indicator-position="center bottom"
+              style-progress-indicator-position="right bottom"
+              style-button-remove-item-position="left bottom"
+              style-button-process-item-position="right bottom"
+              @addfile="onAddFile"
+              @removefile="onRemoveFile"
             />
           </div>
           <p>

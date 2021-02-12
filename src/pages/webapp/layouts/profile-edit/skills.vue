@@ -7,5 +7,5 @@ useHead({
 </script>
 
 <template>
-  <EditProfileV3 />
+  <EditProfileSkills />
 </template>
