@@ -1,20 +1,7 @@
 <script setup lang="ts">
-import { defineEmit, defineProps } from 'vue'
-import { isDark } from '/@src/composition/state/darkModeState.ts'
 import useDropdown from '/@src/composition/use/useDropdown'
-
-const props = defineProps({
-  step: {
-    type: Number,
-    default: 1,
-  },
-  title: {
-    type: String,
-    default: '',
-  },
-})
-
-const emit = defineEmit(['update:step'])
+import { currentStep, stepTitle } from '/@src/composition/state/wizardState'
+import { isDark } from '/@src/composition/state/darkModeState.ts'
 
 const {
   dropdownElement: dropdownElement1,
@@ -30,8 +17,8 @@ const {
 } = useDropdown()
 
 const setStep = (target: number) => {
-  if (props.step >= target) {
-    emit('update:step', target)
+  if (currentStep.value >= target) {
+    currentStep.value = target
     close1()
   }
 }
@@ -44,9 +31,9 @@ const setStep = (target: number) => {
     </RouterLink>
 
     <div class="navbar-item is-wizard-title" @click="toggle1">
-      <span class="title-wrap"
-        >Step {{ step }}: <span>{{ title }}</span></span
-      >
+      <span class="title-wrap">
+        Step {{ currentStep }}: <span>{{ stepTitle }}</span>
+      </span>
     </div>
 
     <div
@@ -60,57 +47,50 @@ const setStep = (target: number) => {
       <div id="wizard-navigation-dropdown" class="dropdown-menu" role="menu">
         <div class="dropdown-content">
           <a
-            :class="[step < 1 && 'is-disabled']"
+            :class="[currentStep < 1 && 'is-disabled']"
             class="dropdown-item kill-drop"
-            data-dropdown-step="0"
             @click="setStep(1)"
           >
-            Step 1: Project Type
+            Step 1: {{ stepTitle }}
           </a>
           <a
-            :class="[step < 2 && 'is-disabled']"
+            :class="[currentStep < 2 && 'is-disabled']"
             class="dropdown-item kill-drop"
-            data-dropdown-step="1"
             @click="setStep(2)"
           >
             Step 2: Project Info
           </a>
           <a
-            :class="[step < 3 && 'is-disabled']"
+            :class="[currentStep < 3 && 'is-disabled']"
             class="dropdown-item kill-drop"
-            data-dropdown-step="2"
             @click="setStep(3)"
           >
             Step 3: Project Details
           </a>
           <a
-            :class="[step < 4 && 'is-disabled']"
+            :class="[currentStep < 4 && 'is-disabled']"
             class="dropdown-item kill-drop"
-            data-dropdown-step="3"
             @click="setStep(4)"
           >
             Step 4: Project Files
           </a>
           <a
-            :class="[step < 5 && 'is-disabled']"
+            :class="[currentStep < 5 && 'is-disabled']"
             class="dropdown-item kill-drop"
-            data-dropdown-step="4"
             @click="setStep(5)"
           >
             Step 5: Team Members
           </a>
           <a
-            :class="[step < 6 && 'is-disabled']"
+            :class="[currentStep < 6 && 'is-disabled']"
             class="dropdown-item kill-drop"
-            data-dropdown-step="5"
             @click="setStep(6)"
           >
             Step 6: Project Tools
           </a>
           <a
-            :class="[step < 7 && 'is-disabled']"
+            :class="[currentStep < 7 && 'is-disabled']"
             class="dropdown-item kill-drop"
-            data-dropdown-step="6"
             @click="setStep(7)"
           >
             Step 7: Preview
@@ -185,8 +165,8 @@ const setStep = (target: number) => {
 </template>
 
 <style lang="scss" scoped>
-@import '../../../assets/scss/abstracts/_variables.scss';
-@import '../../../assets/scss/abstracts/_mixins.scss';
+@import '../../../../assets/scss/abstracts/_variables.scss';
+@import '../../../../assets/scss/abstracts/_mixins.scss';
 
 .wizard-navigation {
   position: fixed;

@@ -115,24 +115,20 @@ const onSave = async () => {
               @removefile="onRemoveFile"
             />
           </div>
-          <button
+          <V-IconButton
             v-if="!isUploading"
-            class="button is-circle edit-button is-edit"
+            iconify="feather:edit-2"
+            class="edit-button is-edit"
+            circle
             @click="isUploading = true"
-          >
-            <span class="icon is-small">
-              <i class="iconify" data-icon="feather:edit-2"></i>
-            </span>
-          </button>
-          <button
+          />
+          <V-IconButton
             v-else
-            class="button is-circle edit-button is-back"
+            iconify="feather:arrow-left"
+            class="edit-button is-back"
+            circle
             @click="isUploading = false"
-          >
-            <span class="icon is-small">
-              <i class="iconify" data-icon="feather:arrow-left"></i>
-            </span>
-          </button>
+          />
         </div>
       </div>
 

@@ -41,6 +41,7 @@
     "billboard.js": "2.2.2",
     "bulma": "0.9.2",
     "dayjs": "1.10.4",
+    "dropzone": "^5.7.6",
     "filepond": "^4.25.1",
     "filepond-plugin-file-validate-size": "^2.2.2",
     "filepond-plugin-file-validate-type": "^1.2.5",

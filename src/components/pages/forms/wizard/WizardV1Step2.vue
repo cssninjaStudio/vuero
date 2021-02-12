@@ -1,19 +1,25 @@
 <script setup lang="ts">
-const onAddFile = (error: any, file: any) => {
+import { wizardData } from '/@src/composition/state/wizardState'
+
+const onAddFile = (error: any, fileInfo: any) => {
   if (error) {
     console.error(error)
     return
   }
 
-  console.log('file added', file)
+  const _file = fileInfo.file as File
+  if (_file) {
+    wizardData.logo = _file
+  }
 }
-const onRemoveFile = (error: any, file: any) => {
+
+const onRemoveFile = (error: any, fileInfo: any) => {
   if (error) {
     console.error(error)
     return
   }
 
-  console.log('file removed', file)
+  wizardData.logo = null
 }
 </script>
 
@@ -54,39 +60,62 @@ const onRemoveFile = (error: any, file: any) => {
         </div>
         <div class="project-info">
           <div class="project-name">
-            <div class="field">
-              <div class="control">
+            <V-Field>
+              <V-Control>
                 <input
                   id="project-name"
+                  v-model="wizardData.name"
                   class="input"
                   placeholder="Project Name"
                 />
-              </div>
-            </div>
+              </V-Control>
+            </V-Field>
           </div>
           <div class="project-description p-t-10">
-            <div class="field">
-              <div class="control">
+            <V-Field>
+              <V-Control>
                 <textarea
                   id="project-description"
+                  v-model="wizardData.description"
                   class="textarea"
                   rows="4"
                   placeholder="Describe your project..."
                 ></textarea>
-              </div>
-              <p class="help">Minimum of 50 characters</p>
-            </div>
-            <div class="field">
+                <p v-if="wizardData.description.length === 0" class="help">
+                  Minimum of 50 characters
+                </p>
+                <p
+                  v-else-if="wizardData.description.length === 49"
+                  class="help"
+                >
+                  {{ 50 - wizardData.description.length }} character remaining
+                </p>
+                <p v-else-if="wizardData.description.length < 50" class="help">
+                  {{ 50 - wizardData.description.length }} characters remaining
+                </p>
+              </V-Control>
+            </V-Field>
+            <V-Field>
               <label>Related Industries</label>
-              <div class="control">
-                <input
-                  id="choices-text-remove-button"
-                  class="input"
-                  value="UI/UX Design"
+              <V-Control>
+                <Multiselect
+                  v-model="wizardData.relatedTo"
+                  label="value"
                   placeholder="Enter something"
-                />
-              </div>
-            </div>
+                  :options="[
+                    {
+                      value: 'UI/UX Design',
+                    },
+                    {
+                      value: 'Web Development',
+                    },
+                    {
+                      value: 'Marketing',
+                    },
+                  ]"
+                ></Multiselect>
+              </V-Control>
+            </V-Field>
           </div>
         </div>
       </div>

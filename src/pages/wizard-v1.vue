@@ -1,39 +1,40 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
-import { computed, ref, watch, watchEffect } from 'vue'
+import { watch, watchEffect } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
+
+import {
+  stepTitle,
+  currentStep,
+  saveData,
+  resetData,
+} from '/@src/composition/state/wizardState'
 
 const route = useRoute()
 const router = useRouter()
 
-const currentStep = ref<number>(
-  (route.query.step && parseInt(route.query.step as string)) || 1
-)
-
-const stepTitle = computed(() => {
-  switch (currentStep.value) {
-    case 2:
-      return 'Project Info'
-    case 3:
-      return 'Project Details'
-    case 4:
-      return 'Project Files'
-    case 5:
-      return 'Team Members'
-    case 6:
-      return 'Project Tools'
-    case 7:
-      return 'Preview'
-    case 8:
-      return 'Finish'
-    case 1:
-    default:
-      return 'Project Type'
+const previousStep = () => {
+  if (currentStep.value > 1) {
+    currentStep.value--
   }
-})
+}
+
+const validateStep = async () => {
+  if (currentStep.value < 7) {
+    currentStep.value++
+  } else if (currentStep.value === 7) {
+    await saveData()
+    currentStep.value++
+  } else {
+    router.push({
+      name: 'webapp-layouts-projects-details',
+    })
+    resetData()
+  }
+}
 
 useHead({
-  title: 'Wizard V1 - Vuero',
+  title: `${stepTitle.value} - Wizard V1 - Vuero`,
 })
 watch(currentStep, () => {
   router.push({
@@ -43,8 +44,10 @@ watch(currentStep, () => {
   })
 })
 watchEffect(() => {
-  currentStep.value =
-    (route.query.step && parseInt(route.query.step as string)) || 1
+  const step = route.query.step as string
+  if (step) {
+    currentStep.value = parseInt(step)
+  }
 })
 </script>
 
@@ -68,8 +71,7 @@ watchEffect(() => {
         class="inner-wrapper"
         :class="[currentStep === 1 && 'is-active']"
       >
-        <!--src/partials/pages/wizard/wizard-v1/-->
-        <WizardV1Step0 @next="currentStep = 2" />
+        <WizardV1Step1 @next="currentStep = 2" />
       </div>
 
       <div
@@ -77,8 +79,7 @@ watchEffect(() => {
         class="inner-wrapper"
         :class="[currentStep === 2 && 'is-active']"
       >
-        <!--src/partials/pages/wizard/wizard-v1/-->
-        <WizardV1Step1 @next="currentStep = 3" @prev="currentStep = 1" />
+        <WizardV1Step2 @next="currentStep = 3" @prev="currentStep = 1" />
       </div>
 
       <div
@@ -86,8 +87,7 @@ watchEffect(() => {
         class="inner-wrapper"
         :class="[currentStep === 3 && 'is-active']"
       >
-        <!--src/partials/pages/wizard/wizard-v1/-->
-        <WizardV1Step2 @next="currentStep = 4" @prev="currentStep = 2" />
+        <WizardV1Step3 @next="currentStep = 4" @prev="currentStep = 2" />
       </div>
 
       <div
@@ -95,8 +95,7 @@ watchEffect(() => {
         class="inner-wrapper"
         :class="[currentStep === 4 && 'is-active']"
       >
-        <!--src/partials/pages/wizard/wizard-v1/-->
-        <WizardV1Step3 @next="currentStep = 5" @prev="currentStep = 3" />
+        <WizardV1Step4 @next="currentStep = 5" @prev="currentStep = 3" />
       </div>
 
       <div
@@ -104,8 +103,7 @@ watchEffect(() => {
         class="inner-wrapper"
         :class="[currentStep === 5 && 'is-active']"
       >
-        <!--src/partials/pages/wizard/wizard-v1/-->
-        <WizardV1Step4 @next="currentStep = 6" @prev="currentStep = 4" />
+        <WizardV1Step5 @next="currentStep = 6" @prev="currentStep = 4" />
       </div>
 
       <div
@@ -113,8 +111,7 @@ watchEffect(() => {
         class="inner-wrapper"
         :class="[currentStep === 6 && 'is-active']"
       >
-        <!--src/partials/pages/wizard/wizard-v1/-->
-        <WizardV1Step5 @next="currentStep = 7" @prev="currentStep = 5" />
+        <WizardV1Step6 @next="currentStep = 7" @prev="currentStep = 5" />
       </div>
 
       <div
@@ -123,8 +120,7 @@ watchEffect(() => {
         class="inner-wrapper"
         data-step-title="Preview"
       >
-        <!--src/partials/pages/wizard/wizard-v1/-->
-        <WizardV1Step6 @next="currentStep = 8" @prev="currentStep = 6" />
+        <WizardV1Step7 @next="currentStep = 8" @prev="currentStep = 6" />
       </div>
 
       <div
@@ -133,8 +129,7 @@ watchEffect(() => {
         class="inner-wrapper"
         data-step-title="Finish"
       >
-        <!--src/partials/pages/wizard/wizard-v1/-->
-        <WizardV1Step7 />
+        <WizardV1Step8 />
       </div>
 
       <!--Wizard Navigation Buttons-->
@@ -149,13 +144,7 @@ watchEffect(() => {
               currentStep > 2 && 'is-primary is-elevated',
             ]"
             class="button v-button is-bold wizard-button-previous"
-            @click="
-              () => {
-                if (currentStep > 2) {
-                  currentStep--
-                }
-              }
-            "
+            @click="previousStep"
           >
             Previous
           </button>
@@ -165,15 +154,9 @@ watchEffect(() => {
               currentStep < 8 && 'is-primary is-elevated',
             ]"
             class="button v-button is-bold wizard-button-next"
-            @click="
-              () => {
-                if (currentStep <= 8) {
-                  currentStep++
-                }
-              }
-            "
+            @click="validateStep"
           >
-            Next
+            {{ currentStep === 7 ? 'Validate' : 'Next' }}
           </button>
         </div>
       </div>

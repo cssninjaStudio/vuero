@@ -12,6 +12,7 @@ dependencies:
   billboard.js: 2.2.2
   bulma: 0.9.2
   dayjs: 1.10.4
+  dropzone: 5.7.6
   filepond: 4.25.1
   filepond-plugin-file-validate-size: 2.2.2_filepond@4.25.1
   filepond-plugin-file-validate-type: 1.2.5_filepond@4.25.1
@@ -3932,6 +3933,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-Lgd2XcJ/NjEw+7tFvfKxOzCYKZsdct5lczQ2ZaQY8Djz7pfAD3Gbp8ySJWtreII/vDlMVmxwa6pHmdxIYgttDg==
+  /dropzone/5.7.6:
+    dev: false
+    resolution:
+      integrity: sha512-z38j+PZsH38rFGOK2rQ877t6c0cPos053fPp3RKaDvCDjAw4KflQQGn7BhCWeFq9Zl1hinB8khPrQdJ6cIBryQ==
   /ecc-jsbn/0.1.2:
     dependencies:
       jsbn: 0.1.1
@@ -10038,6 +10043,7 @@ specifiers:
   cross-env: 7.0.3
   cypress: 6.4.0
   dayjs: 1.10.4
+  dropzone: ^5.7.6
   eslint: 7.19.0
   eslint-config-prettier: 7.2.0
   eslint-plugin-md: 1.0.19

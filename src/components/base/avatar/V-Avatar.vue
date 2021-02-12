@@ -1,10 +1,17 @@
 <script setup lang="ts">
+import type { PropType } from 'vue'
 import { defineProps } from 'vue'
 
-defineProps({
+type AvatarSize = undefined | 'small' | 'medium' | 'large' | 'big' | 'xl'
+
+const props = defineProps({
   picture: {
     type: String,
     default: '',
+  },
+  placeholder: {
+    type: String,
+    default: 'https://via.placeholder.com/150x150',
   },
   badge: {
     type: String,
@@ -15,8 +22,8 @@ defineProps({
     default: '?',
   },
   size: {
-    type: String,
-    default: '',
+    type: String as PropType<AvatarSize>,
+    default: undefined,
   },
   color: {
     type: String,
@@ -41,7 +48,7 @@ defineProps({
   <div
     class="v-avatar"
     :class="[
-      size && 'is-' + size,
+      size && `is-${size}`,
       dot && 'has-dot',
       dotColor && `dot-${dotColor}`,
       squared && dot && 'has-dot-squared',

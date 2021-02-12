@@ -1,3 +1,18 @@
+<script setup lang="ts">
+import { useRouter } from 'vue-router'
+
+import { resetData } from '/@src/composition/state/wizardState'
+
+const router = useRouter()
+
+const validateStep = async () => {
+  router.push({
+    name: 'webapp-layouts-projects-details',
+  })
+  resetData()
+}
+</script>
+
 <template>
   <div class="step-content">
     <div class="step-title">
@@ -23,9 +38,9 @@
           creating tasks.
         </p>
         <div class="button-wrap">
-          <a class="button v-button is-rounded is-bold is-elevated is-primary"
-            >View Project</a
-          >
+          <V-Button color="primary" rounded bold elevated @click="validateStep">
+            View Project
+          </V-Button>
         </div>
       </div>
     </div>

@@ -1,7 +1,11 @@
 <script setup lang="ts">
-import { defineEmit } from 'vue'
+import type { WizardRelatedTo } from '/@src/models/wizard'
+import { wizardData, currentStep } from '/@src/composition/state/wizardState'
 
-const emit = defineEmit(['next'])
+const validateStep = (relatedTo: WizardRelatedTo) => {
+  wizardData.relatedTo = relatedTo
+  currentStep.value = 2
+}
 </script>
 
 <template>
@@ -18,12 +22,16 @@ const emit = defineEmit(['next'])
             <h3 class="dark-inverted">UI/UX Design</h3>
             <p>Some short explanation about the type goes here.</p>
             <div class="button-wrap">
-              <a
-                href="#"
-                class="button v-button is-primary is-rounded is-elevated is-bold type-select-button"
-                @click="() => emit('next')"
-                >Continue</a
+              <V-Button
+                color="primary"
+                class="type-select-button"
+                rounded
+                elevated
+                bold
+                @click="validateStep('UI/UX Design')"
               >
+                Continue
+              </V-Button>
             </div>
             <div class="learn-more-link">
               <a href="#" class="dark-inverted-hover">Or Learn More</a>
@@ -36,12 +44,16 @@ const emit = defineEmit(['next'])
             <h3 class="dark-inverted">Web Development</h3>
             <p>Some short explanation about the type goes here.</p>
             <div class="button-wrap">
-              <a
-                href="#"
-                class="button v-button is-primary is-rounded is-elevated is-bold type-select-button"
-                @click="() => emit('next')"
-                >Continue</a
+              <V-Button
+                color="primary"
+                class="type-select-button"
+                rounded
+                elevated
+                bold
+                @click="validateStep('Web Development')"
               >
+                Continue
+              </V-Button>
             </div>
             <div class="learn-more-link">
               <a href="#" class="dark-inverted-hover">Or Learn More</a>
@@ -54,12 +66,16 @@ const emit = defineEmit(['next'])
             <h3 class="dark-inverted">Marketing</h3>
             <p>Some short explanation about the type goes here.</p>
             <div class="button-wrap">
-              <a
-                href="#"
-                class="button v-button is-primary is-rounded is-elevated is-bold type-select-button"
-                @click="() => emit('next')"
-                >Continue</a
+              <V-Button
+                color="primary"
+                class="type-select-button"
+                rounded
+                elevated
+                bold
+                @click="validateStep('Marketing')"
               >
+                Continue
+              </V-Button>
             </div>
             <div class="learn-more-link">
               <a href="#" class="dark-inverted-hover">Or Learn More</a>
