@@ -128,7 +128,7 @@ const filteredData = computed(() => {
                         iconify="feather:bookmark"
                         class="hint--bubble hint--primary hint--top"
                         data-hint="Save"
-                        light
+                        color="light"
                         circle
                       />
                     </div>

@@ -233,7 +233,7 @@ watch(previewTemplate, () => {
     </div>
 
     <div v-else class="uploader">
-      <div id="actions" class="uploader-toolbar">
+      <div class="uploader-toolbar">
         <div class="left">
           <div class="uploader-actions">
             <div class="uploader-action">

@@ -2,68 +2,17 @@
 import { computed, ref } from 'vue'
 
 import type { WizardCustomer } from '/@src/models/wizard'
+import { customers } from '/@src/data/wizard'
 import { wizardData } from '/@src/composition/state/wizardState'
 
 const search = ref('')
-const availableCustomers: WizardCustomer[] = [
-  {
-    logo: '/images/photo/demo/brands/airbnb.svg',
-    name: 'Airbnb',
-    location: 'Los Angeles, CA',
-  },
-  {
-    logo: '/images/photo/demo/brands/facebook.svg',
-    name: 'Facebook',
-    location: 'Los Angeles, CA',
-  },
-  {
-    logo: '/images/photo/demo/brands/dribbble.svg',
-    name: 'Dribbble',
-    location: 'Los Angeles, CA',
-  },
-  {
-    logo: '/images/photo/demo/brands/figma.svg',
-    name: 'Figma',
-    location: 'Los Angeles, CA',
-  },
-  {
-    logo: '/images/photo/demo/brands/google.svg',
-    name: 'Google',
-    location: 'Los Angeles, CA',
-  },
-  {
-    logo: '/images/photo/demo/brands/github.svg',
-    name: 'Github',
-    location: 'Los Angeles, CA',
-  },
-  {
-    logo: '/images/photo/demo/brands/gitlab.svg',
-    name: 'Gitlab',
-    location: 'Los Angeles, CA',
-  },
-  {
-    logo: '/images/photo/demo/brands/hubspot.svg',
-    name: 'Hubspot',
-    location: 'Los Angeles, CA',
-  },
-  {
-    logo: '/images/photo/demo/brands/slack.svg',
-    name: 'Slack',
-    location: 'Los Angeles, CA',
-  },
-  {
-    logo: '/images/photo/demo/brands/udemy.svg',
-    name: 'Udemy',
-    location: 'Los Angeles, CA',
-  },
-]
 
-const filteredCustomers = computed(() => {
+const filteredCustomers = computed<WizardCustomer[]>(() => {
   if (!search.value) {
     return []
   }
 
-  return availableCustomers
+  return customers
     .filter((item) => {
       return (
         item.name.match(new RegExp(search.value, 'i')) ||
@@ -156,7 +105,6 @@ const selectCustomer = (customer: WizardCustomer) => {
               </div>
               <V-Control>
                 <input
-                  id="project-start-date"
                   :value="inputValue.start"
                   class="input form-datepicker"
                   placeholder="Start Date"
@@ -171,7 +119,6 @@ const selectCustomer = (customer: WizardCustomer) => {
               </div>
               <V-Control>
                 <input
-                  id="project-end-date"
                   :value="inputValue.end"
                   class="input form-datepicker"
                   placeholder="End Date"

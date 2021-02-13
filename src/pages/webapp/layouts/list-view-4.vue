@@ -14,14 +14,6 @@ useHead({
   <div
     class="page-content is-relative tabs-wrapper is-slider is-squared is-inverted"
   >
-    <div class="page-title has-text-centered is-webapp">
-      <div class="title-wrap">
-        <h1 class="title is-4">List View</h1>
-      </div>
-
-      <Toolbar />
-    </div>
-
     <div class="list-view-toolbar is-webapp is-reversed">
       <div class="control has-icon">
         <input

@@ -10,16 +10,8 @@ useHead({
   <div
     class="page-content is-relative tabs-wrapper is-triple-slider is-squared is-inverted"
   >
-    <div class="page-title has-text-centered is-webapp">
-      <div class="title-wrap">
-        <h1 class="title is-4">Search Results</h1>
-      </div>
-
-      <Toolbar />
-    </div>
-
-    <div class="page-content-inner is-webapp">
-      <SearchResultsContent class="is-webapp" />
+    <div class="page-content-inner">
+      <SearchResultsContent />
     </div>
   </div>
 </template>

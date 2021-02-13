@@ -7,15 +7,7 @@ useHead({
 </script>
 
 <template>
-  <div>
-    <div class="page-title has-text-centered is-webapp">
-      <div class="title-wrap">
-        <h1 class="title is-4">Apex Charts</h1>
-      </div>
-
-      <Toolbar />
-    </div>
-
-    <ApexDashboard class="page-content-inner p-t-30" />
+  <div class="page-content-inner p-t-30">
+    <ApexDashboard />
   </div>
 </template>

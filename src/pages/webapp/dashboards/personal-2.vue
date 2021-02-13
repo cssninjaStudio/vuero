@@ -7,9 +7,7 @@ useHead({
 </script>
 
 <template>
-  <div>
-    <div class="page-content-inner">
-      <PersonalDashboardV2 class="has-webapp-spacing" />
-    </div>
+  <div class="page-content-inner">
+    <PersonalDashboardV2 class="has-webapp-spacing" />
   </div>
 </template>

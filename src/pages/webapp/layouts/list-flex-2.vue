@@ -14,14 +14,6 @@ useHead({
   <div
     class="page-content is-relative tabs-wrapper is-slider is-squared is-inverted"
   >
-    <div class="page-title has-text-centered is-webapp">
-      <div class="title-wrap">
-        <h1 class="title is-4">Flex Lists</h1>
-      </div>
-
-      <Toolbar />
-    </div>
-
     <div class="list-flex-toolbar is-reversed is-webapp flex-list-v2">
       <div class="control has-icon">
         <input

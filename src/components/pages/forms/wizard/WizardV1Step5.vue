@@ -2,30 +2,8 @@
 import { ref, watchEffect } from 'vue'
 
 import type { WizardTeammate, WizardTeammateRole } from '/@src/models/wizard'
+import { users } from '/@src/data/wizard'
 import { wizardData } from '/@src/composition/state/wizardState'
-
-const userList: Omit<WizardTeammate, 'role'>[] = [
-  {
-    picture: '/images/avatars/photos/31.jpg',
-    name: 'Yasseene Amzi',
-  },
-  {
-    picture: '/images/avatars/photos/5.jpg',
-    name: 'Mary Lebowski',
-  },
-  {
-    picture: '/images/avatars/photos/32.jpg',
-    name: 'Jonathan Krugger',
-  },
-  {
-    picture: '/images/avatars/photos/21.jpg',
-    name: 'Elizabeth Fisher',
-  },
-  {
-    picture: '/images/avatars/photos/21.jpg',
-    name: 'Tara Svenson',
-  },
-]
 
 const search = ref('')
 const isAddingMembers = ref(false)
@@ -81,7 +59,7 @@ watchEffect(() => {
     return
   }
 
-  filteredUsers.value = userList
+  filteredUsers.value = users
     .filter((item) => {
       return !wizardData.teammates.find((_item) => {
         return item.name === _item.name
@@ -138,7 +116,6 @@ watchEffect(() => {
         <V-Field class="mt-4">
           <V-Control iconify="feather:search">
             <input
-              id="add-member"
               v-model="search"
               class="input"
               placeholder="Search teammates..."

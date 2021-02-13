@@ -58,7 +58,7 @@ watchEffect(async () => {
           :picture="projectPicture"
         />
 
-        <h3 id="project-preview-title" class="title is-4 is-narrow is-thin">
+        <h3 class="title is-4 is-narrow is-thin">
           <span v-if="wizardData.name">{{ wizardData.name }}</span>
           <span v-else>Project Title Goes Here</span>
 
@@ -149,7 +149,7 @@ watchEffect(async () => {
               </a>
               <div class="estimated-due-date">
                 <div class="inner-block">
-                  <div id="project-preview-date" class="date">
+                  <div class="date">
                     <span>{{ formatedDueDate }}</span>
                   </div>
                   <p>Estimated Due Date</p>
@@ -165,7 +165,7 @@ watchEffect(async () => {
               </a>
               <div class="attachments-count">
                 <div class="inner-block">
-                  <div id="project-preview-attachments" class="attachments">
+                  <div class="attachments">
                     <span v-if="wizardData.attachments.length">{{
                       wizardData.attachments.length
                     }}</span>

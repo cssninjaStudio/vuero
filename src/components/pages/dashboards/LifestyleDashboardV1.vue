@@ -1407,12 +1407,6 @@ const props = defineProps({
 @import '../../../assets/scss/abstracts/_mixins.scss';
 @import '../../../assets/scss/pages/generic/_widgets-stats.scss';
 
-.is-webapp {
-  .lifestyle-dashboard-bg {
-    height: 406px;
-  }
-}
-
 .lifestyle-dashboard-bg {
   position: absolute;
   top: 0;
@@ -1421,6 +1415,10 @@ const props = defineProps({
   height: 355px;
   background: $white;
   z-index: 1;
+
+  &.has-top-nav {
+    height: 406px;
+  }
 }
 
 .lifestyle-dashboard-v1 {

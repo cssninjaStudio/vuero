@@ -62,7 +62,7 @@ const onSave = async () => {
             <V-Button
               :to="{ name: 'admin-layouts-profile-view' }"
               fa="lnir lnir-arrow-left rem-100"
-              light
+              color="light"
               dark-outlined
             >
               Go Back
@@ -174,7 +174,7 @@ const onSave = async () => {
                   type="text"
                   class="input"
                   placeholder="Job Title"
-                  autocomplete="work"
+                  autocomplete="organization-title"
                 />
               </V-Control>
             </V-Field>
