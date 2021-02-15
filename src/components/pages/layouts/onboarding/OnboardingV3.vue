@@ -26,7 +26,7 @@
             tament.
           </p>
           <div class="button-wrap">
-            <a class="button v-button is-primary is-elevated">Explore</a>
+            <V-Button color="primary" elevated> Explore </V-Button>
           </div>
         </div>
         <!--Card-->
@@ -48,7 +48,7 @@
             tament.
           </p>
           <div class="button-wrap">
-            <a class="button v-button is-primary is-elevated">Add Tasks</a>
+            <V-Button color="primary" elevated> Add Tasks </V-Button>
           </div>
         </div>
         <!--Card-->
@@ -70,7 +70,7 @@
             tament.
           </p>
           <div class="button-wrap">
-            <a class="button v-button is-primary is-elevated">Browse</a>
+            <V-Button color="primary" elevated> Browse </V-Button>
           </div>
         </div>
       </div>
@@ -79,7 +79,7 @@
 </template>
 
 <style lang="scss">
-@import '../../assets/scss/abstracts/_variables.scss';
-@import '../../assets/scss/abstracts/_mixins.scss';
-@import '../../assets/scss/pages/generic/_onboarding.scss';
+@import '../../../../assets/scss/abstracts/_variables.scss';
+@import '../../../../assets/scss/abstracts/_mixins.scss';
+@import '../../../../assets/scss/pages/generic/_onboarding.scss';
 </style>

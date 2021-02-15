@@ -442,15 +442,6 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-layouts-onboarding-welcome' }"
-                class="is-submenu"
-              >
-                <i class="lnil lnil-door-alt"></i>
-                <span>Welcome</span>
-              </RouterLink>
-            </li>
-            <li>
-              <RouterLink
                 :to="{ name: 'admin-layouts-action-page-1' }"
                 class="is-submenu"
               >
@@ -573,6 +564,15 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
             /></a>
           </div>
           <ul>
+            <li>
+              <RouterLink
+                :to="{ name: 'admin-layouts-onboarding-welcome' }"
+                class="is-submenu"
+              >
+                <i class="lnil lnil-door-alt"></i>
+                <span>Onboarding Welcome</span>
+              </RouterLink>
+            </li>
             <li>
               <RouterLink
                 :to="{ name: 'admin-layouts-onboarding-page-1' }"

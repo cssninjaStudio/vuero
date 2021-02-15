@@ -1,6 +1,6 @@
 <template>
-  <!--Onboarding V1-->
-  <div class="onboarding-wrapper onboarding-v1">
+  <!--Onboarding V4-->
+  <div class="onboarding-wrapper onboarding-v4">
     <div class="title-wrap">
       <p>Looks like you're new here</p>
       <h2 class="dark-inverted">
@@ -14,24 +14,22 @@
         <div class="onboarding-card">
           <img
             class="light-image"
-            src="/@src/assets/illustrations/onboarding/set2-1.svg"
+            src="/@src/assets/illustrations/onboarding/set5-1.svg"
             alt=""
           />
           <img
             class="dark-image"
-            src="/@src/assets/illustrations/onboarding/set2-1-dark.svg"
+            src="/@src/assets/illustrations/onboarding/set5-1-dark.svg"
             alt=""
           />
           <div class="onboarding-content">
-            <h3 class="dark-inverted">Explore Posts</h3>
+            <h3 class="dark-inverted">Plan a Trip</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Recte
               dicis; Ita enim vivunt.
             </p>
             <div class="button-wrap">
-              <a class="button v-button is-primary is-rounded is-elevated"
-                >Explore</a
-              >
+              <V-Button color="primary" rounded elevated> Explore </V-Button>
             </div>
           </div>
         </div>
@@ -39,24 +37,22 @@
         <div class="onboarding-card">
           <img
             class="light-image"
-            src="/@src/assets/illustrations/onboarding/set2-2.svg"
+            src="/@src/assets/illustrations/onboarding/set5-2.svg"
             alt=""
           />
           <img
             class="dark-image"
-            src="/@src/assets/illustrations/onboarding/set2-2-dark.svg"
+            src="/@src/assets/illustrations/onboarding/set5-2-dark.svg"
             alt=""
           />
           <div class="onboarding-content">
-            <h3 class="dark-inverted">Schedule a Meeting</h3>
+            <h3 class="dark-inverted">Book a Flight</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Recte
               dicis; Ita enim vivunt.
             </p>
             <div class="button-wrap">
-              <a class="button v-button is-primary is-rounded is-elevated"
-                >Schedule</a
-              >
+              <V-Button color="primary" rounded elevated> Book Now </V-Button>
             </div>
           </div>
         </div>
@@ -64,24 +60,22 @@
         <div class="onboarding-card">
           <img
             class="light-image"
-            src="/@src/assets/illustrations/onboarding/set2-3.svg"
+            src="/@src/assets/illustrations/onboarding/set5-3.svg"
             alt=""
           />
           <img
             class="dark-image"
-            src="/@src/assets/illustrations/onboarding/set2-3-dark.svg"
+            src="/@src/assets/illustrations/onboarding/set5-3-dark.svg"
             alt=""
           />
           <div class="onboarding-content">
-            <h3 class="dark-inverted">Chill Out</h3>
+            <h3 class="dark-inverted">Browse Destinations</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Recte
               dicis; Ita enim vivunt.
             </p>
             <div class="button-wrap">
-              <a class="button v-button is-primary is-rounded is-elevated"
-                >Take a Nap</a
-              >
+              <V-Button color="primary" rounded elevated> Browse </V-Button>
             </div>
           </div>
         </div>
@@ -91,7 +85,7 @@
 </template>
 
 <style lang="scss">
-@import '../../assets/scss/abstracts/_variables.scss';
-@import '../../assets/scss/abstracts/_mixins.scss';
-@import '../../assets/scss/pages/generic/_onboarding.scss';
+@import '../../../../assets/scss/abstracts/_variables.scss';
+@import '../../../../assets/scss/abstracts/_mixins.scss';
+@import '../../../../assets/scss/pages/generic/_onboarding.scss';
 </style>

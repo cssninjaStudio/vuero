@@ -11,12 +11,12 @@
         <div class="onboarding-card">
           <img
             class="light-image"
-            src="/@src/assets/illustrations/onboarding/set1-1.svg"
+            src="/@src/assets/illustrations/onboarding/set6-1.svg"
             alt=""
           />
           <img
             class="dark-image"
-            src="/@src/assets/illustrations/onboarding/set1-1-dark.svg"
+            src="/@src/assets/illustrations/onboarding/set6-1-dark.svg"
             alt=""
           />
           <h3>Configure Shop</h3>
@@ -26,22 +26,41 @@
             tament.
           </p>
           <div class="button-wrap">
-            <a
-              class="button v-button is-primary is-outlined is-rounded is-raised"
-              >Configure Shop</a
-            >
+            <V-Button color="primary" elevated> Configure </V-Button>
           </div>
         </div>
         <!--Card-->
         <div class="onboarding-card">
           <img
             class="light-image"
-            src="/@src/assets/illustrations/onboarding/set1-2.svg"
+            src="/@src/assets/illustrations/onboarding/set6-2.svg"
             alt=""
           />
           <img
             class="dark-image"
-            src="/@src/assets/illustrations/onboarding/set1-2-dark.svg"
+            src="/@src/assets/illustrations/onboarding/set6-2-dark.svg"
+            alt=""
+          />
+          <h3>Configure Warehouse</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Recte
+            dicis; Ita enim vivunt quidam, ut eorum vita refellatur oratio. Sed
+            tament.
+          </p>
+          <div class="button-wrap">
+            <V-Button color="primary" elevated> Configure </V-Button>
+          </div>
+        </div>
+        <!--Card-->
+        <div class="onboarding-card">
+          <img
+            class="light-image"
+            src="/@src/assets/illustrations/onboarding/set6-3.svg"
+            alt=""
+          />
+          <img
+            class="dark-image"
+            src="/@src/assets/illustrations/onboarding/set6-3-dark.svg"
             alt=""
           />
           <h3>Manage Products</h3>
@@ -51,35 +70,7 @@
             tament.
           </p>
           <div class="button-wrap">
-            <a
-              class="button v-button is-primary is-outlined is-rounded is-raised"
-              >Manage Products</a
-            >
-          </div>
-        </div>
-        <!--Card-->
-        <div class="onboarding-card">
-          <img
-            class="light-image"
-            src="/@src/assets/illustrations/onboarding/set1-3.svg"
-            alt=""
-          />
-          <img
-            class="dark-image"
-            src="/@src/assets/illustrations/onboarding/set1-3-dark.svg"
-            alt=""
-          />
-          <h3>Setup Payments</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Recte
-            dicis; Ita enim vivunt quidam, ut eorum vita refellatur oratio. Sed
-            tament.
-          </p>
-          <div class="button-wrap">
-            <a
-              class="button v-button is-primary is-outlined is-rounded is-raised"
-              >Setup Payments</a
-            >
+            <V-Button color="primary" elevated> Manage </V-Button>
           </div>
         </div>
       </div>
@@ -88,7 +79,7 @@
 </template>
 
 <style lang="scss">
-@import '../../assets/scss/abstracts/_variables.scss';
-@import '../../assets/scss/abstracts/_mixins.scss';
-@import '../../assets/scss/pages/generic/_onboarding.scss';
+@import '../../../../assets/scss/abstracts/_variables.scss';
+@import '../../../../assets/scss/abstracts/_mixins.scss';
+@import '../../../../assets/scss/pages/generic/_onboarding.scss';
 </style>

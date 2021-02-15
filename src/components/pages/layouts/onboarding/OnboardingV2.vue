@@ -29,9 +29,7 @@
               dicis; Ita enim vivunt.
             </p>
             <div class="button-wrap">
-              <a class="button v-button is-primary is-rounded is-elevated"
-                >Explore</a
-              >
+              <V-Button color="primary" rounded elevated> Explore </V-Button>
             </div>
           </div>
         </div>
@@ -54,9 +52,7 @@
               dicis; Ita enim vivunt.
             </p>
             <div class="button-wrap">
-              <a class="button v-button is-primary is-rounded is-elevated"
-                >Book Now</a
-              >
+              <V-Button color="primary" rounded elevated> Book Now </V-Button>
             </div>
           </div>
         </div>
@@ -79,9 +75,7 @@
               dicis; Ita enim vivunt.
             </p>
             <div class="button-wrap">
-              <a class="button v-button is-primary is-rounded is-elevated"
-                >Browse</a
-              >
+              <V-Button color="primary" rounded elevated> Browse </V-Button>
             </div>
           </div>
         </div>
@@ -91,7 +85,7 @@
 </template>
 
 <style lang="scss">
-@import '../../assets/scss/abstracts/_variables.scss';
-@import '../../assets/scss/abstracts/_mixins.scss';
-@import '../../assets/scss/pages/generic/_onboarding.scss';
+@import '../../../../assets/scss/abstracts/_variables.scss';
+@import '../../../../assets/scss/abstracts/_mixins.scss';
+@import '../../../../assets/scss/pages/generic/_onboarding.scss';
 </style>
