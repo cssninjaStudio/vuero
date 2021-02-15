@@ -1,19 +1,25 @@
 import type { Chart } from 'billboard.js'
 import { themeColors } from '/@src/composition/state/themeColors'
-import { line } from 'billboard.js'
+import { bar } from 'billboard.js'
 import { ref } from 'vue'
 
-export const genericLineOptions = ref({
+export const barSimpleOptions = ref({
   data: {
-    type: line(),
+    type: bar(),
     columns: [
       ['data1', 30, 200, 100, 400, 150, 250],
-      ['data2', 50, 20, 10, 40, 15, 25],
+      ['data2', 130, 100, 140, 200, 150, 50],
     ],
     colors: {
       data1: themeColors.accent,
       data2: themeColors.primary,
-      data3: themeColors.info,
+      data3: themeColors.orange,
+      data4: themeColors.purple,
+    },
+  },
+  bar: {
+    width: {
+      ratio: 0.5,
     },
   },
   size: {
@@ -23,7 +29,7 @@ export const genericLineOptions = ref({
     bottom: 20,
   },
   title: {
-    text: 'Line Chart',
+    text: 'Bar Chart',
     position: 'top-left',
     padding: {
       bottom: 20,
@@ -37,16 +43,10 @@ export const genericLineOptions = ref({
   },
 })
 
-export const onGenericLineReady = (billboard: Chart) => {
+export const onBarSimpleReady = (billboard: Chart) => {
   setTimeout(function () {
     billboard.load({
-      columns: [['data1', 230, 190, 300, 500, 300, 400]],
+      columns: [['data3', 130, -150, 200, 300, -200, 100]],
     })
-  }, 2000)
-
-  setTimeout(function () {
-    billboard.load({
-      columns: [['data3', 130, 150, 200, 300, 200, 100]],
-    })
-  }, 6500)
+  }, 1000)
 }

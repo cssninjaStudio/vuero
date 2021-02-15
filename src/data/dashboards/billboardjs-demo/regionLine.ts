@@ -1,9 +1,8 @@
-import type { Chart } from 'billboard.js'
 import { themeColors } from '/@src/composition/state/themeColors'
 import { line } from 'billboard.js'
 import { ref } from 'vue'
 
-export const genericLineOptions = ref({
+export const regionLineOptions = ref({
   data: {
     type: line(),
     columns: [
@@ -15,6 +14,28 @@ export const genericLineOptions = ref({
       data2: themeColors.primary,
       data3: themeColors.info,
     },
+    regions: {
+      data1: [
+        {
+          start: 1,
+          end: 2,
+          style: {
+            dasharray: '6 2',
+          },
+        },
+        {
+          start: 3,
+          style: {
+            dasharray: '2 3',
+          },
+        },
+      ],
+      data2: [
+        {
+          end: 3,
+        },
+      ],
+    },
   },
   size: {
     height: 280,
@@ -23,7 +44,7 @@ export const genericLineOptions = ref({
     bottom: 20,
   },
   title: {
-    text: 'Line Chart',
+    text: 'Line Chart with Regions',
     position: 'top-left',
     padding: {
       bottom: 20,
@@ -36,17 +57,3 @@ export const genericLineOptions = ref({
     position: 'inset',
   },
 })
-
-export const onGenericLineReady = (billboard: Chart) => {
-  setTimeout(function () {
-    billboard.load({
-      columns: [['data1', 230, 190, 300, 500, 300, 400]],
-    })
-  }, 2000)
-
-  setTimeout(function () {
-    billboard.load({
-      columns: [['data3', 130, 150, 200, 300, 200, 100]],
-    })
-  }, 6500)
-}
