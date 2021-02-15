@@ -141,7 +141,7 @@ watchEffect(() => {
                 <template #action>
                   <div class="actions">
                     <V-IconButton
-                      fa="fas fa-plus"
+                      icon="fas fa-plus"
                       class="cancel-button hint--top hint--bubble hint--primary"
                       :aria-label="`Invite ${teammate.name}`"
                       circle
@@ -226,7 +226,7 @@ watchEffect(() => {
                       </div>
                     </div>
                     <V-IconButton
-                      fa="fas fa-times"
+                      icon="fas fa-times"
                       class="cancel-button hint--top hint--bubble hint--primary"
                       aria-label="Cancel Invite"
                       circle
