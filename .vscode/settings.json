@@ -30,4 +30,5 @@
     "src/assets/images/illustrations/messages",
     "src/components/pages/inbox/messages"
   ],
+  "volar.tsPlugin": true,
 }
