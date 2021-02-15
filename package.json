@@ -11,7 +11,7 @@
     "build": "run-s build:*",
     "build:clean": "rimraf dist",
     "build:vite": "vite build",
-    "lint:fix": "run-s lint:eslint:fix lint:stylelint:fix lint:prettier:fix lint:doc:fix",
+    "lint:fix": "run-s  lint:doc:eslint lint:doc:prettier lint:eslint:fix lint:stylelint:fix lint:prettier:fix",
     "lint:prettier": "prettier --check \"./src/**/*.(js|ts|vue|css|scss|graphql|gql)\"",
     "lint:prettier:fix": "prettier --write \"./src/**/*.(js|ts|vue|css|scss|graphql|gql)\"",
     "lint:eslint": "eslint --ext .ts,.vue ./src",
