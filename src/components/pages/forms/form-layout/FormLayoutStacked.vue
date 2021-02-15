@@ -176,10 +176,7 @@ const isStuck = computed(() => {
                 <V-Field>
                   <V-Control>
                     <div class="participants">
-                      <V-Avatar
-                        size="araz"
-                        picture="/images/avatars/photos/8.jpg"
-                      />
+                      <V-Avatar picture="/images/avatars/photos/8.jpg" />
                       <V-Avatar color="warning" initials="BT" />
                       <V-Avatar picture="/images/avatars/photos/18.jpg" />
                       <V-Avatar color="info" initials="JD" />
