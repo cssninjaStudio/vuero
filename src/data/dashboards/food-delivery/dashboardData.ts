@@ -1,132 +1,132 @@
 export const foodPills = [
   {
     id: 0,
-    icon: '/images/illustrations/dashboards/food/icon-1.svg',
+    icon: '/images/icons/food/icon-1.svg',
     label: 'All',
   },
   {
     id: 1,
-    icon: '/images/illustrations/dashboards/food/icon-2.svg',
+    icon: '/images/icons/food/icon-2.svg',
     label: 'Pizza',
   },
   {
     id: 2,
-    icon: '/images/illustrations/dashboards/food/icon-3.svg',
+    icon: '/images/icons/food/icon-3.svg',
     label: 'Asian',
   },
   {
     id: 3,
-    icon: '/images/illustrations/dashboards/food/icon-4.svg',
+    icon: '/images/icons/food/icon-4.svg',
     label: 'Fast',
   },
   {
     id: 4,
-    icon: '/images/illustrations/dashboards/food/icon-5.svg',
+    icon: '/images/icons/food/icon-5.svg',
     label: 'Grills',
   },
   {
     id: 5,
-    icon: '/images/illustrations/dashboards/food/icon-6.svg',
+    icon: '/images/icons/food/icon-6.svg',
     label: 'Cakes',
   },
   {
     id: 6,
-    icon: '/images/illustrations/dashboards/food/icon-7.svg',
+    icon: '/images/icons/food/icon-7.svg',
     label: 'Thai',
   },
   {
     id: 7,
-    icon: '/images/illustrations/dashboards/food/icon-8.svg',
+    icon: '/images/icons/food/icon-8.svg',
     label: 'Sushi',
   },
   {
     id: 8,
-    icon: '/images/illustrations/dashboards/food/icon-9.svg',
+    icon: '/images/icons/food/icon-9.svg',
     label: 'Fruits',
   },
   {
     id: 9,
-    icon: '/images/illustrations/dashboards/food/icon-10.svg',
+    icon: '/images/icons/food/icon-10.svg',
     label: 'Veggie',
   },
   {
     id: 10,
-    icon: '/images/illustrations/dashboards/food/icon-11.svg',
+    icon: '/images/icons/food/icon-11.svg',
     label: 'Brunch',
   },
   {
     id: 11,
-    icon: '/images/illustrations/dashboards/food/icon-12.svg',
+    icon: '/images/icons/food/icon-12.svg',
     label: 'Pasta',
   },
   {
     id: 12,
-    icon: '/images/illustrations/dashboards/food/icon-13.svg',
+    icon: '/images/icons/food/icon-13.svg',
     label: 'Fish',
   },
   {
     id: 0,
-    icon: '/images/illustrations/dashboards/food/icon-1.svg',
+    icon: '/images/icons/food/icon-1.svg',
     label: 'All',
   },
   {
     id: 1,
-    icon: '/images/illustrations/dashboards/food/icon-2.svg',
+    icon: '/images/icons/food/icon-2.svg',
     label: 'Pizza',
   },
   {
     id: 2,
-    icon: '/images/illustrations/dashboards/food/icon-3.svg',
+    icon: '/images/icons/food/icon-3.svg',
     label: 'Asian',
   },
   {
     id: 3,
-    icon: '/images/illustrations/dashboards/food/icon-4.svg',
+    icon: '/images/icons/food/icon-4.svg',
     label: 'Fast',
   },
   {
     id: 4,
-    icon: '/images/illustrations/dashboards/food/icon-5.svg',
+    icon: '/images/icons/food/icon-5.svg',
     label: 'Grills',
   },
   {
     id: 5,
-    icon: '/images/illustrations/dashboards/food/icon-6.svg',
+    icon: '/images/icons/food/icon-6.svg',
     label: 'Cakes',
   },
   {
     id: 6,
-    icon: '/images/illustrations/dashboards/food/icon-7.svg',
+    icon: '/images/icons/food/icon-7.svg',
     label: 'Thai',
   },
   {
     id: 7,
-    icon: '/images/illustrations/dashboards/food/icon-8.svg',
+    icon: '/images/icons/food/icon-8.svg',
     label: 'Sushi',
   },
   {
     id: 8,
-    icon: '/images/illustrations/dashboards/food/icon-9.svg',
+    icon: '/images/icons/food/icon-9.svg',
     label: 'Fruits',
   },
   {
     id: 9,
-    icon: '/images/illustrations/dashboards/food/icon-10.svg',
+    icon: '/images/icons/food/icon-10.svg',
     label: 'Veggie',
   },
   {
     id: 10,
-    icon: '/images/illustrations/dashboards/food/icon-11.svg',
+    icon: '/images/icons/food/icon-11.svg',
     label: 'Brunch',
   },
   {
     id: 11,
-    icon: '/images/illustrations/dashboards/food/icon-12.svg',
+    icon: '/images/icons/food/icon-12.svg',
     label: 'Pasta',
   },
   {
     id: 12,
-    icon: '/images/illustrations/dashboards/food/icon-13.svg',
+    icon: '/images/icons/food/icon-13.svg',
     label: 'Fish',
   },
 ]
@@ -138,7 +138,7 @@ export const restaurants = [
     picture: '/images/photo/demo/food/1.jpg',
     deliveryTime: 45,
     category: 'Pizza',
-    icon: '/images/illustrations/dashboards/food/icon-2.svg',
+    icon: '/images/icons/food/icon-2.svg',
     rating: 4.9,
   },
   {
@@ -147,7 +147,7 @@ export const restaurants = [
     picture: '/images/photo/demo/food/2.jpg',
     deliveryTime: 30,
     category: 'Fast',
-    icon: '/images/illustrations/dashboards/food/icon-4.svg',
+    icon: '/images/icons/food/icon-4.svg',
     rating: 4.5,
   },
   {
@@ -156,7 +156,7 @@ export const restaurants = [
     picture: '/images/photo/demo/food/3.jpg',
     deliveryTime: 45,
     category: 'Fruits',
-    icon: '/images/illustrations/dashboards/food/icon-9.svg',
+    icon: '/images/icons/food/icon-9.svg',
     rating: 4.8,
   },
   {
@@ -165,7 +165,7 @@ export const restaurants = [
     picture: '/images/photo/demo/food/4.jpg',
     deliveryTime: 20,
     category: 'Veggie',
-    icon: '/images/illustrations/dashboards/food/icon-10.svg',
+    icon: '/images/icons/food/icon-10.svg',
     rating: 5.0,
   },
   {
@@ -174,7 +174,7 @@ export const restaurants = [
     picture: '/images/photo/demo/food/5.jpg',
     deliveryTime: 30,
     category: 'Veggie',
-    icon: '/images/illustrations/dashboards/food/icon-10.svg',
+    icon: '/images/icons/food/icon-10.svg',
     rating: 4.8,
   },
   {
@@ -183,7 +183,7 @@ export const restaurants = [
     picture: '/images/photo/demo/food/6.jpg',
     deliveryTime: 50,
     category: 'Pasta',
-    icon: '/images/illustrations/dashboards/food/icon-12.svg',
+    icon: '/images/icons/food/icon-12.svg',
     rating: 1.1,
   },
   {
@@ -192,7 +192,7 @@ export const restaurants = [
     picture: '/images/photo/demo/food/7.jpg',
     deliveryTime: 15,
     category: 'Thai',
-    icon: '/images/illustrations/dashboards/food/icon-7.svg',
+    icon: '/images/icons/food/icon-7.svg',
     rating: 4.9,
   },
   {
@@ -201,7 +201,7 @@ export const restaurants = [
     picture: '/images/photo/demo/food/8.jpg',
     deliveryTime: 20,
     category: 'Fast',
-    icon: '/images/illustrations/dashboards/food/icon-4.svg',
+    icon: '/images/icons/food/icon-4.svg',
     rating: 5.0,
   },
   {
@@ -210,7 +210,7 @@ export const restaurants = [
     picture: '/images/photo/demo/food/9.jpg',
     deliveryTime: 55,
     category: 'Fish',
-    icon: '/images/illustrations/dashboards/food/icon-13.svg',
+    icon: '/images/icons/food/icon-13.svg',
     rating: 1.7,
   },
   {
@@ -219,7 +219,7 @@ export const restaurants = [
     picture: '/images/photo/demo/food/10.jpg',
     deliveryTime: 45,
     category: 'Cakes',
-    icon: '/images/illustrations/dashboards/food/icon-6.svg',
+    icon: '/images/icons/food/icon-6.svg',
     rating: 5.0,
   },
   {
@@ -228,7 +228,7 @@ export const restaurants = [
     picture: '/images/photo/demo/food/11.jpg',
     deliveryTime: 15,
     category: 'Fast',
-    icon: '/images/illustrations/dashboards/food/icon-4.svg',
+    icon: '/images/icons/food/icon-4.svg',
     rating: 5.0,
   },
   {
@@ -237,7 +237,7 @@ export const restaurants = [
     picture: '/images/photo/demo/food/12.jpg',
     deliveryTime: 30,
     category: 'Cakes',
-    icon: '/images/illustrations/dashboards/food/icon-6.svg',
+    icon: '/images/icons/food/icon-6.svg',
     rating: 4.2,
   },
   {
@@ -246,7 +246,7 @@ export const restaurants = [
     picture: '/images/photo/demo/food/13.jpg',
     deliveryTime: 30,
     category: 'Sushi',
-    icon: '/images/illustrations/dashboards/food/icon-8.svg',
+    icon: '/images/icons/food/icon-8.svg',
     rating: 4.9,
   },
   {
@@ -255,7 +255,7 @@ export const restaurants = [
     picture: '/images/photo/demo/food/14.jpg',
     deliveryTime: 10,
     category: 'Veggie',
-    icon: '/images/illustrations/dashboards/food/icon-10.svg',
+    icon: '/images/icons/food/icon-10.svg',
     rating: 3.8,
   },
   {
@@ -264,7 +264,7 @@ export const restaurants = [
     picture: '/images/photo/demo/food/15.jpg',
     deliveryTime: 30,
     category: 'Veggie',
-    icon: '/images/illustrations/dashboards/food/icon-10.svg',
+    icon: '/images/icons/food/icon-10.svg',
     rating: 4.5,
   },
   {
@@ -273,7 +273,7 @@ export const restaurants = [
     picture: '/images/photo/demo/food/16.jpg',
     deliveryTime: 45,
     category: 'Cakes',
-    icon: '/images/illustrations/dashboards/food/icon-6.svg',
+    icon: '/images/icons/food/icon-6.svg',
     rating: 4.9,
   },
   {
@@ -282,7 +282,7 @@ export const restaurants = [
     picture: '/images/photo/demo/food/17.jpg',
     deliveryTime: 45,
     category: 'Fast',
-    icon: '/images/illustrations/dashboards/food/icon-4.svg',
+    icon: '/images/icons/food/icon-4.svg',
     rating: 1.0,
   },
   {
@@ -291,7 +291,7 @@ export const restaurants = [
     picture: '/images/photo/demo/food/18.jpg',
     deliveryTime: 30,
     category: 'Thai',
-    icon: '/images/illustrations/dashboards/food/icon-7.svg',
+    icon: '/images/icons/food/icon-7.svg',
     rating: 4.5,
   },
 ]
