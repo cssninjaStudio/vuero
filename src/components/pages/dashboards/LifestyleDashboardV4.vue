@@ -19,7 +19,7 @@
                   Have any ideas for a new article? If not, you should
                   definitely check the feed for some inspiration.
                 </p>
-                <V-Button light outlined iconify="feather:plus"
+                <V-Button light outlined icon="feather:plus"
                   >New Article</V-Button
                 >
               </div>

@@ -38,7 +38,7 @@ const onSave = async () => {
           <div class="buttons">
             <V-Button
               :to="{ name: 'admin-layouts-profile-view' }"
-              fa="lnir lnir-arrow-left rem-100"
+              icon="lnir lnir-arrow-left rem-100"
               color="light"
               dark-outlined
             >
@@ -68,7 +68,7 @@ const onSave = async () => {
           <!--Field-->
           <div class="column is-12">
             <V-Field>
-              <V-Control iconify="feather:unlock">
+              <V-Control icon="feather:unlock">
                 <input
                   type="password"
                   class="input"
@@ -81,7 +81,7 @@ const onSave = async () => {
           <!--Field-->
           <div class="column is-12">
             <V-Field>
-              <V-Control iconify="feather:lock">
+              <V-Control icon="feather:lock">
                 <input
                   type="password"
                   class="input"
@@ -94,7 +94,7 @@ const onSave = async () => {
           <!--Field-->
           <div class="column is-12">
             <V-Field>
-              <V-Control iconify="feather:lock">
+              <V-Control icon="feather:lock">
                 <input
                   type="password"
                   class="input"
@@ -141,7 +141,7 @@ const onSave = async () => {
           <!--Field-->
           <div v-if="twoFactor" class="column is-12">
             <V-Field>
-              <V-Control iconify="feather:smartphone">
+              <V-Control icon="feather:smartphone">
                 <input
                   type="text"
                   class="input"

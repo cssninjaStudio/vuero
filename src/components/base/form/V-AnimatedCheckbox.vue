@@ -1,12 +1,5 @@
 <script setup lang="ts">
-import {
-  defineProps,
-  ref,
-  watch,
-  defineEmit,
-  onMounted,
-  watchEffect,
-} from 'vue'
+import { defineProps, ref, defineEmit, watchEffect } from 'vue'
 
 const props = defineProps({
   checked: {
@@ -46,7 +39,6 @@ const updateCheckbox = () => {
   }
 }
 
-onMounted(updateCheckbox)
 watchEffect(updateCheckbox)
 </script>
 

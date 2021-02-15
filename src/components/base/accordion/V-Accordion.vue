@@ -46,16 +46,28 @@ const toggle = (key: number) => {
 
 <template>
   <div class="single-accordion" :class="[exclusive && 'is-exclusive']">
-    <div
+    <details
       v-for="(item, key) in items"
       :key="key"
       class="accordion-item"
+      :open="!internalOpenItems.includes(key)"
       :class="[internalOpenItems.includes(key) && 'is-active']"
     >
-      <a class="accordion-header" @click="() => toggle(key)">{{
-        item.title
-      }}</a>
+      <summary class="accordion-header" @click="() => toggle(key)">
+        {{ item.title }}
+      </summary>
       <div class="accordion-content">{{ item.content }}</div>
-    </div>
+    </details>
   </div>
 </template>
+
+<style lang="scss" scoped>
+summary {
+  outline: none;
+  list-style: none;
+
+  &::-webkit-details-marker {
+    display: none;
+  }
+}
+</style>

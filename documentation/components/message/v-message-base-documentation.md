@@ -8,7 +8,11 @@ on a grey background. Check the markup for more details.
 
 ```vue
 <template>
-  <V-Message />
+  <V-Message>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus quis
+    placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.
+    Nullam gravida purus diam, et dictum.
+  </V-Message>
 </template>
 ```
 
@@ -17,9 +21,13 @@ on a grey background. Check the markup for more details.
 <!--example-->
 
 <div class="field">
-    <div class="control">
-        <V-Message />
-    </div>
+  <div class="control">
+    <V-Message>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus quis
+      placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.
+      Nullam gravida purus diam, et dictum.
+    </V-Message>
+  </div>
 </div>
 
 <!--/example-->

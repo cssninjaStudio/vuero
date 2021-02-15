@@ -23,7 +23,7 @@ const filteredData = computed(() => {
   <div>
     <div class="list-view-toolbar">
       <V-Field>
-        <V-Control iconify="feather:search">
+        <V-Control icon="feather:search">
           <input
             v-model="filters"
             class="input custom-text-filter"
@@ -38,7 +38,7 @@ const filteredData = computed(() => {
       </div>
 
       <div class="buttons">
-        <V-Button color="primary" fa="fas fa-check" elevated>
+        <V-Button color="primary" icon="fas fa-check" elevated>
           Approve
         </V-Button>
       </div>

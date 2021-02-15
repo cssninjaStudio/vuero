@@ -61,7 +61,7 @@ const onSave = async () => {
           <div class="buttons">
             <V-Button
               :to="{ name: 'admin-layouts-profile-view' }"
-              fa="lnir lnir-arrow-left rem-100"
+              icon="lnir lnir-arrow-left rem-100"
               color="light"
               dark-outlined
             >
@@ -117,14 +117,14 @@ const onSave = async () => {
           </div>
           <V-IconButton
             v-if="!isUploading"
-            iconify="feather:edit-2"
+            icon="feather:edit-2"
             class="edit-button is-edit"
             circle
             @click="isUploading = true"
           />
           <V-IconButton
             v-else
-            iconify="feather:arrow-left"
+            icon="feather:arrow-left"
             class="edit-button is-back"
             circle
             @click="isUploading = false"
@@ -143,7 +143,7 @@ const onSave = async () => {
           <!--Field-->
           <div class="column is-6">
             <V-Field>
-              <V-Control iconify="feather:user">
+              <V-Control icon="feather:user">
                 <input
                   type="text"
                   class="input"
@@ -156,7 +156,7 @@ const onSave = async () => {
           <!--Field-->
           <div class="column is-6">
             <V-Field>
-              <V-Control iconify="feather:user">
+              <V-Control icon="feather:user">
                 <input
                   type="text"
                   class="input"
@@ -169,7 +169,7 @@ const onSave = async () => {
           <!--Field-->
           <div class="column is-12">
             <V-Field>
-              <V-Control iconify="feather:briefcase">
+              <V-Control icon="feather:briefcase">
                 <input
                   type="text"
                   class="input"
@@ -182,7 +182,7 @@ const onSave = async () => {
           <!--Field-->
           <div class="column is-12">
             <V-Field>
-              <V-Control iconify="feather:map-pin">
+              <V-Control icon="feather:map-pin">
                 <input
                   type="text"
                   class="input"
@@ -298,7 +298,7 @@ const onSave = async () => {
           <!--Field-->
           <div class="column is-6">
             <V-Field>
-              <V-Control fa="fab fa-facebook-f">
+              <V-Control icon="fab fa-facebook-f">
                 <input
                   type="text"
                   class="input"
@@ -311,7 +311,7 @@ const onSave = async () => {
           <!--Field-->
           <div class="column is-6">
             <V-Field>
-              <V-Control fa="fab fa-twitter">
+              <V-Control icon="fab fa-twitter">
                 <input
                   type="text"
                   class="input"
@@ -324,7 +324,7 @@ const onSave = async () => {
           <!--Field-->
           <div class="column is-6">
             <V-Field>
-              <V-Control fa="fab fa-dribbble">
+              <V-Control icon="fab fa-dribbble">
                 <input
                   type="text"
                   class="input"
@@ -337,7 +337,7 @@ const onSave = async () => {
           <!--Field-->
           <div class="column is-6">
             <V-Field>
-              <V-Control fa="fab fa-instagram">
+              <V-Control icon="fab fa-instagram">
                 <input
                   type="text"
                   class="input"
@@ -350,7 +350,7 @@ const onSave = async () => {
           <!--Field-->
           <div class="column is-6">
             <V-Field>
-              <V-Control fa="fab fa-github">
+              <V-Control icon="fab fa-github">
                 <input
                   type="text"
                   class="input"
@@ -363,7 +363,7 @@ const onSave = async () => {
           <!--Field-->
           <div class="column is-6">
             <V-Field>
-              <V-Control fa="fab fa-gitlab">
+              <V-Control icon="fab fa-gitlab">
                 <input
                   type="text"
                   class="input"

@@ -3,19 +3,39 @@ import type { PropType } from 'vue'
 import { defineProps } from 'vue'
 
 type AvatarSize = undefined | 'small' | 'medium' | 'large' | 'big' | 'xl'
+type AvatarColor =
+  | undefined
+  | 'primary'
+  | 'success'
+  | 'info'
+  | 'warning'
+  | 'danger'
+  | 'h-purple'
+  | 'h-orange'
+  | 'h-blue'
+  | 'h-green'
+  | 'h-red'
+  | 'h-yellow'
+type AvatarDotColor =
+  | undefined
+  | 'primary'
+  | 'success'
+  | 'info'
+  | 'warning'
+  | 'danger'
 
 const props = defineProps({
   picture: {
     type: String,
-    default: '',
+    default: undefined,
   },
   placeholder: {
     type: String,
-    default: 'https://via.placeholder.com/150x150',
+    default: 'https://via.placeholder.com/50x50',
   },
   badge: {
     type: String,
-    default: '',
+    default: undefined,
   },
   initials: {
     type: String,
@@ -24,10 +44,70 @@ const props = defineProps({
   size: {
     type: String as PropType<AvatarSize>,
     default: undefined,
+    validator: function (value: AvatarSize) {
+      // The value must match one of these strings
+      if (
+        [undefined, 'small', 'medium', 'large', 'big', 'xl'].indexOf(value) ===
+        -1
+      ) {
+        console.warn(
+          `V-Avatar: invalid "${value}" size. Should be small, medium, large, big, xl or undefined`
+        )
+        return false
+      }
+
+      return true
+    },
   },
   color: {
-    type: String,
-    default: '',
+    type: String as PropType<AvatarColor>,
+    default: undefined,
+    validator: function (value: AvatarColor) {
+      // The value must match one of these strings
+      if (
+        [
+          undefined,
+          'primary',
+          'success',
+          'info',
+          'warning',
+          'danger',
+          'h-purple',
+          'h-orange',
+          'h-blue',
+          'h-green',
+          'h-red',
+          'h-yellow',
+        ].indexOf(value) === -1
+      ) {
+        console.warn(
+          `V-Avatar: invalid "${value}" color. Should be primary, success, info, warning, ` +
+            `danger, h-purple, h-orange, h-blue, h-green, h-red, h-yellow or undefined`
+        )
+        return false
+      }
+
+      return true
+    },
+  },
+  dotColor: {
+    type: String as PropType<AvatarDotColor>,
+    default: undefined,
+    validator: function (value: AvatarDotColor) {
+      // The value must match one of these strings
+      if (
+        [undefined, 'primary', 'info', 'warning', 'danger', 'grey'].indexOf(
+          value
+        ) === -1
+      ) {
+        console.warn(
+          `V-Avatar: invalid "${value}" dotColor. Should be primary, info, warning, danger, grey or undefined`
+        )
+        return false
+      }
+
+      return true
+    },
   },
   squared: {
     type: Boolean,
@@ -36,10 +116,6 @@ const props = defineProps({
   dot: {
     type: Boolean,
     default: false,
-  },
-  dotColor: {
-    type: String,
-    default: '',
   },
 })
 </script>
@@ -60,7 +136,7 @@ const props = defineProps({
       :class="[squared && 'is-squared']"
       :src="picture"
       alt=""
-      @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+      @error.once="$event.target.src = 'https://via.placeholder.com/150x150'"
     />
     <span
       v-else
@@ -74,7 +150,7 @@ const props = defineProps({
       class="badge"
       :src="badge"
       alt=""
-      @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+      @error.once="$event.target.src = 'https://via.placeholder.com/150x150'"
     />
   </div>
 </template>

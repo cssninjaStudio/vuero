@@ -2,27 +2,29 @@
 import { defineProps } from 'vue'
 
 defineProps({
-  image: {
-    type: String,
-    default: 'https://via.placeholder.com/1280x960',
-  },
-  avatar: {
-    type: String,
-    default: 'https://via.placeholder.com/150x150',
-  },
   title: {
     type: String,
-    default: 'Avatar title',
+    required: true,
   },
   subtitle: {
     type: String,
-    default: 'Avatar subtitle',
+    default: undefined,
+  },
+  image: {
+    type: String,
+    default: undefined,
+  },
+  avatar: {
+    type: String,
+    default: undefined,
   },
   badge: {
     type: String,
+    default: undefined,
   },
   text: {
     type: String,
+    default: undefined,
   },
 })
 </script>
@@ -34,7 +36,9 @@ defineProps({
         <img
           :src="image"
           alt=""
-          @error="$event.target.src = 'https://via.placeholder.com/1280x960'"
+          @error.once="
+            $event.target.src = 'https://via.placeholder.com/1280x960'
+          "
         />
       </figure>
     </div>
@@ -44,7 +48,7 @@ defineProps({
           <V-Avatar :picture="avatar" :badge="badge" size="medium" />
         </template>
       </V-Block>
-      <div class="inner-content p-t-20 p-b-20">
+      <div v-if="text" class="inner-content p-t-20 p-b-20">
         <p>{{ text }}</p>
       </div>
 

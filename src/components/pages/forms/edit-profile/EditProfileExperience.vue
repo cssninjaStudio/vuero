@@ -60,7 +60,7 @@ const onSave = async () => {
           <div class="buttons">
             <V-Button
               :to="{ name: 'admin-layouts-profile-view' }"
-              fa="lnir lnir-arrow-left rem-100"
+              icon="lnir lnir-arrow-left rem-100"
               color="light"
               dark-outlined
             >
@@ -155,7 +155,7 @@ const onSave = async () => {
                 </div>
                 <div class="column is-6">
                   <V-Field>
-                    <V-Control iconify="feather:box">
+                    <V-Control icon="feather:box">
                       <input
                         type="text"
                         class="input"
@@ -167,7 +167,7 @@ const onSave = async () => {
                 </div>
                 <div class="column is-6">
                   <V-Field>
-                    <V-Control iconify="feather:briefcase">
+                    <V-Control icon="feather:briefcase">
                       <input
                         type="text"
                         class="input"
@@ -330,7 +330,7 @@ const onSave = async () => {
                 <V-Button
                   raised
                   dark-outlined
-                  fa="fas fa-plus"
+                  icon="fas fa-plus"
                   class="add-setting-item"
                   @click="isUploading = true"
                 >

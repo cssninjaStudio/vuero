@@ -3,7 +3,7 @@
 `<V-Button />` components can have different colors.
 Use the `color` prop on the component to change its color.
 Available color values are `primary`, `info`, `success`, `warning`,
-`danger`, `light` and `white`.
+`danger` and `white`.
 
 <!--code-->
 
@@ -14,7 +14,6 @@ Available color values are `primary`, `info`, `success`, `warning`,
   <V-Button color="success"> Button </V-Button>
   <V-Button color="warning"> Button </V-Button>
   <V-Button color="danger"> Button </V-Button>
-  <V-Button color="light"> Button </V-Button>
   <V-Button color="white"> Button </V-Button>
 </template>
 ```
@@ -37,9 +36,6 @@ Available color values are `primary`, `info`, `success`, `warning`,
         Button
     </V-Button>
     <V-Button color="danger">
-        Button
-    </V-Button>
-    <V-Button color="light">
         Button
     </V-Button>
     <V-Button color="white">

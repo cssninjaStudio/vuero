@@ -1,14 +1,21 @@
 <script setup lang="ts">
-import { defineProps } from 'vue'
+import { defineProps, computed } from 'vue'
 
-defineProps({
+const props = defineProps({
   icon: {
     type: String,
     required: true,
   },
 })
+
+const isIconify = computed(() => {
+  return props.icon && props.icon.indexOf(':') !== -1
+})
 </script>
 
 <template>
-  <span><i class="iconify" :data-icon="icon"></i></span>
+  <span>
+    <i v-if="isIconify" class="iconify" :data-icon="icon"></i>
+    <i v-else :class="icon"></i>
+  </span>
 </template>

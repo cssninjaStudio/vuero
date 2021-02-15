@@ -2,20 +2,21 @@
 import { defineProps } from 'vue'
 
 defineProps({
-  center: {
-    type: Boolean,
-    default: false,
-  },
   title: {
     type: String,
-    default: 'Card title',
+    required: true,
   },
   subtitle: {
     type: String,
-    default: 'Card subtitle',
+    default: undefined,
   },
   infratitle: {
     type: String,
+    default: undefined,
+  },
+  center: {
+    type: Boolean,
+    default: false,
   },
   lighter: {
     type: Boolean,
@@ -49,7 +50,7 @@ defineProps({
     <slot name="icon"></slot>
     <div class="flex-meta" :class="[lighter && 'is-lighter']">
       <span>{{ title }}</span>
-      <span>{{ subtitle }}</span>
+      <span v-if="subtitle">{{ subtitle }}</span>
       <span v-if="infratitle">{{ infratitle }}</span>
     </div>
     <div class="flex-end">

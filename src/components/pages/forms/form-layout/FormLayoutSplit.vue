@@ -24,7 +24,7 @@ const isStuck = computed(() => {
           <div class="right">
             <div class="buttons">
               <V-Button
-                fa="lnir lnir-arrow-left rem-100"
+                icon="lnir lnir-arrow-left rem-100"
                 :to="{ name: 'admin-layouts-profile-view' }"
                 color="light"
                 dark-outlined
@@ -77,7 +77,7 @@ const isStuck = computed(() => {
           <div class="right">
             <h3 class="has-text-centered">Enter your own</h3>
             <V-Field>
-              <V-Control iconify="feather:dollar-sign">
+              <V-Control icon="feather:dollar-sign">
                 <input
                   class="input"
                   type="number"
@@ -93,7 +93,7 @@ const isStuck = computed(() => {
           <div class="left">
             <h3>Personal Info</h3>
             <V-Field>
-              <V-Control iconify="feather:user">
+              <V-Control icon="feather:user">
                 <input
                   type="text"
                   class="input"
@@ -103,7 +103,7 @@ const isStuck = computed(() => {
               </V-Control>
             </V-Field>
             <V-Field>
-              <V-Control iconify="feather:user">
+              <V-Control icon="feather:user">
                 <input
                   type="text"
                   class="input"
@@ -113,7 +113,7 @@ const isStuck = computed(() => {
               </V-Control>
             </V-Field>
             <V-Field>
-              <V-Control iconify="feather:mail">
+              <V-Control icon="feather:mail">
                 <input
                   type="email"
                   class="input"
@@ -124,7 +124,7 @@ const isStuck = computed(() => {
               </V-Control>
             </V-Field>
             <V-Field>
-              <V-Control iconify="feather:phone">
+              <V-Control icon="feather:phone">
                 <input
                   type="tel"
                   class="input"

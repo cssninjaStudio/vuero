@@ -2,8 +2,8 @@
 import { tryOnUnmounted } from '@vueuse/core'
 import { ref, defineProps, defineEmit, watchEffect, PropType } from 'vue'
 
-type ModalSize = 'small' | 'medium' | 'large' | 'big'
-type ModalAction = 'center' | 'right'
+type ModalSize = undefined | 'small' | 'medium' | 'large' | 'big'
+type ModalAction = undefined | 'center' | 'right'
 
 const props = defineProps({
   title: {
@@ -13,19 +13,33 @@ const props = defineProps({
   size: {
     type: String as PropType<ModalSize>,
     default: undefined,
-    validator: function (value?: ModalAction) {
+    validator: function (value: ModalAction) {
       // The value must match one of these strings
-      return (
-        [undefined, 'small', 'medium', 'large', 'big'].indexOf(value) !== -1
-      )
+      if (
+        [undefined, 'small', 'medium', 'large', 'big'].indexOf(value) === -1
+      ) {
+        console.warn(
+          `V-Modal: invalid "${value}" size. Should be small, medium, large, big or undefined`
+        )
+        return false
+      }
+
+      return true
     },
   },
   actions: {
     type: String as PropType<ModalAction>,
     default: undefined,
-    validator: function (value?: ModalAction) {
+    validator: function (value: ModalAction) {
       // The value must match one of these strings
-      return [undefined, 'center', 'right'].indexOf(value) !== -1
+      if ([undefined, 'center', 'right'].indexOf(value) === -1) {
+        console.warn(
+          `V-Modal: invalid "${value}" actions. Should be center, right or undefined`
+        )
+        return false
+      }
+
+      return true
     },
   },
   open: {

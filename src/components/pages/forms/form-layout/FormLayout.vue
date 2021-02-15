@@ -26,7 +26,7 @@ const isStuck = computed(() => {
           <div class="right">
             <div class="buttons">
               <V-Button
-                fa="lnir lnir-arrow-left rem-100"
+                icon="lnir lnir-arrow-left rem-100"
                 :to="{ name: 'admin-layouts-profile-view' }"
                 color="light"
                 dark-outlined
@@ -50,7 +50,7 @@ const isStuck = computed(() => {
             <div class="column is-6">
               <V-Field>
                 <label>First Name</label>
-                <V-Control iconify="feather:user">
+                <V-Control icon="feather:user">
                   <input
                     type="text"
                     class="input"
@@ -63,7 +63,7 @@ const isStuck = computed(() => {
             <div class="column is-6">
               <V-Field>
                 <label>Last Name</label>
-                <V-Control iconify="feather:user">
+                <V-Control icon="feather:user">
                   <input
                     type="text"
                     class="input"
@@ -76,7 +76,7 @@ const isStuck = computed(() => {
             <div class="column is-12">
               <V-Field>
                 <label>Email Address</label>
-                <V-Control iconify="feather:mail">
+                <V-Control icon="feather:mail">
                   <input
                     type="email"
                     class="input"
@@ -100,7 +100,7 @@ const isStuck = computed(() => {
             <div class="column is-6">
               <V-Field>
                 <label>Company Name</label>
-                <V-Control iconify="feather:briefcase">
+                <V-Control icon="feather:briefcase">
                   <input
                     type="text"
                     class="input"
@@ -113,7 +113,7 @@ const isStuck = computed(() => {
             <div class="column is-6">
               <V-Field>
                 <label>Company Phone</label>
-                <V-Control iconify="feather:phone">
+                <V-Control icon="feather:phone">
                   <input
                     type="tel"
                     class="input"
@@ -163,7 +163,7 @@ const isStuck = computed(() => {
             <div class="column is-12">
               <V-Field>
                 <label>Company Email</label>
-                <V-Control iconify="feather:mail">
+                <V-Control icon="feather:mail">
                   <input
                     type="email"
                     class="input"
@@ -201,7 +201,7 @@ const isStuck = computed(() => {
                 <template #default="{ inputValue, inputEvents }">
                   <V-Field>
                     <label>Prefered Date</label>
-                    <V-Control iconify="feather:calendar">
+                    <V-Control icon="feather:calendar">
                       <input
                         class="input"
                         type="text"

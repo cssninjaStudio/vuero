@@ -9,7 +9,7 @@ component to show an icon.
 ```vue
 <template>
   <V-Field>
-    <V-Control iconify="feather:github">
+    <V-Control icon="feather:github">
       <input type="text" class="input is-rounded" placeholder="GitHub URL" />
     </V-Control>
   </V-Field>
@@ -21,7 +21,7 @@ component to show an icon.
 <!--example-->
 
 <V-Field>
-  <V-Control iconify="feather:github">
+  <V-Control icon="feather:github">
     <input
         type="text"
         class="input is-rounded"

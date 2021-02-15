@@ -1,7 +1,11 @@
 <script setup lang="ts">
-import { defineProps } from 'vue'
+import { defineProps, computed } from 'vue'
 
-defineProps({
+const props = defineProps({
+  icon: {
+    type: String,
+    default: undefined,
+  },
   isValid: {
     type: Boolean,
     default: false,
@@ -9,14 +13,6 @@ defineProps({
   hasError: {
     type: Boolean,
     default: false,
-  },
-  fa: {
-    type: String,
-    default: '',
-  },
-  iconify: {
-    type: String,
-    default: '',
   },
   loading: {
     type: Boolean,
@@ -35,13 +31,17 @@ defineProps({
     default: false,
   },
 })
+
+const isIconify = computed(() => {
+  return props.icon && props.icon.indexOf(':') !== -1
+})
 </script>
 
 <template>
   <div
     class="control"
     :class="[
-      (iconify || fa) && 'has-icon',
+      icon && 'has-icon',
       loading && 'is-loading',
       expanded && 'is-expanded',
       nogrow && 'is-nogrow',
@@ -51,9 +51,9 @@ defineProps({
     ]"
   >
     <slot></slot>
-    <div v-if="iconify || fa" class="form-icon">
-      <i v-if="iconify" class="iconify" :data-icon="iconify"></i>
-      <i v-else :class="fa"></i>
+    <div v-if="icon" class="form-icon">
+      <i v-if="isIconify" class="iconify" :data-icon="icon"></i>
+      <i v-else :class="icon"></i>
     </div>
     <div v-if="isValid" class="validation-icon is-success">
       <i class="iconify" data-icon="feather:check"></i>

@@ -63,7 +63,7 @@ const onSave = async () => {
           <div class="buttons">
             <V-Button
               :to="{ name: 'admin-layouts-profile-view' }"
-              fa="lnir lnir-arrow-left rem-100"
+              icon="lnir lnir-arrow-left rem-100"
               color="light"
               dark-outlined
             >
@@ -180,7 +180,7 @@ const onSave = async () => {
                 </div>
                 <div class="column is-12">
                   <V-Field>
-                    <V-Control iconify="feather:message-circle">
+                    <V-Control icon="feather:message-circle">
                       <input
                         type="text"
                         class="input"
@@ -195,7 +195,7 @@ const onSave = async () => {
                     <V-Control>
                       <V-Button
                         color="primary"
-                        fa="fas fa-plus"
+                        icon="fas fa-plus"
                         raised
                         fullwidth
                       >
@@ -302,7 +302,7 @@ const onSave = async () => {
                 <V-Button
                   raised
                   dark-outlined
-                  fa="fas fa-plus"
+                  icon="fas fa-plus"
                   class="add-setting-item"
                   @click="isEditingLanguages = true"
                 >
@@ -458,7 +458,7 @@ const onSave = async () => {
                     <V-Control>
                       <V-Button
                         color="primary"
-                        fa="fas fa-plus"
+                        icon="fas fa-plus"
                         raised
                         fullwidth
                       >
@@ -544,7 +544,7 @@ const onSave = async () => {
                 <V-Button
                   raised
                   dark-outlined
-                  fa="fas fa-plus"
+                  icon="fas fa-plus"
                   class="add-setting-item"
                   @click="isEditingSkills = true"
                 >
@@ -660,7 +660,7 @@ const onSave = async () => {
                     <V-Control>
                       <V-Button
                         color="primary"
-                        fa="fas fa-plus"
+                        icon="fas fa-plus"
                         raised
                         fullwidth
                       >
@@ -747,7 +747,7 @@ const onSave = async () => {
                 <V-Button
                   raised
                   dark-outlined
-                  fa="fas fa-plus"
+                  icon="fas fa-plus"
                   class="add-setting-item"
                   @click="isEditingTools = true"
                 >

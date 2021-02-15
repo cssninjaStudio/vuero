@@ -13,6 +13,7 @@ use the `light` modifier prop to make a light colored button.
   <V-Button color="success" light> Button </V-Button>
   <V-Button color="warning" light> Button </V-Button>
   <V-Button color="danger" light> Button </V-Button>
+  <V-Button light> Button </V-Button>
 </template>
 ```
 
@@ -21,21 +22,12 @@ use the `light` modifier prop to make a light colored button.
 <!--example-->
 
 <div class="buttons">
-    <V-Button color="primary" light>
-        Button
-    </V-Button>
-    <V-Button color="info" light>
-        Button
-    </V-Button>
-    <V-Button color="success" light>
-        Button
-    </V-Button>
-    <V-Button color="warning" light>
-        Button
-    </V-Button>
-    <V-Button color="danger" light>
-        Button
-    </V-Button>
+  <V-Button color="primary" light> Button </V-Button>
+  <V-Button color="info" light> Button </V-Button>
+  <V-Button color="success" light> Button </V-Button>
+  <V-Button color="warning" light> Button </V-Button>
+  <V-Button color="danger" light> Button </V-Button>
+  <V-Button light> Button </V-Button>
 </div>
 
 <!--/example-->

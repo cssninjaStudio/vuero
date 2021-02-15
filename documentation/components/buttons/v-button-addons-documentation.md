@@ -10,13 +10,13 @@ You can mix any button styles.
 <template>
   <div class="field has-addons">
     <p class="control">
-      <V-Button fa="fas fa-align-left"> Left </V-Button>
+      <V-Button icon="fas fa-align-left"> Left </V-Button>
     </p>
     <p class="control">
-      <V-Button fa="fas fa-align-center"> Center </V-Button>
+      <V-Button icon="fas fa-align-center"> Center </V-Button>
     </p>
     <p class="control">
-      <V-Button fa="fas fa-align-right"> Right </V-Button>
+      <V-Button icon="fas fa-align-right"> Right </V-Button>
     </p>
   </div>
 </template>
@@ -28,17 +28,17 @@ You can mix any button styles.
 
 <div class="field has-addons">
     <p class="control">
-        <V-Button fa="fas fa-align-left">
+        <V-Button icon="fas fa-align-left">
             Left
         </V-Button>
     </p>
     <p class="control">
-        <V-Button fa="fas fa-align-center">
+        <V-Button icon="fas fa-align-center">
             Center
         </V-Button>
     </p>
     <p class="control">
-        <V-Button fa="fas fa-align-right">
+        <V-Button icon="fas fa-align-right">
             Right
         </V-Button>
     </p>

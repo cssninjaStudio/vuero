@@ -34,7 +34,7 @@ const toggle = (key: number) => {
 </script>
 
 <template>
-  <div
+  <details
     v-for="(item, key) in items"
     :key="key"
     :class="[
@@ -44,15 +44,26 @@ const toggle = (key: number) => {
     ]"
     class="collapse"
   >
-    <div class="collapse-header" @click="() => toggle(key)">
+    <summary class="collapse-header" @click="() => toggle(key)">
       <h3>{{ item.title }}</h3>
       <div class="collapse-icon">
         <V-Icon v-if="withChevron" icon="feather:chevron-down" />
         <V-Icon v-else-if="!withChevron" icon="feather:plus" />
       </div>
-    </div>
+    </summary>
     <div class="collapse-content">
       <p>{{ item.content }}</p>
     </div>
-  </div>
+  </details>
 </template>
+
+<style lang="scss" scoped>
+summary {
+  outline: none;
+  list-style: none;
+
+  &::-webkit-details-marker {
+    display: none;
+  }
+}
+</style>

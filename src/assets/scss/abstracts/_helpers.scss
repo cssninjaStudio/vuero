@@ -129,6 +129,10 @@
   }
 
   //BG Helpers
+  .is-dark-bg-1 {
+    background: lighten($dark-sidebar, 1%) !important;
+  }
+
   .is-dark-bg-2 {
     background: lighten($dark-sidebar, 2%) !important;
   }
@@ -139,6 +143,10 @@
 
   .is-dark-bg-4 {
     background: lighten($dark-sidebar, 4%) !important;
+  }
+
+  .is-dark-bg-5 {
+    background: lighten($dark-sidebar, 5%) !important;
   }
 
   .is-dark-bg-6 {

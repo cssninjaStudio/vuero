@@ -1,34 +1,37 @@
 <script setup lang="ts">
-import { defineProps } from 'vue'
+import { defineProps, computed, defineEmit, PropType } from 'vue'
 
-defineProps({
+const props = defineProps({
+  title: {
+    type: String,
+    required: true,
+  },
   avatar: {
     type: String,
-    default: 'https://via.placeholder.com/150x150',
+    default: undefined,
   },
   username: {
     type: String,
-    default: '',
-  },
-  text: {
-    type: String,
-    default: '',
-  },
-  title: {
-    type: String,
-    default: 'Featured Post',
+    default: undefined,
   },
   network: {
     type: String,
-    default: 'twitter',
-  },
-  hashtags: {
-    type: Array,
+    default: undefined,
   },
   icon: {
     type: String,
-    default: 'fa fa-check',
+    default: undefined,
   },
+  hashtags: {
+    type: Array as PropType<string[]>,
+    default: () => [],
+  },
+})
+
+const emit = defineEmit(['icon', 'save', 'edit'])
+
+const isIconify = computed(() => {
+  return props.icon && props.icon.indexOf(':') !== -1
 })
 </script>
 
@@ -37,11 +40,15 @@ defineProps({
     <header class="card-header">
       <div class="card-header-title">{{ title }}</div>
       <a
-        href="#"
+        v-if="icon"
         class="card-header-icon"
         :class="[network && `text-${network}`]"
+        @click="emit('icon')"
       >
-        <span class="icon">
+        <span v-if="isIconify" class="icon">
+          <i class="iconify" :data-icon="icon"></i>
+        </span>
+        <span v-else-if="icon" class="icon">
           <i :class="icon"></i>
         </span>
       </a>
@@ -50,10 +57,8 @@ defineProps({
       <div class="media-flex p-b-10">
         <V-Avatar size="medium" :picture="avatar" squared />
         <div class="flex-meta">
-          <span>{{ username }}</span>
-          <span>
-            {{ text }}
-          </span>
+          <span v-if="username">{{ username }}</span>
+          <slot></slot>
           <span>
             <a
               v-for="(hashtag, index) in hashtags"
@@ -68,8 +73,8 @@ defineProps({
       </div>
     </div>
     <footer class="card-footer">
-      <a href="#" class="card-footer-item">Save</a>
-      <a href="#" class="card-footer-item">Edit</a>
+      <a class="card-footer-item" @click="emit('save')">Save</a>
+      <a class="card-footer-item" @click="emit('edit')">Edit</a>
     </footer>
   </div>
 </template>

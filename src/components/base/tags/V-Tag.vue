@@ -1,19 +1,58 @@
 <script setup lang="ts">
+import type { PropType } from 'vue'
 import { defineProps } from 'vue'
 
-defineProps({
+type TagColor =
+  | undefined
+  | 'primary'
+  | 'info'
+  | 'success'
+  | 'warning'
+  | 'danger'
+  | 'orange'
+  | 'blue'
+  | 'green'
+  | 'purple'
+  | 'white'
+  | 'light'
+  | 'solid'
+
+const props = defineProps({
   label: {
     type: String,
-    required: true,
-    default: '',
+    default: undefined,
   },
   color: {
-    type: String,
-    default: '',
-  },
-  light: {
-    type: Boolean,
-    default: false,
+    type: String as PropType<TagColor>,
+    default: undefined,
+    validator: function (value: TagColor) {
+      // The value must match one of these strings
+      if (
+        [
+          undefined,
+          'primary',
+          'info',
+          'success',
+          'warning',
+          'danger',
+          'orange',
+          'blue',
+          'green',
+          'purple',
+          'white',
+          'light',
+          'solid',
+        ].indexOf(value) === -1
+      ) {
+        console.warn(
+          `V-Tag: invalid "${value}" color. Should be primary, info, success, ` +
+            `warning, danger, orange, blue, green, purple, white, light, solid or undefined`
+        )
+        return false
+      }
+
+      return true
+    },
   },
   rounded: {
     type: Boolean,
@@ -31,6 +70,10 @@ defineProps({
     type: Boolean,
     default: false,
   },
+  remove: {
+    type: Boolean,
+    default: false,
+  },
 })
 </script>
 
@@ -42,8 +85,8 @@ defineProps({
       rounded && 'is-rounded',
       curved && 'is-curved',
       outlined && 'is-outlined',
-      light && 'is-light',
       elevated && 'is-elevated',
+      remove && 'is-delete',
     ]"
     >{{ label }}</span
   >
