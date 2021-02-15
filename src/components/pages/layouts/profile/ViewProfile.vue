@@ -2,25 +2,12 @@
   <!--User profile-->
   <div class="profile-wrapper">
     <div class="profile-header has-text-centered">
-      <div class="v-avatar is-xl">
-        <img
-          class="avatar"
-          src="/images/avatars/photos/8.jpg"
-          alt=""
-          data-user-popover="3"
-          @error.once="
-            $event.target.src = 'https://via.placeholder.com/150x150'
-          "
-        />
-        <img
-          class="badge"
-          src="/images/icons/flags/united-states-of-america.svg"
-          alt=""
-          @error.once="
-            $event.target.src = 'https://via.placeholder.com/150x150'
-          "
-        />
-      </div>
+      <V-Avatar
+        size="xl"
+        picture="/images/avatars/photos/8.jpg"
+        badge="/images/icons/flags/united-states-of-america.svg"
+      />
+
       <h3 class="title is-4 is-narrow is-thin">Erik Kovalsky</h3>
       <p class="light-text">
         Hey everyone, Iam a product manager from New York and Iam looking for
@@ -156,7 +143,7 @@
                   </div>
                 </div>
                 <div class="more-button has-text-centered">
-                  <a class="button v-button is-light">View More</a>
+                  <V-Button light>View More</V-Button>
                 </div>
               </div>
             </div>
@@ -264,51 +251,17 @@
                       <span>7 years of experience</span>
                     </div>
                     <div class="people">
-                      <div class="v-avatar is-small">
-                        <span
-                          class="avatar is-fake is-warning"
-                          data-user-popover="36"
-                        >
-                          <span>BT</span>
-                        </span>
-                      </div>
-                      <div class="v-avatar is-small">
-                        <img
-                          class="avatar"
-                          src="/images/avatars/photos/18.jpg"
-                          alt=""
-                          data-user-popover="7"
-                          @error.once="
-                            $event.target.src =
-                              'https://via.placeholder.com/150x150'
-                          "
-                        />
-                      </div>
-                      <div class="v-avatar is-small">
-                        <span
-                          class="avatar is-fake is-info"
-                          data-user-popover="34"
-                        >
-                          <span>JD</span>
-                        </span>
-                      </div>
-                      <div class="v-avatar is-small">
-                        <img
-                          class="avatar"
-                          src="/images/avatars/photos/7.jpg"
-                          alt=""
-                          data-user-popover="0"
-                          @error.once="
-                            $event.target.src =
-                              'https://via.placeholder.com/150x150'
-                          "
-                        />
-                      </div>
-                      <div class="v-avatar is-small">
-                        <span class="avatar is-fake">
-                          <span>38</span>
-                        </span>
-                      </div>
+                      <V-Avatar size="small" initials="BT" color="warning" />
+                      <V-Avatar
+                        size="small"
+                        picture="/images/avatars/photos/18.jpg"
+                      />
+                      <V-Avatar size="small" initials="JD" color="info" />
+                      <V-Avatar
+                        size="small"
+                        picture="/images/avatars/photos/7.jpg"
+                      />
+                      <V-Avatar size="small" initials="38" />
                     </div>
                   </div>
 
@@ -322,55 +275,20 @@
                       <span>4 years of experience</span>
                     </div>
                     <div class="people">
-                      <div class="v-avatar is-small">
-                        <img
-                          class="avatar"
-                          src="/images/avatars/photos/21.jpg"
-                          alt=""
-                          data-user-popover="19"
-                          @error.once="
-                            $event.target.src =
-                              'https://via.placeholder.com/150x150'
-                          "
-                        />
-                      </div>
-                      <div class="v-avatar is-small">
-                        <span
-                          class="avatar is-fake is-success"
-                          data-user-popover="37"
-                        >
-                          <span>AT</span>
-                        </span>
-                      </div>
-                      <div class="v-avatar is-small">
-                        <img
-                          class="avatar"
-                          src="/images/avatars/photos/39.jpg"
-                          alt=""
-                          data-user-popover="33"
-                          @error.once="
-                            $event.target.src =
-                              'https://via.placeholder.com/150x150'
-                          "
-                        />
-                      </div>
-                      <div class="v-avatar is-small">
-                        <img
-                          class="avatar"
-                          src="/images/avatars/photos/23.jpg"
-                          alt=""
-                          data-user-popover="21"
-                          @error.once="
-                            $event.target.src =
-                              'https://via.placeholder.com/150x150'
-                          "
-                        />
-                      </div>
-                      <div class="v-avatar is-small">
-                        <span class="avatar is-fake">
-                          <span>27</span>
-                        </span>
-                      </div>
+                      <V-Avatar
+                        size="small"
+                        picture="/images/avatars/photos/21.jpg"
+                      />
+                      <V-Avatar size="small" initials="AT" color="success" />
+                      <V-Avatar
+                        size="small"
+                        picture="/images/avatars/photos/39.jpg"
+                      />
+                      <V-Avatar
+                        size="small"
+                        picture="/images/avatars/photos/23.jpg"
+                      />
+                      <V-Avatar size="small" initials="27" />
                     </div>
                   </div>
 
@@ -391,55 +309,20 @@
                       <span>10+ years of experience</span>
                     </div>
                     <div class="people">
-                      <div class="v-avatar is-small">
-                        <img
-                          class="avatar"
-                          src="/images/avatars/photos/38.jpg"
-                          alt=""
-                          data-user-popover="32"
-                          @error.once="
-                            $event.target.src =
-                              'https://via.placeholder.com/150x150'
-                          "
-                        />
-                      </div>
-                      <div class="v-avatar is-small">
-                        <img
-                          class="avatar"
-                          src="/images/avatars/photos/11.jpg"
-                          alt=""
-                          data-user-popover="13"
-                          @error.once="
-                            $event.target.src =
-                              'https://via.placeholder.com/150x150'
-                          "
-                        />
-                      </div>
-                      <div class="v-avatar is-small">
-                        <span
-                          class="avatar is-fake is-h-purple"
-                          data-user-popover="35"
-                        >
-                          <span>SC</span>
-                        </span>
-                      </div>
-                      <div class="v-avatar is-small">
-                        <img
-                          class="avatar"
-                          src="/images/avatars/photos/13.jpg"
-                          alt=""
-                          data-user-popover="6"
-                          @error.once="
-                            $event.target.src =
-                              'https://via.placeholder.com/150x150'
-                          "
-                        />
-                      </div>
-                      <div class="v-avatar is-small">
-                        <span class="avatar is-fake">
-                          <span>19</span>
-                        </span>
-                      </div>
+                      <V-Avatar
+                        size="small"
+                        picture="/images/avatars/photos/38.jpg"
+                      />
+                      <V-Avatar
+                        size="small"
+                        picture="/images/avatars/photos/11.jpg"
+                      />
+                      <V-Avatar size="small" initials="SC" color="h-purple" />
+                      <V-Avatar
+                        size="small"
+                        picture="/images/avatars/photos/13.jpg"
+                      />
+                      <V-Avatar size="small" initials="19" />
                     </div>
                   </div>
 
@@ -460,61 +343,26 @@
                       <span>10+ years of experience</span>
                     </div>
                     <div class="people">
-                      <div class="v-avatar is-small">
-                        <img
-                          class="avatar"
-                          src="/images/avatars/photos/21.jpg"
-                          alt=""
-                          data-user-popover="19"
-                          @error.once="
-                            $event.target.src =
-                              'https://via.placeholder.com/150x150'
-                          "
-                        />
-                      </div>
-                      <div class="v-avatar is-small">
-                        <span
-                          class="avatar is-fake is-h-purple"
-                          data-user-popover="35"
-                        >
-                          <span>SC</span>
-                        </span>
-                      </div>
-                      <div class="v-avatar is-small">
-                        <img
-                          class="avatar"
-                          src="/images/avatars/photos/5.jpg"
-                          alt=""
-                          data-user-popover="9"
-                          @error.once="
-                            $event.target.src =
-                              'https://via.placeholder.com/150x150'
-                          "
-                        />
-                      </div>
-                      <div class="v-avatar is-small">
-                        <img
-                          class="avatar"
-                          src="/images/avatars/photos/7.jpg"
-                          alt=""
-                          data-user-popover="0"
-                          @error.once="
-                            $event.target.src =
-                              'https://via.placeholder.com/150x150'
-                          "
-                        />
-                      </div>
-                      <div class="v-avatar is-small">
-                        <span class="avatar is-fake">
-                          <span>31</span>
-                        </span>
-                      </div>
+                      <V-Avatar
+                        size="small"
+                        picture="/images/avatars/photos/21.jpg"
+                      />
+                      <V-Avatar size="small" initials="SC" color="h-purple" />
+                      <V-Avatar
+                        size="small"
+                        picture="/images/avatars/photos/5.jpg"
+                      />
+                      <V-Avatar
+                        size="small"
+                        picture="/images/avatars/photos/7.jpg"
+                      />
+                      <V-Avatar size="small" initials="31" />
                     </div>
                   </div>
                 </div>
 
                 <div class="more-button has-text-centered">
-                  <a class="button v-button is-light">View More</a>
+                  <V-Button light>View More</V-Button>
                 </div>
               </div>
             </div>
@@ -532,27 +380,11 @@
                 <div class="recommendations-wrapper">
                   <!--Recommendation-->
                   <div class="recommendations-item">
-                    <div class="v-avatar is-large">
-                      <img
-                        class="avatar"
-                        src="/images/avatars/photos/5.jpg"
-                        alt=""
-                        data-user-popover="9"
-                        @error.once="
-                          $event.target.src =
-                            'https://via.placeholder.com/150x150'
-                        "
-                      />
-                      <img
-                        class="badge"
-                        src="/images/icons/flags/united-states-of-america.svg"
-                        alt=""
-                        @error.once="
-                          $event.target.src =
-                            'https://via.placeholder.com/150x150'
-                        "
-                      />
-                    </div>
+                    <V-Avatar
+                      size="large"
+                      picture="/images/avatars/photos/5.jpg"
+                      badge="/images/icons/flags/united-states-of-america.svg"
+                    />
                     <h3 class="dark-inverted">Project Manager</h3>
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -567,27 +399,12 @@
 
                   <!--Recommendation-->
                   <div class="recommendations-item">
-                    <div class="v-avatar is-large">
-                      <img
-                        class="avatar"
-                        src="/images/avatars/photos/18.jpg"
-                        alt=""
-                        data-user-popover="7"
-                        @error.once="
-                          $event.target.src =
-                            'https://via.placeholder.com/150x150'
-                        "
-                      />
-                      <img
-                        class="badge"
-                        src="/images/icons/flags/united-states-of-america.svg"
-                        alt=""
-                        @error.once="
-                          $event.target.src =
-                            'https://via.placeholder.com/150x150'
-                        "
-                      />
-                    </div>
+                    <V-Avatar
+                      size="large"
+                      picture="/images/avatars/photos/18.jpg"
+                      badge="/images/icons/flags/united-states-of-america.svg"
+                    />
+
                     <h3 class="dark-inverted">UI/UX Designer</h3>
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -610,12 +427,12 @@
             <div class="profile-card-section no-padding">
               <div class="section-title">
                 <h4>Notifications</h4>
-                <div class="control">
+                <V-Control>
                   <label class="form-switch is-success">
                     <input type="checkbox" class="is-switch" checked />
                     <i></i>
                   </label>
-                </div>
+                </V-Control>
               </div>
               <div class="section-content">
                 <div class="network-notifications">
@@ -634,9 +451,7 @@
             <div class="profile-card-section no-padding">
               <div class="section-title">
                 <h4>Tools</h4>
-                <RouterLink
-                  :to="{ name: 'admin-layouts-profile-edit-experience' }"
-                >
+                <RouterLink :to="{ name: 'admin-layouts-profile-edit-skills' }">
                   <i class="lnil lnil-pencil"></i>
                 </RouterLink>
                 <a class="action-link">View All</a>
@@ -712,27 +527,11 @@
                 <div class="people-wrapper">
                   <!--People-->
                   <a href="#" class="people-item">
-                    <div class="v-avatar">
-                      <img
-                        class="avatar"
-                        src="/images/avatars/photos/25.jpg"
-                        alt=""
-                        data-user-popover="4"
-                        @error.once="
-                          $event.target.src =
-                            'https://via.placeholder.com/150x150'
-                        "
-                      />
-                      <img
-                        class="badge"
-                        src="/images/icons/stacks/js.svg"
-                        alt=""
-                        @error.once="
-                          $event.target.src =
-                            'https://via.placeholder.com/150x150'
-                        "
-                      />
-                    </div>
+                    <V-Avatar
+                      picture="/images/avatars/photos/25.jpg"
+                      badge="/images/icons/stacks/js.svg"
+                    />
+
                     <div class="meta">
                       <span class="dark-inverted">Melany W.</span>
                       <span>Web Developer</span>
@@ -741,27 +540,11 @@
 
                   <!--People-->
                   <a href="#" class="people-item">
-                    <div class="v-avatar">
-                      <img
-                        class="avatar"
-                        src="/images/avatars/photos/29.jpg"
-                        alt=""
-                        data-user-popover="25"
-                        @error.once="
-                          $event.target.src =
-                            'https://via.placeholder.com/150x150'
-                        "
-                      />
-                      <img
-                        class="badge"
-                        src="/images/icons/stacks/python.svg"
-                        alt=""
-                        @error.once="
-                          $event.target.src =
-                            'https://via.placeholder.com/150x150'
-                        "
-                      />
-                    </div>
+                    <V-Avatar
+                      picture="/images/avatars/photos/29.jpg"
+                      badge="/images/icons/stacks/python.svg"
+                    />
+
                     <div class="meta">
                       <span class="dark-inverted">Hakeem C.</span>
                       <span>Web Developer</span>
@@ -770,27 +553,11 @@
 
                   <!--People-->
                   <a href="#" class="people-item">
-                    <div class="v-avatar">
-                      <img
-                        class="avatar"
-                        src="/images/avatars/photos/38.jpg"
-                        alt=""
-                        data-user-popover="32"
-                        @error.once="
-                          $event.target.src =
-                            'https://via.placeholder.com/150x150'
-                        "
-                      />
-                      <img
-                        class="badge"
-                        src="/images/icons/stacks/vuejs.svg"
-                        alt=""
-                        @error.once="
-                          $event.target.src =
-                            'https://via.placeholder.com/150x150'
-                        "
-                      />
-                    </div>
+                    <V-Avatar
+                      picture="/images/avatars/photos/38.jpg"
+                      badge="/images/icons/stacks/vuejs.svg"
+                    />
+
                     <div class="meta">
                       <span class="dark-inverted">Christie D.</span>
                       <span>Web Developer</span>
@@ -799,27 +566,11 @@
 
                   <!--People-->
                   <a href="#" class="people-item">
-                    <div class="v-avatar">
-                      <img
-                        class="avatar"
-                        src="/images/avatars/photos/28.jpg"
-                        alt=""
-                        data-user-popover="24"
-                        @error.once="
-                          $event.target.src =
-                            'https://via.placeholder.com/150x150'
-                        "
-                      />
-                      <img
-                        class="badge"
-                        src="/images/icons/stacks/angular.svg"
-                        alt=""
-                        @error.once="
-                          $event.target.src =
-                            'https://via.placeholder.com/150x150'
-                        "
-                      />
-                    </div>
+                    <V-Avatar
+                      picture="/images/avatars/photos/28.jpg"
+                      badge="/images/icons/stacks/angular.svg"
+                    />
+
                     <div class="meta">
                       <span class="dark-inverted">Edouard F.</span>
                       <span>Software Engineer</span>
@@ -828,27 +579,11 @@
 
                   <!--People-->
                   <a href="#" class="people-item">
-                    <div class="v-avatar">
-                      <img
-                        class="avatar"
-                        src="/images/avatars/photos/19.jpg"
-                        alt=""
-                        data-user-popover="17"
-                        @error.once="
-                          $event.target.src =
-                            'https://via.placeholder.com/150x150'
-                        "
-                      />
-                      <img
-                        class="badge"
-                        src="/images/icons/flags/germany.svg"
-                        alt=""
-                        @error.once="
-                          $event.target.src =
-                            'https://via.placeholder.com/150x150'
-                        "
-                      />
-                    </div>
+                    <V-Avatar
+                      picture="/images/avatars/photos/19.jpg"
+                      badge="/images/icons/stacks/cplus.svg"
+                    />
+
                     <div class="meta">
                       <span class="dark-inverted">Greta K.</span>
                       <span>Sales Manager</span>
@@ -865,7 +600,7 @@
 </template>
 
 <style lang="scss">
-@import '../../assets/scss/abstracts/_variables.scss';
-@import '../../assets/scss/abstracts/_mixins.scss';
-@import '../../assets/scss/pages/profile/_user-profile.scss';
+@import '../../../../assets/scss/abstracts/_variables.scss';
+@import '../../../../assets/scss/abstracts/_mixins.scss';
+@import '../../../../assets/scss/pages/profile/_user-profile.scss';
 </style>

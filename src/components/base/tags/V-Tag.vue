@@ -78,7 +78,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <span
+  <small
     class="tag"
     :class="[
       color && 'is-' + color,
@@ -88,6 +88,6 @@ const props = defineProps({
       elevated && 'is-elevated',
       remove && 'is-delete',
     ]"
-    >{{ label }}</span
+    >{{ label }}</small
   >
 </template>

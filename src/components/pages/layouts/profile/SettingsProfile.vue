@@ -2,25 +2,12 @@
   <!--Profile Settings-->
   <div class="profile-wrapper">
     <div class="profile-header has-text-centered">
-      <div class="v-avatar is-xl">
-        <img
-          class="avatar"
-          src="/images/avatars/photos/8.jpg"
-          alt=""
-          data-user-popover="3"
-          @error.once="
-            $event.target.src = 'https://via.placeholder.com/150x150'
-          "
-        />
-        <img
-          class="badge"
-          src="/images/icons/flags/united-states-of-america.svg"
-          alt=""
-          @error.once="
-            $event.target.src = 'https://via.placeholder.com/150x150'
-          "
-        />
-      </div>
+      <V-Avatar
+        size="xl"
+        picture="/images/avatars/photos/8.jpg"
+        badge="/images/icons/flags/united-states-of-america.svg"
+      />
+
       <h3 class="title is-4 is-narrow">Erik Kovalsky</h3>
       <p class="light-text">
         Hey everyone, Iam a product manager from New York and Iam looking for
@@ -153,7 +140,7 @@
 </template>
 
 <style lang="scss">
-@import '../../assets/scss/abstracts/_variables.scss';
-@import '../../assets/scss/abstracts/_mixins.scss';
-@import '../../assets/scss/pages/profile/_user-profile.scss';
+@import '../../../../assets/scss/abstracts/_variables.scss';
+@import '../../../../assets/scss/abstracts/_mixins.scss';
+@import '../../../../assets/scss/pages/profile/_user-profile.scss';
 </style>
