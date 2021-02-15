@@ -149,7 +149,7 @@ import {
                       <i class="fas fa-star selected"></i>
                     </div>
                     <V-IconButton
-                      iconify="feather:arrow-right"
+                      icon="feather:arrow-right"
                       circle
                       dark-outlined
                     />
@@ -172,7 +172,7 @@ import {
                       <i class="fas fa-star"></i>
                     </div>
                     <V-IconButton
-                      iconify="feather:arrow-right"
+                      icon="feather:arrow-right"
                       circle
                       dark-outlined
                     />
@@ -199,7 +199,7 @@ import {
                       <i class="fas fa-star selected"></i>
                     </div>
                     <V-IconButton
-                      iconify="feather:arrow-right"
+                      icon="feather:arrow-right"
                       circle
                       dark-outlined
                     />
@@ -226,7 +226,7 @@ import {
                       <i class="fas fa-star selected"></i>
                     </div>
                     <V-IconButton
-                      iconify="feather:arrow-right"
+                      icon="feather:arrow-right"
                       circle
                       dark-outlined
                     />
@@ -269,7 +269,7 @@ import {
                       <i class="fas fa-star selected"></i>
                     </div>
                     <V-IconButton
-                      iconify="feather:arrow-right"
+                      icon="feather:arrow-right"
                       circle
                       dark-outlined
                     />
@@ -292,7 +292,7 @@ import {
                       <i class="fas fa-star"></i>
                     </div>
                     <V-IconButton
-                      iconify="feather:arrow-right"
+                      icon="feather:arrow-right"
                       circle
                       dark-outlined
                     />
@@ -315,7 +315,7 @@ import {
                       <i class="fas fa-star selected"></i>
                     </div>
                     <V-IconButton
-                      iconify="feather:arrow-right"
+                      icon="feather:arrow-right"
                       circle
                       dark-outlined
                     />
@@ -338,7 +338,7 @@ import {
                       <i class="fas fa-star selected"></i>
                     </div>
                     <V-IconButton
-                      iconify="feather:arrow-right"
+                      icon="feather:arrow-right"
                       circle
                       dark-outlined
                     />

@@ -3,9 +3,15 @@
   "less.validate": false,
   "scss.validate": false,
   "editor.formatOnSave": true,
-  "vetur.validation.template": false,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
+  },
+  "[vue]": {
+    "editor.formatOnSave": true
+  },
+  "[markdown]": {
+    "editor.formatOnSave": true,
+    "editor.rulers": [80]
   },
   "eslint.alwaysShowStatus": true,
   "eslint.validate": [
@@ -14,21 +20,12 @@
     "markdown",
     "vue"
   ],
-  "[vue]": {
-    "editor.formatOnSave": false
-  },
-  "[markdown]": {
-    "editor.formatOnSave": false,
-    "editor.rulers": [80]
-  },
+  "i18n-ally.localesPaths": [
+    "src/locales",
+  ],
+  "vetur.validation.template": false,
   "vetur.experimental.templateInterpolationService": false,
   "vetur.validation.interpolation": false,
   "vetur.completion.tagCasing": "initial",
   "vetur.completion.autoImport": true,
-  "i18n-ally.localesPaths": [
-    "src/locales",
-    "src/assets/images/illustrations/messages",
-    "src/components/pages/inbox/messages"
-  ],
-  "volar.tsPlugin": true,
 }

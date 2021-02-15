@@ -166,7 +166,7 @@ import { popovers } from '/@src/data/users/userPopovers'
               />
             </template>
             <template #action>
-              <V-IconButton iconify="feather:plus" circle dark-outlined />
+              <V-IconButton icon="feather:plus" circle dark-outlined />
             </template>
           </V-Block>
 
@@ -178,7 +178,7 @@ import { popovers } from '/@src/data/users/userPopovers'
               />
             </template>
             <template #action>
-              <V-IconButton iconify="feather:plus" circle dark-outlined />
+              <V-IconButton icon="feather:plus" circle dark-outlined />
             </template>
           </V-Block>
 
@@ -190,7 +190,7 @@ import { popovers } from '/@src/data/users/userPopovers'
               />
             </template>
             <template #action>
-              <V-IconButton iconify="feather:plus" circle dark-outlined />
+              <V-IconButton icon="feather:plus" circle dark-outlined />
             </template>
           </V-Block>
 
@@ -202,7 +202,7 @@ import { popovers } from '/@src/data/users/userPopovers'
               />
             </template>
             <template #action>
-              <V-IconButton iconify="feather:plus" circle dark-outlined />
+              <V-IconButton icon="feather:plus" circle dark-outlined />
             </template>
           </V-Block>
         </div>

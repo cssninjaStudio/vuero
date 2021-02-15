@@ -28,7 +28,7 @@ const isStuck = computed(() => {
               <V-Button
                 icon="lnir lnir-arrow-left rem-100"
                 :to="{ name: 'admin-layouts-profile-view' }"
-                color="light"
+                light
                 dark-outlined
               >
                 Cancel

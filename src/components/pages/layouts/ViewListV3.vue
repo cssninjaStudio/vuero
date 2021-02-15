@@ -125,10 +125,10 @@ const filteredData = computed(() => {
                       </V-Button>
 
                       <V-IconButton
-                        iconify="feather:bookmark"
+                        icon="feather:bookmark"
                         class="hint--bubble hint--primary hint--top"
                         data-hint="Save"
-                        color="light"
+                        light
                         circle
                       />
                     </div>

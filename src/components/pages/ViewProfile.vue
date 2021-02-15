@@ -52,9 +52,9 @@
             <div class="profile-card-section">
               <div class="section-title">
                 <h4>About Me</h4>
-                <RouterLink :to="{ name: 'admin-layouts-profile-edit' }"
-                  ><i class="lnil lnil-pencil"></i
-                ></RouterLink>
+                <RouterLink :to="{ name: 'admin-layouts-profile-edit' }">
+                  <i class="lnil lnil-pencil"></i>
+                </RouterLink>
               </div>
               <div class="section-content">
                 <p class="description">
@@ -70,7 +70,11 @@
             <div class="profile-card-section">
               <div class="section-title">
                 <h4>Experience</h4>
-                <a><i class="lnil lnil-pencil"></i></a>
+                <RouterLink
+                  :to="{ name: 'admin-layouts-profile-edit-experience' }"
+                >
+                  <i class="lnil lnil-pencil"></i>
+                </RouterLink>
               </div>
               <div class="section-content">
                 <div class="experience-wrapper">
@@ -159,10 +163,9 @@
             <div class="profile-card-section">
               <div class="section-title">
                 <h4>Languages</h4>
-                <RouterLink
-                  :to="{ name: 'admin-layouts-profile-edit-experience' }"
-                  ><i class="lnil lnil-pencil"></i
-                ></RouterLink>
+                <RouterLink :to="{ name: 'admin-layouts-profile-edit-skills' }">
+                  <i class="lnil lnil-pencil"></i>
+                </RouterLink>
               </div>
               <div class="section-content">
                 <div class="languages-wrapper">
@@ -238,10 +241,9 @@
             <div class="profile-card-section">
               <div class="section-title">
                 <h4>Skills</h4>
-                <RouterLink
-                  :to="{ name: 'admin-layouts-profile-edit-experience' }"
-                  ><i class="lnil lnil-pencil"></i
-                ></RouterLink>
+                <RouterLink :to="{ name: 'admin-layouts-profile-edit-skills' }">
+                  <i class="lnil lnil-pencil"></i>
+                </RouterLink>
               </div>
               <div class="section-content">
                 <div class="skills-wrapper">
@@ -634,8 +636,9 @@
                 <h4>Tools</h4>
                 <RouterLink
                   :to="{ name: 'admin-layouts-profile-edit-experience' }"
-                  ><i class="lnil lnil-pencil"></i
-                ></RouterLink>
+                >
+                  <i class="lnil lnil-pencil"></i>
+                </RouterLink>
                 <a class="action-link">View All</a>
               </div>
               <div class="section-content">

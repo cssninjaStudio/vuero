@@ -39,7 +39,7 @@ const onSave = async () => {
             <V-Button
               :to="{ name: 'admin-layouts-profile-view' }"
               icon="lnir lnir-arrow-left rem-100"
-              color="light"
+              light
               dark-outlined
             >
               Go Back

@@ -56,7 +56,7 @@ const selectCustomer = (customer: WizardCustomer) => {
         <template #action>
           <V-IconButton
             size="small"
-            iconify="feather:x"
+            icon="feather:x"
             circle
             @click="wizardData.customer = null"
           />
@@ -79,7 +79,7 @@ const selectCustomer = (customer: WizardCustomer) => {
             <template #action>
               <V-IconButton
                 size="small"
-                iconify="feather:plus"
+                icon="feather:plus"
                 circle
                 @click="wizardData.customer = customer"
               />
