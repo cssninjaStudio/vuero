@@ -13,7 +13,9 @@
           src="/images/avatars/photos/23.jpg"
           alt=""
           data-user-popover="21"
-          @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+          @error.once="
+            $event.target.src = 'https://via.placeholder.com/150x150'
+          "
         />
       </div>
     </div>
@@ -25,7 +27,9 @@
             src="/images/avatars/photos/23.jpg"
             alt=""
             data-user-popover="0"
-            @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+            @error.once="
+              $event.target.src = 'https://via.placeholder.com/150x150'
+            "
           />
           <div class="chat-msg-date">Sent at 11:12am</div>
         </div>
@@ -43,7 +47,9 @@
             src="/images/avatars/photos/8.jpg"
             alt=""
             data-user-popover="3"
-            @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+            @error.once="
+              $event.target.src = 'https://via.placeholder.com/150x150'
+            "
           />
           <div class="chat-msg-date">Sent at 11:14am</div>
         </div>

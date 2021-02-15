@@ -196,7 +196,9 @@ const onSave = async () => {
               <img
                 src="/images/photo/demo/brands/airbnb.svg"
                 alt=""
-                @error="$event.target.src = 'https://via.placeholder.com/50x50'"
+                @error.once="
+                  $event.target.src = 'https://via.placeholder.com/50x50'
+                "
               />
               <div class="meta">
                 <span class="dark-inverted">Airbnb HQ</span>
@@ -217,7 +219,9 @@ const onSave = async () => {
               <img
                 src="/images/photo/demo/brands/facebook.svg"
                 alt=""
-                @error="$event.target.src = 'https://via.placeholder.com/50x50'"
+                @error.once="
+                  $event.target.src = 'https://via.placeholder.com/50x50'
+                "
               />
               <div class="meta">
                 <span class="dark-inverted">Facebook</span>
@@ -238,7 +242,9 @@ const onSave = async () => {
               <img
                 src="/images/photo/demo/brands/atlassian.svg"
                 alt=""
-                @error="$event.target.src = 'https://via.placeholder.com/50x50'"
+                @error.once="
+                  $event.target.src = 'https://via.placeholder.com/50x50'
+                "
               />
               <div class="meta">
                 <span class="dark-inverted">Atlassian</span>
@@ -259,7 +265,9 @@ const onSave = async () => {
               <img
                 src="/images/photo/demo/brands/github.svg"
                 alt=""
-                @error="$event.target.src = 'https://via.placeholder.com/50x50'"
+                @error.once="
+                  $event.target.src = 'https://via.placeholder.com/50x50'
+                "
               />
               <div class="meta">
                 <span class="dark-inverted">Github</span>
@@ -280,7 +288,9 @@ const onSave = async () => {
               <img
                 src="/images/photo/demo/brands/slack.svg"
                 alt=""
-                @error="$event.target.src = 'https://via.placeholder.com/50x50'"
+                @error.once="
+                  $event.target.src = 'https://via.placeholder.com/50x50'
+                "
               />
               <div class="meta">
                 <span class="dark-inverted">Slack</span>
@@ -301,7 +311,9 @@ const onSave = async () => {
               <img
                 src="/images/photo/demo/brands/gitlab.svg"
                 alt=""
-                @error="$event.target.src = 'https://via.placeholder.com/50x50'"
+                @error.once="
+                  $event.target.src = 'https://via.placeholder.com/50x50'
+                "
               />
               <div class="meta">
                 <span class="dark-inverted">Gitlab</span>

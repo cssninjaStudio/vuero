@@ -93,7 +93,9 @@ const onSave = async () => {
             class="avatar"
             src="/images/avatars/photos/8.jpg"
             alt=""
-            @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+            @error.once="
+              $event.target.src = 'https://via.placeholder.com/150x150'
+            "
           />
           <div v-else class="filepond-profile-wrap">
             <V-FilePond

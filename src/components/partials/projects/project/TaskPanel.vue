@@ -40,7 +40,7 @@ import { activePanel } from '/@src/composition/state/activePanelState'
                     class="avatar"
                     src="/images/avatars/photos/7.jpg"
                     alt=""
-                    @error="
+                    @error.once="
                       $event.target.src = 'https://via.placeholder.com/150x150'
                     "
                   />
@@ -50,7 +50,7 @@ import { activePanel } from '/@src/composition/state/activePanelState'
                     class="avatar"
                     src="/images/avatars/photos/8.jpg"
                     alt=""
-                    @error="
+                    @error.once="
                       $event.target.src = 'https://via.placeholder.com/150x150'
                     "
                   />
@@ -60,7 +60,7 @@ import { activePanel } from '/@src/composition/state/activePanelState'
                     class="avatar"
                     src="/images/avatars/photos/5.jpg"
                     alt=""
-                    @error="
+                    @error.once="
                       $event.target.src = 'https://via.placeholder.com/150x150'
                     "
                   />
@@ -144,7 +144,7 @@ import { activePanel } from '/@src/composition/state/activePanelState'
                       class="avatar"
                       src="/images/avatars/photos/8.jpg"
                       alt=""
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
                       "

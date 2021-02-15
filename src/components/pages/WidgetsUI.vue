@@ -229,7 +229,9 @@ import { trendWidgetChartOptions } from '/@src/data/widgets/charts/trendWidgetCh
           <img
             src="/images/photo/demo/widgets/2.jpg"
             alt=""
-            @error="$event.target.src = 'https://via.placeholder.com/400x300'"
+            @error.once="
+              $event.target.src = 'https://via.placeholder.com/400x300'
+            "
           />
           <div class="progress-wrap">
             <progress class="progress is-primary is-tiny" max="100">

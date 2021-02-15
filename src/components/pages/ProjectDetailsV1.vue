@@ -63,7 +63,7 @@ const props = defineProps({
                       src="/images/avatars/photos/7.jpg"
                       alt=""
                       data-user-popover="0"
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
                       "
@@ -75,7 +75,7 @@ const props = defineProps({
                       src="/images/avatars/photos/9.jpg"
                       alt=""
                       data-user-popover="1"
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
                       "
@@ -87,7 +87,7 @@ const props = defineProps({
                       src="/images/avatars/photos/12.jpg"
                       alt=""
                       data-user-popover="2"
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
                       "
@@ -99,7 +99,7 @@ const props = defineProps({
                       src="/images/avatars/photos/8.jpg"
                       alt=""
                       data-user-popover="3"
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
                       "
@@ -111,7 +111,7 @@ const props = defineProps({
                       src="/images/avatars/photos/25.jpg"
                       alt=""
                       data-user-popover="4"
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
                       "
@@ -252,7 +252,7 @@ const props = defineProps({
                     class="avatar"
                     src="/images/icons/stacks/sketch.svg"
                     alt=""
-                    @error="
+                    @error.once="
                       $event.target.src = 'https://via.placeholder.com/150x150'
                     "
                   />
@@ -268,7 +268,7 @@ const props = defineProps({
                     class="avatar"
                     src="/images/icons/stacks/illustrator.svg"
                     alt=""
-                    @error="
+                    @error.once="
                       $event.target.src = 'https://via.placeholder.com/150x150'
                     "
                   />
@@ -284,7 +284,7 @@ const props = defineProps({
                     class="avatar"
                     src="/images/icons/stacks/photoshop.svg"
                     alt=""
-                    @error="
+                    @error.once="
                       $event.target.src = 'https://via.placeholder.com/150x150'
                     "
                   />
@@ -305,7 +305,7 @@ const props = defineProps({
                     class="avatar"
                     src="/images/icons/stacks/html5.svg"
                     alt=""
-                    @error="
+                    @error.once="
                       $event.target.src = 'https://via.placeholder.com/150x150'
                     "
                   />
@@ -321,7 +321,7 @@ const props = defineProps({
                     class="avatar"
                     src="/images/icons/stacks/css3.svg"
                     alt=""
-                    @error="
+                    @error.once="
                       $event.target.src = 'https://via.placeholder.com/150x150'
                     "
                   />
@@ -337,7 +337,7 @@ const props = defineProps({
                     class="avatar"
                     src="/images/icons/stacks/vuejs.svg"
                     alt=""
-                    @error="
+                    @error.once="
                       $event.target.src = 'https://via.placeholder.com/150x150'
                     "
                   />
@@ -358,7 +358,7 @@ const props = defineProps({
                     class="avatar"
                     src="/@src/assets/illustrations/dashboards/flights/company1.svg"
                     alt=""
-                    @error="
+                    @error.once="
                       $event.target.src = 'https://via.placeholder.com/150x150'
                     "
                   />
@@ -390,7 +390,7 @@ const props = defineProps({
                       class="avatar"
                       src="/images/avatars/photos/7.jpg"
                       alt=""
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
                       "
@@ -418,7 +418,7 @@ const props = defineProps({
                       class="avatar"
                       src="/images/avatars/photos/9.jpg"
                       alt=""
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
                       "
@@ -446,7 +446,7 @@ const props = defineProps({
                       class="avatar"
                       src="/images/avatars/photos/12.jpg"
                       alt=""
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
                       "
@@ -474,7 +474,7 @@ const props = defineProps({
                       class="avatar"
                       src="/images/avatars/photos/8.jpg"
                       alt=""
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
                       "
@@ -502,7 +502,7 @@ const props = defineProps({
                       class="avatar"
                       src="/images/avatars/photos/25.jpg"
                       alt=""
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
                       "
@@ -530,7 +530,7 @@ const props = defineProps({
                       class="avatar"
                       src="/images/avatars/photos/13.jpg"
                       alt=""
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
                       "
@@ -558,7 +558,7 @@ const props = defineProps({
                       class="avatar"
                       src="/images/avatars/photos/18.jpg"
                       alt=""
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
                       "
@@ -586,7 +586,7 @@ const props = defineProps({
                       class="avatar"
                       src="/images/avatars/photos/5.jpg"
                       alt=""
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
                       "
@@ -679,7 +679,7 @@ const props = defineProps({
                             class="avatar"
                             src="/images/avatars/photos/7.jpg"
                             alt=""
-                            @error="
+                            @error.once="
                               $event.target.src =
                                 'https://via.placeholder.com/150x150'
                             "
@@ -690,7 +690,7 @@ const props = defineProps({
                             class="avatar"
                             src="/images/avatars/photos/8.jpg"
                             alt=""
-                            @error="
+                            @error.once="
                               $event.target.src =
                                 'https://via.placeholder.com/150x150'
                             "
@@ -701,7 +701,7 @@ const props = defineProps({
                             class="avatar"
                             src="/images/avatars/photos/5.jpg"
                             alt=""
-                            @error="
+                            @error.once="
                               $event.target.src =
                                 'https://via.placeholder.com/150x150'
                             "
@@ -736,7 +736,7 @@ const props = defineProps({
                             class="avatar"
                             src="/images/avatars/photos/12.jpg"
                             alt=""
-                            @error="
+                            @error.once="
                               $event.target.src =
                                 'https://via.placeholder.com/150x150'
                             "
@@ -771,7 +771,7 @@ const props = defineProps({
                             class="avatar"
                             src="/images/avatars/photos/12.jpg"
                             alt=""
-                            @error="
+                            @error.once="
                               $event.target.src =
                                 'https://via.placeholder.com/150x150'
                             "
@@ -806,7 +806,7 @@ const props = defineProps({
                             class="avatar"
                             src="/images/avatars/photos/5.jpg"
                             alt=""
-                            @error="
+                            @error.once="
                               $event.target.src =
                                 'https://via.placeholder.com/150x150'
                             "
@@ -817,7 +817,7 @@ const props = defineProps({
                             class="avatar"
                             src="/images/avatars/photos/7.jpg"
                             alt=""
-                            @error="
+                            @error.once="
                               $event.target.src =
                                 'https://via.placeholder.com/150x150'
                             "
@@ -852,7 +852,7 @@ const props = defineProps({
                             class="avatar"
                             src="/images/avatars/photos/25.jpg"
                             alt=""
-                            @error="
+                            @error.once="
                               $event.target.src =
                                 'https://via.placeholder.com/150x150'
                             "
@@ -887,7 +887,7 @@ const props = defineProps({
                             class="avatar"
                             src="/images/avatars/photos/25.jpg"
                             alt=""
-                            @error="
+                            @error.once="
                               $event.target.src =
                                 'https://via.placeholder.com/150x150'
                             "
@@ -898,7 +898,7 @@ const props = defineProps({
                             class="avatar"
                             src="/images/avatars/photos/12.jpg"
                             alt=""
-                            @error="
+                            @error.once="
                               $event.target.src =
                                 'https://via.placeholder.com/150x150'
                             "
@@ -933,7 +933,7 @@ const props = defineProps({
                             class="avatar"
                             src="/images/avatars/photos/25.jpg"
                             alt=""
-                            @error="
+                            @error.once="
                               $event.target.src =
                                 'https://via.placeholder.com/150x150'
                             "
@@ -944,7 +944,7 @@ const props = defineProps({
                             class="avatar"
                             src="/images/avatars/photos/12.jpg"
                             alt=""
-                            @error="
+                            @error.once="
                               $event.target.src =
                                 'https://via.placeholder.com/150x150'
                             "
@@ -979,7 +979,7 @@ const props = defineProps({
                             class="avatar"
                             src="/images/avatars/photos/25.jpg"
                             alt=""
-                            @error="
+                            @error.once="
                               $event.target.src =
                                 'https://via.placeholder.com/150x150'
                             "
@@ -990,7 +990,7 @@ const props = defineProps({
                             class="avatar"
                             src="/images/avatars/photos/12.jpg"
                             alt=""
-                            @error="
+                            @error.once="
                               $event.target.src =
                                 'https://via.placeholder.com/150x150'
                             "

@@ -103,7 +103,7 @@ const filteredData = computed(() => {
                   class="avatar"
                   :src="item.icon"
                   alt=""
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/150x150'
                   "
                 />
@@ -113,7 +113,7 @@ const filteredData = computed(() => {
                       class="avatar"
                       :src="item.author.avatar"
                       alt=""
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
                       "

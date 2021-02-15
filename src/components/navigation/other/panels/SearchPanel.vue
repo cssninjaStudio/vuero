@@ -83,7 +83,7 @@ import { activePanel } from '/@src/composition/state/activePanelState'
                   src="/images/avatars/photos/7.jpg"
                   alt=""
                   data-user-popover="0"
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/150x150'
                   "
                 />
@@ -102,7 +102,7 @@ import { activePanel } from '/@src/composition/state/activePanelState'
                   src="/images/avatars/photos/13.jpg"
                   alt=""
                   data-user-popover="6"
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/150x150'
                   "
                 />
@@ -121,7 +121,7 @@ import { activePanel } from '/@src/composition/state/activePanelState'
                   src="/images/avatars/photos/22.jpg"
                   alt=""
                   data-user-popover="5"
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/150x150'
                   "
                 />

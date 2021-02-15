@@ -193,7 +193,7 @@ useHead({
                   class="avatar"
                   src="/images/avatars/photos/8.jpg"
                   alt=""
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/150x150'
                   "
                 />
@@ -405,84 +405,84 @@ useHead({
                 <img
                   src="/images/photo/demo/demo-apps/1.jpg"
                   alt=""
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/1600x900'
                   "
                 />
                 <img
                   src="/images/photo/demo/demo-apps/2.jpg"
                   alt=""
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/1600x900'
                   "
                 />
                 <img
                   src="/images/photo/demo/demo-apps/3.jpg"
                   alt=""
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/1600x900'
                   "
                 />
                 <img
                   src="/images/photo/demo/demo-apps/4.jpg"
                   alt=""
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/1600x900'
                   "
                 />
                 <img
                   src="/images/photo/demo/demo-apps/5.jpg"
                   alt=""
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/1600x900'
                   "
                 />
                 <img
                   src="/images/photo/demo/demo-apps/6.jpg"
                   alt=""
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/1600x900'
                   "
                 />
                 <img
                   src="/images/photo/demo/demo-apps/7.jpg"
                   alt=""
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/1600x900'
                   "
                 />
                 <img
                   src="/images/photo/demo/demo-apps/8.jpg"
                   alt=""
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/1600x900'
                   "
                 />
                 <img
                   src="/images/photo/demo/demo-apps/9.jpg"
                   alt=""
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/1600x900'
                   "
                 />
                 <img
                   src="/images/photo/demo/demo-apps/10.jpg"
                   alt=""
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/1600x900'
                   "
                 />
                 <img
                   src="/images/photo/demo/demo-apps/11.jpg"
                   alt=""
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/1600x900'
                   "
                 />
                 <img
                   src="/images/photo/demo/demo-apps/12.jpg"
                   alt=""
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/1600x900'
                   "
                 />

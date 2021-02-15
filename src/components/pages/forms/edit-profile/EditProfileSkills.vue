@@ -215,7 +215,7 @@ const onSave = async () => {
                 <img
                   src="/images/icons/flags/united-states-of-america.svg"
                   alt=""
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/150x150'
                   "
                 />
@@ -235,7 +235,7 @@ const onSave = async () => {
                 <img
                   src="/images/icons/flags/france.svg"
                   alt=""
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/150x150'
                   "
                 />
@@ -255,7 +255,7 @@ const onSave = async () => {
                 <img
                   src="/images/icons/flags/germany.svg"
                   alt=""
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/150x150'
                   "
                 />
@@ -275,7 +275,7 @@ const onSave = async () => {
                 <img
                   src="/images/icons/flags/spain.svg"
                   alt=""
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/150x150'
                   "
                 />
@@ -477,7 +477,7 @@ const onSave = async () => {
                 <img
                   src="/images/icons/stacks/js.svg"
                   alt=""
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/150x150'
                   "
                 />
@@ -497,7 +497,7 @@ const onSave = async () => {
                 <img
                   src="/images/icons/stacks/html5.svg"
                   alt=""
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/150x150'
                   "
                 />
@@ -517,7 +517,7 @@ const onSave = async () => {
                 <img
                   src="/images/icons/stacks/css3.svg"
                   alt=""
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/150x150'
                   "
                 />
@@ -680,7 +680,7 @@ const onSave = async () => {
                 <img
                   src="/images/icons/stacks/illustrator.svg"
                   alt=""
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/150x150'
                   "
                 />
@@ -700,7 +700,7 @@ const onSave = async () => {
                 <img
                   src="/images/photo/demo/brands/jira.svg"
                   alt=""
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/150x150'
                   "
                 />
@@ -720,7 +720,7 @@ const onSave = async () => {
                 <img
                   src="/images/photo/demo/brands/office.svg"
                   alt=""
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/150x150'
                   "
                 />

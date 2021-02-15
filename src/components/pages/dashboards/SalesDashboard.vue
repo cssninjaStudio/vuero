@@ -55,7 +55,9 @@ onMounted(() => {
           class="avatar"
           src="/images/avatars/photos/8.jpg"
           alt=""
-          @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+          @error.once="
+            $event.target.src = 'https://via.placeholder.com/150x150'
+          "
         />
       </div>
       <div class="start">

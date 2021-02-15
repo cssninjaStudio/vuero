@@ -31,7 +31,9 @@
               src="/images/avatars/photos/13.jpg"
               alt=""
               data-user-popover="6"
-              @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+              @error.once="
+                $event.target.src = 'https://via.placeholder.com/150x150'
+              "
             />
           </div>
           <div class="meta">
@@ -51,7 +53,9 @@
               class="avatar"
               src="/images/photo/demo/brands/airbnb.svg"
               alt=""
-              @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+              @error.once="
+                $event.target.src = 'https://via.placeholder.com/150x150'
+              "
             />
           </div>
           <div class="meta">

@@ -111,7 +111,7 @@ const filteredData = computed(() => {
                     class="media"
                     :src="item.picture"
                     alt=""
-                    @error="
+                    @error.once="
                       $event.target.src = 'https://via.placeholder.com/150x110'
                     "
                   />

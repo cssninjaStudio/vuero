@@ -194,7 +194,7 @@ const cardInfo = reactive({
                 src="/images/avatars/photos/8.jpg"
                 alt=""
                 data-user-popover="3"
-                @error="
+                @error.once="
                   $event.target.src = 'https://via.placeholder.com/150x150'
                 "
               />
@@ -210,7 +210,7 @@ const cardInfo = reactive({
                 src="/images/avatars/photos/18.jpg"
                 alt=""
                 data-user-popover="7"
-                @error="
+                @error.once="
                   $event.target.src = 'https://via.placeholder.com/150x150'
                 "
               />
@@ -226,7 +226,7 @@ const cardInfo = reactive({
                 src="/images/avatars/photos/7.jpg"
                 alt=""
                 data-user-popover="0"
-                @error="
+                @error.once="
                   $event.target.src = 'https://via.placeholder.com/150x150'
                 "
               />

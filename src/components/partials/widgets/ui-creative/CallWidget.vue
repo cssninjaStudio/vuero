@@ -29,7 +29,7 @@ defineProps({
         class="badge"
         :src="badge"
         alt=""
-        @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+        @error.once="$event.target.src = 'https://via.placeholder.com/150x150'"
       />
     </div>
     <h3>Call {{ username }}?</h3>

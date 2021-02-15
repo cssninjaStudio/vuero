@@ -19,7 +19,7 @@
                   src="/images/avatars/photos/13.jpg"
                   alt=""
                   data-user-popover="6"
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/150x150'
                   "
                 />
@@ -40,7 +40,7 @@
                     src="/images/avatars/photos/8.jpg"
                     alt=""
                     data-user-popover="3"
-                    @error="
+                    @error.once="
                       $event.target.src = 'https://via.placeholder.com/150x150'
                     "
                   />
@@ -65,7 +65,7 @@
                   src="/images/avatars/photos/23.jpg"
                   alt=""
                   data-user-popover="21"
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/150x150'
                   "
                 />
@@ -98,7 +98,7 @@
                   src="/images/avatars/photos/5.jpg"
                   alt=""
                   data-user-popover="9"
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/150x150'
                   "
                 />
@@ -127,7 +127,7 @@
                     src="/images/avatars/photos/18.jpg"
                     alt=""
                     data-user-popover="7"
-                    @error="
+                    @error.once="
                       $event.target.src = 'https://via.placeholder.com/150x150'
                     "
                   />
@@ -157,7 +157,7 @@
                   src="/images/avatars/photos/12.jpg"
                   alt=""
                   data-user-popover="2"
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/150x150'
                   "
                 />
@@ -193,7 +193,7 @@
                   src="/images/avatars/photos/26.jpg"
                   alt=""
                   data-user-popover="23"
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/150x150'
                   "
                 />
@@ -213,7 +213,7 @@
                     class="avatar is-squared"
                     src="/images/photo/demo/apps/5.png"
                     alt=""
-                    @error="
+                    @error.once="
                       $event.target.src = 'https://via.placeholder.com/150x150'
                     "
                   />
@@ -223,7 +223,7 @@
                     class="avatar is-squared"
                     src="/images/photo/demo/apps/8.png"
                     alt=""
-                    @error="
+                    @error.once="
                       $event.target.src = 'https://via.placeholder.com/150x150'
                     "
                   />
@@ -248,7 +248,7 @@
                   src="/images/avatars/photos/31.jpg"
                   alt=""
                   data-user-popover="27"
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/150x150'
                   "
                 />
@@ -269,7 +269,7 @@
                     src="/images/avatars/photos/8.jpg"
                     alt=""
                     data-user-popover="3"
-                    @error="
+                    @error.once="
                       $event.target.src = 'https://via.placeholder.com/150x150'
                     "
                   />
@@ -294,7 +294,7 @@
                   src="/images/avatars/photos/13.jpg"
                   alt=""
                   data-user-popover="6"
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/150x150'
                   "
                 />
@@ -327,7 +327,7 @@
                   src="/images/avatars/photos/25.jpg"
                   alt=""
                   data-user-popover="4"
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/150x150'
                   "
                 />

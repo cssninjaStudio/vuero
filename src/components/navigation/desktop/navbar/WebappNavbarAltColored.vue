@@ -105,7 +105,9 @@ watch(
           <img
             src="/images/avatars/photos/8.jpg"
             alt=""
-            @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+            @error.once="
+              $event.target.src = 'https://via.placeholder.com/150x150'
+            "
             @click="toggle"
           />
           <span class="status-indicator"></span>
@@ -118,7 +120,7 @@ watch(
                     class="avatar"
                     src="/images/avatars/photos/8.jpg"
                     alt=""
-                    @error="
+                    @error.once="
                       $event.target.src = 'https://via.placeholder.com/150x150'
                     "
                   />

@@ -216,7 +216,7 @@ useHead({
                         src="/images/avatars/photos/19.jpg"
                         alt=""
                         data-user-popover="17"
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -225,7 +225,7 @@ useHead({
                         class="badge"
                         src="/images/icons/flags/germany.svg"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -256,7 +256,7 @@ useHead({
                         src="/images/avatars/photos/19.jpg"
                         alt=""
                         data-user-popover="17"
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -265,7 +265,7 @@ useHead({
                         class="badge"
                         src="/images/icons/flags/germany.svg"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -296,7 +296,7 @@ useHead({
                         src="/images/avatars/photos/19.jpg"
                         alt=""
                         data-user-popover="17"
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -305,7 +305,7 @@ useHead({
                         class="badge"
                         src="/images/icons/flags/germany.svg"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "

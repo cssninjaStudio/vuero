@@ -20,13 +20,17 @@ come content. Check the markup for more details about usage.
             src="/images/avatars/photos/19.jpg"
             alt=""
             data-user-popover="17"
-            @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+            @error.once="
+              $event.target.src = 'https://via.placeholder.com/150x150'
+            "
           />
           <img
             class="badge"
             src="/images/icons/flags/germany.svg"
             alt=""
-            @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+            @error.once="
+              $event.target.src = 'https://via.placeholder.com/150x150'
+            "
           />
         </div>
         <div class="flex-meta">

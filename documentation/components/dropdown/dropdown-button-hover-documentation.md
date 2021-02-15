@@ -18,8 +18,8 @@ Please refer to the markup for more details about usage.
       >
         <span>Hover me!</span>
         <span class="base-caret">
-          <Icon v-if="!isOpen" icon="fa:angle-down" />
-          <Icon v-else icon="fa:angle-up" />
+          <V-Icon v-if="!isOpen" icon="fa:angle-down" />
+          <V-Icon v-else icon="fa:angle-up" />
         </span>
       </button>
     </template>
@@ -51,8 +51,8 @@ Please refer to the markup for more details about usage.
         >
           <span>Hover me!</span>
           <span class="base-caret">
-            <Icon v-if="!isOpen" icon="fa:angle-down" />
-            <Icon v-else icon="fa:angle-up" />
+            <V-Icon v-if="!isOpen" icon="fa:angle-down" />
+            <V-Icon v-else icon="fa:angle-up" />
           </span>
         </button>
       </template>

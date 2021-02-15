@@ -60,7 +60,7 @@ export const userStack2 = [
     id: 40,
     picture: '/images/avatars/photos/40.jpg',
     initials: 'SM',
-    color: 'purple',
+    color: 'h-purple',
   },
   {
     id: 3,

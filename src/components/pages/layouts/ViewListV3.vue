@@ -99,7 +99,7 @@ const filteredData = computed(() => {
                     class="avatar"
                     :src="item.logo"
                     alt=""
-                    @error="
+                    @error.once="
                       $event.target.src = 'https://via.placeholder.com/150x150'
                     "
                   />

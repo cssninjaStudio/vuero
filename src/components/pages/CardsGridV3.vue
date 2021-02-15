@@ -43,13 +43,17 @@
               class="avatar is-squared"
               src="/images/photo/demo/apps/1.jpg"
               alt=""
-              @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+              @error.once="
+                $event.target.src = 'https://via.placeholder.com/150x150'
+              "
             />
             <img
               class="badge"
               src="/images/icons/stacks/illustrator.svg"
               alt=""
-              @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+              @error.once="
+                $event.target.src = 'https://via.placeholder.com/150x150'
+              "
             />
           </div>
           <h3 class="dark-inverted" data-filter-match>Delivery App Project</h3>
@@ -72,7 +76,7 @@
                 src="/images/avatars/photos/18.jpg"
                 alt=""
                 data-user-popover="7"
-                @error="
+                @error.once="
                   $event.target.src = 'https://via.placeholder.com/150x150'
                 "
               />
@@ -88,7 +92,7 @@
                 src="/images/avatars/photos/7.jpg"
                 alt=""
                 data-user-popover="0"
-                @error="
+                @error.once="
                   $event.target.src = 'https://via.placeholder.com/150x150'
                 "
               />
@@ -119,13 +123,17 @@
               class="avatar is-squared"
               src="/images/photo/demo/apps/2.png"
               alt=""
-              @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+              @error.once="
+                $event.target.src = 'https://via.placeholder.com/150x150'
+              "
             />
             <img
               class="badge"
               src="/images/icons/stacks/reactjs.svg"
               alt=""
-              @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+              @error.once="
+                $event.target.src = 'https://via.placeholder.com/150x150'
+              "
             />
           </div>
           <h3 class="dark-inverted" data-filter-match>
@@ -145,7 +153,7 @@
                 src="/images/avatars/photos/21.jpg"
                 alt=""
                 data-user-popover="19"
-                @error="
+                @error.once="
                   $event.target.src = 'https://via.placeholder.com/150x150'
                 "
               />
@@ -161,7 +169,7 @@
                 src="/images/avatars/photos/39.jpg"
                 alt=""
                 data-user-popover="33"
-                @error="
+                @error.once="
                   $event.target.src = 'https://via.placeholder.com/150x150'
                 "
               />
@@ -203,13 +211,17 @@
               class="avatar is-squared"
               src="/images/photo/demo/apps/3.png"
               alt=""
-              @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+              @error.once="
+                $event.target.src = 'https://via.placeholder.com/150x150'
+              "
             />
             <img
               class="badge"
               src="/images/icons/stacks/angular.svg"
               alt=""
-              @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+              @error.once="
+                $event.target.src = 'https://via.placeholder.com/150x150'
+              "
             />
           </div>
           <h3 class="dark-inverted" data-filter-match>
@@ -229,7 +241,7 @@
                 src="/images/avatars/photos/21.jpg"
                 alt=""
                 data-user-popover="19"
-                @error="
+                @error.once="
                   $event.target.src = 'https://via.placeholder.com/150x150'
                 "
               />
@@ -245,7 +257,7 @@
                 src="/images/avatars/photos/39.jpg"
                 alt=""
                 data-user-popover="33"
-                @error="
+                @error.once="
                   $event.target.src = 'https://via.placeholder.com/150x150'
                 "
               />
@@ -276,13 +288,17 @@
               class="avatar is-squared"
               src="/images/photo/demo/apps/4.png"
               alt=""
-              @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+              @error.once="
+                $event.target.src = 'https://via.placeholder.com/150x150'
+              "
             />
             <img
               class="badge"
               src="/images/icons/stacks/js.svg"
               alt=""
-              @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+              @error.once="
+                $event.target.src = 'https://via.placeholder.com/150x150'
+              "
             />
           </div>
           <h3 class="dark-inverted" data-filter-match>
@@ -302,7 +318,7 @@
                 src="/images/avatars/photos/28.jpg"
                 alt=""
                 data-user-popover="24"
-                @error="
+                @error.once="
                   $event.target.src = 'https://via.placeholder.com/150x150'
                 "
               />
@@ -313,7 +329,7 @@
                 src="/images/avatars/photos/33.jpg"
                 alt=""
                 data-user-popover="29"
-                @error="
+                @error.once="
                   $event.target.src = 'https://via.placeholder.com/150x150'
                 "
               />
@@ -355,13 +371,17 @@
               class="avatar is-squared"
               src="/images/photo/demo/apps/5.png"
               alt=""
-              @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+              @error.once="
+                $event.target.src = 'https://via.placeholder.com/150x150'
+              "
             />
             <img
               class="badge"
               src="/images/icons/stacks/csharp.svg"
               alt=""
-              @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+              @error.once="
+                $event.target.src = 'https://via.placeholder.com/150x150'
+              "
             />
           </div>
           <h3 class="dark-inverted" data-filter-match>
@@ -386,7 +406,7 @@
                 src="/images/avatars/photos/23.jpg"
                 alt=""
                 data-user-popover="21"
-                @error="
+                @error.once="
                   $event.target.src = 'https://via.placeholder.com/150x150'
                 "
               />
@@ -417,13 +437,17 @@
               class="avatar is-squared"
               src="/images/photo/demo/apps/6.png"
               alt=""
-              @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+              @error.once="
+                $event.target.src = 'https://via.placeholder.com/150x150'
+              "
             />
             <img
               class="badge"
               src="/images/icons/stacks/vuejs.svg"
               alt=""
-              @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+              @error.once="
+                $event.target.src = 'https://via.placeholder.com/150x150'
+              "
             />
           </div>
           <h3 class="dark-inverted" data-filter-match>Banking Landing Page</h3>
@@ -446,7 +470,7 @@
                 src="/images/avatars/photos/18.jpg"
                 alt=""
                 data-user-popover="7"
-                @error="
+                @error.once="
                   $event.target.src = 'https://via.placeholder.com/150x150'
                 "
               />
@@ -482,13 +506,17 @@
               class="avatar is-squared"
               src="/images/photo/demo/apps/7.png"
               alt=""
-              @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+              @error.once="
+                $event.target.src = 'https://via.placeholder.com/150x150'
+              "
             />
             <img
               class="badge"
               src="/images/icons/stacks/swift.svg"
               alt=""
-              @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+              @error.once="
+                $event.target.src = 'https://via.placeholder.com/150x150'
+              "
             />
           </div>
           <h3 class="dark-inverted" data-filter-match>Learning App Design</h3>
@@ -511,7 +539,7 @@
                 src="/images/avatars/photos/27.jpg"
                 alt=""
                 data-user-popover="10"
-                @error="
+                @error.once="
                   $event.target.src = 'https://via.placeholder.com/150x150'
                 "
               />
@@ -542,13 +570,17 @@
               class="avatar is-squared"
               src="/images/photo/demo/apps/8.png"
               alt=""
-              @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+              @error.once="
+                $event.target.src = 'https://via.placeholder.com/150x150'
+              "
             />
             <img
               class="badge"
               src="/images/icons/stacks/android.svg"
               alt=""
-              @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+              @error.once="
+                $event.target.src = 'https://via.placeholder.com/150x150'
+              "
             />
           </div>
           <h3 class="dark-inverted" data-filter-match>
@@ -573,7 +605,7 @@
                 src="/images/avatars/photos/27.jpg"
                 alt=""
                 data-user-popover="10"
-                @error="
+                @error.once="
                   $event.target.src = 'https://via.placeholder.com/150x150'
                 "
               />
@@ -604,13 +636,17 @@
               class="avatar is-squared"
               src="/images/photo/demo/apps/9.png"
               alt=""
-              @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+              @error.once="
+                $event.target.src = 'https://via.placeholder.com/150x150'
+              "
             />
             <img
               class="badge"
               src="/images/icons/stacks/html5.svg"
               alt=""
-              @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+              @error.once="
+                $event.target.src = 'https://via.placeholder.com/150x150'
+              "
             />
           </div>
           <h3 class="dark-inverted" data-filter-match>
@@ -635,7 +671,7 @@
                 src="/images/avatars/photos/23.jpg"
                 alt=""
                 data-user-popover="21"
-                @error="
+                @error.once="
                   $event.target.src = 'https://via.placeholder.com/150x150'
                 "
               />
@@ -666,13 +702,17 @@
               class="avatar is-squared"
               src="/images/photo/demo/apps/10.png"
               alt=""
-              @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+              @error.once="
+                $event.target.src = 'https://via.placeholder.com/150x150'
+              "
             />
             <img
               class="badge"
               src="/images/icons/stacks/photoshop.svg"
               alt=""
-              @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+              @error.once="
+                $event.target.src = 'https://via.placeholder.com/150x150'
+              "
             />
           </div>
           <h3 class="dark-inverted" data-filter-match>HR Webapp Design</h3>
@@ -695,7 +735,7 @@
                 src="/images/avatars/photos/23.jpg"
                 alt=""
                 data-user-popover="21"
-                @error="
+                @error.once="
                   $event.target.src = 'https://via.placeholder.com/150x150'
                 "
               />
@@ -726,13 +766,17 @@
               class="avatar is-squared"
               src="/images/photo/demo/apps/11.png"
               alt=""
-              @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+              @error.once="
+                $event.target.src = 'https://via.placeholder.com/150x150'
+              "
             />
             <img
               class="badge"
               src="/images/icons/stacks/js.svg"
               alt=""
-              @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+              @error.once="
+                $event.target.src = 'https://via.placeholder.com/150x150'
+              "
             />
           </div>
           <h3 class="dark-inverted" data-filter-match>
@@ -757,7 +801,7 @@
                 src="/images/avatars/photos/18.jpg"
                 alt=""
                 data-user-popover="7"
-                @error="
+                @error.once="
                   $event.target.src = 'https://via.placeholder.com/150x150'
                 "
               />
@@ -773,7 +817,7 @@
                 src="/images/avatars/photos/7.jpg"
                 alt=""
                 data-user-popover="0"
-                @error="
+                @error.once="
                   $event.target.src = 'https://via.placeholder.com/150x150'
                 "
               />
@@ -804,13 +848,17 @@
               class="avatar is-squared"
               src="/images/photo/demo/apps/12.jpg"
               alt=""
-              @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+              @error.once="
+                $event.target.src = 'https://via.placeholder.com/150x150'
+              "
             />
             <img
               class="badge"
               src="/images/icons/stacks/css3.svg"
               alt=""
-              @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+              @error.once="
+                $event.target.src = 'https://via.placeholder.com/150x150'
+              "
             />
           </div>
           <h3 class="dark-inverted" data-filter-match>
@@ -830,7 +878,7 @@
                 src="/images/avatars/photos/21.jpg"
                 alt=""
                 data-user-popover="19"
-                @error="
+                @error.once="
                   $event.target.src = 'https://via.placeholder.com/150x150'
                 "
               />
@@ -846,7 +894,7 @@
                 src="/images/avatars/photos/39.jpg"
                 alt=""
                 data-user-popover="33"
-                @error="
+                @error.once="
                   $event.target.src = 'https://via.placeholder.com/150x150'
                 "
               />
@@ -877,13 +925,17 @@
               class="avatar is-squared"
               src="/images/photo/demo/apps/13.png"
               alt=""
-              @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+              @error.once="
+                $event.target.src = 'https://via.placeholder.com/150x150'
+              "
             />
             <img
               class="badge"
               src="/images/icons/stacks/reactjs.svg"
               alt=""
-              @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+              @error.once="
+                $event.target.src = 'https://via.placeholder.com/150x150'
+              "
             />
           </div>
           <h3 class="dark-inverted" data-filter-match>
@@ -908,7 +960,7 @@
                 src="/images/avatars/photos/31.jpg"
                 alt=""
                 data-user-popover="27"
-                @error="
+                @error.once="
                   $event.target.src = 'https://via.placeholder.com/150x150'
                 "
               />
@@ -939,13 +991,17 @@
               class="avatar is-squared"
               src="/images/photo/demo/apps/14.jpg"
               alt=""
-              @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+              @error.once="
+                $event.target.src = 'https://via.placeholder.com/150x150'
+              "
             />
             <img
               class="badge"
               src="/images/icons/stacks/reactjs.svg"
               alt=""
-              @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+              @error.once="
+                $event.target.src = 'https://via.placeholder.com/150x150'
+              "
             />
           </div>
           <h3 class="dark-inverted" data-filter-match>Startup Landing Page</h3>
@@ -963,7 +1019,7 @@
                 src="/images/avatars/photos/33.jpg"
                 alt=""
                 data-user-popover="29"
-                @error="
+                @error.once="
                   $event.target.src = 'https://via.placeholder.com/150x150'
                 "
               />
@@ -974,7 +1030,7 @@
                 src="/images/avatars/photos/26.jpg"
                 alt=""
                 data-user-popover="23"
-                @error="
+                @error.once="
                   $event.target.src = 'https://via.placeholder.com/150x150'
                 "
               />
@@ -1005,13 +1061,17 @@
               class="avatar is-squared"
               src="/images/photo/demo/apps/15.png"
               alt=""
-              @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+              @error.once="
+                $event.target.src = 'https://via.placeholder.com/150x150'
+              "
             />
             <img
               class="badge"
               src="/images/icons/stacks/reactjs.svg"
               alt=""
-              @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+              @error.once="
+                $event.target.src = 'https://via.placeholder.com/150x150'
+              "
             />
           </div>
           <h3 class="dark-inverted" data-filter-match>
@@ -1031,7 +1091,7 @@
                 src="/images/avatars/photos/21.jpg"
                 alt=""
                 data-user-popover="19"
-                @error="
+                @error.once="
                   $event.target.src = 'https://via.placeholder.com/150x150'
                 "
               />
@@ -1047,7 +1107,7 @@
                 src="/images/avatars/photos/39.jpg"
                 alt=""
                 data-user-popover="33"
-                @error="
+                @error.once="
                   $event.target.src = 'https://via.placeholder.com/150x150'
                 "
               />

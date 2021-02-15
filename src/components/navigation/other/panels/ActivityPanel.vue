@@ -52,7 +52,7 @@ const activeTab = ref<TabId>('team')
                   class="avatar"
                   src="/images/avatars/photos/12.jpg"
                   alt=""
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/150x150'
                   "
                 />
@@ -60,7 +60,7 @@ const activeTab = ref<TabId>('team')
                   class="badge"
                   src="/images/icons/flags/united-states-of-america.svg"
                   alt=""
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/150x150'
                   "
                 />
@@ -84,7 +84,7 @@ const activeTab = ref<TabId>('team')
                   class="avatar"
                   src="/images/avatars/photos/25.jpg"
                   alt=""
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/150x150'
                   "
                 />
@@ -92,7 +92,7 @@ const activeTab = ref<TabId>('team')
                   class="badge"
                   src="/images/icons/flags/united-states-of-america.svg"
                   alt=""
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/150x150'
                   "
                 />
@@ -116,7 +116,7 @@ const activeTab = ref<TabId>('team')
                   class="avatar"
                   src="/images/avatars/photos/18.jpg"
                   alt=""
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/150x150'
                   "
                 />
@@ -124,7 +124,7 @@ const activeTab = ref<TabId>('team')
                   class="badge"
                   src="/images/icons/flags/united-states-of-america.svg"
                   alt=""
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/150x150'
                   "
                 />
@@ -148,7 +148,7 @@ const activeTab = ref<TabId>('team')
                   class="avatar"
                   src="/images/avatars/photos/13.jpg"
                   alt=""
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/150x150'
                   "
                 />
@@ -156,7 +156,7 @@ const activeTab = ref<TabId>('team')
                   class="badge"
                   src="/images/icons/flags/united-states-of-america.svg"
                   alt=""
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/150x150'
                   "
                 />
@@ -186,7 +186,7 @@ const activeTab = ref<TabId>('team')
                   class="project-avatar"
                   src="/images/icons/logos/slicer.svg"
                   alt=""
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/150x150'
                   "
                 />
@@ -215,7 +215,7 @@ const activeTab = ref<TabId>('team')
                         class="avatar"
                         src="/images/avatars/photos/7.jpg"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -226,7 +226,7 @@ const activeTab = ref<TabId>('team')
                         class="avatar"
                         src="/images/avatars/photos/5.jpg"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -237,7 +237,7 @@ const activeTab = ref<TabId>('team')
                         class="avatar"
                         src="/images/avatars/photos/8.jpg"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -255,7 +255,7 @@ const activeTab = ref<TabId>('team')
                   class="project-avatar"
                   src="/images/icons/logos/metamovies.svg"
                   alt=""
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/150x150'
                   "
                 />
@@ -284,7 +284,7 @@ const activeTab = ref<TabId>('team')
                         class="avatar"
                         src="/images/avatars/photos/13.jpg"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -295,7 +295,7 @@ const activeTab = ref<TabId>('team')
                         class="avatar"
                         src="/images/avatars/photos/18.jpg"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -313,7 +313,7 @@ const activeTab = ref<TabId>('team')
                   class="project-avatar"
                   src="/images/icons/logos/fastpizza.svg"
                   alt=""
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/150x150'
                   "
                 />
@@ -342,7 +342,7 @@ const activeTab = ref<TabId>('team')
                         class="avatar"
                         src="/images/avatars/photos/7.jpg"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -353,7 +353,7 @@ const activeTab = ref<TabId>('team')
                         class="avatar"
                         src="/images/avatars/photos/25.jpg"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -389,7 +389,7 @@ const activeTab = ref<TabId>('team')
                     class="avatar"
                     src="/images/avatars/photos/7.jpg"
                     alt=""
-                    @error="
+                    @error.once="
                       $event.target.src = 'https://via.placeholder.com/150x150'
                     "
                   />

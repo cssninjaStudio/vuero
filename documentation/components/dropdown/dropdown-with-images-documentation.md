@@ -58,7 +58,7 @@ the `is-rounded` class to the image element.
             class="item-img"
             src="/images/avatars/photos/8.jpg"
             alt=""
-            @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+            @error.once="$event.target.src = 'https://via.placeholder.com/150x150'"
           />
           <div class="meta">
             <span>Erik K.</span>
@@ -70,7 +70,7 @@ the `is-rounded` class to the image element.
             class="item-img"
             src="/images/avatars/photos/7.jpg"
             alt=""
-            @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+            @error.once="$event.target.src = 'https://via.placeholder.com/150x150'"
           />
           <div class="meta">
             <span>Alice C.</span>
@@ -82,7 +82,7 @@ the `is-rounded` class to the image element.
             class="item-img"
             src="/images/avatars/photos/25.jpg"
             alt=""
-            @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+            @error.once="$event.target.src = 'https://via.placeholder.com/150x150'"
           />
           <div class="meta">
             <span>Melany W.</span>
@@ -95,7 +95,7 @@ the `is-rounded` class to the image element.
             class="item-img"
             src="/images/avatars/photos/9.jpg"
             alt=""
-            @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+            @error.once="$event.target.src = 'https://via.placeholder.com/150x150'"
           />
           <div class="meta">
             <span>Anna B</span>
@@ -114,7 +114,7 @@ the `is-rounded` class to the image element.
             class="item-img is-rounded"
             src="/images/avatars/photos/8.jpg"
             alt=""
-            @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+            @error.once="$event.target.src = 'https://via.placeholder.com/150x150'"
           />
           <div class="meta">
             <span>Erik K.</span>
@@ -126,7 +126,7 @@ the `is-rounded` class to the image element.
             class="item-img is-rounded"
             src="/images/avatars/photos/7.jpg"
             alt=""
-            @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+            @error.once="$event.target.src = 'https://via.placeholder.com/150x150'"
           />
           <div class="meta">
             <span>Alice C.</span>
@@ -138,7 +138,7 @@ the `is-rounded` class to the image element.
             class="item-img is-rounded"
             src="/images/avatars/photos/25.jpg"
             alt=""
-            @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+            @error.once="$event.target.src = 'https://via.placeholder.com/150x150'"
           />
           <div class="meta">
             <span>Melany W.</span>
@@ -151,7 +151,7 @@ the `is-rounded` class to the image element.
             class="item-img is-rounded"
             src="/images/avatars/photos/9.jpg"
             alt=""
-            @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+            @error.once="$event.target.src = 'https://via.placeholder.com/150x150'"
           />
           <div class="meta">
             <span>Anna B</span>

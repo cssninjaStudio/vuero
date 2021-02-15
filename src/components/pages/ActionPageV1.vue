@@ -10,13 +10,17 @@
               src="/images/avatars/photos/16.jpg"
               alt=""
               data-user-popover="16"
-              @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+              @error.once="
+                $event.target.src = 'https://via.placeholder.com/150x150'
+              "
             />
             <img
               class="badge"
               src="/images/photo/demo/apps/9.png"
               alt=""
-              @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+              @error.once="
+                $event.target.src = 'https://via.placeholder.com/150x150'
+              "
             />
           </div>
           <h3 class="dark-inverted">
@@ -41,7 +45,7 @@
                   src="/images/avatars/photos/21.jpg"
                   alt=""
                   data-user-popover="19"
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/150x150'
                   "
                 />
@@ -57,7 +61,7 @@
                   src="/images/avatars/photos/39.jpg"
                   alt=""
                   data-user-popover="33"
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/150x150'
                   "
                 />

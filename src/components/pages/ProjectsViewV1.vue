@@ -11,7 +11,9 @@
             class="project-avatar"
             src="/images/icons/logos/slicer.svg"
             alt=""
-            @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+            @error.once="
+              $event.target.src = 'https://via.placeholder.com/150x150'
+            "
           />
           <h3>The Slicer project</h3>
           <p>Design project</p>
@@ -27,7 +29,9 @@
             class="project-avatar"
             src="/images/icons/logos/metamovies.svg"
             alt=""
-            @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+            @error.once="
+              $event.target.src = 'https://via.placeholder.com/150x150'
+            "
           />
           <h3>Metamovies reworked</h3>
           <p>Design project</p>
@@ -43,7 +47,9 @@
             class="project-avatar"
             src="/@src/assets/illustrations/dashboards/flights/company1.svg"
             alt=""
-            @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+            @error.once="
+              $event.target.src = 'https://via.placeholder.com/150x150'
+            "
           />
           <h3>Supreme Flights app</h3>
           <p>Software project</p>
@@ -59,7 +65,9 @@
             class="project-avatar"
             src="/images/icons/logos/fastpizza.svg"
             alt=""
-            @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+            @error.once="
+              $event.target.src = 'https://via.placeholder.com/150x150'
+            "
           />
           <h3>Fastpizza delivery app</h3>
           <p>Software project</p>
@@ -75,7 +83,9 @@
             class="project-avatar"
             src="/images/icons/logos/drop.svg"
             alt=""
-            @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+            @error.once="
+              $event.target.src = 'https://via.placeholder.com/150x150'
+            "
           />
           <h3>Drop website redesign</h3>
           <p>Design project</p>
@@ -120,7 +130,7 @@
                     class="avatar"
                     src="/images/avatars/photos/7.jpg"
                     alt=""
-                    @error="
+                    @error.once="
                       $event.target.src = 'https://via.placeholder.com/150x150'
                     "
                   />
@@ -135,7 +145,7 @@
                     class="avatar"
                     src="/images/avatars/photos/12.jpg"
                     alt=""
-                    @error="
+                    @error.once="
                       $event.target.src = 'https://via.placeholder.com/150x150'
                     "
                   />
@@ -208,7 +218,7 @@
                     class="avatar"
                     src="/images/avatars/photos/8.jpg"
                     alt=""
-                    @error="
+                    @error.once="
                       $event.target.src = 'https://via.placeholder.com/150x150'
                     "
                   />
@@ -241,7 +251,7 @@
                     class="avatar"
                     src="/images/avatars/photos/13.jpg"
                     alt=""
-                    @error="
+                    @error.once="
                       $event.target.src = 'https://via.placeholder.com/150x150'
                     "
                   />
@@ -274,7 +284,7 @@
                     class="avatar"
                     src="/images/avatars/photos/11.jpg"
                     alt=""
-                    @error="
+                    @error.once="
                       $event.target.src = 'https://via.placeholder.com/150x150'
                     "
                   />
@@ -284,7 +294,7 @@
                     class="avatar"
                     src="/images/avatars/photos/16.jpg"
                     alt=""
-                    @error="
+                    @error.once="
                       $event.target.src = 'https://via.placeholder.com/150x150'
                     "
                   />
@@ -294,7 +304,7 @@
                     class="avatar"
                     src="/images/avatars/photos/19.jpg"
                     alt=""
-                    @error="
+                    @error.once="
                       $event.target.src = 'https://via.placeholder.com/150x150'
                     "
                   />

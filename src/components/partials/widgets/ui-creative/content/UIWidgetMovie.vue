@@ -25,7 +25,7 @@ defineProps({
     <img
       :src="picture"
       alt=""
-      @error="$event.target.src = 'https://via.placeholder.com/400x300'"
+      @error.once="$event.target.src = 'https://via.placeholder.com/400x300'"
     />
     <div class="widget-meta">
       <i class="iconify" data-icon="feather:play-circle"></i>

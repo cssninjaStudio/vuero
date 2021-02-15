@@ -116,7 +116,7 @@
                       class="avatar"
                       src="/images/avatars/photos/7.jpg"
                       alt=""
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
                       "
@@ -129,7 +129,7 @@
                       class="avatar"
                       src="/images/avatars/photos/8.jpg"
                       alt=""
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
                       "
@@ -186,7 +186,7 @@
                       class="avatar"
                       src="/images/avatars/photos/25.jpg"
                       alt=""
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
                       "
@@ -238,7 +238,7 @@
                       class="avatar"
                       src="/images/avatars/photos/7.jpg"
                       alt=""
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
                       "
@@ -251,7 +251,7 @@
                       class="avatar"
                       src="/images/avatars/photos/23.jpg"
                       alt=""
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
                       "
@@ -304,7 +304,7 @@
                       class="avatar"
                       src="/images/avatars/photos/11.jpg"
                       alt=""
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
                       "
@@ -361,7 +361,7 @@
                       class="avatar"
                       src="/images/avatars/photos/12.jpg"
                       alt=""
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
                       "
@@ -413,7 +413,7 @@
                       class="avatar"
                       src="/images/avatars/photos/24.jpg"
                       alt=""
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
                       "
@@ -426,7 +426,7 @@
                       class="avatar"
                       src="/images/avatars/photos/18.jpg"
                       alt=""
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
                       "
@@ -439,7 +439,7 @@
                       class="avatar"
                       src="/images/avatars/photos/16.jpg"
                       alt=""
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
                       "
@@ -541,7 +541,7 @@
                       class="avatar"
                       src="/images/avatars/photos/25.jpg"
                       alt=""
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
                       "

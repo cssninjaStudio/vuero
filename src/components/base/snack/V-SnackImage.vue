@@ -42,7 +42,7 @@ const props = defineProps({
         class="avatar"
         :src="image"
         alt=""
-        @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+        @error.once="$event.target.src = 'https://via.placeholder.com/150x150'"
       />
     </div>
     <span class="snack-text">{{ title }}</span>

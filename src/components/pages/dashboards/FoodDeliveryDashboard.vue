@@ -126,7 +126,7 @@ onUnmounted(() => {
                     <img
                       :src="restaurant.picture"
                       alt=""
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/800x450'
                       "
@@ -143,7 +143,7 @@ onUnmounted(() => {
                       <img
                         :src="restaurant.icon"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/800x450'
                         "

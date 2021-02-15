@@ -13,7 +13,9 @@
           src="/images/avatars/photos/7.jpg"
           alt=""
           data-user-popover="0"
-          @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+          @error.once="
+            $event.target.src = 'https://via.placeholder.com/150x150'
+          "
         />
       </div>
     </div>
@@ -25,7 +27,9 @@
             src="/images/avatars/photos/7.jpg"
             alt=""
             data-user-popover="0"
-            @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+            @error.once="
+              $event.target.src = 'https://via.placeholder.com/150x150'
+            "
           />
           <div class="chat-msg-date">Sent at 10:11am</div>
         </div>
@@ -37,7 +41,9 @@
             <img
               src="/images/photo/demo/apps/11.png"
               alt=""
-              @error="$event.target.src = 'https://via.placeholder.com/400X300'"
+              @error.once="
+                $event.target.src = 'https://via.placeholder.com/400X300'
+              "
             />
           </div>
           <div class="chat-msg-text">
@@ -47,7 +53,9 @@
             <img
               src="/images/photo/demo/apps/9.png"
               alt=""
-              @error="$event.target.src = 'https://via.placeholder.com/400X300'"
+              @error.once="
+                $event.target.src = 'https://via.placeholder.com/400X300'
+              "
             />
           </div>
           <div class="chat-msg-text">I like the curves in this one.</div>
@@ -60,7 +68,9 @@
             src="/images/avatars/photos/8.jpg"
             alt=""
             data-user-popover="3"
-            @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+            @error.once="
+              $event.target.src = 'https://via.placeholder.com/150x150'
+            "
           />
           <div class="chat-msg-date">Sent at 10:44am</div>
         </div>

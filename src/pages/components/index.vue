@@ -55,7 +55,7 @@ useHead({
                   class="avatar"
                   src="/images/avatars/svg/huro-2.svg"
                   alt=""
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/150x150'
                   "
                 />
@@ -63,7 +63,7 @@ useHead({
                   class="badge"
                   src="/images/photo/demo/misc/buoy.jpg"
                   alt=""
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/150x150'
                   "
                 />

@@ -199,7 +199,7 @@
                   <img
                     src="/images/photo/demo/38.jpg"
                     alt=""
-                    @error="
+                    @error.once="
                       $event.target.src = 'https://via.placeholder.com/800x600'
                     "
                   />
@@ -224,7 +224,7 @@
                   <img
                     src="/images/photo/demo/37.jpg"
                     alt=""
-                    @error="
+                    @error.once="
                       $event.target.src = 'https://via.placeholder.com/800x600'
                     "
                   />
