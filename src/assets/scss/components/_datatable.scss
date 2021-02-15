@@ -617,10 +617,57 @@
         &:last-child {
           text-align: right;
         }
+
+        &.dataTables-empty {
+          opacity: 0;
+        }
       }
 
       .light-text {
         color: $light-text;
+      }
+
+      .flex-media {
+        display: flex;
+        align-items: center;
+
+        .meta {
+          margin-left: 10px;
+          line-height: 1.3;
+
+          span {
+            display: block;
+            font-size: 0.8rem;
+            color: $light-text;
+            font-family: $font;
+
+            &:first-child {
+              font-family: $font-alt;
+              color: $dark-text;
+            }
+          }
+        }
+      }
+
+      .row-action {
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      .checkbox {
+        padding: 0;
+      }
+
+      .product-photo {
+        width: 80px;
+        height: 80px;
+        object-fit: contain;
+      }
+
+      .file-icon {
+        width: 46px;
+        height: 46px;
+        object-fit: contain;
       }
 
       .drinks-icon {
