@@ -19,7 +19,7 @@
                   Have any ideas for a new article? If not, you should
                   definitely check the feed for some inspiration.
                 </p>
-                <V-Button light outlined iconify="feather:plus"
+                <V-Button light outlined icon="feather:plus"
                   >New Article</V-Button
                 >
               </div>
@@ -199,7 +199,7 @@
                   <img
                     src="/images/photo/demo/38.jpg"
                     alt=""
-                    @error="
+                    @error.once="
                       $event.target.src = 'https://via.placeholder.com/800x600'
                     "
                   />
@@ -224,7 +224,7 @@
                   <img
                     src="/images/photo/demo/37.jpg"
                     alt=""
-                    @error="
+                    @error.once="
                       $event.target.src = 'https://via.placeholder.com/800x600'
                     "
                   />

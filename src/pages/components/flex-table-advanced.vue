@@ -81,7 +81,7 @@ useHead({
             <div class="flex-table-toolbar">
               <div class="left">
                 <V-Field>
-                  <V-Control iconify="feather:search">
+                  <V-Control icon="feather:search">
                     <input
                       type="text"
                       class="input is-rounded"

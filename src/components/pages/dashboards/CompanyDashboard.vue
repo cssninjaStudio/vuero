@@ -78,13 +78,17 @@ onMounted(async () => {
               class="avatar light-image"
               src="/images/photo/demo/brands/udemy.svg"
               alt=""
-              @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+              @error.once="
+                $event.target.src = 'https://via.placeholder.com/150x150'
+              "
             />
             <img
               class="avatar dark-image"
               src="/images/photo/demo/brands/udemy-dark.svg"
               alt=""
-              @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+              @error.once="
+                $event.target.src = 'https://via.placeholder.com/150x150'
+              "
             />
             <button class="button icon-button is-circle is-dark-outlined">
               <span class="icon is-small">

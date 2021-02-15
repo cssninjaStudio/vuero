@@ -1,6 +1,9 @@
 <script setup lang="ts">
+import { defineEmit } from 'vue'
 import useDropdown from '/@src/composition/use/useDropdown'
 const { dropdownElement, isOpen, toggle } = useDropdown()
+
+const emit = defineEmit(['rename', 'collapse'])
 </script>
 
 <template>
@@ -15,8 +18,18 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
 
     <div class="dropdown-menu" role="menu">
       <div class="dropdown-content">
-        <a href="#" class="dropdown-item kanban-rename kill-drop"> Rename </a>
-        <a class="dropdown-item kanban-collapse kill-drop"> Collapse </a>
+        <a
+          class="dropdown-item kanban-rename kill-drop"
+          @click="emit('rename')"
+        >
+          Rename
+        </a>
+        <a
+          class="dropdown-item kanban-collapse kill-drop"
+          @click="emit('collapse')"
+        >
+          Collapse
+        </a>
         <hr class="dropdown-divider" />
         <div class="dropdown-item has-child">
           Settings

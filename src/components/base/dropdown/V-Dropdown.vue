@@ -5,11 +5,7 @@ import useDropdown from '/@src/composition/use/useDropdown'
 defineProps({
   title: {
     type: String,
-    default: '',
-  },
-  classes: {
-    type: String,
-    default: '',
+    default: undefined,
   },
   up: {
     type: Boolean,
@@ -46,7 +42,6 @@ const { dropdownElement, open, close, toggle, isOpen } = useDropdown()
       dots && 'is-dots',
       modern && 'is-modern',
       spaced && 'is-spaced',
-      classes && classes,
     ]"
     class="dropdown dropdown-trigger"
   >

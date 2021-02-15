@@ -42,7 +42,7 @@ useHead({
               <img
                 src="/images/photo/demo/animaticons/lightbulb.gif"
                 alt=""
-                @error="
+                @error.once="
                   $event.target.src = 'https://via.placeholder.com/150x150'
                 "
               />
@@ -72,7 +72,7 @@ useHead({
               <img
                 src="/images/photo/demo/animaticons/image.gif"
                 alt=""
-                @error="
+                @error.once="
                   $event.target.src = 'https://via.placeholder.com/150x150'
                 "
               />
@@ -102,7 +102,7 @@ useHead({
               <img
                 src="/images/photo/demo/animaticons/search.gif"
                 alt=""
-                @error="
+                @error.once="
                   $event.target.src = 'https://via.placeholder.com/150x150'
                 "
               />
@@ -132,7 +132,7 @@ useHead({
               <img
                 src="/images/photo/demo/animaticons/diamond.gif"
                 alt=""
-                @error="
+                @error.once="
                   $event.target.src = 'https://via.placeholder.com/150x150'
                 "
               />
@@ -162,7 +162,7 @@ useHead({
               <img
                 src="/images/photo/demo/animaticons/chart.gif"
                 alt=""
-                @error="
+                @error.once="
                   $event.target.src = 'https://via.placeholder.com/150x150'
                 "
               />
@@ -192,7 +192,7 @@ useHead({
               <img
                 src="/images/photo/demo/animaticons/rocket.gif"
                 alt=""
-                @error="
+                @error.once="
                   $event.target.src = 'https://via.placeholder.com/150x150'
                 "
               />
@@ -222,7 +222,7 @@ useHead({
               <img
                 src="/images/photo/demo/animaticons/check.gif"
                 alt=""
-                @error="
+                @error.once="
                   $event.target.src = 'https://via.placeholder.com/150x150'
                 "
               />
@@ -266,7 +266,7 @@ useHead({
                   class="avatar"
                   src="/images/logos/logo/hanzo.svg"
                   alt=""
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/150x150'
                   "
                 />
@@ -274,7 +274,7 @@ useHead({
                   class="badge"
                   src="/images/icons/stacks/html5.svg"
                   alt=""
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/150x150'
                   "
                 />
@@ -294,7 +294,7 @@ useHead({
                   class="avatar"
                   src="/images/logos/logo/hanzo.svg"
                   alt=""
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/150x150'
                   "
                 />
@@ -302,7 +302,7 @@ useHead({
                   class="badge"
                   src="/images/icons/stacks/html5.svg"
                   alt=""
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/150x150'
                   "
                 />

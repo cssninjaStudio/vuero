@@ -84,10 +84,12 @@ useHead({
             network="twitter"
             avatar="/images/avatars/photos/19.jpg"
             username="Greta K."
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris."
             :hashtags="['#bulmaio', '#css', '#responsive']"
             icon="fab fa-twitter"
-          />
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+            nec iaculis mauris.
+          </V-CardSocial>
         </div>
 
         <div class="column is-4">
@@ -96,10 +98,12 @@ useHead({
             network="instagram"
             avatar="/images/avatars/photos/5.jpg"
             username="Mary L."
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris."
             :hashtags="['#bulmaio', '#css', '#responsive']"
             icon="fab fa-instagram"
-          />
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+            nec iaculis mauris.
+          </V-CardSocial>
         </div>
 
         <div class="column is-4">
@@ -108,10 +112,12 @@ useHead({
             network="facebook"
             avatar="/images/avatars/photos/36.jpg"
             username="Benoit L."
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris."
             :hashtags="['#bulmaio', '#css', '#responsive']"
             icon="fab fa-facebook-f"
-          />
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+            nec iaculis mauris.
+          </V-CardSocial>
         </div>
       </div>
     </div>

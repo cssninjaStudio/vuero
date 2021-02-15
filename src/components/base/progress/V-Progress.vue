@@ -1,35 +1,62 @@
 <script setup lang="ts">
+import type { PropType } from 'vue'
 import { defineProps } from 'vue'
 
-defineProps({
-  size: {
-    type: String,
-    default: '',
-  },
-  color: {
-    type: String,
-    default: 'primary',
-  },
+type ProgressSize = undefined | 'tiny' | 'smaller' | 'small'
+type ProgressColor = 'primary' | 'success' | 'info' | 'warning' | 'danger'
+
+const props = defineProps({
   value: {
     type: Number,
+    default: undefined,
+  },
+  max: {
+    type: Number,
+    default: 100,
+  },
+  size: {
+    type: String as PropType<ProgressSize>,
+    default: undefined,
+    validator: function (value: ProgressSize) {
+      // The value must match one of these strings
+      if ([undefined, 'tiny', 'smaller', 'small'].indexOf(value) === -1) {
+        console.warn(
+          `V-Progress: invalid "${value}" size. Should be tiny, smaller, small or undefined`
+        )
+        return false
+      }
+
+      return true
+    },
+  },
+  color: {
+    type: String as PropType<ProgressColor>,
+    default: 'primary',
+    validator: function (value: ProgressColor) {
+      // The value must match one of these strings
+      if (
+        ['primary', 'success', 'info', 'warning', 'danger'].indexOf(value) ===
+        -1
+      ) {
+        console.warn(
+          `V-Progress: invalid "${value}" color. Should be primary, success, info, warning, or danger`
+        )
+        return false
+      }
+
+      return true
+    },
   },
 })
 </script>
 
 <template>
   <progress
-    v-if="value"
     class="progress"
     :class="[size && `is-${size}`, color && `is-${color}`]"
     :value="value"
-    max="100"
+    :max="max"
   >
-    {{ value }}%
+    {{ value ? `${(value / max) * 100}%` : '' }}
   </progress>
-  <progress
-    v-else
-    class="progress"
-    :class="[size && `is-${size}`, color && `is-${color}`]"
-    max="100"
-  ></progress>
 </template>

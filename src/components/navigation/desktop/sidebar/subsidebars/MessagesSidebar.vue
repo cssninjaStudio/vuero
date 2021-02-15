@@ -70,7 +70,7 @@ const emit = defineEmit(['addConversation', 'selectConversation'])
                 class="is-user"
                 :src="conversation.avatar"
                 alt=""
-                @error="
+                @error.once="
                   $event.target.src = 'https://via.placeholder.com/150x150'
                 "
               />

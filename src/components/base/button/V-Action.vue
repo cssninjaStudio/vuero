@@ -1,7 +1,25 @@
 <script setup lang="ts">
+import type { PropType } from 'vue'
 import { defineProps } from 'vue'
 
-defineProps({
+type ActionDark = undefined | '1' | '2' | '3' | '4' | '5' | '6'
+
+const props = defineProps({
+  dark: {
+    type: String as PropType<ActionDark>,
+    default: undefined,
+    validator: function (value: ActionDark) {
+      // The value must match one of these strings
+      if ([undefined, '1', '2', '3', '4', '5', '6'].indexOf(value) === -1) {
+        console.warn(
+          `V-Action: invalid "${value}" dark. Should be 1, 2, 3, 4, 5, 6 or undefined`
+        )
+        return false
+      }
+
+      return true
+    },
+  },
   active: {
     type: Boolean,
     default: false,
@@ -17,9 +35,6 @@ defineProps({
   grey: {
     type: Boolean,
     default: false,
-  },
-  dark: {
-    type: String,
   },
 })
 </script>

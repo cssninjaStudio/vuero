@@ -9,45 +9,38 @@ if you want to show a solid icon. Check the markup for more details.
 
 ```vue
 <template>
-  <V-SnackIcon title="Shopping" color="primary" solid>
-    <template #icon>
-      <i class="iconify snack-icon" data-icon="feather:smile"></i>
-    </template>
-    <template #action>
-      <i class="iconify" data-icon="feather:plus"></i>
-    </template>
+  <V-SnackIcon title="Shopping" color="primary" solid icon="feather:smile">
+    <i class="iconify" data-icon="feather:plus"></i>
   </V-SnackIcon>
-  <V-SnackIcon title="Support" color="success" white solid>
-    <template #icon>
-      <i class="iconify snack-icon" data-icon="feather:life-buoy"></i>
-    </template>
-    <template #action>
-      <i class="iconify" data-icon="feather:plus"></i>
-    </template>
+  <V-SnackIcon
+    title="Support"
+    color="success"
+    white
+    solid
+    icon="feather:life-buoy"
+  >
+    <i class="iconify" data-icon="feather:plus"></i>
   </V-SnackIcon>
-  <V-SnackIcon title="Business" color="info" solid>
-    <template #icon>
-      <i class="iconify snack-icon" data-icon="feather:briefcase"></i>
-    </template>
-    <template #action>
-      <i class="iconify" data-icon="feather:plus"></i>
-    </template>
+  <V-SnackIcon title="Business" color="info" solid icon="feather:briefcase">
+    <i class="iconify" data-icon="feather:plus"></i>
   </V-SnackIcon>
-  <V-SnackIcon title="Warning" color="warning" white solid>
-    <template #icon>
-      <i class="iconify snack-icon" data-icon="feather:alert-octagon"></i>
-    </template>
-    <template #action>
-      <i class="iconify" data-icon="feather:plus"></i>
-    </template>
+  <V-SnackIcon
+    title="Warning"
+    color="warning"
+    white
+    solid
+    icon="feather:alert-octagon"
+  >
+    <i class="iconify" data-icon="feather:plus"></i>
   </V-SnackIcon>
-  <V-SnackIcon title="Health" color="danger" white solid>
-    <template #icon>
-      <i class="iconify snack-icon" data-icon="feather:thermometer"></i>
-    </template>
-    <template #action>
-      <i class="iconify" data-icon="feather:plus"></i>
-    </template>
+  <V-SnackIcon
+    title="Health"
+    color="danger"
+    white
+    solid
+    icon="feather:thermometer"
+  >
+    <i class="iconify" data-icon="feather:plus"></i>
   </V-SnackIcon>
 </template>
 ```
@@ -57,46 +50,39 @@ if you want to show a solid icon. Check the markup for more details.
 <!--example-->
 
 <div class="snacks">
-    <V-SnackIcon title="Shopping" color="primary" solid>
-        <template #icon>
-            <i class="iconify snack-icon" data-icon="feather:smile"></i>
-        </template>
-        <template #action>
-            <i class="iconify" data-icon="feather:plus"></i>
-        </template>
-    </V-SnackIcon>
-    <V-SnackIcon title="Support" color="success" white solid>
-        <template #icon>
-            <i class="iconify snack-icon" data-icon="feather:life-buoy"></i>
-        </template>
-        <template #action>
-            <i class="iconify" data-icon="feather:plus"></i>
-        </template>
-    </V-SnackIcon>
-    <V-SnackIcon title="Business" color="info" solid>
-        <template #icon>
-            <i class="iconify snack-icon" data-icon="feather:briefcase"></i>
-        </template>
-        <template #action>
-            <i class="iconify" data-icon="feather:plus"></i>
-        </template>
-    </V-SnackIcon>
-    <V-SnackIcon title="Warning" color="warning" white solid>
-        <template #icon>
-            <i class="iconify snack-icon" data-icon="feather:alert-octagon"></i>
-        </template>
-        <template #action>
-            <i class="iconify" data-icon="feather:plus"></i>
-        </template>
-    </V-SnackIcon>
-    <V-SnackIcon title="Health" color="danger" white solid>
-        <template #icon>
-            <i class="iconify snack-icon" data-icon="feather:thermometer"></i>
-        </template>
-        <template #action>
-            <i class="iconify" data-icon="feather:plus"></i>
-        </template>
-    </V-SnackIcon>
+  <V-SnackIcon title="Shopping" color="primary" solid icon="feather:smile">
+    <i class="iconify" data-icon="feather:plus"></i>
+  </V-SnackIcon>
+  <V-SnackIcon
+    title="Support"
+    color="success"
+    white
+    solid
+    icon="feather:life-buoy"
+  >
+    <i class="iconify" data-icon="feather:plus"></i>
+  </V-SnackIcon>
+  <V-SnackIcon title="Business" color="info" solid icon="feather:briefcase">
+    <i class="iconify" data-icon="feather:plus"></i>
+  </V-SnackIcon>
+  <V-SnackIcon
+    title="Warning"
+    color="warning"
+    white
+    solid
+    icon="feather:alert-octagon"
+  >
+    <i class="iconify" data-icon="feather:plus"></i>
+  </V-SnackIcon>
+  <V-SnackIcon
+    title="Health"
+    color="danger"
+    white
+    solid
+    icon="feather:thermometer"
+  >
+    <i class="iconify" data-icon="feather:plus"></i>
+  </V-SnackIcon>
 </div>
 
 <!--/example-->

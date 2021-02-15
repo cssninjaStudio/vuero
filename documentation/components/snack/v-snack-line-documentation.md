@@ -8,53 +8,23 @@ to insert your content. Check the markup for more details.
 
 ```vue
 <template>
-  <V-SnackIcon title="Shopping" white>
-    <template #icon>
-      <i class="lnil lnil-cart snack-icon"></i>
-    </template>
-    <template #action>
-      <i class="iconify" data-icon="feather:plus"></i>
-    </template>
+  <V-SnackIcon title="Shopping" white icon="lnil lnil-cart">
+    <i class="iconify" data-icon="feather:plus"></i>
   </V-SnackIcon>
-  <V-SnackIcon title="Shopping" color="primary">
-    <template #icon>
-      <i class="lnil lnil-sleep snack-icon"></i>
-    </template>
-    <template #action>
-      <i class="iconify" data-icon="feather:plus"></i>
-    </template>
+  <V-SnackIcon title="Shopping" color="primary" icon="lnil lnil-sleep">
+    <i class="iconify" data-icon="feather:plus"></i>
   </V-SnackIcon>
-  <V-SnackIcon title="Support" color="success" white>
-    <template #icon>
-      <i class="lnil lnil-life-ring snack-icon"></i>
-    </template>
-    <template #action>
-      <i class="iconify" data-icon="feather:plus"></i>
-    </template>
+  <V-SnackIcon title="Support" color="success" white icon="lnil lnil-life-ring">
+    <i class="iconify" data-icon="feather:plus"></i>
   </V-SnackIcon>
-  <V-SnackIcon title="Business" color="info">
-    <template #icon>
-      <i class="lnil lnil-apartment snack-icon"></i>
-    </template>
-    <template #action>
-      <i class="iconify" data-icon="feather:plus"></i>
-    </template>
+  <V-SnackIcon title="Business" color="info" icon="lnil lnil-apartment">
+    <i class="iconify" data-icon="feather:plus"></i>
   </V-SnackIcon>
-  <V-SnackIcon title="Warning" color="warning" white>
-    <template #icon>
-      <i class="lnil lnil-warning snack-icon"></i>
-    </template>
-    <template #action>
-      <i class="iconify" data-icon="feather:plus"></i>
-    </template>
+  <V-SnackIcon title="Warning" color="warning" white icon="lnil lnil-warning">
+    <i class="iconify" data-icon="feather:plus"></i>
   </V-SnackIcon>
-  <V-SnackIcon title="Health" color="danger" white>
-    <template #icon>
-      <i class="lnil lnil-thermometer snack-icon"></i>
-    </template>
-    <template #action>
-      <i class="iconify" data-icon="feather:plus"></i>
-    </template>
+  <V-SnackIcon title="Health" color="danger" white icon="lnil lnil-thermometer">
+    <i class="iconify" data-icon="feather:plus"></i>
   </V-SnackIcon>
 </template>
 ```
@@ -64,53 +34,23 @@ to insert your content. Check the markup for more details.
 <!--example-->
 
 <div class="snacks">
-  <V-SnackIcon title="Shopping" white>
-    <template #icon>
-      <i class="lnil lnil-cart snack-icon"></i>
-    </template>
-    <template #action>
-      <i class="iconify" data-icon="feather:plus"></i>
-    </template>
+  <V-SnackIcon title="Shopping" white icon="lnil lnil-cart">
+    <i class="iconify" data-icon="feather:plus"></i>
   </V-SnackIcon>
-  <V-SnackIcon title="Shopping" color="primary">
-    <template #icon>
-      <i class="lnil lnil-sleep snack-icon"></i>
-    </template>
-    <template #action>
-      <i class="iconify" data-icon="feather:plus"></i>
-    </template>
+  <V-SnackIcon title="Shopping" color="primary" icon="lnil lnil-sleep">
+    <i class="iconify" data-icon="feather:plus"></i>
   </V-SnackIcon>
-  <V-SnackIcon title="Support" color="success" white>
-    <template #icon>
-      <i class="lnil lnil-life-ring snack-icon"></i>
-    </template>
-    <template #action>
-      <i class="iconify" data-icon="feather:plus"></i>
-    </template>
+  <V-SnackIcon title="Support" color="success" white icon="lnil lnil-life-ring">
+    <i class="iconify" data-icon="feather:plus"></i>
   </V-SnackIcon>
-  <V-SnackIcon title="Business" color="info">
-    <template #icon>
-      <i class="lnil lnil-apartment snack-icon"></i>
-    </template>
-    <template #action>
-      <i class="iconify" data-icon="feather:plus"></i>
-    </template>
+  <V-SnackIcon title="Business" color="info" icon="lnil lnil-apartment">
+    <i class="iconify" data-icon="feather:plus"></i>
   </V-SnackIcon>
-  <V-SnackIcon title="Warning" color="warning" white>
-    <template #icon>
-      <i class="lnil lnil-warning snack-icon"></i>
-    </template>
-    <template #action>
-      <i class="iconify" data-icon="feather:plus"></i>
-    </template>
+  <V-SnackIcon title="Warning" color="warning" white icon="lnil lnil-warning">
+    <i class="iconify" data-icon="feather:plus"></i>
   </V-SnackIcon>
-  <V-SnackIcon title="Health" color="danger" white>
-    <template #icon>
-      <i class="lnil lnil-thermometer snack-icon"></i>
-    </template>
-    <template #action>
-      <i class="iconify" data-icon="feather:plus"></i>
-    </template>
+  <V-SnackIcon title="Health" color="danger" white icon="lnil lnil-thermometer">
+    <i class="iconify" data-icon="feather:plus"></i>
   </V-SnackIcon>
 </div>
 

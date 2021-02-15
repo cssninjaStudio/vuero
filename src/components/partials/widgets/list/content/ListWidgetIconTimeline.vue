@@ -30,7 +30,9 @@ defineProps({
           class="avatar"
           :src="item.picture"
           alt=""
-          @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+          @error.once="
+            $event.target.src = 'https://via.placeholder.com/150x150'
+          "
         />
         <i v-else class="iconify" :data-icon="item.icon"></i>
       </div>

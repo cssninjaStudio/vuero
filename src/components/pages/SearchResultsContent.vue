@@ -240,7 +240,7 @@ const activeTab = ref<TabId>('all')
                         src="/images/avatars/photos/7.jpg"
                         alt=""
                         data-user-popover="0"
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -249,7 +249,7 @@ const activeTab = ref<TabId>('all')
                         class="badge"
                         src="/images/icons/flags/united-states-of-america.svg"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -275,7 +275,7 @@ const activeTab = ref<TabId>('all')
                         src="/images/avatars/photos/5.jpg"
                         alt=""
                         data-user-popover="9"
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -284,7 +284,7 @@ const activeTab = ref<TabId>('all')
                         class="badge"
                         src="/images/icons/flags/united-states-of-america.svg"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -310,7 +310,7 @@ const activeTab = ref<TabId>('all')
                         src="/images/avatars/photos/14.jpg"
                         alt=""
                         data-user-popover="14"
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -319,7 +319,7 @@ const activeTab = ref<TabId>('all')
                         class="badge"
                         src="/images/icons/flags/england.svg"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -345,7 +345,7 @@ const activeTab = ref<TabId>('all')
                         src="/images/avatars/photos/23.jpg"
                         alt=""
                         data-user-popover="21"
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -354,7 +354,7 @@ const activeTab = ref<TabId>('all')
                         class="badge"
                         src="/images/icons/flags/united-states-of-america.svg"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -380,7 +380,7 @@ const activeTab = ref<TabId>('all')
                         src="/images/avatars/photos/32.jpg"
                         alt=""
                         data-user-popover="28"
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -389,7 +389,7 @@ const activeTab = ref<TabId>('all')
                         class="badge"
                         src="/images/icons/flags/united-states-of-america.svg"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -415,7 +415,7 @@ const activeTab = ref<TabId>('all')
                         src="/images/avatars/photos/39.jpg"
                         alt=""
                         data-user-popover="33"
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -424,7 +424,7 @@ const activeTab = ref<TabId>('all')
                         class="badge"
                         src="/images/icons/flags/united-states-of-america.svg"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -450,7 +450,7 @@ const activeTab = ref<TabId>('all')
                         src="/images/avatars/photos/19.jpg"
                         alt=""
                         data-user-popover="17"
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -459,7 +459,7 @@ const activeTab = ref<TabId>('all')
                         class="badge"
                         src="/images/icons/flags/germany.svg"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -497,7 +497,7 @@ const activeTab = ref<TabId>('all')
                         class="avatar"
                         src="/images/photo/demo/apps/1.jpg"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -522,7 +522,7 @@ const activeTab = ref<TabId>('all')
                         class="avatar"
                         src="/images/photo/demo/apps/2.png"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -547,7 +547,7 @@ const activeTab = ref<TabId>('all')
                         class="avatar is-squared"
                         src="/images/icons/files/sheet.svg"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -572,7 +572,7 @@ const activeTab = ref<TabId>('all')
                         class="avatar"
                         src="/images/photo/demo/apps/3.png"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -597,7 +597,7 @@ const activeTab = ref<TabId>('all')
                         class="avatar"
                         src="/images/photo/demo/apps/4.png"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -622,7 +622,7 @@ const activeTab = ref<TabId>('all')
                         class="avatar is-squared"
                         src="/images/icons/files/doc-2.svg"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -647,7 +647,7 @@ const activeTab = ref<TabId>('all')
                         class="avatar is-squared"
                         src="/images/icons/files/pdf.svg"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -672,7 +672,7 @@ const activeTab = ref<TabId>('all')
                         class="avatar"
                         src="/images/photo/demo/apps/5.png"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -697,7 +697,7 @@ const activeTab = ref<TabId>('all')
                         class="avatar is-squared"
                         src="/images/icons/files/ai.svg"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -735,7 +735,7 @@ const activeTab = ref<TabId>('all')
                         src="/images/avatars/photos/7.jpg"
                         alt=""
                         data-user-popover="0"
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -744,7 +744,7 @@ const activeTab = ref<TabId>('all')
                         class="badge"
                         src="/images/icons/flags/united-states-of-america.svg"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -770,7 +770,7 @@ const activeTab = ref<TabId>('all')
                         src="/images/avatars/photos/5.jpg"
                         alt=""
                         data-user-popover="9"
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -779,7 +779,7 @@ const activeTab = ref<TabId>('all')
                         class="badge"
                         src="/images/icons/flags/united-states-of-america.svg"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -805,7 +805,7 @@ const activeTab = ref<TabId>('all')
                         src="/images/avatars/photos/14.jpg"
                         alt=""
                         data-user-popover="14"
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -814,7 +814,7 @@ const activeTab = ref<TabId>('all')
                         class="badge"
                         src="/images/icons/flags/england.svg"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -840,7 +840,7 @@ const activeTab = ref<TabId>('all')
                         src="/images/avatars/photos/23.jpg"
                         alt=""
                         data-user-popover="21"
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -849,7 +849,7 @@ const activeTab = ref<TabId>('all')
                         class="badge"
                         src="/images/icons/flags/united-states-of-america.svg"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -875,7 +875,7 @@ const activeTab = ref<TabId>('all')
                         src="/images/avatars/photos/32.jpg"
                         alt=""
                         data-user-popover="28"
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -884,7 +884,7 @@ const activeTab = ref<TabId>('all')
                         class="badge"
                         src="/images/icons/flags/united-states-of-america.svg"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -910,7 +910,7 @@ const activeTab = ref<TabId>('all')
                         src="/images/avatars/photos/39.jpg"
                         alt=""
                         data-user-popover="33"
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -919,7 +919,7 @@ const activeTab = ref<TabId>('all')
                         class="badge"
                         src="/images/icons/flags/united-states-of-america.svg"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -945,7 +945,7 @@ const activeTab = ref<TabId>('all')
                         src="/images/avatars/photos/19.jpg"
                         alt=""
                         data-user-popover="17"
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -954,7 +954,7 @@ const activeTab = ref<TabId>('all')
                         class="badge"
                         src="/images/icons/flags/germany.svg"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -991,7 +991,7 @@ const activeTab = ref<TabId>('all')
                         class="avatar"
                         src="/images/photo/demo/apps/1.jpg"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -1016,7 +1016,7 @@ const activeTab = ref<TabId>('all')
                         class="avatar"
                         src="/images/photo/demo/apps/2.png"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -1041,7 +1041,7 @@ const activeTab = ref<TabId>('all')
                         class="avatar is-squared"
                         src="/images/icons/files/sheet.svg"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -1066,7 +1066,7 @@ const activeTab = ref<TabId>('all')
                         class="avatar"
                         src="/images/photo/demo/apps/3.png"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -1091,7 +1091,7 @@ const activeTab = ref<TabId>('all')
                         class="avatar"
                         src="/images/photo/demo/apps/4.png"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -1116,7 +1116,7 @@ const activeTab = ref<TabId>('all')
                         class="avatar is-squared"
                         src="/images/icons/files/doc-2.svg"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -1141,7 +1141,7 @@ const activeTab = ref<TabId>('all')
                         class="avatar is-squared"
                         src="/images/icons/files/pdf.svg"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -1166,7 +1166,7 @@ const activeTab = ref<TabId>('all')
                         class="avatar"
                         src="/images/photo/demo/apps/5.png"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -1191,7 +1191,7 @@ const activeTab = ref<TabId>('all')
                         class="avatar is-squared"
                         src="/images/icons/files/ai.svg"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "

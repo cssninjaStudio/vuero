@@ -15,7 +15,7 @@ See markup for more details about usage.
   </div>
   <div class="tags has-addons">
     <V-Tag label="John Doe" color="primary" />
-    <V-Tag class="is-delete" />
+    <V-Tag remove />
   </div>
 </template>
 ```
@@ -25,16 +25,16 @@ See markup for more details about usage.
 <!--example-->
 
 <div class="field">
-    <div class="control">
-        <div class="tags has-addons">
-            <V-Tag label="Package" />
-            <V-Tag label="Bulma" color="primary" />
-        </div>
-        <div class="tags has-addons">
-            <V-Tag label="John Doe" color="primary" />
-            <V-Tag class="is-delete" />
-        </div>
+  <div class="control">
+    <div class="tags has-addons">
+      <V-Tag label="Package" />
+      <V-Tag label="Bulma" color="primary" />
     </div>
+    <div class="tags has-addons">
+      <V-Tag label="John Doe" color="primary" />
+      <V-Tag remove />
+    </div>
+  </div>
 </div>
 
 <!--/example-->

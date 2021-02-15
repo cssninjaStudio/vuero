@@ -69,7 +69,7 @@ useHead({
           <form @submit.prevent="handleLogin">
             <div class="login-form">
               <V-Field>
-                <V-Control iconify="feather:user">
+                <V-Control icon="feather:user">
                   <input
                     class="input"
                     type="text"
@@ -79,7 +79,7 @@ useHead({
                 </V-Control>
               </V-Field>
               <V-Field>
-                <V-Control iconify="feather:lock">
+                <V-Control icon="feather:lock">
                   <input
                     class="input"
                     type="password"

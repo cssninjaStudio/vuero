@@ -293,7 +293,6 @@ const democheck4 = ref(false)
           <V-PlaceholderSection
             title="Go Premium"
             subtitle="Unlock more features and business tools by going premium"
-            action
             cta="Go Premium"
           >
             <template #image>

@@ -29,7 +29,9 @@
           <img
             src="/images/photo/demo/11.jpg"
             alt=""
-            @error="$event.target.src = 'https://via.placeholder.com/400x300'"
+            @error.once="
+              $event.target.src = 'https://via.placeholder.com/400x300'
+            "
           />
           <div class="card-grid-item-content">
             <h3 class="dark-inverted">
@@ -43,7 +45,7 @@
                 src="/images/avatars/photos/39.jpg"
                 alt=""
                 data-user-popover="33"
-                @error="
+                @error.once="
                   $event.target.src = 'https://via.placeholder.com/150x150'
                 "
               />
@@ -62,7 +64,9 @@
           <img
             src="/images/photo/demo/12.jpg"
             alt=""
-            @error="$event.target.src = 'https://via.placeholder.com/400x300'"
+            @error.once="
+              $event.target.src = 'https://via.placeholder.com/400x300'
+            "
           />
           <div class="card-grid-item-content">
             <h3 class="dark-inverted">
@@ -76,7 +80,7 @@
                 src="/images/avatars/photos/15.jpg"
                 alt=""
                 data-user-popover="15"
-                @error="
+                @error.once="
                   $event.target.src = 'https://via.placeholder.com/150x150'
                 "
               />
@@ -95,7 +99,9 @@
           <img
             src="/images/photo/demo/13.jpg"
             alt=""
-            @error="$event.target.src = 'https://via.placeholder.com/400x300'"
+            @error.once="
+              $event.target.src = 'https://via.placeholder.com/400x300'
+            "
           />
           <div class="card-grid-item-content">
             <h3 class="dark-inverted">
@@ -109,7 +115,7 @@
                 src="/images/avatars/photos/24.jpg"
                 alt=""
                 data-user-popover="22"
-                @error="
+                @error.once="
                   $event.target.src = 'https://via.placeholder.com/150x150'
                 "
               />
@@ -128,7 +134,9 @@
           <img
             src="/images/photo/demo/14.jpg"
             alt=""
-            @error="$event.target.src = 'https://via.placeholder.com/400x300'"
+            @error.once="
+              $event.target.src = 'https://via.placeholder.com/400x300'
+            "
           />
           <div class="card-grid-item-content">
             <h3 class="dark-inverted">
@@ -142,7 +150,7 @@
                 src="/images/avatars/photos/27.jpg"
                 alt=""
                 data-user-popover="10"
-                @error="
+                @error.once="
                   $event.target.src = 'https://via.placeholder.com/150x150'
                 "
               />
@@ -161,7 +169,9 @@
           <img
             src="/images/photo/demo/15.jpg"
             alt=""
-            @error="$event.target.src = 'https://via.placeholder.com/400x300'"
+            @error.once="
+              $event.target.src = 'https://via.placeholder.com/400x300'
+            "
           />
           <div class="card-grid-item-content">
             <h3 class="dark-inverted">
@@ -175,7 +185,7 @@
                 src="/images/avatars/photos/10.jpg"
                 alt=""
                 data-user-popover="8"
-                @error="
+                @error.once="
                   $event.target.src = 'https://via.placeholder.com/150x150'
                 "
               />
@@ -194,7 +204,9 @@
           <img
             src="/images/photo/demo/17.jpg"
             alt=""
-            @error="$event.target.src = 'https://via.placeholder.com/400x300'"
+            @error.once="
+              $event.target.src = 'https://via.placeholder.com/400x300'
+            "
           />
           <div class="card-grid-item-content">
             <h3 class="dark-inverted">
@@ -208,7 +220,7 @@
                 src="/images/avatars/photos/22.jpg"
                 alt=""
                 data-user-popover="5"
-                @error="
+                @error.once="
                   $event.target.src = 'https://via.placeholder.com/150x150'
                 "
               />
@@ -227,7 +239,9 @@
           <img
             src="/images/photo/demo/18.jpg"
             alt=""
-            @error="$event.target.src = 'https://via.placeholder.com/400x300'"
+            @error.once="
+              $event.target.src = 'https://via.placeholder.com/400x300'
+            "
           />
           <div class="card-grid-item-content">
             <h3 class="dark-inverted">
@@ -241,7 +255,7 @@
                 src="/images/avatars/photos/16.jpg"
                 alt=""
                 data-user-popover="16"
-                @error="
+                @error.once="
                   $event.target.src = 'https://via.placeholder.com/150x150'
                 "
               />
@@ -260,7 +274,9 @@
           <img
             src="/images/photo/demo/19.jpg"
             alt=""
-            @error="$event.target.src = 'https://via.placeholder.com/400x300'"
+            @error.once="
+              $event.target.src = 'https://via.placeholder.com/400x300'
+            "
           />
           <div class="card-grid-item-content">
             <h3 class="dark-inverted">
@@ -274,7 +290,7 @@
                 src="/images/avatars/photos/26.jpg"
                 alt=""
                 data-user-popover="23"
-                @error="
+                @error.once="
                   $event.target.src = 'https://via.placeholder.com/150x150'
                 "
               />
@@ -293,7 +309,9 @@
           <img
             src="/images/photo/demo/20.jpg"
             alt=""
-            @error="$event.target.src = 'https://via.placeholder.com/400x300'"
+            @error.once="
+              $event.target.src = 'https://via.placeholder.com/400x300'
+            "
           />
           <div class="card-grid-item-content">
             <h3 class="dark-inverted">
@@ -307,7 +325,7 @@
                 src="/images/avatars/photos/8.jpg"
                 alt=""
                 data-user-popover="3"
-                @error="
+                @error.once="
                   $event.target.src = 'https://via.placeholder.com/150x150'
                 "
               />
@@ -326,7 +344,9 @@
           <img
             src="/images/photo/demo/21.jpg"
             alt=""
-            @error="$event.target.src = 'https://via.placeholder.com/400x300'"
+            @error.once="
+              $event.target.src = 'https://via.placeholder.com/400x300'
+            "
           />
           <div class="card-grid-item-content">
             <h3 class="dark-inverted">
@@ -340,7 +360,7 @@
                 src="/images/avatars/photos/14.jpg"
                 alt=""
                 data-user-popover="14"
-                @error="
+                @error.once="
                   $event.target.src = 'https://via.placeholder.com/150x150'
                 "
               />
@@ -359,7 +379,9 @@
           <img
             src="/images/photo/demo/22.jpg"
             alt=""
-            @error="$event.target.src = 'https://via.placeholder.com/400x300'"
+            @error.once="
+              $event.target.src = 'https://via.placeholder.com/400x300'
+            "
           />
           <div class="card-grid-item-content">
             <h3 class="dark-inverted">
@@ -373,7 +395,7 @@
                 src="/images/avatars/photos/9.jpg"
                 alt=""
                 data-user-popover="1"
-                @error="
+                @error.once="
                   $event.target.src = 'https://via.placeholder.com/150x150'
                 "
               />
@@ -392,7 +414,9 @@
           <img
             src="/images/photo/demo/23.jpg"
             alt=""
-            @error="$event.target.src = 'https://via.placeholder.com/400x300'"
+            @error.once="
+              $event.target.src = 'https://via.placeholder.com/400x300'
+            "
           />
           <div class="card-grid-item-content">
             <h3 class="dark-inverted">Why it pays to profile your customers</h3>
@@ -404,7 +428,7 @@
                 src="/images/avatars/photos/40.jpg"
                 alt=""
                 data-user-popover="11"
-                @error="
+                @error.once="
                   $event.target.src = 'https://via.placeholder.com/150x150'
                 "
               />
@@ -423,7 +447,9 @@
           <img
             src="/images/photo/demo/24.jpg"
             alt=""
-            @error="$event.target.src = 'https://via.placeholder.com/400x300'"
+            @error.once="
+              $event.target.src = 'https://via.placeholder.com/400x300'
+            "
           />
           <div class="card-grid-item-content">
             <h3 class="dark-inverted">
@@ -437,7 +463,7 @@
                 src="/images/avatars/photos/19.jpg"
                 alt=""
                 data-user-popover="17"
-                @error="
+                @error.once="
                   $event.target.src = 'https://via.placeholder.com/150x150'
                 "
               />
@@ -456,7 +482,9 @@
           <img
             src="/images/photo/demo/25.jpg"
             alt=""
-            @error="$event.target.src = 'https://via.placeholder.com/400x300'"
+            @error.once="
+              $event.target.src = 'https://via.placeholder.com/400x300'
+            "
           />
           <div class="card-grid-item-content">
             <h3 class="dark-inverted">
@@ -470,7 +498,7 @@
                 src="/images/avatars/photos/28.jpg"
                 alt=""
                 data-user-popover="24"
-                @error="
+                @error.once="
                   $event.target.src = 'https://via.placeholder.com/150x150'
                 "
               />
@@ -489,7 +517,9 @@
           <img
             src="/images/photo/demo/26.jpg"
             alt=""
-            @error="$event.target.src = 'https://via.placeholder.com/400x300'"
+            @error.once="
+              $event.target.src = 'https://via.placeholder.com/400x300'
+            "
           />
           <div class="card-grid-item-content">
             <h3 class="dark-inverted">
@@ -503,7 +533,7 @@
                 src="/images/avatars/photos/5.jpg"
                 alt=""
                 data-user-popover="9"
-                @error="
+                @error.once="
                   $event.target.src = 'https://via.placeholder.com/150x150'
                 "
               />
@@ -522,7 +552,9 @@
           <img
             src="/images/photo/demo/27.jpg"
             alt=""
-            @error="$event.target.src = 'https://via.placeholder.com/400x300'"
+            @error.once="
+              $event.target.src = 'https://via.placeholder.com/400x300'
+            "
           />
           <div class="card-grid-item-content">
             <h3 class="dark-inverted">
@@ -536,7 +568,7 @@
                 src="/images/avatars/photos/33.jpg"
                 alt=""
                 data-user-popover="29"
-                @error="
+                @error.once="
                   $event.target.src = 'https://via.placeholder.com/150x150'
                 "
               />
@@ -555,7 +587,9 @@
           <img
             src="/images/photo/demo/28.jpg"
             alt=""
-            @error="$event.target.src = 'https://via.placeholder.com/400x300'"
+            @error.once="
+              $event.target.src = 'https://via.placeholder.com/400x300'
+            "
           />
           <div class="card-grid-item-content">
             <h3 class="dark-inverted">
@@ -569,7 +603,7 @@
                 src="/images/avatars/photos/33.jpg"
                 alt=""
                 data-user-popover="29"
-                @error="
+                @error.once="
                   $event.target.src = 'https://via.placeholder.com/150x150'
                 "
               />
@@ -588,7 +622,9 @@
           <img
             src="/images/photo/demo/29.jpg"
             alt=""
-            @error="$event.target.src = 'https://via.placeholder.com/400x300'"
+            @error.once="
+              $event.target.src = 'https://via.placeholder.com/400x300'
+            "
           />
           <div class="card-grid-item-content">
             <h3 class="dark-inverted">
@@ -602,7 +638,7 @@
                 src="/images/avatars/photos/31.jpg"
                 alt=""
                 data-user-popover="27"
-                @error="
+                @error.once="
                   $event.target.src = 'https://via.placeholder.com/150x150'
                 "
               />

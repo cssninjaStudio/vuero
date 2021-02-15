@@ -351,7 +351,7 @@ watch(selectedConversationId, onConversationChanged)
                       id="user-details-image"
                       :src="selectedConversation.avatar"
                       alt=""
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
                       "
@@ -361,7 +361,7 @@ watch(selectedConversationId, onConversationChanged)
                       class="is-badge"
                       src="/images/icons/flags/united-states-of-america.svg"
                       alt=""
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
                       "
@@ -421,7 +421,7 @@ watch(selectedConversationId, onConversationChanged)
                       <img
                         src="/images/photo/demo/demo-apps/1.jpg"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/1600x900'
                         "
@@ -429,7 +429,7 @@ watch(selectedConversationId, onConversationChanged)
                       <img
                         src="/images/photo/demo/demo-apps/2.jpg"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/1600x900'
                         "
@@ -437,7 +437,7 @@ watch(selectedConversationId, onConversationChanged)
                       <img
                         src="/images/photo/demo/demo-apps/3.jpg"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/1600x900'
                         "
@@ -445,7 +445,7 @@ watch(selectedConversationId, onConversationChanged)
                       <img
                         src="/images/photo/demo/demo-apps/4.jpg"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/1600x900'
                         "
@@ -453,7 +453,7 @@ watch(selectedConversationId, onConversationChanged)
                       <img
                         src="/images/photo/demo/demo-apps/5.jpg"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/1600x900'
                         "
@@ -461,7 +461,7 @@ watch(selectedConversationId, onConversationChanged)
                       <img
                         src="/images/photo/demo/demo-apps/6.jpg"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/1600x900'
                         "
@@ -469,7 +469,7 @@ watch(selectedConversationId, onConversationChanged)
                       <img
                         src="/images/photo/demo/demo-apps/7.jpg"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/1600x900'
                         "
@@ -477,7 +477,7 @@ watch(selectedConversationId, onConversationChanged)
                       <img
                         src="/images/photo/demo/demo-apps/8.jpg"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/1600x900'
                         "
@@ -485,7 +485,7 @@ watch(selectedConversationId, onConversationChanged)
                       <img
                         src="/images/photo/demo/demo-apps/9.jpg"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/1600x900'
                         "
@@ -493,7 +493,7 @@ watch(selectedConversationId, onConversationChanged)
                       <img
                         src="/images/photo/demo/demo-apps/10.jpg"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/1600x900'
                         "
@@ -501,7 +501,7 @@ watch(selectedConversationId, onConversationChanged)
                       <img
                         src="/images/photo/demo/demo-apps/11.jpg"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/1600x900'
                         "
@@ -509,7 +509,7 @@ watch(selectedConversationId, onConversationChanged)
                       <img
                         src="/images/photo/demo/demo-apps/12.jpg"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/1600x900'
                         "
@@ -609,7 +609,7 @@ watch(selectedConversationId, onConversationChanged)
               <img
                 src="/@src/assets/illustrations/placeholders/having-coffee.svg"
                 alt=""
-                @error="
+                @error.once="
                   $event.target.src = 'https://via.placeholder.com/150x150'
                 "
               />

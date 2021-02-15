@@ -38,7 +38,7 @@ const selectCustomer = (customer: WizardCustomer) => {
       <h4>Customer</h4>
 
       <V-Field v-if="!wizardData.customer">
-        <V-Control iconify="feather:search">
+        <V-Control icon="feather:search">
           <input v-model="search" class="input" placeholder="search..." />
         </V-Control>
       </V-Field>

@@ -1,24 +1,22 @@
 <script setup lang="ts">
-import { defineProps } from 'vue'
+import { defineEmit, defineProps } from 'vue'
 
 defineProps({
   title: {
     type: String,
-    default: 'Placeholder title',
+    required: true,
   },
   subtitle: {
     type: String,
     default: undefined,
   },
-  action: {
-    type: Boolean,
-    default: false,
-  },
   cta: {
     type: String,
-    default: 'Action Button',
+    default: undefined,
   },
 })
+
+const emit = defineEmit(['click'])
 </script>
 
 <template>
@@ -27,7 +25,9 @@ defineProps({
       <slot name="image"></slot>
       <h3 class="dark-inverted">{{ title }}</h3>
       <p v-if="subtitle">{{ subtitle }}</p>
-      <V-Button v-if="action" color="primary" elevated>{{ cta }}</V-Button>
+      <V-Button v-if="cta" color="primary" elevated @click="emit('click')">
+        {{ cta }}
+      </V-Button>
     </div>
   </div>
 </template>

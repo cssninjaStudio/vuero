@@ -26,7 +26,7 @@ const filteredData = computed(() => {
   <div>
     <div class="list-flex-toolbar flex-list-v1">
       <V-Field>
-        <V-Control iconify="feather:search">
+        <V-Control icon="feather:search">
           <input
             v-model="filters"
             class="input custom-text-filter"

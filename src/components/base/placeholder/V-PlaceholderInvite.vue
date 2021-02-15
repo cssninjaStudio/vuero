@@ -2,21 +2,21 @@
 import { defineProps } from 'vue'
 
 defineProps({
-  image: {
-    type: String,
-    default: 'https://via.placeholder.com/150x150',
-  },
-  badge: {
-    type: String,
-    default: 'https://via.placeholder.com/150x150',
-  },
   title: {
     type: String,
-    default: 'Placeholder title',
+    required: true,
   },
   subtitle: {
     type: String,
-    default: 'Lorem ipsum sit dolor amet is a dummy text used by typographers',
+    default: undefined,
+  },
+  image: {
+    type: String,
+    default: undefined,
+  },
+  badge: {
+    type: String,
+    default: undefined,
   },
 })
 </script>
@@ -26,7 +26,7 @@ defineProps({
     <div class="placeholder-content">
       <V-Avatar size="xl" :picture="image" :badge="badge" />
       <h3 class="dark-inverted">{{ title }}</h3>
-      <p>{{ subtitle }}</p>
+      <p v-if="subtitle">{{ subtitle }}</p>
     </div>
   </div>
 </template>

@@ -8,13 +8,17 @@
           src="/images/avatars/photos/8.jpg"
           alt=""
           data-user-popover="3"
-          @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+          @error.once="
+            $event.target.src = 'https://via.placeholder.com/150x150'
+          "
         />
         <img
           class="badge"
           src="/images/icons/flags/united-states-of-america.svg"
           alt=""
-          @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+          @error.once="
+            $event.target.src = 'https://via.placeholder.com/150x150'
+          "
         />
       </div>
       <h3 class="title is-4 is-narrow is-thin">Erik Kovalsky</h3>
@@ -74,7 +78,7 @@
                     <img
                       src="/images/photo/demo/brands/airbnb.svg"
                       alt=""
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
                       "
@@ -93,7 +97,7 @@
                     <img
                       src="/images/photo/demo/brands/facebook.svg"
                       alt=""
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
                       "
@@ -112,7 +116,7 @@
                     <img
                       src="/images/photo/demo/brands/atlassian.svg"
                       alt=""
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
                       "
@@ -131,7 +135,7 @@
                     <img
                       src="/images/photo/demo/brands/github.svg"
                       alt=""
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
                       "
@@ -167,7 +171,7 @@
                       <img
                         src="/images/icons/flags/united-states-of-america.svg"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -183,7 +187,7 @@
                       <img
                         src="/images/icons/flags/france.svg"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -199,7 +203,7 @@
                       <img
                         src="/images/icons/flags/germany.svg"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -215,7 +219,7 @@
                       <img
                         src="/images/icons/flags/spain.svg"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -247,7 +251,7 @@
                       <img
                         src="/images/icons/stacks/js.svg"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -272,7 +276,7 @@
                           src="/images/avatars/photos/18.jpg"
                           alt=""
                           data-user-popover="7"
-                          @error="
+                          @error.once="
                             $event.target.src =
                               'https://via.placeholder.com/150x150'
                           "
@@ -292,7 +296,7 @@
                           src="/images/avatars/photos/7.jpg"
                           alt=""
                           data-user-popover="0"
-                          @error="
+                          @error.once="
                             $event.target.src =
                               'https://via.placeholder.com/150x150'
                           "
@@ -322,7 +326,7 @@
                           src="/images/avatars/photos/21.jpg"
                           alt=""
                           data-user-popover="19"
-                          @error="
+                          @error.once="
                             $event.target.src =
                               'https://via.placeholder.com/150x150'
                           "
@@ -342,7 +346,7 @@
                           src="/images/avatars/photos/39.jpg"
                           alt=""
                           data-user-popover="33"
-                          @error="
+                          @error.once="
                             $event.target.src =
                               'https://via.placeholder.com/150x150'
                           "
@@ -354,7 +358,7 @@
                           src="/images/avatars/photos/23.jpg"
                           alt=""
                           data-user-popover="21"
-                          @error="
+                          @error.once="
                             $event.target.src =
                               'https://via.placeholder.com/150x150'
                           "
@@ -374,7 +378,7 @@
                       <img
                         src="/images/icons/stacks/html5.svg"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -391,7 +395,7 @@
                           src="/images/avatars/photos/38.jpg"
                           alt=""
                           data-user-popover="32"
-                          @error="
+                          @error.once="
                             $event.target.src =
                               'https://via.placeholder.com/150x150'
                           "
@@ -403,7 +407,7 @@
                           src="/images/avatars/photos/11.jpg"
                           alt=""
                           data-user-popover="13"
-                          @error="
+                          @error.once="
                             $event.target.src =
                               'https://via.placeholder.com/150x150'
                           "
@@ -423,7 +427,7 @@
                           src="/images/avatars/photos/13.jpg"
                           alt=""
                           data-user-popover="6"
-                          @error="
+                          @error.once="
                             $event.target.src =
                               'https://via.placeholder.com/150x150'
                           "
@@ -443,7 +447,7 @@
                       <img
                         src="/images/icons/stacks/css3.svg"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -460,7 +464,7 @@
                           src="/images/avatars/photos/21.jpg"
                           alt=""
                           data-user-popover="19"
-                          @error="
+                          @error.once="
                             $event.target.src =
                               'https://via.placeholder.com/150x150'
                           "
@@ -480,7 +484,7 @@
                           src="/images/avatars/photos/5.jpg"
                           alt=""
                           data-user-popover="9"
-                          @error="
+                          @error.once="
                             $event.target.src =
                               'https://via.placeholder.com/150x150'
                           "
@@ -492,7 +496,7 @@
                           src="/images/avatars/photos/7.jpg"
                           alt=""
                           data-user-popover="0"
-                          @error="
+                          @error.once="
                             $event.target.src =
                               'https://via.placeholder.com/150x150'
                           "
@@ -532,7 +536,7 @@
                         src="/images/avatars/photos/5.jpg"
                         alt=""
                         data-user-popover="9"
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -541,7 +545,7 @@
                         class="badge"
                         src="/images/icons/flags/united-states-of-america.svg"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -567,7 +571,7 @@
                         src="/images/avatars/photos/18.jpg"
                         alt=""
                         data-user-popover="7"
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -576,7 +580,7 @@
                         class="badge"
                         src="/images/icons/flags/united-states-of-america.svg"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -642,7 +646,7 @@
                       <img
                         src="/images/icons/stacks/illustrator.svg"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -660,7 +664,7 @@
                       <img
                         src="/images/photo/demo/brands/jira.svg"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -678,7 +682,7 @@
                       <img
                         src="/images/photo/demo/brands/office.svg"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -711,7 +715,7 @@
                         src="/images/avatars/photos/25.jpg"
                         alt=""
                         data-user-popover="4"
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -720,7 +724,7 @@
                         class="badge"
                         src="/images/icons/stacks/js.svg"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -740,7 +744,7 @@
                         src="/images/avatars/photos/29.jpg"
                         alt=""
                         data-user-popover="25"
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -749,7 +753,7 @@
                         class="badge"
                         src="/images/icons/stacks/python.svg"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -769,7 +773,7 @@
                         src="/images/avatars/photos/38.jpg"
                         alt=""
                         data-user-popover="32"
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -778,7 +782,7 @@
                         class="badge"
                         src="/images/icons/stacks/vuejs.svg"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -798,7 +802,7 @@
                         src="/images/avatars/photos/28.jpg"
                         alt=""
                         data-user-popover="24"
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -807,7 +811,7 @@
                         class="badge"
                         src="/images/icons/stacks/angular.svg"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -827,7 +831,7 @@
                         src="/images/avatars/photos/19.jpg"
                         alt=""
                         data-user-popover="17"
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "
@@ -836,7 +840,7 @@
                         class="badge"
                         src="/images/icons/flags/germany.svg"
                         alt=""
-                        @error="
+                        @error.once="
                           $event.target.src =
                             'https://via.placeholder.com/150x150'
                         "

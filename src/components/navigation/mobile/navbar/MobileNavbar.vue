@@ -55,7 +55,7 @@ const otherLayoutLink = computed(() => {
                   class="avatar"
                   src="/images/avatars/photos/8.jpg"
                   alt=""
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/150x150'
                   "
                 />
@@ -69,7 +69,7 @@ const otherLayoutLink = computed(() => {
                       class="avatar"
                       src="/images/avatars/photos/8.jpg"
                       alt=""
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
                       "

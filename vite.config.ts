@@ -13,12 +13,14 @@ import { VitePWA } from 'vite-plugin-pwa'
 const projectRootDir = path.resolve(__dirname)
 
 export default defineConfig({
-  alias: [
-    {
-      find: '/@src/',
-      replacement: `${path.resolve(projectRootDir, 'src')}/`,
-    },
-  ],
+  resolve: {
+    alias: [
+      {
+        find: '/@src/',
+        replacement: `${path.resolve(projectRootDir, 'src')}/`,
+      },
+    ],
+  },
   plugins: [
     Vue({
       include: [/\.vue$/],

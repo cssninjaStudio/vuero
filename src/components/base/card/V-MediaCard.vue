@@ -1,31 +1,44 @@
 <script setup lang="ts">
+import type { PropType } from 'vue'
 import { defineProps } from 'vue'
 
-defineProps({
-  avatar: {
-    type: String,
-    default: 'https://via.placeholder.com/150x150',
-  },
-  badge: {
-    type: String,
-    default: 'https://via.placeholder.com/150x150',
-  },
+type MediaCardRadius = 'regular' | 'smooth' | 'rounded'
+
+const props = defineProps({
   title: {
     type: String,
-    default: 'Card title',
+    required: true,
   },
   subtitle: {
     type: String,
-    default: 'Card subtitle',
+    default: undefined,
+  },
+  avatar: {
+    type: String,
+    default: undefined,
+  },
+  badge: {
+    type: String,
+    default: undefined,
   },
   content: {
     type: String,
-    default:
-      'I can be used as is in any layout. L Cards are simple containers that can hold any type of content, from simple plain text to more structured markup.',
+    default: undefined,
   },
   radius: {
-    type: String,
+    type: String as PropType<MediaCardRadius>,
     default: 'regular',
+    validator: function (value: MediaCardRadius) {
+      // The value must match one of these strings
+      if (['regular', 'smooth', 'rounded'].indexOf(value) === -1) {
+        console.warn(
+          `V-MediaCard: invalid "${value}" radius. Should be regular, smooth or rounded`
+        )
+        return false
+      }
+
+      return true
+    },
   },
   loading: {
     type: Boolean,

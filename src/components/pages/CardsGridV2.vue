@@ -36,7 +36,7 @@
                     src="/images/avatars/photos/7.jpg"
                     alt=""
                     data-user-popover="0"
-                    @error="
+                    @error.once="
                       $event.target.src = 'https://via.placeholder.com/150x150'
                     "
                   />
@@ -55,7 +55,7 @@
                 <img
                   src="/images/photo/demo/apps/1.jpg"
                   alt=""
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/1280x960'
                   "
                 />
@@ -79,7 +79,7 @@
                       src="/images/avatars/photos/27.jpg"
                       alt=""
                       data-user-popover="10"
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
                       "
@@ -91,7 +91,7 @@
                       src="/images/avatars/photos/15.jpg"
                       alt=""
                       data-user-popover="15"
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
                       "
@@ -103,7 +103,7 @@
                       src="/images/avatars/photos/12.jpg"
                       alt=""
                       data-user-popover="2"
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
                       "
@@ -132,7 +132,7 @@
                     src="/images/avatars/photos/8.jpg"
                     alt=""
                     data-user-popover="3"
-                    @error="
+                    @error.once="
                       $event.target.src = 'https://via.placeholder.com/150x150'
                     "
                   />
@@ -151,7 +151,7 @@
                 <img
                   src="/images/photo/demo/apps/2.png"
                   alt=""
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/1280x960'
                   "
                 />
@@ -175,7 +175,7 @@
                       src="/images/avatars/photos/13.jpg"
                       alt=""
                       data-user-popover="6"
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
                       "
@@ -187,7 +187,7 @@
                       src="/images/avatars/photos/21.jpg"
                       alt=""
                       data-user-popover="19"
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
                       "
@@ -216,7 +216,7 @@
                     src="/images/avatars/photos/25.jpg"
                     alt=""
                     data-user-popover="4"
-                    @error="
+                    @error.once="
                       $event.target.src = 'https://via.placeholder.com/150x150'
                     "
                   />
@@ -235,7 +235,7 @@
                 <img
                   src="/images/photo/demo/apps/3.png"
                   alt=""
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/1280x960'
                   "
                 />
@@ -259,7 +259,7 @@
                       src="/images/avatars/photos/14.jpg"
                       alt=""
                       data-user-popover="14"
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
                       "
@@ -288,7 +288,7 @@
                     src="/images/avatars/photos/23.jpg"
                     alt=""
                     data-user-popover="21"
-                    @error="
+                    @error.once="
                       $event.target.src = 'https://via.placeholder.com/150x150'
                     "
                   />
@@ -307,7 +307,7 @@
                 <img
                   src="/images/photo/demo/apps/4.png"
                   alt=""
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/1280x960'
                   "
                 />
@@ -331,7 +331,7 @@
                       src="/images/avatars/photos/13.jpg"
                       alt=""
                       data-user-popover="6"
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
                       "
@@ -343,7 +343,7 @@
                       src="/images/avatars/photos/21.jpg"
                       alt=""
                       data-user-popover="19"
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
                       "
@@ -372,7 +372,7 @@
                     src="/images/avatars/photos/11.jpg"
                     alt=""
                     data-user-popover="13"
-                    @error="
+                    @error.once="
                       $event.target.src = 'https://via.placeholder.com/150x150'
                     "
                   />
@@ -391,7 +391,7 @@
                 <img
                   src="/images/photo/demo/apps/5.png"
                   alt=""
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/1280x960'
                   "
                 />
@@ -415,7 +415,7 @@
                       src="/images/avatars/photos/30.jpg"
                       alt=""
                       data-user-popover="26"
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
                       "
@@ -427,7 +427,7 @@
                       src="/images/avatars/photos/39.jpg"
                       alt=""
                       data-user-popover="33"
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
                       "
@@ -456,7 +456,7 @@
                     src="/images/avatars/photos/9.jpg"
                     alt=""
                     data-user-popover="1"
-                    @error="
+                    @error.once="
                       $event.target.src = 'https://via.placeholder.com/150x150'
                     "
                   />
@@ -475,7 +475,7 @@
                 <img
                   src="/images/photo/demo/apps/6.png"
                   alt=""
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/1280x960'
                   "
                 />
@@ -499,7 +499,7 @@
                       src="/images/avatars/photos/15.jpg"
                       alt=""
                       data-user-popover="15"
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
                       "
@@ -511,7 +511,7 @@
                       src="/images/avatars/photos/40.jpg"
                       alt=""
                       data-user-popover="11"
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
                       "
@@ -523,7 +523,7 @@
                       src="/images/avatars/photos/8.jpg"
                       alt=""
                       data-user-popover="3"
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
                       "
@@ -552,7 +552,7 @@
                     src="/images/avatars/photos/25.jpg"
                     alt=""
                     data-user-popover="4"
-                    @error="
+                    @error.once="
                       $event.target.src = 'https://via.placeholder.com/150x150'
                     "
                   />
@@ -571,7 +571,7 @@
                 <img
                   src="/images/photo/demo/apps/7.png"
                   alt=""
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/1280x960'
                   "
                 />
@@ -595,7 +595,7 @@
                       src="/images/avatars/photos/11.jpg"
                       alt=""
                       data-user-popover="13"
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
                       "
@@ -624,7 +624,7 @@
                     src="/images/avatars/photos/5.jpg"
                     alt=""
                     data-user-popover="9"
-                    @error="
+                    @error.once="
                       $event.target.src = 'https://via.placeholder.com/150x150'
                     "
                   />
@@ -643,7 +643,7 @@
                 <img
                   src="/images/photo/demo/apps/8.png"
                   alt=""
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/1280x960'
                   "
                 />
@@ -667,7 +667,7 @@
                       src="/images/avatars/photos/21.jpg"
                       alt=""
                       data-user-popover="19"
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
                       "
@@ -679,7 +679,7 @@
                       src="/images/avatars/photos/29.jpg"
                       alt=""
                       data-user-popover="25"
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
                       "
@@ -691,7 +691,7 @@
                       src="/images/avatars/photos/33.jpg"
                       alt=""
                       data-user-popover="29"
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
                       "
@@ -720,7 +720,7 @@
                     src="/images/avatars/photos/27.jpg"
                     alt=""
                     data-user-popover="10"
-                    @error="
+                    @error.once="
                       $event.target.src = 'https://via.placeholder.com/150x150'
                     "
                   />
@@ -739,7 +739,7 @@
                 <img
                   src="/images/photo/demo/apps/9.png"
                   alt=""
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/1280x960'
                   "
                 />
@@ -763,7 +763,7 @@
                       src="/images/avatars/photos/30.jpg"
                       alt=""
                       data-user-popover="26"
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
                       "
@@ -775,7 +775,7 @@
                       src="/images/avatars/photos/19.jpg"
                       alt=""
                       data-user-popover="17"
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
                       "
@@ -804,7 +804,7 @@
                     src="/images/avatars/photos/27.jpg"
                     alt=""
                     data-user-popover="10"
-                    @error="
+                    @error.once="
                       $event.target.src = 'https://via.placeholder.com/150x150'
                     "
                   />
@@ -823,7 +823,7 @@
                 <img
                   src="/images/photo/demo/apps/10.png"
                   alt=""
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/1280x960'
                   "
                 />
@@ -847,7 +847,7 @@
                       src="/images/avatars/photos/24.jpg"
                       alt=""
                       data-user-popover="22"
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
                       "
@@ -859,7 +859,7 @@
                       src="/images/avatars/photos/22.jpg"
                       alt=""
                       data-user-popover="5"
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
                       "
@@ -888,7 +888,7 @@
                     src="/images/avatars/photos/13.jpg"
                     alt=""
                     data-user-popover="6"
-                    @error="
+                    @error.once="
                       $event.target.src = 'https://via.placeholder.com/150x150'
                     "
                   />
@@ -907,7 +907,7 @@
                 <img
                   src="/images/photo/demo/apps/11.png"
                   alt=""
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/1280x960'
                   "
                 />
@@ -931,7 +931,7 @@
                       src="/images/avatars/photos/28.jpg"
                       alt=""
                       data-user-popover="24"
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
                       "
@@ -960,7 +960,7 @@
                     src="/images/avatars/photos/12.jpg"
                     alt=""
                     data-user-popover="2"
-                    @error="
+                    @error.once="
                       $event.target.src = 'https://via.placeholder.com/150x150'
                     "
                   />
@@ -979,7 +979,7 @@
                 <img
                   src="/images/photo/demo/apps/12.jpg"
                   alt=""
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/1280x960'
                   "
                 />
@@ -1028,7 +1028,7 @@
                     src="/images/avatars/photos/12.jpg"
                     alt=""
                     data-user-popover="2"
-                    @error="
+                    @error.once="
                       $event.target.src = 'https://via.placeholder.com/150x150'
                     "
                   />
@@ -1047,7 +1047,7 @@
                 <img
                   src="/images/photo/demo/apps/13.png"
                   alt=""
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/1280x960'
                   "
                 />
@@ -1071,7 +1071,7 @@
                       src="/images/avatars/photos/15.jpg"
                       alt=""
                       data-user-popover="15"
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
                       "
@@ -1083,7 +1083,7 @@
                       src="/images/avatars/photos/40.jpg"
                       alt=""
                       data-user-popover="11"
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
                       "
@@ -1095,7 +1095,7 @@
                       src="/images/avatars/photos/8.jpg"
                       alt=""
                       data-user-popover="3"
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
                       "
@@ -1124,7 +1124,7 @@
                     src="/images/avatars/photos/15.jpg"
                     alt=""
                     data-user-popover="15"
-                    @error="
+                    @error.once="
                       $event.target.src = 'https://via.placeholder.com/150x150'
                     "
                   />
@@ -1143,7 +1143,7 @@
                 <img
                   src="/images/photo/demo/apps/14.jpg"
                   alt=""
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/1280x960'
                   "
                 />
@@ -1167,7 +1167,7 @@
                       src="/images/avatars/photos/31.jpg"
                       alt=""
                       data-user-popover="27"
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
                       "
@@ -1196,7 +1196,7 @@
                     src="/images/avatars/photos/39.jpg"
                     alt=""
                     data-user-popover="33"
-                    @error="
+                    @error.once="
                       $event.target.src = 'https://via.placeholder.com/150x150'
                     "
                   />
@@ -1217,7 +1217,7 @@
                 <img
                   src="/images/photo/demo/apps/15.png"
                   alt=""
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/1280x960'
                   "
                 />
@@ -1241,7 +1241,7 @@
                       src="/images/avatars/photos/5.jpg"
                       alt=""
                       data-user-popover="9"
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
                       "
@@ -1253,7 +1253,7 @@
                       src="/images/avatars/photos/24.jpg"
                       alt=""
                       data-user-popover="22"
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
                       "

@@ -13,31 +13,31 @@ See markup for more details about usage.
     <div class="control">
       <div class="tags has-addons">
         <V-Tag label="Bulma CSS" color="primary" />
-        <V-Tag class="is-delete" />
+        <V-Tag remove />
       </div>
     </div>
     <div class="control">
       <div class="tags has-addons">
         <V-Tag label="React JS" color="info" />
-        <V-Tag class="is-delete" />
+        <V-Tag remove />
       </div>
     </div>
     <div class="control">
       <div class="tags has-addons">
         <V-Tag label="Javascript" color="warning" />
-        <V-Tag class="is-delete" />
+        <V-Tag remove />
       </div>
     </div>
     <div class="control">
       <div class="tags has-addons">
         <V-Tag label="Vue JS" color="primary" />
-        <V-Tag class="is-delete" />
+        <V-Tag remove />
       </div>
     </div>
     <div class="control">
       <div class="tags has-addons">
         <V-Tag label="Angular" color="danger" />
-        <V-Tag class="is-delete" />
+        <V-Tag remove />
       </div>
     </div>
   </div>
@@ -54,31 +54,31 @@ See markup for more details about usage.
             <div class="control">
                 <div class="tags has-addons">
                     <V-Tag label="Bulma CSS" color="primary" />
-                    <V-Tag class="is-delete" />
+                    <V-Tag remove />
                 </div>
             </div>
             <div class="control">
                 <div class="tags has-addons">
                     <V-Tag label="React JS" color="info" />
-                    <V-Tag class="is-delete" />
+                    <V-Tag remove />
                 </div>
             </div>
             <div class="control">
                 <div class="tags has-addons">
                     <V-Tag label="Javascript" color="warning" />
-                    <V-Tag class="is-delete" />
+                    <V-Tag remove />
                 </div>
             </div>
             <div class="control">
                 <div class="tags has-addons">
                     <V-Tag label="Vue JS" color="primary" />
-                    <V-Tag class="is-delete" />
+                    <V-Tag remove />
                 </div>
             </div>
             <div class="control">
                 <div class="tags has-addons">
                     <V-Tag label="Angular" color="danger" />
-                    <V-Tag class="is-delete" />
+                    <V-Tag remove />
                 </div>
             </div>
         </div>

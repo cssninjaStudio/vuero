@@ -8,13 +8,17 @@
           src="/images/avatars/photos/8.jpg"
           alt=""
           data-user-popover="3"
-          @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+          @error.once="
+            $event.target.src = 'https://via.placeholder.com/150x150'
+          "
         />
         <img
           class="badge"
           src="/images/icons/flags/united-states-of-america.svg"
           alt=""
-          @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+          @error.once="
+            $event.target.src = 'https://via.placeholder.com/150x150'
+          "
         />
       </div>
       <h3 class="title is-4 is-narrow">Erik Kovalsky</h3>

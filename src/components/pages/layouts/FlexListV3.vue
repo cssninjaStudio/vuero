@@ -32,7 +32,7 @@ const filteredData = computed(() => {
 <template>
   <div>
     <div class="list-flex-toolbar is-reversed">
-      <V-Control iconify="feather:search">
+      <V-Control icon="feather:search">
         <input
           v-model="filters"
           class="input custom-text-filter"
@@ -111,7 +111,7 @@ const filteredData = computed(() => {
                     class="media"
                     :src="item.picture"
                     alt=""
-                    @error="
+                    @error.once="
                       $event.target.src = 'https://via.placeholder.com/150x110'
                     "
                   />

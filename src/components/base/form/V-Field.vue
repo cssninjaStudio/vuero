@@ -2,9 +2,6 @@
 import { defineProps } from 'vue'
 
 defineProps({
-  help: {
-    type: String,
-  },
   addons: {
     type: Boolean,
     default: false,

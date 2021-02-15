@@ -2,6 +2,17 @@
 import type { PropType } from 'vue'
 import { defineProps, computed } from 'vue'
 
+type ButtonSize = undefined | 'big' | 'huge'
+type ButtonColor =
+  | undefined
+  | 'primary'
+  | 'info'
+  | 'success'
+  | 'warning'
+  | 'danger'
+  | 'white'
+type ButtonDark = undefined | '1' | '2' | '3' | '4' | '5' | '6'
+
 const props = defineProps({
   to: {
     type: Object,
@@ -11,13 +22,68 @@ const props = defineProps({
     type: String,
     default: undefined,
   },
+  icon: {
+    type: String,
+    default: undefined,
+  },
+  color: {
+    type: String as PropType<ButtonColor>,
+    default: undefined,
+    validator: function (value: ButtonColor) {
+      // The value must match one of these strings
+      if (
+        [
+          undefined,
+          'primary',
+          'info',
+          'success',
+          'warning',
+          'danger',
+          'white',
+        ].indexOf(value) === -1
+      ) {
+        console.warn(
+          `V-Button: invalid "${value}" color. Should be primary, info, success, warning, danger, white or undefined`
+        )
+        return false
+      }
+
+      return true
+    },
+  },
+  size: {
+    type: String as PropType<ButtonSize>,
+    default: undefined,
+    validator: function (value: ButtonSize) {
+      // The value must match one of these strings
+      if ([undefined, 'big', 'huge'].indexOf(value) === -1) {
+        console.warn(
+          `V-Button: invalid "${value}" size. Should be big, huge or undefined`
+        )
+        return false
+      }
+
+      return true
+    },
+  },
+  dark: {
+    type: String as PropType<ButtonDark>,
+    default: undefined,
+    validator: function (value: ButtonDark) {
+      // The value must match one of these strings
+      if ([undefined, '1', '2', '3', '4', '5', '6'].indexOf(value) === -1) {
+        console.warn(
+          `V-Button: invalid "${value}" dark. Should be 1, 2, 3, 4, 5, 6 or undefined`
+        )
+        return false
+      }
+
+      return true
+    },
+  },
   rounded: {
     type: Boolean,
     default: false,
-  },
-  size: {
-    type: String as PropType<'big' | 'huge'>,
-    default: undefined,
   },
   bold: {
     type: Boolean,
@@ -47,9 +113,6 @@ const props = defineProps({
     type: Boolean,
     default: false,
   },
-  dark: {
-    type: String,
-  },
   loading: {
     type: Boolean,
     default: false,
@@ -62,20 +125,11 @@ const props = defineProps({
     type: Boolean,
     default: false,
   },
-  color: {
-    type: String,
-    default: undefined,
-  },
-  iconify: {
-    type: String,
-    default: undefined,
-  },
-  fa: {
-    type: String,
-    default: undefined,
-  },
 })
 
+const isIconify = computed(() => {
+  return props.icon && props.icon.indexOf(':') !== -1
+})
 const classes = computed(() => {
   return [
     'button',
@@ -100,33 +154,33 @@ const classes = computed(() => {
 
 <template>
   <RouterLink v-if="to" :to="to" :class="classes">
-    <span v-if="fa" class="icon">
-      <i :class="fa"></i>
+    <span v-if="isIconify" class="icon">
+      <i class="iconify" :data-icon="icon"></i>
     </span>
-    <span v-else-if="iconify" class="icon">
-      <i class="iconify" :data-icon="iconify"></i>
+    <span v-else-if="icon" class="icon">
+      <i :class="icon"></i>
     </span>
     <span>
       <slot></slot>
     </span>
   </RouterLink>
   <a v-else-if="href" :href="href" :class="classes">
-    <span v-if="fa" class="icon">
-      <i :class="fa"></i>
+    <span v-if="isIconify" class="icon">
+      <i class="iconify" :data-icon="icon"></i>
     </span>
-    <span v-else-if="iconify" class="icon">
-      <i class="iconify" :data-icon="iconify"></i>
+    <span v-else-if="icon" class="icon">
+      <i :class="icon"></i>
     </span>
     <span>
       <slot></slot>
     </span>
   </a>
   <button v-else :class="classes" :disabled="disabled">
-    <span v-if="fa" class="icon">
-      <i :class="fa"></i>
+    <span v-if="isIconify" class="icon">
+      <i class="iconify" :data-icon="icon"></i>
     </span>
-    <span v-else-if="iconify" class="icon">
-      <i class="iconify" :data-icon="iconify"></i>
+    <span v-else-if="icon" class="icon">
+      <i :class="icon"></i>
     </span>
     <span>
       <slot></slot>

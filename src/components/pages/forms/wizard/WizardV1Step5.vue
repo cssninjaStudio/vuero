@@ -114,7 +114,7 @@ watchEffect(() => {
         <p class="light-text">You are the project owner</p>
 
         <V-Field class="mt-4">
-          <V-Control iconify="feather:search">
+          <V-Control icon="feather:search">
             <input
               v-model="search"
               class="input"

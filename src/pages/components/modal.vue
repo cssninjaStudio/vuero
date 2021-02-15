@@ -470,7 +470,7 @@ useHead({
                         <img
                           src="/images/avatars/placeholder.jpg"
                           alt=""
-                          @error="
+                          @error.once="
                             $event.target.src =
                               'https://via.placeholder.com/150x150'
                           "
@@ -489,7 +489,7 @@ useHead({
                               <img
                                 src="/images/avatars/photos/22.jpg"
                                 alt=""
-                                @error="
+                                @error.once="
                                   $event.target.src =
                                     'https://via.placeholder.com/150x150'
                                 "
@@ -505,7 +505,7 @@ useHead({
                               <img
                                 src="/images/avatars/photos/8.jpg"
                                 alt=""
-                                @error="
+                                @error.once="
                                   $event.target.src =
                                     'https://via.placeholder.com/150x150'
                                 "
@@ -521,7 +521,7 @@ useHead({
                               <img
                                 src="/images/avatars/photos/7.jpg"
                                 alt=""
-                                @error="
+                                @error.once="
                                   $event.target.src =
                                     'https://via.placeholder.com/150x150'
                                 "
@@ -537,7 +537,7 @@ useHead({
                               <img
                                 src="/images/avatars/photos/25.jpg"
                                 alt=""
-                                @error="
+                                @error.once="
                                   $event.target.src =
                                     'https://via.placeholder.com/150x150'
                                 "
@@ -553,7 +553,7 @@ useHead({
                               <img
                                 src="/images/avatars/photos/12.jpg"
                                 alt=""
-                                @error="
+                                @error.once="
                                   $event.target.src =
                                     'https://via.placeholder.com/150x150'
                                 "
@@ -686,7 +686,7 @@ useHead({
                         <img
                           src="/images/avatars/placeholder.jpg"
                           alt=""
-                          @error="
+                          @error.once="
                             $event.target.src =
                               'https://via.placeholder.com/150x150'
                           "
@@ -705,7 +705,7 @@ useHead({
                               <img
                                 src="/images/avatars/photos/22.jpg"
                                 alt=""
-                                @error="
+                                @error.once="
                                   $event.target.src =
                                     'https://via.placeholder.com/150x150'
                                 "
@@ -721,7 +721,7 @@ useHead({
                               <img
                                 src="/images/avatars/photos/8.jpg"
                                 alt=""
-                                @error="
+                                @error.once="
                                   $event.target.src =
                                     'https://via.placeholder.com/150x150'
                                 "
@@ -737,7 +737,7 @@ useHead({
                               <img
                                 src="/images/avatars/photos/7.jpg"
                                 alt=""
-                                @error="
+                                @error.once="
                                   $event.target.src =
                                     'https://via.placeholder.com/150x150'
                                 "
@@ -753,7 +753,7 @@ useHead({
                               <img
                                 src="/images/avatars/photos/25.jpg"
                                 alt=""
-                                @error="
+                                @error.once="
                                   $event.target.src =
                                     'https://via.placeholder.com/150x150'
                                 "
@@ -769,7 +769,7 @@ useHead({
                               <img
                                 src="/images/avatars/photos/12.jpg"
                                 alt=""
-                                @error="
+                                @error.once="
                                   $event.target.src =
                                     'https://via.placeholder.com/150x150'
                                 "

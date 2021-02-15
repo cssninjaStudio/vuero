@@ -12,7 +12,7 @@ useHead({
 </script>
 
 <template>
-  <KanbanDashboard>
+  <KanbanApp>
     <template #title>
       <div class="page-title">
         <!-- Sidebar Trigger -->
@@ -41,5 +41,5 @@ useHead({
         <Toolbar />
       </div>
     </template>
-  </KanbanDashboard>
+  </KanbanApp>
 </template>

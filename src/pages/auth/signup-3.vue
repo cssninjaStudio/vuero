@@ -70,7 +70,7 @@ useHead({
             <div class="login-form">
               <!-- Input -->
               <V-Field>
-                <V-Control iconify="feather:user">
+                <V-Control icon="feather:user">
                   <input
                     class="input"
                     type="text"
@@ -81,7 +81,7 @@ useHead({
               </V-Field>
               <!-- Input -->
               <V-Field>
-                <V-Control iconify="feather:mail">
+                <V-Control icon="feather:mail">
                   <input
                     class="input"
                     type="text"
@@ -92,7 +92,7 @@ useHead({
               </V-Field>
               <!-- Input -->
               <V-Field>
-                <V-Control iconify="feather:lock">
+                <V-Control icon="feather:lock">
                   <input
                     class="input"
                     type="password"
@@ -103,7 +103,7 @@ useHead({
               </V-Field>
               <!-- Input -->
               <V-Field>
-                <V-Control iconify="feather:lock">
+                <V-Control icon="feather:lock">
                   <input
                     class="input"
                     type="password"

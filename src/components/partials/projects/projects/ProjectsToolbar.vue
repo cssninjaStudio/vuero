@@ -13,7 +13,9 @@
           class="avatar"
           src="/images/avatars/photos/7.jpg"
           alt=""
-          @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+          @error.once="
+            $event.target.src = 'https://via.placeholder.com/150x150'
+          "
         />
       </div>
       <div class="v-avatar is-small">
@@ -21,7 +23,9 @@
           class="avatar"
           src="/images/avatars/photos/9.jpg"
           alt=""
-          @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+          @error.once="
+            $event.target.src = 'https://via.placeholder.com/150x150'
+          "
         />
       </div>
       <div class="v-avatar is-small">
@@ -29,7 +33,9 @@
           class="avatar"
           src="/images/avatars/photos/12.jpg"
           alt=""
-          @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+          @error.once="
+            $event.target.src = 'https://via.placeholder.com/150x150'
+          "
         />
       </div>
       <div class="v-avatar is-small">
@@ -37,7 +43,9 @@
           class="avatar"
           src="/images/avatars/photos/8.jpg"
           alt=""
-          @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+          @error.once="
+            $event.target.src = 'https://via.placeholder.com/150x150'
+          "
         />
       </div>
       <div class="v-avatar is-small">
@@ -45,7 +53,9 @@
           class="avatar"
           src="/images/avatars/photos/25.jpg"
           alt=""
-          @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+          @error.once="
+            $event.target.src = 'https://via.placeholder.com/150x150'
+          "
         />
       </div>
       <div class="v-avatar is-small">
@@ -53,7 +63,9 @@
           class="avatar"
           src="/images/avatars/photos/22.jpg"
           alt=""
-          @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+          @error.once="
+            $event.target.src = 'https://via.placeholder.com/150x150'
+          "
         />
       </div>
     </div>

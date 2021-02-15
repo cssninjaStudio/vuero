@@ -31,7 +31,9 @@
             <img
               src="/images/icons/files/pdf.svg"
               alt=""
-              @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+              @error.once="
+                $event.target.src = 'https://via.placeholder.com/150x150'
+              "
             />
             <div class="meta">
               <span class="dark-inverted">Company UX Guide</span>
@@ -53,7 +55,9 @@
             <img
               src="/images/icons/files/sheet.svg"
               alt=""
-              @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+              @error.once="
+                $event.target.src = 'https://via.placeholder.com/150x150'
+              "
             />
             <div class="meta">
               <span class="dark-inverted">Tech Summit Expenses</span>
@@ -75,7 +79,9 @@
             <img
               src="/images/icons/files/doc-2.svg"
               alt=""
-              @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+              @error.once="
+                $event.target.src = 'https://via.placeholder.com/150x150'
+              "
             />
             <div class="meta">
               <span class="dark-inverted">Project Outline</span>
@@ -97,7 +103,9 @@
             <img
               src="/images/icons/files/ppt.svg"
               alt=""
-              @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+              @error.once="
+                $event.target.src = 'https://via.placeholder.com/150x150'
+              "
             />
             <div class="meta">
               <span class="dark-inverted">UX Presentation</span>
@@ -119,7 +127,9 @@
             <img
               src="/images/icons/files/ai.svg"
               alt=""
-              @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+              @error.once="
+                $event.target.src = 'https://via.placeholder.com/150x150'
+              "
             />
             <div class="meta">
               <span class="dark-inverted">Website Homepage Redesign</span>
@@ -141,7 +151,9 @@
             <img
               src="/images/icons/files/doc-2.svg"
               alt=""
-              @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+              @error.once="
+                $event.target.src = 'https://via.placeholder.com/150x150'
+              "
             />
             <div class="meta">
               <span class="dark-inverted">UX Ramp Up for Interns</span>
@@ -163,7 +175,9 @@
             <img
               src="/images/icons/files/pdf.svg"
               alt=""
-              @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+              @error.once="
+                $event.target.src = 'https://via.placeholder.com/150x150'
+              "
             />
             <div class="meta">
               <span class="dark-inverted">2020 Projects Digest</span>
@@ -185,7 +199,9 @@
             <img
               src="/images/icons/files/doc-2.svg"
               alt=""
-              @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+              @error.once="
+                $event.target.src = 'https://via.placeholder.com/150x150'
+              "
             />
             <div class="meta">
               <span class="dark-inverted">Financial Report - 2020</span>
@@ -207,7 +223,9 @@
             <img
               src="/images/icons/files/sheet.svg"
               alt=""
-              @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+              @error.once="
+                $event.target.src = 'https://via.placeholder.com/150x150'
+              "
             />
             <div class="meta">
               <span class="dark-inverted">2020 Supplier Expenses</span>
@@ -229,7 +247,9 @@
             <img
               src="/images/icons/files/ai.svg"
               alt=""
-              @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+              @error.once="
+                $event.target.src = 'https://via.placeholder.com/150x150'
+              "
             />
             <div class="meta">
               <span class="dark-inverted">Website About Page Redesign</span>
@@ -251,7 +271,9 @@
             <img
               src="/images/icons/files/ai.svg"
               alt=""
-              @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+              @error.once="
+                $event.target.src = 'https://via.placeholder.com/150x150'
+              "
             />
             <div class="meta">
               <span class="dark-inverted">Website Pricing Page Redesign</span>
@@ -273,7 +295,9 @@
             <img
               src="/images/icons/files/doc-2.svg"
               alt=""
-              @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+              @error.once="
+                $event.target.src = 'https://via.placeholder.com/150x150'
+              "
             />
             <div class="meta">
               <span class="dark-inverted">Financial Report - 2019</span>
@@ -295,7 +319,9 @@
             <img
               src="/images/icons/files/sheet.svg"
               alt=""
-              @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+              @error.once="
+                $event.target.src = 'https://via.placeholder.com/150x150'
+              "
             />
             <div class="meta">
               <span class="dark-inverted">2019 Supplier Expenses</span>
@@ -317,7 +343,9 @@
             <img
               src="/images/icons/files/ai.svg"
               alt=""
-              @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+              @error.once="
+                $event.target.src = 'https://via.placeholder.com/150x150'
+              "
             />
             <div class="meta">
               <span class="dark-inverted">Website Contact Page Redesign</span>
@@ -339,7 +367,9 @@
             <img
               src="/images/icons/files/pdf.svg"
               alt=""
-              @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+              @error.once="
+                $event.target.src = 'https://via.placeholder.com/150x150'
+              "
             />
             <div class="meta">
               <span class="dark-inverted">Company Brand Book</span>
@@ -361,7 +391,9 @@
             <img
               src="/images/icons/files/pdf.svg"
               alt=""
-              @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+              @error.once="
+                $event.target.src = 'https://via.placeholder.com/150x150'
+              "
             />
             <div class="meta">
               <span class="dark-inverted">2019 Projects Digest</span>

@@ -1,15 +1,34 @@
 <script setup lang="ts">
+import type { PropType } from 'vue'
 import { defineProps } from 'vue'
 
-defineProps({
-  message: {
-    type: String,
-    default:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum.',
-  },
+type MessageColor =
+  | undefined
+  | 'primary'
+  | 'success'
+  | 'info'
+  | 'warning'
+  | 'danger'
+
+const props = defineProps({
   color: {
-    type: String,
-    default: '',
+    type: String as PropType<MessageColor>,
+    default: undefined,
+    validator: function (value: MessageColor) {
+      // The value must match one of these strings
+      if (
+        [undefined, 'primary', 'success', 'info', 'warning', 'danger'].indexOf(
+          value
+        ) === -1
+      ) {
+        console.warn(
+          `V-Message: invalid "${value}" color. Should be primary, success, info, warning, danger or undefined`
+        )
+        return false
+      }
+
+      return true
+    },
   },
 })
 </script>
@@ -17,6 +36,6 @@ defineProps({
 <template>
   <div class="message" :class="[color && `is-${color}`]">
     <a class="delete"></a>
-    <div class="message-body">{{ message }}</div>
+    <div class="message-body"><slot></slot></div>
   </div>
 </template>

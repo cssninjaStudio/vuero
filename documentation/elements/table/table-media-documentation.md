@@ -32,7 +32,9 @@ You can easily add media elements like the huro avatars inside your table rows.
               class="avatar"
               src="/images/avatars/svg/8.gif"
               alt=""
-              @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+              @error.once="
+                $event.target.src = 'https://via.placeholder.com/150x150'
+              "
             />
           </div>
         </td>
@@ -52,7 +54,9 @@ You can easily add media elements like the huro avatars inside your table rows.
               class="avatar"
               src="/images/avatars/svg/1.gif"
               alt=""
-              @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+              @error.once="
+                $event.target.src = 'https://via.placeholder.com/150x150'
+              "
             />
           </div>
         </td>
@@ -72,7 +76,9 @@ You can easily add media elements like the huro avatars inside your table rows.
               class="avatar"
               src="/images/avatars/svg/4.gif"
               alt=""
-              @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+              @error.once="
+                $event.target.src = 'https://via.placeholder.com/150x150'
+              "
             />
           </div>
         </td>
@@ -109,7 +115,9 @@ You can easily add media elements like the huro avatars inside your table rows.
               class="avatar"
               src="/images/avatars/svg/3.gif"
               alt=""
-              @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+              @error.once="
+                $event.target.src = 'https://via.placeholder.com/150x150'
+              "
             />
           </div>
         </td>

@@ -19,7 +19,7 @@ import {
                   class="avatar"
                   src="/images/avatars/photos/8.jpg"
                   alt=""
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/150x150'
                   "
                 />
@@ -27,7 +27,7 @@ import {
                   class="badge"
                   src="/images/icons/flags/united-states-of-america.svg"
                   alt=""
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/150x150'
                   "
                 />

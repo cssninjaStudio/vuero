@@ -1,14 +1,71 @@
 <script setup lang="ts">
+import type { PropType } from 'vue'
 import { defineProps } from 'vue'
 
-defineProps({
+type IconBoxSize = undefined | 'small' | 'medium' | 'large' | 'big' | 'xl'
+type IconBoxColor =
+  | undefined
+  | 'primary'
+  | 'info'
+  | 'success'
+  | 'warning'
+  | 'danger'
+  | 'purple'
+  | 'yellow'
+  | 'orange'
+  | 'green'
+  | 'red'
+  | 'blue'
+
+const props = defineProps({
   size: {
-    type: String,
-    default: '',
+    type: String as PropType<IconBoxSize>,
+    default: undefined,
+    validator: function (value: IconBoxSize) {
+      // The value must match one of these strings
+      if (
+        [undefined, 'small', 'medium', 'large', 'big', 'xl'].indexOf(value) ===
+        -1
+      ) {
+        console.warn(
+          `V-IconBox: invalid "${value}" size. Should be small, medium, large, big, xl or undefined`
+        )
+        return false
+      }
+
+      return true
+    },
   },
   color: {
-    type: String,
-    default: 'primary',
+    type: String as PropType<IconBoxColor>,
+    default: undefined,
+    validator: function (value: IconBoxSize) {
+      if (!value) return true
+      // The value must match one of these strings
+      if (
+        [
+          'primary',
+          'info',
+          'success',
+          'warning',
+          'danger',
+          'purple',
+          'yellow',
+          'orange',
+          'green',
+          'red',
+          'blue',
+        ].indexOf(value) === -1
+      ) {
+        console.warn(
+          `V-IconBox: invalid "${value}" color. Should be primary, info, success, ` +
+            `warning, danger, purple, yellow, orange, green, red, blue or undefined`
+        )
+        return false
+      }
+
+      return true
+    },
   },
   rounded: {
     type: Boolean,

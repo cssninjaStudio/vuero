@@ -24,7 +24,7 @@
                   class="user-photo"
                   alt=""
                   src="/images/avatars/photos/7.jpg"
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/150x150'
                   "
                 />
@@ -44,7 +44,7 @@
                   class="user-photo"
                   alt=""
                   src="/images/avatars/photos/12.jpg"
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/150x150'
                   "
                 />
@@ -64,7 +64,7 @@
                   class="user-photo"
                   alt=""
                   src="/images/avatars/photos/13.jpg"
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/150x150'
                   "
                 />
@@ -84,7 +84,7 @@
                   class="user-photo"
                   alt=""
                   src="/images/avatars/photos/25.jpg"
-                  @error="
+                  @error.once="
                     $event.target.src = 'https://via.placeholder.com/150x150'
                   "
                 />

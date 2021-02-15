@@ -9,11 +9,11 @@ color by using the `color` prop. Available colors are `primary`,
 
 ```vue
 <template>
-  <V-Message color="primary" />
-  <V-Message color="success" />
-  <V-Message color="info" />
-  <V-Message color="warning" />
-  <V-Message color="danger" />
+  <V-Message color="primary">Lorem ipsum dolor sit amet</V-Message>
+  <V-Message color="success">Lorem ipsum dolor sit amet</V-Message>
+  <V-Message color="info">Lorem ipsum dolor sit amet</V-Message>
+  <V-Message color="warning">Lorem ipsum dolor sit amet</V-Message>
+  <V-Message color="danger">Lorem ipsum dolor sit amet</V-Message>
 </template>
 ```
 
@@ -22,13 +22,13 @@ color by using the `color` prop. Available colors are `primary`,
 <!--example-->
 
 <div class="field">
-    <div class="control">
-        <V-Message color="primary" />
-        <V-Message color="success" />
-        <V-Message color="info" />
-        <V-Message color="warning" />
-        <V-Message color="danger" />
-    </div>
+  <div class="control">
+    <V-Message color="primary">Lorem ipsum dolor sit amet</V-Message>
+    <V-Message color="success">Lorem ipsum dolor sit amet</V-Message>
+    <V-Message color="info">Lorem ipsum dolor sit amet</V-Message>
+    <V-Message color="warning">Lorem ipsum dolor sit amet</V-Message>
+    <V-Message color="danger">Lorem ipsum dolor sit amet</V-Message>
+  </div>
 </div>
 
 <!--/example-->

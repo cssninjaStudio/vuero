@@ -32,7 +32,7 @@ const filteredData = computed(() => {
 <template>
   <div class="list-view-toolbar">
     <V-Field>
-      <V-Control iconify="feather:search">
+      <V-Control icon="feather:search">
         <input
           v-model="filters"
           class="input custom-text-filter"

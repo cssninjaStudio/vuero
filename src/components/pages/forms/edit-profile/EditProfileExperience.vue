@@ -60,7 +60,7 @@ const onSave = async () => {
           <div class="buttons">
             <V-Button
               :to="{ name: 'admin-layouts-profile-view' }"
-              fa="lnir lnir-arrow-left rem-100"
+              icon="lnir lnir-arrow-left rem-100"
               color="light"
               dark-outlined
             >
@@ -155,7 +155,7 @@ const onSave = async () => {
                 </div>
                 <div class="column is-6">
                   <V-Field>
-                    <V-Control iconify="feather:box">
+                    <V-Control icon="feather:box">
                       <input
                         type="text"
                         class="input"
@@ -167,7 +167,7 @@ const onSave = async () => {
                 </div>
                 <div class="column is-6">
                   <V-Field>
-                    <V-Control iconify="feather:briefcase">
+                    <V-Control icon="feather:briefcase">
                       <input
                         type="text"
                         class="input"
@@ -196,7 +196,9 @@ const onSave = async () => {
               <img
                 src="/images/photo/demo/brands/airbnb.svg"
                 alt=""
-                @error="$event.target.src = 'https://via.placeholder.com/50x50'"
+                @error.once="
+                  $event.target.src = 'https://via.placeholder.com/50x50'
+                "
               />
               <div class="meta">
                 <span class="dark-inverted">Airbnb HQ</span>
@@ -217,7 +219,9 @@ const onSave = async () => {
               <img
                 src="/images/photo/demo/brands/facebook.svg"
                 alt=""
-                @error="$event.target.src = 'https://via.placeholder.com/50x50'"
+                @error.once="
+                  $event.target.src = 'https://via.placeholder.com/50x50'
+                "
               />
               <div class="meta">
                 <span class="dark-inverted">Facebook</span>
@@ -238,7 +242,9 @@ const onSave = async () => {
               <img
                 src="/images/photo/demo/brands/atlassian.svg"
                 alt=""
-                @error="$event.target.src = 'https://via.placeholder.com/50x50'"
+                @error.once="
+                  $event.target.src = 'https://via.placeholder.com/50x50'
+                "
               />
               <div class="meta">
                 <span class="dark-inverted">Atlassian</span>
@@ -259,7 +265,9 @@ const onSave = async () => {
               <img
                 src="/images/photo/demo/brands/github.svg"
                 alt=""
-                @error="$event.target.src = 'https://via.placeholder.com/50x50'"
+                @error.once="
+                  $event.target.src = 'https://via.placeholder.com/50x50'
+                "
               />
               <div class="meta">
                 <span class="dark-inverted">Github</span>
@@ -280,7 +288,9 @@ const onSave = async () => {
               <img
                 src="/images/photo/demo/brands/slack.svg"
                 alt=""
-                @error="$event.target.src = 'https://via.placeholder.com/50x50'"
+                @error.once="
+                  $event.target.src = 'https://via.placeholder.com/50x50'
+                "
               />
               <div class="meta">
                 <span class="dark-inverted">Slack</span>
@@ -301,7 +311,9 @@ const onSave = async () => {
               <img
                 src="/images/photo/demo/brands/gitlab.svg"
                 alt=""
-                @error="$event.target.src = 'https://via.placeholder.com/50x50'"
+                @error.once="
+                  $event.target.src = 'https://via.placeholder.com/50x50'
+                "
               />
               <div class="meta">
                 <span class="dark-inverted">Gitlab</span>
@@ -330,7 +342,7 @@ const onSave = async () => {
                 <V-Button
                   raised
                   dark-outlined
-                  fa="fas fa-plus"
+                  icon="fas fa-plus"
                   class="add-setting-item"
                   @click="isUploading = true"
                 >

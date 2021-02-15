@@ -44,7 +44,7 @@ const {
         class="sender-pic"
         src="/images/avatars/photos/11.jpg"
         alt=""
-        @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+        @error.once="$event.target.src = 'https://via.placeholder.com/150x150'"
       />
       <div class="message-meta">
         <span class="message-title">Hop in for the next project review</span>
@@ -168,7 +168,9 @@ const {
             <img
               src="/images/avatars/photos/8.jpg"
               alt=""
-              @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+              @error.once="
+                $event.target.src = 'https://via.placeholder.com/150x150'
+              "
             />
             <div class="reply-details">
               <span>Reply as</span>

@@ -34,7 +34,9 @@ const props = defineProps({
           <img
             src="/images/photo/demo/faces/girl1.jpg"
             alt=""
-            @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+            @error.once="
+              $event.target.src = 'https://via.placeholder.com/150x150'
+            "
           />
           <button class="button is-circle">
             <span class="icon is-small">
@@ -682,7 +684,7 @@ const props = defineProps({
                     <img
                       src="/images/photo/demo/faces/girl1.jpg"
                       alt=""
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
                       "
@@ -1176,7 +1178,7 @@ const props = defineProps({
                   <img
                     src="/images/photo/demo/30.jpg"
                     alt=""
-                    @error="
+                    @error.once="
                       $event.target.src = 'https://via.placeholder.com/1280x960'
                     "
                   />
@@ -1188,7 +1190,7 @@ const props = defineProps({
                     <img
                       src="/images/photo/demo/33.jpg"
                       alt=""
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/1280x960'
                       "
@@ -1198,7 +1200,7 @@ const props = defineProps({
                     <img
                       src="/images/photo/demo/34.jpg"
                       alt=""
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/1280x960'
                       "
@@ -1208,7 +1210,7 @@ const props = defineProps({
                     <img
                       src="/images/photo/demo/35.jpeg"
                       alt=""
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/1280x960'
                       "
@@ -1218,7 +1220,7 @@ const props = defineProps({
                     <img
                       src="/images/photo/demo/36.jpg"
                       alt=""
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/1280x960'
                       "
@@ -1246,7 +1248,7 @@ const props = defineProps({
                   <img
                     src="/images/photo/demo/31.png"
                     alt=""
-                    @error="
+                    @error.once="
                       $event.target.src = 'https://via.placeholder.com/1280x960'
                     "
                   />
@@ -1258,7 +1260,7 @@ const props = defineProps({
                     <img
                       src="/images/photo/demo/33.jpg"
                       alt=""
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/1280x960'
                       "
@@ -1268,7 +1270,7 @@ const props = defineProps({
                     <img
                       src="/images/photo/demo/34.jpg"
                       alt=""
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/1280x960'
                       "
@@ -1278,7 +1280,7 @@ const props = defineProps({
                     <img
                       src="/images/photo/demo/35.jpeg"
                       alt=""
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/1280x960'
                       "
@@ -1288,7 +1290,7 @@ const props = defineProps({
                     <img
                       src="/images/photo/demo/36.jpg"
                       alt=""
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/1280x960'
                       "
@@ -1316,7 +1318,7 @@ const props = defineProps({
                   <img
                     src="/images/photo/demo/32.jpg"
                     alt=""
-                    @error="
+                    @error.once="
                       $event.target.src = 'https://via.placeholder.com/1280x960'
                     "
                   />
@@ -1328,7 +1330,7 @@ const props = defineProps({
                     <img
                       src="/images/photo/demo/33.jpg"
                       alt=""
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/1280x960'
                       "
@@ -1338,7 +1340,7 @@ const props = defineProps({
                     <img
                       src="/images/photo/demo/34.jpg"
                       alt=""
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/1280x960'
                       "
@@ -1348,7 +1350,7 @@ const props = defineProps({
                     <img
                       src="/images/photo/demo/35.jpeg"
                       alt=""
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/1280x960'
                       "
@@ -1358,7 +1360,7 @@ const props = defineProps({
                     <img
                       src="/images/photo/demo/36.jpg"
                       alt=""
-                      @error="
+                      @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/1280x960'
                       "

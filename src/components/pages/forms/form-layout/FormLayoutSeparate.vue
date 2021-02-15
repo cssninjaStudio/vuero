@@ -16,7 +16,7 @@ const country = ref('')
               <div class="column is-6">
                 <V-Field>
                   <label>First Name</label>
-                  <V-Control iconify="feather:user">
+                  <V-Control icon="feather:user">
                     <input
                       type="text"
                       class="input"
@@ -29,7 +29,7 @@ const country = ref('')
               <div class="column is-6">
                 <V-Field>
                   <label>Last Name</label>
-                  <V-Control iconify="feather:user">
+                  <V-Control icon="feather:user">
                     <input
                       type="text"
                       class="input"
@@ -42,7 +42,7 @@ const country = ref('')
               <div class="column is-12">
                 <V-Field>
                   <label>Email Address</label>
-                  <V-Control iconify="feather:mail">
+                  <V-Control icon="feather:mail">
                     <input
                       type="email"
                       class="input"
@@ -56,7 +56,7 @@ const country = ref('')
               <div class="column is-12">
                 <V-Field>
                   <label>Street</label>
-                  <V-Control iconify="feather:map-pin">
+                  <V-Control icon="feather:map-pin">
                     <input
                       type="text"
                       class="input"
@@ -69,7 +69,7 @@ const country = ref('')
               <div class="column is-6">
                 <V-Field>
                   <label>City</label>
-                  <V-Control iconify="feather:map-pin">
+                  <V-Control icon="feather:map-pin">
                     <input
                       type="text"
                       class="input"
@@ -133,7 +133,7 @@ const country = ref('')
               <div class="column is-12">
                 <V-Field>
                   <label>Phone</label>
-                  <V-Control iconify="feather:phone">
+                  <V-Control icon="feather:phone">
                     <input
                       type="tel"
                       class="input"

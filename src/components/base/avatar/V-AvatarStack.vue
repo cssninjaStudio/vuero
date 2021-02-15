@@ -1,19 +1,40 @@
 <script setup lang="ts">
+import type { PropType } from 'vue'
 import { defineProps } from 'vue'
 
-defineProps({
+type AvatarStackSize = undefined | 'small' | 'medium' | 'large' | 'big' | 'xl'
+type AvatarItem = {
+  picture?: string
+  initials?: string
+  color?: string
+}
+
+const props = defineProps({
   avatars: {
-    type: Array,
+    type: Array as PropType<AvatarItem[]>,
     required: true,
-    default: [],
+  },
+  size: {
+    type: String as PropType<AvatarStackSize>,
+    default: undefined,
+    validator: function (value: AvatarStackSize) {
+      // The value must match one of these strings
+      if (
+        [undefined, 'small', 'medium', 'large', 'big', 'xl'].indexOf(value) ===
+        -1
+      ) {
+        console.warn(
+          `V-AvatarStack: invalid "${value}" size. Should be small, medium, large, big, xl or undefined`
+        )
+        return false
+      }
+
+      return true
+    },
   },
   limit: {
     type: Number,
     default: 5,
-  },
-  size: {
-    type: String,
-    default: '',
   },
 })
 </script>
@@ -21,10 +42,10 @@ defineProps({
 <template>
   <div class="avatar-stack">
     <V-Avatar
-      v-for="avatar in avatars.slice(0, limit)"
-      :key="avatar.id"
-      :picture="avatar.picture"
+      v-for="(avatar, index) in avatars.slice(0, limit)"
+      :key="index"
       :size="size"
+      :picture="avatar.picture"
       :initials="avatar.initials"
       :color="avatar.color"
     />

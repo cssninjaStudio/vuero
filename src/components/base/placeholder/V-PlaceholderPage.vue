@@ -1,12 +1,16 @@
 <script setup lang="ts">
-import { defineProps } from 'vue'
+import { defineEmit, defineProps } from 'vue'
 
-defineProps({
+const props = defineProps({
   title: {
     type: String,
-    default: 'Placeholder title',
+    required: true,
   },
   subtitle: {
+    type: String,
+    default: undefined,
+  },
+  cta: {
     type: String,
     default: undefined,
   },
@@ -14,15 +18,9 @@ defineProps({
     type: Boolean,
     default: false,
   },
-  action: {
-    type: Boolean,
-    default: false,
-  },
-  cta: {
-    type: String,
-    default: 'Action Button',
-  },
 })
+
+const emit = defineEmit(['click'])
 </script>
 
 <template>
@@ -31,7 +29,9 @@ defineProps({
       <slot name="image"></slot>
       <h3 class="dark-inverted">{{ title }}</h3>
       <p v-if="subtitle" :class="[larger && 'is-larger']">{{ subtitle }}</p>
-      <V-Button v-if="action" color="primary" elevated>{{ cta }}</V-Button>
+      <V-Button v-if="cta" color="primary" elevated @click="emit('click')">
+        {{ cta }}
+      </V-Button>
     </div>
   </div>
 </template>

@@ -9,45 +9,38 @@ a solid icon. Check the markup for more details.
 
 ```vue
 <template>
-  <V-SnackIcon title="Shopping" color="primary" solid>
-    <template #icon>
-      <i class="fas fa-smile snack-icon"></i>
-    </template>
-    <template #action>
-      <i class="iconify" data-icon="feather:plus"></i>
-    </template>
+  <V-SnackIcon title="Shopping" color="primary" solid icon="fas fa-smile">
+    <i class="iconify" data-icon="feather:plus"></i>
   </V-SnackIcon>
-  <V-SnackIcon title="Support" color="success" white solid>
-    <template #icon>
-      <i class="fas fa-life-ring snack-icon"></i>
-    </template>
-    <template #action>
-      <i class="iconify" data-icon="feather:plus"></i>
-    </template>
+  <V-SnackIcon
+    title="Support"
+    color="success"
+    white
+    solid
+    icon="fas fa-life-ring"
+  >
+    <i class="iconify" data-icon="feather:plus"></i>
   </V-SnackIcon>
-  <V-SnackIcon title="Business" color="info" solid>
-    <template #icon>
-      <i class="fas fa-building snack-icon"></i>
-    </template>
-    <template #action>
-      <i class="iconify" data-icon="feather:plus"></i>
-    </template>
+  <V-SnackIcon title="Business" color="info" solid icon="fas fa-building">
+    <i class="iconify" data-icon="feather:plus"></i>
   </V-SnackIcon>
-  <V-SnackIcon title="Warning" color="warning" white solid>
-    <template #icon>
-      <i class="fas fa-radiation snack-icon"></i>
-    </template>
-    <template #action>
-      <i class="iconify" data-icon="feather:plus"></i>
-    </template>
+  <V-SnackIcon
+    title="Warning"
+    color="warning"
+    white
+    solid
+    icon="fas fa-radiation"
+  >
+    <i class="iconify" data-icon="feather:plus"></i>
   </V-SnackIcon>
-  <V-SnackIcon title="Health" color="danger" white solid>
-    <template #icon>
-      <i class="fas fa-thermometer-half snack-icon"></i>
-    </template>
-    <template #action>
-      <i class="iconify" data-icon="feather:plus"></i>
-    </template>
+  <V-SnackIcon
+    title="Health"
+    color="danger"
+    white
+    solid
+    icon="fas fa-thermometer-half"
+  >
+    <i class="iconify" data-icon="feather:plus"></i>
   </V-SnackIcon>
 </template>
 ```
@@ -57,46 +50,21 @@ a solid icon. Check the markup for more details.
 <!--example-->
 
 <div class="snacks">
-    <V-SnackIcon title="Shopping" color="primary" solid>
-        <template #icon>
-            <i class="fas fa-smile snack-icon"></i>
-        </template>
-        <template #action>
-            <i class="iconify" data-icon="feather:plus"></i>
-        </template>
-    </V-SnackIcon>
-    <V-SnackIcon title="Support" color="success" white solid>
-        <template #icon>
-            <i class="fas fa-life-ring snack-icon"></i>
-        </template>
-        <template #action>
-            <i class="iconify" data-icon="feather:plus"></i>
-        </template>
-    </V-SnackIcon>
-    <V-SnackIcon title="Business" color="info" solid>
-        <template #icon>
-            <i class="fas fa-building snack-icon"></i>
-        </template>
-        <template #action>
-            <i class="iconify" data-icon="feather:plus"></i>
-        </template>
-    </V-SnackIcon>
-    <V-SnackIcon title="Warning" color="warning" white solid>
-        <template #icon>
-            <i class="fas fa-radiation snack-icon"></i>
-        </template>
-        <template #action>
-            <i class="iconify" data-icon="feather:plus"></i>
-        </template>
-    </V-SnackIcon>
-    <V-SnackIcon title="Health" color="danger" white solid>
-        <template #icon>
-            <i class="fas fa-thermometer-half snack-icon"></i>
-        </template>
-        <template #action>
-            <i class="iconify" data-icon="feather:plus"></i>
-        </template>
-    </V-SnackIcon>
+  <V-SnackIcon title="Shopping" color="primary" solid icon="fas fa-smile">
+    <i class="iconify" data-icon="feather:plus"></i>
+  </V-SnackIcon>
+  <V-SnackIcon title="Support" color="success" white solid icon="fas fa-life-ring">
+    <i class="iconify" data-icon="feather:plus"></i>
+  </V-SnackIcon>
+  <V-SnackIcon title="Business" color="info" solid icon="fas fa-building">
+    <i class="iconify" data-icon="feather:plus"></i>
+  </V-SnackIcon>
+  <V-SnackIcon title="Warning" color="warning" white solid icon="fas fa-radiation">
+    <i class="iconify" data-icon="feather:plus"></i>
+  </V-SnackIcon>
+  <V-SnackIcon title="Health" color="danger" white solid icon="fas fa-thermometer-half">
+    <i class="iconify" data-icon="feather:plus"></i>
+  </V-SnackIcon>
 </div>
 
 <!--/example-->

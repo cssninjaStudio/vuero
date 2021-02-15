@@ -28,7 +28,7 @@ const isStuck = computed(() => {
           <div class="right">
             <div class="buttons">
               <V-Button
-                fa="lnir lnir-arrow-left rem-100"
+                icon="lnir lnir-arrow-left rem-100"
                 :to="{ name: 'admin-layouts-profile-view' }"
                 color="light"
                 dark-outlined
@@ -45,7 +45,7 @@ const isStuck = computed(() => {
           <div class="columns is-multiline">
             <div class="column is-12">
               <V-Field>
-                <V-Control iconify="feather:slack">
+                <V-Control icon="feather:slack">
                   <input
                     type="text"
                     class="input"
@@ -67,7 +67,7 @@ const isStuck = computed(() => {
                     <V-Field>
                       <label>Meeting date</label>
 
-                      <V-Control iconify="feather:calendar">
+                      <V-Control icon="feather:calendar">
                         <input
                           placeholder="Start Date"
                           :value="inputValue.start"
@@ -81,7 +81,7 @@ const isStuck = computed(() => {
                     <V-Field>
                       <label class="is-vhidden">Meeting date</label>
 
-                      <V-Control iconify="feather:calendar">
+                      <V-Control icon="feather:calendar">
                         <input
                           placeholder="End Date"
                           :value="inputValue.end"
@@ -197,7 +197,7 @@ const isStuck = computed(() => {
               </div>
               <div class="field-body">
                 <V-Field>
-                  <V-Control iconify="feather:map-pin">
+                  <V-Control icon="feather:map-pin">
                     <input
                       class="input"
                       type="text"
@@ -213,7 +213,7 @@ const isStuck = computed(() => {
               </div>
               <div class="field-body">
                 <V-Field>
-                  <V-Control iconify="feather:map-pin">
+                  <V-Control icon="feather:map-pin">
                     <input
                       class="input"
                       type="url"

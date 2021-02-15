@@ -1,10 +1,70 @@
 <script setup lang="ts">
+import type { PropType } from 'vue'
 import { computed, defineProps } from 'vue'
+
+type IconButtonDark = undefined | '1' | '2' | '3' | '4' | '5' | '6'
+type IconButtonColor =
+  | undefined
+  | 'primary'
+  | 'info'
+  | 'success'
+  | 'warning'
+  | 'danger'
+  | 'white'
 
 const props = defineProps({
   to: {
     type: Object,
     default: undefined,
+  },
+  href: {
+    type: String,
+    default: undefined,
+  },
+  icon: {
+    type: String,
+    default: undefined,
+  },
+  color: {
+    type: String as PropType<IconButtonColor>,
+    default: undefined,
+    validator: function (value: IconButtonColor) {
+      // The value must match one of these strings
+      if (
+        [
+          undefined,
+          'primary',
+          'info',
+          'success',
+          'warning',
+          'danger',
+          'white',
+        ].indexOf(value) === -1
+      ) {
+        console.warn(
+          `V-IconButton: invalid "${value}" color. Should be primary, info, success, warning, danger, white or undefined`
+        )
+        return false
+      }
+
+      return true
+    },
+  },
+  dark: {
+    type: String as PropType<IconButtonDark>,
+    default: undefined,
+    validator: function (value: IconButtonDark) {
+      if (!value) return true
+      // The value must match one of these strings
+      if (['1', '2', '3', '4', '5', '6'].indexOf(value) === -1) {
+        console.warn(
+          `V-IconButton: invalid "${value}" dark. Should be 1, 2, 3, 4, 5, 6 or undefined`
+        )
+        return false
+      }
+
+      return true
+    },
   },
   circle: {
     type: Boolean,
@@ -17,10 +77,6 @@ const props = defineProps({
   light: {
     type: Boolean,
     default: false,
-  },
-  dark: {
-    type: String,
-    default: undefined,
   },
   raised: {
     type: Boolean,
@@ -46,18 +102,10 @@ const props = defineProps({
     type: Boolean,
     default: false,
   },
-  color: {
-    type: String,
-    default: '',
-  },
-  iconify: {
-    type: String,
-    default: '',
-  },
-  fa: {
-    type: String,
-    default: '',
-  },
+})
+
+const isIconify = computed(() => {
+  return props.icon && props.icon.indexOf(':') !== -1
 })
 const classes = computed(() => {
   return [
@@ -78,19 +126,27 @@ const classes = computed(() => {
 
 <template>
   <RouterLink v-if="to" :to="to" class="button" :class="classes">
-    <span v-if="fa" class="icon">
-      <i :class="fa"></i>
+    <span v-if="isIconify" class="icon">
+      <i class="iconify" :data-icon="icon"></i>
     </span>
-    <span v-else-if="iconify" class="icon">
-      <i class="iconify" :data-icon="iconify"></i>
+    <span v-else-if="icon" class="icon">
+      <i :class="icon"></i>
     </span>
   </RouterLink>
-  <button v-else class="button" :class="classes" :disabled="disabled">
-    <span v-if="fa" class="icon">
-      <i :class="fa"></i>
+  <a v-else-if="href" :href="href" :class="classes">
+    <span v-if="isIconify" class="icon">
+      <i class="iconify" :data-icon="icon"></i>
     </span>
-    <span v-else-if="iconify" class="icon">
-      <i class="iconify" :data-icon="iconify"></i>
+    <span v-else-if="icon" class="icon">
+      <i :class="icon"></i>
+    </span>
+  </a>
+  <button v-else class="button" :class="classes" :disabled="disabled">
+    <span v-if="isIconify" class="icon">
+      <i class="iconify" :data-icon="icon"></i>
+    </span>
+    <span v-else-if="icon" class="icon">
+      <i :class="icon"></i>
     </span>
   </button>
 </template>

@@ -13,7 +13,9 @@
           src="/images/avatars/photos/13.jpg"
           alt=""
           data-user-popover="6"
-          @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+          @error.once="
+            $event.target.src = 'https://via.placeholder.com/150x150'
+          "
         />
       </div>
     </div>
@@ -25,7 +27,9 @@
             src="/images/avatars/photos/13.jpg"
             alt=""
             data-user-popover="6"
-            @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+            @error.once="
+              $event.target.src = 'https://via.placeholder.com/150x150'
+            "
           />
           <div class="chat-msg-date">Sent at 7:48pm</div>
         </div>
@@ -35,21 +39,27 @@
             <img
               src="/images/photo/demo/apps/15.png"
               alt=""
-              @error="$event.target.src = 'https://via.placeholder.com/400x300'"
+              @error.once="
+                $event.target.src = 'https://via.placeholder.com/400x300'
+              "
             />
           </div>
           <div class="chat-msg-text">
             <img
               src="/images/photo/demo/apps/9.png"
               alt=""
-              @error="$event.target.src = 'https://via.placeholder.com/400x300'"
+              @error.once="
+                $event.target.src = 'https://via.placeholder.com/400x300'
+              "
             />
           </div>
           <div class="chat-msg-text">
             <img
               src="/images/photo/demo/apps/7.png"
               alt=""
-              @error="$event.target.src = 'https://via.placeholder.com/400x300'"
+              @error.once="
+                $event.target.src = 'https://via.placeholder.com/400x300'
+              "
             />
           </div>
           <div class="chat-msg-text">Hope you like them.</div>
@@ -62,7 +72,9 @@
             src="/images/avatars/photos/8.jpg"
             alt=""
             data-user-popover="3"
-            @error="$event.target.src = 'https://via.placeholder.com/150x150'"
+            @error.once="
+              $event.target.src = 'https://via.placeholder.com/150x150'
+            "
           />
           <div class="chat-msg-date">Sent at 10:21pm</div>
         </div>

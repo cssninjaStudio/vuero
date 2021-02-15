@@ -306,7 +306,7 @@ watch(previewTemplate, () => {
               <img
                 data-dz-thumbnail
                 alt=""
-                @error="
+                @error.once="
                   $event.target.src = 'https://via.placeholder.com/150x150'
                 "
               />
