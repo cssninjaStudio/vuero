@@ -10,10 +10,10 @@ const experience = ref('')
 const firstJob = ref('')
 const flexibility = ref('')
 const remote = ref('')
-const skills = ref(['software', 'sass', 'engineering'])
+const skills = ref(['software', 'saas', 'engineering'])
 const skillsOptions = [
   { value: 'software', label: 'Software' },
-  { value: 'sass', label: 'Sass' },
+  { value: 'saas', label: 'SaaS' },
   { value: 'engineering', label: 'Engineering' },
 ]
 

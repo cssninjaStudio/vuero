@@ -1,5 +1,17 @@
 <script setup lang="ts">
+import type { PropType } from 'vue'
 import { computed, defineEmit, defineProps, ref } from 'vue'
+
+type CreditCardColor =
+  | 'grey'
+  | 'green'
+  | 'lime'
+  | 'orange'
+  | 'purple'
+  | 'red'
+  | 'yellow'
+  | 'lightblue'
+  | 'cyan'
 
 const props = defineProps({
   number: {
@@ -16,7 +28,35 @@ const props = defineProps({
   },
   cvc: {
     type: String,
-    default: '985',
+    default: '987',
+  },
+  color: {
+    type: String as PropType<CreditCardColor>,
+    default: 'grey',
+    validator: function (value: CreditCardColor) {
+      // The value must match one of these strings
+      if (
+        [
+          undefined,
+          'grey',
+          'green',
+          'lime',
+          'orange',
+          'purple',
+          'red',
+          'yellow',
+          'lightblue',
+          'cyan',
+        ].indexOf(value) === -1
+      ) {
+        console.warn(
+          `V-CreditCard: invalid "${value}" dark. Should be grey, green, lime, orange, purple, red, yellow, lightblue, cyan`
+        )
+        return false
+      }
+
+      return true
+    },
   },
   flipped: {
     type: Boolean,
@@ -37,7 +77,8 @@ const nameUppercase = computed(() => props.name.toUpperCase())
       @click="emit('flip')"
     >
       <div class="front">
-        <div id="ccsingle"></div>
+        <slot></slot>
+
         <svg
           id="cardfront"
           version="1.1"
@@ -55,14 +96,16 @@ const nameUppercase = computed(() => props.name.toUpperCase())
                 <g id="amex_1_">
                   <path
                     id="Rectangle-1_1_"
-                    class="lightcolor grey"
+                    class="lightcolor"
+                    :class="color"
                     d="M40,0h670c22.1,0,40,17.9,40,40v391c0,22.1-17.9,40-40,40H40c-22.1,0-40-17.9-40-40V40
                         C0,17.9,17.9,0,40,0z"
                   />
                 </g>
               </g>
               <path
-                class="darkcolor greydark"
+                class="darkcolor"
+                :class="`${color}dark`"
                 d="M750,431V193.2c-217.6-57.5-556.4-13.5-750,24.9V431c0,22.1,17.9,40,40,40h670C732.1,471,750,453.1,750,431z"
               />
             </g>
@@ -207,7 +250,8 @@ const nameUppercase = computed(() => props.name.toUpperCase())
               <g id="amex_2_">
                 <path
                   id="Rectangle-1_2_"
-                  class="darkcolor greydark"
+                  class="darkcolor"
+                  :class="`${color}dark`"
                   d="M40,0h670c22.1,0,40,17.9,40,40v391c0,22.1-17.9,40-40,40H40c-22.1,0-40-17.9-40-40V40
                     C0,17.9,17.9,0,40,0z"
                 />

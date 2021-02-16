@@ -7,6 +7,14 @@ export const popovers = {
     position: 'Software Engineer',
     bio: 'This is a nice user description that we can use as demo content.',
   },
+  user8: {
+    avatar: '/images/avatars/photos/8.jpg',
+    badge: '/images/icons/flags/united-states-of-america.svg',
+    username: 'Erik K.',
+    location: 'New York, NY',
+    position: 'Software Engineer',
+    bio: 'This is a nice user description that we can use as demo content.',
+  },
   user13: {
     avatar: '/images/avatars/photos/13.jpg',
     badge: '/images/icons/flags/united-states-of-america.svg',

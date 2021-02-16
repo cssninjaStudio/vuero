@@ -41,7 +41,7 @@ useHead({
     </div>
 
     <div class="page-content-inner">
-      <SassBilling />
+      <SaasBillingApp />
     </div>
   </div>
 </template>

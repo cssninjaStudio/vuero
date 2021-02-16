@@ -1,13 +1,49 @@
 <script setup lang="ts">
-import { reactive, ref } from 'vue'
+import { computed, reactive, ref } from 'vue'
 
+import { plans } from '/@src/data/apps/saas-billing'
+import useCreditcardMask from '/@src/composition/use/useCreditcardMask'
+import { popovers } from '/@src/data/users/userPopovers'
+
+const {
+  creditcardIcon,
+  creditcardLogo,
+  creditcardColor,
+  creditcardMaskDate,
+  creditcardMaskCVC,
+  creditcardMaskNumber,
+  creditcardMaskNumberOnAccept,
+} = useCreditcardMask()
+
+const selectedPlanId = ref('starter')
 const isCardFlipped = ref(false)
-const cardInfo = reactive({
+const creditcardInput = reactive({
   number: '',
   name: '',
   cvc: '',
   expiry: '',
 })
+
+const selectedPlan = computed(() => {
+  return plans.find((plan) => plan.id === selectedPlanId.value)
+})
+
+const testCards = [
+  '4000056655665556',
+  '5200828282828210',
+  '371449635398431',
+  '6011000990139424',
+  '30569309025904',
+  '3566002020360505',
+  '6200000000000005',
+  '6759649826438453',
+]
+const randomCard = () => {
+  const randomNumber = Math.floor(Math.random() * testCards.length)
+  if (creditcardInput.number !== testCards[randomNumber]) {
+    creditcardInput.number = testCards[randomNumber]
+  }
+}
 </script>
 
 <template>
@@ -18,92 +54,18 @@ const cardInfo = reactive({
         <div class="inner-wrap">
           <h3>Select a Plan</h3>
           <div class="plans">
-            <div
-              class="plan"
-              data-monthly="$45"
-              data-yearly="$530"
-              data-seats="3"
-              data-projects="20"
-              data-storage="20GB"
-              data-addons="1"
-              data-logo-light="/@src/assets/illustrations/pricing/huro-starter.svg"
-              data-logo-dark="/@src/assets/illustrations/pricing/huro-starter-dark.svg"
-            >
-              <input type="radio" name="plan_selection" />
+            <div v-for="plan in plans" :key="plan.id" class="plan">
+              <input
+                type="radio"
+                name="plan_selection"
+                :checked="selectedPlanId === plan.id"
+                @click="selectedPlanId = plan.id"
+              />
               <div class="plan-inner">
-                <AnimatedLogo width="36px" height="36px" />
+                <img :src="plan.icon" alt="" />
                 <div class="meta">
-                  <span>Vuero Starter</span>
-                  <span>Plan for starters</span>
-                </div>
-                <div class="checkmark">
-                  <i class="iconify" data-icon="feather:check"></i>
-                </div>
-              </div>
-            </div>
-            <div
-              class="plan"
-              data-monthly="$99"
-              data-yearly="$1080"
-              data-seats="8"
-              data-projects="150"
-              data-storage="100GB"
-              data-addons="3"
-              data-logo-light="/@src/assets/illustrations/pricing/huro-pro.svg"
-              data-logo-dark="/@src/assets/illustrations/pricing/huro-pro-dark.svg"
-            >
-              <input type="radio" name="plan_selection" checked />
-              <div class="plan-inner">
-                <img src="/images/logos/logo/logo-secondary.svg" alt="" />
-                <div class="meta">
-                  <span>Vuero Pro</span>
-                  <span>For professionals</span>
-                </div>
-                <div class="checkmark">
-                  <i class="iconify" data-icon="feather:check"></i>
-                </div>
-              </div>
-            </div>
-            <div
-              class="plan"
-              data-monthly="$149"
-              data-yearly="$1590"
-              data-seats="20"
-              data-projects="Unlimited"
-              data-storage="500GB"
-              data-addons="5"
-              data-logo-light="/@src/assets/illustrations/pricing/huro-business.svg"
-              data-logo-dark="/@src/assets/illustrations/pricing/huro-business-dark.svg"
-            >
-              <input type="radio" name="plan_selection" />
-              <div class="plan-inner">
-                <img src="/images/logos/logo/logo-accent.svg" alt="" />
-                <div class="meta">
-                  <span>Vuero Business</span>
-                  <span>For serious people</span>
-                </div>
-                <div class="checkmark">
-                  <i class="iconify" data-icon="feather:check"></i>
-                </div>
-              </div>
-            </div>
-            <div
-              class="plan"
-              data-monthly="$199"
-              data-yearly="$2230"
-              data-seats="40"
-              data-projects="Unlimited"
-              data-storage="Unlimited"
-              data-addons="Unlimited"
-              data-logo-light="/@src/assets/illustrations/pricing/huro-enterprise.svg"
-              data-logo-dark="/@src/assets/illustrations/pricing/huro-enterprise-dark.svg"
-            >
-              <input type="radio" name="plan_selection" />
-              <div class="plan-inner">
-                <img src="/images/logos/logo/logo-platinum.svg" alt="" />
-                <div class="meta">
-                  <span>Vuero Enterprise</span>
-                  <span>For big companies</span>
+                  <span>{{ plan.name }}</span>
+                  <span>{{ plan.slogan }}</span>
                 </div>
                 <div class="checkmark">
                   <i class="iconify" data-icon="feather:check"></i>
@@ -115,51 +77,43 @@ const cardInfo = reactive({
       </div>
       <div class="right">
         <div class="plan-details">
-          <div class="plan-details-inner">
+          <div v-if="selectedPlan" class="plan-details-inner">
             <div class="plan-description">
               <div class="left">
                 <img
-                  id="plan-logo-light"
                   class="light-image"
-                  src="/@src/assets/illustrations/pricing/huro-pro.svg"
+                  :src="selectedPlan.logo.light"
                   alt=""
                 />
-                <img
-                  id="plan-logo-dark"
-                  class="dark-image"
-                  src="/@src/assets/illustrations/pricing/huro-pro-dark.svg"
-                  alt=""
-                />
+                <img class="dark-image" :src="selectedPlan.logo.dark" alt="" />
               </div>
               <div class="right">
                 <div class="plan-pricing">
-                  <span
-                    ><b><var id="plan-monthly">$99</var></b> per month</span
-                  >
-                  <span>Billed <var id="plan-yearly">$1080</var> yearly</span>
+                  <span>
+                    <b>{{ selectedPlan.costs.monthly }}</b>
+                    per month
+                  </span>
+                  <span> Billed {{ selectedPlan.costs.yearly }} yearly </span>
                 </div>
                 <div class="plan-moto">
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Utilitatis causa amicitia est quaesita.
+                    {{ selectedPlan.intro }}
                   </p>
                 </div>
               </div>
             </div>
             <div class="plan-summary">
               <p>
-                Vuero has incredible features and each plan perfectly adapts to
-                your company, wether it is a small business or a bigger one.
-                Vuero can also scale with you, as your business grows.
+                {{ selectedPlan.summary }}
               </p>
               <div class="plan-features">
                 <div class="columns">
                   <div class="column is-6">
                     <div class="content">
                       <ul>
-                        <li><var id="plan-seats">5</var> seats</li>
-                        <li><var id="plan-projects">150</var> projects</li>
-                        <li><var id="plan-storage">100GB</var> storage</li>
+                        <li>{{ selectedPlan.limits.seats }} seats</li>
+                        <li>{{ selectedPlan.limits.projects }} projects</li>
+                        <li>{{ selectedPlan.limits.storage }} storage</li>
                       </ul>
                     </div>
                   </div>
@@ -168,7 +122,7 @@ const cardInfo = reactive({
                       <ul>
                         <li>Live updates</li>
                         <li>Payments</li>
-                        <li><var id="plan-addons">3</var> Addons</li>
+                        <li>{{ selectedPlan.limits.addons }} Addons</li>
                       </ul>
                     </div>
                   </div>
@@ -188,49 +142,41 @@ const cardInfo = reactive({
             <span>3 remaining</span>
           </div>
           <div class="block-body is-seats">
-            <div class="v-avatar">
-              <img
-                class="avatar"
-                src="/images/avatars/photos/8.jpg"
-                alt=""
-                data-user-popover="3"
-                @error.once="
-                  $event.target.src = 'https://via.placeholder.com/150x150'
-                "
-              />
-            </div>
-            <div class="v-avatar">
-              <span class="avatar is-fake is-warning" data-user-popover="36">
-                <span>BT</span>
-              </span>
-            </div>
-            <div class="v-avatar">
-              <img
-                class="avatar"
-                src="/images/avatars/photos/18.jpg"
-                alt=""
-                data-user-popover="7"
-                @error.once="
-                  $event.target.src = 'https://via.placeholder.com/150x150'
-                "
-              />
-            </div>
-            <div class="v-avatar">
-              <span class="avatar is-fake is-info" data-user-popover="34">
-                <span>JD</span>
-              </span>
-            </div>
-            <div class="v-avatar">
-              <img
-                class="avatar"
-                src="/images/avatars/photos/7.jpg"
-                alt=""
-                data-user-popover="0"
-                @error.once="
-                  $event.target.src = 'https://via.placeholder.com/150x150'
-                "
-              />
-            </div>
+            <tippy interactive placement="bottom-start">
+              <V-Avatar picture="/images/avatars/photos/8.jpg" />
+              <template #content>
+                <UserPopoverContent :user="popovers.user8" />
+              </template>
+            </tippy>
+
+            <tippy interactive placement="bottom-start">
+              <V-Avatar color="warning" initials="BT" />
+              <template #content>
+                <UserPopoverContent :user="popovers.user122" />
+              </template>
+            </tippy>
+
+            <tippy interactive placement="bottom">
+              <V-Avatar picture="/images/avatars/photos/18.jpg" />
+              <template #content>
+                <UserPopoverContent :user="popovers.user18" />
+              </template>
+            </tippy>
+
+            <tippy interactive placement="bottom">
+              <V-Avatar color="info" initials="JD" />
+              <template #content>
+                <UserPopoverContent :user="popovers.user123" />
+              </template>
+            </tippy>
+
+            <tippy interactive placement="bottom">
+              <V-Avatar picture="/images/avatars/photos/7.jpg" />
+              <template #content>
+                <UserPopoverContent :user="popovers.user7" />
+              </template>
+            </tippy>
+
             <button class="add-seat">
               <i class="iconify" data-icon="feather:plus"></i>
             </button>
@@ -244,20 +190,33 @@ const cardInfo = reactive({
           <div class="block-body">
             <div class="switch-block">
               <label class="form-switch is-primary">
-                <input type="checkbox" class="is-switch" checked />
+                <input
+                  id="block-switch-invoices"
+                  type="checkbox"
+                  class="is-switch"
+                />
                 <i></i>
               </label>
               <div class="text">
-                <span>Send new invoices to my inbox</span>
+                <label for="block-switch-invoices">
+                  <span>Send new invoices to my inbox</span>
+                </label>
               </div>
             </div>
+
             <div class="switch-block">
               <label class="form-switch is-primary">
-                <input type="checkbox" class="is-switch" />
+                <input
+                  id="block-switch-warn"
+                  type="checkbox"
+                  class="is-switch"
+                />
                 <i></i>
               </label>
               <div class="text">
-                <span>Warn me before the end of the billing period</span>
+                <label for="block-switch-warn">
+                  <span>Warn me before the end of the billing period</span>
+                </label>
               </div>
             </div>
           </div>
@@ -269,21 +228,26 @@ const cardInfo = reactive({
             <a>My Invoices</a>
           </div>
           <div class="block-body">
-            <div class="field">
-              <div class="control">
+            <V-Field>
+              <V-Control>
                 <label class="radio">
-                  <input type="radio" name="billing_radio" checked />
+                  <input
+                    type="radio"
+                    name="billing_radio"
+                    value="monthly"
+                    checked
+                  />
                   <span></span>
                   Monthly
                 </label>
 
                 <label class="radio is-outlined is-primary">
-                  <input type="radio" name="billing_radio" />
+                  <input type="radio" name="billing_radio" value="yearly" />
                   <span></span>
                   Yearly
                 </label>
-              </div>
-            </div>
+              </V-Control>
+            </V-Field>
           </div>
         </div>
       </div>
@@ -292,102 +256,107 @@ const cardInfo = reactive({
         <div class="payment-form">
           <div class="form-header">
             <h3>Payment information</h3>
-            <span id="generatecard">Randomize</span>
+            <span @click="randomCard">Randomize</span>
           </div>
 
-          <CreditCard
+          <V-CreditCard
+            :color="creditcardColor"
             :flipped="isCardFlipped"
-            :name="cardInfo.name"
-            :number="cardInfo.number"
-            :cvc="cardInfo.cvc"
-            :expiry="cardInfo.expiry"
+            :name="creditcardInput.name"
+            :number="creditcardInput.number"
+            :cvc="creditcardInput.cvc"
+            :expiry="creditcardInput.expiry"
             @flip="isCardFlipped = !isCardFlipped"
-          />
+          >
+            <!-- eslint-disable vue/no-v-html -->
+            <div
+              v-if="creditcardLogo"
+              id="ccsingle"
+              v-html="creditcardLogo"
+            ></div>
+            <!-- eslint-enable vue/no-v-html -->
+          </V-CreditCard>
 
           <div class="form-container">
             <div class="columns is-multiline">
               <div class="column is-12">
-                <div class="field">
+                <V-Field>
                   <label for="name">Name</label>
-                  <div class="control">
+                  <V-Control>
                     <input
                       id="name"
-                      v-model="cardInfo.name"
+                      v-model="creditcardInput.name"
+                      autocomplete="cc-given-name"
                       class="input"
                       maxlength="20"
                       type="text"
                       placeholder="The name on the card"
                       @focus="isCardFlipped = false"
                     />
-                  </div>
-                </div>
+                  </V-Control>
+                </V-Field>
               </div>
               <div class="column is-12">
-                <div class="field">
+                <V-Field>
                   <label for="cardnumber">Card Number</label>
-                  <div class="control">
-                    <input
+                  <V-Control>
+                    <V-IMaskInput
                       id="cardnumber"
-                      v-model="cardInfo.number"
+                      v-model="creditcardInput.number"
+                      autocomplete="cc-number"
                       class="input"
-                      type="text"
-                      pattern="[0-9]*"
+                      :options="creditcardMaskNumber"
                       placeholder="Credit card number"
                       @focus="isCardFlipped = false"
+                      @accept="creditcardMaskNumberOnAccept"
                     />
-                    <svg
-                      id="ccicon"
-                      class="ccicon"
-                      width="750"
-                      height="471"
-                      viewBox="0 0 750 471"
-                      version="1.1"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                    ></svg>
-                  </div>
-                </div>
+                    <!-- eslint-disable vue/no-v-html -->
+                    <div
+                      id="creditcardIcon"
+                      class="creditcardIcon"
+                      v-html="creditcardIcon"
+                    ></div>
+                    <!-- eslint-enable vue/no-v-html -->
+                  </V-Control>
+                </V-Field>
               </div>
               <div class="column is-6">
-                <div class="field">
+                <V-Field>
                   <label for="expirationdate">Expiration</label>
-                  <div class="control">
-                    <input
+                  <V-Control>
+                    <V-IMaskInput
                       id="expirationdate"
-                      v-model="cardInfo.expiry"
+                      v-model="creditcardInput.expiry"
+                      autocomplete="cc-exp"
                       class="input"
-                      type="text"
-                      pattern="[0-9]*"
+                      :options="creditcardMaskDate"
                       placeholder="MM / YY"
                       @focus="isCardFlipped = false"
                     />
-                  </div>
-                </div>
+                  </V-Control>
+                </V-Field>
               </div>
               <div class="column is-6">
-                <div class="field">
+                <V-Field>
                   <label for="securitycode">CVC</label>
-                  <div class="control">
-                    <input
+                  <V-Control>
+                    <V-IMaskInput
                       id="securitycode"
-                      v-model="cardInfo.cvc"
+                      v-model="creditcardInput.cvc"
+                      autocomplete="cc-csc"
                       class="input"
-                      type="text"
-                      pattern="[0-9]*"
+                      :options="creditcardMaskCVC"
                       placeholder="3 digits code"
                       @focus="isCardFlipped = true"
                     />
-                  </div>
-                </div>
+                  </V-Control>
+                </V-Field>
               </div>
               <div class="column is-12">
                 <div class="button-wrap">
-                  <button
-                    type="button"
-                    class="button v-button is-primary is-raised is-fullwidth"
-                  >
+                  <V-Button color="primary" raised fullwidth>
                     Save Payment Method
-                  </button>
+                  </V-Button>
                 </div>
               </div>
             </div>
@@ -399,8 +368,8 @@ const cardInfo = reactive({
 </template>
 
 <style lang="scss">
-@import '../../assets/scss/abstracts/_variables.scss';
-@import '../../assets/scss/abstracts/_mixins.scss';
+@import '../../../assets/scss/abstracts/_variables.scss';
+@import '../../../assets/scss/abstracts/_mixins.scss';
 
 /* ==========================================================================
 1. SaaS Billing
@@ -739,12 +708,14 @@ const cardInfo = reactive({
             .control {
               position: relative;
 
-              .ccicon {
-                height: 30px;
-                position: absolute;
-                right: -2px;
-                top: 4px;
-                width: 60px;
+              .creditcardIcon {
+                svg {
+                  height: 30px;
+                  position: absolute;
+                  right: -2px;
+                  top: 4px;
+                  width: 60px;
+                }
               }
             }
           }

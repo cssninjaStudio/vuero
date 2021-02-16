@@ -21,7 +21,7 @@ defineProps({
       :key="todo.id"
       class="inner-list-item media-flex-center"
     >
-      <V-AnimatedCheckbox v-model:checked="todo.completed" :color="color" />
+      <V-AnimatedCheckbox v-model="todo.completed" :color="color" />
       <div class="flex-meta is-light">
         <a href="#">{{ todo.title }}</a>
         <span>{{ todo.time }}</span>
