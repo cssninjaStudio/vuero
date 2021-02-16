@@ -52,6 +52,7 @@
     "filepond-plugin-image-preview": "4.6.5",
     "filepond-plugin-image-resize": "2.0.7",
     "filepond-plugin-image-transform": "3.7.5",
+    "imask": "^6.0.7",
     "markdown-it-emoji": "2.0.0",
     "notyf": "3.9.0",
     "nprogress": "0.2.0",

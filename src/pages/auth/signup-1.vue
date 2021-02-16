@@ -548,7 +548,7 @@ onUnmounted(() => {
       align-items: center;
       height: 46px;
       width: 46px;
-      border-radius: 50%;
+      border-radius: $radius-rounded;
       background: $fade-grey;
       cursor: pointer;
       z-index: 1;
@@ -586,7 +586,7 @@ onUnmounted(() => {
         align-items: center;
         height: 40px;
         width: 40px;
-        border-radius: 50%;
+        border-radius: $radius-rounded;
         border: 2px solid $accent-grey;
         background: $accent-grey;
       }
@@ -749,7 +749,7 @@ onUnmounted(() => {
               display: flex;
               justify-content: center;
               align-items: center;
-              border-radius: 50%;
+              border-radius: $radius-rounded;
 
               svg {
                 height: 10px;
@@ -919,7 +919,7 @@ onUnmounted(() => {
           padding: 12px;
           background: $white;
           border: 1px solid darken($fade-grey, 3%);
-          border-radius: 6px;
+          border-radius: $radius-large;
           transition: all 0.3s;
 
           i {
@@ -987,12 +987,12 @@ onUnmounted(() => {
       width: 140px;
       height: 140px;
       margin: 10px auto;
-      border-radius: 50%;
+      border-radius: $radius-rounded;
 
       img {
         width: 140px;
         height: 140px;
-        border-radius: 50%;
+        border-radius: $radius-rounded;
         display: block;
         border: 4px solid #e8e8e8;
         margin-left: -1px;
@@ -1008,7 +1008,7 @@ onUnmounted(() => {
         justify-content: center;
         align-items: center;
         background: $white;
-        border-radius: 50%;
+        border-radius: $radius-rounded;
         border: 1px solid darken($fade-grey, 4%);
         z-index: 5;
         transition: all 0.3s;
@@ -1052,7 +1052,7 @@ onUnmounted(() => {
     img {
       height: 70px;
       width: 70px;
-      border-radius: 50%;
+      border-radius: $radius-rounded;
       margin: 0 auto;
       transition: all 0.3s;
     }

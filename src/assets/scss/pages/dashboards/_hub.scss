@@ -44,7 +44,7 @@
 
       .hub-card {
         background-color: $white;
-        border-radius: 6px;
+        border-radius: $radius-large;
         border: 1px solid darken($fade-grey, 3%);
         width: calc(50% - 20px);
         max-width: calc(50% - 20px);

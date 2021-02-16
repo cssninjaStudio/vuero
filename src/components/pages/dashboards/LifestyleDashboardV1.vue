@@ -1447,7 +1447,7 @@ const props = defineProps({
           height: 140px;
           width: 140px;
           min-width: 140px;
-          border-radius: 50%;
+          border-radius: $radius-rounded;
         }
 
         .button {
@@ -1535,7 +1535,7 @@ const props = defineProps({
             justify-content: center;
             border: 3px solid $white;
             background: $fade-grey;
-            border-radius: 50%;
+            border-radius: $radius-rounded;
             margin-right: 10px;
             box-shadow: $light-box-shadow;
 
@@ -1874,7 +1874,7 @@ const props = defineProps({
       padding: 16px;
 
       .title-avatar {
-        border-radius: 50%;
+        border-radius: $radius-rounded;
         border: 1px solid darken($fade-grey, 3%);
         box-shadow: $light-box-shadow;
 
@@ -1883,7 +1883,7 @@ const props = defineProps({
           height: 50px;
           width: 50px;
           min-width: 50px;
-          border-radius: 50%;
+          border-radius: $radius-rounded;
           border: 3px solid $white;
         }
       }
@@ -1923,7 +1923,7 @@ const props = defineProps({
             justify-content: center;
             align-items: center;
             min-height: 34px;
-            border-radius: 6px;
+            border-radius: $radius-large;
             background: darken($widget-grey, 2%);
 
             &.heat-1 {
@@ -2004,7 +2004,7 @@ const props = defineProps({
           min-height: 65px;
           max-height: 85px;
           object-fit: cover;
-          border-radius: 6px;
+          border-radius: $radius-large;
           margin: 0;
         }
       }

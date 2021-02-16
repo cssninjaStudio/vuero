@@ -690,7 +690,7 @@ useHead({
         .brand-icon {
           height: 50px;
           width: 50px;
-          border-radius: 50%;
+          border-radius: $radius-rounded;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -818,7 +818,7 @@ useHead({
                 left: 2px;
                 height: 22px;
                 width: 22px;
-                border-radius: 50%;
+                border-radius: $radius-rounded;
                 background: black;
                 display: flex;
                 justify-content: center;
@@ -1122,7 +1122,7 @@ useHead({
     height: 54px;
     width: 54px;
     min-width: 54px;
-    border-radius: 50%;
+    border-radius: $radius-rounded;
     background: $white;
     border: 1px solid $fade-grey;
     box-shadow: $light-box-shadow;
@@ -1135,7 +1135,7 @@ useHead({
       display: block;
       height: 40px;
       width: 40px;
-      border-radius: 50%;
+      border-radius: $radius-rounded;
     }
   }
 }
@@ -1502,7 +1502,7 @@ useHead({
     left: -60px;
     width: 60px;
     height: 60px;
-    border-radius: 50%;
+    border-radius: $radius-rounded;
     background: $primary;
     transform: scale(1);
     transition: all 0.5s;
@@ -2010,7 +2010,7 @@ useHead({
         left: 4px;
         width: $toggleBtnRadius;
         height: $toggleBtnRadius;
-        border-radius: 50%;
+        border-radius: $radius-rounded;
       }
     }
   }
@@ -2035,7 +2035,7 @@ useHead({
         height: $toggleBtnRadius / 5;
         opacity: 0;
         background-color: $cloud-bgColor;
-        border-radius: 50%;
+        border-radius: $radius-rounded;
 
         //crazy ass box-shadow to make the cloud
         box-shadow: $cloud-bgColor 0 0, $cloud-bgColor 3px 0,
@@ -2093,7 +2093,7 @@ useHead({
       z-index: 20;
       width: 4px;
       height: 4px;
-      border-radius: 50%;
+      border-radius: $radius-rounded;
       background-color: #fff;
       box-shadow: rgba(255, 255, 255, 0.1) 30px -3px 0 0,
         rgba(255, 255, 255, 0.1) 12px 10px 0 -1px, #fff 38px 18px 0 1px,
@@ -2108,7 +2108,7 @@ useHead({
         width: 18px;
         height: 18px;
         background-color: $toggleBtn-bgColor--night;
-        border-radius: 50%;
+        border-radius: $radius-rounded;
         border: 5px solid $toggleBtn-borderColor--night;
         box-shadow: $toggleBtn-borderColor--night -28px 0 0 -3px,
           $toggleBtn-borderColor--night -8px 24px 0 -2px;
@@ -2261,7 +2261,7 @@ useHead({
         width: 100%;
 
         .navbar-burger {
-          border-radius: 50%;
+          border-radius: $radius-rounded;
           margin-right: 12px;
         }
       }
@@ -2418,7 +2418,7 @@ useHead({
         .navbar-burger {
           height: 40px;
           width: 40px;
-          border-radius: 50%;
+          border-radius: $radius-rounded;
           margin-right: 12px;
         }
       }

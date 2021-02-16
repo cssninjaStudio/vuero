@@ -16,7 +16,7 @@
   background: $white;
   margin: 0 auto;
   box-shadow: $light-box-shadow;
-  border-radius: 6px;
+  border-radius: $radius-large;
   overflow: hidden;
 
   .accordion-item {
@@ -52,7 +52,7 @@
       display: inline-block;
       width: 0.75rem;
       height: 0.75rem;
-      border-radius: 50%;
+      border-radius: $radius-rounded;
       background-color: #b1b5be;
       margin-right: 0.75rem;
     }
@@ -168,7 +168,7 @@
       height: 30px;
       width: 30px;
       background: $white;
-      border-radius: 50%;
+      border-radius: $radius-rounded;
       border: 1px solid transparent;
       transition: all 0.3s;
 

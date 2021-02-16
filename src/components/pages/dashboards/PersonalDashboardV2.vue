@@ -252,7 +252,7 @@ const democheck4 = ref(false)
               <!-- List item -->
               <div class="list-item">
                 <!-- Animated checkbox-->
-                <V-AnimatedCheckbox v-model:checked="democheck1" />
+                <V-AnimatedCheckbox v-model="democheck1" />
                 <div class="item-meta">
                   <span class="dark-inverted">Call Mr. Markstrom</span>
                   <span>Review the project initial wireframes</span>
@@ -261,7 +261,7 @@ const democheck4 = ref(false)
               <!-- List item -->
               <div class="list-item">
                 <!-- Animated checkbox-->
-                <V-AnimatedCheckbox v-model:checked="democheck2" />
+                <V-AnimatedCheckbox v-model="democheck2" />
                 <div class="item-meta">
                   <span class="dark-inverted">Finish wireframes</span>
                   <span>Make all requested changes and publish</span>
@@ -270,7 +270,7 @@ const democheck4 = ref(false)
               <!-- List item -->
               <div class="list-item">
                 <!-- Animated checkbox-->
-                <V-AnimatedCheckbox v-model:checked="democheck3" />
+                <V-AnimatedCheckbox v-model="democheck3" />
                 <div class="item-meta">
                   <span class="dark-inverted">Update timesheets</span>
                   <span>Update all the team timesheets</span>
@@ -279,7 +279,7 @@ const democheck4 = ref(false)
               <!-- List item -->
               <div class="list-item">
                 <!-- Animated checkbox-->
-                <V-AnimatedCheckbox v-model:checked="democheck4" />
+                <V-AnimatedCheckbox v-model="democheck4" />
                 <div class="item-meta">
                   <span class="dark-inverted">Request payout</span>
                   <span>send project invoice to client</span>
@@ -346,7 +346,7 @@ const democheck4 = ref(false)
       margin-left: auto;
       background: lighten($primary, 8%);
       padding: 20px;
-      border-radius: 6px;
+      border-radius: $radius-large;
       box-shadow: $primary-box-shadow;
 
       .lnil,

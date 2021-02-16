@@ -169,7 +169,7 @@ Responsive styles
         top: 100%;
         z-index: 3;
         background: $white;
-        border-radius: 6px;
+        border-radius: $radius-large;
         border: 1px solid $fade-grey;
         box-shadow: 0 8px 8px rgba(10, 10, 10, 0.1),
           0 0 0 1px rgba(10, 10, 10, 0.1);
@@ -315,7 +315,7 @@ Responsive styles
         top: 100%;
         z-index: 3;
         background: $white;
-        border-radius: 6px;
+        border-radius: $radius-large;
         border: 1px solid $fade-grey;
         box-shadow: 0 8px 8px rgba(10, 10, 10, 0.1),
           0 0 0 1px rgba(10, 10, 10, 0.1);

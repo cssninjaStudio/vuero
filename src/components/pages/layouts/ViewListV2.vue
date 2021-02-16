@@ -283,7 +283,7 @@ const filteredData = computed(() => {
         min-width: 190px;
         max-width: 190px;
         object-fit: cover;
-        border-radius: 4px;
+        border-radius: $radius;
       }
 
       .meta-left {

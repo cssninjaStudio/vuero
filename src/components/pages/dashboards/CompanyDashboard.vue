@@ -438,7 +438,7 @@ onMounted(async () => {
     padding: 20px;
     background: $white;
     border: 1px solid darken($fade-grey, 3%);
-    border-radius: 6px;
+    border-radius: $radius-large;
     margin-bottom: 1.5rem;
 
     .header-item {

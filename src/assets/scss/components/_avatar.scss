@@ -22,7 +22,7 @@
       right: 1px;
       height: 12px;
       width: 12px;
-      border-radius: 50%;
+      border-radius: $radius-rounded;
       background: $success;
       border: 1.8px solid $white;
     }
@@ -80,7 +80,7 @@
       justify-content: center;
       align-items: center;
       background: $fade-grey;
-      border-radius: 50%;
+      border-radius: $radius-rounded;
 
       &.is-primary {
         background: lighten($primary, 42%);
@@ -192,7 +192,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      border-radius: 50%;
+      border-radius: $radius-rounded;
 
       .inner {
         width: 40px;
@@ -201,7 +201,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        border-radius: 50%;
+        border-radius: $radius-rounded;
         background: lighten($fade-grey, 2%);
         border: 1px solid $fade-grey;
 
@@ -231,7 +231,7 @@
 
   img {
     display: block;
-    border-radius: 50%;
+    border-radius: $radius-rounded;
   }
 
   &.is-small {
@@ -499,10 +499,10 @@
   display: flex;
 
   .v-avatar {
-    border-radius: 50%;
+    border-radius: $radius-rounded;
 
     &.is-small {
-      border-radius: 50%;
+      border-radius: $radius-rounded;
 
       &:not(:first-child) {
         $var: 12;
@@ -522,7 +522,7 @@
     }
 
     &.is-medium {
-      border-radius: 50%;
+      border-radius: $radius-rounded;
 
       &:not(:first-child) {
         $var: 16;

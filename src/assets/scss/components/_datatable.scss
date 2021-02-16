@@ -125,7 +125,7 @@
         align-items: center;
         width: 36px !important;
         height: 36px !important;
-        border-radius: 50%;
+        border-radius: $radius-rounded;
         margin: 4px;
         background: $fade-grey;
         transition: all 0.3s;
@@ -327,7 +327,7 @@
 
       input {
         padding: 6px 8px;
-        border-radius: 4px;
+        border-radius: $radius;
         border: 1px solid $placeholder;
         box-shadow: none;
 
@@ -340,7 +340,7 @@
       .datatable-avatar {
         width: 36px;
         height: 36px;
-        border-radius: 50%;
+        border-radius: $radius-rounded;
       }
 
       .product-photo {
@@ -673,7 +673,7 @@
       .drinks-icon {
         display: block;
         max-width: 48px;
-        border-radius: 50%;
+        border-radius: $radius-rounded;
         border: 1px solid $fade-grey;
       }
 
@@ -789,7 +789,7 @@
           align-items: center;
           font-family: $font;
           color: $light-text;
-          border-radius: 50%;
+          border-radius: $radius-rounded;
           min-width: 34px;
           min-height: 34px;
           padding: 0;

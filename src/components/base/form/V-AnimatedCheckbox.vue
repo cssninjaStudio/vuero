@@ -2,7 +2,7 @@
 import { defineProps, ref, defineEmit, watchEffect } from 'vue'
 
 const props = defineProps({
-  checked: {
+  modelValue: {
     type: Boolean,
     default: false,
   },
@@ -12,18 +12,18 @@ const props = defineProps({
   },
 })
 
-const emit = defineEmit(['update:checked'])
+const emit = defineEmit(['update:modelValue'])
 
 const element = ref<HTMLElement | null>(null)
 const innerElement = ref<HTMLElement | null>(null)
 
 const handleClick = () => {
-  emit('update:checked', !props.checked)
+  emit('update:modelValue', !props.modelValue)
 }
 
 const updateCheckbox = () => {
   if (element.value && innerElement.value) {
-    if (props.checked) {
+    if (props.modelValue) {
       element.value.classList.add('is-checked')
       innerElement.value.classList.add('is-opaque')
       setTimeout(() => {
@@ -48,7 +48,7 @@ watchEffect(updateCheckbox)
     class="animated-checkbox"
     :class="[color && 'is-' + color]"
   >
-    <input type="checkbox" :checked="checked" @change="handleClick" />
+    <input type="checkbox" :checked="modelValue" @change="handleClick" />
     <div class="checkmark-wrap">
       <div ref="innerElement" class="shadow-circle"></div>
       <svg
@@ -180,7 +180,7 @@ $curve: cubic-bezier(0.65, 0, 0.45, 1);
       left: 0;
       height: 32px;
       width: 32px;
-      border-radius: 50%;
+      border-radius: $radius-rounded;
       border: 1px solid $placeholder;
       z-index: 0;
       opacity: 1;
@@ -207,7 +207,7 @@ $curve: cubic-bezier(0.65, 0, 0.45, 1);
     .checkmark {
       width: 32px;
       height: 32px;
-      border-radius: 50%;
+      border-radius: $radius-rounded;
       display: block;
       stroke-width: 2;
       color: $placeholder;

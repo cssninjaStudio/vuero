@@ -92,7 +92,7 @@
     padding: 20px;
     background: $white;
     border: 1px solid darken($fade-grey, 3%);
-    border-radius: 6px;
+    border-radius: $radius-large;
     margin-bottom: 1.5rem;
 
     .header-item {
@@ -137,7 +137,7 @@
       padding: 20px;
       background: $white;
       border: 1px solid darken($fade-grey, 3%);
-      border-radius: 6px;
+      border-radius: $radius-large;
 
       .top-section {
         .head {
@@ -271,7 +271,7 @@
         padding: 20px;
         background: $white;
         border: 1px solid darken($fade-grey, 3%);
-        border-radius: 6px;
+        border-radius: $radius-large;
 
         .stat-item {
           text-align: center;
@@ -295,7 +295,7 @@
               right: 6px;
               height: 8px;
               width: 8px;
-              border-radius: 50%;
+              border-radius: $radius-rounded;
             }
 
             &.is-success {

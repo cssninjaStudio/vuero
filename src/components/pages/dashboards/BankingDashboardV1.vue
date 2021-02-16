@@ -476,7 +476,7 @@ import {
               height: 46px;
               width: 46px;
               background: $white;
-              border-radius: 50%;
+              border-radius: $radius-rounded;
               opacity: 0.15;
             }
           }

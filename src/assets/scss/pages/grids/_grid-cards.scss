@@ -39,7 +39,7 @@
       .card {
         border: 1px solid darken($fade-grey, 4%);
         box-shadow: none;
-        border-radius: 6px;
+        border-radius: $radius-large;
 
         .card-header {
           box-shadow: none;

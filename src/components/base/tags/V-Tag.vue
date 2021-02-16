@@ -5,6 +5,7 @@ import { defineProps } from 'vue'
 type TagColor =
   | undefined
   | 'primary'
+  | 'secondary'
   | 'info'
   | 'success'
   | 'warning'
@@ -31,6 +32,7 @@ const props = defineProps({
         [
           undefined,
           'primary',
+          'secondary',
           'info',
           'success',
           'warning',
@@ -45,7 +47,7 @@ const props = defineProps({
         ].indexOf(value) === -1
       ) {
         console.warn(
-          `V-Tag: invalid "${value}" color. Should be primary, info, success, ` +
+          `V-Tag: invalid "${value}" color. Should be primary, secondary, info, success, ` +
             `warning, danger, orange, blue, green, purple, white, light, solid or undefined`
         )
         return false

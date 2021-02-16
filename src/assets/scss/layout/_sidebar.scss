@@ -257,7 +257,7 @@
           > img {
             height: 48px;
             width: 48px;
-            border-radius: 50%;
+            border-radius: $radius-rounded;
             position: relative;
             z-index: 1;
           }
@@ -269,7 +269,7 @@
             right: 0;
             width: 14px;
             height: 14px;
-            border-radius: 50%;
+            border-radius: $radius-rounded;
             border: 2px solid $white;
             background: $success;
             z-index: 2;

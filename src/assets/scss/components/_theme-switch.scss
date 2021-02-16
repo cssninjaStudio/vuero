@@ -20,7 +20,7 @@ $dayBtn: #ffb62e;
     display: none;
     & + span {
       display: block;
-      border-radius: 50%;
+      border-radius: $radius-rounded;
       width: 36px;
       height: 36px;
       position: relative;
@@ -42,7 +42,7 @@ $dayBtn: #ffb62e;
         content: '';
         width: 8px;
         height: 8px;
-        border-radius: 50%;
+        border-radius: $radius-rounded;
         margin: -4px 0 0 -4px;
         position: absolute;
         top: 50%;

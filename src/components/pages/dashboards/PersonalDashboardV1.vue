@@ -197,7 +197,7 @@ import { profitChartOptions } from '/@src/data/dashboards/personal-v1/profitChar
             padding: 40px 20px;
             background: $widget-grey;
             margin: 8px;
-            border-radius: 6px;
+            border-radius: $radius-large;
             transition: all 0.3s;
 
             ::v-deep(.media-flex-center) {
@@ -226,7 +226,7 @@ import { profitChartOptions } from '/@src/data/dashboards/personal-v1/profitChar
         border-color: lighten($primary, 8%);
         padding: 20px 40px;
         min-height: 320px;
-        border-radius: 6px;
+        border-radius: $radius-large;
         box-shadow: $primary-box-shadow;
 
         .lnil,

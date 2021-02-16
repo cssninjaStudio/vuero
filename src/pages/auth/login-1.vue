@@ -400,7 +400,7 @@ useHead({
               display: flex;
               justify-content: center;
               align-items: center;
-              border-radius: 50%;
+              border-radius: $radius-rounded;
 
               svg {
                 height: 10px;
@@ -642,7 +642,7 @@ useHead({
       left: 2px;
       height: 26px;
       width: 26px;
-      border-radius: 50%;
+      border-radius: $radius-rounded;
       background: black;
       display: flex;
       justify-content: center;

@@ -593,7 +593,7 @@
 
       > img {
         display: block;
-        border-radius: 50%;
+        border-radius: $radius-rounded;
         max-width: 32px;
       }
 
@@ -639,7 +639,7 @@
         .departure {
           height: 16px;
           width: 16px;
-          border-radius: 50%;
+          border-radius: $radius-rounded;
           border: 1px solid $light-text;
         }
 

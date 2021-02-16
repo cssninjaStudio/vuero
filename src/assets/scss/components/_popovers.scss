@@ -122,7 +122,7 @@
     .staff-avatar {
       height: 38px;
       width: 38px;
-      border-radius: 50%;
+      border-radius: $radius-rounded;
     }
 
     .content-block {
@@ -297,7 +297,7 @@
         .avatar {
           width: 44px;
           height: 44px;
-          border-radius: 50%;
+          border-radius: $radius-rounded;
         }
 
         .badge {
@@ -307,7 +307,7 @@
           width: 20px;
           height: 20px;
           border: 1.6px solid $white;
-          border-radius: 50%;
+          border-radius: $radius-rounded;
         }
       }
 
@@ -316,7 +316,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        border-radius: 50%;
+        border-radius: $radius-rounded;
 
         &.is-primary {
           background: lighten($primary, 42%);
@@ -485,7 +485,7 @@
         height: 30px;
         max-width: 30px;
         margin: 0 2px;
-        border-radius: 50%;
+        border-radius: $radius-rounded;
         transition: all 0.3s;
         cursor: pointer;
         pointer-events: all !important;

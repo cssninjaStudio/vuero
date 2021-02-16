@@ -306,7 +306,7 @@
           position: relative;
           height: 14px;
           width: 14px;
-          border-radius: 50%;
+          border-radius: $radius-rounded;
           border: 2.6px solid $primary;
           margin: 0 25px;
           z-index: 1;
@@ -345,7 +345,7 @@
               height: 8px;
               width: 8px;
               min-width: 8px;
-              border-radius: 50%;
+              border-radius: $radius-rounded;
               background: lighten($light-text, 15%);
               margin: 0 16px 0 0;
             }

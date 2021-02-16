@@ -23,6 +23,7 @@ dependencies:
   filepond-plugin-image-preview: 4.6.5_filepond@4.25.1
   filepond-plugin-image-resize: 2.0.7_filepond@4.25.1
   filepond-plugin-image-transform: 3.7.5_filepond@4.25.1
+  imask: 6.0.7
   markdown-it-emoji: 2.0.0
   notyf: 3.9.0
   nprogress: 0.2.0
@@ -5235,6 +5236,12 @@ packages:
       node: '>= 4'
     resolution:
       integrity: sha512-BMpfD7PpiETpBl/A6S498BaIJ6Y/ABT93ETbby2fP00v4EbvPBXWEoaR1UBPKs3iR53pJY7EtZk5KACI57i1Uw==
+  /imask/6.0.7:
+    dev: false
+    engines:
+      npm: '>=4.0.0'
+    resolution:
+      integrity: sha512-zyiKRSzuocb2adasVSz0ku9xxejDRs5wME7Dt5Uk1l83HGBFUP7A8y8Z6TytLCtCiS/A1aArlCTqLcOkoVNbNQ==
   /import-fresh/3.3.0:
     dependencies:
       parent-module: 1.0.1
@@ -10240,6 +10247,7 @@ specifiers:
   filepond-plugin-image-transform: 3.7.5
   gray-matter: 4.0.2
   husky: 5.0.9
+  imask: ^6.0.7
   lint-staged: 10.5.4
   markdown-it: 12.0.4
   markdown-it-anchor: 7.0.2

@@ -246,7 +246,7 @@
           height: 32px;
           width: 32px;
           min-width: 32px;
-          border-radius: 50%;
+          border-radius: $radius-rounded;
           color: $light-text;
           margin: 0 4px;
           transition: all 0.3s;
@@ -336,7 +336,7 @@
         .v-avatar {
           &.is-customer {
             border: 1.6px solid darken($fade-grey, 3%);
-            border-radius: 50%;
+            border-radius: $radius-rounded;
             box-shadow: $light-box-shadow;
           }
         }

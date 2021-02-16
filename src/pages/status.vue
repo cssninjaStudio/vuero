@@ -364,7 +364,7 @@ useHead({
     background: $white;
     margin-bottom: 40px;
     border: 1px solid darken($fade-grey, 3%);
-    border-radius: 6px;
+    border-radius: $radius-large;
 
     .status-header {
       padding: 40px;
@@ -429,7 +429,7 @@ useHead({
           height: 54px;
           width: 54px;
           min-width: 54px;
-          border-radius: 50%;
+          border-radius: $radius-rounded;
           background: $white;
           border: 1px solid darken($fade-grey, 3%);
           box-shadow: $light-box-shadow;
@@ -439,7 +439,7 @@ useHead({
           img {
             display: block;
             max-width: 54px;
-            border-radius: 50%;
+            border-radius: $radius-rounded;
           }
         }
 
