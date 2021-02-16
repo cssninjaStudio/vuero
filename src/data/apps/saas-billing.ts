@@ -1,7 +1,7 @@
 export const plans = [
   {
     id: 'starter',
-    name: 'Vuero Pro',
+    name: 'Vuero Starter',
     slogan: 'Plan for starters',
     intro:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Utilitatis causa amicitia est quaesita.',
