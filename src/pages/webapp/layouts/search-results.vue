@@ -11,7 +11,7 @@ useHead({
     class="page-content is-relative tabs-wrapper is-triple-slider is-squared is-inverted"
   >
     <div class="page-content-inner">
-      <SearchResultsContent />
+      <FacetSearch />
     </div>
   </div>
 </template>

@@ -9,12 +9,9 @@ const activeTab = ref<TabId>('all')
   <!--Empty Search-->
   <div class="search-results-wrapper">
     <div class="search-results-header">
-      <div class="control has-icon">
+      <V-Control icon="feather:search">
         <input class="input" placeholder="Search again..." />
-        <div class="form-icon">
-          <i class="iconify" data-icon="feather:search"></i>
-        </div>
-      </div>
+      </V-Control>
 
       <div class="search-info">
         <span>0 results found</span>
@@ -65,7 +62,7 @@ const activeTab = ref<TabId>('all')
 </template>
 
 <style lang="scss">
-@import '../../assets/scss/abstracts/_variables.scss';
-@import '../../assets/scss/abstracts/_mixins.scss';
-@import '../../assets/scss/pages/generic/_search.scss';
+@import '../../../../assets/scss/abstracts/_variables.scss';
+@import '../../../../assets/scss/abstracts/_mixins.scss';
+@import '../../../../assets/scss/pages/generic/_search.scss';
 </style>
