@@ -40,7 +40,7 @@ const testCards = [
 ]
 const randomCard = () => {
   const randomNumber = Math.floor(Math.random() * testCards.length)
-  if (creditcardInput.number !== testCards[randomNumber]) {
+  if (creditcardInput.number.replace(/\s/g, '') !== testCards[randomNumber]) {
     creditcardInput.number = testCards[randomNumber]
   }
 }
