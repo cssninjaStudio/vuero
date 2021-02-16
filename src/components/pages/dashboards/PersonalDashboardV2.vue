@@ -346,7 +346,7 @@ const democheck4 = ref(false)
       margin-left: auto;
       background: lighten($primary, 8%);
       padding: 20px;
-      border-radius: 6px;
+      border-radius: $radius-large;
       box-shadow: $primary-box-shadow;
 
       .lnil,

@@ -396,7 +396,7 @@ var {
   background: $primary !important;
   color: $white !important;
   border: 1px solid $primary;
-  border-radius: 6px;
+  border-radius: $radius-large;
   transition: all 0.3s;
   cursor: pointer;
   outline: none !important;
@@ -417,7 +417,7 @@ var {
   background: $white !important;
   color: $primary !important;
   border: 1px solid $primary !important;
-  border-radius: 6px;
+  border-radius: $radius-large;
   transition: all 0.3s;
   cursor: pointer;
   outline: none !important;
@@ -530,7 +530,7 @@ var {
     color: $dark-text;
     border: 1px solid $accent-grey;
     box-shadow: $light-box-shadow;
-    border-radius: 6px;
+    border-radius: $radius-large;
     font-size: 0.9rem;
   }
 }
@@ -566,7 +566,7 @@ var {
     .hopscotch-bubble-number {
       padding: 0;
       background: $primary;
-      border-radius: 50%;
+      border-radius: $radius-rounded;
       box-shadow: $primary-box-shadow;
       font-size: 0.8rem;
     }
@@ -603,7 +603,7 @@ var {
   height: 140px;
   width: 140px;
   background: transparent;
-  border-radius: 50%;
+  border-radius: $radius-rounded;
   transform: scale(0.4);
   transition: all 0.3s;
 
@@ -750,7 +750,7 @@ var {
     background-color: $medium-grey;
     opacity: 1;
     transition: all 0.3s;
-    border-radius: 50%;
+    border-radius: $radius-rounded;
     text-align: center;
     font-size: 20px;
     outline: none;

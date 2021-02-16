@@ -181,7 +181,7 @@
               height: 32px;
               width: 32px;
               min-width: 32px;
-              border-radius: 50%;
+              border-radius: $radius-rounded;
               background: $white;
               border: 1px solid darken($fade-grey, 3%);
               box-shadow: $light-box-shadow;

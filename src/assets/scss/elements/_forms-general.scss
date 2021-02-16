@@ -217,7 +217,7 @@ label[for] {
           height: 20px;
           width: 20px;
           border: 1px solid $accent-grey;
-          border-radius: 50%;
+          border-radius: $radius-rounded;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -225,7 +225,7 @@ label[for] {
           .knob-inner {
             height: 8px;
             width: 8px;
-            border-radius: 50%;
+            border-radius: $radius-rounded;
             background: $primary;
             transition: all 0.3s;
             transform: scale(0);
@@ -555,7 +555,7 @@ select {
     background: $white;
     opacity: 0;
     border: 1px solid darken($fade-grey, 3%);
-    border-radius: 4px;
+    border-radius: $radius;
     pointer-events: none;
     transform: translateY(5px);
     box-shadow: $light-box-shadow;
@@ -614,7 +614,7 @@ select {
 
       .v-avatar {
         .article {
-          border-radius: 2px;
+          border-radius: $radius-small;
         }
       }
 
@@ -775,7 +775,7 @@ select {
     justify-content: space-between;
     align-items: center;
     border: 1px solid $fade-grey;
-    border-radius: 6px;
+    border-radius: $radius-large;
     padding: 14px 16px;
     cursor: pointer;
     transition: all 0.3s;
@@ -796,7 +796,7 @@ select {
           img {
             height: 38px;
             width: 38px;
-            border-radius: 50%;
+            border-radius: $radius-rounded;
           }
         }
 
@@ -843,7 +843,7 @@ select {
     width: 100%;
     background: $white;
     border: 1px solid $fade-grey;
-    border-radius: 6px;
+    border-radius: $radius-large;
     margin-top: 10px;
     padding: 5px 0;
     box-shadow: 0 5px 43px rgba(0, 0, 0, 0.18) !important;
@@ -880,7 +880,7 @@ select {
             img {
               height: 32px;
               width: 32px;
-              border-radius: 50%;
+              border-radius: $radius-rounded;
             }
           }
 
@@ -936,7 +936,7 @@ select {
           .autocpl-avatar {
             width: 40px !important;
             height: 40px !important;
-            border-radius: 50% !important;
+            border-radius: $radius-rounded !important;
           }
 
           .avatar-badge {
@@ -946,7 +946,7 @@ select {
             width: 18px;
             height: 18px;
             border: 2px solid $white;
-            border-radius: 50%;
+            border-radius: $radius-rounded;
           }
         }
 
@@ -975,7 +975,7 @@ select {
     border: none !important;
 
     ul {
-      border-radius: 4px !important;
+      border-radius: $radius !important;
       box-shadow: -1px 3px 10px 0 rgba(0, 0, 0, 0.06) !important;
     }
   }
@@ -1009,7 +1009,7 @@ select {
           .autocpl-avatar {
             width: 32px !important;
             height: 32px !important;
-            border-radius: 50% !important;
+            border-radius: $radius-rounded !important;
           }
 
           .avatar-badge {
@@ -1019,7 +1019,7 @@ select {
             width: 16px;
             height: 16px;
             border: 1px solid $white;
-            border-radius: 50%;
+            border-radius: $radius-rounded;
           }
         }
 
@@ -1061,7 +1061,7 @@ select {
     border: none !important;
 
     ul {
-      border-radius: 4px !important;
+      border-radius: $radius !important;
       box-shadow: -1px 3px 10px 0 rgba(0, 0, 0, 0.06) !important;
     }
   }
@@ -1414,7 +1414,7 @@ select {
       display: block;
       width: 24px;
       height: 24px;
-      border-radius: 50%;
+      border-radius: $radius-rounded;
       border: 1px solid transparent;
       box-shadow: 0 2px 2px rgba(#000, 0.2);
       content: '';
@@ -1575,7 +1575,7 @@ select {
     -webkit-appearance: none;
     width: 16px;
     height: 16px;
-    border-radius: 50%;
+    border-radius: $radius-rounded;
     background: $primary;
     cursor: pointer;
     -webkit-transition: transform 0.3s;
@@ -1595,7 +1595,7 @@ select {
     width: 16px;
     height: 16px;
     border: 0;
-    border-radius: 50%;
+    border-radius: $radius-rounded;
     background: $primary;
     cursor: pointer;
     -webkit-transition: background-color 0.15s ease-in-out;
@@ -1681,7 +1681,7 @@ select {
 
   .filepond--root {
     border: 2px dashed darken($fade-grey, 4%);
-    border-radius: 4px;
+    border-radius: $radius;
     min-height: 70px;
     cursor: pointer;
     transition: all 0.3s;
@@ -1744,7 +1744,7 @@ select {
 
 .filepond-square-wrap {
   .filepond--root {
-    border-radius: 4px;
+    border-radius: $radius;
   }
 }
 
@@ -1789,7 +1789,7 @@ select {
   }
 
   .choices__inner {
-    border-radius: 6px;
+    border-radius: $radius-large;
     transition: all 0.3s;
 
     .choices__list {

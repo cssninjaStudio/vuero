@@ -168,7 +168,7 @@
   }
 
   &.is-rounded {
-    border-radius: 50%;
+    border-radius: $radius-rounded;
   }
 
   &.is-primary {

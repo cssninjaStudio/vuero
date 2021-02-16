@@ -1,6 +1,6 @@
 .ck-editor {
   /* Overrides the border radius setting in the theme. */
-  --ck-border-radius: 6px;
+  --ck-border-radius: $radius-large;
 
   /* Overrides the default font size in the theme. */
   --ck-font-size-base: 14px;

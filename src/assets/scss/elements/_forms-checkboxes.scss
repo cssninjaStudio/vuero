@@ -111,7 +111,7 @@
       left: 0;
       height: 32px;
       width: 32px;
-      border-radius: 50%;
+      border-radius: $radius-rounded;
       border: 1px solid $placeholder;
       z-index: 0;
       opacity: 1;
@@ -137,7 +137,7 @@
     .checkmark {
       width: 32px;
       height: 32px;
-      border-radius: 50%;
+      border-radius: $radius-rounded;
       display: block;
       stroke-width: 2;
       color: $placeholder;
@@ -338,7 +338,7 @@
 
   &.is-circle {
     input + span {
-      border-radius: 50%;
+      border-radius: $radius-rounded;
     }
   }
 
@@ -466,7 +466,7 @@
   }
 
   input + span {
-    border-radius: 2px;
+    border-radius: $radius-small;
     transition: all 0.3s;
 
     &::after {
@@ -498,7 +498,7 @@
 
   &.is-square {
     input + span {
-      border-radius: 4px;
+      border-radius: $radius;
     }
   }
 
@@ -739,7 +739,7 @@
       left: -10px;
       height: 40px;
       width: 40px;
-      border-radius: 50%;
+      border-radius: $radius-rounded;
       background: $white;
       border: 1.6px solid transparent;
       box-shadow: $light-box-shadow;

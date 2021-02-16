@@ -57,7 +57,7 @@ Subpages UI Elements
             border: 1px solid darken($fade-grey, 3%);
             max-width: 360px;
             margin: 0 auto;
-            border-radius: 6px;
+            border-radius: $radius-large;
             box-shadow: $light-box-shadow;
 
             h4 {
@@ -161,7 +161,7 @@ Subpages UI Elements
                 height: 32px;
                 width: 32px;
                 min-width: 32px;
-                border-radius: 50%;
+                border-radius: $radius-rounded;
                 background: $white;
                 border: 1px solid darken($fade-grey, 3%);
                 box-shadow: $light-box-shadow;

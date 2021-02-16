@@ -707,7 +707,7 @@ Inbox Layouts
                 height: 32px;
                 width: 32px;
                 min-width: 32px;
-                border-radius: 50%;
+                border-radius: $radius-rounded;
               }
 
               .contact-meta {
@@ -907,7 +907,7 @@ Inbox Layouts
           height: 44px;
           width: 44px;
           min-width: 44px;
-          border-radius: 50%;
+          border-radius: $radius-rounded;
         }
 
         .message-meta {
@@ -1063,7 +1063,7 @@ Inbox Layouts
               height: 24px;
               width: 24px;
               border: 1px solid $fade-grey;
-              border-radius: 50%;
+              border-radius: $radius-rounded;
               display: flex;
               justify-content: center;
               align-items: center;
@@ -1090,7 +1090,7 @@ Inbox Layouts
             position: relative;
             padding: 20px;
             border: 1px solid darken($fade-grey, 5%);
-            border-radius: 6px;
+            border-radius: $radius-large;
             background: $white;
             width: 100%;
 
@@ -1128,7 +1128,7 @@ Inbox Layouts
                 display: block;
                 height: 32px;
                 width: 32px;
-                border-radius: 50%;
+                border-radius: $radius-rounded;
               }
 
               .reply-details {
@@ -1415,7 +1415,7 @@ Inbox Layouts
   justify-content: center;
   align-items: center;
   box-shadow: none;
-  border-radius: 50%;
+  border-radius: $radius-rounded;
   border: 1px solid transparent;
   transition: all 0.3s;
 
@@ -1476,7 +1476,7 @@ Inbox Layouts
     justify-content: center;
     align-items: center;
     box-shadow: none !important;
-    border-radius: 50%;
+    border-radius: $radius-rounded;
     background: transparent;
     border: 1px solid transparent;
 
@@ -1655,7 +1655,7 @@ Inbox Layouts
             align-items: center;
             background: $white;
             border: 1px solid darken($fade-grey, 3%);
-            border-radius: 50%;
+            border-radius: $radius-rounded;
             transition: all 0.3s;
 
             &:hover {

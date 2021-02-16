@@ -92,7 +92,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        border-radius: 50%;
+        border-radius: $radius-rounded;
         transition: all 0.3s;
 
         &:hover {
@@ -202,7 +202,7 @@
               align-items: center;
               height: 55px;
               width: 55px;
-              border-radius: 50%;
+              border-radius: $radius-rounded;
               border: 1.6px solid $fade-grey;
               background: $white;
               box-shadow: $light-box-shadow;
@@ -213,7 +213,7 @@
                 width: 40px;
                 min-width: 40px;
                 height: 40px;
-                border-radius: 50%;
+                border-radius: $radius-rounded;
               }
 
               .indicator {
@@ -222,7 +222,7 @@
                 right: -4px;
                 height: 26px;
                 width: 26px;
-                border-radius: 50%;
+                border-radius: $radius-rounded;
                 display: none;
                 justify-content: center;
                 align-items: center;
@@ -342,7 +342,7 @@
             width: 34px;
             background: $white;
             border: 1px solid darken($fade-grey, 3%);
-            border-radius: 50%;
+            border-radius: $radius-rounded;
             transition: all 0.3s;
 
             &:hover {
@@ -409,7 +409,7 @@
               width: 34px;
               background: $white;
               border: 1px solid darken($fade-grey, 3%);
-              border-radius: 50%;
+              border-radius: $radius-rounded;
               transition: all 0.3s;
 
               &:hover {
@@ -477,7 +477,7 @@
               align-items: center;
               background: $white;
               border: 1px solid darken($fade-grey, 3%);
-              border-radius: 50%;
+              border-radius: $radius-rounded;
               color: $light-text;
               box-shadow: $light-box-shadow;
 
@@ -495,7 +495,7 @@
                 display: block;
                 height: 28px;
                 width: 28px;
-                border-radius: 50%;
+                border-radius: $radius-rounded;
               }
 
               svg {
@@ -672,7 +672,7 @@
                 border-right: 50%;
                 background: none;
                 border: 1.8px dashed $light-text;
-                border-radius: 50%;
+                border-radius: $radius-rounded;
                 color: $light-text;
                 cursor: pointer;
                 outline: none;
@@ -812,7 +812,7 @@
                   justify-content: center;
                   align-items: center;
                   color: $light-text;
-                  border-radius: 50%;
+                  border-radius: $radius-rounded;
                   border: 1px solid transparent;
                   transition: all 0.3s;
 

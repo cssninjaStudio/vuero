@@ -92,7 +92,7 @@
           background: $white;
           border: 1px solid darken($fade-grey, 6%);
           box-shadow: $light-box-shadow;
-          border-radius: 50%;
+          border-radius: $radius-rounded;
           margin: 0 2px;
           transition: all 0.3s;
 
@@ -195,7 +195,7 @@
                 width: 50px;
                 min-width: 50px;
                 height: 50px;
-                border-radius: 50%;
+                border-radius: $radius-rounded;
                 border: 1px solid darken($fade-grey, 4%);
               }
 
@@ -268,7 +268,7 @@
                   width: 32px;
                   min-width: 32px;
                   height: 32px;
-                  border-radius: 50%;
+                  border-radius: $radius-rounded;
                   border: 1px solid darken($fade-grey, 4%);
                 }
               }
@@ -317,7 +317,7 @@
                 width: 42px;
                 min-width: 42px;
                 height: 42px;
-                border-radius: 50%;
+                border-radius: $radius-rounded;
                 border: 1px solid $primary;
 
                 &.has-icon {
@@ -335,7 +335,7 @@
                   width: 34px;
                   min-width: 34px;
                   height: 34px;
-                  border-radius: 50%;
+                  border-radius: $radius-rounded;
                   border: 1px solid darken($fade-grey, 4%);
                 }
 
@@ -348,7 +348,7 @@
                   align-items: center;
                   width: 22px;
                   height: 22px;
-                  border-radius: 50%;
+                  border-radius: $radius-rounded;
                   background: $white;
                   border: 1px solid $primary;
 
@@ -406,7 +406,7 @@
               background: lighten($fade-grey, 3%);
               text-align: center;
               padding: 30px 20px;
-              border-radius: 4px;
+              border-radius: $radius;
 
               > .v-avatar {
                 display: block;
@@ -489,7 +489,7 @@
                   width: 32px;
                   min-width: 32px;
                   height: 32px;
-                  border-radius: 50%;
+                  border-radius: $radius-rounded;
                   border: 1px solid darken($fade-grey, 4%);
                 }
               }
@@ -893,7 +893,7 @@
                 width: 50px;
                 min-width: 50px;
                 height: 50px;
-                border-radius: 50%;
+                border-radius: $radius-rounded;
                 background: lighten($fade-grey, 2%);
                 border: 1px solid darken($fade-grey, 3%);
                 color: $light-text;
@@ -918,7 +918,7 @@
                 width: 50px;
                 min-width: 50px;
                 height: 50px;
-                border-radius: 50%;
+                border-radius: $radius-rounded;
                 border: 1px solid darken($fade-grey, 4%);
               }
 
@@ -1125,7 +1125,7 @@
           align-items: center;
           height: 18px;
           width: 18px;
-          border-radius: 50%;
+          border-radius: $radius-rounded;
           background: lighten($fade-grey, 3%);
           opacity: 0;
           pointer-events: none;

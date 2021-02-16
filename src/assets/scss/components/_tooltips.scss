@@ -783,7 +783,7 @@
 
 //Defines slightly rounded corner tooltips.
 .hint--rounded::after {
-  border-radius: 4px;
+  border-radius: $radius;
 }
 
 //Defines various transition effects for the tooltips.

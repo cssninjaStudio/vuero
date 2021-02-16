@@ -200,7 +200,7 @@ Stat Widgets Styles
         height: 50px;
         width: 50px;
         min-width: 50px;
-        border-radius: 50%;
+        border-radius: $radius-rounded;
         background: $white;
         color: $primary;
         border: 1px solid darken($fade-grey, 3%);
@@ -254,7 +254,7 @@ Stat Widgets Styles
         align-items: center;
         height: 36px;
         width: 36px;
-        border-radius: 50%;
+        border-radius: $radius-rounded;
         background: $widget-grey;
         color: $light-text;
         margin-left: auto;

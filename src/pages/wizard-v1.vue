@@ -771,7 +771,7 @@ watchEffect(() => {
         max-width: 210px;
 
         &.is-rounded {
-          border-radius: 50%;
+          border-radius: $radius-rounded;
         }
       }
     }
@@ -863,7 +863,7 @@ watchEffect(() => {
                 height: 32px;
                 width: 32px;
                 min-width: 32px;
-                border-radius: 50%;
+                border-radius: $radius-rounded;
                 color: lighten($light-text, 12%);
                 border: none;
                 background: none;
@@ -985,7 +985,7 @@ watchEffect(() => {
                 height: 50px;
                 max-width: 50px;
                 min-width: 50px;
-                border-radius: 50%;
+                border-radius: $radius-rounded;
                 object-fit: cover;
               }
 
@@ -1043,7 +1043,7 @@ watchEffect(() => {
                 min-height: 32px;
                 width: 32px;
                 min-width: 32px;
-                border-radius: 50%;
+                border-radius: $radius-rounded;
                 color: lighten($light-text, 12%);
                 border: none;
                 background: none;
@@ -1230,7 +1230,7 @@ watchEffect(() => {
               display: block;
               width: 80px;
               height: 80px;
-              border-radius: 50%;
+              border-radius: $radius-rounded;
               margin: 0 auto;
             }
 
@@ -1277,7 +1277,7 @@ watchEffect(() => {
                     .permission-level-inner {
                       height: 11px;
                       width: 11px;
-                      border-radius: 50%;
+                      border-radius: $radius-rounded;
                       background: $placeholder;
                       transition: all 0.3s;
 
@@ -1420,7 +1420,7 @@ watchEffect(() => {
                 height: 28px;
                 width: 28px;
                 border: 1px solid darken($fade-grey, 3%);
-                border-radius: 50%;
+                border-radius: $radius-rounded;
                 box-shadow: $light-box-shadow;
                 opacity: 0;
                 color: $primary;
@@ -1533,7 +1533,7 @@ watchEffect(() => {
             align-items: center;
             height: 30px;
             width: 30px;
-            border-radius: 50%;
+            border-radius: $radius-rounded;
             background: $white;
             border: 1px solid darken($fade-grey, 3%);
             z-index: 1;
@@ -1616,7 +1616,7 @@ watchEffect(() => {
             align-items: center;
             height: 24px;
             width: 24px;
-            border-radius: 50%;
+            border-radius: $radius-rounded;
             background: lighten($fade-grey, 3%);
             opacity: 0;
             pointer-events: none;

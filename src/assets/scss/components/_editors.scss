@@ -52,7 +52,7 @@
         padding-bottom: 8px;
         opacity: 1;
         min-width: 130px;
-        border-radius: 6px;
+        border-radius: $radius-large;
       }
     }
   }
@@ -163,7 +163,7 @@
           border-color: lighten($dark-sidebar, 8%);
           color: $light-text;
           height: 38px;
-          border-radius: 4px;
+          border-radius: $radius;
         }
       }
     }

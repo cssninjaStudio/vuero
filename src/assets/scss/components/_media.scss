@@ -52,7 +52,7 @@
         color: $smoke-white;
         height: 58px;
         width: 58px;
-        border-radius: 50%;
+        border-radius: $radius-rounded;
         z-index: 1;
       }
 
@@ -63,7 +63,7 @@
         left: calc(50% - 12px);
         height: 24px;
         width: 24px;
-        border-radius: 50%;
+        border-radius: $radius-rounded;
         background: $primary;
         animation: wave 1.6s infinite;
         animation-duration: 2s;

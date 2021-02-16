@@ -98,7 +98,7 @@
       width: 38px;
       background: $white;
       border: 1px solid darken($fade-grey, 3%);
-      border-radius: 50%;
+      border-radius: $radius-rounded;
 
       &.is-solid {
         .fas,
@@ -278,7 +278,7 @@
       display: inline-block;
       height: 38px;
       width: 38px;
-      border-radius: 50%;
+      border-radius: $radius-rounded;
     }
   }
 

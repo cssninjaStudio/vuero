@@ -239,7 +239,7 @@ const filteredData = computed(() => {
         min-width: 60px;
         max-height: 60px;
         min-height: 60px;
-        border-radius: 50%;
+        border-radius: $radius-rounded;
         border: 1px solid $fade-grey;
       }
 
@@ -259,7 +259,7 @@ const filteredData = computed(() => {
             display: block;
             height: 18px;
             width: 18px;
-            border-radius: 50%;
+            border-radius: $radius-rounded;
             margin-right: 6px;
           }
         }

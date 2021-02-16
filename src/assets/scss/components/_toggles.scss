@@ -59,7 +59,7 @@
       left: 2px;
       height: 22px;
       width: 22px;
-      border-radius: 50%;
+      border-radius: $radius-rounded;
       background: black;
       display: flex;
       justify-content: center;
@@ -105,7 +105,7 @@
   label {
     background-color: $white;
     border: 1px solid $accent-grey;
-    border-radius: 50%;
+    border-radius: $radius-rounded;
     cursor: pointer;
     height: 28px;
     left: 0;

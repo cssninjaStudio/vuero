@@ -446,7 +446,7 @@ onMounted(() => {
                 height: 9px;
                 padding: 0;
                 margin: 0 5px;
-                border-radius: 50%;
+                border-radius: $radius-rounded;
                 background: #ddd;
                 border: 0;
                 outline: none;
@@ -521,7 +521,7 @@ onMounted(() => {
                     height: 70px;
                     width: 70px;
                     background: $white;
-                    border-radius: 50%;
+                    border-radius: $radius-rounded;
                     opacity: 0;
                     transition: opacity 0.3s;
                   }
@@ -609,7 +609,7 @@ onMounted(() => {
                   align-items: center;
                   height: 30px;
                   width: 30px;
-                  border-radius: 50%;
+                  border-radius: $radius-rounded;
                   background: lighten($fade-grey, 2%);
 
                   &.is-up {
@@ -651,7 +651,7 @@ onMounted(() => {
           .monthly-summary {
             padding: 0 20px;
             border: 1px solid darken($fade-grey, 5%);
-            border-radius: 6px;
+            border-radius: $radius-large;
 
             .monthly-summary-item {
               padding: 20px 0;

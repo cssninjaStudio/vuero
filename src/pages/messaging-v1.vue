@@ -651,7 +651,7 @@ watch(selectedConversationId, onConversationChanged)
   justify-content: center;
   align-items: center;
   background: $white;
-  border-radius: 50%;
+  border-radius: $radius-rounded;
   border: 1px solid darken($fade-grey, 3%);
   box-shadow: $light-box-shadow;
   transform: translateX(60px) rotate(360deg);
@@ -777,7 +777,7 @@ watch(selectedConversationId, onConversationChanged)
               .autocpl-avatar {
                 width: 40px !important;
                 height: 40px !important;
-                border-radius: 50% !important;
+                border-radius: $radius-rounded !important;
               }
 
               .avatar-badge {
@@ -787,7 +787,7 @@ watch(selectedConversationId, onConversationChanged)
                 width: 18px;
                 height: 18px;
                 border: 2px solid $white;
-                border-radius: 50%;
+                border-radius: $radius-rounded;
               }
             }
 
@@ -816,7 +816,7 @@ watch(selectedConversationId, onConversationChanged)
         border: none !important;
 
         ul {
-          border-radius: 4px !important;
+          border-radius: $radius !important;
           box-shadow: -1px 3px 10px 0 rgba(0, 0, 0, 0.06) !important;
         }
       }
@@ -835,7 +835,7 @@ watch(selectedConversationId, onConversationChanged)
         height: 36px;
         width: 36px;
         border: 3px solid $white;
-        border-radius: 50%;
+        border-radius: $radius-rounded;
         display: block;
 
         &:nth-child(2),
@@ -848,7 +848,7 @@ watch(selectedConversationId, onConversationChanged)
       .more-indicator {
         height: 36px;
         width: 36px;
-        border-radius: 50%;
+        border-radius: $radius-rounded;
         background: $primary;
         display: flex;
         justify-content: center;
@@ -923,7 +923,7 @@ watch(selectedConversationId, onConversationChanged)
       img {
         height: 90px;
         width: 90px;
-        border-radius: 50%;
+        border-radius: $radius-rounded;
         display: block;
 
         &.is-squared {
@@ -938,7 +938,7 @@ watch(selectedConversationId, onConversationChanged)
           border: 3px solid $white;
           height: 34px;
           width: 34px;
-          border-radius: 50%;
+          border-radius: $radius-rounded;
         }
       }
     }
@@ -1066,7 +1066,7 @@ watch(selectedConversationId, onConversationChanged)
     position: relative;
     display: block;
     z-index: 2;
-    border-radius: 50%;
+    border-radius: $radius-rounded;
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     -ms-border-radius: 100%;
@@ -1075,7 +1075,7 @@ watch(selectedConversationId, onConversationChanged)
     img {
       width: 40px;
       height: 40px;
-      border-radius: 50%;
+      border-radius: $radius-rounded;
       background-color: rgba(255, 255, 255, 0.9);
       -webkit-touch-callout: none;
       -webkit-user-select: none;
@@ -1115,7 +1115,7 @@ watch(selectedConversationId, onConversationChanged)
       }
 
       .msg {
-        border-radius: 6px;
+        border-radius: $radius-large;
 
         &::after {
           display: none;
@@ -1388,7 +1388,7 @@ watch(selectedConversationId, onConversationChanged)
             align-items: center;
             height: 40px;
             width: 40px;
-            border-radius: 50%;
+            border-radius: $radius-rounded;
             background: $white;
             margin: 0 6px;
             cursor: pointer;
@@ -1424,7 +1424,7 @@ watch(selectedConversationId, onConversationChanged)
 
       img {
         max-width: 320px;
-        border-radius: 6px 6px 0 0;
+        border-radius: $radius-large 6px 0 0;
       }
 
       .link-badge {
@@ -1439,7 +1439,7 @@ watch(selectedConversationId, onConversationChanged)
           display: block;
           height: 40px;
           width: 40px;
-          border-radius: 50%;
+          border-radius: $radius-rounded;
         }
       }
     }
@@ -1482,7 +1482,7 @@ watch(selectedConversationId, onConversationChanged)
       height: 36px;
       min-width: 36px !important;
       max-height: 36px;
-      border-radius: 50%;
+      border-radius: $radius-rounded;
       border: 2px solid $white;
       background: $primary;
       display: flex;
@@ -1609,7 +1609,7 @@ watch(selectedConversationId, onConversationChanged)
       .button {
         width: 28px;
         height: 28px;
-        border-radius: 50%;
+        border-radius: $radius-rounded;
         border: none;
         padding: 0;
         display: flex;
@@ -1683,7 +1683,7 @@ watch(selectedConversationId, onConversationChanged)
       .button {
         width: 28px;
         height: 28px;
-        border-radius: 50%;
+        border-radius: $radius-rounded;
         border: none;
         padding: 0;
         display: flex;
@@ -1980,7 +1980,7 @@ watch(selectedConversationId, onConversationChanged)
 
         &.is-link {
           background: lighten($dark-sidebar, 3%);
-          border-radius: 6px;
+          border-radius: $radius-large;
 
           .icon-wrapper {
             border-color: lighten($dark-sidebar, 5%);

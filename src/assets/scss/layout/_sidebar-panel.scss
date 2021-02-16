@@ -96,7 +96,7 @@
         > img {
           height: 32px;
           width: 32px;
-          border-radius: 50%;
+          border-radius: $radius-rounded;
         }
 
         .dropdown-menu {
@@ -630,7 +630,7 @@
                   .autocpl-avatar {
                     width: 40px !important;
                     height: 40px !important;
-                    border-radius: 50% !important;
+                    border-radius: $radius-rounded !important;
                   }
 
                   .avatar-badge {
@@ -640,7 +640,7 @@
                     width: 18px;
                     height: 18px;
                     border: 2px solid $white;
-                    border-radius: 50%;
+                    border-radius: $radius-rounded;
                   }
                 }
 
@@ -672,7 +672,7 @@
             border: none !important;
 
             ul {
-              border-radius: 4px !important;
+              border-radius: $radius !important;
               box-shadow: -1px 3px 10px 0 rgba(0, 0, 0, 0.06) !important;
             }
           }
@@ -737,7 +737,7 @@
             img {
               height: 36px;
               width: 36px;
-              border-radius: 50%;
+              border-radius: $radius-rounded;
               display: block;
 
               &.is-user {
@@ -752,7 +752,7 @@
                 border: 2px solid $white;
                 height: 16px;
                 width: 16px;
-                border-radius: 50%;
+                border-radius: $radius-rounded;
               }
             }
           }
@@ -809,7 +809,7 @@
             height: 36px;
             width: 36px;
             border: 3px solid $white;
-            border-radius: 50%;
+            border-radius: $radius-rounded;
             display: block;
 
             &.is-user {
@@ -828,7 +828,7 @@
             height: 36px;
             width: 36px;
             min-width: 36px;
-            border-radius: 50%;
+            border-radius: $radius-rounded;
             background: $primary;
             display: flex;
             justify-content: center;
@@ -976,7 +976,7 @@
       .button {
         height: 36px;
         width: 36px;
-        border-radius: 50%;
+        border-radius: $radius-rounded;
         padding: 4px;
         transition: all 0.3s;
 
@@ -1019,7 +1019,7 @@
           img {
             height: 36px;
             width: 36px;
-            border-radius: 50%;
+            border-radius: $radius-rounded;
             display: block;
 
             &.is-user {
@@ -1034,7 +1034,7 @@
               border: 2px solid $white;
               height: 16px;
               width: 16px;
-              border-radius: 50%;
+              border-radius: $radius-rounded;
             }
           }
 
@@ -1042,7 +1042,7 @@
             position: absolute;
             right: -12px;
             bottom: -5px;
-            border-radius: 50%;
+            border-radius: $radius-rounded;
             border: 2px solid $white;
             height: 28px;
             width: 28px;

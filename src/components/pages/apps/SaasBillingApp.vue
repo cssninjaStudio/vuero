@@ -486,7 +486,7 @@ const randomCard = () => {
               height: 32px;
               width: 32px;
               min-width: 32px;
-              border-radius: 50%;
+              border-radius: $radius-rounded;
               background: $white;
               border: 1px solid darken($fade-grey, 3%);
               box-shadow: $light-box-shadow;
@@ -638,7 +638,7 @@ const randomCard = () => {
               height: 40px;
               width: 40px;
               min-width: 40px;
-              border-radius: 50%;
+              border-radius: $radius-rounded;
               border: 1.6px dashed $light-text;
               color: $light-text;
               outline: none;
@@ -670,7 +670,7 @@ const randomCard = () => {
       .payment-form {
         padding: 20px 30px;
         background: $white;
-        border-radius: 4px;
+        border-radius: $radius;
         border: 1px solid darken($fade-grey, 3%);
 
         .form-header {

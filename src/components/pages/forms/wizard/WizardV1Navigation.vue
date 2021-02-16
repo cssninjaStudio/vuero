@@ -254,7 +254,7 @@ const setStep = (target: number) => {
       display: flex;
       align-items: center;
       justify-content: center;
-      border-radius: 50%;
+      border-radius: $radius-rounded;
       border: 1px solid darken($fade-grey, 3%);
       box-shadow: $light-box-shadow;
       background: $white;
@@ -280,7 +280,7 @@ const setStep = (target: number) => {
           display: block;
           width: 38px;
           height: 38px;
-          border-radius: 50%;
+          border-radius: $radius-rounded;
         }
 
         .badge {
@@ -290,7 +290,7 @@ const setStep = (target: number) => {
           width: 20px;
           height: 20px;
           border: 2px solid $white;
-          border-radius: 50%;
+          border-radius: $radius-rounded;
         }
       }
 

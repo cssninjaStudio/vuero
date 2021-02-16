@@ -736,7 +736,7 @@ onMounted(() => {
           height: 46px;
           width: 46px;
           background: $white;
-          border-radius: 50%;
+          border-radius: $radius-rounded;
           border: 1.4px solid $fade-grey;
           display: flex;
           justify-content: center;
@@ -765,7 +765,7 @@ onMounted(() => {
           height: 38px;
           width: 38px;
           background: $primary;
-          border-radius: 50%;
+          border-radius: $radius-rounded;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -796,7 +796,7 @@ onMounted(() => {
 .kanban-card {
   width: 100%;
   background: $white;
-  border-radius: 6px;
+  border-radius: $radius-large;
   margin-top: 10px;
   border: 1px solid #ddd;
   transition: all 0.4s;
@@ -818,7 +818,7 @@ onMounted(() => {
         justify-content: center;
         align-items: center;
         margin: 0 auto;
-        border-radius: 50%;
+        border-radius: $radius-rounded;
 
         &::after {
           content: '';
@@ -827,7 +827,7 @@ onMounted(() => {
           left: calc(50% - 12px);
           height: 24px;
           width: 24px;
-          border-radius: 50%;
+          border-radius: $radius-rounded;
           background: $white;
           animation: wave 1.6s infinite;
           animation-duration: 2s;
@@ -840,7 +840,7 @@ onMounted(() => {
           display: block;
           width: 62px;
           height: 62px;
-          border-radius: 50%;
+          border-radius: $radius-rounded;
           z-index: 2;
         }
 

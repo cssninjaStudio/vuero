@@ -201,7 +201,7 @@ const filteredData = computed(() => {
         min-width: 60px;
         max-height: 60px;
         min-height: 60px;
-        border-radius: 50%;
+        border-radius: $radius-rounded;
         border: 1px solid $fade-grey;
       }
 

@@ -14,7 +14,7 @@
   padding-top: 56.25%;
   margin: 0 auto;
   background: $dark-sidebar;
-  border-radius: 2px;
+  border-radius: $radius-small;
 
   .video-player,
   .media-player {
@@ -23,7 +23,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    border-radius: 2px;
+    border-radius: $radius-small;
   }
 
   .media-player {
@@ -36,7 +36,7 @@
       }
 
       .media-control {
-        border-radius: 50%;
+        border-radius: $radius-rounded;
         padding: 8px;
         cursor: pointer;
         border: 1px solid transparent;

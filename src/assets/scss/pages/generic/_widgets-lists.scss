@@ -146,7 +146,7 @@ List Widgets Styles
       align-items: center;
       height: 36px;
       width: 36px;
-      border-radius: 50%;
+      border-radius: $radius-rounded;
       background: $widget-grey;
       color: $light-text;
 
@@ -239,7 +239,7 @@ List Widgets Styles
           align-items: center;
           background: $white;
           border: 1px solid darken($fade-grey, 3%);
-          border-radius: 50%;
+          border-radius: $radius-rounded;
           color: $light-text;
           box-shadow: $light-box-shadow;
 
@@ -314,7 +314,7 @@ List Widgets Styles
             display: block;
             height: 28px;
             width: 28px;
-            border-radius: 50%;
+            border-radius: $radius-rounded;
           }
 
           svg {

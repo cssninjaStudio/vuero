@@ -624,7 +624,7 @@ $overlay-bg-dark: linear-gradient(
               display: block;
               width: 38px;
               height: 38px;
-              border-radius: 50%;
+              border-radius: $radius-rounded;
             }
 
             .badge {
@@ -634,7 +634,7 @@ $overlay-bg-dark: linear-gradient(
               width: 20px;
               height: 20px;
               border: 2px solid $white;
-              border-radius: 50%;
+              border-radius: $radius-rounded;
             }
           }
 
@@ -921,7 +921,7 @@ $overlay-bg-dark: linear-gradient(
             height: 32px;
             background-color: lighten($primary, 48%);
             color: $primary;
-            border-radius: 50%;
+            border-radius: $radius-rounded;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -943,7 +943,7 @@ $overlay-bg-dark: linear-gradient(
 
         .chat-area-profile {
           width: 32px;
-          border-radius: 50%;
+          border-radius: $radius-rounded;
           object-fit: cover;
         }
 
@@ -961,7 +961,7 @@ $overlay-bg-dark: linear-gradient(
         .chat-msg-img {
           height: 40px;
           width: 40px;
-          border-radius: 50%;
+          border-radius: $radius-rounded;
           object-fit: cover;
         }
 
@@ -1062,7 +1062,7 @@ $overlay-bg-dark: linear-gradient(
           color: $body-color;
           background-color: $input-bg;
           padding: 12px;
-          border-radius: 6px;
+          border-radius: $radius-large;
           font-size: 15px;
           margin: 0 12px;
           width: 100%;
@@ -1103,7 +1103,7 @@ $overlay-bg-dark: linear-gradient(
           .button {
             width: 28px;
             height: 28px;
-            border-radius: 50%;
+            border-radius: $radius-rounded;
             border: none;
             padding: 0;
             display: flex;
@@ -1173,7 +1173,7 @@ $overlay-bg-dark: linear-gradient(
           .button {
             width: 28px;
             height: 28px;
-            border-radius: 50%;
+            border-radius: $radius-rounded;
             border: none;
             padding: 0;
             display: flex;

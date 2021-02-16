@@ -101,7 +101,7 @@
       display: inline-block;
       width: 100%;
       background-color: $white;
-      border-radius: 6px;
+      border-radius: $radius-large;
       border: 1px solid darken($fade-grey, 3%);
       transition: all 0.3s;
 
@@ -152,7 +152,7 @@
               height: 32px;
               width: 32px;
               min-width: 32px;
-              border-radius: 50%;
+              border-radius: $radius-rounded;
               border: 1px solid darken($fade-grey, 3%);
               margin: 0 4px;
               color: $primary;
@@ -289,7 +289,7 @@
       .card {
         border: 1px solid darken($fade-grey, 4%);
         box-shadow: none;
-        border-radius: 6px;
+        border-radius: $radius-large;
 
         .card-header {
           box-shadow: none;

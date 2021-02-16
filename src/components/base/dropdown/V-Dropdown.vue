@@ -100,7 +100,7 @@ const { dropdownElement, open, close, toggle, isOpen } = useDropdown()
       align-items: center;
       height: 30px;
       width: 30px;
-      border-radius: 50%;
+      border-radius: $radius-rounded;
       border: none;
       outline: none;
       background: transparent;
@@ -241,10 +241,10 @@ const { dropdownElement, open, close, toggle, isOpen } = useDropdown()
           display: block;
           height: 32px;
           width: 32px;
-          border-radius: 6px;
+          border-radius: $radius-large;
 
           &.is-rounded {
-            border-radius: 50%;
+            border-radius: $radius-rounded;
           }
         }
 
@@ -349,7 +349,7 @@ const { dropdownElement, open, close, toggle, isOpen } = useDropdown()
             width: 100%;
             background: $white;
             border: 1px solid $accent-grey;
-            border-radius: 6px;
+            border-radius: $radius-large;
             padding: 8px 0;
 
             //Kanban columns settings

@@ -237,7 +237,7 @@ body {
         .is-trigger {
           background: $white;
           border-color: $fade-grey;
-          border-radius: 50%;
+          border-radius: $radius-rounded;
           box-shadow: $light-box-shadow;
         }
       }
@@ -254,7 +254,7 @@ body {
           display: block;
           width: 8px;
           height: 8px;
-          border-radius: 50%;
+          border-radius: $radius-rounded;
           background: $danger;
         }
       }
@@ -312,7 +312,7 @@ body {
                   height: 2.25rem;
                   width: 2.25rem;
                   margin: 0 0.5rem 0 0;
-                  border-radius: 50%;
+                  border-radius: $radius-rounded;
                   max-width: 100%;
                 }
               }
@@ -349,7 +349,7 @@ body {
     align-items: center;
     height: 34px;
     width: 34px;
-    border-radius: 50%;
+    border-radius: $radius-rounded;
     margin: 0 4px;
     transition: all 0.3s;
 
@@ -372,7 +372,7 @@ body {
       height: 24px;
       width: 24px;
       min-width: 24px;
-      border-radius: 50%;
+      border-radius: $radius-rounded;
     }
   }
 }
@@ -469,7 +469,7 @@ body {
     content: ' ';
     width: 3.5em;
     height: 3.5em;
-    border-radius: 50%;
+    border-radius: $radius-rounded;
     position: absolute;
     top: 0;
     right: 0;
@@ -482,7 +482,7 @@ body {
   .floating-btn {
     width: 3.5em;
     height: 3.5em;
-    border-radius: 50%;
+    border-radius: $radius-rounded;
     background-color: lighten($primary, 3%);
     box-shadow: $primary-box-shadow;
     color: $smoke-white;
@@ -522,7 +522,7 @@ body {
     font-size: 1em;
     width: 3em;
     height: 3em;
-    border-radius: 50%;
+    border-radius: $radius-rounded;
     text-align: center;
     line-height: 3;
     background-color: hsla(0, 0%, 0%, 0.2);
@@ -546,7 +546,7 @@ body {
         height: 24px;
         width: 24px;
         min-width: 24px;
-        border-radius: 50%;
+        border-radius: $radius-rounded;
       }
 
       svg {

@@ -72,7 +72,7 @@
       align-items: center;
       height: 32px;
       width: 32px;
-      border-radius: 50%;
+      border-radius: $radius-rounded;
       color: lighten($light-text, 15%);
       font-size: 0.9rem;
       transition: all 0.3s;

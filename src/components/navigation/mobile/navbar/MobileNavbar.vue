@@ -218,7 +218,7 @@ const otherLayoutLink = computed(() => {
             height: 32px;
             min-width: 32px;
             min-height: 32px;
-            border-radius: 50%;
+            border-radius: $radius-rounded;
           }
 
           .badge {
@@ -231,7 +231,7 @@ const otherLayoutLink = computed(() => {
             height: 18px;
             max-height: 18px;
             border: 2px solid $white;
-            border-radius: 50%;
+            border-radius: $radius-rounded;
           }
         }
 
@@ -359,7 +359,7 @@ const otherLayoutLink = computed(() => {
           width: 20px;
           height: 20px;
           border: 1px solid $primary;
-          border-radius: 50%;
+          border-radius: $radius-rounded;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -377,7 +377,7 @@ const otherLayoutLink = computed(() => {
       height: 38px;
       width: 38px;
       transition: all 0.3s;
-      border-radius: 50%;
+      border-radius: $radius-rounded;
       margin-right: 12px;
 
       .navbar-link {
@@ -401,7 +401,7 @@ const otherLayoutLink = computed(() => {
         display: block;
         width: 8px;
         height: 8px;
-        border-radius: 50%;
+        border-radius: $radius-rounded;
         background: $danger;
       }
 
@@ -486,7 +486,7 @@ const otherLayoutLink = computed(() => {
                   max-height: 3rem;
                   width: 3rem;
                   margin: 0 0.5rem 0 0;
-                  border-radius: 50%;
+                  border-radius: $radius-rounded;
                   max-width: 100%;
                 }
               }
@@ -551,7 +551,7 @@ const otherLayoutLink = computed(() => {
         height: 36px;
         width: 36px;
         max-height: 36px !important;
-        border-radius: 50%;
+        border-radius: $radius-rounded;
       }
 
       svg {
