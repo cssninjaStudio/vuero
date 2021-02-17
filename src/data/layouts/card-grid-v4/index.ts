@@ -224,7 +224,7 @@ export const posts = [
     id: '18',
     title: 'How to make sure to reach the goals you set',
     published: '4 days ago',
-    image: '/images/photo/demo/28.jpg',
+    image: '/images/photo/demo/29.jpg',
     author: {
       id: 31,
       avatar: '/images/avatars/photos/31.jpg',
