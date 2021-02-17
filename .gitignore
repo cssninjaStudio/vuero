@@ -118,5 +118,3 @@ dist
 # cypress
 cypress/screenshots
 cypress/videos
-
-.husky
