@@ -169,7 +169,7 @@ export const users = [
     tasks: {
       pending: 17,
     },
-    status: 'Blocked',
+    status: 'blocked',
     team: [
       {
         id: 189,

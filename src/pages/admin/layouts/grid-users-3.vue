@@ -44,33 +44,6 @@ useHead({
       <Toolbar />
     </div>
 
-    <div class="user-grid-toolbar is-reversed">
-      <div class="control has-icon">
-        <input
-          class="input custom-text-filter"
-          placeholder="Search..."
-          data-filter-target=".column"
-        />
-        <div class="form-icon">
-          <i class="iconify" data-icon="feather:search"></i>
-        </div>
-      </div>
-
-      <div class="tabs-inner">
-        <div class="tabs">
-          <ul>
-            <li :class="[activeTab === 'all' && 'is-active']">
-              <a @click="activeTab = 'all'"><span>All</span></a>
-            </li>
-            <li :class="[activeTab === 'team' && 'is-active']">
-              <a @click="activeTab = 'team'"><span>Team</span></a>
-            </li>
-            <li class="tab-naver"></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
     <div class="page-content-inner">
       <UsersGridV3 :active-tab="activeTab" />
     </div>

@@ -6,6 +6,10 @@ defineProps({
     type: Number,
     default: 50,
   },
+  size: {
+    type: Number,
+    default: 60,
+  },
 })
 </script>
 
@@ -13,8 +17,8 @@ defineProps({
   <svg
     class="circle-chart"
     viewBox="0 0 45 45"
-    width="60"
-    height="60"
+    :width="size"
+    :height="size"
     xmlns="http://www.w3.org/2000/svg"
   >
     <circle
