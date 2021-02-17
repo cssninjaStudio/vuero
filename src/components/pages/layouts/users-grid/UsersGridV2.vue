@@ -1,0 +1,376 @@
+<script setup lang="ts">
+import { computed, ref } from 'vue'
+
+import { users } from '/@src/data/layouts/user-grid-v2'
+
+const filters = ref('')
+
+const filteredData = computed(() => {
+  if (!filters.value) {
+    return users
+  } else {
+    return users.filter((item) => {
+      return (
+        item.username.match(new RegExp(filters.value, 'i')) ||
+        item.location.match(new RegExp(filters.value, 'i')) ||
+        item.position.match(new RegExp(filters.value, 'i')) ||
+        item.badge.match(new RegExp(filters.value, 'i'))
+      )
+    })
+  }
+})
+
+const valueSingle = 0
+const optionsSingle = [
+  'All',
+  'UI/UX Design',
+  'Web Development',
+  'Software Eng.',
+  'Business',
+]
+</script>
+
+<template>
+  <div>
+    <div class="user-grid-toolbar">
+      <V-Control icon="feather:search">
+        <input
+          v-model="filters"
+          class="input custom-text-filter"
+          placeholder="Search..."
+        />
+      </V-Control>
+
+      <div class="buttons">
+        <V-Field class="h-hidden-mobile">
+          <V-Control>
+            <Multiselect
+              v-model="valueSingle"
+              :options="optionsSingle"
+              :max-height="145"
+              placeholder="Select an option"
+            />
+          </V-Control>
+        </V-Field>
+        <V-Button color="primary" raised>
+          <span class="icon">
+            <i class="fas fa-plus"></i>
+          </span>
+          <span>Add User</span>
+        </V-Button>
+      </div>
+    </div>
+
+    <div class="user-grid user-grid-v2">
+      <!--List Empty Search Placeholder -->
+      <V-PlaceholderPage
+        :class="[filteredData.length !== 0 && 'is-hidden']"
+        title="We couldn't find any matching results."
+        subtitle="Too bad. Looks like we couldn't find any matching results for the
+          search terms you've entered. Please try different search terms or
+          criteria."
+        larger
+      >
+        <template #image>
+          <img
+            class="light-image"
+            src="/@src/assets/illustrations/placeholders/search-4.svg"
+            alt=""
+          />
+          <img
+            class="dark-image"
+            src="/@src/assets/illustrations/placeholders/search-4-dark.svg"
+            alt=""
+          />
+        </template>
+      </V-PlaceholderPage>
+
+      <transition-group name="list" tag="div" class="columns is-multiline">
+        <!--Grid item-->
+        <div v-for="item in filteredData" :key="item.id" class="column is-3">
+          <div class="grid-item-wrap">
+            <div class="grid-item-head">
+              <div class="flex-head">
+                <div class="meta">
+                  <span v-if="item.status === 'synced'" class="dark-inverted"
+                    >In Sync</span
+                  >
+                  <span v-if="item.status === 'overdue'" class="dark-inverted"
+                    >Overdue</span
+                  >
+                  <span v-if="item.status === 'blocked'" class="dark-inverted"
+                    >Blocked</span
+                  >
+                  <span>37 tasks remaining</span>
+                </div>
+                <div
+                  v-if="item.status === 'synced'"
+                  class="status-icon is-success"
+                >
+                  <i class="fas fa-check"></i>
+                </div>
+                <div
+                  v-if="item.status === 'overdue'"
+                  class="status-icon is-warning"
+                >
+                  <i class="fas fa-exclamation"></i>
+                </div>
+                <div
+                  v-if="item.status === 'blocked'"
+                  class="status-icon is-danger"
+                >
+                  <i class="fas fa-times"></i>
+                </div>
+              </div>
+              <div class="buttons">
+                <button class="button v-button is-dark-outlined">
+                  <span class="icon">
+                    <i class="iconify" data-icon="feather:check-circle"></i>
+                  </span>
+                  <span>Tasks</span>
+                </button>
+                <button class="button v-button is-dark-outlined">
+                  <span class="icon">
+                    <i class="iconify" data-icon="feather:file"></i>
+                  </span>
+                  <span>Files</span>
+                </button>
+              </div>
+            </div>
+            <div class="grid-item">
+              <V-Avatar :picture="item.avatar" :badge="item.badge" size="big" />
+              <h3 class="dark-inverted">{{ item.fullName }}</h3>
+              <p>{{ item.position }}</p>
+              <div class="people">
+                <V-Avatar
+                  v-for="user in item.team"
+                  :key="user.id"
+                  size="small"
+                  :color="user.color"
+                  :initials="user.initials"
+                  :picture="user.avatar"
+                />
+              </div>
+              <div class="buttons">
+                <button class="button v-button is-dark-outlined">
+                  <span class="icon">
+                    <i class="iconify" data-icon="feather:user"></i>
+                  </span>
+                  <span>Profile</span>
+                </button>
+                <button class="button v-button is-dark-outlined">
+                  <span class="icon">
+                    <i class="iconify" data-icon="feather:message-circle"></i>
+                  </span>
+                  <span>Talk</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </transition-group>
+    </div>
+  </div>
+</template>
+
+<style lang="scss">
+@import '../../../../assets/scss/abstracts/_variables.scss';
+@import '../../../../assets/scss/abstracts/_mixins.scss';
+
+.is-dark {
+  .user-grid {
+    .grid-item {
+      @include vuero-card--dark();
+    }
+  }
+}
+
+.user-grid-v2 {
+  .columns {
+    margin-left: -0.5rem !important;
+    margin-right: -0.5rem !important;
+    margin-top: -0.5rem !important;
+  }
+
+  .column {
+    padding: 0.5rem !important;
+  }
+
+  .grid-item {
+    @include vuero-s-card();
+
+    text-align: center;
+
+    > .v-avatar {
+      display: block;
+      margin: 0 auto 4px auto;
+    }
+
+    h3 {
+      font-family: $font-alt;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: $dark-text;
+    }
+
+    p {
+      font-size: 0.85rem;
+    }
+
+    .people {
+      display: flex;
+      justify-content: center;
+      padding: 8px 0 30px 0;
+
+      .v-avatar {
+        margin: 0 4px;
+      }
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+
+      .button {
+        width: calc(50% - 4px);
+        color: $light-text;
+
+        &:hover {
+          border-color: darken($fade-grey, 4%);
+          color: $primary;
+          box-shadow: $light-box-shadow;
+        }
+      }
+    }
+  }
+
+  .grid-item-wrap {
+    border: 1px solid darken($fade-grey, 3%);
+    border-radius: $radius-large;
+    transition: all 0.3s;
+
+    .grid-item-head {
+      background: #fafafa;
+      border-radius: $radius-large 6px 0 0;
+      padding: 20px;
+
+      .flex-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 12px;
+
+        .meta {
+          span {
+            display: flex;
+
+            &:first-child {
+              font-family: $font-alt;
+              font-weight: 600;
+              font-size: 0.95rem;
+              color: $dark-text;
+            }
+
+            &:nth-child(2) {
+              font-size: 0.9rem;
+              color: $light-text;
+            }
+          }
+        }
+
+        .status-icon {
+          height: 28px;
+          width: 28px;
+          min-width: 28px;
+          border-radius: $radius-rounded;
+          border: 1px solid darken($fade-grey, 3%);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          &.is-success {
+            background: $success;
+            border-color: $success;
+            color: $white;
+          }
+
+          &.is-warning {
+            background: $h-orange;
+            border-color: $h-orange;
+            color: $white;
+          }
+
+          &.is-danger {
+            background: $danger;
+            border-color: $danger;
+            color: $white;
+          }
+
+          i {
+            font-size: 8px;
+          }
+        }
+      }
+
+      .buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0;
+
+        .button,
+        .v-button {
+          width: calc(50% - 4px);
+          color: $light-text;
+          margin-bottom: 0;
+
+          &:hover {
+            border-color: darken($fade-grey, 4%);
+            color: $primary;
+            box-shadow: $light-box-shadow;
+          }
+        }
+      }
+    }
+
+    .grid-item {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      border: none;
+    }
+  }
+}
+
+.is-dark {
+  .user-grid-v2 {
+    .grid-item-wrap {
+      border-color: lighten($dark-sidebar, 12%);
+
+      .grid-item-head {
+        background: lighten($dark-sidebar, 4%);
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .user-grid-v2 {
+    .columns {
+      display: flex;
+
+      .column {
+        min-width: 50% !important;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .user-grid-v2 {
+    .columns {
+      .column {
+        min-width: 33.3% !important;
+      }
+    }
+  }
+}
+</style>

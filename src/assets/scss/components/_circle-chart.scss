@@ -12,29 +12,29 @@
 .circle-chart-wrapper {
   &.is-success {
     .circle-chart__circle {
-      color: $success;
-      stroke: $success;
+      color: $success !important;
+      stroke: $success !important;
     }
   }
 
   &.is-info {
     .circle-chart__circle {
-      color: $info;
-      stroke: $success;
+      color: $info !important;
+      stroke: $info !important;
     }
   }
 
   &.is-warning {
     .circle-chart__circle {
-      color: $warning;
-      stroke: $success;
+      color: $warning !important;
+      stroke: $warning !important;
     }
   }
 
   &.is-danger {
     .circle-chart__circle {
-      color: $danger;
-      stroke: $success;
+      color: $danger !important;
+      stroke: $danger !important;
     }
   }
 }
@@ -102,8 +102,8 @@
   .circle-chart-wrapper {
     &:not(.is-success):not(.is-info):not(.is-warning):not(.is-danger) {
       .circle-chart__circle {
-        color: $accent;
-        stroke: $accent;
+        color: $accent !important;
+        stroke: $accent !important;
       }
     }
   }
