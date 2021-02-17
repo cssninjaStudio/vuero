@@ -15,21 +15,21 @@ export const projects = [
     team: [
       {
         id: 27,
-        avatar: '/images/avatars/photos/27.jpg',
+        picture: '/images/avatars/photos/27.jpg',
         name: 'Carmen E.',
         initials: 'CE',
         color: 'h-yellow',
       },
       {
         id: 15,
-        avatar: '/images/avatars/photos/15.jpg',
+        picture: '/images/avatars/photos/15.jpg',
         name: 'Hilde V.',
         initials: 'HV',
         color: 'purple',
       },
       {
         id: 12,
-        avatar: '/images/avatars/photos/12.jpg',
+        picture: '/images/avatars/photos/12.jpg',
         name: 'Joshua S.',
         initials: 'JS',
         color: 'success',
@@ -52,14 +52,14 @@ export const projects = [
     team: [
       {
         id: 13,
-        avatar: '/images/avatars/photos/13.jpg',
+        picture: '/images/avatars/photos/13.jpg',
         name: 'Tara S.',
         initials: 'TS',
         color: 'danger',
       },
       {
         id: 21,
-        avatar: '/images/avatars/photos/21.jpg',
+        picture: '/images/avatars/photos/21.jpg',
         name: 'Elizabet F.',
         initials: 'EF',
         color: 'warning',
@@ -82,7 +82,7 @@ export const projects = [
     team: [
       {
         id: 14,
-        avatar: '/images/avatars/photos/14.jpg',
+        picture: '/images/avatars/photos/14.jpg',
         name: 'Ryan B.',
         initials: 'RB',
         color: 'info',
@@ -105,14 +105,14 @@ export const projects = [
     team: [
       {
         id: 13,
-        avatar: '/images/avatars/photos/13.jpg',
+        picture: '/images/avatars/photos/13.jpg',
         name: 'Tara S.',
         initials: 'TS',
         color: 'danger',
       },
       {
         id: 21,
-        avatar: '/images/avatars/photos/21.jpg',
+        picture: '/images/avatars/photos/21.jpg',
         name: 'Elizabet F.',
         initials: 'EF',
         color: 'warning',
@@ -135,14 +135,14 @@ export const projects = [
     team: [
       {
         id: 30,
-        avatar: '/images/avatars/photos/30.jpg',
+        picture: '/images/avatars/photos/30.jpg',
         name: 'Clément D.',
         initials: 'CD',
         color: 'info',
       },
       {
         id: 39,
-        avatar: '/images/avatars/photos/39.jpg',
+        picture: '/images/avatars/photos/39.jpg',
         name: 'Alejandro B.',
         initials: 'AB',
         color: 'h-purple',
@@ -165,21 +165,21 @@ export const projects = [
     team: [
       {
         id: 15,
-        avatar: '/images/avatars/photos/15.jpg',
+        picture: '/images/avatars/photos/15.jpg',
         name: 'Hilde V.',
         initials: 'HV',
         color: 'info',
       },
       {
         id: 40,
-        avatar: '/images/avatars/photos/40.jpg',
+        picture: '/images/avatars/photos/40.jpg',
         name: 'Jeanne M.',
         initials: 'JM',
         color: 'success',
       },
       {
         id: 8,
-        avatar: '/images/avatars/photos/8.jpg',
+        picture: '/images/avatars/photos/8.jpg',
         name: 'Erik K.',
         initials: 'EK',
         color: 'h-purple',
@@ -202,7 +202,7 @@ export const projects = [
     team: [
       {
         id: 11,
-        avatar: '/images/avatars/photos/11.jpg',
+        picture: '/images/avatars/photos/11.jpg',
         name: 'Kelly M.',
         initials: 'KM',
         color: 'success',
@@ -225,21 +225,21 @@ export const projects = [
     team: [
       {
         id: 21,
-        avatar: '/images/avatars/photos/21.jpg',
+        picture: '/images/avatars/photos/21.jpg',
         name: 'Elizabeth F.',
         initials: 'EF',
         color: 'warning',
       },
       {
         id: 29,
-        avatar: '/images/avatars/photos/29.jpg',
+        picture: '/images/avatars/photos/29.jpg',
         name: 'Hakeem C.',
         initials: 'HC',
         color: 'danger',
       },
       {
         id: 33,
-        avatar: '/images/avatars/photos/33.jpg',
+        picture: '/images/avatars/photos/33.jpg',
         name: 'Harvey M.',
         initials: 'HM',
         color: 'success',
@@ -262,14 +262,14 @@ export const projects = [
     team: [
       {
         id: 30,
-        avatar: '/images/avatars/photos/30.jpg',
+        picture: '/images/avatars/photos/30.jpg',
         name: 'Clément D.',
         initials: 'CD',
         color: 'h-purple',
       },
       {
         id: 19,
-        avatar: '/images/avatars/photos/19.jpg',
+        picture: '/images/avatars/photos/19.jpg',
         name: 'Greta K.',
         initials: 'GK',
         color: 'info',
@@ -292,14 +292,14 @@ export const projects = [
     team: [
       {
         id: 24,
-        avatar: '/images/avatars/photos/24.jpg',
+        picture: '/images/avatars/photos/24.jpg',
         name: 'Sandrine C.',
         initials: 'SC',
         color: 'success',
       },
       {
         id: 22,
-        avatar: '/images/avatars/photos/22.jpg',
+        picture: '/images/avatars/photos/22.jpg',
         name: 'Jimmy H.',
         initials: 'JH',
         color: 'info',
@@ -322,7 +322,7 @@ export const projects = [
     team: [
       {
         id: 28,
-        avatar: '/images/avatars/photos/28.jpg',
+        picture: '/images/avatars/photos/28.jpg',
         name: 'Edouard F.',
         initials: 'EF',
         color: 'info',
@@ -334,7 +334,7 @@ export const projects = [
     name: 'Mobile App Landing Page',
     dueDate: 'November 2020',
     updated: '4d ago',
-    image: '/images/photo/demo/apps/12.png',
+    image: '/images/photo/demo/apps/12.jpg',
     owner: {
       id: 12,
       avatar: '/images/avatars/photos/12.jpg',
@@ -345,7 +345,7 @@ export const projects = [
     team: [
       {
         id: 119,
-        avatar: null,
+        picture: null,
         name: 'Sarah Connor.',
         initials: 'SC',
         color: 'h-purple',
@@ -368,21 +368,21 @@ export const projects = [
     team: [
       {
         id: 8,
-        avatar: '/images/avatars/photos/8.jpg',
+        picture: '/images/avatars/photos/8.jpg',
         name: 'Erik K.',
         initials: 'EK',
         color: 'h-purple',
       },
       {
         id: 15,
-        avatar: '/images/avatars/photos/15.jpg',
+        picture: '/images/avatars/photos/15.jpg',
         name: 'Hilde V.',
         initials: 'HV',
         color: 'h-orange',
       },
       {
         id: 12,
-        avatar: '/images/avatars/photos/40.jpg',
+        picture: '/images/avatars/photos/40.jpg',
         name: 'Jeanne M.',
         initials: 'JM',
         color: 'success',
@@ -394,7 +394,7 @@ export const projects = [
     name: 'Startup Landing Page',
     dueDate: 'November 2020',
     updated: '3m ago',
-    image: '/images/photo/demo/apps/14.png',
+    image: '/images/photo/demo/apps/14.jpg',
     owner: {
       id: 15,
       avatar: '/images/avatars/photos/15.jpg',
@@ -405,7 +405,7 @@ export const projects = [
     team: [
       {
         id: 31,
-        avatar: '/images/avatars/photos/31.jpg',
+        picture: '/images/avatars/photos/31.jpg',
         name: 'Yasseen A.',
         initials: 'YA',
         color: 'info',
@@ -428,14 +428,14 @@ export const projects = [
     team: [
       {
         id: 5,
-        avatar: '/images/avatars/photos/5.jpg',
+        picture: '/images/avatars/photos/5.jpg',
         name: 'Mary L.',
         initials: 'ML',
         color: 'info',
       },
       {
         id: 24,
-        avatar: '/images/avatars/photos/24.jpg',
+        picture: '/images/avatars/photos/24.jpg',
         name: 'Sandrine C.',
         initials: 'SC',
         color: 'success',
