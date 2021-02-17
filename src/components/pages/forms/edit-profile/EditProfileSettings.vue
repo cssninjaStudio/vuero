@@ -119,22 +119,11 @@ const onSave = async () => {
           <div class="column is-12">
             <V-Field>
               <V-Control>
-                <div class="switch-block">
-                  <label class="form-switch is-primary">
-                    <input
-                      id="two-factor-switch-input"
-                      v-model="twoFactor"
-                      type="checkbox"
-                      class="is-switch"
-                    />
-                    <i></i>
-                  </label>
-                  <div class="text">
-                    <label for="two-factor-switch-input">
-                      <span>Enable / disable 2 factor</span>
-                    </label>
-                  </div>
-                </div>
+                <V-SwitchBlock
+                  v-model="twoFactor"
+                  label="Enable / disable 2 factor"
+                  color="primary"
+                />
               </V-Control>
             </V-Field>
           </div>
@@ -167,43 +156,21 @@ const onSave = async () => {
           <div class="column is-12">
             <V-Field>
               <V-Control>
-                <div class="switch-block">
-                  <label class="form-switch is-primary">
-                    <input
-                      id="notifications-switch-input"
-                      v-model="notifications"
-                      type="checkbox"
-                      class="is-switch"
-                    />
-                    <i></i>
-                  </label>
-                  <div class="text">
-                    <label for="notifications-switch-input">
-                      <span>Disable all notifications</span>
-                    </label>
-                  </div>
-                </div>
+                <V-SwitchBlock
+                  v-model="notifications"
+                  label="Disable all notifications"
+                  color="primary"
+                />
               </V-Control>
             </V-Field>
 
             <V-Field>
               <V-Control>
-                <div class="switch-block">
-                  <label class="form-switch is-primary">
-                    <input
-                      id="notifications-low-switch-input"
-                      v-model="notificationsLow"
-                      type="checkbox"
-                      class="is-switch"
-                    />
-                    <i></i>
-                  </label>
-                  <div class="text">
-                    <label for="notifications-low-switch-input">
-                      <span>Disable low priority notifications</span>
-                    </label>
-                  </div>
-                </div>
+                <V-SwitchBlock
+                  v-model="notificationsLow"
+                  label="Disable low priority notifications"
+                  color="primary"
+                />
               </V-Control>
             </V-Field>
           </div>
@@ -222,42 +189,20 @@ const onSave = async () => {
           <div class="column is-12">
             <V-Field>
               <V-Control>
-                <div class="switch-block">
-                  <label class="form-switch is-primary">
-                    <input
-                      id="marketing-low-switch-input"
-                      v-model="marketing"
-                      type="checkbox"
-                      class="is-switch"
-                    />
-                    <i></i>
-                  </label>
-                  <div class="text">
-                    <label for="marketing-low-switch-input">
-                      <span>Enable marketing emails</span>
-                    </label>
-                  </div>
-                </div>
+                <V-SwitchBlock
+                  v-model="marketing"
+                  label="Enable marketing emails"
+                  color="primary"
+                />
               </V-Control>
             </V-Field>
             <V-Field>
               <V-Control>
-                <div class="switch-block">
-                  <label class="form-switch is-primary">
-                    <input
-                      id="partners-low-switch-input"
-                      v-model="partners"
-                      type="checkbox"
-                      class="is-switch"
-                    />
-                    <i></i>
-                  </label>
-                  <div class="text">
-                    <label for="partners-low-switch-input">
-                      <span>Enable partners emails</span>
-                    </label>
-                  </div>
-                </div>
+                <V-SwitchBlock
+                  v-model="partners"
+                  label="Enable partners emails"
+                  color="primary"
+                />
               </V-Control>
             </V-Field>
           </div>

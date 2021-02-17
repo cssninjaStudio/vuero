@@ -1,9 +1,9 @@
 ### Switch
 
 Vuero provides nicely styled switch checkboxes when you need to
-display such control in yoour forms. Vuero switches have
-several color modififers. Available modifiers are `is-primary`, `is-success`,
-`is-info`, `is-warning` and `is-danger`.
+display such control in yoour forms. Vuero `V-SwitchBlock` component have
+several color modififers. Available modifiers are `primary`, `success`,
+`info`, `warning` and `danger`.
 Please refer to the markup for more details about usage.
 
 <!--code-->
@@ -12,40 +12,22 @@ Please refer to the markup for more details about usage.
 <template>
   <V-Field grouped>
     <V-Control>
-      <label class="form-switch">
-        <input type="checkbox" class="is-switch" />
-        <i></i>
-      </label>
+      <V-SwitchBlock />
     </V-Control>
     <V-Control>
-      <label class="form-switch is-primary">
-        <input type="checkbox" class="is-switch" checked />
-        <i></i>
-      </label>
+      <V-SwitchBlock color="primary" checked />
     </V-Control>
     <V-Control>
-      <label class="form-switch is-success">
-        <input type="checkbox" class="is-switch" checked />
-        <i></i>
-      </label>
+      <V-SwitchBlock color="success" checked />
     </V-Control>
     <V-Control>
-      <label class="form-switch is-info">
-        <input type="checkbox" class="is-switch" checked />
-        <i></i>
-      </label>
+      <V-SwitchBlock color="info" checked />
     </V-Control>
     <V-Control>
-      <label class="form-switch is-warning">
-        <input type="checkbox" class="is-switch" checked />
-        <i></i>
-      </label>
+      <V-SwitchBlock color="warning" checked />
     </V-Control>
     <V-Control>
-      <label class="form-switch is-danger">
-        <input type="checkbox" class="is-switch" checked />
-        <i></i>
-      </label>
+      <V-SwitchBlock color="danger" checked />
     </V-Control>
   </V-Field>
 </template>
@@ -56,42 +38,24 @@ Please refer to the markup for more details about usage.
 <!--example-->
 
 <V-Field grouped>
-    <V-Control>
-        <label class="form-switch">
-            <input type="checkbox" class="is-switch">
-            <i></i>
-        </label>
-    </V-Control>
-    <V-Control>
-        <label class="form-switch is-primary">
-            <input type="checkbox" class="is-switch" checked>
-            <i></i>
-        </label>
-    </V-Control>
-    <V-Control>
-        <label class="form-switch is-success">
-            <input type="checkbox" class="is-switch" checked>
-            <i></i>
-        </label>
-    </V-Control>
-    <V-Control>
-        <label class="form-switch is-info">
-            <input type="checkbox" class="is-switch" checked>
-            <i></i>
-        </label>
-    </V-Control>
-    <V-Control>
-        <label class="form-switch is-warning">
-            <input type="checkbox" class="is-switch" checked>
-            <i></i>
-        </label>
-    </V-Control>
-    <V-Control>
-        <label class="form-switch is-danger">
-            <input type="checkbox" class="is-switch" checked>
-            <i></i>
-        </label>
-    </V-Control>
+  <V-Control>
+    <V-SwitchBlock />
+  </V-Control>
+  <V-Control>
+    <V-SwitchBlock color="primary" checked />
+  </V-Control>
+  <V-Control>
+    <V-SwitchBlock color="success" checked />
+  </V-Control>
+  <V-Control>
+    <V-SwitchBlock color="info" checked />
+  </V-Control>
+  <V-Control>
+    <V-SwitchBlock color="warning" checked />
+  </V-Control>
+  <V-Control>
+    <V-SwitchBlock color="danger" checked />
+  </V-Control>
 </V-Field>
 
 <!--/example-->

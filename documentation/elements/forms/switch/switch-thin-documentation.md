@@ -1,9 +1,9 @@
 ### Thin Switch
 
 Vuero provides nice thin switch checkboxes when you need to display
-such control in your forms. Vuero switches have several color modififers.
-Available modifiers are `is-primary`, `is-success`, `is-info`,
-`is-warning` and `is-danger`.
+such control in your forms. Vuero `V-SwitchBlock` component have 
+several color modififers. Available modifiers are `primary`, `success`, 
+`info`, `warning` and `danger`.
 Please refer to the markup for more details about usage.
 
 <!--code-->
@@ -12,34 +12,22 @@ Please refer to the markup for more details about usage.
 <template>
   <V-Field grouped>
     <V-Control>
-      <div class="thin-switch">
-        <input id="thin-switch-1" class="input" type="checkbox" />
-        <label for="thin-switch-1" class="slider"></label>
-      </div>
+      <V-SwitchBlock thin />
     </V-Control>
     <V-Control>
-      <div class="thin-switch is-primary">
-        <input id="thin-switch-2" class="input" type="checkbox" checked />
-        <label for="thin-switch-2" class="slider"></label>
-      </div>
+      <V-SwitchBlock thin color="primary" checked />
     </V-Control>
     <V-Control>
-      <div class="thin-switch is-info">
-        <input id="thin-switch-4" class="input" type="checkbox" checked />
-        <label for="thin-switch-4" class="slider"></label>
-      </div>
+      <V-SwitchBlock thin color="success" checked />
     </V-Control>
     <V-Control>
-      <div class="thin-switch is-warning">
-        <input id="thin-switch-5" class="input" type="checkbox" checked />
-        <label for="thin-switch-5" class="slider"></label>
-      </div>
+      <V-SwitchBlock thin color="info" checked />
     </V-Control>
     <V-Control>
-      <div class="thin-switch is-danger">
-        <input id="thin-switch-6" class="input" type="checkbox" checked />
-        <label for="thin-switch-6" class="slider"></label>
-      </div>
+      <V-SwitchBlock thin color="warning" checked />
+    </V-Control>
+    <V-Control>
+      <V-SwitchBlock thin color="danger" checked />
     </V-Control>
   </V-Field>
 </template>
@@ -50,36 +38,24 @@ Please refer to the markup for more details about usage.
 <!--example-->
 
 <V-Field grouped>
-    <V-Control>
-        <label class="thin-switch">
-            <input class="input" type="checkbox" />
-            <span class="slider"></span>
-        </label>
-    </V-Control>
-    <V-Control>
-        <label class="thin-switch is-primary">
-            <input class="input" type="checkbox" checked />
-            <span class="slider"></span>
-        </label>
-    </V-Control>
-    <V-Control>
-        <label class="thin-switch is-info">
-            <input class="input" type="checkbox" checked />
-            <span class="slider"></span>
-        </label>
-    </V-Control>
-    <V-Control>
-        <label class="thin-switch is-warning">
-            <input class="input" type="checkbox" checked />
-            <span class="slider"></span>
-        </label>
-    </V-Control>
-    <V-Control>
-        <label class="thin-switch is-danger">
-            <input class="input" type="checkbox" checked />
-            <span class="slider"></span>
-        </label>
-    </V-Control>
+  <V-Control>
+    <V-SwitchBlock thin />
+  </V-Control>
+  <V-Control>
+    <V-SwitchBlock thin color="primary" checked />
+  </V-Control>
+  <V-Control>
+    <V-SwitchBlock thin color="success" checked />
+  </V-Control>
+  <V-Control>
+    <V-SwitchBlock thin color="info" checked />
+  </V-Control>
+  <V-Control>
+    <V-SwitchBlock thin color="warning" checked />
+  </V-Control>
+  <V-Control>
+    <V-SwitchBlock thin color="danger" checked />
+  </V-Control>
 </V-Field>
 
 <!--/example-->
