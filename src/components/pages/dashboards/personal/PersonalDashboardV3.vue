@@ -252,6 +252,12 @@ import { userStack } from '/@src/data/dashboards/personal-v3/users'
 @import '../../../assets/scss/abstracts/_variables.scss';
 @import '../../../assets/scss/abstracts/_mixins.scss';
 
+.is-webapp {
+  .personal-dashboard {
+    margin-top: 30px;
+  }
+}
+
 .personal-dashboard-v3 {
   .columns {
     &.is-flex-tablet-p {

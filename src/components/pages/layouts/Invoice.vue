@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import { popovers } from '/@src/data/users/userPopovers'
+</script>
+
 <template>
   <!--Invoice-->
   <div class="invoice-wrapper">
@@ -25,17 +29,13 @@
     <div class="invoice-body">
       <div class="invoice-card">
         <div class="invoice-section is-flex is-bordered">
-          <div class="v-avatar is-large">
-            <img
-              class="avatar"
-              src="/images/avatars/photos/13.jpg"
-              alt=""
-              data-user-popover="6"
-              @error.once="
-                $event.target.src = 'https://via.placeholder.com/150x150'
-              "
-            />
-          </div>
+          <tippy class="has-help-cursor" interactive placement="bottom-start">
+            <V-Avatar size="large" picture="/images/avatars/photos/13.jpg" />
+            <template #content>
+              <UserPopoverContent :user="popovers.user13" />
+            </template>
+          </tippy>
+
           <div class="meta">
             <h3>Tara Svenson</h3>
             <span>tarasvenson@huro.io</span>
@@ -47,17 +47,14 @@
             <span>Payment Due: June 27, 2015</span>
           </div>
         </div>
+
         <div class="invoice-section is-flex is-bordered">
-          <div class="v-avatar is-customer is-large">
-            <img
-              class="avatar"
-              src="/images/photo/demo/brands/airbnb.svg"
-              alt=""
-              @error.once="
-                $event.target.src = 'https://via.placeholder.com/150x150'
-              "
-            />
-          </div>
+          <V-Avatar
+            size="large"
+            class="is-customer"
+            picture="/images/photo/demo/brands/airbnb.svg"
+          />
+
           <div class="meta">
             <h3>Airbnb</h3>
             <span>888 Brannan St, San Francisco,</span>
@@ -72,6 +69,7 @@
           </div>
         </div>
         <div class="invoice-section">
+          <!-- @TODO: cf driss --->
           <div class="flex-table">
             <!--Table header-->
             <div class="flex-table-header">

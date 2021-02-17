@@ -318,6 +318,12 @@ const democheck4 = ref(false)
 @import '../../../assets/scss/abstracts/_variables.scss';
 @import '../../../assets/scss/abstracts/_mixins.scss';
 
+.is-webapp {
+  .personal-dashboard {
+    margin-top: 30px;
+  }
+}
+
 .personal-dashboard-v2 {
   .dashboard-header {
     @include vuero-s-card();

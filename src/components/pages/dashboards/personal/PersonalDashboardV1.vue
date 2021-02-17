@@ -141,6 +141,12 @@ import { profitChartOptions } from '/@src/data/dashboards/personal-v1/profitChar
 @import '../../../assets/scss/abstracts/_variables.scss';
 @import '../../../assets/scss/abstracts/_mixins.scss';
 
+.is-webapp {
+  .personal-dashboard {
+    margin-top: 30px;
+  }
+}
+
 .personal-dashboard-v1 {
   .dashboard-header {
     display: flex;

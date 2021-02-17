@@ -194,17 +194,6 @@ Subpages UI Elements
 }
 
 .is-dark {
-  .promotion-page-wrapper,
-  .confirm-account-wrapper {
-    .wrapper-inner {
-      .action-box {
-        @include vuero-card--dark();
-      }
-    }
-    .wrapper-outer {
-      @include vuero-card--dark();
-    }
-  }
   .action-page-wrapper {
     &.action-page-v1,
     &.action-page-v2 {

@@ -115,6 +115,7 @@ const isIconify = computed(() => {
 <style lang="scss" scoped>
 @import '../../../assets/scss/abstracts/_variables.scss';
 
+/* @TODO: cf driss */
 .is-placeholder {
   background-color: lighten($fade-grey, 2%) !important;
   border-color: darken($fade-grey, 3%) !important;

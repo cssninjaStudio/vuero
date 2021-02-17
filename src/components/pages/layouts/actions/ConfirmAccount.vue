@@ -1,8 +1,39 @@
+<script setup lang="ts">
+import { ref } from 'vue'
+import { useRouter } from 'vue-router'
+
+import sleep from '/@src/utils/sleep'
+import useNotyf from '/@src/composition/use/useNotyf'
+
+const notyf = useNotyf()
+const router = useRouter()
+
+const isLoading = ref(false)
+
+const confirm = async () => {
+  isLoading.value = true
+  notyf.success('Your account is confirmed Erik !')
+
+  await sleep()
+  router.push({
+    name: 'admin-dashboards',
+  })
+
+  await sleep()
+  isLoading.value = false
+}
+</script>
+
 <template>
   <!--Confirm Account-->
   <div class="confirm-account-wrapper">
     <div class="wrapper-inner">
-      <div class="action-box">
+      <div
+        class="action-box has-loader"
+        :class="[isLoading && 'has-loader-active']"
+      >
+        <V-Loader :active="isLoading" />
+
         <div class="box-content">
           <img
             class="light-image"
@@ -22,9 +53,9 @@
             board.
           </p>
           <div class="buttons">
-            <button class="button v-button is-primary is-raised">
+            <V-Button color="primary" raised @click="confirm">
               Confirm Account
-            </button>
+            </V-Button>
           </div>
         </div>
       </div>
@@ -33,8 +64,8 @@
 </template>
 
 <style lang="scss">
-@import '../../assets/scss/abstracts/_variables.scss';
-@import '../../assets/scss/abstracts/_mixins.scss';
+@import '../../../../assets/scss/abstracts/_variables.scss';
+@import '../../../../assets/scss/abstracts/_mixins.scss';
 
 /* ==========================================================================
 1. Confirm Account
@@ -98,6 +129,19 @@
           }
         }
       }
+    }
+  }
+}
+
+.is-dark {
+  .confirm-account-wrapper {
+    .wrapper-inner {
+      .action-box {
+        @include vuero-card--dark();
+      }
+    }
+    .wrapper-outer {
+      @include vuero-card--dark();
     }
   }
 }

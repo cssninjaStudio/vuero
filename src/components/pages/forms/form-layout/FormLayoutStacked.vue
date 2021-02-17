@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useWindowScroll } from '@vueuse/core'
 import { computed, reactive, ref } from 'vue'
+import { popovers } from '/@src/data/users/userPopovers'
 
 const calendarTarget = ref('')
 const notificationMedium = ref('')
@@ -54,6 +55,8 @@ const isStuck = computed(() => {
                 </V-Control>
               </V-Field>
             </div>
+
+            <!-- @TODO: cf driss --->
             <v-date-picker
               v-model="date"
               is-range
@@ -176,11 +179,60 @@ const isStuck = computed(() => {
                 <V-Field>
                   <V-Control>
                     <div class="participants">
-                      <V-Avatar picture="/images/avatars/photos/8.jpg" />
-                      <V-Avatar color="warning" initials="BT" />
-                      <V-Avatar picture="/images/avatars/photos/18.jpg" />
-                      <V-Avatar color="info" initials="JD" />
-                      <V-Avatar picture="/images/avatars/photos/7.jpg" />
+                      <tippy
+                        class="has-help-cursor"
+                        interactive
+                        placement="top-start"
+                      >
+                        <V-Avatar picture="/images/avatars/photos/8.jpg" />
+                        <template #content>
+                          <UserPopoverContent :user="popovers.user8" />
+                        </template>
+                      </tippy>
+
+                      <tippy
+                        class="has-help-cursor"
+                        interactive
+                        placement="top-start"
+                      >
+                        <V-Avatar color="warning" initials="BT" />
+                        <template #content>
+                          <UserPopoverContent :user="popovers.user122" />
+                        </template>
+                      </tippy>
+
+                      <tippy
+                        class="has-help-cursor"
+                        interactive
+                        placement="top-start"
+                      >
+                        <V-Avatar picture="/images/avatars/photos/18.jpg" />
+                        <template #content>
+                          <UserPopoverContent :user="popovers.user18" />
+                        </template>
+                      </tippy>
+
+                      <tippy
+                        class="has-help-cursor"
+                        interactive
+                        placement="top-start"
+                      >
+                        <V-Avatar color="info" initials="JD" />
+                        <template #content>
+                          <UserPopoverContent :user="popovers.user123" />
+                        </template>
+                      </tippy>
+
+                      <tippy
+                        class="has-help-cursor"
+                        interactive
+                        placement="top-start"
+                      >
+                        <V-Avatar picture="/images/avatars/photos/7.jpg" />
+                        <template #content>
+                          <UserPopoverContent :user="popovers.user7" />
+                        </template>
+                      </tippy>
 
                       <button class="add-participant">
                         <i class="iconify" data-icon="feather:plus"></i>

@@ -23,10 +23,8 @@
               <span>Per Month</span>
             </div>
             <div class="buttons">
-              <button class="button v-button is-dark-outlined">Skip</button>
-              <button class="button v-button is-primary is-raised">
-                Upgrade
-              </button>
+              <V-Button dark-outlined> Skip </V-Button>
+              <V-Button color="primary" raised> Upgrade </V-Button>
             </div>
           </div>
         </div>
@@ -40,48 +38,51 @@
           </div>
 
           <div class="action-list">
-            <div class="media-flex">
-              <div
-                class="icon-wrap is-dark-primary is-dark-bg-3 is-dark-card-bordered"
-              >
-                <i class="iconify" data-icon="feather:check"></i>
-              </div>
-              <div class="flex-meta">
-                <span>Includes 8 team seats</span>
-                <p>
-                  Each team member on your account can create projects and
-                  tasks.
-                </p>
-              </div>
-            </div>
-            <div class="media-flex">
-              <div
-                class="icon-wrap is-dark-primary is-dark-bg-3 is-dark-card-bordered"
-              >
-                <i class="iconify" data-icon="feather:check"></i>
-              </div>
-              <div class="flex-meta">
-                <span>Integrations</span>
-                <p>
-                  Add up to 5 addons to your main application to help you
-                  manage.
-                </p>
-              </div>
-            </div>
-            <div class="media-flex">
-              <div
-                class="icon-wrap is-dark-primary is-dark-bg-3 is-dark-card-bordered"
-              >
-                <i class="iconify" data-icon="feather:check"></i>
-              </div>
-              <div class="flex-meta">
-                <span>Scale</span>
-                <p>
-                  Your application grows in parallel of your business, without
-                  any effort.
-                </p>
-              </div>
-            </div>
+            <V-Block title="Includes 8 team seats">
+              <p>
+                Each team member on your account can create projects and tasks.
+              </p>
+
+              <template #icon>
+                <V-IconWrap
+                  icon="feather:check"
+                  dark="3"
+                  dark-primary
+                  dark-card-bordered
+                />
+              </template>
+            </V-Block>
+
+            <V-Block title="Integrations">
+              <p>
+                Add up to 5 addons to your main application to help you manage.
+              </p>
+
+              <template #icon>
+                <V-IconWrap
+                  icon="feather:check"
+                  dark="3"
+                  dark-primary
+                  dark-card-bordered
+                />
+              </template>
+            </V-Block>
+
+            <V-Block title="Scale">
+              <p>
+                Your application grows in parallel of your business, without any
+                effort.
+              </p>
+
+              <template #icon>
+                <V-IconWrap
+                  icon="feather:check"
+                  dark="3"
+                  dark-primary
+                  dark-card-bordered
+                />
+              </template>
+            </V-Block>
           </div>
         </div>
       </div>
@@ -89,9 +90,9 @@
   </div>
 </template>
 
-<style lang="scss">
-@import '../../assets/scss/abstracts/_variables.scss';
-@import '../../assets/scss/abstracts/_mixins.scss';
+<style lang="scss" scoped>
+@import '../../../../assets/scss/abstracts/_variables.scss';
+@import '../../../../assets/scss/abstracts/_mixins.scss';
 
 /* ==========================================================================
 1. Confirm Account
@@ -260,6 +261,19 @@
           }
         }
       }
+    }
+  }
+}
+
+.is-dark {
+  .promotion-page-wrapper {
+    .wrapper-inner {
+      .action-box {
+        @include vuero-card--dark();
+      }
+    }
+    .wrapper-outer {
+      @include vuero-card--dark();
     }
   }
 }
