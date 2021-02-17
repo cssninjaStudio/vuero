@@ -114,15 +114,37 @@ const isIconify = computed(() => {
 
 <style lang="scss" scoped>
 @import '../../../assets/scss/abstracts/_variables.scss';
+.icon-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  width: 32px;
+  min-width: 32px;
+  border-radius: $radius-rounded;
+  background: $white;
+  border: 1px solid darken($fade-grey, 3%);
+  box-shadow: $light-box-shadow;
+  color: $primary;
 
-/* @TODO: cf driss */
-.is-placeholder {
-  background-color: lighten($fade-grey, 2%) !important;
-  border-color: darken($fade-grey, 3%) !important;
-  color: $light-text;
+  svg {
+    width: 16px;
+    height: 16px;
+    stroke-width: 3px;
+  }
 
-  i {
-    font-size: 1.4rem;
+  img {
+    border-radius: $radius-rounded;
+  }
+
+  &.is-placeholder {
+    background-color: lighten($fade-grey, 2%) !important;
+    border-color: darken($fade-grey, 3%) !important;
+    color: $light-text;
+
+    i {
+      font-size: 1.4rem;
+    }
   }
 }
 </style>

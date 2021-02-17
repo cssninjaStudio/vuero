@@ -28,36 +28,33 @@ const confirm = async () => {
   <!--Confirm Account-->
   <div class="confirm-account-wrapper">
     <div class="wrapper-inner">
-      <div
-        class="action-box has-loader"
-        :class="[isLoading && 'has-loader-active']"
-      >
-        <V-Loader :active="isLoading" />
-
-        <div class="box-content">
-          <img
-            class="light-image"
-            src="/@src/assets/illustrations/placeholders/launch.svg"
-            alt=""
-          />
-          <img
-            class="dark-image"
-            src="/@src/assets/illustrations/placeholders/launch-dark.svg"
-            alt=""
-          />
-          <h3 class="dark-inverted">Please confirm your account</h3>
-          <p>
-            Hey Erik, It would be really cool if you could give us a hand on
-            this project. There are a lot of tasks popping out every day and I
-            feel the team is getting a bit overwhelmed. We'd love to have you
-            board.
-          </p>
-          <div class="buttons">
-            <V-Button color="primary" raised @click="confirm">
-              Confirm Account
-            </V-Button>
+      <div class="action-box">
+        <V-Loader :active="isLoading">
+          <div class="box-content">
+            <img
+              class="light-image"
+              src="/@src/assets/illustrations/placeholders/launch.svg"
+              alt=""
+            />
+            <img
+              class="dark-image"
+              src="/@src/assets/illustrations/placeholders/launch-dark.svg"
+              alt=""
+            />
+            <h3 class="dark-inverted">Please confirm your account</h3>
+            <p>
+              Hey Erik, It would be really cool if you could give us a hand on
+              this project. There are a lot of tasks popping out every day and I
+              feel the team is getting a bit overwhelmed. We'd love to have you
+              board.
+            </p>
+            <div class="buttons">
+              <V-Button color="primary" raised @click="confirm">
+                Confirm Account
+              </V-Button>
+            </div>
           </div>
-        </div>
+        </V-Loader>
       </div>
     </div>
   </div>

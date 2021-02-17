@@ -217,20 +217,20 @@ const layouts = [
     path: '/onboarding-page-5',
   },
   {
-    name: 'Profile Edit V1',
-    path: '/profile-edit-1',
+    name: 'Profile Edit',
+    path: '/profile-edit',
   },
   {
-    name: 'Profile Edit V2',
-    path: '/profile-edit-2',
+    name: 'Profile Edit Experience',
+    path: '/profile-edit/experience',
   },
   {
-    name: 'Profile Edit V3',
-    path: '/profile-edit-3',
+    name: 'Profile Edit Skills',
+    path: '/profile-edit/skills',
   },
   {
-    name: 'Profile Edit V4',
-    path: '/profile-edit-4',
+    name: 'Profile Edit Settings',
+    path: '/profile-edit/settings',
   },
   {
     name: 'Profile Notifications',

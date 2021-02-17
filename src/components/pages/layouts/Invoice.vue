@@ -69,7 +69,6 @@ import { popovers } from '/@src/data/users/userPopovers'
           </div>
         </div>
         <div class="invoice-section">
-          <!-- @TODO: cf driss --->
           <div class="flex-table">
             <!--Table header-->
             <div class="flex-table-header">

@@ -47,9 +47,7 @@ watchEffect(async () => {
       <p>You can go back to previous steps if you need to edit anything.</p>
     </div>
 
-    <div class="project-preview-wrapper">
-      <V-Loader class="project-preview-loader" :active="isLoading" />
-
+    <V-Loader class="project-preview-wrapper" :active="isLoading" grey>
       <div class="project-preview-header">
         <V-Avatar
           color="h-green"
@@ -78,7 +76,9 @@ watchEffect(async () => {
                 <i class="lnil lnil-pencil"></i>
               </a>
 
-              <p v-if="wizardData.description">{{ wizardData.description }}</p>
+              <p v-if="wizardData.description">
+                {{ wizardData.description }}
+              </p>
               <p v-else>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis
                 negat? Tamen a proposito, inquam, aberramus. Deinde dolorem quem
@@ -248,6 +248,6 @@ watchEffect(async () => {
           </div>
         </div>
       </div>
-    </div>
+    </V-Loader>
   </div>
 </template>

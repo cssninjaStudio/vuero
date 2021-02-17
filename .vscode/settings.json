@@ -28,4 +28,5 @@
   "vetur.validation.interpolation": false,
   "vetur.completion.tagCasing": "initial",
   "vetur.completion.autoImport": true,
+  "typescript.tsdk": "node_modules/typescript/lib",
 }

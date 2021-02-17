@@ -87,67 +87,79 @@ useHead({
 
           <div class="columns is-multiline">
             <div class="column is-4">
-              <V-MediaCard
-                class="demo-s-card"
-                avatar="/images/avatars/photos/19.jpg"
-                badge="/images/icons/flags/germany.svg"
-                title="Greta K."
-                subtitle="Sales Manager"
-                content="I can be used as is in any layout. L Cards are simple containers that can hold any type of content, from simple plain text to more structured markup."
-                :loading="isLoaderActive"
-              >
-                <template #loader>
-                  <V-Loader size="small" :active="isLoaderActive" />
-                </template>
-              </V-MediaCard>
+              <V-Loader size="small" :active="isLoaderActive" grey>
+                <V-MediaCard
+                  class="demo-s-card"
+                  avatar="/images/avatars/photos/19.jpg"
+                  badge="/images/icons/flags/germany.svg"
+                  title="Greta K."
+                  subtitle="Sales Manager"
+                  content="I can be used as is in any layout. L Cards are simple containers that can hold any type of content, from simple plain text to more structured markup."
+                />
+              </V-Loader>
             </div>
             <div class="column is-4">
-              <V-MediaCard
-                class="demo-s-card"
-                avatar="/images/avatars/photos/19.jpg"
-                badge="/images/icons/flags/germany.svg"
-                title="Greta K."
-                subtitle="Sales Manager"
-                content="I can be used as is in any layout. L Cards are simple containers that can hold any type of content, from simple plain text to more structured markup."
-                radius="smooth"
-                :loading="isLoaderActive"
-              >
-                <template #loader>
-                  <V-Loader :active="isLoaderActive" />
-                </template>
-              </V-MediaCard>
+              <V-Loader size="small" :active="isLoaderActive">
+                <V-MediaCard
+                  class="demo-s-card"
+                  avatar="/images/avatars/photos/19.jpg"
+                  badge="/images/icons/flags/germany.svg"
+                  title="Greta K."
+                  subtitle="Sales Manager"
+                  content="I can be used as is in any layout. L Cards are simple containers that can hold any type of content, from simple plain text to more structured markup."
+                />
+              </V-Loader>
             </div>
             <div class="column is-4">
-              <V-MediaCard
-                class="demo-s-card"
-                avatar="/images/avatars/photos/19.jpg"
-                badge="/images/icons/flags/germany.svg"
-                title="Greta K."
-                subtitle="Sales Manager"
-                content="I can be used as is in any layout. L Cards are simple containers that can hold any type of content, from simple plain text to more structured markup."
-                radius="rounded"
-                :loading="isLoaderActive"
-              >
-                <template #loader>
-                  <V-Loader size="large" :active="isLoaderActive" />
-                </template>
-              </V-MediaCard>
+              <V-Loader size="small" :active="isLoaderActive" translucent>
+                <V-MediaCard
+                  class="demo-s-card"
+                  avatar="/images/avatars/photos/19.jpg"
+                  badge="/images/icons/flags/germany.svg"
+                  title="Greta K."
+                  subtitle="Sales Manager"
+                  content="I can be used as is in any layout. L Cards are simple containers that can hold any type of content, from simple plain text to more structured markup."
+                />
+              </V-Loader>
             </div>
             <div class="column is-4">
-              <V-MediaCard
-                class="demo-s-card"
-                avatar="/images/avatars/photos/19.jpg"
-                badge="/images/icons/flags/germany.svg"
-                title="Greta K."
-                subtitle="Sales Manager"
-                content="I can be used as is in any layout. L Cards are simple containers that can hold any type of content, from simple plain text to more structured markup."
-                radius="rounded"
-                :loading="isLoaderActive"
-              >
-                <template #loader>
-                  <V-Loader size="xl" :active="isLoaderActive" />
-                </template>
-              </V-MediaCard>
+              <V-Loader card="smooth" :active="isLoaderActive">
+                <V-MediaCard
+                  class="demo-s-card"
+                  avatar="/images/avatars/photos/19.jpg"
+                  badge="/images/icons/flags/germany.svg"
+                  title="Greta K."
+                  subtitle="Sales Manager"
+                  content="I can be used as is in any layout. L Cards are simple containers that can hold any type of content, from simple plain text to more structured markup."
+                  radius="smooth"
+                />
+              </V-Loader>
+            </div>
+            <div class="column is-4">
+              <V-Loader card="rounded" size="large" :active="isLoaderActive">
+                <V-MediaCard
+                  class="demo-s-card"
+                  avatar="/images/avatars/photos/19.jpg"
+                  badge="/images/icons/flags/germany.svg"
+                  title="Greta K."
+                  subtitle="Sales Manager"
+                  content="I can be used as is in any layout. L Cards are simple containers that can hold any type of content, from simple plain text to more structured markup."
+                  radius="rounded"
+                />
+              </V-Loader>
+            </div>
+            <div class="column is-4">
+              <V-Loader card="rounded" size="xl" :active="isLoaderActive">
+                <V-MediaCard
+                  class="demo-s-card"
+                  avatar="/images/avatars/photos/19.jpg"
+                  badge="/images/icons/flags/germany.svg"
+                  title="Greta K."
+                  subtitle="Sales Manager"
+                  content="I can be used as is in any layout. L Cards are simple containers that can hold any type of content, from simple plain text to more structured markup."
+                  radius="rounded"
+                />
+              </V-Loader>
             </div>
           </div>
         </div>

@@ -56,7 +56,6 @@ const isStuck = computed(() => {
               </V-Field>
             </div>
 
-            <!-- @TODO: cf driss --->
             <v-date-picker
               v-model="date"
               is-range
@@ -65,7 +64,7 @@ const isStuck = computed(() => {
               class="column is-6"
             >
               <template #default="{ inputValue, inputEvents }">
-                <div class="columns is-multiline">
+                <div class="columns v-calendar-combo">
                   <div class="column is-6">
                     <V-Field>
                       <label>Meeting date</label>
@@ -425,4 +424,22 @@ const isStuck = computed(() => {
 @import '../../../../assets/scss/abstracts/_variables.scss';
 @import '../../../../assets/scss/abstracts/_mixins.scss';
 @import '../../../../assets/scss/pages/generic/_forms.scss';
+
+@media only screen and (min-width: 767px) {
+  .v-calendar-combo {
+    margin: 0 !important;
+
+    .column {
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+
+      &:first-child {
+        padding-left: 0 !important;
+      }
+      &:last-child {
+        padding-right: 0 !important;
+      }
+    }
+  }
+}
 </style>

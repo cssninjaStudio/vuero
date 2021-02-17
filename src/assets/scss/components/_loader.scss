@@ -46,7 +46,6 @@
 2. H Loader
 ========================================================================== */
 
-/* @TODO: cf driss */
 .has-loader {
   position: relative;
 
@@ -72,6 +71,14 @@
     &.is-active {
       opacity: 1;
       pointer-events: all;
+
+      &.is-translucent {
+        opacity: 0.65;
+      }
+    }
+
+    &.is-grey {
+      background: $background-grey;
     }
 
     .loader {

@@ -18,7 +18,9 @@ const toggleLoaders = () => {
 </script>
 
 <template>
-  <V-Loader size="large" :active="isLoaderActive" />
+  <V-Loader size="large" :active="isLoaderActive">
+    <!-- content ... --->
+  </V-Loader>
 </template>
 ```
 

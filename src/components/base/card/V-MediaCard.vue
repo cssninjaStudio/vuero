@@ -40,24 +40,18 @@ const props = defineProps({
       return true
     },
   },
-  loading: {
-    type: Boolean,
-    default: false,
-  },
 })
 </script>
 
 <template>
   <div
-    class="is-raised has-loader"
+    class="is-raised"
     :class="[
       radius === 'regular' && 's-card',
       radius === 'smooth' && 'r-card',
       radius === 'rounded' && 'l-card',
-      loading && 'has-loader-active',
     ]"
   >
-    <slot name="loader"></slot>
     <div class="card-head">
       <V-Block :title="title" :subtitle="subtitle" center>
         <template #icon>
