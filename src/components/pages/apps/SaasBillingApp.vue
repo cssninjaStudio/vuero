@@ -17,6 +17,8 @@ const {
 
 const selectedPlanId = ref('starter')
 const isCardFlipped = ref(false)
+const invoces = ref(false)
+const warnBilling = ref(false)
 const creditcardInput = reactive({
   number: '',
   name: '',
@@ -188,37 +190,16 @@ const randomCard = () => {
             <h3>Options</h3>
           </div>
           <div class="block-body">
-            <div class="switch-block">
-              <label class="form-switch is-primary">
-                <input
-                  id="block-switch-invoices"
-                  type="checkbox"
-                  class="is-switch"
-                />
-                <i></i>
-              </label>
-              <div class="text">
-                <label for="block-switch-invoices">
-                  <span>Send new invoices to my inbox</span>
-                </label>
-              </div>
-            </div>
-
-            <div class="switch-block">
-              <label class="form-switch is-primary">
-                <input
-                  id="block-switch-warn"
-                  type="checkbox"
-                  class="is-switch"
-                />
-                <i></i>
-              </label>
-              <div class="text">
-                <label for="block-switch-warn">
-                  <span>Warn me before the end of the billing period</span>
-                </label>
-              </div>
-            </div>
+            <V-SwitchBlock
+              v-model="invoces"
+              label="Send new invoices to my inbox"
+              color="primary"
+            />
+            <V-SwitchBlock
+              v-model="warnBilling"
+              label="Warn me before the end of the billing period"
+              color="primary"
+            />
           </div>
         </div>
 
