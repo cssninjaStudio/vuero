@@ -13,17 +13,27 @@ import { VitePWA } from 'vite-plugin-pwa'
 const projectRootDir = path.resolve(__dirname)
 
 export default defineConfig({
+  logLevel: 'info',
   resolve: {
-    alias: [
+    alias: {
+      '/@src/': `${path.resolve(projectRootDir, 'src')}/`,
+      /*
+      @TODO: https://github.com/intlify/vite-plugin-vue-i18n/issues/62
       {
         find: '/@src/',
         replacement: `${path.resolve(projectRootDir, 'src')}/`,
       },
-    ],
+      */
+    },
   },
   plugins: [
     Vue({
       include: [/\.vue$/],
+    }),
+
+    // https://github.com/intlify/vite-plugin-vue-i18n
+    VueI18n({
+      include: path.resolve(__dirname, './src/locales/**'),
     }),
 
     // https://github.com/hannoeru/vite-plugin-pages
@@ -63,11 +73,6 @@ export default defineConfig({
 
     // https://github.com/antfu/purge-icons/tree/main/packages/vite-plugin-purge-icons
     PurgeIcons(),
-
-    // https://github.com/intlify/vite-plugin-vue-i18n
-    VueI18n({
-      include: [path.resolve(projectRootDir, 'src/locales/**')],
-    }),
 
     // https://github.com/antfu/vite-plugin-pwa
     VitePWA({
