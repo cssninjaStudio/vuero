@@ -328,10 +328,10 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
 </template>
 
 <style lang="scss">
-@import '../../../assets/scss/abstracts/_variables.scss';
-@import '../../../assets/scss/abstracts/_mixins.scss';
-@import '../../../assets/scss/pages/generic/_widgets-lists.scss';
-@import '../../../assets/scss/pages/dashboards/_business.scss';
+@import '../../../../assets/scss/abstracts/_variables.scss';
+@import '../../../../assets/scss/abstracts/_mixins.scss';
+@import '../../../../assets/scss/pages/generic/_widgets-lists.scss';
+@import '../../../../assets/scss/pages/dashboards/_business.scss';
 
 .hr-dashboard {
   .block-header {

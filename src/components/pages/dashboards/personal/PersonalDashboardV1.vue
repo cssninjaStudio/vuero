@@ -138,8 +138,8 @@ import { profitChartOptions } from '/@src/data/dashboards/personal-v1/profitChar
 </template>
 
 <style lang="scss" scoped>
-@import '../../../assets/scss/abstracts/_variables.scss';
-@import '../../../assets/scss/abstracts/_mixins.scss';
+@import '../../../../assets/scss/abstracts/_variables.scss';
+@import '../../../../assets/scss/abstracts/_mixins.scss';
 
 .is-webapp {
   .personal-dashboard {

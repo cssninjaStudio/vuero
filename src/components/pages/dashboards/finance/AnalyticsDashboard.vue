@@ -312,9 +312,9 @@ import { notifications } from '/@src/data/widgets/ui/notificationList'
 </template>
 
 <style lang="scss">
-@import '../../../assets/scss/abstracts/_variables.scss';
-@import '../../../assets/scss/abstracts/_mixins.scss';
-@import '../../../assets/scss/pages/generic/_widgets-lists.scss';
+@import '../../../../assets/scss/abstracts/_variables.scss';
+@import '../../../../assets/scss/abstracts/_mixins.scss';
+@import '../../../../assets/scss/pages/generic/_widgets-lists.scss';
 
 .analytics-dashboard {
   .dashboard-tile {

@@ -249,8 +249,8 @@ import { userStack } from '/@src/data/dashboards/personal-v3/users'
 </template>
 
 <style lang="scss">
-@import '../../../assets/scss/abstracts/_variables.scss';
-@import '../../../assets/scss/abstracts/_mixins.scss';
+@import '../../../../assets/scss/abstracts/_variables.scss';
+@import '../../../../assets/scss/abstracts/_mixins.scss';
 
 .is-webapp {
   .personal-dashboard {
