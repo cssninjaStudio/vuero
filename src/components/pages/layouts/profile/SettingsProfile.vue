@@ -38,9 +38,9 @@
           <div class="edit-icon">
             <i class="lnil lnil-pencil"></i>
           </div>
-          <div class="icon-wrap">
-            <i class="lnil lnil-apartment"></i>
-          </div>
+
+          <V-IconWrap icon="lnil lnil-apartment" />
+
           <span>Company</span>
           <h3>Manage Company</h3>
         </a>
@@ -48,9 +48,9 @@
           <div class="edit-icon">
             <i class="lnil lnil-pencil"></i>
           </div>
-          <div class="icon-wrap">
-            <i class="lnil lnil-users"></i>
-          </div>
+
+          <V-IconWrap icon="lnil lnil-users" />
+
           <span>Team</span>
           <h3>Manage Team</h3>
         </a>
@@ -58,9 +58,9 @@
           <div class="edit-icon">
             <i class="lnil lnil-pencil"></i>
           </div>
-          <div class="icon-wrap">
-            <i class="lnil lnil-briefcase-alt"></i>
-          </div>
+
+          <V-IconWrap icon="lnil lnil-briefcase-alt" />
+
           <span>Projects</span>
           <h3>Project Settings</h3>
         </a>
@@ -68,9 +68,9 @@
           <div class="edit-icon">
             <i class="lnil lnil-pencil"></i>
           </div>
-          <div class="icon-wrap">
-            <i class="lnil lnil-lock-alt-1"></i>
-          </div>
+
+          <V-IconWrap icon="lnil lnil-lock-alt-1" />
+
           <span>Permissions</span>
           <h3>Manage Permissions</h3>
         </a>
@@ -78,9 +78,9 @@
           <div class="edit-icon">
             <i class="lnil lnil-pencil"></i>
           </div>
-          <div class="icon-wrap">
-            <i class="lnil lnil-file-name"></i>
-          </div>
+
+          <V-IconWrap icon="lnil lnil-file-name" />
+
           <span>Document</span>
           <h3>Document Policies</h3>
         </a>
@@ -88,9 +88,9 @@
           <div class="edit-icon">
             <i class="lnil lnil-pencil"></i>
           </div>
-          <div class="icon-wrap">
-            <i class="lnil lnil-file-upload"></i>
-          </div>
+
+          <V-IconWrap icon="lnil lnil-file-upload" />
+
           <span>Upload</span>
           <h3>Upload Policies</h3>
         </a>
@@ -98,9 +98,9 @@
           <div class="edit-icon">
             <i class="lnil lnil-pencil"></i>
           </div>
-          <div class="icon-wrap">
-            <i class="lnil lnil-credit-card"></i>
-          </div>
+
+          <V-IconWrap icon="lnil lnil-credit-card" />
+
           <span>Billing</span>
           <h3>Billing and Plans</h3>
         </a>
@@ -108,9 +108,9 @@
           <div class="edit-icon">
             <i class="lnil lnil-pencil"></i>
           </div>
-          <div class="icon-wrap">
-            <i class="lnil lnil-bubble"></i>
-          </div>
+
+          <V-IconWrap icon="lnil lnil-bubble" />
+
           <span>Messaging</span>
           <h3>Messaging Settings</h3>
         </a>
@@ -118,9 +118,9 @@
           <div class="edit-icon">
             <i class="lnil lnil-pencil"></i>
           </div>
-          <div class="icon-wrap">
-            <i class="lnil lnil-shield"></i>
-          </div>
+
+          <V-IconWrap icon="lnil lnil-shield" />
+
           <span>Security</span>
           <h3>Security Settings</h3>
         </a>
@@ -128,9 +128,9 @@
           <div class="edit-icon">
             <i class="lnil lnil-pencil"></i>
           </div>
-          <div class="icon-wrap">
-            <i class="lnil lnil-cogs"></i>
-          </div>
+
+          <V-IconWrap icon="lnil lnil-cogs" />
+
           <span>Preferences</span>
           <h3>General Settings</h3>
         </a>

@@ -323,9 +323,7 @@ watch(selectedConversationId, onConversationChanged)
                       <img :src="message.avatar" draggable="false" />
                     </div>
                     <div class="msg is-link">
-                      <div class="icon-wrapper">
-                        <span class="iconify" data-icon="feather:link"></span>
-                      </div>
+                      <V-IconWrap icon="feather:link" />
                       <p class="link-meta">
                         <span>{{ message.content.text }}</span>
                         <a href="#">{{ message.content.subtext }}</a>

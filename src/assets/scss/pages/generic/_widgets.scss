@@ -743,9 +743,23 @@ Widget Styles
         transition: all 0.3s;
 
         svg {
+          transition: stroke 0.3s;
+        }
+
+        img,
+        svg {
           height: 18px;
           width: 18px;
-          transition: stroke 0.3s;
+        }
+
+        &.is-placeholder {
+          background: lighten($fade-grey, 2%);
+          border: 1px solid darken($fade-grey, 3%);
+          color: $light-text;
+
+          i {
+            font-size: 1.4rem;
+          }
         }
       }
 

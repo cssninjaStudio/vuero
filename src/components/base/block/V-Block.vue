@@ -52,6 +52,7 @@ defineProps({
       <span>{{ title }}</span>
       <span v-if="subtitle">{{ subtitle }}</span>
       <span v-if="infratitle">{{ infratitle }}</span>
+      <slot></slot>
     </div>
     <div class="flex-end">
       <slot name="action"></slot>

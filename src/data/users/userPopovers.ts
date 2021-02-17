@@ -71,6 +71,14 @@ export const popovers = {
     position: 'Product Manager',
     bio: 'This is a nice user description that we can use as demo content.',
   },
+  user39: {
+    avatar: '/images/avatars/photos/39.jpg',
+    badge: '/images/icons/flags/united-states-of-america.svg',
+    username: 'Alejandro B.',
+    location: 'New York, NY',
+    position: 'Business Analytics',
+    bio: 'This is a nice user description that we can use as demo content.',
+  },
   user120: {
     avatar: null,
     badge: '/images/icons/flags/united-states-of-america.svg',

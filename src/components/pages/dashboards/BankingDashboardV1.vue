@@ -251,13 +251,23 @@ import {
 
               <div class="people-wrap">
                 <div class="people">
-                  <tippy interactive :offset="[0, 10]" placement="bottom-end">
+                  <tippy
+                    class="has-help-cursor"
+                    interactive
+                    :offset="[0, 10]"
+                    placement="bottom-end"
+                  >
                     <V-Avatar color="warning" initials="BT" size="small" />
                     <template #content>
                       <UserPopoverContent :user="popovers.user122" />
                     </template>
                   </tippy>
-                  <tippy interactive :offset="[0, 10]" placement="bottom-end">
+                  <tippy
+                    class="has-help-cursor"
+                    interactive
+                    :offset="[0, 10]"
+                    placement="bottom-end"
+                  >
                     <V-Avatar
                       picture="/images/avatars/photos/18.jpg"
                       size="small"
@@ -266,13 +276,23 @@ import {
                       <UserPopoverContent :user="popovers.user18" />
                     </template>
                   </tippy>
-                  <tippy interactive :offset="[0, 10]" placement="bottom-end">
+                  <tippy
+                    class="has-help-cursor"
+                    interactive
+                    :offset="[0, 10]"
+                    placement="bottom-end"
+                  >
                     <V-Avatar color="info" initials="JD" size="small" />
                     <template #content>
                       <UserPopoverContent :user="popovers.user123" />
                     </template>
                   </tippy>
-                  <tippy interactive :offset="[0, 10]" placement="bottom-end">
+                  <tippy
+                    class="has-help-cursor"
+                    interactive
+                    :offset="[0, 10]"
+                    placement="bottom-end"
+                  >
                     <V-Avatar
                       picture="/images/avatars/photos/7.jpg"
                       size="small"

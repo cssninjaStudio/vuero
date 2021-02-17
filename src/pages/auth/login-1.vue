@@ -94,14 +94,10 @@ useHead({
                   <i class="lnil lnil-envelope"></i>
                 </div>
                 <div class="validation-icon is-success">
-                  <div class="icon-wrapper">
-                    <i class="iconify" data-icon="feather:check"></i>
-                  </div>
+                  <V-IconWrap icon="feather:check" />
                 </div>
                 <div class="validation-icon is-error">
-                  <div class="icon-wrapper">
-                    <i class="iconify" data-icon="feather:x"></i>
-                  </div>
+                  <V-IconWrap icon="feather:x" />
                 </div>
               </div>
               <div class="control has-validation">
@@ -170,14 +166,10 @@ useHead({
                   <i class="lnil lnil-envelope"></i>
                 </div>
                 <div class="validation-icon is-success">
-                  <div class="icon-wrapper">
-                    <i class="iconify" data-icon="feather:check"></i>
-                  </div>
+                  <V-IconWrap icon="feather:check" />
                 </div>
                 <div class="validation-icon is-error">
-                  <div class="icon-wrapper">
-                    <i class="iconify" data-icon="feather:x"></i>
-                  </div>
+                  <V-IconWrap icon="feather:x" />
                 </div>
               </div>
               <div class="button-wrap">

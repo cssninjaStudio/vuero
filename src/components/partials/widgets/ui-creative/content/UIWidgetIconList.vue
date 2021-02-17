@@ -12,9 +12,8 @@ defineProps({
 <template>
   <div class="icon-list">
     <div v-for="item in list" :key="item.id" class="icon-list-item">
-      <div class="icon-wrap">
-        <i class="iconify" :data-icon="item.icon"></i>
-      </div>
+      <V-IconWrap :icon="item.icon" />
+
       <div class="item-meta">
         <span>{{ item.label }}</span>
       </div>

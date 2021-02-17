@@ -157,64 +157,34 @@
               <div class="section-content">
                 <div class="languages-wrapper">
                   <div class="languages-item">
-                    <div class="icon-wrap">
-                      <img
-                        src="/images/icons/flags/united-states-of-america.svg"
-                        alt=""
-                        @error.once="
-                          $event.target.src =
-                            'https://via.placeholder.com/150x150'
-                        "
-                      />
-                    </div>
+                    <V-IconWrap
+                      picture="/images/icons/flags/united-states-of-america.svg"
+                    />
+
                     <div class="meta">
                       <span class="dark-inverted">English</span>
                       <span>Native Speaker, fluent</span>
                     </div>
                   </div>
                   <div class="languages-item">
-                    <div class="icon-wrap">
-                      <img
-                        src="/images/icons/flags/france.svg"
-                        alt=""
-                        @error.once="
-                          $event.target.src =
-                            'https://via.placeholder.com/150x150'
-                        "
-                      />
-                    </div>
+                    <V-IconWrap picture="/images/icons/flags/france.svg" />
+
                     <div class="meta">
                       <span class="dark-inverted">French</span>
                       <span>Fluent, written and spoken</span>
                     </div>
                   </div>
                   <div class="languages-item">
-                    <div class="icon-wrap">
-                      <img
-                        src="/images/icons/flags/germany.svg"
-                        alt=""
-                        @error.once="
-                          $event.target.src =
-                            'https://via.placeholder.com/150x150'
-                        "
-                      />
-                    </div>
+                    <V-IconWrap picture="/images/icons/flags/germany.svg" />
+
                     <div class="meta">
                       <span class="dark-inverted">German</span>
                       <span>Beginner level</span>
                     </div>
                   </div>
                   <div class="languages-item">
-                    <div class="icon-wrap">
-                      <img
-                        src="/images/icons/flags/spain.svg"
-                        alt=""
-                        @error.once="
-                          $event.target.src =
-                            'https://via.placeholder.com/150x150'
-                        "
-                      />
-                    </div>
+                    <V-IconWrap picture="/images/icons/flags/spain.svg" />
+
                     <div class="meta">
                       <span class="dark-inverted">Spanish</span>
                       <span>Beginner level</span>
@@ -236,16 +206,8 @@
                 <div class="skills-wrapper">
                   <!--Skill-->
                   <div class="skills-item">
-                    <div class="icon-wrap">
-                      <img
-                        src="/images/icons/stacks/js.svg"
-                        alt=""
-                        @error.once="
-                          $event.target.src =
-                            'https://via.placeholder.com/150x150'
-                        "
-                      />
-                    </div>
+                    <V-IconWrap picture="/images/icons/stacks/js.svg" />
+
                     <div class="skill-info">
                       <span class="dark-inverted">Javascript</span>
                       <span>7 years of experience</span>
@@ -267,9 +229,8 @@
 
                   <!--Skill-->
                   <div class="skills-item">
-                    <div class="icon-wrap has-icon">
-                      <i class="lnil lnil-burger-alt"></i>
-                    </div>
+                    <V-IconWrap icon="lnil lnil-burger-alt" placeholder />
+
                     <div class="skill-info">
                       <span class="dark-inverted">Product Management</span>
                       <span>4 years of experience</span>
@@ -294,16 +255,8 @@
 
                   <!--Skill-->
                   <div class="skills-item">
-                    <div class="icon-wrap">
-                      <img
-                        src="/images/icons/stacks/html5.svg"
-                        alt=""
-                        @error.once="
-                          $event.target.src =
-                            'https://via.placeholder.com/150x150'
-                        "
-                      />
-                    </div>
+                    <V-IconWrap picture="/images/icons/stacks/html5.svg" />
+
                     <div class="skill-info">
                       <span class="dark-inverted">Html 5</span>
                       <span>10+ years of experience</span>
@@ -328,16 +281,8 @@
 
                   <!--Skill-->
                   <div class="skills-item">
-                    <div class="icon-wrap">
-                      <img
-                        src="/images/icons/stacks/css3.svg"
-                        alt=""
-                        @error.once="
-                          $event.target.src =
-                            'https://via.placeholder.com/150x150'
-                        "
-                      />
-                    </div>
+                    <V-IconWrap picture="/images/icons/stacks/css3.svg" />
+
                     <div class="skill-info">
                       <span class="dark-inverted">CSS 3</span>
                       <span>10+ years of experience</span>
@@ -460,16 +405,10 @@
                 <div class="tools-wrapper">
                   <!--Tool-->
                   <div class="tools-item">
-                    <div class="icon-wrap">
-                      <img
-                        src="/images/icons/stacks/illustrator.svg"
-                        alt=""
-                        @error.once="
-                          $event.target.src =
-                            'https://via.placeholder.com/150x150'
-                        "
-                      />
-                    </div>
+                    <V-IconWrap
+                      picture="/images/icons/stacks/illustrator.svg"
+                    />
+
                     <div class="meta">
                       <span class="dark-inverted">Adobe Illustrator</span>
                       <span>Advanced level</span>
@@ -478,16 +417,8 @@
 
                   <!--Tool-->
                   <div class="tools-item">
-                    <div class="icon-wrap">
-                      <img
-                        src="/images/photo/demo/brands/jira.svg"
-                        alt=""
-                        @error.once="
-                          $event.target.src =
-                            'https://via.placeholder.com/150x150'
-                        "
-                      />
-                    </div>
+                    <V-IconWrap picture="/images/photo/demo/brands/jira.svg" />
+
                     <div class="meta">
                       <span class="dark-inverted">Jira Software</span>
                       <span>Intermediate level</span>
@@ -496,16 +427,10 @@
 
                   <!--Tool-->
                   <div class="tools-item">
-                    <div class="icon-wrap">
-                      <img
-                        src="/images/photo/demo/brands/office.svg"
-                        alt=""
-                        @error.once="
-                          $event.target.src =
-                            'https://via.placeholder.com/150x150'
-                        "
-                      />
-                    </div>
+                    <V-IconWrap
+                      picture="/images/photo/demo/brands/office.svg"
+                    />
+
                     <div class="meta">
                       <span class="dark-inverted">MS Office</span>
                       <span>Expert level</span>

@@ -142,35 +142,35 @@ const randomCard = () => {
             <span>3 remaining</span>
           </div>
           <div class="block-body is-seats">
-            <tippy interactive placement="bottom-start">
+            <tippy class="has-help-cursor" interactive placement="bottom-start">
               <V-Avatar picture="/images/avatars/photos/8.jpg" />
               <template #content>
                 <UserPopoverContent :user="popovers.user8" />
               </template>
             </tippy>
 
-            <tippy interactive placement="bottom-start">
+            <tippy class="has-help-cursor" interactive placement="bottom-start">
               <V-Avatar color="warning" initials="BT" />
               <template #content>
                 <UserPopoverContent :user="popovers.user122" />
               </template>
             </tippy>
 
-            <tippy interactive placement="bottom">
+            <tippy class="has-help-cursor" interactive placement="bottom">
               <V-Avatar picture="/images/avatars/photos/18.jpg" />
               <template #content>
                 <UserPopoverContent :user="popovers.user18" />
               </template>
             </tippy>
 
-            <tippy interactive placement="bottom">
+            <tippy class="has-help-cursor" interactive placement="bottom">
               <V-Avatar color="info" initials="JD" />
               <template #content>
                 <UserPopoverContent :user="popovers.user123" />
               </template>
             </tippy>
 
-            <tippy interactive placement="bottom">
+            <tippy class="has-help-cursor" interactive placement="bottom">
               <V-Avatar picture="/images/avatars/photos/7.jpg" />
               <template #content>
                 <UserPopoverContent :user="popovers.user7" />

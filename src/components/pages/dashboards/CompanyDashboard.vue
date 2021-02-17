@@ -332,7 +332,12 @@ onMounted(async () => {
               class="is-dark-bordered-12"
             >
               <template #icon>
-                <tippy interactive :offset="[0, 10]" placement="top-start">
+                <tippy
+                  class="has-help-cursor"
+                  interactive
+                  :offset="[0, 10]"
+                  placement="top-start"
+                >
                   <V-Avatar
                     size="medium"
                     picture="/images/avatars/photos/31.jpg"
@@ -357,7 +362,12 @@ onMounted(async () => {
               class="is-dark-bordered-12"
             >
               <template #icon>
-                <tippy interactive :offset="[0, 10]" placement="top-start">
+                <tippy
+                  class="has-help-cursor"
+                  interactive
+                  :offset="[0, 10]"
+                  placement="top-start"
+                >
                   <V-Avatar
                     size="medium"
                     picture="/images/avatars/photos/23.jpg"
@@ -382,7 +392,12 @@ onMounted(async () => {
               class="is-dark-bordered-12"
             >
               <template #icon>
-                <tippy interactive :offset="[0, 10]" placement="top-start">
+                <tippy
+                  class="has-help-cursor"
+                  interactive
+                  :offset="[0, 10]"
+                  placement="top-start"
+                >
                   <V-Avatar
                     size="medium"
                     picture="/images/avatars/photos/32.jpg"
@@ -407,7 +422,12 @@ onMounted(async () => {
               class="is-dark-bordered-12"
             >
               <template #icon>
-                <tippy interactive :offset="[0, 10]" placement="top-start">
+                <tippy
+                  class="has-help-cursor"
+                  interactive
+                  :offset="[0, 10]"
+                  placement="top-start"
+                >
                   <V-Avatar
                     size="medium"
                     picture="/images/avatars/photos/13.jpg"

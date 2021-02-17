@@ -175,7 +175,7 @@ const democheck4 = ref(false)
           <div class="active-team">
             <ul class="user-list">
               <li>
-                <tippy interactive :offset="[0, 10]">
+                <tippy class="has-help-cursor" interactive :offset="[0, 10]">
                   <V-Avatar picture="/images/avatars/photos/18.jpg" />
                   <template #content>
                     <UserPopoverContent :user="popovers.user18" />
@@ -191,7 +191,7 @@ const democheck4 = ref(false)
                 </div>
               </li>
               <li>
-                <tippy interactive :offset="[0, 10]">
+                <tippy class="has-help-cursor" interactive :offset="[0, 10]">
                   <V-Avatar initials="SC" color="h-orange" />
                   <template #content>
                     <UserPopoverContent :user="popovers.user120" />
@@ -207,7 +207,7 @@ const democheck4 = ref(false)
                 </div>
               </li>
               <li>
-                <tippy interactive :offset="[0, 10]">
+                <tippy class="has-help-cursor" interactive :offset="[0, 10]">
                   <V-Avatar picture="/images/avatars/photos/13.jpg" />
                   <template #content>
                     <UserPopoverContent :user="popovers.user13" />
@@ -223,7 +223,7 @@ const democheck4 = ref(false)
                 </div>
               </li>
               <li>
-                <tippy interactive :offset="[0, 10]">
+                <tippy class="has-help-cursor" interactive :offset="[0, 10]">
                   <V-Avatar initials="NL" color="success" />
                   <template #content>
                     <UserPopoverContent :user="popovers.user121" />

@@ -211,15 +211,10 @@ const onSave = async () => {
           <template v-else>
             <!--Experience Item-->
             <div class="setting-item">
-              <div class="icon-wrap has-img">
-                <img
-                  src="/images/icons/flags/united-states-of-america.svg"
-                  alt=""
-                  @error.once="
-                    $event.target.src = 'https://via.placeholder.com/150x150'
-                  "
-                />
-              </div>
+              <V-IconWrap
+                picture="/images/icons/flags/united-states-of-america.svg"
+              />
+
               <div class="meta">
                 <span class="dark-inverted">English</span>
                 <span>Native Speaker, fluent</span>
@@ -231,15 +226,8 @@ const onSave = async () => {
 
             <!--Experience Item-->
             <div class="setting-item">
-              <div class="icon-wrap has-img">
-                <img
-                  src="/images/icons/flags/france.svg"
-                  alt=""
-                  @error.once="
-                    $event.target.src = 'https://via.placeholder.com/150x150'
-                  "
-                />
-              </div>
+              <V-IconWrap picture="/images/icons/flags/france.svg" />
+
               <div class="meta">
                 <span class="dark-inverted">French</span>
                 <span>Fluent, written and spoken</span>
@@ -251,15 +239,8 @@ const onSave = async () => {
 
             <!--Experience Item-->
             <div class="setting-item">
-              <div class="icon-wrap has-img">
-                <img
-                  src="/images/icons/flags/germany.svg"
-                  alt=""
-                  @error.once="
-                    $event.target.src = 'https://via.placeholder.com/150x150'
-                  "
-                />
-              </div>
+              <V-IconWrap picture="/images/icons/flags/germany.svg" />
+
               <div class="meta">
                 <span class="dark-inverted">German</span>
                 <span>Beginner level</span>
@@ -271,15 +252,8 @@ const onSave = async () => {
 
             <!--Experience Item-->
             <div class="setting-item">
-              <div class="icon-wrap has-img">
-                <img
-                  src="/images/icons/flags/spain.svg"
-                  alt=""
-                  @error.once="
-                    $event.target.src = 'https://via.placeholder.com/150x150'
-                  "
-                />
-              </div>
+              <V-IconWrap picture="/images/icons/flags/spain.svg" />
+
               <div class="meta">
                 <span class="dark-inverted">Spanish</span>
                 <span>Beginner level</span>
@@ -291,9 +265,8 @@ const onSave = async () => {
 
             <!--Create Item-->
             <div class="setting-item is-create">
-              <div class="icon-wrap">
-                <i class="lnil lnil-circle-plus"></i>
-              </div>
+              <V-IconWrap icon="lnil lnil-circle-plus" />
+
               <div class="meta">
                 <span class="dark-inverted">New Item</span>
                 <span>Add a new language item</span>
@@ -473,15 +446,8 @@ const onSave = async () => {
           <template v-else>
             <!--Skill Item-->
             <div class="setting-item">
-              <div class="icon-wrap has-img">
-                <img
-                  src="/images/icons/stacks/js.svg"
-                  alt=""
-                  @error.once="
-                    $event.target.src = 'https://via.placeholder.com/150x150'
-                  "
-                />
-              </div>
+              <V-IconWrap picture="/images/icons/stacks/js.svg" />
+
               <div class="meta">
                 <span class="dark-inverted">Javascript</span>
                 <span>7 years of experience</span>
@@ -493,15 +459,8 @@ const onSave = async () => {
 
             <!--Skill Item-->
             <div class="setting-item">
-              <div class="icon-wrap has-img">
-                <img
-                  src="/images/icons/stacks/html5.svg"
-                  alt=""
-                  @error.once="
-                    $event.target.src = 'https://via.placeholder.com/150x150'
-                  "
-                />
-              </div>
+              <V-IconWrap picture="/images/icons/stacks/html5.svg" />
+
               <div class="meta">
                 <span class="dark-inverted">Html5</span>
                 <span>10+ years of experience</span>
@@ -513,15 +472,8 @@ const onSave = async () => {
 
             <!--Skill Item-->
             <div class="setting-item">
-              <div class="icon-wrap has-img">
-                <img
-                  src="/images/icons/stacks/css3.svg"
-                  alt=""
-                  @error.once="
-                    $event.target.src = 'https://via.placeholder.com/150x150'
-                  "
-                />
-              </div>
+              <V-IconWrap picture="/images/icons/stacks/css3.svg" />
+
               <div class="meta">
                 <span class="dark-inverted">CSS3</span>
                 <span>10+ years of experience</span>
@@ -533,9 +485,8 @@ const onSave = async () => {
 
             <!--Create Item-->
             <div class="setting-item is-create">
-              <div class="icon-wrap">
-                <i class="lnil lnil-circle-plus"></i>
-              </div>
+              <V-IconWrap icon="lnil lnil-circle-plus" />
+
               <div class="meta">
                 <span class="dark-inverted">New Item</span>
                 <span>Add a new skill item</span>
@@ -676,15 +627,8 @@ const onSave = async () => {
           <template v-else>
             <!--Skill Item-->
             <div class="setting-item">
-              <div class="icon-wrap has-img">
-                <img
-                  src="/images/icons/stacks/illustrator.svg"
-                  alt=""
-                  @error.once="
-                    $event.target.src = 'https://via.placeholder.com/150x150'
-                  "
-                />
-              </div>
+              <V-IconWrap picture="/images/icons/stacks/illustrator.svg" />
+
               <div class="meta">
                 <span class="dark-inverted">Illustrator</span>
                 <span>Advanced level</span>
@@ -696,15 +640,8 @@ const onSave = async () => {
 
             <!--Skill Item-->
             <div class="setting-item">
-              <div class="icon-wrap has-img">
-                <img
-                  src="/images/photo/demo/brands/jira.svg"
-                  alt=""
-                  @error.once="
-                    $event.target.src = 'https://via.placeholder.com/150x150'
-                  "
-                />
-              </div>
+              <V-IconWrap picture="/images/icons/stacks/jira.svg" />
+
               <div class="meta">
                 <span class="dark-inverted">Jira Software</span>
                 <span>Intermediate level</span>
@@ -716,15 +653,8 @@ const onSave = async () => {
 
             <!--Skill Item-->
             <div class="setting-item">
-              <div class="icon-wrap has-img">
-                <img
-                  src="/images/photo/demo/brands/office.svg"
-                  alt=""
-                  @error.once="
-                    $event.target.src = 'https://via.placeholder.com/150x150'
-                  "
-                />
-              </div>
+              <V-IconWrap picture="/images/icons/stacks/office.svg" />
+
               <div class="meta">
                 <span class="dark-inverted">MS Office</span>
                 <span>Expert level</span>
@@ -736,9 +666,8 @@ const onSave = async () => {
 
             <!--Create Item-->
             <div class="setting-item is-create">
-              <div class="icon-wrap">
-                <i class="lnil lnil-circle-plus"></i>
-              </div>
+              <V-IconWrap icon="lnil lnil-circle-plus" />
+
               <div class="meta">
                 <span class="dark-inverted">New Item</span>
                 <span>Add a new tool item</span>

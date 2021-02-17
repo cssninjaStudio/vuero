@@ -331,9 +331,8 @@ const onSave = async () => {
 
             <!--Create Item-->
             <div class="setting-item is-create">
-              <div class="icon-wrap">
-                <i class="lnil lnil-circle-plus"></i>
-              </div>
+              <V-IconWrap icon="lnil lnil-circle-plus" />
+
               <div class="meta">
                 <span class="dark-inverted">New Item</span>
                 <span>Add a new work experience item</span>

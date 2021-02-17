@@ -118,31 +118,56 @@ import { popovers } from '/@src/data/users/userPopovers'
           </div>
 
           <div class="people">
-            <tippy interactive :offset="[0, 40]" placement="top-end">
+            <tippy
+              class="has-help-cursor"
+              interactive
+              :offset="[0, 40]"
+              placement="top-end"
+            >
               <V-Avatar picture="/images/avatars/photos/21.jpg" />
               <template #content>
                 <UserPopoverContent :user="popovers.user21" />
               </template>
             </tippy>
-            <tippy interactive :offset="[0, 40]" placement="top-end">
+            <tippy
+              class="has-help-cursor"
+              interactive
+              :offset="[0, 40]"
+              placement="top-end"
+            >
               <V-Avatar initials="SC" color="h-purple" />
               <template #content>
                 <UserPopoverContent :user="popovers.user120" />
               </template>
             </tippy>
-            <tippy interactive :offset="[0, 40]" placement="top-end">
+            <tippy
+              class="has-help-cursor"
+              interactive
+              :offset="[0, 40]"
+              placement="top-end"
+            >
               <V-Avatar picture="/images/avatars/photos/7.jpg" />
               <template #content>
                 <UserPopoverContent :user="popovers.user7" />
               </template>
             </tippy>
-            <tippy interactive :offset="[0, 40]" placement="top-end">
+            <tippy
+              class="has-help-cursor"
+              interactive
+              :offset="[0, 40]"
+              placement="top-end"
+            >
               <V-Avatar initials="AT" color="success" />
               <template #content>
                 <UserPopoverContent :user="popovers.user124" />
               </template>
             </tippy>
-            <tippy interactive :offset="[0, 40]" placement="top-end">
+            <tippy
+              class="has-help-cursor"
+              interactive
+              :offset="[0, 40]"
+              placement="top-end"
+            >
               <V-Avatar picture="/images/avatars/photos/31.jpg" />
               <template #content>
                 <UserPopoverContent :user="popovers.user31" />

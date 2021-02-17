@@ -323,9 +323,7 @@ const activeTab = ref<TabId>('all')
             <!--Search Results Group-->
             <div class="search-results-group">
               <div class="group-header">
-                <div class="icon-wrap">
-                  <i class="iconify" data-icon="feather:user"></i>
-                </div>
+                <V-IconWrap icon="feather:user" />
                 <h4>People</h4>
               </div>
 
@@ -351,9 +349,8 @@ const activeTab = ref<TabId>('all')
             <!--Search Results Group-->
             <div class="search-results-group">
               <div class="group-header">
-                <div class="icon-wrap">
-                  <i class="iconify" data-icon="feather:file-text"></i>
-                </div>
+                <V-IconWrap icon="feather:file-text" />
+
                 <h4>Records</h4>
               </div>
 

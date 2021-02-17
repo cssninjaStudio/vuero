@@ -44,7 +44,7 @@ const user = {
 </script>
 
 <template>
-  <tippy interactive :offset="[0, 30]">
+  <tippy class="has-help-cursor" interactive :offset="[0, 30]">
     <V-Avatar :picture="user.avatar" />
     <template #content>
       <UserPopoverContent :user="user" />

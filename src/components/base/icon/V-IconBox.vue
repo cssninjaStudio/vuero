@@ -39,7 +39,7 @@ const props = defineProps({
   color: {
     type: String as PropType<IconBoxColor>,
     default: undefined,
-    validator: function (value: IconBoxSize) {
+    validator: function (value: IconBoxColor) {
       if (!value) return true
       // The value must match one of these strings
       if (
