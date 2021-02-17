@@ -1,18 +1,18 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 
-import { posts } from '/@src/data/layouts/card-grid-v4'
+import { files } from '/@src/data/layouts/tile-grid-v2'
 
 const filters = ref('')
 
 const filteredData = computed(() => {
   if (!filters.value) {
-    return posts
+    return files
   } else {
-    return posts.filter((item) => {
+    return files.filter((item) => {
       return (
-        item.title.match(new RegExp(filters.value, 'i')) ||
-        item.author.name.match(new RegExp(filters.value, 'i'))
+        item.name.match(new RegExp(filters.value, 'i')) ||
+        item.size.match(new RegExp(filters.value, 'i'))
       )
     })
   }
@@ -20,16 +20,17 @@ const filteredData = computed(() => {
 
 const valueSingle = 0
 const optionsSingle = [
-  'All Posts',
-  'Recent Posts',
-  'Older Posts',
-  'Popular Posts',
+  'All Files',
+  'Recently Updated',
+  'My Files',
+  'Team Files',
+  'Deprecated',
 ]
 </script>
 
 <template>
   <div>
-    <div class="card-grid-toolbar">
+    <div class="tile-grid-toolbar">
       <V-Control icon="feather:search">
         <input
           v-model="filters"
@@ -53,12 +54,12 @@ const optionsSingle = [
           <span class="icon">
             <i class="fas fa-plus"></i>
           </span>
-          <span>New Post</span>
+          <span>Add File</span>
         </V-Button>
       </div>
     </div>
 
-    <div class="card-grid card-grid-v4">
+    <div class="tile-grid tile-grid-v2">
       <!--List Empty Search Placeholder -->
       <V-PlaceholderPage
         :class="[filteredData.length !== 0 && 'is-hidden']"
@@ -82,30 +83,30 @@ const optionsSingle = [
         </template>
       </V-PlaceholderPage>
 
+      <!--Tile Grid v1-->
       <transition-group name="list" tag="div" class="columns is-multiline">
         <!--Grid item-->
-        <div v-for="item in filteredData" :key="item.id" class="column is-3">
-          <a href="#" class="card-grid-item">
-            <img
-              :src="item.image"
-              alt=""
-              @error.once="
-                $event.target.src = 'https://via.placeholder.com/400x300'
-              "
-            />
-            <div class="card-grid-item-content">
-              <h3 class="dark-inverted">
-                {{ item.title }}
-              </h3>
-            </div>
-            <div class="card-grid-item-footer">
-              <V-Avatar :picture="item.author.avatar" size="small" />
+        <div v-for="item in filteredData" :key="item.id" class="column is-4">
+          <div class="tile-grid-item">
+            <div class="tile-grid-item-inner">
+              <img
+                :src="item.icon"
+                alt=""
+                @error.once="
+                  $event.target.src = 'https://via.placeholder.com/150x150'
+                "
+              />
               <div class="meta">
-                <span class="dark-inverted">{{ item.author.name }}</span>
-                <span>{{ item.published }}</span>
+                <span class="dark-inverted">{{ item.name }}</span>
+                <span>
+                  <span>{{ item.size }}</span>
+                  <i class="fas fa-circle icon-separator"></i>
+                  <span>Updated {{ item.updated }}</span>
+                </span>
               </div>
+              <FileTileDropdown />
             </div>
-          </a>
+          </div>
         </div>
       </transition-group>
     </div>
@@ -116,7 +117,7 @@ const optionsSingle = [
 @import '../../../../assets/scss/abstracts/_variables.scss';
 @import '../../../../assets/scss/abstracts/_mixins.scss';
 
-.card-grid {
+.tile-grid {
   .columns {
     margin-left: -0.5rem !important;
     margin-right: -0.5rem !important;
@@ -128,89 +129,88 @@ const optionsSingle = [
   }
 }
 
-.card-grid-v4 {
-  .card-grid-item {
+.is-dark {
+  .tile-grid {
+    .tile-grid-item {
+      @include vuero-card--dark();
+    }
+  }
+}
+
+.tile-grid-v2 {
+  .tile-grid-item {
     @include vuero-s-card();
 
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    border-radius: 16px;
-    min-height: 300px;
+    border-radius: 14px;
+    padding: 16px;
+    cursor: pointer;
 
     &:hover {
+      border-color: $primary;
       box-shadow: $light-box-shadow;
     }
 
-    > img {
-      display: block;
-      border-radius: 12px;
-      width: 100%;
-      height: 160px;
-      object-fit: cover;
-    }
-
-    .card-grid-item-content {
-      padding: 12px 5px;
-
-      h3 {
-        font-family: $font-alt;
-        font-size: 1rem;
-        font-weight: 600;
-        color: $dark-text;
-        line-height: 1.3;
-      }
-    }
-
-    .card-grid-item-footer {
+    .tile-grid-item-inner {
       display: flex;
       align-items: center;
-      margin-top: auto;
-      padding: 0 5px 10px 5px;
+
+      > img {
+        display: block;
+        width: 50px;
+        height: 50px;
+        min-width: 50px;
+      }
 
       .meta {
-        margin-left: 8px;
-        line-height: 1.2;
+        margin-left: 10px;
+        line-height: 1.4;
 
         span {
           display: block;
-          font-weight: 400;
+          font-family: $font;
 
           &:first-child {
-            font-family: $font-alt;
-            font-size: 0.9rem;
             color: $dark-text;
+            font-family: $font-alt;
             font-weight: 600;
+            font-size: 1rem;
           }
 
           &:nth-child(2) {
-            font-family: $font;
-            font-size: 0.85rem;
-            color: $light-text;
+            display: flex;
+            align-items: center;
+
+            span {
+              display: inline-block;
+              color: $light-text;
+              font-size: 0.8rem;
+              font-weight: 400;
+            }
+
+            .icon-separator {
+              position: relative;
+              font-size: 4px;
+              color: $light-text;
+              padding: 0 6px;
+            }
           }
         }
+      }
+
+      .dropdown {
+        margin-left: auto;
       }
     }
   }
 }
 
 .is-dark {
-  .card-grid-v4 {
-    .card-grid-item {
+  .tile-grid-v2 {
+    .tile-grid-item {
       @include vuero-card--dark();
-    }
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-  .card-grid-v4 {
-    .columns {
-      display: flex;
-    }
-
-    .column {
-      width: 33.3%;
-      min-width: 33.3%;
+      &:hover {
+        border-color: $accent !important;
+      }
     }
   }
 }

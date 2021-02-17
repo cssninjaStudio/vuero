@@ -54,7 +54,7 @@ const optionsSingle = [
           <span class="icon">
             <i class="fas fa-plus"></i>
           </span>
-          <span>Add User</span>
+          <span>New Project</span>
         </V-Button>
       </div>
     </div>
