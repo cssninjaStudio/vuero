@@ -7,7 +7,7 @@ import { adminDemos } from '/@src/data/landing/admin'
     <!--ADMIN-->
     <img
       class="light-image-block-l"
-      src="/public/screenshoots/banking-v1-dashboard-admin-light.webp"
+      src="/screenshoots/banking-v1-dashboard-admin-light.webp"
       alt=""
     />
     <div class="demo-section">
