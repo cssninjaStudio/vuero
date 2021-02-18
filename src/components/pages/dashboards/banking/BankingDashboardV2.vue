@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import type { TinySliderInstance } from 'tiny-slider/src/tiny-slider'
 import { expensesOptions } from '/@src/data/dashboards/banking-v2/expensesAreaChart'
 import { tns } from 'tiny-slider/src/tiny-slider'
 import { ref, onMounted } from 'vue'
@@ -8,10 +9,12 @@ import {
   optionsSingle,
 } from '/@src/data/dashboards/banking-v2/dashboardData'
 
+let slider: TinySliderInstance
+
 const sliderElement = ref<HTMLElement | null>(null)
 onMounted(() => {
   if (sliderElement.value) {
-    const slider = tns({
+    slider = tns({
       container: sliderElement.value,
       controls: false,
       nav: true,
@@ -33,6 +36,12 @@ onMounted(() => {
     })
   }
 })
+
+const goto = (index: number) => {
+  if (slider) {
+    slider.goTo(index)
+  }
+}
 </script>
 
 <template>
@@ -61,7 +70,7 @@ onMounted(() => {
               <div class="cards-carousel">
                 <div ref="sliderElement" class="cards-carousel-inner">
                   <!--Carousel Item-->
-                  <div class="cards-carousel-item">
+                  <div class="cards-carousel-item" @click="goto(0)">
                     <div class="ccard">
                       <div class="shape"></div>
                       <div class="top">
@@ -88,7 +97,7 @@ onMounted(() => {
                     </div>
                   </div>
                   <!--Carousel Item-->
-                  <div class="cards-carousel-item">
+                  <div class="cards-carousel-item" @click="goto(1)">
                     <div class="ccard">
                       <div class="shape"></div>
                       <div class="top">
@@ -115,7 +124,7 @@ onMounted(() => {
                     </div>
                   </div>
                   <!--Carousel Item-->
-                  <div class="cards-carousel-item">
+                  <div class="cards-carousel-item" @click="goto(2)">
                     <div class="ccard">
                       <div class="shape"></div>
                       <div class="top">
@@ -142,7 +151,7 @@ onMounted(() => {
                     </div>
                   </div>
                   <!--Carousel Item-->
-                  <div class="cards-carousel-item">
+                  <div class="cards-carousel-item" @click="goto(3)">
                     <div class="ccard">
                       <div class="shape"></div>
                       <div class="top">

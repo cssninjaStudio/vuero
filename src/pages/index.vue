@@ -105,18 +105,18 @@ useHead({
 
             <tippy class="has-help-cursor" interactive placement="top">
               <div class="stack">
-                <img src="/images/icons/stacks/typescript.svg" alt="" />
+                <img src="/images/icons/stacks/vite.svg" alt="" />
               </div>
               <template #content>
                 <StackPopoverContent
                   :stack="{
-                    name: 'Typescript',
-                    subtitle: 'Javascript enhanced',
-                    logo: '/images/icons/stacks/typescript.svg',
+                    name: 'Vite',
+                    subtitle: 'Next Generation Frontend Tooling',
+                    logo: '/images/icons/stacks/vite.svg',
                     description:
-                      'TypeScript is a language for application-scale JavaScript. TypeScript adds optional types to JavaScript that support tools for large-scale JavaScript applications for any browser, for any host, on any OS.',
-                    homepage: 'https://www.typescriptlang.org/',
-                    github: 'https://github.com/microsoft/TypeScript',
+                      'Vite is a new breed of frontend build tool that significantly improves the frontend development experience.',
+                    homepage: 'https://vitejs.dev/',
+                    github: 'https://github.com/vitejs/vite',
                   }"
                 />
               </template>
@@ -162,18 +162,18 @@ useHead({
 
             <tippy class="has-help-cursor" interactive placement="top">
               <div class="stack">
-                <img src="/images/icons/stacks/vite.svg" alt="" />
+                <img src="/images/icons/stacks/typescript.svg" alt="" />
               </div>
               <template #content>
                 <StackPopoverContent
                   :stack="{
-                    name: 'Vite',
-                    subtitle: 'Next Generation Frontend Tooling',
-                    logo: '/images/icons/stacks/vite.svg',
+                    name: 'Typescript',
+                    subtitle: 'Javascript enhanced',
+                    logo: '/images/icons/stacks/typescript.svg',
                     description:
-                      'Vite is a new breed of frontend build tool that significantly improves the frontend development experience.',
-                    homepage: 'https://vitejs.dev/',
-                    github: 'https://github.com/vitejs/vite',
+                      'TypeScript is a language for application-scale JavaScript. TypeScript adds optional types to JavaScript that support tools for large-scale JavaScript applications for any browser, for any host, on any OS.',
+                    homepage: 'https://www.typescriptlang.org/',
+                    github: 'https://github.com/microsoft/TypeScript',
                   }"
                 />
               </template>
