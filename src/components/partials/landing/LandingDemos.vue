@@ -5,11 +5,6 @@ import { adminDemos } from '/@src/data/landing/admin'
 <template>
   <div class="huro-demos">
     <!--ADMIN-->
-    <img
-      class="light-image-block-l"
-      src="/screenshoots/banking-v1-dashboard-admin-light.webp"
-      alt=""
-    />
     <div class="demo-section">
       <div class="demo-section-title">
         <img
