@@ -85,10 +85,10 @@ useHead({
           <!--Stacks-->
           <div class="stacks">
             <div class="stack">
-              <img src="/images/icons/stacks/html5.svg" alt="" />
+              <img src="/images/icons/stacks/vuejs.svg" alt="" />
             </div>
             <div class="stack">
-              <img src="/images/icons/stacks/js.svg" alt="" />
+              <img src="/images/icons/stacks/typescript.svg" alt="" />
             </div>
             <div class="stack">
               <img src="/images/icons/stacks/bulma.svg" alt="" />
@@ -97,7 +97,7 @@ useHead({
               <img src="/images/icons/stacks/sass.svg" alt="" />
             </div>
             <div class="stack">
-              <img src="/images/icons/stacks/gulp.svg" alt="" />
+              <img src="/images/icons/stacks/vite.svg" alt="" />
             </div>
           </div>
 
@@ -112,7 +112,7 @@ useHead({
             <div class="flex-card light-bordered hover-inset">
               <div class="flex-cell is-bordered">
                 <i class="lnil lnil-toolbox"></i>
-                <h3>1000+ Components</h3>
+                <h3>500+ Vue Components</h3>
                 <p>
                   An incredible set of building blocks with dark mode support.
                 </p>
@@ -177,6 +177,123 @@ useHead({
                 <a href="https://cssninja.io" class="button chat-button"
                   >Chat with us</a
                 >
+              </div>
+            </div>
+          </div>
+
+          <!--Title-->
+          <div class="section-title has-text-centered">
+            <h2 class="title is-2">Developer Experience</h2>
+            <h4>A set of professional tools to build professional apps.</h4>
+          </div>
+
+          <!--Boxed Features-->
+          <div class="boxed-features is-flat pb-6">
+            <div class="flex-card light-bordered hover-inset">
+              <div class="flex-cell is-bordered">
+                <img src="/images/icons/stacks/vuejs-solo.svg" alt="" />
+                <h3>Vue 3</h3>
+                <p>
+                  Vue 3 and its powerful composition API makes your experience
+                  pleasant.
+                </p>
+              </div>
+              <div class="flex-cell">
+                <img src="/images/icons/stacks/typescript-square.svg" alt="" />
+                <h3>Typescript</h3>
+                <p>
+                  Typescript makes things much more simpler but remains
+                  optional.
+                </p>
+              </div>
+              <div class="flex-cell is-bordered">
+                <img src="/images/icons/stacks/vite.svg" alt="" />
+                <h3>Vite JS</h3>
+                <p>
+                  Vite 2 is blazing fast, does HOT reloading and parses all your
+                  components.
+                </p>
+              </div>
+              <div class="flex-cell">
+                <img src="/images/icons/stacks/vscode.svg" alt="" />
+                <h3>VS Code Integration</h3>
+                <p>
+                  Vuero is fully integrated with VS Code to help you produce
+                  quality checked code.
+                </p>
+              </div>
+              <div class="flex-cell is-bordered">
+                <img src="/images/icons/stacks/eslint.svg" alt="" />
+                <h3>ES Lint</h3>
+                <p>
+                  ES Lint watches your javascript code and makes sure it matches
+                  the best standards.
+                </p>
+              </div>
+              <div class="flex-cell is-bordered">
+                <img src="/images/icons/stacks/prettier.svg" alt="" />
+                <h3>Prettier</h3>
+                <p>
+                  Prettier tidies your code and makes it look much more cleaner
+                  and easier to read.
+                </p>
+              </div>
+              <div class="flex-cell">
+                <img
+                  class="light-image-block-l"
+                  src="/images/icons/stacks/stylelint.svg"
+                  alt=""
+                />
+                <img
+                  class="dark-image-block-l"
+                  src="/images/icons/stacks/stylelint-reverse.svg"
+                  alt=""
+                />
+                <h3>Stylelint</h3>
+                <p>
+                  Stylelint looks for poorly formatted styles and fixes
+                  everything for you.
+                </p>
+              </div>
+              <div class="flex-cell">
+                <img src="/images/icons/stacks/iconify.svg" alt="" />
+                <h3>Iconify</h3>
+                <p>
+                  Iconify displays icons inside your code editor so you always
+                  know what you're doing.
+                </p>
+              </div>
+              <div class="flex-cell">
+                <img src="/images/icons/misc/success.svg" alt="" />
+                <h3>Props Validation</h3>
+                <p>
+                  Vuero base components ship with props validation to prevent
+                  unexpected errors.
+                </p>
+              </div>
+              <div class="flex-cell">
+                <img src="/images/icons/misc/error.svg" alt="" />
+                <h3>Error Handling</h3>
+                <p>
+                  While developping Vuero, we focused on providing an up to
+                  standards error handling.
+                </p>
+              </div>
+              <div class="flex-cell">
+                <img src="/images/icons/misc/folder.svg" alt="" />
+                <h3>Project Structure</h3>
+                <p>
+                  A clean and organized project structure lets you find any file
+                  or content quickly.
+                </p>
+              </div>
+              <div class="flex-cell">
+                <img src="/images/icons/misc/documentation.svg" alt="" />
+                <h3>Component Guide</h3>
+                <p>
+                  A full component / plugin documentation with a lot of code
+                  examples lives inside Vuero.
+                </p>
               </div>
             </div>
           </div>
@@ -914,7 +1031,7 @@ useHead({
         .nav-link {
           &:hover,
           &.is-active {
-            color: $accent;
+            color: $white !important;
           }
 
           &::before {
@@ -1145,6 +1262,17 @@ useHead({
 ========================================================================== */
 
 .boxed-features {
+  &.is-flat {
+    .flex-card {
+      border: none !important;
+      background: none !important;
+
+      .flex-cell {
+        border: none !important;
+      }
+    }
+  }
+
   .flex-card {
     @include vuero-l-card();
 
@@ -1170,6 +1298,13 @@ useHead({
         font-size: 2.2rem;
         color: $primary;
         margin-bottom: 6px;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        max-width: 64px;
+        margin: 0 auto 6px auto;
       }
 
       h3 {

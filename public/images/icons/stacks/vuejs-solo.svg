@@ -3,17 +3,15 @@
 <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 250 250" style="enable-background:new 0 0 250 250;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#F0F5F7;}
-	.st1{fill:#4DBA87;}
-	.st2{fill:#435466;}
+	.st0{fill:#4DBA87;}
+	.st1{fill:#435466;}
 </style>
-<rect y="0" class="st0" width="250" height="250"/>
 <g id="g10" transform="matrix(1.3333333,0,0,-1.3333333,0,400)">
 	<g id="g12" transform="translate(178.0626,235.0086)">
-		<path id="path14" class="st1" d="M-70.1,13.9l-14.2-24.6l-14.2,24.6h-47.4l61.6-106.7l61.6,106.7L-70.1,13.9L-70.1,13.9z"/>
+		<path id="path14" class="st0" d="M-68.4,20.3L-84.3-7.2l-15.9,27.6h-53.1l69-119.5l69,119.5L-68.4,20.3L-68.4,20.3z"/>
 	</g>
 	<g id="g16" transform="translate(178.0626,235.0086)">
-		<path id="path18" class="st2" d="M-70.1,13.9l-14.2-24.6l-14.2,24.6h-22.7l37-64l37,64H-70.1z"/>
+		<path id="path18" class="st1" d="M-68.4,20.3L-84.3-7.2l-15.9,27.6h-25.4l41.4-71.7l41.4,71.7H-68.4z"/>
 	</g>
 </g>
 </svg>

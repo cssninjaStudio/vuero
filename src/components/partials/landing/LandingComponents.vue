@@ -97,6 +97,7 @@ defineProps({
           <div class="component-title">Content</div>
         </RouterLink>
       </div>
+
       <div class="column is-3">
         <RouterLink :to="{ name: 'elements-icons-fa' }" class="component-box">
           <div class="component">

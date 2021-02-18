@@ -158,12 +158,12 @@ useHead({
             <div class="column is-10 is-offset-1">
               <img
                 class="light-image has-light-shadow has-light-border"
-                src="/@src/assets/illustrations/apps/huro-banking-light.png?format=webp"
+                src="/@src/assets/illustrations/apps/vuero-banking-light.png?format=webp"
                 alt=""
               />
               <img
                 class="dark-image has-light-shadow"
-                src="/@src/assets/illustrations/apps/huro-banking-dark.png?format=webp"
+                src="/@src/assets/illustrations/apps/vuero-banking-dark.png?format=webp"
                 alt=""
               />
             </div>
