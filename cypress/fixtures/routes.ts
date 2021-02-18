@@ -5,46 +5,52 @@ export const minimal = [
   {
     name: 'Homepage',
     path: '/',
+    prefix: 'minimal',
   },
-  // {
-  //   name: 'Not existing page',
-  //   path: '/not-existing-page',
-  // },
   {
     name: 'Messaging V2',
     path: '/messaging-v2',
+    prefix: 'minimal',
   },
   {
     name: 'Status',
     path: '/status',
+    prefix: 'minimal',
   },
   {
     name: 'Wizard V1',
     path: '/wizard-v1',
+    prefix: 'minimal',
   },
   {
     name: 'Inbox',
     path: '/inbox',
+    prefix: 'minimal',
   },
   {
     name: 'Error 1',
     path: '/error/page-1',
+    prefix: 'minimal',
   },
   {
     name: 'Error 2',
     path: '/error/page-2',
+    prefix: 'minimal',
   },
   {
     name: 'Error 3',
     path: '/error/page-3',
+    prefix: 'minimal',
   },
   {
     name: 'Error 4',
     path: '/error/page-4',
+    prefix: 'minimal',
   },
   {
     name: 'Error 5',
     path: '/error/page-5',
+    prefix: 'minimal',
   },
 ]
 
@@ -52,26 +58,32 @@ export const auth = [
   {
     name: 'Login 1',
     path: '/auth/login-1',
+    prefix: 'auth',
   },
   {
     name: 'Login 2',
     path: '/auth/login-2',
+    prefix: 'auth',
   },
   {
     name: 'Login 3',
     path: '/auth/login-3',
+    prefix: 'auth',
   },
   {
     name: 'Signup 1',
     path: '/auth/signup-1',
+    prefix: 'auth',
   },
   {
     name: 'Signup 2',
     path: '/auth/signup-2',
+    prefix: 'auth',
   },
   {
     name: 'Signup 3',
     path: '/auth/signup-3',
+    prefix: 'auth',
   },
 ]
 
@@ -389,17 +401,20 @@ export const admin = [
   {
     name: 'Messaging V1',
     path: '/messaging-v1',
+    prefix: 'admin',
   },
   ...layouts.map((item) => {
     return {
-      name: `${item.name} - Layout Admin`,
+      name: item.name,
       path: `/admin/layouts${item.path}`,
+      prefix: 'admin',
     }
   }),
   ...dashboards.map((item) => {
     return {
-      name: `${item.name} - Dashboard Admin`,
+      name: item.name,
       path: `/admin/dashboards${item.path}`,
+      prefix: 'admin',
     }
   }),
 ]
@@ -407,14 +422,16 @@ export const admin = [
 export const webapp = [
   ...layouts.map((item) => {
     return {
-      name: `${item.name} - Layout Webapp`,
+      name: item.name,
       path: `/webapp/layouts${item.path}`,
+      prefix: 'webapp',
     }
   }),
   ...dashboards.map((item) => {
     return {
-      name: `${item.name} - Dashboard Webapp`,
+      name: item.name,
       path: `/webapp/dashboards${item.path}`,
+      prefix: 'webapp',
     }
   }),
 ]

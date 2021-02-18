@@ -22,7 +22,7 @@ describe('Desktop - Viewport (1295*722)', () => {
       cy.get('html').invoke('toggleClass', 'no-scroll')
 
       cy.screenshot(
-        `${route.name
+        `${route.prefix}/${route.name
           .toLowerCase()
           .replace('-', ' ')
           .replace('(', ' ')
@@ -38,7 +38,7 @@ describe('Desktop - Viewport (1295*722)', () => {
       // cy.wait(waitTimeout)
 
       cy.screenshot(
-        `${route.name
+        `${route.prefix}/${route.name
           .toLowerCase()
           .replace('-', ' ')
           .replace('(', ' ')
@@ -62,12 +62,12 @@ describe('Desktop - Viewport (1295*722)', () => {
       cy.get('html').invoke('toggleClass', 'no-scroll')
 
       cy.screenshot(
-        `${route.name
+        `${route.prefix}/${route.name
           .toLowerCase()
           .replace('-', ' ')
           .replace('(', ' ')
           .replace(')', ' ')
-          .replace(/[\s]+/g, '-')}-desktop-light`,
+          .replace(/[\s]+/g, '-')}-light`,
         {
           capture: 'viewport',
           disableTimersAndAnimations,
@@ -78,12 +78,12 @@ describe('Desktop - Viewport (1295*722)', () => {
       // cy.wait(waitTimeout)
 
       cy.screenshot(
-        `${route.name
+        `${route.prefix}/${route.name
           .toLowerCase()
           .replace('-', ' ')
           .replace('(', ' ')
           .replace(')', ' ')
-          .replace(/[\s]+/g, '-')}-desktop-dark`,
+          .replace(/[\s]+/g, '-')}-dark`,
         {
           capture: 'viewport',
           disableTimersAndAnimations,
@@ -102,12 +102,12 @@ describe('Desktop - Viewport (1295*722)', () => {
       cy.get('html').invoke('toggleClass', 'no-scroll')
 
       cy.screenshot(
-        `${route.name
+        `${route.prefix}/${route.name
           .toLowerCase()
           .replace('-', ' ')
           .replace('(', ' ')
           .replace(')', ' ')
-          .replace(/[\s]+/g, '-')}-desktop-light`,
+          .replace(/[\s]+/g, '-')}-light`,
         {
           capture: 'viewport',
           disableTimersAndAnimations,
@@ -118,12 +118,12 @@ describe('Desktop - Viewport (1295*722)', () => {
       // cy.wait(waitTimeout)
 
       cy.screenshot(
-        `${route.name
+        `${route.prefix}/${route.name
           .toLowerCase()
           .replace('-', ' ')
           .replace('(', ' ')
           .replace(')', ' ')
-          .replace(/[\s]+/g, '-')}-desktop-dark`,
+          .replace(/[\s]+/g, '-')}-dark`,
         {
           capture: 'viewport',
           disableTimersAndAnimations,
@@ -142,12 +142,12 @@ describe('Desktop - Viewport (1295*722)', () => {
       cy.get('html').invoke('toggleClass', 'no-scroll')
 
       cy.screenshot(
-        `${route.name
+        `${route.prefix}/${route.name
           .toLowerCase()
           .replace('-', ' ')
           .replace('(', ' ')
           .replace(')', ' ')
-          .replace(/[\s]+/g, '-')}-desktop-light`,
+          .replace(/[\s]+/g, '-')}-light`,
         {
           capture: 'viewport',
           disableTimersAndAnimations,
@@ -158,12 +158,12 @@ describe('Desktop - Viewport (1295*722)', () => {
       // cy.wait(waitTimeout)
 
       cy.screenshot(
-        `${route.name
+        `${route.prefix}/${route.name
           .toLowerCase()
           .replace('-', ' ')
           .replace('(', ' ')
           .replace(')', ' ')
-          .replace(/[\s]+/g, '-')}-desktop-dark`,
+          .replace(/[\s]+/g, '-')}-dark`,
         {
           capture: 'viewport',
           disableTimersAndAnimations,

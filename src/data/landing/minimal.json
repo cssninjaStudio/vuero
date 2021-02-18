@@ -1,0 +1,112 @@
+[
+  {
+    "name": "Homepage",
+    "route": {
+      "name": "index",
+      "path": "/"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/minimal/homepage-light.webp",
+      "dark": "/images/screenshots/minimal/homepage-dark.webp"
+    }
+  },
+  {
+    "name": "Messaging V2",
+    "route": {
+      "name": "messaging-v2",
+      "path": "/messaging-v2"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/minimal/messaging-v2-light.webp",
+      "dark": "/images/screenshots/minimal/messaging-v2-dark.webp"
+    }
+  },
+  {
+    "name": "Status",
+    "route": {
+      "name": "status",
+      "path": "/status"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/minimal/status-light.webp",
+      "dark": "/images/screenshots/minimal/status-dark.webp"
+    }
+  },
+  {
+    "name": "Wizard V1",
+    "route": {
+      "name": "wizard-v1",
+      "path": "/wizard-v1"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/minimal/wizard-v1-light.webp",
+      "dark": "/images/screenshots/minimal/wizard-v1-dark.webp"
+    }
+  },
+  {
+    "name": "Inbox",
+    "route": {
+      "name": "inbox",
+      "path": "/inbox"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/minimal/inbox-light.webp",
+      "dark": "/images/screenshots/minimal/inbox-dark.webp"
+    }
+  },
+  {
+    "name": "Error 1",
+    "route": {
+      "name": "error-page-1",
+      "path": "/error/page-1"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/minimal/error-1-light.webp",
+      "dark": "/images/screenshots/minimal/error-1-dark.webp"
+    }
+  },
+  {
+    "name": "Error 2",
+    "route": {
+      "name": "error-page-2",
+      "path": "/error/page-2"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/minimal/error-2-light.webp",
+      "dark": "/images/screenshots/minimal/error-2-dark.webp"
+    }
+  },
+  {
+    "name": "Error 3",
+    "route": {
+      "name": "error-page-3",
+      "path": "/error/page-3"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/minimal/error-3-light.webp",
+      "dark": "/images/screenshots/minimal/error-3-dark.webp"
+    }
+  },
+  {
+    "name": "Error 4",
+    "route": {
+      "name": "error-page-4",
+      "path": "/error/page-4"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/minimal/error-4-light.webp",
+      "dark": "/images/screenshots/minimal/error-4-dark.webp"
+    }
+  },
+  {
+    "name": "Error 5",
+    "route": {
+      "name": "error-page-5",
+      "path": "/error/page-5"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/minimal/error-5-light.webp",
+      "dark": "/images/screenshots/minimal/error-5-dark.webp"
+    }
+  }
+]

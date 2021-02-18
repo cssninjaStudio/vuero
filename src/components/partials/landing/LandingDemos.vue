@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { adminDemos } from '/@src/data/landing/admin'
+import adminDemos from '/@src/data/landing/admin.json'
 </script>
 
 <template>
