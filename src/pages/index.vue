@@ -264,6 +264,38 @@ useHead({
                 </p>
               </div>
               <div class="flex-cell">
+                <img src="/images/icons/stacks/cypress.svg" alt="" />
+                <h3>Cypress</h3>
+                <p>
+                  Cypress handles end to end testing to make sure everything
+                  works as expected.
+                </p>
+              </div>
+              <div class="flex-cell">
+                <img src="/images/icons/stacks/pnpm-yarn.svg" alt="" />
+                <h3>Pnpm + Yarn</h3>
+                <p>
+                  Vuero works very well with Pnpm or Yarn for efficient
+                  dependency management.
+                </p>
+              </div>
+              <div class="flex-cell">
+                <img src="/images/icons/stacks/docker-whale.svg" alt="" />
+                <h3>Docker</h3>
+                <p>
+                  Vuero ships with a Docker file to make your test deployments
+                  faster and easier.
+                </p>
+              </div>
+              <div class="flex-cell">
+                <img src="/images/icons/stacks/nginx.svg" alt="" />
+                <h3>Nginx</h3>
+                <p>
+                  Vuero is confiured with Nginx, which is fully compatible with
+                  SSR, Rails and Laravel.
+                </p>
+              </div>
+              <div class="flex-cell">
                 <img src="/images/icons/misc/success.svg" alt="" />
                 <h3>Props Validation</h3>
                 <p>
