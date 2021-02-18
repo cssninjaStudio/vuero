@@ -49,6 +49,12 @@ onMounted(() => {
   }
 })
 
+const goTo = (index: number) => {
+  if (slider) {
+    slider.goTo(index)
+  }
+}
+
 onUnmounted(() => {
   if (slider) {
     slider.events.off('indexChanged', onIndexChanged)
@@ -104,7 +110,12 @@ onUnmounted(() => {
             </div>
             <div ref="sliderElement" class="food-pills-inner pill-carousel">
               <!--Pills Loop-->
-              <div v-for="item in foodPills" :key="item.id" class="food-pill">
+              <div
+                v-for="(item, index) in foodPills"
+                :key="item.id"
+                class="food-pill"
+                @click="goTo(index)"
+              >
                 <div class="food-pill-icon">
                   <img :src="item.icon" alt="" />
                 </div>

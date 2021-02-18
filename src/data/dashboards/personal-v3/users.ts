@@ -13,9 +13,9 @@ export const userStack = [
   },
   {
     id: 26,
-    picture: '/images/avatars/photos/26.jpg',
+    // picture: '/images/avatars/photos/26.jpg',
     initials: 'CW',
-    color: 'purple',
+    color: 'h-purple',
   },
   {
     id: 100,

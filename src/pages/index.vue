@@ -183,7 +183,7 @@ useHead({
         </div>
       </div>
 
-      <div id="huro-demos-list" class="section section-focus">
+      <div id="vuero-demos" class="section section-focus">
         <div class="container">
           <!--Title-->
           <div class="section-title has-text-centered">
@@ -326,7 +326,7 @@ useHead({
         </div>
       </div>
 
-      <div id="huro-demo-elements" class="section section-focus">
+      <div id="vuero-components" class="section section-focus">
         <div class="container">
           <div class="columns is-vcentered">
             <div class="column is-6 is-offset-3 has-text-centered">

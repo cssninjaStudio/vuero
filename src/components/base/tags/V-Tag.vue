@@ -20,7 +20,7 @@ type TagColor =
 
 const props = defineProps({
   label: {
-    type: String,
+    type: [String, Number],
     default: undefined,
   },
   color: {

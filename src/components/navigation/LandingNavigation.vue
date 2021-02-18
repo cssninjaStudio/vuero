@@ -2,10 +2,12 @@
 import { useWindowScroll } from '@vueuse/core'
 import { computed, ref, watchEffect } from 'vue'
 import { isLargeScreen } from '/@src/composition/state/responsiveState'
+import VueScrollTo from 'vue-scrollto'
 
 import { isDark } from '/@src/composition/state/darkModeState.ts'
 
 const isMobileNavOpen = ref(false)
+const scrollTo = VueScrollTo.scrollTo
 
 const { y } = useWindowScroll()
 
@@ -27,11 +29,11 @@ watchEffect(() => {
     aria-label="main navigation"
   >
     <div class="navbar-brand">
-      <RouterLink :to="{ name: 'index' }" class="navbar-item">
+      <a href="/" class="navbar-item" @click.prevent="scrollTo('#app', 800)">
         <div class="brand-icon">
           <AnimatedLogo width="34px" height="34px" />
         </div>
-      </RouterLink>
+      </a>
 
       <a
         role="button"
@@ -53,18 +55,29 @@ watchEffect(() => {
           <a
             href="https://themeforest.net/item/huro-multipurpose-admin-and-webapp-ui-kit/28933249"
             class="nav-link is-active"
-            >Buy Now</a
           >
+            Buy Now
+          </a>
         </div>
 
         <div class="navbar-item">
-          <a href="#huro-demos-list" class="nav-link is-scroll">Demos</a>
+          <a
+            href="#vuero-demos"
+            class="nav-link is-scroll"
+            @click.prevent="scrollTo('#vuero-demos', 800, { offset: -50 })"
+          >
+            Demos
+          </a>
         </div>
 
         <div class="navbar-item">
-          <a href="#huro-demo-elements" class="nav-link is-scroll"
-            >UI Elements</a
+          <a
+            href="#vuero-components"
+            class="nav-link is-scroll"
+            @click.prevent="scrollTo('#vuero-components', 800, { offset: -50 })"
           >
+            UI Elements
+          </a>
         </div>
 
         <div class="navbar-item">
