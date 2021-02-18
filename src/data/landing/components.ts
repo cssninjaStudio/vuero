@@ -89,4 +89,31 @@ export const elements = [
       dark: '/images/icons/components/tables-dark.svg',
     },
   },
+  {
+    id: 11,
+    link: 'elements-tabs-regular',
+    name: 'Tabs',
+    media: {
+      light: '/images/icons/components/tabs.svg',
+      dark: '/images/icons/components/tabs-dark.svg',
+    },
+  },
+  {
+    id: 12,
+    link: 'elements-tabs-slider',
+    name: 'Slider Tabs',
+    media: {
+      light: '/images/icons/components/slider-tabs.svg',
+      dark: '/images/icons/components/slider-tabs-dark.svg',
+    },
+  },
+  {
+    id: 13,
+    link: 'elements-tooltips',
+    name: 'Tooltips',
+    media: {
+      light: '/images/icons/components/tooltip.svg',
+      dark: '/images/icons/components/tooltip-dark.svg',
+    },
+  },
 ]
