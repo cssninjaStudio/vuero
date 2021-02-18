@@ -306,7 +306,7 @@ const filterProjects = ref(0)
                   size="small"
                   :avatars="[
                     { picture: '/images/avatars/photos/13.jpg' },
-                    { picture: '/images/avatars/photos/1.jpg' },
+                    { picture: '/images/avatars/photos/11.jpg' },
                   ]"
                 />
 
