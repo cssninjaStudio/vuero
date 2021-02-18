@@ -56,21 +56,9 @@
             <div class="foot-block">
               <h4 class="heading">Developers</h4>
               <div class="developers">
-                <div class="v-avatar is-small">
-                  <span class="avatar is-fake is-primary">
-                    <span>FE</span>
-                  </span>
-                </div>
-                <div class="v-avatar is-small">
-                  <span class="avatar is-fake is-success">
-                    <span>SD</span>
-                  </span>
-                </div>
-                <div class="v-avatar is-small">
-                  <span class="avatar is-fake is-info">
-                    <span>NJ</span>
-                  </span>
-                </div>
+                <V-Avatar size="small" color="primary" initials="FE" />
+                <V-Avatar size="small" color="success" initials="SD" />
+                <V-Avatar size="small" color="info" initials="NJ" />
               </div>
             </div>
             <div class="foot-block">
@@ -110,37 +98,9 @@
             <div class="foot-block">
               <h4 class="heading">Developers</h4>
               <div class="developers">
-                <div class="v-avatar is-small">
-                  <span class="avatar is-fake is-primary">
-                    <img
-                      class="avatar"
-                      src="/images/avatars/photos/7.jpg"
-                      alt=""
-                      @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/150x150'
-                      "
-                    />
-                  </span>
-                </div>
-                <div class="v-avatar is-small">
-                  <span class="avatar is-fake is-success">
-                    <img
-                      class="avatar"
-                      src="/images/avatars/photos/8.jpg"
-                      alt=""
-                      @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/150x150'
-                      "
-                    />
-                  </span>
-                </div>
-                <div class="v-avatar is-small">
-                  <span class="avatar is-fake is-danger">
-                    <span>DC</span>
-                  </span>
-                </div>
+                <V-Avatar size="small" picture="/images/avatars/photos/7.jpg" />
+                <V-Avatar size="small" picture="/images/avatars/photos/8.jpg" />
+                <V-Avatar size="small" color="danger" initials="DC" />
               </div>
             </div>
             <div class="foot-block">
@@ -180,19 +140,10 @@
             <div class="foot-block">
               <h4 class="heading">Developers</h4>
               <div class="developers">
-                <div class="v-avatar is-small">
-                  <span class="avatar is-fake is-primary">
-                    <img
-                      class="avatar"
-                      src="/images/avatars/photos/25.jpg"
-                      alt=""
-                      @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/150x150'
-                      "
-                    />
-                  </span>
-                </div>
+                <V-Avatar
+                  size="small"
+                  picture="/images/avatars/photos/25.jpg"
+                />
               </div>
             </div>
             <div class="foot-block">
@@ -232,32 +183,11 @@
             <div class="foot-block">
               <h4 class="heading">Developers</h4>
               <div class="developers">
-                <div class="v-avatar is-small">
-                  <span class="avatar is-fake is-primary">
-                    <img
-                      class="avatar"
-                      src="/images/avatars/photos/7.jpg"
-                      alt=""
-                      @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/150x150'
-                      "
-                    />
-                  </span>
-                </div>
-                <div class="v-avatar is-small">
-                  <span class="avatar is-fake is-success">
-                    <img
-                      class="avatar"
-                      src="/images/avatars/photos/23.jpg"
-                      alt=""
-                      @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/150x150'
-                      "
-                    />
-                  </span>
-                </div>
+                <V-Avatar size="small" picture="/images/avatars/photos/7.jpg" />
+                <V-Avatar
+                  size="small"
+                  picture="/images/avatars/photos/23.jpg"
+                />
               </div>
             </div>
             <div class="foot-block">
@@ -298,24 +228,11 @@
             <div class="foot-block">
               <h4 class="heading">Developers</h4>
               <div class="developers">
-                <div class="v-avatar is-small">
-                  <span class="avatar is-fake is-primary">
-                    <img
-                      class="avatar"
-                      src="/images/avatars/photos/11.jpg"
-                      alt=""
-                      @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/150x150'
-                      "
-                    />
-                  </span>
-                </div>
-                <div class="v-avatar is-small">
-                  <span class="avatar is-fake is-warning">
-                    <span>AG</span>
-                  </span>
-                </div>
+                <V-Avatar
+                  size="small"
+                  picture="/images/avatars/photos/11.jpg"
+                />
+                <V-Avatar size="small" color="fake" initials="AG" />
               </div>
             </div>
             <div class="foot-block">
@@ -355,19 +272,10 @@
             <div class="foot-block">
               <h4 class="heading">Developers</h4>
               <div class="developers">
-                <div class="v-avatar is-small">
-                  <span class="avatar is-fake is-primary">
-                    <img
-                      class="avatar"
-                      src="/images/avatars/photos/12.jpg"
-                      alt=""
-                      @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/150x150'
-                      "
-                    />
-                  </span>
-                </div>
+                <V-Avatar
+                  size="small"
+                  picture="/images/avatars/photos/12.jpg"
+                />
               </div>
             </div>
             <div class="foot-block">
@@ -407,45 +315,18 @@
             <div class="foot-block">
               <h4 class="heading">Developers</h4>
               <div class="developers">
-                <div class="v-avatar is-small">
-                  <span class="avatar is-fake is-primary">
-                    <img
-                      class="avatar"
-                      src="/images/avatars/photos/24.jpg"
-                      alt=""
-                      @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/150x150'
-                      "
-                    />
-                  </span>
-                </div>
-                <div class="v-avatar is-small">
-                  <span class="avatar is-fake is-success">
-                    <img
-                      class="avatar"
-                      src="/images/avatars/photos/18.jpg"
-                      alt=""
-                      @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/150x150'
-                      "
-                    />
-                  </span>
-                </div>
-                <div class="v-avatar is-small">
-                  <span class="avatar is-fake is-success">
-                    <img
-                      class="avatar"
-                      src="/images/avatars/photos/16.jpg"
-                      alt=""
-                      @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/150x150'
-                      "
-                    />
-                  </span>
-                </div>
+                <V-Avatar
+                  size="small"
+                  picture="/images/avatars/photos/24.jpg"
+                />
+                <V-Avatar
+                  size="small"
+                  picture="/images/avatars/photos/18.jpg"
+                />
+                <V-Avatar
+                  size="small"
+                  picture="/images/avatars/photos/16.jpg"
+                />
               </div>
             </div>
             <div class="foot-block">
@@ -486,16 +367,8 @@
             <div class="foot-block">
               <h4 class="heading">Developers</h4>
               <div class="developers">
-                <div class="v-avatar is-small">
-                  <span class="avatar is-fake is-info">
-                    <span>ET</span>
-                  </span>
-                </div>
-                <div class="v-avatar is-small">
-                  <span class="avatar is-fake is-warning">
-                    <span>BH</span>
-                  </span>
-                </div>
+                <V-Avatar size="small" color="info" initials="ET" />
+                <V-Avatar size="small" color="warning" initials="BH" />
               </div>
             </div>
             <div class="foot-block">
@@ -535,24 +408,11 @@
             <div class="foot-block">
               <h4 class="heading">Developers</h4>
               <div class="developers">
-                <div class="v-avatar is-small">
-                  <span class="avatar">
-                    <img
-                      class="avatar"
-                      src="/images/avatars/photos/25.jpg"
-                      alt=""
-                      @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/150x150'
-                      "
-                    />
-                  </span>
-                </div>
-                <div class="v-avatar is-small">
-                  <span class="avatar is-fake is-info">
-                    <span>ET</span>
-                  </span>
-                </div>
+                <V-Avatar
+                  size="small"
+                  picture="/images/avatars/photos/25.jpg"
+                />
+                <V-Avatar size="small" color="info" initials="ET" />
               </div>
             </div>
             <div class="foot-block">
@@ -575,7 +435,7 @@
 </template>
 
 <style lang="scss">
-@import '../../assets/scss/abstracts/_variables.scss';
-@import '../../assets/scss/abstracts/_mixins.scss';
-@import '../../assets/scss/pages/projects/_projects.scss';
+@import '../../../../assets/scss/abstracts/_variables.scss';
+@import '../../../../assets/scss/abstracts/_mixins.scss';
+@import '../../../../assets/scss/pages/projects/_projects.scss';
 </style>

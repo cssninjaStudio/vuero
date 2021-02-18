@@ -124,40 +124,18 @@
               <span class="tag is-solid is-rounded">Active</span>
             </div>
             <div class="flex-table-cell" data-th="Contacts">
-              <div class="avatar-stack is-pushed-mobile">
-                <div class="v-avatar is-small">
-                  <img
-                    class="avatar"
-                    src="/images/avatars/photos/7.jpg"
-                    alt=""
-                    @error.once="
-                      $event.target.src = 'https://via.placeholder.com/150x150'
-                    "
-                  />
-                </div>
-                <div class="v-avatar is-small">
-                  <span class="avatar is-fake is-info">
-                    <span>JD</span>
-                  </span>
-                </div>
-                <div class="v-avatar is-small">
-                  <img
-                    class="avatar"
-                    src="/images/avatars/photos/12.jpg"
-                    alt=""
-                    @error.once="
-                      $event.target.src = 'https://via.placeholder.com/150x150'
-                    "
-                  />
-                </div>
-                <div class="v-avatar is-small">
-                  <span class="avatar is-more">
-                    <span class="inner">
-                      <span>+2</span>
-                    </span>
-                  </span>
-                </div>
-              </div>
+              <V-AvatarStack
+                class="is-pushed-mobile"
+                size="small"
+                :limit="3"
+                :avatars="[
+                  { picture: '/images/avatars/photos/7.jpg' },
+                  { color: 'info', initials: 'JD' },
+                  { picture: '/images/avatars/photos/12.jpg' },
+                  { picture: '/images/avatars/photos/12.jpg' },
+                  { picture: '/images/avatars/photos/12.jpg' },
+                ]"
+              />
             </div>
             <div class="flex-table-cell cell-end" data-th="Actions">
               <FlexTableContextMenu />
@@ -179,13 +157,11 @@
               <span class="tag is-solid is-rounded">New</span>
             </div>
             <div class="flex-table-cell" data-th="Contacts">
-              <div class="avatar-stack is-pushed-mobile">
-                <div class="v-avatar is-small">
-                  <span class="avatar is-fake is-danger">
-                    <span>SC</span>
-                  </span>
-                </div>
-              </div>
+              <V-AvatarStack
+                class="is-pushed-mobile"
+                size="small"
+                :avatars="[{ color: 'danger', initials: 'SC' }]"
+              />
             </div>
             <div class="flex-table-cell cell-end" data-th="Actions">
               <FlexTableContextMenu />
@@ -207,23 +183,14 @@
               <span class="tag is-solid is-rounded">Active</span>
             </div>
             <div class="flex-table-cell" data-th="Contacts">
-              <div class="avatar-stack is-pushed-mobile">
-                <div class="v-avatar is-small">
-                  <span class="avatar is-fake is-success">
-                    <span>BT</span>
-                  </span>
-                </div>
-                <div class="v-avatar is-small">
-                  <img
-                    class="avatar"
-                    src="/images/avatars/photos/8.jpg"
-                    alt=""
-                    @error.once="
-                      $event.target.src = 'https://via.placeholder.com/150x150'
-                    "
-                  />
-                </div>
-              </div>
+              <V-AvatarStack
+                class="is-pushed-mobile"
+                size="small"
+                :avatars="[
+                  { color: 'success', initials: 'BT' },
+                  { picture: '/images/avatars/photos/8.jpg' },
+                ]"
+              />
             </div>
             <div class="flex-table-cell cell-end" data-th="Actions">
               <FlexTableContextMenu />
@@ -242,21 +209,14 @@
               <span class="light-text">Software</span>
             </div>
             <div class="flex-table-cell" data-th="Status">
-              <span class="tag is-rounded is-solid">Disabled</span>
+              <V-Tag label="Disabled" color="solid" rounded />
             </div>
             <div class="flex-table-cell" data-th="Contacts">
-              <div class="avatar-stack is-pushed-mobile">
-                <div class="v-avatar is-small">
-                  <img
-                    class="avatar"
-                    src="/images/avatars/photos/13.jpg"
-                    alt=""
-                    @error.once="
-                      $event.target.src = 'https://via.placeholder.com/150x150'
-                    "
-                  />
-                </div>
-              </div>
+              <V-AvatarStack
+                class="is-pushed-mobile"
+                size="small"
+                :avatars="[{ picture: '/images/avatars/photos/13.jpg' }]"
+              />
             </div>
             <div class="flex-table-cell cell-end" data-th="Actions">
               <FlexTableContextMenu />
@@ -275,41 +235,18 @@
               <span class="light-text">Software</span>
             </div>
             <div class="flex-table-cell" data-th="Status">
-              <span class="tag is-rounded is-solid">Suspended</span>
+              <V-Tag label="Suspended" color="solid" rounded />
             </div>
             <div class="flex-table-cell" data-th="Contacts">
-              <div class="avatar-stack is-pushed-mobile">
-                <div class="v-avatar is-small">
-                  <img
-                    class="avatar"
-                    src="/images/avatars/photos/11.jpg"
-                    alt=""
-                    @error.once="
-                      $event.target.src = 'https://via.placeholder.com/150x150'
-                    "
-                  />
-                </div>
-                <div class="v-avatar is-small">
-                  <img
-                    class="avatar"
-                    src="/images/avatars/photos/16.jpg"
-                    alt=""
-                    @error.once="
-                      $event.target.src = 'https://via.placeholder.com/150x150'
-                    "
-                  />
-                </div>
-                <div class="v-avatar is-small">
-                  <img
-                    class="avatar"
-                    src="/images/avatars/photos/19.jpg"
-                    alt=""
-                    @error.once="
-                      $event.target.src = 'https://via.placeholder.com/150x150'
-                    "
-                  />
-                </div>
-              </div>
+              <V-AvatarStack
+                class="is-pushed-mobile"
+                size="small"
+                :avatars="[
+                  { picture: '/images/avatars/photos/11.jpg' },
+                  { picture: '/images/avatars/photos/16.jpg' },
+                  { picture: '/images/avatars/photos/19.jpg' },
+                ]"
+              />
             </div>
             <div class="flex-table-cell cell-end" data-th="Actions">
               <FlexTableContextMenu />
@@ -322,7 +259,7 @@
 </template>
 
 <style lang="scss">
-@import '../../assets/scss/abstracts/_variables.scss';
-@import '../../assets/scss/abstracts/_mixins.scss';
-@import '../../assets/scss/pages/projects/_projects.scss';
+@import '../../../../assets/scss/abstracts/_variables.scss';
+@import '../../../../assets/scss/abstracts/_mixins.scss';
+@import '../../../../assets/scss/pages/projects/_projects.scss';
 </style>

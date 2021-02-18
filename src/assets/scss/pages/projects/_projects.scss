@@ -396,11 +396,13 @@
           font-size: 0.85rem;
           font-weight: 600;
           color: $dark-text;
-          margin-right: 30px;
+          margin-right: 20px;
         }
 
-        .h-select {
-          .select-box {
+        .multiselect {
+          min-width: 170px;
+
+          .multiselect-input {
             border: none;
           }
         }
