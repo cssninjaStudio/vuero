@@ -22,11 +22,11 @@ for solid buttons and add the `is-outlined` modifier class.
 <!--example-->
 
 <div class="buttons">
-  <a class="button v-button is-primary is-outlined" @click="clickMe">Primary</a>
-  <a class="button v-button is-info is-outlined" @click="clickMe">Info</a>
-  <a class="button v-button is-success is-outlined" @click="clickMe">Success</a>
-  <a class="button v-button is-warning is-outlined" @click="clickMe">Warning</a>
-  <a class="button v-button is-danger is-outlined" @click="clickMe">Danger</a>
+  <a class="button v-button is-primary is-outlined">Primary</a>
+  <a class="button v-button is-info is-outlined">Info</a>
+  <a class="button v-button is-success is-outlined">Success</a>
+  <a class="button v-button is-warning is-outlined">Warning</a>
+  <a class="button v-button is-danger is-outlined">Danger</a>
 </div>
 
 <!--/example-->

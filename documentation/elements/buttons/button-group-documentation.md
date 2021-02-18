@@ -40,19 +40,19 @@ by wrapping them inside a `buttons` element. You can mix any button styles.
 <!--example-->
 
 <div class="buttons">
-  <button class="button v-button" @click="clickMyText">
+  <button class="button v-button">
     <span class="icon">
       <i class="iconify" data-icon="feather:eye"></i>
     </span>
     <span class="text">View</span>
   </button>
-  <button class="button v-button" @click="clickMyText">
+  <button class="button v-button">
     <span class="icon">
       <i class="iconify" data-icon="feather:edit-2"></i>
     </span>
     <span class="text">Edit</span>
   </button>
-  <button class="button v-button is-success is-elevated" @click="clickMyText">
+  <button class="button v-button is-success is-elevated">
     <span class="icon">
       <i class="fas fa-check"></i>
     </span>

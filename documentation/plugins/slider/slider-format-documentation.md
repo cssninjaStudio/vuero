@@ -23,7 +23,7 @@ const format = (value) => {
 <template>
   <V-Field class="has-curved-tooltip">
     <V-Control>
-      <Slider v-model="value" :format="format" />
+      <Slider v-model="value" :format="(value) => `${value}%`" />
     </V-Control>
   </V-Field>
 </template>
@@ -39,7 +39,7 @@ const format = (value) => {
       <V-Control>
         <Slider 
           v-model="frontmatter.state.value" 
-          :format="formatAsPercent" 
+          :format="(value) => value + '%'" 
         />
       </V-Control>
     </V-Field>

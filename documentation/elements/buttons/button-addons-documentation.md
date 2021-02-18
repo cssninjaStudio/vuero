@@ -49,7 +49,7 @@ Refer to markup for a detailed example.
 <div class="buttons">
   <div class="field has-addons">
     <p class="control">
-      <button class="button v-button" @click="clickMyText">
+      <button class="button v-button">
         <span class="icon is-small">
           <i class="fas fa-align-left"></i>
         </span>
@@ -57,7 +57,7 @@ Refer to markup for a detailed example.
       </button>
     </p>
     <p class="control">
-      <button class="button v-button" @click="clickMyText">
+      <button class="button v-button">
         <span class="icon is-small">
           <i class="fas fa-align-center"></i>
         </span>
@@ -65,7 +65,7 @@ Refer to markup for a detailed example.
       </button>
     </p>
     <p class="control">
-      <button class="button v-button" @click="clickMyText">
+      <button class="button v-button">
         <span class="icon is-small">
           <i class="fas fa-align-right"></i>
         </span>

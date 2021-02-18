@@ -136,31 +136,6 @@ function VitePluginVueroDoc(options: Options = {}): Plugin {
 
     let result = code.replace('export function render', 'function render')
     result += `\nconst __matter = ${JSON.stringify(frontmatter)};`
-    result += `\nconst methods = {
-      timeout(cb, t = 1000) { setTimeout(cb, t); },
-      reset() { this.frontmatter = ${JSON.stringify(frontmatter)}; },
-      clickMe(event) { 
-        const text = event.target.innerText; 
-        if (text === 'Clicked!') return;
-        
-        event.target.innerText = 'Clicked!'; 
-        this.timeout(() => {
-          event.target.innerText = text;
-        })
-      },
-      formatAsPercent (value) { return value + '%' },
-      clickMyText(event) { 
-        const inner = event.currentTarget.querySelector('.text');
-        if (!inner) return;
-        const text = inner.innerText; 
-        if (text === 'Clicked!') return;
-        
-        inner.innerText = 'Clicked!';
-        this.timeout(() => {
-          inner.innerText = text;
-        })
-      },
-    }`
     result += '\nconst data = () => ({ frontmatter: __matter });'
     result += '\nconst __script = { render, data, methods };'
 

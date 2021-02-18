@@ -41,7 +41,6 @@ const handleClick = (event: MouseEvent) => {
   <button 
     class="button v-button"
     :disabled="frontmatter.state.disabled"
-    @click="clickMe"
   >
     I'm disabled!
   </button>

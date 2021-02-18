@@ -23,10 +23,10 @@ but is a solid alternative when you want to use simple buttons.
 
 <div class="buttons">
   <div class="buttons">
-    <a class="button v-action" @click="clickMe">Button</a>
-    <button class="button v-action is-rounded" @click="clickMe">Button</button>
-    <a class="button v-action is-hoverable" @click="clickMe">Button</a>
-    <button class="button v-action is-grey" @click="clickMe">Button</button>
+    <a class="button v-action">Button</a>
+    <button class="button v-action is-rounded">Button</button>
+    <a class="button v-action is-hoverable">Button</a>
+    <button class="button v-action is-grey">Button</button>
   </div>
 </div>
 

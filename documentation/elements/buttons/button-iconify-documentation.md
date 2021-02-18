@@ -51,7 +51,6 @@ Please refer to the markup for detailed examples.
 <div class="buttons">
   <button 
     class="button v-button is-primary is-elevated" 
-    @click="clickMyText"
   >
     <span class="icon">
       <i class="iconify" data-icon="feather:twitter"></i>
@@ -60,7 +59,6 @@ Please refer to the markup for detailed examples.
   </button>
   <button
     class="button v-button is-danger is-rounded is-elevated" 
-    @click="clickMyText"
   >
     <span class="icon">
       <i class="iconify" data-icon="ri:ancient-gate-line"></i>

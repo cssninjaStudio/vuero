@@ -41,14 +41,14 @@ Please refer to markup for detailed examples.
 <!--example-->
 
 <div class="buttons">
-  <button class="button v-button is-primary is-elevated" @click="clickMyText">
+  <button class="button v-button is-primary is-elevated">
     <span class="icon">
       <i class="fab fa-twitter"></i>
     </span>
     <span class="text">Tweet Now</span>
   </button>
   <button
-    class="button v-button is-success is-rounded is-elevated" @click="clickMyText"
+    class="button v-button is-success is-rounded is-elevated"
   >
     <span class="icon">
       <i class="fas fa-check"></i>

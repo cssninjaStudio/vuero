@@ -1,6 +1,6 @@
 ---
 state:
-  loading: false
+  loading: true
 ---
 
 ### Loading State
@@ -41,10 +41,6 @@ const handleClick = (event: MouseEvent) => {
   <a 
     class="button v-button"
     :class="[frontmatter.state.loading && 'is-loading']" 
-    @click="() => { 
-      frontmatter.state.loading = true
-      timeout(reset)
-    }"
   >
     Click me!
   </a>
