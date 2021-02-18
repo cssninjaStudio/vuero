@@ -1,6 +1,18 @@
 <script setup lang="ts">
 import type { PropType } from 'vue'
-import { defineProps } from 'vue'
+import { defineProps, ref } from 'vue'
+
+const filterTasks = ref(0)
+
+const participants = [
+  { picture: '/images/avatars/photos/7.jpg' },
+  { picture: '/images/avatars/photos/9.jpg' },
+  { picture: '/images/avatars/photos/12.jpg' },
+  { picture: '/images/avatars/photos/8.jpg' },
+  { picture: '/images/avatars/photos/25.jpg' },
+  { picture: '/images/avatars/photos/25.jpg' },
+  { picture: '/images/avatars/photos/25.jpg' },
+]
 
 const props = defineProps({
   activeTab: {
@@ -43,11 +55,8 @@ const props = defineProps({
                   <h3>Brand and Website Redesign</h3>
                   <p>UI/UX Design</p>
                 </div>
-                <button class="button">
-                  <span class="icon is-small">
-                    <i class="iconify" data-icon="feather:edit-3"></i>
-                  </span>
-                </button>
+
+                <V-IconButton size="small" icon="feather:edit-3" />
               </div>
 
               <div class="project-overview">
@@ -56,75 +65,7 @@ const props = defineProps({
                   iudicant sensus? Primum quid tu dicis breve? Etiam
                   beatissimum? Ne discipulum abducam, times.
                 </p>
-                <div class="avatar-stack">
-                  <div class="v-avatar">
-                    <img
-                      class="avatar"
-                      src="/images/avatars/photos/7.jpg"
-                      alt=""
-                      data-user-popover="0"
-                      @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/150x150'
-                      "
-                    />
-                  </div>
-                  <div class="v-avatar">
-                    <img
-                      class="avatar"
-                      src="/images/avatars/photos/9.jpg"
-                      alt=""
-                      data-user-popover="1"
-                      @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/150x150'
-                      "
-                    />
-                  </div>
-                  <div class="v-avatar">
-                    <img
-                      class="avatar"
-                      src="/images/avatars/photos/12.jpg"
-                      alt=""
-                      data-user-popover="2"
-                      @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/150x150'
-                      "
-                    />
-                  </div>
-                  <div class="v-avatar">
-                    <img
-                      class="avatar"
-                      src="/images/avatars/photos/8.jpg"
-                      alt=""
-                      data-user-popover="3"
-                      @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/150x150'
-                      "
-                    />
-                  </div>
-                  <div class="v-avatar">
-                    <img
-                      class="avatar"
-                      src="/images/avatars/photos/25.jpg"
-                      alt=""
-                      data-user-popover="4"
-                      @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/150x150'
-                      "
-                    />
-                  </div>
-                  <div class="v-avatar">
-                    <span class="avatar is-more">
-                      <span class="inner">
-                        <span>+3</span>
-                      </span>
-                    </span>
-                  </div>
-                </div>
+                <V-AvatarStack :avatars="participants" />
               </div>
 
               <div class="project-features">
@@ -170,9 +111,9 @@ const props = defineProps({
                       <img src="/images/icons/files/zip-format.svg" alt="" />
                       <div class="meta">
                         <span>Preliminary Sketches</span>
-                        <span
-                          >3MB <i class="fas fa-circle"></i> 5 days ago</span
-                        >
+                        <span>
+                          3MB <i class="fas fa-circle"></i> 5 days ago
+                        </span>
                       </div>
                       <FileCardDropdown />
                     </div>
@@ -182,9 +123,9 @@ const props = defineProps({
                       <img src="/images/icons/files/pdf.svg" alt="" />
                       <div class="meta">
                         <span>Project Scope</span>
-                        <span
-                          >0.8MB <i class="fas fa-circle"></i> 7 days ago</span
-                        >
+                        <span>
+                          0.8MB <i class="fas fa-circle"></i> 7 days ago
+                        </span>
                       </div>
                       <FileCardDropdown />
                     </div>
@@ -194,9 +135,9 @@ const props = defineProps({
                       <img src="/images/icons/files/presentation.svg" alt="" />
                       <div class="meta">
                         <span>Project Presentation</span>
-                        <span
-                          >2.4MB <i class="fas fa-circle"></i> 7 days ago</span
-                        >
+                        <span>
+                          2.4MB <i class="fas fa-circle"></i> 7 days ago
+                        </span>
                       </div>
                       <FileCardDropdown />
                     </div>
@@ -206,9 +147,9 @@ const props = defineProps({
                       <img src="/images/icons/files/sheet.svg" alt="" />
                       <div class="meta">
                         <span>Project Budget</span>
-                        <span
-                          >0.6MB <i class="fas fa-circle"></i> 8 days ago</span
-                        >
+                        <span>
+                          0.6MB <i class="fas fa-circle"></i> 8 days ago
+                        </span>
                       </div>
                       <FileCardDropdown />
                     </div>
@@ -218,9 +159,9 @@ const props = defineProps({
                       <img src="/images/icons/files/doc.svg" alt="" />
                       <div class="meta">
                         <span>Project Notes</span>
-                        <span
-                          >0.4MB <i class="fas fa-circle"></i> 8 days ago</span
-                        >
+                        <span>
+                          0.4MB <i class="fas fa-circle"></i> 8 days ago
+                        </span>
                       </div>
                       <FileCardDropdown />
                     </div>
@@ -230,9 +171,9 @@ const props = defineProps({
                       <img src="/images/icons/files/video.svg" alt="" />
                       <div class="meta">
                         <span>POC Demo</span>
-                        <span
-                          >8.75MB <i class="fas fa-circle"></i> 8 days ago</span
-                        >
+                        <span>
+                          8.75MB <i class="fas fa-circle"></i> 8 days ago
+                        </span>
                       </div>
                       <FileCardDropdown />
                     </div>
@@ -246,128 +187,80 @@ const props = defineProps({
             <div class="side-card">
               <h4>Project Tools</h4>
 
-              <div class="media-flex-center">
-                <div class="v-avatar is-small">
-                  <img
-                    class="avatar"
-                    src="/images/icons/stacks/sketch.svg"
-                    alt=""
-                    @error.once="
-                      $event.target.src = 'https://via.placeholder.com/150x150'
-                    "
+              <V-Block center title="Sketch" subtitle="Design Software">
+                <template #icon>
+                  <V-Avatar
+                    size="small"
+                    picture="/images/icons/stacks/sketch.svg"
                   />
-                </div>
-                <div class="flex-meta">
-                  <span>Sketch</span>
-                  <span>Design Software</span>
-                </div>
-              </div>
-              <div class="media-flex-center">
-                <div class="v-avatar is-small">
-                  <img
-                    class="avatar"
-                    src="/images/icons/stacks/illustrator.svg"
-                    alt=""
-                    @error.once="
-                      $event.target.src = 'https://via.placeholder.com/150x150'
-                    "
+                </template>
+              </V-Block>
+
+              <V-Block center title="Illustrator" subtitle="Design Software">
+                <template #icon>
+                  <V-Avatar
+                    size="small"
+                    picture="/images/icons/stacks/illustrator.svg"
                   />
-                </div>
-                <div class="flex-meta">
-                  <span>Illustrator</span>
-                  <span>Design Software</span>
-                </div>
-              </div>
-              <div class="media-flex-center">
-                <div class="v-avatar is-small">
-                  <img
-                    class="avatar"
-                    src="/images/icons/stacks/photoshop.svg"
-                    alt=""
-                    @error.once="
-                      $event.target.src = 'https://via.placeholder.com/150x150'
-                    "
+                </template>
+              </V-Block>
+
+              <V-Block center title="Photoshop" subtitle="Design Software">
+                <template #icon>
+                  <V-Avatar
+                    size="small"
+                    picture="/images/icons/stacks/photoshop.svg"
                   />
-                </div>
-                <div class="flex-meta">
-                  <span>Photoshop</span>
-                  <span>Design Software</span>
-                </div>
-              </div>
+                </template>
+              </V-Block>
             </div>
 
             <div class="side-card">
               <h4>Project Stacks</h4>
 
-              <div class="media-flex-center">
-                <div class="v-avatar is-small">
-                  <img
-                    class="avatar"
-                    src="/images/icons/stacks/html5.svg"
-                    alt=""
-                    @error.once="
-                      $event.target.src = 'https://via.placeholder.com/150x150'
-                    "
+              <V-Block center title="Html5" subtitle="Hypertext Markup">
+                <template #icon>
+                  <V-Avatar
+                    size="small"
+                    picture="/images/icons/stacks/html5.svg"
                   />
-                </div>
-                <div class="flex-meta">
-                  <span>Html5</span>
-                  <span>Hypertext Markup</span>
-                </div>
-              </div>
-              <div class="media-flex-center">
-                <div class="v-avatar is-small">
-                  <img
-                    class="avatar"
-                    src="/images/icons/stacks/css3.svg"
-                    alt=""
-                    @error.once="
-                      $event.target.src = 'https://via.placeholder.com/150x150'
-                    "
+                </template>
+              </V-Block>
+
+              <V-Block center title="CSS3" subtitle="Cascading Stylesheets">
+                <template #icon>
+                  <V-Avatar
+                    size="small"
+                    picture="/images/icons/stacks/css3.svg"
                   />
-                </div>
-                <div class="flex-meta">
-                  <span>CSS3</span>
-                  <span>Cascading Stylesheets</span>
-                </div>
-              </div>
-              <div class="media-flex-center">
-                <div class="v-avatar is-small">
-                  <img
-                    class="avatar"
-                    src="/images/icons/stacks/vuejs.svg"
-                    alt=""
-                    @error.once="
-                      $event.target.src = 'https://via.placeholder.com/150x150'
-                    "
+                </template>
+              </V-Block>
+
+              <V-Block center title="VueJS" subtitle="Javascript Framework">
+                <template #icon>
+                  <V-Avatar
+                    size="small"
+                    picture="/images/icons/stacks/vuejs.svg"
                   />
-                </div>
-                <div class="flex-meta">
-                  <span>VueJS</span>
-                  <span>Javascript Framework</span>
-                </div>
-              </div>
+                </template>
+              </V-Block>
             </div>
 
             <div class="side-card">
               <h4>Customer</h4>
 
-              <div class="media-flex-center">
-                <div class="v-avatar is-small">
-                  <img
-                    class="avatar"
-                    src="/@src/assets/illustrations/dashboards/flights/company1.svg"
-                    alt=""
-                    @error.once="
-                      $event.target.src = 'https://via.placeholder.com/150x150'
-                    "
+              <V-Block
+                center
+                title="VFlights"
+                subtitle="Transportation company"
+              >
+                <template #icon>
+                  <V-Avatar
+                    size="small"
+                    picture="/@src/assets/illustrations/dashboards/flights/company1.svg"
                   />
-                </div>
-                <div class="flex-meta">
-                  <span>VFlights</span>
-                  <span>Transportation company</span>
-                </div>
-              </div>
+                </template>
+              </V-Block>
             </div>
           </div>
         </div>
@@ -384,26 +277,19 @@ const props = defineProps({
             <div class="columns is-multiline">
               <!--Team Member-->
               <div class="column is-6 has-border-bottom">
-                <div class="media-flex-center">
-                  <div class="v-avatar is-medium">
-                    <img
-                      class="avatar"
-                      src="/images/avatars/photos/7.jpg"
-                      alt=""
-                      @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/150x150'
-                      "
+                <V-Block center title="Alice C." subtitle="Software Engineer">
+                  <template #icon>
+                    <V-Avatar
+                      size="medium"
+                      picture="/images/avatars/photos/7.jpg"
                     />
-                  </div>
-                  <div class="flex-meta">
-                    <span>Alice C.</span>
-                    <span>Software Engineer</span>
-                  </div>
-                  <div class="flex-end">
+                  </template>
+
+                  <template #action>
                     <TeamCardDropdown />
-                  </div>
-                </div>
+                  </template>
+                </V-Block>
+
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Si
                   enim ad populum me vocas, eum. Quod cum dixissent, ille
@@ -412,26 +298,19 @@ const props = defineProps({
               </div>
               <!--Team Member-->
               <div class="column is-6 has-border-bottom">
-                <div class="media-flex-center">
-                  <div class="v-avatar is-medium">
-                    <img
-                      class="avatar"
-                      src="/images/avatars/photos/9.jpg"
-                      alt=""
-                      @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/150x150'
-                      "
+                <V-Block center title="Anna B." subtitle="UX Designer">
+                  <template #icon>
+                    <V-Avatar
+                      size="medium"
+                      picture="/images/avatars/photos/9.jpg"
                     />
-                  </div>
-                  <div class="flex-meta">
-                    <span>Anna B.</span>
-                    <span>UX Designer</span>
-                  </div>
-                  <div class="flex-end">
+                  </template>
+
+                  <template #action>
                     <TeamCardDropdown />
-                  </div>
-                </div>
+                  </template>
+                </V-Block>
+
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Si
                   enim ad populum me vocas, eum. Quod cum dixissent, ille
@@ -440,26 +319,19 @@ const props = defineProps({
               </div>
               <!--Team Member-->
               <div class="column is-6 has-border-bottom">
-                <div class="media-flex-center">
-                  <div class="v-avatar is-medium">
-                    <img
-                      class="avatar"
-                      src="/images/avatars/photos/12.jpg"
-                      alt=""
-                      @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/150x150'
-                      "
+                <V-Block center title="Joshua S." subtitle="Backend Developer">
+                  <template #icon>
+                    <V-Avatar
+                      size="medium"
+                      picture="/images/avatars/photos/12.jpg"
                     />
-                  </div>
-                  <div class="flex-meta">
-                    <span>Joshua S.</span>
-                    <span>Backend Developer</span>
-                  </div>
-                  <div class="flex-end">
+                  </template>
+
+                  <template #action>
                     <TeamCardDropdown />
-                  </div>
-                </div>
+                  </template>
+                </V-Block>
+
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Si
                   enim ad populum me vocas, eum. Quod cum dixissent, ille
@@ -468,26 +340,19 @@ const props = defineProps({
               </div>
               <!--Team Member-->
               <div class="column is-6 has-border-bottom">
-                <div class="media-flex-center">
-                  <div class="v-avatar is-medium">
-                    <img
-                      class="avatar"
-                      src="/images/avatars/photos/8.jpg"
-                      alt=""
-                      @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/150x150'
-                      "
+                <V-Block center title="Erik K." subtitle="Product Manager">
+                  <template #icon>
+                    <V-Avatar
+                      size="medium"
+                      picture="/images/avatars/photos/8.jpg"
                     />
-                  </div>
-                  <div class="flex-meta">
-                    <span>Erik K.</span>
-                    <span>Product Manager</span>
-                  </div>
-                  <div class="flex-end">
+                  </template>
+
+                  <template #action>
                     <TeamCardDropdown />
-                  </div>
-                </div>
+                  </template>
+                </V-Block>
+
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Si
                   enim ad populum me vocas, eum. Quod cum dixissent, ille
@@ -496,26 +361,19 @@ const props = defineProps({
               </div>
               <!--Team Member-->
               <div class="column is-6 has-border-bottom">
-                <div class="media-flex-center">
-                  <div class="v-avatar is-medium">
-                    <img
-                      class="avatar"
-                      src="/images/avatars/photos/25.jpg"
-                      alt=""
-                      @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/150x150'
-                      "
+                <V-Block center title="Melany W." subtitle="Web Developer">
+                  <template #icon>
+                    <V-Avatar
+                      size="medium"
+                      picture="/images/avatars/photos/25.jpg"
                     />
-                  </div>
-                  <div class="flex-meta">
-                    <span>Melany W.</span>
-                    <span>Web Developer</span>
-                  </div>
-                  <div class="flex-end">
+                  </template>
+
+                  <template #action>
                     <TeamCardDropdown />
-                  </div>
-                </div>
+                  </template>
+                </V-Block>
+
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Si
                   enim ad populum me vocas, eum. Quod cum dixissent, ille
@@ -524,26 +382,19 @@ const props = defineProps({
               </div>
               <!--Team Member-->
               <div class="column is-6 has-border-bottom">
-                <div class="media-flex-center">
-                  <div class="v-avatar is-medium">
-                    <img
-                      class="avatar"
-                      src="/images/avatars/photos/13.jpg"
-                      alt=""
-                      @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/150x150'
-                      "
+                <V-Block center title="Tara S." subtitle="UI/UX Designer">
+                  <template #icon>
+                    <V-Avatar
+                      size="medium"
+                      picture="/images/avatars/photos/13.jpg"
                     />
-                  </div>
-                  <div class="flex-meta">
-                    <span>Tara S.</span>
-                    <span>UI/UX Designer</span>
-                  </div>
-                  <div class="flex-end">
+                  </template>
+
+                  <template #action>
                     <TeamCardDropdown />
-                  </div>
-                </div>
+                  </template>
+                </V-Block>
+
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Si
                   enim ad populum me vocas, eum. Quod cum dixissent, ille
@@ -552,26 +403,19 @@ const props = defineProps({
               </div>
               <!--Team Member-->
               <div class="column is-6">
-                <div class="media-flex-center">
-                  <div class="v-avatar is-medium">
-                    <img
-                      class="avatar"
-                      src="/images/avatars/photos/18.jpg"
-                      alt=""
-                      @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/150x150'
-                      "
+                <V-Block center title="Esteban C." subtitle="UI/UX Designer">
+                  <template #icon>
+                    <V-Avatar
+                      size="medium"
+                      picture="/images/avatars/photos/18.jpg"
                     />
-                  </div>
-                  <div class="flex-meta">
-                    <span>Esteban C.</span>
-                    <span>UI/UX Designer</span>
-                  </div>
-                  <div class="flex-end">
+                  </template>
+
+                  <template #action>
                     <TeamCardDropdown />
-                  </div>
-                </div>
+                  </template>
+                </V-Block>
+
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Si
                   enim ad populum me vocas, eum. Quod cum dixissent, ille
@@ -580,26 +424,19 @@ const props = defineProps({
               </div>
               <!--Team Member-->
               <div class="column is-6">
-                <div class="media-flex-center">
-                  <div class="v-avatar is-medium">
-                    <img
-                      class="avatar"
-                      src="/images/avatars/photos/5.jpg"
-                      alt=""
-                      @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/150x150'
-                      "
+                <V-Block center title="Mary L." subtitle="Project Manager">
+                  <template #icon>
+                    <V-Avatar
+                      size="medium"
+                      picture="/images/avatars/photos/5.jpg"
                     />
-                  </div>
-                  <div class="flex-meta">
-                    <span>Mary L.</span>
-                    <span>Project Manager</span>
-                  </div>
-                  <div class="flex-end">
+                  </template>
+
+                  <template #action>
                     <TeamCardDropdown />
-                  </div>
-                </div>
+                  </template>
+                </V-Block>
+
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Si
                   enim ad populum me vocas, eum. Quod cum dixissent, ille
@@ -622,44 +459,13 @@ const props = defineProps({
               <h3>Tasks</h3>
               <div class="filter">
                 <span>Filter by</span>
-                <div class="control">
-                  <div class="h-select">
-                    <div class="select-box">
-                      <span>In Progress</span>
-                    </div>
-                    <div class="select-icon">
-                      <i class="iconify" data-icon="feather:chevron-down"></i>
-                    </div>
-                    <div class="select-drop has-slimscroll-sm">
-                      <div class="drop-inner">
-                        <div class="option-row">
-                          <input type="radio" name="task_select" />
-                          <div class="option-meta">
-                            <span>New</span>
-                          </div>
-                        </div>
-                        <div class="option-row">
-                          <input type="radio" name="task_select" checked />
-                          <div class="option-meta">
-                            <span>In Progress</span>
-                          </div>
-                        </div>
-                        <div class="option-row">
-                          <input type="radio" name="task_select" />
-                          <div class="option-meta">
-                            <span>Closed</span>
-                          </div>
-                        </div>
-                        <div class="option-row">
-                          <input type="radio" name="task_select" />
-                          <div class="option-meta">
-                            <span>Archived</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <V-Control>
+                  <Multiselect
+                    v-model="filterTasks"
+                    :options="['New', 'In Progress', 'Closed', 'Archived']"
+                    placeholder="In Progress"
+                  />
+                </V-Control>
               </div>
             </div>
 
@@ -667,47 +473,20 @@ const props = defineProps({
               <!--Task-->
               <div class="column is-4">
                 <div class="task-card right-panel-trigger">
-                  <a class="title-wrap" @click="activePanel = 'task'">
+                  <a class="title-wrap">
                     <h3>Build a desktop and mobile landing page wireframe</h3>
                     <span>45%</span>
                   </a>
                   <div class="content-wrap">
                     <div class="left">
-                      <div class="avatar-stack">
-                        <div class="v-avatar is-small">
-                          <img
-                            class="avatar"
-                            src="/images/avatars/photos/7.jpg"
-                            alt=""
-                            @error.once="
-                              $event.target.src =
-                                'https://via.placeholder.com/150x150'
-                            "
-                          />
-                        </div>
-                        <div class="v-avatar is-small">
-                          <img
-                            class="avatar"
-                            src="/images/avatars/photos/8.jpg"
-                            alt=""
-                            @error.once="
-                              $event.target.src =
-                                'https://via.placeholder.com/150x150'
-                            "
-                          />
-                        </div>
-                        <div class="v-avatar is-small">
-                          <img
-                            class="avatar"
-                            src="/images/avatars/photos/5.jpg"
-                            alt=""
-                            @error.once="
-                              $event.target.src =
-                                'https://via.placeholder.com/150x150'
-                            "
-                          />
-                        </div>
-                      </div>
+                      <V-AvatarStack
+                        size="small"
+                        :avatars="[
+                          { picture: '/images/avatars/photos/7.jpg' },
+                          { picture: '/images/avatars/photos/8.jpg' },
+                          { picture: '/images/avatars/photos/5.jpg' },
+                        ]"
+                      />
                       <div class="attachments">
                         <i class="lnil lnil-paperclip"></i>
                         <span>3 attachments</span>
@@ -724,25 +503,18 @@ const props = defineProps({
               <!--Task-->
               <div class="column is-4">
                 <div class="task-card right-panel-trigger">
-                  <a class="title-wrap" @click="activePanel = 'task'">
+                  <a class="title-wrap">
                     <h3>Build a custom video player javascript library</h3>
                     <span>90%</span>
                   </a>
                   <div class="content-wrap">
                     <div class="left">
-                      <div class="avatar-stack">
-                        <div class="v-avatar is-small">
-                          <img
-                            class="avatar"
-                            src="/images/avatars/photos/12.jpg"
-                            alt=""
-                            @error.once="
-                              $event.target.src =
-                                'https://via.placeholder.com/150x150'
-                            "
-                          />
-                        </div>
-                      </div>
+                      <V-AvatarStack
+                        size="small"
+                        :avatars="[
+                          { picture: '/images/avatars/photos/12.jpg' },
+                        ]"
+                      />
                       <div class="attachments">
                         <i class="lnil lnil-paperclip"></i>
                         <span>1 attachment</span>
@@ -759,25 +531,18 @@ const props = defineProps({
               <!--Task-->
               <div class="column is-4">
                 <div class="task-card right-panel-trigger">
-                  <a class="title-wrap" @click="activePanel = 'task'">
+                  <a class="title-wrap">
                     <h3>Develop a JWT authentication controller</h3>
                     <span>65%</span>
                   </a>
                   <div class="content-wrap">
                     <div class="left">
-                      <div class="avatar-stack">
-                        <div class="v-avatar is-small">
-                          <img
-                            class="avatar"
-                            src="/images/avatars/photos/12.jpg"
-                            alt=""
-                            @error.once="
-                              $event.target.src =
-                                'https://via.placeholder.com/150x150'
-                            "
-                          />
-                        </div>
-                      </div>
+                      <V-AvatarStack
+                        size="small"
+                        :avatars="[
+                          { picture: '/images/avatars/photos/12.jpg' },
+                        ]"
+                      />
                       <div class="attachments">
                         <i class="lnil lnil-paperclip"></i>
                         <span>1 attachment</span>
@@ -794,36 +559,19 @@ const props = defineProps({
               <!--Task-->
               <div class="column is-4">
                 <div class="task-card right-panel-trigger">
-                  <a class="title-wrap" @click="activePanel = 'task'">
+                  <a class="title-wrap">
                     <h3>Design custom illustrations for landing page</h3>
                     <span>38%</span>
                   </a>
                   <div class="content-wrap">
                     <div class="left">
-                      <div class="avatar-stack">
-                        <div class="v-avatar is-small">
-                          <img
-                            class="avatar"
-                            src="/images/avatars/photos/5.jpg"
-                            alt=""
-                            @error.once="
-                              $event.target.src =
-                                'https://via.placeholder.com/150x150'
-                            "
-                          />
-                        </div>
-                        <div class="v-avatar is-small">
-                          <img
-                            class="avatar"
-                            src="/images/avatars/photos/7.jpg"
-                            alt=""
-                            @error.once="
-                              $event.target.src =
-                                'https://via.placeholder.com/150x150'
-                            "
-                          />
-                        </div>
-                      </div>
+                      <V-AvatarStack
+                        size="small"
+                        :avatars="[
+                          { picture: '/images/avatars/photos/5.jpg' },
+                          { picture: '/images/avatars/photos/7.jpg' },
+                        ]"
+                      />
                       <div class="attachments">
                         <i class="lnil lnil-paperclip"></i>
                         <span>1 attachment</span>
@@ -840,25 +588,18 @@ const props = defineProps({
               <!--Task-->
               <div class="column is-4">
                 <div class="task-card right-panel-trigger">
-                  <a class="title-wrap" @click="activePanel = 'task'">
+                  <a class="title-wrap">
                     <h3>Implement sign up with social media</h3>
                     <span>59%</span>
                   </a>
                   <div class="content-wrap">
                     <div class="left">
-                      <div class="avatar-stack">
-                        <div class="v-avatar is-small">
-                          <img
-                            class="avatar"
-                            src="/images/avatars/photos/25.jpg"
-                            alt=""
-                            @error.once="
-                              $event.target.src =
-                                'https://via.placeholder.com/150x150'
-                            "
-                          />
-                        </div>
-                      </div>
+                      <V-AvatarStack
+                        size="small"
+                        :avatars="[
+                          { picture: '/images/avatars/photos/25.jpg' },
+                        ]"
+                      />
                       <div class="attachments">
                         <i class="lnil lnil-paperclip"></i>
                         <span>2 attachments</span>
@@ -875,36 +616,19 @@ const props = defineProps({
               <!--Task-->
               <div class="column is-4">
                 <div class="task-card right-panel-trigger">
-                  <a class="title-wrap" @click="activePanel = 'task'">
+                  <a class="title-wrap">
                     <h3>Implement user management API controller</h3>
                     <span>78%</span>
                   </a>
                   <div class="content-wrap">
                     <div class="left">
-                      <div class="avatar-stack">
-                        <div class="v-avatar is-small">
-                          <img
-                            class="avatar"
-                            src="/images/avatars/photos/25.jpg"
-                            alt=""
-                            @error.once="
-                              $event.target.src =
-                                'https://via.placeholder.com/150x150'
-                            "
-                          />
-                        </div>
-                        <div class="v-avatar is-small">
-                          <img
-                            class="avatar"
-                            src="/images/avatars/photos/12.jpg"
-                            alt=""
-                            @error.once="
-                              $event.target.src =
-                                'https://via.placeholder.com/150x150'
-                            "
-                          />
-                        </div>
-                      </div>
+                      <V-AvatarStack
+                        size="small"
+                        :avatars="[
+                          { picture: '/images/avatars/photos/25.jpg' },
+                          { picture: '/images/avatars/photos/12.jpg' },
+                        ]"
+                      />
                       <div class="attachments">
                         <i class="lnil lnil-paperclip"></i>
                         <span>3 attachments</span>
@@ -921,36 +645,19 @@ const props = defineProps({
               <!--Task-->
               <div class="column is-4">
                 <div class="task-card right-panel-trigger">
-                  <a class="title-wrap" @click="activePanel = 'task'">
+                  <a class="title-wrap">
                     <h3>Implement job management API controller</h3>
                     <span>36%</span>
                   </a>
                   <div class="content-wrap">
                     <div class="left">
-                      <div class="avatar-stack">
-                        <div class="v-avatar is-small">
-                          <img
-                            class="avatar"
-                            src="/images/avatars/photos/25.jpg"
-                            alt=""
-                            @error.once="
-                              $event.target.src =
-                                'https://via.placeholder.com/150x150'
-                            "
-                          />
-                        </div>
-                        <div class="v-avatar is-small">
-                          <img
-                            class="avatar"
-                            src="/images/avatars/photos/12.jpg"
-                            alt=""
-                            @error.once="
-                              $event.target.src =
-                                'https://via.placeholder.com/150x150'
-                            "
-                          />
-                        </div>
-                      </div>
+                      <V-AvatarStack
+                        size="small"
+                        :avatars="[
+                          { picture: '/images/avatars/photos/25.jpg' },
+                          { picture: '/images/avatars/photos/12.jpg' },
+                        ]"
+                      />
                       <div class="attachments">
                         <i class="lnil lnil-paperclip"></i>
                         <span>3 attachments</span>
@@ -967,36 +674,19 @@ const props = defineProps({
               <!--Task-->
               <div class="column is-4">
                 <div class="task-card right-panel-trigger">
-                  <a class="title-wrap" @click="activePanel = 'task'">
+                  <a class="title-wrap">
                     <h3>Review and refactor server side code</h3>
                     <span>49%</span>
                   </a>
                   <div class="content-wrap">
                     <div class="left">
-                      <div class="avatar-stack">
-                        <div class="v-avatar is-small">
-                          <img
-                            class="avatar"
-                            src="/images/avatars/photos/25.jpg"
-                            alt=""
-                            @error.once="
-                              $event.target.src =
-                                'https://via.placeholder.com/150x150'
-                            "
-                          />
-                        </div>
-                        <div class="v-avatar is-small">
-                          <img
-                            class="avatar"
-                            src="/images/avatars/photos/12.jpg"
-                            alt=""
-                            @error.once="
-                              $event.target.src =
-                                'https://via.placeholder.com/150x150'
-                            "
-                          />
-                        </div>
-                      </div>
+                      <V-AvatarStack
+                        size="small"
+                        :avatars="[
+                          { picture: '/images/avatars/photos/25.jpg' },
+                          { picture: '/images/avatars/photos/12.jpg' },
+                        ]"
+                      />
                       <div class="attachments">
                         <i class="lnil lnil-paperclip"></i>
                         <span>2 attachments</span>
@@ -1019,8 +709,8 @@ const props = defineProps({
 </template>
 
 <style lang="scss">
-@import '../../assets/scss/abstracts/_variables.scss';
-@import '../../assets/scss/abstracts/_mixins.scss';
+@import '../../../../assets/scss/abstracts/_variables.scss';
+@import '../../../../assets/scss/abstracts/_mixins.scss';
 
 /* ==========================================================================
 1. Project Details
@@ -1245,13 +935,13 @@ const props = defineProps({
             font-size: 0.85rem;
             font-weight: 600;
             color: $dark-text;
-            margin-right: 30px;
+            margin-right: 20px;
           }
 
-          .h-select {
-            min-width: 110px;
+          .multiselect {
+            min-width: 140px;
 
-            .select-box {
+            .multiselect-input {
               border: none;
             }
           }
