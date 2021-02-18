@@ -7,8 +7,8 @@ export const minimalDemos = [
       path: '/messaging-v1',
     },
     screenshot: {
-      light: '/public/screenshoots/messaging-v1-light.webp',
-      dark: '/public/screenshoots/messaging-v1-dark.webp',
+      light: '/public/screenshoots/messaging-v1-desktop-light.webp',
+      dark: '/public/screenshoots/messaging-v1-desktop-dark.webp',
     },
   },
   {
@@ -19,8 +19,8 @@ export const minimalDemos = [
       path: '/auth/login-1',
     },
     screenshot: {
-      light: '/public/screenshoots/login-1-light.webp',
-      dark: '/public/screenshoots/login-1-dark.webp',
+      light: '/public/screenshoots/login-1-desktop-light.webp',
+      dark: '/public/screenshoots/login-1-desktop-dark.webp',
     },
   },
   {
@@ -31,8 +31,8 @@ export const minimalDemos = [
       path: '/auth/login-2',
     },
     screenshot: {
-      light: '/public/screenshoots/login-2-light.webp',
-      dark: '/public/screenshoots/login-2-dark.webp',
+      light: '/public/screenshoots/login-2-desktop-light.webp',
+      dark: '/public/screenshoots/login-2-desktop-dark.webp',
     },
   },
   {
@@ -43,8 +43,8 @@ export const minimalDemos = [
       path: '/auth/login-3',
     },
     screenshot: {
-      light: '/public/screenshoots/login-3-light.webp',
-      dark: '/public/screenshoots/login-3-dark.webp',
+      light: '/public/screenshoots/login-3-desktop-light.webp',
+      dark: '/public/screenshoots/login-3-desktop-dark.webp',
     },
   },
   {
@@ -55,8 +55,8 @@ export const minimalDemos = [
       path: '/auth/signup-1',
     },
     screenshot: {
-      light: '/public/screenshoots/signup-1-light.webp',
-      dark: '/public/screenshoots/signup-1-dark.webp',
+      light: '/public/screenshoots/signup-1-desktop-light.webp',
+      dark: '/public/screenshoots/signup-1-desktop-dark.webp',
     },
   },
   {
@@ -67,8 +67,8 @@ export const minimalDemos = [
       path: '/auth/signup-2',
     },
     screenshot: {
-      light: '/public/screenshoots/signup-2-light.webp',
-      dark: '/public/screenshoots/signup-2-dark.webp',
+      light: '/public/screenshoots/signup-2-desktop-light.webp',
+      dark: '/public/screenshoots/signup-2-desktop-dark.webp',
     },
   },
   {
@@ -79,8 +79,8 @@ export const minimalDemos = [
       path: '/auth/signup-3',
     },
     screenshot: {
-      light: '/public/screenshoots/signup-3-light.webp',
-      dark: '/public/screenshoots/signup-3-dark.webp',
+      light: '/public/screenshoots/signup-3-desktop-light.webp',
+      dark: '/public/screenshoots/signup-3-desktop-dark.webp',
     },
   },
   {
@@ -91,8 +91,8 @@ export const minimalDemos = [
       path: '/',
     },
     screenshot: {
-      light: '/public/screenshoots/homepage-light.webp',
-      dark: '/public/screenshoots/homepage-dark.webp',
+      light: '/public/screenshoots/homepage-desktop-light.webp',
+      dark: '/public/screenshoots/homepage-desktop-dark.webp',
     },
   },
   {
@@ -103,8 +103,8 @@ export const minimalDemos = [
       path: '/messaging-v2',
     },
     screenshot: {
-      light: '/public/screenshoots/messaging-v2-light.webp',
-      dark: '/public/screenshoots/messaging-v2-dark.webp',
+      light: '/public/screenshoots/messaging-v2-desktop-light.webp',
+      dark: '/public/screenshoots/messaging-v2-desktop-dark.webp',
     },
   },
   {
@@ -115,8 +115,8 @@ export const minimalDemos = [
       path: '/status',
     },
     screenshot: {
-      light: '/public/screenshoots/status-light.webp',
-      dark: '/public/screenshoots/status-dark.webp',
+      light: '/public/screenshoots/status-desktop-light.webp',
+      dark: '/public/screenshoots/status-desktop-dark.webp',
     },
   },
   {
@@ -127,8 +127,8 @@ export const minimalDemos = [
       path: '/wizard-v1',
     },
     screenshot: {
-      light: '/public/screenshoots/wizard-v1-light.webp',
-      dark: '/public/screenshoots/wizard-v1-dark.webp',
+      light: '/public/screenshoots/wizard-v1-desktop-light.webp',
+      dark: '/public/screenshoots/wizard-v1-desktop-dark.webp',
     },
   },
   {
@@ -139,8 +139,8 @@ export const minimalDemos = [
       path: '/inbox',
     },
     screenshot: {
-      light: '/public/screenshoots/inbox-light.webp',
-      dark: '/public/screenshoots/inbox-dark.webp',
+      light: '/public/screenshoots/inbox-desktop-light.webp',
+      dark: '/public/screenshoots/inbox-desktop-dark.webp',
     },
   },
   {
@@ -151,8 +151,8 @@ export const minimalDemos = [
       path: '/error/page-1',
     },
     screenshot: {
-      light: '/public/screenshoots/error-1-light.webp',
-      dark: '/public/screenshoots/error-1-dark.webp',
+      light: '/public/screenshoots/error-1-desktop-light.webp',
+      dark: '/public/screenshoots/error-1-desktop-dark.webp',
     },
   },
   {
@@ -163,8 +163,8 @@ export const minimalDemos = [
       path: '/error/page-2',
     },
     screenshot: {
-      light: '/public/screenshoots/error-2-light.webp',
-      dark: '/public/screenshoots/error-2-dark.webp',
+      light: '/public/screenshoots/error-2-desktop-light.webp',
+      dark: '/public/screenshoots/error-2-desktop-dark.webp',
     },
   },
   {
@@ -175,8 +175,8 @@ export const minimalDemos = [
       path: '/error/page-3',
     },
     screenshot: {
-      light: '/public/screenshoots/error-3-light.webp',
-      dark: '/public/screenshoots/error-3-dark.webp',
+      light: '/public/screenshoots/error-3-desktop-light.webp',
+      dark: '/public/screenshoots/error-3-desktop-dark.webp',
     },
   },
   {
@@ -187,8 +187,8 @@ export const minimalDemos = [
       path: '/error/page-4',
     },
     screenshot: {
-      light: '/public/screenshoots/error-4-light.webp',
-      dark: '/public/screenshoots/error-4-dark.webp',
+      light: '/public/screenshoots/error-4-desktop-light.webp',
+      dark: '/public/screenshoots/error-4-desktop-dark.webp',
     },
   },
   {
@@ -199,8 +199,8 @@ export const minimalDemos = [
       path: '/error/page-5',
     },
     screenshot: {
-      light: '/public/screenshoots/error-5-light.webp',
-      dark: '/public/screenshoots/error-5-dark.webp',
+      light: '/public/screenshoots/error-5-desktop-light.webp',
+      dark: '/public/screenshoots/error-5-desktop-dark.webp',
     },
   },
 ]

@@ -26,8 +26,8 @@ for (const route of all) {
       path: route.path,
     },
     screenshot: {
-      light: `/public/screenshoots/${normalized}-light.webp`,
-      dark: `/public/screenshoots/${normalized}-dark.webp`,
+      light: `/public/screenshoots/${normalized}-desktop-light.webp`,
+      dark: `/public/screenshoots/${normalized}-desktop-dark.webp`,
     },
   })
 }
