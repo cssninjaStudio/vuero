@@ -133,7 +133,7 @@ useHead({
                     subtitle: 'The modern CSS framework',
                     logo: '/images/icons/stacks/bulma.svg',
                     description:
-                      'Bulma is a free, open source framework that provides ready-to-use frontend components that you can easily combine to build responsive web interfaces.',
+                      'Bulma is a free, open source framework that provides ready-to-use frontend components.',
                     homepage: 'https://bulma.io/',
                     github: 'https://github.com/jgthms/bulma',
                   }"
@@ -152,7 +152,7 @@ useHead({
                     subtitle: 'Makes CSS fun again',
                     logo: '/images/icons/stacks/sass.svg',
                     description:
-                      'Sass is an extension of CSS, adding nested rules, variables, mixins, selector inheritance, and more. It\'s translated to well-formatted, standard CSS',
+                      'Sass is an extension of CSS, adding nested rules, variables, mixins, selector inheritance, and more.',
                     homepage: 'https://sass-lang.com/',
                     github: 'https://github.com/sass/sass',
                   }"
@@ -171,7 +171,7 @@ useHead({
                     subtitle: 'Javascript enhanced',
                     logo: '/images/icons/stacks/typescript.svg',
                     description:
-                      'TypeScript is a language for application-scale JavaScript. TypeScript adds optional types to JavaScript that support tools for large-scale JavaScript applications for any browser, for any host, on any OS.',
+                      'TypeScript adds optional types to JavaScript that support tools for large-scale JavaScript applications.',
                     homepage: 'https://www.typescriptlang.org/',
                     github: 'https://github.com/microsoft/TypeScript',
                   }"
@@ -370,7 +370,7 @@ useHead({
                 <img src="/images/icons/stacks/nginx.svg" alt="" />
                 <h3>Nginx</h3>
                 <p>
-                  Vuero is confiured with Nginx, which is fully compatible with
+                  Vuero is configured with Nginx, which is fully compatible with
                   SSR, Rails and Laravel.
                 </p>
               </div>
@@ -678,15 +678,15 @@ useHead({
               </div>
               <div class="column is-5">
                 <h2 class="title m-b-10 is-centered-tablet-portrait">
-                  Focused on UI and CSS
+                  Professional
                 </h2>
                 <p
                   class="section-feature-description is-centered-tablet-portrait"
                 >
-                  Vuero is a template that mainly focuses on UI. Of course
-                  you'll find some jQuery inside, but only for presentation
-                  purpose. We've reduced the javascript to it's minimum so you
-                  can focus on importing UI in your project.
+                  Vuero is a professional product to build professional
+                  applications. You'll find everything you need to build a
+                  project that is up to the highest standards of web
+                  development.
                 </p>
               </div>
             </div>
@@ -714,11 +714,11 @@ useHead({
                 <p
                   class="section-feature-description is-centered-tablet-portrait"
                 >
-                  Vuero ships with a nodejs development server that will assist
-                  you when customizing the template. Panini handles HTML
-                  compilation while Gulp recompiles your SCSS and Javascript
-                  code, and Browser Sync refreshes the page each time you hit
-                  the save trigger in your favorite editor.
+                  Vuero ships with a Vitejs development server that will assist
+                  you when customizing the template. It handles .vue files
+                  compilation as well as SCSS and Typescript code. The page is
+                  refreshed each time you hit the save trigger in your favorite
+                  editor.
                 </p>
               </div>
               <div class="column is-5 has-text-centered h-hidden-mobile">
