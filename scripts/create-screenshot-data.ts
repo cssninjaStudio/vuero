@@ -1,4 +1,10 @@
-import { admin, auth, minimal, webapp } from '../cypress/fixtures/routes'
+import {
+  admin,
+  auth,
+  minimal,
+  webapp,
+  templates,
+} from '../cypress/fixtures/routes'
 const fs = require('fs')
 const path = require('path')
 
@@ -8,6 +14,8 @@ const outputDir = path.resolve(projectRootDir, 'src/data/landing')
 type Route = {
   name: string
   path: string
+  category: string
+  displayOrder: number
 }
 
 function writeData(filename: string, raw: any) {
@@ -34,6 +42,8 @@ function generateData(routes: Route[], prefix: string) {
 
     data.push({
       name: route.name,
+      category: route.category,
+      displayOrder: route.displayOrder,
       route: {
         name: routeName.replace(/-$/, ''),
         path: route.path,
@@ -52,3 +62,4 @@ writeData(`${outputDir}/admin.json`, generateData(admin, 'admin'))
 writeData(`${outputDir}/auth.json`, generateData(auth, 'auth'))
 writeData(`${outputDir}/minimal.json`, generateData(minimal, 'minimal'))
 writeData(`${outputDir}/webapp.json`, generateData(webapp, 'webapp'))
+writeData(`${outputDir}/templates.json`, generateData(templates, 'templates'))

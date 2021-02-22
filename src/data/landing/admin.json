@@ -1,6 +1,8 @@
 [
   {
     "name": "Messaging V1",
+    "category": "APP",
+    "displayOrder": 21,
     "route": {
       "name": "messaging-v1",
       "path": "/messaging-v1"
@@ -12,6 +14,8 @@
   },
   {
     "name": "Action Page V1",
+    "category": "LAYOUTS",
+    "displayOrder": 33,
     "route": {
       "name": "admin-layouts-action-page-1",
       "path": "/admin/layouts/action-page-1"
@@ -23,6 +27,8 @@
   },
   {
     "name": "Action Page V2",
+    "category": "LAYOUTS",
+    "displayOrder": 34,
     "route": {
       "name": "admin-layouts-action-page-2",
       "path": "/admin/layouts/action-page-2"
@@ -34,6 +40,8 @@
   },
   {
     "name": "Form V1",
+    "category": "LAYOUTS",
+    "displayOrder": 48,
     "route": {
       "name": "admin-layouts-form-layouts-1",
       "path": "/admin/layouts/form-layouts-1"
@@ -45,6 +53,8 @@
   },
   {
     "name": "Form V2",
+    "category": "LAYOUTS",
+    "displayOrder": 49,
     "route": {
       "name": "admin-layouts-form-layouts-2",
       "path": "/admin/layouts/form-layouts-2"
@@ -56,6 +66,8 @@
   },
   {
     "name": "Form V3",
+    "category": "LAYOUTS",
+    "displayOrder": 50,
     "route": {
       "name": "admin-layouts-form-layouts-3",
       "path": "/admin/layouts/form-layouts-3"
@@ -67,6 +79,8 @@
   },
   {
     "name": "Form V4",
+    "category": "LAYOUTS",
+    "displayOrder": 51,
     "route": {
       "name": "admin-layouts-form-layouts-4",
       "path": "/admin/layouts/form-layouts-4"
@@ -78,6 +92,8 @@
   },
   {
     "name": "Grid Card V1",
+    "category": "LAYOUTS",
+    "displayOrder": 11,
     "route": {
       "name": "admin-layouts-grid-cards-1",
       "path": "/admin/layouts/grid-cards-1"
@@ -89,6 +105,8 @@
   },
   {
     "name": "Grid Card V2",
+    "category": "LAYOUTS",
+    "displayOrder": 12,
     "route": {
       "name": "admin-layouts-grid-cards-2",
       "path": "/admin/layouts/grid-cards-2"
@@ -100,6 +118,8 @@
   },
   {
     "name": "Grid Card V3",
+    "category": "LAYOUTS",
+    "displayOrder": 13,
     "route": {
       "name": "admin-layouts-grid-cards-3",
       "path": "/admin/layouts/grid-cards-3"
@@ -111,6 +131,8 @@
   },
   {
     "name": "Grid Card V4",
+    "category": "LAYOUTS",
+    "displayOrder": 14,
     "route": {
       "name": "admin-layouts-grid-cards-4",
       "path": "/admin/layouts/grid-cards-4"
@@ -122,6 +144,8 @@
   },
   {
     "name": "Grid Tiles V1",
+    "category": "LAYOUTS",
+    "displayOrder": 15,
     "route": {
       "name": "admin-layouts-grid-tiles-1",
       "path": "/admin/layouts/grid-tiles-1"
@@ -133,6 +157,8 @@
   },
   {
     "name": "Grid Tiles V2",
+    "category": "LAYOUTS",
+    "displayOrder": 16,
     "route": {
       "name": "admin-layouts-grid-tiles-2",
       "path": "/admin/layouts/grid-tiles-2"
@@ -144,6 +170,8 @@
   },
   {
     "name": "Grid Tiles V3",
+    "category": "LAYOUTS",
+    "displayOrder": 17,
     "route": {
       "name": "admin-layouts-grid-tiles-3",
       "path": "/admin/layouts/grid-tiles-3"
@@ -155,6 +183,8 @@
   },
   {
     "name": "Grid Users V1",
+    "category": "LAYOUTS",
+    "displayOrder": 18,
     "route": {
       "name": "admin-layouts-grid-users-1",
       "path": "/admin/layouts/grid-users-1"
@@ -166,6 +196,8 @@
   },
   {
     "name": "Grid Users V2",
+    "category": "LAYOUTS",
+    "displayOrder": 19,
     "route": {
       "name": "admin-layouts-grid-users-2",
       "path": "/admin/layouts/grid-users-2"
@@ -177,6 +209,8 @@
   },
   {
     "name": "Grid Users V3",
+    "category": "LAYOUTS",
+    "displayOrder": 20,
     "route": {
       "name": "admin-layouts-grid-users-3",
       "path": "/admin/layouts/grid-users-3"
@@ -188,6 +222,8 @@
   },
   {
     "name": "Grid Users V4",
+    "category": "LAYOUTS",
+    "displayOrder": 21,
     "route": {
       "name": "admin-layouts-grid-users-4",
       "path": "/admin/layouts/grid-users-4"
@@ -199,6 +235,8 @@
   },
   {
     "name": "Onboarding Standard",
+    "category": "LAYOUTS",
+    "displayOrder": 32,
     "route": {
       "name": "admin-layouts-onboarding-welcome",
       "path": "/admin/layouts/onboarding-welcome"
@@ -210,6 +248,8 @@
   },
   {
     "name": "Kanban Board",
+    "category": "LAYOUTS",
+    "displayOrder": 39,
     "route": {
       "name": "admin-layouts-kanban-board",
       "path": "/admin/layouts/kanban-board"
@@ -221,6 +261,8 @@
   },
   {
     "name": "List Datatable V1",
+    "category": "LAYOUTS",
+    "displayOrder": 7,
     "route": {
       "name": "admin-layouts-list-datatable-1",
       "path": "/admin/layouts/list-datatable-1"
@@ -232,6 +274,8 @@
   },
   {
     "name": "List Datatable V2",
+    "category": "LAYOUTS",
+    "displayOrder": 8,
     "route": {
       "name": "admin-layouts-list-datatable-2",
       "path": "/admin/layouts/list-datatable-2"
@@ -243,6 +287,8 @@
   },
   {
     "name": "List Datatable V3",
+    "category": "LAYOUTS",
+    "displayOrder": 9,
     "route": {
       "name": "admin-layouts-list-datatable-3",
       "path": "/admin/layouts/list-datatable-3"
@@ -254,6 +300,8 @@
   },
   {
     "name": "List Datatable V4",
+    "category": "LAYOUTS",
+    "displayOrder": 10,
     "route": {
       "name": "admin-layouts-list-datatable-4",
       "path": "/admin/layouts/list-datatable-4"
@@ -265,6 +313,8 @@
   },
   {
     "name": "List Flex V1",
+    "category": "LAYOUTS",
+    "displayOrder": 4,
     "route": {
       "name": "admin-layouts-list-flex-1",
       "path": "/admin/layouts/list-flex-1"
@@ -276,6 +326,8 @@
   },
   {
     "name": "List Flex V2",
+    "category": "LAYOUTS",
+    "displayOrder": 5,
     "route": {
       "name": "admin-layouts-list-flex-2",
       "path": "/admin/layouts/list-flex-2"
@@ -287,6 +339,8 @@
   },
   {
     "name": "List Flex V3",
+    "category": "LAYOUTS",
+    "displayOrder": 6,
     "route": {
       "name": "admin-layouts-list-flex-3",
       "path": "/admin/layouts/list-flex-3"
@@ -298,6 +352,8 @@
   },
   {
     "name": "Homepage (List View V1)",
+    "category": "LAYOUTS",
+    "displayOrder": 0,
     "route": {
       "name": "admin-layouts",
       "path": "/admin/layouts/"
@@ -309,6 +365,8 @@
   },
   {
     "name": "List View V2",
+    "category": "LAYOUTS",
+    "displayOrder": 1,
     "route": {
       "name": "admin-layouts-list-view-2",
       "path": "/admin/layouts/list-view-2"
@@ -320,6 +378,8 @@
   },
   {
     "name": "List View V3",
+    "category": "LAYOUTS",
+    "displayOrder": 2,
     "route": {
       "name": "admin-layouts-list-view-3",
       "path": "/admin/layouts/list-view-3"
@@ -331,6 +391,8 @@
   },
   {
     "name": "List View V4",
+    "category": "LAYOUTS",
+    "displayOrder": 3,
     "route": {
       "name": "admin-layouts-list-view-4",
       "path": "/admin/layouts/list-view-4"
@@ -342,6 +404,8 @@
   },
   {
     "name": "Onboarding Page V1",
+    "category": "LAYOUTS",
+    "displayOrder": 43,
     "route": {
       "name": "admin-layouts-onboarding-page-1",
       "path": "/admin/layouts/onboarding-page-1"
@@ -353,6 +417,8 @@
   },
   {
     "name": "Onboarding Page V2",
+    "category": "LAYOUTS",
+    "displayOrder": 44,
     "route": {
       "name": "admin-layouts-onboarding-page-2",
       "path": "/admin/layouts/onboarding-page-2"
@@ -364,6 +430,8 @@
   },
   {
     "name": "Onboarding Page V3",
+    "category": "LAYOUTS",
+    "displayOrder": 45,
     "route": {
       "name": "admin-layouts-onboarding-page-3",
       "path": "/admin/layouts/onboarding-page-3"
@@ -375,6 +443,8 @@
   },
   {
     "name": "Onboarding Page V4",
+    "category": "LAYOUTS",
+    "displayOrder": 46,
     "route": {
       "name": "admin-layouts-onboarding-page-4",
       "path": "/admin/layouts/onboarding-page-4"
@@ -386,6 +456,8 @@
   },
   {
     "name": "Onboarding Page V5",
+    "category": "LAYOUTS",
+    "displayOrder": 47,
     "route": {
       "name": "admin-layouts-onboarding-page-5",
       "path": "/admin/layouts/onboarding-page-5"
@@ -397,6 +469,8 @@
   },
   {
     "name": "Profile Edit",
+    "category": "LAYOUTS",
+    "displayOrder": 23,
     "route": {
       "name": "admin-layouts-profile-edit",
       "path": "/admin/layouts/profile-edit"
@@ -408,6 +482,8 @@
   },
   {
     "name": "Profile Edit Experience",
+    "category": "LAYOUTS",
+    "displayOrder": 24,
     "route": {
       "name": "admin-layouts-profile-edit-experience",
       "path": "/admin/layouts/profile-edit/experience"
@@ -419,6 +495,8 @@
   },
   {
     "name": "Profile Edit Skills",
+    "category": "LAYOUTS",
+    "displayOrder": 25,
     "route": {
       "name": "admin-layouts-profile-edit-skills",
       "path": "/admin/layouts/profile-edit/skills"
@@ -430,6 +508,8 @@
   },
   {
     "name": "Profile Edit Settings",
+    "category": "LAYOUTS",
+    "displayOrder": 26,
     "route": {
       "name": "admin-layouts-profile-edit-settings",
       "path": "/admin/layouts/profile-edit/settings"
@@ -441,6 +521,8 @@
   },
   {
     "name": "Profile Notifications",
+    "category": "LAYOUTS",
+    "displayOrder": 27,
     "route": {
       "name": "admin-layouts-profile-notifications",
       "path": "/admin/layouts/profile-notifications"
@@ -452,6 +534,8 @@
   },
   {
     "name": "Profile Settings",
+    "category": "LAYOUTS",
+    "displayOrder": 28,
     "route": {
       "name": "admin-layouts-profile-settings",
       "path": "/admin/layouts/profile-settings"
@@ -463,6 +547,8 @@
   },
   {
     "name": "Profile View",
+    "category": "LAYOUTS",
+    "displayOrder": 22,
     "route": {
       "name": "admin-layouts-profile-view",
       "path": "/admin/layouts/profile-view"
@@ -474,6 +560,8 @@
   },
   {
     "name": "Projects Details",
+    "category": "LAYOUTS",
+    "displayOrder": 38,
     "route": {
       "name": "admin-layouts-projects-details",
       "path": "/admin/layouts/projects-details"
@@ -485,6 +573,8 @@
   },
   {
     "name": "Projects List V1",
+    "category": "LAYOUTS",
+    "displayOrder": 35,
     "route": {
       "name": "admin-layouts-projects-projects-1",
       "path": "/admin/layouts/projects-projects-1"
@@ -496,6 +586,8 @@
   },
   {
     "name": "Projects List V2",
+    "category": "LAYOUTS",
+    "displayOrder": 36,
     "route": {
       "name": "admin-layouts-projects-projects-2",
       "path": "/admin/layouts/projects-projects-2"
@@ -507,6 +599,8 @@
   },
   {
     "name": "Projects List V3",
+    "category": "LAYOUTS",
+    "displayOrder": 37,
     "route": {
       "name": "admin-layouts-projects-projects-3",
       "path": "/admin/layouts/projects-projects-3"
@@ -518,6 +612,8 @@
   },
   {
     "name": "SaaS Billing",
+    "category": "LAYOUTS",
+    "displayOrder": 31,
     "route": {
       "name": "admin-layouts-saas-billing",
       "path": "/admin/layouts/saas-billing"
@@ -529,6 +625,8 @@
   },
   {
     "name": "Search Empty",
+    "category": "LAYOUTS",
+    "displayOrder": 30,
     "route": {
       "name": "admin-layouts-search-empty",
       "path": "/admin/layouts/search-empty"
@@ -540,6 +638,8 @@
   },
   {
     "name": "Search Results",
+    "category": "LAYOUTS",
+    "displayOrder": 29,
     "route": {
       "name": "admin-layouts-search-results",
       "path": "/admin/layouts/search-results"
@@ -550,40 +650,48 @@
     }
   },
   {
-    "name": "Utility Account Confirm",
+    "name": "Account Confirm",
+    "category": "UTILITY",
+    "displayOrder": 40,
     "route": {
       "name": "admin-layouts-utility-account-confirm",
       "path": "/admin/layouts/utility-account-confirm"
     },
     "screenshot": {
-      "light": "/images/screenshots/admin/utility-account-confirm-light.webp",
-      "dark": "/images/screenshots/admin/utility-account-confirm-dark.webp"
+      "light": "/images/screenshots/admin/account-confirm-light.webp",
+      "dark": "/images/screenshots/admin/account-confirm-dark.webp"
     }
   },
   {
-    "name": "Utility Invoice",
+    "name": "Invoice",
+    "category": "UTILITY",
+    "displayOrder": 42,
     "route": {
       "name": "admin-layouts-utility-invoice",
       "path": "/admin/layouts/utility-invoice"
     },
     "screenshot": {
-      "light": "/images/screenshots/admin/utility-invoice-light.webp",
-      "dark": "/images/screenshots/admin/utility-invoice-dark.webp"
+      "light": "/images/screenshots/admin/invoice-light.webp",
+      "dark": "/images/screenshots/admin/invoice-dark.webp"
     }
   },
   {
-    "name": "Utility Promotion",
+    "name": "Promotion",
+    "category": "UTILITY",
+    "displayOrder": 41,
     "route": {
       "name": "admin-layouts-utility-promotion",
       "path": "/admin/layouts/utility-promotion"
     },
     "screenshot": {
-      "light": "/images/screenshots/admin/utility-promotion-light.webp",
-      "dark": "/images/screenshots/admin/utility-promotion-dark.webp"
+      "light": "/images/screenshots/admin/promotion-light.webp",
+      "dark": "/images/screenshots/admin/promotion-dark.webp"
     }
   },
   {
     "name": "Food Delivery",
+    "category": "APP",
+    "displayOrder": 18,
     "route": {
       "name": "admin-dashboards-food-delivery",
       "path": "/admin/dashboards/food-delivery"
@@ -595,6 +703,8 @@
   },
   {
     "name": "Banking V1",
+    "category": "DASHBOARD",
+    "displayOrder": 7,
     "route": {
       "name": "admin-dashboards-banking-1",
       "path": "/admin/dashboards/banking-1"
@@ -606,6 +716,8 @@
   },
   {
     "name": "Banking V2",
+    "category": "DASHBOARD",
+    "displayOrder": 8,
     "route": {
       "name": "admin-dashboards-banking-2",
       "path": "/admin/dashboards/banking-2"
@@ -617,6 +729,8 @@
   },
   {
     "name": "Banking V3",
+    "category": "DASHBOARD",
+    "displayOrder": 9,
     "route": {
       "name": "admin-dashboards-banking-3",
       "path": "/admin/dashboards/banking-3"
@@ -628,6 +742,8 @@
   },
   {
     "name": "Flights",
+    "category": "DASHBOARD",
+    "displayOrder": 10,
     "route": {
       "name": "admin-dashboards-flights",
       "path": "/admin/dashboards/flights"
@@ -639,6 +755,8 @@
   },
   {
     "name": "Company",
+    "category": "DASHBOARD",
+    "displayOrder": 11,
     "route": {
       "name": "admin-dashboards-company",
       "path": "/admin/dashboards/company"
@@ -650,6 +768,8 @@
   },
   {
     "name": "Human Ressources",
+    "category": "DASHBOARD",
+    "displayOrder": 12,
     "route": {
       "name": "admin-dashboards-human-ressources",
       "path": "/admin/dashboards/human-ressources"
@@ -661,6 +781,8 @@
   },
   {
     "name": "Charts Apex",
+    "category": "DASHBOARD",
+    "displayOrder": 19,
     "route": {
       "name": "admin-dashboards-charts-apex",
       "path": "/admin/dashboards/charts-apex"
@@ -672,6 +794,8 @@
   },
   {
     "name": "Charts BillboardsJS",
+    "category": "DASHBOARD",
+    "displayOrder": 20,
     "route": {
       "name": "admin-dashboards-charts-billboardsjs",
       "path": "/admin/dashboards/charts-billboardsjs"
@@ -683,6 +807,8 @@
   },
   {
     "name": "Ecommerce V1",
+    "category": "DASHBOARD",
+    "displayOrder": 17,
     "route": {
       "name": "admin-dashboards-ecommerce-1",
       "path": "/admin/dashboards/ecommerce-1"
@@ -694,6 +820,8 @@
   },
   {
     "name": "Analytics",
+    "category": "DASHBOARD",
+    "displayOrder": 4,
     "route": {
       "name": "admin-dashboards-analytics",
       "path": "/admin/dashboards/analytics"
@@ -705,6 +833,8 @@
   },
   {
     "name": "Stocks",
+    "category": "DASHBOARD",
+    "displayOrder": 5,
     "route": {
       "name": "admin-dashboards-stocks",
       "path": "/admin/dashboards/stocks"
@@ -716,6 +846,8 @@
   },
   {
     "name": "Sales",
+    "category": "DASHBOARD",
+    "displayOrder": 6,
     "route": {
       "name": "admin-dashboards-sales",
       "path": "/admin/dashboards/sales"
@@ -727,6 +859,8 @@
   },
   {
     "name": "Influencer",
+    "category": "DASHBOARD",
+    "displayOrder": 13,
     "route": {
       "name": "admin-dashboards-influencer",
       "path": "/admin/dashboards/influencer"
@@ -738,6 +872,8 @@
   },
   {
     "name": "Hobbies",
+    "category": "DASHBOARD",
+    "displayOrder": 14,
     "route": {
       "name": "admin-dashboards-hobbies",
       "path": "/admin/dashboards/hobbies"
@@ -749,6 +885,8 @@
   },
   {
     "name": "Health",
+    "category": "DASHBOARD",
+    "displayOrder": 15,
     "route": {
       "name": "admin-dashboards-health",
       "path": "/admin/dashboards/health"
@@ -760,6 +898,8 @@
   },
   {
     "name": "Writer",
+    "category": "DASHBOARD",
+    "displayOrder": 16,
     "route": {
       "name": "admin-dashboards-writer",
       "path": "/admin/dashboards/writer"
@@ -771,6 +911,8 @@
   },
   {
     "name": "Homepage (Personal V1)",
+    "category": "DASHBOARD",
+    "displayOrder": 0,
     "route": {
       "name": "admin-dashboards",
       "path": "/admin/dashboards/"
@@ -782,6 +924,8 @@
   },
   {
     "name": "Personal V2",
+    "category": "DASHBOARD",
+    "displayOrder": 1,
     "route": {
       "name": "admin-dashboards-personal-2",
       "path": "/admin/dashboards/personal-2"
@@ -793,6 +937,8 @@
   },
   {
     "name": "Personal V3",
+    "category": "DASHBOARD",
+    "displayOrder": 2,
     "route": {
       "name": "admin-dashboards-personal-3",
       "path": "/admin/dashboards/personal-3"
@@ -804,6 +950,8 @@
   },
   {
     "name": "Widgets Creative",
+    "category": "DASHBOARD",
+    "displayOrder": 22,
     "route": {
       "name": "admin-dashboards-widgets-sample-creative",
       "path": "/admin/dashboards/widgets-sample-creative"
@@ -815,6 +963,8 @@
   },
   {
     "name": "Widgets List",
+    "category": "DASHBOARD",
+    "displayOrder": 23,
     "route": {
       "name": "admin-dashboards-widgets-sample-list",
       "path": "/admin/dashboards/widgets-sample-list"
@@ -826,6 +976,8 @@
   },
   {
     "name": "Widgets Stats",
+    "category": "DASHBOARD",
+    "displayOrder": 24,
     "route": {
       "name": "admin-dashboards-widgets-sample-stats",
       "path": "/admin/dashboards/widgets-sample-stats"
@@ -837,6 +989,8 @@
   },
   {
     "name": "Widgets UI",
+    "category": "DASHBOARD",
+    "displayOrder": 21,
     "route": {
       "name": "admin-dashboards-widgets-sample-ui",
       "path": "/admin/dashboards/widgets-sample-ui"

@@ -1,5 +1,8 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
+import { setLayout } from '/@src/composition/state/webappLayoutState'
+
+setLayout('webapp-v2')
 
 useHead({
   title: 'Blank Page 2 - WebApp - Vuero',

@@ -1,6 +1,8 @@
 [
   {
     "name": "Homepage",
+    "category": "LAYOUTS",
+    "displayOrder": 8,
     "route": {
       "name": "index",
       "path": "/"
@@ -12,6 +14,8 @@
   },
   {
     "name": "Messaging V2",
+    "category": "APP",
+    "displayOrder": 1,
     "route": {
       "name": "messaging-v2",
       "path": "/messaging-v2"
@@ -23,6 +27,8 @@
   },
   {
     "name": "Status",
+    "category": "UTILITY",
+    "displayOrder": 3,
     "route": {
       "name": "status",
       "path": "/status"
@@ -34,6 +40,8 @@
   },
   {
     "name": "Wizard V1",
+    "category": "APP",
+    "displayOrder": 2,
     "route": {
       "name": "wizard-v1",
       "path": "/wizard-v1"
@@ -45,6 +53,8 @@
   },
   {
     "name": "Inbox",
+    "category": "APP",
+    "displayOrder": 0,
     "route": {
       "name": "inbox",
       "path": "/inbox"
@@ -56,6 +66,8 @@
   },
   {
     "name": "Error 1",
+    "category": "UTILITY",
+    "displayOrder": 4,
     "route": {
       "name": "error-page-1",
       "path": "/error/page-1"
@@ -67,6 +79,8 @@
   },
   {
     "name": "Error 2",
+    "category": "UTILITY",
+    "displayOrder": 9,
     "route": {
       "name": "error-page-2",
       "path": "/error/page-2"
@@ -78,6 +92,8 @@
   },
   {
     "name": "Error 3",
+    "category": "UTILITY",
+    "displayOrder": 5,
     "route": {
       "name": "error-page-3",
       "path": "/error/page-3"
@@ -89,6 +105,8 @@
   },
   {
     "name": "Error 4",
+    "category": "UTILITY",
+    "displayOrder": 6,
     "route": {
       "name": "error-page-4",
       "path": "/error/page-4"
@@ -100,6 +118,8 @@
   },
   {
     "name": "Error 5",
+    "category": "UTILITY",
+    "displayOrder": 7,
     "route": {
       "name": "error-page-5",
       "path": "/error/page-5"

@@ -1,5 +1,8 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
+import { setLayout } from '/@src/composition/state/adminLayoutState'
+
+setLayout('sidebar-curved')
 
 import {
   activeSidebar,

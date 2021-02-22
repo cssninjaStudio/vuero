@@ -8,11 +8,11 @@ quality=100
 width=364
 height=204
 
-for layout in admin auth minimal webapp; do
+for layout in admin auth minimal webapp templates; do
   # do something like: echo $databaseName
   echo "${layout}"
 
-  rm -f "${output}${layout}/"
+  rm -rf "${output}${layout}/"
   mkdir -p "${output}${layout}/"
     
   for d in ${path}${layout}/*; do

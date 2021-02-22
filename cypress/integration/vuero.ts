@@ -5,12 +5,53 @@ import {
   auth,
   admin,
   webapp,
+  templates,
 } from '../fixtures/routes'
 
-describe('Desktop - Viewport (1295*722)', () => {
+describe('Desktop - Viewport (1274*714)', () => {
   beforeEach(() => {
-    cy.viewport(1295, 722)
+    cy.viewport(1274, 714)
   })
+
+  for (const route of templates) {
+    it(`Desktop - Templates - ${route.name}`, () => {
+      cy.visit(route.path)
+      // cy.get('.webapp-layout')
+      cy.wait(waitTimeout)
+
+      cy.title().should('not.contain', 'Page not found')
+      cy.get('html').invoke('toggleClass', 'no-scroll')
+
+      cy.screenshot(
+        `${route.prefix}/${route.name
+          .toLowerCase()
+          .replace('-', ' ')
+          .replace('(', ' ')
+          .replace(')', ' ')
+          .replace(/[\s]+/g, '-')}-light`,
+        {
+          capture: 'viewport',
+          disableTimersAndAnimations,
+        }
+      )
+
+      cy.get('body').invoke('toggleClass', 'is-dark')
+      // cy.wait(waitTimeout)
+
+      cy.screenshot(
+        `${route.prefix}/${route.name
+          .toLowerCase()
+          .replace('-', ' ')
+          .replace('(', ' ')
+          .replace(')', ' ')
+          .replace(/[\s]+/g, '-')}-dark`,
+        {
+          capture: 'viewport',
+          disableTimersAndAnimations,
+        }
+      )
+    })
+  }
 
   for (const route of minimal) {
     it(`Desktop - Minimal Layout - ${route.name}`, () => {
