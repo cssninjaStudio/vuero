@@ -1,0 +1,457 @@
+<script setup lang="ts">
+import { courses, files, students } from '/@src/data/dashboards/course'
+</script>
+
+<template>
+  <!--Business Dashboard V4-->
+  <div class="business-dashboard course-dashboard">
+    <div class="dashboard-title is-main">
+      <div class="left">
+        <h2 class="dark-inverted">Week 6 Classes</h2>
+        <p class="h-hidden-mobile">Classes from January 6 to 10</p>
+      </div>
+      <div class="right">
+        <V-Button color="primary" elevated>Open Schedule</V-Button>
+      </div>
+    </div>
+
+    <div class="course-grid">
+      <div class="columns is-multiline">
+        <!--Course card-->
+        <div v-for="course in courses" :key="course.id" class="column is-4">
+          <div class="course-card">
+            <span
+              class="tag is-elevated"
+              :class="[
+                course.category === 'Anatomy' && 'is-green',
+                course.category === 'Immunology' && 'is-purple',
+                course.category === 'Cardiology' && 'is-danger',
+              ]"
+              >{{ course.category }}</span
+            >
+            <h3 class="dark-inverted">{{ course.title }}</h3>
+            <p>{{ course.summary }}</p>
+            <div class="students">
+              <V-Avatar
+                v-for="student in course.students"
+                :key="student.id"
+                :picture="student.picture"
+                size="small"
+              />
+              <div class="v-avatar is-small">
+                <span class="avatar is-fake is-dark-bg-2">
+                  <span>+{{ course.participants - 3 }}</span>
+                </span>
+              </div>
+              <a class="link is-dark-primary">Class discussion</a>
+            </div>
+            <div class="attached-block">
+              <a class="is-dark-primary">Week 6 lecture recording</a>
+              <div class="block-stats">
+                <span>
+                  <i class="iconify" data-icon="feather:clock"></i>
+                  <small>{{ course.duration }}</small>
+                </span>
+                <span>
+                  <i class="iconify" data-icon="feather:message-circle"></i>
+                  <small>{{ course.comments }}</small>
+                </span>
+              </div>
+            </div>
+            <div class="attached-block">
+              <a class="is-dark-primary">{{ course.actionLabel }}</a>
+              <div class="block-stats">
+                <span>
+                  <i class="iconify" data-icon="feather:calendar"></i>
+                  <small>{{ course.actionText }}</small>
+                </span>
+              </div>
+            </div>
+            <div class="action-block">
+              <button class="button h-button is-primary is-raised is-fullwidth">
+                View Class
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Tile Grid v1-->
+    <div class="columns is-multiline tile-grid tile-grid-v2">
+      <!--Grid item-->
+      <div class="column is-4">
+        <div class="dashboard-title">
+          <div class="left">
+            <h2 class="dark-inverted">Week 6 Files</h2>
+            <p class="h-hidden-mobile">Files you will need for this week</p>
+          </div>
+        </div>
+
+        <div v-for="file in files" :key="file.id" class="tile-grid-item">
+          <div class="tile-grid-item-inner">
+            <img :src="file.icon" alt="" />
+            <div class="meta">
+              <span class="dark-inverted">{{ file.name }}</span>
+              <span>
+                <span>{{ file.size }}</span>
+                <i class="fas fa-circle icon-separator"></i>
+                <span>Uploaded {{ file.uploaded }}</span>
+              </span>
+            </div>
+            <FileTileDropdown />
+          </div>
+        </div>
+      </div>
+
+      <!--Grid item-->
+      <div class="column is-8">
+        <div class="dashboard-title">
+          <div class="left">
+            <h2 class="dark-inverted">Students</h2>
+            <p class="h-hidden-mobile">Summary of attending students</p>
+          </div>
+          <div class="right">
+            <div class="field">
+              <div class="control has-icon">
+                <input
+                  type="text"
+                  class="input is-rounded"
+                  placeholder="Search students..."
+                />
+                <div class="form-icon">
+                  <i class="iconify" data-icon="feather:search"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Table-->
+        <div class="flex-table">
+          <!--Table item-->
+          <div
+            v-for="student in students"
+            :key="student.id"
+            class="flex-table-item"
+          >
+            <div class="flex-table-cell is-media is-grow" data-th="">
+              <V-Avatar :picture="student.picture" size="medium" />
+              <div>
+                <span class="item-name dark-inverted">{{
+                  student.username
+                }}</span>
+                <span class="item-meta">
+                  <span>{{ student.progress }}% completed</span>
+                </span>
+              </div>
+            </div>
+            <div class="flex-table-cell" data-th="Location">
+              <span class="light-text">{{ student.location }}</span>
+            </div>
+            <div class="flex-table-cell" data-th="Status">
+              <span
+                class="tag is-rounded"
+                :class="[
+                  student.status === 'Online' && 'is-green',
+                  student.status === 'Busy' && 'is-orange',
+                  student.status === 'Offline' && '',
+                ]"
+                >{{ student.status }}</span
+              >
+            </div>
+            <div class="flex-table-cell" data-th="Schedule">
+              <span class="light-text">{{ student.attendance }}</span>
+            </div>
+            <div class="flex-table-cell cell-end" data-th="Actions">
+              <button
+                class="button h-button action-button is-dark-outlined is-pushed-mobile"
+              >
+                Chat
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<style lang="scss">
+@import '../../../../assets/scss/abstracts/_variables.scss';
+@import '../../../../assets/scss/abstracts/_mixins.scss';
+
+.course-dashboard {
+  .dashboard-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-family: $font;
+
+    &.is-main {
+      margin-bottom: 30px;
+
+      h2 {
+        font-size: 1.8rem;
+      }
+    }
+
+    h2 {
+      font-family: $font-alt;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: $dark-text;
+    }
+  }
+
+  .course-grid {
+    margin-bottom: 2rem;
+
+    .course-card {
+      @include vuero-l-card();
+
+      .tag {
+        height: 2.75em;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        border-radius: 0.5rem;
+        line-height: 2.7;
+        margin-bottom: 2rem;
+      }
+
+      h3 {
+        font-family: $font-alt;
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: $dark-text;
+        margin-bottom: 1rem;
+      }
+
+      .students {
+        display: flex;
+        align-items: center;
+        padding: 2rem 0;
+
+        .v-avatar {
+          margin: 0 0.25rem;
+
+          .avatar {
+            &.is-fake {
+              span {
+                position: relative;
+                left: -2px;
+              }
+            }
+          }
+        }
+
+        .link {
+          font-family: $font;
+          font-weight: 500;
+          color: $primary;
+          margin-left: 1rem;
+        }
+      }
+
+      .attached-block {
+        + .attached-block {
+          margin-top: 1.5rem;
+        }
+
+        > a {
+          font-family: $font;
+          font-weight: 500;
+          color: $primary;
+          margin-bottom: 0.5rem;
+        }
+
+        .block-stats {
+          display: flex;
+          color: $light-text;
+
+          + .block-stats {
+            margin-top: 0.25rem;
+          }
+
+          span {
+            font-family: $font;
+            display: flex;
+            align-items: center;
+            margin-right: 0.75rem;
+
+            svg {
+              height: 15px;
+              width: 15px;
+              stroke-width: 1px;
+              margin-right: 0.25rem;
+            }
+          }
+        }
+      }
+
+      .action-block {
+        margin-top: 2.5rem;
+
+        .button {
+          height: 46px;
+          border-radius: 0.75rem;
+        }
+      }
+    }
+  }
+
+  .tile-grid {
+    .tile-grid-item {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .flex-table {
+    .flex-table-item {
+      border-radius: 1rem;
+      padding: 1rem;
+      margin-bottom: 1rem;
+
+      .tag {
+        height: 2.75em;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        border-radius: 0.5rem;
+        line-height: 2.7;
+      }
+
+      .action-button {
+        border-radius: 0.75rem;
+
+        &:hover {
+          background: $primary;
+          border-color: $primary;
+          color: $white;
+          box-shadow: $primary-box-shadow;
+        }
+      }
+    }
+  }
+}
+
+.is-dark {
+  .course-dashboard {
+    .course-grid {
+      .course-card {
+        @include vuero-card--dark();
+      }
+    }
+  }
+}
+
+.tile-grid {
+  .columns {
+    margin-left: -0.5rem !important;
+    margin-right: -0.5rem !important;
+    margin-top: -0.5rem !important;
+  }
+
+  .column {
+    padding: 0.5rem !important;
+  }
+}
+
+.is-dark {
+  .tile-grid {
+    .tile-grid-item {
+      @include vuero-card--dark();
+    }
+  }
+}
+
+.tile-grid-v2 {
+  .tile-grid-item {
+    @include vuero-s-card();
+
+    border-radius: 14px;
+    padding: 16px;
+    cursor: pointer;
+
+    &:hover {
+      border-color: $primary;
+      box-shadow: $light-box-shadow;
+    }
+
+    .tile-grid-item-inner {
+      display: flex;
+      align-items: center;
+
+      > img {
+        display: block;
+        width: 50px;
+        height: 50px;
+        min-width: 50px;
+      }
+
+      .meta {
+        margin-left: 10px;
+        line-height: 1.4;
+
+        span {
+          display: block;
+          font-family: $font;
+
+          &:first-child {
+            color: $dark-text;
+            font-family: $font-alt;
+            font-weight: 600;
+            font-size: 1rem;
+          }
+
+          &:nth-child(2) {
+            display: flex;
+            align-items: center;
+
+            span {
+              display: inline-block;
+              color: $light-text;
+              font-size: 0.8rem;
+              font-weight: 400;
+            }
+
+            .icon-separator {
+              position: relative;
+              font-size: 4px;
+              color: $light-text;
+              padding: 0 6px;
+            }
+          }
+        }
+      }
+
+      .dropdown {
+        margin-left: auto;
+      }
+    }
+  }
+}
+
+.is-dark {
+  .tile-grid-v2 {
+    .tile-grid-item {
+      @include vuero-card--dark();
+      &:hover {
+        border-color: $accent !important;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .course-dashboard {
+    .dashboard-title {
+      flex-direction: column;
+
+      .left {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+</style>

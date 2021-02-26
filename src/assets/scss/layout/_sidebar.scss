@@ -112,6 +112,12 @@
       .bottom-menu {
         li {
           a {
+            &.router-link-active {
+              &::after {
+                color: $primary;
+              }
+            }
+
             &::after {
               content: attr(data-content);
               position: absolute;
