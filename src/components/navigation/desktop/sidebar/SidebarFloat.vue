@@ -12,7 +12,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
       :class="activeSidebar === 'none' ? '' : 'is-bordered'"
     >
       <RouterLink :to="{ name: 'index' }">
-        <AnimatedLogo light width="38px" height="38px" />
+        <AnimatedLogo width="38px" height="38px" />
       </RouterLink>
     </div>
     <div class="sidebar-inner">
