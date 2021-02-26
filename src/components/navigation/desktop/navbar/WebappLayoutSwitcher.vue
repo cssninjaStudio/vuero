@@ -39,7 +39,7 @@ const standardOpen = ref(false)
                 alt=""
               />
               <h3>Default Navbar</h3>
-              <p>The good old default sidebar</p>
+              <p>Top nav with categories</p>
               <div class="indicator">
                 <i class="iconify" data-icon="feather:check"></i>
               </div>
@@ -63,7 +63,7 @@ const standardOpen = ref(false)
                 alt=""
               />
               <h3>Fade Navbar</h3>
-              <p>The good old default sidebar</p>
+              <p>Transparent top nav</p>
               <div class="indicator">
                 <i class="iconify" data-icon="feather:check"></i>
               </div>
@@ -87,7 +87,7 @@ const standardOpen = ref(false)
                 alt=""
               />
               <h3>Colored Navbar</h3>
-              <p>The good old default sidebar</p>
+              <p>Colored top nav</p>
               <div class="indicator">
                 <i class="iconify" data-icon="feather:check"></i>
               </div>
@@ -102,16 +102,16 @@ const standardOpen = ref(false)
             >
               <img
                 class="light-image-block"
-                src="/images/icons/layouts/layout-8.svg"
+                src="/images/icons/layouts/layout-7.svg"
                 alt=""
               />
               <img
                 class="dark-image-block"
-                src="/images/icons/layouts/layout-8-dark.svg"
+                src="/images/icons/layouts/layout-7-dark.svg"
                 alt=""
               />
               <h3>Dropdown Navbar</h3>
-              <p>The good old default sidebar</p>
+              <p>Top nav dropdown variation</p>
               <div class="indicator">
                 <i class="iconify" data-icon="feather:check"></i>
               </div>
@@ -135,7 +135,7 @@ const standardOpen = ref(false)
                 alt=""
               />
               <h3>Colored Dropdown</h3>
-              <p>The good old default sidebar</p>
+              <p>Colored with dropdowns</p>
               <div class="indicator">
                 <i class="iconify" data-icon="feather:check"></i>
               </div>
@@ -150,16 +150,64 @@ const standardOpen = ref(false)
             >
               <img
                 class="light-image-block"
-                src="/images/icons/layouts/layout-7.svg"
+                src="/images/icons/layouts/layout-10.svg"
                 alt=""
               />
               <img
                 class="dark-image-block"
-                src="/images/icons/layouts/layout-7-dark.svg"
+                src="/images/icons/layouts/layout-10-dark.svg"
                 alt=""
               />
               <h3>Clean Navbar</h3>
-              <p>The good old default sidebar</p>
+              <p>Clean top nav variation</p>
+              <div class="indicator">
+                <i class="iconify" data-icon="feather:check"></i>
+              </div>
+            </a>
+          </div>
+          <div class="column is-6">
+            <a
+              href="#"
+              class="layout-item"
+              :class="[webappLayoutId === 'webapp-v7' && 'is-active']"
+              @click="setLayout('webapp-v7')"
+            >
+              <img
+                class="light-image-block"
+                src="/images/icons/layouts/layout-11.svg"
+                alt=""
+              />
+              <img
+                class="dark-image-block"
+                src="/images/icons/layouts/layout-11-dark.svg"
+                alt=""
+              />
+              <h3>Clean Centered</h3>
+              <p>Centered variation</p>
+              <div class="indicator">
+                <i class="iconify" data-icon="feather:check"></i>
+              </div>
+            </a>
+          </div>
+          <div class="column is-6">
+            <a
+              href="#"
+              class="layout-item"
+              :class="[webappLayoutId === 'webapp-v8' && 'is-active']"
+              @click="setLayout('webapp-v8')"
+            >
+              <img
+                class="light-image-block"
+                src="/images/icons/layouts/layout-12.svg"
+                alt=""
+              />
+              <img
+                class="dark-image-block"
+                src="/images/icons/layouts/layout-12-dark.svg"
+                alt=""
+              />
+              <h3>Clean Transparent</h3>
+              <p>Transparent variation</p>
               <div class="indicator">
                 <i class="iconify" data-icon="feather:check"></i>
               </div>

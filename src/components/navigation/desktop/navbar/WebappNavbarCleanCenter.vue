@@ -194,8 +194,13 @@ watch(
         </div>
       </div>
     </div>
-    <div class="webapp-navbar-lower is-between">
+    <div class="webapp-navbar-lower is-centered">
       <div class="left">
+        <div class="welcome-text">
+          <span>February 22, 2021</span>
+        </div>
+      </div>
+      <div class="center">
         <div class="buttons">
           <a class="button">Dashboard</a>
           <a class="button">Projects</a>

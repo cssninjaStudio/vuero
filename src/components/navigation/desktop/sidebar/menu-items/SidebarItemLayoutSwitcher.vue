@@ -63,7 +63,7 @@ const standardOpen = ref(false)
                 alt=""
               />
               <h3>Colored Sidebar</h3>
-              <p>The good old default sidebar</p>
+              <p>Colored variation of sidebar</p>
               <div class="indicator">
                 <i class="iconify" data-icon="feather:check"></i>
               </div>
@@ -87,7 +87,7 @@ const standardOpen = ref(false)
                 alt=""
               />
               <h3>Curved Sidebar</h3>
-              <p>The good old default sidebar</p>
+              <p>Sidebar with curved edges</p>
               <div class="indicator">
                 <i class="iconify" data-icon="feather:check"></i>
               </div>
@@ -111,7 +111,7 @@ const standardOpen = ref(false)
                 alt=""
               />
               <h3>Curved Colored</h3>
-              <p>The good old default sidebar</p>
+              <p>Curved edges with color</p>
               <div class="indicator">
                 <i class="iconify" data-icon="feather:check"></i>
               </div>
@@ -135,7 +135,7 @@ const standardOpen = ref(false)
                 alt=""
               />
               <h3>Sidebar Labels</h3>
-              <p>The good old default sidebar</p>
+              <p>Default labels displayed</p>
               <div class="indicator">
                 <i class="iconify" data-icon="feather:check"></i>
               </div>
@@ -159,7 +159,7 @@ const standardOpen = ref(false)
                 alt=""
               />
               <h3>Hover Labels</h3>
-              <p>The good old default sidebar</p>
+              <p>Labels displayed on hover</p>
               <div class="indicator">
                 <i class="iconify" data-icon="feather:check"></i>
               </div>
@@ -183,7 +183,7 @@ const standardOpen = ref(false)
                 alt=""
               />
               <h3>Floating Sidebar</h3>
-              <p>The good old default sidebar</p>
+              <p>Floating rounded variation</p>
               <div class="indicator">
                 <i class="iconify" data-icon="feather:check"></i>
               </div>

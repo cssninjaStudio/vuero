@@ -5,7 +5,7 @@
     <MobileNavbar />
     <MobileSidebarMain />
 
-    <WebappNavbarAltColored />
+    <WebappNavbarCleanCenter />
     <LanguagesPanel />
     <ActivityPanel />
 
