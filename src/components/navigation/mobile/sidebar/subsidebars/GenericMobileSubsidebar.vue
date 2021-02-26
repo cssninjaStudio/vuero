@@ -207,6 +207,15 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
                 <span>Writer</span>
               </RouterLink>
             </li>
+            <li>
+              <RouterLink
+                :to="{ name: 'admin-dashboards-video' }"
+                class="is-submenu"
+              >
+                <i class="lnil lnil-video-alt-1"></i>
+                <span>Video</span>
+              </RouterLink>
+            </li>
           </ul>
         </li>
         <li v-has-children class="has-children">

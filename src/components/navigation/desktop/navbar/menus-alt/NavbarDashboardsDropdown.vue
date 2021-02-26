@@ -148,6 +148,17 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
                       <span>Writer</span>
                     </div>
                   </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-dashboards-video' }"
+                    class="dropdown-item is-media"
+                  >
+                    <div class="icon">
+                      <i class="lnil lnil-video-alt-1"></i>
+                    </div>
+                    <div class="meta">
+                      <span>Video</span>
+                    </div>
+                  </RouterLink>
                 </div>
               </div>
             </div>
