@@ -13,6 +13,15 @@ const WebappV4Layout = defineAsyncComponent(
 const WebappV5Layout = defineAsyncComponent(
   () => import('/@src/layouts/WebappV5Layout.vue')
 )
+const WebappV6Layout = defineAsyncComponent(
+  () => import('/@src/layouts/WebappV6Layout.vue')
+)
+const WebappV7Layout = defineAsyncComponent(
+  () => import('/@src/layouts/WebappV7Layout.vue')
+)
+const WebappV8Layout = defineAsyncComponent(
+  () => import('/@src/layouts/WebappV8Layout.vue')
+)
 
 const layoutsComponents = {
   'webapp-v1': WebappLayout,
@@ -20,6 +29,9 @@ const layoutsComponents = {
   'webapp-v3': WebappV3Layout,
   'webapp-v4': WebappV4Layout,
   'webapp-v5': WebappV5Layout,
+  'webapp-v6': WebappV6Layout,
+  'webapp-v7': WebappV7Layout,
+  'webapp-v8': WebappV8Layout,
 }
 
 export const webappLayoutId = ref<keyof typeof layoutsComponents>('webapp-v1')

@@ -4,7 +4,7 @@ import { activePanel } from '/@src/composition/state/activePanelState'
 
 <template>
   <li class="right-panel-trigger">
-    <a id="open-search" @click="activePanel = 'search'"
+    <a id="open-search" data-content="Search" @click="activePanel = 'search'"
       ><i class="iconify sidebar-svg" data-icon="feather-search"
     /></a>
     <a

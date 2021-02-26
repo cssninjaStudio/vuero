@@ -33,6 +33,65 @@ Responsive styles
   .main-sidebar {
     width: 60px !important;
 
+    &.has-labels {
+      .sidebar-inner {
+        .icon-menu,
+        .bottom-menu {
+          li {
+            a {
+              &::after {
+                left: -30px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &.is-float {
+      width: 56px !important;
+      margin-left: 4px;
+
+      &:not(.is-bordered) {
+        .sidebar-brand {
+          width: 56px !important;
+        }
+
+        .sidebar-inner {
+          .icon-menu,
+          .bottom-menu {
+            li {
+              width: 56px !important;
+            }
+          }
+        }
+      }
+
+      &.is-bordered {
+        width: 60px !important;
+
+        .sidebar-brand {
+          width: 60px !important;
+        }
+
+        .sidebar-inner {
+          .icon-menu,
+          .bottom-menu {
+            li {
+              width: 60px !important;
+            }
+          }
+        }
+      }
+
+      .sidebar-inner {
+        .bottom-menu {
+          padding-bottom: 0 !important;
+          bottom: -3px !important;
+        }
+      }
+    }
+
     .sidebar-brand {
       width: 60px !important;
     }

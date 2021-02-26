@@ -10,12 +10,24 @@ const SidebarColorLayout = defineAsyncComponent(
 const SidebarColorCurvedLayout = defineAsyncComponent(
   () => import('/@src/layouts/SidebarColorCurvedLayout.vue')
 )
+const SidebarLabelsLayout = defineAsyncComponent(
+  () => import('/@src/layouts/SidebarLabelsLayout.vue')
+)
+const SidebarLabelsHoverLayout = defineAsyncComponent(
+  () => import('/@src/layouts/SidebarLabelsHoverLayout.vue')
+)
+const SidebarFloatLayout = defineAsyncComponent(
+  () => import('/@src/layouts/SidebarFloatLayout.vue')
+)
 
 const layoutsComponents = {
   'sidebar-default': DefaultLayout,
   'sidebar-curved': SidebarCurvedLayout,
   'sidebar-color': SidebarColorLayout,
   'sidebar-color-curved': SidebarColorCurvedLayout,
+  'sidebar-labels': SidebarLabelsLayout,
+  'sidebar-labels-hover': SidebarLabelsHoverLayout,
+  'sidebar-float': SidebarFloatLayout,
 }
 
 export const adminLayoutId = ref<keyof typeof layoutsComponents>(

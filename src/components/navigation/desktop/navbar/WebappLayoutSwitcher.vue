@@ -1,20 +1,20 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import {
-  adminLayoutId,
+  webappLayoutId,
   setLayout,
-} from '/@src/composition/state/adminLayoutState'
+} from '/@src/composition/state/webappLayoutState'
 const standardOpen = ref(false)
 </script>
 
 <template>
-  <li>
-    <a data-content="Config" @click="standardOpen = true">
+  <div>
+    <a class="icon-link" @click="standardOpen = true">
       <i class="iconify sidebar-svg" data-icon="feather:sidebar"></i>
     </a>
     <V-Modal
       :open="standardOpen"
-      title="Select Admin Layout"
+      title="Select Webapp Layout"
       actions="right"
       noscroll
       @close="standardOpen = false"
@@ -25,20 +25,20 @@ const standardOpen = ref(false)
             <a
               href="#"
               class="layout-item"
-              :class="[adminLayoutId === 'sidebar-default' && 'is-active']"
-              @click="setLayout('sidebar-default')"
+              :class="[webappLayoutId === 'webapp-v1' && 'is-active']"
+              @click="setLayout('webapp-v1')"
             >
               <img
                 class="light-image-block"
-                src="/images/icons/layouts/layout-1.svg"
+                src="/images/icons/layouts/layout-7.svg"
                 alt=""
               />
               <img
                 class="dark-image-block"
-                src="/images/icons/layouts/layout-1-dark.svg"
+                src="/images/icons/layouts/layout-7-dark.svg"
                 alt=""
               />
-              <h3>Default Sidebar</h3>
+              <h3>Default Navbar</h3>
               <p>The good old default sidebar</p>
               <div class="indicator">
                 <i class="iconify" data-icon="feather:check"></i>
@@ -49,20 +49,20 @@ const standardOpen = ref(false)
             <a
               href="#"
               class="layout-item"
-              :class="[adminLayoutId === 'sidebar-color' && 'is-active']"
-              @click="setLayout('sidebar-color')"
+              :class="[webappLayoutId === 'webapp-v2' && 'is-active']"
+              @click="setLayout('webapp-v2')"
             >
               <img
                 class="light-image-block"
-                src="/images/icons/layouts/layout-2.svg"
+                src="/images/icons/layouts/layout-8.svg"
                 alt=""
               />
               <img
                 class="dark-image-block"
-                src="/images/icons/layouts/layout-2-dark.svg"
+                src="/images/icons/layouts/layout-8-dark.svg"
                 alt=""
               />
-              <h3>Colored Sidebar</h3>
+              <h3>Fade Navbar</h3>
               <p>The good old default sidebar</p>
               <div class="indicator">
                 <i class="iconify" data-icon="feather:check"></i>
@@ -73,20 +73,20 @@ const standardOpen = ref(false)
             <a
               href="#"
               class="layout-item"
-              :class="[adminLayoutId === 'sidebar-curved' && 'is-active']"
-              @click="setLayout('sidebar-curved')"
+              :class="[webappLayoutId === 'webapp-v3' && 'is-active']"
+              @click="setLayout('webapp-v3')"
             >
               <img
                 class="light-image-block"
-                src="/images/icons/layouts/layout-3.svg"
+                src="/images/icons/layouts/layout-9.svg"
                 alt=""
               />
               <img
                 class="dark-image-block"
-                src="/images/icons/layouts/layout-3-dark.svg"
+                src="/images/icons/layouts/layout-9-dark.svg"
                 alt=""
               />
-              <h3>Curved Sidebar</h3>
+              <h3>Colored Navbar</h3>
               <p>The good old default sidebar</p>
               <div class="indicator">
                 <i class="iconify" data-icon="feather:check"></i>
@@ -97,20 +97,20 @@ const standardOpen = ref(false)
             <a
               href="#"
               class="layout-item"
-              :class="[adminLayoutId === 'sidebar-color-curved' && 'is-active']"
-              @click="setLayout('sidebar-color-curved')"
+              :class="[webappLayoutId === 'webapp-v4' && 'is-active']"
+              @click="setLayout('webapp-v4')"
             >
               <img
                 class="light-image-block"
-                src="/images/icons/layouts/layout-4.svg"
+                src="/images/icons/layouts/layout-8.svg"
                 alt=""
               />
               <img
                 class="dark-image-block"
-                src="/images/icons/layouts/layout-4-dark.svg"
+                src="/images/icons/layouts/layout-8-dark.svg"
                 alt=""
               />
-              <h3>Curved Colored</h3>
+              <h3>Dropdown Navbar</h3>
               <p>The good old default sidebar</p>
               <div class="indicator">
                 <i class="iconify" data-icon="feather:check"></i>
@@ -121,20 +121,20 @@ const standardOpen = ref(false)
             <a
               href="#"
               class="layout-item"
-              :class="[adminLayoutId === 'sidebar-labels' && 'is-active']"
-              @click="setLayout('sidebar-labels')"
+              :class="[webappLayoutId === 'webapp-v5' && 'is-active']"
+              @click="setLayout('webapp-v5')"
             >
               <img
                 class="light-image-block"
-                src="/images/icons/layouts/layout-5.svg"
+                src="/images/icons/layouts/layout-9.svg"
                 alt=""
               />
               <img
                 class="dark-image-block"
-                src="/images/icons/layouts/layout-5-dark.svg"
+                src="/images/icons/layouts/layout-9-dark.svg"
                 alt=""
               />
-              <h3>Sidebar Labels</h3>
+              <h3>Colored Dropdown</h3>
               <p>The good old default sidebar</p>
               <div class="indicator">
                 <i class="iconify" data-icon="feather:check"></i>
@@ -145,44 +145,20 @@ const standardOpen = ref(false)
             <a
               href="#"
               class="layout-item"
-              :class="[adminLayoutId === 'sidebar-labels-hover' && 'is-active']"
-              @click="setLayout('sidebar-labels-hover')"
+              :class="[webappLayoutId === 'webapp-v6' && 'is-active']"
+              @click="setLayout('webapp-v6')"
             >
               <img
                 class="light-image-block"
-                src="/images/icons/layouts/layout-5.svg"
+                src="/images/icons/layouts/layout-7.svg"
                 alt=""
               />
               <img
                 class="dark-image-block"
-                src="/images/icons/layouts/layout-5-dark.svg"
+                src="/images/icons/layouts/layout-7-dark.svg"
                 alt=""
               />
-              <h3>Hover Labels</h3>
-              <p>The good old default sidebar</p>
-              <div class="indicator">
-                <i class="iconify" data-icon="feather:check"></i>
-              </div>
-            </a>
-          </div>
-          <div class="column is-6">
-            <a
-              href="#"
-              class="layout-item"
-              :class="[adminLayoutId === 'sidebar-float' && 'is-active']"
-              @click="setLayout('sidebar-float')"
-            >
-              <img
-                class="light-image-block"
-                src="/images/icons/layouts/layout-6.svg"
-                alt=""
-              />
-              <img
-                class="dark-image-block"
-                src="/images/icons/layouts/layout-6-dark.svg"
-                alt=""
-              />
-              <h3>Floating Sidebar</h3>
+              <h3>Clean Navbar</h3>
               <p>The good old default sidebar</p>
               <div class="indicator">
                 <i class="iconify" data-icon="feather:check"></i>
@@ -192,5 +168,5 @@ const standardOpen = ref(false)
         </div>
       </template>
     </V-Modal>
-  </li>
+  </div>
 </template>

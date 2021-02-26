@@ -58,13 +58,6 @@ watch(
           <div class="centered-drop">
             <NavbarComponentsDropdown />
           </div>
-          <div class="centered-button">
-            <RouterLink :to="{ name: 'messaging-v2' }" class="button">
-              <span class="icon is-small">
-                <i class="iconify" data-icon="feather:message-circle"></i>
-              </span>
-            </RouterLink>
-          </div>
           <div class="centered-button centered-link-search">
             <button class="button">
               <span class="icon is-small">
@@ -94,7 +87,7 @@ watch(
       </div>
       <div class="right">
         <Toolbar />
-        <WebappLayoutDropdown />
+        <WebappLayoutSwitcher />
 
         <div
           ref="dropdownElement"

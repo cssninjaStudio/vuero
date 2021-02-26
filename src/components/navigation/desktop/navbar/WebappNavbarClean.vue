@@ -35,50 +35,32 @@ watch(
 </script>
 
 <template>
-  <div :class="[isScrolling && 'is-scrolled']" class="webapp-navbar is-colored">
+  <div class="webapp-navbar-clean">
     <div class="webapp-navbar-inner">
       <div class="left">
         <RouterLink :to="{ name: 'index' }" class="brand">
-          <AnimatedLogo light width="38px" height="38px" />
+          <AnimatedLogo width="38px" height="38px" />
         </RouterLink>
         <div class="separator"></div>
         <ProjectsQuickDropdown />
-        <h1 id="webapp-page-title" class="title is-5">Welcome</h1>
+        <h1 id="webapp-page-title" class="title is-6">Welcome</h1>
       </div>
       <div class="center">
-        <div id="webapp-navbar-menu" class="centered-drops">
-          <div class="centered-drop">
-            <NavbarDashboardsDropdown />
-          </div>
-          <div class="centered-drop">
-            <NavbarLayoutsDropdown />
-          </div>
-          <div class="centered-drop">
-            <NavbarElementsDropdown />
-          </div>
-          <div class="centered-drop">
-            <NavbarComponentsDropdown />
-          </div>
-          <div class="centered-button centered-link-search">
-            <button class="button">
-              <span class="icon is-small">
-                <i class="iconify" data-icon="feather:search"></i>
-              </span>
-            </button>
-          </div>
-        </div>
-        <div id="webapp-navbar-search" class="centered-search is-hidden">
+        <div id="webapp-navbar-search" class="centered-search">
           <div class="field">
             <div class="control has-icon">
               <input
                 type="text"
-                class="input is-rounded search-input"
+                class="input search-input"
                 placeholder="Search records..."
               />
               <div class="form-icon">
                 <i class="iconify" data-icon="feather:search"></i>
               </div>
-              <div id="webapp-navbar-search-close" class="form-icon is-right">
+              <div
+                id="webapp-navbar-search-empty"
+                class="form-icon is-right is-hidden"
+              >
                 <i class="iconify" data-icon="feather:x"></i>
               </div>
               <div class="search-results has-slimscroll"></div>
@@ -89,7 +71,6 @@ watch(
       <div class="right">
         <Toolbar />
         <WebappLayoutSwitcher />
-
         <div
           ref="dropdownElement"
           :class="[isOpen && 'is-active']"
@@ -192,12 +173,112 @@ watch(
         </div>
       </div>
     </div>
+    <div class="webapp-navbar-lower is-between">
+      <div class="left">
+        <div class="buttons">
+          <a class="button">Dashboard</a>
+          <a class="button">Projects</a>
+          <a class="button">Team</a>
+          <a class="button">Reports</a>
+          <a class="button">Settings</a>
+        </div>
+      </div>
+      <div class="right">
+        <div class="avatar-stack">
+          <div class="v-avatar is-small">
+            <img
+              class="avatar"
+              src="https://via.placeholder.com/150x150"
+              data-demo-src="assets/img/avatars/photos/7.jpg"
+              alt=""
+            />
+          </div>
+          <div class="v-avatar is-small">
+            <img
+              class="avatar"
+              src="https://via.placeholder.com/150x150"
+              data-demo-src="assets/img/avatars/photos/8.jpg"
+              alt=""
+            />
+          </div>
+          <div class="v-avatar is-small">
+            <img
+              class="avatar"
+              src="https://via.placeholder.com/150x150"
+              data-demo-src="assets/img/avatars/photos/5.jpg"
+              alt=""
+            />
+          </div>
+          <div class="v-avatar is-small">
+            <span class="avatar is-more">
+              <span class="inner">
+                <span>+2</span>
+              </span>
+            </span>
+          </div>
+        </div>
+        <div class="dropdown is-modern is-spaced is-right dropdown-trigger">
+          <div
+            class="is-trigger"
+            aria-haspopup="true"
+            aria-controls="dropdown-menu"
+          >
+            <button class="button is-circle is-dark-outlined no-padding">
+              <span class="icon is-small">
+                <i class="iconify" data-icon="feather:plus"></i>
+              </span>
+            </button>
+          </div>
+          <div class="dropdown-menu" role="menu">
+            <div class="dropdown-content">
+              <a href="#" class="dropdown-item is-media">
+                <div class="icon">
+                  <i class="lnil lnil-analytics-alt-1"></i>
+                </div>
+                <div class="meta">
+                  <span>New Dashboard</span>
+                  <span>Add a new dashboard</span>
+                </div>
+              </a>
+              <a href="#" class="dropdown-item is-media">
+                <div class="icon">
+                  <i class="lnil lnil-users-alt"></i>
+                </div>
+                <div class="meta">
+                  <span>Invite</span>
+                  <span>Invite new members</span>
+                </div>
+              </a>
+              <a href="#" class="dropdown-item is-media">
+                <div class="icon">
+                  <i class="lnil lnil-briefcase"></i>
+                </div>
+                <div class="meta">
+                  <span>New Project</span>
+                  <span>Add a new project</span>
+                </div>
+              </a>
+              <hr class="dropdown-divider" />
+              <a href="#" class="dropdown-item is-media">
+                <div class="icon">
+                  <i class="lnil lnil-cog"></i>
+                </div>
+                <div class="meta">
+                  <span>Settings</span>
+                  <span>Manage team settings</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <style lang="scss">
 @import '../../../../assets/scss/abstracts/_variables.scss';
 @import '../../../../assets/scss/abstracts/_mixins.scss';
-@import '../../../../assets/scss/layout/_navbar.scss';
+@import '../../../../assets/scss/layout/_navbar-extension.scss';
 @import '../../../../assets/scss/layout/_responsive.scss';
 </style>

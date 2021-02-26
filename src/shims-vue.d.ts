@@ -4,6 +4,12 @@ declare module '*.md' {
   export default component
 }
 
+declare module '*.vue' {
+  import { DefineComponent } from 'vue'
+  const component: DefineComponent<{}, {}, any>
+  export default component
+}
+
 declare module 'vue3-apexcharts'
 declare module 'simplebar-vue'
 declare module '@vueform/multiselect'

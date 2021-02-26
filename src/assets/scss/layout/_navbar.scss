@@ -125,6 +125,10 @@
                 .button {
                   background: $landing-dark-2;
                   color: $light-text;
+
+                  .caret {
+                    margin-left: 0;
+                  }
                 }
               }
             }
@@ -172,8 +176,8 @@
         .toolbar {
           .toolbar-link {
             &:hover {
-              background: darken($primary, 10%);
-              border-color: darken($primary, 6%);
+              background: darken($landing-dark-2, 12%);
+              border-color: darken($landing-dark-2, 12%);
             }
 
             > svg {
@@ -184,14 +188,27 @@
           .dropdown {
             &:hover {
               .is-trigger {
-                background: darken($primary, 10%);
-                border-color: darken($primary, 6%);
+                background: darken($landing-dark-2, 12%);
+                border-color: darken($landing-dark-2, 12%);
               }
             }
 
             .is-trigger svg {
               color: $smoke-white;
             }
+          }
+        }
+
+        .icon-link {
+          background: $landing-dark-2;
+
+          &:hover {
+            background: darken($landing-dark-2, 12%);
+          }
+
+          > svg {
+            color: $smoke-white;
+            stroke: $smoke-white;
           }
         }
       }
@@ -368,7 +385,7 @@
 
         .centered-drop,
         .centered-button {
-          flex: 1 1 0;
+          //flex: 1 1 0;
           text-align: center;
           padding: 10px 0;
           border-radius: 8px;
@@ -666,11 +683,15 @@
             }
 
             .is-trigger {
+              padding-right: 0 !important;
+
               .button {
                 font-family: $font-alt;
                 font-size: 0.9rem;
                 color: $dark-text;
                 min-height: 40px;
+                padding-left: 0.75rem !important;
+                padding-right: 0.75rem !important;
                 border-color: transparent;
                 transition: all 0.3s;
               }
@@ -719,6 +740,33 @@
           .dropdown-menu {
             margin-top: 28px;
           }
+        }
+      }
+
+      .icon-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 34px;
+        width: 34px;
+        border-radius: $radius-rounded;
+        margin: 0 4px;
+        transition: all 0.3s;
+
+        &:hover {
+          background: $white;
+          border-color: $fade-grey;
+          box-shadow: $light-box-shadow;
+        }
+
+        svg {
+          height: 18px;
+          width: 18px;
+          stroke-width: 1.6px;
+          color: $light-text;
+          transition: stroke 0.3s;
+          vertical-align: 0;
+          transform: none;
         }
       }
 
@@ -833,10 +881,6 @@
       .center {
         .centered-links {
           .centered-link {
-            &:hover {
-              background: lighten($dark-sidebar, 3%);
-            }
-
             &.is-active {
               background: lighten($dark-sidebar, 2%);
               border-color: lighten($dark-sidebar, 12%);
@@ -861,6 +905,8 @@
             > .dropdown {
               &:hover {
                 .is-trigger {
+                  background: transparent !important;
+
                   .button {
                     background: lighten($dark-sidebar, 2%);
                     border-color: lighten($dark-sidebar, 2%);
@@ -978,20 +1024,22 @@
             }
           }
         }
+
+        .icon-link {
+          background: darken($dark-sidebar, 2%);
+
+          &:hover {
+            background: lighten($dark-sidebar, 2%);
+          }
+        }
       }
     }
   }
 
   .webapp-navbar {
     &.is-colored {
-      //background: darken($accent, 2%);
-
       .webapp-navbar-inner {
         .left {
-          .separator {
-            //border-color: lighten($accent, 3%);
-          }
-
           .title {
             color: $smoke-white !important;
           }
@@ -1013,13 +1061,6 @@
               }
 
               &.is-active {
-                //background: darken($accent, 8%);
-                //border-color: darken($accent, 2%);
-
-                &:hover {
-                  //background: darken($accent, 8%);
-                }
-
                 svg {
                   color: $smoke-white;
                 }
@@ -1027,14 +1068,6 @@
                 span {
                   color: $smoke-white;
                 }
-              }
-
-              svg {
-                //color: lighten($accent, 12%);
-              }
-
-              span {
-                //color: lighten($accent, 12%);
               }
             }
           }
@@ -1045,8 +1078,6 @@
                 &:hover {
                   .is-trigger {
                     .button {
-                      //background: darken($accent, 8%);
-                      //border-color: darken($accent, 4%);
                       color: $smoke-white;
                     }
                   }
@@ -1055,8 +1086,6 @@
                 &.is-active {
                   .is-trigger {
                     .button {
-                      //background: darken($accent, 8%);
-                      //border-color: darken($accent, 6%);
                       color: $smoke-white;
                     }
                   }
@@ -1114,29 +1143,12 @@
                     }
                   }
                 }
-
-                .is-trigger {
-                  .button {
-                    //background: darken($accent, 2%);
-                    //border-color: darken($accent, 2%);
-                    //color: lighten($accent, 22%);
-
-                    svg {
-                      //color: lighten($accent, 24%);
-                    }
-                  }
-                }
               }
             }
 
             .centered-button {
               .button {
-                //background: darken($accent, 2%) !important;
-                //border-color: darken($accent, 2%) !important;
-                //color: lighten($accent, 22%) !important;
-
                 &:hover {
-                  //background: darken($accent, 8%) !important;
                   color: $smoke-white !important;
                 }
               }
@@ -1147,21 +1159,11 @@
             .field {
               .control {
                 .input {
-                  //background: darken($accent, 10%);
-                  //border-color: darken($accent, 6%);
                   color: $smoke-white;
-
-                  &::placeholder {
-                    //color: lighten($accent, 4%) !important;
-                  }
 
                   &:focus ~ .form-icon svg {
                     color: $smoke-white !important;
                   }
-                }
-
-                .form-icon svg {
-                  //color: lighten($accent, 6%);
                 }
               }
             }
@@ -1172,8 +1174,8 @@
           .toolbar {
             .toolbar-link {
               &:hover {
-                //background: darken($accent, 10%) !important;
-                //border-color: darken($accent, 6%) !important;
+                background: darken($landing-dark-2, 12%) !important;
+                border-color: darken($landing-dark-2, 12%) !important;
               }
 
               > svg {
@@ -1182,16 +1184,15 @@
             }
 
             .dropdown {
-              &:hover,
-              &.is-active {
-                .is-trigger {
-                  //background: darken($accent, 10%) !important;
-                  //border-color: darken($accent, 6%) !important;
+              .is-trigger {
+                &:hover {
+                  background: darken($landing-dark-2, 12%) !important;
+                  border-color: darken($landing-dark-2, 12%) !important;
                 }
-              }
 
-              .is-trigger svg {
-                color: $smoke-white;
+                svg {
+                  color: $smoke-white;
+                }
               }
             }
           }
@@ -1200,10 +1201,9 @@
             .dropdown-menu {
               .dropdown-content {
                 .dropdown-head {
-                  background: lighten($dark-sidebar, 2%) !important;
-
                   &:hover {
-                    background: lighten($dark-sidebar, 2%) !important;
+                    background: darken($landing-dark-2, 12%);
+                    border-color: darken($landing-dark-2, 12%);
                   }
 
                   .meta {

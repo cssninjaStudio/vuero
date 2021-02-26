@@ -123,7 +123,7 @@ watch(
       </div>
       <div class="right">
         <Toolbar />
-        <WebappLayoutDropdown />
+        <WebappLayoutSwitcher />
 
         <div
           ref="dropdownElement"

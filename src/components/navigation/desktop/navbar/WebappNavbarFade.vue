@@ -90,10 +90,6 @@ watch(
             <i class="iconify" data-icon="feather:cpu"></i>
             <span>Components</span>
           </a>
-          <RouterLink :to="{ name: 'messaging-v2' }" class="centered-link">
-            <i class="iconify" data-icon="feather:message-circle"></i>
-            <span>Chat</span>
-          </RouterLink>
           <a
             class="centered-link centered-link-search"
             @click="toggleSubnav('search')"
@@ -125,7 +121,7 @@ watch(
       </div>
       <div class="right">
         <Toolbar />
-        <WebappLayoutDropdown />
+        <WebappLayoutSwitcher />
 
         <div
           ref="dropdownElement"

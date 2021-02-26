@@ -1,0 +1,490 @@
+/*! _navbar-extension.scss | Huro | Css ninja 2020-2021 */
+
+/*
+    1. Webapp navbar Clean
+    2. Webapp navbar Clean Dark mode
+*/
+
+/* ==========================================================================
+1. Webapp navbar Clean
+========================================================================== */
+
+.webapp-navbar-clean {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: $white;
+  z-index: 15;
+  transition: all 0.3s;
+
+  &.is-transparent {
+    background: transparent;
+    box-shadow: none;
+    border-bottom-color: transparent;
+
+    &.is-solid,
+    &.is-scrolled {
+      background: $white;
+      border-bottom-color: $fade-grey;
+    }
+
+    &.is-solid {
+      box-shadow: none !important;
+    }
+
+    &.is-scrolled {
+      box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.12);
+    }
+
+    &:not(.is-scrolled) {
+      .webapp-navbar-lower {
+        &.is-between,
+        &.is-centered {
+          .left,
+          .center {
+            .button:not(:hover) {
+              background: transparent;
+              border-color: transparent;
+            }
+
+            .button:hover {
+              background: $white;
+              border-color: $white;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .webapp-navbar-inner {
+    display: flex;
+    height: 50px;
+    padding: 0 20px;
+
+    .left {
+      display: flex;
+      align-items: center;
+      width: 25%;
+
+      .brand {
+        display: flex;
+        align-items: center;
+
+        img {
+          display: block;
+          min-width: 38px;
+          height: 38px;
+        }
+
+        span {
+          font-family: $font;
+          font-size: 0.95rem;
+          color: $muted-grey;
+          letter-spacing: 1px;
+          max-width: 50px;
+          line-height: 1.2;
+          margin-left: 8px;
+        }
+      }
+
+      .separator {
+        height: 38px;
+        width: 2px;
+        border-right: 1px solid darken($fade-grey, 4%);
+        margin: 0 20px 0 16px;
+      }
+
+      .project-dropdown {
+        margin-right: 12px;
+        cursor: pointer !important;
+
+        > img {
+          height: 32px;
+          width: 32px;
+          border-radius: 50%;
+        }
+
+        .dropdown-menu {
+          margin-top: 28px;
+
+          .dropdown-content {
+            padding-top: 0;
+            padding-bottom: 0;
+            overflow: hidden;
+
+            .dropdown-block {
+              display: flex;
+              align-items: center;
+              padding: 16px;
+
+              &:hover {
+                background: lighten($fade-grey, 4%);
+              }
+
+              .meta {
+                margin-left: 12px;
+                font-family: $font;
+
+                span {
+                  display: block;
+
+                  &:first-child {
+                    font-size: 0.95rem;
+                    font-weight: 500;
+                    color: $dark-text;
+                    line-height: 1.2;
+                    max-width: 140px;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                  }
+
+                  &:nth-child(2) {
+                    //text-transform: uppercase;
+                    color: $light-text;
+                    font-size: 0.85rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .center {
+      display: flex;
+      align-items: center;
+      flex-grow: 2;
+
+      .centered-search {
+        width: 100%;
+
+        .field {
+          margin-bottom: 0;
+
+          .control {
+            .input {
+              border-radius: 0.5rem;
+            }
+
+            .form-icon {
+              &.is-right {
+                left: unset !important;
+                right: 6px;
+                cursor: pointer;
+              }
+            }
+
+            .search-results {
+              top: 48px;
+            }
+          }
+        }
+      }
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      width: 25%;
+      margin-left: auto;
+
+      .toolbar {
+        .dropdown {
+          .dropdown-menu {
+            margin-top: 28px;
+          }
+        }
+      }
+
+      .icon-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 34px;
+        width: 34px;
+        border-radius: $radius-rounded;
+        margin: 0 4px;
+        transition: all 0.3s;
+
+        &:hover {
+          background: $white;
+          border-color: $fade-grey;
+          box-shadow: $light-box-shadow;
+        }
+
+        svg {
+          height: 18px;
+          width: 18px;
+          stroke-width: 1.6px;
+          color: $light-text;
+          transition: stroke 0.3s;
+          vertical-align: 0;
+          transform: none;
+        }
+      }
+
+      .profile-dropdown {
+        > img {
+          height: 32px;
+          width: 32px;
+          border-radius: 50%;
+          margin: 0 4px;
+          cursor: pointer;
+        }
+
+        .dropdown-menu {
+          margin-top: 12px;
+
+          .dropdown-content {
+            padding-top: 0;
+            overflow: hidden;
+
+            .dropdown-head {
+              display: flex;
+              align-items: center;
+              padding: 20px 16px 20px 16px;
+              margin-bottom: 12px;
+              background: #fafafa;
+
+              .meta {
+                margin-left: 12px;
+                font-family: $font;
+
+                span {
+                  display: block;
+
+                  &:first-child {
+                    font-size: 1.1rem;
+                    font-weight: 500;
+                    color: $dark-text;
+                    line-height: 1.2;
+                  }
+
+                  &:nth-child(2) {
+                    text-transform: uppercase;
+                    color: $light-text;
+                    font-size: 0.7rem;
+                  }
+                }
+              }
+            }
+
+            .logout-button {
+              svg {
+                stroke: $smoke-white !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .webapp-navbar-lower {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding: 0 20px;
+
+    &.is-between,
+    &.is-centered {
+      justify-content: space-between;
+
+      .left,
+      .center {
+        display: flex;
+        align-items: center;
+
+        .button {
+          font-size: 0.9rem;
+          font-weight: 500;
+          border-radius: 0.5rem;
+          border: none;
+          color: $light-text;
+
+          &:hover {
+            background: darken($widget-grey, 2%);
+            color: $dark-text;
+          }
+        }
+
+        .welcome-text {
+          font-size: 0.9rem;
+          font-weight: 500;
+          font-family: $font;
+          color: $light-text;
+        }
+      }
+
+      .right {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        .avatar-stack {
+          margin-right: 1rem;
+        }
+
+        .dropdown {
+          .button {
+            &.is-circle {
+              min-width: 35px;
+            }
+          }
+        }
+      }
+    }
+
+    &.is-centered {
+      .left,
+      .right {
+        width: 25%;
+      }
+
+      .center {
+        justify-content: center;
+        flex-grow: 2;
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+2. Webapp navbar Clean Dark mode
+========================================================================== */
+
+.is-dark {
+  .webapp-navbar-clean {
+    &:not(.is-colored) {
+      background: darken($dark-sidebar, 2%);
+      border-color: lighten($dark-sidebar, 1%);
+
+      &.is-transparent {
+        background: transparent;
+        box-shadow: none;
+        border-bottom-color: transparent;
+
+        &.is-solid,
+        &.is-scrolled {
+          background: darken($dark-sidebar, 2%);
+          border-color: lighten($dark-sidebar, 1%);
+        }
+
+        &:not(.is-scrolled) {
+          .webapp-navbar-lower {
+            &.is-between,
+            &.is-centered {
+              .left,
+              .center {
+                .button:not(:hover) {
+                  background: transparent !important;
+                  border-color: transparent !important;
+                }
+
+                .button:hover {
+                  background: darken($dark-sidebar, 2%) !important;
+                  border-color: darken($dark-sidebar, 2%) !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .webapp-navbar-inner {
+      .left {
+        .separator {
+          border-color: lighten($dark-sidebar, 12%);
+        }
+
+        .project-dropdown {
+          .dropdown-menu {
+            .dropdown-content {
+              .dropdown-block {
+                background: lighten($dark-sidebar, 2%) !important;
+
+                &:hover {
+                  background: lighten($dark-sidebar, 5%) !important;
+                }
+
+                .meta {
+                  span {
+                    &:first-child {
+                      color: $dark-dark-text !important;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .right {
+        .icon-link {
+          background: $landing-dark-2;
+
+          &:hover {
+            background: darken($landing-dark-2, 12%);
+          }
+
+          > svg {
+            color: $smoke-white;
+            stroke: $smoke-white;
+          }
+        }
+
+        .profile-dropdown {
+          .dropdown-menu {
+            .dropdown-content {
+              .dropdown-head {
+                background: lighten($dark-sidebar, 2%) !important;
+
+                &:hover {
+                  background: lighten($dark-sidebar, 2%) !important;
+                }
+
+                .meta {
+                  &:hover {
+                    background: lighten($dark-sidebar, 2%) !important;
+                  }
+
+                  span {
+                    &:first-child {
+                      color: $dark-dark-text !important;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .webapp-navbar-lower {
+      &.is-between,
+      &.is-centered {
+        .left,
+        .center {
+          .button {
+            background: darken($dark-sidebar, 2%) !important;
+            border-color: darken($dark-sidebar, 2%) !important;
+
+            &:hover {
+              background: lighten($dark-sidebar, 4%) !important;
+              border-color: lighten($dark-sidebar, 4%) !important;
+              color: $white !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

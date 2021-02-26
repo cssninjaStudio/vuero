@@ -54,7 +54,8 @@
         li {
           a {
             &:hover,
-            &.is-active {
+            &.is-active,
+            &.router-link-active {
               .sidebar-svg {
                 color: $smoke-white;
               }
@@ -71,6 +72,122 @@
             border-color: $primary;
           }
         }
+      }
+    }
+  }
+
+  &.has-labels {
+    &.has-hover-labels {
+      .sidebar-inner {
+        .icon-menu,
+        .bottom-menu {
+          li {
+            &:hover {
+              a {
+                &::after {
+                  opacity: 1;
+                }
+              }
+            }
+
+            a {
+              &.is-active,
+              &.router-link-active {
+                &::after {
+                  opacity: 1 !important;
+                }
+              }
+
+              &::after {
+                opacity: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .sidebar-inner {
+      .icon-menu,
+      .bottom-menu {
+        li {
+          a {
+            &::after {
+              content: attr(data-content);
+              position: absolute;
+              bottom: -8px;
+              left: -29px;
+              right: 0;
+              margin: 0 auto;
+              font-family: $font;
+              font-size: 0.5rem;
+              font-weight: 500;
+              color: $light-text;
+              text-transform: uppercase;
+              text-align: center;
+              width: 80px;
+              transition: opacity 0.3s;
+            }
+
+            svg {
+              position: relative;
+              top: -4px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.is-float {
+    border-radius: 1000px;
+    overflow: hidden;
+    width: 74px;
+    margin-left: 6px;
+    top: 6px;
+    height: calc(100vh - 12px);
+    border: none !important;
+    transition: all 0.3s;
+
+    &:not(.is-bordered) {
+      box-shadow: $light-box-shadow;
+    }
+
+    &.is-bordered {
+      width: 80px;
+      margin-left: 0;
+      top: 0;
+      height: 100vh;
+      border-radius: 0;
+
+      .sidebar-brand {
+        width: 80px;
+      }
+
+      .sidebar-inner {
+        .icon-menu,
+        .bottom-menu {
+          li {
+            width: 80px;
+          }
+        }
+      }
+    }
+
+    .sidebar-brand {
+      width: 74px;
+    }
+
+    .sidebar-inner {
+      .icon-menu,
+      .bottom-menu {
+        li {
+          width: 74px;
+        }
+      }
+
+      .bottom-menu {
+        padding-bottom: 4px;
       }
     }
   }
