@@ -287,6 +287,18 @@ export const popovers = {
     position: 'Product Manager',
     bio: 'This is a nice user description that we can use as demo content.',
   },
+  user33: {
+    id: 33,
+    avatar: '/images/avatars/photos/33.jpg',
+    badge: '/images/icons/flags/united-states-of-america.svg',
+    username: 'Harvey M.',
+    fullName: 'Harvey Miller',
+    initials: 'HM',
+    color: 'success',
+    location: 'Los Angeles, CA',
+    position: 'Web Developer',
+    bio: 'This is a nice user description that we can use as demo content.',
+  },
   user34: {
     id: 34,
     avatar: '/images/avatars/photos/34.jpg',

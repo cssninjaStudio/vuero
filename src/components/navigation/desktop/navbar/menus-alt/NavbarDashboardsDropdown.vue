@@ -259,6 +259,17 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
                       <span>HR Board</span>
                     </div>
                   </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'webapp-dashboards-course' }"
+                    class="dropdown-item is-media"
+                  >
+                    <div class="icon">
+                      <i class="lnil lnil-graduate"></i>
+                    </div>
+                    <div class="meta">
+                      <span>Course Board</span>
+                    </div>
+                  </RouterLink>
                 </div>
               </div>
             </div>

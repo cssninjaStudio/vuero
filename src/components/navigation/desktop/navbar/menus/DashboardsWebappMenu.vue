@@ -160,6 +160,13 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
+                    <RouterLink :to="{ name: 'webapp-dashboards-course' }">
+                      <i class="lnil lnil-graduate"></i>
+                      <span>Course Board</span>
+                      <i class="iconify" data-icon="feather:circle"></i>
+                    </RouterLink>
+                  </li>
+                  <li>
                     <RouterLink :to="{ name: 'webapp-dashboards-ecommerce-1' }">
                       <i class="lnil lnil-cart"></i>
                       <span>Ecommerce V1</span>

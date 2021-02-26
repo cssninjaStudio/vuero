@@ -153,6 +153,15 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
                 <span>HR Board</span>
               </RouterLink>
             </li>
+            <li>
+              <RouterLink
+                :to="{ name: 'admin-dashboards-course' }"
+                class="is-submenu"
+              >
+                <i class="lnil lnil-graduate"></i>
+                <span>Course Dashboard</span>
+              </RouterLink>
+            </li>
           </ul>
         </li>
         <li v-has-children class="has-children">
