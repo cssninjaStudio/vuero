@@ -367,11 +367,11 @@ useHead({
                 </p>
               </div>
               <div class="flex-cell">
-                <img src="/images/icons/stacks/nginx.svg" alt="" />
-                <h3>Nginx</h3>
+                <img src="/images/icons/stacks/robot.png" alt="" />
+                <h3>Robot Friendly</h3>
                 <p>
-                  Vuero is configured with Nginx, which is fully compatible with
-                  SSR, Rails and Laravel.
+                  Fully featured with structured data. Help your site display in
+                  richer features in search results.
                 </p>
               </div>
               <div class="flex-cell">
