@@ -1150,4 +1150,174 @@ onUnmounted(() => {
 .username-form {
   padding-top: 80px;
 }
+
+.is-dark {
+  .signup-wrapper {
+    background: lighten($dark-sidebar, 10%);
+  }
+
+  .signup-steps {
+    .steps-container {
+      .progress {
+        &::-webkit-progress-value {
+          background: $accent;
+        }
+
+        &::-moz-progress-bar {
+          background: $accent;
+        }
+
+        &::-ms-fill {
+          background: $accent;
+        }
+      }
+
+      .step-icon {
+        background: lighten($dark-sidebar, 7%);
+
+        &.is-active {
+          background: lighten($dark-sidebar, 16%);
+
+          .inner {
+            background: $accent;
+
+            svg {
+              stroke: $white;
+            }
+          }
+
+          .step-label {
+            color: $accent;
+            opacity: 1;
+          }
+        }
+
+        .inner {
+          background: lighten($dark-sidebar, 9%);
+          border-color: lighten($dark-sidebar, 9%);
+        }
+
+        .step-label {
+          color: $dark-dark-text;
+          opacity: 0.6;
+        }
+      }
+    }
+  }
+
+  .hero {
+    .signup-form {
+      .control {
+        .auth-label {
+          color: $light-text;
+        }
+
+        .input {
+          &:focus {
+            background: darken($dark-sidebar, 4%);
+            border-color: lighten($dark-sidebar, 12%);
+
+            ~ .auth-label,
+            ~ .auth-icon i {
+              color: $accent;
+            }
+          }
+        }
+      }
+
+      .signup-type {
+        .box-wrap {
+          input {
+            &:checked + .signup-box {
+              border-color: $accent;
+
+              i {
+                color: $accent;
+              }
+
+              .meta {
+                span:first-child {
+                  color: $accent;
+                }
+              }
+            }
+          }
+
+          .signup-box {
+            background-color: lighten($dark-sidebar, 2%);
+            border-color: lighten($dark-sidebar, 4%);
+
+            .meta {
+              span:first-child {
+                color: $dark-dark-text;
+              }
+            }
+          }
+        }
+      }
+
+      .button-wrap {
+        &.has-help {
+          > span {
+            color: $light-text;
+
+            a {
+              color: $accent;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .signup-profile-wrapper {
+    .picture-selector {
+      .image-container {
+        img {
+          border-color: lighten($dark-sidebar, 10%);
+        }
+
+        .upload-button {
+          background-color: lighten($dark-sidebar, 2%);
+          border-color: lighten($dark-sidebar, 10%);
+
+          svg {
+            stroke: $light-text;
+          }
+        }
+      }
+    }
+  }
+
+  .divider-container {
+    .divider {
+      span {
+        &::before,
+        &::after {
+          border-color: lighten($dark-sidebar, 18%);
+        }
+      }
+    }
+  }
+
+  .avatar-carousel {
+    .slick-slide {
+      &.slick-current {
+        img {
+          border-color: $accent;
+        }
+      }
+    }
+
+    .slick-custom {
+      background-color: lighten($dark-sidebar, 2%);
+      border-color: lighten($dark-sidebar, 10%);
+
+      &::before,
+      &::after {
+        color: $light-text;
+      }
+    }
+  }
+}
 </style>

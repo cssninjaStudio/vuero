@@ -69,7 +69,7 @@ body {
 
 .view-wrapper {
   &.has-top-nav {
-    padding-top: 80px;
+    //padding-top: 80px;
     margin-left: 0 !important;
     width: 100% !important;
 
@@ -92,8 +92,16 @@ body {
       }
     }
 
+    .page-title {
+      display: none;
+    }
+
     .has-webapp-spacing {
       margin-top: 30px;
+    }
+
+    .is-webapp-md {
+      margin-top: 90px;
     }
   }
 }
@@ -588,6 +596,18 @@ body {
 ========================================================================== */
 
 @media (max-width: 767px) {
+  .view-wrapper {
+    &.has-top-nav {
+      .is-webapp-md {
+        margin-top: 0;
+      }
+
+      .page-title {
+        display: flex !important;
+      }
+    }
+  }
+
   .page-title {
     .toolbar {
       .control {
@@ -598,6 +618,18 @@ body {
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .view-wrapper {
+    &.has-top-nav {
+      .is-webapp-md {
+        margin-top: 0;
+      }
+
+      .page-title {
+        display: flex !important;
+      }
+    }
+  }
+
   .page-content-wrapper {
     .page-content {
       padding: 0;

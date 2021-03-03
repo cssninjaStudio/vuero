@@ -254,7 +254,7 @@ useHead({
             <i class="fab fa-twitter"></i>
           </div>
           <div class="username">
-            <span>&commat;cssninjaStudio</span>
+            <span class="dark-inverted">&commat;cssninjaStudio</span>
           </div>
           <a class="action-link">View on Twitter</a>
         </div>
@@ -567,6 +567,66 @@ useHead({
     }
   }
 }
+
+.is-dark {
+  .status-page-wrapper {
+    .status-block {
+      background: lighten($dark-sidebar, 6%);
+      border-color: lighten($dark-sidebar, 12%);
+
+      .status-uptime {
+        border-color: lighten($dark-sidebar, 12%);
+      }
+
+      .status-list {
+        hr {
+          background-color: lighten($dark-sidebar, 12%);
+          height: 1px;
+        }
+
+        .list-block {
+          .progress-wrap {
+            .progress-wrap-inner {
+              .amount {
+                background: lighten($dark-sidebar, 2%);
+                border-color: lighten($dark-sidebar, 12%);
+
+                span {
+                  color: $dark-dark-text;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .tweets-header {
+        border-color: lighten($dark-sidebar, 12%);
+      }
+
+      .status-tweets {
+        .updates {
+          .update {
+            .update-content {
+              .tweet {
+                color: $dark-dark-text;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .status-footer {
+      a {
+        &:hover {
+          color: $accent;
+        }
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .status-page-wrapper {
     padding-top: 20px;

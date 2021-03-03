@@ -1446,14 +1446,8 @@
           }
 
           .column {
-            padding-top: 0;
-            padding-bottom: 0;
-            padding-left: 1.5rem;
-            padding-right: 1.5rem;
-            height: 100%;
-
             &:not(:last-child) {
-              border-right: 1px solid darken($fade-grey, 3%);
+              border-right: 1px solid lighten($dark-sidebar, 12%) !important;
             }
           }
 
@@ -1577,6 +1571,11 @@
       .tab-content {
         .tab-content-inner {
           .center {
+            .column {
+              &:not(:last-child) {
+                border-right: 1px solid darken($fade-grey, 3%);
+              }
+            }
             .column-placeholder {
               @include vuero-card--dark();
             }

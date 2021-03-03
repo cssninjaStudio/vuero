@@ -32,7 +32,13 @@ import { profitChartOptions } from '/@src/data/dashboards/personal-v1/profitChar
               <div class="quick-stats-inner">
                 <!--Stat-->
                 <div class="quick-stat">
-                  <V-Block title="2,870" subtitle="Sales this month" center>
+                  <V-Block
+                    title="2,870"
+                    subtitle="Sales this month"
+                    center
+                    m-responsive
+                    t-responsive
+                  >
                     <template #icon>
                       <V-IconBox color="purple" rounded>
                         <i class="lnil lnil-analytics-alt-1"></i>
@@ -43,7 +49,13 @@ import { profitChartOptions } from '/@src/data/dashboards/personal-v1/profitChar
 
                 <!--Stat-->
                 <div class="quick-stat">
-                  <V-Block title="131" subtitle="New users" center>
+                  <V-Block
+                    title="131"
+                    subtitle="New users"
+                    center
+                    m-responsive
+                    t-responsive
+                  >
                     <template #icon>
                       <V-IconBox color="orange" rounded>
                         <i class="lnil lnil-handshake"></i>
@@ -54,7 +66,13 @@ import { profitChartOptions } from '/@src/data/dashboards/personal-v1/profitChar
 
                 <!--Stat-->
                 <div class="quick-stat">
-                  <V-Block title="$398,49" subtitle="Earned today" center>
+                  <V-Block
+                    title="$398,49"
+                    subtitle="Earned today"
+                    center
+                    m-responsive
+                    t-responsive
+                  >
                     <template #icon>
                       <V-IconBox color="green" rounded>
                         <i class="lnil lnil-diamond-alt"></i>
@@ -65,7 +83,13 @@ import { profitChartOptions } from '/@src/data/dashboards/personal-v1/profitChar
 
                 <!--Stat-->
                 <div class="quick-stat">
-                  <V-Block title="$6542,31" subtitle="Total balance" center>
+                  <V-Block
+                    title="$6542,31"
+                    subtitle="Total balance"
+                    center
+                    m-responsive
+                    t-responsive
+                  >
                     <template #icon>
                       <V-IconBox color="info" rounded>
                         <i class="lnil lnil-bank"></i>
