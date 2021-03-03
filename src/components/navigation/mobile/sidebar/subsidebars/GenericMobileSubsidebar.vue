@@ -5,7 +5,11 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
 
 <template>
   <div
-    :class="[isMobileSidebarOpen && activeSidebar === 'home' && 'is-active']"
+    :class="[
+      isMobileSidebarOpen &&
+        (activeSidebar === 'home' || activeSidebar === 'none') &&
+        'is-active',
+    ]"
     class="mobile-subsidebar"
   >
     <div class="inner">

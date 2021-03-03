@@ -1,8 +1,7 @@
 <script setup lang="ts">
+import { onMounted } from 'vue'
 import { useHead } from '@vueuse/head'
 import { setLayout } from '/@src/composition/state/adminLayoutState'
-
-setLayout('sidebar-default')
 
 import {
   activeSidebar,
@@ -11,6 +10,10 @@ import {
 
 useHead({
   title: 'Blank Template 1 - Admin - Vuero',
+})
+
+onMounted(() => {
+  setLayout('sidebar-default')
 })
 </script>
 

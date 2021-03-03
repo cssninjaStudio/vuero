@@ -137,7 +137,7 @@ function VitePluginVueroDoc(options: Options = {}): Plugin {
     let result = code.replace('export function render', 'function render')
     result += `\nconst __matter = ${JSON.stringify(frontmatter)};`
     result += '\nconst data = () => ({ frontmatter: __matter });'
-    result += '\nconst __script = { render, data, methods };'
+    result += '\nconst __script = { render, data };'
 
     if (!config?.isProduction)
       result += `\n__script.__hmrId = ${JSON.stringify(path)};`

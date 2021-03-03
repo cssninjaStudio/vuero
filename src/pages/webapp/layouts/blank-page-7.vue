@@ -1,11 +1,14 @@
 <script setup lang="ts">
+import { onMounted } from 'vue'
 import { useHead } from '@vueuse/head'
 import { setLayout } from '/@src/composition/state/webappLayoutState'
 
-setLayout('webapp-v7')
-
 useHead({
   title: 'Blank Page 7 - WebApp - Vuero',
+})
+
+onMounted(() => {
+  setLayout('webapp-v7')
 })
 </script>
 
