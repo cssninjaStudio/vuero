@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 import { useHead } from '@vueuse/head'
 
-import { isDark } from '/@src/composition/state/darkModeState.ts'
+import { isDark } from '/@src/composition/state/darkModeState'
 
 type TabId = 'elements' | 'components' | 'forms' | 'plugins'
 const activeTab = ref<TabId>('elements')

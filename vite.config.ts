@@ -15,16 +15,12 @@ const projectRootDir = path.resolve(__dirname)
 export default defineConfig({
   logLevel: 'info',
   resolve: {
-    alias: {
-      '/@src/': `${path.resolve(projectRootDir, 'src')}/`,
-      /*
-      @TODO: https://github.com/intlify/vite-plugin-vue-i18n/issues/62
+    alias: [
       {
         find: '/@src/',
         replacement: `${path.resolve(projectRootDir, 'src')}/`,
       },
-      */
-    },
+    ],
   },
   plugins: [
     Vue({

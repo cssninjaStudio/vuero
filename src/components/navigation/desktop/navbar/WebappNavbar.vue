@@ -228,7 +228,6 @@ watch(
     </div>
   </div>
 
-  {{ activeSubnav }}
   <div
     :class="[
       !(activeSubnav === 'closed' || activeSubnav === 'search') && 'is-active',
