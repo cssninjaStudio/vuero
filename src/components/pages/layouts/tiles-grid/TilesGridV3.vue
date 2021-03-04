@@ -101,18 +101,10 @@ const optionsSingle = [
                   </p>
                 </div>
                 <div class="tile-meta">
-                  <div class="v-avatar is-small">
-                    <img
-                      class="avatar"
-                      src="/images/avatars/photos/39.jpg"
-                      alt=""
-                      data-user-popover="33"
-                      @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/150x150'
-                      "
-                    />
-                  </div>
+                  <V-Avatar
+                    picture="/images/avatars/photos/39.jpg"
+                    size="small"
+                  />
                   <div class="meta-inner">
                     <span class="dark-inverted" data-filter-match
                       >Alejandro B.</span
@@ -145,18 +137,10 @@ const optionsSingle = [
                   </p>
                 </div>
                 <div class="tile-meta">
-                  <div class="v-avatar is-small">
-                    <img
-                      class="avatar"
-                      src="/images/avatars/photos/15.jpg"
-                      alt=""
-                      data-user-popover="15"
-                      @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/150x150'
-                      "
-                    />
-                  </div>
+                  <V-Avatar
+                    picture="/images/avatars/photos/15.jpg"
+                    size="small"
+                  />
                   <div class="meta-inner">
                     <span class="dark-inverted" data-filter-match
                       >Hilde V.</span
@@ -189,18 +173,10 @@ const optionsSingle = [
                   </p>
                 </div>
                 <div class="tile-meta">
-                  <div class="v-avatar is-small">
-                    <img
-                      class="avatar"
-                      src="/images/avatars/photos/24.jpg"
-                      alt=""
-                      data-user-popover="22"
-                      @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/150x150'
-                      "
-                    />
-                  </div>
+                  <V-Avatar
+                    picture="/images/avatars/photos/24.jpg"
+                    size="small"
+                  />
                   <div class="meta-inner">
                     <span class="dark-inverted" data-filter-match
                       >Sandrine C.</span
@@ -239,18 +215,10 @@ const optionsSingle = [
                       </p>
                     </div>
                     <div class="tile-meta">
-                      <div class="v-avatar is-small">
-                        <img
-                          class="avatar"
-                          src="/images/avatars/photos/27.jpg"
-                          alt=""
-                          data-user-popover="10"
-                          @error.once="
-                            $event.target.src =
-                              'https://via.placeholder.com/150x150'
-                          "
-                        />
-                      </div>
+                      <V-Avatar
+                        picture="/images/avatars/photos/27.jpg"
+                        size="small"
+                      />
                       <div class="meta-inner">
                         <span class="dark-inverted" data-filter-match
                           >Carmen E.</span
@@ -282,18 +250,10 @@ const optionsSingle = [
                       </p>
                     </div>
                     <div class="tile-meta">
-                      <div class="v-avatar is-small">
-                        <img
-                          class="avatar"
-                          src="/images/avatars/photos/10.jpg"
-                          alt=""
-                          data-user-popover="8"
-                          @error.once="
-                            $event.target.src =
-                              'https://via.placeholder.com/150x150'
-                          "
-                        />
-                      </div>
+                      <V-Avatar
+                        picture="/images/avatars/photos/10.jpg"
+                        size="small"
+                      />
                       <div class="meta-inner">
                         <span class="dark-inverted" data-filter-match
                           >Henry G.</span
@@ -326,18 +286,10 @@ const optionsSingle = [
                       </p>
                     </div>
                     <div class="tile-meta">
-                      <div class="v-avatar is-small">
-                        <img
-                          class="avatar"
-                          src="/images/avatars/photos/22.jpg"
-                          alt=""
-                          data-user-popover="5"
-                          @error.once="
-                            $event.target.src =
-                              'https://via.placeholder.com/150x150'
-                          "
-                        />
-                      </div>
+                      <V-Avatar
+                        picture="/images/avatars/photos/22.jpg"
+                        size="small"
+                      />
                       <div class="meta-inner">
                         <span class="dark-inverted" data-filter-match
                           >Jimmy H.</span
@@ -375,18 +327,10 @@ const optionsSingle = [
                     </p>
                   </div>
                   <div class="tile-meta">
-                    <div class="v-avatar is-small">
-                      <img
-                        class="avatar"
-                        src="/images/avatars/photos/16.jpg"
-                        alt=""
-                        data-user-popover="16"
-                        @error.once="
-                          $event.target.src =
-                            'https://via.placeholder.com/150x150'
-                        "
-                      />
-                    </div>
+                    <V-Avatar
+                      picture="/images/avatars/photos/16.jpg"
+                      size="small"
+                    />
                     <div class="meta-inner">
                       <span class="dark-inverted" data-filter-match
                         >Jason G.</span
@@ -424,18 +368,10 @@ const optionsSingle = [
                   </p>
                 </div>
                 <div class="tile-meta">
-                  <div class="v-avatar is-small">
-                    <img
-                      class="avatar"
-                      src="/images/avatars/photos/26.jpg"
-                      alt=""
-                      data-user-popover="23"
-                      @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/150x150'
-                      "
-                    />
-                  </div>
+                  <V-Avatar
+                    picture="/images/avatars/photos/26.jpg"
+                    size="small"
+                  />
                   <div class="meta-inner">
                     <span class="dark-inverted" data-filter-match
                       >Courtney W.</span
@@ -471,18 +407,10 @@ const optionsSingle = [
                   </p>
                 </div>
                 <div class="tile-meta">
-                  <div class="v-avatar is-small">
-                    <img
-                      class="avatar"
-                      src="/images/avatars/photos/8.jpg"
-                      alt=""
-                      data-user-popover="3"
-                      @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/150x150'
-                      "
-                    />
-                  </div>
+                  <V-Avatar
+                    picture="/images/avatars/photos/8.jpg"
+                    size="small"
+                  />
                   <div class="meta-inner">
                     <span class="dark-inverted" data-filter-match>Erik K.</span>
                     <span>2 days ago</span>
@@ -513,18 +441,10 @@ const optionsSingle = [
                   </p>
                 </div>
                 <div class="tile-meta">
-                  <div class="v-avatar is-small">
-                    <img
-                      class="avatar"
-                      src="/images/avatars/photos/40.jpg"
-                      alt=""
-                      data-user-popover="11"
-                      @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/150x150'
-                      "
-                    />
-                  </div>
+                  <V-Avatar
+                    picture="/images/avatars/photos/40.jpg"
+                    size="small"
+                  />
                   <div class="meta-inner">
                     <span class="dark-inverted" data-filter-match
                       >Jeanne M.</span
@@ -560,18 +480,10 @@ const optionsSingle = [
                   </p>
                 </div>
                 <div class="tile-meta">
-                  <div class="v-avatar is-small">
-                    <img
-                      class="avatar"
-                      src="/images/avatars/photos/9.jpg"
-                      alt=""
-                      data-user-popover="1"
-                      @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/150x150'
-                      "
-                    />
-                  </div>
+                  <V-Avatar
+                    picture="/images/avatars/photos/9.jpg"
+                    size="small"
+                  />
                   <div class="meta-inner">
                     <span class="dark-inverted" data-filter-match>Ana B.</span>
                     <span>3 days ago</span>
@@ -602,18 +514,10 @@ const optionsSingle = [
                   </p>
                 </div>
                 <div class="tile-meta">
-                  <div class="v-avatar is-small">
-                    <img
-                      class="avatar"
-                      src="/images/avatars/photos/19.jpg"
-                      alt=""
-                      data-user-popover="17"
-                      @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/150x150'
-                      "
-                    />
-                  </div>
+                  <V-Avatar
+                    picture="/images/avatars/photos/19.jpg"
+                    size="small"
+                  />
                   <div class="meta-inner">
                     <span class="dark-inverted" data-filter-match
                       >Greta K.</span
@@ -646,18 +550,10 @@ const optionsSingle = [
                   </p>
                 </div>
                 <div class="tile-meta">
-                  <div class="v-avatar is-small">
-                    <img
-                      class="avatar"
-                      src="/images/avatars/photos/33.jpg"
-                      alt=""
-                      data-user-popover="29"
-                      @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/150x150'
-                      "
-                    />
-                  </div>
+                  <V-Avatar
+                    picture="/images/avatars/photos/33.jpg"
+                    size="small"
+                  />
                   <div class="meta-inner">
                     <span class="dark-inverted" data-filter-match
                       >Harvey M.</span

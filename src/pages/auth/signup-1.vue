@@ -1182,6 +1182,7 @@ onUnmounted(() => {
             background: $accent;
 
             svg {
+              color: $white;
               stroke: $white;
             }
           }
@@ -1282,6 +1283,7 @@ onUnmounted(() => {
           border-color: lighten($dark-sidebar, 10%);
 
           svg {
+            color: $light-text;
             stroke: $light-text;
           }
         }
