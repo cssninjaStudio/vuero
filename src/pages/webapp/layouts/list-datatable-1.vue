@@ -7,45 +7,27 @@ useHead({
 </script>
 
 <template>
-  <div>
-    <div class="datatable-toolbar is-webapp">
-      <div class="field has-addons is-disabled">
-        <p class="control">
-          <button class="button v-button">
-            <span class="icon is-small">
-              <i class="fas fa-check"></i>
+  <div class="is-webapp-lg">
+    <div class="page-title has-text-centered">
+      <!-- Sidebar Trigger -->
+      <div class="huro-hamburger nav-trigger push-resize">
+        <span class="menu-toggle has-chevron">
+          <span class="icon-box-toggle">
+            <span class="rotate">
+              <i class="icon-line-top"></i>
+              <i class="icon-line-center"></i>
+              <i class="icon-line-bottom"></i>
             </span>
-            <span>Promote</span>
-          </button>
-        </p>
-        <p class="control">
-          <button class="button v-button">
-            <span class="icon is-small">
-              <i class="fas fa-times"></i>
-            </span>
-            <span>Delete</span>
-          </button>
-        </p>
-        <p class="control">
-          <button class="button v-button">
-            <span class="icon is-small">
-              <i class="fas fa-arrow-right"></i>
-            </span>
-            <span>Transfer</span>
-          </button>
-        </p>
-      </div>
-
-      <div class="buttons">
-        <button class="button v-button is-primary is-elevated">
-          <span class="icon">
-            <i class="fas fa-plus"></i>
           </span>
-          <span>Add User</span>
-        </button>
+        </span>
       </div>
-    </div>
 
+      <div class="title-wrap">
+        <h1 class="title is-4">Datatable</h1>
+      </div>
+
+      <Toolbar />
+    </div>
     <div class="page-content-inner is-webapp">
       <DatatableV1 />
     </div>

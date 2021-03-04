@@ -1447,7 +1447,7 @@
 
           .column {
             &:not(:last-child) {
-              border-right: 1px solid lighten($dark-sidebar, 12%) !important;
+              border-right: 1px solid darken($fade-grey, 3%);
             }
           }
 
@@ -1573,7 +1573,7 @@
           .center {
             .column {
               &:not(:last-child) {
-                border-right: 1px solid darken($fade-grey, 3%);
+                border-right: 1px solid lighten($dark-sidebar, 12%) !important;
               }
             }
             .column-placeholder {

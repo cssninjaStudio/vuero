@@ -280,6 +280,9 @@ Responsive styles
   }
 
   .page-title {
+    margin-top: 0;
+    padding-top: 20px;
+
     &.is-project-details {
       .huro-hamburger {
         margin-left: 7px !important;
@@ -426,7 +429,8 @@ Responsive styles
   }
 
   .page-title {
-    margin-top: 20px;
+    margin-top: 0;
+    padding-top: 20px;
 
     &.is-project-details {
       .huro-hamburger {

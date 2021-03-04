@@ -7,7 +7,7 @@ useHead({
 </script>
 
 <template>
-  <div class="is-webapp-md">
+  <div class="is-webapp-lg">
     <div class="page-title has-text-centered">
       <!-- Sidebar Trigger -->
       <div class="huro-hamburger nav-trigger push-resize">

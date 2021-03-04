@@ -151,7 +151,7 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
                 <a class="action-link">View All</a>
               </div>
 
-              <div class="columns user-grid user-grid-v4">
+              <div class="columns user-grid user-grid-v4 is-flex-tablet-p">
                 <!--Rookie-->
                 <div class="column is-4">
                   <div class="grid-item">

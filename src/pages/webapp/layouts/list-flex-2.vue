@@ -12,36 +12,29 @@ useHead({
 
 <template>
   <div
-    class="page-content is-relative tabs-wrapper is-slider is-squared is-inverted"
+    class="page-content is-relative tabs-wrapper is-slider is-squared is-inverted is-webapp-lg"
   >
-    <div class="list-flex-toolbar is-reversed is-webapp flex-list-v2">
-      <div class="control has-icon">
-        <input
-          class="input custom-text-filter"
-          placeholder="Search..."
-          data-filter-target=".flex-table-item"
-        />
-        <div class="form-icon">
-          <i class="iconify" data-icon="feather:search"></i>
-        </div>
+    <div class="page-title has-text-centered">
+      <!-- Sidebar Trigger -->
+      <div class="huro-hamburger nav-trigger push-resize">
+        <span class="menu-toggle has-chevron">
+          <span class="icon-box-toggle">
+            <span class="rotate">
+              <i class="icon-line-top"></i>
+              <i class="icon-line-center"></i>
+              <i class="icon-line-bottom"></i>
+            </span>
+          </span>
+        </span>
       </div>
 
-      <div class="tabs-inner">
-        <div class="tabs">
-          <ul>
-            <li :class="[activeTab === 'active' && 'is-active']">
-              <a @click="activeTab = 'active'"><span>Active</span></a>
-            </li>
-            <li :class="[activeTab === 'closed' && 'is-active']">
-              <a @click="activeTab = 'closed'"><span>Closed</span></a>
-            </li>
-            <li class="tab-naver"></li>
-          </ul>
-        </div>
+      <div class="title-wrap">
+        <h1 class="title is-4">Flex List</h1>
       </div>
+
+      <Toolbar />
     </div>
-
-    <div class="page-content-inner is-webapp">
+    <div class="page-content-inner">
       <FlexListV2 class="is-webapp" :active-tab="activeTab" />
     </div>
   </div>

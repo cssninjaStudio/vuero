@@ -1419,7 +1419,7 @@ const props = defineProps({
   z-index: 1;
 
   &.has-top-nav {
-    height: 406px;
+    height: 368px;
   }
 }
 
@@ -2124,11 +2124,9 @@ const props = defineProps({
 @media only screen and (max-width: 767px) {
   .lifestyle-dashboard-bg {
     height: 555px;
-  }
 
-  .is-webapp {
-    .lifestyle-dashboard-bg {
-      height: 565px;
+    &.has-top-nav {
+      height: 625px;
     }
   }
 
@@ -2190,9 +2188,9 @@ const props = defineProps({
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-  .is-webapp {
-    .lifestyle-dashboard-bg {
-      height: 435px;
+  .lifestyle-dashboard-bg {
+    &.has-top-nav {
+      height: 428px;
     }
   }
 

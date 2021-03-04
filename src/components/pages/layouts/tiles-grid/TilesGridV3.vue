@@ -31,11 +31,7 @@ const optionsSingle = [
   <div>
     <div class="tile-grid-toolbar">
       <V-Control icon="feather:search">
-        <input
-          v-model="filters"
-          class="input custom-text-filter"
-          placeholder="Search..."
-        />
+        <input class="input custom-text-filter" placeholder="Search..." />
       </V-Control>
 
       <div class="buttons">

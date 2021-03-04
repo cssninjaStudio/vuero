@@ -279,8 +279,10 @@ Onboarding Layouts
 ========================================================================== */
 
 @media only screen and (max-width: 767px) {
-  .standard-onboarding {
-    padding: 20px 0;
+  .onboarding-wrapper {
+    .standard-onboarding {
+      padding: 20px 0;
+    }
 
     .title-wrap {
       h2 {
@@ -292,9 +294,16 @@ Onboarding Layouts
     .onboarding-wrap {
       .onboarding-wrap-inner {
         flex-wrap: wrap;
+      }
+    }
 
-        .onboarding-card {
-          width: calc(100% - 16px);
+    &.onboarding-v2,
+    &.onboarding-v4 {
+      .onboarding-wrap {
+        .onboarding-wrap-inner {
+          .onboarding-card {
+            min-width: calc(100% - 16px) !important;
+          }
         }
       }
     }
