@@ -1,12 +1,15 @@
 FROM bitnami/node:14 AS build
 WORKDIR /app
 
+RUN npm install --global pnpm
+
 COPY package.json ./
+COPY pnpm-lock.yaml ./
 COPY scripts/skip.js ./scripts/skip.js
-RUN HUSKY=0 CYPRESS_INSTALL_BINARY=0 npm install --unsafe-perm=true
+RUN HUSKY=0 CYPRESS_INSTALL_BINARY=0 pnpm install
 
 COPY . .
-RUN npm run build
+RUN pnpm run build
 
 
 FROM bitnami/nginx:1.19 AS prod

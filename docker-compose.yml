@@ -1,0 +1,24 @@
+version: '3.7'
+
+services:
+  vuero-demo:
+    build: .
+    image: vuero_demo:latest
+    networks:
+      - cssninja-services
+    restart: '${MOEBIUS_DEMO_RESTART:-no}'
+    labels:
+      traefik.enable: true
+      traefik.docker.network: 'cssninja-services'
+      traefik.http.routers.vuero-demo.entrypoints: 'http'
+      traefik.http.routers.vuero-demo.rule: 'Host(`vuero.${HOST:-127.0.0.1.nip.io}`)'
+      traefik.http.routers.vuero-demo.middlewares: 'https-redirect@file'
+      traefik.http.services.vuero-demo-https.loadbalancer.server.port: 8080
+      traefik.http.routers.vuero-demo-https.rule: 'Host(`vuero.${HOST:-127.0.0.1.nip.io}`)'
+      traefik.http.routers.vuero-demo-https.tls: true
+      traefik.http.routers.vuero-demo-https.entrypoints: 'https'
+      traefik.http.routers.vuero-demo-https.tls.certresolver: 'http'
+
+networks:
+  cssninja-services:
+    external: true
