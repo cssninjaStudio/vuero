@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import axios from 'axios'
 import { useHead } from '@vueuse/head'
-import { computed, onMounted, ref, watch } from 'vue'
+import { computed, onMounted, ref, watchEffect } from 'vue'
 
 import {
   activeSidebar,
@@ -50,7 +50,7 @@ const conversations = [
 
 const { dropdownElement, isOpen, toggle } = useDropdown()
 const addConversationOpen = ref(false)
-const isLoading = ref(false)
+const isLoading = ref(true)
 const selectedConversationId = ref(0)
 const messages = ref<any[]>([])
 
@@ -61,7 +61,7 @@ const onConversationChanged = async () => {
   }
 
   isLoading.value = true
-  await sleep()
+  await sleep(1000)
 
   try {
     const { data } = await axios.get(
@@ -95,7 +95,7 @@ const selectedConversation = computed(() => {
 
 onMounted(() => {
   activeSidebar.value = 'messages'
-  selectedConversationId.value = conversations[0].id
+  selectedConversationId.value = 1
   //onConversationChanged()
 })
 
@@ -103,7 +103,7 @@ useHead({
   title: 'Messaging chat - Admin - Vuero',
 })
 
-watch(selectedConversationId, onConversationChanged)
+watchEffect(onConversationChanged)
 </script>
 
 <template>
@@ -695,6 +695,7 @@ watch(selectedConversationId, onConversationChanged)
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
+    user-select: none;
 
     .is-autocomplete {
       flex-grow: 2;
@@ -1079,6 +1080,7 @@ watch(selectedConversationId, onConversationChanged)
       -webkit-user-select: none;
       -moz-user-select: none;
       -ms-user-select: none;
+      user-select: none;
     }
   }
 
@@ -1103,6 +1105,7 @@ watch(selectedConversationId, onConversationChanged)
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
+    user-select: none;
   }
 
   .other,
@@ -1166,6 +1169,7 @@ watch(selectedConversationId, onConversationChanged)
         -webkit-user-select: none;
         -moz-user-select: none;
         -ms-user-select: none;
+        user-select: none;
 
         svg {
           position: relative;
@@ -1221,6 +1225,7 @@ watch(selectedConversationId, onConversationChanged)
         -webkit-user-select: none;
         -moz-user-select: none;
         -ms-user-select: none;
+        user-select: none;
 
         svg {
           position: relative;
@@ -1533,6 +1538,7 @@ watch(selectedConversationId, onConversationChanged)
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
+    user-select: none;
   }
 }
 

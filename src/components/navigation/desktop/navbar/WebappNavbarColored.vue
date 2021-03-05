@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import { computed, watch } from 'vue'
+import { computed, watch, ref } from 'vue'
 import { useRoute } from 'vue-router'
+import { popovers } from '/@src/data/users/userPopovers'
 
 import useDropdown from '/@src/composition/use/useDropdown'
 import {
@@ -11,8 +12,21 @@ import { useWindowScroll } from '@vueuse/core'
 
 const route = useRoute()
 const { dropdownElement, isOpen, toggle } = useDropdown()
-
 const { y } = useWindowScroll()
+
+const filter = ref('')
+const filteredData = computed(() => {
+  if (!filter.value) {
+    return []
+  }
+
+  return Object.values(popovers).filter((user) => {
+    return (
+      user.fullName.match(new RegExp(filter.value, 'i')) ||
+      user.position.match(new RegExp(filter.value, 'i'))
+    )
+  })
+})
 
 const isScrolling = computed(() => {
   return y.value > 30
@@ -46,7 +60,10 @@ watch(
         <h1 class="title is-5">Welcome</h1>
       </div>
       <div class="center">
-        <div class="centered-links">
+        <div
+          class="centered-links"
+          :class="[activeSubnav === 'search' && 'is-hidden']"
+        >
           <a
             :class="[
               (activeSubnav === 'home' ||
@@ -106,6 +123,7 @@ watch(
           <div class="field">
             <div class="control has-icon">
               <input
+                v-model="filter"
                 type="text"
                 class="input is-rounded search-input"
                 placeholder="Search records..."
@@ -113,10 +131,29 @@ watch(
               <div class="form-icon">
                 <i class="iconify" data-icon="feather:search"></i>
               </div>
-              <div class="form-icon is-right" @click="activeSubnav = 'closed'">
+              <div class="form-icon is-right" @click="toggleSubnav('search')">
                 <i class="iconify" data-icon="feather:x"></i>
               </div>
-              <div class="search-results has-slimscroll"></div>
+              <div
+                v-if="filteredData.length > 0"
+                class="search-results has-slimscroll is-active"
+              >
+                <div
+                  v-for="user in filteredData"
+                  :key="user.id"
+                  class="search-result"
+                >
+                  <V-Avatar
+                    :picture="user.avatar"
+                    :initials="user.initials"
+                    :color="user.color"
+                  />
+                  <div class="meta">
+                    <span>{{ user.username }}</span>
+                    <span>{{ user.position }}</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -230,7 +267,9 @@ watch(
   </div>
 
   <div
-    :class="[activeSubnav !== 'closed' && 'is-active']"
+    :class="[
+      activeSubnav !== 'closed' && activeSubnav !== 'search' && 'is-active',
+    ]"
     class="webapp-subnavbar"
   >
     <!--src/partials/navbar/webapp/menus/-->

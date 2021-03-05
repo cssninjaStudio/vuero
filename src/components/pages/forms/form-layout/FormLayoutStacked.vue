@@ -6,7 +6,7 @@ import { popovers } from '/@src/data/users/userPopovers'
 const calendarTarget = ref('')
 const notificationMedium = ref('')
 const notificationTarget = ref('')
-const date = reactive({
+const date = ref({
   start: new Date(),
   end: new Date(),
 })

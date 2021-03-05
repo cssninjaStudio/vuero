@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import { computed, watch } from 'vue'
+import { computed, watch, ref } from 'vue'
 import { useRoute } from 'vue-router'
+import { popovers } from '/@src/data/users/userPopovers'
 
 import useDropdown from '/@src/composition/use/useDropdown'
 import {
@@ -11,8 +12,21 @@ import { useWindowScroll } from '@vueuse/core'
 
 const route = useRoute()
 const { dropdownElement, isOpen, toggle } = useDropdown()
-
 const { y } = useWindowScroll()
+
+const filter = ref('')
+const filteredData = computed(() => {
+  if (!filter.value) {
+    return []
+  }
+
+  return Object.values(popovers).filter((user) => {
+    return (
+      user.fullName.match(new RegExp(filter.value, 'i')) ||
+      user.position.match(new RegExp(filter.value, 'i'))
+    )
+  })
+})
 
 const isScrolling = computed(() => {
   return y.value > 30
@@ -46,7 +60,11 @@ watch(
         <h1 id="webapp-page-title" class="title is-5">Welcome</h1>
       </div>
       <div class="center">
-        <div id="webapp-navbar-menu" class="centered-drops">
+        <div
+          id="webapp-navbar-menu"
+          class="centered-drops"
+          :class="[activeSubnav === 'search' && 'is-hidden']"
+        >
           <div class="centered-drop">
             <NavbarDashboardsDropdown />
           </div>
@@ -60,14 +78,18 @@ watch(
             <NavbarComponentsDropdown />
           </div>
           <div class="centered-button centered-link-search">
-            <button class="button">
+            <button class="button" @click="toggleSubnav('search')">
               <span class="icon is-small">
                 <i class="iconify" data-icon="feather:search"></i>
               </span>
             </button>
           </div>
         </div>
-        <div id="webapp-navbar-search" class="centered-search is-hidden">
+        <div
+          id="webapp-navbar-search"
+          class="centered-search"
+          :class="[activeSubnav !== 'search' && 'is-hidden']"
+        >
           <div class="field">
             <div class="control has-icon">
               <input
@@ -78,10 +100,33 @@ watch(
               <div class="form-icon">
                 <i class="iconify" data-icon="feather:search"></i>
               </div>
-              <div id="webapp-navbar-search-close" class="form-icon is-right">
+              <div
+                id="webapp-navbar-search-close"
+                class="form-icon is-right"
+                @click="toggleSubnav('search')"
+              >
                 <i class="iconify" data-icon="feather:x"></i>
               </div>
-              <div class="search-results has-slimscroll"></div>
+              <div
+                v-if="filteredData.length > 0"
+                class="search-results has-slimscroll is-active"
+              >
+                <div
+                  v-for="user in filteredData"
+                  :key="user.id"
+                  class="search-result"
+                >
+                  <V-Avatar
+                    :picture="user.avatar"
+                    :initials="user.initials"
+                    :color="user.color"
+                  />
+                  <div class="meta">
+                    <span>{{ user.username }}</span>
+                    <span>{{ user.position }}</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

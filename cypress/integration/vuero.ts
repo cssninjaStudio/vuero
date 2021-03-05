@@ -1,5 +1,6 @@
 import {
   waitTimeout,
+  waitDarkTimeout,
   disableTimersAndAnimations,
   minimal,
   auth,
@@ -12,6 +13,46 @@ describe('Desktop - Viewport (1274*714)', () => {
   beforeEach(() => {
     cy.viewport(1274, 714)
   })
+
+  for (const route of admin) {
+    it(`Desktop - Admin Layout - ${route.name}`, () => {
+      cy.visit(route.path)
+      // cy.get('.default-layout')
+      cy.wait(waitTimeout)
+
+      cy.title().should('not.contain', 'Page not found')
+      cy.get('html').invoke('toggleClass', 'no-scroll')
+
+      cy.screenshot(
+        `${route.prefix}/${route.name
+          .toLowerCase()
+          .replace('-', ' ')
+          .replace('(', ' ')
+          .replace(')', ' ')
+          .replace(/[\s]+/g, '-')}-light`,
+        {
+          capture: 'viewport',
+          disableTimersAndAnimations,
+        }
+      )
+
+      cy.get('body').invoke('toggleClass', 'is-dark')
+      cy.wait(waitDarkTimeout)
+
+      cy.screenshot(
+        `${route.prefix}/${route.name
+          .toLowerCase()
+          .replace('-', ' ')
+          .replace('(', ' ')
+          .replace(')', ' ')
+          .replace(/[\s]+/g, '-')}-dark`,
+        {
+          capture: 'viewport',
+          disableTimersAndAnimations,
+        }
+      )
+    })
+  }
 
   for (const route of templates) {
     it(`Desktop - Templates - ${route.name}`, () => {
@@ -36,7 +77,7 @@ describe('Desktop - Viewport (1274*714)', () => {
       )
 
       cy.get('body').invoke('toggleClass', 'is-dark')
-      // cy.wait(waitTimeout)
+      cy.wait(waitDarkTimeout)
 
       cy.screenshot(
         `${route.prefix}/${route.name
@@ -56,7 +97,7 @@ describe('Desktop - Viewport (1274*714)', () => {
   for (const route of minimal) {
     it(`Desktop - Minimal Layout - ${route.name}`, () => {
       cy.visit(route.path)
-      cy.get('.minimal-wrapper')
+      // cy.get('.minimal-wrapper')
       cy.wait(waitTimeout)
 
       cy.title().should('not.contain', 'Page not found')
@@ -76,7 +117,7 @@ describe('Desktop - Viewport (1274*714)', () => {
       )
 
       cy.get('body').invoke('toggleClass', 'is-dark')
-      // cy.wait(waitTimeout)
+      cy.wait(waitDarkTimeout)
 
       cy.screenshot(
         `${route.prefix}/${route.name
@@ -96,7 +137,7 @@ describe('Desktop - Viewport (1274*714)', () => {
   for (const route of auth) {
     it(`Desktop - Auth Layout - ${route.name}`, () => {
       cy.visit(route.path)
-      cy.get('.auth-wrapper')
+      // cy.get('.auth-wrapper')
       cy.wait(waitTimeout)
 
       cy.title().should('not.contain', 'Page not found')
@@ -116,47 +157,7 @@ describe('Desktop - Viewport (1274*714)', () => {
       )
 
       cy.get('body').invoke('toggleClass', 'is-dark')
-      // cy.wait(waitTimeout)
-
-      cy.screenshot(
-        `${route.prefix}/${route.name
-          .toLowerCase()
-          .replace('-', ' ')
-          .replace('(', ' ')
-          .replace(')', ' ')
-          .replace(/[\s]+/g, '-')}-dark`,
-        {
-          capture: 'viewport',
-          disableTimersAndAnimations,
-        }
-      )
-    })
-  }
-
-  for (const route of admin) {
-    it(`Desktop - Admin Layout - ${route.name}`, () => {
-      cy.visit(route.path)
-      cy.get('.default-layout')
-      cy.wait(waitTimeout)
-
-      cy.title().should('not.contain', 'Page not found')
-      cy.get('html').invoke('toggleClass', 'no-scroll')
-
-      cy.screenshot(
-        `${route.prefix}/${route.name
-          .toLowerCase()
-          .replace('-', ' ')
-          .replace('(', ' ')
-          .replace(')', ' ')
-          .replace(/[\s]+/g, '-')}-light`,
-        {
-          capture: 'viewport',
-          disableTimersAndAnimations,
-        }
-      )
-
-      cy.get('body').invoke('toggleClass', 'is-dark')
-      // cy.wait(waitTimeout)
+      cy.wait(waitDarkTimeout)
 
       cy.screenshot(
         `${route.prefix}/${route.name
@@ -176,7 +177,7 @@ describe('Desktop - Viewport (1274*714)', () => {
   for (const route of webapp) {
     it(`Desktop - Webapp Layout - ${route.name}`, () => {
       cy.visit(route.path)
-      cy.get('.webapp-layout')
+      // cy.get('.webapp-layout')
       cy.wait(waitTimeout)
 
       cy.title().should('not.contain', 'Page not found')
@@ -196,7 +197,7 @@ describe('Desktop - Viewport (1274*714)', () => {
       )
 
       cy.get('body').invoke('toggleClass', 'is-dark')
-      // cy.wait(waitTimeout)
+      cy.wait(waitDarkTimeout)
 
       cy.screenshot(
         `${route.prefix}/${route.name

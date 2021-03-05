@@ -20,7 +20,7 @@ const filteredData = computed(() => {
   }
 })
 
-const valueSingle = 0
+const valueSingle = ref(0)
 const optionsSingle = [
   'All',
   'UI/UX Design',

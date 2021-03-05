@@ -61,6 +61,7 @@ const isIconify = computed(() => {
     <div v-else-if="hasError" class="validation-icon is-error">
       <i class="iconify" data-icon="feather:x"></i>
     </div>
+    <slot name="extra"></slot>
   </div>
 </template>
 

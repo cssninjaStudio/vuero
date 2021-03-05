@@ -1,3 +1,5 @@
+import { ref } from 'vue'
+
 export const selectSlotValue = ['default']
 
 export const selectSlotOptions = [
@@ -23,7 +25,7 @@ export const selectSlotOptions = [
   },
 ]
 
-export const valueSingle = 0
+export const valueSingle = ref(0)
 
 export const optionsSingle = [
   'Last 10 days',

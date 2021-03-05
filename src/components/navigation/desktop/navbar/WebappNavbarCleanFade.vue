@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import { computed, watch } from 'vue'
+import { computed, watch, ref } from 'vue'
 import { useRoute } from 'vue-router'
+import { popovers } from '/@src/data/users/userPopovers'
 
 import useDropdown from '/@src/composition/use/useDropdown'
 import {
@@ -11,8 +12,21 @@ import { useWindowScroll } from '@vueuse/core'
 
 const route = useRoute()
 const { dropdownElement, isOpen, toggle } = useDropdown()
-
 const { y } = useWindowScroll()
+
+const filter = ref('')
+const filteredData = computed(() => {
+  if (!filter.value) {
+    return []
+  }
+
+  return Object.values(popovers).filter((user) => {
+    return (
+      user.fullName.match(new RegExp(filter.value, 'i')) ||
+      user.position.match(new RegExp(filter.value, 'i'))
+    )
+  })
+})
 
 const isScrolling = computed(() => {
   return y.value > 30
@@ -74,6 +88,7 @@ watch(
           <div class="field">
             <div class="control has-icon">
               <input
+                v-model="filter"
                 type="text"
                 class="input search-input"
                 placeholder="Search records..."
@@ -82,12 +97,32 @@ watch(
                 <i class="iconify" data-icon="feather:search"></i>
               </div>
               <div
-                id="webapp-navbar-search-empty"
-                class="form-icon is-right is-hidden"
+                v-if="filter"
+                class="form-icon is-right"
+                @click="filter = ''"
               >
                 <i class="iconify" data-icon="feather:x"></i>
               </div>
-              <div class="search-results has-slimscroll"></div>
+              <div
+                v-if="filteredData.length > 0"
+                class="search-results has-slimscroll is-active"
+              >
+                <div
+                  v-for="user in filteredData"
+                  :key="user.id"
+                  class="search-result"
+                >
+                  <V-Avatar
+                    :picture="user.avatar"
+                    :initials="user.initials"
+                    :color="user.color"
+                  />
+                  <div class="meta">
+                    <span>{{ user.username }}</span>
+                    <span>{{ user.position }}</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

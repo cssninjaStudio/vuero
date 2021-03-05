@@ -1,5 +1,21 @@
 <script setup lang="ts">
+import { computed, ref } from 'vue'
 import { activePanel } from '/@src/composition/state/activePanelState'
+import { popovers } from '/@src/data/users/userPopovers'
+
+const filter = ref('')
+const filteredData = computed(() => {
+  if (!filter.value) {
+    return []
+  }
+
+  return Object.values(popovers).filter((user) => {
+    return (
+      user.fullName.match(new RegExp(filter.value, 'i')) ||
+      user.position.match(new RegExp(filter.value, 'i'))
+    )
+  })
+})
 </script>
 
 <template>
@@ -18,26 +34,43 @@ import { activePanel } from '/@src/composition/state/activePanelState'
         </a>
       </div>
       <div class="right-panel-body has-slimscroll">
-        <div class="field">
-          <div class="control has-icon">
+        <V-Field>
+          <V-Control icon="feather:search">
             <input
+              v-model="filter"
               type="text"
               class="input is-rounded search-input"
               placeholder="Search..."
             />
-            <div class="form-icon">
-              <i class="iconify" data-icon="feather:search"></i>
-            </div>
-            <div class="search-results has-slimscroll"></div>
-          </div>
-        </div>
+            <template #extra>
+              <div
+                v-if="filteredData.length > 0"
+                class="is-active search-results has-slimscroll"
+              >
+                <div
+                  v-for="user in filteredData"
+                  :key="user.id"
+                  class="search-result"
+                >
+                  <V-Avatar
+                    :picture="user.avatar"
+                    :initials="user.initials"
+                    :color="user.color"
+                  />
+                  <div class="meta">
+                    <span>{{ user.username }}</span>
+                    <span>{{ user.position }}</span>
+                  </div>
+                </div>
+              </div>
+            </template>
+          </V-Control>
+        </V-Field>
 
         <div class="recent">
           <h4>Recently viewed</h4>
           <div class="recent-block">
-            <a
-              class="media-flex-center is-responsive-mobile is-responsive-tablet-p"
-            >
+            <a class="media-flex-center">
               <div class="v-icon is-info is-rounded is-small">
                 <i class="iconify" data-icon="feather:chrome"></i>
               </div>
@@ -46,9 +79,7 @@ import { activePanel } from '/@src/composition/state/activePanelState'
                 <span>Blog post</span>
               </div>
             </a>
-            <a
-              class="media-flex-center is-responsive-mobile is-responsive-tablet-p"
-            >
+            <a class="media-flex-center">
               <div class="v-icon is-orange is-rounded is-small">
                 <i class="iconify" data-icon="feather:tv"></i>
               </div>
@@ -57,9 +88,7 @@ import { activePanel } from '/@src/composition/state/activePanelState'
                 <span>Blog post</span>
               </div>
             </a>
-            <a
-              class="media-flex-center is-responsive-mobile is-responsive-tablet-p"
-            >
+            <a class="media-flex-center">
               <div class="v-icon is-green is-rounded is-small">
                 <i class="iconify" data-icon="feather:twitter"></i>
               </div>
@@ -74,9 +103,7 @@ import { activePanel } from '/@src/composition/state/activePanelState'
         <div class="recent">
           <h4>Recent Members</h4>
           <div class="recent-block">
-            <a
-              class="media-flex-center is-responsive-mobile is-responsive-tablet-p"
-            >
+            <a class="media-flex-center">
               <div class="v-avatar is-small">
                 <img
                   class="avatar"
@@ -93,9 +120,7 @@ import { activePanel } from '/@src/composition/state/activePanelState'
                 <span>Software Engineer</span>
               </div>
             </a>
-            <a
-              class="media-flex-center is-responsive-mobile is-responsive-tablet-p"
-            >
+            <a class="media-flex-center">
               <div class="v-avatar is-small">
                 <img
                   class="avatar"
@@ -112,9 +137,7 @@ import { activePanel } from '/@src/composition/state/activePanelState'
                 <span>UI/UX Designer</span>
               </div>
             </a>
-            <a
-              class="media-flex-center is-responsive-mobile is-responsive-tablet-p"
-            >
+            <a class="media-flex-center">
               <div class="v-avatar is-small">
                 <img
                   class="avatar"

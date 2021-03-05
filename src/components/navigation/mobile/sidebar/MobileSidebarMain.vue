@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { isMobileSidebarOpen } from '/@src/composition/state/mobileSidebarState'
+import { activePanel } from '/@src/composition/state/activePanelState'
 </script>
 
 <template>
@@ -47,7 +48,7 @@ import { isMobileSidebarOpen } from '/@src/composition/state/mobileSidebarState'
 
       <ul class="bottom-icon-side-menu">
         <li>
-          <a href="#">
+          <a @click="activePanel = 'search'">
             <i class="iconify" data-icon="feather:search"></i>
           </a>
         </li>

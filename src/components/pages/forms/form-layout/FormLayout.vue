@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useWindowScroll } from '@vueuse/core'
-import { computed, ref } from 'vue'
+import { computed, reactive, ref } from 'vue'
 
 const companySize = ref('')
 const businessType = ref('')
