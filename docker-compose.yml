@@ -2,8 +2,7 @@ version: '3.7'
 
 services:
   vuero-demo:
-    build: .
-    image: vuero_demo:latest
+    image: digisquad/cssninja.vuero-demo:latest
     networks:
       - cssninja-services
     restart: '${MOEBIUS_DEMO_RESTART:-no}'

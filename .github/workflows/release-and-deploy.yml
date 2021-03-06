@@ -67,6 +67,27 @@ jobs:
     needs: build-release
 
     steps:
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v1
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1
+
+      - name: Login to DockerHub
+        uses: docker/login-action@v1
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: Build and push
+        id: docker_build
+        uses: docker/build-push-action@v2
+        with:
+          push: true
+          tags:
+            - digisquad/cssninja.vuero-demo:latest
+            - digisquad/cssninja.vuero-demo:${GITHUB_REF#refs/tags/}
+
       - name: Deploy to cssninja.io
         uses: appleboy/ssh-action@master
         with:
@@ -78,5 +99,4 @@ jobs:
             cd ${{ secrets.HOST_DIRECTORY }}
             git pull
             docker-compose pull
-            docker-compose build --compress --force-rm
             docker-compose up -d --force-recreate --remove-orphans

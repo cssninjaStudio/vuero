@@ -1,13 +1,9 @@
 version: '3.7'
 
-services: 
+services:
   vue:
-    build: 
-      .
-    ports: 
-      - "8080:8080"
-    volumes: 
+    build: .
+    ports:
+      - '8080:8080'
+    volumes:
       - ./nginx/vuejs.conf:/opt/bitnami/nginx/conf/server_blocks/nginx.conf:ro
-
-    
-    
