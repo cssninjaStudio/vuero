@@ -84,9 +84,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags:
-            - digisquad/cssninja.vuero-demo:latest
-            - digisquad/cssninja.vuero-demo:${GITHUB_REF#refs/tags/}
+          tags: digisquad/cssninja.vuero-demo:latest,digisquad/cssninja.vuero-demo:${GITHUB_REF#refs/tags/}
 
       - name: Deploy to cssninja.io
         uses: appleboy/ssh-action@master
