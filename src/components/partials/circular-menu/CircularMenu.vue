@@ -3,8 +3,8 @@ import { useWindowScroll } from '@vueuse/core'
 import { computed, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 
-import { isDark } from '/@src/composition/state/darkModeState.ts'
-import { activePanel } from '/@src/composition/state/activePanelState'
+import { isDark } from '/@src/state/darkModeState.ts'
+import { activePanel } from '/@src/state/activePanelState'
 
 const { locale } = useI18n()
 const { y } = useWindowScroll()

@@ -9,7 +9,7 @@ import { ref, onMounted, onUnmounted } from 'vue'
 import { useRouter } from 'vue-router'
 
 import sleep from '/@src/utils/sleep'
-import useNotyf from '/@src/composition/use/useNotyf'
+import useNotyf from '/@src/composable/useNotyf'
 
 let slider: TinySliderInstance
 const sliderElement = ref<HTMLElement | null>(null)
@@ -41,7 +41,7 @@ const handleSignup = async () => {
     isLoading.value = true
     sleep(2000)
     notif.success('Welcome, Erik Kovalsky')
-    router.push({ name: 'admin-dashboards' })
+    router.push({ name: 'sidebar-dashboards' })
     isLoading.value = false
   }
 }

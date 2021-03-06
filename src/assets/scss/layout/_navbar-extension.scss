@@ -9,7 +9,7 @@
 1. Webapp navbar Clean
 ========================================================================== */
 
-.webapp-navbar-clean {
+.navbar-navbar-clean {
   position: fixed;
   top: 0;
   left: 0;
@@ -38,7 +38,7 @@
     }
 
     &:not(.is-scrolled) {
-      .webapp-navbar-lower {
+      .navbar-navbar-lower {
         &.is-between,
         &.is-centered {
           .left,
@@ -58,7 +58,7 @@
     }
   }
 
-  .webapp-navbar-inner {
+  .navbar-navbar-inner {
     display: flex;
     height: 50px;
     padding: 0 20px;
@@ -285,7 +285,7 @@
     }
   }
 
-  .webapp-navbar-lower {
+  .navbar-navbar-lower {
     display: flex;
     align-items: center;
     height: 50px;
@@ -359,7 +359,7 @@
 ========================================================================== */
 
 .is-dark {
-  .webapp-navbar-clean {
+  .navbar-navbar-clean {
     &:not(.is-colored) {
       background: darken($dark-sidebar, 2%);
       border-color: lighten($dark-sidebar, 1%);
@@ -376,7 +376,7 @@
         }
 
         &:not(.is-scrolled) {
-          .webapp-navbar-lower {
+          .navbar-navbar-lower {
             &.is-between,
             &.is-centered {
               .left,
@@ -397,7 +397,7 @@
       }
     }
 
-    .webapp-navbar-inner {
+    .navbar-navbar-inner {
       .left {
         .separator {
           border-color: lighten($dark-sidebar, 12%);
@@ -468,7 +468,7 @@
       }
     }
 
-    .webapp-navbar-lower {
+    .navbar-navbar-lower {
       &.is-between,
       &.is-centered {
         .left,

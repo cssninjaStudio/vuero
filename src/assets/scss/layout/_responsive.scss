@@ -123,7 +123,7 @@ Responsive styles
     left: 60px;
   }
 
-  .is-webapp {
+  .is-navbar {
     .view-wrapper {
       .is-stuck {
         margin-left: 0 !important;
@@ -180,9 +180,9 @@ Responsive styles
   }
 
   //Navbars
-  .webapp-navbar,
+  .navbar-navbar,
   .circular-menu,
-  .webapp-navbar-clean {
+  .navbar-navbar-clean {
     display: none;
   }
 
@@ -290,7 +290,7 @@ Responsive styles
     }
   }
 
-  .is-webapp {
+  .is-navbar {
     .view-wrapper {
       padding-top: 70px !important;
       margin-top: 0 !important;
@@ -330,9 +330,9 @@ Responsive styles
     left: 0 !important;
   }
 
-  .webapp-navbar,
+  .navbar-navbar,
   .circular-menu,
-  .webapp-navbar-clean {
+  .navbar-navbar-clean {
     display: none;
   }
 
@@ -443,7 +443,7 @@ Responsive styles
     }
   }
 
-  .is-webapp {
+  .is-navbar {
     .view-wrapper {
       padding-top: 0 !important;
     }

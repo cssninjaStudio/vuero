@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import useDropdown from '/@src/composition/use/useDropdown'
+import useDropdown from '/@src/composable/useDropdown'
 const { dropdownElement, isOpen, toggle } = useDropdown()
 </script>
 

@@ -10,7 +10,7 @@
         <div class="head-action">
           <div class="buttons">
             <a
-              href="https://themeforest.net/item/huro-multipurpose-admin-and-webapp-ui-kit/28933249"
+              href="https://themeforest.net/item/huro-multipurpose-sidebar-and-navbar-ui-kit/28933249"
               class="button v-button is-primary is-rounded raised action-button"
               >Buy Vuero</a
             >
@@ -28,7 +28,7 @@
 
             <div class="footer-description p-t-10 p-b-10">
               Vuero is built for developers and designers. It's modular approach
-              lets you create awesome webapps with incredible layouts and
+              lets you create awesome navbars with incredible layouts and
               elements.
             </div>
           </div>

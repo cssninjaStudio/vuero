@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 import { useHead } from '@vueuse/head'
 
-import { isDark } from '/@src/composition/state/darkModeState'
+import { isDark } from '/@src/state/darkModeState'
 
 type TabId = 'elements' | 'components' | 'forms' | 'plugins'
 const activeTab = ref<TabId>('elements')
@@ -249,7 +249,7 @@ useHead({
             <div class="head-action">
               <div class="buttons">
                 <a
-                  href="https://themeforest.net/item/huro-multipurpose-admin-and-webapp-ui-kit/28933249"
+                  href="https://themeforest.net/item/huro-multipurpose-sidebar-and-navbar-ui-kit/28933249"
                   class="button v-button is-primary is-rounded is-elevated action-button"
                   >Buy Now</a
                 >
@@ -619,7 +619,7 @@ useHead({
           <!--CTA-->
           <p class="p-t-40 p-b-40 has-text-centered">
             <a
-              href="https://themeforest.net/item/huro-multipurpose-admin-and-webapp-ui-kit/28933249"
+              href="https://themeforest.net/item/huro-multipurpose-sidebar-and-navbar-ui-kit/28933249"
               class="button v-button is-rounded is-primary is-elevated is-bold is-huge"
             >
               Buy Now
@@ -769,7 +769,7 @@ useHead({
             <div class="cta-title">
               <h3>Exclusively on Envato Market</h3>
               <a
-                href="https://themeforest.net/item/huro-multipurpose-admin-and-webapp-ui-kit/28933249"
+                href="https://themeforest.net/item/huro-multipurpose-sidebar-and-navbar-ui-kit/28933249"
                 class="custom-button"
               >
                 <img src="/images/icons/logos/envato.svg" alt="" />

@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { defineEmit, defineProps } from 'vue'
 
-import useDropdown from '/@src/composition/use/useDropdown'
-import { isMediumScreen } from '/@src/composition/state/responsiveState'
+import useDropdown from '/@src/composable/useDropdown'
+import { isMediumScreen } from '/@src/state/responsiveState'
 
 const props = defineProps({
   selected: {

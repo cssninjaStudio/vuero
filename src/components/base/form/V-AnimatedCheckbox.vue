@@ -67,7 +67,7 @@ watchEffect(updateCheckbox)
   </div>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import '../../../assets/scss/abstracts/_variables.scss';
 @import '../../../assets/scss/abstracts/_mixins.scss';
 

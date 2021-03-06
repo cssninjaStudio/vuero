@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import useDropdown from '/@src/composition/use/useDropdown'
+import useDropdown from '/@src/composable/useDropdown'
 const { dropdownElement, isOpen, toggle } = useDropdown()
 </script>
 
@@ -72,7 +72,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
 
                 <div class="column-content" data-simplebar>
                   <RouterLink
-                    :to="{ name: 'webapp-dashboards' }"
+                    :to="{ name: 'navbar-dashboards' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -83,7 +83,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'webapp-dashboards-personal-2' }"
+                    :to="{ name: 'navbar-dashboards-personal-2' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -94,7 +94,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'webapp-dashboards-personal-3' }"
+                    :to="{ name: 'navbar-dashboards-personal-3' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -105,7 +105,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'webapp-dashboards-influencer' }"
+                    :to="{ name: 'navbar-dashboards-influencer' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -116,7 +116,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'webapp-dashboards-hobbies' }"
+                    :to="{ name: 'navbar-dashboards-hobbies' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -127,7 +127,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'webapp-dashboards-health' }"
+                    :to="{ name: 'navbar-dashboards-health' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -138,7 +138,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'webapp-dashboards-writer' }"
+                    :to="{ name: 'navbar-dashboards-writer' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -149,7 +149,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'webapp-dashboards-video' }"
+                    :to="{ name: 'navbar-dashboards-video' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -172,7 +172,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
 
                 <div class="column-content" data-simplebar>
                   <RouterLink
-                    :to="{ name: 'webapp-dashboards-analytics' }"
+                    :to="{ name: 'navbar-dashboards-analytics' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -183,7 +183,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'webapp-dashboards-stocks' }"
+                    :to="{ name: 'navbar-dashboards-stocks' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -194,7 +194,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'webapp-dashboards-sales' }"
+                    :to="{ name: 'navbar-dashboards-sales' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -205,7 +205,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'webapp-dashboards-banking-1' }"
+                    :to="{ name: 'navbar-dashboards-banking-1' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -216,7 +216,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'webapp-dashboards-banking-2' }"
+                    :to="{ name: 'navbar-dashboards-banking-2' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -227,7 +227,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'webapp-dashboards-banking-3' }"
+                    :to="{ name: 'navbar-dashboards-banking-3' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -238,7 +238,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'webapp-dashboards-flights' }"
+                    :to="{ name: 'navbar-dashboards-flights' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -249,7 +249,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'webapp-dashboards-company' }"
+                    :to="{ name: 'navbar-dashboards-company' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -260,7 +260,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'webapp-dashboards-human-ressources' }"
+                    :to="{ name: 'navbar-dashboards-human-ressources' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -271,7 +271,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'webapp-dashboards-course' }"
+                    :to="{ name: 'navbar-dashboards-course' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -294,7 +294,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
 
                 <div class="column-content" data-simplebar>
                   <RouterLink
-                    :to="{ name: 'webapp-dashboards-ecommerce-1' }"
+                    :to="{ name: 'navbar-dashboards-ecommerce-1' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -305,7 +305,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'webapp-dashboards-food-delivery' }"
+                    :to="{ name: 'navbar-dashboards-food-delivery' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -367,7 +367,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
 
                 <div class="column-content" data-simplebar="">
                   <RouterLink
-                    :to="{ name: 'admin-layouts-blank-page-1' }"
+                    :to="{ name: 'sidebar-layouts-blank-page-1' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -378,7 +378,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'admin-layouts-blank-page-2' }"
+                    :to="{ name: 'sidebar-layouts-blank-page-2' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -389,7 +389,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'admin-layouts-blank-page-3' }"
+                    :to="{ name: 'sidebar-layouts-blank-page-3' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -400,7 +400,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'admin-layouts-blank-page-4' }"
+                    :to="{ name: 'sidebar-layouts-blank-page-4' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -411,7 +411,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'webapp-layouts-blank-page-1' }"
+                    :to="{ name: 'navbar-layouts-blank-page-1' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -422,7 +422,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'webapp-layouts-blank-page-2' }"
+                    :to="{ name: 'navbar-layouts-blank-page-2' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -433,7 +433,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'webapp-layouts-blank-page-3' }"
+                    :to="{ name: 'navbar-layouts-blank-page-3' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -444,7 +444,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'webapp-layouts-blank-page-4' }"
+                    :to="{ name: 'navbar-layouts-blank-page-4' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -468,7 +468,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
 
                 <div class="column-content" data-simplebar="">
                   <RouterLink
-                    :to="{ name: 'webapp-dashboards-charts-apex' }"
+                    :to="{ name: 'navbar-dashboards-charts-apex' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -479,7 +479,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'webapp-dashboards-charts-billboardsjs' }"
+                    :to="{ name: 'navbar-dashboards-charts-billboardsjs' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -490,7 +490,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'webapp-dashboards-widgets-sample-ui' }"
+                    :to="{ name: 'navbar-dashboards-widgets-sample-ui' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -501,7 +501,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'webapp-dashboards-widgets-sample-creative' }"
+                    :to="{ name: 'navbar-dashboards-widgets-sample-creative' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -512,7 +512,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'webapp-dashboards-widgets-sample-list' }"
+                    :to="{ name: 'navbar-dashboards-widgets-sample-list' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -523,7 +523,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'webapp-dashboards-widgets-sample-stats' }"
+                    :to="{ name: 'navbar-dashboards-widgets-sample-stats' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -558,7 +558,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'webapp-layouts-form-layouts-1' }"
+                    :to="{ name: 'navbar-layouts-form-layouts-1' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -569,7 +569,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'webapp-layouts-form-layouts-2' }"
+                    :to="{ name: 'navbar-layouts-form-layouts-2' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -580,7 +580,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'webapp-layouts-form-layouts-3' }"
+                    :to="{ name: 'navbar-layouts-form-layouts-3' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -591,7 +591,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'webapp-layouts-form-layouts-4' }"
+                    :to="{ name: 'navbar-layouts-form-layouts-4' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">

@@ -1,4 +1,4 @@
-import { themeColors } from '/@src/composition/state/themeColors'
+import { themeColors } from '/@src/state/themeColors'
 
 function generateDayWiseTimeSeries(
   baseval: number,

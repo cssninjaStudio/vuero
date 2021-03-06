@@ -2,10 +2,7 @@
 import { useHead } from '@vueuse/head'
 import { ref, onMounted } from 'vue'
 
-import {
-  activeSidebar,
-  toggleSidebar,
-} from '/@src/composition/state/activeSidebarState'
+import { activeSidebar, toggleSidebar } from '/@src/state/activeSidebarState'
 
 const isLoaderActive = ref(false)
 

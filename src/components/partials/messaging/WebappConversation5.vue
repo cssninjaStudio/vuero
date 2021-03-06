@@ -1,5 +1,5 @@
 <template>
-  <div id="webapp-conversation-5" class="chat-area-content">
+  <div id="navbar-conversation-5" class="chat-area-content">
     <div class="chat-area-header">
       <button
         class="trigger conversations-mobile-trigger h-only-mobile h-only-tablet-p h-only-tablet-l"

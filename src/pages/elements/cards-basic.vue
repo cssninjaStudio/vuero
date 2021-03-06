@@ -1,12 +1,11 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
 import { onMounted } from 'vue'
-import useMakrdownToc from '/@src/composition/use/useMarkdownToc'
 
-import {
-  activeSidebar,
-  toggleSidebar,
-} from '/@src/composition/state/activeSidebarState'
+import useMakrdownToc from '/@src/composable/useMarkdownToc'
+import { popovers } from '/@src/data/users/userPopovers'
+
+import { activeSidebar, toggleSidebar } from '/@src/state/activeSidebarState'
 
 const { markdownContainer, toc } = useMakrdownToc()
 
@@ -209,33 +208,30 @@ useHead({
             <div class="column is-4">
               <div class="s-card is-raised demo-s-card">
                 <div class="card-head">
-                  <div class="media-flex-center no-margin">
-                    <div class="v-avatar">
-                      <img
-                        class="avatar"
-                        src="/images/avatars/photos/19.jpg"
-                        alt=""
-                        data-user-popover="17"
-                        @error.once="
-                          $event.target.src =
-                            'https://via.placeholder.com/150x150'
-                        "
-                      />
-                      <img
-                        class="badge"
-                        src="/images/icons/flags/germany.svg"
-                        alt=""
-                        @error.once="
-                          $event.target.src =
-                            'https://via.placeholder.com/150x150'
-                        "
-                      />
-                    </div>
-                    <div class="flex-meta">
-                      <span>Greta K.</span>
-                      <span>Sales Manager</span>
-                    </div>
-                  </div>
+                  <V-Block
+                    title="Greta K."
+                    subtitle="Sales Manager"
+                    center
+                    class="no-margin"
+                  >
+                    <template #icon>
+                      <tippy
+                        class="has-help-cursor"
+                        interactive
+                        :offset="[0, 10]"
+                        placement="top-start"
+                      >
+                        <V-Avatar
+                          picture="/images/avatars/photos/19.jpg"
+                          badge="/images/icons/flags/germany.svg"
+                        />
+                        <template #content>
+                          <UserPopoverContent :user="popovers.user19" />
+                        </template>
+                      </tippy>
+                    </template>
+                  </V-Block>
+
                   <UserCardDropdown />
                 </div>
                 <div class="card-inner">
@@ -249,33 +245,30 @@ useHead({
             <div class="column is-4">
               <div class="r-card is-raised demo-r-card">
                 <div class="card-head">
-                  <div class="media-flex-center no-margin">
-                    <div class="v-avatar">
-                      <img
-                        class="avatar"
-                        src="/images/avatars/photos/19.jpg"
-                        alt=""
-                        data-user-popover="17"
-                        @error.once="
-                          $event.target.src =
-                            'https://via.placeholder.com/150x150'
-                        "
-                      />
-                      <img
-                        class="badge"
-                        src="/images/icons/flags/germany.svg"
-                        alt=""
-                        @error.once="
-                          $event.target.src =
-                            'https://via.placeholder.com/150x150'
-                        "
-                      />
-                    </div>
-                    <div class="flex-meta">
-                      <span>Greta K.</span>
-                      <span>Sales Manager</span>
-                    </div>
-                  </div>
+                  <V-Block
+                    title="Greta K."
+                    subtitle="Sales Manager"
+                    center
+                    class="no-margin"
+                  >
+                    <template #icon>
+                      <tippy
+                        class="has-help-cursor"
+                        interactive
+                        :offset="[0, 10]"
+                        placement="top-start"
+                      >
+                        <V-Avatar
+                          picture="/images/avatars/photos/19.jpg"
+                          badge="/images/icons/flags/germany.svg"
+                        />
+                        <template #content>
+                          <UserPopoverContent :user="popovers.user19" />
+                        </template>
+                      </tippy>
+                    </template>
+                  </V-Block>
+
                   <UserCardDropdown />
                 </div>
                 <div class="card-inner">
@@ -289,33 +282,30 @@ useHead({
             <div class="column is-4">
               <div class="l-card is-raised demo-l-card">
                 <div class="card-head">
-                  <div class="media-flex-center no-margin">
-                    <div class="v-avatar">
-                      <img
-                        class="avatar"
-                        src="/images/avatars/photos/19.jpg"
-                        alt=""
-                        data-user-popover="17"
-                        @error.once="
-                          $event.target.src =
-                            'https://via.placeholder.com/150x150'
-                        "
-                      />
-                      <img
-                        class="badge"
-                        src="/images/icons/flags/germany.svg"
-                        alt=""
-                        @error.once="
-                          $event.target.src =
-                            'https://via.placeholder.com/150x150'
-                        "
-                      />
-                    </div>
-                    <div class="flex-meta">
-                      <span>Greta K.</span>
-                      <span>Sales Manager</span>
-                    </div>
-                  </div>
+                  <V-Block
+                    title="Greta K."
+                    subtitle="Sales Manager"
+                    center
+                    class="no-margin"
+                  >
+                    <template #icon>
+                      <tippy
+                        class="has-help-cursor"
+                        interactive
+                        :offset="[0, 10]"
+                        placement="top-start"
+                      >
+                        <V-Avatar
+                          picture="/images/avatars/photos/19.jpg"
+                          badge="/images/icons/flags/germany.svg"
+                        />
+                        <template #content>
+                          <UserPopoverContent :user="popovers.user19" />
+                        </template>
+                      </tippy>
+                    </template>
+                  </V-Block>
+
                   <UserCardDropdown />
                 </div>
                 <div class="card-inner">

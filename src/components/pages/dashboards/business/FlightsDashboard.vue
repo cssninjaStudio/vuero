@@ -1,3 +1,12 @@
+<script setup lang="ts">
+import { reactive } from 'vue'
+
+const date = reactive({
+  start: new Date(),
+  end: new Date(),
+})
+</script>
+
 <template>
   <!--Flights Dashboard V1-->
   <div class="business-dashboard flights-dashboard">
@@ -26,30 +35,30 @@
             </div>
           </div>
           <div class="booking-bar">
-            <div class="booking-bar-inputs">
-              <div class="control has-icon">
-                <input
-                  type="text"
-                  class="input flight-datepicker"
-                  placeholder="Departure"
-                  value=""
-                />
-                <div class="form-icon">
-                  <i class="iconify" data-icon="feather:calendar"></i>
+            <v-date-picker v-model="date" is-range color="green" trim-weeks>
+              <template #default="{ inputValue, inputEvents }">
+                <div class="booking-bar-inputs">
+                  <V-Control icon="feather:calendar">
+                    <input
+                      type="text"
+                      class="input flight-datepicker"
+                      placeholder="Departure"
+                      :value="inputValue.start"
+                      v-on="inputEvents.start"
+                    />
+                  </V-Control>
+                  <V-Control icon="feather:calendar">
+                    <input
+                      type="text"
+                      class="input flight-datepicker"
+                      placeholder="Return"
+                      :value="inputValue.end"
+                      v-on="inputEvents.end"
+                    />
+                  </V-Control>
                 </div>
-              </div>
-              <div class="control has-icon">
-                <input
-                  type="text"
-                  class="input flight-datepicker"
-                  placeholder="Return"
-                  value=""
-                />
-                <div class="form-icon">
-                  <i class="iconify" data-icon="feather:calendar"></i>
-                </div>
-              </div>
-            </div>
+              </template>
+            </v-date-picker>
           </div>
         </div>
 

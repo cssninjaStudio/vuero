@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { isMobileSidebarOpen } from '/@src/composition/state/mobileSidebarState'
-import { activeSidebar } from '/@src/composition/state/activeSidebarState'
+import { isMobileSidebarOpen } from '/@src/state/mobileSidebarState'
+import { activeSidebar } from '/@src/state/activeSidebarState'
 </script>
 
 <template>
@@ -22,7 +22,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
         <li>
           <RouterLink :to="{ name: 'components-avatars' }">V-Avatar</RouterLink>
         </li>
-        <li v-has-children class="has-children">
+        <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
             <a class="parent-link"
               >V-Accordion <i class="iconify" data-icon="feather:chevron-right"
@@ -92,7 +92,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
             >V-Progress</RouterLink
           >
         </li>
-        <li v-has-children class="has-children">
+        <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
             <a class="parent-link"
               >V-FlexTable <i class="iconify" data-icon="feather:chevron-right"
@@ -140,7 +140,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
           <RouterLink :to="{ name: 'components-snacks' }">V-Snack</RouterLink>
         </li>
         <li class="divider"></li>
-        <li v-has-children class="has-children">
+        <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
             <a class="parent-link"
               >Plugins <i class="iconify" data-icon="feather:chevron-right"

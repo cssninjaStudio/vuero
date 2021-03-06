@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { activePanel } from '/@src/composition/state/activePanelState'
+import { activePanel } from '/@src/state/activePanelState'
 </script>
 
 <template>

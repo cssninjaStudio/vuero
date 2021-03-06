@@ -3,16 +3,10 @@ import axios from 'axios'
 import { useHead } from '@vueuse/head'
 import { computed, onMounted, ref, watchEffect } from 'vue'
 
-import {
-  activeSidebar,
-  toggleSidebar,
-} from '/@src/composition/state/activeSidebarState'
-import {
-  adminLayout,
-  adminLayoutId,
-} from '/@src/composition/state/adminLayoutState'
+import { activeSidebar, toggleSidebar } from '/@src/state/activeSidebarState'
+import { sidebarLayout, sidebarLayoutId } from '/@src/state/sidebarLayoutState'
 
-import useDropdown from '/@src/composition/use/useDropdown'
+import useDropdown from '/@src/composable/useDropdown'
 import sleep from '/@src/utils/sleep'
 
 const conversations = [
@@ -107,7 +101,7 @@ watchEffect(onConversationChanged)
 </script>
 
 <template>
-  <component :is="adminLayout" :class="[adminLayoutId]">
+  <component :is="sidebarLayout" :class="[sidebarLayoutId]">
     <MessagesSidebar
       :conversations="conversations"
       :selected-conversation-id="selectedConversationId"

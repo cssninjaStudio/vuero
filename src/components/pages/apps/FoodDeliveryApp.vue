@@ -372,7 +372,7 @@ onUnmounted(() => {
 .food-delivery-dashboard {
   display: flex;
 
-  &.is-webapp {
+  &.is-navbar {
     margin-top: 30px;
 
     > .right {

@@ -598,7 +598,7 @@ onMounted(() => {
   align-items: center;
   margin-bottom: 20px;
 
-  &.is-webapp {
+  &.is-navbar {
     padding-top: 30px;
   }
 

@@ -30,7 +30,7 @@ const isStuck = computed(() => {
             <div class="buttons">
               <V-Button
                 icon="lnir lnir-arrow-left rem-100"
-                :to="{ name: 'admin-layouts-profile-view' }"
+                :to="{ name: 'sidebar-layouts-profile-view' }"
                 light
                 dark-outlined
               >

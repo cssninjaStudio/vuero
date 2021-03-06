@@ -252,7 +252,7 @@ import { userStack } from '/@src/data/dashboards/personal-v3/users'
 @import '../../../../assets/scss/abstracts/_variables.scss';
 @import '../../../../assets/scss/abstracts/_mixins.scss';
 
-.is-webapp {
+.is-navbar {
   .personal-dashboard {
     margin-top: 30px;
   }

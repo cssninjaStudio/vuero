@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { activePanel } from '/@src/composition/state/activePanelState'
+import { activePanel } from '/@src/state/activePanelState'
 
 type TabId = 'team' | 'projects' | 'schedule'
 const activeTab = ref<TabId>('team')

@@ -1,19 +1,8 @@
 <script setup lang="ts">
-import { computed, ref } from 'vue'
-import useDropdown from '/@src/composition/use/useDropdown'
-import { isMobileSidebarOpen } from '/@src/composition/state/mobileSidebarState'
-import { useRoute } from 'vue-router'
+import useDropdown from '/@src/composable/useDropdown'
+import { isMobileSidebarOpen } from '/@src/state/mobileSidebarState'
 
 const { dropdownElement, isOpen, toggle } = useDropdown()
-const route = useRoute()
-
-const otherLayoutLink = computed(() => {
-  if (route.fullPath.startsWith('/admin')) {
-    return route.fullPath.replace('admin', 'webapp')
-  } else {
-    return route.fullPath.replace('webapp', 'admin')
-  }
-})
 </script>
 
 <template>
@@ -89,18 +78,6 @@ const otherLayoutLink = computed(() => {
                     <span>View your profile</span>
                   </div>
                 </a>
-                <RouterLink
-                  :to="otherLayoutLink"
-                  class="dropdown-item is-media layout-switcher"
-                >
-                  <div class="icon">
-                    <i class="lnil lnil-layout"></i>
-                  </div>
-                  <div class="meta">
-                    <span>Layout</span>
-                    <span>Switch to admin/webapp</span>
-                  </div>
-                </RouterLink>
                 <hr class="dropdown-divider" />
                 <a href="#" class="dropdown-item is-media">
                   <div class="icon">

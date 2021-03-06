@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { isMobileSidebarOpen } from '/@src/composition/state/mobileSidebarState'
-import { activeSidebar } from '/@src/composition/state/activeSidebarState'
+import { isMobileSidebarOpen } from '/@src/state/mobileSidebarState'
+import { activeSidebar } from '/@src/state/activeSidebarState'
 </script>
 
 <template>
@@ -37,7 +37,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
           >
         </li>
 
-        <li v-has-children class="has-children">
+        <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
             <a class="parent-link"
               >Icons <i class="iconify" data-icon="feather:chevron-right"
@@ -79,7 +79,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
         <li>
           <RouterLink :to="{ name: 'elements-cards-basic' }">Cards</RouterLink>
         </li>
-        <li v-has-children class="has-children">
+        <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
             <a class="parent-link"
               >Tabs <i class="iconify" data-icon="feather:chevron-right"
@@ -111,7 +111,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
           <RouterLink :to="{ name: 'elements-tooltips' }">Tooltips</RouterLink>
         </li>
         <li class="divider"></li>
-        <li v-has-children class="has-children">
+        <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
             <a class="parent-link"
               >Forms <i class="iconify" data-icon="feather:chevron-right"
@@ -160,7 +160,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
             </li>
           </ul>
         </li>
-        <li v-has-children class="has-children">
+        <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
             <a class="parent-link"
               >Toggles <i class="iconify" data-icon="feather:chevron-right"

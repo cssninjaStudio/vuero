@@ -1,9 +1,6 @@
 <script setup lang="ts">
 import { defineEmit, defineProps } from 'vue'
-import {
-  activeSidebar,
-  toggleSidebar,
-} from '/@src/composition/state/activeSidebarState'
+import { activeSidebar, toggleSidebar } from '/@src/state/activeSidebarState'
 
 const props = defineProps({
   conversations: {

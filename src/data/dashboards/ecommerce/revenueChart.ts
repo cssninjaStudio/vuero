@@ -1,4 +1,4 @@
-import { themeColors } from '/@src/composition/state/themeColors'
+import { themeColors } from '/@src/state/themeColors'
 import * as formatters from '/@src/utils/apex-formatters'
 
 export const revenueChartsOptions = {

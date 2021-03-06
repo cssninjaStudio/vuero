@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { activeSidebar } from '/@src/composition/state/activeSidebarState'
+import { activeSidebar } from '/@src/state/activeSidebarState'
 </script>
 
 <template>
@@ -18,7 +18,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
     </div>
     <div class="inner" data-simplebar>
       <ul>
-        <li v-has-children class="has-children">
+        <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
             <a class="parent-link"
               >Lists <i class="iconify" data-icon="feather:chevron-right"
@@ -26,14 +26,14 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
           </div>
           <ul>
             <li>
-              <RouterLink :to="{ name: 'admin-layouts' }" class="is-submenu">
+              <RouterLink :to="{ name: 'sidebar-layouts' }" class="is-submenu">
                 <i class="lnil lnil-list-alt"></i>
                 <span>List View V1</span>
               </RouterLink>
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-layouts-list-view-2' }"
+                :to="{ name: 'sidebar-layouts-list-view-2' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-list-alt"></i>
@@ -42,7 +42,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-layouts-list-view-3' }"
+                :to="{ name: 'sidebar-layouts-list-view-3' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-list-alt"></i>
@@ -51,7 +51,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-layouts-list-view-4' }"
+                :to="{ name: 'sidebar-layouts-list-view-4' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-list-alt"></i>
@@ -60,7 +60,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
             </li>
           </ul>
         </li>
-        <li v-has-children class="has-children">
+        <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
             <a class="parent-link"
               >Flex Lists <i class="iconify" data-icon="feather:chevron-right"
@@ -69,7 +69,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
           <ul>
             <li>
               <RouterLink
-                :to="{ name: 'admin-layouts-list-flex-1' }"
+                :to="{ name: 'sidebar-layouts-list-flex-1' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-list-alt-1"></i>
@@ -78,7 +78,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-layouts-list-flex-2' }"
+                :to="{ name: 'sidebar-layouts-list-flex-2' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-list-alt-1"></i>
@@ -87,7 +87,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-layouts-list-flex-3' }"
+                :to="{ name: 'sidebar-layouts-list-flex-3' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-list-alt-1"></i>
@@ -96,7 +96,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
             </li>
           </ul>
         </li>
-        <li v-has-children class="has-children">
+        <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
             <a class="parent-link"
               >Datatable <i class="iconify" data-icon="feather:chevron-right"
@@ -105,7 +105,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
           <ul>
             <li>
               <RouterLink
-                :to="{ name: 'admin-layouts-list-datatable-1' }"
+                :to="{ name: 'sidebar-layouts-list-datatable-1' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-layout-alt"></i>
@@ -114,7 +114,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-layouts-list-datatable-2' }"
+                :to="{ name: 'sidebar-layouts-list-datatable-2' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-layout-alt"></i>
@@ -123,7 +123,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-layouts-list-datatable-3' }"
+                :to="{ name: 'sidebar-layouts-list-datatable-3' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-layout-alt"></i>
@@ -132,7 +132,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-layouts-list-datatable-4' }"
+                :to="{ name: 'sidebar-layouts-list-datatable-4' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-layout-alt"></i>
@@ -142,7 +142,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
           </ul>
         </li>
 
-        <li v-has-children class="has-children">
+        <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
             <a class="parent-link"
               >Form Layouts
@@ -152,7 +152,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
           <ul>
             <li>
               <RouterLink
-                :to="{ name: 'admin-layouts-form-layouts-1' }"
+                :to="{ name: 'sidebar-layouts-form-layouts-1' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-passport"></i>
@@ -161,7 +161,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-layouts-form-layouts-2' }"
+                :to="{ name: 'sidebar-layouts-form-layouts-2' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-passport"></i>
@@ -170,7 +170,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-layouts-form-layouts-3' }"
+                :to="{ name: 'sidebar-layouts-form-layouts-3' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-passport"></i>
@@ -179,7 +179,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-layouts-form-layouts-4' }"
+                :to="{ name: 'sidebar-layouts-form-layouts-4' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-passport"></i>
@@ -189,7 +189,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
           </ul>
         </li>
         <li class="divider"></li>
-        <li v-has-children class="has-children">
+        <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
             <a class="parent-link"
               >Card Grid <i class="iconify" data-icon="feather:chevron-right"
@@ -198,7 +198,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
           <ul>
             <li>
               <RouterLink
-                :to="{ name: 'admin-layouts-grid-cards-1' }"
+                :to="{ name: 'sidebar-layouts-grid-cards-1' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-grid-alt"></i>
@@ -207,7 +207,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-layouts-grid-cards-2' }"
+                :to="{ name: 'sidebar-layouts-grid-cards-2' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-grid-alt"></i>
@@ -216,7 +216,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-layouts-grid-cards-3' }"
+                :to="{ name: 'sidebar-layouts-grid-cards-3' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-grid-alt"></i>
@@ -225,7 +225,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-layouts-grid-cards-4' }"
+                :to="{ name: 'sidebar-layouts-grid-cards-4' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-grid-alt"></i>
@@ -234,7 +234,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
             </li>
           </ul>
         </li>
-        <li v-has-children class="has-children">
+        <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
             <a class="parent-link"
               >Tile Grid <i class="iconify" data-icon="feather:chevron-right"
@@ -243,7 +243,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
           <ul>
             <li>
               <RouterLink
-                :to="{ name: 'admin-layouts-grid-tiles-1' }"
+                :to="{ name: 'sidebar-layouts-grid-tiles-1' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-layout-alt-2"></i>
@@ -252,7 +252,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-layouts-grid-tiles-2' }"
+                :to="{ name: 'sidebar-layouts-grid-tiles-2' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-layout-alt-2"></i>
@@ -261,7 +261,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-layouts-grid-tiles-3' }"
+                :to="{ name: 'sidebar-layouts-grid-tiles-3' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-layout-alt-2"></i>
@@ -270,7 +270,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
             </li>
           </ul>
         </li>
-        <li v-has-children class="has-children">
+        <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
             <a class="parent-link"
               >User Grid <i class="iconify" data-icon="feather:chevron-right"
@@ -279,7 +279,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
           <ul>
             <li>
               <RouterLink
-                :to="{ name: 'admin-layouts-grid-users-1' }"
+                :to="{ name: 'sidebar-layouts-grid-users-1' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-users-alt"></i>
@@ -288,7 +288,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-layouts-grid-users-2' }"
+                :to="{ name: 'sidebar-layouts-grid-users-2' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-users-alt"></i>
@@ -297,7 +297,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-layouts-grid-users-3' }"
+                :to="{ name: 'sidebar-layouts-grid-users-3' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-users-alt"></i>
@@ -306,7 +306,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-layouts-grid-users-4' }"
+                :to="{ name: 'sidebar-layouts-grid-users-4' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-users-alt"></i>
@@ -316,7 +316,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
           </ul>
         </li>
         <li class="divider"></li>
-        <li v-has-children class="has-children">
+        <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
             <a class="parent-link"
               >Personal <i class="iconify" data-icon="feather:chevron-right"
@@ -325,7 +325,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
           <ul>
             <li>
               <RouterLink
-                :to="{ name: 'admin-layouts-profile-view' }"
+                :to="{ name: 'sidebar-layouts-profile-view' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-user-alt"></i>
@@ -334,7 +334,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-layouts-profile-edit' }"
+                :to="{ name: 'sidebar-layouts-profile-edit' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-pencil"></i>
@@ -343,7 +343,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-layouts-profile-notifications' }"
+                :to="{ name: 'sidebar-layouts-profile-notifications' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-notification"></i>
@@ -352,7 +352,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-layouts-profile-settings' }"
+                :to="{ name: 'sidebar-layouts-profile-settings' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-cog"></i>
@@ -361,7 +361,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
             </li>
           </ul>
         </li>
-        <li v-has-children class="has-children">
+        <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
             <a class="parent-link"
               >Pages <i class="iconify" data-icon="feather:chevron-right"
@@ -406,7 +406,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-layouts-search-results' }"
+                :to="{ name: 'sidebar-layouts-search-results' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-search-alt"></i>
@@ -415,7 +415,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-layouts-search-empty' }"
+                :to="{ name: 'sidebar-layouts-search-empty' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-search-alt"></i>
@@ -424,7 +424,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
             </li>
           </ul>
         </li>
-        <li v-has-children class="has-children">
+        <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
             <a class="parent-link"
               >Subpages <i class="iconify" data-icon="feather:chevron-right"
@@ -433,7 +433,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
           <ul>
             <li>
               <RouterLink
-                :to="{ name: 'admin-layouts-saas-billing' }"
+                :to="{ name: 'sidebar-layouts-saas-billing' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-credit-card"></i>
@@ -442,7 +442,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-layouts-action-page-1' }"
+                :to="{ name: 'sidebar-layouts-action-page-1' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-thunderbolt"></i>
@@ -451,7 +451,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-layouts-action-page-2' }"
+                :to="{ name: 'sidebar-layouts-action-page-2' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-thunderbolt"></i>
@@ -460,7 +460,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
             </li>
           </ul>
         </li>
-        <li v-has-children class="has-children">
+        <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
             <a class="parent-link"
               >Projects <i class="iconify" data-icon="feather:chevron-right"
@@ -469,7 +469,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
           <ul>
             <li>
               <RouterLink
-                :to="{ name: 'admin-layouts-projects-projects-1' }"
+                :to="{ name: 'sidebar-layouts-projects-projects-1' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-grid-alt"></i>
@@ -478,7 +478,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-layouts-projects-projects-2' }"
+                :to="{ name: 'sidebar-layouts-projects-projects-2' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-grid-alt"></i>
@@ -487,7 +487,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-layouts-projects-projects-3' }"
+                :to="{ name: 'sidebar-layouts-projects-projects-3' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-grid-alt"></i>
@@ -496,7 +496,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-layouts-projects-details' }"
+                :to="{ name: 'sidebar-layouts-projects-details' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-layout"></i>
@@ -505,7 +505,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-layouts-kanban-board' }"
+                :to="{ name: 'sidebar-layouts-kanban-board' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-layout-alt-1"></i>
@@ -515,7 +515,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
           </ul>
         </li>
         <li class="divider"></li>
-        <li v-has-children class="has-children">
+        <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
             <a class="parent-link"
               >Utility <i class="iconify" data-icon="feather:chevron-right"
@@ -524,7 +524,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
           <ul>
             <li>
               <RouterLink
-                :to="{ name: 'admin-layouts-utility-account-confirm' }"
+                :to="{ name: 'sidebar-layouts-utility-account-confirm' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-thunderbolt"></i>
@@ -533,7 +533,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-layouts-utility-promotion' }"
+                :to="{ name: 'sidebar-layouts-utility-promotion' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-magnet"></i>
@@ -542,7 +542,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-layouts-utility-invoice' }"
+                :to="{ name: 'sidebar-layouts-utility-invoice' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-calculator-alt"></i>
@@ -557,7 +557,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
             </li>
           </ul>
         </li>
-        <li v-has-children class="has-children">
+        <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
             <a class="parent-link"
               >Onboarding <i class="iconify" data-icon="feather:chevron-right"
@@ -566,7 +566,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
           <ul>
             <li>
               <RouterLink
-                :to="{ name: 'admin-layouts-onboarding-welcome' }"
+                :to="{ name: 'sidebar-layouts-onboarding-welcome' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-door-alt"></i>
@@ -575,7 +575,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-layouts-onboarding-page-1' }"
+                :to="{ name: 'sidebar-layouts-onboarding-page-1' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-train"></i>
@@ -584,7 +584,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-layouts-onboarding-page-2' }"
+                :to="{ name: 'sidebar-layouts-onboarding-page-2' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-train-alt"></i>
@@ -593,7 +593,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-layouts-onboarding-page-3' }"
+                :to="{ name: 'sidebar-layouts-onboarding-page-3' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-car"></i>
@@ -602,7 +602,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-layouts-onboarding-page-4' }"
+                :to="{ name: 'sidebar-layouts-onboarding-page-4' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-car-alt"></i>
@@ -611,7 +611,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'admin-layouts-onboarding-page-5' }"
+                :to="{ name: 'sidebar-layouts-onboarding-page-5' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-train"></i>
@@ -620,7 +620,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
             </li>
           </ul>
         </li>
-        <li v-has-children class="has-children">
+        <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
             <a class="parent-link"
               >Error Pages <i class="iconify" data-icon="feather:chevron-right"

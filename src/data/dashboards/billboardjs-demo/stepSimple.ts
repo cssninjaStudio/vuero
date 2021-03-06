@@ -1,4 +1,4 @@
-import { themeColors } from '/@src/composition/state/themeColors'
+import { themeColors } from '/@src/state/themeColors'
 import { step, areaStep } from 'billboard.js'
 import { ref } from 'vue'
 

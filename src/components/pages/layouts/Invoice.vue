@@ -211,7 +211,7 @@ import { popovers } from '/@src/data/users/userPopovers'
   max-width: 740px;
   margin: 0 auto;
 
-  &.is-webapp {
+  &.is-navbar {
     margin-top: 30px;
   }
 

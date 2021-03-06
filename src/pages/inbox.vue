@@ -2,8 +2,8 @@
 import { useHead } from '@vueuse/head'
 import { computed, ref, watch } from 'vue'
 
-import { isDark } from '/@src/composition/state/darkModeState.ts'
-import useDropdown from '/@src/composition/use/useDropdown'
+import { isDark } from '/@src/state/darkModeState.ts'
+import useDropdown from '/@src/composable/useDropdown'
 
 const contactSearchOpen = ref(false)
 const activeTab = ref('inbox')

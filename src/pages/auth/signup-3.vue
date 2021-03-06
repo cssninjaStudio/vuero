@@ -2,9 +2,9 @@
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 import { useHead } from '@vueuse/head'
-import useNotyf from '/@src/composition/use/useNotyf'
+import useNotyf from '/@src/composable/useNotyf'
 
-import { isDark } from '/@src/composition/state/darkModeState.ts'
+import { isDark } from '/@src/state/darkModeState.ts'
 import sleep from '/@src/utils/sleep'
 
 const router = useRouter()
@@ -16,7 +16,7 @@ const handleSignup = async () => {
     isLoading.value = true
     sleep(2000)
     notif.success('Welcome, Erik Kovalsky')
-    router.push({ name: 'admin-dashboards' })
+    router.push({ name: 'sidebar-dashboards' })
     isLoading.value = false
   }
 }

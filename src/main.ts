@@ -7,12 +7,15 @@ import VueApexCharts from 'vue3-apexcharts'
 import VueCKEditor from '@ckeditor/ckeditor5-vue'
 import VueTippy from 'vue-tippy'
 
-import hasChildren from './directives/has-children'
+import App from './App.vue'
+import i18n from './i18n'
+import router from './router'
+
+import hasNestedRouterLink from './directives/has-nested-router-link'
 import background from './directives/background'
 
 import 'simplebar'
 import '@purge-icons/generated'
-
 import 'nprogress/nprogress.css'
 import '@vueform/multiselect/themes/default.css'
 import '@vueform/slider/themes/default.css'
@@ -30,10 +33,6 @@ import './assets/scss/vendors/line-icons-pro.css'
 import './assets/scss/vendors/prism-coldark-cold.css'
 import './assets/scss/main.scss'
 
-import App from './App.vue'
-import i18n from './i18n'
-import router from './router'
-
 const app = createApp(App)
 const head = createHead()
 
@@ -43,7 +42,6 @@ app.use(head)
 app.use(VCalendar)
 app.use(VueApexCharts)
 app.use(VueCKEditor)
-// app.use(VueFilePond)
 app.use(VueTippy, {
   defaultProps: {
     theme: 'light',
@@ -53,7 +51,7 @@ app.use(VueTippy, {
 app.component(VueMultiselect.name, VueMultiselect)
 app.component(VueSlider.name, VueSlider)
 
-app.directive('has-children', hasChildren)
+app.directive('has-nested-router-link', hasNestedRouterLink)
 app.directive('background', background)
 
 app.mount('#app')

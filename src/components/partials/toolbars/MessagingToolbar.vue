@@ -2,9 +2,9 @@
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 
-import { isDark } from '/@src/composition/state/darkModeState.ts'
-import { activePanel } from '/@src/composition/state/activePanelState'
-import useDropdown from '/@src/composition/use/useDropdown'
+import { isDark } from '/@src/state/darkModeState.ts'
+import { activePanel } from '/@src/state/activePanelState'
+import useDropdown from '/@src/composable/useDropdown'
 
 const { locale } = useI18n()
 const { dropdownElement, isOpen, toggle } = useDropdown()
@@ -73,7 +73,7 @@ const localFlagSrc = computed(() => {
               <div class="heading-right">
                 <RouterLink
                   class="notification-link"
-                  :to="{ name: 'admin-layouts-profile-notifications' }"
+                  :to="{ name: 'sidebar-layouts-profile-notifications' }"
                   >See all</RouterLink
                 >
               </div>

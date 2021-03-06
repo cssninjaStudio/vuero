@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import { useWindowScroll } from '@vueuse/core'
 import { computed, ref, watchEffect } from 'vue'
-import { isLargeScreen } from '/@src/composition/state/responsiveState'
+import { isLargeScreen } from '/@src/state/responsiveState'
 import VueScrollTo from 'vue-scrollto'
 
-import { isDark } from '/@src/composition/state/darkModeState.ts'
+import { isDark } from '/@src/state/darkModeState.ts'
 
 const isMobileNavOpen = ref(false)
 const scrollTo = VueScrollTo.scrollTo
@@ -53,7 +53,7 @@ watchEffect(() => {
       <div class="navbar-start">
         <div class="navbar-item">
           <a
-            href="https://themeforest.net/item/huro-multipurpose-admin-and-webapp-ui-kit/28933249"
+            href="https://themeforest.net/item/huro-multipurpose-sidebar-and-navbar-ui-kit/28933249"
             class="nav-link is-active"
           >
             Buy Now

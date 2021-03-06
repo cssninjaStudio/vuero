@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { defineProps } from 'vue'
-import useDropdown from '/@src/composition/use/useDropdown'
+import useDropdown from '/@src/composable/useDropdown'
 
 defineProps({
   title: {

@@ -12,7 +12,7 @@
 3. Webapp Navbar
 ========================================================================== */
 
-.webapp-navbar {
+.navbar-navbar {
   position: fixed;
   top: 0;
   left: 0;
@@ -47,7 +47,7 @@
     background: $landing-dark-2;
     border-bottom-color: $landing-dark-2;
 
-    .webapp-navbar-inner {
+    .navbar-navbar-inner {
       .left {
         .separator {
           border-color: lighten($landing-dark-2, 18%);
@@ -215,7 +215,7 @@
     }
   }
 
-  .webapp-navbar-inner {
+  .navbar-navbar-inner {
     position: relative;
     height: 100%;
     width: 100%;
@@ -833,7 +833,7 @@
 ========================================================================== */
 
 .is-dark {
-  .webapp-navbar:not(.is-colored) {
+  .navbar-navbar:not(.is-colored) {
     background: darken($dark-sidebar, 2%);
     border-color: lighten($dark-sidebar, 1%);
 
@@ -849,7 +849,7 @@
       }
     }
 
-    .webapp-navbar-inner {
+    .navbar-navbar-inner {
       .left {
         .separator {
           border-color: lighten($dark-sidebar, 12%);
@@ -1036,9 +1036,9 @@
     }
   }
 
-  .webapp-navbar {
+  .navbar-navbar {
     &.is-colored {
-      .webapp-navbar-inner {
+      .navbar-navbar-inner {
         .left {
           .title {
             color: $smoke-white !important;
@@ -1226,11 +1226,11 @@
     }
   }
 
-  .webapp-subnavbar {
+  .navbar-subnavbar {
     background: lighten($dark-sidebar, 2%);
     border-color: lighten($dark-sidebar, 4%);
 
-    .webapp-subnavbar-inner {
+    .navbar-subnavbar-inner {
       .tabs {
         li {
           &.is-active {
@@ -1330,7 +1330,7 @@
 5. Webapp Subnavbar
 ========================================================================== */
 
-.webapp-subnavbar {
+.navbar-subnavbar {
   position: fixed;
   width: 100%;
   height: 0;
@@ -1356,7 +1356,7 @@
     transform: translateY(0);
   }
 
-  .webapp-subnavbar-inner {
+  .navbar-subnavbar-inner {
     position: relative;
     height: 100%;
     width: 100%;
@@ -1566,8 +1566,8 @@
 }
 
 .is-dark {
-  .webapp-subnavbar {
-    .webapp-subnavbar-inner {
+  .navbar-subnavbar {
+    .navbar-subnavbar-inner {
       .tab-content {
         .tab-content-inner {
           .center {

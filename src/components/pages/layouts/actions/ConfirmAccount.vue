@@ -3,7 +3,7 @@ import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 
 import sleep from '/@src/utils/sleep'
-import useNotyf from '/@src/composition/use/useNotyf'
+import useNotyf from '/@src/composable/useNotyf'
 
 const notyf = useNotyf()
 const router = useRouter()
@@ -16,7 +16,7 @@ const confirm = async () => {
 
   await sleep()
   router.push({
-    name: 'admin-dashboards',
+    name: 'sidebar-dashboards',
   })
 
   await sleep()

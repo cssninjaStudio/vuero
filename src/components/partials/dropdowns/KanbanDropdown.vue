@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { defineEmit } from 'vue'
-import useDropdown from '/@src/composition/use/useDropdown'
+import useDropdown from '/@src/composable/useDropdown'
 const { dropdownElement, isOpen, toggle } = useDropdown()
 
 const emit = defineEmit(['rename', 'collapse'])

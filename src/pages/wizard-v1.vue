@@ -8,7 +8,7 @@ import {
   currentStep,
   saveData,
   resetData,
-} from '/@src/composition/state/wizardState'
+} from '/@src/state/wizardState'
 
 const route = useRoute()
 const router = useRouter()
@@ -27,7 +27,7 @@ const validateStep = async () => {
     currentStep.value++
   } else {
     router.push({
-      name: 'webapp-layouts-projects-details',
+      name: 'navbar-layouts-projects-details',
     })
     resetData()
   }

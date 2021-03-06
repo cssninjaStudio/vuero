@@ -2,7 +2,7 @@
 import { useHead } from '@vueuse/head'
 import { computed, ref } from 'vue'
 
-import useDropdown from '/@src/composition/use/useDropdown'
+import useDropdown from '/@src/composable/useDropdown'
 
 const conversations = [
   {

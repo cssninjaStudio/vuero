@@ -15,7 +15,7 @@ useHead({
         <RouterLink :to="{ name: 'index' }" class="logo">
           <AnimatedLogo width="38px" height="38px" />
         </RouterLink>
-        <RouterLink class="action-link" :to="{ name: 'admin-layouts' }"
+        <RouterLink class="action-link" :to="{ name: 'sidebar-layouts' }"
           >Take me Back</RouterLink
         >
       </div>

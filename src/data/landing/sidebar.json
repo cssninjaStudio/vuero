@@ -1,0 +1,1029 @@
+[
+  {
+    "name": "Messaging V1",
+    "category": "APP",
+    "displayOrder": 21,
+    "route": {
+      "name": "messaging-v1",
+      "path": "/messaging-v1"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/messaging-v1-light.webp",
+      "dark": "/images/screenshots/sidebar/messaging-v1-dark.webp"
+    }
+  },
+  {
+    "name": "Action Page V1",
+    "category": "LAYOUTS",
+    "displayOrder": 59,
+    "route": {
+      "name": "sidebar-layouts-action-page-1",
+      "path": "/sidebar/layouts/action-page-1"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/action-page-v1-light.webp",
+      "dark": "/images/screenshots/sidebar/action-page-v1-dark.webp"
+    }
+  },
+  {
+    "name": "Action Page V2",
+    "category": "LAYOUTS",
+    "displayOrder": 60,
+    "route": {
+      "name": "sidebar-layouts-action-page-2",
+      "path": "/sidebar/layouts/action-page-2"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/action-page-v2-light.webp",
+      "dark": "/images/screenshots/sidebar/action-page-v2-dark.webp"
+    }
+  },
+  {
+    "name": "Form V1",
+    "category": "LAYOUTS",
+    "displayOrder": 36,
+    "route": {
+      "name": "sidebar-layouts-form-layouts-1",
+      "path": "/sidebar/layouts/form-layouts-1"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/form-v1-light.webp",
+      "dark": "/images/screenshots/sidebar/form-v1-dark.webp"
+    }
+  },
+  {
+    "name": "Form V2",
+    "category": "LAYOUTS",
+    "displayOrder": 37,
+    "route": {
+      "name": "sidebar-layouts-form-layouts-2",
+      "path": "/sidebar/layouts/form-layouts-2"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/form-v2-light.webp",
+      "dark": "/images/screenshots/sidebar/form-v2-dark.webp"
+    }
+  },
+  {
+    "name": "Form V3",
+    "category": "LAYOUTS",
+    "displayOrder": 38,
+    "route": {
+      "name": "sidebar-layouts-form-layouts-3",
+      "path": "/sidebar/layouts/form-layouts-3"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/form-v3-light.webp",
+      "dark": "/images/screenshots/sidebar/form-v3-dark.webp"
+    }
+  },
+  {
+    "name": "Form V4",
+    "category": "LAYOUTS",
+    "displayOrder": 39,
+    "route": {
+      "name": "sidebar-layouts-form-layouts-4",
+      "path": "/sidebar/layouts/form-layouts-4"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/form-v4-light.webp",
+      "dark": "/images/screenshots/sidebar/form-v4-dark.webp"
+    }
+  },
+  {
+    "name": "Grid Card V1",
+    "category": "LAYOUTS",
+    "displayOrder": 40,
+    "route": {
+      "name": "sidebar-layouts-grid-cards-1",
+      "path": "/sidebar/layouts/grid-cards-1"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/grid-card-v1-light.webp",
+      "dark": "/images/screenshots/sidebar/grid-card-v1-dark.webp"
+    }
+  },
+  {
+    "name": "Grid Card V2",
+    "category": "LAYOUTS",
+    "displayOrder": 41,
+    "route": {
+      "name": "sidebar-layouts-grid-cards-2",
+      "path": "/sidebar/layouts/grid-cards-2"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/grid-card-v2-light.webp",
+      "dark": "/images/screenshots/sidebar/grid-card-v2-dark.webp"
+    }
+  },
+  {
+    "name": "Grid Card V3",
+    "category": "LAYOUTS",
+    "displayOrder": 42,
+    "route": {
+      "name": "sidebar-layouts-grid-cards-3",
+      "path": "/sidebar/layouts/grid-cards-3"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/grid-card-v3-light.webp",
+      "dark": "/images/screenshots/sidebar/grid-card-v3-dark.webp"
+    }
+  },
+  {
+    "name": "Grid Card V4",
+    "category": "LAYOUTS",
+    "displayOrder": 43,
+    "route": {
+      "name": "sidebar-layouts-grid-cards-4",
+      "path": "/sidebar/layouts/grid-cards-4"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/grid-card-v4-light.webp",
+      "dark": "/images/screenshots/sidebar/grid-card-v4-dark.webp"
+    }
+  },
+  {
+    "name": "Grid Tiles V1",
+    "category": "LAYOUTS",
+    "displayOrder": 44,
+    "route": {
+      "name": "sidebar-layouts-grid-tiles-1",
+      "path": "/sidebar/layouts/grid-tiles-1"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/grid-tiles-v1-light.webp",
+      "dark": "/images/screenshots/sidebar/grid-tiles-v1-dark.webp"
+    }
+  },
+  {
+    "name": "Grid Tiles V2",
+    "category": "LAYOUTS",
+    "displayOrder": 45,
+    "route": {
+      "name": "sidebar-layouts-grid-tiles-2",
+      "path": "/sidebar/layouts/grid-tiles-2"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/grid-tiles-v2-light.webp",
+      "dark": "/images/screenshots/sidebar/grid-tiles-v2-dark.webp"
+    }
+  },
+  {
+    "name": "Grid Tiles V3",
+    "category": "LAYOUTS",
+    "displayOrder": 46,
+    "route": {
+      "name": "sidebar-layouts-grid-tiles-3",
+      "path": "/sidebar/layouts/grid-tiles-3"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/grid-tiles-v3-light.webp",
+      "dark": "/images/screenshots/sidebar/grid-tiles-v3-dark.webp"
+    }
+  },
+  {
+    "name": "Grid Users V1",
+    "category": "LAYOUTS",
+    "displayOrder": 47,
+    "route": {
+      "name": "sidebar-layouts-grid-users-1",
+      "path": "/sidebar/layouts/grid-users-1"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/grid-users-v1-light.webp",
+      "dark": "/images/screenshots/sidebar/grid-users-v1-dark.webp"
+    }
+  },
+  {
+    "name": "Grid Users V2",
+    "category": "LAYOUTS",
+    "displayOrder": 48,
+    "route": {
+      "name": "sidebar-layouts-grid-users-2",
+      "path": "/sidebar/layouts/grid-users-2"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/grid-users-v2-light.webp",
+      "dark": "/images/screenshots/sidebar/grid-users-v2-dark.webp"
+    }
+  },
+  {
+    "name": "Grid Users V3",
+    "category": "LAYOUTS",
+    "displayOrder": 49,
+    "route": {
+      "name": "sidebar-layouts-grid-users-3",
+      "path": "/sidebar/layouts/grid-users-3"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/grid-users-v3-light.webp",
+      "dark": "/images/screenshots/sidebar/grid-users-v3-dark.webp"
+    }
+  },
+  {
+    "name": "Grid Users V4",
+    "category": "LAYOUTS",
+    "displayOrder": 50,
+    "route": {
+      "name": "sidebar-layouts-grid-users-4",
+      "path": "/sidebar/layouts/grid-users-4"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/grid-users-v4-light.webp",
+      "dark": "/images/screenshots/sidebar/grid-users-v4-dark.webp"
+    }
+  },
+  {
+    "name": "Onboarding Standard",
+    "category": "LAYOUTS",
+    "displayOrder": 32,
+    "route": {
+      "name": "sidebar-layouts-onboarding-welcome",
+      "path": "/sidebar/layouts/onboarding-welcome"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/onboarding-standard-light.webp",
+      "dark": "/images/screenshots/sidebar/onboarding-standard-dark.webp"
+    }
+  },
+  {
+    "name": "Kanban Board",
+    "category": "LAYOUTS",
+    "displayOrder": 65,
+    "route": {
+      "name": "sidebar-layouts-kanban-board",
+      "path": "/sidebar/layouts/kanban-board"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/kanban-board-light.webp",
+      "dark": "/images/screenshots/sidebar/kanban-board-dark.webp"
+    }
+  },
+  {
+    "name": "List Datatable V1",
+    "category": "LAYOUTS",
+    "displayOrder": 32,
+    "route": {
+      "name": "sidebar-layouts-list-datatable-1",
+      "path": "/sidebar/layouts/list-datatable-1"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/list-datatable-v1-light.webp",
+      "dark": "/images/screenshots/sidebar/list-datatable-v1-dark.webp"
+    }
+  },
+  {
+    "name": "List Datatable V2",
+    "category": "LAYOUTS",
+    "displayOrder": 33,
+    "route": {
+      "name": "sidebar-layouts-list-datatable-2",
+      "path": "/sidebar/layouts/list-datatable-2"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/list-datatable-v2-light.webp",
+      "dark": "/images/screenshots/sidebar/list-datatable-v2-dark.webp"
+    }
+  },
+  {
+    "name": "List Datatable V3",
+    "category": "LAYOUTS",
+    "displayOrder": 34,
+    "route": {
+      "name": "sidebar-layouts-list-datatable-3",
+      "path": "/sidebar/layouts/list-datatable-3"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/list-datatable-v3-light.webp",
+      "dark": "/images/screenshots/sidebar/list-datatable-v3-dark.webp"
+    }
+  },
+  {
+    "name": "List Datatable V4",
+    "category": "LAYOUTS",
+    "displayOrder": 35,
+    "route": {
+      "name": "sidebar-layouts-list-datatable-4",
+      "path": "/sidebar/layouts/list-datatable-4"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/list-datatable-v4-light.webp",
+      "dark": "/images/screenshots/sidebar/list-datatable-v4-dark.webp"
+    }
+  },
+  {
+    "name": "List Flex V1",
+    "category": "LAYOUTS",
+    "displayOrder": 29,
+    "route": {
+      "name": "sidebar-layouts-list-flex-1",
+      "path": "/sidebar/layouts/list-flex-1"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/list-flex-v1-light.webp",
+      "dark": "/images/screenshots/sidebar/list-flex-v1-dark.webp"
+    }
+  },
+  {
+    "name": "List Flex V2",
+    "category": "LAYOUTS",
+    "displayOrder": 30,
+    "route": {
+      "name": "sidebar-layouts-list-flex-2",
+      "path": "/sidebar/layouts/list-flex-2"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/list-flex-v2-light.webp",
+      "dark": "/images/screenshots/sidebar/list-flex-v2-dark.webp"
+    }
+  },
+  {
+    "name": "List Flex V3",
+    "category": "LAYOUTS",
+    "displayOrder": 31,
+    "route": {
+      "name": "sidebar-layouts-list-flex-3",
+      "path": "/sidebar/layouts/list-flex-3"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/list-flex-v3-light.webp",
+      "dark": "/images/screenshots/sidebar/list-flex-v3-dark.webp"
+    }
+  },
+  {
+    "name": "Homepage (List View V1)",
+    "category": "LAYOUTS",
+    "displayOrder": 25,
+    "route": {
+      "name": "sidebar-layouts",
+      "path": "/sidebar/layouts/"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/homepage-list-view-v1--light.webp",
+      "dark": "/images/screenshots/sidebar/homepage-list-view-v1--dark.webp"
+    }
+  },
+  {
+    "name": "List View V2",
+    "category": "LAYOUTS",
+    "displayOrder": 26,
+    "route": {
+      "name": "sidebar-layouts-list-view-2",
+      "path": "/sidebar/layouts/list-view-2"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/list-view-v2-light.webp",
+      "dark": "/images/screenshots/sidebar/list-view-v2-dark.webp"
+    }
+  },
+  {
+    "name": "List View V3",
+    "category": "LAYOUTS",
+    "displayOrder": 27,
+    "route": {
+      "name": "sidebar-layouts-list-view-3",
+      "path": "/sidebar/layouts/list-view-3"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/list-view-v3-light.webp",
+      "dark": "/images/screenshots/sidebar/list-view-v3-dark.webp"
+    }
+  },
+  {
+    "name": "List View V4",
+    "category": "LAYOUTS",
+    "displayOrder": 28,
+    "route": {
+      "name": "sidebar-layouts-list-view-4",
+      "path": "/sidebar/layouts/list-view-4"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/list-view-v4-light.webp",
+      "dark": "/images/screenshots/sidebar/list-view-v4-dark.webp"
+    }
+  },
+  {
+    "name": "Onboarding Page V1",
+    "category": "LAYOUTS",
+    "displayOrder": 70,
+    "route": {
+      "name": "sidebar-layouts-onboarding-page-1",
+      "path": "/sidebar/layouts/onboarding-page-1"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/onboarding-page-v1-light.webp",
+      "dark": "/images/screenshots/sidebar/onboarding-page-v1-dark.webp"
+    }
+  },
+  {
+    "name": "Onboarding Page V2",
+    "category": "LAYOUTS",
+    "displayOrder": 71,
+    "route": {
+      "name": "sidebar-layouts-onboarding-page-2",
+      "path": "/sidebar/layouts/onboarding-page-2"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/onboarding-page-v2-light.webp",
+      "dark": "/images/screenshots/sidebar/onboarding-page-v2-dark.webp"
+    }
+  },
+  {
+    "name": "Onboarding Page V3",
+    "category": "LAYOUTS",
+    "displayOrder": 72,
+    "route": {
+      "name": "sidebar-layouts-onboarding-page-3",
+      "path": "/sidebar/layouts/onboarding-page-3"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/onboarding-page-v3-light.webp",
+      "dark": "/images/screenshots/sidebar/onboarding-page-v3-dark.webp"
+    }
+  },
+  {
+    "name": "Onboarding Page V4",
+    "category": "LAYOUTS",
+    "displayOrder": 73,
+    "route": {
+      "name": "sidebar-layouts-onboarding-page-4",
+      "path": "/sidebar/layouts/onboarding-page-4"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/onboarding-page-v4-light.webp",
+      "dark": "/images/screenshots/sidebar/onboarding-page-v4-dark.webp"
+    }
+  },
+  {
+    "name": "Onboarding Page V5",
+    "category": "LAYOUTS",
+    "displayOrder": 74,
+    "route": {
+      "name": "sidebar-layouts-onboarding-page-5",
+      "path": "/sidebar/layouts/onboarding-page-5"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/onboarding-page-v5-light.webp",
+      "dark": "/images/screenshots/sidebar/onboarding-page-v5-dark.webp"
+    }
+  },
+  {
+    "name": "Profile Edit",
+    "category": "LAYOUTS",
+    "displayOrder": 52,
+    "route": {
+      "name": "sidebar-layouts-profile-edit",
+      "path": "/sidebar/layouts/profile-edit"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/profile-edit-light.webp",
+      "dark": "/images/screenshots/sidebar/profile-edit-dark.webp"
+    }
+  },
+  {
+    "name": "Profile Edit Experience",
+    "category": "LAYOUTS",
+    "displayOrder": 53,
+    "route": {
+      "name": "sidebar-layouts-profile-edit-experience",
+      "path": "/sidebar/layouts/profile-edit/experience"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/profile-edit-experience-light.webp",
+      "dark": "/images/screenshots/sidebar/profile-edit-experience-dark.webp"
+    }
+  },
+  {
+    "name": "Profile Edit Skills",
+    "category": "LAYOUTS",
+    "displayOrder": 54,
+    "route": {
+      "name": "sidebar-layouts-profile-edit-skills",
+      "path": "/sidebar/layouts/profile-edit/skills"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/profile-edit-skills-light.webp",
+      "dark": "/images/screenshots/sidebar/profile-edit-skills-dark.webp"
+    }
+  },
+  {
+    "name": "Profile Edit Settings",
+    "category": "LAYOUTS",
+    "displayOrder": 55,
+    "route": {
+      "name": "sidebar-layouts-profile-edit-settings",
+      "path": "/sidebar/layouts/profile-edit/settings"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/profile-edit-settings-light.webp",
+      "dark": "/images/screenshots/sidebar/profile-edit-settings-dark.webp"
+    }
+  },
+  {
+    "name": "Profile Notifications",
+    "category": "LAYOUTS",
+    "displayOrder": 27,
+    "route": {
+      "name": "sidebar-layouts-profile-notifications",
+      "path": "/sidebar/layouts/profile-notifications"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/profile-notifications-light.webp",
+      "dark": "/images/screenshots/sidebar/profile-notifications-dark.webp"
+    }
+  },
+  {
+    "name": "Profile Settings",
+    "category": "LAYOUTS",
+    "displayOrder": 28,
+    "route": {
+      "name": "sidebar-layouts-profile-settings",
+      "path": "/sidebar/layouts/profile-settings"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/profile-settings-light.webp",
+      "dark": "/images/screenshots/sidebar/profile-settings-dark.webp"
+    }
+  },
+  {
+    "name": "Profile View",
+    "category": "LAYOUTS",
+    "displayOrder": 51,
+    "route": {
+      "name": "sidebar-layouts-profile-view",
+      "path": "/sidebar/layouts/profile-view"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/profile-view-light.webp",
+      "dark": "/images/screenshots/sidebar/profile-view-dark.webp"
+    }
+  },
+  {
+    "name": "Projects Details",
+    "category": "LAYOUTS",
+    "displayOrder": 64,
+    "route": {
+      "name": "sidebar-layouts-projects-details",
+      "path": "/sidebar/layouts/projects-details"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/projects-details-light.webp",
+      "dark": "/images/screenshots/sidebar/projects-details-dark.webp"
+    }
+  },
+  {
+    "name": "Projects List V1",
+    "category": "LAYOUTS",
+    "displayOrder": 60,
+    "route": {
+      "name": "sidebar-layouts-projects-projects-1",
+      "path": "/sidebar/layouts/projects-projects-1"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/projects-list-v1-light.webp",
+      "dark": "/images/screenshots/sidebar/projects-list-v1-dark.webp"
+    }
+  },
+  {
+    "name": "Projects List V2",
+    "category": "LAYOUTS",
+    "displayOrder": 61,
+    "route": {
+      "name": "sidebar-layouts-projects-projects-2",
+      "path": "/sidebar/layouts/projects-projects-2"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/projects-list-v2-light.webp",
+      "dark": "/images/screenshots/sidebar/projects-list-v2-dark.webp"
+    }
+  },
+  {
+    "name": "Projects List V3",
+    "category": "LAYOUTS",
+    "displayOrder": 62,
+    "route": {
+      "name": "sidebar-layouts-projects-projects-3",
+      "path": "/sidebar/layouts/projects-projects-3"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/projects-list-v3-light.webp",
+      "dark": "/images/screenshots/sidebar/projects-list-v3-dark.webp"
+    }
+  },
+  {
+    "name": "SaaS Billing",
+    "category": "LAYOUTS",
+    "displayOrder": 58,
+    "route": {
+      "name": "sidebar-layouts-saas-billing",
+      "path": "/sidebar/layouts/saas-billing"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/saas-billing-light.webp",
+      "dark": "/images/screenshots/sidebar/saas-billing-dark.webp"
+    }
+  },
+  {
+    "name": "Search Empty",
+    "category": "LAYOUTS",
+    "displayOrder": 57,
+    "route": {
+      "name": "sidebar-layouts-search-empty",
+      "path": "/sidebar/layouts/search-empty"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/search-empty-light.webp",
+      "dark": "/images/screenshots/sidebar/search-empty-dark.webp"
+    }
+  },
+  {
+    "name": "Search Results",
+    "category": "LAYOUTS",
+    "displayOrder": 56,
+    "route": {
+      "name": "sidebar-layouts-search-results",
+      "path": "/sidebar/layouts/search-results"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/search-results-light.webp",
+      "dark": "/images/screenshots/sidebar/search-results-dark.webp"
+    }
+  },
+  {
+    "name": "Account Confirm",
+    "category": "UTILITY",
+    "displayOrder": 66,
+    "route": {
+      "name": "sidebar-layouts-utility-account-confirm",
+      "path": "/sidebar/layouts/utility-account-confirm"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/account-confirm-light.webp",
+      "dark": "/images/screenshots/sidebar/account-confirm-dark.webp"
+    }
+  },
+  {
+    "name": "Invoice",
+    "category": "UTILITY",
+    "displayOrder": 68,
+    "route": {
+      "name": "sidebar-layouts-utility-invoice",
+      "path": "/sidebar/layouts/utility-invoice"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/invoice-light.webp",
+      "dark": "/images/screenshots/sidebar/invoice-dark.webp"
+    }
+  },
+  {
+    "name": "Promotion",
+    "category": "UTILITY",
+    "displayOrder": 67,
+    "route": {
+      "name": "sidebar-layouts-utility-promotion",
+      "path": "/sidebar/layouts/utility-promotion"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/promotion-light.webp",
+      "dark": "/images/screenshots/sidebar/promotion-dark.webp"
+    }
+  },
+  {
+    "name": "Food Delivery",
+    "category": "APP",
+    "displayOrder": 20,
+    "route": {
+      "name": "sidebar-dashboards-food-delivery",
+      "path": "/sidebar/dashboards/food-delivery"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/food-delivery-light.webp",
+      "dark": "/images/screenshots/sidebar/food-delivery-dark.webp"
+    }
+  },
+  {
+    "name": "Banking V1",
+    "category": "DASHBOARD",
+    "displayOrder": 7,
+    "route": {
+      "name": "sidebar-dashboards-banking-1",
+      "path": "/sidebar/dashboards/banking-1"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/banking-v1-light.webp",
+      "dark": "/images/screenshots/sidebar/banking-v1-dark.webp"
+    }
+  },
+  {
+    "name": "Banking V2",
+    "category": "DASHBOARD",
+    "displayOrder": 8,
+    "route": {
+      "name": "sidebar-dashboards-banking-2",
+      "path": "/sidebar/dashboards/banking-2"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/banking-v2-light.webp",
+      "dark": "/images/screenshots/sidebar/banking-v2-dark.webp"
+    }
+  },
+  {
+    "name": "Banking V3",
+    "category": "DASHBOARD",
+    "displayOrder": 9,
+    "route": {
+      "name": "sidebar-dashboards-banking-3",
+      "path": "/sidebar/dashboards/banking-3"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/banking-v3-light.webp",
+      "dark": "/images/screenshots/sidebar/banking-v3-dark.webp"
+    }
+  },
+  {
+    "name": "Flights",
+    "category": "DASHBOARD",
+    "displayOrder": 10,
+    "route": {
+      "name": "sidebar-dashboards-flights",
+      "path": "/sidebar/dashboards/flights"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/flights-light.webp",
+      "dark": "/images/screenshots/sidebar/flights-dark.webp"
+    }
+  },
+  {
+    "name": "Company",
+    "category": "DASHBOARD",
+    "displayOrder": 11,
+    "route": {
+      "name": "sidebar-dashboards-company",
+      "path": "/sidebar/dashboards/company"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/company-light.webp",
+      "dark": "/images/screenshots/sidebar/company-dark.webp"
+    }
+  },
+  {
+    "name": "Human Ressources",
+    "category": "DASHBOARD",
+    "displayOrder": 12,
+    "route": {
+      "name": "sidebar-dashboards-human-ressources",
+      "path": "/sidebar/dashboards/human-ressources"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/human-ressources-light.webp",
+      "dark": "/images/screenshots/sidebar/human-ressources-dark.webp"
+    }
+  },
+  {
+    "name": "Course Dashboard",
+    "category": "DASHBOARD",
+    "displayOrder": 13,
+    "route": {
+      "name": "sidebar-dashboards-course",
+      "path": "/sidebar/dashboards/course"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/course-dashboard-light.webp",
+      "dark": "/images/screenshots/sidebar/course-dashboard-dark.webp"
+    }
+  },
+  {
+    "name": "Charts Apex",
+    "category": "DASHBOARD",
+    "displayOrder": 22,
+    "route": {
+      "name": "sidebar-dashboards-charts-apex",
+      "path": "/sidebar/dashboards/charts-apex"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/charts-apex-light.webp",
+      "dark": "/images/screenshots/sidebar/charts-apex-dark.webp"
+    }
+  },
+  {
+    "name": "Charts BillboardsJS",
+    "category": "DASHBOARD",
+    "displayOrder": 23,
+    "route": {
+      "name": "sidebar-dashboards-charts-billboardsjs",
+      "path": "/sidebar/dashboards/charts-billboardsjs"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/charts-billboardsjs-light.webp",
+      "dark": "/images/screenshots/sidebar/charts-billboardsjs-dark.webp"
+    }
+  },
+  {
+    "name": "Ecommerce V1",
+    "category": "DASHBOARD",
+    "displayOrder": 19,
+    "route": {
+      "name": "sidebar-dashboards-ecommerce-1",
+      "path": "/sidebar/dashboards/ecommerce-1"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/ecommerce-v1-light.webp",
+      "dark": "/images/screenshots/sidebar/ecommerce-v1-dark.webp"
+    }
+  },
+  {
+    "name": "Analytics",
+    "category": "DASHBOARD",
+    "displayOrder": 4,
+    "route": {
+      "name": "sidebar-dashboards-analytics",
+      "path": "/sidebar/dashboards/analytics"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/analytics-light.webp",
+      "dark": "/images/screenshots/sidebar/analytics-dark.webp"
+    }
+  },
+  {
+    "name": "Stocks",
+    "category": "DASHBOARD",
+    "displayOrder": 5,
+    "route": {
+      "name": "sidebar-dashboards-stocks",
+      "path": "/sidebar/dashboards/stocks"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/stocks-light.webp",
+      "dark": "/images/screenshots/sidebar/stocks-dark.webp"
+    }
+  },
+  {
+    "name": "Sales",
+    "category": "DASHBOARD",
+    "displayOrder": 6,
+    "route": {
+      "name": "sidebar-dashboards-sales",
+      "path": "/sidebar/dashboards/sales"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/sales-light.webp",
+      "dark": "/images/screenshots/sidebar/sales-dark.webp"
+    }
+  },
+  {
+    "name": "Influencer",
+    "category": "DASHBOARD",
+    "displayOrder": 14,
+    "route": {
+      "name": "sidebar-dashboards-influencer",
+      "path": "/sidebar/dashboards/influencer"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/influencer-light.webp",
+      "dark": "/images/screenshots/sidebar/influencer-dark.webp"
+    }
+  },
+  {
+    "name": "Hobbies",
+    "category": "DASHBOARD",
+    "displayOrder": 15,
+    "route": {
+      "name": "sidebar-dashboards-hobbies",
+      "path": "/sidebar/dashboards/hobbies"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/hobbies-light.webp",
+      "dark": "/images/screenshots/sidebar/hobbies-dark.webp"
+    }
+  },
+  {
+    "name": "Health",
+    "category": "DASHBOARD",
+    "displayOrder": 16,
+    "route": {
+      "name": "sidebar-dashboards-health",
+      "path": "/sidebar/dashboards/health"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/health-light.webp",
+      "dark": "/images/screenshots/sidebar/health-dark.webp"
+    }
+  },
+  {
+    "name": "Writer",
+    "category": "DASHBOARD",
+    "displayOrder": 17,
+    "route": {
+      "name": "sidebar-dashboards-writer",
+      "path": "/sidebar/dashboards/writer"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/writer-light.webp",
+      "dark": "/images/screenshots/sidebar/writer-dark.webp"
+    }
+  },
+  {
+    "name": "Video",
+    "category": "DASHBOARD",
+    "displayOrder": 18,
+    "route": {
+      "name": "sidebar-dashboards-writer",
+      "path": "/sidebar/dashboards/writer"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/video-light.webp",
+      "dark": "/images/screenshots/sidebar/video-dark.webp"
+    }
+  },
+  {
+    "name": "Homepage (Personal V1)",
+    "category": "DASHBOARD",
+    "displayOrder": 0,
+    "route": {
+      "name": "sidebar-dashboards",
+      "path": "/sidebar/dashboards/"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/homepage-personal-v1--light.webp",
+      "dark": "/images/screenshots/sidebar/homepage-personal-v1--dark.webp"
+    }
+  },
+  {
+    "name": "Personal V2",
+    "category": "DASHBOARD",
+    "displayOrder": 1,
+    "route": {
+      "name": "sidebar-dashboards-personal-2",
+      "path": "/sidebar/dashboards/personal-2"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/personal-v2-light.webp",
+      "dark": "/images/screenshots/sidebar/personal-v2-dark.webp"
+    }
+  },
+  {
+    "name": "Personal V3",
+    "category": "DASHBOARD",
+    "displayOrder": 2,
+    "route": {
+      "name": "sidebar-dashboards-personal-3",
+      "path": "/sidebar/dashboards/personal-3"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/personal-v3-light.webp",
+      "dark": "/images/screenshots/sidebar/personal-v3-dark.webp"
+    }
+  },
+  {
+    "name": "Widgets Creative",
+    "category": "DASHBOARD",
+    "displayOrder": 25,
+    "route": {
+      "name": "sidebar-dashboards-widgets-sample-creative",
+      "path": "/sidebar/dashboards/widgets-sample-creative"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/widgets-creative-light.webp",
+      "dark": "/images/screenshots/sidebar/widgets-creative-dark.webp"
+    }
+  },
+  {
+    "name": "Widgets List",
+    "category": "DASHBOARD",
+    "displayOrder": 26,
+    "route": {
+      "name": "sidebar-dashboards-widgets-sample-list",
+      "path": "/sidebar/dashboards/widgets-sample-list"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/widgets-list-light.webp",
+      "dark": "/images/screenshots/sidebar/widgets-list-dark.webp"
+    }
+  },
+  {
+    "name": "Widgets Stats",
+    "category": "DASHBOARD",
+    "displayOrder": 27,
+    "route": {
+      "name": "sidebar-dashboards-widgets-sample-stats",
+      "path": "/sidebar/dashboards/widgets-sample-stats"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/widgets-stats-light.webp",
+      "dark": "/images/screenshots/sidebar/widgets-stats-dark.webp"
+    }
+  },
+  {
+    "name": "Widgets UI",
+    "category": "DASHBOARD",
+    "displayOrder": 24,
+    "route": {
+      "name": "sidebar-dashboards-widgets-sample-ui",
+      "path": "/sidebar/dashboards/widgets-sample-ui"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/widgets-ui-light.webp",
+      "dark": "/images/screenshots/sidebar/widgets-ui-dark.webp"
+    }
+  }
+]

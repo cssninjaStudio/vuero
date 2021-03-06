@@ -1,10 +1,19 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-import {
-  adminLayoutId,
-  setLayout,
-} from '/@src/composition/state/adminLayoutState'
+import { ref, computed } from 'vue'
+import { useRoute } from 'vue-router'
+
+import { sidebarLayoutId, setLayout } from '/@src/state/sidebarLayoutState'
+
 const standardOpen = ref(false)
+const route = useRoute()
+
+const otherLayoutLink = computed(() => {
+  if (route.fullPath.startsWith('/sidebar')) {
+    return route.fullPath.replace('sidebar', 'navbar')
+  } else {
+    return route.fullPath.replace('navbar', 'sidebar')
+  }
+})
 </script>
 
 <template>
@@ -14,7 +23,7 @@ const standardOpen = ref(false)
     </a>
     <V-Modal
       :open="standardOpen"
-      title="Select Admin Layout"
+      title="Select Sidebar Layout"
       actions="right"
       noscroll
       @close="standardOpen = false"
@@ -25,7 +34,7 @@ const standardOpen = ref(false)
             <a
               href="#"
               class="layout-item"
-              :class="[adminLayoutId === 'sidebar-default' && 'is-active']"
+              :class="[sidebarLayoutId === 'sidebar-default' && 'is-active']"
               @click="setLayout('sidebar-default')"
             >
               <img
@@ -49,7 +58,7 @@ const standardOpen = ref(false)
             <a
               href="#"
               class="layout-item"
-              :class="[adminLayoutId === 'sidebar-color' && 'is-active']"
+              :class="[sidebarLayoutId === 'sidebar-color' && 'is-active']"
               @click="setLayout('sidebar-color')"
             >
               <img
@@ -73,7 +82,7 @@ const standardOpen = ref(false)
             <a
               href="#"
               class="layout-item"
-              :class="[adminLayoutId === 'sidebar-curved' && 'is-active']"
+              :class="[sidebarLayoutId === 'sidebar-curved' && 'is-active']"
               @click="setLayout('sidebar-curved')"
             >
               <img
@@ -97,7 +106,9 @@ const standardOpen = ref(false)
             <a
               href="#"
               class="layout-item"
-              :class="[adminLayoutId === 'sidebar-color-curved' && 'is-active']"
+              :class="[
+                sidebarLayoutId === 'sidebar-color-curved' && 'is-active',
+              ]"
               @click="setLayout('sidebar-color-curved')"
             >
               <img
@@ -121,7 +132,7 @@ const standardOpen = ref(false)
             <a
               href="#"
               class="layout-item"
-              :class="[adminLayoutId === 'sidebar-labels' && 'is-active']"
+              :class="[sidebarLayoutId === 'sidebar-labels' && 'is-active']"
               @click="setLayout('sidebar-labels')"
             >
               <img
@@ -145,7 +156,9 @@ const standardOpen = ref(false)
             <a
               href="#"
               class="layout-item"
-              :class="[adminLayoutId === 'sidebar-labels-hover' && 'is-active']"
+              :class="[
+                sidebarLayoutId === 'sidebar-labels-hover' && 'is-active',
+              ]"
               @click="setLayout('sidebar-labels-hover')"
             >
               <img
@@ -169,7 +182,7 @@ const standardOpen = ref(false)
             <a
               href="#"
               class="layout-item"
-              :class="[adminLayoutId === 'sidebar-float' && 'is-active']"
+              :class="[sidebarLayoutId === 'sidebar-float' && 'is-active']"
               @click="setLayout('sidebar-float')"
             >
               <img
@@ -190,6 +203,11 @@ const standardOpen = ref(false)
             </a>
           </div>
         </div>
+      </template>
+      <template #action>
+        <V-Button :to="otherLayoutLink" color="primary">
+          Switch to Navbar
+        </V-Button>
       </template>
     </V-Modal>
   </li>

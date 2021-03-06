@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { isDark } from '/@src/composition/state/darkModeState.ts'
-import { activePanel } from '/@src/composition/state/activePanelState'
-import useDropdown from '/@src/composition/use/useDropdown'
+import { isDark } from '/@src/state/darkModeState.ts'
+import { activePanel } from '/@src/state/activePanelState'
+import useDropdown from '/@src/composable/useDropdown'
 import { useI18n } from 'vue-i18n'
 import { computed } from 'vue'
 
@@ -72,7 +72,7 @@ const localFlagSrc = computed(() => {
               <div class="heading-right">
                 <RouterLink
                   class="notification-link"
-                  :to="{ name: 'admin-layouts-profile-notifications' }"
+                  :to="{ name: 'sidebar-layouts-profile-notifications' }"
                   >See all</RouterLink
                 >
               </div>

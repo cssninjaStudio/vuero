@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import admin from '/@src/data/landing/admin.json'
+import sidebar from '/@src/data/landing/sidebar.json'
 import auth from '/@src/data/landing/auth.json'
 import minimal from '/@src/data/landing/minimal.json'
 import templates from '/@src/data/landing/templates.json'
-import webapp from '/@src/data/landing/webapp.json'
+import navbar from '/@src/data/landing/navbar.json'
 
 function displayOrder(
   a: { displayOrder: number },
@@ -18,11 +18,11 @@ function displayOrder(
   return 0
 }
 
-const adminDemos = admin.sort(displayOrder)
+const sidebarDemos = sidebar.sort(displayOrder)
 const authDemos = auth.sort(displayOrder)
 const minimalDemos = minimal.sort(displayOrder)
 const templatesDemos = templates.sort(displayOrder)
-const webappDemos = webapp.sort(displayOrder)
+const navbarDemos = navbar.sort(displayOrder)
 </script>
 
 <template>
@@ -49,7 +49,7 @@ const webappDemos = webapp.sort(displayOrder)
       <div class="columns is-multiline">
         <!-- Demo item -->
         <div
-          v-for="(item, index) in adminDemos"
+          v-for="(item, index) in sidebarDemos"
           :key="index"
           class="column is-4 has-text-centered"
         >
@@ -107,7 +107,7 @@ const webappDemos = webapp.sort(displayOrder)
       <div class="columns is-multiline">
         <!-- Demo item -->
         <div
-          v-for="(item, index) in webappDemos"
+          v-for="(item, index) in navbarDemos"
           :key="index"
           class="column is-4 has-text-centered"
         >

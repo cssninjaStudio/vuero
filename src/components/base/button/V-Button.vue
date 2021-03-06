@@ -15,7 +15,7 @@ type ButtonDark = undefined | '1' | '2' | '3' | '4' | '5' | '6'
 
 const props = defineProps({
   to: {
-    type: Object,
+    type: [Object, String],
     default: undefined,
   },
   href: {

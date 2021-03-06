@@ -193,7 +193,7 @@ export const forms = [
   },
   {
     id: 9,
-    link: 'admin-layouts-form-layouts-1',
+    link: 'sidebar-layouts-form-layouts-1',
     name: 'Form Layout V1',
     media: {
       light: '/images/icons/components/forms.svg',
@@ -202,7 +202,7 @@ export const forms = [
   },
   {
     id: 10,
-    link: 'admin-layouts-form-layouts-2',
+    link: 'sidebar-layouts-form-layouts-2',
     name: 'Form Layout V2',
     media: {
       light: '/images/icons/components/forms.svg',
@@ -211,7 +211,7 @@ export const forms = [
   },
   {
     id: 11,
-    link: 'admin-layouts-form-layouts-3',
+    link: 'sidebar-layouts-form-layouts-3',
     name: 'Form Layout V3',
     media: {
       light: '/images/icons/components/forms.svg',
@@ -220,7 +220,7 @@ export const forms = [
   },
   {
     id: 12,
-    link: 'admin-layouts-form-layouts-4',
+    link: 'sidebar-layouts-form-layouts-4',
     name: 'Form Layout V4',
     media: {
       light: '/images/icons/components/forms.svg',

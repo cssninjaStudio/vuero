@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { activeSubnav } from '/@src/composition/state/webappNavState'
+import { activeSubnav } from '/@src/state/navbarState'
 
 type TabId = 'components' | 'plugins'
 const activeTab = ref<TabId>('components')
@@ -8,9 +8,9 @@ const activeTab = ref<TabId>('components')
 
 <template>
   <div
-    id="components-webapp-menu"
+    id="components-navbar-menu"
     :class="[activeSubnav === 'components' && 'is-active']"
-    class="webapp-subnavbar-inner tabs-wrapper"
+    class="navbar-subnavbar-inner tabs-wrapper"
   >
     <div class="tabs-inner">
       <div class="tabs is-centered is-2">

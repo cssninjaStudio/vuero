@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { isMobileSidebarOpen } from '/@src/composition/state/mobileSidebarState'
-import { activePanel } from '/@src/composition/state/activePanelState'
+import { isMobileSidebarOpen } from '/@src/state/mobileSidebarState'
+import { activePanel } from '/@src/state/activePanelState'
 </script>
 
 <template>
@@ -13,13 +13,13 @@ import { activePanel } from '/@src/composition/state/activePanelState'
         <li>
           <RouterLink
             id="home-sidebar-menu-mobile"
-            :to="{ name: 'admin-dashboards' }"
+            :to="{ name: 'sidebar-dashboards' }"
           >
             <i class="iconify" data-icon="feather:activity"></i>
           </RouterLink>
         </li>
         <li>
-          <RouterLink id="layouts-sidebar-menu-mobile" :to="{ name: 'webapp' }">
+          <RouterLink id="layouts-sidebar-menu-mobile" :to="{ name: 'navbar' }">
             <i class="iconify" data-icon="feather:grid"></i>
           </RouterLink>
         </li>

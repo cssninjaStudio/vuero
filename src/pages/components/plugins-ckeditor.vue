@@ -3,10 +3,7 @@ import { useHead } from '@vueuse/head'
 import { onMounted, ref } from 'vue'
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic'
 
-import {
-  activeSidebar,
-  toggleSidebar,
-} from '/@src/composition/state/activeSidebarState'
+import { activeSidebar, toggleSidebar } from '/@src/state/activeSidebarState'
 
 import {
   editorData,

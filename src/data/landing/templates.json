@@ -4,8 +4,8 @@
     "category": "TEMPLATES",
     "displayOrder": 0,
     "route": {
-      "name": "admin-layouts-blank-page-1",
-      "path": "/admin/layouts/blank-page-1"
+      "name": "sidebar-layouts-blank-page-1",
+      "path": "/sidebar/layouts/blank-page-1"
     },
     "screenshot": {
       "light": "/images/screenshots/templates/regular-sidebar-light.webp",
@@ -17,8 +17,8 @@
     "category": "TEMPLATES",
     "displayOrder": 1,
     "route": {
-      "name": "admin-layouts-blank-page-2",
-      "path": "/admin/layouts/blank-page-2"
+      "name": "sidebar-layouts-blank-page-2",
+      "path": "/sidebar/layouts/blank-page-2"
     },
     "screenshot": {
       "light": "/images/screenshots/templates/curved-sidebar-light.webp",
@@ -30,8 +30,8 @@
     "category": "TEMPLATES",
     "displayOrder": 2,
     "route": {
-      "name": "admin-layouts-blank-page-3",
-      "path": "/admin/layouts/blank-page-3"
+      "name": "sidebar-layouts-blank-page-3",
+      "path": "/sidebar/layouts/blank-page-3"
     },
     "screenshot": {
       "light": "/images/screenshots/templates/colored-sidebar-light.webp",
@@ -43,8 +43,8 @@
     "category": "TEMPLATES",
     "displayOrder": 3,
     "route": {
-      "name": "admin-layouts-blank-page-4",
-      "path": "/admin/layouts/blank-page-4"
+      "name": "sidebar-layouts-blank-page-4",
+      "path": "/sidebar/layouts/blank-page-4"
     },
     "screenshot": {
       "light": "/images/screenshots/templates/curved-colored-sidebar-light.webp",
@@ -56,8 +56,8 @@
     "category": "TEMPLATES",
     "displayOrder": 4,
     "route": {
-      "name": "admin-layouts-blank-page-5",
-      "path": "/admin/layouts/blank-page-5"
+      "name": "sidebar-layouts-blank-page-5",
+      "path": "/sidebar/layouts/blank-page-5"
     },
     "screenshot": {
       "light": "/images/screenshots/templates/sidebar-labels-light.webp",
@@ -69,8 +69,8 @@
     "category": "TEMPLATES",
     "displayOrder": 5,
     "route": {
-      "name": "admin-layouts-blank-page-6",
-      "path": "/admin/layouts/blank-page-6"
+      "name": "sidebar-layouts-blank-page-6",
+      "path": "/sidebar/layouts/blank-page-6"
     },
     "screenshot": {
       "light": "/images/screenshots/templates/hover-labels-light.webp",
@@ -82,8 +82,8 @@
     "category": "TEMPLATES",
     "displayOrder": 6,
     "route": {
-      "name": "admin-layouts-blank-page-7",
-      "path": "/admin/layouts/blank-page-7"
+      "name": "sidebar-layouts-blank-page-7",
+      "path": "/sidebar/layouts/blank-page-7"
     },
     "screenshot": {
       "light": "/images/screenshots/templates/floating-sidebar-light.webp",
@@ -95,8 +95,8 @@
     "category": "TEMPLATES",
     "displayOrder": 7,
     "route": {
-      "name": "webapp-layouts-blank-page-1",
-      "path": "/webapp/layouts/blank-page-1"
+      "name": "navbar-layouts-blank-page-1",
+      "path": "/navbar/layouts/blank-page-1"
     },
     "screenshot": {
       "light": "/images/screenshots/templates/standard-navbar-light.webp",
@@ -108,8 +108,8 @@
     "category": "TEMPLATES",
     "displayOrder": 8,
     "route": {
-      "name": "webapp-layouts-blank-page-2",
-      "path": "/webapp/layouts/blank-page-2"
+      "name": "navbar-layouts-blank-page-2",
+      "path": "/navbar/layouts/blank-page-2"
     },
     "screenshot": {
       "light": "/images/screenshots/templates/fading-navbar-light.webp",
@@ -121,8 +121,8 @@
     "category": "TEMPLATES",
     "displayOrder": 9,
     "route": {
-      "name": "webapp-layouts-blank-page-3",
-      "path": "/webapp/layouts/blank-page-3"
+      "name": "navbar-layouts-blank-page-3",
+      "path": "/navbar/layouts/blank-page-3"
     },
     "screenshot": {
       "light": "/images/screenshots/templates/colored-navbar-light.webp",
@@ -134,8 +134,8 @@
     "category": "TEMPLATES",
     "displayOrder": 10,
     "route": {
-      "name": "webapp-layouts-blank-page-4",
-      "path": "/webapp/layouts/blank-page-4"
+      "name": "navbar-layouts-blank-page-4",
+      "path": "/navbar/layouts/blank-page-4"
     },
     "screenshot": {
       "light": "/images/screenshots/templates/dropdown-navbar-light.webp",
@@ -147,8 +147,8 @@
     "category": "TEMPLATES",
     "displayOrder": 11,
     "route": {
-      "name": "webapp-layouts-blank-page-5",
-      "path": "/webapp/layouts/blank-page-5"
+      "name": "navbar-layouts-blank-page-5",
+      "path": "/navbar/layouts/blank-page-5"
     },
     "screenshot": {
       "light": "/images/screenshots/templates/colored-dropdown-navbar-light.webp",
@@ -160,8 +160,8 @@
     "category": "TEMPLATES",
     "displayOrder": 12,
     "route": {
-      "name": "webapp-layouts-blank-page-6",
-      "path": "/webapp/layouts/blank-page-6"
+      "name": "navbar-layouts-blank-page-6",
+      "path": "/navbar/layouts/blank-page-6"
     },
     "screenshot": {
       "light": "/images/screenshots/templates/clean-navbar-light.webp",
@@ -173,8 +173,8 @@
     "category": "TEMPLATES",
     "displayOrder": 13,
     "route": {
-      "name": "webapp-layouts-blank-page-7",
-      "path": "/webapp/layouts/blank-page-7"
+      "name": "navbar-layouts-blank-page-7",
+      "path": "/navbar/layouts/blank-page-7"
     },
     "screenshot": {
       "light": "/images/screenshots/templates/clean-centered-navbar-light.webp",
@@ -186,8 +186,8 @@
     "category": "TEMPLATES",
     "displayOrder": 14,
     "route": {
-      "name": "webapp-layouts-blank-page-8",
-      "path": "/webapp/layouts/blank-page-8"
+      "name": "navbar-layouts-blank-page-8",
+      "path": "/navbar/layouts/blank-page-8"
     },
     "screenshot": {
       "light": "/images/screenshots/templates/clean-transparent-light.webp",

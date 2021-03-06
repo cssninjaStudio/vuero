@@ -1,3 +1,10 @@
+/**
+ * Theses types are used by the Wizard form
+ *
+ * @see /src/pages/wizard-v1.vue
+ * @see /src/components/partials/wizard
+ */
+
 export type WizardRelatedTo =
   | 'UX/Design'
   | 'Web development'

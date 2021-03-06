@@ -4,8 +4,8 @@ import {
   disableTimersAndAnimations,
   minimal,
   auth,
-  admin,
-  webapp,
+  sidebar,
+  navbar,
   templates,
 } from '../fixtures/routes'
 
@@ -14,7 +14,7 @@ describe('Desktop - Viewport (1274*714)', () => {
     cy.viewport(1274, 714)
   })
 
-  for (const route of admin) {
+  for (const route of sidebar) {
     it(`Desktop - Admin Layout - ${route.name}`, () => {
       cy.visit(route.path)
       // cy.get('.default-layout')
@@ -57,7 +57,7 @@ describe('Desktop - Viewport (1274*714)', () => {
   for (const route of templates) {
     it(`Desktop - Templates - ${route.name}`, () => {
       cy.visit(route.path)
-      // cy.get('.webapp-layout')
+      // cy.get('.navbar-layout')
       cy.wait(waitTimeout)
 
       cy.title().should('not.contain', 'Page not found')
@@ -174,10 +174,10 @@ describe('Desktop - Viewport (1274*714)', () => {
     })
   }
 
-  for (const route of webapp) {
+  for (const route of navbar) {
     it(`Desktop - Webapp Layout - ${route.name}`, () => {
       cy.visit(route.path)
-      // cy.get('.webapp-layout')
+      // cy.get('.navbar-layout')
       cy.wait(waitTimeout)
 
       cy.title().should('not.contain', 'Page not found')

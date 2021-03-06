@@ -716,7 +716,7 @@ const props = defineProps({
 1. Project Details
 ========================================================================== */
 
-.is-webapp {
+.is-navbar {
   .project-details {
     padding-top: 30px;
   }

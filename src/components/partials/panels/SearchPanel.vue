@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
-import { activePanel } from '/@src/composition/state/activePanelState'
+import { activePanel } from '/@src/state/activePanelState'
 import { popovers } from '/@src/data/users/userPopovers'
 
 const filter = ref('')
@@ -70,90 +70,89 @@ const filteredData = computed(() => {
         <div class="recent">
           <h4>Recently viewed</h4>
           <div class="recent-block">
-            <a class="media-flex-center">
-              <div class="v-icon is-info is-rounded is-small">
-                <i class="iconify" data-icon="feather:chrome"></i>
-              </div>
-              <div class="flex-meta">
-                <span>Browser Support</span>
-                <span>Blog post</span>
-              </div>
-            </a>
-            <a class="media-flex-center">
-              <div class="v-icon is-orange is-rounded is-small">
-                <i class="iconify" data-icon="feather:tv"></i>
-              </div>
-              <div class="flex-meta">
-                <span>Twitch API</span>
-                <span>Blog post</span>
-              </div>
-            </a>
-            <a class="media-flex-center">
-              <div class="v-icon is-green is-rounded is-small">
-                <i class="iconify" data-icon="feather:twitter"></i>
-              </div>
-              <div class="flex-meta">
-                <span>Twitter Auth</span>
-                <span>Blog post</span>
-              </div>
-            </a>
+            <V-Block title="Browser Support" subtitle="Blog post" center>
+              <template #icon>
+                <V-IconBox size="small" color="info" rounded>
+                  <i class="iconify" data-icon="feather:chrome"></i>
+                </V-IconBox>
+              </template>
+            </V-Block>
+            <V-Block title="Twitch API" subtitle="Blog post" center>
+              <template #icon>
+                <V-IconBox size="small" color="orange" rounded>
+                  <i class="iconify" data-icon="feather:tv"></i>
+                </V-IconBox>
+              </template>
+            </V-Block>
+            <V-Block title="Browser Support" subtitle="Blog post" center>
+              <template #icon>
+                <V-IconBox size="small" color="green" rounded>
+                  <i class="iconify" data-icon="feather:twitter"></i>
+                </V-IconBox>
+              </template>
+            </V-Block>
           </div>
         </div>
 
         <div class="recent">
           <h4>Recent Members</h4>
           <div class="recent-block">
-            <a class="media-flex-center">
-              <div class="v-avatar is-small">
-                <img
-                  class="avatar"
-                  src="/images/avatars/photos/7.jpg"
-                  alt=""
-                  data-user-popover="0"
-                  @error.once="
-                    $event.target.src = 'https://via.placeholder.com/150x150'
-                  "
-                />
-              </div>
-              <div class="flex-meta">
-                <span>Alice C.</span>
-                <span>Software Engineer</span>
-              </div>
-            </a>
-            <a class="media-flex-center">
-              <div class="v-avatar is-small">
-                <img
-                  class="avatar"
-                  src="/images/avatars/photos/13.jpg"
-                  alt=""
-                  data-user-popover="6"
-                  @error.once="
-                    $event.target.src = 'https://via.placeholder.com/150x150'
-                  "
-                />
-              </div>
-              <div class="flex-meta">
-                <span>Tara S.</span>
-                <span>UI/UX Designer</span>
-              </div>
-            </a>
-            <a class="media-flex-center">
-              <div class="v-avatar is-small">
-                <img
-                  class="avatar"
-                  src="/images/avatars/photos/22.jpg"
-                  alt=""
-                  data-user-popover="5"
-                  @error.once="
-                    $event.target.src = 'https://via.placeholder.com/150x150'
-                  "
-                />
-              </div>
-              <div class="flex-meta">
-                <span>Jimmy H.</span>
-                <span>Project Manager</span>
-              </div>
-            </a>
+            <V-Block title="Alice C." subtitle="Software Engineer" center>
+              <template #icon>
+                <tippy
+                  class="has-help-cursor"
+                  interactive
+                  :offset="[0, 10]"
+                  placement="top-start"
+                >
+                  <V-Avatar
+                    size="small"
+                    picture="/images/avatars/photos/7.jpg"
+                  />
+                  <template #content>
+                    <UserPopoverContent :user="popovers.user7" />
+                  </template>
+                </tippy>
+              </template>
+            </V-Block>
+
+            <V-Block title="Tara S." subtitle="UI/UX Designer" center>
+              <template #icon>
+                <tippy
+                  class="has-help-cursor"
+                  interactive
+                  :offset="[0, 10]"
+                  placement="top-start"
+                >
+                  <V-Avatar
+                    size="small"
+                    picture="/images/avatars/photos/13.jpg"
+                  />
+                  <template #content>
+                    <UserPopoverContent :user="popovers.user13" />
+                  </template>
+                </tippy>
+              </template>
+            </V-Block>
+
+            <V-Block title="Jimmy H." subtitle="Project Manager" center>
+              <template #icon>
+                <tippy
+                  class="has-help-cursor"
+                  interactive
+                  :offset="[0, 10]"
+                  placement="top-start"
+                >
+                  <V-Avatar
+                    size="small"
+                    picture="/images/avatars/photos/22.jpg"
+                  />
+                  <template #content>
+                    <UserPopoverContent :user="popovers.user22" />
+                  </template>
+                </tippy>
+              </template>
+            </V-Block>
           </div>
         </div>
       </div>

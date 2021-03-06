@@ -3,7 +3,7 @@ import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 
 import sleep from '/@src/utils/sleep'
-import useNotyf from '/@src/composition/use/useNotyf'
+import useNotyf from '/@src/composable/useNotyf'
 import { popovers } from '/@src/data/users/userPopovers'
 
 const notyf = useNotyf()
@@ -17,7 +17,7 @@ const accept = async () => {
 
   await sleep()
   router.push({
-    name: 'admin-dashboards-banking-1',
+    name: 'sidebar-dashboards-banking-1',
   })
 
   isLoading.value = false

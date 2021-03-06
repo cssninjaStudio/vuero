@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { useWindowScroll } from '@vueuse/core'
 import { computed, ref } from 'vue'
-import useNotyf from '/@src/composition/use/useNotyf'
+import useNotyf from '/@src/composable/useNotyf'
 import sleep from '/@src/utils/sleep'
 
 const notyf = useNotyf()
@@ -37,7 +37,7 @@ const onSave = async () => {
         <div class="right">
           <div class="buttons">
             <V-Button
-              :to="{ name: 'admin-layouts-profile-view' }"
+              :to="{ name: 'sidebar-layouts-profile-view' }"
               icon="lnir lnir-arrow-left rem-100"
               light
               dark-outlined

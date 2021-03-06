@@ -2,13 +2,10 @@
 import { useHead } from '@vueuse/head'
 import { onMounted } from 'vue'
 
-import useNotyf from '/@src/composition/use/useNotyf'
-import useMakrdownToc from '/@src/composition/use/useMarkdownToc'
+import useNotyf from '/@src/composable/useNotyf'
+import useMakrdownToc from '/@src/composable/useMarkdownToc'
 
-import {
-  activeSidebar,
-  toggleSidebar,
-} from '/@src/composition/state/activeSidebarState'
+import { activeSidebar, toggleSidebar } from '/@src/state/activeSidebarState'
 
 const { markdownContainer, toc } = useMakrdownToc()
 

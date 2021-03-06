@@ -1,11 +1,8 @@
 <script setup lang="ts">
 import { onMounted } from 'vue'
 
-import { activeSidebar } from '/@src/composition/state/activeSidebarState'
-import {
-  adminLayout,
-  adminLayoutId,
-} from '/@src/composition/state/adminLayoutState'
+import { activeSidebar } from '/@src/state/activeSidebarState'
+import { sidebarLayout, sidebarLayoutId } from '/@src/state/sidebarLayoutState'
 
 onMounted(() => {
   activeSidebar.value = 'components'
@@ -13,7 +10,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <component :is="adminLayout" :class="[adminLayoutId]">
+  <component :is="sidebarLayout" :class="[sidebarLayoutId]">
     <ComponentsSidebar />
     <ComponentsMobileSubsidebar />
 

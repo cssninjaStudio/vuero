@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { activeSidebar } from '/@src/composition/state/activeSidebarState'
+import { activeSidebar } from '/@src/state/activeSidebarState'
 </script>
 
 <template>
@@ -35,7 +35,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
           <RouterLink :to="{ name: 'elements-tags' }">Tags</RouterLink>
         </li>
 
-        <li v-has-children class="has-children">
+        <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
             <a class="parent-link"
               >Icons <i class="iconify" data-icon="feather:chevron-right"
@@ -80,7 +80,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
         <li>
           <RouterLink :to="{ name: 'elements-table' }">Table</RouterLink>
         </li>
-        <li v-has-children class="has-children">
+        <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
             <a href="javascript:void(0);" class="parent-link"
               >Tabs <i class="iconify" data-icon="feather:chevron-right"
@@ -109,7 +109,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
           <RouterLink :to="{ name: 'elements-tooltips' }">Tooltips</RouterLink>
         </li>
         <li class="divider"></li>
-        <li v-has-children class="has-children">
+        <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
             <a class="parent-link"
               >Forms <i class="iconify" data-icon="feather:chevron-right"
@@ -158,7 +158,7 @@ import { activeSidebar } from '/@src/composition/state/activeSidebarState'
             </li>
           </ul>
         </li>
-        <li v-has-children class="has-children">
+        <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
             <a class="parent-link"
               >Toggles <i class="iconify" data-icon="feather:chevron-right"

@@ -67,6 +67,11 @@ jobs:
     needs: build-release
 
     steps:
+      - name: Get the version from tag
+        id: get_meta
+        run: |
+          echo ::set-output name=tag::digisquad/cssninja.vuero-demo:latest,digisquad/cssninja.vuero-demo:${GITHUB_REF#refs/tags/}
+
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v1
 
@@ -84,7 +89,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: digisquad/cssninja.vuero-demo:latest
+          tags: ${{ steps.get_meta.outputs.tag }}
 
       - name: Deploy to cssninja.io
         uses: appleboy/ssh-action@master

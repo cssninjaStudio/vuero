@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import useDropdown from '/@src/composition/use/useDropdown'
+import useDropdown from '/@src/composable/useDropdown'
 const { dropdownElement, isOpen, toggle } = useDropdown()
 </script>
 
@@ -217,7 +217,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'webapp-layouts-list-datatable-4' }"
+                    :to="{ name: 'navbar-layouts-list-datatable-4' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -250,7 +250,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'webapp-layouts-list-datatable-4' }"
+                    :to="{ name: 'navbar-layouts-list-datatable-4' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">

@@ -1,5 +1,5 @@
 import type { Chart } from 'billboard.js'
-import { themeColors } from '/@src/composition/state/themeColors'
+import { themeColors } from '/@src/state/themeColors'
 import { areaLineRange, areaSplineRange } from 'billboard.js'
 import { ref } from 'vue'
 

@@ -594,43 +594,43 @@ const dashboards = [
   },
 ]
 
-export const admin = [
+export const sidebar = [
   {
     name: 'Messaging V1',
     category: 'APP',
     path: '/messaging-v1',
-    prefix: 'admin',
+    prefix: 'sidebar',
     displayOrder: 21,
   },
   ...layouts.map((item) => {
     return {
       ...item,
-      path: `/admin/layouts${item.path}`,
-      prefix: 'admin',
+      path: `/sidebar/layouts${item.path}`,
+      prefix: 'sidebar',
     }
   }),
   ...dashboards.map((item) => {
     return {
       ...item,
-      path: `/admin/dashboards${item.path}`,
-      prefix: 'admin',
+      path: `/sidebar/dashboards${item.path}`,
+      prefix: 'sidebar',
     }
   }),
 ]
 
-export const webapp = [
+export const navbar = [
   ...layouts.map((item) => {
     return {
       ...item,
-      path: `/webapp/layouts${item.path}`,
-      prefix: 'webapp',
+      path: `/navbar/layouts${item.path}`,
+      prefix: 'navbar',
     }
   }),
   ...dashboards.map((item) => {
     return {
       ...item,
-      path: `/webapp/dashboards${item.path}`,
-      prefix: 'webapp',
+      path: `/navbar/dashboards${item.path}`,
+      prefix: 'navbar',
     }
   }),
 ]
@@ -639,105 +639,105 @@ export const templates = [
   {
     name: 'Regular Sidebar',
     category: 'TEMPLATES',
-    path: '/admin/layouts/blank-page-1',
+    path: '/sidebar/layouts/blank-page-1',
     prefix: 'templates',
     displayOrder: 0,
   },
   {
     name: 'Curved Sidebar',
     category: 'TEMPLATES',
-    path: '/admin/layouts/blank-page-2',
+    path: '/sidebar/layouts/blank-page-2',
     prefix: 'templates',
     displayOrder: 1,
   },
   {
     name: 'Colored Sidebar',
     category: 'TEMPLATES',
-    path: '/admin/layouts/blank-page-3',
+    path: '/sidebar/layouts/blank-page-3',
     prefix: 'templates',
     displayOrder: 2,
   },
   {
     name: 'Curved Colored Sidebar',
     category: 'TEMPLATES',
-    path: '/admin/layouts/blank-page-4',
+    path: '/sidebar/layouts/blank-page-4',
     prefix: 'templates',
     displayOrder: 3,
   },
   {
     name: 'Sidebar Labels',
     category: 'TEMPLATES',
-    path: '/admin/layouts/blank-page-5',
+    path: '/sidebar/layouts/blank-page-5',
     prefix: 'templates',
     displayOrder: 4,
   },
   {
     name: 'Hover Labels',
     category: 'TEMPLATES',
-    path: '/admin/layouts/blank-page-6',
+    path: '/sidebar/layouts/blank-page-6',
     prefix: 'templates',
     displayOrder: 5,
   },
   {
     name: 'Floating Sidebar',
     category: 'TEMPLATES',
-    path: '/admin/layouts/blank-page-7',
+    path: '/sidebar/layouts/blank-page-7',
     prefix: 'templates',
     displayOrder: 6,
   },
   {
     name: 'Standard Navbar',
     category: 'TEMPLATES',
-    path: '/webapp/layouts/blank-page-1',
+    path: '/navbar/layouts/blank-page-1',
     prefix: 'templates',
     displayOrder: 7,
   },
   {
     name: 'Fading Navbar',
     category: 'TEMPLATES',
-    path: '/webapp/layouts/blank-page-2',
+    path: '/navbar/layouts/blank-page-2',
     prefix: 'templates',
     displayOrder: 8,
   },
   {
     name: 'Colored Navbar',
     category: 'TEMPLATES',
-    path: '/webapp/layouts/blank-page-3',
+    path: '/navbar/layouts/blank-page-3',
     prefix: 'templates',
     displayOrder: 9,
   },
   {
     name: 'Dropdown Navbar',
     category: 'TEMPLATES',
-    path: '/webapp/layouts/blank-page-4',
+    path: '/navbar/layouts/blank-page-4',
     prefix: 'templates',
     displayOrder: 10,
   },
   {
     name: 'Colored Dropdown Navbar',
     category: 'TEMPLATES',
-    path: '/webapp/layouts/blank-page-5',
+    path: '/navbar/layouts/blank-page-5',
     prefix: 'templates',
     displayOrder: 11,
   },
   {
     name: 'Clean Navbar',
     category: 'TEMPLATES',
-    path: '/webapp/layouts/blank-page-6',
+    path: '/navbar/layouts/blank-page-6',
     prefix: 'templates',
     displayOrder: 12,
   },
   {
     name: 'Clean Centered Navbar',
     category: 'TEMPLATES',
-    path: '/webapp/layouts/blank-page-7',
+    path: '/navbar/layouts/blank-page-7',
     prefix: 'templates',
     displayOrder: 13,
   },
   {
     name: 'Clean Transparent',
     category: 'TEMPLATES',
-    path: '/webapp/layouts/blank-page-8',
+    path: '/navbar/layouts/blank-page-8',
     prefix: 'templates',
     displayOrder: 14,
   },
