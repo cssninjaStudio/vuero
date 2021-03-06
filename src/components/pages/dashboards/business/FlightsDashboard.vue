@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { reactive } from 'vue'
+import { ref } from 'vue'
 
-const date = reactive({
+const date = ref({
   start: new Date(),
   end: new Date(),
 })

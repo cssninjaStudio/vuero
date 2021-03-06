@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useWindowScroll } from '@vueuse/core'
-import { computed, ref, reactive } from 'vue'
+import { computed, ref } from 'vue'
 import useNotyf from '/@src/composable/useNotyf'
 import sleep from '/@src/utils/sleep'
 
@@ -10,7 +10,7 @@ const isLoading = ref(false)
 const notyf = useNotyf()
 const { y } = useWindowScroll()
 
-const date = reactive({
+const date = ref({
   start: new Date(),
   end: new Date(),
 })

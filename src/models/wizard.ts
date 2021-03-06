@@ -4,6 +4,7 @@
  * @see /src/pages/wizard-v1.vue
  * @see /src/components/partials/wizard
  */
+import type { Ref } from 'vue'
 
 export type WizardRelatedTo =
   | 'UX/Design'
@@ -47,7 +48,7 @@ export type WizardData = {
   logo: File | null
   attachments: WizardAttachement[]
   relatedTo: WizardRelatedTo
-  timeFrame: WizardTimeFrame
+  timeFrame: Ref<WizardTimeFrame>
   budget: WizardBudget
   teammates: WizardTeammate[]
   tools: WizardTool[]

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import useDropdown from '/@src/composable/useDropdown'
 import { currentStep, stepTitle } from '/@src/state/wizardState'
-import { isDark } from '/@src/state/darkModeState.ts'
+import { isDark } from '/@src/state/darkModeState'
 
 const {
   dropdownElement: dropdownElement1,
@@ -167,8 +167,8 @@ const setStep = (target: number) => {
 </template>
 
 <style lang="scss" scoped>
-@import '../../../../assets/scss/abstracts/_variables.scss';
-@import '../../../../assets/scss/abstracts/_mixins.scss';
+@import '../../../assets/scss/abstracts/_variables.scss';
+@import '../../../assets/scss/abstracts/_mixins.scss';
 
 .wizard-navigation {
   position: fixed;

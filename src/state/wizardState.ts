@@ -55,10 +55,10 @@ export const wizardData = reactive<WizardData>({
   description: '',
   relatedTo: 'UX/Design',
   logo: null,
-  timeFrame: {
+  timeFrame: ref({
     start: new Date(),
     end: new Date(),
-  },
+  }),
   budget: '< 5K',
   attachments: [],
   teammates: [],
