@@ -8,7 +8,7 @@ type TabId = 'all' | 'saved'
 const activeTab = ref<TabId>('all')
 
 useHead({
-  title: 'List View 4 - Admin - Vuero',
+  title: 'List View 4 - Sidebar - Vuero',
 })
 </script>
 

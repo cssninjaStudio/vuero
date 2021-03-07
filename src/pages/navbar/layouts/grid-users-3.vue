@@ -6,7 +6,7 @@ type TabId = 'all' | 'team'
 const activeTab = ref<TabId>('all')
 
 useHead({
-  title: 'Grid Users 3 - WebApp - Vuero',
+  title: 'Grid Users 3 - Navbar - Vuero',
 })
 </script>
 

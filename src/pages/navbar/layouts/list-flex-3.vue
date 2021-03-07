@@ -6,7 +6,7 @@ type TabId = 'active' | 'closed'
 const activeTab = ref<TabId>('active')
 
 useHead({
-  title: 'List Flex 3 - WebApp - Vuero',
+  title: 'List Flex 3 - Navbar - Vuero',
 })
 </script>
 

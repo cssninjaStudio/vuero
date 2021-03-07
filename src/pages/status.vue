@@ -2,7 +2,7 @@
 import { useHead } from '@vueuse/head'
 
 useHead({
-  title: 'Utility Status - Admin - Vuero',
+  title: 'Utility Status - Sidebar - Vuero',
 })
 </script>
 

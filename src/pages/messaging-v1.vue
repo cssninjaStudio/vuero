@@ -9,6 +9,8 @@ import { sidebarLayout, sidebarLayoutId } from '/@src/state/sidebarLayoutState'
 import useDropdown from '/@src/composable/useDropdown'
 import sleep from '/@src/utils/sleep'
 
+// we are using static data here, but you might need to load those from your API
+// to do so, this should be a ref<any[]>([]) and be populated when request is done
 const conversations = [
   {
     id: 1,
@@ -55,6 +57,8 @@ const onConversationChanged = async () => {
   }
 
   isLoading.value = true
+
+  // we are waiting for 1sec to simulate network latency
   await sleep(1000)
 
   try {
@@ -90,11 +94,10 @@ const selectedConversation = computed(() => {
 onMounted(() => {
   activeSidebar.value = 'messages'
   selectedConversationId.value = 1
-  //onConversationChanged()
 })
 
 useHead({
-  title: 'Messaging chat - Admin - Vuero',
+  title: 'Messaging chat - Sidebar - Vuero',
 })
 
 watchEffect(onConversationChanged)

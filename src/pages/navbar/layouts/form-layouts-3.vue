@@ -2,7 +2,7 @@
 import { useHead } from '@vueuse/head'
 
 useHead({
-  title: 'Form Layouts 3 - WebApp - Vuero',
+  title: 'Form Layouts 3 - Navbar - Vuero',
 })
 </script>
 

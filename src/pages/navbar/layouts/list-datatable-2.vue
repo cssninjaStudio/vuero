@@ -2,7 +2,7 @@
 import { useHead } from '@vueuse/head'
 
 useHead({
-  title: 'List Datatable 2 - WebApp - Vuero',
+  title: 'List Datatable 2 - Navbar - Vuero',
 })
 </script>
 

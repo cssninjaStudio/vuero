@@ -2,7 +2,7 @@
 import { useHead } from '@vueuse/head'
 
 useHead({
-  title: 'Profile Notification - WebApp - Vuero',
+  title: 'Profile Notification - Navbar - Vuero',
 })
 </script>
 

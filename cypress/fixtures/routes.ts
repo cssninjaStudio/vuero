@@ -547,7 +547,7 @@ const dashboards = [
   {
     name: 'Video',
     category: 'DASHBOARD',
-    path: '/writer',
+    path: '/video',
     displayOrder: 18,
   },
   {

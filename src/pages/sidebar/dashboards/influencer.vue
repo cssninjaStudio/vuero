@@ -8,7 +8,7 @@ type TabId = 'overview' | 'content' | 'brands'
 const activeTab = ref<TabId>('overview')
 
 useHead({
-  title: 'Dashboard Lifestyle 1 - Admin - Vuero',
+  title: 'Dashboard Lifestyle 1 - Sidebar - Vuero',
 })
 </script>
 

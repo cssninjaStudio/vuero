@@ -6,7 +6,7 @@ import { setLayout } from '/@src/state/sidebarLayoutState'
 import { activeSidebar, toggleSidebar } from '/@src/state/activeSidebarState'
 
 useHead({
-  title: 'Blank Template 4 - Admin - Vuero',
+  title: 'Blank Template 4 - Sidebar - Vuero',
 })
 
 onMounted(() => {

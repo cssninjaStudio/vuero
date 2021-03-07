@@ -6,7 +6,7 @@ type TabId = 'active' | 'inactive'
 const activeTab = ref<TabId>('active')
 
 useHead({
-  title: 'List View 4 - WebApp - Vuero',
+  title: 'List View 4 - Navbar - Vuero',
 })
 </script>
 

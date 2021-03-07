@@ -4,7 +4,7 @@ import { useHead } from '@vueuse/head'
 import { activeSidebar, toggleSidebar } from '/@src/state/activeSidebarState'
 
 useHead({
-  title: 'Profile View - Admin - Vuero',
+  title: 'Profile View - Sidebar - Vuero',
 })
 </script>
 

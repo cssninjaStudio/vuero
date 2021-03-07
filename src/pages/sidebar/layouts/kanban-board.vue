@@ -4,7 +4,7 @@ import { useHead } from '@vueuse/head'
 import { activeSidebar, toggleSidebar } from '/@src/state/activeSidebarState'
 
 useHead({
-  title: 'Kanban Board - Admin - Vuero',
+  title: 'Kanban Board - Sidebar - Vuero',
 })
 </script>
 

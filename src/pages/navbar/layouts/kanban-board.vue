@@ -2,7 +2,7 @@
 import { useHead } from '@vueuse/head'
 
 useHead({
-  title: 'Kanban Board - WebApp - Vuero',
+  title: 'Kanban Board - Navbar - Vuero',
 })
 </script>
 

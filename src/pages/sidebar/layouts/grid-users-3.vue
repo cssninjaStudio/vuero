@@ -8,7 +8,7 @@ type TabId = 'all' | 'team'
 const activeTab = ref<TabId>('all')
 
 useHead({
-  title: 'Grid Users 3 - Admin - Vuero',
+  title: 'Grid Users 3 - Sidebar - Vuero',
 })
 </script>
 

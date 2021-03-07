@@ -35,7 +35,7 @@ jobs:
         run: |
           sudo apt-get install zip
           cp .release/documentation.pdf .
-          zip -r template-${{ steps.get_meta.outputs.project }}-${{ steps.get_meta.outputs.tag }}.zip . -x "*.zip" -x "node_modules/*" -x ".release/*" -x ".git/*" -x ".github/*" -x ".gitignore" -x "public/images/photo/*" -x "dist/images/photo/*" -x "public/images/avatars/photo/*" -x "dist/images/avatars/photo/*" -x "docker-compose.yml"
+          zip -r template-${{ steps.get_meta.outputs.project }}-${{ steps.get_meta.outputs.tag }}.zip . -x "*.zip" -x "node_modules/*" -x ".release/*" -x ".git/*" -x ".github/*" -x ".gitignore" -x "public/images/photo/demo/*" -x "dist/images/photo/demo/*" -x "public/images/avatars/photos/*" -x "dist/images/avatars/photos/*" -x "public/images/avatars/svg/*.gif" -x "dist/images/avatars/svg/*.gif" -x "docker-compose.yml"
           zip -j ${{ steps.get_meta.outputs.project }}-preview.zip .release/${{ steps.get_meta.outputs.project }}-preview.png
           zip -j release-${{ steps.get_meta.outputs.project }}-${{ steps.get_meta.outputs.tag }}.zip template-${{ steps.get_meta.outputs.project }}-${{ steps.get_meta.outputs.tag }}.zip ${{ steps.get_meta.outputs.project }}-preview.zip .release/${{ steps.get_meta.outputs.project }}-thumb.png
 

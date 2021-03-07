@@ -4,7 +4,7 @@ import { useHead } from '@vueuse/head'
 import { activeSidebar, toggleSidebar } from '/@src/state/activeSidebarState'
 
 useHead({
-  title: 'Projects projects 2 - Admin - Vuero',
+  title: 'Projects projects 2 - Sidebar - Vuero',
 })
 </script>
 

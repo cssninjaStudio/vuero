@@ -145,7 +145,7 @@ const {
 } = useDropdown()
 
 useHead({
-  title: 'Messaging chat - WebApp - Vuero',
+  title: 'Messaging chat - Navbar - Vuero',
 })
 </script>
 

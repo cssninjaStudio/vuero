@@ -4,7 +4,7 @@ import { useHead } from '@vueuse/head'
 import { activeSidebar, toggleSidebar } from '/@src/state/activeSidebarState'
 
 useHead({
-  title: 'Utility Account Confirm - Admin - Vuero',
+  title: 'Utility Account Confirm - Sidebar - Vuero',
 })
 </script>
 

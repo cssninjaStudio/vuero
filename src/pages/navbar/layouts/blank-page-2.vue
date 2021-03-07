@@ -4,7 +4,7 @@ import { useHead } from '@vueuse/head'
 import { setLayout } from '/@src/state/navbarLayoutState'
 
 useHead({
-  title: 'Blank Page 2 - WebApp - Vuero',
+  title: 'Blank Page 2 - Navbar - Vuero',
 })
 
 onMounted(() => {

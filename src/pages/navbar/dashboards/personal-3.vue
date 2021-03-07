@@ -2,7 +2,7 @@
 import { useHead } from '@vueuse/head'
 
 useHead({
-  title: 'Dashboards Personal 3 - WebApp - Vuero',
+  title: 'Dashboards Personal 3 - Navbar - Vuero',
 })
 </script>
 

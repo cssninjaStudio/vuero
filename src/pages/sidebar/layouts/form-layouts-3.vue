@@ -4,7 +4,7 @@ import { useHead } from '@vueuse/head'
 import { activeSidebar, toggleSidebar } from '/@src/state/activeSidebarState'
 
 useHead({
-  title: 'Form Layouts 3 - Admin - Vuero',
+  title: 'Form Layouts 3 - Sidebar - Vuero',
 })
 </script>
 

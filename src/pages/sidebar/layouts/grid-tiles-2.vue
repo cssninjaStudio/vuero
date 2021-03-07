@@ -4,7 +4,7 @@ import { useHead } from '@vueuse/head'
 import { activeSidebar, toggleSidebar } from '/@src/state/activeSidebarState'
 
 useHead({
-  title: 'Grid Tiles 2 - Admin - Vuero',
+  title: 'Grid Tiles 2 - Sidebar - Vuero',
 })
 </script>
 

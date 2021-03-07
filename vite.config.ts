@@ -35,6 +35,14 @@ export default defineConfig({
     // https://github.com/hannoeru/vite-plugin-pages
     Pages(),
 
+    /**
+     * This is an internal vite plugin that load markdown files as vue components.
+     *
+     * @see /documentation
+     * @see /vite-plugin-vuero-doc
+     * @see /src/components/partials/documentation/DocumentationItem.vue
+     * @see /src/composable/useMarkdownToc.ts
+     * */
     VueroDocumentation(),
 
     // https://github.com/antfu/vite-plugin-components

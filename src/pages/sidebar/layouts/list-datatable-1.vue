@@ -4,7 +4,7 @@ import { useHead } from '@vueuse/head'
 import { activeSidebar, toggleSidebar } from '/@src/state/activeSidebarState'
 
 useHead({
-  title: 'List Datatable 1 - Admin - Vuero',
+  title: 'List Datatable 1 - Sidebar - Vuero',
 })
 </script>
 

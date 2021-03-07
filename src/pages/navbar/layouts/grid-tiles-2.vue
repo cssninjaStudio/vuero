@@ -2,7 +2,7 @@
 import { useHead } from '@vueuse/head'
 
 useHead({
-  title: 'Grid Tiles 2 - WebApp - Vuero',
+  title: 'Grid Tiles 2 - Navbar - Vuero',
 })
 </script>
 

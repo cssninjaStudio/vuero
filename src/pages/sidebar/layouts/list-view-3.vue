@@ -5,7 +5,7 @@ import { ref } from 'vue'
 import { activeSidebar, toggleSidebar } from '/@src/state/activeSidebarState'
 
 useHead({
-  title: 'List View 3 - Admin - Vuero',
+  title: 'List View 3 - Sidebar - Vuero',
 })
 </script>
 

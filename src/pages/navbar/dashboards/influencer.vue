@@ -7,7 +7,7 @@ type TabId = 'overview' | 'content' | 'brands'
 const activeTab = ref<TabId>('overview')
 
 useHead({
-  title: 'Dashboards Lifestyle 1 - WebApp - Vuero',
+  title: 'Dashboards Lifestyle 1 - Navbar - Vuero',
 })
 onMounted(() => {
   setLayout('navbar-fade')
