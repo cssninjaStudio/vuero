@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { isDark } from '/@src/state/darkModeState.ts'
+import { isDark } from '/@src/state/darkModeState'
 import useDropdown from '/@src/composable/useDropdown'
 
 const { dropdownElement, isOpen, toggle } = useDropdown()

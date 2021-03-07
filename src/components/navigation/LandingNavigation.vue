@@ -4,7 +4,7 @@ import { computed, ref, watchEffect } from 'vue'
 import { isLargeScreen } from '/@src/state/responsiveState'
 import VueScrollTo from 'vue-scrollto'
 
-import { isDark } from '/@src/state/darkModeState.ts'
+import { isDark } from '/@src/state/darkModeState'
 
 const isMobileNavOpen = ref(false)
 const scrollTo = VueScrollTo.scrollTo
@@ -81,7 +81,7 @@ watchEffect(() => {
         </div>
 
         <div class="navbar-item">
-          <a class="nav-link">Docs</a>
+          <a href="https://docs.cssninja.io/vuero" class="nav-link">Docs</a>
         </div>
 
         <div class="navbar-item">

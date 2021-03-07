@@ -2,7 +2,7 @@
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 
-import { isDark } from '/@src/state/darkModeState.ts'
+import { isDark } from '/@src/state/darkModeState'
 import { activePanel } from '/@src/state/activePanelState'
 import useDropdown from '/@src/composable/useDropdown'
 
