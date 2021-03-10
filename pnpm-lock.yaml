@@ -87,6 +87,7 @@ devDependencies:
   vite-plugin-pages: 0.5.1_vite@2.0.5+vue@3.0.7
   vite-plugin-purge-icons: 0.7.0_vite@2.0.5
   vite-plugin-pwa: 0.5.6
+  vite-plugin-radar: 0.0.1_vite@2.0.5
   yorkie: 2.0.0
 lockfileVersion: 5.2
 packages:
@@ -1731,7 +1732,7 @@ packages:
     dependencies:
       '@nodelib/fs.stat': 2.0.4
       '@nodelib/fs.walk': 1.2.6
-      glob-parent: 5.1.1
+      glob-parent: 5.1.2
       merge2: 1.4.1
       micromatch: 4.0.2
       picomatch: 2.2.2
@@ -4726,6 +4727,14 @@ packages:
       node: '>= 6'
     resolution:
       integrity: sha512-FnI+VGOpnlGHWZxthPGR+QhR78fuiK0sNLkHQv+bL9fQi57lNNdquIbna/WrfROrolq8GK5Ek6BiMwqL/voRYQ==
+  /glob-parent/5.1.2:
+    dependencies:
+      is-glob: 4.0.1
+    dev: true
+    engines:
+      node: '>= 6'
+    resolution:
+      integrity: sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==
   /glob-to-regexp/0.4.1:
     dev: true
     resolution:
@@ -9058,6 +9067,14 @@ packages:
     dev: true
     resolution:
       integrity: sha512-CQjfKdSm0YMRRdMkfdI1RqJyrCjOFUl61+puGfMNAUMM5tex9rjF9gHxqDV5pN/2jFMQoTKkLLQ7HOYM0VbF2w==
+  /vite-plugin-radar/0.0.1_vite@2.0.5:
+    dependencies:
+      vite: 2.0.5
+    dev: true
+    peerDependencies:
+      vite: ^2.0.0
+    resolution:
+      integrity: sha512-lCHvzyI8XHSQ/R7m1yyScS14uzc/FjterzSwZ9bgYw8zfAzYOLLDfUvw5ISad/1UtAMH9vUCMMvfEIGmmHHoYA==
   /vite/2.0.5:
     dependencies:
       esbuild: 0.8.54
@@ -9625,6 +9642,7 @@ specifiers:
   vite-plugin-pages: 0.5.1
   vite-plugin-purge-icons: 0.7.0
   vite-plugin-pwa: 0.5.6
+  vite-plugin-radar: ^0.0.1
   vue: 3.0.7
   vue-i18n: 9.0.0-rc.9
   vue-router: 4.0.4

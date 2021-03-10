@@ -262,17 +262,29 @@ watchEffect(onConversationChanged)
                   </template>
 
                   <!-- Image messages -->
+
                   <template v-else-if="message.type === 'image'">
                     <div class="avatar is-online">
                       <img :src="message.avatar" draggable="false" />
                     </div>
                     <div class="msg is-image">
                       <div class="image-container">
-                        <img :src="message.content.image_url" />
+                        <V-PhotosSwipe
+                          :items="[
+                            {
+                              src: message.content.image_url,
+                              thumbnail: message.content.image_url,
+                              w: 600,
+                              h: 400,
+                              alt: 'optional alt attribute for thumbnail image',
+                            },
+                          ]"
+                          thumbnail-radius="full"
+                        />
                         <div class="image-overlay"></div>
                         <div class="image-actions">
                           <div class="actions-inner">
-                            <div class="action">
+                            <div class="action download">
                               <span
                                 class="iconify"
                                 data-icon="feather:download"
@@ -1333,15 +1345,19 @@ watchEffect(onConversationChanged)
       &:hover {
         .image-overlay {
           opacity: 0.45;
+          pointer-events: none;
         }
 
         .image-actions {
           opacity: 1;
-          pointer-events: all;
+
+          .download {
+            pointer-events: all;
+          }
         }
       }
 
-      img {
+      figure {
         position: relative;
         display: block;
         border-radius: 3px;

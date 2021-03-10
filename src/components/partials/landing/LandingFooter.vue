@@ -10,7 +10,7 @@
         <div class="head-action">
           <div class="buttons">
             <a
-              href="https://themeforest.net/item/huro-multipurpose-sidebar-and-navbar-ui-kit/28933249"
+              href="https://themeforest.net/item/vuero-vuejs-3-admin-and-webapp-ui-kit/31053035"
               class="button v-button is-primary is-rounded raised action-button"
               >Buy Vuero</a
             >

@@ -4,6 +4,7 @@ import Vue from '@vitejs/plugin-vue'
 import Pages from 'vite-plugin-pages'
 import ViteComponents from 'vite-plugin-components'
 import ViteFonts from 'vite-plugin-fonts'
+import ViteRadar from 'vite-plugin-radar'
 import PurgeIcons from 'vite-plugin-purge-icons'
 import ImageTools from 'vite-imagetools'
 import VueI18n from '@intlify/vite-plugin-vue-i18n'
@@ -72,6 +73,13 @@ export default defineConfig({
             styles: 'wght@300;400;500;600;700',
           },
         ],
+      },
+    }),
+
+    // https://github.com/stafyniaksacha/vite-plugin-radar
+    ViteRadar({
+      analytics: {
+        id: 'G-8PH6FM2JEL',
       },
     }),
 
