@@ -110,6 +110,11 @@ Responsive styles
     }
   }
 
+  .mobile-main-sidebar,
+  .mobile-subsidebar {
+    display: none !important;
+  }
+
   .sidebar-panel {
     box-shadow: $light-box-shadow;
 
