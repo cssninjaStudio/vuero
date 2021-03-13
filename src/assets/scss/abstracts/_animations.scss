@@ -22,10 +22,10 @@
 ========================================================================== */
 
 .animated {
-  animation-duration: 0.5s;
-  animation-fill-mode: both;
   -webkit-animation-duration: 0.5s;
   -webkit-animation-fill-mode: both;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
 }
 
 /* ==========================================================================
@@ -60,37 +60,37 @@
 
 @keyframes rotating {
   from {
-    transform: rotate(0deg);
     -o-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 
   to {
-    transform: rotate(360deg);
     -o-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
 @-webkit-keyframes rotating {
   from {
-    transform: rotate(0deg);
     -o-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 
   to {
-    transform: rotate(360deg);
     -o-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
@@ -232,10 +232,12 @@
 @-webkit-keyframes scaleIn {
   from {
     -webkit-transform: scale(0);
+    transform: scale(0);
   }
 
   to {
     -webkit-transform: scale(1);
+    transform: scale(1);
   }
 }
 
@@ -251,15 +253,15 @@
 
 .scaleIn {
   -webkit-animation: scalein 0.5s;
-  animation: scaleIn 0.5s;
   -webkit-animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+  animation: scaleIn 0.5s;
   animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .scaleInTooltip {
   -webkit-animation: scalein 0.3s;
-  animation: scaleIn 0.3s;
   -webkit-animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+  animation: scaleIn 0.3s;
   animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
@@ -270,10 +272,12 @@
 @-webkit-keyframes scaleOut {
   from {
     -webkit-transform: scale(1);
+    transform: scale(1);
   }
 
   to {
     -webkit-transform: scale(0);
+    transform: scale(0);
   }
 }
 
@@ -289,15 +293,15 @@
 
 .scaleOut {
   -webkit-animation: scaleout 0.5s;
-  animation: scaleOut 0.5s;
   -webkit-animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+  animation: scaleOut 0.5s;
   animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .scaleOutTooltip {
   -webkit-animation: scaleout 0.3s;
-  animation: scaleOut 0.3s;
   -webkit-animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+  animation: scaleOut 0.3s;
   animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
@@ -308,10 +312,12 @@
 @-webkit-keyframes scaleInCircle {
   from {
     -webkit-transform: scale(0);
+    transform: scale(0);
   }
 
   to {
     -webkit-transform: scale(7);
+    transform: scale(7);
   }
 }
 
@@ -327,8 +333,8 @@
 
 .scaleInCircle {
   -webkit-animation: scaleincircle 0.6s;
-  animation: scaleInCircle 0.6s;
   -webkit-animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+  animation: scaleInCircle 0.6s;
   animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
@@ -340,18 +346,22 @@
   from,
   to {
     -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
   }
 
   25% {
     -webkit-transform: scale(0.9, 1.1);
+    transform: scale(0.9, 1.1);
   }
 
   50% {
     -webkit-transform: scale(1.1, 0.9);
+    transform: scale(1.1, 0.9);
   }
 
   75% {
     -webkit-transform: scale(0.95, 1.05);
+    transform: scale(0.95, 1.05);
   }
 }
 
@@ -376,10 +386,10 @@
 
 .gelatine {
   -webkit-animation: gelatine 0.6s;
-  animation: gelatine 0.6s;
   -webkit-animation-duration: 0.6s;
-  animation-duration: 0.6s;
   -webkit-animation-fill-mode: both;
+  animation: gelatine 0.6s;
+  animation-duration: 0.6s;
   animation-fill-mode: both;
 }
 
