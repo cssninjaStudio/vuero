@@ -53,7 +53,7 @@ watchEffect(() => {
       <div class="navbar-start">
         <div class="navbar-item">
           <a
-            href="https://themeforest.net/item/huro-multipurpose-sidebar-and-navbar-ui-kit/28933249"
+            href="https://themeforest.net/item/vuero-vuejs-3-admin-and-webapp-ui-kit/31053035"
             class="nav-link is-active"
           >
             Buy Now
@@ -85,7 +85,7 @@ watchEffect(() => {
         </div>
 
         <div class="navbar-item">
-          <a class="nav-link">Support</a>
+          <a href="https://cssninja.io" class="nav-link">Support</a>
         </div>
       </div>
 

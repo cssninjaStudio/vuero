@@ -33,9 +33,25 @@ const props = defineProps({
   },
 })
 
+const resolveImageSrc = async function (item: any) {
+  return new Promise((resolve) => {
+    const img = new Image()
+    img.onerror = function () {
+      img.onerror = null
+      resolve(item.msrc)
+    }
+    img.onload = function () {
+      img.onload = null
+      resolve(item.src)
+    }
+    img.style.display = 'none'
+    img.src = item.src
+  })
+}
+
 // parse slide data (url, title, size ...) from DOM elements
 // (children of gallerySelector)
-const parseThumbnailElements = function (el: HTMLElement) {
+const parseThumbnailElements = async function (el: HTMLElement) {
   let thumbElements = el.childNodes,
     numNodes = thumbElements.length,
     items = [],
@@ -82,6 +98,8 @@ const parseThumbnailElements = function (el: HTMLElement) {
       item.msrc = linkEl.children[0].getAttribute('src')
     }
 
+    item.src = await resolveImageSrc(item)
+
     item.el = figureEl // save link to element for getThumbBoundsFn
     items.push(item)
   }
@@ -95,7 +113,7 @@ const closest = function closest(el: any, fn: Function): HTMLElement {
 }
 
 // triggers when user clicks on thumbnail
-const onThumbnailsClick = function (e: Event) {
+const onThumbnailsClick = async function (e: Event) {
   let eTarget = e.target
 
   // find root element of slide
@@ -128,7 +146,7 @@ const onThumbnailsClick = function (e: Event) {
 
   if (galleryElement.value && index !== undefined && index >= 0) {
     // open PhotoSwipe if valid index found
-    openPhotoSwipe(index.toString(), galleryElement.value)
+    await openPhotoSwipe(index.toString(), galleryElement.value)
   }
   return false
 }
@@ -161,7 +179,7 @@ const photoswipeParseHash = function () {
   return params
 }
 
-const openPhotoSwipe = function (
+const openPhotoSwipe = async function (
   index: string,
   galleryElement: HTMLElement,
   disableAnimation = false,
@@ -173,7 +191,7 @@ const openPhotoSwipe = function (
 
   let gallery: any, options: any, items: any
 
-  items = parseThumbnailElements(galleryElement)
+  items = await parseThumbnailElements(galleryElement)
 
   // define options (if needed)
   options = {
@@ -236,6 +254,7 @@ const openPhotoSwipe = function (
         gallery.invalidateCurrItems() // reinit Items
         gallery.updateSize(true) // reinit Items
       }
+      img.style.display = 'none'
       img.src = item.src // let's download image
     }
   })
@@ -306,6 +325,9 @@ const resetAngle = () => {
           :src="item.thumbnail"
           :alt="item.alt"
           itemprop="thumbnail"
+          @error.once="
+            $event.target.src = `https://via.placeholder.com/${item.w}x${item.h}`
+          "
         />
       </a>
     </figure>

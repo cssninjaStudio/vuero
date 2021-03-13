@@ -1,6 +1,6 @@
 {
   "name": "vuero",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": "true",
   "license": "MIT",
   "scripts": {
@@ -117,6 +117,7 @@
     "vite-plugin-pages": "0.5.1",
     "vite-plugin-purge-icons": "0.7.0",
     "vite-plugin-pwa": "0.5.6",
+    "vite-plugin-radar": "^0.0.1",
     "yorkie": "2.0.0"
   },
   "lint-staged": {

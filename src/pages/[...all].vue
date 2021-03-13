@@ -38,7 +38,7 @@ useHead({
             an administrator if the problem persists.
           </p>
           <div class="button-wrap">
-            <V-Button primary elevated :to="{ name: 'index' }">
+            <V-Button color="primary" elevated :to="{ name: 'index' }">
               Take me Back
             </V-Button>
           </div>
