@@ -192,6 +192,13 @@
 
     .field {
       max-width: 540px;
+      flex-wrap: wrap;
+
+      &.is-grouped {
+        .control {
+          margin-bottom: 0.75rem;
+        }
+      }
 
       &.demo-select {
         max-width: 340px;
@@ -572,6 +579,14 @@
       .code-trigger {
         top: 10px;
         right: 12px;
+      }
+    }
+
+    .field {
+      &.is-grouped {
+        .control {
+          margin-bottom: 0.75rem;
+        }
       }
     }
   }

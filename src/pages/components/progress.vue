@@ -17,7 +17,7 @@ useHead({
 </script>
 
 <template>
-  <div class="page-content is-relative">
+  <div>
     <div class="page-title has-text-centered">
       <!-- Sidebar Trigger -->
       <div
@@ -71,7 +71,7 @@ useHead({
         <div
           ref="markdownContainer"
           :class="[toc.length > 0 ? 'is-9' : 'is-12']"
-          class="column"
+          class="column doc-column"
         >
           <!--V-Progress-->
           <VProgressBaseDocumentation />
@@ -82,7 +82,7 @@ useHead({
           <!--V-Progress undeterminate-->
           <VProgressUndeterminateDocumentation />
         </div>
-        <div v-if="toc.length" class="column is-3">
+        <div v-if="toc.length" class="column is-3 toc-column">
           <DocumentationToc :toc="toc" />
         </div>
       </div>

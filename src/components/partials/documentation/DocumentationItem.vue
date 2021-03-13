@@ -58,42 +58,10 @@ const displayCode = ref(false)
 @import '../../../assets/scss/abstracts/_variables.scss';
 @import '../../../assets/scss/abstracts/_mixins.scss';
 
-// .demo-card {
-//   .demo-title {
-//     ::v-deep(h3) {
-//       font-family: $font-alt;
-//       font-size: 1.25rem;
-//       font-weight: 300;
-//       margin-bottom: 0.75rem;
-//       color: $dark-text;
-//       line-height: 1.125;
-//     }
-//   }
-// }
-
-// .is-dark {
-//   .demo-card {
-//     .demo-title {
-//       ::v-deep(h3) {
-//         color: $dark-dark-text;
-//       }
-
-//       ::v-deep(code) {
-//         background: lighten($dark-sidebar, 6%) !important;
-//         color: $primary;
-//       }
-
-//       ::v-deep(strong) {
-//         color: $white;
-//         font-weight: 400;
-//       }
-//     }
-//   }
-// }
-
 .demo-code-wrapper {
   display: flex;
   margin-top: 2rem;
+  overflow-x: auto;
 
   .demo-code {
     flex-grow: 1;
@@ -135,9 +103,10 @@ const displayCode = ref(false)
   .icon-boxes {
     display: flex;
     align-items: flex-end;
+    flex-wrap: wrap;
 
     .v-icon {
-      margin: 0 0.15rem;
+      margin: 0 0.25rem 0.5rem 0;
     }
   }
 }

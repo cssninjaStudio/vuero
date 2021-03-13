@@ -88,7 +88,7 @@ useHead({
               </V-Block>
             </template>
             <template #header-right>
-              <V-AvatarStack :avatars="userStack2" :limit="3" size="small" />
+              <V-AvatarStack :avatars="userStack2" :limit="1" size="small" />
             </template>
             <template #content>
               <p>
@@ -99,7 +99,6 @@ useHead({
             </template>
             <template #footer-left>
               <div class="tags">
-                <V-Tag label="Sales" color="solid" rounded />
                 <V-Tag label="Business" color="solid" rounded />
               </div>
             </template>
@@ -113,7 +112,6 @@ useHead({
           <V-CardAdvanced radius="smooth">
             <template #header-left>
               <div class="tags">
-                <V-Tag label="Sales" color="solid" rounded />
                 <V-Tag label="Business" color="solid" rounded />
               </div>
             </template>
@@ -138,7 +136,7 @@ useHead({
               </V-Block>
             </template>
             <template #footer-right>
-              <V-AvatarStack :avatars="userStack2" :limit="3" size="small" />
+              <V-AvatarStack :avatars="userStack2" :limit="1" size="small" />
             </template>
           </V-CardAdvanced>
         </div>
@@ -169,7 +167,7 @@ useHead({
               </V-Block>
             </template>
             <template #footer-right>
-              <V-AvatarStack :avatars="userStack2" :limit="3" size="small" />
+              <V-AvatarStack :avatars="userStack2" :limit="1" size="small" />
             </template>
           </V-CardAdvanced>
         </div>

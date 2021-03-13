@@ -25,6 +25,10 @@
         }
 
         .icon {
+          &:first-child {
+            margin-right: 0;
+          }
+
           &.is-solo {
             svg {
               top: 2px;

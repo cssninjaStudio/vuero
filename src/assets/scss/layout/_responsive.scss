@@ -120,7 +120,7 @@ Responsive styles
 
   .sidebar-panel,
   .sidebar-search {
-    left: 60px;
+    left: 60px !important;
   }
 
   .is-navbar {
@@ -550,5 +550,15 @@ Responsive styles
 @media only screen and (min-width: 1025px) {
   .h-hidden-desktop {
     display: none !important;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .toc-column {
+    display: none !important;
+  }
+
+  .doc-column {
+    width: 100% !important;
   }
 }

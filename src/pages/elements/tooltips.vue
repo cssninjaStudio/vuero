@@ -71,7 +71,7 @@ useHead({
         <div
           ref="markdownContainer"
           :class="[toc.length > 0 ? 'is-9' : 'is-12']"
-          class="column"
+          class="column doc-column"
         >
           <!--Default Tooltip-->
           <TooltipBaseDocumentation />
@@ -85,7 +85,7 @@ useHead({
           <!--Tooltip Shapes-->
           <TooltipShapesDocumentation />
         </div>
-        <div v-if="toc.length" class="column is-3">
+        <div v-if="toc.length" class="column is-3 toc-column">
           <DocumentationToc :toc="toc" />
         </div>
       </div>
