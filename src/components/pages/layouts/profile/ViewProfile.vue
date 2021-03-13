@@ -534,4 +534,12 @@
 @import '../../../../assets/scss/abstracts/_variables.scss';
 @import '../../../../assets/scss/abstracts/_mixins.scss';
 @import '../../../../assets/scss/pages/profile/_user-profile.scss';
+
+.is-dark {
+  .icon-wrap,
+  .icon-wrap.is-placeholder {
+    background: lighten($dark-sidebar, 2%) !important;
+    border-color: lighten($dark-sidebar, 12%) !important;
+  }
+}
 </style>

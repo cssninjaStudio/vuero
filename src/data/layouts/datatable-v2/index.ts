@@ -32,7 +32,6 @@ function renderCategory(data: any, cell: any, row: any) {
 
 // Button
 function renderButton(data: any, cell: any, row: any) {
-  console.log('ROW', cell)
   return `<div class="has-text-right">
             <button class="button v-button is-dark-outlined" data-row="${row.dataIndex}">
                 <span class="icon">

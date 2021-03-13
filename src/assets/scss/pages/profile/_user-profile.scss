@@ -657,11 +657,12 @@
             .skills-wrapper {
               .skills-item {
                 .icon-wrap {
-                  border-color: $accent;
+                  border-color: $accent !important;
 
-                  &.has-icon {
-                    background: lighten($dark-sidebar, 2%);
-                    border-color: lighten($dark-sidebar, 12%);
+                  &.has-icon,
+                  &.has-img {
+                    background: lighten($dark-sidebar, 2%) !important;
+                    border-color: lighten($dark-sidebar, 12%) !important;
                   }
                 }
 

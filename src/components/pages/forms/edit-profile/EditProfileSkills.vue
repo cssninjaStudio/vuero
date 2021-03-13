@@ -640,7 +640,7 @@ const onSave = async () => {
 
             <!--Skill Item-->
             <div class="setting-item">
-              <V-IconWrap picture="/images/icons/stacks/jira.svg" />
+              <V-IconWrap picture="/images/photo/demo/tools/jira.svg" />
 
               <div class="meta">
                 <span class="dark-inverted">Jira Software</span>
@@ -653,7 +653,7 @@ const onSave = async () => {
 
             <!--Skill Item-->
             <div class="setting-item">
-              <V-IconWrap picture="/images/icons/stacks/office.svg" />
+              <V-IconWrap picture="/images/photo/demo/tools/office.svg" />
 
               <div class="meta">
                 <span class="dark-inverted">MS Office</span>

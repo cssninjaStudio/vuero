@@ -124,7 +124,7 @@ const optionsSingle = [
                       >{{ item.dueDate }}
                     </p>
                   </div>
-                  <V-AvatarStack :avatars="item.team" size="small" limit="3" />
+                  <V-AvatarStack :avatars="item.team" size="small" :limit="3" />
                 </div>
               </div>
               <footer class="card-footer">

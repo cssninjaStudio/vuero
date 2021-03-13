@@ -25,7 +25,7 @@ export const projects = [
         picture: '/images/avatars/photos/15.jpg',
         name: 'Hilde V.',
         initials: 'HV',
-        color: 'purple',
+        color: 'h-purple',
       },
       {
         id: 12,

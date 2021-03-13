@@ -791,7 +791,7 @@
     }
 
     .toggler {
-      border-color: lighten($dark-sidebar, 25%);
+      border-color: lighten($dark-sidebar, 25%) !important;
 
       .active,
       .inactive {

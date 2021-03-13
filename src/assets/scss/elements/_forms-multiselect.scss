@@ -20,6 +20,18 @@
     transform: rotate(-45deg) !important;
   }
 
+  .multiselect-clear {
+    top: 2px;
+    right: 6px;
+    height: 32px;
+    width: 32px;
+
+    &::after,
+    &::before {
+      top: 10px;
+    }
+  }
+
   .multiselect-input {
     background: $white;
     min-height: 38px;
@@ -176,6 +188,10 @@
   }
 
   .multiselect {
+    .multiselect-clear {
+      background-color: lighten($dark-sidebar, 2%);
+    }
+
     .multiselect-input {
       background-color: lighten($dark-sidebar, 2%);
       border: 1px solid lighten($dark-sidebar, 10%);
@@ -242,6 +258,10 @@
 
 .is-rounded-select {
   .multiselect {
+    .multiselect-clear {
+      border-radius: 500px;
+    }
+
     .multiselect-input {
       border-radius: 500px;
 
@@ -269,6 +289,10 @@
 
 .is-curved-select {
   .multiselect {
+    .multiselect-clear {
+      border-radius: 0.5rem;
+    }
+
     .multiselect-input {
       border-radius: 0.5rem;
 

@@ -232,7 +232,7 @@
                   size="small"
                   picture="/images/avatars/photos/11.jpg"
                 />
-                <V-Avatar size="small" color="fake" initials="AG" />
+                <V-Avatar size="small" color="h-orange" initials="AG" />
               </div>
             </div>
             <div class="foot-block">

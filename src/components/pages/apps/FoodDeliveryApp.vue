@@ -518,6 +518,7 @@ onUnmounted(() => {
               font-family: $font;
               font-weight: 500;
               padding-top: 12px;
+              display: block;
               transition: color 0.3s;
             }
           }
@@ -841,13 +842,22 @@ onUnmounted(() => {
                 background: lighten($dark-sidebar, 2%) !important;
                 border-color: lighten($dark-sidebar, 12%) !important;
 
+                span {
+                  color: $dark-dark-text;
+                }
+
+                &.active {
+                  background: $primary !important;
+                  border-color: $primary !important;
+
+                  span {
+                    color: #fff;
+                  }
+                }
+
                 .food-pill-icon {
                   background: lighten($fade-grey, 3%);
                   border-color: lighten($fade-grey, 3%);
-                }
-
-                span {
-                  color: $dark-dark-text;
                 }
               }
 

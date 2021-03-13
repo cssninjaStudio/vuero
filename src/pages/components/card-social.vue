@@ -84,8 +84,10 @@ useHead({
             :hashtags="['#bulmaio', '#css', '#responsive']"
             icon="fab fa-twitter"
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-            nec iaculis mauris.
+            <span class="dark-inverted">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+              nec iaculis mauris.
+            </span>
           </V-CardSocial>
         </div>
 
@@ -98,8 +100,10 @@ useHead({
             :hashtags="['#bulmaio', '#css', '#responsive']"
             icon="fab fa-instagram"
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-            nec iaculis mauris.
+            <span class="dark-inverted">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+              nec iaculis mauris.
+            </span>
           </V-CardSocial>
         </div>
 
@@ -112,8 +116,10 @@ useHead({
             :hashtags="['#bulmaio', '#css', '#responsive']"
             icon="fab fa-facebook-f"
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-            nec iaculis mauris.
+            <span class="dark-inverted">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+              nec iaculis mauris.
+            </span>
           </V-CardSocial>
         </div>
       </div>

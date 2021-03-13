@@ -62,7 +62,7 @@ summary {
   outline: none;
   list-style: none;
 
-  &::-webkit-details-marker {
+  &::marker {
     display: none;
   }
 }

@@ -114,6 +114,7 @@ const isIconify = computed(() => {
 
 <style lang="scss" scoped>
 @import '../../../assets/scss/abstracts/_variables.scss';
+
 .icon-wrap {
   display: flex;
   justify-content: center;
