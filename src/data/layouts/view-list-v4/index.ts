@@ -2,7 +2,7 @@ export const recipes = [
   {
     id: '1',
     icon: '/@src/assets/illustrations/list-views/cake-1.svg',
-    name: 'Strawberry &amp; Cream Cake',
+    name: 'Strawberry & Cream Cake',
     category: 'Cakes',
     duration: '1h 45m',
     attachments: 3,
