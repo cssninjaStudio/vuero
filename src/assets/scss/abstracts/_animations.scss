@@ -454,12 +454,12 @@
 
 .levitate {
   -webkit-animation-name: levitate;
-  animation-name: levitate;
   -webkit-animation-duration: 3s;
-  animation-duration: 3s;
   -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
+  animation-name: levitate;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
 
@@ -515,9 +515,9 @@
 
 .translateLeft {
   -webkit-animation-name: translateleft;
-  animation-name: translateLeft;
   -webkit-animation-duration: 0.3s;
-  animation-duration: 0.3s;
   -webkit-transition: all 500ms cubic-bezier(0.755, 0.05, 0.855, 0.06);
+  animation-name: translateLeft;
+  animation-duration: 0.3s;
   transition: all 500ms cubic-bezier(0.755, 0.05, 0.855, 0.06);
 }
