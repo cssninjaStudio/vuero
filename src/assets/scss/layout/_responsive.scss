@@ -477,6 +477,11 @@ Responsive styles
   .panel-close {
     display: none !important;
   }
+
+  .mobile-main-sidebar,
+  .mobile-subsidebar {
+    display: none !important;
+  }
 }
 
 /* ==========================================================================
