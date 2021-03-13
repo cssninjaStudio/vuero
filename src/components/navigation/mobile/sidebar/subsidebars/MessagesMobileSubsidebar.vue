@@ -19,9 +19,7 @@ const emit = defineEmit(['selectConversation'])
 
 <template>
   <div
-    :class="[
-      isMobileSidebarOpen && activeSidebar === 'messages' && 'is-active',
-    ]"
+    :class="[isMobileSidebarOpen && 'is-active']"
     class="mobile-subsidebar is-messaging"
   >
     <div class="inner">

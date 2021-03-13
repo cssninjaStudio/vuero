@@ -874,29 +874,35 @@ useHead({
       transition: all 0.3s;
 
       &.is-docked {
-        top: 0;
-        border-color: transparent;
-        height: 110px;
-        box-shadow: none;
-        background: transparent;
+        &:not(.is-solid) {
+          top: 0;
+          border-color: transparent;
+          height: 110px;
+          box-shadow: none;
+          background: transparent;
 
-        .navbar-brand {
-          .brand-icon {
-            height: 64px;
-            width: 64px;
-            background: $white;
-            border-color: darken($fade-grey, 3%);
+          .navbar-brand {
+            .brand-icon {
+              height: 64px;
+              width: 64px;
+              background: $white;
+              border-color: darken($fade-grey, 3%);
+            }
+          }
+
+          .navbar-menu {
+            .navbar-item {
+              &.is-theme-toggle {
+                opacity: 0;
+                pointer-events: none;
+                transition: all 0.3s;
+              }
+            }
           }
         }
 
-        .navbar-menu {
-          .navbar-item {
-            &.is-theme-toggle {
-              opacity: 0;
-              pointer-events: none;
-              transition: all 0.3s;
-            }
-          }
+        &.is-solid {
+          height: 65px !important;
         }
       }
 
@@ -2472,13 +2478,10 @@ useHead({
         }
       }
 
-      &:not(.is-docked) {
-        &.is-solid {
-          .navbar-menu {
-            top: 73px !important;
-          }
+      &.is-solid {
+        .navbar-menu {
+          top: 73px !important;
         }
-
         .navbar-menu {
           .navbar-item {
             &.is-theme-toggle {

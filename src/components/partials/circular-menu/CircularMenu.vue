@@ -70,10 +70,13 @@ const localFlagSrc = computed(() => {
       >
         <img :src="localFlagSrc" alt="" />
       </a>
-      <a class="menu-item is-flex">
+      <RouterLink
+        :to="{ name: 'sidebar-layouts-profile-notifications' }"
+        class="menu-item is-flex"
+      >
         <i class="iconify" data-icon="feather:bell"></i>
-      </a>
-      <a class="menu-item is-flex">
+      </RouterLink>
+      <a class="menu-item is-flex" @click="activePanel = 'activity'">
         <i class="iconify" data-icon="feather:grid"></i>
       </a>
     </div>

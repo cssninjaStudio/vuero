@@ -5,9 +5,7 @@ import { activeSidebar } from '/@src/state/activeSidebarState'
 
 <template>
   <div
-    :class="[
-      isMobileSidebarOpen && activeSidebar === 'elements' && 'is-active',
-    ]"
+    :class="[isMobileSidebarOpen && 'is-active']"
     class="mobile-subsidebar is-activity"
   >
     <div class="inner">

@@ -4,14 +4,7 @@ import { activeSidebar } from '/@src/state/activeSidebarState'
 </script>
 
 <template>
-  <div
-    :class="[
-      isMobileSidebarOpen &&
-        (activeSidebar === 'layouts' || activeSidebar === 'none') &&
-        'is-active',
-    ]"
-    class="mobile-subsidebar"
-  >
+  <div :class="[isMobileSidebarOpen && 'is-active']" class="mobile-subsidebar">
     <div class="inner">
       <div class="sidebar-title">
         <h3>Layouts</h3>

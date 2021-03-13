@@ -39,7 +39,7 @@ useHead({
         <h1 class="title is-4">Font Awesome</h1>
       </div>
 
-      <FilterToolbar />
+      <Toolbar />
     </div>
 
     <div class="page-content-inner">

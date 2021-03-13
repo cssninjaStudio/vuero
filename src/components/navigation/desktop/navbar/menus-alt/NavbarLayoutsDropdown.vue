@@ -1,6 +1,8 @@
 <script setup lang="ts">
+import { ref } from 'vue'
 import useDropdown from '/@src/composable/useDropdown'
 const { dropdownElement, isOpen, toggle } = useDropdown()
+const selectedCategory = ref('')
 </script>
 
 <template>
@@ -24,42 +26,55 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
     </div>
     <div class="dropdown-menu" role="menu">
       <div class="dropdown-content">
-        <div class="category-selector">
+        <div
+          class="category-selector"
+          :class="[selectedCategory !== '' && 'is-hidden']"
+        >
           <div class="title-wrap">
             <h4>Select a category</h4>
           </div>
           <div class="category-selector-inner">
-            <div data-category="lists-menu" class="category-item">
+            <div class="category-item" @click="selectedCategory = 'lists'">
               <i class="lnil lnil-list-alt"></i>
               <span>Lists</span>
             </div>
-            <div data-category="grids-menu" class="category-item">
+            <div class="category-item" @click="selectedCategory = 'grids'">
               <i class="lnil lnil-grid-alt"></i>
               <span>Grids</span>
             </div>
-            <div data-category="pages-menu" class="category-item">
+            <div class="category-item" @click="selectedCategory = 'pages'">
               <i class="lnil lnil-layout"></i>
               <span>Pages</span>
             </div>
-            <div data-category="subpages-menu" class="category-item">
+            <div class="category-item" @click="selectedCategory = 'subpages'">
               <i class="lnil lnil-layout-alt-1"></i>
               <span>Subpages</span>
             </div>
-            <div data-category="errors-menu" class="category-item">
+            <div class="category-item" @click="selectedCategory = 'errors'">
               <i class="lnil lnil-lock-alt"></i>
               <span>Errors</span>
             </div>
           </div>
         </div>
 
-        <div class="content-wrap is-hidden">
-          <button class="button is-circle back-button">
+        <div
+          class="content-wrap"
+          :class="[selectedCategory === '' && 'is-hidden']"
+        >
+          <button
+            class="button is-circle back-button"
+            @click="selectedCategory = ''"
+          >
             <span class="icon is-small">
               <i class="iconify" data-icon="feather:arrow-left"></i>
             </span>
           </button>
 
-          <div id="lists-menu" class="columns is-gapless mega-menus is-active">
+          <div
+            id="lists-menu"
+            :class="[selectedCategory === 'lists' && 'is-active']"
+            class="columns is-gapless mega-menus"
+          >
             <!--Column-->
             <div class="column is-4">
               <div class="dropdown-item-group">
@@ -219,7 +234,11 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
             </div>
           </div>
 
-          <div id="grids-menu" class="columns is-gapless mega-menus">
+          <div
+            id="grids-menu"
+            :class="[selectedCategory === 'grids' && 'is-active']"
+            class="columns is-gapless mega-menus"
+          >
             <!--Column-->
             <div class="column is-4">
               <div class="dropdown-item-group">
@@ -381,7 +400,11 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
             </div>
           </div>
 
-          <div id="pages-menu" class="columns is-gapless mega-menus">
+          <div
+            id="pages-menu"
+            :class="[selectedCategory === 'pages' && 'is-active']"
+            class="columns is-gapless mega-menus"
+          >
             <!--Column-->
             <div class="column is-4">
               <div class="dropdown-item-group">
@@ -609,7 +632,11 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
             </div>
           </div>
 
-          <div id="subpages-menu" class="columns is-gapless mega-menus">
+          <div
+            id="subpages-menu"
+            :class="[selectedCategory === 'subpages' && 'is-active']"
+            class="columns is-gapless mega-menus"
+          >
             <!--Column-->
             <div class="column is-4">
               <div class="dropdown-item-group">
@@ -791,7 +818,11 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
             </div>
           </div>
 
-          <div id="errors-menu" class="columns is-gapless mega-menus">
+          <div
+            id="errors-menu"
+            :class="[selectedCategory === 'errors' && 'is-active']"
+            class="columns is-gapless mega-menus"
+          >
             <!--Column-->
             <div class="column is-4">
               <div class="dropdown-item-group">

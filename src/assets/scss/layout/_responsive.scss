@@ -572,3 +572,37 @@ Responsive styles
     width: 100% !important;
   }
 }
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .mobile-navbar .navbar-item.is-notification .navbar-dropdown {
+    width: 280px !important;
+    position: absolute !important;
+    left: initial !important;
+  }
+}
+
+@media only screen and (max-device-width: 1024px) and (orientation: portrait) {
+  .mobile-navbar .navbar-item.is-notification {
+    display: flex !important;
+  }
+  .mobile-navbar {
+    display: flex !important;
+
+    > .container {
+      margin: 0;
+      max-width: 100%;
+    }
+
+    .navbar-brand {
+      align-items: center;
+      justify-content: space-between;
+      height: 60px;
+      width: 100%;
+      margin-left: 0 !important;
+
+      .navbar-burger {
+        display: flex !important;
+      }
+    }
+  }
+}

@@ -1,6 +1,8 @@
 <script setup lang="ts">
+import { ref } from 'vue'
 import useDropdown from '/@src/composable/useDropdown'
 const { dropdownElement, isOpen, toggle } = useDropdown()
+const selectedCategory = ref('')
 </script>
 
 <template>
@@ -24,16 +26,19 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
     </div>
     <div class="dropdown-menu" role="menu">
       <div class="dropdown-content">
-        <div class="category-selector">
+        <div
+          class="category-selector"
+          :class="[selectedCategory !== '' && 'is-hidden']"
+        >
           <div class="title-wrap">
             <h4>Select a category</h4>
           </div>
           <div class="category-selector-inner">
-            <div data-category="components-base-menu" class="category-item">
+            <div class="category-item" @click="selectedCategory = 'base'">
               <i class="lnil lnil-laptop-alt-switch"></i>
               <span>UI Elements</span>
             </div>
-            <div data-category="components-plugins-menu" class="category-item">
+            <div class="category-item" @click="selectedCategory = 'plugins'">
               <i class="lnil lnil-plug"></i>
               <span>Plugins</span>
             </div>
@@ -51,8 +56,14 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
           </div>
         </div>
 
-        <div class="content-wrap is-hidden">
-          <button class="button is-circle back-button">
+        <div
+          class="content-wrap"
+          :class="[selectedCategory === '' && 'is-hidden']"
+        >
+          <button
+            class="button is-circle back-button"
+            @click="selectedCategory = ''"
+          >
             <span class="icon is-small">
               <i class="iconify" data-icon="feather:arrow-left"></i>
             </span>
@@ -60,7 +71,8 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
 
           <div
             id="components-base-menu"
-            class="columns is-gapless mega-menus is-active"
+            :class="[selectedCategory === 'base' && 'is-active']"
+            class="columns is-gapless mega-menus"
           >
             <!--Column-->
             <div class="column is-4">
@@ -311,6 +323,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
 
           <div
             id="components-plugins-menu"
+            :class="[selectedCategory === 'plugins' && 'is-active']"
             class="columns is-gapless mega-menus"
           >
             <!--Column-->

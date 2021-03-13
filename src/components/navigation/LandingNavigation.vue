@@ -64,7 +64,12 @@ watchEffect(() => {
           <a
             href="#vuero-demos"
             class="nav-link is-scroll"
-            @click.prevent="scrollTo('#vuero-demos', 800, { offset: -50 })"
+            @click.prevent="
+              () => {
+                scrollTo('#vuero-demos', 800, { offset: -50 })
+                isMobileNavOpen = false
+              }
+            "
           >
             Demos
           </a>
@@ -74,7 +79,12 @@ watchEffect(() => {
           <a
             href="#vuero-components"
             class="nav-link is-scroll"
-            @click.prevent="scrollTo('#vuero-components', 800, { offset: -50 })"
+            @click.prevent="
+              () => {
+                scrollTo('#vuero-components', 800, { offset: -50 })
+                isMobileNavOpen = false
+              }
+            "
           >
             UI Elements
           </a>
