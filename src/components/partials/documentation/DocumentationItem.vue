@@ -60,6 +60,7 @@ const displayCode = ref(false)
 
 .demo-code-wrapper {
   display: flex;
+  flex-direction: column-reverse;
   margin-top: 2rem;
   overflow-x: auto;
 
@@ -67,10 +68,10 @@ const displayCode = ref(false)
     flex-grow: 1;
   }
   .demo-state {
-    flex-grow: 1;
+    //flex-grow: 1;
     position: relative;
-    margin-left: 1.5rem;
-    max-width: 300px;
+    margin-bottom: 1.5rem;
+    max-width: 100%;
 
     &::before {
       position: absolute;

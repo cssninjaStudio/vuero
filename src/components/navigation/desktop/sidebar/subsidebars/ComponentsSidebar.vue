@@ -10,7 +10,7 @@ import { activeSidebar } from '/@src/state/activeSidebarState'
   >
     <div class="subpanel-header">
       <h3 class="no-mb">Components</h3>
-      <div class="panel-close">
+      <div class="panel-close" @click="activeSidebar = 'none'">
         <i class="iconify" data-icon="feather:x"></i>
       </div>
     </div>

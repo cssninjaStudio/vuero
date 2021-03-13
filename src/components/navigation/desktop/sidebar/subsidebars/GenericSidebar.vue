@@ -12,7 +12,7 @@ import { activeSidebar } from '/@src/state/activeSidebarState'
       <ProjectsQuickDropdown />
 
       <h3 class="no-mb">Dashboards</h3>
-      <div class="panel-close">
+      <div class="panel-close" @click="activeSidebar = 'none'">
         <i class="iconify" data-icon="feather:x"></i>
       </div>
     </div>
