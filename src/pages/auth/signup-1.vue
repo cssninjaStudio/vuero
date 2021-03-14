@@ -260,7 +260,7 @@ onUnmounted(() => {
               class="columns signup-columns"
               :class="[step !== 1 && 'is-hidden']"
             >
-              <form class="column is-8 is-offset-2" @submit.prevent>
+              <form class="column is-8" @submit.prevent>
                 <div class="signup-profile-wrapper">
                   <h1 class="title is-5 signup-title has-text-centered">
                     Add a profile picture
@@ -616,6 +616,10 @@ onUnmounted(() => {
 
 .signup-columns {
   animation: fadeInLeft 0.5s;
+
+  .column.is-8 {
+    margin: 0 auto;
+  }
 }
 
 .signup-wrapper {
@@ -1318,6 +1322,72 @@ onUnmounted(() => {
       &::before,
       &::after {
         color: $light-text;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .steps-container {
+    padding: 0 1rem;
+  }
+
+  .signup-wrapper {
+    .card-bg {
+      bottom: -75px;
+    }
+
+    .columns {
+      padding: 0;
+      text-align: center;
+    }
+
+    .signup-columns {
+      max-width: 100vw;
+    }
+
+    .signup-subtitle {
+      max-width: 330px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .avatar-carousel .carousel-item {
+      margin: 0;
+    }
+
+    .button-wrap {
+      &.has-help {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .signup-wrapper {
+    .card-bg {
+      bottom: -75px;
+    }
+
+    .columns {
+      padding: 0 80px;
+      text-align: center;
+    }
+
+    .signup-columns {
+      max-width: 100vw;
+    }
+
+    .signup-subtitle {
+      max-width: 330px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .button-wrap {
+      &.has-help {
+        justify-content: center;
       }
     }
   }

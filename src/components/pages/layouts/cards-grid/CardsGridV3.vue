@@ -84,7 +84,11 @@ const optionsSingle = [
       </V-PlaceholderPage>
 
       <!--Card Grid v3-->
-      <transition-group name="list" tag="div" class="columns is-multiline">
+      <transition-group
+        name="list"
+        tag="div"
+        class="columns is-multiline is-flex-tablet-p is-half-tablet-p"
+      >
         <!--Grid Item-->
         <div v-for="item in filteredData" :key="item.id" class="column is-4">
           <div class="card-grid-item">
@@ -239,6 +243,12 @@ const optionsSingle = [
     .card-grid-item {
       @include vuero-card--dark();
     }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .card-grid-v3 .card-grid-item > h3 {
+    font-size: 1rem;
   }
 }
 </style>

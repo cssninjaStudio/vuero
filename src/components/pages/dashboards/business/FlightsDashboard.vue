@@ -838,6 +838,10 @@ const date = ref({
       }
 
       .booking-bar {
+        > div {
+          width: 100%;
+        }
+
         .booking-bar-inputs {
           flex-direction: column;
           width: 100%;

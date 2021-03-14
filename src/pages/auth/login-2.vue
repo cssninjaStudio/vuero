@@ -30,7 +30,9 @@ useHead({
   <!-- Wrapper -->
   <div class="auth-wrapper-inner columns is-gapless">
     <!-- Image section (hidden on mobile) -->
-    <div class="column login-column is-8 h-hidden-mobile hero-banner">
+    <div
+      class="column login-column is-8 h-hidden-mobile h-hidden-tablet-p hero-banner"
+    >
       <div class="hero login-hero is-fullheight is-app-grey">
         <div class="hero-body">
           <div class="columns">

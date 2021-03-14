@@ -484,45 +484,67 @@ const filteredData = computed(() => {
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   .list-view-v2 {
-    .list-view-item {
-      .list-view-item-inner {
-        position: relative;
-        flex-direction: column;
+    .list-view-inner {
+      display: flex;
+      flex-wrap: wrap;
 
-        .v-avatar {
-          margin-bottom: 10px;
-        }
+      .list-view-item {
+        padding: 20px;
+        margin: 10px;
+        width: calc(50% - 20px);
 
-        .meta-left {
-          margin-left: 0;
-        }
-
-        .meta-right {
+        .list-view-item-inner {
           flex-direction: column;
-          margin-left: 0;
+          height: 100%;
+          min-height: 450px;
 
-          .tags {
-            margin: 10px 0;
+          > img {
+            width: 100%;
+            max-width: 100%;
+            min-height: 160px;
+            max-height: 160px;
+            margin-bottom: 1rem;
           }
 
-          .stats {
-            margin: 10px 0;
-          }
-
-          .network {
-            margin: 10px 0 0 0;
-            justify-content: center;
+          .meta-left {
+            margin-left: 0;
 
             > span {
-              display: none;
+              margin-bottom: 16px;
+            }
+
+            .icon-list {
+              flex-wrap: wrap;
+
+              > span {
+                flex-direction: column;
+                text-align: center;
+                margin: 10px;
+                width: calc(33.3% - 20px);
+
+                i {
+                  margin: 0;
+                }
+              }
             }
           }
 
-          .dropdown {
-            position: absolute;
-            top: 0;
-            right: 0;
-            margin-left: 0;
+          .meta-right {
+            margin: auto 0 0 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+
+            .buttons {
+              margin: 16px 0 0 0;
+              width: 100%;
+              display: flex;
+              justify-content: space-between;
+
+              .button {
+                width: 48%;
+              }
+            }
           }
         }
       }

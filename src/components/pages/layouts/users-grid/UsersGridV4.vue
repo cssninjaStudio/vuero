@@ -85,7 +85,11 @@ const optionsSingle = [
         </template>
       </V-PlaceholderPage>
 
-      <transition-group name="list" tag="div" class="columns is-multiline">
+      <transition-group
+        name="list"
+        tag="div"
+        class="columns is-multiline is-flex-tablet-p is-half-tablet-p"
+      >
         <!--Grid item-->
         <div v-for="item in filteredData" :key="item.id" class="column is-3">
           <div class="grid-item">

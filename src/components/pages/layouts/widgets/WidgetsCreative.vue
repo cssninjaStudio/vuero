@@ -13,7 +13,7 @@ import { products } from '/@src/data/widgets/ui/productList'
 
 <template>
   <!--Data Widgets-->
-  <div class="columns is-multiline">
+  <div class="columns is-multiline widget-demo-columns">
     <div class="column is-3">
       <!--Widget-->
       <IllustrationWidget

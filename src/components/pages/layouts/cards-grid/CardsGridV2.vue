@@ -264,6 +264,12 @@ const optionsSingle = [
 
         .card-content {
           border-color: lighten($dark-sidebar, 12%);
+
+          .avatar-stack {
+            .avatar {
+              border-color: lighten($dark-sidebar, 6%);
+            }
+          }
         }
 
         .card-footer {

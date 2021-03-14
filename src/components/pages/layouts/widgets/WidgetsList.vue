@@ -13,7 +13,7 @@ import { timeline } from '/@src/data/widgets/list/timeline'
 
 <template>
   <!--List Widgets-->
-  <div class="columns is-multiline">
+  <div class="columns is-multiline widget-demo-columns half-columns">
     <!--List Widget V1a-->
     <div class="column is-4">
       <ListWidgetSingle title="User Progress" straight class="list-widget-v1">

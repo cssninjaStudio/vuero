@@ -4,7 +4,9 @@
 
     <h3 class="section-heading">Recently viewed</h3>
 
-    <div class="columns is-multiline project-grid">
+    <div
+      class="columns is-multiline project-grid is-flex-tablet-p is-half-tablet-p"
+    >
       <div class="column is-one-fifth">
         <a class="project-grid-item">
           <img

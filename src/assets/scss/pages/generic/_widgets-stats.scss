@@ -375,3 +375,20 @@ Stat Widgets Styles
     }
   }
 }
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .stat-widget {
+    &.table-widget-v1 {
+      .table {
+        tbody {
+          td {
+            &:nth-child(4),
+            &:nth-child(5) {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

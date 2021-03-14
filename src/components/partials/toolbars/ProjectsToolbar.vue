@@ -99,6 +99,16 @@
   }
 }
 
+.is-dark {
+  .projects-toolbar {
+    .avatar-stack {
+      .avatar {
+        border-color: lighten($dark-sidebar, 3%);
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .projects-toolbar {
     .avatar-stack {

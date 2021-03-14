@@ -167,7 +167,7 @@ onUnmounted(() => {
                         <i class="fas fa-circle"></i>
                         <span class="rating">
                           <i class="fas fa-star"></i>
-                          <span>{{ restaurant.rating }}</span>
+                          <span class="ml-1">{{ restaurant.rating }}</span>
                         </span>
                       </p>
                     </div>
@@ -1051,6 +1051,12 @@ onUnmounted(() => {
             }
           }
         }
+      }
+    }
+
+    .right {
+      .sticky-panel {
+        max-width: 255px;
       }
     }
   }

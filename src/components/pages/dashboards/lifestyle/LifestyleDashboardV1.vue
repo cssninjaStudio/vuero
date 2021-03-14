@@ -2123,7 +2123,9 @@ const props = defineProps({
 
 @media only screen and (max-width: 767px) {
   .lifestyle-dashboard-bg {
-    height: 555px;
+    &:not(.has-top-nav) {
+      height: 614px;
+    }
 
     &.has-top-nav {
       height: 625px;
@@ -2191,6 +2193,9 @@ const props = defineProps({
   .lifestyle-dashboard-bg {
     &.has-top-nav {
       height: 428px;
+    }
+    &:not(.has-top-nav) {
+      height: 415px;
     }
   }
 

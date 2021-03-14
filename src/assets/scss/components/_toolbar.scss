@@ -3,6 +3,9 @@
 /*
     1. List View Toolbar
     2. List Flex Toolbar
+    3. Card grid Toolbar
+    4. Tile grid Toolbar
+    5. User grid Toolbar
 */
 
 /* ==========================================================================
@@ -26,6 +29,10 @@
       margin-right: 10px;
       margin-left: 0;
     }
+  }
+
+  .field {
+    margin-bottom: 0;
   }
 
   .control {
@@ -95,6 +102,10 @@
     }
   }
 
+  .field {
+    margin-bottom: 0;
+  }
+
   .control {
     margin-right: 10px;
   }
@@ -146,6 +157,10 @@
       margin-right: 10px;
       margin-left: 0;
     }
+  }
+
+  .field {
+    margin-bottom: 0;
   }
 
   .control {
@@ -210,6 +225,10 @@
     }
   }
 
+  .field {
+    margin-bottom: 0;
+  }
+
   .control {
     margin-right: 10px;
   }
@@ -270,6 +289,10 @@
       margin-right: 10px;
       margin-left: 0;
     }
+  }
+
+  .field {
+    margin-bottom: 0;
   }
 
   .control {

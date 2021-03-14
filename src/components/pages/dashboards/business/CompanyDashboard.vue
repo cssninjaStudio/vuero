@@ -694,6 +694,20 @@ onMounted(async () => {
         padding: 16px 0;
       }
     }
+
+    .dashboard-card {
+      &.is-tickets {
+        padding: 30px;
+
+        .ticket-list {
+          .media-flex {
+            .flex-meta {
+              margin-bottom: 1rem;
+            }
+          }
+        }
+      }
+    }
   }
 }
 </style>

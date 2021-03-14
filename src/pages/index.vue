@@ -367,7 +367,7 @@ useHead({
                 </p>
               </div>
               <div class="flex-cell">
-                <img src="/images/icons/stacks/robot.png" alt="" />
+                <img src="/images/icons/stacks/robot.svg" alt="" />
                 <h3>Robot Friendly</h3>
                 <p>
                   Fully featured with structured data. Help your site display in

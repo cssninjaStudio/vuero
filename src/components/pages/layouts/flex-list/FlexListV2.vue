@@ -96,7 +96,7 @@ const filteredData = computed(() => {
             <span>Customer</span>
             <span>Industry</span>
             <span>Status</span>
-            <span>Team</span>
+            <span class="h-hidden-tablet-p">Team</span>
             <span class="cell-end">Actions</span>
           </div>
 
@@ -129,7 +129,10 @@ const filteredData = computed(() => {
                 <div class="flex-table-cell" data-th="Status">
                   <span class="tag is-rounded">{{ item.status }}</span>
                 </div>
-                <div class="flex-table-cell" data-th="Relations">
+                <div
+                  class="flex-table-cell h-hidden-tablet-p"
+                  data-th="Relations"
+                >
                   <V-AvatarStack
                     :avatars="item.team"
                     size="small"

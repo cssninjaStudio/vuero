@@ -30,10 +30,10 @@ useHead({
 
 <template>
   <div class="modern-login">
-    <div class="underlay h-hidden-mobile"></div>
+    <div class="underlay h-hidden-mobile h-hidden-tablet-p"></div>
 
     <div class="columns is-gapless is-vcentered">
-      <div class="column is-relative is-8 h-hidden-mobile">
+      <div class="column is-relative is-8 h-hidden-mobile h-hidden-tablet-p">
         <div class="hero is-fullheight is-image">
           <div class="hero-body">
             <div class="container">
@@ -266,6 +266,11 @@ useHead({
       width: 100%;
       max-width: 50px;
       margin: 0 auto;
+    }
+
+    svg {
+      height: 50px;
+      width: 50px;
     }
   }
 
@@ -672,8 +677,34 @@ useHead({
       top: 30px;
     }
 
+    .dark-mode {
+      top: 36px;
+      right: 44px;
+    }
+
     .is-form {
       padding-top: 100px;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .modern-login {
+    .top-logo {
+      svg {
+        height: 60px;
+        width: 60px;
+      }
+    }
+
+    .dark-mode {
+      top: -58px;
+      right: 30%;
+    }
+
+    .columns {
+      display: flex;
+      height: 100vh;
     }
   }
 }

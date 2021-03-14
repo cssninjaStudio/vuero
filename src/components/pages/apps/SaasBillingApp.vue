@@ -1139,7 +1139,7 @@ const randomCard = () => {
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   .saas-billing-wrapper {
-    max-width: 490px;
+    max-width: 690px;
 
     .plans-wrapper {
       flex-direction: column;

@@ -719,5 +719,19 @@
         }
       }
     }
+
+    .projects-card-grid {
+      .grid-item {
+        .bottom-section {
+          margin-top: 0.75rem;
+
+          .foot-block {
+            &:first-child {
+              display: none;
+            }
+          }
+        }
+      }
+    }
   }
 }

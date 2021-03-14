@@ -591,3 +591,32 @@
     }
   }
 }
+
+@media only screen and (min-device-width: 1024px) and (orientation: portrait) {
+  .landing-page-wrapper .hero .navbar {
+    &:not(.is-docked) {
+      .navbar-menu {
+        .navbar-item {
+          &.is-theme-toggle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+    }
+
+    .navbar-brand {
+      width: auto !important;
+    }
+
+    .navbar-menu {
+      width: auto;
+      position: static;
+
+      .navbar-end {
+        margin-right: -28px;
+      }
+    }
+  }
+}
