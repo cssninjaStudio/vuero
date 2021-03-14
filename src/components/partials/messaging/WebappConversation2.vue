@@ -1,8 +1,15 @@
+<script setup lang="ts">
+import { defineEmit } from 'vue'
+
+const emit = defineEmit(['toggleMobileConversation'])
+</script>
+
 <template>
   <div id="navbar-conversation-2" class="chat-area-content">
     <div class="chat-area-header">
       <button
         class="trigger conversations-mobile-trigger h-only-mobile h-only-tablet-p h-only-tablet-l"
+        @click="emit('toggleMobileConversation')"
       >
         <i class="iconify" data-icon="feather:menu"></i>
       </button>

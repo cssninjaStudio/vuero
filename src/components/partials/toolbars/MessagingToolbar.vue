@@ -1,10 +1,12 @@
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed, defineEmit, defineProps } from 'vue'
 import { useI18n } from 'vue-i18n'
 
 import { isDark } from '/@src/state/darkModeState'
 import { activePanel } from '/@src/state/activePanelState'
 import useDropdown from '/@src/composable/useDropdown'
+
+const emit = defineEmit(['close'])
 
 const { locale } = useI18n()
 const { dropdownElement, isOpen, toggle } = useDropdown()
@@ -169,7 +171,7 @@ const localFlagSrc = computed(() => {
       </div>
     </div>
 
-    <a id="hide-chat-side" class="toolbar-link">
+    <a id="hide-chat-side" class="toolbar-link" @click="emit('close')">
       <i class="iconify" data-icon="feather:chevron-right"></i>
     </a>
   </div>

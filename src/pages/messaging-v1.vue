@@ -49,6 +49,7 @@ const addConversationOpen = ref(false)
 const isLoading = ref(true)
 const selectedConversationId = ref(0)
 const messages = ref<any[]>([])
+const mobileConversationDetailsOpen = ref(false)
 
 const onConversationChanged = async () => {
   if (selectedConversationId.value === 0) {
@@ -347,9 +348,14 @@ watchEffect(onConversationChanged)
               </ol>
 
               <!-- Chat side -->
-              <div class="chat-side">
+              <div
+                :class="[mobileConversationDetailsOpen && 'is-mobile-active']"
+                class="chat-side"
+              >
                 <div class="chat-side-header">
-                  <MessagingToolbar />
+                  <MessagingToolbar
+                    @close="mobileConversationDetailsOpen = false"
+                  />
                 </div>
 
                 <div class="chat-side-content is-single">
@@ -635,7 +641,11 @@ watchEffect(onConversationChanged)
       </div>
     </div>
 
-    <a class="chat-side-fab">
+    <a
+      :class="[mobileConversationDetailsOpen && 'is-mobile-active']"
+      class="chat-side-fab"
+      @click="mobileConversationDetailsOpen = !mobileConversationDetailsOpen"
+    >
       <i class="iconify" data-icon="feather:chevron-left"></i>
     </a>
   </component>

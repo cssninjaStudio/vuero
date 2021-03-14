@@ -43,7 +43,12 @@ watchEffect(async () => {
       <p>You can go back to previous steps if you need to edit anything.</p>
     </div>
 
-    <V-Loader class="project-preview-wrapper" :active="isLoading" grey>
+    <V-Loader
+      size="xl"
+      class="project-preview-wrapper"
+      :active="isLoading"
+      grey
+    >
       <div class="project-preview-header">
         <V-Avatar
           color="h-green"

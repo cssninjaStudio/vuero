@@ -4,6 +4,8 @@ import { computed, ref } from 'vue'
 
 import useDropdown from '/@src/composable/useDropdown'
 
+// we are using static data here, but you might need to load those from your API
+// to do so, this should be a ref<any[]>([]) and be populated when request is done
 const conversations = [
   {
     id: 1,
@@ -121,6 +123,7 @@ const conversations = [
 ]
 
 const selectedConversationId = ref(3)
+const mobileConversationListOpen = ref(false)
 const selectedConversation = computed(() => {
   const conversation = conversations.find(
     (item) => item.id === selectedConversationId.value
@@ -237,64 +240,101 @@ useHead({
         <!--Conversation List-->
         <WebappConversationList
           v-model:conversationId="selectedConversationId"
+          :mobile-conversation-list-open="mobileConversationListOpen"
           :conversations="conversations"
+          @toggleMobileConversation="
+            mobileConversationListOpen = !mobileConversationListOpen
+          "
         />
 
         <!--Conversation messages-->
-        <div class="chat-area" data-simplebar>
+        <div class="chat-area is-active" data-simplebar>
           <!--Conversation 1-->
           <WebappConversation1
             :class="[selectedConversationId === 1 && 'is-active']"
+            @toggleMobileConversation="
+              mobileConversationListOpen = !mobileConversationListOpen
+            "
           />
 
           <!--Conversation 2-->
           <WebappConversation2
             :class="[selectedConversationId === 2 && 'is-active']"
+            @toggleMobileConversation="
+              mobileConversationListOpen = !mobileConversationListOpen
+            "
           />
 
           <!--Conversation 3-->
           <WebappConversation3
             :class="[selectedConversationId === 3 && 'is-active']"
+            @toggleMobileConversation="
+              mobileConversationListOpen = !mobileConversationListOpen
+            "
           />
 
           <!--Conversation 4-->
           <WebappConversation4
             :class="[selectedConversationId === 4 && 'is-active']"
+            @toggleMobileConversation="
+              mobileConversationListOpen = !mobileConversationListOpen
+            "
           />
 
           <!--Conversation 5-->
           <WebappConversation5
             :class="[selectedConversationId === 5 && 'is-active']"
+            @toggleMobileConversation="
+              mobileConversationListOpen = !mobileConversationListOpen
+            "
           />
 
           <!--Conversation 6-->
           <WebappConversation6
             :class="[selectedConversationId === 6 && 'is-active']"
+            @toggleMobileConversation="
+              mobileConversationListOpen = !mobileConversationListOpen
+            "
           />
 
           <!--Conversation 7-->
           <WebappConversation7
             :class="[selectedConversationId === 7 && 'is-active']"
+            @toggleMobileConversation="
+              mobileConversationListOpen = !mobileConversationListOpen
+            "
           />
 
           <!--Conversation 8-->
           <WebappConversation8
             :class="[selectedConversationId === 8 && 'is-active']"
+            @toggleMobileConversation="
+              mobileConversationListOpen = !mobileConversationListOpen
+            "
           />
 
           <!--Conversation 9-->
           <WebappConversation9
             :class="[selectedConversationId === 9 && 'is-active']"
+            @toggleMobileConversation="
+              mobileConversationListOpen = !mobileConversationListOpen
+            "
           />
 
           <!--Conversation 10-->
           <WebappConversation10
             :class="[selectedConversationId === 10 && 'is-active']"
+            @toggleMobileConversation="
+              mobileConversationListOpen = !mobileConversationListOpen
+            "
           />
 
           <!--Conversation 11-->
           <WebappConversation11
             :class="[selectedConversationId === 11 && 'is-active']"
+            @toggleMobileConversation="
+              mobileConversationListOpen = !mobileConversationListOpen
+            "
           />
 
           <div class="chat-area-footer">
