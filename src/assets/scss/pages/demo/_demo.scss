@@ -3,9 +3,7 @@
 /*
     1. Demo Cards
     2. Demo Card Dark mode
-    3. Code Highlight
-    4. Code Highlight Dark mode
-    5. Media Queries
+    3. Media Queries
 */
 
 /* ==========================================================================
@@ -377,14 +375,6 @@
         color: $dark-dark-text;
       }
 
-      p {
-        // code {
-        //   // background-color: lighten($dark-sidebar, 6%) !important;
-        //   color: #81a2be;
-        //   background-color: #3b3b41;
-        // }
-      }
-
       .code-trigger {
         border-color: lighten($dark-sidebar, 14%);
         &:hover {
@@ -420,21 +410,6 @@
         }
       }
     }
-
-    // .highlight {
-    //   background: lighten($dark-sidebar, 10%) !important;
-    //   border-color: lighten($dark-sidebar, 10%) !important;
-
-    //   pre {
-    //     background: lighten($dark-sidebar, 10%) !important;
-    //     border-color: lighten($dark-sidebar, 10%) !important;
-
-    //     .hljs {
-    //       background: lighten($dark-sidebar, 10%) !important;
-    //       border-color: lighten($dark-sidebar, 10%) !important;
-    //     }
-    //   }
-    // }
   }
 
   .color-card {
@@ -547,30 +522,7 @@
 }
 
 /* ==========================================================================
-3. Code Highlight
-========================================================================== */
-
-// pre {
-//   background-color: transparent !important;
-//   color: unset;
-//   font-size: 1em;
-//   overflow-x: hidden;
-//   padding: 0 !important;
-//   white-space: pre;
-//   word-wrap: normal;
-// }
-
-/* ==========================================================================
-4. Code Highlight Dark mode
-========================================================================== */
-
-// code {
-//   font-family: 'Fira Code', monospace;
-//   font-size: 13px;
-// }
-
-/* ==========================================================================
-6. Media Queries
+3. Media Queries
 ========================================================================== */
 
 @media only screen and (max-width: 767px) {
