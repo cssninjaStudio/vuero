@@ -596,6 +596,10 @@
   .landing-page-wrapper .hero .navbar {
     &:not(.is-docked) {
       .navbar-menu {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        border: none !important;
+
         .navbar-item {
           &.is-theme-toggle {
             display: flex;
