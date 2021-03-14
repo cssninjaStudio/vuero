@@ -5,10 +5,10 @@ path="${base}cypress/screenshots/vuero.ts/"
 output="${base}public/images/screenshots/"
 
 quality=100
-width=364
-height=204
+width=368
+height=206
 
-for layout in admin auth minimal webapp templates; do
+for layout in sidebar auth minimal navbar templates; do
   # do something like: echo $databaseName
   echo "${layout}"
 

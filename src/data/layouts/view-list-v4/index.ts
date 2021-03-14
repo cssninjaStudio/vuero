@@ -1,7 +1,7 @@
 export const recipes = [
   {
     id: '1',
-    icon: '/@src/assets/illustrations/list-views/cake-1.svg',
+    icon: '/images/illustrations/list-views/cake-1.svg',
     name: 'Strawberry & Cream Cake',
     category: 'Cakes',
     duration: '1h 45m',
@@ -23,7 +23,7 @@ export const recipes = [
   },
   {
     id: '2',
-    icon: '/@src/assets/illustrations/list-views/cake-2.svg',
+    icon: '/images/illustrations/list-views/cake-2.svg',
     name: 'Orange & Lemon Cake',
     category: 'Cakes',
     duration: '1h 15m',
@@ -73,7 +73,7 @@ export const recipes = [
   },
   {
     id: '3',
-    icon: '/@src/assets/illustrations/list-views/cake-3.svg',
+    icon: '/images/illustrations/list-views/cake-3.svg',
     name: 'Three Chocolates Cake',
     category: 'Cakes',
     duration: '2h',
@@ -123,7 +123,7 @@ export const recipes = [
   },
   {
     id: '4',
-    icon: '/@src/assets/illustrations/list-views/cake-4.svg',
+    icon: '/images/illustrations/list-views/cake-4.svg',
     name: 'Wedding Cake',
     category: 'Cakes',
     duration: '3h 30m',
@@ -173,7 +173,7 @@ export const recipes = [
   },
   {
     id: '5',
-    icon: '/@src/assets/illustrations/list-views/cake-5.svg',
+    icon: '/images/illustrations/list-views/cake-5.svg',
     name: 'Vanilla Waffles',
     category: 'Waffles',
     duration: '1h 0m',
@@ -223,7 +223,7 @@ export const recipes = [
   },
   {
     id: '6',
-    icon: '/@src/assets/illustrations/list-views/cake-6.svg',
+    icon: '/images/illustrations/list-views/cake-6.svg',
     name: 'Strawberry Slice',
     category: 'Slices',
     duration: '1h 0m',
@@ -273,7 +273,7 @@ export const recipes = [
   },
   {
     id: '7',
-    icon: '/@src/assets/illustrations/list-views/cake-7.svg',
+    icon: '/images/illustrations/list-views/cake-7.svg',
     name: 'Marmelade Donuts',
     category: 'Donuts',
     duration: '2h 15m',
@@ -323,7 +323,7 @@ export const recipes = [
   },
   {
     id: '8',
-    icon: '/@src/assets/illustrations/list-views/cake-8.svg',
+    icon: '/images/illustrations/list-views/cake-8.svg',
     name: 'Peanut Butter Sandwich',
     category: 'Sandwiches',
     duration: '15m',
@@ -373,7 +373,7 @@ export const recipes = [
   },
   {
     id: '9',
-    icon: '/@src/assets/illustrations/list-views/cake-9.svg',
+    icon: '/images/illustrations/list-views/cake-9.svg',
     name: 'Peanut Butter Slice',
     category: 'Slices',
     duration: '15m',
@@ -423,7 +423,7 @@ export const recipes = [
   },
   {
     id: '10',
-    icon: '/@src/assets/illustrations/list-views/cake-9.svg',
+    icon: '/images/illustrations/list-views/cake-9.svg',
     name: 'Strawberry Spicy',
     category: 'Slices',
     duration: '1h 15m',

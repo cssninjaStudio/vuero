@@ -53,7 +53,7 @@ const navbarDemos = navbar.sort(displayOrder)
           :key="index"
           class="column is-4 has-text-centered"
         >
-          <figure class="huro-demo-wrapper loaded">
+          <figure class="vuero-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               :src="item.screenshot.light"
@@ -111,7 +111,7 @@ const navbarDemos = navbar.sort(displayOrder)
           :key="index"
           class="column is-4 has-text-centered"
         >
-          <figure class="huro-demo-wrapper loaded">
+          <figure class="vuero-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               :src="item.screenshot.light"
@@ -169,7 +169,7 @@ const navbarDemos = navbar.sort(displayOrder)
           :key="index"
           class="column is-4 has-text-centered"
         >
-          <figure class="huro-demo-wrapper loaded">
+          <figure class="vuero-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               :src="item.screenshot.light"
@@ -227,7 +227,7 @@ const navbarDemos = navbar.sort(displayOrder)
           :key="index"
           class="column is-4 has-text-centered"
         >
-          <figure class="huro-demo-wrapper loaded">
+          <figure class="vuero-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               :src="item.screenshot.light"
@@ -285,7 +285,7 @@ const navbarDemos = navbar.sort(displayOrder)
           :key="index"
           class="column is-4 has-text-centered"
         >
-          <figure class="huro-demo-wrapper loaded">
+          <figure class="vuero-demo-wrapper loaded">
             <img
               class="light-image-block-l"
               :src="item.screenshot.light"

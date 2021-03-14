@@ -914,8 +914,8 @@
     "category": "DASHBOARD",
     "displayOrder": 18,
     "route": {
-      "name": "navbar-dashboards-writer",
-      "path": "/navbar/dashboards/writer"
+      "name": "navbar-dashboards-video",
+      "path": "/navbar/dashboards/video"
     },
     "screenshot": {
       "light": "/images/screenshots/navbar/video-light.webp",

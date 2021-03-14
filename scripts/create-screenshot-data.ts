@@ -1,8 +1,8 @@
 import {
-  admin,
+  navbar,
   auth,
   minimal,
-  webapp,
+  sidebar,
   templates,
 } from '../cypress/fixtures/routes'
 const fs = require('fs')
@@ -58,8 +58,8 @@ function generateData(routes: Route[], prefix: string) {
   return data
 }
 
-writeData(`${outputDir}/admin.json`, generateData(admin, 'admin'))
+writeData(`${outputDir}/navbar.json`, generateData(navbar, 'navbar'))
 writeData(`${outputDir}/auth.json`, generateData(auth, 'auth'))
 writeData(`${outputDir}/minimal.json`, generateData(minimal, 'minimal'))
-writeData(`${outputDir}/webapp.json`, generateData(webapp, 'webapp'))
+writeData(`${outputDir}/sidebar.json`, generateData(sidebar, 'sidebar'))
 writeData(`${outputDir}/templates.json`, generateData(templates, 'templates'))

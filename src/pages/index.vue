@@ -1685,7 +1685,7 @@ useHead({
   }
 }
 
-.huro-demo-wrapper {
+.vuero-demo-wrapper {
   position: relative;
   overflow: hidden;
   border-radius: 10px;
@@ -1732,6 +1732,7 @@ useHead({
   img {
     border-radius: 10px;
     max-width: 100%;
+    width: 100%;
   }
 
   .new-tag {
@@ -1920,7 +1921,7 @@ useHead({
         }
       }
 
-      .huro-demo-wrapper {
+      .vuero-demo-wrapper {
         border-color: lighten($dark-sidebar, 12%);
 
         .circle-overlay {
@@ -2585,7 +2586,7 @@ useHead({
     }
   }
 
-  .huro-demo-wrapper {
+  .vuero-demo-wrapper {
     min-height: 184px;
   }
 
@@ -2785,7 +2786,7 @@ useHead({
     }
   }
 
-  .huro-demo-wrapper {
+  .vuero-demo-wrapper {
     min-height: 174px;
   }
 

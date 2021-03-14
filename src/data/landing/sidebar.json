@@ -927,8 +927,8 @@
     "category": "DASHBOARD",
     "displayOrder": 18,
     "route": {
-      "name": "sidebar-dashboards-writer",
-      "path": "/sidebar/dashboards/writer"
+      "name": "sidebar-dashboards-video",
+      "path": "/sidebar/dashboards/video"
     },
     "screenshot": {
       "light": "/images/screenshots/sidebar/video-light.webp",
