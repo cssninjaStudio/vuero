@@ -23,6 +23,19 @@ export default defineConfig({
       },
     ],
   },
+  /**
+   * Uncomment this section to build the demo with missing images
+   * Don't forget to remove this section when you replaced assets with yours
+   */
+  // build: {
+  //   rollupOptions: {
+  //     external: [
+  //       /\/images\/photo\/demo\/.*/,
+  //       /\/images\/avatars\/photos\/.*/,
+  //       /\/images\/avatars\/svg\/.*\.gif/,
+  //     ]
+  //   }
+  // },
   plugins: [
     Vue({
       include: [/\.vue$/],
