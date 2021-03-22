@@ -6,7 +6,7 @@ import ViteComponents from 'vite-plugin-components'
 import ViteFonts from 'vite-plugin-fonts'
 import ViteRadar from 'vite-plugin-radar'
 import PurgeIcons from 'vite-plugin-purge-icons'
-import ImageTools from 'vite-imagetools'
+import { imagetools } from 'vite-imagetools'
 import VueI18n from '@intlify/vite-plugin-vue-i18n'
 import VueroDocumentation from './vite-plugin-vuero-doc/index'
 import { VitePWA } from 'vite-plugin-pwa'
@@ -37,6 +37,7 @@ export default defineConfig({
   //   }
   // },
   plugins: [
+    // https://github.com/vitejs/vite/tree/main/packages/plugin-vue
     Vue({
       include: [/\.vue$/],
     }),
@@ -67,7 +68,7 @@ export default defineConfig({
     }),
 
     // https://github.com/JonasKruckenberg/vite-imagetools
-    ImageTools(),
+    imagetools(),
 
     // https://github.com/stafyniaksacha/vite-plugin-fonts
     ViteFonts({
