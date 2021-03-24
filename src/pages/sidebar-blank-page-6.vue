@@ -1,17 +1,11 @@
 <script setup lang="ts">
-import { onMounted } from 'vue'
 import { useHead } from '@vueuse/head'
-// import { setLayout } from '/@src/state/sidebarLayoutState'
 
 import { activeSidebar, toggleSidebar } from '/@src/state/activeSidebarState'
 
 useHead({
-  title: 'Blank Template 6 - Sidebar - Vuero',
+  title: 'Blank Page 6 - Sidebar - Vuero',
 })
-
-// onMounted(() => {
-//   setLayout('sidebar-labels-hover')
-// })
 </script>
 
 <template>
@@ -47,7 +41,7 @@ useHead({
             </div>
 
             <div class="title-wrap">
-              <h1 class="title is-4">Blank Template</h1>
+              <h1 class="title is-4">Blank Page 6 - Sidebar</h1>
             </div>
 
             <Toolbar />

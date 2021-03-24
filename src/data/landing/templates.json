@@ -95,7 +95,7 @@
     "category": "TEMPLATES",
     "displayOrder": 7,
     "route": {
-      "name": "navbar-layouts-blank-page-1",
+      "name": "navbar-blank-page-1",
       "path": "/navbar/layouts/blank-page-1"
     },
     "screenshot": {
@@ -108,7 +108,7 @@
     "category": "TEMPLATES",
     "displayOrder": 8,
     "route": {
-      "name": "navbar-layouts-blank-page-2",
+      "name": "navbar-blank-page-2",
       "path": "/navbar/layouts/blank-page-2"
     },
     "screenshot": {
@@ -121,7 +121,7 @@
     "category": "TEMPLATES",
     "displayOrder": 9,
     "route": {
-      "name": "navbar-layouts-blank-page-3",
+      "name": "navbar-blank-page-3",
       "path": "/navbar/layouts/blank-page-3"
     },
     "screenshot": {
@@ -134,7 +134,7 @@
     "category": "TEMPLATES",
     "displayOrder": 10,
     "route": {
-      "name": "navbar-layouts-blank-page-4",
+      "name": "navbar-blank-page-4",
       "path": "/navbar/layouts/blank-page-4"
     },
     "screenshot": {
@@ -147,7 +147,7 @@
     "category": "TEMPLATES",
     "displayOrder": 11,
     "route": {
-      "name": "navbar-layouts-blank-page-5",
+      "name": "navbar-blank-page-5",
       "path": "/navbar/layouts/blank-page-5"
     },
     "screenshot": {
@@ -160,7 +160,7 @@
     "category": "TEMPLATES",
     "displayOrder": 12,
     "route": {
-      "name": "navbar-layouts-blank-page-6",
+      "name": "navbar-blank-page-6",
       "path": "/navbar/layouts/blank-page-6"
     },
     "screenshot": {
@@ -173,7 +173,7 @@
     "category": "TEMPLATES",
     "displayOrder": 13,
     "route": {
-      "name": "navbar-layouts-blank-page-7",
+      "name": "navbar-blank-page-7",
       "path": "/navbar/layouts/blank-page-7"
     },
     "screenshot": {
@@ -186,7 +186,7 @@
     "category": "TEMPLATES",
     "displayOrder": 14,
     "route": {
-      "name": "navbar-layouts-blank-page-8",
+      "name": "navbar-blank-page-8",
       "path": "/navbar/layouts/blank-page-8"
     },
     "screenshot": {

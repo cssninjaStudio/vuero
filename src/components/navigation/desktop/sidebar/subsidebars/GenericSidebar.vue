@@ -429,7 +429,7 @@ import { activeSidebar } from '/@src/state/activeSidebarState'
             <li><hr class="navbar-divider" /></li>
             <li>
               <RouterLink
-                :to="{ name: 'navbar-layouts-blank-page-1' }"
+                :to="{ name: 'navbar-blank-page-1' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-layout-alt-1"></i>
@@ -438,7 +438,7 @@ import { activeSidebar } from '/@src/state/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'navbar-layouts-blank-page-2' }"
+                :to="{ name: 'navbar-blank-page-2' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-layout-alt-1"></i>
@@ -447,7 +447,7 @@ import { activeSidebar } from '/@src/state/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'navbar-layouts-blank-page-3' }"
+                :to="{ name: 'navbar-blank-page-3' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-layout-alt-1"></i>
@@ -456,7 +456,7 @@ import { activeSidebar } from '/@src/state/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'navbar-layouts-blank-page-4' }"
+                :to="{ name: 'navbar-blank-page-4' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-layout-alt-1"></i>
@@ -465,11 +465,38 @@ import { activeSidebar } from '/@src/state/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'navbar-layouts-blank-page-5' }"
+                :to="{ name: 'navbar-blank-page-5' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-layout-alt-1"></i>
                 <span>Colored Dropdown</span>
+              </RouterLink>
+            </li>
+            <li>
+              <RouterLink
+                :to="{ name: 'navbar-blank-page-6' }"
+                class="is-submenu"
+              >
+                <i class="lnil lnil-layout-alt-1"></i>
+                <span>Clean Navbar</span>
+              </RouterLink>
+            </li>
+            <li>
+              <RouterLink
+                :to="{ name: 'navbar-blank-page-7' }"
+                class="is-submenu"
+              >
+                <i class="lnil lnil-layout-alt-1"></i>
+                <span>Clean Center Navbar</span>
+              </RouterLink>
+            </li>
+            <li>
+              <RouterLink
+                :to="{ name: 'navbar-blank-page-8' }"
+                class="is-submenu"
+              >
+                <i class="lnil lnil-layout-alt-1"></i>
+                <span>Clean Fade Navbar</span>
               </RouterLink>
             </li>
           </ul>

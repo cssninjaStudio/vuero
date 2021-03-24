@@ -280,37 +280,58 @@ const activeTab = ref<TabId>('dashboards')
                 <h4 class="column-heading">Navbars</h4>
                 <ul>
                   <li>
-                    <RouterLink :to="{ name: 'navbar-layouts-blank-page-1' }">
-                      <i class="lnil lnil-layout"></i>
+                    <RouterLink :to="{ name: 'navbar-blank-page-1' }">
+                      <i class="lnil lnil-layout-alt-1"></i>
                       <span>Regular Navbar</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'navbar-layouts-blank-page-2' }">
-                      <i class="lnil lnil-layout"></i>
+                    <RouterLink :to="{ name: 'navbar-blank-page-2' }">
+                      <i class="lnil lnil-layout-alt-1"></i>
                       <span>Fading Navbar</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'navbar-layouts-blank-page-3' }">
-                      <i class="lnil lnil-layout"></i>
+                    <RouterLink :to="{ name: 'navbar-blank-page-3' }">
+                      <i class="lnil lnil-layout-alt-1"></i>
                       <span>Colored Navbar</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'navbar-layouts-blank-page-4' }">
-                      <i class="lnil lnil-layout"></i>
+                    <RouterLink :to="{ name: 'navbar-blank-page-4' }">
+                      <i class="lnil lnil-layout-alt-1"></i>
                       <span>Drop Navbar</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'navbar-layouts-blank-page-5' }">
-                      <i class="lnil lnil-layout"></i>
+                    <RouterLink :to="{ name: 'navbar-blank-page-5' }">
+                      <i class="lnil lnil-layout-alt-1"></i>
                       <span>Colored Drop</span>
+                      <i class="iconify" data-icon="feather:circle"></i>
+                    </RouterLink>
+                  </li>
+                  <li>
+                    <RouterLink :to="{ name: 'navbar-blank-page-6' }">
+                      <i class="lnil lnil-layout-alt-1"></i>
+                      <span>Clean Navbar</span>
+                      <i class="iconify" data-icon="feather:circle"></i>
+                    </RouterLink>
+                  </li>
+                  <li>
+                    <RouterLink :to="{ name: 'navbar-blank-page-7' }">
+                      <i class="lnil lnil-layout-alt-1"></i>
+                      <span>Clean Center</span>
+                      <i class="iconify" data-icon="feather:circle"></i>
+                    </RouterLink>
+                  </li>
+                  <li>
+                    <RouterLink :to="{ name: 'navbar-blank-page-8' }">
+                      <i class="lnil lnil-layout-alt-1"></i>
+                      <span>Clean Fade</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>

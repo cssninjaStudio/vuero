@@ -644,6 +644,7 @@
 
                     &.is-media {
                       &:hover,
+                      &.router-link-exact-active,
                       &.is-active {
                         .meta {
                           span {
@@ -652,6 +653,7 @@
                         }
                       }
 
+                      &.router-link-exact-active,
                       &.is-active {
                         background: $white;
                         border: 1px solid darken($fade-grey, 3%);

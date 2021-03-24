@@ -4,7 +4,7 @@ import { useHead } from '@vueuse/head'
 import { activeSidebar, toggleSidebar } from '/@src/state/activeSidebarState'
 
 useHead({
-  title: 'Blank Template 1 - Sidebar - Vuero',
+  title: 'Blank Page 1 - Sidebar - Vuero',
 })
 </script>
 
@@ -41,7 +41,7 @@ useHead({
             </div>
 
             <div class="title-wrap">
-              <h1 class="title is-4">Blank Template</h1>
+              <h1 class="title is-4">Blank Page 1 - Sidebar</h1>
             </div>
 
             <Toolbar />
