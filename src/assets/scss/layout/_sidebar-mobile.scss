@@ -28,6 +28,12 @@
     transform: translateX(0);
   }
 
+  .navbar-divider {
+    width: 83%;
+    margin: 5px auto;
+    display: block;
+  }
+
   .inner {
     position: relative;
     height: 100%;
@@ -135,6 +141,10 @@
 
             li {
               height: 32px;
+
+              &.has-divider {
+                height: auto;
+              }
 
               .is-submenu {
                 display: flex;

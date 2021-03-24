@@ -4,7 +4,7 @@
     "category": "TEMPLATES",
     "displayOrder": 0,
     "route": {
-      "name": "sidebar-layouts-blank-page-1",
+      "name": "sidebar-blank-page-1",
       "path": "/sidebar/layouts/blank-page-1"
     },
     "screenshot": {
@@ -17,7 +17,7 @@
     "category": "TEMPLATES",
     "displayOrder": 1,
     "route": {
-      "name": "sidebar-layouts-blank-page-2",
+      "name": "sidebar-blank-page-2",
       "path": "/sidebar/layouts/blank-page-2"
     },
     "screenshot": {
@@ -30,7 +30,7 @@
     "category": "TEMPLATES",
     "displayOrder": 2,
     "route": {
-      "name": "sidebar-layouts-blank-page-3",
+      "name": "sidebar-blank-page-3",
       "path": "/sidebar/layouts/blank-page-3"
     },
     "screenshot": {
@@ -43,7 +43,7 @@
     "category": "TEMPLATES",
     "displayOrder": 3,
     "route": {
-      "name": "sidebar-layouts-blank-page-4",
+      "name": "sidebar-blank-page-4",
       "path": "/sidebar/layouts/blank-page-4"
     },
     "screenshot": {
@@ -56,7 +56,7 @@
     "category": "TEMPLATES",
     "displayOrder": 4,
     "route": {
-      "name": "sidebar-layouts-blank-page-5",
+      "name": "sidebar-blank-page-5",
       "path": "/sidebar/layouts/blank-page-5"
     },
     "screenshot": {
@@ -69,7 +69,7 @@
     "category": "TEMPLATES",
     "displayOrder": 5,
     "route": {
-      "name": "sidebar-layouts-blank-page-6",
+      "name": "sidebar-blank-page-6",
       "path": "/sidebar/layouts/blank-page-6"
     },
     "screenshot": {
@@ -82,7 +82,7 @@
     "category": "TEMPLATES",
     "displayOrder": 6,
     "route": {
-      "name": "sidebar-layouts-blank-page-7",
+      "name": "sidebar-blank-page-7",
       "path": "/sidebar/layouts/blank-page-7"
     },
     "screenshot": {

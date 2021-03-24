@@ -380,18 +380,18 @@ const selectedCategory = ref('')
 
                 <div class="column-content" data-simplebar="">
                   <RouterLink
-                    :to="{ name: 'sidebar-layouts-blank-page-1' }"
+                    :to="{ name: 'sidebar-blank-page-1' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
                       <i class="lnil lnil-layout"></i>
                     </div>
                     <div class="meta">
-                      <span>Sidebar</span>
+                      <span>Regular Sidebar</span>
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'sidebar-layouts-blank-page-2' }"
+                    :to="{ name: 'sidebar-blank-page-2' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -402,7 +402,7 @@ const selectedCategory = ref('')
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'sidebar-layouts-blank-page-3' }"
+                    :to="{ name: 'sidebar-blank-page-3' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -413,7 +413,7 @@ const selectedCategory = ref('')
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'sidebar-layouts-blank-page-4' }"
+                    :to="{ name: 'sidebar-blank-page-4' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -424,11 +424,45 @@ const selectedCategory = ref('')
                     </div>
                   </RouterLink>
                   <RouterLink
+                    :to="{ name: 'sidebar-blank-page-5' }"
+                    class="dropdown-item is-media"
+                  >
+                    <div class="icon">
+                      <i class="lnil lnil-layout"></i>
+                    </div>
+                    <div class="meta">
+                      <span>Labels Sidebar</span>
+                    </div>
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'sidebar-blank-page-6' }"
+                    class="dropdown-item is-media"
+                  >
+                    <div class="icon">
+                      <i class="lnil lnil-layout"></i>
+                    </div>
+                    <div class="meta">
+                      <span>Labels Hover</span>
+                    </div>
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'sidebar-blank-page-7' }"
+                    class="dropdown-item is-media"
+                  >
+                    <div class="icon">
+                      <i class="lnil lnil-layout"></i>
+                    </div>
+                    <div class="meta">
+                      <span>Float Sidebar</span>
+                    </div>
+                  </RouterLink>
+                  <hr class="dropdown-divider" />
+                  <RouterLink
                     :to="{ name: 'navbar-layouts-blank-page-1' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-layout-alt-2"></i>
+                      <i class="lnil lnil-layout-alt-1"></i>
                     </div>
                     <div class="meta">
                       <span>Navbar</span>
@@ -439,7 +473,7 @@ const selectedCategory = ref('')
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-layout"></i>
+                      <i class="lnil lnil-layout-alt-1"></i>
                     </div>
                     <div class="meta">
                       <span>Navbar Colored</span>
@@ -461,7 +495,7 @@ const selectedCategory = ref('')
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-layout-alt-2"></i>
+                      <i class="lnil lnil-layout-alt-1"></i>
                     </div>
                     <div class="meta">
                       <span>Colored Drop</span>

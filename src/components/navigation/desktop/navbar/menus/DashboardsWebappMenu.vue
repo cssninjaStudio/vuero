@@ -226,30 +226,51 @@ const activeTab = ref<TabId>('dashboards')
                 <h4 class="column-heading">Sidebars</h4>
                 <ul>
                   <li>
-                    <RouterLink :to="{ name: 'sidebar-layouts-blank-page-1' }">
+                    <RouterLink :to="{ name: 'sidebar-blank-page-1' }">
                       <i class="lnil lnil-layout"></i>
                       <span>Regular Sidebar</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'sidebar-layouts-blank-page-2' }">
+                    <RouterLink :to="{ name: 'sidebar-blank-page-2' }">
                       <i class="lnil lnil-layout"></i>
                       <span>Curved Sidebar</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'sidebar-layouts-blank-page-3' }">
+                    <RouterLink :to="{ name: 'sidebar-blank-page-3' }">
                       <i class="lnil lnil-layout"></i>
                       <span>Colored Sidebar</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'sidebar-layouts-blank-page-4' }">
+                    <RouterLink :to="{ name: 'sidebar-blank-page-4' }">
                       <i class="lnil lnil-layout"></i>
                       <span>Curved Colored</span>
+                      <i class="iconify" data-icon="feather:circle"></i>
+                    </RouterLink>
+                  </li>
+                  <li>
+                    <RouterLink :to="{ name: 'sidebar-blank-page-5' }">
+                      <i class="lnil lnil-layout"></i>
+                      <span>Labels Sidebar</span>
+                      <i class="iconify" data-icon="feather:circle"></i>
+                    </RouterLink>
+                  </li>
+                  <li>
+                    <RouterLink :to="{ name: 'sidebar-blank-page-6' }">
+                      <i class="lnil lnil-layout"></i>
+                      <span>Labels Hover Sidebar</span>
+                      <i class="iconify" data-icon="feather:circle"></i>
+                    </RouterLink>
+                  </li>
+                  <li>
+                    <RouterLink :to="{ name: 'sidebar-blank-page-7' }">
+                      <i class="lnil lnil-layout"></i>
+                      <span>Float Sidebar</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>

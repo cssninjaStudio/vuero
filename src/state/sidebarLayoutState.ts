@@ -1,6 +1,8 @@
 import { computed, ref, defineAsyncComponent } from 'vue'
-import SidebarLayout from '/@src/layouts/SidebarLayout.vue'
 
+const SidebarLayout = defineAsyncComponent(
+  () => import('/@src/layouts/SidebarLayout.vue')
+)
 const SidebarCurvedLayout = defineAsyncComponent(
   () => import('/@src/layouts/SidebarCurvedLayout.vue')
 )

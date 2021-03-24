@@ -365,7 +365,7 @@ import { activeSidebar } from '/@src/state/activeSidebarState'
           <ul>
             <li>
               <RouterLink
-                :to="{ name: 'sidebar-layouts-blank-page-1' }"
+                :to="{ name: 'sidebar-blank-page-1' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-layout"></i>
@@ -374,7 +374,7 @@ import { activeSidebar } from '/@src/state/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'sidebar-layouts-blank-page-2' }"
+                :to="{ name: 'sidebar-blank-page-2' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-layout"></i>
@@ -383,7 +383,7 @@ import { activeSidebar } from '/@src/state/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'sidebar-layouts-blank-page-3' }"
+                :to="{ name: 'sidebar-blank-page-3' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-layout"></i>
@@ -392,13 +392,41 @@ import { activeSidebar } from '/@src/state/activeSidebarState'
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'sidebar-layouts-blank-page-4' }"
+                :to="{ name: 'sidebar-blank-page-4' }"
                 class="is-submenu"
               >
                 <i class="lnil lnil-layout"></i>
-                <span>Curved Colored</span>
+                <span>Curved Colored Sidebar</span>
               </RouterLink>
             </li>
+            <li>
+              <RouterLink
+                :to="{ name: 'sidebar-blank-page-5' }"
+                class="is-submenu"
+              >
+                <i class="lnil lnil-layout"></i>
+                <span>Labels Sidebar</span>
+              </RouterLink>
+            </li>
+            <li>
+              <RouterLink
+                :to="{ name: 'sidebar-blank-page-6' }"
+                class="is-submenu"
+              >
+                <i class="lnil lnil-layout"></i>
+                <span>Labels Hover Sidebar</span>
+              </RouterLink>
+            </li>
+            <li>
+              <RouterLink
+                :to="{ name: 'sidebar-blank-page-7' }"
+                class="is-submenu"
+              >
+                <i class="lnil lnil-layout"></i>
+                <span>Float Sidebar</span>
+              </RouterLink>
+            </li>
+            <li><hr class="navbar-divider" /></li>
             <li>
               <RouterLink
                 :to="{ name: 'navbar-layouts-blank-page-1' }"

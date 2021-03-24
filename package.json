@@ -28,7 +28,7 @@
     "precommit:lint-staged": "lint-staged"
   },
   "dependencies": {
-    "@ckeditor/ckeditor5-build-classic": "26.0.0",
+    "@ckeditor/ckeditor5-build-classic": "27.0.0",
     "@ckeditor/ckeditor5-vue": "2.0.1",
     "@iconify/iconify": "1.0.7",
     "@popperjs/core": "2.9.1",
@@ -71,7 +71,7 @@
     "vue3-apexcharts": "1.2.1"
   },
   "devDependencies": {
-    "@iconify/json": "1.1.320",
+    "@iconify/json": "1.1.321",
     "@intlify/vite-plugin-vue-i18n": "2.0.4",
     "@types/dragula": "3.7.0",
     "@types/markdown-it": "12.0.1",
@@ -114,7 +114,7 @@
     "vite-imagetools": "3.1.0",
     "vite-plugin-components": "0.8.3",
     "vite-plugin-fonts": "0.2.0",
-    "vite-plugin-pages": "0.7.2",
+    "vite-plugin-pages": "0.8.0",
     "vite-plugin-purge-icons": "0.7.0",
     "vite-plugin-pwa": "0.5.6",
     "vite-plugin-radar": "^0.1.0",

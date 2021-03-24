@@ -1,6 +1,8 @@
 import { computed, ref, defineAsyncComponent } from 'vue'
-import NavbarLayout from '/@src/layouts/NavbarLayout.vue'
 
+const NavbarLayout = defineAsyncComponent(
+  () => import('/@src/layouts/NavbarLayout.vue')
+)
 const NavbarFadeLayout = defineAsyncComponent(
   () => import('/@src/layouts/NavbarFadeLayout.vue')
 )
