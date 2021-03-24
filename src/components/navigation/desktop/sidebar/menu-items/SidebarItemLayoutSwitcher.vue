@@ -14,10 +14,19 @@ const otherLayoutLink = computed(() => {
     return route.fullPath.replace('navbar', 'sidebar')
   }
 })
+
+const hasDynamicLayout = computed(() => {
+  return (
+    route.fullPath.startsWith('/sidebar/') ||
+    route.fullPath.startsWith('/navbar/') ||
+    route.fullPath.startsWith('/components/') ||
+    route.fullPath.startsWith('/elements/')
+  )
+})
 </script>
 
 <template>
-  <li>
+  <li v-if="hasDynamicLayout">
     <a data-content="Config" @click="standardOpen = true">
       <i class="iconify sidebar-svg" data-icon="feather:sidebar"></i>
     </a>
