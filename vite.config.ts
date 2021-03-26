@@ -11,15 +11,26 @@ import VueI18n from '@intlify/vite-plugin-vue-i18n'
 import VueroDocumentation from './vite-plugin-vuero-doc/index'
 import { VitePWA } from 'vite-plugin-pwa'
 
-const projectRootDir = path.resolve(__dirname)
-
+/**
+ * This is the main configuration file for vitejs
+ *
+ * @see https://vitejs.dev/config
+ */
 export default defineConfig({
+  // Project root directory (where index.html is located).
+  root: process.cwd(),
+  // Base public path when served in development or production.
+  base: '/',
+  // Directory to serve as plain static assets.
+  publicDir: 'public',
+  // Adjust console output verbosity.
   logLevel: 'info',
+  // Will be passed to @rollup/plugin-alias as its entries option.
   resolve: {
     alias: [
       {
         find: '/@src/',
-        replacement: `${path.resolve(projectRootDir, 'src')}/`,
+        replacement: `${path.resolve(__dirname, 'src')}/`,
       },
     ],
   },
@@ -42,13 +53,23 @@ export default defineConfig({
       include: [/\.vue$/],
     }),
 
-    // https://github.com/intlify/vite-plugin-vue-i18n
+    /**
+     * vite-plugin-vue-i18n plugin does i18n resources pre-compilation / optimizations
+     *
+     * @see https://github.com/intlify/vite-plugin-vue-i18n
+     */
     VueI18n({
       include: path.resolve(__dirname, './src/locales/**'),
     }),
 
-    // https://github.com/hannoeru/vite-plugin-pages
-    Pages(),
+    /**
+     * vite-plugin-pages plugin generate routes based on file system
+     *
+     * @see https://github.com/hannoeru/vite-plugin-pages
+     */
+    Pages({
+      pagesDir: ['src/pages'],
+    }),
 
     /**
      * This is an internal vite plugin that load markdown files as vue components.
@@ -60,17 +81,39 @@ export default defineConfig({
      * */
     VueroDocumentation(),
 
-    // https://github.com/antfu/vite-plugin-components
+    /**
+     * vite-plugin-components plugin is responsible of autoloading components
+     * documentation and md file are loaded for elements and components sections
+     *
+     * @see https://github.com/antfu/vite-plugin-components
+     */
     ViteComponents({
       extensions: ['vue', 'md'],
       dirs: ['documentation', 'src/components', 'src/layouts'],
       customLoaderMatcher: (path) => path.endsWith('.md'),
     }),
 
-    // https://github.com/JonasKruckenberg/vite-imagetools
+    /**
+     * vite-imagetools plugin allow to perform optimization/transformation
+     * on images at build time
+     *
+     * @see https://github.com/JonasKruckenberg/vite-imagetools
+     */
     imagetools(),
 
-    // https://github.com/stafyniaksacha/vite-plugin-fonts
+    /**
+     * vite-plugin-purge-icons plugin is responsible of autoloading icones from multiples providers
+     *
+     * @see https://icones.netlify.app/
+     * @see https://github.com/antfu/purge-icons/tree/main/packages/vite-plugin-purge-icons
+     */
+    PurgeIcons(),
+
+    /**
+     * vite-plugin-fonts plugin inject webfonts from differents providers
+     *
+     * @see https://github.com/stafyniaksacha/vite-plugin-fonts
+     */
     ViteFonts({
       google: {
         families: [
@@ -90,22 +133,31 @@ export default defineConfig({
       },
     }),
 
-    // https://github.com/stafyniaksacha/vite-plugin-radar
+    /**
+     * vite-plugin-radar plugin inject snippets from analytics providers
+     *
+     * @see https://github.com/stafyniaksacha/vite-plugin-radar
+     */
     ViteRadar({
       analytics: {
         id: 'G-8PH6FM2JEL',
       },
     }),
 
-    // https://github.com/antfu/purge-icons/tree/main/packages/vite-plugin-purge-icons
-    PurgeIcons(),
-
-    // https://github.com/antfu/vite-plugin-pwa
+    /**
+     * vite-plugin-pwa generate manifest.json and register services worker to enable PWA
+     *
+     * @see https://github.com/antfu/vite-plugin-pwa
+     */
     VitePWA({
+      registerType: 'autoUpdate',
       manifest: {
+        name: 'Vuero - A complete Vue 3 design system',
+        short_name: 'Vuero',
+        start_url: '/?utm_source=pwa',
         display: 'standalone',
-        theme_color: '#fff',
-        background_color: '#fff',
+        theme_color: '#ffffff',
+        background_color: '#ffffff',
         icons: [
           {
             src: '/icons/android-chrome-192x192.png',
