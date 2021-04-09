@@ -10,6 +10,7 @@ useHead({
 
 <template>
   <SidebarFloatLayout>
+    <!-- Sidebar -->
     <GenericSidebar />
     <GenericMobileSubsidebar />
 
@@ -40,6 +41,7 @@ useHead({
               </span>
             </div>
 
+            <!-- Page title -->
             <div class="title-wrap">
               <h1 class="title is-4">Blank Page 7 - Sidebar</h1>
             </div>
@@ -48,7 +50,7 @@ useHead({
           </div>
 
           <div class="page-content-inner">
-            <!--Page content goes here-->
+            <!-- Page content goes here -->
           </div>
         </div>
       </div>

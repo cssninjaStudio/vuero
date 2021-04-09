@@ -13,7 +13,6 @@ const isStuck = computed(() => {
 </script>
 
 <template>
-  <!--Form Layout 2-->
   <form class="form-layout is-split" @submit.prevent>
     <div class="form-outer">
       <div :class="[isStuck && 'is-stuck']" class="form-header stuck-header">

@@ -1,0 +1,9 @@
+{
+  "extends": ["development"],
+  "browserslist": [
+    "> 0.5%",
+    "last 2 versions",
+    "supports es6-module",
+    "not ie <= 11"
+  ]
+}

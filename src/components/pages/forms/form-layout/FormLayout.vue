@@ -15,7 +15,6 @@ const isStuck = computed(() => {
 </script>
 
 <template>
-  <!--Form Layout 1-->
   <form class="form-layout" @submit.prevent>
     <div class="form-outer">
       <div :class="[isStuck && 'is-stuck']" class="form-header stuck-header">

@@ -1,0 +1,18 @@
+.tagsinput {
+  height: auto !important;
+  .control {
+    margin-bottom: 0.1em !important;
+    margin-top: 0.1em !important;
+  }
+  input {
+    border: none;
+    margin-bottom: 0.1em !important;
+    margin-top: 0.1em !important;
+  }
+  .tag {
+    &.is-active {
+      background-color: $primary;
+      color: findcolorinvert($primary);
+    }
+  }
+}

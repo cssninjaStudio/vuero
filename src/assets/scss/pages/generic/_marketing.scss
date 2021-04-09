@@ -1,0 +1,953 @@
+/*! _pages-marketing.scss | Huro | Css ninja 2020-2021 */
+
+/* ==========================================================================
+Marketing Layouts
+========================================================================== */
+
+/*
+    1. Marketing Landing
+    2. Centered Mockup section
+    3. Pricing
+    4. Icon box card
+    5. Dotted BG
+    6. Boxed CTA
+    7. Media Queries
+*/
+
+/* ==========================================================================
+1. Marketing Landing
+========================================================================== */
+
+.marketing-hero {
+  position: relative;
+
+  &.is-left,
+  &.is-right {
+    .hero-body {
+      h1 {
+        max-width: 480px;
+      }
+
+      h3 {
+        max-width: 520px;
+      }
+    }
+  }
+
+  &.is-centered {
+    background: $widget-grey;
+
+    .hero-body {
+      .columns {
+        padding-top: 6rem;
+      }
+
+      .title,
+      .subtitle,
+      .switch-wrapper {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      h1 {
+        max-width: 880px;
+      }
+
+      h3 {
+        max-width: 520px;
+      }
+
+      .hero-mockup {
+        max-width: 640px;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  &.is-left,
+  &.is-centered {
+    background: $widget-grey;
+
+    .hexagon {
+      position: absolute;
+      animation: rotating 15s infinite;
+      animation-timing-function: linear;
+
+      &.hexagon-1 {
+        top: -180px;
+        left: -180px;
+        height: 450px;
+        width: 450px;
+        transform: rotate(39deg);
+      }
+
+      &.hexagon-2 {
+        bottom: 80px;
+        right: 80px;
+        height: 360px;
+        width: 360px;
+        transform: rotate(75deg);
+        animation-delay: 2s;
+      }
+
+      &.hexagon-3 {
+        bottom: 40px;
+        left: 40px;
+        height: 190px;
+        width: 190px;
+        transform: rotate(95deg);
+        animation-delay: 0.5s;
+      }
+
+      &.hexagon-4 {
+        top: -155px;
+        left: 50%;
+        height: 230px;
+        width: 230px;
+        transform: rotate(135deg);
+        animation-delay: 1s;
+      }
+    }
+  }
+
+  &.is-right {
+    background: $widget-grey;
+
+    .hexagon {
+      position: absolute;
+      animation: rotating 15s infinite;
+      animation-timing-function: linear;
+
+      &.hexagon-1 {
+        top: -180px;
+        right: -180px;
+        height: 450px;
+        width: 450px;
+        transform: rotate(39deg);
+      }
+
+      &.hexagon-2 {
+        bottom: 80px;
+        left: 80px;
+        height: 360px;
+        width: 360px;
+        transform: rotate(75deg);
+        animation-delay: 2s;
+      }
+
+      &.hexagon-3 {
+        bottom: 40px;
+        right: 40px;
+        height: 190px;
+        width: 190px;
+        transform: rotate(95deg);
+        animation-delay: 0.5s;
+      }
+
+      &.hexagon-4 {
+        top: -155px;
+        left: 50%;
+        height: 230px;
+        width: 230px;
+        transform: rotate(135deg);
+        animation-delay: 1s;
+      }
+    }
+  }
+
+  .hero-body {
+    .buttons {
+      .button {
+        min-height: 44px;
+        min-width: 140px;
+      }
+    }
+
+    .hero-mockup {
+      box-shadow: $light-box-shadow;
+      border: 1px solid $border;
+      border-radius: 0.75rem;
+    }
+  }
+}
+
+.landing-page-wrapper {
+  &.is-dark {
+    .marketing-hero {
+      &.is-left,
+      &.is-right,
+      &.is-centered {
+        background: darken($landing-dark-1, 2%);
+
+        .hexagon {
+          opacity: 0.3;
+        }
+
+        .hero-body {
+          .hero-mockup {
+            border-color: lighten($landing-dark-1, 8%);
+          }
+
+          .buttons {
+            .button {
+              &:not(.is-outlined) {
+                background: $accent !important;
+                border-color: $accent !important;
+
+                &:hover {
+                  box-shadow: $accent-box-shadow !important;
+                }
+              }
+
+              &.is-outlined {
+                color: $accent !important;
+                border-color: $accent !important;
+
+                &:hover {
+                  background: $accent !important;
+                  color: $white !important;
+                  box-shadow: $accent-box-shadow !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+2. Centered Mockup section
+========================================================================== */
+
+.centered-mockup-wrapper {
+  margin: 2rem auto;
+  max-width: 740px;
+
+  .mockup-container {
+    position: relative;
+
+    .hexagon {
+      position: absolute;
+      animation: rotating 15s infinite;
+
+      &.hexagon-1 {
+        top: -110px;
+        left: -110px;
+        height: 230px;
+        width: 230px;
+        transform: rotate(39deg);
+        animation-delay: 2s;
+      }
+
+      &.hexagon-2 {
+        bottom: 160px;
+        right: -80px;
+        height: 160px;
+        width: 160px;
+        transform: rotate(75deg);
+        z-index: 2;
+        animation-delay: 0.5s;
+      }
+
+      &.hexagon-3 {
+        bottom: 60px;
+        left: -180px;
+        height: 100px;
+        width: 100px;
+        transform: rotate(125deg);
+        z-index: 2;
+        animation-delay: 1s;
+      }
+    }
+  }
+
+  img:not(.hexagon) {
+    position: relative;
+    border-radius: 0.75rem;
+    z-index: 1;
+
+    &.light-image-l {
+      box-shadow: $light-box-shadow;
+      border: 1px solid $border;
+    }
+
+    &.dark-image-l {
+      box-shadow: $light-box-shadow;
+      border: 1px solid lighten($dark-sidebar, 12%);
+    }
+  }
+}
+
+.landing-page-wrapper {
+  &.is-dark {
+    .centered-mockup-wrapper {
+      .title {
+        color: $white !important;
+      }
+    }
+
+    .video-section {
+      .title {
+        color: $white !important;
+      }
+
+      .video-player-container {
+        &.reversed-play {
+          .plyr--full-ui.plyr--video .plyr__control--overlaid {
+            border-color: $accent !important;
+            color: $accent !important;
+
+            &:hover {
+              background: $accent !important;
+
+              svg {
+                stroke: $white !important;
+                fill: $white !important;
+              }
+            }
+
+            svg {
+              stroke: $accent !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+3. Pricing
+========================================================================== */
+
+.pricing-wrapper {
+  font-family: $font;
+  font-weight: 400;
+  color: #9f9f9f;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  max-width: 1040px;
+  margin: 0 auto;
+
+  .pricing-plan {
+    width: calc(33.3% - 1.5rem);
+    height: auto;
+    background: $white;
+    border: 1px solid $border;
+    border-radius: 0.65rem;
+    display: inline-block;
+    padding: 24px;
+    text-align: center;
+    position: relative;
+    margin: 0 0.75rem;
+    overflow: hidden;
+    transition: box-shadow 0.3s;
+
+    &:hover {
+      box-shadow: $light-box-shadow;
+    }
+
+    &.is-featured {
+      border-color: $primary;
+
+      &::before {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 64px 64px 0 0;
+        border-color: $primary transparent transparent transparent;
+        position: absolute;
+        left: 0;
+        top: 0;
+        content: '';
+      }
+
+      &::after {
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        content: '\f00c';
+        color: $white;
+        position: absolute;
+        left: 11px;
+        top: 11px;
+        text-shadow: 0 0 2px $primary;
+        font-size: 1rem;
+      }
+    }
+
+    .name {
+      color: $dark-text;
+      font-weight: 300;
+      font-size: 2rem;
+      margin-top: -5px;
+    }
+
+    img {
+      max-width: 55px;
+      margin: 0 auto;
+    }
+
+    .price {
+      font-size: 1.8rem;
+      margin: 0.75rem 0 1.5rem 0;
+      font-weight: bold;
+
+      &::after {
+        content: ' /per month';
+        font-size: 1rem;
+        font-weight: normal;
+        color: $light-text;
+      }
+    }
+
+    hr {
+      background-color: $border;
+      border: none;
+      height: 1px;
+    }
+
+    .trial {
+      font-size: 0.9rem;
+      font-weight: 600;
+      padding: 2px 21px 2px 21px;
+      color: $primary;
+      border: 1px solid $border;
+      display: inline-block;
+      border-radius: 15px;
+      background-color: $white;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      text-align: left;
+      margin-top: 29px;
+    }
+
+    li {
+      margin-bottom: 15px;
+
+      &::before {
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        content: '\f00c';
+        font-size: 0.9rem;
+        color: $success;
+        margin-right: 6px;
+      }
+    }
+  }
+}
+
+.landing-page-wrapper {
+  &.is-dark {
+    .pricing-wrapper {
+      .pricing-plan {
+        border-color: lighten($landing-dark-1, 12%);
+        background: lighten($landing-dark-1, 6%);
+
+        &.is-featured {
+          border-color: $accent;
+
+          &::before {
+            border-color: $accent transparent transparent transparent;
+          }
+        }
+
+        .name {
+          color: $dark-dark-text;
+        }
+
+        .price {
+          color: $white;
+        }
+
+        .trial {
+          color: $accent;
+          border-color: lighten($landing-dark-1, 12%);
+          background: lighten($landing-dark-1, 2%);
+        }
+
+        hr {
+          background: lighten($landing-dark-1, 12%);
+        }
+
+        li {
+          color: $light-text;
+
+          strong {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+4. Icon box card
+========================================================================== */
+
+.card-icon-box {
+  border: 1px solid $border;
+  border-radius: 0.65rem;
+  box-shadow: none;
+  transition: box-shadow 0.3s;
+
+  &:hover {
+    box-shadow: $light-box-shadow;
+  }
+
+  .h-icon {
+    margin-bottom: 0.75rem;
+  }
+}
+
+.landing-page-wrapper {
+  &.is-dark {
+    .card-icon-box {
+      border-color: lighten($landing-dark-1, 12%);
+      background: lighten($landing-dark-1, 4%);
+
+      .h-icon {
+        background: transparent;
+        border: 2px solid lighten($landing-dark-1, 12%);
+      }
+
+      .title {
+        color: $white;
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+5. Dotted BG
+========================================================================== */
+
+.has-bg-dots {
+  background-image: radial-gradient(circle, #f0f4ff 10%, transparent 15%),
+    radial-gradient(circle, #f0f4ff 10%, transparent 15%);
+  background-size: 50px 50px;
+  background-position: 0 0, 0 0;
+}
+
+.landing-page-wrapper {
+  &.is-dark {
+    .has-bg-dots {
+      background-image: radial-gradient(
+          circle,
+          lighten($landing-dark-1, 4%) 10%,
+          transparent 15%
+        ),
+        radial-gradient(
+          circle,
+          lighten($landing-dark-1, 4%) 10%,
+          transparent 15%
+        );
+      background-size: 50px 50px;
+      background-position: 0 0, 0 0;
+    }
+  }
+}
+
+/* ==========================================================================
+6. Boxed CTA
+========================================================================== */
+
+.boxed-cta {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 430px;
+  max-width: 1040px;
+  margin: 0 auto;
+  background: $primary;
+  border-radius: 1rem;
+  padding: 3rem;
+  box-shadow: $primary-box-shadow;
+  overflow: hidden;
+  margin-bottom: 5rem;
+
+  .v-avatar {
+    position: absolute;
+
+    &.v-avatar-1 {
+      top: -7%;
+      left: 4%;
+    }
+
+    &.v-avatar-2 {
+      top: 5%;
+      right: 5%;
+    }
+
+    &.v-avatar-3 {
+      bottom: -9%;
+      left: 5%;
+    }
+
+    &.v-avatar-4 {
+      bottom: -9%;
+      right: 5%;
+    }
+
+    &.v-avatar-5 {
+      top: -7%;
+      left: 50%;
+    }
+
+    &.v-avatar-6 {
+      top: 40%;
+      right: -3%;
+    }
+
+    &.v-avatar-7 {
+      top: 30%;
+      right: 12%;
+    }
+
+    &.v-avatar-8 {
+      bottom: 30%;
+      right: 16%;
+    }
+
+    &.v-avatar-9 {
+      top: 9%;
+      right: 21%;
+    }
+
+    &.v-avatar-10 {
+      top: 40%;
+      left: -3%;
+    }
+
+    &.v-avatar-11 {
+      top: 30%;
+      left: 12%;
+    }
+
+    &.v-avatar-12 {
+      bottom: 17%;
+      left: 16%;
+    }
+
+    &.v-avatar-13 {
+      top: 9%;
+      left: 21%;
+    }
+
+    &.v-avatar-14 {
+      bottom: 20%;
+      left: 1%;
+    }
+
+    &.v-avatar-15 {
+      bottom: -7%;
+      left: 39%;
+    }
+
+    &.v-avatar-16 {
+      bottom: 12%;
+      right: 30%;
+    }
+
+    .avatar {
+      border: 4px solid lighten($primary, 8%);
+    }
+  }
+
+  .boxed-cta-content {
+    max-width: 440px;
+
+    .title,
+    .subtitle {
+      color: $white;
+    }
+
+    .subtitle {
+      opacity: 0.8;
+    }
+
+    .h-button {
+      min-height: 44px;
+      min-width: 190px;
+      font-weight: 600;
+      color: $primary;
+    }
+  }
+}
+
+.landing-page-wrapper {
+  &.is-dark {
+    .boxed-cta {
+      background: $accent;
+      box-shadow: $accent-box-shadow;
+
+      .v-avatar {
+        .avatar {
+          border-color: lighten($accent, 8%);
+        }
+      }
+
+      .boxed-cta-content {
+        .h-button {
+          color: $accent;
+        }
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+7. Media Queries
+========================================================================== */
+
+@media (max-width: 767px) {
+  .marketing-hero {
+    &.is-left,
+    &.is-right,
+    &.is-centered {
+      text-align: center;
+
+      .hexagon {
+        &.hexagon-1 {
+          top: -110px;
+          left: -80px;
+          height: 230px;
+          width: 230px;
+        }
+
+        &.hexagon-2 {
+          bottom: 45px;
+          right: -80px;
+          height: 220px;
+          width: 220px;
+        }
+
+        &.hexagon-3 {
+          bottom: 50%;
+          left: -110px;
+        }
+
+        &.hexagon-4 {
+          top: -165px;
+          left: 70%;
+          height: 230px;
+          width: 230px;
+        }
+      }
+    }
+
+    .hero-body {
+      .title,
+      .subtitle {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .title {
+        font-size: 2.5rem;
+      }
+
+      .buttons {
+        justify-content: center;
+        margin-bottom: 2rem;
+      }
+
+      .switch-wrapper {
+        margin: 0 auto;
+      }
+
+      .hero-mockup {
+        max-width: 100% !important;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .centered-mockup-wrapper {
+    .hexagon {
+      &.hexagon-2 {
+        bottom: 120px !important;
+        right: -40px !important;
+        height: 80px !important;
+        width: 80px !important;
+      }
+    }
+  }
+
+  .pricing-wrapper {
+    flex-wrap: wrap;
+
+    .pricing-plan {
+      width: calc(100% - 1.5rem);
+
+      &:not(:last-child) {
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+
+  .boxed-cta {
+    .v-avatar {
+      &.v-avatar-12,
+      &.v-avatar-9,
+      &.v-avatar-8,
+      &.v-avatar-11,
+      &.v-avatar-4,
+      &.v-avatar-6,
+      &.v-avatar-1 {
+        display: none;
+      }
+
+      &.v-avatar-7 {
+        right: -6%;
+      }
+
+      &.v-avatar-13 {
+        top: 3%;
+        left: -4%;
+      }
+
+      &.v-avatar-14 {
+        left: -13%;
+      }
+
+      &.v-avatar-15 {
+        bottom: -4%;
+        left: 48%;
+      }
+
+      &.v-avatar-16 {
+        right: -7%;
+      }
+    }
+
+    .boxed-cta-content {
+      .title {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .marketing-hero {
+    &.is-centered {
+      text-align: center;
+
+      .hexagon {
+        &.hexagon-2 {
+          bottom: 45px;
+          right: -80px;
+        }
+
+        &.hexagon-3 {
+          bottom: 50%;
+          left: -110px;
+        }
+      }
+    }
+
+    &.is-left {
+      text-align: center;
+
+      .hexagon {
+        &.hexagon-2 {
+          bottom: 45px;
+          right: -80px;
+        }
+
+        &.hexagon-3 {
+          bottom: 50%;
+          left: -110px;
+        }
+      }
+    }
+
+    &.is-right {
+      text-align: center;
+
+      .hexagon {
+        &.hexagon-2 {
+          bottom: 45px;
+          right: -80px;
+        }
+
+        &.hexagon-3 {
+          bottom: 50%;
+          left: -110px;
+        }
+      }
+    }
+
+    .hero-body {
+      .title,
+      .subtitle {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .buttons {
+        justify-content: center;
+        margin-bottom: 2rem;
+      }
+
+      .switch-wrapper {
+        margin: 0 auto;
+      }
+
+      .hero-mockup {
+        max-width: 640px;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .card-icon-boxes {
+    display: flex;
+
+    .column {
+      min-width: 50%;
+      width: 50%;
+    }
+  }
+
+  .centered-mockup-wrapper {
+    max-width: 640px;
+
+    .columns {
+      display: flex;
+    }
+  }
+
+  .video-section {
+    .columns .columns {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 480px;
+      margin: 0 auto;
+
+      .column {
+        min-width: 50%;
+        width: 50%;
+      }
+    }
+  }
+
+  .boxed-cta {
+    .v-avatar {
+      &.v-avatar-12,
+      &.v-avatar-9,
+      &.v-avatar-8,
+      &.v-avatar-11 {
+        display: none;
+      }
+    }
+  }
+}

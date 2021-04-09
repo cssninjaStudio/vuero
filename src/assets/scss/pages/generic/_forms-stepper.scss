@@ -1,0 +1,725 @@
+/* ==========================================================================
+2. Stepper Form
+========================================================================== */
+
+.is-webapp {
+  .stepper-form {
+    max-width: 880px;
+    margin: 0 auto;
+  }
+}
+
+.stepper-form {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  padding-top: 3rem;
+  margin-bottom: 5rem;
+
+  .form-sections {
+    flex-grow: 2;
+    max-width: 640px;
+    padding-right: 4rem;
+
+    .form-section {
+      display: none;
+
+      &.is-active {
+        display: block;
+      }
+
+      + .form-section {
+        margin-top: 4rem;
+      }
+
+      .form-section-title {
+        font-family: $font-alt;
+        font-weight: 600;
+        color: $dark-text;
+        margin-bottom: 1rem;
+
+        button {
+          position: relative;
+          top: 4px;
+          padding: 0;
+          height: 18px;
+          width: 18px;
+          border: none;
+          background: none;
+          cursor: pointer;
+          margin-left: 0.25rem;
+          outline: none;
+
+          svg {
+            height: 18px;
+            width: 18px;
+            pointer-events: none;
+          }
+        }
+      }
+
+      .fieldset {
+        padding: 0.75rem;
+        border-radius: 0.5rem;
+        border: 1px solid $border;
+        background: darken($widget-grey, 3%);
+
+        .fieldset-separator {
+          margin: 1.5rem 0;
+          border-top: 1px solid $border;
+        }
+      }
+
+      .field {
+        > label {
+          margin-bottom: 0.25rem;
+          display: inline-block;
+        }
+
+        > .buttons {
+          padding: 2rem 0;
+        }
+      }
+
+      .flex-label {
+        display: flex;
+        align-items: center;
+        height: 100%;
+
+        h4 {
+          font-family: $font;
+          font-weight: 500;
+          color: $dark-text;
+        }
+      }
+
+      .subcontrol {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        min-width: 175px;
+        padding-right: 1rem;
+
+        .checkbox {
+          padding: 0;
+        }
+      }
+
+      .switch-segment {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        > span {
+          font-family: $font;
+          font-size: 0.9rem;
+
+          &:first-child {
+            color: $dark-text;
+          }
+
+          &:nth-child(3) {
+            color: $light-text;
+          }
+        }
+
+        .form-switch {
+          transform: scale(0.7);
+          margin: 0 0.25rem;
+        }
+      }
+
+      .input-button {
+        height: 44px;
+        width: 100%;
+        border: 2px dashed $border;
+        border-radius: 0.65rem;
+        background: darken($widget-grey, 3%);
+        display: flex;
+        align-items: center;
+        padding-left: calc(0.75em - 1px);
+        padding-right: calc(0.75em - 1px);
+        padding-top: 0;
+        padding-bottom: 0;
+        color: $dark-text;
+        cursor: pointer;
+        transition: color 0.3s, background-color 0.3s, border 0.3s,
+          box-shadow 0.3s;
+
+        &:hover {
+          background: $white;
+          border: 2px solid $primary;
+          color: $primary;
+          box-shadow: $light-box-shadow;
+        }
+
+        svg {
+          height: 18px;
+          width: 16px;
+        }
+
+        span {
+          font-family: $font;
+          margin-left: 0.75rem;
+        }
+      }
+
+      .options {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -0.5rem;
+        margin-right: -0.5rem;
+
+        .option {
+          position: relative;
+          width: calc(33.3% - 1rem);
+          margin: 0.5rem;
+
+          input {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: 1;
+            opacity: 0;
+            cursor: pointer;
+
+            &:checked {
+              ~ .indicator {
+                transform: scale(1);
+              }
+
+              ~ .option-inner {
+                border-color: $primary;
+                box-shadow: $light-box-shadow;
+
+                i {
+                  color: $primary;
+                }
+              }
+            }
+          }
+
+          .indicator {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 20px;
+            width: 20px;
+            color: $white;
+            background: $primary;
+            border-radius: 50%;
+            transform: scale(0);
+            transition: transform 0.3s;
+
+            svg {
+              height: 14px;
+              width: 14px;
+              stroke-width: 3px;
+            }
+          }
+
+          .option-inner {
+            padding: 1.5rem;
+            background: $white;
+            border: 1px solid $border;
+            border-radius: 0.5rem;
+            transition: border 0.3s, box-shadow 0.3s;
+
+            h4 {
+              color: $dark-text;
+              font-weight: 600;
+              font-family: $font-alt;
+            }
+
+            p {
+              font-size: 0.9rem;
+            }
+
+            i {
+              font-size: 2.25rem;
+              color: $light-text;
+              margin-bottom: 0.25rem;
+            }
+          }
+        }
+      }
+
+      .validation-box {
+        display: flex;
+        padding: 2rem;
+        background: $white;
+        border: 1px solid $border;
+        border-radius: 0.5rem;
+        transition: border 0.3s, box-shadow 0.3s;
+
+        .box-content {
+          h3 {
+            font-family: $font-alt;
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+          }
+
+          p {
+            font-size: 1rem;
+          }
+        }
+
+        .box-illustration {
+          position: relative;
+          height: 100px;
+          min-width: 40%;
+
+          img {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            max-height: 180px;
+          }
+        }
+      }
+
+      .form-section-output {
+        margin-top: 1.5rem;
+
+        .output {
+          height: 52px;
+          width: 100%;
+          border: 1px solid $border;
+          border-radius: 0.65rem;
+          background: $white;
+          display: flex;
+          align-items: center;
+          padding-left: calc(1em - 1px);
+          padding-right: calc(1em - 1px);
+          padding-top: 0;
+          padding-bottom: 0;
+          color: $dark-text;
+          cursor: pointer;
+          transition: color 0.3s, background-color 0.3s, border 0.3s,
+            box-shadow 0.3s;
+
+          &:not(:last-child) {
+            margin-bottom: 1rem;
+          }
+
+          > svg {
+            height: 18px;
+            width: 18px;
+            margin-right: 0.75rem;
+            stroke: $light-text;
+          }
+
+          > span {
+            font-weight: 500;
+            font-family: $font;
+            color: $dark-text;
+          }
+
+          .action {
+            margin-left: auto;
+
+            button {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 38px;
+              width: 38px;
+              min-width: 38px;
+              background: none;
+              border: none;
+              padding: 0;
+              cursor: pointer;
+              border-radius: 0.5rem;
+              transition: background-color 0.3s;
+
+              &:hover {
+                background: darken($widget-grey, 1%);
+              }
+
+              svg {
+                height: 18px;
+                width: 18px;
+                stroke-width: 1.5px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .navigation-buttons {
+      padding: 2rem 0;
+
+      .button {
+        min-height: 52px;
+        min-width: 160px;
+      }
+    }
+  }
+
+  .form-stepper {
+    position: -webkit-sticky;
+    position: sticky;
+    top: -30px;
+    padding-top: 50px;
+
+    .form-help {
+      position: relative;
+      max-width: 300px;
+      padding: 1.75rem;
+      border: 1px solid $border;
+      border-radius: 0.65rem;
+      background: $white;
+
+      .form-help-inner {
+        display: none;
+
+        &.is-active {
+          display: block;
+        }
+      }
+
+      h3 {
+        font-family: $font-alt;
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+      }
+
+      button {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        padding: 0;
+        height: 18px;
+        width: 18px;
+        border: none;
+        background: none;
+        cursor: pointer;
+        margin-left: 0.25rem;
+        outline: none;
+
+        svg {
+          height: 18px;
+          width: 18px;
+          pointer-events: none;
+        }
+      }
+
+      .list-wrap {
+        padding: 0.75rem 0;
+
+        li {
+          display: flex;
+          align-items: center;
+          margin-bottom: 0.15rem;
+
+          span {
+            font-family: $font;
+            color: $light-text;
+            font-weight: 300;
+          }
+
+          svg {
+            height: 14px;
+            width: 14px;
+            stroke-width: 3px;
+            margin-right: 0.45rem;
+            stroke: $primary;
+          }
+        }
+      }
+    }
+
+    .step-number {
+      font-family: $font;
+      font-weight: 500;
+      font-size: 0.75rem !important;
+    }
+
+    .steps-segment {
+      &.is-active {
+        .step-info {
+          color: $dark-text;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+.mobile-steps {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  height: 65px;
+  width: 100%;
+  background: $white;
+  border-bottom: 1px solid $border;
+  z-index: 25;
+  transform: translateY(-100%);
+  transition: transform 0.3s;
+
+  &.is-active {
+    transform: translateY(0);
+  }
+
+  .steps {
+    position: relative;
+    top: 10px;
+  }
+
+  .steps-segment {
+    &.is-active {
+      .steps-content {
+        opacity: 1 !important;
+      }
+    }
+
+    .steps-content {
+      opacity: 0 !important;
+    }
+  }
+}
+
+body {
+  &.is-dark {
+    .stepper-form {
+      .form-sections {
+        .form-section {
+          .form-section-title {
+            span {
+              color: $dark-dark-text;
+            }
+
+            svg {
+              stroke: $dark-dark-text;
+            }
+          }
+
+          .input-button {
+            background-color: lighten($dark-sidebar, 2%) !important;
+            border-color: lighten($dark-sidebar, 12%) !important;
+            color: $dark-dark-text;
+
+            &:hover {
+              color: $accent;
+              border: 2px solid $accent !important;
+            }
+          }
+
+          .fieldset {
+            background: darken($dark-sidebar, 2%);
+            border-color: lighten($dark-sidebar, 12%);
+          }
+
+          .fieldset-separator {
+            border-color: lighten($dark-sidebar, 12%);
+          }
+
+          .flex-label h4 {
+            color: $dark-dark-text;
+          }
+
+          .switch-segment {
+            span {
+              &:first-child {
+                color: $dark-dark-text;
+              }
+            }
+          }
+
+          .options {
+            .option {
+              .indicator {
+                background: $accent;
+              }
+
+              input {
+                &:checked {
+                  ~ .indicator {
+                    transform: scale(1);
+                  }
+
+                  ~ .option-inner {
+                    border-color: $accent !important;
+
+                    i {
+                      color: $accent;
+                    }
+                  }
+                }
+              }
+
+              .option-inner {
+                background-color: lighten($dark-sidebar, 2%) !important;
+                border-color: lighten($dark-sidebar, 12%) !important;
+
+                h4 {
+                  color: $dark-dark-text;
+                }
+              }
+            }
+          }
+
+          .validation-box {
+            background-color: lighten($dark-sidebar, 2%) !important;
+            border-color: lighten($dark-sidebar, 12%) !important;
+
+            .box-content h3 {
+              color: $dark-dark-text;
+            }
+          }
+
+          .form-section-output {
+            .output {
+              background-color: lighten($dark-sidebar, 2%) !important;
+              border-color: lighten($dark-sidebar, 12%) !important;
+              color: $dark-dark-text;
+
+              > span {
+                color: $dark-dark-text;
+              }
+
+              .action {
+                button {
+                  &:hover {
+                    background: lighten($dark-sidebar, 5%);
+                  }
+
+                  svg {
+                    stroke: $light-text;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .form-stepper {
+        .steps {
+          &:not(.is-hollow) {
+            .steps-marker:not(.is-hollow) {
+              background-color: $accent;
+            }
+          }
+
+          .steps-segment {
+            &.is-active {
+              ~ .steps-segment::after {
+                background: darken($dark-sidebar, 5%);
+              }
+
+              ~ .steps-segment {
+                .steps-marker:not(.is-hollow) {
+                  background: darken($dark-sidebar, 5%);
+                }
+              }
+
+              &::after {
+                background: darken($dark-sidebar, 5%);
+              }
+
+              .steps-content {
+                .step-info {
+                  color: $dark-dark-text;
+                }
+              }
+            }
+
+            &::after {
+              background-color: $accent;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+3. Mobile Steps
+========================================================================== */
+
+@media (max-width: 767px) {
+  .mobile-steps {
+    display: flex;
+  }
+
+  .stepper-form {
+    padding-top: 0;
+
+    .form-sections {
+      padding-right: 0;
+      overflow: hidden;
+
+      .form-section {
+        .form-section-title {
+          button {
+            display: none;
+          }
+        }
+
+        .subcontrol {
+          min-width: 138px;
+        }
+
+        .options {
+          .option {
+            width: calc(50% - 1rem);
+          }
+        }
+
+        .validation-box {
+          .box-illustration {
+            min-width: 30%;
+
+            img {
+              right: -34px;
+              bottom: -28px;
+            }
+          }
+        }
+      }
+    }
+
+    .form-stepper {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .stepper-form {
+    padding-top: 0;
+
+    .form-sections {
+      max-width: 500px;
+    }
+
+    .form-stepper {
+      top: 40px;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .stepper-form {
+    padding-top: 0;
+    .form-stepper {
+      .form-help {
+        right: 2rem;
+      }
+    }
+  }
+}

@@ -18,7 +18,6 @@ const isStuck = computed(() => {
 </script>
 
 <template>
-  <!--Form Layout 4-->
   <div class="form-layout is-stacked">
     <div class="form-outer">
       <div :class="[isStuck && 'is-stuck']" class="form-header stuck-header">

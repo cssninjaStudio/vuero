@@ -7,8 +7,16 @@ SCSS Imports
 @import './abstracts/_variables.scss';
 @import './abstracts/_mixins.scss';
 
-@import 'bulma/bulma.sass';
-@import './extensions/_all.sass';
+// @import 'bulma/bulma.sass';
+@import 'bulma/sass/base/_all.sass';
+@import 'bulma/sass/elements/_all.sass';
+@import 'bulma/sass/form/_all.sass';
+@import 'bulma/sass/components/_all.sass';
+@import 'bulma/sass/grid/_all.sass';
+@import 'bulma/sass/helpers/_all.sass';
+@import 'bulma/sass/layout/_all.sass';
+
+@import './extensions/_all.scss';
 
 @import './abstracts/_typography.scss';
 @import './abstracts/_animations.scss';

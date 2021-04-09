@@ -5,7 +5,6 @@ const country = ref('')
 </script>
 
 <template>
-  <!--Form Layout 3-->
   <form class="form-layout is-separate" @submit.prevent>
     <div class="form-outer">
       <div class="form-body">

@@ -12,6 +12,8 @@
     "moduleResolution": "Node",
     "resolveJsonModule": true,
     "forceConsistentCasingInFileNames": true,
+    "importHelpers": true,
+    "removeComments": true,
     "plugins": [{ "name": "@vuedx/typescript-plugin-vue" }],
     "paths": {
       "/@src/*": ["src/*"],
