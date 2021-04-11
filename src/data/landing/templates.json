@@ -3,9 +3,10 @@
     "name": "Regular Sidebar",
     "category": "TEMPLATES",
     "displayOrder": 0,
+    "new": false,
     "route": {
       "name": "sidebar-blank-page-1",
-      "path": "/sidebar/layouts/blank-page-1"
+      "path": "/sidebar-blank-page-1"
     },
     "screenshot": {
       "light": "/images/screenshots/templates/regular-sidebar-light.webp",
@@ -15,10 +16,11 @@
   {
     "name": "Curved Sidebar",
     "category": "TEMPLATES",
-    "displayOrder": 1,
+    "displayOrder": 10,
+    "new": false,
     "route": {
       "name": "sidebar-blank-page-2",
-      "path": "/sidebar/layouts/blank-page-2"
+      "path": "/sidebar-blank-page-2"
     },
     "screenshot": {
       "light": "/images/screenshots/templates/curved-sidebar-light.webp",
@@ -28,10 +30,11 @@
   {
     "name": "Colored Sidebar",
     "category": "TEMPLATES",
-    "displayOrder": 2,
+    "displayOrder": 20,
+    "new": false,
     "route": {
       "name": "sidebar-blank-page-3",
-      "path": "/sidebar/layouts/blank-page-3"
+      "path": "/sidebar-blank-page-3"
     },
     "screenshot": {
       "light": "/images/screenshots/templates/colored-sidebar-light.webp",
@@ -41,10 +44,11 @@
   {
     "name": "Curved Colored Sidebar",
     "category": "TEMPLATES",
-    "displayOrder": 3,
+    "displayOrder": 30,
+    "new": false,
     "route": {
       "name": "sidebar-blank-page-4",
-      "path": "/sidebar/layouts/blank-page-4"
+      "path": "/sidebar-blank-page-4"
     },
     "screenshot": {
       "light": "/images/screenshots/templates/curved-colored-sidebar-light.webp",
@@ -54,10 +58,11 @@
   {
     "name": "Sidebar Labels",
     "category": "TEMPLATES",
-    "displayOrder": 4,
+    "displayOrder": 40,
+    "new": false,
     "route": {
       "name": "sidebar-blank-page-5",
-      "path": "/sidebar/layouts/blank-page-5"
+      "path": "/sidebar-blank-page-5"
     },
     "screenshot": {
       "light": "/images/screenshots/templates/sidebar-labels-light.webp",
@@ -67,10 +72,11 @@
   {
     "name": "Hover Labels",
     "category": "TEMPLATES",
-    "displayOrder": 5,
+    "displayOrder": 50,
+    "new": false,
     "route": {
       "name": "sidebar-blank-page-6",
-      "path": "/sidebar/layouts/blank-page-6"
+      "path": "/sidebar-blank-page-6"
     },
     "screenshot": {
       "light": "/images/screenshots/templates/hover-labels-light.webp",
@@ -80,10 +86,11 @@
   {
     "name": "Floating Sidebar",
     "category": "TEMPLATES",
-    "displayOrder": 6,
+    "displayOrder": 60,
+    "new": false,
     "route": {
       "name": "sidebar-blank-page-7",
-      "path": "/sidebar/layouts/blank-page-7"
+      "path": "/sidebar-blank-page-7"
     },
     "screenshot": {
       "light": "/images/screenshots/templates/floating-sidebar-light.webp",
@@ -93,10 +100,11 @@
   {
     "name": "Standard Navbar",
     "category": "TEMPLATES",
-    "displayOrder": 7,
+    "displayOrder": 70,
+    "new": false,
     "route": {
       "name": "navbar-blank-page-1",
-      "path": "/navbar/layouts/blank-page-1"
+      "path": "/navbar-blank-page-1"
     },
     "screenshot": {
       "light": "/images/screenshots/templates/standard-navbar-light.webp",
@@ -106,10 +114,11 @@
   {
     "name": "Fading Navbar",
     "category": "TEMPLATES",
-    "displayOrder": 8,
+    "displayOrder": 80,
+    "new": false,
     "route": {
       "name": "navbar-blank-page-2",
-      "path": "/navbar/layouts/blank-page-2"
+      "path": "/navbar-blank-page-2"
     },
     "screenshot": {
       "light": "/images/screenshots/templates/fading-navbar-light.webp",
@@ -119,10 +128,11 @@
   {
     "name": "Colored Navbar",
     "category": "TEMPLATES",
-    "displayOrder": 9,
+    "displayOrder": 90,
+    "new": false,
     "route": {
       "name": "navbar-blank-page-3",
-      "path": "/navbar/layouts/blank-page-3"
+      "path": "/navbar-blank-page-3"
     },
     "screenshot": {
       "light": "/images/screenshots/templates/colored-navbar-light.webp",
@@ -132,10 +142,11 @@
   {
     "name": "Dropdown Navbar",
     "category": "TEMPLATES",
-    "displayOrder": 10,
+    "displayOrder": 100,
+    "new": false,
     "route": {
       "name": "navbar-blank-page-4",
-      "path": "/navbar/layouts/blank-page-4"
+      "path": "/navbar-blank-page-4"
     },
     "screenshot": {
       "light": "/images/screenshots/templates/dropdown-navbar-light.webp",
@@ -145,10 +156,11 @@
   {
     "name": "Colored Dropdown Navbar",
     "category": "TEMPLATES",
-    "displayOrder": 11,
+    "displayOrder": 110,
+    "new": false,
     "route": {
       "name": "navbar-blank-page-5",
-      "path": "/navbar/layouts/blank-page-5"
+      "path": "/navbar-blank-page-5"
     },
     "screenshot": {
       "light": "/images/screenshots/templates/colored-dropdown-navbar-light.webp",
@@ -158,10 +170,11 @@
   {
     "name": "Clean Navbar",
     "category": "TEMPLATES",
-    "displayOrder": 12,
+    "displayOrder": 120,
+    "new": false,
     "route": {
       "name": "navbar-blank-page-6",
-      "path": "/navbar/layouts/blank-page-6"
+      "path": "/navbar-blank-page-6"
     },
     "screenshot": {
       "light": "/images/screenshots/templates/clean-navbar-light.webp",
@@ -171,10 +184,11 @@
   {
     "name": "Clean Centered Navbar",
     "category": "TEMPLATES",
-    "displayOrder": 13,
+    "displayOrder": 130,
+    "new": false,
     "route": {
       "name": "navbar-blank-page-7",
-      "path": "/navbar/layouts/blank-page-7"
+      "path": "/navbar-blank-page-7"
     },
     "screenshot": {
       "light": "/images/screenshots/templates/clean-centered-navbar-light.webp",
@@ -184,10 +198,11 @@
   {
     "name": "Clean Transparent",
     "category": "TEMPLATES",
-    "displayOrder": 14,
+    "displayOrder": 140,
+    "new": false,
     "route": {
       "name": "navbar-blank-page-8",
-      "path": "/navbar/layouts/blank-page-8"
+      "path": "/navbar-blank-page-8"
     },
     "screenshot": {
       "light": "/images/screenshots/templates/clean-transparent-light.webp",

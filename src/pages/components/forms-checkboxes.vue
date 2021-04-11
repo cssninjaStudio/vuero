@@ -5,14 +5,14 @@ import { onMounted } from 'vue'
 import useMakrdownToc from '/@src/composable/useMarkdownToc'
 import { activeSidebar, toggleSidebar } from '/@src/state/activeSidebarState'
 
-const { markdownContainer, toc } = useMakrdownToc()
-
 onMounted(() => {
-  activeSidebar.value = 'elements'
+  activeSidebar.value = 'components'
 })
 
+const { markdownContainer, toc } = useMakrdownToc()
+
 useHead({
-  title: 'Input Addons - Forms Elements - Vuero',
+  title: 'Checkboxes - Forms Components - Vuero',
 })
 </script>
 
@@ -22,7 +22,7 @@ useHead({
       <!-- Sidebar Trigger -->
       <div
         class="huro-hamburger nav-trigger push-resize"
-        @click="toggleSidebar('elements')"
+        @click="toggleSidebar('components')"
       >
         <span class="menu-toggle has-chevron">
           <span
@@ -39,7 +39,7 @@ useHead({
       </div>
 
       <div class="title-wrap">
-        <h1 class="title is-4">Input Addons</h1>
+        <h1 class="title is-4">Checkboxes</h1>
       </div>
 
       <Toolbar />
@@ -64,8 +64,8 @@ useHead({
             label: 'Forms',
           },
           {
-            label: 'Input Addons',
-            to: { name: 'elements-forms-addons' },
+            label: 'Checkboxes',
+            to: { name: 'components-forms-checkboxes' },
           },
         ]"
       />
@@ -76,20 +76,17 @@ useHead({
           :class="[toc.length > 0 ? 'is-9' : 'is-12']"
           class="column doc-column"
         >
-          <!--End Addon-->
-          <AddonEndDocumentation />
+          <!--Checkbox outlined-->
+          <CheckboxOutlinedDocumentation />
 
-          <!--Start Addon-->
-          <AddonStartDocumentation />
+          <!--Checkbox outlined circle-->
+          <CheckboxOutlinedCircleDocumentation />
 
-          <!--Addon Colors-->
-          <AddonColorsDocumentation />
+          <!--Checkbox solid-->
+          <CheckboxSolidDocumentation />
 
-          <!--Rounded Addons-->
-          <AddonRoundedDocumentation />
-
-          <!--Bi Directional-->
-          <AddonDirectionalDocumentation />
+          <!--Checkbox solid circle-->
+          <CheckboxSolidCircleDocumentation />
         </div>
         <div v-if="toc.length" class="column is-3 toc-column">
           <DocumentationToc :toc="toc" />

@@ -138,7 +138,7 @@
     }
     @each $name, $value in $shades {
       $color: $value;
-      $color-invert: findcolorinvert($color);
+      $color-invert: findColorInvert($color);
       &.is-#{$name} {
         .timepicker-input,
         .timepicker-input-number,

@@ -99,7 +99,7 @@ $calendar-legacy-date-padding: 0.4rem 0 !default;
     .calendar-header {
       padding: $calendar-legacy-header-padding;
       background: $calendar-legacy-days-background-color;
-      color: findcolorinvert($calendar-legacy-days-background-color);
+      color: findColorInvert($calendar-legacy-days-background-color);
       font-size: $size-7;
       .calendar-date {
         color: $calendar-legacy-header-days-color;
@@ -138,19 +138,19 @@ $calendar-legacy-date-padding: 0.4rem 0 !default;
         &:focus {
           background: $calendar-legacy-date-hover-background-color;
           border-color: $calendar-legacy-date-hover-background-color;
-          color: findcolorinvert($calendar-legacy-date-hover-background-color);
+          color: findColorInvert($calendar-legacy-date-hover-background-color);
           text-decoration: none;
         }
         &:hover {
           background: $calendar-legacy-date-hover-background-color;
           border-color: $calendar-legacy-date-hover-background-color;
-          color: findcolorinvert($calendar-legacy-date-hover-background-color);
+          color: findColorInvert($calendar-legacy-date-hover-background-color);
           text-decoration: none;
         }
         &.is-active {
           background: $primary;
           border-color: $primary;
-          color: findcolorinvert($primary);
+          color: findColorInvert($primary);
         }
       }
       &.is-disabled,

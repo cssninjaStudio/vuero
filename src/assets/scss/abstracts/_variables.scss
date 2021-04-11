@@ -11,6 +11,7 @@
     8. Stack Shadows
     9. Brand Shadows
     10. Additional Colors Shadows
+    11. Import bulma utilities
 */
 
 /* ==========================================================================
@@ -40,7 +41,7 @@ $section-grey: #fcfcfc;
 $medium-grey: #ddd;
 $light-grey: #eee;
 $lighter-grey: #e5e5e5;
-$widget-grey: #f5f6fa;
+$widget-grey: #fff;
 
 $dark-text: #283252;
 $light-text: #a2a5b9;
@@ -335,5 +336,9 @@ $h-purple-shadow-from: rgba($h-purple, 0.42);
 $h-purple-shadow-to: rgba($h-purple, 0.2);
 $h-purple-box-shadow: 0 14px 26px -12px $h-purple-shadow-from,
   0 4px 23px 0 $base-shadow, 0 8px 10px -5px $h-purple-shadow-to !important;
+
+/* ==========================================================================
+11. Import bulma utilities
+========================================================================== */
 
 @import 'bulma/sass/utilities/_all.sass';

@@ -54,6 +54,7 @@ const navbarDemos = navbar.sort(displayOrder)
           class="column is-4 has-text-centered"
         >
           <figure class="vuero-demo-wrapper loaded">
+            <span v-if="item.new" class="new-tag">New</span>
             <img
               class="light-image-block-l"
               :src="item.screenshot.light"
@@ -112,6 +113,7 @@ const navbarDemos = navbar.sort(displayOrder)
           class="column is-4 has-text-centered"
         >
           <figure class="vuero-demo-wrapper loaded">
+            <span v-if="item.new" class="new-tag">New</span>
             <img
               class="light-image-block-l"
               :src="item.screenshot.light"
@@ -170,6 +172,7 @@ const navbarDemos = navbar.sort(displayOrder)
           class="column is-4 has-text-centered"
         >
           <figure class="vuero-demo-wrapper loaded">
+            <span v-if="item.new" class="new-tag">New</span>
             <img
               class="light-image-block-l"
               :src="item.screenshot.light"
@@ -228,6 +231,7 @@ const navbarDemos = navbar.sort(displayOrder)
           class="column is-4 has-text-centered"
         >
           <figure class="vuero-demo-wrapper loaded">
+            <span v-if="item.new" class="new-tag">New</span>
             <img
               class="light-image-block-l"
               :src="item.screenshot.light"
@@ -286,6 +290,7 @@ const navbarDemos = navbar.sort(displayOrder)
           class="column is-4 has-text-centered"
         >
           <figure class="vuero-demo-wrapper loaded">
+            <span v-if="item.new" class="new-tag">New</span>
             <img
               class="light-image-block-l"
               :src="item.screenshot.light"

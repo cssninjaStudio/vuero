@@ -27,7 +27,7 @@ const props = defineProps({
         </div>
         <div class="popover-meta">
           <span class="stack-meta">
-            <span class="stackname">{{ stack.name }}</span>
+            <span class="stackname dark-inverted">{{ stack.name }}</span>
           </span>
           <span v-if="stack.subtitle" class="job-title mb-1">{{
             stack.subtitle

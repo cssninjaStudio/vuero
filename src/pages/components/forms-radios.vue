@@ -8,11 +8,11 @@ import { activeSidebar, toggleSidebar } from '/@src/state/activeSidebarState'
 const { markdownContainer, toc } = useMakrdownToc()
 
 onMounted(() => {
-  activeSidebar.value = 'elements'
+  activeSidebar.value = 'components'
 })
 
 useHead({
-  title: 'Radios - Forms Elements - Vuero',
+  title: 'Radios - Forms Components - Vuero',
 })
 </script>
 
@@ -22,7 +22,7 @@ useHead({
       <!-- Sidebar Trigger -->
       <div
         class="huro-hamburger nav-trigger push-resize"
-        @click="toggleSidebar('elements')"
+        @click="toggleSidebar('components')"
       >
         <span class="menu-toggle has-chevron">
           <span
@@ -65,7 +65,7 @@ useHead({
           },
           {
             label: 'Radios',
-            to: { name: 'elements-forms-radios' },
+            to: { name: 'components-forms-radios' },
           },
         ]"
       />

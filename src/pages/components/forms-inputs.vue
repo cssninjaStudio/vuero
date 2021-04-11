@@ -8,11 +8,11 @@ import { activeSidebar, toggleSidebar } from '/@src/state/activeSidebarState'
 const { markdownContainer, toc } = useMakrdownToc()
 
 onMounted(() => {
-  activeSidebar.value = 'elements'
+  activeSidebar.value = 'components'
 })
 
 useHead({
-  title: 'File Input - Forms Elements - Vuero',
+  title: 'Inputs - Forms Components - Vuero',
 })
 </script>
 
@@ -22,7 +22,7 @@ useHead({
       <!-- Sidebar Trigger -->
       <div
         class="huro-hamburger nav-trigger push-resize"
-        @click="toggleSidebar('elements')"
+        @click="toggleSidebar('components')"
       >
         <span class="menu-toggle has-chevron">
           <span
@@ -39,7 +39,7 @@ useHead({
       </div>
 
       <div class="title-wrap">
-        <h1 class="title is-4">File Input</h1>
+        <h1 class="title is-4">Inputs</h1>
       </div>
 
       <Toolbar />
@@ -64,8 +64,8 @@ useHead({
             label: 'Forms',
           },
           {
-            label: 'File Input',
-            to: { name: 'elements-forms-file' },
+            label: 'Inputs',
+            to: { name: 'components-forms-inputs' },
           },
         ]"
       />
@@ -76,18 +76,40 @@ useHead({
           :class="[toc.length > 0 ? 'is-9' : 'is-12']"
           class="column doc-column"
         >
-          <!--File input button-->
-          <FileBaseDocumentation />
+          <!--Input-->
+          <InputBasicDocumentation />
 
-          <!--File input boxed-->
-          <FileBoxedDocumentation />
+          <!--Help Text-->
+          <InputHelpDocumentation />
 
-          <!--File Left-->
-          <FileLeftDocumentation />
+          <!--Rounded Input-->
+          <InputRoundedDocumentation />
 
-          <!--File Right-->
-          <FileRightDocumentation />
+          <!--Focus Colors-->
+          <InputFocusDocumentation />
+
+          <!--Font Awesome-->
+          <InputFaDocumentation />
+
+          <!--Line Icons-->
+          <InputLineDocumentation />
+
+          <!--Feather Icons-->
+          <InputFeatherDocumentation />
+
+          <!--Loading State-->
+          <InputLoadingDocumentation />
+
+          <!--Disabled Input-->
+          <InputDisabledDocumentation />
+
+          <!--Validation-->
+          <InputValidationDocumentation />
+
+          <!--Validation rounded-->
+          <InputValidationRoundedDocumentation />
         </div>
+
         <div v-if="toc.length" class="column is-3 toc-column">
           <DocumentationToc :toc="toc" />
         </div>

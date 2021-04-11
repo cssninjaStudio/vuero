@@ -8,11 +8,11 @@ import { activeSidebar, toggleSidebar } from '/@src/state/activeSidebarState'
 const { markdownContainer, toc } = useMakrdownToc()
 
 onMounted(() => {
-  activeSidebar.value = 'elements'
+  activeSidebar.value = 'components'
 })
 
 useHead({
-  title: 'Textarea - Forms Elements - Vuero',
+  title: 'Input Addons - Forms Components - Vuero',
 })
 </script>
 
@@ -22,7 +22,7 @@ useHead({
       <!-- Sidebar Trigger -->
       <div
         class="huro-hamburger nav-trigger push-resize"
-        @click="toggleSidebar('elements')"
+        @click="toggleSidebar('components')"
       >
         <span class="menu-toggle has-chevron">
           <span
@@ -39,7 +39,7 @@ useHead({
       </div>
 
       <div class="title-wrap">
-        <h1 class="title is-4">Textarea</h1>
+        <h1 class="title is-4">Input Addons</h1>
       </div>
 
       <Toolbar />
@@ -64,8 +64,8 @@ useHead({
             label: 'Forms',
           },
           {
-            label: 'Textarea',
-            to: { name: 'elements-forms-textarea' },
+            label: 'Input Addons',
+            to: { name: 'components-forms-addons' },
           },
         ]"
       />
@@ -76,20 +76,20 @@ useHead({
           :class="[toc.length > 0 ? 'is-9' : 'is-12']"
           class="column doc-column"
         >
-          <!--Textarea-->
-          <TextareaBaseDocumentation />
+          <!--End Addon-->
+          <AddonEndDocumentation />
 
-          <!--Textarea Focus-->
-          <TextareaFocusDocumentation />
+          <!--Start Addon-->
+          <AddonStartDocumentation />
 
-          <!--Textarea loading-->
-          <TextareaLoadingDocumentation />
+          <!--Addon Colors-->
+          <AddonColorsDocumentation />
 
-          <!--Textarea disabled-->
-          <TextareaDisabledDocumentation />
+          <!--Rounded Addons-->
+          <AddonRoundedDocumentation />
 
-          <!--Textarea Addon-->
-          <TextareaAddonDocumentation />
+          <!--Bi Directional-->
+          <AddonDirectionalDocumentation />
         </div>
         <div v-if="toc.length" class="column is-3 toc-column">
           <DocumentationToc :toc="toc" />

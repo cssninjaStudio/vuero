@@ -9,7 +9,6 @@ width=368
 height=206
 
 for layout in sidebar auth minimal navbar templates; do
-  # do something like: echo $databaseName
   echo "${layout}"
 
   rm -rf "${output}${layout}/"

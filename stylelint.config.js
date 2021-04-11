@@ -7,6 +7,7 @@ module.exports = {
     'at-rule-no-unknown': null,
     'no-descending-specificity': null, // TODO
     'no-duplicate-selectors': null, // TODO
+    'function-name-case': null, // bulma
     'selector-pseudo-element-no-unknown': [
       true,
       {

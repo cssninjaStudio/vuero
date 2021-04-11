@@ -30,6 +30,10 @@ const props = defineProps({
     type: Boolean,
     default: false,
   },
+  subcontrol: {
+    type: Boolean,
+    default: false,
+  },
 })
 
 const isIconify = computed(() => {
@@ -48,6 +52,7 @@ const isIconify = computed(() => {
       textaddon && 'is-textarea-addon',
       isValid && 'has-validation has-success',
       hasError && 'has-validation has-error',
+      subcontrol && 'subcontrol',
     ]"
   >
     <slot></slot>

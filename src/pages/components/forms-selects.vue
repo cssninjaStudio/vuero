@@ -5,14 +5,14 @@ import { onMounted } from 'vue'
 import useMakrdownToc from '/@src/composable/useMarkdownToc'
 import { activeSidebar, toggleSidebar } from '/@src/state/activeSidebarState'
 
-const { markdownContainer, toc } = useMakrdownToc()
-
 onMounted(() => {
-  activeSidebar.value = 'elements'
+  activeSidebar.value = 'components'
 })
 
+const { markdownContainer, toc } = useMakrdownToc()
+
 useHead({
-  title: 'Inputs - Forms Elements - Vuero',
+  title: 'Selects - Forms Components - Vuero',
 })
 </script>
 
@@ -22,7 +22,7 @@ useHead({
       <!-- Sidebar Trigger -->
       <div
         class="huro-hamburger nav-trigger push-resize"
-        @click="toggleSidebar('elements')"
+        @click="toggleSidebar('components')"
       >
         <span class="menu-toggle has-chevron">
           <span
@@ -39,7 +39,7 @@ useHead({
       </div>
 
       <div class="title-wrap">
-        <h1 class="title is-4">Inputs</h1>
+        <h1 class="title is-4">Selects</h1>
       </div>
 
       <Toolbar />
@@ -64,8 +64,8 @@ useHead({
             label: 'Forms',
           },
           {
-            label: 'Inputs',
-            to: { name: 'elements-forms-inputs' },
+            label: 'Selects',
+            to: { name: 'components-forms-selects' },
           },
         ]"
       />
@@ -76,40 +76,24 @@ useHead({
           :class="[toc.length > 0 ? 'is-9' : 'is-12']"
           class="column doc-column"
         >
-          <!--Input-->
-          <InputBasicDocumentation />
+          <!--Select-->
+          <SelectBaseDocumentation />
 
-          <!--Help Text-->
-          <InputHelpDocumentation />
-
-          <!--Rounded Input-->
-          <InputRoundedDocumentation />
-
-          <!--Focus Colors-->
-          <InputFocusDocumentation />
+          <!--Rounded Select-->
+          <SelectRoundedDocumentation />
 
           <!--Font Awesome-->
-          <InputFaDocumentation />
+          <SelectFaDocumentation />
 
           <!--Line Icons-->
-          <InputLineDocumentation />
+          <SelectLineDocumentation />
 
           <!--Feather Icons-->
-          <InputFeatherDocumentation />
+          <SelectFeatherDocumentation />
 
-          <!--Loading State-->
-          <InputLoadingDocumentation />
-
-          <!--Disabled Input-->
-          <InputDisabledDocumentation />
-
-          <!--Validation-->
-          <InputValidationDocumentation />
-
-          <!--Validation rounded-->
-          <InputValidationRoundedDocumentation />
+          <!--Loading-->
+          <SelectLoadingDocumentation />
         </div>
-
         <div v-if="toc.length" class="column is-3 toc-column">
           <DocumentationToc :toc="toc" />
         </div>

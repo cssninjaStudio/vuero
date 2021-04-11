@@ -120,7 +120,7 @@ $calendar-date-padding: 0.1rem 0 !default;
 @mixin datepicker-nav {
   .datepicker-nav {
     background: $calendar-selection-background-color;
-    color: findcolorinvert($calendar-selection-background-color);
+    color: findColorInvert($calendar-selection-background-color);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -134,7 +134,7 @@ $calendar-date-padding: 0.1rem 0 !default;
     .datepicker-nav-year {
       text-decoration: none;
       font-size: $size-6;
-      color: findcolorinvert($primary);
+      color: findColorInvert($primary);
       &:hover {
         cursor: pointer;
       }
@@ -193,7 +193,7 @@ $calendar-date-padding: 0.1rem 0 !default;
       justify-content: space-around;
       padding: $calendar-selection-padding;
       background: $calendar-days-background-color;
-      color: findcolorinvert($calendar-days-background-color);
+      color: findColorInvert($calendar-days-background-color);
       font-size: $size-7;
       .datepicker-date {
         background: $calendar-days-background-color !important;
@@ -245,23 +245,23 @@ $calendar-date-padding: 0.1rem 0 !default;
             &:focus {
               background: $calendar-date-hover-background-color;
               border-color: $calendar-date-hover-background-color;
-              color: findcolorinvert($calendar-date-hover-background-color);
+              color: findColorInvert($calendar-date-hover-background-color);
               text-decoration: none;
             }
             &.is-active {
               background: $primary;
               border-color: $primary;
               border-radius: 25091983px;
-              color: findcolorinvert($primary);
+              color: findColorInvert($primary);
               &.is-today {
-                border-color: findcolorinvert($primary) !important;
-                color: findcolorinvert($primary) !important;
+                border-color: findColorInvert($primary) !important;
+                color: findColorInvert($primary) !important;
               }
             }
             &:hover {
               background: $calendar-date-hover-background-color;
               border: $calendar-date-hover-border;
-              color: findcolorinvert($calendar-date-hover-background-color);
+              color: findColorInvert($calendar-date-hover-background-color);
               text-decoration: none;
             }
           }
@@ -286,7 +286,7 @@ $calendar-date-padding: 0.1rem 0 !default;
             &.datepicker-range-start,
             &.datepicker-range-end {
               .date-item {
-                background: findcolorinvert($primary);
+                background: findColorInvert($primary);
                 border: 0.1rem solid $primary;
                 color: $primary;
                 box-shadow: 0 0.2rem 0.2rem rgba(10, 10, 10, 0.1);
@@ -302,10 +302,10 @@ $calendar-date-padding: 0.1rem 0 !default;
             }
             .date-item {
               background-color: $primary;
-              color: findcolorinvert($primary);
+              color: findColorInvert($primary);
               &.is-today {
-                border-color: findcolorinvert($primary) !important;
-                color: findcolorinvert($primary) !important;
+                border-color: findColorInvert($primary) !important;
+                color: findColorInvert($primary) !important;
               }
             }
           }
@@ -336,13 +336,13 @@ $calendar-date-padding: 0.1rem 0 !default;
         &.is-active {
           background: $primary;
           border-color: $primary;
-          color: findcolorinvert($primary);
+          color: findColorInvert($primary);
         }
         &:hover {
           cursor: pointer;
           background: $calendar-date-hover-background-color;
           border: $calendar-date-hover-border;
-          color: findcolorinvert($calendar-date-hover-background-color);
+          color: findColorInvert($calendar-date-hover-background-color);
         }
       }
     }
@@ -539,7 +539,7 @@ $calendar-date-padding: 0.1rem 0 !default;
   }
   @each $name, $value in $shades {
     $color: $value;
-    $color-invert: findcolorinvert($color);
+    $color-invert: findColorInvert($color);
     &.is-#{$name} {
       .datetimepicker-header {
         .datetimepicker-selection-day {
@@ -666,7 +666,7 @@ $calendar-date-padding: 0.1rem 0 !default;
 .datetimepicker-dummy {
   @each $name, $pair in $colors {
     $color: nth($pair, 1);
-    $color-invert: findcolorinvert($color);
+    $color-invert: findColorInvert($color);
     &.is-#{$name} {
       &::before,
       &::before {
@@ -679,7 +679,7 @@ $calendar-date-padding: 0.1rem 0 !default;
   }
   @each $name, $value in $shades {
     $color: $value;
-    $color-invert: findcolorinvert($color);
+    $color-invert: findColorInvert($color);
     &.is-#{$name} {
       &::before,
       &::before {

@@ -186,6 +186,15 @@ import { activeSidebar } from '/@src/state/activeSidebarState'
                 <span>Form Layout V4</span>
               </RouterLink>
             </li>
+            <li>
+              <RouterLink
+                :to="{ name: 'sidebar-layouts-form-layouts-5' }"
+                class="is-submenu"
+              >
+                <i class="lnil lnil-passport"></i>
+                <span>Form Layout V5</span>
+              </RouterLink>
+            </li>
           </ul>
         </li>
         <li class="divider"></li>

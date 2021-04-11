@@ -141,6 +141,88 @@ import { activeSidebar } from '/@src/state/activeSidebarState'
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
             <a class="parent-link"
+              >Forms <i class="iconify" data-icon="feather:chevron-right"
+            /></a>
+          </div>
+          <ul>
+            <li>
+              <RouterLink
+                :to="{ name: 'components-forms-inputs' }"
+                class="is-submenu"
+                ><i class="iconify" data-icon="feather:circle"></i
+                >Inputs</RouterLink
+              >
+            </li>
+            <li>
+              <RouterLink
+                :to="{ name: 'components-forms-addons' }"
+                class="is-submenu"
+                ><i class="iconify" data-icon="feather:circle"></i>Input
+                Addons</RouterLink
+              >
+            </li>
+            <li>
+              <RouterLink
+                :to="{ name: 'components-forms-textarea' }"
+                class="is-submenu"
+                ><i class="iconify" data-icon="feather:circle"></i
+                >Textarea</RouterLink
+              >
+            </li>
+            <li>
+              <RouterLink
+                :to="{ name: 'components-forms-selects' }"
+                class="is-submenu"
+                ><i class="iconify" data-icon="feather:circle"></i
+                >Selects</RouterLink
+              >
+            </li>
+            <li>
+              <RouterLink
+                :to="{ name: 'components-forms-file' }"
+                class="is-submenu"
+                ><i class="iconify" data-icon="feather:circle"></i>File
+                Input</RouterLink
+              >
+            </li>
+          </ul>
+        </li>
+        <li v-has-nested-router-link class="has-children">
+          <div class="collapse-wrap">
+            <a class="parent-link"
+              >Toggles <i class="iconify" data-icon="feather:chevron-right"
+            /></a>
+          </div>
+          <ul>
+            <li>
+              <RouterLink
+                :to="{ name: 'components-forms-checkboxes' }"
+                class="is-submenu"
+                ><i class="iconify" data-icon="feather:circle"></i
+                >Checkboxes</RouterLink
+              >
+            </li>
+            <li>
+              <RouterLink
+                :to="{ name: 'components-forms-radios' }"
+                class="is-submenu"
+                ><i class="iconify" data-icon="feather:circle"></i
+                >Radios</RouterLink
+              >
+            </li>
+            <li>
+              <RouterLink
+                :to="{ name: 'components-forms-switch' }"
+                class="is-submenu"
+                ><i class="iconify" data-icon="feather:circle"></i
+                >Switches</RouterLink
+              >
+            </li>
+          </ul>
+        </li>
+        <li v-has-nested-router-link class="has-children">
+          <div class="collapse-wrap">
+            <a class="parent-link"
               >Plugins <i class="iconify" data-icon="feather:chevron-right"
             /></a>
           </div>

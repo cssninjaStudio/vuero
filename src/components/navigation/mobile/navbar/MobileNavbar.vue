@@ -7,7 +7,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
 
 <template>
   <nav
-    class="navbar mobile-navbar no-shadow is-hidden-desktop is-hidden-tablet"
+    class="navbar mobile-navbar is-hidden-desktop is-hidden-tablet"
     aria-label="main navigation"
   >
     <div class="container">

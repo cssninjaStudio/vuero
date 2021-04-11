@@ -1,0 +1,75 @@
+<script lang="ts">
+let instances = 0
+</script>
+
+<script setup lang="ts">
+import type { PropType } from 'vue'
+import { defineProps, defineEmit } from 'vue'
+
+type SwitchSegmentColor =
+  | undefined
+  | 'primary'
+  | 'info'
+  | 'success'
+  | 'warning'
+  | 'danger'
+
+const blockSwitchId = `segment-switch-${++instances}`
+const props = defineProps({
+  modelValue: {
+    type: Boolean,
+    default: false,
+  },
+  labelTrue: {
+    type: String,
+    default: '',
+  },
+  labelFalse: {
+    type: String,
+    default: '',
+  },
+  color: {
+    type: String as PropType<SwitchSegmentColor>,
+    default: undefined,
+    validator: function (value: SwitchSegmentColor) {
+      // The value must match one of these strings
+      if (
+        [undefined, 'primary', 'info', 'success', 'warning', 'danger'].indexOf(
+          value
+        ) === -1
+      ) {
+        console.warn(
+          `V-SwitchSegment: invalid "${value}" color. Should be primary, info, success, warning, danger or undefined`
+        )
+        return false
+      }
+
+      return true
+    },
+  },
+})
+
+const emit = defineEmit(['update:modelValue'])
+</script>
+
+<template inherit-attrs="false">
+  <div class="switch-segment">
+    <label class="is-label" :for="blockSwitchId">{{ labelFalse }}</label>
+    <label
+      :for="blockSwitchId"
+      class="form-switch"
+      :class="[color && `is-${color}`]"
+    >
+      <input
+        :id="blockSwitchId"
+        :checked="modelValue"
+        v-bind="$attrs"
+        type="checkbox"
+        class="is-switch"
+        @change="emit('update:modelValue', !modelValue)"
+      />
+      <i></i>
+    </label>
+    <label class="is-label" :for="blockSwitchId">{{ labelTrue }}</label>
+  </div>
+</template>

@@ -16,6 +16,7 @@ type Route = {
   path: string
   category: string
   displayOrder: number
+  new?: boolean
 }
 
 function writeData(filename: string, raw: any) {
@@ -44,6 +45,7 @@ function generateData(routes: Route[], prefix: string) {
       name: route.name,
       category: route.category,
       displayOrder: route.displayOrder,
+      new: !!route.new,
       route: {
         name: routeName.replace(/-$/, ''),
         path: route.path,

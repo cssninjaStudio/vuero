@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 import { activeSubnav } from '/@src/state/navbarState'
 
-type TabId = 'components' | 'plugins'
+type TabId = 'components' | 'forms' | 'plugins'
 const activeTab = ref<TabId>('components')
 </script>
 
@@ -17,6 +17,9 @@ const activeTab = ref<TabId>('components')
         <ul>
           <li :class="[activeTab === 'components' && 'is-active']">
             <a @click="activeTab = 'components'">UI Components</a>
+          </li>
+          <li :class="[activeTab === 'forms' && 'is-active']">
+            <a @click="activeTab = 'forms'">Form Controls</a>
           </li>
           <li :class="[activeTab === 'plugins' && 'is-active']">
             <a @click="activeTab = 'plugins'">JS Plugins</a>
@@ -169,6 +172,113 @@ const activeTab = ref<TabId>('components')
                     </RouterLink>
                   </li>
                 </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="components-forms-pages-tab"
+        class="tab-content"
+        :class="[activeTab === 'forms' && 'is-active']"
+      >
+        <div class="tab-content-inner">
+          <div class="center has-slimscroll">
+            <div class="columns">
+              <div class="column is-3">
+                <h4 class="column-heading">Input</h4>
+                <ul>
+                  <li>
+                    <RouterLink :to="{ name: 'components-forms-inputs' }">
+                      <span>Inputs</span>
+                      <i class="iconify" data-icon="feather:circle"></i>
+                    </RouterLink>
+                  </li>
+                  <li>
+                    <RouterLink :to="{ name: 'components-forms-addons' }">
+                      <span>Input Addons</span>
+                      <i class="iconify" data-icon="feather:circle"></i>
+                    </RouterLink>
+                  </li>
+                  <li>
+                    <RouterLink :to="{ name: 'components-forms-textarea' }">
+                      <span>Textarea</span>
+                      <i class="iconify" data-icon="feather:circle"></i>
+                    </RouterLink>
+                  </li>
+                </ul>
+              </div>
+              <div class="column is-3">
+                <h4 class="column-heading">Selects</h4>
+                <ul>
+                  <li>
+                    <RouterLink :to="{ name: 'components-forms-selects' }">
+                      <span>Regular</span>
+                      <i class="iconify" data-icon="feather:circle"></i>
+                    </RouterLink>
+                  </li>
+                  <li>
+                    <RouterLink :to="{ name: 'components-forms-file' }">
+                      <span>File Input</span>
+                      <i class="iconify" data-icon="feather:circle"></i>
+                    </RouterLink>
+                  </li>
+                </ul>
+              </div>
+              <div class="column is-3">
+                <h4 class="column-heading">Toggles</h4>
+                <ul>
+                  <li>
+                    <RouterLink :to="{ name: 'components-forms-checkboxes' }">
+                      <span>Checkboxes</span>
+                      <i class="iconify" data-icon="feather:circle"></i>
+                    </RouterLink>
+                  </li>
+                  <li>
+                    <RouterLink :to="{ name: 'components-forms-radios' }">
+                      <span>Radio Buttons</span>
+                      <i class="iconify" data-icon="feather:circle"></i>
+                    </RouterLink>
+                  </li>
+                  <li>
+                    <RouterLink :to="{ name: 'components-forms-switch' }">
+                      <span>Switches</span>
+                      <i class="iconify" data-icon="feather:circle"></i>
+                    </RouterLink>
+                  </li>
+                </ul>
+              </div>
+              <div class="column is-3">
+                <a href="https://cssninja.io" class="column-placeholder">
+                  <img
+                    class="light-image"
+                    src="/images/icons/misc/buoy.svg"
+                    alt=""
+                  />
+                  <img
+                    class="dark-image"
+                    src="/images/icons/misc/buoy-dark.svg"
+                    alt=""
+                  />
+                  <h3>Support</h3>
+                </a>
+                <a
+                  href="https://docs.huro.cssninja.io"
+                  class="column-placeholder"
+                >
+                  <img
+                    class="light-image"
+                    src="/images/icons/misc/docs.svg"
+                    alt=""
+                  />
+                  <img
+                    class="dark-image"
+                    src="/images/icons/misc/docs-dark.svg"
+                    alt=""
+                  />
+                  <h3>Documentation</h3>
+                </a>
               </div>
             </div>
           </div>

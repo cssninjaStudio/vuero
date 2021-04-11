@@ -5,14 +5,14 @@ import { onMounted } from 'vue'
 import useMakrdownToc from '/@src/composable/useMarkdownToc'
 import { activeSidebar, toggleSidebar } from '/@src/state/activeSidebarState'
 
-onMounted(() => {
-  activeSidebar.value = 'elements'
-})
-
 const { markdownContainer, toc } = useMakrdownToc()
 
+onMounted(() => {
+  activeSidebar.value = 'components'
+})
+
 useHead({
-  title: 'Selects - Forms Elements - Vuero',
+  title: 'File Input - Forms Components - Vuero',
 })
 </script>
 
@@ -22,7 +22,7 @@ useHead({
       <!-- Sidebar Trigger -->
       <div
         class="huro-hamburger nav-trigger push-resize"
-        @click="toggleSidebar('elements')"
+        @click="toggleSidebar('components')"
       >
         <span class="menu-toggle has-chevron">
           <span
@@ -39,7 +39,7 @@ useHead({
       </div>
 
       <div class="title-wrap">
-        <h1 class="title is-4">Selects</h1>
+        <h1 class="title is-4">File Input</h1>
       </div>
 
       <Toolbar />
@@ -64,8 +64,8 @@ useHead({
             label: 'Forms',
           },
           {
-            label: 'Selects',
-            to: { name: 'elements-forms-selects' },
+            label: 'File Input',
+            to: { name: 'components-forms-file' },
           },
         ]"
       />
@@ -76,23 +76,17 @@ useHead({
           :class="[toc.length > 0 ? 'is-9' : 'is-12']"
           class="column doc-column"
         >
-          <!--Select-->
-          <SelectBaseDocumentation />
+          <!--File input button-->
+          <FileBaseDocumentation />
 
-          <!--Rounded Select-->
-          <SelectRoundedDocumentation />
+          <!--File input boxed-->
+          <FileBoxedDocumentation />
 
-          <!--Font Awesome-->
-          <SelectFaDocumentation />
+          <!--File Left-->
+          <FileLeftDocumentation />
 
-          <!--Line Icons-->
-          <SelectLineDocumentation />
-
-          <!--Feather Icons-->
-          <SelectFeatherDocumentation />
-
-          <!--Loading-->
-          <SelectLoadingDocumentation />
+          <!--File Right-->
+          <FileRightDocumentation />
         </div>
         <div v-if="toc.length" class="column is-3 toc-column">
           <DocumentationToc :toc="toc" />

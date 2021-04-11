@@ -36,6 +36,7 @@
     "@vueform/slider": "1.0.3",
     "@vueuse/core": "4.6.2",
     "@vueuse/head": "0.5.1",
+    "@vueuse/motion": "^1.5.4",
     "apexcharts": "3.26.0",
     "axios": "0.21.1",
     "billboard.js": "3.0.1",

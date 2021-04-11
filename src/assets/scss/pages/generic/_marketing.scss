@@ -171,43 +171,41 @@ Marketing Layouts
   }
 }
 
-.landing-page-wrapper {
-  &.is-dark {
-    .marketing-hero {
-      &.is-left,
-      &.is-right,
-      &.is-centered {
-        background: darken($landing-dark-1, 2%);
+.is-dark {
+  .marketing-hero {
+    &.is-left,
+    &.is-right,
+    &.is-centered {
+      background: darken($landing-dark-1, 2%);
 
-        .hexagon {
-          opacity: 0.3;
+      .hexagon {
+        opacity: 0.3;
+      }
+
+      .hero-body {
+        .hero-mockup {
+          border-color: lighten($landing-dark-1, 8%);
         }
 
-        .hero-body {
-          .hero-mockup {
-            border-color: lighten($landing-dark-1, 8%);
-          }
+        .buttons {
+          .button {
+            &:not(.is-outlined) {
+              background: $accent !important;
+              border-color: $accent !important;
 
-          .buttons {
-            .button {
-              &:not(.is-outlined) {
-                background: $accent !important;
-                border-color: $accent !important;
-
-                &:hover {
-                  box-shadow: $accent-box-shadow !important;
-                }
+              &:hover {
+                box-shadow: $accent-box-shadow !important;
               }
+            }
 
-              &.is-outlined {
-                color: $accent !important;
-                border-color: $accent !important;
+            &.is-outlined {
+              color: $accent !important;
+              border-color: $accent !important;
 
-                &:hover {
-                  background: $accent !important;
-                  color: $white !important;
-                  box-shadow: $accent-box-shadow !important;
-                }
+              &:hover {
+                background: $accent !important;
+                color: $white !important;
+                box-shadow: $accent-box-shadow !important;
               }
             }
           }
@@ -280,37 +278,35 @@ Marketing Layouts
   }
 }
 
-.landing-page-wrapper {
-  &.is-dark {
-    .centered-mockup-wrapper {
-      .title {
-        color: $white !important;
-      }
+.is-dark {
+  .centered-mockup-wrapper {
+    .title {
+      color: $white !important;
+    }
+  }
+
+  .video-section {
+    .title {
+      color: $white !important;
     }
 
-    .video-section {
-      .title {
-        color: $white !important;
-      }
+    .video-player-container {
+      &.reversed-play {
+        .plyr--full-ui.plyr--video .plyr__control--overlaid {
+          border-color: $accent !important;
+          color: $accent !important;
 
-      .video-player-container {
-        &.reversed-play {
-          .plyr--full-ui.plyr--video .plyr__control--overlaid {
-            border-color: $accent !important;
-            color: $accent !important;
-
-            &:hover {
-              background: $accent !important;
-
-              svg {
-                stroke: $white !important;
-                fill: $white !important;
-              }
-            }
+          &:hover {
+            background: $accent !important;
 
             svg {
-              stroke: $accent !important;
+              stroke: $white !important;
+              fill: $white !important;
             }
+          }
+
+          svg {
+            stroke: $accent !important;
           }
         }
       }
@@ -442,45 +438,43 @@ Marketing Layouts
   }
 }
 
-.landing-page-wrapper {
-  &.is-dark {
-    .pricing-wrapper {
-      .pricing-plan {
+.is-dark {
+  .pricing-wrapper {
+    .pricing-plan {
+      border-color: lighten($landing-dark-1, 12%);
+      background: lighten($landing-dark-1, 6%);
+
+      &.is-featured {
+        border-color: $accent;
+
+        &::before {
+          border-color: $accent transparent transparent transparent;
+        }
+      }
+
+      .name {
+        color: $dark-dark-text;
+      }
+
+      .price {
+        color: $white;
+      }
+
+      .trial {
+        color: $accent;
         border-color: lighten($landing-dark-1, 12%);
-        background: lighten($landing-dark-1, 6%);
+        background: lighten($landing-dark-1, 2%);
+      }
 
-        &.is-featured {
-          border-color: $accent;
+      hr {
+        background: lighten($landing-dark-1, 12%);
+      }
 
-          &::before {
-            border-color: $accent transparent transparent transparent;
-          }
-        }
+      li {
+        color: $light-text;
 
-        .name {
-          color: $dark-dark-text;
-        }
-
-        .price {
+        strong {
           color: $white;
-        }
-
-        .trial {
-          color: $accent;
-          border-color: lighten($landing-dark-1, 12%);
-          background: lighten($landing-dark-1, 2%);
-        }
-
-        hr {
-          background: lighten($landing-dark-1, 12%);
-        }
-
-        li {
-          color: $light-text;
-
-          strong {
-            color: $white;
-          }
         }
       }
     }
@@ -501,25 +495,23 @@ Marketing Layouts
     box-shadow: $light-box-shadow;
   }
 
-  .h-icon {
+  .v-icon {
     margin-bottom: 0.75rem;
   }
 }
 
-.landing-page-wrapper {
-  &.is-dark {
-    .card-icon-box {
-      border-color: lighten($landing-dark-1, 12%);
-      background: lighten($landing-dark-1, 4%);
+.is-dark {
+  .card-icon-box {
+    border-color: lighten($landing-dark-1, 12%);
+    background: lighten($landing-dark-1, 4%);
 
-      .h-icon {
-        background: transparent;
-        border: 2px solid lighten($landing-dark-1, 12%);
-      }
+    .v-icon {
+      background: transparent;
+      border: 2px solid lighten($landing-dark-1, 12%);
+    }
 
-      .title {
-        color: $white;
-      }
+    .title {
+      color: $white;
     }
   }
 }
@@ -535,22 +527,16 @@ Marketing Layouts
   background-position: 0 0, 0 0;
 }
 
-.landing-page-wrapper {
-  &.is-dark {
-    .has-bg-dots {
-      background-image: radial-gradient(
-          circle,
-          lighten($landing-dark-1, 4%) 10%,
-          transparent 15%
-        ),
-        radial-gradient(
-          circle,
-          lighten($landing-dark-1, 4%) 10%,
-          transparent 15%
-        );
-      background-size: 50px 50px;
-      background-position: 0 0, 0 0;
-    }
+.is-dark {
+  .has-bg-dots {
+    background-image: radial-gradient(
+        circle,
+        lighten($landing-dark-1, 4%) 10%,
+        transparent 15%
+      ),
+      radial-gradient(circle, lighten($landing-dark-1, 4%) 10%, transparent 15%);
+    background-size: 50px 50px;
+    background-position: 0 0, 0 0;
   }
 }
 
@@ -666,38 +652,38 @@ Marketing Layouts
 
     .title,
     .subtitle {
-      color: $white;
+      color: $white !important;
     }
 
     .subtitle {
       opacity: 0.8;
     }
 
-    .h-button {
+    .v-button {
       min-height: 44px;
       min-width: 190px;
       font-weight: 600;
-      color: $primary;
+      color: $primary !important;
+      background-color: #fff !important;
+      border-color: $primary !important;
     }
   }
 }
 
-.landing-page-wrapper {
-  &.is-dark {
-    .boxed-cta {
-      background: $accent;
-      box-shadow: $accent-box-shadow;
+.is-dark {
+  .boxed-cta {
+    background: $accent;
+    box-shadow: $accent-box-shadow;
 
-      .v-avatar {
-        .avatar {
-          border-color: lighten($accent, 8%);
-        }
+    .v-avatar {
+      .avatar {
+        border-color: lighten($accent, 8%);
       }
+    }
 
-      .boxed-cta-content {
-        .h-button {
-          color: $accent;
-        }
+    .boxed-cta-content {
+      .v-button {
+        color: $accent;
       }
     }
   }

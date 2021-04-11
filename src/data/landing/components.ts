@@ -121,7 +121,7 @@ export const elements = [
 export const forms = [
   {
     id: 1,
-    link: 'elements-forms-inputs',
+    link: 'components-forms-inputs',
     name: 'Inputs',
     media: {
       light: '/images/icons/components/inputs.svg',
@@ -130,7 +130,7 @@ export const forms = [
   },
   {
     id: 2,
-    link: 'elements-forms-addons',
+    link: 'components-forms-addons',
     name: 'Input Addons',
     media: {
       light: '/images/icons/components/inputs-addons.svg',
@@ -139,7 +139,7 @@ export const forms = [
   },
   {
     id: 3,
-    link: 'elements-forms-textarea',
+    link: 'components-forms-textarea',
     name: 'Textarea',
     media: {
       light: '/images/icons/components/textarea.svg',
@@ -148,7 +148,7 @@ export const forms = [
   },
   {
     id: 4,
-    link: 'elements-forms-selects',
+    link: 'components-forms-selects',
     name: 'Select',
     media: {
       light: '/images/icons/components/selects.svg',
@@ -157,7 +157,7 @@ export const forms = [
   },
   {
     id: 5,
-    link: 'elements-forms-file',
+    link: 'components-forms-file',
     name: 'File Input',
     media: {
       light: '/images/icons/components/file-input.svg',
@@ -166,7 +166,7 @@ export const forms = [
   },
   {
     id: 6,
-    link: 'elements-forms-checkboxes',
+    link: 'components-forms-checkboxes',
     name: 'Checkboxes',
     media: {
       light: '/images/icons/components/toggles.svg',
@@ -175,7 +175,7 @@ export const forms = [
   },
   {
     id: 7,
-    link: 'elements-forms-radios',
+    link: 'components-forms-radios',
     name: 'Radio Buttons',
     media: {
       light: '/images/icons/components/toggles.svg',
@@ -184,7 +184,7 @@ export const forms = [
   },
   {
     id: 8,
-    link: 'elements-forms-switch',
+    link: 'components-forms-switch',
     name: 'Switch',
     media: {
       light: '/images/icons/components/switch.svg',

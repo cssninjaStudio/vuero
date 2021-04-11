@@ -12,7 +12,7 @@
   .tag {
     &.is-active {
       background-color: $primary;
-      color: findcolorinvert($primary);
+      color: findColorInvert($primary);
     }
   }
 }

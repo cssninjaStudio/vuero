@@ -5,14 +5,14 @@ import { onMounted } from 'vue'
 import useMakrdownToc from '/@src/composable/useMarkdownToc'
 import { activeSidebar, toggleSidebar } from '/@src/state/activeSidebarState'
 
-onMounted(() => {
-  activeSidebar.value = 'elements'
-})
-
 const { markdownContainer, toc } = useMakrdownToc()
 
+onMounted(() => {
+  activeSidebar.value = 'components'
+})
+
 useHead({
-  title: 'Checkboxes - Forms Elements - Vuero',
+  title: 'Textarea - Forms Components - Vuero',
 })
 </script>
 
@@ -22,7 +22,7 @@ useHead({
       <!-- Sidebar Trigger -->
       <div
         class="huro-hamburger nav-trigger push-resize"
-        @click="toggleSidebar('elements')"
+        @click="toggleSidebar('components')"
       >
         <span class="menu-toggle has-chevron">
           <span
@@ -39,7 +39,7 @@ useHead({
       </div>
 
       <div class="title-wrap">
-        <h1 class="title is-4">Checkboxes</h1>
+        <h1 class="title is-4">Textarea</h1>
       </div>
 
       <Toolbar />
@@ -64,8 +64,8 @@ useHead({
             label: 'Forms',
           },
           {
-            label: 'Checkboxes',
-            to: { name: 'elements-forms-checkboxes' },
+            label: 'Textarea',
+            to: { name: 'components-forms-textarea' },
           },
         ]"
       />
@@ -76,17 +76,20 @@ useHead({
           :class="[toc.length > 0 ? 'is-9' : 'is-12']"
           class="column doc-column"
         >
-          <!--Checkbox outlined-->
-          <CheckboxOutlinedDocumentation />
+          <!--Textarea-->
+          <TextareaBaseDocumentation />
 
-          <!--Checkbox outlined circle-->
-          <CheckboxOutlinedCircleDocumentation />
+          <!--Textarea Focus-->
+          <TextareaFocusDocumentation />
 
-          <!--Checkbox solid-->
-          <CheckboxSolidDocumentation />
+          <!--Textarea loading-->
+          <TextareaLoadingDocumentation />
 
-          <!--Checkbox solid circle-->
-          <CheckboxSolidCircleDocumentation />
+          <!--Textarea disabled-->
+          <TextareaDisabledDocumentation />
+
+          <!--Textarea Addon-->
+          <TextareaAddonDocumentation />
         </div>
         <div v-if="toc.length" class="column is-3 toc-column">
           <DocumentationToc :toc="toc" />

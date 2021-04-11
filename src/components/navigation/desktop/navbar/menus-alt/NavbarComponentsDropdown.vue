@@ -36,7 +36,11 @@ const selectedCategory = ref('')
           <div class="category-selector-inner">
             <div class="category-item" @click="selectedCategory = 'base'">
               <i class="lnil lnil-laptop-alt-switch"></i>
-              <span>UI Elements</span>
+              <span>UI components</span>
+            </div>
+            <div class="category-item" @click="selectedCategory = 'forms'">
+              <i class="lnil lnil-laptop-alt-switch"></i>
+              <span>Forms components</span>
             </div>
             <div class="category-item" @click="selectedCategory = 'plugins'">
               <i class="lnil lnil-plug"></i>
@@ -459,6 +463,139 @@ const selectedCategory = ref('')
                     </div>
                     <div class="meta">
                       <span>CKEditor</span>
+                    </div>
+                  </RouterLink>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            id="components-forms-menu"
+            :class="[selectedCategory === 'forms' && 'is-active']"
+            class="columns is-gapless mega-menus"
+          >
+            <!--Column-->
+            <div class="column is-4">
+              <div class="dropdown-item-group">
+                <h4 class="column-heading is-purple">
+                  <i class="iconify" data-icon="feather:circle"></i>
+                  <span>Inputs</span>
+                </h4>
+
+                <div class="column-content">
+                  <RouterLink
+                    :to="{ name: 'components-forms-inputs' }"
+                    class="dropdown-item is-media"
+                  >
+                    <div class="icon">
+                      <i class="lnil lnil-font"></i>
+                    </div>
+                    <div class="meta">
+                      <span>Inputs</span>
+                    </div>
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'components-forms-addons' }"
+                    class="dropdown-item is-media"
+                  >
+                    <div class="icon">
+                      <i class="lnil lnil-font"></i>
+                    </div>
+                    <div class="meta">
+                      <span>Input Addons</span>
+                    </div>
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'components-forms-textarea' }"
+                    class="dropdown-item is-media"
+                  >
+                    <div class="icon">
+                      <i class="lnil lnil-font"></i>
+                    </div>
+                    <div class="meta">
+                      <span>Textarea</span>
+                    </div>
+                  </RouterLink>
+                </div>
+              </div>
+            </div>
+
+            <!--Column-->
+            <div class="column is-4">
+              <div class="dropdown-item-group">
+                <h4 class="column-heading is-secondary">
+                  <i class="iconify" data-icon="feather:circle"></i>
+                  <span>Selects</span>
+                </h4>
+
+                <div class="column-content">
+                  <RouterLink
+                    :to="{ name: 'components-forms-selects' }"
+                    class="dropdown-item is-media"
+                  >
+                    <div class="icon">
+                      <i class="lnil lnil-pointer-top"></i>
+                    </div>
+                    <div class="meta">
+                      <span>Regular</span>
+                    </div>
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'components-forms-file' }"
+                    class="dropdown-item is-media"
+                  >
+                    <div class="icon">
+                      <i class="lnil lnil-upload"></i>
+                    </div>
+                    <div class="meta">
+                      <span>File Input</span>
+                    </div>
+                  </RouterLink>
+                </div>
+              </div>
+            </div>
+
+            <!--Column-->
+            <div class="column is-4">
+              <div class="dropdown-item-group">
+                <h4 class="column-heading is-success">
+                  <i class="iconify" data-icon="feather:circle"></i>
+                  <span>Toggles</span>
+                </h4>
+
+                <div class="column-content">
+                  <RouterLink
+                    :to="{ name: 'components-forms-checkboxes' }"
+                    class="dropdown-item is-media"
+                  >
+                    <div class="icon">
+                      <i class="lnil lnil-round-box-check"></i>
+                    </div>
+                    <div class="meta">
+                      <span>Checkboxes</span>
+                    </div>
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'components-forms-radios' }"
+                    class="dropdown-item is-media"
+                  >
+                    <div class="icon">
+                      <i class="lnil lnil-checkmark-circle"></i>
+                    </div>
+                    <div class="meta">
+                      <span>Radio Buttons</span>
+                    </div>
+                  </RouterLink>
+                  <RouterLink
+                    :to="{ name: 'components-forms-switch' }"
+                    class="dropdown-item is-media"
+                  >
+                    <div class="icon">
+                      <i class="lnil lnil-screw"></i>
+                    </div>
+                    <div class="meta">
+                      <span>Switch</span>
                     </div>
                   </RouterLink>
                 </div>

@@ -335,18 +335,18 @@ $steps-thin-marker-size: 0.8em !default;
 .steps:not(.is-hollow) {
   .steps-marker:not(.is-hollow) {
     background-color: $steps-completed-color;
-    color: findcolorinvert($steps-completed-color);
+    color: findColorInvert($steps-completed-color);
   }
   .steps-segment.is-active {
     .steps-marker:not(.is-hollow) {
       background-color: $steps-active-color;
-      color: findcolorinvert($steps-active-color);
+      color: findColorInvert($steps-active-color);
     }
   }
   .steps-segment.is-active {
     & ~ .steps-segment .steps-marker:not(.is-hollow) {
       background-color: $steps-default-color;
-      color: findcolorinvert($steps-default-color);
+      color: findColorInvert($steps-default-color);
     }
     // Hollow style
   }

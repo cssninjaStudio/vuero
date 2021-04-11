@@ -2,7 +2,8 @@
   {
     "name": "Action Page V1",
     "category": "LAYOUTS",
-    "displayOrder": 59,
+    "displayOrder": 590,
+    "new": false,
     "route": {
       "name": "navbar-layouts-action-page-1",
       "path": "/navbar/layouts/action-page-1"
@@ -15,7 +16,8 @@
   {
     "name": "Action Page V2",
     "category": "LAYOUTS",
-    "displayOrder": 60,
+    "displayOrder": 600,
+    "new": false,
     "route": {
       "name": "navbar-layouts-action-page-2",
       "path": "/navbar/layouts/action-page-2"
@@ -27,8 +29,9 @@
   },
   {
     "name": "Form V1",
-    "category": "LAYOUTS",
-    "displayOrder": 36,
+    "category": "FORMS",
+    "displayOrder": 360,
+    "new": false,
     "route": {
       "name": "navbar-layouts-form-layouts-1",
       "path": "/navbar/layouts/form-layouts-1"
@@ -40,8 +43,9 @@
   },
   {
     "name": "Form V2",
-    "category": "LAYOUTS",
-    "displayOrder": 37,
+    "category": "FORMS",
+    "displayOrder": 370,
+    "new": false,
     "route": {
       "name": "navbar-layouts-form-layouts-2",
       "path": "/navbar/layouts/form-layouts-2"
@@ -53,8 +57,9 @@
   },
   {
     "name": "Form V3",
-    "category": "LAYOUTS",
-    "displayOrder": 38,
+    "category": "FORMS",
+    "displayOrder": 380,
+    "new": false,
     "route": {
       "name": "navbar-layouts-form-layouts-3",
       "path": "/navbar/layouts/form-layouts-3"
@@ -66,8 +71,9 @@
   },
   {
     "name": "Form V4",
-    "category": "LAYOUTS",
-    "displayOrder": 39,
+    "category": "FORMS",
+    "displayOrder": 390,
+    "new": false,
     "route": {
       "name": "navbar-layouts-form-layouts-4",
       "path": "/navbar/layouts/form-layouts-4"
@@ -78,9 +84,24 @@
     }
   },
   {
+    "name": "Form V5",
+    "category": "FORMS",
+    "displayOrder": 395,
+    "new": true,
+    "route": {
+      "name": "navbar-layouts-form-layouts-5",
+      "path": "/navbar/layouts/form-layouts-5"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/navbar/form-v5-light.webp",
+      "dark": "/images/screenshots/navbar/form-v5-dark.webp"
+    }
+  },
+  {
     "name": "Grid Card V1",
     "category": "LAYOUTS",
-    "displayOrder": 40,
+    "displayOrder": 400,
+    "new": false,
     "route": {
       "name": "navbar-layouts-grid-cards-1",
       "path": "/navbar/layouts/grid-cards-1"
@@ -93,7 +114,8 @@
   {
     "name": "Grid Card V2",
     "category": "LAYOUTS",
-    "displayOrder": 41,
+    "displayOrder": 410,
+    "new": false,
     "route": {
       "name": "navbar-layouts-grid-cards-2",
       "path": "/navbar/layouts/grid-cards-2"
@@ -106,7 +128,8 @@
   {
     "name": "Grid Card V3",
     "category": "LAYOUTS",
-    "displayOrder": 42,
+    "displayOrder": 420,
+    "new": false,
     "route": {
       "name": "navbar-layouts-grid-cards-3",
       "path": "/navbar/layouts/grid-cards-3"
@@ -119,7 +142,8 @@
   {
     "name": "Grid Card V4",
     "category": "LAYOUTS",
-    "displayOrder": 43,
+    "displayOrder": 430,
+    "new": false,
     "route": {
       "name": "navbar-layouts-grid-cards-4",
       "path": "/navbar/layouts/grid-cards-4"
@@ -132,7 +156,8 @@
   {
     "name": "Grid Tiles V1",
     "category": "LAYOUTS",
-    "displayOrder": 44,
+    "displayOrder": 440,
+    "new": false,
     "route": {
       "name": "navbar-layouts-grid-tiles-1",
       "path": "/navbar/layouts/grid-tiles-1"
@@ -145,7 +170,8 @@
   {
     "name": "Grid Tiles V2",
     "category": "LAYOUTS",
-    "displayOrder": 45,
+    "displayOrder": 450,
+    "new": false,
     "route": {
       "name": "navbar-layouts-grid-tiles-2",
       "path": "/navbar/layouts/grid-tiles-2"
@@ -158,7 +184,8 @@
   {
     "name": "Grid Tiles V3",
     "category": "LAYOUTS",
-    "displayOrder": 46,
+    "displayOrder": 460,
+    "new": false,
     "route": {
       "name": "navbar-layouts-grid-tiles-3",
       "path": "/navbar/layouts/grid-tiles-3"
@@ -171,7 +198,8 @@
   {
     "name": "Grid Users V1",
     "category": "LAYOUTS",
-    "displayOrder": 47,
+    "displayOrder": 470,
+    "new": false,
     "route": {
       "name": "navbar-layouts-grid-users-1",
       "path": "/navbar/layouts/grid-users-1"
@@ -184,7 +212,8 @@
   {
     "name": "Grid Users V2",
     "category": "LAYOUTS",
-    "displayOrder": 48,
+    "displayOrder": 480,
+    "new": false,
     "route": {
       "name": "navbar-layouts-grid-users-2",
       "path": "/navbar/layouts/grid-users-2"
@@ -197,7 +226,8 @@
   {
     "name": "Grid Users V3",
     "category": "LAYOUTS",
-    "displayOrder": 49,
+    "displayOrder": 490,
+    "new": false,
     "route": {
       "name": "navbar-layouts-grid-users-3",
       "path": "/navbar/layouts/grid-users-3"
@@ -210,7 +240,8 @@
   {
     "name": "Grid Users V4",
     "category": "LAYOUTS",
-    "displayOrder": 50,
+    "displayOrder": 500,
+    "new": false,
     "route": {
       "name": "navbar-layouts-grid-users-4",
       "path": "/navbar/layouts/grid-users-4"
@@ -223,7 +254,8 @@
   {
     "name": "Onboarding Standard",
     "category": "LAYOUTS",
-    "displayOrder": 32,
+    "displayOrder": 320,
+    "new": false,
     "route": {
       "name": "navbar-layouts-onboarding-welcome",
       "path": "/navbar/layouts/onboarding-welcome"
@@ -236,7 +268,8 @@
   {
     "name": "Kanban Board",
     "category": "LAYOUTS",
-    "displayOrder": 65,
+    "displayOrder": 650,
+    "new": false,
     "route": {
       "name": "navbar-layouts-kanban-board",
       "path": "/navbar/layouts/kanban-board"
@@ -249,7 +282,8 @@
   {
     "name": "List Datatable V1",
     "category": "LAYOUTS",
-    "displayOrder": 32,
+    "displayOrder": 320,
+    "new": false,
     "route": {
       "name": "navbar-layouts-list-datatable-1",
       "path": "/navbar/layouts/list-datatable-1"
@@ -262,7 +296,8 @@
   {
     "name": "List Datatable V2",
     "category": "LAYOUTS",
-    "displayOrder": 33,
+    "displayOrder": 330,
+    "new": false,
     "route": {
       "name": "navbar-layouts-list-datatable-2",
       "path": "/navbar/layouts/list-datatable-2"
@@ -275,7 +310,8 @@
   {
     "name": "List Datatable V3",
     "category": "LAYOUTS",
-    "displayOrder": 34,
+    "displayOrder": 340,
+    "new": false,
     "route": {
       "name": "navbar-layouts-list-datatable-3",
       "path": "/navbar/layouts/list-datatable-3"
@@ -288,7 +324,8 @@
   {
     "name": "List Datatable V4",
     "category": "LAYOUTS",
-    "displayOrder": 35,
+    "displayOrder": 350,
+    "new": false,
     "route": {
       "name": "navbar-layouts-list-datatable-4",
       "path": "/navbar/layouts/list-datatable-4"
@@ -301,7 +338,8 @@
   {
     "name": "List Flex V1",
     "category": "LAYOUTS",
-    "displayOrder": 29,
+    "displayOrder": 290,
+    "new": false,
     "route": {
       "name": "navbar-layouts-list-flex-1",
       "path": "/navbar/layouts/list-flex-1"
@@ -314,7 +352,8 @@
   {
     "name": "List Flex V2",
     "category": "LAYOUTS",
-    "displayOrder": 30,
+    "displayOrder": 300,
+    "new": false,
     "route": {
       "name": "navbar-layouts-list-flex-2",
       "path": "/navbar/layouts/list-flex-2"
@@ -327,7 +366,8 @@
   {
     "name": "List Flex V3",
     "category": "LAYOUTS",
-    "displayOrder": 31,
+    "displayOrder": 310,
+    "new": false,
     "route": {
       "name": "navbar-layouts-list-flex-3",
       "path": "/navbar/layouts/list-flex-3"
@@ -340,7 +380,8 @@
   {
     "name": "Homepage (List View V1)",
     "category": "LAYOUTS",
-    "displayOrder": 25,
+    "displayOrder": 250,
+    "new": false,
     "route": {
       "name": "navbar-layouts",
       "path": "/navbar/layouts/"
@@ -353,7 +394,8 @@
   {
     "name": "List View V2",
     "category": "LAYOUTS",
-    "displayOrder": 26,
+    "displayOrder": 260,
+    "new": false,
     "route": {
       "name": "navbar-layouts-list-view-2",
       "path": "/navbar/layouts/list-view-2"
@@ -366,7 +408,8 @@
   {
     "name": "List View V3",
     "category": "LAYOUTS",
-    "displayOrder": 27,
+    "displayOrder": 270,
+    "new": false,
     "route": {
       "name": "navbar-layouts-list-view-3",
       "path": "/navbar/layouts/list-view-3"
@@ -379,7 +422,8 @@
   {
     "name": "List View V4",
     "category": "LAYOUTS",
-    "displayOrder": 28,
+    "displayOrder": 280,
+    "new": false,
     "route": {
       "name": "navbar-layouts-list-view-4",
       "path": "/navbar/layouts/list-view-4"
@@ -392,7 +436,8 @@
   {
     "name": "Onboarding Page V1",
     "category": "LAYOUTS",
-    "displayOrder": 70,
+    "displayOrder": 700,
+    "new": false,
     "route": {
       "name": "navbar-layouts-onboarding-page-1",
       "path": "/navbar/layouts/onboarding-page-1"
@@ -405,7 +450,8 @@
   {
     "name": "Onboarding Page V2",
     "category": "LAYOUTS",
-    "displayOrder": 71,
+    "displayOrder": 710,
+    "new": false,
     "route": {
       "name": "navbar-layouts-onboarding-page-2",
       "path": "/navbar/layouts/onboarding-page-2"
@@ -418,7 +464,8 @@
   {
     "name": "Onboarding Page V3",
     "category": "LAYOUTS",
-    "displayOrder": 72,
+    "displayOrder": 720,
+    "new": false,
     "route": {
       "name": "navbar-layouts-onboarding-page-3",
       "path": "/navbar/layouts/onboarding-page-3"
@@ -431,7 +478,8 @@
   {
     "name": "Onboarding Page V4",
     "category": "LAYOUTS",
-    "displayOrder": 73,
+    "displayOrder": 730,
+    "new": false,
     "route": {
       "name": "navbar-layouts-onboarding-page-4",
       "path": "/navbar/layouts/onboarding-page-4"
@@ -444,7 +492,8 @@
   {
     "name": "Onboarding Page V5",
     "category": "LAYOUTS",
-    "displayOrder": 74,
+    "displayOrder": 740,
+    "new": false,
     "route": {
       "name": "navbar-layouts-onboarding-page-5",
       "path": "/navbar/layouts/onboarding-page-5"
@@ -457,7 +506,8 @@
   {
     "name": "Profile Edit",
     "category": "LAYOUTS",
-    "displayOrder": 52,
+    "displayOrder": 520,
+    "new": false,
     "route": {
       "name": "navbar-layouts-profile-edit",
       "path": "/navbar/layouts/profile-edit"
@@ -470,7 +520,8 @@
   {
     "name": "Profile Edit Experience",
     "category": "LAYOUTS",
-    "displayOrder": 53,
+    "displayOrder": 530,
+    "new": false,
     "route": {
       "name": "navbar-layouts-profile-edit-experience",
       "path": "/navbar/layouts/profile-edit/experience"
@@ -483,7 +534,8 @@
   {
     "name": "Profile Edit Skills",
     "category": "LAYOUTS",
-    "displayOrder": 54,
+    "displayOrder": 540,
+    "new": false,
     "route": {
       "name": "navbar-layouts-profile-edit-skills",
       "path": "/navbar/layouts/profile-edit/skills"
@@ -496,7 +548,8 @@
   {
     "name": "Profile Edit Settings",
     "category": "LAYOUTS",
-    "displayOrder": 55,
+    "displayOrder": 550,
+    "new": false,
     "route": {
       "name": "navbar-layouts-profile-edit-settings",
       "path": "/navbar/layouts/profile-edit/settings"
@@ -509,7 +562,8 @@
   {
     "name": "Profile Notifications",
     "category": "LAYOUTS",
-    "displayOrder": 27,
+    "displayOrder": 270,
+    "new": false,
     "route": {
       "name": "navbar-layouts-profile-notifications",
       "path": "/navbar/layouts/profile-notifications"
@@ -522,7 +576,8 @@
   {
     "name": "Profile Settings",
     "category": "LAYOUTS",
-    "displayOrder": 28,
+    "displayOrder": 280,
+    "new": false,
     "route": {
       "name": "navbar-layouts-profile-settings",
       "path": "/navbar/layouts/profile-settings"
@@ -535,7 +590,8 @@
   {
     "name": "Profile View",
     "category": "LAYOUTS",
-    "displayOrder": 51,
+    "displayOrder": 510,
+    "new": false,
     "route": {
       "name": "navbar-layouts-profile-view",
       "path": "/navbar/layouts/profile-view"
@@ -548,7 +604,8 @@
   {
     "name": "Projects Details",
     "category": "LAYOUTS",
-    "displayOrder": 64,
+    "displayOrder": 640,
+    "new": false,
     "route": {
       "name": "navbar-layouts-projects-details",
       "path": "/navbar/layouts/projects-details"
@@ -561,7 +618,8 @@
   {
     "name": "Projects List V1",
     "category": "LAYOUTS",
-    "displayOrder": 60,
+    "displayOrder": 600,
+    "new": false,
     "route": {
       "name": "navbar-layouts-projects-projects-1",
       "path": "/navbar/layouts/projects-projects-1"
@@ -574,7 +632,8 @@
   {
     "name": "Projects List V2",
     "category": "LAYOUTS",
-    "displayOrder": 61,
+    "displayOrder": 610,
+    "new": false,
     "route": {
       "name": "navbar-layouts-projects-projects-2",
       "path": "/navbar/layouts/projects-projects-2"
@@ -587,7 +646,8 @@
   {
     "name": "Projects List V3",
     "category": "LAYOUTS",
-    "displayOrder": 62,
+    "displayOrder": 620,
+    "new": false,
     "route": {
       "name": "navbar-layouts-projects-projects-3",
       "path": "/navbar/layouts/projects-projects-3"
@@ -600,7 +660,8 @@
   {
     "name": "SaaS Billing",
     "category": "LAYOUTS",
-    "displayOrder": 58,
+    "displayOrder": 580,
+    "new": false,
     "route": {
       "name": "navbar-layouts-saas-billing",
       "path": "/navbar/layouts/saas-billing"
@@ -613,7 +674,8 @@
   {
     "name": "Search Empty",
     "category": "LAYOUTS",
-    "displayOrder": 57,
+    "displayOrder": 570,
+    "new": false,
     "route": {
       "name": "navbar-layouts-search-empty",
       "path": "/navbar/layouts/search-empty"
@@ -626,7 +688,8 @@
   {
     "name": "Search Results",
     "category": "LAYOUTS",
-    "displayOrder": 56,
+    "displayOrder": 560,
+    "new": false,
     "route": {
       "name": "navbar-layouts-search-results",
       "path": "/navbar/layouts/search-results"
@@ -639,7 +702,8 @@
   {
     "name": "Account Confirm",
     "category": "UTILITY",
-    "displayOrder": 66,
+    "displayOrder": 660,
+    "new": false,
     "route": {
       "name": "navbar-layouts-utility-account-confirm",
       "path": "/navbar/layouts/utility-account-confirm"
@@ -652,7 +716,8 @@
   {
     "name": "Invoice",
     "category": "UTILITY",
-    "displayOrder": 68,
+    "displayOrder": 680,
+    "new": false,
     "route": {
       "name": "navbar-layouts-utility-invoice",
       "path": "/navbar/layouts/utility-invoice"
@@ -665,7 +730,8 @@
   {
     "name": "Promotion",
     "category": "UTILITY",
-    "displayOrder": 67,
+    "displayOrder": 670,
+    "new": false,
     "route": {
       "name": "navbar-layouts-utility-promotion",
       "path": "/navbar/layouts/utility-promotion"
@@ -678,7 +744,8 @@
   {
     "name": "Food Delivery",
     "category": "APP",
-    "displayOrder": 20,
+    "displayOrder": 200,
+    "new": false,
     "route": {
       "name": "navbar-dashboards-food-delivery",
       "path": "/navbar/dashboards/food-delivery"
@@ -691,7 +758,8 @@
   {
     "name": "Banking V1",
     "category": "DASHBOARD",
-    "displayOrder": 7,
+    "displayOrder": 70,
+    "new": false,
     "route": {
       "name": "navbar-dashboards-banking-1",
       "path": "/navbar/dashboards/banking-1"
@@ -704,7 +772,8 @@
   {
     "name": "Banking V2",
     "category": "DASHBOARD",
-    "displayOrder": 8,
+    "displayOrder": 80,
+    "new": false,
     "route": {
       "name": "navbar-dashboards-banking-2",
       "path": "/navbar/dashboards/banking-2"
@@ -717,7 +786,8 @@
   {
     "name": "Banking V3",
     "category": "DASHBOARD",
-    "displayOrder": 9,
+    "displayOrder": 90,
+    "new": false,
     "route": {
       "name": "navbar-dashboards-banking-3",
       "path": "/navbar/dashboards/banking-3"
@@ -730,7 +800,8 @@
   {
     "name": "Flights",
     "category": "DASHBOARD",
-    "displayOrder": 10,
+    "displayOrder": 100,
+    "new": false,
     "route": {
       "name": "navbar-dashboards-flights",
       "path": "/navbar/dashboards/flights"
@@ -743,7 +814,8 @@
   {
     "name": "Company",
     "category": "DASHBOARD",
-    "displayOrder": 11,
+    "displayOrder": 110,
+    "new": false,
     "route": {
       "name": "navbar-dashboards-company",
       "path": "/navbar/dashboards/company"
@@ -756,7 +828,8 @@
   {
     "name": "Human Ressources",
     "category": "DASHBOARD",
-    "displayOrder": 12,
+    "displayOrder": 120,
+    "new": false,
     "route": {
       "name": "navbar-dashboards-human-ressources",
       "path": "/navbar/dashboards/human-ressources"
@@ -769,7 +842,8 @@
   {
     "name": "Course Dashboard",
     "category": "DASHBOARD",
-    "displayOrder": 13,
+    "displayOrder": 130,
+    "new": false,
     "route": {
       "name": "navbar-dashboards-course",
       "path": "/navbar/dashboards/course"
@@ -782,7 +856,8 @@
   {
     "name": "Charts Apex",
     "category": "DASHBOARD",
-    "displayOrder": 22,
+    "displayOrder": 220,
+    "new": false,
     "route": {
       "name": "navbar-dashboards-charts-apex",
       "path": "/navbar/dashboards/charts-apex"
@@ -795,7 +870,8 @@
   {
     "name": "Charts BillboardsJS",
     "category": "DASHBOARD",
-    "displayOrder": 23,
+    "displayOrder": 230,
+    "new": false,
     "route": {
       "name": "navbar-dashboards-charts-billboardsjs",
       "path": "/navbar/dashboards/charts-billboardsjs"
@@ -808,7 +884,8 @@
   {
     "name": "Ecommerce V1",
     "category": "DASHBOARD",
-    "displayOrder": 19,
+    "displayOrder": 190,
+    "new": false,
     "route": {
       "name": "navbar-dashboards-ecommerce-1",
       "path": "/navbar/dashboards/ecommerce-1"
@@ -821,7 +898,8 @@
   {
     "name": "Analytics",
     "category": "DASHBOARD",
-    "displayOrder": 4,
+    "displayOrder": 40,
+    "new": false,
     "route": {
       "name": "navbar-dashboards-analytics",
       "path": "/navbar/dashboards/analytics"
@@ -834,7 +912,8 @@
   {
     "name": "Stocks",
     "category": "DASHBOARD",
-    "displayOrder": 5,
+    "displayOrder": 50,
+    "new": false,
     "route": {
       "name": "navbar-dashboards-stocks",
       "path": "/navbar/dashboards/stocks"
@@ -847,7 +926,8 @@
   {
     "name": "Sales",
     "category": "DASHBOARD",
-    "displayOrder": 6,
+    "displayOrder": 60,
+    "new": false,
     "route": {
       "name": "navbar-dashboards-sales",
       "path": "/navbar/dashboards/sales"
@@ -860,7 +940,8 @@
   {
     "name": "Influencer",
     "category": "DASHBOARD",
-    "displayOrder": 14,
+    "displayOrder": 140,
+    "new": false,
     "route": {
       "name": "navbar-dashboards-influencer",
       "path": "/navbar/dashboards/influencer"
@@ -873,7 +954,8 @@
   {
     "name": "Hobbies",
     "category": "DASHBOARD",
-    "displayOrder": 15,
+    "displayOrder": 150,
+    "new": false,
     "route": {
       "name": "navbar-dashboards-hobbies",
       "path": "/navbar/dashboards/hobbies"
@@ -886,7 +968,8 @@
   {
     "name": "Health",
     "category": "DASHBOARD",
-    "displayOrder": 16,
+    "displayOrder": 160,
+    "new": false,
     "route": {
       "name": "navbar-dashboards-health",
       "path": "/navbar/dashboards/health"
@@ -899,7 +982,8 @@
   {
     "name": "Writer",
     "category": "DASHBOARD",
-    "displayOrder": 17,
+    "displayOrder": 170,
+    "new": false,
     "route": {
       "name": "navbar-dashboards-writer",
       "path": "/navbar/dashboards/writer"
@@ -912,7 +996,8 @@
   {
     "name": "Video",
     "category": "DASHBOARD",
-    "displayOrder": 18,
+    "displayOrder": 180,
+    "new": false,
     "route": {
       "name": "navbar-dashboards-video",
       "path": "/navbar/dashboards/video"
@@ -926,6 +1011,7 @@
     "name": "Homepage (Personal V1)",
     "category": "DASHBOARD",
     "displayOrder": 0,
+    "new": false,
     "route": {
       "name": "navbar-dashboards",
       "path": "/navbar/dashboards/"
@@ -938,7 +1024,8 @@
   {
     "name": "Personal V2",
     "category": "DASHBOARD",
-    "displayOrder": 1,
+    "displayOrder": 10,
+    "new": false,
     "route": {
       "name": "navbar-dashboards-personal-2",
       "path": "/navbar/dashboards/personal-2"
@@ -951,7 +1038,8 @@
   {
     "name": "Personal V3",
     "category": "DASHBOARD",
-    "displayOrder": 2,
+    "displayOrder": 20,
+    "new": false,
     "route": {
       "name": "navbar-dashboards-personal-3",
       "path": "/navbar/dashboards/personal-3"
@@ -964,7 +1052,8 @@
   {
     "name": "Widgets Creative",
     "category": "DASHBOARD",
-    "displayOrder": 25,
+    "displayOrder": 250,
+    "new": false,
     "route": {
       "name": "navbar-dashboards-widgets-sample-creative",
       "path": "/navbar/dashboards/widgets-sample-creative"
@@ -977,7 +1066,8 @@
   {
     "name": "Widgets List",
     "category": "DASHBOARD",
-    "displayOrder": 26,
+    "displayOrder": 260,
+    "new": false,
     "route": {
       "name": "navbar-dashboards-widgets-sample-list",
       "path": "/navbar/dashboards/widgets-sample-list"
@@ -990,7 +1080,8 @@
   {
     "name": "Widgets Stats",
     "category": "DASHBOARD",
-    "displayOrder": 27,
+    "displayOrder": 270,
+    "new": false,
     "route": {
       "name": "navbar-dashboards-widgets-sample-stats",
       "path": "/navbar/dashboards/widgets-sample-stats"
@@ -1003,7 +1094,8 @@
   {
     "name": "Widgets UI",
     "category": "DASHBOARD",
-    "displayOrder": 24,
+    "displayOrder": 240,
+    "new": false,
     "route": {
       "name": "navbar-dashboards-widgets-sample-ui",
       "path": "/navbar/dashboards/widgets-sample-ui"

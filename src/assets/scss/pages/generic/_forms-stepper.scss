@@ -110,7 +110,7 @@
         align-items: center;
         justify-content: flex-end;
 
-        > span {
+        .is-label {
           font-family: $font;
           font-size: 0.9rem;
 
@@ -145,6 +145,7 @@
         cursor: pointer;
         transition: color 0.3s, background-color 0.3s, border 0.3s,
           box-shadow 0.3s;
+        outline: none;
 
         &:hover {
           background: $white;
@@ -337,6 +338,7 @@
               cursor: pointer;
               border-radius: 0.5rem;
               transition: background-color 0.3s;
+              outline: none;
 
               &:hover {
                 background: darken($widget-grey, 1%);
@@ -443,6 +445,13 @@
       font-size: 0.75rem !important;
     }
 
+    .steps:not(.is-hollow) .steps-segment.is-active ~ .steps-segment {
+      cursor: default !important;
+    }
+    .steps:not(.is-hollow) .steps-segment {
+      cursor: pointer !important;
+    }
+
     .steps-segment {
       &.is-active {
         .step-info {
@@ -487,6 +496,7 @@
 
     .steps-content {
       opacity: 0 !important;
+      display: block;
     }
   }
 }
@@ -531,7 +541,7 @@ body {
           }
 
           .switch-segment {
-            span {
+            .is-label {
               &:first-child {
                 color: $dark-dark-text;
               }

@@ -1,15 +1,13 @@
 FROM bitnami/node:14 AS build
 WORKDIR /app
 
-RUN npm install --global pnpm
-
 COPY package.json ./
-COPY pnpm-lock.yaml ./
+COPY yarn.lock ./
 COPY scripts/skip.js ./scripts/skip.js
-RUN HUSKY=0 CYPRESS_INSTALL_BINARY=0 pnpm install
+RUN HUSKY=0 CYPRESS_INSTALL_BINARY=0 yarn install
 
 COPY . .
-RUN pnpm run build
+RUN yarn run build
 
 
 FROM bitnami/nginx:1.19 AS prod
