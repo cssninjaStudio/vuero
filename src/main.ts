@@ -18,8 +18,8 @@ import background from './directives/background'
 import 'simplebar'
 import '@purge-icons/generated'
 import 'nprogress/nprogress.css'
-import '@vueform/multiselect/themes/default.css'
-import '@vueform/slider/themes/default.css'
+import '@vueform/multiselect/themes/default.scss'
+import '@vueform/slider/themes/default.scss'
 import 'simplebar/dist/simplebar.css'
 import 'tiny-slider/src/tiny-slider.scss'
 import 'notyf/notyf.min.css'
@@ -32,6 +32,7 @@ import 'tippy.js/themes/light.css'
 import './scss/vendors/font-awesome-v5.css'
 import './scss/vendors/line-icons-pro.css'
 import './scss/vendors/prism-coldark-cold.css'
+
 import './scss/main.scss'
 
 const app = createApp(App)

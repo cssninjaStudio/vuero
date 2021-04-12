@@ -1,23 +1,35 @@
-{ 
+{
   "compilerOptions": {
     "baseUrl": ".",
-    "module": "ESNext",
-    "target": "ESNext",
-    "lib": ["DOM", "ESNext"],
-    "types": ["node", "vite/client", "vite-plugin-pages/client"],
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
     "strict": true,
-    "esModuleInterop": true,
-    "incremental": true,
-    "skipLibCheck": true,
-    "moduleResolution": "Node",
+    "jsx": "preserve",
+    "sourceMap": true,
     "resolveJsonModule": true,
-    "forceConsistentCasingInFileNames": true,
-    "importHelpers": true,
+    "esModuleInterop": true,
     "removeComments": true,
-    "plugins": [{ "name": "@vuedx/typescript-plugin-vue" }],
+    "importHelpers": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": ["esnext", "dom"],
+    "types": [
+      "node", 
+      "vite/client", 
+      "vite-plugin-pwa/client",
+      "vite-plugin-pages/client",
+      "@intlify/vite-plugin-vue-i18n/client"
+    ],
     "paths": {
-      "/@src/*": ["src/*"],
-    },
+      "/~/*": ["./src/assets/*"],
+      "/@src/*": ["./src/*"]
+    }
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.vue", "documentation/**/*.md"],
+  "include": [
+    "src/**/*.ts", 
+    "src/**/*.d.ts", 
+    "src/**/*.tsx", 
+    "src/**/*.vue", 
+    "documentation/**/*.md"
+  ]
 }

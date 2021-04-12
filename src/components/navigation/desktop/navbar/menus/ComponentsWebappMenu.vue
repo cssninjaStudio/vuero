@@ -13,7 +13,7 @@ const activeTab = ref<TabId>('components')
     class="navbar-subnavbar-inner tabs-wrapper"
   >
     <div class="tabs-inner">
-      <div class="tabs is-centered is-2">
+      <div class="tabs is-centered is-4">
         <ul>
           <li :class="[activeTab === 'components' && 'is-active']">
             <a @click="activeTab = 'components'">UI Components</a>

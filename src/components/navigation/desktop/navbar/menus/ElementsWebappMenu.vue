@@ -18,9 +18,6 @@ const activeTab = ref<TabId>('basic')
           <li :class="[activeTab === 'basic' && 'is-active']">
             <a @click="activeTab = 'basic'">Basic UI</a>
           </li>
-          <li :class="[activeTab === 'forms' && 'is-active']">
-            <a @click="activeTab = 'forms'">Form Controls</a>
-          </li>
         </ul>
       </div>
     </div>

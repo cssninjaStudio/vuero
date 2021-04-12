@@ -45,11 +45,23 @@ const router = createRouter({
   routes,
 })
 
+/**
+ * Handle NProgress display on page changes
+ */
 router.beforeEach(() => {
   NProgress.start()
 })
 router.afterEach(() => {
   NProgress.done()
+})
+
+/**
+ * Force cache refresh when new version is available
+ * @see https://github.com/antfu/vite-plugin-pwa
+ */
+router.isReady().then(async () => {
+  const { registerSW } = await import('virtual:pwa-register')
+  registerSW({ immediate: true })
 })
 
 export default router

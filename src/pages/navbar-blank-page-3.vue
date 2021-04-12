@@ -11,10 +11,7 @@ useHead({
     <GenericMobileSubsidebar />
 
     <!-- Content Wrapper -->
-    <div
-      class="view-wrapper has-top-nav"
-      :class="[activeSidebar !== 'none' && 'is-pushed-full']"
-    >
+    <div class="view-wrapper has-top-nav">
       <div class="page-content-wrapper">
         <div class="page-content is-relative">
           <div class="is-navbar-lg">
@@ -38,7 +35,14 @@ useHead({
 
               <Toolbar />
             </div>
-            <div class="page-content-inner"></div>
+            <div class="page-content-inner">
+              <!--
+                Page content goes here
+
+                You can see pages content samples from 
+                files in /src/components/pages directory
+              -->
+            </div>
           </div>
         </div>
       </div>

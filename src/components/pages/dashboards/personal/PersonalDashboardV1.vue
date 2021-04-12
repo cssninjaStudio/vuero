@@ -161,7 +161,7 @@ import { profitChartOptions } from '/@src/data/dashboards/personal-v1/profitChar
   </div>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import '../../../../scss/abstracts/_variables.scss';
 @import '../../../../scss/abstracts/_mixins.scss';
 

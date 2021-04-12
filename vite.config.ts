@@ -7,6 +7,7 @@ import ViteFonts from 'vite-plugin-fonts'
 import ViteRadar from 'vite-plugin-radar'
 import PurgeIcons from 'vite-plugin-purge-icons'
 import { imagetools } from 'vite-imagetools'
+import ImageMin from 'vite-plugin-imagemin'
 import VueI18n from '@intlify/vite-plugin-vue-i18n'
 import VueroDocumentation from './vite-plugin-vuero-doc/index'
 import { VitePWA } from 'vite-plugin-pwa'
@@ -29,22 +30,28 @@ export default defineConfig({
   resolve: {
     alias: [
       {
+        find: '/~/',
+        replacement: `${path.resolve(__dirname, 'src', 'assets')}/`,
+      },
+      {
         find: '/@src/',
         replacement: `${path.resolve(__dirname, 'src')}/`,
       },
     ],
   },
-  /**
-   * Uncomment this section to build the demo with missing images
-   * Don't forget to remove this section when you replaced assets with yours
-   */
-  // build: {
-  //   rollupOptions: {
-  //     external: [
-  //       /\/demo\/.*/,
-  //     ]
-  //   }
-  // },
+
+  build: {
+    sourcemap: process.env.SOURCE_MAP === 'true',
+    /**
+     * Uncomment this section to build the demo with missing images
+     * Don't forget to remove this section when you replaced assets with yours
+     */
+    // rollupOptions: {
+    //   external: [
+    //     /\/demo\/.*/,
+    //   ]
+    // }
+  },
   plugins: [
     // https://github.com/vitejs/vite/tree/main/packages/plugin-vue
     Vue({
@@ -149,6 +156,7 @@ export default defineConfig({
      */
     VitePWA({
       registerType: 'autoUpdate',
+      base: '/',
       manifest: {
         name: 'Vuero - A complete Vue 3 design system',
         short_name: 'Vuero',
@@ -166,6 +174,38 @@ export default defineConfig({
             src: '/icons/android-chrome-512x512.png',
             sizes: '512x512',
             type: 'image/png',
+          },
+        ],
+      },
+    }),
+
+    /**
+     * vite-plugin-imagemin optimize all images sizes from public or asset folder
+     *
+     * @see https://github.com/anncwb/vite-plugin-imagemin
+     */
+    ImageMin({
+      gifsicle: {
+        optimizationLevel: 7,
+        interlaced: false,
+      },
+      optipng: {
+        optimizationLevel: 7,
+      },
+      mozjpeg: {
+        quality: 8,
+      },
+      pngquant: {
+        quality: [0.8, 0.9],
+        speed: 4,
+      },
+      svgo: {
+        plugins: [
+          {
+            removeViewBox: false,
+          },
+          {
+            removeEmptyAttrs: false,
           },
         ],
       },

@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import type { PropType } from 'vue'
-import { defineProps } from 'vue'
+import { ref } from 'vue'
 
 import { reputationChartOptions } from '/@src/data/dashboards/lifestyle-v1/reputationChart'
 import { influenceChartOptions } from '/@src/data/dashboards/lifestyle-v1/influenceChart'
@@ -16,13 +15,7 @@ import {
 } from '/@src/data/dashboards/lifestyle-v1/dashboardData'
 
 type TabId = 'overview' | 'content' | 'brands'
-
-const props = defineProps({
-  activeTab: {
-    type: String as PropType<TabId>,
-    default: 'overview',
-  },
-})
+const activeTab = ref<TabId>('overview')
 </script>
 
 <template>
@@ -81,7 +74,7 @@ const props = defineProps({
           </div>
           <div class="meta-achievements">
             <tippy>
-              <div key="" class="meta-achievement is-danger">
+              <div class="meta-achievement is-danger">
                 <i class="fas fa-fire"></i>
               </div>
               <template #content>
@@ -170,15 +163,16 @@ const props = defineProps({
       </div>
 
       <div
+        v-if="activeTab === 'overview'"
         id="overview-tab"
-        class="tab-content"
-        :class="[activeTab === 'overview' && 'is-active']"
+        class="tab-content is-active"
       >
         <div class="body-title">
           <h3>Instagram Stats</h3>
           <V-Field class="is-minimal-select">
             <V-Control>
               <Multiselect
+                id="instagram-stats-select"
                 v-model="valueSingle"
                 :options="optionsSingle"
                 placeholder="Select an option"
@@ -472,80 +466,6 @@ const props = defineProps({
                   <li><a class="size6" href="#">web-design</a></li>
                   <li><a class="size1" href="#">css</a></li>
                 </ul>
-                <!-- div id="cl" class="cloud">
-                  <div class="cloud-element is-bold">
-                    <a href="#1">#livemusic</a>
-                  </div>
-                  <div class="cloud-element">
-                    <a href="#2">#unplugged</a>
-                  </div>
-                  <div class="cloud-element">
-                    <a href="#3">#vocals</a>
-                  </div>
-                  <div class="cloud-element">
-                    <img
-                      src="http://miuki.info/wp-content/uploads/2010/04/D.png"
-                      alt="rofl"
-                    />
-                  </div>
-                  <div class="cloud-element">
-                    <img
-                      src="http://miuki.info/wp-content/uploads/2010/04/angry.png"
-                      alt="angry"
-                    />
-                  </div>
-                  <div class="cloud-element size-3 is-bold">
-                    <a href="#6">#music</a>
-                  </div>
-                  <div class="cloud-element size-2 is-bold">
-                    <a href="#7">#rnb</a>
-                  </div>
-                  <div class="cloud-element">
-                    <a href="#8">#guitarsolo</a>
-                  </div>
-                  <div class="cloud-element">
-                    <a href="#9">#songs</a>
-                  </div>
-                  <div class="cloud-element">
-                    <a href="#10">#ambient</a>
-                  </div>
-                  <div class="cloud-element">
-                    <a href="#1">#songwriting</a>
-                  </div>
-                  <div class="cloud-element size-2 is-bold">
-                    <a href="#2">#jazzify</a>
-                  </div>
-                  <div class="cloud-element">
-                    <a href="#3">#tour</a>
-                  </div>
-                  <div class="cloud-element">
-                    <img
-                      src="http://miuki.info/wp-content/uploads/2010/04/D.png"
-                      alt="rofl"
-                    />
-                  </div>
-                  <div class="cloud-element">
-                    <img
-                      src="http://miuki.info/wp-content/uploads/2010/04/angry.png"
-                      alt="angry"
-                    />
-                  </div>
-                  <div class="cloud-element">
-                    <a href="#6">#losangeles</a>
-                  </div>
-                  <div class="cloud-element">
-                    <a href="#7">#soundtrack</a>
-                  </div>
-                  <div class="cloud-element">
-                    <a href="#8">#artists</a>
-                  </div>
-                  <div class="cloud-element">
-                    <a href="#9">#dance</a>
-                  </div>
-                  <div class="cloud-element size-2 is-bold">
-                    <a href="#10">#sing</a>
-                  </div>
-                </div-->
               </div>
             </div>
           </div>
@@ -652,15 +572,16 @@ const props = defineProps({
       </div>
 
       <div
+        v-if="activeTab === 'content'"
         id="content-tab"
-        class="tab-content"
-        :class="[activeTab === 'content' && 'is-active']"
+        class="tab-content is-active"
       >
         <div class="body-title">
           <h3>Content Stats</h3>
           <V-Field class="is-minimal-select">
             <V-Control>
               <Multiselect
+                id="content-stats-select"
                 v-model="valueSingle"
                 :options="optionsSingle"
                 placeholder="Select an option"
@@ -1374,9 +1295,9 @@ const props = defineProps({
       </div>
 
       <div
+        v-if="activeTab === 'brands'"
         id="brands-tab"
-        class="tab-content"
-        :class="[activeTab === 'brands' && 'is-active']"
+        class="tab-content is-active"
       >
         <!--Empty Placeholder -->
         <div class="page-placeholder">

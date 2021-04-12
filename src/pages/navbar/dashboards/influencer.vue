@@ -1,16 +1,8 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
-import { ref, onMounted } from 'vue'
-import { setLayout } from '/@src/state/navbarLayoutState'
-
-type TabId = 'overview' | 'content' | 'brands'
-const activeTab = ref<TabId>('overview')
 
 useHead({
   title: 'Dashboards Lifestyle 1 - Navbar - Vuero',
-})
-onMounted(() => {
-  setLayout('navbar-fade')
 })
 </script>
 
@@ -40,10 +32,7 @@ onMounted(() => {
       <Toolbar />
     </div>
     <div class="page-content-inner">
-      <LifestyleDashboardV1
-        :active-tab="activeTab"
-        class="has-navbar-spacing"
-      />
+      <LifestyleDashboardV1 class="has-navbar-spacing" />
     </div>
   </div>
 </template>

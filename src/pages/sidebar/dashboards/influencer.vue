@@ -1,11 +1,7 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
-import { ref } from 'vue'
 
 import { activeSidebar, toggleSidebar } from '/@src/state/activeSidebarState'
-
-type TabId = 'overview' | 'content' | 'brands'
-const activeTab = ref<TabId>('overview')
 
 useHead({
   title: 'Dashboard Lifestyle 1 - Sidebar - Vuero',
@@ -46,7 +42,7 @@ useHead({
     </div>
 
     <div class="page-content-inner">
-      <LifestyleDashboardV1 :active-tab="activeTab" />
+      <LifestyleDashboardV1 />
     </div>
   </div>
 </template>

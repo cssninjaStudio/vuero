@@ -1,6 +1,21 @@
 <script setup lang="ts">
+/**
+ * This is a Vue Component that will be
+ * automatically mapped to a entry on vue-router.
+ *
+ * You will be able to access this page at http://localhost:3000/sidebar-blank-page-6
+ * Page uri will match related path to src/pages folder
+ *
+ * Read more about routing:
+ * @see /vite.config.ts
+ * @see /src/router.ts
+ */
 import { useHead } from '@vueuse/head'
 
+/**
+ * activeSidebar is an exported ref() that we can use everywhere
+ * @see /src/components/navigation/desktop/sidebar/subsidebars/GenericSidebar.vue
+ */
 import { activeSidebar, toggleSidebar } from '/@src/state/activeSidebarState'
 
 useHead({
@@ -48,7 +63,12 @@ useHead({
           </div>
 
           <div class="page-content-inner">
-            <!--Page content goes here-->
+            <!--
+              Page content goes here
+
+              You can see pages content samples from 
+              files in /src/components/pages directory
+            -->
           </div>
         </div>
       </div>

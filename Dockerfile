@@ -3,8 +3,7 @@ WORKDIR /app
 
 COPY package.json ./
 COPY yarn.lock ./
-COPY scripts/skip.js ./scripts/skip.js
-RUN HUSKY=0 CYPRESS_INSTALL_BINARY=0 yarn install
+RUN CYPRESS_INSTALL_BINARY=0 yarn install
 
 COPY . .
 RUN yarn run build
