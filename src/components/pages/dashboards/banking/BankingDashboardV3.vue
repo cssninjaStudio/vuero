@@ -124,7 +124,7 @@ import { popovers } from '/@src/data/users/userPopovers'
               :offset="[0, 40]"
               placement="top-end"
             >
-              <V-Avatar picture="/images/avatars/photos/21.jpg" />
+              <V-Avatar picture="/demo/avatars/21.jpg" />
               <template #content>
                 <UserPopoverContent :user="popovers.user21" />
               </template>
@@ -146,7 +146,7 @@ import { popovers } from '/@src/data/users/userPopovers'
               :offset="[0, 40]"
               placement="top-end"
             >
-              <V-Avatar picture="/images/avatars/photos/7.jpg" />
+              <V-Avatar picture="/demo/avatars/7.jpg" />
               <template #content>
                 <UserPopoverContent :user="popovers.user7" />
               </template>
@@ -168,7 +168,7 @@ import { popovers } from '/@src/data/users/userPopovers'
               :offset="[0, 40]"
               placement="top-end"
             >
-              <V-Avatar picture="/images/avatars/photos/31.jpg" />
+              <V-Avatar picture="/demo/avatars/31.jpg" />
               <template #content>
                 <UserPopoverContent :user="popovers.user31" />
               </template>
@@ -237,8 +237,8 @@ import { popovers } from '/@src/data/users/userPopovers'
 </template>
 
 <style lang="scss">
-@import '../../../../assets/scss/abstracts/_variables.scss';
-@import '../../../../assets/scss/abstracts/_mixins.scss';
+@import '../../../../scss/abstracts/_variables.scss';
+@import '../../../../scss/abstracts/_mixins.scss';
 
 .banking-dashboard-v3 {
   .dashboard-header {

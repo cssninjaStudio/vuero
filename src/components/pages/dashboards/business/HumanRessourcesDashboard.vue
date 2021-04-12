@@ -16,7 +16,7 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
                 <div class="current-user">
                   <V-Avatar
                     size="medium"
-                    picture="/images/avatars/photos/8.jpg"
+                    picture="/demo/avatars/8.jpg"
                     squared
                   />
                   <h3>Welcome back, Erik.</h3>
@@ -31,9 +31,9 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
                   Praeclarae mortes.
                 </p>
                 <div class="candidates">
-                  <V-Avatar picture="/images/avatars/photos/13.jpg" squared />
-                  <V-Avatar picture="/images/avatars/photos/32.jpg" squared />
-                  <V-Avatar picture="/images/avatars/photos/9.jpg" squared />
+                  <V-Avatar picture="/demo/avatars/13.jpg" squared />
+                  <V-Avatar picture="/demo/avatars/32.jpg" squared />
+                  <V-Avatar picture="/demo/avatars/9.jpg" squared />
                   <button>
                     <i class="iconify" data-icon="feather:plus"></i>
                   </button>
@@ -157,7 +157,7 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
                   <div class="grid-item">
                     <UserCardDropdown />
                     <V-Avatar
-                      picture="/images/avatars/photos/13.jpg"
+                      picture="/demo/avatars/13.jpg"
                       badge="/images/icons/stacks/illustrator.svg"
                       size="large"
                     />
@@ -173,7 +173,7 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
                   <div class="grid-item">
                     <UserCardDropdown />
                     <V-Avatar
-                      picture="/images/avatars/photos/37.jpg"
+                      picture="/demo/avatars/37.jpg"
                       badge="/images/icons/flags/france.svg"
                       size="large"
                     />
@@ -189,7 +189,7 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
                   <div class="grid-item">
                     <UserCardDropdown />
                     <V-Avatar
-                      picture="/images/avatars/photos/25.jpg"
+                      picture="/demo/avatars/25.jpg"
                       badge="/images/icons/stacks/js.svg"
                       size="large"
                     />
@@ -328,9 +328,9 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
 </template>
 
 <style lang="scss">
-@import '../../../../assets/scss/abstracts/_variables.scss';
-@import '../../../../assets/scss/abstracts/_mixins.scss';
-@import '../../../../assets/scss/pages/generic/_widgets-lists.scss';
+@import '../../../../scss/abstracts/_variables.scss';
+@import '../../../../scss/abstracts/_mixins.scss';
+@import '../../../../scss/pages/generic/_widgets-lists.scss';
 
 .hr-dashboard {
   .block-header {

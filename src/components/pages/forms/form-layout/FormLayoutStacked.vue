@@ -182,7 +182,7 @@ const isStuck = computed(() => {
                         interactive
                         placement="top-start"
                       >
-                        <V-Avatar picture="/images/avatars/photos/8.jpg" />
+                        <V-Avatar picture="/demo/avatars/8.jpg" />
                         <template #content>
                           <UserPopoverContent :user="popovers.user8" />
                         </template>
@@ -204,7 +204,7 @@ const isStuck = computed(() => {
                         interactive
                         placement="top-start"
                       >
-                        <V-Avatar picture="/images/avatars/photos/18.jpg" />
+                        <V-Avatar picture="/demo/avatars/18.jpg" />
                         <template #content>
                           <UserPopoverContent :user="popovers.user18" />
                         </template>
@@ -226,7 +226,7 @@ const isStuck = computed(() => {
                         interactive
                         placement="top-start"
                       >
-                        <V-Avatar picture="/images/avatars/photos/7.jpg" />
+                        <V-Avatar picture="/demo/avatars/7.jpg" />
                         <template #content>
                           <UserPopoverContent :user="popovers.user7" />
                         </template>
@@ -369,27 +369,27 @@ const isStuck = computed(() => {
                         {
                           name: 'Erik K.',
                           value: 'eric',
-                          icon: '/images/avatars/photos/8.jpg',
+                          icon: '/demo/avatars/8.jpg',
                         },
                         {
                           name: 'Joshua S.',
                           value: 'joshua',
-                          icon: '/images/avatars/photos/12.jpg',
+                          icon: '/demo/avatars/12.jpg',
                         },
                         {
                           name: 'Melany W.',
                           value: 'melany',
-                          icon: '/images/avatars/photos/25.jpg',
+                          icon: '/demo/avatars/25.jpg',
                         },
                         {
                           name: 'Alice C.',
                           value: 'alice',
-                          icon: '/images/avatars/photos/7.jpg',
+                          icon: '/demo/avatars/7.jpg',
                         },
                         {
                           name: 'Esteban C.',
                           value: 'esteban',
-                          icon: '/images/avatars/photos/18.jpg',
+                          icon: '/demo/avatars/18.jpg',
                         },
                       ]"
                     >
@@ -420,9 +420,9 @@ const isStuck = computed(() => {
 </template>
 
 <style lang="scss">
-@import '../../../../assets/scss/abstracts/_variables.scss';
-@import '../../../../assets/scss/abstracts/_mixins.scss';
-@import '../../../../assets/scss/pages/generic/_forms.scss';
+@import '../../../../scss/abstracts/_variables.scss';
+@import '../../../../scss/abstracts/_mixins.scss';
+@import '../../../../scss/pages/generic/_forms.scss';
 
 @media only screen and (min-width: 767px) {
   .v-calendar-combo {

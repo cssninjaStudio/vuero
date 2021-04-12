@@ -216,7 +216,7 @@ import { userStack } from '/@src/data/dashboards/personal-v3/users'
         <a href="#" class="dashboard-card is-interview">
           <V-Block title="Jonathan K." subtitle="08:00 - 09:00" center>
             <template #icon>
-              <V-Avatar picture="/images/avatars/photos/32.jpg" />
+              <V-Avatar picture="/demo/avatars/32.jpg" />
             </template>
             <template #action>
               <i class="iconify" data-icon="feather:chevron-right"></i>
@@ -226,7 +226,7 @@ import { userStack } from '/@src/data/dashboards/personal-v3/users'
         <a href="#" class="dashboard-card is-interview">
           <V-Block title="Greta K." subtitle="10:30 - 11:00" center>
             <template #icon>
-              <V-Avatar picture="/images/avatars/photos/19.jpg" />
+              <V-Avatar picture="/demo/avatars/19.jpg" />
             </template>
             <template #action>
               <i class="iconify" data-icon="feather:chevron-right"></i>
@@ -236,7 +236,7 @@ import { userStack } from '/@src/data/dashboards/personal-v3/users'
         <a href="#" class="dashboard-card is-interview">
           <V-Block title="Joshua S." subtitle="02:30 - 03:00" center>
             <template #icon>
-              <V-Avatar picture="/images/avatars/photos/12.jpg" />
+              <V-Avatar picture="/demo/avatars/12.jpg" />
             </template>
             <template #action>
               <i class="iconify" data-icon="feather:chevron-right"></i>
@@ -249,8 +249,8 @@ import { userStack } from '/@src/data/dashboards/personal-v3/users'
 </template>
 
 <style lang="scss">
-@import '../../../../assets/scss/abstracts/_variables.scss';
-@import '../../../../assets/scss/abstracts/_mixins.scss';
+@import '../../../../scss/abstracts/_variables.scss';
+@import '../../../../scss/abstracts/_mixins.scss';
 
 .is-navbar {
   .personal-dashboard {

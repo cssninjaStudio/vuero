@@ -26,7 +26,7 @@ const navbarDemos = navbar.sort(displayOrder)
 </script>
 
 <template>
-  <div class="huro-demos">
+  <div class="vuero-demos">
     <!--ADMIN-->
     <div class="demo-section">
       <div class="demo-section-title">

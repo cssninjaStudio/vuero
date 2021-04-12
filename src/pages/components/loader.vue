@@ -24,7 +24,7 @@ useHead({
     <div class="page-title has-text-centered">
       <!-- Sidebar Trigger -->
       <div
-        class="huro-hamburger nav-trigger push-resize"
+        class="vuero-hamburger nav-trigger push-resize"
         @click="toggleSidebar('components')"
       >
         <span class="menu-toggle has-chevron">
@@ -87,7 +87,7 @@ useHead({
               <V-Loader size="small" :active="isLoaderActive" grey>
                 <V-MediaCard
                   class="demo-s-card"
-                  avatar="/images/avatars/photos/19.jpg"
+                  avatar="/demo/avatars/19.jpg"
                   badge="/images/icons/flags/germany.svg"
                   title="Greta K."
                   subtitle="Sales Manager"
@@ -99,7 +99,7 @@ useHead({
               <V-Loader size="small" :active="isLoaderActive">
                 <V-MediaCard
                   class="demo-s-card"
-                  avatar="/images/avatars/photos/19.jpg"
+                  avatar="/demo/avatars/19.jpg"
                   badge="/images/icons/flags/germany.svg"
                   title="Greta K."
                   subtitle="Sales Manager"
@@ -111,7 +111,7 @@ useHead({
               <V-Loader size="small" :active="isLoaderActive" translucent>
                 <V-MediaCard
                   class="demo-s-card"
-                  avatar="/images/avatars/photos/19.jpg"
+                  avatar="/demo/avatars/19.jpg"
                   badge="/images/icons/flags/germany.svg"
                   title="Greta K."
                   subtitle="Sales Manager"
@@ -123,7 +123,7 @@ useHead({
               <V-Loader card="smooth" :active="isLoaderActive">
                 <V-MediaCard
                   class="demo-s-card"
-                  avatar="/images/avatars/photos/19.jpg"
+                  avatar="/demo/avatars/19.jpg"
                   badge="/images/icons/flags/germany.svg"
                   title="Greta K."
                   subtitle="Sales Manager"
@@ -136,7 +136,7 @@ useHead({
               <V-Loader card="rounded" size="large" :active="isLoaderActive">
                 <V-MediaCard
                   class="demo-s-card"
-                  avatar="/images/avatars/photos/19.jpg"
+                  avatar="/demo/avatars/19.jpg"
                   badge="/images/icons/flags/germany.svg"
                   title="Greta K."
                   subtitle="Sales Manager"
@@ -149,7 +149,7 @@ useHead({
               <V-Loader card="rounded" size="xl" :active="isLoaderActive">
                 <V-MediaCard
                   class="demo-s-card"
-                  avatar="/images/avatars/photos/19.jpg"
+                  avatar="/demo/avatars/19.jpg"
                   badge="/images/icons/flags/germany.svg"
                   title="Greta K."
                   subtitle="Sales Manager"

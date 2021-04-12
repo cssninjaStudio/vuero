@@ -9,7 +9,7 @@ export const tasks = reactive([
     participants: [
       {
         color: 'warning',
-        picture: '/images/avatars/photos/7.jpg',
+        picture: '/demo/avatars/7.jpg',
       },
     ],
   },
@@ -21,7 +21,7 @@ export const tasks = reactive([
     participants: [
       {
         color: 'info',
-        picture: '/images/avatars/photos/8.jpg',
+        picture: '/demo/avatars/8.jpg',
       },
     ],
   },
@@ -33,13 +33,13 @@ export const tasks = reactive([
     participants: [
       {
         color: 'danger',
-        picture: '/images/avatars/photos/12.jpg',
+        picture: '/demo/avatars/12.jpg',
       },
       {
-        picture: '/images/avatars/photos/26.jpg',
+        picture: '/demo/avatars/26.jpg',
       },
       {
-        picture: '/images/avatars/photos/19.jpg',
+        picture: '/demo/avatars/19.jpg',
       },
     ],
   },
@@ -51,7 +51,7 @@ export const tasks = reactive([
     participants: [
       {
         color: 'success',
-        picture: '/images/avatars/photos/13.jpg',
+        picture: '/demo/avatars/13.jpg',
       },
     ],
   },
@@ -63,7 +63,7 @@ export const tasks = reactive([
     participants: [
       {
         color: 'info',
-        picture: '/images/avatars/photos/16.jpg',
+        picture: '/demo/avatars/16.jpg',
       },
     ],
   },
@@ -75,7 +75,7 @@ export const tasks = reactive([
     participants: [
       {
         color: 'warning',
-        picture: '/images/avatars/photos/8.jpg',
+        picture: '/demo/avatars/8.jpg',
       },
     ],
   },
@@ -87,7 +87,7 @@ export const tasks = reactive([
     participants: [
       {
         color: 'success',
-        picture: '/images/avatars/photos/12.jpg',
+        picture: '/demo/avatars/12.jpg',
       },
     ],
   },
@@ -99,10 +99,10 @@ export const tasks = reactive([
     participants: [
       {
         color: 'danger',
-        picture: '/images/avatars/photos/18.jpg',
+        picture: '/demo/avatars/18.jpg',
       },
       {
-        picture: '/images/avatars/photos/9.jpg',
+        picture: '/demo/avatars/9.jpg',
       },
     ],
   },
@@ -114,7 +114,7 @@ export const tasks = reactive([
     participants: [
       {
         color: 'primary',
-        picture: '/images/avatars/photos/13.jpg',
+        picture: '/demo/avatars/13.jpg',
       },
     ],
   },
@@ -126,7 +126,7 @@ export const tasks = reactive([
     participants: [
       {
         color: 'warning',
-        picture: '/images/avatars/photos/16.jpg',
+        picture: '/demo/avatars/16.jpg',
       },
     ],
   },

@@ -13,7 +13,7 @@ to fit in the available space. Resize your screen to see it in action.
     <template #icon>
       <V-Avatar
         size="medium"
-        picture="/images/avatars/photos/19.jpg"
+        picture="/demo/avatars/19.jpg"
         badge="/images/icons/flags/germany.svg"
       />
     </template>
@@ -35,7 +35,7 @@ to fit in the available space. Resize your screen to see it in action.
         <template #icon>
           <V-Avatar
             size="medium"
-            picture="/images/avatars/photos/19.jpg"
+            picture="/demo/avatars/19.jpg"
             badge="/images/icons/flags/germany.svg"
           />
         </template>

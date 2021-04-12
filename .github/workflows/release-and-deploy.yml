@@ -41,12 +41,8 @@ jobs:
             -x ".release/*" \
             -x ".git/*" \
             -x ".github/*" \
-            -x "public/images/photo/demo/*" \
-            -x "dist/images/photo/demo/*" \
-            -x "public/images/avatars/photos/*" \
-            -x "dist/images/avatars/photos/*" \
-            -x "public/images/avatars/svg/*.gif" \
-            -x "dist/images/avatars/svg/*.gif" \
+            -x "public/demo/*" \
+            -x "dist/demo/*" \
             -x "docker-compose.yml"
           zip -j ${{ steps.get_meta.outputs.project }}-preview.zip \
             .release/${{ steps.get_meta.outputs.project }}-preview.png

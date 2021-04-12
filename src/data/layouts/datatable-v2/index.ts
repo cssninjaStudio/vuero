@@ -70,7 +70,7 @@ export const datatableV2 = {
     data: [
       [
         0,
-        '/images/photo/demo/products/1.png',
+        '/demo/photos/products/1.png',
         'Yellow Couch',
         'FC-58-5564',
         190,
@@ -80,7 +80,7 @@ export const datatableV2 = {
       ],
       [
         1,
-        '/images/photo/demo/products/2.png',
+        '/demo/photos/products/2.png',
         'Green Couch',
         'FC-58-1565',
         170,
@@ -90,7 +90,7 @@ export const datatableV2 = {
       ],
       [
         2,
-        '/images/photo/demo/products/3.png',
+        '/demo/photos/products/3.png',
         'Turquoise Seat',
         'FS-12-4854',
         90,
@@ -100,7 +100,7 @@ export const datatableV2 = {
       ],
       [
         3,
-        '/images/photo/demo/products/4.png',
+        '/demo/photos/products/4.png',
         'Cyan Couch',
         'FC-58-6723',
         180,
@@ -110,7 +110,7 @@ export const datatableV2 = {
       ],
       [
         4,
-        '/images/photo/demo/products/5.png',
+        '/demo/photos/products/5.png',
         'Coffee Table',
         'FT-45-4684',
         280,
@@ -120,7 +120,7 @@ export const datatableV2 = {
       ],
       [
         5,
-        '/images/photo/demo/products/6.png',
+        '/demo/photos/products/6.png',
         'Red Couch',
         'FC-58-7565',
         190,
@@ -130,7 +130,7 @@ export const datatableV2 = {
       ],
       [
         6,
-        '/images/photo/demo/products/7.png',
+        '/demo/photos/products/7.png',
         'Mustard Seat',
         'FS-11-1861',
         70,
@@ -140,7 +140,7 @@ export const datatableV2 = {
       ],
       [
         7,
-        '/images/photo/demo/products/8.png',
+        '/demo/photos/products/8.png',
         'Modern Sofa',
         'FC-58-3971',
         190,
@@ -150,7 +150,7 @@ export const datatableV2 = {
       ],
       [
         8,
-        '/images/photo/demo/products/9.png',
+        '/demo/photos/products/9.png',
         'Table Triplets',
         'FT-22-2875',
         340,
@@ -160,7 +160,7 @@ export const datatableV2 = {
       ],
       [
         9,
-        '/images/photo/demo/products/10.png',
+        '/demo/photos/products/10.png',
         'Wood Chair',
         'FS-11-2876',
         80,
@@ -170,7 +170,7 @@ export const datatableV2 = {
       ],
       [
         10,
-        '/images/photo/demo/products/11.png',
+        '/demo/photos/products/11.png',
         'Modern Table',
         'FT-14-6543',
         150,
@@ -180,7 +180,7 @@ export const datatableV2 = {
       ],
       [
         11,
-        '/images/photo/demo/products/12.png',
+        '/demo/photos/products/12.png',
         'Hippie Sofa',
         'FC-58-7241',
         380,
@@ -190,7 +190,7 @@ export const datatableV2 = {
       ],
       [
         12,
-        '/images/photo/demo/products/13.png',
+        '/demo/photos/products/13.png',
         'Wood Dresser',
         'FD-98-4654',
         270,
@@ -200,7 +200,7 @@ export const datatableV2 = {
       ],
       [
         13,
-        '/images/photo/demo/products/14.png',
+        '/demo/photos/products/14.png',
         'Walnut Chair',
         'FS-11-5873',
         110,
@@ -210,7 +210,7 @@ export const datatableV2 = {
       ],
       [
         14,
-        '/images/photo/demo/products/15.png',
+        '/demo/photos/products/15.png',
         'Purple Armchair',
         'FS-10-1948',
         130,
@@ -220,7 +220,7 @@ export const datatableV2 = {
       ],
       [
         15,
-        '/images/photo/demo/products/16.png',
+        '/demo/photos/products/16.png',
         'Round Chair',
         'FS-11-2857',
         60,
@@ -230,7 +230,7 @@ export const datatableV2 = {
       ],
       [
         16,
-        '/images/photo/demo/products/17.png',
+        '/demo/photos/products/17.png',
         'Modern Cabinet',
         'FB-58-25253',
         240,
@@ -240,7 +240,7 @@ export const datatableV2 = {
       ],
       [
         17,
-        '/images/photo/demo/products/18.png',
+        '/demo/photos/products/18.png',
         'Chromed Cabinet',
         'FB-58-5673',
         350,
@@ -250,7 +250,7 @@ export const datatableV2 = {
       ],
       [
         18,
-        '/images/photo/demo/products/19.png',
+        '/demo/photos/products/19.png',
         'Modern Lamp',
         'FL-19-7354',
         50,
@@ -260,7 +260,7 @@ export const datatableV2 = {
       ],
       [
         19,
-        '/images/photo/demo/products/20.png',
+        '/demo/photos/products/20.png',
         'Lamp Triplets',
         'FL-18-2846',
         180,
@@ -270,7 +270,7 @@ export const datatableV2 = {
       ],
       [
         20,
-        '/images/photo/demo/products/21.png',
+        '/demo/photos/products/21.png',
         'Wood Lamp',
         'FL-19-1947',
         60,
@@ -280,7 +280,7 @@ export const datatableV2 = {
       ],
       [
         21,
-        '/images/photo/demo/products/22.png',
+        '/demo/photos/products/22.png',
         'Carbone Fiber Lamp',
         'FL-19-3658',
         220,
@@ -290,7 +290,7 @@ export const datatableV2 = {
       ],
       [
         22,
-        '/images/photo/demo/products/23.png',
+        '/demo/photos/products/23.png',
         'Multidirectional Spots',
         'FL-19-1731',
         160,

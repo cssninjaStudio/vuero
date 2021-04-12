@@ -41,9 +41,7 @@ export default defineConfig({
   // build: {
   //   rollupOptions: {
   //     external: [
-  //       /\/images\/photo\/demo\/.*/,
-  //       /\/images\/avatars\/photos\/.*/,
-  //       /\/images\/avatars\/svg\/.*\.gif/,
+  //       /\/demo\/.*/,
   //     ]
   //   }
   // },

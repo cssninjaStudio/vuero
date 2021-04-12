@@ -18,7 +18,7 @@ useHead({
     <div class="page-title has-text-centered">
       <!-- Sidebar Trigger -->
       <div
-        class="huro-hamburger nav-trigger push-resize"
+        class="vuero-hamburger nav-trigger push-resize"
         @click="toggleSidebar('components')"
       >
         <span class="menu-toggle has-chevron">
@@ -50,7 +50,7 @@ useHead({
               <div class="v-avatar is-xl">
                 <img
                   class="avatar"
-                  src="/images/avatars/svg/huro-2.svg"
+                  src="/images/avatars/svg/vuero-2.svg"
                   alt=""
                   @error.once="
                     $event.target.src = 'https://via.placeholder.com/150x150'
@@ -58,7 +58,7 @@ useHead({
                 />
                 <img
                   class="badge"
-                  src="/images/photo/demo/misc/buoy.jpg"
+                  src="/demo/photos/misc/buoy.jpg"
                   alt=""
                   @error.once="
                     $event.target.src = 'https://via.placeholder.com/150x150'
@@ -409,6 +409,6 @@ useHead({
 </template>
 
 <style lang="scss">
-@import '../../assets/scss/abstracts/_variables.scss';
-@import '../../assets/scss/pages/dashboards/_hub.scss';
+@import '../../scss/abstracts/_variables.scss';
+@import '../../scss/pages/dashboards/_hub.scss';
 </style>

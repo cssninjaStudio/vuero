@@ -145,7 +145,7 @@ const randomCard = () => {
           </div>
           <div class="block-body is-seats">
             <tippy class="has-help-cursor" interactive placement="bottom-start">
-              <V-Avatar picture="/images/avatars/photos/8.jpg" />
+              <V-Avatar picture="/demo/avatars/8.jpg" />
               <template #content>
                 <UserPopoverContent :user="popovers.user8" />
               </template>
@@ -159,7 +159,7 @@ const randomCard = () => {
             </tippy>
 
             <tippy class="has-help-cursor" interactive placement="bottom">
-              <V-Avatar picture="/images/avatars/photos/18.jpg" />
+              <V-Avatar picture="/demo/avatars/18.jpg" />
               <template #content>
                 <UserPopoverContent :user="popovers.user18" />
               </template>
@@ -173,7 +173,7 @@ const randomCard = () => {
             </tippy>
 
             <tippy class="has-help-cursor" interactive placement="bottom">
-              <V-Avatar picture="/images/avatars/photos/7.jpg" />
+              <V-Avatar picture="/demo/avatars/7.jpg" />
               <template #content>
                 <UserPopoverContent :user="popovers.user7" />
               </template>
@@ -349,8 +349,8 @@ const randomCard = () => {
 </template>
 
 <style lang="scss">
-@import '../../../assets/scss/abstracts/_variables.scss';
-@import '../../../assets/scss/abstracts/_mixins.scss';
+@import '../../../scss/abstracts/_variables.scss';
+@import '../../../scss/abstracts/_mixins.scss';
 
 /* ==========================================================================
 1. SaaS Billing

@@ -58,10 +58,7 @@
                 <div class="featured-authors-item">
                   <V-Block title="Alice C." subtitle="Software Engineer" center>
                     <template #icon>
-                      <V-Avatar
-                        picture="/images/avatars/photos/7.jpg"
-                        squared
-                      />
+                      <V-Avatar picture="/demo/avatars/7.jpg" squared />
                     </template>
                     <template #action>
                       <span class="dark-inverted">112K</span>
@@ -72,10 +69,7 @@
                 <div class="featured-authors-item">
                   <V-Block title="Elizabeth F." subtitle="Web Developer" center>
                     <template #icon>
-                      <V-Avatar
-                        picture="/images/avatars/photos/21.jpg"
-                        squared
-                      />
+                      <V-Avatar picture="/demo/avatars/21.jpg" squared />
                     </template>
                     <template #action>
                       <span class="dark-inverted">91K</span>
@@ -86,10 +80,7 @@
                 <div class="featured-authors-item">
                   <V-Block title="Jonathan K." subtitle="UI/UX Designer" center>
                     <template #icon>
-                      <V-Avatar
-                        picture="/images/avatars/photos/32.jpg"
-                        squared
-                      />
+                      <V-Avatar picture="/demo/avatars/32.jpg" squared />
                     </template>
                     <template #action>
                       <span class="dark-inverted">72K</span>
@@ -104,10 +95,7 @@
                     center
                   >
                     <template #icon>
-                      <V-Avatar
-                        picture="/images/avatars/photos/38.jpg"
-                        squared
-                      />
+                      <V-Avatar picture="/demo/avatars/38.jpg" squared />
                     </template>
                     <template #action>
                       <span class="dark-inverted">19K</span>
@@ -197,7 +185,7 @@
               <a class="articles-feed-item">
                 <div class="featured-image">
                   <img
-                    src="/images/photo/demo/38.jpg"
+                    src="/demo/photos/38.jpg"
                     alt=""
                     @error.once="
                       $event.target.src = 'https://via.placeholder.com/800x600'
@@ -210,10 +198,7 @@
 
                   <V-Block title="Alice C." subtitle="Software Engineer">
                     <template #icon>
-                      <V-Avatar
-                        picture="/images/avatars/photos/7.jpg"
-                        squared
-                      />
+                      <V-Avatar picture="/demo/avatars/7.jpg" squared />
                     </template>
                   </V-Block>
                 </div>
@@ -222,7 +207,7 @@
               <a class="articles-feed-item">
                 <div class="featured-image">
                   <img
-                    src="/images/photo/demo/37.jpg"
+                    src="/demo/photos/37.jpg"
                     alt=""
                     @error.once="
                       $event.target.src = 'https://via.placeholder.com/800x600'
@@ -235,10 +220,7 @@
 
                   <V-Block title="Mary L." subtitle="Project Manager">
                     <template #icon>
-                      <V-Avatar
-                        picture="/images/avatars/photos/5.jpg"
-                        squared
-                      />
+                      <V-Avatar picture="/demo/avatars/5.jpg" squared />
                     </template>
                   </V-Block>
                 </div>
@@ -252,8 +234,8 @@
 </template>
 
 <style lang="scss">
-@import '../../../../assets/scss/abstracts/_variables.scss';
-@import '../../../../assets/scss/abstracts/_mixins.scss';
+@import '../../../../scss/abstracts/_variables.scss';
+@import '../../../../scss/abstracts/_mixins.scss';
 
 .lifestyle-dashboard-v4 {
   .illustration-header-2 {

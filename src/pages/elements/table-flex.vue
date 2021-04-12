@@ -18,7 +18,7 @@ useHead({
     <div class="page-title has-text-centered">
       <!-- Sidebar Trigger -->
       <div
-        class="huro-hamburger nav-trigger push-resize"
+        class="vuero-hamburger nav-trigger push-resize"
         @click="toggleSidebar('components')"
       >
         <span class="menu-toggle has-chevron">
@@ -100,7 +100,7 @@ useHead({
                     <div class="v-avatar is-small">
                       <img
                         class="avatar"
-                        src="/images/avatars/photos/25.jpg"
+                        src="/demo/avatars/25.jpg"
                         alt=""
                         @error.once="
                           $event.target.src =
@@ -116,7 +116,7 @@ useHead({
                     <div class="v-avatar is-small">
                       <img
                         class="avatar"
-                        src="/images/avatars/photos/8.jpg"
+                        src="/demo/avatars/8.jpg"
                         alt=""
                         @error.once="
                           $event.target.src =
@@ -190,7 +190,7 @@ useHead({
                     <div class="v-avatar is-small">
                       <img
                         class="avatar"
-                        src="/images/avatars/photos/7.jpg"
+                        src="/demo/avatars/7.jpg"
                         alt=""
                         @error.once="
                           $event.target.src =
@@ -224,7 +224,7 @@ useHead({
                     <div class="v-avatar is-small">
                       <img
                         class="avatar"
-                        src="/images/avatars/photos/13.jpg"
+                        src="/demo/avatars/13.jpg"
                         alt=""
                         @error.once="
                           $event.target.src =
@@ -258,7 +258,7 @@ useHead({
                     <div class="v-avatar is-small">
                       <img
                         class="avatar"
-                        src="/images/avatars/photos/25.jpg"
+                        src="/demo/avatars/25.jpg"
                         alt=""
                         @error.once="
                           $event.target.src =
@@ -269,7 +269,7 @@ useHead({
                     <div class="v-avatar is-small">
                       <img
                         class="avatar"
-                        src="/images/avatars/photos/11.jpg"
+                        src="/demo/avatars/11.jpg"
                         alt=""
                         @error.once="
                           $event.target.src =
@@ -280,7 +280,7 @@ useHead({
                     <div class="v-avatar is-small">
                       <img
                         class="avatar"
-                        src="/images/avatars/photos/5.jpg"
+                        src="/demo/avatars/5.jpg"
                         alt=""
                         @error.once="
                           $event.target.src =

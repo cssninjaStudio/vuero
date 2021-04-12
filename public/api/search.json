@@ -5,7 +5,7 @@
         "name":"Alice C.",
         "initials": "AC",
         "location":"San Diego, CA",
-        "pic":"/images/avatars/photos/7.jpg",
+        "pic":"/demo/avatars/7.jpg",
         "badge":"/images/icons/flags/united-states-of-america.svg",
         "position": "Software Engineer",
         "bio": "This is a nice user description that we can use as demo content"
@@ -16,7 +16,7 @@
         "name":"Anna B.",
         "initials": "AB",
         "location":"San Francisco, CA",
-        "pic":"/images/avatars/photos/9.jpg",
+        "pic":"/demo/avatars/9.jpg",
         "badge":"/images/icons/flags/united-states-of-america.svg",
         "position": "UX Designer",
         "bio": "This is a nice user description that we can use as demo content"
@@ -27,7 +27,7 @@
         "name":"Joshua S.",
         "initials": "JS",
         "location":"Las Vegas, NV",
-        "pic":"/images/avatars/photos/12.jpg",
+        "pic":"/demo/avatars/12.jpg",
         "badge":"/images/icons/flags/united-states-of-america.svg",
         "position": "Backend Developer",
         "bio": "This is a nice user description that we can use as demo content"
@@ -38,7 +38,7 @@
         "name":"Erik K.",
         "initials": "EK",
         "location":"New York, NY",
-        "pic":"/images/avatars/photos/8.jpg",
+        "pic":"/demo/avatars/8.jpg",
         "badge":"/images/icons/flags/united-states-of-america.svg",
         "position": "Product Manager",
         "bio": "This is a nice user description that we can use as demo content"
@@ -49,7 +49,7 @@
         "name":"Melany W.",
         "initials": "MW",
         "location":"San Jose, CA",
-        "pic":"/images/avatars/photos/25.jpg",
+        "pic":"/demo/avatars/25.jpg",
         "badge":"/images/icons/flags/united-states-of-america.svg",
         "position": "Web Developer",
         "bio": "This is a nice user description that we can use as demo content"
@@ -60,7 +60,7 @@
         "name":"Jimmy H.",
         "initials": "JH",
         "location":"Los Angeles, CA",
-        "pic":"/images/avatars/photos/22.jpg",
+        "pic":"/demo/avatars/22.jpg",
         "badge":"/images/icons/flags/united-states-of-america.svg",
         "position": "Project Manager",
         "bio": "This is a nice user description that we can use as demo content"
@@ -71,7 +71,7 @@
         "name":"Tara S.",
         "initials": "TS",
         "location":"New York, NY",
-        "pic":"/images/avatars/photos/13.jpg",
+        "pic":"/demo/avatars/13.jpg",
         "badge":"/images/icons/flags/united-states-of-america.svg",
         "position": "UI/UX Designer",
         "bio": "This is a nice user description that we can use as demo content"
@@ -82,7 +82,7 @@
         "name":"Esteban C.",
         "initials": "EC",
         "location":"Miami, FL",
-        "pic":"/images/avatars/photos/18.jpg",
+        "pic":"/demo/avatars/18.jpg",
         "badge":"/images/icons/flags/united-states-of-america.svg",
         "position": "UI/UX Designer",
         "bio": "This is a nice user description that we can use as demo content"
@@ -93,7 +93,7 @@
         "name":"Henry G.",
         "initials": "HG",
         "location":"Miami, FL",
-        "pic":"/images/avatars/photos/10.jpg",
+        "pic":"/demo/avatars/10.jpg",
         "badge":"/images/icons/flags/united-states-of-america.svg",
         "position": "Business Analyst",
         "bio": "This is a nice user description that we can use as demo content"
@@ -104,7 +104,7 @@
         "name":"Mary L.",
         "initials": "ML",
         "location":"San Diego, CA",
-        "pic":"/images/avatars/photos/5.jpg",
+        "pic":"/demo/avatars/5.jpg",
         "badge":"/images/icons/flags/united-states-of-america.svg",
         "position": "Project Manager",
         "bio": "This is a nice user description that we can use as demo content"
@@ -115,7 +115,7 @@
         "name":"Carmen E.",
         "initials": "CE",
         "location":"Madrid, Spain",
-        "pic":"/images/avatars/photos/27.jpg",
+        "pic":"/demo/avatars/27.jpg",
         "badge":"/images/icons/flags/spain.svg",
         "position": "HR Manager",
         "bio": "This is a nice user description that we can use as demo content"
@@ -126,7 +126,7 @@
         "name":"Jeanne M.",
         "initials": "JM",
         "location":"Paris, France",
-        "pic":"/images/avatars/photos/40.jpg",
+        "pic":"/demo/avatars/40.jpg",
         "badge":"/images/icons/flags/france.svg",
         "position": "Mobile Developer",
         "bio": "This is a nice user description that we can use as demo content"
@@ -137,7 +137,7 @@
         "name":"Daniel R.",
         "initials": "DR",
         "location":"Toronto, Canada",
-        "pic":"/images/avatars/photos/34.jpg",
+        "pic":"/demo/avatars/34.jpg",
         "badge":"/images/icons/flags/canada.svg",
         "position": "Web Developer",
         "bio": "This is a nice user description that we can use as demo content"
@@ -148,7 +148,7 @@
         "name":"Kelly M.",
         "initials": "KM",
         "location":"London, UK",
-        "pic":"/images/avatars/photos/11.jpg",
+        "pic":"/demo/avatars/11.jpg",
         "badge":"/images/icons/flags/england.svg",
         "position": "Product Manager",
         "bio": "This is a nice user description that we can use as demo content"
@@ -159,7 +159,7 @@
         "name":"Ryan B.",
         "initials": "RB",
         "location":"London, UK",
-        "pic":"/images/avatars/photos/14.jpg",
+        "pic":"/demo/avatars/14.jpg",
         "badge":"/images/icons/flags/england.svg",
         "position": "Web Developer",
         "bio": "This is a nice user description that we can use as demo content"
@@ -170,7 +170,7 @@
         "name":"Hilde V.",
         "initials": "HV",
         "location":"Berlin, Germany",
-        "pic":"/images/avatars/photos/15.jpg",
+        "pic":"/demo/avatars/15.jpg",
         "badge":"/images/icons/flags/germany.svg",
         "position": "Software Engineer",
         "bio": "This is a nice user description that we can use as demo content"
@@ -181,7 +181,7 @@
         "name":"Jason G.",
         "initials": "JG",
         "location":"Houston, TX",
-        "pic":"/images/avatars/photos/16.jpg",
+        "pic":"/demo/avatars/16.jpg",
         "badge":"/images/icons/flags/united-states-of-america.svg",
         "position": "Business Analyst",
         "bio": "This is a nice user description that we can use as demo content"
@@ -192,7 +192,7 @@
         "name":"Greta K.",
         "initials": "GK",
         "location":"Berlin, Germany",
-        "pic":"/images/avatars/photos/19.jpg",
+        "pic":"/demo/avatars/19.jpg",
         "badge":"/images/icons/flags/germany.svg",
         "position": "Sales Manager",
         "bio": "This is a nice user description that we can use as demo content"
@@ -203,7 +203,7 @@
         "name":"George W.",
         "initials": "GW",
         "location":"Los Angeles, CA",
-        "pic":"/images/avatars/photos/41.jpg",
+        "pic":"/demo/avatars/41.jpg",
         "badge":"/images/icons/flags/united-states-of-america.svg",
         "position": "Software Engineer",
         "bio": "This is a nice user description that we can use as demo content"
@@ -214,7 +214,7 @@
         "name":"Elizabeth F.",
         "initials": "EF",
         "location":"London, UK",
-        "pic":"/images/avatars/photos/21.jpg",
+        "pic":"/demo/avatars/21.jpg",
         "badge":"/images/icons/flags/england.svg",
         "position": "Mobile Developer",
         "bio": "This is a nice user description that we can use as demo content"
@@ -225,7 +225,7 @@
         "name":"Dwayne H.",
         "initials": "DH",
         "location":"Los Angeles, CA",
-        "pic":"/images/avatars/photos/22.jpg",
+        "pic":"/demo/avatars/22.jpg",
         "badge":"/images/icons/flags/united-states-of-america.svg",
         "position": "Product Manager",
         "bio": "This is a nice user description that we can use as demo content"
@@ -236,7 +236,7 @@
         "name":"Irina V.",
         "initials": "IV",
         "location":"San Diego, CA",
-        "pic":"/images/avatars/photos/23.jpg",
+        "pic":"/demo/avatars/23.jpg",
         "badge":"/images/icons/flags/united-states-of-america.svg",
         "position": "Project Manager",
         "bio": "This is a nice user description that we can use as demo content"
@@ -247,7 +247,7 @@
         "name":"Sandrine C.",
         "initials": "SC",
         "location":"Lyon, France",
-        "pic":"/images/avatars/photos/24.jpg",
+        "pic":"/demo/avatars/24.jpg",
         "badge":"/images/icons/flags/france.svg",
         "position": "HR Manager",
         "bio": "This is a nice user description that we can use as demo content"
@@ -258,7 +258,7 @@
         "name":"Courtney W.",
         "initials": "CW",
         "location":"Melbourne, Australia",
-        "pic":"/images/avatars/photos/26.jpg",
+        "pic":"/demo/avatars/26.jpg",
         "badge":"/images/icons/flags/australia.svg",
         "position": "Web Developer",
         "bio": "This is a nice user description that we can use as demo content"
@@ -269,7 +269,7 @@
         "name":"Edouard F.",
         "initials": "EF",
         "location":"Paris, France",
-        "pic":"/images/avatars/photos/28.jpg",
+        "pic":"/demo/avatars/28.jpg",
         "badge":"/images/icons/flags/france.svg",
         "position": "Web Developer",
         "bio": "This is a nice user description that we can use as demo content"
@@ -280,7 +280,7 @@
         "name":"Hakeem C.",
         "initials": "HC",
         "location":"Berlin, Germany",
-        "pic":"/images/avatars/photos/29.jpg",
+        "pic":"/demo/avatars/29.jpg",
         "badge":"/images/icons/flags/germany.svg",
         "position": "Software Engineer",
         "bio": "This is a nice user description that we can use as demo content"
@@ -291,7 +291,7 @@
         "name":"Clément D.",
         "initials": "CD",
         "location":"Toulouse, France",
-        "pic":"/images/avatars/photos/30.jpg",
+        "pic":"/demo/avatars/30.jpg",
         "badge":"/images/icons/flags/france.svg",
         "position": "Software Engineer",
         "bio": "This is a nice user description that we can use as demo content"
@@ -302,7 +302,7 @@
         "name":"Yasseen A.",
         "initials": "YA",
         "location":"New York, NY",
-        "pic":"/images/avatars/photos/31.jpg",
+        "pic":"/demo/avatars/31.jpg",
         "badge":"/images/icons/flags/united-states-of-america.svg",
         "position": "Business Analyst",
         "bio": "This is a nice user description that we can use as demo content"
@@ -313,7 +313,7 @@
         "name":"Jonathan K.",
         "initials": "JK",
         "location":"Los Angeles, CA",
-        "pic":"/images/avatars/photos/32.jpg",
+        "pic":"/demo/avatars/32.jpg",
         "badge":"/images/icons/flags/united-states-of-america.svg",
         "position": "Product Manager",
         "bio": "This is a nice user description that we can use as demo content"
@@ -324,7 +324,7 @@
         "name":"Harvey M.",
         "initials": "JK",
         "location":"Los Angeles, CA",
-        "pic":"/images/avatars/photos/33.jpg",
+        "pic":"/demo/avatars/33.jpg",
         "badge":"/images/icons/flags/united-states-of-america.svg",
         "position": "Web Developer",
         "bio": "This is a nice user description that we can use as demo content"
@@ -335,7 +335,7 @@
         "name":"Benoit L.",
         "initials": "BL",
         "location":"Paris, France",
-        "pic":"/images/avatars/photos/36.jpg",
+        "pic":"/demo/avatars/36.jpg",
         "badge":"/images/icons/flags/france.svg",
         "position": "Software Engineer",
         "bio": "This is a nice user description that we can use as demo content"
@@ -346,7 +346,7 @@
         "name":"Helmut F.",
         "initials": "HF",
         "location":"Paris, France",
-        "pic":"/images/avatars/photos/37.jpg",
+        "pic":"/demo/avatars/37.jpg",
         "badge":"/images/icons/flags/france.svg",
         "position": "Product Manager",
         "bio": "This is a nice user description that we can use as demo content"
@@ -357,7 +357,7 @@
         "name":"Christie D.",
         "initials": "CD",
         "location":"Los Angeles, CA",
-        "pic":"/images/avatars/photos/38.jpg",
+        "pic":"/demo/avatars/38.jpg",
         "badge":"/images/icons/flags/united-states-of-america.svg",
         "position": "Web Developer",
         "bio": "This is a nice user description that we can use as demo content"
@@ -368,7 +368,7 @@
         "name":"Alejandro B.",
         "initials": "AB",
         "location":"New York, NY",
-        "pic":"/images/avatars/photos/39.jpg",
+        "pic":"/demo/avatars/39.jpg",
         "badge":"/images/icons/flags/united-states-of-america.svg",
         "position": "Business Analyst",
         "bio": "This is a nice user description that we can use as demo content"

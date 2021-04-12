@@ -30,7 +30,7 @@ import {
           <div class="column is-3">
             <div
               v-background="{
-                src: '/images/photo/demo/dashboards/lifestyle/1.jpg',
+                src: '/demo/photos/dashboards/lifestyle/1.jpg',
                 placeholder: 'https://via.placeholder.com/800x600',
               }"
               class="long-card has-background-image"
@@ -53,7 +53,7 @@ import {
           <div class="column is-3">
             <div
               v-background="{
-                src: '/images/photo/demo/dashboards/lifestyle/2.jpg',
+                src: '/demo/photos/dashboards/lifestyle/2.jpg',
                 placeholder: 'https://via.placeholder.com/800x600',
               }"
               class="long-card has-background-image"
@@ -76,7 +76,7 @@ import {
           <div class="column is-3">
             <div
               v-background="{
-                src: '/images/photo/demo/dashboards/lifestyle/3.jpg',
+                src: '/demo/photos/dashboards/lifestyle/3.jpg',
                 placeholder: 'https://via.placeholder.com/800x600',
               }"
               class="long-card has-background-image"
@@ -99,7 +99,7 @@ import {
           <div class="column is-3">
             <div
               v-background="{
-                src: '/images/photo/demo/dashboards/lifestyle/4.jpg',
+                src: '/demo/photos/dashboards/lifestyle/4.jpg',
                 placeholder: 'https://via.placeholder.com/800x600',
               }"
               class="long-card has-background-image"
@@ -136,7 +136,7 @@ import {
                 >
                   <template #icon>
                     <V-Avatar
-                      picture="/images/photo/demo/dashboards/lifestyle/1.jpg"
+                      picture="/demo/photos/dashboards/lifestyle/1.jpg"
                       squared
                     />
                   </template>
@@ -159,7 +159,7 @@ import {
                 <V-Block title="Rafting trip" subtitle="Oct 30, 2020" center>
                   <template #icon>
                     <V-Avatar
-                      picture="/images/photo/demo/dashboards/lifestyle/2.jpg"
+                      picture="/demo/photos/dashboards/lifestyle/2.jpg"
                       squared
                     />
                   </template>
@@ -186,7 +186,7 @@ import {
                 >
                   <template #icon>
                     <V-Avatar
-                      picture="/images/photo/demo/dashboards/lifestyle/3.jpg"
+                      picture="/demo/photos/dashboards/lifestyle/3.jpg"
                       squared
                     />
                   </template>
@@ -213,7 +213,7 @@ import {
                 >
                   <template #icon>
                     <V-Avatar
-                      picture="/images/photo/demo/dashboards/lifestyle/4.jpg"
+                      picture="/demo/photos/dashboards/lifestyle/4.jpg"
                       squared
                     />
                   </template>
@@ -256,7 +256,7 @@ import {
                 >
                   <template #icon>
                     <V-Avatar
-                      picture="/images/photo/demo/dashboards/lifestyle/5.jpg"
+                      picture="/demo/photos/dashboards/lifestyle/5.jpg"
                       squared
                     />
                   </template>
@@ -279,7 +279,7 @@ import {
                 <V-Block title="Group Running" subtitle="Oct 29, 2020" center>
                   <template #icon>
                     <V-Avatar
-                      picture="/images/photo/demo/dashboards/lifestyle/6.jpg"
+                      picture="/demo/photos/dashboards/lifestyle/6.jpg"
                       squared
                     />
                   </template>
@@ -302,7 +302,7 @@ import {
                 <V-Block title="Suit Diving" subtitle="Oct 28, 2020" center>
                   <template #icon>
                     <V-Avatar
-                      picture="/images/photo/demo/dashboards/lifestyle/7.jpg"
+                      picture="/demo/photos/dashboards/lifestyle/7.jpg"
                       squared
                     />
                   </template>
@@ -325,7 +325,7 @@ import {
                 <V-Block title="Desert Trekk" subtitle="Oct 27, 2020" center>
                   <template #icon>
                     <V-Avatar
-                      picture="/images/photo/demo/dashboards/lifestyle/7.jpg"
+                      picture="/demo/photos/dashboards/lifestyle/7.jpg"
                       squared
                     />
                   </template>
@@ -403,9 +403,9 @@ import {
 </template>
 
 <style lang="scss">
-@import '../../../../assets/scss/abstracts/_variables.scss';
-@import '../../../../assets/scss/abstracts/_mixins.scss';
-@import '../../../../assets/scss/pages/generic/_widgets-lists.scss';
+@import '../../../../scss/abstracts/_variables.scss';
+@import '../../../../scss/abstracts/_mixins.scss';
+@import '../../../../scss/pages/generic/_widgets-lists.scss';
 
 .lifestyle-dashboard-v2 {
   .dashboard-title {

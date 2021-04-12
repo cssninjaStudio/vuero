@@ -1,4 +1,4 @@
-export const waitTimeout = 600
+export const waitTimeout = 1200
 export const waitDarkTimeout = 1200
 export const disableTimersAndAnimations = false
 

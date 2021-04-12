@@ -10,7 +10,7 @@ export const optionsSingle = [
 export const flexRowsOrders = [
   {
     id: 0,
-    picture: '/images/avatars/photos/8.jpg',
+    picture: '/demo/avatars/8.jpg',
     username: 'Erik K.',
     orderId: '#158456',
     date: 'Oct 31, 2020',
@@ -20,7 +20,7 @@ export const flexRowsOrders = [
   },
   {
     id: 1,
-    picture: '/images/avatars/photos/22.jpg',
+    picture: '/demo/avatars/22.jpg',
     username: 'Jimmy H.',
     orderId: '#15893',
     date: 'Oct 31, 2020',
@@ -30,7 +30,7 @@ export const flexRowsOrders = [
   },
   {
     id: 2,
-    picture: '/images/avatars/photos/25.jpg',
+    picture: '/demo/avatars/25.jpg',
     username: 'Melany W.',
     orderId: '#155848',
     date: 'Oct 31, 2020',
@@ -40,7 +40,7 @@ export const flexRowsOrders = [
   },
   {
     id: 3,
-    picture: '/images/avatars/photos/12.jpg',
+    picture: '/demo/avatars/12.jpg',
     username: 'Joshua S.',
     orderId: '#154736',
     date: 'Oct 30, 2020',
@@ -50,7 +50,7 @@ export const flexRowsOrders = [
   },
   {
     id: 4,
-    picture: '/images/avatars/photos/13.jpg',
+    picture: '/demo/avatars/13.jpg',
     username: 'Tara S.',
     orderId: '#158315',
     date: 'Oct 30, 2020',

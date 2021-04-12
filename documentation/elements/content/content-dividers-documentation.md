@@ -1,6 +1,6 @@
 ### Horizontal dividers
 
-Huro provides dividers for your textual content.
+Vuero provides dividers for your textual content.
 You can use horizontal and vertical dividers by passing
 the divider text as a `data-content` html attribute.
 See the code example for more details about usage.

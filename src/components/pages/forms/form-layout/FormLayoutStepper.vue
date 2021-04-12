@@ -806,7 +806,7 @@ const validateStep = async () => {
 </template>
 
 <style lang="scss">
-@import '../../../../assets/scss/abstracts/_variables.scss';
-@import '../../../../assets/scss/abstracts/_mixins.scss';
-@import '../../../../assets/scss/pages/generic/_forms-stepper.scss';
+@import '../../../../scss/abstracts/_variables.scss';
+@import '../../../../scss/abstracts/_mixins.scss';
+@import '../../../../scss/pages/generic/_forms-stepper.scss';
 </style>

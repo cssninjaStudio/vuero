@@ -7,11 +7,7 @@ Use the `size="small"` prop on the component to show a smaller version of it.
 
 ```vue
 <template>
-  <V-SnackImage
-    title="Support"
-    image="/images/photo/demo/misc/buoy.jpg"
-    size="small"
-  >
+  <V-SnackImage title="Support" image="/demo/photos/misc/buoy.jpg" size="small">
     <i class="iconify" data-icon="feather:x"></i>
   </V-SnackImage>
   <V-SnackImage
@@ -21,11 +17,7 @@ Use the `size="small"` prop on the component to show a smaller version of it.
   >
     <i class="iconify" data-icon="feather:x"></i>
   </V-SnackImage>
-  <V-SnackImage
-    title="Corporate"
-    image="/images/avatars/photos/7.jpg"
-    size="small"
-  >
+  <V-SnackImage title="Corporate" image="/demo/avatars/7.jpg" size="small">
     <i class="iconify" data-icon="feather:x"></i>
   </V-SnackImage>
   <V-SnackImage
@@ -50,13 +42,13 @@ Use the `size="small"` prop on the component to show a smaller version of it.
 <!--example-->
 
 <div class="snacks">
-    <V-SnackImage title="Support" image="/images/photo/demo/misc/buoy.jpg" size="small">
+    <V-SnackImage title="Support" image="/demo/photos/misc/buoy.jpg" size="small">
         <i class="iconify" data-icon="feather:x"></i>
     </V-SnackImage>
     <V-SnackImage title="Metamovies" image="/images/icons/logos/metamovies.svg" size="small">
         <i class="iconify" data-icon="feather:x"></i>
     </V-SnackImage>
-    <V-SnackImage title="Corporate" image="/images/avatars/photos/7.jpg" size="small">
+    <V-SnackImage title="Corporate" image="/demo/avatars/7.jpg" size="small">
         <i class="iconify" data-icon="feather:x"></i>
     </V-SnackImage>
     <V-SnackImage title="English" image="/images/icons/flags/united-states-of-america.svg" size="small">

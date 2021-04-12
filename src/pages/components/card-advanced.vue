@@ -20,7 +20,7 @@ useHead({
     <div class="page-title has-text-centered">
       <!-- Sidebar Trigger -->
       <div
-        class="huro-hamburger nav-trigger push-resize"
+        class="vuero-hamburger nav-trigger push-resize"
         @click="toggleSidebar('components')"
       >
         <span class="menu-toggle has-chevron">
@@ -81,7 +81,7 @@ useHead({
               <V-Block title="Anna B." subtitle="UX Designer" center>
                 <template #icon>
                   <V-Avatar
-                    picture="/images/avatars/photos/19.jpg"
+                    picture="/demo/avatars/19.jpg"
                     badge="/images/icons/flags/germany.svg"
                   />
                 </template>
@@ -129,7 +129,7 @@ useHead({
               <V-Block title="Anna B." subtitle="UX Designer" center>
                 <template #icon>
                   <V-Avatar
-                    picture="/images/avatars/photos/19.jpg"
+                    picture="/demo/avatars/19.jpg"
                     badge="/images/icons/flags/germany.svg"
                   />
                 </template>
@@ -160,7 +160,7 @@ useHead({
               <V-Block title="Anna B." subtitle="UX Designer" center>
                 <template #icon>
                   <V-Avatar
-                    picture="/images/avatars/photos/19.jpg"
+                    picture="/demo/avatars/19.jpg"
                     badge="/images/icons/flags/germany.svg"
                   />
                 </template>

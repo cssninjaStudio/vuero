@@ -12,7 +12,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
       class="dropdown profile-dropdown dropdown-trigger is-spaced is-up"
     >
       <img
-        src="/images/avatars/photos/8.jpg"
+        src="/demo/avatars/8.jpg"
         alt=""
         @error.once="$event.target.src = 'https://via.placeholder.com/150x150'"
         @click="toggle"
@@ -25,7 +25,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
             <div class="v-avatar is-large">
               <img
                 class="avatar"
-                src="/images/avatars/photos/8.jpg"
+                src="/demo/avatars/8.jpg"
                 alt=""
                 @error.once="
                   $event.target.src = 'https://via.placeholder.com/150x150'

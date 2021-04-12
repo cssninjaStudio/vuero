@@ -12,7 +12,7 @@ using the `center` prop. This will apply the `flex` property
     <template #icon>
       <V-Avatar
         size="medium"
-        picture="/images/avatars/photos/19.jpg"
+        picture="/demo/avatars/19.jpg"
         badge="/images/icons/flags/germany.svg"
       />
     </template>
@@ -34,7 +34,7 @@ using the `center` prop. This will apply the `flex` property
         <template #icon>
           <V-Avatar
             size="medium"
-            picture="/images/avatars/photos/19.jpg"
+            picture="/demo/avatars/19.jpg"
             badge="/images/icons/flags/germany.svg"
           />
         </template>

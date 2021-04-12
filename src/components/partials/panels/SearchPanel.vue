@@ -105,10 +105,7 @@ const filteredData = computed(() => {
                   :offset="[0, 10]"
                   placement="top-start"
                 >
-                  <V-Avatar
-                    size="small"
-                    picture="/images/avatars/photos/7.jpg"
-                  />
+                  <V-Avatar size="small" picture="/demo/avatars/7.jpg" />
                   <template #content>
                     <UserPopoverContent :user="popovers.user7" />
                   </template>
@@ -124,10 +121,7 @@ const filteredData = computed(() => {
                   :offset="[0, 10]"
                   placement="top-start"
                 >
-                  <V-Avatar
-                    size="small"
-                    picture="/images/avatars/photos/13.jpg"
-                  />
+                  <V-Avatar size="small" picture="/demo/avatars/13.jpg" />
                   <template #content>
                     <UserPopoverContent :user="popovers.user13" />
                   </template>
@@ -143,10 +137,7 @@ const filteredData = computed(() => {
                   :offset="[0, 10]"
                   placement="top-start"
                 >
-                  <V-Avatar
-                    size="small"
-                    picture="/images/avatars/photos/22.jpg"
-                  />
+                  <V-Avatar size="small" picture="/demo/avatars/22.jpg" />
                   <template #content>
                     <UserPopoverContent :user="popovers.user22" />
                   </template>
@@ -161,7 +152,7 @@ const filteredData = computed(() => {
 </template>
 
 <style lang="scss">
-@import '../../../assets/scss/abstracts/_variables.scss';
-@import '../../../assets/scss/abstracts/_mixins.scss';
-@import '../../../assets/scss/layout/_right-panel.scss';
+@import '../../../scss/abstracts/_variables.scss';
+@import '../../../scss/abstracts/_mixins.scss';
+@import '../../../scss/layout/_right-panel.scss';
 </style>

@@ -264,7 +264,7 @@ const activeTab = ref<TabId>('components')
                   <h3>Support</h3>
                 </a>
                 <a
-                  href="https://docs.huro.cssninja.io"
+                  href="https://docs.cssninja.io/vuero"
                   class="column-placeholder"
                 >
                   <img
@@ -382,7 +382,7 @@ const activeTab = ref<TabId>('components')
                   <h3>Support</h3>
                 </a>
                 <a
-                  href="https://docs.huro.cssninja.io"
+                  href="https://docs.cssninja.io/vuero"
                   class="column-placeholder"
                 >
                   <img
@@ -407,8 +407,8 @@ const activeTab = ref<TabId>('components')
 </template>
 
 <style lang="scss">
-@import '../../../../../assets/scss/abstracts/_variables.scss';
-@import '../../../../../assets/scss/abstracts/_mixins.scss';
-@import '../../../../../assets/scss/layout/_navbar.scss';
-@import '../../../../../assets/scss/layout/_responsive.scss';
+@import '../../../../../scss/abstracts/_variables.scss';
+@import '../../../../../scss/abstracts/_mixins.scss';
+@import '../../../../../scss/layout/_navbar.scss';
+@import '../../../../../scss/layout/_responsive.scss';
 </style>

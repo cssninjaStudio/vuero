@@ -107,7 +107,7 @@ watchEffect(() => {
       <div class="project-team-header">
         <V-Avatar
           size="big"
-          picture="/images/avatars/photos/8.jpg"
+          picture="/demo/avatars/8.jpg"
           badge="/images/icons/flags/united-states-of-america.svg"
         />
         <h3 class="title is-4 is-narrow is-thin">Erik Kovalsky</h3>

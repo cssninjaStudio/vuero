@@ -158,8 +158,8 @@ const activeTab = ref<TabId>('basic')
 </template>
 
 <style lang="scss">
-@import '../../../../../assets/scss/abstracts/_variables.scss';
-@import '../../../../../assets/scss/abstracts/_mixins.scss';
-@import '../../../../../assets/scss/layout/_navbar.scss';
-@import '../../../../../assets/scss/layout/_responsive.scss';
+@import '../../../../../scss/abstracts/_variables.scss';
+@import '../../../../../scss/abstracts/_mixins.scss';
+@import '../../../../../scss/layout/_navbar.scss';
+@import '../../../../../scss/layout/_responsive.scss';
 </style>

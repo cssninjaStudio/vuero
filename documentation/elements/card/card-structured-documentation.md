@@ -17,7 +17,7 @@ come content. Check the markup for more details about usage.
         <div class="v-avatar">
           <img
             class="avatar"
-            src="/images/avatars/photos/19.jpg"
+            src="/demo/avatars/19.jpg"
             alt=""
             data-user-popover="17"
             @error.once="

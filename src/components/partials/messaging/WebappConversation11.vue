@@ -17,7 +17,7 @@ const emit = defineEmit(['toggleMobileConversation'])
       <div class="chat-area-group">
         <img
           class="chat-area-profile"
-          src="/images/avatars/photos/13.jpg"
+          src="/demo/avatars/13.jpg"
           alt=""
           data-user-popover="6"
           @error.once="
@@ -31,7 +31,7 @@ const emit = defineEmit(['toggleMobileConversation'])
         <div class="chat-msg-profile">
           <img
             class="chat-msg-img"
-            src="/images/avatars/photos/13.jpg"
+            src="/demo/avatars/13.jpg"
             alt=""
             data-user-popover="6"
             @error.once="
@@ -44,7 +44,7 @@ const emit = defineEmit(['toggleMobileConversation'])
           <div class="chat-msg-text">Here are some screenshots.</div>
           <div class="chat-msg-text">
             <img
-              src="/images/photo/demo/apps/15.png"
+              src="/demo/photos/apps/15.png"
               alt=""
               @error.once="
                 $event.target.src = 'https://via.placeholder.com/400x300'
@@ -53,7 +53,7 @@ const emit = defineEmit(['toggleMobileConversation'])
           </div>
           <div class="chat-msg-text">
             <img
-              src="/images/photo/demo/apps/9.png"
+              src="/demo/photos/apps/9.png"
               alt=""
               @error.once="
                 $event.target.src = 'https://via.placeholder.com/400x300'
@@ -62,7 +62,7 @@ const emit = defineEmit(['toggleMobileConversation'])
           </div>
           <div class="chat-msg-text">
             <img
-              src="/images/photo/demo/apps/7.png"
+              src="/demo/photos/apps/7.png"
               alt=""
               @error.once="
                 $event.target.src = 'https://via.placeholder.com/400x300'
@@ -76,7 +76,7 @@ const emit = defineEmit(['toggleMobileConversation'])
         <div class="chat-msg-profile">
           <img
             class="chat-msg-img"
-            src="/images/avatars/photos/8.jpg"
+            src="/demo/avatars/8.jpg"
             alt=""
             data-user-popover="3"
             @error.once="

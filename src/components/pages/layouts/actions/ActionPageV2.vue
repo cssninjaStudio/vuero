@@ -33,8 +33,8 @@ const accept = async () => {
           <div class="box-content">
             <V-Avatar
               size="big"
-              picture="/images/avatars/photos/16.jpg"
-              badge="/images/photo/demo/apps/9.png"
+              picture="/demo/avatars/16.jpg"
+              badge="/demo/photos/apps/9.png"
             />
 
             <h3 class="dark-inverted">
@@ -55,10 +55,7 @@ const accept = async () => {
             <div class="people-wrap">
               <div class="people">
                 <tippy class="has-help-cursor" interactive placement="bottom">
-                  <V-Avatar
-                    size="small"
-                    picture="/images/avatars/photos/21.jpg"
-                  />
+                  <V-Avatar size="small" picture="/demo/avatars/21.jpg" />
                   <template #content>
                     <UserPopoverContent :user="popovers.user21" />
                   </template>
@@ -72,10 +69,7 @@ const accept = async () => {
                 </tippy>
 
                 <tippy class="has-help-cursor" interactive placement="bottom">
-                  <V-Avatar
-                    size="small"
-                    picture="/images/avatars/photos/39.jpg"
-                  />
+                  <V-Avatar size="small" picture="/demo/avatars/39.jpg" />
                   <template #content>
                     <UserPopoverContent :user="popovers.user39" />
                   </template>
@@ -158,7 +152,7 @@ const accept = async () => {
 </template>
 
 <style lang="scss">
-@import '../../../../assets/scss/abstracts/_variables.scss';
-@import '../../../../assets/scss/abstracts/_mixins.scss';
-@import '../../../../assets/scss/pages/generic/_subpages.scss';
+@import '../../../../scss/abstracts/_variables.scss';
+@import '../../../../scss/abstracts/_mixins.scss';
+@import '../../../../scss/pages/generic/_subpages.scss';
 </style>

@@ -37,6 +37,6 @@
 </template>
 
 <style lang="scss">
-@import '../../../../assets/scss/abstracts/_variables.scss';
-@import '../../../../assets/scss/layout/_sidebar.scss';
+@import '../../../../scss/abstracts/_variables.scss';
+@import '../../../../scss/layout/_sidebar.scss';
 </style>

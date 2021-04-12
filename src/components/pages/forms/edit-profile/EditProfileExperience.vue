@@ -194,7 +194,7 @@ const onSave = async () => {
             <!--Experience Item-->
             <div class="setting-item">
               <img
-                src="/images/photo/demo/brands/airbnb.svg"
+                src="/demo/photos/brands/airbnb.svg"
                 alt=""
                 @error.once="
                   $event.target.src = 'https://via.placeholder.com/50x50'
@@ -217,7 +217,7 @@ const onSave = async () => {
             <!--Experience Item-->
             <div class="setting-item">
               <img
-                src="/images/photo/demo/brands/facebook.svg"
+                src="/demo/photos/brands/facebook.svg"
                 alt=""
                 @error.once="
                   $event.target.src = 'https://via.placeholder.com/50x50'
@@ -240,7 +240,7 @@ const onSave = async () => {
             <!--Experience Item-->
             <div class="setting-item">
               <img
-                src="/images/photo/demo/brands/atlassian.svg"
+                src="/demo/photos/brands/atlassian.svg"
                 alt=""
                 @error.once="
                   $event.target.src = 'https://via.placeholder.com/50x50'
@@ -263,7 +263,7 @@ const onSave = async () => {
             <!--Experience Item-->
             <div class="setting-item">
               <img
-                src="/images/photo/demo/brands/github.svg"
+                src="/demo/photos/brands/github.svg"
                 alt=""
                 @error.once="
                   $event.target.src = 'https://via.placeholder.com/50x50'
@@ -286,7 +286,7 @@ const onSave = async () => {
             <!--Experience Item-->
             <div class="setting-item">
               <img
-                src="/images/photo/demo/brands/slack.svg"
+                src="/demo/photos/brands/slack.svg"
                 alt=""
                 @error.once="
                   $event.target.src = 'https://via.placeholder.com/50x50'
@@ -309,7 +309,7 @@ const onSave = async () => {
             <!--Experience Item-->
             <div class="setting-item">
               <img
-                src="/images/photo/demo/brands/gitlab.svg"
+                src="/demo/photos/brands/gitlab.svg"
                 alt=""
                 @error.once="
                   $event.target.src = 'https://via.placeholder.com/50x50'

@@ -5,8 +5,10 @@ import { isLargeScreen } from '/@src/state/responsiveState'
 import VueScrollTo from 'vue-scrollto'
 
 import { isDark } from '/@src/state/darkModeState'
+import { useRouter } from 'vue-router'
 
 const isMobileNavOpen = ref(false)
+const router = useRouter()
 const scrollTo = VueScrollTo.scrollTo
 
 const { y } = useWindowScroll()
@@ -61,10 +63,13 @@ watchEffect(() => {
         </div>
 
         <div class="navbar-item">
-          <a
-            href="#vuero-demos"
+          <RouterLink
+            :to="{
+              name: 'index',
+              hash: '#vuero-demos',
+            }"
             class="nav-link is-scroll"
-            @click.prevent="
+            @click.passive="
               () => {
                 scrollTo('#vuero-demos', 800, { offset: -50 })
                 isMobileNavOpen = false
@@ -72,14 +77,17 @@ watchEffect(() => {
             "
           >
             Demos
-          </a>
+          </RouterLink>
         </div>
 
         <div class="navbar-item">
-          <a
-            href="#vuero-components"
+          <RouterLink
+            :to="{
+              name: 'index',
+              hash: '#vuero-components',
+            }"
             class="nav-link is-scroll"
-            @click.prevent="
+            @click.passive="
               () => {
                 scrollTo('#vuero-components', 800, { offset: -50 })
                 isMobileNavOpen = false
@@ -87,7 +95,7 @@ watchEffect(() => {
             "
           >
             UI Elements
-          </a>
+          </RouterLink>
         </div>
 
         <div class="navbar-item">

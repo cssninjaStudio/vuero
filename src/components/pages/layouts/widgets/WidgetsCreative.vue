@@ -27,7 +27,7 @@ import { products } from '/@src/data/widgets/ui/productList'
 
       <!--Widget-->
       <ContactWidget
-        picture="/images/avatars/photos/8.jpg"
+        picture="/demo/avatars/8.jpg"
         username="Erik K."
         email="erikkovalsky@vuero.io"
         company="Vuero Ltd."
@@ -108,7 +108,7 @@ import { products } from '/@src/data/widgets/ui/productList'
 
       <!--Widget-->
       <ContactWidget
-        picture="/images/avatars/photos/8.jpg"
+        picture="/demo/avatars/8.jpg"
         username="Erik K."
         email="erikkovalsky@vuero.io"
         company="Vuero Ltd."
@@ -147,7 +147,7 @@ import { products } from '/@src/data/widgets/ui/productList'
       <!--Widget-->
       <CallWidget
         picture="/@src/assets/illustrations/widgets/6.svg"
-        badge="/images/avatars/photos/7.jpg"
+        badge="/demo/avatars/7.jpg"
         username="Alice"
       />
 
@@ -163,7 +163,7 @@ import { products } from '/@src/data/widgets/ui/productList'
 </template>
 
 <style lang="scss">
-@import '../../../../assets/scss/abstracts/_variables.scss';
-@import '../../../../assets/scss/abstracts/_mixins.scss';
-@import '../../../../assets/scss/pages/generic/_widgets-lists.scss';
+@import '../../../../scss/abstracts/_variables.scss';
+@import '../../../../scss/abstracts/_mixins.scss';
+@import '../../../../scss/pages/generic/_widgets-lists.scss';
 </style>

@@ -20,7 +20,7 @@ useHead({
     <div class="page-title has-text-centered">
       <!-- Sidebar Trigger -->
       <div
-        class="huro-hamburger nav-trigger push-resize"
+        class="vuero-hamburger nav-trigger push-resize"
         @click="toggleSidebar('components')"
       >
         <span class="menu-toggle has-chevron">
@@ -79,7 +79,7 @@ useHead({
           <V-CardSocial
             title="Featured Tweet"
             network="twitter"
-            avatar="/images/avatars/photos/19.jpg"
+            avatar="/demo/avatars/19.jpg"
             username="Greta K."
             :hashtags="['#bulmaio', '#css', '#responsive']"
             icon="fab fa-twitter"
@@ -95,7 +95,7 @@ useHead({
           <V-CardSocial
             title="Featured Story"
             network="instagram"
-            avatar="/images/avatars/photos/5.jpg"
+            avatar="/demo/avatars/5.jpg"
             username="Mary L."
             :hashtags="['#bulmaio', '#css', '#responsive']"
             icon="fab fa-instagram"
@@ -111,7 +111,7 @@ useHead({
           <V-CardSocial
             title="Featured Post"
             network="facebook"
-            avatar="/images/avatars/photos/36.jpg"
+            avatar="/demo/avatars/36.jpg"
             username="Benoit L."
             :hashtags="['#bulmaio', '#css', '#responsive']"
             icon="fab fa-facebook-f"

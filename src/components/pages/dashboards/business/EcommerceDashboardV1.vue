@@ -31,7 +31,7 @@ import {
   <div class="ecommerce-dashboard ecommerce-dashboard-v1">
     <!--Header-->
     <div class="dashboard-header">
-      <V-Avatar picture="/images/avatars/photos/8.jpg" size="large" />
+      <V-Avatar picture="/demo/avatars/8.jpg" size="large" />
       <div class="start">
         <h3 class="dark-inverted">Welcome back, Erik Kovalsky</h3>
         <p>We're very happy to see you again on your dashboard.</p>
@@ -404,9 +404,9 @@ import {
 </template>
 
 <style lang="scss">
-@import '../../../../assets/scss/abstracts/_variables.scss';
-@import '../../../../assets/scss/abstracts/_mixins.scss';
-@import '../../../../assets/scss/pages/generic/_widgets-stats.scss';
+@import '../../../../scss/abstracts/_variables.scss';
+@import '../../../../scss/abstracts/_mixins.scss';
+@import '../../../../scss/pages/generic/_widgets-stats.scss';
 
 .ecommerce-dashboard-v1 {
   .dashboard-header {

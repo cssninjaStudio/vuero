@@ -8,13 +8,13 @@ an image inside the component.
 
 ```vue
 <template>
-  <V-SnackImage title="Support" image="/images/photo/demo/misc/buoy.jpg">
+  <V-SnackImage title="Support" image="/demo/photos/misc/buoy.jpg">
     <i class="iconify" data-icon="feather:x"></i>
   </V-SnackImage>
   <V-SnackImage title="Metamovies" image="/images/icons/logos/metamovies.svg">
     <i class="iconify" data-icon="feather:x"></i>
   </V-SnackImage>
-  <V-SnackImage title="Corporate" image="/images/avatars/photos/7.jpg">
+  <V-SnackImage title="Corporate" image="/demo/avatars/7.jpg">
     <i class="iconify" data-icon="feather:x"></i>
   </V-SnackImage>
   <V-SnackImage
@@ -34,13 +34,13 @@ an image inside the component.
 <!--example-->
 
 <div class="snacks">
-    <V-SnackImage title="Support" image="/images/photo/demo/misc/buoy.jpg">
+    <V-SnackImage title="Support" image="/demo/photos/misc/buoy.jpg">
         <i class="iconify" data-icon="feather:x"></i>
     </V-SnackImage>
     <V-SnackImage title="Metamovies" image="/images/icons/logos/metamovies.svg">
         <i class="iconify" data-icon="feather:x"></i>
     </V-SnackImage>
-    <V-SnackImage title="Corporate" image="/images/avatars/photos/7.jpg">
+    <V-SnackImage title="Corporate" image="/demo/avatars/7.jpg">
         <i class="iconify" data-icon="feather:x"></i>
     </V-SnackImage>
     <V-SnackImage title="English" image="/images/icons/flags/united-states-of-america.svg">

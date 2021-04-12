@@ -5,82 +5,82 @@
         <div class="boxed-cta">
           <V-Avatar
             class="v-avatar-1"
-            picture="/images/avatars/photos/8.jpg"
+            picture="/demo/avatars/8.jpg"
             size="xl"
           />
           <V-Avatar
             class="v-avatar-2"
-            picture="/images/avatars/photos/5.jpg"
+            picture="/demo/avatars/5.jpg"
             size="large"
           />
           <V-Avatar
             class="v-avatar-3"
-            picture="/images/avatars/photos/7.jpg"
+            picture="/demo/avatars/7.jpg"
             size="large"
           />
           <V-Avatar
             class="v-avatar-4"
-            picture="/images/avatars/photos/13.jpg"
+            picture="/demo/avatars/13.jpg"
             size="xl"
           />
           <V-Avatar
             class="v-avatar-5"
-            picture="/images/avatars/photos/24.jpg"
+            picture="/demo/avatars/24.jpg"
             size="large"
           />
           <V-Avatar
             class="v-avatar-6"
-            picture="/images/avatars/photos/12.jpg"
+            picture="/demo/avatars/12.jpg"
             size="xl"
           />
           <V-Avatar
             class="v-avatar-7"
-            picture="/images/avatars/photos/28.jpg"
+            picture="/demo/avatars/28.jpg"
             size="medium"
           />
           <V-Avatar
             class="v-avatar-8"
-            picture="/images/avatars/photos/32.jpg"
+            picture="/demo/avatars/32.jpg"
             size="large"
           />
           <V-Avatar
             class="v-avatar-9"
-            picture="/images/avatars/photos/41.jpg"
+            picture="/demo/avatars/41.jpg"
             size="xl"
           />
           <V-Avatar
             class="v-avatar-10"
-            picture="/images/avatars/photos/25.jpg"
+            picture="/demo/avatars/25.jpg"
             size="medium"
           />
           <V-Avatar
             class="v-avatar-11"
-            picture="/images/avatars/photos/33.jpg"
+            picture="/demo/avatars/33.jpg"
             size="large"
           />
           <V-Avatar
             class="v-avatar-12"
-            picture="/images/avatars/photos/21.jpg"
+            picture="/demo/avatars/21.jpg"
             size="xl"
           />
           <V-Avatar
             class="v-avatar-13"
-            picture="/images/avatars/photos/23.jpg"
+            picture="/demo/avatars/23.jpg"
             size="large"
           />
           <V-Avatar
             class="v-avatar-14"
-            picture="/images/avatars/photos/9.jpg"
+            picture="/demo/avatars/9.jpg"
             size="large"
           />
           <V-Avatar
             class="v-avatar-15"
-            picture="/images/avatars/photos/15.jpg"
+            picture="/demo/avatars/15.jpg"
             size="large"
           />
           <V-Avatar
             class="v-avatar-16"
-            picture="/images/avatars/photos/11.jpg"
+            picture="/demo/avatars/11.jpg"
             size="large"
           />
           <div class="boxed-cta-content has-text-centered">

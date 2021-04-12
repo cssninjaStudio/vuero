@@ -98,8 +98,8 @@
             <div class="foot-block">
               <h4 class="heading">Developers</h4>
               <div class="developers">
-                <V-Avatar size="small" picture="/images/avatars/photos/7.jpg" />
-                <V-Avatar size="small" picture="/images/avatars/photos/8.jpg" />
+                <V-Avatar size="small" picture="/demo/avatars/7.jpg" />
+                <V-Avatar size="small" picture="/demo/avatars/8.jpg" />
                 <V-Avatar size="small" color="danger" initials="DC" />
               </div>
             </div>
@@ -140,10 +140,7 @@
             <div class="foot-block">
               <h4 class="heading">Developers</h4>
               <div class="developers">
-                <V-Avatar
-                  size="small"
-                  picture="/images/avatars/photos/25.jpg"
-                />
+                <V-Avatar size="small" picture="/demo/avatars/25.jpg" />
               </div>
             </div>
             <div class="foot-block">
@@ -183,11 +180,8 @@
             <div class="foot-block">
               <h4 class="heading">Developers</h4>
               <div class="developers">
-                <V-Avatar size="small" picture="/images/avatars/photos/7.jpg" />
-                <V-Avatar
-                  size="small"
-                  picture="/images/avatars/photos/23.jpg"
-                />
+                <V-Avatar size="small" picture="/demo/avatars/7.jpg" />
+                <V-Avatar size="small" picture="/demo/avatars/23.jpg" />
               </div>
             </div>
             <div class="foot-block">
@@ -228,10 +222,7 @@
             <div class="foot-block">
               <h4 class="heading">Developers</h4>
               <div class="developers">
-                <V-Avatar
-                  size="small"
-                  picture="/images/avatars/photos/11.jpg"
-                />
+                <V-Avatar size="small" picture="/demo/avatars/11.jpg" />
                 <V-Avatar size="small" color="h-orange" initials="AG" />
               </div>
             </div>
@@ -272,10 +263,7 @@
             <div class="foot-block">
               <h4 class="heading">Developers</h4>
               <div class="developers">
-                <V-Avatar
-                  size="small"
-                  picture="/images/avatars/photos/12.jpg"
-                />
+                <V-Avatar size="small" picture="/demo/avatars/12.jpg" />
               </div>
             </div>
             <div class="foot-block">
@@ -315,18 +303,9 @@
             <div class="foot-block">
               <h4 class="heading">Developers</h4>
               <div class="developers">
-                <V-Avatar
-                  size="small"
-                  picture="/images/avatars/photos/24.jpg"
-                />
-                <V-Avatar
-                  size="small"
-                  picture="/images/avatars/photos/18.jpg"
-                />
-                <V-Avatar
-                  size="small"
-                  picture="/images/avatars/photos/16.jpg"
-                />
+                <V-Avatar size="small" picture="/demo/avatars/24.jpg" />
+                <V-Avatar size="small" picture="/demo/avatars/18.jpg" />
+                <V-Avatar size="small" picture="/demo/avatars/16.jpg" />
               </div>
             </div>
             <div class="foot-block">
@@ -408,10 +387,7 @@
             <div class="foot-block">
               <h4 class="heading">Developers</h4>
               <div class="developers">
-                <V-Avatar
-                  size="small"
-                  picture="/images/avatars/photos/25.jpg"
-                />
+                <V-Avatar size="small" picture="/demo/avatars/25.jpg" />
                 <V-Avatar size="small" color="info" initials="ET" />
               </div>
             </div>
@@ -435,7 +411,7 @@
 </template>
 
 <style lang="scss">
-@import '../../../../assets/scss/abstracts/_variables.scss';
-@import '../../../../assets/scss/abstracts/_mixins.scss';
-@import '../../../../assets/scss/pages/projects/_projects.scss';
+@import '../../../../scss/abstracts/_variables.scss';
+@import '../../../../scss/abstracts/_mixins.scss';
+@import '../../../../scss/pages/projects/_projects.scss';
 </style>

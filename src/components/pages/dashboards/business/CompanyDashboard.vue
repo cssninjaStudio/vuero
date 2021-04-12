@@ -76,7 +76,7 @@ onMounted(async () => {
           <div class="v-avatar is-big">
             <img
               class="avatar light-image"
-              src="/images/photo/demo/brands/udemy.svg"
+              src="/demo/photos/brands/udemy.svg"
               alt=""
               @error.once="
                 $event.target.src = 'https://via.placeholder.com/150x150'
@@ -84,7 +84,7 @@ onMounted(async () => {
             />
             <img
               class="avatar dark-image"
-              src="/images/photo/demo/brands/udemy-dark.svg"
+              src="/demo/photos/brands/udemy-dark.svg"
               alt=""
               @error.once="
                 $event.target.src = 'https://via.placeholder.com/150x150'
@@ -338,10 +338,7 @@ onMounted(async () => {
                   :offset="[0, 10]"
                   placement="top-start"
                 >
-                  <V-Avatar
-                    size="medium"
-                    picture="/images/avatars/photos/31.jpg"
-                  />
+                  <V-Avatar size="medium" picture="/demo/avatars/31.jpg" />
                   <template #content>
                     <UserPopoverContent :user="popovers.user31" />
                   </template>
@@ -368,10 +365,7 @@ onMounted(async () => {
                   :offset="[0, 10]"
                   placement="top-start"
                 >
-                  <V-Avatar
-                    size="medium"
-                    picture="/images/avatars/photos/23.jpg"
-                  />
+                  <V-Avatar size="medium" picture="/demo/avatars/23.jpg" />
                   <template #content>
                     <UserPopoverContent :user="popovers.user23" />
                   </template>
@@ -398,10 +392,7 @@ onMounted(async () => {
                   :offset="[0, 10]"
                   placement="top-start"
                 >
-                  <V-Avatar
-                    size="medium"
-                    picture="/images/avatars/photos/32.jpg"
-                  />
+                  <V-Avatar size="medium" picture="/demo/avatars/32.jpg" />
                   <template #content>
                     <UserPopoverContent :user="popovers.user32" />
                   </template>
@@ -428,10 +419,7 @@ onMounted(async () => {
                   :offset="[0, 10]"
                   placement="top-start"
                 >
-                  <V-Avatar
-                    size="medium"
-                    picture="/images/avatars/photos/13.jpg"
-                  />
+                  <V-Avatar size="medium" picture="/demo/avatars/13.jpg" />
                   <template #content>
                     <UserPopoverContent :user="popovers.user13" />
                   </template>
@@ -449,8 +437,8 @@ onMounted(async () => {
 </template>
 
 <style lang="scss">
-@import '../../../../assets/scss/abstracts/_variables.scss';
-@import '../../../../assets/scss/abstracts/_mixins.scss';
+@import '../../../../scss/abstracts/_variables.scss';
+@import '../../../../scss/abstracts/_mixins.scss';
 
 .company-dashboard {
   .company-header {

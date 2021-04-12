@@ -17,7 +17,7 @@ const emit = defineEmit(['toggleMobileConversation'])
       <div class="chat-area-group">
         <img
           class="chat-area-profile"
-          src="/images/avatars/photos/22.jpg"
+          src="/demo/avatars/22.jpg"
           alt=""
           data-user-popover="5"
           @error.once="
@@ -31,7 +31,7 @@ const emit = defineEmit(['toggleMobileConversation'])
         <div class="chat-msg-profile">
           <img
             class="chat-msg-img"
-            src="/images/avatars/photos/22.jpg"
+            src="/demo/avatars/22.jpg"
             alt=""
             data-user-popover="5"
             @error.once="
@@ -49,7 +49,7 @@ const emit = defineEmit(['toggleMobileConversation'])
         <div class="chat-msg-profile">
           <img
             class="chat-msg-img"
-            src="/images/avatars/photos/8.jpg"
+            src="/demo/avatars/8.jpg"
             alt=""
             data-user-popover="3"
             @error.once="

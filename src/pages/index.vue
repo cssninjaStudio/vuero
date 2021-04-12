@@ -16,7 +16,7 @@ useHead({
   <MinimalLightLayout>
     <div class="landing-page-wrapper">
       <!-- Hero and Navbar -->
-      <div id="huro-landing" class="hero is-fullheight rounded-hero is-active">
+      <div id="vuero-landing" class="hero is-fullheight rounded-hero is-active">
         <!-- Navbar partial -->
         <LandingNavigation />
 
@@ -539,7 +539,7 @@ useHead({
             <div class="head-action">
               <div class="buttons">
                 <a
-                  href="https://docs.huro.cssninja.io"
+                  href="https://docs.cssninja.io/vuero"
                   class="button v-button is-primary is-rounded is-elevated action-button"
                   >Read the Docs</a
                 >
@@ -627,7 +627,7 @@ useHead({
           </p>
 
           <!--Components-->
-          <div class="huro-components p-t-40 p-b-60">
+          <div class="vuero-components p-t-40 p-b-60">
             <div class="vertical-tabs-wrapper">
               <div class="tabs">
                 <ul>
@@ -794,7 +794,7 @@ useHead({
 </template>
 
 <style lang="scss">
-@import '../assets/scss/abstracts/_variables.scss';
-@import '../assets/scss/abstracts/_mixins.scss';
-@import '../assets/scss/pages/demo/_landing.scss';
+@import '../scss/abstracts/_variables.scss';
+@import '../scss/abstracts/_mixins.scss';
+@import '../scss/pages/demo/_landing.scss';
 </style>

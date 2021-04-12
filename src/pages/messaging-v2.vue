@@ -12,7 +12,7 @@ const conversations = [
     name: 'Kelly Marston',
     role: 'Product Manager',
     avatar: {
-      picture: '/images/avatars/photos/11.jpg',
+      picture: '/demo/avatars/11.jpg',
     },
     lastMessage: '20m',
     lastMessagePreview: 'What time was our meeting scheduled for?',
@@ -22,7 +22,7 @@ const conversations = [
     name: 'Alejandro Badajoz',
     role: 'Business Analyst',
     avatar: {
-      picture: '/images/avatars/photos/39.jpg',
+      picture: '/demo/avatars/39.jpg',
     },
     lastMessage: '24m',
     lastMessagePreview: 'Nah, I have a meeting that starts in 5.',
@@ -44,7 +44,7 @@ const conversations = [
     name: 'Alice Carasca',
     role: 'Software Engineer',
     avatar: {
-      picture: '/images/avatars/photos/7.jpg',
+      picture: '/demo/avatars/7.jpg',
     },
     lastMessage: '47m',
     lastMessagePreview: 'I like the curves in this one.',
@@ -54,7 +54,7 @@ const conversations = [
     name: 'Irina Vierbovsky',
     role: 'Project Manager',
     avatar: {
-      picture: '/images/avatars/photos/23.jpg',
+      picture: '/demo/avatars/23.jpg',
     },
     lastMessage: '56m',
     lastMessagePreview: 'I need some help on something Iam working on.',
@@ -64,7 +64,7 @@ const conversations = [
     name: 'Mary Lebowski',
     role: 'Project Manager',
     avatar: {
-      picture: '/images/avatars/photos/5.jpg',
+      picture: '/demo/avatars/5.jpg',
     },
     lastMessage: '1h',
     lastMessagePreview: 'Still down for that movie?',
@@ -74,7 +74,7 @@ const conversations = [
     name: 'Esteban Castellanos',
     role: 'UI/UX Designer',
     avatar: {
-      picture: '/images/avatars/photos/18.jpg',
+      picture: '/demo/avatars/18.jpg',
     },
     lastMessage: '1h',
     lastMessagePreview: 'I can send you the files.',
@@ -84,7 +84,7 @@ const conversations = [
     name: 'Melany Wallace',
     role: 'Web Developer',
     avatar: {
-      picture: '/images/avatars/photos/25.jpg',
+      picture: '/demo/avatars/25.jpg',
     },
     lastMessage: '2h',
     lastMessagePreview: 'I has some issues with the headers tough.',
@@ -94,7 +94,7 @@ const conversations = [
     name: 'Jimmy Hector',
     role: 'Project Manager',
     avatar: {
-      picture: '/images/avatars/photos/22.jpg',
+      picture: '/demo/avatars/22.jpg',
     },
     lastMessage: '3h',
     lastMessagePreview: 'When are you available?',
@@ -104,7 +104,7 @@ const conversations = [
     name: 'Greta Kroppfer',
     role: 'Sales Manager',
     avatar: {
-      picture: '/images/avatars/photos/19.jpg',
+      picture: '/demo/avatars/19.jpg',
     },
     lastMessage: '3h',
     lastMessagePreview:
@@ -115,7 +115,7 @@ const conversations = [
     name: 'Tara Svenson',
     role: 'UI/UX Designer',
     avatar: {
-      picture: '/images/avatars/photos/13.jpg',
+      picture: '/demo/avatars/13.jpg',
     },
     lastMessage: '9h',
     lastMessagePreview: 'Hope you like them.',
@@ -194,7 +194,7 @@ useHead({
               <div class="profile-avatar">
                 <img
                   class="avatar"
-                  src="/images/avatars/photos/8.jpg"
+                  src="/demo/avatars/8.jpg"
                   alt=""
                   @error.once="
                     $event.target.src = 'https://via.placeholder.com/150x150'
@@ -443,84 +443,84 @@ useHead({
               </div>
               <div class="detail-photo-grid">
                 <img
-                  src="/images/photo/demo/demo-apps/1.jpg"
+                  src="/demo/photos/demo-apps/1.jpg"
                   alt=""
                   @error.once="
                     $event.target.src = 'https://via.placeholder.com/1600x900'
                   "
                 />
                 <img
-                  src="/images/photo/demo/demo-apps/2.jpg"
+                  src="/demo/photos/demo-apps/2.jpg"
                   alt=""
                   @error.once="
                     $event.target.src = 'https://via.placeholder.com/1600x900'
                   "
                 />
                 <img
-                  src="/images/photo/demo/demo-apps/3.jpg"
+                  src="/demo/photos/demo-apps/3.jpg"
                   alt=""
                   @error.once="
                     $event.target.src = 'https://via.placeholder.com/1600x900'
                   "
                 />
                 <img
-                  src="/images/photo/demo/demo-apps/4.jpg"
+                  src="/demo/photos/demo-apps/4.jpg"
                   alt=""
                   @error.once="
                     $event.target.src = 'https://via.placeholder.com/1600x900'
                   "
                 />
                 <img
-                  src="/images/photo/demo/demo-apps/5.jpg"
+                  src="/demo/photos/demo-apps/5.jpg"
                   alt=""
                   @error.once="
                     $event.target.src = 'https://via.placeholder.com/1600x900'
                   "
                 />
                 <img
-                  src="/images/photo/demo/demo-apps/6.jpg"
+                  src="/demo/photos/demo-apps/6.jpg"
                   alt=""
                   @error.once="
                     $event.target.src = 'https://via.placeholder.com/1600x900'
                   "
                 />
                 <img
-                  src="/images/photo/demo/demo-apps/7.jpg"
+                  src="/demo/photos/demo-apps/7.jpg"
                   alt=""
                   @error.once="
                     $event.target.src = 'https://via.placeholder.com/1600x900'
                   "
                 />
                 <img
-                  src="/images/photo/demo/demo-apps/8.jpg"
+                  src="/demo/photos/demo-apps/8.jpg"
                   alt=""
                   @error.once="
                     $event.target.src = 'https://via.placeholder.com/1600x900'
                   "
                 />
                 <img
-                  src="/images/photo/demo/demo-apps/9.jpg"
+                  src="/demo/photos/demo-apps/9.jpg"
                   alt=""
                   @error.once="
                     $event.target.src = 'https://via.placeholder.com/1600x900'
                   "
                 />
                 <img
-                  src="/images/photo/demo/demo-apps/10.jpg"
+                  src="/demo/photos/demo-apps/10.jpg"
                   alt=""
                   @error.once="
                     $event.target.src = 'https://via.placeholder.com/1600x900'
                   "
                 />
                 <img
-                  src="/images/photo/demo/demo-apps/11.jpg"
+                  src="/demo/photos/demo-apps/11.jpg"
                   alt=""
                   @error.once="
                     $event.target.src = 'https://via.placeholder.com/1600x900'
                   "
                 />
                 <img
-                  src="/images/photo/demo/demo-apps/12.jpg"
+                  src="/demo/photos/demo-apps/12.jpg"
                   alt=""
                   @error.once="
                     $event.target.src = 'https://via.placeholder.com/1600x900'
@@ -537,7 +537,7 @@ useHead({
 </template>
 
 <style lang="scss">
-@import '../assets/scss/abstracts/_variables.scss';
+@import '../scss/abstracts/_variables.scss';
 
 /* ==========================================================================
 1. Variables / Wrapper / Header

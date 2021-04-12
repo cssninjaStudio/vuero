@@ -32,7 +32,7 @@ const props = defineProps({
       <div class="dashboard-header">
         <div class="avatar-container">
           <img
-            src="/images/photo/demo/faces/girl1.jpg"
+            src="/demo/photos/faces/girl1.jpg"
             alt=""
             @error.once="
               $event.target.src = 'https://via.placeholder.com/150x150'
@@ -682,7 +682,7 @@ const props = defineProps({
                 <div class="heatmap-title">
                   <div class="title-avatar">
                     <img
-                      src="/images/photo/demo/faces/girl1.jpg"
+                      src="/demo/photos/faces/girl1.jpg"
                       alt=""
                       @error.once="
                         $event.target.src =
@@ -1176,7 +1176,7 @@ const props = defineProps({
               <div class="card-image">
                 <figure class="image is-4by3">
                   <img
-                    src="/images/photo/demo/30.jpg"
+                    src="/demo/photos/30.jpg"
                     alt=""
                     @error.once="
                       $event.target.src = 'https://via.placeholder.com/1280x960'
@@ -1188,7 +1188,7 @@ const props = defineProps({
                 <div class="post-group">
                   <a>
                     <img
-                      src="/images/photo/demo/33.jpg"
+                      src="/demo/photos/33.jpg"
                       alt=""
                       @error.once="
                         $event.target.src =
@@ -1198,7 +1198,7 @@ const props = defineProps({
                   </a>
                   <a>
                     <img
-                      src="/images/photo/demo/34.jpg"
+                      src="/demo/photos/34.jpg"
                       alt=""
                       @error.once="
                         $event.target.src =
@@ -1208,7 +1208,7 @@ const props = defineProps({
                   </a>
                   <a>
                     <img
-                      src="/images/photo/demo/35.jpeg"
+                      src="/demo/photos/35.jpeg"
                       alt=""
                       @error.once="
                         $event.target.src =
@@ -1218,7 +1218,7 @@ const props = defineProps({
                   </a>
                   <a>
                     <img
-                      src="/images/photo/demo/36.jpg"
+                      src="/demo/photos/36.jpg"
                       alt=""
                       @error.once="
                         $event.target.src =
@@ -1246,7 +1246,7 @@ const props = defineProps({
               <div class="card-image">
                 <figure class="image is-4by3">
                   <img
-                    src="/images/photo/demo/31.png"
+                    src="/demo/photos/31.png"
                     alt=""
                     @error.once="
                       $event.target.src = 'https://via.placeholder.com/1280x960'
@@ -1258,7 +1258,7 @@ const props = defineProps({
                 <div class="post-group">
                   <a>
                     <img
-                      src="/images/photo/demo/33.jpg"
+                      src="/demo/photos/33.jpg"
                       alt=""
                       @error.once="
                         $event.target.src =
@@ -1268,7 +1268,7 @@ const props = defineProps({
                   </a>
                   <a>
                     <img
-                      src="/images/photo/demo/34.jpg"
+                      src="/demo/photos/34.jpg"
                       alt=""
                       @error.once="
                         $event.target.src =
@@ -1278,7 +1278,7 @@ const props = defineProps({
                   </a>
                   <a>
                     <img
-                      src="/images/photo/demo/35.jpeg"
+                      src="/demo/photos/35.jpeg"
                       alt=""
                       @error.once="
                         $event.target.src =
@@ -1288,7 +1288,7 @@ const props = defineProps({
                   </a>
                   <a>
                     <img
-                      src="/images/photo/demo/36.jpg"
+                      src="/demo/photos/36.jpg"
                       alt=""
                       @error.once="
                         $event.target.src =
@@ -1316,7 +1316,7 @@ const props = defineProps({
               <div class="card-image">
                 <figure class="image is-4by3">
                   <img
-                    src="/images/photo/demo/32.jpg"
+                    src="/demo/photos/32.jpg"
                     alt=""
                     @error.once="
                       $event.target.src = 'https://via.placeholder.com/1280x960'
@@ -1328,7 +1328,7 @@ const props = defineProps({
                 <div class="post-group">
                   <a>
                     <img
-                      src="/images/photo/demo/33.jpg"
+                      src="/demo/photos/33.jpg"
                       alt=""
                       @error.once="
                         $event.target.src =
@@ -1338,7 +1338,7 @@ const props = defineProps({
                   </a>
                   <a>
                     <img
-                      src="/images/photo/demo/34.jpg"
+                      src="/demo/photos/34.jpg"
                       alt=""
                       @error.once="
                         $event.target.src =
@@ -1348,7 +1348,7 @@ const props = defineProps({
                   </a>
                   <a>
                     <img
-                      src="/images/photo/demo/35.jpeg"
+                      src="/demo/photos/35.jpeg"
                       alt=""
                       @error.once="
                         $event.target.src =
@@ -1358,7 +1358,7 @@ const props = defineProps({
                   </a>
                   <a>
                     <img
-                      src="/images/photo/demo/36.jpg"
+                      src="/demo/photos/36.jpg"
                       alt=""
                       @error.once="
                         $event.target.src =
@@ -1405,9 +1405,9 @@ const props = defineProps({
 </template>
 
 <style lang="scss">
-@import '../../../../assets/scss/abstracts/_variables.scss';
-@import '../../../../assets/scss/abstracts/_mixins.scss';
-@import '../../../../assets/scss/pages/generic/_widgets-stats.scss';
+@import '../../../../scss/abstracts/_variables.scss';
+@import '../../../../scss/abstracts/_mixins.scss';
+@import '../../../../scss/pages/generic/_widgets-stats.scss';
 
 .lifestyle-dashboard-bg {
   position: absolute;

@@ -114,8 +114,8 @@ const filterProjects = ref(0)
                 <V-AvatarStack
                   size="small"
                   :avatars="[
-                    { picture: '/images/avatars/photos/13.jpg' },
-                    { picture: '/images/avatars/photos/11.jpg' },
+                    { picture: '/demo/avatars/13.jpg' },
+                    { picture: '/demo/avatars/11.jpg' },
                   ]"
                 />
 
@@ -150,15 +150,15 @@ const filterProjects = ref(0)
                 <V-AvatarStack
                   size="small"
                   :avatars="[
-                    { picture: '/images/avatars/photos/7.jpg' },
-                    { picture: '/images/avatars/photos/9.jpg' },
+                    { picture: '/demo/avatars/7.jpg' },
+                    { picture: '/demo/avatars/9.jpg' },
                     { color: 'info', initials: 'JD' },
-                    { picture: '/images/avatars/photos/12.jpg' },
-                    { picture: '/images/avatars/photos/8.jpg' },
-                    { picture: '/images/avatars/photos/25.jpg' },
-                    { picture: '/images/avatars/photos/25.jpg' },
-                    { picture: '/images/avatars/photos/25.jpg' },
-                    { picture: '/images/avatars/photos/25.jpg' },
+                    { picture: '/demo/avatars/12.jpg' },
+                    { picture: '/demo/avatars/8.jpg' },
+                    { picture: '/demo/avatars/25.jpg' },
+                    { picture: '/demo/avatars/25.jpg' },
+                    { picture: '/demo/avatars/25.jpg' },
+                    { picture: '/demo/avatars/25.jpg' },
                   ]"
                 />
 
@@ -193,7 +193,7 @@ const filterProjects = ref(0)
               <div class="item-people">
                 <V-AvatarStack
                   size="small"
-                  :avatars="[{ picture: '/images/avatars/photos/14.jpg' }]"
+                  :avatars="[{ picture: '/demo/avatars/14.jpg' }]"
                 />
 
                 <span class="label">1 week left</span>
@@ -227,11 +227,11 @@ const filterProjects = ref(0)
                 <V-AvatarStack
                   size="small"
                   :avatars="[
-                    { picture: '/images/avatars/photos/8.jpg' },
-                    { picture: '/images/avatars/photos/22.jpg' },
-                    { picture: '/images/avatars/photos/12.jpg' },
-                    { picture: '/images/avatars/photos/10.jpg' },
-                    { picture: '/images/avatars/photos/26.jpg' },
+                    { picture: '/demo/avatars/8.jpg' },
+                    { picture: '/demo/avatars/22.jpg' },
+                    { picture: '/demo/avatars/12.jpg' },
+                    { picture: '/demo/avatars/10.jpg' },
+                    { picture: '/demo/avatars/26.jpg' },
                   ]"
                 />
 
@@ -266,10 +266,10 @@ const filterProjects = ref(0)
                 <V-AvatarStack
                   size="small"
                   :avatars="[
-                    { picture: '/images/avatars/photos/13.jpg' },
-                    { picture: '/images/avatars/photos/11.jpg' },
-                    { picture: '/images/avatars/photos/8.jpg' },
-                    { picture: '/images/avatars/photos/22.jpg' },
+                    { picture: '/demo/avatars/13.jpg' },
+                    { picture: '/demo/avatars/11.jpg' },
+                    { picture: '/demo/avatars/8.jpg' },
+                    { picture: '/demo/avatars/22.jpg' },
                   ]"
                 />
 
@@ -305,8 +305,8 @@ const filterProjects = ref(0)
                 <V-AvatarStack
                   size="small"
                   :avatars="[
-                    { picture: '/images/avatars/photos/13.jpg' },
-                    { picture: '/images/avatars/photos/11.jpg' },
+                    { picture: '/demo/avatars/13.jpg' },
+                    { picture: '/demo/avatars/11.jpg' },
                   ]"
                 />
 
@@ -341,10 +341,10 @@ const filterProjects = ref(0)
                 <V-AvatarStack
                   size="small"
                   :avatars="[
-                    { picture: '/images/avatars/photos/13.jpg' },
-                    { picture: '/images/avatars/photos/16.jpg' },
-                    { picture: '/images/avatars/photos/10.jpg' },
-                    { picture: '/images/avatars/photos/9.jpg' },
+                    { picture: '/demo/avatars/13.jpg' },
+                    { picture: '/demo/avatars/16.jpg' },
+                    { picture: '/demo/avatars/10.jpg' },
+                    { picture: '/demo/avatars/9.jpg' },
                   ]"
                 />
 
@@ -379,9 +379,9 @@ const filterProjects = ref(0)
                 <V-AvatarStack
                   size="small"
                   :avatars="[
-                    { picture: '/images/avatars/photos/22.jpg' },
-                    { picture: '/images/avatars/photos/10.jpg' },
-                    { picture: '/images/avatars/photos/26.jpg' },
+                    { picture: '/demo/avatars/22.jpg' },
+                    { picture: '/demo/avatars/10.jpg' },
+                    { picture: '/demo/avatars/26.jpg' },
                   ]"
                 />
 
@@ -416,9 +416,9 @@ const filterProjects = ref(0)
                 <V-AvatarStack
                   size="small"
                   :avatars="[
-                    { picture: '/images/avatars/photos/14.jpg' },
-                    { picture: '/images/avatars/photos/16.jpg' },
-                    { picture: '/images/avatars/photos/10.jpg' },
+                    { picture: '/demo/avatars/14.jpg' },
+                    { picture: '/demo/avatars/16.jpg' },
+                    { picture: '/demo/avatars/10.jpg' },
                   ]"
                 />
 
@@ -433,7 +433,7 @@ const filterProjects = ref(0)
 </template>
 
 <style lang="scss">
-@import '../../../../assets/scss/abstracts/_variables.scss';
-@import '../../../../assets/scss/abstracts/_mixins.scss';
-@import '../../../../assets/scss/pages/projects/_projects.scss';
+@import '../../../../scss/abstracts/_variables.scss';
+@import '../../../../scss/abstracts/_mixins.scss';
+@import '../../../../scss/pages/projects/_projects.scss';
 </style>

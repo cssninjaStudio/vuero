@@ -165,8 +165,8 @@ watchEffect(() => {
 </template>
 
 <style lang="scss">
-@import '../assets/scss/abstracts/_variables.scss';
-@import '../assets/scss/abstracts/_mixins.scss';
+@import '../scss/abstracts/_variables.scss';
+@import '../scss/abstracts/_mixins.scss';
 
 /* ==========================================================================
 1. Wizard V1 Navigation

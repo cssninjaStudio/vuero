@@ -17,7 +17,7 @@ const emit = defineEmit(['toggleMobileConversation'])
       <div class="chat-area-group">
         <img
           class="chat-area-profile"
-          src="/images/avatars/photos/25.jpg"
+          src="/demo/avatars/25.jpg"
           alt=""
           data-user-popover="4"
           @error.once="
@@ -31,7 +31,7 @@ const emit = defineEmit(['toggleMobileConversation'])
         <div class="chat-msg-profile">
           <img
             class="chat-msg-img"
-            src="/images/avatars/photos/25.jpg"
+            src="/demo/avatars/25.jpg"
             alt=""
             data-user-popover="7"
             @error.once="
@@ -44,7 +44,7 @@ const emit = defineEmit(['toggleMobileConversation'])
           <div class="chat-msg-text">Just finished implementing this one.</div>
           <div class="chat-msg-text">
             <img
-              src="/images/photo/demo/apps/13.png"
+              src="/demo/photos/apps/13.png"
               alt=""
               @error.once="
                 $event.target.src = 'https://via.placeholder.com/400x300'
@@ -60,7 +60,7 @@ const emit = defineEmit(['toggleMobileConversation'])
         <div class="chat-msg-profile">
           <img
             class="chat-msg-img"
-            src="/images/avatars/photos/8.jpg"
+            src="/demo/avatars/8.jpg"
             alt=""
             data-user-popover="3"
             @error.once="

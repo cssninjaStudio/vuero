@@ -15,7 +15,7 @@ using the `radius` prop.
       <V-Block title="Anna B." subtitle="UX Designer" center>
         <template #icon>
           <V-Avatar
-            picture="/images/avatars/photos/19.jpg"
+            picture="/demo/avatars/19.jpg"
             badge="/images/icons/flags/germany.svg"
           />
         </template>

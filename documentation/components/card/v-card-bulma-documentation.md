@@ -10,8 +10,8 @@ the content you want to display. Check the code example for more details.
 ```vue
 <template>
   <V-CardBulma
-    image="/images/photo/demo/apps/2.png"
-    avatar="/images/avatars/photos/23.jpg"
+    image="/demo/photos/apps/2.png"
+    avatar="/demo/avatars/23.jpg"
     badge="/images/icons/flags/united-states-of-america.svg"
     title="Irina V."
     subtitle="Project Manager"

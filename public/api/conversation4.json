@@ -15,7 +15,7 @@
                 "id": "1",
                 "type": "msg",
                 "sender": "other",
-                "avatar": "/images/avatars/photos/18.jpg",
+                "avatar": "/demo/avatars/18.jpg",
                 "content": {
                     "text": "Hello Erik, I'd like a detailed report about the crowd funding campaign that was launched yesterday",
                     "time": "08:52am"
@@ -25,7 +25,7 @@
                 "id": "2",
                 "type": "msg",
                 "sender": "self",
-                "avatar": "/images/avatars/photos/8.jpg",
+                "avatar": "/demo/avatars/8.jpg",
                 "content": {
                     "text": "Sure, I'll give you everything you need to know",
                     "time": "08:54am"
@@ -35,7 +35,7 @@
                 "id": "3",
                 "type": "msg",
                 "sender": "self",
-                "avatar": "/images/avatars/photos/8.jpg",
+                "avatar": "/demo/avatars/8.jpg",
                 "content": {
                     "text": "Would you like some early metrics as well?",
                     "time": "08:58am"
@@ -45,7 +45,7 @@
                 "id": "4",
                 "type": "msg",
                 "sender": "self",
-                "avatar": "/images/avatars/photos/8.jpg",
+                "avatar": "/demo/avatars/8.jpg",
                 "content": {
                     "text": "Also, I have it in several formats. Would you prefer web, PDF or something else?",
                     "time": "09:05am"
@@ -55,7 +55,7 @@
                 "id": "5",
                 "type": "msg",
                 "sender": "other",
-                "avatar": "/images/avatars/photos/18.jpg",
+                "avatar": "/demo/avatars/18.jpg",
                 "content": {
                     "text": "I'll go for web.",
                     "time": "09:10am"
@@ -65,7 +65,7 @@
                 "id": "6",
                 "type": "msg",
                 "sender": "self",
-                "avatar": "/images/avatars/photos/8.jpg",
+                "avatar": "/demo/avatars/8.jpg",
                 "content": {
                     "text": "Got it Boss, right on the way.",
                     "time": "09:11"
@@ -75,7 +75,7 @@
                 "id": "7",
                 "type": "msg",
                 "sender": "other",
-                "avatar": "/images/avatars/photos/18.jpg",
+                "avatar": "/demo/avatars/18.jpg",
                 "content": {
                     "text": "Great! thank you Erik",
                     "time": "09:11"

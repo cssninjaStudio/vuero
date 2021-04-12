@@ -183,10 +183,11 @@ useHead({
                   Cancel
                 </V-Button>
                 <V-Button
-                  color="solid"
+                  color="primary"
                   size="big"
                   lower
                   rounded
+                  solid
                   @click="step = 'login'"
                 >
                   Confirm
@@ -201,8 +202,8 @@ useHead({
 </template>
 
 <style lang="scss" scoped>
-@import '../../assets/scss/abstracts/_variables.scss';
-@import '../../assets/scss/abstracts/_mixins.scss';
+@import '../../scss/abstracts/_variables.scss';
+@import '../../scss/abstracts/_mixins.scss';
 
 .modern-login {
   position: relative;

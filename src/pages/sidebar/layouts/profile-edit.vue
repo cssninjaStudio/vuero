@@ -7,7 +7,7 @@ import { activeSidebar, toggleSidebar } from '/@src/state/activeSidebarState'
     <div class="page-title has-text-centered">
       <!-- Sidebar Trigger -->
       <div
-        class="huro-hamburger nav-trigger push-resize"
+        class="vuero-hamburger nav-trigger push-resize"
         @click="toggleSidebar('layouts')"
       >
         <span class="menu-toggle has-chevron">
@@ -42,7 +42,7 @@ import { activeSidebar, toggleSidebar } from '/@src/state/activeSidebarState'
                 <template #icon>
                   <V-Avatar
                     size="large"
-                    picture="/images/avatars/photos/8.jpg"
+                    picture="/demo/avatars/8.jpg"
                     badge="/images/icons/flags/united-states-of-america.svg"
                   />
                 </template>
@@ -106,7 +106,7 @@ import { activeSidebar, toggleSidebar } from '/@src/state/activeSidebarState'
 </template>
 
 <style lang="scss">
-@import '../../../assets/scss/abstracts/_variables.scss';
-@import '../../../assets/scss/abstracts/_mixins.scss';
-@import '../../../assets/scss/pages/profile/_user-profile.scss';
+@import '../../../scss/abstracts/_variables.scss';
+@import '../../../scss/abstracts/_mixins.scss';
+@import '../../../scss/pages/profile/_user-profile.scss';
 </style>

@@ -29,10 +29,10 @@ import 'tippy.js/dist/border.css'
 import 'tippy.js/dist/backdrop.css'
 import 'tippy.js/themes/light.css'
 
-import './assets/scss/vendors/font-awesome-v5.css'
-import './assets/scss/vendors/line-icons-pro.css'
-import './assets/scss/vendors/prism-coldark-cold.css'
-import './assets/scss/main.scss'
+import './scss/vendors/font-awesome-v5.css'
+import './scss/vendors/line-icons-pro.css'
+import './scss/vendors/prism-coldark-cold.css'
+import './scss/main.scss'
 
 const app = createApp(App)
 const head = createHead()

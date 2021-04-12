@@ -37,7 +37,7 @@ useHead({
     <div class="page-title has-text-centered">
       <!-- Sidebar Trigger -->
       <div
-        class="huro-hamburger nav-trigger push-resize"
+        class="vuero-hamburger nav-trigger push-resize"
         @click="toggleSidebar('components')"
       >
         <span class="menu-toggle has-chevron">
@@ -210,7 +210,7 @@ useHead({
     >
       <template #content>
         <V-PlaceholderInvite
-          image="/images/avatars/photos/22.jpg"
+          image="/demo/avatars/22.jpg"
           badge="/images/icons/flags/united-states-of-america.svg"
           title="You were invited"
           subtitle="Jimmy H. invited you to join the Heartman &amp; Sons project."
@@ -230,7 +230,7 @@ useHead({
     >
       <template #content>
         <V-PlaceholderInvite
-          image="/images/avatars/photos/22.jpg"
+          image="/demo/avatars/22.jpg"
           badge="/images/icons/flags/united-states-of-america.svg"
           title="You were invited"
           subtitle="Jimmy H. invited you to join the Heartman &amp; Sons project."
@@ -251,7 +251,7 @@ useHead({
     >
       <template #content>
         <V-PlaceholderInvite
-          image="/images/avatars/photos/22.jpg"
+          image="/demo/avatars/22.jpg"
           badge="/images/icons/flags/united-states-of-america.svg"
           title="You were invited"
           subtitle="Jimmy H. invited you to join the Heartman &amp; Sons project."
@@ -272,7 +272,7 @@ useHead({
     >
       <template #content>
         <V-PlaceholderInvite
-          image="/images/avatars/photos/22.jpg"
+          image="/demo/avatars/22.jpg"
           badge="/images/icons/flags/united-states-of-america.svg"
           title="You were invited"
           subtitle="Jimmy H. invited you to join the Heartman &amp; Sons project."
@@ -293,7 +293,7 @@ useHead({
     >
       <template #content>
         <V-PlaceholderInvite
-          image="/images/avatars/photos/22.jpg"
+          image="/demo/avatars/22.jpg"
           badge="/images/icons/flags/united-states-of-america.svg"
           title="You were invited"
           subtitle="Jimmy H. invited you to join the Heartman &amp; Sons project."
@@ -484,7 +484,7 @@ useHead({
                           <li>
                             <span class="item-icon">
                               <img
-                                src="/images/avatars/photos/22.jpg"
+                                src="/demo/avatars/22.jpg"
                                 alt=""
                                 @error.once="
                                   $event.target.src =
@@ -500,7 +500,7 @@ useHead({
                           <li>
                             <span class="item-icon">
                               <img
-                                src="/images/avatars/photos/8.jpg"
+                                src="/demo/avatars/8.jpg"
                                 alt=""
                                 @error.once="
                                   $event.target.src =
@@ -516,7 +516,7 @@ useHead({
                           <li>
                             <span class="item-icon">
                               <img
-                                src="/images/avatars/photos/7.jpg"
+                                src="/demo/avatars/7.jpg"
                                 alt=""
                                 @error.once="
                                   $event.target.src =
@@ -532,7 +532,7 @@ useHead({
                           <li>
                             <span class="item-icon">
                               <img
-                                src="/images/avatars/photos/25.jpg"
+                                src="/demo/avatars/25.jpg"
                                 alt=""
                                 @error.once="
                                   $event.target.src =
@@ -548,7 +548,7 @@ useHead({
                           <li>
                             <span class="item-icon">
                               <img
-                                src="/images/avatars/photos/12.jpg"
+                                src="/demo/avatars/12.jpg"
                                 alt=""
                                 @error.once="
                                   $event.target.src =
@@ -700,7 +700,7 @@ useHead({
                           <li>
                             <span class="item-icon">
                               <img
-                                src="/images/avatars/photos/22.jpg"
+                                src="/demo/avatars/22.jpg"
                                 alt=""
                                 @error.once="
                                   $event.target.src =
@@ -716,7 +716,7 @@ useHead({
                           <li>
                             <span class="item-icon">
                               <img
-                                src="/images/avatars/photos/8.jpg"
+                                src="/demo/avatars/8.jpg"
                                 alt=""
                                 @error.once="
                                   $event.target.src =
@@ -732,7 +732,7 @@ useHead({
                           <li>
                             <span class="item-icon">
                               <img
-                                src="/images/avatars/photos/7.jpg"
+                                src="/demo/avatars/7.jpg"
                                 alt=""
                                 @error.once="
                                   $event.target.src =
@@ -748,7 +748,7 @@ useHead({
                           <li>
                             <span class="item-icon">
                               <img
-                                src="/images/avatars/photos/25.jpg"
+                                src="/demo/avatars/25.jpg"
                                 alt=""
                                 @error.once="
                                   $event.target.src =
@@ -764,7 +764,7 @@ useHead({
                           <li>
                             <span class="item-icon">
                               <img
-                                src="/images/avatars/photos/12.jpg"
+                                src="/demo/avatars/12.jpg"
                                 alt=""
                                 @error.once="
                                   $event.target.src =

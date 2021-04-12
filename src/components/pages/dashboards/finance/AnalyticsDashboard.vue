@@ -177,7 +177,7 @@ import { notifications } from '/@src/data/widgets/ui/notificationList'
       <div class="column is-3">
         <!--Widget-->
         <ContactWidget
-          picture="/images/avatars/photos/8.jpg"
+          picture="/demo/avatars/8.jpg"
           username="Erik K."
           email="erikkovalsky@vuero.io"
           company="Vuero Ltd."
@@ -312,9 +312,9 @@ import { notifications } from '/@src/data/widgets/ui/notificationList'
 </template>
 
 <style lang="scss">
-@import '../../../../assets/scss/abstracts/_variables.scss';
-@import '../../../../assets/scss/abstracts/_mixins.scss';
-@import '../../../../assets/scss/pages/generic/_widgets-lists.scss';
+@import '../../../../scss/abstracts/_variables.scss';
+@import '../../../../scss/abstracts/_mixins.scss';
+@import '../../../../scss/pages/generic/_widgets-lists.scss';
 
 .analytics-dashboard {
   .dashboard-tile {

@@ -1,7 +1,7 @@
 export const users = [
   {
     id: 13,
-    avatar: '/images/avatars/photos/13.jpg',
+    avatar: '/demo/avatars/13.jpg',
     badge: '/images/icons/stacks/illustrator.svg',
     username: 'Tara S.',
     fullName: 'Tara Svenson',
@@ -14,7 +14,7 @@ export const users = [
   },
   {
     id: 37,
-    avatar: '/images/avatars/photos/37.jpg',
+    avatar: '/demo/avatars/37.jpg',
     badge: '/images/icons/flags/france.svg',
     username: 'Helmut F.',
     fullName: 'Helmut Fritz',
@@ -27,7 +27,7 @@ export const users = [
   },
   {
     id: 25,
-    avatar: '/images/avatars/photos/25.jpg',
+    avatar: '/demo/avatars/25.jpg',
     badge: '/images/icons/stacks/js.svg',
     username: 'Melany W.',
     fullName: 'Melany Wallace',
@@ -40,7 +40,7 @@ export const users = [
   },
   {
     id: 29,
-    avatar: '/images/avatars/photos/29.jpg',
+    avatar: '/demo/avatars/29.jpg',
     badge: '/images/icons/stacks/python.svg',
     username: 'Hakeem C.',
     fullName: 'Hakeem Calami',
@@ -53,7 +53,7 @@ export const users = [
   },
   {
     id: 39,
-    avatar: '/images/avatars/photos/39.jpg',
+    avatar: '/demo/avatars/39.jpg',
     badge: '/images/icons/stacks/python.svg',
     username: 'Alejandro B.',
     fullName: 'Alejandro Badajoz',
@@ -66,7 +66,7 @@ export const users = [
   },
   {
     id: 40,
-    avatar: '/images/avatars/photos/40.jpg',
+    avatar: '/demo/avatars/40.jpg',
     badge: '/images/icons/stacks/android.svg',
     username: 'Jeanne M.',
     fullName: 'Jeanne Marchand',
@@ -79,7 +79,7 @@ export const users = [
   },
   {
     id: 19,
-    avatar: '/images/avatars/photos/19.jpg',
+    avatar: '/demo/avatars/19.jpg',
     badge: '/images/icons/flags/germany.svg',
     username: 'Greta K.',
     fullName: 'Greta Kroppfer',
@@ -92,7 +92,7 @@ export const users = [
   },
   {
     id: 9,
-    avatar: '/images/avatars/photos/9.jpg',
+    avatar: '/demo/avatars/9.jpg',
     badge: '/images/icons/flags/united-states-of-america.svg',
     username: 'Anna B.',
     fullName: 'Anna Baker',
@@ -105,7 +105,7 @@ export const users = [
   },
   {
     id: 5,
-    avatar: '/images/avatars/photos/5.jpg',
+    avatar: '/demo/avatars/5.jpg',
     badge: '/images/icons/flags/united-states-of-america.svg',
     username: 'Mary L.',
     fullName: 'Mary Lebowski',
@@ -118,7 +118,7 @@ export const users = [
   },
   {
     id: 32,
-    avatar: '/images/avatars/photos/32.jpg',
+    avatar: '/demo/avatars/32.jpg',
     badge: '/images/icons/flags/united-states-of-america.svg',
     username: 'Jonathan K.',
     fullName: 'Jonathan Krugger',
@@ -131,7 +131,7 @@ export const users = [
   },
   {
     id: 36,
-    avatar: '/images/avatars/photos/36.jpg',
+    avatar: '/demo/avatars/36.jpg',
     badge: '/images/icons/flags/france.svg',
     username: 'Benoit L.',
     fullName: 'Benoit Leblanc',
@@ -144,7 +144,7 @@ export const users = [
   },
   {
     id: 38,
-    avatar: '/images/avatars/photos/38.jpg',
+    avatar: '/demo/avatars/38.jpg',
     badge: '/images/icons/flags/united-states-of-america.svg',
     username: 'Christie D.',
     fullName: 'Christie Dallas',
@@ -157,7 +157,7 @@ export const users = [
   },
   {
     id: 26,
-    avatar: '/images/avatars/photos/26.jpg',
+    avatar: '/demo/avatars/26.jpg',
     badge: '/images/icons/flags/australia.svg',
     username: 'Courtney W.',
     fullName: 'Courtney Wilson',
@@ -170,7 +170,7 @@ export const users = [
   },
   {
     id: 16,
-    avatar: '/images/avatars/photos/16.jpg',
+    avatar: '/demo/avatars/16.jpg',
     badge: '/images/icons/flags/united-states-of-america.svg',
     username: 'Jason G.',
     fullName: 'Jason Guarank',
@@ -183,7 +183,7 @@ export const users = [
   },
   {
     id: 23,
-    avatar: '/images/avatars/photos/23.jpg',
+    avatar: '/demo/avatars/23.jpg',
     badge: '/images/icons/flags/united-states-of-america.svg',
     username: 'Irina V.',
     fullName: 'Irina Vierbovsky',
@@ -196,7 +196,7 @@ export const users = [
   },
   {
     id: 28,
-    avatar: '/images/avatars/photos/28.jpg',
+    avatar: '/demo/avatars/28.jpg',
     badge: '/images/icons/flags/france.svg',
     username: 'Edouard F.',
     fullName: 'Edouard Falant',
@@ -209,7 +209,7 @@ export const users = [
   },
   {
     id: 7,
-    avatar: '/images/avatars/photos/7.jpg',
+    avatar: '/demo/avatars/7.jpg',
     badge: '/images/icons/flags/united-states-of-america.svg',
     username: 'Alice C.',
     fullName: 'Alice Carasca',
@@ -222,7 +222,7 @@ export const users = [
   },
   {
     id: 22,
-    avatar: '/images/avatars/photos/22.jpg',
+    avatar: '/demo/avatars/22.jpg',
     badge: '/images/icons/flags/united-states-of-america.svg',
     username: 'Dwayne H.',
     fullName: 'Dwayne Hicks',

@@ -135,7 +135,7 @@ export const restaurants = [
   {
     id: 0,
     name: "Mario's place",
-    picture: '/images/photo/demo/food/1.jpg',
+    picture: '/demo/photos/food/1.jpg',
     deliveryTime: 45,
     category: 'Pizza',
     icon: '/images/icons/food/icon-2.svg',
@@ -144,7 +144,7 @@ export const restaurants = [
   {
     id: 1,
     name: "Jimmy's Downtown",
-    picture: '/images/photo/demo/food/2.jpg',
+    picture: '/demo/photos/food/2.jpg',
     deliveryTime: 30,
     category: 'Fast',
     icon: '/images/icons/food/icon-4.svg',
@@ -153,7 +153,7 @@ export const restaurants = [
   {
     id: 2,
     name: 'Fruity Loops',
-    picture: '/images/photo/demo/food/3.jpg',
+    picture: '/demo/photos/food/3.jpg',
     deliveryTime: 45,
     category: 'Fruits',
     icon: '/images/icons/food/icon-9.svg',
@@ -162,7 +162,7 @@ export const restaurants = [
   {
     id: 3,
     name: 'The Green Heaven',
-    picture: '/images/photo/demo/food/4.jpg',
+    picture: '/demo/photos/food/4.jpg',
     deliveryTime: 20,
     category: 'Veggie',
     icon: '/images/icons/food/icon-10.svg',
@@ -171,7 +171,7 @@ export const restaurants = [
   {
     id: 4,
     name: 'Salad Bar',
-    picture: '/images/photo/demo/food/5.jpg',
+    picture: '/demo/photos/food/5.jpg',
     deliveryTime: 30,
     category: 'Veggie',
     icon: '/images/icons/food/icon-10.svg',
@@ -180,7 +180,7 @@ export const restaurants = [
   {
     id: 5,
     name: 'Little Italy',
-    picture: '/images/photo/demo/food/6.jpg',
+    picture: '/demo/photos/food/6.jpg',
     deliveryTime: 50,
     category: 'Pasta',
     icon: '/images/icons/food/icon-12.svg',
@@ -189,7 +189,7 @@ export const restaurants = [
   {
     id: 6,
     name: 'The Noodle Bar',
-    picture: '/images/photo/demo/food/7.jpg',
+    picture: '/demo/photos/food/7.jpg',
     deliveryTime: 15,
     category: 'Thai',
     icon: '/images/icons/food/icon-7.svg',
@@ -198,7 +198,7 @@ export const restaurants = [
   {
     id: 7,
     name: "Jerry's Epic Burger",
-    picture: '/images/photo/demo/food/8.jpg',
+    picture: '/demo/photos/food/8.jpg',
     deliveryTime: 20,
     category: 'Fast',
     icon: '/images/icons/food/icon-4.svg',
@@ -207,7 +207,7 @@ export const restaurants = [
   {
     id: 8,
     name: 'Meals From The Sea',
-    picture: '/images/photo/demo/food/9.jpg',
+    picture: '/demo/photos/food/9.jpg',
     deliveryTime: 55,
     category: 'Fish',
     icon: '/images/icons/food/icon-13.svg',
@@ -216,7 +216,7 @@ export const restaurants = [
   {
     id: 9,
     name: 'Delicious Little Things',
-    picture: '/images/photo/demo/food/10.jpg',
+    picture: '/demo/photos/food/10.jpg',
     deliveryTime: 45,
     category: 'Cakes',
     icon: '/images/icons/food/icon-6.svg',
@@ -225,7 +225,7 @@ export const restaurants = [
   {
     id: 10,
     name: 'Pollos Hermanos',
-    picture: '/images/photo/demo/food/11.jpg',
+    picture: '/demo/photos/food/11.jpg',
     deliveryTime: 15,
     category: 'Fast',
     icon: '/images/icons/food/icon-4.svg',
@@ -234,7 +234,7 @@ export const restaurants = [
   {
     id: 11,
     name: 'Iced & Delicious',
-    picture: '/images/photo/demo/food/12.jpg',
+    picture: '/demo/photos/food/12.jpg',
     deliveryTime: 30,
     category: 'Cakes',
     icon: '/images/icons/food/icon-6.svg',
@@ -243,7 +243,7 @@ export const restaurants = [
   {
     id: 12,
     name: 'Osaka Sushi',
-    picture: '/images/photo/demo/food/13.jpg',
+    picture: '/demo/photos/food/13.jpg',
     deliveryTime: 30,
     category: 'Sushi',
     icon: '/images/icons/food/icon-8.svg',
@@ -252,7 +252,7 @@ export const restaurants = [
   {
     id: 13,
     name: 'Quick Treats',
-    picture: '/images/photo/demo/food/14.jpg',
+    picture: '/demo/photos/food/14.jpg',
     deliveryTime: 10,
     category: 'Veggie',
     icon: '/images/icons/food/icon-10.svg',
@@ -261,7 +261,7 @@ export const restaurants = [
   {
     id: 14,
     name: "Sam' Dwich",
-    picture: '/images/photo/demo/food/15.jpg',
+    picture: '/demo/photos/food/15.jpg',
     deliveryTime: 30,
     category: 'Veggie',
     icon: '/images/icons/food/icon-10.svg',
@@ -270,7 +270,7 @@ export const restaurants = [
   {
     id: 15,
     name: 'Sunchine Cookies',
-    picture: '/images/photo/demo/food/16.jpg',
+    picture: '/demo/photos/food/16.jpg',
     deliveryTime: 45,
     category: 'Cakes',
     icon: '/images/icons/food/icon-6.svg',
@@ -279,7 +279,7 @@ export const restaurants = [
   {
     id: 16,
     name: "O' Fried Chicken",
-    picture: '/images/photo/demo/food/17.jpg',
+    picture: '/demo/photos/food/17.jpg',
     deliveryTime: 45,
     category: 'Fast',
     icon: '/images/icons/food/icon-4.svg',
@@ -288,7 +288,7 @@ export const restaurants = [
   {
     id: 17,
     name: 'Bangkok Woks',
-    picture: '/images/photo/demo/food/18.jpg',
+    picture: '/demo/photos/food/18.jpg',
     deliveryTime: 30,
     category: 'Thai',
     icon: '/images/icons/food/icon-7.svg',

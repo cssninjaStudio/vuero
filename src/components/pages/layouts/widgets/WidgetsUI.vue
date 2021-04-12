@@ -79,10 +79,7 @@ import { trendWidgetChartOptions } from '/@src/data/widgets/charts/trendWidgetCh
       <!--Widget-->
       <UIWidget class="video-widget">
         <template #body>
-          <UIWidgetMovie
-            picture="/images/photo/demo/widgets/1.jpg"
-            views="38,274"
-          />
+          <UIWidgetMovie picture="/demo/photos/widgets/1.jpg" views="38,274" />
         </template>
       </UIWidget>
 
@@ -227,7 +224,7 @@ import { trendWidgetChartOptions } from '/@src/data/widgets/charts/trendWidgetCh
       <UIWidget class="image-widget">
         <template #body>
           <img
-            src="/images/photo/demo/widgets/2.jpg"
+            src="/demo/photos/widgets/2.jpg"
             alt=""
             @error.once="
               $event.target.src = 'https://via.placeholder.com/400x300'
@@ -322,7 +319,7 @@ import { trendWidgetChartOptions } from '/@src/data/widgets/charts/trendWidgetCh
 </template>
 
 <style lang="scss">
-@import '../../../../assets/scss/abstracts/_variables.scss';
-@import '../../../../assets/scss/abstracts/_mixins.scss';
-@import '../../../../assets/scss/pages/generic/_widgets-lists.scss';
+@import '../../../../scss/abstracts/_variables.scss';
+@import '../../../../scss/abstracts/_mixins.scss';
+@import '../../../../scss/pages/generic/_widgets-lists.scss';
 </style>

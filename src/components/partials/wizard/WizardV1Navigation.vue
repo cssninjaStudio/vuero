@@ -125,7 +125,7 @@ const setStep = (target: number) => {
         <div class="profile-avatar">
           <img
             class="avatar"
-            src="/images/avatars/photos/8.jpg"
+            src="/demo/avatars/8.jpg"
             alt=""
             @error.once="
               $event.target.src = 'https://via.placeholder.com/150x150'
@@ -167,8 +167,8 @@ const setStep = (target: number) => {
 </template>
 
 <style lang="scss" scoped>
-@import '../../../assets/scss/abstracts/_variables.scss';
-@import '../../../assets/scss/abstracts/_mixins.scss';
+@import '../../../scss/abstracts/_variables.scss';
+@import '../../../scss/abstracts/_mixins.scss';
 
 .wizard-navigation {
   position: fixed;

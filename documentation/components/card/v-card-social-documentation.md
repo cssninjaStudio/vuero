@@ -13,7 +13,7 @@ Check the code example for more details.
   <V-CardSocial
     title="Featured Tweet"
     network="twitter"
-    avatar="/images/avatars/photos/19.jpg"
+    avatar="/demo/avatars/19.jpg"
     username="Greta K."
     :hashtags="['#bulmaio', '#css', '#responsive']"
     icon="fab fa-twitter"

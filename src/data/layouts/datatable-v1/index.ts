@@ -48,7 +48,7 @@ export const datatableV1 = {
     data: [
       [
         0,
-        '/images/avatars/photos/8.jpg',
+        '/demo/avatars/8.jpg',
         'Erik Kovalsky',
         'Product Manager',
         'busy',
@@ -56,7 +56,7 @@ export const datatableV1 = {
       ],
       [
         1,
-        '/images/avatars/photos/7.jpg',
+        '/demo/avatars/7.jpg',
         'Alice Carasca',
         'Software Engineer',
         'offline',
@@ -64,7 +64,7 @@ export const datatableV1 = {
       ],
       [
         2,
-        '/images/avatars/photos/13.jpg',
+        '/demo/avatars/13.jpg',
         'Tara Svenson',
         'UI/UX Designer',
         'offline',
@@ -72,7 +72,7 @@ export const datatableV1 = {
       ],
       [
         3,
-        '/images/avatars/photos/5.jpg',
+        '/demo/avatars/5.jpg',
         'Mary Lebowski',
         'Project Manager',
         'available',
@@ -88,7 +88,7 @@ export const datatableV1 = {
       ],
       [
         5,
-        '/images/avatars/photos/27.jpg',
+        '/demo/avatars/27.jpg',
         'Carmen Escudero',
         'HR Manager',
         'offline',
@@ -96,7 +96,7 @@ export const datatableV1 = {
       ],
       [
         6,
-        '/images/avatars/photos/22.jpg',
+        '/demo/avatars/22.jpg',
         'Dwayne Hicks',
         'Product Manager',
         'offline',
@@ -112,7 +112,7 @@ export const datatableV1 = {
       ],
       [
         8,
-        '/images/avatars/photos/23.jpg',
+        '/demo/avatars/23.jpg',
         'Irina Vierbovsky',
         'Project Manager',
         'available',
@@ -120,7 +120,7 @@ export const datatableV1 = {
       ],
       [
         9,
-        '/images/avatars/photos/28.jpg',
+        '/demo/avatars/28.jpg',
         'Edouard Falant',
         'Web Developer',
         'busy',
@@ -144,7 +144,7 @@ export const datatableV1 = {
       ],
       [
         12,
-        '/images/avatars/photos/39.jpg',
+        '/demo/avatars/39.jpg',
         'Alejandro Badajoz',
         'Web Developer',
         'busy',
@@ -152,7 +152,7 @@ export const datatableV1 = {
       ],
       [
         13,
-        '/images/avatars/photos/21.jpg',
+        '/demo/avatars/21.jpg',
         'Elizabeth Fisher',
         'Mobile Developer',
         'available',
@@ -160,7 +160,7 @@ export const datatableV1 = {
       ],
       [
         14,
-        '/images/avatars/photos/37.jpg',
+        '/demo/avatars/37.jpg',
         'Helmut Fritz',
         'Product Manager',
         'available',
@@ -168,7 +168,7 @@ export const datatableV1 = {
       ],
       [
         15,
-        '/images/avatars/photos/31.jpg',
+        '/demo/avatars/31.jpg',
         'Yasseen Amzi',
         'Business Analyst',
         'offline',

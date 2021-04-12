@@ -11,7 +11,7 @@
       <div class="v-avatar is-small">
         <img
           class="avatar"
-          src="/images/avatars/photos/7.jpg"
+          src="/demo/avatars/7.jpg"
           alt=""
           @error.once="
             $event.target.src = 'https://via.placeholder.com/150x150'
@@ -21,7 +21,7 @@
       <div class="v-avatar is-small">
         <img
           class="avatar"
-          src="/images/avatars/photos/9.jpg"
+          src="/demo/avatars/9.jpg"
           alt=""
           @error.once="
             $event.target.src = 'https://via.placeholder.com/150x150'
@@ -31,7 +31,7 @@
       <div class="v-avatar is-small">
         <img
           class="avatar"
-          src="/images/avatars/photos/12.jpg"
+          src="/demo/avatars/12.jpg"
           alt=""
           @error.once="
             $event.target.src = 'https://via.placeholder.com/150x150'
@@ -41,7 +41,7 @@
       <div class="v-avatar is-small">
         <img
           class="avatar"
-          src="/images/avatars/photos/8.jpg"
+          src="/demo/avatars/8.jpg"
           alt=""
           @error.once="
             $event.target.src = 'https://via.placeholder.com/150x150'
@@ -51,7 +51,7 @@
       <div class="v-avatar is-small">
         <img
           class="avatar"
-          src="/images/avatars/photos/25.jpg"
+          src="/demo/avatars/25.jpg"
           alt=""
           @error.once="
             $event.target.src = 'https://via.placeholder.com/150x150'
@@ -61,7 +61,7 @@
       <div class="v-avatar is-small">
         <img
           class="avatar"
-          src="/images/avatars/photos/22.jpg"
+          src="/demo/avatars/22.jpg"
           alt=""
           @error.once="
             $event.target.src = 'https://via.placeholder.com/150x150'
@@ -77,8 +77,8 @@
 </template>
 
 <style lang="scss">
-@import '../../../assets/scss/abstracts/_variables.scss';
-@import '../../../assets/scss/abstracts/_mixins.scss';
+@import '../../../scss/abstracts/_variables.scss';
+@import '../../../scss/abstracts/_mixins.scss';
 
 /* ==========================================================================
 1. Projects Toolbar

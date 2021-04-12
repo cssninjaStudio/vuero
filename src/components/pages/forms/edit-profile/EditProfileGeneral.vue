@@ -91,7 +91,7 @@ const onSave = async () => {
           <img
             v-if="!isUploading"
             class="avatar"
-            src="/images/avatars/photos/8.jpg"
+            src="/demo/avatars/8.jpg"
             alt=""
             @error.once="
               $event.target.src = 'https://via.placeholder.com/150x150'

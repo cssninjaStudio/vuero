@@ -26,7 +26,7 @@ const emit = defineEmit(['addConversation', 'selectConversation'])
       <h3 class="no-mb">Chat</h3>
 
       <div
-        class="huro-hamburger nav-trigger push-resize messages-push"
+        class="vuero-hamburger nav-trigger push-resize messages-push"
         @click="toggleSidebar('messages')"
       >
         <span class="menu-toggle has-chevron">
@@ -84,6 +84,6 @@ const emit = defineEmit(['addConversation', 'selectConversation'])
 </template>
 
 <style lang="scss">
-@import '../../../../../assets/scss/abstracts/_variables.scss';
-@import '../../../../../assets/scss/layout/_sidebar-panel.scss';
+@import '../../../../../scss/abstracts/_variables.scss';
+@import '../../../../../scss/layout/_sidebar-panel.scss';
 </style>

@@ -131,11 +131,11 @@
                 size="small"
                 :limit="3"
                 :avatars="[
-                  { picture: '/images/avatars/photos/7.jpg' },
+                  { picture: '/demo/avatars/7.jpg' },
                   { color: 'info', initials: 'JD' },
-                  { picture: '/images/avatars/photos/12.jpg' },
-                  { picture: '/images/avatars/photos/12.jpg' },
-                  { picture: '/images/avatars/photos/12.jpg' },
+                  { picture: '/demo/avatars/12.jpg' },
+                  { picture: '/demo/avatars/12.jpg' },
+                  { picture: '/demo/avatars/12.jpg' },
                 ]"
               />
             </div>
@@ -190,7 +190,7 @@
                 size="small"
                 :avatars="[
                   { color: 'success', initials: 'BT' },
-                  { picture: '/images/avatars/photos/8.jpg' },
+                  { picture: '/demo/avatars/8.jpg' },
                 ]"
               />
             </div>
@@ -217,7 +217,7 @@
               <V-AvatarStack
                 class="is-pushed-mobile"
                 size="small"
-                :avatars="[{ picture: '/images/avatars/photos/13.jpg' }]"
+                :avatars="[{ picture: '/demo/avatars/13.jpg' }]"
               />
             </div>
             <div class="flex-table-cell cell-end" data-th="Actions">
@@ -244,9 +244,9 @@
                 class="is-pushed-mobile"
                 size="small"
                 :avatars="[
-                  { picture: '/images/avatars/photos/11.jpg' },
-                  { picture: '/images/avatars/photos/16.jpg' },
-                  { picture: '/images/avatars/photos/19.jpg' },
+                  { picture: '/demo/avatars/11.jpg' },
+                  { picture: '/demo/avatars/16.jpg' },
+                  { picture: '/demo/avatars/19.jpg' },
                 ]"
               />
             </div>
@@ -261,7 +261,7 @@
 </template>
 
 <style lang="scss">
-@import '../../../../assets/scss/abstracts/_variables.scss';
-@import '../../../../assets/scss/abstracts/_mixins.scss';
-@import '../../../../assets/scss/pages/projects/_projects.scss';
+@import '../../../../scss/abstracts/_variables.scss';
+@import '../../../../scss/abstracts/_mixins.scss';
+@import '../../../../scss/pages/projects/_projects.scss';
 </style>

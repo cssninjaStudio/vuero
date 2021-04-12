@@ -1,7 +1,7 @@
 export const retails = [
   {
     id: '1',
-    picture: '/images/photo/demo/1.jpg',
+    picture: '/demo/photos/1.jpg',
     name: '1396 Redmond Street',
     location: '1396 Redmond Street, Apartment 12, Suite H 102, Los Angeles, CA',
     rating: 4,
@@ -22,7 +22,7 @@ export const retails = [
   },
   {
     id: '2',
-    picture: '/images/photo/demo/2.jpg',
+    picture: '/demo/photos/2.jpg',
     name: '24 Mulberry Street',
     location: '24 Mulberry Street, Suite 43, New York, NY',
     rating: 5,
@@ -38,7 +38,7 @@ export const retails = [
   },
   {
     id: '3',
-    picture: '/images/photo/demo/3.jpg',
+    picture: '/demo/photos/3.jpg',
     name: '62 John Walberg Ave',
     location: '62 John Walberg Avenue, Apartment 10, Suite 24, Los Angeles, CA',
     rating: 5,
@@ -59,7 +59,7 @@ export const retails = [
   },
   {
     id: '4',
-    picture: '/images/photo/demo/4.jpg',
+    picture: '/demo/photos/4.jpg',
     name: '48 Manhattan Ave',
     location: '48 Manhattan Avenue, Suite G12, New York, NY',
     rating: 5,
@@ -80,7 +80,7 @@ export const retails = [
   },
   {
     id: '5',
-    picture: '/images/photo/demo/5.jpg',
+    picture: '/demo/photos/5.jpg',
     name: '12 Charity Street',
     location: '12 Charity Street, Apartment 49, Brooklynn, NY',
     rating: 4,
@@ -97,7 +97,7 @@ export const retails = [
   },
   {
     id: '6',
-    picture: '/images/photo/demo/6.jpg',
+    picture: '/demo/photos/6.jpg',
     name: '23 Bakery Street',
     location: '23 Bakery Street, Suite 121, New York, NY',
     rating: 5,
@@ -119,7 +119,7 @@ export const retails = [
   },
   {
     id: '7',
-    picture: '/images/photo/demo/7.jpg',
+    picture: '/demo/photos/7.jpg',
     name: '1028 Pasadena Ave',
     location: '1028 Pasadena Avenue, Suite F 24, Los Angeles, CA',
     rating: 5,
@@ -140,7 +140,7 @@ export const retails = [
   },
   {
     id: '8',
-    picture: '/images/photo/demo/8.jpg',
+    picture: '/demo/photos/8.jpg',
     name: '54 Church Street',
     location: '54 Church Street, Apartment 2, New York, NY',
     rating: 5,
@@ -158,7 +158,7 @@ export const retails = [
   },
   {
     id: '9',
-    picture: '/images/photo/demo/9.jpg',
+    picture: '/demo/photos/9.jpg',
     name: '112 Old City District',
     location: '112 Old City District, Apartment 5 Suite 42, New York, NY',
     rating: 5,
@@ -176,7 +176,7 @@ export const retails = [
   },
   {
     id: '10',
-    picture: '/images/photo/demo/10.jpg',
+    picture: '/demo/photos/10.jpg',
     name: '51 St Leonard Street',
     location: '51 St Leonard Street, Suite 23, New York, NY',
     rating: 5,

@@ -42,7 +42,7 @@ const {
     <div class="header-area">
       <img
         class="sender-pic"
-        src="/images/avatars/photos/39.jpg"
+        src="/demo/avatars/39.jpg"
         alt=""
         @error.once="$event.target.src = 'https://via.placeholder.com/150x150'"
       />
@@ -50,7 +50,7 @@ const {
         <span class="message-title"
           >New design ideas from the user experience team</span
         >
-        <span class="sender-email">&lt;alejandro@huro.io&gt;</span>
+        <span class="sender-email">&lt;alejandro@vuero.io&gt;</span>
       </div>
       <div class="attachments inbox-hidden-mobile">
         <i class="iconify" data-icon="feather:paperclip"></i>
@@ -177,7 +177,7 @@ const {
         <div class="reply-bubble">
           <div class="reply-as">
             <img
-              src="/images/avatars/photos/8.jpg"
+              src="/demo/avatars/8.jpg"
               alt=""
               @error.once="
                 $event.target.src = 'https://via.placeholder.com/150x150'
@@ -185,7 +185,7 @@ const {
             />
             <div class="reply-details">
               <span>Reply as</span>
-              <span>erik@huro.io</span>
+              <span>erik@vuero.io</span>
             </div>
             <div
               ref="dropdownElement2"

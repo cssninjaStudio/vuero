@@ -189,7 +189,7 @@ const filteredData = computed(() => {
 </template>
 
 <style lang="scss">
-@import '../../../../assets/scss/abstracts/_variables.scss';
+@import '../../../../scss/abstracts/_variables.scss';
 
 .has-top-nav {
   .flex-list-wrapper,

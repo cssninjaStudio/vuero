@@ -9,7 +9,7 @@ import { profitChartOptions } from '/@src/data/dashboards/personal-v1/profitChar
   <div class="personal-dashboard personal-dashboard-v1">
     <!--Header-->
     <div class="dashboard-header">
-      <V-Avatar picture="/images/avatars/photos/8.jpg" size="large" />
+      <V-Avatar picture="/demo/avatars/8.jpg" size="large" />
       <div class="start">
         <h3>Welcome back, Erik Kovalsky</h3>
         <p>We're very happy to see you again on your personal dashboard.</p>
@@ -132,9 +132,9 @@ import { profitChartOptions } from '/@src/data/dashboards/personal-v1/profitChar
         <div class="column is-4">
           <div class="dashboard-card is-gauge">
             <div class="people">
-              <V-Avatar picture="/images/avatars/photos/21.jpg" />
+              <V-Avatar picture="/demo/avatars/21.jpg" />
               <V-Avatar initials="SC" color="h-purple" />
-              <V-Avatar picture="/images/avatars/photos/39.jpg" />
+              <V-Avatar picture="/demo/avatars/39.jpg" />
             </div>
             <apexchart
               :height="teamGaugeOptions.chart.height"
@@ -162,8 +162,8 @@ import { profitChartOptions } from '/@src/data/dashboards/personal-v1/profitChar
 </template>
 
 <style lang="scss" scoped>
-@import '../../../../assets/scss/abstracts/_variables.scss';
-@import '../../../../assets/scss/abstracts/_mixins.scss';
+@import '../../../../scss/abstracts/_variables.scss';
+@import '../../../../scss/abstracts/_mixins.scss';
 
 .is-navbar {
   .personal-dashboard {

@@ -53,7 +53,7 @@ onMounted(() => {
       <div class="v-avatar is-large">
         <img
           class="avatar"
-          src="/images/avatars/photos/8.jpg"
+          src="/demo/avatars/8.jpg"
           alt=""
           @error.once="
             $event.target.src = 'https://via.placeholder.com/150x150'
@@ -353,8 +353,8 @@ onMounted(() => {
 </template>
 
 <style lang="scss">
-@import '../../../../assets/scss/abstracts/_variables.scss';
-@import '../../../../assets/scss/abstracts/_mixins.scss';
+@import '../../../../scss/abstracts/_variables.scss';
+@import '../../../../scss/abstracts/_mixins.scss';
 
 .sales-dashboard {
   .dashboard-header {

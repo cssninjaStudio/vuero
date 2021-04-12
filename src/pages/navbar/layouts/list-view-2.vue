@@ -12,7 +12,7 @@ useHead({
   >
     <div class="page-title has-text-centered">
       <!-- Sidebar Trigger -->
-      <div class="huro-hamburger nav-trigger push-resize">
+      <div class="vuero-hamburger nav-trigger push-resize">
         <span class="menu-toggle has-chevron">
           <span class="icon-box-toggle">
             <span class="rotate">

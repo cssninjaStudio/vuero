@@ -12,7 +12,7 @@ be whatever you want, and one for the `action`.
     <template #icon>
       <V-Avatar
         size="medium"
-        picture="/images/avatars/photos/19.jpg"
+        picture="/demo/avatars/19.jpg"
         badge="/images/icons/flags/germany.svg"
       />
     </template>
@@ -34,7 +34,7 @@ be whatever you want, and one for the `action`.
         <template #icon>
           <V-Avatar 
             size="medium" 
-            picture="/images/avatars/photos/19.jpg" 
+            picture="/demo/avatars/19.jpg" 
             badge="/images/icons/flags/germany.svg" 
           />
         </template>

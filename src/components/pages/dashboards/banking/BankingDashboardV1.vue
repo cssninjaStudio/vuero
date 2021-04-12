@@ -268,10 +268,7 @@ import {
                     :offset="[0, 10]"
                     placement="bottom-end"
                   >
-                    <V-Avatar
-                      picture="/images/avatars/photos/18.jpg"
-                      size="small"
-                    />
+                    <V-Avatar picture="/demo/avatars/18.jpg" size="small" />
                     <template #content>
                       <UserPopoverContent :user="popovers.user18" />
                     </template>
@@ -293,10 +290,7 @@ import {
                     :offset="[0, 10]"
                     placement="bottom-end"
                   >
-                    <V-Avatar
-                      picture="/images/avatars/photos/7.jpg"
-                      size="small"
-                    />
+                    <V-Avatar picture="/demo/avatars/7.jpg" size="small" />
                     <template #content>
                       <UserPopoverContent :user="popovers.user7" />
                     </template>
@@ -402,8 +396,8 @@ import {
 </template>
 
 <style lang="scss">
-@import '../../../../assets/scss/abstracts/_variables.scss';
-@import '../../../../assets/scss/abstracts/_mixins.scss';
+@import '../../../../scss/abstracts/_variables.scss';
+@import '../../../../scss/abstracts/_mixins.scss';
 
 .banking-dashboard-v1 {
   .columns {

@@ -1,6 +1,6 @@
 ### Avatar badge
 
-Huro avatars can have badge images attached to them.
+Vuero avatars can have badge images attached to them.
 Simply add a 1:1 ratio image URL to the avatar component using the `badge` prop.
 
 <!--code-->
@@ -8,31 +8,31 @@ Simply add a 1:1 ratio image URL to the avatar component using the `badge` prop.
 ```vue
 <template>
   <V-Avatar
-    picture="/images/avatars/photos/7.jpg"
+    picture="/demo/avatars/7.jpg"
     size="small"
     badge="/images/icons/flags/united-states-of-america.svg"
   />
   <V-Avatar
-    picture="/images/avatars/photos/8.jpg"
+    picture="/demo/avatars/8.jpg"
     badge="/images/icons/flags/united-states-of-america.svg"
   />
   <V-Avatar
-    picture="/images/avatars/photos/11.jpg"
+    picture="/demo/avatars/11.jpg"
     badge="/images/icons/flags/united-states-of-america.svg"
     size="medium"
   />
   <V-Avatar
-    picture="/images/avatars/photos/21.jpg"
+    picture="/demo/avatars/21.jpg"
     badge="/images/icons/flags/united-states-of-america.svg"
     size="large"
   />
   <V-Avatar
-    picture="/images/avatars/photos/13.jpg"
+    picture="/demo/avatars/13.jpg"
     badge="/images/icons/flags/united-states-of-america.svg"
     size="big"
   />
   <V-Avatar
-    picture="/images/avatars/photos/5.jpg"
+    picture="/demo/avatars/5.jpg"
     badge="/images/icons/flags/united-states-of-america.svg"
     size="xl"
   />
@@ -43,11 +43,11 @@ Simply add a 1:1 ratio image URL to the avatar component using the `badge` prop.
 
 <!--example-->
 
-<V-Avatar picture="/images/avatars/photos/7.jpg" size="small" badge="/images/icons/flags/united-states-of-america.svg" />
-<V-Avatar picture="/images/avatars/photos/8.jpg" badge="/images/icons/flags/united-states-of-america.svg" />
-<V-Avatar picture="/images/avatars/photos/11.jpg" badge="/images/icons/flags/united-states-of-america.svg" size="medium" />
-<V-Avatar picture="/images/avatars/photos/21.jpg" badge="/images/icons/flags/united-states-of-america.svg" size="large" />
-<V-Avatar picture="/images/avatars/photos/13.jpg" badge="/images/icons/flags/united-states-of-america.svg" size="big" />
-<V-Avatar picture="/images/avatars/photos/5.jpg" badge="/images/icons/flags/united-states-of-america.svg" size="xl" />
+<V-Avatar picture="/demo/avatars/7.jpg" size="small" badge="/images/icons/flags/united-states-of-america.svg" />
+<V-Avatar picture="/demo/avatars/8.jpg" badge="/images/icons/flags/united-states-of-america.svg" />
+<V-Avatar picture="/demo/avatars/11.jpg" badge="/images/icons/flags/united-states-of-america.svg" size="medium" />
+<V-Avatar picture="/demo/avatars/21.jpg" badge="/images/icons/flags/united-states-of-america.svg" size="large" />
+<V-Avatar picture="/demo/avatars/13.jpg" badge="/images/icons/flags/united-states-of-america.svg" size="big" />
+<V-Avatar picture="/demo/avatars/5.jpg" badge="/images/icons/flags/united-states-of-america.svg" size="xl" />
 
 <!--/example-->

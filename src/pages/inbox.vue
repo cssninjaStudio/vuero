@@ -223,7 +223,7 @@ useHead({
                 <!--Contact-->
                 <div class="contact-block">
                   <img
-                    src="/images/avatars/photos/7.jpg"
+                    src="/demo/avatars/7.jpg"
                     alt=""
                     @error.once="
                       $event.target.src = 'https://via.placeholder.com/150x150'
@@ -231,13 +231,13 @@ useHead({
                   />
                   <div class="contact-meta">
                     <span>Alice Carasca</span>
-                    <span>alice@huro.io</span>
+                    <span>alice@vuero.io</span>
                   </div>
                 </div>
                 <!--Contact-->
                 <div class="contact-block">
                   <img
-                    src="/images/avatars/photos/25.jpg"
+                    src="/demo/avatars/25.jpg"
                     alt=""
                     @error.once="
                       $event.target.src = 'https://via.placeholder.com/150x150'
@@ -245,13 +245,13 @@ useHead({
                   />
                   <div class="contact-meta">
                     <span>Melany Wallace</span>
-                    <span>melany@huro.io</span>
+                    <span>melany@vuero.io</span>
                   </div>
                 </div>
                 <!--Contact-->
                 <div class="contact-block">
                   <img
-                    src="/images/avatars/photos/18.jpg"
+                    src="/demo/avatars/18.jpg"
                     alt=""
                     @error.once="
                       $event.target.src = 'https://via.placeholder.com/150x150'
@@ -259,13 +259,13 @@ useHead({
                   />
                   <div class="contact-meta">
                     <span>Esteban Castellanos</span>
-                    <span>esteban@huro.io</span>
+                    <span>esteban@vuero.io</span>
                   </div>
                 </div>
                 <!--Contact-->
                 <div class="contact-block">
                   <img
-                    src="/images/avatars/photos/32.jpg"
+                    src="/demo/avatars/32.jpg"
                     alt=""
                     @error.once="
                       $event.target.src = 'https://via.placeholder.com/150x150'
@@ -273,13 +273,13 @@ useHead({
                   />
                   <div class="contact-meta">
                     <span>Jonathan Krugger</span>
-                    <span>jonathan@huro.io</span>
+                    <span>jonathan@vuero.io</span>
                   </div>
                 </div>
                 <!--Contact-->
                 <div class="contact-block">
                   <img
-                    src="/images/avatars/photos/38.jpg"
+                    src="/demo/avatars/38.jpg"
                     alt=""
                     @error.once="
                       $event.target.src = 'https://via.placeholder.com/150x150'
@@ -287,7 +287,7 @@ useHead({
                   />
                   <div class="contact-meta">
                     <span>Christie Dallas</span>
-                    <span>christie@huro.io</span>
+                    <span>christie@vuero.io</span>
                   </div>
                 </div>
               </div>
@@ -441,7 +441,7 @@ useHead({
 </template>
 
 <style lang="scss">
-@import '../assets/scss/abstracts/_variables.scss';
+@import '../scss/abstracts/_variables.scss';
 
 /* ==========================================================================
 Inbox Layouts

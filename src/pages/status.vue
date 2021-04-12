@@ -40,7 +40,7 @@ useHead({
           <div class="list-block">
             <div class="icon-wrap">
               <img
-                src="/images/photo/demo/animaticons/lightbulb.gif"
+                src="/demo/photos/animaticons/lightbulb.gif"
                 alt=""
                 @error.once="
                   $event.target.src = 'https://via.placeholder.com/150x150'
@@ -70,7 +70,7 @@ useHead({
           <div class="list-block api">
             <div class="icon-wrap">
               <img
-                src="/images/photo/demo/animaticons/image.gif"
+                src="/demo/photos/animaticons/image.gif"
                 alt=""
                 @error.once="
                   $event.target.src = 'https://via.placeholder.com/150x150'
@@ -100,7 +100,7 @@ useHead({
           <div class="list-block">
             <div class="icon-wrap">
               <img
-                src="/images/photo/demo/animaticons/search.gif"
+                src="/demo/photos/animaticons/search.gif"
                 alt=""
                 @error.once="
                   $event.target.src = 'https://via.placeholder.com/150x150'
@@ -130,7 +130,7 @@ useHead({
           <div class="list-block">
             <div class="icon-wrap">
               <img
-                src="/images/photo/demo/animaticons/diamond.gif"
+                src="/demo/photos/animaticons/diamond.gif"
                 alt=""
                 @error.once="
                   $event.target.src = 'https://via.placeholder.com/150x150'
@@ -160,7 +160,7 @@ useHead({
           <div class="list-block api">
             <div class="icon-wrap">
               <img
-                src="/images/photo/demo/animaticons/chart.gif"
+                src="/demo/photos/animaticons/chart.gif"
                 alt=""
                 @error.once="
                   $event.target.src = 'https://via.placeholder.com/150x150'
@@ -190,7 +190,7 @@ useHead({
           <div class="list-block api">
             <div class="icon-wrap">
               <img
-                src="/images/photo/demo/animaticons/rocket.gif"
+                src="/demo/photos/animaticons/rocket.gif"
                 alt=""
                 @error.once="
                   $event.target.src = 'https://via.placeholder.com/150x150'
@@ -220,7 +220,7 @@ useHead({
           <div class="list-block">
             <div class="icon-wrap">
               <img
-                src="/images/photo/demo/animaticons/check.gif"
+                src="/demo/photos/animaticons/check.gif"
                 alt=""
                 @error.once="
                   $event.target.src = 'https://via.placeholder.com/150x150'
@@ -333,9 +333,9 @@ useHead({
 </template>
 
 <style lang="scss">
-@import '../assets/scss/abstracts/_variables.scss';
-@import '../assets/scss/abstracts/_mixins.scss';
-@import '../assets/scss/pages/generic/_utility.scss';
+@import '../scss/abstracts/_variables.scss';
+@import '../scss/abstracts/_mixins.scss';
+@import '../scss/pages/generic/_utility.scss';
 
 /* ==========================================================================
 3. Status Page

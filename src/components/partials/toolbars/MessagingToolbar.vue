@@ -87,7 +87,7 @@ const localFlagSrc = computed(() => {
                     <img
                       class="user-photo"
                       alt=""
-                      src="/images/avatars/photos/7.jpg"
+                      src="/demo/avatars/7.jpg"
                       @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
@@ -108,7 +108,7 @@ const localFlagSrc = computed(() => {
                     <img
                       class="user-photo"
                       alt=""
-                      src="/images/avatars/photos/12.jpg"
+                      src="/demo/avatars/12.jpg"
                       @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
@@ -129,7 +129,7 @@ const localFlagSrc = computed(() => {
                     <img
                       class="user-photo"
                       alt=""
-                      src="/images/avatars/photos/13.jpg"
+                      src="/demo/avatars/13.jpg"
                       @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'
@@ -150,7 +150,7 @@ const localFlagSrc = computed(() => {
                     <img
                       class="user-photo"
                       alt=""
-                      src="/images/avatars/photos/25.jpg"
+                      src="/demo/avatars/25.jpg"
                       @error.once="
                         $event.target.src =
                           'https://via.placeholder.com/150x150'

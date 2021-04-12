@@ -45,7 +45,7 @@ watchEffect(() => {
     </div>
     <div class="message-meta">
       <span class="name">Jonathan Krugger</span>
-      <span class="email">&lt;jonathan@huro.io&gt;</span>
+      <span class="email">&lt;jonathan@vuero.io&gt;</span>
       <span class="subject"
         ><b>I couldn't catch up on last time's dinner</b></span
       >
@@ -66,7 +66,7 @@ watchEffect(() => {
     </div>
     <div class="message-meta">
       <span class="name">Melany Wallace</span>
-      <span class="email">&lt;melany@huro.io&gt;</span>
+      <span class="email">&lt;melany@vuero.io&gt;</span>
       <span class="subject">Important project review next thursday</span>
     </div>
     <div class="pushed">Oct 21</div>
@@ -85,7 +85,7 @@ watchEffect(() => {
     </div>
     <div class="message-meta">
       <span class="name">Greta Kroppfer</span>
-      <span class="email">&lt;greta@huro.io&gt;</span>
+      <span class="email">&lt;greta@vuero.io&gt;</span>
       <span class="subject">Don't forget to send me those budget notes</span>
     </div>
     <div class="pushed">Oct 20</div>
@@ -104,7 +104,7 @@ watchEffect(() => {
     </div>
     <div class="message-meta">
       <span class="name">Elizabeth Fisher</span>
-      <span class="email">&lt;elizabeth@huro.io&gt;</span>
+      <span class="email">&lt;elizabeth@vuero.io&gt;</span>
       <span class="subject">Meeting with the new customer on Monday</span>
     </div>
     <div class="pushed">Oct 19</div>
@@ -123,7 +123,7 @@ watchEffect(() => {
     </div>
     <div class="message-meta">
       <span class="name">Carmen Escudero</span>
-      <span class="email">&lt;carmen@huro.io&gt;</span>
+      <span class="email">&lt;carmen@vuero.io&gt;</span>
       <span class="subject"
         >I got some new delightful stuff that you absolutely must see</span
       >
@@ -144,7 +144,7 @@ watchEffect(() => {
     </div>
     <div class="message-meta">
       <span class="name">Irina Vierbovsky</span>
-      <span class="email">&lt;irina@huro.io&gt;</span>
+      <span class="email">&lt;irina@vuero.io&gt;</span>
       <span class="subject">This month's lead generation report</span>
     </div>
     <div class="pushed">Oct 18</div>
@@ -163,7 +163,7 @@ watchEffect(() => {
     </div>
     <div class="message-meta">
       <span class="name">Alejandro Badajoz</span>
-      <span class="email">&lt;alejandro@huro.io&gt;</span>
+      <span class="email">&lt;alejandro@vuero.io&gt;</span>
       <span class="subject"
         >New design ideas from the user experience team</span
       >
@@ -184,7 +184,7 @@ watchEffect(() => {
     </div>
     <div class="message-meta">
       <span class="name">Edouard Falant</span>
-      <span class="email">&lt;edouard@huro.io&gt;</span>
+      <span class="email">&lt;edouard@vuero.io&gt;</span>
       <span class="subject">Customer dashboard february bug report</span>
     </div>
     <div class="pushed">Oct 17</div>
@@ -203,7 +203,7 @@ watchEffect(() => {
     </div>
     <div class="message-meta">
       <span class="name">Sandrine Coulart</span>
-      <span class="email">&lt;sandrine@huro.io&gt;</span>
+      <span class="email">&lt;sandrine@vuero.io&gt;</span>
       <span class="subject">You didn't answer my last email !</span>
     </div>
     <div class="pushed">Oct 17</div>
@@ -222,7 +222,7 @@ watchEffect(() => {
     </div>
     <div class="message-meta">
       <span class="name">Kelly Marston</span>
-      <span class="email">&lt;kelly@huro.io&gt;</span>
+      <span class="email">&lt;kelly@vuero.io&gt;</span>
       <span class="subject">Hop in for the next project review</span>
     </div>
     <div class="pushed">Oct 16</div>

@@ -56,8 +56,8 @@ router.afterEach(() => {
 </template>
 
 <style lang="scss" scoped>
-@import '../assets/scss/abstracts/_variables.scss';
-@import '../assets/scss/layout/_sidebar.scss';
+@import '../scss/abstracts/_variables.scss';
+@import '../scss/layout/_sidebar.scss';
 
 .right {
   fill: darken($primary, 7%);

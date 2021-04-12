@@ -30,7 +30,7 @@ import { popovers } from '/@src/data/users/userPopovers'
       <div class="invoice-card">
         <div class="invoice-section is-flex is-bordered">
           <tippy class="has-help-cursor" interactive placement="bottom-start">
-            <V-Avatar size="large" picture="/images/avatars/photos/13.jpg" />
+            <V-Avatar size="large" picture="/demo/avatars/13.jpg" />
             <template #content>
               <UserPopoverContent :user="popovers.user13" />
             </template>
@@ -38,7 +38,7 @@ import { popovers } from '/@src/data/users/userPopovers'
 
           <div class="meta">
             <h3>Tara Svenson</h3>
-            <span>tarasvenson@huro.io</span>
+            <span>tarasvenson@vuero.io</span>
             <span>+1 546-5491</span>
           </div>
           <div class="end">
@@ -52,7 +52,7 @@ import { popovers } from '/@src/data/users/userPopovers'
           <V-Avatar
             size="large"
             class="is-customer"
-            picture="/images/photo/demo/brands/airbnb.svg"
+            picture="/demo/photos/brands/airbnb.svg"
           />
 
           <div class="meta">
@@ -200,8 +200,8 @@ import { popovers } from '/@src/data/users/userPopovers'
 </template>
 
 <style lang="scss">
-@import '../../../assets/scss/abstracts/_variables.scss';
-@import '../../../assets/scss/abstracts/_mixins.scss';
+@import '../../../scss/abstracts/_variables.scss';
+@import '../../../scss/abstracts/_mixins.scss';
 
 /* ==========================================================================
 4. Invoice

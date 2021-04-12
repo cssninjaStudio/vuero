@@ -1,20 +1,20 @@
 ---
 user1:
-  avatar: /images/avatars/photos/19.jpg
+  avatar: /demo/avatars/19.jpg
   badge: /images/icons/flags/germany.svg
   username: Greta K.
   location: Los Angeles, CA
   position: Sales Manager
   bio: This is a nice user description that we can use as demo content.
 user2:
-  avatar: /images/avatars/photos/8.jpg
+  avatar: /demo/avatars/8.jpg
   badge: /images/icons/flags/united-states-of-america.svg
   username: Erik K.
   location: Las Begas, NV
   position: Product Manager
   bio: This is a nice user description that we can use as demo content.
 user3:
-  avatar: /images/avatars/photos/7.jpg
+  avatar: /demo/avatars/7.jpg
   badge: /images/icons/flags/united-states-of-america.svg
   username: Alice C.
   location: Los Angeles, CA
@@ -34,7 +34,7 @@ prop.
 ```vue
 <script setup lang="ts">
 const user = {
-  avatar: '/images/avatars/photos/19.jpg',
+  avatar: '/demo/avatars/19.jpg',
   badge: '/images/icons/flags/germany.svg',
   username: 'Greta K.',
   location: 'Los Angeles, CA',

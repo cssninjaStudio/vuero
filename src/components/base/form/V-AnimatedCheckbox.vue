@@ -68,8 +68,8 @@ watchEffect(updateCheckbox)
 </template>
 
 <style lang="scss">
-@import '../../../assets/scss/abstracts/_variables.scss';
-@import '../../../assets/scss/abstracts/_mixins.scss';
+@import '../../../scss/abstracts/_variables.scss';
+@import '../../../scss/abstracts/_mixins.scss';
 
 $curve: cubic-bezier(0.65, 0, 0.45, 1);
 

@@ -875,7 +875,7 @@
 13. Demos
 ========================================================================== */
 
-.huro-demos {
+.vuero-demos {
   .demo-section {
     margin-bottom: 100px;
 
@@ -1136,7 +1136,7 @@
 
 .is-dark {
   .landing-page-wrapper {
-    .huro-demos {
+    .vuero-demos {
       .demo-section {
         .demo-section-title {
           .title-meta {
@@ -1221,7 +1221,7 @@
 15. footer
 ========================================================================== */
 
-.huro-footer {
+.vuero-footer {
   padding-bottom: 0 !important;
   padding-top: 4rem !important;
   background: $light-white;
@@ -1345,7 +1345,7 @@
 
 .is-dark {
   .landing-page-wrapper {
-    .huro-footer {
+    .vuero-footer {
       background: lighten($landing-dark-1, 8%);
 
       .footer-head {
@@ -1820,7 +1820,7 @@
     margin-bottom: 60px !important;
   }
 
-  .huro-footer {
+  .vuero-footer {
     .footer-head {
       flex-direction: column;
       text-align: center;
@@ -1946,7 +1946,7 @@
       }
     }
 
-    .huro-demos {
+    .vuero-demos {
       .demo-section {
         .columns {
           display: flex;
@@ -1978,7 +1978,7 @@
       }
     }
 
-    .huro-components {
+    .vuero-components {
       .tab-content {
         .columns {
           display: flex;
@@ -1991,7 +1991,7 @@
     }
   }
 
-  .huro-footer {
+  .vuero-footer {
     .footer-head,
     .footer-body {
       padding-left: 20px;
@@ -2016,7 +2016,7 @@
     min-height: 174px;
   }
 
-  .huro-footer {
+  .vuero-footer {
     .footer-head,
     .footer-body {
       padding-left: 20px;

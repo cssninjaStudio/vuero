@@ -50,7 +50,7 @@ const activeTab = ref<TabId>('team')
               <div class="v-avatar">
                 <img
                   class="avatar"
-                  src="/images/avatars/photos/12.jpg"
+                  src="/demo/avatars/12.jpg"
                   alt=""
                   @error.once="
                     $event.target.src = 'https://via.placeholder.com/150x150'
@@ -82,7 +82,7 @@ const activeTab = ref<TabId>('team')
               <div class="v-avatar">
                 <img
                   class="avatar"
-                  src="/images/avatars/photos/25.jpg"
+                  src="/demo/avatars/25.jpg"
                   alt=""
                   @error.once="
                     $event.target.src = 'https://via.placeholder.com/150x150'
@@ -114,7 +114,7 @@ const activeTab = ref<TabId>('team')
               <div class="v-avatar">
                 <img
                   class="avatar"
-                  src="/images/avatars/photos/18.jpg"
+                  src="/demo/avatars/18.jpg"
                   alt=""
                   @error.once="
                     $event.target.src = 'https://via.placeholder.com/150x150'
@@ -146,7 +146,7 @@ const activeTab = ref<TabId>('team')
               <div class="v-avatar">
                 <img
                   class="avatar"
-                  src="/images/avatars/photos/13.jpg"
+                  src="/demo/avatars/13.jpg"
                   alt=""
                   @error.once="
                     $event.target.src = 'https://via.placeholder.com/150x150'
@@ -213,7 +213,7 @@ const activeTab = ref<TabId>('team')
                     <div class="v-avatar is-small">
                       <img
                         class="avatar"
-                        src="/images/avatars/photos/7.jpg"
+                        src="/demo/avatars/7.jpg"
                         alt=""
                         @error.once="
                           $event.target.src =
@@ -224,7 +224,7 @@ const activeTab = ref<TabId>('team')
                     <div class="v-avatar is-small">
                       <img
                         class="avatar"
-                        src="/images/avatars/photos/5.jpg"
+                        src="/demo/avatars/5.jpg"
                         alt=""
                         @error.once="
                           $event.target.src =
@@ -235,7 +235,7 @@ const activeTab = ref<TabId>('team')
                     <div class="v-avatar is-small">
                       <img
                         class="avatar"
-                        src="/images/avatars/photos/8.jpg"
+                        src="/demo/avatars/8.jpg"
                         alt=""
                         @error.once="
                           $event.target.src =
@@ -282,7 +282,7 @@ const activeTab = ref<TabId>('team')
                     <div class="v-avatar is-small">
                       <img
                         class="avatar"
-                        src="/images/avatars/photos/13.jpg"
+                        src="/demo/avatars/13.jpg"
                         alt=""
                         @error.once="
                           $event.target.src =
@@ -293,7 +293,7 @@ const activeTab = ref<TabId>('team')
                     <div class="v-avatar is-small">
                       <img
                         class="avatar"
-                        src="/images/avatars/photos/18.jpg"
+                        src="/demo/avatars/18.jpg"
                         alt=""
                         @error.once="
                           $event.target.src =
@@ -340,7 +340,7 @@ const activeTab = ref<TabId>('team')
                     <div class="v-avatar is-small">
                       <img
                         class="avatar"
-                        src="/images/avatars/photos/7.jpg"
+                        src="/demo/avatars/7.jpg"
                         alt=""
                         @error.once="
                           $event.target.src =
@@ -351,7 +351,7 @@ const activeTab = ref<TabId>('team')
                     <div class="v-avatar is-small">
                       <img
                         class="avatar"
-                        src="/images/avatars/photos/25.jpg"
+                        src="/demo/avatars/25.jpg"
                         alt=""
                         @error.once="
                           $event.target.src =
@@ -387,7 +387,7 @@ const activeTab = ref<TabId>('team')
                 <div class="timeline-icon">
                   <img
                     class="avatar"
-                    src="/images/avatars/photos/7.jpg"
+                    src="/demo/avatars/7.jpg"
                     alt=""
                     @error.once="
                       $event.target.src = 'https://via.placeholder.com/150x150'
@@ -458,7 +458,7 @@ const activeTab = ref<TabId>('team')
 </template>
 
 <style lang="scss">
-@import '../../../assets/scss/abstracts/_variables.scss';
-@import '../../../assets/scss/abstracts/_mixins.scss';
-@import '../../../assets/scss/layout/_right-panel.scss';
+@import '../../../scss/abstracts/_variables.scss';
+@import '../../../scss/abstracts/_mixins.scss';
+@import '../../../scss/layout/_right-panel.scss';
 </style>

@@ -1,51 +1,51 @@
 export const customers = [
   {
-    logo: '/images/photo/demo/brands/airbnb.svg',
+    logo: '/demo/photos/brands/airbnb.svg',
     name: 'Airbnb',
     location: 'Los Angeles, CA',
   },
   {
-    logo: '/images/photo/demo/brands/facebook.svg',
+    logo: '/demo/photos/brands/facebook.svg',
     name: 'Facebook',
     location: 'Los Angeles, CA',
   },
   {
-    logo: '/images/photo/demo/brands/dribbble.svg',
+    logo: '/demo/photos/brands/dribbble.svg',
     name: 'Dribbble',
     location: 'Los Angeles, CA',
   },
   {
-    logo: '/images/photo/demo/brands/figma.svg',
+    logo: '/demo/photos/brands/figma.svg',
     name: 'Figma',
     location: 'Los Angeles, CA',
   },
   {
-    logo: '/images/photo/demo/brands/google.svg',
+    logo: '/demo/photos/brands/google.svg',
     name: 'Google',
     location: 'Los Angeles, CA',
   },
   {
-    logo: '/images/photo/demo/brands/github.svg',
+    logo: '/demo/photos/brands/github.svg',
     name: 'Github',
     location: 'Los Angeles, CA',
   },
   {
-    logo: '/images/photo/demo/brands/gitlab.svg',
+    logo: '/demo/photos/brands/gitlab.svg',
     name: 'Gitlab',
     location: 'Los Angeles, CA',
   },
   {
-    logo: '/images/photo/demo/brands/hubspot.svg',
+    logo: '/demo/photos/brands/hubspot.svg',
     name: 'Hubspot',
     location: 'Los Angeles, CA',
   },
   {
-    logo: '/images/photo/demo/brands/slack.svg',
+    logo: '/demo/photos/brands/slack.svg',
     name: 'Slack',
     location: 'Los Angeles, CA',
   },
   {
-    logo: '/images/photo/demo/brands/udemy.svg',
+    logo: '/demo/photos/brands/udemy.svg',
     name: 'Udemy',
     location: 'Los Angeles, CA',
   },
@@ -53,23 +53,23 @@ export const customers = [
 
 export const users = [
   {
-    picture: '/images/avatars/photos/31.jpg',
+    picture: '/demo/avatars/31.jpg',
     name: 'Yasseene Amzi',
   },
   {
-    picture: '/images/avatars/photos/5.jpg',
+    picture: '/demo/avatars/5.jpg',
     name: 'Mary Lebowski',
   },
   {
-    picture: '/images/avatars/photos/32.jpg',
+    picture: '/demo/avatars/32.jpg',
     name: 'Jonathan Krugger',
   },
   {
-    picture: '/images/avatars/photos/21.jpg',
+    picture: '/demo/avatars/21.jpg',
     name: 'Elizabeth Fisher',
   },
   {
-    picture: '/images/avatars/photos/21.jpg',
+    picture: '/demo/avatars/21.jpg',
     name: 'Tara Svenson',
   },
 ]
@@ -78,61 +78,61 @@ export const tools = [
   {
     name: 'Illustrator',
     description: 'Design Software',
-    logo: '/images/photo/demo/tools/illustrator.svg',
+    logo: '/demo/photos/tools/illustrator.svg',
   },
   {
     name: 'Photoshop',
     description: 'Design Software',
-    logo: '/images/photo/demo/tools/photoshop.svg',
+    logo: '/demo/photos/tools/photoshop.svg',
   },
   {
     name: 'Adobe XD',
     description: 'Design Software',
-    logo: '/images/photo/demo/tools/xd.svg',
+    logo: '/demo/photos/tools/xd.svg',
   },
   {
     name: 'Figma',
     description: 'Design Software',
-    logo: '/images/photo/demo/tools/xd.svg',
+    logo: '/demo/photos/tools/xd.svg',
   },
   {
     name: 'Invision',
     description: 'Design Software',
-    logo: '/images/photo/demo/tools/invision.svg',
+    logo: '/demo/photos/tools/invision.svg',
   },
   {
     name: 'Jira',
     description: 'Issue Tracker',
-    logo: '/images/photo/demo/tools/jira.svg',
+    logo: '/demo/photos/tools/jira.svg',
   },
   {
     name: 'Taiga',
     description: 'Scrumboard',
-    logo: '/images/photo/demo/tools/taiga.svg',
+    logo: '/demo/photos/tools/taiga.svg',
   },
   {
     name: 'Slack',
     description: 'Messaging App',
-    logo: '/images/photo/demo/tools/slack.svg',
+    logo: '/demo/photos/tools/slack.svg',
   },
   {
     name: 'Asana',
     description: 'Task Manager',
-    logo: '/images/photo/demo/tools/asana.svg',
+    logo: '/demo/photos/tools/asana.svg',
   },
   {
     name: 'Teamwork',
     description: 'Collaborative App',
-    logo: '/images/photo/demo/tools/teamwork.svg',
+    logo: '/demo/photos/tools/teamwork.svg',
   },
   {
     name: 'GitHub',
     description: 'Code Repository',
-    logo: '/images/photo/demo/tools/github.svg',
+    logo: '/demo/photos/tools/github.svg',
   },
   {
     name: 'Gitlab',
     description: 'Code Repository',
-    logo: '/images/photo/demo/tools/gitlab.svg',
+    logo: '/demo/photos/tools/gitlab.svg',
   },
 ]

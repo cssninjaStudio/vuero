@@ -21,18 +21,18 @@ const isLoading = ref(false)
 const resizeValue = ref(70)
 const uploadModalOpen = ref(false)
 const avatars = [
-  '/images/avatars/svg/huro-1.svg',
-  '/images/avatars/svg/huro-2.svg',
-  '/images/avatars/svg/huro-3.svg',
-  '/images/avatars/svg/huro-4.svg',
-  '/images/avatars/svg/huro-5.svg',
-  '/images/avatars/svg/huro-6.svg',
-  '/images/avatars/svg/huro-7.svg',
-  '/images/avatars/svg/huro-8.svg',
-  '/images/avatars/svg/huro-9.svg',
-  '/images/avatars/svg/huro-10.svg',
-  '/images/avatars/svg/huro-11.svg',
-  '/images/avatars/svg/huro-12.svg',
+  '/images/avatars/svg/vuero-1.svg',
+  '/images/avatars/svg/vuero-2.svg',
+  '/images/avatars/svg/vuero-3.svg',
+  '/images/avatars/svg/vuero-4.svg',
+  '/images/avatars/svg/vuero-5.svg',
+  '/images/avatars/svg/vuero-6.svg',
+  '/images/avatars/svg/vuero-7.svg',
+  '/images/avatars/svg/vuero-8.svg',
+  '/images/avatars/svg/vuero-9.svg',
+  '/images/avatars/svg/vuero-10.svg',
+  '/images/avatars/svg/vuero-11.svg',
+  '/images/avatars/svg/vuero-12.svg',
 ]
 
 const handleSignup = async () => {
@@ -103,7 +103,7 @@ onUnmounted(() => {
       </div>
     </div>
 
-    <div id="huro-signup" class="signup-wrapper">
+    <div id="vuero-signup" class="signup-wrapper">
       <div class="signup-steps" :class="[step === 0 && 'is-hidden']">
         <div class="steps-container">
           <div
@@ -140,7 +140,7 @@ onUnmounted(() => {
       <img
         :class="[step > 0 && 'is-hidden']"
         class="card-bg"
-        src="/@src/assets/backgrounds/signup/huro-signup.png?format=webp"
+        src="/@src/assets/backgrounds/signup/vuero-signup.png?format=webp"
         alt=""
       />
 
@@ -464,9 +464,9 @@ onUnmounted(() => {
 </template>
 
 <style lang="scss">
-@import '../../assets/scss/abstracts/_variables.scss';
-@import '../../assets/scss/abstracts/_mixins.scss';
-@import '../../assets/scss/pages/profile/_user-profile.scss';
+@import '../../scss/abstracts/_variables.scss';
+@import '../../scss/abstracts/_mixins.scss';
+@import '../../scss/pages/profile/_user-profile.scss';
 
 /* ==========================================================================
 4. Sign up

@@ -2,25 +2,25 @@
 tagsStackedUsersOptions:
   - value: alice
     name: Alice Carasca
-    image: /images/avatars/photos/7.jpg
+    image: /demo/avatars/7.jpg
   - value: erik
     name: Erik Kovalsky
-    image: /images/avatars/photos/8.jpg
+    image: /demo/avatars/8.jpg
   - value: melany
     name: Melany Wallace
-    image: /images/avatars/photos/25.jpg
+    image: /demo/avatars/25.jpg
   - value: tara
     name: Tara Svenson
-    image: /images/avatars/photos/13.jpg
+    image: /demo/avatars/13.jpg
   - value: mary
     name: Mary Lebowski
-    image: /images/avatars/photos/5.jpg
+    image: /demo/avatars/5.jpg
   - value: irina
     name: Irina Vierbovsky
-    image: /images/avatars/photos/23.jpg
+    image: /demo/avatars/23.jpg
   - value: jonathan
     name: Jonathan Krugger
-    image: /images/avatars/photos/32.jpg
+    image: /demo/avatars/32.jpg
 tagsStackedUsersValue: []
 ---
 
@@ -40,37 +40,37 @@ const tagsStackedUsersOptions = [
   {
     value: 'alice',
     name: 'Alice Carasca',
-    image: '/images/avatars/photos/7.jpg',
+    image: '/demo/avatars/7.jpg',
   },
   {
     value: 'erik',
     name: 'Erik Kovalsky',
-    image: '/images/avatars/photos/8.jpg',
+    image: '/demo/avatars/8.jpg',
   },
   {
     value: 'melany',
     name: 'melany Wallace',
-    image: '/images/avatars/photos/25.jpg',
+    image: '/demo/avatars/25.jpg',
   },
   {
     value: 'tara',
     name: 'Tara Svenson',
-    image: '/images/avatars/photos/13.jpg',
+    image: '/demo/avatars/13.jpg',
   },
   {
     value: 'mary',
     name: 'Mary Lebowski',
-    image: '/images/avatars/photos/5.jpg',
+    image: '/demo/avatars/5.jpg',
   },
   {
     value: 'irina',
     name: 'Irina Vierbovsky',
-    image: '/images/avatars/photos/23.jpg',
+    image: '/demo/avatars/23.jpg',
   },
   {
     value: 'jonathan',
     name: 'Jonathan Krugger',
-    image: '/images/avatars/photos/32.jpg',
+    image: '/demo/avatars/32.jpg',
   },
 ]
 </script>

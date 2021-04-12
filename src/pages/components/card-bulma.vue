@@ -38,7 +38,7 @@ const breadcrumb = [
     <div class="page-title has-text-centered">
       <!-- Sidebar Trigger -->
       <div
-        class="huro-hamburger nav-trigger push-resize"
+        class="vuero-hamburger nav-trigger push-resize"
         @click="toggleSidebar('components')"
       >
         <span class="menu-toggle has-chevron">
@@ -77,8 +77,8 @@ const breadcrumb = [
 
         <div class="column is-4">
           <V-CardBulma
-            image="/images/photo/demo/apps/1.jpg"
-            avatar="/images/avatars/photos/19.jpg"
+            image="/demo/photos/apps/1.jpg"
+            avatar="/demo/avatars/19.jpg"
             badge="/images/icons/flags/germany.svg"
             title="Greta K."
             subtitle="Sales Manager"
@@ -93,8 +93,8 @@ const breadcrumb = [
 
         <div class="column is-4">
           <V-CardBulma
-            image="/images/photo/demo/apps/2.png"
-            avatar="/images/avatars/photos/23.jpg"
+            image="/demo/photos/apps/2.png"
+            avatar="/demo/avatars/23.jpg"
             badge="/images/icons/flags/united-states-of-america.svg"
             title="Irina V."
             subtitle="Project Manager"
@@ -109,8 +109,8 @@ const breadcrumb = [
 
         <div class="column is-4">
           <V-CardBulma
-            image="/images/photo/demo/apps/3.png"
-            avatar="/images/avatars/photos/12.jpg"
+            image="/demo/photos/apps/3.png"
+            avatar="/demo/avatars/12.jpg"
             badge="/images/icons/flags/united-states-of-america.svg"
             title="Joshua S."
             subtitle="Backend Developer"

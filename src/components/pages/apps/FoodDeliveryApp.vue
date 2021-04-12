@@ -255,7 +255,7 @@ onUnmounted(() => {
           <div class="cart-items has-slimscroll is-hidden">
             <div class="cart-item">
               <V-Avatar
-                picture="/images/photo/demo/food/1.jpg"
+                picture="/demo/photos/food/1.jpg"
                 size="medium"
                 squared
               />
@@ -266,7 +266,7 @@ onUnmounted(() => {
             </div>
             <div class="cart-item">
               <V-Avatar
-                picture="/images/photo/demo/food/2.jpg"
+                picture="/demo/photos/food/2.jpg"
                 size="medium"
                 squared
               />
@@ -277,7 +277,7 @@ onUnmounted(() => {
             </div>
             <div class="cart-item">
               <V-Avatar
-                picture="/images/photo/demo/food/3.jpg"
+                picture="/demo/photos/food/3.jpg"
                 size="medium"
                 squared
               />
@@ -337,7 +337,7 @@ onUnmounted(() => {
           </UIWidget>
 
           <ContactWidget
-            picture="/images/avatars/photos/8.jpg"
+            picture="/demo/avatars/8.jpg"
             username="Erik K."
             email="erikkovalsky@vuero.io"
             company="Vuero Ltd."
@@ -365,9 +365,9 @@ onUnmounted(() => {
 </template>
 
 <style lang="scss">
-@import '../../../assets/scss/abstracts/_variables.scss';
-@import '../../../assets/scss/abstracts/_mixins.scss';
-@import '../../../assets/scss/pages/generic/_widgets-lists.scss';
+@import '../../../scss/abstracts/_variables.scss';
+@import '../../../scss/abstracts/_mixins.scss';
+@import '../../../scss/pages/generic/_widgets-lists.scss';
 
 .food-delivery-dashboard {
   display: flex;

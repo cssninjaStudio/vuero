@@ -21,7 +21,7 @@ useHead({
     <div class="page-title has-text-centered">
       <!-- Sidebar Trigger -->
       <div
-        class="huro-hamburger nav-trigger push-resize"
+        class="vuero-hamburger nav-trigger push-resize"
         @click="toggleSidebar('elements')"
       >
         <span class="menu-toggle has-chevron">
@@ -236,7 +236,7 @@ useHead({
                   <div class="v-avatar">
                     <img
                       class="avatar"
-                      src="/images/avatars/svg/8.gif"
+                      src="/demo/avatars/8.gif"
                       alt=""
                       @error.once="
                         $event.target.src =
@@ -259,7 +259,7 @@ useHead({
                   <div class="v-avatar">
                     <img
                       class="avatar"
-                      src="/images/avatars/svg/1.gif"
+                      src="/demo/avatars/1.gif"
                       alt=""
                       @error.once="
                         $event.target.src =
@@ -282,7 +282,7 @@ useHead({
                   <div class="v-avatar">
                     <img
                       class="avatar"
-                      src="/images/avatars/svg/4.gif"
+                      src="/demo/avatars/4.gif"
                       alt=""
                       @error.once="
                         $event.target.src =
@@ -322,7 +322,7 @@ useHead({
                   <div class="v-avatar">
                     <img
                       class="avatar"
-                      src="/images/avatars/svg/3.gif"
+                      src="/demo/avatars/3.gif"
                       alt=""
                       @error.once="
                         $event.target.src =

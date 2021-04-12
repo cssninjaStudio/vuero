@@ -23,7 +23,7 @@ const democheck4 = ref(false)
       <div class="column is-12">
         <div class="dashboard-header">
           <V-Avatar
-            picture="/images/avatars/photos/8.jpg"
+            picture="/demo/avatars/8.jpg"
             badge="/images/icons/flags/united-states-of-america.svg"
             size="xl"
           />
@@ -63,7 +63,7 @@ const democheck4 = ref(false)
             >
               <template #icon>
                 <V-Avatar
-                  picture="/images/photo/demo/apps/1.jpg"
+                  picture="/demo/photos/apps/1.jpg"
                   badge="/images/icons/stacks/illustrator.svg"
                   size="medium"
                   squared
@@ -83,7 +83,7 @@ const democheck4 = ref(false)
             >
               <template #icon>
                 <V-Avatar
-                  picture="/images/photo/demo/apps/2.png"
+                  picture="/demo/photos/apps/2.png"
                   badge="/images/icons/stacks/reactjs.svg"
                   size="medium"
                   squared
@@ -103,7 +103,7 @@ const democheck4 = ref(false)
             >
               <template #icon>
                 <V-Avatar
-                  picture="/images/photo/demo/apps/3.png"
+                  picture="/demo/photos/apps/3.png"
                   badge="/images/icons/stacks/angular.svg"
                   size="medium"
                   squared
@@ -123,7 +123,7 @@ const democheck4 = ref(false)
             >
               <template #icon>
                 <V-Avatar
-                  picture="/images/photo/demo/apps/4.png"
+                  picture="/demo/photos/apps/4.png"
                   badge="/images/icons/stacks/js.svg"
                   size="medium"
                   squared
@@ -176,7 +176,7 @@ const democheck4 = ref(false)
             <ul class="user-list">
               <li>
                 <tippy class="has-help-cursor" interactive :offset="[0, 10]">
-                  <V-Avatar picture="/images/avatars/photos/18.jpg" />
+                  <V-Avatar picture="/demo/avatars/18.jpg" />
                   <template #content>
                     <UserPopoverContent :user="popovers.user18" />
                   </template>
@@ -208,7 +208,7 @@ const democheck4 = ref(false)
               </li>
               <li>
                 <tippy class="has-help-cursor" interactive :offset="[0, 10]">
-                  <V-Avatar picture="/images/avatars/photos/13.jpg" />
+                  <V-Avatar picture="/demo/avatars/13.jpg" />
                   <template #content>
                     <UserPopoverContent :user="popovers.user13" />
                   </template>
@@ -315,8 +315,8 @@ const democheck4 = ref(false)
 </template>
 
 <style lang="scss">
-@import '../../../../assets/scss/abstracts/_variables.scss';
-@import '../../../../assets/scss/abstracts/_mixins.scss';
+@import '../../../../scss/abstracts/_variables.scss';
+@import '../../../../scss/abstracts/_mixins.scss';
 
 .is-navbar {
   .personal-dashboard {

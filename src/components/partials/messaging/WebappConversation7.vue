@@ -17,7 +17,7 @@ const emit = defineEmit(['toggleMobileConversation'])
       <div class="chat-area-group">
         <img
           class="chat-area-profile"
-          src="/images/avatars/photos/18.jpg"
+          src="/demo/avatars/18.jpg"
           alt=""
           data-user-popover="7"
           @error.once="
@@ -31,7 +31,7 @@ const emit = defineEmit(['toggleMobileConversation'])
         <div class="chat-msg-profile">
           <img
             class="chat-msg-img"
-            src="/images/avatars/photos/18.jpg"
+            src="/demo/avatars/18.jpg"
             alt=""
             data-user-popover="7"
           />
@@ -43,7 +43,7 @@ const emit = defineEmit(['toggleMobileConversation'])
           </div>
           <div class="chat-msg-text">
             <img
-              src="/images/photo/demo/apps/4.png"
+              src="/demo/photos/apps/4.png"
               alt=""
               @error.once="
                 $event.target.src = 'https://via.placeholder.com/400x300'
@@ -52,7 +52,7 @@ const emit = defineEmit(['toggleMobileConversation'])
           </div>
           <div class="chat-msg-text">
             <img
-              src="/images/photo/demo/apps/7.png"
+              src="/demo/photos/apps/7.png"
               alt=""
               @error.once="
                 $event.target.src = 'https://via.placeholder.com/400x300'
@@ -61,7 +61,7 @@ const emit = defineEmit(['toggleMobileConversation'])
           </div>
           <div class="chat-msg-text">
             <img
-              src="/images/photo/demo/apps/6.png"
+              src="/demo/photos/apps/6.png"
               alt=""
               @error.once="
                 $event.target.src = 'https://via.placeholder.com/400x300'
@@ -75,7 +75,7 @@ const emit = defineEmit(['toggleMobileConversation'])
         <div class="chat-msg-profile">
           <img
             class="chat-msg-img"
-            src="/images/avatars/photos/8.jpg"
+            src="/demo/avatars/8.jpg"
             alt=""
             data-user-popover="3"
             @error.once="

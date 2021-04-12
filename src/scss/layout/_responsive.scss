@@ -150,13 +150,13 @@ Responsive styles
 
   .page-title {
     &.is-project-details {
-      .huro-hamburger {
+      .vuero-hamburger {
         margin-left: -4px !important;
       }
     }
 
     &.is-pulled-lg {
-      .huro-hamburger {
+      .vuero-hamburger {
         margin-left: 0 !important;
       }
     }
@@ -249,7 +249,7 @@ Responsive styles
     }
   }
 
-  .huro-hamburger:not(.is-visible) {
+  .vuero-hamburger:not(.is-visible) {
     display: none !important;
   }
 
@@ -289,7 +289,7 @@ Responsive styles
     padding-top: 20px;
 
     &.is-project-details {
-      .huro-hamburger {
+      .vuero-hamburger {
         margin-left: 7px !important;
       }
     }
@@ -416,7 +416,7 @@ Responsive styles
     }
   }
 
-  .huro-hamburger:not(.is-visible) {
+  .vuero-hamburger:not(.is-visible) {
     display: none !important;
   }
 
@@ -455,7 +455,7 @@ Responsive styles
     padding-top: 20px;
 
     &.is-project-details {
-      .huro-hamburger {
+      .vuero-hamburger {
         margin-left: -4px !important;
       }
     }

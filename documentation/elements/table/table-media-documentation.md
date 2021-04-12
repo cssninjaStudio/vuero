@@ -6,7 +6,7 @@ disable_example: true
 
 Vuero provides a basic Html5 table powered by Bulma.
 You sinply have to add the table class to a html5 table element.
-You can easily add media elements like the huro avatars inside your table rows.
+You can easily add media elements like the vuero avatars inside your table rows.
 
 <!--code-->
 
@@ -30,7 +30,7 @@ You can easily add media elements like the huro avatars inside your table rows.
           <div class="v-avatar">
             <img
               class="avatar"
-              src="/images/avatars/svg/8.gif"
+              src="/demo/avatars/8.gif"
               alt=""
               @error.once="
                 $event.target.src = 'https://via.placeholder.com/150x150'
@@ -52,7 +52,7 @@ You can easily add media elements like the huro avatars inside your table rows.
           <div class="v-avatar">
             <img
               class="avatar"
-              src="/images/avatars/svg/1.gif"
+              src="/demo/avatars/1.gif"
               alt=""
               @error.once="
                 $event.target.src = 'https://via.placeholder.com/150x150'
@@ -74,7 +74,7 @@ You can easily add media elements like the huro avatars inside your table rows.
           <div class="v-avatar">
             <img
               class="avatar"
-              src="/images/avatars/svg/4.gif"
+              src="/demo/avatars/4.gif"
               alt=""
               @error.once="
                 $event.target.src = 'https://via.placeholder.com/150x150'
@@ -113,7 +113,7 @@ You can easily add media elements like the huro avatars inside your table rows.
           <div class="v-avatar">
             <img
               class="avatar"
-              src="/images/avatars/svg/3.gif"
+              src="/demo/avatars/3.gif"
               alt=""
               @error.once="
                 $event.target.src = 'https://via.placeholder.com/150x150'

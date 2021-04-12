@@ -113,7 +113,7 @@ const isIconify = computed(() => {
 </template>
 
 <style lang="scss" scoped>
-@import '../../../assets/scss/abstracts/_variables.scss';
+@import '../../../scss/abstracts/_variables.scss';
 
 .icon-wrap {
   display: flex;

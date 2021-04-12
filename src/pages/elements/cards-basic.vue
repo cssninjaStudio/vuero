@@ -23,7 +23,7 @@ useHead({
     <div class="page-title has-text-centered">
       <!-- Sidebar Trigger -->
       <div
-        class="huro-hamburger nav-trigger push-resize"
+        class="vuero-hamburger nav-trigger push-resize"
         @click="toggleSidebar('elements')"
       >
         <span class="menu-toggle has-chevron">
@@ -222,7 +222,7 @@ useHead({
                         placement="top-start"
                       >
                         <V-Avatar
-                          picture="/images/avatars/photos/19.jpg"
+                          picture="/demo/avatars/19.jpg"
                           badge="/images/icons/flags/germany.svg"
                         />
                         <template #content>
@@ -259,7 +259,7 @@ useHead({
                         placement="top-start"
                       >
                         <V-Avatar
-                          picture="/images/avatars/photos/19.jpg"
+                          picture="/demo/avatars/19.jpg"
                           badge="/images/icons/flags/germany.svg"
                         />
                         <template #content>
@@ -296,7 +296,7 @@ useHead({
                         placement="top-start"
                       >
                         <V-Avatar
-                          picture="/images/avatars/photos/19.jpg"
+                          picture="/demo/avatars/19.jpg"
                           badge="/images/icons/flags/germany.svg"
                         />
                         <template #content>

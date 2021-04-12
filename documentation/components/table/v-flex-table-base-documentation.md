@@ -19,7 +19,7 @@ const data = [
     contacts: [
       {
         id: 0,
-        picture: '/images/avatars/photos/25.jpg',
+        picture: '/demo/avatars/25.jpg',
         initials: 'AC',
         color: 'info',
       },

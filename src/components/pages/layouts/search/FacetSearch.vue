@@ -5,37 +5,37 @@ const people = [
   {
     name: 'Alice Carasca',
     role: 'Software Engineer',
-    avatar: '/images/avatars/photos/5.jpg',
+    avatar: '/demo/avatars/5.jpg',
   },
   {
     name: 'Mary Lebowski',
     role: 'Project Manager',
-    avatar: '/images/avatars/photos/5.jpg',
+    avatar: '/demo/avatars/5.jpg',
   },
   {
     name: 'Ryan Brentman',
     role: 'Web Developer',
-    avatar: '/images/avatars/photos/14.jpg',
+    avatar: '/demo/avatars/14.jpg',
   },
   {
     name: 'Irina Vierbovsky',
     role: 'Project Manager',
-    avatar: '/images/avatars/photos/23.jpg',
+    avatar: '/demo/avatars/23.jpg',
   },
   {
     name: 'Jonathan Krugger',
     role: 'Product Manager',
-    avatar: '/images/avatars/photos/32.jpg',
+    avatar: '/demo/avatars/32.jpg',
   },
   {
     name: 'Alejandro Badajoz',
     role: 'Business Analyst',
-    avatar: '/images/avatars/photos/39.jpg',
+    avatar: '/demo/avatars/39.jpg',
   },
   {
     name: 'Greta Kroppfer',
     role: 'Sales Manager',
-    avatar: '/images/avatars/photos/19.jpg',
+    avatar: '/demo/avatars/19.jpg',
   },
 ]
 
@@ -43,12 +43,12 @@ const records = [
   {
     name: 'Delivery App Project',
     date: 'August 2020',
-    preview: '/images/photo/demo/apps/1.jpg',
+    preview: '/demo/photos/apps/1.jpg',
   },
   {
     name: 'Health and Fitness Dashboard',
     date: 'October 2020',
-    preview: '/images/photo/demo/apps/2.png',
+    preview: '/demo/photos/apps/2.png',
   },
   {
     name: 'Tech Summit Expenses',
@@ -59,12 +59,12 @@ const records = [
   {
     name: 'Learning Tracker Dashboard',
     date: 'September 2020',
-    preview: '/images/photo/demo/apps/3.png',
+    preview: '/demo/photos/apps/3.png',
   },
   {
     name: 'Learning Tracker Dashboard',
     date: 'September 2020',
-    preview: '/images/photo/demo/apps/4.png',
+    preview: '/demo/photos/apps/4.png',
   },
   {
     name: 'Project Outline',
@@ -81,7 +81,7 @@ const records = [
   {
     name: 'Resume Management Mobile App',
     date: 'October 2020',
-    preview: '/images/photo/demo/apps/5.png',
+    preview: '/demo/photos/apps/5.png',
   },
   {
     name: 'Website Homepage Redesign',
@@ -439,7 +439,7 @@ const activeTab = ref<TabId>('all')
 </template>
 
 <style lang="scss">
-@import '../../../../assets/scss/abstracts/_variables.scss';
-@import '../../../../assets/scss/abstracts/_mixins.scss';
-@import '../../../../assets/scss/pages/generic/_search.scss';
+@import '../../../../scss/abstracts/_variables.scss';
+@import '../../../../scss/abstracts/_mixins.scss';
+@import '../../../../scss/pages/generic/_search.scss';
 </style>

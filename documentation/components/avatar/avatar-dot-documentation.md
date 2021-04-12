@@ -9,12 +9,12 @@ See code for more details about usage.
 
 ```vue
 <template>
-  <V-Avatar picture="/images/avatars/photos/7.jpg" size="small" dot />
-  <V-Avatar picture="/images/avatars/photos/8.jpg" dot />
-  <V-Avatar picture="/images/avatars/photos/11.jpg" size="medium" dot />
-  <V-Avatar picture="/images/avatars/photos/21.jpg" size="large" dot />
-  <V-Avatar picture="/images/avatars/photos/13.jpg" size="big" dot />
-  <V-Avatar picture="/images/avatars/photos/5.jpg" size="xl" dot />
+  <V-Avatar picture="/demo/avatars/7.jpg" size="small" dot />
+  <V-Avatar picture="/demo/avatars/8.jpg" dot />
+  <V-Avatar picture="/demo/avatars/11.jpg" size="medium" dot />
+  <V-Avatar picture="/demo/avatars/21.jpg" size="large" dot />
+  <V-Avatar picture="/demo/avatars/13.jpg" size="big" dot />
+  <V-Avatar picture="/demo/avatars/5.jpg" size="xl" dot />
 </template>
 ```
 
@@ -22,11 +22,11 @@ See code for more details about usage.
 
 <!--example-->
 
-<V-Avatar picture="/images/avatars/photos/7.jpg" size="small" dot />
-<V-Avatar picture="/images/avatars/photos/8.jpg" dot />
-<V-Avatar picture="/images/avatars/photos/11.jpg" size="medium" dot />
-<V-Avatar picture="/images/avatars/photos/21.jpg" size="large" dot />
-<V-Avatar picture="/images/avatars/photos/13.jpg" size="big" dot />
-<V-Avatar picture="/images/avatars/photos/5.jpg" size="xl" dot />
+<V-Avatar picture="/demo/avatars/7.jpg" size="small" dot />
+<V-Avatar picture="/demo/avatars/8.jpg" dot />
+<V-Avatar picture="/demo/avatars/11.jpg" size="medium" dot />
+<V-Avatar picture="/demo/avatars/21.jpg" size="large" dot />
+<V-Avatar picture="/demo/avatars/13.jpg" size="big" dot />
+<V-Avatar picture="/demo/avatars/5.jpg" size="xl" dot />
 
 <!--/example-->

@@ -49,7 +49,7 @@ export const optionsCompany = {
     data: [
       [
         0,
-        '/images/avatars/photos/8.jpg',
+        '/demo/avatars/8.jpg',
         'Erik Kovalsky',
         'Product Manager',
         'busy',
@@ -57,7 +57,7 @@ export const optionsCompany = {
       ],
       [
         1,
-        '/images/avatars/photos/7.jpg',
+        '/demo/avatars/7.jpg',
         'Alice Carasca',
         'Software Engineer',
         'offline',
@@ -65,7 +65,7 @@ export const optionsCompany = {
       ],
       [
         2,
-        '/images/avatars/photos/13.jpg',
+        '/demo/avatars/13.jpg',
         'Tara Svenson',
         'UI/UX Designer',
         'offline',
@@ -73,7 +73,7 @@ export const optionsCompany = {
       ],
       [
         3,
-        '/images/avatars/photos/5.jpg',
+        '/demo/avatars/5.jpg',
         'Mary Lebowski',
         'Project Manager',
         'available',
@@ -81,7 +81,7 @@ export const optionsCompany = {
       ],
       [
         5,
-        '/images/avatars/photos/27.jpg',
+        '/demo/avatars/27.jpg',
         'Carmen Escudero',
         'HR Manager',
         'offline',

@@ -16,31 +16,31 @@ const conversations = [
     id: 1,
     name: 'Henry G.',
     lastMessage: '3 minutes ago',
-    avatar: '/images/avatars/photos/10.jpg',
+    avatar: '/demo/avatars/10.jpg',
   },
   {
     id: 2,
     name: 'Melany W.',
     lastMessage: '30 minutes ago',
-    avatar: '/images/avatars/photos/25.jpg',
+    avatar: '/demo/avatars/25.jpg',
   },
   {
     id: 3,
     name: 'Tara S.',
     lastMessage: '1 day ago',
-    avatar: '/images/avatars/photos/13.jpg',
+    avatar: '/demo/avatars/13.jpg',
   },
   {
     id: 4,
     name: 'Esteban C.',
     lastMessage: '1 day ago',
-    avatar: '/images/avatars/photos/18.jpg',
+    avatar: '/demo/avatars/18.jpg',
   },
   {
     id: 5,
     name: 'Alice C.',
     lastMessage: '2 days ago',
-    avatar: '/images/avatars/photos/7.jpg',
+    avatar: '/demo/avatars/7.jpg',
   },
 ]
 
@@ -150,7 +150,7 @@ watchEffect(onConversationChanged)
     />
 
     <div
-      id="huro-messaging"
+      id="vuero-messaging"
       class="view-wrapper"
       :class="[
         activeSidebar !== 'none' && 'is-pushed-full',
@@ -161,7 +161,7 @@ watchEffect(onConversationChanged)
         <div class="page-content chat-content">
           <div class="page-title has-text-centered is-hidden">
             <div
-              class="huro-hamburger nav-trigger push-resize"
+              class="vuero-hamburger nav-trigger push-resize"
               @click="toggleSidebar('messages')"
             >
               <span class="menu-toggle has-chevron">
@@ -432,7 +432,7 @@ watchEffect(onConversationChanged)
                     </div>
                     <div class="detail-photo-grid">
                       <img
-                        src="/images/photo/demo/demo-apps/1.jpg"
+                        src="/demo/photos/demo-apps/1.jpg"
                         alt=""
                         @error.once="
                           $event.target.src =
@@ -440,7 +440,7 @@ watchEffect(onConversationChanged)
                         "
                       />
                       <img
-                        src="/images/photo/demo/demo-apps/2.jpg"
+                        src="/demo/photos/demo-apps/2.jpg"
                         alt=""
                         @error.once="
                           $event.target.src =
@@ -448,7 +448,7 @@ watchEffect(onConversationChanged)
                         "
                       />
                       <img
-                        src="/images/photo/demo/demo-apps/3.jpg"
+                        src="/demo/photos/demo-apps/3.jpg"
                         alt=""
                         @error.once="
                           $event.target.src =
@@ -456,7 +456,7 @@ watchEffect(onConversationChanged)
                         "
                       />
                       <img
-                        src="/images/photo/demo/demo-apps/4.jpg"
+                        src="/demo/photos/demo-apps/4.jpg"
                         alt=""
                         @error.once="
                           $event.target.src =
@@ -464,7 +464,7 @@ watchEffect(onConversationChanged)
                         "
                       />
                       <img
-                        src="/images/photo/demo/demo-apps/5.jpg"
+                        src="/demo/photos/demo-apps/5.jpg"
                         alt=""
                         @error.once="
                           $event.target.src =
@@ -472,7 +472,7 @@ watchEffect(onConversationChanged)
                         "
                       />
                       <img
-                        src="/images/photo/demo/demo-apps/6.jpg"
+                        src="/demo/photos/demo-apps/6.jpg"
                         alt=""
                         @error.once="
                           $event.target.src =
@@ -480,7 +480,7 @@ watchEffect(onConversationChanged)
                         "
                       />
                       <img
-                        src="/images/photo/demo/demo-apps/7.jpg"
+                        src="/demo/photos/demo-apps/7.jpg"
                         alt=""
                         @error.once="
                           $event.target.src =
@@ -488,7 +488,7 @@ watchEffect(onConversationChanged)
                         "
                       />
                       <img
-                        src="/images/photo/demo/demo-apps/8.jpg"
+                        src="/demo/photos/demo-apps/8.jpg"
                         alt=""
                         @error.once="
                           $event.target.src =
@@ -496,7 +496,7 @@ watchEffect(onConversationChanged)
                         "
                       />
                       <img
-                        src="/images/photo/demo/demo-apps/9.jpg"
+                        src="/demo/photos/demo-apps/9.jpg"
                         alt=""
                         @error.once="
                           $event.target.src =
@@ -504,7 +504,7 @@ watchEffect(onConversationChanged)
                         "
                       />
                       <img
-                        src="/images/photo/demo/demo-apps/10.jpg"
+                        src="/demo/photos/demo-apps/10.jpg"
                         alt=""
                         @error.once="
                           $event.target.src =
@@ -512,7 +512,7 @@ watchEffect(onConversationChanged)
                         "
                       />
                       <img
-                        src="/images/photo/demo/demo-apps/11.jpg"
+                        src="/demo/photos/demo-apps/11.jpg"
                         alt=""
                         @error.once="
                           $event.target.src =
@@ -520,7 +520,7 @@ watchEffect(onConversationChanged)
                         "
                       />
                       <img
-                        src="/images/photo/demo/demo-apps/12.jpg"
+                        src="/demo/photos/demo-apps/12.jpg"
                         alt=""
                         @error.once="
                           $event.target.src =
@@ -652,7 +652,7 @@ watchEffect(onConversationChanged)
 </template>
 
 <style lang="scss">
-@import '../assets/scss/abstracts/_variables.scss';
+@import '../scss/abstracts/_variables.scss';
 
 /* ==========================================================================
 1. Chat side FAB

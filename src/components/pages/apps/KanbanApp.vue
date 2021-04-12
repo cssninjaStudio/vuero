@@ -576,7 +576,7 @@ onMounted(() => {
 </template>
 
 <style lang="scss">
-@import '../../../assets/scss/abstracts/_variables.scss';
+@import '../../../scss/abstracts/_variables.scss';
 
 /*! _board.scss | Vuero | Css ninja 2020-2021 */
 

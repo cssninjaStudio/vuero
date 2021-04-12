@@ -153,7 +153,7 @@ watch(
           class="dropdown profile-dropdown dropdown-trigger is-spaced is-right"
         >
           <img
-            src="/images/avatars/photos/8.jpg"
+            src="/demo/avatars/8.jpg"
             alt=""
             @error.once="
               $event.target.src = 'https://via.placeholder.com/150x150'
@@ -168,7 +168,7 @@ watch(
                 <div class="v-avatar is-large">
                   <img
                     class="avatar"
-                    src="/images/avatars/photos/8.jpg"
+                    src="/demo/avatars/8.jpg"
                     alt=""
                     @error.once="
                       $event.target.src = 'https://via.placeholder.com/150x150'
@@ -260,8 +260,8 @@ watch(
 </template>
 
 <style lang="scss">
-@import '../../../../assets/scss/abstracts/_variables.scss';
-@import '../../../../assets/scss/abstracts/_mixins.scss';
-@import '../../../../assets/scss/layout/_navbar.scss';
-@import '../../../../assets/scss/layout/_responsive.scss';
+@import '../../../../scss/abstracts/_variables.scss';
+@import '../../../../scss/abstracts/_mixins.scss';
+@import '../../../../scss/layout/_navbar.scss';
+@import '../../../../scss/layout/_responsive.scss';
 </style>
