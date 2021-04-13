@@ -1,6 +1,20 @@
+/**
+ * This is a store that hold all state used on /wizard-v1 multi-step form
+ *
+ * Using defineAsyncComponent from vue allow to lazyload component only when they are used
+ *
+ * We can import and use sidebarLayout anywhere in our project
+ * @see /src/components/partials/wizard/WizardV1Step1.vue
+ * @see /src/components/partials/wizard/WizardV1Step7.vue
+ */
+
 import { reactive, ref, computed } from 'vue'
 import sleep from '/@src/utils/sleep'
 
+/**
+ * Using typescript types allow better developer experience
+ * with autocompletion and compiler error prechecking
+ */
 import type { WizardData } from '/@src/models/wizard'
 
 export const currentStep = ref(1)

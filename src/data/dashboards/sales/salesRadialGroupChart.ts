@@ -1,4 +1,4 @@
-import { themeColors } from '/@src/state/themeColors'
+import { themeColors } from '/@src/utils/themeColors'
 
 export const radialGroup1Options = {
   series: [31],

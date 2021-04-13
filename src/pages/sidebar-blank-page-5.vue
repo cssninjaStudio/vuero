@@ -10,6 +10,7 @@
  * @see /vite.config.ts
  * @see /src/router.ts
  */
+
 import { useHead } from '@vueuse/head'
 
 /**
@@ -55,6 +56,7 @@ useHead({
               </span>
             </div>
 
+            <!-- Page title -->
             <div class="title-wrap">
               <h1 class="title is-4">Blank Page 5 - Sidebar</h1>
             </div>

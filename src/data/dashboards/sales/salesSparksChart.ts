@@ -1,4 +1,4 @@
-import { themeColors } from '/@src/state/themeColors'
+import { themeColors } from '/@src/utils/themeColors'
 
 const randomizeArray = function (arg: number[]) {
   const array = arg.slice()

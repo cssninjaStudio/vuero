@@ -5,7 +5,7 @@ import { useRoute } from 'vue-router'
 import { popovers } from '/@src/data/users/userPopovers'
 
 import useDropdown from '/@src/composable/useDropdown'
-import { activeSubnav, toggleSubnav } from '/@src/state/navbarState'
+import { activeSubnav, toggleSubnav } from '/@src/state/activeNavbarState'
 
 const route = useRoute()
 const { dropdownElement, isOpen, toggle } = useDropdown()

@@ -1,3 +1,16 @@
+/**
+ * This is your client vue app entrypoint
+ * Its loaded because it is referenced in the vite
+ * entrypoint file (index.html located at the root of this project)
+ *
+ * External css/js files will be loaded as dependencies.
+ * You may want to check the vite configuration.
+ * Some plugins will register virtual components or lazyload other for us.
+ *
+ * @see /index.html
+ * @see /vite.config.ts
+ */
+
 import { createApp } from 'vue'
 import { createHead } from '@vueuse/head'
 import { MotionPlugin } from '@vueuse/motion'
@@ -15,6 +28,10 @@ import router from './router'
 import hasNestedRouterLink from './directives/has-nested-router-link'
 import background from './directives/background'
 
+/**
+ * Importing external libraries allow to compile them in our bundle
+ * How files are interpreted is defined by ther extension.
+ */
 import 'simplebar'
 import '@purge-icons/generated'
 import 'nprogress/nprogress.css'
@@ -35,6 +52,7 @@ import './scss/vendors/prism-coldark-cold.css'
 
 import './scss/main.scss'
 
+// Now we can start our vue app
 const app = createApp(App)
 const head = createHead()
 

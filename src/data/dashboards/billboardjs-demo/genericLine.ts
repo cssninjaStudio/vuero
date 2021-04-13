@@ -1,5 +1,5 @@
 import type { Chart } from 'billboard.js'
-import { themeColors } from '/@src/state/themeColors'
+import { themeColors } from '/@src/utils/themeColors'
 import { line } from 'billboard.js'
 import { ref } from 'vue'
 

@@ -1,4 +1,4 @@
-import { themeColors } from '/@src/state/themeColors'
+import { themeColors } from '/@src/utils/themeColors'
 
 function generateDayWiseTimeSeries(s: number, count: number) {
   const values = [

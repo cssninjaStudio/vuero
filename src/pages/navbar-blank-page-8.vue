@@ -10,6 +10,7 @@
  * @see /vite.config.ts
  * @see /src/router.ts
  */
+
 import { useHead } from '@vueuse/head'
 
 useHead({
@@ -27,19 +28,7 @@ useHead({
         <div class="page-content is-relative">
           <div class="is-navbar-xl">
             <div class="page-title has-text-centered">
-              <!-- Sidebar Trigger -->
-              <div class="vuero-hamburger nav-trigger push-resize">
-                <span class="menu-toggle has-chevron">
-                  <span class="icon-box-toggle">
-                    <span class="rotate">
-                      <i class="icon-line-top"></i>
-                      <i class="icon-line-center"></i>
-                      <i class="icon-line-bottom"></i>
-                    </span>
-                  </span>
-                </span>
-              </div>
-
+              <!-- Page title -->
               <div class="title-wrap">
                 <h1 class="title is-4">Blank Page 8 - Navbar</h1>
               </div>

@@ -55,6 +55,7 @@ useHead({
               </span>
             </div>
 
+            <!-- Page title -->
             <div class="title-wrap">
               <h1 class="title is-4">Blank Page 4 - Sidebar</h1>
             </div>

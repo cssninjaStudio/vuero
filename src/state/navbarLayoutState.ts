@@ -1,3 +1,14 @@
+/**
+ * This is a store that hold which layout component is used on /navbar subpages
+ *
+ * Using defineAsyncComponent from vue allow to lazyload component only when they are used
+ *
+ * We can import and use navbarLayout anywhere in our project
+ * @see /src/components/navigation/desktop/navbar/NavbarLayoutSwitcher.vue
+ * @see /src/pages/navbar/dashboards.vue
+ * @see /src/pages/navbar/layouts.vue
+ */
+
 import { computed, ref, defineAsyncComponent } from 'vue'
 
 const NavbarLayout = defineAsyncComponent(

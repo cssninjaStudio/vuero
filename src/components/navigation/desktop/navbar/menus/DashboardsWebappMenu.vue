@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { activeSubnav } from '/@src/state/navbarState'
+import { activeSubnav } from '/@src/state/activeNavbarState'
 
 type TabId = 'dashboards' | 'templates'
 const activeTab = ref<TabId>('dashboards')

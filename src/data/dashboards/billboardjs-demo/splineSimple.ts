@@ -1,4 +1,4 @@
-import { themeColors } from '/@src/state/themeColors'
+import { themeColors } from '/@src/utils/themeColors'
 import { spline } from 'billboard.js'
 import { ref } from 'vue'
 

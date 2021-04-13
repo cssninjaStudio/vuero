@@ -1,18 +1,23 @@
 /**
- * DarkModeState Composition API
+ * This is a store that hold the dark mode state
+ * It could be auto (fit system preference), dark or light
+ *
+ * Using useStorage from @vueuse/core allow persistance storage accross tabs/sessions
+ *
+ * We can import and set isDark anywhere in our project
+ * @see /src/components/navigation/LandingNavigation.vue
+ * @see /src/components/partials/toolbars/Toolbar.vue
  */
 
-import type { Ref } from 'vue'
 import { computed, watchEffect } from 'vue'
 import { usePreferredDark, useStorage } from '@vueuse/core'
 
-type DarkModeSchema = Ref<'auto' | 'dark' | 'light'>
+type DarkModeSchema = 'auto' | 'dark' | 'light'
 
-/* DarkModeState data */
 const DARK_MODE_BODY_CLASS = 'is-dark'
 const preferredDark = usePreferredDark()
 
-export const colorSchema = useStorage('color-schema', 'auto') as DarkModeSchema
+export const colorSchema = useStorage<DarkModeSchema>('color-schema', 'auto')
 export const isDark = computed({
   get() {
     return colorSchema.value === 'auto'
@@ -25,28 +30,15 @@ export const isDark = computed({
   },
 })
 
-// update body classList when state changed
+/**
+ * watchEffect callbacks will be executed each time used reactives value has changed
+ */
 watchEffect(() => {
   const body = document.body
-  const images = document.querySelectorAll(
-    '.theme-image[data-dark], .theme-image[data-light]'
-  )
 
   if (isDark.value) {
     body.classList.add(DARK_MODE_BODY_CLASS)
-    images.forEach((element) => {
-      const image = element as HTMLImageElement
-      if (image) {
-        image.src = image.dataset.dark || image.src
-      }
-    })
   } else {
     body.classList.remove(DARK_MODE_BODY_CLASS)
-    images.forEach((element) => {
-      const image = element as HTMLImageElement
-      if (image) {
-        image.src = image.dataset.light || image.src
-      }
-    })
   }
 })
