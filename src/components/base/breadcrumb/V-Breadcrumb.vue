@@ -74,7 +74,12 @@ const props = defineProps({
         itemscope
         itemtype="https://schema.org/ListItem"
       >
-        <RouterLink v-if="item.to" itemprop="item" :to="item.to">
+        <RouterLink
+          v-if="item.to"
+          class="breadcrumb-item"
+          itemprop="item"
+          :to="item.to"
+        >
           <span
             v-if="withIcons && !!item.icon"
             class="icon is-small"
@@ -91,7 +96,12 @@ const props = defineProps({
 
           <meta itemprop="position" :content="key + 1" />
         </RouterLink>
-        <a v-else-if="item.link" itemprop="item" :href="item.link">
+        <a
+          v-else-if="item.link"
+          class="breadcrumb-item"
+          itemprop="item"
+          :href="item.link"
+        >
           <span
             v-if="withIcons && !!item.icon"
             class="icon is-small"
@@ -108,7 +118,7 @@ const props = defineProps({
 
           <meta itemprop="position" :content="key + 1" />
         </a>
-        <a v-else>
+        <span v-else class="breadcrumb-item">
           <span
             v-if="withIcons && !!item.icon"
             class="icon is-small"
@@ -124,7 +134,7 @@ const props = defineProps({
           <span v-else itemprop="name">{{ item.label }}</span>
 
           <meta itemprop="position" :content="key + 1" />
-        </a>
+        </span>
       </li>
     </ul>
   </nav>

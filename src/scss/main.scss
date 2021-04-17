@@ -7,7 +7,6 @@ SCSS Imports
 @import './abstracts/_variables.scss';
 @import './abstracts/_mixins.scss';
 
-// @import 'bulma/bulma.sass';
 @import 'bulma/sass/base/_all.sass';
 @import 'bulma/sass/elements/_all.sass';
 @import 'bulma/sass/form/_all.sass';
@@ -15,9 +14,6 @@ SCSS Imports
 @import 'bulma/sass/grid/_all.sass';
 @import 'bulma/sass/helpers/_all.sass';
 @import 'bulma/sass/layout/_all.sass';
-
-// @import '@vueform/slider/themes/default.scss';
-// @import '@vueform/multiselect/themes/default.scss';
 
 @import './extensions/_all.scss';
 
