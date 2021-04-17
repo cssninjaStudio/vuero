@@ -14,7 +14,7 @@ const isIconify = computed(() => {
 </script>
 
 <template>
-  <span>
+  <span :key="icon">
     <i v-if="isIconify" class="iconify" :data-icon="icon"></i>
     <i v-else :class="icon"></i>
   </span>

@@ -17,6 +17,8 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: '14.x'
+
+      - name: yarn
       - name: yarn build
 
   release:
@@ -41,6 +43,7 @@ jobs:
         with:
           node-version: '14.x'
 
+      - name: yarn
       - name: yarn test
       - name: yarn build
 
