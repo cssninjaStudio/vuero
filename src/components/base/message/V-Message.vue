@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { defineEmit, PropType } from 'vue'
+import type { PropType } from 'vue'
+import { defineEmit } from 'vue'
 import { defineProps } from 'vue'
 
 type MessageColor =

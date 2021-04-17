@@ -1,6 +1,7 @@
 <script setup lang="ts">
+import type { PropType } from 'vue'
 import { tryOnUnmounted } from '@vueuse/core'
-import { ref, defineProps, defineEmit, watchEffect, PropType } from 'vue'
+import { ref, defineProps, defineEmit, watchEffect } from 'vue'
 
 type ModalSize = undefined | 'small' | 'medium' | 'large' | 'big'
 type ModalAction = undefined | 'center' | 'right'
