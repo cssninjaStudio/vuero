@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { PropType } from 'vue'
+import { defineEmit, PropType } from 'vue'
 import { defineProps } from 'vue'
 
 type AccordionImageItem = {
@@ -14,20 +14,21 @@ const props = defineProps({
     required: true,
   },
 })
+const emit = defineEmit(['select'])
 </script>
 
 <template>
   <div class="image-accordion">
     <ul>
       <li
-        v-for="item in items"
-        :key="item.id"
+        v-for="(item, key) in items"
+        :key="key"
         class="has-background-image"
         tabindex="1"
         :style="{ backgroundImage: `url(${item.image})` }"
       >
         <div>
-          <a>
+          <a @click="emit('select', key)">
             <h2>{{ item.title }}</h2>
             <p>{{ item.content }}</p>
           </a>
