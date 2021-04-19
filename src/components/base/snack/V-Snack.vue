@@ -2,14 +2,14 @@
 import type { PropType } from 'vue'
 import { computed, defineProps } from 'vue'
 
-type SnackIconColor =
+type SnackColor =
   | undefined
   | 'primary'
   | 'success'
   | 'info'
   | 'warning'
   | 'danger'
-type SnackIconSize = undefined | 'small'
+type SnackSize = undefined | 'small'
 
 const props = defineProps({
   title: {
@@ -18,12 +18,20 @@ const props = defineProps({
   },
   icon: {
     type: String,
-    required: true,
+    default: undefined,
+  },
+  image: {
+    type: String,
+    default: undefined,
+  },
+  placeholder: {
+    type: String,
+    default: 'https://via.placeholder.com/50x50',
   },
   color: {
-    type: String as PropType<SnackIconColor>,
+    type: String as PropType<SnackColor>,
     default: undefined,
-    validator: function (value: SnackIconColor) {
+    validator: function (value: SnackColor) {
       // The value must match one of these strings
       if (
         [undefined, 'primary', 'success', 'info', 'warning', 'danger'].indexOf(
@@ -31,7 +39,7 @@ const props = defineProps({
         ) === -1
       ) {
         console.warn(
-          `V-SnackIcon: invalid "${value}" color. Should be primary, success, info, warning, danger or undefined`
+          `V-Snack: invalid "${value}" color. Should be primary, success, info, warning, danger or undefined`
         )
         return false
       }
@@ -40,13 +48,13 @@ const props = defineProps({
     },
   },
   size: {
-    type: String as PropType<SnackIconSize>,
+    type: String as PropType<SnackSize>,
     default: undefined,
-    validator: function (value: SnackIconSize) {
+    validator: function (value: SnackSize) {
       // The value must match one of these strings
       if ([undefined, 'small'].indexOf(value) === -1) {
         console.warn(
-          `V-SnackIcon: invalid "${value}" size. Should be small or undefined`
+          `V-Snack: invalid "${value}" size. Should be small or undefined`
         )
         return false
       }
@@ -72,11 +80,20 @@ const isIconify = computed(() => {
 <template>
   <div class="snack" :class="[white && 'is-white', size && `is-${size}`]">
     <div
+      v-if="icon"
       class="snack-media is-icon"
       :class="[color && `is-${color}`, solid && `is-solid`]"
     >
       <i v-if="isIconify" class="iconify snack-icon" :data-icon="icon"></i>
       <i v-else class="snack-icon" :class="icon"></i>
+    </div>
+    <div v-else-if="image" class="snack-media">
+      <img
+        class="avatar"
+        :src="image"
+        alt=""
+        @error.once="$event.target.src = placeholder"
+      />
     </div>
     <span class="snack-text">{{ title }}</span>
     <span class="snack-action">
