@@ -18,6 +18,10 @@ const props = defineProps({
     type: Boolean,
     default: false,
   },
+  multiline: {
+    type: Boolean,
+    default: false,
+  },
   horizontal: {
     type: Boolean,
     default: false,
@@ -32,6 +36,7 @@ const props = defineProps({
       props.addons && 'has-addons',
       props.textaddon && 'has-textarea-addon',
       props.grouped && 'is-grouped',
+      props.grouped && props.multiline && 'is-grouped-multiline',
       props.horizontal && 'is-horizontal',
     ]"
   >
@@ -44,7 +49,7 @@ const props = defineProps({
       </div>
     </template>
     <template v-else-if="typeof props.label === 'string'">
-      <label>
+      <label class="label">
         {{ props.label }}
       </label>
 
