@@ -93,6 +93,12 @@ useHead({
 
           <!--Font Awesome-->
           <IconBoxFaDocumentation />
+
+          <!--Props-->
+          <IconBoxPropsDocumentation />
+
+          <!--Slots-->
+          <IconBoxSlotsDocumentation />
         </div>
         <div v-if="toc.length" class="column is-3 toc-column">
           <DocumentationToc :toc="toc" />

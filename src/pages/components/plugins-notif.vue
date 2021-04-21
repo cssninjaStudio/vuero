@@ -17,7 +17,7 @@ onMounted(() => {
 })
 
 useHead({
-  title: 'Components - Plugins Notyf - Vuero',
+  title: 'Notyf - Plugins - Vuero',
 })
 </script>
 

@@ -220,7 +220,7 @@ const activeTab = ref<TabId>('dashboards')
         :class="[activeTab === 'templates' && 'is-active']"
       >
         <div class="tab-content-inner">
-          <div class="center has-slimscroll">
+          <div class="center">
             <div class="columns">
               <div class="column is-3">
                 <h4 class="column-heading">Sidebars</h4>
@@ -278,7 +278,7 @@ const activeTab = ref<TabId>('dashboards')
               </div>
               <div class="column is-3">
                 <h4 class="column-heading">Navbars</h4>
-                <ul>
+                <ul class="has-slimscroll" simplebar>
                   <li>
                     <RouterLink :to="{ name: 'navbar-blank-page-1' }">
                       <i class="lnil lnil-layout-alt-1"></i>

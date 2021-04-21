@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { defineEmit, defineProps } from 'vue'
+import { defineProps } from 'vue'
 
 defineProps({
   title: {
@@ -10,13 +10,7 @@ defineProps({
     type: String,
     default: undefined,
   },
-  cta: {
-    type: String,
-    default: undefined,
-  },
 })
-
-const emit = defineEmit(['click'])
 </script>
 
 <template>
@@ -25,9 +19,7 @@ const emit = defineEmit(['click'])
       <slot name="image"></slot>
       <h3 class="dark-inverted">{{ title }}</h3>
       <p v-if="subtitle">{{ subtitle }}</p>
-      <V-Button v-if="cta" color="primary" elevated @click="emit('click')">
-        {{ cta }}
-      </V-Button>
+      <slot name="action"></slot>
     </div>
   </div>
 </template>

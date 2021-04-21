@@ -10,10 +10,6 @@ const props = defineProps({
     type: String,
     default: undefined,
   },
-  cta: {
-    type: String,
-    default: undefined,
-  },
   larger: {
     type: Boolean,
     default: false,
@@ -29,9 +25,7 @@ const emit = defineEmit(['click'])
       <slot name="image"></slot>
       <h3 class="dark-inverted">{{ title }}</h3>
       <p v-if="subtitle" :class="[larger && 'is-larger']">{{ subtitle }}</p>
-      <V-Button v-if="cta" color="primary" elevated @click="emit('click')">
-        {{ cta }}
-      </V-Button>
+      <slot name="action"></slot>
     </div>
   </div>
 </template>

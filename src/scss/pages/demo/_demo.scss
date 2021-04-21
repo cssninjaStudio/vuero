@@ -189,23 +189,90 @@
     }
 
     .field {
-      max-width: 540px;
-      flex-wrap: wrap;
-
-      &.is-grouped {
-        .control {
-          margin-bottom: 0.75rem;
-        }
+      &.credit-card {
+        padding-bottom: 4rem;
       }
 
-      &.demo-select {
-        max-width: 340px;
+      &:not(.credit-card) {
+        max-width: 540px;
+        flex-wrap: wrap;
+
+        &.is-grouped {
+          .control {
+            margin-bottom: 0.75rem;
+          }
+        }
+
+        &.demo-select {
+          max-width: 340px;
+        }
       }
     }
   }
 
   .highlight-block {
     margin-top: 20px;
+  }
+
+  .content {
+    table {
+      margin-top: 2rem;
+      // background-color: red;
+
+      th {
+        font-size: 0.9rem;
+        font-weight: 600;
+        font-family: $font-alt;
+        border-bottom: solid 1px $border;
+
+        &:first-of-type {
+          width: 200px;
+        }
+      }
+
+      td {
+        font-size: 1rem;
+        font-weight: 400;
+        font-family: $font;
+        border-bottom: solid 1px $border;
+
+        code {
+          font-family: $font-monospace;
+
+          &:first-child {
+            padding-left: 0 !important;
+          }
+        }
+
+        .is-string {
+          code {
+            color: #41b883;
+          }
+        }
+        .is-function {
+          code {
+            color: #678eaf;
+          }
+        }
+        .is-number,
+        .is-boolean {
+          code {
+            color: #678eaf;
+          }
+        }
+        .is-null,
+        .is-undefined {
+          code {
+            color: #a04900;
+          }
+        }
+        .is-array {
+          code {
+            color: $dark-text;
+          }
+        }
+      }
+    }
   }
 }
 

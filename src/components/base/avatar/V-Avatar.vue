@@ -44,7 +44,7 @@ const props = defineProps({
   size: {
     type: String as PropType<AvatarSize>,
     default: undefined,
-    validator: function (value: AvatarSize) {
+    validator: (value: AvatarSize) => {
       // The value must match one of these strings
       if (
         [undefined, 'small', 'medium', 'large', 'big', 'xl'].indexOf(value) ===
@@ -62,7 +62,7 @@ const props = defineProps({
   color: {
     type: String as PropType<AvatarColor>,
     default: undefined,
-    validator: function (value: AvatarColor) {
+    validator: (value: AvatarColor) => {
       // The value must match one of these strings
       if (
         [
@@ -93,7 +93,7 @@ const props = defineProps({
   dotColor: {
     type: String as PropType<AvatarDotColor>,
     default: undefined,
-    validator: function (value: AvatarDotColor) {
+    validator: (value: AvatarDotColor) => {
       // The value must match one of these strings
       if (
         [undefined, 'primary', 'info', 'warning', 'danger', 'grey'].indexOf(

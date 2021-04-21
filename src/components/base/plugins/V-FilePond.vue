@@ -1,6 +1,6 @@
 <script lang="ts">
 import type { ComponentPropsOptions, EmitsOptions } from 'vue'
-import type { FilePond, FilePondEvent } from 'filepond'
+import type { FilePond, FilePondEvent, FilePondOptions } from 'filepond'
 import {
   OptionTypes,
   create,
@@ -82,9 +82,29 @@ registerPlugin(...plugins)
 </script>
 
 <script setup lang="ts">
+import type { PropType } from 'vue'
 import { onMounted, onUnmounted, ref, defineEmit, defineProps } from 'vue'
 
-const props = defineProps({ ...propsOptions })
+type FilePondSize = undefined | 'small' | 'tiny'
+
+const props = defineProps({
+  ...propsOptions,
+  size: {
+    type: String as PropType<FilePondSize>,
+    default: undefined,
+    validator: (value: FilePondSize) => {
+      // The value must match one of these strings
+      if ([undefined, 'small', 'tiny'].indexOf(value) === -1) {
+        console.warn(
+          `V-FilePond: invalid "${value}" size. Should be small, tiny or undefined`
+        )
+        return false
+      }
+
+      return true
+    },
+  },
+})
 const emit = defineEmit(['input', ...eventNames])
 const pond = ref<FilePond | null>(null)
 
@@ -92,7 +112,7 @@ const inputElement = ref<HTMLInputElement | null>(null)
 
 onMounted(() => {
   if (inputElement.value && supported()) {
-    const options = Object.assign({}, props)
+    let options = Object.assign({}, { ...props }) as FilePondOptions
     pond.value = create(inputElement.value, options)
 
     for (const eventName of eventNames) {
@@ -124,17 +144,22 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="filepond--wrapper">
-    <input
-      :id="props.id"
-      ref="inputElement"
-      type="file"
-      :name="props.name"
-      :class="props.className"
-      :required="props.required"
-      :accept="props.acceptedFileTypes"
-      :multiple="props.allowMultiple"
-      :capture="props.captureMethod"
-    />
+  <div
+    class="filepond-profile-wrap"
+    :class="[props.size && `is-${props.size}`]"
+  >
+    <div class="filepond--wrapper">
+      <input
+        :id="props.id"
+        ref="inputElement"
+        type="file"
+        :name="props.name"
+        :class="props.className"
+        :required="props.required"
+        :accept="props.acceptedFileTypes"
+        :multiple="props.allowMultiple"
+        :capture="props.captureMethod"
+      />
+    </div>
   </div>
 </template>

@@ -27,7 +27,7 @@ const props = defineProps({
   color: {
     type: String as PropType<SwitchBlockColor>,
     default: undefined,
-    validator: function (value: SwitchBlockColor) {
+    validator: (value: SwitchBlockColor) => {
       // The value must match one of these strings
       if (
         [undefined, 'primary', 'info', 'success', 'warning', 'danger'].indexOf(

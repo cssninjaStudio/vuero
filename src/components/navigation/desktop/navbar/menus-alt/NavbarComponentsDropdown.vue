@@ -25,7 +25,7 @@ const selectedCategory = ref('')
       </button>
     </div>
     <div class="dropdown-menu" role="menu">
-      <div class="dropdown-content">
+      <!-- <div class="dropdown-content">
         <div
           class="category-selector"
           :class="[selectedCategory !== '' && 'is-hidden']"
@@ -78,7 +78,7 @@ const selectedCategory = ref('')
             :class="[selectedCategory === 'base' && 'is-active']"
             class="columns is-gapless mega-menus"
           >
-            <!--Column-->
+            <! --Column- ->
             <div class="column is-4">
               <div class="dropdown-item-group">
                 <h4 class="column-heading is-info">
@@ -88,7 +88,7 @@ const selectedCategory = ref('')
 
                 <div class="column-content" data-simplebar>
                   <RouterLink
-                    :to="{ name: 'components-avatars' }"
+                    :to="{ name: 'components-avatar' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -128,7 +128,7 @@ const selectedCategory = ref('')
                       <i class="lnil lnil-layout-alt"></i>
                     </div>
                     <div class="meta">
-                      <span>V-ImageAccordion</span>
+                      <span>V-AccordionImage</span>
                     </div>
                   </RouterLink>
                   <RouterLink
@@ -167,7 +167,7 @@ const selectedCategory = ref('')
                 </div>
               </div>
             </div>
-            <!--Column-->
+            <! --Column- ->
             <div class="column is-4">
               <div class="dropdown-item-group">
                 <h4 class="column-heading is-green">
@@ -188,7 +188,7 @@ const selectedCategory = ref('')
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'components-dropdown' }"
+                    :to="{ name: 'elements-dropdown' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -199,7 +199,7 @@ const selectedCategory = ref('')
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'components-modal' }"
+                    :to="{ name: 'elements-modal' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -212,7 +212,7 @@ const selectedCategory = ref('')
                 </div>
               </div>
             </div>
-            <!--Column-->
+            <!- -Column- ->
             <div class="column is-4">
               <div class="dropdown-item-group">
                 <h4 class="column-heading is-orange">
@@ -233,7 +233,7 @@ const selectedCategory = ref('')
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'components-messages' }"
+                    :to="{ name: 'elements-message' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -244,7 +244,7 @@ const selectedCategory = ref('')
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'components-progress' }"
+                    :to="{ name: 'elements-progress' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -266,7 +266,7 @@ const selectedCategory = ref('')
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'components-snacks' }"
+                    :to="{ name: 'components-snack' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -330,7 +330,7 @@ const selectedCategory = ref('')
             :class="[selectedCategory === 'plugins' && 'is-active']"
             class="columns is-gapless mega-menus"
           >
-            <!--Column-->
+            <! --Column- ->
             <div class="column is-4">
               <div class="dropdown-item-group">
                 <h4 class="column-heading is-purple">
@@ -365,7 +365,7 @@ const selectedCategory = ref('')
               </div>
             </div>
 
-            <!--Column-->
+            <! --Column- ->
             <div class="column is-4">
               <div class="dropdown-item-group">
                 <h4 class="column-heading is-secondary">
@@ -411,7 +411,7 @@ const selectedCategory = ref('')
               </div>
             </div>
 
-            <!--Column-->
+            <!- -Column- ->
             <div class="column is-4">
               <div class="dropdown-item-group">
                 <h4 class="column-heading is-success">
@@ -475,7 +475,7 @@ const selectedCategory = ref('')
             :class="[selectedCategory === 'forms' && 'is-active']"
             class="columns is-gapless mega-menus"
           >
-            <!--Column-->
+            <!- -Column- ->
             <div class="column is-4">
               <div class="dropdown-item-group">
                 <h4 class="column-heading is-purple">
@@ -485,7 +485,7 @@ const selectedCategory = ref('')
 
                 <div class="column-content">
                   <RouterLink
-                    :to="{ name: 'components-forms-inputs' }"
+                    :to="{ name: 'elements-forms-inputs' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -496,7 +496,7 @@ const selectedCategory = ref('')
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'components-forms-addons' }"
+                    :to="{ name: 'elements-forms-addons' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -507,7 +507,7 @@ const selectedCategory = ref('')
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'components-forms-textarea' }"
+                    :to="{ name: 'elements-forms-textarea' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -521,7 +521,7 @@ const selectedCategory = ref('')
               </div>
             </div>
 
-            <!--Column-->
+            <! --Column- ->
             <div class="column is-4">
               <div class="dropdown-item-group">
                 <h4 class="column-heading is-secondary">
@@ -531,7 +531,7 @@ const selectedCategory = ref('')
 
                 <div class="column-content">
                   <RouterLink
-                    :to="{ name: 'components-forms-selects' }"
+                    :to="{ name: 'elements-forms-selects' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -542,7 +542,7 @@ const selectedCategory = ref('')
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'components-forms-file' }"
+                    :to="{ name: 'elements-forms-file' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -556,7 +556,7 @@ const selectedCategory = ref('')
               </div>
             </div>
 
-            <!--Column-->
+            <!- -Column- ->
             <div class="column is-4">
               <div class="dropdown-item-group">
                 <h4 class="column-heading is-success">
@@ -566,7 +566,7 @@ const selectedCategory = ref('')
 
                 <div class="column-content">
                   <RouterLink
-                    :to="{ name: 'components-forms-checkboxes' }"
+                    :to="{ name: 'elements-checkbox' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -577,7 +577,7 @@ const selectedCategory = ref('')
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'components-forms-radios' }"
+                    :to="{ name: 'elements-radio' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -588,7 +588,7 @@ const selectedCategory = ref('')
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'components-forms-switch' }"
+                    :to="{ name: 'elements-switch-block' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
@@ -603,7 +603,7 @@ const selectedCategory = ref('')
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>

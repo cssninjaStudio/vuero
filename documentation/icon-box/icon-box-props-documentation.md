@@ -1,0 +1,14 @@
+---
+disable_code: true
+---
+
+### V-IconBox Props
+
+Here is the full props available for `<V-IconBox />` component:
+
+| Props    | Default                                       | Type                                                                                                    |
+| -------- | --------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| size     | <span class="is-undefined">`undefined`</span> | `small`, `medium`, `large`, `big`, `xl`                                                                 |
+| color    | <span class="is-undefined">`undefined`</span> | `primary`, `success`, `info`, `warning`, `danger`, `purple`, `orange`, `blue`, `green`, `red`, `yellow` |
+| rounded  | <span class="is-boolean">`false`</span>       | boolean                                                                                                 |
+| bordered | <span class="is-boolean">`false`</span>       | boolean                                                                                                 |

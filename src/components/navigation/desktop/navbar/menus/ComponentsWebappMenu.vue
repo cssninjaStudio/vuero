@@ -2,50 +2,232 @@
 import { ref } from 'vue'
 import { activeSubnav } from '/@src/state/activeNavbarState'
 
-type TabId = 'components' | 'forms' | 'plugins'
-const activeTab = ref<TabId>('components')
+type TabId = 'display' | 'display' | 'plugins'
+const activeTab = ref<TabId>('display')
 </script>
 
 <template>
   <div
-    id="components-navbar-menu"
     :class="[activeSubnav === 'components' && 'is-active']"
     class="navbar-subnavbar-inner tabs-wrapper"
   >
     <div class="tabs-inner">
       <div class="tabs is-centered is-4">
         <ul>
-          <li :class="[activeTab === 'components' && 'is-active']">
-            <a @click="activeTab = 'components'">UI Components</a>
+          <li :class="[activeTab === 'display' && 'is-active']">
+            <a @click="activeTab = 'display'">Display</a>
           </li>
-          <li :class="[activeTab === 'forms' && 'is-active']">
-            <a @click="activeTab = 'forms'">Form Controls</a>
-          </li>
-          <li :class="[activeTab === 'plugins' && 'is-active']">
-            <a @click="activeTab = 'plugins'">JS Plugins</a>
+          <li :class="[activeTab === 'layout' && 'is-active']">
+            <a @click="activeTab = 'layout'">Layout</a>
           </li>
         </ul>
       </div>
     </div>
 
     <div class="container">
-      <div
-        id="components-basic-pages-tab"
-        class="tab-content"
-        :class="[activeTab === 'components' && 'is-active']"
-      >
+      <div v-if="activeTab === 'display'" class="tab-content is-active">
         <div class="tab-content-inner">
-          <div class="center has-slimscroll">
+          <div class="center">
             <div class="columns">
               <div class="column is-3">
                 <h4 class="column-heading">General</h4>
                 <ul>
                   <li>
-                    <RouterLink :to="{ name: 'components-avatars' }">
+                    <RouterLink :to="{ name: 'components' }">
+                      <i class="lnil lnil-home"></i>
+                      <span>Components Hub</span>
+                      <i class="iconify" data-icon="feather:circle"></i>
+                    </RouterLink>
+                  </li>
+                  <li>
+                    <RouterLink :to="{ name: 'components-content' }">
+                      <i class="lnil lnil-text-format"></i>
+                      <span>Content</span>
+                      <i class="iconify" data-icon="feather:circle"></i>
+                    </RouterLink>
+                  </li>
+                  <li>
+                    <RouterLink :to="{ name: 'components-table' }">
+                      <i class="lnil lnil-table"></i>
+                      <span>Table</span>
+                      <i class="iconify" data-icon="feather:circle"></i>
+                    </RouterLink>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="column is-3">
+                <h4 class="column-heading">Display</h4>
+                <ul>
+                  <li>
+                    <RouterLink :to="{ name: 'components-avatar' }">
                       <span>V-Avatar</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
+                  <li>
+                    <RouterLink :to="{ name: 'components-avatar-stack' }">
+                      <span>V-AvatarStack</span>
+                      <i class="iconify" data-icon="feather:circle"></i>
+                    </RouterLink>
+                  </li>
+                  <li>
+                    <RouterLink :to="{ name: 'components-block' }">
+                      <span>V-Block</span>
+                      <i class="iconify" data-icon="feather:circle"></i>
+                    </RouterLink>
+                  </li>
+                  <li>
+                    <RouterLink :to="{ name: 'components-icon-box' }">
+                      <span>V-IconBox</span>
+                      <i class="iconify" data-icon="feather:circle"></i>
+                    </RouterLink>
+                  </li>
+                  <li>
+                    <RouterLink :to="{ name: 'components-icon-wrap' }">
+                      <span>V-IconWrap</span>
+                      <V-Tag label="v1.1" color="primary" outlined curved />
+                      <i class="iconify" data-icon="feather:circle"></i>
+                    </RouterLink>
+                  </li>
+                  <li>
+                    <RouterLink :to="{ name: 'components-snack' }">
+                      <span>V-Snack</span>
+                      <V-Tag label="v1.1" color="primary" outlined curved />
+                      <i class="iconify" data-icon="feather:circle"></i>
+                    </RouterLink>
+                  </li>
+                  <li>
+                    <RouterLink :to="{ name: 'components-tag' }">
+                      <span>V-Tag</span>
+                      <i class="iconify" data-icon="feather:circle"></i>
+                    </RouterLink>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="column is-3">
+                <h4 class="column-heading">Plugins</h4>
+                <ul>
+                  <li>
+                    <RouterLink :to="{ name: 'components-plugins-notif' }">
+                      <span>Notif</span>
+                      <i class="iconify" data-icon="feather:circle"></i>
+                    </RouterLink>
+                  </li>
+                  <li>
+                    <RouterLink :to="{ name: 'components-plugins-tippy' }">
+                      <span>Tippy</span>
+                      <i class="iconify" data-icon="feather:circle"></i>
+                    </RouterLink>
+                  </li>
+                  <li>
+                    <RouterLink
+                      :to="{ name: 'components-plugins-billboard-js' }"
+                    >
+                      <span>V-BillboardJS</span>
+                      <i class="iconify" data-icon="feather:circle"></i>
+                    </RouterLink>
+                  </li>
+                  <li>
+                    <RouterLink
+                      :to="{ name: 'components-plugins-photos-swipe' }"
+                    >
+                      <span>V-PhotosSwipe</span>
+                      <i class="iconify" data-icon="feather:circle"></i>
+                    </RouterLink>
+                  </li>
+                  <li>
+                    <RouterLink :to="{ name: 'components-plugins-plyr' }">
+                      <span>V-Plyr</span>
+                      <i class="iconify" data-icon="feather:circle"></i>
+                    </RouterLink>
+                  </li>
+                  <li>
+                    <RouterLink
+                      :to="{ name: 'components-plugins-simple-datatables' }"
+                    >
+                      <span>V-SimpleDatatables</span>
+                      <i class="iconify" data-icon="feather:circle"></i>
+                    </RouterLink>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="column is-3">
+                <a href="https://cssninja.io" class="column-placeholder">
+                  <img
+                    class="light-image"
+                    src="/images/icons/misc/buoy.svg"
+                    alt=""
+                  />
+                  <img
+                    class="dark-image"
+                    src="/images/icons/misc/buoy-dark.svg"
+                    alt=""
+                  />
+                  <h3>Support</h3>
+                </a>
+                <a
+                  href="https://docs.cssninja.io/vuero"
+                  class="column-placeholder"
+                >
+                  <img
+                    class="light-image"
+                    src="/images/icons/misc/docs.svg"
+                    alt=""
+                  />
+                  <img
+                    class="dark-image"
+                    src="/images/icons/misc/docs-dark.svg"
+                    alt=""
+                  />
+                  <h3>Documentation</h3>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div v-if="activeTab === 'layout'" class="tab-content is-active">
+        <div class="tab-content-inner">
+          <div class="center">
+            <div class="columns">
+              <div class="column is-3">
+                <h4 class="column-heading">General</h4>
+                <ul>
+                  <li>
+                    <RouterLink :to="{ name: 'components-breadcrumb' }">
+                      <span>V-Breadcrumb</span>
+                      <i class="iconify" data-icon="feather:circle"></i>
+                    </RouterLink>
+                  </li>
+                  <li>
+                    <RouterLink :to="{ name: 'components-tabs' }">
+                      <span>V-Tabs</span>
+                      <V-Tag label="v1.1" color="primary" outlined curved />
+                      <i class="iconify" data-icon="feather:circle"></i>
+                    </RouterLink>
+                  </li>
+                  <li>
+                    <RouterLink :to="{ name: 'components-flex-pagination' }">
+                      <span>V-FlexPagination</span>
+                      <i class="iconify" data-icon="feather:circle"></i>
+                    </RouterLink>
+                  </li>
+                  <li>
+                    <RouterLink :to="{ name: 'components-flex-table' }">
+                      <span>V-FlexTable</span>
+                      <i class="iconify" data-icon="feather:circle"></i>
+                    </RouterLink>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="column is-3">
+                <h4 class="column-heading">Accordions</h4>
+                <ul>
                   <li>
                     <RouterLink :to="{ name: 'components-accordion' }">
                       <span>V-Accordion</span>
@@ -60,343 +242,74 @@ const activeTab = ref<TabId>('components')
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'components-accordion-image' }">
-                      <span>V-ImageAccordion</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
-                    </RouterLink>
-                  </li>
-                  <li>
-                    <RouterLink :to="{ name: 'components-block' }">
-                      <span>V-Block</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
-                    </RouterLink>
-                  </li>
-                  <li>
-                    <RouterLink :to="{ name: 'components-breadcrumb' }">
-                      <span>V-Breadcrumb</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
-                    </RouterLink>
-                  </li>
-                  <li>
-                    <RouterLink :to="{ name: 'components-button' }">
-                      <span>V-Button</span>
+                      <span>V-AccordionImage</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                 </ul>
               </div>
+
               <div class="column is-3">
-                <h4 class="column-heading">Interaction</h4>
+                <h4 class="column-heading">Cards</h4>
                 <ul>
                   <li>
-                    <RouterLink :to="{ name: 'components-loader' }">
-                      <span>V-Loader</span>
+                    <RouterLink :to="{ name: 'components-card' }">
+                      <span>V-Card</span>
+                      <V-Tag label="v1.1" color="primary" outlined curved />
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'components-dropdown' }">
-                      <span>V-Dropdown</span>
+                    <RouterLink :to="{ name: 'components-card-advanced' }">
+                      <span>V-CardAdvanced</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'components-modal' }">
-                      <span>V-Modal</span>
+                    <RouterLink :to="{ name: 'components-card-media' }">
+                      <span>V-CardMedia</span>
+                      <i class="iconify" data-icon="feather:circle"></i>
+                    </RouterLink>
+                  </li>
+                  <li>
+                    <RouterLink :to="{ name: 'components-card-social' }">
+                      <span>V-CardSocial</span>
+                      <i class="iconify" data-icon="feather:circle"></i>
+                    </RouterLink>
+                  </li>
+                  <li>
+                    <RouterLink :to="{ name: 'components-card-action' }">
+                      <span>V-CardAction</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                 </ul>
               </div>
+
               <div class="column is-3">
-                <h4 class="column-heading">Presentation</h4>
+                <h4 class="column-heading">Placeholders</h4>
                 <ul>
                   <li>
-                    <RouterLink :to="{ name: 'components-icon-box' }">
-                      <span>V-IconBox</span>
+                    <RouterLink :to="{ name: 'components-placeholder-invite' }">
+                      <span>V-PlaceholderSection</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'components-messages' }">
-                      <span>V-Message</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
-                    </RouterLink>
-                  </li>
-                  <li>
-                    <RouterLink :to="{ name: 'components-progress' }">
-                      <span>V-Progress</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
-                    </RouterLink>
-                  </li>
-                  <li>
-                    <RouterLink :to="{ name: 'components-tag' }">
-                      <span>V-Tag</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
-                    </RouterLink>
-                  </li>
-                  <li>
-                    <RouterLink :to="{ name: 'components-snacks' }">
-                      <span>V-Snack</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
-                    </RouterLink>
-                  </li>
-                </ul>
-              </div>
-              <div class="column is-3">
-                <h4 class="column-heading">Flex Table</h4>
-                <ul>
-                  <li>
-                    <RouterLink :to="{ name: 'components-flex-table' }">
-                      <span>V-FlexTable Base</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
-                    </RouterLink>
-                  </li>
-                  <li>
-                    <RouterLink :to="{ name: 'components-flex-table-compact' }">
-                      <span>V-FlexTable Compact</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
-                    </RouterLink>
-                  </li>
-                  <li>
-                    <RouterLink :to="{ name: 'components-flex-table-media' }">
-                      <span>V-FlexTable Media</span>
+                    <RouterLink :to="{ name: 'components-placeholder-page' }">
+                      <span>V-PlaceholderPage</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink
-                      :to="{ name: 'components-flex-table-advanced' }"
+                      :to="{ name: 'components-placeholder-section' }"
                     >
-                      <span>V-FlexTable Advanced</span>
+                      <span>V-PlaceholderSection</span>
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                 </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div
-        id="components-forms-pages-tab"
-        class="tab-content"
-        :class="[activeTab === 'forms' && 'is-active']"
-      >
-        <div class="tab-content-inner">
-          <div class="center has-slimscroll">
-            <div class="columns">
-              <div class="column is-3">
-                <h4 class="column-heading">Input</h4>
-                <ul>
-                  <li>
-                    <RouterLink :to="{ name: 'components-forms-inputs' }">
-                      <span>Inputs</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
-                    </RouterLink>
-                  </li>
-                  <li>
-                    <RouterLink :to="{ name: 'components-forms-addons' }">
-                      <span>Input Addons</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
-                    </RouterLink>
-                  </li>
-                  <li>
-                    <RouterLink :to="{ name: 'components-forms-textarea' }">
-                      <span>Textarea</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
-                    </RouterLink>
-                  </li>
-                </ul>
-              </div>
-              <div class="column is-3">
-                <h4 class="column-heading">Selects</h4>
-                <ul>
-                  <li>
-                    <RouterLink :to="{ name: 'components-forms-selects' }">
-                      <span>Regular</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
-                    </RouterLink>
-                  </li>
-                  <li>
-                    <RouterLink :to="{ name: 'components-forms-file' }">
-                      <span>File Input</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
-                    </RouterLink>
-                  </li>
-                </ul>
-              </div>
-              <div class="column is-3">
-                <h4 class="column-heading">Toggles</h4>
-                <ul>
-                  <li>
-                    <RouterLink :to="{ name: 'components-forms-checkboxes' }">
-                      <span>Checkboxes</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
-                    </RouterLink>
-                  </li>
-                  <li>
-                    <RouterLink :to="{ name: 'components-forms-radios' }">
-                      <span>Radio Buttons</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
-                    </RouterLink>
-                  </li>
-                  <li>
-                    <RouterLink :to="{ name: 'components-forms-switch' }">
-                      <span>Switches</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
-                    </RouterLink>
-                  </li>
-                </ul>
-              </div>
-              <div class="column is-3">
-                <a href="https://cssninja.io" class="column-placeholder">
-                  <img
-                    class="light-image"
-                    src="/images/icons/misc/buoy.svg"
-                    alt=""
-                  />
-                  <img
-                    class="dark-image"
-                    src="/images/icons/misc/buoy-dark.svg"
-                    alt=""
-                  />
-                  <h3>Support</h3>
-                </a>
-                <a
-                  href="https://docs.cssninja.io/vuero"
-                  class="column-placeholder"
-                >
-                  <img
-                    class="light-image"
-                    src="/images/icons/misc/docs.svg"
-                    alt=""
-                  />
-                  <img
-                    class="dark-image"
-                    src="/images/icons/misc/docs-dark.svg"
-                    alt=""
-                  />
-                  <h3>Documentation</h3>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div
-        id="components-plugins-pages-tab"
-        class="tab-content"
-        :class="[activeTab === 'plugins' && 'is-active']"
-      >
-        <div class="tab-content-inner">
-          <div class="center has-slimscroll">
-            <div class="columns">
-              <div class="column is-3">
-                <ul>
-                  <li>
-                    <RouterLink :to="{ name: 'components-plugins-notif' }">
-                      <span>Notyf</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
-                    </RouterLink>
-                  </li>
-                  <li>
-                    <RouterLink
-                      :to="{ name: 'components-plugins-photo-swipe' }"
-                    >
-                      <span>Photo Swipe</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
-                    </RouterLink>
-                  </li>
-                </ul>
-              </div>
-              <div class="column is-3">
-                <ul>
-                  <li>
-                    <RouterLink :to="{ name: 'components-plugins-vue-plyr' }">
-                      <span>Vue-Plyr</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
-                    </RouterLink>
-                  </li>
-                </ul>
-              </div>
-              <div class="column is-3">
-                <ul>
-                  <li>
-                    <RouterLink
-                      :to="{ name: 'components-plugins-simple-datatables' }"
-                    >
-                      <span>V-Datatable</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
-                    </RouterLink>
-                  </li>
-                  <li>
-                    <RouterLink :to="{ name: 'components-plugins-v-calendar' }">
-                      <span>V-Calendar</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
-                    </RouterLink>
-                  </li>
-                  <li>
-                    <RouterLink
-                      :to="{ name: 'components-plugins-vue-multiselect' }"
-                    >
-                      <span>Vue-Multiselect</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
-                    </RouterLink>
-                  </li>
-                  <li>
-                    <RouterLink :to="{ name: 'components-plugins-vue-slider' }">
-                      <span>Vue-Slider</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
-                    </RouterLink>
-                  </li>
-
-                  <li>
-                    <RouterLink :to="{ name: 'components-plugins-vue-tippy' }">
-                      <span>V-Tippy</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
-                    </RouterLink>
-                  </li>
-
-                  <li>
-                    <RouterLink :to="{ name: 'components-plugins-ckeditor' }">
-                      <span>CKEditor</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
-                    </RouterLink>
-                  </li>
-                </ul>
-              </div>
-              <div class="column is-3">
-                <a href="https://cssninja.io" class="column-placeholder">
-                  <img
-                    class="light-image"
-                    src="/images/icons/misc/buoy.svg"
-                    alt=""
-                  />
-                  <img
-                    class="dark-image"
-                    src="/images/icons/misc/buoy-dark.svg"
-                    alt=""
-                  />
-                  <h3>Support</h3>
-                </a>
-                <a
-                  href="https://docs.cssninja.io/vuero"
-                  class="column-placeholder"
-                >
-                  <img
-                    class="light-image"
-                    src="/images/icons/misc/docs.svg"
-                    alt=""
-                  />
-                  <img
-                    class="dark-image"
-                    src="/images/icons/misc/docs-dark.svg"
-                    alt=""
-                  />
-                  <h3>Documentation</h3>
-                </a>
               </div>
             </div>
           </div>

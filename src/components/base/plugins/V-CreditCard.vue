@@ -33,7 +33,7 @@ const props = defineProps({
   color: {
     type: String as PropType<CreditCardColor>,
     default: 'grey',
-    validator: function (value: CreditCardColor) {
+    validator: (value: CreditCardColor) => {
       // The value must match one of these strings
       if (
         [

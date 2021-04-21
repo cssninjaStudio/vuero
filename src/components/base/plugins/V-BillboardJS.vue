@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { ChartOptions } from 'billboard.js'
 import type { PropType } from 'vue'
-import { onMounted, ref, defineProps, defineEmit } from 'vue'
+import { nextTick, ref, defineProps, defineEmit, watchEffect } from 'vue'
 import bb from 'billboard.js'
 
 const props = defineProps({
@@ -14,7 +14,7 @@ const props = defineProps({
 const emit = defineEmit(['ready'])
 const element = ref<HTMLElement | null>(null)
 
-onMounted(() => {
+watchEffect(() => {
   if (element.value) {
     try {
       const billboard = bb.generate({
@@ -22,6 +22,10 @@ onMounted(() => {
         bindto: element.value,
       })
       emit('ready', billboard)
+
+      nextTick(() => {
+        billboard.resize()
+      })
     } catch (error) {
       console.error(error)
     }

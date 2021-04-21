@@ -1,9 +1,28 @@
 <script setup lang="ts">
-import { defineProps, computed, defineEmit, PropType } from 'vue'
+import type { PropType } from 'vue'
+import { defineProps, computed, defineEmit } from 'vue'
+
+type SocialNetworkType =
+  | 'facebook'
+  | 'twitter'
+  | 'linkedin'
+  | 'tumblr'
+  | 'github'
+  | 'dribbble'
+  | 'google-plus'
+  | 'youtube'
+  | 'reddit'
+  | 'invision'
+  | 'amazon'
+  | 'instagram'
 
 const props = defineProps({
   title: {
     type: String,
+    required: true,
+  },
+  network: {
+    type: String as PropType<SocialNetworkType>,
     required: true,
   },
   avatar: {
@@ -14,13 +33,13 @@ const props = defineProps({
     type: String,
     default: undefined,
   },
-  network: {
+  shareLabel: {
     type: String,
-    default: undefined,
+    default: 'Share',
   },
-  icon: {
+  likeLabel: {
     type: String,
-    default: undefined,
+    default: 'Like',
   },
   hashtags: {
     type: Array as PropType<string[]>,
@@ -28,53 +47,94 @@ const props = defineProps({
   },
 })
 
-const emit = defineEmit(['icon', 'save', 'edit'])
+const emit = defineEmit(['iconClick', 'hashtagClick', 'share', 'like'])
+const icon = computed(() => {
+  switch (props.network) {
+    case 'facebook':
+      return 'fa-brands:facebook-f'
+    case 'twitter':
+      return 'fa-brands:twitter'
+    case 'linkedin':
+      return 'fa-brands:linkedin-in'
+    case 'tumblr':
+      return 'fa-brands:tumblr'
+    case 'github':
+      return 'fa-brands:github-alt'
+    case 'dribbble':
+      return 'fa-brands:dribbble'
+    case 'google-plus':
+      return 'fa-brands:google-plus-g'
+    case 'youtube':
+      return 'fa-brands:youtube'
+    case 'reddit':
+      return 'fa-brands:reddit-alien'
+    case 'invision':
+      return 'fa-brands:invision'
+    case 'amazon':
+      return 'fa-brands:amazon'
+    case 'instagram':
+      return 'fa-brands:instagram'
+  }
 
-const isIconify = computed(() => {
-  return props.icon && props.icon.indexOf(':') !== -1
+  return ''
 })
 </script>
 
 <template>
   <div class="card v-card">
     <header class="card-header">
-      <div class="card-header-title">{{ title }}</div>
+      <div class="card-header-title">{{ props.title }}</div>
       <a
         v-if="icon"
         class="card-header-icon"
-        :class="[network && `text-${network}`]"
-        @click="emit('icon')"
+        :class="[props.network && `text-${props.network}`]"
+        @click="emit('iconClick')"
       >
-        <span v-if="isIconify" class="icon">
-          <i class="iconify" :data-icon="icon"></i>
-        </span>
-        <span v-else-if="icon" class="icon">
-          <i :class="icon"></i>
-        </span>
+        <V-Icon :icon="icon" />
       </a>
     </header>
     <div class="card-content">
-      <div class="media-flex p-b-10">
-        <V-Avatar size="medium" :picture="avatar" squared />
-        <div class="flex-meta">
-          <span v-if="username">{{ username }}</span>
-          <slot></slot>
-          <span>
-            <a
-              v-for="(hashtag, index) in hashtags"
-              :key="index"
-              class="px-1"
-              :class="[network && `text-${network}`]"
-              href="#"
-              >{{ hashtag }}</a
-            >
-          </span>
-        </div>
-      </div>
+      <V-Block :title="props.username" class="pb-3">
+        <template #icon>
+          <V-Avatar
+            v-if="props.avatar"
+            size="medium"
+            :picture="props.avatar"
+            squared
+          />
+        </template>
+        <slot></slot>
+        <span v-if="props.hashtags.length">
+          <a
+            v-for="(hashtag, index) in props.hashtags"
+            :key="index"
+            class="px-1"
+            :class="[network && `text-${network}`]"
+            @click="emit('hashtagClick', hashtag)"
+          >
+            {{ hashtag }}
+          </a>
+        </span>
+      </V-Block>
     </div>
+
     <footer class="card-footer">
-      <a class="card-footer-item" @click="emit('save')">Save</a>
-      <a class="card-footer-item" @click="emit('edit')">Edit</a>
+      <a
+        v-if="props.shareLabel"
+        :class="[network && `hover-bg-${network}`]"
+        class="card-footer-item"
+        @click="emit('share')"
+      >
+        {{ props.shareLabel }}
+      </a>
+      <a
+        v-if="props.likeLabel"
+        :class="[network && `hover-text-${network}`]"
+        class="card-footer-item"
+        @click="emit('like')"
+      >
+        {{ props.likeLabel }}
+      </a>
     </footer>
   </div>
 </template>

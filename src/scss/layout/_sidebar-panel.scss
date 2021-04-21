@@ -212,6 +212,21 @@
           height: 10px;
           margin: 5px 20px 10px 20px;
           border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+
+          &.with-label {
+            border-bottom: 0;
+            margin-top: 25px;
+
+            &::after,
+            &::before {
+              flex: 0;
+            }
+
+            .divider-label {
+              // padding: 1rem;
+              font-size: 0.7rem;
+            }
+          }
         }
 
         &.has-children {
@@ -362,6 +377,13 @@
 
           &:hover {
             color: $dark-text;
+          }
+
+          .tag {
+            line-height: 1.8;
+            height: 1.8em;
+            font-size: 0.7rem;
+            margin-left: 0.25rem;
           }
         }
 

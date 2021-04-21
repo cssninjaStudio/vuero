@@ -87,6 +87,9 @@ useHead({
 
           <!--Succeeds Separator-->
           <BreadcrumbSucceedsDocumentation />
+
+          <!--Props-->
+          <BreadcrumbPropsDocumentation />
         </div>
         <div v-if="toc.length" class="column is-3 toc-column">
           <DocumentationToc :toc="toc" />

@@ -22,7 +22,7 @@ const props = defineProps({
   type: {
     type: String as PropType<TabsType>,
     default: undefined,
-    validator: function (value: TabsType) {
+    validator: (value: TabsType) => {
       // The value must match one of these strings
       if ([undefined, 'boxed', 'toggle', 'rounded'].indexOf(value) === -1) {
         console.warn(
@@ -37,7 +37,7 @@ const props = defineProps({
   align: {
     type: String as PropType<TabsAlign>,
     default: undefined,
-    validator: function (value: TabsType) {
+    validator: (value: TabsType) => {
       // The value must match one of these strings
       if ([undefined, 'centered', 'right'].indexOf(value) === -1) {
         console.warn(

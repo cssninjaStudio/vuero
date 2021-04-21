@@ -16,7 +16,7 @@ const props = defineProps({
   color: {
     type: String as PropType<MessageColor>,
     default: undefined,
-    validator: function (value: MessageColor) {
+    validator: (value: MessageColor) => {
       // The value must match one of these strings
       if (
         [
@@ -49,7 +49,7 @@ const emit = defineEmit(['close'])
 
 <template>
   <div class="message" :class="[color && `is-${color}`]">
-    <a v-if="closable" class="delete" @click="emit('close')"></a>
+    <a v-if="closable" class="delete" @click.prevent="emit('close')"></a>
     <div class="message-body"><slot></slot></div>
   </div>
 </template>

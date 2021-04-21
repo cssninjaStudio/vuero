@@ -11,7 +11,8 @@
   },
   "[markdown]": {
     "editor.formatOnSave": true,
-    "editor.rulers": [80]
+    "editor.rulers": [80],
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "eslint.alwaysShowStatus": true,
   "eslint.validate": [

@@ -171,6 +171,11 @@ useHead({
             </template>
           </V-CardAdvanced>
         </div>
+
+        <div class="column is-12 mt-5">
+          <VCardAdvancedPropsDocumentation />
+          <VCardAdvancedSlotsDocumentation />
+        </div>
       </div>
     </div>
   </div>

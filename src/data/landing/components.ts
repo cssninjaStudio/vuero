@@ -109,7 +109,7 @@ export const elements = [
   },
   {
     id: 13,
-    link: 'elements-tooltips',
+    link: 'elements-tooltip',
     name: 'Tooltips',
     media: {
       light: '/images/icons/components/tooltip.svg',
@@ -313,8 +313,8 @@ export const components = [
   },
   {
     id: 10,
-    link: 'components-card-bulma',
-    name: 'V-CardBulma',
+    link: 'components-card-media',
+    name: 'V-CardMedia',
     media: {
       light: '/images/icons/components/cards.svg',
       dark: '/images/icons/components/cards-dark.svg',
@@ -394,7 +394,7 @@ export const components = [
   },
   {
     id: 19,
-    link: 'components-snacks',
+    link: 'components-snack',
     name: 'V-Snack',
     media: {
       light: '/images/icons/components/snacks.svg',

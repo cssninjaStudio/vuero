@@ -43,14 +43,14 @@ import { timeline } from '/@src/data/widgets/list/timeline'
     <!--List Widget V1a-->
     <div class="column is-4">
       <ListWidgetSingle title="Todo" straight class="list-widget-v1">
-        <listWidgetTodoList :todos="todoList1" color="warning" />
+        <ListWidgetTodoList :todos="todoList1" color="warning" />
       </ListWidgetSingle>
     </div>
 
     <!--List Widget V1a-->
     <div class="column is-4">
       <ListWidgetSingle title="Todo" straight class="list-widget-v1">
-        <listWidgetTodoList :todos="todoList2" color="info" />
+        <ListWidgetTodoList :todos="todoList2" color="info" />
       </ListWidgetSingle>
     </div>
 
@@ -63,10 +63,10 @@ import { timeline } from '/@src/data/widgets/list/timeline'
         class="list-widget-v2"
       >
         <template #tab1>
-          <listWidgetTodoList :todos="todoList3" />
+          <ListWidgetTodoList :todos="todoList3" />
         </template>
         <template #tab2>
-          <listWidgetTodoList :todos="todoList4" />
+          <ListWidgetTodoList :todos="todoList4" />
         </template>
       </ListWidgetTabbed>
     </div>

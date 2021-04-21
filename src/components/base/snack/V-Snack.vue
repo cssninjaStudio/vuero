@@ -31,7 +31,7 @@ const props = defineProps({
   color: {
     type: String as PropType<SnackColor>,
     default: undefined,
-    validator: function (value: SnackColor) {
+    validator: (value: SnackColor) => {
       // The value must match one of these strings
       if (
         [undefined, 'primary', 'success', 'info', 'warning', 'danger'].indexOf(
@@ -50,7 +50,7 @@ const props = defineProps({
   size: {
     type: String as PropType<SnackSize>,
     default: undefined,
-    validator: function (value: SnackSize) {
+    validator: (value: SnackSize) => {
       // The value must match one of these strings
       if ([undefined, 'small'].indexOf(value) === -1) {
         console.warn(

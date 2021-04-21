@@ -17,7 +17,7 @@ const props = defineProps({
   size: {
     type: String as PropType<ProgressSize>,
     default: undefined,
-    validator: function (value: ProgressSize) {
+    validator: (value: ProgressSize) => {
       // The value must match one of these strings
       if ([undefined, 'tiny', 'smaller', 'small'].indexOf(value) === -1) {
         console.warn(
@@ -32,7 +32,7 @@ const props = defineProps({
   color: {
     type: String as PropType<ProgressColor>,
     default: 'primary',
-    validator: function (value: ProgressColor) {
+    validator: (value: ProgressColor) => {
       // The value must match one of these strings
       if (
         ['primary', 'success', 'info', 'warning', 'danger'].indexOf(value) ===

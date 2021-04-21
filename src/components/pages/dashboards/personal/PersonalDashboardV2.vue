@@ -10,10 +10,7 @@ import {
 } from '/@src/data/dashboards/personal-v2/users'
 import { popovers } from '/@src/data/users/userPopovers'
 
-const democheck1 = ref(false)
-const democheck2 = ref(true)
-const democheck3 = ref(false)
-const democheck4 = ref(false)
+const democheck = ref(['value_2'])
 </script>
 
 <template>
@@ -252,7 +249,7 @@ const democheck4 = ref(false)
               <!-- List item -->
               <div class="list-item">
                 <!-- Animated checkbox-->
-                <V-AnimatedCheckbox v-model="democheck1" />
+                <V-AnimatedCheckbox v-model="democheck" value="value_1" />
                 <div class="item-meta">
                   <span class="dark-inverted">Call Mr. Markstrom</span>
                   <span>Review the project initial wireframes</span>
@@ -261,7 +258,7 @@ const democheck4 = ref(false)
               <!-- List item -->
               <div class="list-item">
                 <!-- Animated checkbox-->
-                <V-AnimatedCheckbox v-model="democheck2" />
+                <V-AnimatedCheckbox v-model="democheck" value="value_2" />
                 <div class="item-meta">
                   <span class="dark-inverted">Finish wireframes</span>
                   <span>Make all requested changes and publish</span>
@@ -270,7 +267,7 @@ const democheck4 = ref(false)
               <!-- List item -->
               <div class="list-item">
                 <!-- Animated checkbox-->
-                <V-AnimatedCheckbox v-model="democheck3" />
+                <V-AnimatedCheckbox v-model="democheck" value="value_3" />
                 <div class="item-meta">
                   <span class="dark-inverted">Update timesheets</span>
                   <span>Update all the team timesheets</span>
@@ -279,7 +276,7 @@ const democheck4 = ref(false)
               <!-- List item -->
               <div class="list-item">
                 <!-- Animated checkbox-->
-                <V-AnimatedCheckbox v-model="democheck4" />
+                <V-AnimatedCheckbox v-model="democheck" value="value_4" />
                 <div class="item-meta">
                   <span class="dark-inverted">Request payout</span>
                   <span>send project invoice to client</span>
@@ -293,7 +290,6 @@ const democheck4 = ref(false)
           <V-PlaceholderSection
             title="Go Premium"
             subtitle="Unlock more features and business tools by going premium"
-            cta="Go Premium"
           >
             <template #image>
               <img
@@ -306,6 +302,10 @@ const democheck4 = ref(false)
                 src="/@src/assets/illustrations/placeholders/chart-guy-dark.svg"
                 alt=""
               />
+            </template>
+
+            <template #action>
+              <V-Button color="primary" elevated> Go Premium </V-Button>
             </template>
           </V-PlaceholderSection>
         </div>

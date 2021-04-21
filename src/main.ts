@@ -27,6 +27,7 @@ import router from './router'
 
 import hasNestedRouterLink from './directives/has-nested-router-link'
 import background from './directives/background'
+import tooltip from './directives/tooltip'
 
 /**
  * Importing external libraries allow to compile them in our bundle
@@ -74,5 +75,6 @@ app.component(VueSlider.name, VueSlider)
 
 app.directive('has-nested-router-link', hasNestedRouterLink)
 app.directive('background', background)
+app.directive('tooltip', tooltip)
 
 app.mount('#app')

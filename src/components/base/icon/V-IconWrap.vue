@@ -28,7 +28,7 @@ const props = defineProps({
   color: {
     type: String as PropType<IconWrapColor>,
     default: undefined,
-    validator: function (value: IconWrapColor) {
+    validator: (value: IconWrapColor) => {
       if (!value) return true
       // The value must match one of these strings
       if (
@@ -38,6 +38,7 @@ const props = defineProps({
           'light',
           'dark',
           'primary',
+          'secondary',
           'link',
           'info',
           'success',
@@ -47,7 +48,22 @@ const props = defineProps({
       ) {
         console.warn(
           `V-IconWrap: invalid "${value}" color. Should be white, black, light, ` +
-            `dark, primary, link, info, success, warning, danger or undefined`
+            `dark, primary, secondary, link, info, success, warning, danger or undefined`
+        )
+        return false
+      }
+
+      return true
+    },
+  },
+  size: {
+    type: String as PropType<IconWrapDark>,
+    default: undefined,
+    validator: (value: IconWrapDark) => {
+      // The value must match one of these strings
+      if ([undefined, 'large'].indexOf(value) === -1) {
+        console.warn(
+          `V-IconWrap: invalid "${value}" size. Should be large or undefined`
         )
         return false
       }
@@ -58,7 +74,7 @@ const props = defineProps({
   dark: {
     type: String as PropType<IconWrapDark>,
     default: undefined,
-    validator: function (value: IconWrapDark) {
+    validator: (value: IconWrapDark) => {
       // The value must match one of these strings
       if ([undefined, '1', '2', '3', '4', '5', '6'].indexOf(value) === -1) {
         console.warn(
@@ -94,6 +110,7 @@ const isIconify = computed(() => {
     class="icon-wrap"
     :class="[
       color && `has-text-${color}`,
+      size && `is-${size}`,
       dark && `is-dark-bg-${dark}`,
       darkPrimary && 'is-dark-primary',
       darkCardBordered && 'is-dark-card-bordered',
@@ -112,7 +129,7 @@ const isIconify = computed(() => {
   </div>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import '../../../scss/abstracts/_variables.scss';
 
 .icon-wrap {
@@ -127,11 +144,17 @@ const isIconify = computed(() => {
   border: 1px solid darken($fade-grey, 3%);
   box-shadow: $light-box-shadow;
   color: $primary;
+  font-size: 1rem;
 
-  svg {
-    width: 16px;
-    height: 16px;
-    stroke-width: 3px;
+  &.is-medium {
+    font-size: 1.5rem;
+  }
+
+  &.is-large {
+    font-size: 2rem;
+    height: 58px;
+    width: 58px;
+    min-width: 58px;
   }
 
   img {

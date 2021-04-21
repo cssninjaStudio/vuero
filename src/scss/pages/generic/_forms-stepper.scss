@@ -105,30 +105,6 @@
         }
       }
 
-      .switch-segment {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-
-        .is-label {
-          font-family: $font;
-          font-size: 0.9rem;
-
-          &:first-child {
-            color: $dark-text;
-          }
-
-          &:nth-child(3) {
-            color: $light-text;
-          }
-        }
-
-        .form-switch {
-          transform: scale(0.7);
-          margin: 0 0.25rem;
-        }
-      }
-
       .input-button {
         height: 44px;
         width: 100%;
@@ -538,14 +514,6 @@ body {
 
           .flex-label h4 {
             color: $dark-dark-text;
-          }
-
-          .switch-segment {
-            .is-label {
-              &:first-child {
-                color: $dark-dark-text;
-              }
-            }
           }
 
           .options {

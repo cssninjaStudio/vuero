@@ -108,6 +108,13 @@ useHead({
         <div class="column is-12">
           <V-AccordionImage :items="data" />
         </div>
+        <div class="column is-12">
+          <!--Props-->
+          <AccordionImagePropsDocumentation />
+
+          <!--Events-->
+          <AccordionImageEventsDocumentation />
+        </div>
       </div>
     </div>
   </div>

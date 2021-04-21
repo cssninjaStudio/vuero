@@ -114,9 +114,7 @@ const paginatedLink = (page = 1) => {
           class="pagination-link"
           :aria-label="`Goto page ${page}`"
           :aria-current="currentPage === page ? 'page' : ''"
-          :class="{
-            'is-current': currentPage === page,
-          }"
+          :class="[currentPage === page && 'is-current']"
         >
           {{ page }}
         </RouterLink>

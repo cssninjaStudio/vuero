@@ -20,7 +20,7 @@ const props = defineProps({
   separator: {
     type: String as PropType<BreadcrumbSeparator>,
     default: undefined,
-    validator: function (value: BreadcrumbSeparator) {
+    validator: (value: BreadcrumbSeparator) => {
       // The value must match one of these strings
       if (
         [undefined, 'arrow', 'bullet', 'dot', 'succeeds'].indexOf(value) === -1
@@ -37,7 +37,7 @@ const props = defineProps({
   align: {
     type: String as PropType<BreadcrumbAlign>,
     default: undefined,
-    validator: function (value: BreadcrumbAlign) {
+    validator: (value: BreadcrumbAlign) => {
       // The value must match one of these strings
       if ([undefined, 'center', 'right'].indexOf(value) === -1) {
         console.warn(

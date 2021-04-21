@@ -78,7 +78,7 @@ useHead({
                   title="Buttons"
                   content="Get familiar with the Vuero button styles. Code examples included."
                 >
-                  <RouterLink :to="{ name: 'elements-buttons' }">
+                  <RouterLink :to="{ name: 'elements-button' }">
                     Get Started
                   </RouterLink>
 
@@ -101,7 +101,7 @@ useHead({
                   title="Cards"
                   content="Get familiar with the Vuero card styles. Code examples included."
                 >
-                  <RouterLink :to="{ name: 'elements-cards-basic' }">
+                  <RouterLink :to="{ name: 'components-card' }">
                     Get Started
                   </RouterLink>
 
@@ -147,7 +147,7 @@ useHead({
                   title="Content"
                   content="Get familiar with the Vuero content styles. Code examples included."
                 >
-                  <RouterLink :to="{ name: 'elements-content' }">
+                  <RouterLink :to="{ name: 'components-content' }">
                     Get Started
                   </RouterLink>
 
@@ -170,7 +170,7 @@ useHead({
                   title="Tags"
                   content="Get familiar with the Vuero tags styles. Code examples included."
                 >
-                  <RouterLink :to="{ name: 'elements-tags' }">
+                  <RouterLink :to="{ name: 'components-tag' }">
                     Get Started
                   </RouterLink>
 
@@ -193,7 +193,7 @@ useHead({
                   title="Tabs"
                   content="Get familiar with the Vuero nav tabs styles. Code examples included."
                 >
-                  <RouterLink :to="{ name: 'elements-tabs-regular' }">
+                  <RouterLink :to="{ name: 'components-tabs' }">
                     Get Started
                   </RouterLink>
 

@@ -21,7 +21,7 @@ const props = defineProps({
   size: {
     type: String as PropType<IconBoxSize>,
     default: undefined,
-    validator: function (value: IconBoxSize) {
+    validator: (value: IconBoxSize) => {
       // The value must match one of these strings
       if (
         [undefined, 'small', 'medium', 'large', 'big', 'xl'].indexOf(value) ===
@@ -39,7 +39,7 @@ const props = defineProps({
   color: {
     type: String as PropType<IconBoxColor>,
     default: undefined,
-    validator: function (value: IconBoxColor) {
+    validator: (value: IconBoxColor) => {
       if (!value) return true
       // The value must match one of these strings
       if (

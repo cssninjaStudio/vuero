@@ -14,7 +14,7 @@ const props = defineProps({
   size: {
     type: String as PropType<ModalSize>,
     default: undefined,
-    validator: function (value: ModalAction) {
+    validator: (value: ModalAction) => {
       // The value must match one of these strings
       if (
         [undefined, 'small', 'medium', 'large', 'big'].indexOf(value) === -1
@@ -31,7 +31,7 @@ const props = defineProps({
   actions: {
     type: String as PropType<ModalAction>,
     default: undefined,
-    validator: function (value: ModalAction) {
+    validator: (value: ModalAction) => {
       // The value must match one of these strings
       if ([undefined, 'center', 'right'].indexOf(value) === -1) {
         console.warn(

@@ -87,17 +87,50 @@
 @mixin color-modifiers($attribute, $prefix) {
   @each $name, $hex in $vuero-colors {
     &#{$prefix}#{$name} {
-      #{$attribute}: $hex;
+      #{$attribute}: $hex !important;
     }
   }
 }
 
 .text {
-  @include color-modifiers($attribute: 'color', $prefix: '-');
+  @each $name, $hex in $vuero-colors {
+    &-#{$name} {
+      color: $hex !important;
+    }
+  }
+}
+
+.hover-text {
+  @each $name, $hex in $vuero-colors {
+    &-#{$name} {
+      &:hover {
+        color: $hex !important;
+      }
+    }
+  }
 }
 
 .bg {
-  @include color-modifiers($attribute: 'background', $prefix: '-');
+  @each $name, $hex in $vuero-colors {
+    &-#{$name} {
+      background: $hex !important;
+    }
+  }
+}
+
+.hover-bg {
+  @each $name, $hex in $vuero-colors {
+    &-#{$name} {
+      &:hover {
+        background: $hex !important;
+        color: findColorInvert($hex) !important;
+      }
+    }
+  }
+}
+
+.has-text-secondary {
+  color: $secondary !important;
 }
 
 // /* ==========================================================================
@@ -172,4 +205,12 @@
 
 .radius-full {
   border-radius: $radius-rounded;
+}
+
+/* ==========================================================================
+5. Size helpers
+========================================================================== */
+
+.max-w-540 {
+  max-width: 540px;
 }

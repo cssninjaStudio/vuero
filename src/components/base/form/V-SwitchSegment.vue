@@ -22,16 +22,16 @@ const props = defineProps({
   },
   labelTrue: {
     type: String,
-    default: '',
+    default: undefined,
   },
   labelFalse: {
     type: String,
-    default: '',
+    default: undefined,
   },
   color: {
     type: String as PropType<SwitchSegmentColor>,
     default: undefined,
-    validator: function (value: SwitchSegmentColor) {
+    validator: (value: SwitchSegmentColor) => {
       // The value must match one of these strings
       if (
         [undefined, 'primary', 'info', 'success', 'warning', 'danger'].indexOf(
@@ -54,7 +54,9 @@ const emit = defineEmit(['update:modelValue'])
 
 <template inherit-attrs="false">
   <div class="switch-segment">
-    <label class="is-label" :for="blockSwitchId">{{ labelFalse }}</label>
+    <label v-if="labelFalse" class="is-label" :for="blockSwitchId">
+      {{ labelFalse }}
+    </label>
     <label
       :for="blockSwitchId"
       class="form-switch"
@@ -70,6 +72,8 @@ const emit = defineEmit(['update:modelValue'])
       />
       <i></i>
     </label>
-    <label class="is-label" :for="blockSwitchId">{{ labelTrue }}</label>
+    <label v-if="labelTrue" class="is-label" :for="blockSwitchId">
+      {{ labelTrue }}
+    </label>
   </div>
 </template>

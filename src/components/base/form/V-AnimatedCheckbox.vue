@@ -1,18 +1,60 @@
+<script lang="ts">
+let instances = 0
+</script>
+
 <script setup lang="ts">
+import { computed, PropType } from 'vue'
 import { defineProps, ref, defineEmit, watchEffect } from 'vue'
 
+type AnimatedCheckboxColor =
+  | undefined
+  | 'primary'
+  | 'info'
+  | 'success'
+  | 'warning'
+  | 'danger'
+  | 'purple'
+
 const props = defineProps({
+  value: {
+    type: [String, Number],
+    default: undefined,
+  },
   modelValue: {
-    type: Boolean,
-    default: false,
+    type: Array,
+    default: [],
   },
   color: {
-    type: String,
-    default: '',
+    type: String as PropType<AnimatedCheckboxColor>,
+    default: undefined,
+    validator: (value: AnimatedCheckboxColor) => {
+      // The value must match one of these strings
+      if (
+        [
+          undefined,
+          'primary',
+          'info',
+          'success',
+          'warning',
+          'danger',
+          'purple',
+        ].indexOf(value) === -1
+      ) {
+        console.warn(
+          `V-AnimatedCheckbox: invalid "${value}" color. Should be primary, info, success, warning, danger, purple or undefined`
+        )
+        return false
+      }
+
+      return true
+    },
   },
 })
 
+const animatedCheckboxId = `animated-checkbox-${++instances}`
+
 const emit = defineEmit(['update:modelValue'])
+const checked = computed(() => props.modelValue.includes(props.value))
 
 const element = ref<HTMLElement | null>(null)
 const innerElement = ref<HTMLElement | null>(null)
@@ -23,7 +65,7 @@ const handleClick = () => {
 
 const updateCheckbox = () => {
   if (element.value && innerElement.value) {
-    if (props.modelValue) {
+    if (checked.value) {
       element.value.classList.add('is-checked')
       innerElement.value.classList.add('is-opaque')
       setTimeout(() => {
@@ -39,6 +81,17 @@ const updateCheckbox = () => {
   }
 }
 
+function change() {
+  const values = [...props.modelValue]
+
+  if (checked.value) {
+    values.splice(values.indexOf(props.value), 1)
+  } else {
+    values.push(props.value)
+  }
+  emit('update:modelValue', values)
+}
+
 watchEffect(updateCheckbox)
 </script>
 
@@ -48,8 +101,15 @@ watchEffect(updateCheckbox)
     class="animated-checkbox"
     :class="[color && 'is-' + color]"
   >
-    <input type="checkbox" :checked="modelValue" @change="handleClick" />
-    <div class="checkmark-wrap">
+    <input
+      :id="animatedCheckboxId"
+      type="checkbox"
+      :checked="checked"
+      :value="props.value"
+      v-bind="$attrs"
+      @change="change"
+    />
+    <label :for="animatedCheckboxId" class="checkmark-wrap">
       <div ref="innerElement" class="shadow-circle"></div>
       <svg
         class="checkmark"
@@ -63,7 +123,7 @@ watchEffect(updateCheckbox)
           d="M14.1 27.2l7.1 7.2 16.7-16.8"
         />
       </svg>
-    </div>
+    </label>
   </div>
 </template>
 
@@ -91,6 +151,22 @@ $curve: cubic-bezier(0.65, 0, 0.45, 1);
     .checkmark-check {
       color: $h-purple !important;
       stroke: $h-purple !important;
+    }
+  }
+
+  &.is-primary {
+    .checkmark-circle {
+      color: $primary !important;
+      stroke: $primary !important;
+    }
+
+    .checkmark {
+      box-shadow: inset 0 0 0 $primary !important;
+    }
+
+    .checkmark-check {
+      color: $primary !important;
+      stroke: $primary !important;
     }
   }
 

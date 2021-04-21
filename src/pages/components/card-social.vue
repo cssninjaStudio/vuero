@@ -80,9 +80,10 @@ useHead({
             title="Featured Tweet"
             network="twitter"
             avatar="/demo/avatars/19.jpg"
-            username="Greta K."
+            username="@gretak"
             :hashtags="['#bulmaio', '#css', '#responsive']"
-            icon="fab fa-twitter"
+            share-label="Retweet"
+            like-label="Save"
           >
             <span class="dark-inverted">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
@@ -98,7 +99,6 @@ useHead({
             avatar="/demo/avatars/5.jpg"
             username="Mary L."
             :hashtags="['#bulmaio', '#css', '#responsive']"
-            icon="fab fa-instagram"
           >
             <span class="dark-inverted">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
@@ -114,13 +114,25 @@ useHead({
             avatar="/demo/avatars/36.jpg"
             username="Benoit L."
             :hashtags="['#bulmaio', '#css', '#responsive']"
-            icon="fab fa-facebook-f"
           >
-            <span class="dark-inverted">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-              nec iaculis mauris.
-            </span>
+            <template #default>
+              <span class="dark-inverted">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus nec iaculis mauris.
+              </span>
+            </template>
           </V-CardSocial>
+        </div>
+
+        <div class="column is-12 mt-5">
+          <!--Props-->
+          <VCardSocialPropsDocumentation />
+
+          <!--Slots-->
+          <VCardSocialSlotsDocumentation />
+
+          <!--Events-->
+          <VCardSocialEventsDocumentation />
         </div>
       </div>
     </div>

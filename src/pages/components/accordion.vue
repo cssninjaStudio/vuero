@@ -4,21 +4,6 @@ import { onMounted } from 'vue'
 
 import { activeSidebar, toggleSidebar } from '/@src/state/activeSidebarState'
 
-const data = [
-  {
-    title: 'Accordion Item 1',
-    content: 'Sed ut perspiciatis unde omnis iste ...',
-  },
-  {
-    title: 'Accordion Item 2',
-    content: 'Sed ut perspiciatis unde omnis iste ...',
-  },
-  {
-    title: 'Accordion Item 3',
-    content: 'Sed ut perspiciatis unde omnis iste ...',
-  },
-]
-
 onMounted(() => {
   activeSidebar.value = 'components'
 })
@@ -88,11 +73,47 @@ useHead({
         </div>
 
         <div class="column is-6 is-full-tablet">
-          <V-Accordion :items="data" />
+          <V-Accordion
+            :items="[
+              {
+                title: 'Accordion Item 1',
+                content: 'Sed ut perspiciatis unde omnis iste ...',
+              },
+              {
+                title: 'Accordion Item 2',
+                content: 'Sed ut perspiciatis unde omnis iste ...',
+              },
+              {
+                title: 'Accordion Item 3',
+                content: 'Sed ut perspiciatis unde omnis iste ...',
+              },
+            ]"
+          />
         </div>
 
         <div class="column is-6 is-full-tablet">
-          <V-Accordion :items="data" exclusive />
+          <V-Accordion
+            :items="[
+              {
+                title: 'Accordion Item 1',
+                content: 'Sed ut perspiciatis unde omnis iste ...',
+              },
+              {
+                title: 'Accordion Item 2',
+                content: 'Sed ut perspiciatis unde omnis iste ...',
+              },
+              {
+                title: 'Accordion Item 3',
+                content: 'Sed ut perspiciatis unde omnis iste ...',
+              },
+            ]"
+            exclusive
+          />
+        </div>
+
+        <div class="column is-12 mt-5">
+          <!--Props-->
+          <AccordionDefaultPropsDocumentation />
         </div>
       </div>
     </div>

@@ -47,7 +47,6 @@ const { dropdownElement, open, close, toggle, isOpen } = useDropdown()
   >
     <slot
       name="button"
-      :title="title"
       :open="open"
       :close="close"
       :toggle="toggle"

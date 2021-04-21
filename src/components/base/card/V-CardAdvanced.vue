@@ -8,7 +8,7 @@ const props = defineProps({
   radius: {
     type: String as PropType<CardRadius>,
     default: 'regular',
-    validator: function (value: CardRadius) {
+    validator: (value: CardRadius) => {
       // The value must match one of these strings
       if (['regular', 'smooth', 'rounded'].indexOf(value) === -1) {
         console.warn(

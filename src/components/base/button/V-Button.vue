@@ -29,7 +29,7 @@ const props = defineProps({
   color: {
     type: String as PropType<ButtonColor>,
     default: undefined,
-    validator: function (value: ButtonColor) {
+    validator: (value: ButtonColor) => {
       // The value must match one of these strings
       if (
         [
@@ -54,7 +54,7 @@ const props = defineProps({
   size: {
     type: String as PropType<ButtonSize>,
     default: undefined,
-    validator: function (value: ButtonSize) {
+    validator: (value: ButtonSize) => {
       // The value must match one of these strings
       if ([undefined, 'big', 'huge'].indexOf(value) === -1) {
         console.warn(
@@ -69,7 +69,7 @@ const props = defineProps({
   dark: {
     type: String as PropType<ButtonDark>,
     default: undefined,
-    validator: function (value: ButtonDark) {
+    validator: (value: ButtonDark) => {
       // The value must match one of these strings
       if ([undefined, '1', '2', '3', '4', '5', '6'].indexOf(value) === -1) {
         console.warn(

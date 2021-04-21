@@ -646,7 +646,7 @@ useHead({
                 </ul>
               </div>
               <div class="content-wrap">
-                <LandingComponents :active-tab="activeTab" />
+                <!-- <LandingComponents :active-tab="activeTab" /> -->
               </div>
             </div>
           </div>

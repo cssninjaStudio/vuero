@@ -79,7 +79,7 @@ useHead({
                   title="Avatars"
                   content="Get familiar with the Vuero avatar styles. Code examples included."
                 >
-                  <RouterLink :to="{ name: 'components-avatars' }">
+                  <RouterLink :to="{ name: 'components-avatar' }">
                     Get Started
                   </RouterLink>
 
@@ -148,7 +148,7 @@ useHead({
                   title="Dropdowns"
                   content="Get familiar with the Vuero dropdown styles. Code examples included."
                 >
-                  <RouterLink :to="{ name: 'components-dropdown' }">
+                  <RouterLink :to="{ name: 'elements-dropdown' }">
                     Get Started
                   </RouterLink>
 
@@ -194,7 +194,7 @@ useHead({
                   title="Messages"
                   content="Get familiar with the Vuero messages styles. Code examples included."
                 >
-                  <RouterLink :to="{ name: 'components-messages' }">
+                  <RouterLink :to="{ name: 'elements-message' }">
                     Get Started
                   </RouterLink>
 
@@ -217,7 +217,7 @@ useHead({
                   title="Modals"
                   content="Get familiar with the Vuero modal styles. Code examples included."
                 >
-                  <RouterLink :to="{ name: 'components-modal' }">
+                  <RouterLink :to="{ name: 'elements-modal' }">
                     Get Started
                   </RouterLink>
 
@@ -240,7 +240,7 @@ useHead({
                   title="Progress"
                   content="Get familiar with the Vuero progress bar styles. Code examples included."
                 >
-                  <RouterLink :to="{ name: 'components-progress' }">
+                  <RouterLink :to="{ name: 'elements-progress' }">
                     Get Started
                   </RouterLink>
 
@@ -286,7 +286,7 @@ useHead({
                   title="Snacks"
                   content="Get familiar with the Vuero snacks styles. Code examples included."
                 >
-                  <RouterLink :to="{ name: 'components-snacks' }">
+                  <RouterLink :to="{ name: 'components-snack' }">
                     Get Started
                   </RouterLink>
 
@@ -309,7 +309,7 @@ useHead({
                   title="Forms"
                   content="Get familiar with the Vuero form elements. Code examples included."
                 >
-                  <RouterLink :to="{ name: 'components-forms-inputs' }">
+                  <RouterLink :to="{ name: 'elements-forms-inputs' }">
                     Get Started
                   </RouterLink>
 
@@ -332,7 +332,7 @@ useHead({
                   title="Checkboxes"
                   content="Get familiar with the Vuero checkboxes styles. Code examples included."
                 >
-                  <RouterLink :to="{ name: 'components-forms-checkboxes' }">
+                  <RouterLink :to="{ name: 'elements-checkbox' }">
                     Get Started
                   </RouterLink>
 
@@ -355,7 +355,7 @@ useHead({
                   title="Switches"
                   content="Get familiar with the Vuero switches styles. Code examples included."
                 >
-                  <RouterLink :to="{ name: 'components-forms-switch' }">
+                  <RouterLink :to="{ name: 'elements-switch-block' }">
                     Get Started
                   </RouterLink>
 

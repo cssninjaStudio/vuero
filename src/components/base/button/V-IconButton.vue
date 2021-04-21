@@ -28,7 +28,7 @@ const props = defineProps({
   color: {
     type: String as PropType<IconButtonColor>,
     default: undefined,
-    validator: function (value: IconButtonColor) {
+    validator: (value: IconButtonColor) => {
       // The value must match one of these strings
       if (
         [
@@ -53,7 +53,7 @@ const props = defineProps({
   dark: {
     type: String as PropType<IconButtonDark>,
     default: undefined,
-    validator: function (value: IconButtonDark) {
+    validator: (value: IconButtonDark) => {
       if (!value) return true
       // The value must match one of these strings
       if (['1', '2', '3', '4', '5', '6'].indexOf(value) === -1) {

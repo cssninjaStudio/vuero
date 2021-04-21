@@ -95,6 +95,11 @@ useHead({
         <div class="column is-6">
           <V-Collapse :items="data" with-chevron />
         </div>
+
+        <div class="column is-12">
+          <!--Props-->
+          <AccordionCollapsePropsDocumentation />
+        </div>
       </div>
     </div>
   </div>

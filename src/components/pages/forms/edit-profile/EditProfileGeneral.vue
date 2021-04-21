@@ -97,26 +97,25 @@ const onSave = async () => {
               $event.target.src = 'https://via.placeholder.com/150x150'
             "
           />
-          <div v-else class="filepond-profile-wrap">
-            <V-FilePond
-              class="profile-filepond"
-              name="profile_filepond"
-              chunk-retry-delays="500,1000,3000"
-              label-idle="<i class='lnil lnil-cloud-upload'></i>"
-              :accepted-file-types="['image/png', 'image/jpeg', 'image/gif']"
-              :image-preview-height="140"
-              :image-resize-target-width="140"
-              :image-resize-target-height="140"
-              image-crop-aspect-ratio="1:1"
-              style-panel-layout="compact circle"
-              style-load-indicator-position="center bottom"
-              style-progress-indicator-position="right bottom"
-              style-button-remove-item-position="left bottom"
-              style-button-process-item-position="right bottom"
-              @addfile="onAddFile"
-              @removefile="onRemoveFile"
-            />
-          </div>
+          <V-FilePond
+            v-else
+            class="profile-filepond"
+            name="profile_filepond"
+            :chunk-retry-delays="[500, 1000, 3000]"
+            label-idle="<i class='lnil lnil-cloud-upload'></i>"
+            :accepted-file-types="['image/png', 'image/jpeg', 'image/gif']"
+            :image-preview-height="140"
+            :image-resize-target-width="140"
+            :image-resize-target-height="140"
+            image-crop-aspect-ratio="1:1"
+            style-panel-layout="compact circle"
+            style-load-indicator-position="center bottom"
+            style-progress-indicator-position="right bottom"
+            style-button-remove-item-position="left bottom"
+            style-button-process-item-position="right bottom"
+            @addfile="onAddFile"
+            @removefile="onRemoveFile"
+          />
           <V-IconButton
             v-if="!isUploading"
             icon="feather:edit-2"

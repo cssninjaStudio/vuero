@@ -1,16 +1,27 @@
 <script setup lang="ts">
-import { defineProps } from 'vue'
+import { defineProps, ref, defineEmit, watch } from 'vue'
 
-defineProps({
+const props = defineProps({
   todos: {
     type: Array,
     required: true,
     default: [],
   },
+  modelValue: {
+    type: Array,
+    default: [],
+  },
   color: {
     type: String,
-    default: '',
+    default: undefined,
   },
+})
+
+const completed = ref(props.modelValue)
+const emit = defineEmit(['update:modelValue'])
+
+watch(completed, () => {
+  emit('update:modelValue', completed.value)
 })
 </script>
 
@@ -21,7 +32,11 @@ defineProps({
       :key="todo.id"
       class="inner-list-item media-flex-center"
     >
-      <V-AnimatedCheckbox v-model="todo.completed" :color="color" />
+      <V-AnimatedCheckbox
+        v-model="completed"
+        :value="todo.title"
+        :color="color"
+      />
       <div class="flex-meta is-light">
         <a href="#">{{ todo.title }}</a>
         <span>{{ todo.time }}</span>

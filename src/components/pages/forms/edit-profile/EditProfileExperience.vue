@@ -96,26 +96,25 @@ const onSave = async () => {
             class="setting-form"
             @submit.prevent="addExperience"
           >
-            <div class="filepond-profile-wrap is-tiny">
-              <V-FilePond
-                class="profile-filepond"
-                name="profile_filepond"
-                chunk-retry-delays="500,1000,3000"
-                label-idle="<i class='lnil lnil-cloud-upload'></i>"
-                :accepted-file-types="['image/png', 'image/jpeg', 'image/gif']"
-                :image-preview-height="140"
-                :image-resize-target-width="140"
-                :image-resize-target-height="140"
-                image-crop-aspect-ratio="1:1"
-                style-panel-layout="compact circle"
-                style-load-indicator-position="center bottom"
-                style-progress-indicator-position="right bottom"
-                style-button-remove-item-position="left bottom"
-                style-button-process-item-position="right bottom"
-                @addfile="onAddFile"
-                @removefile="onRemoveFile"
-              />
-            </div>
+            <V-FilePond
+              size="tiny"
+              class="profile-filepond"
+              name="profile_filepond"
+              :chunk-retry-delays="[500, 1000, 3000]"
+              label-idle="<i class='lnil lnil-cloud-upload'></i>"
+              :accepted-file-types="['image/png', 'image/jpeg', 'image/gif']"
+              :image-preview-height="140"
+              :image-resize-target-width="140"
+              :image-resize-target-height="140"
+              image-crop-aspect-ratio="1:1"
+              style-panel-layout="compact circle"
+              style-load-indicator-position="center bottom"
+              style-progress-indicator-position="right bottom"
+              style-button-remove-item-position="left bottom"
+              style-button-process-item-position="right bottom"
+              @addfile="onAddFile"
+              @removefile="onRemoveFile"
+            />
             <div class="field-wrap">
               <div class="columns is-multiline">
                 <div class="column is-12">

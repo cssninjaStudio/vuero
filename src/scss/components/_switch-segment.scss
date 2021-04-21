@@ -1,0 +1,33 @@
+.switch-segment {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  .is-label {
+    font-family: $font;
+    font-size: 0.9rem;
+
+    &:first-child {
+      color: $dark-text;
+    }
+
+    &:nth-child(3) {
+      color: $light-text;
+    }
+  }
+
+  .form-switch {
+    transform: scale(0.7);
+    margin: 0 0.25rem;
+  }
+}
+
+.is-dark {
+  .switch-segment {
+    .is-label {
+      &:first-child {
+        color: $dark-dark-text;
+      }
+    }
+  }
+}

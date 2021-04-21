@@ -8,7 +8,7 @@ const props = defineProps({
   dark: {
     type: String as PropType<ActionDark>,
     default: undefined,
-    validator: function (value: ActionDark) {
+    validator: (value: ActionDark) => {
       // The value must match one of these strings
       if ([undefined, '1', '2', '3', '4', '5', '6'].indexOf(value) === -1) {
         console.warn(

@@ -9,7 +9,7 @@ const props = defineProps({
   size: {
     type: String as PropType<LoaderSize>,
     default: undefined,
-    validator: function (value: LoaderSize) {
+    validator: (value: LoaderSize) => {
       // The value must match one of these strings
       if ([undefined, 'small', 'large', 'xl'].indexOf(value) === -1) {
         console.warn(
@@ -24,7 +24,7 @@ const props = defineProps({
   card: {
     type: String as PropType<LoaderWrapperRadius>,
     default: undefined,
-    validator: function (value: LoaderWrapperRadius) {
+    validator: (value: LoaderWrapperRadius) => {
       // The value must match one of these strings
       if ([undefined, 'regular', 'smooth', 'rounded'].indexOf(value) === -1) {
         console.warn(

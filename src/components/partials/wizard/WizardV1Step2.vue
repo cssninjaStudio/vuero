@@ -33,26 +33,25 @@ const onRemoveFile = (error: any, fileInfo: any) => {
     <div class="project-info">
       <div class="project-info-head">
         <div class="project-avatar-upload">
-          <div class="filepond-profile-wrap is-small">
-            <V-FilePond
-              class="profile-filepond"
-              name="profile_filepond"
-              chunk-retry-delays="500,1000,3000"
-              label-idle="<i class='lnil lnil-cloud-upload'></i>"
-              :accepted-file-types="['image/png', 'image/jpeg', 'image/gif']"
-              :image-preview-height="140"
-              :image-resize-target-width="140"
-              :image-resize-target-height="140"
-              image-crop-aspect-ratio="1:1"
-              style-panel-layout="compact circle"
-              style-load-indicator-position="center bottom"
-              style-progress-indicator-position="right bottom"
-              style-button-remove-item-position="left bottom"
-              style-button-process-item-position="right bottom"
-              @addfile="onAddFile"
-              @removefile="onRemoveFile"
-            />
-          </div>
+          <V-FilePond
+            size="small"
+            class="profile-filepond"
+            name="profile_filepond"
+            :chunk-retry-delays="[500, 1000, 3000]"
+            label-idle="<i class='lnil lnil-cloud-upload'></i>"
+            :accepted-file-types="['image/png', 'image/jpeg', 'image/gif']"
+            :image-preview-height="140"
+            :image-resize-target-width="140"
+            :image-resize-target-height="140"
+            image-crop-aspect-ratio="1:1"
+            style-panel-layout="compact circle"
+            style-load-indicator-position="center bottom"
+            style-progress-indicator-position="right bottom"
+            style-button-remove-item-position="left bottom"
+            style-button-process-item-position="right bottom"
+            @addfile="onAddFile"
+            @removefile="onRemoveFile"
+          />
           <p>
             <span>Upload a project logo</span>
             <span>File size cannot exceed 2MB</span>

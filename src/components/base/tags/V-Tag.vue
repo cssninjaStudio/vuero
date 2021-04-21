@@ -26,7 +26,7 @@ const props = defineProps({
   color: {
     type: String as PropType<TagColor>,
     default: undefined,
-    validator: function (value: TagColor) {
+    validator: (value: TagColor) => {
       // The value must match one of these strings
       if (
         [

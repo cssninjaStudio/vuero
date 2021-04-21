@@ -17,7 +17,7 @@ const props = defineProps({
   size: {
     type: String as PropType<AvatarStackSize>,
     default: undefined,
-    validator: function (value: AvatarStackSize) {
+    validator: (value: AvatarStackSize) => {
       // The value must match one of these strings
       if (
         [undefined, 'small', 'medium', 'large', 'big', 'xl'].indexOf(value) ===

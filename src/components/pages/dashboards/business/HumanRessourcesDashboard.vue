@@ -228,10 +228,10 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
           class="list-widget-v2"
         >
           <template #tab1>
-            <listWidgetTodoList :todos="todoList3" />
+            <ListWidgetTodoList :todos="todoList3" />
           </template>
           <template #tab2>
-            <listWidgetTodoList :todos="todoList4" />
+            <ListWidgetTodoList :todos="todoList4" />
           </template>
         </ListWidgetTabbed>
 

@@ -39,7 +39,7 @@ onBeforeUnmount(() => {
 })
 
 useHead({
-  title: 'Components - Plugins Simple Datatables - Vuero',
+  title: 'V-SimpleDatatables - Plugins - Vuero',
 })
 </script>
 
@@ -66,7 +66,7 @@ useHead({
       </div>
 
       <div class="title-wrap">
-        <h1 class="title is-4">Simple Datatables</h1>
+        <h1 class="title is-4">V-SimpleDatatables</h1>
       </div>
 
       <Toolbar />
@@ -91,7 +91,7 @@ useHead({
             label: 'Plugins',
           },
           {
-            label: 'Simple Datatables',
+            label: 'V-SimpleDatatables',
             to: { name: 'components-plugins-simple-datatables' },
           },
         ]"
