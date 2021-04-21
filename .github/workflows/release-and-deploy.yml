@@ -18,8 +18,8 @@ jobs:
         with:
           node-version: '14.x'
 
-      - name: yarn
-      - name: yarn build
+      - run: yarn
+      - run: yarn build
 
   release:
     name: Build release package
@@ -43,9 +43,9 @@ jobs:
         with:
           node-version: '14.x'
 
-      - name: yarn
-      - name: yarn test
-      - name: yarn build
+      - run: yarn
+      - run: yarn test
+      - run: yarn build
 
       - name: Build release zip archive
         run: |
