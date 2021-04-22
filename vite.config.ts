@@ -53,7 +53,11 @@ export default defineConfig({
     // }
   },
   plugins: [
-    // https://github.com/vitejs/vite/tree/main/packages/plugin-vue
+    /**
+     * plugin-vue plugin inject vue library and allow sfc files to work (*.vue)
+     *
+     * @see https://github.com/vitejs/vite/tree/main/packages/plugin-vue
+     */
     Vue({
       include: [/\.vue$/],
     }),
@@ -143,11 +147,11 @@ export default defineConfig({
      *
      * @see https://github.com/stafyniaksacha/vite-plugin-radar
      */
-    // ViteRadar({
-    //   analytics: {
-    //     id: 'G-8PH6FM2JEL',
-    //   },
-    // }),
+    ViteRadar({
+      analytics: {
+        id: 'G-8PH6FM2JEL',
+      },
+    }),
 
     /**
      * vite-plugin-pwa generate manifest.json and register services worker to enable PWA
@@ -184,31 +188,31 @@ export default defineConfig({
      *
      * @see https://github.com/anncwb/vite-plugin-imagemin
      */
-    // ImageMin({
-    //   gifsicle: {
-    //     optimizationLevel: 7,
-    //     interlaced: false,
-    //   },
-    //   optipng: {
-    //     optimizationLevel: 7,
-    //   },
-    //   mozjpeg: {
-    //     quality: 8,
-    //   },
-    //   pngquant: {
-    //     quality: [0.8, 0.9],
-    //     speed: 4,
-    //   },
-    //   svgo: {
-    //     plugins: [
-    //       {
-    //         removeViewBox: false,
-    //       },
-    //       {
-    //         removeEmptyAttrs: false,
-    //       },
-    //     ],
-    //   },
-    // }),
+    ImageMin({
+      gifsicle: {
+        optimizationLevel: 7,
+        interlaced: false,
+      },
+      optipng: {
+        optimizationLevel: 7,
+      },
+      mozjpeg: {
+        quality: 8,
+      },
+      pngquant: {
+        quality: [0.8, 0.9],
+        speed: 4,
+      },
+      svgo: {
+        plugins: [
+          {
+            removeViewBox: false,
+          },
+          {
+            removeEmptyAttrs: false,
+          },
+        ],
+      },
+    }),
   ],
 })
