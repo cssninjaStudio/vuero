@@ -118,3 +118,7 @@ dist
 # cypress
 cypress/screenshots
 cypress/videos
+
+# ignoring vuero releases files
+/*.pdf
+/*.zip

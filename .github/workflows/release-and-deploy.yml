@@ -53,22 +53,7 @@ jobs:
       - name: Build release zip archive
         run: |
           sudo apt-get install zip
-          cp .release/documentation.pdf .
-          zip -r template-${{ steps.meta.outputs.project }}-${{ steps.meta.outputs.tag }}.zip . \ 
-            -x "*.zip" \
-            -x "node_modules/*" \
-            -x ".release/*" \
-            -x ".git/*" \
-            -x ".github/*" \
-            -x "public/demo/*" \
-            -x "dist/demo/*" \
-            -x "docker-compose.yml"
-          zip -j ${{ steps.meta.outputs.project }}-preview.zip \
-            .release/${{ steps.meta.outputs.project }}-preview.png
-          zip -j release-${{ steps.meta.outputs.project }}-${{ steps.meta.outputs.tag }}.zip \
-            template-${{ steps.meta.outputs.project }}-${{ steps.meta.outputs.tag }}.zip \
-            ${{ steps.meta.outputs.project }}-preview.zip \
-            .release/${{ steps.meta.outputs.project }}-thumb.png
+          ./.release/build-envato-archive.sh ${{ steps.meta.outputs.project }} ${{ steps.meta.outputs.tag }}
 
       - name: Create Release
         id: create_release
