@@ -13,15 +13,15 @@ type IconButtonColor =
   | 'white'
 
 const props = defineProps({
+  icon: {
+    type: String,
+    required: true,
+  },
   to: {
     type: Object,
     default: undefined,
   },
   href: {
-    type: String,
-    default: undefined,
-  },
-  icon: {
     type: String,
     default: undefined,
   },

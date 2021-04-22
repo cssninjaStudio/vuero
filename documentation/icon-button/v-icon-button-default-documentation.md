@@ -12,9 +12,12 @@ Please refer to markup for detailed examples.
 <template>
   <V-Buttons>
     <V-IconButton icon="feather:mail" />
-    <V-IconButton color="info" raised circle icon="feather:message-circle" />
-    <V-IconButton icon="fab fa-twitter" />
-    <V-IconButton color="info" raised circle icon="fab fa-linkedin-in" />
+    <V-IconButton color="success" icon="feather:phone" />
+    <V-IconButton color="info" light icon="fab fa-twitter" />
+    <V-IconButton color="primary" circle icon="feather:message-circle" />
+    <V-IconButton color="warning" outlined circle icon="feather:triangle" />
+    <V-IconButton color="danger" light raised circle icon="feather:x" />
+    <V-IconButton color="primary" outlined loading circle icon="feather:plus" />
   </V-Buttons>
 </template>
 ```
@@ -24,10 +27,13 @@ Please refer to markup for detailed examples.
 <!--example-->
 
 <V-Buttons>
-    <V-IconButton icon="feather:mail" />
-    <V-IconButton color="info" raised circle icon="feather:message-circle" />
-    <V-IconButton icon="fab fa-twitter" />
-    <V-IconButton color="info" raised circle icon="fab fa-linkedin-in" />
-  </V-Buttons>
+  <V-IconButton icon="feather:mail" />
+  <V-IconButton color="success" icon="feather:phone" />
+  <V-IconButton color="info" light icon="fab fa-twitter" />
+  <V-IconButton color="primary" circle icon="feather:message-circle" />
+  <V-IconButton color="warning" outlined circle icon="feather:triangle" />
+  <V-IconButton color="danger" light circle icon="feather:x"  />
+  <V-IconButton color="primary" outlined loading circle icon="feather:plus"  />
+</V-Buttons>
 
 <!--/example-->

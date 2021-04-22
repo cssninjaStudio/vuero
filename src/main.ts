@@ -13,7 +13,6 @@
 
 import { createApp } from 'vue'
 import { createHead } from '@vueuse/head'
-import { MotionPlugin } from '@vueuse/motion'
 import VCalendar from 'v-calendar'
 import VueMultiselect from '@vueform/multiselect'
 import VueSlider from '@vueform/slider'
@@ -63,7 +62,6 @@ app.use(head)
 app.use(VCalendar)
 app.use(VueApexCharts)
 app.use(VueCKEditor)
-app.use(MotionPlugin)
 app.use(VueTippy, {
   defaultProps: {
     theme: 'light',

@@ -462,6 +462,21 @@
                       &.is-active {
                         display: flex;
                       }
+
+                      a {
+                        .meta {
+                          > span {
+                            display: inline-block;
+                          }
+
+                          .tag {
+                            line-height: 1.8;
+                            height: 1.8em;
+                            font-size: 0.65rem;
+                            margin-left: 0.2rem;
+                          }
+                        }
+                      }
                     }
                   }
 

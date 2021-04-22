@@ -260,6 +260,13 @@ const activeTab = ref<TabId>('display')
                     </RouterLink>
                   </li>
                   <li>
+                    <RouterLink :to="{ name: 'components-card-action' }">
+                      <span>V-CardAction</span>
+                      <V-Tag label="v1.1" color="primary" outlined curved />
+                      <i class="iconify" data-icon="feather:circle"></i>
+                    </RouterLink>
+                  </li>
+                  <li>
                     <RouterLink :to="{ name: 'components-card-advanced' }">
                       <span>V-CardAdvanced</span>
                       <i class="iconify" data-icon="feather:circle"></i>
@@ -268,6 +275,7 @@ const activeTab = ref<TabId>('display')
                   <li>
                     <RouterLink :to="{ name: 'components-card-media' }">
                       <span>V-CardMedia</span>
+                      <V-Tag label="v1.1" color="primary" outlined curved />
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
@@ -277,24 +285,12 @@ const activeTab = ref<TabId>('display')
                       <i class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
-                  <li>
-                    <RouterLink :to="{ name: 'components-card-action' }">
-                      <span>V-CardAction</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
-                    </RouterLink>
-                  </li>
                 </ul>
               </div>
 
               <div class="column is-3">
                 <h4 class="column-heading">Placeholders</h4>
                 <ul>
-                  <li>
-                    <RouterLink :to="{ name: 'components-placeholder-invite' }">
-                      <span>V-PlaceholderSection</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
-                    </RouterLink>
-                  </li>
                   <li>
                     <RouterLink :to="{ name: 'components-placeholder-page' }">
                       <span>V-PlaceholderPage</span>

@@ -8,7 +8,7 @@ Here is the full props available for `<V-Button />` component:
 
 | Props        | Default                                       | Type                                                       |
 | ------------ | --------------------------------------------- | ---------------------------------------------------------- |
-| top          | <span class="is-undefined">`undefined`</span> | string, <span class="is-array">`RouteLocationRaw`</span>   |
+| to           | <span class="is-undefined">`undefined`</span> | string, <span class="is-array">`RouteLocationRaw`</span>   |
 | href         | <span class="is-undefined">`undefined`</span> | string                                                     |
 | icon         | <span class="is-undefined">`undefined`</span> | string                                                     |
 | size         | <span class="is-undefined">`undefined`</span> | `big`, `huge`                                              |

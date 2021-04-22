@@ -76,7 +76,8 @@ useHead({
           :class="[toc.length > 0 ? 'is-9' : 'is-12']"
           class="column doc-column"
         >
-          <!-- @TODO -->
+          <VIconButtonDefaultDocumentation />
+          <VIconButtonPropsDocumentation />
         </div>
         <div v-if="toc.length" class="column is-3 toc-column">
           <DocumentationToc :toc="toc" />

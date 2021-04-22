@@ -9,7 +9,7 @@ const selectedCategory = ref('')
   <div
     ref="dropdownElement"
     :class="[isOpen && 'is-active']"
-    class="dropdown is-modern is-spaced dropdown-trigger has-mega-dropdown is-right"
+    class="dropdown is-modern is-spaced dropdown-trigger has-mega-dropdown"
   >
     <div class="is-trigger" aria-haspopup="true" aria-controls="dropdown-menu">
       <button
@@ -25,7 +25,7 @@ const selectedCategory = ref('')
       </button>
     </div>
     <div class="dropdown-menu" role="menu">
-      <!-- <div class="dropdown-content">
+      <div class="dropdown-content">
         <div
           class="category-selector"
           :class="[selectedCategory !== '' && 'is-hidden']"
@@ -34,9 +34,23 @@ const selectedCategory = ref('')
             <h4>Select a category</h4>
           </div>
           <div class="category-selector-inner">
-            <div class="category-item" @click="selectedCategory = 'base'">
-              <i class="lnil lnil-laptop-alt-switch"></i>
-              <span>UI Elements</span>
+            <!-- Interaction Item -->
+            <div
+              class="category-item"
+              @click="selectedCategory = 'interaction'"
+            >
+              <i class="lnil lnil-pointer-top"></i>
+              <span>Interaction</span>
+            </div>
+            <!-- Advanced Item -->
+            <div class="category-item" @click="selectedCategory = 'advanced'">
+              <i class="lnil lnil-Website"></i>
+              <span>Advanced</span>
+            </div>
+            <!-- Addons Item -->
+            <div class="category-item" @click="selectedCategory = 'addons'">
+              <i class="lnil lnil-code"></i>
+              <span>Addons</span>
             </div>
 
             <img
@@ -56,6 +70,7 @@ const selectedCategory = ref('')
           class="content-wrap"
           :class="[selectedCategory === '' && 'is-hidden']"
         >
+          <!--Back button-->
           <button
             class="button is-circle back-button"
             @click="selectedCategory = ''"
@@ -65,13 +80,13 @@ const selectedCategory = ref('')
             </span>
           </button>
 
+          <!--Interaction-->
           <div
-            id="elements-base-menu"
-            :class="[selectedCategory === 'base' && 'is-active']"
+            :class="[selectedCategory === 'interaction' && 'is-active']"
             class="columns is-gapless mega-menus"
           >
-            <!- -Column- ->
-            <div class="column is-4">
+            <!--Interaction/General-->
+            <div class="column is-6">
               <div class="dropdown-item-group">
                 <h4 class="column-heading is-info">
                   <i class="iconify" data-icon="feather:circle"></i>
@@ -90,6 +105,7 @@ const selectedCategory = ref('')
                       <span>Elements Hub</span>
                     </div>
                   </RouterLink>
+
                   <RouterLink
                     :to="{ name: 'elements-colors' }"
                     class="dropdown-item is-media"
@@ -101,6 +117,7 @@ const selectedCategory = ref('')
                       <span>Colors</span>
                     </div>
                   </RouterLink>
+
                   <RouterLink
                     :to="{ name: 'elements-helpers' }"
                     class="dropdown-item is-media"
@@ -112,160 +129,463 @@ const selectedCategory = ref('')
                       <span>Helpers</span>
                     </div>
                   </RouterLink>
-                  <RouterLink
-                    :to="{ name: 'elements-icons-line-icons' }"
-                    class="dropdown-item is-media"
-                  >
-                    <div class="icon">
-                      <i class="lnil lnil-flag"></i>
-                    </div>
-                    <div class="meta">
-                      <span>Line Icons L</span>
-                    </div>
-                  </RouterLink>
-                  <RouterLink
-                    :to="{ name: 'elements-icons-line-icons-regular' }"
-                    class="dropdown-item is-media"
-                  >
-                    <div class="icon">
-                      <i class="lnil lnil-flag"></i>
-                    </div>
-                    <div class="meta">
-                      <span>Line Icons R</span>
-                    </div>
-                  </RouterLink>
-                  <RouterLink
-                    :to="{ name: 'elements-icons-fa' }"
-                    class="dropdown-item is-media"
-                  >
-                    <div class="icon">
-                      <i class="lnil lnil-flag"></i>
-                    </div>
-                    <div class="meta">
-                      <span>Font Awesome</span>
-                    </div>
-                  </RouterLink>
+
                   <RouterLink
                     :to="{ name: 'elements-icons-iconify' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-flag"></i>
+                      <i class="lnil lnil-minus"></i>
                     </div>
                     <div class="meta">
                       <span>Iconify</span>
                     </div>
                   </RouterLink>
+
+                  <RouterLink
+                    :to="{ name: 'elements-icons-line-icons' }"
+                    class="dropdown-item is-media"
+                  >
+                    <div class="icon">
+                      <i class="lnil lnil-minus"></i>
+                    </div>
+                    <div class="meta">
+                      <span>Line Icons Light</span>
+                    </div>
+                  </RouterLink>
+
+                  <RouterLink
+                    :to="{ name: 'elements-icons-line-icons-regular' }"
+                    class="dropdown-item is-media"
+                  >
+                    <div class="icon">
+                      <i class="lnil lnil-minus"></i>
+                    </div>
+                    <div class="meta">
+                      <span>Line Icons Regular</span>
+                    </div>
+                  </RouterLink>
+
+                  <RouterLink
+                    :to="{ name: 'elements-icons-fa' }"
+                    class="dropdown-item is-media"
+                  >
+                    <div class="icon">
+                      <i class="lnil lnil-minus"></i>
+                    </div>
+                    <div class="meta">
+                      <span>Font Awesome 5</span>
+                    </div>
+                  </RouterLink>
                 </div>
               </div>
             </div>
-            <! --Column- ->
-            <div class="column is-4">
+
+            <!--Interaction/Interaction-->
+            <div class="column is-6">
               <div class="dropdown-item-group">
-                <h4 class="column-heading is-green">
+                <h4 class="column-heading is-orange">
                   <i class="iconify" data-icon="feather:circle"></i>
-                  <span>Basic UI</span>
+                  <span>Interaction</span>
                 </h4>
 
                 <div class="column-content" data-simplebar>
+                  <RouterLink
+                    :to="{ name: 'elements-action' }"
+                    class="dropdown-item is-media"
+                  >
+                    <div class="icon">
+                      <i class="lnil lnil-pointer-top"></i>
+                    </div>
+                    <div class="meta">
+                      <span>V-Action</span>
+                    </div>
+                  </RouterLink>
+
                   <RouterLink
                     :to="{ name: 'elements-button' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-layout-alt"></i>
+                      <i class="lnil lnil-pointer-top"></i>
                     </div>
                     <div class="meta">
-                      <span>Buttons</span>
+                      <span>V-Button</span>
                     </div>
                   </RouterLink>
+
                   <RouterLink
-                    :to="{ name: 'components-content' }"
+                    :to="{ name: 'elements-dropdown' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-layout"></i>
+                      <i class="lnil lnil-chevron-down"></i>
                     </div>
                     <div class="meta">
-                      <span>Content</span>
+                      <span>V-Dropdown</span>
                     </div>
                   </RouterLink>
+
                   <RouterLink
-                    :to="{ name: 'components-tag' }"
+                    :to="{ name: 'elements-icon-button' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-bookmark-alt"></i>
+                      <i class="lnil lnil-pointer-top"></i>
                     </div>
                     <div class="meta">
-                      <span>Tags</span>
+                      <span>V-IconButton</span>
+                    </div>
+                  </RouterLink>
+
+                  <RouterLink
+                    :to="{ name: 'elements-loader' }"
+                    class="dropdown-item is-media"
+                  >
+                    <div class="icon">
+                      <i class="lnil lnil-spinner-3"></i>
+                    </div>
+                    <div class="meta">
+                      <span>V-Loader</span>
+                    </div>
+                  </RouterLink>
+
+                  <RouterLink
+                    :to="{ name: 'elements-message' }"
+                    class="dropdown-item is-media"
+                  >
+                    <div class="icon">
+                      <i class="lnil lnil-capital-letter"></i>
+                    </div>
+                    <div class="meta">
+                      <span>V-Message</span>
+                      <V-Tag
+                        label="v1.1"
+                        color="primary"
+                        outlined
+                        curved
+                        class="ml-3"
+                      />
+                    </div>
+                  </RouterLink>
+
+                  <RouterLink
+                    :to="{ name: 'elements-modal' }"
+                    class="dropdown-item is-media"
+                  >
+                    <div class="icon">
+                      <i class="lnil lnil-top-right-arrow-box"></i>
+                    </div>
+                    <div class="meta">
+                      <span>V-Modal</span>
+                    </div>
+                  </RouterLink>
+
+                  <RouterLink
+                    :to="{ name: 'elements-progress' }"
+                    class="dropdown-item is-media"
+                  >
+                    <div class="icon">
+                      <i class="lnil lnil-half-battery"></i>
+                    </div>
+                    <div class="meta">
+                      <span>V-Progress</span>
+                    </div>
+                  </RouterLink>
+
+                  <RouterLink
+                    :to="{ name: 'elements-tooltip' }"
+                    class="dropdown-item is-media"
+                  >
+                    <div class="icon">
+                      <i class="lnil lnil-comments-alt"></i>
+                    </div>
+                    <div class="meta">
+                      <span>V-Tooltip</span>
                     </div>
                   </RouterLink>
                 </div>
               </div>
             </div>
-            <!- -Column- ->
-            <div class="column is-4">
+          </div>
+
+          <!--Advanced-->
+          <div
+            :class="[selectedCategory === 'advanced' && 'is-active']"
+            class="columns is-gapless mega-menus"
+          >
+            <!--Advanced/Forms-->
+            <div class="column is-6">
               <div class="dropdown-item-group">
-                <h4 class="column-heading is-orange">
+                <h4 class="column-heading is-info">
                   <i class="iconify" data-icon="feather:circle"></i>
-                  <span>Advanced UI</span>
+                  <span>Forms</span>
                 </h4>
 
                 <div class="column-content" data-simplebar>
                   <RouterLink
-                    :to="{ name: 'components-card' }"
+                    :to="{ name: 'elements-forms-inputs' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-grid-alt"></i>
+                      <i class="lnil lnil-font"></i>
                     </div>
                     <div class="meta">
-                      <span>Cards</span>
+                      <span>Text inputs</span>
                     </div>
                   </RouterLink>
+
                   <RouterLink
-                    :to="{ name: 'navbar-layouts-list-datatable-4' }"
+                    :to="{ name: 'elements-forms-addons' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-layout-alt"></i>
+                      <i class="lnil lnil-font"></i>
                     </div>
                     <div class="meta">
-                      <span>Table</span>
+                      <span>Input Addons</span>
                     </div>
                   </RouterLink>
+
                   <RouterLink
-                    :to="{ name: 'components-tabs' }"
+                    :to="{ name: 'elements-forms-textarea' }"
+                    class="dropdown-item is-media"
+                  >
+                    <div class="icon">
+                      <i class="lnil lnil-font"></i>
+                    </div>
+                    <div class="meta">
+                      <span>Textarea</span>
+                    </div>
+                  </RouterLink>
+
+                  <RouterLink
+                    :to="{ name: 'elements-forms-selects' }"
+                    class="dropdown-item is-media"
+                  >
+                    <div class="icon">
+                      <i class="lnil lnil-font"></i>
+                    </div>
+                    <div class="meta">
+                      <span>Selects</span>
+                    </div>
+                  </RouterLink>
+
+                  <RouterLink
+                    :to="{ name: 'elements-forms-file' }"
+                    class="dropdown-item is-media"
+                  >
+                    <div class="icon">
+                      <i class="lnil lnil-upload"></i>
+                    </div>
+                    <div class="meta">
+                      <span>File Input</span>
+                    </div>
+                  </RouterLink>
+
+                  <RouterLink
+                    :to="{ name: 'elements-control' }"
+                    class="dropdown-item is-media"
+                  >
+                    <div class="icon">
+                      <i class="lnil lnil-stop"></i>
+                    </div>
+                    <div class="meta">
+                      <span>V-Control</span>
+                    </div>
+                  </RouterLink>
+
+                  <RouterLink
+                    :to="{ name: 'elements-field' }"
+                    class="dropdown-item is-media"
+                  >
+                    <div class="icon">
+                      <i class="lnil lnil-stop"></i>
+                    </div>
+                    <div class="meta">
+                      <span>V-Field</span>
+                    </div>
+                  </RouterLink>
+                </div>
+              </div>
+            </div>
+
+            <!--Advanced/Switches-->
+            <div class="column is-6">
+              <div class="dropdown-item-group">
+                <h4 class="column-heading is-green">
+                  <i class="iconify" data-icon="feather:circle"></i>
+                  <span>Switches</span>
+                </h4>
+
+                <div class="column-content" data-simplebar>
+                  <RouterLink
+                    :to="{ name: 'elements-animated-checkbox' }"
+                    class="dropdown-item is-media"
+                  >
+                    <div class="icon">
+                      <i class="lnil lnil-round-box-check"></i>
+                    </div>
+                    <div class="meta">
+                      <span>V-AnimatedCheckbox</span>
+                      <V-Tag
+                        label="v1.1"
+                        color="primary"
+                        outlined
+                        curved
+                        class="ml-3"
+                      />
+                    </div>
+                  </RouterLink>
+
+                  <RouterLink
+                    :to="{ name: 'elements-checkbox' }"
+                    class="dropdown-item is-media"
+                  >
+                    <div class="icon">
+                      <i class="lnil lnil-round-box-check"></i>
+                    </div>
+                    <div class="meta">
+                      <span>V-Checkbox</span>
+                      <V-Tag
+                        label="v1.1"
+                        color="primary"
+                        outlined
+                        curved
+                        class="ml-3"
+                      />
+                    </div>
+                  </RouterLink>
+
+                  <RouterLink
+                    :to="{ name: 'elements-radio' }"
+                    class="dropdown-item is-media"
+                  >
+                    <div class="icon">
+                      <i class="lnil lnil-checkmark-circle"></i>
+                    </div>
+                    <div class="meta">
+                      <span>V-Radio</span>
+                      <V-Tag
+                        label="v1.1"
+                        color="primary"
+                        outlined
+                        curved
+                        class="ml-3"
+                      />
+                    </div>
+                  </RouterLink>
+
+                  <RouterLink
+                    :to="{ name: 'elements-switch-block' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
                       <i class="lnil lnil-switch"></i>
                     </div>
                     <div class="meta">
-                      <span>Regular Tabs</span>
+                      <span>V-SwitchBlock</span>
                     </div>
                   </RouterLink>
                   <RouterLink
-                    :to="{ name: 'elements-tabs-slider' }"
+                    :to="{ name: 'elements-switch-segment' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
                       <i class="lnil lnil-switch"></i>
                     </div>
                     <div class="meta">
-                      <span>Slider Tabs</span>
+                      <span>V-SwitchSegment</span>
                     </div>
                   </RouterLink>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Addons-->
+          <div
+            :class="[selectedCategory === 'addons' && 'is-active']"
+            class="columns is-gapless mega-menus"
+          >
+            <!--Addons/Addons-->
+            <div class="column is-12">
+              <div class="dropdown-item-group">
+                <h4 class="column-heading is-green">
+                  <i class="iconify" data-icon="feather:circle"></i>
+                  <span>Addons</span>
+                </h4>
+
+                <div class="column-content" data-simplebar>
                   <RouterLink
-                    :to="{ name: 'navbar-layouts-list-datatable-4' }"
+                    :to="{ name: 'elements-addons-calendar' }"
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-layout-alt"></i>
+                      <i class="lnil lnil-code"></i>
                     </div>
                     <div class="meta">
-                      <span>Tooltips</span>
+                      <span>V-Calendar</span>
+                    </div>
+                  </RouterLink>
+
+                  <RouterLink
+                    :to="{ name: 'elements-addons-imask-input' }"
+                    class="dropdown-item is-media"
+                  >
+                    <div class="icon">
+                      <i class="lnil lnil-code"></i>
+                    </div>
+                    <div class="meta">
+                      <span>V-IMaskInput</span>
+                    </div>
+                  </RouterLink>
+
+                  <RouterLink
+                    :to="{ name: 'elements-addons-filepond' }"
+                    class="dropdown-item is-media"
+                  >
+                    <div class="icon">
+                      <i class="lnil lnil-code"></i>
+                    </div>
+                    <div class="meta">
+                      <span>V-FilePond</span>
+                    </div>
+                  </RouterLink>
+
+                  <RouterLink
+                    :to="{ name: 'elements-addons-vueform-multiselect' }"
+                    class="dropdown-item is-media"
+                  >
+                    <div class="icon">
+                      <i class="lnil lnil-code"></i>
+                    </div>
+                    <div class="meta">
+                      <span>@vueform/multiselect</span>
+                    </div>
+                  </RouterLink>
+
+                  <RouterLink
+                    :to="{ name: 'elements-addons-vueform-slider' }"
+                    class="dropdown-item is-media"
+                  >
+                    <div class="icon">
+                      <i class="lnil lnil-code"></i>
+                    </div>
+                    <div class="meta">
+                      <span>@vueform/slider</span>
+                    </div>
+                  </RouterLink>
+
+                  <RouterLink
+                    :to="{ name: 'elements-addons-ckeditor' }"
+                    class="dropdown-item is-media"
+                  >
+                    <div class="icon">
+                      <i class="lnil lnil-code"></i>
+                    </div>
+                    <div class="meta">
+                      <span>CKEditor 5</span>
                     </div>
                   </RouterLink>
                 </div>
@@ -273,7 +593,7 @@ const selectedCategory = ref('')
             </div>
           </div>
         </div>
-      </div> -->
+      </div>
     </div>
   </div>
 </template>
