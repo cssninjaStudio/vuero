@@ -46,7 +46,6 @@ onMounted(() => {
 </script>
 
 <template>
-  <!--Finance Dashboard V3-->
   <div class="finance-dashboard sales-dashboard">
     <!--Header-->
     <div class="dashboard-header">

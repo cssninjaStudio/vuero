@@ -23,7 +23,6 @@ import { memberList } from '/@src/data/widgets/table/memberList'
 </script>
 
 <template>
-  <!--Stat Widgets-->
   <div class="columns is-multiline">
     <!--Spark Tile Widgets-->
     <div class="column is-3">

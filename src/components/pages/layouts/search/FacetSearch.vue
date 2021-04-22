@@ -96,7 +96,6 @@ const activeTab = ref<TabId>('all')
 </script>
 
 <template>
-  <!--Search Results-->
   <div class="search-results-wrapper">
     <div class="search-results-header">
       <V-Control icon="feather:search">

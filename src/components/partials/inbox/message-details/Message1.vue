@@ -31,7 +31,6 @@ const {
 </script>
 
 <template>
-  <!-- Message details -->
   <div
     class="inbox-message-details"
     :class="[

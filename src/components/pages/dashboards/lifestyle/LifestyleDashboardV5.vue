@@ -8,7 +8,6 @@ import {
 </script>
 
 <template>
-  <!--Lifestyle Dashboard V5-->
   <div class="lifestyle-dashboard lifestyle-dashboard-v5">
     <div class="dashboard-title is-main">
       <div class="left">

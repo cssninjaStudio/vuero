@@ -5,8 +5,8 @@ import { profitChartOptions } from '/@src/data/dashboards/personal-v1/profitChar
 </script>
 
 <template>
-  <!--Personal Dashboard V1-->
   <div class="personal-dashboard personal-dashboard-v1">
+    <!--Personal Dashboard V1-->
     <!--Header-->
     <div class="dashboard-header">
       <V-Avatar picture="/demo/avatars/8.jpg" size="large" />

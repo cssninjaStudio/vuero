@@ -12,7 +12,6 @@ import { timeline } from '/@src/data/widgets/list/timeline'
 </script>
 
 <template>
-  <!--List Widgets-->
   <div class="columns is-multiline widget-demo-columns half-columns">
     <!--List Widget V1a-->
     <div class="column is-4">

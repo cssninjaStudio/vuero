@@ -13,7 +13,6 @@ import { trendWidgetChartOptions } from '/@src/data/widgets/charts/trendWidgetCh
 </script>
 
 <template>
-  <!--Data Widgets-->
   <div class="columns is-multiline widget-demo-columns">
     <!--Widget Column-->
     <div class="column is-3">

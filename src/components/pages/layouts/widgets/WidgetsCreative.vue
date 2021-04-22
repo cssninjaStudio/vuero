@@ -12,7 +12,6 @@ import { products } from '/@src/data/widgets/ui/productList'
 </script>
 
 <template>
-  <!--Data Widgets-->
   <div class="columns is-multiline widget-demo-columns">
     <div class="column is-3">
       <!--Widget-->

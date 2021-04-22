@@ -64,7 +64,6 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <!--Food Delivery Dashboard-->
   <div class="food-delivery-dashboard">
     <!--Left-->
     <div class="left">

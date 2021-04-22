@@ -45,7 +45,6 @@ const goto = (index: number) => {
 </script>
 
 <template>
-  <!--Banking Dashboard V2-->
   <div class="banking-dashboard banking-dashboard-v2">
     <!--Panel-->
     <div class="dashboard-card is-card-panel">

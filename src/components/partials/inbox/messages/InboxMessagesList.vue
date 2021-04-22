@@ -26,7 +26,6 @@ watchEffect(() => {
 </script>
 
 <template>
-  <!--Message-->
   <div
     class="inbox-message"
     :class="[conversationId === 2 && 'is-selected', unread && 'is-unread']"

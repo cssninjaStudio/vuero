@@ -3,7 +3,6 @@ import { datatableV3 } from '/@src/data/layouts/datatable-v3'
 </script>
 
 <template>
-  <!-- Datatable -->
   <V-SimpleDatatables>
     <thead>
       <tr>

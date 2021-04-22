@@ -8,7 +8,6 @@ const date = ref({
 </script>
 
 <template>
-  <!--Flights Dashboard V1-->
   <div class="business-dashboard flights-dashboard">
     <div class="columns">
       <div class="column is-9">

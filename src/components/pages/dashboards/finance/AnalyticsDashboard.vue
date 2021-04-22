@@ -8,7 +8,6 @@ import { notifications } from '/@src/data/widgets/ui/notificationList'
 </script>
 
 <template>
-  <!--Finance Dashboard V1-->
   <div class="finance-dashboard analytics-dashboard">
     <div class="columns">
       <div class="column is-9">

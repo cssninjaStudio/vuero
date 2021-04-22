@@ -1,5 +1,4 @@
 <template>
-  <!--Notifications Page-->
   <div class="timeline-wrapper">
     <div class="timeline-header"></div>
     <div class="timeline-wrapper-inner">

@@ -3,7 +3,6 @@ import { popovers } from '/@src/data/users/userPopovers'
 </script>
 
 <template>
-  <!--Invoice-->
   <div class="invoice-wrapper">
     <div class="invoice-header">
       <div class="left">

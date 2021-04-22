@@ -1,5 +1,4 @@
 <template>
-  <!-- Simple light footer -->
   <footer class="vuero-footer">
     <div class="container">
       <div class="footer-head">

@@ -19,7 +19,6 @@ const activeTab = ref<TabId>('overview')
 </script>
 
 <template>
-  <!--Lifestyle Dashboard V1-->
   <div class="lifestyle-dashboard lifestyle-dashboard-v1">
     <div class="dashboard-header-wrapper">
       <div class="dashboard-header">

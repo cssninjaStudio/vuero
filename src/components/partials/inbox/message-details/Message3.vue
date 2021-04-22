@@ -31,7 +31,6 @@ const {
 </script>
 
 <template>
-  <!-- Message details -->
   <div
     :class="[
       mobileMessageOpen && selected && 'mobile-active tablet-active',

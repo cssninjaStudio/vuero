@@ -27,7 +27,6 @@ useHead({
 </script>
 
 <template>
-  <!-- Wrapper -->
   <div class="auth-wrapper-inner columns is-gapless">
     <!-- Form section -->
     <div class="column is-5">

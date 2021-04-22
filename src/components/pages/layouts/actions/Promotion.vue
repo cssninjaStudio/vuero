@@ -1,5 +1,4 @@
 <template>
-  <!--Pronotion Page-->
   <div class="promotion-page-wrapper">
     <div class="wrapper-outer">
       <div class="wrapper-inner">

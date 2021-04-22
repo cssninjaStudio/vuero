@@ -8,7 +8,6 @@ import { userStack } from '/@src/data/dashboards/personal-v3/users'
 </script>
 
 <template>
-  <!--Personal Dashboard V3-->
   <div class="personal-dashboard personal-dashboard-v3">
     <div class="columns">
       <div class="column is-8">

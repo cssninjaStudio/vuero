@@ -4,7 +4,6 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
 </script>
 
 <template>
-  <!--Compose panel-->
   <div class="compose-panel">
     <!-- Header -->
     <div class="header-area">

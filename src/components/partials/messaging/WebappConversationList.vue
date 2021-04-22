@@ -20,7 +20,6 @@ const emit = defineEmit(['update:conversationId', 'toggleMobileConversation'])
 </script>
 
 <template>
-  <!--Conversations list-->
   <div
     :class="[mobileConversationListOpen && 'is-active']"
     class="conversation-area"

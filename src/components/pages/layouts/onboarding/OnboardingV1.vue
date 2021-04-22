@@ -1,5 +1,4 @@
 <template>
-  <!--Onboarding V1-->
   <div class="onboarding-wrapper onboarding-v1">
     <div class="title-wrap">
       <p>Looks like you're new here</p>

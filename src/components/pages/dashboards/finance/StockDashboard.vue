@@ -1,5 +1,4 @@
 <template>
-  <!--Finance Dashboard V2-->
   <div class="finance-dashboard stock-dashboard">
     <div class="columns">
       <!--Graph-->

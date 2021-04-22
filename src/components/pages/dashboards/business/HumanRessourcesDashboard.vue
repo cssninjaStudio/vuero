@@ -3,7 +3,6 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
 </script>
 
 <template>
-  <!--Business Dashboard V3-->
   <div class="business-dashboard hr-dashboard">
     <div class="columns">
       <div class="column is-8">

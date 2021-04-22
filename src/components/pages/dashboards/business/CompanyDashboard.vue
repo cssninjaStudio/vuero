@@ -37,7 +37,6 @@ onMounted(async () => {
 </script>
 
 <template>
-  <!--Business Dashboard V2-->
   <div class="business-dashboard company-dashboard">
     <div class="company-header is-dark-card-bordered is-dark-bg-6">
       <div class="header-item is-dark-bordered-12">

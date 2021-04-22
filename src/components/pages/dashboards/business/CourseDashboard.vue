@@ -3,7 +3,6 @@ import { courses, files, students } from '/@src/data/dashboards/course'
 </script>
 
 <template>
-  <!--Business Dashboard V4-->
   <div class="business-dashboard course-dashboard">
     <div class="dashboard-title is-main">
       <div class="left">

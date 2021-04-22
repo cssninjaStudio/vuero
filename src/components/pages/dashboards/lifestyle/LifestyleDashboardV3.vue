@@ -12,7 +12,6 @@ import { followersList } from '/@src/data/widgets/ui/followers'
 </script>
 
 <template>
-  <!--Lifestyle Dashboard V3-->
   <div class="lifestyle-dashboard lifestyle-dashboard-v3">
     <div class="illustration-header">
       <div class="header-image">

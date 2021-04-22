@@ -26,7 +26,6 @@ const onSave = async () => {
 </script>
 
 <template>
-  <!--Form-->
   <div class="account-box is-form is-footerless">
     <div class="form-head stuck-header" :class="[isScrolling && 'is-stuck']">
       <div class="form-head-inner">

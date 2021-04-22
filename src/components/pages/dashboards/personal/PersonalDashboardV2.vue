@@ -14,8 +14,8 @@ const democheck = ref(['value_2'])
 </script>
 
 <template>
-  <!--Personal Dashboard V2-->
   <div class="personal-dashboard personal-dashboard-v2">
+    <!--Personal Dashboard V2-->
     <div class="columns is-multiline">
       <div class="column is-12">
         <div class="dashboard-header">

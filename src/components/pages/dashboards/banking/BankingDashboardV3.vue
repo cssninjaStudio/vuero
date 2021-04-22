@@ -6,7 +6,6 @@ import { popovers } from '/@src/data/users/userPopovers'
 </script>
 
 <template>
-  <!--Banking Dashboard V3-->
   <div class="banking-dashboard banking-dashboard-v3">
     <!--Header-->
     <div class="dashboard-header">

@@ -49,7 +49,6 @@ const randomCard = () => {
 </script>
 
 <template>
-  <!--SaaS Billing-->
   <div class="saas-billing-wrapper">
     <div class="plans-wrapper">
       <div class="left">

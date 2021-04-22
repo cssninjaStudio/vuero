@@ -1,5 +1,4 @@
 <template>
-  <!--Profile Settings-->
   <div class="profile-wrapper">
     <div class="profile-header has-text-centered">
       <V-Avatar

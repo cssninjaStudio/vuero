@@ -25,7 +25,6 @@ const confirm = async () => {
 </script>
 
 <template>
-  <!--Confirm Account-->
   <div class="confirm-account-wrapper">
     <div class="wrapper-inner">
       <div class="action-box">

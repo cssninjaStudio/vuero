@@ -25,7 +25,6 @@ const accept = async () => {
 </script>
 
 <template>
-  <!--Action Page-->
   <div class="action-page-wrapper action-page-v2">
     <div class="wrapper-outer">
       <div class="wrapper-inner">

@@ -27,7 +27,6 @@ useHead({
 </script>
 
 <template>
-  <!-- Wrapper -->
   <div class="auth-wrapper-inner columns is-gapless">
     <!-- Image section (hidden on mobile) -->
     <div

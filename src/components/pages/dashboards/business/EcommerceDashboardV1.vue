@@ -27,7 +27,6 @@ import {
 </script>
 
 <template>
-  <!--Ecommerce Dashboard V1-->
   <div class="ecommerce-dashboard ecommerce-dashboard-v1">
     <!--Header-->
     <div class="dashboard-header">

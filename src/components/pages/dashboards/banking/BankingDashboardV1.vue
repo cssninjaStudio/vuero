@@ -10,7 +10,6 @@ import {
 </script>
 
 <template>
-  <!--Banking Dashboard V1-->
   <div class="banking-dashboard banking-dashboard-v1">
     <div class="columns is-multiline">
       <!--Credit Cards-->

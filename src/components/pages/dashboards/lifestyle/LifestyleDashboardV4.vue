@@ -1,5 +1,4 @@
 <template>
-  <!--Lifestyle Dashboard V4-->
   <div class="lifestyle-dashboard lifestyle-dashboard-v4">
     <div class="columns">
       <div class="column is-8">

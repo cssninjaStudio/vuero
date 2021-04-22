@@ -9,7 +9,6 @@ import {
 </script>
 
 <template>
-  <!--Lifestyle Dashboard V2-->
   <div class="lifestyle-dashboard lifestyle-dashboard-v2">
     <div class="dashboard-title is-main">
       <div class="left">

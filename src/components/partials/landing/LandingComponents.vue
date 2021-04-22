@@ -17,7 +17,6 @@ defineProps({
 </script>
 
 <template>
-  <!--Elements-->
   <div
     id="demo-elements"
     :class="[activeTab === 'elements' && 'is-active']"
