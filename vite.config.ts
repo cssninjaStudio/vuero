@@ -31,11 +31,11 @@ export default defineConfig({
     alias: [
       {
         find: '/~/',
-        replacement: `${path.resolve(__dirname, 'src', 'assets')}/`,
+        replacement: `/src/assets/`,
       },
       {
         find: '/@src/',
-        replacement: `${path.resolve(__dirname, 'src')}/`,
+        replacement: `/src/`,
       },
     ],
   },

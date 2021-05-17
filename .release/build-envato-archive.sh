@@ -21,6 +21,9 @@ set -xe
 
 cp .release/documentation.pdf .
 
+# TODO: replace demo images url
+# from /demo/([^'"]+) to https://vuero.cssninja.io/demo/$1
+
 # zip sources template-${PROJECT}-${TAG}.zip
 zip -r template-${PROJECT}-${TAG}.zip . \
   -x "*.zip" \
