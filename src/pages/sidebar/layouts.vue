@@ -3,7 +3,7 @@ import { onMounted, watch } from 'vue'
 import { useRoute } from 'vue-router'
 
 import { activeSidebar } from '/@src/state/activeSidebarState'
-import { sidebarLayout, sidebarLayoutId } from '/@src/state/sidebarLayoutState'
+import { sidebarTheme } from '/@src/state/sidebarLayoutState'
 
 const route = useRoute()
 
@@ -20,7 +20,7 @@ watch(
 </script>
 
 <template>
-  <component :is="sidebarLayout" :class="[sidebarLayoutId]">
+  <Sidebar :theme="sidebarTheme">
     <LayoutsSidebar />
     <LayoutsMobileSubsidebar />
 
@@ -39,5 +39,5 @@ watch(
         </div>
       </div>
     </div>
-  </component>
+  </Sidebar>
 </template>

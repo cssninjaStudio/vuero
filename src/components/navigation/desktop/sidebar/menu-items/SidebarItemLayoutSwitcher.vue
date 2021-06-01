@@ -2,7 +2,7 @@
 import { ref, computed } from 'vue'
 import { useRoute } from 'vue-router'
 
-import { sidebarLayoutId, setLayout } from '/@src/state/sidebarLayoutState'
+import { sidebarTheme } from '/@src/state/sidebarLayoutState'
 
 const standardOpen = ref(false)
 const route = useRoute()
