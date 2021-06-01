@@ -37,10 +37,6 @@ body {
   }
 }
 
-.app-wrapper {
-  overflow: hidden;
-}
-
 .app-overlay {
   position: fixed;
   top: 0;
@@ -69,9 +65,10 @@ body {
 
 .view-wrapper {
   &.has-top-nav {
-    //padding-top: 80px;
+    margin-top: -30px;
     margin-left: 0 !important;
     width: 100% !important;
+    padding-top: 30px;
 
     .is-stuck {
       position: fixed;
