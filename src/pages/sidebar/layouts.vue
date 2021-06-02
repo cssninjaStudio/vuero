@@ -20,7 +20,7 @@ watch(
 </script>
 
 <template>
-  <Sidebar :theme="sidebarTheme">
+  <SidebarLayout :theme="sidebarTheme">
     <LayoutsSidebar />
     <LayoutsMobileSubsidebar />
 
@@ -39,5 +39,5 @@ watch(
         </div>
       </div>
     </div>
-  </Sidebar>
+  </SidebarLayout>
 </template>

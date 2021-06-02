@@ -24,7 +24,7 @@ useHead({
 </script>
 
 <template>
-  <SidebarColorCurvedLayout>
+  <SidebarLayout theme="color-curved">
     <GenericSidebar />
     <GenericMobileSubsidebar />
 
@@ -74,5 +74,5 @@ useHead({
         </div>
       </div>
     </div>
-  </SidebarColorCurvedLayout>
+  </SidebarLayout>
 </template>

@@ -4,7 +4,7 @@ import { useHead } from '@vueuse/head'
 import { computed, onMounted, ref, watchEffect } from 'vue'
 
 import { activeSidebar, toggleSidebar } from '/@src/state/activeSidebarState'
-import { sidebarLayout, sidebarLayoutId } from '/@src/state/sidebarLayoutState'
+import { sidebarTheme } from '/@src/state/sidebarLayoutState'
 
 import useDropdown from '/@src/composable/useDropdown'
 import sleep from '/@src/utils/sleep'
@@ -105,7 +105,7 @@ watchEffect(onConversationChanged)
 </script>
 
 <template>
-  <component :is="sidebarLayout" :class="[sidebarLayoutId]">
+  <SidebarLayout :theme="sidebarTheme">
     <MessagesSidebar
       :conversations="conversations"
       :selected-conversation-id="selectedConversationId"
@@ -648,7 +648,7 @@ watchEffect(onConversationChanged)
     >
       <i class="iconify" data-icon="feather:chevron-left"></i>
     </a>
-  </component>
+  </SidebarLayout>
 </template>
 
 <style lang="scss">

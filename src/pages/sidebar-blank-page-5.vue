@@ -25,7 +25,7 @@ useHead({
 </script>
 
 <template>
-  <SidebarLabelsLayout>
+  <SidebarLayout theme="labels">
     <GenericSidebar />
     <GenericMobileSubsidebar />
 
@@ -75,5 +75,5 @@ useHead({
         </div>
       </div>
     </div>
-  </SidebarLabelsLayout>
+  </SidebarLayout>
 </template>

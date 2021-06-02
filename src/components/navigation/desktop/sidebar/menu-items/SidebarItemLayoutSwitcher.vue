@@ -43,8 +43,13 @@ const hasDynamicLayout = computed(() => {
             <a
               href="#"
               class="layout-item"
-              :class="[sidebarLayoutId === 'sidebar-default' && 'is-active']"
-              @click="setLayout('sidebar-default')"
+              :class="[sidebarTheme === 'default' && 'is-active']"
+              @click="
+                () => {
+                  sidebarTheme = 'default'
+                  standardOpen = false
+                }
+              "
             >
               <img
                 class="light-image-block"
@@ -67,8 +72,13 @@ const hasDynamicLayout = computed(() => {
             <a
               href="#"
               class="layout-item"
-              :class="[sidebarLayoutId === 'sidebar-color' && 'is-active']"
-              @click="setLayout('sidebar-color')"
+              :class="[sidebarTheme === 'color' && 'is-active']"
+              @click="
+                () => {
+                  sidebarTheme = 'color'
+                  standardOpen = false
+                }
+              "
             >
               <img
                 class="light-image-block"
@@ -91,8 +101,13 @@ const hasDynamicLayout = computed(() => {
             <a
               href="#"
               class="layout-item"
-              :class="[sidebarLayoutId === 'sidebar-curved' && 'is-active']"
-              @click="setLayout('sidebar-curved')"
+              :class="[sidebarTheme === 'curved' && 'is-active']"
+              @click="
+                () => {
+                  sidebarTheme = 'curved'
+                  standardOpen = false
+                }
+              "
             >
               <img
                 class="light-image-block"
@@ -115,10 +130,13 @@ const hasDynamicLayout = computed(() => {
             <a
               href="#"
               class="layout-item"
-              :class="[
-                sidebarLayoutId === 'sidebar-color-curved' && 'is-active',
-              ]"
-              @click="setLayout('sidebar-color-curved')"
+              :class="[sidebarTheme === 'color-curved' && 'is-active']"
+              @click="
+                () => {
+                  sidebarTheme = 'color-curved'
+                  standardOpen = false
+                }
+              "
             >
               <img
                 class="light-image-block"
@@ -141,8 +159,13 @@ const hasDynamicLayout = computed(() => {
             <a
               href="#"
               class="layout-item"
-              :class="[sidebarLayoutId === 'sidebar-labels' && 'is-active']"
-              @click="setLayout('sidebar-labels')"
+              :class="[sidebarTheme === 'labels' && 'is-active']"
+              @click="
+                () => {
+                  sidebarTheme = 'labels'
+                  standardOpen = false
+                }
+              "
             >
               <img
                 class="light-image-block"
@@ -165,10 +188,13 @@ const hasDynamicLayout = computed(() => {
             <a
               href="#"
               class="layout-item"
-              :class="[
-                sidebarLayoutId === 'sidebar-labels-hover' && 'is-active',
-              ]"
-              @click="setLayout('sidebar-labels-hover')"
+              :class="[sidebarTheme === 'labels-hover' && 'is-active']"
+              @click="
+                () => {
+                  sidebarTheme = 'labels-hover'
+                  standardOpen = false
+                }
+              "
             >
               <img
                 class="light-image-block"
@@ -191,8 +217,13 @@ const hasDynamicLayout = computed(() => {
             <a
               href="#"
               class="layout-item"
-              :class="[sidebarLayoutId === 'sidebar-float' && 'is-active']"
-              @click="setLayout('sidebar-float')"
+              :class="[sidebarTheme === 'float' && 'is-active']"
+              @click="
+                () => {
+                  sidebarTheme = 'float'
+                  standardOpen = false
+                }
+              "
             >
               <img
                 class="light-image-block"

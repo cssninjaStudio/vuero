@@ -2,7 +2,7 @@
 import { onMounted } from 'vue'
 
 import { activeSidebar } from '/@src/state/activeSidebarState'
-import { sidebarLayout, sidebarLayoutId } from '/@src/state/sidebarLayoutState'
+import { sidebarTheme } from '/@src/state/sidebarLayoutState'
 
 onMounted(() => {
   activeSidebar.value = 'components'
@@ -10,7 +10,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <component :is="sidebarLayout" :class="[sidebarLayoutId]">
+  <SidebarLayout :theme="sidebarTheme">
     <ComponentsSidebar />
     <ComponentsMobileSubsidebar />
 
@@ -29,7 +29,7 @@ onMounted(() => {
         </div>
       </div>
     </div>
-  </component>
+  </SidebarLayout>
 </template>
 
 <style lang="scss">
