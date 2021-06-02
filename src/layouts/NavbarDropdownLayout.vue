@@ -2,11 +2,11 @@
 import { PropType } from 'vue'
 import { defineProps } from 'vue'
 
-type NavbarCleanTheme = 'default' | 'center' | 'fade'
+type NavbarDropdownTheme = 'default' | 'colored'
 
 const props = defineProps({
   theme: {
-    type: String as PropType<NavbarCleanTheme>,
+    type: String as PropType<NavbarDropdownTheme>,
     default: 'default',
   },
 })
@@ -19,18 +19,10 @@ const props = defineProps({
     <MobileNavbar />
     <MobileSidebarMain />
 
-    <NavbarClean :theme="props.theme" />
+    <NavbarDropdown :theme="props.theme" />
     <LanguagesPanel />
     <ActivityPanel />
 
     <slot></slot>
   </div>
 </template>
-
-<style lang="scss" scoped>
-.navbar-layout {
-  ::v-deep(.view-wrapper.has-top-nav .is-stuck) {
-    top: 100px;
-  }
-}
-</style>

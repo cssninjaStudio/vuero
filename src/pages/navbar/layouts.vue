@@ -3,7 +3,11 @@ import { onMounted, watch } from 'vue'
 import { useRoute } from 'vue-router'
 
 import { activeSidebar } from '/@src/state/activeSidebarState'
-import { navbarLayout, navbarLayoutId } from '/@src/state/navbarLayoutState'
+import {
+  navbarLayout,
+  navbarLayoutId,
+  navbarLayoutTheme,
+} from '/@src/state/navbarLayoutState'
 
 const route = useRoute()
 
@@ -20,7 +24,7 @@ watch(
 </script>
 
 <template>
-  <component :is="navbarLayout" :class="[navbarLayoutId]">
+  <component :is="navbarLayout" :theme="navbarLayoutTheme">
     <LayoutsMobileSubsidebar />
 
     <!-- Content Wrapper -->

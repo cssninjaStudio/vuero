@@ -1,11 +1,21 @@
 <script setup lang="ts">
-import { computed, watch, ref } from 'vue'
+import type { PropType } from 'vue'
+import { computed, watch, ref, defineProps } from 'vue'
 import { useRoute } from 'vue-router'
 import { popovers } from '/@src/data/users/userPopovers'
 
 import useDropdown from '/@src/composable/useDropdown'
 import { activeSubnav, toggleSubnav } from '/@src/state/activeNavbarState'
 import { useWindowScroll } from '@vueuse/core'
+
+type NavbarTheme = 'default' | 'colored' | 'fade'
+
+const props = defineProps({
+  theme: {
+    type: String as PropType<NavbarTheme>,
+    default: 'default',
+  },
+})
 
 const route = useRoute()
 const { dropdownElement, isOpen, toggle } = useDropdown()
@@ -38,7 +48,14 @@ watch(
 </script>
 
 <template>
-  <div :class="[isScrolling && 'is-scrolled']" class="navbar-navbar">
+  <div
+    class="navbar-navbar"
+    :class="[
+      isScrolling && 'is-scrolled',
+      props.theme === 'fade' && 'is-transparent',
+      props.theme === 'colored' && 'is-colored',
+    ]"
+  >
     <div class="navbar-navbar-inner">
       <div class="left">
         <RouterLink :to="{ name: 'index' }" class="brand">
@@ -101,6 +118,7 @@ watch(
             <span>Search</span>
           </a>
         </div>
+
         <div
           class="centered-search"
           :class="[activeSubnav !== 'search' && 'is-hidden']"
@@ -116,7 +134,7 @@ watch(
               <div class="form-icon">
                 <i class="iconify" data-icon="feather:search"></i>
               </div>
-              <div class="form-icon is-right" @click="activeSubnav = 'closed'">
+              <div class="form-icon is-right" @click="toggleSubnav('search')">
                 <i class="iconify" data-icon="feather:x"></i>
               </div>
               <div

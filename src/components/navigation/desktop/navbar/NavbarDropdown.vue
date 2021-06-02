@@ -1,14 +1,25 @@
 <script setup lang="ts">
-import { useWindowScroll } from '@vueuse/core'
-import { computed, watch, ref } from 'vue'
+import type { PropType } from 'vue'
+import { computed, watch, ref, defineProps } from 'vue'
 import { useRoute } from 'vue-router'
 import { popovers } from '/@src/data/users/userPopovers'
 
 import useDropdown from '/@src/composable/useDropdown'
 import { activeSubnav, toggleSubnav } from '/@src/state/activeNavbarState'
+import { useWindowScroll } from '@vueuse/core'
+
+type NavbarDropdownTheme = 'default' | 'colored'
+
+const props = defineProps({
+  theme: {
+    type: String as PropType<NavbarDropdownTheme>,
+    default: 'default',
+  },
+})
 
 const route = useRoute()
 const { dropdownElement, isOpen, toggle } = useDropdown()
+const { y } = useWindowScroll()
 
 const filter = ref('')
 const filteredData = computed(() => {
@@ -24,8 +35,6 @@ const filteredData = computed(() => {
   })
 })
 
-const { y } = useWindowScroll()
-
 const isScrolling = computed(() => {
   return y.value > 30
 })
@@ -40,8 +49,11 @@ watch(
 
 <template>
   <div
-    :class="[isScrolling && 'is-scrolled']"
-    class="navbar-navbar is-transparent"
+    :class="[
+      isScrolling && 'is-scrolled',
+      props.theme === 'colored' && 'is-colored',
+    ]"
+    class="navbar-navbar"
   >
     <div class="navbar-navbar-inner">
       <div class="left">
@@ -50,62 +62,36 @@ watch(
         </RouterLink>
         <div class="separator"></div>
         <ProjectsQuickDropdown />
-        <h1 class="title is-5">Welcome</h1>
+        <h1 id="navbar-page-title" class="title is-5">Welcome</h1>
       </div>
       <div class="center">
         <div
-          class="centered-links"
+          id="navbar-navbar-menu"
+          class="centered-drops"
           :class="[activeSubnav === 'search' && 'is-hidden']"
         >
-          <a
-            class="centered-link centered-link-toggle"
-            :class="[
-              (activeSubnav === 'home' ||
-                route.path.startsWith('/navbar/dashboards')) &&
-                'is-active',
-            ]"
-            @click="toggleSubnav('home')"
-          >
-            <i class="iconify" data-icon="feather:activity"></i>
-            <span>Dashboards</span>
-          </a>
-          <a
-            class="centered-link centered-link-toggle"
-            :class="[
-              (activeSubnav === 'layouts' ||
-                route.path.startsWith('/navbar/layouts')) &&
-                'is-active',
-            ]"
-            @click="toggleSubnav('layouts')"
-          >
-            <i class="iconify" data-icon="feather:grid"></i>
-            <span>Layouts</span>
-          </a>
-          <a
-            class="centered-link centered-link-toggle"
-            :class="[activeSubnav === 'elements' && 'is-active']"
-            @click="toggleSubnav('elements')"
-          >
-            <i class="iconify" data-icon="feather:box"></i>
-            <span>Elements</span>
-          </a>
-          <a
-            class="centered-link centered-link-toggle"
-            :class="[activeSubnav === 'components' && 'is-active']"
-            @click="toggleSubnav('components')"
-          >
-            <i class="iconify" data-icon="feather:cpu"></i>
-            <span>Components</span>
-          </a>
-          <a
-            class="centered-link centered-link-search"
-            @click="toggleSubnav('search')"
-          >
-            <i class="iconify" data-icon="feather:search"></i>
-            <span>Search</span>
-          </a>
+          <div class="centered-drop">
+            <NavbarDashboardsDropdown />
+          </div>
+          <div class="centered-drop">
+            <NavbarLayoutsDropdown />
+          </div>
+          <div class="centered-drop">
+            <NavbarElementsDropdown />
+          </div>
+          <div class="centered-drop">
+            <NavbarComponentsDropdown />
+          </div>
+          <div class="centered-button centered-link-search">
+            <button class="button" @click="toggleSubnav('search')">
+              <span class="icon is-small">
+                <i class="iconify" data-icon="feather:search"></i>
+              </span>
+            </button>
+          </div>
         </div>
         <div
+          id="navbar-navbar-search"
           class="centered-search"
           :class="[activeSubnav !== 'search' && 'is-hidden']"
         >
@@ -114,13 +100,17 @@ watch(
               <input
                 v-model="filter"
                 type="text"
-                class="input is-rounded"
+                class="input is-rounded search-input"
                 placeholder="Search records..."
               />
               <div class="form-icon">
                 <i class="iconify" data-icon="feather:search"></i>
               </div>
-              <div class="form-icon is-right" @click="activeSubnav = 'closed'">
+              <div
+                id="navbar-navbar-search-close"
+                class="form-icon is-right"
+                @click="toggleSubnav('search')"
+              >
                 <i class="iconify" data-icon="feather:x"></i>
               </div>
               <div
@@ -241,25 +231,6 @@ watch(
         </div>
       </div>
     </div>
-  </div>
-
-  <div
-    :class="[
-      activeSubnav !== 'closed' && activeSubnav !== 'search' && 'is-active',
-    ]"
-    class="navbar-subnavbar"
-  >
-    <!--src/partials/navbar/navbar/menus/-->
-    <DashboardsWebappMenu />
-
-    <!--src/partials/navbar/navbar/menus/-->
-    <LayoutsWebappMenu />
-
-    <!--src/partials/navbar/navbar/menus/-->
-    <ElementsWebappMenu />
-
-    <!--src/partials/navbar/navbar/menus/-->
-    <ComponentsWebappMenu />
   </div>
 </template>
 

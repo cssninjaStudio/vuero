@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { computed, PropType } from 'vue'
-import { defineProps } from 'vue'
+import type { PropType } from 'vue'
+import { computed, defineProps } from 'vue'
 import { activeSidebar } from '/@src/state/activeSidebarState'
 
 type SidebarTheme =

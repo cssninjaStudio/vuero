@@ -1,11 +1,21 @@
 <script setup lang="ts">
-import { computed, watch, ref } from 'vue'
+import type { PropType } from 'vue'
+import { computed, watch, ref, defineProps } from 'vue'
 import { useRoute } from 'vue-router'
 import { popovers } from '/@src/data/users/userPopovers'
 
 import useDropdown from '/@src/composable/useDropdown'
 import { activeSubnav, toggleSubnav } from '/@src/state/activeNavbarState'
 import { useWindowScroll } from '@vueuse/core'
+
+type NavbarCleanTheme = 'default' | 'center' | 'fade'
+
+const props = defineProps({
+  theme: {
+    type: String as PropType<NavbarCleanTheme>,
+    default: 'default',
+  },
+})
 
 const route = useRoute()
 const { dropdownElement, isOpen, toggle } = useDropdown()
@@ -59,7 +69,13 @@ watch(
 </script>
 
 <template>
-  <div class="navbar-navbar-clean">
+  <div
+    class="navbar-navbar-clean"
+    :class="[
+      isScrolling && 'is-scrolled',
+      props.theme === 'fade' && 'is-transparent',
+    ]"
+  >
     <div class="navbar-navbar-inner">
       <div class="left">
         <RouterLink :to="{ name: 'index' }" class="brand">
@@ -206,8 +222,26 @@ watch(
         </div>
       </div>
     </div>
-    <div class="navbar-navbar-lower is-between">
-      <div class="left">
+    <div
+      class="navbar-navbar-lower"
+      :class="[
+        props.theme === 'default' && 'is-between',
+        props.theme === 'center' && 'is-centered',
+        props.theme === 'fade' && 'is-centered',
+      ]"
+    >
+      <div v-if="props.theme !== 'default'" class="left">
+        <div class="welcome-text">
+          <span>February 22, 2021</span>
+        </div>
+      </div>
+      <div
+        :class="[
+          props.theme === 'default' && 'left',
+          props.theme === 'center' && 'center',
+          props.theme === 'fade' && 'center',
+        ]"
+      >
         <div class="buttons">
           <a class="button">Dashboard</a>
           <a class="button">Projects</a>
