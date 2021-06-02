@@ -13,7 +13,7 @@ useHead({
 </script>
 
 <template>
-  <MinimalLightLayout>
+  <MinimalLayout theme="light">
     <div class="landing-page-wrapper">
       <!-- Hero and Navbar -->
       <div id="vuero-landing" class="hero is-fullheight rounded-hero is-active">
@@ -790,7 +790,7 @@ useHead({
         </a>
       </div>
     </div>
-  </MinimalLightLayout>
+  </MinimalLayout>
 </template>
 
 <style lang="scss">
