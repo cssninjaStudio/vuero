@@ -1,8 +1,15 @@
 <script setup lang="ts">
+import { defineEmit, defineProps } from 'vue'
 import useDropdown from '/@src/composable/useDropdown'
-import { isMobileSidebarOpen } from '/@src/state/mobileSidebarState'
 
 const { dropdownElement, isOpen, toggle } = useDropdown()
+const props = defineProps({
+  isOpen: {
+    type: Boolean,
+    default: false,
+  },
+})
+const emit = defineEmit(['toggle'])
 </script>
 
 <template>
@@ -17,8 +24,8 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
         <div class="brand-start">
           <div
             class="navbar-burger"
-            :class="[isMobileSidebarOpen && 'is-active']"
-            @click="isMobileSidebarOpen = !isMobileSidebarOpen"
+            :class="[props.isOpen && 'is-active']"
+            @click="emit('toggle')"
           >
             <span></span>
             <span></span>
@@ -31,96 +38,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
         </RouterLink>
 
         <div class="brand-end">
-          <NotificationsWidgetMobile />
-
-          <div
-            ref="dropdownElement"
-            :class="[isOpen && 'is-active']"
-            class="dropdown is-right is-spaced dropdown-trigger user-dropdown"
-          >
-            <div class="is-trigger" aria-haspopup="true" @click="toggle">
-              <div class="profile-avatar">
-                <img
-                  class="avatar"
-                  src="/demo/avatars/8.jpg"
-                  alt=""
-                  @error.once="
-                    $event.target.src = 'https://via.placeholder.com/150x150'
-                  "
-                />
-              </div>
-            </div>
-            <div class="dropdown-menu" role="menu">
-              <div class="dropdown-content">
-                <div class="dropdown-head">
-                  <div class="v-avatar is-large">
-                    <img
-                      class="avatar"
-                      src="/demo/avatars/8.jpg"
-                      alt=""
-                      @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/150x150'
-                      "
-                    />
-                  </div>
-                  <div class="meta">
-                    <span>Erik Kovalsky</span>
-                    <span>Product Manager</span>
-                  </div>
-                </div>
-                <a href="#" class="dropdown-item is-media">
-                  <div class="icon">
-                    <i class="lnil lnil-user-alt"></i>
-                  </div>
-                  <div class="meta">
-                    <span>Profile</span>
-                    <span>View your profile</span>
-                  </div>
-                </a>
-                <hr class="dropdown-divider" />
-                <a href="#" class="dropdown-item is-media">
-                  <div class="icon">
-                    <i class="lnil lnil-briefcase"></i>
-                  </div>
-                  <div class="meta">
-                    <span>Projects</span>
-                    <span>All my projects</span>
-                  </div>
-                </a>
-                <a href="#" class="dropdown-item is-media">
-                  <div class="icon">
-                    <i class="lnil lnil-users-alt"></i>
-                  </div>
-                  <div class="meta">
-                    <span>Team</span>
-                    <span>Manage your team</span>
-                  </div>
-                </a>
-                <hr class="dropdown-divider" />
-                <a href="#" class="dropdown-item is-media">
-                  <div class="icon">
-                    <i class="lnil lnil-cog"></i>
-                  </div>
-                  <div class="meta">
-                    <span>Settings</span>
-                    <span>Account settings</span>
-                  </div>
-                </a>
-                <hr class="dropdown-divider" />
-                <div class="dropdown-item is-button">
-                  <button
-                    class="button v-button is-primary is-raised is-fullwidth logout-button"
-                  >
-                    <span class="icon is-small">
-                      <i class="iconify" data-icon="feather:log-out"></i>
-                    </span>
-                    <span>Logout</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
+          <slot></slot>
         </div>
       </div>
     </div>
@@ -128,8 +46,8 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_variables.scss';
-@import '../../../../scss/abstracts/_mixins.scss';
+@import '../../../scss/abstracts/_variables.scss';
+@import '../../../scss/abstracts/_mixins.scss';
 
 /* ==========================================================================
 1. Mobile Navbar

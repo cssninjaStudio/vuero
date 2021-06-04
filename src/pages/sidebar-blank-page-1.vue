@@ -27,7 +27,6 @@ useHead({
 <template>
   <SidebarLayout>
     <GenericSidebar />
-    <GenericMobileSubsidebar />
 
     <!-- Content Wrapper -->
     <div

@@ -20,8 +20,6 @@ useHead({
 
 <template>
   <NavbarLayout>
-    <GenericMobileSubsidebar />
-
     <!-- Content Wrapper -->
     <div class="view-wrapper has-top-nav">
       <div class="page-content-wrapper">

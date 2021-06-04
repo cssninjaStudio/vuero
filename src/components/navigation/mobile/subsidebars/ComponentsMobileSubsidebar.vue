@@ -4,10 +4,7 @@ import { activeSidebar } from '/@src/state/activeSidebarState'
 </script>
 
 <template>
-  <div
-    :class="[isMobileSidebarOpen && 'is-active']"
-    class="mobile-subsidebar is-activity"
-  >
+  <div class="mobile-subsidebar is-active is-activity">
     <div class="inner">
       <div class="sidebar-title">
         <h3>Components</h3>
@@ -305,6 +302,6 @@ import { activeSidebar } from '/@src/state/activeSidebarState'
 </template>
 
 <style lang="scss">
-@import '../../../../../scss/abstracts/_variables.scss';
-@import '../../../../../scss/layout/_sidebar-mobile.scss';
+@import '../../../../scss/abstracts/_variables.scss';
+@import '../../../../scss/layout/_sidebar-mobile.scss';
 </style>

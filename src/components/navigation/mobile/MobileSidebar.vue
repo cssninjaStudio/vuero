@@ -1,71 +1,38 @@
 <script setup lang="ts">
-import { isMobileSidebarOpen } from '/@src/state/mobileSidebarState'
-import { activePanel } from '/@src/state/activePanelState'
+import { defineProps } from 'vue'
+
+const props = defineProps({
+  isOpen: {
+    type: Boolean,
+    default: false,
+  },
+})
 </script>
 
 <template>
-  <div
-    :class="[isMobileSidebarOpen && 'is-active']"
-    class="mobile-main-sidebar"
-  >
+  <div :class="[props.isOpen && 'is-active']" class="mobile-main-sidebar">
     <div class="inner">
       <ul class="icon-side-menu">
-        <li>
-          <RouterLink
-            id="home-sidebar-menu-mobile"
-            :to="{ name: 'sidebar-dashboards' }"
-          >
-            <i class="iconify" data-icon="feather:activity"></i>
-          </RouterLink>
-        </li>
-        <li>
-          <RouterLink id="layouts-sidebar-menu-mobile" :to="{ name: 'navbar' }">
-            <i class="iconify" data-icon="feather:grid"></i>
-          </RouterLink>
-        </li>
-        <li>
-          <RouterLink
-            id="elements-sidebar-menu-mobile"
-            :to="{ name: 'elements' }"
-          >
-            <i class="iconify" data-icon="feather:box"></i>
-          </RouterLink>
-        </li>
-        <li>
-          <RouterLink
-            id="components-sidebar-menu-mobile"
-            :to="{ name: 'components' }"
-          >
-            <i class="iconify" data-icon="feather:cpu"></i>
-          </RouterLink>
-        </li>
-        <li>
-          <RouterLink id="open-messages-mobile" :to="{ name: 'messaging-v2' }">
-            <i class="iconify" data-icon="feather:message-circle"></i>
-          </RouterLink>
-        </li>
+        <slot name="links">
+          <li>
+            <a href="/">
+              <i class="iconify" data-icon="feather:activity"></i>
+            </a>
+          </li>
+        </slot>
       </ul>
 
       <ul class="bottom-icon-side-menu">
-        <li>
-          <a @click="activePanel = 'search'">
-            <i class="iconify" data-icon="feather:search"></i>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="iconify" data-icon="feather:settings"></i>
-          </a>
-        </li>
+        <slot name="bottom-links"></slot>
       </ul>
     </div>
   </div>
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_variables.scss';
-@import '../../../../scss/layout/_sidebar.scss';
-@import '../../../../scss/layout/_sidebar-mobile.scss';
+@import '../../../scss/abstracts/_variables.scss';
+@import '../../../scss/layout/_sidebar.scss';
+@import '../../../scss/layout/_sidebar-mobile.scss';
 
 /* ==========================================================================
 1. Mobile Sidebar

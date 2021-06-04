@@ -22,7 +22,6 @@ watch(
 <template>
   <SidebarLayout :theme="sidebarTheme">
     <GenericSidebar />
-    <GenericMobileSubsidebar />
 
     <!-- Content Wrapper -->
     <div

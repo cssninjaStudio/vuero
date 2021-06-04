@@ -12,7 +12,6 @@ onMounted(() => {
 <template>
   <SidebarLayout :theme="sidebarTheme">
     <ElementsSidebar />
-    <ElementsMobileSubsidebar />
 
     <!-- Content Wrapper -->
     <div

@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import type { InputMask } from 'imask'
-import { onUnmounted, PropType } from 'vue'
+import type { PropType } from 'vue'
 import IMask from 'imask'
-import { ref, watch, defineProps, defineEmit } from 'vue'
+import { ref, watch, defineProps, defineEmit, onUnmounted } from 'vue'
 
 const inputElement = ref<HTMLElement | null>(null)
 let inputMask: InputMask<any> | undefined

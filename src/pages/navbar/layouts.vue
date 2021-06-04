@@ -25,8 +25,6 @@ watch(
 
 <template>
   <component :is="navbarLayout" :theme="navbarLayoutTheme">
-    <LayoutsMobileSubsidebar />
-
     <!-- Content Wrapper -->
     <div
       class="view-wrapper has-top-nav"

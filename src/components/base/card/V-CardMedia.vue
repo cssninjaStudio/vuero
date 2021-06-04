@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { ref, onUpdated, PropType } from 'vue'
-import { defineProps, useContext } from 'vue'
+import type { PropType } from 'vue'
+import { ref, onUpdated, defineProps, useContext } from 'vue'
 
 type MediaFormat = '4by3' | '16by9'
 

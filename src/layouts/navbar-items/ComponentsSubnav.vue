@@ -1,16 +1,12 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { activeSubnav } from '/@src/state/activeNavbarState'
 
 type TabId = 'display' | 'display' | 'plugins'
 const activeTab = ref<TabId>('display')
 </script>
 
 <template>
-  <div
-    :class="[activeSubnav === 'components' && 'is-active']"
-    class="navbar-subnavbar-inner tabs-wrapper"
-  >
+  <div class="navbar-subnavbar-inner tabs-wrapper">
     <div class="tabs-inner">
       <div class="tabs is-centered is-4">
         <ul>
@@ -316,8 +312,8 @@ const activeTab = ref<TabId>('display')
 </template>
 
 <style lang="scss">
-@import '../../../../../scss/abstracts/_variables.scss';
-@import '../../../../../scss/abstracts/_mixins.scss';
-@import '../../../../../scss/layout/_navbar.scss';
-@import '../../../../../scss/layout/_responsive.scss';
+@import '../../scss/abstracts/_variables.scss';
+@import '../../scss/abstracts/_mixins.scss';
+@import '../../scss/layout/_navbar.scss';
+@import '../../scss/layout/_responsive.scss';
 </style>

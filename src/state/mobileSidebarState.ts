@@ -4,7 +4,7 @@
  *
  * We can import and set isMobileSidebarOpen anywhere in our project
  * @see /src/components/navigation/mobile/navbar/MobileNavbar.vue
- * @see /src/components/navigation/mobile/sidebar/MobileSidebarMain.vue
+ * @see /src/components/navigation/mobile/sidebar/MobileSidebar.vue
  * @see /src/pages/sidebar-blank-page-1.vue
  */
 

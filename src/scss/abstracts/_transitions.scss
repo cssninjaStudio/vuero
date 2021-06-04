@@ -156,3 +156,27 @@
     transition: none;
   }
 }
+
+/* ==========================================================================
+7. slide-x
+========================================================================== */
+
+.slide-x-enter-active,
+.slide-x-leave-active {
+  transition: transform 0.2s ease !important;
+  transition-delay: 0 !important;
+  transform: translateX(-100%) !important;
+}
+
+.slide-x-enter-from,
+.slide-x-leave-to {
+  transform: translateX(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .slide-x-enter-active,
+  .slide-x-leave-active {
+    transition: none;
+    transform: translateX(0);
+  }
+}

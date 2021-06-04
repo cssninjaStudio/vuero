@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import { PropType } from 'vue'
-import { defineProps } from 'vue'
+import type { PropType } from 'vue'
+import { defineProps, ref, computed } from 'vue'
+import { popovers } from '/@src/data/users/userPopovers'
 
 type NavbarCleanTheme = 'default' | 'center' | 'fade'
 
@@ -10,16 +11,264 @@ const props = defineProps({
     default: 'default',
   },
 })
+const isMobileSidebarOpen = ref(false)
+const activeMobileSubsidebar = ref('dashboard')
+
+const filter = ref('')
+const filteredData = computed(() => {
+  if (!filter.value) {
+    return []
+  }
+
+  return Object.values(popovers).filter((user) => {
+    return (
+      user.fullName.match(new RegExp(filter.value, 'i')) ||
+      user.position.match(new RegExp(filter.value, 'i'))
+    )
+  })
+})
+
+const users = [
+  {
+    id: 5,
+    picture: '/demo/avatars/12.jpg',
+    initials: 'JS',
+    color: 'info',
+  },
+  {
+    id: 22,
+    picture: '/demo/avatars/22.jpg',
+    initials: 'JH',
+    color: 'info',
+  },
+  {
+    id: 40,
+    picture: '/demo/avatars/40.jpg',
+    initials: 'SM',
+    color: 'h-purple',
+  },
+]
 </script>
 
 <template>
   <div class="navbar-layout">
     <div class="app-overlay"></div>
 
-    <MobileNavbar />
-    <MobileSidebarMain />
+    <!-- Mobile navigation -->
+    <MobileNavbar
+      :is-open="isMobileSidebarOpen"
+      @toggle="isMobileSidebarOpen = !isMobileSidebarOpen"
+    >
+      <NotificationsMobileDropdown />
+      <UserProfileDropdown />
+    </MobileNavbar>
 
-    <NavbarClean :theme="props.theme" />
+    <!-- Mobile sidebar links -->
+    <MobileSidebar :is-open="isMobileSidebarOpen">
+      <template #links>
+        <li>
+          <a
+            :class="[activeMobileSubsidebar === 'dashboard' && 'is-active']"
+            @click="activeMobileSubsidebar = 'dashboard'"
+          >
+            <i class="iconify" data-icon="feather:activity"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            :class="[activeMobileSubsidebar === 'layout' && 'is-active']"
+            @click="activeMobileSubsidebar = 'layout'"
+          >
+            <i class="iconify" data-icon="feather:grid"></i>
+          </a>
+        </li>
+        <li
+          :class="[activeMobileSubsidebar === 'elements' && 'is-active']"
+          @click="activeMobileSubsidebar = 'elements'"
+        >
+          <a>
+            <i class="iconify" data-icon="feather:box"></i>
+          </a>
+        </li>
+        <li
+          :class="[activeMobileSubsidebar === 'components' && 'is-active']"
+          @click="activeMobileSubsidebar = 'components'"
+        >
+          <a>
+            <i class="iconify" data-icon="feather:cpu"></i>
+          </a>
+        </li>
+        <li>
+          <RouterLink :to="{ name: 'messaging-v1' }">
+            <i class="iconify" data-icon="feather:message-circle"></i>
+          </RouterLink>
+        </li>
+      </template>
+
+      <template #bottom-links>
+        <li>
+          <a @click="activePanel = 'search'">
+            <i class="iconify" data-icon="feather:search"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="iconify" data-icon="feather:settings"></i>
+          </a>
+        </li>
+      </template>
+    </MobileSidebar>
+
+    <!-- Mobile subsidebar links -->
+    <transition name="slide-x">
+      <LayoutsMobileSubsidebar
+        v-if="isMobileSidebarOpen && activeMobileSubsidebar === 'layout'"
+      />
+      <DashboardsMobileSubsidebar
+        v-else-if="
+          isMobileSidebarOpen && activeMobileSubsidebar === 'dashboard'
+        "
+      />
+      <ComponentsMobileSubsidebar
+        v-else-if="
+          isMobileSidebarOpen && activeMobileSubsidebar === 'components'
+        "
+      />
+      <ElementsMobileSubsidebar
+        v-else-if="isMobileSidebarOpen && activeMobileSubsidebar === 'elements'"
+      />
+    </transition>
+
+    <!-- Desktop navigation -->
+    <NavbarClean :theme="props.theme">
+      <!-- Custom navbar title -->
+      <template #title>
+        <RouterLink :to="{ name: 'index' }" class="brand">
+          <AnimatedLogo width="38px" height="38px" />
+        </RouterLink>
+        <div class="separator"></div>
+
+        <ProjectsQuickDropdown />
+        <h1 class="title is-6">Welcome</h1>
+      </template>
+
+      <template #subtitle>
+        <span>February 22, 2021</span>
+      </template>
+
+      <!-- Custom navbar toolbar -->
+      <template #toolbar>
+        <Toolbar />
+        <NavbarLayoutSwitcher />
+        <UserProfileDropdown />
+      </template>
+
+      <template #toolbar-bottom>
+        <V-AvatarStack :avatars="users" :limit="3" size="small" />
+        <V-Dropdown spaced right>
+          <template #button="{ open }">
+            <V-IconButton icon="feather:plus" circle @click="open" />
+          </template>
+          <template #content>
+            <a href="#" class="dropdown-item is-media">
+              <div class="icon">
+                <i class="lnil lnil-analytics-alt-1"></i>
+              </div>
+              <div class="meta">
+                <span>New Dashboard</span>
+                <span>Add a new dashboard</span>
+              </div>
+            </a>
+            <a href="#" class="dropdown-item is-media">
+              <div class="icon">
+                <i class="lnil lnil-users-alt"></i>
+              </div>
+              <div class="meta">
+                <span>Invite</span>
+                <span>Invite new members</span>
+              </div>
+            </a>
+            <a href="#" class="dropdown-item is-media">
+              <div class="icon">
+                <i class="lnil lnil-briefcase"></i>
+              </div>
+              <div class="meta">
+                <span>New Project</span>
+                <span>Add a new project</span>
+              </div>
+            </a>
+            <hr class="dropdown-divider" />
+            <a href="#" class="dropdown-item is-media">
+              <div class="icon">
+                <i class="lnil lnil-cog"></i>
+              </div>
+              <div class="meta">
+                <span>Settings</span>
+                <span>Manage team settings</span>
+              </div>
+            </a>
+          </template>
+        </V-Dropdown>
+      </template>
+
+      <!-- Custom navbar search -->
+      <template #search>
+        <div class="centered-search">
+          <div class="field">
+            <div class="control has-icon">
+              <input
+                v-model="filter"
+                type="text"
+                class="input search-input"
+                placeholder="Search records..."
+              />
+              <div class="form-icon">
+                <i class="iconify" data-icon="feather:search"></i>
+              </div>
+              <div
+                v-if="filter"
+                class="form-icon is-right"
+                @click="filter = ''"
+              >
+                <i class="iconify" data-icon="feather:x"></i>
+              </div>
+              <div
+                v-if="filteredData.length > 0"
+                class="search-results has-slimscroll is-active"
+              >
+                <div
+                  v-for="user in filteredData"
+                  :key="user.id"
+                  class="search-result"
+                >
+                  <V-Avatar
+                    :picture="user.avatar"
+                    :initials="user.initials"
+                    :color="user.color"
+                  />
+                  <div class="meta">
+                    <span>{{ user.username }}</span>
+                    <span>{{ user.position }}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </template>
+
+      <!-- Desktop navigation -->
+      <template #links>
+        <div class="buttons">
+          <a class="button">Dashboard</a>
+          <a class="button">Projects</a>
+          <a class="button">Team</a>
+          <a class="button">Reports</a>
+          <a class="button">Settings</a>
+        </div>
+      </template>
+    </NavbarClean>
+
     <LanguagesPanel />
     <ActivityPanel />
 

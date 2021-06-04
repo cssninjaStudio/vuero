@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { computed, defineEmit, PropType } from 'vue'
-import { defineProps } from 'vue'
+import type { PropType } from 'vue'
+import { computed, defineProps, defineEmit } from 'vue'
 
 type RadioColor =
   | undefined

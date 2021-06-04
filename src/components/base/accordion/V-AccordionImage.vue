@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { defineEmit, PropType } from 'vue'
-import { defineProps } from 'vue'
+import type { PropType } from 'vue'
+import { defineProps, defineEmit } from 'vue'
 
 type AccordionImageItem = {
   title: string

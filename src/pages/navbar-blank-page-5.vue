@@ -19,9 +19,7 @@ useHead({
 </script>
 
 <template>
-  <NavbarAltColoredLayout>
-    <GenericMobileSubsidebar />
-
+  <NavbarDropdownLayout theme="colored">
     <!-- Content Wrapper -->
     <div class="view-wrapper has-top-nav">
       <div class="page-content-wrapper">
@@ -59,5 +57,5 @@ useHead({
         </div>
       </div>
     </div>
-  </NavbarAltColoredLayout>
+  </NavbarDropdownLayout>
 </template>

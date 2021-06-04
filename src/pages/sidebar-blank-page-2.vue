@@ -27,7 +27,6 @@ useHead({
 <template>
   <SidebarLayout theme="curved">
     <GenericSidebar />
-    <GenericMobileSubsidebar />
 
     <!-- Content Wrapper -->
     <div

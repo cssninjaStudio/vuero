@@ -28,7 +28,6 @@ useHead({
   <SidebarLayout theme="float">
     <!-- Sidebar -->
     <GenericSidebar />
-    <GenericMobileSubsidebar />
 
     <!-- Content Wrapper -->
     <div

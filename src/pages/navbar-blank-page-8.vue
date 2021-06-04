@@ -19,9 +19,7 @@ useHead({
 </script>
 
 <template>
-  <NavbarCleanFadeLayout>
-    <GenericMobileSubsidebar />
-
+  <NavbarClean theme="fade">
     <!-- Content Wrapper -->
     <div class="view-wrapper has-top-nav">
       <div class="page-content-wrapper">
@@ -47,5 +45,5 @@ useHead({
         </div>
       </div>
     </div>
-  </NavbarCleanFadeLayout>
+  </NavbarClean>
 </template>

@@ -3,8 +3,8 @@ let instances = 0
 </script>
 
 <script setup lang="ts">
-import { computed, PropType } from 'vue'
-import { defineProps, ref, defineEmit, watchEffect } from 'vue'
+import type { PropType } from 'vue'
+import { defineProps, computed, ref, defineEmit, watchEffect } from 'vue'
 
 type AnimatedCheckboxColor =
   | undefined
