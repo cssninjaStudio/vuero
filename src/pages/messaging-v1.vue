@@ -102,550 +102,590 @@ useHead({
 })
 
 watchEffect(onConversationChanged)
+watchEffect(
+  () => {
+    const isOpen = activeSidebar.value === 'messages'
+    const wrappers = document.querySelectorAll('.view-wrapper')
+
+    wrappers.forEach((wrapper) => {
+      if (isOpen === false) {
+        wrapper.classList.remove('is-pushed-full')
+      } else if (!wrapper.classList.contains('is-pushed-full')) {
+        wrapper.classList.add('is-pushed-full')
+      }
+    })
+  },
+  { flush: 'post' }
+)
 </script>
 
 <template>
-  <SidebarLayout :theme="sidebarTheme">
-    <MessagesSubsidebar
-      :conversations="conversations"
-      :selected-conversation-id="selectedConversationId"
-      @addConversation="
-        () => {
-          selectedConversationId = 0
-          addConversationOpen = !addConversationOpen
-        }
-      "
-      @selectConversation="
-        (id) => {
-          addConversationOpen = false
-          selectedConversationId = id
-        }
-      "
-    />
-    <MessagesMobileSubsidebar
-      :conversations="conversations"
-      :selected-conversation-id="selectedConversationId"
-      @selectConversation="
-        (id) => {
-          addConversationOpen = false
-          selectedConversationId = id
-        }
-      "
-    />
-    <CollapsedMessaging
-      :conversations="conversations"
-      :selected-conversation-id="selectedConversationId"
-      @addConversation="
-        () => {
-          selectedConversationId = 0
-          addConversationOpen = !addConversationOpen
-        }
-      "
-      @selectConversation="
-        (id) => {
-          addConversationOpen = false
-          selectedConversationId = id
-        }
-      "
-    />
+  <MessagingLayout :theme="sidebarTheme">
+    <template #default="{ isMobileSidebarOpen }">
+      <transition name="slide-x">
+        <MessagesSubsidebar
+          v-if="activeSidebar === 'messages'"
+          :conversations="conversations"
+          :selected-conversation-id="selectedConversationId"
+          @addConversation="
+            () => {
+              selectedConversationId = 0
+              addConversationOpen = !addConversationOpen
+            }
+          "
+          @selectConversation="
+            (id) => {
+              addConversationOpen = false
+              selectedConversationId = id
+            }
+          "
+        />
+      </transition>
+      <transition name="slide-x">
+        <MessagesMobileSubsidebar
+          v-if="isMobileSidebarOpen"
+          :conversations="conversations"
+          :selected-conversation-id="selectedConversationId"
+          @selectConversation="
+            (id) => {
+              addConversationOpen = false
+              selectedConversationId = id
+            }
+          "
+        />
+      </transition>
 
-    <div
-      id="vuero-messaging"
-      class="view-wrapper"
-      :class="[activeSidebar === 'none' && 'is-pushed-messages']"
-    >
-      <div class="page-content-wrapper">
-        <div class="page-content chat-content">
-          <div class="page-title has-text-centered is-hidden">
-            <div
-              class="vuero-hamburger nav-trigger push-resize"
-              @click="toggleSidebar('messages')"
-            >
-              <span class="menu-toggle has-chevron">
-                <span
-                  :class="[activeSidebar !== 'none' && 'active']"
-                  class="icon-box-toggle"
-                >
-                  <span class="rotate">
-                    <i class="icon-line-top"></i>
-                    <i class="icon-line-center"></i>
-                    <i class="icon-line-bottom"></i>
+      <CollapsedMessaging
+        :conversations="conversations"
+        :selected-conversation-id="selectedConversationId"
+        @addConversation="
+          () => {
+            selectedConversationId = 0
+            addConversationOpen = !addConversationOpen
+          }
+        "
+        @selectConversation="
+          (id) => {
+            addConversationOpen = false
+            selectedConversationId = id
+          }
+        "
+      />
+
+      <div
+        id="vuero-messaging"
+        class="view-wrapper"
+        :class="[activeSidebar === 'none' && 'is-pushed-messages']"
+      >
+        <div class="page-content-wrapper">
+          <div class="page-content chat-content">
+            <div class="page-title has-text-centered is-hidden">
+              <div
+                class="vuero-hamburger nav-trigger push-resize"
+                @click="toggleSidebar('messages')"
+              >
+                <span class="menu-toggle has-chevron">
+                  <span
+                    :class="[activeSidebar !== 'none' && 'active']"
+                    class="icon-box-toggle"
+                  >
+                    <span class="rotate">
+                      <i class="icon-line-top"></i>
+                      <i class="icon-line-center"></i>
+                      <i class="icon-line-bottom"></i>
+                    </span>
                   </span>
                 </span>
-              </span>
+              </div>
+
+              <h1 class="title is-5">Messages</h1>
             </div>
 
-            <h1 class="title is-5">Messages</h1>
-          </div>
-
-          <!-- Chat Card -->
-          <div class="is-chat animated preFadeInUp fadeInUp">
-            <!-- Header -->
-            <div class="chat-header">
-              <div
-                :class="[!addConversationOpen && 'is-hidden']"
-                class="is-autocomplete"
-              >
-                <div class="control">
-                  <div class="easy-autocomplete">
-                    <input
-                      id="users-autocpl"
-                      type="text"
-                      class="input"
-                      placeholder="Start typing a name"
-                      autofocus
-                    />
-                  </div>
-                  <div class="icon">
-                    <span>To:</span>
-                  </div>
-                  <div class="hide" @click="addConversationOpen = false">
-                    <i class="iconify" data-icon="feather:x"></i>
+            <!-- Chat Card -->
+            <div class="is-chat animated preFadeInUp fadeInUp">
+              <!-- Header -->
+              <div class="chat-header">
+                <div
+                  :class="[!addConversationOpen && 'is-hidden']"
+                  class="is-autocomplete"
+                >
+                  <div class="control">
+                    <div class="easy-autocomplete">
+                      <input
+                        id="users-autocpl"
+                        type="text"
+                        class="input"
+                        placeholder="Start typing a name"
+                        autofocus
+                      />
+                    </div>
+                    <div class="icon">
+                      <span>To:</span>
+                    </div>
+                    <div class="hide" @click="addConversationOpen = false">
+                      <i class="iconify" data-icon="feather:x"></i>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div class="chat-body-wrap">
-              <!-- Chat Body -->
-              <ol id="chat-body" class="chat-body">
-                <li v-if="messages.length === 0" class="no-messages">
-                  <img
-                    class="light-image"
-                    src="/@src/assets/illustrations/placeholders/search-4.svg"
-                    alt=""
-                  />
-                  <img
-                    class="dark-image"
-                    src="/@src/assets/illustrations/placeholders/search-4-dark.svg"
-                    alt=""
-                  />
-                  <div class="text">
-                    <h3>No messages yet</h3>
-                    <p>Start the conversation by typing a message</p>
-                  </div>
-                </li>
+              <div class="chat-body-wrap">
+                <!-- Chat Body -->
+                <ol id="chat-body" class="chat-body">
+                  <li v-if="messages.length === 0" class="no-messages">
+                    <img
+                      class="light-image"
+                      src="/@src/assets/illustrations/placeholders/search-4.svg"
+                      alt=""
+                    />
+                    <img
+                      class="dark-image"
+                      src="/@src/assets/illustrations/placeholders/search-4-dark.svg"
+                      alt=""
+                    />
+                    <div class="text">
+                      <h3>No messages yet</h3>
+                      <p>Start the conversation by typing a message</p>
+                    </div>
+                  </li>
 
-                <li
-                  v-for="message in messages"
-                  :key="message.id"
-                  :class="[
-                    message.type === 'system' && 'divider-container',
-                    message.type !== 'system' && message.sender,
-                  ]"
-                >
-                  <!-- System messages -->
-                  <template v-if="message.type === 'system'">
-                    <li class="divider-container">
-                      <div class="divider">
-                        <span>{{ message.content.text }}</span>
+                  <li
+                    v-for="message in messages"
+                    :key="message.id"
+                    :class="[
+                      message.type === 'system' && 'divider-container',
+                      message.type !== 'system' && message.sender,
+                    ]"
+                  >
+                    <!-- System messages -->
+                    <template v-if="message.type === 'system'">
+                      <li class="divider-container">
+                        <div class="divider">
+                          <span>{{ message.content.text }}</span>
+                        </div>
+                      </li>
+                    </template>
+
+                    <!-- Text messages -->
+                    <template v-else-if="message.type === 'msg'">
+                      <div class="avatar">
+                        <img :src="message.avatar" draggable="false" />
                       </div>
-                    </li>
-                  </template>
+                      <div class="msg">
+                        <div class="msg-inner">
+                          <p>{{ message.content.text }}</p>
+                        </div>
 
-                  <!-- Text messages -->
-                  <template v-else-if="message.type === 'msg'">
-                    <div class="avatar">
-                      <img :src="message.avatar" draggable="false" />
-                    </div>
-                    <div class="msg">
-                      <div class="msg-inner">
-                        <p>{{ message.content.text }}</p>
+                        <time>
+                          {{ message.content.time }}
+                        </time>
                       </div>
+                    </template>
 
-                      <time>
-                        {{ message.content.time }}
-                      </time>
-                    </div>
-                  </template>
+                    <!-- Image messages -->
 
-                  <!-- Image messages -->
-
-                  <template v-else-if="message.type === 'image'">
-                    <div class="avatar is-online">
-                      <img :src="message.avatar" draggable="false" />
-                    </div>
-                    <div class="msg is-image">
-                      <div class="image-container">
-                        <V-PhotosSwipe
-                          :items="[
-                            {
-                              src: message.content.image_url,
-                              thumbnail: message.content.image_url,
-                              w: 600,
-                              h: 400,
-                              alt: 'optional alt attribute for thumbnail image',
-                            },
-                          ]"
-                          thumbnail-radius="full"
-                        />
-                        <div class="image-overlay"></div>
-                        <div class="image-actions">
-                          <div class="actions-inner">
-                            <div class="action download">
-                              <span
-                                class="iconify"
-                                data-icon="feather:download"
-                              ></span>
+                    <template v-else-if="message.type === 'image'">
+                      <div class="avatar is-online">
+                        <img :src="message.avatar" draggable="false" />
+                      </div>
+                      <div class="msg is-image">
+                        <div class="image-container">
+                          <V-PhotosSwipe
+                            :items="[
+                              {
+                                src: message.content.image_url,
+                                thumbnail: message.content.image_url,
+                                w: 600,
+                                h: 400,
+                                alt: 'optional alt attribute for thumbnail image',
+                              },
+                            ]"
+                            thumbnail-radius="full"
+                          />
+                          <div class="image-overlay"></div>
+                          <div class="image-actions">
+                            <div class="actions-inner">
+                              <div class="action download">
+                                <span
+                                  class="iconify"
+                                  data-icon="feather:download"
+                                ></span>
+                              </div>
+                              <a
+                                :href="message.content.image_url"
+                                class="action messaging-popup"
+                              >
+                                <span
+                                  class="iconify"
+                                  data-icon="feather:maximize"
+                                ></span>
+                              </a>
                             </div>
-                            <a
-                              :href="message.content.image_url"
-                              class="action messaging-popup"
-                            >
-                              <span
-                                class="iconify"
-                                data-icon="feather:maximize"
-                              ></span>
-                            </a>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  </template>
+                    </template>
 
-                  <!-- Link image messages -->
-                  <template v-else-if="message.type === 'imagelink'">
-                    <div class="avatar">
-                      <img :src="message.avatar" draggable="false" />
-                    </div>
-                    <div class="msg is-link-image">
-                      <figure class="image">
-                        <img :src="message.content.link_image" />
-                        <div class="link-badge">
-                          <img :src="message.content.link_badge" />
+                    <!-- Link image messages -->
+                    <template v-else-if="message.type === 'imagelink'">
+                      <div class="avatar">
+                        <img :src="message.avatar" draggable="false" />
+                      </div>
+                      <div class="msg is-link-image">
+                        <figure class="image">
+                          <img :src="message.content.link_image" />
+                          <div class="link-badge">
+                            <img :src="message.content.link_badge" />
+                          </div>
+                        </figure>
+                        <div class="link-body">
+                          <span class="link-title">{{
+                            message.content.text
+                          }}</span>
+                          <small>{{ message.content.subtext }}</small>
                         </div>
-                      </figure>
-                      <div class="link-body">
-                        <span class="link-title">{{
-                          message.content.text
-                        }}</span>
-                        <small>{{ message.content.subtext }}</small>
                       </div>
-                    </div>
-                  </template>
+                    </template>
 
-                  <!-- Link text messages -->
-                  <template v-else-if="message.type === 'link'">
-                    <div class="avatar is-online">
-                      <img :src="message.avatar" draggable="false" />
-                    </div>
-                    <div class="msg is-link">
-                      <V-IconWrap icon="feather:link" />
-                      <p class="link-meta">
-                        <span>{{ message.content.text }}</span>
-                        <a href="#">{{ message.content.subtext }}</a>
-                      </p>
-                    </div>
-                  </template>
-                </li>
-
-                <li class="chat-loader" :class="[isLoading && 'is-active']">
-                  <div class="loader is-loading"></div>
-                </li>
-              </ol>
-
-              <!-- Chat side -->
-              <div
-                :class="[mobileConversationDetailsOpen && 'is-mobile-active']"
-                class="chat-side"
-              >
-                <div class="chat-side-header">
-                  <MessagingToolbar
-                    @close="mobileConversationDetailsOpen = false"
-                  />
-                </div>
-
-                <div class="chat-side-content is-single">
-                  <div class="user-pic">
-                    <img
-                      id="user-details-image"
-                      :src="selectedConversation.avatar"
-                      alt=""
-                      @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/150x150'
-                      "
-                    />
-                    <img
-                      id="user-details-badge"
-                      class="is-badge"
-                      src="/images/icons/flags/united-states-of-america.svg"
-                      alt=""
-                      @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/150x150'
-                      "
-                    />
-                  </div>
-                  <h4 v-if="selectedConversation.name" class="user-name">
-                    {{ selectedConversation.name }}
-                  </h4>
-                  <p
-                    v-if="selectedConversation.lastMessage"
-                    class="user-job-title"
-                  >
-                    {{ selectedConversation.lastMessage }}
-                  </p>
-
-                  <div class="side-actions">
-                    <a class="button v-button is-rounded">
-                      <span class="icon is-small">
-                        <i class="fas fa-phone"></i>
-                      </span>
-                      <span>Audio Call</span>
-                    </a>
-                    <a class="button v-button is-rounded">
-                      <span class="icon is-small">
-                        <i class="fas fa-video"></i>
-                      </span>
-                      <span>Video Call</span>
-                    </a>
-                  </div>
-
-                  <div class="detail-photos">
-                    <div class="detail-photo-title">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="feather feather-image"
-                      >
-                        <rect
-                          x="3"
-                          y="3"
-                          width="18"
-                          height="18"
-                          rx="2"
-                          ry="2"
-                        ></rect>
-                        <circle cx="8.5" cy="8.5" r="1.5"></circle>
-                        <path d="M21 15l-5-5L5 21"></path>
-                      </svg>
-                      Shared photos
-                    </div>
-                    <div class="detail-photo-grid">
-                      <img
-                        src="/demo/photos/demo-apps/1.jpg"
-                        alt=""
-                        @error.once="
-                          $event.target.src =
-                            'https://via.placeholder.com/1600x900'
-                        "
-                      />
-                      <img
-                        src="/demo/photos/demo-apps/2.jpg"
-                        alt=""
-                        @error.once="
-                          $event.target.src =
-                            'https://via.placeholder.com/1600x900'
-                        "
-                      />
-                      <img
-                        src="/demo/photos/demo-apps/3.jpg"
-                        alt=""
-                        @error.once="
-                          $event.target.src =
-                            'https://via.placeholder.com/1600x900'
-                        "
-                      />
-                      <img
-                        src="/demo/photos/demo-apps/4.jpg"
-                        alt=""
-                        @error.once="
-                          $event.target.src =
-                            'https://via.placeholder.com/1600x900'
-                        "
-                      />
-                      <img
-                        src="/demo/photos/demo-apps/5.jpg"
-                        alt=""
-                        @error.once="
-                          $event.target.src =
-                            'https://via.placeholder.com/1600x900'
-                        "
-                      />
-                      <img
-                        src="/demo/photos/demo-apps/6.jpg"
-                        alt=""
-                        @error.once="
-                          $event.target.src =
-                            'https://via.placeholder.com/1600x900'
-                        "
-                      />
-                      <img
-                        src="/demo/photos/demo-apps/7.jpg"
-                        alt=""
-                        @error.once="
-                          $event.target.src =
-                            'https://via.placeholder.com/1600x900'
-                        "
-                      />
-                      <img
-                        src="/demo/photos/demo-apps/8.jpg"
-                        alt=""
-                        @error.once="
-                          $event.target.src =
-                            'https://via.placeholder.com/1600x900'
-                        "
-                      />
-                      <img
-                        src="/demo/photos/demo-apps/9.jpg"
-                        alt=""
-                        @error.once="
-                          $event.target.src =
-                            'https://via.placeholder.com/1600x900'
-                        "
-                      />
-                      <img
-                        src="/demo/photos/demo-apps/10.jpg"
-                        alt=""
-                        @error.once="
-                          $event.target.src =
-                            'https://via.placeholder.com/1600x900'
-                        "
-                      />
-                      <img
-                        src="/demo/photos/demo-apps/11.jpg"
-                        alt=""
-                        @error.once="
-                          $event.target.src =
-                            'https://via.placeholder.com/1600x900'
-                        "
-                      />
-                      <img
-                        src="/demo/photos/demo-apps/12.jpg"
-                        alt=""
-                        @error.once="
-                          $event.target.src =
-                            'https://via.placeholder.com/1600x900'
-                        "
-                      />
-                    </div>
-                    <a class="view-more">View More</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="message-field-wrapper">
-              <div class="control">
-                <div class="add-content">
-                  <div
-                    ref="dropdownElement"
-                    :class="[isOpen && 'is-active']"
-                    class="dropdown dropdown-trigger is-up"
-                  >
-                    <div>
-                      <div class="button" aria-haspopup="true" @click="toggle">
-                        <i class="iconify" data-icon="feather:plus"></i>
+                    <!-- Link text messages -->
+                    <template v-else-if="message.type === 'link'">
+                      <div class="avatar is-online">
+                        <img :src="message.avatar" draggable="false" />
                       </div>
-                    </div>
-                    <div class="dropdown-menu" role="menu">
-                      <div class="dropdown-content">
-                        <a class="dropdown-item">
-                          <i class="iconify" data-icon="feather:video"></i>
-                          <div class="meta">
-                            <span>Video</span>
-                            <span>Embed a video</span>
-                          </div>
-                        </a>
-                        <a
-                          href="#"
-                          class="dropdown-item kill-drop v-modal-trigger"
-                        >
-                          <i class="iconify" data-icon="feather:image"></i>
-                          <div class="meta">
-                            <span>Images</span>
-                            <span>Upload pictures</span>
-                          </div>
-                        </a>
-                        <a
-                          href="#"
-                          class="dropdown-item kill-drop v-modal-trigger"
-                        >
-                          <i class="iconify" data-icon="feather:link"></i>
-                          <div class="meta">
-                            <span>Link</span>
-                            <span>Post a link</span>
-                          </div>
-                        </a>
-                        <hr class="dropdown-divider" />
-                        <a
-                          href="#"
-                          class="dropdown-item kill-drop v-modal-trigger"
-                        >
-                          <i class="iconify" data-icon="feather:file"></i>
-                          <div class="meta">
-                            <span>File</span>
-                            <span>Upload a file</span>
-                          </div>
-                        </a>
+                      <div class="msg is-link">
+                        <V-IconWrap icon="feather:link" />
+                        <p class="link-meta">
+                          <span>{{ message.content.text }}</span>
+                          <a href="#">{{ message.content.subtext }}</a>
+                        </p>
                       </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="add-emoji">
-                  <div class="button">
-                    <i class="iconify" data-icon="feather:smile"></i>
-                  </div>
-                </div>
-                <input
-                  id="chat-input"
-                  class="input is-rounded"
-                  type="text"
-                  placeholder="Write a message ..."
-                />
-                <div class="send-message">
-                  <div class="button v-button is-primary is-raised is-rounded">
-                    Send
-                  </div>
-                </div>
-              </div>
+                    </template>
+                  </li>
 
-              <div class="typing-indicator">
-                <img src="/images/icons/typing.gif" alt="" />
-              </div>
-            </div>
-          </div>
+                  <li class="chat-loader" :class="[isLoading && 'is-active']">
+                    <div class="loader is-loading"></div>
+                  </li>
+                </ol>
 
-          <div
-            class="is-chat-placeholder animated preFadeInUp fadeInUp is-hidden"
-          >
-            <div class="caption">
-              <img
-                src="/@src/assets/illustrations/placeholders/having-coffee.svg"
-                alt=""
-                @error.once="
-                  $event.target.src = 'https://via.placeholder.com/150x150'
-                "
-              />
-              <div class="text">
-                <h3>Nothing to show</h3>
-                <p>Select an existing conversation or start a new one</p>
-                <a
-                  id="new-chat"
-                  class="button v-button is-solid is-outlined is-big is-rounded"
-                  >Start a new conversation</a
+                <!-- Chat side -->
+                <div
+                  :class="[mobileConversationDetailsOpen && 'is-mobile-active']"
+                  class="chat-side"
                 >
+                  <div class="chat-side-header">
+                    <MessagingToolbar
+                      @close="mobileConversationDetailsOpen = false"
+                    />
+                  </div>
+
+                  <div class="chat-side-content is-single">
+                    <div class="user-pic">
+                      <img
+                        id="user-details-image"
+                        :src="selectedConversation.avatar"
+                        alt=""
+                        @error.once="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
+                      />
+                      <img
+                        id="user-details-badge"
+                        class="is-badge"
+                        src="/images/icons/flags/united-states-of-america.svg"
+                        alt=""
+                        @error.once="
+                          $event.target.src =
+                            'https://via.placeholder.com/150x150'
+                        "
+                      />
+                    </div>
+                    <h4 v-if="selectedConversation.name" class="user-name">
+                      {{ selectedConversation.name }}
+                    </h4>
+                    <p
+                      v-if="selectedConversation.lastMessage"
+                      class="user-job-title"
+                    >
+                      {{ selectedConversation.lastMessage }}
+                    </p>
+
+                    <div class="side-actions">
+                      <a class="button v-button is-rounded">
+                        <span class="icon is-small">
+                          <i class="fas fa-phone"></i>
+                        </span>
+                        <span>Audio Call</span>
+                      </a>
+                      <a class="button v-button is-rounded">
+                        <span class="icon is-small">
+                          <i class="fas fa-video"></i>
+                        </span>
+                        <span>Video Call</span>
+                      </a>
+                    </div>
+
+                    <div class="detail-photos">
+                      <div class="detail-photo-title">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-image"
+                        >
+                          <rect
+                            x="3"
+                            y="3"
+                            width="18"
+                            height="18"
+                            rx="2"
+                            ry="2"
+                          ></rect>
+                          <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                          <path d="M21 15l-5-5L5 21"></path>
+                        </svg>
+                        Shared photos
+                      </div>
+                      <div class="detail-photo-grid">
+                        <img
+                          src="/demo/photos/demo-apps/1.jpg"
+                          alt=""
+                          @error.once="
+                            $event.target.src =
+                              'https://via.placeholder.com/1600x900'
+                          "
+                        />
+                        <img
+                          src="/demo/photos/demo-apps/2.jpg"
+                          alt=""
+                          @error.once="
+                            $event.target.src =
+                              'https://via.placeholder.com/1600x900'
+                          "
+                        />
+                        <img
+                          src="/demo/photos/demo-apps/3.jpg"
+                          alt=""
+                          @error.once="
+                            $event.target.src =
+                              'https://via.placeholder.com/1600x900'
+                          "
+                        />
+                        <img
+                          src="/demo/photos/demo-apps/4.jpg"
+                          alt=""
+                          @error.once="
+                            $event.target.src =
+                              'https://via.placeholder.com/1600x900'
+                          "
+                        />
+                        <img
+                          src="/demo/photos/demo-apps/5.jpg"
+                          alt=""
+                          @error.once="
+                            $event.target.src =
+                              'https://via.placeholder.com/1600x900'
+                          "
+                        />
+                        <img
+                          src="/demo/photos/demo-apps/6.jpg"
+                          alt=""
+                          @error.once="
+                            $event.target.src =
+                              'https://via.placeholder.com/1600x900'
+                          "
+                        />
+                        <img
+                          src="/demo/photos/demo-apps/7.jpg"
+                          alt=""
+                          @error.once="
+                            $event.target.src =
+                              'https://via.placeholder.com/1600x900'
+                          "
+                        />
+                        <img
+                          src="/demo/photos/demo-apps/8.jpg"
+                          alt=""
+                          @error.once="
+                            $event.target.src =
+                              'https://via.placeholder.com/1600x900'
+                          "
+                        />
+                        <img
+                          src="/demo/photos/demo-apps/9.jpg"
+                          alt=""
+                          @error.once="
+                            $event.target.src =
+                              'https://via.placeholder.com/1600x900'
+                          "
+                        />
+                        <img
+                          src="/demo/photos/demo-apps/10.jpg"
+                          alt=""
+                          @error.once="
+                            $event.target.src =
+                              'https://via.placeholder.com/1600x900'
+                          "
+                        />
+                        <img
+                          src="/demo/photos/demo-apps/11.jpg"
+                          alt=""
+                          @error.once="
+                            $event.target.src =
+                              'https://via.placeholder.com/1600x900'
+                          "
+                        />
+                        <img
+                          src="/demo/photos/demo-apps/12.jpg"
+                          alt=""
+                          @error.once="
+                            $event.target.src =
+                              'https://via.placeholder.com/1600x900'
+                          "
+                        />
+                      </div>
+                      <a class="view-more">View More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="message-field-wrapper">
+                <div class="control">
+                  <div class="add-content">
+                    <div
+                      ref="dropdownElement"
+                      :class="[isOpen && 'is-active']"
+                      class="dropdown dropdown-trigger is-up"
+                    >
+                      <div>
+                        <div
+                          class="button"
+                          aria-haspopup="true"
+                          @click="toggle"
+                        >
+                          <i class="iconify" data-icon="feather:plus"></i>
+                        </div>
+                      </div>
+                      <div class="dropdown-menu" role="menu">
+                        <div class="dropdown-content">
+                          <a class="dropdown-item">
+                            <i class="iconify" data-icon="feather:video"></i>
+                            <div class="meta">
+                              <span>Video</span>
+                              <span>Embed a video</span>
+                            </div>
+                          </a>
+                          <a
+                            href="#"
+                            class="dropdown-item kill-drop v-modal-trigger"
+                          >
+                            <i class="iconify" data-icon="feather:image"></i>
+                            <div class="meta">
+                              <span>Images</span>
+                              <span>Upload pictures</span>
+                            </div>
+                          </a>
+                          <a
+                            href="#"
+                            class="dropdown-item kill-drop v-modal-trigger"
+                          >
+                            <i class="iconify" data-icon="feather:link"></i>
+                            <div class="meta">
+                              <span>Link</span>
+                              <span>Post a link</span>
+                            </div>
+                          </a>
+                          <hr class="dropdown-divider" />
+                          <a
+                            href="#"
+                            class="dropdown-item kill-drop v-modal-trigger"
+                          >
+                            <i class="iconify" data-icon="feather:file"></i>
+                            <div class="meta">
+                              <span>File</span>
+                              <span>Upload a file</span>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="add-emoji">
+                    <div class="button">
+                      <i class="iconify" data-icon="feather:smile"></i>
+                    </div>
+                  </div>
+                  <input
+                    id="chat-input"
+                    class="input is-rounded"
+                    type="text"
+                    placeholder="Write a message ..."
+                  />
+                  <div class="send-message">
+                    <div
+                      class="button v-button is-primary is-raised is-rounded"
+                    >
+                      Send
+                    </div>
+                  </div>
+                </div>
+
+                <div class="typing-indicator">
+                  <img src="/images/icons/typing.gif" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="
+                is-chat-placeholder
+                animated
+                preFadeInUp
+                fadeInUp
+                is-hidden
+              "
+            >
+              <div class="caption">
+                <img
+                  src="/@src/assets/illustrations/placeholders/having-coffee.svg"
+                  alt=""
+                  @error.once="
+                    $event.target.src = 'https://via.placeholder.com/150x150'
+                  "
+                />
+                <div class="text">
+                  <h3>Nothing to show</h3>
+                  <p>Select an existing conversation or start a new one</p>
+                  <a
+                    id="new-chat"
+                    class="
+                      button
+                      v-button
+                      is-solid is-outlined is-big is-rounded
+                    "
+                    >Start a new conversation</a
+                  >
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <a
-      :class="[mobileConversationDetailsOpen && 'is-mobile-active']"
-      class="chat-side-fab"
-      @click="mobileConversationDetailsOpen = !mobileConversationDetailsOpen"
-    >
-      <i class="iconify" data-icon="feather:chevron-left"></i>
-    </a>
-  </SidebarLayout>
+      <a
+        :class="[mobileConversationDetailsOpen && 'is-mobile-active']"
+        class="chat-side-fab"
+        @click="mobileConversationDetailsOpen = !mobileConversationDetailsOpen"
+      >
+        <i class="iconify" data-icon="feather:chevron-left"></i>
+      </a>
+    </template>
+  </MessagingLayout>
 </template>
 
 <style lang="scss">

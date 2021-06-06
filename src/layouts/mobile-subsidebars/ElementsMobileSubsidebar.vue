@@ -1,8 +1,3 @@
-<script setup lang="ts">
-import { isMobileSidebarOpen } from '/@src/state/mobileSidebarState'
-import { activeSidebar } from '/@src/state/activeSidebarState'
-</script>
-
 <template>
   <div class="mobile-subsidebar is-activity">
     <div class="inner">
