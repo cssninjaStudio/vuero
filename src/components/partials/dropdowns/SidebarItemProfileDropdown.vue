@@ -4,7 +4,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
 </script>
 
 <template>
-  <li id="user-menu">
+  <li>
     <div
       id="profile-menu"
       ref="dropdownElement"
@@ -22,16 +22,8 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
       <div class="dropdown-menu" role="menu">
         <div class="dropdown-content">
           <div class="dropdown-head">
-            <div class="v-avatar is-large">
-              <img
-                class="avatar"
-                src="/demo/avatars/8.jpg"
-                alt=""
-                @error.once="
-                  $event.target.src = 'https://via.placeholder.com/150x150'
-                "
-              />
-            </div>
+            <V-Avatar size="large" picture="/demo/avatars/8.jpg" />
+
             <div class="meta">
               <span>Erik Kovalsky</span>
               <span>Product Manager</span>

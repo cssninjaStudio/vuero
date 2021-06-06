@@ -1,23 +1,11 @@
-<script setup lang="ts">
-import { activeSidebar } from '/@src/state/activeSidebarState'
-</script>
-
 <template>
-  <div
-    id="home-sidebar"
-    :class="[activeSidebar === 'home' && 'is-active']"
-    class="sidebar-panel is-generic"
-  >
-    <div class="subpanel-header">
-      <ProjectsQuickDropdown />
-
-      <h3 class="no-mb">Dashboards</h3>
-      <div class="panel-close" @click="activeSidebar = 'none'">
-        <i class="iconify" data-icon="feather:x"></i>
+  <div class="mobile-subsidebar">
+    <div class="inner">
+      <div class="sidebar-title">
+        <h3>Dashboards</h3>
       </div>
-    </div>
-    <div class="inner" data-simplebar>
-      <ul>
+
+      <ul class="submenu" data-simplebar>
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
             <a class="parent-link"
@@ -328,13 +316,13 @@ import { activeSidebar } from '/@src/state/activeSidebarState'
               </RouterLink>
             </li>
             <li>
-              <RouterLink
+              <a
                 class="is-submenu"
                 :to="{ name: 'sidebar-dashboards-widgets-sample-creative' }"
               >
                 <i class="lnil lnil-layout-alt-2"></i>
                 <span>Creative Widgets</span>
-              </RouterLink>
+              </a>
             </li>
             <li>
               <RouterLink
@@ -352,6 +340,61 @@ import { activeSidebar } from '/@src/state/activeSidebarState'
               >
                 <i class="lnil lnil-layout-alt-2"></i>
                 <span>Stat Widgets</span>
+              </RouterLink>
+            </li>
+          </ul>
+        </li>
+        <li v-has-nested-router-link class="has-children">
+          <div class="collapse-wrap">
+            <a class="parent-link"
+              >Form Layouts
+              <i class="iconify" data-icon="feather:chevron-right"
+            /></a>
+          </div>
+          <ul>
+            <li>
+              <RouterLink
+                :to="{ name: 'sidebar-layouts-form-layouts-1' }"
+                class="is-submenu"
+              >
+                <i class="lnil lnil-passport"></i>
+                <span>Form Layout V1</span>
+              </RouterLink>
+            </li>
+            <li>
+              <RouterLink
+                :to="{ name: 'sidebar-layouts-form-layouts-2' }"
+                class="is-submenu"
+              >
+                <i class="lnil lnil-passport"></i>
+                <span>Form Layout V2</span>
+              </RouterLink>
+            </li>
+            <li>
+              <RouterLink
+                :to="{ name: 'sidebar-layouts-form-layouts-3' }"
+                class="is-submenu"
+              >
+                <i class="lnil lnil-passport"></i>
+                <span>Form Layout V3</span>
+              </RouterLink>
+            </li>
+            <li>
+              <RouterLink
+                :to="{ name: 'sidebar-layouts-form-layouts-4' }"
+                class="is-submenu"
+              >
+                <i class="lnil lnil-passport"></i>
+                <span>Form Layout V4</span>
+              </RouterLink>
+            </li>
+            <li>
+              <RouterLink
+                :to="{ name: 'sidebar-layouts-form-layouts-5' }"
+                class="is-submenu"
+              >
+                <i class="lnil lnil-passport"></i>
+                <span>Form Layout V5</span>
               </RouterLink>
             </li>
           </ul>
@@ -396,6 +439,15 @@ import { activeSidebar } from '/@src/state/activeSidebarState'
                 class="is-submenu"
               >
                 <i class="lnil lnil-layout"></i>
+                <span>Curved Colored</span>
+              </RouterLink>
+            </li>
+            <li>
+              <RouterLink
+                :to="{ name: 'sidebar-blank-page-4' }"
+                class="is-submenu"
+              >
+                <i class="lnil lnil-layout"></i>
                 <span>Curved Colored Sidebar</span>
               </RouterLink>
             </li>
@@ -426,7 +478,7 @@ import { activeSidebar } from '/@src/state/activeSidebarState'
                 <span>Float Sidebar</span>
               </RouterLink>
             </li>
-            <li><hr class="navbar-divider" /></li>
+            <li class="has-divider"><hr class="navbar-divider" /></li>
             <li>
               <RouterLink
                 :to="{ name: 'navbar-blank-page-1' }"
@@ -507,6 +559,6 @@ import { activeSidebar } from '/@src/state/activeSidebarState'
 </template>
 
 <style lang="scss">
-@import '../../../../../scss/abstracts/_variables.scss';
-@import '../../../../../scss/layout/_sidebar-panel.scss';
+@import '../../scss/abstracts/_variables.scss';
+@import '../../scss/layout/_sidebar-mobile.scss';
 </style>

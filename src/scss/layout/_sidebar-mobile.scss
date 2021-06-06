@@ -20,13 +20,6 @@
   border-top: 1px solid $fade-grey;
   border-right: 1px solid $fade-grey;
   z-index: 99;
-  transform: translateX(-100%);
-  transition: all 0.3s;
-  transition-delay: 0.15s;
-
-  &.is-active {
-    transform: translateX(0);
-  }
 
   .navbar-divider {
     width: 83%;

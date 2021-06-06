@@ -19,7 +19,7 @@ useHead({
 </script>
 
 <template>
-  <NavbarClean theme="center">
+  <NavbarSearch theme="center">
     <!-- Content Wrapper -->
     <div class="view-wrapper has-top-nav">
       <div class="page-content-wrapper">
@@ -45,5 +45,5 @@ useHead({
         </div>
       </div>
     </div>
-  </NavbarClean>
+  </NavbarSearch>
 </template>

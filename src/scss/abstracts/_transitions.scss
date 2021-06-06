@@ -161,16 +161,26 @@
 7. slide-x
 ========================================================================== */
 
-.slide-x-enter-active,
-.slide-x-leave-active {
-  transition: transform 0.2s ease !important;
-  transition-delay: 0 !important;
-  transform: translateX(-100%) !important;
+.slide-x-enter-active {
+  transition: transform 0.3s ease-out;
 }
 
-.slide-x-enter-from,
-.slide-x-leave-to {
+.slide-x-leave-active {
+  transition: transform 0.2s ease-in;
+}
+
+.slide-x-enter-from {
+  transform: translateX(-100%);
+}
+.slide-x-enter-to {
   transform: translateX(0);
+}
+
+.slide-x-leave-from {
+  transform: translateX(0);
+}
+.slide-x-leave-to {
+  transform: translateX(-100%);
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -1,16 +1,17 @@
 <script setup lang="ts">
-import { isMobileSidebarOpen } from '/@src/state/mobileSidebarState'
 import { activeSidebar } from '/@src/state/activeSidebarState'
 </script>
 
 <template>
-  <div class="mobile-subsidebar is-active is-activity">
-    <div class="inner">
-      <div class="sidebar-title">
-        <h3>Components</h3>
+  <div class="sidebar-panel is-generic">
+    <div class="subpanel-header">
+      <h3 class="no-mb">Components</h3>
+      <div class="panel-close" @click="activeSidebar = 'none'">
+        <i class="iconify" data-icon="feather:x"></i>
       </div>
-
-      <ul class="submenu">
+    </div>
+    <div class="inner" data-simplebar>
+      <ul>
         <li>
           <RouterLink :to="{ name: 'components' }">Components Hub</RouterLink>
         </li>
@@ -45,10 +46,13 @@ import { activeSidebar } from '/@src/state/activeSidebarState'
         <li>
           <RouterLink :to="{ name: 'components-icon-wrap' }">
             V-IconWrap
+            <V-Tag label="v1.1" color="primary" outlined curved />
           </RouterLink>
         </li>
         <li>
-          <RouterLink :to="{ name: 'components-snack' }"> V-Snack </RouterLink>
+          <RouterLink :to="{ name: 'components-snack' }">
+            V-Snack <V-Tag label="v1.1" color="primary" outlined curved />
+          </RouterLink>
         </li>
         <li>
           <RouterLink :to="{ name: 'components-tag' }">V-Tag</RouterLink>
@@ -63,7 +67,9 @@ import { activeSidebar } from '/@src/state/activeSidebarState'
           </RouterLink>
         </li>
         <li>
-          <RouterLink :to="{ name: 'components-tabs' }"> V-Tabs </RouterLink>
+          <RouterLink :to="{ name: 'components-tabs' }">
+            V-Tabs <V-Tag label="v1.1" color="primary" outlined curved />
+          </RouterLink>
         </li>
         <li>
           <RouterLink :to="{ name: 'components-flex-pagination' }">
@@ -162,6 +168,7 @@ import { activeSidebar } from '/@src/state/activeSidebarState'
               <RouterLink :to="{ name: 'components-card' }" class="is-submenu">
                 <i class="iconify" data-icon="feather:circle"></i>
                 V-Card
+                <V-Tag label="v1.1" color="primary" outlined curved />
               </RouterLink>
             </li>
             <li>
@@ -302,6 +309,6 @@ import { activeSidebar } from '/@src/state/activeSidebarState'
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_variables.scss';
-@import '../../../../scss/layout/_sidebar-mobile.scss';
+@import '../../scss/abstracts/_variables.scss';
+@import '../../scss/layout/_sidebar-panel.scss';
 </style>

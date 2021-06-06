@@ -13,12 +13,6 @@
 
 import { useHead } from '@vueuse/head'
 
-/**
- * activeSidebar is an exported ref() that we can use everywhere
- * @see /src/components/navigation/desktop/sidebar/subsidebars/GenericSidebar.vue
- */
-import { activeSidebar, toggleSidebar } from '/@src/state/activeSidebarState'
-
 useHead({
   title: 'Blank Page 7 - Sidebar - Vuero',
 })
@@ -26,14 +20,8 @@ useHead({
 
 <template>
   <SidebarLayout theme="float">
-    <!-- Sidebar -->
-    <GenericSidebar />
-
     <!-- Content Wrapper -->
-    <div
-      class="view-wrapper"
-      :class="[activeSidebar !== 'none' && 'is-pushed-full']"
-    >
+    <div class="view-wrapper">
       <div class="page-content-wrapper">
         <div class="page-content is-relative">
           <div class="page-title has-text-centered">

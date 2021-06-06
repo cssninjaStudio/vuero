@@ -26,10 +26,7 @@ watch(
 <template>
   <component :is="navbarLayout" :theme="navbarLayoutTheme">
     <!-- Content Wrapper -->
-    <div
-      class="view-wrapper has-top-nav"
-      :class="[activeSidebar !== 'none' && 'is-pushed-full']"
-    >
+    <div class="view-wrapper has-top-nav">
       <div class="page-content-wrapper">
         <div class="page-content is-relative">
           <RouterView v-slot="{ Component }">

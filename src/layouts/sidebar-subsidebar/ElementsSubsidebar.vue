@@ -3,11 +3,7 @@ import { activeSidebar } from '/@src/state/activeSidebarState'
 </script>
 
 <template>
-  <div
-    id="elements-sidebar"
-    :class="[activeSidebar === 'elements' && 'is-active']"
-    class="sidebar-panel is-generic"
-  >
+  <div class="sidebar-panel is-generic">
     <div class="subpanel-header">
       <h3 class="no-mb">Elements</h3>
       <div class="panel-close" @click="activeSidebar = 'none'">
@@ -328,6 +324,6 @@ import { activeSidebar } from '/@src/state/activeSidebarState'
 </template>
 
 <style lang="scss">
-@import '../../../../../scss/abstracts/_variables.scss';
-@import '../../../../../scss/layout/_sidebar-panel.scss';
+@import '../../scss/abstracts/_variables.scss';
+@import '../../scss/layout/_sidebar-panel.scss';
 </style>

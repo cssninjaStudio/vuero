@@ -17,11 +17,7 @@ const emit = defineEmit(['addConversation', 'selectConversation'])
 </script>
 
 <template>
-  <div
-    id="messages-sidebar"
-    :class="[activeSidebar === 'messages' && 'is-active']"
-    class="sidebar-panel is-messages"
-  >
+  <div class="sidebar-panel is-messages">
     <div class="messages-header">
       <h3 class="no-mb">Chat</h3>
 
@@ -84,6 +80,6 @@ const emit = defineEmit(['addConversation', 'selectConversation'])
 </template>
 
 <style lang="scss">
-@import '../../../../../scss/abstracts/_variables.scss';
-@import '../../../../../scss/layout/_sidebar-panel.scss';
+@import '../../scss/abstracts/_variables.scss';
+@import '../../scss/layout/_sidebar-panel.scss';
 </style>

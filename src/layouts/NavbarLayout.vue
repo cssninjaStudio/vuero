@@ -65,7 +65,10 @@ const filteredData = computed(() => {
     </MobileNavbar>
 
     <!-- Mobile sidebar links -->
-    <MobileSidebar :is-open="isMobileSidebarOpen">
+    <MobileSidebar
+      :is-open="isMobileSidebarOpen"
+      @toggle="isMobileSidebarOpen = !isMobileSidebarOpen"
+    >
       <template #links>
         <li>
           <a

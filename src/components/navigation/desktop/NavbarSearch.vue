@@ -6,11 +6,11 @@ import { useRoute } from 'vue-router'
 import useDropdown from '/@src/composable/useDropdown'
 import { useWindowScroll } from '@vueuse/core'
 
-type NavbarCleanTheme = 'default' | 'center' | 'fade'
+type NavbarSearchTheme = 'default' | 'center' | 'fade'
 
 const props = defineProps({
   theme: {
-    type: String as PropType<NavbarCleanTheme>,
+    type: String as PropType<NavbarSearchTheme>,
     default: 'default',
   },
 })
@@ -81,8 +81,8 @@ const isScrolling = computed(() => {
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_variables.scss';
-@import '../../../../scss/abstracts/_mixins.scss';
-@import '../../../../scss/layout/_navbar-extension.scss';
-@import '../../../../scss/layout/_responsive.scss';
+@import '../../../scss/abstracts/_variables.scss';
+@import '../../../scss/abstracts/_mixins.scss';
+@import '../../../scss/layout/_navbar-extension.scss';
+@import '../../../scss/layout/_responsive.scss';
 </style>

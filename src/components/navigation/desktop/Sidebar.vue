@@ -51,34 +51,18 @@ const themeClasses = computed(() => {
       <div class="naver"></div>
 
       <ul class="icon-menu">
-        <!-- Activity -->
-        <SidebarItemHome />
-        <!-- Layouts -->
-        <SidebarItemLayouts />
-        <!-- Bounties -->
-        <SidebarItemElements />
-        <!-- Bugs -->
-        <SidebarItemComponents />
-        <!-- Messaging -->
-        <SidebarItemMessaging />
+        <slot name="links"></slot>
       </ul>
 
       <!-- User account -->
       <ul class="bottom-menu">
-        <!--Switch Layouts-->
-        <SidebarItemLayoutSwitcher />
-        <!-- Notifications -->
-        <SidebarItemSearch />
-        <!-- Wallet -->
-        <SidebarItemSettings />
-        <!-- Profile -->
-        <SidebarItemProfile />
+        <slot name="bottom-links"></slot>
       </ul>
     </div>
   </div>
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_variables.scss';
-@import '../../../../scss/layout/_sidebar.scss';
+@import '../../../scss/abstracts/_variables.scss';
+@import '../../../scss/layout/_sidebar.scss';
 </style>

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { defineProps } from 'vue'
+import { defineEmit, defineProps } from 'vue'
 
 const props = defineProps({
   isOpen: {
@@ -7,6 +7,7 @@ const props = defineProps({
     default: false,
   },
 })
+const emit = defineEmit(['toggle'])
 </script>
 
 <template>
@@ -27,6 +28,8 @@ const props = defineProps({
       </ul>
     </div>
   </div>
+
+  <div v-if="props.isOpen" class="mobile-overlay" @click="emit('toggle')"></div>
 </template>
 
 <style lang="scss">
@@ -37,7 +40,16 @@ const props = defineProps({
 /* ==========================================================================
 1. Mobile Sidebar
 ========================================================================== */
-
+.mobile-overlay {
+  background: rgb(0 0 0 / 30%);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  backdrop-filter: blur(1px);
+}
 .mobile-main-sidebar {
   position: fixed;
   top: 60px;

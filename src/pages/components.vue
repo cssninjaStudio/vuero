@@ -10,14 +10,13 @@ onMounted(() => {
 </script>
 
 <template>
-  <SidebarLayout :theme="sidebarTheme">
-    <ComponentsSidebar />
-
+  <SidebarLayout
+    :theme="sidebarTheme"
+    open-on-mounted
+    default-sidebar="components"
+  >
     <!-- Content Wrapper -->
-    <div
-      class="view-wrapper"
-      :class="[activeSidebar !== 'none' && 'is-pushed-full']"
-    >
+    <div class="view-wrapper">
       <div class="page-content-wrapper">
         <div class="page-content is-relative">
           <RouterView v-slot="{ Component }">

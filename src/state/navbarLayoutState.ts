@@ -17,8 +17,8 @@ const NavbarLayout = defineAsyncComponent(
 const NavbarDropdownLayout = defineAsyncComponent(
   () => import('/@src/layouts/NavbarDropdownLayout.vue')
 )
-const NavbarCleanLayout = defineAsyncComponent(
-  () => import('/@src/layouts/NavbarCleanLayout.vue')
+const NavbarSearchLayout = defineAsyncComponent(
+  () => import('/@src/layouts/NavbarSearchLayout.vue')
 )
 const layoutsComponents = {
   'navbar-default': NavbarLayout,
@@ -26,9 +26,9 @@ const layoutsComponents = {
   'navbar-colored': NavbarLayout,
   'navbar-dropdown': NavbarDropdownLayout,
   'navbar-dropdown-colored': NavbarDropdownLayout,
-  'navbar-clean': NavbarCleanLayout,
-  'navbar-clean-center': NavbarCleanLayout,
-  'navbar-clean-fade': NavbarCleanLayout,
+  'navbar-clean': NavbarSearchLayout,
+  'navbar-clean-center': NavbarSearchLayout,
+  'navbar-clean-fade': NavbarSearchLayout,
 }
 
 export const navbarLayoutId =

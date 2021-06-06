@@ -106,7 +106,7 @@ watchEffect(onConversationChanged)
 
 <template>
   <SidebarLayout :theme="sidebarTheme">
-    <MessagesSidebar
+    <MessagesSubsidebar
       :conversations="conversations"
       :selected-conversation-id="selectedConversationId"
       @addConversation="
@@ -152,10 +152,7 @@ watchEffect(onConversationChanged)
     <div
       id="vuero-messaging"
       class="view-wrapper"
-      :class="[
-        activeSidebar !== 'none' && 'is-pushed-full',
-        activeSidebar === 'none' && 'is-pushed-messages',
-      ]"
+      :class="[activeSidebar === 'none' && 'is-pushed-messages']"
     >
       <div class="page-content-wrapper">
         <div class="page-content chat-content">

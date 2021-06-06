@@ -4,7 +4,6 @@ import { defineProps } from 'vue'
 defineProps({
   title: {
     type: String,
-    required: true,
     default: 'UI Widget',
   },
   straight: {

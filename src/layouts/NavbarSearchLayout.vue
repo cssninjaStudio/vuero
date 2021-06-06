@@ -3,11 +3,11 @@ import type { PropType } from 'vue'
 import { defineProps, ref, computed } from 'vue'
 import { popovers } from '/@src/data/users/userPopovers'
 
-type NavbarCleanTheme = 'default' | 'center' | 'fade'
+type NavbarSearchTheme = 'default' | 'center' | 'fade'
 
 const props = defineProps({
   theme: {
-    type: String as PropType<NavbarCleanTheme>,
+    type: String as PropType<NavbarSearchTheme>,
     default: 'default',
   },
 })
@@ -64,7 +64,10 @@ const users = [
     </MobileNavbar>
 
     <!-- Mobile sidebar links -->
-    <MobileSidebar :is-open="isMobileSidebarOpen">
+    <MobileSidebar
+      :is-open="isMobileSidebarOpen"
+      @toggle="isMobileSidebarOpen = !isMobileSidebarOpen"
+    >
       <template #links>
         <li>
           <a
@@ -140,7 +143,7 @@ const users = [
     </transition>
 
     <!-- Desktop navigation -->
-    <NavbarClean :theme="props.theme">
+    <NavbarSearch :theme="props.theme">
       <!-- Custom navbar title -->
       <template #title>
         <RouterLink :to="{ name: 'index' }" class="brand">
@@ -267,7 +270,7 @@ const users = [
           <a class="button">Settings</a>
         </div>
       </template>
-    </NavbarClean>
+    </NavbarSearch>
 
     <LanguagesPanel />
     <ActivityPanel />

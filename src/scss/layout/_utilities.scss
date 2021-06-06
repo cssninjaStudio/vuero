@@ -554,8 +554,6 @@ var {
 ========================================================================== */
 
 .app-wrapper {
-  transition: all 0.3s;
-
   &.is-pushed-bottom {
     transform: translateY(50px);
   }
