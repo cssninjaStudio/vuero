@@ -9,7 +9,7 @@ module.exports = {
   },
   extends: [
     'plugin:@typescript-eslint/eslint-recommended',
-    'plugin:vue/vue3-recommended',
+    'plugin:vue/vue3-strongly-recommended',
     'plugin:md/recommended',
     'prettier',
   ],
@@ -25,7 +25,7 @@ module.exports = {
     },
     {
       files: ['*.vue'],
-      extends: ['plugin:prettier-vue/recommended', 'prettier'],
+      extends: ['plugin:vue/vue3-strongly-recommended', 'plugin:prettier-vue/recommended', 'prettier'],
     },
   ],
 }

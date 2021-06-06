@@ -3,6 +3,7 @@
   "less.validate": false,
   "scss.validate": false,
   "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
@@ -11,23 +12,15 @@
   },
   "[markdown]": {
     "editor.formatOnSave": true,
-    "editor.rulers": [80],
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.rulers": [80]
   },
   "eslint.alwaysShowStatus": true,
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "markdown",
-    "vue"
-  ],
-  "i18n-ally.localesPaths": [
-    "src/locales",
-  ],
+  "eslint.validate": ["javascript", "javascriptreact", "markdown", "vue"],
+  "i18n-ally.localesPaths": ["src/locales"],
   "vetur.validation.template": false,
   "vetur.experimental.templateInterpolationService": false,
   "vetur.validation.interpolation": false,
   "vetur.completion.tagCasing": "initial",
   "vetur.completion.autoImport": true,
-  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.tsdk": "node_modules/typescript/lib"
 }
