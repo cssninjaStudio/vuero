@@ -163,7 +163,13 @@ const filteredData = computed(() => {
                 </div>
                 <div class="flex-table-cell cell-end" data-th="Actions">
                   <a
-                    class="button v-button has-dot dark-outlined is-pushed-mobile"
+                    class="
+                      button
+                      v-button
+                      has-dot
+                      dark-outlined
+                      is-pushed-mobile
+                    "
                     >Purchase <i class="fas fa-circle dot"></i> ${{
                       item.price
                     }}</a

@@ -31,9 +31,8 @@ const layoutsComponents = {
   'navbar-clean-fade': NavbarCleanLayout,
 }
 
-export const navbarLayoutId = ref<keyof typeof layoutsComponents>(
-  'navbar-default'
-)
+export const navbarLayoutId =
+  ref<keyof typeof layoutsComponents>('navbar-default')
 export const navbarLayout = computed(() => {
   return layoutsComponents[navbarLayoutId.value] || NavbarLayout
 })

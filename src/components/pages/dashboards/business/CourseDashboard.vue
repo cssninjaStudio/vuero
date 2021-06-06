@@ -164,7 +164,12 @@ import { courses, files, students } from '/@src/data/dashboards/course'
             </div>
             <div class="flex-table-cell cell-end" data-th="Actions">
               <button
-                class="button h-button action-button is-dark-outlined is-pushed-mobile"
+                class="
+                  button
+                  h-button
+                  action-button
+                  is-dark-outlined is-pushed-mobile
+                "
               >
                 Chat
               </button>

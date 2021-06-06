@@ -240,7 +240,11 @@ watch(previewTemplate, () => {
             <div class="uploader-action">
               <span
                 ref="addUploadElement"
-                class="inner-action fileinput-button hint--bubble hint--primary hint--top"
+                class="
+                  inner-action
+                  fileinput-button
+                  hint--bubble hint--primary hint--top
+                "
                 data-hint="Add Files"
               >
                 <i class="iconify" data-icon="feather:plus"></i>
@@ -333,14 +337,22 @@ watch(previewTemplate, () => {
             </div>
             <div class="list-item-actions">
               <button
-                class="list-item-action start hint--bubble hint--primary hint--top"
+                class="
+                  list-item-action
+                  start
+                  hint--bubble hint--primary hint--top
+                "
                 data-hint="Upload File"
               >
                 <i class="iconify" data-icon="feather:play"></i>
               </button>
               <button
                 data-dz-remove
-                class="list-item-action cancel hint--bubble hint--primary hint--top"
+                class="
+                  list-item-action
+                  cancel
+                  hint--bubble hint--primary hint--top
+                "
                 data-hint="Cancel"
               >
                 <i class="iconify" data-icon="feather:arrow-left"></i>

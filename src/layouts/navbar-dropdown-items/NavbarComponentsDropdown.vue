@@ -9,7 +9,13 @@ const selectedCategory = ref('')
   <div
     ref="dropdownElement"
     :class="[isOpen && 'is-active']"
-    class="dropdown is-modern is-spaced dropdown-trigger has-mega-dropdown is-right"
+    class="
+      dropdown
+      is-modern is-spaced
+      dropdown-trigger
+      has-mega-dropdown
+      is-right
+    "
   >
     <div class="is-trigger" aria-haspopup="true" aria-controls="dropdown-menu">
       <button

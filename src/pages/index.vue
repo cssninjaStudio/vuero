@@ -250,7 +250,12 @@ useHead({
               <div class="buttons">
                 <a
                   href="https://themeforest.net/item/vuero-vuejs-3-admin-and-webapp-ui-kit/31053035"
-                  class="button v-button is-primary is-rounded is-elevated action-button"
+                  class="
+                    button
+                    v-button
+                    is-primary is-rounded is-elevated
+                    action-button
+                  "
                   >Buy Now</a
                 >
                 <a href="https://cssninja.io" class="button chat-button"
@@ -464,7 +469,12 @@ useHead({
           <!-- Feature -->
           <div class="columns is-vcentered side-feature">
             <div
-              class="column is-6 has-text-centered h-hidden-desktop h-hidden-tablet-p"
+              class="
+                column
+                is-6
+                has-text-centered
+                h-hidden-desktop h-hidden-tablet-p
+              "
             >
               <img
                 class="light-image-l featured-image"
@@ -540,7 +550,12 @@ useHead({
               <div class="buttons">
                 <a
                   href="https://docs.cssninja.io/vuero"
-                  class="button v-button is-primary is-rounded is-elevated action-button"
+                  class="
+                    button
+                    v-button
+                    is-primary is-rounded is-elevated
+                    action-button
+                  "
                   >Read the Docs</a
                 >
                 <a
@@ -620,7 +635,11 @@ useHead({
           <p class="p-t-40 p-b-40 has-text-centered">
             <a
               href="https://themeforest.net/item/vuero-vuejs-3-admin-and-webapp-ui-kit/31053035"
-              class="button v-button is-rounded is-primary is-elevated is-bold is-huge"
+              class="
+                button
+                v-button
+                is-rounded is-primary is-elevated is-bold is-huge
+              "
             >
               Buy Now
             </a>
@@ -681,7 +700,10 @@ useHead({
                   Professional
                 </h2>
                 <p
-                  class="section-feature-description is-centered-tablet-portrait"
+                  class="
+                    section-feature-description
+                    is-centered-tablet-portrait
+                  "
                 >
                   Vuero is a professional product to build professional
                   applications. You'll find everything you need to build a
@@ -694,7 +716,12 @@ useHead({
             <!-- Feature -->
             <div class="columns is-vcentered side-feature">
               <div
-                class="column is-5 has-text-centered h-hidden-desktop h-hidden-tablet-p"
+                class="
+                  column
+                  is-5
+                  has-text-centered
+                  h-hidden-desktop h-hidden-tablet-p
+                "
               >
                 <img
                   class="light-image-l featured-image"
@@ -712,7 +739,10 @@ useHead({
                   Fast Development
                 </h2>
                 <p
-                  class="section-feature-description is-centered-tablet-portrait"
+                  class="
+                    section-feature-description
+                    is-centered-tablet-portrait
+                  "
                 >
                   Vuero ships with a Vitejs development server that will assist
                   you when customizing the template. It handles .vue files
@@ -754,7 +784,10 @@ useHead({
                   Extensive Documentation
                 </h2>
                 <p
-                  class="section-feature-description is-centered-tablet-portrait"
+                  class="
+                    section-feature-description
+                    is-centered-tablet-portrait
+                  "
                 >
                   Vuero's documentation will be a precious ally, as the template
                   has a large codebase, and a lot of files. Read carefully the

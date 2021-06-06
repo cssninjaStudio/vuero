@@ -91,8 +91,7 @@ const country = ref('')
                         {
                           value: 'english',
                           name: 'English',
-                          icon:
-                            '/images/icons/flags/united-states-of-america.svg',
+                          icon: '/images/icons/flags/united-states-of-america.svg',
                         },
                         {
                           value: 'french',

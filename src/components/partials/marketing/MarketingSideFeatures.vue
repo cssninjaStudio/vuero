@@ -35,7 +35,12 @@
       <!-- Feature -->
       <div class="columns is-vcentered side-feature">
         <div
-          class="column is-6 has-text-centered h-hidden-desktop h-hidden-tablet-p h-hidden-tablet-l"
+          class="
+            column
+            is-6
+            has-text-centered
+            h-hidden-desktop h-hidden-tablet-p h-hidden-tablet-l
+          "
         >
           <img
             class="light-image-l featured-image"

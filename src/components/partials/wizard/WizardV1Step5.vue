@@ -169,7 +169,10 @@ watchEffect(() => {
                     <div class="permissions">
                       <div class="permission-levels">
                         <div
-                          class="permission-level hint--bubble hint--primary hint--top"
+                          class="
+                            permission-level
+                            hint--bubble hint--primary hint--top
+                          "
                           aria-label="Reader"
                           @click="setTeammateRole(teammate, 'reader')"
                         >
@@ -181,7 +184,10 @@ watchEffect(() => {
                           ></div>
                         </div>
                         <div
-                          class="permission-level hint--bubble hint--primary hint--top"
+                          class="
+                            permission-level
+                            hint--bubble hint--primary hint--top
+                          "
                           aria-label="Collaborator"
                           @click="setTeammateRole(teammate, 'collaborator')"
                         >
@@ -193,7 +199,10 @@ watchEffect(() => {
                           ></div>
                         </div>
                         <div
-                          class="permission-level hint--bubble hint--primary hint--top"
+                          class="
+                            permission-level
+                            hint--bubble hint--primary hint--top
+                          "
                           aria-label="Manager"
                           @click="setTeammateRole(teammate, 'manager')"
                         >
@@ -205,7 +214,10 @@ watchEffect(() => {
                           ></div>
                         </div>
                         <div
-                          class="permission-level hint--bubble hint--primary hint--top"
+                          class="
+                            permission-level
+                            hint--bubble hint--primary hint--top
+                          "
                           aria-label="Owner"
                           @click="setTeammateRole(teammate, 'owner')"
                         >
@@ -217,7 +229,11 @@ watchEffect(() => {
                           ></div>
                         </div>
                         <progress
-                          class="progress permissions-progress is-primary is-tiny"
+                          class="
+                            progress
+                            permissions-progress
+                            is-primary is-tiny
+                          "
                           :value="getRoleLevel(teammate)"
                           :max="3"
                         >

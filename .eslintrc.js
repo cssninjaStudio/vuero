@@ -10,7 +10,6 @@ module.exports = {
   extends: [
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:vue/vue3-strongly-recommended',
-    'plugin:md/recommended',
     'prettier',
   ],
   plugins: ['@typescript-eslint'],
@@ -22,10 +21,7 @@ module.exports = {
     {
       files: ['*.md'],
       parser: 'markdown-eslint-parser',
-    },
-    {
-      files: ['*.vue'],
-      extends: ['plugin:vue/vue3-strongly-recommended', 'plugin:prettier-vue/recommended', 'prettier'],
+      extends: ['plugin:md/recommended', 'prettier'],
     },
   ],
 }

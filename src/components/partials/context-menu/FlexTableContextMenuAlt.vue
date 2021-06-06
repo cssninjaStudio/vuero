@@ -7,7 +7,12 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
   <div
     ref="dropdownElement"
     :class="[isOpen && 'is-active']"
-    class="dropdown is-spaced is-dots is-right dropdown-trigger is-pushed-mobile"
+    class="
+      dropdown
+      is-spaced is-dots is-right
+      dropdown-trigger
+      is-pushed-mobile
+    "
   >
     <div class="is-trigger" aria-haspopup="true" @click="toggle">
       <i class="iconify" data-icon="feather:more-vertical"></i>

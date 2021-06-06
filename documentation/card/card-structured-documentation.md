@@ -42,8 +42,7 @@ come content. Check the markup for more details about usage.
                   color: 'h-yellow',
                   location: 'Los Angeles, CA',
                   position: 'Sales Manager',
-                  bio:
-                    'This is a nice user description that we can use as demo content.',
+                  bio: 'This is a nice user description that we can use as demo content.',
                 }"
               />
             </template>

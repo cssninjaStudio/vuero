@@ -8,7 +8,11 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
   <div
     ref="dropdownElement"
     :class="[isOpen && 'is-active']"
-    class="navbar-item has-dropdown is-notification is-hidden-tablet is-hidden-desktop"
+    class="
+      navbar-item
+      has-dropdown
+      is-notification is-hidden-tablet is-hidden-desktop
+    "
   >
     <a class="navbar-link is-arrowless" @click="toggle">
       <i class="iconify" data-icon="feather:bell"></i>

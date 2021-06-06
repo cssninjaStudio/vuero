@@ -7,7 +7,13 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
   <div
     ref="dropdownElement"
     :class="[isOpen && 'is-active']"
-    class="dropdown is-right is-spaced dropdown-trigger profile-dropdown user-dropdown"
+    class="
+      dropdown
+      is-right is-spaced
+      dropdown-trigger
+      profile-dropdown
+      user-dropdown
+    "
   >
     <div class="is-trigger" aria-haspopup="true" @click="toggle">
       <V-Avatar picture="/demo/avatars/8.jpg" />
@@ -63,7 +69,12 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
         <hr class="dropdown-divider" />
         <div class="dropdown-item is-button">
           <button
-            class="button v-button is-primary is-raised is-fullwidth logout-button"
+            class="
+              button
+              v-button
+              is-primary is-raised is-fullwidth
+              logout-button
+            "
           >
             <span class="icon is-small">
               <i class="iconify" data-icon="feather:log-out"></i>

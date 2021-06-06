@@ -363,7 +363,9 @@ const resetAngle = () => {
           ></button>
           <button
             v-if="options.rotationOn"
-            class="pswp__button pswp__button--rotate pswp__button--rotate--right"
+            class="
+              pswp__button pswp__button--rotate pswp__button--rotate--right
+            "
             title="Rotate right"
             @click="rotate(90)"
           ></button>

@@ -68,9 +68,8 @@ const registerEvents = () => {
     const paginationElement = wrapperElement.value.querySelector(
       '.dataTable-pagination'
     ) as HTMLElement
-    const sortersElement = wrapperElement.value.querySelectorAll(
-      '.dataTable-sorter'
-    )
+    const sortersElement =
+      wrapperElement.value.querySelectorAll('.dataTable-sorter')
 
     if (searchElement) {
       searchElement.addEventListener('focus', onFocus, false)
@@ -140,9 +139,8 @@ const unregisterEvents = () => {
     const paginationElement = wrapperElement.value.querySelector(
       '.dataTable-pagination'
     ) as HTMLElement
-    const sortersElement = wrapperElement.value.querySelectorAll(
-      '.dataTable-sorter'
-    )
+    const sortersElement =
+      wrapperElement.value.querySelectorAll('.dataTable-sorter')
 
     if (searchElement) {
       searchElement.removeEventListener('focus', onFocus)
