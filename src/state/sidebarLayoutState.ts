@@ -21,3 +21,4 @@ export type SidebarTheme =
   | 'labels-hover'
 
 export const sidebarTheme = ref<SidebarTheme>('default')
+export const pageTitle = ref('Welcome')

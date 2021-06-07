@@ -1,13 +1,9 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
-import { onMounted, ref } from 'vue'
 
-import { activeSidebar, toggleSidebar } from '/@src/state/activeSidebarState'
+import { pageTitle } from '/@src/state/sidebarLayoutState'
 
-onMounted(() => {
-  activeSidebar.value = 'elements'
-})
-
+pageTitle.value = 'Line Icons Regular Icons'
 useHead({
   title: 'Line Icons Regular Icons - Elements - Vuero',
 })

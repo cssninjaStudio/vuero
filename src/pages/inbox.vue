@@ -48,7 +48,7 @@ watch(selectedConversationId, () => {
 })
 
 useHead({
-  title: 'Dashboard Apps 2 - Sidebar - Vuero',
+  title: 'Apps 2 - Sidebar - Vuero',
 })
 </script>
 

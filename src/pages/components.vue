@@ -1,12 +1,5 @@
 <script setup lang="ts">
-import { onMounted } from 'vue'
-
-import { activeSidebar } from '/@src/state/activeSidebarState'
 import { sidebarTheme } from '/@src/state/sidebarLayoutState'
-
-onMounted(() => {
-  activeSidebar.value = 'components'
-})
 </script>
 
 <template>
@@ -16,17 +9,11 @@ onMounted(() => {
     default-sidebar="components"
   >
     <!-- Content Wrapper -->
-    <div class="view-wrapper">
-      <div class="page-content-wrapper">
-        <div class="page-content is-relative">
-          <RouterView v-slot="{ Component }">
-            <transition name="translate-page-y" mode="out-in">
-              <component :is="Component" />
-            </transition>
-          </RouterView>
-        </div>
-      </div>
-    </div>
+    <RouterView v-slot="{ Component }">
+      <transition name="translate-page-y" mode="out-in">
+        <component :is="Component" />
+      </transition>
+    </RouterView>
   </SidebarLayout>
 </template>
 

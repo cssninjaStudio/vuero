@@ -1,14 +1,10 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
-import { onMounted } from 'vue'
 
-import { activeSidebar, toggleSidebar } from '/@src/state/activeSidebarState'
 import { flexRowsBasic } from '/@src/data/documentation/table'
+import { pageTitle } from '/@src/state/sidebarLayoutState'
 
-onMounted(() => {
-  activeSidebar.value = 'components'
-})
-
+pageTitle.value = 'V-FlexTable (Compact)'
 useHead({
   title: 'V-FlexTable Compact - Components - Vuero',
 })

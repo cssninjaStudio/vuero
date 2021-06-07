@@ -1,9 +1,10 @@
 <script setup lang="ts">
 import type { PropType } from 'vue'
-import { onMounted, defineProps, ref, watchEffect, watch } from 'vue'
+import { defineProps, ref, watchEffect, watch } from 'vue'
 import { useRoute } from 'vue-router'
 
 import { activePanel } from '/@src/state/activePanelState'
+import { pageTitle } from '/@src/state/sidebarLayoutState'
 
 type SidebarTheme =
   | 'default'
@@ -65,15 +66,20 @@ watchEffect(
   },
   { flush: 'post' }
 )
-watch(route, () => {
-  if (props.closeOnChange && isDesktopSidebarOpen.value) {
-    isDesktopSidebarOpen.value = false
+watch(
+  () => route.fullPath,
+  () => {
+    isMobileSidebarOpen.value = false
+
+    if (props.closeOnChange && isDesktopSidebarOpen.value) {
+      isDesktopSidebarOpen.value = false
+    }
   }
-})
+)
 </script>
 
 <template>
-  <div class="default-layout">
+  <div class="sidebar-layout">
     <div class="app-overlay"></div>
 
     <!-- Mobile navigation -->
@@ -167,7 +173,7 @@ watch(route, () => {
     <!-- Desktop navigation -->
     <CircularMenu />
 
-    <Sidebar :theme="props.theme">
+    <Sidebar :theme="props.theme" :is-open="isDesktopSidebarOpen">
       <template #links>
         <!-- Dashboards -->
         <li>
@@ -261,19 +267,23 @@ watch(route, () => {
     <transition name="slide-x">
       <ComponentsSubsidebar
         v-if="isDesktopSidebarOpen && activeMobileSubsidebar === 'components'"
+        @close="isDesktopSidebarOpen = false"
       />
       <ElementsSubsidebar
         v-else-if="
           isDesktopSidebarOpen && activeMobileSubsidebar === 'elements'
         "
+        @close="isDesktopSidebarOpen = false"
       />
       <DashboardsSubsidebar
         v-else-if="
           isDesktopSidebarOpen && activeMobileSubsidebar === 'dashboard'
         "
+        @close="isDesktopSidebarOpen = false"
       />
       <LayoutsSubsidebar
         v-else-if="isDesktopSidebarOpen && activeMobileSubsidebar === 'layout'"
+        @close="isDesktopSidebarOpen = false"
       />
     </transition>
 
@@ -281,6 +291,39 @@ watch(route, () => {
     <ActivityPanel />
     <SearchPanel />
 
-    <slot></slot>
+    <div class="view-wrapper">
+      <div class="page-content-wrapper">
+        <div class="page-content is-relative">
+          <div class="page-title has-text-centered">
+            <!-- Sidebar Trigger -->
+            <div
+              class="vuero-hamburger nav-trigger push-resize"
+              @click="isDesktopSidebarOpen = !isDesktopSidebarOpen"
+            >
+              <span class="menu-toggle has-chevron">
+                <span
+                  :class="[isDesktopSidebarOpen && 'active']"
+                  class="icon-box-toggle"
+                >
+                  <span class="rotate">
+                    <i class="icon-line-top"></i>
+                    <i class="icon-line-center"></i>
+                    <i class="icon-line-bottom"></i>
+                  </span>
+                </span>
+              </span>
+            </div>
+
+            <div class="title-wrap">
+              <h1 class="title is-4">{{ pageTitle }}</h1>
+            </div>
+
+            <Toolbar />
+          </div>
+
+          <slot></slot>
+        </div>
+      </div>
+    </div>
   </div>
 </template>

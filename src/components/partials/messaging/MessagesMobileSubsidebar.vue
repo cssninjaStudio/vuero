@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { isMobileSidebarOpen } from '/@src/state/mobileSidebarState'
 import { activeSidebar } from '/@src/state/activeSidebarState'
 import { defineEmit, defineProps } from 'vue'
 
@@ -18,10 +17,7 @@ const emit = defineEmit(['selectConversation'])
 </script>
 
 <template>
-  <div
-    :class="[isMobileSidebarOpen && 'is-active']"
-    class="mobile-subsidebar is-messaging"
-  >
+  <div class="mobile-subsidebar is-messaging">
     <div class="inner">
       <div class="sidebar-title">
         <h3>Messages</h3>

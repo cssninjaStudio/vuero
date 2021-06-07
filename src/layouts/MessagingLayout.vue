@@ -27,7 +27,7 @@ const isDesktopSidebarOpen = ref(false)
 </script>
 
 <template>
-  <div class="default-layout">
+  <div class="sidebar-layout">
     <div class="app-overlay"></div>
 
     <!-- Mobile navigation -->

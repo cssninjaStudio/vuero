@@ -1,5 +1,7 @@
 <script setup lang="ts">
-import { activeSidebar } from '/@src/state/activeSidebarState'
+import { defineEmit } from 'vue'
+
+const emit = defineEmit(['close'])
 </script>
 
 <template>
@@ -8,7 +10,7 @@ import { activeSidebar } from '/@src/state/activeSidebarState'
       <ProjectsQuickDropdown />
 
       <h3 class="no-mb">Layouts</h3>
-      <div class="panel-close" @click="activeSidebar = 'none'">
+      <div class="panel-close" @click="emit('close')">
         <i class="iconify" data-icon="feather:x"></i>
       </div>
     </div>

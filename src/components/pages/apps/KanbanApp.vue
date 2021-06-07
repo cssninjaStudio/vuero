@@ -134,8 +134,6 @@ onMounted(() => {
 
 <template>
   <div class="page-content kanban-content is-relative">
-    <slot name="title"></slot>
-
     <div class="kanban-toolbar">
       <V-Control icon="feather:search">
         <input v-model="search" class="input" placeholder="Search..." />

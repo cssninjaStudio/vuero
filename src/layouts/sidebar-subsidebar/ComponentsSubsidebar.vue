@@ -1,12 +1,14 @@
 <script setup lang="ts">
-import { activeSidebar } from '/@src/state/activeSidebarState'
+import { defineEmit } from 'vue'
+
+const emit = defineEmit(['close'])
 </script>
 
 <template>
   <div class="sidebar-panel is-generic">
     <div class="subpanel-header">
       <h3 class="no-mb">Components</h3>
-      <div class="panel-close" @click="activeSidebar = 'none'">
+      <div class="panel-close" @click="emit('close')">
         <i class="iconify" data-icon="feather:x"></i>
       </div>
     </div>

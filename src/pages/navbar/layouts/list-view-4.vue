@@ -2,9 +2,12 @@
 import { useHead } from '@vueuse/head'
 import { ref } from 'vue'
 
+import { pageTitle } from '/@src/state/navbarLayoutState'
+
 type TabId = 'active' | 'inactive'
 const activeTab = ref<TabId>('active')
 
+pageTitle.value = 'List View 4'
 useHead({
   title: 'List View 4 - Navbar - Vuero',
 })

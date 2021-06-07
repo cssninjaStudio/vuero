@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import type { PropType } from 'vue'
 import { computed, defineProps } from 'vue'
-import { activeSidebar } from '/@src/state/activeSidebarState'
 
 type SidebarTheme =
   | 'default'
@@ -17,6 +16,10 @@ const props = defineProps({
     type: String as PropType<SidebarTheme>,
     default: 'default',
   },
+  isOpen: {
+    type: Boolean,
+    default: false,
+  },
 })
 const themeClasses = computed(() => {
   switch (props.theme) {
@@ -27,13 +30,11 @@ const themeClasses = computed(() => {
     case 'labels-hover':
       return 'has-labels-hover'
     case 'float':
-      return activeSidebar.value !== 'none' ? 'is-float is-curved' : 'is-float'
+      return !props.isOpen ? 'is-float is-curved' : 'is-float'
     case 'curved':
-      return activeSidebar.value !== 'none' ? 'is-curved' : ''
+      return !props.isOpen ? 'is-curved' : ''
     case 'color-curved':
-      return activeSidebar.value !== 'none'
-        ? 'is-colored is-curved'
-        : 'is-colored'
+      return !props.isOpen ? 'is-colored is-curved' : 'is-colored'
     default:
       return ''
   }

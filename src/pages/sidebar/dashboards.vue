@@ -1,5 +1,8 @@
 <script setup lang="ts">
+import { useRoute } from 'vue-router'
 import { sidebarTheme } from '/@src/state/sidebarLayoutState'
+
+const route = useRoute()
 </script>
 
 <template>
@@ -9,16 +12,10 @@ import { sidebarTheme } from '/@src/state/sidebarLayoutState'
     default-sidebar="dashboard"
   >
     <!-- Content Wrapper -->
-    <div class="view-wrapper">
-      <div class="page-content-wrapper">
-        <div class="page-content is-relative">
-          <RouterView v-slot="{ Component }">
-            <transition name="fade-fast" mode="out-in">
-              <component :is="Component" />
-            </transition>
-          </RouterView>
-        </div>
-      </div>
-    </div>
+    <RouterView v-slot="{ Component }">
+      <transition name="fade-fast" mode="out-in">
+        <component :is="Component" :key="route.fullPath" />
+      </transition>
+    </RouterView>
   </SidebarLayout>
 </template>

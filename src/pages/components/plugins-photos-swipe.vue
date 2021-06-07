@@ -1,16 +1,12 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
-import { onMounted } from 'vue'
 
 import useMakrdownToc from '/@src/composable/useMarkdownToc'
-import { activeSidebar, toggleSidebar } from '/@src/state/activeSidebarState'
+import { pageTitle } from '/@src/state/sidebarLayoutState'
 
 const { markdownContainer, toc } = useMakrdownToc()
 
-onMounted(() => {
-  activeSidebar.value = 'components'
-})
-
+pageTitle.value = 'V-PhotosSwipe'
 useHead({
   title: 'V-PhotosSwipe - Plugins - Vuero',
 })

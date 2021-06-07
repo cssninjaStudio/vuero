@@ -1,10 +1,11 @@
 <script setup lang="ts">
 import type { PropType } from 'vue'
-import { computed, defineProps, ref } from 'vue'
+import { computed, defineProps, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 
 import useDropdown from '/@src/composable/useDropdown'
 import { popovers } from '/@src/data/users/userPopovers'
+import { pageTitle } from '/@src/state/navbarLayoutState'
 
 type NavbarTheme = 'default' | 'colored' | 'fade'
 type SubnavId =
@@ -49,6 +50,13 @@ const filteredData = computed(() => {
     )
   })
 })
+watch(
+  () => route.fullPath,
+  () => {
+    activeSubnav.value = 'closed'
+    isMobileSidebarOpen.value = false
+  }
+)
 </script>
 
 <template>
@@ -154,7 +162,7 @@ const filteredData = computed(() => {
         <div class="separator"></div>
 
         <ProjectsQuickDropdown />
-        <h1 class="title is-5">Welcome</h1>
+        <h1 class="title is-5">{{ pageTitle }}</h1>
       </template>
 
       <!-- Custom navbar toolbar -->
@@ -289,6 +297,23 @@ const filteredData = computed(() => {
     <LanguagesPanel />
     <ActivityPanel />
 
-    <slot></slot>
+    <div class="view-wrapper has-top-nav">
+      <div class="page-content-wrapper">
+        <div class="page-content is-relative">
+          <div class="is-navbar-lg">
+            <div class="page-title has-text-centered">
+              <!-- Mobile Page Title -->
+              <div class="title-wrap">
+                <h1 class="title is-4">{{ pageTitle }}</h1>
+              </div>
+
+              <Toolbar />
+            </div>
+
+            <slot></slot>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>

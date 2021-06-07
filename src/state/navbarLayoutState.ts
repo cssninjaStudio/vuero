@@ -33,7 +33,7 @@ const layoutsComponents = {
 
 export const navbarLayoutId =
   ref<keyof typeof layoutsComponents>('navbar-default')
-export const navbarLayout = computed(() => {
+export const navbarLayoutComponent = computed(() => {
   return layoutsComponents[navbarLayoutId.value] || NavbarLayout
 })
 export const navbarLayoutTheme = computed(() => {
@@ -50,3 +50,4 @@ export const navbarLayoutTheme = computed(() => {
       return 'default'
   }
 })
+export const pageTitle = ref('Welcome')

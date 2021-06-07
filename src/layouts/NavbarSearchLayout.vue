@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import type { PropType } from 'vue'
-import { defineProps, ref, computed } from 'vue'
+import { defineProps, ref, computed, watch } from 'vue'
+import { useRoute } from 'vue-router'
 import { popovers } from '/@src/data/users/userPopovers'
+import { pageTitle } from '/@src/state/navbarLayoutState'
 
 type NavbarSearchTheme = 'default' | 'center' | 'fade'
 
@@ -14,6 +16,7 @@ const props = defineProps({
 const isMobileSidebarOpen = ref(false)
 const activeMobileSubsidebar = ref('dashboard')
 
+const route = useRoute()
 const filter = ref('')
 const filteredData = computed(() => {
   if (!filter.value) {
@@ -48,6 +51,13 @@ const users = [
     color: 'h-purple',
   },
 ]
+
+watch(
+  () => route.fullPath,
+  () => {
+    isMobileSidebarOpen.value = false
+  }
+)
 </script>
 
 <template>
@@ -152,7 +162,7 @@ const users = [
         <div class="separator"></div>
 
         <ProjectsQuickDropdown />
-        <h1 class="title is-6">Welcome</h1>
+        <h1 class="title is-6">{{ pageTitle }}</h1>
       </template>
 
       <template #subtitle>
@@ -275,7 +285,24 @@ const users = [
     <LanguagesPanel />
     <ActivityPanel />
 
-    <slot></slot>
+    <div class="view-wrapper has-top-nav">
+      <div class="page-content-wrapper">
+        <div class="page-content is-relative">
+          <div class="is-navbar-lg">
+            <div class="page-title has-text-centered">
+              <!-- Mobile Page Title -->
+              <div class="title-wrap">
+                <h1 class="title is-4">{{ pageTitle }}</h1>
+              </div>
+
+              <Toolbar />
+            </div>
+
+            <slot></slot>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
