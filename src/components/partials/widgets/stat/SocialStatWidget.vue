@@ -35,14 +35,18 @@ defineProps({
         class="follow-icon"
         :class="[squared && 'is-squared', colored && 'is-primary']"
       >
-        <i :class="icon"></i>
+        <i aria-hidden="true" :class="icon"></i>
       </div>
       <div class="follow-count">
         <span class="dark-inverted">{{ value }} Followers</span>
         <span>Based on your latest stats</span>
       </div>
       <a href="#" class="go-icon">
-        <i class="iconify" data-icon="feather:chevron-right"></i>
+        <i
+          aria-hidden="true"
+          class="iconify"
+          data-icon="feather:chevron-right"
+        ></i>
       </a>
     </div>
   </div>

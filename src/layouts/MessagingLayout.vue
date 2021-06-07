@@ -47,27 +47,35 @@ const isDesktopSidebarOpen = ref(false)
       <template #links>
         <li>
           <RouterLink :to="{ name: 'sidebar-dashboards' }">
-            <i class="iconify" data-icon="feather:activity"></i>
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:activity"
+            ></i>
           </RouterLink>
         </li>
         <li>
           <RouterLink :to="{ name: 'sidebar-layouts' }">
-            <i class="iconify" data-icon="feather:grid"></i>
+            <i aria-hidden="true" class="iconify" data-icon="feather:grid"></i>
           </RouterLink>
         </li>
         <li>
           <RouterLink :to="{ name: 'elements' }">
-            <i class="iconify" data-icon="feather:box"></i>
+            <i aria-hidden="true" class="iconify" data-icon="feather:box"></i>
           </RouterLink>
         </li>
         <li>
           <RouterLink :to="{ name: 'components' }">
-            <i class="iconify" data-icon="feather:cpu"></i>
+            <i aria-hidden="true" class="iconify" data-icon="feather:cpu"></i>
           </RouterLink>
         </li>
         <li>
           <RouterLink :to="{ name: 'messaging-v1' }">
-            <i class="iconify" data-icon="feather:message-circle"></i>
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:message-circle"
+            ></i>
           </RouterLink>
         </li>
       </template>
@@ -75,12 +83,20 @@ const isDesktopSidebarOpen = ref(false)
       <template #bottom-links>
         <li>
           <a @click="activePanel = 'search'">
-            <i class="iconify" data-icon="feather:search"></i>
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:search"
+            ></i>
           </a>
         </li>
         <li>
           <a href="#">
-            <i class="iconify" data-icon="feather:settings"></i>
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:settings"
+            ></i>
           </a>
         </li>
       </template>
@@ -91,28 +107,44 @@ const isDesktopSidebarOpen = ref(false)
         <!-- Dashboards -->
         <li>
           <RouterLink :to="{ name: 'sidebar-dashboards' }">
-            <i class="iconify sidebar-svg" data-icon="feather:activity"></i>
+            <i
+              aria-hidden="true"
+              class="iconify sidebar-svg"
+              data-icon="feather:activity"
+            ></i>
           </RouterLink>
         </li>
 
         <!-- Layouts -->
         <li>
           <RouterLink :to="{ name: 'sidebar-layouts' }">
-            <i class="iconify sidebar-svg" data-icon="feather:grid"></i>
+            <i
+              aria-hidden="true"
+              class="iconify sidebar-svg"
+              data-icon="feather:grid"
+            ></i>
           </RouterLink>
         </li>
 
         <!-- Elements -->
         <li>
           <RouterLink :to="{ name: 'elements' }">
-            <i class="iconify sidebar-svg" data-icon="feather:box"></i>
+            <i
+              aria-hidden="true"
+              class="iconify sidebar-svg"
+              data-icon="feather:box"
+            ></i>
           </RouterLink>
         </li>
 
         <!-- Components -->
         <li>
           <RouterLink :to="{ name: 'components' }">
-            <i class="iconify sidebar-svg" data-icon="feather:cpu"></i>
+            <i
+              aria-hidden="true"
+              class="iconify sidebar-svg"
+              data-icon="feather:cpu"
+            ></i>
           </RouterLink>
         </li>
 
@@ -120,6 +152,7 @@ const isDesktopSidebarOpen = ref(false)
         <li>
           <RouterLink :to="{ name: 'messaging-v1' }">
             <i
+              aria-hidden="true"
               class="iconify sidebar-svg"
               data-icon="feather:message-circle"
             ></i>
@@ -130,11 +163,18 @@ const isDesktopSidebarOpen = ref(false)
       <template #bottom-links>
         <!-- Search -->
         <li class="right-panel-trigger">
-          <a data-content="Search" @click="activePanel = 'search'"
-            ><i class="iconify sidebar-svg" data-icon="feather-search" />
+          <a data-content="Search" @click="activePanel = 'search'">
+            <i
+              aria-hidden="true"
+              class="iconify sidebar-svg"
+              data-icon="feather-search"
+            />
           </a>
           <a class="is-hidden is-inactive" @click="activePanel = 'none'">
-            <i class="iconify sidebar-svg" data-icon="feather-x"
+            <i
+              aria-hidden="true"
+              class="iconify sidebar-svg"
+              data-icon="feather-x"
           /></a>
         </li>
 
@@ -145,7 +185,11 @@ const isDesktopSidebarOpen = ref(false)
             :to="{ name: 'sidebar-layouts-profile-settings' }"
             data-content="Settings"
           >
-            <i class="iconify sidebar-svg" data-icon="feather:settings"></i>
+            <i
+              aria-hidden="true"
+              class="iconify sidebar-svg"
+              data-icon="feather:settings"
+            ></i>
           </RouterLink>
         </li>
 

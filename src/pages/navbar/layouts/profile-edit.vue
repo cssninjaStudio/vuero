@@ -25,40 +25,40 @@ import { activeSidebar, toggleSidebar } from '/@src/state/activeSidebarState'
                 :to="{ name: 'navbar-layouts-profile-edit' }"
                 class="account-menu-item"
               >
-                <i class="lnil lnil-user-alt"></i>
+                <i aria-hidden="true" class="lnil lnil-user-alt"></i>
                 <span>General</span>
                 <span class="end">
-                  <i class="fas fa-arrow-right"></i>
+                  <i aria-hidden="true" class="fas fa-arrow-right"></i>
                 </span>
               </RouterLink>
               <RouterLink
                 :to="{ name: 'navbar-layouts-profile-edit-experience' }"
                 class="account-menu-item"
               >
-                <i class="lnil lnil-crown-alt"></i>
+                <i aria-hidden="true" class="lnil lnil-crown-alt"></i>
                 <span>Experience</span>
                 <span class="end">
-                  <i class="fas fa-arrow-right"></i>
+                  <i aria-hidden="true" class="fas fa-arrow-right"></i>
                 </span>
               </RouterLink>
               <RouterLink
                 :to="{ name: 'navbar-layouts-profile-edit-skills' }"
                 class="account-menu-item"
               >
-                <i class="lnil lnil-quill"></i>
+                <i aria-hidden="true" class="lnil lnil-quill"></i>
                 <span>Skills</span>
                 <span class="end">
-                  <i class="fas fa-arrow-right"></i>
+                  <i aria-hidden="true" class="fas fa-arrow-right"></i>
                 </span>
               </RouterLink>
               <RouterLink
                 :to="{ name: 'navbar-layouts-profile-edit-settings' }"
                 class="account-menu-item"
               >
-                <i class="lnil lnil-cog"></i>
+                <i aria-hidden="true" class="lnil lnil-cog"></i>
                 <span>Settings</span>
                 <span class="end">
-                  <i class="fas fa-arrow-right"></i>
+                  <i aria-hidden="true" class="fas fa-arrow-right"></i>
                 </span>
               </RouterLink>
             </div>

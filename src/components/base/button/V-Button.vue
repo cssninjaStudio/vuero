@@ -155,10 +155,10 @@ const classes = computed(() => {
 <template>
   <RouterLink v-if="to" :to="to" :class="classes">
     <span v-if="isIconify" class="icon">
-      <i class="iconify" :data-icon="icon"></i>
+      <i aria-hidden="true" class="iconify" :data-icon="icon"></i>
     </span>
     <span v-else-if="icon" class="icon">
-      <i :class="icon"></i>
+      <i aria-hidden="true" :class="icon"></i>
     </span>
     <span>
       <slot></slot>
@@ -166,10 +166,10 @@ const classes = computed(() => {
   </RouterLink>
   <a v-else-if="href" :href="href" :class="classes">
     <span v-if="isIconify" class="icon">
-      <i class="iconify" :data-icon="icon"></i>
+      <i aria-hidden="true" class="iconify" :data-icon="icon"></i>
     </span>
     <span v-else-if="icon" class="icon">
-      <i :class="icon"></i>
+      <i aria-hidden="true" :class="icon"></i>
     </span>
     <span>
       <slot></slot>
@@ -177,10 +177,10 @@ const classes = computed(() => {
   </a>
   <button v-else :class="classes" :disabled="disabled">
     <span v-if="isIconify" class="icon">
-      <i class="iconify" :data-icon="icon"></i>
+      <i aria-hidden="true" class="iconify" :data-icon="icon"></i>
     </span>
     <span v-else-if="icon" class="icon">
-      <i :class="icon"></i>
+      <i aria-hidden="true" :class="icon"></i>
     </span>
     <span>
       <slot></slot>

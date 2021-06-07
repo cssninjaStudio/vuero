@@ -113,8 +113,13 @@ const filteredData = computed(() => {
                   <div>
                     <span class="item-name dark-inverted">{{ item.name }}</span>
                     <span class="item-meta">
-                      <span
-                        ><i class="iconify" data-icon="feather:clock"></i
+                      <span>
+                        <i
+                          aria-hidden="true"
+                          class="iconify"
+                          data-icon="feather:clock"
+                        >
+                        </i
                         >{{ item.duration }}</span
                       >
                     </span>

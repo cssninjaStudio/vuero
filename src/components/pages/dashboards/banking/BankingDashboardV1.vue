@@ -19,7 +19,11 @@ import {
             <h3 class="dark-inverted">My Cards</h3>
             <button class="button is-circle is-dark-outlined">
               <span class="icon is-small">
-                <i class="iconify" data-icon="feather:plus"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:plus"
+                ></i>
               </span>
             </button>
           </div>
@@ -57,7 +61,10 @@ import {
               </div>
               <div class="info-block-line">
                 <h4 class="dark-inverted">Status</h4>
-                <span><i class="fas fa-circle text-success"></i>Active</span>
+                <span>
+                  <i aria-hidden="true" class="fas fa-circle text-success"></i>
+                  Active
+                </span>
               </div>
               <div class="info-block-line">
                 <h4 class="dark-inverted">Expires in</h4>
@@ -117,7 +124,7 @@ import {
             >
               <template #icon>
                 <V-IconBox color="green" rounded>
-                  <i class="lnil lnil-service"></i>
+                  <i aria-hidden="true" class="lnil lnil-service"></i>
                 </V-IconBox>
               </template>
               <template #action>
@@ -133,7 +140,7 @@ import {
             >
               <template #icon>
                 <V-IconBox color="orange" rounded>
-                  <i class="lnil lnil-analytics-alt-1"></i>
+                  <i aria-hidden="true" class="lnil lnil-analytics-alt-1"></i>
                 </V-IconBox>
               </template>
               <template #action>
@@ -149,7 +156,7 @@ import {
             >
               <template #icon>
                 <V-IconBox color="purple" rounded>
-                  <i class="lnil lnil-cart-alt"></i>
+                  <i aria-hidden="true" class="lnil lnil-cart-alt"></i>
                 </V-IconBox>
               </template>
               <template #action>
@@ -178,14 +185,22 @@ import {
                   >
                     <template #singlelabel="{ value }">
                       <div class="multiselect-single-label">
-                        <img class="select-label-icon" :src="value.icon" />
+                        <img
+                          class="select-label-icon"
+                          :src="value.icon"
+                          alt=""
+                        />
                         <span class="select-label-text">
                           {{ value.name }}
                         </span>
                       </div>
                     </template>
                     <template #option="{ option }">
-                      <img class="select-option-icon" :src="option.icon" />
+                      <img
+                        class="select-option-icon"
+                        :src="option.icon"
+                        alt=""
+                      />
                       <span class="select-label-text">
                         {{ option.name }}
                       </span>
@@ -297,8 +312,11 @@ import {
                 </div>
                 <div class="actions">
                   <span>See all Contacts</span>
-                  <a class="is-dark-primary-hover"
-                    ><i class="iconify" data-icon="feather:arrow-right"
+                  <a class="is-dark-primary-hover">
+                    <i
+                      aria-hidden="true"
+                      class="iconify"
+                      data-icon="feather:arrow-right"
                   /></a>
                 </div>
               </div>
@@ -315,14 +333,22 @@ import {
                     >
                       <template #singlelabel="{ value }">
                         <div class="multiselect-single-label">
-                          <img class="select-label-icon" :src="value.icon" />
+                          <img
+                            class="select-label-icon"
+                            :src="value.icon"
+                            alt=""
+                          />
                           <span class="select-label-text">
                             {{ value.name }}
                           </span>
                         </div>
                       </template>
                       <template #option="{ option }">
-                        <img class="select-option-icon" :src="option.icon" />
+                        <img
+                          class="select-option-icon"
+                          :src="option.icon"
+                          alt=""
+                        />
                         <span class="select-label-text">
                           {{ option.name }}
                         </span>
@@ -385,7 +411,8 @@ import {
                 :type="incomeOptions.chart.type"
                 :series="incomeOptions.series"
                 :options="incomeOptions"
-              ></apexchart>
+              >
+              </apexchart>
             </div>
           </div>
         </div>

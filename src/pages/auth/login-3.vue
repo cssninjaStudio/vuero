@@ -93,7 +93,7 @@ useHead({
               <V-Control class="setting-item">
                 <label for="remember-me" class="form-switch is-primary">
                   <input id="remember-me" type="checkbox" class="is-switch" />
-                  <i></i>
+                  <i aria-hidden="true"></i>
                 </label>
                 <div class="setting-meta">
                   <label for="remember-me">

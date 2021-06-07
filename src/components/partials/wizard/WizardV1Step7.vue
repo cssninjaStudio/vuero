@@ -62,7 +62,7 @@ watchEffect(async () => {
           <span v-else>Project Title Goes Here</span>
 
           <a class="edit-icon" @click="currentStep = 2">
-            <i class="lnil lnil-pencil"></i>
+            <i aria-hidden="true" class="lnil lnil-pencil"></i>
           </a>
         </h3>
       </div>
@@ -74,7 +74,7 @@ watchEffect(async () => {
               <h4>Description</h4>
 
               <a class="edit-icon" @click="currentStep = 2">
-                <i class="lnil lnil-pencil"></i>
+                <i aria-hidden="true" class="lnil lnil-pencil"></i>
               </a>
 
               <p v-if="wizardData.description">
@@ -90,7 +90,7 @@ watchEffect(async () => {
           <div class="column is-6 is-tablet-50">
             <div class="edit-box">
               <a class="edit-icon" @click="currentStep = 1">
-                <i class="lnil lnil-pencil"></i>
+                <i aria-hidden="true" class="lnil lnil-pencil"></i>
               </a>
               <V-Block
                 :title="wizardData.relatedTo"
@@ -99,7 +99,7 @@ watchEffect(async () => {
               >
                 <template #icon>
                   <V-IconBox size="medium" color="warning" rounded>
-                    <i class="lnil lnil-vector-pen"></i>
+                    <i aria-hidden="true" class="lnil lnil-vector-pen"></i>
                   </V-IconBox>
                 </template>
               </V-Block>
@@ -109,7 +109,7 @@ watchEffect(async () => {
           <div class="column is-6 is-tablet-50">
             <div class="edit-box">
               <a class="edit-icon" @click="currentStep = 3">
-                <i class="lnil lnil-pencil"></i>
+                <i aria-hidden="true" class="lnil lnil-pencil"></i>
               </a>
               <V-Block
                 v-if="wizardData.customer"
@@ -130,7 +130,7 @@ watchEffect(async () => {
           <div class="column is-4 is-tablet-33">
             <div class="edit-box">
               <a class="edit-icon" @click="currentStep = 3">
-                <i class="lnil lnil-pencil"></i>
+                <i aria-hidden="true" class="lnil lnil-pencil"></i>
               </a>
               <div class="estimated-budget">
                 <div class="inner-block">
@@ -146,7 +146,7 @@ watchEffect(async () => {
           <div class="column is-4 is-tablet-33">
             <div class="edit-box">
               <a class="edit-icon" @click="currentStep = 3">
-                <i class="lnil lnil-pencil"></i>
+                <i aria-hidden="true" class="lnil lnil-pencil"></i>
               </a>
               <div class="estimated-due-date">
                 <div class="inner-block">
@@ -162,7 +162,7 @@ watchEffect(async () => {
           <div class="column is-4 is-tablet-33">
             <div class="edit-box">
               <a class="edit-icon" @click="currentStep = 4">
-                <i class="lnil lnil-pencil"></i>
+                <i aria-hidden="true" class="lnil lnil-pencil"></i>
               </a>
               <div class="attachments-count">
                 <div class="inner-block">
@@ -183,7 +183,7 @@ watchEffect(async () => {
               <h4>Team</h4>
 
               <a class="edit-icon" @click="currentStep = 5">
-                <i class="lnil lnil-pencil"></i>
+                <i aria-hidden="true" class="lnil lnil-pencil"></i>
               </a>
 
               <div
@@ -218,7 +218,7 @@ watchEffect(async () => {
               <h4>Tools</h4>
 
               <a class="edit-icon" @click="currentStep = 6">
-                <i class="lnil lnil-pencil"></i>
+                <i aria-hidden="true" class="lnil lnil-pencil"></i>
               </a>
 
               <div

@@ -21,7 +21,7 @@ defineProps({
     </div>
     <div class="right">
       <a class="right-icon has-indicator">
-        <i class="iconify" :data-icon="icon"></i>
+        <i aria-hidden="true" class="iconify" :data-icon="icon"></i>
       </a>
     </div>
   </div>

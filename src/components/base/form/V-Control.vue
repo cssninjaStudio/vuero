@@ -57,14 +57,19 @@ const isIconify = computed(() => {
   >
     <slot></slot>
     <div v-if="icon" class="form-icon">
-      <i v-if="isIconify" class="iconify" :data-icon="icon"></i>
-      <i v-else :class="icon"></i>
+      <i
+        v-if="isIconify"
+        aria-hidden="true"
+        class="iconify"
+        :data-icon="icon"
+      ></i>
+      <i v-else aria-hidden="true" :class="icon"></i>
     </div>
     <div v-if="isValid" class="validation-icon is-success">
-      <i class="iconify" data-icon="feather:check"></i>
+      <i aria-hidden="true" class="iconify" data-icon="feather:check"></i>
     </div>
     <div v-else-if="hasError" class="validation-icon is-error">
-      <i class="iconify" data-icon="feather:x"></i>
+      <i aria-hidden="true" class="iconify" data-icon="feather:x"></i>
     </div>
     <slot name="extra"></slot>
   </div>

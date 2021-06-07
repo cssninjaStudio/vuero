@@ -30,23 +30,35 @@ const activeTab = ref<TabId>('display')
                 <ul>
                   <li>
                     <RouterLink :to="{ name: 'components' }">
-                      <i class="lnil lnil-home"></i>
+                      <i aria-hidden="true" class="lnil lnil-home"></i>
                       <span>Components Hub</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'components-content' }">
-                      <i class="lnil lnil-text-format"></i>
+                      <i aria-hidden="true" class="lnil lnil-text-format"></i>
                       <span>Content</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'components-table' }">
-                      <i class="lnil lnil-table"></i>
+                      <i aria-hidden="true" class="lnil lnil-table"></i>
                       <span>Table</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                 </ul>
@@ -58,45 +70,73 @@ const activeTab = ref<TabId>('display')
                   <li>
                     <RouterLink :to="{ name: 'components-avatar' }">
                       <span>V-Avatar</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'components-avatar-stack' }">
                       <span>V-AvatarStack</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'components-block' }">
                       <span>V-Block</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'components-icon-box' }">
                       <span>V-IconBox</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'components-icon-wrap' }">
                       <span>V-IconWrap</span>
                       <V-Tag label="v1.1" color="primary" outlined curved />
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'components-snack' }">
                       <span>V-Snack</span>
                       <V-Tag label="v1.1" color="primary" outlined curved />
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'components-tag' }">
                       <span>V-Tag</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                 </ul>
@@ -108,13 +148,21 @@ const activeTab = ref<TabId>('display')
                   <li>
                     <RouterLink :to="{ name: 'components-plugins-notif' }">
                       <span>Notif</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'components-plugins-tippy' }">
                       <span>Tippy</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
@@ -122,7 +170,11 @@ const activeTab = ref<TabId>('display')
                       :to="{ name: 'components-plugins-billboard-js' }"
                     >
                       <span>V-BillboardJS</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
@@ -130,13 +182,21 @@ const activeTab = ref<TabId>('display')
                       :to="{ name: 'components-plugins-photos-swipe' }"
                     >
                       <span>V-PhotosSwipe</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'components-plugins-plyr' }">
                       <span>V-Plyr</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
@@ -144,7 +204,11 @@ const activeTab = ref<TabId>('display')
                       :to="{ name: 'components-plugins-simple-datatables' }"
                     >
                       <span>V-SimpleDatatables</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                 </ul>
@@ -196,26 +260,42 @@ const activeTab = ref<TabId>('display')
                   <li>
                     <RouterLink :to="{ name: 'components-breadcrumb' }">
                       <span>V-Breadcrumb</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'components-tabs' }">
                       <span>V-Tabs</span>
                       <V-Tag label="v1.1" color="primary" outlined curved />
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'components-flex-pagination' }">
                       <span>V-FlexPagination</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'components-flex-table' }">
                       <span>V-FlexTable</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                 </ul>
@@ -227,19 +307,31 @@ const activeTab = ref<TabId>('display')
                   <li>
                     <RouterLink :to="{ name: 'components-accordion' }">
                       <span>V-Accordion</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'components-collapse' }">
                       <span>V-Collapse</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'components-accordion-image' }">
                       <span>V-AccordionImage</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                 </ul>
@@ -252,33 +344,53 @@ const activeTab = ref<TabId>('display')
                     <RouterLink :to="{ name: 'components-card' }">
                       <span>V-Card</span>
                       <V-Tag label="v1.1" color="primary" outlined curved />
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'components-card-action' }">
                       <span>V-CardAction</span>
                       <V-Tag label="v1.1" color="primary" outlined curved />
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'components-card-advanced' }">
                       <span>V-CardAdvanced</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'components-card-media' }">
                       <span>V-CardMedia</span>
                       <V-Tag label="v1.1" color="primary" outlined curved />
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'components-card-social' }">
                       <span>V-CardSocial</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                 </ul>
@@ -290,7 +402,11 @@ const activeTab = ref<TabId>('display')
                   <li>
                     <RouterLink :to="{ name: 'components-placeholder-page' }">
                       <span>V-PlaceholderPage</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
@@ -298,7 +414,11 @@ const activeTab = ref<TabId>('display')
                       :to="{ name: 'components-placeholder-section' }"
                     >
                       <span>V-PlaceholderSection</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                 </ul>

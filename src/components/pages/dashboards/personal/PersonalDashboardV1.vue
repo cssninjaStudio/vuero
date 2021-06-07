@@ -41,7 +41,10 @@ import { profitChartOptions } from '/@src/data/dashboards/personal-v1/profitChar
                   >
                     <template #icon>
                       <V-IconBox color="purple" rounded>
-                        <i class="lnil lnil-analytics-alt-1"></i>
+                        <i
+                          aria-hidden="true"
+                          class="lnil lnil-analytics-alt-1"
+                        ></i>
                       </V-IconBox>
                     </template>
                   </V-Block>
@@ -58,7 +61,7 @@ import { profitChartOptions } from '/@src/data/dashboards/personal-v1/profitChar
                   >
                     <template #icon>
                       <V-IconBox color="orange" rounded>
-                        <i class="lnil lnil-handshake"></i>
+                        <i aria-hidden="true" class="lnil lnil-handshake"></i>
                       </V-IconBox>
                     </template>
                   </V-Block>
@@ -75,7 +78,7 @@ import { profitChartOptions } from '/@src/data/dashboards/personal-v1/profitChar
                   >
                     <template #icon>
                       <V-IconBox color="green" rounded>
-                        <i class="lnil lnil-diamond-alt"></i>
+                        <i aria-hidden="true" class="lnil lnil-diamond-alt"></i>
                       </V-IconBox>
                     </template>
                   </V-Block>
@@ -92,7 +95,7 @@ import { profitChartOptions } from '/@src/data/dashboards/personal-v1/profitChar
                   >
                     <template #icon>
                       <V-IconBox color="info" rounded>
-                        <i class="lnil lnil-bank"></i>
+                        <i aria-hidden="true" class="lnil lnil-bank"></i>
                       </V-IconBox>
                     </template>
                   </V-Block>
@@ -110,14 +113,15 @@ import { profitChartOptions } from '/@src/data/dashboards/personal-v1/profitChar
               :type="customersOptions.chart.type"
               :series="customersOptions.series"
               :options="customersOptions"
-            ></apexchart>
+            >
+            </apexchart>
           </div>
         </div>
 
         <!--Card-->
         <div class="column is-4">
           <div class="dashboard-card is-upgrade">
-            <i class="lnil lnil-crown-alt-1"></i>
+            <i aria-hidden="true" class="lnil lnil-crown-alt-1"></i>
             <div class="cta-content">
               <h4>Hey Erik, you're doing great.</h4>
               <p class="white-text">
@@ -141,7 +145,8 @@ import { profitChartOptions } from '/@src/data/dashboards/personal-v1/profitChar
               :type="teamGaugeOptions.chart.type"
               :series="teamGaugeOptions.series"
               :options="teamGaugeOptions"
-            ></apexchart>
+            >
+            </apexchart>
           </div>
         </div>
 
@@ -153,7 +158,8 @@ import { profitChartOptions } from '/@src/data/dashboards/personal-v1/profitChar
               :type="profitChartOptions.chart.type"
               :series="profitChartOptions.series"
               :options="profitChartOptions"
-            ></apexchart>
+            >
+            </apexchart>
           </div>
         </div>
       </div>

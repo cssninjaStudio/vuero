@@ -23,8 +23,8 @@ const props = defineProps({
     <div class="profile-popover-block">
       <div class="profile-popover-wrapper">
         <div v-if="user.avatar" class="popover-avatar">
-          <img class="avatar" :src="user.avatar" />
-          <img v-if="user.badge" class="badge" :src="user.badge" />
+          <img class="avatar" :src="user.avatar" alt="" />
+          <img v-if="user.badge" class="badge" :src="user.badge" alt="" />
         </div>
         <div
           v-else
@@ -34,7 +34,7 @@ const props = defineProps({
           <div class="fake-avatar">
             <span>{{ user.initials }}</span>
           </div>
-          <img v-if="user.badge" class="badge" :src="user.badge" />
+          <img v-if="user.badge" class="badge" :src="user.badge" alt="" />
         </div>
         <div class="popover-meta">
           <span class="user-meta">
@@ -47,13 +47,13 @@ const props = defineProps({
       </div>
       <div class="popover-actions">
         <a class="popover-icon">
-          <i class="iconify" data-icon="feather:phone"></i>
+          <i aria-hidden="true" class="iconify" data-icon="feather:phone"></i>
         </a>
         <a class="popover-icon">
-          <i class="iconify" data-icon="feather:mail"></i>
+          <i aria-hidden="true" class="iconify" data-icon="feather:mail"></i>
         </a>
         <a class="popover-icon">
-          <i class="iconify" data-icon="feather:user"></i>
+          <i aria-hidden="true" class="iconify" data-icon="feather:user"></i>
         </a>
       </div>
     </div>

@@ -135,6 +135,7 @@ const onSave = async () => {
                         <V-Control nogrow>
                           <div class="button">
                             <i
+                              aria-hidden="true"
                               class="iconify"
                               data-icon="feather:arrow-right"
                             ></i>
@@ -202,7 +203,7 @@ const onSave = async () => {
                 <span class="dark-inverted">Airbnb HQ</span>
                 <span>
                   <span>January 2018</span>
-                  <i class="fas fa-circle"></i>
+                  <i aria-hidden="true" class="fas fa-circle"></i>
                   <span>October 2020</span>
                 </span>
                 <span>Product Manager</span>
@@ -225,7 +226,7 @@ const onSave = async () => {
                 <span class="dark-inverted">Facebook</span>
                 <span>
                   <span>January 2018</span>
-                  <i class="fas fa-circle"></i>
+                  <i aria-hidden="true" class="fas fa-circle"></i>
                   <span>October 2020</span>
                 </span>
                 <span>Product Manager</span>
@@ -248,7 +249,7 @@ const onSave = async () => {
                 <span class="dark-inverted">Atlassian</span>
                 <span>
                   <span>January 2018</span>
-                  <i class="fas fa-circle"></i>
+                  <i aria-hidden="true" class="fas fa-circle"></i>
                   <span>October 2020</span>
                 </span>
                 <span>Web Developer</span>
@@ -271,7 +272,7 @@ const onSave = async () => {
                 <span class="dark-inverted">Github</span>
                 <span>
                   <span>January 2018</span>
-                  <i class="fas fa-circle"></i>
+                  <i aria-hidden="true" class="fas fa-circle"></i>
                   <span>October 2020</span>
                 </span>
                 <span>Web Developer</span>
@@ -294,7 +295,7 @@ const onSave = async () => {
                 <span class="dark-inverted">Slack</span>
                 <span>
                   <span>January 2018</span>
-                  <i class="fas fa-circle"></i>
+                  <i aria-hidden="true" class="fas fa-circle"></i>
                   <span>October 2020</span>
                 </span>
                 <span>Web Developer</span>
@@ -317,7 +318,7 @@ const onSave = async () => {
                 <span class="dark-inverted">Gitlab</span>
                 <span>
                   <span>January 2018</span>
-                  <i class="fas fa-circle"></i>
+                  <i aria-hidden="true" class="fas fa-circle"></i>
                   <span>October 2020</span>
                 </span>
                 <span>Web Developer</span>

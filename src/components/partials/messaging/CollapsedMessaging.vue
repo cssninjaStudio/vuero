@@ -46,7 +46,7 @@ const emit = defineEmit(['addConversation', 'selectConversation'])
           class="button collapse-add-button is-primary"
           @click="() => emit('addConversation')"
         >
-          <i class="iconify" data-icon="feather:plus"></i>
+          <i aria-hidden="true" class="iconify" data-icon="feather:plus"></i>
         </a>
       </div>
       <ul class="collapsed-conversations">

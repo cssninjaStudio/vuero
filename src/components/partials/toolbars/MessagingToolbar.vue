@@ -27,8 +27,6 @@ const localFlagSrc = computed(() => {
     default:
       return '/images/icons/flags/united-states-of-america.svg'
   }
-
-  return '/images/icons/flags/united-states-of-america.svg'
 })
 </script>
 
@@ -63,7 +61,7 @@ const localFlagSrc = computed(() => {
         class="dropdown is-spaced is-dots is-right dropdown-trigger"
       >
         <div class="is-trigger" aria-haspopup="true" @click="toggle">
-          <i class="iconify" data-icon="feather:bell"></i>
+          <i aria-hidden="true" class="iconify" data-icon="feather:bell"></i>
           <span class="new-indicator pulsate"></span>
         </div>
         <div class="dropdown-menu" role="menu">
@@ -172,7 +170,11 @@ const localFlagSrc = computed(() => {
     </div>
 
     <a id="hide-chat-side" class="toolbar-link" @click="emit('close')">
-      <i class="iconify" data-icon="feather:chevron-right"></i>
+      <i
+        aria-hidden="true"
+        class="iconify"
+        data-icon="feather:chevron-right"
+      ></i>
     </a>
   </div>
 </template>

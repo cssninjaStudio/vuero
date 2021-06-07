@@ -48,11 +48,19 @@ import { courses, files, students } from '/@src/data/dashboards/course'
               <a class="is-dark-primary">Week 6 lecture recording</a>
               <div class="block-stats">
                 <span>
-                  <i class="iconify" data-icon="feather:clock"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:clock"
+                  ></i>
                   <small>{{ course.duration }}</small>
                 </span>
                 <span>
-                  <i class="iconify" data-icon="feather:message-circle"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:message-circle"
+                  ></i>
                   <small>{{ course.comments }}</small>
                 </span>
               </div>
@@ -61,7 +69,11 @@ import { courses, files, students } from '/@src/data/dashboards/course'
               <a class="is-dark-primary">{{ course.actionLabel }}</a>
               <div class="block-stats">
                 <span>
-                  <i class="iconify" data-icon="feather:calendar"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:calendar"
+                  ></i>
                   <small>{{ course.actionText }}</small>
                 </span>
               </div>
@@ -94,7 +106,7 @@ import { courses, files, students } from '/@src/data/dashboards/course'
               <span class="dark-inverted">{{ file.name }}</span>
               <span>
                 <span>{{ file.size }}</span>
-                <i class="fas fa-circle icon-separator"></i>
+                <i aria-hidden="true" class="fas fa-circle icon-separator"></i>
                 <span>Uploaded {{ file.uploaded }}</span>
               </span>
             </div>
@@ -119,7 +131,11 @@ import { courses, files, students } from '/@src/data/dashboards/course'
                   placeholder="Search students..."
                 />
                 <div class="form-icon">
-                  <i class="iconify" data-icon="feather:search"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:search"
+                  ></i>
                 </div>
               </div>
             </div>
@@ -339,16 +355,6 @@ import { courses, files, students } from '/@src/data/dashboards/course'
   }
 }
 
-.is-dark {
-  .course-dashboard {
-    .course-grid {
-      .course-card {
-        @include vuero-card--dark();
-      }
-    }
-  }
-}
-
 .tile-grid {
   .columns {
     margin-left: -0.5rem !important;
@@ -358,14 +364,6 @@ import { courses, files, students } from '/@src/data/dashboards/course'
 
   .column {
     padding: 0.5rem !important;
-  }
-}
-
-.is-dark {
-  .tile-grid {
-    .tile-grid-item {
-      @include vuero-card--dark();
-    }
   }
 }
 
@@ -437,6 +435,18 @@ import { courses, files, students } from '/@src/data/dashboards/course'
 }
 
 .is-dark {
+  .course-dashboard {
+    .course-grid {
+      .course-card {
+        @include vuero-card--dark();
+      }
+    }
+  }
+  .tile-grid {
+    .tile-grid-item {
+      @include vuero-card--dark();
+    }
+  }
   .tile-grid-v2 {
     .tile-grid-item {
       @include vuero-card--dark();

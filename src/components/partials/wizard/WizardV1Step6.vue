@@ -24,7 +24,11 @@ import { wizardData } from '/@src/state/wizardState'
                 </template>
                 <template #action>
                   <div class="checkmark">
-                    <i class="iconify" data-icon="feather:check"></i>
+                    <i
+                      aria-hidden="true"
+                      class="iconify"
+                      data-icon="feather:check"
+                    ></i>
                   </div>
                 </template>
               </V-Block>

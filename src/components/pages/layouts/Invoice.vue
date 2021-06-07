@@ -11,16 +11,28 @@ import { popovers } from '/@src/data/users/userPopovers'
       <div class="right">
         <div class="controls">
           <a class="action">
-            <i class="iconify" data-icon="feather:printer"></i>
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:printer"
+            ></i>
           </a>
           <a class="action">
-            <i class="iconify" data-icon="feather:download-cloud"></i>
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:download-cloud"
+            ></i>
           </a>
           <a class="action">
-            <i class="iconify" data-icon="feather:mail"></i>
+            <i aria-hidden="true" class="iconify" data-icon="feather:mail"></i>
           </a>
           <a class="action">
-            <i class="iconify" data-icon="feather:arrow-left"></i>
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:arrow-left"
+            ></i>
           </a>
         </div>
       </div>

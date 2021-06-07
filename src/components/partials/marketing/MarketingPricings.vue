@@ -101,6 +101,7 @@
             <a
               href="https://cssninja.io"
               target="_blank"
+              rel="noopener"
               class="button chat-button is-secondary"
               >Chat with us</a
             >

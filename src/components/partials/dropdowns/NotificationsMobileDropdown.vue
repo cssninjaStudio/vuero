@@ -15,7 +15,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
     "
   >
     <a class="navbar-link is-arrowless" @click="toggle">
-      <i class="iconify" data-icon="feather:bell"></i>
+      <i aria-hidden="true" class="iconify" data-icon="feather:bell"></i>
       <span class="new-indicator pulsate"></span>
     </a>
     <div class="navbar-dropdown is-boxed is-right">

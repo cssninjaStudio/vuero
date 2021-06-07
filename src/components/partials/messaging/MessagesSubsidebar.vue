@@ -46,7 +46,7 @@ const emit = defineEmit(['addConversation', 'selectConversation'])
           class="button v-button is-primary is-raised is-rounded is-fullwidth"
           @click="() => emit('addConversation')"
         >
-          <i class="iconify" data-icon="feather:plus"></i>
+          <i aria-hidden="true" class="iconify" data-icon="feather:plus"></i>
           <span>New Conversation</span>
         </button>
       </div>

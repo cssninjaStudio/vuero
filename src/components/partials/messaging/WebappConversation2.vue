@@ -15,7 +15,7 @@ const emit = defineEmit(['toggleMobileConversation'])
         "
         @click="emit('toggleMobileConversation')"
       >
-        <i class="iconify" data-icon="feather:menu"></i>
+        <i aria-hidden="true" class="iconify" data-icon="feather:menu"></i>
       </button>
       <div class="chat-area-title">Alejandro B.</div>
       <div class="chat-area-group">

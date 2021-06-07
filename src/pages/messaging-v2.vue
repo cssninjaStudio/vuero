@@ -172,7 +172,11 @@ useHead({
                 placeholder="Search..."
               />
               <div class="form-icon">
-                <i class="iconify" data-icon="feather:search"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:search"
+                ></i>
               </div>
               <div class="search-results has-slimscroll"></div>
             </div>
@@ -201,7 +205,11 @@ useHead({
                   "
                 />
               </div>
-              <i class="iconify" data-icon="feather:chevron-down"></i>
+              <i
+                aria-hidden="true"
+                class="iconify"
+                data-icon="feather:chevron-down"
+              ></i>
             </div>
             <div class="dropdown-menu" role="menu">
               <div class="dropdown-content">
@@ -209,24 +217,44 @@ useHead({
                   <p class="is-size-7">Erik Kovalsky</p>
                 </div>
                 <a href="#" class="dropdown-item">
-                  <i class="iconify" data-icon="feather:user"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:user"
+                  ></i>
                   <span>Profile</span>
                 </a>
                 <a class="dropdown-item">
-                  <i class="iconify" data-icon="feather:edit-2"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:edit-2"
+                  ></i>
                   <span>Edit Profile</span>
                 </a>
                 <a class="dropdown-item">
-                  <i class="iconify" data-icon="feather:box"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:box"
+                  ></i>
                   <span>Projects</span>
                 </a>
                 <a class="dropdown-item">
-                  <i class="iconify" data-icon="feather:settings"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:settings"
+                  ></i>
                   <span>Settings</span>
                 </a>
                 <hr class="dropdown-divider" />
                 <a href="#" class="dropdown-item">
-                  <i class="iconify" data-icon="feather:log-out"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:log-out"
+                  ></i>
                   <span>Sign Out</span>
                 </a>
               </div>
@@ -346,27 +374,43 @@ useHead({
               >
                 <div>
                   <div class="button" aria-haspopup="true" @click="toggle2">
-                    <i class="iconify" data-icon="feather:plus"></i>
+                    <i
+                      aria-hidden="true"
+                      class="iconify"
+                      data-icon="feather:plus"
+                    ></i>
                   </div>
                 </div>
                 <div class="dropdown-menu" role="menu">
                   <div class="dropdown-content">
                     <a class="dropdown-item">
-                      <i class="iconify" data-icon="feather:video"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:video"
+                      ></i>
                       <div class="meta">
                         <span>Video</span>
                         <span>Embed a video</span>
                       </div>
                     </a>
                     <a href="#" class="dropdown-item kill-drop v-modal-trigger">
-                      <i class="iconify" data-icon="feather:image"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:image"
+                      ></i>
                       <div class="meta">
                         <span>Images</span>
                         <span>Upload pictures</span>
                       </div>
                     </a>
                     <a href="#" class="dropdown-item kill-drop v-modal-trigger">
-                      <i class="iconify" data-icon="feather:link"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:link"
+                      ></i>
                       <div class="meta">
                         <span>Link</span>
                         <span>Post a link</span>
@@ -374,7 +418,11 @@ useHead({
                     </a>
                     <hr class="dropdown-divider" />
                     <a href="#" class="dropdown-item kill-drop v-modal-trigger">
-                      <i class="iconify" data-icon="feather:file"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:file"
+                      ></i>
                       <div class="meta">
                         <span>File</span>
                         <span>Upload a file</span>
@@ -386,7 +434,11 @@ useHead({
             </div>
             <div class="add-emoji">
               <div class="button">
-                <i class="iconify" data-icon="feather:smile"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:smile"
+                ></i>
               </div>
             </div>
             <input type="text" placeholder="Type something here..." />
@@ -411,13 +463,13 @@ useHead({
             <div class="side-actions">
               <a class="button v-button is-rounded">
                 <span class="icon is-small">
-                  <i class="fas fa-phone"></i>
+                  <i aria-hidden="true" class="fas fa-phone"></i>
                 </span>
                 <span>Audio Call</span>
               </a>
               <a class="button v-button is-rounded">
                 <span class="icon is-small">
-                  <i class="fas fa-video"></i>
+                  <i aria-hidden="true" class="fas fa-video"></i>
                 </span>
                 <span>Video Call</span>
               </a>

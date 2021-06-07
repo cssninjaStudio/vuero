@@ -164,7 +164,11 @@ onMounted(() => {
           <!-- Collapsed content -->
           <div class="collapsed-content">
             <div class="expand-button" @click="isColumnNewCollapsed = false">
-              <i class="iconify" data-icon="feather:plus"></i>
+              <i
+                aria-hidden="true"
+                class="iconify"
+                data-icon="feather:plus"
+              ></i>
             </div>
             <div>
               <span class="task-count">{{ newTasks.length }}</span>
@@ -265,7 +269,11 @@ onMounted(() => {
               class="expand-button"
               @click="isColumnProgressCollapsed = false"
             >
-              <i class="iconify" data-icon="feather:plus"></i>
+              <i
+                aria-hidden="true"
+                class="iconify"
+                data-icon="feather:plus"
+              ></i>
             </div>
             <div>
               <span class="task-count">{{ progressTasks.length }}</span>
@@ -314,7 +322,11 @@ onMounted(() => {
                   <h4 class="card-title">{{ task.title }}</h4>
                   <div class="kanban-card-stats">
                     <span>
-                      <i class="iconify" data-icon="feather:clock"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:clock"
+                      ></i>
                       {{ task.dueDate }}
                     </span>
 
@@ -344,7 +356,11 @@ onMounted(() => {
           <!-- Collapsed content -->
           <div class="collapsed-content">
             <div class="expand-button" @click="isColumnReadyCollapsed = false">
-              <i class="iconify" data-icon="feather:plus"></i>
+              <i
+                aria-hidden="true"
+                class="iconify"
+                data-icon="feather:plus"
+              ></i>
             </div>
             <div>
               <span class="task-count">{{ readyTasks.length }}</span>
@@ -398,7 +414,11 @@ onMounted(() => {
                   <h4 class="card-title">{{ task.title }}</h4>
                   <div class="kanban-card-stats">
                     <span>
-                      <i class="iconify" data-icon="feather:clock"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:clock"
+                      ></i>
                       {{ task.dueDate }}
                     </span>
 
@@ -428,7 +448,11 @@ onMounted(() => {
           <!-- Collapsed content -->
           <div class="collapsed-content">
             <div class="expand-button" @click="isColumnReviewCollapsed = false">
-              <i class="iconify" data-icon="feather:plus"></i>
+              <i
+                aria-hidden="true"
+                class="iconify"
+                data-icon="feather:plus"
+              ></i>
             </div>
             <div>
               <span class="task-count"> {{ reviewTasks.length }}</span>
@@ -477,7 +501,11 @@ onMounted(() => {
                   <h4 class="card-title">{{ task.title }}</h4>
                   <div class="kanban-card-stats">
                     <span>
-                      <i class="iconify" data-icon="feather:clock"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:clock"
+                      ></i>
                       {{ task.dueDate }}
                     </span>
 
@@ -510,7 +538,11 @@ onMounted(() => {
               class="expand-button"
               @click="isColumnCompletedCollapsed = false"
             >
-              <i class="iconify" data-icon="feather:plus"></i>
+              <i
+                aria-hidden="true"
+                class="iconify"
+                data-icon="feather:plus"
+              ></i>
             </div>
             <div>
               <span class="task-count">{{ completedTasks.length }}</span>
@@ -557,7 +589,11 @@ onMounted(() => {
                   <h4 class="card-title">{{ task.title }}</h4>
                   <div class="kanban-card-stats">
                     <span>
-                      <i class="iconify" data-icon="feather:clock"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:clock"
+                      ></i>
                       {{ task.dueDate }}
                     </span>
 

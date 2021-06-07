@@ -15,13 +15,17 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
     "
   >
     <div class="is-trigger" aria-haspopup="true" @click="toggle">
-      <i class="iconify" data-icon="feather:more-vertical"></i>
+      <i
+        aria-hidden="true"
+        class="iconify"
+        data-icon="feather:more-vertical"
+      ></i>
     </div>
     <div class="dropdown-menu" role="menu">
       <div class="dropdown-content">
         <a href="#" class="dropdown-item is-media">
           <div class="icon">
-            <i class="lnil lnil-briefcase"></i>
+            <i aria-hidden="true" class="lnil lnil-briefcase"></i>
           </div>
           <div class="meta">
             <span>View</span>
@@ -30,7 +34,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
         </a>
         <a href="#" class="dropdown-item is-media">
           <div class="icon">
-            <i class="lnil lnil-pencil"></i>
+            <i aria-hidden="true" class="lnil lnil-pencil"></i>
           </div>
           <div class="meta">
             <span>Edit</span>
@@ -39,7 +43,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
         </a>
         <a href="#" class="dropdown-item is-media">
           <div class="icon">
-            <i class="lnil lnil-add-files"></i>
+            <i aria-hidden="true" class="lnil lnil-add-files"></i>
           </div>
           <div class="meta">
             <span>New Task</span>
@@ -49,7 +53,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
         <hr class="dropdown-divider" />
         <a href="#" class="dropdown-item is-media">
           <div class="icon">
-            <i class="lnil lnil-trash-can-alt"></i>
+            <i aria-hidden="true" class="lnil lnil-trash-can-alt"></i>
           </div>
           <div class="meta">
             <span>Remove</span>

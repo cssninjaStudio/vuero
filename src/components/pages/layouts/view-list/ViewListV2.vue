@@ -103,28 +103,37 @@ const filteredData = computed(() => {
                     <span class="rating">
                       <i
                         class="fas fa-star"
+                        aria-hidden="true"
                         :class="[item.rating >= 1 && 'active']"
                       ></i>
                       <i
                         class="fas fa-star"
+                        aria-hidden="true"
                         :class="[item.rating >= 2 && 'active']"
                       ></i>
                       <i
                         class="fas fa-star"
+                        aria-hidden="true"
                         :class="[item.rating >= 3 && 'active']"
                       ></i>
                       <i
                         class="fas fa-star"
+                        aria-hidden="true"
                         :class="[item.rating >= 4 && 'active']"
                       ></i>
                       <i
                         class="fas fa-star"
+                        aria-hidden="true"
                         :class="[item.rating >= 5 && 'active']"
                       ></i>
                     </span>
                   </h3>
                   <p>
-                    <i class="iconify" data-icon="feather:map-pin"></i>
+                    <i
+                      aria-hidden="true"
+                      class="iconify"
+                      data-icon="feather:map-pin"
+                    ></i>
                     <span>{{ item.location }}</span>
                   </p>
                   <span>
@@ -135,7 +144,10 @@ const filteredData = computed(() => {
                           : `${item.details.rooms} room`
                       }}
                     </span>
-                    <i class="fas fa-circle icon-separator"></i>
+                    <i
+                      aria-hidden="true"
+                      class="fas fa-circle icon-separator"
+                    ></i>
                     <span>
                       {{
                         item.details.beds > 1
@@ -143,7 +155,10 @@ const filteredData = computed(() => {
                           : `${item.details.beds} bed`
                       }}
                     </span>
-                    <i class="fas fa-circle icon-separator"></i>
+                    <i
+                      aria-hidden="true"
+                      class="fas fa-circle icon-separator"
+                    ></i>
                     <span>
                       {{
                         item.details.bathrooms > 1
@@ -155,19 +170,19 @@ const filteredData = computed(() => {
 
                   <div class="icon-list">
                     <span v-if="item.comodities.parking">
-                      <i class="lnil lnil-car"></i>
+                      <i aria-hidden="true" class="lnil lnil-car"></i>
                       <span>Parking</span>
                     </span>
                     <span v-if="item.comodities.wifi">
-                      <i class="lnil lnil-signal"></i>
+                      <i aria-hidden="true" class="lnil lnil-signal"></i>
                       <span>Wifi</span>
                     </span>
                     <span v-if="item.comodities.heater">
-                      <i class="lnil lnil-air-flow"></i>
+                      <i aria-hidden="true" class="lnil lnil-air-flow"></i>
                       <span>Heater</span>
                     </span>
                     <span v-if="item.comodities.cleaning">
-                      <i class="lnil lnil-sun"></i>
+                      <i aria-hidden="true" class="lnil lnil-sun"></i>
                       <span>Cleaning</span>
                     </span>
                     <span
@@ -178,7 +193,7 @@ const filteredData = computed(() => {
                         item.comodities.otherGreatCoolThing
                       "
                     >
-                      <i class="lnil lnil-more"></i>
+                      <i aria-hidden="true" class="lnil lnil-more"></i>
                       <span>4 more</span>
                     </span>
                     <span
@@ -188,7 +203,7 @@ const filteredData = computed(() => {
                         item.comodities.otherCoolThing
                       "
                     >
-                      <i class="lnil lnil-more"></i>
+                      <i aria-hidden="true" class="lnil lnil-more"></i>
                       <span>3 more</span>
                     </span>
                     <span
@@ -196,11 +211,11 @@ const filteredData = computed(() => {
                         item.comodities.other && item.comodities.otherThing
                       "
                     >
-                      <i class="lnil lnil-more"></i>
+                      <i aria-hidden="true" class="lnil lnil-more"></i>
                       <span>2 more</span>
                     </span>
                     <span v-else-if="item.comodities.other">
-                      <i class="lnil lnil-more"></i>
+                      <i aria-hidden="true" class="lnil lnil-more"></i>
                       <span>1 more</span>
                     </span>
                   </div>

@@ -27,7 +27,11 @@ const props = defineProps({
             :class="[activeTab === 'posts' && 'is-active']"
             @click="activeTab = 'posts'"
           >
-            <i class="iconify" data-icon="feather:activity"></i>
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:activity"
+            ></i>
           </a>
           <a
             data-target-section="subsection-2"
@@ -35,7 +39,11 @@ const props = defineProps({
             :class="[activeTab === 'projects' && 'is-active']"
             @click="activeTab = 'projects'"
           >
-            <i class="iconify" data-icon="feather:briefcase"></i>
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:briefcase"
+            ></i>
           </a>
           <a
             data-target-section="subsection-3"
@@ -43,7 +51,11 @@ const props = defineProps({
             :class="[activeTab === 'tasks' && 'is-active']"
             @click="activeTab = 'tasks'"
           >
-            <i class="iconify" data-icon="feather:check-circle"></i>
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:check-circle"
+            ></i>
           </a>
           <div class="icon-tabs-naver"></div>
         </div>
@@ -97,13 +109,17 @@ const props = defineProps({
     <div class="buttons">
       <button class="button v-button is-dark-outlined">
         <span class="icon">
-          <i class="iconify" data-icon="feather:check"></i>
+          <i aria-hidden="true" class="iconify" data-icon="feather:check"></i>
         </span>
         <span>Hire</span>
       </button>
       <button class="button v-button is-dark-outlined">
         <span class="icon">
-          <i class="iconify" data-icon="feather:message-circle"></i>
+          <i
+            aria-hidden="true"
+            class="iconify"
+            data-icon="feather:message-circle"
+          ></i>
         </span>
         <span>Talk</span>
       </button>

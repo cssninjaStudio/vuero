@@ -62,7 +62,11 @@ import { trendWidgetChartOptions } from '/@src/data/widgets/charts/trendWidgetCh
             <div class="control">
               <input type="text" class="input" placeholder="Search..." />
               <button class="searcv-button">
-                <i class="iconify" data-icon="feather:search"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:search"
+                ></i>
               </button>
             </div>
 
@@ -112,7 +116,11 @@ import { trendWidgetChartOptions } from '/@src/data/widgets/charts/trendWidgetCh
           <div class="widget-toolbar">
             <div class="left">
               <a class="action-icon">
-                <i class="iconify" data-icon="feather:chevron-left"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:chevron-left"
+                ></i>
               </a>
             </div>
             <div class="center">
@@ -120,7 +128,11 @@ import { trendWidgetChartOptions } from '/@src/data/widgets/charts/trendWidgetCh
             </div>
             <div class="right">
               <a class="action-icon">
-                <i class="iconify" data-icon="feather:chevron-right"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:chevron-right"
+                ></i>
               </a>
             </div>
           </div>
@@ -281,8 +293,12 @@ import { trendWidgetChartOptions } from '/@src/data/widgets/charts/trendWidgetCh
               <div class="stat-number">
                 <span
                   >$1638,42
-                  <i class="iconify" data-icon="feather:trending-up"></i
-                ></span>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:trending-up"
+                  ></i>
+                </span>
                 <span>Earned from Sales</span>
               </div>
             </div>
@@ -293,7 +309,8 @@ import { trendWidgetChartOptions } from '/@src/data/widgets/charts/trendWidgetCh
               :type="trendWidgetChartOptions.chart.type"
               :series="trendWidgetChartOptions.series"
               :options="trendWidgetChartOptions"
-            ></apexchart>
+            >
+            </apexchart>
           </div>
         </template>
       </UIWidget>

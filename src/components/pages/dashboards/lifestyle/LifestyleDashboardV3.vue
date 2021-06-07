@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { onMounted, reactive, ref } from 'vue'
 import { energyChartOptions } from '/@src/data/dashboards/lifestyle-v3/energyChart'
 import { overallChartOptions } from '/@src/data/dashboards/lifestyle-v3/overallChart'
 import { oxygenChartOptions } from '/@src/data/dashboards/lifestyle-v3/oxygenChart'
@@ -7,7 +6,7 @@ import { progressChartOptions } from '/@src/data/dashboards/lifestyle-v3/progres
 import {
   personalScoreGaugeOptions,
   onPersonalScoreGaugeReady,
-} from '/@src/data/dashboards/lifestyle-v3/personalScoreGauge'
+} from '/@src/data/widgets/charts/personalScoreGauge'
 import { followersList } from '/@src/data/widgets/ui/followers'
 </script>
 
@@ -54,7 +53,7 @@ import { followersList } from '/@src/data/widgets/ui/followers'
         <div class="health-tile">
           <div class="tile-head">
             <V-IconBox color="primary">
-              <i class="fas fa-tint"></i>
+              <i aria-hidden="true" class="fas fa-tint"></i>
             </V-IconBox>
             <h4>
               <span class="dark-inverted">114/90</span>
@@ -74,7 +73,7 @@ import { followersList } from '/@src/data/widgets/ui/followers'
         <div class="health-tile">
           <div class="tile-head">
             <V-IconBox color="primary">
-              <i class="fas fa-heart"></i>
+              <i aria-hidden="true" class="fas fa-heart"></i>
             </V-IconBox>
             <h4>
               <span class="dark-inverted">112</span>
@@ -94,7 +93,7 @@ import { followersList } from '/@src/data/widgets/ui/followers'
         <div class="health-tile">
           <div class="tile-head">
             <V-IconBox color="primary">
-              <i class="fas fa-pump-medical"></i>
+              <i aria-hidden="true" class="fas fa-pump-medical"></i>
             </V-IconBox>
             <h4>
               <span class="dark-inverted">12/14</span>
@@ -114,7 +113,7 @@ import { followersList } from '/@src/data/widgets/ui/followers'
         <div class="health-tile">
           <div class="tile-head">
             <V-IconBox color="primary">
-              <i class="fas fa-weight"></i>
+              <i aria-hidden="true" class="fas fa-weight"></i>
             </V-IconBox>
             <h4>
               <span class="dark-inverted">60.4</span>
@@ -142,8 +141,12 @@ import { followersList } from '/@src/data/widgets/ui/followers'
               </div>
               <div class="chart-meta">
                 <p>
-                  <i class="iconify" data-icon="feather:help-circle"></i> Your
-                  overall condition is very good. Make it even better.
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:help-circle"
+                  ></i>
+                  Your overall condition is very good. Make it even better.
                   <a class="is-dark-primary">Read how</a>
                 </p>
               </div>
@@ -153,7 +156,8 @@ import { followersList } from '/@src/data/widgets/ui/followers'
                 :type="overallChartOptions.chart.type"
                 :series="overallChartOptions.series"
                 :options="overallChartOptions"
-              ></apexchart>
+              >
+              </apexchart>
             </div>
           </div>
 
@@ -166,8 +170,12 @@ import { followersList } from '/@src/data/widgets/ui/followers'
               </div>
               <div class="chart-meta">
                 <p>
-                  <i class="iconify" data-icon="feather:help-circle"></i> Your
-                  energy seems a bit unstable. You can improve it.
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:help-circle"
+                  ></i>
+                  Your energy seems a bit unstable. You can improve it.
                   <a class="is-dark-primary">Read how</a>
                 </p>
               </div>
@@ -177,7 +185,8 @@ import { followersList } from '/@src/data/widgets/ui/followers'
                 :type="energyChartOptions.chart.type"
                 :series="energyChartOptions.series"
                 :options="energyChartOptions"
-              ></apexchart>
+              >
+              </apexchart>
             </div>
           </div>
 
@@ -190,8 +199,12 @@ import { followersList } from '/@src/data/widgets/ui/followers'
               </div>
               <div class="chart-meta">
                 <p>
-                  <i class="iconify" data-icon="feather:help-circle"></i> Your
-                  oxygen seems a bit unstable. You can improve it.
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:help-circle"
+                  ></i>
+                  Your oxygen seems a bit unstable. You can improve it.
                   <a class="is-dark-primary">Read how</a>
                 </p>
               </div>
@@ -201,7 +214,8 @@ import { followersList } from '/@src/data/widgets/ui/followers'
                 :type="oxygenChartOptions.chart.type"
                 :series="oxygenChartOptions.series"
                 :options="oxygenChartOptions"
-              ></apexchart>
+              >
+              </apexchart>
             </div>
           </div>
 
@@ -214,8 +228,12 @@ import { followersList } from '/@src/data/widgets/ui/followers'
               </div>
               <div class="chart-meta">
                 <p>
-                  <i class="iconify" data-icon="feather:help-circle"></i> Your
-                  overall condition is very good. Make it even better.
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:help-circle"
+                  ></i>
+                  Your overall condition is very good. Make it even better.
                   <a class="is-dark-primary">Read how</a>
                 </p>
               </div>
@@ -225,7 +243,8 @@ import { followersList } from '/@src/data/widgets/ui/followers'
                 :type="progressChartOptions.chart.type"
                 :series="progressChartOptions.series"
                 :options="progressChartOptions"
-              ></apexchart>
+              >
+              </apexchart>
             </div>
           </div>
         </div>
@@ -239,7 +258,11 @@ import { followersList } from '/@src/data/widgets/ui/followers'
               <div class="control">
                 <input type="text" class="input" placeholder="Search..." />
                 <button class="searcv-button">
-                  <i class="iconify" data-icon="feather:search"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:search"
+                  ></i>
                 </button>
               </div>
 
@@ -258,7 +281,11 @@ import { followersList } from '/@src/data/widgets/ui/followers'
             <div class="widget-toolbar">
               <div class="left">
                 <a class="action-icon">
-                  <i class="iconify" data-icon="feather:chevron-left"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:chevron-left"
+                  ></i>
                 </a>
               </div>
               <div class="center">
@@ -266,7 +293,11 @@ import { followersList } from '/@src/data/widgets/ui/followers'
               </div>
               <div class="right">
                 <a class="action-icon">
-                  <i class="iconify" data-icon="feather:chevron-right"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:chevron-right"
+                  ></i>
                 </a>
               </div>
             </div>

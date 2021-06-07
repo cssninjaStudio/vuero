@@ -14,19 +14,19 @@
       </p>
       <div class="profile-stats">
         <div class="profile-stat">
-          <i class="lnil lnil-users-alt"></i>
+          <i aria-hidden="true" class="lnil lnil-users-alt"></i>
           <span>500+ Relations</span>
         </div>
         <div class="separator"></div>
         <div class="profile-stat">
-          <i class="lnil lnil-checkmark-circle"></i>
+          <i aria-hidden="true" class="lnil lnil-checkmark-circle"></i>
           <span>78 Projects</span>
         </div>
         <div class="separator"></div>
         <div class="socials">
-          <a><i class="fab fa-facebook-f"></i></a>
-          <a><i class="fab fa-twitter"></i></a>
-          <a><i class="fab fa-linkedin-in"></i></a>
+          <a><i aria-hidden="true" class="fab fa-facebook-f"></i></a>
+          <a><i aria-hidden="true" class="fab fa-twitter"></i></a>
+          <a><i aria-hidden="true" class="fab fa-linkedin-in"></i></a>
         </div>
       </div>
     </div>
@@ -39,7 +39,7 @@
               <div class="section-title">
                 <h4>About Me</h4>
                 <RouterLink :to="{ name: 'sidebar-layouts-profile-edit' }">
-                  <i class="lnil lnil-pencil"></i>
+                  <i aria-hidden="true" class="lnil lnil-pencil"></i>
                 </RouterLink>
               </div>
               <div class="section-content">
@@ -59,7 +59,7 @@
                 <RouterLink
                   :to="{ name: 'sidebar-layouts-profile-edit-experience' }"
                 >
-                  <i class="lnil lnil-pencil"></i>
+                  <i aria-hidden="true" class="lnil lnil-pencil"></i>
                 </RouterLink>
               </div>
               <div class="section-content">
@@ -77,7 +77,7 @@
                       <span class="dark-inverted">Airbnb HQ</span>
                       <span>
                         <span>January 2018</span>
-                        <i class="fas fa-circle"></i>
+                        <i aria-hidden="true" class="fas fa-circle"></i>
                         <span>October 2020</span>
                       </span>
                       <span>Product Manager</span>
@@ -96,7 +96,7 @@
                       <span class="dark-inverted">Facebook</span>
                       <span>
                         <span>January 2018</span>
-                        <i class="fas fa-circle"></i>
+                        <i aria-hidden="true" class="fas fa-circle"></i>
                         <span>October 2020</span>
                       </span>
                       <span>Product Manager</span>
@@ -115,7 +115,7 @@
                       <span class="dark-inverted">Atlassian</span>
                       <span>
                         <span>January 2018</span>
-                        <i class="fas fa-circle"></i>
+                        <i aria-hidden="true" class="fas fa-circle"></i>
                         <span>October 2020</span>
                       </span>
                       <span>Web Developer</span>
@@ -134,7 +134,7 @@
                       <span class="dark-inverted">Github</span>
                       <span>
                         <span>January 2018</span>
-                        <i class="fas fa-circle"></i>
+                        <i aria-hidden="true" class="fas fa-circle"></i>
                         <span>October 2020</span>
                       </span>
                       <span>Web Developer</span>
@@ -152,7 +152,7 @@
                 <RouterLink
                   :to="{ name: 'sidebar-layouts-profile-edit-skills' }"
                 >
-                  <i class="lnil lnil-pencil"></i>
+                  <i aria-hidden="true" class="lnil lnil-pencil"></i>
                 </RouterLink>
               </div>
               <div class="section-content">
@@ -202,7 +202,7 @@
                 <RouterLink
                   :to="{ name: 'sidebar-layouts-profile-edit-skills' }"
                 >
-                  <i class="lnil lnil-pencil"></i>
+                  <i aria-hidden="true" class="lnil lnil-pencil"></i>
                 </RouterLink>
               </div>
               <div class="section-content">
@@ -288,7 +288,7 @@
             <div class="profile-card-section no-padding">
               <div class="section-title">
                 <h4>Recommendations</h4>
-                <a><i class="lnil lnil-pencil"></i></a>
+                <a><i aria-hidden="true" class="lnil lnil-pencil"></i></a>
                 <a class="action-link">View All</a>
               </div>
               <div class="section-content">
@@ -345,7 +345,7 @@
                 <V-Control>
                   <label class="form-switch is-success">
                     <input type="checkbox" class="is-switch" checked />
-                    <i></i>
+                    <i aria-hidden="true"></i>
                   </label>
                 </V-Control>
               </div>
@@ -369,7 +369,7 @@
                 <RouterLink
                   :to="{ name: 'sidebar-layouts-profile-edit-skills' }"
                 >
-                  <i class="lnil lnil-pencil"></i>
+                  <i aria-hidden="true" class="lnil lnil-pencil"></i>
                 </RouterLink>
                 <a class="action-link">View All</a>
               </div>

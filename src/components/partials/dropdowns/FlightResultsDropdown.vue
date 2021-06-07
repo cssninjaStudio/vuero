@@ -10,13 +10,17 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
     class="dropdown is-spaced is-dots is-right dropdown-trigger"
   >
     <div class="is-trigger" aria-haspopup="true" @click="toggle">
-      <i class="iconify" data-icon="feather:more-vertical"></i>
+      <i
+        aria-hidden="true"
+        class="iconify"
+        data-icon="feather:more-vertical"
+      ></i>
     </div>
     <div class="dropdown-menu" role="menu">
       <div class="dropdown-content">
         <a href="#" class="dropdown-item is-media">
           <div class="icon">
-            <i class="lnil lnil-reload"></i>
+            <i aria-hidden="true" class="lnil lnil-reload"></i>
           </div>
           <div class="meta">
             <span>Reload</span>
@@ -25,7 +29,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
         </a>
         <a href="#" class="dropdown-item is-media">
           <div class="icon">
-            <i class="lnil lnil-save"></i>
+            <i aria-hidden="true" class="lnil lnil-save"></i>
           </div>
           <div class="meta">
             <span>Save</span>
@@ -35,7 +39,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
         <hr class="dropdown-divider" />
         <a href="#" class="dropdown-item is-media">
           <div class="icon">
-            <i class="lnil lnil-cog"></i>
+            <i aria-hidden="true" class="lnil lnil-cog"></i>
           </div>
           <div class="meta">
             <span>Settings</span>

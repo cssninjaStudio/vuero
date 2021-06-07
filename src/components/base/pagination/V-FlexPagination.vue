@@ -30,7 +30,7 @@ const totalPageDisplayed = computed(() =>
     : lastPage.value
 )
 const pages = computed(() => {
-  const pages = []
+  const _pages = []
   let firstButton = props.currentPage - Math.floor(totalPageDisplayed.value / 2)
   let lastButton =
     firstButton +
@@ -47,10 +47,10 @@ const pages = computed(() => {
   }
 
   for (let page = firstButton; page <= lastButton; page += 1) {
-    pages.push(page)
+    _pages.push(page)
   }
 
-  return pages
+  return _pages
 })
 
 const showFirstLink = computed(() => pages.value[0] > 1)
@@ -85,14 +85,22 @@ const paginatedLink = (page = 1) => {
       :to="paginatedLink(currentPage - 1)"
       class="pagination-previous has-chevron"
     >
-      <i class="iconify" data-icon="feather:chevron-left" />
+      <i
+        aria-hidden="true"
+        class="iconify"
+        data-icon="feather:chevron-left"
+      ></i>
     </RouterLink>
     <RouterLink
       v-if="lastPage > 1"
       :to="paginatedLink(currentPage + 1)"
       class="pagination-next has-chevron"
     >
-      <i class="iconify" data-icon="feather:chevron-right" />
+      <i
+        aria-hidden="true"
+        class="iconify"
+        data-icon="feather:chevron-right"
+      ></i>
     </RouterLink>
 
     <ul class="pagination-list">

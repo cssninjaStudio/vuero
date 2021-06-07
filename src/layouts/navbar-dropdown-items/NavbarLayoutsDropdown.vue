@@ -20,7 +20,11 @@ const selectedCategory = ref('')
       >
         <span>Layouts</span>
         <span class="caret">
-          <i class="iconify" data-icon="feather:chevron-down"></i>
+          <i
+            aria-hidden="true"
+            class="iconify"
+            data-icon="feather:chevron-down"
+          ></i>
         </span>
       </button>
     </div>
@@ -35,23 +39,23 @@ const selectedCategory = ref('')
           </div>
           <div class="category-selector-inner">
             <div class="category-item" @click="selectedCategory = 'lists'">
-              <i class="lnil lnil-list-alt"></i>
+              <i aria-hidden="true" class="lnil lnil-list-alt"></i>
               <span>Lists</span>
             </div>
             <div class="category-item" @click="selectedCategory = 'grids'">
-              <i class="lnil lnil-grid-alt"></i>
+              <i aria-hidden="true" class="lnil lnil-grid-alt"></i>
               <span>Grids</span>
             </div>
             <div class="category-item" @click="selectedCategory = 'pages'">
-              <i class="lnil lnil-layout"></i>
+              <i aria-hidden="true" class="lnil lnil-layout"></i>
               <span>Pages</span>
             </div>
             <div class="category-item" @click="selectedCategory = 'subpages'">
-              <i class="lnil lnil-layout-alt-1"></i>
+              <i aria-hidden="true" class="lnil lnil-layout-alt-1"></i>
               <span>Subpages</span>
             </div>
             <div class="category-item" @click="selectedCategory = 'errors'">
-              <i class="lnil lnil-lock-alt"></i>
+              <i aria-hidden="true" class="lnil lnil-lock-alt"></i>
               <span>Errors</span>
             </div>
           </div>
@@ -66,7 +70,11 @@ const selectedCategory = ref('')
             @click="selectedCategory = ''"
           >
             <span class="icon is-small">
-              <i class="iconify" data-icon="feather:arrow-left"></i>
+              <i
+                aria-hidden="true"
+                class="iconify"
+                data-icon="feather:arrow-left"
+              ></i>
             </span>
           </button>
 
@@ -79,7 +87,11 @@ const selectedCategory = ref('')
             <div class="column is-4">
               <div class="dropdown-item-group">
                 <h4 class="column-heading is-info">
-                  <i class="iconify" data-icon="feather:circle"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:circle"
+                  ></i>
                   <span>List Views</span>
                 </h4>
 
@@ -89,7 +101,7 @@ const selectedCategory = ref('')
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-list-alt"></i>
+                      <i aria-hidden="true" class="lnil lnil-list-alt"></i>
                     </div>
                     <div class="meta">
                       <span>List View V1</span>
@@ -100,7 +112,7 @@ const selectedCategory = ref('')
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-list-alt"></i>
+                      <i aria-hidden="true" class="lnil lnil-list-alt"></i>
                     </div>
                     <div class="meta">
                       <span>List View V2</span>
@@ -111,7 +123,7 @@ const selectedCategory = ref('')
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-list-alt"></i>
+                      <i aria-hidden="true" class="lnil lnil-list-alt"></i>
                     </div>
                     <div class="meta">
                       <span>List View V3</span>
@@ -122,7 +134,7 @@ const selectedCategory = ref('')
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-list-alt-1"></i>
+                      <i aria-hidden="true" class="lnil lnil-list-alt-1"></i>
                     </div>
                     <div class="meta">
                       <span>List View V4</span>
@@ -135,7 +147,11 @@ const selectedCategory = ref('')
             <div class="column is-4">
               <div class="dropdown-item-group">
                 <h4 class="column-heading is-green">
-                  <i class="iconify" data-icon="feather:circle"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:circle"
+                  ></i>
                   <span>Flex Lists</span>
                 </h4>
 
@@ -145,7 +161,7 @@ const selectedCategory = ref('')
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-list-alt-1"></i>
+                      <i aria-hidden="true" class="lnil lnil-list-alt-1"></i>
                     </div>
                     <div class="meta">
                       <span>Flex List V2</span>
@@ -156,7 +172,7 @@ const selectedCategory = ref('')
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-list-alt-1"></i>
+                      <i aria-hidden="true" class="lnil lnil-list-alt-1"></i>
                     </div>
                     <div class="meta">
                       <span>Flex List V2</span>
@@ -167,7 +183,7 @@ const selectedCategory = ref('')
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-list-alt-1"></i>
+                      <i aria-hidden="true" class="lnil lnil-list-alt-1"></i>
                     </div>
                     <div class="meta">
                       <span>Flex List V3</span>
@@ -180,7 +196,11 @@ const selectedCategory = ref('')
             <div class="column is-4">
               <div class="dropdown-item-group">
                 <h4 class="column-heading is-orange">
-                  <i class="iconify" data-icon="feather:circle"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:circle"
+                  ></i>
                   <span>Datatables</span>
                 </h4>
 
@@ -190,7 +210,7 @@ const selectedCategory = ref('')
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-layout-alt"></i>
+                      <i aria-hidden="true" class="lnil lnil-layout-alt"></i>
                     </div>
                     <div class="meta">
                       <span>Datatable V1</span>
@@ -201,7 +221,7 @@ const selectedCategory = ref('')
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-layout-alt"></i>
+                      <i aria-hidden="true" class="lnil lnil-layout-alt"></i>
                     </div>
                     <div class="meta">
                       <span>Datatable V2</span>
@@ -212,7 +232,7 @@ const selectedCategory = ref('')
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-layout-alt"></i>
+                      <i aria-hidden="true" class="lnil lnil-layout-alt"></i>
                     </div>
                     <div class="meta">
                       <span>Datatable V3</span>
@@ -223,7 +243,7 @@ const selectedCategory = ref('')
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-layout-alt"></i>
+                      <i aria-hidden="true" class="lnil lnil-layout-alt"></i>
                     </div>
                     <div class="meta">
                       <span>Datatable V4</span>
@@ -243,7 +263,11 @@ const selectedCategory = ref('')
             <div class="column is-4">
               <div class="dropdown-item-group">
                 <h4 class="column-heading is-purple">
-                  <i class="iconify" data-icon="feather:circle"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:circle"
+                  ></i>
                   <span>Cards</span>
                 </h4>
 
@@ -253,7 +277,7 @@ const selectedCategory = ref('')
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-grid-alt"></i>
+                      <i aria-hidden="true" class="lnil lnil-grid-alt"></i>
                     </div>
                     <div class="meta">
                       <span>Card Grid V1</span>
@@ -264,7 +288,7 @@ const selectedCategory = ref('')
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-grid-alt"></i>
+                      <i aria-hidden="true" class="lnil lnil-grid-alt"></i>
                     </div>
                     <div class="meta">
                       <span>Card Grid V2</span>
@@ -275,7 +299,7 @@ const selectedCategory = ref('')
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-grid-alt"></i>
+                      <i aria-hidden="true" class="lnil lnil-grid-alt"></i>
                     </div>
                     <div class="meta">
                       <span>Card Grid V3</span>
@@ -286,7 +310,7 @@ const selectedCategory = ref('')
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-grid-alt"></i>
+                      <i aria-hidden="true" class="lnil lnil-grid-alt"></i>
                     </div>
                     <div class="meta">
                       <span>Card Grid V4</span>
@@ -300,7 +324,11 @@ const selectedCategory = ref('')
             <div class="column is-4">
               <div class="dropdown-item-group">
                 <h4 class="column-heading is-secondary">
-                  <i class="iconify" data-icon="feather:circle"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:circle"
+                  ></i>
                   <span>Tiles</span>
                 </h4>
 
@@ -310,7 +338,7 @@ const selectedCategory = ref('')
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-layout-alt-2"></i>
+                      <i aria-hidden="true" class="lnil lnil-layout-alt-2"></i>
                     </div>
                     <div class="meta">
                       <span>Tile Grid V1</span>
@@ -321,7 +349,7 @@ const selectedCategory = ref('')
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-layout-alt-2"></i>
+                      <i aria-hidden="true" class="lnil lnil-layout-alt-2"></i>
                     </div>
                     <div class="meta">
                       <span>Tile Grid V2</span>
@@ -332,7 +360,7 @@ const selectedCategory = ref('')
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-layout-alt-2"></i>
+                      <i aria-hidden="true" class="lnil lnil-layout-alt-2"></i>
                     </div>
                     <div class="meta">
                       <span>Tile Grid V3</span>
@@ -346,7 +374,11 @@ const selectedCategory = ref('')
             <div class="column is-4">
               <div class="dropdown-item-group">
                 <h4 class="column-heading is-success">
-                  <i class="iconify" data-icon="feather:circle"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:circle"
+                  ></i>
                   <span>Users</span>
                 </h4>
 
@@ -356,7 +388,7 @@ const selectedCategory = ref('')
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-users-alt"></i>
+                      <i aria-hidden="true" class="lnil lnil-users-alt"></i>
                     </div>
                     <div class="meta">
                       <span>User Grid V1</span>
@@ -367,7 +399,7 @@ const selectedCategory = ref('')
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-users-alt"></i>
+                      <i aria-hidden="true" class="lnil lnil-users-alt"></i>
                     </div>
                     <div class="meta">
                       <span>User Grid V2</span>
@@ -378,7 +410,7 @@ const selectedCategory = ref('')
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-users-alt"></i>
+                      <i aria-hidden="true" class="lnil lnil-users-alt"></i>
                     </div>
                     <div class="meta">
                       <span>User Grid V3</span>
@@ -389,7 +421,7 @@ const selectedCategory = ref('')
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-users-alt"></i>
+                      <i aria-hidden="true" class="lnil lnil-users-alt"></i>
                     </div>
                     <div class="meta">
                       <span>User Grid V4</span>
@@ -409,7 +441,11 @@ const selectedCategory = ref('')
             <div class="column is-4">
               <div class="dropdown-item-group">
                 <h4 class="column-heading is-yellow">
-                  <i class="iconify" data-icon="feather:circle"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:circle"
+                  ></i>
                   <span>Personal</span>
                 </h4>
 
@@ -419,7 +455,7 @@ const selectedCategory = ref('')
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-user-alt"></i>
+                      <i aria-hidden="true" class="lnil lnil-user-alt"></i>
                     </div>
                     <div class="meta">
                       <span>User Profile</span>
@@ -430,7 +466,7 @@ const selectedCategory = ref('')
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-pencil"></i>
+                      <i aria-hidden="true" class="lnil lnil-pencil"></i>
                     </div>
                     <div class="meta">
                       <span>Edit Profile</span>
@@ -441,7 +477,7 @@ const selectedCategory = ref('')
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-notification"></i>
+                      <i aria-hidden="true" class="lnil lnil-notification"></i>
                     </div>
                     <div class="meta">
                       <span>Notifications</span>
@@ -452,7 +488,7 @@ const selectedCategory = ref('')
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-cog"></i>
+                      <i aria-hidden="true" class="lnil lnil-cog"></i>
                     </div>
                     <div class="meta">
                       <span>Settings</span>
@@ -466,7 +502,11 @@ const selectedCategory = ref('')
             <div class="column is-4">
               <div class="dropdown-item-group">
                 <h4 class="column-heading is-primary">
-                  <i class="iconify" data-icon="feather:circle"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:circle"
+                  ></i>
                   <span>Pages</span>
                 </h4>
 
@@ -476,7 +516,7 @@ const selectedCategory = ref('')
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-pointer-right"></i>
+                      <i aria-hidden="true" class="lnil lnil-pointer-right"></i>
                     </div>
                     <div class="meta">
                       <span>Login v1</span>
@@ -487,7 +527,7 @@ const selectedCategory = ref('')
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-pointer-right"></i>
+                      <i aria-hidden="true" class="lnil lnil-pointer-right"></i>
                     </div>
                     <div class="meta">
                       <span>Login v2</span>
@@ -498,7 +538,7 @@ const selectedCategory = ref('')
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-pointer-right"></i>
+                      <i aria-hidden="true" class="lnil lnil-pointer-right"></i>
                     </div>
                     <div class="meta">
                       <span>Login v3</span>
@@ -509,7 +549,7 @@ const selectedCategory = ref('')
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-crown"></i>
+                      <i aria-hidden="true" class="lnil lnil-crown"></i>
                     </div>
                     <div class="meta">
                       <span>Signup v1</span>
@@ -520,7 +560,7 @@ const selectedCategory = ref('')
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-crown"></i>
+                      <i aria-hidden="true" class="lnil lnil-crown"></i>
                     </div>
                     <div class="meta">
                       <span>Signup v2</span>
@@ -531,7 +571,7 @@ const selectedCategory = ref('')
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-crown"></i>
+                      <i aria-hidden="true" class="lnil lnil-crown"></i>
                     </div>
                     <div class="meta">
                       <span>Signup Flow</span>
@@ -542,7 +582,7 @@ const selectedCategory = ref('')
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-search-alt"></i>
+                      <i aria-hidden="true" class="lnil lnil-search-alt"></i>
                     </div>
                     <div class="meta">
                       <span>Search Results</span>
@@ -553,7 +593,7 @@ const selectedCategory = ref('')
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-search-alt"></i>
+                      <i aria-hidden="true" class="lnil lnil-search-alt"></i>
                     </div>
                     <div class="meta">
                       <span>Empty Search</span>
@@ -567,7 +607,11 @@ const selectedCategory = ref('')
             <div class="column is-4">
               <div class="dropdown-item-group">
                 <h4 class="column-heading is-success">
-                  <i class="iconify" data-icon="feather:circle"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:circle"
+                  ></i>
                   <span>Projects</span>
                 </h4>
 
@@ -577,7 +621,7 @@ const selectedCategory = ref('')
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-grid-alt"></i>
+                      <i aria-hidden="true" class="lnil lnil-grid-alt"></i>
                     </div>
                     <div class="meta">
                       <span>Projects V1</span>
@@ -588,7 +632,7 @@ const selectedCategory = ref('')
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-grid-alt"></i>
+                      <i aria-hidden="true" class="lnil lnil-grid-alt"></i>
                     </div>
                     <div class="meta">
                       <span>Projects V2</span>
@@ -599,7 +643,7 @@ const selectedCategory = ref('')
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-grid-alt"></i>
+                      <i aria-hidden="true" class="lnil lnil-grid-alt"></i>
                     </div>
                     <div class="meta">
                       <span>Projects V3</span>
@@ -610,7 +654,7 @@ const selectedCategory = ref('')
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-layout"></i>
+                      <i aria-hidden="true" class="lnil lnil-layout"></i>
                     </div>
                     <div class="meta">
                       <span>Project Details</span>
@@ -621,7 +665,7 @@ const selectedCategory = ref('')
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-layout-alt-1"></i>
+                      <i aria-hidden="true" class="lnil lnil-layout-alt-1"></i>
                     </div>
                     <div class="meta">
                       <span>Kanban Board</span>
@@ -641,7 +685,11 @@ const selectedCategory = ref('')
             <div class="column is-4">
               <div class="dropdown-item-group">
                 <h4 class="column-heading is-green">
-                  <i class="iconify" data-icon="feather:circle"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:circle"
+                  ></i>
                   <span>Subpages</span>
                 </h4>
 
@@ -651,7 +699,7 @@ const selectedCategory = ref('')
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-credit-card"></i>
+                      <i aria-hidden="true" class="lnil lnil-credit-card"></i>
                     </div>
                     <div class="meta">
                       <span>SaaS Billing</span>
@@ -662,7 +710,7 @@ const selectedCategory = ref('')
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-door-alt"></i>
+                      <i aria-hidden="true" class="lnil lnil-door-alt"></i>
                     </div>
                     <div class="meta">
                       <span>Welcome</span>
@@ -673,7 +721,7 @@ const selectedCategory = ref('')
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-thunderbolt"></i>
+                      <i aria-hidden="true" class="lnil lnil-thunderbolt"></i>
                     </div>
                     <div class="meta">
                       <span>Action Page V1</span>
@@ -684,7 +732,7 @@ const selectedCategory = ref('')
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-thunderbolt"></i>
+                      <i aria-hidden="true" class="lnil lnil-thunderbolt"></i>
                     </div>
                     <div class="meta">
                       <span>Action Page V2</span>
@@ -697,7 +745,11 @@ const selectedCategory = ref('')
             <div class="column is-4">
               <div class="dropdown-item-group">
                 <h4 class="column-heading is-yellow">
-                  <i class="iconify" data-icon="feather:circle"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:circle"
+                  ></i>
                   <span>Utility</span>
                 </h4>
 
@@ -707,7 +759,7 @@ const selectedCategory = ref('')
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-thunderbolt"></i>
+                      <i aria-hidden="true" class="lnil lnil-thunderbolt"></i>
                     </div>
                     <div class="meta">
                       <span>Confirm Account</span>
@@ -718,7 +770,7 @@ const selectedCategory = ref('')
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-magnet"></i>
+                      <i aria-hidden="true" class="lnil lnil-magnet"></i>
                     </div>
                     <div class="meta">
                       <span>Promotion Page</span>
@@ -729,7 +781,10 @@ const selectedCategory = ref('')
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-calculator-alt"></i>
+                      <i
+                        aria-hidden="true"
+                        class="lnil lnil-calculator-alt"
+                      ></i>
                     </div>
                     <div class="meta">
                       <span>Invoice</span>
@@ -740,7 +795,10 @@ const selectedCategory = ref('')
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-checkmark-circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="lnil lnil-checkmark-circle"
+                      ></i>
                     </div>
                     <div class="meta">
                       <span>App Status</span>
@@ -753,7 +811,11 @@ const selectedCategory = ref('')
             <div class="column is-4">
               <div class="dropdown-item-group">
                 <h4 class="column-heading is-secondary">
-                  <i class="iconify" data-icon="feather:circle"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:circle"
+                  ></i>
                   <span>Onboarding</span>
                 </h4>
 
@@ -763,7 +825,7 @@ const selectedCategory = ref('')
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-train"></i>
+                      <i aria-hidden="true" class="lnil lnil-train"></i>
                     </div>
                     <div class="meta">
                       <span>Onboarding V1</span>
@@ -774,7 +836,7 @@ const selectedCategory = ref('')
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-train-alt"></i>
+                      <i aria-hidden="true" class="lnil lnil-train-alt"></i>
                     </div>
                     <div class="meta">
                       <span>Onboarding V2</span>
@@ -785,7 +847,7 @@ const selectedCategory = ref('')
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-car"></i>
+                      <i aria-hidden="true" class="lnil lnil-car"></i>
                     </div>
                     <div class="meta">
                       <span>Onboarding V3</span>
@@ -796,7 +858,7 @@ const selectedCategory = ref('')
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-car-alt"></i>
+                      <i aria-hidden="true" class="lnil lnil-car-alt"></i>
                     </div>
                     <div class="meta">
                       <span>Onboarding V4</span>
@@ -807,7 +869,7 @@ const selectedCategory = ref('')
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-train-alt"></i>
+                      <i aria-hidden="true" class="lnil lnil-train-alt"></i>
                     </div>
                     <div class="meta">
                       <span>Onboarding V5</span>
@@ -827,7 +889,11 @@ const selectedCategory = ref('')
             <div class="column is-4">
               <div class="dropdown-item-group">
                 <h4 class="column-heading is-secondary">
-                  <i class="iconify" data-icon="feather:circle"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:circle"
+                  ></i>
                   <span>Errors</span>
                 </h4>
 
@@ -837,7 +903,7 @@ const selectedCategory = ref('')
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-cross-circle"></i>
+                      <i aria-hidden="true" class="lnil lnil-cross-circle"></i>
                     </div>
                     <div class="meta">
                       <span>Error Page V1</span>
@@ -848,7 +914,7 @@ const selectedCategory = ref('')
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-cross-circle"></i>
+                      <i aria-hidden="true" class="lnil lnil-cross-circle"></i>
                     </div>
                     <div class="meta">
                       <span>Error Page V2</span>
@@ -859,7 +925,7 @@ const selectedCategory = ref('')
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-cross-circle"></i>
+                      <i aria-hidden="true" class="lnil lnil-cross-circle"></i>
                     </div>
                     <div class="meta">
                       <span>Error Page V3</span>
@@ -870,7 +936,7 @@ const selectedCategory = ref('')
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-cross-circle"></i>
+                      <i aria-hidden="true" class="lnil lnil-cross-circle"></i>
                     </div>
                     <div class="meta">
                       <span>Error Page V4</span>
@@ -881,7 +947,7 @@ const selectedCategory = ref('')
                     class="dropdown-item is-media"
                   >
                     <div class="icon">
-                      <i class="lnil lnil-cross-circle"></i>
+                      <i aria-hidden="true" class="lnil lnil-cross-circle"></i>
                     </div>
                     <div class="meta">
                       <span>Error Page V5</span>

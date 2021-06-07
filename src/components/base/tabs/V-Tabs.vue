@@ -61,21 +61,27 @@ const props = defineProps({
 
 const activeValue = ref(props.selected)
 const sliderClass = computed(() => {
-  if (props.slider) {
-    if (props.type === 'rounded') {
-      if (props.tabs.length === 3) {
-        return 'is-triple-slider'
-      }
-      if (props.tabs.length === 2) {
-        return 'is-slider'
-      }
-    } else if (!props.type) {
-      if (props.tabs.length === 3) {
-        return 'is-squared is-triple-slider'
-      }
-      if (props.tabs.length === 2) {
-        return 'is-squared is-slider'
-      }
+  if (!props.slider) {
+    return ''
+  }
+
+  if (props.type === 'rounded') {
+    if (props.tabs.length === 3) {
+      return 'is-triple-slider'
+    }
+    if (props.tabs.length === 2) {
+      return 'is-slider'
+    }
+
+    return ''
+  }
+
+  if (!props.type) {
+    if (props.tabs.length === 3) {
+      return 'is-squared is-triple-slider'
+    }
+    if (props.tabs.length === 2) {
+      return 'is-squared is-slider'
     }
   }
 

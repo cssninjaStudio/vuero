@@ -21,7 +21,7 @@ defineProps({
         :class="{ 'is-active': currentTab === index }"
         @click="currentTab = index"
       >
-        <i class="iconify" :data-icon="tab.icon"></i>
+        <i aria-hidden="true" class="iconify" :data-icon="tab.icon"></i>
       </a>
     </div>
   </div>

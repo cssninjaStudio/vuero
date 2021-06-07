@@ -52,7 +52,7 @@ const optionsSingle = [
         </V-Field>
         <V-Button color="primary" raised>
           <span class="icon">
-            <i class="fas fa-plus"></i>
+            <i aria-hidden="true" class="fas fa-plus"></i>
           </span>
           <span>Add File</span>
         </V-Button>
@@ -100,7 +100,10 @@ const optionsSingle = [
                 <span class="dark-inverted">{{ item.name }}</span>
                 <span>
                   <span>{{ item.size }}</span>
-                  <i class="fas fa-circle icon-separator"></i>
+                  <i
+                    aria-hidden="true"
+                    class="fas fa-circle icon-separator"
+                  ></i>
                   <span>Updated {{ item.updated }}</span>
                 </span>
               </div>
@@ -126,14 +129,6 @@ const optionsSingle = [
 
   .column {
     padding: 0.5rem !important;
-  }
-}
-
-.is-dark {
-  .tile-grid {
-    .tile-grid-item {
-      @include vuero-card--dark();
-    }
   }
 }
 
@@ -205,6 +200,11 @@ const optionsSingle = [
 }
 
 .is-dark {
+  .tile-grid {
+    .tile-grid-item {
+      @include vuero-card--dark();
+    }
+  }
   .tile-grid-v2 {
     .tile-grid-item {
       @include vuero-card--dark();

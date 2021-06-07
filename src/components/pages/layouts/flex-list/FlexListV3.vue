@@ -141,22 +141,27 @@ const filteredData = computed(() => {
                   <span class="dot-levels">
                     <i
                       class="fas fa-circle dot active"
+                      aria-hidden="true"
                       :class="item.difficulty >= 1 ? 'active' : ''"
                     ></i>
                     <i
                       class="fas fa-circle dot"
+                      aria-hidden="true"
                       :class="item.difficulty >= 2 ? 'active' : ''"
                     ></i>
                     <i
                       class="fas fa-circle dot"
+                      aria-hidden="true"
                       :class="item.difficulty >= 3 ? 'active' : ''"
                     ></i>
                     <i
                       class="fas fa-circle dot"
+                      aria-hidden="true"
                       :class="item.difficulty >= 4 ? 'active' : ''"
                     ></i>
                     <i
                       class="fas fa-circle dot"
+                      aria-hidden="true"
                       :class="item.difficulty === 5 ? 'active' : ''"
                     ></i>
                   </span>
@@ -170,10 +175,11 @@ const filteredData = computed(() => {
                       dark-outlined
                       is-pushed-mobile
                     "
-                    >Purchase <i class="fas fa-circle dot"></i> ${{
+                    >Purchase
+                    <i aria-hidden="true" class="fas fa-circle dot"></i> ${{
                       item.price
-                    }}</a
-                  >
+                    }}
+                  </a>
                 </div>
               </div>
             </transition-group>

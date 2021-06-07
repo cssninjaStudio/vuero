@@ -111,7 +111,11 @@ onUnmounted(() => {
             :class="[step >= 1 && 'is-active', step < 1 && 'is-inactive']"
           >
             <div class="inner">
-              <i class="iconify" data-icon="feather:user"></i>
+              <i
+                aria-hidden="true"
+                class="iconify"
+                data-icon="feather:user"
+              ></i>
             </div>
             <span class="step-label">Profile Pic</span>
           </div>
@@ -120,7 +124,11 @@ onUnmounted(() => {
             :class="[step >= 2 && 'is-active', step < 2 && 'is-inactive']"
           >
             <div class="inner">
-              <i class="iconify" data-icon="feather:shield"></i>
+              <i
+                aria-hidden="true"
+                class="iconify"
+                data-icon="feather:shield"
+              ></i>
             </div>
             <span class="step-label">Account</span>
           </div>
@@ -129,7 +137,11 @@ onUnmounted(() => {
             :class="[step >= 3 && 'is-active', step < 3 && 'is-inactive']"
           >
             <div class="inner">
-              <i class="iconify" data-icon="feather:check"></i>
+              <i
+                aria-hidden="true"
+                class="iconify"
+                data-icon="feather:check"
+              ></i>
             </div>
             <span class="step-label">Done</span>
           </div>
@@ -203,7 +215,10 @@ onUnmounted(() => {
                           <div class="box-wrap">
                             <input type="radio" name="signup_type" checked />
                             <div class="signup-box">
-                              <i class="lnil lnil-coffee-cup"></i>
+                              <i
+                                aria-hidden="true"
+                                class="lnil lnil-coffee-cup"
+                              ></i>
                               <div class="meta">
                                 <span>Free</span>
                                 <span>Nice to get started</span>
@@ -213,7 +228,10 @@ onUnmounted(() => {
                           <div class="box-wrap">
                             <input type="radio" name="signup_type" />
                             <div class="signup-box">
-                              <i class="lnil lnil-crown-alt-1"></i>
+                              <i
+                                aria-hidden="true"
+                                class="lnil lnil-crown-alt-1"
+                              ></i>
                               <div class="meta">
                                 <span>Paid</span>
                                 <span>Get a lot more features</span>
@@ -276,7 +294,11 @@ onUnmounted(() => {
                         role="button"
                         @click="uploadModalOpen = true"
                       >
-                        <i class="iconify" data-icon="feather:plus"></i>
+                        <i
+                          aria-hidden="true"
+                          class="iconify"
+                          data-icon="feather:plus"
+                        ></i>
                       </div>
                     </div>
                   </div>
@@ -374,11 +396,11 @@ onUnmounted(() => {
                     <div class="column is-12">
                       <V-Field>
                         <V-Control class="has-switch">
-                          <label for="send-marketing"
-                            ><span
+                          <label for="send-marketing">
+                            <span
                               >Send me marketing and transaction emails</span
-                            ></label
-                          >
+                            >
+                          </label>
                           <label
                             for="send-marketing"
                             class="form-switch ml-auto"
@@ -388,7 +410,7 @@ onUnmounted(() => {
                               type="checkbox"
                               class="is-switch"
                             />
-                            <i></i>
+                            <i aria-hidden="true"></i>
                           </label>
                         </V-Control>
                       </V-Field>
@@ -445,7 +467,7 @@ onUnmounted(() => {
                 <input class="file-input" type="file" name="resume" />
                 <span class="file-cta">
                   <span class="file-icon">
-                    <i class="fas fa-cloud-upload-alt"></i>
+                    <i aria-hidden="true" class="fas fa-cloud-upload-alt"></i>
                   </span>
                   <span class="file-label"> Choose a file… </span>
                 </span>

@@ -15,7 +15,7 @@
             <div class="card card-icon-box">
               <div class="card-content">
                 <V-IconBox size="medium" color="blue">
-                  <i class="lnil lnil-layout-alt-2"></i>
+                  <i aria-hidden="true" class="lnil lnil-layout-alt-2"></i>
                 </V-IconBox>
 
                 <h4 class="title is-5">Nice Vectors</h4>
@@ -30,7 +30,7 @@
             <div class="card card-icon-box">
               <div class="card-content">
                 <V-IconBox size="medium" color="warning">
-                  <i class="lnil lnil-layers"></i>
+                  <i aria-hidden="true" class="lnil lnil-layers"></i>
                 </V-IconBox>
 
                 <h4 class="title is-5">Icon title</h4>
@@ -45,7 +45,7 @@
             <div class="card card-icon-box">
               <div class="card-content">
                 <V-IconBox size="medium" color="success">
-                  <i class="lnil lnil-grid-alt"></i>
+                  <i aria-hidden="true" class="lnil lnil-grid-alt"></i>
                 </V-IconBox>
 
                 <h4 class="title is-5">Icon title</h4>
@@ -60,7 +60,7 @@
             <div class="card card-icon-box">
               <div class="card-content">
                 <V-IconBox size="medium" color="purple">
-                  <i class="lnil lnil-bulb"></i>
+                  <i aria-hidden="true" class="lnil lnil-bulb"></i>
                 </V-IconBox>
 
                 <h4 class="title is-5">Icon title</h4>
@@ -75,7 +75,7 @@
             <div class="card card-icon-box">
               <div class="card-content">
                 <V-IconBox size="medium" color="green">
-                  <i class="lnil lnil-cog"></i>
+                  <i aria-hidden="true" class="lnil lnil-cog"></i>
                 </V-IconBox>
 
                 <h4 class="title is-5">Icon title</h4>
@@ -90,7 +90,7 @@
             <div class="card card-icon-box">
               <div class="card-content">
                 <V-IconBox size="medium" color="yellow">
-                  <i class="lnil lnil-plug"></i>
+                  <i aria-hidden="true" class="lnil lnil-plug"></i>
                 </V-IconBox>
 
                 <h4 class="title is-5">Icon title</h4>
@@ -105,7 +105,7 @@
             <div class="card card-icon-box">
               <div class="card-content">
                 <V-IconBox size="medium" color="orange">
-                  <i class="lnil lnil-folder-alt"></i>
+                  <i aria-hidden="true" class="lnil lnil-folder-alt"></i>
                 </V-IconBox>
 
                 <h4 class="title is-5">Icon title</h4>
@@ -120,7 +120,7 @@
             <div class="card card-icon-box">
               <div class="card-content">
                 <V-IconBox size="medium" color="info">
-                  <i class="lnil lnil-timer"></i>
+                  <i aria-hidden="true" class="lnil lnil-timer"></i>
                 </V-IconBox>
 
                 <h4 class="title is-5">Icon title</h4>
@@ -135,7 +135,7 @@
             <div class="card card-icon-box">
               <div class="card-content">
                 <V-IconBox size="medium" color="blue">
-                  <i class="lnil lnil-pie-chart-alt"></i>
+                  <i aria-hidden="true" class="lnil lnil-pie-chart-alt"></i>
                 </V-IconBox>
 
                 <h4 class="title is-5">Icon title</h4>
@@ -150,7 +150,7 @@
             <div class="card card-icon-box">
               <div class="card-content">
                 <V-IconBox size="medium" color="purple">
-                  <i class="lnil lnil-licencse"></i>
+                  <i aria-hidden="true" class="lnil lnil-licencse"></i>
                 </V-IconBox>
 
                 <h4 class="title is-5">Icon title</h4>
@@ -165,7 +165,7 @@
             <div class="card card-icon-box">
               <div class="card-content">
                 <V-IconBox size="medium" color="green">
-                  <i class="lnil lnil-grow"></i>
+                  <i aria-hidden="true" class="lnil lnil-grow"></i>
                 </V-IconBox>
 
                 <h4 class="title is-5">Icon title</h4>
@@ -180,7 +180,7 @@
             <div class="card card-icon-box">
               <div class="card-content">
                 <V-IconBox size="medium" color="yellow">
-                  <i class="lnil lnil-bank"></i>
+                  <i aria-hidden="true" class="lnil lnil-bank"></i>
                 </V-IconBox>
 
                 <h4 class="title is-5">Icon title</h4>
@@ -212,6 +212,7 @@
               <a
                 href="https://cssninja.io"
                 target="_blank"
+                rel="noopener"
                 class="button chat-button is-secondary"
                 >Chat with us</a
               >

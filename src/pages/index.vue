@@ -50,9 +50,9 @@ useHead({
                     }
                   "
                 />
-                <label class="night-toggle--btn" for="night-toggle--daynight"
-                  ><span class="night-toggle--feature"></span
-                ></label>
+                <label class="night-toggle--btn" for="night-toggle--daynight">
+                  <span class="night-toggle--feature"></span>
+                </label>
               </div>
             </div>
             <h1 class="title is-1 is-bold is-light is-bold">
@@ -190,14 +190,14 @@ useHead({
           <div class="boxed-features">
             <div class="flex-card light-bordered hover-inset">
               <div class="flex-cell is-bordered">
-                <i class="lnil lnil-toolbox"></i>
+                <i aria-hidden="true" class="lnil lnil-toolbox"></i>
                 <h3>500+ Vue Components</h3>
                 <p>
                   An incredible set of building blocks with dark mode support.
                 </p>
               </div>
               <div class="flex-cell is-bordered">
-                <i class="lnil lnil-display-alt"></i>
+                <i aria-hidden="true" class="lnil lnil-display-alt"></i>
                 <h3>220+ Demos</h3>
                 <p>
                   Vuero ships with a huge number of demos to kickstart your
@@ -205,17 +205,17 @@ useHead({
                 </p>
               </div>
               <div class="flex-cell is-bordered">
-                <i class="lnil lnil-moon"></i>
+                <i aria-hidden="true" class="lnil lnil-moon"></i>
                 <h3>Native Dark Mode</h3>
                 <p>Every single piece of UI is natively dark mode ready.</p>
               </div>
               <div class="flex-cell is-bordered no-border-edge">
-                <i class="lnil lnil-rocket"></i>
+                <i aria-hidden="true" class="lnil lnil-rocket"></i>
                 <h3>Active Support</h3>
                 <p>Our support helps you solve any issues you have</p>
               </div>
               <div class="flex-cell">
-                <i class="lnil lnil-code"></i>
+                <i aria-hidden="true" class="lnil lnil-code"></i>
                 <h3>Clean Code</h3>
                 <p>
                   Vuero's codebase is huge, but structured and easy to
@@ -223,17 +223,17 @@ useHead({
                 </p>
               </div>
               <div class="flex-cell">
-                <i class="lnil lnil-plug"></i>
+                <i aria-hidden="true" class="lnil lnil-plug"></i>
                 <h3>Premium Icons</h3>
                 <p>Vuero ships with the premium Line Icons set ($30 value).</p>
               </div>
               <div class="flex-cell">
-                <i class="lnil lnil-mobile-alt-2"></i>
+                <i aria-hidden="true" class="lnil lnil-mobile-alt-2"></i>
                 <h3>Fully Responsive</h3>
                 <p>Vuero is built with Bulma 0.9, a mobile first framework</p>
               </div>
               <div class="flex-cell no-border-edge">
-                <i class="lnil lnil-file-name"></i>
+                <i aria-hidden="true" class="lnil lnil-file-name"></i>
                 <h3>Extensive Docs</h3>
                 <p>A nice documentation to help you get started fast</p>
               </div>
@@ -585,7 +585,7 @@ useHead({
               <!-- Side icon box -->
               <div class="media-flex">
                 <div class="left-icon">
-                  <i class="lnil lnil-construction"></i>
+                  <i aria-hidden="true" class="lnil lnil-construction"></i>
                 </div>
                 <div class="flex-meta">
                   <h4>Modular</h4>
@@ -601,7 +601,7 @@ useHead({
               <!-- Side icon box -->
               <div class="media-flex">
                 <div class="left-icon">
-                  <i class="lnil lnil-code"></i>
+                  <i aria-hidden="true" class="lnil lnil-code"></i>
                 </div>
                 <div class="flex-meta">
                   <h4>Code Blocks</h4>
@@ -617,7 +617,7 @@ useHead({
               <!-- Side icon box -->
               <div class="media-flex">
                 <div class="left-icon">
-                  <i class="lnil lnil-color-palette"></i>
+                  <i aria-hidden="true" class="lnil lnil-color-palette"></i>
                 </div>
                 <div class="flex-meta">
                   <h4>Easy Theming</h4>
@@ -819,7 +819,7 @@ useHead({
       <!-- Back To Top Button -->
       <div id="backtotop">
         <a href="#">
-          <i class="fas fa-angle-up"></i>
+          <i aria-hidden="true" class="fas fa-angle-up"></i>
         </a>
       </div>
     </div>

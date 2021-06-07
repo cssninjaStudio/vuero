@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useWindowScroll } from '@vueuse/core'
-import { computed, reactive, ref } from 'vue'
+import { computed, ref } from 'vue'
 import { popovers } from '/@src/data/users/userPopovers'
 
 const calendarTarget = ref('')
@@ -233,7 +233,11 @@ const isStuck = computed(() => {
                       </tippy>
 
                       <button class="add-participant">
-                        <i class="iconify" data-icon="feather:plus"></i>
+                        <i
+                          aria-hidden="true"
+                          class="iconify"
+                          data-icon="feather:plus"
+                        ></i>
                       </button>
                     </div>
                   </V-Control>
@@ -308,7 +312,8 @@ const isStuck = computed(() => {
                       autocomplete="off"
                       autocapitalize="off"
                       spellcheck="true"
-                    ></textarea>
+                    >
+                    </textarea>
                     <a class="add-link">Add Attachments</a>
                   </V-Control>
                 </V-Field>
@@ -395,14 +400,22 @@ const isStuck = computed(() => {
                     >
                       <template #singlelabel="{ value }">
                         <div class="multiselect-single-label">
-                          <img class="select-label-icon" :src="value.icon" />
+                          <img
+                            class="select-label-icon"
+                            :src="value.icon"
+                            alt=""
+                          />
                           <span class="select-label-text">
                             {{ value.name }}
                           </span>
                         </div>
                       </template>
                       <template #option="{ option }">
-                        <img class="select-option-icon" :src="option.icon" />
+                        <img
+                          class="select-option-icon"
+                          :src="option.icon"
+                          alt=""
+                        />
                         <span class="select-label-text">
                           {{ option.name }}
                         </span>

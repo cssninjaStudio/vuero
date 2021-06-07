@@ -76,8 +76,9 @@ const navbarDemos = navbar.sort(displayOrder)
                 </div>
                 <div class="demo-link">
                   <RouterLink :to="{ name: item.route.name }"
-                    >Go to demo <i class="fas fa-angle-right"></i
-                  ></RouterLink>
+                    >Go to demo
+                    <i aria-hidden="true" class="fas fa-angle-right"></i>
+                  </RouterLink>
                 </div>
               </div>
             </div>
@@ -135,8 +136,9 @@ const navbarDemos = navbar.sort(displayOrder)
                 </div>
                 <div class="demo-link">
                   <RouterLink :to="{ name: item.route.name }"
-                    >Go to demo <i class="fas fa-angle-right"></i
-                  ></RouterLink>
+                    >Go to demo
+                    <i aria-hidden="true" class="fas fa-angle-right"></i>
+                  </RouterLink>
                 </div>
               </div>
             </div>
@@ -194,8 +196,9 @@ const navbarDemos = navbar.sort(displayOrder)
                 </div>
                 <div class="demo-link">
                   <RouterLink :to="{ name: item.route.name }"
-                    >Go to demo <i class="fas fa-angle-right"></i
-                  ></RouterLink>
+                    >Go to demo
+                    <i aria-hidden="true" class="fas fa-angle-right"></i>
+                  </RouterLink>
                 </div>
               </div>
             </div>
@@ -253,8 +256,9 @@ const navbarDemos = navbar.sort(displayOrder)
                 </div>
                 <div class="demo-link">
                   <RouterLink :to="{ name: item.route.name }"
-                    >Go to demo <i class="fas fa-angle-right"></i
-                  ></RouterLink>
+                    >Go to demo
+                    <i aria-hidden="true" class="fas fa-angle-right"></i>
+                  </RouterLink>
                 </div>
               </div>
             </div>
@@ -312,8 +316,9 @@ const navbarDemos = navbar.sort(displayOrder)
                 </div>
                 <div class="demo-link">
                   <RouterLink :to="{ name: item.route.name }"
-                    >Go to demo <i class="fas fa-angle-right"></i
-                  ></RouterLink>
+                    >Go to demo
+                    <i aria-hidden="true" class="fas fa-angle-right"></i>
+                  </RouterLink>
                 </div>
               </div>
             </div>

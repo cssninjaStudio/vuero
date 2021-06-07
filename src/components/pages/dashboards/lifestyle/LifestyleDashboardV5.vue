@@ -20,7 +20,11 @@ import {
           <div class="members-list">
             <div class="v-avatar is-small">
               <button class="avatar is-fake is-squared">
-                <i class="iconify" data-icon="feather:plus"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:plus"
+                ></i>
               </button>
             </div>
             <V-Avatar
@@ -71,7 +75,11 @@ import {
                     <span class="tag item-duration">{{ item.duration }}</span>
                     <!--Play button-->
                     <button class="play-button">
-                      <i class="iconify" data-icon="feather:play"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:play"
+                      ></i>
                     </button>
                     <!--Bottom Overlay-->
                     <div class="item-overlay"></div>
@@ -124,7 +132,11 @@ import {
                     <span class="tag item-duration">{{ item.duration }}</span>
                     <!--Play button-->
                     <button class="play-button">
-                      <i class="iconify" data-icon="feather:play"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:play"
+                      ></i>
                     </button>
                     <!--Bottom Overlay-->
                     <div class="item-overlay"></div>
@@ -178,7 +190,11 @@ import {
                 <span class="tag item-duration">{{ item.duration }}</span>
                 <!--Play button-->
                 <button class="play-button">
-                  <i class="iconify" data-icon="feather:play"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:play"
+                  ></i>
                 </button>
                 <!--Bottom Overlay-->
                 <div class="item-overlay"></div>

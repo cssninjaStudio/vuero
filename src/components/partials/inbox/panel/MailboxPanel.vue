@@ -16,31 +16,33 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
         <div>
           <button class="button" @click="toggle">
             <span class="icon is-small">
-              <i class="material-icons">keyboard_arrow_down</i>
+              <i aria-hidden="true" class="material-icons"
+                >keyboard_arrow_down</i
+              >
             </span>
           </button>
         </div>
         <div class="dropdown-menu">
           <div class="dropdown-content">
             <a class="dropdown-item">
-              <i class="sl sl-icon-doc"></i>
+              <i aria-hidden="true" class="sl sl-icon-doc"></i>
               <span>Load template</span>
             </a>
             <hr class="dropdown-divider" />
             <a class="dropdown-item">
-              <i class="sl sl-icon-eyeglass"></i>
+              <i aria-hidden="true" class="sl sl-icon-eyeglass"></i>
               <span>Spelling</span>
             </a>
             <hr class="dropdown-divider" />
             <a class="dropdown-item">
-              <i class="sl sl-icon-pencil"></i>
+              <i aria-hidden="true" class="sl sl-icon-pencil"></i>
               <span>Signature</span>
             </a>
           </div>
         </div>
       </div>
       <a class="inbox-action compose-panel-close">
-        <i class="material-icons">close</i>
+        <i aria-hidden="true" class="material-icons">close</i>
       </a>
     </div>
     <!--Panel body-->
@@ -89,12 +91,13 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
               class="textarea"
               rows="9"
               placeholder="Write your message..."
-            ></textarea>
+            >
+            </textarea>
             <button type="button" class="button send-button">
               Send Message
             </button>
             <a class="attacv-button">
-              <i class="sl sl-icon-paper-clip"></i>
+              <i aria-hidden="true" class="sl sl-icon-paper-clip"></i>
             </a>
           </div>
         </div>

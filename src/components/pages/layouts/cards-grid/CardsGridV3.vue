@@ -52,7 +52,7 @@ const optionsSingle = [
         </V-Field>
         <V-Button color="primary" raised>
           <span class="icon">
-            <i class="fas fa-plus"></i>
+            <i aria-hidden="true" class="fas fa-plus"></i>
           </span>
           <span>New Project</span>
         </V-Button>
@@ -96,10 +96,18 @@ const optionsSingle = [
               <input type="checkbox" :checked="item.locked" />
               <span class="toggler">
                 <span class="active">
-                  <i class="iconify" data-icon="feather:lock"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:lock"
+                  ></i>
                 </span>
                 <span class="inactive">
-                  <i class="iconify" data-icon="feather:check"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:check"
+                  ></i>
                 </span>
               </span>
             </label>
@@ -129,13 +137,21 @@ const optionsSingle = [
             <div class="buttons">
               <button class="button v-button is-dark-outlined">
                 <span class="icon">
-                  <i class="iconify" data-icon="feather:eye"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:eye"
+                  ></i>
                 </span>
                 <span>View</span>
               </button>
               <button class="button v-button is-dark-outlined">
                 <span class="icon">
-                  <i class="iconify" data-icon="feather:edit-2"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:edit-2"
+                  ></i>
                 </span>
                 <span>Edit</span>
               </button>

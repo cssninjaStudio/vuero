@@ -48,7 +48,11 @@ import {
           <div class="tile-head">
             <h3>Total Sales</h3>
             <V-IconBox color="info" rounded>
-              <i class="iconify" data-icon="feather:gift"></i>
+              <i
+                aria-hidden="true"
+                class="iconify"
+                data-icon="feather:gift"
+              ></i>
             </V-IconBox>
           </div>
           <div class="dashboard-tile-inner">
@@ -62,7 +66,8 @@ import {
                 :type="spark1.chart.type"
                 :series="spark1.series"
                 :options="spark1"
-              ></apexchart>
+              >
+              </apexchart>
             </div>
           </div>
         </div>
@@ -74,7 +79,11 @@ import {
           <div class="tile-head">
             <h3>Total Income</h3>
             <V-IconBox color="purple" rounded>
-              <i class="iconify" data-icon="feather:dollar-sign"></i>
+              <i
+                aria-hidden="true"
+                class="iconify"
+                data-icon="feather:dollar-sign"
+              ></i>
             </V-IconBox>
           </div>
           <div class="dashboard-tile-inner">
@@ -88,7 +97,8 @@ import {
                 :type="spark2.chart.type"
                 :series="spark2.series"
                 :options="spark2"
-              ></apexchart>
+              >
+              </apexchart>
             </div>
           </div>
         </div>
@@ -100,7 +110,7 @@ import {
           <div class="tile-head">
             <h3>New Orders</h3>
             <V-IconBox color="green" rounded>
-              <i class="iconify" data-icon="feather:box"></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:box"></i>
             </V-IconBox>
           </div>
           <div class="dashboard-tile-inner">
@@ -114,7 +124,8 @@ import {
                 :type="spark3.chart.type"
                 :series="spark3.series"
                 :options="spark3"
-              ></apexchart>
+              >
+              </apexchart>
             </div>
           </div>
         </div>
@@ -126,7 +137,11 @@ import {
           <div class="tile-head">
             <h3>Abandonned</h3>
             <V-IconBox color="orange" rounded>
-              <i class="iconify" data-icon="feather:shopping-cart"></i>
+              <i
+                aria-hidden="true"
+                class="iconify"
+                data-icon="feather:shopping-cart"
+              ></i>
             </V-IconBox>
           </div>
           <div class="dashboard-tile-inner">
@@ -140,7 +155,8 @@ import {
                 :type="spark4.chart.type"
                 :series="spark4.series"
                 :options="spark4"
-              ></apexchart>
+              >
+              </apexchart>
             </div>
           </div>
         </div>
@@ -170,7 +186,8 @@ import {
             :type="revenueChartsOptions.chart.type"
             :series="revenueChartsOptions.series"
             :options="revenueChartsOptions"
-          ></apexchart>
+          >
+          </apexchart>
         </div>
       </div>
 
@@ -198,7 +215,8 @@ import {
             :type="customersChartOptions.chart.type"
             :series="customersChartOptions.series"
             :options="customersChartOptions"
-          ></apexchart>
+          >
+          </apexchart>
         </div>
       </div>
 
@@ -222,7 +240,8 @@ import {
                 :type="productReturnsChartOptions.chart.type"
                 :series="productReturnsChartOptions.series"
                 :options="productReturnsChartOptions"
-              ></apexchart>
+              >
+              </apexchart>
             </div>
           </div>
         </div>
@@ -248,7 +267,8 @@ import {
                 :type="customerEngagementChartOptions.chart.type"
                 :series="customerEngagementChartOptions.series"
                 :options="customerEngagementChartOptions"
-              ></apexchart>
+              >
+              </apexchart>
             </div>
           </div>
         </div>
@@ -270,7 +290,8 @@ import {
                     :type="freeShippingChartOptions.chart.type"
                     :series="freeShippingChartOptions.series"
                     :options="freeShippingChartOptions"
-                  ></apexchart>
+                  >
+                  </apexchart>
                 </div>
                 <span class="dark-inverted">36.8K</span>
                 <p>Free Shipping</p>
@@ -285,7 +306,8 @@ import {
                     :type="groundShippingChartOptions.chart.type"
                     :series="groundShippingChartOptions.series"
                     :options="groundShippingChartOptions"
-                  ></apexchart>
+                  >
+                  </apexchart>
                 </div>
                 <span class="dark-inverted">292.3K</span>
                 <p>Ground Shipping</p>
@@ -300,7 +322,8 @@ import {
                     :type="nextDayAirChartOptions.chart.type"
                     :series="nextDayAirChartOptions.series"
                     :options="nextDayAirChartOptions"
-                  ></apexchart>
+                  >
+                  </apexchart>
                 </div>
                 <span class="dark-inverted">108.2K</span>
                 <p>Next Day Air</p>
@@ -326,7 +349,8 @@ import {
                     :type="activeTicketsChartOptions.chart.type"
                     :series="activeTicketsChartOptions.series"
                     :options="activeTicketsChartOptions"
-                  ></apexchart>
+                  >
+                  </apexchart>
                 </div>
                 <span class="dark-inverted">641</span>
                 <p>Active Tickets</p>
@@ -341,7 +365,8 @@ import {
                     :type="escalatedChartOptions.chart.type"
                     :series="escalatedChartOptions.series"
                     :options="escalatedChartOptions"
-                  ></apexchart>
+                  >
+                  </apexchart>
                 </div>
                 <span class="dark-inverted">84</span>
                 <p>Escalated</p>
@@ -356,7 +381,8 @@ import {
                     :type="closedTicketsChartOptions.chart.type"
                     :series="closedTicketsChartOptions.series"
                     :options="closedTicketsChartOptions"
-                  ></apexchart>
+                  >
+                  </apexchart>
                 </div>
                 <span class="dark-inverted">1,749</span>
                 <p>Closed Tickets</p>

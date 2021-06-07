@@ -40,30 +40,46 @@ const activeTab = ref<TabId>('list')
                 <ul>
                   <li>
                     <RouterLink :to="{ name: 'navbar-layouts' }">
-                      <i class="lnil lnil-list-alt"></i>
+                      <i aria-hidden="true" class="lnil lnil-list-alt"></i>
                       <span>List View V1</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'navbar-layouts-list-view-2' }">
-                      <i class="lnil lnil-list-alt"></i>
+                      <i aria-hidden="true" class="lnil lnil-list-alt"></i>
                       <span>List View V2</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'navbar-layouts-list-view-3' }">
-                      <i class="lnil lnil-list-alt"></i>
+                      <i aria-hidden="true" class="lnil lnil-list-alt"></i>
                       <span>List View V3</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'navbar-layouts-list-view-4' }">
-                      <i class="lnil lnil-list-alt"></i>
+                      <i aria-hidden="true" class="lnil lnil-list-alt"></i>
                       <span>List View V4</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                 </ul>
@@ -73,23 +89,35 @@ const activeTab = ref<TabId>('list')
                 <ul>
                   <li>
                     <RouterLink :to="{ name: 'navbar-layouts-list-flex-1' }">
-                      <i class="lnil lnil-list-alt-1"></i>
+                      <i aria-hidden="true" class="lnil lnil-list-alt-1"></i>
                       <span>Flex List V1</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'navbar-layouts-list-flex-2' }">
-                      <i class="lnil lnil-list-alt-1"></i>
+                      <i aria-hidden="true" class="lnil lnil-list-alt-1"></i>
                       <span>Flex List V2</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'navbar-layouts-list-flex-3' }">
-                      <i class="lnil lnil-list-alt-1"></i>
+                      <i aria-hidden="true" class="lnil lnil-list-alt-1"></i>
                       <span>Flex List V3</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                 </ul>
@@ -101,36 +129,52 @@ const activeTab = ref<TabId>('list')
                     <RouterLink
                       :to="{ name: 'navbar-layouts-list-datatable-1' }"
                     >
-                      <i class="lnil lnil-layout-alt"></i>
+                      <i aria-hidden="true" class="lnil lnil-layout-alt"></i>
                       <span>Datatable V1</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink
                       :to="{ name: 'navbar-layouts-list-datatable-2' }"
                     >
-                      <i class="lnil lnil-layout-alt"></i>
+                      <i aria-hidden="true" class="lnil lnil-layout-alt"></i>
                       <span>Datatable V2</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink
                       :to="{ name: 'navbar-layouts-list-datatable-3' }"
                     >
-                      <i class="lnil lnil-layout-alt"></i>
+                      <i aria-hidden="true" class="lnil lnil-layout-alt"></i>
                       <span>Datatable V3</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink
                       :to="{ name: 'navbar-layouts-list-datatable-4' }"
                     >
-                      <i class="lnil lnil-layout-alt"></i>
+                      <i aria-hidden="true" class="lnil lnil-layout-alt"></i>
                       <span>Datatable V4</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                 </ul>
@@ -184,30 +228,46 @@ const activeTab = ref<TabId>('list')
                 <ul>
                   <li>
                     <RouterLink :to="{ name: 'navbar-layouts-grid-cards-1' }">
-                      <i class="lnil lnil-grid-alt"></i>
+                      <i aria-hidden="true" class="lnil lnil-grid-alt"></i>
                       <span>Card Grid V1</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'navbar-layouts-grid-cards-2' }">
-                      <i class="lnil lnil-grid-alt"></i>
+                      <i aria-hidden="true" class="lnil lnil-grid-alt"></i>
                       <span>Card Grid V2</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'navbar-layouts-grid-cards-3' }">
-                      <i class="lnil lnil-grid-alt"></i>
+                      <i aria-hidden="true" class="lnil lnil-grid-alt"></i>
                       <span>Card Grid V3</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'navbar-layouts-grid-cards-4' }">
-                      <i class="lnil lnil-grid-alt"></i>
+                      <i aria-hidden="true" class="lnil lnil-grid-alt"></i>
                       <span>Card Grid V4</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                 </ul>
@@ -217,23 +277,35 @@ const activeTab = ref<TabId>('list')
                 <ul>
                   <li>
                     <RouterLink :to="{ name: 'navbar-layouts-grid-tiles-1' }">
-                      <i class="lnil lnil-layout-alt-2"></i>
+                      <i aria-hidden="true" class="lnil lnil-layout-alt-2"></i>
                       <span>Tile Grid V1</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'navbar-layouts-grid-tiles-2' }">
-                      <i class="lnil lnil-layout-alt-2"></i>
+                      <i aria-hidden="true" class="lnil lnil-layout-alt-2"></i>
                       <span>Tile Grid V2</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'navbar-layouts-grid-tiles-3' }">
-                      <i class="lnil lnil-layout-alt-2"></i>
+                      <i aria-hidden="true" class="lnil lnil-layout-alt-2"></i>
                       <span>Tile Grid V3</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                 </ul>
@@ -243,30 +315,46 @@ const activeTab = ref<TabId>('list')
                 <ul>
                   <li>
                     <RouterLink :to="{ name: 'navbar-layouts-grid-users-1' }">
-                      <i class="lnil lnil-users-alt"></i>
+                      <i aria-hidden="true" class="lnil lnil-users-alt"></i>
                       <span>User Grid V1</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'navbar-layouts-grid-users-2' }">
-                      <i class="lnil lnil-users-alt"></i>
+                      <i aria-hidden="true" class="lnil lnil-users-alt"></i>
                       <span>User Grid V2</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'navbar-layouts-grid-users-3' }">
-                      <i class="lnil lnil-users-alt"></i>
+                      <i aria-hidden="true" class="lnil lnil-users-alt"></i>
                       <span>User Grid V3</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'navbar-layouts-grid-users-4' }">
-                      <i class="lnil lnil-users-alt"></i>
+                      <i aria-hidden="true" class="lnil lnil-users-alt"></i>
                       <span>User Grid V4</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                 </ul>
@@ -320,34 +408,50 @@ const activeTab = ref<TabId>('list')
                 <ul>
                   <li>
                     <RouterLink :to="{ name: 'navbar-layouts-profile-view' }">
-                      <i class="lnil lnil-user-alt"></i>
+                      <i aria-hidden="true" class="lnil lnil-user-alt"></i>
                       <span>Profile</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'navbar-layouts-profile-edit' }">
-                      <i class="lnil lnil-pencil"></i>
+                      <i aria-hidden="true" class="lnil lnil-pencil"></i>
                       <span>Edit Profile</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink
                       :to="{ name: 'navbar-layouts-profile-notifications' }"
                     >
-                      <i class="lnil lnil-notification"></i>
+                      <i aria-hidden="true" class="lnil lnil-notification"></i>
                       <span>Notifications</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink
                       :to="{ name: 'navbar-layouts-profile-settings' }"
                     >
-                      <i class="lnil lnil-cog"></i>
+                      <i aria-hidden="true" class="lnil lnil-cog"></i>
                       <span>Settings</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                 </ul>
@@ -357,44 +461,68 @@ const activeTab = ref<TabId>('list')
                 <ul>
                   <li>
                     <RouterLink :to="{ name: 'auth-login-1' }">
-                      <i class="lnil lnil-pointer-right"></i>
+                      <i aria-hidden="true" class="lnil lnil-pointer-right"></i>
                       <span>Login v1</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'auth-login-2' }">
-                      <i class="lnil lnil-pointer-right"></i>
+                      <i aria-hidden="true" class="lnil lnil-pointer-right"></i>
                       <span>Login v2</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'auth-login-3' }">
-                      <i class="lnil lnil-pointer-right"></i>
+                      <i aria-hidden="true" class="lnil lnil-pointer-right"></i>
                       <span>Login v3</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'auth-signup-2' }">
-                      <i class="lnil lnil-crown"></i>
+                      <i aria-hidden="true" class="lnil lnil-crown"></i>
                       <span>Signup v1</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'auth-signup-3' }">
-                      <i class="lnil lnil-crown"></i>
+                      <i aria-hidden="true" class="lnil lnil-crown"></i>
                       <span>Signup v2</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'auth-signup-1' }">
-                      <i class="lnil lnil-crown"></i>
+                      <i aria-hidden="true" class="lnil lnil-crown"></i>
                       <span>Signup Flow</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                 </ul>
@@ -404,44 +532,68 @@ const activeTab = ref<TabId>('list')
                 <ul>
                   <li>
                     <RouterLink :to="{ name: 'navbar-layouts-saas-billing' }">
-                      <i class="lnil lnil-credit-card"></i>
+                      <i aria-hidden="true" class="lnil lnil-credit-card"></i>
                       <span>Saas Billing</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'navbar' }">
-                      <i class="lnil lnil-door-alt"></i>
+                      <i aria-hidden="true" class="lnil lnil-door-alt"></i>
                       <span>Welcome</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'navbar-layouts-action-page-1' }">
-                      <i class="lnil lnil-thunderbolt"></i>
+                      <i aria-hidden="true" class="lnil lnil-thunderbolt"></i>
                       <span>Action Page V1</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'navbar-layouts-action-page-2' }">
-                      <i class="lnil lnil-thunderbolt"></i>
+                      <i aria-hidden="true" class="lnil lnil-thunderbolt"></i>
                       <span>Action Page V2</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'navbar-layouts-search-results' }">
-                      <i class="lnil lnil-search-alt"></i>
+                      <i aria-hidden="true" class="lnil lnil-search-alt"></i>
                       <span>Search Results</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'navbar-layouts-search-empty' }">
-                      <i class="lnil lnil-search-alt"></i>
+                      <i aria-hidden="true" class="lnil lnil-search-alt"></i>
                       <span>Empty Search</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                 </ul>
@@ -453,43 +605,63 @@ const activeTab = ref<TabId>('list')
                     <RouterLink
                       :to="{ name: 'navbar-layouts-projects-projects-1' }"
                     >
-                      <i class="lnil lnil-grid-alt"></i>
+                      <i aria-hidden="true" class="lnil lnil-grid-alt"></i>
                       <span>Projects V1</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink
                       :to="{ name: 'navbar-layouts-projects-projects-2' }"
                     >
-                      <i class="lnil lnil-grid-alt"></i>
+                      <i aria-hidden="true" class="lnil lnil-grid-alt"></i>
                       <span>Projects V2</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink
                       :to="{ name: 'navbar-layouts-projects-projects-3' }"
                     >
-                      <i class="lnil lnil-grid-alt"></i>
+                      <i aria-hidden="true" class="lnil lnil-grid-alt"></i>
                       <span>Projects V3</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink
                       :to="{ name: 'navbar-layouts-projects-details' }"
                     >
-                      <i class="lnil lnil-layout"></i>
+                      <i aria-hidden="true" class="lnil lnil-layout"></i>
                       <span>Project Details</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'navbar-layouts-kanban-board' }">
-                      <i class="lnil lnil-layout-alt-1"></i>
+                      <i aria-hidden="true" class="lnil lnil-layout-alt-1"></i>
                       <span>Project Board</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                 </ul>
@@ -514,34 +686,56 @@ const activeTab = ref<TabId>('list')
                     <RouterLink
                       :to="{ name: 'navbar-layouts-utility-account-confirm' }"
                     >
-                      <i class="lnil lnil-thunderbolt"></i>
+                      <i aria-hidden="true" class="lnil lnil-thunderbolt"></i>
                       <span>Confirm Account</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink
                       :to="{ name: 'navbar-layouts-utility-promotion' }"
                     >
-                      <i class="lnil lnil-magnet"></i>
+                      <i aria-hidden="true" class="lnil lnil-magnet"></i>
                       <span>Promotion Page</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink
                       :to="{ name: 'navbar-layouts-utility-invoice' }"
                     >
-                      <i class="lnil lnil-calculator-alt"></i>
+                      <i
+                        aria-hidden="true"
+                        class="lnil lnil-calculator-alt"
+                      ></i>
                       <span>Invoice</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'status' }">
-                      <i class="lnil lnil-checkmark-circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="lnil lnil-checkmark-circle"
+                      ></i>
                       <span>App Status</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                 </ul>
@@ -553,45 +747,65 @@ const activeTab = ref<TabId>('list')
                     <RouterLink
                       :to="{ name: 'navbar-layouts-onboarding-page-1' }"
                     >
-                      <i class="lnil lnil-train"></i>
+                      <i aria-hidden="true" class="lnil lnil-train"></i>
                       <span>Onboarding V1</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink
                       :to="{ name: 'navbar-layouts-onboarding-page-2' }"
                     >
-                      <i class="lnil lnil-train-alt"></i>
+                      <i aria-hidden="true" class="lnil lnil-train-alt"></i>
                       <span>Onboarding V2</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink
                       :to="{ name: 'navbar-layouts-onboarding-page-3' }"
                     >
-                      <i class="lnil lnil-car"></i>
+                      <i aria-hidden="true" class="lnil lnil-car"></i>
                       <span>Onboarding V3</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink
                       :to="{ name: 'navbar-layouts-onboarding-page-4' }"
                     >
-                      <i class="lnil lnil-car-alt"></i>
+                      <i aria-hidden="true" class="lnil lnil-car-alt"></i>
                       <span>Onboarding V4</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink
                       :to="{ name: 'navbar-layouts-onboarding-page-5' }"
                     >
-                      <i class="lnil lnil-train-alt"></i>
+                      <i aria-hidden="true" class="lnil lnil-train-alt"></i>
                       <span>Onboarding V5</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                 </ul>
@@ -601,37 +815,57 @@ const activeTab = ref<TabId>('list')
                 <ul>
                   <li>
                     <RouterLink :to="{ name: 'error-page-1' }">
-                      <i class="lnil lnil-cross-circle"></i>
+                      <i aria-hidden="true" class="lnil lnil-cross-circle"></i>
                       <span>Error Page V1</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'error-page-2' }">
-                      <i class="lnil lnil-cross-circle"></i>
+                      <i aria-hidden="true" class="lnil lnil-cross-circle"></i>
                       <span>Error Page V2</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'error-page-3' }">
-                      <i class="lnil lnil-cross-circle"></i>
+                      <i aria-hidden="true" class="lnil lnil-cross-circle"></i>
                       <span>Error Page V3</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'error-page-4' }">
-                      <i class="lnil lnil-cross-circle"></i>
+                      <i aria-hidden="true" class="lnil lnil-cross-circle"></i>
                       <span>Error Page V4</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'error-page-5' }">
-                      <i class="lnil lnil-cross-circle"></i>
+                      <i aria-hidden="true" class="lnil lnil-cross-circle"></i>
                       <span>Error Page V5</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                 </ul>

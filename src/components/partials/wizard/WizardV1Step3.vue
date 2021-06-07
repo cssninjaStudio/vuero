@@ -101,7 +101,11 @@ const selectCustomer = (customer: WizardCustomer) => {
           <div class="project-dates-inner">
             <div class="project-date">
               <div class="date-icon">
-                <i class="iconify" data-icon="feather:map-pin"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:map-pin"
+                ></i>
               </div>
               <V-Control>
                 <input
@@ -115,7 +119,11 @@ const selectCustomer = (customer: WizardCustomer) => {
             <div class="separator"></div>
             <div class="project-date">
               <div class="date-icon">
-                <i class="iconify" data-icon="feather:flag"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:flag"
+                ></i>
               </div>
               <V-Control>
                 <input

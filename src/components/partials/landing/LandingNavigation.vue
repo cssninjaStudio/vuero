@@ -117,18 +117,26 @@ watchEffect(() => {
             />
             <span class="toggler">
               <span class="dark">
-                <i class="iconify" data-icon="feather:moon"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:moon"
+                ></i>
               </span>
               <span class="light">
-                <i class="iconify" data-icon="feather:sun"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:sun"
+                ></i>
               </span>
             </span>
           </label>
         </div>
         <div class="navbar-item">
-          <RouterLink :to="{ name: 'auth-login-1' }" class="nav-link"
-            >Login</RouterLink
-          >
+          <RouterLink :to="{ name: 'auth-login-1' }" class="nav-link">
+            Login
+          </RouterLink>
         </div>
         <div class="navbar-item">
           <RouterLink

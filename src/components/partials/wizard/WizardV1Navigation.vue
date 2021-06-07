@@ -42,7 +42,11 @@ const setStep = (target: number) => {
       class="dropdown wizard-dropdown dropdown-trigger"
     >
       <div class="is-trigger" @click="toggle1">
-        <i class="iconify" data-icon="feather:chevron-down"></i>
+        <i
+          aria-hidden="true"
+          class="iconify"
+          data-icon="feather:chevron-down"
+        ></i>
       </div>
       <div id="wizard-navigation-dropdown" class="dropdown-menu" role="menu">
         <div class="dropdown-content">
@@ -132,7 +136,11 @@ const setStep = (target: number) => {
             "
           />
         </div>
-        <i class="iconify" data-icon="feather:chevron-down"></i>
+        <i
+          aria-hidden="true"
+          class="iconify"
+          data-icon="feather:chevron-down"
+        ></i>
       </div>
       <div class="dropdown-menu" role="menu">
         <div class="dropdown-content">
@@ -140,24 +148,36 @@ const setStep = (target: number) => {
             <p class="is-size-7 dark-inverted">Erik Kovalsky</p>
           </div>
           <a href="#" class="dropdown-item">
-            <i class="iconify" data-icon="feather:user"></i>
+            <i aria-hidden="true" class="iconify" data-icon="feather:user"></i>
             <span>Profile</span>
           </a>
           <a class="dropdown-item">
-            <i class="iconify" data-icon="feather:edit-2"></i>
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:edit-2"
+            ></i>
             <span>Edit Profile</span>
           </a>
           <a class="dropdown-item">
-            <i class="iconify" data-icon="feather:box"></i>
+            <i aria-hidden="true" class="iconify" data-icon="feather:box"></i>
             <span>Projects</span>
           </a>
           <a class="dropdown-item">
-            <i class="iconify" data-icon="feather:settings"></i>
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:settings"
+            ></i>
             <span>Settings</span>
           </a>
           <hr class="dropdown-divider" />
           <a href="#" class="dropdown-item">
-            <i class="iconify" data-icon="feather:log-out"></i>
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:log-out"
+            ></i>
             <span>Sign Out</span>
           </a>
         </div>

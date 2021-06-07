@@ -132,14 +132,22 @@ const onSave = async () => {
                       >
                         <template #singlelabel="{ value }">
                           <div class="multiselect-single-label">
-                            <img class="select-label-icon" :src="value.icon" />
+                            <img
+                              class="select-label-icon"
+                              :src="value.icon"
+                              alt=""
+                            />
                             <span class="select-label-text">
                               {{ value.name }}
                             </span>
                           </div>
                         </template>
                         <template #option="{ option }">
-                          <img class="select-option-icon" :src="option.icon" />
+                          <img
+                            class="select-option-icon"
+                            :src="option.icon"
+                            alt=""
+                          />
                           <span class="select-label-text">
                             {{ option.name }}
                           </span>
@@ -172,7 +180,8 @@ const onSave = async () => {
                             label: 'Level 4',
                           },
                         ]"
-                      ></Multiselect>
+                      >
+                      </Multiselect>
                     </V-Control>
                   </V-Field>
                 </div>
@@ -356,14 +365,22 @@ const onSave = async () => {
                       >
                         <template #singlelabel="{ value }">
                           <div class="multiselect-single-label">
-                            <img class="select-label-icon" :src="value.icon" />
+                            <img
+                              class="select-label-icon"
+                              :src="value.icon"
+                              alt=""
+                            />
                             <span class="select-label-text">
                               {{ value.name }}
                             </span>
                           </div>
                         </template>
                         <template #option="{ option }">
-                          <img class="select-option-icon" :src="option.icon" />
+                          <img
+                            class="select-option-icon"
+                            :src="option.icon"
+                            alt=""
+                          />
                           <span class="select-label-text">
                             {{ option.name }}
                           </span>
@@ -420,7 +437,8 @@ const onSave = async () => {
                             label: '+10 Year of exp.',
                           },
                         ]"
-                      ></Multiselect>
+                      >
+                      </Multiselect>
                     </V-Control>
                   </V-Field>
                 </div>
@@ -556,14 +574,22 @@ const onSave = async () => {
                       >
                         <template #singlelabel="{ value }">
                           <div class="multiselect-single-label">
-                            <img class="select-label-icon" :src="value.icon" />
+                            <img
+                              class="select-label-icon"
+                              :src="value.icon"
+                              alt=""
+                            />
                             <span class="select-label-text">
                               {{ value.name }}
                             </span>
                           </div>
                         </template>
                         <template #option="{ option }">
-                          <img class="select-option-icon" :src="option.icon" />
+                          <img
+                            class="select-option-icon"
+                            :src="option.icon"
+                            alt=""
+                          />
                           <span class="select-label-text">
                             {{ option.name }}
                           </span>
@@ -600,7 +626,8 @@ const onSave = async () => {
                             label: 'Level 5',
                           },
                         ]"
-                      ></Multiselect>
+                      >
+                      </Multiselect>
                     </V-Control>
                   </V-Field>
                 </div>

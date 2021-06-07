@@ -83,7 +83,11 @@ defineProps({
           :class="[circled && 'is-circle']"
         >
           <span class="icon is-small">
-            <i class="iconify" data-icon="feather:edit-2"></i>
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:edit-2"
+            ></i>
           </span>
         </button>
         <button
@@ -91,7 +95,7 @@ defineProps({
           :class="[circled && 'is-circle']"
         >
           <span class="icon is-small">
-            <i class="iconify" data-icon="feather:eye"></i>
+            <i aria-hidden="true" class="iconify" data-icon="feather:eye"></i>
           </span>
         </button>
         <button
@@ -99,7 +103,11 @@ defineProps({
           :class="[circled && 'is-circle']"
         >
           <span class="icon is-small">
-            <i class="iconify" data-icon="feather:trash-2"></i>
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:trash-2"
+            ></i>
           </span>
         </button>
       </div>

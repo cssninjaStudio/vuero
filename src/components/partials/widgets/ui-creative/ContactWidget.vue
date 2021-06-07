@@ -69,11 +69,15 @@ defineProps({
         </div>
         <div class="contact-info">
           <span>
-            <i class="iconify" data-icon="feather:map-pin"></i>
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:map-pin"
+            ></i>
             <span>{{ location }}</span>
           </span>
           <span>
-            <i class="iconify" data-icon="feather:phone"></i>
+            <i aria-hidden="true" class="iconify" data-icon="feather:phone"></i>
             <span>{{ phone }}</span>
           </span>
         </div>

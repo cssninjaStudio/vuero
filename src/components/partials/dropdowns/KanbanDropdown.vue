@@ -13,7 +13,11 @@ const emit = defineEmit(['rename', 'collapse'])
     class="dropdown is-right dropdown-trigger"
   >
     <div class="is-trigger" aria-haspopup="true" @click="toggle">
-      <i class="iconify" data-icon="feather:more-vertical"></i>
+      <i
+        aria-hidden="true"
+        class="iconify"
+        data-icon="feather:more-vertical"
+      ></i>
     </div>
 
     <div class="dropdown-menu" role="menu">
@@ -33,7 +37,11 @@ const emit = defineEmit(['rename', 'collapse'])
         <hr class="dropdown-divider" />
         <div class="dropdown-item has-child">
           Settings
-          <i class="iconify" data-icon="feather:chevron-right"></i>
+          <i
+            aria-hidden="true"
+            class="iconify"
+            data-icon="feather:chevron-right"
+          ></i>
           <div class="child-dropdown">
             <div class="inner">
               <ul>
@@ -41,7 +49,7 @@ const emit = defineEmit(['rename', 'collapse'])
                   <div class="column-setting">
                     <label class="form-switch">
                       <input type="checkbox" class="is-switch" />
-                      <i></i>
+                      <i aria-hidden="true"></i>
                     </label>
                     <div class="text">
                       <span>Lock</span>
@@ -53,7 +61,7 @@ const emit = defineEmit(['rename', 'collapse'])
                   <div class="column-setting">
                     <label class="form-switch">
                       <input type="checkbox" class="is-switch" checked />
-                      <i></i>
+                      <i aria-hidden="true"></i>
                     </label>
                     <div class="text">
                       <span>Notifications</span>
@@ -65,7 +73,7 @@ const emit = defineEmit(['rename', 'collapse'])
                   <div class="column-setting">
                     <label class="form-switch">
                       <input type="checkbox" class="is-switch" />
-                      <i></i>
+                      <i aria-hidden="true"></i>
                     </label>
                     <div class="text">
                       <span>Sorting</span>

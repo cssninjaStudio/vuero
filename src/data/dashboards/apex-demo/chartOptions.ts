@@ -876,7 +876,7 @@ export const options14 = {
       const a = dayjs(val[0])
       const b = dayjs(val[1])
       const diff = b.diff(a, 'days')
-      return label + ': ' + diff + (diff > 1 ? 'd' : 'd')
+      return label + ': ' + diff + (diff > 1 ? 'D' : 'd')
     },
     style: {
       colors: ['#f3f4f5', '#fff'],

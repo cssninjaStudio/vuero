@@ -30,7 +30,11 @@ const filteredData = computed(() => {
       <div class="right-panel-head">
         <AnimatedLogo width="38px" height="38px" />
         <a class="close-panel" @click="activePanel = 'none'">
-          <i class="iconify" data-icon="feather:chevron-left"></i>
+          <i
+            aria-hidden="true"
+            class="iconify"
+            data-icon="feather:chevron-left"
+          ></i>
         </a>
       </div>
       <div class="right-panel-body has-slimscroll">
@@ -73,21 +77,33 @@ const filteredData = computed(() => {
             <V-Block title="Browser Support" subtitle="Blog post" center>
               <template #icon>
                 <V-IconBox size="small" color="info" rounded>
-                  <i class="iconify" data-icon="feather:chrome"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:chrome"
+                  ></i>
                 </V-IconBox>
               </template>
             </V-Block>
             <V-Block title="Twitch API" subtitle="Blog post" center>
               <template #icon>
                 <V-IconBox size="small" color="orange" rounded>
-                  <i class="iconify" data-icon="feather:tv"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:tv"
+                  ></i>
                 </V-IconBox>
               </template>
             </V-Block>
             <V-Block title="Browser Support" subtitle="Blog post" center>
               <template #icon>
                 <V-IconBox size="small" color="green" rounded>
-                  <i class="iconify" data-icon="feather:twitter"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:twitter"
+                  ></i>
                 </V-IconBox>
               </template>
             </V-Block>

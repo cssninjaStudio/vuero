@@ -54,7 +54,7 @@ const optionsSingle = [
         </V-Field>
         <V-Button color="primary" raised>
           <span class="icon">
-            <i class="fas fa-plus"></i>
+            <i aria-hidden="true" class="fas fa-plus"></i>
           </span>
           <span>Add User</span>
         </V-Button>
@@ -105,13 +105,21 @@ const optionsSingle = [
             <div class="buttons">
               <button class="button v-button is-dark-outlined">
                 <span class="icon">
-                  <i class="iconify" data-icon="feather:user"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:user"
+                  ></i>
                 </span>
                 <span>Profile</span>
               </button>
               <button class="button v-button is-dark-outlined">
                 <span class="icon">
-                  <i class="iconify" data-icon="feather:message-circle"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:message-circle"
+                  ></i>
                 </span>
                 <span>Talk</span>
               </button>

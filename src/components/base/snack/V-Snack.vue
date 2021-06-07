@@ -84,8 +84,13 @@ const isIconify = computed(() => {
       class="snack-media is-icon"
       :class="[color && `is-${color}`, solid && `is-solid`]"
     >
-      <i v-if="isIconify" class="iconify snack-icon" :data-icon="icon"></i>
-      <i v-else class="snack-icon" :class="icon"></i>
+      <i
+        v-if="isIconify"
+        aria-hidden="true"
+        class="iconify snack-icon"
+        :data-icon="icon"
+      ></i>
+      <i v-else aria-hidden="true" class="snack-icon" :class="icon"></i>
     </div>
     <div v-else-if="image" class="snack-media">
       <img

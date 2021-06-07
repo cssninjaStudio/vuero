@@ -85,7 +85,7 @@ const emit = defineEmit(['update:modelValue'])
           v-bind="$attrs"
           @change="emit('update:modelValue', !modelValue)"
         />
-        <i></i>
+        <i aria-hidden="true"></i>
       </label>
     </template>
 

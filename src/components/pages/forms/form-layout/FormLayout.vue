@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useWindowScroll } from '@vueuse/core'
-import { computed, reactive, ref } from 'vue'
+import { computed, ref } from 'vue'
 
 const companySize = ref('')
 const businessType = ref('')
@@ -224,7 +224,8 @@ const isStuck = computed(() => {
                     autocomplete="off"
                     autocapitalize="off"
                     spellcheck="true"
-                  ></textarea>
+                  >
+                  </textarea>
                 </V-Control>
               </V-Field>
             </div>

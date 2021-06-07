@@ -19,7 +19,12 @@
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
             <a class="parent-link">
-              Icons <i class="iconify" data-icon="feather:chevron-right" />
+              Icons
+              <i
+                aria-hidden="true"
+                class="iconify"
+                data-icon="feather:chevron-right"
+              />
             </a>
           </div>
           <ul>
@@ -28,7 +33,11 @@
                 :to="{ name: 'elements-icons-iconify' }"
                 class="is-submenu"
               >
-                <i class="iconify" data-icon="feather:circle"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:circle"
+                ></i>
                 Iconify
               </RouterLink>
             </li>
@@ -37,8 +46,12 @@
                 :to="{ name: 'elements-icons-line-icons' }"
                 class="is-submenu"
               >
-                <i class="iconify" data-icon="feather:circle"></i> Line Icons
-                Light
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:circle"
+                ></i>
+                Line Icons Light
               </RouterLink>
             </li>
             <li>
@@ -46,8 +59,12 @@
                 :to="{ name: 'elements-icons-line-icons-regular' }"
                 class="is-submenu"
               >
-                <i class="iconify" data-icon="feather:circle"></i> Line Icons
-                Regular
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:circle"
+                ></i>
+                Line Icons Regular
               </RouterLink>
             </li>
             <li>
@@ -55,8 +72,12 @@
                 :to="{ name: 'elements-icons-fa' }"
                 class="is-submenu"
               >
-                <i class="iconify" data-icon="feather:circle"></i> Font Awesome
-                5
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:circle"
+                ></i>
+                Font Awesome 5
               </RouterLink>
             </li>
           </ul>
@@ -95,7 +116,12 @@
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
             <a class="parent-link">
-              Buttons <i class="iconify" data-icon="feather:chevron-right" />
+              Buttons
+              <i
+                aria-hidden="true"
+                class="iconify"
+                data-icon="feather:chevron-right"
+              />
             </a>
           </div>
           <ul>
@@ -122,7 +148,12 @@
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
             <a class="parent-link">
-              Inputs <i class="iconify" data-icon="feather:chevron-right" />
+              Inputs
+              <i
+                aria-hidden="true"
+                class="iconify"
+                data-icon="feather:chevron-right"
+              />
             </a>
           </div>
           <ul>
@@ -131,7 +162,11 @@
                 :to="{ name: 'elements-forms-inputs' }"
                 class="is-submenu"
               >
-                <i class="iconify" data-icon="feather:circle"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:circle"
+                ></i>
                 Inputs
               </RouterLink>
             </li>
@@ -140,7 +175,12 @@
                 :to="{ name: 'elements-forms-addons' }"
                 class="is-submenu"
               >
-                <i class="iconify" data-icon="feather:circle"></i> Input Addons
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:circle"
+                ></i>
+                Input Addons
               </RouterLink>
             </li>
             <li>
@@ -148,7 +188,11 @@
                 :to="{ name: 'elements-forms-textarea' }"
                 class="is-submenu"
               >
-                <i class="iconify" data-icon="feather:circle"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:circle"
+                ></i>
                 Textarea
               </RouterLink>
             </li>
@@ -157,7 +201,11 @@
                 :to="{ name: 'elements-forms-selects' }"
                 class="is-submenu"
               >
-                <i class="iconify" data-icon="feather:circle"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:circle"
+                ></i>
                 Selects
               </RouterLink>
             </li>
@@ -166,7 +214,13 @@
                 :to="{ name: 'elements-forms-file' }"
                 class="is-submenu"
               >
-                <i class="iconify" data-icon="feather:circle"></i>File Input
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:circle"
+                >
+                </i
+                >File Input
               </RouterLink>
             </li>
             <li>
@@ -184,7 +238,12 @@
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
             <a class="parent-link">
-              Switches <i class="iconify" data-icon="feather:chevron-right" />
+              Switches
+              <i
+                aria-hidden="true"
+                class="iconify"
+                data-icon="feather:chevron-right"
+              />
             </a>
           </div>
           <ul>
@@ -193,7 +252,11 @@
                 :to="{ name: 'elements-animated-checkbox' }"
                 class="is-submenu"
               >
-                <i class="iconify" data-icon="feather:circle"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:circle"
+                ></i>
                 V-AnimatedCheckbox
               </RouterLink>
             </li>
@@ -202,13 +265,21 @@
                 :to="{ name: 'elements-checkbox' }"
                 class="is-submenu"
               >
-                <i class="iconify" data-icon="feather:circle"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:circle"
+                ></i>
                 V-Checkbox
               </RouterLink>
             </li>
             <li>
               <RouterLink :to="{ name: 'elements-radio' }" class="is-submenu">
-                <i class="iconify" data-icon="feather:circle"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:circle"
+                ></i>
                 V-Radio
               </RouterLink>
             </li>
@@ -217,7 +288,11 @@
                 :to="{ name: 'elements-switch-block' }"
                 class="is-submenu"
               >
-                <i class="iconify" data-icon="feather:circle"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:circle"
+                ></i>
                 V-SwitchBlock
               </RouterLink>
             </li>
@@ -226,7 +301,11 @@
                 :to="{ name: 'elements-switch-segment' }"
                 class="is-submenu"
               >
-                <i class="iconify" data-icon="feather:circle"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:circle"
+                ></i>
                 V-SwitchSegment
               </RouterLink>
             </li>
@@ -236,7 +315,12 @@
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
             <a class="parent-link">
-              Addons <i class="iconify" data-icon="feather:chevron-right" />
+              Addons
+              <i
+                aria-hidden="true"
+                class="iconify"
+                data-icon="feather:chevron-right"
+              />
             </a>
           </div>
           <ul>
@@ -245,7 +329,11 @@
                 :to="{ name: 'elements-addons-calendar' }"
                 class="is-submenu"
               >
-                <i class="iconify" data-icon="feather:circle"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:circle"
+                ></i>
                 V-Calendar &amp; V-DatePicker
               </RouterLink>
             </li>
@@ -254,7 +342,11 @@
                 :to="{ name: 'elements-addons-imask-input' }"
                 class="is-submenu"
               >
-                <i class="iconify" data-icon="feather:circle"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:circle"
+                ></i>
                 V-IMaskInput
               </RouterLink>
             </li>
@@ -263,7 +355,11 @@
                 :to="{ name: 'elements-addons-filepond' }"
                 class="is-submenu"
               >
-                <i class="iconify" data-icon="feather:circle"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:circle"
+                ></i>
                 V-FilePond
               </RouterLink>
             </li>
@@ -272,7 +368,11 @@
                 :to="{ name: 'elements-addons-credit-card' }"
                 class="is-submenu"
               >
-                <i class="iconify" data-icon="feather:circle"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:circle"
+                ></i>
                 V-CreditCard
               </RouterLink>
             </li>
@@ -282,7 +382,11 @@
                 :to="{ name: 'elements-addons-vueform-multiselect' }"
                 class="is-submenu"
               >
-                <i class="iconify" data-icon="feather:circle"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:circle"
+                ></i>
                 @vueform/multiselect
               </RouterLink>
             </li>
@@ -291,7 +395,11 @@
                 :to="{ name: 'elements-addons-vueform-slider' }"
                 class="is-submenu"
               >
-                <i class="iconify" data-icon="feather:circle"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:circle"
+                ></i>
                 @vueform/slider
               </RouterLink>
             </li>
@@ -301,7 +409,11 @@
                 :to="{ name: 'elements-addons-ckeditor' }"
                 class="is-submenu"
               >
-                <i class="iconify" data-icon="feather:circle"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:circle"
+                ></i>
                 CKEditor 5
               </RouterLink>
             </li>

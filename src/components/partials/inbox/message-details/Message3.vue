@@ -52,7 +52,7 @@ const {
         <span class="sender-email">&lt;greta@vuero.io&gt;</span>
       </div>
       <div class="attachments is-vhidden inbox-hidden-mobile">
-        <i class="iconify" data-icon="feather:paperclip"></i>
+        <i aria-hidden="true" class="iconify" data-icon="feather:paperclip"></i>
         <span>2</span>
       </div>
       <div
@@ -63,23 +63,39 @@ const {
         <div>
           <button class="button" @click="toggle1">
             <span class="icon is-small">
-              <i class="iconify" data-icon="feather:more-vertical"></i>
+              <i
+                aria-hidden="true"
+                class="iconify"
+                data-icon="feather:more-vertical"
+              ></i>
             </span>
           </button>
         </div>
         <div class="dropdown-menu">
           <div class="dropdown-content">
             <a class="dropdown-item">
-              <i class="iconify" data-icon="feather:bookmark"></i>
+              <i
+                aria-hidden="true"
+                class="iconify"
+                data-icon="feather:bookmark"
+              ></i>
               <span>Bookmark</span>
             </a>
             <a class="dropdown-item">
-              <i class="iconify" data-icon="feather:share-2"></i>
+              <i
+                aria-hidden="true"
+                class="iconify"
+                data-icon="feather:share-2"
+              ></i>
               <span>Share message</span>
             </a>
             <hr class="dropdown-divider" />
             <a class="dropdown-item">
-              <i class="iconify" data-icon="feather:thumbs-down"></i>
+              <i
+                aria-hidden="true"
+                class="iconify"
+                data-icon="feather:thumbs-down"
+              ></i>
               <span>Mark as spam</span>
             </a>
           </div>
@@ -89,7 +105,7 @@ const {
         class="inbox-action inbox-close-details-mobile"
         @click="emit('update:mobileMessageOpen', false)"
       >
-        <i class="iconify" data-icon="feather:x"></i>
+        <i aria-hidden="true" class="iconify" data-icon="feather:x"></i>
       </a>
     </div>
     <!--Message-->
@@ -102,19 +118,35 @@ const {
           </div>
           <div class="message-actions">
             <a class="inbox-action">
-              <i class="iconify" data-icon="feather:corner-up-left"></i>
+              <i
+                aria-hidden="true"
+                class="iconify"
+                data-icon="feather:corner-up-left"
+              ></i>
             </a>
             <a class="inbox-action">
-              <i class="iconify" data-icon="feather:file-text"></i>
+              <i
+                aria-hidden="true"
+                class="iconify"
+                data-icon="feather:file-text"
+              ></i>
             </a>
             <a class="inbox-action">
-              <i class="iconify" data-icon="feather:tag"></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:tag"></i>
             </a>
             <a class="inbox-action">
-              <i class="iconify" data-icon="feather:message-circle"></i>
+              <i
+                aria-hidden="true"
+                class="iconify"
+                data-icon="feather:message-circle"
+              ></i>
             </a>
             <a class="inbox-action">
-              <i class="iconify" data-icon="feather:lock"></i>
+              <i
+                aria-hidden="true"
+                class="iconify"
+                data-icon="feather:lock"
+              ></i>
             </a>
           </div>
         </div>
@@ -188,22 +220,34 @@ const {
               <div>
                 <button class="button" @click="toggle2">
                   <span class="icon is-small">
-                    <i class="sl sl-icon-options"></i>
+                    <i aria-hidden="true" class="sl sl-icon-options"></i>
                   </span>
                 </button>
               </div>
               <div class="dropdown-menu">
                 <div class="dropdown-content">
                   <a class="dropdown-item">
-                    <i class="iconify" data-icon="feather:refresh-cw"></i>
+                    <i
+                      aria-hidden="true"
+                      class="iconify"
+                      data-icon="feather:refresh-cw"
+                    ></i>
                     <span>Reset</span>
                   </a>
                   <a class="dropdown-item">
-                    <i class="iconify" data-icon="feather:align-left"></i>
+                    <i
+                      aria-hidden="true"
+                      class="iconify"
+                      data-icon="feather:align-left"
+                    ></i>
                     <span>Spelling</span>
                   </a>
                   <a class="dropdown-item">
-                    <i class="iconify" data-icon="feather:at-sign"></i>
+                    <i
+                      aria-hidden="true"
+                      class="iconify"
+                      data-icon="feather:at-sign"
+                    ></i>
                     <span>Mention</span>
                   </a>
                 </div>
@@ -216,7 +260,8 @@ const {
               class="textarea"
               rows="6"
               placeholder="Type your message..."
-            ></textarea>
+            >
+            </textarea>
             <button type="button" class="button">Send Message</button>
           </div>
         </div>

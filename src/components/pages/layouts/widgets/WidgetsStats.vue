@@ -33,7 +33,8 @@ import { memberList } from '/@src/data/widgets/table/memberList'
           :type="spark1.chart.type"
           :series="spark1.series"
           :options="spark1"
-        ></apexchart>
+        >
+        </apexchart>
       </SparkStatWidget>
     </div>
 
@@ -45,7 +46,8 @@ import { memberList } from '/@src/data/widgets/table/memberList'
           :type="spark2.chart.type"
           :series="spark2.series"
           :options="spark2"
-        ></apexchart>
+        >
+        </apexchart>
       </SparkStatWidget>
     </div>
 
@@ -57,7 +59,8 @@ import { memberList } from '/@src/data/widgets/table/memberList'
           :type="spark3.chart.type"
           :series="spark3.series"
           :options="spark3"
-        ></apexchart>
+        >
+        </apexchart>
       </SparkStatWidget>
     </div>
 
@@ -69,7 +72,8 @@ import { memberList } from '/@src/data/widgets/table/memberList'
           :type="spark4.chart.type"
           :series="spark4.series"
           :options="spark4"
-        ></apexchart>
+        >
+        </apexchart>
       </SparkStatWidget>
     </div>
 
@@ -89,7 +93,8 @@ import { memberList } from '/@src/data/widgets/table/memberList'
           :type="lineStatsChartOptions.chart.type"
           :series="lineStatsChartOptions.series"
           :options="lineStatsChartOptions"
-        ></apexchart>
+        >
+        </apexchart>
       </LineStatWidget>
     </div>
 
@@ -109,7 +114,8 @@ import { memberList } from '/@src/data/widgets/table/memberList'
           :type="revenueOptions.chart.type"
           :series="revenueOptions.series"
           :options="revenueOptions"
-        ></apexchart>
+        >
+        </apexchart>
       </LineStatWidget>
     </div>
 
@@ -122,7 +128,8 @@ import { memberList } from '/@src/data/widgets/table/memberList'
           :type="flexRadialChartCircleOptions.chart.type"
           :series="flexRadialChartCircleOptions.series"
           :options="flexRadialChartCircleOptions"
-        ></apexchart>
+        >
+        </apexchart>
       </FlexStatWidget>
     </div>
 
@@ -135,7 +142,8 @@ import { memberList } from '/@src/data/widgets/table/memberList'
           :type="flexRadialChartStripesOptions.chart.type"
           :series="flexRadialChartStripesOptions.series"
           :options="flexRadialChartStripesOptions"
-        ></apexchart>
+        >
+        </apexchart>
       </FlexStatWidget>
     </div>
 
@@ -153,7 +161,8 @@ import { memberList } from '/@src/data/widgets/table/memberList'
             :type="widgetRadialGroup1Options.chart.type"
             :series="widgetRadialGroup1Options.series"
             :options="widgetRadialGroup1Options"
-          ></apexchart>
+          >
+          </apexchart>
         </template>
         <template #chart2>
           <apexchart
@@ -162,7 +171,8 @@ import { memberList } from '/@src/data/widgets/table/memberList'
             :type="widgetRadialGroup2Options.chart.type"
             :series="widgetRadialGroup2Options.series"
             :options="widgetRadialGroup2Options"
-          ></apexchart>
+          >
+          </apexchart>
         </template>
         <template #chart3>
           <apexchart
@@ -171,7 +181,8 @@ import { memberList } from '/@src/data/widgets/table/memberList'
             :type="widgetRadialGroup3Options.chart.type"
             :series="widgetRadialGroup3Options.series"
             :options="widgetRadialGroup3Options"
-          ></apexchart>
+          >
+          </apexchart>
         </template>
       </GroupedStatWidget>
     </div>
@@ -191,7 +202,8 @@ import { memberList } from '/@src/data/widgets/table/memberList'
             :type="widgetGaugeGroup1Options.chart.type"
             :series="widgetGaugeGroup1Options.series"
             :options="widgetGaugeGroup1Options"
-          ></apexchart>
+          >
+          </apexchart>
         </template>
         <template #chart2>
           <apexchart
@@ -200,7 +212,8 @@ import { memberList } from '/@src/data/widgets/table/memberList'
             :type="widgetGaugeGroup2Options.chart.type"
             :series="widgetGaugeGroup2Options.series"
             :options="widgetGaugeGroup2Options"
-          ></apexchart>
+          >
+          </apexchart>
         </template>
         <template #chart3>
           <apexchart
@@ -209,7 +222,8 @@ import { memberList } from '/@src/data/widgets/table/memberList'
             :type="widgetGaugeGroup3Options.chart.type"
             :series="widgetGaugeGroup3Options.series"
             :options="widgetGaugeGroup3Options"
-          ></apexchart>
+          >
+          </apexchart>
         </template>
       </GroupedStatWidget>
     </div>

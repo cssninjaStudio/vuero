@@ -3,7 +3,7 @@
     <div class="control has-icon">
       <input class="input" placeholder="Search..." />
       <div class="form-icon">
-        <i class="iconify" data-icon="feather:search"></i>
+        <i aria-hidden="true" class="iconify" data-icon="feather:search"></i>
       </div>
     </div>
 

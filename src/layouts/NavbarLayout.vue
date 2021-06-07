@@ -83,7 +83,11 @@ watch(
             :class="[activeMobileSubsidebar === 'dashboard' && 'is-active']"
             @click="activeMobileSubsidebar = 'dashboard'"
           >
-            <i class="iconify" data-icon="feather:activity"></i>
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:activity"
+            ></i>
           </a>
         </li>
         <li>
@@ -91,7 +95,7 @@ watch(
             :class="[activeMobileSubsidebar === 'layout' && 'is-active']"
             @click="activeMobileSubsidebar = 'layout'"
           >
-            <i class="iconify" data-icon="feather:grid"></i>
+            <i aria-hidden="true" class="iconify" data-icon="feather:grid"></i>
           </a>
         </li>
         <li
@@ -99,7 +103,7 @@ watch(
           @click="activeMobileSubsidebar = 'elements'"
         >
           <a>
-            <i class="iconify" data-icon="feather:box"></i>
+            <i aria-hidden="true" class="iconify" data-icon="feather:box"></i>
           </a>
         </li>
         <li
@@ -107,12 +111,16 @@ watch(
           @click="activeMobileSubsidebar = 'components'"
         >
           <a>
-            <i class="iconify" data-icon="feather:cpu"></i>
+            <i aria-hidden="true" class="iconify" data-icon="feather:cpu"></i>
           </a>
         </li>
         <li>
           <RouterLink :to="{ name: 'messaging-v1' }">
-            <i class="iconify" data-icon="feather:message-circle"></i>
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:message-circle"
+            ></i>
           </RouterLink>
         </li>
       </template>
@@ -120,12 +128,20 @@ watch(
       <template #bottom-links>
         <li>
           <a @click="activePanel = 'search'">
-            <i class="iconify" data-icon="feather:search"></i>
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:search"
+            ></i>
           </a>
         </li>
         <li>
           <a href="#">
-            <i class="iconify" data-icon="feather:settings"></i>
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:settings"
+            ></i>
           </a>
         </li>
       </template>
@@ -187,7 +203,11 @@ watch(
             class="centered-link centered-link-toggle"
             @click="toggleSubnav('home')"
           >
-            <i class="iconify" data-icon="feather:activity"></i>
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:activity"
+            ></i>
             <span>Dashboards</span>
           </a>
           <a
@@ -199,7 +219,7 @@ watch(
             class="centered-link centered-link-toggle"
             @click="toggleSubnav('layouts')"
           >
-            <i class="iconify" data-icon="feather:grid"></i>
+            <i aria-hidden="true" class="iconify" data-icon="feather:grid"></i>
             <span>Layouts</span>
           </a>
           <a
@@ -207,7 +227,7 @@ watch(
             class="centered-link centered-link-toggle"
             @click="toggleSubnav('elements')"
           >
-            <i class="iconify" data-icon="feather:box"></i>
+            <i aria-hidden="true" class="iconify" data-icon="feather:box"></i>
             <span>Elements</span>
           </a>
           <a
@@ -215,14 +235,18 @@ watch(
             class="centered-link centered-link-toggle"
             @click="toggleSubnav('components')"
           >
-            <i class="iconify" data-icon="feather:cpu"></i>
+            <i aria-hidden="true" class="iconify" data-icon="feather:cpu"></i>
             <span>Components</span>
           </a>
           <a
             class="centered-link centered-link-search"
             @click="toggleSubnav('search')"
           >
-            <i class="iconify" data-icon="feather:search"></i>
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:search"
+            ></i>
             <span>Search</span>
           </a>
         </div>
@@ -240,10 +264,14 @@ watch(
                 placeholder="Search records..."
               />
               <div class="form-icon">
-                <i class="iconify" data-icon="feather:search"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:search"
+                ></i>
               </div>
               <div class="form-icon is-right" @click="toggleSubnav('search')">
-                <i class="iconify" data-icon="feather:x"></i>
+                <i aria-hidden="true" class="iconify" data-icon="feather:x"></i>
               </div>
               <div
                 v-if="filteredData.length > 0"

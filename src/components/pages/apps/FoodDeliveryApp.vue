@@ -79,7 +79,7 @@ onUnmounted(() => {
           <p>$0 delivery fee for orders over $10 for 30 days</p>
           <a class="action-link">
             <span>Learn More</span>
-            <i class="fas fa-arrow-right"></i>
+            <i aria-hidden="true" class="fas fa-arrow-right"></i>
           </a>
         </div>
       </div>
@@ -99,13 +99,13 @@ onUnmounted(() => {
               ref="prevButtonElement"
               class="slick-custom is-prev slick-arrow"
             >
-              <i class="fas fa-angle-left"></i>
+              <i aria-hidden="true" class="fas fa-angle-left"></i>
             </div>
             <div
               ref="nextButtonElement"
               class="slick-custom is-next slick-arrow"
             >
-              <i class="fas fa-angle-right"></i>
+              <i aria-hidden="true" class="fas fa-angle-right"></i>
             </div>
             <div ref="sliderElement" class="food-pills-inner pill-carousel">
               <!--Pills Loop-->
@@ -163,9 +163,9 @@ onUnmounted(() => {
                       <h4>{{ restaurant.name }}</h4>
                       <p>
                         <span>{{ restaurant.category }}</span>
-                        <i class="fas fa-circle"></i>
+                        <i aria-hidden="true" class="fas fa-circle"></i>
                         <span class="rating">
-                          <i class="fas fa-star"></i>
+                          <i aria-hidden="true" class="fas fa-star"></i>
                           <span class="ml-1">{{ restaurant.rating }}</span>
                         </span>
                       </p>
@@ -189,7 +189,11 @@ onUnmounted(() => {
                 :class="[activeSection === 'cart' && 'is-active']"
                 @click="activeSection = 'cart'"
               >
-                <i class="iconify" data-icon="feather:shopping-cart"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:shopping-cart"
+                ></i>
               </a>
             </div>
             <div class="toolbar-icon">
@@ -198,7 +202,11 @@ onUnmounted(() => {
                 :class="[activeSection === 'activity' && 'is-active']"
                 @click="activeSection = 'activity'"
               >
-                <i class="iconify" data-icon="feather:activity"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:activity"
+                ></i>
               </a>
             </div>
             <div class="toolbar-icon">
@@ -207,7 +215,11 @@ onUnmounted(() => {
                 :class="[activeSection === 'address' && 'is-active']"
                 @click="activeSection = 'address'"
               >
-                <i class="iconify" data-icon="feather:map-pin"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:map-pin"
+                ></i>
               </a>
             </div>
             <div class="toolbar-icon">
@@ -216,7 +228,11 @@ onUnmounted(() => {
                 :class="[activeSection === 'settings' && 'is-active']"
                 @click="activeSection = 'settings'"
               >
-                <i class="iconify" data-icon="feather:settings"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:settings"
+                ></i>
               </a>
             </div>
           </div>

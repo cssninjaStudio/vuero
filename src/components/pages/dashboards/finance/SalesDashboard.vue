@@ -5,8 +5,8 @@ import {
   spark2,
   spark3,
   spark4,
-} from '/@src/data/dashboards/sales/salesSparksChart'
-import { revenueOptions } from '/@src/data/dashboards/sales/revenueAreaChart'
+} from '/@src/data/widgets/charts/salesSparksChart'
+import { revenueOptions } from '/@src/data/widgets/charts/revenueAreaChart'
 import { salesRevenuesRadialOptions } from '/@src/data/dashboards/sales/salesRevenueRadialChart'
 import {
   radialGroup1Options,
@@ -21,7 +21,7 @@ import {
 import {
   personalScoreGaugeOptions,
   onPersonalScoreGaugeReady,
-} from '/@src/data/dashboards/sales/personalScoreGauge'
+} from '/@src/data/widgets/charts/personalScoreGauge'
 
 onMounted(() => {
   setTimeout(() => {
@@ -79,7 +79,8 @@ onMounted(() => {
               :type="spark1.chart.type"
               :series="spark1.series"
               :options="spark1"
-            ></apexchart>
+            >
+            </apexchart>
           </div>
         </div>
         <div class="column is-3">
@@ -90,7 +91,8 @@ onMounted(() => {
               :type="spark2.chart.type"
               :series="spark2.series"
               :options="spark2"
-            ></apexchart>
+            >
+            </apexchart>
           </div>
         </div>
         <div class="column is-3">
@@ -101,7 +103,8 @@ onMounted(() => {
               :type="spark3.chart.type"
               :series="spark3.series"
               :options="spark3"
-            ></apexchart>
+            >
+            </apexchart>
           </div>
         </div>
         <div class="column is-3">
@@ -112,7 +115,8 @@ onMounted(() => {
               :type="spark4.chart.type"
               :series="spark4.series"
               :options="spark4"
-            ></apexchart>
+            >
+            </apexchart>
           </div>
         </div>
         <div class="column is-7">
@@ -140,7 +144,8 @@ onMounted(() => {
               :type="revenueOptions.chart.type"
               :series="revenueOptions.series"
               :options="revenueOptions"
-            ></apexchart>
+            >
+            </apexchart>
           </div>
         </div>
         <div class="column is-5">
@@ -162,7 +167,8 @@ onMounted(() => {
                   :type="salesRevenuesRadialOptions.chart.type"
                   :series="salesRevenuesRadialOptions.series"
                   :options="salesRevenuesRadialOptions"
-                ></apexchart>
+                >
+                </apexchart>
               </div>
             </div>
           </div>
@@ -180,7 +186,8 @@ onMounted(() => {
                       :type="radialGroup1Options.chart.type"
                       :series="radialGroup1Options.series"
                       :options="radialGroup1Options"
-                    ></apexchart>
+                    >
+                    </apexchart>
                   </div>
                   <span class="dark-inverted">264</span>
                   <p>New Deals</p>
@@ -195,7 +202,8 @@ onMounted(() => {
                       :type="radialGroup2Options.chart.type"
                       :series="radialGroup2Options.series"
                       :options="radialGroup2Options"
-                    ></apexchart>
+                    >
+                    </apexchart>
                   </div>
                   <span class="dark-inverted">1,203</span>
                   <p>Proposals</p>
@@ -210,7 +218,8 @@ onMounted(() => {
                       :type="radialGroup3Options.chart.type"
                       :series="radialGroup3Options.series"
                       :options="radialGroup3Options"
-                    ></apexchart>
+                    >
+                    </apexchart>
                   </div>
                   <span class="dark-inverted">3,078</span>
                   <p>Closed Deals</p>
@@ -254,7 +263,8 @@ onMounted(() => {
               :type="salesBarOptions.chart.type"
               :series="salesBarOptions.series"
               :options="salesBarOptions"
-            ></apexchart>
+            >
+            </apexchart>
           </div>
         </div>
         <div class="column is-3">
@@ -264,7 +274,11 @@ onMounted(() => {
               <div class="widget-toolbar">
                 <div class="left">
                   <a class="action-icon">
-                    <i class="iconify" data-icon="feather:chevron-left"></i>
+                    <i
+                      aria-hidden="true"
+                      class="iconify"
+                      data-icon="feather:chevron-left"
+                    ></i>
                   </a>
                 </div>
                 <div class="center">
@@ -272,7 +286,11 @@ onMounted(() => {
                 </div>
                 <div class="right">
                   <a class="action-icon">
-                    <i class="iconify" data-icon="feather:chevron-right"></i>
+                    <i
+                      aria-hidden="true"
+                      class="iconify"
+                      data-icon="feather:chevron-right"
+                    ></i>
                   </a>
                 </div>
               </div>

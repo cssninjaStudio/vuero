@@ -90,26 +90,46 @@ useHead({
               <div>
                 <button class="button" @click="toggle1">
                   <span class="icon is-small">
-                    <i class="iconify" data-icon="feather:more-vertical"></i>
+                    <i
+                      aria-hidden="true"
+                      class="iconify"
+                      data-icon="feather:more-vertical"
+                    ></i>
                   </span>
                 </button>
               </div>
               <div class="dropdown-menu">
                 <div class="dropdown-content">
                   <a class="dropdown-item">
-                    <i class="iconify" data-icon="feather:refresh-cw"></i>
+                    <i
+                      aria-hidden="true"
+                      class="iconify"
+                      data-icon="feather:refresh-cw"
+                    ></i>
                     <span>Refresh</span>
                   </a>
                   <a class="dropdown-item">
-                    <i class="iconify" data-icon="feather:bell"></i>
+                    <i
+                      aria-hidden="true"
+                      class="iconify"
+                      data-icon="feather:bell"
+                    ></i>
                     <span>Notifications</span>
                   </a>
                   <a class="dropdown-item">
-                    <i class="iconify" data-icon="feather:user-plus"></i>
+                    <i
+                      aria-hidden="true"
+                      class="iconify"
+                      data-icon="feather:user-plus"
+                    ></i>
                     <span>Invite People</span>
                   </a>
                   <a class="dropdown-item">
-                    <i class="iconify" data-icon="feather:settings"></i>
+                    <i
+                      aria-hidden="true"
+                      class="iconify"
+                      data-icon="feather:settings"
+                    ></i>
                     <span>Settings</span>
                   </a>
                 </div>
@@ -119,7 +139,7 @@ useHead({
               class="inbox-action inbox-close-sidebar-mobile"
               @click="mobileSidebarOpen = false"
             >
-              <i class="iconify" data-icon="feather:x"></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:x"></i>
             </a>
           </div>
           <!--Inner-->
@@ -134,7 +154,11 @@ useHead({
                       :class="[activeTab === 'inbox' && 'is-active']"
                       @click="activeTab = 'inbox'"
                     >
-                      <i class="iconify" data-icon="feather:mail"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:mail"
+                      ></i>
                       <span>Inbox</span>
                       <span class="tag">24</span>
                     </a>
@@ -144,7 +168,11 @@ useHead({
                       :class="[activeTab === 'drafts' && 'is-active']"
                       @click="activeTab = 'drafts'"
                     >
-                      <i class="iconify" data-icon="feather:file-text"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:file-text"
+                      ></i>
                       <span>Drafts</span>
                       <span class="tag">2</span>
                     </a>
@@ -154,7 +182,11 @@ useHead({
                       :class="[activeTab === 'sent' && 'is-active']"
                       @click="activeTab = 'sent'"
                     >
-                      <i class="iconify" data-icon="feather:send"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:send"
+                      ></i>
                       <span>Sent</span>
                       <span class="tag">7</span>
                     </a>
@@ -164,7 +196,11 @@ useHead({
                       :class="[activeTab === 'trash' && 'is-active']"
                       @click="activeTab = 'trash'"
                     >
-                      <i class="iconify" data-icon="feather:trash-2"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:trash-2"
+                      ></i>
                       <span>Trash</span>
                       <span class="tag">18</span>
                     </a>
@@ -174,7 +210,11 @@ useHead({
                       :class="[activeTab === 'span' && 'is-active']"
                       @click="activeTab = 'span'"
                     >
-                      <i class="iconify" data-icon="feather:alert-octagon"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:alert-octagon"
+                      ></i>
                       <span>Spam</span>
                       <span class="tag">29</span>
                     </a>
@@ -196,7 +236,11 @@ useHead({
                     placeholder="Search Contacts..."
                   />
                   <div class="form-icon">
-                    <i class="iconify" data-icon="feather:search"></i>
+                    <i
+                      aria-hidden="true"
+                      class="iconify"
+                      data-icon="feather:search"
+                    ></i>
                   </div>
                 </div>
                 <a
@@ -204,7 +248,11 @@ useHead({
                   class="button searcv-button"
                 >
                   <span class="icon is-small" @click="contactSearchOpen = true">
-                    <i class="iconify" data-icon="feather:search"></i>
+                    <i
+                      aria-hidden="true"
+                      class="iconify"
+                      data-icon="feather:search"
+                    ></i>
                   </span>
                 </a>
                 <a
@@ -215,7 +263,11 @@ useHead({
                     class="icon is-small"
                     @click="contactSearchOpen = false"
                   >
-                    <i class="iconify" data-icon="feather:x"></i>
+                    <i
+                      aria-hidden="true"
+                      class="iconify"
+                      data-icon="feather:x"
+                    ></i>
                   </span>
                 </a>
               </div>
@@ -303,14 +355,22 @@ useHead({
                 class="inbox-action mobile-menu-action"
                 @click="mobileSidebarOpen = true"
               >
-                <i class="iconify" data-icon="feather:chevron-right"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:chevron-right"
+                ></i>
               </a>
               <a
                 class="inbox-action check-all-action"
                 :class="[isAllChecked && 'is-checked']"
                 @click="toggleSelection"
               >
-                <i class="iconify" data-icon="feather:check"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:check"
+                ></i>
               </a>
             </div>
             <div class="actions">
@@ -321,7 +381,11 @@ useHead({
                   placeholder="Search Inbox..."
                 />
                 <div class="form-icon">
-                  <i class="iconify" data-icon="feather:search"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:search"
+                  ></i>
                 </div>
               </div>
 
@@ -333,27 +397,47 @@ useHead({
                 <div>
                   <button class="button" @click="toggle2">
                     <span class="icon is-small">
-                      <i class="iconify" data-icon="feather:more-vertical"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:more-vertical"
+                      ></i>
                     </span>
                   </button>
                 </div>
                 <div class="dropdown-menu">
                   <div class="dropdown-content">
                     <a class="dropdown-item">
-                      <i class="iconify" data-icon="feather:check"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:check"
+                      ></i>
                       <span>Mark all as read</span>
                     </a>
                     <a class="dropdown-item">
-                      <i class="iconify" data-icon="feather:eye-off"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:eye-off"
+                      ></i>
                       <span>Hide read</span>
                     </a>
                     <hr class="dropdown-divider" />
                     <a class="dropdown-item">
-                      <i class="iconify" data-icon="feather:calendar"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:calendar"
+                      ></i>
                       <span>Sort by date</span>
                     </a>
                     <a class="dropdown-item">
-                      <i class="iconify" data-icon="feather:user"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:user"
+                      ></i>
                       <span>Sort by user</span>
                     </a>
                   </div>

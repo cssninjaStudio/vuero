@@ -2,14 +2,18 @@
   <V-Dropdown dots right spaced>
     <template #button="{ open }">
       <button class="is-trigger" @click="open">
-        <i class="iconify" data-icon="feather:more-vertical"></i>
+        <i
+          aria-hidden="true"
+          class="iconify"
+          data-icon="feather:more-vertical"
+        ></i>
       </button>
     </template>
 
     <template #content>
       <a href="#" class="dropdown-item is-media">
         <div class="icon">
-          <i class="lnil lnil-reload"></i>
+          <i aria-hidden="true" class="lnil lnil-reload"></i>
         </div>
         <div class="meta">
           <span>Reload</span>
@@ -18,7 +22,7 @@
       </a>
       <a href="#" class="dropdown-item is-media">
         <div class="icon">
-          <i class="lnil lnil-cogs"></i>
+          <i aria-hidden="true" class="lnil lnil-cogs"></i>
         </div>
         <div class="meta">
           <span>Configure</span>
@@ -27,7 +31,7 @@
       </a>
       <a href="#" class="dropdown-item is-media">
         <div class="icon">
-          <i class="lnil lnil-cog"></i>
+          <i aria-hidden="true" class="lnil lnil-cog"></i>
         </div>
         <div class="meta">
           <span>Settings</span>
@@ -37,7 +41,7 @@
       <hr class="dropdown-divider" />
       <a href="#" class="dropdown-item is-media">
         <div class="icon">
-          <i class="lnil lnil-trash-can-alt"></i>
+          <i aria-hidden="true" class="lnil lnil-trash-can-alt"></i>
         </div>
         <div class="meta">
           <span>Remove</span>

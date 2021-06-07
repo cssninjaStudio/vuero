@@ -47,7 +47,7 @@ const optionsSingle = [
         </V-Field>
         <V-Button color="primary" raised>
           <span class="icon">
-            <i class="fas fa-plus"></i>
+            <i aria-hidden="true" class="fas fa-plus"></i>
           </span>
           <span>Add User</span>
         </V-Button>
@@ -547,14 +547,6 @@ const optionsSingle = [
   }
 }
 
-.is-dark {
-  .tile-grid {
-    .tile-grid-item {
-      @include vuero-card--dark();
-    }
-  }
-}
-
 .tile-grid-v3 {
   .tile {
     &.is-ancestor {
@@ -900,6 +892,11 @@ const optionsSingle = [
 }
 
 .is-dark {
+  .tile-grid {
+    .tile-grid-item {
+      @include vuero-card--dark();
+    }
+  }
   .tile-grid-v3 {
     .tile-grid-item {
       @include vuero-card--dark();

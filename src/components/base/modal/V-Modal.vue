@@ -62,7 +62,6 @@ const props = defineProps({
 })
 const emit = defineEmit(['close'])
 
-// const route = useRoute()
 const wasOpen = ref(false)
 
 const checkScroll = () => {
@@ -100,7 +99,7 @@ tryOnUnmounted(() => {
               aria-label="close"
               @click="emit('close')"
             >
-              <i class="iconify" data-icon="feather:x"></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:x"></i>
             </button>
           </header>
           <div class="modal-card-body">
@@ -120,8 +119,9 @@ tryOnUnmounted(() => {
                 class="button v-button v-modal-close"
                 :class="[rounded && 'is-rounded']"
                 @click="emit('close')"
-                >Cancel</a
               >
+                Cancel
+              </a>
             </slot>
             <slot name="action"></slot>
           </div>

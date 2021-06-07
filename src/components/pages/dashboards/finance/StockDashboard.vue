@@ -66,7 +66,7 @@
           </svg>
           <div class="stock">
             <div class="stock-logo snapchat">
-              <i class="fab fa-inverse fa-snapchat"></i>
+              <i aria-hidden="true" class="fab fa-inverse fa-snapchat"></i>
             </div>
             <div class="stock-info">
               <div class="stock-name">SPCH</div>
@@ -135,7 +135,7 @@
           </svg>
           <div class="stock">
             <div class="stock-logo github">
-              <i class="fab fa-inverse fa-github"></i>
+              <i aria-hidden="true" class="fab fa-inverse fa-github"></i>
             </div>
             <div class="stock-info">
               <div class="stock-name">GTHB</div>
@@ -203,7 +203,7 @@
           </svg>
           <div class="stock">
             <div class="stock-logo invision">
-              <i class="fab fa-inverse fa-invision"></i>
+              <i aria-hidden="true" class="fab fa-inverse fa-invision"></i>
             </div>
             <div class="stock-info">
               <div class="stock-name">INVS</div>
@@ -220,7 +220,7 @@
           <div class="category">
             <div class="asset">
               <div class="asset-logo">
-                <i class="lnil lnil-bolt-alt"></i>
+                <i aria-hidden="true" class="lnil lnil-bolt-alt"></i>
               </div>
             </div>
             <div class="asset-name">Energy</div>
@@ -228,7 +228,7 @@
           <div class="category">
             <div class="asset">
               <div class="asset-logo">
-                <i class="lnil lnil-gold-bar"></i>
+                <i aria-hidden="true" class="lnil lnil-gold-bar"></i>
               </div>
             </div>
             <div class="asset-name">Gold</div>
@@ -236,7 +236,7 @@
           <div class="category">
             <div class="asset">
               <div class="asset-logo">
-                <i class="lnil lnil-apartment"></i>
+                <i aria-hidden="true" class="lnil lnil-apartment"></i>
               </div>
             </div>
             <div class="asset-name">Real Estate</div>
@@ -244,7 +244,7 @@
           <div class="category">
             <div class="asset">
               <div class="asset-logo">
-                <i class="lnil lnil-leaves"></i>
+                <i aria-hidden="true" class="lnil lnil-leaves"></i>
               </div>
             </div>
             <div class="asset-name">Food</div>
@@ -252,7 +252,7 @@
           <div class="category">
             <div class="asset">
               <div class="asset-logo">
-                <i class="lnil lnil-laptop-alt-switch"></i>
+                <i aria-hidden="true" class="lnil lnil-laptop-alt-switch"></i>
               </div>
             </div>
             <div class="asset-name">Technology</div>
@@ -260,7 +260,7 @@
           <div class="category">
             <div class="asset">
               <div class="asset-logo">
-                <i class="lnil lnil-capsule"></i>
+                <i aria-hidden="true" class="lnil lnil-capsule"></i>
               </div>
             </div>
             <div class="asset-name">Healthcare</div>
@@ -268,7 +268,7 @@
           <div class="category">
             <div class="asset">
               <div class="asset-logo">
-                <i class="lnil lnil-atom"></i>
+                <i aria-hidden="true" class="lnil lnil-atom"></i>
               </div>
             </div>
             <div class="asset-name">Research</div>
@@ -276,7 +276,7 @@
           <div class="category">
             <div class="asset">
               <div class="asset-logo">
-                <i class="lnil lnil-diamond-alt"></i>
+                <i aria-hidden="true" class="lnil lnil-diamond-alt"></i>
               </div>
             </div>
             <div class="asset-name">Finance</div>
@@ -294,7 +294,7 @@
 
           <div class="stock">
             <div class="stock-logo invision">
-              <i class="fab fa-inverse fa-invision"></i>
+              <i aria-hidden="true" class="fab fa-inverse fa-invision"></i>
             </div>
             <div class="stock-info">
               <div class="stock-name">INVS</div>
@@ -304,7 +304,7 @@
           </div>
           <div class="stock">
             <div class="stock-logo facebook">
-              <i class="fab fa-inverse fa-facebook-f"></i>
+              <i aria-hidden="true" class="fab fa-inverse fa-facebook-f"></i>
             </div>
             <div class="stock-info">
               <div class="stock-name">FB</div>
@@ -314,7 +314,7 @@
           </div>
           <div class="stock">
             <div class="stock-logo amazon">
-              <i class="fab fa-inverse fa-amazon"></i>
+              <i aria-hidden="true" class="fab fa-inverse fa-amazon"></i>
             </div>
             <div class="stock-info">
               <div class="stock-name">AMZN</div>
@@ -324,7 +324,7 @@
           </div>
           <div class="stock">
             <div class="stock-logo snapchat">
-              <i class="fab fa-inverse fa-snapchat"></i>
+              <i aria-hidden="true" class="fab fa-inverse fa-snapchat"></i>
             </div>
             <div class="stock-info">
               <div class="stock-name">SPCH</div>
@@ -345,7 +345,7 @@
 
           <div class="stock">
             <div class="stock-logo twitter">
-              <i class="fab fa-inverse fa-twitter"></i>
+              <i aria-hidden="true" class="fab fa-inverse fa-twitter"></i>
             </div>
             <div class="stock-info">
               <div class="stock-name">TWTR</div>
@@ -355,7 +355,7 @@
           </div>
           <div class="stock">
             <div class="stock-logo docker">
-              <i class="fab fa-inverse fa-docker"></i>
+              <i aria-hidden="true" class="fab fa-inverse fa-docker"></i>
             </div>
             <div class="stock-info">
               <div class="stock-name">DOCKR</div>
@@ -365,7 +365,7 @@
           </div>
           <div class="stock">
             <div class="stock-logo algolia">
-              <i class="fab fa-inverse fa-algolia"></i>
+              <i aria-hidden="true" class="fab fa-inverse fa-algolia"></i>
             </div>
             <div class="stock-info">
               <div class="stock-name">ALGO</div>
@@ -375,7 +375,7 @@
           </div>
           <div class="stock">
             <div class="stock-logo github">
-              <i class="fab fa-inverse fa-github"></i>
+              <i aria-hidden="true" class="fab fa-inverse fa-github"></i>
             </div>
             <div class="stock-info">
               <div class="stock-name">GTHB</div>

@@ -87,7 +87,11 @@ const filteredData = computed(() => {
                 <div class="meta-left">
                   <h3>{{ item.name }}</h3>
                   <span>
-                    <i class="iconify" data-icon="feather:map-pin"></i>
+                    <i
+                      aria-hidden="true"
+                      class="iconify"
+                      data-icon="feather:map-pin"
+                    ></i>
                     <span>{{ item.location }}</span>
                   </span>
                 </div>

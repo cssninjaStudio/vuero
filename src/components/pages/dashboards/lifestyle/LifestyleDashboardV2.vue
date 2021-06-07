@@ -38,7 +38,7 @@ import {
               <a href="#" class="long-card-text-overlay">
                 <div class="top">
                   <span>Foot Trekks</span>
-                  <i class="fas fa-running"></i>
+                  <i aria-hidden="true" class="fas fa-running"></i>
                 </div>
                 <div class="bottom">
                   <span>28.3K</span>
@@ -61,7 +61,7 @@ import {
               <a href="#" class="long-card-text-overlay">
                 <div class="top">
                   <span>Rafting Trips</span>
-                  <i class="fas fa-ship"></i>
+                  <i aria-hidden="true" class="fas fa-ship"></i>
                 </div>
                 <div class="bottom">
                   <span>8.1K</span>
@@ -84,7 +84,7 @@ import {
               <a href="#" class="long-card-text-overlay">
                 <div class="top">
                   <span>Climbing</span>
-                  <i class="fas fa-running"></i>
+                  <i aria-hidden="true" class="fas fa-running"></i>
                 </div>
                 <div class="bottom">
                   <span>19.7K</span>
@@ -107,7 +107,7 @@ import {
               <a href="#" class="long-card-text-overlay">
                 <div class="top">
                   <span>Biking</span>
-                  <i class="fas fa-biking"></i>
+                  <i aria-hidden="true" class="fas fa-biking"></i>
                 </div>
                 <div class="bottom">
                   <span>48.4K</span>
@@ -141,11 +141,11 @@ import {
                   </template>
                   <template #action>
                     <div class="rating">
-                      <i class="fas fa-star selected"></i>
-                      <i class="fas fa-star selected"></i>
-                      <i class="fas fa-star selected"></i>
-                      <i class="fas fa-star selected"></i>
-                      <i class="fas fa-star selected"></i>
+                      <i aria-hidden="true" class="fas fa-star selected"></i>
+                      <i aria-hidden="true" class="fas fa-star selected"></i>
+                      <i aria-hidden="true" class="fas fa-star selected"></i>
+                      <i aria-hidden="true" class="fas fa-star selected"></i>
+                      <i aria-hidden="true" class="fas fa-star selected"></i>
                     </div>
                     <V-IconButton
                       icon="feather:arrow-right"
@@ -164,11 +164,11 @@ import {
                   </template>
                   <template #action>
                     <div class="rating">
-                      <i class="fas fa-star selected"></i>
-                      <i class="fas fa-star selected"></i>
-                      <i class="fas fa-star selected"></i>
-                      <i class="fas fa-star selected"></i>
-                      <i class="fas fa-star"></i>
+                      <i aria-hidden="true" class="fas fa-star selected"></i>
+                      <i aria-hidden="true" class="fas fa-star selected"></i>
+                      <i aria-hidden="true" class="fas fa-star selected"></i>
+                      <i aria-hidden="true" class="fas fa-star selected"></i>
+                      <i aria-hidden="true" class="fas fa-star"></i>
                     </div>
                     <V-IconButton
                       icon="feather:arrow-right"
@@ -191,11 +191,11 @@ import {
                   </template>
                   <template #action>
                     <div class="rating">
-                      <i class="fas fa-star selected"></i>
-                      <i class="fas fa-star selected"></i>
-                      <i class="fas fa-star selected"></i>
-                      <i class="fas fa-star selected"></i>
-                      <i class="fas fa-star selected"></i>
+                      <i aria-hidden="true" class="fas fa-star selected"></i>
+                      <i aria-hidden="true" class="fas fa-star selected"></i>
+                      <i aria-hidden="true" class="fas fa-star selected"></i>
+                      <i aria-hidden="true" class="fas fa-star selected"></i>
+                      <i aria-hidden="true" class="fas fa-star selected"></i>
                     </div>
                     <V-IconButton
                       icon="feather:arrow-right"
@@ -218,11 +218,11 @@ import {
                   </template>
                   <template #action>
                     <div class="rating">
-                      <i class="fas fa-star selected"></i>
-                      <i class="fas fa-star selected"></i>
-                      <i class="fas fa-star selected"></i>
-                      <i class="fas fa-star selected"></i>
-                      <i class="fas fa-star selected"></i>
+                      <i aria-hidden="true" class="fas fa-star selected"></i>
+                      <i aria-hidden="true" class="fas fa-star selected"></i>
+                      <i aria-hidden="true" class="fas fa-star selected"></i>
+                      <i aria-hidden="true" class="fas fa-star selected"></i>
+                      <i aria-hidden="true" class="fas fa-star selected"></i>
                     </div>
                     <V-IconButton
                       icon="feather:arrow-right"
@@ -261,11 +261,11 @@ import {
                   </template>
                   <template #action>
                     <div class="rating">
-                      <i class="fas fa-star selected"></i>
-                      <i class="fas fa-star selected"></i>
-                      <i class="fas fa-star selected"></i>
-                      <i class="fas fa-star selected"></i>
-                      <i class="fas fa-star selected"></i>
+                      <i aria-hidden="true" class="fas fa-star selected"></i>
+                      <i aria-hidden="true" class="fas fa-star selected"></i>
+                      <i aria-hidden="true" class="fas fa-star selected"></i>
+                      <i aria-hidden="true" class="fas fa-star selected"></i>
+                      <i aria-hidden="true" class="fas fa-star selected"></i>
                     </div>
                     <V-IconButton
                       icon="feather:arrow-right"
@@ -284,11 +284,11 @@ import {
                   </template>
                   <template #action>
                     <div class="rating">
-                      <i class="fas fa-star selected"></i>
-                      <i class="fas fa-star selected"></i>
-                      <i class="fas fa-star selected"></i>
-                      <i class="fas fa-star selected"></i>
-                      <i class="fas fa-star"></i>
+                      <i aria-hidden="true" class="fas fa-star selected"></i>
+                      <i aria-hidden="true" class="fas fa-star selected"></i>
+                      <i aria-hidden="true" class="fas fa-star selected"></i>
+                      <i aria-hidden="true" class="fas fa-star selected"></i>
+                      <i aria-hidden="true" class="fas fa-star"></i>
                     </div>
                     <V-IconButton
                       icon="feather:arrow-right"
@@ -307,11 +307,11 @@ import {
                   </template>
                   <template #action>
                     <div class="rating">
-                      <i class="fas fa-star selected"></i>
-                      <i class="fas fa-star selected"></i>
-                      <i class="fas fa-star selected"></i>
-                      <i class="fas fa-star selected"></i>
-                      <i class="fas fa-star selected"></i>
+                      <i aria-hidden="true" class="fas fa-star selected"></i>
+                      <i aria-hidden="true" class="fas fa-star selected"></i>
+                      <i aria-hidden="true" class="fas fa-star selected"></i>
+                      <i aria-hidden="true" class="fas fa-star selected"></i>
+                      <i aria-hidden="true" class="fas fa-star selected"></i>
                     </div>
                     <V-IconButton
                       icon="feather:arrow-right"
@@ -330,11 +330,11 @@ import {
                   </template>
                   <template #action>
                     <div class="rating">
-                      <i class="fas fa-star selected"></i>
-                      <i class="fas fa-star selected"></i>
-                      <i class="fas fa-star selected"></i>
-                      <i class="fas fa-star selected"></i>
-                      <i class="fas fa-star selected"></i>
+                      <i aria-hidden="true" class="fas fa-star selected"></i>
+                      <i aria-hidden="true" class="fas fa-star selected"></i>
+                      <i aria-hidden="true" class="fas fa-star selected"></i>
+                      <i aria-hidden="true" class="fas fa-star selected"></i>
+                      <i aria-hidden="true" class="fas fa-star selected"></i>
                     </div>
                     <V-IconButton
                       icon="feather:arrow-right"
@@ -357,7 +357,11 @@ import {
               <div class="control">
                 <input type="text" class="input" placeholder="Search..." />
                 <button class="searcv-button">
-                  <i class="iconify" data-icon="feather:search"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:search"
+                  ></i>
                 </button>
               </div>
 

@@ -24,7 +24,7 @@ const date = ref({
             alt=""
           />
           <div class="booking-bar-info">
-            <i class="lnil lnil-plane-alt"></i>
+            <i aria-hidden="true" class="lnil lnil-plane-alt"></i>
             <div class="inner">
               <h2 class="booking-bar-heading">
                 Paris <small>[PAR]</small> - New York
@@ -115,7 +115,7 @@ const date = ref({
               <div class="departure"></div>
               <div class="line" data-content="1 stop"></div>
               <div class="arrival">
-                <i class="lnil lnil-plane-alt"></i>
+                <i aria-hidden="true" class="lnil lnil-plane-alt"></i>
               </div>
             </div>
             <div class="end">
@@ -141,7 +141,7 @@ const date = ref({
               <div class="departure"></div>
               <div class="line" data-content="1 stop"></div>
               <div class="arrival">
-                <i class="lnil lnil-plane-alt"></i>
+                <i aria-hidden="true" class="lnil lnil-plane-alt"></i>
               </div>
             </div>
             <div class="end">
@@ -167,7 +167,7 @@ const date = ref({
               <div class="departure"></div>
               <div class="line" data-content="direct"></div>
               <div class="arrival">
-                <i class="lnil lnil-plane-alt"></i>
+                <i aria-hidden="true" class="lnil lnil-plane-alt"></i>
               </div>
             </div>
             <div class="end">
@@ -193,7 +193,7 @@ const date = ref({
               <div class="departure"></div>
               <div class="line" data-content="direct"></div>
               <div class="arrival">
-                <i class="lnil lnil-plane-alt"></i>
+                <i aria-hidden="true" class="lnil lnil-plane-alt"></i>
               </div>
             </div>
             <div class="end">
@@ -219,7 +219,7 @@ const date = ref({
               <div class="departure"></div>
               <div class="line" data-content="1 stop"></div>
               <div class="arrival">
-                <i class="lnil lnil-plane-alt"></i>
+                <i aria-hidden="true" class="lnil lnil-plane-alt"></i>
               </div>
             </div>
             <div class="end">
@@ -240,7 +240,11 @@ const date = ref({
               <div class="control">
                 <input type="text" class="input" placeholder="Search..." />
                 <button class="searcv-button">
-                  <i class="iconify" data-icon="feather:search"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:search"
+                  ></i>
                 </button>
               </div>
 
@@ -259,7 +263,11 @@ const date = ref({
             <div class="widget-toolbar">
               <div class="left">
                 <a class="action-icon">
-                  <i class="iconify" data-icon="feather:chevron-left"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:chevron-left"
+                  ></i>
                 </a>
               </div>
               <div class="center">
@@ -267,7 +275,11 @@ const date = ref({
               </div>
               <div class="right">
                 <a class="action-icon">
-                  <i class="iconify" data-icon="feather:chevron-right"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:chevron-right"
+                  ></i>
                 </a>
               </div>
             </div>

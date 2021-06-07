@@ -32,7 +32,11 @@ const activeTab = ref<TabId>('overview')
           />
           <button class="button is-circle">
             <span class="icon is-small">
-              <i class="iconify" data-icon="feather:plus"></i>
+              <i
+                aria-hidden="true"
+                class="iconify"
+                data-icon="feather:plus"
+              ></i>
             </span>
           </button>
         </div>
@@ -41,7 +45,7 @@ const activeTab = ref<TabId>('overview')
             <div class="username">
               <h3>
                 <span>sweet_candy13</span>
-                <i class="fas fa-star"></i>
+                <i aria-hidden="true" class="fas fa-star"></i>
               </h3>
               <span>Clarissa Geller</span>
             </div>
@@ -74,13 +78,13 @@ const activeTab = ref<TabId>('overview')
           <div class="meta-achievements">
             <tippy>
               <div class="meta-achievement is-danger">
-                <i class="fas fa-fire"></i>
+                <i aria-hidden="true" class="fas fa-fire"></i>
               </div>
               <template #content>
                 <div class="v-popover-content is-text">
                   <div class="popover-head">
                     <V-IconBox size="small" color="danger">
-                      <i class="fas fa-fire"></i>
+                      <i aria-hidden="true" class="fas fa-fire"></i>
                     </V-IconBox>
                     <h4 class="dark-inverted">On Fire</h4>
                   </div>
@@ -95,13 +99,13 @@ const activeTab = ref<TabId>('overview')
 
             <tippy>
               <div class="meta-achievement is-primary">
-                <i class="fas fa-medal"></i>
+                <i aria-hidden="true" class="fas fa-medal"></i>
               </div>
               <template #content>
                 <div class="v-popover-content is-text">
                   <div class="popover-head">
                     <V-IconBox size="small" color="primary">
-                      <i class="fas fa-medal"></i>
+                      <i aria-hidden="true" class="fas fa-medal"></i>
                     </V-IconBox>
                     <h4 class="dark-inverted">Post Veteran</h4>
                   </div>
@@ -116,13 +120,13 @@ const activeTab = ref<TabId>('overview')
 
             <tippy>
               <div class="meta-achievement is-yellow">
-                <i class="fas fa-trophy"></i>
+                <i aria-hidden="true" class="fas fa-trophy"></i>
               </div>
               <template #content>
                 <div class="v-popover-content is-text">
                   <div class="popover-head">
                     <V-IconBox size="small" color="yellow">
-                      <i class="fas fa-medal"></i>
+                      <i aria-hidden="true" class="fas fa-medal"></i>
                     </V-IconBox>
                     <h4 class="dark-inverted">Social Champion</h4>
                   </div>
@@ -188,7 +192,7 @@ const activeTab = ref<TabId>('overview')
               <div class="card-head">
                 <h4>Content Posts (30 days)</h4>
                 <V-IconBox color="purple" rounded>
-                  <i class="fab fa-instagram"></i>
+                  <i aria-hidden="true" class="fab fa-instagram"></i>
                 </V-IconBox>
               </div>
               <div class="card-metric">
@@ -196,8 +200,12 @@ const activeTab = ref<TabId>('overview')
               </div>
               <div class="card-foot is-down">
                 <span>
-                  <span
-                    ><i class="iconify" data-icon="feather:arrow-right"></i>
+                  <span>
+                    <i
+                      aria-hidden="true"
+                      class="iconify"
+                      data-icon="feather:arrow-right"
+                    ></i>
                     -0.4%</span
                   >
                   less than usual.
@@ -212,7 +220,7 @@ const activeTab = ref<TabId>('overview')
               <div class="card-head">
                 <h4>Followers (30 days)</h4>
                 <V-IconBox color="info" rounded>
-                  <i class="fas fa-users"></i>
+                  <i aria-hidden="true" class="fas fa-users"></i>
                 </V-IconBox>
               </div>
               <div class="card-metric">
@@ -220,8 +228,12 @@ const activeTab = ref<TabId>('overview')
               </div>
               <div class="card-foot is-up">
                 <span>
-                  <span
-                    ><i class="iconify" data-icon="feather:arrow-right"></i>
+                  <span>
+                    <i
+                      aria-hidden="true"
+                      class="iconify"
+                      data-icon="feather:arrow-right"
+                    ></i>
                     22.7%</span
                   >
                   follower growth.
@@ -236,7 +248,7 @@ const activeTab = ref<TabId>('overview')
               <div class="card-head">
                 <h4>Following (30 days)</h4>
                 <V-IconBox color="yellow" rounded>
-                  <i class="fas fa-user-plus"></i>
+                  <i aria-hidden="true" class="fas fa-user-plus"></i>
                 </V-IconBox>
               </div>
               <div class="card-metric">
@@ -244,8 +256,12 @@ const activeTab = ref<TabId>('overview')
               </div>
               <div class="card-foot is-up">
                 <span>
-                  <span
-                    ><i class="iconify" data-icon="feather:arrow-right"></i>
+                  <span>
+                    <i
+                      aria-hidden="true"
+                      class="iconify"
+                      data-icon="feather:arrow-right"
+                    ></i>
                     1.4%</span
                   >
                   following growth.
@@ -260,7 +276,7 @@ const activeTab = ref<TabId>('overview')
               <div class="card-head">
                 <h4>Likes (30 days)</h4>
                 <V-IconBox color="red" rounded>
-                  <i class="fas fa-heart"></i>
+                  <i aria-hidden="true" class="fas fa-heart"></i>
                 </V-IconBox>
               </div>
               <div class="card-metric">
@@ -268,8 +284,12 @@ const activeTab = ref<TabId>('overview')
               </div>
               <div class="card-foot is-up">
                 <span>
-                  <span
-                    ><i class="iconify" data-icon="feather:arrow-right"></i>
+                  <span>
+                    <i
+                      aria-hidden="true"
+                      class="iconify"
+                      data-icon="feather:arrow-right"
+                    ></i>
                     3.6%</span
                   >
                   likes growth.
@@ -284,7 +304,7 @@ const activeTab = ref<TabId>('overview')
               <div class="card-head">
                 <h4>Comments (30 days)</h4>
                 <V-IconBox color="yellow" rounded>
-                  <i class="fas fa-comment"></i>
+                  <i aria-hidden="true" class="fas fa-comment"></i>
                 </V-IconBox>
               </div>
               <div class="card-metric">
@@ -292,8 +312,12 @@ const activeTab = ref<TabId>('overview')
               </div>
               <div class="card-foot is-down">
                 <span>
-                  <span
-                    ><i class="iconify" data-icon="feather:arrow-right"></i>
+                  <span>
+                    <i
+                      aria-hidden="true"
+                      class="iconify"
+                      data-icon="feather:arrow-right"
+                    ></i>
                     -1.1%</span
                   >
                   less than usual.
@@ -308,7 +332,7 @@ const activeTab = ref<TabId>('overview')
               <div class="card-head">
                 <h4>Profile Views (30 days)</h4>
                 <V-IconBox color="success" rounded>
-                  <i class="fas fa-glasses"></i>
+                  <i aria-hidden="true" class="fas fa-glasses"></i>
                 </V-IconBox>
               </div>
               <div class="card-metric">
@@ -316,8 +340,12 @@ const activeTab = ref<TabId>('overview')
               </div>
               <div class="card-foot is-up">
                 <span>
-                  <span
-                    ><i class="iconify" data-icon="feather:arrow-right"></i>
+                  <span>
+                    <i
+                      aria-hidden="true"
+                      class="iconify"
+                      data-icon="feather:arrow-right"
+                    ></i>
                     22.7%</span
                   >
                   more profile views.
@@ -346,7 +374,8 @@ const activeTab = ref<TabId>('overview')
                     :type="reputationChartOptions.chart.type"
                     :series="reputationChartOptions.series"
                     :options="reputationChartOptions"
-                  ></apexchart>
+                  >
+                  </apexchart>
                 </div>
               </div>
             </div>
@@ -366,7 +395,8 @@ const activeTab = ref<TabId>('overview')
                         :type="creativityRadialOptions.chart.type"
                         :series="creativityRadialOptions.series"
                         :options="creativityRadialOptions"
-                      ></apexchart>
+                      >
+                      </apexchart>
                     </div>
                     <span class="dark-inverted">+ 234</span>
                     <p>Creativity</p>
@@ -381,7 +411,8 @@ const activeTab = ref<TabId>('overview')
                         :type="engagmentRadialOptions.chart.type"
                         :series="engagmentRadialOptions.series"
                         :options="engagmentRadialOptions"
-                      ></apexchart>
+                      >
+                      </apexchart>
                     </div>
                     <span class="dark-inverted">+37%</span>
                     <p>Engagement</p>
@@ -396,7 +427,8 @@ const activeTab = ref<TabId>('overview')
                         :type="popularityRadialOptions.chart.type"
                         :series="popularityRadialOptions.series"
                         :options="popularityRadialOptions"
-                      ></apexchart>
+                      >
+                      </apexchart>
                     </div>
                     <span class="dark-inverted">+82%</span>
                     <p>Popularity</p>
@@ -424,7 +456,8 @@ const activeTab = ref<TabId>('overview')
                     :type="influenceChartOptions.chart.type"
                     :series="influenceChartOptions.series"
                     :options="influenceChartOptions"
-                  ></apexchart>
+                  >
+                  </apexchart>
                 </div>
               </div>
             </div>
@@ -483,8 +516,9 @@ const activeTab = ref<TabId>('overview')
                     </div>
                     <div class="metric-foot is-up">
                       <span>
-                        <span
-                          ><i
+                        <span>
+                          <i
+                            aria-hidden="true"
                             class="iconify"
                             data-icon="feather:arrow-right"
                           ></i>
@@ -506,8 +540,9 @@ const activeTab = ref<TabId>('overview')
                     </div>
                     <div class="metric-foot is-up">
                       <span>
-                        <span
-                          ><i
+                        <span>
+                          <i
+                            aria-hidden="true"
                             class="iconify"
                             data-icon="feather:arrow-right"
                           ></i>
@@ -529,8 +564,9 @@ const activeTab = ref<TabId>('overview')
                     </div>
                     <div class="metric-foot is-down">
                       <span>
-                        <span
-                          ><i
+                        <span>
+                          <i
+                            aria-hidden="true"
                             class="iconify"
                             data-icon="feather:arrow-right"
                           ></i>
@@ -552,8 +588,9 @@ const activeTab = ref<TabId>('overview')
                     </div>
                     <div class="metric-foot is-up">
                       <span>
-                        <span
-                          ><i
+                        <span>
+                          <i
+                            aria-hidden="true"
                             class="iconify"
                             data-icon="feather:arrow-right"
                           ></i>
@@ -638,7 +675,7 @@ const activeTab = ref<TabId>('overview')
                       <div class="heatmap-row-item"></div>
                       <div class="heatmap-row-item heat-1"></div>
                       <div class="heatmap-row-item heat-3">
-                        <i class="fas fa-fire"></i>
+                        <i aria-hidden="true" class="fas fa-fire"></i>
                       </div>
                       <div class="heatmap-row-item"></div>
                       <div class="heatmap-row-item"></div>
@@ -737,7 +774,7 @@ const activeTab = ref<TabId>('overview')
                       <div class="heatmap-row-item heat-2"></div>
                       <div class="heatmap-row-item"></div>
                       <div class="heatmap-row-item heat-3">
-                        <i class="fas fa-fire"></i>
+                        <i aria-hidden="true" class="fas fa-fire"></i>
                       </div>
                       <div class="heatmap-row-item"></div>
                       <div class="heatmap-row-item"></div>
@@ -771,7 +808,7 @@ const activeTab = ref<TabId>('overview')
                       <div class="heatmap-row-item"></div>
                       <div class="heatmap-row-item"></div>
                       <div class="heatmap-row-item heat-3">
-                        <i class="fas fa-fire"></i>
+                        <i aria-hidden="true" class="fas fa-fire"></i>
                       </div>
                       <div class="heatmap-row-item heat-1"></div>
                       <div class="heatmap-row-item"></div>
@@ -934,7 +971,7 @@ const activeTab = ref<TabId>('overview')
               <div class="card-head">
                 <h4>Post Day</h4>
                 <V-IconBox color="green" rounded>
-                  <i class="fas fa-calendar-day"></i>
+                  <i aria-hidden="true" class="fas fa-calendar-day"></i>
                 </V-IconBox>
               </div>
               <div class="card-metric is-smaller">
@@ -952,7 +989,7 @@ const activeTab = ref<TabId>('overview')
               <div class="card-head">
                 <h4>hashtags</h4>
                 <V-IconBox color="info" rounded>
-                  <i class="fab fa-slack-hash"></i>
+                  <i aria-hidden="true" class="fab fa-slack-hash"></i>
                 </V-IconBox>
               </div>
               <div class="card-metric is-smaller">
@@ -970,7 +1007,7 @@ const activeTab = ref<TabId>('overview')
               <div class="card-head">
                 <h4>Filters</h4>
                 <V-IconBox color="orange" rounded>
-                  <i class="fas fa-camera"></i>
+                  <i aria-hidden="true" class="fas fa-camera"></i>
                 </V-IconBox>
               </div>
               <div class="card-metric is-smaller">
@@ -996,8 +1033,9 @@ const activeTab = ref<TabId>('overview')
                     </div>
                     <div class="metric-foot is-up">
                       <span>
-                        <span
-                          ><i
+                        <span>
+                          <i
+                            aria-hidden="true"
                             class="iconify"
                             data-icon="feather:arrow-right"
                           ></i>
@@ -1019,8 +1057,9 @@ const activeTab = ref<TabId>('overview')
                     </div>
                     <div class="metric-foot is-down">
                       <span>
-                        <span
-                          ><i
+                        <span>
+                          <i
+                            aria-hidden="true"
                             class="iconify"
                             data-icon="feather:arrow-right"
                           ></i>
@@ -1042,8 +1081,9 @@ const activeTab = ref<TabId>('overview')
                     </div>
                     <div class="metric-foot is-up">
                       <span>
-                        <span
-                          ><i
+                        <span>
+                          <i
+                            aria-hidden="true"
                             class="iconify"
                             data-icon="feather:arrow-right"
                           ></i>
@@ -1065,8 +1105,9 @@ const activeTab = ref<TabId>('overview')
                     </div>
                     <div class="metric-foot is-up">
                       <span>
-                        <span
-                          ><i
+                        <span>
+                          <i
+                            aria-hidden="true"
                             class="iconify"
                             data-icon="feather:arrow-right"
                           ></i>
@@ -1088,7 +1129,7 @@ const activeTab = ref<TabId>('overview')
                 <div class="post-stats">
                   <span>Most Liked Posts</span>
                   <div class="post-stat">
-                    <i class="fas fa-heart text-h-red"></i>
+                    <i aria-hidden="true" class="fas fa-heart text-h-red"></i>
                     <span class="count dark-inverted">15.9K</span>
                   </div>
                 </div>
@@ -1158,7 +1199,10 @@ const activeTab = ref<TabId>('overview')
                 <div class="post-stats">
                   <span>Most Commented Posts</span>
                   <div class="post-stat">
-                    <i class="fas fa-comment text-h-yellow"></i>
+                    <i
+                      aria-hidden="true"
+                      class="fas fa-comment text-h-yellow"
+                    ></i>
                     <span class="count dark-inverted">2.3K</span>
                   </div>
                 </div>
@@ -1228,7 +1272,10 @@ const activeTab = ref<TabId>('overview')
                 <div class="post-stats">
                   <span>Most Engaging Posts</span>
                   <div class="post-stat">
-                    <i class="fas fa-hand-paper text-h-green"></i>
+                    <i
+                      aria-hidden="true"
+                      class="fas fa-hand-paper text-h-green"
+                    ></i>
                     <span class="count dark-inverted">51.6%</span>
                   </div>
                 </div>

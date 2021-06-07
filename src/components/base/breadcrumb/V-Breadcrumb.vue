@@ -85,7 +85,7 @@ const props = defineProps({
             class="icon is-small"
             :class="[item.hideLabel && withIcons && !!item.icon && 'is-solo']"
           >
-            <i class="iconify" :data-icon="item.icon"></i>
+            <i aria-hidden="true" class="iconify" :data-icon="item.icon"></i>
           </span>
           <meta
             v-if="item.hideLabel && withIcons && !!item.icon"
@@ -107,7 +107,7 @@ const props = defineProps({
             class="icon is-small"
             :class="[item.hideLabel && withIcons && !!item.icon && 'is-solo']"
           >
-            <i class="iconify" :data-icon="item.icon"></i>
+            <i aria-hidden="true" class="iconify" :data-icon="item.icon"></i>
           </span>
           <meta
             v-if="item.hideLabel && withIcons && !!item.icon"
@@ -124,7 +124,7 @@ const props = defineProps({
             class="icon is-small"
             :class="[item.hideLabel && withIcons && !!item.icon && 'is-solo']"
           >
-            <i class="iconify" :data-icon="item.icon"></i>
+            <i aria-hidden="true" class="iconify" :data-icon="item.icon"></i>
           </span>
           <meta
             v-if="item.hideLabel && withIcons && item.icon"

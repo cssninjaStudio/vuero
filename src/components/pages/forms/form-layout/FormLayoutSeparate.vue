@@ -112,14 +112,22 @@ const country = ref('')
                     >
                       <template #singlelabel="{ value }">
                         <div class="multiselect-single-label">
-                          <img class="select-label-icon" :src="value.icon" />
+                          <img
+                            class="select-label-icon"
+                            :src="value.icon"
+                            alt=""
+                          />
                           <span class="select-label-text">
                             {{ value.name }}
                           </span>
                         </div>
                       </template>
                       <template #option="{ option }">
-                        <img class="select-option-icon" :src="option.icon" />
+                        <img
+                          class="select-option-icon"
+                          :src="option.icon"
+                          alt=""
+                        />
                         <span class="select-label-text">
                           {{ option.name }}
                         </span>

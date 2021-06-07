@@ -70,7 +70,7 @@ const props = defineProps({
 
               <div class="project-features">
                 <div class="project-feature">
-                  <i class="lnil lnil-vector-pen"></i>
+                  <i aria-hidden="true" class="lnil lnil-vector-pen"></i>
                   <h4>UI/UX Design</h4>
                   <p>
                     Designing a perfect user experience is in the scope of this
@@ -78,7 +78,7 @@ const props = defineProps({
                   </p>
                 </div>
                 <div class="project-feature">
-                  <i class="lnil lnil-alarm-clock"></i>
+                  <i aria-hidden="true" class="lnil lnil-alarm-clock"></i>
                   <h4>1 Week Sprints</h4>
                   <p>
                     This project development iterations follow a 1 week sprint
@@ -86,7 +86,7 @@ const props = defineProps({
                   </p>
                 </div>
                 <div class="project-feature">
-                  <i class="lnil lnil-calendar"></i>
+                  <i aria-hidden="true" class="lnil lnil-calendar"></i>
                   <h4>3 Months</h4>
                   <p>
                     This project and all related tasks should completed within 3
@@ -94,7 +94,7 @@ const props = defineProps({
                   </p>
                 </div>
                 <div class="project-feature">
-                  <i class="lnil lnil-diamond-alt"></i>
+                  <i aria-hidden="true" class="lnil lnil-diamond-alt"></i>
                   <h4>Fixed</h4>
                   <p>
                     This project's budget planning is based on an imutable fixed
@@ -112,7 +112,8 @@ const props = defineProps({
                       <div class="meta">
                         <span>Preliminary Sketches</span>
                         <span>
-                          3MB <i class="fas fa-circle"></i> 5 days ago
+                          3MB <i aria-hidden="true" class="fas fa-circle"></i> 5
+                          days ago
                         </span>
                       </div>
                       <FileCardDropdown />
@@ -124,7 +125,9 @@ const props = defineProps({
                       <div class="meta">
                         <span>Project Scope</span>
                         <span>
-                          0.8MB <i class="fas fa-circle"></i> 7 days ago
+                          0.8MB
+                          <i aria-hidden="true" class="fas fa-circle"></i> 7
+                          days ago
                         </span>
                       </div>
                       <FileCardDropdown />
@@ -136,7 +139,9 @@ const props = defineProps({
                       <div class="meta">
                         <span>Project Presentation</span>
                         <span>
-                          2.4MB <i class="fas fa-circle"></i> 7 days ago
+                          2.4MB
+                          <i aria-hidden="true" class="fas fa-circle"></i> 7
+                          days ago
                         </span>
                       </div>
                       <FileCardDropdown />
@@ -148,7 +153,9 @@ const props = defineProps({
                       <div class="meta">
                         <span>Project Budget</span>
                         <span>
-                          0.6MB <i class="fas fa-circle"></i> 8 days ago
+                          0.6MB
+                          <i aria-hidden="true" class="fas fa-circle"></i> 8
+                          days ago
                         </span>
                       </div>
                       <FileCardDropdown />
@@ -160,7 +167,9 @@ const props = defineProps({
                       <div class="meta">
                         <span>Project Notes</span>
                         <span>
-                          0.4MB <i class="fas fa-circle"></i> 8 days ago
+                          0.4MB
+                          <i aria-hidden="true" class="fas fa-circle"></i> 8
+                          days ago
                         </span>
                       </div>
                       <FileCardDropdown />
@@ -172,7 +181,9 @@ const props = defineProps({
                       <div class="meta">
                         <span>POC Demo</span>
                         <span>
-                          8.75MB <i class="fas fa-circle"></i> 8 days ago
+                          8.75MB
+                          <i aria-hidden="true" class="fas fa-circle"></i> 8
+                          days ago
                         </span>
                       </div>
                       <FileCardDropdown />
@@ -464,7 +475,7 @@ const props = defineProps({
                         ]"
                       />
                       <div class="attachments">
-                        <i class="lnil lnil-paperclip"></i>
+                        <i aria-hidden="true" class="lnil lnil-paperclip"></i>
                         <span>3 attachments</span>
                       </div>
                     </div>
@@ -490,7 +501,7 @@ const props = defineProps({
                         :avatars="[{ picture: '/demo/avatars/12.jpg' }]"
                       />
                       <div class="attachments">
-                        <i class="lnil lnil-paperclip"></i>
+                        <i aria-hidden="true" class="lnil lnil-paperclip"></i>
                         <span>1 attachment</span>
                       </div>
                     </div>
@@ -516,7 +527,7 @@ const props = defineProps({
                         :avatars="[{ picture: '/demo/avatars/12.jpg' }]"
                       />
                       <div class="attachments">
-                        <i class="lnil lnil-paperclip"></i>
+                        <i aria-hidden="true" class="lnil lnil-paperclip"></i>
                         <span>1 attachment</span>
                       </div>
                     </div>
@@ -545,7 +556,7 @@ const props = defineProps({
                         ]"
                       />
                       <div class="attachments">
-                        <i class="lnil lnil-paperclip"></i>
+                        <i aria-hidden="true" class="lnil lnil-paperclip"></i>
                         <span>1 attachment</span>
                       </div>
                     </div>
@@ -571,7 +582,7 @@ const props = defineProps({
                         :avatars="[{ picture: '/demo/avatars/25.jpg' }]"
                       />
                       <div class="attachments">
-                        <i class="lnil lnil-paperclip"></i>
+                        <i aria-hidden="true" class="lnil lnil-paperclip"></i>
                         <span>2 attachments</span>
                       </div>
                     </div>
@@ -600,7 +611,7 @@ const props = defineProps({
                         ]"
                       />
                       <div class="attachments">
-                        <i class="lnil lnil-paperclip"></i>
+                        <i aria-hidden="true" class="lnil lnil-paperclip"></i>
                         <span>3 attachments</span>
                       </div>
                     </div>
@@ -629,7 +640,7 @@ const props = defineProps({
                         ]"
                       />
                       <div class="attachments">
-                        <i class="lnil lnil-paperclip"></i>
+                        <i aria-hidden="true" class="lnil lnil-paperclip"></i>
                         <span>3 attachments</span>
                       </div>
                     </div>
@@ -658,7 +669,7 @@ const props = defineProps({
                         ]"
                       />
                       <div class="attachments">
-                        <i class="lnil lnil-paperclip"></i>
+                        <i aria-hidden="true" class="lnil lnil-paperclip"></i>
                         <span>2 attachments</span>
                       </div>
                     </div>

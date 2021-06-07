@@ -18,7 +18,7 @@ import { notifications } from '/@src/data/widgets/ui/notificationList'
               <div class="tile-head">
                 <h3 class="dark-inverted">Transactions</h3>
                 <V-IconBox color="primary" size="small" rounded>
-                  <i class="fas fa-gem"></i>
+                  <i aria-hidden="true" class="fas fa-gem"></i>
                 </V-IconBox>
               </div>
               <div class="tile-body">
@@ -26,7 +26,11 @@ import { notifications } from '/@src/data/widgets/ui/notificationList'
               </div>
               <div class="tile-foot">
                 <span class="text-h-green"
-                  >+6.4% <i class="iconify" data-icon="feather:trending-up"
+                  >+6.4%
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:trending-up"
                 /></span>
                 <span>since last month</span>
               </div>
@@ -38,7 +42,7 @@ import { notifications } from '/@src/data/widgets/ui/notificationList'
               <div class="tile-head">
                 <h3 class="dark-inverted">Subscriptions</h3>
                 <V-IconBox color="orange" size="small" rounded>
-                  <i class="fas fa-user-plus"></i>
+                  <i aria-hidden="true" class="fas fa-user-plus"></i>
                 </V-IconBox>
               </div>
               <div class="tile-body">
@@ -46,7 +50,11 @@ import { notifications } from '/@src/data/widgets/ui/notificationList'
               </div>
               <div class="tile-foot">
                 <span class="text-h-red"
-                  >-2.1% <i class="iconify" data-icon="feather:trending-down"
+                  >-2.1%
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:trending-down"
                 /></span>
                 <span>going down</span>
               </div>
@@ -58,7 +66,7 @@ import { notifications } from '/@src/data/widgets/ui/notificationList'
               <div class="tile-head">
                 <h3 class="dark-inverted">Referals</h3>
                 <V-IconBox color="green" size="small" rounded>
-                  <i class="fas fa-bullhorn"></i>
+                  <i aria-hidden="true" class="fas fa-bullhorn"></i>
                 </V-IconBox>
               </div>
               <div class="tile-body">
@@ -66,7 +74,11 @@ import { notifications } from '/@src/data/widgets/ui/notificationList'
               </div>
               <div class="tile-foot">
                 <span class="text-h-green"
-                  >+4.2% <i class="iconify" data-icon="feather:trending-up"
+                  >+4.2%
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:trending-up"
                 /></span>
                 <span>going up</span>
               </div>
@@ -94,7 +106,8 @@ import { notifications } from '/@src/data/widgets/ui/notificationList'
                 :type="revenueOptions.chart.type"
                 :series="revenueOptions.series"
                 :options="revenueOptions"
-              ></apexchart>
+              >
+              </apexchart>
             </div>
           </div>
           <!--Dashboard Card-->
@@ -111,7 +124,8 @@ import { notifications } from '/@src/data/widgets/ui/notificationList'
                   :type="gaugeOptions.chart.type"
                   :series="gaugeOptions.series"
                   :options="gaugeOptions"
-                ></apexchart>
+                >
+                </apexchart>
                 <div class="radial-stats is-dark-bordered-12">
                   <div class="radial-stat is-dark-bordered-12">
                     <span>Completed</span>
@@ -139,7 +153,11 @@ import { notifications } from '/@src/data/widgets/ui/notificationList'
                 <V-Progress size="tiny" :value="78" />
                 <div class="progress-foot">
                   <span class="text-h-green"
-                    >+6.4% <i class="iconify" data-icon="feather:trending-up"
+                    >+6.4%
+                    <i
+                      aria-hidden="true"
+                      class="iconify"
+                      data-icon="feather:trending-up"
                   /></span>
                   <span>since last month</span>
                 </div>
@@ -151,7 +169,8 @@ import { notifications } from '/@src/data/widgets/ui/notificationList'
                   :type="optionsCircle.chart.type"
                   :series="optionsCircle.series"
                   :options="optionsCircle"
-                ></apexchart>
+                >
+                </apexchart>
               </div>
             </div>
           </div>
@@ -167,7 +186,8 @@ import { notifications } from '/@src/data/widgets/ui/notificationList'
                 :type="barOptions.chart.type"
                 :series="barOptions.series"
                 :options="barOptions"
-              ></apexchart>
+              >
+              </apexchart>
             </div>
           </div>
         </div>
@@ -194,7 +214,11 @@ import { notifications } from '/@src/data/widgets/ui/notificationList'
             <div class="widget-toolbar">
               <div class="left">
                 <a class="action-icon">
-                  <i class="iconify" data-icon="feather:chevron-left"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:chevron-left"
+                  ></i>
                 </a>
               </div>
               <div class="center">
@@ -202,7 +226,11 @@ import { notifications } from '/@src/data/widgets/ui/notificationList'
               </div>
               <div class="right">
                 <a class="action-icon">
-                  <i class="iconify" data-icon="feather:chevron-right"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:chevron-right"
+                  ></i>
                 </a>
               </div>
             </div>

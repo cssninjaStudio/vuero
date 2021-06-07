@@ -10,13 +10,17 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
     class="dropdown is-spaced is-dots is-right dropdown-trigger"
   >
     <div class="is-trigger" aria-haspopup="true" @click="toggle">
-      <i class="iconify" data-icon="feather:more-vertical"></i>
+      <i
+        aria-hidden="true"
+        class="iconify"
+        data-icon="feather:more-vertical"
+      ></i>
     </div>
     <div class="dropdown-menu" role="menu">
       <div class="dropdown-content">
         <a href="#" class="dropdown-item is-media">
           <div class="icon">
-            <i class="lnil lnil-coins"></i>
+            <i aria-hidden="true" class="lnil lnil-coins"></i>
           </div>
           <div class="meta">
             <span>Invest</span>
@@ -25,7 +29,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
         </a>
         <a href="#" class="dropdown-item is-media">
           <div class="icon">
-            <i class="lnil lnil-dollar-up"></i>
+            <i aria-hidden="true" class="lnil lnil-dollar-up"></i>
           </div>
           <div class="meta">
             <span>Compare</span>
@@ -34,7 +38,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
         </a>
         <a href="#" class="dropdown-item is-media">
           <div class="icon">
-            <i class="lnil lnil-bank"></i>
+            <i aria-hidden="true" class="lnil lnil-bank"></i>
           </div>
           <div class="meta">
             <span>Trade</span>
@@ -44,7 +48,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
         <hr class="dropdown-divider" />
         <a href="#" class="dropdown-item is-media">
           <div class="icon">
-            <i class="lnil lnil-wallet-alt-1"></i>
+            <i aria-hidden="true" class="lnil lnil-wallet-alt-1"></i>
           </div>
           <div class="meta">
             <span>Wallet</span>

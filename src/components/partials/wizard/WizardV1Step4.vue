@@ -247,7 +247,11 @@ watch(previewTemplate, () => {
                 "
                 data-hint="Add Files"
               >
-                <i class="iconify" data-icon="feather:plus"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:plus"
+                ></i>
               </span>
             </div>
             <div class="uploader-action">
@@ -257,7 +261,11 @@ watch(previewTemplate, () => {
                 class="inner-action start hint--bubble hint--primary hint--top"
                 data-hint="Upload All"
               >
-                <i class="iconify" data-icon="feather:upload"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:upload"
+                ></i>
               </button>
             </div>
             <div class="uploader-action">
@@ -267,7 +275,7 @@ watch(previewTemplate, () => {
                 class="inner-action cancel hint--bubble hint--primary hint--top"
                 data-hint="Remove All"
               >
-                <i class="iconify" data-icon="feather:x"></i>
+                <i aria-hidden="true" class="iconify" data-icon="feather:x"></i>
               </button>
             </div>
           </div>
@@ -296,7 +304,7 @@ watch(previewTemplate, () => {
         <div class="upload-wrapper">
           <div class="upload-box fileinput-button">
             <div class="uploader-label">
-              <i class="lnil lnil-cloud-upload"></i>
+              <i aria-hidden="true" class="lnil lnil-cloud-upload"></i>
               <h3>Upload photos/videos</h3>
             </div>
           </div>
@@ -344,7 +352,11 @@ watch(previewTemplate, () => {
                 "
                 data-hint="Upload File"
               >
-                <i class="iconify" data-icon="feather:play"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:play"
+                ></i>
               </button>
               <button
                 data-dz-remove
@@ -355,10 +367,18 @@ watch(previewTemplate, () => {
                 "
                 data-hint="Cancel"
               >
-                <i class="iconify" data-icon="feather:arrow-left"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:arrow-left"
+                ></i>
               </button>
               <button data-dz-remove class="list-item-action delete">
-                <i class="iconify" data-icon="feather:trash-2"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:trash-2"
+                ></i>
               </button>
             </div>
           </div>

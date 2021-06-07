@@ -36,7 +36,7 @@ defineProps({
       </div>
       <div class="exerpt">
         <h5>
-          <i class="fas fa-circle"></i>
+          <i aria-hidden="true" class="fas fa-circle"></i>
           <span>{{ title }}</span>
         </h5>
         <p>

@@ -251,7 +251,7 @@ useHead({
       <div class="status-block">
         <div class="tweets-header">
           <div class="icon">
-            <i class="fab fa-twitter"></i>
+            <i aria-hidden="true" class="fab fa-twitter"></i>
           </div>
           <div class="username">
             <span class="dark-inverted">&commat;cssninjaStudio</span>

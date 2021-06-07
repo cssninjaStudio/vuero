@@ -36,7 +36,8 @@ import {
             :type="options1.chart.type"
             :series="options1.series"
             :options="options1"
-          ></apexchart>
+          >
+          </apexchart>
         </div>
       </div>
       <div class="column is-6">
@@ -47,7 +48,8 @@ import {
             :type="options2.chart.type"
             :series="options2.series"
             :options="options2"
-          ></apexchart>
+          >
+          </apexchart>
         </div>
       </div>
       <div class="column is-6">
@@ -58,7 +60,8 @@ import {
             :type="options4.chart.type"
             :series="options4.series"
             :options="options4"
-          ></apexchart>
+          >
+          </apexchart>
         </div>
       </div>
       <div class="column is-6">
@@ -69,7 +72,8 @@ import {
             :type="options5.chart.type"
             :series="options5.series"
             :options="options5"
-          ></apexchart>
+          >
+          </apexchart>
         </div>
       </div>
       <div class="column is-6">
@@ -80,7 +84,8 @@ import {
             :type="options6.chart.type"
             :series="options6.series"
             :options="options6"
-          ></apexchart>
+          >
+          </apexchart>
         </div>
       </div>
       <div class="column is-6">
@@ -91,7 +96,8 @@ import {
             :type="options7.chart.type"
             :series="options7.series"
             :options="options7"
-          ></apexchart>
+          >
+          </apexchart>
         </div>
       </div>
       <div class="column is-6">
@@ -102,7 +108,8 @@ import {
             :type="options8.chart.type"
             :series="options8.series"
             :options="options8"
-          ></apexchart>
+          >
+          </apexchart>
         </div>
       </div>
       <div class="column is-6">
@@ -113,7 +120,8 @@ import {
             :type="options9.chart.type"
             :series="options9.series"
             :options="options9"
-          ></apexchart>
+          >
+          </apexchart>
         </div>
       </div>
       <div class="column is-6">
@@ -124,7 +132,8 @@ import {
             :type="options10.chart.type"
             :series="options10.series"
             :options="options10"
-          ></apexchart>
+          >
+          </apexchart>
         </div>
       </div>
       <div class="column is-6">
@@ -135,7 +144,8 @@ import {
             :type="options11.chart.type"
             :series="options11.series"
             :options="options11"
-          ></apexchart>
+          >
+          </apexchart>
         </div>
       </div>
       <div class="column is-6">
@@ -146,7 +156,8 @@ import {
             :type="options12.chart.type"
             :series="options12.series"
             :options="options12"
-          ></apexchart>
+          >
+          </apexchart>
         </div>
       </div>
       <div class="column is-6">
@@ -157,7 +168,8 @@ import {
             :type="options13.chart.type"
             :series="options13.series"
             :options="options13"
-          ></apexchart>
+          >
+          </apexchart>
         </div>
       </div>
       <div class="column is-6">
@@ -168,7 +180,8 @@ import {
             :type="options14.chart.type"
             :series="options14.series"
             :options="options14"
-          ></apexchart>
+          >
+          </apexchart>
         </div>
       </div>
       <div class="column is-6">
@@ -179,7 +192,8 @@ import {
             :type="options15.chart.type"
             :series="options15.series"
             :options="options15"
-          ></apexchart>
+          >
+          </apexchart>
         </div>
       </div>
       <div class="column is-6">
@@ -190,7 +204,8 @@ import {
             :type="options16.chart.type"
             :series="options16.series"
             :options="options16"
-          ></apexchart>
+          >
+          </apexchart>
         </div>
       </div>
       <div class="column is-6">
@@ -201,7 +216,8 @@ import {
             :type="options17.chart.type"
             :series="options17.series"
             :options="options17"
-          ></apexchart>
+          >
+          </apexchart>
         </div>
       </div>
       <div class="column is-6">
@@ -212,7 +228,8 @@ import {
             :type="options18.chart.type"
             :series="options18.series"
             :options="options18"
-          ></apexchart>
+          >
+          </apexchart>
         </div>
       </div>
       <div class="column is-6">
@@ -223,7 +240,8 @@ import {
             :type="options19.chart.type"
             :series="options19.series"
             :options="options19"
-          ></apexchart>
+          >
+          </apexchart>
         </div>
       </div>
       <div class="column is-6">
@@ -234,7 +252,8 @@ import {
             :type="options20.chart.type"
             :series="options20.series"
             :options="options20"
-          ></apexchart>
+          >
+          </apexchart>
         </div>
       </div>
       <div class="column is-6">
@@ -245,7 +264,8 @@ import {
             :type="options21.chart.type"
             :series="options21.series"
             :options="options21"
-          ></apexchart>
+          >
+          </apexchart>
         </div>
       </div>
       <div class="column is-6">
@@ -256,7 +276,8 @@ import {
             :type="options22.chart.type"
             :series="options22.series"
             :options="options22"
-          ></apexchart>
+          >
+          </apexchart>
         </div>
       </div>
       <div class="column is-6">
@@ -267,7 +288,8 @@ import {
             :type="options23.chart.type"
             :series="options23.series"
             :options="options23"
-          ></apexchart>
+          >
+          </apexchart>
         </div>
       </div>
     </div>

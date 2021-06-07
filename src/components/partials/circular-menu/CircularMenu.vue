@@ -33,8 +33,6 @@ const localFlagSrc = computed(() => {
     default:
       return '/images/icons/flags/united-states-of-america.svg'
   }
-
-  return '/images/icons/flags/united-states-of-america.svg'
 })
 </script>
 
@@ -45,8 +43,8 @@ const localFlagSrc = computed(() => {
     class="circular-menu"
   >
     <a class="floating-btn" @click="isOpen = !isOpen">
-      <i class="fas fa-bars"></i>
-      <i class="fas fa-times"></i>
+      <i aria-hidden="true" class="fas fa-bars"></i>
+      <i aria-hidden="true" class="fas fa-times"></i>
     </a>
 
     <div class="items-wrapper">
@@ -74,10 +72,10 @@ const localFlagSrc = computed(() => {
         :to="{ name: 'sidebar-layouts-profile-notifications' }"
         class="menu-item is-flex"
       >
-        <i class="iconify" data-icon="feather:bell"></i>
+        <i aria-hidden="true" class="iconify" data-icon="feather:bell"></i>
       </RouterLink>
       <a class="menu-item is-flex" @click="activePanel = 'activity'">
-        <i class="iconify" data-icon="feather:grid"></i>
+        <i aria-hidden="true" class="iconify" data-icon="feather:grid"></i>
       </a>
     </div>
   </div>

@@ -23,7 +23,7 @@ const props = defineProps({
     <div class="profile-popover-block">
       <div class="profile-popover-wrapper">
         <div v-if="stack.logo" class="popover-avatar">
-          <img class="avatar" :src="stack.logo" />
+          <img class="avatar" :src="stack.logo" alt="" />
         </div>
         <div class="popover-meta">
           <span class="stack-meta">
@@ -37,10 +37,10 @@ const props = defineProps({
       </div>
       <div class="popover-actions">
         <a v-if="stack.homepage" class="popover-icon" :href="stack.homepage">
-          <i class="iconify" data-icon="feather:link"></i>
+          <i aria-hidden="true" class="iconify" data-icon="feather:link"></i>
         </a>
         <a v-if="stack.github" class="popover-icon" :href="stack.github">
-          <i class="iconify" data-icon="feather:github"></i>
+          <i aria-hidden="true" class="iconify" data-icon="feather:github"></i>
         </a>
       </div>
     </div>

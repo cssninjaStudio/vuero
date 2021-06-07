@@ -60,7 +60,11 @@ const goto = (index: number) => {
               <div class="controls">
                 <button class="button is-large">
                   <span class="icon is-medium">
-                    <i class="iconify" data-icon="feather:plus"></i>
+                    <i
+                      aria-hidden="true"
+                      class="iconify"
+                      data-icon="feather:plus"
+                    ></i>
                   </span>
                 </button>
               </div>
@@ -211,7 +215,11 @@ const goto = (index: number) => {
                   </div>
                   <div class="stat-block">
                     <div class="stat-icon is-up">
-                      <i class="iconify" data-icon="feather:arrow-right"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:arrow-right"
+                      ></i>
                     </div>
                     <div class="stat-text">
                       <span>+ 2,324.12</span>
@@ -224,7 +232,11 @@ const goto = (index: number) => {
                   </div>
                   <div class="stat-block">
                     <div class="stat-icon is-down">
-                      <i class="iconify" data-icon="feather:arrow-right"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:arrow-right"
+                      ></i>
                     </div>
                     <div class="stat-text">
                       <span>+ 518.41</span>
@@ -273,7 +285,8 @@ const goto = (index: number) => {
                     :type="expensesOptions.chart.type"
                     :series="expensesOptions.series"
                     :options="expensesOptions"
-                  ></apexchart>
+                  >
+                  </apexchart>
                 </div>
               </div>
             </div>
@@ -298,7 +311,7 @@ const goto = (index: number) => {
               >
                 <template #icon>
                   <V-IconBox color="green" rounded>
-                    <i class="lnil lnil-service"></i>
+                    <i aria-hidden="true" class="lnil lnil-service"></i>
                   </V-IconBox>
                 </template>
                 <template #action>
@@ -314,7 +327,7 @@ const goto = (index: number) => {
               >
                 <template #icon>
                   <V-IconBox color="orange" rounded>
-                    <i class="lnil lnil-analytics-alt-1"></i>
+                    <i aria-hidden="true" class="lnil lnil-analytics-alt-1"></i>
                   </V-IconBox>
                 </template>
                 <template #action>
@@ -330,7 +343,7 @@ const goto = (index: number) => {
               >
                 <template #icon>
                   <V-IconBox color="purple" rounded>
-                    <i class="lnil lnil-cart-alt"></i>
+                    <i aria-hidden="true" class="lnil lnil-cart-alt"></i>
                   </V-IconBox>
                 </template>
                 <template #action>

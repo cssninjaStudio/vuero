@@ -28,7 +28,11 @@ const hasDynamicLayout = computed(() => {
 <template>
   <li v-if="hasDynamicLayout">
     <a data-content="Config" @click="standardOpen = true">
-      <i class="iconify sidebar-svg" data-icon="feather:sidebar"></i>
+      <i
+        aria-hidden="true"
+        class="iconify sidebar-svg"
+        data-icon="feather:sidebar"
+      ></i>
     </a>
     <V-Modal
       :open="standardOpen"
@@ -64,7 +68,11 @@ const hasDynamicLayout = computed(() => {
               <h3>Default Sidebar</h3>
               <p>The good old default sidebar</p>
               <div class="indicator">
-                <i class="iconify" data-icon="feather:check"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:check"
+                ></i>
               </div>
             </a>
           </div>
@@ -93,7 +101,11 @@ const hasDynamicLayout = computed(() => {
               <h3>Colored Sidebar</h3>
               <p>Colored variation of sidebar</p>
               <div class="indicator">
-                <i class="iconify" data-icon="feather:check"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:check"
+                ></i>
               </div>
             </a>
           </div>
@@ -122,7 +134,11 @@ const hasDynamicLayout = computed(() => {
               <h3>Curved Sidebar</h3>
               <p>Sidebar with curved edges</p>
               <div class="indicator">
-                <i class="iconify" data-icon="feather:check"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:check"
+                ></i>
               </div>
             </a>
           </div>
@@ -151,7 +167,11 @@ const hasDynamicLayout = computed(() => {
               <h3>Curved Colored</h3>
               <p>Curved edges with color</p>
               <div class="indicator">
-                <i class="iconify" data-icon="feather:check"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:check"
+                ></i>
               </div>
             </a>
           </div>
@@ -180,7 +200,11 @@ const hasDynamicLayout = computed(() => {
               <h3>Sidebar Labels</h3>
               <p>Default labels displayed</p>
               <div class="indicator">
-                <i class="iconify" data-icon="feather:check"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:check"
+                ></i>
               </div>
             </a>
           </div>
@@ -209,7 +233,11 @@ const hasDynamicLayout = computed(() => {
               <h3>Hover Labels</h3>
               <p>Labels displayed on hover</p>
               <div class="indicator">
-                <i class="iconify" data-icon="feather:check"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:check"
+                ></i>
               </div>
             </a>
           </div>
@@ -238,7 +266,11 @@ const hasDynamicLayout = computed(() => {
               <h3>Floating Sidebar</h3>
               <p>Floating rounded variation</p>
               <div class="indicator">
-                <i class="iconify" data-icon="feather:check"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:check"
+                ></i>
               </div>
             </a>
           </div>

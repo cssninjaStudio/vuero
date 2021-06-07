@@ -35,7 +35,7 @@ function renderButton(data: any, cell: any, row: any) {
   return `<div class="has-text-right">
             <button class="button v-button is-dark-outlined" data-row="${row.dataIndex}">
                 <span class="icon">
-                    <i class="lnir lnir-pencil"></i>
+                    <i aria-hidden="true" class="lnir lnir-pencil"></i>
                 </span>
                 <span>Edit</span>
             </button>

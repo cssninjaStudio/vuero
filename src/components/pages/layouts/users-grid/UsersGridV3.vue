@@ -191,11 +191,6 @@ const filteredData = computed(() => {
             padding: 4px 8px;
             margin: 8px 0;
 
-            &:nth-child(2) {
-              border-left: 1px solid darken($fade-grey, 4%);
-              border-right: 1px solid darken($fade-grey, 4%);
-            }
-
             &.is-active {
               color: $primary;
             }
@@ -207,6 +202,9 @@ const filteredData = computed(() => {
             }
 
             &:nth-child(2) {
+              border-left: 1px solid darken($fade-grey, 4%);
+              border-right: 1px solid darken($fade-grey, 4%);
+
               &.is-active ~ .icon-tabs-naver {
                 margin-left: 33% !important;
               }

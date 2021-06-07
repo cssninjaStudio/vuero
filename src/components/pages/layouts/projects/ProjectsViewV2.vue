@@ -5,28 +5,28 @@
     <div class="all-projects-header">
       <div class="header-item">
         <div class="item-inner">
-          <i class="lnil lnil-analytics-alt-1"></i>
+          <i aria-hidden="true" class="lnil lnil-analytics-alt-1"></i>
           <span>147</span>
           <p>Published projects</p>
         </div>
       </div>
       <div class="header-item">
         <div class="item-inner">
-          <i class="lnil lnil-target-alt-1"></i>
+          <i aria-hidden="true" class="lnil lnil-target-alt-1"></i>
           <span>1638</span>
           <p>Completed Tasks</p>
         </div>
       </div>
       <div class="header-item">
         <div class="item-inner">
-          <i class="lnil lnil-pie-chart-alt"></i>
+          <i aria-hidden="true" class="lnil lnil-pie-chart-alt"></i>
           <span>88%</span>
           <p>Team Performance</p>
         </div>
       </div>
       <div class="header-item">
         <div class="item-inner">
-          <i class="lnil lnil-leaf"></i>
+          <i aria-hidden="true" class="lnil lnil-leaf"></i>
           <span>17</span>
           <p>Team Members</p>
         </div>

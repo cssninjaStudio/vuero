@@ -69,7 +69,11 @@ const randomCard = () => {
                   <span>{{ plan.slogan }}</span>
                 </div>
                 <div class="checkmark">
-                  <i class="iconify" data-icon="feather:check"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:check"
+                  ></i>
                 </div>
               </div>
             </div>
@@ -91,7 +95,7 @@ const randomCard = () => {
               <div class="right">
                 <div class="plan-pricing">
                   <span>
-                    <b>{{ selectedPlan.costs.monthly }}</b>
+                    <strong>{{ selectedPlan.costs.monthly }}</strong>
                     per month
                   </span>
                   <span> Billed {{ selectedPlan.costs.yearly }} yearly </span>
@@ -179,7 +183,11 @@ const randomCard = () => {
             </tippy>
 
             <button class="add-seat">
-              <i class="iconify" data-icon="feather:plus"></i>
+              <i
+                aria-hidden="true"
+                class="iconify"
+                data-icon="feather:plus"
+              ></i>
             </button>
           </div>
         </div>

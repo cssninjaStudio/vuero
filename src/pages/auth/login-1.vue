@@ -91,7 +91,7 @@ useHead({
                 <small class="error-text">This is a required field</small>
                 <div class="auth-label">Email Address</div>
                 <div class="autv-icon">
-                  <i class="lnil lnil-envelope"></i>
+                  <i aria-hidden="true" class="lnil lnil-envelope"></i>
                 </div>
                 <div class="validation-icon is-success">
                   <V-IconWrap icon="feather:check" />
@@ -108,7 +108,7 @@ useHead({
                 />
                 <div class="auth-label">Password</div>
                 <div class="autv-icon">
-                  <i class="lnil lnil-lock-alt"></i>
+                  <i aria-hidden="true" class="lnil lnil-lock-alt"></i>
                 </div>
               </div>
 
@@ -117,10 +117,18 @@ useHead({
                   <input type="checkbox" />
                   <span class="toggler">
                     <span class="active">
-                      <i class="iconify" data-icon="feather:check"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:check"
+                      ></i>
                     </span>
                     <span class="inactive">
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </span>
                   </span>
                 </label>
@@ -163,7 +171,7 @@ useHead({
                 <small class="error-text">This is a required field</small>
                 <div class="auth-label">Email Address</div>
                 <div class="autv-icon">
-                  <i class="lnil lnil-envelope"></i>
+                  <i aria-hidden="true" class="lnil lnil-envelope"></i>
                 </div>
                 <div class="validation-icon is-success">
                   <V-IconWrap icon="feather:check" />

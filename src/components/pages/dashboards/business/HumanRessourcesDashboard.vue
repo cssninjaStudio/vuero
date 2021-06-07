@@ -34,7 +34,11 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
                   <V-Avatar picture="/demo/avatars/32.jpg" squared />
                   <V-Avatar picture="/demo/avatars/9.jpg" squared />
                   <button>
-                    <i class="iconify" data-icon="feather:plus"></i>
+                    <i
+                      aria-hidden="true"
+                      class="iconify"
+                      data-icon="feather:plus"
+                    ></i>
                   </button>
                 </div>
               </div>
@@ -95,7 +99,7 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
                 <div class="flex-table-item">
                   <div class="flex-table-cell is-media is-grow-lg" data-th="">
                     <V-IconBox color="green">
-                      <i class="lnil lnil-envelope-alt"></i>
+                      <i aria-hidden="true" class="lnil lnil-envelope-alt"></i>
                     </V-IconBox>
                     <div>
                       <span class="item-name dark-inverted">Messages</span>
@@ -119,7 +123,10 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
                 <div class="flex-table-item">
                   <div class="flex-table-cell is-media is-grow-lg" data-th="">
                     <V-IconBox color="orange">
-                      <i class="lnil lnil-checkmark-circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="lnil lnil-checkmark-circle"
+                      ></i>
                     </V-IconBox>
                     <div>
                       <span class="item-name dark-inverted">Tasks</span>
@@ -213,7 +220,11 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
               <div class="control">
                 <input type="text" class="input" placeholder="Search..." />
                 <button class="searcv-button">
-                  <i class="iconify" data-icon="feather:search"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:search"
+                  ></i>
                 </button>
               </div>
             </div>
@@ -240,7 +251,11 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
             <div class="widget-toolbar">
               <div class="left">
                 <a class="action-icon">
-                  <i class="iconify" data-icon="feather:chevron-left"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:chevron-left"
+                  ></i>
                 </a>
               </div>
               <div class="center">
@@ -248,7 +263,11 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
               </div>
               <div class="right">
                 <a class="action-icon">
-                  <i class="iconify" data-icon="feather:chevron-right"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:chevron-right"
+                  ></i>
                 </a>
               </div>
             </div>

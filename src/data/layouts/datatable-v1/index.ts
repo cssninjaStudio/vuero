@@ -21,7 +21,7 @@ function renderPosition(data: any, cell: any, row: any) {
 function renderStatus(data: any, cell: any, row: any) {
   return `
           <div class="status is-${data}">
-              <i class="fas fa-circle"></i>
+              <i aria-hidden="true" class="fas fa-circle"></i>
               <span class="is-capitalize">${data}</span>
           </div>
       `

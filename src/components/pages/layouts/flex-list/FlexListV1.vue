@@ -38,7 +38,7 @@ const filteredData = computed(() => {
       <div class="buttons">
         <button class="button v-button is-primary is-elevated">
           <span class="icon">
-            <i class="fas fa-plus"></i>
+            <i aria-hidden="true" class="fas fa-plus"></i>
           </span>
           <span>Add User</span>
         </button>

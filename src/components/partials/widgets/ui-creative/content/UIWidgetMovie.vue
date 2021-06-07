@@ -28,10 +28,10 @@ defineProps({
       @error.once="$event.target.src = 'https://via.placeholder.com/400x300'"
     />
     <div class="widget-meta">
-      <i class="iconify" data-icon="feather:play-circle"></i>
+      <i aria-hidden="true" class="iconify" data-icon="feather:play-circle"></i>
       <h4>{{ title }}</h4>
       <span class="views">
-        <i class="iconify" data-icon="feather:eye"></i>
+        <i aria-hidden="true" class="iconify" data-icon="feather:eye"></i>
         <span>{{ views }}</span>
       </span>
     </div>

@@ -30,7 +30,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
         </div>
         <a href="#" class="dropdown-item is-media">
           <div class="icon">
-            <i class="lnil lnil-user-alt"></i>
+            <i aria-hidden="true" class="lnil lnil-user-alt"></i>
           </div>
           <div class="meta">
             <span>Profile</span>
@@ -40,7 +40,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
         <hr class="dropdown-divider" />
         <a href="#" class="dropdown-item is-media">
           <div class="icon">
-            <i class="lnil lnil-briefcase"></i>
+            <i aria-hidden="true" class="lnil lnil-briefcase"></i>
           </div>
           <div class="meta">
             <span>Projects</span>
@@ -49,7 +49,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
         </a>
         <a href="#" class="dropdown-item is-media">
           <div class="icon">
-            <i class="lnil lnil-users-alt"></i>
+            <i aria-hidden="true" class="lnil lnil-users-alt"></i>
           </div>
           <div class="meta">
             <span>Team</span>
@@ -59,7 +59,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
         <hr class="dropdown-divider" />
         <a href="#" class="dropdown-item is-media">
           <div class="icon">
-            <i class="lnil lnil-cog"></i>
+            <i aria-hidden="true" class="lnil lnil-cog"></i>
           </div>
           <div class="meta">
             <span>Settings</span>
@@ -77,7 +77,11 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
             "
           >
             <span class="icon is-small">
-              <i class="iconify" data-icon="feather:log-out"></i>
+              <i
+                aria-hidden="true"
+                class="iconify"
+                data-icon="feather:log-out"
+              ></i>
             </span>
             <span>Logout</span>
           </button>

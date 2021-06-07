@@ -47,7 +47,11 @@ import { userStack } from '/@src/data/dashboards/personal-v3/users'
                     <V-Block title="62K" subtitle="Minutes" center>
                       <template #icon>
                         <V-IconBox color="info" rounded>
-                          <i class="iconify" data-icon="feather:clock"></i>
+                          <i
+                            aria-hidden="true"
+                            class="iconify"
+                            data-icon="feather:clock"
+                          ></i>
                         </V-IconBox>
                       </template>
                     </V-Block>
@@ -58,7 +62,11 @@ import { userStack } from '/@src/data/dashboards/personal-v3/users'
                     <V-Block title="263" subtitle="Interviews" center>
                       <template #icon>
                         <V-IconBox color="purple" rounded>
-                          <i class="iconify" data-icon="feather:radio"></i>
+                          <i
+                            aria-hidden="true"
+                            class="iconify"
+                            data-icon="feather:radio"
+                          ></i>
                         </V-IconBox>
                       </template>
                     </V-Block>
@@ -69,7 +77,11 @@ import { userStack } from '/@src/data/dashboards/personal-v3/users'
                     <V-Block title="49" subtitle="Approved" center>
                       <template #icon>
                         <V-IconBox color="green" rounded>
-                          <i class="iconify" data-icon="feather:user-check"></i>
+                          <i
+                            aria-hidden="true"
+                            class="iconify"
+                            data-icon="feather:user-check"
+                          ></i>
                         </V-IconBox>
                       </template>
                     </V-Block>
@@ -80,7 +92,11 @@ import { userStack } from '/@src/data/dashboards/personal-v3/users'
                     <V-Block title="214" subtitle="Rejected" center>
                       <template #icon>
                         <V-IconBox color="orange" rounded>
-                          <i class="iconify" data-icon="feather:frown"></i>
+                          <i
+                            aria-hidden="true"
+                            class="iconify"
+                            data-icon="feather:frown"
+                          ></i>
                         </V-IconBox>
                       </template>
                     </V-Block>
@@ -91,8 +107,8 @@ import { userStack } from '/@src/data/dashboards/personal-v3/users'
               <div class="people">
                 <div class="left">
                   <span class="dark-inverted">Total Interviews</span>
-                  <span
-                    ><a class="is-dark-primary">23 interviews</a> this
+                  <span>
+                    <a class="is-dark-primary">23 interviews</a> this
                     month</span
                   >
                 </div>
@@ -118,7 +134,8 @@ import { userStack } from '/@src/data/dashboards/personal-v3/users'
                 :type="interviewsOptions.chart.type"
                 :series="interviewsOptions.series"
                 :options="interviewsOptions"
-              ></apexchart>
+              >
+              </apexchart>
             </div>
           </div>
         </div>
@@ -130,7 +147,11 @@ import { userStack } from '/@src/data/dashboards/personal-v3/users'
             <div class="widget-toolbar">
               <div class="left">
                 <a class="action-icon">
-                  <i class="iconify" data-icon="feather:chevron-left"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:chevron-left"
+                  ></i>
                 </a>
               </div>
               <div class="center">
@@ -138,7 +159,11 @@ import { userStack } from '/@src/data/dashboards/personal-v3/users'
               </div>
               <div class="right">
                 <a class="action-icon">
-                  <i class="iconify" data-icon="feather:chevron-right"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:chevron-right"
+                  ></i>
                 </a>
               </div>
             </div>
@@ -218,7 +243,11 @@ import { userStack } from '/@src/data/dashboards/personal-v3/users'
               <V-Avatar picture="/demo/avatars/32.jpg" />
             </template>
             <template #action>
-              <i class="iconify" data-icon="feather:chevron-right"></i>
+              <i
+                aria-hidden="true"
+                class="iconify"
+                data-icon="feather:chevron-right"
+              ></i>
             </template>
           </V-Block>
         </a>
@@ -228,7 +257,11 @@ import { userStack } from '/@src/data/dashboards/personal-v3/users'
               <V-Avatar picture="/demo/avatars/19.jpg" />
             </template>
             <template #action>
-              <i class="iconify" data-icon="feather:chevron-right"></i>
+              <i
+                aria-hidden="true"
+                class="iconify"
+                data-icon="feather:chevron-right"
+              ></i>
             </template>
           </V-Block>
         </a>
@@ -238,7 +271,11 @@ import { userStack } from '/@src/data/dashboards/personal-v3/users'
               <V-Avatar picture="/demo/avatars/12.jpg" />
             </template>
             <template #action>
-              <i class="iconify" data-icon="feather:chevron-right"></i>
+              <i
+                aria-hidden="true"
+                class="iconify"
+                data-icon="feather:chevron-right"
+              ></i>
             </template>
           </V-Block>
         </a>

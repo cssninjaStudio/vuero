@@ -53,7 +53,7 @@ const optionsSingle = [
         </V-Field>
         <V-Button color="primary" raised>
           <span class="icon">
-            <i class="fas fa-plus"></i>
+            <i aria-hidden="true" class="fas fa-plus"></i>
           </span>
           <span>New Project</span>
         </V-Button>
@@ -120,7 +120,12 @@ const optionsSingle = [
                       {{ item.name }}
                     </h3>
                     <p>
-                      <i class="iconify" data-icon="feather:calendar"></i
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:calendar"
+                      >
+                      </i
                       >{{ item.dueDate }}
                     </p>
                   </div>

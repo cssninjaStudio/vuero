@@ -33,7 +33,11 @@ defineProps({
           class="go-icon is-down"
           :data-content="user.progress + '%'"
         >
-          <i class="iconify" data-icon="feather:chevron-right"></i>
+          <i
+            aria-hidden="true"
+            class="iconify"
+            data-icon="feather:chevron-right"
+          ></i>
         </a>
         <a
           v-else
@@ -41,7 +45,11 @@ defineProps({
           class="go-icon is-up"
           :data-content="'+' + user.progress + '%'"
         >
-          <i class="iconify" data-icon="feather:chevron-right"></i>
+          <i
+            aria-hidden="true"
+            class="iconify"
+            data-icon="feather:chevron-right"
+          ></i>
         </a>
       </div>
     </div>

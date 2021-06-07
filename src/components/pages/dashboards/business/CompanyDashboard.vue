@@ -10,7 +10,7 @@ import {
 import {
   personalScoreGaugeOptions,
   onPersonalScoreGaugeReady,
-} from '/@src/data/dashboards/company/personalScoreGauge'
+} from '/@src/data/widgets/charts/personalScoreGauge'
 import { optionsCompany } from '/@src/data/dashboards/company/datatable'
 import { popovers } from '/@src/data/users/userPopovers'
 
@@ -41,28 +41,34 @@ onMounted(async () => {
     <div class="company-header is-dark-card-bordered is-dark-bg-6">
       <div class="header-item is-dark-bordered-12">
         <div class="item-inner">
-          <i class="lnil lnil-users-alt is-dark-primary"></i>
+          <i aria-hidden="true" class="lnil lnil-users-alt is-dark-primary"></i>
           <span class="dark-inverted">162</span>
           <p>New Users</p>
         </div>
       </div>
       <div class="header-item is-dark-bordered-12">
         <div class="item-inner">
-          <i class="lnil lnil-diamond-alt is-dark-primary"></i>
+          <i
+            aria-hidden="true"
+            class="lnil lnil-diamond-alt is-dark-primary"
+          ></i>
           <span class="dark-inverted">$1,835.41</span>
           <p>Daily Income</p>
         </div>
       </div>
       <div class="header-item is-dark-bordered-12">
         <div class="item-inner">
-          <i class="lnil lnil-briefcase-alt is-dark-primary"></i>
+          <i
+            aria-hidden="true"
+            class="lnil lnil-briefcase-alt is-dark-primary"
+          ></i>
           <span class="dark-inverted">378</span>
           <p>Completed Projects</p>
         </div>
       </div>
       <div class="header-item is-dark-bordered-12">
         <div class="item-inner">
-          <i class="lnil lnil-ticket is-dark-primary"></i>
+          <i aria-hidden="true" class="lnil lnil-ticket is-dark-primary"></i>
           <span class="dark-inverted">192</span>
           <p>Active Tickets</p>
         </div>
@@ -91,7 +97,11 @@ onMounted(async () => {
             />
             <button class="button icon-button is-circle is-dark-outlined">
               <span class="icon is-small">
-                <i class="iconify" data-icon="feather:plus"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:plus"
+                ></i>
               </span>
             </button>
           </div>
@@ -150,7 +160,8 @@ onMounted(async () => {
               :type="usersOptions.chart.type"
               :series="usersOptions.series"
               :options="usersOptions"
-            ></apexchart>
+            >
+            </apexchart>
           </div>
         </div>
       </div>
@@ -179,7 +190,8 @@ onMounted(async () => {
               :type="sharingOptions.chart.type"
               :series="sharingOptions.series"
               :options="sharingOptions"
-            ></apexchart>
+            >
+            </apexchart>
           </div>
         </div>
       </div>
@@ -220,7 +232,8 @@ onMounted(async () => {
             :type="usersBarOptions.chart.type"
             :series="usersBarOptions.series"
             :options="usersBarOptions"
-          ></apexchart>
+          >
+          </apexchart>
         </div>
       </div>
       <div class="column is-3">
@@ -230,7 +243,11 @@ onMounted(async () => {
             <div class="widget-toolbar">
               <div class="left">
                 <a class="action-icon">
-                  <i class="iconify" data-icon="feather:chevron-left"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:chevron-left"
+                  ></i>
                 </a>
               </div>
               <div class="center">
@@ -238,7 +255,11 @@ onMounted(async () => {
               </div>
               <div class="right">
                 <a class="action-icon">
-                  <i class="iconify" data-icon="feather:chevron-right"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:chevron-right"
+                  ></i>
                 </a>
               </div>
             </div>

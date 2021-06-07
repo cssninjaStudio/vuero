@@ -30,23 +30,35 @@ const activeTab = ref<TabId>('interaction')
                 <ul>
                   <li>
                     <RouterLink :to="{ name: 'elements' }">
-                      <i class="lnil lnil-home"></i>
+                      <i aria-hidden="true" class="lnil lnil-home"></i>
                       <span>Elements Hub</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-colors' }">
-                      <i class="lnil lnil-color-palette"></i>
+                      <i aria-hidden="true" class="lnil lnil-color-palette"></i>
                       <span>Colors</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-helpers' }">
-                      <i class="lnil lnil-help"></i>
+                      <i aria-hidden="true" class="lnil lnil-help"></i>
                       <span>Helpers</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                 </ul>
@@ -58,13 +70,21 @@ const activeTab = ref<TabId>('interaction')
                   <li>
                     <RouterLink :to="{ name: 'elements-icons-iconify' }">
                       <span>Iconify</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-icons-line-icons' }">
                       <span>Line Icons Light</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
@@ -72,13 +92,21 @@ const activeTab = ref<TabId>('interaction')
                       :to="{ name: 'elements-icons-line-icons-regular' }"
                     >
                       <span>Line Icons Regular</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-icons-fa' }">
                       <span>Font Awesome 5</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                 </ul>
@@ -90,39 +118,63 @@ const activeTab = ref<TabId>('interaction')
                   <li>
                     <RouterLink :to="{ name: 'elements-dropdown' }">
                       <span>V-Dropdown</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-loader' }">
                       <span>V-Loader</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-message' }">
                       <span>V-Message</span>
                       <V-Tag label="v1.1" color="primary" outlined curved />
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-modal' }">
                       <span>V-Modal</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-progress' }">
                       <span>V-Progress</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-tooltip' }">
                       <span>V-Tooltip</span>
                       <V-Tag label="v1.1" color="primary" outlined curved />
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                 </ul>
@@ -134,19 +186,31 @@ const activeTab = ref<TabId>('interaction')
                   <li>
                     <RouterLink :to="{ name: 'elements-button' }">
                       <span>V-Button</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-action' }">
                       <span>V-Action</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-icon-button' }">
                       <span>V-IconButton</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                 </ul>
@@ -166,31 +230,51 @@ const activeTab = ref<TabId>('interaction')
                   <li>
                     <RouterLink :to="{ name: 'elements-forms-inputs' }">
                       <span>Text inputs</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-forms-addons' }">
                       <span>Input Addons</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-forms-textarea' }">
                       <span>Textarea</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-forms-selects' }">
                       <span>Selects</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-forms-file' }">
                       <span>File Input</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                 </ul>
@@ -202,13 +286,21 @@ const activeTab = ref<TabId>('interaction')
                   <li>
                     <RouterLink :to="{ name: 'elements-control' }">
                       <span>V-Control</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-field' }">
                       <span>V-Field</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                 </ul>
@@ -220,34 +312,54 @@ const activeTab = ref<TabId>('interaction')
                   <li>
                     <RouterLink :to="{ name: 'elements-animated-checkbox' }">
                       <span>V-AnimatedCheckbox</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-checkbox' }">
                       <span>V-Checkbox</span>
                       <V-Tag label="v1.1" color="primary" outlined curved />
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-radio' }">
                       <span>V-Radio</span>
                       <V-Tag label="v1.1" color="primary" outlined curved />
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-switch-block' }">
                       <span>V-SwitchBlock</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-switch-segment' }">
                       <span>V-SwitchSegment</span>
                       <V-Tag label="v1.1" color="primary" outlined curved />
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                 </ul>
@@ -259,19 +371,31 @@ const activeTab = ref<TabId>('interaction')
                   <li>
                     <RouterLink :to="{ name: 'elements-addons-calendar' }">
                       <span>V-Calendar</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-addons-imask-input' }">
                       <span>V-IMaskInput</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-addons-filepond' }">
                       <span>V-FilePond</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
@@ -279,7 +403,11 @@ const activeTab = ref<TabId>('interaction')
                       :to="{ name: 'elements-addons-vueform-multiselect' }"
                     >
                       <span>@vueform/multiselect</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
@@ -287,13 +415,21 @@ const activeTab = ref<TabId>('interaction')
                       :to="{ name: 'elements-addons-vueform-slider' }"
                     >
                       <span>@vueform/slider</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-addons-ckeditor' }">
                       <span>CKEditor 5</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
                     </RouterLink>
                   </li>
                 </ul>
@@ -317,23 +453,23 @@ const activeTab = ref<TabId>('interaction')
                 <ul>
                   <li>
                     <RouterLink :to="{ name: 'elements' }">
-                      <i class="lnil lnil-home"></i>
+                      <i aria-hidden="true" class="lnil lnil-home"></i>
                       <span>Elements Hub</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-colors' }">
-                      <i class="lnil lnil-color-palette"></i>
+                      <i aria-hidden="true" class="lnil lnil-color-palette"></i>
                       <span>Colors</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-helpers' }">
-                      <i class="lnil lnil-help"></i>
+                      <i aria-hidden="true" class="lnil lnil-help"></i>
                       <span>Helpers</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                 </ul>
@@ -344,7 +480,7 @@ const activeTab = ref<TabId>('interaction')
                   <li>
                     <RouterLink :to="{ name: 'elements-icons-line-icons' }">
                       <span>Line Icons Light</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
@@ -352,19 +488,19 @@ const activeTab = ref<TabId>('interaction')
                       :to="{ name: 'elements-icons-line-icons-regular' }"
                     >
                       <span>Line Icons Regular</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-icons-fa' }">
                       <span>Font Awesome 5</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-icons-iconify' }">
                       <span>Iconify</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                 </ul>
@@ -375,19 +511,19 @@ const activeTab = ref<TabId>('interaction')
                   <li>
                     <RouterLink :to="{ name: 'elements-button' }">
                       <span>Buttons</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'components-content' }">
                       <span>Content</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'components-tag' }">
                       <span>Tags</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                 </ul>
@@ -398,31 +534,31 @@ const activeTab = ref<TabId>('interaction')
                   <li>
                     <RouterLink :to="{ name: 'components-card' }">
                       <span>Cards</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-table' }">
                       <span>Table</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'components-tabs' }">
                       <span>Regular Tabs</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-tabs-slider' }">
                       <span>Slider Tabs</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-tooltip' }">
                       <span>Tooltips</span>
-                      <i class="iconify" data-icon="feather:circle"></i>
+                      <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
                     </RouterLink>
                   </li>
                 </ul>

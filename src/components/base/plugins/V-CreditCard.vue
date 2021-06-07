@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { PropType } from 'vue'
-import { computed, defineEmit, defineProps, ref } from 'vue'
+import { computed, defineEmit, defineProps } from 'vue'
 
 type CreditCardColor =
   | 'grey'

@@ -35,7 +35,7 @@ const democheck = ref(['value_2'])
           </div>
           <div class="cta h-hidden-tablet-p">
             <div class="media-flex inverted-text">
-              <i class="lnil lnil-crown-alt-1"></i>
+              <i aria-hidden="true" class="lnil lnil-crown-alt-1"></i>
               <p class="white-text">
                 Start using our team and project management tools
               </p>
@@ -145,7 +145,8 @@ const democheck = ref(['value_2'])
             :type="completionOptions.chart.type"
             :series="completionOptions.series"
             :options="completionOptions"
-          ></apexchart>
+          >
+          </apexchart>
         </div>
 
         <div class="dashboard-card">
@@ -159,7 +160,8 @@ const democheck = ref(['value_2'])
             :type="barOptions.chart.type"
             :series="barOptions.series"
             :options="barOptions"
-          ></apexchart>
+          >
+          </apexchart>
         </div>
       </div>
 
@@ -183,8 +185,8 @@ const democheck = ref(['value_2'])
                   <div class="position">UI/UX Designer</div>
                 </div>
                 <div class="user-list-icons">
-                  <a><i class="fas fa-phone"></i></a>
-                  <a><i class="fas fa-video"></i></a>
+                  <a><i aria-hidden="true" class="fas fa-phone"></i></a>
+                  <a><i aria-hidden="true" class="fas fa-video"></i></a>
                 </div>
               </li>
               <li>
@@ -199,8 +201,8 @@ const democheck = ref(['value_2'])
                   <div class="position">UI/UX Designer</div>
                 </div>
                 <div class="user-list-icons">
-                  <a><i class="fas fa-phone"></i></a>
-                  <a><i class="fas fa-video"></i></a>
+                  <a><i aria-hidden="true" class="fas fa-phone"></i></a>
+                  <a><i aria-hidden="true" class="fas fa-video"></i></a>
                 </div>
               </li>
               <li>
@@ -215,8 +217,8 @@ const democheck = ref(['value_2'])
                   <div class="position">UI/UX Designer</div>
                 </div>
                 <div class="user-list-icons">
-                  <a><i class="fas fa-phone"></i></a>
-                  <a><i class="fas fa-video"></i></a>
+                  <a><i aria-hidden="true" class="fas fa-phone"></i></a>
+                  <a><i aria-hidden="true" class="fas fa-video"></i></a>
                 </div>
               </li>
               <li>
@@ -231,8 +233,8 @@ const democheck = ref(['value_2'])
                   <div class="position">Frontend developer</div>
                 </div>
                 <div class="user-list-icons">
-                  <a><i class="fas fa-phone"></i></a>
-                  <a><i class="fas fa-video"></i></a>
+                  <a><i aria-hidden="true" class="fas fa-phone"></i></a>
+                  <a><i aria-hidden="true" class="fas fa-video"></i></a>
                 </div>
               </li>
             </ul>

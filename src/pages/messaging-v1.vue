@@ -223,7 +223,11 @@ watchEffect(
                       <span>To:</span>
                     </div>
                     <div class="hide" @click="addConversationOpen = false">
-                      <i class="iconify" data-icon="feather:x"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:x"
+                      ></i>
                     </div>
                   </div>
                 </div>
@@ -269,7 +273,7 @@ watchEffect(
                     <!-- Text messages -->
                     <template v-else-if="message.type === 'msg'">
                       <div class="avatar">
-                        <img :src="message.avatar" draggable="false" />
+                        <img :src="message.avatar" draggable="false" alt="" />
                       </div>
                       <div class="msg">
                         <div class="msg-inner">
@@ -286,7 +290,7 @@ watchEffect(
 
                     <template v-else-if="message.type === 'image'">
                       <div class="avatar is-online">
-                        <img :src="message.avatar" draggable="false" />
+                        <img :src="message.avatar" draggable="false" alt="" />
                       </div>
                       <div class="msg is-image">
                         <div class="image-container">
@@ -309,7 +313,8 @@ watchEffect(
                                 <span
                                   class="iconify"
                                   data-icon="feather:download"
-                                ></span>
+                                >
+                                </span>
                               </div>
                               <a
                                 :href="message.content.image_url"
@@ -318,7 +323,8 @@ watchEffect(
                                 <span
                                   class="iconify"
                                   data-icon="feather:maximize"
-                                ></span>
+                                >
+                                </span>
                               </a>
                             </div>
                           </div>
@@ -329,13 +335,13 @@ watchEffect(
                     <!-- Link image messages -->
                     <template v-else-if="message.type === 'imagelink'">
                       <div class="avatar">
-                        <img :src="message.avatar" draggable="false" />
+                        <img :src="message.avatar" draggable="false" alt="" />
                       </div>
                       <div class="msg is-link-image">
                         <figure class="image">
-                          <img :src="message.content.link_image" />
+                          <img :src="message.content.link_image" alt="" />
                           <div class="link-badge">
-                            <img :src="message.content.link_badge" />
+                            <img :src="message.content.link_badge" alt="" />
                           </div>
                         </figure>
                         <div class="link-body">
@@ -350,7 +356,7 @@ watchEffect(
                     <!-- Link text messages -->
                     <template v-else-if="message.type === 'link'">
                       <div class="avatar is-online">
-                        <img :src="message.avatar" draggable="false" />
+                        <img :src="message.avatar" draggable="false" alt="" />
                       </div>
                       <div class="msg is-link">
                         <V-IconWrap icon="feather:link" />
@@ -413,13 +419,13 @@ watchEffect(
                     <div class="side-actions">
                       <a class="button v-button is-rounded">
                         <span class="icon is-small">
-                          <i class="fas fa-phone"></i>
+                          <i aria-hidden="true" class="fas fa-phone"></i>
                         </span>
                         <span>Audio Call</span>
                       </a>
                       <a class="button v-button is-rounded">
                         <span class="icon is-small">
-                          <i class="fas fa-video"></i>
+                          <i aria-hidden="true" class="fas fa-video"></i>
                         </span>
                         <span>Video Call</span>
                       </a>
@@ -568,13 +574,21 @@ watchEffect(
                           aria-haspopup="true"
                           @click="toggle"
                         >
-                          <i class="iconify" data-icon="feather:plus"></i>
+                          <i
+                            aria-hidden="true"
+                            class="iconify"
+                            data-icon="feather:plus"
+                          ></i>
                         </div>
                       </div>
                       <div class="dropdown-menu" role="menu">
                         <div class="dropdown-content">
                           <a class="dropdown-item">
-                            <i class="iconify" data-icon="feather:video"></i>
+                            <i
+                              aria-hidden="true"
+                              class="iconify"
+                              data-icon="feather:video"
+                            ></i>
                             <div class="meta">
                               <span>Video</span>
                               <span>Embed a video</span>
@@ -584,7 +598,11 @@ watchEffect(
                             href="#"
                             class="dropdown-item kill-drop v-modal-trigger"
                           >
-                            <i class="iconify" data-icon="feather:image"></i>
+                            <i
+                              aria-hidden="true"
+                              class="iconify"
+                              data-icon="feather:image"
+                            ></i>
                             <div class="meta">
                               <span>Images</span>
                               <span>Upload pictures</span>
@@ -594,7 +612,11 @@ watchEffect(
                             href="#"
                             class="dropdown-item kill-drop v-modal-trigger"
                           >
-                            <i class="iconify" data-icon="feather:link"></i>
+                            <i
+                              aria-hidden="true"
+                              class="iconify"
+                              data-icon="feather:link"
+                            ></i>
                             <div class="meta">
                               <span>Link</span>
                               <span>Post a link</span>
@@ -605,7 +627,11 @@ watchEffect(
                             href="#"
                             class="dropdown-item kill-drop v-modal-trigger"
                           >
-                            <i class="iconify" data-icon="feather:file"></i>
+                            <i
+                              aria-hidden="true"
+                              class="iconify"
+                              data-icon="feather:file"
+                            ></i>
                             <div class="meta">
                               <span>File</span>
                               <span>Upload a file</span>
@@ -617,7 +643,11 @@ watchEffect(
                   </div>
                   <div class="add-emoji">
                     <div class="button">
-                      <i class="iconify" data-icon="feather:smile"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:smile"
+                      ></i>
                     </div>
                   </div>
                   <input
@@ -682,7 +712,11 @@ watchEffect(
         class="chat-side-fab"
         @click="mobileConversationDetailsOpen = !mobileConversationDetailsOpen"
       >
-        <i class="iconify" data-icon="feather:chevron-left"></i>
+        <i
+          aria-hidden="true"
+          class="iconify"
+          data-icon="feather:chevron-left"
+        ></i>
       </a>
     </template>
   </MessagingLayout>

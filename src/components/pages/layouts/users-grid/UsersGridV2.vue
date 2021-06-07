@@ -54,7 +54,7 @@ const optionsSingle = [
         </V-Field>
         <V-Button color="primary" raised>
           <span class="icon">
-            <i class="fas fa-plus"></i>
+            <i aria-hidden="true" class="fas fa-plus"></i>
           </span>
           <span>Add User</span>
         </V-Button>
@@ -95,43 +95,51 @@ const optionsSingle = [
                   <span v-if="item.status === 'synced'" class="dark-inverted"
                     >In Sync</span
                   >
-                  <span v-if="item.status === 'overdue'" class="dark-inverted"
-                    >Overdue</span
-                  >
-                  <span v-if="item.status === 'blocked'" class="dark-inverted"
-                    >Blocked</span
-                  >
+                  <span v-if="item.status === 'overdue'" class="dark-inverted">
+                    Overdue
+                  </span>
+                  <span v-if="item.status === 'blocked'" class="dark-inverted">
+                    Blocked
+                  </span>
                   <span>37 tasks remaining</span>
                 </div>
                 <div
                   v-if="item.status === 'synced'"
                   class="status-icon is-success"
                 >
-                  <i class="fas fa-check"></i>
+                  <i aria-hidden="true" class="fas fa-check"></i>
                 </div>
                 <div
                   v-if="item.status === 'overdue'"
                   class="status-icon is-warning"
                 >
-                  <i class="fas fa-exclamation"></i>
+                  <i aria-hidden="true" class="fas fa-exclamation"></i>
                 </div>
                 <div
                   v-if="item.status === 'blocked'"
                   class="status-icon is-danger"
                 >
-                  <i class="fas fa-times"></i>
+                  <i aria-hidden="true" class="fas fa-times"></i>
                 </div>
               </div>
               <div class="buttons">
                 <button class="button v-button is-dark-outlined">
                   <span class="icon">
-                    <i class="iconify" data-icon="feather:check-circle"></i>
+                    <i
+                      aria-hidden="true"
+                      class="iconify"
+                      data-icon="feather:check-circle"
+                    ></i>
                   </span>
                   <span>Tasks</span>
                 </button>
                 <button class="button v-button is-dark-outlined">
                   <span class="icon">
-                    <i class="iconify" data-icon="feather:file"></i>
+                    <i
+                      aria-hidden="true"
+                      class="iconify"
+                      data-icon="feather:file"
+                    ></i>
                   </span>
                   <span>Files</span>
                 </button>
@@ -154,13 +162,21 @@ const optionsSingle = [
               <div class="buttons">
                 <button class="button v-button is-dark-outlined">
                   <span class="icon">
-                    <i class="iconify" data-icon="feather:user"></i>
+                    <i
+                      aria-hidden="true"
+                      class="iconify"
+                      data-icon="feather:user"
+                    ></i>
                   </span>
                   <span>Profile</span>
                 </button>
                 <button class="button v-button is-dark-outlined">
                   <span class="icon">
-                    <i class="iconify" data-icon="feather:message-circle"></i>
+                    <i
+                      aria-hidden="true"
+                      class="iconify"
+                      data-icon="feather:message-circle"
+                    ></i>
                   </span>
                   <span>Talk</span>
                 </button>
@@ -176,14 +192,6 @@ const optionsSingle = [
 <style lang="scss">
 @import '../../../../scss/abstracts/_variables.scss';
 @import '../../../../scss/abstracts/_mixins.scss';
-
-.is-dark {
-  .user-grid {
-    .grid-item {
-      @include vuero-card--dark();
-    }
-  }
-}
 
 .user-grid-v2 {
   .columns {
@@ -341,6 +349,11 @@ const optionsSingle = [
 }
 
 .is-dark {
+  .user-grid {
+    .grid-item {
+      @include vuero-card--dark();
+    }
+  }
   .user-grid-v2 {
     .grid-item-wrap {
       border-color: lighten($dark-sidebar, 12%);

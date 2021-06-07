@@ -34,23 +34,34 @@
           <div>
             <span class="moto"
               >Designed and coded with
-              <i class="fas fa-heart text-danger"></i> by CSS Ninja.</span
+              <i aria-hidden="true" class="fas fa-heart text-danger"></i> by CSS
+              Ninja.</span
             >
             <div class="social-links p-t-10 p-b-10">
               <a href="#">
-                <span class="icon"><i class="fab fa-facebook"></i></span>
+                <span class="icon">
+                  <i aria-hidden="true" class="fab fa-facebook"></i>
+                </span>
               </a>
               <a href="#">
-                <span class="icon"><i class="fab fa-twitter"></i></span>
+                <span class="icon">
+                  <i aria-hidden="true" class="fab fa-twitter"></i>
+                </span>
               </a>
               <a href="#">
-                <span class="icon"><i class="fab fa-linkedin"></i></span>
+                <span class="icon">
+                  <i aria-hidden="true" class="fab fa-linkedin"></i>
+                </span>
               </a>
               <a href="#">
-                <span class="icon"><i class="fab fa-dribbble"></i></span>
+                <span class="icon">
+                  <i aria-hidden="true" class="fab fa-dribbble"></i>
+                </span>
               </a>
               <a href="#">
-                <span class="icon"><i class="fab fa-github"></i></span>
+                <span class="icon">
+                  <i aria-hidden="true" class="fab fa-github"></i>
+                </span>
               </a>
             </div>
           </div>

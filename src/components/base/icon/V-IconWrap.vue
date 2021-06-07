@@ -124,8 +124,13 @@ const isIconify = computed(() => {
       alt=""
       @error.once="$event.target.src = 'https://via.placeholder.com/32x32'"
     />
-    <i v-else-if="isIconify" class="iconify" :data-icon="icon"></i>
-    <i v-else-if="icon" :class="icon"></i>
+    <i
+      v-else-if="isIconify"
+      aria-hidden="true"
+      class="iconify"
+      :data-icon="icon"
+    ></i>
+    <i v-else-if="icon" aria-hidden="true" :class="icon"></i>
   </div>
 </template>
 

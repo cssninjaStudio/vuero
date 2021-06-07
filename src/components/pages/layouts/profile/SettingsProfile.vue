@@ -14,19 +14,19 @@
       </p>
       <div class="profile-stats">
         <div class="profile-stat">
-          <i class="lnil lnil-users-alt"></i>
+          <i aria-hidden="true" class="lnil lnil-users-alt"></i>
           <span>500+ Relations</span>
         </div>
         <div class="separator"></div>
         <div class="profile-stat">
-          <i class="lnil lnil-checkmark-circle"></i>
+          <i aria-hidden="true" class="lnil lnil-checkmark-circle"></i>
           <span>78 Projects</span>
         </div>
         <div class="separator"></div>
         <div class="socials">
-          <a><i class="fab fa-facebook-f"></i></a>
-          <a><i class="fab fa-twitter"></i></a>
-          <a><i class="fab fa-linkedin-in"></i></a>
+          <a><i aria-hidden="true" class="fab fa-facebook-f"></i></a>
+          <a><i aria-hidden="true" class="fab fa-twitter"></i></a>
+          <a><i aria-hidden="true" class="fab fa-linkedin-in"></i></a>
         </div>
       </div>
     </div>
@@ -35,7 +35,7 @@
       <div class="settings-section">
         <a class="settings-box">
           <div class="edit-icon">
-            <i class="lnil lnil-pencil"></i>
+            <i aria-hidden="true" class="lnil lnil-pencil"></i>
           </div>
 
           <V-IconWrap icon="lnil lnil-apartment" />
@@ -45,7 +45,7 @@
         </a>
         <a class="settings-box">
           <div class="edit-icon">
-            <i class="lnil lnil-pencil"></i>
+            <i aria-hidden="true" class="lnil lnil-pencil"></i>
           </div>
 
           <V-IconWrap icon="lnil lnil-users" />
@@ -55,7 +55,7 @@
         </a>
         <a class="settings-box">
           <div class="edit-icon">
-            <i class="lnil lnil-pencil"></i>
+            <i aria-hidden="true" class="lnil lnil-pencil"></i>
           </div>
 
           <V-IconWrap icon="lnil lnil-briefcase-alt" />
@@ -65,7 +65,7 @@
         </a>
         <a class="settings-box">
           <div class="edit-icon">
-            <i class="lnil lnil-pencil"></i>
+            <i aria-hidden="true" class="lnil lnil-pencil"></i>
           </div>
 
           <V-IconWrap icon="lnil lnil-lock-alt-1" />
@@ -75,7 +75,7 @@
         </a>
         <a class="settings-box">
           <div class="edit-icon">
-            <i class="lnil lnil-pencil"></i>
+            <i aria-hidden="true" class="lnil lnil-pencil"></i>
           </div>
 
           <V-IconWrap icon="lnil lnil-file-name" />
@@ -85,7 +85,7 @@
         </a>
         <a class="settings-box">
           <div class="edit-icon">
-            <i class="lnil lnil-pencil"></i>
+            <i aria-hidden="true" class="lnil lnil-pencil"></i>
           </div>
 
           <V-IconWrap icon="lnil lnil-file-upload" />
@@ -95,7 +95,7 @@
         </a>
         <a class="settings-box">
           <div class="edit-icon">
-            <i class="lnil lnil-pencil"></i>
+            <i aria-hidden="true" class="lnil lnil-pencil"></i>
           </div>
 
           <V-IconWrap icon="lnil lnil-credit-card" />
@@ -105,7 +105,7 @@
         </a>
         <a class="settings-box">
           <div class="edit-icon">
-            <i class="lnil lnil-pencil"></i>
+            <i aria-hidden="true" class="lnil lnil-pencil"></i>
           </div>
 
           <V-IconWrap icon="lnil lnil-bubble" />
@@ -115,7 +115,7 @@
         </a>
         <a class="settings-box">
           <div class="edit-icon">
-            <i class="lnil lnil-pencil"></i>
+            <i aria-hidden="true" class="lnil lnil-pencil"></i>
           </div>
 
           <V-IconWrap icon="lnil lnil-shield" />
@@ -125,7 +125,7 @@
         </a>
         <a class="settings-box">
           <div class="edit-icon">
-            <i class="lnil lnil-pencil"></i>
+            <i aria-hidden="true" class="lnil lnil-pencil"></i>
           </div>
 
           <V-IconWrap icon="lnil lnil-cogs" />

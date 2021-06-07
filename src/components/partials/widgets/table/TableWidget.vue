@@ -35,7 +35,7 @@ defineProps({
       <h3 class="dark-inverted">{{ title }}</h3>
       <button class="button v-button is-primary is-elevated">
         <span class="icon is-small">
-          <i class="fas fa-plus"></i>
+          <i aria-hidden="true" class="fas fa-plus"></i>
         </span>
         <span>{{ actionLabel }}</span>
       </button>

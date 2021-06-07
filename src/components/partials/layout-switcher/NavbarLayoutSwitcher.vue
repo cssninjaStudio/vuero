@@ -27,7 +27,11 @@ const hasDynamicLayout = computed(() => {
 <template>
   <div v-if="hasDynamicLayout">
     <a class="icon-link" @click="standardOpen = true">
-      <i class="iconify sidebar-svg" data-icon="feather:sidebar"></i>
+      <i
+        aria-hidden="true"
+        class="iconify sidebar-svg"
+        data-icon="feather:sidebar"
+      ></i>
     </a>
     <V-Modal
       :open="standardOpen"
@@ -67,7 +71,11 @@ const hasDynamicLayout = computed(() => {
                 <h3>Default theme</h3>
                 <p>Top nav with categories</p>
                 <div class="indicator">
-                  <i class="iconify" data-icon="feather:check"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:check"
+                  ></i>
                 </div>
               </a>
             </div>
@@ -96,7 +104,11 @@ const hasDynamicLayout = computed(() => {
                 <h3>Fade theme</h3>
                 <p>Transparent top nav</p>
                 <div class="indicator">
-                  <i class="iconify" data-icon="feather:check"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:check"
+                  ></i>
                 </div>
               </a>
             </div>
@@ -125,7 +137,11 @@ const hasDynamicLayout = computed(() => {
                 <h3>Colored theme</h3>
                 <p>Colored top nav</p>
                 <div class="indicator">
-                  <i class="iconify" data-icon="feather:check"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:check"
+                  ></i>
                 </div>
               </a>
             </div>
@@ -159,7 +175,11 @@ const hasDynamicLayout = computed(() => {
                 <h3>Default theme</h3>
                 <p>Top nav dropdown variation</p>
                 <div class="indicator">
-                  <i class="iconify" data-icon="feather:check"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:check"
+                  ></i>
                 </div>
               </a>
             </div>
@@ -190,7 +210,11 @@ const hasDynamicLayout = computed(() => {
                 <h3>Colored theme</h3>
                 <p>Colored with dropdowns</p>
                 <div class="indicator">
-                  <i class="iconify" data-icon="feather:check"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:check"
+                  ></i>
                 </div>
               </a>
             </div>
@@ -224,7 +248,11 @@ const hasDynamicLayout = computed(() => {
                 <h3>Default theme</h3>
                 <p>Clean top nav variation</p>
                 <div class="indicator">
-                  <i class="iconify" data-icon="feather:check"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:check"
+                  ></i>
                 </div>
               </a>
             </div>
@@ -255,7 +283,11 @@ const hasDynamicLayout = computed(() => {
                 <h3>Center theme</h3>
                 <p>Centered variation</p>
                 <div class="indicator">
-                  <i class="iconify" data-icon="feather:check"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:check"
+                  ></i>
                 </div>
               </a>
             </div>
@@ -284,7 +316,11 @@ const hasDynamicLayout = computed(() => {
                 <h3>Fade theme</h3>
                 <p>Transparent variation</p>
                 <div class="indicator">
-                  <i class="iconify" data-icon="feather:check"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:check"
+                  ></i>
                 </div>
               </a>
             </div>

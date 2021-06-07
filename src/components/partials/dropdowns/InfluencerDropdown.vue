@@ -10,13 +10,17 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
     class="dropdown is-spaced is-dots is-right dropdown-trigger end-action"
   >
     <div class="is-trigger" aria-haspopup="true" @click="toggle">
-      <i class="iconify" data-icon="feather:more-vertical"></i>
+      <i
+        aria-hidden="true"
+        class="iconify"
+        data-icon="feather:more-vertical"
+      ></i>
     </div>
     <div class="dropdown-menu" role="menu">
       <div class="dropdown-content">
         <a href="#" class="dropdown-item is-media">
           <div class="icon">
-            <i class="lnil lnil-whiteboard-alt-2"></i>
+            <i aria-hidden="true" class="lnil lnil-whiteboard-alt-2"></i>
           </div>
           <div class="meta">
             <span>Reports</span>
@@ -25,7 +29,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
         </a>
         <a href="#" class="dropdown-item is-media">
           <div class="icon">
-            <i class="lnil lnil-pencil"></i>
+            <i aria-hidden="true" class="lnil lnil-pencil"></i>
           </div>
           <div class="meta">
             <span>Edit</span>
@@ -35,7 +39,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
         <hr class="dropdown-divider" />
         <a href="#" class="dropdown-item is-media">
           <div class="icon">
-            <i class="lnil lnil-bubble"></i>
+            <i aria-hidden="true" class="lnil lnil-bubble"></i>
           </div>
           <div class="meta">
             <span>Message</span>
@@ -44,7 +48,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
         </a>
         <a href="#" class="dropdown-item is-media">
           <div class="icon">
-            <i class="lnil lnil-gift-alt-1"></i>
+            <i aria-hidden="true" class="lnil lnil-gift-alt-1"></i>
           </div>
           <div class="meta">
             <span>Gift</span>
@@ -54,7 +58,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
         <hr class="dropdown-divider" />
         <a href="#" class="dropdown-item is-media">
           <div class="icon">
-            <i class="lnil lnil-cog"></i>
+            <i aria-hidden="true" class="lnil lnil-cog"></i>
           </div>
           <div class="meta">
             <span>Settings</span>

@@ -56,7 +56,8 @@ import { popovers } from '/@src/data/users/userPopovers'
             :type="bitcoinChartOptions.chart.type"
             :series="bitcoinChartOptions.series"
             :options="bitcoinChartOptions"
-          ></apexchart>
+          >
+          </apexchart>
         </div>
 
         <div class="columns is-multiline">
@@ -68,7 +69,8 @@ import { popovers } from '/@src/data/users/userPopovers'
                 :type="evolutionRadialOptions.chart.type"
                 :series="evolutionRadialOptions.series"
                 :options="evolutionRadialOptions"
-              ></apexchart>
+              >
+              </apexchart>
             </div>
           </div>
           <div class="column is-6">
@@ -79,7 +81,8 @@ import { popovers } from '/@src/data/users/userPopovers'
                 :type="popularityGaugeOptions.chart.type"
                 :series="popularityGaugeOptions.series"
                 :options="popularityGaugeOptions"
-              ></apexchart>
+              >
+              </apexchart>
             </div>
           </div>
         </div>

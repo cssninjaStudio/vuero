@@ -70,7 +70,7 @@ const emit = defineEmit(['update:modelValue'])
         class="is-switch"
         @change="emit('update:modelValue', !modelValue)"
       />
-      <i></i>
+      <i aria-hidden="true"></i>
     </label>
     <label v-if="labelTrue" class="is-label" :for="blockSwitchId">
       {{ labelTrue }}

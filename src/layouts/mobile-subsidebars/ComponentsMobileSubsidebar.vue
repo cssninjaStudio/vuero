@@ -69,7 +69,11 @@
           <div class="collapse-wrap">
             <a class="parent-link">
               V-FlexTable
-              <i class="iconify" data-icon="feather:chevron-right" />
+              <i
+                aria-hidden="true"
+                class="iconify"
+                data-icon="feather:chevron-right"
+              />
             </a>
           </div>
           <ul>
@@ -78,7 +82,12 @@
                 :to="{ name: 'components-flex-table' }"
                 class="is-submenu"
               >
-                <i class="iconify" data-icon="feather:circle"></i> Base Table
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:circle"
+                ></i>
+                Base Table
               </RouterLink>
             </li>
             <li>
@@ -86,7 +95,12 @@
                 :to="{ name: 'components-flex-table-compact' }"
                 class="is-submenu"
               >
-                <i class="iconify" data-icon="feather:circle"></i> Compact Table
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:circle"
+                ></i>
+                Compact Table
               </RouterLink>
             </li>
             <li>
@@ -94,7 +108,12 @@
                 :to="{ name: 'components-flex-table-media' }"
                 class="is-submenu"
               >
-                <i class="iconify" data-icon="feather:circle"></i> Media Table
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:circle"
+                ></i>
+                Media Table
               </RouterLink>
             </li>
             <li>
@@ -102,8 +121,12 @@
                 :to="{ name: 'components-flex-table-advanced' }"
                 class="is-submenu"
               >
-                <i class="iconify" data-icon="feather:circle"></i> Advanced
-                Table</RouterLink
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:circle"
+                ></i>
+                Advanced Table</RouterLink
               >
             </li>
           </ul>
@@ -113,7 +136,11 @@
           <div class="collapse-wrap">
             <a class="parent-link">
               Accordions
-              <i class="iconify" data-icon="feather:chevron-right" />
+              <i
+                aria-hidden="true"
+                class="iconify"
+                data-icon="feather:chevron-right"
+              />
             </a>
           </div>
           <ul>
@@ -122,7 +149,11 @@
                 :to="{ name: 'components-accordion' }"
                 class="is-submenu"
               >
-                <i class="iconify" data-icon="feather:circle"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:circle"
+                ></i>
                 V-Accordion
               </RouterLink>
             </li>
@@ -131,7 +162,11 @@
                 :to="{ name: 'components-collapse' }"
                 class="is-submenu"
               >
-                <i class="iconify" data-icon="feather:circle"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:circle"
+                ></i>
                 V-Collapse
               </RouterLink>
             </li>
@@ -140,7 +175,11 @@
                 :to="{ name: 'components-accordion-image' }"
                 class="is-submenu"
               >
-                <i class="iconify" data-icon="feather:circle"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:circle"
+                ></i>
                 V-AccordionImage
               </RouterLink>
             </li>
@@ -149,13 +188,22 @@
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
             <a class="parent-link">
-              Cards <i class="iconify" data-icon="feather:chevron-right" />
+              Cards
+              <i
+                aria-hidden="true"
+                class="iconify"
+                data-icon="feather:chevron-right"
+              />
             </a>
           </div>
           <ul>
             <li>
               <RouterLink :to="{ name: 'components-card' }" class="is-submenu">
-                <i class="iconify" data-icon="feather:circle"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:circle"
+                ></i>
                 V-Card
               </RouterLink>
             </li>
@@ -164,7 +212,11 @@
                 :to="{ name: 'components-card-action' }"
                 class="is-submenu"
               >
-                <i class="iconify" data-icon="feather:circle"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:circle"
+                ></i>
                 V-CardAction
                 <V-Tag label="v1.1" color="primary" outlined curved />
               </RouterLink>
@@ -174,7 +226,11 @@
                 :to="{ name: 'components-card-advanced' }"
                 class="is-submenu"
               >
-                <i class="iconify" data-icon="feather:circle"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:circle"
+                ></i>
                 V-CardAdvanced
               </RouterLink>
             </li>
@@ -183,7 +239,11 @@
                 :to="{ name: 'components-card-media' }"
                 class="is-submenu"
               >
-                <i class="iconify" data-icon="feather:circle"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:circle"
+                ></i>
                 V-CardMedia
                 <V-Tag label="v1.1" color="primary" outlined curved />
               </RouterLink>
@@ -193,7 +253,11 @@
                 :to="{ name: 'components-card-social' }"
                 class="is-submenu"
               >
-                <i class="iconify" data-icon="feather:circle"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:circle"
+                ></i>
                 V-CardSocial
               </RouterLink>
             </li>
@@ -203,7 +267,11 @@
           <div class="collapse-wrap">
             <a class="parent-link">
               Placeholders
-              <i class="iconify" data-icon="feather:chevron-right" />
+              <i
+                aria-hidden="true"
+                class="iconify"
+                data-icon="feather:chevron-right"
+              />
             </a>
           </div>
           <ul>
@@ -212,7 +280,11 @@
                 :to="{ name: 'components-placeholder-page' }"
                 class="is-submenu"
               >
-                <i class="iconify" data-icon="feather:circle"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:circle"
+                ></i>
                 V-PlaceholderPage
               </RouterLink>
             </li>
@@ -221,7 +293,11 @@
                 :to="{ name: 'components-placeholder-section' }"
                 class="is-submenu"
               >
-                <i class="iconify" data-icon="feather:circle"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:circle"
+                ></i>
                 V-PlaceholderSection
               </RouterLink>
             </li>
@@ -232,7 +308,12 @@
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
             <a class="parent-link">
-              Plugins <i class="iconify" data-icon="feather:chevron-right" />
+              Plugins
+              <i
+                aria-hidden="true"
+                class="iconify"
+                data-icon="feather:chevron-right"
+              />
             </a>
           </div>
           <ul>
@@ -241,7 +322,11 @@
                 :to="{ name: 'components-plugins-notif' }"
                 class="is-submenu"
               >
-                <i class="iconify" data-icon="feather:circle"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:circle"
+                ></i>
                 Notyf
               </RouterLink>
             </li>
@@ -250,7 +335,11 @@
                 :to="{ name: 'components-plugins-tippy' }"
                 class="is-submenu"
               >
-                <i class="iconify" data-icon="feather:circle"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:circle"
+                ></i>
                 Tippy
               </RouterLink>
             </li>
@@ -259,7 +348,11 @@
                 :to="{ name: 'components-plugins-billboard-js' }"
                 class="is-submenu"
               >
-                <i class="iconify" data-icon="feather:circle"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:circle"
+                ></i>
                 V-BillboardJS
               </RouterLink>
             </li>
@@ -268,7 +361,12 @@
                 :to="{ name: 'components-plugins-photos-swipe' }"
                 class="is-submenu"
               >
-                <i class="iconify" data-icon="feather:circle"></i> V-PhotosSwipe
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:circle"
+                ></i>
+                V-PhotosSwipe
               </RouterLink>
             </li>
             <li>
@@ -276,7 +374,11 @@
                 :to="{ name: 'components-plugins-plyr' }"
                 class="is-submenu"
               >
-                <i class="iconify" data-icon="feather:circle"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:circle"
+                ></i>
                 V-Plyr
               </RouterLink>
             </li>
@@ -285,7 +387,11 @@
                 :to="{ name: 'components-plugins-simple-datatables' }"
                 class="is-submenu"
               >
-                <i class="iconify" data-icon="feather:circle"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:circle"
+                ></i>
                 V-SimpleDatatables
               </RouterLink>
             </li>

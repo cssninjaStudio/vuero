@@ -120,7 +120,7 @@ useHead({
                       type="checkbox"
                       class="is-switch"
                     />
-                    <i></i>
+                    <i aria-hidden="true"></i>
                   </label>
                   <div class="setting-meta">
                     <label for="send-promotional">

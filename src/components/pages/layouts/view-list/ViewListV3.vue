@@ -35,7 +35,7 @@ const filteredData = computed(() => {
           data-filter-target=".list-view-item"
         />
         <div class="form-icon">
-          <i class="iconify" data-icon="feather:search"></i>
+          <i aria-hidden="true" class="iconify" data-icon="feather:search"></i>
         </div>
       </V-Control>
 
@@ -108,13 +108,31 @@ const filteredData = computed(() => {
                       {{ item.title }}
                     </h3>
                     <span>
-                      <i class="iconify" data-icon="feather:map-pin"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:map-pin"
+                      ></i>
                       <span>{{ item.location }}</span>
-                      <i class="fas fa-circle icon-separator"></i>
-                      <i class="iconify" data-icon="feather:clock"></i>
+                      <i
+                        aria-hidden="true"
+                        class="fas fa-circle icon-separator"
+                      ></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:clock"
+                      ></i>
                       <span>{{ item.duration }}</span>
-                      <i class="fas fa-circle icon-separator"></i>
-                      <i class="iconify" data-icon="feather:check-circle"></i>
+                      <i
+                        aria-hidden="true"
+                        class="fas fa-circle icon-separator"
+                      ></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:check-circle"
+                      ></i>
                       <span>{{ item.requirements }}</span>
                     </span>
                   </div>

@@ -23,7 +23,7 @@ defineProps({
       <div class="control">
         <input type="text" class="input" placeholder="Search..." />
         <button class="searcv-button">
-          <i class="iconify" data-icon="feather:search"></i>
+          <i aria-hidden="true" class="iconify" data-icon="feather:search"></i>
         </button>
       </div>
     </div>

@@ -332,11 +332,8 @@ useHead({
           <div class="field">
             <label>Comment *</label>
             <div class="control">
-              <textarea
-                class="textarea"
-                rows="4"
-                placeholder="Your message..."
-              ></textarea>
+              <textarea class="textarea" rows="4" placeholder="Your message...">
+              </textarea>
             </div>
           </div>
         </form>
@@ -369,11 +366,8 @@ useHead({
           <div class="field">
             <label>Comment *</label>
             <div class="control">
-              <textarea
-                class="textarea"
-                rows="4"
-                placeholder="Your message..."
-              ></textarea>
+              <textarea class="textarea" rows="4" placeholder="Your message...">
+              </textarea>
             </div>
           </div>
         </form>
@@ -427,7 +421,8 @@ useHead({
                     class="textarea"
                     rows="4"
                     placeholder="Your message..."
-                  ></textarea>
+                  >
+                  </textarea>
                 </div>
               </div>
             </div>
@@ -480,7 +475,11 @@ useHead({
                       </div>
                     </div>
                     <div class="box-chevron">
-                      <i class="iconify" data-icon="feather:chevron-down"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:chevron-down"
+                      ></i>
                     </div>
                     <div class="box-dropdown">
                       <div class="dropdown-inner has-slimscroll">
@@ -498,7 +497,11 @@ useHead({
                             </span>
                             <span class="item-name">Jimmy H.</span>
                             <span class="checkmark">
-                              <i class="iconify" data-icon="feather:check"></i>
+                              <i
+                                aria-hidden="true"
+                                class="iconify"
+                                data-icon="feather:check"
+                              ></i>
                             </span>
                           </li>
                           <li>
@@ -514,7 +517,11 @@ useHead({
                             </span>
                             <span class="item-name">Erik K.</span>
                             <span class="checkmark">
-                              <i class="iconify" data-icon="feather:check"></i>
+                              <i
+                                aria-hidden="true"
+                                class="iconify"
+                                data-icon="feather:check"
+                              ></i>
                             </span>
                           </li>
                           <li>
@@ -530,7 +537,11 @@ useHead({
                             </span>
                             <span class="item-name">Alice C.</span>
                             <span class="checkmark">
-                              <i class="iconify" data-icon="feather:check"></i>
+                              <i
+                                aria-hidden="true"
+                                class="iconify"
+                                data-icon="feather:check"
+                              ></i>
                             </span>
                           </li>
                           <li>
@@ -546,7 +557,11 @@ useHead({
                             </span>
                             <span class="item-name">Melany W.</span>
                             <span class="checkmark">
-                              <i class="iconify" data-icon="feather:check"></i>
+                              <i
+                                aria-hidden="true"
+                                class="iconify"
+                                data-icon="feather:check"
+                              ></i>
                             </span>
                           </li>
                           <li>
@@ -562,7 +577,11 @@ useHead({
                             </span>
                             <span class="item-name">Joshua S.</span>
                             <span class="checkmark">
-                              <i class="iconify" data-icon="feather:check"></i>
+                              <i
+                                aria-hidden="true"
+                                class="iconify"
+                                data-icon="feather:check"
+                              ></i>
                             </span>
                           </li>
                         </ul>
@@ -581,7 +600,11 @@ useHead({
                       <span>Select a type</span>
                     </div>
                     <div class="select-icon">
-                      <i class="iconify" data-icon="feather:chevron-down"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:chevron-down"
+                      ></i>
                     </div>
                     <div class="select-drop has-slimscroll-sm">
                       <div class="drop-inner">
@@ -643,7 +666,8 @@ useHead({
                     class="textarea"
                     rows="3"
                     placeholder="Details about the project..."
-                  ></textarea>
+                  >
+                  </textarea>
                 </div>
               </div>
             </div>
@@ -696,7 +720,11 @@ useHead({
                       </div>
                     </div>
                     <div class="box-chevron">
-                      <i class="iconify" data-icon="feather:chevron-down"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:chevron-down"
+                      ></i>
                     </div>
                     <div class="box-dropdown">
                       <div class="dropdown-inner has-slimscroll">
@@ -714,7 +742,11 @@ useHead({
                             </span>
                             <span class="item-name">Jimmy H.</span>
                             <span class="checkmark">
-                              <i class="iconify" data-icon="feather:check"></i>
+                              <i
+                                aria-hidden="true"
+                                class="iconify"
+                                data-icon="feather:check"
+                              ></i>
                             </span>
                           </li>
                           <li>
@@ -730,7 +762,11 @@ useHead({
                             </span>
                             <span class="item-name">Erik K.</span>
                             <span class="checkmark">
-                              <i class="iconify" data-icon="feather:check"></i>
+                              <i
+                                aria-hidden="true"
+                                class="iconify"
+                                data-icon="feather:check"
+                              ></i>
                             </span>
                           </li>
                           <li>
@@ -746,7 +782,11 @@ useHead({
                             </span>
                             <span class="item-name">Alice C.</span>
                             <span class="checkmark">
-                              <i class="iconify" data-icon="feather:check"></i>
+                              <i
+                                aria-hidden="true"
+                                class="iconify"
+                                data-icon="feather:check"
+                              ></i>
                             </span>
                           </li>
                           <li>
@@ -762,7 +802,11 @@ useHead({
                             </span>
                             <span class="item-name">Melany W.</span>
                             <span class="checkmark">
-                              <i class="iconify" data-icon="feather:check"></i>
+                              <i
+                                aria-hidden="true"
+                                class="iconify"
+                                data-icon="feather:check"
+                              ></i>
                             </span>
                           </li>
                           <li>
@@ -778,7 +822,11 @@ useHead({
                             </span>
                             <span class="item-name">Joshua S.</span>
                             <span class="checkmark">
-                              <i class="iconify" data-icon="feather:check"></i>
+                              <i
+                                aria-hidden="true"
+                                class="iconify"
+                                data-icon="feather:check"
+                              ></i>
                             </span>
                           </li>
                         </ul>
@@ -797,7 +845,11 @@ useHead({
                       <span>Select a type</span>
                     </div>
                     <div class="select-icon">
-                      <i class="iconify" data-icon="feather:chevron-down"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:chevron-down"
+                      ></i>
                     </div>
                     <div class="select-drop has-slimscroll-sm">
                       <div class="drop-inner">
@@ -859,7 +911,8 @@ useHead({
                     class="textarea"
                     rows="3"
                     placeholder="Details about the project..."
-                  ></textarea>
+                  >
+                  </textarea>
                 </div>
               </div>
             </div>

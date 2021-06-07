@@ -22,7 +22,7 @@ defineProps({
       class="inner-list-item media-flex-center"
     >
       <V-IconBox :rounded="rounded" :color="topic.color">
-        <i class="iconify" :data-icon="topic.icon"></i>
+        <i aria-hidden="true" class="iconify" :data-icon="topic.icon"></i>
       </V-IconBox>
       <div class="flex-meta is-light">
         <a href="#">{{ topic.name }}</a>

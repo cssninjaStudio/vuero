@@ -45,9 +45,9 @@ watchEffect(() => {
     <div class="message-meta">
       <span class="name">Jonathan Krugger</span>
       <span class="email">&lt;jonathan@vuero.io&gt;</span>
-      <span class="subject"
-        ><b>I couldn't catch up on last time's dinner</b></span
-      >
+      <span class="subject">
+        <strong>I couldn't catch up on last time's dinner</strong>
+      </span>
     </div>
     <div class="pushed">Oct 22</div>
   </div>

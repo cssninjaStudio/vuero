@@ -48,7 +48,7 @@ useHead({
                     <th>Description</th>
                   </tr>
                   <tr>
-                    <td class="category"><b>Spacing</b></td>
+                    <td class="category"><strong>Spacing</strong></td>
                     <td class="name">Margin (<code>m-*-*</code>)</td>
                     <td class="description">
                       Sets a margin on the target element following the
@@ -94,7 +94,7 @@ useHead({
                     </td>
                   </tr>
                   <tr>
-                    <td class="category"><b>Colors</b></td>
+                    <td class="category"><strong>Colors</strong></td>
                     <td class="name">Text (<code>text-*</code>)</td>
                     <td class="description">
                       Sets a color on the target element following the
@@ -104,7 +104,7 @@ useHead({
                     </td>
                   </tr>
                   <tr>
-                    <td class="category"><b></b></td>
+                    <td class="category"><strong></strong></td>
                     <td class="name">
                       Hover color (<code>hover-text-*</code>)
                     </td>
@@ -117,7 +117,7 @@ useHead({
                     </td>
                   </tr>
                   <tr>
-                    <td class="category"><b></b></td>
+                    <td class="category"><strong></strong></td>
                     <td class="name">background (<code>bg-*</code>)</td>
                     <td class="description">
                       Sets a background color on the target element following
@@ -127,7 +127,7 @@ useHead({
                     </td>
                   </tr>
                   <tr>
-                    <td class="category"><b></b></td>
+                    <td class="category"><strong></strong></td>
                     <td class="name">
                       hover background (<code>hover-bg-*</code>)
                     </td>
@@ -140,7 +140,7 @@ useHead({
                     </td>
                   </tr>
                   <tr>
-                    <td class="category"><b>States</b></td>
+                    <td class="category"><strong>States</strong></td>
                     <td class="name">Hidden (<code>is-hidden</code>)</td>
                     <td class="description">
                       Sets the <code>display</code> property to
@@ -148,7 +148,7 @@ useHead({
                     </td>
                   </tr>
                   <tr>
-                    <td class="category"><b></b></td>
+                    <td class="category"><strong></strong></td>
                     <td class="name">V-Hidden (<code>is-vhidden</code>)</td>
                     <td class="description">
                       Sets the <code>visibility</code> property to
@@ -156,7 +156,7 @@ useHead({
                     </td>
                   </tr>
                   <tr>
-                    <td class="category"><b></b></td>
+                    <td class="category"><strong></strong></td>
                     <td class="name">Disabled (<code>is-disabled</code>)</td>
                     <td class="description">
                       Sets the <code>pointer-events</code> property to
@@ -165,7 +165,7 @@ useHead({
                     </td>
                   </tr>
                   <tr>
-                    <td class="category"><b>Scroll</b></td>
+                    <td class="category"><strong>Scroll</strong></td>
                     <td class="name">
                       Slimscroll (<code>has-slimscroll</code>)
                     </td>
@@ -176,7 +176,7 @@ useHead({
                     </td>
                   </tr>
                   <tr>
-                    <td class="category"><b>Dark Mode</b></td>
+                    <td class="category"><strong>Dark Mode</strong></td>
                     <td class="name">Images</td>
                     <td class="description">
                       Toggle images between light mode and dark mode using the
@@ -190,7 +190,7 @@ useHead({
                     </td>
                   </tr>
                   <tr>
-                    <td class="category"><b></b></td>
+                    <td class="category"><strong></strong></td>
                     <td class="name">
                       Dark Background (<code>is-dark-bg-*</code>)
                     </td>
@@ -201,7 +201,7 @@ useHead({
                     </td>
                   </tr>
                   <tr>
-                    <td class="category"><b>Responsive</b></td>
+                    <td class="category"><strong>Responsive</strong></td>
                     <td class="name">
                       Hidden mobile (<code>h-hidden-mobile</code>)
                     </td>
@@ -212,7 +212,7 @@ useHead({
                     </td>
                   </tr>
                   <tr>
-                    <td class="category"><b></b></td>
+                    <td class="category"><strong></strong></td>
                     <td class="name">
                       Hidden tablet (<code>h-hidden-tablet-p</code>)
                     </td>
@@ -223,7 +223,7 @@ useHead({
                     </td>
                   </tr>
                   <tr>
-                    <td class="category"><b></b></td>
+                    <td class="category"><strong></strong></td>
                     <td class="name">
                       Hidden tablet (<code>h-hidden-tablet-l</code>)
                     </td>
@@ -234,7 +234,7 @@ useHead({
                     </td>
                   </tr>
                   <tr>
-                    <td class="category"><b></b></td>
+                    <td class="category"><strong></strong></td>
                     <td class="name">
                       Hidden desktop (<code>h-hidden-desktop</code>)
                     </td>
@@ -245,7 +245,7 @@ useHead({
                     </td>
                   </tr>
                   <tr>
-                    <td class="category"><b>Typography</b></td>
+                    <td class="category"><strong>Typography</strong></td>
                     <td class="name">Font (<code>.is-font</code>)</td>
                     <td class="description">
                       Sets the <code>font-family</code> property to the
@@ -253,7 +253,7 @@ useHead({
                     </td>
                   </tr>
                   <tr>
-                    <td class="category"><b></b></td>
+                    <td class="category"><strong></strong></td>
                     <td class="name">Font Alt (<code>.is-font-alt</code>)</td>
                     <td class="description">
                       Sets the <code>font-family</code> property to the
@@ -261,7 +261,7 @@ useHead({
                     </td>
                   </tr>
                   <tr>
-                    <td class="category"><b></b></td>
+                    <td class="category"><strong></strong></td>
                     <td class="name">
                       Font Weight (<code>.is-weight-*</code>)
                     </td>
@@ -272,7 +272,7 @@ useHead({
                     </td>
                   </tr>
                   <tr>
-                    <td class="category"><b></b></td>
+                    <td class="category"><strong></strong></td>
                     <td class="name">Font Size (<code>.rem-*</code>)</td>
                     <td class="description">
                       Sets the <code>font-size</code> property to the specidifed

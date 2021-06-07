@@ -121,13 +121,31 @@ const filteredData = computed(() => {
                     <span>{{ item.author.name }}</span>
                   </h3>
                   <span>
-                    <i class="iconify" data-icon="feather:archive"></i>
+                    <i
+                      aria-hidden="true"
+                      class="iconify"
+                      data-icon="feather:archive"
+                    ></i>
                     <span>{{ item.category }}</span>
-                    <i class="fas fa-circle icon-separator"></i>
-                    <i class="iconify" data-icon="feather:clock"></i>
+                    <i
+                      aria-hidden="true"
+                      class="fas fa-circle icon-separator"
+                    ></i>
+                    <i
+                      aria-hidden="true"
+                      class="iconify"
+                      data-icon="feather:clock"
+                    ></i>
                     <span>{{ item.duration }}</span>
-                    <i class="fas fa-circle icon-separator"></i>
-                    <i class="iconify" data-icon="feather:paperclip"></i>
+                    <i
+                      aria-hidden="true"
+                      class="fas fa-circle icon-separator"
+                    ></i>
+                    <i
+                      aria-hidden="true"
+                      class="iconify"
+                      data-icon="feather:paperclip"
+                    ></i>
                     <span>{{ item.attachments }} files</span>
                   </span>
                 </div>
@@ -153,7 +171,11 @@ const filteredData = computed(() => {
                       data-hint="Save"
                     >
                       <span class="icon is-small">
-                        <i class="iconify" data-icon="feather:heart"></i>
+                        <i
+                          aria-hidden="true"
+                          class="iconify"
+                          data-icon="feather:heart"
+                        ></i>
                       </span>
                     </button>
                   </div>

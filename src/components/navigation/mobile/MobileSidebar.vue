@@ -17,7 +17,11 @@ const emit = defineEmit(['toggle'])
         <slot name="links">
           <li>
             <a href="/">
-              <i class="iconify" data-icon="feather:activity"></i>
+              <i
+                aria-hidden="true"
+                class="iconify"
+                data-icon="feather:activity"
+              ></i>
             </a>
           </li>
         </slot>

@@ -35,13 +35,17 @@ defineProps({
     <h3>Call {{ username }}?</h3>
     <div class="actions">
       <a class="action">
-        <i class="iconify" data-icon="feather:message-square"></i>
+        <i
+          aria-hidden="true"
+          class="iconify"
+          data-icon="feather:message-square"
+        ></i>
       </a>
       <a class="action">
-        <i class="iconify" data-icon="feather:phone"></i>
+        <i aria-hidden="true" class="iconify" data-icon="feather:phone"></i>
       </a>
       <a class="action">
-        <i class="iconify" data-icon="feather:video"></i>
+        <i aria-hidden="true" class="iconify" data-icon="feather:video"></i>
       </a>
     </div>
   </div>

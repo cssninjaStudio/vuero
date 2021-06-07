@@ -67,7 +67,11 @@ watch(
             :class="[activeMobileSubsidebar === 'dashboard' && 'is-active']"
             @click="activeMobileSubsidebar = 'dashboard'"
           >
-            <i class="iconify" data-icon="feather:activity"></i>
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:activity"
+            ></i>
           </a>
         </li>
         <li>
@@ -75,7 +79,7 @@ watch(
             :class="[activeMobileSubsidebar === 'layout' && 'is-active']"
             @click="activeMobileSubsidebar = 'layout'"
           >
-            <i class="iconify" data-icon="feather:grid"></i>
+            <i aria-hidden="true" class="iconify" data-icon="feather:grid"></i>
           </a>
         </li>
         <li
@@ -83,7 +87,7 @@ watch(
           @click="activeMobileSubsidebar = 'elements'"
         >
           <a>
-            <i class="iconify" data-icon="feather:box"></i>
+            <i aria-hidden="true" class="iconify" data-icon="feather:box"></i>
           </a>
         </li>
         <li
@@ -91,12 +95,16 @@ watch(
           @click="activeMobileSubsidebar = 'components'"
         >
           <a>
-            <i class="iconify" data-icon="feather:cpu"></i>
+            <i aria-hidden="true" class="iconify" data-icon="feather:cpu"></i>
           </a>
         </li>
         <li>
           <RouterLink :to="{ name: 'messaging-v1' }">
-            <i class="iconify" data-icon="feather:message-circle"></i>
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:message-circle"
+            ></i>
           </RouterLink>
         </li>
       </template>
@@ -104,12 +112,20 @@ watch(
       <template #bottom-links>
         <li>
           <a @click="activePanel = 'search'">
-            <i class="iconify" data-icon="feather:search"></i>
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:search"
+            ></i>
           </a>
         </li>
         <li>
           <a href="#">
-            <i class="iconify" data-icon="feather:settings"></i>
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:settings"
+            ></i>
           </a>
         </li>
       </template>
@@ -191,7 +207,7 @@ watch(
                 class="dropdown-item is-media"
               >
                 <div class="icon">
-                  <i class="lnil lnil-user-alt"></i>
+                  <i aria-hidden="true" class="lnil lnil-user-alt"></i>
                 </div>
                 <div class="meta">
                   <span>Profile</span>
@@ -201,7 +217,7 @@ watch(
               <hr class="dropdown-divider" />
               <a href="#" class="dropdown-item is-media">
                 <div class="icon">
-                  <i class="lnil lnil-briefcase"></i>
+                  <i aria-hidden="true" class="lnil lnil-briefcase"></i>
                 </div>
                 <div class="meta">
                   <span>Projects</span>
@@ -210,7 +226,7 @@ watch(
               </a>
               <a href="#" class="dropdown-item is-media">
                 <div class="icon">
-                  <i class="lnil lnil-users-alt"></i>
+                  <i aria-hidden="true" class="lnil lnil-users-alt"></i>
                 </div>
                 <div class="meta">
                   <span>Team</span>
@@ -220,7 +236,7 @@ watch(
               <hr class="dropdown-divider" />
               <a href="#" class="dropdown-item is-media">
                 <div class="icon">
-                  <i class="lnil lnil-cog"></i>
+                  <i aria-hidden="true" class="lnil lnil-cog"></i>
                 </div>
                 <div class="meta">
                   <span>Settings</span>
@@ -238,7 +254,11 @@ watch(
                   "
                 >
                   <span class="icon is-small">
-                    <i class="iconify" data-icon="feather:log-out"></i>
+                    <i
+                      aria-hidden="true"
+                      class="iconify"
+                      data-icon="feather:log-out"
+                    ></i>
                   </span>
                   <span>Logout</span>
                 </button>
@@ -266,7 +286,11 @@ watch(
           <div class="centered-button centered-link-search">
             <button class="button" @click="displaySearch = true">
               <span class="icon is-small">
-                <i class="iconify" data-icon="feather:search"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:search"
+                ></i>
               </span>
             </button>
           </div>
@@ -281,14 +305,18 @@ watch(
                 placeholder="Search records..."
               />
               <div class="form-icon">
-                <i class="iconify" data-icon="feather:search"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:search"
+                ></i>
               </div>
               <div
                 id="navbar-navbar-search-close"
                 class="form-icon is-right"
                 @click="displaySearch = false"
               >
-                <i class="iconify" data-icon="feather:x"></i>
+                <i aria-hidden="true" class="iconify" data-icon="feather:x"></i>
               </div>
               <div
                 v-if="filteredData.length > 0"

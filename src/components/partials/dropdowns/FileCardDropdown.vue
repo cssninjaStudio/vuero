@@ -10,13 +10,17 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
     class="dropdown is-spaced is-dots is-right dropdown-trigger end-action"
   >
     <div class="is-trigger" aria-haspopup="true" @click="toggle">
-      <i class="iconify" data-icon="feather:more-vertical"></i>
+      <i
+        aria-hidden="true"
+        class="iconify"
+        data-icon="feather:more-vertical"
+      ></i>
     </div>
     <div class="dropdown-menu" role="menu">
       <div class="dropdown-content">
         <a href="#" class="dropdown-item is-media">
           <div class="icon">
-            <i class="lnil lnil-cloud-download"></i>
+            <i aria-hidden="true" class="lnil lnil-cloud-download"></i>
           </div>
           <div class="meta">
             <span>Download</span>
@@ -25,7 +29,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
         </a>
         <a href="#" class="dropdown-item is-media">
           <div class="icon">
-            <i class="lnil lnil-checkmark-circle"></i>
+            <i aria-hidden="true" class="lnil lnil-checkmark-circle"></i>
           </div>
           <div class="meta">
             <span>View Task</span>
@@ -35,7 +39,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
         <hr class="dropdown-divider" />
         <a href="#" class="dropdown-item is-media">
           <div class="icon">
-            <i class="lnil lnil-cloud-upload"></i>
+            <i aria-hidden="true" class="lnil lnil-cloud-upload"></i>
           </div>
           <div class="meta">
             <span>Update</span>
@@ -44,7 +48,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
         </a>
         <a href="#" class="dropdown-item is-media">
           <div class="icon">
-            <i class="lnil lnil-trash-can-alt-1"></i>
+            <i aria-hidden="true" class="lnil lnil-trash-can-alt-1"></i>
           </div>
           <div class="meta">
             <span>Delete</span>
