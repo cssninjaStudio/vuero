@@ -21,9 +21,6 @@ set -xe
 
 cp .release/documentation.pdf .
 
-# TODO: replace demo images url
-# from /demo/([^'"]+) to https://vuero.cssninja.io/demo/$1
-
 # zip sources template-${PROJECT}-${TAG}.zip
 zip -r template-${PROJECT}-${TAG}.zip . \
   -x "*.zip" \
@@ -34,6 +31,8 @@ zip -r template-${PROJECT}-${TAG}.zip . \
   -x "cypress/screenshots/*" \
   -x "public/demo/*" \
   -x "dist/demo/*" \
+  -x "sonar-project.properties" \
+  -x "docker-compose.sonarqube.yml"\
   -x "docker-compose.yml"
 
 # zip preview ${PROJECT}-preview.zip
