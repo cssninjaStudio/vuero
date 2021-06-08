@@ -1,9 +1,8 @@
 import type { Chart } from 'billboard.js'
 import { themeColors } from '/@src/utils/themeColors'
 import { areaLineRange, areaSplineRange } from 'billboard.js'
-import { ref } from 'vue'
 
-export const areaLineRangeOptions = ref({
+export const options = {
   type: areaLineRange(),
   data: {
     x: 'x',
@@ -65,12 +64,12 @@ export const areaLineRangeOptions = ref({
   legend: {
     position: 'inset',
   },
-})
+}
 
-export const onAreaLineRangeReady = (billboard: Chart) => {
-  setTimeout(function () {
+export const onReady = (billboard: Chart) => {
+  setTimeout(() => {
     billboard.load({
-      columns: [
+      columns: <any>[
         [
           'data3',
           [220, 215, 205],
@@ -87,9 +86,9 @@ export const onAreaLineRangeReady = (billboard: Chart) => {
     })
   }, 1000)
 
-  setTimeout(function () {
+  setTimeout(() => {
     billboard.load({
-      columns: [
+      columns: <any>[
         [
           'data4',
           { high: 155, low: 145, mid: 150 },

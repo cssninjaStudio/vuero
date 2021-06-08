@@ -1,45 +1,18 @@
 <script setup lang="ts">
-import {
-  genericLineOptions,
-  onGenericLineReady,
-} from '/@src/data/dashboards/billboardjs-demo/genericLine'
-import { regionLineOptions } from '/@src/data/dashboards/billboardjs-demo/regionLine'
-import { areaSimpleOptions } from '/@src/data/dashboards/billboardjs-demo/areaSimple'
-import {
-  areaLineRangeOptions,
-  onAreaLineRangeReady,
-} from '/@src/data/dashboards/billboardjs-demo/areaLineRange'
-import {
-  barSimpleOptions,
-  onBarSimpleReady,
-} from '/@src/data/dashboards/billboardjs-demo/barSimple'
-import {
-  barStackedOptions,
-  onBarStackedReady,
-} from '/@src/data/dashboards/billboardjs-demo/barStacked'
-import { stepSimpleOptions } from '/@src/data/dashboards/billboardjs-demo/stepSimple'
-import { splineSimpleOptions } from '/@src/data/dashboards/billboardjs-demo/splineSimple'
-import {
-  bubbleSimpleOptions,
-  onBubbleSimpleReady,
-} from '/@src/data/dashboards/billboardjs-demo/bubbleSimple'
-import {
-  scatterSimpleOptions,
-  onScatterSimpleReady,
-} from '/@src/data/dashboards/billboardjs-demo/scatterSimple'
-import {
-  pieSimpleOptions,
-  onPieSimpleReady,
-} from '/@src/data/dashboards/billboardjs-demo/pieSimple'
-import {
-  donutSimpleOptions,
-  onDonutSimpleReady,
-} from '/@src/data/dashboards/billboardjs-demo/donutSimple'
-import {
-  gaugeSimpleOptions,
-  onGaugeSimpleReady,
-} from '/@src/data/dashboards/billboardjs-demo/gaugeSimple'
-import { radarSimpleOptions } from '/@src/data/dashboards/billboardjs-demo/radarSimple'
+import * as genericLine from '/@src/data/dashboards/billboardjs-demo/genericLine'
+import * as regionLine from '/@src/data/dashboards/billboardjs-demo/regionLine'
+import * as areaSimple from '/@src/data/dashboards/billboardjs-demo/areaSimple'
+import * as areaLineRange from '/@src/data/dashboards/billboardjs-demo/areaLineRange'
+import * as barSimple from '/@src/data/dashboards/billboardjs-demo/barSimple'
+import * as barStacked from '/@src/data/dashboards/billboardjs-demo/barStacked'
+import * as stepSimple from '/@src/data/dashboards/billboardjs-demo/stepSimple'
+import * as splineSimple from '/@src/data/dashboards/billboardjs-demo/splineSimple'
+import * as bubbleSimple from '/@src/data/dashboards/billboardjs-demo/bubbleSimple'
+import * as scatterSimple from '/@src/data/dashboards/billboardjs-demo/scatterSimple'
+import * as pieSimple from '/@src/data/dashboards/billboardjs-demo/pieSimple'
+import * as donutSimple from '/@src/data/dashboards/billboardjs-demo/donutSimple'
+import * as gaugeSimple from '/@src/data/dashboards/billboardjs-demo/gaugeSimple'
+import * as radarSimple from '/@src/data/dashboards/billboardjs-demo/radarSimple'
 </script>
 
 <template>
@@ -47,92 +20,98 @@ import { radarSimpleOptions } from '/@src/data/dashboards/billboardjs-demo/radar
     <div class="column is-6">
       <div class="s-card">
         <V-BillboardJS
-          :options="genericLineOptions"
-          @ready="onGenericLineReady"
+          :options="genericLine.options"
+          @ready="genericLine.onReady"
         />
       </div>
     </div>
     <div class="column is-6">
       <div class="s-card">
-        <V-BillboardJS :options="regionLineOptions" />
+        <V-BillboardJS :options="regionLine.options" />
       </div>
     </div>
     <div class="column is-6">
       <div class="s-card">
-        <V-BillboardJS :options="areaSimpleOptions" />
-      </div>
-    </div>
-    <div class="column is-6">
-      <div class="s-card">
-        <V-BillboardJS
-          :options="areaLineRangeOptions"
-          @ready="onAreaLineRangeReady"
-        />
-      </div>
-    </div>
-    <div class="column is-6">
-      <div class="s-card">
-        <V-BillboardJS :options="barSimpleOptions" @ready="onBarSimpleReady" />
+        <V-BillboardJS :options="areaSimple.options" />
       </div>
     </div>
     <div class="column is-6">
       <div class="s-card">
         <V-BillboardJS
-          :options="barStackedOptions"
-          @ready="onBarStackedReady"
-        />
-      </div>
-    </div>
-    <div class="column is-6">
-      <div class="s-card">
-        <V-BillboardJS :options="stepSimpleOptions" />
-      </div>
-    </div>
-    <div class="column is-6">
-      <div class="s-card">
-        <V-BillboardJS :options="splineSimpleOptions" />
-      </div>
-    </div>
-    <div class="column is-6">
-      <div class="s-card">
-        <V-BillboardJS
-          :options="bubbleSimpleOptions"
-          @ready="onBubbleSimpleReady"
+          :options="areaLineRange.options"
+          @ready="areaLineRange.onReady"
         />
       </div>
     </div>
     <div class="column is-6">
       <div class="s-card">
         <V-BillboardJS
-          :options="scatterSimpleOptions"
-          @ready="onScatterSimpleReady"
-        />
-      </div>
-    </div>
-    <div class="column is-6">
-      <div class="s-card">
-        <V-BillboardJS :options="pieSimpleOptions" @ready="onPieSimpleReady" />
-      </div>
-    </div>
-    <div class="column is-6">
-      <div class="s-card">
-        <V-BillboardJS
-          :options="donutSimpleOptions"
-          @ready="onDonutSimpleReady"
+          :options="barSimple.options"
+          @ready="barSimple.onReady"
         />
       </div>
     </div>
     <div class="column is-6">
       <div class="s-card">
         <V-BillboardJS
-          :options="gaugeSimpleOptions"
-          @ready="onGaugeSimpleReady"
+          :options="barStacked.options"
+          @ready="barStacked.onReady"
         />
       </div>
     </div>
     <div class="column is-6">
       <div class="s-card">
-        <V-BillboardJS :options="radarSimpleOptions" />
+        <V-BillboardJS :options="stepSimple.options" />
+      </div>
+    </div>
+    <div class="column is-6">
+      <div class="s-card">
+        <V-BillboardJS :options="splineSimple.options" />
+      </div>
+    </div>
+    <div class="column is-6">
+      <div class="s-card">
+        <V-BillboardJS
+          :options="bubbleSimple.options"
+          @ready="bubbleSimple.onReady"
+        />
+      </div>
+    </div>
+    <div class="column is-6">
+      <div class="s-card">
+        <V-BillboardJS
+          :options="scatterSimple.options"
+          @ready="scatterSimple.onReady"
+        />
+      </div>
+    </div>
+    <div class="column is-6">
+      <div class="s-card">
+        <V-BillboardJS
+          :options="pieSimple.options"
+          @ready="pieSimple.onReady"
+        />
+      </div>
+    </div>
+    <div class="column is-6">
+      <div class="s-card">
+        <V-BillboardJS
+          :options="donutSimple.options"
+          @ready="donutSimple.onReady"
+        />
+      </div>
+    </div>
+    <div class="column is-6">
+      <div class="s-card">
+        <V-BillboardJS
+          :options="gaugeSimple.options"
+          @ready="gaugeSimple.onReady"
+        />
+      </div>
+    </div>
+    <div class="column is-6">
+      <div class="s-card">
+        <V-BillboardJS :options="radarSimple.options" />
       </div>
     </div>
   </div>

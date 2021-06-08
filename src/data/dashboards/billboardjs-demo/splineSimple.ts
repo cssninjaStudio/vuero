@@ -1,8 +1,7 @@
 import { themeColors } from '/@src/utils/themeColors'
 import { spline } from 'billboard.js'
-import { ref } from 'vue'
 
-export const splineSimpleOptions = ref({
+export const options = {
   data: {
     columns: [
       ['data1', 30, 200, 100, 400, 150, 250],
@@ -35,4 +34,4 @@ export const splineSimpleOptions = ref({
   legend: {
     position: 'inset',
   },
-})
+}

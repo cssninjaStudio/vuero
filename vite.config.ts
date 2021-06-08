@@ -77,7 +77,12 @@ export default defineConfig({
      * @see https://github.com/hannoeru/vite-plugin-pages
      */
     Pages({
-      pagesDir: ['src/pages'],
+      pagesDir: [
+        {
+          dir: 'src/pages',
+          baseRoute: '',
+        },
+      ],
     }),
 
     /**

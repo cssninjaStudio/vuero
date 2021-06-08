@@ -1,9 +1,8 @@
 import type { Chart } from 'billboard.js'
 import { themeColors } from '/@src/utils/themeColors'
 import { pie } from 'billboard.js'
-import { ref } from 'vue'
 
-export const pieSimpleOptions = ref({
+export const options = {
   data: {
     columns: [
       ['data1', 30],
@@ -19,14 +18,14 @@ export const pieSimpleOptions = ref({
       virginica: themeColors.success,
     },
     type: pie(),
-    onclick: function (d, i) {
-      console.log('onclick', d, i)
+    onclick: (data: number, index: number) => {
+      console.log('[pieSimple] onclick', data, index)
     },
-    onover: function (d, i) {
-      console.log('onover', d, i)
+    onover: (data: number, index: number) => {
+      console.log('[pieSimple] onover', data, index)
     },
-    onout: function (d, i) {
-      console.log('onout', d, i)
+    onout: (data: number, index: number) => {
+      console.log('[pieSimple] onout', data, index)
     },
   },
   size: {
@@ -48,10 +47,10 @@ export const pieSimpleOptions = ref({
   legend: {
     position: 'inset',
   },
-})
+}
 
-export const onPieSimpleReady = (billboard: Chart) => {
-  setTimeout(function () {
+export const onReady = (billboard: Chart) => {
+  setTimeout(() => {
     billboard.load({
       columns: [
         [
@@ -217,7 +216,7 @@ export const onPieSimpleReady = (billboard: Chart) => {
     })
   }, 2000)
 
-  setTimeout(function () {
+  setTimeout(() => {
     billboard.unload({ ids: 'data1' })
     billboard.unload({ ids: 'data2' })
   }, 6500)

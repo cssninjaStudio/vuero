@@ -41,7 +41,7 @@ defineProps({
       />
     </div>
     <div class="flex-table-cell cell-end" data-th="Actions">
-      <FlexTableContextMenu />
+      <FlexTableDropdown />
     </div>
   </div>
 </template>

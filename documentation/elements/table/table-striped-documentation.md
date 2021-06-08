@@ -12,25 +12,27 @@ You can also add the is-striped to apply striped styles to the table rows.
 
 ```vue
 <template>
-  <div class="s-card">
-    <table class="table is-striped is-fullwidth">
+  <table class="table is-striped is-fullwidth">
+    <thead>
       <tr>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Position</th>
-        <th class="is-end">
+        <th scope="col">First Name</th>
+        <th scope="col">Last Name</th>
+        <th scope="col">Position</th>
+        <th scope="col" class="is-end">
           <div class="dark-inverted is-flex is-justify-content-flex-end">
             Actions
           </div>
         </th>
       </tr>
+    </thead>
+    <tbody>
       <tr>
         <td>Tina</td>
         <td>Bergmann</td>
         <td>Head of Sales</td>
         <td class="is-end">
           <div class="is-flex is-justify-content-flex-end">
-            <FlexTableContextMenuAlt />
+            <FlexTableDropdown />
           </div>
         </td>
       </tr>
@@ -40,7 +42,7 @@ You can also add the is-striped to apply striped styles to the table rows.
         <td>Senior Executive</td>
         <td class="is-end">
           <div class="is-flex is-justify-content-flex-end">
-            <FlexTableContextMenuAlt />
+            <FlexTableDropdown />
           </div>
         </td>
       </tr>
@@ -50,7 +52,7 @@ You can also add the is-striped to apply striped styles to the table rows.
         <td>Software Engineer</td>
         <td class="is-end">
           <div class="is-flex is-justify-content-flex-end">
-            <FlexTableContextMenuAlt />
+            <FlexTableDropdown />
           </div>
         </td>
       </tr>
@@ -60,7 +62,7 @@ You can also add the is-striped to apply striped styles to the table rows.
         <td>HR Manager</td>
         <td class="is-end">
           <div class="is-flex is-justify-content-flex-end">
-            <FlexTableContextMenuAlt />
+            <FlexTableDropdown />
           </div>
         </td>
       </tr>
@@ -70,12 +72,12 @@ You can also add the is-striped to apply striped styles to the table rows.
         <td>Accountant</td>
         <td class="is-end">
           <div class="is-flex is-justify-content-flex-end">
-            <FlexTableContextMenuAlt />
+            <FlexTableDropdown />
           </div>
         </td>
       </tr>
-    </table>
-  </div>
+    </tbody>
+  </table>
 </template>
 ```
 

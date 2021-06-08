@@ -489,11 +489,13 @@ Widget Styles
     }
   }
 
-  .calendar thead {
+  .calendar thead,
+  .calendar th {
     color: $primary;
     font-weight: 600;
     font-size: 10px;
     text-transform: uppercase;
+    text-align: center;
   }
 
   .calendar td {
@@ -526,7 +528,8 @@ Widget Styles
     .calendar {
       color: $dark-dark-text;
 
-      thead {
+      thead,
+      th {
         color: $accent;
       }
 

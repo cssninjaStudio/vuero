@@ -1,20 +1,19 @@
 import type { Chart } from 'billboard.js'
 import { themeColors } from '/@src/utils/themeColors'
 import { gauge } from 'billboard.js'
-import { ref } from 'vue'
 
-export const gaugeSimpleOptions = ref({
+export const options = {
   data: {
     columns: [['data', 91.4]],
     type: gauge(),
-    onclick: function (d, i) {
-      console.log('onclick', d, i)
+    onclick: (data: number, index: number) => {
+      console.log('[gaugeSimple] onclick', data, index)
     },
-    onover: function (d, i) {
-      console.log('onover', d, i)
+    onover: (data: number, index: number) => {
+      console.log('[gaugeSimple] onover', data, index)
     },
-    onout: function (d, i) {
-      console.log('onout', d, i)
+    onout: (data: number, index: number) => {
+      console.log('[gaugeSimple] onout', data, index)
     },
   },
   gauge: {},
@@ -48,10 +47,10 @@ export const gaugeSimpleOptions = ref({
   legend: {
     position: 'inset',
   },
-})
+}
 
-export const onGaugeSimpleReady = (billboard: Chart) => {
-  setTimeout(function () {
+export const onReady = (billboard: Chart) => {
+  setTimeout(() => {
     billboard.load({
       columns: [['data', 10]],
     })

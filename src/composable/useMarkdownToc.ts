@@ -1,4 +1,5 @@
-import { ref, onMounted, nextTick } from 'vue'
+import type { Ref } from 'vue'
+import { ref, watchEffect } from 'vue'
 
 const HEADER_SELECTORS = [
   'h1[id]',
@@ -15,29 +16,23 @@ export type TocItem = {
   level: number
 }
 
-export default function useMarkdownToc() {
-  const markdownContainer = ref<HTMLElement | null>(null)
+export default function useMarkdownToc(container: Ref<HTMLElement | null>) {
   const toc = ref<TocItem[]>([])
 
-  onMounted(() => {
-    nextTick(() => {
-      if (markdownContainer.value) {
-        const anchors = markdownContainer.value.querySelectorAll(
-          HEADER_SELECTORS.join(', ')
-        )
-        anchors.forEach((anchor) => {
-          toc.value.push({
-            id: anchor.id,
-            level: parseInt(anchor.tagName.replace(/[a-z]+/i, '')),
-            title: anchor.textContent || '',
-          })
+  watchEffect(() => {
+    if (container.value) {
+      const anchors = container.value.querySelectorAll(
+        HEADER_SELECTORS.join(', ')
+      )
+      anchors.forEach((anchor) => {
+        toc.value.push({
+          id: anchor.id,
+          level: parseInt(anchor.tagName.replace(/[a-z]+/i, '')),
+          title: anchor.textContent || '',
         })
-      }
-    })
+      })
+    }
   })
 
-  return {
-    markdownContainer,
-    toc,
-  }
+  return toc
 }

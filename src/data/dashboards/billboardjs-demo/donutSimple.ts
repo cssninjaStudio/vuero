@@ -1,9 +1,8 @@
 import type { Chart } from 'billboard.js'
 import { themeColors } from '/@src/utils/themeColors'
 import { donut } from 'billboard.js'
-import { ref } from 'vue'
 
-export const donutSimpleOptions = ref({
+export const options = {
   data: {
     columns: [
       ['data1', 30],
@@ -19,14 +18,14 @@ export const donutSimpleOptions = ref({
       virginica: themeColors.success,
     },
     type: donut(),
-    onclick: function (d, i) {
-      console.log('onclick', d, i)
+    onclick: (data: number, index: number) => {
+      console.log('[donutSimple] onclick', data, index)
     },
-    onover: function (d, i) {
-      console.log('onover', d, i)
+    onover: (data: number, index: number) => {
+      console.log('[donutSimple] onover', data, index)
     },
-    onout: function (d, i) {
-      console.log('onout', d, i)
+    onout: (data: number, index: number) => {
+      console.log('[donutSimple] onout', data, index)
     },
   },
   donut: {
@@ -51,10 +50,10 @@ export const donutSimpleOptions = ref({
   legend: {
     position: 'inset',
   },
-})
+}
 
-export const onDonutSimpleReady = (billboard: Chart) => {
-  setTimeout(function () {
+export const onReady = (billboard: Chart) => {
+  setTimeout(() => {
     billboard.load({
       columns: [
         [
@@ -220,7 +219,7 @@ export const onDonutSimpleReady = (billboard: Chart) => {
     })
   }, 2000)
 
-  setTimeout(function () {
+  setTimeout(() => {
     billboard.unload({ ids: 'data1' })
     billboard.unload({ ids: 'data2' })
   }, 6500)

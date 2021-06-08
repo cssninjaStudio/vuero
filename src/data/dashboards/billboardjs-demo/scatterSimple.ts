@@ -1,9 +1,8 @@
 import type { Chart } from 'billboard.js'
 import { themeColors } from '/@src/utils/themeColors'
 import { scatter } from 'billboard.js'
-import { ref } from 'vue'
 
-export const scatterSimpleOptions = ref({
+export const options = {
   data: {
     xs: {
       setosa: 'setosa_x',
@@ -263,10 +262,10 @@ export const scatterSimpleOptions = ref({
   legend: {
     position: 'inset',
   },
-})
+}
 
-export const onScatterSimpleReady = (billboard: Chart) => {
-  setTimeout(function () {
+export const onReady = (billboard: Chart) => {
+  setTimeout(() => {
     billboard.load({
       xs: {
         virginica: 'virginica_x',
@@ -382,13 +381,13 @@ export const onScatterSimpleReady = (billboard: Chart) => {
     })
   }, 1000)
 
-  setTimeout(function () {
+  setTimeout(() => {
     billboard.unload({
       ids: 'setosa',
     })
   }, 2000)
 
-  setTimeout(function () {
+  setTimeout(() => {
     billboard.load({
       columns: [
         [

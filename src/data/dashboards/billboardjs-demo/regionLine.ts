@@ -1,8 +1,7 @@
 import { themeColors } from '/@src/utils/themeColors'
 import { line } from 'billboard.js'
-import { ref } from 'vue'
 
-export const regionLineOptions = ref({
+export const options = {
   data: {
     type: line(),
     columns: [
@@ -56,4 +55,4 @@ export const regionLineOptions = ref({
   legend: {
     position: 'inset',
   },
-})
+}

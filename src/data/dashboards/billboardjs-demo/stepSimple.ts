@@ -1,8 +1,7 @@
 import { themeColors } from '/@src/utils/themeColors'
 import { step, areaStep } from 'billboard.js'
-import { ref } from 'vue'
 
-export const stepSimpleOptions = ref({
+export const options = {
   data: {
     columns: [
       ['data1', 300, 350, 300, 0, 0, 100],
@@ -38,4 +37,4 @@ export const stepSimpleOptions = ref({
   legend: {
     position: 'inset',
   },
-})
+}

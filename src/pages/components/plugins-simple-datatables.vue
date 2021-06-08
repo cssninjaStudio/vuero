@@ -2,7 +2,8 @@
 import { useHead } from '@vueuse/head'
 import { onBeforeUnmount, onMounted } from 'vue'
 
-import useMakrdownToc from '/@src/composable/useMarkdownToc'
+import { ref } from 'vue'
+import useMarkdownToc from '/@src/composable/useMarkdownToc'
 
 import { optionsBase } from '/@src/data/documentation/v-datatable/simple-datatable'
 import { optionsReactive } from '/@src/data/documentation/v-datatable/reactive-datatable'
@@ -11,7 +12,8 @@ import { optionsUsers } from '/@src/data/documentation/v-datatable/users-datatab
 import { pageTitle } from '/@src/state/sidebarLayoutState'
 
 let interval: NodeJS.Timeout
-const { markdownContainer, toc } = useMakrdownToc()
+const markdownContainer = ref<HTMLElement | null>(null)
+const toc = useMarkdownToc(markdownContainer)
 
 const randomUpdate = () => {
   const max = optionsReactive.data.data.length

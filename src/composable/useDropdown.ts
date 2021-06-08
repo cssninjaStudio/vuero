@@ -2,7 +2,7 @@
  * useDropdown Composition API
  */
 
-import { ref, watch } from 'vue'
+import { ref } from 'vue'
 import { onClickOutside } from '@vueuse/core'
 
 /**

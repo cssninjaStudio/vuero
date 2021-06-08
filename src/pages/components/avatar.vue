@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
 
-import useMakrdownToc from '/@src/composable/useMarkdownToc'
+import { ref } from 'vue'
+import useMarkdownToc from '/@src/composable/useMarkdownToc'
 import { pageTitle } from '/@src/state/sidebarLayoutState'
 
-const { markdownContainer, toc } = useMakrdownToc()
+const markdownContainer = ref<HTMLElement | null>(null)
+const toc = useMarkdownToc(markdownContainer)
 
 pageTitle.value = 'V-Avatar'
 useHead({

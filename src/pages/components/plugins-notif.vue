@@ -3,10 +3,12 @@ import { useHead } from '@vueuse/head'
 import { onMounted } from 'vue'
 
 import useNotyf from '/@src/composable/useNotyf'
-import useMakrdownToc from '/@src/composable/useMarkdownToc'
+import { ref } from 'vue'
+import useMarkdownToc from '/@src/composable/useMarkdownToc'
 import { pageTitle } from '/@src/state/sidebarLayoutState'
 
-const { markdownContainer, toc } = useMakrdownToc()
+const markdownContainer = ref<HTMLElement | null>(null)
+const toc = useMarkdownToc(markdownContainer)
 
 const notyf = useNotyf()
 

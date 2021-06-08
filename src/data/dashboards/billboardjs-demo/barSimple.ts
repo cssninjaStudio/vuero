@@ -1,9 +1,8 @@
 import type { Chart } from 'billboard.js'
 import { themeColors } from '/@src/utils/themeColors'
 import { bar } from 'billboard.js'
-import { ref } from 'vue'
 
-export const barSimpleOptions = ref({
+export const options = {
   data: {
     type: bar(),
     columns: [
@@ -41,10 +40,10 @@ export const barSimpleOptions = ref({
   legend: {
     position: 'inset',
   },
-})
+}
 
-export const onBarSimpleReady = (billboard: Chart) => {
-  setTimeout(function () {
+export const onReady = (billboard: Chart) => {
+  setTimeout(() => {
     billboard.load({
       columns: [['data3', 130, -150, 200, 300, -200, 100]],
     })

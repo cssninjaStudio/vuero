@@ -1,9 +1,8 @@
 import type { Chart } from 'billboard.js'
 import { themeColors } from '/@src/utils/themeColors'
 import { line } from 'billboard.js'
-import { ref } from 'vue'
 
-export const genericLineOptions = ref({
+export const options = {
   data: {
     type: line(),
     columns: [
@@ -35,16 +34,16 @@ export const genericLineOptions = ref({
   legend: {
     position: 'inset',
   },
-})
+}
 
-export const onGenericLineReady = (billboard: Chart) => {
-  setTimeout(function () {
+export const onReady = (billboard: Chart) => {
+  setTimeout(() => {
     billboard.load({
       columns: [['data1', 230, 190, 300, 500, 300, 400]],
     })
   }, 2000)
 
-  setTimeout(function () {
+  setTimeout(() => {
     billboard.load({
       columns: [['data3', 130, 150, 200, 300, 200, 100]],
     })

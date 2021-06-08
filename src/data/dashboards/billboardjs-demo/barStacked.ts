@@ -1,9 +1,8 @@
 import type { Chart } from 'billboard.js'
 import { themeColors } from '/@src/utils/themeColors'
 import { bar } from 'billboard.js'
-import { ref } from 'vue'
 
-export const barStackedOptions = ref({
+export const options = {
   data: {
     type: bar(),
     columns: [
@@ -46,20 +45,20 @@ export const barStackedOptions = ref({
   legend: {
     position: 'inset',
   },
-})
+}
 
-export const onBarStackedReady = (billboard: Chart) => {
-  setTimeout(function () {
+export const onReady = (billboard: Chart) => {
+  setTimeout(() => {
     billboard.groups([['data1', 'data2', 'data3']])
   }, 1000)
 
-  setTimeout(function () {
+  setTimeout(() => {
     billboard.load({
       columns: [['data4', 100, -50, 150, 200, -300, -100]],
     })
   }, 1500)
 
-  setTimeout(function () {
+  setTimeout(() => {
     billboard.groups([['data1', 'data2', 'data3', 'data4']])
   }, 2000)
 }

@@ -1,8 +1,7 @@
 import { themeColors } from '/@src/utils/themeColors'
 import { radar } from 'billboard.js'
-import { ref } from 'vue'
 
-export const radarSimpleOptions = ref({
+export const options = {
   data: {
     x: 'x',
     columns: [
@@ -50,4 +49,4 @@ export const radarSimpleOptions = ref({
   legend: {
     position: 'inset',
   },
-})
+}

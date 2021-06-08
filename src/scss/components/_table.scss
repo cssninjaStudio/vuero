@@ -497,6 +497,15 @@
       }
     }
   }
+  &.is-hoverable {
+    tbody {
+      tr:not(.is-selected) {
+        &:hover {
+          background: lighten($widget-grey, 1%);
+        }
+      }
+    }
+  }
   tbody {
     th {
       font-family: $font;
@@ -517,10 +526,7 @@
     td {
       font-family: $font;
       vertical-align: middle;
-
-      &:not(:first-child) {
-        color: $light-text;
-      }
+      color: $light-text;
 
       &.is-media {
         width: 40px;
@@ -555,9 +561,11 @@
     border-color: lighten($dark-sidebar, 12%);
 
     &.is-hoverable {
-      tr:not(.is-selected) {
-        &:hover {
-          background: lighten($dark-sidebar, 9%);
+      tbody {
+        tr:not(.is-selected) {
+          &:hover {
+            background: lighten($dark-sidebar, 9%);
+          }
         }
       }
     }

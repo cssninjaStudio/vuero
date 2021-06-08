@@ -1,8 +1,7 @@
 import { themeColors } from '/@src/utils/themeColors'
 import { area } from 'billboard.js'
-import { ref } from 'vue'
 
-export const areaSimpleOptions = ref({
+export const options = {
   type: area(),
   data: {
     columns: [
@@ -38,4 +37,4 @@ export const areaSimpleOptions = ref({
   legend: {
     position: 'inset',
   },
-})
+}

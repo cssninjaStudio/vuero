@@ -172,13 +172,13 @@ import { userStack } from '/@src/data/dashboards/personal-v3/users'
             <table class="calendar">
               <thead>
                 <tr>
-                  <td>Mon</td>
-                  <td>Tue</td>
-                  <td>Wed</td>
-                  <td>Thu</td>
-                  <td>Fri</td>
-                  <td>Sat</td>
-                  <td>Sun</td>
+                  <th scope="col">Mon</th>
+                  <th scope="col">Tue</th>
+                  <th scope="col">Wed</th>
+                  <th scope="col">Thu</th>
+                  <th scope="col">Fri</th>
+                  <th scope="col">Sat</th>
+                  <th scope="col">Sun</th>
                 </tr>
               </thead>
 
