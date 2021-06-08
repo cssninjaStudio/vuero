@@ -29,6 +29,10 @@ const props = defineProps({
     type: String,
     default: undefined,
   },
+  pictureDark: {
+    type: String,
+    default: undefined,
+  },
   placeholder: {
     type: String,
     default: 'https://via.placeholder.com/50x50',
@@ -130,27 +134,40 @@ const props = defineProps({
       squared && dot && 'has-dot-squared',
     ]"
   >
-    <img
-      v-if="picture"
-      class="avatar"
-      :class="[squared && 'is-squared']"
-      :src="picture"
-      alt=""
-      @error.once="$event.target.src = 'https://via.placeholder.com/150x150'"
-    />
-    <span
-      v-else
-      class="avatar is-fake"
-      :class="[squared && 'is-squared', color && `is-${color}`]"
-    >
-      <span>{{ initials }}</span>
-    </span>
-    <img
-      v-if="badge"
-      class="badge"
-      :src="badge"
-      alt=""
-      @error.once="$event.target.src = 'https://via.placeholder.com/150x150'"
-    />
+    <slot name="avatar">
+      <img
+        v-if="picture"
+        class="avatar"
+        :class="[squared && 'is-squared']"
+        :src="picture"
+        alt=""
+        @error.once="$event.target.src = 'https://via.placeholder.com/150x150'"
+      />
+      <span
+        v-else
+        class="avatar is-fake"
+        :class="[squared && 'is-squared', color && `is-${color}`]"
+      >
+        <span>{{ initials }}</span>
+      </span>
+      <img
+        v-if="picture && pictureDark"
+        class="avatar dark-image"
+        :class="[squared && 'is-squared']"
+        :src="pictureDark"
+        alt=""
+        @error.once="$event.target.src = 'https://via.placeholder.com/150x150'"
+      />
+    </slot>
+
+    <slot name="badge">
+      <img
+        v-if="badge"
+        class="badge"
+        :src="badge"
+        alt=""
+        @error.once="$event.target.src = 'https://via.placeholder.com/150x150'"
+      />
+    </slot>
   </div>
 </template>

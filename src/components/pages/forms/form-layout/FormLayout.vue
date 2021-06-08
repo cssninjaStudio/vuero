@@ -224,8 +224,7 @@ const isStuck = computed(() => {
                     autocomplete="off"
                     autocapitalize="off"
                     spellcheck="true"
-                  >
-                  </textarea>
+                  ></textarea>
                 </V-Control>
               </V-Field>
             </div>

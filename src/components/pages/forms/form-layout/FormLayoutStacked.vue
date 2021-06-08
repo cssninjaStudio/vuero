@@ -312,8 +312,7 @@ const isStuck = computed(() => {
                       autocomplete="off"
                       autocapitalize="off"
                       spellcheck="true"
-                    >
-                    </textarea>
+                    ></textarea>
                     <a class="add-link">Add Attachments</a>
                   </V-Control>
                 </V-Field>

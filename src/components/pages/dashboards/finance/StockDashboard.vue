@@ -512,7 +512,7 @@
       display: block;
 
       text {
-        font-family: Roboto;
+        font-family: $font;
         font-weight: 700;
         font-size: 12px;
         font-style: normal;

@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { PropType } from 'vue'
 import { defineProps, ref } from 'vue'
+import { activePanel } from '/@src/state/activePanelState'
 
 const filterTasks = ref(0)
 
@@ -56,7 +57,11 @@ const props = defineProps({
                   <p>UI/UX Design</p>
                 </div>
 
-                <V-IconButton size="small" icon="feather:edit-3" />
+                <V-IconButton
+                  size="small"
+                  icon="feather:edit-3"
+                  @click="activePanel = 'task'"
+                />
               </div>
 
               <div class="project-overview">

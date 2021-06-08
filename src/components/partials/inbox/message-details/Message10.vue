@@ -255,8 +255,7 @@ const dropdown2 = useDropdown(dropdownElement2)
               class="textarea"
               rows="6"
               placeholder="Type your message..."
-            >
-            </textarea>
+            ></textarea>
             <button type="button" class="button">Send Message</button>
           </div>
         </div>

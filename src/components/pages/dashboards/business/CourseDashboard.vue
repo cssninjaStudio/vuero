@@ -37,11 +37,10 @@ import { courses, files, students } from '/@src/data/dashboards/course'
                 :picture="student.picture"
                 size="small"
               />
-              <div class="v-avatar is-small">
-                <span class="avatar is-fake is-dark-bg-2">
-                  <span>+{{ course.participants - 3 }}</span>
-                </span>
-              </div>
+              <V-Avatar
+                size="small"
+                :initials="`+${course.participants - 3}`"
+              />
               <a class="link is-dark-primary">Class discussion</a>
             </div>
             <div class="attached-block">

@@ -333,8 +333,11 @@ useHead({
           <div class="field">
             <label>Comment *</label>
             <div class="control">
-              <textarea class="textarea" rows="4" placeholder="Your message...">
-              </textarea>
+              <textarea
+                class="textarea"
+                rows="4"
+                placeholder="Your message..."
+              ></textarea>
             </div>
           </div>
         </form>
@@ -367,8 +370,11 @@ useHead({
           <div class="field">
             <label>Comment *</label>
             <div class="control">
-              <textarea class="textarea" rows="4" placeholder="Your message...">
-              </textarea>
+              <textarea
+                class="textarea"
+                rows="4"
+                placeholder="Your message..."
+              ></textarea>
             </div>
           </div>
         </form>
@@ -422,8 +428,7 @@ useHead({
                     class="textarea"
                     rows="4"
                     placeholder="Your message..."
-                  >
-                  </textarea>
+                  ></textarea>
                 </div>
               </div>
             </div>
@@ -667,8 +672,7 @@ useHead({
                     class="textarea"
                     rows="3"
                     placeholder="Details about the project..."
-                  >
-                  </textarea>
+                  ></textarea>
                 </div>
               </div>
             </div>
@@ -912,8 +916,7 @@ useHead({
                     class="textarea"
                     rows="3"
                     placeholder="Details about the project..."
-                  >
-                  </textarea>
+                  ></textarea>
                 </div>
               </div>
             </div>

@@ -49,16 +49,8 @@ onMounted(() => {
   <div class="finance-dashboard sales-dashboard">
     <!--Header-->
     <div class="dashboard-header">
-      <div class="v-avatar is-large">
-        <img
-          class="avatar"
-          src="/demo/avatars/8.jpg"
-          alt=""
-          @error.once="
-            $event.target.src = 'https://via.placeholder.com/150x150'
-          "
-        />
-      </div>
+      <V-Avatar size="large" picture="/demo/avatars/8.jpg" />
+
       <div class="start">
         <h3 class="dark-inverted">Welcome back, Erik Kovalsky</h3>
         <p>We're very happy to see you again on your dashboard.</p>

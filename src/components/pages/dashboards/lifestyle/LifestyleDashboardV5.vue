@@ -18,15 +18,17 @@ import {
         <div class="members">
           <h4>Members</h4>
           <div class="members-list">
-            <div class="v-avatar is-small">
-              <button class="avatar is-fake is-squared">
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:plus"
-                ></i>
-              </button>
-            </div>
+            <V-Avatar size="small" squared>
+              <template #avatar>
+                <button class="avatar is-fake is-squared">
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:plus"
+                  ></i>
+                </button>
+              </template>
+            </V-Avatar>
             <V-Avatar
               v-for="member in members.list"
               :key="member.id"
@@ -34,11 +36,7 @@ import {
               size="small"
               squared
             />
-            <div class="v-avatar is-small">
-              <span class="avatar is-fake is-squared">
-                <span>+6</span>
-              </span>
-            </div>
+            <V-Avatar size="small" initials="+6" squared />
           </div>
         </div>
       </div>

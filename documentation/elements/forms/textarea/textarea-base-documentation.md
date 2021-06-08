@@ -26,8 +26,7 @@ const textarea = ref('')
         class="textarea"
         rows="4"
         placeholder="A longer message..."
-      >
-      </textarea>
+      ></textarea>
     </V-Control>
   </V-Field>
 </template>
@@ -42,8 +41,7 @@ const textarea = ref('')
     <textarea class="textarea" 
         rows="4" 
         placeholder="A longer message..." 
-        v-model="frontmatter.state.textarea">
-    </textarea>
+        v-model="frontmatter.state.textarea"></textarea>
   </V-Control>
 </V-Field>
 

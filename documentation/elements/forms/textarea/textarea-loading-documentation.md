@@ -23,8 +23,7 @@ const loading = ref(true)
         class="textarea"
         rows="4"
         placeholder="A longer message..."
-      >
-      </textarea>
+      ></textarea>
     </V-Control>
   </V-Field>
 </template>
@@ -38,8 +37,7 @@ const loading = ref(true)
   <V-Control loading>
     <textarea class="textarea" 
         rows="4" 
-        placeholder="A longer message...">
-    </textarea>
+        placeholder="A longer message..."></textarea>
   </V-Control>
 </V-Field>
 

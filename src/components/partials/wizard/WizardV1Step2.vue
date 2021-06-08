@@ -77,8 +77,7 @@ const onRemoveFile = (error: any, fileInfo: any) => {
                   class="textarea"
                   rows="4"
                   placeholder="Describe your project..."
-                >
-                </textarea>
+                ></textarea>
                 <p v-if="wizardData.description.length === 0" class="help">
                   Minimum of 50 characters
                 </p>

@@ -28,8 +28,7 @@ const textarea = ref('')
         class="textarea is-primary-focus"
         rows="2"
         placeholder="Primary..."
-      >
-      </textarea>
+      ></textarea>
     </V-Control>
   </V-Field>
 
@@ -41,8 +40,7 @@ const textarea = ref('')
         class="textarea is-success-focus"
         rows="2"
         placeholder="Success..."
-      >
-      </textarea>
+      ></textarea>
     </V-Control>
   </V-Field>
 
@@ -54,8 +52,7 @@ const textarea = ref('')
         class="textarea is-info-focus"
         rows="2"
         placeholder="Info..."
-      >
-      </textarea>
+      ></textarea>
     </V-Control>
   </V-Field>
 
@@ -67,8 +64,7 @@ const textarea = ref('')
         class="textarea is-warning-focus"
         rows="2"
         placeholder="Warning..."
-      >
-      </textarea>
+      ></textarea>
     </V-Control>
   </V-Field>
 
@@ -80,8 +76,7 @@ const textarea = ref('')
         class="textarea is-danger-focus"
         rows="2"
         placeholder="Danger..."
-      >
-      </textarea>
+      ></textarea>
     </V-Control>
   </V-Field>
 </template>
@@ -99,8 +94,7 @@ const textarea = ref('')
         class="textarea is-primary-focus"
         rows="2"
         placeholder="Primary..."
-      >
-      </textarea>
+      ></textarea>
     </V-Control>
   </V-Field>
   <V-Field>
@@ -110,8 +104,7 @@ const textarea = ref('')
         class="textarea is-success-focus"
         rows="2"
         placeholder="Success..."
-      >
-      </textarea>
+      ></textarea>
     </V-Control>
   </V-Field>
   <V-Field>
@@ -121,8 +114,7 @@ const textarea = ref('')
         class="textarea is-info-focus"
         rows="2"
         placeholder="Info..."
-      >
-      </textarea>
+      ></textarea>
     </V-Control>
   </V-Field>
   <V-Field>
@@ -132,8 +124,7 @@ const textarea = ref('')
         class="textarea is-warning-focus"
         rows="2"
         placeholder="Warning..."
-      >
-      </textarea>
+      ></textarea>
     </V-Control>
   </V-Field>
   <V-Field>
@@ -143,8 +134,7 @@ const textarea = ref('')
         class="textarea is-danger-focus"
         rows="2"
         placeholder="Danger..."
-      >
-      </textarea>
+      ></textarea>
     </V-Control>
   </V-Field>
 </div>

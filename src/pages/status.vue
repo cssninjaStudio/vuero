@@ -261,24 +261,11 @@ useHead({
         <div class="status-tweets">
           <div class="updates">
             <div class="update">
-              <div class="v-avatar">
-                <img
-                  class="avatar"
-                  src="/images/logos/logo/hanzo.svg"
-                  alt=""
-                  @error.once="
-                    $event.target.src = 'https://via.placeholder.com/150x150'
-                  "
-                />
-                <img
-                  class="badge"
-                  src="/images/icons/stacks/html5.svg"
-                  alt=""
-                  @error.once="
-                    $event.target.src = 'https://via.placeholder.com/150x150'
-                  "
-                />
-              </div>
+              <V-Avatar
+                picture="/images/logos/logo/hanzo.svg"
+                badge="/images/icons/stacks/html5.svg"
+              />
+
               <div class="update-content">
                 <div class="timestamp">July 29 at 5:39pm</div>
                 <div class="tweet">
@@ -289,24 +276,11 @@ useHead({
               </div>
             </div>
             <div class="update">
-              <div class="v-avatar">
-                <img
-                  class="avatar"
-                  src="/images/logos/logo/hanzo.svg"
-                  alt=""
-                  @error.once="
-                    $event.target.src = 'https://via.placeholder.com/150x150'
-                  "
-                />
-                <img
-                  class="badge"
-                  src="/images/icons/stacks/html5.svg"
-                  alt=""
-                  @error.once="
-                    $event.target.src = 'https://via.placeholder.com/150x150'
-                  "
-                />
-              </div>
+              <V-Avatar
+                picture="/images/logos/logo/hanzo.svg"
+                badge="/images/icons/stacks/html5.svg"
+              />
+
               <div class="update-content">
                 <div class="timestamp">July 23 at 9:21pm</div>
                 <div class="tweet">

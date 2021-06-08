@@ -15,24 +15,12 @@ useHead({
       <div class="column is-12">
         <div class="hub-wrapper">
           <div class="hub-header has-text-centered">
-            <div class="v-avatar is-xl">
-              <img
-                class="avatar"
-                src="/images/avatars/svg/vuero-2.svg"
-                alt=""
-                @error.once="
-                  $event.target.src = 'https://via.placeholder.com/150x150'
-                "
-              />
-              <img
-                class="badge"
-                src="/demo/photos/misc/buoy.jpg"
-                alt=""
-                @error.once="
-                  $event.target.src = 'https://via.placeholder.com/150x150'
-                "
-              />
-            </div>
+            <V-Avatar
+              size="xl"
+              picture="/images/avatars/svg/vuero-2.svg"
+              badge="/demo/photos/misc/buoy.jpg"
+            />
+
             <h3 class="title is-4 is-narrow is-thin">Vuero Components</h3>
             <p class="light-text">
               This is the Vuero components library with detailed code examples.

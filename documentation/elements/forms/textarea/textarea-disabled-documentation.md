@@ -29,8 +29,7 @@ const disabled = ref(true)
         rows="4"
         placeholder="A longer message..."
         :disabled="disabled"
-      >
-      </textarea>
+      ></textarea>
     </V-Control>
   </V-Field>
 </template>
@@ -48,8 +47,7 @@ const disabled = ref(true)
       rows="4"
       placeholder="A longer message..."
       :disabled="frontmatter.state.disabled"
-    >
-    </textarea>
+    ></textarea>
   </V-Control>
 </V-Field>
 

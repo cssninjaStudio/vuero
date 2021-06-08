@@ -12,6 +12,5 @@ useHead({
 <template>
   <div class="page-content-inner">
     <ProjectDetailsV1 />
-    <!-- <TaskPanel /> -->
   </div>
 </template>

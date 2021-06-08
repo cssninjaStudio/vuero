@@ -27,8 +27,7 @@ const textarea = ref('')
         class="textarea"
         rows="4"
         placeholder="A longer message..."
-      >
-      </textarea>
+      ></textarea>
     </V-Control>
 
     <V-Control textaddon>
@@ -58,8 +57,7 @@ const textarea = ref('')
       class="textarea"
       rows="4"
       placeholder="A longer message..."
-    >
-    </textarea>
+    ></textarea>
   </V-Control>
   <V-Control textaddon>
     <div class="start">

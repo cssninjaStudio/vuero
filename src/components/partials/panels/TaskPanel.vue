@@ -39,36 +39,9 @@ import { activePanel } from '/@src/state/activePanelState'
 
             <div class="participants-inner">
               <div class="avatar-stack">
-                <div class="v-avatar">
-                  <img
-                    class="avatar"
-                    src="/demo/avatars/7.jpg"
-                    alt=""
-                    @error.once="
-                      $event.target.src = 'https://via.placeholder.com/150x150'
-                    "
-                  />
-                </div>
-                <div class="v-avatar">
-                  <img
-                    class="avatar"
-                    src="/demo/avatars/8.jpg"
-                    alt=""
-                    @error.once="
-                      $event.target.src = 'https://via.placeholder.com/150x150'
-                    "
-                  />
-                </div>
-                <div class="v-avatar">
-                  <img
-                    class="avatar"
-                    src="/demo/avatars/5.jpg"
-                    alt=""
-                    @error.once="
-                      $event.target.src = 'https://via.placeholder.com/150x150'
-                    "
-                  />
-                </div>
+                <V-Avatar picture="/demo/avatars/7.jpg" />
+                <V-Avatar picture="/demo/avatars/8.jpg" />
+                <V-Avatar picture="/demo/avatars/5.jpg" />
               </div>
 
               <button>
@@ -167,23 +140,12 @@ import { activePanel } from '/@src/state/activePanelState'
                 class="textarea"
                 rows="3"
                 placeholder="Send a quick message..."
-              >
-              </textarea>
+              ></textarea>
             </div>
             <div class="control is-textarea-addon">
               <div class="start">
                 <div class="avatar-stack">
-                  <div class="v-avatar is-small">
-                    <img
-                      class="avatar"
-                      src="/demo/avatars/8.jpg"
-                      alt=""
-                      @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/150x150'
-                      "
-                    />
-                  </div>
+                  <V-Avatar size="small" picture="/demo/avatars/8.jpg" />
                 </div>
               </div>
               <div class="end">

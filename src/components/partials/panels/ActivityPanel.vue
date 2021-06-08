@@ -51,24 +51,11 @@ const activeTab = ref<TabId>('team')
           >
             <!--Team Member-->
             <div class="team-card">
-              <div class="v-avatar">
-                <img
-                  class="avatar"
-                  src="/demo/avatars/12.jpg"
-                  alt=""
-                  @error.once="
-                    $event.target.src = 'https://via.placeholder.com/150x150'
-                  "
-                />
-                <img
-                  class="badge"
-                  src="/images/icons/flags/united-states-of-america.svg"
-                  alt=""
-                  @error.once="
-                    $event.target.src = 'https://via.placeholder.com/150x150'
-                  "
-                />
-              </div>
+              <V-Avatar
+                picture="/demo/avatars/12.jpg"
+                badge="/images/icons/flags/united-states-of-america.svg"
+              />
+
               <div class="meta">
                 <span>Joshua S.</span>
                 <span>
@@ -91,24 +78,11 @@ const activeTab = ref<TabId>('team')
 
             <!--Team Member-->
             <div class="team-card">
-              <div class="v-avatar">
-                <img
-                  class="avatar"
-                  src="/demo/avatars/25.jpg"
-                  alt=""
-                  @error.once="
-                    $event.target.src = 'https://via.placeholder.com/150x150'
-                  "
-                />
-                <img
-                  class="badge"
-                  src="/images/icons/flags/united-states-of-america.svg"
-                  alt=""
-                  @error.once="
-                    $event.target.src = 'https://via.placeholder.com/150x150'
-                  "
-                />
-              </div>
+              <V-Avatar
+                picture="/demo/avatars/25.jpg"
+                badge="/images/icons/flags/united-states-of-america.svg"
+              />
+
               <div class="meta">
                 <span>Melany W.</span>
                 <span>
@@ -131,24 +105,11 @@ const activeTab = ref<TabId>('team')
 
             <!--Team Member-->
             <div class="team-card">
-              <div class="v-avatar">
-                <img
-                  class="avatar"
-                  src="/demo/avatars/18.jpg"
-                  alt=""
-                  @error.once="
-                    $event.target.src = 'https://via.placeholder.com/150x150'
-                  "
-                />
-                <img
-                  class="badge"
-                  src="/images/icons/flags/united-states-of-america.svg"
-                  alt=""
-                  @error.once="
-                    $event.target.src = 'https://via.placeholder.com/150x150'
-                  "
-                />
-              </div>
+              <V-Avatar
+                picture="/demo/avatars/18.jpg"
+                badge="/images/icons/flags/united-states-of-america.svg"
+              />
+
               <div class="meta">
                 <span>Esteban C.</span>
                 <span>
@@ -171,24 +132,11 @@ const activeTab = ref<TabId>('team')
 
             <!--Team Member-->
             <div class="team-card">
-              <div class="v-avatar">
-                <img
-                  class="avatar"
-                  src="/demo/avatars/13.jpg"
-                  alt=""
-                  @error.once="
-                    $event.target.src = 'https://via.placeholder.com/150x150'
-                  "
-                />
-                <img
-                  class="badge"
-                  src="/images/icons/flags/united-states-of-america.svg"
-                  alt=""
-                  @error.once="
-                    $event.target.src = 'https://via.placeholder.com/150x150'
-                  "
-                />
-              </div>
+              <V-Avatar
+                picture="/demo/avatars/13.jpg"
+                badge="/images/icons/flags/united-states-of-america.svg"
+              />
+
               <div class="meta">
                 <span>Tara S.</span>
                 <span>
@@ -250,39 +198,9 @@ const activeTab = ref<TabId>('team')
                   <span>5 / 24</span>
 
                   <div class="avatar-stack">
-                    <div class="v-avatar is-small">
-                      <img
-                        class="avatar"
-                        src="/demo/avatars/7.jpg"
-                        alt=""
-                        @error.once="
-                          $event.target.src =
-                            'https://via.placeholder.com/150x150'
-                        "
-                      />
-                    </div>
-                    <div class="v-avatar is-small">
-                      <img
-                        class="avatar"
-                        src="/demo/avatars/5.jpg"
-                        alt=""
-                        @error.once="
-                          $event.target.src =
-                            'https://via.placeholder.com/150x150'
-                        "
-                      />
-                    </div>
-                    <div class="v-avatar is-small">
-                      <img
-                        class="avatar"
-                        src="/demo/avatars/8.jpg"
-                        alt=""
-                        @error.once="
-                          $event.target.src =
-                            'https://via.placeholder.com/150x150'
-                        "
-                      />
-                    </div>
+                    <V-Avatar size="small" picture="/demo/avatars/5.jpg" />
+                    <V-Avatar size="small" picture="/demo/avatars/7.jpg" />
+                    <V-Avatar size="small" picture="/demo/avatars/8.jpg" />
                   </div>
                 </div>
               </div>
@@ -323,28 +241,8 @@ const activeTab = ref<TabId>('team')
                   <span>28 / 31</span>
 
                   <div class="avatar-stack">
-                    <div class="v-avatar is-small">
-                      <img
-                        class="avatar"
-                        src="/demo/avatars/13.jpg"
-                        alt=""
-                        @error.once="
-                          $event.target.src =
-                            'https://via.placeholder.com/150x150'
-                        "
-                      />
-                    </div>
-                    <div class="v-avatar is-small">
-                      <img
-                        class="avatar"
-                        src="/demo/avatars/18.jpg"
-                        alt=""
-                        @error.once="
-                          $event.target.src =
-                            'https://via.placeholder.com/150x150'
-                        "
-                      />
-                    </div>
+                    <V-Avatar size="small" picture="/demo/avatars/13.jpg" />
+                    <V-Avatar size="small" picture="/demo/avatars/18.jpg" />
                   </div>
                 </div>
               </div>
@@ -385,28 +283,8 @@ const activeTab = ref<TabId>('team')
                   <span>25 / 39</span>
 
                   <div class="avatar-stack">
-                    <div class="v-avatar is-small">
-                      <img
-                        class="avatar"
-                        src="/demo/avatars/7.jpg"
-                        alt=""
-                        @error.once="
-                          $event.target.src =
-                            'https://via.placeholder.com/150x150'
-                        "
-                      />
-                    </div>
-                    <div class="v-avatar is-small">
-                      <img
-                        class="avatar"
-                        src="/demo/avatars/25.jpg"
-                        alt=""
-                        @error.once="
-                          $event.target.src =
-                            'https://via.placeholder.com/150x150'
-                        "
-                      />
-                    </div>
+                    <V-Avatar size="small" picture="/demo/avatars/7.jpg" />
+                    <V-Avatar size="small" picture="/demo/avatars/25.jpg" />
                   </div>
                 </div>
               </div>

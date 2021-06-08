@@ -187,16 +187,8 @@ watch(
           <div class="dropdown-menu" role="menu">
             <div class="dropdown-content">
               <div class="dropdown-head">
-                <div class="v-avatar is-large">
-                  <img
-                    class="avatar"
-                    src="/demo/avatars/8.jpg"
-                    alt=""
-                    @error.once="
-                      $event.target.src = 'https://via.placeholder.com/150x150'
-                    "
-                  />
-                </div>
+                <V-Avatar size="large" picture="/demo/avatars/8.jpg" />
+
                 <div class="meta">
                   <span>Erik Kovalsky</span>
                   <span>Product Manager</span>
@@ -346,6 +338,7 @@ watch(
 
     <LanguagesPanel />
     <ActivityPanel />
+    <TaskPanel />
 
     <div class="view-wrapper has-top-nav">
       <div class="page-content-wrapper">

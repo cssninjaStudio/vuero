@@ -325,6 +325,7 @@ watch(
 
     <LanguagesPanel />
     <ActivityPanel />
+    <TaskPanel />
 
     <div class="view-wrapper has-top-nav">
       <div class="page-content-wrapper">

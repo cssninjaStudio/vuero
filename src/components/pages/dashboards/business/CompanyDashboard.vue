@@ -78,33 +78,24 @@ onMounted(async () => {
     <div class="columns is-multiline">
       <div class="column is-4">
         <div class="dashboard-card is-company">
-          <div class="v-avatar is-big">
-            <img
-              class="avatar light-image"
-              src="/demo/photos/brands/udemy.svg"
-              alt=""
-              @error.once="
-                $event.target.src = 'https://via.placeholder.com/150x150'
-              "
-            />
-            <img
-              class="avatar dark-image"
-              src="/demo/photos/brands/udemy-dark.svg"
-              alt=""
-              @error.once="
-                $event.target.src = 'https://via.placeholder.com/150x150'
-              "
-            />
-            <button class="button icon-button is-circle is-dark-outlined">
-              <span class="icon is-small">
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:plus"
-                ></i>
-              </span>
-            </button>
-          </div>
+          <V-Avatar
+            size="big"
+            picture="/demo/photos/brands/udemy.svg"
+            picture-dark="/demo/photos/brands/udemy-dark.svg"
+          >
+            <template #badge>
+              <button class="button icon-button is-circle is-dark-outlined">
+                <span class="icon is-small">
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:plus"
+                  ></i>
+                </span>
+              </button>
+            </template>
+          </V-Avatar>
+
           <h3 class="dark-inverted">U Learning</h3>
           <p>Online Courses</p>
           <div class="description">

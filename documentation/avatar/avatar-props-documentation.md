@@ -9,6 +9,7 @@ Here is the full props available for `<V-Avatar />` component:
 | Props       | Default                                                            | Type                                                                                                                |
 | ----------- | ------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------- |
 | picture     | <span class="is-undefined">`undefined`</span>                      | string                                                                                                              |
+| pictureDark | <span class="is-undefined">`undefined`</span>                      | string                                                                                                              |
 | badge       | <span class="is-undefined">`undefined`</span>                      | string                                                                                                              |
 | placeholder | <span class="is-string">`https://via.placeholder.com/50x50`</span> | string                                                                                                              |
 | initials    | <span class="is-string">`?`</span>                                 | string                                                                                                              |

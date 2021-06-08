@@ -92,8 +92,7 @@ const dropdown = useDropdown(dropdownElement)
               class="textarea"
               rows="9"
               placeholder="Write your message..."
-            >
-            </textarea>
+            ></textarea>
             <button type="button" class="button send-button">
               Send Message
             </button>

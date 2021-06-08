@@ -86,50 +86,52 @@ const onSave = async () => {
           <p>This is how others will recognize you</p>
         </div>
 
-        <div class="v-avatar profile-v-avatar is-xl">
-          <img
-            v-if="!isUploading"
-            class="avatar"
-            src="/demo/avatars/8.jpg"
-            alt=""
-            @error.once="
-              $event.target.src = 'https://via.placeholder.com/150x150'
-            "
-          />
-          <V-FilePond
-            v-else
-            class="profile-filepond"
-            name="profile_filepond"
-            :chunk-retry-delays="[500, 1000, 3000]"
-            label-idle="<i class='lnil lnil-cloud-upload'></i>"
-            :accepted-file-types="['image/png', 'image/jpeg', 'image/gif']"
-            :image-preview-height="140"
-            :image-resize-target-width="140"
-            :image-resize-target-height="140"
-            image-crop-aspect-ratio="1:1"
-            style-panel-layout="compact circle"
-            style-load-indicator-position="center bottom"
-            style-progress-indicator-position="right bottom"
-            style-button-remove-item-position="left bottom"
-            style-button-process-item-position="right bottom"
-            @addfile="onAddFile"
-            @removefile="onRemoveFile"
-          />
-          <V-IconButton
-            v-if="!isUploading"
-            icon="feather:edit-2"
-            class="edit-button is-edit"
-            circle
-            @click="isUploading = true"
-          />
-          <V-IconButton
-            v-else
-            icon="feather:arrow-left"
-            class="edit-button is-back"
-            circle
-            @click="isUploading = false"
-          />
-        </div>
+        <V-Avatar size="xl" class="profile-v-avatar">
+          <template #avatar>
+            <img
+              v-if="!isUploading"
+              class="avatar"
+              src="/demo/avatars/8.jpg"
+              alt=""
+              @error.once="
+                $event.target.src = 'https://via.placeholder.com/150x150'
+              "
+            />
+            <V-FilePond
+              v-else
+              class="profile-filepond"
+              name="profile_filepond"
+              :chunk-retry-delays="[500, 1000, 3000]"
+              label-idle="<i class='lnil lnil-cloud-upload'></i>"
+              :accepted-file-types="['image/png', 'image/jpeg', 'image/gif']"
+              :image-preview-height="140"
+              :image-resize-target-width="140"
+              :image-resize-target-height="140"
+              image-crop-aspect-ratio="1:1"
+              style-panel-layout="compact circle"
+              style-load-indicator-position="center bottom"
+              style-progress-indicator-position="right bottom"
+              style-button-remove-item-position="left bottom"
+              style-button-process-item-position="right bottom"
+              @addfile="onAddFile"
+              @removefile="onRemoveFile"
+            />
+            <V-IconButton
+              v-if="!isUploading"
+              icon="feather:edit-2"
+              class="edit-button is-edit"
+              circle
+              @click="isUploading = true"
+            />
+            <V-IconButton
+              v-else
+              icon="feather:arrow-left"
+              class="edit-button is-back"
+              circle
+              @click="isUploading = false"
+            />
+          </template>
+        </V-Avatar>
       </div>
 
       <!--Fieldset-->
@@ -203,8 +205,7 @@ const onSave = async () => {
                   autocomplete="off"
                   autocapitalize="off"
                   spellcheck="true"
-                >
-                </textarea>
+                ></textarea>
               </V-Control>
             </V-Field>
           </div>

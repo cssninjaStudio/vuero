@@ -334,6 +334,7 @@ watch(
     <LanguagesPanel />
     <ActivityPanel />
     <SearchPanel />
+    <TaskPanel />
 
     <div class="view-wrapper">
       <div class="page-content-wrapper">
