@@ -1,20 +1,21 @@
 <script setup lang="ts">
+import { ref } from 'vue'
 import useDropdown from '/@src/composable/useDropdown'
 
-const { dropdownElement, isOpen, toggle } = useDropdown()
+const dropdownElement = ref<HTMLElement | null>(null)
+const dropdown = useDropdown(dropdownElement)
 </script>
 
 <template>
   <div
     ref="dropdownElement"
-    :class="[isOpen && 'is-active']"
     class="
       navbar-item
       has-dropdown
       is-notification is-hidden-tablet is-hidden-desktop
     "
   >
-    <a class="navbar-link is-arrowless" @click="toggle">
+    <a class="navbar-link is-arrowless" @click="dropdown.toggle">
       <i aria-hidden="true" class="iconify" data-icon="feather:bell"></i>
       <span class="new-indicator pulsate"></span>
     </a>

@@ -527,76 +527,6 @@ useHead({
   }
 }
 
-/* ==========================================================================
-2. Login page Dark mode
-========================================================================== */
-
-.is-dark {
-  .modern-login {
-    background: $dark-sidebar;
-
-    .underlay {
-      background: lighten($dark-sidebar, 10%);
-    }
-
-    .is-image {
-      border-color: lighten($dark-sidebar, 10%);
-    }
-
-    .is-form {
-      .form-text {
-        h2 {
-          color: $accent;
-        }
-      }
-
-      .login-wrapper {
-        .control {
-          &.is-flex {
-            a:hover {
-              color: $accent;
-            }
-          }
-
-          .input {
-            background: lighten($dark-sidebar, 4%);
-
-            &:focus {
-              border-color: $accent;
-
-              ~ .autv-icon {
-                i {
-                  color: $accent;
-                }
-              }
-            }
-          }
-
-          .auth-label {
-            color: $light-text;
-          }
-        }
-
-        .button-wrap {
-          &.has-help {
-            span {
-              color: $light-text;
-
-              a {
-                color: $accent;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-/* ==========================================================================
-3. Remember me toggle
-========================================================================== */
-
 .remember-toggle {
   width: 65px;
   display: block;
@@ -719,10 +649,69 @@ useHead({
 }
 
 /* ==========================================================================
-3. Remember me toggle Dark mode
+Dark mode
 ========================================================================== */
 
 .is-dark {
+  .modern-login {
+    background: $dark-sidebar;
+
+    .underlay {
+      background: lighten($dark-sidebar, 10%);
+    }
+
+    .is-image {
+      border-color: lighten($dark-sidebar, 10%);
+    }
+
+    .is-form {
+      .form-text {
+        h2 {
+          color: $accent;
+        }
+      }
+
+      .login-wrapper {
+        .control {
+          &.is-flex {
+            a:hover {
+              color: $accent;
+            }
+          }
+
+          .input {
+            background: lighten($dark-sidebar, 4%);
+
+            &:focus {
+              border-color: $accent;
+
+              ~ .autv-icon {
+                i {
+                  color: $accent;
+                }
+              }
+            }
+          }
+
+          .auth-label {
+            color: $light-text;
+          }
+        }
+
+        .button-wrap {
+          &.has-help {
+            span {
+              color: $light-text;
+
+              a {
+                color: $accent;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
   .remember-toggle {
     input {
       &:checked + .toggler {

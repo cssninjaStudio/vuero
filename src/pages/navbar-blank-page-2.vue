@@ -12,7 +12,9 @@
  */
 
 import { useHead } from '@vueuse/head'
+import { pageTitle } from '/@src/state/navbarLayoutState'
 
+pageTitle.value = 'Blank Page 2'
 useHead({
   title: 'Blank Page 2 - Navbar - Vuero',
 })

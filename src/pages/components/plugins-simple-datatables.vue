@@ -1,8 +1,7 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
-import { onBeforeUnmount, onMounted } from 'vue'
+import { onBeforeUnmount, onMounted, ref } from 'vue'
 
-import { ref } from 'vue'
 import useMarkdownToc from '/@src/composable/useMarkdownToc'
 
 import { optionsBase } from '/@src/data/documentation/v-datatable/simple-datatable'
@@ -97,11 +96,13 @@ useHead({
           <V-SimpleDatatables>
             <thead>
               <tr>
-                <th>Name</th>
-                <th>Ext.</th>
-                <th>City</th>
-                <th data-type="date" data-format="YYYY/MM/DD">Start Date</th>
-                <th>Completion</th>
+                <th scope="col">Name</th>
+                <th scope="col">Ext.</th>
+                <th scope="col">City</th>
+                <th scope="col" data-type="date" data-format="YYYY/MM/DD">
+                  Start Date
+                </th>
+                <th scope="col">Completion</th>
               </tr>
             </thead>
             <tbody>

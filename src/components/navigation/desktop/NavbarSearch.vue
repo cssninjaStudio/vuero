@@ -3,7 +3,6 @@ import type { PropType } from 'vue'
 import { computed, defineProps } from 'vue'
 import { useRoute } from 'vue-router'
 
-import useDropdown from '/@src/composable/useDropdown'
 import { useWindowScroll } from '@vueuse/core'
 
 type NavbarSearchTheme = 'default' | 'center' | 'fade'
@@ -16,7 +15,6 @@ const props = defineProps({
 })
 
 const route = useRoute()
-const { dropdownElement, isOpen, toggle } = useDropdown()
 const { y } = useWindowScroll()
 
 const isScrolling = computed(() => {

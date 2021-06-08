@@ -3,10 +3,11 @@ import { isDark } from '/@src/state/darkModeState'
 import { activePanel } from '/@src/state/activePanelState'
 import useDropdown from '/@src/composable/useDropdown'
 import { useI18n } from 'vue-i18n'
-import { computed } from 'vue'
+import { computed, ref } from 'vue'
 
 const { locale } = useI18n()
-const { dropdownElement, isOpen, toggle } = useDropdown()
+const dropdownElement = ref<HTMLElement | null>(null)
+const dropdown = useDropdown(dropdownElement)
 
 const localFlagSrc = computed(() => {
   switch (locale.value) {
@@ -54,10 +55,9 @@ const localFlagSrc = computed(() => {
     <div class="toolbar-notifications is-hidden-mobile">
       <div
         ref="dropdownElement"
-        :class="[isOpen && 'is-active']"
         class="dropdown is-spaced is-dots is-right dropdown-trigger"
       >
-        <div class="is-trigger" aria-haspopup="true" @click="toggle">
+        <div class="is-trigger" aria-haspopup="true" @click="dropdown.toggle">
           <i aria-hidden="true" class="iconify" data-icon="feather:bell"></i>
           <span class="new-indicator pulsate"></span>
         </div>

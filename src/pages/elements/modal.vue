@@ -2,7 +2,6 @@
 import { useHead } from '@vueuse/head'
 import { ref } from 'vue'
 
-import { ref } from 'vue'
 import useMarkdownToc from '/@src/composable/useMarkdownToc'
 import { pageTitle } from '/@src/state/sidebarLayoutState'
 

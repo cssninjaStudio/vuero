@@ -132,6 +132,7 @@ const filteredData = computed(() => {
                 </div>
                 <div class="flex-table-cell" data-th="Main Skill">
                   <i
+                    aria-hidden="true"
                     class="cell-icon is-pushed-mobile"
                     :class="item.skill.icon"
                   ></i>

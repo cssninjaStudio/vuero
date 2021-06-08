@@ -14,8 +14,8 @@
     "forceConsistentCasingInFileNames": true,
     "lib": ["esnext", "dom"],
     "types": [
-      "node", 
-      "vite/client", 
+      "node",
+      "vite/client",
       "vite-plugin-pwa/client",
       "vite-plugin-pages/client",
       "@intlify/vite-plugin-vue-i18n/client"
@@ -26,10 +26,11 @@
     }
   },
   "include": [
-    "src/**/*.ts", 
-    "src/**/*.d.ts", 
-    "src/**/*.tsx", 
-    "src/**/*.vue", 
+    "src/**/*.js",
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
     "documentation/**/*.md"
   ]
 }

@@ -34,7 +34,7 @@ defineProps({
             $event.target.src = 'https://via.placeholder.com/150x150'
           "
         />
-        <i v-else class="iconify" :data-icon="item.icon"></i>
+        <i v-else aria-hidden="true" class="iconify" :data-icon="item.icon"></i>
       </div>
       <div class="timeline-content">
         <p>{{ item.title }}</p>

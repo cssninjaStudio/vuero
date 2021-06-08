@@ -58,6 +58,7 @@ defineProps({
             v-for="(star, index) in 5"
             :key="index"
             class="fas fa-star"
+            aria-hidden="true"
             :class="row.rating - index > 0 && 'selected'"
           ></i>
         </div>

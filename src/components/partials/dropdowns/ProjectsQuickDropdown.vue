@@ -1,15 +1,16 @@
 <script setup lang="ts">
+import { ref } from 'vue'
 import useDropdown from '/@src/composable/useDropdown'
-const { dropdownElement, isOpen, toggle } = useDropdown()
+const dropdownElement = ref<HTMLElement | null>(null)
+const dropdown = useDropdown(dropdownElement)
 </script>
 
 <template>
   <div
     ref="dropdownElement"
-    :class="[isOpen && 'is-active']"
     class="dropdown project-dropdown dropdown-trigger is-spaced"
   >
-    <div class="v-avatar is-small" @click="toggle">
+    <div class="v-avatar is-small" @click="dropdown.toggle">
       <span class="avatar is-fake is-h-green">
         <span>H</span>
       </span>

@@ -2,10 +2,8 @@
 import type { TinySliderInstance } from 'tiny-slider/src/tiny-slider'
 import { tns } from 'tiny-slider/src/tiny-slider'
 import { ref, onMounted, onUnmounted } from 'vue'
-import {
-  foodPills,
-  restaurants,
-} from '/@src/data/dashboards/food-delivery/dashboardData'
+
+import * as foodDelivery from '/@src/data/dashboards/food-delivery'
 import { followersStats } from '/@src/data/widgets/ui/followers'
 import { iconList } from '/@src/data/widgets/ui/menuList'
 
@@ -110,7 +108,7 @@ onUnmounted(() => {
             <div ref="sliderElement" class="food-pills-inner pill-carousel">
               <!--Pills Loop-->
               <div
-                v-for="(item, index) in foodPills"
+                v-for="(item, index) in foodDelivery.foodPills"
                 :key="item.id"
                 class="food-pill"
                 @click="goTo(index)"
@@ -127,7 +125,7 @@ onUnmounted(() => {
             <div class="columns is-multiline">
               <!--Restaurants Loop-->
               <div
-                v-for="restaurant in restaurants"
+                v-for="restaurant in foodDelivery.restaurants"
                 :key="restaurant.id"
                 class="column is-4"
               >
@@ -558,28 +556,6 @@ onUnmounted(() => {
           }
         }
 
-        .slick-custom {
-          outline: none !important;
-
-          &.is-prev {
-            right: 30px;
-
-            i {
-              position: relative;
-              left: -1px;
-            }
-          }
-
-          &.is-next {
-            right: 0;
-
-            i {
-              position: relative;
-              right: -1px;
-            }
-          }
-        }
-
         .slick-prev::before,
         .slick-next::before {
           color: $muted-grey;
@@ -600,18 +576,37 @@ onUnmounted(() => {
           color: $light-text;
           transition: all 0.3s;
           z-index: 25;
+          outline: none !important;
 
-          svg {
-            height: 16px;
-            width: 16px;
-            color: $primary;
-            transition: all 0.3s;
+          &.is-prev {
+            right: 30px;
+
+            i {
+              position: relative;
+              left: -1px;
+            }
+          }
+
+          &.is-next {
+            right: 0;
+
+            i {
+              position: relative;
+              right: -1px;
+            }
           }
 
           &:hover {
             border-color: darken($fade-grey, 4%);
             background: $white;
             box-shadow: $light-box-shadow;
+          }
+
+          svg {
+            height: 16px;
+            width: 16px;
+            color: $primary;
+            transition: all 0.3s;
           }
         }
       }

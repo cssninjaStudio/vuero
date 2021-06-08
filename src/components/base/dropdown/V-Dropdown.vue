@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { defineProps } from 'vue'
+import { defineProps, ref } from 'vue'
 import useDropdown from '/@src/composable/useDropdown'
 
 defineProps({
@@ -29,14 +29,14 @@ defineProps({
   },
 })
 
-const { dropdownElement, open, close, toggle, isOpen } = useDropdown()
+const dropdownElement = ref<HTMLElement | null>(null)
+const dropdown = useDropdown(dropdownElement)
 </script>
 
 <template inherit-attrs="false">
   <div
     ref="dropdownElement"
     :class="[
-      isOpen && 'is-active',
       right && 'is-right',
       up && 'is-up',
       dots && 'is-dots',
@@ -45,17 +45,15 @@ const { dropdownElement, open, close, toggle, isOpen } = useDropdown()
     ]"
     class="dropdown dropdown-trigger"
   >
-    <slot
-      name="button"
-      :open="open"
-      :close="close"
-      :toggle="toggle"
-      :is-open="isOpen"
-    >
-      <button v-bind="$attrs" class="is-trigger button" @click="toggle">
+    <slot name="button" v-bind="dropdown">
+      <button
+        v-bind="$attrs"
+        class="is-trigger button"
+        @click="dropdown.toggle"
+      >
         <span v-if="title">{{ title }}</span>
         <span :class="[!modern && 'base-caret', modern && 'base-caret']">
-          <V-Icon v-if="!isOpen" icon="fa:angle-down" />
+          <V-Icon v-if="!dropdown.isOpen" icon="fa:angle-down" />
           <V-Icon v-else icon="fa:angle-up" />
         </span>
       </button>

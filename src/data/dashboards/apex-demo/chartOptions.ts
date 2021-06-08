@@ -902,18 +902,18 @@ function generateData(
   yrange: { min: number; max: number }
 ) {
   let i = 0
-  const series = []
+  const _series = []
   while (i < count) {
     const x = Math.floor(Math.random() * (750 - 1 + 1)) + 1
     const y =
       Math.floor(Math.random() * (yrange.max - yrange.min + 1)) + yrange.min
     const z = Math.floor(Math.random() * (75 - 15 + 1)) + 15
 
-    series.push([x, y, z])
+    _series.push([x, y, z])
     baseval += 86400000
     i++
   }
-  return series
+  return _series
 }
 
 export const options15 = {

@@ -1,14 +1,14 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import useDropdown from '/@src/composable/useDropdown'
-const { dropdownElement, isOpen, toggle } = useDropdown()
+const dropdownElement = ref<HTMLElement | null>(null)
+const dropdown = useDropdown(dropdownElement)
 const selectedCategory = ref('')
 </script>
 
 <template>
   <div
     ref="dropdownElement"
-    :class="[isOpen && 'is-active']"
     class="dropdown is-modern is-spaced dropdown-trigger has-mega-dropdown"
   >
     <div class="is-trigger" aria-haspopup="true" aria-controls="dropdown-menu">
@@ -16,7 +16,7 @@ const selectedCategory = ref('')
         class="button v-button is-rounded"
         aria-haspopup="true"
         aria-controls="dropdown-menu"
-        @click="toggle"
+        @click="dropdown.toggle"
       >
         <span>Layouts</span>
         <span class="caret">

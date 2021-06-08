@@ -41,7 +41,7 @@ defineProps({
           ]"
           @click="currentTab = index"
         >
-          <i :class="button.icon"></i>
+          <i aria-hidden="true" :class="button.icon"></i>
         </a>
       </div>
     </div>

@@ -28,9 +28,9 @@ useHead({
         <span class="menu-toggle has-chevron">
           <span class="icon-box-toggle">
             <span class="rotate">
-              <i class="icon-line-top"></i>
-              <i class="icon-line-center"></i>
-              <i class="icon-line-bottom"></i>
+              <i aria-hidden="true" class="icon-line-top"></i>
+              <i aria-hidden="true" class="icon-line-center"></i>
+              <i aria-hidden="true" class="icon-line-bottom"></i>
             </span>
           </span>
         </span>

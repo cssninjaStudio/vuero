@@ -1,8 +1,6 @@
 <script setup lang="ts">
 import { defineEmit, defineProps } from 'vue'
-import useDropdown from '/@src/composable/useDropdown'
 
-const { dropdownElement, isOpen, toggle } = useDropdown()
 const props = defineProps({
   isOpen: {
     type: Boolean,

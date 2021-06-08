@@ -298,9 +298,6 @@ import { profitChartOptions } from '/@src/data/dashboards/personal-v1/profitChar
           }
         }
       }
-    }
-
-    .dashboard-card {
       &.is-gauge {
         position: relative;
 

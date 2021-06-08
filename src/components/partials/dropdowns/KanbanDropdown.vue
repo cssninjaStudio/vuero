@@ -1,18 +1,15 @@
 <script setup lang="ts">
 import { defineEmit } from 'vue'
 import useDropdown from '/@src/composable/useDropdown'
-const { dropdownElement, isOpen, toggle } = useDropdown()
+const dropdownElement = ref<HTMLElement | null>(null)
+const dropdown = useDropdown(dropdownElement)
 
 const emit = defineEmit(['rename', 'collapse'])
 </script>
 
 <template>
-  <div
-    ref="dropdownElement"
-    :class="[isOpen && 'is-active']"
-    class="dropdown is-right dropdown-trigger"
-  >
-    <div class="is-trigger" aria-haspopup="true" @click="toggle">
+  <div ref="dropdownElement" class="dropdown is-right dropdown-trigger">
+    <div class="is-trigger" aria-haspopup="true" @click="dropdown.toggle">
       <i
         aria-hidden="true"
         class="iconify"

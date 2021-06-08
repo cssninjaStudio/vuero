@@ -6,7 +6,7 @@ import { datatableV4 } from '/@src/data/layouts/datatable-v4'
   <V-SimpleDatatables>
     <thead>
       <tr>
-        <th data-sortable="false">
+        <th scope="col" data-sortable="false">
           <V-Control>
             <label class="checkbox is-primary is-outlined is-circle">
               <input id="head-checkbox" type="checkbox" />
@@ -14,12 +14,12 @@ import { datatableV4 } from '/@src/data/layouts/datatable-v4'
             </label>
           </V-Control>
         </th>
-        <th data-sortable="false">Type</th>
-        <th>Name</th>
-        <th>Size</th>
-        <th>Version</th>
-        <th>Last Updated</th>
-        <th data-sortable="false"></th>
+        <th scope="col" data-sortable="false">Type</th>
+        <th scope="col">Name</th>
+        <th scope="col">Size</th>
+        <th scope="col">Version</th>
+        <th scope="col">Last Updated</th>
+        <th scope="col" data-sortable="false"></th>
       </tr>
     </thead>
     <tbody>

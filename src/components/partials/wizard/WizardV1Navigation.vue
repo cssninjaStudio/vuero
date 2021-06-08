@@ -1,25 +1,19 @@
 <script setup lang="ts">
+import { ref } from 'vue'
 import useDropdown from '/@src/composable/useDropdown'
 import { currentStep, stepTitle } from '/@src/state/wizardState'
 import { isDark } from '/@src/state/darkModeState'
 
-const {
-  dropdownElement: dropdownElement1,
-  toggle: toggle1,
-  close: close1,
-  isOpen: isOpen1,
-} = useDropdown()
+const dropdownElement1 = ref<HTMLElement | null>(null)
+const dropdown1 = useDropdown(dropdownElement1)
 
-const {
-  dropdownElement: dropdownElement2,
-  toggle: toggle2,
-  isOpen: isOpen2,
-} = useDropdown()
+const dropdownElement2 = ref<HTMLElement | null>(null)
+const dropdown2 = useDropdown(dropdownElement2)
 
 const setStep = (target: number) => {
   if (currentStep.value >= target) {
     currentStep.value = target
-    close1()
+    dropdown1.close()
   }
 }
 </script>
@@ -30,7 +24,7 @@ const setStep = (target: number) => {
       <AnimatedLogo width="38px" height="38px" />
     </RouterLink>
 
-    <div class="navbar-item is-wizard-title" @click="toggle1">
+    <div class="navbar-item is-wizard-title" @click="dropdown1.toggle">
       <span class="title-wrap">
         Step {{ currentStep }}: <span>{{ stepTitle }}</span>
       </span>
@@ -38,10 +32,9 @@ const setStep = (target: number) => {
 
     <div
       ref="dropdownElement1"
-      :class="[isOpen1 && 'is-active']"
       class="dropdown wizard-dropdown dropdown-trigger"
     >
-      <div class="is-trigger" @click="toggle1">
+      <div class="is-trigger" @click="dropdown1.toggle">
         <i
           aria-hidden="true"
           class="iconify"
@@ -122,10 +115,9 @@ const setStep = (target: number) => {
 
     <div
       ref="dropdownElement2"
-      :class="[isOpen2 && 'is-active']"
       class="dropdown is-right dropdown-trigger user-dropdown"
     >
-      <div class="is-trigger" aria-haspopup="true" @click="toggle2">
+      <div class="is-trigger" aria-haspopup="true" @click="dropdown2.toggle">
         <div class="profile-avatar">
           <img
             class="avatar"

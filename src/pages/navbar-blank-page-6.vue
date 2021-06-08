@@ -12,14 +12,16 @@
  */
 
 import { useHead } from '@vueuse/head'
+import { pageTitle } from '/@src/state/navbarLayoutState'
 
+pageTitle.value = 'Blank Page 6'
 useHead({
   title: 'Blank Page 6 - Navbar - Vuero',
 })
 </script>
 
 <template>
-  <NavbarSearch>
+  <NavbarSearchLayout>
     <!-- Content Wrapper -->
     <div class="view-wrapper has-top-nav">
       <div class="page-content-wrapper">
@@ -45,5 +47,5 @@ useHead({
         </div>
       </div>
     </div>
-  </NavbarSearch>
+  </NavbarSearchLayout>
 </template>

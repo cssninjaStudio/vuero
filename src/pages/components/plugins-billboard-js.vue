@@ -4,7 +4,7 @@ import { radar } from 'billboard.js'
 
 import { ref } from 'vue'
 import useMarkdownToc from '/@src/composable/useMarkdownToc'
-import { splineSimpleOptions } from '/@src/data/dashboards/billboardjs-demo/splineSimple'
+import * as splineSimple from '/@src/data/dashboards/billboardjs-demo/splineSimple'
 import { themeColors } from '/@src/utils/themeColors'
 import { pageTitle } from '/@src/state/sidebarLayoutState'
 
@@ -109,7 +109,7 @@ useHead({
           </div>
           <div class="column is-6">
             <V-Card type="smooth">
-              <V-BillboardJS :options="splineSimpleOptions" />
+              <V-BillboardJS :options="splineSimple.options" />
             </V-Card>
           </div>
         </div>

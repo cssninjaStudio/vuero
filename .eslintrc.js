@@ -6,6 +6,8 @@ module.exports = {
   },
   parserOptions: {
     parser: '@typescript-eslint/parser',
+    sourceType: 'module',
+    tsconfigRootDir: __dirname,
   },
   extends: [
     'plugin:@typescript-eslint/eslint-recommended',

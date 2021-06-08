@@ -31,17 +31,11 @@ const toggleSelection = () => {
   }
 }
 
-const {
-  dropdownElement: dropdownElement1,
-  toggle: toggle1,
-  isOpen: isOpen1,
-} = useDropdown()
+const dropdownElement1 = ref<HTMLElement | null>(null)
+const dropdown1 = useDropdown(dropdownElement1)
 
-const {
-  dropdownElement: dropdownElement2,
-  toggle: toggle2,
-  isOpen: isOpen2,
-} = useDropdown()
+const dropdownElement2 = ref<HTMLElement | null>(null)
+const dropdown2 = useDropdown(dropdownElement2)
 
 watch(selectedConversationId, () => {
   mobileMessageOpen.value = true
@@ -84,11 +78,10 @@ useHead({
             </div>
             <div
               ref="dropdownElement1"
-              :class="[isOpen1 && 'is-active']"
               class="dropdown inbox-dropdown dropdown-trigger is-right"
             >
               <div>
-                <button class="button" @click="toggle1">
+                <button class="button" @click="dropdown1.toggle">
                   <span class="icon is-small">
                     <i
                       aria-hidden="true"
@@ -391,11 +384,10 @@ useHead({
 
               <div
                 ref="dropdownElement2"
-                :class="[isOpen2 && 'is-active']"
                 class="dropdown inbox-dropdown dropdown-trigger is-right"
               >
                 <div>
-                  <button class="button" @click="toggle2">
+                  <button class="button" @click="dropdown2.toggle">
                     <span class="icon is-small">
                       <i
                         aria-hidden="true"
@@ -526,14 +518,6 @@ useHead({
 
 <style lang="scss">
 @import '../scss/abstracts/_variables.scss';
-
-/* ==========================================================================
-Inbox Layouts
-========================================================================== */
-
-/*
-    1. Inbox V1
-*/
 
 /* ==========================================================================
 1. Inbox V1 Layout
@@ -1272,7 +1256,240 @@ Inbox Layouts
 }
 
 /* ==========================================================================
-1. Inbox V1 Layout Dark mode
+1. Inbox action
+========================================================================== */
+
+.inbox-action {
+  height: 36px;
+  width: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: none;
+  border-radius: $radius-rounded;
+  border: 1px solid transparent;
+  transition: all 0.3s;
+
+  &:hover {
+    border-color: darken($fade-grey, 4%);
+    box-shadow: $light-box-shadow;
+
+    svg {
+      color: $primary;
+    }
+  }
+
+  &.is-checked {
+    border-color: darken($fade-grey, 3%);
+    box-shadow: $light-box-shadow;
+  }
+
+  svg {
+    height: 16px;
+    width: 16px;
+    stroke-width: 1.6px;
+    color: $light-text;
+  }
+
+  i {
+    padding: 0;
+    transition: color 0.3s;
+  }
+}
+
+/* ==========================================================================
+2. Dropdown
+========================================================================== */
+
+.inbox-dropdown {
+  div > .button {
+    height: 36px;
+    width: 36px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: none !important;
+    border-radius: $radius-rounded;
+    background: transparent;
+    border: 1px solid transparent;
+
+    &:hover {
+      border-color: darken($fade-grey, 4%);
+      box-shadow: $light-box-shadow !important;
+    }
+
+    i {
+      padding: 0;
+    }
+
+    svg {
+      height: 16px;
+      width: 16px;
+      color: $light-text;
+    }
+  }
+
+  .dropdown-menu {
+    width: 180px;
+
+    .dropdown-item {
+      display: flex;
+      align-items: center;
+      font-size: 1rem;
+      font-family: $font;
+      margin-bottom: 4px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+
+      i {
+        color: $light-text;
+      }
+
+      svg {
+        height: 16px;
+        width: 16px;
+        color: $light-text;
+      }
+
+      span {
+        margin-left: 12px;
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+3. Compose Panel
+========================================================================== */
+
+.compose-panel {
+  position: fixed;
+  top: 65px;
+  right: 0;
+  height: calc(100% - 65px);
+  width: calc(48% - 40px);
+  background: $white;
+  border-left: 1px solid $fade-grey;
+  z-index: 10;
+  transform: translateX(100%);
+  transition: all 0.3s;
+
+  &.is-active {
+    transform: translateX(0);
+  }
+
+  .header-area {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid darken($fade-grey, 3%);
+    padding: 0 20px;
+
+    .panel-title {
+      font-family: $font;
+      font-size: 1.4rem;
+      color: $dark-text;
+    }
+
+    .dropdown {
+      margin-left: 6px;
+    }
+
+    .inbox-action {
+      margin-left: auto;
+    }
+  }
+
+  .panel-inner {
+    position: relative;
+    height: calc(100% - 80px);
+    width: 100%;
+    overflow-y: auto;
+    padding: 60px;
+
+    .field-wrap {
+      width: 100%;
+      margin-bottom: 20px;
+
+      .field {
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        label {
+          display: block;
+          font-weight: 600;
+          font-size: 1.1rem;
+          text-align: right;
+          color: $dark-text;
+          margin-right: 20px;
+          min-width: 60px;
+        }
+
+        .control {
+          position: relative;
+          width: 100%;
+
+          .compose-input {
+            height: 38px;
+            font-size: 1.1rem;
+          }
+
+          .textarea {
+            font-size: 1.1rem;
+            box-shadow: none !important;
+            padding-bottom: 54px;
+          }
+
+          .send-button {
+            position: absolute;
+            height: 38px;
+            bottom: 8px;
+            right: 8px;
+            background: $secondary;
+            border-color: $secondary;
+            color: $smoke-white;
+            font-weight: 500;
+
+            &:hover {
+              box-shadow: $secondary-box-shadow;
+            }
+          }
+
+          .attacv-button {
+            position: absolute;
+            height: 38px;
+            width: 38px;
+            bottom: 8px;
+            left: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: $white;
+            border: 1px solid darken($fade-grey, 3%);
+            border-radius: $radius-rounded;
+            transition: all 0.3s;
+
+            &:hover {
+              box-shadow: $light-box-shadow;
+              border-color: $dark-text;
+            }
+
+            i {
+              font-size: 16px;
+              color: $dark-text;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+Dark mode
 ========================================================================== */
 
 .is-dark {
@@ -1486,55 +1703,6 @@ Inbox Layouts
       }
     }
   }
-}
-
-/* ==========================================================================
-1. Inbox action
-========================================================================== */
-
-.inbox-action {
-  height: 36px;
-  width: 36px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: none;
-  border-radius: $radius-rounded;
-  border: 1px solid transparent;
-  transition: all 0.3s;
-
-  &:hover {
-    border-color: darken($fade-grey, 4%);
-    box-shadow: $light-box-shadow;
-
-    svg {
-      color: $primary;
-    }
-  }
-
-  &.is-checked {
-    border-color: darken($fade-grey, 3%);
-    box-shadow: $light-box-shadow;
-  }
-
-  svg {
-    height: 16px;
-    width: 16px;
-    stroke-width: 1.6px;
-    color: $light-text;
-  }
-
-  i {
-    padding: 0;
-    transition: color 0.3s;
-  }
-}
-
-/* ==========================================================================
-1. Inbox action Dark mode
-========================================================================== */
-
-.is-dark {
   .inbox-action {
     &:hover {
       background: lighten($dark-sidebar, 2%);
@@ -1545,75 +1713,6 @@ Inbox Layouts
       }
     }
   }
-}
-
-/* ==========================================================================
-2. Dropdown
-========================================================================== */
-
-.inbox-dropdown {
-  div > .button {
-    height: 36px;
-    width: 36px;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: none !important;
-    border-radius: $radius-rounded;
-    background: transparent;
-    border: 1px solid transparent;
-
-    &:hover {
-      border-color: darken($fade-grey, 4%);
-      box-shadow: $light-box-shadow !important;
-    }
-
-    i {
-      padding: 0;
-    }
-
-    svg {
-      height: 16px;
-      width: 16px;
-      color: $light-text;
-    }
-  }
-
-  .dropdown-menu {
-    width: 180px;
-
-    .dropdown-item {
-      display: flex;
-      align-items: center;
-      font-size: 1rem;
-      font-family: $font;
-      margin-bottom: 4px;
-      padding-top: 8px;
-      padding-bottom: 8px;
-
-      i {
-        color: $light-text;
-      }
-
-      svg {
-        height: 16px;
-        width: 16px;
-        color: $light-text;
-      }
-
-      span {
-        margin-left: 12px;
-      }
-    }
-  }
-}
-
-/* ==========================================================================
-1. Dropdown Dark mode
-========================================================================== */
-
-.is-dark {
   .inbox-dropdown {
     &:hover {
       div > .button {
@@ -1625,135 +1724,6 @@ Inbox Layouts
     div > .button {
       background: transparent !important;
       border-color: transparent !important;
-    }
-  }
-}
-
-/* ==========================================================================
-3. Compose Panel
-========================================================================== */
-
-.compose-panel {
-  position: fixed;
-  top: 65px;
-  right: 0;
-  height: calc(100% - 65px);
-  width: calc(48% - 40px);
-  background: $white;
-  border-left: 1px solid $fade-grey;
-  z-index: 10;
-  transform: translateX(100%);
-  transition: all 0.3s;
-
-  &.is-active {
-    transform: translateX(0);
-  }
-
-  .header-area {
-    height: 80px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid darken($fade-grey, 3%);
-    padding: 0 20px;
-
-    .panel-title {
-      font-family: $font;
-      font-size: 1.4rem;
-      color: $dark-text;
-    }
-
-    .dropdown {
-      margin-left: 6px;
-    }
-
-    .inbox-action {
-      margin-left: auto;
-    }
-  }
-
-  .panel-inner {
-    position: relative;
-    height: calc(100% - 80px);
-    width: 100%;
-    overflow-y: auto;
-    padding: 60px;
-
-    .field-wrap {
-      width: 100%;
-      margin-bottom: 20px;
-
-      .field {
-        position: relative;
-        display: flex;
-        align-items: center;
-
-        label {
-          display: block;
-          font-weight: 600;
-          font-size: 1.1rem;
-          text-align: right;
-          color: $dark-text;
-          margin-right: 20px;
-          min-width: 60px;
-        }
-
-        .control {
-          position: relative;
-          width: 100%;
-
-          .compose-input {
-            height: 38px;
-            font-size: 1.1rem;
-          }
-
-          .textarea {
-            font-size: 1.1rem;
-            box-shadow: none !important;
-            padding-bottom: 54px;
-          }
-
-          .send-button {
-            position: absolute;
-            height: 38px;
-            bottom: 8px;
-            right: 8px;
-            background: $secondary;
-            border-color: $secondary;
-            color: $smoke-white;
-            font-weight: 500;
-
-            &:hover {
-              box-shadow: $secondary-box-shadow;
-            }
-          }
-
-          .attacv-button {
-            position: absolute;
-            height: 38px;
-            width: 38px;
-            bottom: 8px;
-            left: 16px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: $white;
-            border: 1px solid darken($fade-grey, 3%);
-            border-radius: $radius-rounded;
-            transition: all 0.3s;
-
-            &:hover {
-              box-shadow: $light-box-shadow;
-              border-color: $dark-text;
-            }
-
-            i {
-              font-size: 16px;
-              color: $dark-text;
-            }
-          }
-        }
-      }
     }
   }
 }

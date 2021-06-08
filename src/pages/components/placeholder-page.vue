@@ -44,9 +44,6 @@ useHead({
         :class="[toc.length > 0 ? 'is-9' : 'is-12']"
         class="column doc-column"
       >
-        <!-- @TODO -->
-        <!-- <VPlaceholderPageDocumentation /> -->
-
         <V-PlaceholderPage
           title="We couldn't find any matching results."
           subtitle="Too bad. Looks like we couldn't find any matching results for the

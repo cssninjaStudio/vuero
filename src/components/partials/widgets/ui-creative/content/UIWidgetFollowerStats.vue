@@ -13,7 +13,7 @@ defineProps({
   <div class="channels">
     <div v-for="channel in channels" :key="channel.id" class="channel">
       <div class="channel-icon">
-        <i :class="channel.icon"></i>
+        <i aria-hidden="true" :class="channel.icon"></i>
       </div>
       <div class="channel-stats">
         <span>{{ channel.count }}</span>

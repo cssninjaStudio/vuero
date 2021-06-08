@@ -135,17 +135,11 @@ const selectedConversation = computed(() => {
   return conversations[0]
 })
 
-const {
-  dropdownElement: dropdownElement1,
-  toggle: toggle1,
-  isOpen: isOpen1,
-} = useDropdown()
+const dropdownElement1 = ref<HTMLElement | null>(null)
+const dropdown1 = useDropdown(dropdownElement1)
 
-const {
-  dropdownElement: dropdownElement2,
-  toggle: toggle2,
-  isOpen: isOpen2,
-} = useDropdown()
+const dropdownElement2 = ref<HTMLElement | null>(null)
+const dropdown2 = useDropdown(dropdownElement2)
 
 useHead({
   title: 'Messaging chat - Navbar - Vuero',
@@ -191,10 +185,13 @@ useHead({
           <!--User Menu-->
           <div
             ref="dropdownElement1"
-            :class="[isOpen1 && 'is-active']"
             class="dropdown is-right dropdown-trigger user-dropdown"
           >
-            <div class="is-trigger" aria-haspopup="true" @click="toggle1">
+            <div
+              class="is-trigger"
+              aria-haspopup="true"
+              @click="dropdown1.toggle"
+            >
               <div class="profile-avatar">
                 <img
                   class="avatar"
@@ -369,11 +366,14 @@ useHead({
             <div class="add-content">
               <div
                 ref="dropdownElement2"
-                :class="[isOpen2 && 'is-active']"
                 class="dropdown dropdown-trigger is-up"
               >
                 <div>
-                  <div class="button" aria-haspopup="true" @click="toggle2">
+                  <div
+                    class="button"
+                    aria-haspopup="true"
+                    @click="dropdown2.toggle"
+                  >
                     <i
                       aria-hidden="true"
                       class="iconify"

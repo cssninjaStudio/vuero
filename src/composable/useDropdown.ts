@@ -2,17 +2,17 @@
  * useDropdown Composition API
  */
 
-import { ref } from 'vue'
+import type { Ref } from 'vue'
+import { ref, watchEffect } from 'vue'
 import { onClickOutside } from '@vueuse/core'
 
 /**
  * Generate refs to handle a dropdown state
  */
-export default function useDropdown() {
+export default function useDropdown(container: Ref<HTMLElement | null>) {
   const isOpen = ref(false)
-  const dropdownElement = ref<HTMLElement | null>(null)
 
-  onClickOutside(dropdownElement, () => {
+  onClickOutside(container, () => {
     isOpen.value = false
   })
 
@@ -28,8 +28,19 @@ export default function useDropdown() {
     isOpen.value = !isOpen.value
   }
 
+  watchEffect(() => {
+    if (!container.value) {
+      return
+    }
+
+    if (isOpen.value) {
+      container.value.classList.add('is-active')
+    } else {
+      container.value.classList.remove('is-active')
+    }
+  })
+
   return {
-    dropdownElement,
     isOpen,
     open,
     close,

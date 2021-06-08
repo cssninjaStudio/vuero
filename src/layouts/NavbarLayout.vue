@@ -35,7 +35,8 @@ const isMobileSidebarOpen = ref(false)
 const activeMobileSubsidebar = ref('dashboard')
 
 const route = useRoute()
-const { dropdownElement, isOpen, toggle } = useDropdown()
+const dropdownElement = ref<HTMLElement | null>(null)
+const dropdown = useDropdown(dropdownElement)
 
 const filter = ref('')
 const filteredData = computed(() => {

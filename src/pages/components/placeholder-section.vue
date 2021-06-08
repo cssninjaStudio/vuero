@@ -44,9 +44,6 @@ useHead({
         :class="[toc.length > 0 ? 'is-9' : 'is-12']"
         class="column doc-column"
       >
-        <!-- @TODO -->
-        <!-- <VPlaceholderSectionDocumentation /> -->
-
         <div class="columns is-vcentered">
           <div class="column is-6">
             <V-Card>

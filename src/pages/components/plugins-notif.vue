@@ -1,9 +1,8 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
-import { onMounted } from 'vue'
+import { onMounted, ref } from 'vue'
 
 import useNotyf from '/@src/composable/useNotyf'
-import { ref } from 'vue'
 import useMarkdownToc from '/@src/composable/useMarkdownToc'
 import { pageTitle } from '/@src/state/sidebarLayoutState'
 

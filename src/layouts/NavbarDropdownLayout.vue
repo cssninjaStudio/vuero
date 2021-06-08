@@ -16,7 +16,8 @@ const props = defineProps({
   },
 })
 const route = useRoute()
-const { dropdownElement, isOpen, toggle } = useDropdown()
+const dropdownElement = ref<HTMLElement | null>(null)
+const dropdown = useDropdown(dropdownElement)
 
 const displaySearch = ref(false)
 const isMobileSidebarOpen = ref(false)
@@ -171,7 +172,6 @@ watch(
 
         <div
           ref="dropdownElement"
-          :class="[isOpen && 'is-active']"
           class="dropdown profile-dropdown dropdown-trigger is-spaced is-right"
         >
           <img
@@ -180,7 +180,7 @@ watch(
             @error.once="
               $event.target.src = 'https://via.placeholder.com/150x150'
             "
-            @click="toggle"
+            @click="dropdown.toggle"
           />
           <span class="status-indicator"></span>
 

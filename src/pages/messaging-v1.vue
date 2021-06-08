@@ -44,7 +44,8 @@ const conversations = [
   },
 ]
 
-const { dropdownElement, isOpen, toggle } = useDropdown()
+const dropdownElement = ref<HTMLElement | null>(null)
+const dropdown = useDropdown(dropdownElement)
 const addConversationOpen = ref(false)
 const isLoading = ref(true)
 const selectedConversationId = ref(0)
@@ -190,9 +191,9 @@ watchEffect(
                     class="icon-box-toggle"
                   >
                     <span class="rotate">
-                      <i class="icon-line-top"></i>
-                      <i class="icon-line-center"></i>
-                      <i class="icon-line-bottom"></i>
+                      <i aria-hidden="true" class="icon-line-top"></i>
+                      <i aria-hidden="true" class="icon-line-center"></i>
+                      <i aria-hidden="true" class="icon-line-bottom"></i>
                     </span>
                   </span>
                 </span>
@@ -565,14 +566,13 @@ watchEffect(
                   <div class="add-content">
                     <div
                       ref="dropdownElement"
-                      :class="[isOpen && 'is-active']"
                       class="dropdown dropdown-trigger is-up"
                     >
                       <div>
                         <div
                           class="button"
                           aria-haspopup="true"
-                          @click="toggle"
+                          @click="dropdown.toggle"
                         >
                           <i
                             aria-hidden="true"

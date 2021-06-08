@@ -1,6 +1,8 @@
 <script setup lang="ts">
+import { ref } from 'vue'
 import useDropdown from '/@src/composable/useDropdown'
-const { dropdownElement, isOpen, toggle } = useDropdown()
+const dropdownElement = ref<HTMLElement | null>(null)
+const dropdown = useDropdown(dropdownElement)
 </script>
 
 <template>
@@ -10,11 +12,10 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
       <h2 class="panel-title">New Message</h2>
       <div
         ref="dropdownElement"
-        :class="[isOpen && 'is-active']"
         class="dropdown inbox-dropdown dropdown-trigger is-right"
       >
         <div>
-          <button class="button" @click="toggle">
+          <button class="button" @click="dropdown.toggle">
             <span class="icon is-small">
               <i aria-hidden="true" class="material-icons"
                 >keyboard_arrow_down</i

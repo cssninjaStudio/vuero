@@ -114,13 +114,11 @@ ul {
 }
 
 .toc-level-4 {
+  padding-left: 14px;
+
   + .toc-level-3 {
     padding-top: 4px;
   }
-}
-
-.toc-level-4 {
-  padding-left: 14px;
 }
 
 .toc-level-5 {

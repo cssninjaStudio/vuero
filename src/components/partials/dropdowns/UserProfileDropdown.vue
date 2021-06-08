@@ -1,12 +1,13 @@
 <script setup lang="ts">
+import { ref } from 'vue'
 import useDropdown from '/@src/composable/useDropdown'
-const { dropdownElement, isOpen, toggle } = useDropdown()
+const dropdownElement = ref<HTMLElement | null>(null)
+const dropdown = useDropdown(dropdownElement)
 </script>
 
 <template>
   <div
     ref="dropdownElement"
-    :class="[isOpen && 'is-active']"
     class="
       dropdown
       is-right is-spaced
@@ -15,7 +16,7 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
       user-dropdown
     "
   >
-    <div class="is-trigger" aria-haspopup="true" @click="toggle">
+    <div class="is-trigger" aria-haspopup="true" @click="dropdown.toggle">
       <V-Avatar picture="/demo/avatars/8.jpg" />
     </div>
     <div class="dropdown-menu" role="menu">

@@ -1,6 +1,8 @@
 <script setup lang="ts">
+import { ref } from 'vue'
 import useDropdown from '/@src/composable/useDropdown'
-const { dropdownElement, isOpen, toggle } = useDropdown()
+const dropdownElement = ref<HTMLElement | null>(null)
+const dropdown = useDropdown(dropdownElement)
 </script>
 
 <template>
@@ -8,14 +10,13 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
     <div
       id="profile-menu"
       ref="dropdownElement"
-      :class="[isOpen && 'is-active']"
       class="dropdown profile-dropdown dropdown-trigger is-spaced is-up"
     >
       <img
         src="/demo/avatars/8.jpg"
         alt=""
         @error.once="$event.target.src = 'https://via.placeholder.com/150x150'"
-        @click="toggle"
+        @click="dropdown.toggle"
       />
       <span class="status-indicator"></span>
 

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { defineEmit, defineProps } from 'vue'
+import { defineEmit, defineProps, ref } from 'vue'
 
 import useDropdown from '/@src/composable/useDropdown'
 import { isMediumScreen } from '/@src/state/responsiveState'
@@ -17,17 +17,11 @@ const props = defineProps({
 
 const emit = defineEmit(['update:mobileMessageOpen'])
 
-const {
-  dropdownElement: dropdownElement1,
-  toggle: toggle1,
-  isOpen: isOpen1,
-} = useDropdown()
+const dropdownElement1 = ref<HTMLElement | null>(null)
+const dropdown1 = useDropdown(dropdownElement1)
 
-const {
-  dropdownElement: dropdownElement2,
-  toggle: toggle2,
-  isOpen: isOpen2,
-} = useDropdown()
+const dropdownElement2 = ref<HTMLElement | null>(null)
+const dropdown2 = useDropdown(dropdownElement2)
 </script>
 
 <template>
@@ -57,11 +51,10 @@ const {
       </div>
       <div
         ref="dropdownElement1"
-        :class="[isOpen1 && 'is-active']"
         class="dropdown inbox-dropdown dropdown-trigger is-right"
       >
         <div>
-          <button class="button" @click="toggle1">
+          <button class="button" @click="dropdown1.toggle">
             <span class="icon is-small">
               <i
                 aria-hidden="true"
@@ -218,11 +211,10 @@ const {
             </div>
             <div
               ref="dropdownElement2"
-              :class="[isOpen2 && 'is-active']"
               class="dropdown inbox-dropdown dropdown-trigger is-right"
             >
               <div>
-                <button class="button" @click="toggle2">
+                <button class="button" @click="dropdown2.toggle">
                   <span class="icon is-small">
                     <i
                       aria-hidden="true"

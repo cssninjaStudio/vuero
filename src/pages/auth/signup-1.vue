@@ -1108,18 +1108,6 @@ onUnmounted(() => {
     }
   }
 
-  .slick-custom {
-    opacity: 0;
-
-    &.is-prev {
-      left: -45px;
-    }
-
-    &.is-next {
-      right: -45px;
-    }
-  }
-
   .slick-dots {
     bottom: -60px !important;
   }
@@ -1144,6 +1132,7 @@ onUnmounted(() => {
     color: $dark-text;
     transition: all 0.3s;
     z-index: 25;
+    opacity: 0;
 
     svg {
       height: 16px;
