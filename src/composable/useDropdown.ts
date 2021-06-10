@@ -3,7 +3,7 @@
  */
 
 import type { Ref } from 'vue'
-import { ref, watchEffect } from 'vue'
+import { reactive, ref, watchEffect } from 'vue'
 import { onClickOutside } from '@vueuse/core'
 
 /**
@@ -40,10 +40,10 @@ export default function useDropdown(container: Ref<HTMLElement | null>) {
     }
   })
 
-  return {
+  return reactive({
     isOpen,
     open,
     close,
     toggle,
-  }
+  })
 }

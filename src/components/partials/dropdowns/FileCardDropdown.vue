@@ -1,62 +1,47 @@
-<script setup lang="ts">
-import { ref } from 'vue'
-import useDropdown from '/@src/composable/useDropdown'
-const dropdownElement = ref<HTMLElement | null>(null)
-const dropdown = useDropdown(dropdownElement)
-</script>
-
 <template>
-  <div
-    ref="dropdownElement"
-    class="dropdown is-spaced is-dots is-right dropdown-trigger end-action"
-  >
-    <div class="is-trigger" aria-haspopup="true" @click="dropdown.toggle">
-      <i
-        aria-hidden="true"
-        class="iconify"
-        data-icon="feather:more-vertical"
-      ></i>
-    </div>
-    <div class="dropdown-menu" role="menu">
-      <div class="dropdown-content">
-        <a href="#" class="dropdown-item is-media">
-          <div class="icon">
-            <i aria-hidden="true" class="lnil lnil-cloud-download"></i>
-          </div>
-          <div class="meta">
-            <span>Download</span>
-            <span>Download this file</span>
-          </div>
-        </a>
-        <a href="#" class="dropdown-item is-media">
-          <div class="icon">
-            <i aria-hidden="true" class="lnil lnil-checkmark-circle"></i>
-          </div>
-          <div class="meta">
-            <span>View Task</span>
-            <span>View related task</span>
-          </div>
-        </a>
-        <hr class="dropdown-divider" />
-        <a href="#" class="dropdown-item is-media">
-          <div class="icon">
-            <i aria-hidden="true" class="lnil lnil-cloud-upload"></i>
-          </div>
-          <div class="meta">
-            <span>Update</span>
-            <span>Upload a new version</span>
-          </div>
-        </a>
-        <a href="#" class="dropdown-item is-media">
-          <div class="icon">
-            <i aria-hidden="true" class="lnil lnil-trash-can-alt-1"></i>
-          </div>
-          <div class="meta">
-            <span>Delete</span>
-            <span>Delete this file</span>
-          </div>
-        </a>
-      </div>
-    </div>
-  </div>
+  <V-Dropdown icon="feather:more-vertical" class="end-action" spaced right>
+    <template #content>
+      <a role="menuitem" href="#" class="dropdown-item is-media">
+        <div class="icon">
+          <i aria-hidden="true" class="lnil lnil-cloud-download"></i>
+        </div>
+        <div class="meta">
+          <span>Download</span>
+          <span>Download this file</span>
+        </div>
+      </a>
+
+      <a role="menuitem" href="#" class="dropdown-item is-media">
+        <div class="icon">
+          <i aria-hidden="true" class="lnil lnil-checkmark-circle"></i>
+        </div>
+        <div class="meta">
+          <span>View Task</span>
+          <span>View related task</span>
+        </div>
+      </a>
+
+      <hr class="dropdown-divider" />
+
+      <a role="menuitem" href="#" class="dropdown-item is-media">
+        <div class="icon">
+          <i aria-hidden="true" class="lnil lnil-cloud-upload"></i>
+        </div>
+        <div class="meta">
+          <span>Update</span>
+          <span>Upload a new version</span>
+        </div>
+      </a>
+
+      <a role="menuitem" href="#" class="dropdown-item is-media">
+        <div class="icon">
+          <i aria-hidden="true" class="lnil lnil-trash-can-alt-1"></i>
+        </div>
+        <div class="meta">
+          <span>Delete</span>
+          <span>Delete this file</span>
+        </div>
+      </a>
+    </template>
+  </V-Dropdown>
 </template>

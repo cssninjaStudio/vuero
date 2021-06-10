@@ -3,7 +3,6 @@ import type { PropType } from 'vue'
 import { computed, defineProps, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 
-import useDropdown from '/@src/composable/useDropdown'
 import { popovers } from '/@src/data/users/userPopovers'
 import { pageTitle } from '/@src/state/navbarLayoutState'
 
@@ -23,7 +22,12 @@ const props = defineProps({
   },
 })
 
+const route = useRoute()
+const filter = ref('')
+const isMobileSidebarOpen = ref(false)
+const activeMobileSubsidebar = ref('dashboard')
 const activeSubnav = ref<SubnavId>('closed')
+
 function toggleSubnav(subnav: SubnavId) {
   if (activeSubnav.value === subnav) {
     activeSubnav.value = 'closed'
@@ -31,15 +35,8 @@ function toggleSubnav(subnav: SubnavId) {
     activeSubnav.value = subnav
   }
 }
-const isMobileSidebarOpen = ref(false)
-const activeMobileSubsidebar = ref('dashboard')
 
-const route = useRoute()
-const dropdownElement = ref<HTMLElement | null>(null)
-const dropdown = useDropdown(dropdownElement)
-
-const filter = ref('')
-const filteredData = computed(() => {
+const filteredUsers = computed(() => {
   if (!filter.value) {
     return []
   }
@@ -51,6 +48,7 @@ const filteredData = computed(() => {
     )
   })
 })
+
 watch(
   () => route.fullPath,
   () => {
@@ -186,7 +184,7 @@ watch(
       <template #toolbar>
         <Toolbar />
         <LayoutSwitcher />
-        <UserProfileDropdown />
+        <UserProfileDropdown right />
       </template>
 
       <!-- Custom navbar links -->
@@ -275,11 +273,11 @@ watch(
                 <i aria-hidden="true" class="iconify" data-icon="feather:x"></i>
               </div>
               <div
-                v-if="filteredData.length > 0"
+                v-if="filteredUsers.length > 0"
                 class="search-results has-slimscroll is-active"
               >
                 <div
-                  v-for="user in filteredData"
+                  v-for="user in filteredUsers"
                   :key="user.id"
                   class="search-result"
                 >

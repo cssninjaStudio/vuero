@@ -9,28 +9,26 @@ Please refer to the markup for more details about usage.
 ```vue
 <template>
   <V-Dropdown>
-    <template #button="{ open, close, toggle, isOpen }">
-      <button
-        class="is-trigger button"
+    <template #button="{ open, toggle }">
+      <V-Button
+        icon="feather:help-circle"
+        class="is-trigger"
         @mouseenter="open"
-        @mouseleave="close"
-        @touch="toggle"
+        @click="toggle"
       >
-        <span>Hover me!</span>
-        <span class="base-caret">
-          <V-Icon v-if="!isOpen" icon="fa:angle-down" />
-          <V-Icon v-else icon="fa:angle-up" />
-        </span>
-      </button>
+        Hover me!
+      </V-Button>
     </template>
 
-    <template #content>
-      <a href="#" class="dropdown-item"> Dropdown item </a>
-      <a href="#" class="dropdown-item"> Other dropdown item </a>
-      <a href="#" class="dropdown-item is-active"> Active dropdown item </a>
-      <a href="#" class="dropdown-item"> Other dropdown item </a>
-      <hr class="dropdown-divider" />
-      <a href="#" class="dropdown-item"> With a divider </a>
+    <template #content="{ close }">
+      <div @mouseleave="close">
+        <a href="#" class="dropdown-item"> Dropdown item </a>
+        <a href="#" class="dropdown-item"> Other dropdown item </a>
+        <a href="#" class="dropdown-item is-active"> Active dropdown item </a>
+        <a href="#" class="dropdown-item"> Other dropdown item </a>
+        <hr class="dropdown-divider" />
+        <a href="#" class="dropdown-item"> With a divider </a>
+      </div>
     </template>
   </V-Dropdown>
 </template>
@@ -43,51 +41,51 @@ Please refer to the markup for more details about usage.
 <div class="field is-grouped">
   <div class="control">
     <V-Dropdown>
-      <template #button="{ open, close, toggle, isOpen }">
-        <button
-          class="is-trigger button"
+      <template #button="{ open, toggle }">
+        <V-Button
+          icon="feather:alert-triangle"
+          class="is-trigger"
+          color="warning"
           @mouseenter="open"
-          @touch="toggle"
+          @click="toggle"
         >
-          <span>Hover me!</span>
-          <span class="base-caret">
-            <V-Icon v-if="!isOpen" icon="fa:angle-down" />
-            <V-Icon v-else icon="fa:angle-up" />
-          </span>
-        </button>
+          Hover me!
+        </V-Button>
       </template>
-      <template #content>
-        <a href="#" class="dropdown-item"> Dropdown item </a>
-        <a href="#" class="dropdown-item"> Other dropdown item </a>
-        <a href="#" class="dropdown-item is-active"> Active dropdown item </a>
-        <a href="#" class="dropdown-item"> Other dropdown item </a>
-        <hr class="dropdown-divider" />
-        <a href="#" class="dropdown-item"> With a divider </a>
+      <template #content="{ close }">
+        <div @mouseleave="close">
+          <a href="#" class="dropdown-item"> Dropdown item </a>
+          <a href="#" class="dropdown-item"> Other dropdown item </a>
+          <a href="#" class="dropdown-item is-active"> Active dropdown item </a>
+          <a href="#" class="dropdown-item"> Other dropdown item </a>
+          <hr class="dropdown-divider" />
+          <a href="#" class="dropdown-item"> With a divider </a>
+        </div>
       </template>
     </V-Dropdown>
   </div>
 
   <div class="control">
     <V-Dropdown title="Primary button" up>
-      <template #button="{ open, close, toggle, isOpen }">
-        <button
-          class="is-trigger button"
+      <template #button="{ open, toggle }">
+        <V-Button
+          icon="feather:help-circle"
+          class="is-trigger"
           @mouseenter="open"
-          @touch="toggle"
+          @click="toggle"
         >
-          <span class="icon is-small">
-            <i class="iconify" data-icon="feather:help-circle"></i>
-          </span>
-          <span>Hover me!</span>
-        </button>
+          Hover me!
+        </V-Button>
       </template>
-      <template #content>
-        <a href="#" class="dropdown-item"> Dropdown item </a>
-        <a href="#" class="dropdown-item"> Other dropdown item </a>
-        <a href="#" class="dropdown-item is-active"> Active dropdown item </a>
-        <a href="#" class="dropdown-item"> Other dropdown item </a>
-        <hr class="dropdown-divider" />
-        <a href="#" class="dropdown-item"> With a divider </a>
+      <template #content="{ close }">
+        <div @mouseleave="close">
+          <a href="#" class="dropdown-item"> Dropdown item </a>
+          <a href="#" class="dropdown-item"> Other dropdown item </a>
+          <a href="#" class="dropdown-item is-active"> Active dropdown item </a>
+          <a href="#" class="dropdown-item"> Other dropdown item </a>
+          <hr class="dropdown-divider" />
+          <a href="#" class="dropdown-item"> With a divider </a>
+        </div>
       </template>
     </V-Dropdown>
   </div>

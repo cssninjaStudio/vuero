@@ -1,15 +1,13 @@
 ### Dropdown Colors
 
-You can use all the available color classes on
-the `<V-Dropdown />` component, like `is-primary`
-or `is-info` for instance.
-Refer to the button documentation for full customization options.
+You can customize the `<V-Dropdown />`, using `color` property.
+Refer to the dropdown prop documentation for full customization options.
 
 <!--code-->
 
 ```vue
 <template>
-  <V-Dropdown title="Primary" class="is-primary">
+  <V-Dropdown title="Primary" color="primary">
     <template #content>
       <a href="#" class="dropdown-item"> Dropdown item </a>
       <a href="#" class="dropdown-item"> Other dropdown item </a>
@@ -28,7 +26,7 @@ Refer to the button documentation for full customization options.
 
 <div class="field is-grouped">
   <div class="control">
-    <V-Dropdown title="Primary" class="is-primary">
+    <V-Dropdown title="Primary" color="primary">
       <template #content>
         <a href="#" class="dropdown-item"> Dropdown item </a>
         <a href="#" class="dropdown-item"> Other dropdown item </a>
@@ -41,7 +39,7 @@ Refer to the button documentation for full customization options.
   </div>
 
   <div class="control">
-    <V-Dropdown title="Danger" class="is-danger">
+    <V-Dropdown title="Danger" color="danger">
       <template #content>
         <a href="#" class="dropdown-item"> Dropdown item </a>
         <a href="#" class="dropdown-item"> Other dropdown item </a>
@@ -54,7 +52,7 @@ Refer to the button documentation for full customization options.
   </div>
 
   <div class="control">
-    <V-Dropdown title="Warning" class="is-warning">
+    <V-Dropdown title="Warning" color="warning">
       <template #content>
         <a href="#" class="dropdown-item"> Dropdown item </a>
         <a href="#" class="dropdown-item"> Other dropdown item </a>
@@ -67,7 +65,7 @@ Refer to the button documentation for full customization options.
   </div>
 
   <div class="control">
-    <V-Dropdown title="Info" class="is-info">
+    <V-Dropdown title="Info" color="info">
       <template #content>
         <a href="#" class="dropdown-item"> Dropdown item </a>
         <a href="#" class="dropdown-item"> Other dropdown item </a>
@@ -80,7 +78,7 @@ Refer to the button documentation for full customization options.
   </div>
 
   <div class="control">
-    <V-Dropdown title="Success" class="is-success">
+    <V-Dropdown title="Success" color="success">
       <template #content>
         <a href="#" class="dropdown-item"> Dropdown item </a>
         <a href="#" class="dropdown-item"> Other dropdown item </a>

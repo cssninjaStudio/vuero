@@ -16,13 +16,7 @@
 .multiselect {
   font-family: $font;
 
-  &.is-open .multiselect-input::before {
-    transform: rotate(-45deg) !important;
-  }
-
   .multiselect-clear {
-    top: 2px;
-    right: 6px;
     height: 32px;
     width: 32px;
 
@@ -35,21 +29,6 @@
   .multiselect-input {
     background: $white;
     min-height: 38px;
-
-    &::before {
-      border-style: solid;
-      border-width: 0.125em 0.125em 0 0;
-      content: '';
-      display: inline-block;
-      border-color: unset;
-      height: 0.45em;
-      right: 1em;
-      top: 0.9em;
-      vertical-align: top;
-      width: 0.45em;
-      transform: rotate(135deg);
-      border-radius: 0.1rem;
-    }
 
     .multiselect-single-label {
       font-family: $font;

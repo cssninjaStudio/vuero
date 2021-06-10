@@ -306,7 +306,9 @@ watch(
         </li>
 
         <!-- Profile Dropdown -->
-        <SidebarItemProfileDropdown />
+        <li>
+          <UserProfileDropdown up />
+        </li>
       </template>
     </Sidebar>
 

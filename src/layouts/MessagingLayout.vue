@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { PropType } from 'vue'
-import { onMounted, defineProps, ref, watchEffect, watch } from 'vue'
+import { defineProps, ref } from 'vue'
 import { useRoute } from 'vue-router'
 
 import { activePanel } from '/@src/state/activePanelState'
@@ -194,7 +194,9 @@ const isDesktopSidebarOpen = ref(false)
         </li>
 
         <!-- Profile Dropdown -->
-        <SidebarItemProfileDropdown />
+        <li>
+          <UserProfileDropdown up />
+        </li>
       </template>
     </Sidebar>
 

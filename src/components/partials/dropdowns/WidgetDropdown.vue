@@ -1,17 +1,7 @@
 <template>
-  <V-Dropdown dots right spaced>
-    <template #button="{ open }">
-      <button class="is-trigger" @click="open">
-        <i
-          aria-hidden="true"
-          class="iconify"
-          data-icon="feather:more-vertical"
-        ></i>
-      </button>
-    </template>
-
+  <V-Dropdown icon="feather:more-vertical" right spaced>
     <template #content>
-      <a href="#" class="dropdown-item is-media">
+      <a href="#" role="menuitem" class="dropdown-item is-media">
         <div class="icon">
           <i aria-hidden="true" class="lnil lnil-reload"></i>
         </div>
@@ -20,7 +10,8 @@
           <span>Reload Widget</span>
         </div>
       </a>
-      <a href="#" class="dropdown-item is-media">
+
+      <a href="#" role="menuitem" class="dropdown-item is-media">
         <div class="icon">
           <i aria-hidden="true" class="lnil lnil-cogs"></i>
         </div>
@@ -29,7 +20,8 @@
           <span>Configure widget</span>
         </div>
       </a>
-      <a href="#" class="dropdown-item is-media">
+
+      <a href="#" role="menuitem" class="dropdown-item is-media">
         <div class="icon">
           <i aria-hidden="true" class="lnil lnil-cog"></i>
         </div>
@@ -38,8 +30,10 @@
           <span>Widget Settings</span>
         </div>
       </a>
+
       <hr class="dropdown-divider" />
-      <a href="#" class="dropdown-item is-media">
+
+      <a href="#" role="menuitem" class="dropdown-item is-media">
         <div class="icon">
           <i aria-hidden="true" class="lnil lnil-trash-can-alt"></i>
         </div>
