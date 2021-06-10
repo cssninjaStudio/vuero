@@ -1,5 +1,5 @@
-export const waitTimeout = 2500
-export const waitDarkTimeout = 1200
+export const waitTimeout = 3200
+export const waitDarkTimeout = 2000
 export const disableTimersAndAnimations = false
 
 export const minimal = [
@@ -49,11 +49,53 @@ export const minimal = [
     displayOrder: 60,
   },
   {
-    name: 'Wizard V1',
+    name: 'Wizard V1 (step 1)',
     category: 'APP',
     path: '/wizard-v1',
     prefix: 'minimal',
     displayOrder: 50,
+  },
+  {
+    name: 'Wizard V1 (step 2)',
+    category: 'APP',
+    path: '/wizard-v1?step=2',
+    prefix: 'minimal',
+    displayOrder: 51,
+  },
+  {
+    name: 'Wizard V1 (step 3)',
+    category: 'APP',
+    path: '/wizard-v1?step=3',
+    prefix: 'minimal',
+    displayOrder: 52,
+  },
+  {
+    name: 'Wizard V1 (step 4)',
+    category: 'APP',
+    path: '/wizard-v1?step=4',
+    prefix: 'minimal',
+    displayOrder: 53,
+  },
+  {
+    name: 'Wizard V1 (step 5)',
+    category: 'APP',
+    path: '/wizard-v1?step=5',
+    prefix: 'minimal',
+    displayOrder: 54,
+  },
+  {
+    name: 'Wizard V1 (step 6)',
+    category: 'APP',
+    path: '/wizard-v1?step=6',
+    prefix: 'minimal',
+    displayOrder: 55,
+  },
+  {
+    name: 'Wizard V1 (step 7)',
+    category: 'APP',
+    path: '/wizard-v1?step=7',
+    prefix: 'minimal',
+    displayOrder: 56,
   },
   {
     name: 'Inbox',

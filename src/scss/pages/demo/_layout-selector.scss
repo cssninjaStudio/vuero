@@ -10,7 +10,8 @@
 ========================================================================== */
 
 .layout-selector {
-  max-height: 335px;
+  min-height: 340px;
+  max-height: 340px;
   overflow-y: auto;
 
   .layout-item {

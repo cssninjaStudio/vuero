@@ -305,9 +305,9 @@ onUnmounted(() => {
               <span class="label">Total</span>
               <span>$0.00</span>
             </div>
-            <V-Button color="primary" raised bold fullwidth
-              >Start Checkout</V-Button
-            >
+            <V-Button color="primary" raised bold fullwidth>
+              Start Checkout
+            </V-Button>
           </div>
         </div>
 

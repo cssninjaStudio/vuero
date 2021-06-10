@@ -124,8 +124,9 @@
               target="_blank"
               rel="noopener"
               class="button chat-button is-secondary"
-              >Chat with us</a
             >
+              Chat with us
+            </a>
           </div>
         </div>
       </div>

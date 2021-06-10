@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import type { PropType } from 'vue'
-import { tryOnUnmounted } from '@vueuse/core'
-import { ref, defineProps, defineEmit, watchEffect } from 'vue'
+import { ref, defineProps, defineEmit, watchEffect, onUnmounted } from 'vue'
 
 type ModalSize = undefined | 'small' | 'medium' | 'large' | 'big'
 type ModalAction = undefined | 'center' | 'right'
@@ -59,6 +58,10 @@ const props = defineProps({
     type: Boolean,
     default: false,
   },
+  tabs: {
+    type: Boolean,
+    default: false,
+  },
 })
 const emit = defineEmit(['close'])
 
@@ -75,7 +78,7 @@ const checkScroll = () => {
 }
 
 watchEffect(checkScroll)
-tryOnUnmounted(() => {
+onUnmounted(() => {
   document.documentElement.classList.remove('no-scroll')
 })
 </script>
@@ -102,7 +105,7 @@ tryOnUnmounted(() => {
               <i aria-hidden="true" class="iconify" data-icon="feather:x"></i>
             </button>
           </header>
-          <div class="modal-card-body">
+          <div class="modal-card-body" :class="[props.tabs && 'has-tabs']">
             <div class="inner-content">
               <slot name="content"></slot>
             </div>

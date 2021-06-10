@@ -13,7 +13,7 @@ const dropdown = useDropdown(dropdownElement)
     <V-Avatar
       size="small"
       color="h-green"
-      inititals="H"
+      initials="H"
       @click="dropdown.toggle"
     />
 
@@ -22,7 +22,7 @@ const dropdown = useDropdown(dropdownElement)
     <div class="dropdown-menu" role="menu">
       <div class="dropdown-content">
         <div class="dropdown-block">
-          <V-Avatar size="small" color="warning" inititals="D" />
+          <V-Avatar size="small" color="warning" initials="D" />
 
           <div class="meta">
             <span class="dark-inverted">Delivery App Project</span>
@@ -30,7 +30,7 @@ const dropdown = useDropdown(dropdownElement)
           </div>
         </div>
         <div class="dropdown-block">
-          <V-Avatar size="small" color="h-green" inititals="H" />
+          <V-Avatar size="small" color="h-green" initials="H" />
 
           <div class="meta">
             <span class="dark-inverted">Health and Fitness Dashboard</span>
@@ -38,7 +38,7 @@ const dropdown = useDropdown(dropdownElement)
           </div>
         </div>
         <div class="dropdown-block">
-          <V-Avatar size="small" color="info" inititals="L" />
+          <V-Avatar size="small" color="info" initials="L" />
 
           <div class="meta">
             <span class="dark-inverted">Learning Tracker Dashboard</span>
@@ -46,7 +46,7 @@ const dropdown = useDropdown(dropdownElement)
           </div>
         </div>
         <div class="dropdown-block">
-          <V-Avatar size="small" color="h-purple" inititals="B" />
+          <V-Avatar size="small" color="h-purple" initials="B" />
 
           <div class="meta">
             <span class="dark-inverted">Banking and Finance Dashboard</span>

@@ -102,7 +102,7 @@ useHead({
                 <th scope="col" data-type="date" data-format="YYYY/MM/DD">
                   Start Date
                 </th>
-                <th scope="col">Completion</th>
+                <th scope="col" data-sort="asc">Completion</th>
               </tr>
             </thead>
             <tbody>

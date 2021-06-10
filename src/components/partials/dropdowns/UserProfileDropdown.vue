@@ -16,9 +16,9 @@ const dropdown = useDropdown(dropdownElement)
       user-dropdown
     "
   >
-    <div class="is-trigger" aria-haspopup="true" @click="dropdown.toggle">
+    <a class="is-trigger" aria-haspopup="true" @click="dropdown.toggle">
       <V-Avatar picture="/demo/avatars/8.jpg" />
-    </div>
+    </a>
     <div class="dropdown-menu" role="menu">
       <div class="dropdown-content">
         <div class="dropdown-head">

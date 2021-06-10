@@ -11,11 +11,12 @@
             <a
               href="https://themeforest.net/item/vuero-vuejs-3-admin-and-webapp-ui-kit/31053035"
               class="button v-button is-primary is-rounded raised action-button"
-              >Buy Vuero</a
             >
-            <a href="https://cssninja.io" class="button chat-button"
-              >Chat with us</a
-            >
+              Buy Vuero
+            </a>
+            <a href="https://cssninja.io" class="button chat-button">
+              Chat with us
+            </a>
           </div>
         </div>
       </div>

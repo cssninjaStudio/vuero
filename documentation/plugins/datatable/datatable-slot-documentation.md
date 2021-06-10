@@ -26,11 +26,11 @@ const data = [
   <V-SimpleDatatables>
     <thead>
       <tr>
-        <th>Name</th>
-        <th>Ext.</th>
-        <th>City</th>
-        <th data-format="YYYY/MM/DD">Start Date</th>
-        <th data-sort="asc">Completion</th>
+        <th scope="col">Name</th>
+        <th scope="col">Ext.</th>
+        <th scope="col">City</th>
+        <th scope="col" data-format="YYYY/MM/DD">Start Date</th>
+        <th scope="col" data-sort="asc">Completion</th>
       </tr>
     </thead>
     <tbody>

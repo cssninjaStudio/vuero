@@ -269,7 +269,9 @@ watch(
 
       <template #bottom-links>
         <!-- Switch Sidebar  Layouts -->
-        <SidebarLayoutSwitcher />
+        <li>
+          <LayoutSwitcher />
+        </li>
 
         <!-- Search -->
         <li class="right-panel-trigger">

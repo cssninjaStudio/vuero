@@ -1,9 +1,20 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, watch } from 'vue'
+import { useRoute } from 'vue-router'
+
 import useDropdown from '/@src/composable/useDropdown'
+
 const dropdownElement = ref<HTMLElement | null>(null)
 const dropdown = useDropdown(dropdownElement)
 const selectedCategory = ref('')
+const route = useRoute()
+
+watch(
+  () => route.fullPath,
+  () => {
+    dropdown.close()
+  }
+)
 </script>
 
 <template>

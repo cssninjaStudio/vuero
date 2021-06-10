@@ -256,11 +256,12 @@ useHead({
                     is-primary is-rounded is-elevated
                     action-button
                   "
-                  >Buy Now</a
                 >
-                <a href="https://cssninja.io" class="button chat-button"
-                  >Chat with us</a
-                >
+                  Buy Now
+                </a>
+                <a href="https://cssninja.io" class="button chat-button">
+                  Chat with us
+                </a>
               </div>
             </div>
           </div>
@@ -556,13 +557,15 @@ useHead({
                     is-primary is-rounded is-elevated
                     action-button
                   "
-                  >Read the Docs</a
                 >
+                  Read the Docs
+                </a>
                 <a
                   href="https://cssninja.io"
                   class="button chat-button is-secondary"
-                  >Chat with us</a
                 >
+                  Chat with us
+                </a>
               </div>
             </div>
           </div>

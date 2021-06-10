@@ -13,12 +13,14 @@
   position: fixed;
   top: 0;
   left: 0;
+  margin-left: 0;
   height: 100vh;
   width: 80px;
   background-color: #f9f9f9;
   box-shadow: none;
   z-index: 35;
-  transition: border-radius 0.3s;
+  transition: border-radius 0.3s ease-in, background-color 0.3s ease-in,
+    top 0.3s ease-in, margin-left 0.3s ease-in, height 0.3s ease-in;
 
   &.is-bordered {
     border-right: 1px solid $fade-grey !important;
@@ -153,7 +155,6 @@
     top: 6px;
     height: calc(100vh - 12px);
     border: none !important;
-    transition: all 0.3s;
 
     &:not(.is-bordered) {
       box-shadow: $light-box-shadow;

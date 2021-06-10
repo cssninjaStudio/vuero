@@ -40,9 +40,9 @@ const dropdown2 = useDropdown(dropdownElement2)
         @error.once="$event.target.src = 'https://via.placeholder.com/150x150'"
       />
       <div class="message-meta">
-        <span class="message-title"
-          >New design ideas from the user experience team</span
-        >
+        <span class="message-title">
+          New design ideas from the user experience team
+        </span>
         <span class="sender-email">&lt;alejandro@vuero.io&gt;</span>
       </div>
       <div class="attachments inbox-hidden-mobile">

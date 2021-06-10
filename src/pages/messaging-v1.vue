@@ -698,8 +698,9 @@ watchEffect(
                       v-button
                       is-solid is-outlined is-big is-rounded
                     "
-                    >Start a new conversation</a
                   >
+                    Start a new conversation
+                  </a>
                 </div>
               </div>
             </div>

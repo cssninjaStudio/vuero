@@ -98,9 +98,9 @@ const optionsSingle = [
             <h3 class="dark-inverted">{{ item.fullName }}</h3>
             <p>{{ item.position }}</p>
             <div class="button-wrap has-text-centered">
-              <V-Button v-if="item.added" color="primary" raised
-                >Add To Project</V-Button
-              >
+              <V-Button v-if="item.added" color="primary" raised>
+                Add To Project
+              </V-Button>
               <V-Button v-else dark-outlined raised>Add To Team</V-Button>
               <div>
                 <a class="dark-inverted-hover">View Profile</a>

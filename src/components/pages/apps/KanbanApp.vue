@@ -399,8 +399,9 @@ onMounted(() => {
                   <a
                     href="#"
                     class="button v-button is-outlined is-rounded is-fullwidth"
-                    >Create Task</a
                   >
+                    Create Task
+                  </a>
                 </p>
               </div>
 

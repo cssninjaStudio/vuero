@@ -384,9 +384,9 @@ import {
                 </p>
 
                 <div class="submit-wrap">
-                  <V-Button color="primary" size="big" fullwidth raised bold
-                    >Send Money</V-Button
-                  >
+                  <V-Button color="primary" size="big" fullwidth raised bold>
+                    Send Money
+                  </V-Button>
                 </div>
               </div>
             </div>

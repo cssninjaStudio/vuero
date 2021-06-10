@@ -92,9 +92,9 @@ const optionsSingle = [
             <div class="grid-item-head">
               <div class="flex-head">
                 <div class="meta">
-                  <span v-if="item.status === 'synced'" class="dark-inverted"
-                    >In Sync</span
-                  >
+                  <span v-if="item.status === 'synced'" class="dark-inverted">
+                    In Sync
+                  </span>
                   <span v-if="item.status === 'overdue'" class="dark-inverted">
                     Overdue
                   </span>

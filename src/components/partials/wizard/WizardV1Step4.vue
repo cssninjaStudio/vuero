@@ -227,9 +227,9 @@ watch(previewTemplate, () => {
           You can already start adding files to your project if you have them
           handy. But don't worry, you'll be able to add and manage files later.
         </p>
-        <a class="action-link toggle-uploader-link" @click="isUploading = true"
-          >Add Files</a
-        >
+        <a class="action-link toggle-uploader-link" @click="isUploading = true">
+          Add Files
+        </a>
       </div>
     </div>
 

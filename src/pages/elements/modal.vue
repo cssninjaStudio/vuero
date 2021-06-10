@@ -64,15 +64,15 @@ useHead({
           <VModalBaseDocumentation />
 
           <div class="buttons mb-6">
-            <V-Button bold @click="leftActionsOpen = true"
-              >Left Actions</V-Button
-            >
-            <V-Button bold @click="centeredActionsOpen = true"
-              >Center Actions</V-Button
-            >
-            <V-Button bold @click="rightActionsOpen = true"
-              >Right Actions</V-Button
-            >
+            <V-Button bold @click="leftActionsOpen = true">
+              Left Actions
+            </V-Button>
+            <V-Button bold @click="centeredActionsOpen = true">
+              Center Actions
+            </V-Button>
+            <V-Button bold @click="rightActionsOpen = true">
+              Right Actions
+            </V-Button>
           </div>
 
           <!--V-Modal sizes-->
@@ -80,9 +80,9 @@ useHead({
 
           <div class="buttons mb-6">
             <V-Button bold @click="smallOpen = true">Small Modal</V-Button>
-            <V-Button bold @click="standardOpen = true"
-              >Standard Modal</V-Button
-            >
+            <V-Button bold @click="standardOpen = true">
+              Standard Modal
+            </V-Button>
             <V-Button bold @click="mediumOpen = true">Medium Modal</V-Button>
             <V-Button bold @click="largeOpen = true">Large Modal</V-Button>
             <V-Button bold @click="bigOpen = true">Big Modal</V-Button>
@@ -93,12 +93,12 @@ useHead({
 
           <div class="buttons mb-6">
             <V-Button bold @click="smallFormOpen = true">Small Modal</V-Button>
-            <V-Button bold @click="standardFormOpen = true"
-              >Standard Modal</V-Button
-            >
-            <V-Button bold @click="mediumFormOpen = true"
-              >Medium Modal</V-Button
-            >
+            <V-Button bold @click="standardFormOpen = true">
+              Standard Modal
+            </V-Button>
+            <V-Button bold @click="mediumFormOpen = true">
+              Medium Modal
+            </V-Button>
             <V-Button bold @click="largeFormOpen = true">Large Modal</V-Button>
             <V-Button bold @click="bigFormOpen = true">Big Modal</V-Button>
           </div>
@@ -107,12 +107,12 @@ useHead({
           <VModalOptionsDocumentation />
 
           <div class="buttons mb-6">
-            <V-Button bold @click="noscrollOpen = true"
-              >Scroll disabled</V-Button
-            >
-            <V-Button bold @click="nocloseOpen = true"
-              >No background close handler</V-Button
-            >
+            <V-Button bold @click="noscrollOpen = true">
+              Scroll disabled
+            </V-Button>
+            <V-Button bold @click="nocloseOpen = true">
+              No background close handler
+            </V-Button>
           </div>
 
           <!--Props-->

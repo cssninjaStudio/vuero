@@ -153,6 +153,28 @@
         .modal-form {
           padding: 10px 0 20px 0;
         }
+
+        &.has-tabs {
+          padding: 0;
+          overflow-x: hidden;
+
+          .tabs {
+            overflow-x: auto;
+
+            &::-webkit-scrollbar {
+              height: 5px !important;
+            }
+
+            &::-webkit-scrollbar-thumb {
+              border-radius: 10px !important;
+              background: rgba(0, 0, 0, 0.2) !important;
+            }
+
+            a {
+              padding: 0.75em 1em;
+            }
+          }
+        }
       }
 
       .modal-card-foot {

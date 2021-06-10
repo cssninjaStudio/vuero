@@ -524,6 +524,16 @@ Responsive styles
   .h-only-mobile-flex {
     display: flex !important;
   }
+
+  .is-half-mobile-p {
+    display: flex !important;
+
+    .column {
+      width: 50%;
+      min-width: 50%;
+      max-width: 50%;
+    }
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {

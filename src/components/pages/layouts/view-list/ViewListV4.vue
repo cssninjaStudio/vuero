@@ -159,9 +159,9 @@ const filteredData = computed(() => {
                     <span>Like this</span>
                   </div>
                   <div class="buttons">
-                    <a class="button v-button is-primary is-outlined is-raised"
-                      >View Recipe</a
-                    >
+                    <a class="button v-button is-primary is-outlined is-raised">
+                      View Recipe
+                    </a>
                     <button
                       class="
                         button

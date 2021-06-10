@@ -56,7 +56,7 @@ describe('Desktop - Viewport (1274*714)', () => {
 
   for (const route of minimal) {
     it(`Desktop - Minimal Layout - ${route.name}`, () => {
-      cy.visit(route.path)
+      cy.visit(`${route.path}`)
       // cy.get('.minimal-wrapper')
       cy.wait(waitTimeout)
 

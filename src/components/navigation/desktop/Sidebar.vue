@@ -30,7 +30,7 @@ const themeClasses = computed(() => {
     case 'labels-hover':
       return 'has-labels-hover'
     case 'float':
-      return !props.isOpen ? 'is-float is-curved' : 'is-float'
+      return !props.isOpen ? 'is-float' : 'is-float is-bordered'
     case 'curved':
       return !props.isOpen ? 'is-curved' : ''
     case 'color-curved':

@@ -84,7 +84,7 @@
     }
   },
   {
-    "name": "Wizard V1",
+    "name": "Wizard V1 (1/7)",
     "category": "APP",
     "displayOrder": 50,
     "new": false,
@@ -93,8 +93,110 @@
       "path": "/wizard-v1"
     },
     "screenshot": {
-      "light": "/images/screenshots/minimal/wizard-v1-light.webp",
-      "dark": "/images/screenshots/minimal/wizard-v1-dark.webp"
+      "light": "/images/screenshots/minimal/wizard-v1-1/7--light.webp",
+      "dark": "/images/screenshots/minimal/wizard-v1-1/7--dark.webp"
+    }
+  },
+  {
+    "name": "Wizard V1 (2/7)",
+    "category": "APP",
+    "displayOrder": 51,
+    "new": false,
+    "route": {
+      "name": "wizard-v1",
+      "path": "/wizard-v1",
+      "query": {
+        "step": 2
+      }
+    },
+    "screenshot": {
+      "light": "/images/screenshots/minimal/wizard-v1-2/7--light.webp",
+      "dark": "/images/screenshots/minimal/wizard-v1-2/7--dark.webp"
+    }
+  },
+  {
+    "name": "Wizard V1 (3/7)",
+    "category": "APP",
+    "displayOrder": 52,
+    "new": false,
+    "route": {
+      "name": "wizard-v1",
+      "path": "/wizard-v1",
+      "query": {
+        "step": 3
+      }
+    },
+    "screenshot": {
+      "light": "/images/screenshots/minimal/wizard-v1-3/7--light.webp",
+      "dark": "/images/screenshots/minimal/wizard-v1-3/7--dark.webp"
+    }
+  },
+  {
+    "name": "Wizard V1 (4/7)",
+    "category": "APP",
+    "displayOrder": 53,
+    "new": false,
+    "route": {
+      "name": "wizard-v1",
+      "path": "/wizard-v1",
+      "query": {
+        "step": 4
+      }
+    },
+    "screenshot": {
+      "light": "/images/screenshots/minimal/wizard-v1-4/7--light.webp",
+      "dark": "/images/screenshots/minimal/wizard-v1-4/7--dark.webp"
+    }
+  },
+  {
+    "name": "Wizard V1 (5/7)",
+    "category": "APP",
+    "displayOrder": 54,
+    "new": false,
+    "route": {
+      "name": "wizard-v1",
+      "path": "/wizard-v1",
+      "query": {
+        "step": 5
+      }
+    },
+    "screenshot": {
+      "light": "/images/screenshots/minimal/wizard-v1-5/7--light.webp",
+      "dark": "/images/screenshots/minimal/wizard-v1-5/7--dark.webp"
+    }
+  },
+  {
+    "name": "Wizard V1 (6/7)",
+    "category": "APP",
+    "displayOrder": 55,
+    "new": false,
+    "route": {
+      "name": "wizard-v1",
+      "path": "/wizard-v1",
+      "query": {
+        "step": 6
+      }
+    },
+    "screenshot": {
+      "light": "/images/screenshots/minimal/wizard-v1-6/7--light.webp",
+      "dark": "/images/screenshots/minimal/wizard-v1-6/7--dark.webp"
+    }
+  },
+  {
+    "name": "Wizard V1 (7/7)",
+    "category": "APP",
+    "displayOrder": 56,
+    "new": false,
+    "route": {
+      "name": "wizard-v1",
+      "path": "/wizard-v1",
+      "query": {
+        "step": 7
+      }
+    },
+    "screenshot": {
+      "light": "/images/screenshots/minimal/wizard-v1-7/7--light.webp",
+      "dark": "/images/screenshots/minimal/wizard-v1-7/7--dark.webp"
     }
   },
   {

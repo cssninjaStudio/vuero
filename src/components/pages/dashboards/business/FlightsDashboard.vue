@@ -354,9 +354,9 @@ const date = ref({
         </UIWidget>
 
         <div class="filters-card">
-          <a class="button v-button is-primary is-fullwidth is-bold is-raised"
-            >Add To Favorites</a
-          >
+          <a class="button v-button is-primary is-fullwidth is-bold is-raised">
+            Add To Favorites
+          </a>
 
           <div class="checkboxes-list">
             <div class="field">

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, defineEmit, defineProps } from 'vue'
+import { computed, defineEmit, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 
 import { isDark } from '/@src/state/darkModeState'
@@ -74,8 +74,9 @@ const localFlagSrc = computed(() => {
                 <RouterLink
                   class="notification-link"
                   :to="{ name: 'sidebar-layouts-profile-notifications' }"
-                  >See all</RouterLink
                 >
+                  See all
+                </RouterLink>
               </div>
             </div>
             <ul class="notification-list">

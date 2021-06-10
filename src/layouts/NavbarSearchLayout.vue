@@ -188,7 +188,7 @@ watch(
       <!-- Custom navbar toolbar -->
       <template #toolbar>
         <Toolbar />
-        <NavbarLayoutSwitcher />
+        <LayoutSwitcher />
         <UserProfileDropdown />
       </template>
 

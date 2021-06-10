@@ -397,9 +397,9 @@ onUnmounted(() => {
                       <V-Field>
                         <V-Control class="has-switch">
                           <label for="send-marketing">
-                            <span
-                              >Send me marketing and transaction emails</span
-                            >
+                            <span>
+                              Send me marketing and transaction emails
+                            </span>
                           </label>
                           <label
                             for="send-marketing"
