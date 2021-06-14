@@ -70,6 +70,9 @@ useHead({
         <!--Slots-->
         <DropdownSlotsDocumentation />
 
+        <!--Expose-->
+        <DropdownExposeDocumentation />
+
         <!--Artificial Spacing-->
         <div class="demo-spacer"></div>
       </div>

@@ -26,6 +26,10 @@ const props = defineProps({
     type: String,
     default: undefined,
   },
+  iconCaret: {
+    type: String,
+    default: undefined,
+  },
   color: {
     type: String as PropType<ButtonColor>,
     default: undefined,
@@ -127,8 +131,11 @@ const props = defineProps({
   },
 })
 
-const isIconify = computed(() => {
+const isIconIconify = computed(() => {
   return props.icon && props.icon.indexOf(':') !== -1
+})
+const isCaretIconify = computed(() => {
+  return props.iconCaret && props.iconCaret.indexOf(':') !== -1
 })
 const classes = computed(() => {
   return [
@@ -154,7 +161,7 @@ const classes = computed(() => {
 
 <template>
   <RouterLink v-if="to" :to="to" :class="classes">
-    <span v-if="isIconify" class="icon">
+    <span v-if="isIconIconify" class="icon">
       <i aria-hidden="true" class="iconify" :data-icon="icon"></i>
     </span>
     <span v-else-if="icon" class="icon">
@@ -162,10 +169,16 @@ const classes = computed(() => {
     </span>
     <span>
       <slot></slot>
+    </span>
+    <span v-if="isCaretIconify" class="caret">
+      <i aria-hidden="true" class="iconify" :data-icon="iconCaret"></i>
+    </span>
+    <span v-else-if="iconCaret" class="caret">
+      <i aria-hidden="true" :class="iconCaret"></i>
     </span>
   </RouterLink>
   <a v-else-if="href" :href="href" :class="classes">
-    <span v-if="isIconify" class="icon">
+    <span v-if="isIconIconify" class="icon">
       <i aria-hidden="true" class="iconify" :data-icon="icon"></i>
     </span>
     <span v-else-if="icon" class="icon">
@@ -173,10 +186,16 @@ const classes = computed(() => {
     </span>
     <span>
       <slot></slot>
+    </span>
+    <span v-if="isCaretIconify" class="caret">
+      <i aria-hidden="true" class="iconify" :data-icon="iconCaret"></i>
+    </span>
+    <span v-else-if="iconCaret" class="caret">
+      <i aria-hidden="true" :class="iconCaret"></i>
     </span>
   </a>
   <button v-else :class="classes" :disabled="disabled">
-    <span v-if="isIconify" class="icon">
+    <span v-if="isIconIconify" class="icon">
       <i aria-hidden="true" class="iconify" :data-icon="icon"></i>
     </span>
     <span v-else-if="icon" class="icon">
@@ -184,6 +203,12 @@ const classes = computed(() => {
     </span>
     <span>
       <slot></slot>
+    </span>
+    <span v-if="isCaretIconify" class="caret">
+      <i aria-hidden="true" class="iconify" :data-icon="iconCaret"></i>
+    </span>
+    <span v-else-if="iconCaret" class="caret">
+      <i aria-hidden="true" :class="iconCaret"></i>
     </span>
   </button>
 </template>

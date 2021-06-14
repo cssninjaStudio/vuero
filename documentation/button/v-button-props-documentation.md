@@ -11,6 +11,7 @@ Here is the full props available for `<V-Button />` component:
 | to           | <span class="is-undefined">`undefined`</span> | string, <span class="is-array">`RouteLocationRaw`</span>   |
 | href         | <span class="is-undefined">`undefined`</span> | string                                                     |
 | icon         | <span class="is-undefined">`undefined`</span> | string                                                     |
+| iconCaret    | <span class="is-undefined">`undefined`</span> | string                                                     |
 | size         | <span class="is-undefined">`undefined`</span> | `big`, `huge`                                              |
 | color        | <span class="is-undefined">`undefined`</span> | `primary`, `success`, `info`, `warning`, `danger`, `white` |
 | rounded      | <span class="is-boolean">`false`</span>       | boolean                                                    |
