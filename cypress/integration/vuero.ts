@@ -9,6 +9,23 @@ import {
   templates,
 } from '../fixtures/routes'
 
+const buildUri = ({ path, query }: { path: string; query?: any }) => {
+  let uri = path
+
+  if (query) {
+    const args = []
+    for (const key of Object.keys(query)) {
+      args.push(`${key}=${query[key]}`)
+    }
+
+    uri += `?${args.join('&')}`
+  }
+
+  console.log('uri:', uri)
+
+  return uri
+}
+
 describe('Desktop - Viewport (1274*714)', () => {
   beforeEach(() => {
     cy.viewport(1274, 714)
@@ -16,7 +33,7 @@ describe('Desktop - Viewport (1274*714)', () => {
 
   for (const route of templates) {
     it(`Desktop - Templates - ${route.name}`, () => {
-      cy.visit(route.path)
+      cy.visit(buildUri(route))
       // cy.get('.default-layout, .navbar-layout')
       cy.wait(waitTimeout)
 
@@ -55,8 +72,8 @@ describe('Desktop - Viewport (1274*714)', () => {
   }
 
   for (const route of minimal) {
-    it(`Desktop - Minimal Layout - ${route.name}`, () => {
-      cy.visit(`${route.path}`)
+    it(`Desktop - Minimal Layout - ${route.name}}`, () => {
+      cy.visit(buildUri(route))
       // cy.get('.minimal-wrapper')
       cy.wait(waitTimeout)
 
@@ -96,7 +113,7 @@ describe('Desktop - Viewport (1274*714)', () => {
 
   for (const route of auth) {
     it(`Desktop - Auth Layout - ${route.name}`, () => {
-      cy.visit(route.path)
+      cy.visit(buildUri(route))
       // cy.get('.auth-wrapper')
       cy.wait(waitTimeout)
 
@@ -136,7 +153,7 @@ describe('Desktop - Viewport (1274*714)', () => {
 
   for (const route of sidebar) {
     it(`Desktop - Sidebar Layout - ${route.name}`, () => {
-      cy.visit(route.path)
+      cy.visit(buildUri(route))
       // cy.get('.default-layout')
       cy.wait(waitTimeout)
 
@@ -176,7 +193,7 @@ describe('Desktop - Viewport (1274*714)', () => {
 
   for (const route of navbar) {
     it(`Desktop - Navbar Layout - ${route.name}`, () => {
-      cy.visit(route.path)
+      cy.visit(buildUri(route))
       // cy.get('.navbar-layout')
       cy.wait(waitTimeout)
 

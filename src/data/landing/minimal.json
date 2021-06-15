@@ -84,7 +84,7 @@
     }
   },
   {
-    "name": "Wizard V1 (1/7)",
+    "name": "Wizard V1 (step 1)",
     "category": "APP",
     "displayOrder": 50,
     "new": false,
@@ -93,12 +93,12 @@
       "path": "/wizard-v1"
     },
     "screenshot": {
-      "light": "/images/screenshots/minimal/wizard-v1-1/7--light.webp",
-      "dark": "/images/screenshots/minimal/wizard-v1-1/7--dark.webp"
+      "light": "/images/screenshots/minimal/wizard-v1-step-1--light.webp",
+      "dark": "/images/screenshots/minimal/wizard-v1-step-1--dark.webp"
     }
   },
   {
-    "name": "Wizard V1 (2/7)",
+    "name": "Wizard V1 (step 2)",
     "category": "APP",
     "displayOrder": 51,
     "new": false,
@@ -110,12 +110,12 @@
       }
     },
     "screenshot": {
-      "light": "/images/screenshots/minimal/wizard-v1-2/7--light.webp",
-      "dark": "/images/screenshots/minimal/wizard-v1-2/7--dark.webp"
+      "light": "/images/screenshots/minimal/wizard-v1-step-2--light.webp",
+      "dark": "/images/screenshots/minimal/wizard-v1-step-2--dark.webp"
     }
   },
   {
-    "name": "Wizard V1 (3/7)",
+    "name": "Wizard V1 (step 3)",
     "category": "APP",
     "displayOrder": 52,
     "new": false,
@@ -127,12 +127,12 @@
       }
     },
     "screenshot": {
-      "light": "/images/screenshots/minimal/wizard-v1-3/7--light.webp",
-      "dark": "/images/screenshots/minimal/wizard-v1-3/7--dark.webp"
+      "light": "/images/screenshots/minimal/wizard-v1-step-3--light.webp",
+      "dark": "/images/screenshots/minimal/wizard-v1-step-3--dark.webp"
     }
   },
   {
-    "name": "Wizard V1 (4/7)",
+    "name": "Wizard V1 (step 4)",
     "category": "APP",
     "displayOrder": 53,
     "new": false,
@@ -144,12 +144,12 @@
       }
     },
     "screenshot": {
-      "light": "/images/screenshots/minimal/wizard-v1-4/7--light.webp",
-      "dark": "/images/screenshots/minimal/wizard-v1-4/7--dark.webp"
+      "light": "/images/screenshots/minimal/wizard-v1-step-4--light.webp",
+      "dark": "/images/screenshots/minimal/wizard-v1-step-4--dark.webp"
     }
   },
   {
-    "name": "Wizard V1 (5/7)",
+    "name": "Wizard V1 (step 5)",
     "category": "APP",
     "displayOrder": 54,
     "new": false,
@@ -161,12 +161,12 @@
       }
     },
     "screenshot": {
-      "light": "/images/screenshots/minimal/wizard-v1-5/7--light.webp",
-      "dark": "/images/screenshots/minimal/wizard-v1-5/7--dark.webp"
+      "light": "/images/screenshots/minimal/wizard-v1-step-5--light.webp",
+      "dark": "/images/screenshots/minimal/wizard-v1-step-5--dark.webp"
     }
   },
   {
-    "name": "Wizard V1 (6/7)",
+    "name": "Wizard V1 (step 6)",
     "category": "APP",
     "displayOrder": 55,
     "new": false,
@@ -178,12 +178,12 @@
       }
     },
     "screenshot": {
-      "light": "/images/screenshots/minimal/wizard-v1-6/7--light.webp",
-      "dark": "/images/screenshots/minimal/wizard-v1-6/7--dark.webp"
+      "light": "/images/screenshots/minimal/wizard-v1-step-6--light.webp",
+      "dark": "/images/screenshots/minimal/wizard-v1-step-6--dark.webp"
     }
   },
   {
-    "name": "Wizard V1 (7/7)",
+    "name": "Wizard V1 (step 7)",
     "category": "APP",
     "displayOrder": 56,
     "new": false,
@@ -195,8 +195,8 @@
       }
     },
     "screenshot": {
-      "light": "/images/screenshots/minimal/wizard-v1-7/7--light.webp",
-      "dark": "/images/screenshots/minimal/wizard-v1-7/7--dark.webp"
+      "light": "/images/screenshots/minimal/wizard-v1-step-7--light.webp",
+      "dark": "/images/screenshots/minimal/wizard-v1-step-7--dark.webp"
     }
   },
   {

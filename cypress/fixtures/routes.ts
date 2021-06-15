@@ -58,42 +58,60 @@ export const minimal = [
   {
     name: 'Wizard V1 (step 2)',
     category: 'APP',
-    path: '/wizard-v1?step=2',
+    path: '/wizard-v1',
+    query: {
+      step: 2,
+    },
     prefix: 'minimal',
     displayOrder: 51,
   },
   {
     name: 'Wizard V1 (step 3)',
     category: 'APP',
-    path: '/wizard-v1?step=3',
+    path: '/wizard-v1',
+    query: {
+      step: 3,
+    },
     prefix: 'minimal',
     displayOrder: 52,
   },
   {
     name: 'Wizard V1 (step 4)',
     category: 'APP',
-    path: '/wizard-v1?step=4',
+    path: '/wizard-v1',
+    query: {
+      step: 4,
+    },
     prefix: 'minimal',
     displayOrder: 53,
   },
   {
     name: 'Wizard V1 (step 5)',
     category: 'APP',
-    path: '/wizard-v1?step=5',
+    path: '/wizard-v1',
+    query: {
+      step: 5,
+    },
     prefix: 'minimal',
     displayOrder: 54,
   },
   {
     name: 'Wizard V1 (step 6)',
     category: 'APP',
-    path: '/wizard-v1?step=6',
+    path: '/wizard-v1',
+    query: {
+      step: 6,
+    },
     prefix: 'minimal',
     displayOrder: 55,
   },
   {
     name: 'Wizard V1 (step 7)',
     category: 'APP',
-    path: '/wizard-v1?step=7',
+    path: '/wizard-v1',
+    query: {
+      step: 7,
+    },
     prefix: 'minimal',
     displayOrder: 56,
   },

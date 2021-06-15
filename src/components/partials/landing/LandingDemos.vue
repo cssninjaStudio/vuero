@@ -75,8 +75,8 @@ const navbarDemos = navbar.sort(displayOrder)
                   <span>{{ item.name }}</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: item.route.name }"
-                    >Go to demo
+                  <RouterLink :to="item.route">
+                    Go to demo
                     <i aria-hidden="true" class="fas fa-angle-right"></i>
                   </RouterLink>
                 </div>
@@ -135,8 +135,8 @@ const navbarDemos = navbar.sort(displayOrder)
                   <span>{{ item.name }}</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: item.route.name }"
-                    >Go to demo
+                  <RouterLink :to="item.route">
+                    Go to demo
                     <i aria-hidden="true" class="fas fa-angle-right"></i>
                   </RouterLink>
                 </div>
@@ -195,8 +195,8 @@ const navbarDemos = navbar.sort(displayOrder)
                   <span>{{ item.name }}</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: item.route.name }"
-                    >Go to demo
+                  <RouterLink :to="item.route">
+                    Go to demo
                     <i aria-hidden="true" class="fas fa-angle-right"></i>
                   </RouterLink>
                 </div>
@@ -255,8 +255,8 @@ const navbarDemos = navbar.sort(displayOrder)
                   <span>{{ item.name }}</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: item.route.name }"
-                    >Go to demo
+                  <RouterLink :to="item.route">
+                    Go to demo
                     <i aria-hidden="true" class="fas fa-angle-right"></i>
                   </RouterLink>
                 </div>
@@ -315,8 +315,8 @@ const navbarDemos = navbar.sort(displayOrder)
                   <span>{{ item.name }}</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="{ name: item.route.name }"
-                    >Go to demo
+                  <RouterLink :to="item.route">
+                    Go to demo
                     <i aria-hidden="true" class="fas fa-angle-right"></i>
                   </RouterLink>
                 </div>

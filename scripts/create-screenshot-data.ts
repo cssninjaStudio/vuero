@@ -14,6 +14,7 @@ const outputDir = path.resolve(projectRootDir, 'src/data/landing')
 type Route = {
   name: string
   path: string
+  query?: any
   category: string
   displayOrder: number
   new?: boolean
@@ -49,6 +50,7 @@ function generateData(routes: Route[], prefix: string) {
       route: {
         name: routeName.replace(/-$/, ''),
         path: route.path,
+        query: route.query,
       },
       screenshot: {
         light: `/images/screenshots/${prefix}/${normalized}-light.webp`,
