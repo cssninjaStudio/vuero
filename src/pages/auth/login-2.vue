@@ -90,8 +90,8 @@ useHead({
                 <div class="auth-content">
                   <h2>Welcome Back.</h2>
                   <p>Please sign in to your account</p>
-                  <RouterLink :to="{ name: 'auth-signup-2' }"
-                    >I do not have an account yet
+                  <RouterLink :to="{ name: 'auth-signup-2' }">
+                    I do not have an account yet
                   </RouterLink>
                 </div>
                 <div class="auth-form-wrapper">

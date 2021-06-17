@@ -21,6 +21,6 @@ for layout in sidebar auth minimal navbar templates; do
 
     echo "$src"; 
     echo "$filename"; 
-    cwebp -q $quality -resize $width $height $src -o "${output}${filename}.webp"
+    cwebp -short -q $quality -resize $width $height $src -o "${output}${filename}.webp"
   done
 done 

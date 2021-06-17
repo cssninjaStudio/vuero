@@ -1,9 +1,11 @@
 export const themeColors = {
   primary: '#41b883',
-  primaryMedium: '#d4b3ff',
-  primaryLight: '#b8ccff',
+  primaryMedium: '#b4e4ce',
+  primaryLight: '#f7fcfa',
   secondary: '#ff227d',
   accent: '#797bf2',
+  accentMedium: '#d4b3ff',
+  accentLight: '#b8ccff',
   success: '#06d6a0',
   info: '#039BE5',
   warning: '#faae42',

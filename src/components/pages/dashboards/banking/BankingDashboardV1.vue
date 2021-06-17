@@ -317,7 +317,8 @@ import {
                       aria-hidden="true"
                       class="iconify"
                       data-icon="feather:arrow-right"
-                  /></a>
+                    />
+                  </a>
                 </div>
               </div>
 

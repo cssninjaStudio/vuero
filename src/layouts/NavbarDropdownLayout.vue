@@ -13,6 +13,10 @@ const props = defineProps({
     type: String as PropType<NavbarDropdownTheme>,
     default: 'default',
   },
+  nowrap: {
+    type: Boolean,
+    default: false,
+  },
 })
 
 const route = useRoute()
@@ -165,7 +169,7 @@ watch(
 
       <!-- Custom navbar toolbar -->
       <template #toolbar>
-        <Toolbar />
+        <Toolbar class="desktop-toolbar" />
         <LayoutSwitcher />
 
         <UserProfileDropdown />
@@ -253,7 +257,10 @@ watch(
 
     <div class="view-wrapper has-top-nav">
       <div class="page-content-wrapper">
-        <div class="page-content is-relative">
+        <template v-if="props.nowrap">
+          <slot></slot>
+        </template>
+        <div v-else class="page-content is-relative">
           <div class="is-navbar-lg">
             <div class="page-title has-text-centered">
               <!-- Mobile Page Title -->
@@ -261,7 +268,7 @@ watch(
                 <h1 class="title is-4">{{ pageTitle }}</h1>
               </div>
 
-              <Toolbar />
+              <Toolbar class="mobile-toolbar" />
             </div>
 
             <slot></slot>

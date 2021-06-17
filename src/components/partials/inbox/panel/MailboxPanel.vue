@@ -17,8 +17,8 @@ const dropdown = useDropdown(dropdownElement)
         <div>
           <button class="button" @click="dropdown.toggle">
             <span class="icon is-small">
-              <i aria-hidden="true" class="material-icons"
-                >keyboard_arrow_down</i
+              <i aria-hidden="true" class="material-icons">
+                keyboard_arrow_down</i
               >
             </span>
           </button>

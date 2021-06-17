@@ -33,8 +33,8 @@
             </div>
           </div>
           <div>
-            <span class="moto"
-              >Designed and coded with
+            <span class="moto">
+              Designed and coded with
               <i aria-hidden="true" class="fas fa-heart text-danger"></i> by CSS
               Ninja.</span
             >

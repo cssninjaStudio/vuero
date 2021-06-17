@@ -1,5 +1,33 @@
 [
   {
+    "name": "Maps V1",
+    "category": "APP",
+    "displayOrder": 211,
+    "new": true,
+    "route": {
+      "name": "navbar-maps-1",
+      "path": "/navbar/maps-1"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/navbar/maps-v1-light.webp",
+      "dark": "/images/screenshots/navbar/maps-v1-dark.webp"
+    }
+  },
+  {
+    "name": "Maps V2",
+    "category": "APP",
+    "displayOrder": 212,
+    "new": true,
+    "route": {
+      "name": "navbar-maps-2",
+      "path": "/navbar/maps-2"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/navbar/maps-v2-light.webp",
+      "dark": "/images/screenshots/navbar/maps-v2-dark.webp"
+    }
+  },
+  {
     "name": "Action Page V1",
     "category": "LAYOUTS",
     "displayOrder": 590,

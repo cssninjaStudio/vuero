@@ -31,7 +31,8 @@ import { notifications } from '/@src/data/widgets/ui/notificationList'
                     aria-hidden="true"
                     class="iconify"
                     data-icon="feather:trending-up"
-                /></span>
+                  />
+                </span>
                 <span>since last month</span>
               </div>
             </div>
@@ -55,7 +56,8 @@ import { notifications } from '/@src/data/widgets/ui/notificationList'
                     aria-hidden="true"
                     class="iconify"
                     data-icon="feather:trending-down"
-                /></span>
+                  />
+                </span>
                 <span>going down</span>
               </div>
             </div>
@@ -79,7 +81,8 @@ import { notifications } from '/@src/data/widgets/ui/notificationList'
                     aria-hidden="true"
                     class="iconify"
                     data-icon="feather:trending-up"
-                /></span>
+                  />
+                </span>
                 <span>going up</span>
               </div>
             </div>
@@ -158,7 +161,8 @@ import { notifications } from '/@src/data/widgets/ui/notificationList'
                       aria-hidden="true"
                       class="iconify"
                       data-icon="feather:trending-up"
-                  /></span>
+                    />
+                  </span>
                   <span>since last month</span>
                 </div>
 

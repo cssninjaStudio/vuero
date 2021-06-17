@@ -176,7 +176,8 @@ const filteredData = computed(() => {
                       dark-outlined
                       is-pushed-mobile
                     "
-                    >Purchase
+                  >
+                    Purchase
                     <i aria-hidden="true" class="fas fa-circle dot"></i> ${{
                       item.price
                     }}

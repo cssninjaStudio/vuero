@@ -53,6 +53,10 @@ router.beforeEach(() => {
 })
 router.afterEach(() => {
   NProgress.done()
+
+  if (window.Cypress) {
+    window.appReady = true
+  }
 })
 
 export default router

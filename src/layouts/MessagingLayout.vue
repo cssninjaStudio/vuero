@@ -175,7 +175,8 @@ const isDesktopSidebarOpen = ref(false)
               aria-hidden="true"
               class="iconify sidebar-svg"
               data-icon="feather-x"
-          /></a>
+            />
+          </a>
         </li>
 
         <!-- Settings -->

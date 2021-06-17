@@ -269,6 +269,30 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
+                    <RouterLink :to="{ name: 'navbar-maps-1' }">
+                      <i aria-hidden="true" class="lnil lnil-map"></i>
+                      <span>Maps V1</span>
+                      <V-Tag label="v1.2" color="primary" outlined curved />
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
+                    </RouterLink>
+                  </li>
+                  <li>
+                    <RouterLink :to="{ name: 'navbar-maps-2' }">
+                      <i aria-hidden="true" class="lnil lnil-map"></i>
+                      <span>Maps V2</span>
+                      <V-Tag label="v1.2" color="primary" outlined curved />
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
+                    </RouterLink>
+                  </li>
+                  <li>
                     <RouterLink :to="{ name: 'inbox' }">
                       <i aria-hidden="true" class="lnil lnil-envelope"></i>
                       <span>Inbox</span>

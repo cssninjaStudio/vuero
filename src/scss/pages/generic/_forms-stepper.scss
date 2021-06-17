@@ -2,7 +2,7 @@
 2. Stepper Form
 ========================================================================== */
 
-.is-webapp {
+.has-top-nav {
   .stepper-form {
     max-width: 880px;
     margin: 0 auto;
@@ -289,7 +289,7 @@
             height: 18px;
             width: 18px;
             margin-right: 0.75rem;
-            stroke: $light-text;
+            color: $light-text;
           }
 
           > span {
@@ -409,7 +409,7 @@
             width: 14px;
             stroke-width: 3px;
             margin-right: 0.45rem;
-            stroke: $primary;
+            color: $primary;
           }
         }
       }
@@ -488,7 +488,7 @@ body {
             }
 
             svg {
-              stroke: $dark-dark-text;
+              color: $dark-dark-text;
             }
           }
 
@@ -575,7 +575,7 @@ body {
                   }
 
                   svg {
-                    stroke: $light-text;
+                    color: $light-text;
                   }
                 }
               }

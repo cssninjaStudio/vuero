@@ -40,8 +40,8 @@ const dropdown2 = useDropdown(dropdownElement2)
         @error.once="$event.target.src = 'https://via.placeholder.com/150x150'"
       />
       <div class="message-meta">
-        <span class="message-title"
-          >Don't forget to send me those budget notes</span
+        <span class="message-title">
+          Don't forget to send me those budget notes</span
         >
         <span class="sender-email">&lt;greta@vuero.io&gt;</span>
       </div>
@@ -167,8 +167,8 @@ const dropdown2 = useDropdown(dropdownElement2)
             </li>
           </ul>
           <p>
-            <mark
-              >Deinde disputat, quod cuiusque generis animantium statui deceat
+            <mark>
+              Deinde disputat, quod cuiusque generis animantium statui deceat
               extremum.</mark
             >
             Ne amores quidem sanctos a sapiente alienos esse arbitrantur. Qui

@@ -103,8 +103,8 @@ const optionsSingle = [
                 <div class="tile-meta">
                   <V-Avatar picture="/demo/avatars/39.jpg" size="small" />
                   <div class="meta-inner">
-                    <span class="dark-inverted" data-filter-match
-                      >Alejandro B.</span
+                    <span class="dark-inverted" data-filter-match>
+                      Alejandro B.</span
                     >
                     <span>30 minutes ago</span>
                   </div>
@@ -136,8 +136,8 @@ const optionsSingle = [
                 <div class="tile-meta">
                   <V-Avatar picture="/demo/avatars/15.jpg" size="small" />
                   <div class="meta-inner">
-                    <span class="dark-inverted" data-filter-match
-                      >Hilde V.</span
+                    <span class="dark-inverted" data-filter-match>
+                      Hilde V.</span
                     >
                     <span>4 hours ago</span>
                   </div>
@@ -169,8 +169,8 @@ const optionsSingle = [
                 <div class="tile-meta">
                   <V-Avatar picture="/demo/avatars/24.jpg" size="small" />
                   <div class="meta-inner">
-                    <span class="dark-inverted" data-filter-match
-                      >Sandrine C.</span
+                    <span class="dark-inverted" data-filter-match>
+                      Sandrine C.</span
                     >
                     <span>5 hours ago</span>
                   </div>
@@ -208,8 +208,8 @@ const optionsSingle = [
                     <div class="tile-meta">
                       <V-Avatar picture="/demo/avatars/27.jpg" size="small" />
                       <div class="meta-inner">
-                        <span class="dark-inverted" data-filter-match
-                          >Carmen E.</span
+                        <span class="dark-inverted" data-filter-match>
+                          Carmen E.</span
                         >
                         <span>8 hours ago</span>
                       </div>
@@ -240,8 +240,8 @@ const optionsSingle = [
                     <div class="tile-meta">
                       <V-Avatar picture="/demo/avatars/10.jpg" size="small" />
                       <div class="meta-inner">
-                        <span class="dark-inverted" data-filter-match
-                          >Henry G.</span
+                        <span class="dark-inverted" data-filter-match>
+                          Henry G.</span
                         >
                         <span>1 day ago</span>
                       </div>
@@ -273,8 +273,8 @@ const optionsSingle = [
                     <div class="tile-meta">
                       <V-Avatar picture="/demo/avatars/22.jpg" size="small" />
                       <div class="meta-inner">
-                        <span class="dark-inverted" data-filter-match
-                          >Jimmy H.</span
+                        <span class="dark-inverted" data-filter-match>
+                          Jimmy H.</span
                         >
                         <span>1 day ago</span>
                       </div>
@@ -311,8 +311,8 @@ const optionsSingle = [
                   <div class="tile-meta">
                     <V-Avatar picture="/demo/avatars/16.jpg" size="small" />
                     <div class="meta-inner">
-                      <span class="dark-inverted" data-filter-match
-                        >Jason G.</span
+                      <span class="dark-inverted" data-filter-match>
+                        Jason G.</span
                       >
                       <span>2 days ago</span>
                     </div>
@@ -349,8 +349,8 @@ const optionsSingle = [
                 <div class="tile-meta">
                   <V-Avatar picture="/demo/avatars/26.jpg" size="small" />
                   <div class="meta-inner">
-                    <span class="dark-inverted" data-filter-match
-                      >Courtney W.</span
+                    <span class="dark-inverted" data-filter-match>
+                      Courtney W.</span
                     >
                     <span>2 days ago</span>
                   </div>
@@ -416,8 +416,8 @@ const optionsSingle = [
                 <div class="tile-meta">
                   <V-Avatar picture="/demo/avatars/40.jpg" size="small" />
                   <div class="meta-inner">
-                    <span class="dark-inverted" data-filter-match
-                      >Jeanne M.</span
+                    <span class="dark-inverted" data-filter-match>
+                      Jeanne M.</span
                     >
                     <span>3 days ago</span>
                   </div>
@@ -483,8 +483,8 @@ const optionsSingle = [
                 <div class="tile-meta">
                   <V-Avatar picture="/demo/avatars/19.jpg" size="small" />
                   <div class="meta-inner">
-                    <span class="dark-inverted" data-filter-match
-                      >Greta K.</span
+                    <span class="dark-inverted" data-filter-match>
+                      Greta K.</span
                     >
                     <span>3 days ago</span>
                   </div>
@@ -516,8 +516,8 @@ const optionsSingle = [
                 <div class="tile-meta">
                   <V-Avatar picture="/demo/avatars/33.jpg" size="small" />
                   <div class="meta-inner">
-                    <span class="dark-inverted" data-filter-match
-                      >Harvey M.</span
+                    <span class="dark-inverted" data-filter-match>
+                      Harvey M.</span
                     >
                     <span>4 days ago</span>
                   </div>

@@ -180,7 +180,7 @@ useHead({
         <!--User Settings-->
         <div class="user-settings">
           <!--Toolbar-->
-          <Toolbar />
+          <Toolbar class="desktop-toolbar" />
 
           <!--User Menu-->
           <div

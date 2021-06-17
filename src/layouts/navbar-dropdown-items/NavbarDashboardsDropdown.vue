@@ -352,6 +352,42 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
                 <RouterLink
+                  :to="{ name: 'navbar-maps-1' }"
+                  class="dropdown-item is-media"
+                >
+                  <div class="icon">
+                    <i aria-hidden="true" class="lnil lnil-map"></i>
+                  </div>
+                  <div class="meta">
+                    <span>Maps V1</span>
+                    <V-Tag
+                      label="v1.2"
+                      color="primary"
+                      outlined
+                      curved
+                      class="ml-3"
+                    />
+                  </div>
+                </RouterLink>
+                <RouterLink
+                  :to="{ name: 'navbar-maps-2' }"
+                  class="dropdown-item is-media"
+                >
+                  <div class="icon">
+                    <i aria-hidden="true" class="lnil lnil-map"></i>
+                  </div>
+                  <div class="meta">
+                    <span>Maps V2</span>
+                    <V-Tag
+                      label="v1.2"
+                      color="primary"
+                      outlined
+                      curved
+                      class="ml-3"
+                    />
+                  </div>
+                </RouterLink>
+                <RouterLink
                   :to="{ name: 'inbox' }"
                   class="dropdown-item is-media"
                 >

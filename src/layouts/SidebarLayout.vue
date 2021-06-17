@@ -32,6 +32,10 @@ const props = defineProps({
     type: Boolean,
     default: false,
   },
+  nowrap: {
+    type: Boolean,
+    default: false,
+  },
 })
 
 const route = useRoute()
@@ -287,7 +291,8 @@ watch(
               aria-hidden="true"
               class="iconify sidebar-svg"
               data-icon="feather-x"
-          /></a>
+            />
+          </a>
         </li>
 
         <!-- Settings -->
@@ -342,7 +347,10 @@ watch(
 
     <div class="view-wrapper">
       <div class="page-content-wrapper">
-        <div class="page-content is-relative">
+        <template v-if="props.nowrap">
+          <slot></slot>
+        </template>
+        <div v-else class="page-content is-relative">
           <div class="page-title has-text-centered">
             <!-- Sidebar Trigger -->
             <div
@@ -367,7 +375,7 @@ watch(
               <h1 class="title is-4">{{ pageTitle }}</h1>
             </div>
 
-            <Toolbar />
+            <Toolbar class="desktop-toolbar" />
           </div>
 
           <slot></slot>

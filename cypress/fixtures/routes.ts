@@ -693,6 +693,22 @@ export const sidebar = [
     prefix: 'sidebar',
     displayOrder: 210,
   },
+  {
+    name: 'Maps V1',
+    category: 'APP',
+    path: '/sidebar/maps-1',
+    prefix: 'sidebar',
+    new: true,
+    displayOrder: 211,
+  },
+  {
+    name: 'Maps V2',
+    category: 'APP',
+    path: '/sidebar/maps-2',
+    prefix: 'sidebar',
+    new: true,
+    displayOrder: 212,
+  },
   ...layouts.map((item) => {
     return {
       ...item,
@@ -710,6 +726,22 @@ export const sidebar = [
 ]
 
 export const navbar = [
+  {
+    name: 'Maps V1',
+    category: 'APP',
+    path: '/navbar/maps-1',
+    prefix: 'navbar',
+    new: true,
+    displayOrder: 211,
+  },
+  {
+    name: 'Maps V2',
+    category: 'APP',
+    path: '/navbar/maps-2',
+    prefix: 'navbar',
+    new: true,
+    displayOrder: 212,
+  },
   ...layouts.map((item) => {
     return {
       ...item,

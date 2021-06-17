@@ -23,29 +23,13 @@ useHead({
 <template>
   <NavbarDropdownLayout>
     <!-- Content Wrapper -->
-    <div class="view-wrapper has-top-nav">
-      <div class="page-content-wrapper">
-        <div class="page-content is-relative">
-          <div class="is-navbar-lg">
-            <div class="page-title has-text-centered">
-              <!-- Page title -->
-              <div class="title-wrap">
-                <h1 class="title is-4">Blank Page 4 - Navbar</h1>
-              </div>
+    <div class="page-content-inner">
+      <!--
+        Page content goes here
 
-              <Toolbar />
-            </div>
-            <div class="page-content-inner">
-              <!--
-                Page content goes here
-
-                You can see pages content samples from 
-                files in /src/components/pages directory
-              -->
-            </div>
-          </div>
-        </div>
-      </div>
+        You can see pages content samples from 
+        files in /src/components/pages directory
+      -->
     </div>
   </NavbarDropdownLayout>
 </template>

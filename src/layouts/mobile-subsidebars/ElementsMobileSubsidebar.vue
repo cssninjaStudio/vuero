@@ -219,8 +219,8 @@
                   class="iconify"
                   data-icon="feather:circle"
                 >
-                </i
-                >File Input
+                </i>
+                File Input
               </RouterLink>
             </li>
             <li>

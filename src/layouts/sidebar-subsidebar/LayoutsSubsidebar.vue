@@ -18,13 +18,14 @@ const emit = defineEmit(['close'])
       <ul>
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link"
-              >Lists
+            <a class="parent-link">
+              Lists
               <i
                 aria-hidden="true"
                 class="iconify"
                 data-icon="feather:chevron-right"
-            /></a>
+              />
+            </a>
           </div>
           <ul>
             <li>
@@ -64,13 +65,14 @@ const emit = defineEmit(['close'])
         </li>
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link"
-              >Flex Lists
+            <a class="parent-link">
+              Flex Lists
               <i
                 aria-hidden="true"
                 class="iconify"
                 data-icon="feather:chevron-right"
-            /></a>
+              />
+            </a>
           </div>
           <ul>
             <li>
@@ -104,13 +106,14 @@ const emit = defineEmit(['close'])
         </li>
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link"
-              >Datatable
+            <a class="parent-link">
+              Datatable
               <i
                 aria-hidden="true"
                 class="iconify"
                 data-icon="feather:chevron-right"
-            /></a>
+              />
+            </a>
           </div>
           <ul>
             <li>
@@ -154,13 +157,14 @@ const emit = defineEmit(['close'])
 
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link"
-              >Form Layouts
+            <a class="parent-link">
+              Form Layouts
               <i
                 aria-hidden="true"
                 class="iconify"
                 data-icon="feather:chevron-right"
-            /></a>
+              />
+            </a>
           </div>
           <ul>
             <li>
@@ -213,13 +217,14 @@ const emit = defineEmit(['close'])
         <li class="divider"></li>
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link"
-              >Card Grid
+            <a class="parent-link">
+              Card Grid
               <i
                 aria-hidden="true"
                 class="iconify"
                 data-icon="feather:chevron-right"
-            /></a>
+              />
+            </a>
           </div>
           <ul>
             <li>
@@ -262,13 +267,14 @@ const emit = defineEmit(['close'])
         </li>
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link"
-              >Tile Grid
+            <a class="parent-link">
+              Tile Grid
               <i
                 aria-hidden="true"
                 class="iconify"
                 data-icon="feather:chevron-right"
-            /></a>
+              />
+            </a>
           </div>
           <ul>
             <li>
@@ -302,13 +308,14 @@ const emit = defineEmit(['close'])
         </li>
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link"
-              >User Grid
+            <a class="parent-link">
+              User Grid
               <i
                 aria-hidden="true"
                 class="iconify"
                 data-icon="feather:chevron-right"
-            /></a>
+              />
+            </a>
           </div>
           <ul>
             <li>
@@ -352,13 +359,14 @@ const emit = defineEmit(['close'])
         <li class="divider"></li>
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link"
-              >Personal
+            <a class="parent-link">
+              Personal
               <i
                 aria-hidden="true"
                 class="iconify"
                 data-icon="feather:chevron-right"
-            /></a>
+              />
+            </a>
           </div>
           <ul>
             <li>
@@ -401,13 +409,14 @@ const emit = defineEmit(['close'])
         </li>
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link"
-              >Pages
+            <a class="parent-link">
+              Pages
               <i
                 aria-hidden="true"
                 class="iconify"
                 data-icon="feather:chevron-right"
-            /></a>
+              />
+            </a>
           </div>
           <ul>
             <li>
@@ -468,13 +477,14 @@ const emit = defineEmit(['close'])
         </li>
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link"
-              >Subpages
+            <a class="parent-link">
+              Subpages
               <i
                 aria-hidden="true"
                 class="iconify"
                 data-icon="feather:chevron-right"
-            /></a>
+              />
+            </a>
           </div>
           <ul>
             <li>
@@ -508,13 +518,14 @@ const emit = defineEmit(['close'])
         </li>
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link"
-              >Projects
+            <a class="parent-link">
+              Projects
               <i
                 aria-hidden="true"
                 class="iconify"
                 data-icon="feather:chevron-right"
-            /></a>
+              />
+            </a>
           </div>
           <ul>
             <li>
@@ -567,13 +578,14 @@ const emit = defineEmit(['close'])
         <li class="divider"></li>
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link"
-              >Utility
+            <a class="parent-link">
+              Utility
               <i
                 aria-hidden="true"
                 class="iconify"
                 data-icon="feather:chevron-right"
-            /></a>
+              />
+            </a>
           </div>
           <ul>
             <li>
@@ -613,13 +625,14 @@ const emit = defineEmit(['close'])
         </li>
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link"
-              >Onboarding
+            <a class="parent-link">
+              Onboarding
               <i
                 aria-hidden="true"
                 class="iconify"
                 data-icon="feather:chevron-right"
-            /></a>
+              />
+            </a>
           </div>
           <ul>
             <li>
@@ -680,13 +693,14 @@ const emit = defineEmit(['close'])
         </li>
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link"
-              >Error Pages
+            <a class="parent-link">
+              Error Pages
               <i
                 aria-hidden="true"
                 class="iconify"
                 data-icon="feather:chevron-right"
-            /></a>
+              />
+            </a>
           </div>
           <ul>
             <li>

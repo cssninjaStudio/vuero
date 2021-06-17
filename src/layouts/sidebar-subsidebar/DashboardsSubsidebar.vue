@@ -18,13 +18,14 @@ const emit = defineEmit(['close'])
       <ul>
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link"
-              >Personal
+            <a class="parent-link">
+              Personal
               <i
                 aria-hidden="true"
                 class="iconify"
                 data-icon="feather:chevron-right"
-            /></a>
+              />
+            </a>
           </div>
           <ul>
             <li>
@@ -58,13 +59,14 @@ const emit = defineEmit(['close'])
         </li>
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link"
-              >Finance
+            <a class="parent-link">
+              Finance
               <i
                 aria-hidden="true"
                 class="iconify"
                 data-icon="feather:chevron-right"
-            /></a>
+              />
+            </a>
           </div>
           <ul>
             <li>
@@ -98,13 +100,14 @@ const emit = defineEmit(['close'])
         </li>
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link"
-              >Banking
+            <a class="parent-link">
+              Banking
               <i
                 aria-hidden="true"
                 class="iconify"
                 data-icon="feather:chevron-right"
-            /></a>
+              />
+            </a>
           </div>
           <ul>
             <li>
@@ -138,13 +141,14 @@ const emit = defineEmit(['close'])
         </li>
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link"
-              >Business
+            <a class="parent-link">
+              Business
               <i
                 aria-hidden="true"
                 class="iconify"
                 data-icon="feather:chevron-right"
-            /></a>
+              />
+            </a>
           </div>
           <ul>
             <li>
@@ -187,13 +191,14 @@ const emit = defineEmit(['close'])
         </li>
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link"
-              >Lifestyle
+            <a class="parent-link">
+              Lifestyle
               <i
                 aria-hidden="true"
                 class="iconify"
                 data-icon="feather:chevron-right"
-            /></a>
+              />
+            </a>
           </div>
           <ul>
             <li>
@@ -245,13 +250,14 @@ const emit = defineEmit(['close'])
         </li>
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link"
-              >Ecommerce
+            <a class="parent-link">
+              Ecommerce
               <i
                 aria-hidden="true"
                 class="iconify"
                 data-icon="feather:chevron-right"
-            /></a>
+              />
+            </a>
           </div>
           <ul>
             <li>
@@ -267,13 +273,14 @@ const emit = defineEmit(['close'])
         </li>
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link"
-              >Apps
+            <a class="parent-link">
+              Apps
               <i
                 aria-hidden="true"
                 class="iconify"
                 data-icon="feather:chevron-right"
-            /></a>
+              />
+            </a>
           </div>
           <ul>
             <li>
@@ -283,6 +290,20 @@ const emit = defineEmit(['close'])
               >
                 <i aria-hidden="true" class="lnil lnil-pizza"></i>
                 <span>Food Delivery</span>
+              </RouterLink>
+            </li>
+            <li>
+              <RouterLink :to="{ name: 'sidebar-maps-1' }" class="is-submenu">
+                <i aria-hidden="true" class="lnil lnil-map"></i>
+                <span>App V1</span>
+                <V-Tag label="v1.2" color="primary" outlined curved />
+              </RouterLink>
+            </li>
+            <li>
+              <RouterLink :to="{ name: 'sidebar-maps-2' }" class="is-submenu">
+                <i aria-hidden="true" class="lnil lnil-map"></i>
+                <span>App V2</span>
+                <V-Tag label="v1.2" color="primary" outlined curved />
               </RouterLink>
             </li>
             <li>
@@ -312,13 +333,14 @@ const emit = defineEmit(['close'])
         <li class="divider"></li>
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link"
-              >Charts
+            <a class="parent-link">
+              Charts
               <i
                 aria-hidden="true"
                 class="iconify"
                 data-icon="feather:chevron-right"
-            /></a>
+              />
+            </a>
           </div>
           <ul>
             <li>
@@ -343,13 +365,14 @@ const emit = defineEmit(['close'])
         </li>
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link"
-              >Widgets
+            <a class="parent-link">
+              Widgets
               <i
                 aria-hidden="true"
                 class="iconify"
                 data-icon="feather:chevron-right"
-            /></a>
+              />
+            </a>
           </div>
           <ul>
             <li>
@@ -392,13 +415,14 @@ const emit = defineEmit(['close'])
         </li>
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link"
-              >Starters
+            <a class="parent-link">
+              Starters
               <i
                 aria-hidden="true"
                 class="iconify"
                 data-icon="feather:chevron-right"
-            /></a>
+              />
+            </a>
           </div>
           <ul>
             <li>

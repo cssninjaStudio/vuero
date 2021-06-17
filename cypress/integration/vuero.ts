@@ -53,7 +53,19 @@ describe('Desktop - Viewport (1274*714)', () => {
         }
       )
 
-      cy.get('body').invoke('toggleClass', 'is-dark')
+      cy.get('body').then(($body) => {
+        if ($body.find('.desktop-toolbar .dark-mode').length > 0) {
+          cy.get('.desktop-toolbar .dark-mode').then(($button) => {
+            if ($button.is(':visible')) {
+              $button.trigger('click')
+            } else {
+              $body.addClass('is-dark')
+            }
+          })
+        } else {
+          $body.addClass('is-dark')
+        }
+      })
       cy.wait(waitDarkTimeout)
 
       cy.screenshot(
@@ -72,7 +84,7 @@ describe('Desktop - Viewport (1274*714)', () => {
   }
 
   for (const route of minimal) {
-    it(`Desktop - Minimal Layout - ${route.name}}`, () => {
+    it(`Desktop - Minimal Layout - ${route.name}`, () => {
       cy.visit(buildUri(route))
       // cy.get('.minimal-wrapper')
       cy.wait(waitTimeout)
@@ -93,7 +105,19 @@ describe('Desktop - Viewport (1274*714)', () => {
         }
       )
 
-      cy.get('body').invoke('toggleClass', 'is-dark')
+      cy.get('body').then(($body) => {
+        if ($body.find('.desktop-toolbar .dark-mode').length > 0) {
+          cy.get('.desktop-toolbar .dark-mode').then(($button) => {
+            if ($button.is(':visible')) {
+              $button.trigger('click')
+            } else {
+              $body.addClass('is-dark')
+            }
+          })
+        } else {
+          $body.addClass('is-dark')
+        }
+      })
       cy.wait(waitDarkTimeout)
 
       cy.screenshot(
@@ -133,7 +157,19 @@ describe('Desktop - Viewport (1274*714)', () => {
         }
       )
 
-      cy.get('body').invoke('toggleClass', 'is-dark')
+      cy.get('body').then(($body) => {
+        if ($body.find('.desktop-toolbar .dark-mode').length > 0) {
+          cy.get('.desktop-toolbar .dark-mode').then(($button) => {
+            if ($button.is(':visible')) {
+              $button.trigger('click')
+            } else {
+              $body.addClass('is-dark')
+            }
+          })
+        } else {
+          $body.addClass('is-dark')
+        }
+      })
       cy.wait(waitDarkTimeout)
 
       cy.screenshot(
@@ -173,7 +209,19 @@ describe('Desktop - Viewport (1274*714)', () => {
         }
       )
 
-      cy.get('body').invoke('toggleClass', 'is-dark')
+      cy.get('body').then(($body) => {
+        if ($body.find('.desktop-toolbar .dark-mode').length > 0) {
+          cy.get('.desktop-toolbar .dark-mode').then(($button) => {
+            if ($button.is(':visible')) {
+              $button.trigger('click')
+            } else {
+              $body.addClass('is-dark')
+            }
+          })
+        } else {
+          $body.addClass('is-dark')
+        }
+      })
       cy.wait(waitDarkTimeout)
 
       cy.screenshot(
@@ -213,7 +261,19 @@ describe('Desktop - Viewport (1274*714)', () => {
         }
       )
 
-      cy.get('body').invoke('toggleClass', 'is-dark')
+      cy.get('body').then(($body) => {
+        if ($body.find('.desktop-toolbar .dark-mode').length > 0) {
+          cy.get('.desktop-toolbar .dark-mode').then(($button) => {
+            if ($button.is(':visible')) {
+              $button.trigger('click')
+            } else {
+              $body.addClass('is-dark')
+            }
+          })
+        } else {
+          $body.addClass('is-dark')
+        }
+      })
       cy.wait(waitDarkTimeout)
 
       cy.screenshot(

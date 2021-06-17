@@ -14,6 +14,34 @@
     }
   },
   {
+    "name": "Maps V1",
+    "category": "APP",
+    "displayOrder": 211,
+    "new": true,
+    "route": {
+      "name": "sidebar-maps-1",
+      "path": "/sidebar/maps-1"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/maps-v1-light.webp",
+      "dark": "/images/screenshots/sidebar/maps-v1-dark.webp"
+    }
+  },
+  {
+    "name": "Maps V2",
+    "category": "APP",
+    "displayOrder": 212,
+    "new": true,
+    "route": {
+      "name": "sidebar-maps-2",
+      "path": "/sidebar/maps-2"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/maps-v2-light.webp",
+      "dark": "/images/screenshots/sidebar/maps-v2-dark.webp"
+    }
+  },
+  {
     "name": "Action Page V1",
     "category": "LAYOUTS",
     "displayOrder": 590,
