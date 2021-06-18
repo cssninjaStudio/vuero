@@ -1,4 +1,4 @@
-### V-Button link
+### RouterLink
 
 `<V-Button />` provides a `to` property that can be used like
 on `<RouterLink />`. You can also use a `href` property to render

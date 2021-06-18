@@ -888,6 +888,10 @@
       .center {
         .centered-links {
           .centered-link {
+            &:hover {
+              background: lighten($dark-sidebar, 2%);
+            }
+
             &.is-active {
               background: lighten($dark-sidebar, 2%);
               border-color: lighten($dark-sidebar, 12%);

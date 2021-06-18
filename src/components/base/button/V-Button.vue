@@ -1,3 +1,8 @@
+<script lang="ts">
+const CssUnitRe =
+  /(\d*\.?\d+)\s?(cm|mm|in|px|pt|pc|em|ex|ch|rem|vw|vh|vmin|vmax|%)/
+</script>
+
 <script setup lang="ts">
 import type { PropType } from 'vue'
 import { defineProps, computed } from 'vue'
@@ -29,6 +34,19 @@ const props = defineProps({
   iconCaret: {
     type: String,
     default: undefined,
+  },
+  placeload: {
+    type: String,
+    default: undefined,
+    validator: (value: string) => {
+      if (value.match(CssUnitRe) === null) {
+        console.warn(
+          `V-Button: invalid "${value}" placeload. Should be a valid css unit value.`
+        )
+      }
+
+      return true
+    },
   },
   color: {
     type: String as PropType<ButtonColor>,
@@ -152,7 +170,7 @@ const classes = computed(() => {
     props.darkOutlined && 'is-dark-outlined',
     props.raised && 'is-raised',
     props.elevated && 'is-elevated',
-    props.loading && 'is-loading',
+    props.loading && !props.placeload && 'is-loading',
     props.color && `is-${props.color}`,
     props.light && 'is-light',
   ]
@@ -160,14 +178,20 @@ const classes = computed(() => {
 </script>
 
 <template>
-  <RouterLink v-if="to" :to="to" :class="classes">
+  <RouterLink
+    :aria-hidden="props.placeload && 'true'"
+    v-if="to"
+    :to="to"
+    :class="classes"
+  >
     <span v-if="isIconIconify" class="icon">
       <i aria-hidden="true" class="iconify" :data-icon="icon"></i>
     </span>
     <span v-else-if="icon" class="icon">
       <i aria-hidden="true" :class="icon"></i>
     </span>
-    <span>
+    <V-Placeload v-if="props.placeload" :width="props.placeload" />
+    <span v-else>
       <slot></slot>
     </span>
     <span v-if="isCaretIconify" class="caret">
@@ -177,14 +201,20 @@ const classes = computed(() => {
       <i aria-hidden="true" :class="iconCaret"></i>
     </span>
   </RouterLink>
-  <a v-else-if="href" :href="href" :class="classes">
+  <a
+    :aria-hidden="props.placeload && 'true'"
+    v-else-if="href"
+    :href="href"
+    :class="classes"
+  >
     <span v-if="isIconIconify" class="icon">
       <i aria-hidden="true" class="iconify" :data-icon="icon"></i>
     </span>
     <span v-else-if="icon" class="icon">
       <i aria-hidden="true" :class="icon"></i>
     </span>
-    <span>
+    <V-Placeload v-if="props.placeload" :width="props.placeload" />
+    <span v-else>
       <slot></slot>
     </span>
     <span v-if="isCaretIconify" class="caret">
@@ -194,14 +224,21 @@ const classes = computed(() => {
       <i aria-hidden="true" :class="iconCaret"></i>
     </span>
   </a>
-  <button v-else :class="classes" :disabled="disabled">
+  <button
+    :aria-hidden="props.placeload && 'true'"
+    v-else
+    :class="classes"
+    :disabled="disabled"
+  >
     <span v-if="isIconIconify" class="icon">
       <i aria-hidden="true" class="iconify" :data-icon="icon"></i>
     </span>
     <span v-else-if="icon" class="icon">
       <i aria-hidden="true" :class="icon"></i>
     </span>
-    <span>
+
+    <V-Placeload v-if="props.placeload" :width="props.placeload" />
+    <span v-else>
       <slot></slot>
     </span>
     <span v-if="isCaretIconify" class="caret">

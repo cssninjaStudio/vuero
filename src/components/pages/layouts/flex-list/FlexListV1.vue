@@ -35,14 +35,11 @@ const filteredData = computed(() => {
         </V-Control>
       </V-Field>
 
-      <div class="buttons">
-        <button class="button v-button is-primary is-elevated">
-          <span class="icon">
-            <i aria-hidden="true" class="fas fa-plus"></i>
-          </span>
-          <span>Add User</span>
-        </button>
-      </div>
+      <V-Buttons>
+        <V-Button color="primary" icon="fas fa-plus" elevated>
+          Add User
+        </V-Button>
+      </V-Buttons>
     </div>
 
     <div class="page-content-inner">

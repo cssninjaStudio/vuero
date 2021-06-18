@@ -17,7 +17,7 @@
     "name": "Hero Left",
     "category": "MARKETING",
     "displayOrder": 0,
-    "new": true,
+    "new": false,
     "route": {
       "name": "marketing-1",
       "path": "/marketing-1"
@@ -31,7 +31,7 @@
     "name": "Hero Right",
     "category": "MARKETING",
     "displayOrder": 10,
-    "new": true,
+    "new": false,
     "route": {
       "name": "marketing-2",
       "path": "/marketing-2"
@@ -45,7 +45,7 @@
     "name": "Hero Centered",
     "category": "MARKETING",
     "displayOrder": 20,
-    "new": true,
+    "new": false,
     "route": {
       "name": "marketing-3",
       "path": "/marketing-3"

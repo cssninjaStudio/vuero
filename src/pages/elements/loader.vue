@@ -69,7 +69,7 @@ useHead({
             </V-Loader>
           </div>
           <div class="column is-4">
-            <V-Loader size="small" :active="isLoaderActive">
+            <V-Loader card="regular" size="small" :active="isLoaderActive">
               <V-CardAction
                 avatar="/demo/avatars/19.jpg"
                 badge="/images/icons/flags/germany.svg"
@@ -85,7 +85,12 @@ useHead({
             </V-Loader>
           </div>
           <div class="column is-4">
-            <V-Loader size="small" :active="isLoaderActive" translucent>
+            <V-Loader
+              card="regular"
+              size="small"
+              :active="isLoaderActive"
+              translucent
+            >
               <V-CardAction
                 avatar="/demo/avatars/19.jpg"
                 badge="/images/icons/flags/germany.svg"

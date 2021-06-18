@@ -15,7 +15,6 @@ export const minimal = [
     category: 'MARKETING',
     path: '/marketing-1',
     prefix: 'minimal',
-    new: true,
     displayOrder: 0,
   },
   {
@@ -23,7 +22,6 @@ export const minimal = [
     category: 'MARKETING',
     path: '/marketing-2',
     prefix: 'minimal',
-    new: true,
     displayOrder: 10,
   },
   {
@@ -31,7 +29,6 @@ export const minimal = [
     category: 'MARKETING',
     path: '/marketing-3',
     prefix: 'minimal',
-    new: true,
     displayOrder: 20,
   },
   {
@@ -245,7 +242,6 @@ const layouts = [
     name: 'Form V5',
     category: 'FORMS',
     path: '/form-layouts-5',
-    new: true,
     displayOrder: 395,
   },
   {
@@ -523,6 +519,34 @@ const layouts = [
     category: 'UTILITY',
     path: '/utility-promotion',
     displayOrder: 670,
+  },
+  {
+    name: 'Placeload List',
+    category: 'UTILITY',
+    path: '/placeload-1',
+    displayOrder: 750,
+    new: true,
+  },
+  {
+    name: 'Placeload Table',
+    category: 'UTILITY',
+    path: '/placeload-2',
+    displayOrder: 760,
+    new: true,
+  },
+  {
+    name: 'Placeload Grid',
+    category: 'UTILITY',
+    path: '/placeload-3',
+    displayOrder: 770,
+    new: true,
+  },
+  {
+    name: 'Placeload Tiles',
+    category: 'UTILITY',
+    path: '/placeload-4',
+    displayOrder: 780,
+    new: true,
   },
 ]
 

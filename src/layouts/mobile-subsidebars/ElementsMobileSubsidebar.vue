@@ -95,6 +95,21 @@
           <RouterLink :to="{ name: 'elements-loader' }">V-Loader</RouterLink>
         </li>
         <li>
+          <RouterLink :to="{ name: 'elements-placeload' }"
+            >V-Placeload</RouterLink
+          >
+        </li>
+        <li>
+          <RouterLink :to="{ name: 'elements-placeload-text' }"
+            >V-PlaceloadText</RouterLink
+          >
+        </li>
+        <li>
+          <RouterLink :to="{ name: 'elements-placeload-avatar' }"
+            >V-PlaceloadAvatar</RouterLink
+          >
+        </li>
+        <li>
           <RouterLink :to="{ name: 'elements-message' }">
             V-Message
           </RouterLink>

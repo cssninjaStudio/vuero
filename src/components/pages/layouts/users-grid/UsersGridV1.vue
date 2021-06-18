@@ -41,7 +41,7 @@ const optionsSingle = [
         />
       </V-Control>
 
-      <div class="buttons">
+      <V-Buttons>
         <V-Field class="h-hidden-mobile">
           <V-Control>
             <Multiselect
@@ -58,7 +58,7 @@ const optionsSingle = [
           </span>
           <span>Add User</span>
         </V-Button>
-      </div>
+      </V-Buttons>
     </div>
 
     <div class="user-grid user-grid-v1">
@@ -134,94 +134,5 @@ const optionsSingle = [
 <style lang="scss">
 @import '../../../../scss/abstracts/_variables.scss';
 @import '../../../../scss/abstracts/_mixins.scss';
-
-.is-dark {
-  .user-grid {
-    .grid-item {
-      @include vuero-card--dark();
-    }
-  }
-}
-
-.user-grid-v1 {
-  .columns {
-    margin-left: -0.5rem !important;
-    margin-right: -0.5rem !important;
-    margin-top: -0.5rem !important;
-  }
-
-  .column {
-    padding: 0.5rem !important;
-  }
-
-  .grid-item {
-    @include vuero-s-card();
-
-    text-align: center;
-
-    > .v-avatar {
-      display: block;
-      margin: 0 auto 4px auto;
-    }
-
-    h3 {
-      font-family: $font-alt;
-      font-size: 1.1rem;
-      font-weight: 600;
-      color: $dark-text;
-    }
-
-    p {
-      font-size: 0.85rem;
-    }
-
-    .people {
-      display: flex;
-      justify-content: center;
-      padding: 8px 0 30px 0;
-
-      .v-avatar {
-        margin: 0 4px;
-      }
-    }
-
-    .buttons {
-      display: flex;
-      justify-content: space-between;
-
-      .button {
-        width: calc(50% - 4px);
-        color: $light-text;
-
-        &:hover {
-          border-color: darken($fade-grey, 4%);
-          color: $primary;
-          box-shadow: $light-box-shadow;
-        }
-      }
-    }
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-  .user-grid-v1 {
-    .columns {
-      display: flex;
-
-      .column {
-        min-width: 50% !important;
-      }
-    }
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  .user-grid-v1 {
-    .columns {
-      .column {
-        min-width: 33.3% !important;
-      }
-    }
-  }
-}
+@import '../../../../scss/pages/lists/_user-grid-v1.scss';
 </style>

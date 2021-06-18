@@ -58,9 +58,9 @@ watch([() => route.fullPath, dropdownElement], () => {
             <i aria-hidden="true" class="lnil lnil-layout-alt-1"></i>
             <span>Subpages</span>
           </div>
-          <div class="category-item" @click="selectedCategory = 'errors'">
-            <i aria-hidden="true" class="lnil lnil-lock-alt"></i>
-            <span>Errors</span>
+          <div class="category-item" @click="selectedCategory = 'utility'">
+            <i aria-hidden="true" class="lnil lnil-reload"></i>
+            <span>Utility</span>
           </div>
         </div>
       </div>
@@ -882,8 +882,8 @@ watch([() => route.fullPath, dropdownElement], () => {
         </div>
 
         <div
-          id="errors-menu"
-          :class="[selectedCategory === 'errors' && 'is-active']"
+          id="utility-menu"
+          :class="[selectedCategory === 'utility' && 'is-active']"
           class="columns is-gapless mega-menus"
         >
           <!--Column-->
@@ -895,7 +895,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   class="iconify"
                   data-icon="feather:circle"
                 ></i>
-                <span>Errors</span>
+                <span>utility</span>
               </h4>
 
               <div class="column-content" data-simplebar>
@@ -952,6 +952,94 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                   <div class="meta">
                     <span>Error Page V5</span>
+                  </div>
+                </RouterLink>
+              </div>
+            </div>
+          </div>
+          <!--Column-->
+          <div class="column is-4">
+            <div class="dropdown-item-group">
+              <h4 class="column-heading is-secondary">
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:circle"
+                ></i>
+                <span>Placeload</span>
+              </h4>
+
+              <div class="column-content" data-simplebar>
+                <RouterLink
+                  :to="{ name: 'navbar-layouts-placeload-1' }"
+                  class="dropdown-item is-media"
+                >
+                  <div class="icon">
+                    <i aria-hidden="true" class="lnil lnil-reload"></i>
+                  </div>
+                  <div class="meta">
+                    <span>Placeload V1</span>
+                    <V-Tag
+                      label="v1.2"
+                      color="primary"
+                      outlined
+                      curved
+                      class="ml-3"
+                    />
+                  </div>
+                </RouterLink>
+                <RouterLink
+                  :to="{ name: 'navbar-layouts-placeload-2' }"
+                  class="dropdown-item is-media"
+                >
+                  <div class="icon">
+                    <i aria-hidden="true" class="lnil lnil-reload"></i>
+                  </div>
+                  <div class="meta">
+                    <span>Placeload V2</span>
+                    <V-Tag
+                      label="v1.2"
+                      color="primary"
+                      outlined
+                      curved
+                      class="ml-3"
+                    />
+                  </div>
+                </RouterLink>
+                <RouterLink
+                  :to="{ name: 'navbar-layouts-placeload-3' }"
+                  class="dropdown-item is-media"
+                >
+                  <div class="icon">
+                    <i aria-hidden="true" class="lnil lnil-reload"></i>
+                  </div>
+                  <div class="meta">
+                    <span>Placeload V3</span>
+                    <V-Tag
+                      label="v1.2"
+                      color="primary"
+                      outlined
+                      curved
+                      class="ml-3"
+                    />
+                  </div>
+                </RouterLink>
+                <RouterLink
+                  :to="{ name: 'navbar-layouts-placeload-4' }"
+                  class="dropdown-item is-media"
+                >
+                  <div class="icon">
+                    <i aria-hidden="true" class="lnil lnil-reload"></i>
+                  </div>
+                  <div class="meta">
+                    <span>Placeload V4</span>
+                    <V-Tag
+                      label="v1.2"
+                      color="primary"
+                      outlined
+                      curved
+                      class="ml-3"
+                    />
                   </div>
                 </RouterLink>
               </div>

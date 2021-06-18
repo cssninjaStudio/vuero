@@ -274,7 +274,7 @@
 
       &.is-light {
         background: lighten($accent, 25%) !important;
-        color: $accent;
+        color: darken($accent, 15%);
       }
     }
 

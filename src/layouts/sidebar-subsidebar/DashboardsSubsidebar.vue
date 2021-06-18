@@ -295,14 +295,14 @@ const emit = defineEmit(['close'])
             <li>
               <RouterLink :to="{ name: 'sidebar-maps-1' }" class="is-submenu">
                 <i aria-hidden="true" class="lnil lnil-map"></i>
-                <span>App V1</span>
+                <span>Maps V1</span>
                 <V-Tag label="v1.2" color="primary" outlined curved />
               </RouterLink>
             </li>
             <li>
               <RouterLink :to="{ name: 'sidebar-maps-2' }" class="is-submenu">
                 <i aria-hidden="true" class="lnil lnil-map"></i>
-                <span>App V2</span>
+                <span>Mapp V2</span>
                 <V-Tag label="v1.2" color="primary" outlined curved />
               </RouterLink>
             </li>

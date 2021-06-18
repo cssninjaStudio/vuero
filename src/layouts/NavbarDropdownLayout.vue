@@ -55,8 +55,16 @@ watch(
       :is-open="isMobileSidebarOpen"
       @toggle="isMobileSidebarOpen = !isMobileSidebarOpen"
     >
-      <NotificationsMobileDropdown />
-      <UserProfileDropdown />
+      <template #brand>
+        <RouterLink :to="{ name: 'index' }" class="navbar-item is-brand">
+          <AnimatedLogo width="38px" height="38px" />
+        </RouterLink>
+
+        <div class="brand-end">
+          <NotificationsMobileDropdown />
+          <UserProfileDropdown />
+        </div>
+      </template>
     </MobileNavbar>
 
     <!-- Mobile sidebar links -->

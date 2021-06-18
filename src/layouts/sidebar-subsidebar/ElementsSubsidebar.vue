@@ -103,6 +103,24 @@ const emit = defineEmit(['close'])
           <RouterLink :to="{ name: 'elements-loader' }">V-Loader</RouterLink>
         </li>
         <li>
+          <RouterLink :to="{ name: 'elements-placeload' }">
+            V-Placeload
+            <V-Tag label="v1.2" color="primary" outlined curved />
+          </RouterLink>
+        </li>
+        <li>
+          <RouterLink :to="{ name: 'elements-placeload-text' }">
+            V-PlaceloadText
+            <V-Tag label="v1.2" color="primary" outlined curved />
+          </RouterLink>
+        </li>
+        <li>
+          <RouterLink :to="{ name: 'elements-placeload-avatar' }">
+            V-PlaceloadAvatar
+            <V-Tag label="v1.2" color="primary" outlined curved />
+          </RouterLink>
+        </li>
+        <li>
           <RouterLink :to="{ name: 'elements-message' }">
             V-Message
             <V-Tag label="v1.1" color="primary" outlined curved />

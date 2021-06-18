@@ -214,6 +214,60 @@ const emit = defineEmit(['close'])
             </li>
           </ul>
         </li>
+        <li v-has-nested-router-link class="has-children">
+          <div class="collapse-wrap">
+            <a class="parent-link">
+              Placeload
+              <i
+                aria-hidden="true"
+                class="iconify"
+                data-icon="feather:chevron-right"
+              />
+            </a>
+          </div>
+          <ul>
+            <li>
+              <RouterLink
+                :to="{ name: 'sidebar-layouts-placeload-1' }"
+                class="is-submenu"
+              >
+                <i aria-hidden="true" class="lnil lnil-reload"></i>
+                <span>Placeload V1</span>
+                <V-Tag label="v1.2" color="primary" outlined curved />
+              </RouterLink>
+            </li>
+            <li>
+              <RouterLink
+                :to="{ name: 'sidebar-layouts-placeload-2' }"
+                class="is-submenu"
+              >
+                <i aria-hidden="true" class="lnil lnil-reload"></i>
+                <span>Placeload V2</span>
+                <V-Tag label="v1.2" color="primary" outlined curved />
+              </RouterLink>
+            </li>
+            <li>
+              <RouterLink
+                :to="{ name: 'sidebar-layouts-placeload-3' }"
+                class="is-submenu"
+              >
+                <i aria-hidden="true" class="lnil lnil-reload"></i>
+                <span>Placeload V3</span>
+                <V-Tag label="v1.2" color="primary" outlined curved />
+              </RouterLink>
+            </li>
+            <li>
+              <RouterLink
+                :to="{ name: 'sidebar-layouts-placeload-4' }"
+                class="is-submenu"
+              >
+                <i aria-hidden="true" class="lnil lnil-reload"></i>
+                <span>Placeload V4</span>
+                <V-Tag label="v1.2" color="primary" outlined curved />
+              </RouterLink>
+            </li>
+          </ul>
+        </li>
         <li class="divider"></li>
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">

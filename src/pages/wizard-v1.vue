@@ -1413,6 +1413,8 @@ watchEffect(() => {
 
         .project-preview-body {
           .edit-box {
+            @include vuero-card--dark();
+
             > h4 {
               color: $dark-dark-text;
             }

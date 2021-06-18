@@ -268,6 +268,63 @@ watch([() => route.fullPath, dropdownElement], () => {
                 </RouterLink>
 
                 <RouterLink
+                  :to="{ name: 'elements-placeload' }"
+                  class="dropdown-item is-media"
+                >
+                  <div class="icon">
+                    <i aria-hidden="true" class="lnil lnil-reload"></i>
+                  </div>
+                  <div class="meta">
+                    <span>V-Placeload</span>
+                    <V-Tag
+                      label="v1.2"
+                      color="primary"
+                      outlined
+                      curved
+                      class="ml-3"
+                    />
+                  </div>
+                </RouterLink>
+
+                <RouterLink
+                  :to="{ name: 'elements-placeload-text' }"
+                  class="dropdown-item is-media"
+                >
+                  <div class="icon">
+                    <i aria-hidden="true" class="lnil lnil-reload"></i>
+                  </div>
+                  <div class="meta">
+                    <span>V-PlaceloadText</span>
+                    <V-Tag
+                      label="v1.2"
+                      color="primary"
+                      outlined
+                      curved
+                      class="ml-3"
+                    />
+                  </div>
+                </RouterLink>
+
+                <RouterLink
+                  :to="{ name: 'elements-placeload-avatar' }"
+                  class="dropdown-item is-media"
+                >
+                  <div class="icon">
+                    <i aria-hidden="true" class="lnil lnil-reload"></i>
+                  </div>
+                  <div class="meta">
+                    <span>V-PlaceloadAvatar</span>
+                    <V-Tag
+                      label="v1.2"
+                      color="primary"
+                      outlined
+                      curved
+                      class="ml-3"
+                    />
+                  </div>
+                </RouterLink>
+
+                <RouterLink
                   :to="{ name: 'elements-message' }"
                   class="dropdown-item is-media"
                 >

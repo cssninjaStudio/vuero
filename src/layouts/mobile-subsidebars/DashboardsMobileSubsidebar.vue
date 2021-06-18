@@ -404,65 +404,6 @@
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
             <a class="parent-link">
-              Form Layouts
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:chevron-right"
-              />
-            </a>
-          </div>
-          <ul>
-            <li>
-              <RouterLink
-                :to="{ name: 'sidebar-layouts-form-layouts-1' }"
-                class="is-submenu"
-              >
-                <i aria-hidden="true" class="lnil lnil-passport"></i>
-                <span>Form Layout V1</span>
-              </RouterLink>
-            </li>
-            <li>
-              <RouterLink
-                :to="{ name: 'sidebar-layouts-form-layouts-2' }"
-                class="is-submenu"
-              >
-                <i aria-hidden="true" class="lnil lnil-passport"></i>
-                <span>Form Layout V2</span>
-              </RouterLink>
-            </li>
-            <li>
-              <RouterLink
-                :to="{ name: 'sidebar-layouts-form-layouts-3' }"
-                class="is-submenu"
-              >
-                <i aria-hidden="true" class="lnil lnil-passport"></i>
-                <span>Form Layout V3</span>
-              </RouterLink>
-            </li>
-            <li>
-              <RouterLink
-                :to="{ name: 'sidebar-layouts-form-layouts-4' }"
-                class="is-submenu"
-              >
-                <i aria-hidden="true" class="lnil lnil-passport"></i>
-                <span>Form Layout V4</span>
-              </RouterLink>
-            </li>
-            <li>
-              <RouterLink
-                :to="{ name: 'sidebar-layouts-form-layouts-5' }"
-                class="is-submenu"
-              >
-                <i aria-hidden="true" class="lnil lnil-passport"></i>
-                <span>Form Layout V5</span>
-              </RouterLink>
-            </li>
-          </ul>
-        </li>
-        <li v-has-nested-router-link class="has-children">
-          <div class="collapse-wrap">
-            <a class="parent-link">
               Starters
               <i
                 aria-hidden="true"

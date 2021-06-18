@@ -65,7 +65,7 @@ watch(
 </script>
 
 <template>
-  <div class="navbar-layout">
+  <div class="navbar-layout navbar-layout-search">
     <div class="app-overlay"></div>
 
     <!-- Mobile navigation -->
@@ -73,8 +73,16 @@ watch(
       :is-open="isMobileSidebarOpen"
       @toggle="isMobileSidebarOpen = !isMobileSidebarOpen"
     >
-      <NotificationsMobileDropdown />
-      <UserProfileDropdown />
+      <template #brand>
+        <RouterLink :to="{ name: 'index' }" class="navbar-item is-brand">
+          <AnimatedLogo width="38px" height="38px" />
+        </RouterLink>
+
+        <div class="brand-end">
+          <NotificationsMobileDropdown />
+          <UserProfileDropdown />
+        </div>
+      </template>
     </MobileNavbar>
 
     <!-- Mobile sidebar links -->
@@ -335,9 +343,14 @@ watch(
 </template>
 
 <style lang="scss" scoped>
-.navbar-layout {
-  ::v-deep(.view-wrapper.has-top-nav .is-stuck) {
-    top: 100px;
+.navbar-layout-search {
+  ::v-deep(.view-wrapper.has-top-nav) {
+    margin-top: 20px;
+    min-height: calc(100vh - 20px);
+
+    .is-stuck {
+      top: 100px;
+    }
   }
 }
 </style>

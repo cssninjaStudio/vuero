@@ -61,6 +61,9 @@ useHead({
         <!--V-Button outlined colors-->
         <VButtonColorsOutlinedDocumentation />
 
+        <!--V-Button placeload-->
+        <VButtonPlaceloadDocumentation />
+
         <!--V-Button Elevation-->
         <VButtonElevatedDocumentation />
 

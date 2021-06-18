@@ -1,4 +1,4 @@
-### V-Button Colors
+### Colors
 
 `<V-Button />` components can have different colors.
 Use the `color` prop on the component to change its color.

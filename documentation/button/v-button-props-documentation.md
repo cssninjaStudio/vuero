@@ -22,5 +22,6 @@ Here is the full props available for `<V-Button />` component:
 | outlined     | <span class="is-boolean">`false`</span>       | boolean                                                    |
 | darkOutlined | <span class="is-boolean">`false`</span>       | boolean                                                    |
 | loading      | <span class="is-boolean">`false`</span>       | boolean                                                    |
+| placeload    | <span class="is-boolean">`false`</span>       | boolean                                                    |
 | lower        | <span class="is-boolean">`false`</span>       | boolean                                                    |
 | disabled     | <span class="is-boolean">`false`</span>       | boolean                                                    |

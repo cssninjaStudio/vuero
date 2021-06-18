@@ -1,0 +1,250 @@
+/*! _placeload.scss | Huro | Css ninja 2020-2021 */
+
+/*
+    1. Placeload base styles
+    2. Placeload dark styles
+    3. Placeload compositions
+*/
+
+/* ==========================================================================
+1. Placeload base styles
+========================================================================== */
+
+.content-shape-group {
+  width: 100%;
+  max-width: 100%;
+
+  .content-shape {
+    &:not(:last-child) {
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+.content-shape {
+  height: 10px;
+  width: 100%;
+  max-width: 100%;
+  border-radius: 0.25rem;
+}
+
+//Loading animation
+.loads {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: placeload;
+  animation-name: placeload;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  background: $placeload-nuance-from;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(8%, $placeload-nuance-from),
+    color-stop(18%, $placeload-nuance-to),
+    color-stop(33%, $placeload-nuance-from)
+  );
+  background: -webkit-linear-gradient(
+    left,
+    $placeload-nuance-from 8%,
+    $placeload-nuance-to 18%,
+    $placeload-nuance-from 33%
+  );
+  background: linear-gradient(
+    to right,
+    $placeload-nuance-from 8%,
+    $placeload-nuance-to 18%,
+    $placeload-nuance-from 33%
+  );
+  -webkit-background-size: 800px 104px;
+  background-size: 1200px 104px;
+  position: relative;
+}
+
+@keyframes placeload {
+  0% {
+    background-position: -468px 0;
+  }
+
+  100% {
+    background-position: 468px 0;
+  }
+}
+
+/* ==========================================================================
+2. Placeload dark styles
+========================================================================== */
+
+.is-dark {
+  .loads {
+    background: $placeload-dark-nuance-from;
+    background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      color-stop(8%, $placeload-dark-nuance-from),
+      color-stop(18%, $placeload-dark-nuance-to),
+      color-stop(33%, $placeload-dark-nuance-from)
+    );
+    background: -webkit-linear-gradient(
+      left,
+      $placeload-dark-nuance-from 8%,
+      $placeload-dark-nuance-to 18%,
+      $placeload-dark-nuance-from 33%
+    );
+    background: linear-gradient(
+      to right,
+      $placeload-dark-nuance-from 8%,
+      $placeload-dark-nuance-to 18%,
+      $placeload-dark-nuance-from 33%
+    );
+    -webkit-background-size: 800px 104px;
+    background-size: 1200px 104px;
+  }
+}
+
+/* ==========================================================================
+3. Placeload compositions
+========================================================================== */
+
+.content-shape-group,
+.content-shape {
+  &.is-grow-1 {
+    flex-grow: 1;
+  }
+
+  &.is-grow-2 {
+    flex-grow: 2;
+  }
+
+  &.is-grow-3 {
+    flex-grow: 3;
+  }
+
+  &.is-grow-4 {
+    flex-grow: 4;
+  }
+
+  &.mw-30 {
+    max-width: 30%;
+  }
+
+  &.mw-60 {
+    max-width: 60%;
+  }
+
+  &.mw-80 {
+    max-width: 80%;
+  }
+
+  &.is-centered {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.placeload-avatar {
+  display: block;
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+
+  &.is-small {
+    width: 32px;
+    min-width: 32px;
+    height: 32px;
+  }
+
+  &.is-medium {
+    width: 50px;
+    min-width: 50px;
+    height: 50px;
+  }
+
+  &.is-large {
+    width: 68px;
+    min-width: 68px;
+    height: 68px;
+  }
+
+  &.is-big {
+    width: 80px;
+    min-width: 80px;
+    height: 80px;
+  }
+
+  &.is-xl {
+    width: 100px;
+    min-width: 100px;
+    height: 100px;
+  }
+
+  &.is-centered {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &.is-rounded-xs {
+    border-radius: 0.25rem;
+  }
+
+  &.is-rounded-sm {
+    border-radius: 0.5rem;
+  }
+
+  &.is-rounded-md {
+    border-radius: 0.75rem;
+  }
+
+  &.is-rounded-lg {
+    border-radius: 1rem;
+  }
+
+  &.is-rounded-xl {
+    border-radius: 1.25rem;
+  }
+
+  &.is-rounded-full {
+    border-radius: 50%;
+  }
+}
+
+.placeload-wrap {
+  &.is-flex {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .placeload-wrap {
+    &.is-flex {
+      flex-direction: column;
+      padding: 1rem 0;
+
+      .content-shape-group {
+        margin-top: 0.5rem;
+        max-width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+
+        .content-shape {
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+
+      > .content-shape {
+        margin-top: 0.5rem;
+        max-width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+}

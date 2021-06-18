@@ -107,6 +107,10 @@
   .has-loader {
     .v-loader-wrapper {
       background: lighten($dark-sidebar, 6%);
+
+      &.is-grey {
+        background: lighten($dark-sidebar, 10%);
+      }
     }
   }
 }

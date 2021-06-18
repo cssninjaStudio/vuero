@@ -1,15 +1,5 @@
 <template>
-  <V-Dropdown dots right spaced>
-    <template #button="{ open }">
-      <button class="is-trigger" @click="open">
-        <i
-          aria-hidden="true"
-          class="iconify"
-          data-icon="feather:more-vertical"
-        ></i>
-      </button>
-    </template>
-
+  <V-Dropdown icon="feather:more-vertical" dots right spaced>
     <template #content>
       <a href="#" class="dropdown-item is-media">
         <div class="icon">

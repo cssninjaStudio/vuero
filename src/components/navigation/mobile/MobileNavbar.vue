@@ -31,13 +31,7 @@ const emit = defineEmit(['toggle'])
           </div>
         </div>
 
-        <RouterLink :to="{ name: 'index' }" class="navbar-item is-brand">
-          <AnimatedLogo width="38px" height="38px" />
-        </RouterLink>
-
-        <div class="brand-end">
-          <slot></slot>
-        </div>
+        <slot name="brand"></slot>
       </div>
     </div>
   </nav>

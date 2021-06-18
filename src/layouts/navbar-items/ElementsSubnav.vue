@@ -61,12 +61,6 @@ const activeTab = ref<TabId>('interaction')
                       ></i>
                     </RouterLink>
                   </li>
-                </ul>
-              </div>
-
-              <div class="column is-3">
-                <h4 class="column-heading">Icons</h4>
-                <ul>
                   <li>
                     <RouterLink :to="{ name: 'elements-icons-iconify' }">
                       <span>Iconify</span>
@@ -113,6 +107,55 @@ const activeTab = ref<TabId>('interaction')
               </div>
 
               <div class="column is-3">
+                <h4 class="column-heading">Loading</h4>
+                <ul>
+                  <li>
+                    <RouterLink :to="{ name: 'elements-loader' }">
+                      <span>V-Loader</span>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
+                    </RouterLink>
+                  </li>
+                  <li>
+                    <RouterLink :to="{ name: 'elements-placeload' }">
+                      <span>V-Placeload</span>
+                      <V-Tag label="v1.2" color="primary" outlined curved />
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
+                    </RouterLink>
+                  </li>
+                  <li>
+                    <RouterLink :to="{ name: 'elements-placeload-text' }">
+                      <span>V-PlaceloadText</span>
+                      <V-Tag label="v1.2" color="primary" outlined curved />
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
+                    </RouterLink>
+                  </li>
+                  <li>
+                    <RouterLink :to="{ name: 'elements-placeload-avatar' }">
+                      <span>V-PlaceloadAvatar</span>
+                      <V-Tag label="v1.2" color="primary" outlined curved />
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
+                    </RouterLink>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="column is-3">
                 <h4 class="column-heading">Basic interaction</h4>
                 <ul>
                   <li>
@@ -126,19 +169,8 @@ const activeTab = ref<TabId>('interaction')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'elements-loader' }">
-                      <span>V-Loader</span>
-                      <i
-                        aria-hidden="true"
-                        class="iconify"
-                        data-icon="feather:circle"
-                      ></i>
-                    </RouterLink>
-                  </li>
-                  <li>
                     <RouterLink :to="{ name: 'elements-message' }">
                       <span>V-Message</span>
-                      <V-Tag label="v1.1" color="primary" outlined curved />
                       <i
                         aria-hidden="true"
                         class="iconify"

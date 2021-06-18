@@ -129,7 +129,7 @@
     "name": "Form V5",
     "category": "FORMS",
     "displayOrder": 395,
-    "new": true,
+    "new": false,
     "route": {
       "name": "sidebar-layouts-form-layouts-5",
       "path": "/sidebar/layouts/form-layouts-5"
@@ -781,6 +781,62 @@
     "screenshot": {
       "light": "/images/screenshots/sidebar/promotion-light.webp",
       "dark": "/images/screenshots/sidebar/promotion-dark.webp"
+    }
+  },
+  {
+    "name": "Placeload List",
+    "category": "UTILITY",
+    "displayOrder": 750,
+    "new": true,
+    "route": {
+      "name": "sidebar-layouts-placeload-1",
+      "path": "/sidebar/layouts/placeload-1"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/placeload-list-light.webp",
+      "dark": "/images/screenshots/sidebar/placeload-list-dark.webp"
+    }
+  },
+  {
+    "name": "Placeload Table",
+    "category": "UTILITY",
+    "displayOrder": 760,
+    "new": true,
+    "route": {
+      "name": "sidebar-layouts-placeload-2",
+      "path": "/sidebar/layouts/placeload-2"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/placeload-table-light.webp",
+      "dark": "/images/screenshots/sidebar/placeload-table-dark.webp"
+    }
+  },
+  {
+    "name": "Placeload Grid",
+    "category": "UTILITY",
+    "displayOrder": 770,
+    "new": true,
+    "route": {
+      "name": "sidebar-layouts-placeload-3",
+      "path": "/sidebar/layouts/placeload-3"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/placeload-grid-light.webp",
+      "dark": "/images/screenshots/sidebar/placeload-grid-dark.webp"
+    }
+  },
+  {
+    "name": "Placeload Tiles",
+    "category": "UTILITY",
+    "displayOrder": 780,
+    "new": true,
+    "route": {
+      "name": "sidebar-layouts-placeload-4",
+      "path": "/sidebar/layouts/placeload-4"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/sidebar/placeload-tiles-light.webp",
+      "dark": "/images/screenshots/sidebar/placeload-tiles-dark.webp"
     }
   },
   {

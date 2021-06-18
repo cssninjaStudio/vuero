@@ -1,7 +1,10 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
 import { useRoute } from 'vue-router'
-import { navbarLayoutId } from '/@src/state/navbarLayoutState'
+import {
+  navbarLayoutId,
+  navbarLayoutTheme,
+} from '/@src/state/navbarLayoutState'
 import { sidebarTheme } from '/@src/state/sidebarLayoutState'
 
 const isModalOpen = ref(false)
@@ -24,6 +27,24 @@ const sidebarLayoutLink = computed(() => {
 
 const hasDynamicLayout = computed(() => {
   return isNavbarLayout.value || isSidebarLayout.value
+})
+
+const selectedSlug = computed(() => {
+  if (isSidebarLayout.value) {
+    return 'sidebar'
+  }
+
+  switch (navbarLayoutId.value) {
+    case 'navbar-dropdown':
+    case 'navbar-dropdown-colored':
+      return 'dropdown'
+    case 'navbar-clean':
+    case 'navbar-clean-center':
+    case 'navbar-clean-fade':
+      return 'search'
+    default:
+      return 'navbar'
+  }
 })
 
 const layoutComponent = (slug: string) => {
@@ -61,7 +82,7 @@ const layoutComponent = (slug: string) => {
     >
       <template #content>
         <V-Tabs
-          selected="navbar"
+          :selected="selectedSlug"
           :tabs="[
             { label: 'Navbar', value: 'navbar' },
             {
