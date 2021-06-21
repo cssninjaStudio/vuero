@@ -6,7 +6,10 @@ First of all, Thank you so much for purchasing this template and for being our l
 
 This documentation has been written to help you regarding each step of setup and customization. Please go through the documentation carefully to understand how this template is made and how to edit this properly. HTML CSS, and Vue JS framework knowledge is required to customize this template.
 
-You are currently reading the **Vuero Vue 3 1.1.0** documentation. The product uses:
+You are currently reading the **Vuero Vue 3 1.2.0** documentation.  
+**You will find more up to date documentation content at [https://docs.cssninja.io/vuero](https://docs.cssninja.io/vuero).**
+
+The product uses:
 
 - [`vue3`](https://github.com/vuejs/vue-next) Composition API
 - Lightning-fast [`vitejs`](https://github.com/vitejs/vite) build & development tool
@@ -19,7 +22,7 @@ You are currently reading the **Vuero Vue 3 1.1.0** documentation. The product u
 
 ### Support
 
-If you have any trouble while editing this template or if you simply want to ask a question about something, feel free to contact us at [support@cssndinja.io](mailto:support@cssndinja.io) or to post your request on our support at [cssninja.io](https://cssninja.io/support/tickets)
+If you have any trouble while editing this template or if you simply want to ask a question about something, feel free to contact us at [help@cssndinja.io](mailto:help@cssndinja.io) or to post your request on our support at [support.cssninja.io](https://support.cssninja.io/)
 
 ### Prerequisites
 
@@ -541,4 +544,4 @@ Please remember you have purchased a very affordable theme and you did not pay f
 
 You can find the version history [CHANGELOG.md](./CHANGELOG.md) file inside the Vuero-theme.zip folder or you can check the changelog on the theme's sale page.
 
-Once again, thank you so much for purchasing this theme. As I said at the beginning, we'd be glad to help you if you have any questions related to this theme. No guarantees, but we'll do our best to assist and support you. If you have a more general question relating to Vuero Vue3, you might consider opening a ticket and ask your question in the [Css Ninja support portal](https://cssninja.io/support/tickets).
+Once again, thank you so much for purchasing this theme. As I said at the beginning, we'd be glad to help you if you have any questions related to this theme. No guarantees, but we'll do our best to assist and support you. If you have a more general question relating to Vuero Vue3, you might consider opening a ticket and ask your question in the [Css Ninja support portal](https://support.cssninja.io/).

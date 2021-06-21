@@ -1,4 +1,4 @@
-## 1.2.0 (2021-06-18)
+## 1.2.0 (2021-06-21)
 
 - feat: add maps pages with mapbox ([0bb8c25](https://github.com/cssninja-digisquad/vuero/commit/0bb8c25))
 - feat: extract messaging layout ([de96804](https://github.com/cssninja-digisquad/vuero/commit/de96804))
@@ -8,6 +8,7 @@
 - feat(v-placeload): add components and layouts ([3aa90c0](https://github.com/cssninja-digisquad/vuero/commit/3aa90c0))
 - feat(v-avatar): add pictureDark props and add slots to customize avatars ([9bd1516](https://github.com/cssninja-digisquad/vuero/commit/9bd1516))
 - feat(v-button): add icon caret on and expose methods on v-dropdown ([8963df9](https://github.com/cssninja-digisquad/vuero/commit/8963df9))
+- chore: update vue to 3.1 and bulma to 0.9.3 ([243afe81](https://github.com/cssninja-digisquad/vuero/commit/243afe81))
 - chore: add internal sonarqube config ([e9e78f3](https://github.com/cssninja-digisquad/vuero/commit/e9e78f3))
 - chore: reduce code smells and bugs (sonarqube) ([166f44d](https://github.com/cssninja-digisquad/vuero/commit/166f44d))
 - chore: update dependencies ([58c8471](https://github.com/cssninja-digisquad/vuero/commit/58c8471))
