@@ -1,5 +1,5 @@
 <template>
-  <V-Dropdown spaced class="profile-dropdown">
+  <V-Dropdown right spaced class="user-dropdown profile-dropdown">
     <template #button="{ toggle }">
       <a
         class="is-trigger dropdown-trigger"
