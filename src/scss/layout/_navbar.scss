@@ -193,6 +193,15 @@
               }
             }
 
+            &.is-dots {
+              &.is-active {
+                .is-trigger {
+                  background: darken($landing-dark-2, 12%);
+                  border-color: darken($landing-dark-2, 12%);
+                }
+              }
+            }
+
             .is-trigger svg {
               color: $smoke-white;
             }
