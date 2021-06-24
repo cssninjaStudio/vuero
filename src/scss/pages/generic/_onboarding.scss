@@ -298,14 +298,10 @@ Onboarding Layouts
         flex-wrap: wrap;
       }
     }
-
-    &.onboarding-v2,
-    &.onboarding-v4 {
-      .onboarding-wrap {
-        .onboarding-wrap-inner {
-          .onboarding-card {
-            min-width: calc(100% - 16px) !important;
-          }
+    .onboarding-wrap {
+      .onboarding-wrap-inner {
+        .onboarding-card {
+          min-width: calc(100% - 16px) !important;
         }
       }
     }
