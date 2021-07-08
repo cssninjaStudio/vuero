@@ -50,6 +50,7 @@ jobs:
       - run: yarn test
 
       - name: Build release zip archive
+        timeout-minutes: 60
         run: |
           sudo apt-get install zip
           ./.release/build-envato-archive.sh ${{ steps.meta.outputs.project }} ${{ steps.meta.outputs.tag }}
@@ -102,6 +103,7 @@ jobs:
       - name: Build and push
         id: docker_build
         uses: docker/build-push-action@v2
+        timeout-minutes: 60
         with:
           push: true
           tags: ${{ steps.get_meta.outputs.dockertags }}
