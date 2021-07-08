@@ -48,7 +48,6 @@ jobs:
 
       - run: yarn
       - run: yarn test
-      - run: yarn build
 
       - name: Build release zip archive
         run: |
@@ -73,7 +72,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./release-${{ steps.meta.outputs.project }}-${{ steps.meta.outputs.tag }}.zip
+          asset_path: ./.release/release-${{ steps.meta.outputs.project }}-${{ steps.meta.outputs.tag }}.zip
           asset_name: release-${{ steps.meta.outputs.project }}-${{ steps.meta.outputs.tag }}.zip
           asset_content_type: application/zip
 

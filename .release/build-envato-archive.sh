@@ -19,28 +19,41 @@ fi
 
 set -xe
 
-cp .release/documentation.pdf .
+cp .release/documentation/index.html ./documentation/index.html
+
+# enable "rollupOptions.external" in vite.config.ts
+sed -i "s#/// ##g" ./vite.config.ts
+
+## remove demo assets
+rm -rf public/demo
+
+## build without artifacts
+yarn build
 
 # zip sources template-${PROJECT}-${TAG}.zip
-zip -r template-${PROJECT}-${TAG}.zip . \
+zip -r .release/template-${PROJECT}-${TAG}.zip . \
   -x "*.zip" \
   -x "node_modules/*" \
   -x ".release/*" \
   -x ".git/*" \
   -x ".github/*" \
   -x "cypress/screenshots/*" \
-  -x "public/demo/*" \
-  -x "dist/demo/*" \
   -x "sonar-project.properties" \
   -x "docker-compose.sonarqube.yml"\
   -x "docker-compose.yml"
 
 # zip preview ${PROJECT}-preview.zip
-zip -j ${PROJECT}-preview.zip \
+zip -j .release/${PROJECT}-preview.zip \
   .release/${PROJECT}-preview.png
 
 # top level zip release-${PROJECT}-${TAG}.zip 
-zip -j release-${PROJECT}-${TAG}.zip \
-  template-${PROJECT}-${TAG}.zip \
-  ${PROJECT}-preview.zip \
-  .release/${PROJECT}-thumb.png
+zip -j .release/release-${PROJECT}-${TAG}.zip \
+  .release/template-${PROJECT}-${TAG}.zip \
+  .release/${PROJECT}-preview.zip \
+  .release/${PROJECT}-thumb.png \
+
+# remove artifacts 
+rm -rf ./documentation/index.html
+
+# reset index
+git checkout public/demo vite.config.ts
