@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { PropType } from 'vue'
-import { ref, defineEmit, defineProps, watchEffect } from 'vue'
+import { ref, watchEffect } from 'vue'
 
 const props = defineProps({
   conversationId: {
@@ -14,7 +14,7 @@ const props = defineProps({
 })
 
 const unread = ref(true)
-const emit = defineEmit([
+const emit = defineEmits([
   'update:conversationId',
   'update:selectedConversationList',
 ])

@@ -4,7 +4,7 @@ let instances = 0
 
 <script setup lang="ts">
 import type { PropType } from 'vue'
-import { defineProps, computed, ref, defineEmit, watchEffect } from 'vue'
+import { computed, ref, watchEffect } from 'vue'
 
 type AnimatedCheckboxColor =
   | undefined
@@ -22,7 +22,7 @@ const props = defineProps({
   },
   modelValue: {
     type: Array,
-    default: [],
+    default: () => [],
   },
   color: {
     type: String as PropType<AnimatedCheckboxColor>,
@@ -53,7 +53,7 @@ const props = defineProps({
 
 const animatedCheckboxId = `animated-checkbox-${++instances}`
 
-const emit = defineEmit(['update:modelValue'])
+const emit = defineEmits(['update:modelValue'])
 const checked = computed(() => props.modelValue.includes(props.value))
 
 const element = ref<HTMLElement | null>(null)

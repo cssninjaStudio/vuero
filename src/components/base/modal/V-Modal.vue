@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { PropType } from 'vue'
-import { ref, defineProps, defineEmit, watchEffect, onUnmounted } from 'vue'
+import { ref, watchEffect, onUnmounted } from 'vue'
 
 type ModalSize = undefined | 'small' | 'medium' | 'large' | 'big'
 type ModalAction = undefined | 'center' | 'right'
@@ -63,7 +63,7 @@ const props = defineProps({
     default: false,
   },
 })
-const emit = defineEmit(['close'])
+const emit = defineEmits(['close'])
 
 const wasOpen = ref(false)
 

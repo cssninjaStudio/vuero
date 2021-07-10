@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { PropType } from 'vue'
-import { defineProps, ref, useContext } from 'vue'
+import { ref } from 'vue'
 import useDropdown from '/@src/composable/useDropdown'
 
 type DropdownColor =
@@ -57,11 +57,10 @@ const props = defineProps({
   },
 })
 
-const { expose } = useContext()
 const dropdownElement = ref<HTMLElement | null>(null)
 const dropdown = useDropdown(dropdownElement)
 
-expose({
+defineExpose({
   ...dropdown,
 })
 </script>
@@ -90,8 +89,8 @@ expose({
       <a
         v-else
         class="is-trigger button dropdown-trigger"
-        @click="dropdown.toggle"
         :class="[props.color && `is-${props.color}`]"
+        @click="dropdown.toggle"
       >
         <span v-if="props.title">{{ props.title }}</span>
         <span

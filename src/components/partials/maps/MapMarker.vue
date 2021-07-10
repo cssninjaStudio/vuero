@@ -1,18 +1,20 @@
 <script setup lang="ts">
-import { defineProps } from 'vue'
-
 const props = defineProps({
   logo: {
     type: String,
+    default: '',
   },
   name: {
     type: String,
+    default: '',
   },
   openingCount: {
     type: String,
+    default: '',
   },
   description: {
     type: String,
+    default: '',
   },
 })
 </script>

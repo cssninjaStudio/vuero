@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import type { PropType } from 'vue'
-import { defineProps } from 'vue'
 
 type BreadcrumbSeparator = undefined | 'arrow' | 'bullet' | 'dot' | 'succeeds'
 type BreadcrumbAlign = undefined | 'center' | 'right'

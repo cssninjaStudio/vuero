@@ -9,7 +9,7 @@
   },
   "[vue]": {
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "octref.vetur"
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
   "[markdown]": {
     "editor.formatOnSave": true,
@@ -19,6 +19,7 @@
   "eslint.validate": ["javascript", "javascriptreact", "markdown", "vue"],
   "i18n-ally.localesPaths": ["src/locales"],
   "vetur.validation.template": true,
+  "vetur.validation.script": false,
   "vetur.experimental.templateInterpolationService": false,
   "vetur.validation.interpolation": false,
   "vetur.completion.tagCasing": "initial",

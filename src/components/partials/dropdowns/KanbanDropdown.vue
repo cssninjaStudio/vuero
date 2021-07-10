@@ -1,7 +1,5 @@
 <script setup lang="ts">
-import { defineEmit } from 'vue'
-
-const emit = defineEmit(['rename', 'collapse'])
+const emit = defineEmits(['rename', 'collapse'])
 </script>
 
 <template>

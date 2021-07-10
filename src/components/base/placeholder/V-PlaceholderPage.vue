@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { defineEmit, defineProps } from 'vue'
-
 const props = defineProps({
   title: {
     type: String,
@@ -16,7 +14,7 @@ const props = defineProps({
   },
 })
 
-const emit = defineEmit(['click'])
+const emit = defineEmits(['click'])
 </script>
 
 <template>

@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import type { PropType } from 'vue'
-import { defineProps } from 'vue'
 
 type LoaderSize = undefined | 'small' | 'large' | 'xl'
 type LoaderWrapperRadius = undefined | 'regular' | 'smooth' | 'rounded'

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { PropType } from 'vue'
-import { computed, ref, defineProps } from 'vue'
+import { computed, ref } from 'vue'
 
 type TabItem = {
   label: string

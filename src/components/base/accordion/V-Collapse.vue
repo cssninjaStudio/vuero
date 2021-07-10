@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { PropType } from 'vue'
-import { defineProps, ref } from 'vue'
+import { ref } from 'vue'
 
 type CollapseItem = {
   title: string

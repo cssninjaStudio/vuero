@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import type { PropType } from 'vue'
-import { defineProps } from 'vue'
 
 type User = {
   avatar: string
@@ -14,6 +13,7 @@ type User = {
 const props = defineProps({
   user: {
     type: Object as PropType<User>,
+    default: undefined,
   },
 })
 </script>

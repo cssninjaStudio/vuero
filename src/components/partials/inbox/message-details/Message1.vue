@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { defineEmit, defineProps, ref } from 'vue'
+import { defineEmit, ref } from 'vue'
 
 import useDropdown from '/@src/composable/useDropdown'
 import { isMediumScreen } from '/@src/state/responsiveState'
@@ -15,7 +15,7 @@ const props = defineProps({
   },
 })
 
-const emit = defineEmit(['update:mobileMessageOpen'])
+const emit = defineEmits(['update:mobileMessageOpen'])
 
 const dropdownElement1 = ref<HTMLElement | null>(null)
 const dropdown1 = useDropdown(dropdownElement1)

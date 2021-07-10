@@ -4,7 +4,6 @@ let instances = 0
 
 <script setup lang="ts">
 import type { PropType } from 'vue'
-import { defineProps, defineEmit } from 'vue'
 
 type SwitchSegmentColor =
   | undefined
@@ -49,7 +48,7 @@ const props = defineProps({
   },
 })
 
-const emit = defineEmit(['update:modelValue'])
+const emit = defineEmits(['update:modelValue'])
 </script>
 
 <template inherit-attrs="false">

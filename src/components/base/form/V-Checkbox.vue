@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { PropType } from 'vue'
-import { defineProps, computed, defineEmit } from 'vue'
+import { computed } from 'vue'
 
 type CheckboxColor =
   | undefined
@@ -21,7 +21,7 @@ const props = defineProps({
   },
   modelValue: {
     type: Array,
-    default: [],
+    default: () => [],
   },
   color: {
     type: String as PropType<CheckboxColor>,
@@ -51,7 +51,7 @@ const props = defineProps({
     default: false,
   },
 })
-const emit = defineEmit(['update:modelValue'])
+const emit = defineEmits(['update:modelValue'])
 const checked = computed(() => props.modelValue.includes(props.value))
 
 function change() {

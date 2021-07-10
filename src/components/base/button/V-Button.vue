@@ -5,7 +5,7 @@ const CssUnitRe =
 
 <script setup lang="ts">
 import type { PropType } from 'vue'
-import { defineProps, computed } from 'vue'
+import { computed } from 'vue'
 
 type ButtonSize = undefined | 'big' | 'huge'
 type ButtonColor =
@@ -179,8 +179,8 @@ const classes = computed(() => {
 
 <template>
   <RouterLink
-    :aria-hidden="props.placeload && 'true'"
     v-if="to"
+    :aria-hidden="props.placeload && 'true'"
     :to="to"
     :class="classes"
   >
@@ -202,8 +202,8 @@ const classes = computed(() => {
     </span>
   </RouterLink>
   <a
-    :aria-hidden="props.placeload && 'true'"
     v-else-if="href"
+    :aria-hidden="props.placeload && 'true'"
     :href="href"
     :class="classes"
   >
@@ -225,8 +225,8 @@ const classes = computed(() => {
     </span>
   </a>
   <button
-    :aria-hidden="props.placeload && 'true'"
     v-else
+    :aria-hidden="props.placeload && 'true'"
     :class="classes"
     :disabled="disabled"
   >

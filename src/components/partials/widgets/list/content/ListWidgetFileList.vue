@@ -1,11 +1,9 @@
 <script setup lang="ts">
-import { defineProps } from 'vue'
-
 defineProps({
   files: {
     type: Array,
     required: true,
-    default: [],
+    default: () => [],
   },
 })
 </script>

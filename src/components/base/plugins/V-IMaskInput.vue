@@ -2,7 +2,7 @@
 import type { InputMask } from 'imask'
 import type { PropType } from 'vue'
 import IMask from 'imask'
-import { ref, watch, defineProps, defineEmit, onUnmounted } from 'vue'
+import { ref, watch, onUnmounted } from 'vue'
 
 const inputElement = ref<HTMLElement | null>(null)
 let inputMask: InputMask<any> | undefined
@@ -18,7 +18,7 @@ const props = defineProps({
   },
 })
 
-const emit = defineEmit(['update:modelValue', 'accept', 'complete'])
+const emit = defineEmits(['update:modelValue', 'accept', 'complete'])
 
 watch([inputElement, () => props.options, () => props.modelValue], () => {
   if (inputElement.value && props.options) {

@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { activeSidebar } from '/@src/state/activeSidebarState'
-import { defineEmit, defineProps } from 'vue'
 
 const props = defineProps({
   conversations: {
@@ -13,7 +12,7 @@ const props = defineProps({
   },
 })
 
-const emit = defineEmit(['selectConversation'])
+const emit = defineEmits(['selectConversation'])
 </script>
 
 <template>

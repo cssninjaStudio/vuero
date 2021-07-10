@@ -1,13 +1,14 @@
 <script setup lang="ts">
-import { defineProps, ref } from 'vue'
+import { ref } from 'vue'
 
 defineProps({
   frontmatter: {
     type: Object,
+    default: () => ({}),
   },
   componentData: {
     type: Array,
-    required: false,
+    default: () => [],
   },
 })
 
@@ -27,8 +28,8 @@ const displayCode = ref(false)
         :class="[displayCode && 'is-active']"
         @click="displayCode = !displayCode"
       >
-        <V-Icon style="height: 16px" v-if="!displayCode" icon="feather:code" />
-        <V-Icon style="height: 16px" v-else icon="feather:x" />
+        <V-Icon v-if="!displayCode" style="height: 16px" icon="feather:code" />
+        <V-Icon v-else style="height: 16px" icon="feather:x" />
       </a>
     </div>
     <div

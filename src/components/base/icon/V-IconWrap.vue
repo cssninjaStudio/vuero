@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { PropType } from 'vue'
-import { defineProps, computed } from 'vue'
+import { computed } from 'vue'
 
 type IconWrapDark = undefined | '1' | '2' | '3' | '4' | '5' | '6'
 type IconWrapColor =

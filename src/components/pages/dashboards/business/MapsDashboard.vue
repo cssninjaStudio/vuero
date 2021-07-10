@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { defineProps, onMounted, ref, watch, watchEffect } from 'vue'
+import { onMounted, ref, watch, watchEffect } from 'vue'
 import mapboxgl from 'mapbox-gl'
 import MapboxGeocoder from '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.min.js'
 import 'mapbox-gl/src/css/mapbox-gl.css'
@@ -366,13 +366,13 @@ watch(isDark, () => {
 
           <!--Map Box-->
           <div
+            v-for="(feature, key) in locations.features"
+            :key="key"
             class="box map-box"
-            @click="selectFeature(feature)"
             :class="[
               selectedFeatureName === feature.properties.name && 'is-active',
             ]"
-            v-for="(feature, key) in locations.features"
-            :key="key"
+            @click="selectFeature(feature)"
           >
             <div class="map-box-place">
               <div class="map-box-header">

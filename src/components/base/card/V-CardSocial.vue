@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { PropType } from 'vue'
-import { defineProps, computed, defineEmit } from 'vue'
+import { computed } from 'vue'
 
 type SocialNetworkType =
   | 'facebook'
@@ -47,7 +47,7 @@ const props = defineProps({
   },
 })
 
-const emit = defineEmit(['iconClick', 'hashtagClick', 'share', 'like'])
+const emit = defineEmits(['iconClick', 'hashtagClick', 'share', 'like'])
 const icon = computed(() => {
   switch (props.network) {
     case 'facebook':

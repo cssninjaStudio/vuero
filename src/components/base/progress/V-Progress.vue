@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import type { PropType } from 'vue'
-import { defineProps } from 'vue'
 
 type ProgressSize = undefined | 'tiny' | 'smaller' | 'small'
 type ProgressColor = 'primary' | 'success' | 'info' | 'warning' | 'danger'

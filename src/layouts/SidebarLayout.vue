@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { PropType } from 'vue'
-import { defineProps, ref, watchEffect, watch } from 'vue'
+import { ref, watchEffect, watch } from 'vue'
 import { useRoute } from 'vue-router'
 
 import { activePanel } from '/@src/state/activePanelState'
@@ -207,8 +207,8 @@ watch(
         <li>
           <a
             :class="[activeMobileSubsidebar === 'dashboard' && 'is-active']"
-            @click="switchSidebar('dashboard')"
             data-content="Dashboards"
+            @click="switchSidebar('dashboard')"
           >
             <i
               aria-hidden="true"
@@ -222,8 +222,8 @@ watch(
         <li>
           <a
             :class="[activeMobileSubsidebar === 'layout' && 'is-active']"
-            @click="switchSidebar('layout')"
             data-content="Layouts"
+            @click="switchSidebar('layout')"
           >
             <i
               aria-hidden="true"
@@ -237,8 +237,8 @@ watch(
         <li>
           <a
             :class="[activeMobileSubsidebar === 'elements' && 'is-active']"
-            @click="switchSidebar('elements')"
             data-content="Elements"
+            @click="switchSidebar('elements')"
           >
             <i
               aria-hidden="true"
@@ -252,8 +252,8 @@ watch(
         <li>
           <a
             :class="[activeMobileSubsidebar === 'components' && 'is-active']"
-            @click="switchSidebar('components')"
             data-content="Components"
+            @click="switchSidebar('components')"
           >
             <i
               aria-hidden="true"

@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { defineEmit, defineProps } from 'vue'
-
 const props = defineProps({
   conversationId: {
     type: Number,
@@ -16,7 +14,7 @@ const props = defineProps({
   },
 })
 
-const emit = defineEmit(['update:conversationId', 'toggleMobileConversation'])
+const emit = defineEmits(['update:conversationId', 'toggleMobileConversation'])
 </script>
 
 <template>

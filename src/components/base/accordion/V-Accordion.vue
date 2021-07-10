@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { PropType } from 'vue'
-import { defineProps, reactive } from 'vue'
+import { reactive } from 'vue'
 
 type AccordionItem = {
   title: string

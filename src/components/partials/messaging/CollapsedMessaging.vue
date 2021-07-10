@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { defineProps, defineEmit } from 'vue'
 import { activeSidebar, toggleSidebar } from '/@src/state/activeSidebarState'
 
 const props = defineProps({
@@ -13,7 +12,7 @@ const props = defineProps({
   },
 })
 
-const emit = defineEmit(['addConversation', 'selectConversation'])
+const emit = defineEmits(['addConversation', 'selectConversation'])
 </script>
 
 <template>

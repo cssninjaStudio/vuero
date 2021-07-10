@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { defineProps, ref } from 'vue'
+import { ref } from 'vue'
 
 const props = defineProps({
   title: {
@@ -9,7 +9,7 @@ const props = defineProps({
   },
   labels: {
     type: Array,
-    default: ['Recent', 'Popular'],
+    default: () => ['Recent', 'Popular'],
   },
   straight: {
     type: Boolean,

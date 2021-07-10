@@ -1,11 +1,9 @@
 <script setup lang="ts">
-import { defineProps } from 'vue'
-
 defineProps({
   topics: {
     type: Array,
     required: true,
-    default: [],
+    default: () => [],
   },
   rounded: {
     type: Boolean,

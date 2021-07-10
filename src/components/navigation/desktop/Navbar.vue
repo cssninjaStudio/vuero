@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { PropType } from 'vue'
-import { computed, defineProps } from 'vue'
+import { computed } from 'vue'
 
 import { useWindowScroll } from '@vueuse/core'
 

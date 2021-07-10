@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { PropType } from 'vue'
-import { defineProps, computed, ref } from 'vue'
+import { computed, ref } from 'vue'
+import { users } from '/@src/data/layouts/user-grid-v3'
 
 const props = defineProps({
   activeTab: {
@@ -9,9 +10,8 @@ const props = defineProps({
   },
 })
 
-import { users } from '/@src/data/layouts/user-grid-v3'
-
 const filters = ref('')
+const tab = ref(props.activeTab)
 
 const filteredData = computed(() => {
   if (!filters.value) {
@@ -43,11 +43,11 @@ const filteredData = computed(() => {
       <div class="tabs-inner">
         <div class="tabs">
           <ul>
-            <li :class="[activeTab === 'all' && 'is-active']">
-              <a @click="activeTab = 'all'"><span>All</span></a>
+            <li :class="[tab === 'all' && 'is-active']">
+              <a @click="tab = 'all'"><span>All</span></a>
             </li>
-            <li :class="[activeTab === 'team' && 'is-active']">
-              <a @click="activeTab = 'team'"><span>Team</span></a>
+            <li :class="[tab === 'team' && 'is-active']">
+              <a @click="tab = 'team'"><span>Team</span></a>
             </li>
             <li class="tab-naver"></li>
           </ul>
@@ -83,7 +83,7 @@ const filteredData = computed(() => {
       <div
         id="active-items-tab"
         class="tab-content"
-        :class="[activeTab === 'all' && 'is-active']"
+        :class="[tab === 'all' && 'is-active']"
       >
         <transition-group
           name="list"
@@ -101,7 +101,7 @@ const filteredData = computed(() => {
       <div
         id="inactive-items-tab"
         class="tab-content"
-        :class="[activeTab === 'team' && 'is-active']"
+        :class="[tab === 'team' && 'is-active']"
       >
         <!--Empty placeholder-->
         <V-PlaceholderPage

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { PropType } from 'vue'
-import { computed, defineEmit, defineProps } from 'vue'
+import { computed } from 'vue'
 
 type CreditCardColor =
   | 'grey'
@@ -64,7 +64,7 @@ const props = defineProps({
   },
 })
 
-const emit = defineEmit(['flip'])
+const emit = defineEmits(['flip'])
 
 const nameUppercase = computed(() => props.name.toUpperCase())
 </script>

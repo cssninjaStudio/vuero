@@ -35,7 +35,7 @@ const lastSort = reactive({
   direction: '',
 })
 
-const emit = defineEmit([
+const emit = defineEmits([
   'init',
   'refresh',
   'update',

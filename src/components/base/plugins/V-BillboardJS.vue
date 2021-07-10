@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { ChartOptions } from 'billboard.js'
 import type { PropType } from 'vue'
-import { nextTick, ref, defineProps, defineEmit, watchEffect } from 'vue'
+import { nextTick, ref, watchEffect } from 'vue'
 import bb from 'billboard.js'
 
 const props = defineProps({
@@ -11,7 +11,7 @@ const props = defineProps({
   },
 })
 
-const emit = defineEmit(['ready'])
+const emit = defineEmits(['ready'])
 const element = ref<HTMLElement | null>(null)
 
 watchEffect(() => {

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { PropType } from 'vue'
-import { defineProps, computed, ref } from 'vue'
+import { computed, ref } from 'vue'
 
 import { projects } from '/@src/data/layouts/flex-list-v2'
 
@@ -12,6 +12,7 @@ const props = defineProps({
 })
 
 const filters = ref('')
+const tab = ref(props.activeTab)
 
 const filteredData = computed(() => {
   if (!filters.value) {
@@ -44,11 +45,11 @@ const filteredData = computed(() => {
       <div class="tabs-inner">
         <div class="tabs">
           <ul>
-            <li :class="[activeTab === 'active' && 'is-active']">
-              <a @click="activeTab = 'active'"><span>Active</span></a>
+            <li :class="[tab === 'active' && 'is-active']">
+              <a @click="tab = 'active'"><span>Active</span></a>
             </li>
-            <li :class="[activeTab === 'closed' && 'is-active']">
-              <a @click="activeTab = 'closed'"><span>Closed</span></a>
+            <li :class="[tab === 'closed' && 'is-active']">
+              <a @click="tab = 'closed'"><span>Closed</span></a>
             </li>
             <li class="tab-naver"></li>
           </ul>
@@ -84,7 +85,7 @@ const filteredData = computed(() => {
       <div
         id="active-items-tab"
         class="tab-content"
-        :class="[activeTab === 'active' && 'is-active']"
+        :class="[tab === 'active' && 'is-active']"
       >
         <div class="flex-table">
           <!--Table header-->
@@ -167,7 +168,7 @@ const filteredData = computed(() => {
       <div
         id="inactive-items-tab"
         class="tab-content"
-        :class="[activeTab === 'closed' && 'is-active']"
+        :class="[tab === 'closed' && 'is-active']"
       >
         <!--Empty placeholder-->
         <V-PlaceholderPage

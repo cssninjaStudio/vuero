@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import { defineProps } from 'vue'
+import { ref } from 'vue'
 
 defineProps({
   buttons: {
     type: Array,
     required: true,
   },
-  currentTab: {
+  activeTab: {
     type: Number,
     default: 0,
   },
@@ -19,6 +19,7 @@ defineProps({
     default: false,
   },
 })
+const tab = ref(props.activeTab)
 </script>
 
 <template>
@@ -35,11 +36,11 @@ defineProps({
         <a
           class="inner-button is-facebook"
           :class="[
-            currentTab === index && 'is-active',
+            tab === index && 'is-active',
             'is-' + button.network,
             rounded && 'is-rounded',
           ]"
-          @click="currentTab = index"
+          @click="tab = index"
         >
           <i aria-hidden="true" :class="button.icon"></i>
         </a>

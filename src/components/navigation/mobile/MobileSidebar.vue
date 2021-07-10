@@ -1,13 +1,11 @@
 <script setup lang="ts">
-import { defineEmit, defineProps } from 'vue'
-
 const props = defineProps({
   isOpen: {
     type: Boolean,
     default: false,
   },
 })
-const emit = defineEmit(['toggle'])
+const emit = defineEmits(['toggle'])
 </script>
 
 <template>

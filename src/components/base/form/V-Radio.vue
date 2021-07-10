@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { PropType } from 'vue'
-import { computed, defineProps, defineEmit } from 'vue'
+import { computed } from 'vue'
 
 type RadioColor =
   | undefined
@@ -55,7 +55,7 @@ const props = defineProps({
     default: false,
   },
 })
-const emit = defineEmit(['update:modelValue'])
+const emit = defineEmits(['update:modelValue'])
 const checked = computed(() => props.value === props.modelValue)
 
 function change() {

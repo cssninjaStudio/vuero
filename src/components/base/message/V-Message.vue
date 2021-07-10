@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import type { PropType } from 'vue'
-import { defineProps, defineEmit } from 'vue'
 
 type MessageColor =
   | undefined
@@ -43,7 +42,7 @@ const props = defineProps({
   },
 })
 
-const emit = defineEmit(['close'])
+const emit = defineEmits(['close'])
 </script>
 
 <template>

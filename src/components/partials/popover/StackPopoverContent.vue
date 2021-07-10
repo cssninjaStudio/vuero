@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import type { PropType } from 'vue'
-import { defineProps } from 'vue'
 
 type Stack = {
   logo: string
@@ -14,6 +13,7 @@ type Stack = {
 const props = defineProps({
   stack: {
     type: Object as PropType<Stack>,
+    default: undefined,
   },
 })
 </script>

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { PropType } from 'vue'
-import { defineProps, onUpdated, ref, useContext } from 'vue'
+import { onUpdated, ref, useContext } from 'vue'
 
 type MediaCardRadius = 'regular' | 'smooth' | 'rounded'
 

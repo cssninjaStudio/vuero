@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { PropType } from 'vue'
-import { defineProps, ref } from 'vue'
+import { ref } from 'vue'
 import { activePanel } from '/@src/state/activePanelState'
 
 const filterTasks = ref(0)
@@ -21,6 +21,7 @@ const props = defineProps({
     default: 'project',
   },
 })
+const tab = ref(props.activeTab)
 </script>
 
 <template>
@@ -29,14 +30,14 @@ const props = defineProps({
       <div class="tabs-inner">
         <div class="tabs">
           <ul>
-            <li :class="[activeTab === 'project' && 'is-active']">
-              <a @click="activeTab = 'project'"><span>Project</span></a>
+            <li :class="[tab === 'project' && 'is-active']">
+              <a @click="tab = 'project'"><span>Project</span></a>
             </li>
-            <li :class="[activeTab === 'team' && 'is-active']">
-              <a @click="activeTab = 'team'"><span>Team</span></a>
+            <li :class="[tab === 'team' && 'is-active']">
+              <a @click="tab = 'team'"><span>Team</span></a>
             </li>
-            <li :class="[activeTab === 'tasks' && 'is-active']">
-              <a @click="activeTab = 'tasks'"><span>Tasks</span></a>
+            <li :class="[tab === 'tasks' && 'is-active']">
+              <a @click="tab = 'tasks'"><span>Tasks</span></a>
             </li>
             <li class="tab-naver"></li>
           </ul>
@@ -46,7 +47,7 @@ const props = defineProps({
       <div
         id="project-tab"
         class="tab-content"
-        :class="[activeTab === 'project' && 'is-active']"
+        :class="[tab === 'project' && 'is-active']"
       >
         <div class="columns project-details-inner">
           <div class="column is-8">

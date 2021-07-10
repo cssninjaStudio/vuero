@@ -1,15 +1,15 @@
 <script setup lang="ts">
-import { defineProps, ref, defineEmit, watch } from 'vue'
+import { ref, watch } from 'vue'
 
 const props = defineProps({
   todos: {
     type: Array,
     required: true,
-    default: [],
+    default: () => [],
   },
   modelValue: {
     type: Array,
-    default: [],
+    default: () => [],
   },
   color: {
     type: String,
@@ -18,7 +18,7 @@ const props = defineProps({
 })
 
 const completed = ref(props.modelValue)
-const emit = defineEmit(['update:modelValue'])
+const emit = defineEmits(['update:modelValue'])
 
 watch(completed, () => {
   emit('update:modelValue', completed.value)

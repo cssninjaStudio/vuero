@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import type { PropType } from 'vue'
-import { defineProps } from 'vue'
 
 type AvatarStackSize = undefined | 'small' | 'medium' | 'large' | 'big' | 'xl'
 type AvatarItem = {
@@ -13,6 +12,7 @@ const props = defineProps({
   avatars: {
     type: Array as PropType<AvatarItem[]>,
     required: false,
+    default: () => [],
   },
   size: {
     type: String as PropType<AvatarStackSize>,

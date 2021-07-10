@@ -83,7 +83,7 @@ registerPlugin(...plugins)
 
 <script setup lang="ts">
 import type { PropType } from 'vue'
-import { onMounted, onUnmounted, ref, defineEmit, defineProps } from 'vue'
+import { onMounted, onUnmounted, ref } from 'vue'
 
 type FilePondSize = undefined | 'small' | 'tiny'
 
@@ -105,7 +105,7 @@ const props = defineProps({
     },
   },
 })
-const emit = defineEmit(['input', ...eventNames])
+const emit = defineEmits(['input', ...eventNames])
 const pond = ref<FilePond | null>(null)
 
 const inputElement = ref<HTMLInputElement | null>(null)

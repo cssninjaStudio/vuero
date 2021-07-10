@@ -4,7 +4,7 @@ import 'plyr/dist/plyr.css'
 
 <script setup lang="ts">
 import type { PropType } from 'vue'
-import { defineProps, onBeforeUnmount, onMounted, ref } from 'vue'
+import { onBeforeUnmount, onMounted, ref } from 'vue'
 import Plyr from 'plyr'
 
 const props = defineProps({

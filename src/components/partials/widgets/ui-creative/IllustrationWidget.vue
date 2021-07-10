@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { defineProps } from 'vue'
-
 defineProps({
   title: {
     type: String,
@@ -19,9 +17,11 @@ defineProps({
   },
   badgeLeft: {
     type: String,
+    default: undefined,
   },
   badgeRight: {
     type: String,
+    default: undefined,
   },
   straight: {
     type: Boolean,

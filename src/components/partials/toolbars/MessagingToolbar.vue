@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import { computed, defineEmit, ref } from 'vue'
+import { computed, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 
 import { isDark } from '/@src/state/darkModeState'
 import { activePanel } from '/@src/state/activePanelState'
 import useDropdown from '/@src/composable/useDropdown'
 
-const emit = defineEmit(['close'])
+const emit = defineEmits(['close'])
 
 const { locale } = useI18n()
 const dropdownElement = ref<HTMLElement | null>(null)

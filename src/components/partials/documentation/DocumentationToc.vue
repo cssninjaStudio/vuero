@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { PropType } from 'vue'
-import { computed, defineProps, onMounted } from 'vue'
+import { computed, onMounted } from 'vue'
 import { useRoute } from 'vue-router'
 import VueScrollTo from 'vue-scrollto'
 
@@ -15,6 +15,7 @@ const route = useRoute()
 defineProps({
   toc: {
     type: Array as PropType<TocItem[]>,
+    default: () => [],
   },
 })
 

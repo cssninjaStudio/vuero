@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { PropType } from 'vue'
-import { defineProps } from 'vue'
+import { ref } from 'vue'
 
 const props = defineProps({
   activeTab: {
@@ -9,8 +9,10 @@ const props = defineProps({
   },
   user: {
     type: Object,
+    default: () => ({}),
   },
 })
+const tab = ref(props.activeTab)
 </script>
 
 <template>
@@ -24,8 +26,8 @@ const props = defineProps({
           <a
             data-target-section="subsection-1"
             class="tab-item"
-            :class="[activeTab === 'posts' && 'is-active']"
-            @click="activeTab = 'posts'"
+            :class="[tab === 'posts' && 'is-active']"
+            @click="tab = 'posts'"
           >
             <i
               aria-hidden="true"
@@ -36,8 +38,8 @@ const props = defineProps({
           <a
             data-target-section="subsection-2"
             class="tab-item"
-            :class="[activeTab === 'projects' && 'is-active']"
-            @click="activeTab = 'projects'"
+            :class="[tab === 'projects' && 'is-active']"
+            @click="tab = 'projects'"
           >
             <i
               aria-hidden="true"
@@ -48,8 +50,8 @@ const props = defineProps({
           <a
             data-target-section="subsection-3"
             class="tab-item"
-            :class="[activeTab === 'tasks' && 'is-active']"
-            @click="activeTab = 'tasks'"
+            :class="[tab === 'tasks' && 'is-active']"
+            @click="tab = 'tasks'"
           >
             <i
               aria-hidden="true"
@@ -63,7 +65,7 @@ const props = defineProps({
 
       <div
         class="icon-tabs-content subsection-1"
-        :class="[activeTab === 'posts' && 'is-active']"
+        :class="[tab === 'posts' && 'is-active']"
       >
         <div class="chart-block">
           <div class="circle-chart-wrapper">
@@ -78,7 +80,7 @@ const props = defineProps({
 
       <div
         class="icon-tabs-content subsection-2"
-        :class="[activeTab === 'projects' && 'is-active']"
+        :class="[tab === 'projects' && 'is-active']"
       >
         <div class="chart-block">
           <div class="circle-chart-wrapper is-info">
@@ -93,7 +95,7 @@ const props = defineProps({
 
       <div
         class="icon-tabs-content subsection-3"
-        :class="[activeTab === 'tasks' && 'is-active']"
+        :class="[tab === 'tasks' && 'is-active']"
       >
         <div class="chart-block">
           <div class="circle-chart-wrapper is-warning">

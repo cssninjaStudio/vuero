@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import type { PropType } from 'vue'
-import { defineProps, defineEmit } from 'vue'
 
 type AccordionImageItem = {
   title: string
@@ -14,7 +13,7 @@ const props = defineProps({
     required: true,
   },
 })
-const emit = defineEmit(['select'])
+const emit = defineEmits(['select'])
 </script>
 
 <template>

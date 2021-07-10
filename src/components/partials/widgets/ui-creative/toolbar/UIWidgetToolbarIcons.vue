@@ -1,16 +1,17 @@
 <script setup lang="ts">
-import { defineProps } from 'vue'
+import { ref } from 'vue'
 
 defineProps({
   tabs: {
     type: Array,
     required: true,
   },
-  currentTab: {
+  activeTab: {
     type: Number,
     default: 0,
   },
 })
+const currentTab = ref(props.activeTab)
 </script>
 
 <template>
@@ -21,7 +22,7 @@ defineProps({
         :class="{ 'is-active': currentTab === index }"
         @click="currentTab = index"
       >
-        <i aria-hidden="true" class="iconify" :data-icon="tab.icon"></i>
+        <i aria-hidden="true" class="iconify" :data-icon="currentTab.icon"></i>
       </a>
     </div>
   </div>

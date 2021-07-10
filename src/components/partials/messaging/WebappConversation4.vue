@@ -1,7 +1,5 @@
 <script setup lang="ts">
-import { defineEmit } from 'vue'
-
-const emit = defineEmit(['toggleMobileConversation'])
+const emit = defineEmits(['toggleMobileConversation'])
 </script>
 
 <template>
