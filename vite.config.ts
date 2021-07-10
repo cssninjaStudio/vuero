@@ -21,6 +21,9 @@ export default defineConfig({
   // Project root directory (where index.html is located).
   root: process.cwd(),
   // Base public path when served in development or production.
+  // You also need to add this base like `history: createWebHistory('my-subdirectory')`
+  // in ./src/router.ts
+  // base: '/my-subdirectory/',
   base: '/',
   // Directory to serve as plain static assets.
   publicDir: 'public',
@@ -209,10 +212,12 @@ export default defineConfig({
       svgo: {
         plugins: [
           {
-            removeViewBox: false,
+            name: 'removeViewBox',
+            active: false,
           },
           {
-            removeEmptyAttrs: false,
+            name: 'removeEmptyAttrs',
+            active: false,
           },
         ],
       },
