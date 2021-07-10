@@ -1,5 +1,5 @@
 <script setup lang="ts">
-defineProps({
+const props = defineProps({
   rows: {
     type: Array,
     required: true,
@@ -8,7 +8,7 @@ defineProps({
 </script>
 
 <template>
-  <div v-for="row in rows" :key="row.id" class="flex-table-item">
+  <div v-for="row in props.rows" :key="row.id" class="flex-table-item">
     <div class="flex-table-cell is-media is-grow" data-th="">
       <V-Avatar :picture="row.picture" size="medium" squared />
       <div>

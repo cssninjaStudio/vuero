@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
-defineProps({
+const props = defineProps({
   frontmatter: {
     type: Object,
     default: () => ({}),
@@ -23,7 +23,7 @@ const displayCode = ref(false)
       </div>
 
       <a
-        v-if="!frontmatter.disable_code"
+        v-if="!props.frontmatter.disable_code"
         class="code-trigger"
         :class="[displayCode && 'is-active']"
         @click="displayCode = !displayCode"
@@ -33,22 +33,24 @@ const displayCode = ref(false)
       </a>
     </div>
     <div
-      v-if="!frontmatter.disable_code || !frontmatter.disable_example"
+      v-if="
+        !props.frontmatter.disable_code || !props.frontmatter.disable_example
+      "
       class="card-inner"
     >
-      <div v-if="!frontmatter.disable_code" class="demo-example">
+      <div v-if="!props.frontmatter.disable_code" class="demo-example">
         <slot name="example"></slot>
       </div>
 
       <div
-        v-if="!frontmatter.disable_code && displayCode"
+        v-if="!props.frontmatter.disable_code && displayCode"
         class="demo-code-wrapper"
       >
         <div class="demo-code">
           <slot name="code"></slot>
         </div>
-        <div v-if="frontmatter.state" class="demo-state">
-          <pre>{{ frontmatter.state }}</pre>
+        <div v-if="props.frontmatter.state" class="demo-state">
+          <pre>{{ props.frontmatter.state }}</pre>
         </div>
       </div>
     </div>

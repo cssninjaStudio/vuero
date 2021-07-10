@@ -1,5 +1,5 @@
 <script setup lang="ts">
-defineProps({
+const props = defineProps({
   picture: {
     type: String,
     required: true,
@@ -53,17 +53,21 @@ defineProps({
 <template>
   <div
     class="widget contact-widget"
-    :class="[straight && 'is-straight', reversed && 'is-reversed']"
+    :class="[props.straight && 'is-straight', props.reversed && 'is-reversed']"
   >
     <div class="widget-content">
       <div class="left">
-        <V-Avatar size="medium" :picture="picture" :squared="squared" />
+        <V-Avatar
+          size="medium"
+          :picture="props.picture"
+          :squared="props.squared"
+        />
       </div>
       <div class="right">
-        <h3>{{ username }}</h3>
+        <h3>{{ props.username }}</h3>
         <div class="company">
-          <span>{{ company }}</span>
-          <p>{{ position }}</p>
+          <span>{{ props.company }}</span>
+          <p>{{ props.position }}</p>
         </div>
         <div class="contact-info">
           <span>
@@ -72,16 +76,16 @@ defineProps({
               class="iconify"
               data-icon="feather:map-pin"
             ></i>
-            <span>{{ location }}</span>
+            <span>{{ props.location }}</span>
           </span>
           <span>
             <i aria-hidden="true" class="iconify" data-icon="feather:phone"></i>
-            <span>{{ phone }}</span>
+            <span>{{ props.phone }}</span>
           </span>
         </div>
       </div>
     </div>
 
-    <p class="email">{{ email }}</p>
+    <p class="email">{{ props.email }}</p>
   </div>
 </template>

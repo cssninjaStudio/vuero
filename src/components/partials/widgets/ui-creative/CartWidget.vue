@@ -1,5 +1,5 @@
 <script setup lang="ts">
-defineProps({
+const props = defineProps({
   products: {
     type: Array,
     required: true,
@@ -12,17 +12,25 @@ defineProps({
 </script>
 
 <template>
-  <div class="cart-widget" :class="[straight && 'is-straight']">
+  <div class="cart-widget" :class="[props.straight && 'is-straight']">
     <div class="widget-toolbar">
       <div class="left">
         <h3>Your Cart</h3>
       </div>
       <div class="right">
-        <V-Tag :label="products.length + ' items'" color="orange" curved />
+        <V-Tag
+          :label="props.products.length + ' items'"
+          color="orange"
+          curved
+        />
       </div>
     </div>
     <div class="cart-items">
-      <div v-for="product in products" :key="product.id" class="cart-item">
+      <div
+        v-for="product in props.products"
+        :key="product.id"
+        class="cart-item"
+      >
         <V-Avatar :picture="product.picture" size="large" squared />
         <div class="meta">
           <span class="text">{{ product.name }}</span>

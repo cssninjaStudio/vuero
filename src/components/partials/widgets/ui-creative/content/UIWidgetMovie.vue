@@ -1,5 +1,5 @@
 <script setup lang="ts">
-defineProps({
+const props = defineProps({
   title: {
     type: String,
     required: true,
@@ -21,16 +21,16 @@ defineProps({
 <template>
   <div class="widget-content">
     <img
-      :src="picture"
+      :src="props.picture"
       alt=""
       @error.once="$event.target.src = 'https://via.placeholder.com/400x300'"
     />
     <div class="widget-meta">
       <i aria-hidden="true" class="iconify" data-icon="feather:play-circle"></i>
-      <h4>{{ title }}</h4>
+      <h4>{{ props.title }}</h4>
       <span class="views">
         <i aria-hidden="true" class="iconify" data-icon="feather:eye"></i>
-        <span>{{ views }}</span>
+        <span>{{ props.views }}</span>
       </span>
     </div>
   </div>

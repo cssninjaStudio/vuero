@@ -1,5 +1,5 @@
 <script setup lang="ts">
-defineProps({
+const props = defineProps({
   topics: {
     type: Array,
     required: true,
@@ -15,11 +15,11 @@ defineProps({
 <template>
   <div>
     <div
-      v-for="topic in topics"
+      v-for="topic in props.topics"
       :key="topic.id"
       class="inner-list-item media-flex-center"
     >
-      <V-IconBox :rounded="rounded" :color="topic.color">
+      <V-IconBox :rounded="props.rounded" :color="topic.color">
         <i aria-hidden="true" class="iconify" :data-icon="topic.icon"></i>
       </V-IconBox>
       <div class="flex-meta is-light">

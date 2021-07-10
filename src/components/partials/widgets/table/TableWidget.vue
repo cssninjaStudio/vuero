@@ -1,5 +1,5 @@
 <script setup lang="ts">
-defineProps({
+const props = defineProps({
   title: {
     type: String,
     default: 'Widget Title',
@@ -28,23 +28,26 @@ defineProps({
 </script>
 
 <template>
-  <div class="stat-widget table-widget-v1" :class="[straight && 'is-straight']">
+  <div
+    class="stat-widget table-widget-v1"
+    :class="[props.straight && 'is-straight']"
+  >
     <div class="widget-head">
-      <h3 class="dark-inverted">{{ title }}</h3>
+      <h3 class="dark-inverted">{{ props.title }}</h3>
       <button class="button v-button is-primary is-elevated">
         <span class="icon is-small">
           <i aria-hidden="true" class="fas fa-plus"></i>
         </span>
-        <span>{{ actionLabel }}</span>
+        <span>{{ props.actionLabel }}</span>
       </button>
     </div>
 
     <table class="table is-hoverable is-fullwidth">
       <tbody>
         <TableWidgetRowMembers
-          :rows="data"
-          :squared="squared"
-          :circled="circled"
+          :rows="props.data"
+          :squared="props.squared"
+          :circled="props.circled"
         />
       </tbody>
     </table>

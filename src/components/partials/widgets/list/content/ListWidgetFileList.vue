@@ -1,5 +1,5 @@
 <script setup lang="ts">
-defineProps({
+const props = defineProps({
   files: {
     type: Array,
     required: true,
@@ -11,7 +11,7 @@ defineProps({
 <template>
   <div>
     <div
-      v-for="file in files"
+      v-for="file in props.files"
       :key="file.id"
       class="inner-list-item media-flex-center"
     >

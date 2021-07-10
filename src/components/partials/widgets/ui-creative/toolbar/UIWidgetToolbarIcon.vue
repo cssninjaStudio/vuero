@@ -1,5 +1,5 @@
 <script setup lang="ts">
-defineProps({
+const props = defineProps({
   title: {
     type: String,
     required: true,
@@ -15,11 +15,11 @@ defineProps({
 <template>
   <div class="widget-toolbar">
     <div class="left">
-      <h3>{{ title }}</h3>
+      <h3>{{ props.title }}</h3>
     </div>
     <div class="right">
       <a class="right-icon has-indicator">
-        <i aria-hidden="true" class="iconify" :data-icon="icon"></i>
+        <i aria-hidden="true" class="iconify" :data-icon="props.icon"></i>
       </a>
     </div>
   </div>

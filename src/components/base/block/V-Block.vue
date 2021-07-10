@@ -1,5 +1,5 @@
 <script setup lang="ts">
-defineProps({
+const props = defineProps({
   title: {
     type: String,
     required: true,
@@ -38,18 +38,18 @@ defineProps({
 <template>
   <div
     :class="[
-      !center && 'media-flex',
-      center && 'media-flex-center',
-      narrow && 'no-margin',
-      mResponsive && 'is-responsive-mobile',
-      tResponsive && 'is-responsive-tablet-p',
+      !props.center && 'media-flex',
+      props.center && 'media-flex-center',
+      props.narrow && 'no-margin',
+      props.mResponsive && 'is-responsive-mobile',
+      props.tResponsive && 'is-responsive-tablet-p',
     ]"
   >
     <slot name="icon"></slot>
-    <div class="flex-meta" :class="[lighter && 'is-lighter']">
-      <span>{{ title }}</span>
-      <span v-if="subtitle">{{ subtitle }}</span>
-      <span v-if="infratitle">{{ infratitle }}</span>
+    <div class="flex-meta" :class="[props.lighter && 'is-lighter']">
+      <span>{{ props.title }}</span>
+      <span v-if="props.subtitle">{{ props.subtitle }}</span>
+      <span v-if="props.infratitle">{{ props.infratitle }}</span>
       <slot></slot>
     </div>
     <div class="flex-end">

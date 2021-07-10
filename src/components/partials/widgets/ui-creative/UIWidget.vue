@@ -1,9 +1,5 @@
 <script setup lang="ts">
-defineProps({
-  title: {
-    type: String,
-    default: 'UI Widget',
-  },
+const props = defineProps({
   straight: {
     type: Boolean,
     default: false,
@@ -12,7 +8,7 @@ defineProps({
 </script>
 
 <template>
-  <div class="widget" :class="[straight && 'is-straight']">
+  <div class="widget" :class="[props.straight && 'is-straight']">
     <slot name="header"></slot>
     <slot name="body"></slot>
   </div>

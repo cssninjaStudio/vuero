@@ -1,5 +1,5 @@
 <script setup lang="ts">
-defineProps({
+const props = defineProps({
   straight: {
     type: Boolean,
     default: false,
@@ -10,7 +10,7 @@ defineProps({
 <template>
   <div
     class="stat-widget spark-tile-widget"
-    :class="[straight && 'is-straight']"
+    :class="[props.straight && 'is-straight']"
   >
     <slot></slot>
   </div>

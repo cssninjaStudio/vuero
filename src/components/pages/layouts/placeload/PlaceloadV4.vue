@@ -43,7 +43,7 @@ const optionsSingle = [
       <!--Tile Grid v1-->
       <div class="columns is-multiline">
         <!--Grid item-->
-        <div class="column is-4" v-for="key in 30" :key="key">
+        <div v-for="key in 30" :key="key" class="column is-4">
           <div class="tile-grid-item">
             <div class="tile-grid-item-inner placeload-wrap is-flex">
               <V-PlaceloadAvatar size="medium" />

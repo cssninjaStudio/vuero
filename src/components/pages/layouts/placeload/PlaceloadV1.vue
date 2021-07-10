@@ -31,7 +31,7 @@ const filters = ref('')
     <div class="list-view list-view-v1">
       <div class="list-view-inner">
         <!--Item-->
-        <div class="list-view-item" v-for="key in 10" :key="key">
+        <div v-for="key in 10" :key="key" class="list-view-item">
           <V-PlaceloadWrap>
             <V-PlaceloadAvatar size="medium" />
 

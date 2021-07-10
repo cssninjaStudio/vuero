@@ -1,5 +1,5 @@
 <script setup lang="ts">
-defineProps({
+const props = defineProps({
   value: {
     type: Number,
     default: 50,
@@ -15,8 +15,8 @@ defineProps({
   <svg
     class="circle-chart"
     viewBox="0 0 45 45"
-    :width="size"
-    :height="size"
+    :width="props.size"
+    :height="props.size"
     xmlns="http://www.w3.org/2000/svg"
   >
     <circle
@@ -30,7 +30,7 @@ defineProps({
     <circle
       class="circle-chart__circle"
       stroke-width="5"
-      :stroke-dasharray="`${value},100`"
+      :stroke-dasharray="`${props.value},100`"
       stroke-linecap="round"
       fill="none"
       cx="50%"

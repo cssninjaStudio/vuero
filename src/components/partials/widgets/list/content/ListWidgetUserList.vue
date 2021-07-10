@@ -1,5 +1,5 @@
 <script setup lang="ts">
-defineProps({
+const props = defineProps({
   users: {
     type: Array,
     required: true,
@@ -15,11 +15,11 @@ defineProps({
 <template>
   <div>
     <div
-      v-for="user in users"
+      v-for="user in props.users"
       :key="user.id"
       class="inner-list-item media-flex-center"
     >
-      <V-Avatar :picture="user.picture" :squared="squared" />
+      <V-Avatar :picture="user.picture" :squared="props.squared" />
       <div class="flex-meta is-light">
         <a href="#">{{ user.name }}</a>
         <span>{{ user.position }}</span>

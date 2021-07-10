@@ -38,7 +38,7 @@ const filters = ref('')
 
         <div class="flex-list-inner">
           <!--Table item placeload-->
-          <div class="flex-table-item" v-for="key in 10" :key="key">
+          <div v-for="key in 10" :key="key" class="flex-table-item">
             <div class="flex-table-cell is-media is-grow">
               <V-PlaceloadAvatar size="medium" />
 

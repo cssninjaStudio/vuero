@@ -43,9 +43,9 @@ const selectedProject = ref(projects[1])
 
     <template #content="{ close }">
       <a
-        class="dropdown-item dropdown-block"
         v-for="project in projects"
         :key="project.initials"
+        class="dropdown-item dropdown-block"
         :class="[project.initials === selectedProject.initials && 'is-active']"
         @click="
           () => {

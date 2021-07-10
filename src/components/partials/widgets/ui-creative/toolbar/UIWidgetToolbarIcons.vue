@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
-defineProps({
+const props = defineProps({
   tabs: {
     type: Array,
     required: true,
@@ -16,7 +16,7 @@ const currentTab = ref(props.activeTab)
 
 <template>
   <div class="icon-toolbar">
-    <div v-for="(tab, index) in tabs" :key="tab.id" class="toolbar-icon">
+    <div v-for="(tab, index) in props.tabs" :key="tab.id" class="toolbar-icon">
       <a
         class="inner-icon"
         :class="{ 'is-active': currentTab === index }"

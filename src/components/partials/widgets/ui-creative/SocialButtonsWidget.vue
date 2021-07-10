@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
-defineProps({
+const props = defineProps({
   buttons: {
     type: Array,
     required: true,
@@ -25,11 +25,11 @@ const tab = ref(props.activeTab)
 <template>
   <div
     class="widget social-buttons-widget"
-    :class="[straight && 'is-straight']"
+    :class="[props.straight && 'is-straight']"
   >
     <div class="social-buttons">
       <div
-        v-for="(button, index) in buttons"
+        v-for="(button, index) in props.buttons"
         :key="button.id"
         class="social-button"
       >
@@ -38,7 +38,7 @@ const tab = ref(props.activeTab)
           :class="[
             tab === index && 'is-active',
             'is-' + button.network,
-            rounded && 'is-rounded',
+            props.rounded && 'is-rounded',
           ]"
           @click="tab = index"
         >

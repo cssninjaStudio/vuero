@@ -1,5 +1,5 @@
 <script setup lang="ts">
-defineProps({
+const props = defineProps({
   icon: {
     type: String,
     required: true,
@@ -26,17 +26,17 @@ defineProps({
 <template>
   <div
     class="stat-widget followers-stat-widget-v1"
-    :class="[straight && 'is-straight']"
+    :class="[props.straight && 'is-straight']"
   >
     <div class="follow-block">
       <div
         class="follow-icon"
-        :class="[squared && 'is-squared', colored && 'is-primary']"
+        :class="[props.squared && 'is-squared', props.colored && 'is-primary']"
       >
-        <i aria-hidden="true" :class="icon"></i>
+        <i aria-hidden="true" :class="props.icon"></i>
       </div>
       <div class="follow-count">
-        <span class="dark-inverted">{{ value }} Followers</span>
+        <span class="dark-inverted">{{ props.value }} Followers</span>
         <span>Based on your latest stats</span>
       </div>
       <a href="#" class="go-icon">

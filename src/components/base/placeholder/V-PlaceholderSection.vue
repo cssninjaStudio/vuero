@@ -1,5 +1,5 @@
 <script setup lang="ts">
-defineProps({
+const props = defineProps({
   title: {
     type: String,
     required: true,
@@ -15,8 +15,8 @@ defineProps({
   <div class="section-placeholder">
     <div class="placeholder-content">
       <slot name="image"></slot>
-      <h3 class="dark-inverted">{{ title }}</h3>
-      <p v-if="subtitle">{{ subtitle }}</p>
+      <h3 class="dark-inverted">{{ props.title }}</h3>
+      <p v-if="props.subtitle">{{ props.subtitle }}</p>
       <slot name="action"></slot>
     </div>
   </div>

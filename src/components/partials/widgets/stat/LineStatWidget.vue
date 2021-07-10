@@ -1,5 +1,5 @@
 <script setup lang="ts">
-defineProps({
+const props = defineProps({
   title: {
     type: String,
     default: 'Line stats widget',
@@ -30,19 +30,19 @@ defineProps({
 <template>
   <div
     class="stat-widget line-stats-widget"
-    :class="[straight && 'is-straight']"
+    :class="[props.straight && 'is-straight']"
   >
     <div class="widget-head">
-      <h3 class="dark-inverted">{{ title }}</h3>
+      <h3 class="dark-inverted">{{ props.title }}</h3>
     </div>
     <div class="line-stats">
       <div class="line-stat">
-        <span>{{ currentLabel }}</span>
-        <span class="current">{{ currentValue }}</span>
+        <span>{{ props.currentLabel }}</span>
+        <span class="current">{{ props.currentValue }}</span>
       </div>
       <div class="line-stat">
-        <span>{{ previousLabel }}</span>
-        <span class="dark-inverted">{{ previousValue }}</span>
+        <span>{{ props.previousLabel }}</span>
+        <span class="dark-inverted">{{ props.previousValue }}</span>
       </div>
     </div>
     <slot></slot>

@@ -25,8 +25,8 @@ watch([() => route.fullPath, dropdownElement], () => {
           aria-haspopup="true"
           aria-controls="dropdown-menu"
           icon-caret="feather:chevron-down"
-          @click="toggle"
           rounded
+          @click="toggle"
         >
           Layouts
         </V-Button>

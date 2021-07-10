@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 
-defineProps({
+const props = defineProps({
   light: {
     type: Boolean,
     default: false,
@@ -33,7 +33,7 @@ router.afterEach(() => {
     viewBox="0 0 160 160"
     style="enable-background: new 0 0 160 160"
     xml:space="preserve"
-    :class="[isLoading && 'is-roll', light && 'is-light']"
+    :class="[isLoading && 'is-roll', props.light && 'is-light']"
   >
     <g class="is-roll">
       <g>

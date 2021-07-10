@@ -1,5 +1,5 @@
 <script setup lang="ts">
-defineProps({
+const props = defineProps({
   title: {
     type: String,
     required: true,
@@ -13,9 +13,9 @@ defineProps({
 </script>
 
 <template>
-  <div class="list-widget" :class="[straight && 'is-straight']">
+  <div class="list-widget" :class="[props.straight && 'is-straight']">
     <div class="widget-head">
-      <h3 class="dark-inverted">{{ title }}</h3>
+      <h3 class="dark-inverted">{{ props.title }}</h3>
       <ListWidgetMainDropdown />
     </div>
 

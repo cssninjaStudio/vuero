@@ -8,7 +8,7 @@ import {
   plugins,
 } from '/@src/data/landing/components'
 
-defineProps({
+const props = defineProps({
   activeTab: {
     type: String as PropType<'elements' | 'components' | 'forms' | 'plugins'>,
     default: 'elements',
@@ -19,7 +19,7 @@ defineProps({
 <template>
   <div
     id="demo-elements"
-    :class="[activeTab === 'elements' && 'is-active']"
+    :class="[props.activeTab === 'elements' && 'is-active']"
     class="tab-content has-text-left"
   >
     <div class="columns is-multiline">
@@ -48,7 +48,7 @@ defineProps({
   <!--Components-->
   <div
     id="demo-components"
-    :class="[activeTab === 'components' && 'is-active']"
+    :class="[props.activeTab === 'components' && 'is-active']"
     class="tab-content has-text-left"
   >
     <div class="columns is-multiline">
@@ -78,7 +78,7 @@ defineProps({
   <!--Forms-->
   <div
     id="demo-forms"
-    :class="[activeTab === 'forms' && 'is-active']"
+    :class="[props.activeTab === 'forms' && 'is-active']"
     class="tab-content has-text-left"
   >
     <div class="columns is-multiline">
@@ -107,7 +107,7 @@ defineProps({
   <!--Sections-->
   <div
     id="plugins-sections"
-    :class="[activeTab === 'plugins' && 'is-active']"
+    :class="[props.activeTab === 'plugins' && 'is-active']"
     class="tab-content has-text-left"
   >
     <div class="columns is-multiline">

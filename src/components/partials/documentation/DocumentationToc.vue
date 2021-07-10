@@ -12,7 +12,7 @@ type TocItem = {
 
 const route = useRoute()
 
-defineProps({
+const props = defineProps({
   toc: {
     type: Array as PropType<TocItem[]>,
     default: () => [],
@@ -46,7 +46,7 @@ onMounted(() => {
     <strong class="toc-title">Contents</strong>
     <ul>
       <li
-        v-for="item of toc"
+        v-for="item of props.toc"
         :key="item.id"
         :class="[`toc-level-${item.level}`]"
       >

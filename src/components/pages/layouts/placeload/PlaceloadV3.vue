@@ -46,7 +46,7 @@ const optionsSingle = [
     <div class="user-grid user-grid-v1">
       <div class="columns is-multiline">
         <!--Grid item-->
-        <div class="column is-3" v-for="key in 20" :key="key">
+        <div v-for="key in 20" :key="key" class="column is-3">
           <div class="grid-item">
             <V-PlaceloadAvatar size="big" centered class="mb-2" />
 
