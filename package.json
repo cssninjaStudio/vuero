@@ -3,6 +3,9 @@
   "version": "1.2.1",
   "private": "true",
   "license": "MIT",
+  "engines": {
+    "node": ">=14"
+  },
   "scripts": {
     "dev": "vite",
     "dev:force": "vite --force",
