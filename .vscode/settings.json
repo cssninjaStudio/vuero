@@ -9,7 +9,7 @@
   },
   "[vue]": {
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    "editor.defaultFormatter": "octref.vetur"
   },
   "[markdown]": {
     "editor.formatOnSave": true,
