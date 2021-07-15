@@ -6,8 +6,13 @@ First of all, Thank you so much for purchasing this template and for being our l
 
 This documentation has been written to help you regarding each step of setup and customization. Please go through the documentation carefully to understand how this template is made and how to edit this properly. HTML CSS, and Vue JS framework knowledge is required to customize this template.
 
-You are currently reading the **Vuero Vue 3 1.2.0** documentation.  
-**You will find more up to date documentation content at [https://docs.cssninja.io/vuero](https://docs.cssninja.io/vuero).**
+You are currently reading the **Vuero Vue 3 1.2.0** documentation.
+
+---
+
+**💡 You will find more up to date documentation content at [https://docs.cssninja.io/vuero](https://docs.cssninja.io/vuero).**
+
+---
 
 The product uses:
 
