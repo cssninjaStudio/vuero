@@ -54,56 +54,20 @@ watchEffect(() => {
     <div class="navbar-menu" :class="[isMobileNavOpen && 'is-active']">
       <div class="navbar-start">
         <div class="navbar-item">
-          <a
-            href="https://themeforest.net/item/vuero-vuejs-3-admin-and-webapp-ui-kit/31053035"
-            class="nav-link is-active"
-          >
-            Buy Now
-          </a>
-        </div>
-
-        <div class="navbar-item">
           <RouterLink
             :to="{
               name: 'index',
-              hash: '#vuero-demos',
             }"
-            class="nav-link is-scroll"
+            class="nav-link"
             @click.passive="
               () => {
-                scrollTo('#vuero-demos', 800, { offset: -50 })
+                scrollTo('#features', 800, { offset: -50 })
                 isMobileNavOpen = false
               }
             "
           >
-            Demos
+            Awesome Features
           </RouterLink>
-        </div>
-
-        <div class="navbar-item">
-          <RouterLink
-            :to="{
-              name: 'index',
-              hash: '#vuero-components',
-            }"
-            class="nav-link is-scroll"
-            @click.passive="
-              () => {
-                scrollTo('#vuero-components', 800, { offset: -50 })
-                isMobileNavOpen = false
-              }
-            "
-          >
-            UI Elements
-          </RouterLink>
-        </div>
-
-        <div class="navbar-item">
-          <a href="https://docs.cssninja.io/vuero" class="nav-link">Docs</a>
-        </div>
-
-        <div class="navbar-item">
-          <a href="https://cssninja.io" class="nav-link">Support</a>
         </div>
       </div>
 
@@ -134,13 +98,13 @@ watchEffect(() => {
           </label>
         </div>
         <div class="navbar-item">
-          <RouterLink :to="{ name: 'auth-login-1' }" class="nav-link">
+          <RouterLink :to="{ name: 'auth-login' }" class="nav-link">
             Login
           </RouterLink>
         </div>
         <div class="navbar-item">
           <V-Button
-            :to="{ name: 'auth-signup-1' }"
+            :to="{ name: 'auth-signup' }"
             color="primary"
             rounded
             raised

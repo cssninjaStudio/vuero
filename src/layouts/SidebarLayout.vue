@@ -383,7 +383,20 @@ watch(
               <h1 class="title is-4">{{ pageTitle }}</h1>
             </div>
 
-            <Toolbar class="desktop-toolbar" />
+            <Toolbar class="desktop-toolbar">
+              <ToolbarNotification />
+
+              <a
+                class="toolbar-link right-panel-trigger"
+                @click="activePanel = 'activity'"
+              >
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:grid"
+                ></i>
+              </a>
+            </Toolbar>
           </div>
 
           <slot></slot>

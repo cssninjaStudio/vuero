@@ -2,6 +2,7 @@
 import { useHead } from '@vueuse/head'
 
 import { pageTitle, sidebarTheme } from '/@src/state/sidebarLayoutState'
+import { activePanel } from '/@src/state/activePanelState'
 
 pageTitle.value = 'Maps 1'
 useHead({
@@ -21,7 +22,20 @@ useHead({
         <div class="content-section-header">
           <h2 class="title is-4 is-narrow">Maps 2</h2>
 
-          <Toolbar class="desktop-toolbar" />
+          <Toolbar class="desktop-toolbar">
+            <ToolbarNotification />
+
+            <a
+              class="toolbar-link right-panel-trigger"
+              @click="activePanel = 'activity'"
+            >
+              <i
+                aria-hidden="true"
+                class="iconify"
+                data-icon="feather:grid"
+              ></i>
+            </a>
+          </Toolbar>
         </div>
       </template>
     </MapsDashboard>

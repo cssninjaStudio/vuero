@@ -19,8 +19,6 @@ fi
 
 set -xe
 
-cp .release/documentation/index.html ./documentation/index.html
-
 # enable "rollupOptions.external" in vite.config.ts
 sed -i "s#/// ##g" ./vite.config.ts
 
@@ -35,8 +33,43 @@ zip -r .release/template-${PROJECT}-${TAG}.zip . \
   -x "*.zip" \
   -x "node_modules/*" \
   -x ".release/*" \
+  -x ".scannerwork/*" \
   -x ".git/*" \
   -x ".github/*" \
+  -x "pages-quickstart/*" \
+  -x "layouts-quickstart/*" \
+  -x "cypress/screenshots/*" \
+  -x "sonar-project.properties" \
+  -x "docker-compose.sonarqube.yml"\
+  -x "docker-compose.yml"
+
+# replaces quickstarter pages and layout
+rm -rf \
+  src/pages \
+  src/layouts \
+  dist
+
+mv \
+  src/pages-quickstart \
+  src/pages
+
+mv \
+  src/layouts-quickstart \
+  src/layouts
+
+## build without artifacts and with quickstarter content
+yarn build
+
+# zip sources quickstarter-${PROJECT}-${TAG}.zip
+zip -r .release/quickstarter-${PROJECT}-${TAG}.zip . \
+  -x "*.zip" \
+  -x "node_modules/*" \
+  -x ".release/*" \
+  -x ".scannerwork/*" \
+  -x ".git/*" \
+  -x ".github/*" \
+  -x "pages-quickstart/*" \
+  -x "layouts-quickstart/*" \
   -x "cypress/screenshots/*" \
   -x "sonar-project.properties" \
   -x "docker-compose.sonarqube.yml"\
@@ -49,11 +82,20 @@ zip -j .release/${PROJECT}-preview.zip \
 # top level zip release-${PROJECT}-${TAG}.zip 
 zip -j .release/release-${PROJECT}-${TAG}.zip \
   .release/template-${PROJECT}-${TAG}.zip \
+  .release/quickstarter-${PROJECT}-${TAG}.zip \
   .release/${PROJECT}-preview.zip \
   .release/${PROJECT}-thumb.png \
 
-# remove artifacts 
-rm -rf ./documentation/index.html
+# remove build artifacts
+rm -rf \
+  .release/${PROJECT}-preview.zip \
+  .release/template-${PROJECT}-${TAG}.zip \
+  .release/quickstarter-${PROJECT}-${TAG}.zip
 
 # reset index
-git checkout public/demo vite.config.ts
+git checkout \
+  src \
+  public \
+  vite.config.ts
+
+git clean -fd src

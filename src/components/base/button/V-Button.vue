@@ -177,7 +177,7 @@ export default defineComponent({
       () => props.iconCaret && props.iconCaret.indexOf(':') !== -1
     )
 
-    return () => {
+    const getChildrens = () => {
       const childrens = []
 
       let iconWrapper
@@ -220,6 +220,10 @@ export default defineComponent({
         childrens.push(carretWrapper)
       }
 
+      return childrens
+    }
+
+    return () => {
       let link
       if (props.to) {
         return h(
@@ -230,7 +234,9 @@ export default defineComponent({
             to: props.to,
             class: ['button', ...classes.value],
           },
-          childrens
+          {
+            default: getChildrens,
+          }
         )
       } else if (props.href) {
         return h(
@@ -241,7 +247,9 @@ export default defineComponent({
             href: props.href,
             class: classes.value,
           },
-          childrens
+          {
+            default: getChildrens,
+          }
         )
       }
 
@@ -254,7 +262,9 @@ export default defineComponent({
           disabled: props.disabled,
           class: ['button', ...classes.value],
         },
-        childrens
+        {
+          default: getChildrens,
+        }
       )
     }
   },

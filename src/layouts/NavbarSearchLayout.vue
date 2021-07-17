@@ -4,6 +4,7 @@ import { ref, computed, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import { popovers } from '/@src/data/users/userPopovers'
 import { pageTitle } from '/@src/state/navbarLayoutState'
+import { activePanel } from '/@src/state/activePanelState'
 
 type NavbarSearchTheme = 'default' | 'center' | 'fade'
 
@@ -199,7 +200,17 @@ watch(
 
       <!-- Custom navbar toolbar -->
       <template #toolbar>
-        <Toolbar class="desktop-toolbar" />
+        <Toolbar class="desktop-toolbar">
+          <ToolbarNotification />
+
+          <a
+            class="toolbar-link right-panel-trigger"
+            @click="activePanel = 'activity'"
+          >
+            <i aria-hidden="true" class="iconify" data-icon="feather:grid"></i>
+          </a>
+        </Toolbar>
+
         <LayoutSwitcher />
         <UserProfileDropdown />
       </template>
@@ -331,7 +342,20 @@ watch(
                 <h1 class="title is-4">{{ pageTitle }}</h1>
               </div>
 
-              <Toolbar class="mobile-toolbar" />
+              <Toolbar class="mobile-toolbar">
+                <ToolbarNotification />
+
+                <a
+                  class="toolbar-link right-panel-trigger"
+                  @click="activePanel = 'activity'"
+                >
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:grid"
+                  ></i>
+                </a>
+              </Toolbar>
             </div>
 
             <slot></slot>

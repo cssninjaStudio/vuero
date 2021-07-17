@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
+import { activePanel } from '/@src/state/activePanelState'
 import { computed, ref } from 'vue'
 
 import useDropdown from '/@src/composable/useDropdown'
@@ -180,7 +181,20 @@ useHead({
         <!--User Settings-->
         <div class="user-settings">
           <!--Toolbar-->
-          <Toolbar class="desktop-toolbar" />
+          <Toolbar class="desktop-toolbar">
+            <ToolbarNotification />
+
+            <a
+              class="toolbar-link right-panel-trigger"
+              @click="activePanel = 'activity'"
+            >
+              <i
+                aria-hidden="true"
+                class="iconify"
+                data-icon="feather:grid"
+              ></i>
+            </a>
+          </Toolbar>
 
           <!--User Menu-->
           <div

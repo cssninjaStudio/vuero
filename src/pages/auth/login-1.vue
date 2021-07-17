@@ -532,11 +532,6 @@ useHead({
               opacity: 0.8;
             }
           }
-
-          &:nth-child(2) {
-            color: $dark-text;
-            border-color: $placeholder;
-          }
         }
       }
     }
