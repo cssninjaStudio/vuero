@@ -1,22 +1,36 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { useRouter } from 'vue-router'
+import { useRouter, useRoute } from 'vue-router'
 import { useHead } from '@vueuse/head'
 
 import { isDark } from '/@src/state/darkModeState'
+import useUserSession from '/@src/composable/useUserSession'
 import useNotyf from '/@src/composable/useNotyf'
 import sleep from '/@src/utils/sleep'
 
 const isLoading = ref(false)
 const router = useRouter()
+const route = useRoute()
 const notif = useNotyf()
+const userSession = useUserSession()
+const redirect = route.query.redirect as string
 
 const handleLogin = async () => {
   if (!isLoading.value) {
     isLoading.value = true
+
     await sleep(2000)
+    userSession.token = 'logged-in'
     notif.success('Welcome back, Erik Kovalsky')
-    router.push({ name: 'sidebar-dashboards' })
+
+    if (redirect) {
+      router.push(redirect)
+    } else {
+      router.push({
+        name: 'app',
+      })
+    }
+
     isLoading.value = false
   }
 }
@@ -144,6 +158,7 @@ useHead({
                         <V-Button
                           :loading="isLoading"
                           color="primary"
+                          type="submit"
                           bold
                           fullwidth
                           raised

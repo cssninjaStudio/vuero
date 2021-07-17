@@ -20,6 +20,9 @@ import routes from 'pages-generated'
  *    name: 'wizard-v1',
  *    path: '/wizard-v1',
  *    props: true,
+ *    meta: {
+ *      requiresAuth: true
+ *    },
  * }]
  *
  * Here is how nested routes are generated:
@@ -34,7 +37,7 @@ import routes from 'pages-generated'
  *        component: () => import('/src/pages/auth/login-1.vue'),
  *        name: 'auth-login-1',
  *        path: 'login-1',
- *        props: true,
+ *        props: true
  *      },
  *    ],
  * }]

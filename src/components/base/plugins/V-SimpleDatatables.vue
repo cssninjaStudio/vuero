@@ -4,13 +4,11 @@ import 'simple-datatables/src/style.css'
 
 <script setup lang="ts">
 import {
-  defineProps,
   isReactive,
   onBeforeUnmount,
   onMounted,
   ref,
   watch,
-  defineEmit,
   reactive,
 } from 'vue'
 import { DataTable } from 'simple-datatables'

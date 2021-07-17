@@ -11,18 +11,13 @@
  * @see /vite.config.ts
  */
 
-import { createApp } from 'vue'
-import { createHead } from '@vueuse/head'
+import { createApp } from './app'
 import VCalendar from 'v-calendar'
 import VueMultiselect from '@vueform/multiselect'
 import VueSlider from '@vueform/slider'
 import VueApexCharts from 'vue3-apexcharts'
 import VueCKEditor from '@ckeditor/ckeditor5-vue'
 import VueTippy from 'vue-tippy'
-
-import App from './App.vue'
-import { createI18n } from './i18n'
-import { createRouter } from './router'
 
 import hasNestedRouterLink from './directives/has-nested-router-link'
 import background from './directives/background'
@@ -52,29 +47,27 @@ import './scss/vendors/prism-coldark-cold.css'
 
 import './scss/main.scss'
 
-// Now we can start our vue app
-const app = createApp(App)
-const head = createHead()
-const router = createRouter()
-const i18n = createI18n()
+/**
+ * We create our app and mount it when it is ready
+ *
+ * @see /@src/app.ts for more detailed informations
+ */
+createApp({
+  async enhanceApp(app) {
+    app.use(VCalendar)
+    app.use(VueApexCharts)
+    app.use(VueCKEditor)
+    app.use(VueTippy, {
+      defaultProps: {
+        theme: 'light',
+      },
+    })
 
-app.use(router)
-app.use(i18n)
-app.use(head)
-app.use(VCalendar)
-app.use(VueApexCharts)
-app.use(VueCKEditor)
-app.use(VueTippy, {
-  defaultProps: {
-    theme: 'light',
+    app.component(VueMultiselect.name, VueMultiselect)
+    app.component(VueSlider.name, VueSlider)
+
+    app.directive('has-nested-router-link', hasNestedRouterLink)
+    app.directive('background', background)
+    app.directive('tooltip', tooltip)
   },
-})
-
-app.component(VueMultiselect.name, VueMultiselect)
-app.component(VueSlider.name, VueSlider)
-
-app.directive('has-nested-router-link', hasNestedRouterLink)
-app.directive('background', background)
-app.directive('tooltip', tooltip)
-
-app.mount('#app')
+}).then((app) => app.mount('#app'))
