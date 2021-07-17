@@ -124,7 +124,8 @@ export async function createApp({ enhanceApp }: VueroAppOptions) {
       )
 
       return {
-        name: 'auth-login-1',
+        // Will follow the redirection set in /@src/pages/auth/index.vue
+        name: 'auth',
         // save the location we were at to come back later
         query: { redirect: to.fullPath },
       }
