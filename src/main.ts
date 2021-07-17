@@ -21,8 +21,8 @@ import VueCKEditor from '@ckeditor/ckeditor5-vue'
 import VueTippy from 'vue-tippy'
 
 import App from './App.vue'
-import i18n from './i18n'
-import router from './router'
+import { createI18n } from './i18n'
+import { createRouter } from './router'
 
 import hasNestedRouterLink from './directives/has-nested-router-link'
 import background from './directives/background'
@@ -55,6 +55,8 @@ import './scss/main.scss'
 // Now we can start our vue app
 const app = createApp(App)
 const head = createHead()
+const router = createRouter()
+const i18n = createI18n()
 
 app.use(router)
 app.use(i18n)
