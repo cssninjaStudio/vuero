@@ -1,3 +1,36 @@
+# Vuero - Changelog
+
+---
+
+**💡 You will find more up to date documentation content at [https://docs.cssninja.io/vuero/documentation/changelog.html](https://docs.cssninja.io/vuero/documentation/changelog.html).**
+
+---
+
+## 1.3.0 (2021-07-17)
+
+- fix: circular menu watcheffect ([85a086e](https://github.com/cssninja-digisquad/vuero/commit/85a086e))
+- fix: plyr cover video size ([63e307f](https://github.com/cssninja-digisquad/vuero/commit/63e307f))
+- feat: add redirection pages examples in auth and error ([72eed3b](https://github.com/cssninja-digisquad/vuero/commit/72eed3b))
+- feat: add simple quickstarter pages and layout ([78d09cd](https://github.com/cssninja-digisquad/vuero/commit/78d09cd))
+- feat: add useApi and useUserSession composable + add navigation guard example on dashboards pages ([c90cc4c](https://github.com/cssninja-digisquad/vuero/commit/c90cc4c))
+- feat: update to vue 3.1.5 ([51bd6a5](https://github.com/cssninja-digisquad/vuero/commit/51bd6a5))
+- chore: add license file and fix minimum node version ([05e59e0](https://github.com/cssninja-digisquad/vuero/commit/05e59e0))
+- chore: uniformisation of defineProps usage ([2a26c01](https://github.com/cssninja-digisquad/vuero/commit/2a26c01))
+- chore: update documentation link ([1f784a0](https://github.com/cssninja-digisquad/vuero/commit/1f784a0))
+- chore: update redirection route in navigation guard to 'auth' instead of 'auth-login-1' ([9a63639](https://github.com/cssninja-digisquad/vuero/commit/9a63639))
+- refactor: export function in i18n and router ([a44d8c1](https://github.com/cssninja-digisquad/vuero/commit/a44d8c1))
+- refactor(v-button): use render function instead of template ([95ba553](https://github.com/cssninja-digisquad/vuero/commit/95ba553))
+- refactor(v-iconbutton): use render function instead of template ([5249d65](https://github.com/cssninja-digisquad/vuero/commit/5249d65))
+- dx: improve subdirectory path comments ([7d792fc](https://github.com/cssninja-digisquad/vuero/commit/7d792fc))
+- dx: set minimum node version ([501f6b6](https://github.com/cssninja-digisquad/vuero/commit/501f6b6))
+- ci: update build script to build without assets + documentation redirect ([cc7058f](https://github.com/cssninja-digisquad/vuero/commit/cc7058f))
+
+## <small>1.2.1 (2021-06-24)</small>
+
+- fix: colored navbar notification (close #83) ([182ef79](https://github.com/cssninja-digisquad/vuero/commit/182ef79)), closes [#83](https://github.com/cssninja-digisquad/vuero/issues/83)
+- fix: mobile user dropdown on navbar (close #84) ([c3b5e31](https://github.com/cssninja-digisquad/vuero/commit/c3b5e31)), closes [#84](https://github.com/cssninja-digisquad/vuero/issues/84)
+- fix: onboarding page responsive (close #77) ([2d318df](https://github.com/cssninja-digisquad/vuero/commit/2d318df)), closes [#77](https://github.com/cssninja-digisquad/vuero/issues/77)
+
 ## 1.2.0 (2021-06-21)
 
 - feat: add maps pages with mapbox ([0bb8c25](https://github.com/cssninja-digisquad/vuero/commit/0bb8c25))
