@@ -100,6 +100,9 @@ useHead({
       <a id="features" name="features" />
       <MarketingFeaturesIcons />
 
+      <!--Pricing section-->
+      <MarketingPricings />
+
       <!--Mockup Section-->
       <MarketingMockup />
 
@@ -108,12 +111,6 @@ useHead({
 
       <!--About section-->
       <MarketingAbout />
-
-      <!--Pricing section-->
-      <MarketingPricings />
-
-      <!--Boxed CTA-->
-      <MarketingCTA />
 
       <!-- Footer -->
       <LandingFooter />

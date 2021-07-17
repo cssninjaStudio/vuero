@@ -89,6 +89,10 @@
   }
 }
 
+.plyr__video-wrapper {
+  height: 100%;
+}
+
 .plyr--full-ui.plyr--video .plyr__control--overlaid {
   background: $primary !important;
   box-shadow: $primary-box-shadow;
