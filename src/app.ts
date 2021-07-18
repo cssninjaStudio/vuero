@@ -64,7 +64,7 @@ export async function createApp({ enhanceApp }: VueroAppOptions) {
        *
        * <RouterView v-slot="{ Component }">
        *   <transition name="fade-slow" mode="out-in">
-       *     <component :is="Component" :key="route.fullPath" />
+       *     <component :is="Component" />
        *   </transition>
        * </RouterView>
        */
@@ -77,11 +77,7 @@ export async function createApp({ enhanceApp }: VueroAppOptions) {
               Transition,
               { name: 'fade-slow', mode: 'out-in' },
               {
-                default: () => [
-                  h(Component, {
-                    key: router.currentRoute.value.fullPath,
-                  }),
-                ],
+                default: () => [h(Component)],
               }
             ),
           ]

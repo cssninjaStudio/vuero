@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { PropType } from 'vue'
-import { ref, watchEffect, watch } from 'vue'
+import { ref, watchPostEffect, watch } from 'vue'
 import { useRoute } from 'vue-router'
 
 import { activePanel } from '/@src/state/activePanelState'
@@ -55,21 +55,18 @@ function switchSidebar(id: string) {
 /**
  * watchEffect callback will be executed each time dependent reactive values has changed
  */
-watchEffect(
-  () => {
-    const isOpen = isDesktopSidebarOpen.value
-    const wrappers = document.querySelectorAll('.view-wrapper')
+watchEffect(() => {
+  const isOpen = isDesktopSidebarOpen.value
+  const wrappers = document.querySelectorAll('.view-wrapper')
 
-    wrappers.forEach((wrapper) => {
-      if (isOpen === false) {
-        wrapper.classList.remove('is-pushed-full')
-      } else if (!wrapper.classList.contains('is-pushed-full')) {
-        wrapper.classList.add('is-pushed-full')
-      }
-    })
-  },
-  { flush: 'post' }
-)
+  wrappers.forEach((wrapper) => {
+    if (isOpen === false) {
+      wrapper.classList.remove('is-pushed-full')
+    } else if (!wrapper.classList.contains('is-pushed-full')) {
+      wrapper.classList.add('is-pushed-full')
+    }
+  })
+})
 watch(
   () => route.fullPath,
   () => {
@@ -136,7 +133,7 @@ watch(
       />
     </transition>
 
-    <Sidebar theme="labels" :is-open="isDesktopSidebarOpen">
+    <Sidebar :theme="props.theme" :is-open="isDesktopSidebarOpen">
       <template #links>
         <!-- Dashboards -->
         <li>

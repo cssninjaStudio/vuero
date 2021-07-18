@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onMounted, ref, watch, watchEffect } from 'vue'
+import { onMounted, ref, watch, watchPostEffect } from 'vue'
 import mapboxgl from 'mapbox-gl'
 import MapboxGeocoder from '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.min.js'
 import 'mapbox-gl/src/css/mapbox-gl.css'
@@ -280,52 +280,49 @@ onMounted(() => {
   geocoderElement.value.appendChild(geocoder.onAdd(map))
 })
 
-watchEffect(
-  () => {
-    if (!selectedFeature.value || !popupElement.value || !map) {
-      return
+watchPostEffect(() => {
+  if (!selectedFeature.value || !popupElement.value || !map) {
+    return
+  }
+
+  const coordinates = selectedFeature.value.geometry.coordinates.slice()
+  const name = selectedFeature.value.properties.name
+  const logo = selectedFeature.value.properties.logo
+  const openingCount = selectedFeature.value.properties.openingCount
+  const description = selectedFeature.value.properties.description
+
+  // Ensure that if the map is zoomed out such that multiple
+  // copies of the feature are visible, the popup appears
+  // over the copy being pointed to.
+  if (selectedFeatureLatLng.value) {
+    while (Math.abs(selectedFeatureLatLng.value.lng - coordinates[0]) > 180) {
+      coordinates[0] +=
+        selectedFeatureLatLng.value.lng > coordinates[0] ? 360 : -360
     }
+  }
 
-    const coordinates = selectedFeature.value.geometry.coordinates.slice()
-    const name = selectedFeature.value.properties.name
-    const logo = selectedFeature.value.properties.logo
-    const openingCount = selectedFeature.value.properties.openingCount
-    const description = selectedFeature.value.properties.description
+  map.flyTo({
+    center: coordinates,
+    zoom: 15,
+    bearing: 0,
+    essential: true, // this animation is considered essential with respect to prefers-reduced-motion
+  })
 
-    // Ensure that if the map is zoomed out such that multiple
-    // copies of the feature are visible, the popup appears
-    // over the copy being pointed to.
-    if (selectedFeatureLatLng.value) {
-      while (Math.abs(selectedFeatureLatLng.value.lng - coordinates[0]) > 180) {
-        coordinates[0] +=
-          selectedFeatureLatLng.value.lng > coordinates[0] ? 360 : -360
-      }
-    }
+  if (popup) {
+    popup.remove()
+  }
 
-    map.flyTo({
-      center: coordinates,
-      zoom: 15,
-      bearing: 0,
-      essential: true, // this animation is considered essential with respect to prefers-reduced-motion
+  popup = new mapboxgl.Popup()
+    .on('open', () => {
+      selectedFeatureName.value = name
     })
-
-    if (popup) {
-      popup.remove()
-    }
-
-    popup = new mapboxgl.Popup()
-      .on('open', () => {
-        selectedFeatureName.value = name
-      })
-      .on('close', () => {
-        selectedFeatureName.value = ''
-      })
-      .setLngLat(coordinates)
-      .setHTML(popupElement.value.innerHTML)
-      .addTo(map)
-  },
-  { flush: 'post' }
-)
+    .on('close', () => {
+      selectedFeatureName.value = ''
+    })
+    .setLngLat(coordinates)
+    .setHTML(popupElement.value.innerHTML)
+    .addTo(map)
+})
 
 watch(isDark, () => {
   if (!map) {

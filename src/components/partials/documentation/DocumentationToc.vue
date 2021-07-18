@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { PropType } from 'vue'
 import { computed, onMounted } from 'vue'
-import { useRoute } from 'vue-router'
+import { useRoute, useRouter } from 'vue-router'
 import VueScrollTo from 'vue-scrollto'
 
 type TocItem = {
@@ -11,6 +11,7 @@ type TocItem = {
 }
 
 const route = useRoute()
+const router = useRouter()
 
 const props = defineProps({
   toc: {
@@ -30,6 +31,10 @@ const isActiveAnchor = computed(() => {
 
 const onTocClick = (id?: string) => {
   VueScrollTo.scrollTo(id ? `#${id}` : '#app', 500, { offset: -30 })
+  router.replace({
+    ...route,
+    hash: `#${id}`,
+  })
 }
 
 onMounted(() => {
@@ -53,12 +58,12 @@ onMounted(() => {
         <a
           :href="`#${item.id}`"
           :class="[isActiveAnchor(item.id) && 'is-active']"
-          @click="() => onTocClick(item.id)"
+          @click.prevent="() => onTocClick(item.id)"
           >{{ item.title }}</a
         >
       </li>
       <li>
-        <a class="back-to-top" href="#" @click="() => onTocClick()">
+        <a class="back-to-top" href="#" @click.prevent="() => onTocClick()">
           <span>Back To Top</span>
         </a>
       </li>

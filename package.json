@@ -4,7 +4,7 @@
   "private": "true",
   "license": "SEE LICENSE IN LICENSE.md",
   "engines": {
-    "node": ">=14"
+    "node": ">=14.17.0"
   },
   "scripts": {
     "dev": "vite",
@@ -34,7 +34,7 @@
     "@popperjs/core": "2.9.2",
     "@vueform/multiselect": "2.0.1",
     "@vueform/slider": "2.0.3",
-    "@vueuse/core": "5.1.3",
+    "@vueuse/core": "6.0.0-beta.1",
     "@vueuse/head": "0.6.0",
     "apexcharts": "3.27.2",
     "axios": "0.21.1",
@@ -65,11 +65,11 @@
     "tippy.js": "6.3.1",
     "tslib": "2.3.0",
     "v-calendar": "3.0.0-alpha.4",
-    "vue": "3.1.5",
-    "vue-i18n": "9.2.0-alpha.5",
-    "vue-router": "4.0.6",
+    "vue": "3.2.0-beta.1",
+    "vue-i18n": "9.2.0-alpha.6",
+    "vue-router": "4.0.10",
     "vue-scrollto": "2.20.0",
-    "vue-tippy": "6.0.0-alpha.29",
+    "vue-tippy": "6.0.0-alpha.30",
     "vue3-apexcharts": "1.4.0"
   },
   "devDependencies": {
@@ -86,13 +86,12 @@
     "@typescript-eslint/eslint-plugin": "4.28.3",
     "@typescript-eslint/parser": "4.28.3",
     "@vitejs/plugin-vue": "1.2.5",
-    "@vue/compiler-sfc": "3.1.5",
+    "@vue/compiler-sfc": "3.2.0-beta.1",
     "cross-env": "7.0.3",
     "cypress": "7.7.0",
     "eslint": "7.30.0",
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-md": "1.0.19",
-    "eslint-plugin-prettier-vue": "3.1.0",
     "eslint-plugin-vue": "7.13.0",
     "gray-matter": "4.0.3",
     "lint-staged": "11.0.1",
@@ -119,7 +118,6 @@
     "vite-plugin-purge-icons": "0.7.0",
     "vite-plugin-pwa": "0.8.1",
     "vite-plugin-radar": "0.2.0",
-    "vue-tsc": "0.2.1",
     "yorkie": "2.0.0"
   },
   "gitHooks": {

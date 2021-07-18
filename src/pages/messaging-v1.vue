@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import axios from 'axios'
 import { useHead } from '@vueuse/head'
-import { computed, onMounted, ref, watchEffect } from 'vue'
+import { computed, onMounted, ref, watchEffect, watchPostEffect } from 'vue'
 
 import { activeSidebar, toggleSidebar } from '/@src/state/activeSidebarState'
 import { sidebarTheme } from '/@src/state/sidebarLayoutState'
@@ -103,21 +103,18 @@ useHead({
 })
 
 watchEffect(onConversationChanged)
-watchEffect(
-  () => {
-    const isOpen = activeSidebar.value === 'messages'
-    const wrappers = document.querySelectorAll('.view-wrapper')
+watchPostEffect(() => {
+  const isOpen = activeSidebar.value === 'messages'
+  const wrappers = document.querySelectorAll('.view-wrapper')
 
-    wrappers.forEach((wrapper) => {
-      if (isOpen === false) {
-        wrapper.classList.remove('is-pushed-full')
-      } else if (!wrapper.classList.contains('is-pushed-full')) {
-        wrapper.classList.add('is-pushed-full')
-      }
-    })
-  },
-  { flush: 'post' }
-)
+  wrappers.forEach((wrapper) => {
+    if (isOpen === false) {
+      wrapper.classList.remove('is-pushed-full')
+    } else if (!wrapper.classList.contains('is-pushed-full')) {
+      wrapper.classList.add('is-pushed-full')
+    }
+  })
+})
 </script>
 
 <template>
