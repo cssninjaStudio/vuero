@@ -193,7 +193,7 @@ export default defineComponent({
         iconWrapper = h('span', { class: 'icon' }, icon)
       }
 
-      let carretWrapper
+      let caretWrapper
       if (isCaretIconify.value) {
         const caret = h('i', {
           'aria-hidden': true,
@@ -216,8 +216,8 @@ export default defineComponent({
       } else {
         childrens.push(h('span', slots.default?.()))
       }
-      if (carretWrapper) {
-        childrens.push(carretWrapper)
+      if (caretWrapper) {
+        childrens.push(caretWrapper)
       }
 
       return childrens

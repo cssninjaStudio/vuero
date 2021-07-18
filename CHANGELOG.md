@@ -13,7 +13,7 @@
 - feat: add redirection pages examples in auth and error ([72eed3b](https://github.com/cssninja-digisquad/vuero/commit/72eed3b))
 - feat: add simple quickstarter pages and layout ([78d09cd](https://github.com/cssninja-digisquad/vuero/commit/78d09cd))
 - feat: add useApi and useUserSession composable + add navigation guard example on dashboards pages ([c90cc4c](https://github.com/cssninja-digisquad/vuero/commit/c90cc4c))
-- feat: update to vue 3.1.5 ([51bd6a5](https://github.com/cssninja-digisquad/vuero/commit/51bd6a5))
+- feat: update to vue 3.2.0 ([a3ecf95](https://github.com/cssninja-digisquad/vuero/commit/a3ecf95))
 - chore: add license file and fix minimum node version ([05e59e0](https://github.com/cssninja-digisquad/vuero/commit/05e59e0))
 - chore: uniformisation of defineProps usage ([2a26c01](https://github.com/cssninja-digisquad/vuero/commit/2a26c01))
 - chore: update documentation link ([1f784a0](https://github.com/cssninja-digisquad/vuero/commit/1f784a0))
