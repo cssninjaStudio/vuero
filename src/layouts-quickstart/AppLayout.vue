@@ -53,9 +53,9 @@ function switchSidebar(id: string) {
 }
 
 /**
- * watchEffect callback will be executed each time dependent reactive values has changed
+ * watchPostEffect callback will be executed each time dependent reactive values has changed
  */
-watchEffect(() => {
+watchPostEffect(() => {
   const isOpen = isDesktopSidebarOpen.value
   const wrappers = document.querySelectorAll('.view-wrapper')
 
