@@ -50,24 +50,13 @@ const toggle = (key: number) => {
       v-for="(item, key) in items"
       :key="key"
       class="accordion-item"
-      :open="!internalOpenItems.includes(key)"
+      :open="internalOpenItems.includes(key) || undefined"
       :class="[internalOpenItems.includes(key) && 'is-active']"
     >
-      <summary class="accordion-header" @click="() => toggle(key)">
+      <summary class="accordion-header" @click.prevent="() => toggle(key)">
         {{ item.title }}
       </summary>
       <div class="accordion-content">{{ item.content }}</div>
     </details>
   </div>
 </template>
-
-<style lang="scss" scoped>
-summary {
-  outline: none;
-  list-style: none;
-
-  &::marker {
-    display: none;
-  }
-}
-</style>
