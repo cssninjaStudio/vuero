@@ -6,7 +6,7 @@ First of all, Thank you so much for purchasing this template and for being our l
 
 This documentation has been written to help you regarding each step of setup and customization. Please go through the documentation carefully to understand how this template is made and how to edit this properly. HTML CSS, and Vue JS framework knowledge is required to customize this template.
 
-You are currently reading the **Vuero Vue 3 1.3.0** documentation.
+You are currently reading the **Vuero Vue 3 1.3.1** documentation.
 
 ---
 
@@ -34,7 +34,7 @@ If you have any trouble while editing this template or if you simply want to ask
 1. A good code editor  
    _[VSCode](https://code.visualstudio.com/) settings are preconfigured_
 1. A supported web browser (Chrome, Edge, Firefox, ...)
-1. [Nodejs LTS](https://nodejs.org/en/) _(14.x)_ installed
+1. [Nodejs LTS](https://nodejs.org/en/) _(14.x with npm >7)_ installed
 1. [Typescript](https://github.com/microsoft/typescript) _(4.x)_ installed
 
 ### Dependencies installation
@@ -42,7 +42,7 @@ If you have any trouble while editing this template or if you simply want to ask
 To setup the template and start installing project dependencies, run one of the following commands:
 
 ```bash
-# using npm
+# using npm v7
 npm install
 
 # using pnpm
@@ -57,7 +57,7 @@ yarn install
 To start the development server, run one of the following commands:
 
 ```bash
-# using npm
+# using npm v7
 npm run dev
 
 # using pnpm
