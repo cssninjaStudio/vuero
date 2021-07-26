@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import type { PropType } from 'vue'
-import { onUpdated, ref, useContext } from 'vue'
+import { onUpdated, ref, useSlots } from 'vue'
 
 type MediaCardRadius = 'regular' | 'smooth' | 'rounded'
 
-const { slots } = useContext()
+const slots = useSlots()
 
 const hasDefaultSlot = ref(!!slots.default?.())
 
