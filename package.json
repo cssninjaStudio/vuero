@@ -1,6 +1,6 @@
 {
   "name": "vuero",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "private": "true",
   "license": "SEE LICENSE IN LICENSE.md",
   "engines": {
@@ -78,8 +78,8 @@
     "@iconify/json": "1.1.380",
     "@intlify/vite-plugin-vue-i18n": "2.3.2",
     "@types/dragula": "3.7.1",
-    "@types/mapbox__mapbox-gl-geocoder": "^4.7.1",
     "@types/mapbox-gl": "^2.3.3",
+    "@types/mapbox__mapbox-gl-geocoder": "^4.7.1",
     "@types/markdown-it": "12.0.3",
     "@types/node": "16.4.3",
     "@types/nprogress": "0.2.0",
