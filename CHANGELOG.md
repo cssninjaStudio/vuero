@@ -8,7 +8,8 @@
 
 ## <small>1.3.1 (2021-07-26)</small>
 
-- fix: vue-demi dependencies + update minor deps ([85cc46b](https://github.com/cssninja-digisquad/vuero/commit/85cc46b))
+- fix: add vue-demi dependencies ([135ce23](https://github.com/cssninja-digisquad/vuero/commit/135ce23))
+- fix: update vue and vue/compiler-sfc + update minor deps ([85cc46b](https://github.com/cssninja-digisquad/vuero/commit/85cc46b))
 - fix(v-collapse): remove is-active class and use native open attribute ([a390e96](https://github.com/cssninja-digisquad/vuero/commit/a390e96))
 
 ## 1.3.0 (2021-07-17)
