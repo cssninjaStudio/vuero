@@ -11,14 +11,17 @@ const toc = useMarkdownToc(markdownContainer)
 const leftActionsOpen = ref(false)
 const centeredActionsOpen = ref(false)
 const rightActionsOpen = ref(false)
+
 const smallOpen = ref(false)
 const standardOpen = ref(false)
 const mediumOpen = ref(false)
 const largeOpen = ref(false)
 const bigOpen = ref(false)
+
 const smallFormOpen = ref(false)
 const standardFormOpen = ref(false)
 const mediumFormOpen = ref(false)
+
 const largeFormOpen = ref(false)
 const bigFormOpen = ref(false)
 const noscrollOpen = ref(false)

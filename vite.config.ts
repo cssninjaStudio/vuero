@@ -29,6 +29,56 @@ export default defineConfig({
   publicDir: 'public',
   // Adjust console output verbosity.
   logLevel: 'info',
+  /**
+   * By default, Vite will crawl your index.html to detect dependencies that
+   * need to be pre-bundled. If build.rollupOptions.input is specified,
+   * Vite will crawl those entry points instead.
+   *
+   * @see https://vitejs.dev/config/#optimizedeps-entries
+   */
+  optimizeDeps: {
+    include: [
+      '@ckeditor/ckeditor5-vue',
+      '@ckeditor/ckeditor5-build-classic',
+      '@iconify/iconify',
+      '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.min.js',
+      '@vueuse/core',
+      '@vueuse/head',
+      '@vueform/multiselect',
+      '@vueform/slider',
+      'axios',
+      'billboard.js',
+      'dayjs',
+      'dropzone',
+      'dragula',
+      'filepond',
+      'filepond-plugin-file-validate-size',
+      'filepond-plugin-file-validate-type',
+      'filepond-plugin-image-exif-orientation',
+      'filepond-plugin-image-crop',
+      'filepond-plugin-image-edit',
+      'filepond-plugin-image-preview',
+      'filepond-plugin-image-resize',
+      'filepond-plugin-image-transform',
+      'imask',
+      'nprogress',
+      'notyf',
+      'mapbox-gl',
+      'photoswipe/dist/photoswipe',
+      'photoswipe/dist/photoswipe-ui-default',
+      'plyr',
+      'v-calendar',
+      'vue',
+      'vue-router',
+      'vue-scrollto',
+      'vue-i18n',
+      'vue3-apexcharts',
+      'vue-tippy',
+      'simplebar',
+      'simple-datatables',
+      'tiny-slider/src/tiny-slider',
+    ],
+  },
   // Will be passed to @rollup/plugin-alias as its entries option.
   resolve: {
     alias: [

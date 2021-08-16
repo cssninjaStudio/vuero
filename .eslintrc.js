@@ -25,6 +25,11 @@ module.exports = {
     defineEmits: 'readonly',
     defineExpose: 'readonly',
     withDefaults: 'readonly',
+    $ref: 'writable',
+    $computed: 'writable',
+    $raw: 'readonly',
+    withDefaults: 'readonly',
+    $fromRefs: 'readonly',
   },
   overrides: [
     {
