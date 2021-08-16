@@ -37,14 +37,11 @@ const toggle = (key: number) => {
   <details
     v-for="(item, key) in items"
     :key="key"
-    :class="[
-      withChevron && 'has-chevron',
-      !withChevron && 'has-plus',
-      internalItemOpen === key && 'is-active',
-    ]"
+    :class="[withChevron && 'has-chevron', !withChevron && 'has-plus']"
+    :open="internalItemOpen === key || undefined"
     class="collapse"
   >
-    <summary class="collapse-header" @click="() => toggle(key)">
+    <summary class="collapse-header" @click.prevent="() => toggle(key)">
       <h3>{{ item.title }}</h3>
       <div class="collapse-icon">
         <V-Icon v-if="withChevron" icon="feather:chevron-down" />
@@ -56,14 +53,3 @@ const toggle = (key: number) => {
     </div>
   </details>
 </template>
-
-<style lang="scss" scoped>
-summary {
-  outline: none;
-  list-style: none;
-
-  &::marker {
-    display: none;
-  }
-}
-</style>

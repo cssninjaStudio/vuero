@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import type { PropType } from 'vue'
-import { ref, onUpdated, useContext } from 'vue'
+import { ref, onUpdated, useSlots } from 'vue'
 
 type MediaFormat = '4by3' | '16by9'
 
-const { slots } = useContext()
+const slots = useSlots()
 
 const hasDefaultSlot = ref(!!slots.default?.())
 

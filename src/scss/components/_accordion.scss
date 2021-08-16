@@ -114,7 +114,7 @@
   margin-bottom: 1.5rem;
 
   &.has-plus {
-    &.is-active {
+    &[open] {
       .collapse-header {
         .collapse-icon {
           transform: rotate(45deg);
@@ -127,7 +127,7 @@
   }
 
   &.has-chevron {
-    &.is-active {
+    &[open] {
       .collapse-header {
         .collapse-icon {
           transform: rotate(180deg);
@@ -139,7 +139,7 @@
     }
   }
 
-  &.is-active {
+  &[open] {
     .collapse-icon {
       border-color: darken($fade-grey, 3%) !important;
       box-shadow: $light-box-shadow;
@@ -200,7 +200,7 @@
   .collapse {
     @include vuero-card--dark();
 
-    &.is-active {
+    &[open] {
       .collapse-header {
         .collapse-icon {
           background: lighten($dark-sidebar, 2%);
