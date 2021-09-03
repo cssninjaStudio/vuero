@@ -1,6 +1,7 @@
 <script lang="ts">
-import type { ComponentPropsOptions, EmitsOptions } from 'vue'
+import type { PropType, ComponentPropsOptions, EmitsOptions } from 'vue'
 import type { FilePond, FilePondEvent, FilePondOptions } from 'filepond'
+import { onMounted, onUnmounted, ref, defineComponent, h } from 'vue'
 import {
   OptionTypes,
   create,
@@ -20,6 +21,8 @@ import FilePondPluginImageTransform from 'filepond-plugin-image-transform'
 import 'filepond/dist/filepond.min.css'
 import 'filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css'
 import 'filepond-plugin-image-edit/dist/filepond-plugin-image-edit.min.css'
+
+type FilePondSize = undefined | 'small' | 'tiny'
 
 const plugins = [
   FilePondPluginFileValidateSize,
@@ -79,88 +82,87 @@ for (const prop in _OptionTypes) {
     default: () => defaultOptions[prop],
   }
 }
-</script>
 
-<script setup lang="ts">
-import type { PropType } from 'vue'
-import { onMounted, onUnmounted, ref } from 'vue'
+export default defineComponent({
+  name: 'VFilePond',
+  props: {
+    ...propsOptions,
+    size: {
+      type: String as PropType<FilePondSize>,
+      default: undefined,
+      validator: (value: FilePondSize) => {
+        // The value must match one of these strings
+        if ([undefined, 'small', 'tiny'].indexOf(value) === -1) {
+          console.warn(
+            `V-FilePond: invalid "${value}" size. Should be small, tiny or undefined`
+          )
+          return false
+        }
 
-type FilePondSize = undefined | 'small' | 'tiny'
-
-const props = defineProps({
-  ...propsOptions,
-  size: {
-    type: String as PropType<FilePondSize>,
-    default: undefined,
-    validator: (value: FilePondSize) => {
-      // The value must match one of these strings
-      if ([undefined, 'small', 'tiny'].indexOf(value) === -1) {
-        console.warn(
-          `V-FilePond: invalid "${value}" size. Should be small, tiny or undefined`
-        )
-        return false
-      }
-
-      return true
+        return true
+      },
     },
   },
-})
-const emit = defineEmits(['input', ...eventNames])
-const pond = ref<FilePond | null>(null)
+  emits: ['input', ...eventNames],
+  setup(props, { emit }) {
+    const pond = ref<FilePond | null>(null)
 
-const inputElement = ref<HTMLInputElement | null>(null)
+    const inputElement = ref<HTMLInputElement | null>(null)
 
-onMounted(() => {
-  if (inputElement.value && supported()) {
-    let options = Object.assign({}, { ...props }) as FilePondOptions
-    pond.value = create(inputElement.value, options)
+    onMounted(() => {
+      if (inputElement.value && supported()) {
+        let options = Object.assign({}, { ...props }) as FilePondOptions
+        pond.value = create(inputElement.value, options)
 
-    for (const eventName of eventNames) {
-      const event = eventName as FilePondEvent
-      if (event) {
-        pond.value.on(event, (...event) => {
-          emit('input', pond.value ? pond.value.getFiles() : [])
-          emit(eventName, ...event)
-        })
+        for (const eventName of eventNames) {
+          const event = eventName as FilePondEvent
+          if (event) {
+            pond.value.on(event, (...event) => {
+              emit('input', pond.value ? pond.value.getFiles() : [])
+              emit(eventName, ...event)
+            })
+          }
+        }
       }
-    }
-  }
-})
+    })
+    onUnmounted(() => {
+      if (pond.value) {
+        for (const eventName of eventNames) {
+          const event = eventName as FilePondEvent
+          if (event) {
+            pond.value.off(event, (event) => {
+              emit(eventName, event)
+            })
+          }
+        }
 
-onUnmounted(() => {
-  if (pond.value) {
-    for (const eventName of eventNames) {
-      const event = eventName as FilePondEvent
-      if (event) {
-        pond.value.off(event, (event) => {
-          emit(eventName, event)
-        })
+        pond.value.destroy()
       }
-    }
+    })
 
-    pond.value.destroy()
-  }
+    return () => {
+      const input = h('input', {
+        type: 'file',
+        ref: inputElement,
+        id: props.id,
+        name: props.name,
+        class: props.className,
+        required: props.required,
+        accept: props.acceptedFileTypes,
+        multiple: props.allowMultiple,
+        capture: props.captureMethod,
+      })
+
+      const wrapper = h('div', { class: 'filepond--wrapper' }, [input])
+
+      return h(
+        'div',
+        {
+          class: ['filepond-profile-wrap', props.size && `is-${props.size}`],
+        },
+        [wrapper]
+      )
+    }
+  },
 })
 </script>
-
-<template>
-  <div
-    class="filepond-profile-wrap"
-    :class="[props.size && `is-${props.size}`]"
-  >
-    <div class="filepond--wrapper">
-      <input
-        :id="props.id"
-        ref="inputElement"
-        type="file"
-        :name="props.name"
-        :class="props.className"
-        :required="props.required"
-        :accept="props.acceptedFileTypes"
-        :multiple="props.allowMultiple"
-        :capture="props.captureMethod"
-      />
-    </div>
-    <pre style="width: 1000px">{{ props }}</pre>
-  </div>
-</template>
