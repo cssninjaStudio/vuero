@@ -61,9 +61,9 @@ const props = defineProps({
     default: undefined,
     validator: (value: IconWrapDark) => {
       // The value must match one of these strings
-      if ([undefined, 'large'].indexOf(value) === -1) {
+      if ([undefined, 'small', 'medium', 'large'].indexOf(value) === -1) {
         console.warn(
-          `V-IconWrap: invalid "${value}" size. Should be large or undefined`
+          `V-IconWrap: invalid "${value}" size. Should be small, medium, large or undefined`
         )
         return false
       }
@@ -73,10 +73,10 @@ const props = defineProps({
   },
   dark: {
     type: String as PropType<IconWrapDark>,
-    default: undefined,
+    default: '3',
     validator: (value: IconWrapDark) => {
       // The value must match one of these strings
-      if ([undefined, '1', '2', '3', '4', '5', '6'].indexOf(value) === -1) {
+      if (['1', '2', '3', '4', '5', '6'].indexOf(value) === -1) {
         console.warn(
           `V-IconWrap: invalid "${value}" dark. Should be 1, 2, 3, 4, 5, 6 or undefined`
         )
@@ -85,6 +85,14 @@ const props = defineProps({
 
       return true
     },
+  },
+  hasLargeIcon: {
+    type: Boolean,
+    default: false,
+  },
+  hasBackground: {
+    type: Boolean,
+    default: false,
   },
   placeholder: {
     type: Boolean,
@@ -109,18 +117,28 @@ const isIconify = computed(() => {
   <div
     class="icon-wrap"
     :class="[
-      color && `has-text-${color}`,
-      size && `is-${size}`,
-      dark && `is-dark-bg-${dark}`,
-      darkPrimary && 'is-dark-primary',
-      darkCardBordered && 'is-dark-card-bordered',
-      picture && 'has-img',
-      placeholder && 'is-placeholder',
+      props.color && !props.hasBackground && `has-text-${props.color}`,
+      props.color && props.hasBackground && `has-background-${props.color}`,
+      props.color &&
+        props.color !== 'white' &&
+        props.hasBackground &&
+        `has-text-white`,
+      props.color &&
+        props.color === 'white' &&
+        props.hasBackground &&
+        `has-text-black`,
+      props.size && `is-${props.size}`,
+      props.dark && !props.hasBackground && `is-dark-bg-${props.dark}`,
+      props.darkPrimary && 'is-dark-primary',
+      props.darkCardBordered && 'is-dark-card-bordered',
+      props.hasLargeIcon && 'has-large-icon',
+      props.picture && 'has-img',
+      props.placeholder && 'is-placeholder',
     ]"
   >
     <img
-      v-if="picture"
-      :src="picture"
+      v-if="props.picture"
+      :src="props.picture"
       alt=""
       @error.once="$event.target.src = 'https://via.placeholder.com/32x32'"
     />
@@ -128,9 +146,9 @@ const isIconify = computed(() => {
       v-else-if="isIconify"
       aria-hidden="true"
       class="iconify"
-      :data-icon="icon"
+      :data-icon="props.icon"
     ></i>
-    <i v-else-if="icon" aria-hidden="true" :class="icon"></i>
+    <i v-else-if="props.icon" aria-hidden="true" :class="props.icon"></i>
   </div>
 </template>
 
@@ -151,8 +169,30 @@ const isIconify = computed(() => {
   color: $primary;
   font-size: 1rem;
 
+  &.has-large-icon {
+    font-size: 1.3rem;
+  }
+
+  &.is-small {
+    font-size: 0.9rem;
+    height: 24px;
+    width: 24px;
+    min-width: 24px;
+
+    &.has-large-icon {
+      font-size: 1rem;
+    }
+  }
+
   &.is-medium {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    height: 42px;
+    width: 42px;
+    min-width: 42px;
+
+    &.has-large-icon {
+      font-size: 1.8rem;
+    }
   }
 
   &.is-large {
@@ -160,6 +200,10 @@ const isIconify = computed(() => {
     height: 58px;
     width: 58px;
     min-width: 58px;
+
+    &.has-large-icon {
+      font-size: 2.9rem;
+    }
   }
 
   img {
@@ -174,6 +218,13 @@ const isIconify = computed(() => {
     i {
       font-size: 1.4rem;
     }
+  }
+}
+
+.is-dark {
+  .icon-wrap {
+    /* background: $dark-sidebar; */
+    border-color: transparent;
   }
 }
 </style>
