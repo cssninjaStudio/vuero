@@ -787,7 +787,7 @@ Widget Styles
       .icon-list-item {
         &:hover {
           .icon-wrap {
-            background: $accent;
+            background: $accent !important;
             box-shadow: $accent-box-shadow;
             color: $smoke-white;
           }

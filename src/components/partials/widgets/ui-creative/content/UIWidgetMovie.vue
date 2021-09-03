@@ -2,17 +2,14 @@
 const props = defineProps({
   title: {
     type: String,
-    required: true,
     default: 'A nice and short little movie',
   },
   picture: {
     type: String,
-    required: true,
     default: 'https://via.placeholder.com/400x300',
   },
   views: {
     type: String,
-    required: true,
     default: '',
   },
 })

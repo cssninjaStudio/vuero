@@ -2,22 +2,18 @@
 const props = defineProps({
   title: {
     type: String,
-    required: true,
     default: 'Design Project',
   },
   user: {
     type: String,
-    required: true,
     default: 'Alice C.',
   },
   picture: {
     type: String,
-    required: true,
     default: '/demo/avatars/7.jpg',
   },
   time: {
     type: String,
-    required: true,
     default: '28 minutes ago',
   },
 })
