@@ -62,6 +62,10 @@ const props = defineProps({
     type: Boolean,
     default: false,
   },
+  cancelLabel: {
+    type: String,
+    default: 'Cancel',
+  },
 })
 const emit = defineEmits(['close'])
 
@@ -123,7 +127,7 @@ onUnmounted(() => {
                 :class="[rounded && 'is-rounded']"
                 @click="emit('close')"
               >
-                Cancel
+                {{ props.cancelLabel }}
               </a>
             </slot>
             <slot name="action"></slot>

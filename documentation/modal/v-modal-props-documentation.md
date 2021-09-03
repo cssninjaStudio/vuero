@@ -15,3 +15,4 @@ Here is the full props available for `<V-Modal />` component:
 | rounded                 | <span class="is-boolean">`false`</span>       | boolean                           |
 | noscroll                | <span class="is-boolean">`false`</span>       | boolean                           |
 | noclose                 | <span class="is-boolean">`false`</span>       | boolean                           |
+| cancelLabel             | <span class="is-string">`Cancel`</span>       | string                            |
