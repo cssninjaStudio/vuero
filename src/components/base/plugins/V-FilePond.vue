@@ -32,6 +32,8 @@ const plugins = [
   FilePondPluginImageTransform,
 ]
 
+registerPlugin(...plugins)
+
 const types = {
   boolean: Boolean,
   int: Number,
@@ -74,11 +76,9 @@ for (const prop in _OptionTypes) {
   // get property type ( can be either a String or the type defined within FilePond )
   propsOptions[prop] = {
     type: getNativeConstructorFromType(_OptionTypes[prop]),
-    default: defaultOptions[prop],
+    default: () => defaultOptions[prop],
   }
 }
-
-registerPlugin(...plugins)
 </script>
 
 <script setup lang="ts">
@@ -161,5 +161,6 @@ onUnmounted(() => {
         :capture="props.captureMethod"
       />
     </div>
+    <pre style="width: 1000px">{{ props }}</pre>
   </div>
 </template>
