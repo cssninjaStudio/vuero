@@ -558,6 +558,21 @@
     border-top-color: $dark-sidebar !important;
   }
 
+  .tippy-box[data-theme~='light'][data-placement^='bottom']
+    > .tippy-arrow::before {
+    border-bottom-color: $dark-sidebar !important;
+  }
+
+  .tippy-box[data-theme~='light'][data-placement^='left']
+    > .tippy-arrow::before {
+    border-left-color: $dark-sidebar !important;
+  }
+
+  .tippy-box[data-theme~='light'][data-placement^='right']
+    > .tippy-arrow::before {
+    border-right-color: $dark-sidebar !important;
+  }
+
   .tippy-profile {
     background: $dark-sidebar !important;
     border-color: lighten($dark-sidebar, 6%);
