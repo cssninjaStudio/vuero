@@ -173,20 +173,19 @@
   }
 
   .multiselect {
+    background-color: lighten($dark-sidebar, 2%);
+    border: 1px solid lighten($dark-sidebar, 10%);
+    color: $dark-dark-text;
+
     .multiselect-clear {
       background-color: lighten($dark-sidebar, 2%);
-    }
-
-    .multiselect-input {
-      background-color: lighten($dark-sidebar, 2%);
-      border: 1px solid lighten($dark-sidebar, 10%);
-      color: $dark-dark-text;
     }
 
     .multiselect-single-label {
       color: $dark-dark-text;
     }
 
+    .multiselect-tags-search,
     .multiselect-search {
       background: transparent;
       color: $light-text;
@@ -211,7 +210,7 @@
       }
     }
 
-    .multiselect-options {
+    .multiselect-dropdown {
       background-color: darken($dark-sidebar, 2%);
       border-color: lighten($dark-sidebar, 10%);
 
