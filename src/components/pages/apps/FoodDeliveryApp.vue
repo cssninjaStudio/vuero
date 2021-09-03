@@ -14,6 +14,11 @@ const sliderElement = ref<HTMLElement | null>(null)
 const nextButtonElement = ref<HTMLElement | null>(null)
 const prevButtonElement = ref<HTMLElement | null>(null)
 
+const FoodWidget = new URL(
+  '/@src/assets/illustrations/dashboards/food/widget.svg',
+  import.meta.url
+)
+
 const onIndexChanged = (info: any) => {
   // direct access to info object
   const indexPrev = info.indexCached
@@ -328,7 +333,7 @@ onUnmounted(() => {
             class="illustration-widget-v2"
             title="You unlocked 2 new Achievements"
             text="Congrats, your efforts have been rewarded. Keep up like this!"
-            picture="/@src/assets/illustrations/dashboards/food/widget.svg"
+            :picture="FoodWidget"
           />
         </div>
 

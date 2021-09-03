@@ -1,9 +1,6 @@
-<script lang="ts">
-const CssUnitRe =
-  /(\d*\.?\d+)\s?(cm|mm|in|px|pt|pc|em|ex|ch|rem|vw|vh|vmin|vmax|%)/
-</script>
-
 <script setup lang="ts">
+import { CssUnitRe } from '/@src/utils/regex'
+
 import type { PropType } from 'vue'
 
 type PlaceloadAvatarSize =
