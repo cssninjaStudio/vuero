@@ -240,13 +240,15 @@
 
 .is-rounded-select {
   .multiselect {
+    border-radius: 500px;
+
     .multiselect-clear {
       border-radius: 500px;
     }
 
-    .multiselect-input {
+    .multiselect-input,
+    .multiselect-search {
       border-radius: 500px;
-
       &::before {
         right: 20px;
       }
@@ -271,13 +273,15 @@
 
 .is-curved-select {
   .multiselect {
+    border-radius: 0.5rem;
+
     .multiselect-clear {
       border-radius: 0.5rem;
     }
 
-    .multiselect-input {
+    .multiselect-input,
+    .multiselect-search {
       border-radius: 0.5rem;
-
       .multiselect-tags {
         .multiselect-tag {
           border-radius: 0.35rem;
@@ -298,6 +302,8 @@
 
 .is-image-select,
 .is-icon-select {
+  --ms-px: 0.3rem;
+
   &.has-curved-images {
     .multiselect {
       .select-option-icon,
@@ -403,7 +409,7 @@
         &.is-image,
         &.is-icon {
           border-radius: $radius;
-          padding-left: 4px;
+          // padding-left: 4px;
 
           img {
             border-radius: 0.25rem;
@@ -420,7 +426,7 @@
         &.is-image,
         &.is-icon {
           border-radius: 0.45rem;
-          padding-left: 4px;
+          // padding-left: 4px;
 
           img {
             border-radius: 0.5rem;
@@ -440,7 +446,7 @@
         &.is-user,
         &.is-image,
         &.is-icon {
-          padding-left: 4px;
+          // padding-left: 4px;
         }
       }
     }
