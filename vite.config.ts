@@ -2,7 +2,7 @@ import { defineConfig } from 'vite'
 import path from 'path'
 import Vue from '@vitejs/plugin-vue'
 import Pages from 'vite-plugin-pages'
-import ViteComponents from 'vite-plugin-components'
+import Components from 'unplugin-vue-components/vite'
 import ViteFonts from 'vite-plugin-fonts'
 import ViteRadar from 'vite-plugin-radar'
 import PurgeIcons from 'vite-plugin-purge-icons'
@@ -147,15 +147,16 @@ export default defineConfig({
     VueroDocumentation(),
 
     /**
-     * vite-plugin-components plugin is responsible of autoloading components
+     * unplugin-vue-components plugin is responsible of autoloading components
      * documentation and md file are loaded for elements and components sections
      *
-     * @see https://github.com/antfu/vite-plugin-components
+     * @see https://github.com/antfu/unplugin-vue-components
      */
-    ViteComponents({
-      extensions: ['vue', 'md'],
+    Components({
       dirs: ['documentation', 'src/components', 'src/layouts'],
-      customLoaderMatcher: (path) => path.endsWith('.md'),
+      extensions: ['vue', 'md'],
+      dts: true,
+      include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
     }),
 
     /**
@@ -215,8 +216,13 @@ export default defineConfig({
      * @see https://github.com/antfu/vite-plugin-pwa
      */
     VitePWA({
-      registerType: 'autoUpdate',
       base: '/',
+      includeAssets: [
+        'favicon.svg',
+        'favicon.ico',
+        'robots.txt',
+        'apple-touch-icon.png',
+      ],
       manifest: {
         name: 'Vuero - A complete Vue 3 design system',
         short_name: 'Vuero',
@@ -226,14 +232,20 @@ export default defineConfig({
         background_color: '#ffffff',
         icons: [
           {
-            src: '/icons/android-chrome-192x192.png',
+            src: 'pwa-192x192.png',
             sizes: '192x192',
             type: 'image/png',
           },
           {
-            src: '/icons/android-chrome-512x512.png',
+            src: 'pwa-512x512.png',
             sizes: '512x512',
             type: 'image/png',
+          },
+          {
+            src: 'pwa-512x512.png',
+            sizes: '512x512',
+            type: 'image/png',
+            purpose: 'any maskable',
           },
         ],
       },

@@ -8,7 +8,6 @@
       "${1:$LINE_COMMENT $TM_FILENAME_BASE Component}",
       "",
       "import type { PropType } from 'vue'",
-      "import { defineProps } from 'vue'",
       "",
       "type MyCustomType = {",
       "  id: number",
@@ -35,7 +34,7 @@
       "  <div v-for=\"(myString, key) of myStringArray\" :key=\"key\">",
       "    {{ myString }}",
       "  </div>",
-      "</template>",
-    ],
+      "</template>"
+    ]
   }
 }

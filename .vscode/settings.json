@@ -24,6 +24,7 @@
   "vetur.validation.interpolation": false,
   "vetur.completion.tagCasing": "initial",
   "vetur.completion.autoImport": true,
+  "vetur.useWorkspaceDependencies": true,
   "vetur.grammar.customBlocks": {
     "meta": "yaml"
   },

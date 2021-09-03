@@ -19,6 +19,8 @@ import {
 import { initApi, apiSymbol } from '/@src/composable/useApi'
 import useNotyf from '/@src/composable/useNotyf'
 
+import VReloadPrompt from '/@src/components/base/modal/V-ReloadPrompt.vue'
+
 type VueroAppOptions = {
   enhanceApp?: (app: App) => Promise<void>
 }
@@ -83,9 +85,12 @@ export async function createApp({ enhanceApp }: VueroAppOptions) {
           ]
         }
 
-        return h(RouterView, null, {
-          default: defaultSlot,
-        })
+        return [
+          h(RouterView, null, {
+            default: defaultSlot,
+          }),
+          h(VReloadPrompt, {}),
+        ]
       }
     },
   })

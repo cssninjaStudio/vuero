@@ -190,3 +190,27 @@
     transform: translateX(0);
   }
 }
+
+/* ==========================================================================
+7. from-bottom
+========================================================================== */
+
+.from-bottom-enter-active,
+.from-bottom-leave-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.2s ease, transform 0.3s ease;
+}
+
+.from-bottom-enter-from,
+.from-bottom-leave-to {
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .from-bottom-enter-active,
+  .from-bottom-leave-active {
+    transition: none;
+  }
+}
