@@ -54,7 +54,9 @@
     }
 
     .lnil,
-    .lnir {
+    .lnir,
+    .fas,
+    .fab {
       font-size: 1.2rem;
     }
 
@@ -82,7 +84,9 @@
     }
 
     .lnil,
-    .lnir {
+    .lnir,
+    .fas,
+    .fab {
       font-size: 1.7rem;
     }
 
@@ -110,7 +114,9 @@
     }
 
     .lnil,
-    .lnir {
+    .lnir,
+    .fas,
+    .fab {
       font-size: 2.2rem;
     }
 
@@ -138,7 +144,9 @@
     }
 
     .lnil,
-    .lnir {
+    .lnir,
+    .fas,
+    .fab {
       font-size: 2.6rem;
     }
 
@@ -166,7 +174,9 @@
     }
 
     .lnil,
-    .lnir {
+    .lnir,
+    .fas,
+    .fab {
       font-size: 3.4rem;
     }
 
@@ -403,7 +413,9 @@
   }
 
   .lnil,
-  .lnir {
+  .lnir,
+  .fas,
+  .fab {
     font-size: 1.4rem;
     color: $muted-grey;
     transition: color 0.3s;
@@ -429,9 +441,12 @@
         border-color: $accent;
       }
 
-      // i {
-      //   color: $white;
-      // }
+      .lnil,
+      .lnir,
+      .fas,
+      .fab {
+        color: $white;
+      }
 
       svg {
         color: $smoke-white;
@@ -445,9 +460,12 @@
         border-color: $accent;
       }
 
-      // i {
-      //   color: $white;
-      // }
+      .lnil,
+      .lnir,
+      .fas,
+      .fab {
+        color: $white;
+      }
 
       svg {
         color: $smoke-white;
@@ -461,9 +479,12 @@
         border-color: $success;
       }
 
-      // i {
-      //   color: $white;
-      // }
+      .lnil,
+      .lnir,
+      .fas,
+      .fab {
+        color: $white;
+      }
 
       svg {
         color: $smoke-white;
@@ -477,9 +498,12 @@
         border-color: $info;
       }
 
-      // i {
-      //   color: $white;
-      // }
+      .lnil,
+      .lnir,
+      .fas,
+      .fab {
+        color: $white;
+      }
 
       svg {
         color: $smoke-white;
@@ -493,9 +517,12 @@
         border-color: $warning;
       }
 
-      // i {
-      //   color: $white;
-      // }
+      .lnil,
+      .lnir,
+      .fas,
+      .fab {
+        color: $white;
+      }
 
       svg {
         color: $smoke-white;
@@ -509,9 +536,12 @@
         border-color: $danger;
       }
 
-      // i {
-      //   color: $white;
-      // }
+      .lnil,
+      .lnir,
+      .fas,
+      .fab {
+        color: $white;
+      }
 
       svg {
         color: $smoke-white;
@@ -525,9 +555,12 @@
         border-color: $h-purple;
       }
 
-      // i {
-      //   color: $white;
-      // }
+      .lnil,
+      .lnir,
+      .fas,
+      .fab {
+        color: $white;
+      }
 
       svg {
         color: $smoke-white;
@@ -541,9 +574,12 @@
         border-color: $h-blue;
       }
 
-      // i {
-      //   color: $white;
-      // }
+      .lnil,
+      .lnir,
+      .fas,
+      .fab {
+        color: $white;
+      }
 
       svg {
         color: $smoke-white;
@@ -557,9 +593,12 @@
         border-color: $h-yellow;
       }
 
-      // i {
-      //   color: $white;
-      // }
+      .lnil,
+      .lnir,
+      .fas,
+      .fab {
+        color: $white;
+      }
 
       svg {
         color: $smoke-white;
@@ -573,9 +612,12 @@
         border-color: $h-orange;
       }
 
-      // i {
-      //   color: $white;
-      // }
+      .lnil,
+      .lnir,
+      .fas,
+      .fab {
+        color: $white;
+      }
 
       svg {
         color: $smoke-white;
@@ -589,9 +631,12 @@
         border-color: $h-green;
       }
 
-      // i {
-      //   color: $white;
-      // }
+      .lnil,
+      .lnir,
+      .fas,
+      .fab {
+        color: $white;
+      }
 
       svg {
         color: $smoke-white;
@@ -605,9 +650,12 @@
         border-color: $h-red;
       }
 
-      // i {
-      //   color: $white;
-      // }
+      .lnil,
+      .lnir,
+      .fas,
+      .fab {
+        color: $white;
+      }
 
       svg {
         color: $smoke-white;

@@ -36,10 +36,10 @@ can easily add a `<V-IconBox />` inside your popover.
     <template #content>
       <div class="v-popover-content is-text">
           <div class="popover-head">
-                <V-IconBox size="small" color="primary">
-                    <i class="lnil lnil-crown-alt-1"></i>
-                </V-IconBox>
-                <h4 class="dark-inverted">Hover Popover</h4>
+              <V-IconBox size="small" color="primary">
+                <i class="iconify" data-icon="feather:x" />
+              </V-IconBox>
+              <h4 class="dark-inverted">Hover Popover</h4>
           </div>
           <div class="popover-body">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
