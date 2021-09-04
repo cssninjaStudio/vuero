@@ -75,20 +75,13 @@ zip -r .release/quickstarter-${PROJECT}-${TAG}.zip . \
   -x "docker-compose.sonarqube.yml"\
   -x "docker-compose.yml"
 
-# zip preview ${PROJECT}-preview.zip
-zip -j .release/${PROJECT}-preview.zip \
-  .release/${PROJECT}-preview.png
-
 # top level zip release-${PROJECT}-${TAG}.zip 
 zip -j .release/release-${PROJECT}-${TAG}.zip \
   .release/template-${PROJECT}-${TAG}.zip \
-  .release/quickstarter-${PROJECT}-${TAG}.zip \
-  .release/${PROJECT}-preview.zip \
-  .release/${PROJECT}-thumb.png \
+  .release/quickstarter-${PROJECT}-${TAG}.zip
 
 # remove build artifacts
 rm -rf \
-  .release/${PROJECT}-preview.zip \
   .release/template-${PROJECT}-${TAG}.zip \
   .release/quickstarter-${PROJECT}-${TAG}.zip
 

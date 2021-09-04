@@ -12,6 +12,9 @@ import VueI18n from '@intlify/vite-plugin-vue-i18n'
 import VueroDocumentation from './vite-plugin-vuero-doc/index'
 import { VitePWA } from 'vite-plugin-pwa'
 
+const SILENT = Boolean(process.env.SILENT) ?? false
+const SOURCE_MAP = Boolean(process.env.SOURCE_MAP) ?? false
+
 /**
  * This is the main configuration file for vitejs
  *
@@ -28,7 +31,7 @@ export default defineConfig({
   // Directory to serve as plain static assets.
   publicDir: 'public',
   // Adjust console output verbosity.
-  logLevel: 'info',
+  logLevel: SILENT ? 'error' : 'info',
   /**
    * By default, Vite will crawl your index.html to detect dependencies that
    * need to be pre-bundled. If build.rollupOptions.input is specified,
@@ -94,10 +97,11 @@ export default defineConfig({
   },
 
   build: {
-    sourcemap: process.env.SOURCE_MAP === 'true',
+    sourcemap: SOURCE_MAP,
     // Turning off brotliSize display can slightly reduce packaging time
-    brotliSize: false,
+    brotliSize: !SILENT,
     chunkSizeWarningLimit: 2000,
+
     /**
      * Uncomment this section to build the demo with missing images
      * Don't forget to remove this section when you replaced assets with yours
@@ -146,7 +150,7 @@ export default defineConfig({
      * @see /vite-plugin-vuero-doc
      * @see /src/components/partials/documentation/DocumentationItem.vue
      * @see /src/composable/useMarkdownToc.ts
-     * */
+     */
     VueroDocumentation(),
 
     /**
@@ -161,14 +165,6 @@ export default defineConfig({
       dts: true,
       include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
     }),
-
-    /**
-     * vite-imagetools plugin allow to perform optimization/transformation
-     * on images at build time
-     *
-     * @see https://github.com/JonasKruckenberg/vite-imagetools
-     */
-    imagetools(),
 
     /**
      * vite-plugin-purge-icons plugin is responsible of autoloading icones from multiples providers
@@ -255,11 +251,22 @@ export default defineConfig({
     }),
 
     /**
+     * vite-imagetools plugin allow to perform transformation (blur, resize, crop, etc)
+     * on images at build time
+     *
+     * @see https://github.com/JonasKruckenberg/vite-imagetools
+     */
+    imagetools({
+      silent: SILENT,
+    }),
+
+    /**
      * vite-plugin-imagemin optimize all images sizes from public or asset folder
      *
      * @see https://github.com/anncwb/vite-plugin-imagemin
      */
     ImageMin({
+      verbose: !SILENT,
       gifsicle: {
         optimizationLevel: 7,
         interlaced: false,

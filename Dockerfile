@@ -6,7 +6,7 @@ COPY yarn.lock ./
 RUN CYPRESS_INSTALL_BINARY=0 yarn install
 
 COPY . .
-RUN yarn run build
+RUN SILENT=1 yarn run build
 
 
 FROM bitnami/nginx:1.19 AS prod
