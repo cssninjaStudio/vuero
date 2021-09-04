@@ -239,6 +239,11 @@
       }
     }
 
+    .icon-menu {
+      overflow-y: auto;
+      max-height: 400px;
+    }
+
     .icon-menu,
     .bottom-menu {
       li {

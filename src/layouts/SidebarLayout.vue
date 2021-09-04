@@ -278,12 +278,12 @@ watch(
 
       <template #bottom-links>
         <!-- Switch Sidebar  Layouts -->
-        <li>
+        <li class="is-hidden-tablet">
           <LayoutSwitcher />
         </li>
 
         <!-- Search -->
-        <li class="right-panel-trigger">
+        <li class="right-panel-trigger is-hidden-tablet">
           <a data-content="Search" @click="activePanel = 'search'">
             <i
               aria-hidden="true"
@@ -301,7 +301,7 @@ watch(
         </li>
 
         <!-- Settings -->
-        <li>
+        <li class="is-hidden-tablet">
           <RouterLink
             id="open-settings"
             :to="{ name: 'sidebar-layouts-profile-settings' }"

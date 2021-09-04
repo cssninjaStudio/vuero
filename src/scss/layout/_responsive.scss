@@ -101,6 +101,10 @@ Responsive styles
         width: 60px !important;
       }
 
+      .icon-menu {
+        max-height: calc(100vh - 60px - 64px) !important;
+      }
+
       .profile-dropdown {
         .dropdown-trigger img {
           height: 42px !important;

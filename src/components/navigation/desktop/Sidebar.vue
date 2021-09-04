@@ -51,7 +51,7 @@ const themeClasses = computed(() => {
     <div class="sidebar-inner">
       <div class="naver"></div>
 
-      <ul class="icon-menu">
+      <ul class="icon-menu has-slimscroll">
         <slot name="links"></slot>
       </ul>
 

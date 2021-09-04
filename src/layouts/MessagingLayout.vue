@@ -162,7 +162,7 @@ const isDesktopSidebarOpen = ref(false)
 
       <template #bottom-links>
         <!-- Search -->
-        <li class="right-panel-trigger">
+        <li class="right-panel-trigger is-hidden-tablet">
           <a data-content="Search" @click="activePanel = 'search'">
             <i
               aria-hidden="true"
@@ -180,7 +180,7 @@ const isDesktopSidebarOpen = ref(false)
         </li>
 
         <!-- Settings -->
-        <li>
+        <li class="is-hidden-tablet">
           <RouterLink
             id="open-settings"
             :to="{ name: 'sidebar-layouts-profile-settings' }"
