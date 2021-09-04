@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import ApexChart from 'vue3-apexcharts'
+
 import {
   spark1,
   spark2,
@@ -27,53 +29,53 @@ import { memberList } from '/@src/data/widgets/table/memberList'
     <!--Spark Tile Widgets-->
     <div class="column is-3">
       <SparkStatWidget straight>
-        <apexchart
+        <ApexChart
           id="widget-spark1"
           :height="spark1.chart.height"
           :type="spark1.chart.type"
           :series="spark1.series"
           :options="spark1"
         >
-        </apexchart>
+        </ApexChart>
       </SparkStatWidget>
     </div>
 
     <div class="column is-3">
       <SparkStatWidget straight>
-        <apexchart
+        <ApexChart
           id="widget-spark2"
           :height="spark2.chart.height"
           :type="spark2.chart.type"
           :series="spark2.series"
           :options="spark2"
         >
-        </apexchart>
+        </ApexChart>
       </SparkStatWidget>
     </div>
 
     <div class="column is-3">
       <SparkStatWidget straight>
-        <apexchart
+        <ApexChart
           id="widget-spark3"
           :height="spark3.chart.height"
           :type="spark3.chart.type"
           :series="spark3.series"
           :options="spark3"
         >
-        </apexchart>
+        </ApexChart>
       </SparkStatWidget>
     </div>
 
     <div class="column is-3">
       <SparkStatWidget straight>
-        <apexchart
+        <ApexChart
           id="widget-spark4"
           :height="spark4.chart.height"
           :type="spark4.chart.type"
           :series="spark4.series"
           :options="spark4"
         >
-        </apexchart>
+        </ApexChart>
       </SparkStatWidget>
     </div>
 
@@ -87,14 +89,14 @@ import { memberList } from '/@src/data/widgets/table/memberList'
         previous-value="$91,512.18"
         straight
       >
-        <apexchart
+        <ApexChart
           id="line-stats-widget-chart"
           :height="lineStatsChartOptions.chart.height"
           :type="lineStatsChartOptions.chart.type"
           :series="lineStatsChartOptions.series"
           :options="lineStatsChartOptions"
         >
-        </apexchart>
+        </ApexChart>
       </LineStatWidget>
     </div>
 
@@ -108,42 +110,42 @@ import { memberList } from '/@src/data/widgets/table/memberList'
         previous-value="$91,512.18"
         straight
       >
-        <apexchart
+        <ApexChart
           id="line-stats-area-chart"
           :height="revenueOptions.chart.height"
           :type="revenueOptions.chart.type"
           :series="revenueOptions.series"
           :options="revenueOptions"
         >
-        </apexchart>
+        </ApexChart>
       </LineStatWidget>
     </div>
 
     <!--Flex Stat Widget-->
     <div class="column is-6">
       <FlexStatWidget title="Sales Revenue" straight>
-        <apexchart
+        <ApexChart
           id="flex-stat-circle"
           :height="flexRadialChartCircleOptions.chart.height"
           :type="flexRadialChartCircleOptions.chart.type"
           :series="flexRadialChartCircleOptions.series"
           :options="flexRadialChartCircleOptions"
         >
-        </apexchart>
+        </ApexChart>
       </FlexStatWidget>
     </div>
 
     <!--Flex Stat Widget-->
     <div class="column is-6">
       <FlexStatWidget title="Sales Revenue" straight>
-        <apexchart
+        <ApexChart
           id="flex-stat-radial"
           :height="flexRadialChartStripesOptions.chart.height"
           :type="flexRadialChartStripesOptions.chart.type"
           :series="flexRadialChartStripesOptions.series"
           :options="flexRadialChartStripesOptions"
         >
-        </apexchart>
+        </ApexChart>
       </FlexStatWidget>
     </div>
 
@@ -155,34 +157,34 @@ import { memberList } from '/@src/data/widgets/table/memberList'
         :labels="['New Deals', 'Proposals', 'Closed Deals']"
       >
         <template #chart1>
-          <apexchart
+          <ApexChart
             id="group-radial-1"
             :height="widgetRadialGroup1Options.chart.height"
             :type="widgetRadialGroup1Options.chart.type"
             :series="widgetRadialGroup1Options.series"
             :options="widgetRadialGroup1Options"
           >
-          </apexchart>
+          </ApexChart>
         </template>
         <template #chart2>
-          <apexchart
+          <ApexChart
             id="group-radial-2"
             :height="widgetRadialGroup2Options.chart.height"
             :type="widgetRadialGroup2Options.chart.type"
             :series="widgetRadialGroup2Options.series"
             :options="widgetRadialGroup2Options"
           >
-          </apexchart>
+          </ApexChart>
         </template>
         <template #chart3>
-          <apexchart
+          <ApexChart
             id="group-radial-3"
             :height="widgetRadialGroup3Options.chart.height"
             :type="widgetRadialGroup3Options.chart.type"
             :series="widgetRadialGroup3Options.series"
             :options="widgetRadialGroup3Options"
           >
-          </apexchart>
+          </ApexChart>
         </template>
       </GroupedStatWidget>
     </div>
@@ -196,34 +198,34 @@ import { memberList } from '/@src/data/widgets/table/memberList'
         gauge
       >
         <template #chart1>
-          <apexchart
+          <ApexChart
             id="group-gauge-1"
             :height="widgetGaugeGroup1Options.chart.height"
             :type="widgetGaugeGroup1Options.chart.type"
             :series="widgetGaugeGroup1Options.series"
             :options="widgetGaugeGroup1Options"
           >
-          </apexchart>
+          </ApexChart>
         </template>
         <template #chart2>
-          <apexchart
+          <ApexChart
             id="group-gauge-2"
             :height="widgetGaugeGroup2Options.chart.height"
             :type="widgetGaugeGroup2Options.chart.type"
             :series="widgetGaugeGroup2Options.series"
             :options="widgetGaugeGroup2Options"
           >
-          </apexchart>
+          </ApexChart>
         </template>
         <template #chart3>
-          <apexchart
+          <ApexChart
             id="group-gauge-3"
             :height="widgetGaugeGroup3Options.chart.height"
             :type="widgetGaugeGroup3Options.chart.type"
             :series="widgetGaugeGroup3Options.series"
             :options="widgetGaugeGroup3Options"
           >
-          </apexchart>
+          </ApexChart>
         </template>
       </GroupedStatWidget>
     </div>

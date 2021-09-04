@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import ApexChart from 'vue3-apexcharts'
+
 import { incomeOptions } from '/@src/data/dashboards/banking-v1/incomeHistoryChart'
 import { popovers } from '/@src/data/users/userPopovers'
 import {
@@ -406,14 +408,14 @@ import {
                 </V-Control>
               </V-Field>
 
-              <apexchart
+              <ApexChart
                 id="income-chart"
                 :height="incomeOptions.chart.height"
                 :type="incomeOptions.chart.type"
                 :series="incomeOptions.series"
                 :options="incomeOptions"
               >
-              </apexchart>
+              </ApexChart>
             </div>
           </div>
         </div>

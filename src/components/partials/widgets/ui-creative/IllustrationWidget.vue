@@ -2,17 +2,14 @@
 const props = defineProps({
   title: {
     type: String,
-    required: true,
     default: 'Illustration Widget',
   },
   text: {
     type: String,
-    required: true,
     default: 'Lorem ipsum sit dolor amet is a dummy text',
   },
   picture: {
     type: String,
-    required: true,
     default: '',
   },
   badgeLeft: {

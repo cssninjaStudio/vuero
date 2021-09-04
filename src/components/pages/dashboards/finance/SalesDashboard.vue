@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import { onMounted, reactive, ref } from 'vue'
+import ApexChart from 'vue3-apexcharts'
+
 import {
   spark1,
   spark2,
@@ -65,50 +67,50 @@ onMounted(() => {
       <div class="columns is-multiline">
         <div class="column is-3">
           <div class="spark-tile">
-            <apexchart
+            <ApexChart
               id="spark1"
               :height="spark1.chart.height"
               :type="spark1.chart.type"
               :series="spark1.series"
               :options="spark1"
             >
-            </apexchart>
+            </ApexChart>
           </div>
         </div>
         <div class="column is-3">
           <div class="spark-tile">
-            <apexchart
+            <ApexChart
               id="spark2"
               :height="spark2.chart.height"
               :type="spark2.chart.type"
               :series="spark2.series"
               :options="spark2"
             >
-            </apexchart>
+            </ApexChart>
           </div>
         </div>
         <div class="column is-3">
           <div class="spark-tile">
-            <apexchart
+            <ApexChart
               id="spark3"
               :height="spark3.chart.height"
               :type="spark3.chart.type"
               :series="spark3.series"
               :options="spark3"
             >
-            </apexchart>
+            </ApexChart>
           </div>
         </div>
         <div class="column is-3">
           <div class="spark-tile">
-            <apexchart
+            <ApexChart
               id="spark4"
               :height="spark4.chart.height"
               :type="spark4.chart.type"
               :series="spark4.series"
               :options="spark4"
             >
-            </apexchart>
+            </ApexChart>
           </div>
         </div>
         <div class="column is-7">
@@ -130,14 +132,14 @@ onMounted(() => {
                 <span class="dark-inverted">$91,512.18</span>
               </div>
             </div>
-            <apexchart
+            <ApexChart
               id="revenue-chart"
               :height="revenueOptions.chart.height"
               :type="revenueOptions.chart.type"
               :series="revenueOptions.series"
               :options="revenueOptions"
             >
-            </apexchart>
+            </ApexChart>
           </div>
         </div>
         <div class="column is-5">
@@ -153,14 +155,14 @@ onMounted(() => {
                 </p>
               </div>
               <div class="chart-container">
-                <apexchart
+                <ApexChart
                   id="radial-circle"
                   :height="salesRevenuesRadialOptions.chart.height"
                   :type="salesRevenuesRadialOptions.chart.type"
                   :series="salesRevenuesRadialOptions.series"
                   :options="salesRevenuesRadialOptions"
                 >
-                </apexchart>
+                </ApexChart>
               </div>
             </div>
           </div>
@@ -172,14 +174,14 @@ onMounted(() => {
               <div class="group">
                 <div class="group-content">
                   <div class="chart-container">
-                    <apexchart
+                    <ApexChart
                       id="group-radial-1"
                       :height="radialGroup1Options.chart.height"
                       :type="radialGroup1Options.chart.type"
                       :series="radialGroup1Options.series"
                       :options="radialGroup1Options"
                     >
-                    </apexchart>
+                    </ApexChart>
                   </div>
                   <span class="dark-inverted">264</span>
                   <p>New Deals</p>
@@ -188,14 +190,14 @@ onMounted(() => {
               <div class="group">
                 <div class="group-content">
                   <div class="chart-container">
-                    <apexchart
+                    <ApexChart
                       id="group-radial-2"
                       :height="radialGroup2Options.chart.height"
                       :type="radialGroup2Options.chart.type"
                       :series="radialGroup2Options.series"
                       :options="radialGroup2Options"
                     >
-                    </apexchart>
+                    </ApexChart>
                   </div>
                   <span class="dark-inverted">1,203</span>
                   <p>Proposals</p>
@@ -204,14 +206,14 @@ onMounted(() => {
               <div class="group">
                 <div class="group-content">
                   <div class="chart-container">
-                    <apexchart
+                    <ApexChart
                       id="group-radial-3"
                       :height="radialGroup3Options.chart.height"
                       :type="radialGroup3Options.chart.type"
                       :series="radialGroup3Options.series"
                       :options="radialGroup3Options"
                     >
-                    </apexchart>
+                    </ApexChart>
                   </div>
                   <span class="dark-inverted">3,078</span>
                   <p>Closed Deals</p>
@@ -249,14 +251,14 @@ onMounted(() => {
             <div class="card-head">
               <h3 class="dark-inverted">Orders Summary</h3>
             </div>
-            <apexchart
+            <ApexChart
               id="bar-chart"
               :height="salesBarOptions.chart.height"
               :type="salesBarOptions.chart.type"
               :series="salesBarOptions.series"
               :options="salesBarOptions"
             >
-            </apexchart>
+            </ApexChart>
           </div>
         </div>
         <div class="column is-3">

@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import ApexChart from 'vue3-apexcharts'
+
 import { customerEngagementChartOptions } from '/@src/data/dashboards/ecommerce/customerEngagementChart'
 import { customersChartOptions } from '/@src/data/dashboards/ecommerce/customersChart'
 import { productReturnsChartOptions } from '/@src/data/dashboards/ecommerce/productReturnsChart'
@@ -60,14 +62,14 @@ import {
               <span class="dark-inverted">641.4K</span>
             </div>
             <div class="right">
-              <apexchart
+              <ApexChart
                 id="spark1"
                 :height="spark1.chart.height"
                 :type="spark1.chart.type"
                 :series="spark1.series"
                 :options="spark1"
               >
-              </apexchart>
+              </ApexChart>
             </div>
           </div>
         </div>
@@ -91,14 +93,14 @@ import {
               <span class="dark-inverted">$389.9K</span>
             </div>
             <div class="right">
-              <apexchart
+              <ApexChart
                 id="spark2"
                 :height="spark2.chart.height"
                 :type="spark2.chart.type"
                 :series="spark2.series"
                 :options="spark2"
               >
-              </apexchart>
+              </ApexChart>
             </div>
           </div>
         </div>
@@ -118,14 +120,14 @@ import {
               <span class="dark-inverted">371</span>
             </div>
             <div class="right">
-              <apexchart
+              <ApexChart
                 id="spark3"
                 :height="spark3.chart.height"
                 :type="spark3.chart.type"
                 :series="spark3.series"
                 :options="spark3"
               >
-              </apexchart>
+              </ApexChart>
             </div>
           </div>
         </div>
@@ -149,14 +151,14 @@ import {
               <span class="dark-inverted">29</span>
             </div>
             <div class="right">
-              <apexchart
+              <ApexChart
                 id="spark4"
                 :height="spark4.chart.height"
                 :type="spark4.chart.type"
                 :series="spark4.series"
                 :options="spark4"
               >
-              </apexchart>
+              </ApexChart>
             </div>
           </div>
         </div>
@@ -180,14 +182,14 @@ import {
               <span class="dark-inverted">$91,512.18</span>
             </div>
           </div>
-          <apexchart
+          <ApexChart
             id="line-stats-widget-chart"
             :height="revenueChartsOptions.chart.height"
             :type="revenueChartsOptions.chart.type"
             :series="revenueChartsOptions.series"
             :options="revenueChartsOptions"
           >
-          </apexchart>
+          </ApexChart>
         </div>
       </div>
 
@@ -209,14 +211,14 @@ import {
               <span class="dark-inverted">684</span>
             </div>
           </div>
-          <apexchart
+          <ApexChart
             id="area-stats-widget-chart"
             :height="customersChartOptions.chart.height"
             :type="customersChartOptions.chart.type"
             :series="customersChartOptions.series"
             :options="customersChartOptions"
           >
-          </apexchart>
+          </ApexChart>
         </div>
       </div>
 
@@ -234,14 +236,14 @@ import {
               </p>
             </div>
             <div class="chart-container">
-              <apexchart
+              <ApexChart
                 id="flex-stat-circle"
                 :height="productReturnsChartOptions.chart.height"
                 :type="productReturnsChartOptions.chart.type"
                 :series="productReturnsChartOptions.series"
                 :options="productReturnsChartOptions"
               >
-              </apexchart>
+              </ApexChart>
             </div>
           </div>
         </div>
@@ -261,14 +263,14 @@ import {
               </p>
             </div>
             <div class="chart-container">
-              <apexchart
+              <ApexChart
                 id="flex-stat-radial"
                 :height="customerEngagementChartOptions.chart.height"
                 :type="customerEngagementChartOptions.chart.type"
                 :series="customerEngagementChartOptions.series"
                 :options="customerEngagementChartOptions"
               >
-              </apexchart>
+              </ApexChart>
             </div>
           </div>
         </div>
@@ -284,14 +286,14 @@ import {
             <div class="group">
               <div class="group-content">
                 <div class="chart-container">
-                  <apexchart
+                  <ApexChart
                     id="widget-group-radial-1"
                     :height="freeShippingChartOptions.chart.height"
                     :type="freeShippingChartOptions.chart.type"
                     :series="freeShippingChartOptions.series"
                     :options="freeShippingChartOptions"
                   >
-                  </apexchart>
+                  </ApexChart>
                 </div>
                 <span class="dark-inverted">36.8K</span>
                 <p>Free Shipping</p>
@@ -300,14 +302,14 @@ import {
             <div class="group">
               <div class="group-content">
                 <div class="chart-container">
-                  <apexchart
+                  <ApexChart
                     id="widget-group-radial-2"
                     :height="groundShippingChartOptions.chart.height"
                     :type="groundShippingChartOptions.chart.type"
                     :series="groundShippingChartOptions.series"
                     :options="groundShippingChartOptions"
                   >
-                  </apexchart>
+                  </ApexChart>
                 </div>
                 <span class="dark-inverted">292.3K</span>
                 <p>Ground Shipping</p>
@@ -316,14 +318,14 @@ import {
             <div class="group">
               <div class="group-content">
                 <div class="chart-container">
-                  <apexchart
+                  <ApexChart
                     id="widget-group-radial-3"
                     :height="nextDayAirChartOptions.chart.height"
                     :type="nextDayAirChartOptions.chart.type"
                     :series="nextDayAirChartOptions.series"
                     :options="nextDayAirChartOptions"
                   >
-                  </apexchart>
+                  </ApexChart>
                 </div>
                 <span class="dark-inverted">108.2K</span>
                 <p>Next Day Air</p>
@@ -343,14 +345,14 @@ import {
             <div class="group">
               <div class="group-content">
                 <div class="chart-container is-gauge">
-                  <apexchart
+                  <ApexChart
                     id="widget-group-radial-4"
                     :height="activeTicketsChartOptions.chart.height"
                     :type="activeTicketsChartOptions.chart.type"
                     :series="activeTicketsChartOptions.series"
                     :options="activeTicketsChartOptions"
                   >
-                  </apexchart>
+                  </ApexChart>
                 </div>
                 <span class="dark-inverted">641</span>
                 <p>Active Tickets</p>
@@ -359,14 +361,14 @@ import {
             <div class="group">
               <div class="group-content">
                 <div class="chart-container is-gauge">
-                  <apexchart
+                  <ApexChart
                     id="widget-group-radial-5"
                     :height="escalatedChartOptions.chart.height"
                     :type="escalatedChartOptions.chart.type"
                     :series="escalatedChartOptions.series"
                     :options="escalatedChartOptions"
                   >
-                  </apexchart>
+                  </ApexChart>
                 </div>
                 <span class="dark-inverted">84</span>
                 <p>Escalated</p>
@@ -375,14 +377,14 @@ import {
             <div class="group">
               <div class="group-content">
                 <div class="chart-container is-gauge">
-                  <apexchart
+                  <ApexChart
                     id="widget-group-radial-6"
                     :height="closedTicketsChartOptions.chart.height"
                     :type="closedTicketsChartOptions.chart.type"
                     :series="closedTicketsChartOptions.series"
                     :options="closedTicketsChartOptions"
                   >
-                  </apexchart>
+                  </ApexChart>
                 </div>
                 <span class="dark-inverted">1,749</span>
                 <p>Closed Tickets</p>

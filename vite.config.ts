@@ -95,6 +95,9 @@ export default defineConfig({
 
   build: {
     sourcemap: process.env.SOURCE_MAP === 'true',
+    // Turning off brotliSize display can slightly reduce packaging time
+    brotliSize: false,
+    chunkSizeWarningLimit: 2000,
     /**
      * Uncomment this section to build the demo with missing images
      * Don't forget to remove this section when you replaced assets with yours
@@ -258,17 +261,17 @@ export default defineConfig({
      */
     ImageMin({
       gifsicle: {
-        optimizationLevel: 3,
+        optimizationLevel: 7,
         interlaced: false,
       },
       optipng: {
-        optimizationLevel: 3,
+        optimizationLevel: 7,
       },
       mozjpeg: {
-        quality: 90,
+        quality: 60,
       },
       pngquant: {
-        quality: [0.8, 1],
+        quality: [0.8, 0.9],
         speed: 4,
       },
       svgo: {

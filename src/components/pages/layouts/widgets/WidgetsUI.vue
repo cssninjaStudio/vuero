@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import ApexChart from 'vue3-apexcharts'
+
 import {
   personalScoreGaugeOptions,
   onPersonalScoreGaugeReady,
@@ -302,7 +304,7 @@ import { trendWidgetChartOptions } from '/@src/data/widgets/charts/trendWidgetCh
                 <span>Earned from Sales</span>
               </div>
             </div>
-            <apexchart
+            <ApexChart
               id="trend-chart"
               class="stat-chart"
               :height="trendWidgetChartOptions.chart.height"
@@ -310,7 +312,7 @@ import { trendWidgetChartOptions } from '/@src/data/widgets/charts/trendWidgetCh
               :series="trendWidgetChartOptions.series"
               :options="trendWidgetChartOptions"
             >
-            </apexchart>
+            </ApexChart>
           </div>
         </template>
       </UIWidget>

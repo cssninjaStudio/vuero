@@ -12,40 +12,6 @@
  */
 
 import { createApp } from './app'
-import VCalendar from 'v-calendar'
-import VueMultiselect from '@vueform/multiselect'
-import VueSlider from '@vueform/slider'
-import VueApexCharts from 'vue3-apexcharts'
-import VueCKEditor from '@ckeditor/ckeditor5-vue'
-import VueTippy from 'vue-tippy'
-
-import hasNestedRouterLink from './directives/has-nested-router-link'
-import background from './directives/background'
-import tooltip from './directives/tooltip'
-
-/**
- * Importing external libraries allow to compile them in our bundle
- * How files are interpreted is defined by ther extension.
- */
-import 'simplebar'
-import '@purge-icons/generated'
-import 'nprogress/nprogress.css'
-import '@vueform/multiselect/themes/default.scss'
-import '@vueform/slider/themes/default.scss'
-import 'simplebar/dist/simplebar.css'
-import 'tiny-slider/src/tiny-slider.scss'
-import 'notyf/notyf.min.css'
-import 'tippy.js/dist/tippy.css'
-import 'tippy.js/dist/svg-arrow.css'
-import 'tippy.js/dist/border.css'
-import 'tippy.js/dist/backdrop.css'
-import 'tippy.js/themes/light.css'
-
-import './scss/vendors/font-awesome-v5.css'
-import './scss/vendors/line-icons-pro.css'
-import './scss/vendors/prism-coldark-cold.css'
-
-import './scss/main.scss'
 
 /**
  * We create our app and mount it when it is ready
@@ -54,9 +20,19 @@ import './scss/main.scss'
  */
 createApp({
   async enhanceApp(app) {
+    // Lazy load aditional components
+    const VCalendar = (await import('v-calendar')).default
+    const VueMultiselect = (await import('@vueform/multiselect')).default
+    const VueSlider = (await import('@vueform/slider')).default
+    const VueTippy = (await import('vue-tippy')).default
+
+    const hasNestedRouterLink = (
+      await import('./directives/has-nested-router-link')
+    ).default
+    const background = (await import('./directives/background')).default
+    const tooltip = (await import('./directives/tooltip')).default
+
     app.use(VCalendar)
-    app.use(VueApexCharts)
-    app.use(VueCKEditor)
     app.use(VueTippy, {
       defaultProps: {
         theme: 'light',

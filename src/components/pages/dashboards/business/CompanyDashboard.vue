@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import { onMounted } from 'vue'
+import ApexChart from 'vue3-apexcharts'
+
 import { sharingOptions } from '/@src/data/dashboards/company/sharingChart'
 import { usersOptions } from '/@src/data/dashboards/company/usersChart'
 import {
@@ -145,14 +147,14 @@ onMounted(async () => {
             </div>
           </div>
           <div class="chart-container">
-            <apexchart
+            <ApexChart
               id="users-chart"
               :height="usersOptions.chart.height"
               :type="usersOptions.chart.type"
               :series="usersOptions.series"
               :options="usersOptions"
             >
-            </apexchart>
+            </ApexChart>
           </div>
         </div>
       </div>
@@ -175,14 +177,14 @@ onMounted(async () => {
             </div>
           </div>
           <div class="chart-container">
-            <apexchart
+            <ApexChart
               id="shares-chart"
               :height="sharingOptions.chart.height"
               :type="sharingOptions.chart.type"
               :series="sharingOptions.series"
               :options="sharingOptions"
             >
-            </apexchart>
+            </ApexChart>
           </div>
         </div>
       </div>
@@ -217,14 +219,14 @@ onMounted(async () => {
           <div class="card-head">
             <h3 class="dark-inverted">Subscriptions</h3>
           </div>
-          <apexchart
+          <ApexChart
             id="bar-chart"
             :height="usersBarOptions.chart.height"
             :type="usersBarOptions.chart.type"
             :series="usersBarOptions.series"
             :options="usersBarOptions"
           >
-          </apexchart>
+          </ApexChart>
         </div>
       </div>
       <div class="column is-3">

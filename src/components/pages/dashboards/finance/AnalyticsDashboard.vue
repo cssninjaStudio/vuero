@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import ApexChart from 'vue3-apexcharts'
+
 import { revenueOptions } from '/@src/data/dashboards/analytics/revenueChart'
 import { gaugeOptions } from '/@src/data/dashboards/analytics/goalChart'
 import { barOptions } from '/@src/data/dashboards/analytics/profitBarChart'
@@ -103,14 +105,14 @@ import { notifications } from '/@src/data/widgets/ui/notificationList'
                   <span class="dark-inverted">$91,512.18</span>
                 </div>
               </div>
-              <apexchart
+              <ApexChart
                 id="revenue-chart"
                 :height="revenueOptions.chart.height"
                 :type="revenueOptions.chart.type"
                 :series="revenueOptions.series"
                 :options="revenueOptions"
               >
-              </apexchart>
+              </ApexChart>
             </div>
           </div>
           <!--Dashboard Card-->
@@ -121,14 +123,14 @@ import { notifications } from '/@src/data/widgets/ui/notificationList'
               </div>
 
               <div class="radial-wrap">
-                <apexchart
+                <ApexChart
                   id="goal-gauge"
                   :height="gaugeOptions.chart.height"
                   :type="gaugeOptions.chart.type"
                   :series="gaugeOptions.series"
                   :options="gaugeOptions"
                 >
-                </apexchart>
+                </ApexChart>
                 <div class="radial-stats is-dark-bordered-12">
                   <div class="radial-stat is-dark-bordered-12">
                     <span>Completed</span>
@@ -166,7 +168,7 @@ import { notifications } from '/@src/data/widgets/ui/notificationList'
                   <span>since last month</span>
                 </div>
 
-                <apexchart
+                <ApexChart
                   id="radial-circle"
                   class="circle-chart-wrapper"
                   :height="optionsCircle.chart.height"
@@ -174,7 +176,7 @@ import { notifications } from '/@src/data/widgets/ui/notificationList'
                   :series="optionsCircle.series"
                   :options="optionsCircle"
                 >
-                </apexchart>
+                </ApexChart>
               </div>
             </div>
           </div>
@@ -184,14 +186,14 @@ import { notifications } from '/@src/data/widgets/ui/notificationList'
               <div class="card-head">
                 <h3 class="dark-inverted">Profit</h3>
               </div>
-              <apexchart
+              <ApexChart
                 id="profit-chart"
                 :height="barOptions.chart.height"
                 :type="barOptions.chart.type"
                 :series="barOptions.series"
                 :options="barOptions"
               >
-              </apexchart>
+              </ApexChart>
             </div>
           </div>
         </div>

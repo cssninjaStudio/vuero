@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import ApexChart from 'vue3-apexcharts'
+
 import { completionOptions } from '/@src/data/dashboards/personal-v2/taskCompletionChart'
 import { barOptions } from '/@src/data/dashboards/personal-v2/teamEfficiencyChart'
 import {
@@ -139,14 +141,14 @@ const democheck = ref(['value_2'])
             <h3 class="dark-inverted">Task Completion</h3>
             <a class="action-link">Reports</a>
           </div>
-          <apexchart
+          <ApexChart
             id="completion-chart"
             :height="completionOptions.chart.height"
             :type="completionOptions.chart.type"
             :series="completionOptions.series"
             :options="completionOptions"
           >
-          </apexchart>
+          </ApexChart>
         </div>
 
         <div class="dashboard-card">
@@ -154,14 +156,14 @@ const democheck = ref(['value_2'])
             <h3 class="dark-inverted">Team Efficiency</h3>
             <a class="action-link">Reports</a>
           </div>
-          <apexchart
+          <ApexChart
             id="efficiency-chart"
             :height="barOptions.chart.height"
             :type="barOptions.chart.type"
             :series="barOptions.series"
             :options="barOptions"
           >
-          </apexchart>
+          </ApexChart>
         </div>
       </div>
 

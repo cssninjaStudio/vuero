@@ -3,6 +3,8 @@ import type { TinySliderInstance } from 'tiny-slider/src/tiny-slider'
 import { tns } from 'tiny-slider/src/tiny-slider'
 import { ref, onMounted, onUnmounted } from 'vue'
 
+import FoodWidget from '/@src/assets/illustrations/dashboards/food/widget.svg'
+
 import * as foodDelivery from '/@src/data/dashboards/food-delivery'
 import { followersStats } from '/@src/data/widgets/ui/followers'
 import { iconList } from '/@src/data/widgets/ui/menuList'
@@ -13,11 +15,6 @@ let slider: TinySliderInstance
 const sliderElement = ref<HTMLElement | null>(null)
 const nextButtonElement = ref<HTMLElement | null>(null)
 const prevButtonElement = ref<HTMLElement | null>(null)
-
-const FoodWidget = new URL(
-  '/@src/assets/illustrations/dashboards/food/widget.svg',
-  import.meta.url
-)
 
 const onIndexChanged = (info: any) => {
   // direct access to info object

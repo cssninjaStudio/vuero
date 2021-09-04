@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import ApexChart from 'vue3-apexcharts'
+
 import { interviewsOptions } from '/@src/data/dashboards/personal-v3/interviewsChart'
 import {
   progressGaugeOptions,
@@ -128,14 +130,14 @@ import { userStack } from '/@src/data/dashboards/personal-v3/users'
 
           <div class="column is-6">
             <div class="dashboard-card">
-              <apexchart
+              <ApexChart
                 id="interviews-chart"
                 :height="interviewsOptions.chart.height"
                 :type="interviewsOptions.chart.type"
                 :series="interviewsOptions.series"
                 :options="interviewsOptions"
               >
-              </apexchart>
+              </ApexChart>
             </div>
           </div>
         </div>

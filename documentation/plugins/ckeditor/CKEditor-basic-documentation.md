@@ -11,8 +11,10 @@ chose one and keep on with it. Other available layouts can be found [here](https
 ```vue
 <script setup lang="ts">
 import { ref } from 'vue'
+import CKE from '@ckeditor/ckeditor5-vue'
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic'
 
+const CKEditor = CKE.component
 const editorData = ref(`<h2>Your HTML Content</h2>`)
 const config = {
   fontFamily: {
@@ -23,11 +25,11 @@ const config = {
 
 <template>
   <div class="content">
-    <ckeditor
+    <CKEditor
       v-model="content"
       :editor="ClassicEditor"
       :config="config"
-    ></ckeditor>
+    ></CKEditor>
   </div>
 </template>
 ```

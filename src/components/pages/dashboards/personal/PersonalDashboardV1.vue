@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import ApexChart from 'vue3-apexcharts'
+
 import { customersOptions } from '/@src/data/dashboards/personal-v1/customersChart'
 import { teamGaugeOptions } from '/@src/data/dashboards/personal-v1/teamGaugeChart'
 import { profitChartOptions } from '/@src/data/dashboards/personal-v1/profitChart'
@@ -108,13 +110,13 @@ import { profitChartOptions } from '/@src/data/dashboards/personal-v1/profitChar
         <!--Card-->
         <div class="column is-6">
           <div class="dashboard-card">
-            <apexchart
+            <ApexChart
               :height="customersOptions.chart.height"
               :type="customersOptions.chart.type"
               :series="customersOptions.series"
               :options="customersOptions"
             >
-            </apexchart>
+            </ApexChart>
           </div>
         </div>
 
@@ -140,26 +142,26 @@ import { profitChartOptions } from '/@src/data/dashboards/personal-v1/profitChar
               <V-Avatar initials="SC" color="h-purple" />
               <V-Avatar picture="/demo/avatars/39.jpg" />
             </div>
-            <apexchart
+            <ApexChart
               :height="teamGaugeOptions.chart.height"
               :type="teamGaugeOptions.chart.type"
               :series="teamGaugeOptions.series"
               :options="teamGaugeOptions"
             >
-            </apexchart>
+            </ApexChart>
           </div>
         </div>
 
         <!--Card-->
         <div class="column is-4">
           <div class="dashboard-card">
-            <apexchart
+            <ApexChart
               :height="profitChartOptions.chart.height"
               :type="profitChartOptions.chart.type"
               :series="profitChartOptions.series"
               :options="profitChartOptions"
             >
-            </apexchart>
+            </ApexChart>
           </div>
         </div>
       </div>
@@ -213,7 +215,7 @@ import { profitChartOptions } from '/@src/data/dashboards/personal-v1/profitChar
       font-family: $font;
 
       > h4,
-      .apexcharts-title-text {
+      .ApexCharts-title-text {
         font-family: $font-alt;
         font-size: 1rem;
         font-weight: 600;

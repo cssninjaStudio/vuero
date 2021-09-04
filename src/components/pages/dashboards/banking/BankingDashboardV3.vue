@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import ApexChart from 'vue3-apexcharts'
 import { bitcoinChartOptions } from '/@src/data/dashboards/banking-v3/bitcoinPriceChart'
 import { evolutionRadialOptions } from '/@src/data/dashboards/banking-v3/evolutionRadialChart'
 import { popularityGaugeOptions } from '/@src/data/dashboards/banking-v3/popularityGaugeChart'
@@ -50,39 +51,39 @@ import { popovers } from '/@src/data/users/userPopovers'
 
         <!--Chart-->
         <div class="dashboard-card">
-          <apexchart
+          <ApexChart
             id="currency-chart"
             :height="bitcoinChartOptions.chart.height"
             :type="bitcoinChartOptions.chart.type"
             :series="bitcoinChartOptions.series"
             :options="bitcoinChartOptions"
           >
-          </apexchart>
+          </ApexChart>
         </div>
 
         <div class="columns is-multiline">
           <div class="column is-6">
             <div class="dashboard-card">
-              <apexchart
+              <ApexChart
                 id="radial-chart"
                 :height="evolutionRadialOptions.chart.height"
                 :type="evolutionRadialOptions.chart.type"
                 :series="evolutionRadialOptions.series"
                 :options="evolutionRadialOptions"
               >
-              </apexchart>
+              </ApexChart>
             </div>
           </div>
           <div class="column is-6">
             <div class="dashboard-card">
-              <apexchart
+              <ApexChart
                 id="radial-gauge"
                 :height="popularityGaugeOptions.chart.height"
                 :type="popularityGaugeOptions.chart.type"
                 :series="popularityGaugeOptions.series"
                 :options="popularityGaugeOptions"
               >
-              </apexchart>
+              </ApexChart>
             </div>
           </div>
         </div>

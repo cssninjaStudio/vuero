@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import ApexChart from 'vue3-apexcharts'
 import type { TinySliderInstance } from 'tiny-slider/src/tiny-slider'
 import { expensesOptions } from '/@src/data/dashboards/banking-v2/expensesAreaChart'
 import { tns } from 'tiny-slider/src/tiny-slider'
@@ -279,14 +280,14 @@ const goto = (index: number) => {
               <div class="column is-8">
                 <div class="chart-wrapper">
                   <a class="action-link">All Reports</a>
-                  <apexchart
+                  <ApexChart
                     id="timeline-chart"
                     :height="expensesOptions.chart.height"
                     :type="expensesOptions.chart.type"
                     :series="expensesOptions.series"
                     :options="expensesOptions"
                   >
-                  </apexchart>
+                  </ApexChart>
                 </div>
               </div>
             </div>

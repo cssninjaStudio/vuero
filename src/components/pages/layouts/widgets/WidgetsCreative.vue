@@ -10,38 +10,14 @@ import {
 import { followersStats } from '/@src/data/widgets/ui/followers'
 import { products } from '/@src/data/widgets/ui/productList'
 
-const Widget1 = new URL(
-  '/@src/assets/illustrations/widgets/1.svg',
-  import.meta.url
-)
-const Widget2 = new URL(
-  '/@src/assets/illustrations/widgets/2.svg',
-  import.meta.url
-)
-const Widget3 = new URL(
-  '/@src/assets/illustrations/widgets/3.svg',
-  import.meta.url
-)
-const Widget4 = new URL(
-  '/@src/assets/illustrations/widgets/4.svg',
-  import.meta.url
-)
-const Widget5 = new URL(
-  '/@src/assets/illustrations/widgets/5.svg',
-  import.meta.url
-)
-const Widget6 = new URL(
-  '/@src/assets/illustrations/widgets/6.svg',
-  import.meta.url
-)
-const Widget7 = new URL(
-  '/@src/assets/illustrations/widgets/7.svg',
-  import.meta.url
-)
-const Widget8 = new URL(
-  '/@src/assets/illustrations/widgets/8.svg',
-  import.meta.url
-)
+import Widget1 from '/@src/assets/illustrations/widgets/1.svg'
+import Widget2 from '/@src/assets/illustrations/widgets/2.svg'
+import Widget3 from '/@src/assets/illustrations/widgets/3.svg'
+import Widget4 from '/@src/assets/illustrations/widgets/4.svg'
+import Widget5 from '/@src/assets/illustrations/widgets/5.svg'
+import Widget6 from '/@src/assets/illustrations/widgets/6.svg'
+import Widget7 from '/@src/assets/illustrations/widgets/7.svg'
+import Widget8 from '/@src/assets/illustrations/widgets/8.svg'
 </script>
 
 <template>

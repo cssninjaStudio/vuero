@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import ApexChart from 'vue3-apexcharts'
 
 import { reputationChartOptions } from '/@src/data/dashboards/lifestyle-v1/reputationChart'
 import { influenceChartOptions } from '/@src/data/dashboards/lifestyle-v1/influenceChart'
@@ -368,14 +369,14 @@ const activeTab = ref<TabId>('overview')
                   </p>
                 </div>
                 <div class="chart-container">
-                  <apexchart
+                  <ApexChart
                     id="flex-stat-circle"
                     :height="reputationChartOptions.chart.height"
                     :type="reputationChartOptions.chart.type"
                     :series="reputationChartOptions.series"
                     :options="reputationChartOptions"
                   >
-                  </apexchart>
+                  </ApexChart>
                 </div>
               </div>
             </div>
@@ -389,14 +390,14 @@ const activeTab = ref<TabId>('overview')
                 <div class="group">
                   <div class="group-content">
                     <div class="chart-container">
-                      <apexchart
+                      <ApexChart
                         id="widget-group-radial-1"
                         :height="creativityRadialOptions.chart.height"
                         :type="creativityRadialOptions.chart.type"
                         :series="creativityRadialOptions.series"
                         :options="creativityRadialOptions"
                       >
-                      </apexchart>
+                      </ApexChart>
                     </div>
                     <span class="dark-inverted">+ 234</span>
                     <p>Creativity</p>
@@ -405,14 +406,14 @@ const activeTab = ref<TabId>('overview')
                 <div class="group">
                   <div class="group-content">
                     <div class="chart-container">
-                      <apexchart
+                      <ApexChart
                         id="widget-group-radial-2"
                         :height="engagmentRadialOptions.chart.height"
                         :type="engagmentRadialOptions.chart.type"
                         :series="engagmentRadialOptions.series"
                         :options="engagmentRadialOptions"
                       >
-                      </apexchart>
+                      </ApexChart>
                     </div>
                     <span class="dark-inverted">+37%</span>
                     <p>Engagement</p>
@@ -421,14 +422,14 @@ const activeTab = ref<TabId>('overview')
                 <div class="group">
                   <div class="group-content">
                     <div class="chart-container">
-                      <apexchart
+                      <ApexChart
                         id="widget-group-radial-3"
                         :height="popularityRadialOptions.chart.height"
                         :type="popularityRadialOptions.chart.type"
                         :series="popularityRadialOptions.series"
                         :options="popularityRadialOptions"
                       >
-                      </apexchart>
+                      </ApexChart>
                     </div>
                     <span class="dark-inverted">+82%</span>
                     <p>Popularity</p>
@@ -450,14 +451,14 @@ const activeTab = ref<TabId>('overview')
                   </p>
                 </div>
                 <div class="chart-container">
-                  <apexchart
+                  <ApexChart
                     id="flex-stat-radial"
                     :height="influenceChartOptions.chart.height"
                     :type="influenceChartOptions.chart.type"
                     :series="influenceChartOptions.series"
                     :options="influenceChartOptions"
                   >
-                  </apexchart>
+                  </ApexChart>
                 </div>
               </div>
             </div>

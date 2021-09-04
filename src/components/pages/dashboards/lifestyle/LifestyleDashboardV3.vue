@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import ApexChart from 'vue3-apexcharts'
+
 import { energyChartOptions } from '/@src/data/dashboards/lifestyle-v3/energyChart'
 import { overallChartOptions } from '/@src/data/dashboards/lifestyle-v3/overallChart'
 import { oxygenChartOptions } from '/@src/data/dashboards/lifestyle-v3/oxygenChart'
@@ -150,14 +152,14 @@ import { followersList } from '/@src/data/widgets/ui/followers'
                   <a class="is-dark-primary">Read how</a>
                 </p>
               </div>
-              <apexchart
+              <ApexChart
                 id="overall-chart"
                 :height="overallChartOptions.chart.height"
                 :type="overallChartOptions.chart.type"
                 :series="overallChartOptions.series"
                 :options="overallChartOptions"
               >
-              </apexchart>
+              </ApexChart>
             </div>
           </div>
 
@@ -179,14 +181,14 @@ import { followersList } from '/@src/data/widgets/ui/followers'
                   <a class="is-dark-primary">Read how</a>
                 </p>
               </div>
-              <apexchart
+              <ApexChart
                 id="energy-chart"
                 :height="energyChartOptions.chart.height"
                 :type="energyChartOptions.chart.type"
                 :series="energyChartOptions.series"
                 :options="energyChartOptions"
               >
-              </apexchart>
+              </ApexChart>
             </div>
           </div>
 
@@ -208,14 +210,14 @@ import { followersList } from '/@src/data/widgets/ui/followers'
                   <a class="is-dark-primary">Read how</a>
                 </p>
               </div>
-              <apexchart
+              <ApexChart
                 id="overall-chart"
                 :height="oxygenChartOptions.chart.height"
                 :type="oxygenChartOptions.chart.type"
                 :series="oxygenChartOptions.series"
                 :options="oxygenChartOptions"
               >
-              </apexchart>
+              </ApexChart>
             </div>
           </div>
 
@@ -237,14 +239,14 @@ import { followersList } from '/@src/data/widgets/ui/followers'
                   <a class="is-dark-primary">Read how</a>
                 </p>
               </div>
-              <apexchart
+              <ApexChart
                 id="progress-chart"
                 :height="progressChartOptions.chart.height"
                 :type="progressChartOptions.chart.type"
                 :series="progressChartOptions.series"
                 :options="progressChartOptions"
               >
-              </apexchart>
+              </ApexChart>
             </div>
           </div>
         </div>
