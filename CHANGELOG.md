@@ -6,6 +6,24 @@
 
 ---
 
+## <small>1.3.2 (2021-09-04)</small>
+
+- feat(icon-wrap): improve component and add related new documentation ([4b61486](https://github.com/cssninjaStudio/vuero/commit/4b61486))
+- feat(modal): add cancelLabel props ([8fa634b](https://github.com/cssninjaStudio/vuero/commit/8fa634b))
+- feat(perf): improve external components tree shaking and image build ([70607b4](https://github.com/cssninjaStudio/vuero/commit/70607b4))
+- feat(reload-prompt): add base component to prompt user to reload when new version available ([dd341be](https://github.com/cssninjaStudio/vuero/commit/dd341be))
+- feat(vue): update to last 3.2 stable version + add optimizeDeps vite config ([14e5e84](https://github.com/cssninjaStudio/vuero/commit/14e5e84))
+- fix(filepond): register plugins before registering props ([21adf7d](https://github.com/cssninjaStudio/vuero/commit/21adf7d))
+- fix(filepond): rewrite with render function ([d69e02f](https://github.com/cssninjaStudio/vuero/commit/d69e02f))
+- fix(icons): dark mode color ([0483e29](https://github.com/cssninjaStudio/vuero/commit/0483e29))
+- fix(multiselect): adapt curved and rounded to new markup ([252990d](https://github.com/cssninjaStudio/vuero/commit/252990d))
+- fix(multiselect): adapt styles to new markup (close #88) ([86de116](https://github.com/cssninjaStudio/vuero/commit/86de116)), closes [#88](https://github.com/cssninjaStudio/vuero/issues/88)
+- fix(sidebar): icons overlaped when screen height is low (close #92) ([ea412d7](https://github.com/cssninjaStudio/vuero/commit/ea412d7)), closes [#92](https://github.com/cssninjaStudio/vuero/issues/92)
+- fix(tippy): arrow color in darkmode (close #89) ([d4a133e](https://github.com/cssninjaStudio/vuero/commit/d4a133e)), closes [#89](https://github.com/cssninjaStudio/vuero/issues/89)
+- fix(widgets): remove required parameters ([4d83c86](https://github.com/cssninjaStudio/vuero/commit/4d83c86))
+- fix(widgets): use new URL with import.meta on IllustrationWidget ([7f57d5e](https://github.com/cssninjaStudio/vuero/commit/7f57d5e))
+- chore(build): add silent build option ([7774f8f](https://github.com/cssninjaStudio/vuero/commit/7774f8f))
+
 ## <small>1.3.1 (2021-07-26)</small>
 
 - fix: remove usage of useContext to replace with useSlots ([cae218d](https://github.com/cssninja-digisquad/vuero/commit/cae218d))
