@@ -172,6 +172,12 @@
       border: 1px solid transparent;
       transition: all 0.3s;
 
+      > span {
+        display: block;
+        height: 16px;
+        width: 16px;
+      }
+
       svg {
         height: 16px;
         width: 16px;
