@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
+import { useI18n } from 'vue-i18n'
 
 const props = defineProps({
   itemPerPage: {
@@ -20,6 +21,8 @@ const props = defineProps({
     default: 5,
   },
 })
+
+const { t } = useI18n()
 const route = useRoute()
 const lastPage = computed(
   () => Math.ceil(props.totalItems / props.itemPerPage) || 1
@@ -73,6 +76,21 @@ const paginatedLink = (page = 1) => {
 }
 </script>
 
+<i18n lang="yaml">
+de:
+  goto-page-title: 'Gehe zu Seite {page}'
+en:
+  goto-page-title: 'Goto page {page}'
+es-MX:
+  goto-page-title: 'Ir a la página {page}'
+es:
+  goto-page-title: 'Ir a la página {page}'
+fr:
+  goto-page-title: 'Aller à la page {page}'
+zh-CN:
+  goto-page-title: '转到第{page}页'
+</i18n>
+
 <template>
   <nav
     role="navigation"
@@ -108,7 +126,7 @@ const paginatedLink = (page = 1) => {
         <RouterLink
           :to="paginatedLink(1)"
           class="pagination-link"
-          aria-label="Goto page 1"
+          :aria-label="t('goto-page-title', { page: 1 })"
         >
           1
         </RouterLink>
@@ -120,7 +138,7 @@ const paginatedLink = (page = 1) => {
         <RouterLink
           :to="paginatedLink(page)"
           class="pagination-link"
-          :aria-label="`Goto page ${page}`"
+          :aria-label="t('goto-page-title', { page: page })"
           :aria-current="currentPage === page ? 'page' : ''"
           :class="[currentPage === page && 'is-current']"
         >
@@ -136,7 +154,7 @@ const paginatedLink = (page = 1) => {
         <RouterLink
           :to="paginatedLink(lastPage)"
           class="pagination-link"
-          :aria-label="`Goto page ${lastPage}`"
+          :aria-label="t('goto-page-title', { page: lastPage })"
         >
           {{ lastPage }}
         </RouterLink>
